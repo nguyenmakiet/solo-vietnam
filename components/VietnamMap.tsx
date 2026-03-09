@@ -25,7 +25,7 @@ export default function VietnamMap() {
       viewBox={Vietnam.viewBox}
       className="w-full max-w-3xl mx-auto"
     >
-      {Vietnam.locations.map((location) => (
+      {Vietnam.locations.map((location: { id: string; name: string; path: string }) => (
         <path
           key={location.id}
           d={location.path}
