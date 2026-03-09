@@ -1,3 +1,5 @@
+import VietnamMap from "@/components/VietnamMap"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
@@ -10,6 +12,12 @@ export default function Home() {
           The ultimate guide for exploring Vietnam alone
         </p>
 
+        {/* MAP */}
+        <div className="mb-16">
+          <VietnamMap />
+        </div>
+
+        {/* DESTINATION CARDS */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
           <div className="p-6 border rounded-xl">Hanoi</div>
           <div className="p-6 border rounded-xl">Da Lat</div>
