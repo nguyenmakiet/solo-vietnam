@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solo Vietnam — Travel Guide</title>
+
+<meta name="description" content="Solo travel guide to Vietnam. Explore destinations, hidden gems and interactive map for solo travelers.">
+
+<meta property="og:title" content="Solo Vietnam Travel Guide">
+<meta property="og:description" content="Interactive Vietnam map and solo traveler tips">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:#F5F0E8;
+font-family:'DM Sans',sans-serif;
+margin:0;
+}
+
+header{
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+background:white;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:22px;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+max-width:1200px;
+margin:auto;
+padding:40px;
+gap:40px;
+}
+
+h1{
+font-family:'Playfair Display',serif;
+font-size:42px;
+}
+
+.map-container{
+display:flex;
+justify-content:center;
+}
+
+.region-group{
+cursor:pointer;
+transition:0.2s;
+}
+
+.region-group:hover path{
+filter:brightness(1.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">SoloVietnam</div>
+<nav>Explore Vietnam</nav>
+</header>
+
+<div class="hero">
+
+<div>
+<h1>Discover Vietnam<br>on your own terms</h1>
+
+<p>
+The insider guide for solo travelers exploring Vietnam.
+Click a region on the map to explore destinations.
+</p>
+
+</div>
+
+<div class="map-container">
+
+<svg viewBox="0 0 300 700" width="300">
+
+<g class="region-group" onclick="go('north')">
+<path d="M80,20 L220,20 L240,60 L230,100 L200,120 L210,150 L180,170 L160,160 L140,175 L120,165 L100,150 L90,130 L70,120 L60,90 L75,60 Z" fill="#4A7C5E"/>
+</g>
+
+<g class="region-group" onclick="go('central')">
+<path d="M115,235 L135,245 L155,255 L170,240 L190,230 L200,260 L195,290 L175,310 L155,320 L135,310 L120,290 L110,265 Z" fill="#8DB89A"/>
+</g>
+
+<g class="region-group" onclick="go('south')">
+<path d="M115,340 L130,360 L150,368 L170,365 L190,355 L200,385 L195,420 L180,450 L160,465 L140,462 L120,450 L105,425 L100,395 L108,365 Z" fill="#A8C9A8"/>
+</g>
+
+<g class="region-group" onclick="go('phu-quoc')">
+<ellipse cx="60" cy="520" rx="22" ry="38" fill="#5B9B6B"/>
+</g>
+
+</svg>
+
+</div>
+
+</div>
+
+<script>
+
+function go(region){
+
+const routes={
+"north":"/north",
+"central":"/hoi-an",
+"south":"/ho-chi-minh",
+"phu-quoc":"/phu-quoc"
+}
+
+if(routes[region]){
+window.location.href=routes[region]
+}
+
+}
+
+</script>
+
+</body>
+</html>
