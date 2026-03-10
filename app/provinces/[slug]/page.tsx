@@ -20,12 +20,13 @@ export default async function ProvincePage({
     province.region === "north"
       ? "North Vietnam"
       : province.region === "central"
-      ? "Central Vietnam"
-      : "South Vietnam"
+        ? "Central Vietnam"
+        : "South Vietnam"
 
   const regionEmoji =
     province.region === "north" ? "🏔️" : province.region === "central" ? "🌊" : "🌴"
 
+  console.log("food data:", province.food)
   return (
     <>
       <link
@@ -207,7 +208,11 @@ export default async function ProvincePage({
           <span className="current">{province.name}</span>
         </nav>
 
-        <header className="hero">
+        <header className="hero" style={province.heroImage ? {
+          backgroundImage: `url(${province.heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        } : {}}>
           <div className="hero-inner">
             <div className="hero-badge">{regionEmoji} {regionLabel} · Province Guide</div>
             <h1>{province.name} Province</h1>
@@ -306,11 +311,11 @@ export default async function ProvincePage({
                 ))}
               </div>
             ) : (
-              <div className="empty-state">
-                <div className="icon">🗺️</div>
-                <p>No destinations listed yet for {province.name}.<br />Content coming soon.</p>
-              </div>
-            )}
+                <div className="empty-state">
+                  <div className="icon">🗺️</div>
+                  <p>No destinations listed yet for {province.name}.<br />Content coming soon.</p>
+                </div>
+              )}
           </section>
 
           {/* Local Food */}
@@ -320,7 +325,15 @@ export default async function ProvincePage({
               <div className="food-grid">
                 {province.food.map((f) => (
                   <div key={f.name} className="food-card">
-                    <span className="food-emoji">{f.emoji}</span>
+                    {f.image ? (
+                      <img
+                        src={f.image}
+                        alt={f.name}
+                        style={{ width: "100%", height: 140, objectFit: "cover", borderRadius: 8, marginBottom: 12 }}
+                      />
+                    ) : (
+                        <span className="food-emoji">{f.emoji}</span>
+                      )}
                     <div className="food-name">{f.name}</div>
                     <div className="food-desc">{f.description}</div>
                   </div>
