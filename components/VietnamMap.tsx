@@ -2,6 +2,7 @@
 import Vietnam from "@svg-maps/vietnam"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+import { provinces } from "@/data/provinces"
 
 const PROVINCE_TO_SLUG: Record<string, string> = {
   // NORTH
@@ -103,7 +104,13 @@ const COLORS = {
 
 export default function VietnamMap() {
   const router = useRouter()
-  const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string } | null>(null)
+
+  const [tooltip, setTooltip] = useState<{
+    x: number
+    y: number
+    name: string
+    slug?: string
+  } | null>(null)
 
   return (
     <div className="flex flex-col items-center gap-8 py-12 px-4 bg-stone-50">
@@ -120,10 +127,6 @@ export default function VietnamMap() {
             {label}
           </div>
         ))}
-        {/* <div className="flex items-center gap-2 text-gray-400 ml-2">
-          <div className="w-3 h-3 rounded-full border-2 border-gray-400 bg-white" />
-          Has guide
-        </div> */}
       </div>
 
       {/* Map */}
@@ -150,8 +153,17 @@ export default function VietnamMap() {
                 }}
                 onMouseEnter={(e) => {
                   ;(e.target as SVGPathElement).style.fill = colors.hover
-                  const rect = (e.currentTarget as SVGPathElement).closest("svg")!.getBoundingClientRect()
-                  setTooltip({ x: e.clientX - rect.left, y: e.clientY - rect.top - 36, name: location.name })
+
+                  const rect = (e.currentTarget as SVGPathElement)
+                    .closest("svg")!
+                    .getBoundingClientRect()
+
+                  setTooltip({
+                    x: e.clientX - rect.left,
+                    y: e.clientY - rect.top - 36,
+                    name: location.name,
+                    slug
+                  })
                 }}
                 onMouseLeave={(e) => {
                   ;(e.target as SVGPathElement).style.fill = colors.base
@@ -165,15 +177,47 @@ export default function VietnamMap() {
           })}
         </svg>
 
-        {/* Tooltip — ngoài svg, trong div relative */}
-        {tooltip && (
-          <div
-            style={{ left: tooltip.x, top: tooltip.y }}
-            className="absolute pointer-events-none bg-gray-900 text-white text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg -translate-x-1/2 whitespace-nowrap"
-          >
-            {tooltip.name}
-          </div>
-        )}
+        {/* Tooltip */}
+        {tooltip && (() => {
+          const province = provinces.find((p) => p.slug === tooltip.slug)
+
+          return (
+            <div
+              style={{ left: tooltip.x, top: tooltip.y }}
+              className="absolute pointer-events-none bg-white text-gray-800 text-xs rounded-lg shadow-xl border border-gray-200 p-3 w-56 -translate-x-1/2"
+            >
+              <div className="font-semibold text-sm mb-1">
+                {tooltip.name}
+              </div>
+
+              {province?.popupIntro && (
+                <p className="text-gray-500 text-[11px] leading-relaxed mb-2">
+                  {province.popupIntro}
+                </p>
+              )}
+
+              {province?.popupDestinations && (
+                <>
+                  <div className="text-[11px] font-semibold text-gray-700 mb-1">
+                    Famous destinations
+                  </div>
+
+                  <ul className="space-y-[2px] mb-2">
+                    {province.popupDestinations.slice(0,4).map((d) => (
+                      <li key={d}>• {d}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {province && (
+                <div className="text-[11px] font-medium text-blue-600">
+                  See more →
+                </div>
+              )}
+            </div>
+          )
+        })()}
       </div>
 
       {/* Browse link */}
@@ -186,4 +230,3 @@ export default function VietnamMap() {
     </div>
   )
 }
-

@@ -213,6 +213,12 @@ export default async function ProvincePage({
           backgroundSize: "cover",
           backgroundPosition: "center"
         } : {}}>
+          {province.heroImage && (
+            <div style={{
+              position: "absolute", inset: 0,
+              background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.4) 100%)"
+            }} />
+          )}
           <div className="hero-inner">
             <div className="hero-badge">{regionEmoji} {regionLabel} · Province Guide</div>
             <h1>{province.name} Province</h1>
