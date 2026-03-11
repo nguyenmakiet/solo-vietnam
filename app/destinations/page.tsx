@@ -162,9 +162,9 @@ export default function DestinationsPage() {
                       )}
 
                       {/* Tags */}
-                      {dest.tags?.length > 0 && (
+                      {(dest.tags?.length ?? 0) > 0 && (
                         <div className="flex flex-wrap gap-1.5 mb-3">
-                          {dest.tags.slice(0, 3).map((tag) => (
+                          {dest.tags?.slice(0, 3).map((tag) => (
                             <span
                               key={tag}
                               className={`text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full ${TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600"}`}
