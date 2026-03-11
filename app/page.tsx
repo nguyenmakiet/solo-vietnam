@@ -185,11 +185,11 @@ export default function Home() {
               </div>
             </div>
             <div className="home-why-card">
-              <div className="home-why-icon">🗾</div>
-              <div className="home-why-title">Japanese travelers welcome</div>
+              <div className="home-why-icon">🔄</div>
+              <div className="home-why-title">Up to date info</div>
               <div className="home-why-desc">
-                Guides written with Japanese solo travelers in mind — cultural tips, key phrases, and Japanese-friendly spots.
-              </div>
+                Regularly updated guides with current prices, recent scam alerts, and the latest travel conditions — not outdated blog posts from years ago.
+            </div>
             </div>
             <div className="home-why-card">
               <div className="home-why-icon">🏝️</div>
@@ -203,7 +203,7 @@ export default function Home() {
       </div>
 
       {/* ── LATEST BLOG ── */}
-      <div>
+      {/* <div>
         <div className="home-section">
           <div className="home-section-header">
             <div>
@@ -228,7 +228,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
     </main>
   )

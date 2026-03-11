@@ -112,8 +112,13 @@ export default function VietnamMap() {
     slug?: string
   } | null>(null)
 
+  const [hoveredId, setHoveredId] = useState<string | null>(null)
+
   return (
-    <div className="flex flex-col items-center gap-8 py-12 px-4 bg-stone-50">
+    <div
+      className="flex flex-col items-center gap-8 py-12 px-4 bg-stone-50"
+      onClick={() => setTooltip(null)}
+    >
 
       {/* Legend */}
       <div className="flex flex-wrap justify-center gap-5 text-sm font-medium">
@@ -147,30 +152,24 @@ export default function VietnamMap() {
                 strokeWidth="0.8"
                 strokeLinejoin="round"
                 style={{
-                  cursor: hasGuide ? "pointer" : "default",
+                  cursor: "pointer",
                   transition: "fill 0.15s ease",
+                  fill: hoveredId === location.id ? colors.hover : colors.base,
                   filter: hasGuide ? "brightness(0.85)" : "none",
                 }}
-                onMouseEnter={(e) => {
-                  ;(e.target as SVGPathElement).style.fill = colors.hover
-
+                onMouseEnter={() => setHoveredId(location.id)}
+                onMouseLeave={() => setHoveredId(null)}
+                onClick={(e) => {
+                  e.stopPropagation()
                   const rect = (e.currentTarget as SVGPathElement)
                     .closest("svg")!
                     .getBoundingClientRect()
-
                   setTooltip({
                     x: e.clientX - rect.left,
-                    y: e.clientY - rect.top - 36,
+                    y: e.clientY - rect.top,
                     name: location.name,
-                    slug
+                    slug,
                   })
-                }}
-                onMouseLeave={(e) => {
-                  ;(e.target as SVGPathElement).style.fill = colors.base
-                  setTooltip(null)
-                }}
-                onClick={() => {
-                  if (slug) router.push(`/provinces/${slug}`)
                 }}
               />
             )
@@ -182,6 +181,7 @@ export default function VietnamMap() {
           const province = provinces.find((p) => p.slug === tooltip.slug)
           const OFFSET_X = 16
           const OFFSET_Y = 16
+          const region = province?.region ?? PROVINCE_REGION[tooltip.name]
 
           return (
             <div
@@ -190,19 +190,17 @@ export default function VietnamMap() {
                 top: tooltip.y + OFFSET_Y,
                 zIndex: 50,
               }}
-              className="absolute pointer-events-none w-60"
+              className="absolute w-60"
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
 
                 {/* Header accent bar */}
                 <div className={`h-1 w-full ${
-                  province
-                    ? provinces.find(p => p.slug === tooltip.slug)?.region === "north"
-                      ? "bg-blue-400"
-                      : provinces.find(p => p.slug === tooltip.slug)?.region === "central"
-                      ? "bg-green-400"
-                      : "bg-orange-400"
-                    : "bg-gray-300"
+                  region === "north" ? "bg-blue-400"
+                  : region === "central" ? "bg-green-400"
+                  : region === "south" ? "bg-orange-400"
+                  : "bg-gray-300"
                 }`} />
 
                 <div className="p-3">
@@ -232,11 +230,14 @@ export default function VietnamMap() {
                     </>
                   )}
 
-                  {province && (
-                    <div className="text-[11px] font-semibold text-blue-500 flex items-center gap-1">
+                  {province && tooltip.slug && (
+                    <button
+                      onClick={() => router.push(`/provinces/${tooltip.slug}`)}
+                      className="text-[11px] font-semibold text-blue-500 flex items-center gap-1 hover:text-blue-700 transition-colors"
+                    >
                       Explore guide
                       <span className="text-[10px]">→</span>
-                    </div>
+                    </button>
                   )}
 
                   {!province && (
