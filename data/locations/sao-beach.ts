@@ -1,12 +1,13 @@
 import { Location } from "../location"
+import { heroUrl } from "@/lib/cloudinary"
 
 export const saoBeach: Location = {
   slug: "sao-beach",
   name: "Bãi Sao Beach",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
-  lat: 10.0134,
-  lng: 104.0498,
+  lat: "10°03'27.9\"N",
+  lng: "104°02'12.3\"E",
   address: "Bãi Sao, An Thới, Phú Quốc, Kiên Giang",
   type: "beach",
   experiences: ["swimming", "snorkeling", "sunbathing", "seafood"],
@@ -15,10 +16,11 @@ export const saoBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=10.0134,104.0498",
+  heroImage: heroUrl("bai-sao-phu-quoc_ffa6xo"),   // ← public ID
   gallery: [
-    "bai-sao-phu-quoc-1_abc123",
-    "bai-sao-phu-quoc-2_abc124",
-    "bai-sao-phu-quoc-3_abc125",
+    "bai-sao-phu-quoc4_mkqxuw",
+    "bai-sao-phu-quoc-3_qyf4lw",
+    "bai-sao-phu-quoc-2_cezour",
   ],
   seoDescription:
     "Bãi Sao Beach on Phú Quốc island — powdery white sand, crystal-clear turquoise water, and far fewer crowds than the main tourist strip. One of the most beautiful beaches in Southeast Asia.",
