@@ -9,7 +9,7 @@ export const taVanVillage: Location = {
   lat: "22.303361298569694",
   lng: "103.88751788652911",
   address: "Tả Van, Sa Pa, Lào Cai",
-  type: "cultural",
+  type: ["cultural", "town"],
   experiences: ["homestay", "culture", "trekking", "photography"],
   tags: ["🏡 Homestay", "🎎 Giáy Culture", "🌾 Rice Terraces", "🥾 Trekking"],
   bestTime: "Sep – Oct (golden terraces) or Mar – Apr (green and clear)",

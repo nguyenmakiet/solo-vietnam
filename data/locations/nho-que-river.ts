@@ -9,7 +9,7 @@ export const nhoQueRiver: Location = {
   lat: "23.23164528112462",
   lng: "105.42652150718125",
   address: "Nho Quế River, Mèo Vạc, Hà Giang",
-  type: "nature",
+  type: ["nature","river"],
   experiences: ["boat-tour", "photography", "kayaking", "viewpoint"],
   tags: ["🌊 Turquoise River", "🏔️ Canyon", "🛶 Boat Tour", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clearest water, best light)",

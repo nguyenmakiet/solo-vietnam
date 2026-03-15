@@ -3,56 +3,84 @@
 import Link from "next/link"
 import { useState, use } from "react"
 import { Location, locationTheme } from "@/data/location"
+import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
+import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
+import { darkCave } from "@/data/locations/dark-cave"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
 import { fansipan } from "@/data/locations/fansipan"
 import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
 import { hangMua } from "@/data/locations/hang-mua"
-import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
+import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
+import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
+import { imperialCity } from "@/data/locations/imperial-city-hue"
+import { japaneseBridge } from "@/data/locations/japanese-bridge"
+import { khaiDinhTomb } from "@/data/locations/khai-dinh-tomb"
 import { khemBeach } from "@/data/locations/khem-beach"
 import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
+import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
+import { paradiseCave } from "@/data/locations/paradise-cave"
+import { phongNamValley } from "@/data/locations/phong-nam-valley"
+import { phongNhaCave } from "@/data/locations/phong-nha-cave"
 import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
 import { saoBeach } from "@/data/locations/sao-beach"
+import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { tamCoc } from "@/data/locations/tam-coc"
 import { taVanVillage } from "@/data/locations/ta-van-village"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
+import { thienMuPagoda } from "@/data/locations/thien-mu-pagoda"
 import { tiTopIsland } from "@/data/locations/ti-top-island"
+import { traQueVillage } from "@/data/locations/tra-que-village"
 import { trangAn } from "@/data/locations/trang-an"
 import "./location.css"
 
 const allLocations: Location[] = [
+  anBangBeach,
   baiTuLongBay,
+  banGiocWaterfall,
   bichDongPagoda,
   catCatVillage,
+  darkCave,
   dongVanOldTown,
   fansipan,
   haLongBay,
   hamNinhFishingVillage,
   hangMua,
-  honThomCableCar, //da co image
   hoQuocPagoda,
+  honThomCableCar, //da co image
+  hoiAnAncientTown,
+  imperialCity,
+  japaneseBridge,
+  khaiDinhTomb,
   khemBeach,
   loLoChaiVillage, //da co image
   lungCuFlagTower,
   maPiLengPass, //da co image
   muongHoaValley,
+  nguomNgaoCave,
   nhoQueRiver,
+  paradiseCave,
+  phongNhaCave,
+  phongNamValley,
   phuQuocNightMarket,
   saoBeach, //da co image
+  sonDoongCave,
   sungSotCave,
   tamCoc,
   taVanVillage,
   thamMaPass,
+  thienMuPagoda,
   tiTopIsland,
+  traQueVillage,
   trangAn,
 ]
 
@@ -81,7 +109,9 @@ export default function LocationPage({
   const location = allLocations.find((l) => l.slug === slug)
   if (!location) return null
 
-  const theme = locationTheme[location.type] ?? "gray"
+  const primaryType = Array.isArray(location.type) ? location.type[0] : location.type
+  const typeLabel = Array.isArray(location.type) ? location.type.join(" · ") : location.type
+  const theme = locationTheme[primaryType] ?? "gray"
   const [activeTab, setActiveTab] = useState("overview")
 
   const scrollTo = (id: string) => {
@@ -125,7 +155,7 @@ export default function LocationPage({
         )}
         <div className="hero-inner">
           <div className="hero-badge">
-            📍 {location.type}{location.destination && ` · ${location.destination.replace(/-/g, " ")}`}
+            📍 {typeLabel}{location.destination && ` · ${location.destination.replace(/-/g, " ")}`}
           </div>
           <h1>{location.name}</h1>
           <p className="hero-seo">{location.seoDescription}</p>

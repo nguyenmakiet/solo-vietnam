@@ -1,6 +1,9 @@
 export type LocationType =
   | "beach"
   | "island"
+  | "bay"
+  | "river"
+  | "lake"
   | "mountain"
   | "forest"
   | "nature"
@@ -12,41 +15,59 @@ export type LocationType =
   | "city"
   | "market"
   | "temple"
+  | "pagoda"
+  | "tomb"
+  | "citadel"
+  | "heritage"
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
 
 export const locationTheme: Record<LocationType, LocationTheme> = {
-  beach: "blue",
-  island: "blue",
-  mountain: "green",
-  forest: "green",
-  nature: "green",
-  waterfall: "green",
-  cave: "green",
-  city: "amber",
-  town: "amber",
-  market: "amber",
-  cultural: "amber",
-  attraction: "amber",
-  temple: "purple",
-}
+        // water
+        beach: "blue",
+        island: "blue",
+        bay: "blue",
+        river: "blue",
+        lake: "blue",
+      
+        // nature
+        mountain: "green",
+        forest: "green",
+        nature: "green",
+        waterfall: "green",
+        cave: "green",
+      
+        // urban
+        city: "amber",
+        town: "amber",
+        market: "amber",
+        attraction: "amber",
+      
+        // culture / history
+        cultural: "purple",
+        heritage: "purple",
+        temple: "purple",
+        pagoda: "purple",
+        tomb: "purple",
+        citadel: "purple"
+      }
 
 export type Location = {
   slug: string
   name: string
   provinces: string[]
   destination?: string
-  lat: number | string   // accept cả "10°03'27.9\"N" lẫn 10.0744
+  lat: number | string
   lng: number | string
   address: string
-  type: LocationType
+  type: LocationType | LocationType[]
   experiences: string[]
   tags: string[]
   entranceFee?: string
   openingHours?: string
   bestTime: string
   mapUrl: string
-  heroImage?: string  
+  heroImage?: string
   gallery: string[]
   tips: string[]
   seoDescription: string
