@@ -16,8 +16,12 @@ export const maPiLengPass: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7 — best at sunrise",
   mapUrl: "https://maps.google.com/?q=23.1900,105.3800",
-  heroImage: heroUrl("ma-pi-leng-placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ma-pi-leng-ha-giang_wxkyiu"),
+  gallery: [
+      "ma-pi-leng-ha-giang_2_kaidch",
+      "ma-pi-leng-ha-giang-03_b7ns2u",
+      "ma-pi-leng-ha-giang-04_wymyuz"
+  ],
   seoDescription:
     "Mã Pí Lèng Pass — Vietnam's most dramatic mountain road, a 20km switchback carved into sheer limestone cliffs above the turquoise Nho Quế River canyon, 1,500m below.",
   tips: [

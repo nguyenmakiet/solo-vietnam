@@ -35,7 +35,7 @@ export type Location = {
   slug: string
   name: string
   provinces: string[]
-  destination: string
+  destination?: string
   lat: number | string   // accept cả "10°03'27.9\"N" lẫn 10.0744
   lng: number | string
   address: string

@@ -3,33 +3,57 @@
 import Link from "next/link"
 import { useState, use } from "react"
 import { Location, locationTheme } from "@/data/location"
+import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
+import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
+import { catCatVillage } from "@/data/locations/cat-cat-village"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
+import { fansipan } from "@/data/locations/fansipan"
+import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
+import { hangMua } from "@/data/locations/hang-mua"
 import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
 import { khemBeach } from "@/data/locations/khem-beach"
+import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
+import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
 import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
 import { saoBeach } from "@/data/locations/sao-beach"
+import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { tamCoc } from "@/data/locations/tam-coc"
+import { taVanVillage } from "@/data/locations/ta-van-village"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
+import { tiTopIsland } from "@/data/locations/ti-top-island"
+import { trangAn } from "@/data/locations/trang-an"
 import "./location.css"
 
 const allLocations: Location[] = [
+  baiTuLongBay,
+  bichDongPagoda,
+  catCatVillage,
   dongVanOldTown,
+  fansipan,
+  haLongBay,
   hamNinhFishingVillage,
-  honThomCableCar,
+  hangMua,
+  honThomCableCar, //da co image
   hoQuocPagoda,
   khemBeach,
+  loLoChaiVillage, //da co image
   lungCuFlagTower,
-  maPiLengPass,
+  maPiLengPass, //da co image
+  muongHoaValley,
   nhoQueRiver,
   phuQuocNightMarket,
-  saoBeach,
+  saoBeach, //da co image
+  sungSotCave,
   tamCoc,
-  thamMaPass
+  taVanVillage,
+  thamMaPass,
+  tiTopIsland,
+  trangAn,
 ]
 
 const TABS = [

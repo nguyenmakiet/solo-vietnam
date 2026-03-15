@@ -6,8 +6,8 @@ export const lungCuFlagTower: Location = {
   name: "Lũng Cú Flag Tower",
   provinces: ["ha-giang"],
   destination: "dong-van",
-  lat: "23°22'43.0\"N",
-  lng: "105°20'01.0\"E",
+  lat: "23.363427116840306",
+  lng: "105.31633882452529",
   address: "Lũng Cú, Đồng Văn, Hà Giang",
   type: "attraction",
   experiences: ["viewpoint", "photography", "culture", "hiking"],
@@ -25,6 +25,7 @@ export const lungCuFlagTower: Location = {
     "On a clear day you can see the Chinese border town of Lũng Cú Zhèn across the valley",
     "The H'Mông and Lô Lô villages at the base of the mountain are worth walking through before the climb",
     "Combine with Đồng Văn Old Town — it's 24km away, about 40 minutes by motorbike",
+    "The flag measures 54m² (9m × 6m) — representing Vietnam's 54 ethnic groups. The symbolism makes this more than just a viewpoint.",
   ],
   content: {
     intro:

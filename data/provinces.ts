@@ -409,10 +409,10 @@ export const provinces: Province[] = [
     ],
     food: [
       {
-        emoji: "🫙",
+        emoji: "🍜",
         name: "Bún cá Kiên Giang",
         image: foodCardUrl("bun-ca-kien-giang_ysgeni"),
-        description: "The island's famous fish sauce — the best in Vietnam"
+        description: "Rice vermicelli soup with fresh fish in a light, clear broth — a Kiên Giang staple eaten for breakfast at riverside stalls, topped with dill, fried shallots, and a squeeze of lime.",
       },
       {
         emoji: "🍜",
