@@ -5,7 +5,7 @@ export const fansipan: Location = {
   slug: "fansipan",
   name: "Fansipan",
   provinces: ["lao-cai"],
-  destination: "Sa Pa",
+  destination: "sapa",
   lat: "22.303457926709047",
   lng: "103.77517218526022",
   address: "Hoàng Liên, Sa Pa, Lào Cai",

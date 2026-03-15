@@ -5,7 +5,7 @@ export const catCatVillage: Location = {
   slug: "cat-cat-village",
   name: "Cat Cat Village",
   provinces: ["lao-cai"],
-  destination: "Sa Pa",
+  destination: "sapa",
   lat: "22.33089349327537", 
   lng: "103.83069280337017",
   address: "San Sả Hồ, Sa Pa, Lào Cai",

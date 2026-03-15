@@ -5,7 +5,7 @@ export const tiTopIsland: Location = {
   slug: "ti-top-island",
   name: "Ti Top Island",
   provinces: ["quang-ninh"],
-  destination: "Hạ Long",
+  destination: "ha-long",
   lat: "20.85912770557982",
   lng: "107.08129113548287",
   address: "Đảo Ti Tốp, Vịnh Hạ Long, Quảng Ninh",

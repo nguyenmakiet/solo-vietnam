@@ -5,7 +5,7 @@ export const sungSotCave: Location = {
   slug: "sung-sot-cave",
   name: "Sung Sot Cave",
   provinces: ["quang-ninh"],
-  destination: "Hạ Long",
+  destination: "ha-long",
   lat: "20.8442292975383",
   lng: "107.09146231299174",
   address: "Đảo Bồ Hòn, Vịnh Hạ Long, Quảng Ninh",

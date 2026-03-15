@@ -5,7 +5,7 @@ export const muongHoaValley: Location = {
   slug: "muong-hoa-valley",
   name: "Muong Hoa Valley",
   provinces: ["lao-cai"],
-  destination: "Sa Pa",
+  destination: "sapa",
   lat: "22.3143616370346",
   lng: "103.87703660862965",
   address: "Hậu Thào – Tả Van – Lao Chải, Sa Pa, Lào Cai",

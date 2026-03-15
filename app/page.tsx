@@ -33,7 +33,7 @@ const blogPosts = [
 
 const experiences = [
   { emoji: "🏖️", label: "Beaches", href: "/experiences/beaches" },
-  { emoji: "🏔️", label: "Mountains", href: "/experiences/mountains" },
+  { emoji: "🥾", label: "Trekking", href: "/experiences/trekking" },
   { emoji: "🏕️", label: "Camping", href: "/experiences/camping" },
   { emoji: "🍜", label: "Food", href: "/experiences/food" },
 ]

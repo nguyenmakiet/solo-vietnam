@@ -5,7 +5,7 @@ export const haLongBay: Location = {
   slug: "ha-long-bay",
   name: "Ha Long Bay",
   provinces: ["quang-ninh"],
-  destination: "Hạ Long",
+  destination: "ha-long",
   lat: "20.922560502308073",
   lng: "106.99130992781454",
   address: "Vịnh Hạ Long, Quảng Ninh",

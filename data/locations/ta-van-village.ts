@@ -5,7 +5,7 @@ export const taVanVillage: Location = {
   slug: "ta-van-village",
   name: "Tả Van Village",
   provinces: ["lao-cai"],
-  destination: "Sa Pa",
+  destination: "sapa",
   lat: "22.303361298569694",
   lng: "103.88751788652911",
   address: "Tả Van, Sa Pa, Lào Cai",
