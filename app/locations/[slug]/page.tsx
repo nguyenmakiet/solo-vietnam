@@ -98,7 +98,14 @@ export default function LocationPage({
         <Link href="/">Home</Link>
         <span className="sep">›</span>
         <Link href={`/destinations/${location.destination}`}>
-          {location.destination.replace(/-/g, " ")}
+          {location.destination && (
+            <>
+              <span className="sep">›</span>
+              <Link href={`/destinations/${location.destination}`}>
+                {location.destination.replace(/-/g, " ")}
+              </Link>
+            </>
+          )}
         </Link>
         <span className="sep">›</span>
         <span className="current">{location.name}</span>
@@ -186,26 +193,26 @@ export default function LocationPage({
           </div>
         </div>
 
-          {/* Gallery */}
-          <div id="gallery" className="section-anchor">
-            <p className="section-label">Gallery</p>
-            {location.gallery.length > 0 ? (
-              <div className="gallery-grid">
-                {location.gallery.map((publicId) => (
-                  <img
-                    key={publicId}
-                    src={`https://res.cloudinary.com/dl5kqhspv/image/upload/w_600,h_450,c_fill,q_auto,f_auto/${publicId}`}
-                    alt={location.name}
-                    className="gallery-img"
-                  />
-                ))}
-              </div>
-            ) : (
+        {/* Gallery */}
+        <div id="gallery" className="section-anchor">
+          <p className="section-label">Gallery</p>
+          {location.gallery.length > 0 ? (
+            <div className="gallery-grid">
+              {location.gallery.map((publicId) => (
+                <img
+                  key={publicId}
+                  src={`https://res.cloudinary.com/dl5kqhspv/image/upload/w_600,h_450,c_fill,q_auto,f_auto/${publicId}`}
+                  alt={location.name}
+                  className="gallery-img"
+                />
+              ))}
+            </div>
+          ) : (
               <div className="gallery-grid">
                 <div className="gallery-empty">Photos coming soon</div>
               </div>
             )}
-          </div>
+        </div>
 
         {/* How to Get There */}
         <div id="how-to-get-there" className="section-anchor">
