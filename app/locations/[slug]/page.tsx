@@ -77,7 +77,7 @@ export default function LocationPage({
 }: {
   params: Promise<{ slug: string }>
 }) {
-  const { slug } = use(params)   // ← đổi từ params.slug
+  const { slug } = use(params)
   const location = allLocations.find((l) => l.slug === slug)
   if (!location) return null
 
@@ -96,17 +96,14 @@ export default function LocationPage({
       {/* Breadcrumb */}
       <nav className="breadcrumb">
         <Link href="/">Home</Link>
-        <span className="sep">›</span>
-        <Link href={`/destinations/${location.destination}`}>
-          {location.destination && (
-            <>
-              <span className="sep">›</span>
-              <Link href={`/destinations/${location.destination}`}>
-                {location.destination.replace(/-/g, " ")}
-              </Link>
-            </>
-          )}
-        </Link>
+        {location.destination && (
+          <>
+            <span className="sep">›</span>
+            <Link href={`/destinations/${location.destination}`}>
+              {location.destination.replace(/-/g, " ")}
+            </Link>
+          </>
+        )}
         <span className="sep">›</span>
         <span className="current">{location.name}</span>
       </nav>
@@ -128,7 +125,7 @@ export default function LocationPage({
         )}
         <div className="hero-inner">
           <div className="hero-badge">
-            📍 {location.type} · {location.destination.replace(/-/g, " ")}
+            📍 {location.type}{location.destination && ` · ${location.destination.replace(/-/g, " ")}`}
           </div>
           <h1>{location.name}</h1>
           <p className="hero-seo">{location.seoDescription}</p>
@@ -208,10 +205,10 @@ export default function LocationPage({
               ))}
             </div>
           ) : (
-              <div className="gallery-grid">
-                <div className="gallery-empty">Photos coming soon</div>
-              </div>
-            )}
+            <div className="gallery-grid">
+              <div className="gallery-empty">Photos coming soon</div>
+            </div>
+          )}
         </div>
 
         {/* How to Get There */}
@@ -257,17 +254,19 @@ export default function LocationPage({
         )}
 
         {/* Bottom CTA */}
-        <div className="bottom-cta">
-          <div>
-            <div className="cta-label">Explore more</div>
-            <div className="cta-title">
-              {location.destination.replace(/-/g, " ")} — Full Guide
+        {location.destination && (
+          <div className="bottom-cta">
+            <div>
+              <div className="cta-label">Explore more</div>
+              <div className="cta-title">
+                {location.destination.replace(/-/g, " ")} — Full Guide
+              </div>
             </div>
+            <Link href={`/destinations/${location.destination}`}>
+              View destination guide →
+            </Link>
           </div>
-          <Link href={`/destinations/${location.destination}`}>
-            View destination guide →
-          </Link>
-        </div>
+        )}
 
       </main>
     </div>
