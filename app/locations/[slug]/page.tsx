@@ -3,15 +3,33 @@
 import Link from "next/link"
 import { useState, use } from "react"
 import { Location, locationTheme } from "@/data/location"
-import { saoBeach } from "@/data/locations/sao-beach"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
+import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
+import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
+import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
+import { khemBeach } from "@/data/locations/khem-beach"
+import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
+import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
+import { nhoQueRiver } from "@/data/locations/nho-que-river"
+import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
+import { saoBeach } from "@/data/locations/sao-beach"
 import { tamCoc } from "@/data/locations/tam-coc"
+import { thamMaPass } from "@/data/locations/tham-ma-pass"
 import "./location.css"
 
 const allLocations: Location[] = [
-  saoBeach,
   dongVanOldTown,
-  tamCoc
+  hamNinhFishingVillage,
+  honThomCableCar,
+  hoQuocPagoda,
+  khemBeach,
+  lungCuFlagTower,
+  maPiLengPass,
+  nhoQueRiver,
+  phuQuocNightMarket,
+  saoBeach,
+  tamCoc,
+  thamMaPass
 ]
 
 const TABS = [
