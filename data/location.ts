@@ -19,6 +19,8 @@ export type LocationType =
   | "tomb"
   | "citadel"
   | "heritage"
+  | "history"  // thêm dòng này
+
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
 
@@ -49,7 +51,8 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         temple: "purple",
         pagoda: "purple",
         tomb: "purple",
-        citadel: "purple"
+        citadel: "purple",
+        history: "amber",
       }
 
 export type Location = {
