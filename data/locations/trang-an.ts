@@ -5,7 +5,7 @@ export const trangAn: Location = {
   slug: "trang-an",
   name: "Trang An",
   provinces: ["ninh-binh"],
-  destination: "",
+  destination: "ninh-binh",
   lat: "20.253239649044314",
   lng: "105.91915249378707",
   address: "Tràng An, Hoa Lư, Ninh Bình",

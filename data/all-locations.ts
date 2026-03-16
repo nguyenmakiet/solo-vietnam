@@ -1,14 +1,18 @@
 import { Location } from "@/data/location"
 
+import { amTienCave } from "@/data/locations/am-tien-cave"
 import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
 import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
+import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
 import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
 import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
+import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
+import { catCoBeach } from "@/data/locations/cat-co-beach"
 import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { darkCave } from "@/data/locations/dark-cave"
@@ -30,12 +34,15 @@ import { hangMua } from "@/data/locations/hang-mua"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
 import { honMunIsland } from "@/data/locations/hon-mun-island"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
+import { hoaLuAncientCapital } from "@/data/locations/hoa-lu-ancient-capital"
 import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
+import { hospitalCave } from "@/data/locations/hospital-cave"
 import { imperialCity } from "@/data/locations/imperial-city-hue"
 import { japaneseBridge } from "@/data/locations/japanese-bridge"
 import { khaiDinhTomb } from "@/data/locations/khai-dinh-tomb"
 import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { khemBeach } from "@/data/locations/khem-beach"
+import { lanHaBay } from "@/data/locations/lan-ha-bay"
 import { langbiangMountain } from "@/data/locations/langbiang-mountain"
 import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
@@ -65,25 +72,32 @@ import { taVanVillage } from "@/data/locations/ta-van-village"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
 import { thangHenLake } from "@/data/locations/thang-hen-lake"
 import { thienMuPagoda } from "@/data/locations/thien-mu-pagoda"
+import { thungNhamBirdPark } from "@/data/locations/thung-nham-bird-park"
 import { tiTopIsland } from "@/data/locations/ti-top-island"
 import { traQueVillage } from "@/data/locations/tra-que-village"
 import { trangAn } from "@/data/locations/trang-an"
 import { tuyenLamLake } from "@/data/locations/tuyen-lam-lake"
+import { vanLongNatureReserve } from "@/data/locations/van-long-nature-reserve"
+import { vietHaiVillage } from "@/data/locations/viet-hai-village"
 import { vinpearlCableCar } from "@/data/locations/vinpearl-cable-car"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
 
 // ── Add new locations here ────────────────────────────────────────────────────
 export const allLocations: Location[] = [
+  amTienCave,
   anBangBeach,
   baHoWaterfall,
   baNaCableCar,
+  baiDinhPagoda,
   baiTuLongBay,
   banGiocWaterfall,
   benTreCoconutVillage,
   bichDongPagoda,
   caiRangFloatingMarket,
+  catBaNationalPark,
   catCatVillage,
+  catCoBeach,
   conDaoNationalPark,
   conDaoPrison,
   darkCave,
@@ -105,12 +119,15 @@ export const allLocations: Location[] = [
   hoiAnAncientTown,
   honMunIsland,
   hoQuocPagoda,
+  hoaLuAncientCapital,
   honThomCableCar,
+  hospitalCave,
   imperialCity,
   japaneseBridge,
   khaiDinhTomb,
   khauCocChaPass,
   khemBeach,
+  lanHaBay,
   langbiangMountain,
   loLoChaiVillage,
   lungCuFlagTower,
@@ -140,10 +157,13 @@ export const allLocations: Location[] = [
   thamMaPass,
   thangHenLake,
   thienMuPagoda,
+  thungNhamBirdPark,
   tiTopIsland,
   traQueVillage,
   trangAn,
   tuyenLamLake,
+  vanLongNatureReserve,
+  vietHaiVillage,
   vinpearlCableCar,
   whiteSandDunes,
   yenMinhPineForest,

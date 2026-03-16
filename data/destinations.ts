@@ -699,6 +699,112 @@ export const destinations: Destination[] = [
     lng: 105.0500,
   },
 },
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "ninh-binh",
+  name: "Ninh Bình",
+  province: "Ninh Binh",
+  provinceSlug: "ninh-binh",
+  region: "north",
+
+  description:
+    "Ninh Bình is Vietnam's inland Ha Long Bay — a landscape of limestone karsts rising from rice paddies and river systems, home to the ancient capital of Hoa Lư, the boat caves of Tràng An, the cycling corridors of Tam Cốc, and some of the most varied scenery within a single province in the country.",
+
+  tagline: "Karst mountains, ancient capitals, and rice fields by rowboat",
+
+  heroImage: heroUrl("ninh-binh-02_ueq2ix"),
+
+  highlights: [
+    "Tràng An UNESCO Heritage Site",
+    "Tam Cốc boat tour",
+    "Hoa Lư Ancient Capital",
+    "Hang Mua viewpoint",
+    "Bái Đính Pagoda",
+  ],
+
+  thingsToDo: [
+    "Boat through Tràng An's cave system",
+    "Cycle through Tam Cốc rice fields",
+    "Climb Hang Mua for panoramic views",
+    "Explore Hoa Lư's 10th-century temples",
+    "Visit Bái Đính — Vietnam's largest pagoda complex",
+  ],
+
+  tags: ["nature", "history", "culture", "boat-tour", "cycling"],
+
+  gettingThere:
+    "Train from Hanoi (2 hours, from 60,000 VND) or bus from Giáp Bát station (2 hours, ~80,000 VND). Ninh Bình station is central. Most attractions are 5–15km from the town centre.",
+
+  bestTime:
+    "Sep – Nov (golden rice harvest, clear skies). Apr – Jun also good. Avoid Tết and major holidays when Bái Đính gets extremely crowded.",
+
+  budgetPerDay: "$15 – $35 USD",
+
+  recommendedStay: "2 – 3 days",
+
+  transport: "Bicycle or motorbike rental from Ninh Bình town",
+
+  nearbyDestinations: ["ha-long", "ha-noi"],
+
+  coordinates: {
+    lat: 20.2549,
+    lng: 105.9747,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "cat-ba",
+  name: "Cát Bà",
+  province: "Hai Phong",
+  provinceSlug: "hai-phong",
+  region: "north",
+
+  description:
+    "Cát Bà is Vietnam's largest island in the Ha Long Bay archipelago — a rugged island of national park jungle, karst peaks, hidden beaches, and Lan Hà Bay's quieter limestone waters, with a genuine fishing town at its centre and fewer tourists than Ha Long's main cruise circuit.",
+
+  tagline: "Ha Long Bay's wilder, less-visited island neighbour",
+
+  heroImage: heroUrl("cat-ba_bbsqrp"),
+
+  highlights: [
+    "Lan Hà Bay kayaking",
+    "Cát Bà National Park",
+    "Cát Cò beaches",
+    "Hospital Cave",
+    "Việt Hải Village",
+  ],
+
+  thingsToDo: [
+    "Kayak through Lan Hà Bay's limestone karsts",
+    "Trek through Cát Bà National Park to the summit",
+    "Swim at Cát Cò 1 and Cát Cò 3 beaches",
+    "Visit Hospital Cave — the Viet Cong's wartime underground hospital",
+    "Cycle to Việt Hải fishing village",
+  ],
+
+  tags: ["island", "nature", "kayaking", "trekking", "beach"],
+
+  gettingThere:
+    "Ferry from Hải Phòng city to Cát Bà town (45 min–1.5 hours depending on ferry type). Speedboat from Tuần Châu pier (Ha Long) also available. Most travellers come via Hải Phòng.",
+
+  bestTime:
+    "Apr – Jun or Sep – Nov (dry season, calm seas, best visibility for kayaking). Avoid Jul–Aug (peak domestic season, very crowded).",
+
+  budgetPerDay: "$25 – $60 USD",
+
+  recommendedStay: "2 – 3 days",
+
+  transport: "Motorbike rental, bicycle, or kayak",
+
+  nearbyDestinations: ["ha-long", "hai-phong"],
+
+  coordinates: {
+    lat: 20.7271,
+    lng: 107.0469,
+  },
+},
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {

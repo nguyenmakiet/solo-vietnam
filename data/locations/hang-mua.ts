@@ -5,7 +5,7 @@ export const hangMua: Location = {
   slug: "hang-mua",
   name: "Hang Mua",
   provinces: ["ninh-binh"],
-  destination: "",
+  destination: "ninh-binh",
   lat: "20.229409892562945",
   lng: "105.93389756500189",
   address: "Hang Múa, Ninh Hải, Hoa Lư, Ninh Bình",
