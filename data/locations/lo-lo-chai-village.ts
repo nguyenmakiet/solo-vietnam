@@ -5,7 +5,7 @@ export const loLoChaiVillage: Location = {
   slug: "lo-lo-chai-village",
   name: "Lô Lô Chải Village",
   provinces: ["ha-giang"],
-  destination:"Đồng Văn",
+  destination:"ha-giang-loop",
   lat: "23.36452656422781", 
   lng: "105.31069880257382",
   address: "Lô Lô Chải, Lũng Cú, Đồng Văn, Hà Giang",

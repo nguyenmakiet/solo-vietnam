@@ -5,7 +5,7 @@ export const banGiocWaterfall: Location = {
   slug: "ban-gioc-waterfall",
   name: "Ban Gioc Waterfall",
   provinces: ["cao-bang"],
-  destination: "",
+  destination: "cao-bang",
   lat: "22.854409352361497",
   lng: "106.72438321761962",
   address: "Đàm Thủy, Trùng Khánh, Cao Bằng",

@@ -5,7 +5,7 @@ export const phongNamValley: Location = {
   slug: "phong-nam-valley",
   name: "Phong Nặm Valley",
   provinces: ["cao-bang"],
-  destination: "",
+  destination: "cao-bang",
   lat: "22.891397448683232",
   lng: "106.5175241941528",
   address: "Phong Nậm, Trùng Khánh, Cao Bằng",

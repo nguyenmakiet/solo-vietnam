@@ -5,7 +5,7 @@ export const dongVanOldTown: Location = {
   slug: "dong-van-old-town",
   name: "Đồng Văn Old Town",
   provinces: ["ha-giang"],
-  destination: "dong-van",
+  destination: "ha-giang-loop",
   lat: "23°16'26.0\"N",
   lng: "105°21'44.0\"E",
   address: "Phố Cổ Đồng Văn, Đồng Văn, Hà Giang",

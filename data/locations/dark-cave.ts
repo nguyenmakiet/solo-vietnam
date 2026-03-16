@@ -5,7 +5,7 @@ export const darkCave: Location = {
   slug: "dark-cave",
   name: "Dark Cave",
   provinces: ["quang-binh"],
-  destination: "",
+  destination: "phong-nha-ke-bang",
   lat: "17.574355688827836",
   lng: "106.25458261828979",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",

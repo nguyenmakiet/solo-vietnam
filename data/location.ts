@@ -19,7 +19,7 @@ export type LocationType =
   | "tomb"
   | "citadel"
   | "heritage"
-  | "history"  // thêm dòng này
+  | "history" // thêm dòng này
 
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"

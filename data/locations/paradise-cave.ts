@@ -5,7 +5,7 @@ export const paradiseCave: Location = {
   slug: "paradise-cave",
   name: "Paradise Cave",
   provinces: ["quang-binh"],
-  destination: "",
+  destination: "phong-nha-ke-bang",
   lat: "17.519727624952477",
   lng: "106.22333853972053",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",

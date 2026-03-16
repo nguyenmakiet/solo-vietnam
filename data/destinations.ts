@@ -335,59 +335,6 @@ export const destinations: Destination[] = [
       lng: 108.4583,
     },
   },
-  
-  {
-    slug: "ha-giang",
-    name: "Ha Giang",
-    province: "Ha Giang",
-    provinceSlug: "ha-giang",
-    region: "north",
-  
-    description:
-      "Ha Giang is Vietnam's ultimate motorbike adventure. The Ha Giang Loop takes travelers through dramatic limestone mountains, deep valleys, and remote ethnic villages.",
-  
-    tagline: "Vietnam's most epic motorbike loop",
-  
-    heroImage: heroUrl("ha-giang_xqwfog"),
-  
-    highlights: [
-      "Ha Giang Loop",
-      "Ma Pi Leng Pass",
-      "Dong Van Karst Plateau",
-      "Nho Que River",
-      "Lung Cu Flag Tower",
-    ],
-  
-    thingsToDo: [
-      "Ride the Ha Giang Loop",
-      "Take photos at Ma Pi Leng Pass",
-      "Boat ride on Nho Que River",
-      "Visit Dong Van Old Quarter",
-    ],
-  
-    tags: ["mountain", "motorbike", "adventure", "nature"],
-  
-    gettingThere:
-      "Bus from Hanoi to Ha Giang City (6–7 hours). Most travelers start the motorbike loop from there.",
-  
-    bestTime:
-      "September – November for golden rice terraces. March – April for flower season.",
-  
-    budgetPerDay: "$20 – $40 USD",
-  
-    recommendedStay: "3 – 5 days",
-  
-    transport: "Motorbike",
-  
-    nearbyDestinations: ["sapa", "cao-bang"],
-  
-    coordinates: {
-      lat: 22.8233,
-      lng: 104.9836,
-    },
-  },
-  // Thêm vào destinations array trong data/destinations.ts
-
 {
   slug: "ba-na-hills",
   name: "Bà Nà Hills",
@@ -488,6 +435,268 @@ export const destinations: Destination[] = [
   coordinates: {
     lat: 8.6843,
     lng: 106.6061,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "phan-thiet",
+  name: "Phan Thiết",
+  province: "Binh Thuan",
+  provinceSlug: "binh-thuan",
+  region: "south",
+
+  description:
+    "Phan Thiết is Vietnam's kite-surfing capital and sand dune destination — a 20km coastal strip of fishing villages, red and white sand dunes, and a fairy stream, with the strongest and most consistent winds on the Vietnamese coast.",
+
+  tagline: "Red dunes, white dunes, and the wind that never stops",
+
+  heroImage: heroUrl("phan-thiet_lf0web"),
+
+  highlights: [
+    "White Sand Dunes",
+    "Red Sand Dunes",
+    "Fairy Stream",
+    "Kite surfing",
+    "Fishing village sunrise",
+  ],
+
+  thingsToDo: [
+    "Slide down the White Sand Dunes at sunrise",
+    "Walk the Red Sand Dunes at sunset",
+    "Wade through Fairy Stream to the dunes",
+    "Take a kite-surfing lesson on the beach",
+  ],
+
+  tags: ["beach", "nature", "adventure", "kite-surfing"],
+
+  gettingThere:
+    "Bus from Ho Chi Minh City (4–5 hours, ~150,000 VND). Sleeper buses run overnight. Train to Phan Thiết then taxi 25km to Mũi Né.",
+
+  bestTime:
+    "November – April (dry season, strong winds for kite-surfing, clear skies). May – October is rainy and windy but still accessible.",
+
+  budgetPerDay: "$20 – $50 USD",
+
+  recommendedStay: "2 – 3 days",
+
+  transport: "Motorbike rental or resort shuttle",
+
+  nearbyDestinations: ["da-lat", "vung-tau"],
+
+  coordinates: {
+    lat: 10.9333,
+    lng: 108.2833,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "mekong-delta",
+  name: "Mekong Delta",
+  province: "Can Tho",
+  provinceSlug: "can-tho",
+  region: "south",
+
+  description:
+    "The Mekong Delta is Vietnam's rice bowl — a vast network of rivers, canals, floating markets, and coconut groves spreading across the southern tip of the country, where life moves by boat and the pace is slower than anywhere else in Vietnam.",
+
+  tagline: "Rivers, coconuts, and floating markets at dawn",
+
+  heroImage: heroUrl("mekong-delta_wqegef"),
+
+  highlights: [
+    "Cái Răng Floating Market",
+    "Bến Tre Coconut Village",
+    "Canal boat tours",
+    "River sunsets",
+    "Mekong homestays",
+  ],
+
+  thingsToDo: [
+    "Visit Cái Răng Floating Market at dawn",
+    "Explore Bến Tre by bicycle and boat",
+    "Stay overnight in a riverside homestay",
+    "Cycle through coconut palm groves",
+  ],
+
+  tags: ["nature", "culture", "food", "boat-tour"],
+
+  gettingThere:
+    "Bus from Ho Chi Minh City to Cần Thơ (3.5–4 hours, ~120,000 VND). Express buses depart from Miền Tây bus station. Cần Thơ is the main hub for the delta.",
+
+  bestTime:
+    "Nov – Apr (dry season, lower water levels, floating market most active). Avoid Sep – Oct (flood season in upper delta).",
+
+  budgetPerDay: "$15 – $35 USD",
+
+  recommendedStay: "2 – 3 days",
+
+  transport: "Boat, bicycle, and motorbike",
+
+  nearbyDestinations: ["phu-quoc", "con-dao"],
+
+  coordinates: {
+    lat: 10.0452,
+    lng: 105.7469,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "phong-nha-ke-bang",
+  name: "Phong Nha – Kẻ Bàng",
+  province: "Quang Binh",
+  provinceSlug: "quang-binh",
+  region: "central",
+
+  description:
+    "Phong Nha-Kẻ Bàng National Park is Vietnam's cave capital — a UNESCO World Heritage Site of 400-million-year-old limestone karst hiding the world's largest cave system, underground rivers, jungle trails, and one of the most intact ecosystems in Southeast Asia.",
+
+  tagline: "The world's largest caves are underneath this jungle",
+
+  heroImage: heroUrl("phong-nha-ke-bang_fgbd2u"),
+
+  highlights: [
+    "Son Doong Cave",
+    "Paradise Cave",
+    "Phong Nha Cave",
+    "Dark Cave",
+    "Mooc Spring",
+  ],
+
+  thingsToDo: [
+    "Explore Phong Nha Cave by boat",
+    "Walk the Paradise Cave boardwalk",
+    "Zip line and swim at Dark Cave",
+    "Trek to Mooc Spring",
+    "Join a Son Doong expedition",
+  ],
+
+  tags: ["cave", "nature", "adventure", "trekking"],
+
+  gettingThere:
+    "Fly or take the train to Đồng Hới (50km south), then bus or taxi to Sơn Trạch village (1 hour). Overnight trains from Hanoi (~9 hours) or Hue (~3 hours).",
+
+  bestTime:
+    "Feb – Aug (dry season, caves open). Avoid Sep – Nov (flooding closes most caves).",
+
+  budgetPerDay: "$25 – $50 USD (Son Doong expedition: ~$3,000 USD total)",
+
+  recommendedStay: "2 – 4 days",
+
+  transport: "Motorbike rental or bicycle from Sơn Trạch village",
+
+  nearbyDestinations: ["hue", "da-nang"],
+
+  coordinates: {
+    lat: 17.5553,
+    lng: 106.2833,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "cao-bang",
+  name: "Cao Bằng",
+  province: "Cao Bang",
+  provinceSlug: "cao-bang",
+  region: "north",
+
+  description:
+    "Cao Bằng is Vietnam's most remote northern province — a dramatic landscape of limestone karst, jungle-covered mountains, and deep valleys on the Chinese border, home to Bản Giốc Waterfall, the revolutionary history of Pác Bó, and some of the most pristine highland scenery in the country.",
+
+  tagline: "Vietnam's wild north — waterfalls, caves, and revolutionary history",
+
+  heroImage: heroUrl("cao-bang-01_kiniec"),
+
+  highlights: [
+    "Bản Giốc Waterfall",
+    "Pác Bó Historic Site",
+    "Thang Hen Lake",
+    "Phia Oắc National Park",
+    "Nguồm Pục Cave",
+  ],
+
+  thingsToDo: [
+    "Visit Bản Giốc Waterfall at sunrise",
+    "Explore Pác Bó — where Hồ Chí Minh returned to Vietnam in 1941",
+    "Trek through Phia Oắc National Park",
+    "Swim in the blue waters of Thang Hen Lake",
+  ],
+
+  tags: ["nature", "history", "trekking", "waterfall", "adventure"],
+
+  gettingThere:
+    "Bus from Hanoi to Cao Bằng city (6–7 hours, ~200,000 VND). Limousine vans are faster and more comfortable. Most attractions are 90–120km from Cao Bằng city by motorbike.",
+
+  bestTime:
+    "Sep – Nov (golden rice season, clear skies, best waterfall flow after rainy season). Mar – May also good.",
+
+  budgetPerDay: "$15 – $30 USD",
+
+  recommendedStay: "3 – 4 days",
+
+  transport: "Motorbike — essential for reaching most attractions",
+
+  nearbyDestinations: ["ha-giang", "bac-kan"],
+
+  coordinates: {
+    lat: 22.6657,
+    lng: 106.2522,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "ha-giang-loop",
+  name: "Ha Giang Loop",
+  province: "Ha Giang",
+  provinceSlug: "ha-giang",
+  region: "north",
+
+  description:
+    "The Ha Giang Loop is Vietnam's most dramatic motorbike route — a 350km circuit through the Đồng Văn Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'mong villages, buckwheat fields, and the deepest river gorge in Southeast Asia.",
+
+  tagline: "Vietnam's most epic road — 350km of karst, passes, and minority villages",
+
+  heroImage: heroUrl("ha-giang-loop_e8myfw"),
+
+  highlights: [
+    "Mã Pí Lèng Pass",
+    "Đồng Văn Old Quarter",
+    "Nho Que River",
+    "Lung Cu Flag Tower",
+    "Quan Ba Heaven Gate",
+  ],
+
+  thingsToDo: [
+    "Ride the full Ha Giang Loop over 3–4 days",
+    "Stop at Mã Pí Lèng Pass viewpoint",
+    "Take a boat on Nho Que River",
+    "Visit H'mong and Lô Lô minority villages",
+    "Watch the sunset from Quan Ba Heaven Gate",
+  ],
+
+  tags: ["motorcycling", "adventure", "nature", "culture", "trekking"],
+
+  gettingThere:
+    "Bus from Hanoi to Hà Giang city (6–7 hours, ~200,000 VND). Limousine vans available. Rent a motorbike in Hà Giang city — semi-automatic is recommended for beginners.",
+
+  bestTime:
+    "Sep – Nov (golden rice terraces, buckwheat flowers in Oct–Nov, clearest skies). Mar – Apr for triangle flowers.",
+
+  budgetPerDay: "$20 – $40 USD",
+
+  recommendedStay: "3 – 5 days for the full loop",
+
+  transport: "Motorbike — the loop is the destination",
+
+  nearbyDestinations: ["ha-giang", "cao-bang"],
+
+  coordinates: {
+    lat: 23.1167,
+    lng: 105.0500,
   },
 },
 ]

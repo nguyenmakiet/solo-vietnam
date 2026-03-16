@@ -5,7 +5,7 @@ export const maPiLengPass: Location = {
   slug: "ma-pi-leng-pass",
   name: "Mã Pí Lèng Pass",
   provinces: ["ha-giang"],
-  destination: "dong-van",
+  destination: "ha-giang-loop",
   lat: "23.24315558513546",
   lng: "105.39773522066236",
   address: "Mã Pí Lèng, Mèo Vạc, Hà Giang",

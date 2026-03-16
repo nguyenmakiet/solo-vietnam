@@ -5,7 +5,7 @@ export const lungCuFlagTower: Location = {
   slug: "lung-cu-flag-tower",
   name: "Lũng Cú Flag Tower",
   provinces: ["ha-giang"],
-  destination: "dong-van",
+  destination: "ha-giang-loop",
   lat: "23.363427116840306",
   lng: "105.31633882452529",
   address: "Lũng Cú, Đồng Văn, Hà Giang",

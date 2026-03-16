@@ -5,7 +5,7 @@ export const thamMaPass: Location = {
   slug: "tham-ma-pass",
   name: "Thẩm Mã Pass",
   provinces: ["ha-giang"],
-  destination: "dong-van",
+  destination: "ha-giang-loop",
   lat: "23.170578279202783",
   lng: "105.19445930795216",
   address: "Thẩm Mã, Đồng Văn, Hà Giang",
