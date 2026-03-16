@@ -10,7 +10,7 @@ export const dongVanOldTown: Location = {
   lng: "105°21'44.0\"E",
   address: "Phố Cổ Đồng Văn, Đồng Văn, Hà Giang",
   type: ["cultural","town"],
-  experiences: ["walking", "photography", "local-food", "culture", "night-market"],
+  experiences: ["culture", "history", "photography", "walking-tour", "food", "markets"],
   tags: ["🏘️ Old Town", "📸 Photography", "🍜 Local Food", "🌙 Night Market"],
   bestTime: "Sep – Nov (buckwheat flowers) or Mar – Apr (cherry blossoms)",
   entranceFee: "Free",

@@ -1,10 +1,8 @@
 export type ExperienceSlug =
   | "beaches"
   | "trekking"
-  | "hiking"
   | "camping"
   | "caving"
-  | "diving"
   | "snorkeling"
   | "kayaking"
   | "food"
@@ -19,14 +17,14 @@ export type ExperienceSlug =
   | "cable-cars"
   | "homestays"
   | "wildlife"
+  | "motorcycling"
+  | "shopping"
 
 export type ExperienceValue =
   | "beach"
   | "trekking"
-  | "hiking"
   | "camping"
   | "caving"
-  | "diving"
   | "snorkeling"
   | "kayaking"
   | "food"
@@ -41,6 +39,8 @@ export type ExperienceValue =
   | "cable-car"
   | "homestay"
   | "wildlife"
+  | "motorcycling"
+  | "shopping"
 
 export type Experience = {
   slug: ExperienceSlug
@@ -69,14 +69,6 @@ export const experiences: Experience[] = [
     heroColor: "#16a34a",
   },
   {
-    slug: "hiking",
-    value: "hiking",
-    label: "Hiking",
-    icon: "🧗",
-    tagline: "Day hikes with views worth every step",
-    heroColor: "#15803d",
-  },
-  {
     slug: "camping",
     value: "camping",
     label: "Camping",
@@ -91,14 +83,6 @@ export const experiences: Experience[] = [
     icon: "🪨",
     tagline: "Explore the world's most spectacular cave systems",
     heroColor: "#4338ca",
-  },
-  {
-    slug: "diving",
-    value: "diving",
-    label: "Diving",
-    icon: "🤿",
-    tagline: "Coral reefs, wrecks, and marine life beneath the surface",
-    heroColor: "#0284c7",
   },
   {
     slug: "snorkeling",
@@ -211,6 +195,22 @@ export const experiences: Experience[] = [
     icon: "🦋",
     tagline: "National parks, rare species, and untouched jungle",
     heroColor: "#14532d",
+  },
+  {
+    slug: "motorcycling",
+    value: "motorcycling",
+    label: "Motorcycling",
+    icon: "🏍️",
+    tagline: "The best way to see Vietnam — on two wheels, on your own schedule",
+    heroColor: "#b45309",
+  },
+  {
+    slug: "shopping",
+    value: "shopping",
+    label: "Shopping",
+    icon: "🛍️",
+    tagline: "Silk, lacquerware, tailors, and night markets — Vietnam's best buys",
+    heroColor: "#be185d",
   },
 ]
 

@@ -10,7 +10,7 @@ export const lungCuFlagTower: Location = {
   lng: "105.31633882452529",
   address: "Lũng Cú, Đồng Văn, Hà Giang",
   type: "attraction",
-  experiences: ["viewpoint", "photography", "culture", "hiking"],
+  experiences: ["history", "culture", "photography", "trekking"],
   tags: ["🚩 Northernmost Point", "🏔️ Viewpoint", "📸 Photography", "🇻🇳 Landmark"],
   bestTime: "Sep – Nov or Mar – Apr (clear skies)",
   entranceFee: "20,000 VND/person",

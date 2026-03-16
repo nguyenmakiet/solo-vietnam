@@ -385,7 +385,111 @@ export const destinations: Destination[] = [
       lat: 22.8233,
       lng: 104.9836,
     },
-  }
+  },
+  // Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "ba-na-hills",
+  name: "Bà Nà Hills",
+  province: "Da Nang",
+  provinceSlug: "da-nang",
+  region: "central",
+
+  description:
+    "Bà Nà Hills is Đà Nẵng's mountain resort at 1,487 metres — a French colonial hill station reinvented as one of Southeast Asia's most elaborate tourist attractions, home to the iconic Golden Bridge, a world-record cable car, and a recreated French village above the clouds.",
+
+  tagline: "Above the clouds, held by giant stone hands",
+
+  heroImage: heroUrl("ba-na-hill-3_bwhfwi"),
+
+  highlights: [
+    "Golden Bridge",
+    "World-record cable car",
+    "French Village",
+    "Above the cloud layer",
+    "Views over Đà Nẵng coastline",
+  ],
+
+  thingsToDo: [
+    "Walk the Golden Bridge",
+    "Ride the cable car above the clouds",
+    "Explore the French Village",
+    "Visit the Buddhist temples and gardens",
+  ],
+
+  tags: ["attraction", "cable-car", "photography", "theme-park"],
+
+  gettingThere:
+    "25km west of Đà Nẵng city centre — 45 minutes by taxi or Grab (250,000–350,000 VND one way). Most hotels offer shuttle transfers. No public bus available.",
+
+  bestTime:
+    "March – August for clear skies above the clouds. June – August the summit is sunny while the city below is overcast.",
+
+  budgetPerDay: "$60 – $80 USD (ticket alone is ~1,500,000 VND)",
+
+  recommendedStay: "Half day to 1 day",
+
+  transport: "Taxi or hotel shuttle to base station, then cable car",
+
+  nearbyDestinations: ["hoi-an", "da-nang"],
+
+  coordinates: {
+    lat: 15.9973,
+    lng: 107.9889,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "con-dao",
+  name: "Côn Đảo",
+  province: "Ba Ria - Vung Tau",
+  provinceSlug: "ba-ria-vung-tau",
+  region: "south",
+
+  description:
+    "Côn Đảo is Vietnam's most extraordinary island — a former French colonial penal colony with a dark and layered history, now one of Southeast Asia's most pristine marine environments, with near-empty beaches, world-class diving, and sea turtle nesting sites.",
+
+  tagline: "Vietnam's most haunting — and most beautiful — island",
+
+  heroImage: heroUrl("con-dao_vr623u"),
+
+  highlights: [
+    "Con Dao National Park",
+    "Sea turtle nesting beaches",
+    "Con Dao Prison",
+    "Six Senses Beach",
+    "World-class diving",
+  ],
+
+  thingsToDo: [
+    "Snorkel and dive the coral reefs",
+    "Watch sea turtles nest at night (May – October)",
+    "Visit the colonial-era prison complex",
+    "Explore the national park trails",
+  ],
+
+  tags: ["island", "diving", "history", "nature", "beach"],
+
+  gettingThere:
+    "Fly from Ho Chi Minh City (45 minutes, multiple daily flights on Vietnam Airlines and Bamboo Airways). No ferry service from the mainland.",
+
+  bestTime:
+    "March – September (dry season, calm seas, sea turtle nesting from May). Avoid October – February (rough seas, some diving sites inaccessible).",
+
+  budgetPerDay: "$80 – $200 USD (limited mid-range options; mostly budget or luxury)",
+
+  recommendedStay: "3 – 5 days",
+
+  transport: "Motorbike rental or resort transfers",
+
+  nearbyDestinations: ["phu-quoc", "vung-tau"],
+
+  coordinates: {
+    lat: 8.6843,
+    lng: 106.6061,
+  },
+},
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {

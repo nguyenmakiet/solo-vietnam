@@ -10,7 +10,7 @@ export const maPiLengPass: Location = {
   lng: "105.39773522066236",
   address: "Mã Pí Lèng, Mèo Vạc, Hà Giang",
   type: ["mountain", "attraction", "nature"],
-  experiences: ["motorbike", "photography", "hiking", "viewpoint"],
+  experiences: ["photography", "trekking", "cycling", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "📸 Photography", "🌊 Canyon Views"],
   bestTime: "Sep – Nov (golden rice terraces) or Mar – Apr (spring blossoms)",
   entranceFee: "Free",

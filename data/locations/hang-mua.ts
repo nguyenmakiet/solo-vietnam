@@ -10,7 +10,7 @@ export const hangMua: Location = {
   lng: "105.93389756500189",
   address: "Hang Múa, Ninh Hải, Hoa Lư, Ninh Bình",
   type: "nature",
-  experiences: ["hiking", "photography", "viewpoint", "sightseeing"],
+  experiences: ["trekking", "photography"],
   tags: ["🏔️ Viewpoint", "🪨 500 Stone Steps", "📸 Photography", "🌾 Panoramic View"],
   bestTime: "Sep – Nov or Mar – May (clear skies, golden rice in Oct)",
   entranceFee: "~100,000 VND",

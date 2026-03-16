@@ -10,7 +10,7 @@ export const bichDongPagoda: Location = {
   lng: "105.91579657358032",
   address: "Bích Động, Ninh Hải, Hoa Lư, Ninh Bình",
   type: ["cultural","pagoda"],
-  experiences: ["culture", "photography", "hiking", "sightseeing"],
+  experiences: ["history", "culture", "walking-tour", "photography"],
   tags: ["⛩️ Cave Pagoda", "🪨 Limestone Grotto", "📸 Photography", "🏔️ Viewpoint"],
   bestTime: "Oct – Apr (dry season, cooler temperatures, clear skies)",
   entranceFee: "Free",

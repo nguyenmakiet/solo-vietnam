@@ -10,7 +10,7 @@ export const darkCave: Location = {
   lng: "106.25458261828979",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: "nature",
-  experiences: ["adventure", "kayaking", "swimming", "cave-exploration", "zip-line"],
+  experiences: ["caving", "kayaking", "swimming", "trekking"],
   tags: ["🧗 Adventure Cave", "🛶 Kayaking", "💧 Mud Bath", "🎢 Zip Line"],
   bestTime: "Feb – Aug (dry season, river level stable for kayaking)",
   entranceFee: "~450,000 VND (all activities included)",

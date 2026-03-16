@@ -10,7 +10,7 @@ export const phuQuocNightMarket: Location = {
   lng: "103.9602497,54",
   address: "Chợ Đêm Phú Quốc, Dương Đông, Phú Quốc, Kiên Giang",
   type: "market",
-  experiences: ["street-food", "shopping", "nightlife", "seafood"],
+  experiences: ["food", "markets", "nightlife", "walking-tour"],
   tags: ["🌙 Night Market", "🦞 Seafood", "🛍️ Shopping", "🍢 Street Food"],
   bestTime: "Nov – Apr (dry season; less rain in the evening)",
   entranceFee: "Free",

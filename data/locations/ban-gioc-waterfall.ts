@@ -10,7 +10,7 @@ export const banGiocWaterfall: Location = {
   lng: "106.72438321761962",
   address: "Đàm Thủy, Trùng Khánh, Cao Bằng",
   type: "nature",
-  experiences: ["photography", "sightseeing", "bamboo-raft", "nature"],
+  experiences: ["photography", "boat-tour", "trekking", "wildlife"],
   tags: ["💧 Largest Waterfall in SEA", "📸 Photography", "🛶 Bamboo Raft", "🌿 Nature"],
   bestTime: "Sep – Oct (peak water flow, lush greenery after rainy season)",
   entranceFee: "~45,000 VND (bamboo raft to base: ~150,000 VND)",

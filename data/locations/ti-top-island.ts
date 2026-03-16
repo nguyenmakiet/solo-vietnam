@@ -10,7 +10,7 @@ export const tiTopIsland: Location = {
   lng: "107.08129113548287",
   address: "Đảo Ti Tốp, Vịnh Hạ Long, Quảng Ninh",
   type: "island",
-  experiences: ["swimming", "hiking", "photography", "kayaking"],
+  experiences: ["beach", "swimming", "trekking", "photography", "kayaking"],
   tags: ["🏖️ Crescent Beach", "🏔️ Summit Viewpoint", "🛶 Kayaking", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clear skies, fewer domestic crowds)",
   entranceFee: "Included in Ha Long Bay Route 2 sightseeing ticket",

@@ -10,7 +10,7 @@ export const sonDoongCave: Location = {
   lng: "106.30214901899664",
   address: "Tân Trạch, Bố Trạch, Quảng Bình",
   type: ["nature","cave"],
-  experiences: ["adventure", "expedition", "photography", "camping", "trekking"],
+  experiences: ["caving", "trekking", "camping", "photography"],
   tags: ["🏆 World's Largest Cave", "🏕️ Overnight Expedition", "📸 Photography", "🥾 Trekking"],
   bestTime: "Feb – Aug (expedition season; cave closes Sep – Jan)",
   entranceFee: "~$3,000 USD per person (4-day expedition, all-inclusive)",

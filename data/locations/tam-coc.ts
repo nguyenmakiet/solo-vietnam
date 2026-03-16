@@ -10,7 +10,7 @@ export const tamCoc: Location = {
   lng: "105.91576156501065",
   address: "Tam Cốc, Ninh Hải, Hoa Lư, Ninh Bình",
   type: "nature",
-  experiences: ["boat-tour", "cycling", "photography", "cave", "rice-fields"],
+  experiences: ["boat-tour", "cycling", "photography"],
   tags: ["🛶 Boat Tour", "🏔️ Karst", "🌾 Rice Fields", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – Apr (avoid summer crowds and heat)",
   entranceFee: "Boat tour: 150,000 VND/person",

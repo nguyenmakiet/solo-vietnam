@@ -10,7 +10,7 @@ export const hamNinhFishingVillage: Location = {
   lng: "104.0458055,926",
   address: "Hàm Ninh, Phú Quốc, Kiên Giang",
   type: "town",
-  experiences: ["seafood", "local-life", "photography", "fishing"],
+  experiences: ["culture", "food", "photography", "walking-tour"],
   tags: ["🎣 Fishing Village", "🦀 Seafood", "🏡 Local Life", "🌅 Sunrise"],
   bestTime: "Nov – Apr (dry season; early morning for freshest catch)",
   entranceFee: "Free",

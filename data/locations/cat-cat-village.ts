@@ -10,7 +10,7 @@ export const catCatVillage: Location = {
   lng: "103.83069280337017",
   address: "San Sả Hồ, Sa Pa, Lào Cai",
   type: ["cultural","town"],
-  experiences: ["culture", "photography", "walking", "waterfall"],
+  experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["🎎 H'mong Culture", "💧 Waterfall", "📸 Photography", "🚶 Walking Trail"],
   bestTime: "Mar – May or Sep – Nov (best light, comfortable weather)",
   entranceFee: "~90,000 VND",

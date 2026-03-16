@@ -10,7 +10,7 @@ export const khaiDinhTomb: Location = {
   lng: "107.59074610662047",
   address: "Châu Chữ, Hương Thủy, Thừa Thiên Huế",
   type: "cultural",
-  experiences: ["history", "photography", "sightseeing", "culture"],
+  experiences: ["history", "culture", "photography"],
   tags: ["👑 Nguyễn Tomb", "🏯 French-Vietnamese Architecture", "📸 Photography", "✨ Mosaic Interior"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, best light for photography)",
   entranceFee: "~150,000 VND",

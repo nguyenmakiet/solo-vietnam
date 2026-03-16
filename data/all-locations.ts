@@ -1,13 +1,19 @@
 import { Location } from "@/data/location"
 
 import { anBangBeach } from "@/data/locations/an-bang-beach"
+import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
 import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
+import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
+import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { darkCave } from "@/data/locations/dark-cave"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
+import { dragonBridge } from "@/data/locations/dragon-bridge"
 import { fansipan } from "@/data/locations/fansipan"
+import { frenchVillageBaNa } from "@/data/locations/french-village-ba-na"
+import { goldenBridge } from "@/data/locations/golden-bridge"
 import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
 import { hangMua } from "@/data/locations/hang-mua"
@@ -22,6 +28,7 @@ import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
+import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
 import { paradiseCave } from "@/data/locations/paradise-cave"
@@ -29,7 +36,9 @@ import { phongNamValley } from "@/data/locations/phong-nam-valley"
 import { phongNhaCave } from "@/data/locations/phong-nha-cave"
 import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
 import { saoBeach } from "@/data/locations/sao-beach"
+import { sixSensesBeach } from "@/data/locations/six-senses-beach"
 import { sonDoongCave } from "@/data/locations/son-doong-cave"
+import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { tamCoc } from "@/data/locations/tam-coc"
 import { taVanVillage } from "@/data/locations/ta-van-village"
@@ -42,13 +51,19 @@ import { trangAn } from "@/data/locations/trang-an"
 // ── Add new locations here ────────────────────────────────────────────────────
 export const allLocations: Location[] = [
   anBangBeach,
+  baNaCableCar,
   baiTuLongBay,
   banGiocWaterfall,
   bichDongPagoda,
   catCatVillage,
+  conDaoNationalPark,
+  conDaoPrison,
   darkCave,
   dongVanOldTown,
+  dragonBridge,
   fansipan,
+  frenchVillageBaNa,
+  goldenBridge,
   haLongBay,
   hamNinhFishingVillage,
   hangMua,
@@ -63,6 +78,7 @@ export const allLocations: Location[] = [
   lungCuFlagTower,
   maPiLengPass,
   muongHoaValley,
+  myKheBeach,
   nguomNgaoCave,
   nhoQueRiver,
   paradiseCave,
@@ -70,7 +86,9 @@ export const allLocations: Location[] = [
   phongNhaCave,
   phuQuocNightMarket,
   saoBeach,
+  sixSensesBeach,
   sonDoongCave,
+  sonTraPeninsula,
   sungSotCave,
   tamCoc,
   taVanVillage,

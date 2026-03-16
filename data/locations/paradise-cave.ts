@@ -10,7 +10,7 @@ export const paradiseCave: Location = {
   lng: "106.22333853972053",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["nature","cave"],
-  experiences: ["cave-exploration", "hiking", "photography", "sightseeing"],
+  experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 Largest Dry Cave in Asia", "📸 Photography", "🥾 Boardwalk", "✨ Formations"],
   bestTime: "Feb – Aug (dry season; most stable conditions)",
   entranceFee: "~250,000 VND + electric buggy ~50,000 VND (optional)",

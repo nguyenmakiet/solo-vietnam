@@ -10,7 +10,7 @@ export const sungSotCave: Location = {
   lng: "107.09146231299174",
   address: "Đảo Bồ Hòn, Vịnh Hạ Long, Quảng Ninh",
   type: ["nature","cave"],
-  experiences: ["cave-exploration", "photography", "sightseeing", "hiking"],
+  experiences: ["caving", "photography"],
   tags: ["🪨 Largest Cave in Ha Long", "📸 Photography", "🧗 Hiking", "🌊 UNESCO Heritage"],
   bestTime: "Oct – Dec or Apr – Jun (low crowds, comfortable temperatures)",
   entranceFee: "~300,000 VND (included in most cruise packages)",

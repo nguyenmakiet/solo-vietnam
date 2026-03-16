@@ -10,7 +10,7 @@ export const phongNhaCave: Location = {
   lng: "106.28397697966346",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["nature","cave"],
-  experiences: ["cave-exploration", "boat-tour", "photography", "sightseeing"],
+  experiences: ["caving", "boat-tour", "photography"],
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "📸 Photography", "🌊 Underground River"],
   bestTime: "Feb – Aug (dry season; cave closes during flood season Sep – Dec)",
   entranceFee: "~150,000 VND + boat fee ~350,000 VND (shared)",

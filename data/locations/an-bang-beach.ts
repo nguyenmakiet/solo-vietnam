@@ -10,7 +10,7 @@ export const anBangBeach: Location = {
   lng: "108.3404344460877",
   address: "Cẩm An, Hội An, Quảng Nam",
   type: "beach",
-  experiences: ["swimming", "beach", "dining", "relaxation"],
+  experiences: ["beach", "swimming", "cycling", "food"],
   tags: ["🏖️ Beach", "🍹 Beachside Cafes", "🌊 Swimming", "🚲 Cycling Distance from Hội An"],
   bestTime: "Mar – Sep (dry season, calm water; avoid Oct – Jan which is storm season)",
   entranceFee: "Free",

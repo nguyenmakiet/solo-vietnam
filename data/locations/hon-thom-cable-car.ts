@@ -10,7 +10,7 @@ export const honThomCableCar: Location = {
   lng: "104.0046602,858",
   address: "An Thới, Phú Quốc, Kiên Giang",
   type: "attraction",
-  experiences: ["cable-car", "island-hopping", "beach", "amusement-park"],
+  experiences: ["cable-car", "beach", "swimming", "photography"],
   tags: ["🚡 Cable Car", "🏝️ Island", "🌊 Sea View", "🎢 Theme Park"],
   bestTime: "Nov – Apr (clear skies, calm sea)",
   entranceFee: "750,000 VND/adult return (includes cable car + Hòn Thơm Nature Park)",

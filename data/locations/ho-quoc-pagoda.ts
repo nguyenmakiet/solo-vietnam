@@ -10,7 +10,7 @@ export const hoQuocPagoda: Location = {
   lng: "104.02895431741221",
   address: "Hộ Quốc Pagoda, Cửa Dương, Phú Quốc, Kiên Giang",
   type: "temple",
-  experiences: ["culture", "photography", "meditation", "hiking"],
+  experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["🛕 Pagoda", "🏔️ Sea View", "📸 Photography", "🧘 Peaceful"],
   bestTime: "Nov – Apr (dry season; clear views)",
   entranceFee: "Free",

@@ -10,7 +10,7 @@ export const nguomNgaoCave: Location = {
   lng: "106.70639496631787",
   address: "Đàm Thủy, Trùng Khánh, Cao Bằng",
   type: ["nature", "cave"],
-  experiences: ["cave-exploration", "photography", "sightseeing"],
+  experiences: ["caving", "photography"],
   tags: ["🪨 Stalactite Cave", "📸 Photography", "🧗 Cave Walk", "🌿 Off the Beaten Path"],
   bestTime: "Oct – Apr (dry season, easier road access)",
   entranceFee: "~40,000 VND",

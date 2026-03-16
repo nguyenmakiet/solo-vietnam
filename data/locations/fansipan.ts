@@ -10,7 +10,7 @@ export const fansipan: Location = {
   lng: "103.77517218526022",
   address: "Hoàng Liên, Sa Pa, Lào Cai",
   type: "nature",
-  experiences: ["hiking", "cable-car", "photography", "adventure"],
+  experiences: ["trekking", "cable-car", "photography"],
   tags: ["🏔️ Rooftop of Indochina", "🚡 Cable Car", "🥾 Trekking", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clear skies, flowers in bloom)",
   entranceFee: "Cable car + funicular: ~800,000 VND round-trip. Hiking: free (permit required)",

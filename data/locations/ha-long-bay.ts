@@ -10,7 +10,7 @@ export const haLongBay: Location = {
   lng: "106.99130992781454",
   address: "Vịnh Hạ Long, Quảng Ninh",
   type: "nature",
-  experiences: ["cruising", "cave-exploration", "kayaking", "photography", "swimming"],
+  experiences: ["boat-tour", "kayaking", "caving", "photography", "swimming"],
   tags: ["🌊 UNESCO World Heritage", "🚢 Overnight Cruise", "🪨 Karst Landscape", "📸 Photography"],
   bestTime: "Sep – Nov (clear skies, calm water, best visibility) or Mar – Apr",
   entranceFee: "290,000 VND bay entrance + cruise/boat fee (varies by operator)",

@@ -10,7 +10,7 @@ export const imperialCity: Location = {
   lng: "107.57931947854229",
   address: "Thuận Thành, Huế, Thừa Thiên Huế",
   type: "cultural",
-  experiences: ["history", "photography", "sightseeing", "culture"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏯 UNESCO Heritage", "👑 Nguyễn Dynasty", "📸 Photography", "🏛️ Imperial Architecture"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, comfortable temperatures)",
   entranceFee: "~200,000 VND (Forbidden Purple City included)",

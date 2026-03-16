@@ -10,7 +10,7 @@ export const nhoQueRiver: Location = {
   lng: "105.42652150718125",
   address: "Nho Quế River, Mèo Vạc, Hà Giang",
   type: ["nature","river"],
-  experiences: ["boat-tour", "photography", "kayaking", "viewpoint"],
+  experiences: ["photography", "kayaking", "boat-tour", "hiking"],
   tags: ["🌊 Turquoise River", "🏔️ Canyon", "🛶 Boat Tour", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clearest water, best light)",
   entranceFee: "Boat tour: 150,000–200,000 VND/person",
