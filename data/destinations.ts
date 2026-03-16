@@ -287,7 +287,7 @@ export const destinations: Destination[] = [
   
   {
     slug: "da-lat",
-    name: "Da Lat",
+    name: "Đà Lạt",
     province: "Lam Dong",
     provinceSlug: "lam-dong",
     region: "south",
@@ -803,6 +803,58 @@ export const destinations: Destination[] = [
   coordinates: {
     lat: 20.7271,
     lng: 107.0469,
+  },
+},
+// Thêm vào destinations array trong data/destinations.ts
+
+{
+  slug: "hue",
+  name: "Huế",
+  province: "Thua Thien Hue",
+  provinceSlug: "hue",
+  region: "central",
+
+  description:
+    "Huế is Vietnam's imperial city — the seat of the Nguyễn Dynasty from 1802 to 1945, a UNESCO World Heritage Site of royal citadels, tombs, pagodas, and the Perfume River, with a cuisine considered the most refined in the country.",
+
+  tagline: "Imperial palaces, royal tombs, and the best food in Vietnam",
+
+  heroImage: heroUrl("hue-citadel_g9szq6"),
+
+  highlights: [
+    "Imperial City (Đại Nội)",
+    "Thiên Mụ Pagoda",
+    "Khải Định Tomb",
+    "Minh Mạng Tomb",
+    "Tự Đức Tomb",
+  ],
+
+  thingsToDo: [
+    "Explore the Imperial Citadel and Forbidden Purple City",
+    "Visit the royal tombs along the Perfume River",
+    "Take a dragon boat to Thiên Mụ Pagoda",
+    "Eat bún bò Huế, bánh khoái, and cơm hến at local restaurants",
+  ],
+
+  tags: ["history", "culture", "heritage", "food", "pagoda"],
+
+  gettingThere:
+    "Train from Hanoi (~14 hours) or Da Nang (2.5 hours). Fly into Phú Bài Airport (15km from city centre). Direct buses from Đà Nẵng (~3 hours) and Hội An (~3.5 hours).",
+
+  bestTime:
+    "Feb – Apr or Sep – Nov (dry season). Avoid Oct – Nov when Huế receives the heaviest rainfall of any city in Vietnam.",
+
+  budgetPerDay: "$20 – $45 USD",
+
+  recommendedStay: "2 – 3 days",
+
+  transport: "Bicycle, motorbike, or dragon boat on the Perfume River",
+
+  nearbyDestinations: ["da-nang", "hoi-an", "phong-nha-ke-bang"],
+
+  coordinates: {
+    lat: 16.4637,
+    lng: 107.5909,
   },
 },
 ]
