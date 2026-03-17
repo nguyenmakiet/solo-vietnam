@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const conDaoPrison: Location = {
   slug: "con-dao-prison",
   name: "Con Dao Prison",
-  provinces: ["ba-ria-vung-tau"],
+  provinces: ["vung-tau"],
   destination: "con-dao",
   lat: "8.689294969079059",
   lng: "106.6153057028259",

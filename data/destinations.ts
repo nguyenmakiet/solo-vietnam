@@ -391,7 +391,7 @@ export const destinations: Destination[] = [
   slug: "con-dao",
   name: "Côn Đảo",
   province: "Ba Ria - Vung Tau",
-  provinceSlug: "ba-ria-vung-tau",
+  provinceSlug: "vung-tau",
   region: "south",
 
   description:
@@ -608,7 +608,7 @@ export const destinations: Destination[] = [
 
   tagline: "Vietnam's wild north — waterfalls, caves, and revolutionary history",
 
-  heroImage: heroUrl("cao-bang-01_kiniec"),
+  heroImage: heroUrl("cao-bang_tu6hxy"),
 
   highlights: [
     "Bản Giốc Waterfall",

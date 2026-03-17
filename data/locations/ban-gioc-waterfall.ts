@@ -16,8 +16,12 @@ export const banGiocWaterfall: Location = {
   entranceFee: "~45,000 VND (bamboo raft to base: ~150,000 VND)",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "",
-  heroImage: heroUrl("ban-gioc-waterfall-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ban-gioc-waterfall-cao-bang_jq8ls6"),
+  gallery: [
+    "ban-gioc-waterfall-cao-bang4_lfiafx",
+    "ban-gioc-waterfall-cao-bang3_gbxkfk",
+    "ban-gioc-waterfall-cao-bang2_yqufyz",
+  ],
   seoDescription:
     "Bản Giốc is the largest waterfall in Southeast Asia and the fourth largest on a national border in the world — a 300-metre-wide curtain of water crashing across three tiers on the Vietnam-China border in Cao Bằng, surrounded by karst mountains and emerald pools.",
   tips: [

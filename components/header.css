@@ -1,0 +1,248 @@
+/* ============================================================
+   header.css — soloinvietnam.com
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  --gold: #c8a96e;
+  --gold-light: #e8d5a8;
+  --dark: #1a1209;
+  --text-muted: #7a6a52;
+}
+
+/* ── HEADER ── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--dark);
+  border-bottom: 1px solid rgba(200, 169, 110, 0.12);
+  transition: box-shadow 0.3s;
+}
+
+.site-header.scrolled {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.site-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* ── LOGO ── */
+.site-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+
+.site-logo:hover {
+  opacity: 0.85;
+}
+
+.site-logo em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* ── DESKTOP NAV ── */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-nav-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.site-nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.site-nav-link.active {
+  color: var(--gold);
+  background: rgba(200, 169, 110, 0.1);
+}
+
+/* ── HAMBURGER ── */
+.site-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.site-hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s, width 0.3s;
+  transform-origin: center;
+}
+
+.site-hamburger.open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.site-hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.site-hamburger.open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* ── MOBILE OVERLAY ── */
+.site-mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 98;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.site-mobile-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── MOBILE MENU ── */
+.site-mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  background: var(--dark);
+  border-left: 1px solid rgba(200, 169, 110, 0.15);
+  z-index: 99;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 80px;
+}
+
+.site-mobile-menu.open {
+  transform: translateX(0);
+}
+
+.site-mobile-menu-inner {
+  padding: 0 28px;
+}
+
+.site-mobile-eyebrow {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(200, 169, 110, 0.5);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.site-mobile-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: color 0.2s;
+  opacity: 0;
+  animation: none;
+}
+
+.site-mobile-menu.open .site-mobile-link {
+  animation: slideInLink 0.4s forwards;
+}
+
+@keyframes slideInLink {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.site-mobile-link:hover {
+  color: #fff;
+}
+
+.site-mobile-link.active {
+  color: var(--gold);
+}
+
+.site-mobile-link-arrow {
+  font-size: 14px;
+  color: var(--gold);
+  opacity: 0.6;
+  transition: transform 0.2s, opacity 0.2s;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+.site-mobile-link:hover .site-mobile-link-arrow {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
+
+  .site-hamburger {
+    display: flex;
+  }
+
+  .site-mobile-overlay {
+    display: block;
+  }
+
+  .site-mobile-menu {
+    display: block;
+  }
+
+  .site-header-inner {
+    padding: 0 20px;
+  }
+}
