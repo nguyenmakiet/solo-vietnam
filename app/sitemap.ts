@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const provincePages: MetadataRoute.Sitemap = provinces.map((p) => ({
     url: `${BASE_URL}/provinces/${p.slug}`,
-    lastModified: p.datePublished ? new Date(p.datePublished) : new Date(),
+    lastModified: (p as any).datePublished ? new Date((p as any).datePublished) : new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.85,
   }))
