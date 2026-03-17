@@ -3,33 +3,18 @@ import Link from "next/link"
 import { destinations } from "@/data/destinations"
 import "./homepage.css"
 
-// Top 6 featured destinations
-const featured = destinations.slice(0, 6)
-
-// Mock blog posts — replace with real data when /blog is ready
-const blogPosts = [
-  {
-    slug: "vietnam-motorbike-north-to-south",
-    title: "Riding Vietnam North to South on a Motorbike",
-    excerpt: "The full breakdown — route, costs, bike choice, and what nobody tells you before you leave Hanoi.",
-    readTime: "12 min read",
-    tag: "Adventure",
-  },
-  {
-    slug: "scams-in-vietnam",
-    title: "Vietnam Scams: The Complete Solo Traveler Guide",
-    excerpt: "Cyclo traps, fake travel agencies, SIM card cons — what to watch for and how to handle them without ruining your trip.",
-    readTime: "8 min read",
-    tag: "Safety",
-  },
-  {
-    slug: "is-vietnam-safe-for-women",
-    title: "Is Vietnam Safe for Women Traveling Solo?",
-    excerpt: "An honest answer based on real experience — not a PR piece for the tourism board.",
-    readTime: "10 min read",
-    tag: "Women Solo",
-  },
+// Featured destinations — hardcoded order
+const FEATURED_SLUGS = [
+  "ha-giang-loop",
+  "ninh-binh",
+  "ha-long",
+  "hoi-an",
+  "phong-nha-ke-bang",
+  "phu-quoc",
 ]
+const featured = FEATURED_SLUGS
+  .map((slug) => destinations.find((d) => d.slug === slug))
+  .filter(Boolean) as typeof destinations
 
 const experiences = [
   { emoji: "🏖️", label: "Beaches", href: "/experiences/beaches" },
@@ -56,29 +41,25 @@ export default function Home() {
             Practical guides for solo travelers — scam alerts, real prices, and local knowledge you won't find in a guidebook.
           </p>
 
-          {/* MAP — preserved exactly as original */}
+          {/* MAP */}
           <div className="home-map-wrap">
-            {/* <div className="home-map-legend">
-              <div className="home-map-legend-item">
-                <div className="home-map-legend-dot" style={{ background: "#93b8d8" }} />
-                North
-              </div>
-              <div className="home-map-legend-item">
-                <div className="home-map-legend-dot" style={{ background: "#90c49a" }} />
-                Central
-              </div>
-              <div className="home-map-legend-item">
-                <div className="home-map-legend-dot" style={{ background: "#e8b87a" }} />
-                South
-              </div>
-            </div> */}
-
             <VietnamMap />
-
             <div className="home-map-hint">
               👆 Click a province to explore destinations
             </div>
           </div>
+
+          {/* MAP CTA BANNER */}
+          <Link href="/map" className="home-map-cta-banner">
+            <div className="home-map-cta-left">
+              <span className="home-map-cta-icon">🗺️</span>
+              <div>
+                <div className="home-map-cta-title">Explore 100+ locations on the map</div>
+                <div className="home-map-cta-sub">Filter by beaches, trekking, caves, food & more</div>
+              </div>
+            </div>
+            <span className="home-map-cta-btn">Open map →</span>
+          </Link>
 
           <Link href="/destinations" className="home-map-browse">
             Browse all destinations →
@@ -189,7 +170,7 @@ export default function Home() {
               <div className="home-why-title">Up to date info</div>
               <div className="home-why-desc">
                 Regularly updated guides with current prices, recent scam alerts, and the latest travel conditions — not outdated blog posts from years ago.
-            </div>
+              </div>
             </div>
             <div className="home-why-card">
               <div className="home-why-icon">🏝️</div>
@@ -201,34 +182,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* ── LATEST BLOG ── */}
-      {/* <div>
-        <div className="home-section">
-          <div className="home-section-header">
-            <div>
-              <div className="home-section-eyebrow">From the blog</div>
-              <h2 className="home-section-title">
-                Things worth <em>reading</em>
-              </h2>
-            </div>
-            <Link href="/blog" className="home-section-link">
-              All posts →
-            </Link>
-          </div>
-
-          <div className="home-blog-grid">
-            {blogPosts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="home-blog-card">
-                <span className="home-blog-tag">{post.tag}</span>
-                <div className="home-blog-title">{post.title}</div>
-                <div className="home-blog-excerpt">{post.excerpt}</div>
-                <div className="home-blog-meta">{post.readTime}</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div> */}
 
     </main>
   )

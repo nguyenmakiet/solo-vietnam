@@ -16,8 +16,12 @@ export const dongVanOldTown: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2739,105.3622",
-  heroImage: heroUrl("dong-van-old-town_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("dong-van-old-town_yytvko"),
+  gallery: [
+    "dong-van-6_b6rdz6",
+    "dong-van-5_g9ejgq",
+    "dong-van_pjocwa"
+  ],
   seoDescription:
     "Đồng Văn Old Town — a preserved French colonial and Qing-era stone quarter perched at 1,600m on Vietnam's northernmost plateau, surrounded by dramatic karst peaks and H'Mông villages.",
   tips: [

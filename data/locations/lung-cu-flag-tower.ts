@@ -16,8 +16,12 @@ export const lungCuFlagTower: Location = {
   entranceFee: "20,000 VND/person",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=23.3786,105.3336",
-  heroImage: heroUrl("lung-cu-flag-tower-placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cot-co-lung-cu-05_wjln4b"),
+  gallery: [
+      "cot-co-lung-cu-02_ugfwyc",
+      "cot-co-lung-cu-03_kbp2iv",
+      "cot-co-lung-cu-01_crtpf8"
+  ],
   seoDescription:
     "Lũng Cú Flag Tower — Vietnam's northernmost point on Dragon Mountain, where a massive national flag flies above the karst plateau with China visible across the valley below.",
   tips: [

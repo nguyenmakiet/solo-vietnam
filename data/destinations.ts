@@ -95,7 +95,7 @@ export const destinations: Destination[] = [
 
     tagline: "1,600 islands. One unforgettable night on the water.",
 
-    heroImage: heroUrl("ha-long_vmycp8"),
+    heroImage: heroUrl("ha-long-4_bdow9b"),
 
     highlights: [
       "Overnight cruise",
@@ -713,7 +713,7 @@ export const destinations: Destination[] = [
 
   tagline: "Karst mountains, ancient capitals, and rice fields by rowboat",
 
-  heroImage: heroUrl("ninh-binh-02_ueq2ix"),
+  heroImage: heroUrl("ninh-binh_qa9mtc"),
 
   highlights: [
     "Tràng An UNESCO Heritage Site",

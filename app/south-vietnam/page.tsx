@@ -156,14 +156,14 @@ export default function RegionPage() {
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ color }}>Explore the map</p>
             <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
-              Browse all 63 provinces
+              Browse 100+ locations
             </h2>
-            <p className="text-[#A09880] mt-2 text-sm">Interactive map with local food, culture, and travel tips.</p>
+            <p className="text-[#A09880] mt-2 text-sm">Filter by experience — beaches, trekking, caves, food, and more.</p>
           </div>
-          <Link href="/provinces"
+          <Link href="/map"
             className="shrink-0 text-[#1C1C1A] font-semibold text-sm px-7 py-3.5 rounded-full transition-colors"
             style={{ backgroundColor: color }}>
-            View province map →
+            Open interactive map →
           </Link>
         </div>
       </section>

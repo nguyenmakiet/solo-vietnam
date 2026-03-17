@@ -1,19 +1,9 @@
-"use client"
-
 import Link from "next/link"
-import { useState, use } from "react"
+import { notFound } from "next/navigation"
 import { locationTheme } from "@/data/location"
 import { allLocations } from "@/data/all-locations"
+import LocationTabs from "./LocationTabs"
 import "./location.css"
-
-const TABS = [
-  { id: "overview", label: "Overview" },
-  { id: "gallery", label: "Gallery" },
-  { id: "how-to-get-there", label: "How to Get There" },
-  { id: "what-to-expect", label: "What to Expect" },
-  { id: "travel-tips", label: "Travel Tips" },
-  { id: "insider-tips", label: "Insider Tips" },
-]
 
 function toDecimal(val: number | string): number {
   if (typeof val === "number") return val
@@ -24,25 +14,18 @@ function toDecimal(val: number | string): number {
   return dir === "S" || dir === "W" ? -decimal : decimal
 }
 
-export default function LocationPage({
+export default async function LocationPage({
   params,
 }: {
   params: Promise<{ slug: string }>
 }) {
-  const { slug } = use(params)
+  const { slug } = await params
   const location = allLocations.find((l) => l.slug === slug)
-  if (!location) return null
+  if (!location) notFound()
 
   const primaryType = Array.isArray(location.type) ? location.type[0] : location.type
   const typeLabel = Array.isArray(location.type) ? location.type.join(" · ") : location.type
   const theme = locationTheme[primaryType] ?? "gray"
-  const [activeTab, setActiveTab] = useState("overview")
-
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" })
-    setActiveTab(id)
-  }
 
   return (
     <div className={`lp theme-${theme}`}>
@@ -101,19 +84,7 @@ export default function LocationPage({
       </div>
 
       {/* Tabs */}
-      <div className="tabs-wrap">
-        <div className="tabs-inner">
-          {TABS.map((tab) => (
-            <button
-              key={tab.id}
-              className={`tab-btn ${activeTab === tab.id ? "active" : ""}`}
-              onClick={() => scrollTo(tab.id)}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-      </div>
+      <LocationTabs />
 
       <main className="content-wrap">
 
