@@ -16,8 +16,11 @@ export const khemBeach: Location = {
   entranceFee: "Free (public beach section); resort access varies",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=10.0289,104.0439",
-  heroImage: heroUrl("khem-beach-placeholder"),
-  gallery: [],
+  heroImage: heroUrl("khem-beach2_sbrhql"),
+  gallery: [
+    "khem-beach2_sbrhql",
+    "khem-beach_l6quut",
+  ],
   seoDescription:
     "Khem Beach — one of Phú Quốc's most beautiful and least crowded beaches, a long arc of fine white sand on the southern coast backed by jungle hills and lapped by exceptionally clear water.",
   tips: [

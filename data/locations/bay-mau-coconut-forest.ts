@@ -16,8 +16,11 @@ export const bayMauCoconutForest: Location = {
   entranceFee: "~150,000–250,000 VND (includes basket boat ride)",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("bay-mau-coconut-forest-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("coconut-forest-hoi-an_rp3l1z"),
+  gallery: [
+    "coconut-forest-hoi-an2_yxbejh",
+    "coconut-forest-hoi-an_rp3l1z",
+  ],
   seoDescription:
     "Bảy Mẫu Coconut Forest is a 7-hectare water coconut palm wetland in Cẩm Thanh village — navigated by traditional Vietnamese basket boats through narrow waterways under the palm canopy, with fishing demonstrations and local music performances.",
   tips: [

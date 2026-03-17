@@ -16,8 +16,12 @@ export const sonDoongCave: Location = {
   entranceFee: "~$3,000 USD per person (4-day expedition, all-inclusive)",
   openingHours: "Expedition departures: Feb – Aug only",
   mapUrl: "",
-  heroImage: heroUrl("son-doong-cave-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("son-doong-cave2_h7rhbn"),
+  gallery: [
+    "son-doong-cave6_uo6v0u",
+    "son-doong-cave5_itsq2s",
+    "son-doong-cave4_r6dbps",
+  ],
   seoDescription:
     "Son Doong is the largest cave in the world — big enough to contain a 40-story skyscraper, with its own weather system, jungle, and river inside. Access is by 4-day expedition only, with a strict annual quota of 1,000 visitors, making it one of the most exclusive natural experiences on earth.",
   tips: [

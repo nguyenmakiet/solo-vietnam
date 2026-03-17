@@ -16,8 +16,12 @@ export const phongNhaCave: Location = {
   entranceFee: "~150,000 VND + boat fee ~350,000 VND (shared)",
   openingHours: "7:00 AM – 4:00 PM (closed during flood season)",
   mapUrl: "",
-  heroImage: heroUrl("phong-nha-cave-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("phong-nha-cave8_quatqt"),
+  gallery: [
+    "phong-nha-cave4_rkecfp",
+    "phong-nha-cave2_tp6udg",
+    "phong-nha-cave_x8yx8z",
+  ],
   seoDescription:
     "Phong Nha Cave is the oldest and most historically significant cave in the Phong Nha-Kẻ Bàng UNESCO World Heritage Site — a 7.7km limestone grotto with an underground river, navigated by wooden boat through cathedral chambers of ancient stalactites and glowing formations.",
   tips: [

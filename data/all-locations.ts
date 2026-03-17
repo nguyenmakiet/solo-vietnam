@@ -36,6 +36,7 @@ import { frenchVillageBaNa } from "@/data/locations/french-village-ba-na"
 import { goldenBridge } from "@/data/locations/golden-bridge"
 import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
+import { hangEn } from "@/data/locations/hang-en"
 import { hangMua } from "@/data/locations/hang-mua"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
 import { honMunIsland } from "@/data/locations/hon-mun-island"
@@ -137,6 +138,7 @@ export const allLocations: Location[] = [
   goldenBridge,
   haLongBay,
   hamNinhFishingVillage,
+  hangEn,
   hangMua,
   hoiAnAncientTown,
   honMunIsland,

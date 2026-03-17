@@ -16,8 +16,8 @@ export const paradiseCave: Location = {
   entranceFee: "~250,000 VND + electric buggy ~50,000 VND (optional)",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("paradise-cave-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("paradise-cave_eccstr"),
+  gallery: ["paradise-cave_eccstr",],
   seoDescription:
     "Paradise Cave is the longest dry cave in Asia at 31km — a cathedral of white and gold stalactites up to 40 metres high, discovered only in 2005 and opened to visitors in 2010, with a 1km boardwalk through chambers so vast they dwarf everything inside them.",
   tips: [

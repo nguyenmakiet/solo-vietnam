@@ -16,8 +16,12 @@ export const hoiAnAncientTown: Location = {
   entranceFee: "~120,000 VND (covers 5 heritage site entries within the Old Town)",
   openingHours: "Old Town streets: open 24/7; heritage houses: 8:00 AM – 9:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("hoi-an-old-town-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("hoi-an_qxhyjl"),
+  gallery: [
+    "hoi-an-ancient-town_xjjwic",
+    "hoi-an2_glitsm",
+    "hoi-an-ancient-town3_qqewbe",
+  ],
   seoDescription:
     "Hội An Ancient Town is Vietnam's best-preserved trading port — a UNESCO World Heritage Site of 400-year-old merchant houses, assembly halls, temples, and lantern-lit streets on the Thu Bồn River, where Japanese, Chinese, and Vietnamese architectural traditions fuse into a single walkable neighbourhood.",
   tips: [

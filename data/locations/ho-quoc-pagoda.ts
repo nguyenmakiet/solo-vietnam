@@ -16,8 +16,8 @@ export const hoQuocPagoda: Location = {
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=10.1375,104.0800",
-  heroImage: heroUrl("ho-quoc-pagoda-placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ho-quoc-pagoda_y9rkq0"),
+  gallery: ["ho-quoc-pagoda_y9rkq0",],
   seoDescription:
     "Hộ Quốc Pagoda — a striking Buddhist temple complex climbing a forested hillside on Phú Quốc's east coast, with sweeping views over the Gulf of Thailand and one of the island's most peaceful atmospheres.",
   tips: [

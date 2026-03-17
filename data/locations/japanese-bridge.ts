@@ -16,8 +16,12 @@ export const japaneseBridge: Location = {
   entranceFee: "Included in Hội An Old Town ticket (~120,000 VND)",
   openingHours: "Open daily; best visited early morning or after 5 PM",
   mapUrl: "",
-  heroImage: heroUrl("japanese-bridge-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("japanese-bridge-quang-nam2_yrhdb8"),
+  gallery: [
+    "japanese-bridge-quang-nam4_zt5jyi",
+    "japanese-bridge-quang-nam3_d761ud",
+    "japanese-bridge-quang-nam_cvgrht",
+  ],
   seoDescription:
     "The Japanese Covered Bridge is Hội An's most iconic structure — a 400-year-old roofed bridge built by Japanese merchants in the early 1600s, spanning a small canal at the western edge of the Ancient Town, with a small temple built into its northern side.",
   tips: [
