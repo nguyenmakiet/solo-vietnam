@@ -1188,7 +1188,7 @@ export const provinces: Province[] = [
   },
   {
     slug: "dong-nai",
-    heroImage: heroUrl("dong-nai_placeholder"),
+    heroImage: heroUrl("dong-nai_nw5yox"),
     name: "Đồng Nai",
     region: "south",
     description: "Đồng Nai wraps around the eastern edge of Hồ Chí Minh City and is one of Vietnam's most industrialised provinces — yet it contains Cát Tiên National Park, one of the last lowland rainforests in southern Vietnam and a UNESCO Biosphere Reserve. The Đồng Nai River has shaped the province for millennia, and Biên Hòa — one of Vietnam's oldest colonial cities — retains a quieter, less polished charm than Saigon. For solo travelers, Cát Tiên is the main draw.",
@@ -2146,7 +2146,7 @@ export const provinces: Province[] = [
   },
   {
     slug: "lang-son",
-    heroImage: heroUrl("lang-son_placeholder"),
+    heroImage: heroUrl("lang-son_eiqkz6"),
     name: "Lạng Sơn",
     region: "north",
     description: "Lạng Sơn is Vietnam's northern gateway to China — a rugged border province of karst mountains, ancient trade routes, and Tày and Nùng minority culture. The Đồng Đăng border crossing has channelled goods between Vietnam and China for centuries, and the province's markets overflow with cross-border trade. Beyond commerce, Lạng Sơn hides beautiful karst landscapes, French colonial remnants, and cave systems that sheltered Vietnamese resistance fighters.",

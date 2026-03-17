@@ -254,10 +254,10 @@ export default function VietnamMap() {
 
       {/* Browse link */}
       <a
-        href="/destinations"
+        href="/provinces"
         className="text-sm text-gray-400 hover:text-gray-700 underline underline-offset-4 transition"
       >
-        Browse all destinations →
+        Browse all provinces →
       </a>
     </div>
   )

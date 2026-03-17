@@ -60,10 +60,6 @@ export default function Home() {
             </div>
             <span className="home-map-cta-btn">Open map →</span>
           </Link>
-
-          <Link href="/destinations" className="home-map-browse">
-            Browse all destinations →
-          </Link>
         </div>
       </section>
 
