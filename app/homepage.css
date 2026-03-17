@@ -629,3 +629,24 @@
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  /* Map page layout */
+  .map-page-body {
+    flex-direction: column !important;
+  }
+  
+  /* Map chiếm full width */
+  .map-page-body > div:first-child {
+    height: 60vh;
+  }
+  
+  /* Sidebar xuống dưới */
+  .map-page-sidebar {
+    width: 100% !important;
+    height: auto;
+    border-left: none !important;
+    border-top: 1px solid rgba(200,169,110,0.15);
+    overflow-y: auto;
+    max-height: 40vh;
+  }
+}
