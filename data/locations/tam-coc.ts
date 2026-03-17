@@ -16,8 +16,12 @@ export const tamCoc: Location = {
   entranceFee: "Boat tour: 150,000 VND/person",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2253,105.9550",
-  heroImage: heroUrl("tam-coc_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("tam-coc-ninh-binh2_an0hm8"),
+  gallery: [
+    "tam-coc-ninh-binh_iqqjsd",
+    "tam-coc-ninh-binh4_xdjpf8",
+    "tam-coc-ninh-binh3_ou7pw0",
+  ],
   seoDescription:
     "Tam Cốc — three river caves cut through towering limestone karst in Ninh Bình, rowed by local women through flooded rice paddies that turn gold in harvest season. Vietnam's most scenic boat journey.",
   tips: [

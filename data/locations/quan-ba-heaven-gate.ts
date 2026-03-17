@@ -16,8 +16,13 @@ export const quanBaHeavenGate: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "",
-  heroImage: heroUrl("quan-ba-heaven-gate-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("quan-ba-ha-giang_dm5mma"),
+  gallery: [
+    "quan-ba-ha-giang_dm5mma",
+    "quan-ba-heaven-gate-ha-giang-2_fks9m2",
+    "quan-ba-heaven-gate-ha-giang-3_bekwhj",
+    ""
+  ],
   seoDescription:
     "Quản Bạ Heaven Gate is the first dramatic viewpoint on the Ha Giang Loop — a mountain pass at 1,500 metres where the road crests and the entire Quản Bạ Valley opens below, with the Twin Mountains rising from the valley floor and, in the right season, a sea of clouds filling the basin at dawn.",
   tips: [

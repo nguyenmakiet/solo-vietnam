@@ -16,8 +16,11 @@ export const catBaNationalPark: Location = {
   entranceFee: "~85,000 VND",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("cat-ba-national-park-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cat-ba_national_park_pdjf7o"),
+  gallery: [
+    "cat-ba_national_park_pdjf7o",
+    "cat-ba-national-park_efwqds",
+  ],
   seoDescription:
     "Cát Bà National Park covers 17,000 hectares of the island's rugged interior — the last habitat of the critically endangered golden-headed langur, with jungle trails to a 331-metre summit viewpoint over Ha Long Bay and Lan Hà Bay simultaneously.",
   tips: [

@@ -16,8 +16,12 @@ export const quanBaTwinMountains: Location = {
   entranceFee: "Free (viewpoints); climbing fee if applicable",
   openingHours: "Open 24/7",
   mapUrl: "",
-  heroImage: heroUrl("quan-ba-twin-mountains-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("nui-doi-quan-ba-ha-giang_unaeou"),
+  gallery: [
+    "nui-doi-quan-ba-ha-giang_unaeou",
+    "quan-ba-twins-mountains-ha-giang_gciu0t",
+    "quan-ba-twins-mountains-ha-giang-2_v4s8bf",
+  ],
   seoDescription:
     "The Quản Bạ Twin Mountains — Núi Đôi, 'Double Mountains' — are two symmetrical limestone peaks rising from the Quản Bạ Valley floor, an icon of the Ha Giang Loop and the subject of a Tày legend about a fairy who left her twin children behind when she was called back to heaven.",
   tips: [

@@ -5,7 +5,7 @@ export const nhoQueRiver: Location = {
   slug: "nho-que-river",
   name: "Nho Quế River",
   provinces: ["ha-giang"],
-  destination: "dong-van",
+  destination: "ha-giang-loop",
   lat: "23.23164528112462",
   lng: "105.42652150718125",
   address: "Nho Quế River, Mèo Vạc, Hà Giang",
@@ -16,8 +16,12 @@ export const nhoQueRiver: Location = {
   entranceFee: "Boat tour: 150,000–200,000 VND/person",
   openingHours: "7:00 AM – 5:00 PM (boat tours)",
   mapUrl: "https://maps.google.com/?q=23.1550,105.4100",
-  heroImage: heroUrl("nho-que-river-placeholder"),
-  gallery: [],
+  heroImage: heroUrl("nho-que_mu1ha3"),
+  gallery: [
+    "nho-que-river-ha-giang_iiehla",
+    "nho-que2_licobx",
+    "nho-que-river-ha-giang-2_ke4t6n",
+  ],
   seoDescription:
     "Nho Quế River — a ribbon of impossible turquoise threading through the deepest canyon in Southeast Asia, seen from above at Mã Pí Lèng Pass and explored by boat from Mèo Vạc.",
   tips: [

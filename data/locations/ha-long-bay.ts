@@ -16,8 +16,11 @@ export const haLongBay: Location = {
   entranceFee: "290,000 VND bay entrance + cruise/boat fee (varies by operator)",
   openingHours: "Year-round; cruise departures typically 7:30 AM – 12:00 PM from pier",
   mapUrl: "https://maps.google.com/?q=20.9101,107.1839",
-  heroImage: heroUrl("ha-long-bay-hero_placeholder"),
+  heroImage: heroUrl("ha-long-4_bdow9b"),
   gallery: [
+    "ha-long-bay_llgame",
+    "ha-long-bay-02_c55iey",
+    "DSC_6150_pbgw7o",
   ],
   seoDescription:
     "Ha Long Bay — Vietnam's most iconic landscape and a UNESCO World Heritage Site — is 1,553 square kilometres of emerald water, nearly 2,000 limestone karst islands, sea caves, and floating villages in the Gulf of Tonkin. The only way to see it properly is by overnight cruise.",

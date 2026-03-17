@@ -30,13 +30,13 @@ const expCounts = experiences.reduce((acc, exp) => {
   return acc
 }, {} as Record<string, number>)
 
-const PIN_SVG = (active = false, highlighted = false) => `
+const PIN_SVG = (active = false, highlighted = false, selected = false) => `
   <svg width="22" height="30" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 20 12 20S24 21 24 12C24 5.373 18.627 0 12 0z"
-      fill="${active ? "#e8c97e" : highlighted ? "#f0d898" : "#c8a96e"}"
+      fill="${selected ? "#e53e3e" : active ? "#e8c97e" : highlighted ? "#f0d898" : "#c8a96e"}"
       stroke="#fff"
       stroke-width="1.5"
-      opacity="${highlighted ? '1' : active ? '1' : '0.85'}"
+      opacity="1"
     />
     <circle cx="12" cy="12" r="4" fill="#fff" opacity="0.9"/>
   </svg>
@@ -114,36 +114,49 @@ export default function MapPage() {
         iconAnchor: [11, 30],
       })
 
+      const clickHandler = (e: any) => {
+        e.originalEvent.stopPropagation()
+        setSelectedLoc(loc)
+      }
+
       const marker = L.marker([lat, lng], { icon })
-        .on("click", (e: any) => {
-          e.originalEvent.stopPropagation()
-          setSelectedLoc(loc)
-        })
+        .on("click", clickHandler)
 
       markersLayerRef.current.addLayer(marker)
-      allMarkersRef.current.set(loc.slug, { marker, loc })
+      allMarkersRef.current.set(loc.slug, { marker, loc, clickHandler })
     })
   }, [mapReady])
 
-  // Update marker visuals
+  // Update marker visuals + enable/disable click based on filter
   useEffect(() => {
     if (!mapReady || !LRef.current) return
     const L = LRef.current
     const effectiveExp = hoveredExp ?? activeExp
 
-    allMarkersRef.current.forEach(({ marker, loc }) => {
+    allMarkersRef.current.forEach(({ marker, loc, clickHandler }) => {
       const isSelected = selectedLoc?.slug === loc.slug
       const matchesFilter = effectiveExp
         ? loc.experiences.includes(effectiveExp as any)
         : true
 
       if (effectiveExp && !matchesFilter) {
+        // Hide and disable click
         marker.setOpacity(0)
+        marker.off("click")
+        // Make marker element non-interactive via DOM
+        const el = marker.getElement()
+        if (el) el.style.pointerEvents = "none"
       } else {
+        // Show and enable click
         marker.setOpacity(1)
+        marker.off("click")
+        marker.on("click", clickHandler)
+        const el = marker.getElement()
+        if (el) el.style.pointerEvents = "auto"
+
         marker.setIcon(L.divIcon({
           className: "",
-          html: PIN_SVG(isSelected, effectiveExp !== null && matchesFilter),
+          html: PIN_SVG(false, effectiveExp !== null && matchesFilter, isSelected), // ← thêm isSelected
           iconSize: [22, 30],
           iconAnchor: [11, 30],
         }))

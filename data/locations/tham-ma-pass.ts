@@ -16,8 +16,12 @@ export const thamMaPass: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2833,105.2500",
-  heroImage: heroUrl("tham-ma-pass-placeholder"),
-  gallery: [],
+  heroImage: heroUrl("tham-ma-pass_qbc8z5"),
+  gallery: [
+    "tham-ma-pass-1_d3zyko",
+    "tham-ma-pass_qbc8z5",
+    "tham-ma-pass-2_pe99li",
+  ],
   seoDescription:
     "Thẩm Mã Pass — a lesser-known but stunning mountain pass on the Hà Giang Loop between Yên Minh and Đồng Văn, with sweeping views over terraced valleys and karst peaks that rival the more famous passes.",
   tips: [

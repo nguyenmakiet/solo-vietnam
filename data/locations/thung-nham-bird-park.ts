@@ -16,8 +16,10 @@ export const thungNhamBirdPark: Location = {
   entranceFee: "~130,000 VND (includes boat tour and cave visit)",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("thung-nham-bird-park-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("thung-nham-bird-park_oy6ora"),
+  gallery: [
+    "thung-nham-bird-park_oy6ora",
+  ],
   seoDescription:
     "Thung Nham Bird Park is a flooded karst valley and wetland in Ninh Bình home to one of northern Vietnam's largest egret and heron colonies — over 40,000 birds nesting in the bamboo forest during breeding season, explored by rowing boat through the flooded valley.",
   tips: [

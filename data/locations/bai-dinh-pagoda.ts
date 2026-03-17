@@ -16,8 +16,12 @@ export const baiDinhPagoda: Location = {
   entranceFee: "Free (electric cart: ~50,000 VND optional)",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("bai-dinh-pagoda-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("bai-dinh-pagoda-ninh-binh3_rrhmhr"),
+  gallery: [
+    "bai-dinh-pagoda-ninh-binh_zegjjm",
+    "bai-dinh-pagoda-ninh-binh2_g38crt",
+    "bai-dinh-pagoda-ninh-binh4_mpx4yf",
+  ],
   seoDescription:
     "Bái Đính is Vietnam's largest Buddhist complex — a modern hilltop pagoda near Ninh Bình holding multiple national records including Vietnam's largest bronze Buddha, longest arhat corridor (500 statues), and heaviest bell, surrounded by older cave pagodas dating to the 11th century.",
   tips: [

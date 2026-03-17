@@ -16,8 +16,12 @@ export const yenMinhPineForest: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "",
-  heroImage: heroUrl("yen-minh-pine-forest-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("yen-minh-pine-forest-2_wbqzzc"),
+  gallery: [
+    "yen-minh-pine-forest3_xhxkgc",
+    "yen-minh-pine-forest_zwvw5w",
+    "yen-minh-pine-forest-2_wbqzzc",
+  ],
   seoDescription:
     "The Yên Minh Pine Forest is an unexpected stretch of highland pine on the Ha Giang Loop between Quản Bạ and Đồng Văn — a 10km section of road through dense Pinus kesiya forest at 1,200 metres, with morning mist threading between the trees and a completely different atmosphere from the surrounding karst landscape.",
   tips: [

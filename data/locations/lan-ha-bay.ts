@@ -16,8 +16,12 @@ export const lanHaBay: Location = {
   entranceFee: "Included in kayak/boat tour (~350,000–600,000 VND/person)",
   openingHours: "Tours depart from Cát Bà town daily from 8:00 AM",
   mapUrl: "",
-  heroImage: heroUrl("lan-ha-bay-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("lan-ha-bay-hai-phong4_lgkwrs"),
+  gallery: [
+    "lan-ha-bay-hai-phong2_pcid4b",
+    "lan-ha-bay-hai-phong3_n1qg1l",
+    "lan-ha-bay-hai-phong_y82hco",
+  ],
   seoDescription:
     "Lan Hà Bay is the southern section of the Ha Long Bay karst system — 400 limestone islands, hidden beaches, floating fishing villages, and some of the clearest water in the Gulf of Tonkin, with a fraction of Ha Long's boat traffic and far better kayaking conditions.",
   tips: [

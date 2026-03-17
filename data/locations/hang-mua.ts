@@ -16,8 +16,12 @@ export const hangMua: Location = {
   entranceFee: "~100,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2180,105.9560",
-  heroImage: heroUrl("hang-mua-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("hang-mua-ninh-binh_k573hb"),
+  gallery: [
+    "hang-mua-ninh-binh2_b9var5",
+    "hang-mua-ninh-binh-3_kuupwn",
+    "hang-mua-ninh-binh-4_ewqlyw",
+  ],
   seoDescription:
     "Hang Mua is Ninh Bình's most rewarding viewpoint — a 500-step climb up a limestone karst rewarded with a panoramic view over the Tam Cốc valley, rice fields, and the full sweep of the Hoa Lư karst landscape that stretches to the horizon.",
   tips: [

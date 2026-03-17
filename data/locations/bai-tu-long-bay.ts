@@ -16,8 +16,11 @@ export const baiTuLongBay: Location = {
   entranceFee: "Included in cruise packages (departs from Hạ Long International Port)",
   openingHours: "Accessible year-round via overnight cruise",
   mapUrl: "https://maps.google.com/?q=21.0500,107.4000",
-  heroImage: heroUrl("bai-tu-long-bay-hero_placeholder"),
+  heroImage: heroUrl("bai-tu-long-bay-quang-ninh_cs8cgw"),
   gallery: [
+    "bai-tu-long-bay-quang-ninh02_sjwoob",
+    "Bai_Tu_Long_Bay_yqknr3",
+    "bai-tu-long-bay-quang-ninh_cs8cgw",
   ],
   seoDescription:
     "Bái Tử Long Bay — Ha Long's quieter, less-visited neighbour to the northeast — shares the same UNESCO-listed karst landscape but with far fewer cruise boats, better beaches, and a more traditional atmosphere. It's Ha Long Bay the way it was 20 years ago.",

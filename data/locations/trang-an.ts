@@ -16,8 +16,12 @@ export const trangAn: Location = {
   entranceFee: "~250,000 VND (includes boat and rower)",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2800,105.9100",
-  heroImage: heroUrl("trang-an-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("trang-an-ninh-binh3_v7i0dg"),
+  gallery: [
+    "trang-an-ninh-binh_wsiuhc",
+    "trang-an-ninh-binh4_r7kbzz",
+    "trang-an-ninh-binh2_lemciw",
+  ],
   seoDescription:
     "Trang An is Vietnam's only UNESCO World Heritage Site recognised for both natural and cultural values — a labyrinth of karst mountains, jade-green rivers, ancient caves, and centuries-old temples navigated entirely by wooden rowboat.",
   tips: [

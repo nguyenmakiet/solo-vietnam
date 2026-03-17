@@ -16,8 +16,12 @@ export const hoaLuAncientCapital: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("hoa-lu-ancient-capital-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("hoa-lu-ancient-capital4_yceoap"),
+  gallery: [
+    "hoa-lu-ancient-capital_hzuvjz",
+    "hoa-lu-ancient-capital3_lycncj",
+    "hoa-lu-ancient-capital2_xavfa9",
+  ],
   seoDescription:
     "Hoa Lư was Vietnam's first independent capital — a 10th-century fortress city built inside a natural ring of limestone karsts, where the Đinh and Early Lê dynasties ruled a newly unified Vietnam from 968 to 1010 AD, with two temple complexes still standing among the karst peaks.",
   tips: [

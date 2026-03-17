@@ -16,8 +16,12 @@ export const vanLongNatureReserve: Location = {
   entranceFee: "~40,000 VND + boat: ~150,000 VND per boat (shared)",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("van-long-nature-reserve-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("van-long-natural-reserve-ninh-binh_lcegpd"),
+  gallery: [
+    "van-long-natural-reserve-ninh-binh2_no69la",
+    "van-long-natural-reserve-ninh-binh3_jfdaqk",
+    "van-long-natural-reserve-ninh-binh_lcegpd",
+  ],
   seoDescription:
     "Vân Long Nature Reserve is Vietnam's largest inland wetland — a flooded valley of karst peaks, submerged rice fields, and clear shallow water navigated by rowing boat, home to Vietnam's largest population of the critically endangered Delacour's langur.",
   tips: [

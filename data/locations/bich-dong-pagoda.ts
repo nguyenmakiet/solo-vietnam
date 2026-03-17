@@ -16,8 +16,12 @@ export const bichDongPagoda: Location = {
   entranceFee: "Free",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2310,105.9530",
-  heroImage: heroUrl("bich-dong-pagoda-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("bich-dong-pagoda4_vu55wz"),
+  gallery: [
+    "bich-dong-pagoda2_gnmc6g",
+    "bich-dong-pagoda3_fazodz",
+    "bich-dong-pagoda_oqfjcp",
+  ],
   seoDescription:
     "Bích Động Pagoda — the 'Second Grotto of the South' — is an 18th-century Buddhist complex built across three levels inside and around a limestone karst, combining cave shrines, cliff-carved steps, and a hilltop terrace with sweeping views over the Ninh Bình valley.",
   tips: [
