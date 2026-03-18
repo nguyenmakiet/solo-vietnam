@@ -16,9 +16,11 @@ export const catCatVillage: Location = {
   entranceFee: "~90,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=22.3301,103.8325",
-  heroImage: heroUrl("cat-cat-village-hero_placeholder"),
+  heroImage: heroUrl("cat-cat-village2_l6tzcr"),
   gallery: [
-
+    "cat-cat-village_jla31i",
+    "cat-cat-village4_u44m5s",
+    "cat-cat-village3_jjbkqt ",
   ],
   seoDescription:
     "Cat Cat Village sits 2.5km below Sa Pa town in a steep valley — an original Black H'mong settlement with traditional indigo weaving, a 100m waterfall, and a walking trail that gives an easy introduction to highland village life.",

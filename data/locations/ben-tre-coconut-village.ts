@@ -16,8 +16,12 @@ export const benTreCoconutVillage: Location = {
   entranceFee: "Free; boat tours: ~150,000–250,000 VND",
   openingHours: "Open daily",
   mapUrl: "",
-  heroImage: heroUrl("ben-tre-coconut-village-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("coconut-village-ben-tre2_ud4sbr"),
+  gallery: [
+    "coconut-village-ben-tre_tpvlhz",
+    "coconut-village-ben-tre3_g6ebsy",
+    "ben-tre_dvj5yi",
+  ],
   seoDescription:
     "Bến Tre is the Mekong Delta's coconut capital — a province of dense palm groves, narrow canals, and traditional villages where coconut is processed into every conceivable product, explored best by bicycle on flat delta roads and by small boat through the shaded waterways.",
   tips: [

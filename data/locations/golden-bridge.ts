@@ -16,8 +16,12 @@ export const goldenBridge: Location = {
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
   mapUrl: "",
-  heroImage: heroUrl("golden-bridge-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("golden-bridge-ba-na-hill2_ft8pzk"),
+  gallery: [
+    "golden-bridge-ba-na-hill3_e1xnkp",
+    "golden-bridge-ba-na-hill4_ioflnr",
+    "golden-bridge-ba-na-hill_f75gzs",
+  ],
   seoDescription:
     "The Golden Bridge is Vietnam's most photographed structure — a 150-metre pedestrian walkway held by two giant weathered stone hands emerging from the mountain at 1,400 metres, with views over the Đà Nẵng coastline and the cloud layer below.",
   tips: [

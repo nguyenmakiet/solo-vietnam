@@ -16,8 +16,12 @@ export const tuDucTomb: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "",
-  heroImage: heroUrl("tu-duc-tomb-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("tu-duc-tomb_thnkr9"),
+  gallery: [
+    "tu-duc-tomb2_rcytlb",
+    "tu-duc-tomb4_uhqqoo",
+    "tu-duc-tomb3_glpdrn",
+  ],
   seoDescription:
     "Tự Đức Tomb is the most garden-like of Huế's royal mausoleums — a romantic complex of pine forests, lotus ponds, and wooden pavilions built by Vietnam's most literary emperor, who spent years here composing poetry before his death in 1883.",
   tips: [

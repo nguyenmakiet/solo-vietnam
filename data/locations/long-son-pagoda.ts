@@ -16,8 +16,12 @@ export const longSonPagoda: Location = {
   entranceFee: "Free",
   openingHours: "8:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("long-son-pagoda-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("long-son-pagoda-nha-trang2_hacas1"),
+  gallery: [
+    "long-son-pagoda-5_w7a6rb",
+    "long-son-pagoda-nha-trang_mylftr",
+    "long-son-pagoda-3_fwhlkz",
+  ],
   seoDescription:
     "Long Sơn Pagoda is Nha Trang's most prominent religious site — an active Buddhist pagoda at the foot of a hill topped by a massive white seated Buddha, visible from across the city, with a mosaic dragon staircase and 152 stone steps to the summit viewpoint.",
   tips: [

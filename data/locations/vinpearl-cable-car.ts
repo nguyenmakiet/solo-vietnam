@@ -16,8 +16,12 @@ export const vinpearlCableCar: Location = {
   entranceFee: "Included in Vinpearl Land ticket (~900,000–1,300,000 VND)",
   openingHours: "8:00 AM – 10:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("vinpearl-cable-car-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("vinpearl-nha-trang_zn01io"),
+  gallery: [
+    "vinpearl-nha-trang2_vdi1th",
+    "vinpearl-nha-trang3_zlwgkb",
+    "vinpearl-nha-trang4_zx3og4",
+  ],
   seoDescription:
     "The Vinpearl Cable Car is the world's longest over-sea cable car — a 3,320-metre gondola crossing from the Nha Trang mainland to Hòn Tre Island, with aerial views over Nha Trang Bay, the city skyline, and the surrounding islands at 50 metres above the water.",
   tips: [

@@ -16,8 +16,12 @@ export const redSandDunes: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7; best at sunrise and sunset",
   mapUrl: "",
-  heroImage: heroUrl("red-sand-dunes-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("red-sand-dune-phan-thiet2_ra6u7z"),
+  gallery: [
+    "red-sand-dune-phan-thiet_mdvnzc",
+    "red-sand-dune-phan-thiet3_uym0jp",
+    "red-sand-dune-phan-thiet2_ra6u7z",
+  ],
   seoDescription:
     "The Red Sand Dunes are Mũi Né's most accessible dune landscape — iron-oxide-stained sand in vivid shades of orange and red, 2km from the town centre, best at sunset when the low light deepens the colour and the fishing boats on the bay below glow in the same tones.",
   tips: [

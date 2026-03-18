@@ -16,8 +16,12 @@ export const conDaoPrison: Location = {
   entranceFee: "~40,000 VND (covers multiple prison buildings)",
   openingHours: "7:30 AM – 11:30 AM · 1:30 PM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("con-dao-prison-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("con-dao-prison_mumzpe"),
+  gallery: [
+    "con-dao-prison2_raad3d",
+    "con-dao-prison3_gq5pzn",
+    "con-dao-prison4_yvfhmw",
+  ],
   seoDescription:
     "Con Dao Prison is Vietnam's most significant historical site of incarceration — a French colonial penal complex used continuously from 1862 to 1975, known internationally for the Tiger Cages where political prisoners were kept in underground stone pits, and the burial place of revolutionary heroine Võ Thị Sáu.",
   tips: [

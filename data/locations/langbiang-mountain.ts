@@ -16,8 +16,12 @@ export const langbiangMountain: Location = {
   entranceFee: "~50,000 VND park entry; jeep to mid-station: ~150,000 VND",
   openingHours: "5:30 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("langbiang-mountain-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("langbiang-mountain-da-lat2_dlyoss"),
+  gallery: [
+    "langbiang-mountain-da-lat4_zcmgfq",
+    "langbiang-mountain-da-lat3_cortj8",
+    "langbiang-mountain-da-lat_mhfmzt",
+  ],
   seoDescription:
     "Langbiang Mountain is the highest peak in the Đà Lạt plateau at 2,167 metres — a twin-peaked massif rising above pine forest north of the city, home to the K'Ho ethnic minority, with a summit trek rewarded by panoramic views over the entire Central Highlands.",
   tips: [

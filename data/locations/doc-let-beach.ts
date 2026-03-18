@@ -16,8 +16,10 @@ export const docLetBeach: Location = {
   entranceFee: "~30,000–50,000 VND (some beach sections charge separately)",
   openingHours: "Open daily",
   mapUrl: "",
-  heroImage: heroUrl("doc-let-beach-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("doc-let-beach-nha-trang_sryoek"),
+  gallery: [
+    "doc-let-beach-nha-trang_sryoek",
+  ],
   seoDescription:
     "Dốc Lết Beach is Nha Trang's best day-trip beach — 18km of white sand on a sheltered bay 50km north of the city, with calmer and clearer water than Nha Trang's main beach and significantly fewer crowds.",
   tips: [

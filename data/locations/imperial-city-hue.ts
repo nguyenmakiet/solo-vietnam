@@ -4,8 +4,8 @@ import { heroUrl } from "@/lib/cloudinary"
 export const imperialCity: Location = {
   slug: "imperial-city-hue",
   name: "Imperial City",
-  provinces: ["hue"],
-  destination: "",
+  provinces: ["thua-thien-hue"],
+  destination: "hue",
   lat: "16.4677616052903",
   lng: "107.57931947854229",
   address: "Thuận Thành, Huế, Thừa Thiên Huế",
@@ -16,8 +16,12 @@ export const imperialCity: Location = {
   entranceFee: "~200,000 VND (Forbidden Purple City included)",
   openingHours: "7:00 AM – 5:30 PM (last entry 5:00 PM)",
   mapUrl: "",
-  heroImage: heroUrl("imperial-city-hue-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("imperial-citadel-hue3_isqtzb"),
+  gallery: [
+    "imperial-citadel-hue2_mzy6pe",
+    "imperial-citadel-hue_hdqp43",
+    "imperial-citadel-hue5_vqduoy",
+  ],
   seoDescription:
     "Huế's Imperial City is the former seat of the Nguyễn Dynasty — a 3km² walled citadel of palaces, gates, pavilions, and ceremonial halls on the Perfume River, modelled on Beijing's Forbidden City and the most complete imperial complex in Southeast Asia.",
   tips: [

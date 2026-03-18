@@ -4,8 +4,8 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khaiDinhTomb: Location = {
   slug: "khai-dinh-tomb",
   name: "Khải Định Tomb",
-  provinces: ["hue"],
-  destination: "",
+  provinces: ["thua-thien-hue"],
+  destination: "hue",
   lat: "16.39915933177038",
   lng: "107.59074610662047",
   address: "Châu Chữ, Hương Thủy, Thừa Thiên Huế",
@@ -16,8 +16,12 @@ export const khaiDinhTomb: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "",
-  heroImage: heroUrl("khai-dinh-tomb-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("khai-dinh-tomb4_np5pfj"),
+  gallery: [
+    "khai-dinh-tomb3_epgzyi",
+    "khai-dinh-tomb2_iztujk",
+    "khai-dinh-tomb5_k5k6un",
+  ],
   seoDescription:
     "Khải Định Tomb is the most visually striking of Huế's royal mausoleums — a dark concrete palace fusing Vietnamese, French, and Hindu architectural styles, covered inside with intricate mosaics of porcelain and glass, built over 11 years by the second-to-last Nguyễn emperor.",
   tips: [

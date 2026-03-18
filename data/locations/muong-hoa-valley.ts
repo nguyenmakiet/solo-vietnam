@@ -16,8 +16,12 @@ export const muongHoaValley: Location = {
   entranceFee: "~70,000–90,000 VND at valley checkpoint",
   openingHours: "Open daily",
   mapUrl: "https://maps.google.com/?q=22.3100,103.8650",
-  heroImage: heroUrl("muong-hoa-valley-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("muong-hoa-valley4_wuxzg7"),
+  gallery: [
+    "muong-hoa-valley_moijqr",
+    "muong-hoa-valley2_sip11v",
+    "muong-hoa-valley3_ebbyse",
+  ],
   seoDescription:
     "Muong Hoa Valley — Sa Pa's most spectacular trekking corridor — stretches 15km through terraced rice fields, H'mong and Giáy villages, ancient carved rocks, and the Hoa Stream. Vietnam's largest terrace system changes colour with every season.",
   tips: [

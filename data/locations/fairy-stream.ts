@@ -16,8 +16,12 @@ export const fairyStream: Location = {
   entranceFee: "~10,000–20,000 VND (informal collection at entrance)",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("fairy-stream-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("fairy-stream-phan-thiet_jdweht"),
+  gallery: [
+    "fairy-stream-phan-thiet-4_sl30pr",
+    "fairy-stream-phan-thiet_2_tize8e",
+    "fairy-stream-phan-thiet-6_wgc7hg",
+  ],
   seoDescription:
     "Fairy Stream is Mũi Né's most unusual natural attraction — a shallow stream winding through a narrow canyon of red and yellow sandstone walls, bamboo forest, and dunes, waded barefoot for 2km to reach a small waterfall at the end.",
   tips: [

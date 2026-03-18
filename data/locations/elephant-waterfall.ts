@@ -10,14 +10,18 @@ export const elephantWaterfall: Location = {
   lng: "108.33847133316729",
   address: "Lát, Lạc Dương, Lâm Đồng",
   type: "waterfall",
-  experiences: ["trekking", "photography", "culture"],
+  experiences: ["trekking", "photography"],
   tags: ["🐘 Elephant Rock Formation", "💧 Powerful Cascade", "🥾 Cave Walk Behind Falls", "📸 Photography"],
   bestTime: "Jun – Oct (rainy season, full power); accessible year-round",
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("elephant-waterfall-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("elephant-waterfall-da-lat4_wa67dn"),
+  gallery: [
+    "elephant-water-fall-da-lat_izmdcz",
+    "elephant-water-fall-da-lat-2_i1jmar",
+    "elephant-waterfall-da-lat5_kfwvyp",
+  ],
   seoDescription:
     "Elephant Waterfall is the most dramatic waterfall near Đà Lạt — a powerful 30-metre cascade surrounded by volcanic rock formations resembling an elephant, with a narrow path that leads behind the falling water through a cave at the base.",
   tips: [

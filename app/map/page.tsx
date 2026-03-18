@@ -61,6 +61,7 @@ export default function MapPage() {
       // @ts-ignore
       await import("leaflet/dist/leaflet.css")
       if (!mapContainerRef.current) return
+      if ((mapContainerRef.current as any)._leaflet_id) return
 
       LRef.current = L
 

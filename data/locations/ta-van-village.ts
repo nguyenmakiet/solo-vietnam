@@ -16,8 +16,11 @@ export const taVanVillage: Location = {
   entranceFee: "Free (included in Muong Hoa Valley entrance fee)",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=22.2970,103.8730",
-  heroImage: heroUrl("ta-van-village-hero_placeholder"),
+  heroImage: heroUrl("ta-van-village3_nj8yue"),
   gallery: [
+    "ta-van-village_owdapo",
+    "ta-van-village4_tzti6u",
+    "ta-van-village2_oy9scu",
   ],
   seoDescription:
     "Tả Van Village — home of the Giáy people deep in Muong Hoa Valley — is the best homestay base in Sa Pa. Surrounded by sweeping terraced fields, 10km from Sa Pa town, it offers an authentic overnight experience that most visitors to Cat Cat or Fansipan never reach.",

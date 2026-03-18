@@ -16,8 +16,12 @@ export const minhMangTomb: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "",
-  heroImage: heroUrl("minh-mang-tomb-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("minh-mang-tomb2_bcwr7t"),
+  gallery: [
+    "minh-mang-tomb4_tbssnr",
+    "minh-mang-tomb_onlu9k",
+    "minh-mang-tomb3_axfabl",
+  ],
   seoDescription:
     "Minh Mạng Tomb is the most architecturally ambitious of Huế's royal mausoleums — a vast symmetrical complex of lakes, bridges, pavilions, and temple halls spread across 28 hectares, built by the second Nguyễn emperor over 14 years on a hillside above the Perfume River.",
   tips: [

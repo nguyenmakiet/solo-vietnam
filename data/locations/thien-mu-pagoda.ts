@@ -4,8 +4,8 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thienMuPagoda: Location = {
   slug: "thien-mu-pagoda",
   name: "Thiên Mụ Pagoda",
-  provinces: ["hue"],
-  destination: "",
+  provinces: ["thua-thien-hue"],
+  destination: "hue",
   lat: "16.453168591703893",
   lng: "107.54519432036955",
   address: "Kim Long, Huế, Thừa Thiên Huế",
@@ -16,8 +16,12 @@ export const thienMuPagoda: Location = {
   entranceFee: "Free",
   openingHours: "Open daily (monks observe prayer hours; respectful visiting hours: 8 AM – 5 PM)",
   mapUrl: "",
-  heroImage: heroUrl("thien-mu-pagoda-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("thien-mu-pagoda-hue3_weflqk"),
+  gallery: [
+    "thien-mu-pagoda6_xphnqk",
+    "thien-mu-pagoda-hue5_bbcokr",
+    "thien-mu-pagoda5_elmw5b",
+  ],
   seoDescription:
     "Thiên Mụ Pagoda is the oldest and most iconic religious site in Huế — a 21-metre seven-tiered tower on a hill above the Perfume River, founded in 1601, and the unofficial symbol of the city that has witnessed every major chapter of Vietnamese history.",
   tips: [

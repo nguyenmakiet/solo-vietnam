@@ -16,8 +16,12 @@ export const datanlaWaterfall: Location = {
   entranceFee: "~50,000 VND; alpine coaster: ~70,000 VND one way",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("datanla-waterfall-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("datanla_waterfall3_ytizqy"),
+  gallery: [
+    "datanla_waterfall_p0fwzo",
+    "datanla_waterfall4_bjulls",
+    "datanla_waterfall2_st6bqw",
+  ],
   seoDescription:
     "Datanla Waterfall is Đà Lạt's most accessible cascade — a series of falls dropping through pine and rainforest 5km from the city centre, reached by a forest path or an alpine coaster that winds through the trees above the gorge.",
   tips: [

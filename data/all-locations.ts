@@ -19,6 +19,7 @@ import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
 import { cuaDaiBeach } from "@/data/locations/cua-dai-beach"
+import { damTrauBeach } from "@/data/locations/dam-trau-beach"
 import { dalatRailwayStation } from "@/data/locations/dalat-railway-station"
 import { darkCave } from "@/data/locations/dark-cave"
 import { datanlaWaterfall } from "@/data/locations/datanla-waterfall"
@@ -62,6 +63,7 @@ import { moocSpring } from "@/data/locations/mooc-spring"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
+import { nhatBeach } from "@/data/locations/nhat-beach"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
 import { pacBoHistoricSite } from "@/data/locations/pac-bo-historic-site"
 import { paradiseCave } from "@/data/locations/paradise-cave"
@@ -121,6 +123,7 @@ export const allLocations: Location[] = [
   conDaoPrison,
   crazyHouse,
   cuaDaiBeach,
+  damTrauBeach,
   dalatRailwayStation,
   darkCave,
   datanlaWaterfall,
@@ -164,6 +167,7 @@ export const allLocations: Location[] = [
   muongHoaValley,
   myKheBeach,
   nguomNgaoCave,
+  nhatBeach,
   nhoQueRiver,
   pacBoHistoricSite,
   paradiseCave,

@@ -16,8 +16,12 @@ export const tuyenLamLake: Location = {
   entranceFee: "Free (boat tours: ~100,000–150,000 VND)",
   openingHours: "Open daily",
   mapUrl: "",
-  heroImage: heroUrl("tuyen-lam-lake-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("tuyen-lam-lake-da-lat3_x7z48e"),
+  gallery: [
+    "tuyen-lam-lake-da-lat4_e8xvrq",
+    "tuyen-lam-lake-da-lat5_caxm5k",
+    "tuyen-lam-lake-da-lat2_o7kdwv",
+  ],
   seoDescription:
     "Tuyền Lâm Lake is Đà Lạt's largest reservoir — a 320-hectare expanse of calm water surrounded by pine forests, accessible by cable car, kayak, or bicycle, with Trúc Lâm Thiền Monastery on the hillside above the northern shore.",
   tips: [

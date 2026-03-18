@@ -16,8 +16,12 @@ export const pongourWaterfall: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("pongour-waterfall-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("pongour-waterfall-da-lat4_cswx11"),
+  gallery: [
+    "pongour-waterfall-da-lat_v6aa5p",
+    "pongour-waterfall-da-lat2_pd51rl",
+    "pongour-waterfall-da-lat3_m2cqwq",
+  ],
   seoDescription:
     "Pongour Waterfall is the widest waterfall in the Đà Lạt region — a 40-metre wide, seven-tiered cascade dropping through K'Ho minority land, 50km south of Đà Lạt city, famous for the annual full moon festival held at its base every January.",
   tips: [

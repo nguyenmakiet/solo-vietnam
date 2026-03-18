@@ -16,8 +16,12 @@ export const phongNamValley: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "",
-  heroImage: heroUrl("phong-nam-valley-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("phong-nam-valley_p1bdkx"),
+  gallery: [
+    "phong-nam-valley2_kof3er",
+    "phong-nam-valley4_k1royx",
+    "phong-nam-valley3_rpswr4",
+  ],
   seoDescription:
     "Phong Nam Valley is Cao Bằng's most beautiful hidden landscape — a wide flat valley of buckwheat fields, Tày stilt houses, and karst peaks that turns pink and white every October when the buckwheat blooms, earning it comparisons to Ha Giang's Đồng Văn Plateau.",
   tips: [

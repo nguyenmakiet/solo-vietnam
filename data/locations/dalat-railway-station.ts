@@ -16,8 +16,12 @@ export const dalatRailwayStation: Location = {
   entranceFee: "Free to enter; tourist train to Trại Mát: ~152,000 VND return",
   openingHours: "7:30 AM – 5:30 PM",
   mapUrl: "",
-  heroImage: heroUrl("dalat-railway-station-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("da-lat-railway-station2_kxpr5y"),
+  gallery: [
+    "da-lat-railway-station_pzn8hd",
+    "da-lat-railway-station4_rmamp1",
+    "da-lat-railway-station3_sj6ekh",
+  ],
   seoDescription:
     "Đà Lạt Railway Station is the best-preserved French colonial railway station in Vietnam — a 1938 Art Deco building with a distinctive three-peaked roof, still operating a tourist train to the village of Trại Mát through pine forest and flower farms.",
   tips: [

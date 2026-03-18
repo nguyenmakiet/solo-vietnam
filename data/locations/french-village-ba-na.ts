@@ -16,8 +16,12 @@ export const frenchVillageBaNa: Location = {
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
   mapUrl: "",
-  heroImage: heroUrl("french-village-ba-na-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("french-village-ba-na-hill2_wg42xj"),
+  gallery: [
+    "french-village-ba-na-hill4_x88wdl",
+    "french-village-ba-na-hill_kffdfd",
+    "french-village-ba-na-hill3_fhdo93",
+  ],
   seoDescription:
     "The French Village at Bà Nà Hills is a meticulous recreation of a European mountain town at 1,487 metres — cobbled streets, a winery, a beer hall, a cathedral, and Fantasy Park, an indoor theme park built inside a recreated French fortress above the clouds.",
   tips: [

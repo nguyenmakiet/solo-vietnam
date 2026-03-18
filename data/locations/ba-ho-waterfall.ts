@@ -16,8 +16,10 @@ export const baHoWaterfall: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("ba-ho-waterfall-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ba-ho-waterfall-nha-trang_r4z0ha"),
+  gallery: [
+    "ba-ho-waterfall-nha-trang_r4z0ha",
+  ],
   seoDescription:
     "Ba Hồ Waterfall is Nha Trang's best natural escape — three tiered pools fed by cascades in a jungle gorge 25km north of the city, reached by a 3km trek through rainforest and swimmable year-round in the middle and upper pools.",
   tips: [

@@ -16,8 +16,12 @@ export const baNaCableCar: Location = {
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "First departure: 7:30 AM · Last return: 9:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("ba-na-cable-car-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cable-car-ba-na-hill2_oh8unw"),
+  gallery: [
+    "cable-car-ba-na-hill_vmlxge",
+    "cable-car-ba-na-hill4_ieufop",
+    "cable-car-ba-na-hill3_e6d40c",
+  ],
   seoDescription:
     "The Bà Nà Hills cable car held three Guinness World Records simultaneously — longest single-wire system, greatest height difference, and longest non-stop wire — carrying passengers 5,801 metres from the forest floor to 1,487 metres through the cloud layer above Đà Nẵng.",
   tips: [

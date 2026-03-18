@@ -16,8 +16,12 @@ export const linhPhuocPagoda: Location = {
   entranceFee: "Free",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("linh-phuoc-pagoda-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("linh-phuoc-pagoda3_le9epc"),
+  gallery: [
+    "linh-phuoc-pagoda2_nzxhrq",
+    "linh-phuoc-pagoda4_vjwouu",
+    "linh-phuoc-pagoda6_ky3efq",
+  ],
   seoDescription:
     "Linh Phước Pagoda in Trại Mát village is Vietnam's most elaborate ceramic mosaic temple — every surface covered in dragons, phoenixes, and Buddhist imagery assembled from millions of broken glass and ceramic fragments, with a 7-storey bell tower and a 49-metre dragon staircase.",
   tips: [

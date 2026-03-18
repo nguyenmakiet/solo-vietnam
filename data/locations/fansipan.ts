@@ -16,8 +16,12 @@ export const fansipan: Location = {
   entranceFee: "Cable car + funicular: ~800,000 VND round-trip. Hiking: free (permit required)",
   openingHours: "Cable car: 7:30 AM – 5:30 PM",
   mapUrl: "https://maps.google.com/?q=22.30317,103.77638",
-  heroImage: heroUrl("fansipan-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("fansipan_plpijw"),
+  gallery: [
+    "fansipan4_bgtdiz",
+    "fansipan2_hck8x7",
+    "fansipan5_sgsij0",
+  ],
   seoDescription:
     "Fansipan — the Roof of Indochina at 3,147m — is Vietnam's highest peak, rising above Sa Pa's clouds in the Hoàng Liên Sơn range. Reach the summit by cable car in 15 minutes or conquer it on a 2–3 day trek through ancient forests.",
   tips: [

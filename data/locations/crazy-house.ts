@@ -16,8 +16,10 @@ export const crazyHouse: Location = {
   entranceFee: "~60,000 VND",
   openingHours: "8:00 AM – 7:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("crazy-house-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("crazy-house-da-lat_bsys2a"),
+  gallery: [
+    "crazy-house-da-lat_bsys2a",
+  ],
   seoDescription:
     "The Crazy House is Đà Lạt's most extraordinary building — a Gaudí-inspired architectural fantasy of organic forms, cave-like rooms, giant animal sculptures, and winding exterior stairways designed by Vietnamese architect Đặng Việt Nga, still under construction after 30 years and operating as a functioning guesthouse.",
   tips: [

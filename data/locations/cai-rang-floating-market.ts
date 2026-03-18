@@ -16,8 +16,12 @@ export const caiRangFloatingMarket: Location = {
   entranceFee: "Free; boat hire: ~100,000–200,000 VND/hour",
   openingHours: "4:00 AM – 9:00 AM (most active 5:00–7:00 AM)",
   mapUrl: "",
-  heroImage: heroUrl("cai-rang-floating-market-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cai-rang-float-market-can-tho3_wfd0gk"),
+  gallery: [
+    "cai-rang-float-market-can-tho_bpesez",
+    "cai-rang-float-market-can-tho2_unj2gi",
+    "cai-rang-float-market-can-tho4_hgsy9c",
+  ],
   seoDescription:
     "Cái Răng is the largest and most active floating market in the Mekong Delta — hundreds of wooden boats loaded with wholesale fruit, vegetables, and goods trading on the river at dawn, 6km from Cần Thơ city centre, best seen from a small rowing boat at 5 AM.",
   tips: [

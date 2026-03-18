@@ -16,8 +16,12 @@ export const poNagarChamTowers: Location = {
   entranceFee: "~22,000 VND",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "",
-  heroImage: heroUrl("po-nagar-cham-towers-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("po-naga-cham-tower-nha-trang5_u2fexi"),
+  gallery: [
+    "po-naga-cham-tower-nha-trang4_nljd5t",
+    "po-naga-cham-tower-nha-trang2_igoxsl",
+    "po-naga-cham-tower-nha-trang_ajlqvv",
+  ],
   seoDescription:
     "Po Nagar Cham Towers are the best-preserved Cham temple complex in southern Vietnam — four brick towers built between the 7th and 12th centuries on a granite hill above the Cái River in Nha Trang, still used as an active place of Hindu and Buddhist worship.",
   tips: [

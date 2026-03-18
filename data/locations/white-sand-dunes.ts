@@ -16,8 +16,12 @@ export const whiteSandDunes: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "Open 24/7; sunrise tours depart 4:00–4:30 AM",
   mapUrl: "",
-  heroImage: heroUrl("white-sand-dunes-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("bau-trang-phan-thiet5_bozfag"),
+  gallery: [
+    "bau-trang-phan-thiet2_yefxbm",
+    "bau-trang-phan-thiet6_oi4awv",
+    "bau-trang-phan-thiet3_vdp7uo",
+  ],
   seoDescription:
     "The White Sand Dunes of Mũi Né are Vietnam's most surreal landscape — vast white dunes stretching to the horizon beside two freshwater lakes, nicknamed the 'Sahara of Vietnam', best experienced at sunrise when the light turns the sand pale gold and the lakes reflect the sky.",
   tips: [
