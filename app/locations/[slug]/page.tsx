@@ -4,6 +4,8 @@ import { locationTheme } from "@/data/location"
 import { allLocations } from "@/data/all-locations"
 import LocationTabs from "./LocationTabs"
 import "./location.css"
+import NearbyLocations from "./NearbyLocations"
+
 
 function toDecimal(val: number | string): number {
   if (typeof val === "number") return val
@@ -177,6 +179,8 @@ export default async function LocationPage({
             </div>
           </div>
         )}
+        {/* Nearby Locations */}
+            <NearbyLocations currentSlug={slug} provinces={location.provinces} />
 
         {/* Bottom CTA */}
         {location.destination && (

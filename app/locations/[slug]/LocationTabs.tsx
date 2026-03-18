@@ -9,6 +9,8 @@ const TABS = [
   { id: "what-to-expect", label: "What to Expect" },
   { id: "travel-tips", label: "Travel Tips" },
   { id: "insider-tips", label: "Insider Tips" },
+  { id: "nearby", label: "Nearby locations" },  
+
 ]
 
 export default function LocationTabs() {
