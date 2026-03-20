@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc"
 import { getPostBySlug, extractToc } from "@/lib/blog"
 import BlogToc from "./BlogToc"
 import "../blog.css"
+import remarkGfm from "remark-gfm"
 
 const CATEGORY_LABELS: Record<string, string> = {
   scams: "⚠️ Scams",
@@ -114,7 +115,15 @@ export default async function BlogDetailPage({
 
         {/* Main Content */}
         <article className="blog-content">
-          <MDXRemote source={post.content} components={components} />
+          <MDXRemote
+          source={post.content}
+          components={components}
+          options={{
+            mdxOptions: {
+              remarkPlugins: [remarkGfm],
+            }
+          }}
+        />
         </article>
 
         {/* Sidebar */}

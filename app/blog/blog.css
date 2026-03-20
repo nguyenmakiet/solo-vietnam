@@ -178,8 +178,13 @@
   align-items: start;
 }
 @media (max-width: 768px) {
-  .blog-layout { grid-template-columns: 1fr; }
-  .blog-sidebar { order: -1; }
+  .blog-layout {
+    display: block;
+  }
+
+  .blog-sidebar {
+    display: none;
+  }
 }
 
 /* Article content */
@@ -319,3 +324,46 @@
   line-height: 1.5; transition: color 0.15s;
 }
 .sidebar-related-link:hover { color: #f59e0b; }
+/* Table styles */
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.blog-content th {
+  background: #f5f5f5;
+  text-align: left;
+  padding: 10px 16px;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.blog-content td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #efefef;
+  vertical-align: top;
+}
+
+.blog-content tr:last-child td {
+  border-bottom: none;
+}
+
+.blog-content tr:hover td {
+  background: #fafafa;
+}
+
+/* Fix column widths for contacts table */
+.blog-content td:first-child {
+  white-space: nowrap;
+  font-weight: 500;
+  min-width: 180px;
+}
+
+.blog-content td:nth-child(2) {
+  white-space: nowrap;
+  min-width: 140px;
+  color: #c0392b;
+  font-weight: 500;
+}
