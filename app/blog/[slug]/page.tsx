@@ -5,6 +5,7 @@ import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { getPostBySlug, extractToc } from "@/lib/blog"
 import BlogToc from "./BlogToc"
+import CloudImage from "@/components/CloudImage"
 import "../blog.css"
 import remarkGfm from "remark-gfm"
 
@@ -46,17 +47,7 @@ const components = {
       <div className="scam-card-body">{children}</div>
     </div>
   ),
-  // Cloudinary image
-  CloudImage: ({ publicId, alt, caption }: { publicId: string; alt: string; caption?: string }) => (
-    <figure className="mdx-figure">
-      <img
-        src={`https://res.cloudinary.com/dl5kqhspv/image/upload/w_900,q_auto,f_auto/${publicId}`}
-        alt={alt}
-        className="mdx-img"
-      />
-      {caption && <figcaption className="mdx-caption">{caption}</figcaption>}
-    </figure>
-  ),
+  CloudImage,
   h2: ({ children }: { children: React.ReactNode }) => {
     const text = typeof children === "string" ? children : ""
     const id = slugify(text)
