@@ -30,10 +30,12 @@ export default function BlogToc({ items }: Props) {
     return () => observer.disconnect()
   }, [items])
 
-  const scrollTo = (id: string) => {
+const scrollTo = (id: string) => {
     const el = document.getElementById(id)
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" })
+      const offset = 61 // adjust this to match your header height
+      const top = el.getBoundingClientRect().top + window.scrollY - offset
+      window.scrollTo({ top, behavior: "smooth" })
     }
   }
 

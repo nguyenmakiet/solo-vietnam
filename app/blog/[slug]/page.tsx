@@ -16,7 +16,11 @@ const CATEGORY_LABELS: Record<string, string> = {
   accommodation: "🏨 Accommodation",
   general: "📝 General",
 }
-
+const slugify = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
 // MDX custom components
 const components = {
   // Warning box: <Warning>text</Warning>
@@ -53,6 +57,16 @@ const components = {
       {caption && <figcaption className="mdx-caption">{caption}</figcaption>}
     </figure>
   ),
+  h2: ({ children }: { children: React.ReactNode }) => {
+    const text = typeof children === "string" ? children : ""
+    const id = slugify(text)
+    return <h2 id={id}>{children}</h2>
+  },
+  h3: ({ children }: { children: React.ReactNode }) => {
+    const text = typeof children === "string" ? children : ""
+    const id = slugify(text)
+    return <h3 id={id}>{children}</h3>
+  },
 }
 
 export default async function BlogDetailPage({
