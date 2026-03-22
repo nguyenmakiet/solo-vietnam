@@ -23,13 +23,13 @@ export const linhPhuocPagoda: Location = {
     "linh-phuoc-pagoda6_ky3efq",
   ],
   seoDescription:
-    "Linh Phước Pagoda in Trại Mát village is Vietnam's most elaborate ceramic mosaic temple — every surface covered in dragons, phoenixes, and Buddhist imagery assembled from millions of broken glass and ceramic fragments, with a 7-storey bell tower and a 49-metre dragon staircase.",
+    "Linh Phước Pagoda in Trại Mát village is Vietnam's most elaborate ceramic mosaic temple - every surface covered in dragons, phoenixes, and Buddhist imagery assembled from millions of broken glass and ceramic fragments, with a 7-storey bell tower and a 49-metre dragon staircase.",
   tips: [
-    "Reach the pagoda by the tourist train from Đà Lạt Railway Station — the 30-minute journey is part of the experience",
-    "The detail in the mosaics rewards slow examination — look closely at the dragon bodies and you'll see they're assembled from individual ceramic shards, each one placed by hand",
+    "Reach the pagoda by the tourist train from Đà Lạt Railway Station - the 30-minute journey is part of the experience",
+    "The detail in the mosaics rewards slow examination - look closely at the dragon bodies and you'll see they're assembled from individual ceramic shards, each one placed by hand",
     "The 7-storey bell tower (49 metres) can be climbed for views over the surrounding pine forest and farmland",
-    "The interior has a 4.9-metre jade Buddha and a large reclining Buddha — the scale of the interior is larger than the exterior suggests",
-    "Early morning has the best light on the south-facing main facade — the mosaics catch the morning sun and the colours are most vivid",
+    "The interior has a 4.9-metre jade Buddha and a large reclining Buddha - the scale of the interior is larger than the exterior suggests",
+    "Early morning has the best light on the south-facing main facade - the mosaics catch the morning sun and the colours are most vivid",
   ],
   content: {
     intro:
@@ -37,8 +37,8 @@ export const linhPhuocPagoda: Location = {
     howToGetThere:
       "Linh Phước Pagoda is in Trại Mát village, 7km northeast of Đà Lạt city. The most atmospheric approach is by the tourist train from Đà Lạt Railway Station (30 minutes, departures when 5+ passengers present). By motorbike from Đà Lạt, 15–20 minutes on the road toward Trại Mát. The pagoda is 5 minutes walk from Trại Mát station, signposted from the platform.",
     whatToExpect:
-      "The pagoda complex is large — the main hall, bell tower, dragon staircase, and several ancillary shrines spread across a hillside. The main hall facade is the first visual impact: dragon columns, mosaic walls, and a multi-tiered roof entirely covered in ceramic work. The interior houses a large jade Buddha and a reclining Buddha figure. The dragon staircase behind the main hall winds up the hillside framed by the dragon's tiled body, giving views over the surrounding pine and flower farm landscape from the upper sections.",
+      "The pagoda complex is large - the main hall, bell tower, dragon staircase, and several ancillary shrines spread across a hillside. The main hall facade is the first visual impact: dragon columns, mosaic walls, and a multi-tiered roof entirely covered in ceramic work. The interior houses a large jade Buddha and a reclining Buddha figure. The dragon staircase behind the main hall winds up the hillside framed by the dragon's tiled body, giving views over the surrounding pine and flower farm landscape from the upper sections.",
     travelTips:
-      "Linh Phước is the best reason to take the Đà Lạt tourist train — the pagoda on its own justifies the excursion and the train adds the pleasure of a preserved colonial railway journey. The combination of train ride from the 1938 French station and the extraordinary mosaic pagoda at the other end makes for one of Đà Lạt's most varied half-mornings.",
+      "Linh Phước is the best reason to take the Đà Lạt tourist train - the pagoda on its own justifies the excursion and the train adds the pleasure of a preserved colonial railway journey. The combination of train ride from the 1938 French station and the extraordinary mosaic pagoda at the other end makes for one of Đà Lạt's most varied half-mornings.",
   },
 }

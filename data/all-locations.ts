@@ -37,6 +37,7 @@ import { frenchVillageBaNa } from "@/data/locations/french-village-ba-na"
 import { goldenBridge } from "@/data/locations/golden-bridge"
 import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
+import { hamTienBeach } from "@/data/locations/ham-tien-beach"
 import { hangEn } from "@/data/locations/hang-en"
 import { hangMua } from "@/data/locations/hang-mua"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
@@ -60,6 +61,7 @@ import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
 import { moocSpring } from "@/data/locations/mooc-spring"
+import { muiNeFishingVillage } from "@/data/locations/mui-ne-fishing-village"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
@@ -141,6 +143,7 @@ export const allLocations: Location[] = [
   goldenBridge,
   haLongBay,
   hamNinhFishingVillage,
+  hamTienBeach,
   hangEn,
   hangMua,
   hoiAnAncientTown,
@@ -164,6 +167,7 @@ export const allLocations: Location[] = [
   maPiLengPass,
   minhMangTomb,
   moocSpring,
+  muiNeFishingVillage,
   muongHoaValley,
   myKheBeach,
   nguomNgaoCave,

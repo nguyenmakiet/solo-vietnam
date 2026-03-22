@@ -5,6 +5,7 @@ import { allLocations } from "@/data/all-locations"
 import LocationTabs from "./LocationTabs"
 import "./location.css"
 import NearbyLocations from "./NearbyLocations"
+import GalleryLightbox from "./GalleryLightbox"
 
 
 function toDecimal(val: number | string): number {
@@ -133,16 +134,7 @@ export default async function LocationPage({
         <div id="gallery" className="section-anchor">
           <p className="section-label">Gallery</p>
           {location.gallery.length > 0 ? (
-            <div className="gallery-grid">
-              {location.gallery.map((publicId) => (
-                <img
-                  key={publicId}
-                  src={`https://res.cloudinary.com/dl5kqhspv/image/upload/w_600,h_450,c_fill,q_auto,f_auto/${publicId}`}
-                  alt={location.name}
-                  className="gallery-img"
-                />
-              ))}
-            </div>
+            <GalleryLightbox publicIds={location.gallery} locationName={location.name} />
           ) : (
             <div className="gallery-grid">
               <div className="gallery-empty">Photos coming soon</div>
