@@ -1,0 +1,51 @@
+<svg width="100%" viewBox="0 0 680 310" xmlns="http://www.w3.org/2000/svg" style="font-family:system-ui,sans-serif;">
+  <style>
+    .th { font-size:14px; font-weight:500; fill:#1a1a1a; }
+    .ts { font-size:12px; fill:#5a5a5a; }
+    .card-amber { fill:#FAEEDA; stroke:#854F0B; stroke-width:0.5; }
+    .card-amber .th { fill:#633806; }
+    .card-amber .ts { fill:#854F0B; }
+    .card-gray { fill:#F1EFE8; stroke:#5F5E5A; stroke-width:0.5; }
+    .card-gray .th { fill:#444441; }
+    .card-gray .ts { fill:#5F5E5A; }
+    .card-coral { fill:#FAECE7; stroke:#993C1D; stroke-width:0.5; }
+    .card-coral .th { fill:#712B13; }
+    .card-coral .ts { fill:#993C1D; }
+    .label-amber { fill:#633806; font-size:14px; font-weight:500; }
+    .label-gray { fill:#444441; font-size:14px; font-weight:500; }
+    .label-coral { fill:#712B13; font-size:14px; font-weight:500; }
+    .sub-amber { fill:#854F0B; font-size:12px; }
+    .sub-gray { fill:#5F5E5A; font-size:12px; }
+    .sub-coral { fill:#993C1D; font-size:12px; }
+  </style>
+
+  <text class="ts" x="340" y="20" text-anchor="middle">How tourists are actually at risk in Vietnam</text>
+
+  <rect x="40" y="36" width="180" height="228" rx="8" class="card-amber"/>
+  <text class="label-amber" x="130" y="68" text-anchor="middle" dominant-baseline="central">Adventure overreach</text>
+  <text class="sub-amber" x="130" y="90" text-anchor="middle" dominant-baseline="central">Self-caused</text>
+  <text class="sub-amber" x="130" y="126" text-anchor="middle" dominant-baseline="central">Ha Giang Loop,</text>
+  <text class="sub-amber" x="130" y="144" text-anchor="middle" dominant-baseline="central">remote hiking,</text>
+  <text class="sub-amber" x="130" y="162" text-anchor="middle" dominant-baseline="central">cliff selfies</text>
+  <text class="sub-amber" x="130" y="202" text-anchor="middle" dominant-baseline="central">Happens everywhere.</text>
+  <text class="sub-amber" x="130" y="220" text-anchor="middle" dominant-baseline="central">Prepare properly.</text>
+
+  <rect x="250" y="36" width="180" height="228" rx="8" class="card-gray"/>
+  <text class="label-gray" x="340" y="68" text-anchor="middle" dominant-baseline="central">Drowning</text>
+  <text class="sub-gray" x="340" y="90" text-anchor="middle" dominant-baseline="central">General hazard</text>
+  <text class="sub-gray" x="340" y="126" text-anchor="middle" dominant-baseline="central">Currents, alcohol,</text>
+  <text class="sub-gray" x="340" y="144" text-anchor="middle" dominant-baseline="central">unfamiliar waters</text>
+  <text class="sub-gray" x="340" y="202" text-anchor="middle" dominant-baseline="central">Not Vietnam-specific.</text>
+  <text class="sub-gray" x="340" y="220" text-anchor="middle" dominant-baseline="central">Universal caution.</text>
+
+  <rect x="460" y="36" width="180" height="228" rx="8" class="card-coral"/>
+  <text class="label-coral" x="550" y="68" text-anchor="middle" dominant-baseline="central">Road traffic</text>
+  <text class="sub-coral" x="550" y="90" text-anchor="middle" dominant-baseline="central">Vietnam-specific risk</text>
+  <text class="sub-coral" x="550" y="126" text-anchor="middle" dominant-baseline="central">Urban chaos, rural</text>
+  <text class="sub-coral" x="550" y="144" text-anchor="middle" dominant-baseline="central">highways, motorbikes</text>
+  <text class="sub-coral" x="550" y="180" text-anchor="middle" dominant-baseline="central">2x global avg</text>
+  <text class="sub-coral" x="550" y="198" text-anchor="middle" dominant-baseline="central">mortality rate</text>
+  <text class="sub-coral" x="550" y="220" text-anchor="middle" dominant-baseline="central">Use Grab. No night riding.</text>
+
+  <text class="ts" x="340" y="286" text-anchor="middle">Traffic is the only category unique to Vietnam's risk profile</text>
+</svg>

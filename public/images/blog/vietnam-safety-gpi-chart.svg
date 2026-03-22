@@ -1,0 +1,59 @@
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" style="font-family:system-ui,sans-serif;">
+  <style>
+    .th { font-size:14px; font-weight:500; fill:#1a1a1a; }
+    .ts { font-size:12px; fill:#5a5a5a; }
+    .bar-teal { fill:#E1F5EE; stroke:#0F6E56; stroke-width:0.5; }
+    .bar-teal-text { fill:#085041; }
+    .bar-green { fill:#EAF3DE; stroke:#3B6D11; stroke-width:0.5; }
+    .bar-green-text { fill:#27500A; }
+    .bar-gray { fill:#F1EFE8; stroke:#5F5E5A; stroke-width:0.5; }
+    .bar-gray-text { fill:#444441; }
+    .bar-amber { fill:#FAEEDA; stroke:#854F0B; stroke-width:0.5; }
+    .bar-amber-text { fill:#633806; }
+    .bar-coral { fill:#FAECE7; stroke:#993C1D; stroke-width:0.5; }
+    .bar-coral-text { fill:#712B13; }
+    .grid { stroke:#e0ddd5; stroke-width:0.5; }
+    .grid-dash { stroke:#e0ddd5; stroke-width:0.5; stroke-dasharray:2 4; }
+    .ref-line { stroke:#1D9E75; stroke-width:0.5; stroke-dasharray:3 3; }
+    .ref-text { fill:#0F6E56; font-size:12px; }
+  </style>
+
+  <text class="ts" x="40" y="28">Global Peace Index 2025 — Southeast Asia ranking</text>
+  <text class="ts" x="640" y="28" text-anchor="end">lower rank = more peaceful</text>
+
+  <line x1="160" y1="38" x2="160" y2="348" class="grid"/>
+  <line x1="40" y1="348" x2="640" y2="348" class="grid"/>
+  <line x1="157" y1="38" x2="157" y2="348" class="grid-dash"/>
+  <line x1="274" y1="38" x2="274" y2="348" class="grid-dash"/>
+  <line x1="391" y1="38" x2="391" y2="348" class="grid-dash"/>
+  <line x1="508" y1="38" x2="508" y2="348" class="grid-dash"/>
+
+  <rect x="160" y="55" width="24" height="36" rx="3" class="bar-teal"/>
+  <text class="th bar-teal-text" x="152" y="73" text-anchor="end" dominant-baseline="central">Singapore</text>
+  <text class="ts bar-teal-text" x="192" y="73" dominant-baseline="central">#6</text>
+
+  <rect x="160" y="103" width="46" height="36" rx="3" class="bar-teal"/>
+  <text class="th bar-teal-text" x="152" y="121" text-anchor="end" dominant-baseline="central">Malaysia</text>
+  <text class="ts bar-teal-text" x="214" y="121" dominant-baseline="central">#13</text>
+
+  <rect x="160" y="151" width="134" height="36" rx="3" class="bar-green"/>
+  <text class="th bar-green-text" x="152" y="169" text-anchor="end" dominant-baseline="central">Vietnam</text>
+  <text class="ts bar-green-text" x="302" y="169" dominant-baseline="central">#38</text>
+
+  <rect x="160" y="199" width="173" height="36" rx="3" class="bar-gray"/>
+  <text class="th bar-gray-text" x="152" y="217" text-anchor="end" dominant-baseline="central">Indonesia</text>
+  <text class="ts bar-gray-text" x="341" y="217" dominant-baseline="central">#49</text>
+
+  <rect x="160" y="247" width="304" height="36" rx="3" class="bar-amber"/>
+  <text class="th bar-amber-text" x="152" y="265" text-anchor="end" dominant-baseline="central">Thailand</text>
+  <text class="ts bar-amber-text" x="472" y="265" dominant-baseline="central">#86</text>
+
+  <rect x="160" y="295" width="423" height="36" rx="3" class="bar-coral"/>
+  <text class="th bar-coral-text" x="152" y="313" text-anchor="end" dominant-baseline="central">Philippines</text>
+  <text class="ts bar-coral-text" x="591" y="313" dominant-baseline="central">#120</text>
+
+  <line x1="294" y1="42" x2="294" y2="345" class="ref-line"/>
+  <text class="ref-text" x="297" y="50">Vietnam</text>
+
+  <text class="ts" x="40" y="368">Source: Institute for Economics and Peace, Global Peace Index 2025</text>
+</svg>

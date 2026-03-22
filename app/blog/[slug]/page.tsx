@@ -58,6 +58,11 @@ const components = {
     const id = slugify(text)
     return <h3 id={id}>{children}</h3>
   },
+  a: ({ href, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+      {children}
+    </a>
+  ),
 }
 
 export default async function BlogDetailPage({

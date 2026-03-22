@@ -1,0 +1,78 @@
+<svg width="100%" viewBox="0 0 680 410" xmlns="http://www.w3.org/2000/svg" style="font-family:system-ui,sans-serif;">
+  <style>
+    .th { font-size:14px; font-weight:500; fill:#1a1a1a; }
+    .ts { font-size:12px; fill:#5a5a5a; }
+    .bar-teal { fill:#E1F5EE; stroke:#0F6E56; stroke-width:0.5; }
+    .bar-teal-text { fill:#085041; }
+    .bar-amber { fill:#FAEEDA; stroke:#854F0B; stroke-width:0.5; }
+    .bar-amber-text { fill:#633806; }
+    .bar-coral { fill:#FAECE7; stroke:#993C1D; stroke-width:0.5; }
+    .bar-coral-text { fill:#712B13; }
+    .grid { stroke:#e0ddd5; stroke-width:0.5; }
+    .grid-dash { stroke:#e0ddd5; stroke-width:0.5; stroke-dasharray:2 4; }
+    .ref-badge { fill:#E1F5EE; stroke:#0F6E56; stroke-width:0.5; }
+    .ref-text { fill:#085041; font-size:12px; }
+    .ref-line { stroke:#1D9E75; stroke-width:1; stroke-dasharray:4 3; }
+  </style>
+
+  <text class="ts" x="10" y="20">Typical financial loss per scam type (USD)</text>
+  <text class="ts" x="670" y="20" text-anchor="end">most scams cost under $30</text>
+
+  <!-- bars start at x=210, labels anchor at x=200 -->
+  <line x1="210" y1="30" x2="210" y2="370" class="grid"/>
+  <line x1="210" y1="370" x2="660" y2="370" class="grid"/>
+
+  <!-- grid lines: 210=$0, 320=$50, 430=$100, 540=$150, 650=$200 — scale: 2.2px per $ -->
+  <line x1="320" y1="30" x2="320" y2="370" class="grid-dash"/>
+  <line x1="430" y1="30" x2="430" y2="370" class="grid-dash"/>
+  <line x1="540" y1="30" x2="540" y2="370" class="grid-dash"/>
+  <line x1="650" y1="30" x2="650" y2="370" class="grid-dash"/>
+
+  <text class="ts" x="210" y="387">$0</text>
+  <text class="ts" x="320" y="387" text-anchor="middle">$50</text>
+  <text class="ts" x="430" y="387" text-anchor="middle">$100</text>
+  <text class="ts" x="540" y="387" text-anchor="middle">$150</text>
+  <text class="ts" x="650" y="387" text-anchor="middle">$200</text>
+
+  <!-- Street vendor $2-$15: width=4.4 to 33 → use 33px -->
+  <rect x="210" y="44" width="33" height="28" rx="3" class="bar-teal"/>
+  <text class="th bar-teal-text" x="200" y="58" text-anchor="end" dominant-baseline="central">Street vendor</text>
+  <text class="ts bar-teal-text" x="251" y="58" dominant-baseline="central">$2–$15</text>
+
+  <!-- Shoe shine $5-$20: width=44px -->
+  <rect x="210" y="84" width="44" height="28" rx="3" class="bar-teal"/>
+  <text class="th bar-teal-text" x="200" y="98" text-anchor="end" dominant-baseline="central">Shoe shine</text>
+  <text class="ts bar-teal-text" x="262" y="98" dominant-baseline="central">$5–$20</text>
+
+  <!-- Taxi $5-$30: width=66px -->
+  <rect x="210" y="124" width="66" height="28" rx="3" class="bar-teal"/>
+  <text class="th bar-teal-text" x="200" y="138" text-anchor="end" dominant-baseline="central">Taxi / Grab scam</text>
+  <text class="ts bar-teal-text" x="284" y="138" dominant-baseline="central">$5–$30</text>
+
+  <!-- Cyclo $5-$25: width=55px -->
+  <rect x="210" y="164" width="55" height="28" rx="3" class="bar-teal"/>
+  <text class="th bar-teal-text" x="200" y="178" text-anchor="end" dominant-baseline="central">Cyclo / xe om</text>
+  <text class="ts bar-teal-text" x="273" y="178" dominant-baseline="central">$5–$25</text>
+
+  <!-- Money switching $10-$50: width=110px -->
+  <rect x="210" y="204" width="110" height="28" rx="3" class="bar-amber"/>
+  <text class="th bar-amber-text" x="200" y="218" text-anchor="end" dominant-baseline="central">Money switching</text>
+  <text class="ts bar-amber-text" x="328" y="218" dominant-baseline="central">$10–$50</text>
+
+  <!-- ATM skimming $10-$50: width=110px -->
+  <rect x="210" y="244" width="110" height="28" rx="3" class="bar-amber"/>
+  <text class="th bar-amber-text" x="200" y="258" text-anchor="end" dominant-baseline="central">ATM skimming</text>
+  <text class="ts bar-amber-text" x="328" y="258" dominant-baseline="central">$10–$50</text>
+
+  <!-- Fake police $50-$200+: width=440px (full to edge) -->
+  <rect x="210" y="284" width="440" height="28" rx="3" class="bar-coral"/>
+  <text class="th bar-coral-text" x="200" y="298" text-anchor="end" dominant-baseline="central">Fake police / authority</text>
+  <text class="ts bar-coral-text" x="658" y="298" text-anchor="end" dominant-baseline="central">$50–$200+</text>
+
+  <!-- $30 reference line at x=210+(30×2.2)=276 -->
+  <line x1="276" y1="36" x2="276" y2="334" class="ref-line"/>
+  <rect x="210" y="326" width="66" height="16" rx="2" class="ref-badge"/>
+  <text class="ref-text" x="243" y="334" text-anchor="middle">90% of scams</text>
+
+  <text class="ts" x="10" y="400">Most financial losses are under $30. Fake authority scams are the outlier.</text>
+</svg>
