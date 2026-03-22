@@ -116,6 +116,18 @@ export default async function LocationPage({
             </div>
           </div>
         </div>
+        {/* What Makes This Place Special */}
+          {location.content?.intro && (
+            <div id="about" className="section-anchor">
+              <div className="section-label">
+                ABOUT THIS PLACE
+              </div>
+              <div className="content-section">
+                <h3>What Makes {location.name} Special</h3>
+                <p>{location.content.intro}</p>
+              </div>
+            </div>
+          )}
 
         {/* Gallery */}
         <div id="gallery" className="section-anchor">
