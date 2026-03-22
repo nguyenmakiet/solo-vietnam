@@ -32,7 +32,7 @@ export default async function BlogIndexPage({
         <div className="bi-hero-inner">
           <div className="bi-hero-badge">✍️ Travel Guides & Tips</div>
           <h1>The Solo Vietnam Blog</h1>
-          <p>Honest advice for independent travelers — scams to avoid, routes to ride, places to discover.</p>
+          <p>Honest advice for independent travelers - scams to avoid, routes to ride, places to discover.</p>
         </div>
       </header>
 

@@ -127,7 +127,7 @@ export default async function DestinationPage({
             <p>{destination.description}</p>
           </div>
 
-          {/* Places to Visit — from location data */}
+          {/* Places to Visit - from location data */}
           <section style={{ marginBottom: 48 }}>
             <p className="section-label">
               Places to Visit
@@ -213,7 +213,7 @@ export default async function DestinationPage({
               <div className="practical-card safe">
                 <span className="card-icon">💰</span>
                 <div className="card-title">Money</div>
-                <div className="card-body">Cash-first destination. Withdraw VND at ATMs — avoid airport exchange booths.</div>
+                <div className="card-body">Cash-first destination. Withdraw VND at ATMs - avoid airport exchange booths.</div>
               </div>
               <div className="practical-card warn">
                 <span className="card-icon">🏥</span>

@@ -19,7 +19,7 @@ export default function ExperiencesIndexPage() {
 
         <div className="exp-index-hero">
           <h1>Experiences in Vietnam</h1>
-          <p>Find exactly what you're looking for — from caving to beach days to overnight homestays</p>
+          <p>Find exactly what you're looking for - from caving to beach days to overnight homestays</p>
         </div>
 
         <div className="exp-content">

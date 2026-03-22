@@ -192,7 +192,7 @@ export default async function LocationPage({
             <div>
               <div className="cta-label">Explore more</div>
               <div className="cta-title">
-                {location.destination.replace(/-/g, " ")} — Full Guide
+                {location.destination.replace(/-/g, " ")} - Full Guide
               </div>
             </div>
             <Link href={`/destinations/${location.destination}`}>

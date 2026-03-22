@@ -60,7 +60,7 @@ export default async function ProvincePage({
         .breadcrumb .sep { color: #3a5040; }
         .breadcrumb .current { color: #fff; }
 
-        /* Hero — green-tinted to differentiate from destination (gold/brown) */
+        /* Hero - green-tinted to differentiate from destination (gold/brown) */
         .hero {
           background: linear-gradient(160deg, #0d1a0f 0%, #162418 55%, #0a1a10 100%);
           padding: 56px 24px 48px; position: relative; overflow: hidden;
@@ -294,7 +294,7 @@ export default async function ProvincePage({
           {/* Destinations */}
           <section style={{ marginBottom: 56 }}>
             <p className="section-label">
-              Destinations in {province.name} — {provinceDestinations.length} found
+              Destinations in {province.name} - {provinceDestinations.length} found
             </p>
             {provinceDestinations.length > 0 ? (
               <div className="dest-grid">

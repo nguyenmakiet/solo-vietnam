@@ -91,7 +91,7 @@ export const destinations: Destination[] = [
     region: "north",
 
     description:
-      "Ha Long Bay is Vietnam's most iconic landscape — 1,600 limestone islands rising from emerald waters. The key is picking the right cruise.",
+      "Ha Long Bay is Vietnam's most iconic landscape - 1,600 limestone islands rising from emerald waters. The key is picking the right cruise.",
 
     tagline: "1,600 islands. One unforgettable night on the water.",
 
@@ -194,7 +194,7 @@ export const destinations: Destination[] = [
     description:
       "Phu Quoc is Vietnam's largest island and one of Southeast Asia's best beach destinations. Crystal clear water, fresh seafood, and a relaxed vibe.",
 
-    tagline: "Vietnam's island paradise — before it gets too developed",
+    tagline: "Vietnam's island paradise - before it gets too developed",
 
     heroImage: heroUrl("phu-quoc_w1h8jq"),
 
@@ -293,7 +293,7 @@ export const destinations: Destination[] = [
     region: "south",
   
     description:
-      "Da Lat is Vietnam's mountain escape — cool weather, pine forests, waterfalls, and one of the country's most unique coffee cultures.",
+      "Da Lat is Vietnam's mountain escape - cool weather, pine forests, waterfalls, and one of the country's most unique coffee cultures.",
   
     tagline: "Vietnam's little mountain escape",
   
@@ -343,7 +343,7 @@ export const destinations: Destination[] = [
   region: "central",
 
   description:
-    "Bà Nà Hills is Đà Nẵng's mountain resort at 1,487 metres — a French colonial hill station reinvented as one of Southeast Asia's most elaborate tourist attractions, home to the iconic Golden Bridge, a world-record cable car, and a recreated French village above the clouds.",
+    "Bà Nà Hills is Đà Nẵng's mountain resort at 1,487 metres - a French colonial hill station reinvented as one of Southeast Asia's most elaborate tourist attractions, home to the iconic Golden Bridge, a world-record cable car, and a recreated French village above the clouds.",
 
   tagline: "Above the clouds, held by giant stone hands",
 
@@ -367,7 +367,7 @@ export const destinations: Destination[] = [
   tags: ["attraction", "cable-car", "photography", "theme-park"],
 
   gettingThere:
-    "25km west of Đà Nẵng city centre — 45 minutes by taxi or Grab (250,000–350,000 VND one way). Most hotels offer shuttle transfers. No public bus available.",
+    "25km west of Đà Nẵng city centre - 45 minutes by taxi or Grab (250,000–350,000 VND one way). Most hotels offer shuttle transfers. No public bus available.",
 
   bestTime:
     "March – August for clear skies above the clouds. June – August the summit is sunny while the city below is overcast.",
@@ -395,9 +395,9 @@ export const destinations: Destination[] = [
   region: "south",
 
   description:
-    "Côn Đảo is Vietnam's most extraordinary island — a former French colonial penal colony with a dark and layered history, now one of Southeast Asia's most pristine marine environments, with near-empty beaches, world-class diving, and sea turtle nesting sites.",
+    "Côn Đảo is Vietnam's most extraordinary island - a former French colonial penal colony with a dark and layered history, now one of Southeast Asia's most pristine marine environments, with near-empty beaches, world-class diving, and sea turtle nesting sites.",
 
-  tagline: "Vietnam's most haunting — and most beautiful — island",
+  tagline: "Vietnam's most haunting - and most beautiful - island",
 
   heroImage: heroUrl("con-dao_vr623u"),
 
@@ -447,7 +447,7 @@ export const destinations: Destination[] = [
   region: "south",
 
   description:
-    "Phan Thiết is Vietnam's kite-surfing capital and sand dune destination — a 20km coastal strip of fishing villages, red and white sand dunes, and a fairy stream, with the strongest and most consistent winds on the Vietnamese coast.",
+    "Phan Thiết is Vietnam's kite-surfing capital and sand dune destination - a 20km coastal strip of fishing villages, red and white sand dunes, and a fairy stream, with the strongest and most consistent winds on the Vietnamese coast.",
 
   tagline: "Red dunes, white dunes, and the wind that never stops",
 
@@ -499,7 +499,7 @@ export const destinations: Destination[] = [
   region: "south",
 
   description:
-    "The Mekong Delta is Vietnam's rice bowl — a vast network of rivers, canals, floating markets, and coconut groves spreading across the southern tip of the country, where life moves by boat and the pace is slower than anywhere else in Vietnam.",
+    "The Mekong Delta is Vietnam's rice bowl - a vast network of rivers, canals, floating markets, and coconut groves spreading across the southern tip of the country, where life moves by boat and the pace is slower than anywhere else in Vietnam.",
 
   tagline: "Rivers, coconuts, and floating markets at dawn",
 
@@ -551,7 +551,7 @@ export const destinations: Destination[] = [
   region: "central",
 
   description:
-    "Phong Nha-Kẻ Bàng National Park is Vietnam's cave capital — a UNESCO World Heritage Site of 400-million-year-old limestone karst hiding the world's largest cave system, underground rivers, jungle trails, and one of the most intact ecosystems in Southeast Asia.",
+    "Phong Nha-Kẻ Bàng National Park is Vietnam's cave capital - a UNESCO World Heritage Site of 400-million-year-old limestone karst hiding the world's largest cave system, underground rivers, jungle trails, and one of the most intact ecosystems in Southeast Asia.",
 
   tagline: "The world's largest caves are underneath this jungle",
 
@@ -604,9 +604,9 @@ export const destinations: Destination[] = [
   region: "north",
 
   description:
-    "Cao Bằng is Vietnam's most remote northern province — a dramatic landscape of limestone karst, jungle-covered mountains, and deep valleys on the Chinese border, home to Bản Giốc Waterfall, the revolutionary history of Pác Bó, and some of the most pristine highland scenery in the country.",
+    "Cao Bằng is Vietnam's most remote northern province - a dramatic landscape of limestone karst, jungle-covered mountains, and deep valleys on the Chinese border, home to Bản Giốc Waterfall, the revolutionary history of Pác Bó, and some of the most pristine highland scenery in the country.",
 
-  tagline: "Vietnam's wild north — waterfalls, caves, and revolutionary history",
+  tagline: "Vietnam's wild north - waterfalls, caves, and revolutionary history",
 
   heroImage: heroUrl("cao-bang_tu6hxy"),
 
@@ -620,7 +620,7 @@ export const destinations: Destination[] = [
 
   thingsToDo: [
     "Visit Bản Giốc Waterfall at sunrise",
-    "Explore Pác Bó — where Hồ Chí Minh returned to Vietnam in 1941",
+    "Explore Pác Bó - where Hồ Chí Minh returned to Vietnam in 1941",
     "Trek through Phia Oắc National Park",
     "Swim in the blue waters of Thang Hen Lake",
   ],
@@ -637,7 +637,7 @@ export const destinations: Destination[] = [
 
   recommendedStay: "3 – 4 days",
 
-  transport: "Motorbike — essential for reaching most attractions",
+  transport: "Motorbike - essential for reaching most attractions",
 
   nearbyDestinations: ["ha-giang", "bac-kan"],
 
@@ -656,9 +656,9 @@ export const destinations: Destination[] = [
   region: "north",
 
   description:
-    "The Ha Giang Loop is Vietnam's most dramatic motorbike route — a 350km circuit through the Đồng Văn Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'mong villages, buckwheat fields, and the deepest river gorge in Southeast Asia.",
+    "The Ha Giang Loop is Vietnam's most dramatic motorbike route - a 350km circuit through the Đồng Văn Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'mong villages, buckwheat fields, and the deepest river gorge in Southeast Asia.",
 
-  tagline: "Vietnam's most epic road — 350km of karst, passes, and minority villages",
+  tagline: "Vietnam's most epic road - 350km of karst, passes, and minority villages",
 
   heroImage: heroUrl("ha-giang-loop_e8myfw"),
 
@@ -681,7 +681,7 @@ export const destinations: Destination[] = [
   tags: ["motorcycling", "adventure", "nature", "culture", "trekking"],
 
   gettingThere:
-    "Bus from Hanoi to Hà Giang city (6–7 hours, ~200,000 VND). Limousine vans available. Rent a motorbike in Hà Giang city — semi-automatic is recommended for beginners.",
+    "Bus from Hanoi to Hà Giang city (6–7 hours, ~200,000 VND). Limousine vans available. Rent a motorbike in Hà Giang city - semi-automatic is recommended for beginners.",
 
   bestTime:
     "Sep – Nov (golden rice terraces, buckwheat flowers in Oct–Nov, clearest skies). Mar – Apr for triangle flowers.",
@@ -690,7 +690,7 @@ export const destinations: Destination[] = [
 
   recommendedStay: "3 – 5 days for the full loop",
 
-  transport: "Motorbike — the loop is the destination",
+  transport: "Motorbike - the loop is the destination",
 
   nearbyDestinations: ["ha-giang", "cao-bang"],
 
@@ -709,7 +709,7 @@ export const destinations: Destination[] = [
   region: "north",
 
   description:
-    "Ninh Bình is Vietnam's inland Ha Long Bay — a landscape of limestone karsts rising from rice paddies and river systems, home to the ancient capital of Hoa Lư, the boat caves of Tràng An, the cycling corridors of Tam Cốc, and some of the most varied scenery within a single province in the country.",
+    "Ninh Bình is Vietnam's inland Ha Long Bay - a landscape of limestone karsts rising from rice paddies and river systems, home to the ancient capital of Hoa Lư, the boat caves of Tràng An, the cycling corridors of Tam Cốc, and some of the most varied scenery within a single province in the country.",
 
   tagline: "Karst mountains, ancient capitals, and rice fields by rowboat",
 
@@ -728,7 +728,7 @@ export const destinations: Destination[] = [
     "Cycle through Tam Cốc rice fields",
     "Climb Hang Mua for panoramic views",
     "Explore Hoa Lư's 10th-century temples",
-    "Visit Bái Đính — Vietnam's largest pagoda complex",
+    "Visit Bái Đính - Vietnam's largest pagoda complex",
   ],
 
   tags: ["nature", "history", "culture", "boat-tour", "cycling"],
@@ -762,7 +762,7 @@ export const destinations: Destination[] = [
   region: "north",
 
   description:
-    "Cát Bà is Vietnam's largest island in the Ha Long Bay archipelago — a rugged island of national park jungle, karst peaks, hidden beaches, and Lan Hà Bay's quieter limestone waters, with a genuine fishing town at its centre and fewer tourists than Ha Long's main cruise circuit.",
+    "Cát Bà is Vietnam's largest island in the Ha Long Bay archipelago - a rugged island of national park jungle, karst peaks, hidden beaches, and Lan Hà Bay's quieter limestone waters, with a genuine fishing town at its centre and fewer tourists than Ha Long's main cruise circuit.",
 
   tagline: "Ha Long Bay's wilder, less-visited island neighbour",
 
@@ -780,7 +780,7 @@ export const destinations: Destination[] = [
     "Kayak through Lan Hà Bay's limestone karsts",
     "Trek through Cát Bà National Park to the summit",
     "Swim at Cát Cò 1 and Cát Cò 3 beaches",
-    "Visit Hospital Cave — the Viet Cong's wartime underground hospital",
+    "Visit Hospital Cave - the Viet Cong's wartime underground hospital",
     "Cycle to Việt Hải fishing village",
   ],
 
@@ -815,7 +815,7 @@ export const destinations: Destination[] = [
   region: "central",
 
   description:
-    "Huế is Vietnam's imperial city — the seat of the Nguyễn Dynasty from 1802 to 1945, a UNESCO World Heritage Site of royal citadels, tombs, pagodas, and the Perfume River, with a cuisine considered the most refined in the country.",
+    "Huế is Vietnam's imperial city - the seat of the Nguyễn Dynasty from 1802 to 1945, a UNESCO World Heritage Site of royal citadels, tombs, pagodas, and the Perfume River, with a cuisine considered the most refined in the country.",
 
   tagline: "Imperial palaces, royal tombs, and the best food in Vietnam",
 

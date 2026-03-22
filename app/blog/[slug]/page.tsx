@@ -1,4 +1,4 @@
-//"use client" // needed for TOC active state — wrap in a layout instead if preferred
+//"use client" // needed for TOC active state - wrap in a layout instead if preferred
 
 import { notFound } from "next/navigation"
 import Link from "next/link"

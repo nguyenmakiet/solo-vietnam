@@ -72,7 +72,7 @@ export default function DestinationsPage() {
             Destinations
           </h1>
           <p className="text-[#A09880] text-lg max-w-xl leading-relaxed">
-            Handpicked places across Vietnam — with honest guides for solo travelers.
+            Handpicked places across Vietnam - with honest guides for solo travelers.
           </p>
 
           {/* Stats row */}

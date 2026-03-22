@@ -20,7 +20,7 @@ export const ImageSize = {
  * @param publicId  - Cloudinary public ID (e.g. "muoi-tom-bac-lieu" or "provinces/bac-lieu/muoi-tom")
  * @param width     - Output width in px (default 600)
  * @param height    - Output height in px (default 400)
- * @param crop      - Crop mode (default "fill" — crops to exact dimensions without distortion)
+ * @param crop      - Crop mode (default "fill" - crops to exact dimensions without distortion)
  * @returns Optimized Cloudinary URL
  *
  * @example

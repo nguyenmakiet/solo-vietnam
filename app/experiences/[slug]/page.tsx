@@ -118,7 +118,7 @@ export default async function ExperiencePage({
           ) : (
               <div className="exp-empty">
                 <span className="empty-icon">{experience.icon}</span>
-              No locations yet — check back soon
+              No locations yet - check back soon
               </div>
             )}
 

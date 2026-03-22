@@ -201,7 +201,7 @@ export const experiences: Experience[] = [
     value: "motorcycling",
     label: "Motorcycling",
     icon: "🏍️",
-    tagline: "The best way to see Vietnam — on two wheels, on your own schedule",
+    tagline: "The best way to see Vietnam - on two wheels, on your own schedule",
     heroColor: "#b45309",
   },
   {
@@ -209,7 +209,7 @@ export const experiences: Experience[] = [
     value: "shopping",
     label: "Shopping",
     icon: "🛍️",
-    tagline: "Silk, lacquerware, tailors, and night markets — Vietnam's best buys",
+    tagline: "Silk, lacquerware, tailors, and night markets - Vietnam's best buys",
     heroColor: "#be185d",
   },
 ]

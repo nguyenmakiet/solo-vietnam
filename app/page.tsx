@@ -3,7 +3,7 @@ import Link from "next/link"
 import { destinations } from "@/data/destinations"
 import "./homepage.css"
 
-// Featured destinations — hardcoded order
+// Featured destinations - hardcoded order
 const FEATURED_SLUGS = [
   "ha-giang-loop",
   "ninh-binh",
@@ -38,7 +38,7 @@ export default function Home() {
           </h1>
 
           <p className="home-hero-desc">
-            Practical guides for solo travelers — scam alerts, real prices, and local knowledge you won't find in a guidebook.
+            Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won't find in a guidebook.
           </p>
 
           {/* MAP */}
@@ -73,7 +73,7 @@ export default function Home() {
                 Featured <em>destinations</em>
               </h2>
               <p className="home-section-sub">
-                Handpicked for solo travelers — not just the obvious ones.
+                Handpicked for solo travelers - not just the obvious ones.
               </p>
             </div>
             <Link href="/destinations" className="home-section-link">
@@ -125,7 +125,7 @@ export default function Home() {
                 What kind of trip are <em>you</em> planning?
               </h2>
               <p className="home-section-sub">
-                From beach-hopping to highland trekking — Vietnam has it all.
+                From beach-hopping to highland trekking - Vietnam has it all.
               </p>
             </div>
             <Link href="/experiences" className="home-section-link">
@@ -158,21 +158,21 @@ export default function Home() {
               <div className="home-why-icon">🎯</div>
               <div className="home-why-title">Practical, not pretty</div>
               <div className="home-why-desc">
-                Real scam alerts, actual prices, honest safety info — not sponsored content dressed up as travel advice.
+                Real scam alerts, actual prices, honest safety info - not sponsored content dressed up as travel advice.
               </div>
             </div>
             <div className="home-why-card">
               <div className="home-why-icon">🔄</div>
               <div className="home-why-title">Up to date info</div>
               <div className="home-why-desc">
-                Regularly updated guides with current prices, recent scam alerts, and the latest travel conditions — not outdated blog posts from years ago.
+                Regularly updated guides with current prices, recent scam alerts, and the latest travel conditions - not outdated blog posts from years ago.
               </div>
             </div>
             <div className="home-why-card">
               <div className="home-why-icon">🏝️</div>
               <div className="home-why-title">Local knowledge</div>
               <div className="home-why-desc">
-                Written by someone from the Mekong Delta — not a travel blogger passing through for a week.
+                Written by someone from the Mekong Delta - not a travel blogger passing through for a week.
               </div>
             </div>
           </div>

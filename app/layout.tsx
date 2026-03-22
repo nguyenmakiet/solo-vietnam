@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Solo in Vietnam — Travel Guides for Solo Travelers",
+  title: "Solo in Vietnam - Travel Guides for Solo Travelers",
   description:
     "Practical travel guides for solo travelers in Vietnam. Safety tips, scam alerts, transport guides, and local insights.",
   icons: {

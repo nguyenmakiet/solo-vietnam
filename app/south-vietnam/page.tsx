@@ -19,7 +19,7 @@ export default function RegionPage() {
   const region = regions.south
   const { label, emoji, color, tagline, description, destinations } = region
 
-  // Filter provinces từ data có sẵn — không hardcode lại
+  // Filter provinces từ data có sẵn - không hardcode lại
   const regionProvinces = provinces.filter(p => p.region === "south")
 
   return (
@@ -121,7 +121,7 @@ export default function RegionPage() {
           </div>
         </section>
 
-        {/* Provinces — filter trực tiếp từ provinces.ts */}
+        {/* Provinces - filter trực tiếp từ provinces.ts */}
         <section>
           <div className="flex items-center gap-3 mb-8">
             <h2 className="text-2xl font-bold text-[#1C1C1A]"
@@ -158,7 +158,7 @@ export default function RegionPage() {
             <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
               Browse 100+ locations
             </h2>
-            <p className="text-[#A09880] mt-2 text-sm">Filter by experience — beaches, trekking, caves, food, and more.</p>
+            <p className="text-[#A09880] mt-2 text-sm">Filter by experience - beaches, trekking, caves, food, and more.</p>
           </div>
           <Link href="/map"
             className="shrink-0 text-[#1C1C1A] font-semibold text-sm px-7 py-3.5 rounded-full transition-colors"
