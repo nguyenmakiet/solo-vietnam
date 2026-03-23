@@ -10,6 +10,7 @@ export const dragonBridge: Location = {
   lng: "108.22810029126948",
   address: "Cầu Rồng, Hải Châu, Đà Nẵng",
   type: "attraction",
+  categories: [],
   experiences: ["photography", "walking-tour", "nightlife"],
   tags: ["🐉 Fire-Breathing Dragon", "📸 Photography", "🌉 Icon of Đà Nẵng", "🔥 Weekend Show"],
   bestTime: "Year-round; fire show every Saturday and Sunday night at 9 PM",

@@ -10,6 +10,7 @@ export const pongourWaterfall: Location = {
   lng: "108.26593322679962",
   address: "Tân Hội, Đức Trọng, Lâm Đồng",
   type: "waterfall",
+  categories: [],
   experiences: ["photography", "trekking", "walking-tour"],
   tags: ["💧 Widest Waterfall in Da Lat", "📸 Photography", "🌿 Nature", "🎉 Full Moon Festival"],
   bestTime: "Jul – Oct (rainy season, maximum water flow); Jan for full moon festival",

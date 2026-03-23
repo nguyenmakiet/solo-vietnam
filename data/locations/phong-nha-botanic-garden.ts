@@ -10,6 +10,7 @@ export const phongNhaBotanicGarden: Location = {
   lng: "106.30196116431941",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["nature", "forest"],
+  categories: [],
   experiences: ["trekking", "wildlife", "photography", "cycling"],
   tags: ["🌿 Jungle Trails", "🦋 Wildlife", "🚲 Cycling", "📸 Photography"],
   bestTime: "Feb – Aug (dry season, trails accessible; wildlife most active early morning)",

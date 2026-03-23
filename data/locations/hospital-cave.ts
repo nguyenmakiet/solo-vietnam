@@ -10,6 +10,7 @@ export const hospitalCave: Location = {
   lng: "107.02138423927063",
   address: "Cát Bà, Hải Phòng",
   type: ["cave", "history"],
+  categories: [],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏥 Viet Cong Underground Hospital", "📖 Vietnam War History", "🪨 Limestone Cave", "📸 Photography"],
   bestTime: "Year-round (cave interior is climate-controlled by the limestone)",

@@ -10,6 +10,7 @@ export const caiRangFloatingMarket: Location = {
   lng: "105.74627948543848",
   address: "Cái Răng, Cần Thơ",
   type: ["market", "cultural"],
+  categories: [],
   experiences: ["boat-tour", "food", "markets", "photography", "culture"],
   tags: ["🛶 Floating Market", "🌅 Dawn Market", "📸 Photography", "🍜 Local Food"],
   bestTime: "Nov – Apr (dry season); market most active 5:00–8:00 AM year-round",

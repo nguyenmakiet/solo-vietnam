@@ -10,6 +10,7 @@ export const frenchVillageBaNa: Location = {
   lng: "107.98932655723252",
   address: "Bà Nà Hills, Hoà Ninh, Hoà Vang, Đà Nẵng",
   type: "attraction",
+  categories: [],
   experiences: ["photography", "walking-tour", "food"],
   tags: ["🏰 French Colonial Architecture", "🎡 Fantasy Park", "🍷 Mountain Winery", "📸 Photography"],
   bestTime: "Mar – Aug (dry season, clearest skies, best for outdoor photography)",

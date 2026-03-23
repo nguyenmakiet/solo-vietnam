@@ -10,6 +10,7 @@ export const vinpearlSafari: Location = {
   lng: "103.89206976788087",
   address: "Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["attraction", "nature"],
+  categories: [],
   experiences: ["wildlife", "photography", "walking-tour"],
   tags: ["🦁 Open Safari", "🦒 African Animals", "📸 Wildlife Photography", "🚌 Safari Bus"],
   bestTime: "Nov – Apr (dry season, animals most active in cooler temperatures)",

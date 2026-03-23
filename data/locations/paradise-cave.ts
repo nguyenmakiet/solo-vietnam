@@ -10,6 +10,7 @@ export const paradiseCave: Location = {
   lng: "106.22333853972053",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["nature","cave"],
+  categories: [],
   experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 Largest Dry Cave in Asia", "📸 Photography", "🥾 Boardwalk", "✨ Formations"],
   bestTime: "Feb – Aug (dry season; most stable conditions)",

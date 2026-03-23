@@ -10,6 +10,7 @@ export const honMunIsland: Location = {
   lng: "109.30185373625723",
   address: "Hòn Mun, Vịnh Nha Trang, Khánh Hòa",
   type: ["island", "nature"],
+  categories: [],
   experiences: ["snorkeling", "diving", "photography", "boat-tour"],
   tags: ["🤿 Best Diving in Nha Trang", "🐠 Coral Reef", "🏝️ Marine Reserve", "🚢 Boat Tour"],
   bestTime: "Feb – Sep (dry season, best visibility for diving and snorkeling)",

@@ -10,6 +10,7 @@ export const myKheBeach: Location = {
   lng: "108.24813952737027",
   address: "Mỹ Khê, Sơn Trà, Đà Nẵng",
   type: "beach",
+  categories: [],
   experiences: ["beach", "swimming", "surfing", "photography"],
   tags: ["🏖️ Forbes Top 6 Beach", "🌊 Swimming", "🏄 Surfing", "🌅 Sunrise"],
   bestTime: "Mar – Aug (dry season, calm water, minimal rain)",

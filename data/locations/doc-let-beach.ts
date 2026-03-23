@@ -10,6 +10,7 @@ export const docLetBeach: Location = {
   lng: "109.22816933280315",
   address: "Ninh Hải, Ninh Hoà, Khánh Hoà",
   type: "beach",
+  categories: [],
   experiences: ["beach", "swimming", "photography", "cycling"],
   tags: ["🏖️ White Sand, Turquoise Water", "🌊 Calm Bay", "📸 Photography", "🚗 Day Trip from Nha Trang"],
   bestTime: "Feb – Aug (dry season, calmest water)",

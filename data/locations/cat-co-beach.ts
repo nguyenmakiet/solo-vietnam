@@ -10,6 +10,7 @@ export const catCoBeach: Location = {
   lng: "107.05221565965415",
   address: "Cát Cò, Cát Bà, Hải Phòng",
   type: "beach",
+  categories: [],
   experiences: ["beach", "swimming", "photography"],
   tags: ["🏖️ Cát Bà's Main Beach", "🌊 Swimming", "📸 Photography", "🌅 Sunset"],
   bestTime: "May – Sep (swimming season; water warm, conditions calm)",

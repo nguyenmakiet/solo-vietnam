@@ -10,6 +10,7 @@ export const elephantWaterfall: Location = {
   lng: "108.33847133316729",
   address: "Lát, Lạc Dương, Lâm Đồng",
   type: "waterfall",
+  categories: [],
   experiences: ["trekking", "photography"],
   tags: ["🐘 Elephant Rock Formation", "💧 Powerful Cascade", "🥾 Cave Walk Behind Falls", "📸 Photography"],
   bestTime: "Jun – Oct (rainy season, full power); accessible year-round",

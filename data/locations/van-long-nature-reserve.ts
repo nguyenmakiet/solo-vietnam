@@ -10,6 +10,7 @@ export const vanLongNatureReserve: Location = {
   lng: "105.88325487973674",
   address: "Gia Vân, Gia Viễn, Ninh Bình",
   type: ["nature", "river"],
+  categories: [],
   experiences: ["boat-tour", "wildlife", "photography", "kayaking"],
   tags: ["🦒 Delacour's Langur", "🚣 Rowing Boat", "📸 Photography", "🌿 Wetland Reserve"],
   bestTime: "Oct – Apr (dry season, lowest water, best wildlife visibility)",

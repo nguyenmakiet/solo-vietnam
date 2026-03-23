@@ -10,6 +10,7 @@ export const muiNeFishingVillage: Location = {
   lng: "108.2795665776806",
   address: "Mũi Né, Phan Thiết, Bình Thuận",
   type: ["cultural", "attraction"],
+  categories: [],
   experiences: ["photography", "culture", "food"],
   tags: ["🎣 Fishing Village", "🌅 Sunrise", "📸 Photography", "🦐 Seafood"],
   bestTime: "Nov – Apr (dry season); early morning any time of year for the fish market",

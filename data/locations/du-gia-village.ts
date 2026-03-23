@@ -10,6 +10,7 @@ export const duGiaVillage: Location = {
   lng: "105.22274726498522",
   address: "Du Già, Yên Minh, Hà Giang",
   type: ["cultural", "nature"],
+  categories: [],
   experiences: ["homestay", "trekking", "culture", "photography", "cycling"],
   tags: ["🏡 Tày Homestay", "🌊 River Valley", "🥾 Trekking", "📸 Photography"],
   bestTime: "Sep – Nov (golden rice season, clearest skies) or Mar – Apr",

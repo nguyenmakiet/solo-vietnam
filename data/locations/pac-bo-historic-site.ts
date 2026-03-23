@@ -10,6 +10,7 @@ export const pacBoHistoricSite: Location = {
   lng: "106.05087511003386",
   address: "Trường Hà, Hà Quảng, Cao Bằng",
   type: ["history", "nature"],
+  categories: [],
   experiences: ["history", "culture", "trekking", "photography"],
   tags: ["🏛️ Hồ Chí Minh Revolutionary Base", "📖 Vietnam History", "🌿 Jungle Caves", "📸 Photography"],
   bestTime: "Mar – Nov (accessible year-round; spring and autumn for clearest skies)",

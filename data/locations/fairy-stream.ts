@@ -10,6 +10,7 @@ export const fairyStream: Location = {
   lng: "108.25941870282894",
   address: "Suối Tiên, Mũi Né, Phan Thiết, Bình Thuận",
   type: ["nature", "river"],
+  categories: [],
   experiences: ["walking-tour", "photography"],
   tags: ["🏞️ Wading Stream", "🔴 Red Canyon Walls", "📸 Photography", "🚶 Barefoot Walk"],
   bestTime: "Nov – Apr (dry season; stream is shallow and clear)",

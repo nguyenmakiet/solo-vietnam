@@ -10,6 +10,7 @@ export const phiaOacNationalPark: Location = {
   lng: "105.88001443215182",
   address: "Thông Nông, Nguyên Bình, Cao Bằng",
   type: ["forest", "nature"],
+  categories: [],
   experiences: ["trekking", "wildlife", "photography", "camping", "homestay"],
   tags: ["🏔️ 1,931m Summit", "🦜 Endemic Birds", "🌿 Primary Forest", "🥾 Trekking"],
   bestTime: "Oct – Apr (dry season; summit views clearest Oct – Dec)",

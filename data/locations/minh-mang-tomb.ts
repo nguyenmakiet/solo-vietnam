@@ -10,6 +10,7 @@ export const minhMangTomb: Location = {
   lng: "107.57082605265036",
   address: "An Bằng, Hương Thọ, Hương Trà, Thừa Thiên Huế",
   type: ["tomb", "heritage"],
+  categories: [],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["👑 Most Architecturally Grand Tomb", "🌊 Lake & Pavilion Gardens", "📸 Photography", "🏛️ Nguyễn Dynasty"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, comfortable temperatures)",

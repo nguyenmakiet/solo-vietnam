@@ -10,6 +10,7 @@ export const nguomPucCave: Location = {
   lng: "",
   address: "Hà Quảng, Cao Bằng",
   type: ["cave", "nature"],
+  categories: [],
   experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 Limestone Cave", "📸 Photography", "🌊 Underground Stream", "🥾 Jungle Approach"],
   bestTime: "Feb – Aug (dry season, lower underground water levels)",

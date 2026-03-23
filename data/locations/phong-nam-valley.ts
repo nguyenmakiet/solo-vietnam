@@ -10,6 +10,7 @@ export const phongNamValley: Location = {
   lng: "106.5175241941528",
   address: "Phong Nậm, Trùng Khánh, Cao Bằng",
   type: "nature",
+  categories: [],
   experiences: ["photography", "cycling", "culture", "wildlife"],
   tags: ["📸 Photography", "🌾 Buckwheat Fields", "🚲 Cycling", "🎎 Tày Villages"],
   bestTime: "Oct – Nov (buckwheat blooms pink and white across the valley floor)",

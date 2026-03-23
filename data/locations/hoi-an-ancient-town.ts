@@ -10,6 +10,7 @@ export const hoiAnAncientTown: Location = {
   lng: "108.32649087704544",
   address: "Minh An, Hội An, Quảng Nam",
   type: "town",
+  categories: [],
   experiences: ["culture", "history", "food", "markets", "walking-tour", "photography", "nightlife"],
   tags: ["🏮 Lantern Town", "🎑 UNESCO Heritage", "🍜 Street Food", "📸 Photography"],
   bestTime: "Feb – Apr (dry season, Tết lantern season in Feb) or Oct – Nov",

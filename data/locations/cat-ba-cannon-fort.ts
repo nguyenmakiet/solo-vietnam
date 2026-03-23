@@ -10,6 +10,7 @@ export const catBaCannonFort: Location = {
   lng: "107.05415352678563",
   address: "Cát Bà, Hải Phòng",
   type: ["history", "nature"],
+  categories: [],
   experiences: ["history", "photography", "trekking"],
   tags: ["💣 WWII Cannon Fort", "📸 Panoramic Views", "🏔️ Hilltop", "📖 History"],
   bestTime: "Year-round; clearest views Oct – Apr",

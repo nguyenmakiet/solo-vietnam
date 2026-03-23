@@ -10,6 +10,7 @@ export const thangHenLake: Location = {
   lng: "106.29375946526802",
   address: "Quốc Toản, Trà Lĩnh, Cao Bằng",
   type: ["lake", "nature"],
+  categories: [],
   experiences: ["photography", "trekking", "kayaking", "wildlife", "camping"],
   tags: ["💙 Turquoise Mountain Lake", "📸 Photography", "🏔️ Karst Plateau", "🦅 Wildlife"],
   bestTime: "Sep – Nov (post-rainy season, highest water level, most vivid colour)",

@@ -10,6 +10,7 @@ export const hangEn: Location = {
   lng: "106.1436802588683",
   address: "Tân Trạch, Bố Trạch, Quảng Bình",
   type: ["nature", "cave"],
+  categories: [],
   experiences: ["caving", "trekking", "camping", "photography", "wildlife"],
   tags: ["🦅 World's 3rd Largest Cave", "🏕️ Camp Inside the Cave", "🥾 2-Day Trek", "🌊 Underground River"],
   bestTime: "Dec – Sep (closed Oct – Nov during rainy season)",

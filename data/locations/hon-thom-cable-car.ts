@@ -10,6 +10,7 @@ export const honThomCableCar: Location = {
   lng: "104.0046602,858",
   address: "An Thới, Phú Quốc, Kiên Giang",
   type: "attraction",
+  categories: [],
   experiences: ["cable-car", "beach", "swimming", "photography"],
   tags: ["🚡 Cable Car", "🏝️ Island", "🌊 Sea View", "🎢 Theme Park"],
   bestTime: "Nov – Apr (clear skies, calm sea)",

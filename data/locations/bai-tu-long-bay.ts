@@ -10,6 +10,7 @@ export const baiTuLongBay: Location = {
   lng: "107.2457308779769",
   address: "Vịnh Bái Tử Long, Vân Đồn, Quảng Ninh",
   type: "island",
+  categories: [],
   experiences: ["kayaking", "boat-tour", "photography", "trekking"],
   tags: ["🌊 Off the Beaten Path", "🛶 Kayaking", "🏖️ Isolated Beaches", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clear skies, fewer boats, calm water)",

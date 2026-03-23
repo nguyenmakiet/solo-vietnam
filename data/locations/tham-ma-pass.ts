@@ -10,6 +10,7 @@ export const thamMaPass: Location = {
   lng: "105.19445930795216",
   address: "Thẩm Mã, Đồng Văn, Hà Giang",
   type: ["mountain", "nature"],
+  categories: [],
   experiences: ["photography", "trekking", "cycling", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "📸 Photography", "🌾 Rice Terraces"],
   bestTime: "Sep – Nov (golden terraces) or Mar – Apr (spring flowers)",

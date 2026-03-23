@@ -10,6 +10,7 @@ export const nhatBeach: Location = {
   lng: "106.6014777488132",
   address: "Đường Bến Đầm, Côn Đảo, Bà Rịa – Vũng Tàu",
   type: ["beach", "nature"],
+  categories: [],
   experiences: ["beach", "snorkeling", "photography", "wildlife"],
   tags: ["🌅 Best Sunset on Côn Đảo", "🪨 Tidal Rock Formations", "🌊 Tide-Dependent Beach", "🏆 Top 6 Wild Beaches in Asia"],
   bestTime: "Mar – Sep (dry season; best tidal conditions)",

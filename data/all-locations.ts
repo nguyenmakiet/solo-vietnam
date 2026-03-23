@@ -2,14 +2,17 @@ import { Location } from "@/data/location"
 
 import { amTienCave } from "@/data/locations/am-tien-cave"
 import { anBangBeach } from "@/data/locations/an-bang-beach"
+import { bacSonValley } from "@/data/locations/bac-son-valley"
 import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
 import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
 import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
+import { baiMonBeach } from "@/data/locations/bai-mon-beach"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
 import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
 import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
+import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mountains"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
 import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
@@ -40,6 +43,7 @@ import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village
 import { hamTienBeach } from "@/data/locations/ham-tien-beach"
 import { hangEn } from "@/data/locations/hang-en"
 import { hangMua } from "@/data/locations/hang-mua"
+import { hangRai } from "@/data/locations/hang-rai"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
 import { honMunIsland } from "@/data/locations/hon-mun-island"
 import { honTamIsland } from "@/data/locations/hon-tam-island"
@@ -49,10 +53,13 @@ import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
 import { hospitalCave } from "@/data/locations/hospital-cave"
 import { imperialCity } from "@/data/locations/imperial-city-hue"
 import { japaneseBridge } from "@/data/locations/japanese-bridge"
+import { k50Waterfall } from "@/data/locations/k50-waterfall"
 import { khaiDinhTomb } from "@/data/locations/khai-dinh-tomb"
 import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { khemBeach } from "@/data/locations/khem-beach"
+import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { lanHaBay } from "@/data/locations/lan-ha-bay"
+import { laNgauStream } from "@/data/locations/la-ngau-stream"
 import { langbiangMountain } from "@/data/locations/langbiang-mountain"
 import { linhPhuocPagoda } from "@/data/locations/linh-phuoc-pagoda"
 import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
@@ -61,6 +68,7 @@ import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
 import { moocSpring } from "@/data/locations/mooc-spring"
+import { muiDien } from "@/data/locations/mui-dien"
 import { muiNeFishingVillage } from "@/data/locations/mui-ne-fishing-village"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
@@ -85,7 +93,9 @@ import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { tamCoc } from "@/data/locations/tam-coc"
+import { taDungLake } from "@/data/locations/ta-dung-lake"
 import { taVanVillage } from "@/data/locations/ta-van-village"
+import { taXuaMountain } from "@/data/locations/ta-xua-mountain"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
 import { thangHenLake } from "@/data/locations/thang-hen-lake"
 import { thienMuPagoda } from "@/data/locations/thien-mu-pagoda"
@@ -108,14 +118,17 @@ import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
 export const allLocations: Location[] = [
   amTienCave,
   anBangBeach,
+  bacSonValley,
   baHoWaterfall,
   baNaCableCar,
   baiDinhPagoda,
+  baiMonBeach,
   baiTuLongBay,
   banGiocWaterfall,
   bayMauCoconutForest,
   benTreCoconutVillage,
   bichDongPagoda,
+  binhLieuBorderMountains,
   caiRangFloatingMarket,
   catBaCannonFort,
   catBaNationalPark,
@@ -146,6 +159,7 @@ export const allLocations: Location[] = [
   hamTienBeach,
   hangEn,
   hangMua,
+  hangRai,
   hoiAnAncientTown,
   honMunIsland,
   honTamIsland,
@@ -155,10 +169,13 @@ export const allLocations: Location[] = [
   hospitalCave,
   imperialCity,
   japaneseBridge,
+  k50Waterfall,
   khaiDinhTomb,
   khauCocChaPass,
   khemBeach,
+  kheVanWaterfall,
   lanHaBay,
+  laNgauStream,
   langbiangMountain,
   linhPhuocPagoda,
   loLoChaiVillage,
@@ -167,6 +184,7 @@ export const allLocations: Location[] = [
   maPiLengPass,
   minhMangTomb,
   moocSpring,
+  muiDien,
   muiNeFishingVillage,
   muongHoaValley,
   myKheBeach,
@@ -190,8 +208,10 @@ export const allLocations: Location[] = [
   sonDoongCave,
   sonTraPeninsula,
   sungSotCave,
+  taDungLake,
   tamCoc,
   taVanVillage,
+  taXuaMountain,
   thamMaPass,
   thangHenLake,
   thienMuPagoda,

@@ -10,6 +10,7 @@ export const lanHaBay: Location = {
   lng: "107.05945027622396",
   address: "Cát Bà, Hải Phòng",
   type: ["bay", "nature"],
+  categories: [],
   experiences: ["kayaking", "boat-tour", "swimming", "photography", "snorkeling"],
   tags: ["🛶 Kayaking", "🌊 Cleaner than Ha Long", "🏖️ Hidden Beaches", "📸 Photography"],
   bestTime: "Apr – Jun or Sep – Nov (calm water, best visibility, fewest boats)",

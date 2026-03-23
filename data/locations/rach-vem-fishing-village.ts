@@ -10,6 +10,7 @@ export const rachVemFishingVillage: Location = {
   lng: "103.93341470835864",
   address: "Rạch Vẹm, Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["cultural", "nature"],
+  categories: [],
   experiences: ["culture", "photography", "food", "walking-tour", "boat-tour"],
   tags: ["🦑 Starfish Beach", "🎣 Fishing Village", "📸 Photography", "🌊 Mangroves"],
   bestTime: "Nov – Apr (dry season, calm water, best starfish visibility)",

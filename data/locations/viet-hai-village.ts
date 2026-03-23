@@ -10,6 +10,7 @@ export const vietHaiVillage: Location = {
   lng: "107.05828009939815",
   address: "Việt Hải, Cát Bà, Hải Phòng",
   type: ["cultural", "nature"],
+  categories: [],
   experiences: ["cycling", "culture", "photography", "homestay", "kayaking"],
   tags: ["🚲 Cycling Through Jungle", "🏡 Isolated Village", "📸 Photography", "🛶 Kayak Access"],
   bestTime: "Oct – May (dry season; jungle path is less slippery and the village rice fields are most photogenic)",

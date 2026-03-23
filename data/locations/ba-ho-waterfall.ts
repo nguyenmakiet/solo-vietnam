@@ -10,6 +10,7 @@ export const baHoWaterfall: Location = {
   lng: "109.13860165627212",
   address: "Phú Hữu, Ninh Ích, Ninh Hoà, Khánh Hoà",
   type: "waterfall",
+  categories: [],
   experiences: ["trekking", "swimming", "photography", "wildlife"],
   tags: ["💧 Three Pools Waterfall", "🏊 Natural Swimming", "🥾 Jungle Trek", "📸 Photography"],
   bestTime: "Feb – Aug (dry season, water level ideal for swimming; wet season increases flow but some pools flood)",

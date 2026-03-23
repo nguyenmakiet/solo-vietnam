@@ -10,6 +10,7 @@ export const sixSensesBeach: Location = {
   lng: "106.63442958678696",
   address: "Đất Thầy, Côn Đảo, Bà Rịa - Vũng Tàu",
   type: "beach",
+  categories: [],
   experiences: ["beach", "swimming", "snorkeling", "photography"],
   tags: ["🏖️ Most Beautiful Beach in Con Dao", "🌊 Pristine Water", "📸 Photography", "🐠 Snorkeling"],
   bestTime: "Mar – Sep (dry season, calm water, clearest visibility)",

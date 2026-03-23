@@ -10,6 +10,7 @@ export const duGiaWaterfall: Location = {
   lng: "105.1988164932612",
   address: "Du Già, Yên Minh, Hà Giang",
   type: "waterfall",
+  categories: [],
   experiences: ["trekking", "swimming", "photography"],
   tags: ["💧 Jungle Waterfall", "🏊 Natural Pool", "🥾 River Trek", "📸 Photography"],
   bestTime: "Jun – Oct (highest water flow); Sep – Oct for combination of flow and clear weather",

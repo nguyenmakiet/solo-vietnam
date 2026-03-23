@@ -10,6 +10,7 @@ export const saoBeach: Location = {
   lng: "104°02'12.3\"E",
   address: "Bãi Sao, An Thới, Phú Quốc, Kiên Giang",
   type: "beach",
+  categories: [],
   experiences: ["beach", "swimming", "photography"],
   tags: ["🏖️ Beach", "🤿 Snorkeling", "🦞 Seafood", "🌊 Clear Water"],
   bestTime: "Nov – Apr (dry season, calm water)",

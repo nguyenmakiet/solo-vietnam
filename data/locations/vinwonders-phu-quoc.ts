@@ -10,6 +10,7 @@ export const vinWondersPhuQuoc: Location = {
   lng: "103.8546052948659",
   address: "Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang",
   type: "attraction",
+  categories: [],
   experiences: ["cable-car", "beach", "photography", "walking-tour"],
   tags: ["🎡 Theme Park", "🚡 Over-Sea Cable Car", "🏖️ Private Beach", "🎠 Family Activities"],
   bestTime: "Nov – Apr (dry season, best weather for outdoor areas)",

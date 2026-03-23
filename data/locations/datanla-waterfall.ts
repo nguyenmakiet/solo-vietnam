@@ -10,6 +10,7 @@ export const datanlaWaterfall: Location = {
   lng: "108.44969026368697",
   address: "Đường 3 Tháng 4, Đà Lạt, Lâm Đồng",
   type: "waterfall",
+  categories: [],
   experiences: ["photography", "walking-tour", "trekking"],
   tags: ["💧 Multi-Tier Waterfall", "🎢 Alpine Coaster", "📸 Photography", "🌿 Forest Walk"],
   bestTime: "Jun – Oct (rainy season - maximum water flow and most dramatic falls)",

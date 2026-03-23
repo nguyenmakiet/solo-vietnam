@@ -10,6 +10,7 @@ export const bayMauCoconutForest: Location = {
   lng: "108.37267755516427",
   address: "Cẩm Thanh, Hội An, Quảng Nam",
   type: ["nature", "river"],
+  categories: [],
   experiences: ["boat-tour", "culture", "photography", "kayaking"],
   tags: ["🛶 Basket Boat", "🥥 Water Coconut Forest", "📸 Photography", "🎶 Local Performance"],
   bestTime: "Year-round; dry season (Mar – Aug) for calmest water",

@@ -10,6 +10,7 @@ export const quanBaTwinMountains: Location = {
   lng: "105.00120271105881",
   address: "Quản Bạ, Hà Giang",
   type: ["mountain", "nature"],
+  categories: [],
   experiences: ["photography", "trekking", "motorcycling", "culture"],
   tags: ["🏔️ Núi Đôi", "📸 Ha Giang Icon", "🌾 Rice Terraces", "🏍️ Loop Landmark"],
   bestTime: "Sep – Nov (rice harvest, cloud inversions) or Mar – May (green terraces)",

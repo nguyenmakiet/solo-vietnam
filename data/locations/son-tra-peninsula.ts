@@ -10,6 +10,7 @@ export const sonTraPeninsula: Location = {
   lng: "108.27692670069526",
   address: "Sơn Trà, Đà Nẵng",
   type: "nature",
+  categories: [],
   experiences: ["wildlife", "photography", "trekking", "motorcycling", "beach"],
   tags: ["🐒 Red-Shanked Douc Langur", "🌿 Nature Reserve", "🏍️ Scenic Drive", "📸 Photography"],
   bestTime: "Mar – Aug (dry season, clear roads, best wildlife sightings in early morning)",

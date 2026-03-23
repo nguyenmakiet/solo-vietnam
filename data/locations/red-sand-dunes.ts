@@ -10,6 +10,7 @@ export const redSandDunes: Location = {
   lng: "108.29650702647355",
   address: "Mũi Né, Phan Thiết, Bình Thuận",
   type: ["nature", "attraction"],
+  categories: [],
   experiences: ["photography", "walking-tour"],
   tags: ["🔴 Red Iron-Oxide Dunes", "🌅 Sunset Views", "📸 Photography", "🚶 Walking"],
   bestTime: "Nov – Apr (dry season); sunset visits year-round",

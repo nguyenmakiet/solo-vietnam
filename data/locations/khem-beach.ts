@@ -10,6 +10,7 @@ export const khemBeach: Location = {
   lng: "104.0308698,92",
   address: "An Thới, Phú Quốc, Kiên Giang",
   type: "beach",
+  categories: [],
   experiences: ["beach", "swimming", "photography"],
   tags: ["🏖️ Beach", "🌊 Clear Water", "🌅 Sunset", "🏨 Resort"],
   bestTime: "Nov – Apr (dry season, calm water)",

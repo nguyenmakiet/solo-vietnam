@@ -10,6 +10,7 @@ export const khauCocChaPass: Location = {
   lng: "105.78388981658192",
   address: "Nguyên Bình, Cao Bằng",
   type: ["nature", "mountain"],
+  categories: [],
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🏍️ Mountain Pass", "📸 Panoramic Views", "🌫️ Cloud Forest", "🏔️ Highland Road"],
   bestTime: "Oct – Dec (post-rainy season, clearest views, dramatic cloud inversions)",

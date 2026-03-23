@@ -10,6 +10,7 @@ export const muongHoaValley: Location = {
   lng: "103.87703660862965",
   address: "Hậu Thào – Tả Van – Lao Chải, Sa Pa, Lào Cai",
   type: "nature",
+  categories: [],
   experiences: ["trekking", "photography", "culture", "homestay"],
   tags: ["🌾 Rice Terraces", "🥾 Trekking", "📸 Photography", "🏡 Homestay"],
   bestTime: "Sep – Oct (golden harvest) or May – Jun (green planting season)",

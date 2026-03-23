@@ -10,6 +10,7 @@ export const tuDucTomb: Location = {
   lng: "107.5670752256665",
   address: "Dương Xuân Thượng, Hương Thọ, Hương Trà, Thừa Thiên Huế",
   type: ["tomb", "heritage"],
+  categories: [],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🌿 Garden Tomb", "📖 Poet Emperor", "📸 Photography", "🏡 Pavilion & Lake"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, garden at its best)",

@@ -10,6 +10,7 @@ export const yenMinhPineForest: Location = {
   lng: "105.05474637426761",
   address: "Yên Minh, Hà Giang",
   type: ["forest", "nature"],
+  categories: [],
   experiences: ["photography", "motorcycling", "trekking", "camping"],
   tags: ["🌲 Highland Pine Forest", "🌫️ Morning Mist", "📸 Photography", "🏍️ Scenic Road"],
   bestTime: "Oct – Dec (mist season, golden pine light in late afternoon) or Mar – Apr",

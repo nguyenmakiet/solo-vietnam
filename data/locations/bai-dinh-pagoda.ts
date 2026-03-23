@@ -10,6 +10,7 @@ export const baiDinhPagoda: Location = {
   lng: "105.85603779913747",
   address: "Gia Sinh, Gia Viễn, Ninh Bình",
   type: ["pagoda", "heritage"],
+  categories: [],
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["⛩️ Largest Pagoda in Vietnam", "🏯 500 Arhat Statues", "📸 Photography", "🔔 Giant Bell"],
   bestTime: "Oct – Apr (dry season); avoid Tết and major Buddhist festivals (extremely crowded)",

@@ -10,6 +10,7 @@ export const hamTienBeach: Location = {
   lng: "108.24921385544317",
   address: "Hàm Tiến, Phan Thiết, Bình Thuận",
   type: ["beach", "nature"],
+  categories: [],
   experiences: ["beach", "photography"],
   tags: ["🏖️ Beach", "🌊 Waves", "🏄 Surfing", "📸 Photography"],
   bestTime: "Nov – Apr (dry season, calm seas, best visibility)",

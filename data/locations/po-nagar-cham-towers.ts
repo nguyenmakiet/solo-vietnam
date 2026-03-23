@@ -10,6 +10,7 @@ export const poNagarChamTowers: Location = {
   lng: "109.19565099450733",
   address: "2 Tháng 4, Vĩnh Phước, Nha Trang, Khánh Hòa",
   type: ["temple", "heritage"],
+  categories: [],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏯 Cham Towers", "⛩️ Active Hindu Temple", "📸 Photography", "🏛️ 8th Century"],
   bestTime: "Year-round; coolest and least humid Jan – Apr",

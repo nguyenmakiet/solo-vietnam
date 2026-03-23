@@ -10,6 +10,7 @@ export const banGiocWaterfall: Location = {
   lng: "106.72438321761962",
   address: "Đàm Thủy, Trùng Khánh, Cao Bằng",
   type: "nature",
+  categories: [],
   experiences: ["photography", "boat-tour", "trekking", "wildlife"],
   tags: ["💧 Largest Waterfall in SEA", "📸 Photography", "🛶 Bamboo Raft", "🌿 Nature"],
   bestTime: "Sep – Oct (peak water flow, lush greenery after rainy season)",

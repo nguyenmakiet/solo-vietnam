@@ -10,6 +10,7 @@ export const langbiangMountain: Location = {
   lng: "108.44188630307653",
   address: "Lạc Dương, Lâm Đồng",
   type: "mountain",
+  categories: [],
   experiences: ["trekking", "photography", "wildlife", "camping"],
   tags: ["🏔️ Highest Peak near Đà Lạt", "🥾 Trekking", "📸 Sunrise Views", "🌿 K'Ho Culture"],
   bestTime: "Nov – Apr (dry season, clearest summit views; sunrise trekking year-round)",

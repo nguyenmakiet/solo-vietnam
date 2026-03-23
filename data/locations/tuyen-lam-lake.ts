@@ -10,6 +10,7 @@ export const tuyenLamLake: Location = {
   lng: "108.43143048972007",
   address: "Tuyền Lâm, Đà Lạt, Lâm Đồng",
   type: ["nature", "lake"],
+  categories: [],
   experiences: ["kayaking", "cycling", "photography", "walking-tour", "boat-tour"],
   tags: ["🚣 Kayaking", "🌲 Pine Forest", "📸 Photography", "🚲 Cycling"],
   bestTime: "Nov – Apr (dry season, mist on the water in the morning)",

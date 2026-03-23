@@ -10,6 +10,7 @@ export const haLongBay: Location = {
   lng: "106.99130992781454",
   address: "Vịnh Hạ Long, Quảng Ninh",
   type: "nature",
+  categories: [],
   experiences: ["boat-tour", "kayaking", "caving", "photography", "swimming"],
   tags: ["🌊 UNESCO World Heritage", "🚢 Overnight Cruise", "🪨 Karst Landscape", "📸 Photography"],
   bestTime: "Sep – Nov (clear skies, calm water, best visibility) or Mar – Apr",

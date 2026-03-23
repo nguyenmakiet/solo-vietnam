@@ -10,6 +10,7 @@ export const benTreCoconutVillage: Location = {
   lng: "106.36046151034951",
   address: "Bến Tre, Đồng Khởi, Bến Tre",
   type: ["cultural", "nature"],
+  categories: [],
   experiences: ["cycling", "boat-tour", "food", "culture", "photography", "homestay"],
   tags: ["🥥 Coconut Capital of Vietnam", "🚲 Cycling", "🛶 Canal Boats", "🏡 Homestay"],
   bestTime: "Nov – Apr (dry season, easier cycling, lower water levels in canals)",

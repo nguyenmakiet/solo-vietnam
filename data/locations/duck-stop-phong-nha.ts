@@ -10,6 +10,7 @@ export const duckStopPhongNha: Location = {
   lng: "106.36632612569426",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["attraction", "town"],
+  categories: [],
   experiences: ["food", "nightlife", "culture", "walking-tour"],
   tags: ["🍺 Traveller Bar", "🌅 Sunset River Views", "🍜 Local Food", "🎵 Live Music"],
   bestTime: "Year-round; evenings only",

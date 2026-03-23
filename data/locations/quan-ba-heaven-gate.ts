@@ -10,6 +10,7 @@ export const quanBaHeavenGate: Location = {
   lng: "104.99321363748844",
   address: "Quản Bạ, Hà Giang",
   type: ["nature", "mountain"],
+  categories: [],
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🌄 Ha Giang Loop Gateway", "📸 Panoramic Views", "🏍️ First Major Pass", "☁️ Cloud Valley"],
   bestTime: "Sep – Nov (golden rice, cloud inversions in valley below) or Mar – Apr",

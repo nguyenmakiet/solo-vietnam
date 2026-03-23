@@ -10,6 +10,7 @@ export const loLoChaiVillage: Location = {
   lng: "105.31069880257382",
   address: "Lô Lô Chải, Lũng Cú, Đồng Văn, Hà Giang",
   type: "cultural",
+  categories: [],
   experiences: ["culture", "homestay", "photography", "walking-tour"],
   tags: ["🎎 Ethnic Culture", "📸 Photography", "🏡 Homestay", "🌾 Village Life"],
   bestTime: "Sep – Nov or Mar – Apr (clear skies, festivals)",

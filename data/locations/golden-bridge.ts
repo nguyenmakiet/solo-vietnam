@@ -10,6 +10,7 @@ export const goldenBridge: Location = {
   lng: "107.996595959818",
   address: "Bà Nà Hills, Hoà Ninh, Hoà Vang, Đà Nẵng",
   type: "attraction",
+  categories: [],
   experiences: ["photography", "walking-tour"],
   tags: ["🌉 Giant Stone Hands", "📸 Most Photographed in Vietnam", "☁️ Above the Clouds", "🌅 Panoramic Views"],
   bestTime: "Mar – Aug (clearest views; avoid Nov – Jan when fog can obscure the hands)",

@@ -10,6 +10,7 @@ export const trungTrangCave: Location = {
   lng: "106.99832793371839",
   address: "Cát Bà National Park, Hải Phòng",
   type: ["cave", "nature"],
+  categories: [],
   experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 Largest Cave on Cát Bà", "📸 Photography", "🦇 Bat Colony", "🥾 National Park"],
   bestTime: "Apr – Oct (dry season, trail accessible; cave open year-round)",

@@ -55,6 +55,8 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         history: "amber",
       }
 
+export type LocationCategory = "hidden-gem" | "must-see" | "iconic"
+
 export type Location = {
   slug: string
   name: string
@@ -64,6 +66,7 @@ export type Location = {
   lng: number | string
   address: string
   type: LocationType | LocationType[]
+  categories?: LocationCategory[]
   experiences: string[]
   tags: string[]
   entranceFee?: string

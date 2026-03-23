@@ -10,6 +10,7 @@ export const amTienCave: Location = {
   lng: "105.91444612825703",
   address: "Trường Yên, Hoa Lư, Ninh Bình",
   type: ["cave", "nature"],
+  categories: [],
   experiences: ["trekking", "caving", "photography", "history"],
   tags: ["🪨 Hidden Cave", "🥾 Karst Climb", "📸 Photography", "🦇 Bat Colony"],
   bestTime: "Oct – Apr (dry season, trail accessible; avoid rainy season when path is slippery)",

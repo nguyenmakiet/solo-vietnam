@@ -10,6 +10,7 @@ export const traQueVillage: Location = {
   lng: "108.33718030263948",
   address: "Trà Quế, Cẩm Hà, Hội An, Quảng Nam",
   type: ["town", "cultural"],
+  categories: [],
   experiences: ["culture", "food", "cycling", "photography", "walking-tour"],
   tags: ["🌿 Herb Village", "👨‍🍳 Cooking Class", "🚲 Cycling", "📸 Photography"],
   bestTime: "Feb – Apr or Sep – Nov (cool and dry, herbs at their most fragrant)",
