@@ -9,7 +9,7 @@ export const thungKhePass: Location = {
   lat: "20.659973197100356",
   lng: "105.14358253798274",
   address: "Huyện Mai Châu / Tân Lạc, Hòa Bình - Quốc lộ 6",
-  type: ["motorcycling", "nature", "landmark"],
+  type: ["mountain", "nature"],
   categories: [],
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🏔️ 1,000m White Limestone Pass", "🌄 Mai Chau Valley Views", "🛵 Hanoi–Mai Chau Route", "🌽 Roadside Market"],

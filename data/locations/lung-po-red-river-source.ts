@@ -9,7 +9,7 @@ export const lungPo: Location = {
   lat: "22.79305606355363",
   lng: "103.64781973074007",
   address: "Thôn Lũng Pô, Xã A Mú Sung, Huyện Bát Xát, Lào Cai",
-  type: ["landmark", "nature", "cultural"],
+  type: ["nature", "cultural"],
   categories: [],
   experiences: ["photography", "culture", "history", "motorcycling"],
   tags: ["🔴 Red River Entry Point", "🇻🇳 Border Marker 92", "🏴 31m Flagpole", "🌸 Kapok Season (March)"],

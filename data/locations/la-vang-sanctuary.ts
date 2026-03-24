@@ -9,7 +9,7 @@ export const laVangSanctuary: Location = {
   lat: "16.706975257885",
   lng: "107.19547985549681",
   address: "Thị trấn Hải Phú, Huyện Hải Lăng, Quảng Trị",
-  type: ["temple", "cultural", "landmark"],
+  type: ["temple", "cultural"],
   categories: [],
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["⛪ National Marian Shrine", "🕊️ 1798 Apparition Site", "🏛️ Minor Basilica", "🌿 Vietnam's Lourdes"],

@@ -9,7 +9,7 @@ export const saViCape: Location = {
   lat: "21.492220115088482",
   lng: "108.06734019742865",
   address: "Phường Trà Cổ, Móng Cái, Quảng Ninh",
-  type: ["landmark", "beach", "cultural"],
+  type: ["beach", "cultural"],
   categories: [],
   experiences: ["photography", "culture", "history"],
   tags: ["🇻🇳 Northeast Tip of Vietnam", "🌅 First Sunrise in the North", "📍 Border Marker", "🏖️ Tra Co Beach"],
