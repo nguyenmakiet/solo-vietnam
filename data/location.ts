@@ -19,7 +19,8 @@ export type LocationType =
   | "tomb"
   | "citadel"
   | "heritage"
-  | "history" // thêm dòng này
+  | "history"
+  | "landmark"
 
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
@@ -53,6 +54,7 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         tomb: "purple",
         citadel: "purple",
         history: "amber",
+        landmark: "purple",
       }
 
 export type LocationCategory = "hidden-gem" | "must-see" | "iconic"
