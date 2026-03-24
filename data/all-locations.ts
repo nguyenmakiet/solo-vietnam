@@ -61,10 +61,12 @@ import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { lanHaBay } from "@/data/locations/lan-ha-bay"
 import { laNgauStream } from "@/data/locations/la-ngau-stream"
 import { langbiangMountain } from "@/data/locations/langbiang-mountain"
+import { laVangSanctuary } from "@/data/locations/la-vang-sanctuary"
 import { linhPhuocPagoda } from "@/data/locations/linh-phuoc-pagoda"
 import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
 import { longSonPagoda } from "@/data/locations/long-son-pagoda"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
+import { lungPo } from "@/data/locations/lung-po-red-river-source"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
 import { moocSpring } from "@/data/locations/mooc-spring"
@@ -73,6 +75,7 @@ import { muiNeFishingVillage } from "@/data/locations/mui-ne-fishing-village"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
+import { nhanTower } from "@/data/locations/nhan-tower"
 import { nhatBeach } from "@/data/locations/nhat-beach"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
 import { pacBoHistoricSite } from "@/data/locations/pac-bo-historic-site"
@@ -88,6 +91,7 @@ import { quanBaTwinMountains } from "@/data/locations/quan-ba-twin-mountains"
 import { rachVemFishingVillage } from "@/data/locations/rach-vem-fishing-village"
 import { redSandDunes } from "@/data/locations/red-sand-dunes"
 import { saoBeach } from "@/data/locations/sao-beach"
+import { saViCape } from "@/data/locations/sa-vi-cape"
 import { sixSensesBeach } from "@/data/locations/six-senses-beach"
 import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
@@ -99,6 +103,7 @@ import { taXuaMountain } from "@/data/locations/ta-xua-mountain"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
 import { thangHenLake } from "@/data/locations/thang-hen-lake"
 import { thienMuPagoda } from "@/data/locations/thien-mu-pagoda"
+import { thungKhePass } from "@/data/locations/thung-khe-pass"
 import { thungNhamBirdPark } from "@/data/locations/thung-nham-bird-park"
 import { tiTopIsland } from "@/data/locations/ti-top-island"
 import { traQueVillage } from "@/data/locations/tra-que-village"
@@ -113,6 +118,7 @@ import { vinpearlSafari } from "@/data/locations/vinpearl-safari"
 import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
+import { yTy } from "@/data/locations/y-ty"
 
 // ── Add new locations here ────────────────────────────────────────────────────
 export const allLocations: Location[] = [
@@ -177,10 +183,12 @@ export const allLocations: Location[] = [
   lanHaBay,
   laNgauStream,
   langbiangMountain,
+  laVangSanctuary,
   linhPhuocPagoda,
   loLoChaiVillage,
   longSonPagoda,
   lungCuFlagTower,
+  lungPo,
   maPiLengPass,
   minhMangTomb,
   moocSpring,
@@ -189,6 +197,7 @@ export const allLocations: Location[] = [
   muongHoaValley,
   myKheBeach,
   nguomNgaoCave,
+  nhanTower,
   nhatBeach,
   nhoQueRiver,
   pacBoHistoricSite,
@@ -204,6 +213,7 @@ export const allLocations: Location[] = [
   rachVemFishingVillage,
   redSandDunes,
   saoBeach,
+  saViCape,
   sixSensesBeach,
   sonDoongCave,
   sonTraPeninsula,
@@ -215,6 +225,7 @@ export const allLocations: Location[] = [
   thamMaPass,
   thangHenLake,
   thienMuPagoda,
+  thungKhePass,
   thungNhamBirdPark,
   tiTopIsland,
   traQueVillage,
@@ -229,4 +240,5 @@ export const allLocations: Location[] = [
   vinWondersPhuQuoc,
   whiteSandDunes,
   yenMinhPineForest,
+  yTy,
 ]
