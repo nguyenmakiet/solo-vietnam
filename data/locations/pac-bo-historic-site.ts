@@ -16,7 +16,7 @@ export const pacBoHistoricSite: Location = {
   bestTime: "Mar – Nov (accessible year-round; spring and autumn for clearest skies)",
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.978070844628746,106.05087511003386",
   heroImage: heroUrl("pac-bo-historic-site-hero_placeholder"),
   gallery: [],
   seoDescription:

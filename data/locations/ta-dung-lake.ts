@@ -16,7 +16,7 @@ export const taDungLake: Location = {
   bestTime: "Nov – Apr (dry season, calm water, clear skies)",
   entranceFee: "~50,000 VND (national park entry)",
   openingHours: "6:00 AM – 6:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.85958318658573,107.923086633516",
   heroImage: heroUrl("ta-dung-lake3_jk0xko"),
    gallery: [
     "ta-dung-lake5_qmer1f",

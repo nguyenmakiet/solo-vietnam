@@ -16,7 +16,7 @@ export const duGiaWaterfall: Location = {
   bestTime: "Jun – Oct (highest water flow); Sep – Oct for combination of flow and clear weather",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.92605491197045,105.1988164932612",
   heroImage: heroUrl("du-gia-waterfall-hero_placeholder"),
   gallery: [],
   seoDescription:

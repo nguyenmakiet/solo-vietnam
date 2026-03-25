@@ -16,7 +16,7 @@ export const k50Waterfall: Location = {
   bestTime: "Oct – Dec (post-monsoon peak flow); Mar – May (accessible, lower water)",
   entranceFee: "~50,000 VND (guide fee additional)",
   openingHours: "(guide recommended)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=14.519415223584105,108.60631909493844",
   heroImage: heroUrl("K50-waterfall-gia-lai-6_trcmgr"),
   gallery: [
     "K50-waterfall-gia-lai-5_wiampc",

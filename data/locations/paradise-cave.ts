@@ -16,7 +16,7 @@ export const paradiseCave: Location = {
   bestTime: "Feb – Aug (dry season; most stable conditions)",
   entranceFee: "~250,000 VND + electric buggy ~50,000 VND (optional)",
   openingHours: "7:00 AM – 4:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=17.519727624952477,106.22333853972053",
   heroImage: heroUrl("paradise-cave_eccstr"),
   gallery: ["paradise-cave_eccstr",],
   seoDescription:

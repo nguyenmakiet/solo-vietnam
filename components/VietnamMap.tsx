@@ -3,6 +3,7 @@ import Vietnam from "@svg-maps/vietnam"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 import { provinces } from "@/data/provinces"
+import { allLocations } from "@/data/all-locations"
 
 const PROVINCE_TO_SLUG: Record<string, string> = {
   // NORTH
@@ -182,6 +183,9 @@ export default function VietnamMap() {
           const OFFSET_X = 16
           const OFFSET_Y = 16
           const region = province?.region ?? PROVINCE_REGION[tooltip.name]
+          const provinceLocations = tooltip.slug
+            ? allLocations.filter((l) => l.provinces.includes(tooltip.slug!)).slice(0, 4)
+            : []
 
           return (
             <div
@@ -214,16 +218,21 @@ export default function VietnamMap() {
                     </p>
                   )}
 
-                  {province?.popupDestinations && (
+                  {provinceLocations.length > 0 && (
                     <>
                       <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1.5">
-                        Top Destinations
+                        Top Locations
                       </div>
                       <ul className="space-y-1 mb-2.5">
-                        {province.popupDestinations.slice(0, 4).map((d) => (
-                          <li key={d} className="flex items-center gap-1.5 text-[11px] text-gray-600">
-                            <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0" />
-                            {d}
+                        {provinceLocations.map((l) => (
+                          <li key={l.slug}>
+                            <button
+                              onClick={() => router.push(`/locations/${l.slug}`)}
+                              className="flex items-center gap-1.5 text-[11px] text-gray-600 hover:text-blue-500 transition-colors w-full text-left"
+                            >
+                              <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0" />
+                              {l.name}
+                            </button>
                           </li>
                         ))}
                       </ul>

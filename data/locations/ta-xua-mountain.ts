@@ -16,7 +16,7 @@ export const taXuaMountain: Location = {
   bestTime: "Oct – Jan (dry and cool, moss at its greenest, clearest skies)",
   entranceFee: "Free (guide fee applies)",
   openingHours: "Open 24 hours",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=21.458552357466253,104.34445105702092",
   heroImage: heroUrl("ta-xua-mountai-yen-bai-9_rccz64"),
    gallery: [
     "ta-xua-mountai-yen-bai-2_dsvkk3",

@@ -16,7 +16,7 @@ export const whiteSandDunes: Location = {
   bestTime: "Nov – Apr (dry season; sunrise visits year-round)",
   entranceFee: "~20,000 VND",
   openingHours: "Open 24/7; sunrise tours depart 4:00–4:30 AM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.07112795980011,108.42656899745431",
   heroImage: heroUrl("bau-trang-phan-thiet5_bozfag"),
   gallery: [
     "bau-trang-phan-thiet2_yefxbm",

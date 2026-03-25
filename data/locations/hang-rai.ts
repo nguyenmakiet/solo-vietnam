@@ -16,7 +16,7 @@ export const hangRai: Location = {
   bestTime: "Jan – Aug (dry season, calm seas); avoid Sep – Dec monsoon",
   entranceFee: "Free",
   openingHours: "Open 24 hours (boat access weather-dependent)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.678088681494673,109.18272230833225",
   heroImage: heroUrl("hang-rai-ninh-thuan_ssmgfx"),
   gallery: [
     "hang-rai-ninh-thuan7_hsjamo",

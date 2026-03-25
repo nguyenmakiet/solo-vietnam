@@ -16,7 +16,7 @@ export const catCoBeach: Location = {
   bestTime: "May – Sep (swimming season; water warm, conditions calm)",
   entranceFee: "Free (Cát Cò 1 and Cát Cò 3); ~30,000 VND (Cát Cò 2)",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=20.71792329725481,107.05221565965415",
   heroImage: heroUrl("cat-co-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

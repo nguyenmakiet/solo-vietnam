@@ -21,7 +21,7 @@ export const thoiLoiMountain: Location = {
   bestTime: "Mar - Aug; arrive before sunrise for the best panoramic light over the island",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.382293884994116,109.13179450157818",
   heroImage: heroUrl("thoi-loi-mount-ly-son-island-9_ibzoly"),
   gallery: [
     "thoi-loi-mount-ly-son-island-8_ygwxgq",

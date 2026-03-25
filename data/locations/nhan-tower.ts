@@ -16,7 +16,7 @@ export const nhanTower: Location = {
   bestTime: "Jan – Aug (dry season); Saturday evenings for cultural performances",
   entranceFee: "Free",
   openingHours: "6:30 AM – 10:30 PM daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=13.082464193252497,109.30199511819382",
   heroImage: heroUrl("nhan-tower-phu-yen-7_obmvqr"),
   gallery: [
     "nhan-tower-phu-yen-8_rm9y7n",

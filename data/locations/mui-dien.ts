@@ -16,7 +16,7 @@ export const muiDien: Location = {
   bestTime: "Jan – Aug (clear skies, dry season)",
   entranceFee: "~15,000 VND",
   openingHours: "5:00 AM – 6:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.895123856614404,109.45894759200604",
   heroImage: heroUrl("mui-dien-phu-yen-6_tb15sv"),
   gallery: [
     "mui-dien-phu-yen-3_zc57ho",

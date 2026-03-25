@@ -16,7 +16,7 @@ export const baHoWaterfall: Location = {
   bestTime: "Feb – Aug (dry season, water level ideal for swimming; wet season increases flow but some pools flood)",
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.390044772272377,109.13860165627212",
   heroImage: heroUrl("ba-ho-waterfall-nha-trang_r4z0ha"),
   gallery: [
     "ba-ho-waterfall-nha-trang_r4z0ha",

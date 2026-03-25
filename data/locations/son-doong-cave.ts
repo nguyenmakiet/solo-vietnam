@@ -16,7 +16,7 @@ export const sonDoongCave: Location = {
   bestTime: "Feb – Aug (expedition season; cave closes Sep – Jan)",
   entranceFee: "~$3,000 USD per person (4-day expedition, all-inclusive)",
   openingHours: "Expedition departures: Feb – Aug only",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=17.466399525611973,106.30214901899664",
   heroImage: heroUrl("son-doong-cave2_h7rhbn"),
   gallery: [
     "son-doong-cave6_uo6v0u",

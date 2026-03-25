@@ -16,7 +16,7 @@ export const fairyStream: Location = {
   bestTime: "Nov – Apr (dry season; stream is shallow and clear)",
   entranceFee: "~10,000–20,000 VND (informal collection at entrance)",
   openingHours: "6:00 AM – 6:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.955760120620356,108.25941870282894",
   heroImage: heroUrl("fairy-stream-phan-thiet_jdweht"),
   gallery: [
     "fairy-stream-phan-thiet-4_sl30pr",

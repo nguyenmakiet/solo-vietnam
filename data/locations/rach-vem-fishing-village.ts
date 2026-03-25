@@ -16,7 +16,7 @@ export const rachVemFishingVillage: Location = {
   bestTime: "Nov – Apr (dry season, calm water, best starfish visibility)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.36556980337033,103.93341470835864",
   heroImage: heroUrl("rach-vem-fishing-village-hero_placeholder"),
   gallery: [],
   seoDescription:

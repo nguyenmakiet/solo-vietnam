@@ -16,7 +16,7 @@ export const tuDucTomb: Location = {
   bestTime: "Feb – Apr or Sep – Nov (dry season, garden at its best)",
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.433211195700988,107.5670752256665",
   heroImage: heroUrl("tu-duc-tomb_thnkr9"),
   gallery: [
     "tu-duc-tomb2_rcytlb",

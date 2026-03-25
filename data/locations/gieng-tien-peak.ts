@@ -21,7 +21,7 @@ export const giengTienPeak: Location = {
   bestTime: "Mar - Aug; early morning for clearest views",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.388855661824474,109.10258272120166",
   heroImage: heroUrl("gieng-tien-peak-ly-son-island-4_lbrihd"),
   gallery: [
     "gieng-tien-peak-ly-son-island-8_pzenkq",

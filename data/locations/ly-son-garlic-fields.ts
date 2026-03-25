@@ -21,7 +21,7 @@ export const lySonGarlicFields: Location = {
   bestTime: "Feb - Apr (harvest season - most photogenic when garlic is fully grown); Oct - Nov to see planting",
   entranceFee: "Free",
   openingHours: "Open 24/7 (farming fields - respect crops and stay on paths)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.38142400159663,109.11882432420393",
   heroImage: heroUrl("galic-field-ly-son-island-9_tbedmo"),
   gallery: [
     "galic-field-ly-son-island-5_l5uib5",

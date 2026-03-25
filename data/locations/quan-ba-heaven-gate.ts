@@ -16,7 +16,7 @@ export const quanBaHeavenGate: Location = {
   bestTime: "Sep – Nov (golden rice, cloud inversions in valley below) or Mar – Apr",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=23.04948889805356,104.99321363748844",
   heroImage: heroUrl("quan-ba-ha-giang_dm5mma"),
   gallery: [
     "quan-ba-ha-giang_dm5mma",

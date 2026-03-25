@@ -16,7 +16,7 @@ export const cuaDaiBeach: Location = {
   bestTime: "Mar – Aug (dry season, calm water; avoid Oct – Jan storm season)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.902162713109306,108.35901183162761",
   heroImage: heroUrl("cua-dai-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -16,7 +16,7 @@ export const crazyHouse: Location = {
   bestTime: "Year-round; visit early morning to avoid tour groups",
   entranceFee: "~60,000 VND",
   openingHours: "8:00 AM – 7:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.934822914969137,108.43136784176984",
   heroImage: heroUrl("crazy-house-da-lat_bsys2a"),
   gallery: [
     "crazy-house-da-lat_bsys2a",

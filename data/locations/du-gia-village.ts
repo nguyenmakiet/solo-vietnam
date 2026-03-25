@@ -16,7 +16,7 @@ export const duGiaVillage: Location = {
   bestTime: "Sep – Nov (golden rice season, clearest skies) or Mar – Apr",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.930340238883847,105.22274726498522",
   heroImage: heroUrl("du-gia-village-hero_placeholder"),
   gallery: [],
   seoDescription:

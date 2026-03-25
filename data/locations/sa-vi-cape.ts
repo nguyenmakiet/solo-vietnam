@@ -16,7 +16,7 @@ export const saViCape: Location = {
   bestTime: "Apr – Sep (beach season); any time for the landmark experience",
   entranceFee: "~40,000 VND",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=21.492220115088482,108.06734019742865",
   heroImage: heroUrl("tra-co-cape-quang-ninh-02_hq3cik"),
   gallery: [
     "tra-co-cape-quang-ninh-06_hopd35",

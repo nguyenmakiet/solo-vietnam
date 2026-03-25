@@ -21,7 +21,7 @@ export const toVoGate: Location = {
   bestTime: "May - Aug (dry season, clear water); sunrise and sunset for photography",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.390100951312618,109.09934087255056",
   heroImage: heroUrl("to-vo-gate-ly-son-island-3_ksffdv"),
   gallery: [
     "to-vo-gate-ly-son-island-2_yozruq",

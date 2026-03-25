@@ -16,7 +16,7 @@ export const muiNeFishingVillage: Location = {
   bestTime: "Nov – Apr (dry season); early morning any time of year for the fish market",
   entranceFee: "Free",
   openingHours: "Open 24 hours (fish market most active 5:00 – 8:00 AM)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.94117833027457,108.2795665776806",
   heroImage: heroUrl("fishing-village-mui-ne-phan-thiet3_chsgdb"),
   gallery: [
     "fishing-village-mui-ne-phan-thiet_ceqemb",

@@ -16,7 +16,7 @@ export const thienMuPagoda: Location = {
   bestTime: "Feb – Apr or Sep – Nov (dry season, clear skies for photography)",
   entranceFee: "Free",
   openingHours: "Open daily (monks observe prayer hours; respectful visiting hours: 8 AM – 5 PM)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.453168591703893,107.54519432036955",
   heroImage: heroUrl("thien-mu-pagoda-hue3_weflqk"),
   gallery: [
     "thien-mu-pagoda6_xphnqk",

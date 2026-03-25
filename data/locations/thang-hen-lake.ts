@@ -16,7 +16,7 @@ export const thangHenLake: Location = {
   bestTime: "Sep – Nov (post-rainy season, highest water level, most vivid colour)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.759334520663145,106.29375946526802",
   heroImage: heroUrl("thang-hen-lake-hero_placeholder"),
   gallery: [],
   seoDescription:

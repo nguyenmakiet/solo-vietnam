@@ -16,7 +16,7 @@ export const quanBaTwinMountains: Location = {
   bestTime: "Sep – Nov (rice harvest, cloud inversions) or Mar – May (green terraces)",
   entranceFee: "Free (viewpoints); climbing fee if applicable",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=23.06521535060752,105.00120271105881",
   heroImage: heroUrl("nui-doi-quan-ba-ha-giang_unaeou"),
   gallery: [
     "nui-doi-quan-ba-ha-giang_unaeou",

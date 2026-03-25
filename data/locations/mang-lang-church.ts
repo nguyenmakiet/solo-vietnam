@@ -21,7 +21,7 @@ export const mangLangChurch: Location = {
   bestTime: "Year-round (Phú Yên's dry season is Jan - Aug; avoid Oct - Nov which brings heavy rain and flooding in Tuy An district)",
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM (mass times may restrict visitor access)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=13.334150812882358,109.225819751082",
   heroImage: heroUrl("mang-lang-church-phu-yen-4_cquxgt"),
   gallery: [
     "mang-lang-church-phu-yen_tjbkte",

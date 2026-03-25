@@ -21,7 +21,7 @@ export const hangCauCliffs: Location = {
   bestTime: "Mar - Aug (calm water, good visibility for snorkeling); afternoon when tide is lower",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.388917622220426,109.13405569310561",
   heroImage: heroUrl("hang-cau-ly-son-island-9_jt1s8r"),
   gallery: [
     "hang-cau-ly-son-island-8_bcwriw",

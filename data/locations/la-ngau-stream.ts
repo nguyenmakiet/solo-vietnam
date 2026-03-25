@@ -16,7 +16,7 @@ export const laNgauStream: Location = {
   bestTime: "Nov – Apr (dry season, clear water, accessible trails)",
   entranceFee: "Free",
   openingHours: "Open 24 hours",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.236315974562396,107.78594527850618",
   heroImage: heroUrl("la-ngau-stream-binh-thuan-3_e3ngry"),
   gallery: [
     "la-ngau-stream-binh-thuan-5_maphhp",

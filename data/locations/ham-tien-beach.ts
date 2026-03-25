@@ -16,7 +16,7 @@ export const hamTienBeach: Location = {
   bestTime: "Nov – Apr (dry season, calm seas, best visibility)",
   entranceFee: "Free",
   openingHours: "Open 24 hours",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.951456393863262,108.24921385544317",
   heroImage: heroUrl("ham-tien-beach-phan-thiet_xecj4z"),
   gallery: [
     "ham-tien-beach-phan-thiet_xecj4z",

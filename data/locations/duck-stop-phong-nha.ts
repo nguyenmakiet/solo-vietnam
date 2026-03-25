@@ -16,7 +16,7 @@ export const duckStopPhongNha: Location = {
   bestTime: "Year-round; evenings only",
   entranceFee: "Free",
   openingHours: "4:00 PM – midnight",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=17.604600505245507,106.36632612569426",
   heroImage: heroUrl("duck-stop-phong-nha-hero_placeholder"),
   gallery: [],
   seoDescription:

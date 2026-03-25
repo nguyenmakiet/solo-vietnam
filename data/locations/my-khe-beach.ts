@@ -16,7 +16,7 @@ export const myKheBeach: Location = {
   bestTime: "Mar – Aug (dry season, calm water, minimal rain)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.056869445948998,108.24813952737027",
   heroImage: heroUrl("my-khe-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -21,7 +21,7 @@ export const anHaiCommunalHouse: Location = {
   bestTime: "Year-round; the Khao Lề Thế Lính Hoàng Sa ceremony is held annually in late April",
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.374960915867455,109.12906613305788",
   heroImage: heroUrl("an-hai-village-communial-house-ly-son-island-3_ruuvwy"),
   gallery: [
     "an-hai-village-communial-house-ly-son-island-10_g0n8wz",

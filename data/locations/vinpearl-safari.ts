@@ -16,7 +16,7 @@ export const vinpearlSafari: Location = {
   bestTime: "Nov – Apr (dry season, animals most active in cooler temperatures)",
   entranceFee: "~750,000–1,000,000 VND",
   openingHours: "8:00 AM – 4:30 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.337243228996103,103.89206976788087",
   heroImage: heroUrl("vinpearl-safari-hero_placeholder"),
   gallery: [],
   seoDescription:

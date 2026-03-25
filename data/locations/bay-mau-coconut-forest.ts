@@ -16,7 +16,7 @@ export const bayMauCoconutForest: Location = {
   bestTime: "Year-round; dry season (Mar – Aug) for calmest water",
   entranceFee: "~150,000–250,000 VND (includes basket boat ride)",
   openingHours: "7:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.877556321921798,108.37267755516427",
   heroImage: heroUrl("coconut-forest-hoi-an_rp3l1z"),
   gallery: [
     "coconut-forest-hoi-an2_yxbejh",

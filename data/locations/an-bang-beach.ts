@@ -16,7 +16,7 @@ export const anBangBeach: Location = {
   bestTime: "Mar – Sep (dry season, calm water; avoid Oct – Jan which is storm season)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.913659812360246,108.3404344460877",
   heroImage: heroUrl("an-bang-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

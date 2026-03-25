@@ -16,7 +16,7 @@ export const baNaCableCar: Location = {
   bestTime: "Mar – Aug (clearest visibility; cable car operates year-round)",
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "First departure: 7:30 AM · Last return: 9:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.025928263564783,108.03455022954422",
   heroImage: heroUrl("cable-car-ba-na-hill2_oh8unw"),
   gallery: [
     "cable-car-ba-na-hill_vmlxge",

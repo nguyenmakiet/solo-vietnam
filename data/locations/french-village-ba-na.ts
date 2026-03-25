@@ -16,7 +16,7 @@ export const frenchVillageBaNa: Location = {
   bestTime: "Mar – Aug (dry season, clearest skies, best for outdoor photography)",
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.997655145396397,107.98932655723252",
   heroImage: heroUrl("french-village-ba-na-hill2_wg42xj"),
   gallery: [
     "french-village-ba-na-hill4_x88wdl",

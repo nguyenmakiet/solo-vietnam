@@ -16,7 +16,7 @@ export const lanHaBay: Location = {
   bestTime: "Apr – Jun or Sep – Nov (calm water, best visibility, fewest boats)",
   entranceFee: "Included in kayak/boat tour (~350,000–600,000 VND/person)",
   openingHours: "Tours depart from Cát Bà town daily from 8:00 AM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=20.731973471390784,107.05945027622396",
   heroImage: heroUrl("lan-ha-bay-hai-phong4_lgkwrs"),
   gallery: [
     "lan-ha-bay-hai-phong2_pcid4b",

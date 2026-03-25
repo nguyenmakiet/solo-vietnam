@@ -16,7 +16,7 @@ export const binhLieuBorderMountains: Location = {
   bestTime: "Oct – Nov (reed flowers in bloom); Sep for golden rice terraces",
   entranceFee: "Free",
   openingHours: "Open 24 hours",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=21.64893803864023,107.44002584112907",
   heroImage: heroUrl("binh-lieu-quang-ninh-2_s8xai8"),
   gallery: [
     "binh-lieu-quang-ninh_eddysb",

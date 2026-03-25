@@ -16,7 +16,7 @@ export const conDaoPrison: Location = {
   bestTime: "Year-round; cooler and less humid Nov – Apr",
   entranceFee: "~40,000 VND (covers multiple prison buildings)",
   openingHours: "7:30 AM – 11:30 AM · 1:30 PM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=8.689294969079059,106.6153057028259",
   heroImage: heroUrl("con-dao-prison_mumzpe"),
   gallery: [
     "con-dao-prison2_raad3d",

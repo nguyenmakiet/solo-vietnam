@@ -16,7 +16,7 @@ export const dragonBridge: Location = {
   bestTime: "Year-round; fire show every Saturday and Sunday night at 9 PM",
   entranceFee: "Free",
   openingHours: "Open 24/7; fire and water show: Sat & Sun 9:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.06124852539428,108.22810029126948",
   heroImage: heroUrl("dragon-bridge-hero_placeholder"),
   gallery: [],
   seoDescription:

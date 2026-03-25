@@ -16,7 +16,7 @@ export const phiaOacNationalPark: Location = {
   bestTime: "Oct – Apr (dry season; summit views clearest Oct – Dec)",
   entranceFee: "~30,000 VND; guided trek: ~300,000–500,000 VND",
   openingHours: "Park office: 7:00 AM – 5:00 PM; trekking by arrangement",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.572409555073637,105.88001443215182",
   heroImage: heroUrl("phia-oac-national-park-hero_placeholder"),
   gallery: [],
   seoDescription:

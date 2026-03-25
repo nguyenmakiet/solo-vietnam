@@ -16,7 +16,7 @@ export const bacSonValley: Location = {
   bestTime: "Sep – Oct (golden rice harvest); Mar – Apr (bright green paddies)",
   entranceFee: "Free",
   openingHours: "Open 24 hours",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=21.898614655260356,106.33466895888493",
   heroImage: heroUrl("bac-son-valley-lang-son-2_ieic8m"),
     gallery: [
     "bac-son-valley-lang-son-6_yey42h",

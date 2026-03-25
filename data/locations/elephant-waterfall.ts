@@ -16,7 +16,7 @@ export const elephantWaterfall: Location = {
   bestTime: "Jun – Oct (rainy season, full power); accessible year-round",
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.823680791959426,108.33847133316729",
   heroImage: heroUrl("elephant-waterfall-da-lat4_wa67dn"),
   gallery: [
     "elephant-water-fall-da-lat_izmdcz",

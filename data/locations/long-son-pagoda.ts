@@ -16,7 +16,7 @@ export const longSonPagoda: Location = {
   bestTime: "Year-round; early morning for quietest atmosphere",
   entranceFee: "Free",
   openingHours: "8:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.250327071591599,109.18072246606026",
   heroImage: heroUrl("long-son-pagoda-nha-trang2_hacas1"),
   gallery: [
     "long-son-pagoda-5_w7a6rb",

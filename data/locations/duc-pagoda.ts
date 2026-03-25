@@ -21,7 +21,7 @@ export const ducPagoda: Location = {
   bestTime: "Year-round; morning for cooler temperatures on the climb",
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.38906217491256,109.10196741829073",
   heroImage: heroUrl("duc-pagoda-ly-son-island-5_usxytn"),
   gallery: [
     "duc-pagoda-ly-son-island-4_psnhm0",

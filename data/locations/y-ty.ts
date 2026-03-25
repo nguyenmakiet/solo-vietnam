@@ -16,7 +16,7 @@ export const yTy: Location = {
   bestTime: "Sep – Nov (golden rice + clouds); Dec – May (cloud hunting season)",
   entranceFee: "Free (guide ~1,000,000 VND for Lảo Thẩn trek)",
   openingHours: "Open; overnight permit required for foreigners",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.657362311112333,103.61233893234572",
   heroImage: heroUrl("y-ty-lao-cai-2_sanikk"),
   gallery: [
     "y-ty-lao-cai_jsgesc",

@@ -16,7 +16,7 @@ export const caiRangFloatingMarket: Location = {
   bestTime: "Nov – Apr (dry season); market most active 5:00–8:00 AM year-round",
   entranceFee: "Free; boat hire: ~100,000–200,000 VND/hour",
   openingHours: "4:00 AM – 9:00 AM (most active 5:00–7:00 AM)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.005150042253042,105.74627948543848",
   heroImage: heroUrl("cai-rang-float-market-can-tho3_wfd0gk"),
   gallery: [
     "cai-rang-float-market-can-tho_bpesez",

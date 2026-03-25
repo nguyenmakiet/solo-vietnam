@@ -16,7 +16,7 @@ export const khauCocChaPass: Location = {
   bestTime: "Oct – Dec (post-rainy season, clearest views, dramatic cloud inversions)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.926557070752953,105.78388981658192",
   heroImage: heroUrl("khau-coc-cha-pass-hero_placeholder"),
   gallery: [],
   seoDescription:

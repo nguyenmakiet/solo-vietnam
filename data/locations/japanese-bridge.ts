@@ -16,7 +16,7 @@ export const japaneseBridge: Location = {
   bestTime: "Feb – Apr or Oct – Nov (dry season, golden hour light is exceptional)",
   entranceFee: "Included in Hội An Old Town ticket (~120,000 VND)",
   openingHours: "Open daily; best visited early morning or after 5 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.877113853056763,108.32614848011536",
   heroImage: heroUrl("japanese-bridge-quang-nam2_yrhdb8"),
   gallery: [
     "japanese-bridge-quang-nam4_zt5jyi",

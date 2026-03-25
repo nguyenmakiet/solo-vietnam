@@ -16,7 +16,7 @@ export const docLetBeach: Location = {
   bestTime: "Feb – Aug (dry season, calmest water)",
   entranceFee: "~30,000–50,000 VND (some beach sections charge separately)",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.550209286631508,109.22816933280315",
   heroImage: heroUrl("doc-let-beach-nha-trang_sryoek"),
   gallery: [
     "doc-let-beach-nha-trang_sryoek",

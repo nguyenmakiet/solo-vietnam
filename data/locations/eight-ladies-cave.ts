@@ -16,7 +16,7 @@ export const eightLadiesCave: Location = {
   bestTime: "Feb – Aug (dry season, trails accessible)",
   entranceFee: "Free (guided trek required: ~200,000–300,000 VND)",
   openingHours: "By guided trek only; departs morning",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=17.502701222486007,106.26089697322949",
   heroImage: heroUrl("eight-ladies-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

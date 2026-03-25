@@ -16,7 +16,7 @@ export const yenMinhPineForest: Location = {
   bestTime: "Oct – Dec (mist season, golden pine light in late afternoon) or Mar – Apr",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=23.16731453372523,105.05474637426761",
   heroImage: heroUrl("yen-minh-pine-forest-2_wbqzzc"),
   gallery: [
     "yen-minh-pine-forest3_xhxkgc",

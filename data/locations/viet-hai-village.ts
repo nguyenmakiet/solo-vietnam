@@ -16,7 +16,7 @@ export const vietHaiVillage: Location = {
   bestTime: "Oct – May (dry season; jungle path is less slippery and the village rice fields are most photogenic)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=20.787857336300597,107.05828009939815",
   heroImage: heroUrl("viet-hai-village-hero_placeholder"),
   gallery: [],
   seoDescription:

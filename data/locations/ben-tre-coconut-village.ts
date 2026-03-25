@@ -16,7 +16,7 @@ export const benTreCoconutVillage: Location = {
   bestTime: "Nov – Apr (dry season, easier cycling, lower water levels in canals)",
   entranceFee: "Free; boat tours: ~150,000–250,000 VND",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.335167589686217,106.36046151034951",
   heroImage: heroUrl("coconut-village-ben-tre2_ud4sbr"),
   gallery: [
     "coconut-village-ben-tre_tpvlhz",

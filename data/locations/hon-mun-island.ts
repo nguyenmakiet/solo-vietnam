@@ -16,7 +16,7 @@ export const honMunIsland: Location = {
   bestTime: "Feb – Sep (dry season, best visibility for diving and snorkeling)",
   entranceFee: "~50,000 VND marine park fee; diving tours: 600,000–1,200,000 VND",
   openingHours: "Accessible by boat tour daily; departures 7:30 AM – 8:30 AM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.17068371125258,109.30185373625723",
   heroImage: heroUrl("hon-mun-island-hero_placeholder"),
   gallery: [],
   seoDescription:

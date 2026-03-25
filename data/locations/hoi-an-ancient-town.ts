@@ -16,7 +16,7 @@ export const hoiAnAncientTown: Location = {
   bestTime: "Feb – Apr (dry season, Tết lantern season in Feb) or Oct – Nov",
   entranceFee: "~120,000 VND (covers 5 heritage site entries within the Old Town)",
   openingHours: "Old Town streets: open 24/7; heritage houses: 8:00 AM – 9:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.877003160603328,108.32649087704544",
   heroImage: heroUrl("hoi-an_qxhyjl"),
   gallery: [
     "hoi-an-ancient-town_xjjwic",

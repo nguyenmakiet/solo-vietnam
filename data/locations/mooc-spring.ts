@@ -16,7 +16,7 @@ export const moocSpring: Location = {
   bestTime: "Feb – Aug (dry season, clearest water; avoid Sep – Nov when spring floods)",
   entranceFee: "~80,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=17.556813119452748,106.23884445637982",
   heroImage: heroUrl("mooc-spring-hero_placeholder"),
   gallery: [],
   seoDescription:

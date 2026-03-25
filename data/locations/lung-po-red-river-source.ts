@@ -16,7 +16,7 @@ export const lungPo: Location = {
   bestTime: "Mar (kapok bloom); Sep – Nov (clear skies)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.79305606355363,103.64781973074007",
   heroImage: heroUrl("lung-po-lao-cai-2_y3hp1v"),
   gallery: [
     "lung-po-lao-cai-2_y3hp1v",

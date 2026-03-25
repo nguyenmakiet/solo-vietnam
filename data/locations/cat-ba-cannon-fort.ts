@@ -16,7 +16,7 @@ export const catBaCannonFort: Location = {
   bestTime: "Year-round; clearest views Oct – Apr",
   entranceFee: "~30,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=20.72699791562507,107.05415352678563",
   heroImage: heroUrl("cat-ba-cannon-fort-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -16,7 +16,7 @@ export const baiMonBeach: Location = {
   bestTime: "Jan – Aug (dry season, clear skies for sunrise)",
   entranceFee: "~15,000 VND (national park access)",
   openingHours: "5:00 AM – 6:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.896863628194192,109.45109317905293",
   heroImage: heroUrl("mon-beach-phu-yen-3_v3exiu"),
   gallery: [
     "mon-beach-phu-yen-2_zxkngw",

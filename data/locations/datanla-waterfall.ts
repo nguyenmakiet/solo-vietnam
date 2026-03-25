@@ -16,7 +16,7 @@ export const datanlaWaterfall: Location = {
   bestTime: "Jun – Oct (rainy season - maximum water flow and most dramatic falls)",
   entranceFee: "~50,000 VND; alpine coaster: ~70,000 VND one way",
   openingHours: "7:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.898464970455633,108.44969026368697",
   heroImage: heroUrl("datanla_waterfall3_ytizqy"),
   gallery: [
     "datanla_waterfall_p0fwzo",

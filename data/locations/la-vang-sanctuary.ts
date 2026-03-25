@@ -16,7 +16,7 @@ export const laVangSanctuary: Location = {
   bestTime: "Any time; Aug 13–15 (pilgrimage festival - massive crowds, book ahead)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.706975257885,107.19547985549681",
   heroImage: heroUrl("la-vang-sanctuary-2_eanomy"),
   gallery: [
     "la-vang-sanctuary-2_eanomy",

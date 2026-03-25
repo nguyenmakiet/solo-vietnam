@@ -16,7 +16,7 @@ export const sixSensesBeach: Location = {
   bestTime: "Mar – Sep (dry season, calm water, clearest visibility)",
   entranceFee: "Free (beach is public; Six Senses resort area is private)",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=8.701360844209008,106.63442958678696",
   heroImage: heroUrl("six-senses-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

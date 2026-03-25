@@ -16,7 +16,7 @@ export const darkCave: Location = {
   bestTime: "Feb – Aug (dry season, river level stable for kayaking)",
   entranceFee: "~450,000 VND (all activities included)",
   openingHours: "7:30 AM – 4:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=17.574355688827836,106.25458261828979",
   heroImage: heroUrl("dark-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -16,7 +16,7 @@ export const conDaoNationalPark: Location = {
   bestTime: "May – Sep (sea turtle nesting season; dry and calm seas)",
   entranceFee: "~20,000 VND park entry; diving/snorkeling tours: 300,000–600,000 VND",
   openingHours: "Park office: 7:00 AM – 5:00 PM; trails and beaches open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=8.700380477433058,106.59713651574016",
   heroImage: heroUrl("con-dao-national-park-hero_placeholder"),
   gallery: [],
   seoDescription:

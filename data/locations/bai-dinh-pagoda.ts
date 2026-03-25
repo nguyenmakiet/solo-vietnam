@@ -16,7 +16,7 @@ export const baiDinhPagoda: Location = {
   bestTime: "Oct – Apr (dry season); avoid Tết and major Buddhist festivals (extremely crowded)",
   entranceFee: "Free (electric cart: ~50,000 VND optional)",
   openingHours: "7:00 AM – 6:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=20.268192723940388,105.85603779913747",
   heroImage: heroUrl("bai-dinh-pagoda-ninh-binh3_rrhmhr"),
   gallery: [
     "bai-dinh-pagoda-ninh-binh_zegjjm",

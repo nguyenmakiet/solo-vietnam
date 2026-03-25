@@ -16,7 +16,7 @@ export const imperialCity: Location = {
   bestTime: "Feb – Apr or Sep – Nov (dry season, comfortable temperatures)",
   entranceFee: "~200,000 VND (Forbidden Purple City included)",
   openingHours: "7:00 AM – 5:30 PM (last entry 5:00 PM)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.4677616052903,107.57931947854229",
   heroImage: heroUrl("imperial-citadel-hue3_isqtzb"),
   gallery: [
     "imperial-citadel-hue2_mzy6pe",

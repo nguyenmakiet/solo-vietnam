@@ -16,7 +16,7 @@ export const phongNamValley: Location = {
   bestTime: "Oct – Nov (buckwheat blooms pink and white across the valley floor)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.891397448683232,106.5175241941528",
   heroImage: heroUrl("phong-nam-valley_p1bdkx"),
   gallery: [
     "phong-nam-valley2_kof3er",

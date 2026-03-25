@@ -16,7 +16,7 @@ export const khaiDinhTomb: Location = {
   bestTime: "Feb – Apr or Sep – Nov (dry season, best light for photography)",
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.39915933177038,107.59074610662047",
   heroImage: heroUrl("khai-dinh-tomb4_np5pfj"),
   gallery: [
     "khai-dinh-tomb3_epgzyi",

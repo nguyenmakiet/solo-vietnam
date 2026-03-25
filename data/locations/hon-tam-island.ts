@@ -16,7 +16,7 @@ export const honTamIsland: Location = {
   bestTime: "Feb – Sep (dry season, calm water, best visibility)",
   entranceFee: "~200,000–350,000 VND day pass (resort facilities included)",
   openingHours: "8:00 AM – 5:00 PM; boat transfers from Cầu Đá pier",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.177120449066654,109.24323947785186",
   heroImage: heroUrl("hon-tam-island-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -21,7 +21,7 @@ export const ongCopBridge: Location = {
   bestTime: "Jan - Aug (dry season; the bridge floods and is often dismantled Oct - Nov during storm season)",
   entranceFee: "2,000 VND (on foot) / 4,000 VND (motorbike)",
   openingHours: "Open 24/7 (when structurally intact - check locally during Oct - Nov)",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=13.365233794366752,109.24146230185562",
   heroImage: heroUrl("ong-cop-bridge-phu-yen-6_fkad2p"),
   gallery: [
     "ong-cop-bridge-phu-yen-2_h9g0qe",

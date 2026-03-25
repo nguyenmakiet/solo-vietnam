@@ -16,7 +16,7 @@ export const thungKhePass: Location = {
   bestTime: "Sep – Nov (golden rice season); Mar – May (spring clarity)",
   entranceFee: "Free",
   openingHours: "Open; drive in daylight only",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=20.659973197100356,105.14358253798274",
   heroImage: heroUrl("thung-khe-pass-05_ozvmui"),
   gallery: [
     "thung-khe-pass-06_y5sd27",
