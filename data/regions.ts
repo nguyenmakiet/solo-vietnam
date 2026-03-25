@@ -57,6 +57,7 @@ export type RegionDestination = {
         { slug: "nha-trang", name: "Nha Trang",         province: "Khanh Hoa",      tagline: "Vietnam's premier beach resort city - diving, snorkeling, and fresh seafood",        tags: ["beach", "nature"],   hasGuide: false },
         { slug: "mui-ne",    name: "Mui Ne",            province: "Binh Thuan",     tagline: "Red and white sand dunes, kite surfing, and dragon fruit as far as you can see",     tags: ["beach", "nature"],   hasGuide: false },
         { slug: "my-son",    name: "My Son Cham Ruins", province: "Quang Nam",      tagline: "Ancient Cham temple complex in a jungle valley - Vietnam's Angkor Wat",              tags: ["history", "culture"],hasGuide: false },
+        { slug: "ly-son",    name: "Lý Sơn",            province: "Quang Ngai",     tagline: "Volcanic craters, black-sand beaches, and Vietnam's garlic island",                   tags: ["island", "beach"],   hasGuide: false },
       ],
     },
   

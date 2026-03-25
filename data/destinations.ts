@@ -857,6 +857,64 @@ export const destinations: Destination[] = [
     lng: 107.5909,
   },
 },
+  {
+  slug: "ly-son",
+  name: "Lý Sơn",
+  province: "Quang Ngai",
+  provinceSlug: "quang-ngai",
+  region: "central",
+
+  description:
+    "Lý Sơn is a volcanic island 15 nautical miles off the coast of Quảng Ngãi - a cluster of ancient craters, black basalt cliffs, and clear turquoise water that remains one of the least developed islands in central Vietnam. Known as the 'Kingdom of Garlic' for the purple garlic grown in volcanic soil that covers much of the island, Lý Sơn also carries a deep historical weight as the home of the Hải Đội Hoàng Sa - the imperial navy unit that for centuries sailed to claim and defend Vietnam's sovereignty over the Hoàng Sa (Paracel) Islands.",
+
+  tagline: "Volcanic craters, black-sand beaches, and Vietnam's garlic island",
+
+  heroImage: heroUrl("ly-son-island_sp5rpm"),
+
+  highlights: [
+    "To Vo Gate",
+    "Mount Thoi Loi",
+    "Gieng Tien Peak",
+    "Hang Cau Cliffs",
+    "An Bình Island",
+    "Duc Pagoda",
+    "Lý Sơn garlic fields",
+    "Hang pagoda",
+    "An Hai Village Communal House",
+    "An Vinh Village Communal House",
+    "Nha Pha Prison Historical Site",
+  ],
+
+  thingsToDo: [
+    "Ride a motorbike around the entire island perimeter - the full loop is under 20km and takes about 2 hours",
+    "Snorkel or dive off Đảo Bé (Little Island) where coral coverage is among the best in central Vietnam",
+    "Climb to the rim of Giếng Tiền and Thiên Ấn craters for panoramic views over the island and sea",
+    "Visit Chùa Hang at low tide when the sea cave entrance is fully accessible",
+    "Eat tỏi Lý Sơn - the island's famous purple garlic is sold everywhere and used in nearly every local dish",
+    "Visit the Hải Đội Hoàng Sa museum to understand the island's role in Vietnam's East Sea history",
+  ],
+
+  tags: ["island", "beach", "snorkeling", "nature", "history", "photography"],
+
+  gettingThere:
+    "Ferry from Sa Kỳ port (Quảng Ngãi city, 30km from center) - high-speed boat takes 30 minutes, slow ferry around 1.5 hours. Boats run daily from around 7 AM; buy tickets at the port or book ahead during peak season (Apr - Aug). Quảng Ngãi city is accessible by train or bus from Đà Nẵng (3 hours) or Quy Nhơn (2 hours).",
+
+  bestTime:
+    "Mar - Aug (calm seas and clear water for snorkeling; garlic harvest in Mar - Apr is the most photogenic time). Avoid Sep - Jan when the island is frequently cut off by storms and many guesthouses close.",
+
+  budgetPerDay: "$25 - $50 USD",
+
+  recommendedStay: "3 - 4 days",
+
+  transport: "Motorbike rental on the island (around 150,000 VND/day) - the only practical way to explore; bicycle is possible but the crater climbs are steep",
+
+  nearbyDestinations: [],
+
+  coordinates: {
+    lat: 15.379399154755141, 
+    lng: 109.09594185704997,
+  },
+}
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {
