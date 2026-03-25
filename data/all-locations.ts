@@ -68,6 +68,7 @@ import { longSonPagoda } from "@/data/locations/long-son-pagoda"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { lungPo } from "@/data/locations/lung-po-red-river-source"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
+import { mangLangChurch } from "@/data/locations/mang-lang-church"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
 import { moocSpring } from "@/data/locations/mooc-spring"
 import { muiDien } from "@/data/locations/mui-dien"
@@ -75,6 +76,7 @@ import { muiNeFishingVillage } from "@/data/locations/mui-ne-fishing-village"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
+import { ongCopBridge } from "@/data/locations/ong-cop-bridge"
 import { nhanTower } from "@/data/locations/nhan-tower"
 import { nhatBeach } from "@/data/locations/nhat-beach"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
@@ -190,6 +192,7 @@ export const allLocations: Location[] = [
   lungCuFlagTower,
   lungPo,
   maPiLengPass,
+  mangLangChurch,
   minhMangTomb,
   moocSpring,
   muiDien,
@@ -197,6 +200,7 @@ export const allLocations: Location[] = [
   muongHoaValley,
   myKheBeach,
   nguomNgaoCave,
+  ongCopBridge,
   nhanTower,
   nhatBeach,
   nhoQueRiver,
