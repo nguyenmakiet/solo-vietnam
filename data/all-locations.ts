@@ -12,12 +12,14 @@ import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
 import { baiMonBeach } from "@/data/locations/bai-mon-beach"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
 import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
+import { bauSau } from "@/data/locations/bau-sau"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
 import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
 import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mountains"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
+import { capeCaNa } from "@/data/locations/cape-ca-na"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
 import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
@@ -69,6 +71,7 @@ import { khaiDinhTomb } from "@/data/locations/khai-dinh-tomb"
 import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { khemBeach } from "@/data/locations/khem-beach"
+import { kyCoBeach } from "@/data/locations/ky-co-beach"
 import { laNgauStream } from "@/data/locations/la-ngau-stream"
 import { laVangSanctuary } from "@/data/locations/la-vang-sanctuary"
 import { lanHaBay } from "@/data/locations/lan-ha-bay"
@@ -94,6 +97,7 @@ import { nhanTower } from "@/data/locations/nhan-tower"
 import { nhatBeach } from "@/data/locations/nhat-beach"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
 import { ongCopBridge } from "@/data/locations/ong-cop-bridge"
+import { paSyWaterfall } from "@/data/locations/pa-sy-waterfall"
 import { pacBoHistoricSite } from "@/data/locations/pac-bo-historic-site"
 import { paradiseCave } from "@/data/locations/paradise-cave"
 import { phongNamValley } from "@/data/locations/phong-nam-valley"
@@ -126,6 +130,7 @@ import { thungNhamBirdPark } from "@/data/locations/thung-nham-bird-park"
 import { tiTopIsland } from "@/data/locations/ti-top-island"
 import { toVoGate } from "@/data/locations/to-vo-gate"
 import { traQueVillage } from "@/data/locations/tra-que-village"
+import { traSuCajuputForest } from "@/data/locations/tra-su-cajuput-forest"
 import { trangAn } from "@/data/locations/trang-an"
 import { trungTrangCave } from "@/data/locations/trung-trang-cave"
 import { tuDucTomb } from "@/data/locations/tu-duc-tomb"
@@ -138,6 +143,7 @@ import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { yTy } from "@/data/locations/y-ty"
 import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
+import { yenTuMountain } from "@/data/locations/yen-tu-mountain"
 
 // ── Add new locations here ────────────────────────────────────────────────────
 export const allLocations: Location[] = [
@@ -153,12 +159,14 @@ export const allLocations: Location[] = [
   baiMonBeach,
   baiTuLongBay,
   banGiocWaterfall,
+  bauSau,
   bayMauCoconutForest,
   benTreCoconutVillage,
   bichDongPagoda,
   bidoupNuiBaNationalPark,
   binhLieuBorderMountains,
   caiRangFloatingMarket,
+  capeCaNa,
   catBaCannonFort,
   catBaNationalPark,
   catCatVillage,
@@ -210,6 +218,7 @@ export const allLocations: Location[] = [
   khauCocChaPass,
   kheVanWaterfall,
   khemBeach,
+  kyCoBeach,
   laNgauStream,
   laVangSanctuary,
   lanHaBay,
@@ -235,6 +244,7 @@ export const allLocations: Location[] = [
   nhatBeach,
   nhoQueRiver,
   ongCopBridge,
+  paSyWaterfall,
   pacBoHistoricSite,
   paradiseCave,
   phongNamValley,
@@ -267,6 +277,7 @@ export const allLocations: Location[] = [
   tiTopIsland,
   toVoGate,
   traQueVillage,
+  traSuCajuputForest,
   trangAn,
   trungTrangCave,
   tuDucTomb,
@@ -279,4 +290,5 @@ export const allLocations: Location[] = [
   whiteSandDunes,
   yTy,
   yenMinhPineForest,
+  yenTuMountain,
 ]

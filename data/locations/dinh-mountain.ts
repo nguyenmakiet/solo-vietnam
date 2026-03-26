@@ -11,7 +11,7 @@ export const dinhMountain: Location = {
   address: "Mỹ Xuân, Tân Thành, Bà Rịa – Vũng Tàu",
   type: ["mountain", "nature", "temple"],
   categories: [],
-  experiences: ["trekking", "photography", "culture"],
+  experiences: ["trekking", "photography", "culture", "camping"],
   tags: ["⛰️ Coastal Peak", "🥾 Summit Trek", "🛕 Summit Pagoda", "🌅 Sea Views"],
   bestTime: "Nov – Apr (dry season; wet season trails are slippery and visibility from the summit is poor)",
   entranceFee: "Free",
