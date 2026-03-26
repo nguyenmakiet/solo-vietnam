@@ -33,6 +33,7 @@ import { dalatRailwayStation } from "@/data/locations/dalat-railway-station"
 import { damTrauBeach } from "@/data/locations/dam-trau-beach"
 import { darkCave } from "@/data/locations/dark-cave"
 import { datanlaWaterfall } from "@/data/locations/datanla-waterfall"
+import { diepSonIsland } from "@/data/locations/diep-son-island"
 import { dinhMountain } from "@/data/locations/dinh-mountain"
 import { docLetBeach } from "@/data/locations/doc-let-beach"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
@@ -180,6 +181,7 @@ export const allLocations: Location[] = [
   damTrauBeach,
   darkCave,
   datanlaWaterfall,
+  diepSonIsland,
   dinhMountain,
   docLetBeach,
   dongVanOldTown,
