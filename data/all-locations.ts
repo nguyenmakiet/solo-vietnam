@@ -15,12 +15,14 @@ import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
 import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
+import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
 import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mountains"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
 import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
 import { catCoBeach } from "@/data/locations/cat-co-beach"
+import { chuaChanMountain } from "@/data/locations/chua-chan-mountain"
 import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
@@ -29,6 +31,7 @@ import { dalatRailwayStation } from "@/data/locations/dalat-railway-station"
 import { damTrauBeach } from "@/data/locations/dam-trau-beach"
 import { darkCave } from "@/data/locations/dark-cave"
 import { datanlaWaterfall } from "@/data/locations/datanla-waterfall"
+import { dinhMountain } from "@/data/locations/dinh-mountain"
 import { docLetBeach } from "@/data/locations/doc-let-beach"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
 import { dragonBridge } from "@/data/locations/dragon-bridge"
@@ -54,6 +57,7 @@ import { hangRai } from "@/data/locations/hang-rai"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
 import { hoaLuAncientCapital } from "@/data/locations/hoa-lu-ancient-capital"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
+import { honChongRockFormation } from "@/data/locations/hon-chong-rock-formation"
 import { honMunIsland } from "@/data/locations/hon-mun-island"
 import { honTamIsland } from "@/data/locations/hon-tam-island"
 import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
@@ -83,6 +87,7 @@ import { muiDien } from "@/data/locations/mui-dien"
 import { muiNeFishingVillage } from "@/data/locations/mui-ne-fishing-village"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
+import { mySonSanctuary } from "@/data/locations/my-son-sanctuary"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
 import { nhaPhaPrison } from "@/data/locations/nha-pha-prison"
 import { nhanTower } from "@/data/locations/nhan-tower"
@@ -95,6 +100,7 @@ import { phongNamValley } from "@/data/locations/phong-nam-valley"
 import { phongNhaBotanicGarden } from "@/data/locations/phong-nha-botanic-garden"
 import { phongNhaCave } from "@/data/locations/phong-nha-cave"
 import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
+import { plateRockReef } from "@/data/locations/plate-rock-reef"
 import { poNagarChamTowers } from "@/data/locations/po-nagar-cham-towers"
 import { pongourWaterfall } from "@/data/locations/pongour-waterfall"
 import { quanBaHeavenGate } from "@/data/locations/quan-ba-heaven-gate"
@@ -150,12 +156,14 @@ export const allLocations: Location[] = [
   bayMauCoconutForest,
   benTreCoconutVillage,
   bichDongPagoda,
+  bidoupNuiBaNationalPark,
   binhLieuBorderMountains,
   caiRangFloatingMarket,
   catBaCannonFort,
   catBaNationalPark,
   catCatVillage,
   catCoBeach,
+  chuaChanMountain,
   conDaoNationalPark,
   conDaoPrison,
   crazyHouse,
@@ -164,6 +172,7 @@ export const allLocations: Location[] = [
   damTrauBeach,
   darkCave,
   datanlaWaterfall,
+  dinhMountain,
   docLetBeach,
   dongVanOldTown,
   dragonBridge,
@@ -189,6 +198,7 @@ export const allLocations: Location[] = [
   hoQuocPagoda,
   hoaLuAncientCapital,
   hoiAnAncientTown,
+  honChongRockFormation,
   honMunIsland,
   honTamIsland,
   honThomCableCar,
@@ -218,6 +228,7 @@ export const allLocations: Location[] = [
   muiNeFishingVillage,
   muongHoaValley,
   myKheBeach,
+  mySonSanctuary,
   nguomNgaoCave,
   nhaPhaPrison,
   nhanTower,
@@ -230,6 +241,7 @@ export const allLocations: Location[] = [
   phongNhaBotanicGarden,
   phongNhaCave,
   phuQuocNightMarket,
+  plateRockReef,
   poNagarChamTowers,
   pongourWaterfall,
   quanBaHeavenGate,

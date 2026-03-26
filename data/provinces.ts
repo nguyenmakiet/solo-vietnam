@@ -2317,7 +2317,7 @@ export const provinces: Province[] = [
     heroImage: heroUrl("nghe-an_tlkdye"),
     name: "Nghệ An",
     region: "central",
-    description: "Nghệ An is Vietnam's largest province and the birthplace of Hồ Chí Minh - a fact that infuses the province with a particular pride and political significance. Beyond the pilgrimage to Kim Liên village, Nghệ An contains the spectacular Pù Mát National Park on the Laos border, the Nậm Cắn highland pass, and a fierce culinary identity built around tương Nam Đàn fermented soybean paste. The Nghệ accent is famously the strongest in Vietnam - and Nghệ people are famously the most proud of it.",
+    description: "Nghệ An is one of Vietnam’s most underrated provinces. Stretching from wild mountains along the Laos border to quiet fishing villages on the coast, it offers a raw and authentic slice of the country. Most travelers come to visit Kim Liên – the birthplace of Hồ Chí Minh – but those who explore further will find the dense jungles of Pù Mát National Park, winding highland passes, and a bold local cuisine famous for tương Nam Đàn fermented soybean paste.",
     capital: "Vinh",
     knownFor: "Hồ Chí Minh birthplace, Pù Mát National Park, tương Nam Đàn",
     bestTime: "Feb – Aug (dry season on this stretch of central coast)",
