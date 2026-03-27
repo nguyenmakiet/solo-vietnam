@@ -5,7 +5,7 @@ export const traSuCajuputForest: Location = {
   slug: "tra-su-cajuput-forest",
   name: "Trà Sư Cajuput Forest",
   provinces: ["an-giang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: "10.584555814623155",
   lng: "105.05977775517107",
   address: "Văn Giáo, Tịnh Biên, An Giang",

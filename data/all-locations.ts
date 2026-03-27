@@ -18,13 +18,16 @@ import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
 import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mountains"
+import { buGiaMapNationalPark } from "@/data/locations/bu-gia-map-national-park"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
 import { capeCaNa } from "@/data/locations/cape-ca-na"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
 import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
 import { catCoBeach } from "@/data/locations/cat-co-beach"
+import { catTienNationalPark } from "@/data/locations/cat-tien-national-park"
 import { chuaChanMountain } from "@/data/locations/chua-chan-mountain"
+import { coThachBeach } from "@/data/locations/co-thach-beach"
 import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
@@ -38,6 +41,7 @@ import { dinhMountain } from "@/data/locations/dinh-mountain"
 import { docLetBeach } from "@/data/locations/doc-let-beach"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
 import { dragonBridge } from "@/data/locations/dragon-bridge"
+import { drayNurDraySapWaterfalls } from "@/data/locations/dray-nur-dray-sap-waterfalls"
 import { duGiaVillage } from "@/data/locations/du-gia-village"
 import { duGiaWaterfall } from "@/data/locations/du-gia-waterfall"
 import { ducPagoda } from "@/data/locations/duc-pagoda"
@@ -65,9 +69,11 @@ import { honMunIsland } from "@/data/locations/hon-mun-island"
 import { honTamIsland } from "@/data/locations/hon-tam-island"
 import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
 import { hospitalCave } from "@/data/locations/hospital-cave"
+import { hungTemple } from "@/data/locations/hung-temple"
 import { imperialCity } from "@/data/locations/imperial-city-hue"
 import { japaneseBridge } from "@/data/locations/japanese-bridge"
 import { k50Waterfall } from "@/data/locations/k50-waterfall"
+import { keGaLighthouse } from "@/data/locations/ke-ga-lighthouse"
 import { khaiDinhTomb } from "@/data/locations/khai-dinh-tomb"
 import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
@@ -85,6 +91,7 @@ import { lungPo } from "@/data/locations/lung-po-red-river-source"
 import { lySonGarlicFields } from "@/data/locations/ly-son-garlic-fields"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { mangLangChurch } from "@/data/locations/mang-lang-church"
+import { minhDamMountain } from "@/data/locations/minh-dam-mountain"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
 import { moocSpring } from "@/data/locations/mooc-spring"
 import { muiDien } from "@/data/locations/mui-dien"
@@ -166,13 +173,16 @@ export const allLocations: Location[] = [
   bichDongPagoda,
   bidoupNuiBaNationalPark,
   binhLieuBorderMountains,
+  buGiaMapNationalPark,
   caiRangFloatingMarket,
   capeCaNa,
   catBaCannonFort,
   catBaNationalPark,
   catCatVillage,
   catCoBeach,
+  catTienNationalPark,
   chuaChanMountain,
+  coThachBeach,
   conDaoNationalPark,
   conDaoPrison,
   crazyHouse,
@@ -186,6 +196,7 @@ export const allLocations: Location[] = [
   docLetBeach,
   dongVanOldTown,
   dragonBridge,
+  drayNurDraySapWaterfalls,
   duGiaVillage,
   duGiaWaterfall,
   ducPagoda,
@@ -213,9 +224,11 @@ export const allLocations: Location[] = [
   honTamIsland,
   honThomCableCar,
   hospitalCave,
+  hungTemple,
   imperialCity,
   japaneseBridge,
   k50Waterfall,
+  keGaLighthouse,
   khaiDinhTomb,
   khauCocChaPass,
   kheVanWaterfall,
@@ -233,6 +246,7 @@ export const allLocations: Location[] = [
   lySonGarlicFields,
   maPiLengPass,
   mangLangChurch,
+  minhDamMountain,
   minhMangTomb,
   moocSpring,
   muiDien,
