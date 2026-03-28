@@ -1,11 +1,13 @@
 import { Location } from "@/data/location"
 
+import { aPaChai } from "@/data/locations/a-pa-chai"
 import { amTienCave } from "@/data/locations/am-tien-cave"
 import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { anBinhIsland } from "@/data/locations/an-binh-island"
 import { anHaiCommunalHouse } from "@/data/locations/an-hai-communal-house"
 import { anVinhCommunalHouse } from "@/data/locations/an-vinh-communal-house"
 import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
+import { baHonDamIslands } from "@/data/locations/ba-hon-dam-islands"
 import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
 import { bacSonValley } from "@/data/locations/bac-son-valley"
 import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
@@ -19,6 +21,8 @@ import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
 import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mountains"
 import { buGiaMapNationalPark } from "@/data/locations/bu-gia-map-national-park"
+import { buiHuiGrassland } from "@/data/locations/bui-hui-grassland"
+import { bungBinhThienLake } from "@/data/locations/bung-binh-thien-lake"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
 import { capeCaNa } from "@/data/locations/cape-ca-na"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
@@ -36,6 +40,7 @@ import { dalatRailwayStation } from "@/data/locations/dalat-railway-station"
 import { damTrauBeach } from "@/data/locations/dam-trau-beach"
 import { darkCave } from "@/data/locations/dark-cave"
 import { datanlaWaterfall } from "@/data/locations/datanla-waterfall"
+import { dauTiengLake } from "@/data/locations/dau-tieng-lake"
 import { diepSonIsland } from "@/data/locations/diep-son-island"
 import { dinhMountain } from "@/data/locations/dinh-mountain"
 import { docLetBeach } from "@/data/locations/doc-let-beach"
@@ -117,6 +122,7 @@ import { poNagarChamTowers } from "@/data/locations/po-nagar-cham-towers"
 import { pongourWaterfall } from "@/data/locations/pongour-waterfall"
 import { quanBaHeavenGate } from "@/data/locations/quan-ba-heaven-gate"
 import { quanBaTwinMountains } from "@/data/locations/quan-ba-twin-mountains"
+import { quangTriAncientCitadel } from "@/data/locations/quang-tri-ancient-citadel"
 import { rachVemFishingVillage } from "@/data/locations/rach-vem-fishing-village"
 import { redSandDunes } from "@/data/locations/red-sand-dunes"
 import { saViCape } from "@/data/locations/sa-vi-cape"
@@ -126,6 +132,8 @@ import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { taDungLake } from "@/data/locations/ta-dung-lake"
+import { taNangPhanDungTrek } from "@/data/locations/ta-nang-phan-dung-trek"
+import { taPaTemple } from "@/data/locations/ta-pa-temple"
 import { taVanVillage } from "@/data/locations/ta-van-village"
 import { taXuaMountain } from "@/data/locations/ta-xua-mountain"
 import { tamCoc } from "@/data/locations/tam-coc"
@@ -155,12 +163,14 @@ import { yenTuMountain } from "@/data/locations/yen-tu-mountain"
 
 // ── Add new locations here ────────────────────────────────────────────────────
 export const allLocations: Location[] = [
+  aPaChai,
   amTienCave,
   anBangBeach,
   anBinhIsland,
   anHaiCommunalHouse,
   anVinhCommunalHouse,
   baHoWaterfall,
+  baHonDamIslands,
   baNaCableCar,
   bacSonValley,
   baiDinhPagoda,
@@ -174,6 +184,8 @@ export const allLocations: Location[] = [
   bidoupNuiBaNationalPark,
   binhLieuBorderMountains,
   buGiaMapNationalPark,
+  buiHuiGrassland,
+  bungBinhThienLake,
   caiRangFloatingMarket,
   capeCaNa,
   catBaCannonFort,
@@ -191,6 +203,7 @@ export const allLocations: Location[] = [
   damTrauBeach,
   darkCave,
   datanlaWaterfall,
+  dauTiengLake,
   diepSonIsland,
   dinhMountain,
   docLetBeach,
@@ -272,6 +285,7 @@ export const allLocations: Location[] = [
   pongourWaterfall,
   quanBaHeavenGate,
   quanBaTwinMountains,
+  quangTriAncientCitadel,
   rachVemFishingVillage,
   redSandDunes,
   saViCape,
@@ -281,6 +295,8 @@ export const allLocations: Location[] = [
   sonTraPeninsula,
   sungSotCave,
   taDungLake,
+  taNangPhanDungTrek,
+  taPaTemple,
   taVanVillage,
   taXuaMountain,
   tamCoc,

@@ -30,7 +30,7 @@ export const capeCaNa: Location = {
     "cape-ca-na-beach-ninh-thuan-6_yvufiw",
   ],
   seoDescription:
-    "Cape Cà Ná is a dramatic headland on the Ninh Thuận coast where granite boulders meet the South China Sea against a backdrop of near-desert scrubland - one of the most visually distinctive coastal landscapes on the north-south motorbike route.",
+    "Cape Cà Ná is a dramatic headland on the Ninh Thuận coast where granite boulders meet the East Sea against a backdrop of near-desert scrubland - one of the most visually distinctive coastal landscapes on the north-south motorbike route.",
   tips: [
     "The cape is directly on Highway 1A between Phan Rang and Phan Thiết - it requires no detour for riders on the north-south coastal route and is impossible to miss",
     "Sunset from the boulder field looking west over the headland is the standout photographic opportunity - the granite turns orange and the contrast with the blue water is strong",
