@@ -16,7 +16,7 @@ export const keGaLighthouse: Location = {
   bestTime: "Nov - Jul (dry season with calm seas; avoid Aug - Oct when rough conditions make the boat crossing unreliable)",
   entranceFee: "~30,000 VND; boat ~50,000 VND return",
   openingHours: "7:00 AM - 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.695329624836493,107.99144633590802",
   heroImage: heroUrl("ke-ga-light-house-binh-thuan-8_terref"),
   gallery: [
     "ke-ga-light-house-binh-thuan-3_go0dpm",

@@ -6,6 +6,7 @@ import LocationTabs from "./LocationTabs"
 import "./location.css"
 import NearbyLocations from "./NearbyLocations"
 import GalleryLightbox from "./GalleryLightbox"
+import GetDirectionsButton from "./GetDirectionsButton"
 
 
 function toDecimal(val: number | string): number {
@@ -15,6 +16,19 @@ function toDecimal(val: number | string): number {
   const [, d, m, s, dir] = match
   const decimal = Number(d) + Number(m) / 60 + Number(s) / 3600
   return dir === "S" || dir === "W" ? -decimal : decimal
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  return {
+    alternates: {
+      canonical: `https://soloinvietnam.com/locations/${slug}`,
+    },
+  }
 }
 
 export default async function LocationPage({
@@ -83,6 +97,11 @@ export default async function LocationPage({
           src={`https://maps.google.com/maps?q=${toDecimal(location.lat)},${toDecimal(location.lng)}&z=15&output=embed`}
           allowFullScreen
           loading="lazy"
+        />
+        <GetDirectionsButton
+          lat={toDecimal(location.lat)}
+          lng={toDecimal(location.lng)}
+          label={location.name}
         />
       </div>
 
@@ -184,7 +203,7 @@ export default async function LocationPage({
           </div>
         )}
         {/* Nearby Locations */}
-            <NearbyLocations currentSlug={slug} provinces={location.provinces} />
+            <NearbyLocations currentSlug={slug} />
 
         {/* Bottom CTA */}
         {location.destination && (

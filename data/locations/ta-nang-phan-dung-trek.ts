@@ -16,7 +16,7 @@ export const taNangPhanDungTrek: Location = {
   bestTime: "Nov - Apr (dry season only; wet season May - Oct makes the trail extremely dangerous - flash floods on the river crossings have caused fatalities)",
   entranceFee: "Free; guide and porter fees apply",
   openingHours: "Multi-day trek; depart from Đà Lạt side",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.536084933625041,108.53666725713427",
   heroImage: heroUrl("ta-nang-phan-dung-trek-hero_placeholder"),
   gallery: [
     "ta-nang-phan-dung-trek-4_hy1iuj",

@@ -16,7 +16,7 @@ export const capeCaNa: Location = {
   bestTime: "Jan - Aug (dry season; Ninh Thuận is one of the driest provinces in Vietnam and is sunny year-round, but the calmest sea conditions are in the early months)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.33780195985091,108.86728048488189",
   heroImage: heroUrl("cape-ca-na-beach-ninh-thuan-8_zv3i7t"),
   gallery: [
     "cape-ca-na-beach-ninh-thuan-4_wwhrr0",

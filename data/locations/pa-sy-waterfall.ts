@@ -16,7 +16,7 @@ export const paSyWaterfall: Location = {
   bestTime: "Oct - Dec (end of rainy season when water flow is at maximum; dry season Jan - Aug reduces flow significantly)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=14.59512835252321,108.25679237041005",
   heroImage: heroUrl("pa-sy-waterfall-mang-den-kontum_p1pqgo"),
   gallery: [
     "pa-sy-waterfall-mang-den-kontum-2_yvpb9u",

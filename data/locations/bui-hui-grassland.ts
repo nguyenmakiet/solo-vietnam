@@ -16,7 +16,7 @@ export const buiHuiGrassland: Location = {
   bestTime: "Mar - Apr (sim flower bloom peak with purple blossoms covering the grassland; Oct - Feb is cool and clear but without the flowers)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=14.733767915481186,108.78824450755181",
   heroImage: heroUrl("bui-hui-grass-land-quang-ngai-7_bxxtqv"),
   gallery: [
     "bui-hui-grass-land-quang-ngai-5_z66qwc",

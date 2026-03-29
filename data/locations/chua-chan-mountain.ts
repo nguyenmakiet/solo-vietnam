@@ -16,7 +16,7 @@ export const chuaChanMountain: Location = {
   bestTime: "Nov – Apr (dry season; wet season trails are muddy and slippery)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.938213833993702,107.37752745679926",
   heroImage: heroUrl("chua-chan-mountain-5_oifgix"),
   gallery: [
     "chua-chan-mountain-1_yypgxf",

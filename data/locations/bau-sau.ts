@@ -16,7 +16,7 @@ export const bauSau: Location = {
   bestTime: "Nov - Apr (dry season when water levels drop and wildlife concentrates around the lake; wet season Jul - Oct makes the trek through the forest difficult)",
   entranceFee: "Included in Cát Tiên National Park entry (~60,000 VND); guided trek additional",
   openingHours: "Treks depart from park HQ at scheduled times - book in advance",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.458838033233041,107.34506914941234",
   heroImage: heroUrl("bau-sau-nam-cat-tien-dong-nai-10_dtkkhw"),
   gallery: [
     "bau-sau-nam-cat-tien-dong-nai-4_hrvxnj",

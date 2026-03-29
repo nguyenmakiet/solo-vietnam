@@ -16,7 +16,7 @@ export const aPaChai: Location = {
   bestTime: "Oct - Apr (dry season; wet season May - Sep makes the mountain trail extremely muddy and the remote roads to Mường Nhé impassable by motorbike after rain)",
   entranceFee: "Free; border area permit required",
   openingHours: "Open daily; border area access requires prior permit from local authorities",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=22.401192335843305,102.14371962758165",
   heroImage: heroUrl("a-pa-chai-dien-bien-3_cezsa3"),
   gallery: [
     "a-pa-chai-dien-bien-4_mieuhy",

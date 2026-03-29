@@ -6,6 +6,7 @@ import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { anBinhIsland } from "@/data/locations/an-binh-island"
 import { anHaiCommunalHouse } from "@/data/locations/an-hai-communal-house"
 import { anVinhCommunalHouse } from "@/data/locations/an-vinh-communal-house"
+import { baDenMountain } from "@/data/locations/ba-den-mountain"
 import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
 import { baHonDamIslands } from "@/data/locations/ba-hon-dam-islands"
 import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
@@ -58,6 +59,7 @@ import { fansipan } from "@/data/locations/fansipan"
 import { frenchVillageBaNa } from "@/data/locations/french-village-ba-na"
 import { giengTienPeak } from "@/data/locations/gieng-tien-peak"
 import { goldenBridge } from "@/data/locations/golden-bridge"
+import { pirateIslands } from "@/data/locations/pirate-islands"
 import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
 import { hamTienBeach } from "@/data/locations/ham-tien-beach"
@@ -98,6 +100,7 @@ import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { mangLangChurch } from "@/data/locations/mang-lang-church"
 import { minhDamMountain } from "@/data/locations/minh-dam-mountain"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
+import { mocChauTeaHills } from "@/data/locations/moc-chau-tea-hills"
 import { moocSpring } from "@/data/locations/mooc-spring"
 import { muiDien } from "@/data/locations/mui-dien"
 import { muiNeFishingVillage } from "@/data/locations/mui-ne-fishing-village"
@@ -133,6 +136,7 @@ import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { taDungLake } from "@/data/locations/ta-dung-lake"
 import { taNangPhanDungTrek } from "@/data/locations/ta-nang-phan-dung-trek"
+import { taPaFields } from "@/data/locations/ta-pa-fields"
 import { taPaTemple } from "@/data/locations/ta-pa-temple"
 import { taVanVillage } from "@/data/locations/ta-van-village"
 import { taXuaMountain } from "@/data/locations/ta-xua-mountain"
@@ -148,7 +152,9 @@ import { toVoGate } from "@/data/locations/to-vo-gate"
 import { traQueVillage } from "@/data/locations/tra-que-village"
 import { traSuCajuputForest } from "@/data/locations/tra-su-cajuput-forest"
 import { trangAn } from "@/data/locations/trang-an"
+import { triAnLake } from "@/data/locations/tri-an-lake"
 import { trungTrangCave } from "@/data/locations/trung-trang-cave"
+import { truongSonNationalCemetery } from "@/data/locations/truong-son-national-cemetery"
 import { tuDucTomb } from "@/data/locations/tu-duc-tomb"
 import { tuyenLamLake } from "@/data/locations/tuyen-lam-lake"
 import { vanLongNatureReserve } from "@/data/locations/van-long-nature-reserve"
@@ -158,6 +164,7 @@ import { vinpearlSafari } from "@/data/locations/vinpearl-safari"
 import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { yTy } from "@/data/locations/y-ty"
+import { yavlyWaterfall } from "@/data/locations/yavly-waterfall"
 import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
 import { yenTuMountain } from "@/data/locations/yen-tu-mountain"
 
@@ -169,6 +176,7 @@ export const allLocations: Location[] = [
   anBinhIsland,
   anHaiCommunalHouse,
   anVinhCommunalHouse,
+  baDenMountain,
   baHoWaterfall,
   baHonDamIslands,
   baNaCableCar,
@@ -221,6 +229,7 @@ export const allLocations: Location[] = [
   frenchVillageBaNa,
   giengTienPeak,
   goldenBridge,
+  pirateIslands,
   haLongBay,
   hamNinhFishingVillage,
   hamTienBeach,
@@ -261,6 +270,7 @@ export const allLocations: Location[] = [
   mangLangChurch,
   minhDamMountain,
   minhMangTomb,
+  mocChauTeaHills,
   moocSpring,
   muiDien,
   muiNeFishingVillage,
@@ -296,6 +306,7 @@ export const allLocations: Location[] = [
   sungSotCave,
   taDungLake,
   taNangPhanDungTrek,
+  taPaFields,
   taPaTemple,
   taVanVillage,
   taXuaMountain,
@@ -311,7 +322,9 @@ export const allLocations: Location[] = [
   traQueVillage,
   traSuCajuputForest,
   trangAn,
+  triAnLake,
   trungTrangCave,
+  truongSonNationalCemetery,
   tuDucTomb,
   tuyenLamLake,
   vanLongNatureReserve,
@@ -321,6 +334,7 @@ export const allLocations: Location[] = [
   vinWondersPhuQuoc,
   whiteSandDunes,
   yTy,
+  yavlyWaterfall,
   yenMinhPineForest,
   yenTuMountain,
 ]

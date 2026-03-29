@@ -16,7 +16,7 @@ export const minhDamMountain: Location = {
   bestTime: "Nov - Apr (dry season; wet season trails are slippery and the forest humidity is intense)",
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM - 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.406176641081109,107.2592560602553",
   heroImage: heroUrl("minh-dam-mountain-vung-tau-9_jiqr27"),
   gallery: [
     "minh-dam-mountain-vung-tau-4_b0weij",

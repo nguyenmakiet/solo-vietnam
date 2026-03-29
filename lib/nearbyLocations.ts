@@ -50,16 +50,23 @@ export interface NearbyLocation {
   destination?: string
 }
 
-export function getNearbyLocations(currentSlug: string, provinces: string[], limit = 6)
-: NearbyLocation[] {
+const MAX_RADIUS_KM = 150
+
+export function getNearbyLocations(currentSlug: string, limit = 6): NearbyLocation[] {
   const current = allLocations.find((l) => l.slug === currentSlug)
   if (!current) return []
 
+  const currentLat = toDecimal(current.lat)
+  const currentLng = toDecimal(current.lng)
+  if (isNaN(currentLat) || isNaN(currentLng)) return []
+
   return allLocations
-    .filter(l =>
-      l.slug !== currentSlug &&
-      l.provinces.some(p => provinces.includes(p))
-    )
+    .filter((l) => {
+      if (l.slug === currentSlug) return false
+      const lat = toDecimal(l.lat)
+      const lng = toDecimal(l.lng)
+      return !isNaN(lat) && !isNaN(lng)
+    })
     .map((l) => {
       const km = haversineKm(current.lat, current.lng, l.lat, l.lng)
       const minutes = (km / AVG_SPEED_KMH) * 60
@@ -73,6 +80,7 @@ export function getNearbyLocations(currentSlug: string, provinces: string[], lim
         destination: l.destination,
       }
     })
+    .filter((l) => l.distanceKm <= MAX_RADIUS_KM)
     .sort((a, b) => a.distanceKm - b.distanceKm)
     .slice(0, limit)
 }

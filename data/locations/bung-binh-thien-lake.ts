@@ -16,7 +16,7 @@ export const bungBinhThienLake: Location = {
   bestTime: "Jul - Nov (flood season when the lake expands to maximum size and the lotus flowers bloom; the lotus peak is typically Aug - Sep)",
   entranceFee: "Free; boat hire ~100,000-150,000 VND",
   openingHours: "Open daily; best visited at dawn",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.919979584967262,105.07286304988797",
   heroImage: heroUrl("bung-binh-thien-an-giang-9_wsefof"),
   gallery: [
     "bung-binh-thien-an-giang-10_oabx9r",

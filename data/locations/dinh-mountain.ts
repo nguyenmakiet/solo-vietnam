@@ -16,7 +16,7 @@ export const dinhMountain: Location = {
   bestTime: "Nov – Apr (dry season; wet season trails are slippery and visibility from the summit is poor)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=10.537592530622792,107.12929659066629",
   heroImage: heroUrl("dinh-mountain-4_kxaybx"),
   gallery: [
     "dinh-mountain-3_vcw0xt",

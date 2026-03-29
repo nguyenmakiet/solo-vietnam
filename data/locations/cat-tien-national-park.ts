@@ -16,7 +16,7 @@ export const catTienNationalPark: Location = {
   bestTime: "Nov - Apr (dry season; wet season Jun - Oct makes trails muddy and river crossings unpredictable, though wildlife is more active near water sources)",
   entranceFee: "~60,000 VND park entry; activities additional",
   openingHours: "Park open daily; activity bookings through park HQ",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.424517877270743,107.42756061160924",
   heroImage: heroUrl("nam-cat-tien-national-park-dong-nai-6_keccsw"),
   gallery: [
     "nam-cat-tien-national-park-dong-nai-8_anz9pi",

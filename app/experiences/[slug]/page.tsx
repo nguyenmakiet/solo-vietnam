@@ -27,6 +27,20 @@ function getTypeIcon(type: Location["type"]): string {
   return icons[primary] ?? "📍"
 }
 
+// ── Metadata ──────────────────────────────────────────────────────────────────
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  return {
+    alternates: {
+      canonical: `https://soloinvietnam.com/experiences/${slug}`,
+    },
+  }
+}
+
 // ── Static params ─────────────────────────────────────────────────────────────
 export async function generateStaticParams() {
   return experiences.map((e) => ({ slug: e.slug }))

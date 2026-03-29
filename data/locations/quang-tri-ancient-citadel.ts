@@ -16,7 +16,7 @@ export const quangTriAncientCitadel: Location = {
   bestTime: "Feb - Aug (dry season; the citadel grounds are green and accessible; avoid Sep - Nov when flooding affects the area)",
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:30 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=16.753698503710048,107.18981719454122",
   heroImage: heroUrl("quang-tri-ancient-citadel_nasfe3"),
   gallery: [
     "quang-tri-ancient-citadel-9_edklkq",

@@ -16,7 +16,7 @@ export const coThachBeach: Location = {
   bestTime: "Jan - Aug (dry season; the moss on the rocks is greenest after the wet season ends around Dec - Jan, making early dry season the best combination of good weather and vivid colour)",
   entranceFee: "Free",
   openingHours: "Open daily",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=11.17800572228083,108.71644682210062",
   heroImage: heroUrl("co-thach-beach-4_us0alu"),
   gallery: [
     "co-thach-beach-2_eisxkc",

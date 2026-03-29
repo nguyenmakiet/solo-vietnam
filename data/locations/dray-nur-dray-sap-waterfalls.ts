@@ -16,7 +16,7 @@ export const drayNurDraySapWaterfalls: Location = {
   bestTime: "Sep - Nov (end of rainy season when water volume is maximum; dry season Mar - May reduces flow significantly)",
   entranceFee: "~40,000 VND per waterfall; tickets sold separately",
   openingHours: "7:00 AM - 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=12.540509582270607,107.89028799489219",
   heroImage: heroUrl("dray-nur-dray-sap-waterfall_awcvqs"),
   gallery: [
     "dray-nur-dray-sap-waterfall-9_hljz3n",

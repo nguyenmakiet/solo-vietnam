@@ -16,7 +16,7 @@ export const kyCoBeach: Location = {
   bestTime: "Mar - Aug (dry season with calm seas; avoid Sep - Dec when storms make boat access dangerous)",
   entranceFee: "~30,000 VND; boat from Nhơn Lý ~100,000-150,000 VND return",
   openingHours: "7:00 AM - 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=13.850407408494334,109.2927788212342",
   heroImage: heroUrl("ky-co-beach-binh-dinh_po1fta"),
   gallery: [
     "ky-co-beach-binh-dinh-7_znzeqo",

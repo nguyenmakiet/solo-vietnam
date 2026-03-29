@@ -1,7 +1,20 @@
 import { provinces } from "../../../data/provinces"
-import { destinations } from "../../../data/destinations"
+import { allLocations } from "@/data/all-locations"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  return {
+    alternates: {
+      canonical: `https://soloinvietnam.com/provinces/${slug}`,
+    },
+  }
+}
 
 export default async function ProvincePage({
   params,
@@ -12,8 +25,8 @@ export default async function ProvincePage({
   const province = provinces.find((p) => p.slug === slug)
   if (!province) return notFound()
 
-  const provinceDestinations = destinations.filter(
-    (d) => d.provinceSlug === slug
+  const provinceLocations = allLocations.filter((l) =>
+    l.provinces.includes(slug)
   )
 
   const regionLabel =
@@ -127,30 +140,32 @@ export default async function ProvincePage({
         .fact-chip .fc-label { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px; }
         .fact-chip .fc-val { font-size: 13px; font-weight: 600; color: var(--text); }
 
-        /* Destination cards */
+        /* Location cards */
         .dest-grid {
-          display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
           gap: 16px; margin-bottom: 56px;
         }
         .dest-card {
           background: #fff; border: 1px solid var(--border);
-          border-radius: 12px; padding: 22px 20px;
-          text-decoration: none; display: block;
-          transition: all 0.22s; position: relative; overflow: hidden;
+          border-radius: 12px; overflow: hidden;
+          text-decoration: none; display: flex; flex-direction: column;
+          transition: all 0.22s; position: relative;
         }
-        .dest-card::after {
-          content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-          height: 3px; background: linear-gradient(90deg, var(--gold), transparent);
-          opacity: 0; transition: opacity 0.2s;
+        .dest-card:hover { border-color: var(--gold-light); box-shadow: 0 6px 24px rgba(200,169,110,0.15); transform: translateY(-3px); }
+        .dest-card .dc-img { width: 100%; height: 160px; object-fit: cover; display: block; }
+        .dest-card .dc-img:hover { opacity: 0.92; transition: opacity 0.2s; }
+        .dest-card .dc-body { padding: 14px 16px; display: flex; flex-direction: column; flex: 1; }
+        .dest-card .dc-name { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 5px; line-height: 1.3; }
+        .dest-card .dc-desc { font-size: 12px; color: var(--text-muted); line-height: 1.55; margin-bottom: 10px; flex: 1; }
+        .dest-card .dc-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 10px; }
+        .dest-card .dc-tag {
+          font-size: 11px; color: var(--text-muted);
+          background: var(--surface-2); border: 1px solid var(--border);
+          border-radius: 20px; padding: 2px 8px;
         }
-        .dest-card:hover { border-color: var(--gold-light); box-shadow: 0 6px 24px rgba(200,169,110,0.12); transform: translateY(-3px); }
-        .dest-card:hover::after { opacity: 1; }
-        .dest-card .dc-num { font-size: 10px; letter-spacing: 2px; color: var(--gold); font-weight: 700; margin-bottom: 10px; }
-        .dest-card .dc-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.2; }
-        .dest-card .dc-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-        .dest-card .dc-tag { font-size: 11px; color: var(--text-muted); }
-        .dest-card .dc-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
-        .dest-card .dc-cta { font-size: 12px; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; }
+        .dest-card .dc-footer { display: flex; justify-content: space-between; align-items: center; }
+        .dest-card .dc-time { font-size: 11px; color: var(--text-muted); }
+        .dest-card .dc-cta { font-size: 12px; color: var(--gold); font-weight: 700; }
 
         /* Food section */
         .food-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 48px; }
@@ -234,8 +249,8 @@ export default async function ProvincePage({
             )}
             <div className="hero-stats">
               <div className="hero-stat">
-                <span className="val">{provinceDestinations.length}</span>
-                <span className="lbl">Destinations</span>
+                <span className="val">{provinceLocations.length}</span>
+                <span className="lbl">Locations</span>
               </div>
               {province.bestTime && (
                 <div className="hero-stat">
@@ -291,37 +306,58 @@ export default async function ProvincePage({
             </div>
           </div>
 
-          {/* Destinations */}
+          {/* Locations */}
           <section style={{ marginBottom: 56 }}>
             <p className="section-label">
-              Destinations in {province.name} - {provinceDestinations.length} found
+              Locations in {province.name} — {provinceLocations.length} found
             </p>
-            {provinceDestinations.length > 0 ? (
+            {provinceLocations.length > 0 ? (
               <div className="dest-grid">
-                {provinceDestinations.map((d, i) => (
-                  <Link key={d.slug} href={`/destinations/${d.slug}`} className="dest-card">
-                    <div className="dc-num">{String(i + 1).padStart(2, "0")} / {String(provinceDestinations.length).padStart(2, "0")}</div>
-                    <div className="dc-name">{d.name}</div>
-                    {d.tags && d.tags.length > 0 && (
-                      <div className="dc-tags">
-                        {d.tags.map((t) => <span key={t} className="dc-tag">{t}</span>)}
+                {provinceLocations.map((l, i) => {
+                  const primaryType = Array.isArray(l.type) ? l.type[0] : l.type
+                  const typeIcons: Record<string, string> = {
+                    beach: "🏖️", island: "🏝️", bay: "🌊", mountain: "⛰️",
+                    waterfall: "💧", cave: "🕳️", forest: "🌿", nature: "🌿",
+                    lake: "🏞️", river: "🏞️", temple: "🛕", pagoda: "🛕",
+                    heritage: "🏯", cultural: "🎎", town: "🏘️", city: "🏙️",
+                    market: "🛒", attraction: "✨", citadel: "🏰", tomb: "🪦",
+                    history: "📜", landmark: "🗿",
+                  }
+                  const icon = typeIcons[primaryType] ?? "📍"
+                  return (
+                    <Link key={l.slug} href={`/locations/${l.slug}`} className="dest-card">
+                      <img
+                        src={(!l.heroImage || l.heroImage.includes("placeholder")) ? "/images/coming-soon.jpg" : l.heroImage}
+                        alt={l.name}
+                        className="dc-img"
+                      />
+                      <div className="dc-body">
+                        <div className="dc-name">{icon} {l.name}</div>
+                        {l.seoDescription && (
+                          <div className="dc-desc">
+                            {l.seoDescription.slice(0, 80)}{l.seoDescription.length > 80 ? "…" : ""}
+                          </div>
+                        )}
+                        {l.tags && l.tags.length > 0 && (
+                          <div className="dc-tags">
+                            {l.tags.slice(0, 2).map((t) => <span key={t} className="dc-tag">{t}</span>)}
+                          </div>
+                        )}
+                        <div className="dc-footer">
+                          <span className="dc-time">🗓 {l.bestTime.split("(")[0].trim()}</span>
+                          <span className="dc-cta">View →</span>
+                        </div>
                       </div>
-                    )}
-                    {d.description && (
-                      <div className="dc-desc">
-                        {d.description.slice(0, 90)}{d.description.length > 90 ? "…" : ""}
-                      </div>
-                    )}
-                    <div className="dc-cta">Explore guide →</div>
-                  </Link>
-                ))}
+                    </Link>
+                  )
+                })}
               </div>
             ) : (
-                <div className="empty-state">
-                  <div className="icon">🗺️</div>
-                  <p>No destinations listed yet for {province.name}.<br />Content coming soon.</p>
-                </div>
-              )}
+              <div className="empty-state">
+                <div className="icon">🗺️</div>
+                <p>No locations listed yet for {province.name}.<br />Content coming soon.</p>
+              </div>
+            )}
           </section>
 
           {/* Local Food */}

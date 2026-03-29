@@ -16,7 +16,7 @@ export const hungTemple: Location = {
   bestTime: "Oct - Mar (cool dry season; avoid the Hùng Kings Festival on the 10th day of the 3rd lunar month when millions of pilgrims converge on the site)",
   entranceFee: "~30,000 VND",
   openingHours: "7:00 AM - 5:30 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=21.368643714922786,105.32575135886921",
   heroImage: heroUrl("hung-temple-phu-tho_ql583r"),
   gallery: [
     "hung-temple-phu-tho-3_xiuvub",

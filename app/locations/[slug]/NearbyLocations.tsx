@@ -23,11 +23,10 @@ function typeIcon(type: string | string[]): string {
 
 interface Props {
   currentSlug: string
-  provinces: string[]
 }
 
-export default function NearbyLocations({ currentSlug, provinces }: Props) {
-  const nearby = getNearbyLocations(currentSlug, provinces)
+export default function NearbyLocations({ currentSlug }: Props) {
+  const nearby = getNearbyLocations(currentSlug)
   if (nearby.length === 0) return null
 
   return (

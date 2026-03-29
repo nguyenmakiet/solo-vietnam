@@ -16,7 +16,7 @@ export const mySonSanctuary: Location = {
   bestTime: "Feb – Aug (dry season; the site floods and paths become muddy in the Oct – Jan wet season)",
   entranceFee: "~150,000 VND",
   openingHours: "6:00 AM – 5:00 PM",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps?q=15.76310079629061,108.12417516881945",
   heroImage: heroUrl("my-son-sanctuary-quang-nam_wrfow5"),
   gallery: [
     "my-son-sanctuary-quang-nam-2_nvyt6r",
