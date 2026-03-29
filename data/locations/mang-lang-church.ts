@@ -5,7 +5,7 @@ export const mangLangChurch: Location = {
   slug: "mang-lang-church",
   name: "Mằng Lăng Church",
   provinces: ["phu-yen"],
-  destination: "tuy-an",
+  destination: "",
   lat: "13.334150812882358",
   lng: "109.225819751082",
   address: "An Thạch, Tuy An, Phú Yên",

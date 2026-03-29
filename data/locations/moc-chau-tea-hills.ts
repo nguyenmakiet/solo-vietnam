@@ -5,7 +5,7 @@ export const mocChauTeaHills: Location = {
   slug: "moc-chau-tea-hills",
   name: "Moc Chau Tea Hills",
   provinces: ["son-la"],
-  destination: "moc-chau",
+  destination: "",
   lat: "20.83246607015881",
   lng: "104.69295036642336",
   address: "Mộc Châu, Sơn La",

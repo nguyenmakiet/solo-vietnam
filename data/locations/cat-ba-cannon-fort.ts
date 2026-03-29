@@ -17,6 +17,7 @@ export const catBaCannonFort: Location = {
   entranceFee: "~30,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.72699791562507,107.05415352678563",
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1774768522625!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3NuTEdoMUFF!2m2!1d20.72553134415704!2d107.0519851983662!3f239.02503821532432!4f-14.659227288351687!5f0.7820865974627469",},
   heroImage: heroUrl("cat-ba-cannon-fort-hero_placeholder"),
   gallery: [],
   seoDescription:

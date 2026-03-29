@@ -5,7 +5,7 @@ export const pirateIslands: Location = {
   slug: "pirate-islands",
   name: "Pirate Islands",
   provinces: ["kien-giang"],
-  destination: "kien-giang",
+  destination: "",
   lat: "11.118715657111162",
   lng: "107.0268243097165",
   address: "Quần đảo Hải Tặc, Kiên Giang",

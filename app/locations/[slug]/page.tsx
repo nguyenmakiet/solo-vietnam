@@ -152,8 +152,17 @@ export default async function LocationPage({
         {/* Gallery */}
         <div id="gallery" className="section-anchor">
           <p className="section-label">Gallery</p>
-          {location.gallery.length > 0 ? (
-            <GalleryLightbox publicIds={location.gallery} locationName={location.name} />
+          {location.gallery.length > 0 || location.streetView ? (
+            <GalleryLightbox
+              publicIds={location.gallery}
+              locationName={location.name}
+              streetViewUrl={location.streetView
+                ? (location.streetView.embedUrl
+                    ?? (location.streetView.lat && location.streetView.lng
+                        ? `https://www.google.com/maps?q=&layer=c&cbll=${toDecimal(location.streetView.lat)},${toDecimal(location.streetView.lng)}&output=embed`
+                        : undefined))
+                : undefined}
+            />
           ) : (
             <div className="gallery-grid">
               <div className="gallery-empty">Photos coming soon</div>

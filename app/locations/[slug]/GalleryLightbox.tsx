@@ -5,12 +5,15 @@ import { useState, useEffect, useCallback } from "react"
 interface GalleryLightboxProps {
   publicIds: string[]
   locationName: string
+  streetViewUrl?: string
 }
 
-export default function GalleryLightbox({ publicIds, locationName }: GalleryLightboxProps) {
+export default function GalleryLightbox({ publicIds, locationName, streetViewUrl }: GalleryLightboxProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const [streetViewOpen, setStreetViewOpen] = useState(false)
 
   const close = useCallback(() => setActiveIndex(null), [])
+  const closeStreetView = useCallback(() => setStreetViewOpen(false), [])
 
   const prev = useCallback(() => {
     setActiveIndex((i) => (i !== null ? (i - 1 + publicIds.length) % publicIds.length : null))
@@ -31,11 +34,18 @@ export default function GalleryLightbox({ publicIds, locationName }: GalleryLigh
     return () => window.removeEventListener("keydown", onKey)
   }, [activeIndex, close, prev, next])
 
-  // lock scroll when open
   useEffect(() => {
-    document.body.style.overflow = activeIndex !== null ? "hidden" : ""
+    if (!streetViewOpen) return
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") closeStreetView() }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [streetViewOpen, closeStreetView])
+
+  // lock scroll when any modal is open
+  useEffect(() => {
+    document.body.style.overflow = (activeIndex !== null || streetViewOpen) ? "hidden" : ""
     return () => { document.body.style.overflow = "" }
-  }, [activeIndex])
+  }, [activeIndex, streetViewOpen])
 
   return (
     <>
@@ -49,8 +59,24 @@ export default function GalleryLightbox({ publicIds, locationName }: GalleryLigh
             onClick={() => setActiveIndex(i)}
           />
         ))}
+        {streetViewUrl && (
+          <div
+            className="gallery-streetview-tile gallery-img--clickable"
+            onClick={() => setStreetViewOpen(true)}
+          >
+            <img
+              src="/images/streetview.avif"
+              alt="Street View"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
+            <div className="gallery-streetview-overlay">
+              <span className="gallery-streetview-badge">🌐 Street View · Click to explore</span>
+            </div>
+          </div>
+        )}
       </div>
 
+      {/* Photo lightbox */}
       {activeIndex !== null && (
         <div className="lightbox-overlay" onClick={close}>
           <button className="lightbox-close" onClick={close} aria-label="Close">✕</button>
@@ -80,6 +106,23 @@ export default function GalleryLightbox({ publicIds, locationName }: GalleryLigh
           {publicIds.length > 1 && (
             <p className="lightbox-counter">{activeIndex + 1} / {publicIds.length}</p>
           )}
+        </div>
+      )}
+
+      {/* Street View modal */}
+      {streetViewOpen && streetViewUrl && (
+        <div className="lightbox-overlay" onClick={closeStreetView}>
+          <button className="lightbox-close" onClick={closeStreetView} aria-label="Close">✕</button>
+          <div
+            className="streetview-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              src={streetViewUrl}
+              allowFullScreen
+              style={{ width: "100%", height: "100%", border: 0 }}
+            />
+          </div>
         </div>
       )}
     </>

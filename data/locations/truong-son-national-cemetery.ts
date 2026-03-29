@@ -5,7 +5,7 @@ export const truongSonNationalCemetery: Location = {
   slug: "truong-son-national-cemetery",
   name: "Truong Son National Cemetery",
   provinces: ["quang-tri"],
-  destination: "quang-tri",
+  destination: "",
   lat: "16.958242841270042",
   lng: "106.95473875403596",
   address: "Vĩnh Trường, Gio Linh, Quảng Trị",

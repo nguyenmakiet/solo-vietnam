@@ -5,7 +5,7 @@ export const ongCopBridge: Location = {
   slug: "ong-cop-bridge",
   name: "Cầu Ông Cọp",
   provinces: ["phu-yen"],
-  destination: "tuy-an",
+  destination: "",
   lat: "13.365233794366752",
   lng: "109.24146230185562",
   address: "An Ninh Tây, Tuy An, Phú Yên",

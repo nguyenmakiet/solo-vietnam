@@ -5,7 +5,7 @@ export const taPaFields: Location = {
   slug: "ta-pa-fields",
   name: "Ta Pa Fields",
   provinces: ["an-giang"],
-  destination: "an-giang",
+  destination: "",
   lat: "10.402127666662789",
   lng: "104.99288003222382",
   address: "Tà Pạ, Tri Tôn, An Giang",

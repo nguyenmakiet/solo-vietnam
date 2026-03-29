@@ -75,6 +75,7 @@ export type Location = {
   openingHours?: string
   bestTime: string
   mapUrl: string
+  streetView?: { lat?: number | string; lng?: number | string; embedUrl?: string }
   heroImage?: string
   gallery: string[]
   tips: string[]
