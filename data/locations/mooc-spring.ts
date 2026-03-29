@@ -17,6 +17,7 @@ export const moocSpring: Location = {
   entranceFee: "~80,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.556813119452748,106.23884445637982",
+  streetView: {},
   heroImage: heroUrl("mooc-spring-hero_placeholder"),
   gallery: [],
   seoDescription:

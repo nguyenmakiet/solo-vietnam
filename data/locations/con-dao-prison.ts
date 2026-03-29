@@ -17,6 +17,7 @@ export const conDaoPrison: Location = {
   entranceFee: "~40,000 VND (covers multiple prison buildings)",
   openingHours: "7:30 AM – 11:30 AM · 1:30 PM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=8.689294969079059,106.6153057028259",
+  streetView: {},
   heroImage: heroUrl("con-dao-prison_mumzpe"),
   gallery: [
     "con-dao-prison2_raad3d",

@@ -17,6 +17,7 @@ export const laNgauStream: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=11.236315974562396,107.78594527850618",
+  streetView: {},
   heroImage: heroUrl("la-ngau-stream-binh-thuan-3_e3ngry"),
   gallery: [
     "la-ngau-stream-binh-thuan-5_maphhp",

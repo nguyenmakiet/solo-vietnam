@@ -17,6 +17,7 @@ export const paradiseCave: Location = {
   entranceFee: "~250,000 VND + electric buggy ~50,000 VND (optional)",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.519727624952477,106.22333853972053",
+  streetView: {},
   heroImage: heroUrl("paradise-cave_eccstr"),
   gallery: ["paradise-cave_eccstr",],
   seoDescription:

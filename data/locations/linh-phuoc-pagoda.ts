@@ -17,6 +17,7 @@ export const linhPhuocPagoda: Location = {
   entranceFee: "Free",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.944790636274039,108.49973009118906",
+  streetView: {},
   heroImage: heroUrl("linh-phuoc-pagoda3_le9epc"),
   gallery: [
     "linh-phuoc-pagoda2_nzxhrq",

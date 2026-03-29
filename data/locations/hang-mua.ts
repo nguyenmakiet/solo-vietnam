@@ -17,6 +17,7 @@ export const hangMua: Location = {
   entranceFee: "~100,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2180,105.9560",
+  streetView: {},
   heroImage: heroUrl("hang-mua-ninh-binh_k573hb"),
   gallery: [
     "hang-mua-ninh-binh2_b9var5",

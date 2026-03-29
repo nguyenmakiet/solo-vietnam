@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khaiDinhTomb: Location = {
   slug: "khai-dinh-tomb",
   name: "Khải Định Tomb",
-  provinces: ["thua-thien-hue"],
+  provinces: ["hue"],
   destination: "hue",
   lat: "16.39915933177038",
   lng: "107.59074610662047",
@@ -17,6 +17,7 @@ export const khaiDinhTomb: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.39915933177038,107.59074610662047",
+  streetView: {},
   heroImage: heroUrl("khai-dinh-tomb4_np5pfj"),
   gallery: [
     "khai-dinh-tomb3_epgzyi",

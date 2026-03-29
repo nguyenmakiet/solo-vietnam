@@ -17,6 +17,7 @@ export const phuQuocNightMarket: Location = {
   entranceFee: "Free",
   openingHours: "5:00 PM – 11:00 PM daily",
   mapUrl: "https://maps.google.com/?q=10.2131,103.9589",
+  streetView: {},
   heroImage: heroUrl("phu-quoc-night-market-placeholder"),
   gallery: [],
   seoDescription:

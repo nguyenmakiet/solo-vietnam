@@ -17,6 +17,7 @@ export const hangEn: Location = {
   entranceFee: "~7,600,000 VND (2-day 1-night tour via Oxalis, only authorized operator)",
   openingHours: "Tour-based only; no independent access permitted",
   mapUrl: "https://www.google.com/maps?q=17.552330941921934,106.1436802588683",
+  streetView: {},
   heroImage: heroUrl("en-cave_k4wkjw"),
   gallery: [
     "en-cave2_g5yvad",

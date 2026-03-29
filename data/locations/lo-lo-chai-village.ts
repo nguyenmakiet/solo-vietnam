@@ -17,6 +17,7 @@ export const loLoChaiVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.3533,105.3300",
+  streetView: {},
   heroImage: heroUrl("lo-lo-chai-04_ajdcgh"),
   gallery: [
       "lo-lo-chai-01_o1msxb",

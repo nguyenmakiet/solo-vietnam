@@ -17,6 +17,7 @@ export const hungTemple: Location = {
   entranceFee: "~30,000 VND",
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=21.368643714922786,105.32575135886921",
+  streetView: {},
   heroImage: heroUrl("hung-temple-phu-tho_ql583r"),
   gallery: [
     "hung-temple-phu-tho-3_xiuvub",

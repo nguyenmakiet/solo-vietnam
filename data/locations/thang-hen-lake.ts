@@ -17,6 +17,7 @@ export const thangHenLake: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.759334520663145,106.29375946526802",
+  streetView: {},
   heroImage: heroUrl("thang-hen-lake-hero_placeholder"),
   gallery: [],
   seoDescription:

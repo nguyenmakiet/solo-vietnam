@@ -17,6 +17,7 @@ export const vinpearlSafari: Location = {
   entranceFee: "~750,000–1,000,000 VND",
   openingHours: "8:00 AM – 4:30 PM",
   mapUrl: "https://www.google.com/maps?q=10.337243228996103,103.89206976788087",
+  streetView: {},
   heroImage: heroUrl("vinpearl-safari-hero_placeholder"),
   gallery: [],
   seoDescription:

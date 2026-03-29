@@ -17,6 +17,7 @@ export const lungPo: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=22.79305606355363,103.64781973074007",
+  streetView: {},
   heroImage: heroUrl("lung-po-lao-cai-2_y3hp1v"),
   gallery: [
     "lung-po-lao-cai-2_y3hp1v",

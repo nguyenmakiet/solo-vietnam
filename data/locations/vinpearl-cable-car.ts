@@ -17,6 +17,7 @@ export const vinpearlCableCar: Location = {
   entranceFee: "Included in Vinpearl Land ticket (~900,000–1,300,000 VND)",
   openingHours: "8:00 AM – 10:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.203687968459107,109.21792171467011",
+  streetView: {},
   heroImage: heroUrl("vinpearl-nha-trang_zn01io"),
   gallery: [
     "vinpearl-nha-trang2_vdi1th",

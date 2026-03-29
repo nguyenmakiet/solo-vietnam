@@ -17,6 +17,7 @@ export const hamTienBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=10.951456393863262,108.24921385544317",
+  streetView: {},
   heroImage: heroUrl("ham-tien-beach-phan-thiet_xecj4z"),
   gallery: [
     "ham-tien-beach-phan-thiet_xecj4z",

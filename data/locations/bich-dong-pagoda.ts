@@ -17,6 +17,7 @@ export const bichDongPagoda: Location = {
   entranceFee: "Free",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2310,105.9530",
+  streetView: {},
   heroImage: heroUrl("bich-dong-pagoda4_vu55wz"),
   gallery: [
     "bich-dong-pagoda2_gnmc6g",

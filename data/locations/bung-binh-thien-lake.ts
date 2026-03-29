@@ -17,6 +17,7 @@ export const bungBinhThienLake: Location = {
   entranceFee: "Free; boat hire ~100,000-150,000 VND",
   openingHours: "Open daily; best visited at dawn",
   mapUrl: "https://www.google.com/maps?q=10.919979584967262,105.07286304988797",
+  streetView: {},
   heroImage: heroUrl("bung-binh-thien-an-giang-9_wsefof"),
   gallery: [
     "bung-binh-thien-an-giang-10_oabx9r",

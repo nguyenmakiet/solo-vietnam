@@ -17,6 +17,7 @@ export const nhoQueRiver: Location = {
   entranceFee: "Boat tour: 150,000–200,000 VND/person",
   openingHours: "7:00 AM – 5:00 PM (boat tours)",
   mapUrl: "https://maps.google.com/?q=23.1550,105.4100",
+  streetView: {},
   heroImage: heroUrl("nho-que_mu1ha3"),
   gallery: [
     "nho-que-river-ha-giang_iiehla",

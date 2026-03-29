@@ -17,6 +17,7 @@ export const catCatVillage: Location = {
   entranceFee: "~90,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=22.3301,103.8325",
+  streetView: {},
   heroImage: heroUrl("cat-cat-village2_l6tzcr"),
   gallery: [
     "cat-cat-village_jla31i",

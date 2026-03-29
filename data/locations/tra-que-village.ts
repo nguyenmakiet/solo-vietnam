@@ -17,6 +17,7 @@ export const traQueVillage: Location = {
   entranceFee: "Free to enter; cooking class ~200,000–350,000 VND",
   openingHours: "Open daily from 7:00 AM",
   mapUrl: "https://www.google.com/maps?q=15.902579357686461,108.33718030263948",
+  streetView: {},
   heroImage: heroUrl("tra-que-village-hero_placeholder"),
   gallery: [],
   seoDescription:

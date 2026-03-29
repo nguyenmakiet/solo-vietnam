@@ -17,6 +17,7 @@ export const paSyWaterfall: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.59512835252321,108.25679237041005",
+  streetView: {},
   heroImage: heroUrl("pa-sy-waterfall-mang-den-kontum_p1pqgo"),
   gallery: [
     "pa-sy-waterfall-mang-den-kontum-2_yvpb9u",

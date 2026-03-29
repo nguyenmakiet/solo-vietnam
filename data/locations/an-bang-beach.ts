@@ -17,6 +17,7 @@ export const anBangBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.913659812360246,108.3404344460877",
+  streetView: {},
   heroImage: heroUrl("an-bang-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

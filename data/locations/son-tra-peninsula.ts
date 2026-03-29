@@ -17,6 +17,7 @@ export const sonTraPeninsula: Location = {
   entranceFee: "Free",
   openingHours: "Open daily; best visited 5:30–9:00 AM for wildlife",
   mapUrl: "https://www.google.com/maps?q=16.122257078414076,108.27692670069526",
+  streetView: {},
   heroImage: heroUrl("son-tra-peninsula-hero_placeholder"),
   gallery: [],
   seoDescription:

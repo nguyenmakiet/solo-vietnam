@@ -17,6 +17,7 @@ export const dalatRailwayStation: Location = {
   entranceFee: "Free to enter; tourist train to Trại Mát: ~152,000 VND return",
   openingHours: "7:30 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=11.941882324564023,108.45471880283058",
+  streetView: {},
   heroImage: heroUrl("da-lat-railway-station2_kxpr5y"),
   gallery: [
     "da-lat-railway-station_pzn8hd",

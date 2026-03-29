@@ -17,6 +17,7 @@ export const honThomCableCar: Location = {
   entranceFee: "750,000 VND/adult return (includes cable car + Hòn Thơm Nature Park)",
   openingHours: "8:00 AM – 8:00 PM",
   mapUrl: "https://maps.google.com/?q=10.0089,104.0303",
+  streetView: {},
   heroImage: heroUrl("hon-thom-cable-car-hero_zxbtjc"),
   gallery: [
     "hon-thom-cable-car_h148ot",

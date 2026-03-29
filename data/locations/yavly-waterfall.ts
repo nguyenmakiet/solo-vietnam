@@ -17,6 +17,7 @@ export const yavlyWaterfall: Location = {
   entranceFee: "Tà Năng - Phan Dũng trek permit: ~50,000 VND per person (collected at forest ranger checkpoints)",
   openingHours: "Trek typically starts at dawn; overnight camping required for most itineraries",
   mapUrl: "https://www.google.com/maps?q=yavly+waterfall+lac+duong+lam+dong",
+  streetView: {},
   heroImage: heroUrl("yavly-waterfall-phan-dung-binh-thuan_q13wz3"),
   gallery: [
     "yavly-waterfall-phan-dung-binh-thuan-2_cdscb1",

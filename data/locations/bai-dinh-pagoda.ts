@@ -17,6 +17,7 @@ export const baiDinhPagoda: Location = {
   entranceFee: "Free (electric cart: ~50,000 VND optional)",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.268192723940388,105.85603779913747",
+  streetView: {},
   heroImage: heroUrl("bai-dinh-pagoda-ninh-binh3_rrhmhr"),
   gallery: [
     "bai-dinh-pagoda-ninh-binh_zegjjm",

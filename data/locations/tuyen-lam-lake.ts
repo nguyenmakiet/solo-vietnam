@@ -17,6 +17,7 @@ export const tuyenLamLake: Location = {
   entranceFee: "Free (boat tours: ~100,000–150,000 VND)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.899932123833151,108.43143048972007",
+  streetView: {},
   heroImage: heroUrl("tuyen-lam-lake-da-lat3_x7z48e"),
   gallery: [
     "tuyen-lam-lake-da-lat4_e8xvrq",

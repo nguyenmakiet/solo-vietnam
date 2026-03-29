@@ -22,6 +22,7 @@ export const mangLangChurch: Location = {
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM (mass times may restrict visitor access)",
   mapUrl: "https://www.google.com/maps?q=13.334150812882358,109.225819751082",
+  streetView: {},
   heroImage: heroUrl("mang-lang-church-phu-yen-4_cquxgt"),
   gallery: [
     "mang-lang-church-phu-yen_tjbkte",

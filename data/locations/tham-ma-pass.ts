@@ -17,6 +17,7 @@ export const thamMaPass: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2833,105.2500",
+  streetView: {},
   heroImage: heroUrl("tham-ma-pass_qbc8z5"),
   gallery: [
     "tham-ma-pass-1_d3zyko",

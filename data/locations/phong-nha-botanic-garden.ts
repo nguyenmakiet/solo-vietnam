@@ -17,6 +17,7 @@ export const phongNhaBotanicGarden: Location = {
   entranceFee: "~40,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.55254653358196,106.30196116431941",
+  streetView: {},
   heroImage: heroUrl("phong-nha-botanic-garden-hero_placeholder"),
   gallery: [],
   seoDescription:

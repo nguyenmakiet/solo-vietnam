@@ -17,6 +17,7 @@ export const taVanVillage: Location = {
   entranceFee: "Free (included in Muong Hoa Valley entrance fee)",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=22.2970,103.8730",
+  streetView: {},
   heroImage: heroUrl("ta-van-village3_nj8yue"),
   gallery: [
     "ta-van-village_owdapo",

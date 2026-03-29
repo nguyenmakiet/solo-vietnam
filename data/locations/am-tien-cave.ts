@@ -17,6 +17,7 @@ export const amTienCave: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.283351716721526,105.91444612825703",
+  streetView: {},
   heroImage: heroUrl("am-tien-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

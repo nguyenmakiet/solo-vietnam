@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tuDucTomb: Location = {
   slug: "tu-duc-tomb",
   name: "Tự Đức Tomb",
-  provinces: ["thua-thien-hue"],
+  provinces: ["hue"],
   destination: "hue",
   lat: "16.433211195700988",
   lng: "107.5670752256665",
@@ -17,6 +17,7 @@ export const tuDucTomb: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.433211195700988,107.5670752256665",
+  streetView: {},
   heroImage: heroUrl("tu-duc-tomb_thnkr9"),
   gallery: [
     "tu-duc-tomb2_rcytlb",

@@ -17,6 +17,7 @@ export const dauTiengLake: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.37356385595011,106.28498591723591",
+  streetView: {},
   heroImage: heroUrl("dau-tieng-lake-binh-duong-10_nkk3js"),
   gallery: [
     "dau-tieng-lake-binh-duong-5_azeicc",

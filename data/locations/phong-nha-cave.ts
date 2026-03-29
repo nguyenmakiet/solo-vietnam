@@ -17,6 +17,7 @@ export const phongNhaCave: Location = {
   entranceFee: "~150,000 VND + boat fee ~350,000 VND (shared)",
   openingHours: "7:00 AM – 4:00 PM (closed during flood season)",
   mapUrl: "https://www.google.com/maps?q=17.58187380883147,106.28397697966346",
+  streetView: {},
   heroImage: heroUrl("phong-nha-cave8_quatqt"),
   gallery: [
     "phong-nha-cave4_rkecfp",

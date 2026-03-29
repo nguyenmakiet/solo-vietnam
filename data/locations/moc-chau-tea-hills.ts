@@ -17,6 +17,7 @@ export const mocChauTeaHills: Location = {
   entranceFee: "Free (some specific viewpoints charge 20,000 – 50,000 VND)",
   openingHours: "Open all day",
   mapUrl: "https://www.google.com/maps?q=moc+chau+tea+hills+son+la",
+  streetView: {},
   heroImage: heroUrl("moc-chau-tea-hills-son-la_cvtebk"),
   gallery: [
     "moc-chau-tea-hills-son-la_cvtebk",

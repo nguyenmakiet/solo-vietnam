@@ -328,6 +328,33 @@
 .map-action-btn--directions:hover { opacity: 0.85; }
 .map-action-btn--directions:active { transform: scale(0.97); }
 
+/* ── SIMILAR EXPERIENCES ── */
+.section-label-link {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+  transition: opacity 0.15s;
+}
+.section-label-link:hover { opacity: 0.6; }
+.exp-links {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px;
+}
+.exp-link {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 10px;
+  background: #fff; border: 1px solid #f1f5f9;
+  text-decoration: none; color: var(--text-dark);
+  font-size: 14px; font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: all 0.18s;
+}
+.exp-link:hover {
+  border-color: var(--primary); background: var(--chip-bg);
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+.exp-link-icon { font-size: 18px; }
+.exp-link-label { flex: 1; }
+.exp-link-arrow { color: var(--primary); font-size: 13px; }
+
 /* ── NEARBY LOCATIONS ── */
 .nearby-list {
   display: flex;

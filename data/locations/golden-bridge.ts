@@ -17,6 +17,7 @@ export const goldenBridge: Location = {
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
   mapUrl: "https://www.google.com/maps?q=15.994957886478177,107.996595959818",
+  streetView: {},
   heroImage: heroUrl("golden-bridge-ba-na-hill2_ft8pzk"),
   gallery: [
     "golden-bridge-ba-na-hill3_e1xnkp",

@@ -17,6 +17,7 @@ export const pongourWaterfall: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.688558880618006,108.26593322679962",
+  streetView: {},
   heroImage: heroUrl("pongour-waterfall-da-lat4_cswx11"),
   gallery: [
     "pongour-waterfall-da-lat_v6aa5p",

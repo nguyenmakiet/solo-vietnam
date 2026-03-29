@@ -17,6 +17,7 @@ export const dinhMountain: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.537592530622792,107.12929659066629",
+  streetView: {},
   heroImage: heroUrl("dinh-mountain-4_kxaybx"),
   gallery: [
     "dinh-mountain-3_vcw0xt",

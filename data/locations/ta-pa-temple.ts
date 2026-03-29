@@ -17,6 +17,7 @@ export const taPaTemple: Location = {
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.4152711092553,104.99329389037788",
+  streetView: {},
   heroImage: heroUrl("ta-pa-temple-an-giang-6_ltq6p3"),
   gallery: [
     "ta-pa-temple-an-giang-2_tzdej6",

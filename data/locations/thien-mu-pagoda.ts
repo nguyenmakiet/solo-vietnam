@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thienMuPagoda: Location = {
   slug: "thien-mu-pagoda",
   name: "Thiên Mụ Pagoda",
-  provinces: ["thua-thien-hue"],
+  provinces: ["hue"],
   destination: "hue",
   lat: "16.453168591703893",
   lng: "107.54519432036955",
@@ -17,6 +17,7 @@ export const thienMuPagoda: Location = {
   entranceFee: "Free",
   openingHours: "Open daily (monks observe prayer hours; respectful visiting hours: 8 AM – 5 PM)",
   mapUrl: "https://www.google.com/maps?q=16.453168591703893,107.54519432036955",
+  streetView: {},
   heroImage: heroUrl("thien-mu-pagoda-hue3_weflqk"),
   gallery: [
     "thien-mu-pagoda6_xphnqk",

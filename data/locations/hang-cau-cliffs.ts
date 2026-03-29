@@ -22,6 +22,7 @@ export const hangCauCliffs: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388917622220426,109.13405569310561",
+  streetView: {},
   heroImage: heroUrl("hang-cau-ly-son-island-9_jt1s8r"),
   gallery: [
     "hang-cau-ly-son-island-8_bcwriw",

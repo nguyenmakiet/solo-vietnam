@@ -17,6 +17,7 @@ export const pirateIslands: Location = {
   entranceFee: "No entrance fee; boat charter costs vary (full-day from Rach Gia: ~1,200,000 – 1,800,000 VND for the boat)",
   openingHours: "Weather dependent; accessible only in dry season",
   mapUrl: "https://www.google.com/maps?q=hai+tac+islands+kien+giang",
+  streetView: {},
   heroImage: heroUrl("pirate-island-kien-giang_ocsqhk"),
   gallery: [
     "pirate-island-kien-giang-3_mgmif5",

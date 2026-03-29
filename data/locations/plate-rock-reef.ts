@@ -17,6 +17,7 @@ export const plateRockReef: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=13.354005873751277,109.29390981181257",
+  streetView: {},
   heroImage: heroUrl("plate-rock-reef-phu-yen-5_jpmfrc"),
   gallery: [
     "plate-rock-reef-phu-yen-4_wrmjtr",

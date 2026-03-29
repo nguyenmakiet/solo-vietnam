@@ -17,6 +17,7 @@ export const baNaCableCar: Location = {
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "First departure: 7:30 AM · Last return: 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=16.025928263564783,108.03455022954422",
+  streetView: {},
   heroImage: heroUrl("cable-car-ba-na-hill2_oh8unw"),
   gallery: [
     "cable-car-ba-na-hill_vmlxge",

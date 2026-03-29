@@ -17,6 +17,7 @@ export const phongNamValley: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.891397448683232,106.5175241941528",
+  streetView: {},
   heroImage: heroUrl("phong-nam-valley_p1bdkx"),
   gallery: [
     "phong-nam-valley2_kof3er",

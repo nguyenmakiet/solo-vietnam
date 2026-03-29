@@ -17,6 +17,7 @@ export const quangTriAncientCitadel: Location = {
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.753698503710048,107.18981719454122",
+  streetView: {},
   heroImage: heroUrl("quang-tri-ancient-citadel_nasfe3"),
   gallery: [
     "quang-tri-ancient-citadel-9_edklkq",

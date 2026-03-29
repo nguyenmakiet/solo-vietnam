@@ -17,6 +17,7 @@ export const buiHuiGrassland: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.733767915481186,108.78824450755181",
+  streetView: {},
   heroImage: heroUrl("bui-hui-grass-land-quang-ngai-7_bxxtqv"),
   gallery: [
     "bui-hui-grass-land-quang-ngai-5_z66qwc",

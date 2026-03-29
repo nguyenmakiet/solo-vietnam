@@ -17,6 +17,7 @@ export const vanLongNatureReserve: Location = {
   entranceFee: "~40,000 VND + boat: ~150,000 VND per boat (shared)",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.37269717802166,105.88325487973674",
+  streetView: {},
   heroImage: heroUrl("van-long-natural-reserve-ninh-binh_lcegpd"),
   gallery: [
     "van-long-natural-reserve-ninh-binh2_no69la",

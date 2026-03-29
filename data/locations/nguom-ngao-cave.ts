@@ -17,6 +17,7 @@ export const nguomNgaoCave: Location = {
   entranceFee: "~30,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.845576774719714,106.70639496631787",
+  streetView: {},
   heroImage: heroUrl("nguom-ngao-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

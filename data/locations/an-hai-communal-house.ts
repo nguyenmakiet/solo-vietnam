@@ -22,6 +22,7 @@ export const anHaiCommunalHouse: Location = {
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours",
   mapUrl: "https://www.google.com/maps?q=15.374960915867455,109.12906613305788",
+  streetView: {},
   heroImage: heroUrl("an-hai-village-communial-house-ly-son-island-3_ruuvwy"),
   gallery: [
     "an-hai-village-communial-house-ly-son-island-10_g0n8wz",

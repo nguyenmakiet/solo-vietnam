@@ -17,6 +17,7 @@ export const poNagarChamTowers: Location = {
   entranceFee: "~22,000 VND",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.265491244831042,109.19565099450733",
+  streetView: {},
   heroImage: heroUrl("po-naga-cham-tower-nha-trang5_u2fexi"),
   gallery: [
     "po-naga-cham-tower-nha-trang4_nljd5t",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const imperialCity: Location = {
   slug: "imperial-city-hue",
   name: "Imperial City",
-  provinces: ["thua-thien-hue"],
+  provinces: ["hue"],
   destination: "hue",
   lat: "16.4677616052903",
   lng: "107.57931947854229",
@@ -17,6 +17,7 @@ export const imperialCity: Location = {
   entranceFee: "~200,000 VND (Forbidden Purple City included)",
   openingHours: "7:00 AM – 5:30 PM (last entry 5:00 PM)",
   mapUrl: "https://www.google.com/maps?q=16.4677616052903,107.57931947854229",
+  streetView: {},
   heroImage: heroUrl("imperial-citadel-hue3_isqtzb"),
   gallery: [
     "imperial-citadel-hue2_mzy6pe",

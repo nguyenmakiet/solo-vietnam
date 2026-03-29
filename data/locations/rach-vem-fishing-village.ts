@@ -17,6 +17,7 @@ export const rachVemFishingVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=10.36556980337033,103.93341470835864",
+  streetView: {},
   heroImage: heroUrl("rach-vem-fishing-village-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -17,6 +17,7 @@ export const saoBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=10.0134,104.0498",
+  streetView: {},
   heroImage: heroUrl("bai-sao-phu-quoc_ffa6xo"),   // ← public ID
   gallery: [
     "bai-sao-phu-quoc4_mkqxuw",

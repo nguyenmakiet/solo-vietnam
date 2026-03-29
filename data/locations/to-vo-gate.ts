@@ -22,6 +22,7 @@ export const toVoGate: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.390100951312618,109.09934087255056",
+  streetView: {},
   heroImage: heroUrl("to-vo-gate-ly-son-island-3_ksffdv"),
   gallery: [
     "to-vo-gate-ly-son-island-2_yozruq",

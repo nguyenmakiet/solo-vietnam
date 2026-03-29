@@ -17,6 +17,7 @@ export const catCoBeach: Location = {
   entranceFee: "Free (Cát Cò 1 and Cát Cò 3); ~30,000 VND (Cát Cò 2)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=20.71792329725481,107.05221565965415",
+  streetView: {},
   heroImage: heroUrl("cat-co-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

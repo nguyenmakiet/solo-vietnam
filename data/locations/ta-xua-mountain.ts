@@ -17,6 +17,7 @@ export const taXuaMountain: Location = {
   entranceFee: "Free (guide fee applies)",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.458552357466253,104.34445105702092",
+  streetView: {},
   heroImage: heroUrl("ta-xua-mountai-yen-bai-9_rccz64"),
    gallery: [
     "ta-xua-mountai-yen-bai-2_dsvkk3",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const minhMangTomb: Location = {
   slug: "minh-mang-tomb",
   name: "Minh Mạng Tomb",
-  provinces: ["thua-thien-hue"],
+  provinces: ["hue"],
   destination: "hue",
   lat: "16.387662100068777",
   lng: "107.57082605265036",
@@ -17,6 +17,7 @@ export const minhMangTomb: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.387662100068777,107.57082605265036",
+  streetView: {},
   heroImage: heroUrl("minh-mang-tomb2_bcwr7t"),
   gallery: [
     "minh-mang-tomb4_tbssnr",

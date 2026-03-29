@@ -17,6 +17,7 @@ export const maPiLengPass: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7 - best at sunrise",
   mapUrl: "https://maps.google.com/?q=23.1900,105.3800",
+  streetView: {},
   heroImage: heroUrl("ma-pi-leng-ha-giang_wxkyiu"),
   gallery: [
       "ma-pi-leng-ha-giang_2_kaidch",

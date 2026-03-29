@@ -17,6 +17,7 @@ export const duGiaVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.930340238883847,105.22274726498522",
+  streetView: {},
   heroImage: heroUrl("du-gia-village-hero_placeholder"),
   gallery: [],
   seoDescription:

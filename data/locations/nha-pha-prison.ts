@@ -21,6 +21,7 @@ export const nhaPhaPrison: Location = {
   entranceFee: "Free",
   openingHours: "Open during daylight hours",
   mapUrl: "https://www.google.com/maps?q=15.386246450441275,109.14170348441878",
+  streetView: {},
   heroImage: heroUrl("nha-pha-prison-ly-son-island-4_mbem6i"),
   gallery: [
     "nha-pha-prison-ly-son-island-6_jpwe1r",

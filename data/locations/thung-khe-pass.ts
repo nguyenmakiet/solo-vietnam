@@ -17,6 +17,7 @@ export const thungKhePass: Location = {
   entranceFee: "Free",
   openingHours: "Open; drive in daylight only",
   mapUrl: "https://www.google.com/maps?q=20.659973197100356,105.14358253798274",
+  streetView: {},
   heroImage: heroUrl("thung-khe-pass-05_ozvmui"),
   gallery: [
     "thung-khe-pass-06_y5sd27",

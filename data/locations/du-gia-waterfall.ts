@@ -17,6 +17,7 @@ export const duGiaWaterfall: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.92605491197045,105.1988164932612",
+  streetView: {},
   heroImage: heroUrl("du-gia-waterfall-hero_placeholder"),
   gallery: [],
   seoDescription:

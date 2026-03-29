@@ -17,6 +17,7 @@ export const catBaNationalPark: Location = {
   entranceFee: "~85,000 VND",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.793772701115774,106.98943675013382",
+  streetView: {},
   heroImage: heroUrl("cat-ba_national_park_pdjf7o"),
   gallery: [
     "cat-ba_national_park_pdjf7o",

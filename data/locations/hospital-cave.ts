@@ -17,6 +17,7 @@ export const hospitalCave: Location = {
   entranceFee: "~40,000 VND",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.77004838620462,107.02138423927063",
+  streetView: {},
   heroImage: heroUrl("hospital-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -17,6 +17,7 @@ export const tiTopIsland: Location = {
   entranceFee: "Included in Ha Long Bay Route 2 sightseeing ticket",
   openingHours: "Open during cruise hours (typically 7:30 AM – 5:00 PM)",
   mapUrl: "https://maps.google.com/?q=20.8658,107.1020",
+  streetView: {},
   heroImage: heroUrl("ti-top-island-hero_placeholder"),
   gallery: [
 

@@ -17,6 +17,7 @@ export const hoaLuAncientCapital: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.286875757053178,105.91801053940709",
+  streetView: {},
   heroImage: heroUrl("hoa-lu-ancient-capital4_yceoap"),
   gallery: [
     "hoa-lu-ancient-capital_hzuvjz",

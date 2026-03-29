@@ -17,6 +17,7 @@ export const nhatBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open all day (best at low tide)",
   mapUrl: "https://www.google.com/maps?q=8.644189602871363,106.6014777488132",
+  streetView: {},
   heroImage: heroUrl("nha-beach-con-dao-2_nq4srl"),
   gallery: [
     "nha-beach-con-dao-4_xsx3wf",

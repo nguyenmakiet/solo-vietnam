@@ -17,6 +17,7 @@ export const dragonBridge: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7; fire and water show: Sat & Sun 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=16.06124852539428,108.22810029126948",
+  streetView: {},
   heroImage: heroUrl("dragon-bridge-hero_placeholder"),
   gallery: [],
   seoDescription:

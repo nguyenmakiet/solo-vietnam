@@ -6,8 +6,8 @@ export const docLetBeach: Location = {
   name: "Dốc Lết Beach",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
-  lat: "12.550209286631508",
-  lng: "109.22816933280315",
+  lat: "12.549197725546506",
+  lng: "109.23014241805565",
   address: "Ninh Hải, Ninh Hoà, Khánh Hoà",
   type: "beach",
   categories: [],
@@ -17,6 +17,7 @@ export const docLetBeach: Location = {
   entranceFee: "~30,000–50,000 VND (some beach sections charge separately)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=12.550209286631508,109.22816933280315",
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1774771471886!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzRsLXItNmdF!2m2!1d12.55001981719517!2d109.2303784524443!3f32.54124489882476!4f12.534024462318953!5f0.7820865974627469",},
   heroImage: heroUrl("doc-let-beach-nha-trang_sryoek"),
   gallery: [
     "doc-let-beach-nha-trang_sryoek",

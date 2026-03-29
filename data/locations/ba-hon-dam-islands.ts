@@ -17,6 +17,7 @@ export const baHonDamIslands: Location = {
   entranceFee: "Free; boat charter from Kiên Hải or Rạch Giá required",
   openingHours: "Open daily; boat access dependent on sea conditions",
   mapUrl: "https://www.google.com/maps?q=10.142223284688743,104.49597050771709",
+  streetView: {},
   heroImage: heroUrl("ba-hon-dam-kien-giang_m8zges"),
   gallery: [
     "ba-hon-dam-kien-giang-7_vll4hr",

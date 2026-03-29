@@ -17,6 +17,7 @@ export const vietHaiVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.787857336300597,107.05828009939815",
+  streetView: {},
   heroImage: heroUrl("viet-hai-village-hero_placeholder"),
   gallery: [],
   seoDescription:

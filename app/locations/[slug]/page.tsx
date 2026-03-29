@@ -2,6 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { locationTheme } from "@/data/location"
 import { allLocations } from "@/data/all-locations"
+import { experiences } from "@/data/experiences"
 import LocationTabs from "./LocationTabs"
 import "./location.css"
 import NearbyLocations from "./NearbyLocations"
@@ -212,7 +213,36 @@ export default async function LocationPage({
           </div>
         )}
         {/* Nearby Locations */}
-            <NearbyLocations currentSlug={slug} />
+        <NearbyLocations currentSlug={slug} />
+
+        {/* Similar Experiences */}
+        {location.experiences.length > 0 && (() => {
+          const matched = location.experiences
+            .map(val => experiences.find(e => e.value === val))
+            .filter(Boolean) as typeof experiences
+          if (matched.length === 0) return null
+          return (
+            <div id="similar-experiences" className="section-anchor">
+              <div style={{ marginBottom: 16 }}>
+                <p className="section-label">
+                  <Link href="/experiences" className="section-label-link">Similar Experiences</Link>
+                </p>
+                <p style={{ fontSize: 14, color: "var(--text-muted, #6b7280)", marginTop: 4 }}>
+                  Explore more things to do like this around Vietnam
+                </p>
+              </div>
+              <div className="exp-links">
+                {matched.map(exp => (
+                  <Link key={exp.slug} href={`/experiences/${exp.slug}`} className="exp-link">
+                    <span className="exp-link-icon">{exp.icon}</span>
+                    <span className="exp-link-label">{exp.label}</span>
+                    <span className="exp-link-arrow">→</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
+        })()}
 
         {/* Bottom CTA */}
         {location.destination && (

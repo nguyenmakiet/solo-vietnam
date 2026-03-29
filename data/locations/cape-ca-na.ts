@@ -17,6 +17,7 @@ export const capeCaNa: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.33780195985091,108.86728048488189",
+  streetView: {},
   heroImage: heroUrl("cape-ca-na-beach-ninh-thuan-8_zv3i7t"),
   gallery: [
     "cape-ca-na-beach-ninh-thuan-4_wwhrr0",

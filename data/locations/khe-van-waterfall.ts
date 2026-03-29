@@ -17,6 +17,7 @@ export const kheVanWaterfall: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://maps.google.com/?q=21.7089,107.5231",
+  streetView: {},
   heroImage: heroUrl("khe-van-waterfall-binh-lieu-quang-ninh-2_hhplbn"),
   gallery: [
     "khe-van-waterfall-binh-lieu-quang-ninh-3_z9egne",

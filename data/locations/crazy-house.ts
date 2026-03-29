@@ -17,6 +17,7 @@ export const crazyHouse: Location = {
   entranceFee: "~60,000 VND",
   openingHours: "8:00 AM – 7:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.934822914969137,108.43136784176984",
+  streetView: {},
   heroImage: heroUrl("crazy-house-da-lat_bsys2a"),
   gallery: [
     "crazy-house-da-lat_bsys2a",

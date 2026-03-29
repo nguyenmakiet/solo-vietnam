@@ -17,6 +17,7 @@ export const quanBaHeavenGate: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.04948889805356,104.99321363748844",
+  streetView: {},
   heroImage: heroUrl("quan-ba-ha-giang_dm5mma"),
   gallery: [
     "quan-ba-ha-giang_dm5mma",

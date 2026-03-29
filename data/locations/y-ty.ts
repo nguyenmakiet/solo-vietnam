@@ -17,6 +17,7 @@ export const yTy: Location = {
   entranceFee: "Free (guide ~1,000,000 VND for Lảo Thẩn trek)",
   openingHours: "Open; overnight permit required for foreigners",
   mapUrl: "https://www.google.com/maps?q=22.657362311112333,103.61233893234572",
+  streetView: {},
   heroImage: heroUrl("y-ty-lao-cai-2_sanikk"),
   gallery: [
     "y-ty-lao-cai_jsgesc",

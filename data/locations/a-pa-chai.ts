@@ -17,6 +17,7 @@ export const aPaChai: Location = {
   entranceFee: "Free; border area permit required",
   openingHours: "Open daily; border area access requires prior permit from local authorities",
   mapUrl: "https://www.google.com/maps?q=22.401192335843305,102.14371962758165",
+  streetView: {},
   heroImage: heroUrl("a-pa-chai-dien-bien-3_cezsa3"),
   gallery: [
     "a-pa-chai-dien-bien-4_mieuhy",

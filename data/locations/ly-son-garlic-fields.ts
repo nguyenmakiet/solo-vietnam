@@ -22,6 +22,7 @@ export const lySonGarlicFields: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7 (farming fields - respect crops and stay on paths)",
   mapUrl: "https://www.google.com/maps?q=15.38142400159663,109.11882432420393",
+  streetView: {},
   heroImage: heroUrl("galic-field-ly-son-island-9_tbedmo"),
   gallery: [
     "galic-field-ly-son-island-5_l5uib5",

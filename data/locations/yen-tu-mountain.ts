@@ -17,6 +17,7 @@ export const yenTuMountain: Location = {
   entranceFee: "~40,000 VND; cable car additional ~200,000 VND one way",
   openingHours: "5:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=21.131344974258912,106.73006478199216",
+  streetView: {},
   heroImage: heroUrl("yen-tu-mountain-quang-ninh-5_pvafri"),
   gallery: [
     "yen-tu-mountain-quang-ninh-11_um6tll",

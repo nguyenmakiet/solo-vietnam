@@ -17,6 +17,7 @@ export const thungNhamBirdPark: Location = {
   entranceFee: "~130,000 VND (includes boat tour and cave visit)",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.22245746050601,105.88641480523839",
+  streetView: {},
   heroImage: heroUrl("thung-nham-bird-park_oy6ora"),
   gallery: [
     "thung-nham-bird-park_oy6ora",

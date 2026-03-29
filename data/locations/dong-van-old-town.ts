@@ -17,6 +17,7 @@ export const dongVanOldTown: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2739,105.3622",
+  streetView: {},
   heroImage: heroUrl("dong-van-old-town_yytvko"),
   gallery: [
     "dong-van-6_b6rdz6",

@@ -17,6 +17,7 @@ export const hamNinhFishingVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7 - best at 5–8am",
   mapUrl: "https://maps.google.com/?q=10.1792,104.0700",
+  streetView: {},
   heroImage: heroUrl("ham-ninh-placeholder"),
   gallery: [],
   seoDescription:

@@ -17,6 +17,7 @@ export const elephantWaterfall: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.823680791959426,108.33847133316729",
+  streetView: {},
   heroImage: heroUrl("elephant-waterfall-da-lat4_wa67dn"),
   gallery: [
     "elephant-water-fall-da-lat_izmdcz",

@@ -17,6 +17,7 @@ export const binhLieuBorderMountains: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.64893803864023,107.44002584112907",
+  streetView: {},
   heroImage: heroUrl("binh-lieu-quang-ninh-2_s8xai8"),
   gallery: [
     "binh-lieu-quang-ninh_eddysb",

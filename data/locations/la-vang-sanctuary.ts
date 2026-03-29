@@ -17,6 +17,7 @@ export const laVangSanctuary: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=16.706975257885,107.19547985549681",
+  streetView: {},
   heroImage: heroUrl("la-vang-sanctuary-2_eanomy"),
   gallery: [
     "la-vang-sanctuary-2_eanomy",

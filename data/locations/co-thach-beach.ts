@@ -17,6 +17,7 @@ export const coThachBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.17800572228083,108.71644682210062",
+  streetView: {},
   heroImage: heroUrl("co-thach-beach-4_us0alu"),
   gallery: [
     "co-thach-beach-2_eisxkc",

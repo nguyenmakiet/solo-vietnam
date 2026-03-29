@@ -17,6 +17,7 @@ export const muongHoaValley: Location = {
   entranceFee: "~70,000–90,000 VND at valley checkpoint",
   openingHours: "Open daily",
   mapUrl: "https://maps.google.com/?q=22.3100,103.8650",
+  streetView: {},
   heroImage: heroUrl("muong-hoa-valley4_wuxzg7"),
   gallery: [
     "muong-hoa-valley_moijqr",

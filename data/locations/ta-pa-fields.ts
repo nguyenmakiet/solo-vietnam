@@ -17,6 +17,7 @@ export const taPaFields: Location = {
   entranceFee: "Free",
   openingHours: "Open all day; best light before 8:00 AM and after 4:30 PM",
   mapUrl: "https://www.google.com/maps?q=ta+pa+fields+tri+ton+an+giang",
+  streetView: {},
   heroImage: heroUrl("ta-pa-field-an-giang-3_ibkstg"),
   gallery: [
     "ta-pa-field-an-giang-5_jhbwrn",
