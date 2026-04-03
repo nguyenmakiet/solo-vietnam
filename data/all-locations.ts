@@ -17,6 +17,7 @@ import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
 import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
 import { bauSau } from "@/data/locations/bau-sau"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
+import { benHaiRiver } from "@/data/locations/ben-hai-river"
 import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
@@ -25,6 +26,7 @@ import { buGiaMapNationalPark } from "@/data/locations/bu-gia-map-national-park"
 import { buiHuiGrassland } from "@/data/locations/bui-hui-grassland"
 import { bungBinhThienLake } from "@/data/locations/bung-binh-thien-lake"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
+import { caoDaiHolySee } from "@/data/locations/cao-dai-holy-see"
 import { capeCaNa } from "@/data/locations/cape-ca-na"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
 import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
@@ -81,6 +83,7 @@ import { imperialCity } from "@/data/locations/imperial-city-hue"
 import { japaneseBridge } from "@/data/locations/japanese-bridge"
 import { k50Waterfall } from "@/data/locations/k50-waterfall"
 import { keGaLighthouse } from "@/data/locations/ke-ga-lighthouse"
+import { keoPagoda } from "@/data/locations/keo-pagoda"
 import { khaiDinhTomb } from "@/data/locations/khai-dinh-tomb"
 import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
@@ -96,6 +99,7 @@ import { longSonPagoda } from "@/data/locations/long-son-pagoda"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { lungPo } from "@/data/locations/lung-po-red-river-source"
 import { lySonGarlicFields } from "@/data/locations/ly-son-garlic-fields"
+import { macDynastyCitadel } from "@/data/locations/mac-dynasty-citadel"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { mangLangChurch } from "@/data/locations/mang-lang-church"
 import { minhDamMountain } from "@/data/locations/minh-dam-mountain"
@@ -140,6 +144,7 @@ import { taPaFields } from "@/data/locations/ta-pa-fields"
 import { taPaTemple } from "@/data/locations/ta-pa-temple"
 import { taVanVillage } from "@/data/locations/ta-van-village"
 import { taXuaMountain } from "@/data/locations/ta-xua-mountain"
+import { tayPhuongPagoda } from "@/data/locations/tay-phuong-pagoda"
 import { tamCoc } from "@/data/locations/tam-coc"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
 import { thangHenLake } from "@/data/locations/thang-hen-lake"
@@ -187,6 +192,7 @@ export const allLocations: Location[] = [
   banGiocWaterfall,
   bauSau,
   bayMauCoconutForest,
+  benHaiRiver,
   benTreCoconutVillage,
   bichDongPagoda,
   bidoupNuiBaNationalPark,
@@ -195,6 +201,7 @@ export const allLocations: Location[] = [
   buiHuiGrassland,
   bungBinhThienLake,
   caiRangFloatingMarket,
+  caoDaiHolySee,
   capeCaNa,
   catBaCannonFort,
   catBaNationalPark,
@@ -251,6 +258,7 @@ export const allLocations: Location[] = [
   japaneseBridge,
   k50Waterfall,
   keGaLighthouse,
+  keoPagoda,
   khaiDinhTomb,
   khauCocChaPass,
   kheVanWaterfall,
@@ -266,6 +274,7 @@ export const allLocations: Location[] = [
   lungCuFlagTower,
   lungPo,
   lySonGarlicFields,
+  macDynastyCitadel,
   maPiLengPass,
   mangLangChurch,
   minhDamMountain,
@@ -310,6 +319,7 @@ export const allLocations: Location[] = [
   taPaTemple,
   taVanVillage,
   taXuaMountain,
+  tayPhuongPagoda,
   tamCoc,
   thamMaPass,
   thangHenLake,
