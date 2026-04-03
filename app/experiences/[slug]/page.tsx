@@ -36,7 +36,7 @@ export async function generateMetadata({
   const { slug } = await params
   return {
     alternates: {
-      canonical: `https://soloinvietnam.com/experiences/${slug}`,
+      canonical: `https://www.soloinvietnam.com/experiences/${slug}`,
     },
   }
 }

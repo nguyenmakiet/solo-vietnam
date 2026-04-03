@@ -11,7 +11,7 @@ export async function generateMetadata({
   const { slug } = await params
   return {
     alternates: {
-      canonical: `https://soloinvietnam.com/provinces/${slug}`,
+      canonical: `https://www.soloinvietnam.com/provinces/${slug}`,
     },
   }
 }
