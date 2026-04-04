@@ -19,7 +19,17 @@ export const doiNhaiBeach: Location = {
   mapUrl: "https://www.google.com/maps?q=10.378000,107.333000",
   streetView: { embedUrl: "" },
   heroImage: heroUrl("doi-nhai-beach-ba-ria-vung-tau"),
-  gallery: [],
+  gallery: [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
   seoDescription:
     "Đồi Nhái Beach is a 3.8km undeveloped stretch of coastline near Phước Tỉnh in Bà Rịa-Vũng Tàu - no facilities, no crowds, and one of the better sunrise spots on the southern coast within 100km of Ho Chi Minh City.",
   tips: [
