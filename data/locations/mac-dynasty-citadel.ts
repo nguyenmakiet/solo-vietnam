@@ -9,7 +9,7 @@ export const macDynastyCitadel: Location = {
   lat: "21.857162327899132",
   lng: "106.74889564559105",
   address: "Thị trấn Hòa Thuận, Quảng Hòa, Cao Bằng",
-  type: ["citadel", "heritage"],
+  type: ["citadel", "history", "heritage"],
   categories: [],
   experiences: ["history", "culture", "photography", "walking-tours"],
   tags: ["🏰 16th-Century Citadel", "🏛️ Mạc Dynasty", "📸 Photography", "🧭 Off the Beaten Path"],

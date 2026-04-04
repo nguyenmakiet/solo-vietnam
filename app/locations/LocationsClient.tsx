@@ -66,8 +66,8 @@ function themeColors(loc: Location): string {
   const map: Record<string, string> = {
     blue: "bg-sky-100 text-sky-700",
     green: "bg-emerald-100 text-emerald-700",
-    amber: "bg-amber-100 text-amber-700",
-    purple: "bg-purple-100 text-purple-700",
+    amber: "bg-[#fee2e2] text-[#b91c1c]",
+    purple: "bg-[#fff0eb] text-[#d53600]",
     gray: "bg-gray-100 text-gray-700",
   }
   return map[theme] ?? "bg-gray-100 text-gray-700"

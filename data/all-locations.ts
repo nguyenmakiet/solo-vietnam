@@ -6,6 +6,7 @@ import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { anBinhIsland } from "@/data/locations/an-binh-island"
 import { anHaiCommunalHouse } from "@/data/locations/an-hai-communal-house"
 import { anVinhCommunalHouse } from "@/data/locations/an-vinh-communal-house"
+import { baDanhPagoda } from "@/data/locations/ba-danh-pagoda"
 import { baDenMountain } from "@/data/locations/ba-den-mountain"
 import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
 import { baHonDamIslands } from "@/data/locations/ba-hon-dam-islands"
@@ -38,7 +39,9 @@ import { coThachBeach } from "@/data/locations/co-thach-beach"
 import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
+import { cuMiBeach } from "@/data/locations/cu-mi-beach"
 import { cuaDaiBeach } from "@/data/locations/cua-dai-beach"
+import { daPloaStream } from "@/data/locations/da-ploa-stream"
 import { dalatRailwayStation } from "@/data/locations/dalat-railway-station"
 import { damTrauBeach } from "@/data/locations/dam-trau-beach"
 import { darkCave } from "@/data/locations/dark-cave"
@@ -55,6 +58,7 @@ import { duGiaWaterfall } from "@/data/locations/du-gia-waterfall"
 import { ducPagoda } from "@/data/locations/duc-pagoda"
 import { duckStopPhongNha } from "@/data/locations/duck-stop-phong-nha"
 import { eightLadiesCave } from "@/data/locations/eight-ladies-cave"
+import { elephantMountain } from "@/data/locations/elephant-mountain"
 import { elephantWaterfall } from "@/data/locations/elephant-waterfall"
 import { fairyStream } from "@/data/locations/fairy-stream"
 import { fansipan } from "@/data/locations/fansipan"
@@ -147,6 +151,7 @@ import { taXuaMountain } from "@/data/locations/ta-xua-mountain"
 import { tayPhuongPagoda } from "@/data/locations/tay-phuong-pagoda"
 import { tamCoc } from "@/data/locations/tam-coc"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
+import { thuongPhuocBorderGate } from "@/data/locations/thuong-phuoc-border-gate"
 import { thangHenLake } from "@/data/locations/thang-hen-lake"
 import { thienMuPagoda } from "@/data/locations/thien-mu-pagoda"
 import { thoiLoiMountain } from "@/data/locations/thoi-loi-mountain"
@@ -181,6 +186,7 @@ export const allLocations: Location[] = [
   anBinhIsland,
   anHaiCommunalHouse,
   anVinhCommunalHouse,
+  baDanhPagoda,
   baDenMountain,
   baHoWaterfall,
   baHonDamIslands,
@@ -213,7 +219,9 @@ export const allLocations: Location[] = [
   conDaoNationalPark,
   conDaoPrison,
   crazyHouse,
+  cuMiBeach,
   cuaDaiBeach,
+  daPloaStream,
   dalatRailwayStation,
   damTrauBeach,
   darkCave,
@@ -230,6 +238,7 @@ export const allLocations: Location[] = [
   ducPagoda,
   duckStopPhongNha,
   eightLadiesCave,
+  elephantMountain,
   elephantWaterfall,
   fairyStream,
   fansipan,
@@ -322,6 +331,7 @@ export const allLocations: Location[] = [
   tayPhuongPagoda,
   tamCoc,
   thamMaPass,
+  thuongPhuocBorderGate,
   thangHenLake,
   thienMuPagoda,
   thoiLoiMountain,

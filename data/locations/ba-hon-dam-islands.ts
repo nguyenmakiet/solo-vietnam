@@ -8,13 +8,13 @@ export const baHonDamIslands: Location = {
   destination: "",
   lat: "10.142223284688743",
   lng: "104.49597050771709",
-  address: "Kiên Hải, Kiên Giang",
+  address: "Quần đảo Bà Lụa, Kiên Lương, Kiên Giang",
   type: ["island", "beach", "nature"],
   categories: [],
-  experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping"],
+  experiences: ["beaches", "snorkeling", "boat-tours", "photography", "camping"],
   tags: ["🏝️ Remote Islands", "🤿 Snorkeling", "🚣 Boat Trip", "🏕️ Island Camping"],
   bestTime: "Nov - May (dry season with calm seas and good visibility for snorkeling; wet season Jun - Oct brings rough conditions and unreliable boat access)",
-  entranceFee: "Free; boat charter from Kiên Hải or Rạch Giá required",
+  entranceFee: "Free; boat ticket from Kiên Lương ~200,000 VND/person or charter 1,700,000 - 2,500,000 VND",
   openingHours: "Open daily; boat access dependent on sea conditions",
   mapUrl: "https://www.google.com/maps?q=10.142223284688743,104.49597050771709",
   streetView: {},
@@ -31,22 +31,22 @@ export const baHonDamIslands: Location = {
     "ba-hon-dam-kien-giang-6_bolk0l",
   ],
   seoDescription:
-    "Ba Hòn Đầm is a cluster of remote islands in Kiên Giang province - undeveloped, rarely visited, and accessible only by chartered boat from Kiên Hải island, with clear water, coral reefs, and basic fishing community homestay.",
+    "Ba Hòn Đầm is a cluster of three small islands in the Bà Lụa Archipelago, Kiên Lương - undeveloped, rarely visited by foreigners, and reached by a 30-minute boat from Kiên Lương pier, with clear water, rocky coves, and basic overnight options on the island.",
   tips: [
-    "Charter a boat from Kiên Hải island rather than from Rạch Giá mainland - the crossing is shorter and the boat operators from Kiên Hải know the waters around Ba Hòn Đầm well",
-    "Bring all supplies for the visit - there are no shops or restaurants on the islands; the fishing community may offer basic food but do not rely on this",
-    "The coral reefs around the islands are in better condition than most of the Kiên Giang coast - bring snorkeling gear as rentals are unavailable",
-    "Camping overnight on the islands is possible with permission from the community - the experience of the islands at dawn before any boats arrive is significantly better than a day visit",
-    "Ba Hòn Đầm is most easily visited as part of a Kiên Hải island-hopping circuit - Kiên Hải itself and the nearby Hòn Tre island are worth including in the same trip",
+    "The departure point is the Kiên Lương pier (bến tàu Kiên Lương) in Kiên Lương town - not from Rạch Giá or Kiên Hải island. Tàu cao tốc runs out to the islands for around 200,000 VND per person",
+    "For groups, chartering a private boat at the pier costs around 1,700,000 - 2,500,000 VND depending on season and boat size - worth it for flexibility to island-hop between the three islands",
+    "Ba Hòn Đầm is made up of three distinct islands: Đầm Dương (best for swimming), Đầm Đước (colourful pebble beach, good for photos), and Đầm Giếng (long wild sandbar) - each has a different character",
+    "Overnight options on the island include Little Garden Bungalow (~250,000 VND/night) and basic guesthouses - camping is also possible. Staying overnight to catch sunrise before day visitors arrive is strongly worth it",
+    "The three islands are close enough to swim between in calm conditions - the water is shallow between them, which is part of what makes Ba Hòn Đầm unusual compared to other island clusters",
   ],
   content: {
     intro:
-      "Ba Hòn Đầm is a small cluster of islands in the Kiên Hải island group, Kiên Giang province, in the Gulf of Thailand southwest of Rạch Giá. The islands are among the least developed in a province that includes Phú Quốc - a name now synonymous with mass tourism - but whose outer island groups remain largely untouched by the infrastructure that has transformed the larger island. Ba Hòn Đầm has no resort, no regular ferry, and no tourist facilities: access requires a chartered boat from Kiên Hải island or the Rạch Giá mainland, and the only residents are a small fishing community. The surrounding water has coral reefs in reasonable condition and visibility good enough for snorkeling without specialised equipment. The islands represent the Kiên Giang archipelago as it was before development - a working fishing landscape with incidental natural beauty.",
+      "Ba Hòn Đầm sits within the Bà Lụa Archipelago - a group of over 34 islands covering roughly 70 km² of sea between Hà Tiên and Phú Quốc in Kiên Giang province. The name refers to three specific islands: Hòn Đầm Dương, Hòn Đầm Đước, and Hòn Đầm Giếng - each with a distinct coastal character, from sandy coves to pebble beaches to rocky shoreline. The islands are constructed from Paleozoic sedimentary rock, giving them a different texture from the limestone karsts of Hạ Long or the granite boulders of Côn Đảo. What draws visitors is the combination of clear Gulf of Thailand water, minimal development, and the unusual feature of being able to swim freely between the three islands due to the shallow water connecting them. The Bà Lụa Archipelago as a whole remains one of the least-developed island groups in Kiên Giang - a province that has seen Phú Quốc transform beyond recognition over the past decade.",
     howToGetThere:
-      "Ba Hòn Đầm is reached by chartered boat from Kiên Hải island, which is itself accessible by regular ferry from Rạch Giá city on the Kiên Giang mainland. From Rạch Giá, ferries to Kiên Hải run multiple times daily and the crossing takes about 45 minutes. From Kiên Hải island, a chartered boat to Ba Hòn Đầm takes approximately 30-45 minutes depending on conditions and the specific islands visited. Rạch Giá is 120km from Cần Thơ and accessible by bus or car from HCMC in about 4 hours. The journey from HCMC to Ba Hòn Đầm requires an overnight in Rạch Giá or Kiên Hải.",
+      "Ba Hòn Đầm is reached from the Kiên Lương pier in Kiên Lương town, Kiên Giang. From Ho Chi Minh City, buses to Kiên Lương depart from Miền Tây bus station - the journey takes around 10 hours by overnight coach (150,000 - 250,000 VND), or 6 hours by motorbike. From Rạch Giá city, Kiên Lương is approximately 60km west along Highway 80 - about 1.5 hours by road. At the pier, tàu cao tốc runs out to the islands for around 200,000 VND per person with a crossing time of about 30 minutes. Groups can charter a private boat directly at the pier for 1,700,000 - 2,500,000 VND depending on season. Motorbikes can be stored at local houses near the pier for around 15,000 VND per night.",
     whatToExpect:
-      "The islands are small - walkable in under an hour - with rocky coastlines, small sandy coves, and clear water around the reef areas. The fishing community on the main island lives in basic stilted houses and maintains the boats used for fishing the surrounding reef. The coral around the island edges supports fish life visible from the surface and in good condition at snorkeling depth. The water clarity in the dry season is excellent. There are no facilities, no accommodation beyond community homestay if arranged in advance, and no organised activities - the visit is self-directed and quiet in a way that resort islands cannot replicate.",
+      "Each of the three islands offers something different. Đầm Dương has the best swimming conditions - calm water and a sandy entry. Đầm Đước has a distinctive multi-coloured pebble beach that makes for strong photography. Đầm Giếng has a longer wild sandbar and a more remote feel. The water between the islands is shallow enough to wade or swim across in dry season, making it possible to move between all three without returning to the boat. Seafood can be collected directly from the reef or eaten at basic restaurants on the island. Accommodation is limited but present - Little Garden Bungalow at around 250,000 VND per night is the most established option, with camping also available.",
     travelTips:
-      "Ba Hòn Đầm is for travellers who specifically want an undeveloped island experience and are comfortable with the logistics of reaching it. The comparison with Phú Quốc is instructive: the same province, the same Gulf of Thailand water, but a completely different experience of place. The Kiên Hải island group as a whole - including Kiên Hải island, Hòn Tre, and Ba Hòn Đầm - makes a coherent 2-3 day island itinerary from Rạch Giá that requires no resort booking and no tour package. For travellers who have been disappointed by how developed Phú Quốc has become, this outer island group is the alternative that still delivers the isolation that Phú Quốc once had.",
+      "Kiên Lương is not on the standard tourist circuit and Ba Hòn Đầm appears on almost no foreign-language travel resources - which is the point. The comparison with Phú Quốc is instructive: same province, same Gulf of Thailand water, fundamentally different experience. The Bà Lụa Archipelago also includes Hòn Heo - the largest island in the group, with old-growth forest, a pagoda (Sơn Hải Tự), and unusual basalt rock formations worth visiting if mày has an extra half-day. The overnight option on Ba Hòn Đầm is worth taking seriously - sunrise on the island before any day boats arrive is a different experience from the midday visit most people do.",
   },
 }
