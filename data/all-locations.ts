@@ -50,6 +50,7 @@ import { dauTiengLake } from "@/data/locations/dau-tieng-lake"
 import { diepSonIsland } from "@/data/locations/diep-son-island"
 import { dinhMountain } from "@/data/locations/dinh-mountain"
 import { docLetBeach } from "@/data/locations/doc-let-beach"
+import { doiNhaiBeach } from "@/data/locations/doi-nhai-beach"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
 import { dragonBridge } from "@/data/locations/dragon-bridge"
 import { drayNurDraySapWaterfalls } from "@/data/locations/dray-nur-dray-sap-waterfalls"
@@ -74,6 +75,7 @@ import { hangEn } from "@/data/locations/hang-en"
 import { hangMua } from "@/data/locations/hang-mua"
 import { hangPagoda } from "@/data/locations/hang-pagoda"
 import { hangRai } from "@/data/locations/hang-rai"
+import { hoChiMinhChildhoodHome } from "@/data/locations/ho-chi-minh-childhood-home"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
 import { hoaLuAncientCapital } from "@/data/locations/hoa-lu-ancient-capital"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
@@ -106,12 +108,14 @@ import { lySonGarlicFields } from "@/data/locations/ly-son-garlic-fields"
 import { macDynastyCitadel } from "@/data/locations/mac-dynasty-citadel"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { mangLangChurch } from "@/data/locations/mang-lang-church"
+import { masaraHill } from "@/data/locations/masara-hill"
 import { minhDamMountain } from "@/data/locations/minh-dam-mountain"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
 import { mocChauTeaHills } from "@/data/locations/moc-chau-tea-hills"
 import { moocSpring } from "@/data/locations/mooc-spring"
 import { muiDien } from "@/data/locations/mui-dien"
 import { muiNeFishingVillage } from "@/data/locations/mui-ne-fishing-village"
+import { muiTroFishingVillage } from "@/data/locations/mui-tro-fishing-village"
 import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { mySonSanctuary } from "@/data/locations/my-son-sanctuary"
@@ -127,6 +131,7 @@ import { paradiseCave } from "@/data/locations/paradise-cave"
 import { phongNamValley } from "@/data/locations/phong-nam-valley"
 import { phongNhaBotanicGarden } from "@/data/locations/phong-nha-botanic-garden"
 import { phongNhaCave } from "@/data/locations/phong-nha-cave"
+import { phuocTinhFishingVillage } from "@/data/locations/phuoc-tinh-fishing-village"
 import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
 import { plateRockReef } from "@/data/locations/plate-rock-reef"
 import { poNagarChamTowers } from "@/data/locations/po-nagar-cham-towers"
@@ -172,6 +177,7 @@ import { vietHaiVillage } from "@/data/locations/viet-hai-village"
 import { vinpearlCableCar } from "@/data/locations/vinpearl-cable-car"
 import { vinpearlSafari } from "@/data/locations/vinpearl-safari"
 import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
+import { vinhTrungFields } from "@/data/locations/vinh-trung-fields"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { yTy } from "@/data/locations/y-ty"
 import { yavlyWaterfall } from "@/data/locations/yavly-waterfall"
@@ -230,6 +236,7 @@ export const allLocations: Location[] = [
   diepSonIsland,
   dinhMountain,
   docLetBeach,
+  doiNhaiBeach,
   dongVanOldTown,
   dragonBridge,
   drayNurDraySapWaterfalls,
@@ -254,6 +261,7 @@ export const allLocations: Location[] = [
   hangMua,
   hangPagoda,
   hangRai,
+  hoChiMinhChildhoodHome,
   hoQuocPagoda,
   hoaLuAncientCapital,
   hoiAnAncientTown,
@@ -286,12 +294,14 @@ export const allLocations: Location[] = [
   macDynastyCitadel,
   maPiLengPass,
   mangLangChurch,
+  masaraHill,
   minhDamMountain,
   minhMangTomb,
   mocChauTeaHills,
   moocSpring,
   muiDien,
   muiNeFishingVillage,
+  muiTroFishingVillage,
   muongHoaValley,
   myKheBeach,
   mySonSanctuary,
@@ -307,6 +317,7 @@ export const allLocations: Location[] = [
   phongNamValley,
   phongNhaBotanicGarden,
   phongNhaCave,
+  phuocTinhFishingVillage,
   phuQuocNightMarket,
   plateRockReef,
   poNagarChamTowers,
@@ -352,6 +363,7 @@ export const allLocations: Location[] = [
   vinpearlCableCar,
   vinpearlSafari,
   vinWondersPhuQuoc,
+  vinhTrungFields,
   whiteSandDunes,
   yTy,
   yavlyWaterfall,
