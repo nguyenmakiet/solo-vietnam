@@ -11,7 +11,7 @@ export const muiTroFishingVillage: Location = {
   address: "Near Cô Thạch, Tuy Phong, Bình Thuận",
   type: ["nature", "beach", "cultural"],
   categories: [],
-  experiences: ["photography", "camping", "beaches", "walking-tours", "cycling"],
+  experiences: ["photography", "camping", "beach", "walking-tour", "cycling"],
   tags: ["🎣 Unknown Fishing Village", "🏕️ Wild Camping", "📸 Photography", "🌊 Rocky Coast"],
   bestTime: "Nov – Apr (dry season; calmer sea and better camping conditions)",
   entranceFee: "Free",

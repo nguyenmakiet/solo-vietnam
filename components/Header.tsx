@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation"
 import "./header.css"
 
 const NAV_LINKS = [
-  { href: "/destinations", label: "Destinations" },
   { href: "/provinces", label: "Provinces" },
+  { href: "/locations", label: "Locations" },
   { href: "/experiences", label: "Experiences" },
   { href: "/blog", label: "Blog" },
   { href: "/map", label: "Map" },

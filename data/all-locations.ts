@@ -12,11 +12,14 @@ import { baDenMountain } from "@/data/locations/ba-den-mountain"
 import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
 import { baHonDamIslands } from "@/data/locations/ba-hon-dam-islands"
 import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
+import { baOmLake } from "@/data/locations/ba-om-lake"
 import { bacSonValley } from "@/data/locations/bac-son-valley"
+import { backBeachVungTau } from "@/data/locations/back-beach-vung-tau"
 import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
 import { baiMonBeach } from "@/data/locations/bai-mon-beach"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
 import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
+import { batPagodaSocTrang } from "@/data/locations/bat-pagoda-soc-trang"
 import { bauSau } from "@/data/locations/bau-sau"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
 import { benHaiRiver } from "@/data/locations/ben-hai-river"
@@ -30,6 +33,7 @@ import { buiHuiGrassland } from "@/data/locations/bui-hui-grassland"
 import { bungBinhThienLake } from "@/data/locations/bung-binh-thien-lake"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
 import { caoDaiHolySee } from "@/data/locations/cao-dai-holy-see"
+import { canGioBeach } from "@/data/locations/can-gio-beach"
 import { canGioMonkeyIsland } from "@/data/locations/can-gio-monkey-island"
 import { capeCaNa } from "@/data/locations/cape-ca-na"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
@@ -100,6 +104,7 @@ import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { khauPhaPass } from "@/data/locations/khau-pha-pass"
 import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { khemBeach } from "@/data/locations/khem-beach"
+import { konTumWoodenChurch } from "@/data/locations/kon-tum-wooden-church"
 import { kyCoBeach } from "@/data/locations/ky-co-beach"
 import { laNgauStream } from "@/data/locations/la-ngau-stream"
 import { laVangSanctuary } from "@/data/locations/la-vang-sanctuary"
@@ -137,6 +142,7 @@ import { ongCopBridge } from "@/data/locations/ong-cop-bridge"
 import { paSyWaterfall } from "@/data/locations/pa-sy-waterfall"
 import { pacBoHistoricSite } from "@/data/locations/pac-bo-historic-site"
 import { paradiseCave } from "@/data/locations/paradise-cave"
+import { phiLiengWaterfall } from "@/data/locations/phi-lieng-waterfall"
 import { phongNamValley } from "@/data/locations/phong-nam-valley"
 import { phongNhaBotanicGarden } from "@/data/locations/phong-nha-botanic-garden"
 import { phongNhaCave } from "@/data/locations/phong-nha-cave"
@@ -144,6 +150,7 @@ import { phuocBinhBeach } from "@/data/locations/phuoc-binh-beach"
 import { phuocHaiFishingVillage } from "@/data/locations/phuoc-hai-fishing-village"
 import { phuocTinhFishingVillage } from "@/data/locations/phuoc-tinh-fishing-village"
 import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
+import { phuQuyIsland } from "@/data/locations/phu-quy-island"
 import { plateRockReef } from "@/data/locations/plate-rock-reef"
 import { poNagarChamTowers } from "@/data/locations/po-nagar-cham-towers"
 import { pongourWaterfall } from "@/data/locations/pongour-waterfall"
@@ -210,11 +217,14 @@ export const allLocations: Location[] = [
   baHoWaterfall,
   baHonDamIslands,
   baNaCableCar,
+  baOmLake,
   bacSonValley,
+  backBeachVungTau,
   baiDinhPagoda,
   baiMonBeach,
   baiTuLongBay,
   banGiocWaterfall,
+  batPagodaSocTrang,
   bauSau,
   bayMauCoconutForest,
   benHaiRiver,
@@ -228,6 +238,7 @@ export const allLocations: Location[] = [
   bungBinhThienLake,
   caiRangFloatingMarket,
   caoDaiHolySee,
+  canGioBeach,
   canGioMonkeyIsland,
   capeCaNa,
   catBaCannonFort,
@@ -298,6 +309,7 @@ export const allLocations: Location[] = [
   khauPhaPass,
   kheVanWaterfall,
   khemBeach,
+  konTumWoodenChurch,
   kyCoBeach,
   laNgauStream,
   laVangSanctuary,
@@ -335,6 +347,7 @@ export const allLocations: Location[] = [
   paSyWaterfall,
   pacBoHistoricSite,
   paradiseCave,
+  phiLiengWaterfall,
   phongNamValley,
   phongNhaBotanicGarden,
   phongNhaCave,
@@ -342,6 +355,7 @@ export const allLocations: Location[] = [
   phuocHaiFishingVillage,
   phuocTinhFishingVillage,
   phuQuocNightMarket,
+  phuQuyIsland,
   plateRockReef,
   poNagarChamTowers,
   pongourWaterfall,

@@ -11,7 +11,7 @@ export const phuocTinhFishingVillage: Location = {
   address: "Phước Tỉnh, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["nature", "cultural", "beach"],
   categories: [],
-  experiences: ["food", "culture", "walking-tours"],
+  experiences: ["food", "culture", "walking-tour"],
   tags: ["🎣 Active Fishing Port", "🦐 Fresh Seafood", "📸 Photography", "🚢 Fishing Fleet"],
   bestTime: "Nov – Apr (dry season; calmer sea, fishing activity highest)",
   entranceFee: "Free",

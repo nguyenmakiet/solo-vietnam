@@ -97,10 +97,10 @@ const PROVINCE_REGION: Record<string, "north" | "central" | "south"> = {
 }
 
 const COLORS = {
-  north: { base: "#bfdbfe", hover: "#3b82f6" },
-  central: { base: "#bbf7d0", hover: "#22c55e" },
-  south: { base: "#fed7aa", hover: "#f97316" },
-  unknown: { base: "#e5e7eb", hover: "#9ca3af" },
+  north: { base: "#c0d5ec", hover: "#6b9fc4" },
+  central: { base: "#bcd9c2", hover: "#5a9e6f" },
+  south: { base: "#f2d4a8", hover: "#c8784a" },
+  unknown: { base: "#e8dfd0", hover: "#a89880" },
 }
 
 export default function VietnamMap() {
@@ -117,21 +117,21 @@ export default function VietnamMap() {
 
   return (
     <div
-      className="flex flex-col items-center gap-8 py-12 px-4 bg-stone-50"
+      className="flex flex-col items-center gap-8 py-4 px-4"
       onClick={() => setTooltip(null)}
     >
 
       {/* Legend */}
       <div className="flex flex-wrap justify-center gap-5 text-sm font-medium">
         {[
-          { color: "#bfdbfe", label: "North" },
-          { color: "#bbf7d0", label: "Central" },
-          { color: "#fed7aa", label: "South" },
-        ].map(({ color, label }) => (
-          <div key={label} className="flex items-center gap-2 text-gray-600">
-            <div style={{ background: color }} className="w-3 h-3 rounded-full border border-gray-200" />
+          { color: "#c0d5ec", label: "North", href: "/north-vietnam" },
+          { color: "#bcd9c2", label: "Central", href: "/central-vietnam" },
+          { color: "#f2d4a8", label: "South", href: "/south-vietnam" },
+        ].map(({ color, label, href }) => (
+          <a key={label} href={href} className="flex items-center gap-2 transition-opacity hover:opacity-70" style={{ color: "#7a6a52", textDecoration: "none" }}>
+            <div style={{ background: color, border: "1px solid #d4c4a8" }} className="w-3 h-3 rounded-full" />
             {label}
-          </div>
+          </a>
         ))}
       </div>
 
@@ -149,8 +149,8 @@ export default function VietnamMap() {
                 key={location.id}
                 d={location.path}
                 fill={colors.base}
-                stroke="black"
-                strokeWidth="0.8"
+                stroke="#a89880"
+                strokeWidth="0.6"
                 strokeLinejoin="round"
                 style={{
                   cursor: "pointer",
@@ -197,30 +197,32 @@ export default function VietnamMap() {
               className="absolute w-60"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+              <div className="rounded-2xl shadow-xl overflow-hidden" style={{ background: "#fefcf8", border: "1px solid #e2d8c8" }}>
 
                 {/* Header accent bar */}
-                <div className={`h-1 w-full ${
-                  region === "north" ? "bg-blue-400"
-                  : region === "central" ? "bg-green-400"
-                  : region === "south" ? "bg-orange-400"
-                  : "bg-gray-300"
-                }`} />
+                <div style={{
+                  height: 3,
+                  width: "100%",
+                  background: region === "north" ? "#6b9fc4"
+                    : region === "central" ? "#5a9e6f"
+                    : region === "south" ? "#c8784a"
+                    : "#a89880"
+                }} />
 
                 <div className="p-3">
-                  <div className="font-bold text-gray-900 text-sm mb-1 tracking-tight">
+                  <div className="font-bold text-sm mb-1 tracking-tight" style={{ color: "#2d2110" }}>
                     {tooltip.name}
                   </div>
 
                   {province?.popupIntro && (
-                    <p className="text-gray-500 text-[11px] leading-relaxed mb-2.5">
+                    <p className="text-[11px] leading-relaxed mb-2.5" style={{ color: "#7a6a52" }}>
                       {province.popupIntro}
                     </p>
                   )}
 
                   {provinceLocations.length > 0 && (
                     <>
-                      <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1.5">
+                      <div className="text-[10px] font-semibold uppercase tracking-widest mb-1.5" style={{ color: "#a89880" }}>
                         Top Locations
                       </div>
                       <ul className="space-y-1 mb-2.5">
@@ -228,9 +230,12 @@ export default function VietnamMap() {
                           <li key={l.slug}>
                             <button
                               onClick={() => router.push(`/locations/${l.slug}`)}
-                              className="flex items-center gap-1.5 text-[11px] text-gray-600 hover:text-blue-500 transition-colors w-full text-left"
+                              className="flex items-center gap-1.5 text-[11px] transition-colors w-full text-left"
+                              style={{ color: "#7a6a52" }}
+                              onMouseEnter={e => (e.currentTarget.style.color = "#c8a96e")}
+                              onMouseLeave={e => (e.currentTarget.style.color = "#7a6a52")}
                             >
-                              <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0" />
+                              <span className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: "#c4b49a" }} />
                               {l.name}
                             </button>
                           </li>
@@ -242,7 +247,10 @@ export default function VietnamMap() {
                   {province && tooltip.slug && (
                     <button
                       onClick={() => router.push(`/provinces/${tooltip.slug}`)}
-                      className="text-[11px] font-semibold text-blue-500 flex items-center gap-1 hover:text-blue-700 transition-colors"
+                      className="text-[11px] font-semibold flex items-center gap-1 transition-colors"
+                      style={{ color: "#c8a96e" }}
+                      onMouseEnter={e => (e.currentTarget.style.color = "#a07c3a")}
+                      onMouseLeave={e => (e.currentTarget.style.color = "#c8a96e")}
                     >
                       Explore guide
                       <span className="text-[10px]">→</span>
@@ -250,7 +258,7 @@ export default function VietnamMap() {
                   )}
 
                   {!province && (
-                    <div className="text-[11px] text-gray-400 italic">
+                    <div className="text-[11px] italic" style={{ color: "#a89880" }}>
                       Guide coming soon
                     </div>
                   )}
@@ -264,7 +272,10 @@ export default function VietnamMap() {
       {/* Browse link */}
       <a
         href="/provinces"
-        className="text-sm text-gray-400 hover:text-gray-700 underline underline-offset-4 transition"
+        className="text-sm font-medium underline underline-offset-4 transition"
+        style={{ color: "#c8a96e" }}
+        onMouseEnter={e => (e.currentTarget.style.color = "#a07c3a")}
+        onMouseLeave={e => (e.currentTarget.style.color = "#c8a96e")}
       >
         Browse all provinces →
       </a>

@@ -11,7 +11,7 @@ export const templeOfLiterature: Location = {
   address: "Quốc Tử Giám, Đống Đa, Hà Nội",
   type: ["temple", "heritage", "history", "cultural", "landmark"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ Vietnam's First University", "📸 Architecture", "🇻🇳 National Heritage", "🎓 Confucian Temple"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat and rain)",
   entranceFee: "~30,000 VND",

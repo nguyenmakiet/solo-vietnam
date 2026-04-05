@@ -228,17 +228,24 @@ export default function MapPage() {
           {/* Popup */}
           {selectedLoc && (
             <div className="map-popup" onClick={(e) => e.stopPropagation()}>
-              <div className="map-popup-bar" />
-              <div className="map-popup-body">
-                <div className="map-popup-name">{selectedLoc.name}</div>
-                <div className="map-popup-province">📍 {getProvinceLabel(selectedLoc)}</div>
-                <div className="map-popup-footer">
-                  <Link href={`/locations/${selectedLoc.slug}`} className="map-popup-link">
-                    View Location →
-                  </Link>
-                  <button className="map-popup-close" onClick={() => setSelectedLoc(null)}>✕</button>
+              <Link href={`/locations/${selectedLoc.slug}`} className="map-popup-card-link">
+                <div className="map-popup-thumb">
+                  <img
+                    src={selectedLoc.heroImage || "/images/coming-soon.jpg"}
+                    alt={selectedLoc.name}
+                    className="map-popup-thumb-img"
+                    onError={(e) => { e.currentTarget.src = "/images/coming-soon.jpg" }}
+                  />
                 </div>
-              </div>
+                <div className="map-popup-body">
+                  <div className="map-popup-name">{selectedLoc.name}</div>
+                  <div className="map-popup-province">📍 {getProvinceLabel(selectedLoc)}</div>
+                  <div className="map-popup-footer">
+                    <span className="map-popup-link">View Location →</span>
+                    <button className="map-popup-close" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setSelectedLoc(null) }}>✕</button>
+                  </div>
+                </div>
+              </Link>
             </div>
           )}
         </div>

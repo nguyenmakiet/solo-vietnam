@@ -11,7 +11,7 @@ export const honSonIsland: Location = {
   address: "Lại Sơn, Kiên Hải, Kiên Giang",
   type: ["island", "beach", "nature"],
   categories: [],
-  experiences: ["beaches", "snorkeling", "boat-tours", "photography", "cycling", "motorcycling"],
+  experiences: ["beach", "snorkeling", "boat-tour", "photography", "cycling", "motorcycling"],
   tags: ["🏝️ Hidden Gulf Island", "🤿 Snorkeling", "🌊 Clear Water", "🚴 Island Cycling"],
   bestTime: "Nov – May (dry season with calm seas and clear water; wet season Jun – Oct brings rough conditions)",
   entranceFee: "Free; boat fare from Rạch Giá or Kiên Hải applies",

@@ -101,12 +101,12 @@
 
 /* Map container */
 .home-map-wrap {
-  background: var(--white);
+  background: linear-gradient(160deg, #fdf9f2 0%, #f7f0e4 100%);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 32px;
   margin-bottom: 16px;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(120, 90, 40, 0.08), 0 1px 4px rgba(120, 90, 40, 0.04);
 }
 .home-map-legend {
   display: flex;
@@ -601,11 +601,13 @@
   font-weight: 700;
   color: #fff;
   margin-bottom: 2px;
+  text-align: left;
 }
 
 .home-map-cta-sub {
   font-size: 12px;
   color: rgba(255,255,255,0.45);
+  text-align: left;
 }
 
 .home-map-cta-btn {

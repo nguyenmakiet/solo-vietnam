@@ -11,7 +11,7 @@ export const canGioMonkeyIsland: Location = {
   address: "Đảo Khỉ, Lý Nhơn, Cần Giờ, TP. Hồ Chí Minh",
   type: ["nature", "attraction", "island", "history"],
   categories: [],
-  experiences: ["wildlife", "boat-tours", "photography", "culture", "history"],
+  experiences: ["wildlife", "boat-tour", "photography", "culture", "history"],
   tags: ["🐒 Wild Monkeys", "🌿 Mangrove Forest", "🚤 Boat Tour", "🌊 UNESCO Biosphere"],
   bestTime: "Nov – Apr (dry season; more comfortable and better boat conditions)",
   entranceFee: "~150,000 – 200,000 VND (includes boat transfer to island)",

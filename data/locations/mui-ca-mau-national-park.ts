@@ -11,7 +11,7 @@ export const muiCaMauNationalPark: Location = {
   address: "Đất Mũi, Ngọc Hiển, Cà Mau",
   type: ["nature", "forest", "landmark", "heritage"],
   categories: [],
-  experiences: ["boat-tours", "wildlife", "photography", "walking-tours", "cycling"],
+  experiences: ["boat-tour", "wildlife", "photography", "walking-tour", "cycling"],
   tags: ["🗺️ Southernmost Point of Vietnam", "🌿 Mangrove Forest", "🐦 Wildlife", "🚤 Boat Tour"],
   bestTime: "Nov – Apr (dry season; boat access reliable and mangrove trails passable)",
   entranceFee: "~20,000 VND park entry; boat tours additional",

@@ -11,7 +11,7 @@ export const vinhTrungFields: Location = {
   address: "Vĩnh Trung, Tịnh Biên, An Giang",
   type: ["nature", "cultural"],
   categories: [],
-  experiences: ["photography", "walking-tours", "culture", "motorcycling"],
+  experiences: ["photography", "walking-tour", "culture", "motorcycling"],
   tags: ["🌾 Thất Sơn Farmland", "📸 Photography", "🚴 Cycling", "🏔️ Núi Cấm Backdrop"],
   bestTime: "Nov – Jan (harvest season, golden fields; dry and cool); May – Jun (young green rice after planting)",
   entranceFee: "Free",

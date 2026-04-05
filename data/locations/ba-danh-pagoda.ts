@@ -11,7 +11,7 @@ export const baDanhPagoda: Location = {
   address: "Xã Liêm Sơn, Thanh Liêm, Hà Nam",
   type: ["pagoda", "cultural", "heritage"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🛕 Quietest Pagoda in Vietnam", "🌿 Riverside Setting", "📸 Photography", "🧘 Peaceful Retreat"],
   bestTime: "Oct – Apr (cool and dry season)",
   entranceFee: "Free",

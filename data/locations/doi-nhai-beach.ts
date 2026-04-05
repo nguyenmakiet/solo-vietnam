@@ -11,7 +11,7 @@ export const doiNhaiBeach: Location = {
   address: "Phước Tỉnh, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["beach", "nature"],
   categories: [],
-  experiences: ["photography", "trekking", "beaches", "camping"],
+  experiences: ["photography", "trekking", "beach", "camping"],
   tags: ["🌄 Coastal Viewpoint", "🏕️ Wild Camping", "📸 Sunrise Photography", "🌊 Undeveloped Beach"],
   bestTime: "Nov – Apr (dry season; clear skies for viewpoint photography and calmer sea)",
   entranceFee: "Free",

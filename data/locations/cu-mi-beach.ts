@@ -11,7 +11,7 @@ export const cuMiBeach: Location = {
   address: "Tân Thành, Hàm Tân, Bình Thuận",
   type: ["beach", "nature"],
   categories: [],
-  experiences: ["beaches", "swimming", "photography", "motorcycling"],
+  experiences: ["beach", "swimming", "photography", "motorcycling"],
   tags: ["🏖️ Undeveloped Beach", "🌊 Fishing Village", "🏍️ Motorbike Route", "📸 Photography"],
   bestTime: "Nov – Apr (dry season, calm water)",
   entranceFee: "Free",

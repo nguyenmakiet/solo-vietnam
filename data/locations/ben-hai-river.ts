@@ -11,7 +11,7 @@ export const benHaiRiver: Location = {
   address: "Vĩnh Linh – Gio Linh, Quảng Trị",
   type: ["history", "landmark", "river"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours", "cycling"],
+  experiences: ["history", "culture", "photography", "walking-tour", "cycling"],
   tags: ["🌉 Reunification Bridge", "🏳️ DMZ History", "📸 Photography", "🚗 DMZ Road Trip"],
   bestTime: "Feb – Aug (dry season; avoid Sep–Nov typhoon season)",
   entranceFee: "Free (Hiền Lương Bridge Museum: ~10,000–20,000 VND)",

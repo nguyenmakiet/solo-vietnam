@@ -11,7 +11,7 @@ export const baHonDamIslands: Location = {
   address: "Quần đảo Bà Lụa, Kiên Lương, Kiên Giang",
   type: ["island", "beach", "nature"],
   categories: [],
-  experiences: ["beaches", "snorkeling", "boat-tours", "photography", "camping"],
+  experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping"],
   tags: ["🏝️ Remote Islands", "🤿 Snorkeling", "🚣 Boat Trip", "🏕️ Island Camping"],
   bestTime: "Nov - May (dry season with calm seas and good visibility for snorkeling; wet season Jun - Oct brings rough conditions and unreliable boat access)",
   entranceFee: "Free; boat ticket from Kiên Lương ~200,000 VND/person or charter 1,700,000 - 2,500,000 VND",

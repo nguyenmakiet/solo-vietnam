@@ -54,7 +54,7 @@ export default function Home() {
             <div className="home-map-cta-left">
               <span className="home-map-cta-icon">🗺️</span>
               <div>
-                <div className="home-map-cta-title">Explore 100+ locations on the map</div>
+                <div className="home-map-cta-title">Explore 200+ locations on the map</div>
                 <div className="home-map-cta-sub">Filter by beaches, trekking, caves, food & more</div>
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function Home() {
               <div className="home-why-icon">🏝️</div>
               <div className="home-why-title">Local knowledge</div>
               <div className="home-why-desc">
-                Written by someone from the Mekong Delta - not a travel blogger passing through for a week.
+                Written by someone who actually lives here - a Vietnamese local sharing real travel insights.
               </div>
             </div>
           </div>

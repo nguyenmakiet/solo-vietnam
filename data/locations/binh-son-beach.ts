@@ -11,7 +11,7 @@ export const binhSonBeach: Location = {
   address: "Bình Sơn, Ninh Hải, Ninh Thuận",
   type: ["beach", "nature"],
   categories: [],
-  experiences: ["beaches", "swimming", "photography", "cycling", "motorcycling"],
+  experiences: ["beach", "swimming", "photography", "cycling", "motorcycling"],
   tags: ["🏖️ Undeveloped Beach", "🌊 Clear Water", "🏍️ Coastal Road", "📸 Photography"],
   bestTime: "Jan – Aug (dry season; Ninh Thuận has the least rainfall of any province in Vietnam)",
   entranceFee: "Free",

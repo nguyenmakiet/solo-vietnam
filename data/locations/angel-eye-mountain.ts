@@ -11,7 +11,7 @@ export const angelEyeMountain: Location = {
   address: "Bản Danh, Cao Chương, Trùng Khánh, Cao Bằng",
   type: ["mountain", "nature", "landmark"],
   categories: [],
-  experiences: ["photography", "camping", "trekking", "motorcycling", "walking-tours"],
+  experiences: ["photography", "camping", "trekking", "motorcycling", "walking-tour"],
   tags: ["👁️ 50m Natural Rock Hole", "🌿 Thang Hen Valley", "🏕️ Camping", "📸 Photography"],
   bestTime: "Sep – Oct (harvest season; golden rice fields and seasonal lake still present); Nov – Apr (dry season; meadow and clearer skies)",
   entranceFee: "Free; camping service fees apply if using local providers (~$30/person)",

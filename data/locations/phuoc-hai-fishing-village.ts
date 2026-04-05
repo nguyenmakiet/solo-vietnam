@@ -11,7 +11,7 @@ export const phuocHaiFishingVillage: Location = {
   address: "Phước Hải, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["nature", "cultural", "beach", "market",],
   categories: [],
-  experiences: ["photography", "food", "culture", "beaches", "walking-tours"],
+  experiences: ["photography", "food", "culture", "beach", "walking-tour"],
   tags: ["🎣 Fishing Port", "🦞 Fresh Seafood", "📸 Sunrise Photography", "🏖️ Long Beach"],
   bestTime: "Nov – Apr (dry season; calm sea, fishing activity high, best beach conditions)",
   entranceFee: "Free",

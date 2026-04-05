@@ -11,7 +11,7 @@ export const hoChiMinhChildhoodHome: Location = {
   address: "Làng Sen, Kim Liên, Nam Đàn, Nghệ An",
   type: ["history", "cultural", "heritage", "landmark"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ National Pilgrimage Site", "🌿 Historic Village", "📸 Photography", "🇻🇳 Vietnamese History"],
   bestTime: "Oct – Apr (cool and dry; avoid the blistering Nghệ An summer heat of Jun – Aug)",
   entranceFee: "Free",

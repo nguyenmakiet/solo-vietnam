@@ -11,7 +11,7 @@ export const mauSonMountain: Location = {
   address: "Mẫu Sơn, Lộc Bình, Lạng Sơn",
   type: ["mountain", "nature"],
   categories: [],
-  experiences: ["trekking", "photography", "camping", "motorcycling", "homestays"],
+  experiences: ["trekking", "photography", "camping", "motorcycling", "homestay"],
   tags: ["❄️ Snow in Vietnam", "🌄 Cloud Sea", "🏔️ Northeast Highlands", "🌡️ Subalpine Climate"],
   bestTime: "Nov – Feb (cold season; possible frost and snow Dec – Jan); Sep – Oct (cloud sea after rains)",
   entranceFee: "~20,000 VND",
