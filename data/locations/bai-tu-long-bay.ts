@@ -14,6 +14,7 @@ export const baiTuLongBay: Location = {
   experiences: ["kayaking", "boat-tour", "photography", "trekking"],
   tags: ["🌊 Off the Beaten Path", "🛶 Kayaking", "🏖️ Isolated Beaches", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clear skies, fewer boats, calm water)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "Included in cruise packages (departs from Hạ Long International Port)",
   openingHours: "Accessible year-round via overnight cruise",
   mapUrl: "https://maps.google.com/?q=21.0500,107.4000",

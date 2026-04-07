@@ -19,6 +19,7 @@ export const mangLangChurch: Location = {
     "📜 Birthplace of Vietnamese Script",
   ],
   bestTime: "Year-round (Phú Yên's dry season is Jan - Aug; avoid Oct - Nov which brings heavy rain and flooding in Tuy An district)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM (mass times may restrict visitor access)",
   mapUrl: "https://www.google.com/maps?q=13.334150812882358,109.225819751082",

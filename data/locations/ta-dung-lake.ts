@@ -14,6 +14,7 @@ export const taDungLake: Location = {
   experiences: ["kayaking", "boat-tour", "photography", "camping", "wildlife"],
   tags: ["⛵ Island-Dotted Lake", "🌲 National Park", "🛶 Kayaking", "📸 Photography"],
   bestTime: "Nov – Apr (dry season, calm water, clear skies)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~50,000 VND (national park entry)",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.85958318658573,107.923086633516",

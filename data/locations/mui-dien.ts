@@ -14,6 +14,7 @@ export const muiDien: Location = {
   experiences: ["photography", "trekking", "motorcycling"],
   tags: ["🏮 Lighthouse", "🌅 First Sunrise", "🌊 Easternmost Cape", "📸 Photography"],
   bestTime: "Jan – Aug (clear skies, dry season)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~15,000 VND",
   openingHours: "5:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.895123856614404,109.45894759200604",

@@ -14,6 +14,7 @@ export const phuQuocNightMarket: Location = {
   experiences: ["food", "markets", "nightlife", "walking-tour"],
   tags: ["🌙 Night Market", "🦞 Seafood", "🛍️ Shopping", "🍢 Street Food"],
   bestTime: "Nov – Apr (dry season; less rain in the evening)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "5:00 PM – 11:00 PM daily",
   mapUrl: "https://maps.google.com/?q=10.2131,103.9589",

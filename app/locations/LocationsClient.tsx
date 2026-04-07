@@ -8,12 +8,25 @@ import { Location, LocationType, locationTheme } from "@/data/location"
 
 type Region = "north" | "central" | "south" | "mekong" | "highlands"
 
-const REGIONS: { value: Region; label: string }[] = [
-  { value: "north",     label: "North" },
-  { value: "central",   label: "Central" },
-  { value: "south",     label: "South" },
-  { value: "mekong",    label: "Mekong" },
-  { value: "highlands", label: "Highlands" },
+const REGIONS: { value: Region; label: string; active: string; inactive: string }[] = [
+  { value: "north",     label: "North",     active: "bg-blue-600 text-white border-blue-600",       inactive: "bg-white text-blue-600 border-blue-400 hover:bg-blue-50" },
+  { value: "central",   label: "Central",   active: "bg-orange-500 text-white border-orange-500",   inactive: "bg-white text-orange-600 border-orange-400 hover:bg-orange-50" },
+  { value: "south",     label: "South",     active: "bg-emerald-600 text-white border-emerald-600", inactive: "bg-white text-emerald-600 border-emerald-400 hover:bg-emerald-50" },
+  { value: "mekong",    label: "Mekong",    active: "bg-teal-600 text-white border-teal-600",       inactive: "bg-white text-teal-600 border-teal-400 hover:bg-teal-50" },
+  { value: "highlands", label: "Highlands", active: "bg-purple-600 text-white border-purple-600",   inactive: "bg-white text-purple-600 border-purple-400 hover:bg-purple-50" },
+]
+
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+
+const SHORTCUTS: { label: string; emoji: string; type?: string; exp?: string }[] = [
+  { label: "Beaches",     emoji: "🏖️", type: "beach" },
+  { label: "Islands",     emoji: "🌴", type: "island" },
+  { label: "Mountains",   emoji: "⛰️", type: "mountain" },
+  { label: "Caves",       emoji: "🕳️", type: "cave" },
+  { label: "Waterfalls",  emoji: "💧", type: "waterfall" },
+  { label: "Trekking",    emoji: "🥾", exp: "trekking" },
+  { label: "Cultural",    emoji: "🏛️", type: "cultural" },
+  { label: "Photography", emoji: "📸", exp: "photography" },
 ]
 
 const PROVINCE_TO_REGION: Record<string, Region> = {
@@ -107,6 +120,7 @@ function parseUrlState() {
     types: p.getAll("type"),
     experiences: p.getAll("experience"),
     province: p.get("province") ?? "",
+    months: p.getAll("month").map((m) => parseInt(m, 10)).filter(Boolean),
     page: Math.max(1, parseInt(p.get("page") ?? "1", 10)),
   }
 }
@@ -116,6 +130,7 @@ function buildSearch(
   types: string[],
   experiences: string[],
   province: string,
+  months: number[],
   page: number
 ): string {
   const p = new URLSearchParams()
@@ -123,9 +138,49 @@ function buildSearch(
   types.forEach((t) => p.append("type", t))
   experiences.forEach((e) => p.append("experience", e))
   if (province) p.set("province", province)
+  months.forEach((m) => p.append("month", String(m)))
   if (page > 1) p.set("page", String(page))
   const s = p.toString()
   return s ? `?${s}` : ""
+}
+
+// ─── Icons ────────────────────────────────────────────────────────────────────
+
+function IconType() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M7 7h.01M3 3h18a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+    </svg>
+  )
+}
+
+function IconExperience() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+  )
+}
+
+function IconProvince() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+    </svg>
+  )
+}
+
+function IconChevron() {
+  return (
+    <svg className="w-3 h-3 shrink-0 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+    </svg>
+  )
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -140,9 +195,10 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedExperiences, setSelectedExperiences] = useState<string[]>([])
   const [province, setProvince] = useState(initialProvince ?? "")
+  const [selectedMonths, setSelectedMonths] = useState<number[]>([])
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
 
-  // Sync from URL after mount (avoids SSR/client hydration mismatch)
+  // Sync from URL after mount
   useEffect(() => {
     const init = parseUrlState()
     if (!init) return
@@ -150,6 +206,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     if (init.types.length) setSelectedTypes(init.types)
     if (init.experiences.length) setSelectedExperiences(init.experiences)
     if (init.province) setProvince(init.province)
+    if (init.months.length) setSelectedMonths(init.months)
     if (init.page > 1) setVisibleCount(init.page * PAGE_SIZE)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -187,6 +244,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     [allProvinces, provSearch]
   )
 
+  // Count per month (for unfiltered base, so badges always show totals)
+  const monthCounts = useMemo(() => {
+    const counts: Record<number, number> = {}
+    for (let m = 1; m <= 12; m++) counts[m] = 0
+    locations.forEach((loc) => {
+      loc.bestMonths?.forEach((m) => { counts[m] = (counts[m] ?? 0) + 1 })
+    })
+    return counts
+  }, [locations])
+
   const filtered = useMemo(() => {
     return locations.filter((loc) => {
       if (region !== null) {
@@ -201,18 +268,21 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
       if (province) {
         if (!loc.provinces.includes(province)) return false
       }
+      if (selectedMonths.length > 0) {
+        if (!selectedMonths.some((m) => loc.bestMonths?.includes(m))) return false
+      }
       return true
     })
-  }, [locations, region, selectedTypes, selectedExperiences, province])
+  }, [locations, region, selectedTypes, selectedExperiences, province, selectedMonths])
 
   const visible = filtered.slice(0, visibleCount)
   const hasMore = visibleCount < filtered.length
   const currentPage = Math.ceil(visibleCount / PAGE_SIZE)
 
   useEffect(() => {
-    const search = buildSearch(region, selectedTypes, selectedExperiences, province, 1)
+    const search = buildSearch(region, selectedTypes, selectedExperiences, province, selectedMonths, 1)
     history.replaceState(null, "", `/locations${search}`)
-  }, [region, selectedTypes, selectedExperiences, province])
+  }, [region, selectedTypes, selectedExperiences, province, selectedMonths])
 
   useEffect(() => {
     const href = province
@@ -266,27 +336,33 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     setVisibleCount(PAGE_SIZE)
   }
 
+  function toggleMonth(m: number) {
+    setSelectedMonths((prev) => prev.includes(m) ? prev.filter((x) => x !== m) : [...prev, m])
+    setVisibleCount(PAGE_SIZE)
+  }
+
   function clearFilters() {
     setRegion(null)
     setSelectedTypes([])
     setSelectedExperiences([])
     setProvince("")
+    setSelectedMonths([])
     setVisibleCount(PAGE_SIZE)
   }
 
   function loadMore() {
     const nextPage = currentPage + 1
     setVisibleCount(nextPage * PAGE_SIZE)
-    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, province, nextPage)}`)
+    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, province, selectedMonths, nextPage)}`)
   }
 
-  const hasActiveFilters = region !== null || selectedTypes.length > 0 || selectedExperiences.length > 0 || province !== ""
+  const hasActiveFilters = region !== null || selectedTypes.length > 0 || selectedExperiences.length > 0 || province !== "" || selectedMonths.length > 0
 
   return (
     <main className="min-h-screen bg-[#F7F4EF]">
 
       {/* ── Header ── */}
-      <section className="bg-[#1C1C1A] text-white px-6 pt-20 pb-10">
+      <section className="bg-[#1C1C1A] text-white px-6 pt-20 pb-8">
         <div className="max-w-6xl mx-auto">
           <nav className="flex items-center gap-2 text-xs text-[#A09880] mb-8">
             <Link href="/" className="hover:text-[#C9A84C] transition-colors font-medium">Home</Link>
@@ -302,9 +378,43 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           >
             Locations in Vietnam
           </h1>
-          <p className="text-[#A09880] text-base">
-            Browse {locations.length}+ locations across Vietnam
+          <p className="text-[#A09880] text-base mb-1">
+            {locations.length}+ places across Vietnam —
           </p>
+          <p className="text-white/50 text-sm mb-8">
+            beaches, mountains, caves, temples, waterfalls and hidden gems worth going solo.
+          </p>
+
+          {/* ── Experience shortcuts ── */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-[#A09880] mr-1 select-none">
+              Explore by
+            </span>
+            {SHORTCUTS.map((s) => {
+              const active = s.type
+                ? selectedTypes.includes(s.type)
+                : s.exp
+                  ? selectedExperiences.includes(s.exp)
+                  : false
+              return (
+                <button
+                  key={s.label}
+                  onClick={() => {
+                    if (s.type) toggleType(s.type)
+                    else if (s.exp) toggleExperience(s.exp)
+                  }}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all ${
+                    active
+                      ? "bg-[#C9A84C] text-[#1C1C1A] border-[#C9A84C]"
+                      : "bg-white/10 text-white/80 border-white/20 hover:bg-white/20 hover:text-white"
+                  }`}
+                >
+                  <span>{s.emoji}</span>
+                  {s.label}
+                </button>
+              )
+            })}
+          </div>
         </div>
       </section>
 
@@ -313,15 +423,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
         <div className="max-w-6xl mx-auto px-6">
 
           {/* Row 1 — Region chips */}
-          <div className="flex items-center gap-1.5 pt-3 pb-2 border-b border-gray-100 flex-wrap">
+          <div className="flex items-center gap-1.5 pt-3 pb-2.5 border-b border-gray-100 flex-wrap">
+            <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-gray-500 mr-1 select-none">
+              Region
+            </span>
             {REGIONS.map((r) => (
               <button
                 key={r.value}
                 onClick={() => toggleRegion(r.value)}
-                className={`px-3.5 py-1 rounded-full text-xs font-medium transition-colors whitespace-nowrap ${
-                  region === r.value
-                    ? "bg-[#1C1C1A] text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                className={`px-3.5 py-1 rounded-full text-xs font-semibold transition-all whitespace-nowrap border ${
+                  region === r.value ? r.active : r.inactive
                 }`}
               >
                 {r.label}
@@ -329,27 +440,50 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             ))}
           </div>
 
-          {/* Row 2 — Dropdowns + result count */}
-          <div className="flex items-center gap-3 py-2 flex-wrap">
+          {/* Row 2 — Month chips */}
+          <div className="flex items-center gap-1 py-2.5 border-b border-gray-100 overflow-x-auto scrollbar-none">
+            <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-gray-500 mr-1 select-none shrink-0">
+              Best time
+            </span>
+            {MONTHS.map((label, i) => {
+              const m = i + 1
+              const active = selectedMonths.includes(m)
+              return (
+                <button
+                  key={m}
+                  onClick={() => toggleMonth(m)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all whitespace-nowrap border shrink-0 ${
+                    active
+                      ? "bg-[#1C1C1A] text-[#C9A84C] border-[#1C1C1A] shadow-sm"
+                      : "bg-white text-gray-700 border-gray-300 hover:border-gray-500 hover:text-gray-900"
+                  }`}
+                >
+                  {label}
+                </button>
+              )
+            })}
+          </div>
+
+          {/* Row 3 — Dropdowns + result count */}
+          <div className="flex items-center gap-2 py-2.5 flex-wrap">
 
             {/* Type */}
             <div ref={typeRef} className="relative">
               <button
                 onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setProvOpen(false) }}
-                className={`flex items-center gap-1 text-sm font-medium transition-colors ${
-                  selectedTypes.length > 0 ? "text-[#1C1C1A]" : "text-gray-500 hover:text-gray-800"
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
+                  selectedTypes.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
               >
-                Type{selectedTypes.length > 0 ? ` (${selectedTypes.length})` : ""}
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                <IconType />
+                Type{selectedTypes.length > 0 ? ` · ${selectedTypes.length}` : ""}
+                <IconChevron />
               </button>
               {typeOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-30 min-w-[180px] max-h-64 overflow-y-auto py-1">
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 min-w-[190px] max-h-64 overflow-y-auto py-1.5">
                   {allTypes.map((t) => (
-                    <label key={t} className="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 cursor-pointer text-sm">
-                      <input type="checkbox" checked={selectedTypes.includes(t)} onChange={() => toggleType(t)} className="accent-[#1C1C1A]" />
+                    <label key={t} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
+                      <input type="checkbox" checked={selectedTypes.includes(t)} onChange={() => toggleType(t)} className="accent-[#1C1C1A] w-3.5 h-3.5" />
                       {formatType(t)}
                     </label>
                   ))}
@@ -357,26 +491,23 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               )}
             </div>
 
-            <span className="text-gray-200 text-lg leading-none select-none">|</span>
-
             {/* Experience */}
             <div ref={expRef} className="relative">
               <button
                 onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setProvOpen(false) }}
-                className={`flex items-center gap-1 text-sm font-medium transition-colors ${
-                  selectedExperiences.length > 0 ? "text-[#1C1C1A]" : "text-gray-500 hover:text-gray-800"
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
+                  selectedExperiences.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
               >
-                Experience{selectedExperiences.length > 0 ? ` (${selectedExperiences.length})` : ""}
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                <IconExperience />
+                Experience{selectedExperiences.length > 0 ? ` · ${selectedExperiences.length}` : ""}
+                <IconChevron />
               </button>
               {expOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-30 min-w-[210px] max-h-64 overflow-y-auto py-1">
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 min-w-[210px] max-h-64 overflow-y-auto py-1.5">
                   {allExperiences.map((e) => (
-                    <label key={e} className="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 cursor-pointer text-sm">
-                      <input type="checkbox" checked={selectedExperiences.includes(e)} onChange={() => toggleExperience(e)} className="accent-[#1C1C1A]" />
+                    <label key={e} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
+                      <input type="checkbox" checked={selectedExperiences.includes(e)} onChange={() => toggleExperience(e)} className="accent-[#1C1C1A]  w-3.5 h-3.5" />
                       {formatType(e)}
                     </label>
                   ))}
@@ -384,23 +515,20 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               )}
             </div>
 
-            <span className="text-gray-200 text-lg leading-none select-none">|</span>
-
             {/* Province — search-style */}
             <div ref={provRef} className="relative">
               <button
                 onClick={() => { setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false) }}
-                className={`flex items-center gap-1.5 text-sm font-medium transition-colors ${
-                  province ? "text-[#1C1C1A]" : "text-gray-500 hover:text-gray-800"
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
+                  province ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
               >
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
-                </svg>
+                <IconProvince />
                 {province ? formatSlug(province) : "Province"}
+                <IconChevron />
               </button>
               {provOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-30 w-56">
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 w-56">
                   <div className="p-2 border-b border-gray-100">
                     <input
                       ref={provInputRef}
@@ -408,13 +536,13 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                       value={provSearch}
                       onChange={(e) => setProvSearch(e.target.value)}
                       placeholder="Search province…"
-                      className="w-full px-2 py-1.5 text-sm border border-gray-200 rounded outline-none focus:border-gray-400"
+                      className="w-full px-2.5 py-1.5 text-sm border border-gray-200 rounded-lg outline-none focus:border-gray-400"
                     />
                   </div>
                   <div className="max-h-52 overflow-y-auto py-1">
                     <button
                       onClick={() => selectProvince("")}
-                      className={`w-full text-left px-3 py-1.5 text-sm hover:bg-gray-50 ${!province ? "font-medium text-[#1C1C1A]" : "text-gray-600"}`}
+                      className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-gray-50 ${!province ? "font-medium text-[#1C1C1A]" : "text-gray-600"}`}
                     >
                       All provinces
                     </button>
@@ -422,7 +550,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                       <button
                         key={p}
                         onClick={() => selectProvince(p)}
-                        className={`w-full text-left px-3 py-1.5 text-sm hover:bg-gray-50 ${province === p ? "font-medium text-[#1C1C1A]" : "text-gray-600"}`}
+                        className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-gray-50 ${province === p ? "font-medium text-[#1C1C1A]" : "text-gray-600"}`}
                       >
                         {formatSlug(p)}
                       </button>
@@ -434,15 +562,15 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
 
             {/* Clear */}
             {hasActiveFilters && (
-              <>
-                <span className="text-gray-200 text-lg leading-none select-none">|</span>
-                <button
-                  onClick={clearFilters}
-                  className="text-xs text-gray-400 hover:text-gray-700 transition-colors"
-                >
-                  Clear
-                </button>
-              </>
+              <button
+                onClick={clearFilters}
+                className="flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium text-gray-400 border border-gray-200 hover:border-gray-400 hover:text-gray-700 transition-all bg-white"
+              >
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                Clear
+              </button>
             )}
 
             {/* Result count — pushed right */}
@@ -514,9 +642,15 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                       {formatSlug(loc.provinces[0])}
                     </p>
                   )}
-                  <p className="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                    {truncate(loc.seoDescription, 90)}
-                  </p>
+                  {loc.tags?.[0] ? (
+                    <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
+                      {loc.tags[0]}
+                    </p>
+                  ) : (
+                    <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
+                      {truncate(loc.seoDescription, 70)}
+                    </p>
+                  )}
                 </div>
               </Link>
             ))}

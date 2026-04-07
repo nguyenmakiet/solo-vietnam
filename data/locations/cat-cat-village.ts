@@ -14,6 +14,7 @@ export const catCatVillage: Location = {
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["🎎 H'mong Culture", "💧 Waterfall", "📸 Photography", "🚶 Walking Trail"],
   bestTime: "Mar – May or Sep – Nov (best light, comfortable weather)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "~90,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=22.3301,103.8325",

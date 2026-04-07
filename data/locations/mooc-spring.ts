@@ -14,6 +14,7 @@ export const moocSpring: Location = {
   experiences: ["swimming", "trekking", "photography", "kayaking"],
   tags: ["💧 Natural Spring Pool", "🏊 Swimming", "🌿 Jungle", "📸 Photography"],
   bestTime: "Feb – Aug (dry season, clearest water; avoid Sep – Nov when spring floods)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~80,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.556813119452748,106.23884445637982",

@@ -14,6 +14,7 @@ export const taXuaMountain: Location = {
   experiences: ["trekking", "photography", "camping"],
   tags: ["🌿 Moss Forest", "🪨 Rocky Summit Check-in", "🏔️ Jungle Trek", "📸 Photography"],
   bestTime: "Oct – Jan (dry and cool, moss at its greenest, clearest skies)",
+  bestMonths: [1, 10, 11, 12],
   entranceFee: "Free (guide fee applies)",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.458552357466253,104.34445105702092",

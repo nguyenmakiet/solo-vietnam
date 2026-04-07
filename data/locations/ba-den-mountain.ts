@@ -14,6 +14,7 @@ export const baDenMountain: Location = {
   experiences: ["cable-car", "trekking", "culture", "photography", "history"],
   tags: ["⛰️ Highest Peak South", "🚡 Cable Car", "🛕 Pilgrimage Site", "📸 Panoramic Views"],
   bestTime: "Nov – Apr (dry season, clear summit views; avoid rainy season when trails are slippery and visibility poor)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Cable car: ~220,000 VND return (adult). Trekking route is free.",
   openingHours: "5:00 AM – 6:00 PM (cable car); trekking routes accessible from dawn",
   mapUrl: "https://www.google.com/maps?q=ba+den+mountain+tay+ninh",

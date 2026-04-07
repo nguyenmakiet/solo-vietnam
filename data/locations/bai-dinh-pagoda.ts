@@ -14,6 +14,7 @@ export const baiDinhPagoda: Location = {
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["⛩️ Largest Pagoda in Vietnam", "🏯 500 Arhat Statues", "📸 Photography", "🔔 Giant Bell"],
   bestTime: "Oct – Apr (dry season); avoid Tết and major Buddhist festivals (extremely crowded)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free (electric cart: ~50,000 VND optional)",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.268192723940388,105.85603779913747",

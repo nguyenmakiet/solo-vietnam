@@ -14,6 +14,7 @@ export const whiteSandDunes: Location = {
   experiences: ["photography", "trekking", "camping", "wildlife"],
   tags: ["🏜️ Sahara of Vietnam", "🌅 Sunrise Dunes", "📸 Photography", "🚙 Jeep Tour"],
   bestTime: "Nov – Apr (dry season; sunrise visits year-round)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~20,000 VND",
   openingHours: "Open 24/7; sunrise tours depart 4:00–4:30 AM",
   mapUrl: "https://www.google.com/maps?q=11.07112795980011,108.42656899745431",

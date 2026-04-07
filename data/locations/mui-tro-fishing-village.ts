@@ -14,6 +14,7 @@ export const muiTroFishingVillage: Location = {
   experiences: ["photography", "camping", "beach", "walking-tour", "cycling"],
   tags: ["🎣 Unknown Fishing Village", "🏕️ Wild Camping", "📸 Photography", "🌊 Rocky Coast"],
   bestTime: "Nov – Apr (dry season; calmer sea and better camping conditions)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.070000,108.416700",

@@ -14,6 +14,7 @@ export const thungKhePass: Location = {
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🏔️ 1,000m White Limestone Pass", "🌄 Mai Chau Valley Views", "🛵 Hanoi–Mai Chau Route", "🌽 Roadside Market"],
   bestTime: "Sep – Nov (golden rice season); Mar – May (spring clarity)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open; drive in daylight only",
   mapUrl: "https://www.google.com/maps?q=20.659973197100356,105.14358253798274",

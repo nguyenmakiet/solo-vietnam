@@ -14,6 +14,7 @@ export const phuocHaiFishingVillage: Location = {
   experiences: ["photography", "food", "culture", "beach", "walking-tour"],
   tags: ["🎣 Fishing Port", "🦞 Fresh Seafood", "📸 Sunrise Photography", "🏖️ Long Beach"],
   bestTime: "Nov – Apr (dry season; calm sea, fishing activity high, best beach conditions)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Fish market most active 4:00 – 8:00 AM daily",
   mapUrl: "https://www.google.com/maps?q=10.466700,107.383300",

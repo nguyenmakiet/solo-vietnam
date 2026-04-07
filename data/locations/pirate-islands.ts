@@ -14,6 +14,7 @@ export const pirateIslands: Location = {
   experiences: ["beach", "snorkeling", "kayaking", "boat-tour", "camping", "photography", "fishing"],
   tags: ["🏝️ Pirate Islands", "🤿 Snorkeling", "⛺ Camping", "🐠 Unspoilt Reef"],
   bestTime: "Nov – Apr (calm seas, clear water visibility; the islands are unreachable in monsoon season May – Oct when sea conditions are dangerous)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "No entrance fee; boat charter costs vary (full-day from Rach Gia: ~1,200,000 – 1,800,000 VND for the boat)",
   openingHours: "Weather dependent; accessible only in dry season",
   mapUrl: "https://www.google.com/maps?q=hai+tac+islands+kien+giang",

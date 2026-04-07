@@ -14,6 +14,7 @@ export const templeOfLiterature: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ Vietnam's First University", "📸 Architecture", "🇻🇳 National Heritage", "🎓 Confucian Temple"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat and rain)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "~30,000 VND",
   openingHours: "Tue – Sun 8:00 – 17:00 (closed Monday)",
   mapUrl: "https://www.google.com/maps?q=21.028500,105.835600",

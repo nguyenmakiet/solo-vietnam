@@ -14,6 +14,7 @@ export const minhDamMountain: Location = {
   experiences: ["trekking", "history", "photography"],
   tags: ["⛰️ Resistance Base", "🥾 Forest Trek", "🏛️ War History", "🌅 Sea Views"],
   bestTime: "Nov - Apr (dry season; wet season trails are slippery and the forest humidity is intense)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.406176641081109,107.2592560602553",

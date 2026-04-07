@@ -14,6 +14,7 @@ export const eightLadiesCave: Location = {
   experiences: ["history", "culture", "trekking", "photography"],
   tags: ["🕯️ Vietnam War Memorial", "⛰️ Sacred Cave", "📖 History", "🥾 Jungle Trek"],
   bestTime: "Feb – Aug (dry season, trails accessible)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free (guided trek required: ~200,000–300,000 VND)",
   openingHours: "By guided trek only; departs morning",
   mapUrl: "https://www.google.com/maps?q=17.502701222486007,106.26089697322949",

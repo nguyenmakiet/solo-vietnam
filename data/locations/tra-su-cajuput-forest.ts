@@ -14,6 +14,7 @@ export const traSuCajuputForest: Location = {
   experiences: ["boat-tour", "wildlife", "photography", "kayaking"],
   tags: ["🌿 Flooded Forest", "🚣 Boat Tour", "🦅 Birdwatching", "📸 Photography"],
   bestTime: "Sep - Nov (flood season when the forest is fully inundated and the green canopy reflection is at its most vivid; dry season Jan - Jul reduces water levels significantly)",
+  bestMonths: [9, 10, 11],
   entranceFee: "~150,000 VND including boat",
   openingHours: "6:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=10.584555814623155,105.05977775517107",

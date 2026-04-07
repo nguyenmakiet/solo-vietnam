@@ -14,6 +14,7 @@ export const backBeachVungTau: Location = {
   experiences: ["beach", "swimming", "food", "nightlife", "walking-tour"],
   tags: ["🏖️ Vũng Tàu Main Beach", "🌊 HCMC Weekend Beach", "🍺 Beachfront Restaurants", "🚢 2 Hours from Saigon"],
   bestTime: "Nov – Apr (dry season; calmer water and clearer skies; avoid Oct typhoon season)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily; most active on weekends",
   mapUrl: "https://www.google.com/maps?q=10.333300,107.083300",

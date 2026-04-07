@@ -14,6 +14,7 @@ export const catTienNationalPark: Location = {
   experiences: ["trekking", "wildlife", "photography", "camping", "cycling", "boat-tour"],
   tags: ["🌿 UNESCO Biosphere", "🦎 Wildlife Sanctuary", "🥾 Jungle Trek", "🦧 Primate Centre"],
   bestTime: "Nov - Apr (dry season; wet season Jun - Oct makes trails muddy and river crossings unpredictable, though wildlife is more active near water sources)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~60,000 VND park entry; activities additional",
   openingHours: "Park open daily; activity bookings through park HQ",
   mapUrl: "https://www.google.com/maps?q=11.424517877270743,107.42756061160924",

@@ -14,6 +14,7 @@ export const phongNhaCave: Location = {
   experiences: ["caving", "boat-tour", "photography"],
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "📸 Photography", "🌊 Underground River"],
   bestTime: "Feb – Aug (dry season; cave closes during flood season Sep – Dec)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~150,000 VND + boat fee ~350,000 VND (shared)",
   openingHours: "7:00 AM – 4:00 PM (closed during flood season)",
   mapUrl: "https://www.google.com/maps?q=17.58187380883147,106.28397697966346",

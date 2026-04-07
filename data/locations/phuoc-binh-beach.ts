@@ -14,6 +14,7 @@ export const phuocBinhBeach: Location = {
   experiences: ["beach", "swimming", "photography", "cycling", "motorcycling"],
   tags: ["🏖️ 4km Quiet Coastline", "🎣 Fishing Community Beach", "🌊 Between Long Hải & Hồ Tràm", "📸 Photography"],
   bestTime: "Nov – Apr (dry season; calm sea and cleaner water)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.516700,109.083300",

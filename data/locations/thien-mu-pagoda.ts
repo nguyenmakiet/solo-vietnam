@@ -14,6 +14,7 @@ export const thienMuPagoda: Location = {
   experiences: ["history", "culture", "photography", "boat-tour"],
   tags: ["⛩️ Oldest Pagoda in Huế", "🏯 7-Tier Tower", "📸 Photography", "🌊 Perfume River"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, clear skies for photography)",
+  bestMonths: [2, 3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open daily (monks observe prayer hours; respectful visiting hours: 8 AM – 5 PM)",
   mapUrl: "https://www.google.com/maps?q=16.453168591703893,107.54519432036955",

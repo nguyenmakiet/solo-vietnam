@@ -14,6 +14,7 @@ export const nguomNgaoCave: Location = {
   experiences: ["caving", "photography"],
   tags: ["🪨 Stalactite Cave", "📸 Photography", "🧗 Cave Walk", "🌿 Off the Beaten Path"],
   bestTime: "Oct – Apr (dry season, easier road access)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "~30,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.845576774719714,106.70639496631787",

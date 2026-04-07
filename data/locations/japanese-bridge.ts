@@ -14,6 +14,7 @@ export const japaneseBridge: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🌉 Iconic Landmark", "📸 Photography", "🏯 400-Year-Old Bridge", "🎑 UNESCO Heritage"],
   bestTime: "Feb – Apr or Oct – Nov (dry season, golden hour light is exceptional)",
+  bestMonths: [2, 3, 4, 10, 11],
   entranceFee: "Included in Hội An Old Town ticket (~120,000 VND)",
   openingHours: "Open daily; best visited early morning or after 5 PM",
   mapUrl: "https://www.google.com/maps?q=15.877113853056763,108.32614848011536",

@@ -14,6 +14,7 @@ export const darkCave: Location = {
   experiences: ["caving", "kayaking", "swimming", "trekking"],
   tags: ["🧗 Adventure Cave", "🛶 Kayaking", "💧 Mud Bath", "🎢 Zip Line"],
   bestTime: "Feb – Aug (dry season, river level stable for kayaking)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~450,000 VND (all activities included)",
   openingHours: "7:30 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.574355688827836,106.25458261828979",

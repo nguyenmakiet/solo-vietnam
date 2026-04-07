@@ -14,6 +14,7 @@ export const loLoChaiVillage: Location = {
   experiences: ["culture", "homestay", "photography", "walking-tour"],
   tags: ["🎎 Ethnic Culture", "📸 Photography", "🏡 Homestay", "🌾 Village Life"],
   bestTime: "Sep – Nov or Mar – Apr (clear skies, festivals)",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.3533,105.3300",

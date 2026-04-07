@@ -14,6 +14,7 @@ export const kheVanWaterfall: Location = {
   experiences: ["swimming", "trekking", "photography", "culture"],
   tags: ["💧 3-Tier Waterfall", "🏊 Natural Pool", "🌾 Ethnic Villages"],
   bestTime: "May - Sep (peak water flow, lush greenery); late Oct - Nov (reed flower season)",
+  bestMonths: [5, 6, 7, 8, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://maps.google.com/?q=21.7089,107.5231",

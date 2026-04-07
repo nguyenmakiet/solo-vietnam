@@ -14,6 +14,7 @@ export const yavlyWaterfall: Location = {
   experiences: ["trekking", "camping", "photography", "wildlife"],
   tags: ["💧 Tà Năng Waterfall", "🥾 Multi-day Trek", "⛺ Camping", "🌿 Remote Forest"],
   bestTime: "Nov - Apr (dry season; trails are manageable and stream crossings safe - avoid rainy season when the Tà Năng route becomes dangerously flooded)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Tà Năng - Phan Dũng trek permit: ~50,000 VND per person (collected at forest ranger checkpoints)",
   openingHours: "Trek typically starts at dawn; overnight camping required for most itineraries",
   mapUrl: "https://www.google.com/maps?q=yavly+waterfall+lac+duong+lam+dong",

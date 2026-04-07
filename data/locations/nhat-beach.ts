@@ -14,6 +14,7 @@ export const nhatBeach: Location = {
   experiences: ["beach", "snorkeling", "photography", "wildlife"],
   tags: ["🌅 Best Sunset on Côn Đảo", "🪨 Tidal Rock Formations", "🌊 Tide-Dependent Beach", "🏆 Top 6 Wild Beaches in Asia"],
   bestTime: "Mar – Sep (dry season; best tidal conditions)",
+  bestMonths: [3, 4, 5, 6, 7, 8, 9],
   entranceFee: "Free",
   openingHours: "Open all day (best at low tide)",
   mapUrl: "https://www.google.com/maps?q=8.644189602871363,106.6014777488132",

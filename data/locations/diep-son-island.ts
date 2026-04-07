@@ -14,6 +14,7 @@ export const diepSonIsland: Location = {
   experiences: ["beach", "boat-tour", "photography", "snorkeling"],
   tags: ["🏝️ Sand Path Island", "🌊 Tidal Sandbar", "📸 Photography", "🚣 Boat Trip"],
   bestTime: "Feb - Aug (dry season with calm seas; the sandbar is most clearly exposed at low tide year-round but rough weather in Sep - Jan makes the boat crossing unreliable)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~50,000 VND; boat from Vạn Giã ~150,000-200,000 VND return",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.702371060987337,109.29151610832875",

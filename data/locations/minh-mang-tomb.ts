@@ -14,6 +14,7 @@ export const minhMangTomb: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["👑 Most Architecturally Grand Tomb", "🌊 Lake & Pavilion Gardens", "📸 Photography", "🏛️ Nguyễn Dynasty"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, comfortable temperatures)",
+  bestMonths: [2, 3, 4, 9, 10, 11],
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.387662100068777,107.57082605265036",

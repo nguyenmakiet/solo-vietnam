@@ -14,6 +14,7 @@ export const hoiAnAncientTown: Location = {
   experiences: ["culture", "history", "food", "markets", "walking-tour", "photography", "nightlife"],
   tags: ["🏮 Lantern Town", "🎑 UNESCO Heritage", "🍜 Street Food", "📸 Photography"],
   bestTime: "Feb – Apr (dry season, Tết lantern season in Feb) or Oct – Nov",
+  bestMonths: [2, 3, 4, 10, 11],
   entranceFee: "~120,000 VND (covers 5 heritage site entries within the Old Town)",
   openingHours: "Old Town streets: open 24/7; heritage houses: 8:00 AM – 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=15.877003160603328,108.32649087704544",

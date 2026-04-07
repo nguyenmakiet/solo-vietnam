@@ -14,6 +14,7 @@ export const vanLongNatureReserve: Location = {
   experiences: ["boat-tour", "wildlife", "photography", "kayaking"],
   tags: ["🦒 Delacour's Langur", "🚣 Rowing Boat", "📸 Photography", "🌿 Wetland Reserve"],
   bestTime: "Oct – Apr (dry season, lowest water, best wildlife visibility)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "~40,000 VND + boat: ~150,000 VND per boat (shared)",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.37269717802166,105.88325487973674",

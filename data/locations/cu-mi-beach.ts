@@ -14,6 +14,7 @@ export const cuMiBeach: Location = {
   experiences: ["beach", "swimming", "photography", "motorcycling"],
   tags: ["🏖️ Undeveloped Beach", "🌊 Fishing Village", "🏍️ Motorbike Route", "📸 Photography"],
   bestTime: "Nov – Apr (dry season, calm water)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.816700,107.983300",

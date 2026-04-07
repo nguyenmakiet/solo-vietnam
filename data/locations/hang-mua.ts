@@ -14,6 +14,7 @@ export const hangMua: Location = {
   experiences: ["trekking", "photography"],
   tags: ["🏔️ Viewpoint", "🪨 500 Stone Steps", "📸 Photography", "🌾 Panoramic View"],
   bestTime: "Sep – Nov or Mar – May (clear skies, golden rice in Oct)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "~100,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2180,105.9560",

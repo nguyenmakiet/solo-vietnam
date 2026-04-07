@@ -14,6 +14,7 @@ export const duGiaVillage: Location = {
   experiences: ["homestay", "trekking", "culture", "photography", "cycling"],
   tags: ["🏡 Tày Homestay", "🌊 River Valley", "🥾 Trekking", "📸 Photography"],
   bestTime: "Sep – Nov (golden rice season, clearest skies) or Mar – Apr",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.930340238883847,105.22274726498522",

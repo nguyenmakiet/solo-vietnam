@@ -14,6 +14,7 @@ export const hangEn: Location = {
   experiences: ["caving", "trekking", "camping", "photography", "wildlife"],
   tags: ["🦅 World's 3rd Largest Cave", "🏕️ Camp Inside the Cave", "🥾 2-Day Trek", "🌊 Underground River"],
   bestTime: "Dec – Sep (closed Oct – Nov during rainy season)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 12],
   entranceFee: "~7,600,000 VND (2-day 1-night tour via Oxalis, only authorized operator)",
   openingHours: "Tour-based only; no independent access permitted",
   mapUrl: "https://www.google.com/maps?q=17.552330941921934,106.1436802588683",

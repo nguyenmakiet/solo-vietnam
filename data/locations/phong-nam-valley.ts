@@ -14,6 +14,7 @@ export const phongNamValley: Location = {
   experiences: ["photography", "cycling", "culture", "wildlife"],
   tags: ["📸 Photography", "🌾 Buckwheat Fields", "🚲 Cycling", "🎎 Tày Villages"],
   bestTime: "Oct – Nov (buckwheat blooms pink and white across the valley floor)",
+  bestMonths: [10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.891397448683232,106.5175241941528",

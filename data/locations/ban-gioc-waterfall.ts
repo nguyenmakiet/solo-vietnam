@@ -14,6 +14,7 @@ export const banGiocWaterfall: Location = {
   experiences: ["photography", "boat-tour", "trekking", "wildlife"],
   tags: ["💧 Largest Waterfall in SEA", "📸 Photography", "🛶 Bamboo Raft", "🌿 Nature"],
   bestTime: "Sep – Oct (peak water flow, lush greenery after rainy season)",
+  bestMonths: [9, 10],
   entranceFee: "~45,000 VND (bamboo raft to base: ~150,000 VND)",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=22.854409352361497,106.72438321761962",

@@ -19,6 +19,7 @@ export const thoiLoiMountain: Location = {
     "🌅 Sunrise Viewpoint",
   ],
   bestTime: "Mar - Aug; arrive before sunrise for the best panoramic light over the island",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.382293884994116,109.13179450157818",

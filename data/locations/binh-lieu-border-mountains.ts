@@ -14,6 +14,7 @@ export const binhLieuBorderMountains: Location = {
   experiences: ["trekking", "photography", "culture", "motorcycling"],
   tags: ["🌾 Reed Flower Season", "🏔️ Border Ridge", "👘 Ethnic Villages", "📸 Photography"],
   bestTime: "Oct – Nov (reed flowers in bloom); Sep for golden rice terraces",
+  bestMonths: [9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.64893803864023,107.44002584112907",

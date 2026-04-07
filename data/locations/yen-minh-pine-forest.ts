@@ -14,6 +14,7 @@ export const yenMinhPineForest: Location = {
   experiences: ["photography", "motorcycling", "trekking", "camping"],
   tags: ["🌲 Highland Pine Forest", "🌫️ Morning Mist", "📸 Photography", "🏍️ Scenic Road"],
   bestTime: "Oct – Dec (mist season, golden pine light in late afternoon) or Mar – Apr",
+  bestMonths: [3, 4, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.16731453372523,105.05474637426761",

@@ -14,6 +14,7 @@ export const buiHuiGrassland: Location = {
   experiences: ["trekking", "camping", "photography", "culture"],
   tags: ["🌿 Highland Meadow", "🌸 Sim Blossom", "🏕️ Camping", "🌄 Cloud Level Views"],
   bestTime: "Mar - Apr (sim flower bloom peak with purple blossoms covering the grassland; Oct - Feb is cool and clear but without the flowers)",
+  bestMonths: [3, 4],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.733767915481186,108.78824450755181",

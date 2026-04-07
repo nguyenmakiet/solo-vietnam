@@ -14,6 +14,7 @@ export const rachVemFishingVillage: Location = {
   experiences: ["culture", "photography", "food", "walking-tour", "boat-tour"],
   tags: ["🦑 Starfish Beach", "🎣 Fishing Village", "📸 Photography", "🌊 Mangroves"],
   bestTime: "Nov – Apr (dry season, calm water, best starfish visibility)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=10.36556980337033,103.93341470835864",

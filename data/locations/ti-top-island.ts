@@ -14,6 +14,7 @@ export const tiTopIsland: Location = {
   experiences: ["beach", "swimming", "trekking", "photography", "kayaking"],
   tags: ["🏖️ Crescent Beach", "🏔️ Summit Viewpoint", "🛶 Kayaking", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clear skies, fewer domestic crowds)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "Included in Ha Long Bay Route 2 sightseeing ticket",
   openingHours: "Open during cruise hours (typically 7:30 AM – 5:00 PM)",
   mapUrl: "https://maps.google.com/?q=20.8658,107.1020",

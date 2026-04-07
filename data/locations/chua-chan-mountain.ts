@@ -14,6 +14,7 @@ export const chuaChanMountain: Location = {
   experiences: ["trekking", "photography", "culture", "camping"],
   tags: ["⛰️ Southern Peak", "🥾 Summit Trek", "🛕 Summit Pagoda", "📸 Photography"],
   bestTime: "Nov – Apr (dry season; wet season trails are muddy and slippery)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.938213833993702,107.37752745679926",

@@ -14,6 +14,7 @@ export const quangTriAncientCitadel: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ War Citadel", "🕊️ 1972 Battle", "📸 Photography", "🌿 Sacred Ground"],
   bestTime: "Feb - Aug (dry season; the citadel grounds are green and accessible; avoid Sep - Nov when flooding affects the area)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.753698503710048,107.18981719454122",

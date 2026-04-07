@@ -14,6 +14,7 @@ export const trangAn: Location = {
   experiences: ["boat-tour", "caving", "photography", "culture", "history"],
   tags: ["🚣 Boat Tour", "🪨 UNESCO Heritage", "⛩️ Temples", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – Apr (dry season, clearest water)",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "~250,000 VND (includes boat and rower)",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2800,105.9100",

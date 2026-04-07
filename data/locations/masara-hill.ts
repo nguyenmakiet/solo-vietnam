@@ -14,6 +14,7 @@ export const masaraHill: Location = {
   experiences: ["trekking", "photography", "camping", "motorcycling"],
   tags: ["🌾 Pink Grass Hill", "🏕️ Camping", "📸 Photography", "🌄 Sunrise & Sunset"],
   bestTime: "Mid-Nov – mid-Dec (peak pink grass season); Mar – Apr (golden grass); avoid wet season Jun – Oct",
+  bestMonths: [3, 4, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.683300,108.233300",

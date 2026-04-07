@@ -14,6 +14,7 @@ export const hoaLuAncientCapital: Location = {
   experiences: ["history", "culture", "photography", "cycling"],
   tags: ["🏯 10th Century Capital", "⛩️ Đinh & Lê Temples", "📖 Vietnam's First Capital", "🚲 Cycling"],
   bestTime: "Oct – Apr (dry season, comfortable temperatures)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.286875757053178,105.91801053940709",

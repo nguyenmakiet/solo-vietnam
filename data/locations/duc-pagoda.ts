@@ -19,6 +19,7 @@ export const ducPagoda: Location = {
     "🧗 100+ Stone Steps",
   ],
   bestTime: "Year-round; morning for cooler temperatures on the climb",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.38906217491256,109.10196741829073",

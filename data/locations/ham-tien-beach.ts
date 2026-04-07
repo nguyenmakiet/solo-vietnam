@@ -14,6 +14,7 @@ export const hamTienBeach: Location = {
   experiences: ["beach", "photography"],
   tags: ["🏖️ Beach", "🌊 Waves", "🏄 Surfing", "📸 Photography"],
   bestTime: "Nov – Apr (dry season, calm seas, best visibility)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=10.951456393863262,108.24921385544317",

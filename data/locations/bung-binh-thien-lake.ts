@@ -14,6 +14,7 @@ export const bungBinhThienLake: Location = {
   experiences: ["boat-tour", "photography", "wildlife", "culture"],
   tags: ["🌸 Lotus Lake", "🚣 Boat Tour", "📸 Photography", "🕌 Cham Culture"],
   bestTime: "Jul - Nov (flood season when the lake expands to maximum size and the lotus flowers bloom; the lotus peak is typically Aug - Sep)",
+  bestMonths: [7, 8, 9, 10, 11],
   entranceFee: "Free; boat hire ~100,000-150,000 VND",
   openingHours: "Open daily; best visited at dawn",
   mapUrl: "https://www.google.com/maps?q=10.919979584967262,105.07286304988797",

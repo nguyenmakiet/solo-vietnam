@@ -14,6 +14,7 @@ export const honChongRockFormation: Location = {
   experiences: ["photography", "walking-tour", "beach"],
   tags: ["🪨 Rock Formation", "🌊 Coastal", "📸 Photography", "🌅 Sunset Spot"],
   bestTime: "Jan – Aug (dry season; sea is calm and rock formations fully accessible)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~22,000 VND",
   openingHours: "6:30 AM – 6:30 PM",
   mapUrl: "https://www.google.com/maps?q=12.272947381203165,109.20637893674045",

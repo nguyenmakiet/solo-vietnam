@@ -14,6 +14,7 @@ export const bacSonValley: Location = {
   experiences: ["photography", "trekking", "culture", "motorcycling"],
   tags: ["🌾 Rice Terraces", "🏔️ Karst Peaks", "🛵 Scenic Ride", "📸 Photography"],
   bestTime: "Sep – Oct (golden rice harvest); Mar – Apr (bright green paddies)",
+  bestMonths: [3, 4, 9, 10],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.898614655260356,106.33466895888493",

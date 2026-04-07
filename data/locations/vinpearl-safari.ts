@@ -14,6 +14,7 @@ export const vinpearlSafari: Location = {
   experiences: ["wildlife", "photography", "walking-tour"],
   tags: ["🦁 Open Safari", "🦒 African Animals", "📸 Wildlife Photography", "🚌 Safari Bus"],
   bestTime: "Nov – Apr (dry season, animals most active in cooler temperatures)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~750,000–1,000,000 VND",
   openingHours: "8:00 AM – 4:30 PM",
   mapUrl: "https://www.google.com/maps?q=10.337243228996103,103.89206976788087",

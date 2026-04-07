@@ -14,6 +14,7 @@ export const tamCoc: Location = {
   experiences: ["boat-tour", "cycling", "photography"],
   tags: ["🛶 Boat Tour", "🏔️ Karst", "🌾 Rice Fields", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – Apr (avoid summer crowds and heat)",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Boat tour: 150,000 VND/person",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2253,105.9550",

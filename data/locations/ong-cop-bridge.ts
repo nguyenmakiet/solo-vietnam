@@ -19,6 +19,7 @@ export const ongCopBridge: Location = {
     "🏍️ Motorbike Route",
   ],
   bestTime: "Jan - Aug (dry season; the bridge floods and is often dismantled Oct - Nov during storm season)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "2,000 VND (on foot) / 4,000 VND (motorbike)",
   openingHours: "Open 24/7 (when structurally intact - check locally during Oct - Nov)",
   mapUrl: "https://www.google.com/maps?q=13.365233794366752,109.24146230185562",

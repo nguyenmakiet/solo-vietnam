@@ -14,6 +14,7 @@ export const muiCaMauNationalPark: Location = {
   experiences: ["boat-tour", "wildlife", "photography", "walking-tour", "cycling"],
   tags: ["🗺️ Southernmost Point of Vietnam", "🌿 Mangrove Forest", "🐦 Wildlife", "🚤 Boat Tour"],
   bestTime: "Nov – Apr (dry season; boat access reliable and mangrove trails passable)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~20,000 VND park entry; boat tours additional",
   openingHours: "7:00 – 17:00 daily",
   mapUrl: "https://www.google.com/maps?q=8.633300,104.733300",

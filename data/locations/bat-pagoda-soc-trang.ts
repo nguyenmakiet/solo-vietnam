@@ -14,6 +14,7 @@ export const batPagodaSocTrang: Location = {
   experiences: ["culture", "history", "photography", "wildlife", "walking-tour"],
   tags: ["🦇 Thousands of Bats", "🛕 Khmer Pagoda", "📸 Photography", "🌳 Ancient Trees"],
   bestTime: "Year-round; bats most active at dusk (around 17:30 - 18:30); Oct – Apr for comfortable weather",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily; bat activity peaks at dawn and dusk",
   mapUrl: "https://www.google.com/maps?q=9.600000,105.966700",

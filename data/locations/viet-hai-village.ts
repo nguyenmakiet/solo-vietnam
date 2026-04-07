@@ -14,6 +14,7 @@ export const vietHaiVillage: Location = {
   experiences: ["cycling", "culture", "photography", "homestay", "kayaking"],
   tags: ["🚲 Cycling Through Jungle", "🏡 Isolated Village", "📸 Photography", "🛶 Kayak Access"],
   bestTime: "Oct – May (dry season; jungle path is less slippery and the village rice fields are most photogenic)",
+  bestMonths: [1, 2, 3, 4, 5, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.787857336300597,107.05828009939815",

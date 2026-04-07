@@ -14,6 +14,7 @@ export const sungSotCave: Location = {
   experiences: ["caving", "photography"],
   tags: ["🪨 Largest Cave in Ha Long", "📸 Photography", "🧗 Hiking", "🌊 UNESCO Heritage"],
   bestTime: "Oct – Dec or Apr – Jun (low crowds, comfortable temperatures)",
+  bestMonths: [4, 5, 6, 10, 11, 12],
   entranceFee: "~300,000 VND (included in most cruise packages)",
   openingHours: "7:30 AM – 4:30 PM (accessible by cruise only)",
   mapUrl: "https://maps.google.com/?q=20.8810,107.1140",

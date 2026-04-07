@@ -14,6 +14,7 @@ export const vinhTrungFields: Location = {
   experiences: ["photography", "walking-tour", "culture", "motorcycling"],
   tags: ["🌾 Thất Sơn Farmland", "📸 Photography", "🚴 Cycling", "🏔️ Núi Cấm Backdrop"],
   bestTime: "Nov – Jan (harvest season, golden fields; dry and cool); May – Jun (young green rice after planting)",
+  bestMonths: [1, 5, 6, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.483300,104.983300",

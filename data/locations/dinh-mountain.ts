@@ -14,6 +14,7 @@ export const dinhMountain: Location = {
   experiences: ["trekking", "photography", "culture", "camping"],
   tags: ["⛰️ Coastal Peak", "🥾 Summit Trek", "🛕 Summit Pagoda", "🌅 Sea Views"],
   bestTime: "Nov – Apr (dry season; wet season trails are slippery and visibility from the summit is poor)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.537592530622792,107.12929659066629",

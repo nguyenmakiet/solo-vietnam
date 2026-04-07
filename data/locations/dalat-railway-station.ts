@@ -14,6 +14,7 @@ export const dalatRailwayStation: Location = {
   experiences: ["history", "photography", "culture", "walking-tour"],
   tags: ["🚂 1938 French Colonial Station", "📸 Photography", "🏛️ Heritage Architecture", "🚃 Tourist Train"],
   bestTime: "Year-round; morning light is best for exterior photography",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free to enter; tourist train to Trại Mát: ~152,000 VND return",
   openingHours: "7:30 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=11.941882324564023,108.45471880283058",

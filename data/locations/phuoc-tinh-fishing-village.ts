@@ -14,6 +14,7 @@ export const phuocTinhFishingVillage: Location = {
   experiences: ["food", "culture", "walking-tour"],
   tags: ["🎣 Active Fishing Port", "🦐 Fresh Seafood", "📸 Photography", "🚢 Fishing Fleet"],
   bestTime: "Nov – Apr (dry season; calmer sea, fishing activity highest)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Fish market most active 4:00 – 8:00 AM daily",
   mapUrl: "https://www.google.com/maps?q=10.417800,107.295600",

@@ -14,6 +14,7 @@ export const docLetBeach: Location = {
   experiences: ["beach", "swimming", "photography", "cycling"],
   tags: ["🏖️ White Sand, Turquoise Water", "🌊 Calm Bay", "📸 Photography", "🚗 Day Trip from Nha Trang"],
   bestTime: "Feb – Aug (dry season, calmest water)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~30,000–50,000 VND (some beach sections charge separately)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=12.550209286631508,109.22816933280315",

@@ -14,6 +14,7 @@ export const nhoQueRiver: Location = {
   experiences: ["photography", "kayaking", "boat-tour", "hiking"],
   tags: ["🌊 Turquoise River", "🏔️ Canyon", "🛶 Boat Tour", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clearest water, best light)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "Boat tour: 150,000–200,000 VND/person",
   openingHours: "7:00 AM – 5:00 PM (boat tours)",
   mapUrl: "https://maps.google.com/?q=23.1550,105.4100",

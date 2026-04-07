@@ -14,6 +14,7 @@ export const kyCoBeach: Location = {
   experiences: ["beach", "snorkeling", "photography", "boat-tour"],
   tags: ["🏖️ Hidden Beach", "🤿 Snorkeling", "💎 Turquoise Water", "📸 Photography"],
   bestTime: "Mar - Aug (dry season with calm seas; avoid Sep - Dec when storms make boat access dangerous)",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "~30,000 VND; boat from Nhơn Lý ~100,000-150,000 VND return",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=13.850407408494334,109.2927788212342",

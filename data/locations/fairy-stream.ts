@@ -14,6 +14,7 @@ export const fairyStream: Location = {
   experiences: ["walking-tour", "photography"],
   tags: ["🏞️ Wading Stream", "🔴 Red Canyon Walls", "📸 Photography", "🚶 Barefoot Walk"],
   bestTime: "Nov – Apr (dry season; stream is shallow and clear)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~10,000–20,000 VND (informal collection at entrance)",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.955760120620356,108.25941870282894",

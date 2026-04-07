@@ -14,6 +14,7 @@ export const bidoupNuiBaNationalPark: Location = {
   experiences: ["trekking", "wildlife", "photography", "camping"],
   tags: ["🌲 Cloud Forest", "🦅 Birdwatching", "🥾 Multi-day Trek", "🏕️ Camping"],
   bestTime: "Nov – Apr (dry season; wet season trails are heavily overgrown and leeches are active throughout the forest)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~50,000 VND park entry; guided treks additional cost",
   openingHours: "7:00 AM – 5:00 PM (park HQ); overnight treks by arrangement",
   mapUrl: "https://www.google.com/maps?q=12.133961464408484,108.53404748226983",

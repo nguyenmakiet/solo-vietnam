@@ -14,6 +14,7 @@ export const phiLiengWaterfall: Location = {
   experiences: ["trekking", "photography", "swimming", "motorcycling", "camping"],
   tags: ["💦 Multi-tier Waterfall", "🌿 Remote Lâm Đồng", "🏍️ Motorbike Trail", "📸 Photography"],
   bestTime: "Jun – Nov (rainy season for maximum water volume and full flow); Dec – May (dry season for easier trail access and swimming)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.883300,108.216700",

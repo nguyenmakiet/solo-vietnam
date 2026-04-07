@@ -18,6 +18,7 @@ export const nhaPhaPrison: Location = {
     "🇻🇳 Vietnamese Resistance History",
   ],
   bestTime: "Year-round",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open during daylight hours",
   mapUrl: "https://www.google.com/maps?q=15.386246450441275,109.14170348441878",

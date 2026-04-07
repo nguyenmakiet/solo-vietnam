@@ -14,6 +14,7 @@ export const elephantMountain: Location = {
   experiences: ["trekking", "photography", "wildlife", "culture"],
   tags: ["🐘 Elephant Territory", "🌄 Highland Views", "🥾 Trekking", "☕ Coffee Country"],
   bestTime: "Nov – Apr (dry season; trails accessible and views clear)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=12.666700,108.050000",

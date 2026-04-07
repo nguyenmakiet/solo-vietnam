@@ -14,6 +14,7 @@ export const dragonBridge: Location = {
   experiences: ["photography", "walking-tour", "nightlife"],
   tags: ["🐉 Fire-Breathing Dragon", "📸 Photography", "🌉 Icon of Đà Nẵng", "🔥 Weekend Show"],
   bestTime: "Year-round; fire show every Saturday and Sunday night at 9 PM",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7; fire and water show: Sat & Sun 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=16.06124852539428,108.22810029126948",

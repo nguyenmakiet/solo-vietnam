@@ -14,6 +14,7 @@ export const laNgauStream: Location = {
   experiences: ["trekking", "photography", "camping", "wildlife"],
   tags: ["🌿 Jungle Stream", "💧 Natural Pools", "🏕️ Camping", "📸 Photography"],
   bestTime: "Nov – Apr (dry season, clear water, accessible trails)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=11.236315974562396,107.78594527850618",

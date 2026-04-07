@@ -14,6 +14,7 @@ export const taPaFields: Location = {
   experiences: ["photography", "cycling", "motorcycling", "culture", "walking-tour"],
   tags: ["🌾 Floating Rice Fields", "📸 Photography", "🛕 Khmer Culture", "🌅 Mekong Delta Scenery"],
   bestTime: "Aug - Nov (flood season when the fields are submerged and the floating rice is at its most photogenic; the landscape is completely different in dry season)",
+  bestMonths: [8, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open all day; best light before 8:00 AM and after 4:30 PM",
   mapUrl: "https://www.google.com/maps?q=ta+pa+fields+tri+ton+an+giang",

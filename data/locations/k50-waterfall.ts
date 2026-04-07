@@ -14,6 +14,7 @@ export const k50Waterfall: Location = {
   experiences: ["trekking", "photography", "wildlife", "camping"],
   tags: ["💦 50m Waterfall", "🌿 Jungle Trek", "🏕️ Overnight Camp", "📸 Photography"],
   bestTime: "Oct – Dec (post-monsoon peak flow); Mar – May (accessible, lower water)",
+  bestMonths: [3, 4, 5, 10, 11, 12],
   entranceFee: "~50,000 VND (guide fee additional)",
   openingHours: "(guide recommended)",
   mapUrl: "https://www.google.com/maps?q=14.519415223584105,108.60631909493844",

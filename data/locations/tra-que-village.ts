@@ -14,6 +14,7 @@ export const traQueVillage: Location = {
   experiences: ["culture", "food", "cycling", "photography", "walking-tour"],
   tags: ["🌿 Herb Village", "👨‍🍳 Cooking Class", "🚲 Cycling", "📸 Photography"],
   bestTime: "Feb – Apr or Sep – Nov (cool and dry, herbs at their most fragrant)",
+  bestMonths: [2, 3, 4, 9, 10, 11],
   entranceFee: "Free to enter; cooking class ~200,000–350,000 VND",
   openingHours: "Open daily from 7:00 AM",
   mapUrl: "https://www.google.com/maps?q=15.902579357686461,108.33718030263948",

@@ -14,6 +14,7 @@ export const quanBaHeavenGate: Location = {
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🌄 Ha Giang Loop Gateway", "📸 Panoramic Views", "🏍️ First Major Pass", "☁️ Cloud Valley"],
   bestTime: "Sep – Nov (golden rice, cloud inversions in valley below) or Mar – Apr",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.04948889805356,104.99321363748844",

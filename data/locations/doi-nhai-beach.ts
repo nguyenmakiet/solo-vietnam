@@ -14,6 +14,7 @@ export const doiNhaiBeach: Location = {
   experiences: ["photography", "trekking", "beach", "camping"],
   tags: ["🌄 Coastal Viewpoint", "🏕️ Wild Camping", "📸 Sunrise Photography", "🌊 Undeveloped Beach"],
   bestTime: "Nov – Apr (dry season; clear skies for viewpoint photography and calmer sea)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.378000,107.333000",

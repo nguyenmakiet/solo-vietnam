@@ -14,6 +14,7 @@ export const caiRangFloatingMarket: Location = {
   experiences: ["boat-tour", "food", "markets", "photography", "culture"],
   tags: ["🛶 Floating Market", "🌅 Dawn Market", "📸 Photography", "🍜 Local Food"],
   bestTime: "Nov – Apr (dry season); market most active 5:00–8:00 AM year-round",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free; boat hire: ~100,000–200,000 VND/hour",
   openingHours: "4:00 AM – 9:00 AM (most active 5:00–7:00 AM)",
   mapUrl: "https://www.google.com/maps?q=10.005150042253042,105.74627948543848",

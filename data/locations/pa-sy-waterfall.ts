@@ -14,6 +14,7 @@ export const paSyWaterfall: Location = {
   experiences: ["trekking", "photography", "wildlife"],
   tags: ["💧 Remote Waterfall", "🌿 Primary Forest", "🥾 Off the Beaten Path", "📸 Photography"],
   bestTime: "Oct - Dec (end of rainy season when water flow is at maximum; dry season Jan - Aug reduces flow significantly)",
+  bestMonths: [10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.59512835252321,108.25679237041005",

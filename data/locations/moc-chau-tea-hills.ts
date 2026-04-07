@@ -14,6 +14,7 @@ export const mocChauTeaHills: Location = {
   experiences: ["photography", "cycling", "motorcycling", "culture", "homestay"],
   tags: ["🍵 Tea Plantations", "📸 Photography", "🛵 Motorbike Scenic", "🌿 Highland Agriculture"],
   bestTime: "Oct – Nov (autumn mist, golden light on the hills) and Mar – Apr (plum and peach blossoms)",
+  bestMonths: [3, 4, 10, 11],
   entranceFee: "Free (some specific viewpoints charge 20,000 – 50,000 VND)",
   openingHours: "Open all day",
   mapUrl: "https://www.google.com/maps?q=moc+chau+tea+hills+son+la",

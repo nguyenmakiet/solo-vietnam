@@ -14,6 +14,7 @@ export const macDynastyCitadel: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏰 16th-Century Citadel", "🏛️ Mạc Dynasty", "📸 Photography", "🧭 Off the Beaten Path"],
   bestTime: "Oct – Apr (cool and dry season)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=22.665800,106.257200",

@@ -14,6 +14,7 @@ export const plateRockReef: Location = {
   experiences: ["photography", "walking-tour", "beach"],
   tags: ["🪨 Basalt Columns", "🌊 Coastal Rock", "📸 Photography", "🌅 Sunrise Spot"],
   bestTime: "Jan – Aug (dry season; avoid Sep – Dec when storms and swells make the reef inaccessible)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~20,000 VND",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=13.354005873751277,109.29390981181257",

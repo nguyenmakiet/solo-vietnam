@@ -14,6 +14,7 @@ export const angelEyeMountain: Location = {
   experiences: ["photography", "camping", "trekking", "motorcycling", "walking-tour"],
   tags: ["👁️ 50m Natural Rock Hole", "🌿 Thang Hen Valley", "🏕️ Camping", "📸 Photography"],
   bestTime: "Sep – Oct (harvest season; golden rice fields and seasonal lake still present); Nov – Apr (dry season; meadow and clearer skies)",
+  bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],
   entranceFee: "Free; camping service fees apply if using local providers (~$30/person)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=22.783300,106.216700",

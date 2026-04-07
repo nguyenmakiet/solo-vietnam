@@ -14,6 +14,7 @@ export const catBaNationalPark: Location = {
   experiences: ["trekking", "wildlife", "photography", "camping"],
   tags: ["🐒 Golden-Headed Langur", "🌿 Island Jungle", "🥾 Summit Trek", "🦜 Endemic Wildlife"],
   bestTime: "Apr – Jun or Sep – Nov (dry season, trails accessible, best wildlife sightings)",
+  bestMonths: [4, 5, 6, 9, 10, 11],
   entranceFee: "~85,000 VND",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.793772701115774,106.98943675013382",

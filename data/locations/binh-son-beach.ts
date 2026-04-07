@@ -14,6 +14,7 @@ export const binhSonBeach: Location = {
   experiences: ["beach", "swimming", "photography", "cycling", "motorcycling"],
   tags: ["🏖️ Undeveloped Beach", "🌊 Clear Water", "🏍️ Coastal Road", "📸 Photography"],
   bestTime: "Jan – Aug (dry season; Ninh Thuận has the least rainfall of any province in Vietnam)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.683300,109.216700",

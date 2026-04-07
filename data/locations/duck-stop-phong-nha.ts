@@ -14,6 +14,7 @@ export const duckStopPhongNha: Location = {
   experiences: ["food", "nightlife", "culture", "walking-tour"],
   tags: ["🍺 Traveller Bar", "🌅 Sunset River Views", "🍜 Local Food", "🎵 Live Music"],
   bestTime: "Year-round; evenings only",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "4:00 PM – midnight",
   mapUrl: "https://www.google.com/maps?q=17.604600505245507,106.36632612569426",

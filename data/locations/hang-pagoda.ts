@@ -19,6 +19,7 @@ export const hangPagoda: Location = {
     "🏛️ National Heritage Site",
   ],
   bestTime: "Year-round; mornings are quietest",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.391114193530264,109.12497065117606",

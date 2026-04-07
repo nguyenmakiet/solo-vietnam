@@ -14,6 +14,7 @@ export const khauCocChaPass: Location = {
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🏍️ Mountain Pass", "📸 Panoramic Views", "🌫️ Cloud Forest", "🏔️ Highland Road"],
   bestTime: "Oct – Dec (post-rainy season, clearest views, dramatic cloud inversions)",
+  bestMonths: [10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.926557070752953,105.78388981658192",

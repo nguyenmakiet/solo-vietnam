@@ -14,6 +14,7 @@ export const daPloaStream: Location = {
   experiences: ["trekking", "photography", "swimming", "motorcycling"],
   tags: ["💦 Multi-tier Stream", "🌿 Remote Jungle", "🏍️ Motorbike Trail", "📸 Photography"],
   bestTime: "Jun – Nov (rainy season for maximum water volume; dry season for easier trail access)",
+  bestMonths: [6, 7, 8, 9, 10, 11],
   entranceFee: "",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.716700,108.116700",

@@ -14,6 +14,7 @@ export const pongourWaterfall: Location = {
   experiences: ["photography", "trekking", "walking-tour"],
   tags: ["💧 Widest Waterfall in Da Lat", "📸 Photography", "🌿 Nature", "🎉 Full Moon Festival"],
   bestTime: "Jul – Oct (rainy season, maximum water flow); Jan for full moon festival",
+  bestMonths: [1, 7, 8, 9, 10],
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.688558880618006,108.26593322679962",

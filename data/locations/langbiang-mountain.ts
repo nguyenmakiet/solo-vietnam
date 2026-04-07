@@ -14,6 +14,7 @@ export const langbiangMountain: Location = {
   experiences: ["trekking", "photography", "wildlife", "camping"],
   tags: ["🏔️ Highest Peak near Đà Lạt", "🥾 Trekking", "📸 Sunrise Views", "🌿 K'Ho Culture"],
   bestTime: "Nov – Apr (dry season, clearest summit views; sunrise trekking year-round)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~50,000 VND park entry; jeep to mid-station: ~150,000 VND",
   openingHours: "5:30 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.048102933200623,108.44188630307653",

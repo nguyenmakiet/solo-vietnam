@@ -14,6 +14,7 @@ export const sixSensesBeach: Location = {
   experiences: ["beach", "swimming", "snorkeling", "photography"],
   tags: ["🏖️ Most Beautiful Beach in Con Dao", "🌊 Pristine Water", "📸 Photography", "🐠 Snorkeling"],
   bestTime: "Mar – Sep (dry season, calm water, clearest visibility)",
+  bestMonths: [3, 4, 5, 6, 7, 8, 9],
   entranceFee: "Free (beach is public; Six Senses resort area is private)",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=8.701360844209008,106.63442958678696",

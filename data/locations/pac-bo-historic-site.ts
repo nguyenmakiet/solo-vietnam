@@ -14,6 +14,7 @@ export const pacBoHistoricSite: Location = {
   experiences: ["history", "culture", "trekking", "photography"],
   tags: ["🏛️ Hồ Chí Minh Revolutionary Base", "📖 Vietnam History", "🌿 Jungle Caves", "📸 Photography"],
   bestTime: "Mar – Nov (accessible year-round; spring and autumn for clearest skies)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.978070844628746,106.05087511003386",

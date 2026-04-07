@@ -14,6 +14,7 @@ export const saoBeach: Location = {
   experiences: ["beach", "swimming", "photography"],
   tags: ["🏖️ Beach", "🤿 Snorkeling", "🦞 Seafood", "🌊 Clear Water"],
   bestTime: "Nov – Apr (dry season, calm water)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=10.0134,104.0498",

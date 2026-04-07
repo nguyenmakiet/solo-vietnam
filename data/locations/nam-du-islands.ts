@@ -14,6 +14,7 @@ export const namDuIslands: Location = {
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping", "cycling"],
   tags: ["🏝️ Remote Archipelago", "🤿 Snorkeling", "🌊 Gulf of Thailand", "🐟 Fishing Community"],
   bestTime: "Nov – May (dry season; calm seas and clear water essential for boat access to outer islands)",
+  bestMonths: [1, 2, 3, 4, 5, 11, 12],
   entranceFee: "Free; boat fares from Rạch Giá apply",
   openingHours: "Open daily; ferry schedule limited - check in advance",
   mapUrl: "https://www.google.com/maps?q=9.683300,104.366700",

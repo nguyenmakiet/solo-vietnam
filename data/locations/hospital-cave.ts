@@ -14,6 +14,7 @@ export const hospitalCave: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏥 Viet Cong Underground Hospital", "📖 Vietnam War History", "🪨 Limestone Cave", "📸 Photography"],
   bestTime: "Year-round (cave interior is climate-controlled by the limestone)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~40,000 VND",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.77004838620462,107.02138423927063",

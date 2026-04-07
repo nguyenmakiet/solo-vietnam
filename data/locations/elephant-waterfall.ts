@@ -14,6 +14,7 @@ export const elephantWaterfall: Location = {
   experiences: ["trekking", "photography"],
   tags: ["🐘 Elephant Rock Formation", "💧 Powerful Cascade", "🥾 Cave Walk Behind Falls", "📸 Photography"],
   bestTime: "Jun – Oct (rainy season, full power); accessible year-round",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.823680791959426,108.33847133316729",

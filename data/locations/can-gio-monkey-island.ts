@@ -14,6 +14,7 @@ export const canGioMonkeyIsland: Location = {
   experiences: ["wildlife", "boat-tour", "photography", "culture", "history"],
   tags: ["🐒 Wild Monkeys", "🌿 Mangrove Forest", "🚤 Boat Tour", "🌊 UNESCO Biosphere"],
   bestTime: "Nov – Apr (dry season; more comfortable and better boat conditions)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~150,000 – 200,000 VND (includes boat transfer to island)",
   openingHours: "7:00 – 17:00 daily",
   mapUrl: "https://www.google.com/maps?q=10.416700,106.966700",

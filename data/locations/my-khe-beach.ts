@@ -14,6 +14,7 @@ export const myKheBeach: Location = {
   experiences: ["beach", "swimming", "surfing", "photography"],
   tags: ["🏖️ Forbes Top 6 Beach", "🌊 Swimming", "🏄 Surfing", "🌅 Sunrise"],
   bestTime: "Mar – Aug (dry season, calm water, minimal rain)",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=16.056869445948998,108.24813952737027",

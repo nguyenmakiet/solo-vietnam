@@ -14,6 +14,7 @@ export const baHonDamIslands: Location = {
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping"],
   tags: ["🏝️ Remote Islands", "🤿 Snorkeling", "🚣 Boat Trip", "🏕️ Island Camping"],
   bestTime: "Nov - May (dry season with calm seas and good visibility for snorkeling; wet season Jun - Oct brings rough conditions and unreliable boat access)",
+  bestMonths: [1, 2, 3, 4, 5, 11, 12],
   entranceFee: "Free; boat ticket from Kiên Lương ~200,000 VND/person or charter 1,700,000 - 2,500,000 VND",
   openingHours: "Open daily; boat access dependent on sea conditions",
   mapUrl: "https://www.google.com/maps?q=10.142223284688743,104.49597050771709",

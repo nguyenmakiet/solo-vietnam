@@ -14,6 +14,7 @@ export const conDaoNationalPark: Location = {
   experiences: ["wildlife", "trekking", "snorkeling", "photography", "kayaking"],
   tags: ["🐢 Sea Turtle Nesting", "🌿 Marine National Park", "🐠 Coral Reefs", "🥾 Jungle Trails"],
   bestTime: "May – Sep (sea turtle nesting season; dry and calm seas)",
+  bestMonths: [5, 6, 7, 8, 9],
   entranceFee: "~20,000 VND park entry; diving/snorkeling tours: 300,000–600,000 VND",
   openingHours: "Park office: 7:00 AM – 5:00 PM; trails and beaches open daily",
   mapUrl: "https://www.google.com/maps?q=8.700380477433058,106.59713651574016",

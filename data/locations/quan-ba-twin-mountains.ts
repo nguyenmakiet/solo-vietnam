@@ -14,6 +14,7 @@ export const quanBaTwinMountains: Location = {
   experiences: ["photography", "trekking", "motorcycling", "culture"],
   tags: ["🏔️ Núi Đôi", "📸 Ha Giang Icon", "🌾 Rice Terraces", "🏍️ Loop Landmark"],
   bestTime: "Sep – Nov (rice harvest, cloud inversions) or Mar – May (green terraces)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "Free (viewpoints); climbing fee if applicable",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.06521535060752,105.00120271105881",

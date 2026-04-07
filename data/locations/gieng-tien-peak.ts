@@ -19,6 +19,7 @@ export const giengTienPeak: Location = {
     "⛩️ Chùa Đục Trailhead",
   ],
   bestTime: "Mar - Aug; early morning for clearest views",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388855661824474,109.10258272120166",

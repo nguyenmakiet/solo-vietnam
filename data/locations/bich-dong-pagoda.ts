@@ -14,6 +14,7 @@ export const bichDongPagoda: Location = {
   experiences: ["history", "culture", "walking-tour", "photography"],
   tags: ["⛩️ Cave Pagoda", "🪨 Limestone Grotto", "📸 Photography", "🏔️ Viewpoint"],
   bestTime: "Oct – Apr (dry season, cooler temperatures, clear skies)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2310,105.9530",

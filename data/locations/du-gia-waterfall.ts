@@ -14,6 +14,7 @@ export const duGiaWaterfall: Location = {
   experiences: ["trekking", "swimming", "photography"],
   tags: ["💧 Jungle Waterfall", "🏊 Natural Pool", "🥾 River Trek", "📸 Photography"],
   bestTime: "Jun – Oct (highest water flow); Sep – Oct for combination of flow and clear weather",
+  bestMonths: [6, 7, 8, 9, 10],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.92605491197045,105.1988164932612",

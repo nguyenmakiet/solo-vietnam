@@ -14,6 +14,7 @@ export const capeCaNa: Location = {
   experiences: ["photography", "beach", "motorcycling"],
   tags: ["🏜️ Desert Coast", "🪨 Boulder Beach", "📸 Photography", "🌅 Sunset Spot"],
   bestTime: "Jan - Aug (dry season; Ninh Thuận is one of the driest provinces in Vietnam and is sunny year-round, but the calmest sea conditions are in the early months)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.33780195985091,108.86728048488189",

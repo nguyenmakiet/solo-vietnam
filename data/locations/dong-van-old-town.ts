@@ -14,6 +14,7 @@ export const dongVanOldTown: Location = {
   experiences: ["culture", "history", "photography", "walking-tour", "food", "markets"],
   tags: ["🏘️ Old Town", "📸 Photography", "🍜 Local Food", "🌙 Night Market"],
   bestTime: "Sep – Nov (buckwheat flowers) or Mar – Apr (cherry blossoms)",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2739,105.3622",

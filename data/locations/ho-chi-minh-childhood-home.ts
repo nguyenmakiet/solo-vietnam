@@ -14,6 +14,7 @@ export const hoChiMinhChildhoodHome: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ National Pilgrimage Site", "🌿 Historic Village", "📸 Photography", "🇻🇳 Vietnamese History"],
   bestTime: "Oct – Apr (cool and dry; avoid the blistering Nghệ An summer heat of Jun – Aug)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "7:00 – 17:30 daily",
   mapUrl: "https://www.google.com/maps?q=18.754900,105.530300",

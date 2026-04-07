@@ -14,6 +14,7 @@ export const redSandDunes: Location = {
   experiences: ["photography", "walking-tour"],
   tags: ["🔴 Red Iron-Oxide Dunes", "🌅 Sunset Views", "📸 Photography", "🚶 Walking"],
   bestTime: "Nov – Apr (dry season); sunset visits year-round",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7; best at sunrise and sunset",
   mapUrl: "https://www.google.com/maps?q=10.949408234413704,108.29650702647355",

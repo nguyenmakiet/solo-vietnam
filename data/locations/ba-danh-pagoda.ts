@@ -14,6 +14,7 @@ export const baDanhPagoda: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🛕 Quietest Pagoda in Vietnam", "🌿 Riverside Setting", "📸 Photography", "🧘 Peaceful Retreat"],
   bestTime: "Oct – Apr (cool and dry season)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily, dawn to dusk",
   mapUrl: "https://www.google.com/maps?q=20.583400,105.921200",

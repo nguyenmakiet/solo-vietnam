@@ -14,6 +14,7 @@ export const nhanTower: Location = {
   experiences: ["photography", "culture", "history", "walking-tour"],
   tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night"],
   bestTime: "Jan – Aug (dry season); Saturday evenings for cultural performances",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "6:30 AM – 10:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=13.082464193252497,109.30199511819382",

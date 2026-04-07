@@ -14,6 +14,7 @@ export const frenchVillageBaNa: Location = {
   experiences: ["photography", "walking-tour", "food"],
   tags: ["🏰 French Colonial Architecture", "🎡 Fantasy Park", "🍷 Mountain Winery", "📸 Photography"],
   bestTime: "Mar – Aug (dry season, clearest skies, best for outdoor photography)",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
   mapUrl: "https://www.google.com/maps?q=15.997655145396397,107.98932655723252",

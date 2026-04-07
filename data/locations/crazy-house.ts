@@ -14,6 +14,7 @@ export const crazyHouse: Location = {
   experiences: ["photography", "walking-tour", "culture"],
   tags: ["🏠 Gaudi-Style Architecture", "📸 Photography", "🎨 Art & Design", "🏨 Functioning Guesthouse"],
   bestTime: "Year-round; visit early morning to avoid tour groups",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~60,000 VND",
   openingHours: "8:00 AM – 7:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.934822914969137,108.43136784176984",

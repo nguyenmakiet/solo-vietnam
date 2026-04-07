@@ -14,6 +14,7 @@ export const canGioBeach: Location = {
   experiences: ["beach", "swimming", "food", "cycling", "photography"],
   tags: ["🏖️ Saigon's Own Beach", "🦀 Seafood", "🌊 Day Trip from HCMC", "🌿 Mangrove Coast"],
   bestTime: "Nov – Apr (dry season; calmer water and better beach conditions)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.383300,106.966700",

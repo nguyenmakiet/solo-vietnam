@@ -14,6 +14,7 @@ export const konTumWoodenChurch: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["⛪ French Mission Architecture", "🪵 All-Wood Construction", "📸 Photography", "🏛️ Colonial Heritage"],
   bestTime: "Oct – Apr (dry season; easier travel through the highlands)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily; mass times vary - check locally",
   mapUrl: "https://www.google.com/maps?q=14.349700,107.999800",

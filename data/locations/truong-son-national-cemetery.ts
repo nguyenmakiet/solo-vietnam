@@ -14,6 +14,7 @@ export const truongSonNationalCemetery: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🪦 War Memorial", "🕊️ Ho Chi Minh Trail", "📸 Sobering Visit", "🇻🇳 National Memorial"],
   bestTime: "Nov – Apr (dry season; avoid Jul – Sep when central Vietnam has heavy rain)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=truong+son+national+cemetery+quang+tri",

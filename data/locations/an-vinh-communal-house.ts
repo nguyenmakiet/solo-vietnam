@@ -19,6 +19,7 @@ export const anVinhCommunalHouse: Location = {
     "🎎 Traditional Village Culture",
   ],
   bestTime: "Year-round; the Khao Lề Thế Lính Hoàng Sa ceremony is held annually in late April",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours",
   mapUrl: "https://www.google.com/maps?q=15.376064479616458,109.10020318216426",

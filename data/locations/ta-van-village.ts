@@ -14,6 +14,7 @@ export const taVanVillage: Location = {
   experiences: ["homestay", "culture", "trekking", "photography"],
   tags: ["🏡 Homestay", "🎎 Giáy Culture", "🌾 Rice Terraces", "🥾 Trekking"],
   bestTime: "Sep – Oct (golden terraces) or Mar – Apr (green and clear)",
+  bestMonths: [3, 4, 9, 10],
   entranceFee: "Free (included in Muong Hoa Valley entrance fee)",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=22.2970,103.8730",

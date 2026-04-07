@@ -19,6 +19,7 @@ export const lySonGarlicFields: Location = {
     "🌿 Harvest Season Feb - Apr",
   ],
   bestTime: "Feb - Apr (harvest season - most photogenic when garlic is fully grown); Oct - Nov to see planting",
+  bestMonths: [2, 3, 4, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7 (farming fields - respect crops and stay on paths)",
   mapUrl: "https://www.google.com/maps?q=15.38142400159663,109.11882432420393",

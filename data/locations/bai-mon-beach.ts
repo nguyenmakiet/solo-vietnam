@@ -14,6 +14,7 @@ export const baiMonBeach: Location = {
   experiences: ["beach", "photography", "trekking"],
   tags: ["🌅 First Sunrise", "🏖️ Secluded Beach", "🏔️ Cape Walk", "📸 Photography"],
   bestTime: "Jan – Aug (dry season, clear skies for sunrise)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~15,000 VND (national park access)",
   openingHours: "5:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.896863628194192,109.45109317905293",

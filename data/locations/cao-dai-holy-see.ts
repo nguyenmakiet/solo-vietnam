@@ -14,6 +14,7 @@ export const caoDaiHolySee: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🕌 Unique Religion", "📸 Unmissable Architecture", "🙏 Active Worship", "🚌 Day Trip from HCMC"],
   bestTime: "Year-round; noon ceremony (11:00–12:00) is the most accessible for visitors",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Daily ceremonies at 6:00, 12:00, 18:00, 24:00; visitors welcome to observe",
   mapUrl: "https://www.google.com/maps?q=11.368500,106.154600",

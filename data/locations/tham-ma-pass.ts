@@ -14,6 +14,7 @@ export const thamMaPass: Location = {
   experiences: ["photography", "trekking", "cycling", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "📸 Photography", "🌾 Rice Terraces"],
   bestTime: "Sep – Nov (golden terraces) or Mar – Apr (spring flowers)",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2833,105.2500",

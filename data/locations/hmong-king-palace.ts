@@ -14,6 +14,7 @@ export const hmongKingPalace: Location = {
   experiences: ["history", "culture", "photography", "walking-tour", "motorcycling"],
   tags: ["🏛️ Hmong Royal Residence", "📸 Architecture", "🧭 Đồng Văn Plateau", "🏍️ Ha Giang Loop"],
   bestTime: "Sep – Nov (buckwheat flower season; best weather for the Ha Giang loop overall)",
+  bestMonths: [9, 10, 11],
   entranceFee: "~20,000 – 40,000 VND",
   openingHours: "7:00 – 18:00 daily",
   mapUrl: "https://www.google.com/maps?q=23.183300,105.316700",

@@ -14,6 +14,7 @@ export const damTrauBeach: Location = {
   experiences: ["beach", "snorkeling", "photography", "wildlife"],
   tags: ["🏖️ Top 25 Beaches in the World", "✈️ Planes Landing Overhead", "🪸 Coral Reef", "🏕️ Camping Allowed"],
   bestTime: "Nov – Apr (dry season; calmest water)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open all day",
   mapUrl: "https://www.google.com/maps?q=8.734371501177048,106.62476852169172",

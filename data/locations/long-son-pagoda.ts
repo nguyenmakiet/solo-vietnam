@@ -14,6 +14,7 @@ export const longSonPagoda: Location = {
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["⛩️ White Buddha", "🏔️ Hilltop Statue", "📸 Photography", "🕌 Active Pagoda"],
   bestTime: "Year-round; early morning for quietest atmosphere",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "8:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.250327071591599,109.18072246606026",

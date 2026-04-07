@@ -14,6 +14,7 @@ export const honSonIsland: Location = {
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "cycling", "motorcycling"],
   tags: ["🏝️ Hidden Gulf Island", "🤿 Snorkeling", "🌊 Clear Water", "🚴 Island Cycling"],
   bestTime: "Nov – May (dry season with calm seas and clear water; wet season Jun – Oct brings rough conditions)",
+  bestMonths: [1, 2, 3, 4, 5, 11, 12],
   entranceFee: "Free; boat fare from Rạch Giá or Kiên Hải applies",
   openingHours: "Open daily; ferry schedule dependent on sea conditions",
   mapUrl: "https://www.google.com/maps?q=10.045800,104.506900",

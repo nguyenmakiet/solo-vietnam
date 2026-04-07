@@ -14,6 +14,7 @@ export const maPiLengPass: Location = {
   experiences: ["photography", "trekking", "cycling", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "📸 Photography", "🌊 Canyon Views"],
   bestTime: "Sep – Nov (golden rice terraces) or Mar – Apr (spring blossoms)",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7 - best at sunrise",
   mapUrl: "https://maps.google.com/?q=23.1900,105.3800",

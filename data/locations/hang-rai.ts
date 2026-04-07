@@ -14,6 +14,7 @@ export const hangRai: Location = {
   experiences: ["photography", "trekking", "wildlife"],
   tags: ["🪨 Rock Formations", "🐠 Coral Reef", "🌊 Wild Coast", "📸 Photography"],
   bestTime: "Jan – Aug (dry season, calm seas); avoid Sep – Dec monsoon",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24 hours (boat access weather-dependent)",
   mapUrl: "https://www.google.com/maps?q=11.678088681494673,109.18272230833225",

@@ -19,6 +19,7 @@ export const hangCauCliffs: Location = {
     "📸 Photography",
   ],
   bestTime: "Mar - Aug (calm water, good visibility for snorkeling); afternoon when tide is lower",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388917622220426,109.13405569310561",

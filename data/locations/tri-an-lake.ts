@@ -14,6 +14,7 @@ export const triAnLake: Location = {
   experiences: ["camping", "kayaking", "boat-tour", "cycling", "photography", "wildlife"],
   tags: ["⛺ Camping", "🚣 Kayaking", "🌅 Sunset Views", "🏕️ Weekend Escape"],
   bestTime: "Nov – Apr (dry season, water levels stable and camping conditions good; avoid Oct when post-rainy-season water may be high)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free (boat hire and camping fees vary by operator: camping from 100,000 VND/person)",
   openingHours: "Open all day; camping operators typically run overnight packages",
   mapUrl: "https://www.google.com/maps?q=tri+an+lake+dong+nai",

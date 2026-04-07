@@ -14,6 +14,7 @@ export const honTamIsland: Location = {
   experiences: ["beach", "swimming", "snorkeling", "boat-tour", "kayaking"],
   tags: ["🏝️ Private Island Resort", "🏖️ White Sand Beach", "🤿 Snorkeling", "🚢 Boat Tour"],
   bestTime: "Feb – Sep (dry season, calm water, best visibility)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],
   entranceFee: "~200,000–350,000 VND day pass (resort facilities included)",
   openingHours: "8:00 AM – 5:00 PM; boat transfers from Cầu Đá pier",
   mapUrl: "https://www.google.com/maps?q=12.177120449066654,109.24323947785186",

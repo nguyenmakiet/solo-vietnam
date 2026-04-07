@@ -14,6 +14,7 @@ export const buGiaMapNationalPark: Location = {
   experiences: ["trekking", "wildlife", "photography", "camping"],
   tags: ["🌿 Primary Rainforest", "🦧 Gibbon Habitat", "🥾 Remote Trek", "🏕️ Camping"],
   bestTime: "Nov - Apr (dry season; wet season Jul - Oct makes trails impassable and river crossings dangerous)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "~60,000 VND park entry; guided treks additional",
   openingHours: "7:00 AM - 5:00 PM (park HQ); overnight treks by arrangement",
   mapUrl: "https://www.google.com/maps?q=12.096260710633082,107.19588006603547",

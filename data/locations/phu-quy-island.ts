@@ -14,6 +14,7 @@ export const phuQuyIsland: Location = {
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "cycling", "diving"],
   tags: ["🏝️ Offshore Island", "🤿 Diving & Snorkeling", "🚴 Island Cycling", "🌊 Clear Water"],
   bestTime: "Jan – Aug (dry season; calm seas essential for the 3-hour crossing and for diving conditions)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free; ferry fare from Phan Thiết applies",
   openingHours: "Open daily; ferry schedule weather-dependent",
   mapUrl: "https://www.google.com/maps?q=10.516700,108.933300",

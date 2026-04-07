@@ -14,6 +14,7 @@ export const trungTrangCave: Location = {
   experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 Largest Cave on Cát Bà", "📸 Photography", "🦇 Bat Colony", "🥾 National Park"],
   bestTime: "Apr – Oct (dry season, trail accessible; cave open year-round)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~40,000 VND (national park entry applies)",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.788685844969777,106.99832793371839",

@@ -14,6 +14,7 @@ export const dauTiengLake: Location = {
   experiences: ["photography", "camping", "cycling", "boat-tour"],
   tags: ["🏞️ Largest Reservoir", "🌅 Sunrise Photography", "🚴 Cycling", "🏕️ Camping"],
   bestTime: "Nov - Apr (dry season with clear skies for sunrise photography; the lake is fullest after the wet season ends around Nov)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.37356385595011,106.28498591723591",

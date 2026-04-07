@@ -14,6 +14,7 @@ export const conDaoPrison: Location = {
   experiences: ["history", "culture", "walking-tour", "photography"],
   tags: ["🏛️ French Colonial Prison", "⛓️ Tiger Cages", "📖 Vietnam War History", "🕯️ Hàng Dương Cemetery"],
   bestTime: "Year-round; cooler and less humid Nov – Apr",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "~40,000 VND (covers multiple prison buildings)",
   openingHours: "7:30 AM – 11:30 AM · 1:30 PM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=8.689294969079059,106.6153057028259",

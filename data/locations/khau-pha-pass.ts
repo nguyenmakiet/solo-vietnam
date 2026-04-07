@@ -14,6 +14,7 @@ export const khauPhaPass: Location = {
   experiences: ["motorcycling", "photography", "trekking", "cycling"],
   tags: ["🏔️ One of Vietnam's Four Great Passes", "🌄 Rice Terrace Views", "🏍️ Motorbike Road", "📸 Photography"],
   bestTime: "Sep – Oct (golden rice terrace harvest season); May – Jun (flooded mirror terraces)",
+  bestMonths: [5, 6, 9, 10],
   entranceFee: "Free",
   openingHours: "Open daily; road occasionally closed after heavy rain or landslide",
   mapUrl: "https://www.google.com/maps?q=21.783300,104.316700",

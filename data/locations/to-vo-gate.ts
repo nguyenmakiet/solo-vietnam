@@ -19,6 +19,7 @@ export const toVoGate: Location = {
     "🏛️ National Heritage Site (2025)",
   ],
   bestTime: "May - Aug (dry season, clear water); sunrise and sunset for photography",
+  bestMonths: [5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.390100951312618,109.09934087255056",

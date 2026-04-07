@@ -14,6 +14,7 @@ export const coThachBeach: Location = {
   experiences: ["photography", "beach", "walking-tour"],
   tags: ["🪨 Moss-Covered Rocks", "📸 Photography", "🌅 Sunrise Spot", "🏖️ Uncrowded Beach"],
   bestTime: "Jan - Aug (dry season; the moss on the rocks is greenest after the wet season ends around Dec - Jan, making early dry season the best combination of good weather and vivid colour)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.17800572228083,108.71644682210062",

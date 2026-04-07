@@ -14,6 +14,7 @@ export const mySonSanctuary: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ UNESCO Heritage", "🛕 Cham Temples", "📸 Photography", "🌿 Jungle Ruins"],
   bestTime: "Feb – Aug (dry season; the site floods and paths become muddy in the Oct – Jan wet season)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~150,000 VND",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=15.76310079629061,108.12417516881945",

@@ -14,6 +14,7 @@ export const taNangPhanDungTrek: Location = {
   experiences: ["trekking", "camping", "photography", "wildlife"],
   tags: ["🥾 Multi-day Trek", "🏕️ Camping", "🌄 Highland to Coast", "📸 Photography"],
   bestTime: "Nov - Apr (dry season only; wet season May - Oct makes the trail extremely dangerous - flash floods on the river crossings have caused fatalities)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free; guide and porter fees apply",
   openingHours: "Multi-day trek; depart from Đà Lạt side",
   mapUrl: "https://www.google.com/maps?q=11.536084933625041,108.53666725713427",

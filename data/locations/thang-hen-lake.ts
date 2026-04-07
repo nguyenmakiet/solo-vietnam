@@ -14,6 +14,7 @@ export const thangHenLake: Location = {
   experiences: ["photography", "trekking", "kayaking", "wildlife", "camping"],
   tags: ["💙 Turquoise Mountain Lake", "📸 Photography", "🏔️ Karst Plateau", "🦅 Wildlife"],
   bestTime: "Sep – Nov (post-rainy season, highest water level, most vivid colour)",
+  bestMonths: [9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.759334520663145,106.29375946526802",

@@ -14,6 +14,7 @@ export const taPaTemple: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🛕 Khmer Temple", "🏛️ War Memorial", "📸 Photography", "🕊️ Genocide Site"],
   bestTime: "Nov - Apr (dry season; the Thất Sơn hills are accessible and the weather is cooler for site visits)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.4152711092553,104.99329389037788",

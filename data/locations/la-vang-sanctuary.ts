@@ -14,6 +14,7 @@ export const laVangSanctuary: Location = {
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["⛪ National Marian Shrine", "🕊️ 1798 Apparition Site", "🏛️ Minor Basilica", "🌿 Vietnam's Lourdes"],
   bestTime: "Any time; Aug 13–15 (pilgrimage festival - massive crowds, book ahead)",
+  bestMonths: [8],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=16.706975257885,107.19547985549681",

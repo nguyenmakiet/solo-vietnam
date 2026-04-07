@@ -14,6 +14,7 @@ export const keoPagoda: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🛕 17th-Century Pagoda", "🏛️ National Relic", "📸 Architecture", "🌾 Red River Delta"],
   bestTime: "Feb – Apr (spring festival season, dry weather)",
+  bestMonths: [2, 3, 4],
   entranceFee: "Free (donations accepted)",
   openingHours: "Open daily, dawn to dusk",
   mapUrl: "https://www.google.com/maps?q=20.538600,106.450500",

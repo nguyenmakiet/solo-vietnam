@@ -14,6 +14,7 @@ export const vinpearlCableCar: Location = {
   experiences: ["cable-car", "photography", "beach"],
   tags: ["🚡 Over-Sea Cable Car", "📸 Panoramic Views", "🏝️ Hon Tre Island", "🎡 Vinpearl Resort"],
   bestTime: "Feb – Aug (clearest visibility over the bay; cable car operates year-round)",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Included in Vinpearl Land ticket (~900,000–1,300,000 VND)",
   openingHours: "8:00 AM – 10:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.203687968459107,109.21792171467011",

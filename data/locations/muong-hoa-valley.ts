@@ -14,6 +14,7 @@ export const muongHoaValley: Location = {
   experiences: ["trekking", "photography", "culture", "homestay"],
   tags: ["🌾 Rice Terraces", "🥾 Trekking", "📸 Photography", "🏡 Homestay"],
   bestTime: "Sep – Oct (golden harvest) or May – Jun (green planting season)",
+  bestMonths: [5, 6, 9, 10],
   entranceFee: "~70,000–90,000 VND at valley checkpoint",
   openingHours: "Open daily",
   mapUrl: "https://maps.google.com/?q=22.3100,103.8650",

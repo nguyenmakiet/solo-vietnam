@@ -14,6 +14,7 @@ export const haLongBay: Location = {
   experiences: ["boat-tour", "kayaking", "caving", "photography", "swimming"],
   tags: ["🌊 UNESCO World Heritage", "🚢 Overnight Cruise", "🪨 Karst Landscape", "📸 Photography"],
   bestTime: "Sep – Nov (clear skies, calm water, best visibility) or Mar – Apr",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "290,000 VND bay entrance + cruise/boat fee (varies by operator)",
   openingHours: "Year-round; cruise departures typically 7:30 AM – 12:00 PM from pier",
   mapUrl: "https://maps.google.com/?q=20.9101,107.1839",

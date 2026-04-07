@@ -14,6 +14,7 @@ export const tayPhuongPagoda: Location = {
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🛕 8th-Century Pagoda", "🏛️ National Relic", "🪨 Hilltop Pagoda", "📸 Architecture & Statues"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat on the climb)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free (donations accepted)",
   openingHours: "Open daily, dawn to dusk",
   mapUrl: "https://www.google.com/maps?q=20.966700,105.667800",

@@ -14,6 +14,7 @@ export const phongNhaBotanicGarden: Location = {
   experiences: ["trekking", "wildlife", "photography", "cycling"],
   tags: ["🌿 Jungle Trails", "🦋 Wildlife", "🚲 Cycling", "📸 Photography"],
   bestTime: "Feb – Aug (dry season, trails accessible; wildlife most active early morning)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~40,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.55254653358196,106.30196116431941",

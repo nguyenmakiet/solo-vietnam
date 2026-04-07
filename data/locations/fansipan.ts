@@ -14,6 +14,7 @@ export const fansipan: Location = {
   experiences: ["trekking", "cable-car", "photography"],
   tags: ["🏔️ Rooftop of Indochina", "🚡 Cable Car", "🥾 Trekking", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clear skies, flowers in bloom)",
+  bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "Cable car + funicular: ~800,000 VND round-trip. Hiking: free (permit required)",
   openingHours: "Cable car: 7:30 AM – 5:30 PM",
   mapUrl: "https://maps.google.com/?q=22.30317,103.77638",

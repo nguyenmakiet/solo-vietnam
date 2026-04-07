@@ -14,6 +14,7 @@ export const khemBeach: Location = {
   experiences: ["beach", "swimming", "photography"],
   tags: ["🏖️ Beach", "🌊 Clear Water", "🌅 Sunset", "🏨 Resort"],
   bestTime: "Nov – Apr (dry season, calm water)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free (public beach section); resort access varies",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=10.0289,104.0439",

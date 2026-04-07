@@ -14,6 +14,7 @@ export const aPaChai: Location = {
   experiences: ["trekking", "photography", "motorcycling", "culture"],
   tags: ["🌐 Westernmost Point", "🏔️ Triple Border", "🥾 Remote Trek", "📸 Photography"],
   bestTime: "Oct - Apr (dry season; wet season May - Sep makes the mountain trail extremely muddy and the remote roads to Mường Nhé impassable by motorbike after rain)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "Free; border area permit required",
   openingHours: "Open daily; border area access requires prior permit from local authorities",
   mapUrl: "https://www.google.com/maps?q=22.401192335843305,102.14371962758165",

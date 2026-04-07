@@ -14,6 +14,7 @@ export const sonDoongCave: Location = {
   experiences: ["caving", "trekking", "camping", "photography"],
   tags: ["🏆 World's Largest Cave", "🏕️ Overnight Expedition", "📸 Photography", "🥾 Trekking"],
   bestTime: "Feb – Aug (expedition season; cave closes Sep – Jan)",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~$3,000 USD per person (4-day expedition, all-inclusive)",
   openingHours: "Expedition departures: Feb – Aug only",
   mapUrl: "https://www.google.com/maps?q=17.466399525611973,106.30214901899664",

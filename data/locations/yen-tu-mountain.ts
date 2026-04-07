@@ -14,6 +14,7 @@ export const yenTuMountain: Location = {
   experiences: ["trekking", "culture", "history", "photography"],
   tags: ["⛰️ Sacred Peak", "🛕 Buddhist Pilgrimage", "🥾 Summit Trek", "🌲 Ancient Forest"],
   bestTime: "Oct - Apr (dry season; the spring pilgrimage season Jan - Mar is culturally rich but extremely crowded)",
+  bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "~40,000 VND; cable car additional ~200,000 VND one way",
   openingHours: "5:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=21.131344974258912,106.73006478199216",

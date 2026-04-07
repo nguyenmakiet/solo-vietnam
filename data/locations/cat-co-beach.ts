@@ -14,6 +14,7 @@ export const catCoBeach: Location = {
   experiences: ["beach", "swimming", "photography"],
   tags: ["🏖️ Cát Bà's Main Beach", "🌊 Swimming", "📸 Photography", "🌅 Sunset"],
   bestTime: "May – Sep (swimming season; water warm, conditions calm)",
+  bestMonths: [5, 6, 7, 8, 9],
   entranceFee: "Free (Cát Cò 1 and Cát Cò 3); ~30,000 VND (Cát Cò 2)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=20.71792329725481,107.05221565965415",

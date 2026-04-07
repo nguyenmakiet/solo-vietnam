@@ -19,6 +19,7 @@ export const anBinhIsland: Location = {
     "⛵ Boat Trip Required",
   ],
   bestTime: "Mar - Aug (calm seas and best underwater visibility); day trips only - limited overnight options",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free (boat ticket from Lý Sơn port ~50,000 VND one way)",
   openingHours: "Boat departures from Lý Sơn main port from ~7 AM daily (seasonal)",
   mapUrl: "https://www.google.com/maps?q=15.427950714721403,109.08039442282168",

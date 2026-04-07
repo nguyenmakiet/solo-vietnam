@@ -14,6 +14,7 @@ export const sonTraPeninsula: Location = {
   experiences: ["wildlife", "photography", "trekking", "motorcycling", "beach"],
   tags: ["🐒 Red-Shanked Douc Langur", "🌿 Nature Reserve", "🏍️ Scenic Drive", "📸 Photography"],
   bestTime: "Mar – Aug (dry season, clear roads, best wildlife sightings in early morning)",
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open daily; best visited 5:30–9:00 AM for wildlife",
   mapUrl: "https://www.google.com/maps?q=16.122257078414076,108.27692670069526",

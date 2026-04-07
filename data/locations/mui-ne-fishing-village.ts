@@ -14,6 +14,7 @@ export const muiNeFishingVillage: Location = {
   experiences: ["photography", "culture", "food"],
   tags: ["🎣 Fishing Village", "🌅 Sunrise", "📸 Photography", "🦐 Seafood"],
   bestTime: "Nov – Apr (dry season); early morning any time of year for the fish market",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24 hours (fish market most active 5:00 – 8:00 AM)",
   mapUrl: "https://www.google.com/maps?q=10.94117833027457,108.2795665776806",

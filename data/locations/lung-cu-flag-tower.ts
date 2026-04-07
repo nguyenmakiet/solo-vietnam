@@ -14,6 +14,7 @@ export const lungCuFlagTower: Location = {
   experiences: ["history", "culture", "photography", "trekking"],
   tags: ["🚩 Northernmost Point", "🏔️ Viewpoint", "📸 Photography", "🇻🇳 Landmark"],
   bestTime: "Sep – Nov or Mar – Apr (clear skies)",
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "20,000 VND/person",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=23.3786,105.3336",

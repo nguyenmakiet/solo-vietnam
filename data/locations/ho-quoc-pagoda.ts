@@ -14,6 +14,7 @@ export const hoQuocPagoda: Location = {
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["🛕 Pagoda", "🏔️ Sea View", "📸 Photography", "🧘 Peaceful"],
   bestTime: "Nov – Apr (dry season; clear views)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=10.1375,104.0800",

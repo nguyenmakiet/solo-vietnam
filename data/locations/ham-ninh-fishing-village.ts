@@ -14,6 +14,7 @@ export const hamNinhFishingVillage: Location = {
   experiences: ["culture", "food", "photography", "walking-tour"],
   tags: ["🎣 Fishing Village", "🦀 Seafood", "🏡 Local Life", "🌅 Sunrise"],
   bestTime: "Nov – Apr (dry season; early morning for freshest catch)",
+  bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24/7 - best at 5–8am",
   mapUrl: "https://maps.google.com/?q=10.1792,104.0700",

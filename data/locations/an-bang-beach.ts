@@ -14,6 +14,7 @@ export const anBangBeach: Location = {
   experiences: ["beach", "swimming", "cycling", "food"],
   tags: ["🏖️ Beach", "🍹 Beachside Cafes", "🌊 Swimming", "🚲 Cycling Distance from Hội An"],
   bestTime: "Mar – Sep (dry season, calm water; avoid Oct – Jan which is storm season)",
+  bestMonths: [3, 4, 5, 6, 7, 8, 9],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.913659812360246,108.3404344460877",
