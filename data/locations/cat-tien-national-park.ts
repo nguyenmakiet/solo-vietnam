@@ -18,7 +18,7 @@ export const catTienNationalPark: Location = {
   entranceFee: "~60,000 VND park entry; activities additional",
   openingHours: "Park open daily; activity bookings through park HQ",
   mapUrl: "https://www.google.com/maps?q=11.424517877270743,107.42756061160924",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775749506954!6m8!1m7!1sCAoSHENJQUJJaEJWY0lUZG5BNDd6bjlXOGphT1NKU0U.!2m2!1d11.42405996435068!2d107.4300738916338!3f110.80245140194039!4f-19.56269614535016!5f0.7820865974627469", },
   heroImage: heroUrl("nam-cat-tien-national-park-dong-nai-6_keccsw"),
   gallery: [
     "nam-cat-tien-national-park-dong-nai-8_anz9pi",

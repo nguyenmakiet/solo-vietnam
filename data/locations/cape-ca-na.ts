@@ -6,8 +6,8 @@ export const capeCaNa: Location = {
   name: "Cape Cà Ná",
   provinces: ["ninh-thuan"],
   destination: "",
-  lat: "11.33780195985091",
-  lng: "108.86728048488189",
+  lat: "11.333761739966421",
+  lng: "108.87418245213733",
   address: "Cà Ná, Thuận Nam, Ninh Thuận",
   type: ["beach", "nature", "landmark"],
   categories: [],
@@ -18,7 +18,7 @@ export const capeCaNa: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.33780195985091,108.86728048488189",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775746064907!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREVfcUhqQ0E.!2m2!1d11.33281497321911!2d108.873924960077!3f263.85967601000965!4f-31.003410756674356!5f0.7820865974627469", },
   heroImage: heroUrl("cape-ca-na-beach-ninh-thuan-8_zv3i7t"),
   gallery: [
     "cape-ca-na-beach-ninh-thuan-4_wwhrr0",
@@ -29,7 +29,6 @@ export const capeCaNa: Location = {
     "cape-ca-na-beach-ninh-thuan_gidpm1",
     "cape-ca-na-beach-ninh-thuan-9_ffnobx",
     "cape-ca-na-beach-ninh-thuan-7_qysb9b",
-    "cape-ca-na-beach-ninh-thuan-6_yvufiw",
   ],
   seoDescription:
     "Cape Cà Ná is a dramatic headland on the Ninh Thuận coast where granite boulders meet the East Sea against a backdrop of near-desert scrubland - one of the most visually distinctive coastal landscapes on the north-south motorbike route.",

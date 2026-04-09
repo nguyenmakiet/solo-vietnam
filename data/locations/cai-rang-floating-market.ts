@@ -18,7 +18,7 @@ export const caiRangFloatingMarket: Location = {
   entranceFee: "Free; boat hire: ~100,000–200,000 VND/hour",
   openingHours: "4:00 AM – 9:00 AM (most active 5:00–7:00 AM)",
   mapUrl: "https://www.google.com/maps?q=10.005150042253042,105.74627948543848",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775745671344!6m8!1m7!1sCAoSHENJQUJJaERmMTZqdnV0b3ZHeHlxa3pLM1ZKMmw.!2m2!1d10.00503628087037!2d105.7459815950756!3f350.46809840093937!4f-44.51494005953508!5f0.7820865974627469",},
   heroImage: heroUrl("cai-rang-float-market-can-tho3_wfd0gk"),
   gallery: [
     "cai-rang-float-market-can-tho_bpesez",

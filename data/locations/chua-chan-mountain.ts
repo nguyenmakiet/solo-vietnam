@@ -18,7 +18,7 @@ export const chuaChanMountain: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.938213833993702,107.37752745679926",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775749754139!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREN5UF8wREE.!2m2!1d10.94011443385938!2d107.3764232040625!3f262.07042031391444!4f-3.912546397161236!5f0.7820865974627469", },
   heroImage: heroUrl("chua-chan-mountain-5_oifgix"),
   gallery: [
     "chua-chan-mountain-1_yypgxf",

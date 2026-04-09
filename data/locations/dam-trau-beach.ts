@@ -18,7 +18,7 @@ export const damTrauBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open all day",
   mapUrl: "https://www.google.com/maps?q=8.734371501177048,106.62476852169172",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775754553267!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHVsczZIRHc.!2m2!1d8.734279419966642!2d106.6233782850006!3f6.227611268706042!4f9.223741618655268!5f0.7820865974627469", },
   heroImage: heroUrl("dam-trau-beach-5_dnbkjn"),
   gallery: [
     "dam-trau-beach1_nouql0",

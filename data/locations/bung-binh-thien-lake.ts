@@ -3,7 +3,7 @@ import { heroUrl } from "@/lib/cloudinary"
 
 export const bungBinhThienLake: Location = {
   slug: "bung-binh-thien-lake",
-  name: "Bưng Bình Thiên Lake",
+  name: "Búng Bình Thiên Lake",
   provinces: ["an-giang"],
   destination: "",
   lat: "10.919979584967262",

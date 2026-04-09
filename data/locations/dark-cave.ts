@@ -18,7 +18,7 @@ export const darkCave: Location = {
   entranceFee: "~450,000 VND (all activities included)",
   openingHours: "7:30 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.574355688827836,106.25458261828979",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775754964535!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDI0dUszOGdF!2m2!1d17.57434997734719!2d106.2516421754264!3f142.15513560570668!4f7.232951463300054!5f0.7820865974627469", },
   heroImage: heroUrl("dark-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

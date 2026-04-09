@@ -18,7 +18,7 @@ export const catCatVillage: Location = {
   entranceFee: "~90,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=22.3301,103.8325",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775747689042!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGsyTlNWYWc.!2m2!1d22.32840728004029!2d103.8342056380308!3f188.53461007034278!4f-29.704584728056048!5f0.7820865974627469", },
   heroImage: heroUrl("cat-cat-village2_l6tzcr"),
   gallery: [
     "cat-cat-village_jla31i",

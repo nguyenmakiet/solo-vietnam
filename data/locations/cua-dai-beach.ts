@@ -18,7 +18,7 @@ export const cuaDaiBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.902162713109306,108.35901183162761",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775752536506!6m8!1m7!1sCAoSHENJQUJJaENyWTBMM3d4bzUzTWk1SHd4WGNubDE.!2m2!1d15.909042250503!2d108.3499926839937!3f133.33955816249562!4f-20.613504036721096!5f0.7820865974627469",},
   heroImage: heroUrl("cua-dai-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

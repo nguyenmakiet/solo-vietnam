@@ -18,7 +18,7 @@ export const buiHuiGrassland: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.733767915481186,108.78824450755181",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775743267067!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3VfOGFIZGc.!2m2!1d14.73715667927905!2d108.7844516555686!3f349.4318463279233!4f-29.211465435196267!5f0.7820865974627469", },
   heroImage: heroUrl("bui-hui-grass-land-quang-ngai-7_bxxtqv"),
   gallery: [
     "bui-hui-grass-land-quang-ngai-5_z66qwc",
@@ -31,7 +31,7 @@ export const buiHuiGrassland: Location = {
   seoDescription:
     "Bùi Hui Grassland is a highland meadow at 700m elevation in Ba Tơ district, Quảng Ngãi - a wide-open landscape of rolling hills, sim berry shrubs, and cool mountain air, home to the H're ethnic minority and one of Quảng Ngãi's most scenic camping destinations.",
   tips: [
-    "The sim flower bloom (cuối tháng 3 - tháng 4) is the highlight of the year - the entire grassland turns purple with rhodomyrtus blossoms that last for over a month",
+    "The sim flower bloom (end of Mar - April) is the highlight of the year - the entire grassland turns purple with rhodomyrtus blossoms that last for over a month",
     "Camp overnight to experience the cool highland nights that feel closer to Đà Lạt or Sapa than coastal Quảng Ngãi - temperatures drop significantly after sunset",
     "The H're ethnic minority community in Ba Tơ district has a distinctive culture including the chiêng ba bronze gong tradition, recognised as a national intangible cultural heritage",
     "The road from Ba Tơ district centre to the grassland involves 10km of winding mountain road - a motorbike with good power handles this better than a scooter",
