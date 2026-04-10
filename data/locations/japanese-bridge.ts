@@ -18,7 +18,7 @@ export const japaneseBridge: Location = {
   entranceFee: "Included in Hội An Old Town ticket (~120,000 VND)",
   openingHours: "Open daily; best visited early morning or after 5 PM",
   mapUrl: "https://www.google.com/maps?q=15.877113853056763,108.32614848011536",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775813802661!6m8!1m7!1sTRBkhpIRO3CsbddPyBYlJg!2m2!1d15.87677500786681!2d108.3261378184943!3f342.74486220899666!4f8.12834574850173!5f0.8087096132671725", },
   heroImage: heroUrl("japanese-bridge-quang-nam2_yrhdb8"),
   gallery: [
     "japanese-bridge-quang-nam4_zt5jyi",

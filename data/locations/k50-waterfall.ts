@@ -18,7 +18,7 @@ export const k50Waterfall: Location = {
   entranceFee: "~50,000 VND (guide fee additional)",
   openingHours: "(guide recommended)",
   mapUrl: "https://www.google.com/maps?q=14.519415223584105,108.60631909493844",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775813963644!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3V4ZU92Snc.!2m2!1d14.51888002334631!2d108.6059633140099!3f358.61903516966527!4f-68.03286732206536!5f0.7820865974627469", },
   heroImage: heroUrl("K50-waterfall-gia-lai-6_trcmgr"),
   gallery: [
     "K50-waterfall-gia-lai-5_wiampc",

@@ -18,9 +18,12 @@ export const dragonBridge: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7; fire and water show: Sat & Sun 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=16.06124852539428,108.22810029126948",
-  streetView: {},
-  heroImage: heroUrl("dragon-bridge-hero_placeholder"),
-  gallery: [],
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775795861658!6m8!1m7!1s3wQ76oq2NbgvWfntAfiX8g!2m2!1d16.06276742021825!2d108.2301906136917!3f223.7685534407437!4f4.410776641076552!5f0.7820865974627469", },
+  heroImage: heroUrl("da-nang_f93yq1"),
+  gallery: [
+    "dragon-bridge-da-nang_q6fdzx",
+    "da-nang_f93yq1",
+  ],
   seoDescription:
     "The Dragon Bridge is Đà Nẵng's most iconic landmark - a 666-metre steel bridge shaped like a dragon crossing the Hàn River, with a head that breathes real fire and water every Saturday and Sunday night at 9 PM.",
   tips: [

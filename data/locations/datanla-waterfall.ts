@@ -18,7 +18,7 @@ export const datanlaWaterfall: Location = {
   entranceFee: "~50,000 VND; alpine coaster: ~70,000 VND one way",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.898464970455633,108.44969026368697",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775793629268!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2tnUHpmX0FF!2m2!1d11.9011995181067!2d108.4489255320626!3f255.51126749739268!4f0.8512766627312089!5f0.7820865974627469", },
   heroImage: heroUrl("datanla_waterfall3_ytizqy"),
   gallery: [
     "datanla_waterfall_p0fwzo",

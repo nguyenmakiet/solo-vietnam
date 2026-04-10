@@ -18,7 +18,7 @@ export const hoQuocPagoda: Location = {
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=10.1375,104.0800",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775811358798!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHkwLUM4OVFF!2m2!1d10.11027526962784!2d104.0305481113608!3f1.797440521679448!4f-13.859929632390916!5f0.7820865974627469" ,},
   heroImage: heroUrl("ho-quoc-pagoda_y9rkq0"),
   gallery: ["ho-quoc-pagoda_y9rkq0",],
   seoDescription:

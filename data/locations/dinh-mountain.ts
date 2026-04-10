@@ -18,7 +18,7 @@ export const dinhMountain: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.537592530622792,107.12929659066629",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775795058439!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQy11ZFM5TGc.!2m2!1d10.53752581288717!2d107.1291829992784!3f303.602767771016!4f-0.34900181405058106!5f0.7820865974627469", },
   heroImage: heroUrl("dinh-mountain-4_kxaybx"),
   gallery: [
     "dinh-mountain-3_vcw0xt",

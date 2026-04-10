@@ -23,7 +23,7 @@ export const giengTienPeak: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388855661824474,109.10258272120166",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775803087631!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzI0ZkhaZkE.!2m2!1d15.38883899914438!2d109.1019733169051!3f204.4097136801466!4f-4.548719474717629!5f0.7820865974627469", },
   heroImage: heroUrl("gieng-tien-peak-ly-son-island-4_lbrihd"),
   gallery: [
     "gieng-tien-peak-ly-son-island-8_pzenkq",

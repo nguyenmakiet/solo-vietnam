@@ -18,7 +18,7 @@ export const hamTienBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=10.951456393863262,108.24921385544317",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775804290419!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2tvdTZtOUFF!2m2!1d10.94278331915793!2d108.1973817179302!3f4.904672140330661!4f-44.12076783497791!5f0.7820865974627469", },
   heroImage: heroUrl("ham-tien-beach-phan-thiet_xecj4z"),
   gallery: [
     "ham-tien-beach-phan-thiet_xecj4z",

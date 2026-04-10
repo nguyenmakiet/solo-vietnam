@@ -18,7 +18,7 @@ export const hoiAnAncientTown: Location = {
   entranceFee: "~120,000 VND (covers 5 heritage site entries within the Old Town)",
   openingHours: "Old Town streets: open 24/7; heritage houses: 8:00 AM – 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=15.877003160603328,108.32649087704544",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775812049920!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0M5TktkOXdF!2m2!1d15.87822301320388!2d108.3282150624152!3f82.06880901525489!4f-70.26415028657615!5f0.7820865974627469",},
   heroImage: heroUrl("hoi-an_qxhyjl"),
   gallery: [
     "hoi-an-ancient-town_xjjwic",

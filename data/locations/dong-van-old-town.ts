@@ -18,7 +18,7 @@ export const dongVanOldTown: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2739,105.3622",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775795554946!6m8!1m7!1sCAoSHENJQUJJaERQdUVJNjVaYjBBQTdvR2NQUTFEa1k.!2m2!1d23.27842036018012!2d105.3614566593666!3f359.0336625264263!4f-26.821763445450244!5f0.7820865974627469", },
   heroImage: heroUrl("dong-van-old-town_yytvko"),
   gallery: [
     "dong-van-6_b6rdz6",

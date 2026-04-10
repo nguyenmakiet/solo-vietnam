@@ -18,7 +18,7 @@ export const imperialCity: Location = {
   entranceFee: "~200,000 VND (Forbidden Purple City included)",
   openingHours: "7:00 AM – 5:30 PM (last entry 5:00 PM)",
   mapUrl: "https://www.google.com/maps?q=16.4677616052903,107.57931947854229",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775813626512!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHEzTFNObWdF!2m2!1d16.46410503347066!2d107.581941720204!3f0.34018440097223124!4f-28.418483049825014!5f0.7820865974627469", },
   heroImage: heroUrl("imperial-citadel-hue3_isqtzb"),
   gallery: [
     "imperial-citadel-hue2_mzy6pe",

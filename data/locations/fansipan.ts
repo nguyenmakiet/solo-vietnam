@@ -18,7 +18,7 @@ export const fansipan: Location = {
   entranceFee: "Cable car + funicular: ~800,000 VND round-trip. Hiking: free (permit required)",
   openingHours: "Cable car: 7:30 AM – 5:30 PM",
   mapUrl: "https://maps.google.com/?q=22.30317,103.77638",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775802184644!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHFwZGp2cWdF!2m2!1d22.30327911195837!2d103.7751085425077!3f246.74829701526204!4f-11.809136171228005!5f0.7820865974627469", },
   heroImage: heroUrl("fansipan_plpijw"),
   gallery: [
     "fansipan4_bgtdiz",

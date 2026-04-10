@@ -18,7 +18,7 @@ export const hangMua: Location = {
   entranceFee: "~100,000 VND",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2180,105.9560",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775810574632!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ085ZGJhOVFF!2m2!1d20.23039995864687!2d105.9209000114224!3f71.53756879714327!4f-12.371882552953068!5f0.7820865974627469", },
   heroImage: heroUrl("hang-mua-ninh-binh_k573hb"),
   gallery: [
     "hang-mua-ninh-binh2_b9var5",

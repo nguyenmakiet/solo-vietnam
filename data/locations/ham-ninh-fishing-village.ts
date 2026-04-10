@@ -18,7 +18,7 @@ export const hamNinhFishingVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7 - best at 5–8am",
   mapUrl: "https://maps.google.com/?q=10.1792,104.0700",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775804063774!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRqZlRwMUFF!2m2!1d10.18304055851125!2d104.0499126072916!3f80.45560573208829!4f7.231187851613882!5f0.4000000000000002", },
   heroImage: heroUrl("ham-ninh-placeholder"),
   gallery: [],
   seoDescription:

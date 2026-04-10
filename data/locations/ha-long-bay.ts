@@ -18,7 +18,7 @@ export const haLongBay: Location = {
   entranceFee: "290,000 VND bay entrance + cruise/boat fee (varies by operator)",
   openingHours: "Year-round; cruise departures typically 7:30 AM – 12:00 PM from pier",
   mapUrl: "https://maps.google.com/?q=20.9101,107.1839",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775803720179!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDQ3S3E0UEE.!2m2!1d20.82210328316939!2d107.1779499556187!3f55.46569093879162!4f7.256726516048985!5f0.7820865974627469", },
   heroImage: heroUrl("ha-long-4_bdow9b"),
   gallery: [
     "ha-long-bay_llgame",

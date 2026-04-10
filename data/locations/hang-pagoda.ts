@@ -23,7 +23,7 @@ export const hangPagoda: Location = {
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.391114193530264,109.12497065117606",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775810753048!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRfOG5XMHdF!2m2!1d15.39067367601628!2d109.1246687047923!3f157.6231361132355!4f15.635227428086736!5f0.7820865974627469", },
   heroImage: heroUrl("hang-pagoda-ly-son-island-8_t8goue"),
   gallery: [
     "hang-pagoda-ly-son-island-10_ibfj5e",

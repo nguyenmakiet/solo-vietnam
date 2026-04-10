@@ -23,7 +23,7 @@ export const ducPagoda: Location = {
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.38906217491256,109.10196741829073",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775797150810!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzR6ZURkTmc.!2m2!1d15.3891926383565!2d109.1019320422545!3f201.71477093827542!4f34.19694956143347!5f0.7820865974627469", },
   heroImage: heroUrl("duc-pagoda-ly-son-island-5_usxytn"),
   gallery: [
     "duc-pagoda-ly-son-island-4_psnhm0",

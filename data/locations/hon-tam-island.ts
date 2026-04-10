@@ -18,7 +18,7 @@ export const honTamIsland: Location = {
   entranceFee: "~200,000–350,000 VND day pass (resort facilities included)",
   openingHours: "8:00 AM – 5:00 PM; boat transfers from Cầu Đá pier",
   mapUrl: "https://www.google.com/maps?q=12.177120449066654,109.24323947785186",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775812866507!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREU0Ykh2Snc.!2m2!1d12.17873903730665!2d109.240896009001!3f111.9115017465371!4f-2.941374091088832!5f0.7820865974627469", },
   heroImage: heroUrl("hon-tam-island-hero_placeholder"),
   gallery: [],
   seoDescription:

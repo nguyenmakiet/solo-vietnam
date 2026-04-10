@@ -18,7 +18,7 @@ export const keGaLighthouse: Location = {
   entranceFee: "~30,000 VND; boat ~50,000 VND return",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.695329624836493,107.99144633590802",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775814136724!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0VtS0xpX3dF!2m2!1d10.69692667380949!2d107.9919032188049!3f176.1341542859635!4f8.412775141552942!5f0.7820865974627469", },
   heroImage: heroUrl("ke-ga-light-house-binh-thuan-8_terref"),
   gallery: [
     "ke-ga-light-house-binh-thuan-3_go0dpm",

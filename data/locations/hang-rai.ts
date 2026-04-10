@@ -18,7 +18,7 @@ export const hangRai: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours (boat access weather-dependent)",
   mapUrl: "https://www.google.com/maps?q=11.678088681494673,109.18272230833225",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775810882543!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdNRFFwOWUtY3c.!2m2!1d11.67824427023177!2d109.1829939165035!3f17.809458968375072!4f-70.99770258220798!5f0.7820865974627469", },
   heroImage: heroUrl("hang-rai-ninh-thuan_ssmgfx"),
   gallery: [
     "hang-rai-ninh-thuan7_hsjamo",

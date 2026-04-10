@@ -18,7 +18,7 @@ export const fairyStream: Location = {
   entranceFee: "~10,000–20,000 VND (informal collection at entrance)",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.955760120620356,108.25941870282894",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775801922196!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHEzSVRERGc.!2m2!1d10.95500123078672!2d108.2584962115993!3f45.9717926884554!4f14.698959132000212!5f0.7820865974627469", },
   heroImage: heroUrl("fairy-stream-phan-thiet_jdweht"),
   gallery: [
     "fairy-stream-phan-thiet-4_sl30pr",

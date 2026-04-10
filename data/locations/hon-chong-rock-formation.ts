@@ -18,7 +18,7 @@ export const honChongRockFormation: Location = {
   entranceFee: "~22,000 VND",
   openingHours: "6:30 AM – 6:30 PM",
   mapUrl: "https://www.google.com/maps?q=12.272947381203165,109.20637893674045",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775812326097!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzRsLXItbEFF!2m2!1d12.27358830688631!2d109.2061816729674!3f162.19275329467345!4f-20.45560662909898!5f0.4000000000000002", },
   heroImage: heroUrl("hon-chong-rock-formation-nha-trang-2_a7oiza"),
   gallery: [
     "hon-chong-rock-formation-nha-trang-8_b0b8db",

@@ -18,7 +18,7 @@ export const hospitalCave: Location = {
   entranceFee: "~40,000 VND",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.77004838620462,107.02138423927063",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775813162929!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFoYjc1SHc.!2m2!1d20.76990970226949!2d107.0209777110019!3f124.60093412344892!4f-13.893504602363691!5f0.7820865974627469", },
   heroImage: heroUrl("hospital-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -18,7 +18,7 @@ export const eightLadiesCave: Location = {
   entranceFee: "Free (guided trek required: ~200,000–300,000 VND)",
   openingHours: "By guided trek only; departs morning",
   mapUrl: "https://www.google.com/maps?q=17.502701222486007,106.26089697322949",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775801089371!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGhuLWZWTGc.!2m2!1d17.50247438160497!2d106.2602072288575!3f110.12498890988888!4f15.421060228421183!5f0.7820865974627469", },
   heroImage: heroUrl("eight-ladies-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

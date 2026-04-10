@@ -18,7 +18,7 @@ export const keoPagoda: Location = {
   entranceFee: "Free (donations accepted)",
   openingHours: "Open daily, dawn to dusk",
   mapUrl: "https://www.google.com/maps?q=20.538600,106.450500",
-  streetView: { embedUrl: "" },
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775814319959!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0UyYXZuNlFF!2m2!1d20.36098933931854!2d106.2971895386612!3f293.6388667102033!4f22.476064804583643!5f0.7820865974627469", },
   heroImage: heroUrl("keo-pagoda-thai-binh-9_qxhqpl"),
   gallery: [
     "keo-pagoda-thai-binh-5_qa1ml7",

@@ -18,7 +18,7 @@ export const diepSonIsland: Location = {
   entranceFee: "~50,000 VND; boat from Vạn Giã ~150,000-200,000 VND return",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.702371060987337,109.29151610832875",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775794727747!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0c3cU9CVkE.!2m2!1d12.71194006162106!2d109.2965146679407!3f236.19310468071828!4f-17.19565899973901!5f0.7820865974627469", },
   heroImage: heroUrl("diep-son-island-khanh-hoa_ue1aet"),
   gallery: [
     "diep-son-island-khanh-hoa-7_dqcf4n",

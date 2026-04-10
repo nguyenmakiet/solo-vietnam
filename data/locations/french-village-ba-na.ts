@@ -18,7 +18,7 @@ export const frenchVillageBaNa: Location = {
   entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
   mapUrl: "https://www.google.com/maps?q=15.997655145396397,107.98932655723252",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775802336159!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDQ4TWJ2amdF!2m2!1d15.99772141975089!2d107.9941198829035!3f44.81667518592979!4f-4.621657097063633!5f0.7820865974627469", },
   heroImage: heroUrl("french-village-ba-na-hill2_wg42xj"),
   gallery: [
     "french-village-ba-na-hill4_x88wdl",
