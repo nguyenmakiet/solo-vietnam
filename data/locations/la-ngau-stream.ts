@@ -18,7 +18,7 @@ export const laNgauStream: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=11.236315974562396,107.78594527850618",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775825927041!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2NvOVRhX2dF!2m2!1d11.23611122115834!2d107.7850598363802!3f344.7984410848041!4f-18.525418243258613!5f0.7820865974627469", },
   heroImage: heroUrl("la-ngau-stream-binh-thuan-3_e3ngry"),
   gallery: [
     "la-ngau-stream-binh-thuan-5_maphhp",

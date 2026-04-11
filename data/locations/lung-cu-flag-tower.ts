@@ -18,7 +18,7 @@ export const lungCuFlagTower: Location = {
   entranceFee: "20,000 VND/person",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=23.3786,105.3336",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775827324992!6m8!1m7!1sCAoSHENJQUJJaEI4SGhDeUpKMlhKdlVkT04xcGZYSFo.!2m2!1d23.36404281373051!2d105.3160746836883!3f331.7206511025033!4f-2.5287620502084707!5f0.7820865974627469", },
   heroImage: heroUrl("cot-co-lung-cu-05_wjln4b"),
   gallery: [
       "cot-co-lung-cu-02_ugfwyc",

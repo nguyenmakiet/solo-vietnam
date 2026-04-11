@@ -23,7 +23,7 @@ export const toVoGate: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.390100951312618,109.09934087255056",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775889476944!6m8!1m7!1sCAoSHENJQUJJaEFBZnNwUUVlOXdtd0UwU3FQazZ2eDY.!2m2!1d15.3895460101511!2d109.099058973314!3f189.64424237222912!4f-17.22712291777451!5f0.7820865974627469", },
   heroImage: heroUrl("to-vo-gate-ly-son-island-3_ksffdv"),
   gallery: [
     "to-vo-gate-ly-son-island-2_yozruq",

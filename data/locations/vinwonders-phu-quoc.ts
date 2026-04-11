@@ -18,7 +18,7 @@ export const vinWondersPhuQuoc: Location = {
   entranceFee: "~900,000–1,300,000 VND (all-inclusive)",
   openingHours: "9:00 AM – 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.340924472067309,103.8546052948659",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775894808228!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRG11ZVRkOGdF!2m2!1d10.33897502480739!2d103.846219973563!3f359.79354905617805!4f-16.897357835676758!5f0.7820865974627469", },
   heroImage: heroUrl("vinwonders-phu-quoc-hero_placeholder"),
   gallery: [],
   seoDescription:

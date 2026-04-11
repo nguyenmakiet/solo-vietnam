@@ -18,7 +18,7 @@ export const yenMinhPineForest: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.16731453372523,105.05474637426761",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775895501920!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzBnb244UHc.!2m2!1d23.16879273408042!2d105.0554962353566!3f211.21262111007758!4f-3.4584659434521967!5f0.7820865974627469", },
   heroImage: heroUrl("yen-minh-pine-forest-2_wbqzzc"),
   gallery: [
     "yen-minh-pine-forest3_xhxkgc",

@@ -18,7 +18,7 @@ export const thamMaPass: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2833,105.2500",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888241301!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHF5NFNCUWc.!2m2!1d23.17058327790622!2d105.1964867014413!3f12.780316598714467!4f-32.421773576574715!5f0.7820865974627469", },
   heroImage: heroUrl("tham-ma-pass_qbc8z5"),
   gallery: [
     "tham-ma-pass-1_d3zyko",

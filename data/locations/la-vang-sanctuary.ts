@@ -18,7 +18,7 @@ export const laVangSanctuary: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=16.706975257885,107.19547985549681",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775826122835!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2V4ZkhMcmdF!2m2!1d16.7087127208523!2d107.1950672603919!3f359.57375440678436!4f-27.307799733034116!5f0.6647007301332293", },
   heroImage: heroUrl("la-vang-sanctuary-2_eanomy"),
   gallery: [
     "la-vang-sanctuary-2_eanomy",

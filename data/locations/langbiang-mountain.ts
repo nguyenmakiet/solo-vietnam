@@ -18,7 +18,7 @@ export const langbiangMountain: Location = {
   entranceFee: "~50,000 VND park entry; jeep to mid-station: ~150,000 VND",
   openingHours: "5:30 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.048102933200623,108.44188630307653",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775826622639!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRE1pci1FWnc.!2m2!1d12.04672510365512!2d108.440210777439!3f196.88112687958824!4f2.624159139263355!5f0.7820865974627469", },
   heroImage: heroUrl("langbiang-mountain-da-lat2_dlyoss"),
   gallery: [
     "langbiang-mountain-da-lat4_zcmgfq",

@@ -18,7 +18,7 @@ export const trungTrangCave: Location = {
   entranceFee: "~40,000 VND (national park entry applies)",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.788685844969777,106.99832793371839",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775890643791!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V1TnJncndF!2m2!1d20.7888076778452!2d106.9980584220161!3f158.7348441447535!4f7.535811159014898!5f0.7820865974627469", },
   heroImage: heroUrl("trung-trang-cave-hero_placeholder"),
   gallery: [],
   seoDescription:

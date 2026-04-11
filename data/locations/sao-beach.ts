@@ -18,7 +18,7 @@ export const saoBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=10.0134,104.0498",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775883553047!6m8!1m7!1sCAoSHENJQUJJaENyVno5WVBqY21kN0t2Y3l1QVg2Z0o.!2m2!1d10.0533821626795!2d104.0365416263174!3f187.29732574293993!4f-26.714565732041905!5f0.7820865974627469", },
   heroImage: heroUrl("bai-sao-phu-quoc_ffa6xo"),   // ← public ID
   gallery: [
     "bai-sao-phu-quoc4_mkqxuw",

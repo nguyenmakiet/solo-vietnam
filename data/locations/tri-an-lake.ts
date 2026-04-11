@@ -18,8 +18,7 @@ export const triAnLake: Location = {
   entranceFee: "Free (boat hire and camping fees vary by operator: camping from 100,000 VND/person)",
   openingHours: "Open all day; camping operators typically run overnight packages",
   mapUrl: "https://www.google.com/maps?q=tri+an+lake+dong+nai",
-  streetView: {},
-  heroImage: heroUrl("tri-an-lake-dong-nai_lv646r"),
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775890471853!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHl3N2ppc1FF!2m2!1d11.10127826261844!2d107.0482808137099!3f0.5058173368232985!4f-13.942670503370877!5f0.7820865974627469", },
   gallery: [
     "tri-an-lake-dong-nai-4_y74889",
     "tri-an-lake-dong-nai-2_vtwl1r",

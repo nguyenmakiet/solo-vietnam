@@ -18,7 +18,7 @@ export const quanBaTwinMountains: Location = {
   entranceFee: "Free (viewpoints); climbing fee if applicable",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.06521535060752,105.00120271105881",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775882325735!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1IwTjM1cWdF!2m2!1d23.05894500647083!2d104.9973329878738!3f40.6737910730495!4f2.674621612158475!5f0.7820865974627469", },
   heroImage: heroUrl("nui-doi-quan-ba-ha-giang_unaeou"),
   gallery: [
     "nui-doi-quan-ba-ha-giang_unaeou",

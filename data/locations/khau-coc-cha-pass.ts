@@ -18,7 +18,7 @@ export const khauCocChaPass: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.926557070752953,105.78388981658192",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775823018834!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRC0ydjc2VFE.!2m2!1d22.92647298469297!2d105.7791502882675!3f348.8890528575274!4f-35.60972270022248!5f0.7820865974627469", },
   heroImage: heroUrl("khau-coc-cha-pass-hero_placeholder"),
   gallery: [],
   seoDescription:

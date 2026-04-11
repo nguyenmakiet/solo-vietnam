@@ -18,7 +18,7 @@ export const vinhTrungFields: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.483300,104.983300",
-  streetView: { embedUrl: "" },
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775894226878!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGs2NktiQkE.!2m2!1d10.54281110093591!2d105.018584022497!3f257.85851493715745!4f14.278379810451028!5f0.7820865974627469", },
   heroImage: heroUrl("vinh-trung-field-4_vu5k9m"),
   gallery: [
     "vinh-trung-field-3_fjdqxv",

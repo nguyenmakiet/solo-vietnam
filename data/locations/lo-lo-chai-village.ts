@@ -18,7 +18,7 @@ export const loLoChaiVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.3533,105.3300",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775827006627!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFh5dFBpamdF!2m2!1d23.36436899708197!2d105.3098405435871!3f162.60198502936657!4f-21.783446582242988!5f0.7820865974627469", },
   heroImage: heroUrl("lo-lo-chai-04_ajdcgh"),
   gallery: [
       "lo-lo-chai-01_o1msxb",

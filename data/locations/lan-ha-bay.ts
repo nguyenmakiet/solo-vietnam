@@ -3,7 +3,7 @@ import { heroUrl } from "@/lib/cloudinary"
 
 export const lanHaBay: Location = {
   slug: "lan-ha-bay",
-  name: "Lan Hà Bay",
+  name: "Lan Hạ Bay",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.731973471390784",
@@ -18,7 +18,7 @@ export const lanHaBay: Location = {
   entranceFee: "Included in kayak/boat tour (~350,000–600,000 VND/person)",
   openingHours: "Tours depart from Cát Bà town daily from 8:00 AM",
   mapUrl: "https://www.google.com/maps?q=20.731973471390784,107.05945027622396",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775826497352!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2VqcXVpd1FF!2m2!1d20.80196188764176!2d107.0996399171194!3f246.31788240072342!4f-14.225503370611449!5f0.7820865974627469", },
   heroImage: heroUrl("lan-ha-bay-hai-phong4_lgkwrs"),
   gallery: [
     "lan-ha-bay-hai-phong2_pcid4b",

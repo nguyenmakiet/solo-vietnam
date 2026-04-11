@@ -18,7 +18,7 @@ export const vietHaiVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.787857336300597,107.05828009939815",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775894005959!6m8!1m7!1sCAoSHENJQUJJaEFHYnp6Z0lEMjlLV2ZjbFJvQURDb3A.!2m2!1d20.79838586457196!2d107.0433984926106!3f157.31886920957928!4f-21.72186751479387!5f0.7820865974627469", },
   heroImage: heroUrl("viet-hai-village-hero_placeholder"),
   gallery: [],
   seoDescription:

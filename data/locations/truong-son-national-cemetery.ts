@@ -18,7 +18,7 @@ export const truongSonNationalCemetery: Location = {
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=truong+son+national+cemetery+quang+tri",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775891559569!6m8!1m7!1sCAoSHENJQUJJaEJCZl9FS2FabFg2bG9ueG9sUDI3QWs.!2m2!1d16.95598295880135!2d106.9525472328111!3f247.77729910758154!4f-28.576223232009227!5f0.5495649665008955", },
   heroImage: heroUrl("truong-son-national-cemetery_t3kr9p"),
   gallery: [
     "truong-son-national-cemetery-2_ehruk7",

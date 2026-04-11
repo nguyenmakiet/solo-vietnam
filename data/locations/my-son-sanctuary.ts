@@ -18,7 +18,7 @@ export const mySonSanctuary: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=15.76310079629061,108.12417516881945",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831507830!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0VndUdlZmc.!2m2!1d15.79072042184105!2d108.1078710160091!3f212.6383059632224!4f13.95153636340325!5f0.7820865974627469", },
   heroImage: heroUrl("my-son-sanctuary-quang-nam_wrfow5"),
   gallery: [
     "my-son-sanctuary-quang-nam-2_nvyt6r",

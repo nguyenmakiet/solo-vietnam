@@ -18,7 +18,7 @@ export const trangAn: Location = {
   entranceFee: "~250,000 VND (includes boat and rower)",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2800,105.9100",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775890257655!6m8!1m7!1sCAoSHENJQUJJaEJhblR3eW0xMjN2N1RQbm5iSVA3MG0.!2m2!1d20.24844443245237!2d105.9235870157211!3f213.62590961851305!4f-29.3877166353344!5f0.7820865974627469", },
   heroImage: heroUrl("trang-an-ninh-binh3_v7i0dg"),
   gallery: [
     "trang-an-ninh-binh_wsiuhc",

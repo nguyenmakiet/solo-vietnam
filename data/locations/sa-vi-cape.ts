@@ -18,7 +18,7 @@ export const saViCape: Location = {
   entranceFee: "~40,000 VND",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=21.492220115088482,108.06734019742865",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775883184237!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFpX0tNTWc.!2m2!1d21.49161078074545!2d108.0676277725845!3f163.24784293152072!4f17.06210130501843!5f0.7820865974627469", },
   heroImage: heroUrl("tra-co-cape-quang-ninh-02_hq3cik"),
   gallery: [
     "tra-co-cape-quang-ninh-06_hopd35",

@@ -18,7 +18,7 @@ export const thangHenLake: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.759334520663145,106.29375946526802",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888326961!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHYwcXVncmdF!2m2!1d22.75978752198937!2d106.2934626264251!3f166.07935631156397!4f-37.75051496584949!5f0.7820865974627469", },
   heroImage: heroUrl("thang-hen-lake-hero_placeholder"),
   gallery: [],
   seoDescription:

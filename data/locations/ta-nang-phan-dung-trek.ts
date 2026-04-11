@@ -18,7 +18,7 @@ export const taNangPhanDungTrek: Location = {
   entranceFee: "Free; guide and porter fees apply",
   openingHours: "Multi-day trek; depart from Đà Lạt side",
   mapUrl: "https://www.google.com/maps?q=11.536084933625041,108.53666725713427",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775885475962!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDQ4TWJjOFFF!2m2!1d11.50995837698618!2d108.5617215934657!3f194.06276043339966!4f3.6354070454610365!5f0.7820865974627469", },
   heroImage: heroUrl("ta-nang-phan-dung-trek-hero_placeholder"),
   gallery: [
     "ta-nang-phan-dung-trek-4_hy1iuj",

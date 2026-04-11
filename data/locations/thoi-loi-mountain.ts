@@ -23,7 +23,7 @@ export const thoiLoiMountain: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.382293884994116,109.13179450157818",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888554893!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHF2ZDJidWdF!2m2!1d15.38223468536546!2d109.132288102974!3f347.32417742812686!4f5.782457288294722!5f0.7820865974627469", },
   heroImage: heroUrl("thoi-loi-mount-ly-son-island-9_ibzoly"),
   gallery: [
     "thoi-loi-mount-ly-son-island-8_ygwxgq",

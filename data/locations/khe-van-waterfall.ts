@@ -18,7 +18,7 @@ export const kheVanWaterfall: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://maps.google.com/?q=21.7089,107.5231",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775823241932!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzIydjNBS1E.!2m2!1d21.48636192128088!2d107.4805021994235!3f163.27850831753491!4f13.742574336003955!5f0.7820865974627469", },
   heroImage: heroUrl("khe-van-waterfall-binh-lieu-quang-ninh-2_hhplbn"),
   gallery: [
     "khe-van-waterfall-binh-lieu-quang-ninh-3_z9egne",

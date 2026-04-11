@@ -18,7 +18,7 @@ export const muiNeFishingVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours (fish market most active 5:00 – 8:00 AM)",
   mapUrl: "https://www.google.com/maps?q=10.94117833027457,108.2795665776806",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775830673480!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREN6dlRTNEFF!2m2!1d10.94130633475858!2d108.2705094570649!3f106.11000502151659!4f-21.001456724157862!5f0.9579546729312991", },
   heroImage: heroUrl("fishing-village-mui-ne-phan-thiet3_chsgdb"),
   gallery: [
     "fishing-village-mui-ne-phan-thiet_ceqemb",

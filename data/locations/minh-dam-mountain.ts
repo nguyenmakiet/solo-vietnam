@@ -18,7 +18,7 @@ export const minhDamMountain: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.406176641081109,107.2592560602553",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775829220039!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFqYWVQR3c.!2m2!1d10.40804188429981!2d107.2624138697891!3f114.65771270226824!4f-9.640437665838249!5f0.7820865974627469", },
   heroImage: heroUrl("minh-dam-mountain-vung-tau-9_jiqr27"),
   gallery: [
     "minh-dam-mountain-vung-tau-4_b0weij",

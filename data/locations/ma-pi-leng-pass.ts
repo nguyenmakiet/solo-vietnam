@@ -18,7 +18,7 @@ export const maPiLengPass: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7 - best at sunrise",
   mapUrl: "https://maps.google.com/?q=23.1900,105.3800",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775828281974!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3V0T0hSMFFF!2m2!1d23.2147424824971!2d105.4033597786003!3f298.43332298969295!4f-9.254838070148253!5f0.7820865974627469", },
   heroImage: heroUrl("ma-pi-leng-ha-giang_wxkyiu"),
   gallery: [
       "ma-pi-leng-ha-giang_2_kaidch",

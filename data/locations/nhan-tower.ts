@@ -18,7 +18,7 @@ export const nhanTower: Location = {
   entranceFee: "Free",
   openingHours: "6:30 AM – 10:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=13.082464193252497,109.30199511819382",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775832089628!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHF6Y2pmd1FF!2m2!1d13.08221342821224!2d109.3026657226347!3f103.26786941834898!4f-31.710286351617434!5f0.7820865974627469", },
   heroImage: heroUrl("nhan-tower-phu-yen-7_obmvqr"),
   gallery: [
     "nhan-tower-phu-yen-8_rm9y7n",

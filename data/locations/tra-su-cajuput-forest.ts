@@ -18,7 +18,7 @@ export const traSuCajuputForest: Location = {
   entranceFee: "~150,000 VND including boat",
   openingHours: "6:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=10.584555814623155,105.05977775517107",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775889960398!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHE4X0tIS1E.!2m2!1d10.58449201555935!2d105.0590559642039!3f28.017178576469547!4f-26.536151750527758!5f0.7820865974627469", },
   heroImage: heroUrl("tra-su-cajuput-forest-2_jgdjgy"),
   gallery: [
     "tra-su-cajuput-forest_ig9bco",

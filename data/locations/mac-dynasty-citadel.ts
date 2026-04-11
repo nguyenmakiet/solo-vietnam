@@ -18,7 +18,7 @@ export const macDynastyCitadel: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=22.665800,106.257200",
-  streetView: { embedUrl: "" },
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775828470519!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHh2NUNnWnc.!2m2!1d21.8571399233179!2d106.7487213020177!3f11.444840109203199!4f-29.636220200324942!5f0.699788559661232", },
   heroImage: heroUrl("mac-dynasty-citadel-lang-son_v14bvd"),
   gallery: [
     "mac-dynasty-citadel-lang-son-2_j6gggo",

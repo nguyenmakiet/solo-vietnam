@@ -18,7 +18,7 @@ export const longSonPagoda: Location = {
   entranceFee: "Free",
   openingHours: "8:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.250327071591599,109.18072246606026",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775827204768!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzRsLXItUEE.!2m2!1d12.25153163911688!2d109.1811816773812!3f344.33758155138725!4f-19.53694738486469!5f0.7820865974627469", },
   heroImage: heroUrl("long-son-pagoda-nha-trang2_hacas1"),
   gallery: [
     "long-son-pagoda-5_w7a6rb",

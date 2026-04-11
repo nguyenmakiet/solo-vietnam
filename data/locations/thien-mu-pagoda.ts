@@ -18,7 +18,7 @@ export const thienMuPagoda: Location = {
   entranceFee: "Free",
   openingHours: "Open daily (monks observe prayer hours; respectful visiting hours: 8 AM – 5 PM)",
   mapUrl: "https://www.google.com/maps?q=16.453168591703893,107.54519432036955",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888427878!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzZxZGZSemdF!2m2!1d16.45084327497854!2d107.5453649841463!3f255.10097306074246!4f-13.235770329647636!5f0.7357965185331665", },
   heroImage: heroUrl("thien-mu-pagoda-hue3_weflqk"),
   gallery: [
     "thien-mu-pagoda6_xphnqk",

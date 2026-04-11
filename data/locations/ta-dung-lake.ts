@@ -18,7 +18,7 @@ export const taDungLake: Location = {
   entranceFee: "~50,000 VND (national park entry)",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.85958318658573,107.923086633516",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775885115038!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDJscVhrb2dF!2m2!1d11.85283988458472!2d107.9323813636419!3f13.470270975304077!4f-34.265321683818236!5f0.7820865974627469", },
   heroImage: heroUrl("ta-dung-lake3_jk0xko"),
    gallery: [
     "ta-dung-lake5_qmer1f",

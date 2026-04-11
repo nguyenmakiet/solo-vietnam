@@ -18,7 +18,7 @@ export const tamCoc: Location = {
   entranceFee: "Boat tour: 150,000 VND/person",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2253,105.9550",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888074548!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3VoTjZ2SGc.!2m2!1d20.21805370130474!2d105.9161806600398!3f256.9778666684793!4f-26.862696455827802!5f0.7820865974627469", },
   heroImage: heroUrl("tam-coc-ninh-binh2_an0hm8"),
   gallery: [
     "tam-coc-ninh-binh_iqqjsd",

@@ -18,7 +18,7 @@ export const myKheBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=16.056869445948998,108.24813952737027",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831138486!6m8!1m7!1sCAoSHENJQUJJaENzR3h1UmROQ2lDd3pRTXBISkVaQzA.!2m2!1d16.06617329164233!2d108.2497981810549!3f346.93574064018156!4f-17.832242318034545!5f0.7820865974627469", },
   heroImage: heroUrl("my-khe-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

@@ -18,7 +18,7 @@ export const minhMangTomb: Location = {
   entranceFee: "~150,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.387662100068777,107.57082605265036",
-  streetView: {},
+  streetView: {embedUrl:  "https://www.google.com/maps/embed?pb=!4v1775829494041!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFxLTZSTHc.!2m2!1d16.38766635967298!2d107.5693656704413!3f276.3976726845634!4f10.074155339927117!5f0.7820865974627469", },
   heroImage: heroUrl("minh-mang-tomb2_bcwr7t"),
   gallery: [
     "minh-mang-tomb4_tbssnr",

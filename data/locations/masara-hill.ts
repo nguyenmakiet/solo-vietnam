@@ -18,7 +18,7 @@ export const masaraHill: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.683300,108.233300",
-  streetView: { embedUrl: "" },
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775828842706!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFpNWZPZUE.!2m2!1d11.51617587857659!2d108.4337537078458!3f108.6807818380404!4f-20.136712554717064!5f0.7820865974627469", },
   heroImage: heroUrl("masara-hill-lam-dong-10_aqcmb3"),
   gallery: [
     "masara-hill-lam-dong_cc5uvc",

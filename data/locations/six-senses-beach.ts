@@ -18,7 +18,7 @@ export const sixSensesBeach: Location = {
   entranceFee: "Free (beach is public; Six Senses resort area is private)",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=8.701360844209008,106.63442958678696",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775883974761!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREUyTG04eHdF!2m2!1d8.700342411679237!2d106.6332451072855!3f118.60568481797381!4f8.44912917805793!5f0.7820865974627469", },
   heroImage: heroUrl("six-senses-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

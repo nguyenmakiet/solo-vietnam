@@ -18,7 +18,7 @@ export const lungPo: Location = {
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=22.79305606355363,103.64781973074007",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775827605289!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzJqYzZ6NGdF!2m2!1d22.79240935964562!2d103.6462848781457!3f315.4077374831077!4f2.719541701032938!5f0.7820865974627469", },
   heroImage: heroUrl("lung-po-lao-cai-2_y3hp1v"),
   gallery: [
     "lung-po-lao-cai-2_y3hp1v",

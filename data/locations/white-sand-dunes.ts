@@ -18,7 +18,7 @@ export const whiteSandDunes: Location = {
   entranceFee: "~20,000 VND",
   openingHours: "Open 24/7; sunrise tours depart 4:00–4:30 AM",
   mapUrl: "https://www.google.com/maps?q=11.07112795980011,108.42656899745431",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775895037021!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHEzS2lZdmdF!2m2!1d11.06848153333091!2d108.4238633179589!3f18.909371649413856!4f-25.766320459710812!5f0.7820865974627469", },
   heroImage: heroUrl("bau-trang-phan-thiet5_bozfag"),
   gallery: [
     "bau-trang-phan-thiet2_yefxbm",

@@ -3,7 +3,7 @@ import { heroUrl } from "@/lib/cloudinary"
 
 export const muiTroFishingVillage: Location = {
   slug: "mui-tro-fishing-village",
-  name: "Mũi Trô Fishing Village",
+  name: "Mũi Trọ Fishing Village",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: "11.191860491067558",

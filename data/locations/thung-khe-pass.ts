@@ -18,7 +18,7 @@ export const thungKhePass: Location = {
   entranceFee: "Free",
   openingHours: "Open; drive in daylight only",
   mapUrl: "https://www.google.com/maps?q=20.659973197100356,105.14358253798274",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888698496!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3UycTZqT1E.!2m2!1d20.66162831649838!2d105.145030457897!3f355.6493116129426!4f-31.796294098480743!5f0.7820865974627469", },
   heroImage: heroUrl("thung-khe-pass-05_ozvmui"),
   gallery: [
     "thung-khe-pass-06_y5sd27",

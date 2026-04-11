@@ -18,7 +18,7 @@ export const sungSotCave: Location = {
   entranceFee: "~300,000 VND (included in most cruise packages)",
   openingHours: "7:30 AM – 4:30 PM (accessible by cruise only)",
   mapUrl: "https://maps.google.com/?q=20.8810,107.1140",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775884925418!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDB2X2lSMGdF!2m2!1d20.84398871403326!2d107.0914762637285!3f111.9154849064907!4f6.519375620023027!5f0.7820865974627469", },
   heroImage: heroUrl("sung-sot-cave-hero_placeholder"),
   gallery: [
   ],

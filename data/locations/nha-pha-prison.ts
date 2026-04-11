@@ -22,7 +22,7 @@ export const nhaPhaPrison: Location = {
   entranceFee: "Free",
   openingHours: "Open during daylight hours",
   mapUrl: "https://www.google.com/maps?q=15.386246450441275,109.14170348441878",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831997727!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDJncmkxekFF!2m2!1d15.38619140746176!2d109.1417389374112!3f33.89405502628472!4f30.03900252187273!5f0.7820865974627469", },
   heroImage: heroUrl("nha-pha-prison-ly-son-island-4_mbem6i"),
   gallery: [
     "nha-pha-prison-ly-son-island-6_jpwe1r",

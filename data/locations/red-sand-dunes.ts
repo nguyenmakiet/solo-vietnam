@@ -18,7 +18,7 @@ export const redSandDunes: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7; best at sunrise and sunset",
   mapUrl: "https://www.google.com/maps?q=10.949408234413704,108.29650702647355",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775882835089!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ1VnT3k2U2c.!2m2!1d10.95047093445399!2d108.2942965834574!3f66.10892096966144!4f-62.89057550096892!5f0.7820865974627469", },
   heroImage: heroUrl("red-sand-dune-phan-thiet2_ra6u7z"),
   gallery: [
     "red-sand-dune-phan-thiet_mdvnzc",
