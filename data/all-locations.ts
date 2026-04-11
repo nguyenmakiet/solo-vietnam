@@ -7,6 +7,7 @@ import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { anBinhIsland } from "@/data/locations/an-binh-island"
 import { anHaiCommunalHouse } from "@/data/locations/an-hai-communal-house"
 import { anVinhCommunalHouse } from "@/data/locations/an-vinh-communal-house"
+import { baBeLake } from "@/data/locations/ba-be-lake"
 import { baDanhPagoda } from "@/data/locations/ba-danh-pagoda"
 import { baDenMountain } from "@/data/locations/ba-den-mountain"
 import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
@@ -46,6 +47,7 @@ import { coThachBeach } from "@/data/locations/co-thach-beach"
 import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
+import { cuChiTunnels } from "@/data/locations/cu-chi-tunnels"
 import { cuMiBeach } from "@/data/locations/cu-mi-beach"
 import { cuaDaiBeach } from "@/data/locations/cua-dai-beach"
 import { daPloaStream } from "@/data/locations/da-ploa-stream"
@@ -84,6 +86,7 @@ import { hangPagoda } from "@/data/locations/hang-pagoda"
 import { hangRai } from "@/data/locations/hang-rai"
 import { hmongKingPalace } from "@/data/locations/hmong-king-palace"
 import { hoChiMinhChildhoodHome } from "@/data/locations/ho-chi-minh-childhood-home"
+import { hoDynastyCitadel } from "@/data/locations/ho-dynasty-citadel"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
 import { hoaLuAncientCapital } from "@/data/locations/hoa-lu-ancient-capital"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
@@ -138,6 +141,8 @@ import { nhaPhaPrison } from "@/data/locations/nha-pha-prison"
 import { nhanTower } from "@/data/locations/nhan-tower"
 import { nhatBeach } from "@/data/locations/nhat-beach"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
+import { onePillarPagoda } from "@/data/locations/one-pillar-pagoda"
+import { oQuyHoPass } from "@/data/locations/o-quy-ho-pass"
 import { ongCopBridge } from "@/data/locations/ong-cop-bridge"
 import { paSyWaterfall } from "@/data/locations/pa-sy-waterfall"
 import { pacBoHistoricSite } from "@/data/locations/pac-bo-historic-site"
@@ -212,6 +217,7 @@ export const allLocations: Location[] = [
   anBinhIsland,
   anHaiCommunalHouse,
   anVinhCommunalHouse,
+  baBeLake,
   baDanhPagoda,
   baDenMountain,
   baHoWaterfall,
@@ -251,6 +257,7 @@ export const allLocations: Location[] = [
   conDaoNationalPark,
   conDaoPrison,
   crazyHouse,
+  cuChiTunnels,
   cuMiBeach,
   cuaDaiBeach,
   daPloaStream,
@@ -289,6 +296,7 @@ export const allLocations: Location[] = [
   hangRai,
   hmongKingPalace,
   hoChiMinhChildhoodHome,
+  hoDynastyCitadel,
   hoQuocPagoda,
   hoaLuAncientCapital,
   hoiAnAncientTown,
@@ -343,6 +351,8 @@ export const allLocations: Location[] = [
   nhanTower,
   nhatBeach,
   nhoQueRiver,
+  onePillarPagoda,
+  oQuyHoPass,
   ongCopBridge,
   paSyWaterfall,
   pacBoHistoricSite,
