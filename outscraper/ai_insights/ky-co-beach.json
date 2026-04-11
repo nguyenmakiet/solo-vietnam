@@ -1,0 +1,42 @@
+{
+  "slug": "ky-co-beach",
+  "google_rating": 4.3,
+  "google_review_count": 1922,
+  "insights": {
+    "highlights": [
+      "Crystal-clear turquoise water with white powdery sand nestled between rugged mountains and sea",
+      "Included seal show performances at various times throughout the day for all ticket holders",
+      "Water sports available including snorkeling, kayaking, jet ski, and parachute gliding in summer"
+    ],
+    "thingsToKnow": {
+      "crowds": "Crowded on weekends and during peak season. Early morning visits and weekday trips recommended to avoid crowds",
+      "difficulty": "Requires 25km travel from Quy Nhơn city. Access only by mandatory shuttle bus or speedboat; personal motorbikes not allowed on beach",
+      "safety": "Strong waves and deep water beyond shallow shore area; unsuitable for weak swimmers or young children. Swimming prohibited during off-season due to high waves",
+      "accessibility": "Paid entrance fee required (120k-170k VND per adult); children 5-6 years old may not pay. Mandatory paid transport: bus/shuttle (40k-150k VND) or speedboat (10 USD). Additional charges for water activities",
+      "seasonal": "Best visited November-July for swimming. Off-season (December-January) has high waves, no swimming allowed, closed facilities, and reduced services"
+    },
+    "visitorTips": [
+      "Arrive early morning or weekday to avoid crowds and secure shade; bring sunscreen, sunglasses, bug spray, waterproof bag",
+      "Budget 330k+ VND total (entrance 170k + shuttle 150k-110k) or compare costs to nearby Eo Gió (22k entry) for budget options",
+      "Visit nearby Eo Gió Wind Strait cliff walkway and Hòn Kho island by speedboat tours for additional scenery and snorkeling"
+    ],
+    "faq": [
+      {
+        "question": "When can I swim at Kỳ Co Beach?",
+        "answer": "Swimming is allowed during summer season only. Winter months (December-January) have strong waves and swimming is forbidden. Confirm conditions before visiting off-season."
+      },
+      {
+        "question": "What are the total costs to visit?",
+        "answer": "Entrance fee 120k-170k VND per adult, plus mandatory shuttle/bus 40k-150k VND. Children under 5-6 may be free. Additional charges for water activities and restaurant meals."
+      },
+      {
+        "question": "Is it worth visiting during off-season?",
+        "answer": "Off-season offers fewer crowds and no-trash beach, but swimming is prohibited, facilities closed, and high winds. Best for photography or relaxation rather than swimming."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praised crystal-clear water, white sand, cleanliness, included seal show, and unspoiled scenery. Many called it one of Vietnam's best beaches",
+      "negative": "High entrance and transport fees viewed as tourist trap. Complaints about forced shuttle system, expensive facilities, strong seasonal waves preventing swimming, and limited off-season services"
+    }
+  }
+}

@@ -44,4 +44,32 @@ export const minhMangTomb: Location = {
     travelTips:
       "Minh Mạng is the tomb to visit if mày only have time for one - the combination of scale, preservation, and architectural quality makes it the most complete royal mausoleum experience in Huế. The lake and pavilion sections in the middle of the complex are the most beautiful and least visited by hurrying tour groups. Allow the full 2 hours and walk slowly.",
   },
+  insights: {
+    highlights: [
+      "Perfectly symmetrical layout with pavilions, bridges, and lotus ponds blending architecture with natural landscape",
+      "Spacious grounds covering nearly 40 buildings across multiple courtyards with pine forests and tranquil lakes",
+      "Built in 1843, showcases Nguyen Dynasty grandeur and unique Vietnamese imperial tomb design principles",
+    ],
+    thingsToKnow: {
+      crowds: "Generally peaceful with light crowds, especially on rainy days or weekdays. Mid-afternoon visits can have longer ticket lines",
+      difficulty: "Large site requiring substantial walking; expect 50 minutes to 1 hour for full visit. Terrain gently rises and falls",
+      safety: null,
+      accessibility: "Toilets and refreshment stands available at entrance and exit. Scooter parking available (small fee for tourists, free for locals)",
+      seasonal: "Avoid midday summer heat (end of May through July); bring sunscreen, umbrella, or hat. Visit 3-6 PM for better sunset light. Morning or early afternoon recommended for optimal photography",
+    },
+    visitorTips: [
+      "Hire a guide at ticket counter (same price as entry) for detailed historical context and deeper appreciation of the site",
+      "Purchase combo ticket covering multiple Hue sites to save money; example: two tombs plus Imperial City for 420k VND saves 80k",
+      "Bring water and snacks; drinks available but prices higher inside. Fish food available to feed koi in ponds",
+    ],
+    faq: [
+      { question: "Can visitors access the actual imperial tomb?", answer: "No. The main tomb area is closed to the public and only opens once yearly on the emperor's death anniversary for royal relatives to pay tribute." },
+      { question: "How long does a typical visit take?", answer: "Plan 50 minutes to 1 hour. The site is large with multiple buildings and courtyards, requiring substantial walking through the grounds." },
+      { question: "What is the current condition of the site?", answer: "Generally well-maintained with restored buildings. Some sections may have ongoing restoration work. One reviewer reported construction blocking access to deeper areas during their visit." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for serene atmosphere, impressive symmetrical architecture, peaceful setting among lakes and gardens. Visitors appreciate historical significance and photography opportunities",
+      negative: "One visitor reported construction and dredging blocked access to mausoleum premises at time of visit. Some note structures could be better maintained. Actual tomb inaccessible disappoints some visitors",
+    },
+  },
 }

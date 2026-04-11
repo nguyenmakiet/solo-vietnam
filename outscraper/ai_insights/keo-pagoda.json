@@ -1,0 +1,42 @@
+{
+  "slug": "keo-pagoda",
+  "google_rating": 4.6,
+  "google_review_count": 3548,
+  "insights": {
+    "highlights": [
+      "Ancient pagoda with massive wooden architecture and unique statues in Thái Bình Province",
+      "Serene countryside setting surrounded by water channels and green paddy fields",
+      "Intricate traditional Vietnamese design with ornate wooden doors and Mahayana Buddhist features"
+    ],
+    "thingsToKnow": {
+      "crowds": "Avoid visiting during festivals when crowds are significant; ordinary weekdays are more peaceful",
+      "difficulty": null,
+      "safety": null,
+      "accessibility": null,
+      "seasonal": null
+    },
+    "visitorTips": [
+      "Visit on weekdays rather than festival days for a quieter, more meditative experience",
+      "Ask guides about the pagoda's history and the meaning behind its name for deeper understanding",
+      "Note that commercial vendors operate inside and near temple buildings, which some find intrusive"
+    ],
+    "faq": [
+      {
+        "question": "When is the best time to visit Keo Pagoda?",
+        "answer": "Visit on ordinary weekdays rather than festival days when the pagoda becomes crowded with pilgrims and visitors."
+      },
+      {
+        "question": "What architectural features should I look for?",
+        "answer": "Look for the massive wooden architecture, intricate wooden doors, and collection of ancient Buddhist statues unique to Northern Vietnamese temples."
+      },
+      {
+        "question": "What is the setting like around the pagoda?",
+        "answer": "The pagoda sits in tranquil countryside surrounded by crisscrossing water channels, green paddy fields, and scattered local communities."
+      }
+    ],
+    "sentiment": {
+      "positive": "Overwhelming appreciation for the pagoda's serene atmosphere, ancient architecture, spiritual significance, and cultural heritage value",
+      "negative": "Some visitors object to commercial vendors operating inside and near the temple buildings"
+    }
+  }
+}

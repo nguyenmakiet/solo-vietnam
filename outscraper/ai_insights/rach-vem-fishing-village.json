@@ -1,0 +1,42 @@
+{
+  "slug": "rach-vem-fishing-village",
+  "google_rating": 4,
+  "google_review_count": 142,
+  "insights": {
+    "highlights": [
+      "Boat access to famous starfish beach with clear water and red starfish visible underwater",
+      "Fresh seafood at floating restaurants with reasonable prices and quality ingredients",
+      "Walking on wooden bridges and along pristine beach sections away from main tourist areas"
+    ],
+    "thingsToKnow": {
+      "crowds": "Increasingly crowded with tourists; early morning visits recommended to avoid peak hours",
+      "difficulty": "Final 500m access road is unpaved and difficult to navigate; located through national forest area",
+      "safety": "Boat rides frequently report overcrowding and poor safety practices; wait times of 1-2 hours documented; afternoon/late visits through forest road can be risky",
+      "accessibility": "Requires boat transfer to reach starfish beach; boats operate at capacity with safety concerns; some areas accessible by 1km beach walk instead of boat",
+      "seasonal": "Rain can affect water clarity; visit afternoon to catch sunset; water shower facilities not available at beach"
+    },
+    "visitorTips": [
+      "Negotiate boat prices beforehand (150k-200k VND per person return); verify exact costs to avoid overcharging scams",
+      "Do not remove starfish from water; they die within seconds; observe and photograph only while submerged",
+      "Visit early morning to avoid crowds and boat delays; consider walking along beach instead of taking boats"
+    ],
+    "faq": [
+      {
+        "question": "How much does the boat to starfish beach cost?",
+        "answer": "Typical rates are 150k-200k VND per person for return trips with 3+ people. Always negotiate beforehand to avoid overcharging."
+      },
+      {
+        "question": "What safety issues have been reported?",
+        "answer": "Boats operate at overcapacity, wait times exceed 1-2 hours, and unorganized drop-offs reported. Afternoon visits through forest road can be risky."
+      },
+      {
+        "question": "Can I walk to starfish beach instead of taking a boat?",
+        "answer": "Yes, a 1km beach walk is possible and recommended by locals as a 20-minute pleasant alternative to boat rides."
+      }
+    ],
+    "sentiment": {
+      "positive": "Many visitors appreciate fresh seafood, starfish viewing, and scenic village atmosphere; family-friendly destination with diverse activities",
+      "negative": "Significant scam reports on boat pricing; overcrowding and poor safety practices; environmental concerns about starfish being removed from water for photos; plastic pollution on beach; increasingly commercialized with false advertising about beach conditions"
+    }
+  }
+}

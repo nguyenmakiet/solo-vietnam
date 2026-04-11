@@ -44,4 +44,32 @@ export const japaneseBridge: Location = {
     travelTips:
       "The Japanese Bridge is a mandatory stop in Hội An but should not be rushed or reduced to a photo op. The surrounding western end of the Ancient Town - Nguyễn Thị Minh Khai Street, the canal bank, the small streets feeding off Trần Phú - is less crowded than the central market area and has better preserved shophouse architecture. Early morning is the only time the bridge is genuinely peaceful; by 9 AM the tour groups arrive and the bridge becomes a queue. The evening lantern view is the best compromise between crowd and atmosphere if morning isn't possible.",
   },
+  insights: {
+    highlights: [
+      "17th-century Japanese-built wooden bridge connecting Japanese and Chinese quarters with pagoda shrine",
+      "Featured on Vietnam's 20,000 VND banknote; UNESCO World Heritage Site within Hoi An Ancient Town",
+      "Evening atmosphere with lantern-lit boats on river and illuminated bridge provides iconic photo opportunities",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during day and evening hours; visit before 8 AM for peaceful experience and better photos",
+      difficulty: null,
+      safety: null,
+      accessibility: "Narrow wooden plank side attachment requires lifting prams/strollers to cross bridge",
+      seasonal: "Bridge recently renovated in 2024; flooding reported but bridge remains functional; river flooding occurs seasonally",
+    },
+    visitorTips: [
+      "Visit before 8 AM to avoid crowds, enjoy cooler weather, and photograph without tourist obstruction",
+      "Entrance exterior is free; entry to inner shrine requires Hoi An Ancient Town ticket (120,000 VND covers five heritage sites)",
+      "Look for monkey and dog statues at bridge ends; historically significant shrine burned incense for 400+ years",
+    ],
+    faq: [
+      { question: "Do I need a ticket to cross the bridge?", answer: "No, walking across the bridge exterior is free. Only entering the inner shrine requires an Old Town ticket (120,000 VND), which covers five heritage attractions." },
+      { question: "When is the best time to visit?", answer: "Early morning before 8 AM offers quiet, peaceful atmosphere with better light and minimal crowds. Evening is beautiful when lanterns light up, but expect heavy tourist presence." },
+      { question: "How long does a visit take?", answer: "Walking across the bridge takes 5-10 minutes. Accessing the shrine interior adds minimal time. Plan additional time exploring surrounding Ancient Town streets and shops." },
+    ],
+    sentiment: {
+      positive: "Universally recognized as iconic symbol of Hoi An with stunning architecture; visitors value historical significance and evening ambiance despite crowds",
+      negative: "Overcrowding makes photography difficult; recent renovation made bridge look newer, losing some historical aesthetic for some visitors",
+    },
+  },
 }

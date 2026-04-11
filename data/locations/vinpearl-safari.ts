@@ -40,4 +40,32 @@ export const vinpearlSafari: Location = {
     travelTips:
       "Vinpearl Safari is the best wildlife facility in southern Vietnam by a significant margin. For families with children or travellers interested in wildlife who have limited time for national park trekking, it offers genuine animal encounters in reasonable conditions. The white rhino programme gives it conservation credibility beyond a typical tourist zoo. Combine with VinWonders on the same day if both are on the itinerary - the two are near each other in the northern part of the island.",
   },
+  insights: {
+    highlights: [
+      "Open safari bus tour through large animal enclosures with giraffes, lions, rhinos, and zebras roaming freely",
+      "Interactive animal feeding experiences with giraffes, elephants, and lemurs in dedicated zones",
+      "Well-maintained walking zoo with spacious enclosures, clean facilities, and twice-daily bird shows",
+    ],
+    thingsToKnow: {
+      crowds: "Peak hours cause long queues at safari bus entrance (15-20 minute waits common). Arrive early morning or late afternoon to avoid crowds and heat. Animal feeding food can sell out by noon.",
+      difficulty: "Park is large; walking can be exhausting in heat. Buggy service available for additional fee. Stroller and wheelchair accessibility limited due to stairs and unclear alternative routes.",
+      safety: "Safe, well-organized experience. Staff attempt to enforce animal interaction rules but cannot always prevent irresponsible visitor behavior like feeding animals inappropriate food.",
+      accessibility: "Stroller-friendly paths in zoo section. Buggy service available (1,000,000 VND) but does not stop at enclosures. Layout has stairs with limited wheelchair accessibility and unclear signage for alternatives.",
+      seasonal: "Visit early morning when animals are most active. Avoid midday heat. Heavy rain can cancel bird shows and create crowded, wet facilities.",
+    },
+    visitorTips: [
+      "Bring cash for animal food, feeds, and some vendors; many stands do not accept cards",
+      "Book VIP pass online in advance to avoid queues; check bird show schedule (10 AM, 2 PM) upon arrival",
+      "Plan 3-4 hours minimum; arrive by 9 AM if combining with other attractions like Vinpearl Wonder",
+    ],
+    faq: [
+      { question: "Can I feed the animals?", answer: "Yes, you can feed giraffes, elephants, and lemurs by purchasing food on-site with cash. Food often sells out by noon, especially giraffe and elephant feed." },
+      { question: "How long does the safari bus tour take?", answer: "The safari bus tour lasts approximately 20-30 minutes. Queue wait times range from 15-20 minutes during peak hours. Plan accordingly." },
+      { question: "Do I need to buy tickets online or at the gate?", answer: "Both options available. Online booking via Klook or official site is recommended to avoid queues, especially for combo tickets and VIP passes. Physical ticket booths exist along the road to the park." },
+    ],
+    sentiment: {
+      positive: "Vast majority praise the safari bus experience, animal variety, cleanliness, staff friendliness, and interactive feeding opportunities. Visitors consistently recommend as a must-do Phu Quoc attraction.",
+      negative: "Some enclosures reported as too small, particularly for big cats. Animal food shortages at peak times. Long safari bus queues during peak hours. Concerns about irresponsible visitor behavior and some malnourished-looking animals noted by minority of reviewers. Signage and information primarily in Vietnamese.",
+    },
+  },
 }

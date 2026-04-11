@@ -47,4 +47,32 @@ export const k50Waterfall: Location = {
     travelTips:
       "K50 demands proper preparation: hire a guide with national park knowledge, carry two days of food and water purification, and bring a hammock or tent for the overnight camp. This is not a casual day hike - treat it as a jungle expedition and plan accordingly. The experience rewards those who are comfortable with remote, unguided wilderness. For a Central Highlands multi-day itinerary, K50 pairs naturally with Yok Don National Park to the south (wildlife and elephant habitat) and the coffee country around Buôn Ma Thuột.",
   },
+  insights: {
+    highlights: [
+      "Remote waterfall in pristine primary forest, accessible only with guide and local forest ranger",
+      "Multi-day trekking adventure with camping under stars near the waterfall",
+      "Possible to swim in the waterfall pool and photograph from multiple angles",
+    ],
+    thingsToKnow: {
+      crowds: "Visits restricted to weekends only; arrive early (8:00 AM) when more guides available",
+      difficulty: "Requires reasonable fitness; steep and narrow road, challenging 7km trek with elevation changes, muddy tracks, and 700m final hike to waterfall",
+      safety: "Foreigners must hire a guide and local forest ranger to enter. Registration required with forest guards. No cellular network near waterfall; download offline maps. Leeches present; bring insect repellent and oils",
+      accessibility: "Self-driving not permitted; motorcycle taxi required from entrance (30-60 minutes). Accommodation at national park basic and not recommended; stay in Măng Đen town instead (1 hour away)",
+      seasonal: "Best visited during rainy season (February to June) for maximum water flow. Water levels lower in dry season. Avoid early year when access restricted. March offers good weather",
+    },
+    visitorTips: [
+      "Book organized tour with guide; costs roughly 400k motorcycle, 100k park ticket, 200-500k guide per group",
+      "Bring lightweight gear, rain jacket, sufficient food, power bank, swimsuit, and insect repellent with lemongrass oil",
+      "Stay overnight in Măng Đen town near Măng Đen market and cafes; book accommodation via Booking",
+    ],
+    faq: [
+      { question: "Can I visit K50 waterfall independently without a guide?", answer: "No. Entrance staff only permit entry with a guide and local forest ranger. The steep, narrow road requires experienced drivers. Self-driving not recommended or allowed." },
+      { question: "When is the best time to visit for water flow and weather?", answer: "February to June offers best water levels. March provides excellent weather. Avoid early year when access is restricted. Waterfall has less water during dry season." },
+      { question: "What are the typical costs for a visit?", answer: "Motorcycle transport: 400k per person. Park entrance: 100k per person. Guide: 200-500k per group. Total approximately 1.2 million VND per person including food." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as stunning and worth the challenging trek. Visitors highlight pristine nature, forest experience, camping under stars, and sense of adventure off beaten path",
+      negative: "Local forest rangers sometimes demand bribes or create difficulties to favor motorcycle taxi services. Basic accommodation at park is dirty with hard beds and no food services",
+    },
+  },
 }

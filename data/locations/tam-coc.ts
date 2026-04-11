@@ -45,4 +45,32 @@ export const tamCoc: Location = {
     travelTips:
       "Tam Cốc is best combined with Tràng An (15km away) and Hoa Lư ancient capital (5km) into a full-day Ninh Bình itinerary. Bicycles can be rented near the dock for 50,000–80,000 VND/day - the cycling route through Thung Nham and the surrounding villages is one of the best in the north. Avoid visiting during Vietnamese public holidays when the site becomes genuinely overcrowded.",
   },
+  insights: {
+    highlights: [
+      "Boat ride through three limestone caves along Ngo Dong River with traditional foot-rowing sampans",
+      "Scenic karst landscape surrounded by rice paddies, limestone cliffs, and lush greenery",
+      "Bich Dong Pagoda built into mountainside with multiple levels offering spiritual and natural atmosphere",
+    ],
+    thingsToKnow: {
+      crowds: "Generally not overcrowded, but can vary by season and time of day. Early morning visits recommended to beat crowds. Rainy days tend to be less busy.",
+      difficulty: null,
+      safety: null,
+      accessibility: "Boat tours require minimum group sizes: 4 passengers for locals, 2 for foreigners. Solo travelers may need to wait for others or pay extra. Electric buggy service available but has long waiting times.",
+      seasonal: "Rice ripening season offers unique scenery. Visit in February for pleasant weather and fewer crowds. August is hot and humid. Tours operate year-round including rainy conditions.",
+    },
+    visitorTips: [
+      "Bring sunscreen, hat, sunglasses, and water for 1.5-2 hour boat rides in intense sun exposure",
+      "Decline unwanted souvenir purchases or photo deals upfront; negotiate prices before accepting items",
+      "Visit midweek or late afternoon (4:30pm+) for fewer vendors and a more peaceful experience",
+    ],
+    faq: [
+      { question: "How long is the boat ride and what's included?", answer: "Boat rides typically last 1.5-2 hours covering approximately 3km, passing through three caves, rice paddies, and limestone formations. Separate electric buggy service costs extra." },
+      { question: "Are there aggressive souvenir sales and tip demands?", answer: "Multiple travelers report boatmen stopping mid-tour to sell embroidered items and requesting tips during or after tours. Experiences vary; some boatmen are pleasant, others persist despite refusals." },
+      { question: "What are ticket prices and group requirements?", answer: "River ride costs 250,000-350,000 VND per person. Groups require 4 locals or 2 foreigners minimum. Solo travelers may wait 15+ minutes or pay extra to start. Electric buggy costs 100,000 VND." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise stunning natural scenery, peaceful atmosphere, unique boat experience with foot-rowing, and friendly local guides. Kong filming location adds cultural interest.",
+      negative: "Several travelers report aggressive souvenir selling, inflated photo prices, persistent tip demands, boatmen holding boats hostage until purchases made, and poor service attitude from some operators.",
+    },
+  },
 }

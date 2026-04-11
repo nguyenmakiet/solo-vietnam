@@ -1,0 +1,42 @@
+{
+  "slug": "hon-mun-island",
+  "google_rating": 4.3,
+  "google_review_count": 184,
+  "insights": {
+    "highlights": [
+      "Clear water ideal for snorkeling with vibrant coral reefs and abundant fish",
+      "Multiple water activities available including parasailing, jet skiing, and scuba diving",
+      "Part of popular 4-island tour packages from Nha Trang with meals included"
+    ],
+    "thingsToKnow": {
+      "crowds": "Overcrowded with multiple boat tours arriving simultaneously; poor crowd management reported",
+      "difficulty": "Rocky/stony beach entry requires special water shoes; strong waves possible on windy days; jellyfish present seasonally",
+      "safety": null,
+      "accessibility": null,
+      "seasonal": "Jellyfish presence varies by season or after rain; water clarity best on sunny days"
+    },
+    "visitorTips": [
+      "Wear rash guard and water shoes to protect against jellyfish and sharp rocks",
+      "Book full-day tours rather than half-day to minimize travel time and unnecessary stops",
+      "Sit at the back of the boat if prone to seasickness during the 20-minute speedboat ride"
+    ],
+    "faq": [
+      {
+        "question": "What are the costs for facilities on the island?",
+        "answer": "Shower water costs 15,000₫ per bucket, beach chairs 25,000-50,000₫, drinks around 40,000₫, boat roundtrip 200,000₫ per person"
+      },
+      {
+        "question": "Is the coral reef in good condition?",
+        "answer": "Reviews are mixed; some report vibrant coral and fish, others describe extensive dead coral, trash, and nets in the water"
+      },
+      {
+        "question": "What should I prepare before visiting?",
+        "answer": "Bring water shoes for rocky entry, rash guard for jellyfish protection, and multiple swimsuits if doing multi-island tours"
+      }
+    ],
+    "sentiment": {
+      "positive": "Water clarity and fish abundance praised by many; popular stop on island-hopping tours with good accessibility via organized trips",
+      "negative": "Overcrowding, poor sanitation facilities, extensive trash and plastic pollution, dead coral in many areas, weak facility management"
+    }
+  }
+}

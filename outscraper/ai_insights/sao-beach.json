@@ -1,0 +1,42 @@
+{
+  "slug": "sao-beach",
+  "google_rating": 3.9,
+  "google_review_count": 7996,
+  "insights": {
+    "highlights": [
+      "Soft white sand and crystal-clear turquoise water with calm, shallow bay ideal for swimming",
+      "Less crowded than nearby Khem Beach with a more relaxed, local atmosphere",
+      "Water sports available including jet skis, parasailing, banana boats, and paddleboarding"
+    ],
+    "thingsToKnow": {
+      "crowds": "Significantly quieter than Khem Beach. Morning visits before 10am are least crowded; afternoon brings busloads of tourists and increased water sports noise",
+      "difficulty": null,
+      "safety": null,
+      "accessibility": "Free public beach access via Grab taxi drop-off point with parking for cars/scooters. Paid access through beach clubs (60,000-100,000 VND) with food credit options. No public showers or restrooms; showers available only with food purchase",
+      "seasonal": "After rainy season, increased debris and dried leaves wash ashore. Windy conditions can create choppy waters"
+    },
+    "visitorTips": [
+      "Visit early morning (before 10am) on the right side near Highland Coffee to avoid jet ski noise and crowds",
+      "Bring your own towel to avoid 150,000 VND sunbed charges, or use free public beach access instead of paid club entrances",
+      "Wear shoes or use a towel to avoid sand flies; be aware significant litter exists in undeveloped beach areas"
+    ],
+    "faq": [
+      {
+        "question": "Do I have to pay to access Sao Beach?",
+        "answer": "Free public access via Grab drop-off point. Paid beach clubs charge 60,000-100,000 VND entrance (often credited toward food/drinks). Sunbeds cost 150,000 VND separately."
+      },
+      {
+        "question": "When is the best time to visit to avoid crowds and noise?",
+        "answer": "Early morning before 10am is quietest. Afternoon brings busloads of tourists and water sports noise. Visit weekdays if possible for fewer crowds."
+      },
+      {
+        "question": "Is the beach clean and is there trash in the water?",
+        "answer": "Significant litter exists in undeveloped areas and along coastline, mostly concentrated away from sunbed zones. Managed beach club areas are well-maintained. No trash bins available."
+      }
+    ],
+    "sentiment": {
+      "positive": "Beautiful natural scenery with white sand and clear water. Peaceful atmosphere compared to other Phu Quoc beaches. Good value food and drinks with friendly vendors",
+      "negative": "Widespread plastic waste and litter on beach and in water. Jet ski noise and gasoline smell disrupt experience. Poor waste management and lack of public amenities. Crowded afternoon conditions"
+    }
+  }
+}

@@ -55,4 +55,32 @@ export const thoiLoiMountain: Location = {
     travelTips:
       "Núi Thới Lới and Hang Câu are always paired - climb the mountain first, then ride down to the beach for a swim. The eastern side of the island (Tò Vò Gate, Chùa Đục, garlic fields) forms a separate cluster. Most visitors split the island into two half-days along these two natural groupings.",
   },
+  insights: {
+    highlights: [
+      "Panoramic island views from the summit with volcanic crater lake and Đá Mồ Côi rock formation",
+      "Sunrise and sunset viewing spot with fresh air and unobstructed sightlines across garlic fields",
+      "Only freshwater lake on Lý Sơn island, formed from ancient volcanic crater, visible from peak",
+    ],
+    thingsToKnow: {
+      crowds: "Few tourists visit early morning; mostly local youth present. Can be crowded during sunset hours.",
+      difficulty: "Road is steep with sharp descents requiring good braking. Manual transmission motorcycles recommended over automatic scooters. Walking sections are moderate.",
+      safety: "Avoid visiting at sunset or when few people present due to reported harassment incidents. Strong winds can be dangerous near cliff edges. No railings or barriers. No toilet facilities available.",
+      accessibility: "Motorcycles can reach the summit. Narrow road makes car passage difficult and challenging for oncoming traffic. Some hiking trails overgrown or blocked by vegetation.",
+      seasonal: "Summer (8am-4pm) extremely hot and sunny; early morning visits (from 5am) recommended with cooler weather and sunrise views. Afternoon light (around 3pm) best for photography.",
+    },
+    visitorTips: [
+      "Arrive early morning (5am start) to avoid intense summer heat and catch sunrise for unforgettable experience",
+      "Use manual transmission motorcycle; check brakes thoroughly before ascending steep, winding road",
+      "Bring own food and water; no facilities, services, or trash bins available at summit",
+    ],
+    faq: [
+      { question: "Is it safe to visit alone at sunset?", answer: "No. Reports document harassment incidents at sunset when few people present. Visit during daytime with groups or early morning for safety." },
+      { question: "What vehicle is best for the mountain road?", answer: "Manual transmission motorcycles are recommended. Automatic scooters risk brake failure on steep descents due to continuous braking. Inspect brakes before ascending." },
+      { question: "When is the best time to visit?", answer: "Early morning from 5am for sunrise, cooler weather, and fewer crowds. Afternoon around 3pm offers good photography light. Avoid 8am-4pm in summer due to intense heat." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for stunning panoramic views, volcanic crater lake, unique rock formation, and sunrise/sunset experiences. Visitors appreciate accessible motorcycle route and special atmosphere.",
+      negative: "Safety concerns about harassment at sunset; steep road with brake risks; no facilities, no trail markings, rusted railings, and strong winds near edges",
+    },
+  },
 }

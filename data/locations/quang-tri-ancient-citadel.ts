@@ -50,4 +50,32 @@ export const quangTriAncientCitadel: Location = {
     travelTips:
       "Quảng Trị is the most emotionally significant stop on the central Vietnam war history circuit, and the citadel requires a different approach from the more touristically packaged sites further south. The scale of death here - concentrated into 81 days in a space that can be crossed in minutes on foot - is not immediately apparent from the peaceful green grounds. The museum and the information boards provide the numbers and the timeline, but the meaning of the place is transmitted most effectively by Vietnamese visitors, who often arrive in family groups to pay respects at a site their grandparents' generation regards as holy. Allow time to observe as well as to read.",
   },
+  insights: {
+    highlights: [
+      "Memorial to 81-day 1972 siege where thousands of soldiers died defending the citadel",
+      "Preserved east gate and rebuilt walls show destruction from intensive bombing during Vietnam War",
+      "On-site museum with war photographs and documentary films documenting the battle",
+    ],
+    thingsToKnow: {
+      crowds: "Avoid visiting on Vietnamese national holidays like September 2nd or July 27th due to large crowds",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Hire a tour guide to better understand the historical significance and detailed context of the site",
+      "Wear long trousers as a sign of respect in this sacred commemorative space",
+      "Bring your own water and food as few dining options are available nearby",
+    ],
+    faq: [
+      { question: "How long does a visit typically take?", answer: "A quick visit takes about 15 minutes, though spending an hour allows for more thorough exploration of monuments and relics." },
+      { question: "Is there an entrance fee?", answer: "No, entry tickets are free to visit Thành Cổ Quảng Trị Ancient Citadel." },
+      { question: "What should I expect to see?", answer: "Monuments, engraved names of fallen soldiers, preserved walls, the east gate, and a museum with war photographs and documentary films about the 1972 siege." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently describe it as a moving, sacred place for reflection on Vietnam's sacrifices and resilience during the 1972 siege",
+      negative: "A few visitors noted the citadel structures are mostly newly rebuilt due to wartime destruction, and some expressed concern about visitor conduct and cleanliness",
+    },
+  },
 }

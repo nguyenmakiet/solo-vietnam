@@ -44,4 +44,32 @@ export const hangEn: Location = {
     travelTips:
       "Hang En sits in an interesting position: more accessible than Sơn Đoòng (which requires weeks of preparation and costs several thousand dollars) but significantly more demanding than Paradise Cave or Phong Nha Cave. It's the right choice for travellers who want a genuine multi-day adventure - sleeping inside one of the world's largest caves, trekking through remote jungle, and engaging with an ethnic minority community - without the extreme cost or preparation of Sơn Đoòng. The tour price covers everything: guides, porters, meals, camping equipment, and caving gear. Book well in advance, especially for peak months February to April, as group sizes are strictly limited by the national park.",
   },
+  insights: {
+    highlights: [
+      "Third largest cave in the world with its own ecosystem, rivers, and jungle inside",
+      "Camp overnight inside the cave and wake surrounded by towering walls and stalactites",
+      "Trek through remote tropical rainforest with river crossings and wildlife viewing",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Physically demanding multi-day trek with steep uphill climbs, river crossings knee to chest high, muddy slippery trails, and dense jungle hiking in high humidity",
+      safety: "Leeches are prevalent on trails, especially during wet seasons. Swallows nest in cave and drop droppings on visitors, particularly in warm seasons. Only accessible through authorized Oxalis Adventure Tours",
+      accessibility: "Not suitable for sedentary individuals; requires good cardiovascular fitness. Oxalis provides trekking shoes and porters carry luggage to campsite",
+      seasonal: "Cave usually opens January. Trek conditions vary by weather; muddy trails more slippery after rain. Swallows return from Laos during warm seasons",
+    },
+    visitorTips: [
+      "Book 2 months in advance as tours fill up quickly, especially early season expeditions",
+      "Bring insect repellent and prepare for leech removal; watch for blood-sucking leeches crawling through clothing and boots",
+      "Pack ear plugs for sleeping as swallows and bats are noisy throughout day and night",
+    ],
+    faq: [
+      { question: "Can you visit independently or must you book with Oxalis?", answer: "Only accessible legally through Oxalis Adventure Tours. Independent visits are not permitted" },
+      { question: "What is the physical fitness requirement?", answer: "Requires good cardiovascular fitness. Reviewers recommend strong cardio conditioning before attempting the multi-day trek with steep uphill sections" },
+      { question: "How far in advance should you book?", answer: "Book 2 months ahead recommended. Early season tours can fill even earlier as groups are limited and popular dates book quickly" },
+    ],
+    sentiment: {
+      positive: "Visitors consistently describe it as a once-in-a-lifetime, unforgettable experience worth the physical demands. Oxalis guides praised as professional and knowledgeable",
+      negative: "Location tag on Google Maps is incorrect. Some question high pricing around $3000 per person without clear pricing transparency",
+    },
+  },
 }

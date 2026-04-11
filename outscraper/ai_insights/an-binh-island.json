@@ -1,0 +1,42 @@
+{
+  "slug": "an-binh-island",
+  "google_rating": 4.4,
+  "google_review_count": 218,
+  "insights": {
+    "highlights": [
+      "Crystal-clear turquoise seawater with white sand beaches and coral reefs for snorkeling and diving",
+      "Small peaceful island (under 1 km²) with only 80-100 residents, pristine and undeveloped",
+      "Electric vehicle tours from pier covering entire island in one loop for 50,000 VND per person"
+    ],
+    "thingsToKnow": {
+      "crowds": "Pier gets busy when ferries arrive; quieter during off-peak times. Island remains peaceful overall.",
+      "difficulty": "Island is small and manageable. Walking full loop takes approximately 1 hour but intense sun exposure requires substantial water (2-3 liters). Consider renting transportation for comfort.",
+      "safety": null,
+      "accessibility": "Electric vehicles and motorbikes available for rent at pier. Limited amenities on island; plan accordingly.",
+      "seasonal": "Morning and late afternoon offer best photography light. Intense midday sun exposure; early ferry departures recommended (8 AM departure, 2:30-3 PM return typical)."
+    },
+    "visitorTips": [
+      "Ferry frequency is only 2-3 departures daily between Lý Sơn main island; plan timetable carefully for arrival and departure",
+      "Order food in morning as seafood is only delivered via midday ferry; limited restaurant options exist",
+      "Bring snorkeling gear (goggles, flippers) and 2-3 liters of water; sun protection essential"
+    ],
+    "faq": [
+      {
+        "question": "How often do ferries run to Đảo Bé?",
+        "answer": "Only 2-3 ferry departures daily. First ferry typically departs around 8 AM, last return around 2:30-3 PM. Frequency varies by passenger demand."
+      },
+      {
+        "question": "What is the ferry cost and travel time?",
+        "answer": "Round-trip canoe fare 60,000-180,000 VND per person. Travel time approximately 10-20 minutes from Lý Sơn main island."
+      },
+      {
+        "question": "What water and facilities should I bring?",
+        "answer": "Bring 2-3 liters of water minimum due to intense sun exposure. Island has limited amenities. Snorkeling gear recommended. No fresh water available on island."
+      }
+    ],
+    "sentiment": {
+      "positive": "Overwhelming enthusiasm for pristine natural beauty, crystal-clear water, untouched atmosphere, and peaceful ambiance. Praised as ideal for relaxation and photography.",
+      "negative": "Ocean trash visible on main Lý Sơn island (not Đảo Bé); limited amenities and services; intense midday heat and sun exposure; very limited dining options; some commercial pressure for vehicle rentals."
+    }
+  }
+}

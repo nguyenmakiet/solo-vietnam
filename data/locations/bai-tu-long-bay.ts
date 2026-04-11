@@ -44,4 +44,32 @@ export const baiTuLongBay: Location = {
     travelTips:
       "The honest comparison: Ha Long Bay's main route has the famous caves and the infrastructure; Bái Tử Long has the solitude and the beaches. If you've already done Ha Long Bay or you're looking for the version that resembles what the entire region felt like before mass tourism arrived, Bái Tử Long is the answer. The standard recommendation for first-time visitors is still Ha Long Bay - it's easier to book, has more cruise options, and includes Sung Sot Cave and Ti Top Island. For a second visit or for travellers who specifically want fewer people and better beaches, Bái Tử Long is the clear choice.",
   },
+  insights: {
+    highlights: [
+      "Hundreds of limestone islands with caves to explore and kayak around during sunset",
+      "Significantly less crowded than Halong Bay with fewer day-trippers and boats",
+      "World Heritage site with emerald waters, secluded coves, and pristine natural scenery",
+    ],
+    thingsToKnow: {
+      crowds: "Much less crowded than Halong Bay with very few boats and day-trippers, making it feel secluded",
+      difficulty: "Kayaking difficulty varies; second-day kayaking can be harder due to waves and open waters compared to sheltered areas",
+      safety: null,
+      accessibility: "Cave visits require climbing approximately 100 steps; beaches accessible for swimming",
+      seasonal: "Early morning visits recommended for best views of clouds on hilltops; summer afternoons are hot and humid; beautiful during monsoon season",
+    },
+    visitorTips: [
+      "Book a 3-day 2-night cruise instead of day trip to fully appreciate the World Heritage area",
+      "Visit early morning for impeccable views of clouds settling on limestone hills",
+      "Consider quieter operators like Hand Span Tours or Indochina Junk for fewer crowds on boat",
+    ],
+    faq: [
+      { question: "How does Bai Tu Long Bay compare to Halong Bay?", answer: "Bai Tu Long is less crowded, equally scenic, and quieter with fewer boats and day-trippers, making it feel more serene and exclusive than its famous neighbor." },
+      { question: "What activities are available in Bai Tu Long Bay?", answer: "Kayaking, cave exploration, floating village tours, swimming on beaches, jungle trails, mangrove exploration, and sunset viewing from cruise boats." },
+      { question: "Is a multi-day cruise worth it over a day trip?", answer: "Yes, reviewers recommend 3-day 2-night cruises to fully appreciate the bay and avoid repetition, though overnight trips also felt worthwhile for most visitors." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as a serene, spectacular alternative to Halong Bay with stunning limestone scenery, minimal crowds, and unforgettable experiences on well-organized cruises",
+      negative: "One reviewer noted small beaches were somewhat dirty and one found cave tours not particularly special compared to Halong Bay",
+    },
+  },
 }

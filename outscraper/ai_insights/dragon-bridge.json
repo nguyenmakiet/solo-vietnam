@@ -1,0 +1,42 @@
+{
+  "slug": "dragon-bridge",
+  "google_rating": 4.5,
+  "google_review_count": 7732,
+  "insights": {
+    "highlights": [
+      "Golden dragon-shaped bridge spanning Han River, illuminated with colorful LED lights at night",
+      "Fire and water show Friday-Sunday at 9pm where dragon breathes flames then sprays water",
+      "Night market and riverside restaurants/cafés with outdoor seating near bridge"
+    ],
+    "thingsToKnow": {
+      "crowds": "Very crowded during weekend fire and water shows. Arrive early (by 7:30pm) for good viewing spots. Less crowded on weekdays when bridge is lit but show doesn't occur.",
+      "difficulty": null,
+      "safety": "Safe and well-organized. Security visible during shows. Traffic closed 15 minutes before show starts.",
+      "accessibility": "Easy access, free entry, no tickets required. Walkable across bridge or viewable from both riverbanks and nearby restaurants.",
+      "seasonal": "Show may be cancelled or disrupted by special events (Christmas decorations blocked views during one visit). Check online for latest schedule."
+    },
+    "visitorTips": [
+      "Bring umbrella or raincoat if standing close to dragon's head during water show to avoid getting soaked",
+      "View show from a distance or nearby restaurants/cafés for better perspective of entire bridge than standing on it",
+      "Arrive 30+ minutes early on weekends to secure good viewing spot before 9pm show starts"
+    ],
+    "faq": [
+      {
+        "question": "When does the fire and water show happen?",
+        "answer": "Every Friday, Saturday, and Sunday at 9:00pm. Show lasts approximately 10-15 minutes. Always verify online before visiting as shows may be cancelled."
+      },
+      {
+        "question": "Where should I stand to watch the show?",
+        "answer": "View from both sides of streets, riverbanks, or nearby restaurants for best perspective. Avoid standing directly under dragon's head as fire is hot and water spray will drench you."
+      },
+      {
+        "question": "Is there a cost to visit and what else is nearby?",
+        "answer": "Completely free. Night market operates nearby with food stalls and merchandise. Multiple restaurants and bars with outside seating available for dining while watching."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors find it an iconic Da Nang landmark worth seeing, especially the weekend fire and water show. Appreciated for architectural design, riverside location, accessible evening atmosphere, and family-friendly experience.",
+      "negative": "Some find the show overhyped with crowds too dense for short 10-15 minute performance. Fire portion brief compared to water spray. Not recommended if visiting weekdays when show doesn't occur."
+    }
+  }
+}

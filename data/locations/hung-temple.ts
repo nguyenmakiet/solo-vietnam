@@ -49,4 +49,32 @@ export const hungTemple: Location = {
     travelTips:
       "Đền Hùng is one of those sites where understanding the cultural significance transforms what might otherwise seem like a modest hilltop temple into something more interesting. The Hùng Kings narrative - disputed by historians but deeply held by Vietnamese people across all regions and political backgrounds - functions as the origin story of a nation, and the pilgrimage here is an expression of that identity. For foreign visitors, the site offers an insight into Vietnamese national consciousness that is difficult to access elsewhere. Outside the festival period the site is quiet and the forest walk is pleasant - a half-day from Hanoi combined with the nearby Vĩnh Phúc province or as a stop on the route north.",
   },
+  insights: {
+    highlights: [
+      "Complex of temples dedicated to Hung Kings, founders of Vietnamese nation around 2900 BC",
+      "Located on Nghĩa Lĩnh mountain with scenic views and tropical jungle surroundings",
+      "Annual Giỗ Tổ Hùng Vương festival on 10th day of 3rd lunar month attracts nearly 1 million visitors",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during Hung Kings Festival (10th day of 3rd lunar month). Popular with local Vietnamese but fewer foreign visitors.",
+      difficulty: "Mountain climb is challenging. Requires physical effort to ascend to temples at peak.",
+      safety: null,
+      accessibility: "Electric car available for 10k VND to reach foot of hill, reducing climbing distance.",
+      seasonal: "Festival on 10th day of 3rd lunar month (now a national holiday) draws massive crowds. Consider visiting on other days for better experience.",
+    },
+    visitorTips: [
+      "Avoid aggressive vendors and kiosk scams. Do not accept unsolicited guidance or purchase overpriced goods and incense.",
+      "Plan 2-3 hours for complete visit including museum at base and temple climb.",
+      "Visit outside festival season to avoid crowds and aggressive soliciting from shop owners.",
+    ],
+    faq: [
+      { question: "How much does it cost to visit?", answer: "Free entry to temple complex. Optional 10k VND electric car to base of hill. Museum also available." },
+      { question: "When should I avoid visiting?", answer: "Avoid 10th day of 3rd lunar month (Hung Kings Festival) unless you want crowds. Nearly 1 million visitors attend." },
+      { question: "What scams should I watch for?", answer: "Avoid paying locals for directions. Watch out for overpriced drinks and incense at kiosks. Shops may pressure you to buy goods." },
+    ],
+    sentiment: {
+      positive: "Highly respected historical and cultural site with deep significance for Vietnamese. Sacred atmosphere, well-maintained temples, and meaningful experience for those interested in Vietnamese history and origins.",
+      negative: "Aggressive vendor solicitation, scams involving directions and overpriced goods, poor management of commercial shops around site, very crowded during festival season.",
+    },
+  },
 }

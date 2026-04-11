@@ -1,0 +1,42 @@
+{
+  "slug": "dalat-railway-station",
+  "google_rating": 4.2,
+  "google_review_count": 4351,
+  "insights": {
+    "highlights": [
+      "French colonial Art Deco architecture from the 1930s with three triangular peaks inspired by Lang Biang Mountains",
+      "Tourist train ride to Trai Mat with live music (saxophone or violin) and complimentary warm artichoke tea",
+      "Documentary room and vintage steam locomotives available for photos inside preserved train carriages"
+    ],
+    "thingsToKnow": {
+      "crowds": "Can get busy with tour groups during peak times; visiting early morning or weekends may offer fewer crowds",
+      "difficulty": null,
+      "safety": null,
+      "accessibility": "Easy walk from Da Lat city center; accessible by Grab app; narrow road access to location",
+      "seasonal": null
+    },
+    "visitorTips": [
+      "Book return train tickets 2 hours after arrival at Trai Mat to allow time exploring Linh Phuoc Pagoda and Trai Mat Town",
+      "Bring earplugs if sensitive to loud saxophone/violin music played continuously during the train journey",
+      "Step outside train doors for unique perspective views; visit early morning to avoid crowds and capture best photos"
+    ],
+    "faq": [
+      {
+        "question": "How much is the entrance fee and what does it include?",
+        "answer": "Entrance fee is 50,000 VND per person (increased from 5,000 VND). Includes access to station building, vintage train carriages, documentary room, and souvenir market. Train ride tickets are separate."
+      },
+      {
+        "question": "How long should I plan to spend at the station?",
+        "answer": "Allow 30 minutes for the station itself. Budget 2-3 hours total if taking the 30-minute round-trip train to Trai Mat and exploring Linh Phuoc Pagoda or Trai Mat Town."
+      },
+      {
+        "question": "Are trains running regularly and how do I book tickets?",
+        "answer": "Train schedules are limited; check timetables at station or book advance tickets through apps for potentially cheaper prices. Round-trip tickets cost approximately 124,000 VND (as of December 2025)."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors appreciate the historic French colonial architecture, vintage charm, and nostalgic atmosphere as a worthwhile cultural experience with good photo opportunities",
+      "negative": "Recent 10-fold entrance fee increase from 5,000 to 50,000 VND perceived as poor value; some report limited scenery on train route (residential areas and farming), run-down maintenance of grounds, and lack of staff assistance beyond ticket office"
+    }
+  }
+}

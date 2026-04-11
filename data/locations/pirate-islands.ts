@@ -50,4 +50,32 @@ export const pirateIslands: Location = {
     travelTips:
       "The Hai Tac Islands sit in the same Gulf of Thailand waters as the more famous destinations of Phu Quoc and Nam Du, but attract a fraction of the visitors due to the lack of ferry connections and the limited accommodation. For travellers who have already done Phu Quoc and are looking for something with more edge and less infrastructure, Hai Tac is a logical next step. The logistics require more planning than a typical island trip - boat charter negotiation, supply preparation, and weather monitoring - but the reward is access to islands that feel genuinely remote. Ha Tien makes the most practical base: it is a pleasant small town with good food, a manageable size, and proximity to the Cambodian border crossing at Xa Xia for those moving between Vietnam and Cambodia.",
   },
+  insights: {
+    highlights: [
+      "Quần đảo Hải Tặc comprises 18 islands in Thái Lan Gulf with historical pirate heritage from 17th-18th centuries",
+      "Experience local fishing village life, snorkel coral reefs, and observe marine life with fishermen guides",
+      "Clean beaches, calm waters ideal for swimming, camping, and weekend family getaways near Hà Tiên",
+    ],
+    thingsToKnow: {
+      crowds: "Few tourists visit; very peaceful with small local population around 500 households and 1,800 residents",
+      difficulty: null,
+      safety: null,
+      accessibility: "Ferry takes 30 minutes from Hà Tiên town. Book boat tickets in advance for same-day round trips. 4G signal may be unavailable depending on location",
+      seasonal: "Sea is calm and suitable for water activities year-round",
+    },
+    visitorTips: [
+      "Reserve ferry tickets ahead of time, especially for same-day round-trip visits during weekends",
+      "Plan activities beforehand (food, accommodation, entertainment) to save time and avoid delays on island",
+      "Take smaller boats from main islands to snorkel at nearby islets for coral reefs and marine wildlife",
+    ],
+    faq: [
+      { question: "Do I need to book ferry tickets in advance?", answer: "Yes, booking boat tickets ahead is recommended, especially for same-day round trips. Ferry departs at 8 AM and returns at 1 PM" },
+      { question: "Will I have phone signal on the islands?", answer: "4G signal may be unavailable depending on location within the archipelago" },
+      { question: "What activities are available on the islands?", answer: "Swimming at clean beaches, snorkeling coral reefs, fishing with locals, camping with available services, and exploring fishing villages" },
+    ],
+    sentiment: {
+      positive: "Visitors praise the peaceful atmosphere, friendly locals, clean beaches, affordable ferry prices, and snorkeling opportunities",
+      negative: "Some report high food prices, slow service, limited swimming beaches, and overpricing described humorously as pirate-like",
+    },
+  },
 }

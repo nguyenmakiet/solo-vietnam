@@ -44,4 +44,32 @@ export const fansipan: Location = {
     travelTips:
       "The cable car is efficient but can feel like a theme park on busy days - long queues, crowds at the top, and a commercialised summit complex. If you have 3 days to spare and reasonable fitness, the trek is infinitely more rewarding and far less visited. Either way, do not underestimate the cold: the summit is a different climate from Sa Pa. For the best photography, aim for the first cable car of the day in autumn when the cloud inversions are at their most dramatic.",
   },
+  insights: {
+    highlights: [
+      "Highest peak in Indochina at 3,143m with temples, giant Buddha statue, and multiple photo spots",
+      "Cable car ride offering spectacular views of rice terraces, valleys, mountains and clouds",
+      "Flag-raising ceremony at summit and viewing platforms with altitude marker",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during peak hours and holidays. Long queues for cable car (30 minutes to 1+ hour), monorail, and funicular. Line-cutting common. Avoid Saturday mornings and holiday season. Visit early morning or late afternoon for shorter waits.",
+      difficulty: "Hiking option takes 5-6 hours up, 4 hours down with 1,500m elevation gain and 600+ steep stairs. Requires decent fitness. Final ascent has metal ladders and boulder scrambling. Cable car/funicular available for those not hiking. Thin oxygen at altitude.",
+      safety: "Weather extremely unpredictable and changes quickly. Thick fog common in winter (Dec-Jan), reducing visibility to zero. Mountain closed periodically for cable car maintenance. Hikers must sign indemnity form if over 60. Not handicap accessible.",
+      accessibility: "Not handicap accessible. Narrow walkways at summit with steep, strenuous stairs. Difficult for seniors and young children unless using funicular. Requires proper footwear and good physical condition.",
+      seasonal: "Best visited in summer and clear weather days. Avoid December-January (foggy, cold, rainy). Probability of fog lowest at midday when temperature highest. Weather clears faster in afternoon than morning. Flexibility with schedule recommended to wait for clear conditions.",
+    },
+    visitorTips: [
+      "Check weather forecast and Instagram posts with Fansipan location tag before visiting to assess conditions",
+      "Buy combo tickets online (Klook, WOW Pass) in advance to skip queues and save 30-50% of wait time",
+      "Wear warm puffer jacket with hood, proper hiking shoes, and bring light for hikes. Raincoat unnecessary; umbrella more useful",
+    ],
+    faq: [
+      { question: "Is it better to hike or take the cable car?", answer: "Hiking takes 5-6 hours but offers better scenery. Cable car is faster but crowded with long waits. Most visitors use funicular for summit final leg. Choose based on fitness level and time availability." },
+      { question: "What is the best time to visit Fansipan?", answer: "Visit in summer for clear weather. In winter, go midday when temperature highest. Avoid December-January when thick fog blocks views. Early morning or late afternoon better than peak midday hours for crowds." },
+      { question: "How much does it cost and what is included?", answer: "Approximately 850,000 VND per person for standard entry. Combo tickets include monorail, cable car, and funicular. Optional buffet lunch available. Coffee and snacks expensive at summit. WOW Pass (€16) prevents individual ride queues." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise spectacular mountain views, cable car experience, temples, and well-developed tourist infrastructure. Many consider it a must-visit despite high cost.",
+      negative: "Extreme commercialization, long queues, overcrowding, line-cutting, poor queue management, narrow walkways, ongoing construction disrupting experience, limited food availability at peak times, expensive pricing compared to other Sapa activities, weather unpredictability ruining views.",
+    },
+  },
 }

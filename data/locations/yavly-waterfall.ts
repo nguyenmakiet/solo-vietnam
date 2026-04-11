@@ -44,4 +44,32 @@ export const yavlyWaterfall: Location = {
     travelTips:
       "The Tà Năng - Phan Dũng route has developed a strong following among trekking enthusiasts from Ho Chi Minh City and is widely considered the best multi-day wilderness walk accessible from the south. The combination of terrain variety - open grassland, primary forest, stream crossings, waterfall camps - compressed into 2-3 days makes it a more diverse experience than single-environment treks. Yavly is the emotional high point of the route for most trekkers - the camp near the waterfall is where groups typically spend their most sociable evening of the trek. Booking through a reputable operator based in Ho Chi Minh City or Đà Lạt handles the permits, guide, and logistics; independent trekking is possible but requires solid navigation skills and knowledge of the seasonal conditions.",
   },
+  insights: {
+    highlights: [
+      "Remote waterfall in Phan Dũng forest, accessible via Tà Năng-Phan Dũng trekking route",
+      "Swimming pool at waterfall base with pristine, cold water; excellent rest stop after trekking",
+      "Scenic jungle setting with camping spots nearby; part of multi-day trekking experience",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Challenging trek requiring experienced guide. Rocky terrain with slippery stones, especially dangerous during rainy season. Multiple stream crossings required. Getting lost possible without markings.",
+      safety: "Rocks become slippery and extremely dangerous during heavy rain. Cold water temperature requires caution. Getting lost difficult to remedy in dry season when water sources scarce. Scout campsite location before descending to stream.",
+      accessibility: "Accessible via two directions: from Tà Năng (Lâm Đồng) descending or from Phan Dũng (Tuy Phong, Bình Thuận) ascending. Motorcycle accessible to nearby areas. Not suitable for those without trekking experience.",
+      seasonal: "Best in dry season (February-May lunar calendar) for water clarity and camping. Rainy season offers heaviest waterfall flow but dangerous conditions. Streams may be dry in dry season, complicating water access.",
+    },
+    visitorTips: [
+      "Hire experienced guide to navigate multiple trail forks; arrow markings and machete cuts help but getting lost is difficult in dry season",
+      "Plan campsite location before descending to streams; difficult to climb back up if committed to lower areas",
+      "Bring proper footwear for slippery rocks; exercise extreme caution when rocks are wet from rain",
+    ],
+    faq: [
+      { question: "When is the best time to visit Thác Yavly?", answer: "Dry season (February-May lunar calendar) offers clear water and better camping conditions. Rainy season has heavy water flow but creates dangerous slippery conditions." },
+      { question: "Can I reach the waterfall without a guide?", answer: "Difficult without experience. Multiple unmarked trail forks exist. Navigate using arrow paint marks, tree cuts, or GPS. Getting lost in dry season means difficulty finding water sources." },
+      { question: "How long does the trek take from Tà Năng?", answer: "Approximately 6 hours of walking from forest edge (26km distance) on day one. Total trek typically takes 2+ days to reach waterfall base." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for pristine wilderness setting, refreshing cold water swimming, and rewarding destination after challenging trek. Considered highlight of Tà Năng-Phan Dũng route.",
+      negative: "Dangerous slippery rocks during rainy season; difficult navigation without guide; limited camping spots; some littering by visitors",
+    },
+  },
 }

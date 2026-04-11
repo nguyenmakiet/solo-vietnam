@@ -44,4 +44,32 @@ export const thienMuPagoda: Location = {
     travelTips:
       "Thiên Mụ is the most photographed landmark in Huế and genuinely merits the reputation - the tower, the river, and the garden create a composition that photographs well at almost any time of day. The boat approach from central Huế is worth doing at least one-way; returning by motorbike or Grab along the riverside road gives a different perspective on the Kim Long neighbourhood. The pagoda is free to enter, takes about 45–60 minutes to explore fully, and is most meaningful with some background on the history of the car and the monk - one of the most consequential objects in a Vietnamese religious site anywhere in the country.",
   },
+  insights: {
+    highlights: [
+      "Seven-story Phuoc Duyen Tower is Vietnam's tallest pagoda, standing majestically overlooking Perfume River with excellent photo opportunities",
+      "Extensive grounds include peaceful gardens, ancient bonsai trees over 500 years old, and a hidden graveyard with family plots behind the back wall",
+      "Free admission with small optional parking fee (3,000 VND for motorbikes). Houses historic Austin car used in Thich Quang Duc's 1963 self-immolation protest",
+    ],
+    thingsToKnow: {
+      crowds: "Morning visits can be busy with tour groups. Less crowded in late afternoon, sunset, or early morning (7am) before crowds arrive",
+      difficulty: null,
+      safety: "Modest dress and respectful behavior required as active religious site. Avoid scams from local vendors and boat ride touts near entrance; negotiate prices beforehand",
+      accessibility: "Uneven historic steps require comfortable walking shoes. Grounds are spacious and easy to navigate",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Visit early morning (7am) or late afternoon/sunset to avoid peak tourist crowds while maintaining peaceful atmosphere",
+      "Use Grab or official taxis with pre-negotiated prices to avoid driver overcharging; some drivers charged 160k instead of 34k agreed rate",
+      "Wear comfortable shoes for uneven historic steps. Bring camera fully charged for photography at river overlook and throughout grounds",
+    ],
+    faq: [
+      { question: "What are the dress code requirements at Thiên Mụ Pagoda?", answer: "Modest dress and respectful behavior are required as it is an active religious site. The pagoda is open to the public but visitors must show cultural respect." },
+      { question: "When is the best time to visit to avoid crowds?", answer: "Early morning (around 7am) or late afternoon/sunset times are quieter. Morning rush brings tour groups. Mid-day and afternoons are generally less crowded than mornings." },
+      { question: "How much does it cost to visit and what about parking?", answer: "Entry is free. Motorbike parking costs approximately 3,000 VND. Car parking fees vary. You can park down the road to avoid some fees." },
+    ],
+    sentiment: {
+      positive: "Overwhelming majority praised the pagoda's serene atmosphere, architectural beauty, river views, free admission, and historical significance. Visitors consistently called it a must-see attraction in Huế",
+      negative: "Some visitors encountered scams from local vendors and boat ride touts near the entrance who overcharged or hassled tourists. Taxi drivers occasionally overcharged significantly",
+    },
+  },
 }

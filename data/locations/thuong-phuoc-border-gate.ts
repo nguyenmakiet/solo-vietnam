@@ -50,4 +50,32 @@ export const thuongPhuocBorderGate: Location = {
     travelTips:
       "Thường Phước is relevant for two types of travelers: those doing an overland Mekong Delta loop who want to exit Vietnam into Cambodia by river rather than the more standard Mộc Bài or Vĩnh Xương crossings, and those interested in the upper delta's flood-season landscape and border-town character. It is not a destination in the conventional sense - there is no single attraction to see. The value is in the atmosphere of a working river border and the landscape of Đồng Tháp's far north. If mày is doing a thorough Mekong Delta itinerary and has already covered Cần Thơ, Sa Đéc, and Châu Đốc, Hồng Ngự district and this border crossing add a different texture to the trip.",
   },
+  insights: {
+    highlights: [
+      "Marker 240 where Mekong River enters Vietnam from Cambodia border",
+      "Remote rural borderland with scenic, peaceful countryside atmosphere",
+      "International river gateway connecting Vietnam and Cambodia across Mekong",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: "Border checkpoint requires thorough immigration questioning about local connections and purpose of visit. Daytime crossing recommended for safety. Good security maintained at checkpoint.",
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Cross during daytime for safety. Border guards are friendly and helpful.",
+      "Local markets near checkpoint sell Thai Fanta and authentic Thai beer at cheap prices",
+      "Bring camera for photo opportunities at border marker and rural scenery",
+    ],
+    faq: [
+      { question: "Can foreigners with e-visas cross at this checkpoint?", answer: "Reviews indicate electronic visas are accepted, though thorough immigration questioning about local contacts and visit purpose is standard procedure." },
+      { question: "What are the checkpoint operating hours?", answer: "One review asks if checkpoint operates 24/7, but no clear confirmation provided in available reviews about exact hours." },
+      { question: "When is the safest time to cross?", answer: "Daytime crossing is recommended for safety. Border checkpoint has good security and friendly border guards." },
+    ],
+    sentiment: {
+      positive: "Majority of visitors praise scenic borderland views, cultural significance as Mekong entry point, friendly border officials, and peaceful rural atmosphere",
+      negative: "Some visitors found immigration questioning exhausting and intrusive. One reviewer noted limited entertainment options.",
+    },
+  },
 }

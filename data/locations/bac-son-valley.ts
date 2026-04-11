@@ -48,4 +48,32 @@ export const bacSonValley: Location = {
     travelTips:
       "Bắc Sơn works best as a one or two night stop rather than a day trip - the valley changes completely with the light, and an early morning from Nà Lay viewpoint followed by a motorbike loop of the valley floor is the ideal way to experience it. The town has enough guesthouses and local food options to be comfortable. From Bắc Sơn, it is straightforward to continue northeast to Lạng Sơn city or loop back toward Thái Nguyên and the tea hills of Tân Cương - the road connections make it an easy addition to any northeast Vietnam itinerary.",
   },
+  insights: {
+    highlights: [
+      "Panoramic views of Bắc Sơn Valley with rice fields, peaks, and local communities",
+      "1,129 stone steps to summit; 25-50 minutes depending on fitness level",
+      "Golden rice terraces visible July-November; cloud views best in winter months",
+    ],
+    thingsToKnow: {
+      crowds: "Locals gather at sunrise on weekends; less crowded on weekdays",
+      difficulty: "Steep stone stairs with some sections in poor repair; challenging for weak joints; bring water on sunny days",
+      safety: "Large spiders and spider webs common on path, especially June-July; carry stick to clear webs; avoid staying long near radio tower at summit",
+      accessibility: "Stone steps only, no paved path; not suitable for those with knee/joint problems",
+      seasonal: "July and November best for golden rice fields; late October ideal; March-April has cloudy weather; January rice fields less vibrant",
+    },
+    visitorTips: [
+      "Start at 4:30-5:00 AM for sunrise; allow 15-20 extra minutes if staying at nearby homestay",
+      "Bring a stick or pole to clear spider webs; wear protective gear if arachnophobic",
+      "Visit at sunset or late afternoon for clearer views; bring 1-2 bottles of water for sunny days",
+    ],
+    faq: [
+      { question: "How long does the climb take?", answer: "25-50 minutes depending on fitness level. Plan 40-50 minutes to be safe. Allow extra 15-20 minutes if staying at nearby homestay." },
+      { question: "When is the best time to visit?", answer: "July-November for golden rice fields. Late October is ideal. Winter for cloud views. Avoid March-April due to cloudy weather." },
+      { question: "What wildlife hazards should I expect?", answer: "Large spiders and spider webs common on path, especially June-July. Carry stick to clear webs. Some snakes possible but less frequently reported." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for panoramic valley views and worthwhile hiking experience despite physical difficulty",
+      negative: "Spider abundance concerning for some; stone steps poorly maintained in places; challenging for those with joint problems",
+    },
+  },
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "la-vang-sanctuary",
+  "google_rating": 4.8,
+  "google_review_count": 103,
+  "insights": {
+    "highlights": [
+      "Bombed bell tower from 1972 Vietnam War stands as historical monument with bullet and shrapnel marks",
+      "Minor Basilica recognized by the Holy See in 1961, major pilgrimage site for Vietnamese Catholics",
+      "Large sacred grounds with new blue-roofed building, religious statues, and well fountain nearby"
+    ],
+    "thingsToKnow": {
+      "crowds": null,
+      "difficulty": null,
+      "safety": null,
+      "accessibility": "Limited English signage; not very English-friendly for international visitors",
+      "seasonal": null
+    },
+    "visitorTips": [
+      "Visit the old church ruins located behind main altar area near Mother of God statue and well",
+      "Photograph the historic bell tower as unique landmark; examine brick details showing war damage",
+      "Allow time to learn the site's history tied to 1798 apparition and wartime persecution of Catholics"
+    ],
+    "faq": [
+      {
+        "question": "Why is the church partially destroyed?",
+        "answer": "The original 1928 Gothic-style church was heavily bombed and destroyed in 1972 during the Vietnam War. Only the bell tower remains standing as a war memorial."
+      },
+      {
+        "question": "What is the significance of La Vang?",
+        "answer": "Catholics believe Mother of Mary appeared here in 1798 to comfort persecuted believers. The Holy See officially recognized it as a Minor Basilica in 1961."
+      },
+      {
+        "question": "Is there information available in English?",
+        "answer": "The site has limited English signage. Consider bringing a guide or translation app for full understanding of the historical and religious significance."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors consistently praise the historical significance, architectural character, and spiritual importance of the site, particularly the resilient bell tower as a war monument",
+      "negative": null
+    }
+  }
+}

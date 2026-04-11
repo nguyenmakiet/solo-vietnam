@@ -44,4 +44,32 @@ export const baiDinhPagoda: Location = {
     travelTips:
       "Bái Đính is an exercise in scale rather than subtlety - the complex is monumental, modern, and unapologetically large. It receives more Vietnamese visitors per year than any other religious site in Ninh Bình, and the atmosphere on a busy day is that of a national pilgrimage site: incense, chanting, family groups, and a sense of civic pride in Vietnam's largest religious complex. For international travellers who prefer the intimate character of older religious sites, the ancient cave pagoda 300 metres from the main entrance is the more rewarding option. For travellers interested in contemporary Vietnamese Buddhist expression at its most ambitious scale, Bái Đính is unlike anything else in the country.",
   },
+  insights: {
+    highlights: [
+      "Largest gold-plated Buddha statue in Southeast Asia and 500-statue Arhat corridor",
+      "13-storey pagoda nearly 100 meters high with elevator to top offering panoramic views",
+      "Ancient pagoda complex hidden on hillside with sacred caves and thousand-year-old history",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded during holidays and weekends. Visit early morning or late afternoon/evening to avoid crowds. Weekdays are significantly quieter.",
+      difficulty: "Complex spans hundreds of acres. Walking entire site is physically demanding. Electric car/tram service (300-600k VND) highly recommended for full exploration.",
+      safety: null,
+      accessibility: "Elevator available inside main pagoda tower. Electric shuttle service available for those unable to walk. Some areas very slippery when wet.",
+      seasonal: "Rainy weather adds serene atmosphere but surfaces become slippery. Cooler weather in late January makes walking pleasant.",
+    },
+    visitorTips: [
+      "Purchase electric car ticket (300-600k VND) to efficiently travel between dispersed sites across vast grounds",
+      "Allocate 3-5 hours minimum; bring water as hydration points close by 5pm. Combine with nearby Trang An boat tour",
+      "Visit early morning or after sunset to beat crowds and enjoy nighttime illumination of complex",
+    ],
+    faq: [
+      { question: "How long should I spend at Bai Dinh Pagoda?", answer: "Plan 3-5 hours minimum for proper exploration. Many visitors spend entire day. Quick tour possible in 2-3 hours if time-limited." },
+      { question: "Is the electric car/tram service worth purchasing?", answer: "Yes, highly recommended. Complex spans hundreds of acres and is too vast to walk entirely. Electric car option (300-600k VND) transfers you between dispersed temples efficiently." },
+      { question: "When is the best time to visit to avoid crowds?", answer: "Visit weekdays instead of holidays/weekends. Early morning (before 9am) or late afternoon (after 4pm) are quieter. Evening visits allow viewing nighttime illumination." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise the massive scale, impressive architecture, peaceful atmosphere, and spiritual significance. Complex is well-maintained, organized, and offers diverse experiences from ancient temples to modern pagoda.",
+      negative: "Some found experience overly commercialized with ongoing construction, gift shops, and industrial surroundings detracting from spiritual atmosphere. Entry fees considered steep. Confusing directions to visitor center. Limited English signage and lack of adequate dining options noted.",
+    },
+  },
 }

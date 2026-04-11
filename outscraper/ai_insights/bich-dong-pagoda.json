@@ -1,0 +1,42 @@
+{
+  "slug": "bich-dong-pagoda",
+  "google_rating": 4.4,
+  "google_review_count": 6169,
+  "insights": {
+    "highlights": [
+      "Three-level pagoda complex built into mountainside with caves and temple structures",
+      "Free entrance with scenic water lily pond and valley views from hilltop",
+      "Cave passage connecting lower and middle pagodas with bat sightings"
+    ],
+    "thingsToKnow": {
+      "crowds": "Moderately crowded on weekends and afternoons; quieter in early mornings and off-peak hours",
+      "difficulty": "Moderate climb with steep, uneven stone steps; slippery when wet or covered in algae",
+      "safety": "Wear non-slip footwear. Be cautious of parking scams near entrance—avoid official parking attendants; park at nearby cafes instead. Entrance is completely free; verify prices before paying.",
+      "accessibility": "Multiple levels require stair climbing; cave passage is narrow and low-ceilinged",
+      "seasonal": "Spring and winter recommended. Summer crowded with local travelers. Morning visits better for water lily blooms. Rainy season makes steps slippery."
+    },
+    "visitorTips": [
+      "Park at roadside cafes or restaurants before the official parking area; costs 3k-10k VND or free with purchase",
+      "Explore the valley path to the right of the pagoda entrance and Hanh Phuc Lake for fewer crowds",
+      "Allow 1.5-2 hours to explore all three pagoda levels, caves, and surrounding trails"
+    ],
+    "faq": [
+      {
+        "question": "Is there an entrance fee?",
+        "answer": "No, entrance is completely free. Ignore anyone claiming otherwise or asking for ticket fees."
+      },
+      {
+        "question": "How much does parking cost?",
+        "answer": "Official parking charges 10k-50k VND depending on vehicle type, but park at nearby cafes for 3k-10k or free."
+      },
+      {
+        "question": "What footwear should I wear?",
+        "answer": "Non-slip shoes essential. Steps are steep, uneven, and slippery when wet or covered in algae."
+      }
+    ],
+    "sentiment": {
+      "positive": "Majority praise the unique three-level temple complex, cave passages, scenic hilltop views, and free entrance. Peaceful atmosphere and spiritual experience recommended for solo travelers.",
+      "negative": "Parking area scams with aggressive attendants charging inflated fees; some report animal welfare concerns about dogs in small cages; cleanliness issues from visitor littering."
+    }
+  }
+}

@@ -44,4 +44,32 @@ export const phongNhaCave: Location = {
     travelTips:
       "Phong Nha Cave is the most accessible of the four major caves in the national park - no hiking, no permits, no physical requirements. The boat tour format makes it suitable for all ages and fitness levels. For travellers with limited time, Phong Nha Cave and Paradise Cave together in one day covers the park's two most distinct experiences: the underground river boat tour and the dry cave walk. Son Doong requires a separate multi-day expedition. The cave closes during flood season (approximately September to November) - this is the single most important scheduling consideration for a Quảng Bình trip.",
   },
+  insights: {
+    highlights: [
+      "Boat ride through river into cave with scenic limestone cliffs and jungle views",
+      "Walk through dry cave section with well-lit stalactite and stalagmite formations",
+      "Optional kayak tour goes deeper into cave with climbing sections and inner chambers",
+    ],
+    thingsToKnow: {
+      crowds: "Very tourist-oriented with multiple boats inside cave at once; less crowded during off-season or late afternoon departures",
+      difficulty: "Boat access easy; walking section has uneven, slippery ground requiring good shoes; Tien Son cave requires climbing many stairs; kayak tour requires fitness and sure-footedness",
+      safety: null,
+      accessibility: "Well-constructed wooden walkways inside cave; boat has removable roof for better views; water levels can restrict boat access during heavy rainfall",
+      seasonal: "Heavy rainfall affects boat depth penetration; high upstream water levels in Laos limit cave access",
+    },
+    visitorTips: [
+      "Share boat cost with other tourists (700k dong capacity for 12 people) to reduce expenses significantly",
+      "Wear good waterproof shoes with grip; bring poncho if rain expected; tip boat operators well for their effort",
+      "Visit late afternoon to avoid crowds; allow 90-110 minutes to explore without rushing",
+    ],
+    faq: [
+      { question: "How much does it cost and can I visit without a tour?", answer: "Cave entrance 150k dong per person; boat 700k (shared among up to 12 people). Visit independently through Phong Nha Tourist Center without tour operator for cheaper rates." },
+      { question: "What should I wear and bring?", answer: "Good grip shoes for uneven wet ground; poncho for heavy rain. Boat has covers. Be prepared to get slightly wet on stairs to second cave." },
+      { question: "Can I visit during rainy season?", answer: "Yes, cave stays dry. However, heavy rainfall raises water levels, limiting boat penetration into cave. Walking sections remain accessible." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for cave formations, boat experience, and scenic river approach; visitors compare favorably to Paradise Cave; highlight rowers' strength and dedication",
+      negative: "Boats block each other's views; cave smaller than expected compared to Paradise Cave; boat access limited during high water levels",
+    },
+  },
 }

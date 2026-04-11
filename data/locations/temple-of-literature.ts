@@ -50,4 +50,32 @@ export const templeOfLiterature: Location = {
     travelTips:
       "The Temple of Literature is one of Hanoi's genuinely unmissable sites - not because it is spectacular in the way of Hạ Long Bay or Hội An, but because it is the best physical record of the intellectual and administrative culture that shaped Vietnamese civilization for a millennium. The doctoral steles are the kind of primary historical document that is rarely accessible to casual visitors at any heritage site in the world - names, hometowns, examination dates, and ranks of 1,300 scholars carved in stone and still readable. If mày is doing Hanoi properly rather than just ticking landmarks, the Temple of Literature deserves more than a hurried 20-minute walk-through.",
   },
+  insights: {
+    highlights: [
+      "Vietnam's first national university founded in 1070, honoring Confucian scholarly traditions and education",
+      "82 ancient Doctoral Stelae carried by stone turtles, engraving names of imperial exam graduates",
+      "Iconic Khue Van Pavilion (Constellation of Literature), Hanoi's symbol, with traditional Vietnamese architecture",
+    ],
+    thingsToKnow: {
+      crowds: "Popular with young people taking graduation and áo dài photos, especially during Tết and weekends. Weekday visits and early morning times are quieter. Afternoon Saturday visits have minimal queues.",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Early morning visits in early spring or Tết season offer cooler temperatures, fewer crowds, and festive atmosphere with peach blossoms and spring decorations",
+    },
+    visitorTips: [
+      "Allow 1-2 hours to explore five courtyards, courtyards, Confucius temple, and stele areas; 3 hours with detailed exploration",
+      "Dress modestly: no crop tops, shorts, or tank tops. Many visitors wear traditional áo dài for photos",
+      "Visit early morning or on weekdays to avoid graduation photo sessions and crowds; skip audio guide and read placard information instead",
+    ],
+    faq: [
+      { question: "What is the entrance fee and ticket availability?", answer: "Adults pay 70,000-140,000 VND. Children under 13 enter free. Buy tickets at the main gate entrance. Minimal queues on weekdays." },
+      { question: "What time should I visit to avoid crowds?", answer: "Visit early morning or weekdays for peaceful atmosphere. Avoid graduation season (varies yearly) and Tết when packed with students, families, photographers, and professional photo shoots." },
+      { question: "Is a tour guide necessary to understand the site?", answer: "Optional but recommended. Without a guide, it feels like a peaceful park walk. With a guide, you learn meaningful history of Vietnam's first university, Confucian values, and architectural significance." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as a serene, historically significant landmark offering peaceful escape from Hanoi's chaos. Visitors appreciate well-preserved architecture, cultural meaning, and calm atmosphere despite being a major tourist attraction.",
+      negative: "Professional photo sessions with photographers and lighting setups during graduation season create obstacles for other visitors trying to enjoy the peaceful environment and take photos freely.",
+    },
+  },
 }

@@ -47,4 +47,32 @@ export const buiHuiGrassland: Location = {
     travelTips:
       "Bùi Hui is best experienced overnight - the camping atmosphere on the grassland, the cool night air, and the dawn light on the hills are what distinguish it from a day trip viewpoint. The sim blossom season (late March to April) is the obvious time to visit if the visual spectacle is the priority. Outside that window the grassland is pleasant but less dramatic - the green hills and highland climate are appealing year-round, but the purple bloom is the specific experience that has made Bùi Hui known. For travellers passing through central Vietnam between Đà Nẵng and Quy Nhơn, Ba Tơ district represents one of the least-visited highland areas along the coastal route.",
   },
+  insights: {
+    highlights: [
+      "Stunning 360-degree mountain views from 700m elevation with expansive grasslands and scenic sunrise/sunset",
+      "Cloud-chasing experience in early morning hours with sea of clouds surrounding mountain peaks",
+      "Camping facilities available with barbecue services, bonfire events, and cultural performances by local Bana minority",
+    ],
+    thingsToKnow: {
+      crowds: "Increasingly crowded on weekends and holidays; remote camping areas offer more peace than main gate facilities with organized camping groups",
+      difficulty: "Winding mountain road with sharp curves requires experienced driver; final 1km challenging for sedans but SUVs handle easily. Road conditions vary by route chosen",
+      safety: "Avoid during rainy season due to slippery mountain roads and dangerous conditions. Avoid route 629 from Bình Định (13km unpaved mountain road)",
+      accessibility: "Car accessible to camping areas; no permit restrictions mentioned. Multiple road options available; main routes are paved/concrete",
+      seasonal: "Best March-August for weather and cloud viewing. Summer lacks clouds. March features wild guava trees; May-September has wild sim flowers blooming",
+    },
+    visitorTips: [
+      "Arrive afternoon (3-4pm), camp overnight to enjoy sunset, bonfire, sunrise and early morning cloud views together",
+      "Bring warm clothing as nights are cold (like Đà Lạt/Sapa); avoid peak holidays to escape loud speakers and noise pollution",
+      "Pack reusable containers; littering is widespread problem. Camp away from organized group areas for tranquility",
+    ],
+    faq: [
+      { question: "What is the best time to see clouds here?", answer: "Early morning hours (5-7am) in rainy season show best clouds. Summer months have minimal clouds. March-August generally recommended for weather." },
+      { question: "Is the road difficult to drive?", answer: "Main routes (via Đức Phổ or national highway to Ba Tơ) are paved/concrete. Avoid Route 629 from Bình Định (13km unpaved mountain road). Sharp curves require experienced drivers." },
+      { question: "Can I bring my own tent or must I rent?", answer: "Free camping allowed with personal tent at designated areas. Rental lents and services available at main gate. Service charges only apply if using provided facilities." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised for pristine natural beauty, accessible camping experience, stunning views, cool mountain climate, and improving tourism infrastructure with friendly service staff",
+      negative: "Significant litter and waste management issues from inconsiderate visitors; loud speakers at night in organized camping areas lack noise restrictions; increasing commercialization threatens pristine environment",
+    },
+  },
 }

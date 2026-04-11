@@ -137,6 +137,36 @@ export default async function LocationPage({
             </div>
           </div>
         </div>
+
+        {/* Things to Know */}
+        {location.insights?.thingsToKnow && (() => {
+          const ttk = location.insights!.thingsToKnow
+          type Entry = { label: string; icon: string; value: string }
+          const entries: Entry[] = []
+          if (ttk.crowds)        entries.push({ label: "Crowds",        icon: "👥", value: ttk.crowds })
+          if (ttk.difficulty)    entries.push({ label: "Difficulty",    icon: "🥾", value: ttk.difficulty })
+          if (ttk.safety)        entries.push({ label: "Safety",        icon: "⚠️", value: ttk.safety })
+          if (ttk.accessibility) entries.push({ label: "Accessibility", icon: "🚶", value: ttk.accessibility })
+          if (ttk.seasonal)      entries.push({ label: "Seasonal",      icon: "🌤️", value: ttk.seasonal })
+          if (entries.length === 0) return null
+          return (
+            <div id="things-to-know" className="section-anchor">
+              <p className="section-label">Things to Know</p>
+              <div className="ttk-list">
+                {entries.map(({ label, icon, value }) => (
+                  <div key={label} className="ttk-row">
+                    <div className="ttk-label">
+                      <span className="ttk-icon">{icon}</span>
+                      <span>{label}</span>
+                    </div>
+                    <div className="ttk-value">{value}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        })()}
+
         {/* What Makes This Place Special */}
           {location.content?.intro && (
             <div id="about" className="section-anchor">
@@ -199,12 +229,19 @@ export default async function LocationPage({
         </div>
 
         {/* Insider Tips */}
-        {location.tips.length > 0 && (
+        {(location.tips.length > 0 || (location.insights?.visitorTips?.length ?? 0) > 0) && (
           <div id="insider-tips" className="section-anchor">
             <p className="section-label">Insider Tips</p>
+            <p className="section-subtext">Based on real traveler experiences and commonly mentioned advice from multiple visitors.</p>
             <div className="tips-list">
+              {location.insights?.visitorTips?.map((tip, i) => (
+                <div key={`vt-${i}`} className="tip-item">
+                  <div className="tip-dot" />
+                  <span>{tip}</span>
+                </div>
+              ))}
               {location.tips.map((tip, i) => (
-                <div key={i} className="tip-item">
+                <div key={`t-${i}`} className="tip-item">
                   <div className="tip-dot" />
                   <span>{tip}</span>
                 </div>
@@ -212,6 +249,26 @@ export default async function LocationPage({
             </div>
           </div>
         )}
+
+        {/* FAQ */}
+        {location.insights?.faq && location.insights.faq.length > 0 && (
+          <div id="faq" className="section-anchor">
+            <p className="section-label">FAQ</p>
+            <p className="section-subtext">Common questions from travelers who&apos;ve visited this place.</p>
+            <div className="faq-list">
+              {location.insights.faq.map((item, i) => (
+                <details key={i} className="faq-item">
+                  <summary className="faq-question">
+                    <span>{item.question}</span>
+                    <span className="faq-chevron">›</span>
+                  </summary>
+                  <div className="faq-answer">{item.answer}</div>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Nearby Locations */}
         <NearbyLocations currentSlug={slug} />
 

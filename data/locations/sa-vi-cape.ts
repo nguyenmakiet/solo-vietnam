@@ -48,4 +48,32 @@ export const saViCape: Location = {
     travelTips:
       "Mũi Sa Vĩ pairs naturally with the rest of the Móng Cái experience: the border town has a lively Chinese-goods market, fresh seafood restaurants, and a distinct cross-border energy unlike anywhere else in Vietnam. Combine it with nearby Vĩnh Thực Island (home to a historic French-era lighthouse) for a fuller Quảng Ninh borderland trip. If you're doing a full northeast Vietnam loop, Mũi Sa Vĩ makes a logical starting or ending point before continuing south along the coast toward Hạ Long Bay.",
   },
+  insights: {
+    highlights: [
+      "Northernmost point of Vietnam's coastline and symbolic start of the country's S-shaped geography",
+      "Monument marking the beginning of Vietnam's extensive coastal region",
+      "Scenic coastal location offering views of northern Vietnam's seascape",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Use as a starting point to explore Vietnam's diverse coastline extending southward to Cambodia border",
+      "Combine with visits to nearby beaches and resorts in the northern coastal region",
+      "Consider the symbolic significance as Vietnam's geographic landmark rather than expecting extensive attractions",
+    ],
+    faq: [
+      { question: "What is special about this location?", answer: "It marks Vietnam's northernmost coastal point and the symbolic start of the country's distinctive S-shaped geography that extends to the Hà Tiên border with Cambodia." },
+      { question: "How much time should I spend here?", answer: "It is memorable as a quick visit destination. Combine with nearby beaches and resorts for a fuller coastal experience rather than spending extensive time at the monument alone." },
+      { question: "What attractions are nearby?", answer: "The location serves as a starting point for exploring northern Vietnam's diverse coastline, with various sea beaches, different sand types, and multiple resorts in the surrounding area." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate its symbolic significance as Vietnam's northernmost coastal point and geographic landmark",
+      negative: null,
+    },
+  },
 }

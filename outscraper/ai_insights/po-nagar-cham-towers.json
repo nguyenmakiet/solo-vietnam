@@ -1,0 +1,42 @@
+{
+  "slug": "po-nagar-cham-towers",
+  "google_rating": 4.5,
+  "google_review_count": 30877,
+  "insights": {
+    "highlights": [
+      "Ancient Cham towers built over 1,000 years ago without cement, remarkably well-preserved with intricate carvings",
+      "Hilltop location with stunning views of Cái River, city, and sea; excellent for photography",
+      "Blend of Hindu and Buddhist architecture reflecting Cham civilization's cultural heritage"
+    ],
+    "thingsToKnow": {
+      "crowds": "Tour groups arrive mid-morning (around 9-10 AM), making it crowded and noisy. Visit at 6-7:30 AM or late afternoon to avoid crowds",
+      "difficulty": "Involves climbing 190 steps; steps may be challenging for those with mobility issues. Site can be covered in 30 minutes to 1 hour at leisurely pace",
+      "safety": null,
+      "accessibility": "Free robes provided if shoulders and knees are exposed. Shoe removal required inside temples. Clean bathrooms available on-site",
+      "seasonal": null
+    },
+    "visitorTips": [
+      "Arrive at opening time (6 AM) or after 4 PM to experience peaceful atmosphere with fewer tourists and better light",
+      "Wear or bring long pants and covered shoulders; free robes provided if needed. Bring lunch to enjoy on the peaceful grounds",
+      "Walk from Nha Trang city center (2-3 km); use motorbike during peak season as cars face traffic and lane restrictions"
+    ],
+    "faq": [
+      {
+        "question": "What is the entrance fee and what does it include?",
+        "answer": "Entrance fee is 30,000 VND per person. Includes access to temple towers, gardens, sitting areas, bathrooms, and snack bars. Free robes available if needed"
+      },
+      {
+        "question": "What should I wear to visit Po Nagar Temple?",
+        "answer": "Shoulders and knees must be covered to enter the temples. Free robes provided if wearing shorts. Remove shoes before entering temple interiors"
+      },
+      {
+        "question": "When is the best time to visit to avoid crowds?",
+        "answer": "Visit early morning (6-7:30 AM) or late afternoon (after 4 PM). Tour groups typically arrive mid-morning around 9-10 AM, making it crowded and noisy"
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors consistently praise the ancient brick towers, well-preserved architecture, peaceful atmosphere, beautiful gardens, and clear views over the river and city. Reasonable entrance fee and helpful amenities appreciated",
+      "negative": "Crowded with tour groups during mid-morning hours, making it difficult to appreciate tranquility. Limited on-site information; QR code audio guide requires strong internet. Interior temple spaces less impressive than exteriors. English signage lacking"
+    }
+  }
+}

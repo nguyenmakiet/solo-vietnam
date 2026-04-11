@@ -44,4 +44,32 @@ export const hoaLuAncientCapital: Location = {
     travelTips:
       "Hoa Lư is the historical anchor of Ninh Bình - the context that explains why the karst landscape here was chosen as Vietnam's first capital rather than merely admired as scenery. The temples are not architecturally spectacular by Vietnamese standards, but the setting - enclosed by natural limestone walls, the same geography the kings used - gives them a power that more elaborate temple complexes lack. Allow 1.5–2 hours and pair with a Tràng An boat tour or Tam Cốc cycling for a complete Ninh Bình day.",
   },
+  insights: {
+    highlights: [
+      "Former 10th-century Vietnamese capital with temples dedicated to emperors Dinh Tien Hoang and Le Dai Hanh",
+      "Dramatic limestone mountains surrounding the site, offering scenic photography and natural fortress setting",
+      "Peaceful, less-crowded atmosphere ideal for quiet reflection and understanding Vietnamese history",
+    ],
+    thingsToKnow: {
+      crowds: "Generally not crowded, though busier during New Year celebrations and evenings when locals visit. Can experience short ticket queues (5 minutes) during peak times.",
+      difficulty: "Easy walking pace. Some visitors mention 50-500 steps to climb for views, but not mandatory. Site is spacious and free-flowing without feeling rushed.",
+      safety: null,
+      accessibility: "Spread across vast area; bicycle or motorbike rental recommended. Entry fee 20,000 VND per adult, 10,000 VND motorcycle parking. Bicycle rental 30,000-50,000 VND (negotiate to avoid scams). Free parking available if you bring own bike.",
+      seasonal: "Rainy days still offer stunning scenery. Evening visits feature illuminated pagodas creating atmospheric experience.",
+    },
+    visitorTips: [
+      "Hire local English-speaking guide via hotel concierge for deeper historical context and storytelling about emperors",
+      "Bring own bicycle to avoid rental scams; if renting, negotiate prices beforehand (50,000 VND standard, not 30,000)",
+      "Allow 2-3 hours for relaxed exploration; climb to emperor's tomb viewpoint (50m steps) for panoramic views",
+    ],
+    faq: [
+      { question: "Is bicycle rental worth it at Hoa Lu?", answer: "Not necessary if walking. Common scam: vendors charge 30,000-50,000 VND. Bring your own bike for free parking, or walk around spacious grounds at leisurely pace." },
+      { question: "How crowded is Hoa Lu Ancient Capital?", answer: "Generally peaceful and quiet compared to other tourist sites. Brief ticket queues (5 minutes) possible. Busier during New Year celebrations and evening hours when locals visit." },
+      { question: "What is the actual entry cost?", answer: "Entry 20,000 VND per adult. Motorcycle parking 10,000 VND. Motorbike tours with drivers charge 100,000 VND per person; expect requests for 50,000 VND tips afterward." },
+    ],
+    sentiment: {
+      positive: "Most visitors appreciate the peaceful atmosphere, historical significance, dramatic limestone scenery, and sense of stepping into Vietnam's imperial past. Many found it meaningful and worth visiting.",
+      negative: "Some felt underwhelmed compared to other pagodas in Vietnam; limited ancient structures visible. Bicycle rental and motorbike tour costs perceived as overpriced and tourist-targeted. Limited signage and context frustrated some visitors.",
+    },
+  },
 }

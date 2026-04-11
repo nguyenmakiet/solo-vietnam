@@ -1,0 +1,42 @@
+{
+  "slug": "ham-tien-beach",
+  "google_rating": 4.5,
+  "google_review_count": 285,
+  "insights": {
+    "highlights": [
+      "Long, wide sandy beach ideal for kitesurfing and water sports activities",
+      "Clean beach with freshwater shower facilities available at nearby cafes and resorts",
+      "Stunning sunset views and relaxed atmosphere with beachfront restaurants"
+    ],
+    "thingsToKnow": {
+      "crowds": "Moderately to very crowded, especially in evenings and on weekends. Many foreign tourists. Resort staff may ask non-guests to leave certain beach areas.",
+      "difficulty": "Rough waves and strong currents make swimming challenging; better for experienced swimmers and kitesurfers. Waves too extreme for children in some conditions.",
+      "safety": "Sewage pipe outlet visible on beach in some areas creates odor and sanitation concerns. Overall security is good.",
+      "accessibility": "Limited shade available; most shaded areas monopolized by resorts. Free public beach access but private resort sections restrict movement. Limited infrastructure (no loungers or changing cabins). Access via rare passages through cafes or hotels.",
+      "seasonal": "Morning visits offer calm, peaceful conditions. Early morning and evening are best times. Sea conditions vary seasonally with larger waves during certain periods."
+    },
+    "visitorTips": [
+      "Visit early morning for calmest water and peaceful atmosphere with fewer crowds",
+      "Bring cash for freshwater shower facilities at cafes (20,000-50,000 VND per person)",
+      "Wear sun protection; very little natural shade except near resort areas"
+    ],
+    "faq": [
+      {
+        "question": "Is this beach suitable for swimming?",
+        "answer": "Swimming is difficult due to rough waves and strong currents. Better for experienced swimmers. Not recommended for young children due to extreme wave conditions."
+      },
+      {
+        "question": "Are there facilities available on the beach?",
+        "answer": "No public loungers or changing cabins. Freshwater showers available at nearby cafes and resorts for 20,000-50,000 VND. Limited shade except in resort areas."
+      },
+      {
+        "question": "How crowded is the beach?",
+        "answer": "Moderately to very crowded, especially evenings and weekends. Many foreign tourists. Early morning visits are less crowded and more peaceful."
+      }
+    ],
+    "sentiment": {
+      "positive": "Travelers appreciate the clean sandy beach, kitesurfing opportunities, beachfront dining, and sunset views. Friendly staff and relaxed atmosphere praised.",
+      "negative": "Rough sea conditions unsuitable for swimming, lack of public facilities and shade, resort monopolization of beach areas, and sewage infrastructure concerns."
+    }
+  }
+}

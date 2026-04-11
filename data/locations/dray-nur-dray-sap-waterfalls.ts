@@ -50,4 +50,32 @@ export const drayNurDraySapWaterfalls: Location = {
     travelTips:
       "The twin falls are most rewarding when visited together rather than individually - the contrast between the scale of Dray Sap and the intimacy of Dray Nur gives the visit more dimension. The Central Highlands as a whole are undervisited relative to the coast, and Buôn Ma Thuột makes a useful base for combining the waterfalls with coffee culture (the city is the centre of Vietnamese coffee production), Ê Đê minority villages, and the elephant conservation work happening in the region. The falls themselves are genuinely impressive at peak flow - among the most powerful waterfalls accessible with minimal trekking in the southern half of Vietnam.",
   },
+  insights: {
+    highlights: [
+      "Double waterfall on Dak Lak-Dak Nong border with powerful water flow in rainy season",
+      "Swimming-friendly emerald water and picnic areas with affordable food and drinks available",
+      "Easy access from Buon Ma Thuot via QL14 or scenic rural roads DT683/DT684",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded on weekends and national holidays. Quieter during weekdays. Peak season (rainy season) brings more visitors.",
+      difficulty: "Steep descent to parking area with loose stones and earth. Access roads have potholes and challenging surfaces. Suspension bridge between waterfalls swings significantly.",
+      safety: "Road conditions poor with potholes; ride slowly. Be cautious of parasites in stagnant water. Staff provides first aid on-site.",
+      accessibility: "Paths around waterfall area are well cleared and easy to follow. Can walk between Dray Nur and Dray Sap via stone-hopping or bridges, but balance and sturdy shoes required.",
+      seasonal: "Rainy season (May-October) offers most spectacular water flow. Dry season has less water but still visitable. Water flow varies throughout the day, stronger during daytime.",
+    },
+    visitorTips: [
+      "Buy coffee at ticket counter before descending; waterfall prices higher and served half-full in personal cash transactions",
+      "Visit weekdays to avoid crowds; weekends and holidays extremely packed with families and group activities",
+      "Bring bug spray, sunscreen, sturdy shoes with good grip. Motorbike not recommended due to long trip and heavy container traffic",
+    ],
+    faq: [
+      { question: "What are the entrance fees?", answer: "Entrance ticket is 30,000-60,000 VND per person. Additional 80,000 VND required to see Dray Sap waterfall. Parking costs 10,000 VND." },
+      { question: "When is the best time to visit?", answer: "Rainy season (May-October) offers most impressive water flow. December is good for dry season visits. Visit weekdays to avoid crowds." },
+      { question: "How do I get there and what road conditions should I expect?", answer: "From Buon Ma Thuot (1 hour), take QL14 or scenic rural roads DT683/DT684. Roads have potholes and loose stones on descent. Drive slowly and carefully." },
+    ],
+    sentiment: {
+      positive: "Travelers praise the waterfall as impressive and powerful, especially during rainy season. Affordable amenities, good food, swimming opportunities, and picnic facilities are appreciated. Staff are helpful.",
+      negative: "Poor road conditions with potholes and safety hazards on descent caused injuries. Confusing dual pricing system for Dray Nur and Dray Sap. Litter issues and inappropriate activities (karaoke, BBQs) detract from experience. Water volume reduced by upstream hydroelectric plants.",
+    },
+  },
 }

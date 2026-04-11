@@ -44,4 +44,32 @@ export const vanLongNatureReserve: Location = {
     travelTips:
       "Vân Long is the best wildlife experience in Ninh Bình and one of the best in northern Vietnam. The Delacour's langur is a genuinely rare animal - there are more giant pandas in the world than Delacour's langurs - and seeing them in the wild at Vân Long is a privilege that few travellers to Vietnam take advantage of. The early morning timing is non-negotiable for langur sightings. Pair with Hoa Lư Ancient Capital in the afternoon - both are in the western part of Ninh Bình province and the combination covers the province's best wildlife and best history in a single day.",
   },
+  insights: {
+    highlights: [
+      "Bamboo boat rides through tranquil wetlands with limestone karst mountains and cave passages",
+      "Rare Delacour's langurs and diverse birdlife including kingfishers in pristine natural setting",
+      "Far quieter and less touristy alternative to Trang An and Tam Cốc boat tours nearby",
+    ],
+    thingsToKnow: {
+      crowds: "Very few tourists, often alone on boat or seeing only handful of other visitors",
+      difficulty: null,
+      safety: null,
+      accessibility: "Boat rides required to access reserve; cannot walk or use motorbike through area. Uncomfortable wooden plank seats with no shade cover in full sun exposure.",
+      seasonal: "Monkey sightings more likely in warmer months; December brings pink lotus flowers in bloom; cold weather drives monkeys into caves",
+    },
+    visitorTips: [
+      "Bring hat, sunscreen, and water for extended sun exposure on open water with no shade",
+      "Visit late afternoon for sunset views and to see birds returning to nests",
+      "Consider binoculars for better wildlife viewing; tipping boatmen is customary and appreciated",
+    ],
+    faq: [
+      { question: "How much does a boat tour cost?", answer: "Prices range from 100,000-200,000 VND per person depending on group size and current rates. Tipping is expected and customary." },
+      { question: "How long is the boat ride?", answer: "Tour duration typically ranges from 1 to 2 hours, with most experiences lasting around 1.5 hours through wetlands and cave passages." },
+      { question: "Will I see monkeys and wildlife?", answer: "Wildlife sightings are not guaranteed. Delacour's langurs and various bird species are present but visibility depends on season, weather, and luck. Success rate appears roughly 50/50." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as peaceful, serene, and authentic escape from crowded tourist sites; boatmen described as friendly and hardworking; stunning natural scenery with unique limestone formations",
+      negative: "One reviewer found boat seats uncomfortable wooden planks with inadequate sun protection; language barrier limits guide explanations; some rowers appeared disappointed by tip amounts; wildlife not always visible",
+    },
+  },
 }

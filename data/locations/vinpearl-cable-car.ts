@@ -44,4 +44,32 @@ export const vinpearlCableCar: Location = {
     travelTips:
       "The Vinpearl Cable Car is most worthwhile for travellers who specifically want the Vinpearl Land experience - families with children, or those who want a beach day on a private island. For travellers primarily interested in the cable car crossing itself, the ticket price (which bundles in the theme park entrance) is high relative to the 12-minute ride. The over-sea perspective is genuinely unlike any other cable car in Vietnam - the combination of bay, islands, and coastal city visible simultaneously is the defining view of Nha Trang from above.",
   },
+  insights: {
+    highlights: [
+      "3.3km cable car across Nha Trang Bay with 10-12 minute ride and panoramic sea views",
+      "Direct access to VinWonders theme park featuring water slides, zoo, Fantasy Park, and rides",
+      "Modern station with efficient queue management, closed cabins, and multilingual announcements",
+    ],
+    thingsToKnow: {
+      crowds: "Weekdays typically have minimal queues. Late evening/weekend returns from island have long waits. Arrive early during peak season.",
+      difficulty: null,
+      safety: "Cable car operates safely in winds up to level 7. All equipment meets international standards. Security checks inspect for restricted items (snacks, alcohol) on return trips.",
+      accessibility: "45-minute walk from city center to Ventura station. Different entrance for hotel guests and golf players. Shuttle service available to cable car station.",
+      seasonal: "Daytime visits offer better views of blue sea and white sand. Night rides show LED-lit cityscape but limited visibility of bay. Wind can slow cable car operation.",
+    },
+    visitorTips: [
+      "Visit during daytime for clearer views of Nha Trang Bay and surrounding landscape",
+      "Use cable car instead of speedboat for faster, more private access to island",
+      "Arrive early on weekday mornings to avoid queues, especially during tourism season",
+    ],
+    faq: [
+      { question: "How long does the cable car ride take?", answer: "The ride takes approximately 10-12 minutes to cross the 3.3km distance from mainland to Hòn Tre island." },
+      { question: "Are there long wait times for the cable car?", answer: "Weekdays typically have no lines. Weekends and evenings can have long waits. Arrive early to minimize queuing." },
+      { question: "Is the cable car safe for people afraid of heights?", answer: "Yes. Cabins are closed and well-ventilated. Multilingual announcements explain any delays. Cable car operates safely in strong winds." },
+    ],
+    sentiment: {
+      positive: "Travelers praise smooth operations, efficient queue management, stunning bay views, modern facilities, and as a highlight experience for families visiting Nha Trang",
+      negative: "Lack of information signage at station, confusing open/close schedules, security inspections feel invasive, and occasional operational disruptions",
+    },
+  },
 }

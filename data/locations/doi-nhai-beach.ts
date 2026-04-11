@@ -43,4 +43,32 @@ export const doiNhaiBeach: Location = {
     travelTips:
       "Đồi Nhái Beach is worth knowing about as part of a broader Phước Tỉnh area day trip rather than as a standalone destination requiring a dedicated journey. The combination of Phước Tỉnh fishing harbor at dawn, Đồi Nhái Beach for a morning swim, and the coastal drive back to Vũng Tàu or HCMC via Long Hải covers a section of Bà Rịa-Vũng Tàu coast that most visitors completely skip. If mày is interested in the less-developed end of the southern coast day-trip options from HCMC, this area - together with Phước Hải and Lộc An nearby - is the right zone to explore.",
   },
+  insights: {
+    highlights: [
+      "Wide sandy beach with extensive tidal flats ideal for exploring at low tide",
+      "Quiet, authentic local fishing village atmosphere away from tourist crowds",
+      "Excellent spot for kite surfing and water sports activities",
+    ],
+    thingsToKnow: {
+      crowds: "Far from tourist crowds; mostly frequented by locals, fishermen, and kite surfers",
+      difficulty: null,
+      safety: "Safe for swimming; mosquitoes can be problematic at night, especially for camping",
+      accessibility: "Road to beach is rainy and dirty; limited amenities and facilities available",
+      seasonal: "Beach appearance varies significantly between low and high tide; low tide reveals expansive flats",
+    },
+    visitorTips: [
+      "Visit an hour before lowest tide to maximize exploration of tidal flats and sea creatures",
+      "Bring insect repellent if staying overnight due to heavy mosquito activity at night",
+      "Go early morning to see fishermen and peaceful conditions; avoid littered areas",
+    ],
+    faq: [
+      { question: "What is the best time to visit Doi Nhai Beach?", answer: "Arrive an hour before low tide to explore extensive tidal flats. Early morning offers peaceful conditions and local fishing scenes." },
+      { question: "Is Doi Nhai Beach clean?", answer: "Beach regularly receives ocean debris including plastics and bottles. Cleanliness varies; local municipality maintenance is inconsistent." },
+      { question: "What activities are available at Doi Nhai Beach?", answer: "Kite surfing, fishing, swimming, exploring tidal flats, camping, and picnicking. Limited facilities compared to other Vung Tau beaches." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate the quiet, authentic local atmosphere, excellent low-tide exploration opportunities, and suitability for kite surfing and fishing",
+      negative: "Persistent complaints about ocean waste, plastic debris, poor road conditions, inconsistent beach cleaning, and mosquito problems at night",
+    },
+  },
 }

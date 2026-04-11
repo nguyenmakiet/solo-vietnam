@@ -46,4 +46,32 @@ export const baiMonBeach: Location = {
     travelTips:
       "For the sunrise experience, stay overnight in Đại Lãnh village and leave by motorbike at 4:30 AM - arrive at the trailhead before first light and descend to the beach in darkness to be in position as the horizon turns. The trail is safe with a torch. Đại Lãnh has several guesthouses and seafood restaurants that are cheap by any measure - the village itself is worth a half-day, with a long public beach and a fishing harbour. Mũi Điện and Bãi Môn work naturally together as a combined half-day stop on a Nha Trang to Quy Nhơn coastal motorbike route.",
   },
+  insights: {
+    highlights: [
+      "Golden sand beach beneath iconic Mũi Đại Lãnh Lighthouse with striking sunrise views",
+      "One of Vietnam's earliest sunrise locations with panoramic coastal vistas",
+      "Secluded, untouched beach with dramatic rock formations and minimal crowds",
+    ],
+    thingsToKnow: {
+      crowds: "Significantly less crowded than Nha Trang or Da Nang beaches",
+      difficulty: "Several hundred meters of sand walking required to reach beach; steep lighthouse climb in hot conditions",
+      safety: "Swimming not allowed; dangerous rip currents year-round; local residents warn against swimming",
+      accessibility: "Limited facilities and vendors; no shade on main beach; tree shade available at far left corner",
+      seasonal: "Rainy season reduces swimming opportunities; strong winds common",
+    },
+    visitorTips: [
+      "Arrive early morning for sunrise photography; bring umbrella, sunscreen, and plenty of water",
+      "Find shade and picnic spot in far left beach corner beneath trees",
+      "Consider viewing lighthouse from nearby cliff instead of paying entry if budget-conscious",
+    ],
+    faq: [
+      { question: "Can I swim at Bãi Môn?", answer: "No, swimming is not allowed due to dangerous rip currents year-round. Local residents also advise against swimming." },
+      { question: "What are the entrance fees?", answer: "Beach entrance costs 20,000-30,000 VND per person; parking 5,000-20,000 VND depending on vehicle type." },
+      { question: "What should I bring?", answer: "Bring umbrella, sunscreen, plenty of water, and snacks as few vendors available and no shade on main beach." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise pristine scenery, golden sand, clear waters, lighthouse views, and peaceful atmosphere ideal for photography",
+      negative: "Repeated complaints about garbage on beach, no swimming allowed despite paid entry, high fees, overcrowded parking, and poor lighthouse access",
+    },
+  },
 }

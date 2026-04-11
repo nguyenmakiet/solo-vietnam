@@ -50,4 +50,32 @@ export const minhDamMountain: Location = {
     travelTips:
       "Minh Đạm offers a version of wartime history that differs from the heavily visited Cu Chi Tunnels near HCMC - the site is smaller, quieter, and embedded in a natural landscape rather than a managed tourist complex. For travellers interested in the resistance movement beyond the standard HCMC circuit, the mountain provides a more contemplative experience of the same history. The coastal location means it combines naturally with the beaches of Long Hải and Hồ Tràm, which are among the closest decent beach options to HCMC and significantly less developed than Vũng Tàu.",
   },
+  insights: {
+    highlights: [
+      "360-degree summit views of Phước Hải sea and surrounding mountains after 1km hike",
+      "Historical significance as a war memorial site with caves and local heritage",
+      "Clean, well-maintained mountain roads with abundant shade trees and fresh air",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Beginner-friendly mountain road suitable for most visitors; some steep sections with winding forest trails",
+      safety: "Aggressive monkeys present—they steal food and threaten visitors. Carry stick for protection. Some trail sections poorly marked with outdated signage. Occasional litter",
+      accessibility: "Car access to partway; final section requires 1km hike on foot. Do not follow Google Maps pin—follow local signage instead",
+      seasonal: "Dawn visits recommended for sunrise viewing",
+    },
+    visitorTips: [
+      "Follow official Minh Đạm heritage site signs on main road, not Google Maps location pin which leads to resort",
+      "Bring a stick for monkey deterrent; keep food secured and avoid aggressive interaction with monkeys",
+      "Visit early morning for sunrise views and to avoid trail navigation difficulties in unclear conditions",
+    ],
+    faq: [
+      { question: "Can I drive to the mountain summit?", answer: "No. You can drive to the heritage site entrance but must hike approximately 1km on foot to reach the summit." },
+      { question: "Is it safe to visit due to monkeys?", answer: "Monkeys are present and aggressive toward food. Carry a stick for protection and secure all food and drinks to minimize encounters." },
+      { question: "Which route should I follow to avoid getting lost?", answer: "Follow official Minh Đạm heritage site signage on Vũng Tàu-Bình Châu street. Do not rely on Google Maps pin, which is inaccurate." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise natural beauty, historical value, scenic views, and suitable difficulty for new hikers",
+      negative: "Navigation confusion from incorrect Google Maps location, aggressive monkeys, poor trail signage in some areas, and limited conservation investment",
+    },
+  },
 }

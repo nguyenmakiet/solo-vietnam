@@ -44,4 +44,32 @@ export const benTreCoconutVillage: Location = {
     travelTips:
       "Bến Tre rewards a slower pace than most Vietnamese destinations - a full day of cycling and boating, followed by an overnight homestay, gives a more complete picture of delta life than a rushed half-day tour from Ho Chi Minh City. The combination of Cái Răng Floating Market in the morning (departing Cần Thơ at 5 AM) and an afternoon in Bến Tre makes a full and varied Mekong Delta day. For travellers with two days in the delta, spending the first night in Cần Thơ for the floating market and the second night in a Bến Tre homestay is the recommended itinerary.",
   },
+  insights: {
+    highlights: [
+      "Experience traditional sampan boat rides through narrow coconut-lined canals with local rowers",
+      "Visit local fruit orchards, honey producers, and coconut candy makers along the river",
+      "Wear Vietnamese hats, paddle your own boat briefly, and enjoy traditional folk music performances",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded tourist destination, especially peak hours. Small group tours handle crowds better than large ones",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Carry 10,000-20,000 VND cash for boat rower tips; explicitly requested despite tour packages covering boat hire",
+      "Verify food and drink prices before consuming; some vendors charge after serving without disclosing costs upfront",
+      "Book through reputable tour guides; tour quality varies significantly depending on operator and guide professionalism",
+    ],
+    faq: [
+      { question: "How much should I tip the boat rowers?", answer: "Expect to tip 10,000-20,000 VND per person to the rowers, regardless of whether your tour package covers the boat hire. Some guides suggest $1 USD per person." },
+      { question: "Will I have to pay extra for food and drinks during the tour?", answer: "Yes. Tropical fruits, coconut candy, honey tea, and ice cream are charged separately. Always ask prices before consuming to avoid surprises." },
+      { question: "How long are the boat rides?", answer: "Boat rides typically last 10-30 minutes through canals and along the river. Duration varies by tour operator and route chosen." },
+    ],
+    sentiment: {
+      positive: "Most visitors appreciate the authentic Mekong Delta experience, traditional boat rides, local fruit and crafts, and cultural performances. Friendly locals and scenic river views are frequently praised",
+      negative: "Aggressive tipping practices, commercialization, overcrowding, poor facility maintenance, vendors charging without disclosing prices, and inconsistent tour quality disappoint some travelers",
+    },
+  },
 }

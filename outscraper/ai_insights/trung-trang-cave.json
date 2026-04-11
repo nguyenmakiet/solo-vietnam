@@ -1,0 +1,42 @@
+{
+  "slug": "trung-trang-cave",
+  "google_rating": 4.4,
+  "google_review_count": 2164,
+  "insights": {
+    "highlights": [
+      "Well-lit cave with concrete paths and metal stairs, approximately 500 meters long with interesting rock formations",
+      "Combination ticket includes Cat Ba National Park entrance; free if you visit the park first",
+      "Tight passages and low ceilings create moderate physical challenge; bats visible on cave ceiling"
+    ],
+    "thingsToKnow": {
+      "crowds": "Can become crowded with tour groups moving in single file; less crowded when visiting independently by taxi",
+      "difficulty": "Short 15-30 minute walk with 100-140 stairs to entrance. Multiple low passages require crouching or squatting. Not suitable for very tall people (over 5'11\"), very overweight visitors, or claustrophobic individuals",
+      "safety": null,
+      "accessibility": "Concrete flooring and metal stairs throughout make it accessible for most. Not recommended for those with significant mobility issues due to stairs and narrow sections",
+      "seasonal": "Rain gear and waterproof shoes recommended during rainy season"
+    },
+    "visitorTips": [
+      "Visit independently by taxi to avoid crowds and spend 45 minutes to 1 hour exploring at your own pace",
+      "Wear sneakers or trainers rather than flip-flops; shorts suitable for warm months like April",
+      "Research cave history in advance; limited on-site information boards but legend of Trung Trang sisters adds cultural context"
+    ],
+    "faq": [
+      {
+        "question": "How long does it take to visit the cave?",
+        "answer": "15-30 minutes for the cave walk itself, plus 100-140 stairs to reach the entrance. Plan 45 minutes to 1 hour total if exploring at leisure"
+      },
+      {
+        "question": "What is the ticket price and what does it include?",
+        "answer": "120,000 VND includes both Trung Trang Cave and Cat Ba National Park entrance. If visiting national park first, cave entry is free. National park only costs 80,000 VND"
+      },
+      {
+        "question": "Is this cave suitable for all fitness levels?",
+        "answer": "Not ideal for those over 5'11\", very overweight, claustrophobic, or with mobility issues. Requires crouching, squatting, and navigating low passages and stairs"
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors appreciate the well-maintained cave with good lighting, reasonable length, and value when combined with national park ticket. Many note it is suitable for first-time cave visitors",
+      "negative": "Some experienced cave visitors find it underwhelming compared to other Vietnamese caves like Phong Nha or Ninh Binh. Evidence of tourist damage (writings on walls) noted; some consider it overrated for those with extensive cave experience"
+    }
+  }
+}

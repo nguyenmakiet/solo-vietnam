@@ -40,4 +40,32 @@ export const khauCocChaPass: Location = {
     travelTips:
       "Khau Cóc Chà is not a destination in itself but a landscape experience - the value is in the riding and the views rather than a specific point at the summit. It fits naturally into a southern Cao Bằng loop: Cao Bằng city → Nguyên Bình → Khau Cóc Chà Pass → Phia Oắc National Park → return via a different valley road. This loop takes a full day and covers the best of southern Cao Bằng in a single ride. For travellers who have done the Ha Giang Loop and are looking for a comparably dramatic but less-visited mountain road experience, Khau Cóc Chà is the right recommendation.",
   },
+  insights: {
+    highlights: [
+      "14-15 hairpin switchbacks carved into near-vertical cliffs with dramatic scenery throughout the drive",
+      "Scenic 20-30 minute hike to viewpoint reveals panoramic views of all pass curves from above",
+      "Loop route option: take longer northern route from Cao Bang near Chinese border, return via shorter Google Maps route",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Steep, winding mountain pass with loose gravel on road edges. Hike to viewpoint is moderately challenging with high steps and rocky terrain. Manual or semi-automatic bike recommended for the drive.",
+      safety: "Road conditions variable: sections under construction with mud, loose rocks, and potholes. Avoid driving in rain due to landslide risk. Some rockfalls reported. GPS may lag near Chinese border; follow main road instead. Several hikers reported falls on descent; proper hiking shoes essential.",
+      accessibility: "Free viewpoint access. Motorbike parking at top costs 10,000 dong. Steep steps with high treads may challenge those with shorter legs or mobility issues.",
+      seasonal: "Rainy conditions make road treacherous and increase landslide risk. Road repairs ongoing and may cause delays not shown on Google Maps.",
+    },
+    visitorTips: [
+      "Park at the small shop/stall at pass top (10,000 dong), follow red arrows across road to hike trailhead for viewpoint",
+      "Wear sturdy hiking shoes with good grip; final climb is steep and muddy sections are slippery",
+      "Bring water or purchase from vendors at top; hike takes 20-35 minutes depending on fitness and route taken",
+    ],
+    faq: [
+      { question: "How long does it take to drive the pass from Bao Lac?", answer: "Approximately 40 minutes from Bao Lac town. The pass is about 16 km from Bao Lac and 100 km from Cao Bang city." },
+      { question: "What is the condition of the road and is it safe for motorcycles?", answer: "Road is mostly well-paved with gravel sections and ongoing repairs. Loose gravel on edges is hazardous for bikes. Avoid rainy conditions due to landslide risk. Semi-automatic or manual bikes recommended." },
+      { question: "Is there a cost to visit the viewpoint and how do I get there?", answer: "Viewpoint is free. Park your motorbike at the shop/stall (10,000 dong fee), then follow red-painted arrows on the trail opposite the road. Hike takes 20-30 minutes." },
+    ],
+    sentiment: {
+      positive: "Overwhelming majority praise dramatic switchbacks, stunning panoramic views, and rewarding hike experience as must-see destination in northern Vietnam",
+      negative: "Road quality concerns: sections crumbling with potholes and rockfalls; ongoing construction delays; steep descent dangerous for inexperienced hikers; gravel hazardous for motorcyclists; challenging in wet conditions",
+    },
+  },
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "pa-sy-waterfall",
+  "google_rating": 4.3,
+  "google_review_count": 3987,
+  "insights": {
+    "highlights": [
+      "Natural waterfall surrounded by forest with seasonal flowers and fresh atmosphere",
+      "Easy descent via stairs to waterfall base with motorbike option and hanging bridge",
+      "Overnight glamping facilities and food service available on-site"
+    ],
+    "thingsToKnow": {
+      "crowds": "Peak crowds during lunchtime on weekdays and weekends with queues on stairs. Visit early morning or late afternoon for fewer visitors. Mid-September and weekdays recommended.",
+      "difficulty": "Moderate. Many steep steps required to descend to waterfall base. Tiring for those with limited fitness, though elderly visitors do manage it.",
+      "safety": "Road conditions poor with potholes and slipperiness when wet. Falling debris risk from landslides on adventurous trail. Wooden structures and bridges require careful footing. One report of rude staff behavior.",
+      "accessibility": "Stairs descent may be challenging for those with mobility issues. Motorbike riding option available as alternative to walking down.",
+      "seasonal": "Water too cold for swimming in cooler months. July very crowded. November-December heavy rains caused closure in past. Best visited mid-September through early December for weather."
+    },
+    "visitorTips": [
+      "Bring trash bags as litter is widespread; help keep area clean",
+      "Arrive early morning or weekday afternoon to avoid queues and crowds",
+      "Wear sturdy footwear with good grip for steep, slippery stairs and wet conditions"
+    ],
+    "faq": [
+      {
+        "question": "What is the entrance fee?",
+        "answer": "Entrance fee is 20,000 VND per person. Additional costs for motorbike descent or other activities."
+      },
+      {
+        "question": "Is the waterfall safe to swim in?",
+        "answer": "Water is cold year-round, discouraging swimming. Safe stairs provided to reach waterfall, but watch footing on steep steps."
+      },
+      {
+        "question": "When is the best time to visit?",
+        "answer": "Visit weekdays in mid-September through early December. Arrive early morning or afternoon to avoid midday crowds and queues."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors appreciate the natural waterfall, forest setting, and seasonal flowers. Staff helpfulness and overnight glamping options praised.",
+      "negative": "Widespread litter and poor waste management. Steep stairs tiring for some. Road conditions poor with potholes. Water too cold for swimming. Facility maintenance issues with rotting wooden structures."
+    }
+  }
+}

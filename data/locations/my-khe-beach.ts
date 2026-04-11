@@ -40,4 +40,32 @@ export const myKheBeach: Location = {
     travelTips:
       "Mỹ Khê is the most accessible beach in central Vietnam - less remote than An Bàng in Hội An, less crowded than Phú Quốc's main beaches in peak season, and with better infrastructure than most alternatives. It works equally well as a half-day beach stop for travellers based in Đà Nẵng city or as the primary reason to visit. The combination of Mỹ Khê in the morning, Marble Mountains in the afternoon, and Ba Nà Hills or the Dragon Bridge at night is the standard Đà Nẵng day itinerary - covering the city's three most distinct attractions in a single day.",
   },
+  insights: {
+    highlights: [
+      "Long stretch of fine white sand, very soft and clean throughout",
+      "Well-maintained boardwalk with restaurants, cafés, and beach facilities nearby",
+      "Popular for surfing during suitable seasons with gentle to moderate waves",
+    ],
+    thingsToKnow: {
+      crowds: "Morning is peaceful and quiet; becomes crowded with vendors by evening. December-January are quieter months. Swimming area is restricted and can feel crowded due to lifeguard safety measures.",
+      difficulty: null,
+      safety: "Strong undertow and sea currents limit safe swimming areas. Lifeguards restrict swimming to designated zones. Security guards monitor swimmers. Safe shallow water in some areas.",
+      accessibility: "Free beach access. Beach chairs available for rent (40,000 VND). Public toilets, changing rooms, and foot washers available. Flat boardwalk good for walking.",
+      seasonal: "December-January: cooler weather, good water temperature, calmer conditions. Winter months bring stronger waves and rougher seas. October: cloudy weather possible.",
+    },
+    visitorTips: [
+      "Visit early morning for peaceful atmosphere and avoid evening crowds and aggressive vendors",
+      "Stick to designated swimming areas marked by lifeguards; strong currents make unrestricted swimming dangerous",
+      "Wear shoes or use foot washers as fine sand is difficult to remove from skin and clothes",
+    ],
+    faq: [
+      { question: "Is it safe to swim at My Khe Beach?", answer: "Swimming is restricted to designated lifeguard-supervised areas due to strong undertow and currents. Follow lifeguard instructions. Shallow areas near shore are generally safe for wading." },
+      { question: "When is the best time to visit for swimming versus surfing?", answer: "December-January offers calm conditions ideal for swimming. Waves are stronger during winter months, better for surfing. Check conditions before visiting." },
+      { question: "How crowded does the beach get?", answer: "Early morning is peaceful and empty. Evening (sunset time) becomes crowded with tourists and vendors. December-January are quieter months overall than peak seasons." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised for soft sand, cleanliness, boardwalk amenities, and peaceful mornings. Excellent for walking, relaxation, and water sports.",
+      negative: "Strong currents and undertow restrict swimming. Some sections have litter. Evening crowds and persistent vendors can be overwhelming. Water clarity varies.",
+    },
+  },
 }

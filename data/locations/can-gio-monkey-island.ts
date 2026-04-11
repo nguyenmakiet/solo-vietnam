@@ -50,4 +50,32 @@ export const canGioMonkeyIsland: Location = {
     travelTips:
       "Cần Giờ Monkey Island is the right choice for HCMC day trips when mày wants something genuinely different from the city rather than another war museum or street food tour. The mangrove biosphere reserve context - the scale of the reforestation, the waterway ecosystem, the crocodile population - gives the visit more depth than the monkeys alone. The monkeys are entertaining and the boat journey is scenic, but the most interesting thing about Cần Giờ is actually the ecological recovery story: what was a chemically defoliated landscape in the 1970s is now a functioning biosphere reserve with monitor lizards, crocodiles, and a recovering mangrove ecosystem. The UNESCO designation is earned rather than honorary.",
   },
+  insights: {
+    highlights: [
+      "UNESCO-listed mangrove forest with 1-1.5 km walking trails and wooden boardwalks through swamps",
+      "Large population of wild macaques roaming freely; optional crocodile feeding experience available",
+      "Rung Sac War Base with NVA guerilla camp replicas and Vietnam War history exhibits",
+    ],
+    thingsToKnow: {
+      crowds: "Generally quiet on weekdays; can be busy with tour groups on weekends",
+      difficulty: "Flat, easy terrain with wooden boardwalks; some rickety bridges require careful footing. Hot weather; electric cart recommended for 1km gate-to-site transfer",
+      safety: "Monkeys are aggressive scavengers; they steal glasses, hats, phones, food, and scarves. Brown long-tailed monkeys more problematic than yellow short-tailed ones. Keep all belongings secured in bags/pockets. Stick to paths; do not feed or provoke monkeys",
+      accessibility: "Basic facilities with public toilets along walking route. Restaurant on-site but sometimes closed. Museum closed during some visits. Electric cart available for those unable to walk",
+      seasonal: "Avoid rainy season; extreme heat common; mosquitoes active at sunset; tidal levels affect motorboat availability",
+    },
+    visitorTips: [
+      "Bring abundant water, hat, sunscreen, and personal fan; leave glasses/phones/food in vehicle or secured bag",
+      "Visit on weekdays for fewer crowds; plan 1-3 hours depending on boat tour or full forest walk",
+      "Motorboat tour costs 600k-800k VND per boat (up to 6 people, round-trip); entrance 35k-70k VND depending on nationality",
+    ],
+    faq: [
+      { question: "Will monkeys steal my glasses and belongings?", answer: "Yes, monkeys frequently steal glasses, hats, phones, and food. Keep all items secured in closed bags or pockets. Rangers can sometimes retrieve stolen items." },
+      { question: "How long does it take to visit from Ho Chi Minh City?", answer: "Approximately 1-2 hours driving, plus ferry. Total trip including visit: 2.5-4 hours from HCMC. Public buses available but scooter/car recommended." },
+      { question: "What is the best way to avoid monkey encounters?", answer: "Carry no food, drinks, or exposed items. Keep glasses on and held firmly. Don't eat in front of monkeys. Follow ranger instructions. Do not strike monkeys if approached; remain calm and they typically just smell and inspect." },
+    ],
+    sentiment: {
+      positive: "Visitors praise the unique mangrove forest, memorable monkey encounters, Vietnam War history, and peaceful nature escape from Ho Chi Minh City. Family-friendly with good value and helpful staff.",
+      negative: "Basic facility maintenance, limited English signage, crowded boats, high foreigner pricing, some monkeys appear sick, litter management issues, and poor beach condition nearby",
+    },
+  },
 }

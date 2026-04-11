@@ -46,4 +46,32 @@ export const phuocHaiFishingVillage: Location = {
     travelTips:
       "Phước Hải sits at the right point on the spectrum between Vũng Tàu's developed resort beaches and Phước Tỉnh's purely industrial fishing port - it has both beach access and fishing community character without being exclusively either. If mày is doing the Bà Rịa coastal circuit from HCMC, the sequence of Phước Hải morning market, beach swim, and Phước Tỉnh harbor visit is a natural full-day structure. The coastal road between Vũng Tàu and Phước Hải through Long Hải passes some of the least-developed coastline in the province and is worth the detour from the inland highway.",
   },
+  insights: {
+    highlights: [
+      "One of the oldest fishing villages in Bà Rịa Vũng Tàu province, established around 1725-1730",
+      "Fresh seafood sold directly from boats at waterfront, cooked immediately at riverside restaurants",
+      "Exceptionally fresh squid and seafood available in the morning from recent catches",
+    ],
+    thingsToKnow: {
+      crowds: "Can experience traffic congestion; parking outside Võ Thị Sáu road and walking is recommended",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Midtrip timing offers better prices than peak times",
+    },
+    visitorTips: [
+      "Negotiate prices firmly when buying seafood directly from boats; aim for 30% discount to avoid overcharging",
+      "Visit in the morning to find the freshest catches; afternoon heat can be intense",
+      "Park outside Võ Thị Sáu road and walk to avoid traffic; easier movement through the village",
+    ],
+    faq: [
+      { question: "What is the best time to visit for fresh seafood?", answer: "Visit in the morning when boats return with fresh catches. Squid and other seafood are freshest immediately after landing." },
+      { question: "How should I handle pricing when buying directly from fishermen?", answer: "Negotiate firmly and aim for at least 30% discount to avoid being overcharged. Fresh seafood quality makes negotiation worthwhile." },
+      { question: "Where should I park when visiting the fishing village?", answer: "Park outside Võ Thị Sáu road area and walk into the village to easily navigate and avoid traffic congestion." },
+    ],
+    sentiment: {
+      positive: "Travelers praise exceptionally fresh seafood at reasonable prices, friendly service, and authentic fishing village experience",
+      negative: "Sunset views are not recommended; afternoon heat can be intense; potential overcharging when buying directly from fishermen",
+    },
+  },
 }

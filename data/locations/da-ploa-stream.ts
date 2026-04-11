@@ -49,4 +49,32 @@ export const daPloaStream: Location = {
     travelTips:
       "Đa Ploa is the kind of Stream that rewards the traveler who has already done Pongour, Datanla, and the other Đà Lạt circuit falls and wants something that requires more than a 10-minute walk from a car park. The remoteness is genuine - this is not performative off-the-beaten-path tourism. If mày is routing through southern Lâm Đồng between HCMC and Đà Lạt by motorbike, Đạ Huoai district and Đa Ploa make a logical and rewarding overnight stop that almost nobody on the standard tourist circuit makes.",
   },
+  insights: {
+    highlights: [
+      "Stream with clear, cool water suitable for swimming and trekking deeper into forest areas",
+      "Camping site with basic amenities including convenience store, food stall, and WiFi available",
+      "Scenic mountain and forest setting with pristine, untouched natural atmosphere",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Road access is rough and challenging for motorcycles; better suited for cars. Requires walking down to stream from parking area.",
+      safety: "No lifeguards on-site. Stream has deep sections requiring adult supervision for children. Caution advised when camping near stream, especially if intoxicated.",
+      accessibility: "Rough road conditions; vehicle access recommended over motorcycle. Walking required from parking to stream.",
+      seasonal: "Best visited December to April. September brings heavy rain causing strong water flow; water becomes clear after rain subsides.",
+    },
+    visitorTips: [
+      "Bring your own chair for stream area as there are no tables or formal seating available",
+      "Pay entrance fee (50k-100k per person) covers trash collection and facilities; actively manage your own waste",
+      "Bring cash as the site operates on cash-only basis for most transactions",
+    ],
+    faq: [
+      { question: "Is it safe for children at this stream?", answer: "Some sections are quite deep. Children require constant adult supervision. Caution recommended when camping near water." },
+      { question: "What is the best time to visit?", answer: "December to April offers optimal conditions. September has heavy rain and strong water flow. Visit after rain clears for clearest water." },
+      { question: "What facilities and services are available?", answer: "Convenience store, food stall, WiFi, and basic camping amenities available. No lifeguards on-site. Parking available with nominal motorcycle parking fee." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the pristine natural scenery, clear stream water, camping experience, and welcoming local owners. Recommended for families and those seeking nature escape.",
+      negative: "No lifeguards present. Road access difficult. Some concern about waste management and irresponsible visitors not cleaning up after themselves.",
+    },
+  },
 }

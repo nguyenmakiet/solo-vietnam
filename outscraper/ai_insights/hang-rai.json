@@ -1,0 +1,42 @@
+{
+  "slug": "hang-rai",
+  "google_rating": 4.4,
+  "google_review_count": 1245,
+  "insights": {
+    "highlights": [
+      "Ancient coral reef formations and massive rock formations resembling Easter Island moai statues",
+      "Rescued and cared-for turtles you can feed; opportunity to interact with local wildlife",
+      "Scenic sunset and sunrise views; excellent photo locations across varied rock formations"
+    ],
+    "thingsToKnow": {
+      "crowds": "More developed and crowded than nearby Stone Park; visit early morning or late afternoon to avoid peak sun and crowds",
+      "difficulty": "34 climbing steps to viewpoint; slippery rocks on coastal trails; sharp rocks present hazard. Limited accessibility for elderly and disabled visitors",
+      "safety": "Strong winds in February; intense sun exposure requires SPF protection and water; stay careful navigating between rocks, ladders, and bridges",
+      "accessibility": "Buggy transport available for main climb (5-minute winding road); toilets and refreshment shops on-site; toilets reported dirty",
+      "seasonal": "Best visited during windy season; intense midday sun; avoid peak heat by coming early morning or afternoon"
+    },
+    "visitorTips": [
+      "Bring SPF sunscreen, water, and sturdy footwear; sun here is extremely intense throughout the day",
+      "Arrive early morning or late afternoon to avoid peak sun and minimize crowds; sunset views highly recommended",
+      "Watch for sharp rocks and slippery surfaces on trails; exercise caution near coastal edges and rock formations"
+    ],
+    "faq": [
+      {
+        "question": "What is the entrance fee and transport arrangement?",
+        "answer": "Entrance fee is 120,000 VND for two people. Golf cart or buggy transport takes you up winding road in 5 minutes; 34 steps to summit viewpoint available."
+      },
+      {
+        "question": "Is this location accessible for elderly or disabled visitors?",
+        "answer": "Limited accessibility. While buggy transport assists the climb, the 34 steps and rocky terrain create challenges for elderly and disabled visitors."
+      },
+      {
+        "question": "What wildlife or attractions are here besides rock formations?",
+        "answer": "Rescued and cared-for turtles available to feed and observe. Ancient coral reef visible on beach. Various rock formations and scenic photo locations throughout."
+      }
+    ],
+    "sentiment": {
+      "positive": "Overwhelming majority find it a worthwhile hidden gem with unique rock formations, scenic views, and natural beauty; sunset and sunrise highly praised",
+      "negative": "Some visitors find limited activities beyond photography and sightseeing; intense sun exposure and sharp rocks create safety concerns; some find it underwhelming compared to nearby attractions"
+    }
+  }
+}

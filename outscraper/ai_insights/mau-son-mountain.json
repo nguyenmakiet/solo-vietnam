@@ -1,0 +1,42 @@
+{
+  "slug": "mau-son-mountain",
+  "google_rating": 4.4,
+  "google_review_count": 416,
+  "insights": {
+    "highlights": [
+      "Stunning mountain peak views with cool year-round climate in Lạng Sơn province",
+      "Frost and snow in winter, blossoming peach and plum flowers in spring",
+      "French colonial architecture ruins from colonial era retreat resort"
+    ],
+    "thingsToKnow": {
+      "crowds": "Road to mountain is narrow and crowded; heavy tourist traffic on folk holidays",
+      "difficulty": "15km uphill route is very steep and challenging with continuous sharp curves. Final 500m to rest house is extremely steep and dangerous on wet weather, especially for motorcycles. Trekking section includes dangerous trails and streams.",
+      "safety": "Location near Chinese border; ensure correct destination (search 'Khu du lich Mau Son' not this Google Map pin). Road under reconstruction with heavy truck traffic and poor conditions.",
+      "accessibility": "Accessible by motorcycle preferred due to narrow road. Underdeveloped facilities with only one rest house at peak; limited dining and services.",
+      "seasonal": "Winter (December) freezing with possible snow and frost. Spring features peach and plum blossoms. Monsoon season makes trails dangerous. Post-Lunar New Year offers cloud-watching conditions. Thick fog can obscure views."
+    },
+    "visitorTips": [
+      "Start from Lạng Sơn town; allow 2+ hours for 35km journey via Route 235 with 8km difficult trail section",
+      "Go by motorcycle for better handling of narrow, curvy roads. Avoid wet weather for safety on steep sections",
+      "Visit in spring for flower blooms or winter for frost/snow, but check weather; fog can completely obstruct views"
+    ],
+    "faq": [
+      {
+        "question": "Which location should I navigate to on Google Maps?",
+        "answer": "Search for 'Khu du lich Mau Son' or 'Mau Son Dinh', not the generic Mau Son pin, which leads to a remote border area dead-end."
+      },
+      {
+        "question": "What is the current condition of facilities at the peak?",
+        "answer": "Only one rest house operates at the peak. Hotels and restaurants from French colonial era are abandoned and deteriorated with minimal services available."
+      },
+      {
+        "question": "When is the best time to visit for clear views?",
+        "answer": "Winter for frost/snow and post-Lunar New Year for cloud-watching. Spring offers flower blooms. Avoid visiting during thick fog and monsoon season when trails are dangerous."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors praise stunning views, cool climate, and beautiful natural scenery with colonial architecture. Cloud-watching and seasonal flowers attract photographers.",
+      "negative": "Poor road conditions, minimal facilities, confusing Google Maps location causing long detours, thick fog obscuring views, and abandoned infrastructure disappointing visitors seeking developed resort amenities."
+    }
+  }
+}

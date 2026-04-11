@@ -1,0 +1,42 @@
+{
+  "slug": "nho-que-river",
+  "google_rating": 4.8,
+  "google_review_count": 903,
+  "insights": {
+    "highlights": [
+      "Turquoise waters winding through limestone mountains and UNESCO-recognized Dong Van Karst Plateau Geopark",
+      "Boat tours navigate narrow passages with views of Tu Sản Canyon and towering cliffs",
+      "Popular photography spot with Ma Pi Leng Pass offering panoramic river vistas"
+    ],
+    "thingsToKnow": {
+      "crowds": "Very popular with Vietnamese visitors who photograph at specific spots; fewer foreign tourists",
+      "difficulty": "Road access is rough and under construction; hiking 2km+ to boat stops is tiring; motorbike descent is dangerous requiring excellent riding skills",
+      "safety": "Evening travel through Hà Giang roads is dangerous; stay overnight in Đông Văn rather than attempting evening travel to Mèo Vạc",
+      "accessibility": "Motorbike (150,000 VND) or 2km+ hiking trek required to reach boat stops; rocky path challenging in wet conditions",
+      "seasonal": null
+    },
+    "visitorTips": [
+      "Book boat tours through apps like Joytime for seamless experience; standard tour costs 120,000 VND per person with 12+ person minimum",
+      "Hire traditional clothing for photos at popular spots; plan early morning visits for misty atmospheric conditions",
+      "Base yourself in Đông Văn town rather than Mèo Vạc to avoid dangerous evening road travel"
+    ],
+    "faq": [
+      {
+        "question": "How do I reach the boat landing?",
+        "answer": "Hire xe om motorbike (150,000 VND) or ride your own if experienced, or hike 2km+ from parking area. Road is rough and under construction."
+      },
+      {
+        "question": "How much does a boat tour cost?",
+        "answer": "Standard shared tour is 120,000 VND per person with 12+ person minimum. Private boat is 1,200,000 VND. Tours last 1-1.5 hours."
+      },
+      {
+        "question": "Is it safe to visit at night?",
+        "answer": "No. Evening travel through Hà Giang roads is dangerous. Stay overnight in Đông Văn town for safer access and better experience."
+      }
+    ],
+    "sentiment": {
+      "positive": "Overwhelmingly praised as stunning natural wonder; visitors describe turquoise waters, dramatic canyon views, and unique landscape experience as must-see attraction",
+      "negative": "Some visitors wished boat tours extended further; rocky trek to boats challenging in wet weather; road construction and access difficulties noted"
+    }
+  }
+}

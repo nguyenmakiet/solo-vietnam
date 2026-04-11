@@ -44,4 +44,32 @@ export const haLongBay: Location = {
     travelTips:
       "The single most important decision for Ha Long Bay is which boat you book. The bay's scenery is fixed - the karsts don't change - but the experience on board, the food, the crew, and the itinerary pacing vary enormously. Read recent reviews on TripAdvisor and compare inclusions carefully: some budget cruises charge extra for kayaking and cooking classes that mid-range boats include as standard. If your priority is fewer people and better beaches, consider Bái Tử Long Bay instead - the landscape is identical, the boats are slightly pricier, and the experience is meaningfully less crowded.",
   },
+  insights: {
+    highlights: [
+      "Over 1,600 limestone islands and karsts rising from emerald waters with dramatic natural scenery",
+      "Multiple activities including cave exploration, kayaking, swimming, and bamboo boat tours",
+      "UNESCO World Heritage Site located 2-3 hours from Hanoi with various cruise options",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded with hundreds of tourist boats and visitors, especially at popular caves and beaches. Day trips encounter peak crowds; overnight cruises offer less congestion and better experiences.",
+      difficulty: null,
+      safety: null,
+      accessibility: "Ti Top mountain hiking available but requires ability. Stairs to reach Sung Sot Cave viewpoint. Bring reusable water flask as plastic is not allowed.",
+      seasonal: "Weather dependent - best with clear blue sky and sunshine; not special when weather is poor",
+    },
+    visitorTips: [
+      "Book 2-3 day overnight cruises instead of day trips to avoid peak crowds and explore remote areas",
+      "Choose cruises carefully based on your interests as different routes and boat types vary significantly",
+      "Visit Sung Sot Cave and Ti Top Island; consider contacting cruises via email for better pricing",
+    ],
+    faq: [
+      { question: "Is a day trip or overnight cruise better?", answer: "Overnight cruises (minimum 2 nights) are recommended. Day trips only show crowded popular spots; overnight trips access remote locations with better views and fewer tourists." },
+      { question: "How far is Ha Long Bay from Hanoi and what's included in cruises?", answer: "Located 2-3 hours from Hanoi. Cruises include pickup, meals (buffet lunch, dinner, breakfast), cave visits, kayaking, swimming, and entertainment. Drinks may be extra." },
+      { question: "What are the main attractions and activities?", answer: "Explore Sung Sot Cave, hike Ti Top Island for views, kayak through lagoons, visit floating villages, swim, and enjoy pearl farm tours. Different cruise routes visit different spots." },
+    ],
+    sentiment: {
+      positive: "Travelers consistently praise Ha Long Bay's stunning natural beauty, limestone karsts, and memorable experiences. Overnight cruises with attentive staff and quality meals highly recommended.",
+      negative: "Extremely overcrowded with excessive tourist boats and long lines at attractions. Some feel it has become overly commercialized and touristy, losing authenticity despite natural beauty.",
+    },
+  },
 }

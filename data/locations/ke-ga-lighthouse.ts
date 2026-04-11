@@ -49,4 +49,32 @@ export const keGaLighthouse: Location = {
     travelTips:
       "Kê Gà works best as part of a broader Bình Thuận coastal itinerary - the lighthouse visit takes 1-2 hours and the mainland beach at Tân Thành is pleasant for swimming afterward. The Bình Thuận coast between Kê Gà and Mũi Né has several underdeveloped beaches and fishing villages that reward slow travel by motorbike along the coastal road. For travellers based in Mũi Né who have exhausted the standard sand dunes and fishing village circuit, Kê Gà provides a half-day excursion with a different character - colonial history and a boat trip rather than beach activities.",
   },
+  insights: {
+    highlights: [
+      "19th-century French lighthouse on a quiet island accessible by short boat ride from Phan Thiet",
+      "Pristine white sand beaches and crystal-clear turquoise water with minimal crowds",
+      "Stunning sunset views over the bay with fishing boats; excellent for photography",
+    ],
+    thingsToKnow: {
+      crowds: "Very few visitors compared to Mui Ne; often feels isolated and peaceful even during peak hours",
+      difficulty: null,
+      safety: "Lighthouse interior closed to public for safety reasons; visitors cannot climb to the top",
+      accessibility: "Located on an island 5 minutes by boat from shore; requires rental boat to access. Some climbing on stone beach required",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Take a boat late afternoon to enjoy sunset views from the shore or island before returning",
+      "Negotiate boat prices in advance; rates range 50,000-100,000 dong per person for round trip",
+      "Avoid eating at restaurants near lighthouse; overpriced for tourists with poor quality food",
+    ],
+    faq: [
+      { question: "Can I climb inside the lighthouse?", answer: "No, the lighthouse interior is closed to visitors for safety reasons. You can view and photograph it from outside only" },
+      { question: "How much does a boat ride cost?", answer: "Boat costs range from 50,000 to 100,000 VND per person for a round trip. Negotiate with fishermen at the dock before boarding" },
+      { question: "How long does the boat journey take?", answer: "The boat ride to the island takes approximately 4-5 minutes. Plan one hour at the island for exploration and photos" },
+    ],
+    sentiment: {
+      positive: "Majority of travelers praise the isolated location, pristine beaches, historic lighthouse, stunning sunset views, and peaceful atmosphere away from mainstream tourism",
+      negative: "Some reviewers found boat prices high, complained about litter from tourists and fishing waste on beaches, and felt the closed lighthouse limited the experience",
+    },
+  },
 }

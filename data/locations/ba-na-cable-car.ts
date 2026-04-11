@@ -44,4 +44,32 @@ export const baNaCableCar: Location = {
     travelTips:
       "The cable car is simultaneously the transport to the summit and one of the main experiences of Bà Nà Hills - unlike most cable cars which are purely functional, this one is worth experiencing for the cloud transition alone. The ride down in the late afternoon, when the light turns golden and the cloud layer below glows, is often more scenic than the morning ascent. Queues for the return cable car can be long in the late afternoon as tour groups leave simultaneously - aim to descend before 4 PM or after 6 PM to avoid the worst of the wait.",
   },
+  insights: {
+    highlights: [
+      "World's longest cable car at 5.8km with 20-25 minute ride offering forest and waterfall views",
+      "Golden Bridge and French Village at the summit with multiple attractions and dining options",
+      "Modern, well-maintained cable car system with efficient boarding and clear safety measures",
+    ],
+    thingsToKnow: {
+      crowds: "Tour groups arrive by noon making movement and photography difficult. Weekday visits have minimal queues. Arrive by 9am for best experience.",
+      difficulty: null,
+      safety: "Cable car is very safe and stable. Lost belongings reported with poor staff cooperation on CCTV access. High winds can cause shaking during rides.",
+      accessibility: null,
+      seasonal: "Weather is unpredictable with frequent fog at summit reducing visibility. Cold temperatures at elevation. Rain possible with leaking cabin issues reported.",
+    },
+    visitorTips: [
+      "Book tickets in advance via Klook or Viator for 10% discounts. Regular ticket price 900,000 VND adults, 750,000 VND children.",
+      "Collect and study the map before arrival. Signage and navigation are unclear. Morning queuing can be chaotic.",
+      "Plan full day visit covering cable car, Golden Bridge, French Village, and theme park. Avoid silver pass upsell—regular ticket allows all station transfers.",
+    ],
+    faq: [
+      { question: "What is the best time to visit to avoid crowds?", answer: "Arrive by 9am and leave by 1pm. Visit on weekdays to avoid tour groups. Afternoon visits after noon experience significant congestion." },
+      { question: "How long is the cable car ride and what should I expect?", answer: "Ride takes 20-25 minutes one way uphill through forests and waterfalls. Cable car may shake in windy conditions. May require transfer at intermediate station." },
+      { question: "What are the operating hours and should I book in advance?", answer: "Day route 8am-5pm, night route 3pm-10pm. Book tickets in advance via Klook or Viator for discounts. Avoid local vendors who charge higher prices." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise the unique cable car experience, stunning views, efficient system, and engineering. Well-organized with helpful staff and spacious comfortable cabins.",
+      negative: "Very expensive for Vietnam. Poor customer service reported regarding lost items and closed attractions. Weather fog severely impacts experience. Alpine coaster frequently closed without notice.",
+    },
+  },
 }

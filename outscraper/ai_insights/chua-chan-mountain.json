@@ -1,0 +1,42 @@
+{
+  "slug": "chua-chan-mountain",
+  "google_rating": 4.6,
+  "google_review_count": 844,
+  "insights": {
+    "highlights": [
+      "Second highest mountain in southern Vietnam with less crowded peak than Núi Bà Đen",
+      "Two route options: cable car to pagoda with short hike, or 3-4 hour power pole trail",
+      "Popular overnight camping spot with sunrise and sunset views from the summit"
+    ],
+    "thingsToKnow": {
+      "crowds": "Less crowded than Black Virgin Mountain (Núi Bà Đen), popular with Vietnamese campers on weekends",
+      "difficulty": "Moderate. Cable car route takes 1 hour from mid-mountain to peak. Power pole trail takes 2-4 hours with some steep sections but well-marked. Rocky terrain is manageable with proper trails.",
+      "safety": "Military base ruins exist at summit. Avoid entering military post area; go around it via small valley. Military personnel at site can assist if needed. No reported safety concerns otherwise.",
+      "accessibility": "Accessible without vehicles from Saigon: bus to Long Khanh City, van via Kim Manh Hung bus company to Xuon Loc intersection, then taxi to entrance. Cable car available during daytime.",
+      "seasonal": "High temperature without shade on exposed sections. Night hiking recommended to avoid daytime heat. Bring sunscreen. Cool at camping elevation with tall trees providing coverage."
+    },
+    "visitorTips": [
+      "Bring all supplies including water, food, tent, and camping gear; no shops exist at summit",
+      "Follow electricity cable/power poles as navigation markers; bring flashlight for night hikes",
+      "Pack out all trash to prevent environmental degradation like other popular mountain sites"
+    ],
+    "faq": [
+      {
+        "question": "How long does it take to reach the summit?",
+        "answer": "Cable car to mid-mountain then 45 minutes to 1 hour hiking. Full power pole route takes 2-4 hours depending on fitness level and starting point."
+      },
+      {
+        "question": "Can I camp overnight at the top?",
+        "answer": "Yes. Comfortable camping spot exists with tall trees for coverage. You must bring your own tent, sleeping gear, and all food/water. No facilities at summit."
+      },
+      {
+        "question": "What should I know about the military presence?",
+        "answer": "Military base ruins and active checkpoint exist at summit. Avoid entering military post; navigate around it via small valley. Military personnel can provide assistance if needed."
+      }
+    ],
+    "sentiment": {
+      "positive": "Reviewers consistently recommend for hiking and camping, praising accessibility, scenic views, manageable difficulty, and peaceful atmosphere compared to busier peaks",
+      "negative": null
+    }
+  }
+}

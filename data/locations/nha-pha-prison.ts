@@ -48,4 +48,32 @@ export const nhaPhaPrison: Location = {
     travelTips:
       "Di tích Nhà Pha suits visitors who want to understand Lý Sơn's full historical context rather than just its natural sites. Pair with both communal houses and the Hải Đội Hoàng Sa museum for a coherent half-day covering the island's past.",
   },
+  insights: {
+    highlights: [
+      "Vietnam's tallest lighthouse at 45m, built by French in 1898, offers 360-degree island views from top",
+      "Located on Lý Sơn island's eastern side, ideal spot for sunrise viewing over the sea",
+      "Distinctive French colonial architecture resembling a spacecraft, unique among Vietnamese lighthouses",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: null,
+      accessibility: "Interior access may be restricted or closed for renovations; exterior viewing always possible",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Arrive before late afternoon as interior access closes early; verify opening status before visiting",
+      "Visit early morning for sunrise views from the eastern side of Lý Sơn island",
+      "Combine visit with nearby attractions: Hòn Mù Cu, Núi Thới Lới, and Hang Câu",
+    ],
+    faq: [
+      { question: "Can I go inside the lighthouse?", answer: "Interior access may be unavailable due to renovations or closing times. Verify current status before visiting. Exterior viewing is always possible." },
+      { question: "What time should I arrive?", answer: "Arrive in the morning or early afternoon. Interior access closes in late afternoon. Plan for sunrise viewing from the eastern side." },
+      { question: "What else can I see nearby?", answer: "Visit Hòn Mù Cu nearby, Núi Thới Lời, and Hang Câu. The lighthouse is located on Lý Sơn island with multiple other lighthouses to explore." },
+    ],
+    sentiment: {
+      positive: "Visitors praise the distinctive French colonial architecture, impressive 45m height, panoramic island views, and unique design compared to other Vietnamese lighthouses",
+      negative: "Interior access frequently restricted due to renovations or closing times; some find limited activities on the island",
+    },
+  },
 }

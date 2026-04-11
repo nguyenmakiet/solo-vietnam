@@ -1,0 +1,42 @@
+{
+  "slug": "lung-cu-flag-tower",
+  "google_rating": 4.6,
+  "google_review_count": 8945,
+  "insights": {
+    "highlights": [
+      "Vietnam's northernmost point with 360-degree views of Đồng Văn Karst Plateau and Chinese mountains",
+      "Symbolic 54-meter flagpole representing 54 ethnic groups; 279 steps commemorate 1979 Sino-Vietnamese War",
+      "Scenic drive through terraced rice fields and winding mountain roads on Ha Giang Loop"
+    ],
+    "thingsToKnow": {
+      "crowds": "Heavy tour group traffic, especially mid-morning to afternoon. Arrive by 8:30 a.m. for manageable crowds. Flag ceremony (10 minutes) requires waiting in line before accessing stairs.",
+      "difficulty": "Over 100-400 steps to climb depending on route. Steep hill climb required. Motorbike ride to base available for 30,000 VND. Road conditions can be challenging; check before traveling.",
+      "safety": null,
+      "accessibility": "Electric buggy available to reach gate for 30,000 VND; additional 100+ steps inside tower. Free toilets available at site.",
+      "seasonal": "Weather significantly impacts views. Fog and rain common; visibility to China border weather-dependent. January offers calmer, colder conditions. Check weather before visiting, especially avoid late afternoon trips (fog increases)."
+    },
+    "visitorTips": [
+      "Arrive early morning to avoid crowds and tour buses. Bring water and be physically prepared for steep climbs.",
+      "Study the historical significance beforehand. Lolo ethnic culture, bronze drums, and fire dances offer cultural context.",
+      "Visit nearby Northernmost Point and Lolo Chai ancient village at night for less-crowded alternatives with equally impressive views."
+    ],
+    "faq": [
+      {
+        "question": "What is the entrance fee and how do I reach the top?",
+        "answer": "Entry: 35,000-40,000 VND per person. Motorcycle parking: 5,000 VND. Electric buggy to gate: 30,000 VND. Over 100 steps to climb; additional 100 steps inside tower to reach flag."
+      },
+      {
+        "question": "When is the best time to visit?",
+        "answer": "Early morning (8:30 a.m. or earlier) avoids crowds and tour groups. January offers clearer weather. Avoid late afternoon due to fog. Check weather forecast; visibility to China border is weather-dependent."
+      },
+      {
+        "question": "How difficult is the climb?",
+        "answer": "Steep with 100-400+ steps depending on route. Motorbike riders can take buggy option. Not recommended for those with mobility issues. Road conditions variable; some sections windy and steep, particularly from Dong Van."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors praise stunning 360-degree views, meaningful historical significance, cultural heritage of Lolo ethnic group, and scenic mountain drive. Most rate it essential stop on Ha Giang Loop.",
+      "negative": "Some find it overcrowded with tour buses, overpriced for basic stair climb, and views duplicate other loop locations. Crowds create chaotic photography behavior and disrupted flag ceremonies."
+    }
+  }
+}

@@ -44,4 +44,32 @@ export const pongourWaterfall: Location = {
     travelTips:
       "Pongour is the destination for scale - the widest and most voluminous waterfall accessible from Đà Lạt. The rainy season visit is the right call; dry season reduces the flow significantly. Pair with Elephant Waterfall for a full southern Đà Lạt waterfall day.",
   },
+  insights: {
+    highlights: [
+      "Multi-level waterfall cascading over volcanic rock with dramatic scenic views from multiple vantage points",
+      "Relatively uncrowded compared to other Vietnam waterfalls, offering peaceful atmosphere and good photography opportunities",
+      "Accessible via scenic staircase descent or shuttle bus service for 15,000 VND per person",
+    ],
+    thingsToKnow: {
+      crowds: "Generally fewer tourists than other Vietnam waterfalls, but school groups arrive mid-morning making it busier. Visiting early morning or weekdays recommended for solitude",
+      difficulty: "Steep descent with many steps and handrails. Takes 5-10 minutes down, 10-15 minutes up on foot. Paths can be slippery after rain; proper footwear essential",
+      safety: "Swimming and climbing near waterfall not permitted due to strong water flow and slippery rocks. Some scamming reported when paying females at the site. Bridge to waterfall base may be unfinished in places",
+      accessibility: "Electric shuttle bus available for 15,000 VND per person going up or down. Golf cart service also available at 15,000 VND. Alternative path available besides stairs",
+      seasonal: "Most impressive during rainy season with full water volume. February and dry seasons have noticeably less water. Water levels affect overall experience significantly",
+    },
+    visitorTips: [
+      "Wear proper footwear with grip; paths become slippery after rain. Consider raincoat if weather uncertain",
+      "Visit early morning or on weekdays to avoid school groups and crowds that build mid-morning",
+      "Use shuttle bus going up (15,000 VND) and walk down to avoid excessive stair climbing fatigue",
+    ],
+    faq: [
+      { question: "Can you swim at Pongour Falls?", answer: "No, swimming is not allowed. Warning signs prohibit climbing and swimming near the waterfall due to strong water flow and slippery rocks" },
+      { question: "How much time do you need to visit?", answer: "Typically 30 minutes to 2 hours depending on pace. The walk down takes 5-10 minutes, up takes 10-15 minutes on foot" },
+      { question: "What are the costs involved?", answer: "Entrance fee 40,000-45,000 VND per person, parking 3,000-5,000 VND per vehicle, shuttle/golf cart 15,000 VND per person each way" },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for stunning multi-tiered waterfall formation, peaceful uncrowded atmosphere, reasonable prices, and well-maintained facilities. Consistently rated best waterfall in Da Lat area",
+      negative: "Poor restroom facilities, trash visible on paths to waterfall, some reports of scamming when paying vendors, maintenance issues with certain areas",
+    },
+  },
 }

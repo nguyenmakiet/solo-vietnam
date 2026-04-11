@@ -1,0 +1,42 @@
+{
+  "slug": "mui-dien",
+  "google_rating": 4.7,
+  "google_review_count": 345,
+  "insights": {
+    "highlights": [
+      "Easternmost point on Vietnam's mainland where sunrise first greets the country daily",
+      "Historic lighthouse built by French in 1890 atop 110m peak with panoramic ocean views",
+      "Scenic coastal road with mountains on one side and blue sea on the other"
+    ],
+    "thingsToKnow": {
+      "crowds": null,
+      "difficulty": "Hiking 1-1.5km uphill to lighthouse with low steps; alternatively motorbike taxis available but officially prohibited from carrying tourists",
+      "safety": "Unofficial motorbike taxis operate illegally without helmets or proper permits; use official transportation or hike instead",
+      "accessibility": "Motorbike taxis available for ~100,000 VND per 2 people one-way; alternative is 15-minute walk then stair descent",
+      "seasonal": "Best visited at sunrise; afternoon for sunset also recommended; weather variable, check conditions before visiting"
+    },
+    "visitorTips": [
+      "Wear comfortable athletic shoes or low-heeled sandals for easy walking on mountain trails",
+      "Arrive very early to witness first sunrise from mainland Vietnam at the lighthouse",
+      "Explore Mon Beach below with pristine white sand and clear water after visiting lighthouse"
+    ],
+    "faq": [
+      {
+        "question": "What is the entrance fee?",
+        "answer": "Entrance fee is 30,000 VND per adult; parking is 10,000-20,000 VND. Purchase ticket at gate or pay upon exit if gate staff unavailable."
+      },
+      {
+        "question": "How do I reach the lighthouse?",
+        "answer": "Hike 1-1.5km uphill (15 minutes) with low steps, or use motorbike taxi for 100,000 VND one-way. Hiking recommended to avoid unofficial taxis."
+      },
+      {
+        "question": "When is the best time to visit?",
+        "answer": "Early morning to witness first sunrise from mainland Vietnam. Afternoon sunset also beautiful. Avoid midday heat. Located 35km from Tuy Hoa city."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors consistently praise stunning natural scenery, dramatic coastal views, historic lighthouse, and significance as first sunrise point on Vietnam's mainland",
+      "negative": "Unofficial motorbike taxis operate illegally with inflated prices (100,000 VND vs older 50,000 VND rates) and lack safety compliance; hiking is strenuous but rewarding"
+    }
+  }
+}

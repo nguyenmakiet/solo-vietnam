@@ -48,4 +48,32 @@ export const dinhMountain: Location = {
     travelTips:
       "Núi Dinh is well suited to travellers combining a Vũng Tàu beach trip with something more active. The peak is close enough to the city to work as a morning activity before spending the afternoon on the beach. The religious dimension of the mountain - multiple active pagodas, regular pilgrim traffic - adds cultural texture to what would otherwise be a straightforward hill walk. For visitors based in HCMC, Núi Dinh is a slightly more adventurous alternative to Chứa Chan Mountain in Đồng Nai, with the advantage of coastal views from the summit.",
   },
+  insights: {
+    highlights: [
+      "Located 80km from HCMC, 1.5-2 hour hike to summit at 500m elevation with panoramic views",
+      "Historic WWII-era American helicopter landing pad, now flat rocky platform ideal for photography",
+      "Spring water pool and streams for swimming available during rainy season",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded on weekends; trails well-marked but heavily trafficked Saturdays and Sundays",
+      difficulty: "Medium difficulty; moderate elevation gain suitable for beginners with proper fitness; requires good hiking shoes",
+      safety: "No mobile signal at summit; arrange pickup location with driver beforehand. Mountain insects differ from city mosquitoes; standard repellent may be ineffective",
+      accessibility: "Motorable paved road to summit suitable for motorcycles; 5-minute walk from parking to peak. Steep sections require good brakes on motorcycles",
+      seasonal: "Visit June-November during rainy season when streams and waterfall flow. March-May lacks water; dry season is hot",
+    },
+    visitorTips: [
+      "Download Dinh mountain map or running app with shared routes to navigate; color-marked trails and rope markers present",
+      "Bring insect repellent effective against forest mosquitoes, not just city varieties",
+      "Pack out all trash; littering significantly degrades the area and harms local wildlife",
+    ],
+    faq: [
+      { question: "Can I drive to the summit?", answer: "Yes, paved asphalt road reaches the top. Motorcycles recommended for curved terrain. Parking available with 10,000 VND fee." },
+      { question: "What's the best time to visit for swimming?", answer: "June to November when rainfall keeps streams and spring water pools flowing. March-May has no water for swimming." },
+      { question: "Is it dangerous to hike alone?", answer: "Trails are well-marked with color blazes and rope markers. Extremely crowded weekends minimize risk. No mobile signal, so inform your driver of plans." },
+    ],
+    sentiment: {
+      positive: "Hikers praise accessible medium-difficulty trails, scenic views, water features, and ideal location near HCMC for weekend training",
+      negative: "Increasing litter problem at summit negatively affecting environment and wildlife; mountain mosquitoes resist standard repellent",
+    },
+  },
 }

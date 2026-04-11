@@ -50,4 +50,32 @@ export const dauTiengLake: Location = {
     travelTips:
       "Dầu Tiếng works best as an early morning destination or an overnight camping trip - the lake at sunrise is the experience that draws people, and arriving in the middle of the day gives little sense of what makes it interesting. The scale of the reservoir becomes apparent only from elevated viewpoints or from the water itself - a boat ride gives the most direct sense of the lake's size. For HCMC-based travellers looking for natural scenery within 2 hours of the city, Dầu Tiếng offers a genuinely large water body surrounded by forest in a region where both are otherwise scarce.",
   },
+  insights: {
+    highlights: [
+      "Vietnam's largest artificial freshwater lake spanning 27,000 hectares across three provinces",
+      "Peaceful weekend escape 80km from Ho Chi Minh City with mountain views",
+      "Diverse ecosystem and natural landscapes ideal for camping and spiritual meditation",
+    ],
+    thingsToKnow: {
+      crowds: "Quiet and peaceful, especially suitable for weekend relaxation away from city crowds",
+      difficulty: null,
+      safety: null,
+      accessibility: "Limited facilities nearby; few shops or eating places around the lake",
+      seasonal: "Best camping time is evening to morning; avoid midday visits due to extreme heat",
+    },
+    visitorTips: [
+      "Camp overnight from evening to morning for the best experience; daytime is very hot",
+      "Plan visits during cooler hours and bring supplies as nearby shops are scarce",
+      "Visit Ba Den mountain and Thái Sơn Pagoda for sightseeing near the lake",
+    ],
+    faq: [
+      { question: "What is the best time to visit?", answer: "Best for camping from evening through morning. Avoid noon when temperatures are extreme and few shelter options exist." },
+      { question: "Are there facilities and restaurants at the lake?", answer: "Limited amenities; few shops or eating places nearby. Bring supplies and food before visiting." },
+      { question: "How far is it from Ho Chi Minh City?", answer: "Approximately 80km from Ho Chi Minh City, making it a suitable weekend escape destination." },
+    ],
+    sentiment: {
+      positive: "Visitors praise its peaceful atmosphere, natural beauty, and suitability for stress relief and outdoor activities",
+      negative: "Poor road conditions and lack of facilities near the lake are main concerns",
+    },
+  },
 }

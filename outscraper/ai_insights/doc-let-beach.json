@@ -1,0 +1,42 @@
+{
+  "slug": "doc-let-beach",
+  "google_rating": 4.3,
+  "google_review_count": 1782,
+  "insights": {
+    "highlights": [
+      "White sand beach with calm, shallow waters ideal for families and swimming",
+      "Located 49-50km north of Nha Trang, accessible by local bus for 60,000₫ return",
+      "Serene atmosphere with local street food vendors, morning markets, and affordable prices"
+    ],
+    "thingsToKnow": {
+      "crowds": "Increasingly crowded with Chinese tour groups during peak season; less crowded in October-November low season",
+      "difficulty": null,
+      "safety": "Entrance fee charged; foreigners report being charged 100,000₫ while locals enter free",
+      "accessibility": "Accessible via Bus #3 from Nha Trang (1.5 hours). Beach chairs and local vendor services available",
+      "seasonal": "October-November offers lower prices and fewer crowds; weather-dependent with potential rain"
+    },
+    "visitorTips": [
+      "Visit during low season (October-November) for privacy and better pricing; avoid peak Chinese tourism periods",
+      "Bring insect repellent; October visits report significant mosquito presence",
+      "Negotiate food prices as vendors reportedly charge foreigners double or more compared to locals"
+    ],
+    "faq": [
+      {
+        "question": "How crowded is Doc Let Beach?",
+        "answer": "Increasingly popular with Chinese tour groups during peak season, but relatively quiet in October-November low season. Early morning visits offer fewer crowds."
+      },
+      {
+        "question": "What is the entrance fee and pricing?",
+        "answer": "Foreigners reportedly charged 100,000₫ entrance fee while locals enter free. Food and services priced higher for tourists than locals."
+      },
+      {
+        "question": "What water activities and amenities are available?",
+        "answer": "Jet skis, paragliding, and paid marine activities available. Beach chairs rentable. Local vendors sell snacks, seafood, and drinks. Some beach shacks offer dining."
+      }
+    ],
+    "sentiment": {
+      "positive": "Majority praise pristine white sand, calm shallow waters suitable for families, serene atmosphere, affordable local food, and proximity to Nha Trang",
+      "negative": "Recent reviews report increasing trash and plastic pollution, loud karaoke, overcrowding with tour groups, discriminatory pricing for foreigners, and some restaurant development affecting views"
+    }
+  }
+}

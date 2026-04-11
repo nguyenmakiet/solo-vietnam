@@ -44,4 +44,32 @@ export const linhPhuocPagoda: Location = {
     travelTips:
       "Linh Phước is the best reason to take the Đà Lạt tourist train - the pagoda on its own justifies the excursion and the train adds the pleasure of a preserved colonial railway journey. The combination of train ride from the 1938 French station and the extraordinary mosaic pagoda at the other end makes for one of Đà Lạt's most varied half-mornings.",
   },
+  insights: {
+    highlights: [
+      "Intricate mosaics made from millions of recycled glass, ceramic, and beer bottle fragments cover every surface",
+      "49-meter bell tower, Vietnam's tallest, with wish-writing ritual and multiple Buddha statues across levels",
+      "Underground basement exhibition featuring '18 Levels of Hell' with demons and underworld guardian statues",
+    ],
+    thingsToKnow: {
+      crowds: "Tour buses arrive around 8:20am onwards. Extremely busy during midday, especially afternoons and weekends. Parking congestion with buses and vehicles creating chaotic conditions on temple grounds",
+      difficulty: null,
+      safety: "Heavy vehicle and bus traffic directly on temple grounds creates unsafe pedestrian conditions. Cover shoulders and knees before entering certain buildings. Bike parking locks at 17:30",
+      accessibility: "Accessible by one-way train from Dalat train station (30 minutes, departs 09:55) or Grab taxi. Round-trip train limits on-site time to 15-20 minutes. Walking distance between Trai Mat station and temple is 10-15 minutes",
+      seasonal: "Better to visit in good weather. Visit early morning before 10am to avoid crowds",
+    },
+    visitorTips: [
+      "Arrive by 8am or before 10am to avoid tour buses and crowds for peaceful exploration",
+      "Purchase one-way train ticket and return by Grab or local cab for flexible timing instead of limited round-trip schedule",
+      "Explore all levels including basement 'Hell exhibition', flower-made Guan Yin statue, and wooden table collection downstairs",
+    ],
+    faq: [
+      { question: "When should I visit to avoid crowds?", answer: "Arrive before 8:20am or before 10am. Tour buses typically begin arriving around 8:20am and peak midday and weekends" },
+      { question: "What is the best way to get there from Dalat?", answer: "Buy one-way train ticket from Dalat station (departs 09:55, 30 minutes). Return via Grab taxi, as round-trip trains limit on-site time to 15-20 minutes" },
+      { question: "Is there an entrance fee and what should I not miss?", answer: "Completely free entry and parking. Don't miss basement levels, bell tower climb, 49-meter dragon made of 12,000 beer bottles, and unique 'Hell exhibition'" },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the temple's extraordinary craftsmanship, intricate mosaic details made from recycled materials, unique architecture, peaceful spiritual atmosphere, and exceptional value with free entry",
+      negative: "Tour buses and vehicles park directly on temple grounds creating chaotic, unsafe pedestrian conditions and crowding during peak hours",
+    },
+  },
 }

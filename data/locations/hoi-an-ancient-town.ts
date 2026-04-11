@@ -44,4 +44,32 @@ export const hoiAnAncientTown: Location = {
     travelTips:
       "Hội An rewards slow travel more than almost anywhere in Vietnam. One full day gives you the landmarks; two or three days lets you find the less-visited streets, eat your way through the food stalls, cycle to Trà Quế and An Bàng Beach, and experience the town at different times of day. The crowds are real - Trần Phú Street at 11 AM in peak season is shoulder-to-shoulder - but the town is large enough that the quieter streets and early morning hours remain genuinely pleasant. Stay at least one night to experience the Lantern Festival evening or simply the way the town feels after 9 PM when the day-trippers from Đà Nẵng have left.",
   },
+  insights: {
+    highlights: [
+      "Lantern-lit streets and Thu Bon River reflections create magical nighttime atmosphere with boat rides",
+      "Well-preserved yellow colonial buildings, temples, Japanese Covered Bridge reflect centuries-old trading port history",
+      "Custom tailoring shops offer high-quality suits and dresses made within hours at reasonable prices",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during day and peak evening hours. Early morning and late evening offer quieter experiences. Main tourist streets packed; side alleys have fewer visitors.",
+      difficulty: null,
+      safety: "Stay alert for bikes and motorbikes on narrow streets. Some streets become slippery after rain; wear comfortable footwear.",
+      accessibility: "Entire old town is very walkable on foot with narrow pedestrian streets. No motorbike needed.",
+      seasonal: "Visit week before festive season for fewer crowds. Tet holiday period offers vibrant atmosphere.",
+    },
+    visitorTips: [
+      "Bargain aggressively for souvenirs and tailored goods; prices can drop 50-75% from initial quotes. Walking away works better than negotiating hard.",
+      "Explore narrow side alleys away from main lantern-lit streets for authentic restaurants, lower prices, quieter atmosphere",
+      "Visit early morning before crowds arrive for peaceful exploration, or stay until sunset to experience full lantern lighting effect",
+    ],
+    faq: [
+      { question: "When is the best time to visit Hoi An?", answer: "Early morning before crowds arrive or early evening around sunset. Avoid mid-day heat and peak tourist hours. Week before festive season offers fewer crowds." },
+      { question: "How long should I spend in Hoi An?", answer: "One full day minimum to experience day and night. Multiple days recommended for leisurely exploration, food tours, and tailoring services." },
+      { question: "Is tailoring in Hoi An reliable?", answer: "Quality varies significantly between shops. Research and compare before committing. Many shops promote high-quality items but don't always deliver. Don't feel pressured to decide on the spot." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for nighttime lantern atmosphere, riverside beauty, walkability, friendly locals, affordable food, and custom tailoring. Visitors repeatedly call it unforgettable and worth returning to.",
+      negative: "Extreme overcrowding during peak hours, tourist-inflated pricing in central areas, inconsistent tailoring quality despite marketing claims, some boat operators take tourists to less charming areas.",
+    },
+  },
 }

@@ -45,4 +45,32 @@ export const benHaiRiver: Location = {
     travelTips:
       "The Bến Hải River hits differently depending on how much history mày brings to it. Visitors who arrive knowing the Geneva Accords, the flag pole wars, and the personal stories of separation tend to find the site profoundly moving. Visitors who arrive cold often find it underwhelming - a small bridge over a small river. The right preparation is a half-hour of reading beforehand. The DMZ as a whole is one of the most historically dense corridors in Vietnam, and Bến Hải is its emotional center. It belongs on any serious itinerary through central Vietnam.",
   },
+  insights: {
+    highlights: [
+      "Bridge painted half-blue (North) and half-yellow (South) symbolizing Vietnam's 1954-1975 division at 17th Parallel",
+      "Monuments on both sides depicting families separated during war, with 38.6-meter flag poles built by competing sides",
+      "Small museum displaying historical photos and artifacts from the Vietnam War period",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: null,
+      accessibility: "Wheelchair-friendly grounds but no museum access. No disabled toilet facilities. Uneven terrain with minimal shade",
+      seasonal: "Very hot mid-August with minimal shade; bring water and sun protection",
+    },
+    visitorTips: [
+      "Pay 50,000 VND entrance fee to walk the bridge; free views available from outside the paid area",
+      "Hire a guide or bring someone who reads Vietnamese to understand plaques and historical context",
+      "North side is well-maintained; south side grounds are poorly maintained with overgrown grass and bushes",
+    ],
+    faq: [
+      { question: "Can I walk across the old bridge?", answer: "Yes, for 50,000 VND entrance fee. The bridge is half-blue (North) and half-yellow (South), divided at the center. A modern bridge nearby is free." },
+      { question: "Is the original bridge still standing?", answer: "No. The original was destroyed in 1967 bombing. Current bridge is reconstructed. Only the old archway entrance remnants remain." },
+      { question: "What should I know before visiting?", answer: "Expect extreme heat with minimal shade. Museum and plaques are in Vietnamese. Many visitors find 50,000 VND expensive for limited indoor exhibits." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate the historical significance and symbolic value of the bridge as a powerful reminder of Vietnam's division and reunification",
+      negative: "Site maintenance is poor on south side; museum is dated with dirty displays; entrance fee considered overpriced relative to attractions; lack of English signage and facility upkeep",
+    },
+  },
 }

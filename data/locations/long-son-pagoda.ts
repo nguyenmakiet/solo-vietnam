@@ -44,4 +44,32 @@ export const longSonPagoda: Location = {
     travelTips:
       "Long Sơn Pagoda is the best free attraction in Nha Trang and consistently underutilised by visitors focused on the beach and islands. The hilltop view is the best elevated perspective over the city and bay available without paying for a cable car or rooftop bar. The historical connection to the 1963 Buddhist Crisis adds a layer of significance that most beach-focused visitors are unaware of. Allow 45–60 minutes including the climb and descent - easy to combine with a morning at the train station (500 metres away) or as a standalone half-hour stop.",
   },
+  insights: {
+    highlights: [
+      "Giant 24m white seated Buddha at summit with panoramic city views from Nha Trang",
+      "Reclining Buddha statue carved into hillside with intricate monk figure carvings",
+      "Free entry temple complex with ornate architecture, bell tower, and vegetarian restaurant",
+    ],
+    thingsToKnow: {
+      crowds: "Can get crowded during peak times, but relatively quiet on weekends and in evening hours",
+      difficulty: "Approximately 200-220 steep steps to reach the white Buddha; alternative road available. Requires physical fitness and proper footwear",
+      safety: null,
+      accessibility: "Not wheelchair accessible due to stairs. Alternative vehicle path exists to reach near the top for those unable to climb",
+      seasonal: "Very hot during midday; visit early morning or late afternoon. Bring mosquito repellent",
+    },
+    visitorTips: [
+      "Wear knee-length clothing and covered shoulders to enter temple; barefoot inside. Sneakers required for stairs",
+      "Visit one way via stairs, return via alternative road to see reclining Buddha and bell tower",
+      "Avoid buying incense at entrance; vendors are persistent and overcharge. Vendors may lack lighters",
+    ],
+    faq: [
+      { question: "Is there an entrance fee?", answer: "Most sources report free entry, though a few mention 30kđ-100kđ fee. Verify current pricing at entrance" },
+      { question: "What should I wear to visit?", answer: "Wear knee-length clothing and covered shoulders to enter the temple. Go barefoot inside. Wear sturdy sneakers for stairs; avoid heels and flip-flops" },
+      { question: "How long does a visit take?", answer: "Approximately 40 minutes to 1 hour total. Budget extra time if taking stairs slowly or resting at viewpoints" },
+    ],
+    sentiment: {
+      positive: "Most visitors praise the giant Buddha statue, panoramic views, peaceful atmosphere, and cultural value despite tourist crowds",
+      negative: "Cleanliness concerns including dirty restrooms and trash on grounds; commercialization with persistent vendors; disrepair of railings; vehicles allowed on temple grounds disrupting tranquility",
+    },
+  },
 }

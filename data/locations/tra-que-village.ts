@@ -40,4 +40,32 @@ export const traQueVillage: Location = {
     travelTips:
       "Trà Quế works best as a half-day activity combined with cycling - ride out in the morning, do a cooking class or farm visit, and ride back through a different route via the rice fields. It's one of the most genuinely local experiences available near Hội An, and the cooking classes here - taught in the village by farming families rather than in a dedicated cooking school - are more authentic than the tourist-oriented cooking schools in town. The herbs and vegetables used are grown metres from where you cook them, which makes a noticeable difference in flavour.",
   },
+  insights: {
+    highlights: [
+      "100% organically grown vegetables and herbs supplying Hoi An's best restaurants for centuries",
+      "Hands-on farming tours where visitors learn traditional methods like soil preparation and watering",
+      "Cooking classes using fresh garden ingredients followed by meals and optional foot massages",
+    ],
+    thingsToKnow: {
+      crowds: "Popular tourist destination with large group visits, especially on organized bike tours. Less crowded early morning 8am-11am or late afternoon 3pm-5pm",
+      difficulty: null,
+      safety: null,
+      accessibility: "Located 5km from Hoi An town. E-car service available from highway or hotels. Accessible by electric scooter, bicycle, or organized tours",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Visit early morning 8am-11am to see farmers in their morning routine and avoid peak tourist crowds",
+      "Book activities like cooking classes and farm tours in advance; they don't always operate daily",
+      "Bring sunscreen, sunglasses, and water. Avoid overpriced 'slow cafe' near entrance; better cafes located throughout village",
+    ],
+    faq: [
+      { question: "Do I need to book activities in advance?", answer: "Yes, it's recommended. Tours and cooking classes don't operate daily. Call ahead to confirm availability before visiting." },
+      { question: "Is there an entrance fee?", answer: "No entrance ticket required for walking around the village. Paid activities like tours and cooking classes are optional." },
+      { question: "What's the best time to visit?", answer: "Early morning 8am-11am to observe farmers' routines and see golden light. Afternoon 3pm-5pm is cooler with less wind." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate authentic organic farming experience, hands-on activities for families, friendly local farmers, and high-quality fresh ingredients used in restaurants",
+      negative: "Some feel activities are overly touristy and overpriced; a few activities weren't available when visited; not worth effort if just wanting to walk around without engaging",
+    },
+  },
 }

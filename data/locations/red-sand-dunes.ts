@@ -44,4 +44,32 @@ export const redSandDunes: Location = {
     travelTips:
       "The Red Sand Dunes are best treated as an easy late-afternoon activity rather than a destination in their own right - walk up for sunset, spend 30 minutes on the ridge, and combine with a stroll through the fishing village below. The White Sand Dunes at Bàu Trắng are the more dramatic dune experience; the Red Dunes are more convenient and require no planning or early wake-up. Most visitors to Mũi Né do both in the same day: Red Dunes at sunset one evening, White Dunes at sunrise the following morning.",
   },
+  insights: {
+    highlights: [
+      "Red and white sand dunes with sea views, best visited at sunrise or sunset",
+      "Simple plastic mat sliding down dunes activity available for around 50,000 VND",
+      "Less crowded alternative to White Sand Dunes, quieter and more peaceful experience",
+    ],
+    thingsToKnow: {
+      crowds: "Can get crowded on nice weather days and during tour times. Early morning visits offer fewer crowds and better lighting for photos.",
+      difficulty: "Easy hike uphill to reach peak. Manageable for most fitness levels. Wear sandals or slippers.",
+      safety: "Local vendors can be pushy about selling items and demanding tips for activities like photography. Expect aggressive parking and sales pitches. Trash is present on the dunes.",
+      accessibility: "Scooter/motorbike rental recommended for access. Parking available (10,000-20,000 VND). Can be visited independently without tours.",
+      seasonal: "Rainy season offers good morning lighting. Sunset viewing best on clear days. Very windy conditions reported.",
+    },
+    visitorTips: [
+      "Arrive early morning to avoid crowds, heat, and best photography lighting conditions",
+      "Bring water and wear sandals. Decline photo services unless prepared to tip 50,000-200,000 VND afterward",
+      "Plan 15-30 minutes maximum unless doing paid activities like ATV tours elsewhere",
+    ],
+    faq: [
+      { question: "How much does it cost to visit?", answer: "Free to walk around. Plastic mat sliding costs around 30,000-50,000 VND per board. Parking is 10,000-20,000 VND for motorbikes. Tipping guides/vendors expected." },
+      { question: "How long should I spend here?", answer: "Plan 15-30 minutes for walking and photos. Add extra time if renting sand sleds. Not recommended as full-day destination; best as quick stop while traveling." },
+      { question: "When is best time to visit?", answer: "Visit early morning before crowds and heat. Sunset is also popular for photos. Avoid midday sun. Rainy season offers good morning light." },
+    ],
+    sentiment: {
+      positive: "Travelers appreciate the quick stop for unique sand dune photos, especially at sunrise/sunset. Free entry and low-cost activities appeal to budget travelers. Red Sand Dunes preferred by some over commercialized White Sand Dunes.",
+      negative: "Significant trash and pollution on dunes. Aggressive local vendors and guides pushing sales and high tips. Site smaller than expected. Pushiness from vendors before parking lot. False expectations from misleading photos online. Not worth journey for some visitors.",
+    },
+  },
 }

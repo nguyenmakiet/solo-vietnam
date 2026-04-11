@@ -1,0 +1,42 @@
+{
+  "slug": "white-sand-dunes",
+  "google_rating": 4.3,
+  "google_review_count": 2415,
+  "insights": {
+    "highlights": [
+      "One of Southeast Asia's few actual sand dune landscapes with white sand and lake views",
+      "Sunrise and sunset experiences offer spectacular photo opportunities when weather is clear",
+      "Sand sliding available for 50,000 VND with ATV rides and jeep tours as transport options"
+    ],
+    "thingsToKnow": {
+      "crowds": "Very touristy with constant vehicle traffic; morning visits less crowded than midday; ATVs and jeeps create noise and congestion throughout the dunes",
+      "difficulty": "Walking is feasible (15-20 minutes to top) but becomes extremely hot after 8 AM; sand makes walking tiring; physically manageable but ATV/jeep offered as easier alternative",
+      "safety": "Unregulated ATV operators reported driving at dangerous speeds; some reports of scams and equipment switching; staff may pressure visitors into rental activities; camel welfare concerns noted",
+      "accessibility": "Accessible by motorbike or scooter independently; jeep and ATV services available; entrance fee 15,000 VND; parking 10,000 VND",
+      "seasonal": "Best visited early morning (4:30 AM) or sunset for clear skies; rainy season brings unpredictable weather and clouds; mornings more reliable than evenings; excessive heat midday (10 AM-5 PM)"
+    },
+    "visitorTips": [
+      "Walk independently to save money and avoid mandatory ATV fees; 15-20 minutes uphill is manageable in early morning",
+      "Bring bandana/face mask for wind protection, sunscreen, water, and small cushion to sit on while waiting for sunrise",
+      "Visit before 8 AM for tolerable temperatures; wear flip-flops and expect sand everywhere including clothing and bags"
+    ],
+    "faq": [
+      {
+        "question": "How much do ATV rides cost and what's included?",
+        "answer": "ATVs cost 600,000-1,000,000 VND for 20 minutes with mandatory staff driver; you cannot ride alone. Jeep tours around 500,000-800,000 VND for 4 hours. Prices vary by operator; negotiate at entrance."
+      },
+      {
+        "question": "Can I walk to the top without paying for vehicles?",
+        "answer": "Yes, walking takes 15-20 minutes in early morning and is free, though increasingly hot after 8 AM. Staff may pressure you toward ATV rental but walking is possible with effort and time."
+      },
+      {
+        "question": "What's the best time to visit for sunrise?",
+        "answer": "Arrive by 4:30 AM for sunrise tours. Morning weather is more reliable than evening. Bring something to sit on as you may wait 30-40 minutes. Sunrise around 5:50 AM depending on season."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors appreciate the unique desert landscape, sunrise/sunset views, and thrilling ATV experiences; many found it worth visiting despite high prices",
+      "negative": "Multiple reports of scams, misleading pricing, safety concerns with reckless driving, environmental damage from vehicles, litter on dunes, and perceived tourist trap exploitation by operators"
+    }
+  }
+}

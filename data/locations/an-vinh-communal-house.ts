@@ -54,4 +54,32 @@ export const anVinhCommunalHouse: Location = {
     travelTips:
       "An Vĩnh communal house is the most convenient historical site to visit on arrival, given its proximity to the ferry port. A visit here before renting a motorbike and heading out to the island's natural sites gives useful context - particularly the references to Hoàng Sa and maritime history that appear throughout the island.",
   },
+  insights: {
+    highlights: [
+      "Historic village communal house recognized as national heritage site in 2013 with traditional Vietnamese wooden architecture",
+      "Annual Lễ Khao lề thế lính ceremony held mid-March (lunar calendar) honoring Hoàng Sa soldiers, unique Vietnamese intangible cultural heritage",
+      "Located on Lý Sơn island coastline near port with traditional boat racing festivals during Lunar New Year and major holidays",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: null,
+      accessibility: "Closed on regular weekdays; access only during festivals and special occasions",
+      seasonal: "Major ceremonies occur mid-March lunar calendar (Lễ Khao lề thế lính) and Lunar New Year. Best visited during festival periods for full experience",
+    },
+    visitorTips: [
+      "Time your visit for mid-March lunar calendar or Lunar New Year to experience ceremonies and traditional boat racing festivals",
+      "Free admission. Arrive during festival events to see full ceremonial activities and village celebrations",
+      "Located near Lý Sơn Port and Đại Hạng restaurant; peaceful seaside setting ideal for exploring island cultural heritage",
+    ],
+    faq: [
+      { question: "When is the best time to visit Đình làng An Vĩnh?", answer: "Visit during mid-March lunar calendar for the Lễ Khao lề thế lính ceremony or Lunar New Year for traditional boat racing festivals" },
+      { question: "Is there an entrance fee?", answer: "No, admission is free. However, the site is typically closed on regular weekdays and only accessible during festivals and ceremonies" },
+      { question: "What can I see at this location?", answer: "Traditional wooden Vietnamese architecture with three-chamber design, decorative roof tiles in Nguyễn style, and historical connection to Hoàng Sa soldiers and maritime heritage" },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praised the historic significance, traditional architecture, authentic cultural ceremonies, peaceful atmosphere, and important role in Vietnamese sovereignty heritage",
+      negative: null,
+    },
+  },
 }

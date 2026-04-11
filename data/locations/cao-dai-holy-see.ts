@@ -45,4 +45,32 @@ export const caoDaiHolySee: Location = {
     travelTips:
       "The Cao Đài Holy See is genuinely one of the most singular places in Vietnam - there is nothing else like it in the country or, arguably, in the world. The combination of the architecture, the theology, and the ceremony creates an experience that is difficult to categorize and impossible to forget. The noon ceremony is the right one for day-trippers: long enough to be complete, accessible without a very early start from HCMC. If mày is based in Hồ Chí Minh City and has one day for a regional day trip, the Holy See beats the standard Củ Chi-only itinerary. Combine both in the same day - Củ Chi in the morning, Tây Ninh in the afternoon - and mày have a genuinely full picture of what the south has on offer beyond the city.",
   },
+  insights: {
+    highlights: [
+      "Unique blend of Taoism, Buddhism, Christianity, and other religions in one colorful cathedral",
+      "Witness noon prayer ceremonies with traditional music in the main Great Divine Temple",
+      "Explore expansive complex with gardens, living areas, schools, and multiple religious structures",
+    ],
+    thingsToKnow: {
+      crowds: "Very busy on weekends and during summer holidays; visit weekdays if possible. Noon ceremonies attract crowds but offer cultural experience.",
+      difficulty: null,
+      safety: "Staff may physically intervene if you enter restricted areas without warning. Respect designated prayer spaces and follow staff directions.",
+      accessibility: "Large complex with stairs. Upper balcony accessible for views. No entrance fee required.",
+      seasonal: "Visit during cooler times of day; intense midday heat makes it uncomfortable. Best visited before prayer times to avoid disruptions.",
+    },
+    visitorTips: [
+      "Wear long pants, not shorts; remove all headgear before entering the temple hall",
+      "Plan 3-4 hour drive from Ho Chi Minh City; check which gates allow car entry with locals",
+      "Avoid standing in shrine alleyways for photos; beware of wild monkeys stealing shiny objects",
+    ],
+    faq: [
+      { question: "What are the dress code requirements?", answer: "Wear long pants (no shorts). Remove all headgear, hats, and caps before entering the temple. Dress respectfully as it is an active place of worship." },
+      { question: "When should I visit to see prayer ceremonies?", answer: "Visit at noon for the main prayer ceremony lasting approximately 35 minutes. Come before prayer times to explore freely. Avoid Saturdays and Sundays if you prefer fewer crowds." },
+      { question: "Are there any hazards in the complex?", answer: "Wild monkeys roam the grounds and gardens; they steal shiny objects. Do not feed them or leave food unattended. Intense midday heat can be exhausting." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised for unique religious architecture blending multiple faiths, colorful design, peaceful atmosphere, and cultural significance. Staff generally described as helpful and tolerant of visitors.",
+      negative: "Some visitors report overly strict staff who physically intervene without warning visitors of restrictions, creating hostile experiences despite the spiritual setting.",
+    },
+  },
 }

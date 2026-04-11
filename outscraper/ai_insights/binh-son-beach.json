@@ -1,0 +1,42 @@
+{
+  "slug": "binh-son-beach",
+  "google_rating": 4.4,
+  "google_review_count": 661,
+  "insights": {
+    "highlights": [
+      "Jade-colored water in sheltered bay setting, especially stunning during calm weather periods",
+      "Central Phan Rang location with convenient access and nearby resorts and mountain views",
+      "White sand beach with coconut trees, freshwater showers, and parking facilities available"
+    ],
+    "thingsToKnow": {
+      "crowds": "Morning is quieter; evenings become crowded and windy. Less crowded than Vung Tau or Nha Trang",
+      "difficulty": "Strong waves suitable for surfing rather than swimming; challenging for children and elderly",
+      "safety": null,
+      "accessibility": "Easy access from town center; parking available (5,000-10,000 VND); freshwater showers provided; limited shade from trees",
+      "seasonal": "Windy season affects swimming comfort; best during calm weather periods. Winter months may have strong winds"
+    },
+    "visitorTips": [
+      "Visit early morning for calm conditions and fewer crowds; avoid evenings when windy and crowded",
+      "Bring own food or eat elsewhere; avoid overpriced beachside restaurants with mediocre quality",
+      "Parking organized by locals without clear pricing; negotiate rates beforehand (typically 5,000-10,000 VND)"
+    ],
+    "faq": [
+      {
+        "question": "When is the best time to swim at this beach?",
+        "answer": "Early morning offers quieter conditions and calmer water. Avoid evenings when strong winds make swimming uncomfortable"
+      },
+      {
+        "question": "What are the swimming conditions like?",
+        "answer": "Strong waves make it better for surfing than swimming. Challenging for children and elderly due to wave strength"
+      },
+      {
+        "question": "What facilities are available?",
+        "answer": "Parking (5,000-10,000 VND), freshwater showers, and drinks vendors. Coconut trees provide some shade; limited food options"
+      }
+    ],
+    "sentiment": {
+      "positive": "Travelers appreciate jade-green water, central location, cleanliness improvements, friendly locals, scenic mountain views, and suitability for those avoiding crowded beaches",
+      "negative": "Recurring complaints about beach cleanliness from food waste, overpriced and poor-quality beachside restaurants, unclear parking pricing, and strong winds affecting swimming during certain periods"
+    }
+  }
+}

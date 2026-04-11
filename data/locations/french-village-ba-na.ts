@@ -44,4 +44,32 @@ export const frenchVillageBaNa: Location = {
     travelTips:
       "The French Village is the most divisive part of Bà Nà Hills - travellers who enjoy theme parks and the novelty of European architecture on a Vietnamese mountain find it charming and entertaining; travellers seeking authentic experiences find it disorienting. The Debay Wine Cellar is the one genuinely historic element - built by the French in 1923, it survived the wars and was incorporated into the modern complex. For travellers primarily visiting for the Golden Bridge, the village is a convenient place to eat lunch and shelter from afternoon rain before descending. The Fantasy Park rides are best for families with children - adults without children typically spend 30–45 minutes in the village before moving on.",
   },
+  insights: {
+    highlights: [
+      "European-style architecture with cobblestone streets and charming buildings high in mountains",
+      "Full amusement park with roller coaster, carousel, arcade games, and fair booths",
+      "On-site hotels, restaurants, brewery, spa, and live music venues for extended stays",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Cloudy mountain weather common; cool air typical at elevation",
+    },
+    visitorTips: [
+      "Stay overnight in village hotels to experience sunset and sunrise from the mountains",
+      "Hire a guide or plan extra time to explore entire Bảo Nhai complex beyond French Village",
+      "Bring camera for numerous photo spots throughout cobblestone streets and architecture",
+    ],
+    faq: [
+      { question: "What attractions are included besides the French architecture?", answer: "Amusement park with adjustable-speed roller coaster, carousel, arcade games, fun fair booths, brewery, restaurants, spa, and live music venues." },
+      { question: "Is it worth staying overnight at Bảo Nhai?", answer: "Yes. Hotels inside French Village allow sunrise and sunset viewing from mountains and more exploration time of the entire complex." },
+      { question: "What is the French Village architecture based on?", answer: "Inspired by early 20th-century French colonial style. Includes replicas like Saint Denis Church with vaulted roofs and clock tower." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for unique European experience in Vietnam, engaging activities for families, well-maintained architecture, and scenic mountain setting",
+      negative: null,
+    },
+  },
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "a-pa-chai",
+    "error": "405 Client Error: METHOD NOT ALLOWED for url: https://api.outscraper.cloud/maps/reviews-v3"
+  },
+  {
+    "slug": "am-tien-cave",
+    "error": "405 Client Error: METHOD NOT ALLOWED for url: https://api.outscraper.cloud/maps/reviews-v3"
+  },
+  {
+    "slug": "an-bang-beach",
+    "error": "405 Client Error: METHOD NOT ALLOWED for url: https://api.outscraper.cloud/maps/reviews-v3"
+  }
+]

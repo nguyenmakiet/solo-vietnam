@@ -1,0 +1,42 @@
+{
+  "slug": "french-village-ba-na",
+  "google_rating": 4.9,
+  "google_review_count": 29,
+  "insights": {
+    "highlights": [
+      "European-style architecture with cobblestone streets and charming buildings high in mountains",
+      "Full amusement park with roller coaster, carousel, arcade games, and fair booths",
+      "On-site hotels, restaurants, brewery, spa, and live music venues for extended stays"
+    ],
+    "thingsToKnow": {
+      "crowds": null,
+      "difficulty": null,
+      "safety": null,
+      "accessibility": null,
+      "seasonal": "Cloudy mountain weather common; cool air typical at elevation"
+    },
+    "visitorTips": [
+      "Stay overnight in village hotels to experience sunset and sunrise from the mountains",
+      "Hire a guide or plan extra time to explore entire Bảo Nhai complex beyond French Village",
+      "Bring camera for numerous photo spots throughout cobblestone streets and architecture"
+    ],
+    "faq": [
+      {
+        "question": "What attractions are included besides the French architecture?",
+        "answer": "Amusement park with adjustable-speed roller coaster, carousel, arcade games, fun fair booths, brewery, restaurants, spa, and live music venues."
+      },
+      {
+        "question": "Is it worth staying overnight at Bảo Nhai?",
+        "answer": "Yes. Hotels inside French Village allow sunrise and sunset viewing from mountains and more exploration time of the entire complex."
+      },
+      {
+        "question": "What is the French Village architecture based on?",
+        "answer": "Inspired by early 20th-century French colonial style. Includes replicas like Saint Denis Church with vaulted roofs and clock tower."
+      }
+    ],
+    "sentiment": {
+      "positive": "Overwhelming praise for unique European experience in Vietnam, engaging activities for families, well-maintained architecture, and scenic mountain setting",
+      "negative": null
+    }
+  }
+}

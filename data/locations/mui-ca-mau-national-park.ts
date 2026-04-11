@@ -50,4 +50,32 @@ export const muiCaMauNationalPark: Location = {
     travelTips:
       "Mũi Cà Mau has two kinds of appeal: the geographical significance of the southernmost point, which draws Vietnamese visitors on a form of national pilgrimage, and the ecological significance of the mangrove biosphere, which is what makes it worth the journey for nature-oriented travelers. The two can coexist in the same visit but require different amounts of time. If mày is doing a thorough Mekong Delta circuit and has already covered Cần Thơ, Châu Đốc, and the mainstream delta, Cà Mau and Đất Mũi are the logical extension south - genuinely remote, genuinely different in character from the rest of the delta, and carrying the specific satisfaction of reaching the physical end of the country.",
   },
+  insights: {
+    highlights: [
+      "Vietnam's southernmost point with iconic GPS 0001 marker and unique mangrove forest ecosystem",
+      "Boat tours through waterways where visitors spot birds, monkeys, crabs, and diverse wildlife",
+      "Peaceful, underdeveloped destination with low tourist crowds and authentic Mekong Delta scenery",
+    ],
+    thingsToKnow: {
+      crowds: "Not touristy; early morning visits (8am) may have few or no other visitors",
+      difficulty: "Requires significant travel time (3-4 hours by motorcycle from Ho Chi Minh City); narrow roads and poor signage make it challenging to find entrance",
+      safety: "Iconic bridge/dock locked for visitor safety but some climb over; bring sun protection and insect repellent; ask seafood prices before ordering",
+      accessibility: "Limited food and beverage facilities; main restaurant near entrance is expensive; second F&B option within park",
+      seasonal: "Boat rides offer different experiences; low tide reveals crabs; sunrise and sunset are highlighted viewing times",
+    },
+    visitorTips: [
+      "Bring sun protection lotion, insect repellent, and camera for nature photography and wildlife spotting",
+      "Take boat tours from Nam Can district for scenic waterway journey; confirm boat prices in advance",
+      "Arrive early morning (8am) to avoid crowds and enjoy peaceful experience before other visitors arrive",
+    ],
+    faq: [
+      { question: "How do I reach Mui Ca Mau National Park?", answer: "Travel by bus or motorcycle from Ho Chi Minh City to Ca Mau city (3-4 hours), then taxi or motorcycle to Nam Can district, then boat through the park. Taxi available from Ca Mau airport." },
+      { question: "What wildlife can I see here?", answer: "Park hosts 26 mammal species, 43 reptile species, 9 amphibian species, 233 fish species, and 93 bird species. Visitors commonly spot monkeys, birds, and crabs at low tide." },
+      { question: "Is there food available at the park?", answer: "Limited options with expensive jungle restaurant at main entrance and one within park. Fresh local seafood available; ask prices before ordering to avoid surprises." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate the remote location at Vietnam's southernmost tip, abundant wildlife, mangrove ecosystem, and peaceful atmosphere away from crowds",
+      negative: "Poor signage and unclear main entrance; ongoing construction; expensive dining; limited facilities; some concrete structures considered unattractive; difficult accessibility by motorcycle",
+    },
+  },
 }

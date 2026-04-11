@@ -1,0 +1,42 @@
+{
+  "slug": "elephant-mountain",
+  "google_rating": 4.4,
+  "google_review_count": 989,
+  "insights": {
+    "highlights": [
+      "Vietnam's largest monolithic granite rock at 200m long, resembling a giant elephant",
+      "Panoramic views of Central Highlands farmland, ethnic villages, and Chu Yang Sin mountain range",
+      "Short 15-20 minute climb to summit with peaceful atmosphere ideal for photography"
+    ],
+    "thingsToKnow": {
+      "crowds": "Not heavily crowded; quieter during off-peak times and national holidays",
+      "difficulty": "Steep granite surface requires careful footing; slippery when wet. Challenging descent. Suitable for children with supervision.",
+      "safety": "Hold hands with young children on ascent/descent due to uneven surfaces and height exposure. Very windy at summit, requires caution for kids.",
+      "accessibility": "Manageable for children as young as 3-5 years old with assistance, but not wheelchair accessible",
+      "seasonal": "Best visited morning or evening to avoid intense midday heat. Not recommended on rainy days due to slippery rock surface"
+    },
+    "visitorTips": [
+      "Bring sports shoes or sneakers for better grip on smooth granite surface",
+      "Visit during golden hour for optimal photography and cooler temperatures",
+      "Claim your included homemade drink ticket after purchase to refresh after climb"
+    ],
+    "faq": [
+      {
+        "question": "Is there an entrance fee?",
+        "answer": "Yes, typically 50-60k VND per person, which includes one complimentary homemade drink. Children under 5 often enter free. Some local sites may request voluntary tips instead."
+      },
+      {
+        "question": "Can young children climb this rock?",
+        "answer": "Yes, children ages 3-5 can reach the top with adult supervision and hand-holding. The ascent is manageable but steep; descent is more challenging. Keep toddlers close due to height exposure."
+      },
+      {
+        "question": "When is the best time to visit?",
+        "answer": "Early morning or evening for photography and cooler temperatures. Avoid 10am-3pm intense heat and rainy days when the granite becomes slippery and dangerous."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors praise the geological uniqueness, manageable climb, peaceful summit atmosphere, cultural significance, reasonable pricing, included refreshments, and family-friendliness despite physical challenge",
+      "negative": "Some criticize commercialization through entrance fees and restricted access that developed over time; concerns about artificial infrastructure additions to natural site"
+    }
+  }
+}

@@ -18,7 +18,7 @@ export const anBangBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.913659812360246,108.3404344460877",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775921391694!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzRtN20zakFF!2m2!1d15.9127382224464!2d108.3423587893366!3f318.6222623169524!4f12.415883672561208!5f0.7820865974627469", },
   heroImage: heroUrl("an-bang-beach-hero_placeholder"),
   gallery: [],
   seoDescription:
@@ -39,5 +39,33 @@ export const anBangBeach: Location = {
       "The beach has a north and south section separated by a small stream. The south section is more developed with cafe and bar seating; the north is quieter with fewer facilities. Most cafes offer sunbed rental (free with a drink order or around 50,000 VND standalone) and serve food ranging from fresh seafood to Western comfort food. The water is generally calm from March to September, with small to moderate waves. Lifeguard flags operate in peak season - green for safe, red for dangerous. The sand is clean and the beach is regularly maintained by local businesses.",
     travelTips:
       "An Bàng is the beach for travellers based in Hội An who want a half-day by the sea without committing to a full Đà Nẵng day trip. The combination of cycling there through the Vietnamese countryside, a few hours on the sand, lunch at one of the beachfront restaurants, and cycling back through a different route makes for one of the most satisfying easy days in central Vietnam. If you're based in Đà Nẵng rather than Hội An, Mỹ Khê is more convenient - An Bàng makes most sense as a Hội An beach day.",
+  },
+  insights: {
+    highlights: [
+      "Soft white sand beach 5 km from Hồi An, accessible by bicycle, Grab, or motorbike",
+      "Numerous beachfront restaurants and bars offering fresh seafood with free loungers if you order food",
+      "Calm, shallow water suitable for swimming and families with safety nets in swimming areas",
+    ],
+    thingsToKnow: {
+      crowds: "Gets crowded in afternoons and late arrivals; weekdays are quieter. Visit early morning or right after rain for peaceful experience",
+      difficulty: null,
+      safety: "Avoid if jet skis and illegal boats are operating aggressively. Water may contain debris in non-restaurant areas. Occasional jellyfish reported",
+      accessibility: "Free bicycle parking available. Parking fee for motorbikes/bicycles at some lots. Lack of public toilets and changing rooms reported. Sand gets very hot",
+      seasonal: "Winter season (January) has cold water. Avoid rainy season if swimming is priority. Storm damage reported December 2025",
+    },
+    visitorTips: [
+      "Rent beach chairs and umbrellas for 50,000-75,000 VND, or get them free by ordering food from beachfront restaurants",
+      "Walk to the right side of beach facing ocean for better restaurant spots and prices compared to left side",
+      "Bring footwear as sand gets extremely hot; water shoes not needed but goggles useful for spotting fish",
+    ],
+    faq: [
+      { question: "What is the best time to visit An Bang Beach?", answer: "Early mornings and weekdays are quietest. Avoid rainy season for swimming. January water is cold. Visit right after rain for peaceful experience" },
+      { question: "Do I need to pay for beach facilities?", answer: "Loungers and umbrellas cost 50,000-75,000 VND but are free if you order food from beachfront restaurants. Parking fees apply for bicycles/motorbikes at some lots" },
+      { question: "Is An Bang Beach safe for swimming?", answer: "Generally safe with lifeguards and safety nets. Avoid during periods when illegal jet skis operate. Water may contain debris in non-managed areas; occasional jellyfish reported" },
+    ],
+    sentiment: {
+      positive: "Most visitors praise the clean sand, calm shallow water perfect for families, excellent beachfront dining, and peaceful atmosphere away from city crowds",
+      negative: "Recent storm damage and beach erosion reported. Garbage in non-managed areas and along shoreline. Aggressive illegal jet ski operators interfering with swimming. Coastal construction causing environmental damage",
+    },
   },
 }

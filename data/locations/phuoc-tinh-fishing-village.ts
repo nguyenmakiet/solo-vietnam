@@ -48,4 +48,32 @@ export const phuocTinhFishingVillage: Location = {
     travelTips:
       "Phước Tỉnh is the answer to the question of what Mũi Né's fishing village used to feel like before resort development enclosed it. The scale is larger - this is a proper fishing port, not a village - and the activity is more commercial, but the authenticity is complete. If mày is based in HCMC and wants a day trip that combines genuine working Vietnam with good food and a beach option afterward, the Phước Tỉnh morning market followed by Phước Hải or Lộc An beach in the afternoon is one of the best day-trip circuits available from the city. The drive along the Bà Rịa coast is underrated as a motorbike road.",
   },
+  insights: {
+    highlights: [
+      "Long, clean waterfront promenade with scenic views of Vũng Tàu and Đèo Nước Ngọt",
+      "Less crowded than nearby Phước Hải, mostly local visitors enjoying peaceful atmosphere",
+      "Fresh seafood restaurants with reasonable prices and small local eateries along the coast",
+    ],
+    thingsToKnow: {
+      crowds: "Less busy than Phước Hải; mostly local residents walking, few tourists",
+      difficulty: null,
+      safety: "Rocky underwater areas and water currents present; swimming not recommended",
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Visit during late afternoon and sunset for romantic scenery and pleasant sea breeze",
+      "Try local seafood dishes like bánh chén and steamed oysters at waterfront vendors",
+      "Bring a camera; the fishing boats along the shoreline create excellent photo opportunities",
+    ],
+    faq: [
+      { question: "Is it safe to swim at Bờ kè Phước Tỉnh?", answer: "Swimming is not recommended due to rocky underwater areas and water currents in the region." },
+      { question: "How crowded is this location compared to other beaches?", answer: "It is significantly less crowded than nearby Phước Hải, attracting mostly local residents rather than tourists." },
+      { question: "What is the best time to visit?", answer: "Late afternoon and sunset offer the most romantic scenery with pleasant sea breezes and beautiful lighting." },
+    ],
+    sentiment: {
+      positive: "Visitors praise the peaceful atmosphere, clean waterfront, affordable fresh seafood, and scenic beauty ideal for relaxation and photography",
+      negative: "Rocky underwater areas and water currents make swimming unsafe",
+    },
+  },
 }

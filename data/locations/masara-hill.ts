@@ -50,4 +50,32 @@ export const masaraHill: Location = {
     travelTips:
       "Masara is best approached as part of the Tà Năng-Phan Dũng trekking corridor or as a standalone side trip from Đà Lạt. For the Tà Năng trek, the hill is a natural add-on at the Lâm Đồng end of the route. For Đà Lạt visitors, it represents the kind of landscape - open, high, windswept grassland - that the Đà Lạt plateau used to have more of before development enclosed it. The pink grass season window is real and narrow. If mày is planning the trip specifically for the color, check conditions in the week before traveling - early season (early November) and late season (after mid-December) are significantly less impressive than peak.",
   },
+  insights: {
+    highlights: [
+      "Red dirt road leading to expansive grass hills with stunning sunrise and sunset views",
+      "Pink grass blooms October-December, ideal for camping and photography",
+      "Motorbike-accessible location near Đà Lạt with peaceful, remote highland atmosphere",
+    ],
+    thingsToKnow: {
+      crowds: "Increasingly popular day-trip destination with many visitors during peak season",
+      difficulty: "Final stretch has deep ruts and buffalo tracks; red dirt road slippery when wet or rainy",
+      safety: "Theft from tents during overnight camping reported multiple times; avoid going alone at night",
+      accessibility: "Cars can access during dry season but may need to park outside and use motorbike; motorbikes preferred year-round",
+      seasonal: "October-December best for pink grass; rainy season makes roads muddy and treacherous; extreme wind and cold nights year-round",
+    },
+    visitorTips: [
+      "Bring warm clothing and sleeping bag; nights are very cold with strong winds, especially late afternoon onward",
+      "Visit early morning for sunrise views and fog on grass; leave by 5pm as road lacks lighting and becomes dark",
+      "Pack trash bags and leave no waste; littering by day-trippers is a significant environmental problem",
+    ],
+    faq: [
+      { question: "Is it safe to camp overnight at Masara?", answer: "Overnight camping is possible but theft from tents has been reported multiple times. Keep valuables secure and avoid camping alone." },
+      { question: "What vehicle should I use to visit?", answer: "Motorbikes are ideal and work year-round. Cars can access during dry season but may need to park outside during peak times." },
+      { question: "When is the best time to visit?", answer: "October-December offers pink grass and clearer skies. Avoid rainy season when roads become muddy and slippery. Prepare for strong winds and cold regardless of season." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise stunning landscape, peaceful remote location, excellent for camping and photography with minimal insect/wildlife issues",
+      negative: "Significant environmental degradation from littering by day-trippers, reported theft during overnight camping, extreme weather conditions limit accessibility",
+    },
+  },
 }

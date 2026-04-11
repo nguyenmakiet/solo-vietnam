@@ -44,4 +44,32 @@ export const hangMua: Location = {
     travelTips:
       "Hang Mua is the most time-efficient viewpoint in Ninh Bình - 30 minutes up, 20 minutes down, and the view rivals anything in the region. It's far less visited than Trang An and Tam Cốc, so even on a moderately busy day the summit feels uncrowded. The combination of boat tour at Tam Cốc in the morning and Hang Mua climb in the afternoon is the single best half-day itinerary in Ninh Bình province.",
   },
+  insights: {
+    highlights: [
+      "Panoramic views of limestone karsts, rice paddies, and winding rivers from the summit",
+      "Well-maintained complex with lotus gardens, caves, boardwalks, cafés, and shops",
+      "Approximately 500 stone steps with scenic rest points and water shop midway",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely busy from 9AM onwards with tour buses. Early morning arrival (before 8:30AM) or sunset visits recommended to avoid peak crowds",
+      difficulty: "Steep stone steps requiring 15-30 minutes to climb depending on pace and stops. Steep and treacherous final section with sharp rocks and significant drop-offs",
+      safety: "Stone steps can be slippery in rain. Dragon statue area at summit has razor-sharp rocks with sheer drops on both sides—exercise extreme caution. Parking scams common; park at official ticket office for 5,000-15,000VND",
+      accessibility: "Not recommended for elderly or those with limited mobility due to steep climb and narrow summit area. Requires good hiking shoes for grip",
+      seasonal: "Visit early morning or near sunset for cooler weather. Lotus flowers bloom seasonally; present during lotus season but may not bloom other times",
+    },
+    visitorTips: [
+      "Arrive before 9AM to avoid crowds and heat. Early morning (5:30AM-8:30AM) offers emptiest conditions",
+      "Wear proper hiking shoes with good grip; stone steps are steep and can be slippery when wet",
+      "Bring plenty of water and light clothes. Water available at midway shop and summit, but bring your own",
+    ],
+    faq: [
+      { question: "What is the entrance fee and what does it include?", answer: "100,000VND per person (as of November 2025). Includes access to caves, boardwalks through lotus ponds, cafés, shops, and toilets. Bicycle parking additional 5,000VND" },
+      { question: "How long does the climb take?", answer: "15-20 minutes if climbing continuously at a fast pace. 20-30 minutes or longer if stopping to rest and take photos, or if visiting during crowded midday hours" },
+      { question: "Is there anything to do besides climbing?", answer: "Yes. Visit caves inside the complex, walk wooden boardwalks through lotus ponds, explore landscaped gardens with ponds and bonsai, dine at cafés, or rest at scenic rest points" },
+    ],
+    sentiment: {
+      positive: "Overwhelming majority found the summit views exceptional and worth the effort. Most appreciated the complex facilities and agreed early morning visits enhanced the experience",
+      negative: "Parking scams reported frequently. Some staff were unhelpful and rude. One visitor felt the site was overrated and artificially constructed. Crowding at summit can be chaotic",
+    },
+  },
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "dark-cave",
+  "google_rating": 4.4,
+  "google_review_count": 2203,
+  "insights": {
+    "highlights": [
+      "Zipline 400m across Chay River to cave entrance with stunning mountain views",
+      "Explore dark cave passages with headlamps, swim in blue lagoons, reach mud bath",
+      "Water park with kayaking, paddle boards, smaller ziplines, and inflatable activities"
+    ],
+    "thingsToKnow": {
+      "crowds": "Tour groups arrive around 1pm. Visit morning for fewer people. Can get busy in afternoons.",
+      "difficulty": "Moderate. Cave passages are narrow, muddy, and slippery. Weight limit 40-90kg on main zipline. Cold water in February.",
+      "safety": "Guide supervision varies; some reports of guides being disengaged during cave exploration. Ensure proper instruction before activities. Water is clean but cold.",
+      "accessibility": "Overweight visitors can take boat instead of zipline. Rope bridge obstacle course noted as nearly impossible for most people.",
+      "seasonal": "Avoid visiting immediately after typhoons as water activities are restricted. Water is cold in February."
+    },
+    "visitorTips": [
+      "Arrive morning around 10am before tour groups. Bring extra clothing and waterproof shoes for cave walking.",
+      "Book directly at Dark Cave restaurant/ticket office or through Klook. No advance booking required.",
+      "Spend full day: cave takes 1-2 hours, water park offers several hours of additional activities."
+    ],
+    "faq": [
+      {
+        "question": "What are the ticket prices?",
+        "answer": "Water park only 150k VND, with zipline 250k VND, full cave and mud bath package 450k VND. Locker deposit 50k VND (refundable). Summer discounts up to 50% available."
+      },
+      {
+        "question": "Is the cave tour long?",
+        "answer": "Cave exploration is approximately 1-2 hours total: 1km trek inside with headlamps, blue lagoon swimming, narrow muddy passages, then mud bath area before kayaking return."
+      },
+      {
+        "question": "Can I do activities if I exceed the weight limit?",
+        "answer": "Yes. Visitors over 90kg can take boat to cave entrance instead of the 400m zipline. Staff weigh guests if uncertain about limits."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise the unique experience combining zipline adventure, cave exploration with mud bath, and water activities as a memorable half to full day activity.",
+      "negative": "Some reports of inconsistent guide quality, with occasional disengagement and lack of supervision in cave. Water park equipment aging in places. Staff at river area reported as occasionally rude or unwelcoming."
+    }
+  }
+}

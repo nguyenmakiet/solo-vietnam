@@ -44,4 +44,32 @@ export const elephantWaterfall: Location = {
     travelTips:
       "Elephant Waterfall is the most physically engaging waterfall near Đà Lạt - the cave path behind the falls is the kind of experience that most visitors remember specifically. The falls are good in dry season for the cave path but best in rainy season for water volume. Combine with Pongour Waterfall (30km south) for a full southern Đà Lạt waterfall day.",
   },
+  insights: {
+    highlights: [
+      "One of the most powerful waterfalls in the province with powerful roar and mist",
+      "Adjacent Chùa Linh An pagoda offers free viewing platform near giant Quan Yin Buddha statue",
+      "Elephant Coffee shop provides paid alternative access (30,000-60,000 VND) with views from above",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Steep, rugged path down with around 100 steps. Muddy conditions possible. Use handrails and take it slow.",
+      safety: "Main entrance closed as of February 2026 with no reopening date announced. Unofficial paid access available via security guards and Elephant Coffee.",
+      accessibility: "Cave behind waterfall closed to public. Lower access temporarily closed. Best free views from Chùa Linh An pagoda platform.",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Access the waterfall via Elephant Coffee shop (50,000 VND fee) if main entrance closed",
+      "View falls free from Chùa Linh An pagoda platform near giant Buddha statue, no shoe removal needed outside temple",
+      "Bring appropriate footwear for steep, muddy paths. Watch your step and use handrails when descending",
+    ],
+    faq: [
+      { question: "Is the main entrance open?", answer: "Main entrance closed as of February 2026 with no announced reopening date. Access available via Elephant Coffee shop or free viewing from Chùa Linh An pagoda." },
+      { question: "How much does it cost to visit?", answer: "Chùa Linh An pagoda is free. Elephant Coffee charges 30,000-60,000 VND for waterfall access. Unofficial gate fees also reported." },
+      { question: "How difficult is the walk to the waterfall?", answer: "Steep path with approximately 100 steps down. Muddy conditions possible. Use handrails, wear appropriate footwear, and take it slow." },
+    ],
+    sentiment: {
+      positive: "Visitors praise the waterfall's power and impressive mist. Chùa Linh An pagoda highly appreciated for peaceful atmosphere and free viewing access.",
+      negative: "Main entrance closure frustrates visitors. Water and surroundings reported dirty/smelly in some reviews. Unofficial fees and unclear pricing criticized. Some found views from paid access underwhelming.",
+    },
+  },
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "hon-son-island",
+  "google_rating": 4.5,
+  "google_review_count": 887,
+  "insights": {
+    "highlights": [
+      "Pristine beaches including Bãi Bàng with coconut trees and white sand along mountainous coastline",
+      "Fresh, affordable seafood at local restaurants, significantly cheaper than nearby Phú Quốc island",
+      "Trekking to Ma Thiên Lành peak with panoramic views of turquoise waters and entire island"
+    ],
+    "thingsToKnow": {
+      "crowds": "Low visitor numbers keep the island relatively clean and untouched compared to commercialized alternatives",
+      "difficulty": null,
+      "safety": null,
+      "accessibility": "Limited electricity supply—only available 5 hours per day; plan accordingly before visiting",
+      "seasonal": "Strong winds reported; check weather conditions before swimming"
+    },
+    "visitorTips": [
+      "Allow 2 days to explore the island thoroughly; longer stays may lack sufficient activities",
+      "Take the mountain road around the island for spectacular scenic views and photography",
+      "Avoid center market restaurants which are expensive with lower quality; seek beachfront vendors instead"
+    ],
+    "faq": [
+      {
+        "question": "Is the water safe for swimming?",
+        "answer": "Water quality varies; some areas show pollution with garbage present. Check local conditions and beach cleanliness before swimming, especially at less-maintained beaches."
+      },
+      {
+        "question": "How much time should I spend on Hon Son?",
+        "answer": "Two days is ideal to experience beaches, villages, and trekking without excessive downtime due to limited attractions and entertainment options."
+      },
+      {
+        "question": "What are typical food prices?",
+        "answer": "Fresh seafood is cheaper than Phú Quốc. However, center market restaurants are expensive; beachfront restaurants offer better value and quality."
+      }
+    ],
+    "sentiment": {
+      "positive": "Majority praise island's peaceful untouched nature, friendly locals, fresh seafood, scenic beauty, and escape from commercialized tourism",
+      "negative": "Pollution and garbage accumulation on some beaches; limited electricity; some restaurants overpriced with poor quality; motorbike rentals expensive"
+    }
+  }
+}

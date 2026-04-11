@@ -42,4 +42,32 @@ export const thungNhamBirdPark: Location = {
     travelTips:
       "Thung Nham is the best bird-focused experience in Ninh Bình - more accessible than Vân Long and with a different bird focus (colonial nesting species rather than langurs). The April–August breeding season is the obvious target for wildlife travellers, but the park is pleasant year-round as a wetland boat experience. For non-birding travellers, the flooded karst valley landscape is comparable to Tràng An in its visual quality but with a completely different atmosphere - no large tour groups and the sounds of a working bird colony rather than tourist chatter.",
   },
+  insights: {
+    highlights: [
+      "Two included boat rides: one through Buddha Cave with bats, one to bird nesting areas",
+      "Expansive flower gardens and botanical landscaping with scenic viewpoints throughout",
+      "Large natural area explorable by bicycle with trails, caves, and bird observation points",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during midday (11am-2pm) and weekends; visit early morning (7:30am opening) or late afternoon (4pm+) for fewer tourists and more active birds",
+      difficulty: "Steep hills and long distances; electric tram available for 40k VND; Buddha Cave has ~450 steps; Mermaid Cave requires crouching; bicycles recommended over walking",
+      safety: null,
+      accessibility: "Electric tram shuttles available for 40k per person; some areas require physical fitness due to stairs and terrain",
+      seasonal: "Bird activity varies by season; winter and spring better for migratory birds; afternoon/evening (after 4pm) best for seeing birds roosting in trees; caves may be unsafe during certain conditions",
+    },
+    visitorTips: [
+      "Bring water, sunscreen, and swimwear; separate combo ticket (100k) required for hidden swimming pool area",
+      "Use bicycle for transportation around large park; scooters not allowed; parking costs 10-20k VND",
+      "Plan 3-4 hours minimum; boat rides included in 150k entry; electric tram 40k extra; unclear if all features included in base ticket",
+    ],
+    faq: [
+      { question: "What is included in the 150k entrance fee?", answer: "Two boat rides (Buddha Cave and Bird Island), access to all trails, gardens, and caves. Electric tram and pool access require separate fees." },
+      { question: "When is the best time to visit for bird watching?", answer: "Late afternoon (4pm+) when birds roost; early morning (7:30am opening) also active. Avoid midday heat. Winter/spring seasons have more migratory birds." },
+      { question: "How should I get around the park?", answer: "Bicycle is strongly recommended due to large distances; electric tram available for 40k. Walking is possible but long; scooters not permitted inside park." },
+    ],
+    sentiment: {
+      positive: "Visitors praise the beautiful landscaping, botanical gardens, bird boat rides, and peaceful nature trails; reasonable entrance fee for included amenities; excellent for photography",
+      negative: "Poor signage for non-Vietnamese speakers; entry/fee structure confusing and unclear; overcrowded during peak hours; fewer diverse birds than expected; some construction ongoing; restaurant quality poor; security staff described as aggressive",
+    },
+  },
 }

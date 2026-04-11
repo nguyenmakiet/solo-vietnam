@@ -43,4 +43,32 @@ export const thamMaPass: Location = {
     travelTips:
       "Don't rush through Thẩm Mã in the race to reach Đồng Văn - the views here are genuinely worth 20 minutes. The pass is most photogenic in the morning light when mist still sits in the valley below. If you're doing the loop over 3 days, Thám Mã typically falls on day 2 between Yên Minh and Đồng Văn overnight.",
   },
+  insights: {
+    highlights: [
+      "Dramatic winding road with panoramic views of mountain valleys from viewpoint",
+      "Best coconut coffee in Vietnam according to travelers; multiple cafes available",
+      "Popular photo stop with local ethnic minority children selling flowers for portraits",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded, especially during peak times. Increasingly busy each year with growing visitor numbers",
+      difficulty: null,
+      safety: "No dedicated car parking; vehicles park along roadside. Exercise caution when parking",
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Give modest donations to local children selling flowers and wreaths, avoid excessive amounts to discourage school dropout",
+      "Stop at roadside cafes for ginger-honey tea or coconut coffee while enjoying the views",
+      "Visit during off-peak times to avoid overwhelming crowds and better appreciate the landscape",
+    ],
+    faq: [
+      { question: "Is this viewpoint very crowded?", answer: "Yes, it is the most famous scenic viewpoint on Ha Giang Loop and gets very crowded. Consider visiting during off-peak times for better experience." },
+      { question: "How much should I give to local children selling flowers?", answer: "Give modest amounts (around 20,000 VND mentioned). Avoid excessive money as it discourages children from attending school." },
+      { question: "Where is Dốc Thẩm Mã located?", answer: "Located on Highway 4C between Ha Giang city and Dong Van-Meo Vac, approximately 10km from Yen Minh center." },
+    ],
+    sentiment: {
+      positive: "Travelers consistently praise the spectacular winding mountain road, stunning panoramic views, excellent coffee quality, and friendly local interactions",
+      negative: null,
+    },
+  },
 }

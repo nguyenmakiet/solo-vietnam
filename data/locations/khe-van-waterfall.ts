@@ -45,4 +45,32 @@ export const kheVanWaterfall: Location = {
     travelTips:
       "Khe Van is genuinely remote and that is its appeal - do not expect tourist facilities beyond a basic parking area and a few food stalls near the trailhead. Binh Lieu town has guesthouses and local restaurants and works well as a base for a one or two night stay. The waterfall pairs well with the Binh Lieu border trekking routes and Cao Ly Mountain if you want a full outdoor itinerary in the district. Late October and November add a bonus: the surrounding hills enter reed flower season and the entire Binh Lieu landscape shifts to a silver-white that is highly photogenic alongside the waterfall. If arriving from Ha Long, this makes an excellent detour on a self-drive loop rather than an out-and-back trip.",
   },
+  insights: {
+    highlights: [
+      "Multi-tiered waterfall with crystal-clear water and scenic mountain views in remote Bình Liêu",
+      "Free entrance with bike parking available; accessible by motorbike or car from nearby towns",
+      "Trekking destination featuring slippery rocks and surrounding ethnic minority villages",
+    ],
+    thingsToKnow: {
+      crowds: "Not crowded; peaceful and underdeveloped compared to popular tourist sites",
+      difficulty: "Easy access by road but slippery rocks require careful footing; some road construction ongoing",
+      safety: "Located near China border in Bình Liêu District; rocks are slippery when wet",
+      accessibility: "30 minutes by motorbike from Bình Liêu town center; road quality varies with some rough sections under development",
+      seasonal: "January shows lower water levels; summer offers cool refreshing water for swimming",
+    },
+    visitorTips: [
+      "Wear footwear with good grip; rocks become extremely slippery when wet",
+      "Visit during summer months for better swimming conditions and water flow",
+      "Combine with Hoành Mô loop or stay in Tiên Yên/Bình Liêu town for multi-day exploration",
+    ],
+    faq: [
+      { question: "Is there an entrance fee to visit the waterfall?", answer: "No, entrance is free. Bike parking costs 10,000 VND. A food village is being developed nearby." },
+      { question: "How do I reach the waterfall from Ha Long or nearby towns?", answer: "By motorbike (30 minutes from Bình Liêu center) or car. Road is drivable but some sections are rough and under construction." },
+      { question: "When is the best time to visit for swimming?", answer: "Summer offers the most water and cooler temperatures. January has lower water levels but still visitable." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly positive reviews praise the waterfall's natural beauty, crystal-clear water, multi-tiered structure, and peaceful undeveloped atmosphere ideal for trekking and escaping crowds",
+      negative: null,
+    },
+  },
 }

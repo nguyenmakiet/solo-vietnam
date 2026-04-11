@@ -1,0 +1,42 @@
+{
+  "slug": "ta-xua-mountain",
+  "google_rating": 4.8,
+  "google_review_count": 207,
+  "insights": {
+    "highlights": [
+      "Tenth highest peak in Vietnam at 2,865m with iconic dinosaur-shaped ridge formation",
+      "Cloud-hunting destination famous for sea of clouds between October and April",
+      "Ancient moss forest with mystical beauty, especially stunning at sunrise"
+    ],
+    "thingsToKnow": {
+      "crowds": "Few foreign tourists visit; relatively undeveloped and off the beaten track",
+      "difficulty": "Moderate to challenging trek with steep slopes, especially first 3 hours. Dinosaur spine section has sharp drops and strong winds requiring caution. Suitable for beginners with prior hiking experience",
+      "safety": "Narrow, steep terrain with deep ravines on both sides. Use walking sticks for muddy sections. Cable assistance available on some steep passages. Dinosaur spine requires careful footing and wind can be strong",
+      "accessibility": "Accessible via motorbike or car from Bac Yen (Son La) or Ban Cong (Tram Tau, Yen Bai). Motorbike taxi 4km to Cao Meo point costs 200,000 VND. Basic homestays in nearby towns; mountain huts available through porters for 100,000 VND per night",
+      "seasonal": "Best October to April for cloud views. Rainy season causes muddy, slippery trails. Dry sunny days allow convenient travel but reduce dramatic cloud formations"
+    },
+    "visitorTips": [
+      "Hire a motorbike taxi for the steep 4km section to Cao Meo point to conserve energy for main trek",
+      "Pack sun protection and sturdy hiking shoes with good grip for slippery rocky terrain",
+      "Join organized treks with guides and porters; costs approximately 1.8-2.5 million VND per person for 2-3 days"
+    ],
+    "faq": [
+      {
+        "question": "Can I summit Ta Xua in one day?",
+        "answer": "Partial day-trek possible to Turtle Rock at 2,400m in 3.5 hours. Full 2,865m summit typically requires overnight stay at mountain hut with porter support."
+      },
+      {
+        "question": "What is the dinosaur spine section?",
+        "answer": "Famous narrow ridge section with steep drops on both sides and strong winds. Requires careful footing and assistance cables. Many visitors find it challenging due to fear of heights."
+      },
+      {
+        "question": "When should I visit for best cloud views?",
+        "answer": "October to April offers best cloud formations. Morning hours typically provide most dramatic cloud displays, though weather-dependent and not guaranteed any given day."
+      }
+    ],
+    "sentiment": {
+      "positive": "Overwhelming praise for spectacular moss forest, dramatic cloud formations, and memorable personal achievement. Visitors appreciate local hospitality and unique trekking experience despite physical demands",
+      "negative": "Limited tourism infrastructure, basic accommodation, and remote location make access inconvenient. Some food establishments lack hygiene standards. Weather unpredictability means clouds not guaranteed"
+    }
+  }
+}

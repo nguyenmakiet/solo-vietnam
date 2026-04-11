@@ -50,4 +50,32 @@ export const baDenMountain: Location = {
     travelTips:
       "Ba Den is one of those places that functions on two levels simultaneously - as a natural landscape attraction for tourists and as an active spiritual site for Vietnamese pilgrims, particularly from the south. The two groups largely coexist without friction but have quite different experiences of the same mountain. If the religious architecture and pilgrimage culture is of interest, spending time at the main Ba Den temple at the base - rather than rushing to the summit - gives more insight into how the site actually functions for its primary users. The combination of Ba Den with a visit to the Cao Dai Great Temple in Tay Ninh town (the noon ceremony is at 12:00 PM) makes a logical and contrasting full-day itinerary from Ho Chi Minh City.",
   },
+  insights: {
+    highlights: [
+      "Cable car ascent offering scenic views of surrounding mountains, fields, and Dầu Tiếng Lake below",
+      "72-meter tall Lady Buddha bronze statue and 36-meter tall Laughing Buddha sandstone statue at peak",
+      "Sacred mountain combining spiritual temples with natural landscape at 986 meters elevation",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded during holidays, lunar new year, weekends, and festival days. Visiting weekdays or early morning (5:30-6:00 AM) recommended for peaceful experience",
+      difficulty: "Steep stairs required after cable car; escalators available in some areas. Footwear required for climbing sections",
+      safety: "Sandals/flip-flops prohibited for climbing sections; must wear proper footwear or purchase shoes at entrance gates",
+      accessibility: "Modern cable car system covers most elevation gain; escalators throughout temples and shrine areas minimize walking difficulty",
+      seasonal: "Misty conditions on cloudy days create atmospheric views; early morning visits offer sunrise views and cooler temperatures",
+    },
+    visitorTips: [
+      "Book tickets via Klook in advance to avoid long queues; arrive 5:30-6:00 AM for sunrise views",
+      "Bring water and snacks; buffet restaurant pricing high and quality inconsistent during peak hours",
+      "Visit on weekdays to avoid crowds; avoid buffet combo on holidays when service quality drops significantly",
+    ],
+    faq: [
+      { question: "When is the best time to visit?", answer: "Visit early morning (5:30-6:00 AM) on weekdays to avoid crowds, see sunrise, and enjoy cooler weather. Avoid holidays and weekends." },
+      { question: "What footwear should I wear?", answer: "Proper closed-toe shoes required for climbing sections. Sandals and flip-flops prohibited. Comfortable athletic shoes recommended." },
+      { question: "How long does the visit take?", answer: "Cable car ride takes minutes to reach near-peak. Full visit including temples, Buddha statues, and summit exploration typically 3-4 hours minimum." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise modern cable car infrastructure, breathtaking summit views, spiritual atmosphere, and well-maintained grounds with impressive Buddha statues",
+      negative: "Service quality at peak times is poor with long waits for buffet; food prices high for quality; crowding during holidays causes disorderly conditions; shoe purchase requirement controversial",
+    },
+  },
 }

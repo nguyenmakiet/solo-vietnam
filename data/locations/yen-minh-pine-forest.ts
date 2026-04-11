@@ -44,4 +44,32 @@ export const yenMinhPineForest: Location = {
     travelTips:
       "The pine forest is a mood shift on the loop - a respite from the dramatic exposure of the karst passes, quieter and more enclosed. Riders who rush through miss the particular quality of the forest morning light and mist. The 30-minute walk from any pullout into the forest interior, where the trees are denser and the road inaudible, is one of the more meditative experiences available on a loop that is otherwise about movement and views. Yên Minh town, at the forest exit, is a better overnight stop than its facilities suggest - the guesthouses are basic but the town is quiet and the morning ride from Yên Minh toward Đồng Văn the next day is the best single day of riding on the loop.",
   },
+  insights: {
+    highlights: [
+      "Pine forest at high altitude offers cool respite from mountain heat during Ha Giang Loop",
+      "Small local cafe serves inexpensive drinks, tea, and snacks with friendly owners",
+      "Steep hill accessible by motorbike provides photo opportunities and views through pine trees",
+    ],
+    thingsToKnow: {
+      crowds: "No wait times; very quiet and calm atmosphere",
+      difficulty: "Steep hill requires careful motorbike riding in first gear; walking alternative available",
+      safety: null,
+      accessibility: "Located right next to highway; easily accessible as roadside stop",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Use first gear when riding motorbike up the steep pathway to avoid difficulties",
+      "Be cautious of wasps near the WC facilities; toilet conditions are very poor",
+      "Avoid littering; significant trash pollution exists despite bins being available",
+    ],
+    faq: [
+      { question: "How difficult is it to ride a motorbike up the hill?", answer: "The hill is steep; use first gear. If uncomfortable, park at the bottom and walk up instead." },
+      { question: "What facilities are available at the pine forest?", answer: "Local cafe sells drinks, tea, snacks, and beer at reasonable prices. Benches and plastic chairs available for rest." },
+      { question: "Is it worth stopping here during the Ha Giang Loop?", answer: "Yes, recommended as a break from driving with cool atmosphere and photo opportunities, though not essential." },
+    ],
+    sentiment: {
+      positive: "Travelers appreciate it as a refreshing mountain stop with pleasant pine forest atmosphere and good local food",
+      negative: "Significant litter and trash pollution from visitors; poor toilet conditions and wasps present",
+    },
+  },
 }

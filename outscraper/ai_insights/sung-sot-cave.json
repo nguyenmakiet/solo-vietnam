@@ -1,0 +1,42 @@
+{
+  "slug": "sung-sot-cave",
+  "google_rating": 4.5,
+  "google_review_count": 11539,
+  "insights": {
+    "highlights": [
+      "Massive chambers with ceilings up to 30-60 meters high, resembling natural cathedrals",
+      "Impressive stalactites and stalagmites illuminated by artificial and natural sunlight",
+      "Panoramic views of Ha Long Bay's limestone islands from the cave exit"
+    ],
+    "thingsToKnow": {
+      "crowds": "Extremely crowded, especially midday. Expect long queues at entrance; visit early morning to avoid. Thousands of visitors daily from multiple cruise ships.",
+      "difficulty": "Moderate. Steep initial climb of 50-100 steps to entrance; uneven rocky pathways inside cave. Well-maintained concrete stairs and walkways allow access for most ages. One-way traffic system prevents backtracking.",
+      "safety": "Cave is well-ventilated with natural sunlight filtering through openings; not claustrophobic. One-way route means you must complete full journey—tender boat departs from exit point only.",
+      "accessibility": "Accessible by boat to island. Concrete stairs and pedestrian paths accommodate visitors of various abilities. Last admission around 4 PM.",
+      "seasonal": "Visit in low season still experiences significant crowds. Weather affects comfort; cool cave interior provides relief from outside heat."
+    },
+    "visitorTips": [
+      "Arrive early or visit morning to minimize crowds and queues lasting 30+ minutes",
+      "Wear comfortable shoes with good grip for steep stairs and uneven rocky pathways",
+      "Book a guide for context on rock formations resembling animals, mythical creatures, and local legends"
+    ],
+    "faq": [
+      {
+        "question": "How physically demanding is the cave visit?",
+        "answer": "Initial steep climb of 50-100 steps, plus uneven pathways inside. Manageable for most people, though not recommended for weak or unfit visitors. Well-maintained stairs aid accessibility."
+      },
+      {
+        "question": "How long does a typical visit take?",
+        "answer": "45-60 minutes from disembarking at pier to returning to boat, including entrance queues and cave exploration."
+      },
+      {
+        "question": "Can I exit midway through the cave?",
+        "answer": "No. Once you start climbing, you must complete the full one-way route to the exit, as tender boats depart from the exit point only."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors consistently praise the scale of chambers, stunning rock formations, and impressive illumination. Most find the experience worth the effort and crowds, calling it a must-see Ha Long Bay highlight.",
+      "negative": "Extreme overcrowding and long waiting queues significantly diminish the peaceful atmosphere and experience quality, particularly midday."
+    }
+  }
+}

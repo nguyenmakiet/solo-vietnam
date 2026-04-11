@@ -39,4 +39,32 @@ export const hoQuocPagoda: Location = {
     travelTips:
       "Hộ Quốc Pagoda is easy to combine with a north Phú Quốc day that includes Cửa Cạn beach and Gành Dầu cape. The pagoda has a small café at the base selling drinks and simple vegetarian food. Photography is welcomed throughout the complex - the upper terrace gives one of the best elevated coastal views on the island.",
   },
+  insights: {
+    highlights: [
+      "Hilltop temple with panoramic sea views, mountains behind and ocean in front",
+      "Traditional Vietnamese architecture with jade Buddha statue and dragon staircase",
+      "Active monastery with peaceful, spiritual atmosphere perfect for meditation",
+    ],
+    thingsToKnow: {
+      crowds: "Tour buses arrive frequently during daytime. Early morning (before 7 AM) or late afternoon recommended to avoid crowds",
+      difficulty: "Multiple staircases throughout temple grounds. Curvy, well-paved road up hillside. Not accessible for those with mobility challenges",
+      safety: null,
+      accessibility: "Free entry and parking. Open 6 AM to 6 PM. Shoe removal required inside temples. Free loaner robes available if wearing shorts",
+      seasonal: "Extremely hot and humid during daytime, especially in summer. Trees block wind flow. Visit early morning for cooler temperatures and sunrise views",
+    },
+    visitorTips: [
+      "Arrive before 7 AM to avoid tour buses and crowds, enjoy calm atmosphere and sunrise",
+      "Book Grab ride with waiting time; road is curvy and difficult for taxis to navigate uphill",
+      "Wear modest clothing covering shoulders and knees, bring water and hat for daytime visits",
+    ],
+    faq: [
+      { question: "What are the opening hours and entrance fees?", answer: "Open 6 AM to 6 PM daily. Free entry and free parking. No entrance fee required" },
+      { question: "When is the best time to visit to avoid crowds?", answer: "Early morning before 7 AM offers calm atmosphere, fewer tourists, and sunrise views. Tour buses arrive frequently during daytime hours" },
+      { question: "What should I wear and bring?", answer: "Cover shoulders and knees. Bring water, hat, and fan for heat. Free loaner robes available if wearing shorts. Remove shoes inside temples" },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the spiritual atmosphere, architectural beauty, sea views, and peaceful environment despite touristic popularity",
+      negative: "One reviewer noted diminished spiritual atmosphere due to heavy tourist presence and lack of local worshippers",
+    },
+  },
 }

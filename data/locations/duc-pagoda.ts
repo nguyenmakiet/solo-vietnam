@@ -52,4 +52,32 @@ export const ducPagoda: Location = {
     travelTips:
       "Chùa Đục and Cổng Tò Vò are always visited together as part of the island's eastern loop - ride between them in a few minutes. The garlic fields are also in this area. Allocate around half a day for the eastern cluster (port - Cổng Tò Vò - Chùa Đục - garlic fields) before crossing to the northern cluster (Hang Câu - Núi Thới Lới).",
   },
+  insights: {
+    highlights: [
+      "Climb steep stone steps to hilltop with panoramic island views and volcanic crater rim",
+      "Ancient temple built into natural caves on mountainside with spiritual atmosphere",
+      "Located near Cổng Tò Vò; excellent sunrise viewing from nearby beach",
+    ],
+    thingsToKnow: {
+      crowds: "Minimal tourist crowds, especially on weekdays and during midday visits",
+      difficulty: "Steep stone stairs and inclined paths require moderate fitness; dense vegetation and uneven terrain on upper sections",
+      safety: "Visit during daytime only. Dangerous to stand near volcanic crater rim edge. Upper area has military outpost and can be disorienting; some visitors report getting lost",
+      accessibility: "Road to temple passes through cemetery; narrow road difficult for cars; limited shade during midday",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Visit late afternoon or early evening for better lighting and cooler temperatures than midday",
+      "Park vehicles at food stalls near entrance; support local vendors selling island produce and water",
+      "Combine visit with nearby Cổng Tò Vò and sunrise viewing from adjacent beach",
+    ],
+    faq: [
+      { question: "Is it safe to visit alone?", answer: "Yes, but visit during daytime. Upper areas near volcanic rim are dangerous. Dense vegetation can cause disorientation on summit paths." },
+      { question: "Will I see good views from the top?", answer: "Views of western island and Lý Sơn islet exist, but dense vegetation and overgrown trees now obstruct much of the panoramic volcanic crater vista." },
+      { question: "How do I get there from Cổng Tò Vò?", answer: "Follow main road about 200 meters uphill from Cổng Tò Vò. Route passes through large cemetery. Park at food stalls near temple entrance." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate spiritual atmosphere, historical significance, cultural importance to Lý Sơn island residents, unique cave temple architecture, and surrounding natural landscape",
+      negative: "Vegetation overgrowth blocks expected panoramic views; infrastructure underdeveloped; narrow access road; limited shading; cemetery location may discomfort some visitors",
+    },
+  },
 }

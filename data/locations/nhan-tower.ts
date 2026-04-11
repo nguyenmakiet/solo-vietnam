@@ -51,4 +51,32 @@ export const nhanTower: Location = {
     travelTips:
       "Phú Yên is one of the most rewarding provinces on the central coast for travellers who take time beyond the Gành Đá Đĩa photo stop. Tháp Nhạn is an ideal base for a full-day circuit: north to Gành Đá Đĩa and Bãi Môn–Mũi Điện, south to Vũng Rô Bay and Đại Lãnh Cape. The city is compact, pleasant, and largely unreshaped by beach tourism. The train makes it a natural one-night stop on the Hanoi–Ho Chi Minh City rail journey.",
   },
+  insights: {
+    highlights: [
+      "11th-century Cham brick tower standing 23.5 meters, built without visible mortar or cement",
+      "360-degree city views from hilltop with Đà River and surrounding countryside",
+      "Sculpture garden featuring Cham kingdom statues including apsara, garuda, and other deities",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Easy uphill walk taking several minutes, or electric shuttle available for those unable to walk",
+      safety: null,
+      accessibility: "Electric cart shuttle service available for visitors unable to walk up hill",
+      seasonal: "Visit in evening for less sun and sunset views; sunrise also recommended for photography",
+    },
+    visitorTips: [
+      "Electric shuttle costs 15,000 VND round trip or 10,000 VND one way; walking is free",
+      "Visit late afternoon or evening for best photography light and cooler temperatures",
+      "Allow 30 minutes for site exploration; visit adjacent Martyrs Memorial and exhibition room",
+    ],
+    faq: [
+      { question: "Is there an entrance fee?", answer: "No entrance fee. Only optional 15,000 VND round trip for electric shuttle up the hill." },
+      { question: "How long does it take to visit?", answer: "Walking up takes several minutes. Total visit time approximately 30 minutes including temple and sculptures." },
+      { question: "What is the best time to visit?", answer: "Evening for sunset and less sun exposure. Sunrise recommended for photography. Site closes around 6 PM." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the ancient Cham architecture, hilltop views, peaceful atmosphere, and cultural significance. Highly recommended as symbol of Tuy Hoa and Phu Yen province.",
+      negative: "One report of guard attempting to overcharge foreigner due to language barrier. Site described as small, requiring just one building visit.",
+    },
+  },
 }

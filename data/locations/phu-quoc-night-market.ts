@@ -40,4 +40,32 @@ export const phuQuocNightMarket: Location = {
     travelTips:
       "The night market is a reliable dinner option but not a bargain - seafood prices are tourist-facing. For cheaper eating, the local restaurants one block back from the market serve the same dishes at lower prices. The pearl jewelry stalls sell genuine Phú Quốc pearls but quality varies significantly - only buy from stalls with certification if you're spending serious money.",
   },
+  insights: {
+    highlights: [
+      "Massive seafood selection with fresh fish, prawns, crabs, and local specialties throughout market",
+      "Exotic street food options including rolled ice cream, coconut ice cream, and tropical fruits",
+      "Pearl jewelry stalls offering local products at competitive prices with bargaining opportunities",
+    ],
+    thingsToKnow: {
+      crowds: "Very busy and crowded, especially after 8 PM. Peak hours mean packed lanes and noise. Busiest time is 8 PM onwards. Arrives lively around 6 PM, quieter if you visit earlier",
+      difficulty: null,
+      safety: "Generally feels safe. Avoid taxis outside market; use Grab instead. Beware of counterfeit goods and poor-quality items. Ask prices before buying to avoid overcharging. Choose crowded restaurants for food safety",
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Arrive after 7 PM for lively atmosphere but before 8 PM peak crowds. Market opens from 3 PM, fully lights up at 6 PM",
+      "Buy small portions of multiple dishes to share and experience more variety. Ask for prices upfront to avoid being overcharged",
+      "Skip seafood displayed on ice; order from busy restaurants. Try exotic fruits, exotic meats like frog and crocodile, and locally-made crafts",
+    ],
+    faq: [
+      { question: "What time should I visit the night market?", answer: "Market lights up at 6 PM daily. Best time is after 7 PM for lively energy without peak 8 PM+ crowds. Stalls open from 3 PM; market closes around midnight depending on tourist numbers" },
+      { question: "Is the food safe to eat at the night market?", answer: "Choose restaurants that look clean and busy. Avoid seafood displayed on ice as it may be less fresh. Crowded stalls typically indicate good quality and food safety" },
+      { question: "Are prices expensive compared to other Vietnam markets?", answer: "Prices are reasonable but higher than Ben Thanh Market in Ho Chi Minh City. Bargaining is possible at some stalls. Compare prices between stalls before purchasing" },
+    ],
+    sentiment: {
+      positive: "Travelers consistently recommend this as a must-visit destination for authentic local food experience, vibrant atmosphere, fresh seafood variety, and unique souvenirs. Praised for energy, colors, and overall experience despite tourist crowds",
+      negative: "Prices higher than other Vietnam markets. Some find it overly touristy and crowded during peak hours. Counterfeit goods and poor-quality items present. Aggressive vendor sales tactics can be annoying. One visit may be sufficient for some",
+    },
+  },
 }

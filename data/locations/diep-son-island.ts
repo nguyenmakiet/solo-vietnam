@@ -50,4 +50,32 @@ export const diepSonIsland: Location = {
     travelTips:
       "Điệp Sơn is most rewarding for visitors who stay overnight rather than attempting a same-day return from Nha Trang - the 80km distance and 1-hour boat crossing make a day trip logistically tight, and the island at dawn before day visitors arrive is a different experience to the midday hours. The sandbar is the centrepiece but the broader appeal of Điệp Sơn is its remoteness relative to the rest of Khánh Hòa's island destinations - no cable cars, no floating bars, no jet skis. For travellers moving along the coast between Hội An and Nha Trang, Vạn Ninh makes a logical overnight stop and Điệp Sơn justifies the detour from the main highway.",
   },
+  insights: {
+    highlights: [
+      "Walk across natural sandbar connecting islands at low tide, visible around 4-5 AM",
+      "Fresh seafood meals included with day trips and overnight stays",
+      "Peaceful island experience with local families, minimal crowds outside peak hours",
+    ],
+    thingsToKnow: {
+      crowds: "Popular Instagram spot during day trips; overnight stays are quieter with fewer visitors",
+      difficulty: null,
+      safety: null,
+      accessibility: "Speedboat access only via Van Gia port; bumpy rides with high-speed boats; rough sand mixed with stones",
+      seasonal: "Best visited during dry season (December-June); water very cold in December; sandbar visibility depends on tidal timing",
+    },
+    visitorTips: [
+      "Arrive very early (4-5 AM) to see the full sandbar before it submerges at high tide",
+      "Stay overnight for peaceful experience; prepare for no air-conditioning and limited power availability",
+      "Pack tolerance for basic facilities, windy conditions, and bumpy boat rides from Nha Trang",
+    ],
+    faq: [
+      { question: "When is the best time to see the sandbar connecting the islands?", answer: "Around 4-5 AM at lowest tide. The sandbar is not always visible and gets submerged at high tide." },
+      { question: "How much does a boat ticket to Diep Son cost?", answer: "Round-trip tickets range from 200,000-300,000 VND per adult from Van Gia port, approximately 20 minutes travel time." },
+      { question: "What should I expect for accommodation and facilities on the island?", answer: "Basic facilities with no air-conditioning, gasoline generators, limited power at night, basic toilets, and shared shower facilities at central areas." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate the peaceful atmosphere, natural landscape, fresh seafood, and unique sandbar experience, especially those with flexible expectations",
+      negative: "Sandbar visibility has decreased; facilities are basic and underdeveloped; some find the limited activities and rough sand disappointing; food quality inconsistent",
+    },
+  },
 }

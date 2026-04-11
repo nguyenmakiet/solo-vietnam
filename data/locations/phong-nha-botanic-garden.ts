@@ -40,4 +40,32 @@ export const phongNhaBotanicGarden: Location = {
     travelTips:
       "The botanic garden is the most accessible nature experience in Phong Nha - no guide required, no booking ahead, suitable for any fitness level. It's consistently overlooked by visitors who focus on the caves, which makes the trails unusually quiet even in peak season. The canopy walkway in particular is worth the small additional fee - the perspective over the jungle and the karst ridgeline is different from anything available at the cave sites. Combine with Mooc Spring (10 minutes away by bicycle) for a complete morning of jungle and water before an afternoon cave tour.",
   },
+  insights: {
+    highlights: [
+      "Jungle trekking with multiple trail options leading to Gió Waterfall and natural swimming holes",
+      "Well-marked paths through tropical rainforest with rope-assisted rocky sections and bamboo bridges",
+      "Located 17 minutes from Phong Nha town within Phong Nha-Ke Bang National Park UNESCO site",
+    ],
+    thingsToKnow: {
+      crowds: "Not crowded compared to cave tours; peaceful and uncrowded atmosphere",
+      difficulty: "Easy to moderate jungle walk; steep and slippery sections near waterfall; rock scrambling with ropes; rocky descent to waterfall base can be challenging",
+      safety: "Trail is well-marked with clear signage; some visitors have slipped on wet rocks near waterfall; snakes present but rare and not encountered casually; bring insect repellent for mosquitoes",
+      accessibility: "Not suitable for less mobile people; rocky terrain, uneven paths, and steep sections; rope assistance provided on difficult parts",
+      seasonal: "Best visited April-June when water flows abundantly; can be hot and humid; paths become slippery after rain",
+    },
+    visitorTips: [
+      "Wear sturdy waterproof shoes or prepare to remove them at water crossings; bring insect repellent for mosquitoes",
+      "No food or drinks available; bring water and snacks; small cafe at entrance with fair prices",
+      "Budget 40-90 minutes for short route to waterfall, 1.5-2.5 hours for full loops; counterclockwise trail direction ends at swimming hole",
+    ],
+    faq: [
+      { question: "How long does it actually take to hike here?", answer: "Short waterfall route: 30-40 minutes roundtrip. Small loop: 1.5 hours. Long loop: advertised as 3 hours but most finish in 1.5-2.5 hours depending on pace and stops." },
+      { question: "What is the current entrance fee?", answer: "Entrance fee is 80,000 VND per adult (recently increased from 40,000 VND). Motorcycle parking: 5,000 VND. Car parking: 10,000 VND." },
+      { question: "Can I swim here and what should I bring?", answer: "Yes, two swimming spots available including natural pool at waterfall base. Bring swimwear, towel, water, insect repellent, and sturdy shoes. No food vendors on trails." },
+    ],
+    sentiment: {
+      positive: "Most visitors appreciate the jungle trekking experience, waterfall, natural swimming areas, and peaceful uncrowded atmosphere. Praised for being worth the entrance fee and well-maintained trails.",
+      negative: "Some disappointed it is not a traditional botanical garden with flowers. Recent entrance fee increase from 40k to 80k considered exaggerated. Viewpoint lacks views due to overgrowth. Some find limited attractions beyond waterfall.",
+    },
+  },
 }

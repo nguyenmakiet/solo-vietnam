@@ -40,4 +40,32 @@ export const vietHaiVillage: Location = {
     travelTips:
       "Việt Hải is the most distinctive experience available from Cát Bà Island - genuinely isolated, genuinely working, and reached by genuinely adventurous means. The kayak-in, cycle-out combination (or reverse) is the best format for travellers with a full day. Overnight stays in a village homestay are available and strongly recommended - the village after the day visitors leave is one of the most peaceful environments in northern Vietnam. The difficulty of access is what preserves the village's character, and it makes the arrival feel earned regardless of which route mày takes.",
   },
+  insights: {
+    highlights: [
+      "Fish spa with small fish nibbling at your feet for foot exfoliation",
+      "Scenic bicycle ride to and from the village through Cat Ba Island countryside",
+      "Guided jungle treks to Hang Tien Duc cave and abandoned villages with local meals",
+    ],
+    thingsToKnow: {
+      crowds: "High tourist traffic, especially from cruise ships during daytime; quieter in early morning and evening when tour groups depart",
+      difficulty: null,
+      safety: null,
+      accessibility: "Limited infrastructure; village accessible by electric cart or bicycle from port; free bicycles available",
+      seasonal: "February offers cold, foggy weather that creates atmospheric conditions; weather appears variable by season",
+    },
+    visitorTips: [
+      "Stay overnight at a homestay to experience village life when fewer tourists are present",
+      "Rent a bicycle for the journey to fully enjoy coastal scenery at relaxed pace",
+      "Try the fish massage and local countryside cuisine; wear shoes you can easily remove",
+    ],
+    faq: [
+      { question: "Is Viet Hai authentic or overly touristy?", answer: "Village caters to tourism but remains relatively undeveloped. Consider staying overnight to experience quieter village life away from day-tripper crowds from cruise ships." },
+      { question: "How do I reach Viet Hai village?", answer: "Ferry from cruise ship port to harbor, then choose electric cart or bicycle to reach village. Bicycle recommended for enjoying coastal scenery." },
+      { question: "What activities are available in Viet Hai?", answer: "Fish spa foot treatment, cycling around village, jungle trekking to cave and abandoned settlements, viewing water buffalo and butterflies, local cuisine." },
+    ],
+    sentiment: {
+      positive: "Most visitors appreciate the peaceful countryside atmosphere, scenic bicycle rides, local cuisine, and friendly villagers. Fish spa is widely recommended.",
+      negative: "Some find the village overly staged for tourists, lacking authenticity compared to other rural Vietnam destinations like Sa Pa",
+    },
+  },
 }

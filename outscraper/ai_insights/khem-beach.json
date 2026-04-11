@@ -1,0 +1,42 @@
+{
+  "slug": "khem-beach",
+  "google_rating": 4.3,
+  "google_review_count": 1901,
+  "insights": {
+    "highlights": [
+      "White sand beach with abundant palm trees providing natural shade throughout the day",
+      "Well-maintained by dedicated cleaning staff; lifeguards on duty for swimmer safety",
+      "Multiple beach clubs and restaurants; sunbeds available at 100-150k VND per 4 hours"
+    ],
+    "thingsToKnow": {
+      "crowds": "Gets crowded by mid-morning; arrive before 8 am for peaceful experience. Morning peak time around 10 am when free sunbeds fill up quickly. Less crowded in northern Phu Quoc beaches.",
+      "difficulty": null,
+      "safety": "Lifeguards present. Some reports of security guards restricting access near Marriott hotel section. Water can be shallow in areas.",
+      "accessibility": "Easy parking for scooters nearby. Paid bathrooms and changing rooms (10,000 dong). Towel rental available (20k VND). No small shops; only restaurants with higher prices.",
+      "seasonal": "Can be busier during Tet holiday period (late December-early January). Water may contain floating trash due to sea currents and open ocean exposure."
+    },
+    "visitorTips": [
+      "Arrive before 8 am to avoid crowds and secure free sunbeds before they fill up by 10 am",
+      "Bring sun protection as tropical sun is strong by mid-morning; explore quieter spots further along shore",
+      "Bring own towel to save money; skip restaurant drinks and meals as prices are high (250k+ per plate)"
+    ],
+    "faq": [
+      {
+        "question": "What time should I arrive to avoid crowds?",
+        "answer": "Arrive before 8 am for a peaceful, crowd-free experience. Free sunbeds fill up quickly by 10 am. Morning visits are significantly less crowded than afternoons."
+      },
+      {
+        "question": "How much do sunbeds cost and what else requires payment?",
+        "answer": "Sunbeds cost 100-150k VND per 4 hours (some free if you buy food/drinks). Bathrooms: 10k VND. Towel rental: 20k VND. Beach bar drinks: 50-150k VND. Meals: 250k+ VND."
+      },
+      {
+        "question": "Is the water clean and safe for swimming?",
+        "answer": "Water quality varies by area. Some sections have trash due to sea currents. Shallow waters make it suitable for families with small children. Lifeguards are present."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise white sand, palm tree shade, cleanliness efforts, and turquoise water. Many rate it best beach on Phu Quoc island with relaxing atmosphere and good amenities.",
+      "negative": "Significant plastic and trash pollution in water and sand from ocean currents. Overcrowding during peak hours. High prices for sunbeds, food, drinks, and facilities. Construction noise reported in some areas."
+    }
+  }
+}

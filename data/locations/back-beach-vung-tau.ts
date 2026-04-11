@@ -48,4 +48,32 @@ export const backBeachVungTau: Location = {
     travelTips:
       "Back Beach is not a pristine destination - it is a heavily used urban beach resort serving the largest city in Vietnam. Its value is exactly that: a well-developed, reliably enjoyable beach day with good food, easy logistics, and the specific energy of a place where a city goes to decompress. If mày is based in HCMC and wants a proper beach day without flying or a long journey, Vũng Tàu Back Beach is the answer. The ferry makes the trip feel like more of an event than the highway drive. For travelers looking for quiet or undeveloped coastline, the beaches south of Vũng Tàu city - Long Hải, Phước Hải, Phước Tỉnh - are the right alternatives.",
   },
+  insights: {
+    highlights: [
+      "Wide sandy beach ideal for walking, swimming, and kite flying with gentle waves",
+      "Lively promenade with cafés, food stalls, seafood restaurants, and ice cream shops",
+      "Nearby attractions including Christ statue, Hòn Bà Temple on island, and Old Flag Pole Square",
+    ],
+    thingsToKnow: {
+      crowds: "Busy on weekends with locals and tourists; quieter Monday-Friday and early mornings",
+      difficulty: null,
+      safety: "Watch for strong currents and waves in deeper waters; black flags indicate unsafe swimming conditions",
+      accessibility: "Ongoing coastal development and construction affecting some facilities and beach access; some shower facilities unavailable during redevelopment",
+      seasonal: "Very hot during midday; best visited early morning (5:30-7:30 am) or after 5 pm",
+    },
+    visitorTips: [
+      "Rent beach chairs (50k VND each) and umbrellas; shower facilities cost 20k per person",
+      "Visit early morning to see fishermen return from trips and avoid afternoon heat and crowds",
+      "Bring cash for parking (10k VND), food vendors, and facilities; water pumps along shore may not work",
+    ],
+    faq: [
+      { question: "Is Back Beach safe for swimming?", answer: "Generally safe with gentle waves, but avoid deep waters with strong currents. Check for black flags indicating unsafe conditions. Water quality varies; some days have seaweed and debris." },
+      { question: "When is the best time to visit?", answer: "Early mornings (5:30-7:30 am) or after 5 pm to avoid peak heat and crowds. Weekdays less crowded than weekends. Avoid midday when very hot." },
+      { question: "What facilities and costs should I expect?", answer: "Beach chairs 50k VND each, showers 20k per person, parking 10k. Food stalls and restaurants nearby. Some facilities unavailable due to ongoing redevelopment work." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise the wide sandy beach, lively atmosphere, walkable promenade with good dining options, and improved city development with growing hospitality and services",
+      negative: "Significant litter and plastic pollution in water and on beach; garbage including diapers washing ashore; some water quality concerns and unswimmable conditions on certain days",
+    },
+  },
 }

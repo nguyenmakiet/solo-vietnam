@@ -1,0 +1,42 @@
+{
+  "slug": "diep-son-island",
+  "google_rating": 4.1,
+  "google_review_count": 275,
+  "insights": {
+    "highlights": [
+      "Walk across natural sandbar connecting islands at low tide, visible around 4-5 AM",
+      "Fresh seafood meals included with day trips and overnight stays",
+      "Peaceful island experience with local families, minimal crowds outside peak hours"
+    ],
+    "thingsToKnow": {
+      "crowds": "Popular Instagram spot during day trips; overnight stays are quieter with fewer visitors",
+      "difficulty": null,
+      "safety": null,
+      "accessibility": "Speedboat access only via Van Gia port; bumpy rides with high-speed boats; rough sand mixed with stones",
+      "seasonal": "Best visited during dry season (December-June); water very cold in December; sandbar visibility depends on tidal timing"
+    },
+    "visitorTips": [
+      "Arrive very early (4-5 AM) to see the full sandbar before it submerges at high tide",
+      "Stay overnight for peaceful experience; prepare for no air-conditioning and limited power availability",
+      "Pack tolerance for basic facilities, windy conditions, and bumpy boat rides from Nha Trang"
+    ],
+    "faq": [
+      {
+        "question": "When is the best time to see the sandbar connecting the islands?",
+        "answer": "Around 4-5 AM at lowest tide. The sandbar is not always visible and gets submerged at high tide."
+      },
+      {
+        "question": "How much does a boat ticket to Diep Son cost?",
+        "answer": "Round-trip tickets range from 200,000-300,000 VND per adult from Van Gia port, approximately 20 minutes travel time."
+      },
+      {
+        "question": "What should I expect for accommodation and facilities on the island?",
+        "answer": "Basic facilities with no air-conditioning, gasoline generators, limited power at night, basic toilets, and shared shower facilities at central areas."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors appreciate the peaceful atmosphere, natural landscape, fresh seafood, and unique sandbar experience, especially those with flexible expectations",
+      "negative": "Sandbar visibility has decreased; facilities are basic and underdeveloped; some find the limited activities and rough sand disappointing; food quality inconsistent"
+    }
+  }
+}

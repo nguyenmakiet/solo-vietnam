@@ -47,4 +47,32 @@ export const plateRockReef: Location = {
     travelTips:
       "Ghềnh Đá Đĩa is the kind of place where the formation itself is the entire point - there is no nearby town, no beach, and limited facilities beyond a few drink stalls at the entrance. Plan to spend 1–2 hours, combine it with other Phú Yên coastal stops, and time arrival for low tide if possible. The reef has appeared in enough travel photography that some visitors arrive with specific compositions in mind - the reality matches the photos, which is not always the case with natural landmarks. Phú Yên remains one of the least-touristed coastal provinces in central Vietnam, and the reef sees a fraction of the crowds that equivalent formations would attract further south.",
   },
+  insights: {
+    highlights: [
+      "Rare hexagonal and pentagonal basalt columns formed by ancient volcanic lava, one of only four to five similar sites globally",
+      "Scenic coastal location 35-37 km from Tuy Hoa City with nearby attractions like Gành Đèn Lighthouse and Ô Loan Lagoon",
+      "Best photography at sunrise, sunset, or early morning before tour buses arrive with crowds",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during holidays and Tet; tour buses typically arrive after 10am. Early morning (5-6am) or late afternoon (4-6pm) visits are quieter",
+      difficulty: "Easy walk with stairs and rock climbing required. Long exposure to intense sun with no shade; extremely hot during midday hours",
+      safety: null,
+      accessibility: "No public transportation; hire driver, Grab, or join organized tour. Roads have bumpy sections under construction; no streetlights after dark",
+      seasonal: "Avoid typhoon season; litter issues reported post-flooding. Weather is very hot year-round",
+    },
+    visitorTips: [
+      "Bring umbrella, hat, sunscreen, comfortable non-heeled shoes, and plenty of water for sun protection",
+      "Visit very early (before 10am) or late afternoon (4-6pm) to avoid crowds and intense midday heat",
+      "Free umbrellas available at parking lot (tips accepted); rental scooters available from Tuy Hoa for scenic 50-minute ride",
+    ],
+    faq: [
+      { question: "When is the best time to visit to avoid crowds?", answer: "Arrive before 10am or between 4-6pm. Avoid Tet and holiday periods. Early morning sunrise visits (5am) are quietest but roads lack streetlights." },
+      { question: "What is the entry fee and parking cost?", answer: "Tickets 20,000-40,000 VND per person; children free. Parking 2,000-5,000 VND for bikes. Electric carts available from entrance to rock formations." },
+      { question: "How hot is it and what should I bring?", answer: "Extremely hot with no shade; rocks get very hot. Bring umbrella, hat, sunscreen, water, and comfortable shoes. Free umbrellas available at parking with optional tips." },
+    ],
+    sentiment: {
+      positive: "Vast majority praise unique geological formations, peaceful coastal setting, excellent for photography at sunrise/sunset, well-organized tourist facilities with food and souvenir shops",
+      negative: "Overcrowded during peak times making photography difficult, significant litter and waste management issues, high parking fees charged inconsistently, roads under construction with bumpy sections, commercialization diminished authenticity, ticket prices considered overpriced by some",
+    },
+  },
 }

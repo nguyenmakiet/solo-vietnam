@@ -48,4 +48,32 @@ export const khauPhaPass: Location = {
     travelTips:
       "Khau Phạ is not just a road to Mù Cang Chải - it is itself one of the defining experiences of the northern Vietnam motorbike circuit. The combination of the Tú Lệ approach through valley farmland, the forest climb to the pass, and the vertiginous descent into the terrace landscape below is a sequence that most riders remember as one of the best half-days of riding in Vietnam. If mày is doing the northwest loop from Hanoi - Nghĩa Lộ, Mù Cang Chải, Tú Lệ, Sơn La, Điện Biên - Khau Phạ is the highlight of the eastern leg. Allocate the whole day for Tú Lệ to Mù Cang Chải rather than treating it as a transit stage.",
   },
+  insights: {
+    highlights: [
+      "Dramatic mountain pass with stunning panoramic views of rice fields and landscapes",
+      "Popular spot for paragliding with convenient hills for the sport",
+      "One of Vietnam's four great mountain passes, connecting Văn Chân to Mù Cang Chải District",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Numerous sharp bends make driving challenging; especially dangerous in fog with no barriers or warning signs",
+      safety: "Road deteriorated from lack of maintenance; falling stones from mountains possible; weak red basalt soil foundation causes erosion",
+      accessibility: null,
+      seasonal: "Weather similar to Đà Lạt; fog presents hazards for drivers",
+    },
+    visitorTips: [
+      "Stop at viewpoint approximately 1km beyond Google pin (heading north) for exceptional photo opportunities",
+      "Food stalls available along the pass; plan meals accordingly",
+      "Exercise extreme caution when driving in foggy conditions due to sharp bends and lack of safety barriers",
+    ],
+    faq: [
+      { question: "Is the pass safe to drive in all weather conditions?", answer: "No. Fog significantly increases danger due to sharp bends, missing barriers, and falling stones. Road maintenance is poor with eroded sections." },
+      { question: "Where should I stop for the best views?", answer: "Stop approximately 1km beyond the Google Maps pin when heading north for incredible panoramic views and photo opportunities." },
+      { question: "What activities are available at Khau Phạ Pass?", answer: "Paragliding on convenient hills, scenic photography, and enjoying views of Tú Lê field and rice terraces in Mù Cang Chải District." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise spectacular scenery, dramatic landscapes, and scenic driving experience through one of Vietnam's major mountain passes",
+      negative: "Road safety concerns due to sharp bends, poor maintenance, falling rocks, lack of barriers, and dangerous fog conditions",
+    },
+  },
 }

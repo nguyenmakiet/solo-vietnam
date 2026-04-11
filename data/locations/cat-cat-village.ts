@@ -44,4 +44,32 @@ export const catCatVillage: Location = {
     travelTips:
       "Cat Cat is Sa Pa's most accessible village introduction - good for families, first-time visitors, or anyone with limited trekking ability. It's significantly more commercialised than Lao Chải or Tả Van deeper in the valley, but that doesn't make it inauthentic - the H'mong families here genuinely live and work here. If you want deeper cultural immersion, use Cat Cat as a warm-up and continue trekking down into Muong Hoa Valley toward Lao Chải and Tả Van.",
   },
+  insights: {
+    highlights: [
+      "Three waterfalls included with 150,000 VND entrance fee per adult",
+      "Traditional costume rentals available for authentic photo opportunities",
+      "Bamboo auditorium with cultural performances and aerial valley views",
+    ],
+    thingsToKnow: {
+      crowds: "Popular Instagram destination, heavily focused on tourist photography with repetitive souvenir shops",
+      difficulty: "Steep, narrow roads from Sapa city. Wooden stairs and platforms are slippery and deteriorating from moisture damage. Extensive walking required through village",
+      safety: "Motorcycle drivers at entrance request 100,000 VND round trip—bargain hard or use 10,000 VND electric cart (may require waiting) or walk 15 minutes instead",
+      accessibility: "Distance from ticket entrance to village requires transportation. Electric carts and motorcycle rides available but add extra costs",
+      seasonal: "August ideal for green terraced rice fields before harvest. June offers perfect weather with sunshine and clouds. Occasional rainfall and fog in monsoon season",
+    },
+    visitorTips: [
+      "Rent traditional ethnic clothing at village to avoid stress from carrying belongings and enhance photo opportunities",
+      "Use bamboo structures for photos rather than wooden platforms due to moisture-related deterioration and safety concerns",
+      "Budget extra costs: slide 40,000 VND, rides up/down 10,000 VND each, traditional photo shoots, souvenir shopping",
+    ],
+    faq: [
+      { question: "How do I get from the entrance to the actual village?", answer: "Take electric cart for 10,000 VND (may wait for full cart), walk 15 minutes, or negotiate motorcycle rides around 100,000 VND round trip with bargaining" },
+      { question: "Is the waterfall real?", answer: "Reviews report waterfalls are artificially created with diverted water and pipes, not naturally occurring" },
+      { question: "What's the best time to visit for good photos?", answer: "June and August offer ideal conditions—June has perfect sunshine, August shows lush green rice terraces. Avoid heavy fog which obscures valley views" },
+    ],
+    sentiment: {
+      positive: "Strong appeal for photography enthusiasts and cultural experience seekers; bamboo viewpoint and costume rentals highly valued",
+      negative: "Criticized as expensive tourist trap with artificial attractions, aggressive vendors, overpriced services, and limited authentic cultural immersion despite 150,000 VND entrance fee",
+    },
+  },
 }

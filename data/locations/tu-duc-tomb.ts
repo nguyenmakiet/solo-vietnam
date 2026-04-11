@@ -44,4 +44,32 @@ export const tuDucTomb: Location = {
     travelTips:
       "Tự Đức is the most atmospheric of the Huế tombs - the garden setting, the pine forest, and the pavilion over the lake give it a quality of lived-in melancholy that the more formal Minh Mạng and the more dramatic Khải Định don't have. It's the tomb that most rewards sitting down and staying a while rather than moving quickly through. The combination of all three major tombs in a single day is entirely feasible by motorbike and gives the full picture of Nguyễn royal funerary architecture across three very different aesthetic approaches.",
   },
+  insights: {
+    highlights: [
+      "Expansive 12-hectare complex with pine trees, lakes, pavilions, and stone bridges in serene park-like setting",
+      "Emperor Tu Duc's epitaph on Vietnam's largest stone tablet, transported 500+ km over four years",
+      "Well-maintained grounds with multiple family tombs including empress Le Thien Anh and adopted son Kien Phuc",
+    ],
+    thingsToKnow: {
+      crowds: "Can get moderately busy but grounds are vast enough to find quiet areas; less crowded than other Huế tombs",
+      difficulty: "Significant walking required with many slippery stairs; not wheelchair or stroller-friendly",
+      safety: null,
+      accessibility: "Limited accessibility; steep stairs, wet stone paths can be slippery in rainy seasons",
+      seasonal: "Visit early morning or late afternoon during hot season; rainy season offers more atmospheric conditions but surfaces become slippery",
+    },
+    visitorTips: [
+      "Hire a guide or bring detailed guidebook to understand architecture connections to emperor's life and Nguyen dynasty history",
+      "Plan 45 minutes to 2+ hours depending on pace; plenty of shade under pine trees for rest breaks",
+      "Combo tickets available covering citadel and multiple tombs offer better value than individual entry fees",
+    ],
+    faq: [
+      { question: "Where is Emperor Tu Duc actually buried?", answer: "His exact burial location is unknown; only the shrine is visible. The site functioned as his royal retreat during his lifetime (1864-1883)." },
+      { question: "How long should I spend here?", answer: "Plan 45 minutes minimum to 2+ hours for leisurely exploration including photography. Grounds are expansive with many pathways." },
+      { question: "Is there transportation around the site or information available?", answer: "English signage describes locations and significance. Audio guides and paid tours available at low cost. No internal transportation; considerable walking required." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as most serene and poetic royal tomb in Huế; visitors consistently recommend it as top mausoleum choice with thoughtfully preserved architecture and tranquil atmosphere",
+      negative: "Some construction/renovation ongoing at heritage buildings; entry fee considered steep at 200,000 VND; parking area vendors may pressure visitors to purchase items",
+    },
+  },
 }

@@ -40,4 +40,32 @@ export const duckStopPhongNha: Location = {
     travelTips:
       "The Duck Stop is the most useful stop in Phong Nha for independent travellers - more practical information is exchanged here in one evening than can be found in most guidebooks. The staff are experienced at helping people plan their cave itinerary, find tour partners to share costs, and understand what the different cave experiences actually involve. It's also simply a pleasant place to end a day of caving and jungle trekking. For travellers on their first night in Phong Nha, starting at the Duck Stop before planning the next day's activities is the most efficient approach.",
   },
+  insights: {
+    highlights: [
+      "Interactive duck feeding experience where you become a 'duck leader' and hand-feed ducks in water",
+      "Family-run operation with knowledgeable guides; includes farm tour, Vietnamese pancakes, and drink",
+      "Original Duck Stop location in Phong Nha with better service than copycat operations",
+    ],
+    thingsToKnow: {
+      crowds: "Visit late afternoon or outside tour group hours for a more intimate experience and better TikTok-style photos",
+      difficulty: null,
+      safety: null,
+      accessibility: "Wear shorts as you will get wet and dirty during duck interaction. Provided shoes protect your footwear",
+      seasonal: "Open during lunar new year when most attractions close. Best during dry weather, but possible in rain",
+    },
+    visitorTips: [
+      "Arrange Grab ride in advance; drivers rarely travel to this area. Ask driver to wait or arrange return ride upfront",
+      "Base package 100k VND includes drink, pancake, and duck experience. Optional 150k VND adds buffalo feeding and fishing",
+      "Arrive without tour groups for better photos. Staff provide photos and videos during your visit",
+    ],
+    faq: [
+      { question: "How much does it cost and what's included?", answer: "100,000 VND includes duck feeding experience, Vietnamese pancake, and drink. 150,000 VND adds buffalo and fishing activities. Staff provide shoes and wash facilities." },
+      { question: "How do I get there from Phong Nha town?", answer: "Take Grab, taxi, or bike. Grab rarely serves the area, so negotiate driver to wait or arrange return trip beforehand. Cycling from town is flat and easy." },
+      { question: "Is this the real Duck Stop or a copy?", answer: "This is the original Duck Stop in Phong Nha, which reviewers recommend over copycat locations. Better service and animal care standards." },
+    ],
+    sentiment: {
+      positive: "Uniformly praised as hilarious, memorable, and exceptional value. Visitors highlight genuine friendliness, excellent animal care, and unexpected entertainment quality",
+      negative: null,
+    },
+  },
 }

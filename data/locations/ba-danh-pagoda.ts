@@ -49,4 +49,32 @@ export const baDanhPagoda: Location = {
     travelTips:
       "Ba Danh is worth visiting precisely because of the gap between its cultural fame and its physical obscurity - one of Vietnam's most quoted proverbs points to a pagoda that almost nobody outside Hà Nam has actually seen. If mày is doing a day trip south of Hanoi and wants something with genuine character rather than another reconstructed heritage site with tour buses, this is a strong option. The proverb alone makes for good content - the story of why it became deserted (tigers, isolation, river floods) is more interesting than most temple origin stories.",
   },
+  insights: {
+    highlights: [
+      "300-year-old temple with well-preserved traditional northern Vietnamese architecture and original design",
+      "Peaceful, serene atmosphere with lush grounds ideal for walking and photography",
+      "Beautiful location backed by Ngọc mountain facing Đáy river with scenic setting",
+    ],
+    thingsToKnow: {
+      crowds: "Very quiet and rarely crowded; locals use the phrase 'as empty as Bà Đanh temple'. Expect solitude even during Tết, though temple closes at 6 PM during holidays.",
+      difficulty: null,
+      safety: null,
+      accessibility: "Difficult to locate without local knowledge. Enter via Trần Hưng Đạo road direction. Cầu Cấm Sơn bridge prohibits cars; do not rely on Google Maps for vehicle access.",
+      seasonal: "Summer offers cool, peaceful atmosphere. Winter afternoons become cold and desolate. Morning visits recommended for fresh air and to avoid evening closures.",
+    },
+    visitorTips: [
+      "Visit in the morning to enjoy fresh air and peaceful atmosphere before evening closures",
+      "Use Trần Hưng Đạo road entrance; avoid Cầm Sơn bridge which prohibits vehicle access",
+      "Ideal for introverts and those seeking quiet retreat from busy tourist temples",
+    ],
+    faq: [
+      { question: "Why is this temple called 'empty like Bà Đanh'?", answer: "It genuinely remains very quiet and rarely crowded compared to other temples, living up to the local saying. Even during Tết, visitor numbers remain minimal." },
+      { question: "What are the temple opening hours?", answer: "Temple closes at 6 PM during holidays. Morning visits are recommended to avoid closures and enjoy the peaceful atmosphere." },
+      { question: "How do I find the temple if I'm not local?", answer: "Enter from Trần Hưng Đạo road direction. Avoid Cấm Sơn bridge as it prohibits cars. The location is difficult to find without local knowledge." },
+    ],
+    sentiment: {
+      positive: "Most visitors appreciate the preserved traditional architecture, serene atmosphere, friendly locals, and escape from crowded tourist sites",
+      negative: "Ticket staff allegedly engaged in fraud by splitting one ticket to sell as two. Navigation difficulties for non-locals.",
+    },
+  },
 }

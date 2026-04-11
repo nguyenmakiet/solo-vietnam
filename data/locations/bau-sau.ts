@@ -50,4 +50,32 @@ export const bauSau: Location = {
     travelTips:
       "Cát Tiên National Park is the most accessible serious wildlife destination from Ho Chi Minh City and Bàu Sấu is its centrepiece attraction. The park rewards overnight stays - the evening and dawn periods in the forest are significantly more productive for wildlife than midday hours, and the night walks from the park headquarters offer the chance to see nocturnal species. Combine Bàu Sấu with the park's other activities: the gibbons at the Dao Tien Endangered Primate Species Centre, night drives, and the extensive bird list of over 350 species. For visitors who want a genuine encounter with southern Vietnam's remaining lowland forest and wildlife, Cát Tiên is the most practical option within range of HCMC.",
   },
+  insights: {
+    highlights: [
+      "Cycle 9km on paved path, then hike 5km through jungle to observe crocodiles at close range",
+      "Spot diverse wildlife including gibbons, langurs, hornbills, and rare bird species like kingfishers",
+      "Visit 400-year-old Tunga tree and enjoy viewing platforms with refreshments at the lake",
+    ],
+    thingsToKnow: {
+      crowds: "Early morning visits (8am) on weekdays have fewer tourists than peak hours",
+      difficulty: "Moderate hike with 5km jungle walk, minimal elevation gain, takes 1-1.5 hours depending on fitness",
+      safety: null,
+      accessibility: "Well-maintained concrete bike path and marked jungle trail; toilets and refreshments available at lake viewing area",
+      seasonal: "Hot days (37°C+) reduce crocodile activity; cooler days see more crocodiles emerging from water",
+    },
+    visitorTips: [
+      "Wear long pants, thick socks, boots, and hat to protect against leeches on the 5km jungle walk",
+      "Hire a guide to spot camouflaged wildlife and primates you would miss alone; lunch often included",
+      "Bring enough cash (VND); entrance fees total 60k ferry + 250k crocodile lake + 150k bike rental",
+    ],
+    faq: [
+      { question: "What are the total costs and payment methods?", answer: "Ferry: 60k VND/person, Crocodile Lake ticket: 250k VND/person (cash only noted), Bike rental: 150k VND/day plus 100k VND deposit. Bring sufficient cash." },
+      { question: "How long does the full visit take?", answer: "Ferry crossing, then 45-60 minutes cycling 9km, then 1-1.5 hours walking 5km to lake. Allow full day for comfortable pace with time at lake." },
+      { question: "What wildlife can I expect to see?", answer: "Crocodiles (multiple sightings likely), gibbons, langurs, Green Peafowl, hornbills, kingfishers, snakes, lizards, and various insects. Guide increases spotting success significantly." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise wildlife diversity, jungle experience, and scenic hiking despite price concerns; early starts and guides enhance satisfaction",
+      negative: "Some find it overpriced for crocodile viewing alone, with limited lake views; leeches and insects cause discomfort; cash-only payments caused access issues",
+    },
+  },
 }

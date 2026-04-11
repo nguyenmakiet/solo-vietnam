@@ -19,8 +19,16 @@ export const cuChiTunnels: Location = {
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.1416,106.4619",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775903510723!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRE9qdUw4bHdF!2m2!1d11.14139261872694!2d106.4621329297128!3f122.9925722937489!4f-23.206150953665357!5f0.7820865974627469", },
-  heroImage: heroUrl("cu-chi-tunnels-ho-chi-minh_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cu-chi-tunnel-5_w5okej"),
+  gallery: [
+    "cu-chi-tunnel-4_wzsfu0",
+    "cu-chi-tunnel_prhkx2",
+    "cu-chi-tunnel-5_w5okej",
+    "cu-chi-tunnel-2_daibnq",
+    "cu-chi-tunnel-3_jnha6g",
+    "cu-chi-tunnel-ho-chi-minh-6_ctrqmp",
+    "cu-chi-tunnels-ho-chi-minh-3_-_Copy_tnin31",
+  ],
   seoDescription:
     "Cu Chi Tunnels is a 250km network of underground passages used by Viet Cong guerrillas during the Vietnam War - one of the most remarkable feats of military engineering in history, now preserved as a living war museum 40km northwest of Ho Chi Minh City.",
   tips: [
@@ -39,5 +47,33 @@ export const cuChiTunnels: Location = {
       "The visit covers jungle walking trails connecting displays of original trapdoor entrances, ventilation shafts, booby trap reconstructions, and tunnel cross-section models showing the three-level structure. Visitors can descend into short crawlable tunnel sections (typically 20-50 metres) that have been widened from their original 60cm width. The site also includes a film screening showing wartime propaganda footage shot at Cu Chi, a weapons display, and a section showing how the Viet Cong manufactured shoes and weapons from scavenged materials. Ben Dinh is the more compact and visitor-ready site; Ben Duoc covers more ground, includes a large war memorial temple, and sees fewer tour groups.",
     travelTips:
       "Cu Chi works best as a half-day trip combined with a return to HCMC in the afternoon - the site itself takes 2-3 hours to cover properly. The historical weight of the place is best absorbed with a knowledgeable guide rather than wandering the displays independently. Most visitors come as part of a group tour, which is fine, but booking a private guide through the site allows for a more focused and less rushed experience. The shooting range is entirely optional and the noise carries across the site - some visitors find it jarring given the context.",
+  },
+  insights: {
+    highlights: [
+      "Crawl through narrow tunnel sections to experience soldiers' underground living conditions firsthand",
+      "See displays of booby traps, weapons, and manufacturing processes used during the Vietnam War",
+      "Fire replica weapons including AK-47 at the shooting range for an additional fee",
+    ],
+    thingsToKnow: {
+      crowds: "Gets extremely busy with tour groups, especially during peak season. Arrive early at opening to avoid crowds and enjoy the site fully",
+      difficulty: "Tunnels are very narrow and claustrophobic, requiring constant bending and crawling. Not recommended for claustrophobic visitors, those with heart issues, or taller visitors. Wear a hat to avoid head bumps. Some sections have no illumination",
+      safety: "Watch for bats in the tunnels. Mosquitoes present in the area. Gun range has bolted rifles; ammunition charged per bullet at approximately $2-3 USD per round",
+      accessibility: "Located 1.5-2 hours from central Ho Chi Minh City by car due to traffic. Multiple tunnel sections available; visitors can choose to crawl both, one, or skip tunnels entirely",
+      seasonal: "High tourist season results in congestion. Tunnels are very hot and humid, especially challenging during crawling sections",
+    },
+    visitorTips: [
+      "Book a small group tour instead of large group tours to avoid being rushed with 40+ people and allow time for photos",
+      "Wear comfortable clothes allowing full bending motion and a hat to protect your head in low-ceiling sections",
+      "Sample traditional wartime food like boiled cassava with salt and sesame, available at site cafes",
+    ],
+    faq: [
+      { question: "How physically demanding is crawling through the tunnels?", answer: "Very demanding. Tunnels are extremely narrow requiring constant bending over. Some sections require full crawling on hands and knees, especially unlit sections. Plan for significant physical exertion" },
+      { question: "Is a guided tour necessary or included?", answer: "At Bến Dương, guided tours are provided by default. At Bến Đình, free Vietnamese-language guided tours run periodically; ask staff. Both sites offer informative explanations without additional guide fee" },
+      { question: "How long should I plan to spend at Cu Chi Tunnels?", answer: "Plan 1.5-2 hours minimum for the main tour. Add 2 hours total travel time from Ho Chi Minh City. Additional time needed for shooting range or visiting the Bến Dược Temple" },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly positive reviews praising the historical significance, immersive experience of crawling through tunnels, educational value, and powerful understanding of Vietnamese resilience during wartime",
+      negative: "Some criticism of expensive shooting range charges, overcrowding during peak season, and limited value proposition given 2-hour travel distance for some visitors",
+    },
   },
 }

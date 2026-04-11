@@ -50,4 +50,32 @@ export const honSonIsland: Location = {
     travelTips:
       "Hòn Sơn occupies a good position in the Kiên Giang island hierarchy - more developed than the remote outer islands (Ba Hòn Đầm, Nam Du's outer islets) but completely different from the resort infrastructure of Phú Quốc. If mày wants a Gulf of Thailand island experience with clear water, real fishing community character, and the ability to rent a motorbike and explore independently, Hòn Sơn is the right choice. The 2-hour ferry from Rạch Giá is the barrier that keeps day-trippers away and maintains the island's low-key character. A 2-night stay is the minimum to properly cover the beaches and circuit.",
   },
+  insights: {
+    highlights: [
+      "Pristine beaches including Bãi Bàng with coconut trees and white sand along mountainous coastline",
+      "Fresh, affordable seafood at local restaurants, significantly cheaper than nearby Phú Quốc island",
+      "Trekking to Ma Thiên Lành peak with panoramic views of turquoise waters and entire island",
+    ],
+    thingsToKnow: {
+      crowds: "Low visitor numbers keep the island relatively clean and untouched compared to commercialized alternatives",
+      difficulty: null,
+      safety: null,
+      accessibility: "Limited electricity supply—only available 5 hours per day; plan accordingly before visiting",
+      seasonal: "Strong winds reported; check weather conditions before swimming",
+    },
+    visitorTips: [
+      "Allow 2 days to explore the island thoroughly; longer stays may lack sufficient activities",
+      "Take the mountain road around the island for spectacular scenic views and photography",
+      "Avoid center market restaurants which are expensive with lower quality; seek beachfront vendors instead",
+    ],
+    faq: [
+      { question: "Is the water safe for swimming?", answer: "Water quality varies; some areas show pollution with garbage present. Check local conditions and beach cleanliness before swimming, especially at less-maintained beaches." },
+      { question: "How much time should I spend on Hon Son?", answer: "Two days is ideal to experience beaches, villages, and trekking without excessive downtime due to limited attractions and entertainment options." },
+      { question: "What are typical food prices?", answer: "Fresh seafood is cheaper than Phú Quốc. However, center market restaurants are expensive; beachfront restaurants offer better value and quality." },
+    ],
+    sentiment: {
+      positive: "Majority praise island's peaceful untouched nature, friendly locals, fresh seafood, scenic beauty, and escape from commercialized tourism",
+      negative: "Pollution and garbage accumulation on some beaches; limited electricity; some restaurants overpriced with poor quality; motorbike rentals expensive",
+    },
+  },
 }

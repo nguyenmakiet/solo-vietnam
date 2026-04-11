@@ -50,4 +50,32 @@ export const muiTroFishingVillage: Location = {
     travelTips:
       "Mũi Trô is the kind of place that rewards travelers who are specifically looking for the unpackaged version of coastal Vietnam - a working fishing settlement, a wild beach, and a landscape that has not been modified into an attraction. It sits in a stretch of Bình Thuận coast between Phan Rí and La Gàn that is slowly being discovered by Vietnamese campers and photographers but has not yet been written up in any foreign-language source tao could find. The combination of Cô Thạch beach (base camp with some facilities), the coastal walk to Mũi Trô (genuine fishing village), and La Gàn Cape (lighthouse, dramatic rock formations) makes a coherent 1-2 day itinerary in an area mày will likely have largely to yourself.",
   },
+  insights: {
+    highlights: [
+      "Pristine, secluded beach with clear water ideal for camping overnight",
+      "Freshwater shower facilities and local food available on-site",
+      "Remote, untouched scenery accessible by motorbike or off-road vehicle",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Road access requires caution; sandy sections can trap vehicle wheels. Follow directional signs, not Google Maps navigation",
+      safety: "Safe for overnight camping according to visitors",
+      accessibility: "Best accessed by motorbike or all-terrain vehicle; challenging by regular car",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Follow posted directional signs at entrance instead of relying on Google Maps for route",
+      "Bring supplies for self-catering; fresh seafood and basic snacks available locally",
+      "Beach requires cleanup; bring bags to manage trash during your stay",
+    ],
+    faq: [
+      { question: "What vehicle should I use to access this beach?", answer: "Motorbike or all-terrain vehicle recommended. Regular cars risk getting stuck in sandy sections. Follow directional signs, not GPS" },
+      { question: "What facilities are available at the beach?", answer: "Freshwater shower and toilet facilities. Food vendors sell fresh seafood and snacks. Suitable for self-catering camping" },
+      { question: "Is the beach clean?", answer: "Beach condition varies; some reviews note debris from ocean. Camping area and facilities are well-maintained. Bring trash bags" },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the remote, pristine scenery, friendly owner, clean camping facilities, and safe overnight experience",
+      negative: "Beach has significant litter from ocean and surrounding sources requiring cleanup",
+    },
+  },
 }

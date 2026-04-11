@@ -45,4 +45,32 @@ export const phuocBinhBeach: Location = {
     travelTips:
       "Phuoc Binh Beach works best as a quiet stop while exploring the coastline between Long Hai, Phuoc Tinh, and Ho Tram. Travelers looking for lively beach resorts may prefer nearby destinations, but those who enjoy less crowded coastal landscapes will appreciate the slower pace here. The beach is exposed to south and southwest winds during the summer monsoon season, which occasionally makes the area suitable for activities such as kitesurfing. With its long shoreline, nearby fishing villages, and relatively light development, the area still retains some of the atmosphere of a traditional fishing coast just a short distance from Ho Chi Minh City.",
   },
+  insights: {
+    highlights: [
+      "Shallow, broad, long beach suitable for kitesurfing during summer monsoon season",
+      "Fishing village atmosphere with traditional boats and local life",
+      "Less crowded alternative with undeveloped, rustic character",
+    ],
+    thingsToKnow: {
+      crowds: "Not heavily touristed; fewer visitors compared to popular beach destinations",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Best for kitesurfing during summer monsoon season; windy conditions favor SW and S winds",
+    },
+    visitorTips: [
+      "Beach cleanliness varies; fishing village activities and waste present; swim carefully",
+      "Located on route to Long Hai, useful as stop-over destination",
+      "Visit Tết season for quieter experience with fewer tourists",
+    ],
+    faq: [
+      { question: "Is the beach clean and safe for swimming?", answer: "Beach has water quality concerns with murky seawater, visible trash, and continuous wastewater discharge. Few locals swim here due to these conditions." },
+      { question: "When is the best time to visit?", answer: "Summer monsoon season offers ideal kitesurfing conditions with strong SW and S winds. Tết period provides quieter experience with minimal crowds." },
+      { question: "What makes this beach different from other destinations?", answer: "Active fishing village with traditional boats and rustic, undeveloped character appeals to travelers seeking authentic scenery rather than tourist infrastructure." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate the untouched, rustic atmosphere and fishing village authenticity, particularly for those avoiding crowded beach destinations",
+      negative: "Poor water quality, excessive trash, wastewater discharge, and murky seawater limit swimming appeal",
+    },
+  },
 }

@@ -40,4 +40,32 @@ export const duGiaWaterfall: Location = {
     travelTips:
       "Du Già Waterfall is best paired with a night in Du Già Village - the trek is most enjoyable in the early morning before the day heats up, and returning to the village for lunch after the trek is the natural rhythm. The falls on their own don't require a dedicated trip to the eastern loop, but combined with the village homestay and the valley scenery, they make a compelling case for taking the eastern variant rather than the standard Ha Giang Loop route. For riders who have done the loop before and want new content, Du Già and its waterfall are the most consistent recommendation.",
   },
+  insights: {
+    highlights: [
+      "Natural swimming hole with cliff jumping at multiple heights suitable for varying comfort levels",
+      "Scenic motorcycle ride through Hà Giang Loop with stunning mountain and rice paddy views",
+      "Clear, cool water ideal for swimming and cooling off after long days of riding",
+    ],
+    thingsToKnow: {
+      crowds: "Very busy during morning hours when Ha Giang Loop tour groups stop (typically before 11:30am). Significantly quieter after midday or late afternoon. Weekends crowded with local swimmers by midday",
+      difficulty: "Easy 5-15 minute walk on flat dirt trail from parking. Road to parking is rough and narrow, requires careful motorcycle riding. GPS directions may lead to washed-out roads; use marked paved road near restaurants in Du Gia",
+      safety: "Strong underwater currents in pool can be dangerous even for strong swimmers. Rocks around pool are very slippery and sharp. Reports of local men photographing/filming women without consent. Lifeguard present at cliff jump with safety rules",
+      accessibility: "Motorbike parking available (20,000 VND fee). Accessible by standard motorbike with caution on rough road sections. Towel rental available. Toilets available for fee. Cannot accommodate vehicles unable to handle rough terrain",
+      seasonal: "Weather affects water temperature and crowd levels. Cold water year-round. Poor weather days have fewer visitors",
+    },
+    visitorTips: [
+      "Arrive by 2pm or after 11:30am to avoid large tour groups; 8am or midday are quietest times",
+      "Use paved road near Du Gia restaurants for parking, not Google Maps directions which may lead to washed-out roads",
+      "Bring swimsuit and towel; towel rental available. Wear water shoes or be very careful on slippery rocks",
+    ],
+    faq: [
+      { question: "When is the best time to visit to avoid crowds?", answer: "Visit after 2pm when morning tour groups depart, or arrive by 8am. Avoid weekends when locals swim by midday." },
+      { question: "Is the waterfall safe for swimming?", answer: "Water is clean but has strong currents that can be dangerous. Rocks are very slippery and sharp. Weak swimmers should exercise caution or avoid water entry." },
+      { question: "How difficult is the road to reach the waterfall?", answer: "Road is rough and narrow requiring careful motorcycle riding. Walking trail is easy and flat (5-15 minutes). Avoid Google Maps directions; use paved road near Du Gia restaurants." },
+    ],
+    sentiment: {
+      positive: "Majority of visitors praise natural scenery, clear water, swimming and cliff jumping experience, short easy walk, and scenic motorcycle journey through mountains",
+      negative: "Excessive crowds during morning tour group hours with loud music and party atmosphere. Strong dangerous currents. Slippery sharp rocks. Reports of inappropriate photographing of women. Noise pollution detracts from natural experience",
+    },
+  },
 }

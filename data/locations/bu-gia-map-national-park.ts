@@ -50,4 +50,32 @@ export const buGiaMapNationalPark: Location = {
     travelTips:
       "Bù Gia Mập is for travellers who specifically want primary rainforest and are willing to invest the logistics required to reach it. The park is genuinely remote by southern Vietnamese standards and the tourist infrastructure is minimal - which is precisely what makes it interesting. The Bình Phước highlands have a different character from both the Mekong Delta to the south and the Central Highlands further north: a landscape of rubber and cashew plantations interrupted by the forest remnants of which Bù Gia Mập is the most significant. For wildlife-focused travellers who have already visited Cát Tiên, Bù Gia Mập offers a more remote and less visited alternative with a comparable mammal fauna.",
   },
+  insights: {
+    highlights: [
+      "Trek through pristine forest with streams and waterfalls guided by expert park rangers",
+      "Overnight camping under starlight in remote wilderness near Cambodian border",
+      "Visit animal rescue station caring for injured and hunted wildlife",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Road surfaces degraded and narrow; Dak Nong region has unpaved dirt roads. Suitable for motorbike/mountain bike with careful riding.",
+      safety: "Border zone near Cambodia with restricted access for foreigners. Proper paperwork and permits required beyond TRC. Verify current access restrictions before visiting.",
+      accessibility: "3 hours from HCMC by car; 8 hours by motorbike. Local guides strongly recommended for navigation and forest experiences.",
+      seasonal: "Visit late April to early May for butterfly migration season when millions migrate deep into forest for mating.",
+    },
+    visitorTips: [
+      "Book organized tour groups with local guides; hire experienced guide like Mr Giang for forest cuisine and specialized experiences",
+      "Pack light and bring proper documentation; do not throw trash on trails or campsites",
+      "Bring earplugs if sleeping in forest; wildlife including monkeys howl at dawn",
+    ],
+    faq: [
+      { question: "What permits do foreigners need to visit?", answer: "Foreigners need proper paperwork beyond TRC due to Cambodian border proximity. Verify current requirements before visiting as access restrictions vary." },
+      { question: "What is the best time to visit?", answer: "Late April to early May when millions of butterflies migrate into the forest for mating season." },
+      { question: "How do I navigate the roads safely?", answer: "Roads are narrow with degraded surfaces. Travel slowly and carefully by motorbike or hire local guide. Dak Nong roads are unpaved dirt." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly positive for nature immersion, trekking experiences, wildlife viewing, and knowledgeable local guides. Praised as escape from technology.",
+      negative: "Access restricted and unclear for foreigners; road infrastructure needs improvement; occasional wildlife encounters like monkeys howling or wild dogs chasing visitors; litter concerns along trails",
+    },
+  },
 }

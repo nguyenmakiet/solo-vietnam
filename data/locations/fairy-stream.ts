@@ -44,4 +44,32 @@ export const fairyStream: Location = {
     travelTips:
       "Fairy Stream is the most pleasant surprise in Mũi Né - genuinely enjoyable, requiring no planning or expense, and noticeably different from anything else in the area. The combination of wading, canyon walls, bamboo, and dunes in a single 2km walk is unusual enough to feel worth doing even for travellers who are not natural walkers. The full 2km to the end is strongly recommended over the short walk most visitors do - the canyon is best in the middle and upper sections, not near the entrance. Combine with the Red Sand Dunes in the same afternoon - both are within 1km of each other near the western end of the Mũi Né resort strip.",
   },
+  insights: {
+    highlights: [
+      "Walk barefoot through a scenic stream with red and white sand/clay formations and canyon-like landscape",
+      "Red rock and limestone cliffs create unique photo opportunities with colorful natural formations",
+      "Soft sand, warm water, and shaded trees provide a refreshing experience on hot days",
+    ],
+    thingsToKnow: {
+      crowds: "Visit early morning (7am) to avoid crowds; weekend midday becomes busy",
+      difficulty: "Easy walk but water reaches knee-deep in places; stream bed has sharp rocks; some sections muddy and slippery; not ideal for elderly or young children",
+      safety: "Some unofficial fee collectors charge 50,000 VND claiming zoo entry (animal welfare concerns noted); aggressive parking lot attendants may pressure motorbike visitors; waterfall area has strong currents—avoid getting too close; water quality questionable near waterfall; wear shoes for sharp rocks and trash in water; snakes present in area; some reports of quicksand",
+      accessibility: "Free entrance available (ignore unofficial 50,000 VND 'zoo tickets'); parking fee 40,000 VND; shoes can be left at entrance; multiple entry points available to avoid problematic attendants",
+      seasonal: "Better water flow in rainy season (e.g., November); sunny weather recommended for visibility and photos",
+    },
+    visitorTips: [
+      "Wear sand shoes or slippers to protect from sharp rocks and debris; bring a bag for shoes",
+      "Walk north from the main Phan Thiet-Mui Ne road bridge entrance for better conditions; avoid southern beach entrance (dirty, trashy)",
+      "Limit walk to first 20-30 minutes for best scenery; waterfall at end (35-60 min) is underwhelming and has poor water quality",
+    ],
+    faq: [
+      { question: "Is there an entrance fee?", answer: "Official entrance is free (5,000-50,000 VND reported in 2024). Ignore unofficial 50,000 VND 'zoo tickets' from vendors. Parking costs 40,000 VND per car." },
+      { question: "Should I walk barefoot or wear shoes?", answer: "Wear sand shoes or slippers. Sharp rocks, hidden debris, and trash in water make barefoot walking risky despite soft sand. Many sharp rocks are invisible in brown/red water." },
+      { question: "How long does a visit take?", answer: "First 20-30 minutes covers best scenic sections with red/white formations. Full walk to waterfall takes 35-60 minutes but is less scenic; waterfall is small and water quality poor near end." },
+    ],
+    sentiment: {
+      positive: "Majority appreciate the unique red and white rock formations, soft sand, warm water, and refreshing experience; free or low-cost entry appeals to visitors; colorful natural landscape and photo opportunities praised",
+      negative: "Trash and poor water quality at start and end sections; small disappointing waterfall after long walk; unofficial fee collectors and aggressive parking attendants; sharp rocks and muddy conditions cause safety concerns; misleading tour descriptions; overcrowded tour groups; overpriced activities (jeep tours, ATVs, additional dune charges); karaoke bars create noise pollution; snake handlers pressure tourists; overhyped relative to actual experience",
+    },
+  },
 }

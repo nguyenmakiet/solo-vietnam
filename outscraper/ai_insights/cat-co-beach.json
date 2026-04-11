@@ -1,0 +1,42 @@
+{
+  "slug": "cat-co-beach",
+  "google_rating": 4,
+  "google_review_count": 809,
+  "insights": {
+    "highlights": [
+      "Free entry beach with coastal walking path connecting to Cat Co 2 and 3 beaches",
+      "Soft sandy beach with calm, shallow water suitable for swimming and children",
+      "Scenic rock formations and evening sunset views over Lạn Hạ Bay"
+    ],
+    "thingsToKnow": {
+      "crowds": "Low season (October-November) is quieter with fewer visitors. High season becomes very crowded. Afternoon periods busier than mornings.",
+      "difficulty": null,
+      "safety": "Parking fee disputes reported: guards may demand 10,000-20,000 VND parking fees inconsistently. Park away from resort entrance if concerned.",
+      "accessibility": "Concrete paths and steps connect beaches. Small beach area, especially at high tide when sand nearly disappears.",
+      "seasonal": "Water temperature varies by season. November-early October offers best conditions. Summer months become overcrowded."
+    },
+    "visitorTips": [
+      "Visit during low season (October-November) or early morning to avoid crowds and enjoy peaceful atmosphere",
+      "Park motorcycle/bike away from resort entrance to avoid inconsistent parking fee demands from guards",
+      "Bring cash for chair rentals (200,000 VND for loungers), umbrellas, toilets (20,000 VND), and showers"
+    ],
+    "faq": [
+      {
+        "question": "What are the parking fees and charges at Cat Co 1 Beach?",
+        "answer": "Motorbike parking: 10,000-20,000 VND (inconsistently enforced). Beach chair/lounger rental: 200,000 VND. Toilet/shower use: 20,000 VND. Free entry to beach itself."
+      },
+      {
+        "question": "When is the best time to visit Cat Co 1 Beach?",
+        "answer": "October-November offers ideal weather and fewer crowds. Avoid summer for overcrowding. Visit mornings or evenings for quieter experience."
+      },
+      {
+        "question": "What water conditions should I expect?",
+        "answer": "Water is shallow and calm, good for swimming. High tide significantly reduces sand area. Cat Co 1 has softer sand and cleaner water than Cat Co 2 beach nearby."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise the beach's natural scenery, rock formations, coastal walking paths, calm shallow water, and peaceful low-season atmosphere.",
+      "negative": "Complaints include plastic/trash in water and on beach, inconsistent parking fee enforcement, loud hotel music, overcrowding in high season, and tidal changes reducing beach space."
+    }
+  }
+}

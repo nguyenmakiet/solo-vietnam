@@ -39,4 +39,32 @@ export const hamNinhFishingVillage: Location = {
     travelTips:
       "Hàm Ninh pairs perfectly with Bãi Sao Beach - eat breakfast at the village then head to the beach for the morning before the day-trippers arrive. The combined ride from Dương Đông takes about 40 minutes in total. Bring cash - no ATMs in the village. If you're buying directly from the market rather than a restaurant, point and ask the price before agreeing.",
   },
+  insights: {
+    highlights: [
+      "Fresh seafood restaurants with live catch selection on floating piers",
+      "Sunrise and sunset views from the fishing village waterfront",
+      "Authentic local fishing village experience with reasonable prices compared to tourist areas",
+    ],
+    thingsToKnow: {
+      crowds: "Less crowded than main Phu Quoc attractions; quieter in early mornings",
+      difficulty: null,
+      safety: "Area has cleanliness issues; trash visible in some areas. Exercise caution with restaurant hygiene standards",
+      accessibility: "Difficult to find taxis for return trips; main pier partially demolished and broken at beginning, limiting coastal walks",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Arrive early morning for quieter experience and breakfast service; negotiate seafood prices before ordering",
+      "Choose live seafood from tanks; restaurants cook fresh to order within 10-30 minutes",
+      "Bring cash or Wise for payment; avoid inflated prices for street fruits and some restaurants targeting tourists",
+    ],
+    faq: [
+      { question: "Is the coastal pier still walkable?", answer: "No. The main pier is partially demolished and broken at the beginning, limiting access for scenic coastal walks." },
+      { question: "How fresh is the seafood?", answer: "Very fresh. Restaurants keep live seafood in tanks and cook immediately after selection. Expect 10-30 minute preparation times." },
+      { question: "Is it expensive compared to other Phu Quoc areas?", answer: "Cheaper than Phu Quoc Night Market but pricier than Saigon. Prices are reasonable for fresh seafood, though some restaurants charge tourist rates." },
+    ],
+    sentiment: {
+      positive: "Visitors praise fresh seafood quality, authentic local atmosphere, and helpful staff at floating restaurants",
+      negative: "Cleanliness concerns, trash visible in areas, difficulty finding return taxis, partially demolished pier, and mixed value-for-money experiences",
+    },
+  },
 }

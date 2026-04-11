@@ -54,4 +54,32 @@ export const hangCauCliffs: Location = {
     travelTips:
       "Hang Câu and Núi Thới Lới are the island's northern cluster - pair with a morning summit climb, then spend the afternoon swimming or snorkeling at the beach. If snorkeling is the priority, also consider a half-day trip to Đảo Bé where coral coverage and water clarity are generally considered better.",
   },
+  insights: {
+    highlights: [
+      "Crystal clear water ideal for swimming and snorkeling with excellent visibility",
+      "Fresh seafood restaurants serving braised fish, crab, and steamed red fish daily",
+      "Scenic clifftop and rocky beach setting with ocean breezes and bird watching",
+    ],
+    thingsToKnow: {
+      crowds: "Quiet and uncrowded, especially in low season (February). Limited Western tourism on the island",
+      difficulty: "Strong waves and coral present when swimming; exercise caution when entering water",
+      safety: "Food safety concerns reported; one case of food poisoning from uncooked/rotten seafood with unresolved refund",
+      accessibility: null,
+      seasonal: "Winter months (February) are cold with strong waves; afternoon is best time for fresh fish availability",
+    },
+    visitorTips: [
+      "Watch for coral when swimming and snorkeling; stay alert to wave conditions",
+      "Bring supplies for beach camping; garbage disposal is a problem, bring bags for cleanup",
+      "Order seafood in afternoon when fresh stock arrives; verify cooking time with staff before ordering",
+    ],
+    faq: [
+      { question: "Is the seafood at restaurants here safe to eat?", answer: "Seafood is generally fresh and highly rated, but food safety incidents have occurred. One visitor experienced food poisoning from uncooked/rotten items. Check food quality carefully and verify cooking." },
+      { question: "When is the best time to visit for swimming?", answer: "Avoid February when water is cold and waves are strong. Afternoon visits offer calmer conditions and fresh seafood. Better weather expected outside winter months." },
+      { question: "Is snorkeling possible here?", answer: "Yes, snorkeling is excellent with clear water and coral. Be cautious of dead coral areas and watch for strong currents when entering the water." },
+    ],
+    sentiment: {
+      positive: "Mostly praised for stunning natural scenery, clear water, fresh seafood, and peaceful atmosphere. Many call it a must-visit on Ly Son Island",
+      negative: "Garbage scattered across beach, abandoned/poorly maintained restaurants, inconsistent food quality and hygiene standards, slow service, and reported food poisoning incident",
+    },
+  },
 }

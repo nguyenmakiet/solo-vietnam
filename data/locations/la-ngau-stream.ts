@@ -47,4 +47,32 @@ export const laNgauStream: Location = {
     travelTips:
       "La Ngâu works best as an overnight camping trip rather than a day visit - arriving in the late afternoon, camping beside the stream, and exploring early the following morning gives a completely different experience than a rushed same-day trip from Phan Thiết. Bring all camping equipment, food, and water purification. The stream water is clear but should be treated before drinking. For those doing a broader Bình Thuận interior circuit, La Ngâu combines naturally with the Ta Cu mountain pagoda to the south and the Cát Tiên National Park area to the west across the Đồng Nai border.",
   },
+  insights: {
+    highlights: [
+      "10km trek through pristine forest following Hồ Tiên stream with multiple camping spots on rock formations",
+      "Cool, clear stream water ideal for swimming and fish foot spa; scenic mountain backdrop",
+      "Multiple route options: streamside path with smooth rocks or forest interior trek through diverse terrain",
+    ],
+    thingsToKnow: {
+      crowds: "Remote and rarely visited; very peaceful with minimal crowds except weekends",
+      difficulty: "Moderate; 10-12km trek from La Ngâu bridge with 1-2 small inclines; numerous stream crossings require water-resistant shoes; slippery rocks and muddy sections demand careful footing",
+      safety: "Dragonfly larvae (vắt) bites cause sharp pain; wear long sleeves, apply insect repellent. Easy to get lost on multiple trail junctions; offline maps and guides recommended. Avoid rainy season due to flash flood risk in valley between mountains. Road access to starting point may be restricted or gated",
+      accessibility: "Vehicles park at La Ngâu Camping or road entrance (40k VND fee); must hike final 2km if parking at highway. 4WD transfer services available 400-500k VND. Moderate fitness required for 3-4 hour trek",
+      seasonal: "Best October to March (dry season); morning hikes preferred for easier navigation and better lighting. Avoid June-September; wet season makes streams murky and flood risk high. March offers sunny, dry conditions",
+    },
+    visitorTips: [
+      "Carry minimum 1.5L water per person; available at La Ngâu Camping. Bring change of clothes; cold water requires immediate dry clothing after swimming",
+      "Start early morning to avoid getting lost on poorly marked trails with multiple junctions; download offline maps and follow TrekKlog route guides",
+      "Wear long protective clothing, water-resistant hiking shoes, and apply insect repellent to prevent dragonfly larvae bites; use trekking poles on slippery rock sections",
+    ],
+    faq: [
+      { question: "Is this trek suitable for beginners?", answer: "Yes, moderate difficulty with manageable slopes and stream-following paths. Not for complete beginners; basic fitness and care on slippery rocks required. Consider hiring a local guide" },
+      { question: "What is the best time to visit?", answer: "October-March dry season is ideal. March offers sunny, dry weather with comfortable cool evenings. Avoid June-September rainy season due to floods and murky water" },
+      { question: "How long does the complete trek take?", answer: "Approximately 6-7 hours total from La Ngâu bridge (3-4 hours each direction for 10-12km). Total time from Saigon: 10-12 hours including 4-hour drive" },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly positive; travelers praise pristine nature, clear streams, peaceful atmosphere, and healing experience. Excellent for camping, swimming, and escaping crowds",
+      negative: "Trail navigation confusing with easy-to-get-lost junctions; significant dragonfly larvae bites; some trash left by visitors despite beautiful nature; occasional road access restrictions",
+    },
+  },
 }

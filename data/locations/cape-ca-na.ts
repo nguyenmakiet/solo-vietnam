@@ -49,4 +49,32 @@ export const capeCaNa: Location = {
     travelTips:
       "Cà Ná works best as a stop on a longer coastal journey rather than a standalone destination - the appeal is the visual impact of the landscape and the opportunity to stretch the legs on a boulder scramble, not a full day's itinerary. For riders on the Hanoi to Ho Chi Minh City route, the cape marks the beginning of the most visually distinctive section of the southern coastal run - the Ninh Thuận and Bình Thuận coast between here and Mũi Né has the most dramatic scenery of the entire route. Budget 30-60 minutes at the cape itself, eat at the village if the timing works, and continue.",
   },
+  insights: {
+    highlights: [
+      "Pristine turquoise waters and white sand beach with minimal crowds and litter",
+      "Scenic coastal road with fishing village atmosphere and lighthouse views",
+      "Fresh seafood at affordable prices, particularly fish sauce-based specialties",
+    ],
+    thingsToKnow: {
+      crowds: "Unfrequented beach with fewer tourists compared to other central Vietnam beaches",
+      difficulty: "Beach has rocky areas, deep water offshore, and strong currents; not ideal for solo swimmers",
+      safety: "Avoid swimming alone; pollutants from nearby thermal power plant reported; electrical infrastructure visible on beach",
+      accessibility: null,
+      seasonal: "Best visited April to August when water is clearest and calmest; avoid during typhoon season",
+    },
+    visitorTips: [
+      "Visit during dry season for clearest water and best visibility for photography and swimming",
+      "Go with a group for safety; enjoy scenic coastal views from the road if water conditions are rough",
+      "Try local seafood at beachside restaurants; fish sauce is prominent in local cuisine",
+    ],
+    faq: [
+      { question: "Is Cà Ná beach safe for swimming?", answer: "Water is deep offshore and currents are strong. Avoid swimming alone. Pollution from nearby thermal plant reported; use caution." },
+      { question: "When is the best time to visit Cà Ná beach?", answer: "April to August offers clearest water and calmest conditions. Avoid typhoon season when waves are rough and views diminish." },
+      { question: "What should I eat at Cà Ná?", answer: "Fresh local seafood at affordable prices. Fish sauce-based dishes are specialties. Dining along the coast is recommended." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for pristine scenery, turquoise water, white sand, and authentic fishing village atmosphere; considered among Vietnam's most beautiful beaches",
+      negative: "Safety concerns about swimming alone, rocky areas, deep water, and pollution from nearby thermal power plant",
+    },
+  },
 }

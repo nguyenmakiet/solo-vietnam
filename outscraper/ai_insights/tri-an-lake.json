@@ -1,0 +1,42 @@
+{
+  "slug": "tri-an-lake",
+  "google_rating": 4.5,
+  "google_review_count": 1486,
+  "insights": {
+    "highlights": [
+      "Stand Up Paddle on the lake with matching water and sky colors at sunset",
+      "Scenic 44km jungle drive through tree-lined roads to reach remote camping spots",
+      "Popular wedding photography location with peaceful, natural lakeside scenery"
+    ],
+    "thingsToKnow": {
+      "crowds": "Weekends attract crowds and noise; evenings and weekdays are more serene and peaceful",
+      "difficulty": null,
+      "safety": null,
+      "accessibility": "Remote location requires driving 44km on jungle roads; ensure reliable navigation and fuel",
+      "seasonal": null
+    },
+    "visitorTips": [
+      "Visit during weekday evenings for tranquility; weekends are crowded and noisy",
+      "Allow 2 hours driving time from HCM City or 1.5 hours by motorbike",
+      "Check trash and cleanliness conditions at your chosen camping spot before setting up"
+    ],
+    "faq": [
+      {
+        "question": "How crowded is Tri An Lake on weekends?",
+        "answer": "Daytime weekends are very crowded and noisy. Evenings and weekdays are much more peaceful and serene for visitors."
+      },
+      {
+        "question": "How far is Tri An Lake from Saigon?",
+        "answer": "Approximately 65-85km from HCM City, taking about 2 hours by car or 1.5 hours by motorbike to reach the main area."
+      },
+      {
+        "question": "What activities are available at Tri An Lake?",
+        "answer": "Stand Up Paddle boarding, camping, fishing, rowing, photography, and sightseeing along the scenic road around the lake."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors praise the natural scenery, tranquility, sunset views, and proximity to Saigon as ideal for weekend escapes and water activities",
+      "negative": "One reviewer reported trash and pollution at the camping site"
+    }
+  }
+}

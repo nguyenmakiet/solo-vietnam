@@ -1,0 +1,42 @@
+{
+  "slug": "phi-lieng-waterfall",
+  "google_rating": 4.6,
+  "google_review_count": 38,
+  "insights": {
+    "highlights": [
+      "Seven-tiered waterfall deep in pristine Phi Liêng forest with dramatic scenery",
+      "Adventure activities including abseiling and trekking through remote terrain",
+      "Ideal beginner trekking destination with manageable difficulty for first-timers"
+    ],
+    "thingsToKnow": {
+      "crowds": "Not heavily developed for tourism; mainly attracts trekking groups and overnight camping expeditions",
+      "difficulty": "Challenging terrain with steep descents, slippery muddy paths, and rope climbing skills required. Easier in dry season; hazardous during rainy season with swampy, slippery slopes",
+      "safety": "Access restricted; public entry forbidden without tour guide or organized tour company. Forest area has no mobile signal. Insects present, especially mornings. Wear grip-soled shoes to prevent slipping",
+      "accessibility": "Scooter accessible to third fork in road; remaining distance requires hiking with significant elevation changes",
+      "seasonal": "Visit during dry season with sunny weather for best conditions. Avoid rainy season due to slippery, muddy paths and swampy terrain"
+    },
+    "visitorTips": [
+      "Book organized tour with guide for access and support; independent visitors may be turned back",
+      "Bring power bank for charging as no mobile signal in forest; bring extra storage for photos",
+      "Wear waterproof grip-soled hiking shoes and avoid wet season travel"
+    ],
+    "faq": [
+      {
+        "question": "Can I visit without joining a tour?",
+        "answer": "No, public access is restricted. You must enter with authorized tour company and local guide or be turned back by officials"
+      },
+      {
+        "question": "What's the best time to visit?",
+        "answer": "Visit during dry season with sunny weather. Avoid rainy season when paths become slippery, muddy, and swampy with increased danger"
+      },
+      {
+        "question": "Do I need special skills or fitness level?",
+        "answer": "Basic trekking fitness needed. Rope climbing/abseiling skills helpful but manageable for beginners. Steep descents require caution and slow pace"
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise the waterfall's beauty and pristine condition, appreciating its underdeveloped state and adventure opportunities",
+      "negative": "Frustration from independent travelers unable to access without authorized tour; disappointing road conditions and mandatory tour requirement"
+    }
+  }
+}

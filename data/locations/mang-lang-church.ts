@@ -50,4 +50,32 @@ export const mangLangChurch: Location = {
     travelTips:
       "Mằng Lăng works best as part of a Phú Yên day trip rather than a standalone destination. The most logical combination is to pair it with Gành Đá Đĩa - the UNESCO-nominated basalt rock plateau 15km further north along the coast - making a single route: Tuy Hòa north to Mằng Lăng, then continue to Gành Đá Đĩa, then return south. The full loop is around 100km and takes a comfortable day on a motorbike. Travellers based in Quy Nhơn can also reach Mằng Lăng as a day trip south - it sits roughly halfway between Tuy Hòa and the Bình Định border.",
   },
+  insights: {
+    highlights: [
+      "Preserves the first Vietnamese script book printed in Rome in 1651 by Alexandre de Rhodes",
+      "Built in 1892, one of Vietnam's oldest Catholic churches with Gothic architecture and colorful domes",
+      "Birthplace of Blessed Andrew of Phú Yên, a significant Catholic martyr and Patron of Youth",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Free entry for all visitors; view the historic Vietnamese script book displayed in a glass cabinet inside",
+      "Visit on Sunday to witness active church services and local religious ceremonies and activities",
+      "Combine with nearby attractions: Gành Đá Đĩa, Gành Đèn Lighthouse, and Ô Loan Lagoon in the area",
+    ],
+    faq: [
+      { question: "Is there an entry fee to visit Mằng Lăng Church?", answer: "No, entry is free for all visitors. The church welcomes anyone to visit and explore the historic site." },
+      { question: "Can I see the first Vietnamese script book?", answer: "Yes, the original Phép Giảng Tám Ngày from 1651 is displayed in a glass cabinet inside the church for visitors to view." },
+      { question: "How far is Mằng Lăng Church from Tuy Hòa City?", answer: "The church is located approximately 35 km north of Tuy Hòa City in Phú Yên Province." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the historic significance, preserved architecture from 1892, peaceful atmosphere, and cultural heritage as a site with important Vietnamese language and Catholic history",
+      negative: null,
+    },
+  },
 }

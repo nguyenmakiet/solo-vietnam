@@ -1,0 +1,42 @@
+{
+  "slug": "ong-cop-bridge",
+  "google_rating": 4.4,
+  "google_review_count": 133,
+  "insights": {
+    "highlights": [
+      "Vietnam's longest wooden bridge at 800m, made from bamboo and wood since 1998",
+      "Scenic views with mountains on one side and sea on the other",
+      "Convenient shortcut to nearby attractions like Gành Đá Đĩa and Gành Da Dia"
+    ],
+    "thingsToKnow": {
+      "crowds": "Local traffic passes through regularly, especially during peak hours",
+      "difficulty": "Bridge planks are narrow (1.5-1.8m wide) and can feel unstable when motorcycles pass",
+      "safety": "Wooden planks vibrate and create noise when vehicles cross; exercise caution",
+      "accessibility": "Pedestrians and motorcycles only; cars cannot cross. Accessible from Route 1A or from Gành Đá Đĩa area",
+      "seasonal": "Bridge may be temporarily closed during heavy flooding seasons for repairs"
+    },
+    "visitorTips": [
+      "Visit in late afternoon after 4:30 PM for better lighting and fewer shadows",
+      "Bring water; there is one drink stall at the bridge entrance with reasonable prices",
+      "Check bridge condition ahead of visit as repairs may occur after flooding events"
+    ],
+    "faq": [
+      {
+        "question": "What is the entrance fee?",
+        "answer": "Pedestrians: 1,000-5,000 VND. Motorcycles: 3,000-5,000 VND. Fees may vary by season."
+      },
+      {
+        "question": "Is the bridge safe to walk on?",
+        "answer": "Yes, but wooden planks vibrate and creak when motorcycles pass through. The bridge is sturdy but narrow at 1.5-1.8m wide."
+      },
+      {
+        "question": "Can I drive a car across?",
+        "answer": "No. Only pedestrians and motorcycles are permitted. The bridge is only about 1.5m wide."
+      }
+    ],
+    "sentiment": {
+      "positive": "Travelers appreciate the bridge as Vietnam's longest wooden structure, unique photo spot, and convenient shortcut to nearby attractions like Gành Đá Đĩa",
+      "negative": "Bridge experiences structural damage during heavy flooding and typhoons, requiring temporary closures; wooden planks vibrate noticeably under vehicle traffic"
+    }
+  }
+}

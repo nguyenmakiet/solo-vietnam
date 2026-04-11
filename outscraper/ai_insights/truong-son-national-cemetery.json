@@ -1,0 +1,42 @@
+{
+  "slug": "truong-son-national-cemetery",
+  "google_rating": 4.8,
+  "google_review_count": 571,
+  "insights": {
+    "highlights": [
+      "Final resting place of over 10,000 soldiers who died defending the Ho Chi Minh Trail during the Vietnam War",
+      "Vast cemetery organized into sections by province, with graves arranged in perfect alignment across hillside",
+      "National monument built 1975-1977 on Ben Tat hill in Gio Linh, Quang Tri with temple at center"
+    ],
+    "thingsToKnow": {
+      "crowds": "Attracts thousands of visitors annually, especially on July 27 (Invalids and Martyrs Day)",
+      "difficulty": null,
+      "safety": null,
+      "accessibility": "Cemetery spans large area; exploring all sections thoroughly may require 1.5 days",
+      "seasonal": "Visit during cooler mornings or late afternoons; bring light rain gear as weather can be unpredictable"
+    },
+    "visitorTips": [
+      "Bring flowers or incense to pay respects; many graves lack burial remains due to wartime losses",
+      "Plan extended time to explore; over 10,000 graves make it impossible to see everything quickly",
+      "Visit with contemplative mindset; maintain quiet, respectful demeanor rather than treating as typical tourist attraction"
+    ],
+    "faq": [
+      {
+        "question": "How many soldiers are buried here?",
+        "answer": "Over 10,263 soldiers are buried here, primarily those who died on the Ho Chi Minh Trail. Many graves are memorial markers without actual remains."
+      },
+      {
+        "question": "How long does it take to visit?",
+        "answer": "Exploring the entire cemetery thoroughly can take 1.5 days. Most visitors spend 1-2 hours in main areas due to the vast size."
+      },
+      {
+        "question": "When is the best time to visit?",
+        "answer": "Visit early morning or late afternoon. July 27 (Martyrs Day) draws thousands. Bring rain protection as weather is unpredictable."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors find the cemetery deeply moving and solemn, with well-maintained grounds that inspire gratitude and respect for wartime sacrifices",
+      "negative": null
+    }
+  }
+}

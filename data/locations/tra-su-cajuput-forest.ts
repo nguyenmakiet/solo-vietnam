@@ -49,4 +49,32 @@ export const traSuCajuputForest: Location = {
     travelTips:
       "Trà Sư is one of the few Mekong Delta natural sites where the experience genuinely matches the photography - the flooded forest is as green and mirror-flat in person as in the images that circulate online, provided mày visit during the right season. Outside flood season the water level drops, the reflection disappears, and the forest becomes a drier cajuput woodland that is pleasant but lacks the visual drama. Châu Đốc is the natural base for the area - a river town with Cham Muslim communities, floating fish farms, and the sacred Bà Chúa Xứ temple on Sam Mountain - and Trà Sư fits into a broader An Giang itinerary rather than requiring a standalone trip.",
   },
+  insights: {
+    highlights: [
+      "Serene rowing boat through water lettuce and cajuput tree canopy with bird symphony",
+      "Vong Canh observation tower with telescope views of storks and That Son mountains",
+      "Bamboo Bridge of Ten Thousand Steps winding through forest for on-foot exploration",
+    ],
+    thingsToKnow: {
+      crowds: "Visit early morning (7-8 AM) or 3-4 PM to avoid tour groups. Weekdays and non-peak hours offer solitude with few other visitors.",
+      difficulty: null,
+      safety: "Bring mosquito repellent. Bamboo bridge has weight limitations—use caution if larger than average local. Snake and wildlife present.",
+      accessibility: "Wheelchair access limited; paths end after 200m. Staff willing to help elderly with mobility difficulties.",
+      seasonal: "Best September to November during floating season when water levels are highest and greenery most vibrant. Water levels drop 1m+ from peak by later months.",
+    },
+    visitorTips: [
+      "Book accommodation and transport through hotel in Chau Doc to avoid remote navigation challenges",
+      "Take rowing boat first for peaceful experience, then motorboat for wider forest views and bird spotting",
+      "Bring cash; park only accepts cash for tickets. Parking available at Thốt Nốt Sữa entrance",
+    ],
+    faq: [
+      { question: "What are the total costs for a full visit?", answer: "Entry 100-120k VND, motorboat 70k VND, rowing boat 70k VND, observation tower 5k VND. Combo tickets available around 230k VND." },
+      { question: "How far is Tra Su from Chau Doc and how do I get there?", answer: "Approximately 40-45 minutes by moped or taxi. Highly recommended to book transport through hotels for ease. Direct navigation challenging; taxi drivers can wait during visit." },
+      { question: "What wildlife can I expect to see?", answer: "Egrets, herons, kingfishers, storks, waterfowl, teals, snakes, and lizards. Highest bird activity at sunrise, sunset, and 3-4 PM afternoon hours." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for serene, magical boat experiences through pristine forest ecosystem. Visitors appreciate wildlife abundance, peaceful atmosphere, and accessible pricing. Staff friendliness and conservation efforts highly commended.",
+      negative: "Some found it more developed park than wild reserve; walking paths limited to 200m. Motorboat service inconsistent—some drivers rushed through without allowing photo stops. Restaurant overpriced. Wheelchair accessibility poor.",
+    },
+  },
 }

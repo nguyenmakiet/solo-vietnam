@@ -42,4 +42,32 @@ export const tiTopIsland: Location = {
     travelTips:
       "Ti Top works best as part of an overnight cruise rather than a rushed day trip - if your cruise arrives before 9 AM, the beach is uncrowded and the summit light is at its best. The combination of beach and summit in one stop makes it genuinely satisfying for an hour and a half. If you're choosing between Ti Top and Sung Sot Cave on a short itinerary, do both - they're close together on Route 2 and each offers something completely different.",
   },
+  insights: {
+    highlights: [
+      "360-degree panoramic views of limestone karsts and emerald waters from summit after 400-step climb",
+      "Crescent-shaped white sand beach at base with calm, clear water for swimming",
+      "Stone staircase with rope railings, accessible to most fitness levels including families and older travelers",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during peak times when large cruise boats arrive. Single path used for both up and down traffic causes congestion and queuing. Early morning visits (7:45 AM) still experience heavy crowds.",
+      difficulty: "Steep 400-450 stone steps with high step gradient. Challenging in humidity. Not recommended for those 60+ with limited time or lower physical fitness. Most complete climb in 10-15 minutes at steady pace.",
+      safety: "Single path for two-way traffic creates congestion and safety concerns, especially in rain. Wet narrow stairs at water's edge lack railings and require assistance. Rope railings present on main stairs.",
+      accessibility: "Suitable for families, older travelers, and kids at steady pace. Sturdy shoes or sandals with grip recommended; flip-flops not suitable. Mid-point break available. No hiking boots required.",
+      seasonal: "Hot and humid conditions make climbing difficult. Humidity makes stairs more challenging.",
+    },
+    visitorTips: [
+      "Wear sturdy shoes or sandals with grip; avoid flip-flops for better stability on steep stairs",
+      "Arrive early or immediately upon beach arrival to avoid cruise boat crowds and queuing",
+      "Bring water for the climb; basic facilities include changing rooms, showers, and drink stalls at base",
+    ],
+    faq: [
+      { question: "How long does the climb take?", answer: "10-15 minutes at a steady pace, though timing varies by fitness level and crowds. Allow extra time during peak tourist periods." },
+      { question: "Is the climb suitable for older people or those with mobility limitations?", answer: "Possible at steady pace, but 45 minutes may be insufficient for those 60+. Steep gradient and high steps challenge those with lower fitness. Mid-point viewing area available." },
+      { question: "What should I know about crowds and timing?", answer: "Visit early morning (before 7:45 AM) to avoid crowds. Single staircase creates severe congestion with two-way traffic. Peak times cause queuing and difficulty enjoying the summit viewing area." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the panoramic 360-degree views as the best in Ha Long Bay, worth the physical effort. Beach, facilities, and accessibility for various ages appreciated.",
+      negative: "Severe overcrowding and single staircase causing dangerous two-way traffic. Poor sanitation (unsanitary toilets, permanently closed showers). Water pollution (gasoline smell, trash). Insufficient time allocation on cruises. Beach pollution from grey water.",
+    },
+  },
 }

@@ -44,4 +44,32 @@ export const taVanVillage: Location = {
     travelTips:
       "Tả Van is the best overnight base in the Sa Pa valley system for travellers who want genuine immersion rather than just a scenic walk. The difference between day-tripping from Sa Pa town and staying the night here is enormous - the village completely changes after 5 PM. If you only have one night in the Sa Pa area and want to remember it clearly, spend it in Tả Van rather than in a hotel in Sa Pa town.",
   },
+  insights: {
+    highlights: [
+      "Terraced rice fields with panoramic valley views visible from Fansipan cable car",
+      "Visit villages like Lao Chai, Ta Van, and Y Linh Ho with homestays and local culture",
+      "Multiple cafes with scenic viewpoints throughout the valley for rest stops",
+    ],
+    thingsToKnow: {
+      crowds: "Less crowded than Cat Cat Village; still developing tourism infrastructure with fewer visitors",
+      difficulty: "Light, relaxed trekking suitable for various fitness levels with multiple rest points",
+      safety: null,
+      accessibility: "Ta Van village accessible by car; other areas require trekking",
+      seasonal: "Rice harvest season (late August) shows active farming; flowers bloom in April; early morning visits recommended",
+    },
+    visitorTips: [
+      "Start early and spend at least half a day; visit during rice harvest for active farming scenes",
+      "Local vendors sell handicrafts along routes; negotiate prices and support local communities respectfully",
+      "Y Linh Ho offers the most scenic views; streams have shallow sections suitable for swimming",
+    ],
+    faq: [
+      { question: "How far is Muong Hoa Valley from Sapa town?", answer: "Approximately 12km from Sapa center. Ta Van village is accessible by car; other villages require trekking." },
+      { question: "When is the best time to visit?", answer: "Late August during rice harvest for active farming scenes; April for flower blooms. Early morning offers best views." },
+      { question: "What activities are available?", answer: "Trekking, guided tours, visiting ethnic H'mong villages, swimming in streams, and visiting cafes with scenic views." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised for pristine terraced fields, peaceful atmosphere, authentic village experiences, and lower tourist crowds than alternatives",
+      negative: "Rapid construction and commercialization beginning to impact natural charm; some persistent vendor behavior reported",
+    },
+  },
 }

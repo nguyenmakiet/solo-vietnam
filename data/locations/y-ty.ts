@@ -44,4 +44,32 @@ export const yTy: Location = {
     travelTips:
       "Y Tý rewards travellers who build in at least two nights - one for acclimatisation and exploring the valleys, one for the Lảo Thẩn trek or cloud-hunting at dawn. Pack warm layers even in summer; temperatures drop sharply after sunset at this altitude. The permit requirement for foreigners is real and enforced - don't skip it. Y Tý pairs well with Lũng Pô (40km away, the point where the Red River enters Vietnam) for a border-region day trip, and with Mường Hum market (44km away, Sundays only) for an early-morning ethnic minority market experience.",
   },
+  insights: {
+    highlights: [
+      "Sea of clouds visible from November to April, especially after rain or cold nights",
+      "Small hill with food and drink vendors at affordable prices around 5,000 VND per skewer",
+      "Alpine meadow landscape at 1,500-2,000m elevation with pristine air in remote Y Tý commune",
+    ],
+    thingsToKnow: {
+      crowds: "Few tourists visit; local ethnic minorities (Mông, Hà Nhì) live simply without developed tourism services",
+      difficulty: "Final stretch of road is rough with large potholes and loose rocks. Road is narrow, winding, and difficult for cars. Motorbikes struggle on the ascent",
+      safety: "Road becomes slippery and hazardous during rain. Avoid descending during late afternoon when local traffic returns from work with aggressive driving. Do not rely on Google Maps for navigation; hire a local guide",
+      accessibility: "Not accessible by car. Motorcycles face difficulty. Best visited early morning for clear views",
+      seasonal: "Cloud viewing season is October to February. Visibility depends heavily on weather; fog in late August obstructed views for hours. Best conditions after heavy rain or cold nights",
+    },
+    visitorTips: [
+      "Visit early morning to maximize chances of clear cloud views before midday heat disperses them",
+      "Plan descent before 5 PM to avoid dangerous local traffic returning from work on narrow roads",
+      "Hire a local guide rather than relying on GPS; roads are confusing and poorly marked",
+    ],
+    faq: [
+      { question: "When is the best time to see clouds at Y Tý?", answer: "October to February, preferably after heavy rain or following cold nights. Early morning visits offer clearest views before afternoon heat" },
+      { question: "Is the road safe for vehicles?", answer: "The final stretch is rough with potholes and loose rocks. Cars cannot access it. Motorbikes struggle. Avoid late afternoon when locals drive aggressively on narrow roads" },
+      { question: "What food and facilities are available?", answer: "Small food stalls near the hilltop sell grilled items and drinks for around 5,000 VND. Limited tourism infrastructure; bring supplies. Local people are friendly but not accustomed to tourists" },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised for dramatic cloud scenery, pristine mountain air, authentic ethnic minority culture, and undeveloped landscape. Visitors find it ideal for romance and photography",
+      negative: "Road conditions are consistently criticized as poor, rough, and dangerous. Navigation difficulties and weather-dependent visibility frustrate some visitors",
+    },
+  },
 }

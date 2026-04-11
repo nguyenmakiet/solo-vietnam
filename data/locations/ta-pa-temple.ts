@@ -49,4 +49,32 @@ export const taPaTemple: Location = {
     travelTips:
       "Ta Pa and the Ba Chúc area are not easy visits emotionally - the Bone Temple is a direct confrontation with mass killing that occurred within living memory, and the context of Khmer Rouge violence along this border is not widely known outside Vietnam and Cambodia. For travellers interested in 20th century Southeast Asian history beyond the American war narrative, the western An Giang border area provides a different and underrepresented chapter. The Thất Sơn hills in which the site sits are also culturally significant in Vietnamese Buddhism - a complex of sacred hills associated with millennia of religious practice by Khmer, Vietnamese, and Cham communities.",
   },
+  insights: {
+    highlights: [
+      "Khmer Buddhist temple atop a mountain with stunning panoramic views of Tri Tôn and surrounding rice fields",
+      "240-step colorful staircase leading to the main hall supported by 120 concrete pillars (5-18m high)",
+      "Unique architectural design featuring Theravada Buddhist style with distinctive elevated structure",
+    ],
+    thingsToKnow: {
+      crowds: "Attracts visitors from multiple provinces; popular photo destination but not over-commercialized",
+      difficulty: "240 steps to main hall; steep mountain roads; those afraid of heights may find descent challenging",
+      safety: null,
+      accessibility: "Two access routes: motorcycle ride directly to temple (requires skilled riding on dangerous curves) or walking 240 steps (approximately 15 minutes)",
+      seasonal: "Beautiful in afternoon even during rain; scenic in evening light",
+    },
+    visitorTips: [
+      "Rent traditional Khmer costume at beverage stall near Tà Pạ lake for photo opportunities",
+      "Park motorcycle on left side of temple; private parking available for 10,000 VND per bike",
+      "Continue past the main stairs to find a scenic silk road with excellent photography spots",
+    ],
+    faq: [
+      { question: "What are the two ways to reach the temple?", answer: "Ride motorcycle directly to temple entrance (requires experienced handling of dangerous curves) or climb 240 colorful steps taking approximately 15 minutes while enjoying views." },
+      { question: "Is the temple accessible for photography?", answer: "Yes, many scenic angles throughout including the staircase, elevated structure, views of rice fields, and nearby silk road. Best in afternoon or evening light." },
+      { question: "When should I visit to avoid difficulties?", answer: "Visit during afternoon or evening for scenic views. Check roads beforehand and be aware steep descent may challenge those afraid of heights." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the unique Khmer architectural style, elevated mountain location, 240-step colorful staircase, panoramic views, and photo opportunities. Temple retains authentic spiritual atmosphere without excessive commercialization.",
+      negative: "Some note steep staircase descent is intimidating for those afraid of heights; motorcycle road up involves dangerous curves; multiple access routes can be confusing",
+    },
+  },
 }

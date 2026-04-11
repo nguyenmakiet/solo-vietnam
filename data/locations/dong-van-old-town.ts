@@ -44,4 +44,32 @@ export const dongVanOldTown: Location = {
     travelTips:
       "Đồng Văn is best used as a base for 1–2 nights rather than a quick stop. From here you can day-trip to Mã Pí Lèng Pass (20km), Lũng Cú Flag Tower (24km), and the Séo Lủng H'Mông village market. The Sunday market starts at dawn and winds down by mid-morning - arriving late means missing the best of it. ATMs exist in town but are unreliable - bring enough cash from Hà Giang city.",
   },
+  insights: {
+    highlights: [
+      "Sunday morning H'mong minority market with local homemade foods and traditional crafts",
+      "Night atmosphere with lantern-lit streets, cultural performances, and ethnic dance participation",
+      "Ancient stone houses with French colonial architecture from 1880s, some nearly 200 years old",
+    ],
+    thingsToKnow: {
+      crowds: "Very busy during holidays, festivals, and weekends. Sunday morning market is peak time for local activity",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Visit in winter for better weather. December may have fewer international visitors",
+    },
+    visitorTips: [
+      "Arrive Sunday morning to experience the weekly H'mong market; afternoon arrivals miss it",
+      "Visit at night for lantern-lit ambiance, cultural performances, and lively restaurant scene",
+      "Budget 150,000 VND for bus from Ha Giang (6 hours); return bus departs from old market square at 10am",
+    ],
+    faq: [
+      { question: "When is the best time to visit Dong Van Ancient Street?", answer: "Sunday morning for the weekly H'mong market and local activities. Evening/night for lantern-lit atmosphere and cultural performances. Winter offers better weather conditions." },
+      { question: "What activities and experiences are available?", answer: "Sunday markets, traditional games (cotton ball throwing 10k VND), ethnic dances with locals, bonfires, weekend coffee shop performances, street food, massage services, and souvenir shopping." },
+      { question: "How do I get to Dong Van from Ha Giang?", answer: "Regular buses depart from Ha Giang, costing about 150,000 VND and taking approximately 6 hours. Return buses depart from the old market square area." },
+    ],
+    sentiment: {
+      positive: "Travelers consistently praise the authentic cultural experience, well-preserved ancient architecture, vibrant night atmosphere, friendly locals, affordable prices, and excellent food and coffee offerings",
+      negative: "Some visitors expected perfectly polished streetscapes but found the town more rugged and worn, though most appreciated this authentic character rather than viewed it negatively",
+    },
+  },
 }

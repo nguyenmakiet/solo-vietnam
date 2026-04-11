@@ -40,4 +40,32 @@ export const eightLadiesCave: Location = {
     travelTips:
       "Eight Ladies Cave is one of the most emotionally significant sites in Phong Nha for travellers interested in the human history of the Vietnam War. It requires effort to reach and the cave itself is not visually spectacular - the value is entirely in the history, the setting, and the guided context. Travellers who make the trek consistently describe it as one of the most affecting experiences of their Vietnam trip. It pairs naturally with a visit to the Phong Nha cave system in the afternoon - the contrast between the geological wonder of the caves and the human story of Eight Ladies Cave on the same day is a powerful combination.",
   },
+  insights: {
+    highlights: [
+      "Memorial site commemorating 8 volunteers trapped and killed by cave collapse during 1972 US bombing",
+      "Located on Route DT562, 2.5 km from crossroads bridge in Quang Binh Province",
+      "Includes shrine, worship area, memorial wall, and TV presentation about the historical event",
+    ],
+    thingsToKnow: {
+      crowds: "Quiet and serene site with minimal visitor activity",
+      difficulty: null,
+      safety: null,
+      accessibility: "Cave entrance blocked; visitors cannot enter cave. 50m walk from parking area to cave site",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Hire a tour guide to learn detailed connections between this site and other caves in Phong Nha area",
+      "Site is primarily about history and story rather than cave exploration itself",
+      "Located along Ho Chi Minh West Trail near other war-related historical sites in region",
+    ],
+    faq: [
+      { question: "Can I enter the cave?", answer: "No, the cave entrance is blocked and marked not to enter. Visitors can only view it from outside." },
+      { question: "What happened at this cave in 1972?", answer: "Eight young volunteers ran into the cave to escape US bombing on November 14, 1972. A massive rock collapsed and sealed the entrance, trapping them inside. All died." },
+      { question: "How long does it take to visit?", answer: "A few minutes of contemplation is typically sufficient. Site includes parking area, memorial wall, TV presentation, and a 50m walk to the cave." },
+    ],
+    sentiment: {
+      positive: "Most visitors find the site deeply moving and historically significant, appreciating the respectful memorial and Vietnamese reverence for the fallen",
+      negative: "Some visitors felt disappointed by limited physical exploration, noting there is not much to see beyond inscriptions and the restricted cave",
+    },
+  },
 }

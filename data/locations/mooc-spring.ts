@@ -40,4 +40,32 @@ export const moocSpring: Location = {
     travelTips:
       "Mooc Spring is the best swimming spot in Phong Nha and one of the most genuinely beautiful natural pools in central Vietnam. It's also one of the least hyped - most visitors focus on the caves and don't make time for the spring. The combination of clear karst water, jungle setting, and a rope swing makes it more enjoyable than the beach swimming available at the coast. Allow 1.5–2 hours at the spring including the walk to the second pool. Combine with Phong Nha Botanic Garden - the two sites together form the best half-day itinerary in the area for travellers who want something beyond the caves.",
   },
+  insights: {
+    highlights: [
+      "Walk bamboo bridges through rainforest with clear, cool spring water and jungle sounds",
+      "Two ticket options: 80k dong for nature walk only, 180k dong for swimming and kayaking",
+      "Located 5 km from Paradise Cave, convenient as a lunch stop combining visits",
+    ],
+    thingsToKnow: {
+      crowds: "Can be very crowded during summer vacation (June-August) and weekends. Visit early morning before 10am or go during off-season for solitude.",
+      difficulty: null,
+      safety: "Mandatory life jackets required for swimming due to strong currents. Water can be cold and slippery rocks present. Staff may follow non-activity visitors closely.",
+      accessibility: "Walking trails approximately 30 minutes. One trail may be under construction or inaccessible. Limited signage and staff guidance on how to navigate the area.",
+      seasonal: "Best visited late March to June on sunny days. Avoid rainy season (September onwards) when water is cold and currents are violent. No water activities available during high water levels or storms.",
+    },
+    visitorTips: [
+      "Arrive before 10am to avoid crowds and enjoy the natural atmosphere in peace",
+      "Wear water shoes or sandals as rocks underwater are very slippery when swimming",
+      "Try the grilled chicken with sticky rice at the restaurant; considered a local specialty",
+    ],
+    faq: [
+      { question: "Is the life jacket requirement mandatory for swimming?", answer: "Yes, life jackets are mandatory for all swimmers due to strong currents. Lifeguards enforce this for safety, even for strong swimmers." },
+      { question: "What is the best time to visit Mooc Spring?", answer: "Visit late March to June on sunny days, before 10am. Avoid June-August (crowded with students) and rainy season when water is cold and currents dangerous." },
+      { question: "Are refunds available if I'm unhappy with my visit?", answer: "No, tickets are non-refundable. Staff may offer partial refunds in limited circumstances, but refund policies are unclear and inconsistently applied." },
+    ],
+    sentiment: {
+      positive: "Most visitors appreciate the natural beauty, clear water, bamboo bridges, and jungle atmosphere. Early morning visits and good weather greatly enhance the experience. Convenient location near other caves.",
+      negative: "Kayaking area is small with limited activities. Crowding during peak season diminishes enjoyment. Staff supervision can feel intrusive. Life jacket requirement unpopular with experienced swimmers. Facilities (bathrooms, changing rooms, storage) need improvement. Prices considered high relative to activity offerings. Non-refundable policy frustrating when conditions don't allow activities.",
+    },
+  },
 }

@@ -87,4 +87,24 @@ export type Location = {
     whatToExpect: string
     travelTips: string
   }
+  insights?: LocationInsights  // optional vì không phải location nào cũng có
+}
+export type LocationInsights = {
+  highlights: string[]
+  thingsToKnow: {
+    crowds: string | null
+    difficulty: string | null
+    safety: string | null
+    accessibility: string | null
+    seasonal: string | null
+  }
+  visitorTips: string[]
+  faq: {
+    question: string
+    answer: string
+  }[]
+  sentiment: {
+    positive: string
+    negative: string | null
+  }
 }

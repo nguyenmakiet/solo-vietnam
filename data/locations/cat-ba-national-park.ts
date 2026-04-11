@@ -43,4 +43,32 @@ export const catBaNationalPark: Location = {
     travelTips:
       "Cát Bà National Park is the best reason to spend more than one night on the island - the beach and kayaking can be done in a day, but the park requires an early start and a full day commitment. The summit trail is one of the more demanding day hikes accessible from a Vietnamese island town, and the view - Ha Long Bay on one side, Lan Hà Bay on the other, the island's forested karst ridgeline in between - justifies every step. For wildlife travellers, the golden-headed langur is the rarest animal accessible from any tourist destination in Vietnam.",
   },
+  insights: {
+    highlights: [
+      "Trek to Ngu Lam Peak with 360-degree panoramic views of lush green mountains and valleys",
+      "UNESCO biosphere reserve with diverse jungle terrain, limestone formations, and wildlife specimens",
+      "Trung Trang Cave included in park entry fee, located 1km from main entrance",
+    ],
+    thingsToKnow: {
+      crowds: "Popular with tour groups; weekdays are less crowded than weekends",
+      difficulty: "Hiking difficulty varies: short trail to peak is 40-45 minutes but steep and strenuous; long trail to Viet Hai Village is 12km with scrambling and challenging terrain requiring good fitness and hiking experience",
+      safety: null,
+      accessibility: "Steep terrain with uneven steps and slippery surfaces, especially in wet conditions; new concrete sidewalk covers first 2km of long trail",
+      seasonal: "Visit on bright, clear days for best views; rainy weather makes paths slippery and dangerous",
+    },
+    visitorTips: [
+      "Bring plenty of water—limited supplies available after trail starts; small restaurant at entrance sells water and snacks",
+      "Wear good hiking shoes with grip; long sleeves unnecessary but mosquito repellent strongly recommended",
+      "Hike independently to Viet Hai Village without guide; arrange return boat taxi at village (1 hour walk to harbor, negotiate price)",
+    ],
+    faq: [
+      { question: "How difficult is the hike to Ngu Lam Peak?", answer: "The peak is 45 minutes to 1km away but very steep and strenuous. Not recommended for those seeking easy trails. 65-year-old hikers report needing recovery days." },
+      { question: "What is included in the entrance fee?", answer: "Entry fee (120,000-160,000 VND) includes access to the park, peak hike, and Trung Trang Cave 1km down the road. Museum with animal specimens also included." },
+      { question: "Can you hike to Viet Hai Village independently without a guide?", answer: "Yes, the path is possible without a guide but challenging, requiring good shoes, fitness, and hiking experience. Trek takes 2-3 hours through thick jungle. Arrange return by boat from village." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise stunning limestone scenery, jungle landscapes, diverse terrain, and the UNESCO biosphere reserve designation. Peak views and cave exploration highlighted as memorable experiences.",
+      negative: "One review criticized poor park maintenance, overgrown conditions, sad animal enclosures, and high entrance fees. Some report views don't match expectations; others mention heavy tour boat overcrowding.",
+    },
+  },
 }

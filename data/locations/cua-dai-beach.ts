@@ -40,4 +40,32 @@ export const cuaDaiBeach: Location = {
     travelTips:
       "Cửa Đại is a solid but unspectacular beach - convenient for Hội An visitors who want a beach day without committing to a longer trip, but An Bàng (3km north) is consistently more photogenic and less crowded. The cycling approach is the main reason to choose Cửa Đại over An Bàng - the flat road through the countryside is the same quality and the beach is the end of the ride rather than the whole point.",
   },
+  insights: {
+    highlights: [
+      "Significantly quieter and less crowded than nearby An Bang Beach, ideal for peaceful relaxation",
+      "Long stretch of soft white sand with clear water, suitable for swimming and romantic walks",
+      "Affordable loungers and umbrellas available for rent; seafood restaurants along the beach",
+    ],
+    thingsToKnow: {
+      crowds: "Much quieter than An Bang Beach, especially November-early winter. Mostly local and few tourists during off-season.",
+      difficulty: null,
+      safety: "Water can be wavy; do not swim far from shore. Shallow areas make it safe for children.",
+      accessibility: "Free or low-cost parking available (5,000-10,000 VND for bikes). Toilets and shower facilities present. Accessible by Grab taxi or bicycle.",
+      seasonal: "Pleasant weather in mid-November. Beach can get windy, causing sand to blow. Ongoing sea wall and breakwater rebuilding work visible.",
+    },
+    visitorTips: [
+      "Rent a lounger with umbrella for around 50,000 VND; cheaper rates available compared to other beaches",
+      "Carry your own drinking water as food options are limited compared to An Bang Beach",
+      "Cycle slightly inland past the main road or go left past sand bags for less crowded stretches",
+    ],
+    faq: [
+      { question: "Is Cua Dai Beach crowded?", answer: "No. It is much quieter than An Bang Beach with few tourists, making it ideal for peaceful, secluded beach time." },
+      { question: "What is the cost of parking and loungers?", answer: "Bike parking costs 5,000-10,000 VND. Lounger and umbrella rental ranges from 50,000 VND to 80,000 VND depending on location." },
+      { question: "Are there restaurants and facilities at the beach?", answer: "Yes, there are beachfront seafood restaurants and cafes. Toilets with shower facilities are available. Limited food options compared to other beaches." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise the beach as peaceful, clean, and less crowded than alternatives. Recent improvements and rebuilding work noted positively.",
+      negative: "Some report the beach appears worn and neglected with aging infrastructure. Sand bags and breakwaters affect aesthetics. Aggressive vendors reported. Beach erosion history mentioned.",
+    },
+  },
 }

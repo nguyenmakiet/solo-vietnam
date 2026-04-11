@@ -44,4 +44,32 @@ export const muongHoaValley: Location = {
     travelTips:
       "The valley is genuinely best experienced over two days, not as a rushed day trip from Sa Pa. Stay overnight in a Tả Van or Lao Chải homestay, have dinner with a local H'mong or Giáy family, and you'll wake up to the valley completely empty of day visitors. The morning light on the terraces from a homestay balcony is one of the most memorable scenes in northern Vietnam. If you're only doing one day, prioritise the Lao Chải to Tả Van section - it's the most varied and least crowded stretch.",
   },
+  insights: {
+    highlights: [
+      "Terraced rice fields with vivid colors, especially September harvest season with green and yellow hues",
+      "20-30 minute circular walking path through villages with authentic ethnic minority settlements",
+      "Scenic river walks and mountain views with opportunity to see water buffalos and local wildlife",
+    ],
+    thingsToKnow: {
+      crowds: "Few tourists overall, but village vendors are present and pushy with handmade crafts sales",
+      difficulty: "Moderate hike with ups and downs; slippery and muddy terrain in wet season; steep 600-step climb at some points",
+      safety: null,
+      accessibility: "Not wheelchair or stroller accessible; requires comfortable trekking shoes",
+      seasonal: "Best August-September for blue skies and harvest views; December-early spring has mists and fog; rice planting occurs early April",
+    },
+    visitorTips: [
+      "Wear good trekking shoes; terrain is muddy, slippery, and uneven with no trail signs",
+      "Hire a local guide to avoid pushy vendors and get knowledgeable perspectives on terraces",
+      "Visit August-September for clearer skies; avoid December-early spring due to fog obscuring views",
+    ],
+    faq: [
+      { question: "How long does the trek take?", answer: "The 20-minute descent from highway plus 30-minute circular path around rice fields. Full day trek from Sapa town takes 7+ hours covering 15km." },
+      { question: "What should I wear for this trek?", answer: "Good trekking shoes essential due to muddy and slippery terrain. Comfortable shoes required for ups and downs on the walking path." },
+      { question: "When is the best time to visit?", answer: "August-September offers best views with blue skies and harvest season colors. December-early spring has fog and mist obscuring scenery." },
+    ],
+    sentiment: {
+      positive: "Nearly all visitors praise stunning rice terraces, peaceful atmosphere, authentic ethnic village experience, and excellent trekking opportunities",
+      negative: "Vendors are pushy and follow tourists aggressively; fog and mist frequently obscure views in winter months",
+    },
+  },
 }

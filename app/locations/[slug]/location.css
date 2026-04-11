@@ -446,3 +446,112 @@
   .nearby-dist { font-size: 12px; }
   .nearby-time { font-size: 11px; }
 }
+
+/* ── THINGS TO KNOW LIST ── */
+.ttk-list {
+  border: 1px solid var(--chip-border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 40px;
+}
+.ttk-row {
+  display: flex;
+  border-bottom: 1px solid var(--chip-border);
+}
+.ttk-row:last-child { border-bottom: none; }
+.ttk-label {
+  flex-shrink: 0;
+  width: 120px;
+  padding: 14px 16px;
+  background: var(--chip-bg);
+  border-right: 1px solid var(--chip-border);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9ca3af;
+  font-weight: 600;
+}
+.ttk-icon { font-size: 15px; }
+.ttk-value {
+  flex: 1;
+  padding: 14px 18px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #374151;
+}
+@media (max-width: 480px) {
+  .ttk-row { flex-direction: column; }
+  .ttk-label {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    border-right: none;
+    border-bottom: 1px solid var(--chip-border);
+    padding: 10px 16px;
+  }
+}
+
+/* ── SECTION SUBTEXT ── */
+.section-subtext {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: -14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* ── FAQ ── */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.18s, background 0.18s;
+}
+.faq-item[open] {
+  border-color: var(--chip-border);
+  background: var(--chip-bg);
+}
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-chevron {
+  font-size: 20px;
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  line-height: 1;
+}
+.faq-item[open] .faq-chevron {
+  transform: rotate(90deg);
+}
+.faq-answer {
+  padding: 14px 20px 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4b5563;
+  border-top: 1px solid var(--chip-border);
+}

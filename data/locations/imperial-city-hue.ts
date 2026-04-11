@@ -44,4 +44,32 @@ export const imperialCity: Location = {
     travelTips:
       "The Imperial City requires at least 2–3 hours to cover properly - rushing it in 90 minutes leaves half the complex unseen. Hire an audio guide at the entrance (available in English, French, Japanese) or join a guided tour to get context for the buildings, as many are unmarked or labelled only in Vietnamese. The combination of the Imperial City, Thiên Mụ Pagoda, and one royal tomb - either Khải Định or Tự Đức - is the standard Huế full-day itinerary and genuinely covers the city's three most historically significant sites.",
   },
+  insights: {
+    highlights: [
+      "Vast complex with multiple restored palaces, temples, and royal residences spanning several hours of exploration",
+      "UNESCO World Heritage Site featuring ornate architecture, gardens, moat, gates, and iconic flag tower",
+      "Rich historical narrative of the Nguyễn Dynasty with English signage explaining artifacts and structures",
+    ],
+    thingsToKnow: {
+      crowds: "Expect crowds during peak hours; early morning before 8am or weekdays offer quieter experiences. Despite many visitors, the spacious grounds prevent overcrowding feeling",
+      difficulty: "Requires extensive walking on large grounds; wear comfortable shoes. Some interiors prohibit photography",
+      safety: null,
+      accessibility: "Electric vehicle shuttle service available (240,000-300,000 VND for 45-60 minutes, 4-11 seater capacity). Electric bicycles for rent (100,000 VND/60 minutes) near Thai Hoa Palace. Restrooms available",
+      seasonal: "Best visited early morning or late afternoon when cooler with better lighting. Extremely hot during midday hours",
+    },
+    visitorTips: [
+      "Purchase audio guide (100,000 VND) or hire local tour guide for deeper historical insights and context",
+      "Bring cash; ticket office only accepts cash (200,000 VND entry). Buy combo tickets online or in advance for better rates",
+      "Plan 3-5 hours minimum; wear traditional Vietnamese clothing for better photos. Visit cultural performances at Royal Theatre (10am, 3pm)",
+    ],
+    faq: [
+      { question: "How long should I spend at the Imperial City?", answer: "Plan 3-5 hours minimum to explore 80% of the complex. Many visitors spend 4+ hours and recommend allocating a full morning or afternoon" },
+      { question: "What's the best time to visit?", answer: "Arrive before 8am for quietest experience, or visit late afternoon. Avoid midday when extremely hot and most crowded. Weekdays are less busy than weekends" },
+      { question: "What payment methods are accepted?", answer: "Ticket office accepts cash only (200,000 VND). Buy tickets online in advance or purchase combo tickets valid for 2 days to visit imperial tombs" },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for historical significance, restored architecture, spacious grounds, and reasonable entry fees. Most visitors recommend it as essential Hue destination and appreciate the peaceful atmosphere despite crowds",
+      negative: "Some areas under reconstruction limiting what can be seen. Audio guide numbering didn't align with maps for some visitors. Ticket office location not clearly marked. A few found maintenance could be better",
+    },
+  },
 }

@@ -47,4 +47,32 @@ export const hmongKingPalace: Location = {
     travelTips:
       "The Hmong King Palace is one of the few sites on the Ha Giang loop that provides historical and cultural context for the landscape mày are riding through. The plateau's dramatic scenery is the main draw, but understanding that this was an opium-producing region controlled by a single powerful clan under a colonial arrangement - and that the architectural evidence of that history is sitting right there in Đồng Văn - makes the visit significantly richer. Most loop riders stop here for 30 minutes and move on; treating Đồng Văn as an overnight with a proper morning in the old quarter and palace is a better allocation of time.",
   },
+  insights: {
+    highlights: [
+      "Unique architecture blending Chinese, French, and H'Mong styles built in early 20th century",
+      "Historic residence of Vương Chính Đức (King Mèo) with 64 rooms and intricate stone carvings",
+      "Located in Sà Phìn valley, Đồng Văn district, surrounded by dramatic limestone plateau landscape",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded with tourists; atmosphere lacks the solemnity and historic feeling it had in 2019",
+      difficulty: null,
+      safety: null,
+      accessibility: "Large, convenient parking for cars and motorcycles; spacious grounds with multiple photo spots",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Hire a guide to understand the unique architectural fusion and detailed carved decorations throughout",
+      "Visit during peach blossom season for scenic flowers in the compound grounds",
+      "Explore the interconnected rooms inside to fully appreciate the complex layout of 64 rooms",
+    ],
+    faq: [
+      { question: "How long does it take to visit?", answer: "Tours are relatively quick to complete, though hiring a guide allows more time to appreciate architectural details and history." },
+      { question: "What is the best time to visit for fewer crowds?", answer: "Avoid peak tourist seasons. Early 2019 had better atmosphere than current conditions with excessive visitor numbers." },
+      { question: "Is there adequate parking?", answer: "Yes, there is large, convenient parking available for both cars and motorcycles at the site." },
+    ],
+    sentiment: {
+      positive: "Visitors praise the unique architectural significance, historical value, intricate craftsmanship, and its role in preserving H'Mong cultural heritage",
+      negative: "Overcrowding has diminished the solemnity and authenticity of the historic site; tourism organization lacks professionalism",
+    },
+  },
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "son-doong-cave",
+  "google_rating": 4.7,
+  "google_review_count": 1127,
+  "insights": {
+    "highlights": [
+      "World's largest cave by volume with chambers large enough to fit 40-story skyscrapers",
+      "Underground jungle ecosystem with rare plants thriving from sunlight through sinkholes",
+      "Multi-day expedition includes cave camping, river crossings, and 90-meter wall climbing"
+    ],
+    "thingsToKnow": {
+      "crowds": "Only about 1,000 permits issued annually, making it exclusive and pristine",
+      "difficulty": "Requires high fitness level, coordination, and confidence. Involves sweat, mud, tight spaces, river crossings, steep climbs, slippery surfaces, and demanding terrain over multiple days",
+      "safety": "Access only through licensed Oxalis Adventure Tours with experienced caving experts and safety assistants. Remote location far from medical facilities and emergency services",
+      "accessibility": "Guided tours only with professional caving companies. Not accessible to general public without authorized operator",
+      "seasonal": null
+    },
+    "visitorTips": [
+      "Book through Oxalis Adventure Tours at least one year in advance; cost approximately USD 3,000 for full expedition",
+      "Bring waterproof phone pack to photograph the cave; standard cameras struggle to capture its scale",
+      "Prepare for high humidity, temperature variations, and lack of shower facilities during multi-day trek"
+    ],
+    "faq": [
+      {
+        "question": "Who can visit Sơn Đoòng Cave?",
+        "answer": "Only guided tours with Oxalis Adventure Tours permitted. Requires high fitness, coordination, confidence. Not suitable for people with health concerns or low physical conditioning."
+      },
+      {
+        "question": "How much does it cost and how far in advance must I book?",
+        "answer": "Approximately USD 3,000 for full expedition package. Must book at least one year in advance. Only about 1,000 permits issued annually."
+      },
+      {
+        "question": "What should I prepare for the trek?",
+        "answer": "Waterproof phone pack, physical conditioning, expect no showers, mud, scrambling through tight spaces. The journey spans multiple days with cave camping inside the mountain."
+      }
+    ],
+    "sentiment": {
+      "positive": "Overwhelmingly praised as life-changing, once-in-a-lifetime adventure. Visitors compare experience favorably to climbing Mount Everest. Consistently described as world-class organization by Oxalis with professional guides and safety staff",
+      "negative": null
+    }
+  }
+}

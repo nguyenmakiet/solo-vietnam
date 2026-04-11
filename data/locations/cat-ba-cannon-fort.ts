@@ -40,4 +40,32 @@ export const catBaCannonFort: Location = {
     travelTips:
       "The Cannon Fort is a 45-minute visit that combines a moderate uphill walk with genuine historical interest and the best view on the island. The sunset from the western platform is the highlight - schedule the visit for late afternoon and watch the light change over Ha Long Bay. The fort works well as an add-on to a full day of kayaking or national park trekking.",
   },
+  insights: {
+    highlights: [
+      "Panoramic views of Lan Ha Bay and Cat Ba Island, especially at sunset",
+      "WWII-era abandoned fort with tunnels, trenches, and cannons to explore",
+      "Free viewpoint accessible via stairs on left side of gate entrance",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Stairs are overgrown and steep; terrain is rocky with some obstacles",
+      safety: "Military area with periodic closures. Aggressive local at gate has been reported. Watch for boars, snakes, bats, and mosquitoes. Some reviews report violence from gate attendant—use free stairs route to avoid confrontation",
+      accessibility: "Free viewpoint via stairs on left side of gate; official gate entrance charges 50,000 VND per person with no ticket issued",
+      seasonal: "Best visited at sunset or sunrise for clear views. Area occasionally closes for holidays or typhoon damage",
+    },
+    visitorTips: [
+      "Use the free stairs on the left side of the gate (before fence) to avoid 50,000 VND fee and confrontation with gate attendant",
+      "Bring insect repellent for mosquitoes and wear long pants to protect from thorns and snakes",
+      "Visit at sunset for optimal lighting and views; misty weather significantly reduces visibility",
+    ],
+    faq: [
+      { question: "Is there a real entrance fee or is it a scam?", answer: "A 50,000 VND (approximately $2 USD) fee is collected at the gate, though no ticket is issued. Reviews are divided on legitimacy. Free viewpoint access is available via stairs on the left side" },
+      { question: "Is the fort currently open to visitors?", answer: "Status varies—some reviews report military closure, others access via free stairs. Check before visiting as it closes for holidays, typhoons, and maintenance periods" },
+      { question: "What wildlife hazards should I be aware of?", answer: "Boars (non-aggressive), snakes, bats in tunnels, and heavy mosquito activity. Bring repellent and wear protective clothing. Avoid engaging with wildlife" },
+    ],
+    sentiment: {
+      positive: "Stunning bay views and historical significance appeal to sunset seekers and history enthusiasts; free stairs route highly recommended",
+      negative: "Abandoned, unmaintained facility with aggressive gate attendant; closed indefinitely for military use; some tourists report safety concerns and questionable fee practices",
+    },
+  },
 }

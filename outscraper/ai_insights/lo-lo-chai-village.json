@@ -1,0 +1,42 @@
+{
+  "slug": "lo-lo-chai-village",
+  "google_rating": 4.7,
+  "google_review_count": 533,
+  "insights": {
+    "highlights": [
+      "Rammed earth traditional houses with distinctive architecture near Lũng Cú flag pole",
+      "Spring peach blossoms and scenic morning mist over limestone mountains",
+      "Lô Lô ethnic minority culture with traditional weaving, crafts, and folk performances"
+    ],
+    "thingsToKnow": {
+      "crowds": "Increasingly crowded on weekends and peak seasons; visit weekdays or early morning/late afternoon for quieter experience",
+      "difficulty": null,
+      "safety": "Road access noted as not safe by some visitors; elderly villagers may ask for money from tourists",
+      "accessibility": "Uphill walking path to viewpoint requires sturdy footwear",
+      "seasonal": "Visit spring for peach blossoms; sunset and early morning light best for photography"
+    },
+    "visitorTips": [
+      "Book homestay accommodation in advance; village is small and fills quickly",
+      "Arrive early before 8:30 AM or visit on weekdays to avoid crowds",
+      "Trek uphill from village for panoramic views of entire valley and surrounding mountains"
+    ],
+    "faq": [
+      {
+        "question": "Is there an entry or overnight fee for foreign visitors?",
+        "answer": "Foreign visitors staying overnight reportedly charged 10 USD local fee; exact purpose unclear but affects accommodation costs"
+      },
+      {
+        "question": "How has the village changed in recent years?",
+        "answer": "Village increasingly developed with new homestays, cafes, and construction; some say it has lost original authenticity and peace due to tourism"
+      },
+      {
+        "question": "When is the best time to visit for photography?",
+        "answer": "Early morning with mist, late afternoon golden light, or sunset hours offer best lighting; avoid midday and weekends for fewer crowds"
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise peaceful atmosphere, friendly locals, traditional architecture, and cultural authenticity of Lô Lô ethnic minority village",
+      "negative": "Some concerns about over-tourism, construction development, trash on hiking trails, overcrowding on weekends, and loss of original village character"
+    }
+  }
+}

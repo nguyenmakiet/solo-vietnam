@@ -19,8 +19,12 @@ export const baBeLake: Location = {
   openingHours: "Open daily; boat tours typically 7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.4080,105.6255",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775903364072!6m8!1m7!1sCAoSHENJQUJJaERrN3VabGI3N3c0QTV5aTZnYkVaN1o.!2m2!1d22.40503519723336!2d105.6182517581162!3f47.12853681512251!4f-6.301399648484335!5f0.7820865974627469", },
-  heroImage: heroUrl("ba-be-lake-bac-kan_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ba-be-lake-bac-kan-1_wbqmiq"),
+  gallery: [
+    "ba-be-lake-bac-kan-3_lvbevc",
+    "ba-be-lake-bac-kan-1_wbqmiq",
+    "ba-be-lake-bac-kan_f4igfa",
+  ],
   seoDescription:
     "Ba Be Lake is Vietnam's largest natural freshwater lake - a 8km-long body of water set within a national park of karst limestone mountains, primary forest, and Tày ethnic minority villages in Bắc Kạn province, one of the most genuinely wild nature destinations in the northern highlands.",
   tips: [
@@ -39,5 +43,33 @@ export const baBeLake: Location = {
       "The lake visit centres on boat travel - the water is the highway through the park. The main circuit covers the lake itself, the narrow Năng River gorge with its towering limestone walls, Puong Cave (a 300-metre cavern through which the river flows, with a large bat colony), and Dau Dang Waterfall at the park's northern boundary. The lake surface in morning light, with mist rising from the water and karst peaks reflected below, is one of the quieter natural spectacles available in northern Vietnam. Birdlife is abundant and visible without specialist equipment. The Tày villages around the lake offer genuine homestay experiences - family meals, evening conversation through limited shared language, and the rhythm of lake life at dawn.",
     travelTips:
       "Ba Be is an unhurried destination that rewards two nights over one - the first afternoon orients you to the lake, the boat trip covers the main circuit, and a second morning allows for early paddling, forest walks, or simply sitting with the landscape. Visitors trying to do it in a single overnight from Hanoi typically spend more time in transit than at the lake. The national park has a clear management structure and tourism here is generally low-impact - follow guide recommendations about wildlife approach distances and avoid single-use plastics on the water. Late September to early November is peak season for colour and clarity; the lake fills and the forest greens after the rains end.",
+  },
+  insights: {
+    highlights: [
+      "Vietnam's largest natural lake with crystal-clear jade-colored water surrounded by mountains",
+      "Boat tours visiting Puong Cave, Dau Dang Waterfall, An Ma Temple, and Widow Island",
+      "Authentic homestays in ethnic villages offering peaceful retreat near Pac Ngoi",
+    ],
+    thingsToKnow: {
+      crowds: "Generally quiet and peaceful, especially in low season. End of November and winter months recommended for fewer tourists",
+      difficulty: "Moderate. Mountainous terrain 250km from Hanoi with winding roads. Most attractions accessible only by boat",
+      safety: null,
+      accessibility: "Limited transport options; own motorcycle recommended for exploring. No road access to Puong Cave and Dau Dang Waterfall; boat required",
+      seasonal: "Summer shows stunning colors where river confluence meets lake. Winter offers comfortable weather but boats may be cold; bring jacket. December temperatures require warm clothing",
+    },
+    visitorTips: [
+      "Plan minimum 2-night stay to properly explore lake and surrounding areas on foot",
+      "Book boat tours through local homestays; pricing varies by duration and destinations (400k-1.5 million dong)",
+      "Rent kayaks near Ben Thuyen Pac Ngoi on south bank for independent lake exploration",
+    ],
+    faq: [
+      { question: "How long should I spend at Ba Be Lake?", answer: "Minimum 2 nights recommended. Half-day boat tours available, but multi-day stays allow trekking, cycling, and village exploration" },
+      { question: "How much do boat tours cost?", answer: "Private boats 700k-1.5 million dong depending on size and destinations. Shared tours cheaper. National park entrance 46k dong" },
+      { question: "Can I swim in the lake?", answer: "Swimming at main lake is restricted. Some islands have swing spots for water entry, though water quality varies by location" },
+    ],
+    sentiment: {
+      positive: "Majority praise peaceful atmosphere, clear water, and authentic local experiences. Highly recommended for relaxation and nature lovers seeking escape from Hanoi",
+      negative: "Some disappointed by mediocre cave and waterfall attractions, garbage at Dau Dang Waterfall, expensive solo travel costs, and limited non-boat activities",
+    },
   },
 }

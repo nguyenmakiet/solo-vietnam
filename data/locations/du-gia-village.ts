@@ -40,4 +40,32 @@ export const duGiaVillage: Location = {
     travelTips:
       "Du Già is the eastern loop's equivalent of Lô Lô Chải or Tả Van on other northern routes - a village where staying overnight transforms the experience from a scenic stop into a cultural encounter. Riders who rush through on a day loop miss what makes Du Già worth visiting. The village works best as a second night on a 4-day loop: Hà Giang city → Du Già (night 1, eastern route) → Yên Minh → Đồng Văn (night 2) → Mèo Vạc → Hà Giang city.",
   },
+  insights: {
+    highlights: [
+      "Waterfall within 5-10 minute walk, ideal base for Ha Giang loop travelers",
+      "Home-cooked Vietnamese meals using fresh local ingredients included with stay",
+      "Mountain valley views from rooms and gardens with peaceful natural setting",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: null,
+      safety: null,
+      accessibility: "Limited modern amenities: no air conditioning, basic Wi-Fi connectivity",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Book meals in advance; complimentary corn wine offered with dinner orders",
+      "Bring insect repellent; mosquito nets provided in rooms for additional protection",
+      "Plan 2+ nights to fully enjoy gardens, walking trails, and mountain scenery",
+    ],
+    faq: [
+      { question: "What accommodation options are available?", answer: "Private rooms and shared dormitory bunks with big bunk beds and mosquito nets. All rooms are clean and well-decorated." },
+      { question: "Is the waterfall accessible for guests?", answer: "Yes, it is a short 5-10 minute walk from the lodge. Peaceful walking trails surround the property as well." },
+      { question: "What should I know about amenities?", answer: "No air conditioning (not needed at mountain elevation), basic Wi-Fi. Rooms are well-equipped with comfortable beds and garden views." },
+    ],
+    sentiment: {
+      positive: "All 30 reviews award 5-star ratings. Guests consistently praise authentic hospitality, exceptional food quality, stunning mountain views, and proximity to waterfall. Popular with Ha Giang loop motorcyclists.",
+      negative: null,
+    },
+  },
 }

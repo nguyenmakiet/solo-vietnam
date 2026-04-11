@@ -47,4 +47,32 @@ export const muiNeFishingVillage: Location = {
     travelTips:
       "The fishing village is most rewarding when visited early and without expectations of a curated experience. It is a working place, not a tourist attraction - the market is real commerce, the smells are real, and the fishermen are working rather than performing. Respectful photography is generally tolerated but asking before photographing individuals is worth doing. Combine the village with a sunrise on Hàm Tiến Beach for a full early-morning itinerary - both are within easy motorbike distance and the light between 5:30 and 7:30 AM is exceptional on this stretch of coast.",
   },
+  insights: {
+    highlights: [
+      "Active fishing village with boats, fresh seafood stalls, and authentic morning market activity",
+      "Stunning sunrise and sunset views of fishing boats and coastal scenery",
+      "Experience traditional bowl boat rides for 150,000 VND per 20 minutes",
+    ],
+    thingsToKnow: {
+      crowds: "Best visited at sunrise (5:30 AM) when market is in full swing; becomes quieter by 6:45 AM. Visit independently by taxi rather than with tours for more flexibility",
+      difficulty: null,
+      safety: "Verify seafood freshness before purchasing; some vendors have sold spoiled seafood. Watch belongings as stray dogs are present",
+      accessibility: null,
+      seasonal: null,
+    },
+    visitorTips: [
+      "Arrive at 5:30-7:00 AM to see fishermen unloading catch and market in action",
+      "Bargain for bowl boat rides and fresh seafood prices; expect to pay more at restaurants than direct from stalls",
+      "Bring Vietnamese coffee or visit seafood restaurants with balconies overlooking village for best photo opportunities",
+    ],
+    faq: [
+      { question: "What is the best time to visit Mũi Né Fishing Village?", answer: "Arrive at sunrise (5:30 AM) to see fishermen bringing in their catch and the market in full operation. By 6:45 AM activity thins out significantly." },
+      { question: "Is the seafood safe to eat here?", answer: "Buy only visibly alive seafood. Some vendors have sold spoiled items, so inspect carefully. Prices are reasonable at beach stalls but restaurants charge more." },
+      { question: "What should I expect regarding cleanliness?", answer: "The beach has significant trash, shells, and debris scattered everywhere. This is a working fishing village, not a cleaned tourist attraction. Accept it as authentic or view from distance." },
+    ],
+    sentiment: {
+      positive: "Most travelers appreciate the authentic, raw glimpse into local fishing village life, fresh seafood, stunning sunrise/sunset views, and genuine interactions with locals despite conditions",
+      negative: "Extensive trash and garbage scattered on beach and in water is consistently criticized; some vendors sold spoiled seafood; restaurants overcharge tourists",
+    },
+  },
 }

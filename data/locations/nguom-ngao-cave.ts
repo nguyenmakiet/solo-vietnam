@@ -40,4 +40,32 @@ export const nguomNgaoCave: Location = {
     travelTips:
       "Nguồm Ngao is significantly less visited than Ha Long Bay's caves despite being comparably impressive - partly because Cao Bằng is remote, partly because it doesn't have the marketing infrastructure. The result is a cave experience that feels genuinely exploratory rather than like a managed tourist attraction. The combination of Bản Giốc Waterfall in the morning and Nguồm Ngao Cave before lunch is the most efficient pairing in Cao Bằng province, and one of the best half-days in northern Vietnam.",
   },
+  insights: {
+    highlights: [
+      "Massive cave system with 2-3 km of explorable passages and impressive stalactite and stalagmite formations",
+      "Long guided tour option (195,000 VND) reveals most beautiful sections inaccessible on short route",
+      "Rare annual phenomenon: three sunlight beams enter cave on April 22 at 2 PM for a few minutes",
+    ],
+    thingsToKnow: {
+      crowds: "Early morning visits (7-8 AM) are quieter; large tour groups arrive around 8:45 AM. Weekday and low season visits have minimal crowds.",
+      difficulty: "Easy flat paths but involves low passages requiring ducking or crawling. Some stairs are steep and slippery. Wear proper shoes; not ideal for elderly or physically challenged visitors.",
+      safety: "Cave floor is wet and slippery due to internal stream. Multiple low sections require bending. Sturdy footwear essential. Internet coverage available inside.",
+      accessibility: "Well-maintained paved paths with railings throughout. However, low passage sections and steep slippery stairs limit accessibility for mobility-impaired visitors.",
+      seasonal: "Visit early in the day for better lighting and fewer crowds. Low season offers solitude. One reviewer experienced power outage mid-tour affecting cave exploration.",
+    },
+    visitorTips: [
+      "Invest in the long guided tour (195,000 VND) instead of short route (45,000 VND); most stunning sections require this option",
+      "Arrive by 7:50-8:15 AM to avoid tour groups and experience the cave with minimal crowds",
+      "Wear sturdy, slip-resistant shoes due to wet, slippery cave floors and stream; bring headlamp for darker sections",
+    ],
+    faq: [
+      { question: "What's the difference between short and long tours?", answer: "Short tour (45,000 VND, 1 km, 15-20 minutes) covers basic sections. Long guided tour (195,000 VND, 2-3 km, 2+ hours) reveals the cave's most impressive formations and hidden areas." },
+      { question: "What are the total costs for a visit?", answer: "Entrance: 45,000 VND. Long guided tour: 150,000 VND. Motorcycle parking: 10,000 VND near coffee vendor. Total approximately 200,000 VND per person." },
+      { question: "Is an English-speaking guide available?", answer: "Request an English-speaking guide when purchasing tickets, but availability varies. Many guides speak primarily Vietnamese, though they remain helpful and attentive despite language barriers." },
+    ],
+    sentiment: {
+      positive: "Reviewers consistently praise the cave's massive scale, impressive formations, and reasonable pricing. Most highlight exceptional experiences on early morning visits and recommend the longer tour despite higher cost.",
+      negative: "Some found the cave lacks dramatic 'wow factor' compared to other Vietnamese caves. Wet, slippery floors caused concerns. One reviewer experienced a power outage mid-tour that disrupted exploration.",
+    },
+  },
 }

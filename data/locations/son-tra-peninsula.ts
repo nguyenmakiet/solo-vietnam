@@ -40,4 +40,32 @@ export const sonTraPeninsula: Location = {
     travelTips:
       "Sơn Trà is the aspect of Đà Nẵng most consistently underestimated by visitors who focus on the beach and the bridges. The peninsula offers genuine wildlife, empty beaches, and dramatic scenery within 20 minutes of the city centre. A half-day loop by motorbike - leaving at 5:30 AM for wildlife, stopping at the summit viewpoint, swimming at Bãi Bắc, and finishing at Linh Ứng Pagoda - is one of the best half-days available in any Vietnamese city. The douc langurs are the main draw for wildlife travellers; seeing them in the wild is a genuinely rare experience given how few accessible populations remain.",
   },
+  insights: {
+    highlights: [
+      "Panoramic views of Danang City, coastline, and mountains; ideal sunset viewing spot",
+      "Well-maintained roads and trails perfect for cycling, running, hiking, and mountain biking",
+      "North side features monkeys and winding roads; south side has Lady Buddha and 800-year-old Ficus tree",
+    ],
+    thingsToKnow: {
+      crowds: "Visit during morning or evening to avoid busy hours",
+      difficulty: null,
+      safety: null,
+      accessibility: "Automatic scooters cannot reach the highest roads; north side winding roads not accessible for cars",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Rent a motorbike and allocate 4 hours to explore the entire peninsula",
+      "Drive the south side for Lady Buddha and historic Ficus tree; north side offers monkey sightings",
+      "Stop at viewpoints along the mountain road for photos and to enjoy coastal scenery",
+    ],
+    faq: [
+      { question: "Can I reach all areas of Son Tra Peninsula with any vehicle?", answer: "No. Automatic scooters cannot reach the highest roads. The north side winding roads are not accessible for cars." },
+      { question: "What is the best time to visit to avoid crowds?", answer: "Visit during morning or evening hours to avoid busy times and enjoy a more peaceful experience." },
+      { question: "How long should I spend exploring Son Tra Peninsula?", answer: "Plan at least 4 hours if renting a motorbike to explore the entire peninsula at a comfortable pace." },
+    ],
+    sentiment: {
+      positive: "All reviewers highly recommend Son Tra Peninsula as a must-visit attraction in Danang, praising its natural scenery, recreational activities, wildlife, and peaceful atmosphere",
+      negative: null,
+    },
+  },
 }

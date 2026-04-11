@@ -44,4 +44,32 @@ export const oQuyHoPass: Location = {
     travelTips:
       "O Quy Ho is best understood as a journey rather than a destination - the experience is in the riding or driving of it, not in reaching a single viewpoint. Plan for at least half a day to cross it properly; riders who attempt to rush through miss both the photography opportunities and the physical experience of being in a genuinely high mountain environment. The pass is a core section of the Northwest Loop, typically done over 4-6 days from Hanoi via Điện Biên Phủ and Mù Cang Chải. Solo first-time riders should be comfortable with mountain road conditions before attempting it.",
   },
+  insights: {
+    highlights: [
+      "Nearly 50km mountain pass, longest in Northwest Vietnam, spanning Tam Duong, Lai Chau, and Sa Pa districts",
+      "Professional photography hotspot for engagement and wedding shoots with dramatic valley and mountain views",
+      "Popular motorbike route from Sa Pa to Lai Chau with wide, safe roads and scenic vistas",
+    ],
+    thingsToKnow: {
+      crowds: "Not typically crowded; viewpoint operated by ethnic minority people with small entrance fee (20k per person)",
+      difficulty: "Winding mountain pass requiring experienced motorbike riding; steep climbs and descents can be physically demanding",
+      safety: null,
+      accessibility: "Accessible by car or motorbike; steep terrain may challenge those with mobility issues",
+      seasonal: "Avoid early morning due to heavy fog; best time 10am-2pm. Higher chance of rain and fog than clear days; colder at top than Sa Pa town",
+    },
+    visitorTips: [
+      "Visit between 10am-2pm for clearest views; avoid early morning when fog obscures scenery completely",
+      "Travel by motorbike for best experience; drive up pass rather than visiting tourist ticket area at top",
+      "Try grilled meat skewers and grilled sweet potatoes at roadside shops; bring layers as top is significantly colder",
+    ],
+    faq: [
+      { question: "When is the best time to visit O Quy Ho Pass?", answer: "Visit between 10am-2pm for the clearest views. Avoid early morning due to heavy fog that obscures scenery. Clear days are less frequent than rainy or foggy days." },
+      { question: "Is a motorbike or car better for this route?", answer: "Motorbike is recommended for the full experience and better views while driving up. Both car and motorbike are viable; roads are wide and safe." },
+      { question: "How long does it take to visit from Sa Pa?", answer: "Approximately 1 hour round trip by motorbike from Sa Pa city. The pass spans nearly 50km total across three districts." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as one of Vietnam's greatest mountain passes with stunning scenery; highly recommended for motorbike riders and photographers",
+      negative: "Fog and rain frequently obscure views; steep terrain physically taxing for some visitors; weather conditions unpredictable",
+    },
+  },
 }

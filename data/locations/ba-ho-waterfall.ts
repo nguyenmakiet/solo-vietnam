@@ -42,4 +42,32 @@ export const baHoWaterfall: Location = {
     travelTips:
       "Ba Hồ is the best half-day excursion from Nha Trang for travellers who want something beyond the beach and islands. The combination of jungle trek, swimming, and the genuine remoteness of the upper pool makes it qualitatively different from anything available in the city. Allow 4–5 hours for the full round trip including swimming time at the upper pool. The motorbike ride north along Highway 1A, with mountain views on one side and the coast on the other, is itself scenic and adds to the experience.",
   },
+  insights: {
+    highlights: [
+      "Three cascading freshwater lakes with swimming and cliff jumping opportunities near Nha Trang",
+      "Well-maintained jungle trails with rope assistance, showers, toilets, and food stands",
+      "Activities included: kayaking, skywalk, and access to multiple waterfall pools for 185,000 VND",
+    ],
+    thingsToKnow: {
+      crowds: "Weekdays recommended to avoid local tour groups. Lake 2 busiest due to cliff jumping; lakes 3+ quieter. Arrive early for solitude.",
+      difficulty: "Requires good physical fitness and grippy hiking shoes. Rock scrambling and climbing to lakes 2-3 very challenging. Vertical descents with single ropes. Not suitable for young children or seniors.",
+      safety: "Slippery wet rocks cause frequent falls. No safety bars at water exits; small fish bite feet. Use grab car rather than bus due to motorcycle traffic hazards. Lifeguard with medical supplies on-site.",
+      accessibility: "Initial paved path to stream is smooth. Shuttle available (150,000 VND round trip or 40,000 VND one-way). Very tall rocks difficult for people under 1.80m. Not family-friendly despite marketing.",
+      seasonal: "Water appearance varies by season. Heavy rain causes muddy water. Best visited during drier periods.",
+    },
+    visitorTips: [
+      "Wear sturdy, closed-toe hiking shoes with grip. Flip-flops and regular sandals cause injury risk.",
+      "Pack swimwear, towel, and extra water. Ticket includes 1 bottle of water but more needed.",
+      "Use local guide for cliff jumping to identify safe jump spots; unguided jumps risk injuries from shallow rocks.",
+    ],
+    faq: [
+      { question: "What is the actual entrance fee and what does it include?", answer: "185,000 VND per person includes all activities (kayaking, skywalk), bottle of water, and access to all three lakes. Shuttles cost extra." },
+      { question: "How physically demanding is the hike to the waterfalls?", answer: "Moderate initial walk becomes very challenging. Reaches first lake in 10-20 minutes depending on fitness. Second and third lakes require steep rock climbing with ropes and vertical descents. Not for beginners." },
+      { question: "What safety concerns should I know about?", answer: "Rocks are slippery; many visitors slip and fall. Water exits lack handholds. Small fish bite feet. No ropes on all climbing sections. Get injured easily if inexperienced. Lifeguard present." },
+    ],
+    sentiment: {
+      positive: "Majority praise stunning natural scenery, well-maintained facilities, and thrilling adventure experience. Good value for activities included.",
+      negative: "Entry fee mandatory regardless of activity use. Cliff jumping dangerous without guide. Aggressive marketing as relaxing fails to convey difficulty. No safety improvements despite documented injuries.",
+    },
+  },
 }

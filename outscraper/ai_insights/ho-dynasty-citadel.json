@@ -1,0 +1,42 @@
+{
+  "slug": "ho-dynasty-citadel",
+  "google_rating": 4.3,
+  "google_review_count": 2679,
+  "insights": {
+    "highlights": [
+      "UNESCO World Heritage site built in 14th-15th century with four symmetrical gates and stone walls still standing",
+      "Expansive ruins spanning nearly 1km² surrounded by active rice paddies and rural farmland",
+      "Peaceful site with minimal foreign visitors, offering solitude to explore imperial history"
+    ],
+    "thingsToKnow": {
+      "crowds": "Few foreign visitors, especially if visiting weekdays and avoiding weekends/public holidays. Site feels uncrowded.",
+      "difficulty": "Requires substantial walking across large area; wear comfortable footwear. Exits not always intuitive; may require walking long distances back to entrance.",
+      "safety": null,
+      "accessibility": "Can be explored on foot, bicycle, or motorbike. Multiple entry gates available (north, east, west gates open; main entrance at south gate). Some ticket inspectors may be inattentive.",
+      "seasonal": "Hot and dry inside the citadel; plan visits to avoid peak heat. Visit before 4pm if using local bus No. 2 for onward travel to Sam Son Beach."
+    },
+    "visitorTips": [
+      "Enter through south gate (main entrance with ticket booth, guides, small museum) for clearest orientation and information",
+      "Bring water and sun protection; site offers little shade except at arched gates where locals rest during hottest hours",
+      "Allow 1-2 hours for exploration depending on interest; combine with nearby town of Vĩnh Lộc or use as stopover"
+    ],
+    "faq": [
+      {
+        "question": "What is the entrance fee and how is it structured?",
+        "answer": "South gate (main entrance): 10,000 VND with guides and museum. Other gates have ticket offices but are sometimes unmanned. Some visitors report fee inconsistencies."
+      },
+      {
+        "question": "How long does a typical visit take?",
+        "answer": "Most visitors spend 1-2 hours exploring the 1km² site. Time depends on interest level in history and how much of the grounds you wish to cover."
+      },
+      {
+        "question": "What remains to see at the citadel?",
+        "answer": "Four main ceremonial gates with massive stone blocks, extensive earthen and stone walls overgrown with vegetation, small museum with pottery and artifacts, and views of surrounding rice paddies."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors appreciate the historical significance as a UNESCO World Heritage site, impressive stonework, peaceful atmosphere, and unique experience of seeing local farmers working within the ruins.",
+      "negative": "Some find limited remaining structures, small museum, high entrance fees relative to amount to see, confusing exit routes, and inadequate restoration/excavation work."
+    }
+  }
+}

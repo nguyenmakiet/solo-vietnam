@@ -49,4 +49,32 @@ export const baOmLake: Location = {
     travelTips:
       "Ba Om Lake and Trà Vinh province represent one of the most accessible and least-visited pockets of Khmer Krom culture in Vietnam. The combination of the ancient lake, the old-growth tree canopy, and the active Khmer Buddhist temple creates a place that feels genuinely different from the rest of the Mekong Delta - and the province as a whole has more Khmer temples per square kilometer than any other outside Sóc Trăng. If mày is doing a thorough Mekong Delta itinerary that goes beyond the standard Cần Thơ floating market, Trà Vinh with Ba Om Lake and the city's temple cluster is the right next stop.",
   },
+  insights: {
+    highlights: [
+      "Ancient hopea and dipterocarp trees hundreds of years old with massive exposed roots",
+      "Cultural landmark tied to Khmer folklore about women's marriage proposal tradition",
+      "Ok Om Bok festival held here every November celebrating Khmer heritage",
+    ],
+    thingsToKnow: {
+      crowds: "Becomes busy during holidays and Khmer holidays; peaceful at other times",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Ok Om Bok festival occurs in November",
+    },
+    visitorTips: [
+      "Visit on non-holiday weekdays for maximum tranquility and peaceful atmosphere",
+      "Spend 1-2 hours walking around the lake and resting under trees",
+      "Try local Tra Vinh dishes like Bún Nước Lèo at nearby food vendors",
+    ],
+    faq: [
+      { question: "Is Ao Ba Om crowded?", answer: "It's peaceful on regular days but becomes busy during holidays and Khmer holidays. Visit on weekdays for a more tranquil experience." },
+      { question: "What is the Ok Om Bok festival?", answer: "It's a Khmer festival held at Ao Ba Om every November celebrating local culture and traditions." },
+      { question: "How long should I spend at Ao Ba Om?", answer: "Plan 1-2 hours to walk around the lake, rest under trees, and enjoy the peaceful atmosphere." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the tranquility, ancient trees, cultural significance, and ideal setting for relaxation and photography",
+      negative: null,
+    },
+  },
 }

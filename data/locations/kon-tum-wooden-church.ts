@@ -50,4 +50,32 @@ export const konTumWoodenChurch: Location = {
     travelTips:
       "Kon Tum Wooden Church is the anchor of a Central Highlands itinerary that most visitors rush through on the way between the coast and the plateau. The town itself is underrated - the Bahnar rong community houses on the north bank of the Đắk Bla, the Bahnar villages accessible by motorbike in the surrounding district, and the mission-era architecture of the church and orphanage together create a layered cultural landscape that takes at least a full day to appreciate. If mày is doing the Central Highlands loop - Kon Tum, Pleiku, Buôn Ma Thuột - allocating 1.5 days in Kon Tum rather than treating it as a transit stop gives the town enough time to deliver on what it offers.",
   },
+  insights: {
+    highlights: [
+      "Entirely wooden construction built in early 20th century combining Roman and Bahnar stilt house architecture",
+      "Colorful stained glass windows create kaleidoscope effect when sunlight passes through, especially late morning or afternoon",
+      "Functional orphanage behind the church where visitors can observe operations and make donations",
+    ],
+    thingsToKnow: {
+      crowds: "Sunday mornings are busiest when local ethnic groups attend mass conducted in Bahnar language",
+      difficulty: null,
+      safety: null,
+      accessibility: "Open daily 6:00 AM to 6:00 PM. Some doors may be locked; try side entrances. No admission fee. Toilet facilities are basic quality",
+      seasonal: "Christmas and Easter periods have special community preparations and services",
+    },
+    visitorTips: [
+      "Visit late morning or afternoon when sunlight illuminates colored glass windows creating impressive light effects",
+      "Sunday mass in Bahnar language offers authentic experience of local ethnic community worship practices",
+      "Park inside the church grounds and explore the connected orphanage, guest house, and communal buildings behind main cathedral",
+    ],
+    faq: [
+      { question: "What time should I visit for the best experience?", answer: "Late morning or afternoon for optimal sunlight through stained glass. Sunday mornings offer authentic Bahnar language mass and community gathering." },
+      { question: "Can I access the interior and is there an entrance fee?", answer: "Yes, interior is open to visitors free of charge. Some doors may be locked; try side entrances. Open 6:00 AM to 6:00 PM daily." },
+      { question: "What should I know about the orphanage behind the church?", answer: "The orphanage houses approximately 180 children averaging age 6, operated by nuns. Visitors welcome; donations for food are greatly needed and appreciated." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise unique wooden architecture blending French colonial and local Bahnar design, peaceful atmosphere, well-maintained condition, and cultural significance as must-see attraction in Kon Tum",
+      negative: "Toilet facilities noted as basic quality; some structural repairs use non-wood materials rather than original wood construction",
+    },
+  },
 }

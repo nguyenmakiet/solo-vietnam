@@ -48,4 +48,32 @@ export const thungKhePass: Location = {
     travelTips:
       "Thung Khe is most rewarding as part of a multi-day northwest loop rather than a pure day trip. The natural itinerary from the pass continues to Mai Chau (stilt-house homestay and valley cycling), then to Pù Luông Nature Reserve (50km, jungle trekking and waterfalls). Avoid the pass in fog or heavy rain - the combination of steep drops and slippery limestone surface makes it hazardous in low visibility. Returning to Hanoi via the same Highway 6 route means crossing twice, so plan the direction of travel to catch the best light on the way in.",
   },
+  insights: {
+    highlights: [
+      "Spectacular valley views from Thung Khe mountain pass on National Road 6",
+      "Authentic roadside experience with local ethnic vendors selling fresh fruits and street food",
+      "Stop between Hanoi and Mai Chau with local stalls offering cơm lam, thịt nướng, and trứng nướng",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "300 stairs available beyond 305-meter elevator at nearby viewpoint; challenging for those with low fitness",
+      safety: "Road is dangerous in early morning or late afternoon due to thick fog; drive carefully through mountain pass",
+      accessibility: "Toilet facilities available (3,000 VND per person); limited standard restroom infrastructure",
+      seasonal: "Check weather conditions before visiting; fog impacts visibility",
+    },
+    visitorTips: [
+      "Stop is on the roadside along National Road 6; bus drivers typically include this in itineraries",
+      "Free viewing spots available at road barriers without purchasing café services",
+      "Local food prices are elevated (approximately 20,000 VND per item) due to remote location",
+    ],
+    faq: [
+      { question: "Is there a cost to visit this viewpoint?", answer: "Free entrance to roadside viewing areas. Nearby Deo Da Trang charges fees for official viewpoint access. Toilet use costs 3,000 VND." },
+      { question: "What food options are available?", answer: "Local vendors sell cơm lam, grilled meat (thịt nướng), roasted eggs (trứng nướng), boiled corn, fresh oranges, and coffee." },
+      { question: "How is this stop accessed?", answer: "Located on National Road 6 between Hanoi and Mai Chau. Typically included as automatic stop on route; can also pull off at road barriers." },
+    ],
+    sentiment: {
+      positive: "Most travelers appreciate authentic local culture, valley views, and convenient break location on Hanoi-Mai Chau route",
+      negative: "Some report commercialization and pricing as excessive; shops partially block views; scenery less impressive than nearby alternatives like Pu Long",
+    },
+  },
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "hang-pagoda",
+  "google_rating": 4.6,
+  "google_review_count": 311,
+  "insights": {
+    "highlights": [
+      "Cave pagoda built into natural volcanic rock formation, 480 m² interior with 24m depth and 3.2m ceiling height",
+      "Two access routes: steep stairs down cliff or easier coastal path with beach views",
+      "Stunning coastal scenery combining cave sanctuary with clear sea, rocky outcrops, and ancient banyan trees"
+    ],
+    "thingsToKnow": {
+      "crowds": "Very crowded in afternoons, especially on holidays. Mornings are quieter. Photography at stone staircase involves waiting during peak times.",
+      "difficulty": "Steep stone stairs and rocky terrain. Wear sturdy footwear; walking barefoot on uneven rocks can cause cuts.",
+      "safety": null,
+      "accessibility": "No official entrance fee or parking charge. Free motorbike parking available. Stone-paved paths and stairs; not suitable for mobility-impaired visitors.",
+      "seasonal": "Summer water is clear and shallow enough for wading on rocks. Beach area has seaweed that makes swimming uncomfortable."
+    },
+    "visitorTips": [
+      "Wear durable footwear or go barefoot; avoid regular shoes on rocky terrain. Bring sun protection if visiting without temple cover.",
+      "Visit early morning to avoid crowds and heat. Best photography of stone stairs is during off-peak hours.",
+      "Dress modestly as an active spiritual site with incense. Expect strong incense smoke inside cave that may cause discomfort."
+    ],
+    "faq": [
+      {
+        "question": "Is there an entrance fee or parking cost?",
+        "answer": "No entrance fee. Free motorbike parking available. Multiple food and drink vendors operate nearby."
+      },
+      {
+        "question": "What route should I take to reach the temple?",
+        "answer": "Two options: Google Maps route involves steep stairs down cliff; easier coastal path follows newly completed waterfront road, leading to beach access point."
+      },
+      {
+        "question": "What should I expect regarding incense and temperature?",
+        "answer": "Heavy incense inside cave can cause smoke buildup and stuffiness. Interior stays cool year-round due to cave depth and rock formation."
+      }
+    ],
+    "sentiment": {
+      "positive": "Nearly all reviews praise unique spiritual setting, dramatic natural scenery, cool cave interior, and excellent photo opportunities combining architecture with coastal views",
+      "negative": "Heavy incense smoke can be overwhelming. Scattered rubbish reported. Crowded afternoons with queues for photos. Seaweed in summer water. Bathroom facilities incomplete."
+    }
+  }
+}

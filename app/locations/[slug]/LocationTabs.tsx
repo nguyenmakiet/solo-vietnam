@@ -4,12 +4,14 @@ import { useState } from "react"
 
 const TABS = [
   { id: "overview", label: "Overview" },
+  { id: "things-to-know", label: "Things to Know" },
   { id: "gallery", label: "Gallery" },
   { id: "how-to-get-there", label: "How to Get There" },
   { id: "what-to-expect", label: "What to Expect" },
   { id: "travel-tips", label: "Travel Tips" },
   { id: "insider-tips", label: "Insider Tips" },
-  { id: "nearby", label: "Nearby locations" },  
+  { id: "faq", label: "FAQ" },
+  { id: "nearby", label: "Nearby locations" },
 
 ]
 

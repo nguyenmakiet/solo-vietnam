@@ -1,0 +1,42 @@
+{
+  "slug": "an-bang-beach",
+  "google_rating": 4.3,
+  "google_review_count": 18949,
+  "insights": {
+    "highlights": [
+      "Soft white sand beach 5 km from Hồi An, accessible by bicycle, Grab, or motorbike",
+      "Numerous beachfront restaurants and bars offering fresh seafood with free loungers if you order food",
+      "Calm, shallow water suitable for swimming and families with safety nets in swimming areas"
+    ],
+    "thingsToKnow": {
+      "crowds": "Gets crowded in afternoons and late arrivals; weekdays are quieter. Visit early morning or right after rain for peaceful experience",
+      "difficulty": null,
+      "safety": "Avoid if jet skis and illegal boats are operating aggressively. Water may contain debris in non-restaurant areas. Occasional jellyfish reported",
+      "accessibility": "Free bicycle parking available. Parking fee for motorbikes/bicycles at some lots. Lack of public toilets and changing rooms reported. Sand gets very hot",
+      "seasonal": "Winter season (January) has cold water. Avoid rainy season if swimming is priority. Storm damage reported December 2025"
+    },
+    "visitorTips": [
+      "Rent beach chairs and umbrellas for 50,000-75,000 VND, or get them free by ordering food from beachfront restaurants",
+      "Walk to the right side of beach facing ocean for better restaurant spots and prices compared to left side",
+      "Bring footwear as sand gets extremely hot; water shoes not needed but goggles useful for spotting fish"
+    ],
+    "faq": [
+      {
+        "question": "What is the best time to visit An Bang Beach?",
+        "answer": "Early mornings and weekdays are quietest. Avoid rainy season for swimming. January water is cold. Visit right after rain for peaceful experience"
+      },
+      {
+        "question": "Do I need to pay for beach facilities?",
+        "answer": "Loungers and umbrellas cost 50,000-75,000 VND but are free if you order food from beachfront restaurants. Parking fees apply for bicycles/motorbikes at some lots"
+      },
+      {
+        "question": "Is An Bang Beach safe for swimming?",
+        "answer": "Generally safe with lifeguards and safety nets. Avoid during periods when illegal jet skis operate. Water may contain debris in non-managed areas; occasional jellyfish reported"
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise the clean sand, calm shallow water perfect for families, excellent beachfront dining, and peaceful atmosphere away from city crowds",
+      "negative": "Recent storm damage and beach erosion reported. Garbage in non-managed areas and along shoreline. Aggressive illegal jet ski operators interfering with swimming. Coastal construction causing environmental damage"
+    }
+  }
+}

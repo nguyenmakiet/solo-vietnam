@@ -1,0 +1,42 @@
+{
+  "slug": "datanla-waterfall",
+  "google_rating": 4.4,
+  "google_review_count": 24643,
+  "insights": {
+    "highlights": [
+      "Alpine coaster rides through forested slopes with control over speed via handlebar brakes",
+      "Multiple tiered waterfalls with scenic bridges, wooden walkways, and viewing platforms",
+      "Combo packages available: zipline (1.5km), alpine coaster, and waterfall access"
+    ],
+    "thingsToKnow": {
+      "crowds": "Peak crowds during midday and weekends; visit before 9am or after 2pm for shorter queues. Larger coaster gets very busy.",
+      "difficulty": "Alpine coaster suitable for elderly. Some walking paths slippery during rainy season requiring extra caution. Walking alternative available to one waterfall.",
+      "safety": "Weight restrictions: 120kg for zipline, 125-150kg for alpine carts. Staff may not always communicate safety requirements clearly. Coaster slower in rain for safety.",
+      "accessibility": "Clean bathrooms on site. Well-maintained paths with steps and lush greenery. Easy parking for scooters (3,000 VND). Some staff speak English.",
+      "seasonal": "Visit February-March after rainy season for powerful waterfall views. Avoid dry season if wanting to see waterfalls at full capacity. Still operates in light rain."
+    },
+    "visitorTips": [
+      "Book tickets online in advance for hassle-free entry. Alpine Coaster 3 is newer with longer track and better scenery.",
+      "Arrive around 3pm or early morning to avoid peak crowds and long queues at coasters.",
+      "Purchase combo packages (zipline + coaster + entry) for better value than separate tickets; round-trip coaster included."
+    ],
+    "faq": [
+      {
+        "question": "How much does it cost and what's included?",
+        "answer": "Alpine coaster alone: 240,000-250,000 VND per person including return trip. Combo packages: 1,000,050-1,000,000 VND for zipline (1.5km) plus coaster plus waterfall access. Entry to view waterfalls requires coaster ticket."
+      },
+      {
+        "question": "What are the weight restrictions?",
+        "answer": "Zipline: maximum 120kg. Alpine carts: 125-150kg limit. Combined weight may require separate carts. Weight restrictions not always clearly communicated by staff."
+      },
+      {
+        "question": "Can I visit all three waterfalls?",
+        "answer": "Waterfall 3 accessed via coaster. Waterfalls 1 and 2 accessible by hiking uphill or walking (some paths shown on maps are closed). Separate tickets required to access different waterfall areas."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors consistently praise the alpine coaster experience, scenic beauty of waterfalls, helpful staff, cleanliness, and value of combo packages. Great for families and adventure seekers.",
+      "negative": "Long queues during peak times, confusing signage for which coaster to use, some staff communication issues with non-Vietnamese speakers, walking paths between waterfalls sometimes closed, smoking allowed in park, and requiring separate tickets to access all waterfalls."
+    }
+  }
+}

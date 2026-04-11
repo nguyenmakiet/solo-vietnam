@@ -44,4 +44,32 @@ export const angelEyeMountain: Location = {
     travelTips:
       "Angel Eye Mountain is one of those geological features that photographs poorly relative to how it feels in person - the 50m hole in a limestone cliff is genuinely extraordinary at close range in a way that no image fully conveys. It sits on the Cao Bằng loop that most riders do for Bản Giốc, but is frequently skipped because it requires a detour through Thang Hen rather than the direct highway. That detour is short and the valley - with its interconnected lakes, karst towers, and meadow floor - is itself worth the deviation. The combination of Thang Hen Lake, Angel Eye Mountain, and Ma Phục Pass covers a section of Cao Bằng that most visitors miss entirely and is arguably as interesting as the more famous Bản Giốc end of the loop.",
   },
+  insights: {
+    highlights: [
+      "Dramatic karst peak with a natural hole through the middle, like an eye sculpted by water erosion",
+      "Free entry with minimal crowds; explore hiking trails, waterfalls, caves, and wild horses roaming the valley",
+      "Scenic motorbike ride from Cao Bằng; best visited at sunrise or sunset for magical light through the mountain",
+    ],
+    thingsToKnow: {
+      crowds: "Far fewer tourists than popular spots; feels like a hidden, undiscovered place",
+      difficulty: "Final 5-10 minutes to site are bumpy dirt road; manageable by scooter in dry weather. Hiking trails are easy to moderate with uneven, rocky sections requiring good footwear",
+      safety: null,
+      accessibility: "No tickets or official entrance. Park scooter at top and walk down, or ride closer to mountain if roads are dry. Last stretch downhill can be steep; some visitors prefer parking and walking",
+      seasonal: "Water lake present in wet season (rainy season); completely dry in November with desert-like appearance. Ground becomes slippery after rain, requiring good bike skills or walking instead",
+    },
+    visitorTips: [
+      "Visit at sunrise or sunset for magical light rays through the mountain's eye hole and best photography",
+      "Bring snacks and drinks; buy from small cafe onsite to support locals. No shops nearby if camping",
+      "Check weather before visiting; avoid after heavy rain when roads are slippery and difficult for motorbikes",
+    ],
+    faq: [
+      { question: "Is there water and a lake when I visit?", answer: "Water presence depends on season. Wet season has a full lake; November is completely dry with desert-like terrain. Check before visiting if this matters to you." },
+      { question: "Can I reach the mountain by motorbike or do I need to walk?", answer: "You can ride motorbikes down toward the mountain in dry conditions, but the final descent is steep and slippery when wet. Many visitors park at the top and walk 10-15 minutes instead." },
+      { question: "Is it crowded and do I need to buy tickets?", answer: "Completely free with no entry fee or tickets. Far fewer tourists than popular spots, making it feel like a hidden gem. Peaceful and untouched by mass tourism." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for its unique natural beauty, dramatic rock formation, peaceful atmosphere, and free access. Described as a highlight of northern Vietnam and favorite spot for most visitors",
+      negative: "Plastic pollution visible in some areas; lake absence in dry season disappoints some visitors; rough road conditions and steep final descent challenging for some riders",
+    },
+  },
 }

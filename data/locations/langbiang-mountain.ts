@@ -44,4 +44,32 @@ export const langbiangMountain: Location = {
     travelTips:
       "Langbiang is the best full-day outdoor activity available from Đà Lạt - more demanding and more rewarding than Datanla Waterfall or Tuyền Lâm Lake. The sunrise trek is the recommended format: depart Đà Lạt by motorbike at 4:30–5:00 AM, arrive at the base by 5:30 AM, trek or jeep to the summit for sunrise at 6:00–6:30 AM. The experience of standing at 2,167 metres above a sea of clouds in the Đà Lạt plateau at dawn, before any other trekkers arrive, is one of the best mornings available in the Central Highlands. The full trek without the jeep is the more satisfying option for fit hikers - the forest on the lower slopes is beautiful and the sense of having earned the summit makes the view better.",
   },
+  insights: {
+    highlights: [
+      "Pine forest trek with panoramic views over Dalat from the peak",
+      "Ranger station midway provides water, biscuits, restroom, and safety log",
+      "March offers ideal conditions: cool weather, no rain, lush greenery",
+    ],
+    thingsToKnow: {
+      crowds: "Popular with tourists; many visitors use SUV/jeep shuttle instead of hiking; crowded at radar station area",
+      difficulty: "Easy to moderate overall, but final 260m to peak is steep and slippery, especially after rain or wet conditions. Requires proper hiking gear and hand-climbing ability at steepest sections",
+      safety: "Wear hat and stay hydrated; snakes present (mostly harmless); aggressive dogs and bee-like flies may bite; keep belongings secure from theft; ranger station logs hiker names; descent harder on knees than ascent",
+      accessibility: "Entrance fee required (40K-100K VND). Official paved path available. Unofficial unpaved trails near entrance. Jeep/shuttle service available for those not wanting to hike full distance. Peak currently closed; Radar station is alternative viewpoint",
+      seasonal: "March is optimal: perfect weather, cool temperatures, no rain, dry trails, lush greenery, minimal insects. Avoid rainy periods when trails become muddy and slippery",
+    },
+    visitorTips: [
+      "Start hike at trailhead right before ticket gate; get detailed map as signage is poor and unmarked paths exist",
+      "Bring sufficient water; only ranger station halfway up sells supplies; no facilities at peak",
+      "Use official paved descent route; unofficial paths dangerous wet. Plan 5 hours round trip including 1-hour ascent",
+    ],
+    faq: [
+      { question: "Is hiking Langbiang free?", answer: "No. Entrance fee is 40K-100K VND. Unofficial unpaved trails near entrance may avoid fee but are poorly marked and dangerous when wet." },
+      { question: "Can I drive to the peak?", answer: "No private vehicles allowed at peak. Paid jeep/shuttle service available. You can hike or use the service; both options are popular." },
+      { question: "What should I bring for the hike?", answer: "Proper hiking gear, hat, water bottle, sturdy footwear with good grip. Only ranger station sells water/biscuits halfway. Peak has no facilities or shade." },
+    ],
+    sentiment: {
+      positive: "Stunning panoramic views, rewarding trek through pine forests, fresh mountain air, ideal March weather, manageable for beginners with proper preparation",
+      negative: "Poor trail signage and maps; rude staff; aggressive dogs; theft risk; environmental concerns including animal exploitation, deforestation, litter; expensive fees; crowded with tourist vehicles; slippery dangerous sections",
+    },
+  },
 }

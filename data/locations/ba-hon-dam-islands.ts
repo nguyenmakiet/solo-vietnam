@@ -50,4 +50,32 @@ export const baHonDamIslands: Location = {
     travelTips:
       "Kiên Lương is not on the standard tourist circuit and Ba Hòn Đầm appears on almost no foreign-language travel resources - which is the point. The comparison with Phú Quốc is instructive: same province, same Gulf of Thailand water, fundamentally different experience. The Bà Lụa Archipelago also includes Hòn Heo - the largest island in the group, with old-growth forest, a pagoda (Sơn Hải Tự), and unusual basalt rock formations worth visiting if mày has an extra half-day. The overnight option on Ba Hòn Đầm is worth taking seriously - sunrise on the island before any day boats arrive is a different experience from the midday visit most people do.",
   },
+  insights: {
+    highlights: [
+      "Three connected islands accessible by foot during low tide with scenic sandbanks",
+      "Foraging activities: catch crabs, oysters, sea urchins, and clams in shallow waters",
+      "Clear turquoise seawater and pristine, undeveloped island environment",
+    ],
+    thingsToKnow: {
+      crowds: "Relatively quiet on weekdays; busier on weekends and holidays",
+      difficulty: "Rocky and pebbly beaches require caution; sharp rocks can cause foot injuries. Not ideal for young children or elderly",
+      safety: null,
+      accessibility: "Limited modern amenities; remote location requires self-sufficiency. No convenience stores on island; bring necessities from mainland",
+      seasonal: "Best visited November onwards for calm seas. Avoid stormy weather; don't sleep in tents during heavy rain and wind",
+    },
+    visitorTips: [
+      "Bring your own food from mainland markets and negotiate cooking fees with island operators for better value",
+      "Visit during low tide to walk between the three connected islands; time your visit accordingly",
+      "Pack insect repellent, blankets, toiletries, and snacks as island shops have limited stock and high prices",
+    ],
+    faq: [
+      { question: "What are the boat ticket prices and operating hours?", answer: "Boat tickets from Tiến Triển pier: 300,000 VND return (250,000 VND same-day). Island entrance fee: 30,000 VND per person. Boat ride takes approximately 30 minutes." },
+      { question: "What accommodation options are available?", answer: "Rooms range 700,000-1,700,000 VND for two people. Budget tents available around 40,000 VND per person. Air conditioning operates limited hours (6 PM-6 AM); bring fans or water misters for daytime." },
+      { question: "What activities can we do on the island?", answer: "Catch crabs, oysters, sea urchins, clams, and squid. Walk between islands at low tide. Fish from the pier. Swim in clear seawater. Bioluminescent algae visible at night (weather dependent)." },
+    ],
+    sentiment: {
+      positive: "Many travelers praise the pristine, undeveloped natural environment, unique foraging experiences, and calm atmosphere for escaping city life",
+      negative: "Significant complaints about high prices, poor staff service, limited air conditioning, dirty rooms with insects, slow food service, monopoly pricing by single operators, and rocky beaches causing injuries",
+    },
+  },
 }

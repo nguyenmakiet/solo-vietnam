@@ -50,4 +50,32 @@ export const bungBinhThienLake: Location = {
     travelTips:
       "Bưng Bình Thiên is a seasonal destination - the lotus and the expanded lake are the reason to visit, and both depend on the Mekong flood. Visiting outside the Jul-Nov window gives a diminished experience: less water, fewer flowers, and the lake contracted to a fraction of its flood-season size. The An Phú border district is the most culturally distinctive area of An Giang province - the Cham communities here have maintained their Muslim identity, language, and boat-based lifestyle across centuries of changing political geography. Combine the lake with time in the villages rather than treating it as a pure photography stop.",
   },
+  insights: {
+    highlights: [
+      "Largest freshwater lake in Mekong Delta with pristine clear water and serene landscape",
+      "Unique convergence point at C3 bridge where two rivers meet with visibly different colored waters",
+      "Local Cham Muslim community and historic mosques offering cultural and spiritual insights",
+    ],
+    thingsToKnow: {
+      crowds: "Underdeveloped tourism infrastructure with minimal crowds; busiest during Floating Water Festival (September 2)",
+      difficulty: null,
+      safety: "Located approximately 4 kilometers from Vietnam-Cambodia border",
+      accessibility: "Limited dining and parking facilities; basic tourist services available through local guides",
+      seasonal: "Water levels fluctuate seasonally; most scenic during flooding season (Mùa nước nổi). Dry season shows lower water levels",
+    },
+    visitorTips: [
+      "Hire boats through Cham mosque guides (ask for Ông Mách Ly); group rates around 300,000 VND for 10 people",
+      "Visit during early morning or flooding season for best scenery and experiences",
+      "Arrange boat rentals in advance for groups wanting karaoke, meals, and activities on water",
+    ],
+    faq: [
+      { question: "What is the best time to visit Búng Bình Thiên?", answer: "Flooding season (Mùa nước nổi) offers the most beautiful scenery. Early morning visits recommended for sunrise views. September 2 festival period is busiest." },
+      { question: "How do I hire a boat and what are the costs?", answer: "Contact local guides at the Cham mosque. Boat rental approximately 300,000 VND for groups of 10. Individual travelers pay higher per-person rates." },
+      { question: "What amenities are available at the lake?", answer: "Basic services with few restaurants and no formal parking. Some cafes offer boat rentals and karaoke. Infrastructure remains underdeveloped for tourism." },
+    ],
+    sentiment: {
+      positive: "Travelers appreciate the pristine natural environment, peaceful atmosphere, cultural significance of Cham community, and unique geological features like the two-colored water convergence",
+      negative: "Lack of tourism development and infrastructure despite high potential; water levels noticeably drop during dry season",
+    },
+  },
 }

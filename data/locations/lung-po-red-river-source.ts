@@ -44,4 +44,32 @@ export const lungPo: Location = {
     travelTips:
       "Lũng Pô is a site of genuine geographical and historical weight rather than a designed attraction - most rewarding for travellers with some knowledge of the Red River's cultural significance or Vietnamese border history. Combine with Y Tý (35km away) for a full Bát Xát itinerary. Best photographs are from the top of the flagpole. If planning for the March kapok bloom, check road conditions in advance as mountain roads in the northwest can be affected by late-season weather.",
   },
+  insights: {
+    highlights: [
+      "Located where Red River enters Vietnam at border marker 92, symbolizing national sovereignty",
+      "Climb 125 spiral steps inside 31.43m flagpole for panoramic views of tri-river junction",
+      "Road from Lào Cai city along QL.70 follows Red River with scenic mountain landscapes",
+    ],
+    thingsToKnow: {
+      crowds: null,
+      difficulty: "Road conditions vary significantly by route. Y Tý route has poor road quality with steep descents and landslide areas. Lào Cai city route via QL.70 is well-maintained. High-clearance vehicles recommended for Y Tý approach.",
+      safety: "GPS signal loss near border area due to security restrictions. Download offline maps before visiting. Area is border zone with military significance.",
+      accessibility: "Accessible by car to the site, then 125 spiral steps to reach flagpole summit. On-site shrine to President Hồ Chí Minh and fallen border guards available.",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Best route: Take QL.70 from Lào Cai city (60km to tri-junction, then 4km to flagpole) rather than Y Tý route",
+      "Use offline Google Maps; area has no cell signal due to border proximity and military zone",
+      "From flagpole summit, observe contrasting water colors where streams meet: green Lũng Pô stream joins reddish Red River",
+    ],
+    faq: [
+      { question: "Which driving route to Lũng Pô is easier?", answer: "Take QL.70 from Lào Cai city (well-maintained road following Red River). Avoid Y Tý route which has poor conditions, steep descents, and landslide areas requiring high-clearance vehicles." },
+      { question: "What are the physical demands of visiting?", answer: "Must climb 125 spiral steps inside flagpole to reach summit. Accessible to most fitness levels, but not suitable for those unable to handle stairs." },
+      { question: "Why is GPS not working near the site?", answer: "Border security restrictions cause signal loss in area. Download offline maps before arrival to navigate safely without cell reception." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly positive responses emphasizing historical significance, national pride, scenic mountain beauty, and unique geographic location at Red River entry point to Vietnam",
+      negative: "Road infrastructure from Y Tý direction is poor with construction ongoing; lack of cell signal and GPS navigation challenges; some confusion about best route options",
+    },
+  },
 }

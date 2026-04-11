@@ -1,0 +1,42 @@
+{
+  "slug": "paradise-cave",
+  "google_rating": 4.7,
+  "google_review_count": 7308,
+  "insights": {
+    "highlights": [
+      "One of Asia's longest dry caves at 31 km, with 1 km of accessible walkway through massive cathedral-like chambers",
+      "Well-maintained wooden boardwalks and soft lighting throughout, making exploration safe and easy",
+      "Stunning stalactites and stalagmites formations with varied colors creating otherworldly underground landscape"
+    ],
+    "thingsToKnow": {
+      "crowds": "Early morning (9am) or lunchtime (12-1pm) are quietest times. Afternoon bus tours arrive around 10am-11am and cause significant crowding. Rainy days have fewer visitors.",
+      "difficulty": "Moderate fitness required. 10-20 minute uphill walk to cave entrance with switchbacks and stairs. Inside cave has stairs and long walkways; some sections slippery. Wear sturdy shoes with good grip.",
+      "safety": "Handrails provided but walkways can be slippery—use railings and watch footing. Phone signal available inside cave. Staff presence noted for assistance.",
+      "accessibility": "Electric buggy available from parking lot (15,000 VND extra) covering 2km, reduces walking burden. Well-maintained boardwalks inside cave accommodate varying fitness levels.",
+      "seasonal": "Winter limits access to 4km depth; summer allows 7km exploration. Summer offers kayaking and swimming at 4km point with clean green water."
+    },
+    "visitorTips": [
+      "Purchase buggy ticket (15,000 VND) to avoid 2km walk from parking to trailhead, especially if limited mobility",
+      "Arrive by 9am or during lunch (12-1pm) to avoid afternoon tour bus crowds and noise",
+      "Bring a good flashlight to see water streams and details in darker sections; phone signal works inside"
+    ],
+    "faq": [
+      {
+        "question": "How long does a visit to Paradise Cave take?",
+        "answer": "Approximately 2 hours total: electric buggy ride, 10-20 minute uphill walk to entrance, 30-40 minutes walking in cave (1km in, 1km back out)."
+      },
+      {
+        "question": "What is the current entrance fee?",
+        "answer": "Entry fees reported at 150,000-275,000 VND depending on when visited. Buggy ride costs additional 15,000 VND. Guided tours available at higher cost, including meals served inside cave."
+      },
+      {
+        "question": "Can I explore more than 1 km inside the cave?",
+        "answer": "Yes. Standard visitors access 1 km. Guided expeditions available for 4 km (winter) to 7 km (summer) deeper exploration, including swimming and trekking options."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors consistently praise the cave's massive scale, impressive formations, and peaceful natural atmosphere. Well-maintained facilities and good lighting enhance experience. Most reviews highly recommend it as a must-see in Phong Nha.",
+      "negative": "Some visitors report overcrowding and noise from tour groups, high ticket prices relative to value, and frustration with mandatory buggy purchases when walking paths exist. Staff distraction and unorganized crowd control mentioned."
+    }
+  }
+}

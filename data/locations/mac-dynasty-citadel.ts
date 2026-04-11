@@ -48,4 +48,32 @@ export const macDynastyCitadel: Location = {
     travelTips:
       "This is a site for travelers who find the absence of tourist infrastructure refreshing rather than frustrating. The Mạc citadel rewards curiosity - knowledge of Vietnamese history, or a decent briefing beforehand, makes the visit significantly richer. If mày is already doing the Cao Bằng loop (Bản Giốc, Ngườm Ngao, Pác Bó), the citadel adds historical depth to what is otherwise a landscape-and-nature itinerary. Don't skip it for time - the detour is short and nothing else in Vietnam covers this particular chapter of history in physical form.",
   },
+  insights: {
+    highlights: [
+      "Five peaks with easy hiking trails and stairs offering panoramic city and mountain views",
+      "Free admission, walkable from city center, accessible without tours or guides required",
+      "Adjacent caves within 10-minute walk; food stalls and facilities nearby on approach street",
+    ],
+    thingsToKnow: {
+      crowds: "Can attract bus tour groups; visit early morning for solitude",
+      difficulty: "Easy to moderate climbs; some peaks have stairs, others have marked trails",
+      safety: "Avoid venturing deep into bushes; needles observed in vegetation",
+      accessibility: "Multiple entry points; walkable from accommodation in about 15 minutes",
+      seasonal: "Best visited in clear, sunny weather; paths become slippery when raining",
+    },
+    visitorTips: [
+      "Arrive early morning before tour buses to enjoy the site with fewer crowds",
+      "Bring sturdy footwear; wet conditions make trails slippery, especially after rain",
+      "Allocate 2-3 hours to explore all five peaks and nearby caves thoroughly",
+    ],
+    faq: [
+      { question: "How long does it take to hike all the peaks?", answer: "Most visitors spend 2-3 hours exploring all five peaks and nearby caves at a leisurely pace" },
+      { question: "Do I need a guide or tour to visit?", answer: "No, you can explore independently. No guides are required and visitors are not bothered by vendors" },
+      { question: "What are weather conditions like for visiting?", answer: "Sunny days provide best visibility of surrounding mountains. Trails become slippery when raining, so avoid wet conditions" },
+    ],
+    sentiment: {
+      positive: "Travelers appreciate the easy accessibility, panoramic views, free entry, and peaceful atmosphere ideal for independent exploration",
+      negative: "Limited historical relics remain; fortress structure is small and not particularly impressive",
+    },
+  },
 }

@@ -18,7 +18,7 @@ export const aPaChai: Location = {
   entranceFee: "Free; border area permit required",
   openingHours: "Open daily; border area access requires prior permit from local authorities",
   mapUrl: "https://www.google.com/maps?q=22.401192335843305,102.14371962758165",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775920934981!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3ZsYk9oRmc.!2m2!1d22.40066539062425!2d102.1439166707527!3f12.022172178329424!4f-12.010206953621775!5f0.7820865974627469", },
   heroImage: heroUrl("a-pa-chai-dien-bien-3_cezsa3"),
   gallery: [
     "a-pa-chai-dien-bien-4_mieuhy",
@@ -43,5 +43,33 @@ export const aPaChai: Location = {
       "The trek from Sín Thầu passes through montane forest with increasing elevation and decreasing trail definition as it approaches the border ridge. The tri-border marker is a concrete pillar set on the ridge where three countries meet - a simple monument in a forest clearing with no infrastructure. The views from the ridge extend into Laos and China on clear days. The Hà Nhì village of Sín Thầu at the start of the trek is a significant cultural experience in itself - the village architecture, traditional dress, and daily life of this small ethnic group are rarely encountered by outsiders.",
     travelTips:
       "A Pa Chai is for travellers who specifically want to reach one of Vietnam's geographic extremities and are prepared for the logistics involved. The journey is as much the point as the destination - the remote roads of Mường Nhé district pass through some of the least-visited highland scenery in the country, and the Hà Nhì communities along the route provide cultural encounters that are genuinely off the tourist circuit. The permit requirement and road conditions mean this is not a spontaneous trip - plan thoroughly, allow buffer days for weather and road conditions, and treat the entire Mường Nhé journey as the experience rather than just the border marker.",
+  },
+  insights: {
+    highlights: [
+      "Westernmost point of Vietnam at tri-border junction of Vietnam-Laos-China at 1,866m elevation",
+      "Requires registration with A Pa Chải border guard post and military escort to visit",
+      "Climb 500-600 stairs after 11km motorbike ride from border post to reach monument",
+    ],
+    thingsToKnow: {
+      crowds: "Light crowds, typically 5-10 people at the monument, occasional large Chinese tour groups",
+      difficulty: "Challenging terrain. Motorbike road has narrow sections, slippery clay slopes, mud. Final 500-600 stairs steep. Requires confident riding or paid driver. Not suitable for inexperienced riders.",
+      safety: "Military border zone requiring mandatory border guard escort. Foreign nationals may be denied access for security reasons. Chinese military patrols frequent the area. Dangerous if weather turns to rain; road becomes extremely slippery.",
+      accessibility: "Accessible only by motorbike or hired transport. Not accessible for those unable to walk 500+ stairs. Some facilities (motels) available at border post.",
+      seasonal: "Best visited on sunny days; avoid rainy season (western mountains monsoon). Morning visits recommended for clearer views and morning fog/mist. Construction work ongoing.",
+    },
+    visitorTips: [
+      "Register one day before at A Pa Chải border post; hiring official escort costs 400,000 VND",
+      "Hire experienced border guard driver (500,000 VND round trip) if inexperienced with steep mountain roads",
+      "Arrive early morning for fog sea views; bring pain relief patches for leg soreness from stairs",
+    ],
+    faq: [
+      { question: "Can foreign tourists visit the westernmost point?", answer: "Tourists may be denied access for security/political reasons. Vietnamese nationals preferred. Some foreigners reported being turned away by border guards." },
+      { question: "What permits or documentation do I need?", answer: "Must register with A Pa Chải border guard post one day in advance. Vietnamese citizens require approval from provincial Border Guard Command. Escort mandatory." },
+      { question: "How long does the journey take from Điện Biên Phủ?", answer: "Approximately 9 hours by bus (260km) from Điện Biên Phủ to A Pa Chải border post, then 1 hour motorbike plus 30 minutes stair climb to monument." },
+    ],
+    sentiment: {
+      positive: "Visitors deeply moved by symbolic significance as Vietnam's westernmost point and tri-border junction. The challenging journey enhances emotional reward. Spectacular mountain views and fog seas praised.",
+      negative: "Road conditions treacherous when wet; some travelers stranded or injured. Foreign tourists sometimes denied access without clear explanation. Unclear cost structure and potential overcharging by some escort services reported.",
+    },
   },
 }

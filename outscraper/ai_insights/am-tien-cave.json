@@ -1,0 +1,42 @@
+{
+  "slug": "am-tien-cave",
+  "google_rating": 4.4,
+  "google_review_count": 123,
+  "insights": {
+    "highlights": [
+      "Scenic lake loop walk or bike ride surrounded by limestone cliffs and peaceful landscape",
+      "Cave temple with underground sacred water pool and 200-step climb for panoramic views",
+      "Stone wall path in north section of lake ideal for photography"
+    ],
+    "thingsToKnow": {
+      "crowds": "Mostly Vietnamese visitors, can experience school groups and crowds depending on timing. Less crowded during off-peak hours.",
+      "difficulty": "200 steps to cave are steep and rough. Lake loop is flat and easy. Cave climb physically demanding but not long distance.",
+      "safety": null,
+      "accessibility": "West gate entrance sometimes closed. Must use bikes rented onsite; personal bikes not allowed inside. Motorbikes and electric buses prohibited.",
+      "seasonal": "Weather dependent; best visited on cool, clear days. Hot weather makes cycling around lake uncomfortable."
+    },
+    "visitorTips": [
+      "Use east entrance if west gate is closed. Rent bikes onsite to explore the lake loop easily",
+      "Keep parking ticket when leaving to avoid disputes with bike rental staff",
+      "Visit during cooler times of day for comfortable cycling; check weather before going"
+    ],
+    "faq": [
+      {
+        "question": "Can I bring my own bike or motorbike inside?",
+        "answer": "No. Personal bikes and motorbikes are prohibited. You must rent bikes from the site or walk. Rental costs 50k VND for single, 100k for tandem bikes."
+      },
+      {
+        "question": "How long does it take to visit?",
+        "answer": "Lake loop walk takes 15-20 minutes. With cycling and cave exploration, allow 1-2 hours. Cave climb with 200 steps adds 30-45 minutes if you attempt it."
+      },
+      {
+        "question": "What is the entrance fee and parking cost?",
+        "answer": "Entry ticket 50k VND per person. Car parking 20k VND, motorbike parking 50k VND. Bike rental separate: 50k for single bike, 100k for tandem."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise the peaceful, scenic lake setting and find it an excellent place for relaxation and photography. Many call it a hidden gem worth visiting despite modest size.",
+      "negative": "Recurring complaints about high pricing relative to experience, forced bike rental system despite having own bikes, and unfriendly ticket staff. Stone door/citadel entrance now permanently closed contrary to promotional photos."
+    }
+  }
+}

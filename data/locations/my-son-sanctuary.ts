@@ -44,4 +44,32 @@ export const mySonSanctuary: Location = {
     travelTips:
       "Mỹ Sơn rewards early arrival above almost anything else - the difference between experiencing the site in the quiet of early morning and navigating it among several tour groups is significant. The 6AM opening allows 2–3 hours before the main crowd arrives from Hội An. The site's jungle setting and the quality of the surviving architecture make it genuinely worthwhile rather than a box-ticking UNESCO visit - the Cham civilisation is underrepresented in most travellers' understanding of Vietnamese history, and Mỹ Sơn provides a tangible introduction to a culture that shaped the region for centuries before the Vietnamese expansion southward.",
   },
+  insights: {
+    highlights: [
+      "UNESCO World Heritage Site featuring 4th-13th century Hindu temples built by Champa Kingdom",
+      "Ancient temples nestled in lush green valley with peaceful, atmospheric surroundings",
+      "Intricate brick structures bonded with sugarcane resin showcasing remarkable craftsmanship",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded mid-morning with tour groups; best times are early morning (6:00-9:00 AM) or late afternoon before 5:30 PM closing",
+      difficulty: "Moderate walking required; electric buggy transport available from entrance to main site; approximately 2km walking distance or bicycle rental option",
+      safety: null,
+      accessibility: "Electric buggies available free of charge; some walking needed; may be challenging for seniors due to terrain and distance",
+      seasonal: "Rainy season (low tourist season) offers fewer crowds; avoid hottest parts of day; early morning sunrise visit recommended",
+    },
+    visitorTips: [
+      "Arrive before 8:30 AM to avoid large tour groups; sunset visits offer beautiful light and atmospheric conditions",
+      "Research Champa history and Hindu culture beforehand or use on-site QR code audio guide app for deeper appreciation",
+      "Wear shoulders and legs covered as this is a sacred space; bring water and prepare for heat exposure",
+    ],
+    faq: [
+      { question: "What is the best time to visit to avoid crowds?", answer: "Arrive early at 6:00-9:00 AM or visit after 5:00 PM before closing at 5:30 PM. Mid-morning and lunch hours are busiest with tour groups." },
+      { question: "How long does it take to explore the site?", answer: "Allow 30-40 minutes for a quick visit, 2-3 hours to thoroughly explore, or several hours if meditating. Visit timings vary by pace." },
+      { question: "What are the entrance fees and transportation options?", answer: "Adults: 150,000 VND foreigners / 100,000 VND Vietnamese citizens. Includes free electric buggy transport. Bicycle rental 30,000 VND or 2km walk available." },
+    ],
+    sentiment: {
+      positive: "Visitors overwhelmingly praise the historical significance, atmospheric setting, and impressive architecture; many describe it as a must-see destination offering peaceful, meaningful experiences despite war damage",
+      negative: "Some found the site less impressive without historical context; audio guide criticized for focusing on measurements rather than cultural significance; crowd management during mid-day tour groups affects photo opportunities",
+    },
+  },
 }

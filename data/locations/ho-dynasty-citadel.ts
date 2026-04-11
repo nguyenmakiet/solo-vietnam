@@ -19,8 +19,12 @@ export const hoDynastyCitadel: Location = {
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=20.0805,105.5989",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775903694181!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHEySWVValFF!2m2!1d20.07428931729111!2d105.6068649075628!3f11.472665170709696!4f-24.062906644114605!5f0.7820865974627469", },
-  heroImage: heroUrl("ho-dynasty-citadel-thanh-hoa_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ho-dynasty-citadel-thanh-hoa_nt6exf"),
+  gallery: [
+    "ho-dynasty-citadel-thanh-hoa-2_vybffz",
+    "ho-dynasty-citadel-thanh-hoa_nt6exf",
+    "ho-dynasty-citadel-thanh-hoa-3_blsjkt",
+  ],
   seoDescription:
     "Ho Dynasty Citadel is a UNESCO World Heritage Site in Thanh Hoa province - a remarkably intact 14th-century stone fortress built entirely from massive green schist blocks without mortar, representing the peak of Vietnamese medieval military architecture.",
   tips: [
@@ -39,5 +43,33 @@ export const hoDynastyCitadel: Location = {
       "The citadel walls form a near-perfect rectangle measuring 870 metres north-south by 883 metres east-west, with four stone gates positioned at the cardinal points. The South Gate and North Gate are the most intact, each built from three massive stone arches stacked to form a vaulted passage through the 5-metre-thick walls. The interior is largely open agricultural land - the original palace buildings were destroyed by the Ming occupiers - but the scale of the surviving walls and gates conveys the ambition of the original construction. A small museum near the entrance displays artefacts and explains the historical context of the Hồ dynasty. The surrounding rural landscape of rice paddies, low hills, and the Mã River valley is itself a significant part of the UNESCO listing.",
     travelTips:
       "The Ho Dynasty Citadel rewards visitors who approach it with historical preparation - without context about the Hồ dynasty's brief and turbulent existence and the significance of the construction achievement, the largely empty interior can feel underwhelming. Reading about Hồ Quý Ly's radical reform program and the subsequent Ming invasion before visiting transforms the site into something genuinely haunting. The citadel sees very few foreign visitors and the local staff are accommodating to independent travellers. Budget 2-3 hours for a thorough walk of the walls and gates. Thanh Hoa city itself is a functional transit point with adequate accommodation if combining this with other regional sites.",
+  },
+  insights: {
+    highlights: [
+      "UNESCO World Heritage site built in 14th-15th century with four symmetrical gates and stone walls still standing",
+      "Expansive ruins spanning nearly 1km² surrounded by active rice paddies and rural farmland",
+      "Peaceful site with minimal foreign visitors, offering solitude to explore imperial history",
+    ],
+    thingsToKnow: {
+      crowds: "Few foreign visitors, especially if visiting weekdays and avoiding weekends/public holidays. Site feels uncrowded.",
+      difficulty: "Requires substantial walking across large area; wear comfortable footwear. Exits not always intuitive; may require walking long distances back to entrance.",
+      safety: null,
+      accessibility: "Can be explored on foot, bicycle, or motorbike. Multiple entry gates available (north, east, west gates open; main entrance at south gate). Some ticket inspectors may be inattentive.",
+      seasonal: "Hot and dry inside the citadel; plan visits to avoid peak heat. Visit before 4pm if using local bus No. 2 for onward travel to Sam Son Beach.",
+    },
+    visitorTips: [
+      "Enter through south gate (main entrance with ticket booth, guides, small museum) for clearest orientation and information",
+      "Bring water and sun protection; site offers little shade except at arched gates where locals rest during hottest hours",
+      "Allow 1-2 hours for exploration depending on interest; combine with nearby town of Vĩnh Lộc or use as stopover",
+    ],
+    faq: [
+      { question: "What is the entrance fee and how is it structured?", answer: "South gate (main entrance): 10,000 VND with guides and museum. Other gates have ticket offices but are sometimes unmanned. Some visitors report fee inconsistencies." },
+      { question: "How long does a typical visit take?", answer: "Most visitors spend 1-2 hours exploring the 1km² site. Time depends on interest level in history and how much of the grounds you wish to cover." },
+      { question: "What remains to see at the citadel?", answer: "Four main ceremonial gates with massive stone blocks, extensive earthen and stone walls overgrown with vegetation, small museum with pottery and artifacts, and views of surrounding rice paddies." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate the historical significance as a UNESCO World Heritage site, impressive stonework, peaceful atmosphere, and unique experience of seeing local farmers working within the ruins.",
+      negative: "Some find limited remaining structures, small museum, high entrance fees relative to amount to see, confusing exit routes, and inadequate restoration/excavation work.",
+    },
   },
 }

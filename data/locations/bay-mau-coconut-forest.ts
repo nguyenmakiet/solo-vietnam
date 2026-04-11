@@ -43,4 +43,32 @@ export const bayMauCoconutForest: Location = {
     travelTips:
       "The Coconut Forest is one of Hội An's most photogenic experiences - the visual of the basket boat under the coconut canopy is distinctive and hard to replicate elsewhere in Vietnam. The tour has become somewhat performative (the spinning demonstration is entertainment rather than fishing) but the forest itself and the basket boat navigation are genuine. The half-day combination of Trà Quế Village and the Coconut Forest, both reached by bicycle from Hội An town, is the best single morning available in the area.",
   },
+  insights: {
+    highlights: [
+      "Stable coconut basket boats with reflective-lined traditional hats to keep cool in heat",
+      "Optional boat spinning, fishing activities, and craftwork like coconut leaf rings included",
+      "Transparent fixed pricing (100,000-200,000 VND per person) with no hidden costs or negotiation",
+    ],
+    thingsToKnow: {
+      crowds: "Can get crowded during peak hours. Early morning (around 3-3:30 PM or morning departures) offers peaceful, less crowded experiences",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Flooding can occasionally close the activity, as reported during rainy periods",
+    },
+    visitorTips: [
+      "Book via WhatsApp in advance or arrive without reservation; no waiting typically required",
+      "Visit early morning or late afternoon (3-3:30 PM) to avoid crowds and tour groups",
+      "Try coconut coffee and Bánh Xèo cooking class available at nearby cafes after your boat ride",
+    ],
+    faq: [
+      { question: "How much does a coconut boat ride cost?", answer: "Fixed pricing is 100,000-200,000 VND per person depending on group size and boat type. No additional charges except optional tips for rowers and paid boat spinning upgrades." },
+      { question: "How long is the boat ride?", answer: "Rides last approximately 45 minutes to 1 hour, including activities like fishing net demonstrations, craftwork, and optional boat spinning." },
+      { question: "What should I know about booking and crowds?", answer: "No advance booking required; arrive and board immediately. Early morning or 3-3:30 PM visits avoid peak crowds. Message WhatsApp in advance if using Grab to avoid wrong pickup locations." },
+    ],
+    sentiment: {
+      positive: "Overwhelming praise for skilled, friendly rowers who provide entertainment, make crafts from coconut leaves, excellent service, transparent pricing, and fun spinning boat experiences",
+      negative: "One reviewer found the 40-minute ride boring with limited activities and disliked karaoke noise; another reported misleading advertising not matching service quality in person",
+    },
+  },
 }

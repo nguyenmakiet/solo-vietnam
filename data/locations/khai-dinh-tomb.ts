@@ -44,4 +44,32 @@ export const khaiDinhTomb: Location = {
     travelTips:
       "Of Huế's seven royal tombs, Khải Định is the most dramatic visually and the most compact geographically - a good choice if you only have time for one tomb. Tự Đức Tomb is the alternative recommendation: larger, more garden-oriented, and more traditionally Vietnamese in feel. The two complement each other well and can be visited back-to-back in an afternoon. Minh Mạng Tomb is the most architecturally grand but requires more time. For first-time visitors to Huế with one day, the standard itinerary - Imperial City in the morning, Thiên Mụ Pagoda midday, Khải Định Tomb in the afternoon - covers the three most visually distinctive sites in the city.",
   },
+  insights: {
+    highlights: [
+      "Stunning blend of Vietnamese and French architectural styles with intricate porcelain and glass mosaics",
+      "Climb 127-128 dragon-guarded stairs to reach ornate interior with bronze emperor statue and ceiling painting",
+      "Located on Chau Chu Mountain near Huế with scenic hilltop views and surrounding stone statues",
+    ],
+    thingsToKnow: {
+      crowds: "Can be crowded with tourists, especially at 3pm. Less busy when visited just after lunch or early morning",
+      difficulty: "Significant stair climbing required: 127-128 steps total. Challenging for those with mobility issues or knee/hip problems",
+      safety: null,
+      accessibility: "Hats must be removed when entering building. No flash photography allowed. Limited shade on grounds, bring hat for sunny days",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Purchase combo ticket covering multiple tomb sites and Huế Citadel for better value than single entrance fees",
+      "Plan 30-45 minutes for visit without guide, longer with audioguide or guided tour for historical context",
+      "Take Grab bike from Huế city center (50,000 VND, 30-minute ride) or easy taxi access back to town",
+    ],
+    faq: [
+      { question: "How much does it cost and what are the hours?", answer: "Entrance fee is 150,000-170,000 VND. Open daily 7:00 AM to 5:30 PM. Combo tickets available with other Huế sites for better value." },
+      { question: "Is the staircase difficult to climb?", answer: "Yes, there are 127-128 steps total. Rewarding views and architecture at top, but challenging for those with knee/hip issues or mobility limitations." },
+      { question: "How long does a typical visit take?", answer: "Plan 30-45 minutes without guide. Guided tours or audioguides provide more historical context and take longer. Visit less crowded after lunch." },
+    ],
+    sentiment: {
+      positive: "Travelers consistently praise the unique architectural masterpiece blending Eastern and Western styles, intricate decorative details, and historical significance as unforgettable and worth the effort",
+      negative: "Some note the ticket price is high, certain areas show deterioration and need restoration, visit duration is shorter than other Huế tombs, and crowds can diminish the experience",
+    },
+  },
 }

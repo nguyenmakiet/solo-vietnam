@@ -45,4 +45,32 @@ export const coThachBeach: Location = {
     travelTips:
       "Cổ Thạch is a photography destination first and a beach destination second - the moss-covered boulders are the reason to come, and the light conditions at sunrise or on overcast mornings are significantly better than in flat midday sun. The beach fits naturally into a coastal ride between HCMC and Mũi Né, or as a northern extension of a Mũi Né base. The undeveloped character of the beach is its main asset - it offers a version of the Bình Thuận coast before the resort development that transformed Mũi Né, and the lack of facilities keeps it quiet. Carry supplies from Tuy Phong town and plan the visit around the light.",
   },
+  insights: {
+    highlights: [
+      "Unique multicolored pebble and stone beach with geological significance",
+      "Green moss covers rocks February-April, creating photo opportunities",
+      "Spectacular sunrise and sunset views over clear, calm waters",
+    ],
+    thingsToKnow: {
+      crowds: "Crowded on weekends and holidays. Peak visitation during moss season (February-April) when young people visit for photos",
+      difficulty: null,
+      safety: "Local scams reported; some vendors attempt to overcharge tourists. Beggars present at nearby pagoda",
+      accessibility: "Easily accessible by car or motorbike from main towns",
+      seasonal: "Moss season February-April transforms rocks bright green. Strong waves possible depending on conditions. Best visited mid-week to avoid crowds",
+    },
+    visitorTips: [
+      "Visit mid-week February-April for moss season and fewer crowds than weekends",
+      "Bring cash; negotiate prices at local restaurants and accommodations to avoid overcharging",
+      "Stay 1-2 days maximum; limited quality food options extend longer stays",
+    ],
+    faq: [
+      { question: "When is the best time to visit Co Thach Beach?", answer: "February-April for the green moss phenomenon. Mid-week visits avoid weekend crowds. Sunrise is popular viewing time." },
+      { question: "What are the main concerns about cleanliness?", answer: "Significant trash and garbage reported on beach and in water. Local visitors contribute to litter. Sanitation management is poor." },
+      { question: "Are accommodations and food affordable?", answer: "Local guesthouses and restaurants offer affordable prices but quality varies. Negotiate rates. Seafood is fresh and cheap; overall meal quality inconsistent." },
+    ],
+    sentiment: {
+      positive: "Visitors praise unique colored stone formations, moss season beauty, spectacular sunrises/sunsets, fresh seafood, and peaceful atmosphere away from main tourist areas",
+      negative: "Beach cleanliness is major concern with widespread trash, sewage issues, and poor management. Local vendors overcharge tourists. Limited quality accommodation and food options",
+    },
+  },
 }

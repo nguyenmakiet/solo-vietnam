@@ -50,4 +50,32 @@ export const honChongRockFormation: Location = {
     travelTips:
       "Hòn Chồng is a short stop rather than a half-day destination - factor it into a broader Nha Trang itinerary alongside the Ponagar Towers, Long Sơn Pagoda, or a northern beach rather than treating it as a standalone trip. The site is pleasant in the late afternoon when the crowds thin and the light improves. For a city that leans heavily toward beach resort tourism, Hòn Chồng offers a coastal experience that is different in character - rock scrambling and sea views rather than sunbathing - which makes it a useful contrast for visitors who want more than the main beach strip.",
   },
+  insights: {
+    highlights: [
+      "Naturally stacked giant granite rocks with dramatic sea formations and panoramic Nha Trang Bay views",
+      "Traditional Vietnamese musical instrument performances held hourly in on-site cultural area",
+      "Affordable 30,000 VND entrance fee with seaside cafés and clear water suitable for swimming",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded mid-morning onwards with tour buses arriving around 9:30 AM. Less busy early morning, lunch time (around 2 PM), or late afternoon before sunset.",
+      difficulty: "Involves climbing rocky terrain with stairs and uneven surfaces. Rocks can be slippery when wet or sandy. Wear sneakers with good grip; flip-flops not recommended.",
+      safety: null,
+      accessibility: "Stairs and rocky terrain may be difficult for disabled visitors. Not wheelchair-friendly due to steep descents to rocks.",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Visit early morning, around lunch time, or late afternoon to avoid peak tour bus crowds",
+      "Wear sturdy sneakers with good grip as rocks are sandy and slippery; flip-flops risky",
+      "Come at sunset for best photography and romantic atmosphere; site closes at 7 PM",
+    ],
+    faq: [
+      { question: "What is the entrance fee and payment method?", answer: "Entrance fee is 30,000 VND per person. Only cash accepted; nearest ATM is about 8 minutes away. Fee includes access to rock formations and cultural performances." },
+      { question: "When should I visit to avoid crowds?", answer: "Visit early morning before 9:30 AM, around lunch time (2 PM), or late afternoon. Tour buses typically arrive mid-morning, making it busiest then." },
+      { question: "What activities are available besides viewing rocks?", answer: "Watch traditional Vietnamese musical instrument performances held hourly. Swim in clear water near rocks, explore cultural displays, visit seaside cafés, and fish observation." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise unique rock formations, romantic atmosphere, affordable entry, excellent sunset views, and cultural significance. Highly recommended for photography and couples.",
+      negative: "Some disappointed by overcrowding, high prices at gift shops and cafés, poor cafe coffee quality, strict security, and site closing at 7 PM. A few felt rock formations underwhelming compared to photos.",
+    },
+  },
 }

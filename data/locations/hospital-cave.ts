@@ -40,4 +40,32 @@ export const hospitalCave: Location = {
     travelTips:
       "Hospital Cave is one of the best-preserved examples of Viet Cong underground infrastructure in northern Vietnam - more accessible and more complete than most comparable sites. The combination of natural cave and wartime repurposing creates an unusual atmosphere: stalactites above operating tables, natural rock walls around dormitories, a cinema room in a limestone chamber. It takes about 45 minutes to tour properly with the guide. Combine with Cát Bà National Park in the same half-day - both are 10–15km from town on the same road and together form the best historical-natural combination day trip on the island.",
   },
+  insights: {
+    highlights: [
+      "Secret hospital built into limestone cave during Vietnam War with three-story concrete bunker complex",
+      "Local guides on-site explain history of hospital operations, patient capacity, and construction details",
+      "Elevated entrance offers views of Cát Bà Island countryside and Ha Long Bay area",
+    ],
+    thingsToKnow: {
+      crowds: "Morning hours extremely crowded with cruise ship tour groups; visit afternoon for quieter experience",
+      difficulty: "Steep staircase climb (approximately 100 steps) required to reach cave entrance; not suitable for mobility issues",
+      safety: null,
+      accessibility: "Third floor closed due to rock collapse; stairs and uneven terrain throughout complex",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Hire on-site local guide for 20-45 minute tour; guides provide essential historical context and enhance understanding",
+      "Bring water and wear comfortable shoes; visit in afternoon to avoid cruise ship crowds and morning heat",
+      "Expect mostly concrete bunker interior rather than natural cave; parking available free at entrance",
+    ],
+    faq: [
+      { question: "How long does a visit take?", answer: "20-45 minutes depending on guide pace and exploration. Most visitors spend 20-30 minutes." },
+      { question: "What is the entrance fee?", answer: "50,000 VND per person. Guided tour is included with ticket; tipping guides is appreciated but optional." },
+      { question: "Is the guide necessary to understand the site?", answer: "Guides significantly enhance experience through historical explanations. Mannequins and displays provide basic context, but guides add valuable details." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the historical significance, preserved construction, and knowledgeable guides as compelling reasons to visit",
+      negative: "Small site with limited artifacts; mostly concrete bunker rather than natural cave; can feel rushed on crowded cruise itineraries",
+    },
+  },
 }

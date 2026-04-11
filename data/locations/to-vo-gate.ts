@@ -52,4 +52,32 @@ export const toVoGate: Location = {
     travelTips:
       "Cổng Tò Vò, Chùa Đục, and the garlic fields form a natural cluster on the eastern side of the island. Most visitors combine these three in one loop from the port before heading north toward Hang Câu and Núi Thới Lới. The full island loop by motorbike is under 20km and takes around 2 hours with stops.",
   },
+  insights: {
+    highlights: [
+      "Natural volcanic rock arch formations created by ancient lava flows, ideal for sunset photography",
+      "Located on Lý Sơn island's west coast near fishing villages with traditional coracle boats",
+      "Free entrance with nearby parking and easy access along coastal road",
+    ],
+    thingsToKnow: {
+      crowds: "Very crowded during sunrise and sunset hours. Visit before 9am or between 11:30am-1pm for fewer tourists. Weekday visits before holidays offer fewer crowds.",
+      difficulty: "Easy access via coastal road with short walk to site. Uneven volcanic rocks require sturdy footwear. Some uphill walking to reach best viewpoints.",
+      safety: "Authorities prohibit climbing on top of the arch due to collapse risk. Do not stand on the arch structure. Area has no shade and gets very hot during midday.",
+      accessibility: "Free parking available. Accessible by motorbike or taxi. No facilities or shade nearby.",
+      seasonal: "Afternoon and sunset lighting creates best photography conditions. Morning visits offer calmer water for swimming in the sandy beach area (one of few swimming spots on the island).",
+    },
+    visitorTips: [
+      "Visit early morning before 9am or midday 11:30am-1pm to avoid crowds and intense sun",
+      "Bring sturdy shoes, drinking water, and sun protection as there are no trees for shade",
+      "Timing sunset visit requires patience as queues form during golden hour; arrive early to secure spot",
+    ],
+    faq: [
+      { question: "When is the best time to visit Cổng Tò Vò?", answer: "Sunset is most beautiful with golden light through the arch. Visit before 9am or 11:30am-1pm to avoid crowds. Arrive early for sunset to secure space before queues form." },
+      { question: "How large is the arch formation?", answer: "The arch is approximately 2 meters high and 5-6 meters wide. It appears smaller in person than in photos, so manage expectations accordingly." },
+      { question: "What should I know about safety here?", answer: "Do not climb on top of the arch as authorities ban this to prevent collapse. Wear sturdy shoes on sharp volcanic rocks. No shade available, so bring sun protection and water." },
+    ],
+    sentiment: {
+      positive: "Majority praise the natural volcanic arch formation and sunset views. Popular photography spot on Lý Sơn island with easy access and free entrance.",
+      negative: "Formation appears smaller than photos suggest, causing disappointment. Excessive litter and trash from unmanaged tourist area diminishes natural beauty. Recent infrastructure projects made arch appear smaller and less impressive.",
+    },
+  },
 }

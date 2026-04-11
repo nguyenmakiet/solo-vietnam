@@ -45,4 +45,32 @@ export const quanBaHeavenGate: Location = {
     travelTips:
       "Heaven Gate is the moment the Ha Giang Loop announces itself - the point where the road crests and the landscape mày came to see appears all at once. Most riders stop for 15–30 minutes. Sunrise arrivals require leaving Hà Giang city at 4:30–5:00 AM, which is worth doing at least once for the cloud inversion effect. The gate is also a useful orientation point - everything north of here is the karst plateau, and the riding quality and scenery improve consistently from this point onward.",
   },
+  insights: {
+    highlights: [
+      "Panoramic views of Tam Sơn Valley with twin mountains and terraced fields below",
+      "Located at 1,500m elevation on Hà Giang Loop, 43-50km north of Hà Giang City",
+      "Multiple cafes at viewpoint serving coffee and refreshments with valley views",
+    ],
+    thingsToKnow: {
+      crowds: "Often very busy with tour groups and motorbikes, especially during peak times. Cross the road and hike stairs for less crowded higher vantage point.",
+      difficulty: "Road is steep and winding but well-paved. Nearly 100 steep stairs to reach top viewpoint. Stairs become unstable past first level.",
+      safety: "Road repairs underway with gravel, narrow sections with heavy traffic from buses, trucks, cars and motorbikes. Winding mountain pass with steep cliffs and deep ravines; be careful with trucks.",
+      accessibility: "Accessible by motorbike or car via QL4C road. No entry fee or parking charge.",
+      seasonal: "Early morning or late afternoon offers best lighting. Can be cold and windy; bring warm clothing.",
+    },
+    visitorTips: [
+      "Actual Heaven Gate viewpoint is about 300 meters down the road from some map locations; verify location",
+      "Try local cassava cake (Mr. Lực's nearby) and iced coffee to recharge during Hà Giang Loop",
+      "Arrive early or hike to higher vantage point across road to avoid crowded parking area",
+    ],
+    faq: [
+      { question: "How long does it take to reach Quan Ba Heaven Gate from Hà Giang City?", answer: "Located 43-50 km north of Hà Giang City, accessible by motorbike or car via QL4C road following the Hà Giang Loop route." },
+      { question: "Are there facilities at the viewpoint?", answer: "Yes, multiple cafes serve coffee, iced coffee, tea, and snacks. No entry fee or parking charge. Local vendors sell handicrafts and souvenirs." },
+      { question: "Can I avoid the crowds at Heaven Gate?", answer: "Yes, hike up the nearly 100 steep stairs across the road to reach a higher vantage point with better views and fewer crowds." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as a must-see stop on Hà Giang Loop with stunning panoramic views, excellent for photos, peaceful atmosphere, and good local food and coffee",
+      negative: "Can be extremely crowded with tour groups and motorbikes; road conditions affected by ongoing repairs; high stairs may be challenging for some visitors",
+    },
+  },
 }

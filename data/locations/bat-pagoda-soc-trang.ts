@@ -49,4 +49,32 @@ export const batPagodaSocTrang: Location = {
     travelTips:
       "Bat Pagoda is on almost every Sóc Trăng day-trip itinerary because it combines two compelling things in one location - a genuinely significant piece of Khmer Buddhist heritage and a wildlife spectacle that requires no effort to witness. The dusk departure is the highlight and worth timing the visit around. Sóc Trăng province has the largest Khmer Krom population in Vietnam and the highest density of Khmer temples outside Cambodia - if mày is in the lower delta and interested in Khmer culture, Sóc Trăng with Bat Pagoda, Đất Sét Pagoda, and the city's Khmer market covers the cultural dimension thoroughly.",
   },
+  insights: {
+    highlights: [
+      "16th-century Khmer Theravāda Buddhist temple with ornate architecture and colorful interior paintings",
+      "Thousands of giant fruit bats living in trees around the compound, visible during daytime hours",
+      "Free entry; park motorcycle inside temple grounds to avoid parking lot scams",
+    ],
+    thingsToKnow: {
+      crowds: "Bat population has decreased over time according to local reports; fewer bats present on some visits",
+      difficulty: null,
+      safety: null,
+      accessibility: null,
+      seasonal: "Best time to see bats is 8 AM to 4 PM; bats fly out after 4 PM to search for food",
+    },
+    visitorTips: [
+      "Park your motorcycle inside the temple grounds for free; ignore parking attendants across the street charging 7,000 VND",
+      "Visit in morning hours (8 AM-4 PM) for best bat viewing; look in trees on right backquarter and behind central hall",
+      "Backyard area has cleanliness issues and trash; be aware of beggars and loud traditional music playing",
+    ],
+    faq: [
+      { question: "When is the best time to see the bats?", answer: "8 AM to 4 PM. After 4 PM, bats fly out of the compound to search for food at dusk." },
+      { question: "Is there an entrance fee?", answer: "No, entry is completely free. However, avoid paid parking lots across the street; park inside the temple grounds instead." },
+      { question: "How big are the bats here?", answer: "They are unusually large compared to city bats—comparable to eagle size. They are fruit bats and eat only fruit." },
+    ],
+    sentiment: {
+      positive: "Most visitors appreciate the unique bat colony, Khmer architecture, cultural significance, and friendly monks",
+      negative: "Poor cleanliness with trash throughout backyard, beggars present, parking lot scams, loud music, and declining bat population",
+    },
+  },
 }

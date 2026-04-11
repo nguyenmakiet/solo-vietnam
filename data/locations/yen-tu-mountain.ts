@@ -50,4 +50,32 @@ export const yenTuMountain: Location = {
     travelTips:
       "Yên Tử works best when treated as a pilgrimage rather than a hike - the stops along the way at the various pagoda complexes are as important as the summit view. The mountain has particular meaning for Vietnamese visitors, and observing the pilgrimage behaviour - offerings, prayers, the physical effort made by elderly devotees - gives the climb a cultural dimension that elevates it beyond a standard trek. Avoid major Vietnamese holidays unless experiencing the festival atmosphere is specifically the goal. The cable cars reduce the physical demand significantly but the walking sections between stations still require reasonable fitness.",
   },
+  insights: {
+    highlights: [
+      "Sacred Buddhist pilgrimage site with temples and pagodas spanning lush forests on the mountain",
+      "Two-segment cable car system offering scenic views, though hiking required between and after cable cars",
+      "360-degree panoramic views from the summit with bronze pagoda; easily accessible as day trip from Hanoi",
+    ],
+    thingsToKnow: {
+      crowds: "Extremely crowded during Lunar New Year and Tet holidays (January-March lunar calendar). February-April sees peak foreign tourism. Normal days are quieter with fewer tourists.",
+      difficulty: "Moderate to challenging. Even with cable cars, expect significant walking and 1000+ meters of climbing on uneven cobblestone steps and stone paths. Hiking option takes 8 hours total; cable car plus hiking takes 4+ hours. Suitable for 80+ year-olds but requires fitness and good shoes.",
+      safety: "Top of mountain lacks fences around rocks. Crowding during peak seasons creates safety hazards with pushing and jostling. Final climbing section over steep stones can be dangerous. Best visited on normal days, not holidays.",
+      accessibility: "Cable car accessible to most visitors, including those with mobility issues. However, two cable car segments with mandatory walking and climbing between them. Five-year-old children managed descent but final section challenging for families.",
+      seasonal: "Avoid February-April lunar calendar for fewer crowds. Weather critical—fog common on some days, obscuring views. Check weather before visiting. January can be very crowded due to Tet holiday.",
+    },
+    visitorTips: [
+      "Take cable cars only if clear weather—fog frequently blocks views. Consider hiking trails for fewer crowds and smaller shrines missed by 99% of cable car users.",
+      "Bring good hiking shoes, prepare for extensive steps and uneven cobblestone paths. Pack snacks—vendors on trails charge steep prices.",
+      "Stay at Legacy Resort Yen Tu at mountain base; 30 minutes from Hai Phong, 3 hours from Hanoi. Roadside restaurants offer affordable prices.",
+    ],
+    faq: [
+      { question: "How much time do I need to visit Yên Tử?", answer: "Plan 3-4 hours for sightseeing plus travel time. Full hike takes 8 hours. Cable car plus partial hike takes 4+ hours. Day trip from Hanoi (3 hours away) is feasible." },
+      { question: "What is the cable car cost and system?", answer: "Two cable car segments cost 390,000 VND total. System requires switching between two cable cars. Trolleybus available to first cable car. Still requires significant walking between segments and after final cable car." },
+      { question: "When should I avoid visiting due to crowds?", answer: "Avoid Lunar New Year, Tet holidays (January-March lunar calendar), and February-April for foreign tourists. Peak crowding creates safety risks at summit with limited fencing around rocks." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the spiritual atmosphere, 360-degree summit views, well-maintained stone paths, friendly local vendors, and accessibility as alternative to busier Fansipan. Most rate it highly despite physical demands.",
+      negative: "Cable car prices considered overpriced for Vietnam. Fog frequently obscures views on some days. Steep vendor prices on trails. Safety concerns at summit during crowded periods due to lack of fencing and aggressive pushing.",
+    },
+  },
 }

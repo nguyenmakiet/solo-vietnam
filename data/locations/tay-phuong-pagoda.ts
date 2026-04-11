@@ -50,4 +50,32 @@ export const tayPhuongPagoda: Location = {
     travelTips:
       "Tây Phương is 40km from Hanoi but feels genuinely removed from the city - the paddy fields, water buffalo, and quiet villages on the approach set a different pace. The combination of Tây Phương and Thầy Pagoda is the best single-day cultural excursion from Hanoi that most guidebooks underrate. Thầy Pagoda is on a lake with water puppet performances and cave trails; Tây Phương has the sculptures. Together they cover more ground than a morning at the Temple of Literature. If mày has limited time in Hanoi and has already done the standard sites, this day trip is the right next move.",
   },
+  insights: {
+    highlights: [
+      "Hilltop pagoda accessible by climbing 150m of stairs past local homes",
+      "Peaceful, quiet atmosphere with ancient architecture and traditional design",
+      "Adjacent rice fields visible from the temple grounds",
+    ],
+    thingsToKnow: {
+      crowds: "Generally quiet with few tourists visiting",
+      difficulty: "Stairs are moderately steep and can be slippery; motorbike shuttle available for elderly or those with mobility concerns",
+      safety: null,
+      accessibility: "Motorbike service offered at 30K VND one-way for those unable to climb stairs",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Wear appropriate footwear for slippery stone stairs; take care when ascending and descending",
+      "Support local vendors selling goods near the entrance",
+      "Arrive early for the most peaceful and quiet experience on the grounds",
+    ],
+    faq: [
+      { question: "How much does it cost to visit?", answer: "Entrance fee is 10,000 VND per person. Parking and motorbike shuttle service to the pagoda cost extra (30,000 VND one-way)." },
+      { question: "How difficult is the climb to the temple?", answer: "The 150-meter climb takes approximately 15 minutes and is not extremely difficult, but stairs can be slippery. Motorbike service available for those unable to climb." },
+      { question: "Is the pagoda crowded with tourists?", answer: "The pagoda is generally quiet with very few tourists, making it peaceful for visitors seeking a calm experience." },
+    ],
+    sentiment: {
+      positive: "Visitors consistently praise the pagoda's peaceful atmosphere, ancient architecture, and serene hilltop location with surrounding rice fields",
+      negative: null,
+    },
+  },
 }

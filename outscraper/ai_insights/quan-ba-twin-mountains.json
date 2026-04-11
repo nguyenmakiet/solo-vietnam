@@ -1,0 +1,42 @@
+{
+  "slug": "quan-ba-twin-mountains",
+  "google_rating": 4.6,
+  "google_review_count": 76,
+  "insights": {
+    "highlights": [
+      "Two symmetrical mountains visible from Highway 4C near Tam Sơn town, Quản Bạ district",
+      "Viewing platform accessible by climbing approximately 100 steps with panoramic valley views",
+      "Convenient roadside stop 40-46km north of Hà Giang city on Đồng Văn plateau route"
+    ],
+    "thingsToKnow": {
+      "crowds": "Popular checkpoint for motorbike tours; visitors should park vehicles carefully to avoid blocking traffic",
+      "difficulty": "Staircase climb moderate difficulty; upper road has sharp curves requiring caution. Path occasionally slippery",
+      "safety": null,
+      "accessibility": "Limited infrastructure; bring food and water as few facilities nearby. Minimal directional signage",
+      "seasonal": "Best September-November with cool weather and buckwheat flowers. December less scenic. Morning visits recommended; fog and clouds often obscure views after 4pm"
+    },
+    "visitorTips": [
+      "Visit September-November for clearest views and optimal weather conditions",
+      "Arrive early morning before fog and clouds reduce visibility",
+      "Park vehicles carefully away from highway traffic flow"
+    ],
+    "faq": [
+      {
+        "question": "When is the best time to visit for clear views?",
+        "answer": "September through November offers the clearest skies and coolest weather. Avoid afternoon visits after 4pm when fog and clouds typically obscure the mountains."
+      },
+      {
+        "question": "How difficult is the climb to the viewpoint?",
+        "answer": "Moderate difficulty with approximately 100 steps to reach the viewing platform. The upper road has sharp curves requiring caution and paths can be slippery."
+      },
+      {
+        "question": "What facilities are available at the site?",
+        "answer": "Limited infrastructure with few facilities nearby. Bring your own food and water. Minimal directional signage is available, so arrive prepared."
+      }
+    ],
+    "sentiment": {
+      "positive": "Most visitors praise the distinctive twin mountain formation and strategic location on the Đồng Văn route, finding it worthwhile as a convenient photo stop",
+      "negative": "Some report fog and clouds obscure views; expectations set by internet reviews often exceed actual appearance; climbing stairs tiring for some visitors"
+    }
+  }
+}

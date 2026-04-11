@@ -44,4 +44,32 @@ export const mocChauTeaHills: Location = {
     travelTips:
       "Moc Chau rewards slow travel more than most highland destinations. The plateau has enough variety - tea hills, pine forests, ethnic minority villages, fruit orchards - to fill 2-3 days without repeating the same ground. Accommodation ranges from basic guesthouses in town to homestays in Thai and H'mong villages on the plateau edge. The town itself is unremarkable but has good local food, particularly dishes using the plateau's dairy products - Moc Chau is one of the few places in Vietnam with a genuine fresh milk and yoghurt culture, a legacy of the state dairy farm established in the 1970s.",
   },
+  insights: {
+    highlights: [
+      "Free entry and motorbike parking at this expansive tea plantation",
+      "Borrow traditional costumes for photos at the entrance shop",
+      "Taste local Oolong and Shan snow tea while enjoying panoramic views",
+    ],
+    thingsToKnow: {
+      crowds: "Less crowded on weekdays and weekends outside peak season",
+      difficulty: null,
+      safety: null,
+      accessibility: "Parking available at the base of stairs leading up the hill",
+      seasonal: "Tea hills appear greenest after May rains; post-Lunar New Year harvesting may leave fields less green",
+    },
+    visitorTips: [
+      "Bring a hat or scarf as it can be windy on the tea hills",
+      "Visit on weekdays for fewer crowds and better photo opportunities",
+      "Purchase local tea varieties as souvenirs directly from farm vendors",
+    ],
+    faq: [
+      { question: "Is there an entrance fee?", answer: "No, entry is completely free. Motorbike parking is also free with no aggressive sales tactics." },
+      { question: "When is the best time to visit for green tea hills?", answer: "May offers lush green fields after spring rains. Post-Lunar New Year may show less green due to recent harvesting." },
+      { question: "What tea varieties are available to try?", answer: "Oolong tea, Shan snow tea (100-year variety), flower tea, and green tea are available for tasting and purchase." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly positive reviews praise free access, authentic experience, welcoming locals, fresh air, and excellent photo opportunities",
+      negative: "Some visitors found it less special compared to other tea plantations or Dalat's tea hills, and noted it may be overly popular for social media",
+    },
+  },
 }

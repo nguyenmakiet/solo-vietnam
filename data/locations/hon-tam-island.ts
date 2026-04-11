@@ -40,4 +40,32 @@ export const honTamIsland: Location = {
     travelTips:
       "Hòn Tằm is the right choice for travellers who want a polished beach day with facilities and easy logistics - the 15-minute boat transfer, good beach, and all-inclusive day pass make it the most effortless island day available from Nha Trang. For travellers prioritising snorkeling or diving quality, Hòn Mun's marine reserve is the better destination. The two islands can be combined on a single boat tour, which is the most efficient way to cover both.",
   },
+  insights: {
+    highlights: [
+      "Cost-effective water sports including diving, snorkeling, parasailing, and jet ski",
+      "Mud bath and spa facilities with hot spring pools on-site",
+      "Clean blue waters with soft white sand beaches, minimal development",
+    ],
+    thingsToKnow: {
+      crowds: "Peak tourist times mid-morning onwards; arrive 7-8 AM for fewer visitors. Chinese tour groups common; beaches become packed with chairs and activities",
+      difficulty: null,
+      safety: null,
+      accessibility: "Island requires 250,000 VND entrance fee. Limited English-speaking staff (mostly Chinese and Vietnamese speakers). Island is gated; paths between resorts have restricted access. Boat schedule limited—check before visiting",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Arrive early (7-8 AM) to experience the beach before crowds arrive and chairs monopolize the sand",
+      "Check boat schedule in advance as only few boats depart per hour to/from the island",
+      "Budget for high resort prices; food and beverages significantly overpriced (juice ~90,000 VND)",
+    ],
+    faq: [
+      { question: "What is the entrance fee and can I visit without staying overnight?", answer: "Entrance fee is 250,000 VND. Day visits are allowed; no requirement to stay at the resort overnight." },
+      { question: "What time should I arrive to avoid crowds?", answer: "Arrive at 7-8 AM. Tourist crowds arrive mid-morning, making beaches packed with chairs and activities by mid-day." },
+      { question: "Are staff able to communicate in English?", answer: "Limited English spoken. Most staff speak Chinese and Vietnamese only. Communication may be challenging for English-only speakers." },
+    ],
+    sentiment: {
+      positive: "Majority visitors praise water quality, water sports offerings, mud baths, friendly staff, and value for resort amenities. Many call it must-visit destination",
+      negative: "Overpriced food and beverages; limited island exploration due to gated access between resorts; crowding from jet skis and boat traffic; island feels isolated with only three resorts and no independent businesses",
+    },
+  },
 }

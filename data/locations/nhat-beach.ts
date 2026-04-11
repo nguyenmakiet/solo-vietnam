@@ -45,4 +45,32 @@ export const nhatBeach: Location = {
     travelTips:
       "Bãi Nhát rewards timing above almost everything else: the wrong tide turns it into a rock field with nothing to swim in; the right tide paired with sunset light makes it extraordinary. The most practical approach is to arrive in the mid-to-late afternoon when the tide is dropping, swim for an hour or two, then stay for the sunset. November to December is worth noting for photographers - the algae season coats the boulders in vivid green, which photographs very differently from the dry-season rock textures. The beach is quiet relative to more accessible spots on the island, and the coastal road itself is worth riding slowly in both directions.",
   },
+  insights: {
+    highlights: [
+      "Crystal clear water with fine white sand in a scenic mountain-meets-ocean setting",
+      "Premier sunset viewing spot; arrive before 5pm to avoid crowds or watch from nearby Shark Cape",
+      "Fewer swimmers than other Con Dao beaches; walk west for completely secluded sections",
+    ],
+    thingsToKnow: {
+      crowds: "Popular sunset spot draws crowds starting around 5pm for photos. Early morning or daytime visits offer solitude.",
+      difficulty: null,
+      safety: "Landfill located near beach; occasional odor reported by some visitors, though many notice no smell",
+      accessibility: "Direct beach access via short path from road; easy parking for motorcycles and bikes",
+      seasonal: "Best conditions March to October: calm water, warm weather, minimal wind. Windy conditions possible outside this period",
+    },
+    visitorTips: [
+      "Rent a motorbike and arrive around 5pm for perfect light and breeze while avoiding sunset crowds",
+      "Buy fresh coconuts from motorbike vendor at beach; swimming best during daytime hours",
+      "Venture west along beach for completely empty stretches with pristine sand and clear water",
+    ],
+    faq: [
+      { question: "When is the best time to visit for swimming and water clarity?", answer: "March to October offers warm, sunny weather with calm, clear water. Strong winds occur outside this season." },
+      { question: "Should I worry about the landfill near the beach?", answer: "Landfill is nearby but most visitors report no odor. Some sensitive visitors occasionally notice brief smell." },
+      { question: "What time should I arrive to avoid sunset crowds?", answer: "Arrive before 5pm to swim and explore alone. Watch sunset from nearby Shark Cape at higher elevation to avoid crowds." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as one of Vietnam's most beautiful beaches with exceptional water clarity, white sand, and stunning sunset views",
+      negative: "Occasional trash reported and landfill proximity; windy conditions outside March-October season can detract from experience",
+    },
+  },
 }

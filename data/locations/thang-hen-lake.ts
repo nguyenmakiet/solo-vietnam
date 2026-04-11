@@ -40,4 +40,32 @@ export const thangHenLake: Location = {
     travelTips:
       "Thang Hen is the most underrated destination in Cao Bằng province - consistently overlooked because it requires more navigation than the well-signed Bản Giốc loop. The combination of turquoise lakes, forested karst towers, and the near-absence of other tourists makes it one of the most rewarding half-days in northern Vietnam. The motorbike circuit of the plateau - riding between the lakes with the karst landscape surrounding - is one of the best easy rides in the north. Combine with Nguồm Pục Cave (30km south) for a full day of Cao Bằng's less-visited north.",
   },
+  insights: {
+    highlights: [
+      "Scenic lake nestled in valley with blue-green water and surrounding mountains",
+      "Small caves accessible by road near the lake worth exploring",
+      "Peaceful, quiet atmosphere ideal for relaxation and photography",
+    ],
+    thingsToKnow: {
+      crowds: "Very quiet and deserted, few other visitors even during peak season",
+      difficulty: null,
+      safety: null,
+      accessibility: "No western-style toilets available; some facilities appear unmaintained",
+      seasonal: "Water level dramatically varies by season; best visited during rainy season (May-September). Dry season (November-March) shows low water levels, reducing scenic appeal. August visits reported unimpressive conditions.",
+    },
+    visitorTips: [
+      "Entrance fee 30,000 VND per person; combine visit with nearby Núi Mắt Thần Angel Eye (4km away)",
+      "Visit during rainy season for full lake water; dry season shows exposed lake bed",
+      "Bring own first aid supplies; explore small caves and trek around lake, consider boat rental",
+    ],
+    faq: [
+      { question: "When is the best time to visit Hồ Thang Hen?", answer: "May to September (rainy season) when water levels are high. Avoid November to March when water is very low and lake appearance disappoints." },
+      { question: "What activities are available at the lake?", answer: "Trek around lake, explore small caves, boat/SUP rentals, visit cafes with lake views. Swimming is not permitted at the lake." },
+      { question: "Is the entrance fee reasonable?", answer: "30,000 VND entrance fee; opinions mixed. Some find it justified for scenery and caves, others consider it expensive given limited attractions and services." },
+    ],
+    sentiment: {
+      positive: "Visitors appreciate the peaceful, scenic setting with clear lake water, surrounding mountains, and quiet atmosphere perfect for relaxation and photography",
+      negative: "Overpriced entrance fee relative to limited activities; poor facility maintenance; unimpressive appearance during dry season; some facilities locked and abandoned-looking",
+    },
+  },
 }

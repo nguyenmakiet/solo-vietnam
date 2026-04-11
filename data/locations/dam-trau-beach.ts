@@ -45,4 +45,32 @@ export const damTrauBeach: Location = {
     travelTips:
       "Bãi Đầm Trầu works best as a half-day trip combined with Bãi Suối Nóng - a small secluded beach accessible on foot through a short forest trail from Đầm Trầu's eastern end. Overnight camping is one of the better ways to experience the beach: the evening light is exceptional, the crowds thin out completely after late afternoon, and the sound of the forest at night is unlike anything in Vietnam's more commercialised beach destinations. Côn Đảo as a whole has very limited ATMs (only two on the island as of 2024), so bring enough cash before you arrive. Snorkelling gear should ideally be packed from the mainland.",
   },
+  insights: {
+    highlights: [
+      "Watch planes land just above the beach from Dầm Trâu's unique airport-adjacent location",
+      "Clear water, golden sand, and scenic bay with excellent sunset views facing west",
+      "Quiet, remote beach with few crowds; accessible via scenic scooter ride from Con Dao town",
+    ],
+    thingsToKnow: {
+      crowds: "Very quiet and uncrowded, especially at end of day or outside peak times",
+      difficulty: null,
+      safety: "Watch monkeys on west side near Secret Beach; they steal food and drinks. Tide timing matters—visit before 3pm. Stream crossing requires water shoes.",
+      accessibility: "Accessible by scooter via main road 200m before airport, turn left. Recently built road makes access easier. Free seating on sand available.",
+      seasonal: "Less windy than other Con Dao beaches during wind season (December onwards)",
+    },
+    visitorTips: [
+      "Download FlightRadar24 app to track plane arrivals; they typically land 10 minutes early",
+      "Bring water shoes to cross stream at beach entrance; visit before 3pm due to tide changes",
+      "Get drinks at cafés but skip restaurant food; expensive and mediocre quality for meals",
+    ],
+    faq: [
+      { question: "What are the entry and parking fees?", answer: "Parking: 3,000-5,000 VND per scooter. Beach entry: 2,000-3,000 VND per person. Deckchairs 30,000-40,000 VND/hour, hammocks 40,000 VND/hour." },
+      { question: "Can I see planes landing clearly?", answer: "Yes, planes pass low overhead before landing at adjacent airport. Use FlightRadar24 app to predict arrivals. Bamboo Air jet typically arrives around 3pm." },
+      { question: "Is the beach clean and safe for swimming?", answer: "Water is clear and calm with good swimming depth. Beach cleanliness varies; some trash present. Monkeys inhabit west side—guard food and drinks carefully." },
+    ],
+    sentiment: {
+      positive: "Most reviewers praise Dầm Trâu as Con Dao's best beach for its unique airplane views, clear water, peaceful atmosphere, scenic scooter ride, and uncrowded nature",
+      negative: "Some criticize beach cleanliness and litter management despite admission fees; restaurants overpriced with mediocre quality; multiple fees charged (parking, entry, chair rental)",
+    },
+  },
 }

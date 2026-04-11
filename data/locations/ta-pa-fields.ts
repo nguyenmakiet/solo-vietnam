@@ -46,4 +46,32 @@ export const taPaFields: Location = {
     travelTips:
       "An Giang's Seven Mountains region is one of the most culturally distinct areas of the Mekong Delta, with a Khmer Krom population whose Buddhist temple architecture, language, and cuisine differ noticeably from the Vietnamese norm. Ta Pa Fields are the photographic centrepiece of the region, but the broader area rewards slower exploration - the Khmer pagodas in Tri Ton and Tinh Bien, the Vietnamese pilgrimage site at Ba Chua Xu temple on Sam Mountain near Chau Doc, and the border town atmosphere of the Cambodia crossing all contribute to a region that offers more depth than a single location visit suggests. Accommodation in Tri Ton is basic; Chau Doc has a wider range and is a more practical base for multi-day exploration of the area.",
   },
+  insights: {
+    highlights: [
+      "Scenic rural road with golden rice fields, especially stunning during harvest season",
+      "Winding asphalt road lined with fruit trees offering shade and picturesque views",
+      "Peaceful countryside atmosphere ideal for photography, videography, and leisurely drives",
+    ],
+    thingsToKnow: {
+      crowds: "Road is trending on social media, attracting more visitors",
+      difficulty: null,
+      safety: "Heavy trucks and large vehicles use this road; exercise caution while driving. Road is very dark at night",
+      accessibility: "Located far from city center; remote area",
+      seasonal: "Harvest season (ripe rice fields) is the most beautiful time to visit. Midday is very hot; early morning or 3-5 PM are better times",
+    },
+    visitorTips: [
+      "Visit early morning or between 3-5 PM to avoid intense midday heat and harsh sunlight",
+      "Peak beauty occurs during rice harvest season when fields turn golden yellow",
+      "Bring adequate lighting if visiting late afternoon as evening roads become very dark",
+    ],
+    faq: [
+      { question: "When is the best time to photograph this road?", answer: "Early morning or 3-5 PM during harvest season. Midday is very hot with harsh sunlight. Harvest season offers golden rice field backdrops." },
+      { question: "Are there safety concerns while traveling this road?", answer: "Heavy trucks and large vehicles pass through regularly; drive carefully. The road becomes very dark at night with limited lighting." },
+      { question: "How remote is this location?", answer: "This road is located far from the city center in the Tri Tôn, An Giang region, so plan travel time accordingly." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised as one of the most beautiful and peaceful roads in the region, perfect for relaxation and photography",
+      negative: null,
+    },
+  },
 }

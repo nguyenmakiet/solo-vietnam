@@ -1,0 +1,42 @@
+{
+  "slug": "one-pillar-pagoda",
+  "google_rating": 4.3,
+  "google_review_count": 10458,
+  "insights": {
+    "highlights": [
+      "Built in 1049 during Ly Dynasty, stands on single stone pillar above lotus pond symbolizing purity",
+      "Located between Ho Chi Minh Mausoleum and Museum; free entry, takes 10-20 minutes to visit",
+      "Peaceful spiritual atmosphere with gardens despite surrounding busy streets in heart of Hanoi"
+    ],
+    "thingsToKnow": {
+      "crowds": "Popular tourist destination with steady visitor flow, especially during Tet holidays. Early morning recommended for quieter experience.",
+      "difficulty": null,
+      "safety": "Must pass through security checkpoint with metal detector and bag search. Enter only from west side entrance. Dress code enforced: cover shoulders and knees.",
+      "accessibility": "A few steps and stairs to main shrine; toddlers must be carried as strollers cannot go up. Site is well-maintained and suitable for most visitors.",
+      "seasonal": "Particularly atmospheric during Tet holidays when many locals come to pray for new year."
+    },
+    "visitorTips": [
+      "Visit early morning for quieter crowds and better lighting for photos; 7am opening time recommended",
+      "Enter via west side entrance; Google Maps may direct you incorrectly. One Pillar Pagoda stays open all day unlike nearby Mausoleum",
+      "Combine visit with Ho Chi Minh Mausoleum and Museum nearby; wear walking shoes for exploring surrounding gardens"
+    ],
+    "faq": [
+      {
+        "question": "Is there an entrance fee?",
+        "answer": "Free entry to One Pillar Pagoda itself. Security checkpoint fee of 40,000 VND also provides access to Ho Chi Minh Mausoleum area."
+      },
+      {
+        "question": "What is the dress code?",
+        "answer": "Cover shoulders and knees. Females cannot show skin above knee or shoulders. Dress code is enforced by guards."
+      },
+      {
+        "question": "How long does a visit take?",
+        "answer": "Most visitors spend 10-20 minutes. It is a small site but historically and spiritually significant. Best combined with nearby attractions."
+      }
+    ],
+    "sentiment": {
+      "positive": "Visitors consistently praise the pagoda's spiritual significance, peaceful atmosphere, unique architecture on single pillar, historical importance, and strategic location near other major Hanoi sites.",
+      "negative": null
+    }
+  }
+}

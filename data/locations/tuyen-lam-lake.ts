@@ -44,4 +44,32 @@ export const tuyenLamLake: Location = {
     travelTips:
       "Tuyền Lâm Lake is best as a half-day excursion from Đà Lạt - arrive by cable car, visit Trúc Lâm Monastery, kayak or walk the northern shore, and return by motorbike or bicycle along the back road through the forest. The lake on its own doesn't require a full day. The combination of cable car + monastery + kayak covers the three best things the lake offers. For cyclists, the 12km perimeter road is a solid morning ride with minimal traffic and consistent pine forest scenery.",
   },
+  insights: {
+    highlights: [
+      "Largest freshwater lake in Da Lat surrounded by pine forests and rolling hills",
+      "Kayaking activities available; book guides through Facebook for affordable prices and photo services",
+      "Scenic sunset views and cable car access to nearby Truc Lam Buddhist monastery",
+    ],
+    thingsToKnow: {
+      crowds: "Generally not crowded; busier during peak tourist season but quiet periods available",
+      difficulty: null,
+      safety: "Swimming is not allowed due to past drowning incidents. Unauthorized access to certain lakeshore areas may result in local reports to authorities.",
+      accessibility: "Located 30 minutes from Da Lat city center; motorbike or car rental required for convenient access. Walking from city is possible but lengthy. Grab taxi service available.",
+      seasonal: "Cool climate year-round. Visit on clear days for best sunset and sunrise views; poor weather obscures scenery. Rainy season may limit visibility.",
+    },
+    visitorTips: [
+      "Rent a motorbike or scooter for scenic drives around the lake; half-day rental costs around 100,000 VND",
+      "Kayak rental prices are high for solo rentals (300-600k VND); guided tours from city center offer better value",
+      "Plan sunset visit or clear-sky days for optimal photography; combine with nearby Truc Lam monastery cable car visit",
+    ],
+    faq: [
+      { question: "Can you swim in Tuyền Lâm Lake?", answer: "No, swimming is not allowed due to past drowning incidents. However, you can kayak, paddle boat, or rent fishing boats." },
+      { question: "How do you get to the lake from Da Lat city?", answer: "The lake is 30 minutes away by car or motorbike. Grab taxi works well. Walking is possible but lengthy. Motorbike rental is recommended for flexibility." },
+      { question: "What activities are available at the lake?", answer: "Kayaking, paddle boating, fishing, hiking, cycling, sunset viewing, and dining at lakeside cafes. Cable car connects to nearby Truc Lam monastery." },
+    ],
+    sentiment: {
+      positive: "Overwhelmingly praised for peaceful scenery, pine forests, sunset views, and kayaking experiences. Good value for guided kayaking tours.",
+      negative: "High solo kayak/paddleboat rental prices (300-600k VND). Large resorts developed near shore. Some lakeshore areas littered with trash. Restricted access to certain areas enforced by locals. Less pristine than years ago due to increased development.",
+    },
+  },
 }

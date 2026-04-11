@@ -49,4 +49,32 @@ export const canGioBeach: Location = {
     travelTips:
       "Cần Giờ Beach works best as an immersive day-trip-from-HCMC experience rather than a destination beach. The value is in the combination: the ferry crossing, the mangrove drive, the dark-sand coastal town, the seafood lunch, and the optional boat tour into the reserve. Mày gets a full day of sensory variety - water, forest, fishing community, city escape - without leaving the city. For foreign visitors who want to see what Saigonese actually do on weekends, Cần Giờ is more revealing than any tourist attraction in the city center.",
   },
+  insights: {
+    highlights: [
+      "Early morning low tide reveals clamming activities and seashell collection opportunities",
+      "Fresh seafood at reasonable prices from roadside restaurants and food market",
+      "Close proximity to Saigon with free beach access and affordable hammock rentals",
+    ],
+    thingsToKnow: {
+      crowds: "First half of beach is crowded with vendors; quieter further along or at night. Popular with teenagers for food market.",
+      difficulty: null,
+      safety: "Beach is fenced with ladder or stair access required to reach sand. Access points vary in stability; strongest ladder near Quán Không Tên shop.",
+      accessibility: "Long fence along shoreline with stairs or ladders needed to access beach. Path with loose sand available at some points.",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Walk further along beach past crowded areas for peace and fewer vendors",
+      "Visit early morning for sunrise and to watch fishermen's clamming activities",
+      "Confirm seafood prices before ordering at roadside restaurants",
+    ],
+    faq: [
+      { question: "Can I swim in the water at Cần Giờ Beach?", answer: "Not recommended. Water is murky due to black sand, with visible trash and nets. Better swimming beaches exist nearby." },
+      { question: "How do I access the beach from the road?", answer: "Fences line the shore. Use provided stairs or ladders to reach sand. Access points vary; strongest ladder near Quán Không Tên shop." },
+      { question: "What time should I visit to avoid crowds?", answer: "Early morning for sunrise and low tide activities, or visit at night when beach is empty. Avoid first half during peak hours." },
+    ],
+    sentiment: {
+      positive: "Early morning experiences, fresh affordable seafood, peaceful atmosphere away from city, close to Saigon, free access, shell collection opportunities",
+      negative: "Significant litter and trash throughout beach, black sand makes water appear dirty, cows grazing on beach, overcrowded first section, complicated fence access, not suitable for swimming, neglected appearance",
+    },
+  },
 }

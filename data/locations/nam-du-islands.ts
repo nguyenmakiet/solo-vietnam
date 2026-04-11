@@ -50,4 +50,32 @@ export const namDuIslands: Location = {
     travelTips:
       "Nam Du is the island mày go to when Phú Quốc feels too developed and Hòn Sơn feels too close to the mainland. The 3-hour crossing is a real commitment that filters out day-trippers and keeps the island at a pace that resembles what coastal tourism in the Gulf of Thailand looked like 15-20 years ago. The combination of main island orientation on day one and outer island boat charter on day two is the standard two-day structure. For a three-night trip, adding a camping night on one of the outer uninhabited islands is possible with equipment and a boat arrangement - one of the more genuine wilderness experiences available in southern Vietnam.",
   },
+  insights: {
+    highlights: [
+      "Clear turquoise water and white sand beaches, especially Bai Men and Bai Soi with soft sand and talcum powder-like texture",
+      "Fresh, affordable seafood including rock oysters, blue crab, and squid at local markets and beachside restaurants",
+      "Small island explorable by motorcycle in 30-40 minutes; boat tours to nearby islands with snorkeling and coral reefs",
+    ],
+    thingsToKnow: {
+      crowds: "Very few tourists and less crowded than nearby Phu Quoc; peaceful and quiet atmosphere",
+      difficulty: null,
+      safety: "Foreigners require special paperwork, COVID-19 declaration, and police interview upon arrival. Check with tour operators for current requirements. Tour company guarantee may be needed for foreign visitors",
+      accessibility: "Most beaches rocky except two designated sandy beaches (Bai Cay Men and Bai Soi); wear footwear for swimming in rocky areas",
+      seasonal: null,
+    },
+    visitorTips: [
+      "Rent a motorcycle (120k-150k VND/day) to explore the entire island independently in about one hour",
+      "Book boat tours to Hon Dau and Hon Mai islands for snorkeling and diving with local guides who are friendly and helpful",
+      "Stay at homestays like The Stone Beach near Bai Soi for authentic experience; two nights maximum recommended",
+    ],
+    faq: [
+      { question: "Can foreigners visit Nam Du Island?", answer: "Foreigners are now allowed but require special paperwork, COVID-19 declaration, and police interview upon arrival. Check with tour operators for current documentation requirements." },
+      { question: "What is the best way to reach Nam Du Island?", answer: "Take high-speed ferry from Rach Gia port (2-2.5 hours, 210k VND one way). Alternatively, ferry from Phu Quoc to Rach Gia, then continue to Nam Du via Superdong fast ferry." },
+      { question: "What are the main activities on Nam Du Island?", answer: "Explore by motorcycle, swim at designated beaches, hire boats for island tours and snorkeling, visit coral reefs, eat fresh seafood at local restaurants and markets." },
+    ],
+    sentiment: {
+      positive: "Most visitors praise the island's natural beauty, clear water, fresh seafood, and peaceful atmosphere. Many consider it an unspoiled paradise compared to commercialized alternatives",
+      negative: "Significant garbage and littering problems reported, with trash dumped directly into ocean and litter washing ashore on most beaches except designated ones. Limited nighttime activities and basic accommodation facilities",
+    },
+  },
 }
