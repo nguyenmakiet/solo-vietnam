@@ -7,6 +7,9 @@ import time
 import requests
 import pandas as pd
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Fix Windows console encoding (prevents UnicodeEncodeError on print)
 if sys.platform == 'win32':
@@ -15,7 +18,7 @@ if sys.platform == 'win32':
 # ============================================================
 # CONFIG
 # ============================================================
-API_KEY = 'OTE5MmEzODk4OWUzNGJlODk1ZDgwNGEwYTA2YzE1MTd8MTg3OWFjOWJmNw'
+API_KEY = os.getenv('OUTSCRAPER_API_KEY')
 REVIEWS_PER_LOCATION = 30
 MIN_REVIEW_LENGTH = 30
 # ============================================================
