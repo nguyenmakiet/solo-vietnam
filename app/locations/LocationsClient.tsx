@@ -374,7 +374,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           </p>
           <h1
             className="text-4xl md:text-5xl font-bold leading-tight mb-3"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+            style={{ fontFamily: "var(--font-serif), 'Playfair Display', serif" }}
           >
             Locations in Vietnam
           </h1>
@@ -633,7 +633,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                 <div className="p-3">
                   <h2
                     className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2 mb-1"
-                    style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+                    style={{ fontFamily: "var(--font-serif), 'Playfair Display', serif" }}
                   >
                     {loc.name}
                   </h2>

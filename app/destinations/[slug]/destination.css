@@ -11,7 +11,7 @@
 }
 
 .dp * { box-sizing: border-box; margin: 0; padding: 0; }
-.dp { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--text); min-height: 100vh; }
+.dp { font-family: var(--font-sans), 'Be Vietnam Pro', sans-serif; background: var(--surface); color: var(--text); min-height: 100vh; }
 
 /* ── Breadcrumb ── */
 .breadcrumb {
@@ -54,7 +54,7 @@
   margin-bottom: 14px; font-weight: 600;
 }
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif), 'Playfair Display', serif;
   font-size: clamp(38px, 7vw, 68px);
   font-weight: 900; color: #fff;
   line-height: 1.0; margin-bottom: 10px; letter-spacing: -1px;
@@ -62,7 +62,7 @@
 .hero-tagline {
   font-size: 15px; color: rgba(255,255,255,0.65);
   font-style: italic; margin-bottom: 22px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif), 'Playfair Display', serif;
 }
 .hero-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
 .hero-tag {
@@ -190,7 +190,7 @@
   gap: 16px; flex-wrap: wrap; border: 1px solid rgba(200,169,110,0.2);
 }
 .region-cta .cta-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
-.region-cta .cta-title { font-family: 'Playfair Display', serif; font-size: 20px; color: #fff; font-weight: 700; }
+.region-cta .cta-title { font-family: var(--font-serif), 'Playfair Display', serif; font-size: 20px; color: #fff; font-weight: 700; }
 .region-cta a {
   background: var(--gold); color: var(--dark); padding: 12px 22px;
   border-radius: 6px; font-size: 13px; font-weight: 700;

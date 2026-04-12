@@ -97,10 +97,10 @@ const PROVINCE_REGION: Record<string, "north" | "central" | "south"> = {
 }
 
 const COLORS = {
-  north: { base: "#c0d5ec", hover: "#6b9fc4" },
-  central: { base: "#bcd9c2", hover: "#5a9e6f" },
-  south: { base: "#f2d4a8", hover: "#c8784a" },
-  unknown: { base: "#e8dfd0", hover: "#a89880" },
+  north: { base: "#c0d5ec", hover: "#93bedc" },
+  central: { base: "#bcd9c2", hover: "#8ec4a0" },
+  south: { base: "#f2d4a8", hover: "#e6b87a" },
+  unknown: { base: "#e8dfd0", hover: "#cfc3ae" },
 }
 
 export default function VietnamMap() {
@@ -114,6 +114,13 @@ export default function VietnamMap() {
   } | null>(null)
 
   const [hoveredId, setHoveredId] = useState<string | null>(null)
+
+  const [hoverLabel, setHoverLabel] = useState<{
+    x: number
+    y: number
+    name: string
+    count: number
+  } | null>(null)
 
   return (
     <div
@@ -154,12 +161,29 @@ export default function VietnamMap() {
                 strokeLinejoin="round"
                 style={{
                   cursor: "pointer",
-                  transition: "fill 0.15s ease",
+                  transition: "fill 0.2s ease",
                   fill: hoveredId === location.id ? colors.hover : colors.base,
                   filter: hasGuide ? "brightness(0.85)" : "none",
                 }}
                 onMouseEnter={() => setHoveredId(location.id)}
-                onMouseLeave={() => setHoveredId(null)}
+                onMouseMove={(e) => {
+                  const rect = (e.currentTarget as SVGPathElement)
+                    .closest("svg")!
+                    .getBoundingClientRect()
+                  const count = slug
+                    ? allLocations.filter((l) => l.provinces.includes(slug)).length
+                    : 0
+                  setHoverLabel({
+                    x: e.clientX - rect.left,
+                    y: e.clientY - rect.top,
+                    name: location.name,
+                    count,
+                  })
+                }}
+                onMouseLeave={() => {
+                  setHoveredId(null)
+                  setHoverLabel(null)
+                }}
                 onClick={(e) => {
                   e.stopPropagation()
                   const rect = (e.currentTarget as SVGPathElement)
@@ -176,6 +200,30 @@ export default function VietnamMap() {
             )
           })}
         </svg>
+
+        {/* Hover label */}
+        {hoverLabel && !tooltip && (
+          <div
+            className="absolute pointer-events-none"
+            style={{ left: hoverLabel.x + 12, top: hoverLabel.y - 40, zIndex: 40 }}
+          >
+            <div
+              className="rounded-lg px-2.5 py-1.5 text-xs font-medium whitespace-nowrap shadow-md"
+              style={{
+                background: "#1a1209",
+                color: "#faf8f4",
+                border: "1px solid rgba(200,169,110,0.25)",
+              }}
+            >
+              {hoverLabel.name}
+              {hoverLabel.count > 0 && (
+                <span className="ml-1.5 font-normal" style={{ color: "#c8a96e" }}>
+                  {hoverLabel.count} {hoverLabel.count === 1 ? "place" : "places"}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Tooltip */}
         {tooltip && (() => {

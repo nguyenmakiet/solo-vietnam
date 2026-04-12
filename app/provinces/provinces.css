@@ -2,8 +2,6 @@
    provinces.css — /provinces index page
    ============================================================ */
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap");
-
 :root {
   --gold: #c8a96e;
   --dark: #1a1209;
@@ -15,7 +13,7 @@
 }
 
 .prov-wrap {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
   background: var(--surface);
   color: var(--text);
   min-height: 100vh;
@@ -68,7 +66,7 @@
 }
 
 .prov-hero-title {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif), "Playfair Display", serif;
   font-size: clamp(44px, 8vw, 80px);
   font-weight: 900;
   line-height: 1.05;
@@ -162,7 +160,7 @@
 }
 
 .prov-region-title {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif), "Playfair Display", serif;
   font-size: 28px;
   font-weight: 700;
   color: var(--dark);
@@ -260,7 +258,7 @@
 }
 
 .prov-card-name {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif), "Playfair Display", serif;
   font-size: 17px;
   font-weight: 700;
   color: var(--dark);
