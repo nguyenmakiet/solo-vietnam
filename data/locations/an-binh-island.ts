@@ -23,7 +23,7 @@ export const anBinhIsland: Location = {
   entranceFee: "Free (boat ticket from Lý Sơn port ~50,000 VND one way)",
   openingHours: "Boat departures from Lý Sơn main port from ~7 AM daily (seasonal)",
   mapUrl: "https://www.google.com/maps?q=15.427950714721403,109.08039442282168",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775980324243!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHlqWVBNR0E.!2m2!1d15.43191809816464!2d109.0803783194498!3f325.6671093381345!4f-12.540715019848207!5f0.7820865974627469", },
   heroImage: heroUrl("ly-son-island-small-island-11_owd8qu"),
   gallery: [
     "ly-son-island-small-island-12_xqekqu",
