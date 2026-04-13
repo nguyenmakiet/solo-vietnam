@@ -1,6 +1,18 @@
 // app/destinations/page.tsx
+import type { Metadata } from "next"
 import Link from "next/link"
 import { destinations } from "@/data/destinations"
+
+export const metadata: Metadata = {
+  title: "Destinations | Solo in Vietnam",
+  description: "Discover top destinations in Vietnam with travel guides and insider tips for solo travelers.",
+  openGraph: {
+    description: "Discover top destinations in Vietnam with travel guides and insider tips for solo travelers.",
+  },
+  alternates: {
+    canonical: "https://www.soloinvietnam.com/destinations",
+  },
+}
 
 const REGION_LABELS: Record<string, string> = {
   north: "North Vietnam",

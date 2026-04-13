@@ -5,7 +5,7 @@ export const cuChiTunnels: Location = {
   slug: "cu-chi-tunnels",
   name: "Cu Chi Tunnels",
   provinces: ["ho-chi-minh-city"],
-  destination: "",
+  destination: "ho-chi-minh-city",
   lat: "11.141519428740597",
   lng: "106.461571250992",
   address: "Phú Hiệp, Củ Chi, Thành phố Hồ Chí Minh",

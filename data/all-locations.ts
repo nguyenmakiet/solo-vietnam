@@ -84,6 +84,8 @@ import { hangEn } from "@/data/locations/hang-en"
 import { hangMua } from "@/data/locations/hang-mua"
 import { hangPagoda } from "@/data/locations/hang-pagoda"
 import { hangRai } from "@/data/locations/hang-rai"
+import { hanoiStJosephsCathedral } from "@/data/locations/hanoi-st-josephs-cathedral"
+import { hanoiTrainStreet } from "@/data/locations/hanoi-train-street"
 import { hmongKingPalace } from "@/data/locations/hmong-king-palace"
 import { hoChiMinhChildhoodHome } from "@/data/locations/ho-chi-minh-childhood-home"
 import { hoDynastyCitadel } from "@/data/locations/ho-dynasty-citadel"
@@ -91,10 +93,12 @@ import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
 import { hoaLuAncientCapital } from "@/data/locations/hoa-lu-ancient-capital"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
 import { honChongRockFormation } from "@/data/locations/hon-chong-rock-formation"
+import { honKhoIsland } from "@/data/locations/hon-kho-island"
 import { honMunIsland } from "@/data/locations/hon-mun-island"
 import { honSonIsland } from "@/data/locations/hon-son-island"
 import { honTamIsland } from "@/data/locations/hon-tam-island"
 import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
+import { honYenIsland } from "@/data/locations/hon-yen-island"
 import { hospitalCave } from "@/data/locations/hospital-cave"
 import { hungTemple } from "@/data/locations/hung-temple"
 import { imperialCity } from "@/data/locations/imperial-city-hue"
@@ -141,6 +145,7 @@ import { nhaPhaPrison } from "@/data/locations/nha-pha-prison"
 import { nhanTower } from "@/data/locations/nhan-tower"
 import { nhatBeach } from "@/data/locations/nhat-beach"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
+import { notreDameCathedralSaigon } from "@/data/locations/notre-dame-cathedral-saigon"
 import { onePillarPagoda } from "@/data/locations/one-pillar-pagoda"
 import { oQuyHoPass } from "@/data/locations/o-quy-ho-pass"
 import { ongCopBridge } from "@/data/locations/ong-cop-bridge"
@@ -294,6 +299,8 @@ export const allLocations: Location[] = [
   hangMua,
   hangPagoda,
   hangRai,
+  hanoiStJosephsCathedral,
+  hanoiTrainStreet,
   hmongKingPalace,
   hoChiMinhChildhoodHome,
   hoDynastyCitadel,
@@ -301,10 +308,12 @@ export const allLocations: Location[] = [
   hoaLuAncientCapital,
   hoiAnAncientTown,
   honChongRockFormation,
+  honKhoIsland,
   honMunIsland,
   honSonIsland,
   honTamIsland,
   honThomCableCar,
+  honYenIsland,
   hospitalCave,
   hungTemple,
   imperialCity,
@@ -351,6 +360,7 @@ export const allLocations: Location[] = [
   nhanTower,
   nhatBeach,
   nhoQueRiver,
+  notreDameCathedralSaigon,
   onePillarPagoda,
   oQuyHoPass,
   ongCopBridge,

@@ -18,7 +18,7 @@ export const baDenMountain: Location = {
   entranceFee: "Cable car: ~220,000 VND return (adult). Trekking route is free.",
   openingHours: "5:00 AM – 6:00 PM (cable car); trekking routes accessible from dawn",
   mapUrl: "https://www.google.com/maps?q=ba+den+mountain+tay+ninh",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776108533778!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFJoNTdPdUFF!2m2!1d11.38168908650588!2d106.1757379305223!3f358.16875298401914!4f-16.587204953388962!5f0.7820865974627469", },
   heroImage: heroUrl("ba-den-mountain-tay-ninh_ib51bn"),
   gallery: [
     "ba-den-mountain-tay-ninh_-5_faukgs",

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { locationTheme } from "@/data/location"
 import { allLocations } from "@/data/all-locations"
 import { experiences } from "@/data/experiences"
+import { provinces } from "@/data/provinces"
 import LocationTabs from "./LocationTabs"
 import "./location.css"
 import NearbyLocations from "./NearbyLocations"
@@ -25,10 +26,25 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
+  const location = allLocations.find((l) => l.slug === slug)
+
+  if (!location) {
+    return {
+      description: "Discover this location in Vietnam with helpful tips for solo travelers.",
+      alternates: { canonical: `https://www.soloinvietnam.com/locations/${slug}` },
+    }
+  }
+
+  const provinceSlug = location.provinces[0]
+  const province = provinces.find((p) => p.slug === provinceSlug)
+  const area = province?.name ?? provinceSlug?.replace(/-/g, " ") ?? "Vietnam"
+
+  const description = `${location.name} in ${area} - what to expect, how to get there, best time to visit, and insider tips.`
+
   return {
-    alternates: {
-      canonical: `https://www.soloinvietnam.com/locations/${slug}`,
-    },
+    description,
+    openGraph: { description },
+    alternates: { canonical: `https://www.soloinvietnam.com/locations/${slug}` },
   }
 }
 

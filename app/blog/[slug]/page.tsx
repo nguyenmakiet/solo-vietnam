@@ -65,6 +65,45 @@ const components = {
   ),
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
+
+  if (!post) {
+    return {
+      description: "Travel insights and practical tips for solo travelers in Vietnam.",
+      alternates: { canonical: `https://www.soloinvietnam.com/blog/${slug}` },
+    }
+  }
+
+  let description = post.description?.trim() || ""
+
+  if (!description) {
+    const stripped = post.content
+      .replace(/#{1,6}\s+/g, "")
+      .replace(/[*_`~]/g, "")
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/\n+/g, " ")
+      .trim()
+
+    description = stripped.length <= 155
+      ? stripped
+      : stripped.slice(0, 155).replace(/\s+\S*$/, "")
+  }
+
+  description = description || "Travel insights and practical tips for solo travelers in Vietnam."
+
+  return {
+    description,
+    openGraph: { description },
+    alternates: { canonical: `https://www.soloinvietnam.com/blog/${slug}` },
+  }
+}
+
 export default async function BlogDetailPage({
   params,
 }: {

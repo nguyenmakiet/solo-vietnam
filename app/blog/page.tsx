@@ -1,6 +1,18 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts, getAllCategories } from "@/lib/blog"
 import "./blog.css"
+
+export const metadata: Metadata = {
+  title: "Blog | Solo in Vietnam",
+  description: "Read travel guides, safety tips, and local insights for solo travelers exploring Vietnam.",
+  openGraph: {
+    description: "Read travel guides, safety tips, and local insights for solo travelers exploring Vietnam.",
+  },
+  alternates: {
+    canonical: "https://www.soloinvietnam.com/blog",
+  },
+}
 
 const CATEGORY_LABELS: Record<string, string> = {
   scams: "⚠️ Scams",

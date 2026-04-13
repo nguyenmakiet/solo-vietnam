@@ -27,6 +27,26 @@ function getTypeIcon(type: Location["type"]): string {
   return icons[primary] ?? "📍"
 }
 
+// ── Metadata ──────────────────────────────────────────────────────────────────
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const destination = destinations.find((d) => d.slug === slug)
+
+  const description = destination
+    ? `${destination.name} travel guide for solo travelers - top things to do, local insights, and practical visiting tips.`
+    : "Travel guide for this destination in Vietnam with useful tips for solo travelers."
+
+  return {
+    description,
+    openGraph: { description },
+    alternates: { canonical: `https://www.soloinvietnam.com/destinations/${slug}` },
+  }
+}
+
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default async function DestinationPage({
   params,

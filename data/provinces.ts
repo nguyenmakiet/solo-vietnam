@@ -3531,7 +3531,7 @@ export const provinces: Province[] = [
     ],
   },
   {
-    slug: "ho-chi-minh",
+    slug: "ho-chi-minh-city",
     heroImage: heroUrl("sai-gon_vm2gku"),
     name: "TP. Hồ Chí Minh",
     region: "south",

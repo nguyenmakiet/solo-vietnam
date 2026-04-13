@@ -34,7 +34,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
+  const experience = getExperienceBySlug(slug as Parameters<typeof getExperienceBySlug>[0])
+
+  const description = experience
+    ? `Discover the best ${experience.label.toLowerCase()} experiences in Vietnam - solo travel tips, top locations, and practical guides.`
+    : "Discover travel experiences in Vietnam with honest guides for solo travelers."
+
   return {
+    description,
+    openGraph: { description },
     alternates: {
       canonical: `https://www.soloinvietnam.com/experiences/${slug}`,
     },

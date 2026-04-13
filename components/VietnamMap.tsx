@@ -60,7 +60,7 @@ const PROVINCE_TO_SLUG: Record<string, string> = {
   "Binh Duong": "binh-duong",
   "Dong Nai": "dong-nai",
   "Ba Ria–Vung Tau": "vung-tau",
-  "Ho Chi Minh": "ho-chi-minh",
+  "Ho Chi Minh": "ho-chi-minh-city",
   "Long An": "long-an",
   "Tien Giang": "tien-giang",
   "Ben Tre": "ben-tre",
@@ -155,7 +155,6 @@ export default function VietnamMap() {
               <path
                 key={location.id}
                 d={location.path}
-                fill={colors.base}
                 stroke="#a89880"
                 strokeWidth="0.6"
                 strokeLinejoin="round"

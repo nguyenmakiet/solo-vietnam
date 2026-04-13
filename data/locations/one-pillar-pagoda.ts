@@ -5,7 +5,7 @@ export const onePillarPagoda: Location = {
   slug: "one-pillar-pagoda",
   name: "One Pillar Pagoda",
   provinces: ["ha-noi"],
-  destination: "",
+  destination: "ha-noi",
   lat: "21.03587349277687",
   lng: "105.83360453336113",
   address: "Đội Cấn, Ba Đình, Hà Nội",

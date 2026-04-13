@@ -13,15 +13,21 @@ export async function generateMetadata({ searchParams }: Props) {
   if (province) {
     return {
       title: "Locations | Solo in Vietnam",
+      description: "Browse travel locations in Vietnam with practical tips and insights for solo travelers.",
+      openGraph: {
+        description: "Browse travel locations in Vietnam with practical tips and insights for solo travelers.",
+      },
       alternates: {
         canonical: `https://www.soloinvietnam.com/provinces/${province}`,
       },
     }
   }
 
+  const description = "Browse all travel locations in Vietnam with practical tips and insights for solo travelers."
   return {
     title: "Locations | Solo in Vietnam",
-    description: `${allLocations.length} places across Vietnam — beaches, temples, caves, mountains, markets, and more.`,
+    description,
+    openGraph: { description },
     alternates: {
       canonical: "https://www.soloinvietnam.com/locations",
     },

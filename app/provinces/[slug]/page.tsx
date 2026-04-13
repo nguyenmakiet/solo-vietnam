@@ -9,10 +9,16 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
+  const province = provinces.find((p) => p.slug === slug)
+
+  const description = province
+    ? `Explore ${province.name} as a solo traveler - discover top attractions, local tips, best time to visit, and hidden gems.`
+    : "Explore this province in Vietnam with practical tips for solo travelers."
+
   return {
-    alternates: {
-      canonical: `https://www.soloinvietnam.com/provinces/${slug}`,
-    },
+    description,
+    openGraph: { description },
+    alternates: { canonical: `https://www.soloinvietnam.com/provinces/${slug}` },
   }
 }
 

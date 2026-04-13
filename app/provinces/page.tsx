@@ -1,6 +1,18 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { provinces } from "@/data/provinces"
 import "./provinces.css"
+
+export const metadata: Metadata = {
+  title: "Provinces | Solo in Vietnam",
+  description: "Explore all provinces in Vietnam and discover top places, travel tips, and hidden gems.",
+  openGraph: {
+    description: "Explore all provinces in Vietnam and discover top places, travel tips, and hidden gems.",
+  },
+  alternates: {
+    canonical: "https://www.soloinvietnam.com/provinces",
+  },
+}
 
 const REGIONS = [
   {

@@ -911,10 +911,112 @@ export const destinations: Destination[] = [
   nearbyDestinations: [],
 
   coordinates: {
-    lat: 15.379399154755141, 
+    lat: 15.379399154755141,
     lng: 109.09594185704997,
   },
-}
+},
+
+{
+  slug: "ha-noi",
+  name: "Hà Nội",
+  province: "Hanoi",
+  provinceSlug: "ha-noi",
+  region: "north",
+
+  description:
+    "Hà Nội is Vietnam's capital and cultural heart - a city of tree-lined boulevards, ancient temples, and one of the world's great street food scenes, where the chaotic energy of the Old Quarter meets thousand-year-old history at every turn.",
+
+  tagline: "Ancient temples, street food, and a city that never slows down",
+
+  heroImage: heroUrl("ha-noi_mcvdm9"),
+  highlights: [
+    "Hoàn Kiếm Lake and Ngọc Sơn Temple",
+    "Old Quarter (36 Streets)",
+    "Temple of Literature",
+    "Hồ Chí Minh Mausoleum",
+    "Văn Miếu – Quốc Tử Giám",
+  ],
+
+  thingsToDo: [
+    "Walk the Old Quarter's 36 streets at dawn",
+    "Sit at Hoàn Kiếm Lake and watch the city wake up",
+    "Visit the Temple of Literature - Vietnam's first university",
+    "Eat phở bò, bún chả, and bánh mì at street stalls",
+    "Take a day trip to Hạ Long Bay or Ninh Bình",
+  ],
+
+  tags: ["history", "culture", "food", "city", "heritage"],
+
+  gettingThere:
+    "Fly into Nội Bài International Airport (45 minutes from city centre by taxi or express bus). Overnight trains from Huế (~14 hours) and HCMC (~30 hours). Bus connections from Sapa, Ha Giang, and Ninh Bình.",
+
+  bestTime:
+    "October – April for cooler, drier weather. September – November is ideal. Avoid January – February (cold and drizzly). Summer (June – August) is hot and humid.",
+
+  budgetPerDay: "$20 – $50 USD",
+
+  recommendedStay: "2 – 4 days",
+
+  transport: "Walking in the Old Quarter, Grab or taxi for longer distances",
+
+  nearbyDestinations: ["ha-long", "ninh-binh", "sapa"],
+
+  coordinates: {
+    lat: 21.0285,
+    lng: 105.8542,
+  },
+},
+
+{
+  slug: "ho-chi-minh-city",
+  name: "Ho Chi Minh City",
+  province: "Ho Chi Minh City",
+  provinceSlug: "ho-chi-minh-city",
+  region: "south",
+
+  description:
+    "Ho Chi Minh City - still called Saigon by most Vietnamese - is Vietnam's largest and fastest-moving city, a nonstop engine of commerce, coffee shops, and street food, where French colonial architecture sits next to glass towers and the past is never far from the surface.",
+
+  tagline: "Saigon never sleeps - and neither will you",
+
+  heroImage: heroUrl("coffee-apartment-ho-chi-minh-city_blkaw8"),
+  highlights: [
+    "War Remnants Museum",
+    "Bến Thành Market",
+    "Nhà Thờ Đức Bà (Notre-Dame Cathedral)",
+    "Bùi Viện Street",
+    "Cu Chi Tunnels (day trip)",
+  ],
+
+  thingsToDo: [
+    "Visit the War Remnants Museum - one of the most powerful museums in Southeast Asia",
+    "Eat at Bến Thành Market and surrounding street food stalls",
+    "Take a day trip to the Cu Chi Tunnels",
+    "Explore Đa Kao district's French colonial streets",
+    "Drink cà phê sữa đá and watch the motorbike chaos from a plastic stool",
+  ],
+
+  tags: ["city", "history", "food", "culture", "nightlife"],
+
+  gettingThere:
+    "Fly into Tân Sơn Nhất International Airport (20–45 minutes from city centre depending on traffic). Direct flights from most Southeast Asian cities. Overnight buses from Da Lat (6–7 hours), Nha Trang (9 hours), and Phú Quốc ferry.",
+
+  bestTime:
+    "December – April (dry season, cooler temperatures, less humidity). May – November is rainy season but the city stays lively year-round.",
+
+  budgetPerDay: "$30 – $70 USD",
+
+  recommendedStay: "2 – 4 days",
+
+  transport: "Grab is essential - traffic is heavy and distances are large. Walking works well in Districts 1 and 3.",
+
+  nearbyDestinations: ["mekong-delta", "con-dao", "phu-quoc"],
+
+  coordinates: {
+    lat: 10.8231,
+    lng: 106.6297,
+  },
+},
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {
