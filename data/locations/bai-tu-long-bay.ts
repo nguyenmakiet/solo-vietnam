@@ -17,8 +17,8 @@ export const baiTuLongBay: Location = {
   bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "Included in cruise packages (departs from Hạ Long International Port)",
   openingHours: "Accessible year-round via overnight cruise",
-  mapUrl: "https://maps.google.com/?q=21.0500,107.4000",
-  streetView: {},
+  mapUrl: "https://maps.google.com/?q=20.984007222280045,107.2457308779769",
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776186961654!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDJrY2JnZWc.!2m2!1d20.96215249770996!2d107.2608056076843!3f55.27596007520773!4f-7.331799229209594!5f0.7820865974627469", },
   heroImage: heroUrl("bai-tu-long-bay-quang-ninh_cs8cgw"),
   gallery: [
     "bai-tu-long-bay-quang-ninh02_sjwoob",

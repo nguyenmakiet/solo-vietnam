@@ -18,7 +18,7 @@ export const bayMauCoconutForest: Location = {
   entranceFee: "~150,000–250,000 VND (includes basket boat ride)",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=15.877556321921798,108.37267755516427",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776185210082!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2VfTW1EeWdF!2m2!1d15.87506962867691!2d108.3773911074877!3f357.88592392891604!4f-29.65020339925902!5f0.7820865974627469", },
   heroImage: heroUrl("coconut-forest-hoi-an_rp3l1z"),
   gallery: [
     "coconut-forest-hoi-an2_yxbejh",

@@ -18,7 +18,7 @@ export const banGiocWaterfall: Location = {
   entranceFee: "~45,000 VND (bamboo raft to base: ~150,000 VND)",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=22.854409352361497,106.72438321761962",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776187096566!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHl3dE8tSGc.!2m2!1d22.85531941963025!2d106.7225924573171!3f356.95648085912995!4f-65.0427945105836!5f0.7820865974627469", },
   heroImage: heroUrl("ban-gioc-waterfall-cao-bang_jq8ls6"),
   gallery: [
     "ban-gioc-waterfall-cao-bang4_lfiafx",

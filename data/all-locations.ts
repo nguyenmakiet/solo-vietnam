@@ -24,6 +24,7 @@ import { batPagodaSocTrang } from "@/data/locations/bat-pagoda-soc-trang"
 import { bauSau } from "@/data/locations/bau-sau"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
 import { benHaiRiver } from "@/data/locations/ben-hai-river"
+import { benThanhMarket } from "@/data/locations/ben-thanh-market"
 import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
@@ -31,6 +32,7 @@ import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mount
 import { binhSonBeach } from "@/data/locations/binh-son-beach"
 import { buGiaMapNationalPark } from "@/data/locations/bu-gia-map-national-park"
 import { buiHuiGrassland } from "@/data/locations/bui-hui-grassland"
+import { buiVienStreet } from "@/data/locations/bui-vien-street"
 import { bungBinhThienLake } from "@/data/locations/bung-binh-thien-lake"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
 import { caoDaiHolySee } from "@/data/locations/cao-dai-holy-see"
@@ -85,9 +87,12 @@ import { hangMua } from "@/data/locations/hang-mua"
 import { hangPagoda } from "@/data/locations/hang-pagoda"
 import { hangRai } from "@/data/locations/hang-rai"
 import { hanoiStJosephsCathedral } from "@/data/locations/hanoi-st-josephs-cathedral"
+import { hanoiOldQuarter } from "@/data/locations/hanoi-old-quarter"
 import { hanoiTrainStreet } from "@/data/locations/hanoi-train-street"
 import { hmongKingPalace } from "@/data/locations/hmong-king-palace"
+import { hoanKiemLake } from "@/data/locations/hoan-kiem-lake"
 import { hoChiMinhChildhoodHome } from "@/data/locations/ho-chi-minh-childhood-home"
+import { hoChiMinhMausoleumComplex } from "@/data/locations/ho-chi-minh-mausoleum-complex"
 import { hoDynastyCitadel } from "@/data/locations/ho-dynasty-citadel"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
 import { hoaLuAncientCapital } from "@/data/locations/hoa-lu-ancient-capital"
@@ -102,6 +107,7 @@ import { honYenIsland } from "@/data/locations/hon-yen-island"
 import { hospitalCave } from "@/data/locations/hospital-cave"
 import { hungTemple } from "@/data/locations/hung-temple"
 import { imperialCity } from "@/data/locations/imperial-city-hue"
+import { independencePalace } from "@/data/locations/independence-palace"
 import { japaneseBridge } from "@/data/locations/japanese-bridge"
 import { k50Waterfall } from "@/data/locations/k50-waterfall"
 import { keGaLighthouse } from "@/data/locations/ke-ga-lighthouse"
@@ -141,6 +147,7 @@ import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { mySonSanctuary } from "@/data/locations/my-son-sanctuary"
 import { namDuIslands } from "@/data/locations/nam-du-islands"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
+import { ngocSonTemple } from "@/data/locations/ngoc-son-temple"
 import { nhaPhaPrison } from "@/data/locations/nha-pha-prison"
 import { nhanTower } from "@/data/locations/nhan-tower"
 import { nhatBeach } from "@/data/locations/nhat-beach"
@@ -176,6 +183,7 @@ import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { taDungLake } from "@/data/locations/ta-dung-lake"
+import { taHienStreet } from "@/data/locations/ta-hien-street"
 import { taNangPhanDungTrek } from "@/data/locations/ta-nang-phan-dung-trek"
 import { taPaFields } from "@/data/locations/ta-pa-fields"
 import { taPaTemple } from "@/data/locations/ta-pa-temple"
@@ -194,6 +202,7 @@ import { thungNhamBirdPark } from "@/data/locations/thung-nham-bird-park"
 import { tiTopIsland } from "@/data/locations/ti-top-island"
 import { toVoGate } from "@/data/locations/to-vo-gate"
 import { traQueVillage } from "@/data/locations/tra-que-village"
+import { tranQuocPagoda } from "@/data/locations/tran-quoc-pagoda"
 import { traSuCajuputForest } from "@/data/locations/tra-su-cajuput-forest"
 import { trangAn } from "@/data/locations/trang-an"
 import { triAnLake } from "@/data/locations/tri-an-lake"
@@ -239,6 +248,7 @@ export const allLocations: Location[] = [
   bauSau,
   bayMauCoconutForest,
   benHaiRiver,
+  benThanhMarket,
   benTreCoconutVillage,
   bichDongPagoda,
   bidoupNuiBaNationalPark,
@@ -246,6 +256,7 @@ export const allLocations: Location[] = [
   binhSonBeach,
   buGiaMapNationalPark,
   buiHuiGrassland,
+  buiVienStreet,
   bungBinhThienLake,
   caiRangFloatingMarket,
   caoDaiHolySee,
@@ -300,9 +311,12 @@ export const allLocations: Location[] = [
   hangPagoda,
   hangRai,
   hanoiStJosephsCathedral,
+  hanoiOldQuarter,
   hanoiTrainStreet,
   hmongKingPalace,
+  hoanKiemLake,
   hoChiMinhChildhoodHome,
+  hoChiMinhMausoleumComplex,
   hoDynastyCitadel,
   hoQuocPagoda,
   hoaLuAncientCapital,
@@ -317,6 +331,7 @@ export const allLocations: Location[] = [
   hospitalCave,
   hungTemple,
   imperialCity,
+  independencePalace,
   japaneseBridge,
   k50Waterfall,
   keGaLighthouse,
@@ -355,6 +370,7 @@ export const allLocations: Location[] = [
   myKheBeach,
   mySonSanctuary,
   namDuIslands,
+  ngocSonTemple,
   nguomNgaoCave,
   nhaPhaPrison,
   nhanTower,
@@ -391,6 +407,7 @@ export const allLocations: Location[] = [
   sonTraPeninsula,
   sungSotCave,
   taDungLake,
+  taHienStreet,
   taNangPhanDungTrek,
   taPaFields,
   taPaTemple,
@@ -409,6 +426,7 @@ export const allLocations: Location[] = [
   tiTopIsland,
   toVoGate,
   traQueVillage,
+  tranQuocPagoda,
   traSuCajuputForest,
   trangAn,
   triAnLake,

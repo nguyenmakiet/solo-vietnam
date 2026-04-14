@@ -18,7 +18,7 @@ export const baHoWaterfall: Location = {
   entranceFee: "185,000 VND",
   openingHours: "8:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.390044772272377,109.13860165627212",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776184184218!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2NxWm1UcVFF!2m2!1d12.39142773612884!2d109.138912692656!3f181.7685931244947!4f-59.43290277200617!5f0.7820865974627469", },
   heroImage: heroUrl("ba-ho-waterfall-nha-trang_r4z0ha"),
   gallery: [
     "ba-ho-waterfall-nha-trang_r4z0ha",

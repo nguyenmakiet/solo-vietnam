@@ -18,7 +18,7 @@ export const bacSonValley: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.898614655260356,106.33466895888493",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776186029550!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2M4dEdWTHc.!2m2!1d21.90593586099471!2d106.3388869980067!3f318.92409942815124!4f3.679167320796779!5f0.7820865974627469", },
   heroImage: heroUrl("bac-son-valley-lang-son-2_ieic8m"),
     gallery: [
     "bac-son-valley-lang-son-6_yey42h",

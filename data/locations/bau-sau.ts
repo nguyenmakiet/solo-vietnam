@@ -18,7 +18,7 @@ export const bauSau: Location = {
   entranceFee: "Included in Cát Tiên National Park entry (~60,000 VND); guided trek additional",
   openingHours: "Treks depart from park HQ at scheduled times - book in advance",
   mapUrl: "https://www.google.com/maps?q=11.458838033233041,107.34506914941234",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776187372871!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ21zYkctTkE.!2m2!1d11.45910150649027!2d107.3454467349901!3f291.8599261279332!4f6.303131731815583!5f0.7820865974627469", },
   heroImage: heroUrl("bau-sau-nam-cat-tien-dong-nai-10_dtkkhw"),
   gallery: [
     "bau-sau-nam-cat-tien-dong-nai-4_hrvxnj",

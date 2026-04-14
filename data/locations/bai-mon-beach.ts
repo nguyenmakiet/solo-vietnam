@@ -18,7 +18,7 @@ export const baiMonBeach: Location = {
   entranceFee: "~15,000 VND (national park access)",
   openingHours: "5:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.896863628194192,109.45109317905293",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776186451683!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREVoZEhrWmc.!2m2!1d12.89688720326191!2d109.4532609382309!3f334.14716450324715!4f1.5107629389398909!5f0.7820865974627469", },
   heroImage: heroUrl("mon-beach-phu-yen-3_v3exiu"),
   gallery: [
     "mon-beach-phu-yen-2_zxkngw",
