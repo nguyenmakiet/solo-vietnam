@@ -95,6 +95,7 @@ import { hoChiMinhChildhoodHome } from "@/data/locations/ho-chi-minh-childhood-h
 import { hoChiMinhMausoleumComplex } from "@/data/locations/ho-chi-minh-mausoleum-complex"
 import { hoDynastyCitadel } from "@/data/locations/ho-dynasty-citadel"
 import { hoQuocPagoda } from "@/data/locations/ho-quoc-pagoda"
+import { hoaLoPrison } from "@/data/locations/hoa-lo-prison"
 import { hoaLuAncientCapital } from "@/data/locations/hoa-lu-ancient-capital"
 import { hoiAnAncientTown } from "@/data/locations/hoi-an-ancient-town"
 import { honChongRockFormation } from "@/data/locations/hon-chong-rock-formation"
@@ -108,6 +109,7 @@ import { hospitalCave } from "@/data/locations/hospital-cave"
 import { hungTemple } from "@/data/locations/hung-temple"
 import { imperialCity } from "@/data/locations/imperial-city-hue"
 import { independencePalace } from "@/data/locations/independence-palace"
+import { jadeEmperorPagoda } from "@/data/locations/jade-emperor-pagoda"
 import { japaneseBridge } from "@/data/locations/japanese-bridge"
 import { k50Waterfall } from "@/data/locations/k50-waterfall"
 import { keGaLighthouse } from "@/data/locations/ke-ga-lighthouse"
@@ -176,6 +178,7 @@ import { quanBaTwinMountains } from "@/data/locations/quan-ba-twin-mountains"
 import { quangTriAncientCitadel } from "@/data/locations/quang-tri-ancient-citadel"
 import { rachVemFishingVillage } from "@/data/locations/rach-vem-fishing-village"
 import { redSandDunes } from "@/data/locations/red-sand-dunes"
+import { saigonCentralPostOffice } from "@/data/locations/saigon-central-post-office"
 import { saViCape } from "@/data/locations/sa-vi-cape"
 import { saoBeach } from "@/data/locations/sao-beach"
 import { sixSensesBeach } from "@/data/locations/six-senses-beach"
@@ -216,6 +219,8 @@ import { vinpearlCableCar } from "@/data/locations/vinpearl-cable-car"
 import { vinpearlSafari } from "@/data/locations/vinpearl-safari"
 import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
 import { vinhTrungFields } from "@/data/locations/vinh-trung-fields"
+import { warRemnantsMuseum } from "@/data/locations/war-remnants-museum"
+import { westLake } from "@/data/locations/west-lake"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { yTy } from "@/data/locations/y-ty"
 import { yavlyWaterfall } from "@/data/locations/yavly-waterfall"
@@ -319,6 +324,7 @@ export const allLocations: Location[] = [
   hoChiMinhMausoleumComplex,
   hoDynastyCitadel,
   hoQuocPagoda,
+  hoaLoPrison,
   hoaLuAncientCapital,
   hoiAnAncientTown,
   honChongRockFormation,
@@ -332,6 +338,7 @@ export const allLocations: Location[] = [
   hungTemple,
   imperialCity,
   independencePalace,
+  jadeEmperorPagoda,
   japaneseBridge,
   k50Waterfall,
   keGaLighthouse,
@@ -400,6 +407,7 @@ export const allLocations: Location[] = [
   quangTriAncientCitadel,
   rachVemFishingVillage,
   redSandDunes,
+  saigonCentralPostOffice,
   saViCape,
   saoBeach,
   sixSensesBeach,
@@ -440,6 +448,8 @@ export const allLocations: Location[] = [
   vinpearlSafari,
   vinWondersPhuQuoc,
   vinhTrungFields,
+  warRemnantsMuseum,
+  westLake,
   whiteSandDunes,
   yTy,
   yavlyWaterfall,

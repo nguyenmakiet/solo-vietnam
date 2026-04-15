@@ -18,7 +18,7 @@ export const bichDongPagoda: Location = {
   entranceFee: "Free",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2310,105.9530",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776268190258!6m8!1m7!1sCAoSHENJQUJJaERvNHBNajhMc0hxQTkzQVdiRHJwNmY.!2m2!1d20.21746887259208!2d105.9158156109632!3f183.485069034291!4f-63.137559187014894!5f0.7820865974627469", },
   heroImage: heroUrl("bich-dong-pagoda4_vu55wz"),
   gallery: [
     "bich-dong-pagoda2_gnmc6g",

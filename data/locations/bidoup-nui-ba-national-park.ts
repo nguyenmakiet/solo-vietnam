@@ -18,7 +18,7 @@ export const bidoupNuiBaNationalPark: Location = {
   entranceFee: "~50,000 VND park entry; guided treks additional cost",
   openingHours: "7:00 AM – 5:00 PM (park HQ); overnight treks by arrangement",
   mapUrl: "https://www.google.com/maps?q=12.133961464408484,108.53404748226983",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776268259197!6m8!1m7!1sCAoSHENJQUJJaEIxTzQ2UVVldmJXM3I0cGVlRXp5V1k.!2m2!1d12.133678337528!2d108.5335217783802!3f164.76642073624006!4f-16.388041693530766!5f0.7820865974627469", },
   heroImage: heroUrl("bidoup-nui-ba-national-park-lam-dong-3_v1ghyq"),
   gallery: [
     "bidoup-nui-ba-national-park-lam-dong-4_jfgrt0",

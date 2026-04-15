@@ -18,7 +18,7 @@ export const binhLieuBorderMountains: Location = {
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.64893803864023,107.44002584112907",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776268421249!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3hrS2JGbGdF!2m2!1d21.64922796680679!2d107.440639966439!3f291.874301225773!4f-33.50172844228223!5f0.7820865974627469", },
   heroImage: heroUrl("binh-lieu-quang-ninh-2_s8xai8"),
   gallery: [
     "binh-lieu-quang-ninh_eddysb",

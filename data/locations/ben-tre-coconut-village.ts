@@ -18,7 +18,7 @@ export const benTreCoconutVillage: Location = {
   entranceFee: "Free; boat tours: ~150,000–250,000 VND",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.335167589686217,106.36046151034951",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776267167544!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2N4YldPNGdF!2m2!1d10.33669173711096!2d106.3747767399769!3f10.6745206058151!4f-14.184810204433859!5f0.7820865974627469", },
   heroImage: heroUrl("coconut-village-ben-tre2_ud4sbr"),
   gallery: [
     "coconut-village-ben-tre_tpvlhz",

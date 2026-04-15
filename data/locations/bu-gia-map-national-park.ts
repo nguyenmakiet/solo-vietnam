@@ -18,7 +18,7 @@ export const buGiaMapNationalPark: Location = {
   entranceFee: "~60,000 VND park entry; guided treks additional",
   openingHours: "7:00 AM - 5:00 PM (park HQ); overnight treks by arrangement",
   mapUrl: "https://www.google.com/maps?q=12.096260710633082,107.19588006603547",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776268565491!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzgzOXFfd2dF!2m2!1d12.26233099245533!2d107.2084603440872!3f150.9915979593549!4f23.479992150090283!5f0.7820865974627469", },
   heroImage: heroUrl("bu-gia-map-national-park-binh-phuoc-2_spcrcx"),
   gallery: [
     "bu-gia-map-national-park-binh-phuoc-5_d9aiqo",
