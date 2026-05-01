@@ -62,6 +62,7 @@ import { diepSonIsland } from "@/data/locations/diep-son-island"
 import { dinhMountain } from "@/data/locations/dinh-mountain"
 import { docLetBeach } from "@/data/locations/doc-let-beach"
 import { doiNhaiBeach } from "@/data/locations/doi-nhai-beach"
+import { donVillage } from "@/data/locations/don-village"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
 import { dragonBridge } from "@/data/locations/dragon-bridge"
 import { drayNurDraySapWaterfalls } from "@/data/locations/dray-nur-dray-sap-waterfalls"
@@ -89,6 +90,8 @@ import { hangRai } from "@/data/locations/hang-rai"
 import { hanoiStJosephsCathedral } from "@/data/locations/hanoi-st-josephs-cathedral"
 import { hanoiOldQuarter } from "@/data/locations/hanoi-old-quarter"
 import { hanoiTrainStreet } from "@/data/locations/hanoi-train-street"
+import { hieuVillage } from "@/data/locations/hieu-village"
+import { hieuWaterfall } from "@/data/locations/hieu-waterfall"
 import { hmongKingPalace } from "@/data/locations/hmong-king-palace"
 import { hoanKiemLake } from "@/data/locations/hoan-kiem-lake"
 import { hoChiMinhChildhoodHome } from "@/data/locations/ho-chi-minh-childhood-home"
@@ -119,6 +122,8 @@ import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { khauPhaPass } from "@/data/locations/khau-pha-pass"
 import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { khemBeach } from "@/data/locations/khem-beach"
+import { khoMuongCave } from "@/data/locations/kho-muong-cave"
+import { khoMuongVillage } from "@/data/locations/kho-muong-village"
 import { konTumWoodenChurch } from "@/data/locations/kon-tum-wooden-church"
 import { kyCoBeach } from "@/data/locations/ky-co-beach"
 import { laNgauStream } from "@/data/locations/la-ngau-stream"
@@ -291,6 +296,7 @@ export const allLocations: Location[] = [
   dinhMountain,
   docLetBeach,
   doiNhaiBeach,
+  donVillage,
   dongVanOldTown,
   dragonBridge,
   drayNurDraySapWaterfalls,
@@ -318,6 +324,8 @@ export const allLocations: Location[] = [
   hanoiStJosephsCathedral,
   hanoiOldQuarter,
   hanoiTrainStreet,
+  hieuVillage,
+  hieuWaterfall,
   hmongKingPalace,
   hoanKiemLake,
   hoChiMinhChildhoodHome,
@@ -348,6 +356,8 @@ export const allLocations: Location[] = [
   khauPhaPass,
   kheVanWaterfall,
   khemBeach,
+  khoMuongCave,
+  khoMuongVillage,
   konTumWoodenChurch,
   kyCoBeach,
   laNgauStream,

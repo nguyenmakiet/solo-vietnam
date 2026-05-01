@@ -1017,6 +1017,58 @@ export const destinations: Destination[] = [
     lng: 106.6297,
   },
 },
+
+{
+  slug: "pu-luong",
+  name: "Pù Luông",
+  province: "Thanh Hoa",
+  provinceSlug: "thanh-hoa",
+  region: "north",
+
+  description:
+    "Pù Luông is Vietnam's quietest highland reserve - a 17,000-hectare karst landscape in Thanh Hóa, around four hours from Hanoi, where Thai stilt villages sit above stepped rice terraces and the inland scenery rivals Sa Pa without the crowds. The reserve is the standard answer for travellers who want the rice-terrace photography of Mù Cang Chải or Sa Pa with significantly less tourism, and the homestay culture is among the most intact in northern Vietnam.",
+
+  tagline: "Sa Pa scenery, four hours from Hanoi, with a fraction of the crowds",
+
+  heroImage: heroUrl("pu-luong_apr7bu"), // TODO: upload and replace
+
+  highlights: [
+    "Don Village (Bản Đôn) rice bowl",
+    "Hieu Waterfall and Hieu Village",
+    "Kho Muong Village - the remote valley",
+    "Kho Muong Cave",
+    "Thai stilt-house homestays",
+  ],
+
+  thingsToDo: [
+    "Stay in a Thai stilt-house homestay in Don Village or Hieu Village",
+    "Trek between Don, Hieu, and Kho Muong villages with a local guide",
+    "Swim in the tiered pools of Hieu Waterfall",
+    "Visit Kho Muong Cave with a village guide",
+    "Cycle the rice-terrace loop at sunrise when mist sits in the valley",
+  ],
+
+  tags: ["nature", "trekking", "rice-terraces", "village", "photography"],
+
+  gettingThere:
+    "Private car or limousine van from Hanoi (4 - 5 hours via QL6 through Hòa Bình and Mai Châu). Direct sleeper buses run from Mỹ Đình bus station to Phố Đoàn market town, the access hub for the reserve. From Phố Đoàn, homestays arrange the final 5 - 15km transfer to individual villages by xe ôm or 4WD.",
+
+  bestTime:
+    "Late May - early Jun (green rice) and late Sep - early Oct (golden rice harvest) for the terraces. Year-round for trekking and homestay culture. Dec - Feb mornings can be cold at altitude.",
+
+  budgetPerDay: "$25 - $50 USD (homestay with meals included)",
+
+  recommendedStay: "2 - 3 days",
+
+  transport: "Motorbike, walking, or guided trek between villages",
+
+  nearbyDestinations: ["ninh-binh", "ha-noi"],
+
+  coordinates: {
+    lat: 20.42, // TODO: verify exact destination centre
+    lng: 105.07,
+  },
+},
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {
