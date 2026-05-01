@@ -24,6 +24,8 @@ export const aPaChai: Location = {
     "a-pa-chai-dien-bien-4_mieuhy",
     "a-pa-chai-dien-bien_p39kld",
     "a-pa-chai-dien-bien-2_zopyc0",
+    "apachai-dien-bien-5_inakpo",
+    "apachai-dien-bien-6_nm09io",
   ],
   seoDescription:
     "A Pa Chai is Vietnam's westernmost point - a remote peak in Điện Biên province where Vietnam, Laos, and China meet at a tri-border marker, reached by a full-day trek through the forest of Mường Nhé district.",

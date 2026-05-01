@@ -24,6 +24,8 @@ export const oQuyHoPass: Location = {
     "o-quy-ho-lai-chau_tewjbo",
     "o-quy-ho-lai-chau-2_j70lt3",
     "o-quy-ho-lai-chau-5_suroub",
+    "o-quy-ho-lai-chau-4_vl3r3a",
+    "o-quy-ho-lai-chau-3_unuqde",
   ],
   seoDescription:
     "O Quy Ho Pass is Vietnam's longest and highest mountain pass at 2,090m, crossing the Hoàng Liên Son range between Sapa and Lai Chau on a 50km stretch of road that descends through cloud forest, rice terrace valleys, and one of the most dramatic mountain landscapes in Southeast Asia.",
