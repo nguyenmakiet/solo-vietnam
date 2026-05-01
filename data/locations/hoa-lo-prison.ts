@@ -19,8 +19,12 @@ export const hoaLoPrison: Location = {
   openingHours: "8:00 AM – 5:00 PM daily; last entry 4:30 PM",
   mapUrl: "https://www.google.com/maps?q=21.025370023417228,105.8467212199111",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776264121102!6m8!1m7!1susEexTLIyshxiuhGVxLVpw!2m2!1d21.02525347331919!2d105.8466070445072!3f302.17350429350586!4f6.775459368556653!5f0.7820865974627469", },
-  heroImage: undefined,
-  gallery: [],
+  heroImage: heroUrl("hoa-lo-prison-ha-noi_prx3gx"),
+  gallery: [
+    "hoa-lo-prison-ha-noi_prx3gx",
+    "hoa-lo-prison-ha-noi-2_g8usir",
+    "hoa-lo-prison-ha-noi-3_gbv3hu",
+  ],
   seoDescription:
     "Hoa Lo Prison — nicknamed the 'Hanoi Hilton' by American POWs — is a preserved French colonial prison in central Hanoi, used to incarcerate Vietnamese political prisoners before 1954 and American pilots during the Vietnam War. One of Hanoi's most historically significant sites.",
   tips: [

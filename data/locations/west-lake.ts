@@ -25,7 +25,6 @@ export const westLake: Location = {
     "west-lake-ha-noi-2_c2fuop",
     "west-lake-ha-noi-3_jteemw",
     "west-lake-ha-noi-5_qevpxt",
-    "west-lake-ha-noi-5_qevpxt",
   ],
   seoDescription:
     "West Lake is Hanoi's largest lake - a 500-hectare expanse in the Tây Hồ district ringed by upscale cafes, ancient pagodas, seafood restaurants, and a 17km cycling path that offers the most pleasant outdoor escape within the city limits.",

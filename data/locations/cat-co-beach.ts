@@ -19,8 +19,18 @@ export const catCoBeach: Location = {
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=20.71792329725481,107.05221565965415",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775749039491!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRGJ0Zks3dEFF!2m2!1d20.71777663619756!2d107.0527437622591!3f347.2600310614342!4f-34.20659016143223!5f0.7820865974627469", },
-  heroImage: heroUrl("cat-co-beach-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cat-co-3-beach-cat-ba-hai-phong_toradb"),
+  gallery: [
+    "cat-co-3-beach-cat-ba-hai-phong-3_hca9mw",
+    "cat-co-3-beach-cat-ba-hai-phong-2_higrvu",
+    "cat-co-3-beach-cat-ba-hai-phong_toradb",
+    "cat-co-2-beach-cat-ba-hai-phong-2_omyl1t",
+    "cat-co-2-beach-cat-ba-hai-phong_n1lbkg",
+    "cat-co-2-beach-cat-ba-hai-phong-3_q9znd5",
+    "cat-co-1-beach-cat-ba-hai-phong-2_dsmjdx",
+    "cat-co-1-beach-cat-ba-hai-phong_snp7o8",
+    "cat-co-1-beach-cat-ba-hai-phong-3_caa88f",
+  ],
   seoDescription:
     "Cát Cò is a series of three beaches on the southern edge of Cát Bà town - the island's most accessible swimming spots, set against karst peaks with forested cliffs dropping to the sand, 10 minutes walk from the town centre.",
   tips: [

@@ -19,6 +19,7 @@ export const baHonDamIslands: Location = {
   openingHours: "Open daily; boat access dependent on sea conditions",
   mapUrl: "https://www.google.com/maps?q=10.142223284688743,104.49597050771709",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776184408366!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRGhoS21ZNXdF!2m2!1d10.1419950650435!2d104.495977815882!3f90.95409348596851!4f-30.050369934194443!5f1.071032842007126", },
+  heroImage: heroUrl("ba-hon-dam-kien-giang_m8zges"),
   gallery: [
     "ba-hon-dam-kien-giang-7_vll4hr",
     "ba-hon-dam-kien-giang-3_hlivn6",

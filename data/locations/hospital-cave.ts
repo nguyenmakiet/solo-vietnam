@@ -19,8 +19,18 @@ export const hospitalCave: Location = {
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.77004838620462,107.02138423927063",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775813162929!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFoYjc1SHc.!2m2!1d20.76990970226949!2d107.0209777110019!3f124.60093412344892!4f-13.893504602363691!5f0.7820865974627469", },
-  heroImage: heroUrl("hospital-cave-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("hospital-cave-cat-ba-hai-phong_cuzhw0"),
+  gallery: [
+    "hospital-cave-cat-ba-hai-phong-10_oksefe",
+    "hospital-cave-cat-ba-hai-phong-7_mjxgqe",
+    "hospital-cave-cat-ba-hai-phong-8_nzeyad",
+    "hospital-cave-cat-ba-hai-phong-9_jrj9aa",
+    "hospital-cave-cat-ba-hai-phong-2_z5s6ju",
+    "hospital-cave-cat-ba-hai-phong-3_cb4lvn",
+    "hospital-cave-cat-ba-hai-phong-4_vx04nz",
+    "hospital-cave-cat-ba-hai-phong-5_vjs1gb",
+    "hospital-cave-cat-ba-hai-phong-6_wzieji",
+  ],
   seoDescription:
     "Hospital Cave is a three-storey limestone cave complex on Cát Bà Island that served as a secret Viet Cong hospital and military headquarters during the American War - treating up to 150 patients at a time while completely hidden from US aerial surveillance between 1963 and 1975.",
   tips: [

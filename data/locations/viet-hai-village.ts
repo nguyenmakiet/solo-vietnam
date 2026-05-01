@@ -19,8 +19,19 @@ export const vietHaiVillage: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.787857336300597,107.05828009939815",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775894005959!6m8!1m7!1sCAoSHENJQUJJaEFHYnp6Z0lEMjlLV2ZjbFJvQURDb3A.!2m2!1d20.79838586457196!2d107.0433984926106!3f157.31886920957928!4f-21.72186751479387!5f0.7820865974627469", },
-  heroImage: heroUrl("viet-hai-village-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("viet-hai-village-cat-ba-hai-phong_qnz9cd"),
+  gallery: [
+    "viet-hai-village-cat-ba-hai-phong-2_slxsra",
+    "viet-hai-village-cat-ba-hai-phong-6_nk2el6viet-hai-village-cat-ba-hai-phong-6_nk2el6",
+    "viet-hai-village-cat-ba-hai-phong_qnz9cd",
+    "viet-hai-village-cat-ba-hai-phong-3_gyacef",
+    "viet-hai-village-cat-ba-hai-phong-7_qjo10d",
+    "viet-hai-village-cat-ba-hai-phong-8_md7vid",
+    "viet-hai-village-cat-ba-hai-phong-4_ho0jhr",
+    "viet-hai-village-cat-ba-hai-phong-10_mttwbf",
+    "viet-hai-village-cat-ba-hai-phong-9_icskli",
+
+  ],
   seoDescription:
     "Việt Hải is a completely isolated fishing and farming village inside Cát Bà National Park - reachable only by kayak through Lan Hà Bay or by cycling a jungle path through the national park, home to about 50 families who live without road access to the outside world.",
   tips: [

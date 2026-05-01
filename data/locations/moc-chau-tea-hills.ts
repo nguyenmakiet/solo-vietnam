@@ -24,6 +24,11 @@ export const mocChauTeaHills: Location = {
     "moc-chau-tea-hills-son-la_cvtebk",
     "moc-chau-tea-hills-son-la-2_m8br5r",
     "moc-chau-tea-hills-son-la-3_icmhbv",
+    "moc-chau-tea-hills-son-la-4_cmlcbe",
+    "moc-chau-tea-hills-son-la-5_uq2nqg",
+    "moc-chau-tea-hills-son-la-6_hhbdfv",
+    "moc-chau-tea-hills-son-la-7_lui2vr",
+    "moc-chau-tea-hills-son-la-8_fl85dh",
   ],
   seoDescription:
     "The Moc Chau Tea Hills are vast rolling plantations of trimmed green tea bushes covering the highland plateau of Son La province - one of the most photogenic agricultural landscapes in northern Vietnam, especially at dawn when mist fills the valleys between the rows.",

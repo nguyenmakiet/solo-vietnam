@@ -19,8 +19,18 @@ export const trungTrangCave: Location = {
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.788685844969777,106.99832793371839",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775890643791!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V1TnJncndF!2m2!1d20.7888076778452!2d106.9980584220161!3f158.7348441447535!4f7.535811159014898!5f0.7820865974627469", },
-  heroImage: heroUrl("trung-trang-cave-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("trung-trang-cave-cat-ba-hai-phong_g8vezp"),
+  gallery: [
+    "trung-trang-cave-cat-ba-hai-phong-2_wimozo",
+    "trung-trang-cave-cat-ba-hai-phong-3_eke0is",
+    "trung-trang-cave-cat-ba-hai-phong-10_xappqg",
+    "trung-trang-cave-cat-ba-hai-phong-9_ygafwz",
+    "trung-trang-cave-cat-ba-hai-phong-8_m1jic8",
+    "trung-trang-cave-cat-ba-hai-phong-7_lvlazq",
+    "trung-trang-cave-cat-ba-hai-phong-6_oshk9s",
+    "trung-trang-cave-cat-ba-hai-phong-4_ua4bzc",
+    "trung-trang-cave-cat-ba-hai-phong_g8vezp",
+  ],
   seoDescription:
     "Trung Trang Cave is the largest accessible cave on Cát Bà Island - a 300-metre limestone grotto inside the national park with stalactite formations, a bat colony, and a jungle approach through primary forest.",
   tips: [

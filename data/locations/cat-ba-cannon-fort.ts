@@ -19,8 +19,12 @@ export const catBaCannonFort: Location = {
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.72699791562507,107.05415352678563",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1774768522625!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3NuTEdoMUFF!2m2!1d20.72553134415704!2d107.0519851983662!3f239.02503821532432!4f-14.659227288351687!5f0.7820865974627469",},
-  heroImage: heroUrl("cat-ba-cannon-fort-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cannon-fort-cat-ba-hai-phong_pxdryc"),
+  gallery: [
+    "cannon-fort-cat-ba-hai-phong-3_bj9fpm",
+    "cannon-fort-cat-ba-hai-phong-2_u7enme",
+    "cannon-fort-cat-ba-hai-phong_pxdryc",
+  ],
   seoDescription:
     "Cát Bà Cannon Fort is a French and Japanese military installation from the 1940s on the hilltop above Cát Bà town - preserved cannons, bunkers, and tunnels with 360-degree views over Ha Long Bay, Lan Hà Bay, and Cát Bà Island's forested karst interior.",
   tips: [

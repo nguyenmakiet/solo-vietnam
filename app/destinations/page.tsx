@@ -79,7 +79,7 @@ export default function DestinationsPage() {
           </p>
           <h1
             className="text-5xl md:text-6xl font-bold leading-tight mb-4"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             Destinations
           </h1>
@@ -118,7 +118,7 @@ export default function DestinationsPage() {
                 <span className="text-2xl">{REGION_EMOJI[region]}</span>
                 <h2
                   className="text-2xl font-bold text-[#1C1C1A]"
-                  style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+                  style={{ fontFamily: "var(--font-serif)" }}
                 >
                   {REGION_LABELS[region]}
                 </h2>
@@ -162,7 +162,7 @@ export default function DestinationsPage() {
                     <div className="p-4">
                       <h3
                         className="text-lg font-bold text-[#1C1C1A] mb-1 group-hover:text-[#C9A84C] transition-colors"
-                        style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+                        style={{ fontFamily: "var(--font-serif)" }}
                       >
                         {dest.name}
                       </h3>
@@ -219,7 +219,7 @@ export default function DestinationsPage() {
             </p>
             <h2
               className="text-3xl font-bold"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+              style={{ fontFamily: "var(--font-serif)" }}
             >
               Browse all 63 provinces
             </h2>
