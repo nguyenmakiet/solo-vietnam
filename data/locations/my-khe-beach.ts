@@ -5,7 +5,7 @@ export const myKheBeach: Location = {
   slug: "my-khe-beach",
   name: "Mỹ Khê Beach",
   provinces: ["da-nang"],
-  destination: "",
+  destination: "da-nang",
   lat: "16.056869445948998",
   lng: "108.24813952737027",
   address: "Mỹ Khê, Sơn Trà, Đà Nẵng",

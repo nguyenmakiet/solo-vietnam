@@ -19,9 +19,16 @@ export const donVillage: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.442325670852664,105.15306511972044", // TODO: verify with exact coords
   streetView: {},
-  heroImage: heroUrl("don-village-pu-luong_placeholder"), // TODO: upload and replace
+  heroImage: heroUrl("don-village-pu-luong-thanh-hoa_j5nnbg"), // TODO: upload and replace
   gallery: [
-    // TODO: upload gallery images to Cloudinary
+    "don-village-pu-luong-thanh-hoa_j5nnbg",
+    "don-village-pu-luong-thanh-hoa-7_lzsk8v",
+    "don-village-pu-luong-thanh-hoa-6_yx9r41",
+    "don-village-pu-luong-thanh-hoa-5_ntmmek",
+    "don-village-pu-luong-thanh-hoa-4_pn6h24",
+    "don-village-pu-luong-thanh-hoa-3_grymjf",
+    "don-village-pu-luong-thanh-hoa-2_bqxmwk",
+    "don-village-pu-luong-thanh-hoa-8_sqsno6",
   ],
   seoDescription:
     "Don Village (Bản Đôn) is the most popular Thai village in Pù Luông Nature Reserve - a hillside settlement of traditional stilt houses set above a wide bowl of terraced rice fields, and the main base for homestays, retreats, and trekking in the reserve.",

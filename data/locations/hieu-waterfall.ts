@@ -11,7 +11,7 @@ export const hieuWaterfall: Location = {
   address: "Hieu Village, Cổ Lũng, Bá Thước, Thanh Hóa",
   type: "waterfall",
   categories: [],
-  experiences: ["nature", "photography", "swimming", "walking-tour"],
+  experiences: ["photography", "walking-tour"],
   tags: ["💧 Multi-tier Waterfall", "🏊 Swimming Pools", "🌿 Forest Setting", "📸 Photography"],
   bestTime: "May - Oct (full water flow); driest months Feb - Apr have weaker flow",
   bestMonths: [5, 6, 7, 8, 9, 10],
@@ -19,9 +19,17 @@ export const hieuWaterfall: Location = {
   openingHours: "Open 24/7 (best in daylight)",
   mapUrl: "https://www.google.com/maps?q=20.46548088770793,105.2224454532903", // TODO: verify with exact coords
   streetView: {},
-  heroImage: heroUrl("hieu-waterfall-pu-luong_placeholder"), // TODO: upload and replace
+  heroImage: heroUrl("hieu-waterfall_otqemx"),
   gallery: [
-    // TODO: upload gallery images to Cloudinary
+    "hieu-waterfall_otqemx",
+    "hieu-waterfall-8_wqtatq",
+    "hieu-waterfall-2_infv03",
+    "hieu-waterfall-3_uuzy31",
+    "hieu-waterfall-6_gobugq",
+    "hieu-waterfall-7_m598uf",
+    "hieu-waterfall-4_wh6pai",
+    "hieu-waterfall-5_mn9ral",
+    "hieu-waterfall-9_twokxb",
   ],
   seoDescription:
     "Hieu Waterfall (Thác Hiêu) is a multi-tiered waterfall running through Hieu Village in Pù Luông Nature Reserve - around 800m of cascades dropping through forest, bamboo bridges, and Thai rice terraces, with swimming pools at several tiers.",

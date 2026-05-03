@@ -145,17 +145,138 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 - Use `heroUrl("...-placeholder")` with `// TODO: upload and replace` for unconfirmed Cloudinary publicIds
 - Skip the `insights` block until Outscraper data is available
 
+### Typed enum fields (strict - never invent values)
+
+Three fields are typed enums and MUST use values from the source-of-truth files. Do not invent new values like `"viewpoint"`, `"photo-spot"`, or `"swimming"` - they will fail TypeScript and will not work with filtering/theming.
+
+| Field | Source file | Allowed values |
+|-------|-------------|----------------|
+| `type` | `data/location.ts` -> `LocationType` | `beach`, `island`, `bay`, `river`, `lake`, `mountain`, `forest`, `nature`, `waterfall`, `cave`, `attraction`, `cultural`, `town`, `city`, `market`, `temple`, `pagoda`, `tomb`, `citadel`, `heritage`, `history`, `landmark` |
+| `categories` | `data/location.ts` -> `LocationCategory` | `hidden-gem`, `must-see`, `iconic` |
+| `experiences` | `data/experiences.ts` -> `ExperienceValue` | `beach`, `trekking`, `camping`, `caving`, `snorkeling`, `kayaking`, `food`, `culture`, `history`, `photography`, `markets`, `nightlife`, `walking-tour`, `cycling`, `boat-tour`, `cable-car`, `homestay`, `wildlife`, `motorcycling`, `shopping` |
+
+**Common mismatches to avoid:**
+- `"nature"` is a `LocationType`, NOT an `ExperienceValue` - do not put it in `experiences`
+- `"viewpoint"` does not exist in any enum - use `["nature", "landmark"]` for scenic lookouts
+- `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
+- `"swimming"` does not exist as an experience - omit, or use `kayaking`/`snorkeling` if water-based
+
+**Before writing a new location file**, re-read `data/location.ts` and `data/experiences.ts` to confirm the current valid values. The lists above are accurate as of the rule's creation but may evolve.
+
 ---
 
-## Destinations Structure
+## Destinations Architecture
 
-Destinations are mid-tier hubs containing multiple locations.
-Example: Pù Luông (destination) -> Bản Hiêu, Thác Hiêu, Bản Đôn... (locations)
+### Core principle
 
-After adding a new location file:
+**Destination = editorial layer + aggregation layer from locations.**
+**Location files are the source of truth. Destination files are the editorial layer.**
+
+- `bestMonths`, `whatToDo`, and `highlights` are **never hardcoded** in destination files
+- They are **derived at runtime** via `deriveFromLocations()` in `data/destinations/index.ts`
+- Destination files only hardcode editorial content that cannot be derived
+
+### File structure
+
+Each destination lives in its own file:
+
+```
+data/destinations/
+  types.ts          ← Destination type + helper types (do not modify lightly)
+  index.ts          ← Re-exports all destinations + deriveFromLocations()
+  ha-giang-loop.ts
+  sapa.ts
+  cat-ba.ts
+  ...
+```
+
+Do **not** use the old single-file `data/destinations.ts`. It has been replaced.
+
+### Destination type — what to hardcode vs derive
+
+| Field | Where | Notes |
+|-------|-------|-------|
+| `slug`, `name`, `region`, `province`... | Hardcode | Core identity |
+| `description`, `tagline`, `heroImage` | Hardcode | Editorial |
+| `gettingThere: TransportOption[]` | Hardcode | Flexible, not fixed to 3 cities |
+| `itineraries: Itinerary[]` | Hardcode | Editorial — human-ordered stops |
+| `cost: CostRange` | Hardcode | budget / midRange / comfortable |
+| `bestTimeSummary` | Hardcode | Short string for card/hero display |
+| `travelStyle[]` | Hardcode | Classification tags |
+| `bestMonths` | **Derived** | frequency(location.bestMonths[]) >= 30% |
+| `whatToDo` | **Derived** | group(location.experiences[]) via EXPERIENCE_GROUP_CONFIG |
+| `highlights` | **Derived** | top location.insights.highlights[] as Highlight[] |
+| `bestMonthsFallback` | Fallback only | Used when derived result is empty |
+| `whatToDoFallback` | Fallback only | Used when derived result is empty |
+| `highlightsFallback` | Fallback only | Used when derived result is empty |
+
+### deriveFromLocations() logic
+
+```ts
+deriveFromLocations(destinationSlug, allLocations): DerivedDestinationData
+```
+
+- **bestMonths**: months appearing in >= 30% of matching locations, sorted ascending
+- **whatToDo**: experiences grouped via `EXPERIENCE_GROUP_CONFIG`, sorted by `order`
+- **highlights**: `{ locationSlug, text }[]` from `location.insights.highlights[]`, max 10, deduplicated
+- **locationCount**: count of matching locations
+
+### Fallback logic (in UI component, not in deriveFromLocations)
+
+```ts
+const bestMonths = derived.bestMonths.length > 0
+  ? derived.bestMonths
+  : destination.bestMonthsFallback ?? []
+
+const whatToDo = Object.keys(derived.whatToDo).length > 0
+  ? derived.whatToDo
+  : destination.whatToDoFallback ?? {}
+
+const highlights = derived.highlights.length > 0
+  ? derived.highlights
+  : destination.highlightsFallback ?? []
+```
+
+Fallback fields should be removed as location data becomes complete.
+
+### EXPERIENCE_GROUP_CONFIG
+
+Defined in `data/destinations/types.ts`. Controls how `location.experiences[]` maps to UI categories:
+
+| Group | Label | Experiences |
+|-------|-------|-------------|
+| `nature` | Nature & Outdoors | trekking, hiking, waterfall, swimming, kayaking, cycling, snorkeling, diving |
+| `culture` | Culture & History | culture, homestay, photography, history |
+| `activities` | Activities & Adventure | adventure, motorbiking, climbing, surfing, kite-surfing |
+| `chill` | Chill & Relax | cafe, beach, sunset, cruise |
+
+To add a new category or experience mapping, update `EXPERIENCE_GROUP_CONFIG` in `types.ts` only — do not hardcode groupings in components.
+
+### Adding a new destination
+
+1. Create `data/destinations/[slug].ts` — export a named const matching the `Destination` type
+2. Add import and export to `data/destinations/index.ts`
+3. Add to the `destinations[]` array in `index.ts`
+4. Do NOT add to the old `data/destinations.ts`
+
+### After adding a new location file
+
 1. Add import to `data/all-locations.ts` (alphabetical)
 2. Add to the `allLocations` array (alphabetical)
-3. If introducing a new destination, add an entry to `data/destinations.ts`
+3. Set `destination` field on the location to the correct destination slug — this is how `deriveFromLocations()` finds it
+
+---
+
+## AI Workflow for This Project
+
+| Task | Tool |
+|------|------|
+| Research + content synthesis | Claude chat |
+| Schema design + architecture decisions | Claude chat |
+| Draft new destination `.ts` files | Claude chat |
+| Refactor code, update imports, fix TypeScript | Claude in VS Code |
+| Write `deriveFromLocations()` and helpers | Claude in VS Code |
+| File organization, rename, batch local tasks | Cowork |
 
 ---
 

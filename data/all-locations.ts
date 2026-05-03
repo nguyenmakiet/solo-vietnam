@@ -189,6 +189,7 @@ import { saoBeach } from "@/data/locations/sao-beach"
 import { sixSensesBeach } from "@/data/locations/six-senses-beach"
 import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
+import { sShapeRiceTerraces } from "@/data/locations/s-shape-rice-terraces"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { taDungLake } from "@/data/locations/ta-dung-lake"
 import { taHienStreet } from "@/data/locations/ta-hien-street"
@@ -423,6 +424,7 @@ export const allLocations: Location[] = [
   sixSensesBeach,
   sonDoongCave,
   sonTraPeninsula,
+  sShapeRiceTerraces,
   sungSotCave,
   taDungLake,
   taHienStreet,

@@ -1034,9 +1034,10 @@ export const destinations: Destination[] = [
 
   highlights: [
     "Don Village (Bản Đôn) rice bowl",
+    "S-Shape Rice Terraces viewpoint",
     "Hieu Waterfall and Hieu Village",
     "Kho Muong Village - the remote valley",
-    "Kho Muong Cave",
+    "Kho Muong Cave", 
     "Thai stilt-house homestays",
   ],
 

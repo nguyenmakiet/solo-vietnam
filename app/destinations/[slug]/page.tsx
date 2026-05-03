@@ -1,13 +1,13 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { destinations } from "@/data/destinations"
+import { destinations, deriveFromLocations, EXPERIENCE_GROUP_CONFIG } from "@/data/destinations/index"
 import { Location } from "@/data/location"
 import { allLocations } from "@/data/all-locations"
 import "./destination.css"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function getImageSrc(heroImage?: string): string {
-  if (!heroImage || heroImage.includes('placeholder')) return '/images/coming-soon.jpg'
+  if (!heroImage || heroImage.includes("placeholder")) return "/images/coming-soon.jpg"
   return heroImage
 }
 
@@ -25,6 +25,29 @@ function getTypeIcon(type: Location["type"]): string {
     temple: "⛩️", heritage: "🏯",
   }
   return icons[primary] ?? "📍"
+}
+
+function formatSlug(slug: string): string {
+  return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
+}
+
+const TRAVEL_STYLE_LABEL: Record<string, string> = {
+  "solo-friendly": "Solo Friendly",
+  budget: "Budget",
+  luxury: "Luxury",
+  adventure: "Adventure",
+  "hidden-gem": "Hidden Gem",
+  family: "Family",
+  easy: "Easy",
+  challenging: "Challenging",
+}
+
+const VEHICLE_ICON: Record<string, string> = {
+  fly: "✈️",
+  train: "🚂",
+  bus: "🚌",
+  ferry: "⛴️",
+  motorbike: "🏍️",
 }
 
 // ── Metadata ──────────────────────────────────────────────────────────────────
@@ -57,12 +80,26 @@ export default async function DestinationPage({
   const destination = destinations.find((d) => d.slug === slug)
   if (!destination) return notFound()
 
-  // Locations belonging to this destination
   const destinationLocations = allLocations.filter(
     (l) => l.destination === destination.slug
   )
 
-  // Related destinations (same province, different slug)
+  const locationNameMap = Object.fromEntries(allLocations.map((l) => [l.slug, l.name]))
+
+  const derived = deriveFromLocations(destination.slug, allLocations)
+
+  const bestMonths = derived.bestMonths.length > 0
+    ? derived.bestMonths
+    : destination.bestMonthsFallback ?? []
+
+  const whatToDo = Object.keys(derived.whatToDo).length > 0
+    ? derived.whatToDo
+    : destination.whatToDoFallback ?? {}
+
+  const highlights = derived.highlights.length > 0
+    ? derived.highlights
+    : destination.highlightsFallback ?? []
+
   const related = destinations
     .filter((d) => d.provinceSlug === destination.provinceSlug && d.slug !== destination.slug)
     .slice(0, 4)
@@ -98,36 +135,51 @@ export default async function DestinationPage({
 
         {/* Hero */}
         <header className="hero">
-          {destination.heroImage && (
-            <img src={destination.heroImage} alt={destination.name} className="hero-img" />
-          )}
+          <img
+            src={getImageSrc(destination.heroImage)}
+            alt={destination.name}
+            className="hero-img"
+          />
           <div className="hero-overlay" />
           <div className="hero-content">
             <div className="hero-badge">{regionEmoji} {regionLabel} · Solo Travel Guide</div>
             <h1>{destination.name}</h1>
             {destination.tagline && <p className="hero-tagline">{destination.tagline}</p>}
-            {destination.tags && destination.tags.length > 0 && (
-              <div className="hero-tags">
-                {destination.tags.map((tag) => (
-                  <span key={tag} className="hero-tag">{tag}</span>
-                ))}
+
+            {(destination.tags?.length || destination.travelStyle?.length) ? (
+              <div className="hero-labels">
+                {destination.tags && destination.tags.length > 0 && (
+                  <div className="hero-tags">
+                    {destination.tags.map((tag) => (
+                      <span key={tag} className="hero-tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
+                {destination.travelStyle && destination.travelStyle.length > 0 && (
+                  <div className="travel-style-tags">
+                    {destination.travelStyle.map((ts) => (
+                      <span key={ts} className="ts-tag">{TRAVEL_STYLE_LABEL[ts] ?? ts}</span>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
+            ) : null}
+
             <div className="hero-meta">
               <div className="hero-meta-item">
                 <span className="val">{destination.province}</span>
                 <span className="lbl">Province</span>
               </div>
-              {destination.budgetPerDay && (
-                <div className="hero-meta-item">
-                  <span className="val">{destination.budgetPerDay}</span>
-                  <span className="lbl">Budget/day</span>
-                </div>
-              )}
               {destination.recommendedStay && (
                 <div className="hero-meta-item">
                   <span className="val">{destination.recommendedStay}</span>
                   <span className="lbl">Stay</span>
+                </div>
+              )}
+              {destination.cost?.budget && (
+                <div className="hero-meta-item">
+                  <span className="val">{destination.cost.budget}</span>
+                  <span className="lbl">Budget/day</span>
                 </div>
               )}
               {destination.transport && (
@@ -147,8 +199,57 @@ export default async function DestinationPage({
             <p>{destination.description}</p>
           </div>
 
-          {/* Places to Visit - from location data */}
-          <section style={{ marginBottom: 48 }}>
+          {/* Best Months */}
+          {bestMonths.length > 0 && (
+            <section className="dp-section">
+              <p className="section-label">Best Months to Visit</p>
+              <div className="month-pills">
+                {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => (
+                  <span key={m} className={`month-pill${bestMonths.includes(m) ? " active" : ""}`}>
+                    {new Date(2000, m - 1).toLocaleString("en", { month: "short" })}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Highlights */}
+          {highlights.length > 0 && (
+            <section className="dp-section">
+              <p className="section-label">Highlights</p>
+              <div className="highlights-list">
+                {highlights.map((h) => (
+                  <Link key={h.text} href={`/locations/${h.locationSlug}`} className="highlight-pill">
+                    {h.text}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* What To Do */}
+          {Object.keys(whatToDo).length > 0 && (
+            <section className="dp-section">
+              <p className="section-label">What To Do</p>
+              <div className="whatdo-grid">
+                {Object.entries(whatToDo).map(([group, experiences]) => (
+                  <div key={group} className="whatdo-group">
+                    <div className="group-label">
+                      {EXPERIENCE_GROUP_CONFIG[group]?.label ?? group}
+                    </div>
+                    <div className="exp-pills">
+                      {experiences.map((exp) => (
+                        <span key={exp} className="exp-pill">{formatSlug(exp)}</span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Places to Visit */}
+          <section className="dp-section">
             <p className="section-label">
               Places to Visit
               {destinationLocations.length > 0 && ` · ${destinationLocations.length} spots`}
@@ -188,36 +289,126 @@ export default async function DestinationPage({
             )}
           </section>
 
+          {/* Itineraries */}
+          {destination.itineraries && destination.itineraries.length > 0 && (
+            <section className="dp-section">
+              <p className="section-label">Suggested Itineraries</p>
+              <div className="itineraries-stack">
+                {destination.itineraries.map((itin) => (
+                  <div key={itin.duration} className="itinerary-block">
+                    <div className="itinerary-header">
+                      <span className="itin-duration">{itin.duration}</span>
+                      <span className="itin-label">{itin.label}</span>
+                    </div>
+                    <div className="day-list">
+                      {itin.days.map((day) => (
+                        <div key={day.day} className="day-card">
+                          <div className="day-header">
+                            <span className="day-num">Day {day.day}</span>
+                            <span className="day-title">{day.title}</span>
+                            {day.distance && (
+                              <span className="day-distance">{day.distance}</span>
+                            )}
+                          </div>
+                          {day.stops.length > 0 && (
+                            <div className="day-stops">
+                              {day.stops.map((stop) =>
+                                locationNameMap[stop] ? (
+                                  <Link key={stop} href={`/locations/${stop}`} className="stop-tag linked">
+                                    {locationNameMap[stop]}
+                                  </Link>
+                                ) : (
+                                  <span key={stop} className="stop-tag">
+                                    {formatSlug(stop)}
+                                  </span>
+                                )
+                              )}
+                            </div>
+                          )}
+                          {day.notes && <p className="day-notes">{day.notes}</p>}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Getting There */}
+          {destination.gettingThere && destination.gettingThere.length > 0 && (
+            <section className="dp-section">
+              <p className="section-label">Getting There</p>
+              <div className="transport-cards">
+                {destination.gettingThere.map((opt, i) => (
+                  <div key={i} className="transport-card">
+                    <div className="tc-top">
+                      <span className="tc-icon">{VEHICLE_ICON[opt.vehicle] ?? "🚐"}</span>
+                      <div className="tc-core">
+                        <span className="tc-from">{opt.from}</span>
+                        <span className="tc-vehicle">{opt.vehicle}</span>
+                      </div>
+                      <div className="tc-right">
+                        <span className="tc-duration">{opt.duration}</span>
+                        <span className="tc-cost">{opt.cost}</span>
+                      </div>
+                    </div>
+                    {opt.notes && <p className="tc-notes">{opt.notes}</p>}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Budget */}
+          {destination.cost && (
+            <section className="dp-section">
+              <p className="section-label">Budget per Day</p>
+              <div className="cost-grid">
+                <div className="cost-tier">
+                  <div className="ct-label">Budget</div>
+                  <div className="ct-value">{destination.cost.budget}</div>
+                </div>
+                <div className="cost-tier mid">
+                  <div className="ct-label">Mid-range</div>
+                  <div className="ct-value">{destination.cost.midRange}</div>
+                </div>
+                <div className="cost-tier">
+                  <div className="ct-label">Comfortable</div>
+                  <div className="ct-value">{destination.cost.comfortable}</div>
+                </div>
+              </div>
+              {destination.cost.notes && (
+                <p className="cost-notes">{destination.cost.notes}</p>
+              )}
+            </section>
+          )}
+
           {/* Plan Your Trip */}
-          <section style={{ marginBottom: 48 }}>
-            <p className="section-label">Plan Your Trip</p>
-            <div className="info-row">
-              {destination.gettingThere && (
-                <div className="info-card full">
-                  <span className="ic-icon">🚌</span>
-                  <div className="ic-title">Getting There</div>
-                  <div className="ic-body">{destination.gettingThere}</div>
-                </div>
-              )}
-              {destination.bestTime && (
-                <div className="info-card">
-                  <span className="ic-icon">📅</span>
-                  <div className="ic-title">Best Time to Visit</div>
-                  <div className="ic-body">{destination.bestTime}</div>
-                </div>
-              )}
-              {destination.recommendedStay && (
-                <div className="info-card">
-                  <span className="ic-icon">🌙</span>
-                  <div className="ic-title">Recommended Stay</div>
-                  <div className="ic-body">{destination.recommendedStay}</div>
-                </div>
-              )}
-            </div>
-          </section>
+          {(destination.bestTimeSummary || destination.recommendedStay) && (
+            <section className="dp-section">
+              <p className="section-label">Plan Your Trip</p>
+              <div className="info-row">
+                {destination.bestTimeSummary && (
+                  <div className="info-card">
+                    <span className="ic-icon">📅</span>
+                    <div className="ic-title">Best Time to Visit</div>
+                    <div className="ic-body">{destination.bestTimeSummary}</div>
+                  </div>
+                )}
+                {destination.recommendedStay && (
+                  <div className="info-card">
+                    <span className="ic-icon">🌙</span>
+                    <div className="ic-title">Recommended Stay</div>
+                    <div className="ic-body">{destination.recommendedStay}</div>
+                  </div>
+                )}
+              </div>
+            </section>
+          )}
 
           {/* Practical Info */}
-          <section style={{ marginBottom: 48 }}>
+          <section className="dp-section">
             <p className="section-label">Practical Info</p>
             <div className="practical-grid">
               <div className="practical-card safe">
@@ -245,7 +436,7 @@ export default async function DestinationPage({
 
           {/* Related destinations */}
           {related.length > 0 && (
-            <section style={{ marginBottom: 48 }}>
+            <section className="dp-section">
               <p className="section-label">More in {destination.province} Province</p>
               <div className="related-grid">
                 {related.map((d) => (

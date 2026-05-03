@@ -19,9 +19,17 @@ export const khoMuongVillage: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=20.44871826696882,105.15321491096157", // TODO: verify with exact coords
   streetView: {},
-  heroImage: heroUrl("kho-muong-village-pu-luong_placeholder"), // TODO: upload and replace
+  heroImage: heroUrl("kho-muong-village_kgv6ld"), // TODO: upload and replace
   gallery: [
-    // TODO: upload gallery images to Cloudinary
+    "kho-muong-village_kgv6ld",
+    "kho-muong-village-8_klezcb",
+    "kho-muong-village-7_jsqcnj",
+    "kho-muong-village-5_l7c5qg",
+    "kho-muong-village-10_im7fsn",
+    "kho-muong-village-4_dcf7s5",
+    "kho-muong-village-3_zsvoh2",
+    "kho-muong-village-2_umy8gu",
+    "kho-muong-village-6_rpgje2",
   ],
   seoDescription:
     "Kho Muong Village (Bản Kho Mường) is the most remote Thai village inside Pù Luông Nature Reserve - a small settlement at the bottom of a narrow karst valley, accessed by a steep mountain road, with traditional homestays and the entrance to Kho Muong Cave at the valley head.",

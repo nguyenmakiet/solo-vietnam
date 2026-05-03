@@ -11,17 +11,25 @@ export const khoMuongCave: Location = {
   address: "Thành Sơn, Bá Thước, Thanh Hóa",
   type: "cave",
   categories: ["hidden-gem"],
-  experiences: ["nature", "photography", "walking-tour", "wildlife"],
+  experiences: ["photography", "walking-tour", "wildlife"],
   tags: ["🕳️ Karst Cave", "🦇 Bat Colony", "🥾 Guided Tour", "🌿 Reserve Wildlife"],
   bestTime: "Year-round (dry season Nov - Apr is easiest underfoot)",
   bestMonths: [11, 12, 1, 2, 3, 4],
-  entranceFee: "~20,000 - 50,000 VND with guide (collected by village)",
-  openingHours: "Daylight hours, with local guide",
+  entranceFee: "10,000 VND (collected by villager)",
+  openingHours: "Daylight hours",
   mapUrl: "https://maps.google.com/?q=20.48417144014872,105.13857469704293", // TODO: verify with exact coords
   streetView: {},
-  heroImage: heroUrl("kho-muong-cave-pu-luong_placeholder"), // TODO: upload and replace
+  heroImage: heroUrl("kho-muong-cave_ue28wz"), 
   gallery: [
-    // TODO: upload gallery images to Cloudinary
+    "kho-muong-cave_ue28wz",
+    "kho-muong-cave-5_mxoabh",
+    "kho-muong-cave-3_soy2cj",
+    "kho-muong-cave-4_wcbybw",
+    "kho-muong-cave-2_awedkt",
+    "kho-muong-cave-8_r0bw21",
+    "kho-muong-cave-6_ezell3",
+    "kho-muong-cave-9_nwb5dl",
+    "kho-muong-cave-7_qiphcs",
   ],
   seoDescription:
     "Kho Muong Cave (Hang Kho Mường) is a large karst cave at the head of Kho Muong Village inside Pù Luông Nature Reserve - a fossil cave with a wide entrance, a resident bat colony, and a roughly 1km walking section accessed only with a local guide.",

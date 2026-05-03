@@ -5,7 +5,7 @@ export const sonTraPeninsula: Location = {
   slug: "son-tra-peninsula",
   name: "Sơn Trà Peninsula",
   provinces: ["da-nang"],
-  destination: "",
+  destination: "da-nang",
   lat: "16.122257078414076",
   lng: "108.27692670069526",
   address: "Sơn Trà, Đà Nẵng",

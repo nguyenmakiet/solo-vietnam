@@ -19,9 +19,12 @@ export const hieuVillage: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.465207207325047,105.22192270503085", // TODO: verify with exact coords
   streetView: {},
-  heroImage: heroUrl("hieu-village-pu-luong_placeholder"), // TODO: upload and replace
+  heroImage: heroUrl("hieu-village_fan7hp"), // TODO: upload and replace
   gallery: [
-    // TODO: upload gallery images to Cloudinary
+    "hieu-village_fan7hp",
+    "hieu-village-4_bfsbzy",
+    "hieu-village-2_dks4r5",
+    "hieu-village-3_h2icnc",
   ],
   seoDescription:
     "Hieu Village (Bản Hiêu) is a traditional Thai village in Pù Luông Nature Reserve built around a multi-tiered waterfall - a quieter alternative to Don Village, with bamboo bridges, rice terraces stepping down to the stream, and homestays scattered along the water.",
