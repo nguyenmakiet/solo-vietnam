@@ -1,5 +1,4 @@
 import { Location } from "@/data/location"
-
 import { aPaChai } from "@/data/locations/a-pa-chai"
 import { amTienCave } from "@/data/locations/am-tien-cave"
 import { angelEyeMountain } from "@/data/locations/angel-eye-mountain"
@@ -38,6 +37,7 @@ import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market
 import { caoDaiHolySee } from "@/data/locations/cao-dai-holy-see"
 import { canGioBeach } from "@/data/locations/can-gio-beach"
 import { canGioMonkeyIsland } from "@/data/locations/can-gio-monkey-island"
+import { canTiBridge } from "@/data/locations/can-ti-bridge"
 import { capeCaNa } from "@/data/locations/cape-ca-na"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
 import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
@@ -79,6 +79,7 @@ import { frenchVillageBaNa } from "@/data/locations/french-village-ba-na"
 import { giengTienPeak } from "@/data/locations/gieng-tien-peak"
 import { goldenBridge } from "@/data/locations/golden-bridge"
 import { pirateIslands } from "@/data/locations/pirate-islands"
+import { haGiangCity } from "@/data/locations/ha-giang-city"
 import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
 import { hamTienBeach } from "@/data/locations/ham-tien-beach"
@@ -140,7 +141,9 @@ import { macDynastyCitadel } from "@/data/locations/mac-dynasty-citadel"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { mangLangChurch } from "@/data/locations/mang-lang-church"
 import { masaraHill } from "@/data/locations/masara-hill"
+import { mauDueTown } from "@/data/locations/mau-due-town"
 import { mauSonMountain } from "@/data/locations/mau-son-mountain"
+import { meoVacTown } from "@/data/locations/meo-vac-town"
 import { minhDamMountain } from "@/data/locations/minh-dam-mountain"
 import { minhMangTomb } from "@/data/locations/minh-mang-tomb"
 import { mocChauTeaHills } from "@/data/locations/moc-chau-tea-hills"
@@ -231,8 +234,8 @@ import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { yTy } from "@/data/locations/y-ty"
 import { yavlyWaterfall } from "@/data/locations/yavly-waterfall"
 import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
+import { yenMinhTown } from "@/data/locations/yen-minh-town"
 import { yenTuMountain } from "@/data/locations/yen-tu-mountain"
-
 // ── Add new locations here ────────────────────────────────────────────────────
 export const allLocations: Location[] = [
   aPaChai,
@@ -273,6 +276,7 @@ export const allLocations: Location[] = [
   caoDaiHolySee,
   canGioBeach,
   canGioMonkeyIsland,
+  canTiBridge,
   capeCaNa,
   catBaCannonFort,
   catBaNationalPark,
@@ -314,6 +318,7 @@ export const allLocations: Location[] = [
   giengTienPeak,
   goldenBridge,
   pirateIslands,
+  haGiangCity,
   haLongBay,
   hamNinhFishingVillage,
   hamTienBeach,
@@ -375,7 +380,9 @@ export const allLocations: Location[] = [
   maPiLengPass,
   mangLangChurch,
   masaraHill,
+  mauDueTown,
   mauSonMountain,
+  meoVacTown,
   minhDamMountain,
   minhMangTomb,
   mocChauTeaHills,
@@ -466,6 +473,7 @@ export const allLocations: Location[] = [
   yTy,
   yavlyWaterfall,
   yenMinhPineForest,
+  yenMinhTown,
   yenTuMountain,
 ]
 

@@ -48,6 +48,7 @@ export const haGiangLoop: Destination = {
           title: "Ha Giang → Quan Ba Heaven Gate → Yen Minh → Dong Van",
           distance: "~145km",
           stops: [
+            "ha-giang-city",
             "quan-ba-heaven-gate",
             "quan-ba-twin-mountains",
             "yen-minh-pine-forest",
@@ -72,8 +73,11 @@ export const haGiangLoop: Destination = {
           title: "Meo Vac → Du Gia → Ha Giang",
           distance: "~150km",
           stops: [
+            "meo-vac-town",
+            "mau-due-town",
             "du-gia-village",
             "du-gia-waterfall",
+            "ha-giang-city",
           ],
           notes: "Return route along QL34 following the Gam River - less dramatic than the outward route but still beautiful. Du Gia village for lunch. Du Gia Waterfall for a swim if weather allows. Back in Ha Giang by evening.",
         },
@@ -88,9 +92,11 @@ export const haGiangLoop: Destination = {
           title: "Ha Giang → Quan Ba → Yen Minh",
           distance: "~100km",
           stops: [
+            "ha-giang-city",
             "quan-ba-heaven-gate",
             "quan-ba-twin-mountains",
             "yen-minh-pine-forest",
+            "yen-minh-town",
           ],
           notes: "Relaxed first day. Quan Ba Heaven Gate for the first jaw-dropping view. Yen Minh Pine Forest - an unexpected stretch of highland pine that changes the atmosphere completely. Optional: Lung Khuy Cave near Yen Minh.",
         },
@@ -99,6 +105,7 @@ export const haGiangLoop: Destination = {
           title: "Yen Minh → Lung Cu → Dong Van",
           distance: "~80km",
           stops: [
+            "yen-minh-town",
             "tham-ma-pass",
             "hmong-king-palace",
             "lung-cu-flag-tower",
@@ -122,8 +129,11 @@ export const haGiangLoop: Destination = {
           title: "Meo Vac → Du Gia → Ha Giang",
           distance: "~150km",
           stops: [
+            "meo-vac-town",
+            "mau-due-town",
             "du-gia-village",
             "du-gia-waterfall",
+            "ha-giang-city",
           ],
           notes: "Early start. QL34 return route along the Gam River. Du Gia is the most beautiful village on the eastern loop - Tay settlement in a river valley. Du Gia Waterfall for a swim. Back in Ha Giang by late afternoon.",
         },

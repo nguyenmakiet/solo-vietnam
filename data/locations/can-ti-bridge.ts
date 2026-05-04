@@ -1,0 +1,31 @@
+import { Location } from "@/data/location"
+
+export const canTiBridge: Location = {
+  slug: "can-ti-bridge",
+  name: "Can Ti Bridge",
+  status: "unverified",
+  provinces: ["ha-giang"],
+  destination: "ha-giang-loop",
+  lat: "23.0789366",
+  lng: "105.0259277",
+  address: "Can Ti Bridge, Meo Vac District, Ha Giang Province",
+  type: ["landmark"],
+  categories: [],
+  experiences: [],
+  tags: [],
+  bestTime: "",
+  bestMonths: [],
+  entranceFee: "Free",
+  openingHours: "Open 24/7",
+  mapUrl: "https://www.google.com/maps?q=23.0789366,105.0259277",
+  heroImage: "",
+  gallery: [],
+  seoDescription: "Can Ti Bridge - waypoint on the scenic DT181 route between Meo Vac and Du Gia on the Ha Giang Loop.",
+  tips: [],
+  content: {
+    intro: "",
+    howToGetThere: "",
+    whatToExpect: "",
+    travelTips: "",
+  },
+}

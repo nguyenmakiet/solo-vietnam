@@ -1,0 +1,31 @@
+import { Location } from "@/data/location"
+
+export const haGiangCity: Location = {
+  slug: "ha-giang-city",
+  name: "Ha Giang",
+  status: "unverified",
+  provinces: ["ha-giang"],
+  destination: "ha-giang-loop",
+  lat: "22.8233",
+  lng: "104.9836",
+  address: "Ha Giang City, Ha Giang Province",
+  type: ["city"],
+  categories: [],
+  experiences: [],
+  tags: [],
+  bestTime: "",
+  bestMonths: [],
+  entranceFee: "Free",
+  openingHours: "Open 24/7",
+  mapUrl: "https://www.google.com/maps?q=22.8233,104.9836",
+  heroImage: "",
+  gallery: [],
+  seoDescription: "Ha Giang city - the starting point for the Ha Giang Loop.",
+  tips: [],
+  content: {
+    intro: "",
+    howToGetThere: "",
+    whatToExpect: "",
+    travelTips: "",
+  },
+}

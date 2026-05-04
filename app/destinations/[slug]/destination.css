@@ -248,6 +248,50 @@
 .stop-tag.linked:hover { border-color: var(--gold); color: var(--gold); background: #fff8ec; }
 .day-notes { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 
+/* ── Itinerary Map ── */
+.itin-map-tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.itin-map-tab {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 14px;
+  font-size: 12px; color: var(--text-muted); font-weight: 500;
+  cursor: pointer; transition: all 0.18s;
+}
+.itin-map-tab.active { background: var(--dark); color: var(--gold); border-color: var(--dark); }
+.itin-map-tab-duration { font-weight: 700; }
+.itin-map-tab-label { font-size: 11px; color: inherit; opacity: 0.75; }
+.itin-map-legend {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.itin-map-legend-item {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 12px; color: var(--text-muted);
+}
+.itin-map-legend-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+.itin-map-legend-note {
+  margin-left: auto; font-size: 11px; color: var(--text-muted);
+  opacity: 0.7;
+}
+.itin-map-wrap {
+  position: relative; border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--border);
+}
+.itin-map-skeleton {
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(90deg, var(--surface-2) 25%, #f8f5ef 50%, var(--surface-2) 75%);
+  background-size: 200% 100%;
+  animation: itin-shimmer 1.4s ease-in-out infinite;
+}
+@keyframes itin-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.itin-map { height: 400px; width: 100%; }
+@media (max-width: 640px) { .itin-map { height: 280px; } }
+
 /* ── Transport Cards ── */
 .transport-cards { display: flex; flex-direction: column; gap: 10px; }
 .transport-card {

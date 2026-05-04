@@ -1,0 +1,31 @@
+import { Location } from "@/data/location"
+
+export const meoVacTown: Location = {
+  slug: "meo-vac-town",
+  name: "Meo Vac",
+  status: "unverified",
+  provinces: ["ha-giang"],
+  destination: "ha-giang-loop",
+  lat: "23.164112943294743",
+  lng: "105.41033648192551",
+  address: "Meo Vac Town, Ha Giang Province",
+  type: ["town"],
+  categories: [],
+  experiences: [],
+  tags: [],
+  bestTime: "",
+  bestMonths: [],
+  entranceFee: "Free",
+  openingHours: "Open 24/7",
+  mapUrl: "https://www.google.com/maps?q=23.164112943294743,105.41033648192551",
+  heroImage: "",
+  gallery: [],
+  seoDescription: "Meo Vac town - the most remote stop on the Ha Giang Loop, gateway to Ma Pi Leng Pass.",
+  tips: [],
+  content: {
+    intro: "",
+    howToGetThere: "",
+    whatToExpect: "",
+    travelTips: "",
+  },
+}

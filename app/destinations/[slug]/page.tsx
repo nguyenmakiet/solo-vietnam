@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { destinations, deriveFromLocations, EXPERIENCE_GROUP_CONFIG } from "@/data/destinations/index"
 import { Location } from "@/data/location"
 import { allLocations, activeLocations } from "@/data/all-locations"
+import ItineraryMapLoader from "@/components/ItineraryMapLoader"
 import "./destination.css"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -103,6 +104,23 @@ export default async function DestinationPage({
   const related = destinations
     .filter((d) => d.provinceSlug === destination.provinceSlug && d.slug !== destination.slug)
     .slice(0, 4)
+
+  // Build stop data map for itinerary map
+  const stopDataMap: Record<string, { name: string; lat: number; lng: number; status?: string }> = {}
+  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang-loop"])
+  if (MAP_DESTINATIONS.has(destination.slug) && destination.itineraries) {
+    const stopSlugs = new Set(
+      destination.itineraries.flatMap((itin) => itin.days.flatMap((day) => day.stops))
+    )
+    allLocations.forEach((loc) => {
+      if (!stopSlugs.has(loc.slug)) return
+      const lat = typeof loc.lat === "string" ? parseFloat(loc.lat) : loc.lat
+      const lng = typeof loc.lng === "string" ? parseFloat(loc.lng) : loc.lng
+      if (!isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) {
+        stopDataMap[loc.slug] = { name: loc.name, lat, lng, status: loc.status }
+      }
+    })
+  }
 
   const regionLabel =
     destination.region === "north"
@@ -289,6 +307,14 @@ export default async function DestinationPage({
               </div>
             )}
           </section>
+
+          {/* Itinerary Map */}
+          {MAP_DESTINATIONS.has(destination.slug) && destination.itineraries && destination.itineraries.length > 0 && (
+            <section className="dp-section">
+              <p className="section-label">Route Map</p>
+              <ItineraryMapLoader itineraries={destination.itineraries} stopDataMap={stopDataMap} />
+            </section>
+          )}
 
           {/* Itineraries */}
           {destination.itineraries && destination.itineraries.length > 0 && (

@@ -1,0 +1,31 @@
+import { Location } from "@/data/location"
+
+export const mauDueTown: Location = {
+  slug: "mau-due-town",
+  name: "Mau Due",
+  status: "unverified",
+  provinces: ["ha-giang"],
+  destination: "ha-giang-loop",
+  lat: "23.06538511545305",
+  lng: "105.24124425751896",
+  address: "Mau Due, Yen Minh District, Ha Giang Province",
+  type: ["town"],
+  categories: [],
+  experiences: [],
+  tags: [],
+  bestTime: "",
+  bestMonths: [],
+  entranceFee: "Free",
+  openingHours: "Open 24/7",
+  mapUrl: "https://www.google.com/maps?q=23.06538511545305,105.24124425751896",
+  heroImage: "",
+  gallery: [],
+  seoDescription: "Mau Due - waypoint on QL34 between Meo Vac and Du Gia on the Ha Giang Loop.",
+  tips: [],
+  content: {
+    intro: "",
+    howToGetThere: "",
+    whatToExpect: "",
+    travelTips: "",
+  },
+}

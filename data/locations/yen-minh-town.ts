@@ -1,0 +1,31 @@
+import { Location } from "@/data/location"
+
+export const yenMinhTown: Location = {
+  slug: "yen-minh-town",
+  name: "Yen Minh",
+  status: "unverified",
+  provinces: ["ha-giang"],
+  destination: "ha-giang-loop",
+  lat: "23.1167",
+  lng: "105.1500",
+  address: "Yen Minh Town, Ha Giang Province",
+  type: ["town"],
+  categories: [],
+  experiences: [],
+  tags: [],
+  bestTime: "",
+  bestMonths: [],
+  entranceFee: "Free",
+  openingHours: "Open 24/7",
+  mapUrl: "https://www.google.com/maps?q=23.1167,105.1500",
+  heroImage: "",
+  gallery: [],
+  seoDescription: "Yen Minh town - overnight stop on the Ha Giang Loop.",
+  tips: [],
+  content: {
+    intro: "",
+    howToGetThere: "",
+    whatToExpect: "",
+    travelTips: "",
+  },
+}
