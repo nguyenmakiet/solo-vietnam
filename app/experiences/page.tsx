@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { experiences, getExperienceBySlug } from "@/data/experiences"
 import "./experiences.css" 
-import { allLocations } from "@/data/all-locations"
+import { activeLocations } from "@/data/all-locations"
 
 export default function ExperiencesIndexPage() {
   return (
@@ -26,7 +26,7 @@ export default function ExperiencesIndexPage() {
           <p className="section-label">{experiences.length} experience types</p>
           <div className="exp-index-grid">
             {experiences.map((exp) => {
-              const count = allLocations.filter((l) =>
+              const count = activeLocations.filter((l) =>
                 l.experiences.includes(exp.value)
               ).length
               return (

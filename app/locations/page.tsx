@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { allLocations } from "@/data/all-locations"
+import { activeLocations } from "@/data/all-locations"
 import LocationsClient from "./LocationsClient"
 
 interface Props {
@@ -40,7 +40,7 @@ export default async function LocationsPage({ searchParams }: Props) {
 
   return (
     <Suspense>
-      <LocationsClient locations={allLocations} initialProvince={initialProvince} />
+      <LocationsClient locations={activeLocations} initialProvince={initialProvince} />
     </Suspense>
   )
 }

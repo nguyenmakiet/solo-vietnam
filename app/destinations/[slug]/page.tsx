@@ -2,7 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { destinations, deriveFromLocations, EXPERIENCE_GROUP_CONFIG } from "@/data/destinations/index"
 import { Location } from "@/data/location"
-import { allLocations } from "@/data/all-locations"
+import { allLocations, activeLocations } from "@/data/all-locations"
 import "./destination.css"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -60,7 +60,7 @@ export async function generateMetadata({
   const destination = destinations.find((d) => d.slug === slug)
 
   const description = destination
-    ? `${destination.name} travel guide for solo travelers - top things to do, local insights, and practical visiting tips.`
+    ? `${destination.name} travel guide - ${destination.tagline}. Best things to do, itineraries, and practical tips for solo travelers in Vietnam.`
     : "Travel guide for this destination in Vietnam with useful tips for solo travelers."
 
   return {
@@ -80,7 +80,7 @@ export default async function DestinationPage({
   const destination = destinations.find((d) => d.slug === slug)
   if (!destination) return notFound()
 
-  const destinationLocations = allLocations.filter(
+  const destinationLocations = activeLocations.filter(
     (l) => l.destination === destination.slug
   )
 
@@ -270,6 +270,7 @@ export default async function DestinationPage({
                     <div className="location-card-body">
                       <div className="location-card-type">
                         {getTypeIcon(loc.type)} {getTypeLabel(loc.type)}
+                        {loc.status === "seasonal" && <span className="seasonal-badge">Seasonal</span>}
                       </div>
                       <div className="location-card-name">{loc.name}</div>
                       <div className="location-card-desc">{loc.seoDescription}</div>

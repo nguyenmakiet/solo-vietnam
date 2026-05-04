@@ -1,5 +1,5 @@
 import { provinces } from "../../../data/provinces"
-import { allLocations } from "@/data/all-locations"
+import { activeLocations } from "@/data/all-locations"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 
@@ -31,7 +31,7 @@ export default async function ProvincePage({
   const province = provinces.find((p) => p.slug === slug)
   if (!province) return notFound()
 
-  const provinceLocations = allLocations.filter((l) =>
+  const provinceLocations = activeLocations.filter((l) =>
     l.provinces.includes(slug)
   )
 
@@ -338,7 +338,12 @@ export default async function ProvincePage({
                         className="dc-img"
                       />
                       <div className="dc-body">
-                        <div className="dc-name">{icon} {l.name}</div>
+                        <div className="dc-name">
+                          {icon} {l.name}
+                          {l.status === "seasonal" && (
+                            <span style={{ marginLeft: 8, fontSize: 10, fontWeight: 700, letterSpacing: "0.5px", background: "#fdf3dc", color: "#a07020", border: "1px solid #e8c97e", borderRadius: 10, padding: "2px 8px", verticalAlign: "middle" }}>Seasonal</span>
+                          )}
+                        </div>
                         {l.seoDescription && (
                           <div className="dc-desc">
                             {l.seoDescription.slice(0, 80)}{l.seoDescription.length > 80 ? "…" : ""}

@@ -61,6 +61,7 @@ export type LocationCategory = "hidden-gem" | "must-see" | "iconic"
 
 export type Location = {
   slug: string
+  status?: "active" | "closed" | "seasonal" | "unverified"
   name: string
   provinces: string[]
   destination?: string

@@ -2,7 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { experiences, getExperienceBySlug } from "@/data/experiences"
 import { Location } from "@/data/location"
-import { allLocations } from "@/data/all-locations"
+import { activeLocations } from "@/data/all-locations"
 import "../experiences.css"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -64,7 +64,7 @@ export default async function ExperiencePage({
   const experience = getExperienceBySlug(slug)
   if (!experience) return notFound()
 
-  const matchedLocations = allLocations.filter((l) =>
+  const matchedLocations = activeLocations.filter((l) =>
     l.experiences.includes(experience.value)
   )
 
@@ -150,7 +150,7 @@ export default async function ExperiencePage({
             {experiences
               .filter((e) => e.slug !== experience.slug)
               .map((e) => {
-                const count = allLocations.filter((l) =>
+                const count = activeLocations.filter((l) =>
                   l.experiences.includes(e.value)
                 ).length
                 return (

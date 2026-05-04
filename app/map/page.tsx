@@ -2,12 +2,12 @@
 
 import { useEffect, useRef, useState, useCallback } from "react"
 import Link from "next/link"
-import { allLocations } from "@/data/all-locations"
+import { activeLocations } from "@/data/all-locations"
 import { experiences } from "@/data/experiences"
 import { Location } from "@/data/location"
 import "./map.css"
 
-const locationsWithCoords = allLocations.filter((l) => {
+const locationsWithCoords = activeLocations.filter((l) => {
   const la = typeof l.lat === "string" ? parseFloat(l.lat) : l.lat
   const ln = typeof l.lng === "string" ? parseFloat(l.lng) : l.lng
   return !isNaN(la) && !isNaN(ln) && la !== 0 && ln !== 0
