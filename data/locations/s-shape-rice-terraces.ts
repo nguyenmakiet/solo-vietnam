@@ -18,18 +18,17 @@ export const sShapeRiceTerraces: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7 (best in golden hour)",
   mapUrl: "https://www.google.com/maps?q=20.449345402727413,105.15796254177532",
-  streetView: {},
-  heroImage: heroUrl("s-shape-rice-terraces-pu-luong_placeholder"), // TODO: upload and replace
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1778075182436!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFo3dlN6alFF!2m2!1d20.44869546031336!2d105.1589848094706!3f98.00965806451707!4f2.4273496471444957!5f0.7820865974627469", },
+  heroImage: heroUrl("s-shape-rice-terraces_ihcbmp"), // TODO: upload and replace
   gallery: [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    "s-shape-rice-terraces_ihcbmp",
+    "s-shape-rice-terraces-6_wnrxto",
+    "s-shape-rice-terraces-2_hbjyma",
+    "s-shape-rice-terraces-8_prqzko",
+    "s-shape-rice-terraces-5_y86wbt",
+    "s-shape-rice-terraces-7_m1v7so",
+    "s-shape-rice-terraces-4_bfpkvz",
+    "s-shape-rice-terraces-3_gxabfs",
   ],
   seoDescription:
     "The S-Shape Rice Terraces (Cánh đồng lúa hình chữ S) is the most photographed viewpoint in Pù Luông Nature Reserve - a curved sweep of stepped paddies seen from a hillside lookout above Don Village, at its best during the green and golden rice seasons.",

@@ -1,4 +1,4 @@
-import { Destination } from "./types"
+import { Destination, FaqItem } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const catBa: Destination = {
@@ -131,4 +131,51 @@ export const catBa: Destination = {
     lat: 20.7271,
     lng: 107.0469,
   },
+  // ─── FAQ ─────────────────────────────────────────────────
+  faqs: [
+    {
+      question: "Do I need a permit to visit Cát Bà Island or Lan Hạ Bay?",
+      answer: "No special permit is required for foreign visitors to Cát Bà Island or Lan Ha Bay. Both are open to tourists with a standard Vietnamese visa. You will need to pay entrance fees to Cat Ba National Park if you plan to trek inside the park boundaries.",
+    },
+    {
+      question: "How do I get to Cát Bà from Hanoi?",
+      answer: "The most common route is by bus-ferry combo from Hanoi - journey time is approximately 3.5-4 hours total. Buses depart from Hanoi's My Dinh or Gia Lam station, connecting to a ferry at Got pier (Hai Phong) or Dinh Vu, arriving at Cat Ba town. Several operators sell door-to-door tickets for around 150,000-250,000 VND. Alternatively, travel via Hai Phong city and take a local ferry - slower but cheaper. From Halong Bay cruise terminals, speedboat transfers to Cat Ba are also available.",
+    },
+    {
+      question: "How many days do you need on Cát Bà Island?",
+      answer: "Two days / one night is the minimum to see the highlights - enough for a Lan Ha Bay boat tour and a quick explore of Cat Ba town. Three days / two nights is more comfortable, allowing time for national park trekking, kayaking, and a slower pace on the water. If bioluminescence kayaking is on your list, factor in an evening activity on top of your daytime itinerary.",
+    },
+    {
+      question: "What is the best time to visit Cát Bà?",
+      answer: "March-May and September-November are the best windows - warm temperatures, lower humidity, and calmer seas for boat tours and kayaking. May-August is peak season with the warmest water but also the most tourists and occasional tropical storms. December-February is cooler and quieter - boat tours still run but rougher seas can occasionally cause cancellations. Avoid visiting during major Vietnamese holidays (Tet, April 30 - May 1) when the island gets extremely crowded.",
+    },
+    {
+      question: "What is the difference between Lan Hạ Bay and Hạ Long Bay?",
+      answer: "Both bays share the same dramatic karst limestone scenery - thousands of islands rising from emerald green water. The key difference is crowds and administration. Ha Long Bay falls under Quang Ninh province and is one of Vietnam's most visited destinations, with heavy cruise traffic. Lan Ha Bay is administered by Hai Phong province, sits immediately south of Ha Long, and receives significantly fewer visitors. For most independent travelers, Lan Ha Bay offers a comparable - and arguably better - experience with less congestion, lower prices, and more flexibility to explore by kayak. That said, combined tours covering both bays in one trip are widely available from Cat Ba - a practical option if you want to see the full picture without doubling up on logistics.",
+    },
+    {
+      question: "How much does a trip to Cát Bà cost?",
+      answer: "Budget travelers can manage 2 days / 1 night for around $30-50 USD. This covers a basic guesthouse (150,000-300,000 VND/night), simple meals (50,000-100,000 VND/meal), and a day boat tour of Lan Ha Bay (150,000-300,000 VND/person on a group tour). Mid-range travelers opting for better accommodation and a private or small-group kayaking tour should budget $80-150 USD for the same duration. Bioluminescence kayaking tours typically cost 400,000-600,000 VND per person and run in the evening separately from daytime bay tours.",
+    },
+    {
+      question: "Is Cát Bà safe for solo travelers?",
+      answer: "Cat Ba is generally safe and well-suited for solo travel. The island is small, infrastructure for tourists is established, and the main town is easy to navigate on foot or by rented motorbike. Standard precautions apply - use reputable boat tour operators, wear life jackets on water activities, and agree on prices before getting into any vehicle. Solo female travelers report feeling comfortable on the island, though standard Vietnam travel awareness applies in town at night.",
+    },
+    {
+      question: "Should I rent a motorbike on Cát Bà?",
+      answer: "Yes - renting a motorbike is the best way to explore beyond Cat Ba town. The island's interior roads are narrow and scenic, and several viewpoints, beaches, and national park trailheads are not accessible by foot from town. Daily rental rates run around 100,000-150,000 VND for a basic automatic scooter. Roads are paved but can be steep and winding in the national park area. An automatic scooter is sufficient - no need for a manual motorbike unlike mountain routes elsewhere in Vietnam.",
+    },
+    {
+      question: "What can I do on Lan Hạ Bay?",
+      answer: "Lan Ha Bay is best experienced by boat - day tours from Cat Ba town run regularly and typically include kayaking through limestone caves and lagoons, swimming stops, and visits to floating fishing villages. Beyond standard day tours, Lan Ha Bay is one of the few places in northern Vietnam where bioluminescence kayaking is reliably reported - paddle after dark and the water glows blue-green around your kayak, caused by bioluminescent plankton (the same phenomenon local tour operators market as \"plankton kayaking\" or \"plankton tour\"). Rock climbing on the karst formations is also popular - several operators in Cat Ba town offer guided half-day and full-day climbing sessions.",
+    },
+    {
+      question: "Should I do an overnight cruise on Lan Hạ Bay?",
+      answer: "An overnight cruise is worth considering if you have the budget and want a more immersive experience on the water. Sleeping on the bay means you catch sunrise over the karst islands before day-trippers arrive - the early morning light and quieter atmosphere are noticeably different from a standard day tour. Most overnight cruises from Cat Ba cover Lan Ha Bay and range from budget wooden boats (~$50-80 USD/person) to mid-range vessels with en-suite cabins (~$120-200 USD/person). Itineraries typically include kayaking, cave visits, swimming, and all meals on board. If budget is a constraint, a day tour plus a plankton kayaking tour in the evening (bioluminescence kayaking) covers most of the highlights at a fraction of the cost.",
+    },
+    {
+      question: "Do I need to book boat tours in advance?",
+      answer: "During peak season (May-August) and on weekends year-round, booking 1-2 days ahead is recommended - especially for small-group or private kayaking tours. Bioluminescence tours have limited capacity and sell out faster than standard day tours. Off-peak, same-day booking is generally possible by walking along the waterfront in Cat Ba town where operators have open desks. That said, booking ahead always guarantees better operator selection rather than defaulting to whoever has availability.",
+    },
+  ] satisfies FaqItem[],
 }

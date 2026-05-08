@@ -21,6 +21,9 @@
 // Xóa dần fallback khi locations đã fill đầy đủ.
 // ============================================================
 
+import type { FaqItem } from "@/components/FaqAccordion"
+export type { FaqItem }
+
 export type Region = "north" | "central" | "south"
 
 export type TravelStyle =
@@ -138,6 +141,7 @@ export type Destination = {
   recommendedStay?: string
   transport?: string
   nearbyDestinations?: string[]
+  faqs?: FaqItem[]
 
   coordinates?: {
     lat: number

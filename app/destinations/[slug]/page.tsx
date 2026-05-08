@@ -4,6 +4,7 @@ import { destinations, deriveFromLocations, EXPERIENCE_GROUP_CONFIG } from "@/da
 import { Location } from "@/data/location"
 import { allLocations, activeLocations } from "@/data/all-locations"
 import ItineraryMapLoader from "@/components/ItineraryMapLoader"
+import FaqAccordion from "@/components/FaqAccordion"
 import "./destination.css"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -433,9 +434,8 @@ export default async function DestinationPage({
               </div>
             </section>
           )}
-
           {/* Practical Info */}
-          <section className="dp-section">
+          {/*<section className="dp-section">
             <p className="section-label">Practical Info</p>
             <div className="practical-grid">
               <div className="practical-card safe">
@@ -459,8 +459,7 @@ export default async function DestinationPage({
                 <div className="card-body">Police: <strong>113</strong> · Ambulance: <strong>115</strong> · Fire: <strong>114</strong></div>
               </div>
             </div>
-          </section>
-
+          </section>*/}
           {/* Related destinations */}
           {related.length > 0 && (
             <section className="dp-section">
@@ -477,6 +476,11 @@ export default async function DestinationPage({
                 ))}
               </div>
             </section>
+          )}
+
+          {/* FAQ */}
+          {destination.faqs && destination.faqs.length > 0 && (
+            <FaqAccordion faqs={destination.faqs} />
           )}
 
           {/* Region CTA */}

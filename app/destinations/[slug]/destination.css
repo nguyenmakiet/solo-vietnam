@@ -366,6 +366,23 @@
 .related-card .rc-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
 .related-card .rc-arrow { color: var(--gold); font-size: 16px; }
 
+/* ── FAQ Accordion ── */
+.faq-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item { border-bottom: 1px solid var(--border); background: #fff; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item.open { background: #fffdf7; }
+.faq-question {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 18px 20px; text-align: left; background: none; border: none; cursor: pointer;
+  font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.45;
+  transition: color 0.15s;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-item.open .faq-question { color: var(--gold); }
+.faq-chevron { flex-shrink: 0; font-size: 18px; font-weight: 400; color: var(--gold); line-height: 1; }
+.faq-answer { padding: 0 20px 18px; }
+.faq-answer p { font-size: 13px; color: var(--text-muted); line-height: 1.75; }
+
 /* ── Region CTA ── */
 .region-cta {
   background: var(--dark); border-radius: 12px; padding: 28px 24px;

@@ -1,4 +1,4 @@
-import { Destination } from "./types"
+import { Destination, FaqItem } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const haGiangLoop: Destination = {
@@ -163,4 +163,48 @@ export const haGiangLoop: Destination = {
     lat: 23.1167,
     lng: 105.05,
   },
+
+  // ─── FAQ ─────────────────────────────────────────────────
+  faqs: [
+    {
+      question: "Do I need a special permit for the Ha Giang Loop?",
+      answer: "Yes - and it's easier to get than you'd think. The loop passes through border districts that legally require a foreign visitor permit (\"Giay phep vao khu vuc bien gioi\"). Enforcement is random, but skipping it isn't worth the risk: police checkpoints can turn you around mid-route, and some guesthouses won't check you in without one. Get it through your hotel in Ha Giang City the day before you ride - costs around 200,000-250,000 VND and takes 20 minutes.",
+    },
+    {
+      question: "How do I get to Ha Giang from Hanoi?",
+      answer: "The most common option is a sleeper bus from Hanoi's My Dinh bus station - journey time is approximately 5-6 hours, with tickets around 200,000-250,000 VND. Several operators run daily departures, arriving in Ha Giang City in the morning ready to start the loop. Book in advance during peak season (October-November). Driving by motorbike from Hanoi is possible but adds 320km before the loop even begins - only worth considering if you're on a longer northern Vietnam trip.",
+    },
+    {
+      question: "How many days do you need for the Ha Giang Loop?",
+      answer: "Most travelers do the loop in 4 days / 3 nights, which gives enough time to ride comfortably without rushing through the highlights. If you want flexibility to explore side roads or rest on tough days, 5 days / 4 nights is the better option. Doing it in 2 nights is possible but not recommended - long daily distances on mountain roads means fatigue sets in fast, and that's when accidents happen.",
+    },
+    {
+      question: "What is the best time to visit Ha Giang?",
+      answer: "October-November is peak season when buckwheat flowers (tam giac mach) bloom across the Dong Van Karst Plateau - deep pink fields against limestone mountains. January-February brings yellow rapeseed flowers with fewer crowds. March-May offers good weather and manageable visitor numbers. Rainy season runs June-September. Roads are harder but landscapes are dramatically green with far fewer tourists.",
+    },
+    {
+      question: "How much does the Ha Giang Loop cost?",
+      answer: "Budget travelers can complete 4 days for around $50-80 USD, excluding transport from Hanoi. This covers motorbike rental (150,000-250,000 VND/day), basic homestay accommodation (100,000-200,000 VND/night), simple meals, and fuel. Hiring an Easy Rider guide adds 500,000-800,000 VND per day but includes navigation, local knowledge, and safety support - worth considering for solo travelers or those new to mountain riding.",
+    },
+    {
+      question: "Is the Ha Giang Loop safe?",
+      answer: "The loop is completed safely by thousands of riders every year, but it demands respect. Roads are narrow, steep, and unguarded in places - conditions change quickly in rain or fog. The primary risks are riding-related: inexperience, poor bike condition, and bad weather judgment rather than personal security. Honest self-assessment of your riding ability before deciding to self-ride is the single most important safety decision you'll make.",
+    },
+    {
+      question: "Should I self-ride or hire an Easy Rider?",
+      answer: "Self-riding gives full freedom and costs less, but requires solid manual motorbike experience. Ha Giang is not the place to learn - steep passes, loose gravel, and blind corners demand confidence on a manual gearbox. Hiring an Easy Rider costs more but provides local knowledge, navigation, and emergency support. A popular middle option: self-ride with a guide leading on a separate bike, giving independence with a safety net.",
+    },
+    {
+      question: "Do I need an International Driving Permit (IDP)?",
+      answer: "Yes - but the type matters. Vietnam only recognizes IDPs issued under the 1968 Vienna Convention, combined with your original home country license. Ha Giang has strict checkpoint enforcement. US, Australian, and Canadian travelers: your country issues IDPs under the 1949 Geneva Convention, which is not valid in Vietnam. Police will treat it as no license at all. Check whether your country has signed the 1968 convention before assuming your IDP works - and get the right one before leaving home, as it cannot be obtained in Vietnam.",
+    },
+    {
+      question: "Can you do the Ha Giang Loop during rainy season?",
+      answer: "Yes, but with adjusted expectations. Rainy season (roughly May-September) brings daily afternoon showers, slippery roads, reduced visibility, and occasional landslides blocking routes. The upside: dramatically green landscapes, full waterfalls, and far fewer tourists. If riding during rainy season, start each day early to beat afternoon rain, carry a quality rain poncho, and build flexibility into your schedule for weather delays.",
+    },
+    {
+      question: "Do I need to book accommodation in advance?",
+      answer: "During peak flower seasons (October-November and January-February), book at least 3-5 days ahead - especially in Dong Van and Meo Vac where options are limited. Popular homestays fill weeks in advance during buckwheat season. Off-peak, walk-in is generally fine on weekdays. Easy Rider guides should be booked in advance year-round as quality guides fill their calendars quickly.",
+    },
+  ] satisfies FaqItem[],
 }
