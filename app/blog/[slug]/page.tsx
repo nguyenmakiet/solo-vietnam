@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc"
 import { getPostBySlug, extractToc } from "@/lib/blog"
 import BlogToc from "./BlogToc"
 import CloudImage from "@/components/CloudImage"
+import CloudVideo from "@/components/CloudVideo"
 import "../blog.css"
 import remarkGfm from "remark-gfm"
 
@@ -48,6 +49,7 @@ const components = {
     </div>
   ),
   CloudImage,
+  CloudVideo,
   h2: ({ children }: { children: React.ReactNode }) => {
     const text = typeof children === "string" ? children : ""
     const id = slugify(text)
