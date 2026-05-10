@@ -15,7 +15,7 @@ export const muiDien: Location = {
   tags: ["🏮 Lighthouse", "🌅 First Sunrise", "🌊 Easternmost Cape", "📸 Photography"],
   bestTime: "Jan – Aug (clear skies, dry season)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "~15,000 VND",
+  entranceFee: "~20,000 VND",
   openingHours: "5:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.895123856614404,109.45894759200604",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775830283629!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3VodlBaV1E.!2m2!1d12.89680002751582!2d109.4623117428314!3f18.214798387898306!4f-39.919217154755394!5f0.7820865974627469", },
