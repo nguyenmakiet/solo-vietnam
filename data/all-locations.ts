@@ -207,6 +207,7 @@ import { tamCoc } from "@/data/locations/tam-coc"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
 import { thuongPhuocBorderGate } from "@/data/locations/thuong-phuoc-border-gate"
 import { thangHenLake } from "@/data/locations/thang-hen-lake"
+import { thienCungCave } from "@/data/locations/thien-cung-cave"
 import { thienMuPagoda } from "@/data/locations/thien-mu-pagoda"
 import { thoiLoiMountain } from "@/data/locations/thoi-loi-mountain"
 import { thungKhePass } from "@/data/locations/thung-khe-pass"
@@ -224,6 +225,7 @@ import { tuDucTomb } from "@/data/locations/tu-duc-tomb"
 import { tuyenLamLake } from "@/data/locations/tuyen-lam-lake"
 import { vanLongNatureReserve } from "@/data/locations/van-long-nature-reserve"
 import { vietHaiVillage } from "@/data/locations/viet-hai-village"
+import { vietnamMilitaryHistoryMuseum } from "@/data/locations/vietnam-military-history-museum"
 import { vinpearlCableCar } from "@/data/locations/vinpearl-cable-car"
 import { vinpearlSafari } from "@/data/locations/vinpearl-safari"
 import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
@@ -446,6 +448,7 @@ export const allLocations: Location[] = [
   thamMaPass,
   thuongPhuocBorderGate,
   thangHenLake,
+  thienCungCave,
   thienMuPagoda,
   thoiLoiMountain,
   thungKhePass,
@@ -463,6 +466,7 @@ export const allLocations: Location[] = [
   tuyenLamLake,
   vanLongNatureReserve,
   vietHaiVillage,
+  vietnamMilitaryHistoryMuseum,
   vinpearlCableCar,
   vinpearlSafari,
   vinWondersPhuQuoc,

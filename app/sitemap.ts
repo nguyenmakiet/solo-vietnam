@@ -3,8 +3,31 @@ import { provinces } from "@/data/provinces"
 import { allLocations } from "@/data/all-locations"
 import { experiences } from "@/data/experiences"
 // import { destinations } from "@/data/destinations" // bỏ comment khi destinations layer xong
+import fs from "fs"
+import path from "path"
+import matter from "gray-matter"
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.soloinvietnam.com"
+const BASE_URL = "https://www.soloinvietnam.com"
+
+function getBlogEntries(): MetadataRoute.Sitemap {
+  const blogDir = path.join(process.cwd(), "content/blog")
+  if (!fs.existsSync(blogDir)) return []
+
+  return fs
+    .readdirSync(blogDir)
+    .filter((file) => file.endsWith(".mdx"))
+    .map((file) => {
+      const slug = file.replace(/\.mdx$/, "")
+      const raw = fs.readFileSync(path.join(blogDir, file), "utf-8")
+      const { data } = matter(raw)
+      return {
+        url: `${BASE_URL}/blog/${slug}`,
+        lastModified: data.date ? new Date(data.date) : new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      }
+    })
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -56,6 +79,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    {
+      url: `${BASE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    // Placeholder - uncomment when /events route is live
+    // {
+    //   url: `${BASE_URL}/events`,
+    //   lastModified: new Date(),
+    //   changeFrequency: "daily",
+    //   priority: 0.85,
+    // },
   ]
 
   const provincePages: MetadataRoute.Sitemap = provinces.map((p) => ({
@@ -92,11 +128,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   //   priority: 0.8,
   // }))
 
+  const blogPages = getBlogEntries()
+
   return [
     ...staticPages,
     ...provincePages,
     ...locationPages,
     ...experiencePages,
+    ...blogPages,
     // ...destinationPages,
   ]
 }

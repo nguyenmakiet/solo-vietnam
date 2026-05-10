@@ -21,6 +21,7 @@ export type LocationType =
   | "heritage"
   | "history"
   | "landmark"
+  | "museum"
 
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
@@ -55,6 +56,7 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         citadel: "purple",
         history: "amber",
         landmark: "purple",
+        museum: "amber"
       }
 
 export type LocationCategory = "hidden-gem" | "must-see" | "iconic"

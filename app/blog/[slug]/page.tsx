@@ -23,6 +23,7 @@ const slugify = (text: string) =>
     .toLowerCase()
     .replace(/[^\w\s-]/g, "")
     .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
 // MDX custom components
 const components = {
   // Warning box: <Warning>text</Warning>
