@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
-import { getPostBySlug, extractToc } from "@/lib/blog"
+import { getPostBySlug, extractToc, getAllPosts } from "@/lib/blog"
 import BlogToc from "./BlogToc"
 import CloudImage from "@/components/CloudImage"
 import CloudVideo from "@/components/CloudVideo"
@@ -105,6 +105,10 @@ export async function generateMetadata({
     openGraph: { description },
     alternates: { canonical: `https://www.soloinvietnam.com/blog/${slug}` },
   }
+}
+
+export async function generateStaticParams() {
+  return getAllPosts().map((p) => ({ slug: p.slug }))
 }
 
 export default async function BlogDetailPage({

@@ -33,7 +33,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 16px;
+}
+
+/* Right group: nav links + search icon flush to the right */
+.site-header-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* ── LOGO ── */
@@ -63,6 +70,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  margin-right: 8px;
 }
 
 .site-nav-link {
@@ -86,6 +94,33 @@
 .site-nav-link.active {
   color: var(--gold);
   background: rgba(200, 169, 110, 0.1);
+}
+
+/* ── SEARCH BUTTON ── */
+.site-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: rgba(200, 169, 110, 0.12);
+  border: 1px solid rgba(200, 169, 110, 0.35);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.site-search-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.site-search-btn:hover {
+  background: rgba(200, 169, 110, 0.22);
+  border-color: rgba(200, 169, 110, 0.6);
+  color: var(--gold-light);
 }
 
 /* ── HAMBURGER ── */
@@ -228,6 +263,11 @@
 @media (max-width: 768px) {
   .site-nav {
     display: none;
+  }
+
+  /* Keep right group visible so search button shows on mobile */
+  .site-header-right {
+    gap: 0;
   }
 
   .site-hamburger {

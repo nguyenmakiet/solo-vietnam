@@ -52,6 +52,11 @@ const VEHICLE_ICON: Record<string, string> = {
   motorbike: "🏍️",
 }
 
+// ── Static params ─────────────────────────────────────────────────────────────
+export async function generateStaticParams() {
+  return destinations.map((d) => ({ slug: d.slug }))
+}
+
 // ── Metadata ──────────────────────────────────────────────────────────────────
 export async function generateMetadata({
   params,

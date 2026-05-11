@@ -20,6 +20,10 @@ function toDecimal(val: number | string): number {
   return dir === "S" || dir === "W" ? -decimal : decimal
 }
 
+export async function generateStaticParams() {
+  return allLocations.map((l) => ({ slug: l.slug }))
+}
+
 export async function generateMetadata({
   params,
 }: {

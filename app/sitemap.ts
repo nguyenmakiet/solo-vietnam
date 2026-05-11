@@ -2,7 +2,7 @@ import { MetadataRoute } from "next"
 import { provinces } from "@/data/provinces"
 import { allLocations } from "@/data/all-locations"
 import { experiences } from "@/data/experiences"
-// import { destinations } from "@/data/destinations" // bỏ comment khi destinations layer xong
+import { destinations } from "@/data/destinations"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
@@ -67,12 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    // {
-    //   url: `${BASE_URL}/destinations`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "monthly",
-    //   priority: 0.85,
-    // },
+    {
+      url: `${BASE_URL}/destinations`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
     {
       url: `${BASE_URL}/map`,
       lastModified: new Date(),
@@ -119,14 +119,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // const destinationPages: MetadataRoute.Sitemap = destinations.map((d) => ({
-  //   url: `${BASE_URL}/destinations/${d.slug}`,
-  //   lastModified: (d as any).updatedAt
-  //     ? new Date((d as any).updatedAt)
-  //     : new Date(),
-  //   changeFrequency: "monthly" as const,
-  //   priority: 0.8,
-  // }))
+  const destinationPages: MetadataRoute.Sitemap = destinations.map((d) => ({
+    url: `${BASE_URL}/destinations/${d.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+  }))
 
   const blogPages = getBlogEntries()
 
@@ -135,7 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...provincePages,
     ...locationPages,
     ...experiencePages,
+    ...destinationPages,
     ...blogPages,
-    // ...destinationPages,
   ]
 }

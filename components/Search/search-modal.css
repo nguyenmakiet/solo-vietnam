@@ -1,0 +1,280 @@
+/* ============================================================
+   search-modal.css — soloinvietnam.com
+   ============================================================ */
+
+/* ── Backdrop ──────────────────────────────────────────────── */
+.sm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 72px 16px 16px;
+  backdrop-filter: blur(3px);
+  animation: sm-fade-in 0.12s ease;
+}
+
+@keyframes sm-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Modal container ───────────────────────────────────────── */
+.sm-modal {
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff;
+  border: 1px solid #e5e0d8;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  animation: sm-slide-in 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes sm-slide-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)   scale(1); }
+}
+
+/* ── Input row ─────────────────────────────────────────────── */
+.sm-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #ede8e0;
+  flex-shrink: 0;
+}
+
+.sm-input-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #a89880;
+}
+
+.sm-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1a1209;
+  caret-color: #c8a96e;
+  min-width: 0;
+}
+
+.sm-input::placeholder {
+  color: #b0a090;
+}
+
+.sm-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: 1px solid #e0d8cc;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #7a6a52;
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  padding: 0;
+}
+
+.sm-close-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.sm-close-btn:hover {
+  background: #f5ede0;
+  border-color: #c8a96e;
+  color: #1a1209;
+}
+
+/* ── Body ──────────────────────────────────────────────────── */
+.sm-body {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 80px;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd8cf transparent;
+}
+
+.sm-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sm-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sm-body::-webkit-scrollbar-thumb {
+  background: #ddd8cf;
+  border-radius: 2px;
+}
+
+/* ── Empty state ───────────────────────────────────────────── */
+.sm-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 36px 20px;
+  color: #9e8e7a;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sm-empty strong {
+  color: #1a1209;
+}
+
+.sm-empty-icon {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.sm-empty-hint {
+  font-size: 12px;
+  color: #c0b4a4;
+  margin-top: 2px;
+}
+
+/* ── Results list ──────────────────────────────────────────── */
+.sm-results {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.sm-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: background 0.1s;
+  outline: none;
+}
+
+.sm-result:hover,
+.sm-result.selected {
+  background: #faf5ec;
+}
+
+.sm-result.selected .sm-result-name {
+  color: #1a1209;
+}
+
+/* ── Thumbnail ─────────────────────────────────────────────── */
+.sm-thumb {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #f0ebe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm-thumb-fallback {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* ── Result text ───────────────────────────────────────────── */
+.sm-result-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.sm-result-name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1209;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sm-result-meta {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #9e8e7a;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+/* ── Type badge ────────────────────────────────────────────── */
+.sm-badge {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.sm-badge--location {
+  background: #e6f7ed;
+  color: #1a7a3f;
+}
+
+.sm-badge--destination {
+  background: #fdf3e0;
+  color: #9a6f1e;
+}
+
+.sm-badge--province {
+  background: #ede9ff;
+  color: #5b4fcf;
+}
+
+.sm-badge--blog {
+  background: #fde8ec;
+  color: #b5213a;
+}
+
+/* ── Mobile ────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .sm-backdrop {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .sm-modal {
+    border-radius: 0 0 12px 12px;
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    max-height: 80vh;
+  }
+}

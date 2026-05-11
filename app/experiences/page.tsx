@@ -1,7 +1,18 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { experiences, getExperienceBySlug } from "@/data/experiences"
-import "./experiences.css" 
+import "./experiences.css"
 import { activeLocations } from "@/data/all-locations"
+
+export const metadata: Metadata = {
+  title: "Experiences in Vietnam | Solo in Vietnam",
+  description: "Browse travel experiences across Vietnam - trekking, beaches, caves, food tours, homestays, boat trips, and more. Find locations by what you want to do.",
+  alternates: { canonical: "https://www.soloinvietnam.com/experiences" },
+  openGraph: {
+    title: "Experiences in Vietnam | Solo in Vietnam",
+    description: "Browse travel experiences across Vietnam - trekking, beaches, caves, food tours, homestays, boat trips, and more. Find locations by what you want to do.",
+  },
+}
 
 export default function ExperiencesIndexPage() {
   return (

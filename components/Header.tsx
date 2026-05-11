@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import "./header.css"
+import SearchModal from "./Search/SearchModal"
 
 const NAV_LINKS = [
   { href: "/provinces", label: "Provinces" },
@@ -15,6 +16,7 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
 
@@ -22,6 +24,18 @@ export default function Header() {
     const handler = () => setScrolled(window.scrollY > 20)
     window.addEventListener("scroll", handler)
     return () => window.removeEventListener("scroll", handler)
+  }, [])
+
+  // Global Cmd+K / Ctrl+K shortcut
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault()
+        setSearchOpen((v) => !v)
+      }
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
   }, [])
 
   // Close menu on route change
@@ -45,20 +59,33 @@ export default function Header() {
             Solo<em>InVietnam</em>
           </Link>
 
-          {/* Desktop nav */}
-          <nav className="site-nav">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`site-nav-link ${pathname.startsWith(link.href) ? "active" : ""}`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+          {/* Right group: nav + search (desktop only) */}
+          <div className="site-header-right">
+            <nav className="site-nav">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`site-nav-link ${pathname.startsWith(link.href) ? "active" : ""}`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
 
-          {/* Hamburger */}
+            <button
+              className="site-search-btn"
+              onClick={() => setSearchOpen(true)}
+              aria-label="Search (Ctrl+K)"
+            >
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" strokeWidth="1.6" />
+                <path d="M13 13l3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Hamburger (mobile only) */}
           <button
             className={`site-hamburger ${menuOpen ? "open" : ""}`}
             onClick={() => setMenuOpen((v) => !v)}
@@ -76,6 +103,9 @@ export default function Header() {
         className={`site-mobile-overlay ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(false)}
       />
+
+      {/* Search modal */}
+      <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
 
       {/* Mobile menu drawer */}
       <div className={`site-mobile-menu ${menuOpen ? "open" : ""}`}>

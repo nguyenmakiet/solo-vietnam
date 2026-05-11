@@ -1,7 +1,18 @@
 // app/north-vietnam/page.tsx
+import type { Metadata } from "next"
 import Link from "next/link"
 import { regions } from "@/data/regions"
 import { provinces } from "@/data/provinces"
+
+export const metadata: Metadata = {
+  title: "North Vietnam Travel Guide | Solo in Vietnam",
+  description: "North Vietnam travel guide - Ha Long Bay, Ha Giang Loop, Sapa, Ninh Binh, and more. Practical tips for solo travelers exploring Vietnam's cultural heartland.",
+  alternates: { canonical: "https://www.soloinvietnam.com/north-vietnam" },
+  openGraph: {
+    title: "North Vietnam Travel Guide | Solo in Vietnam",
+    description: "North Vietnam travel guide - Ha Long Bay, Ha Giang Loop, Sapa, Ninh Binh, and more. Practical tips for solo travelers exploring Vietnam's cultural heartland.",
+  },
+}
 
 const TAG_COLORS: Record<string, string> = {
   beach:    "bg-sky-100 text-sky-700",

@@ -3,6 +3,10 @@ import { activeLocations } from "@/data/all-locations"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 
+export async function generateStaticParams() {
+  return provinces.map((p) => ({ slug: p.slug }))
+}
+
 export async function generateMetadata({
   params,
 }: {

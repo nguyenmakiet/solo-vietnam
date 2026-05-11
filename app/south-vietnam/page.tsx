@@ -1,7 +1,18 @@
 // app/south-vietnam/page.tsx
+import type { Metadata } from "next"
 import Link from "next/link"
 import { regions } from "@/data/regions"
 import { provinces } from "@/data/provinces"
+
+export const metadata: Metadata = {
+  title: "South Vietnam Travel Guide | Solo in Vietnam",
+  description: "South Vietnam travel guide - Phu Quoc, Con Dao, Mekong Delta, and Ho Chi Minh City. Tropical islands, river deltas, and Vietnam's most dynamic city.",
+  alternates: { canonical: "https://www.soloinvietnam.com/south-vietnam" },
+  openGraph: {
+    title: "South Vietnam Travel Guide | Solo in Vietnam",
+    description: "South Vietnam travel guide - Phu Quoc, Con Dao, Mekong Delta, and Ho Chi Minh City. Tropical islands, river deltas, and Vietnam's most dynamic city.",
+  },
+}
 
 const TAG_COLORS: Record<string, string> = {
   beach:    "bg-sky-100 text-sky-700",

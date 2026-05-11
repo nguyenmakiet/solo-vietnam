@@ -18,11 +18,18 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.soloinvietnam.com"),
   title: "Solo in Vietnam - Travel Guides for Solo Travelers",
   description:
     "Practical travel guides for solo travelers in Vietnam. Safety tips, scam alerts, transport guides, and local insights.",
   icons: {
     icon: "/icon.svg",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Solo in Vietnam",
+    title: "Solo in Vietnam - Travel Guides for Solo Travelers",
+    description: "Practical travel guides for solo travelers in Vietnam. Safety tips, scam alerts, transport guides, and local insights.",
   },
 };
 

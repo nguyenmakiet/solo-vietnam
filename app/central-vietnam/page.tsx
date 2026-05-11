@@ -1,7 +1,18 @@
 // app/central-vietnam/page.tsx
+import type { Metadata } from "next"
 import Link from "next/link"
 import { regions } from "@/data/regions"
 import { provinces } from "@/data/provinces"
+
+export const metadata: Metadata = {
+  title: "Central Vietnam Travel Guide | Solo in Vietnam",
+  description: "Central Vietnam travel guide - Hoi An, Hue Imperial City, Phong Nha caves, Da Nang, and the coast. Ancient kingdoms, white sand beaches, and Vietnam's finest cuisine.",
+  alternates: { canonical: "https://www.soloinvietnam.com/central-vietnam" },
+  openGraph: {
+    title: "Central Vietnam Travel Guide | Solo in Vietnam",
+    description: "Central Vietnam travel guide - Hoi An, Hue Imperial City, Phong Nha caves, Da Nang, and the coast. Ancient kingdoms, white sand beaches, and Vietnam's finest cuisine.",
+  },
+}
 
 const TAG_COLORS: Record<string, string> = {
   beach:    "bg-sky-100 text-sky-700",
