@@ -83,18 +83,18 @@ export default function Header() {
                 <path d="M13 13l3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
               </svg>
             </button>
-          </div>
 
-          {/* Hamburger (mobile only) */}
-          <button
-            className={`site-hamburger ${menuOpen ? "open" : ""}`}
-            onClick={() => setMenuOpen((v) => !v)}
-            aria-label="Toggle menu"
-          >
-            <span />
-            <span />
-            <span />
-          </button>
+            {/* Hamburger (mobile only) */}
+            <button
+              className={`site-hamburger ${menuOpen ? "open" : ""}`}
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label="Toggle menu"
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
         </div>
       </header>
 

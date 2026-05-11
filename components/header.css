@@ -265,9 +265,8 @@
     display: none;
   }
 
-  /* Keep right group visible so search button shows on mobile */
   .site-header-right {
-    gap: 0;
+    gap: 8px;
   }
 
   .site-hamburger {
