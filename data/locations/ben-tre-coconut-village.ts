@@ -15,7 +15,7 @@ export const benTreCoconutVillage: Location = {
   tags: ["🥥 Coconut Capital of Vietnam", "🚲 Cycling", "🛶 Canal Boats", "🏡 Homestay"],
   bestTime: "Nov – Apr (dry season, easier cycling, lower water levels in canals)",
   bestMonths: [1, 2, 3, 4, 11, 12],
-  entranceFee: "Free; boat tours: ~150,000–250,000 VND",
+  entranceFee: "Entrance: 50,000 VND; boat tours: ~150,000–250,000 VND",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.335167589686217,106.36046151034951",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776267167544!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2N4YldPNGdF!2m2!1d10.33669173711096!2d106.3747767399769!3f10.6745206058151!4f-14.184810204433859!5f0.7820865974627469", },

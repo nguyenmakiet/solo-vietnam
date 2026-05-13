@@ -15,7 +15,7 @@ export const baHoWaterfall: Location = {
   tags: ["💧 Three Pools Waterfall", "🏊 Natural Swimming", "🥾 Jungle Trek", "📸 Photography"],
   bestTime: "Feb – Aug (dry season, water level ideal for swimming; wet season increases flow but some pools flood)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "185,000 VND",
+  entranceFee: "200,000 VND",
   openingHours: "8:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.390044772272377,109.13860165627212",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776184184218!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2NxWm1UcVFF!2m2!1d12.39142773612884!2d109.138912692656!3f181.7685931244947!4f-59.43290277200617!5f0.7820865974627469", },

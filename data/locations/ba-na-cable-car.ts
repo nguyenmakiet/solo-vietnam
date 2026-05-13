@@ -15,7 +15,7 @@ export const baNaCableCar: Location = {
   tags: ["🚡 World Record Cable Car", "☁️ Through the Clouds", "📸 Aerial Views", "🌿 Forest Canopy"],
   bestTime: "Mar – Aug (clearest visibility; cable car operates year-round)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
+  entranceFee: "Included in Bà Nà Hills ticket (~1,000,000 VND)",
   openingHours: "First departure: 7:30 AM · Last return: 9:00 PM",
   mapUrl: "https://www.google.com/maps?q=16.025928263564783,108.03455022954422",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776184637241!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2N6dkQ1aWdF!2m2!1d16.02407602757561!2d108.0301559779758!3f134.71277594137905!4f14.565616660237012!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const bayMauCoconutForest: Location = {
   tags: ["🛶 Basket Boat", "🥥 Water Coconut Forest", "📸 Photography", "🎶 Local Performance"],
   bestTime: "Year-round; dry season (Mar – Aug) for calmest water",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  entranceFee: "~150,000–250,000 VND (includes basket boat ride)",
+  entranceFee: "Entrance ticket: 30,000 VND. Basket boat~150,000–250,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=15.877556321921798,108.37267755516427",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776185210082!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2VfTW1EeWdF!2m2!1d15.87506962867691!2d108.3773911074877!3f357.88592392891604!4f-29.65020339925902!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const baiMonBeach: Location = {
   tags: ["🌅 First Sunrise", "🏖️ Secluded Beach", "🏔️ Cape Walk", "📸 Photography"],
   bestTime: "Jan – Aug (dry season, clear skies for sunrise)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "~15,000 VND (national park access)",
+  entranceFee: "~20,000 VND (national park access)",
   openingHours: "5:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.896863628194192,109.45109317905293",
   streetView: {embedUrl:  "https://www.google.com/maps/embed?pb=!4v1776186451683!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREVoZEhrWmc.!2m2!1d12.89688720326191!2d109.4532609382309!3f334.14716450324715!4f1.5107629389398909!5f0.7820865974627469", },

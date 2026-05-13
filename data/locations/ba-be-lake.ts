@@ -15,7 +15,7 @@ export const baBeLake: Location = {
   tags: ["🏞️ National Park", "🚣 Freshwater Lake", "🦅 Wildlife Sanctuary", "🛖 Tày Homestay"],
   bestTime: "Sep - Nov and Mar - May (best water levels and clearest skies; avoid Jan - Feb cold and Jul - Aug peak rain season)",
   bestMonths: [3, 4, 5, 9, 10, 11],
-  entranceFee: "~40,000 VND national park entrance; boat hire additional ~200,000-400,000 VND per trip",
+  entranceFee: "From ~46,000 VND national park entrance; boat hire additional ~200,000-400,000 VND per trip",
   openingHours: "Open daily; boat tours typically 7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.4080,105.6255",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775903364072!6m8!1m7!1sCAoSHENJQUJJaERrN3VabGI3N3c0QTV5aTZnYkVaN1o.!2m2!1d22.40503519723336!2d105.6182517581162!3f47.12853681512251!4f-6.301399648484335!5f0.7820865974627469", },

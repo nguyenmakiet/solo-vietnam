@@ -15,7 +15,7 @@ export const bichDongPagoda: Location = {
   tags: ["⛩️ Cave Pagoda", "🪨 Limestone Grotto", "📸 Photography", "🏔️ Viewpoint"],
   bestTime: "Oct – Apr (dry season, cooler temperatures, clear skies)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
-  entranceFee: "Free",
+  entranceFee: "120,000 VND/adult, 60,000 VND/child (Tam Coc - Bich Dong complex ticket)",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2310,105.9530",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776268190258!6m8!1m7!1sCAoSHENJQUJJaERvNHBNajhMc0hxQTkzQVdiRHJwNmY.!2m2!1d20.21746887259208!2d105.9158156109632!3f183.485069034291!4f-63.137559187014894!5f0.7820865974627469", },

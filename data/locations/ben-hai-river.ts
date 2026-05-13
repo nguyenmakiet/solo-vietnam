@@ -15,7 +15,7 @@ export const benHaiRiver: Location = {
   tags: ["🌉 Reunification Bridge", "🏳️ DMZ History", "📸 Photography", "🚗 DMZ Road Trip"],
   bestTime: "Feb – Aug (dry season; avoid Sep–Nov typhoon season)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "Free (Hiền Lương Bridge Museum: ~10,000–20,000 VND)",
+  entranceFee: "50,000 VND",
   openingHours: "Open daily; museum typically 7:00–11:30 and 13:30–17:00",
   mapUrl: "https://www.google.com/maps?q=17.065800,107.064400",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775229992256!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2toS2ZBRXc.!2m2!1d17.00396902825991!2d107.0520874754901!3f7.371032364575967!4f2.680967981127708!5f0.7820865974627469" },

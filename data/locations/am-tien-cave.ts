@@ -15,7 +15,7 @@ export const amTienCave: Location = {
   tags: ["🪨 Hidden Cave", "🥾 Karst Climb", "📸 Photography", "🦇 Bat Colony"],
   bestTime: "Oct – Apr (dry season, trail accessible; avoid rainy season when path is slippery)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
-  entranceFee: "~20,000 VND",
+  entranceFee: "~50,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.283351716721526,105.91444612825703",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775919891167!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzR2OVRsM0FF!2m2!1d20.2816815269168!2d105.9115505134598!3f155.94168654130553!4f-35.89584643338258!5f0.7820865974627469", },
