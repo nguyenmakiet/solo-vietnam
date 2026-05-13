@@ -15,7 +15,7 @@ export const ngocSonTemple: Location = {
   tags: ["🏯 Island Temple", "🌉 Red Bridge", "🐢 Turtle Museum", "⚔️ Legend of Sword"],
   bestTime: "Oct - Apr (cool dry season; early morning before tour groups arrive)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
-  entranceFee: "~30,000 VND",
+  entranceFee: "~50,000 VND",
   openingHours: "8:00 AM - 6:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=21.030680946550152,105.85236736680054",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776183267856!6m8!1m7!1sCAoSHENJQUJJaERIcXNBcWY4RVpyYVRWOHF2aGdwbEU.!2m2!1d21.03077414118891!2d105.852782013563!3f208.33064104167715!4f-49.867282613115925!5f0.7820865974627469", },
