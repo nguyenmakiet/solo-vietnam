@@ -15,7 +15,7 @@ export const yTy: Location = {
   tags: ["☁️ Sea of Clouds", "🏔️ 2,860m Peak", "🌾 Rice Terraces", "🏡 Hà Nhì Villages"],
   bestTime: "Sep – Nov (golden rice + clouds); Dec – May (cloud hunting season)",
   bestMonths: [1, 2, 3, 4, 5, 9, 10, 11, 12],
-  entranceFee: "Free (guide ~1,000,000 VND for Lảo Thẩn trek)",
+  entranceFee: "Free",
   openingHours: "Open; overnight permit required for foreigners",
   mapUrl: "https://www.google.com/maps?q=22.657362311112333,103.61233893234572",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775895238146!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRwTmVDaXdF!2m2!1d22.68231203332968!2d103.5908563055872!3f258.82449862005603!4f-2.9793114514354926!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const vanLongNatureReserve: Location = {
   tags: ["🦒 Delacour's Langur", "🚣 Rowing Boat", "📸 Photography", "🌿 Wetland Reserve"],
   bestTime: "Oct – Apr (dry season, lowest water, best wildlife visibility)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
-  entranceFee: "20,000 VND/person (entrance) + 60,000 VND/person (boat), free for children under 1.2m",
+  entranceFee: "20,000 VND + 60,000 VND boat; children under 1.2m free",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.37269717802166,105.88325487973674",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775893429039!6m8!1m7!1sCAoSHENJQUJJaENOX2ZVcHRvRzNWNjh2UFZ6T1JHdEs.!2m2!1d20.37250611157695!2d105.8827398872157!3f332.24453393032456!4f12.453235180544795!5f0.7820865974627469", },

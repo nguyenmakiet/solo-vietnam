@@ -15,7 +15,7 @@ export const trangAn: Location = {
   tags: ["🚣 Boat Tour", "🪨 UNESCO Heritage", "⛩️ Temples", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – Apr (dry season, clearest water)",
   bestMonths: [3, 4, 9, 10, 11],
-  entranceFee: "~250,000 VND (includes boat and rower)",
+  entranceFee: "300,000 VND/person; children: 150,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2800,105.9100",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775890257655!6m8!1m7!1sCAoSHENJQUJJaEJhblR3eW0xMjN2N1RQbm5iSVA3MG0.!2m2!1d20.24844443245237!2d105.9235870157211!3f213.62590961851305!4f-29.3877166353344!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const khaiDinhTomb: Location = {
   tags: ["👑 Nguyễn Tomb", "🏯 French-Vietnamese Architecture", "📸 Photography", "✨ Mosaic Interior"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, best light for photography)",
   bestMonths: [2, 3, 4, 9, 10, 11],
-  entranceFee: "~150,000 VND",
+  entranceFee: "Adults 150,000 VND / Children (7–12) 30,000 VND",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.39915933177038,107.59074610662047",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775814504659!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzRrckRmYlE.!2m2!1d16.39933340695345!2d107.5903461870167!3f41.66796416618612!4f25.800626400581834!5f0.7820865974627469", },

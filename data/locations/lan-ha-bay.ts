@@ -15,7 +15,7 @@ export const lanHaBay: Location = {
   tags: ["🛶 Kayaking", "🌊 Cleaner than Ha Long", "🏖️ Hidden Beaches", "📸 Photography"],
   bestTime: "Apr – Jun or Sep – Nov (calm water, best visibility, fewest boats)",
   bestMonths: [4, 5, 6, 9, 10, 11],
-  entranceFee: "Included in kayak/boat tour (~350,000–600,000 VND/person)",
+  entranceFee: "From 120,000 VND/person (children from 60,000 VND)",
   openingHours: "Tours depart from Cát Bà town daily from 8:00 AM",
   mapUrl: "https://www.google.com/maps?q=20.731973471390784,107.05945027622396",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775826497352!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2VqcXVpd1FF!2m2!1d20.80196188764176!2d107.0996399171194!3f246.31788240072342!4f-14.225503370611449!5f0.7820865974627469", },

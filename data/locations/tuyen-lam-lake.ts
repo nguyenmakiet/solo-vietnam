@@ -15,7 +15,7 @@ export const tuyenLamLake: Location = {
   tags: ["🚣 Kayaking", "🌲 Pine Forest", "📸 Photography", "🚲 Cycling"],
   bestTime: "Nov – Apr (dry season, mist on the water in the morning)",
   bestMonths: [1, 2, 3, 4, 11, 12],
-  entranceFee: "Free (boat tours: ~100,000–150,000 VND)",
+  entranceFee: "Free (boat tours: ~150,000–500,000 VND)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.899932123833151,108.43143048972007",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775892846385!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHUtWVRDM0FF!2m2!1d11.89887878495568!2d108.4341693603912!3f182.13620391554971!4f-11.69232483656171!5f0.7820865974627469", },

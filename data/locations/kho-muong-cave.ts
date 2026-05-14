@@ -15,7 +15,7 @@ export const khoMuongCave: Location = {
   tags: ["🕳️ Karst Cave", "🦇 Bat Colony", "🥾 Guided Tour", "🌿 Reserve Wildlife"],
   bestTime: "Year-round (dry season Nov - Apr is easiest underfoot)",
   bestMonths: [11, 12, 1, 2, 3, 4],
-  entranceFee: "10,000 VND (collected by villager)",
+  entranceFee: "10,000 VND",
   openingHours: "Daylight hours",
   mapUrl: "https://maps.google.com/?q=20.48417144014872,105.13857469704293", // TODO: verify with exact coords
   streetView: {},
