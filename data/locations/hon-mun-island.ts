@@ -15,7 +15,7 @@ export const honMunIsland: Location = {
   tags: ["🤿 Best Diving in Nha Trang", "🐠 Coral Reef", "🏝️ Marine Reserve", "🚢 Boat Tour"],
   bestTime: "Feb – Sep (dry season, best visibility for diving and snorkeling)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],
-  entranceFee: "~50,000 VND marine park fee; diving tours: 600,000–1,200,000 VND",
+  entranceFee: "22,000 VND/adult, 11,000 VND/child",
   openingHours: "Accessible by boat tour daily; departures 7:30 AM – 8:30 AM",
   mapUrl: "https://www.google.com/maps?q=12.17068371125258,109.30185373625723",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775812518545!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFd5ZTI3bUFF!2m2!1d12.16614485930546!2d109.3024824004853!3f302.0826224037297!4f-16.725825542628442!5f0.7820865974627469", },

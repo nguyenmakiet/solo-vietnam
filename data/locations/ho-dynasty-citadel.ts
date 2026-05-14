@@ -15,7 +15,7 @@ export const hoDynastyCitadel: Location = {
   tags: ["🏯 UNESCO Heritage", "🪨 Stone Citadel", "👑 14th Century", "🌾 Rural Countryside"],
   bestTime: "Oct - Apr (dry and cool; avoid the hot humid summer months May - Aug)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
-  entranceFee: "~40,000 VND",
+  entranceFee: "40,000 VND/adult, free for children under 1.2m",
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=20.0805,105.5989",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775903694181!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHEySWVValFF!2m2!1d20.07428931729111!2d105.6068649075628!3f11.472665170709696!4f-24.062906644114605!5f0.7820865974627469", },

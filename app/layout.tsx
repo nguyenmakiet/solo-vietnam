@@ -3,6 +3,7 @@ import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className={`${beVietnamPro.variable} ${playfairDisplay.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KPB6Y38KYH"

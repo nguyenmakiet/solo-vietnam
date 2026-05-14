@@ -15,7 +15,7 @@ export const tamCoc: Location = {
   tags: ["🛶 Boat Tour", "🏔️ Karst", "🌾 Rice Fields", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – Apr (avoid summer crowds and heat)",
   bestMonths: [3, 4, 9, 10, 11],
-  entranceFee: "Boat tour: 150,000 VND/person",
+  entranceFee: "120,000 VND/person (over 1.2m), free for children under 1.2m",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://maps.google.com/?q=20.2253,105.9550",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888074548!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3VoTjZ2SGc.!2m2!1d20.21805370130474!2d105.9161806600398!3f256.9778666684793!4f-26.862696455827802!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const cuChiTunnels: Location = {
   tags: ["🪖 War History", "🕳️ Underground Tunnels", "🌿 Jungle Warfare", "📷 Living Museum"],
   bestTime: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
   bestMonths: [11, 12, 1, 2, 3, 4],
-  entranceFee: "~110,000 VND (Ben Dinh); ~90,000 VND (Ben Duoc)",
+  entranceFee: "35,000 VND/person (historical site), 100,000 VND/person (guide service)",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.1416,106.4619",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775903510723!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRE9qdUw4bHdF!2m2!1d11.14139261872694!2d106.4621329297128!3f122.9925722937489!4f-23.206150953665357!5f0.7820865974627469", },

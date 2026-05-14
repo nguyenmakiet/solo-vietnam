@@ -15,7 +15,7 @@ export const honSonIsland: Location = {
   tags: ["🏝️ Hidden Gulf Island", "🤿 Snorkeling", "🌊 Clear Water", "🚴 Island Cycling"],
   bestTime: "Nov – May (dry season with calm seas and clear water; wet season Jun – Oct brings rough conditions)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
-  entranceFee: "Free; boat fare from Rạch Giá or Kiên Hải applies",
+  entranceFee: "Free. Ferry fare from 280,000 VND/person (round-trip, high-speed boat)",
   openingHours: "Open daily; ferry schedule dependent on sea conditions",
   mapUrl: "https://www.google.com/maps?q=10.045800,104.506900",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775376165948!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRG1yXy1Bd3dF!2m2!1d9.806996712011859!2d104.651905037137!3f186.54059195316322!4f-11.055772833377077!5f0.7820865974627469" },

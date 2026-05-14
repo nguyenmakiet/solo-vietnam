@@ -15,7 +15,7 @@ export const hoanKiemLake: Location = {
   tags: ["🐢 Turtle Lake", "🏙️ Hanoi Heart", "🌅 Morning Walks", "🏯 Ngoc Son Temple"],
   bestTime: "Oct - Apr (cool dry season; weekend pedestrian zone creates the best atmosphere)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
-  entranceFee: "Free (lake perimeter); Ngoc Son Temple entrance ~30,000 VND",
+  entranceFee: "Free",
   openingHours: "Open 24 hours; weekend pedestrian zone Fri evening - Sun night",
   mapUrl: "https://www.google.com/maps?q=21.027833338357237,105.85226838963871",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776182112375!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzd6LUhBWlE.!2m2!1d21.02847425615956!2d105.8525795258783!3f65.11314800136046!4f-26.60861371689785!5f0.7820865974627469", },

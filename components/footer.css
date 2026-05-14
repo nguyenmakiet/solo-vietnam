@@ -1,0 +1,151 @@
+/* ============================================================
+   footer.css — soloinvietnam.com site-wide footer
+   ============================================================ */
+
+.site-footer {
+  --gold: #c8a96e;
+  --dark: #1a1209;
+  --text-dim: rgba(243, 234, 216, 0.6);
+  --text-on-dark: #f3ead8;
+
+  background: var(--dark);
+  color: var(--text-on-dark);
+  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+}
+
+.site-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 32px 32px;
+  display: grid;
+  grid-template-columns: 1.4fr 3fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── BRAND ── */
+.site-footer-logo {
+  font-family: var(--font-serif), "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-on-dark);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+.site-footer-logo em {
+  font-style: italic;
+  color: var(--gold);
+}
+.site-footer-tagline {
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  font-weight: 300;
+}
+
+/* ── COLUMNS ── */
+.site-footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.site-footer-col-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-on-dark);
+  margin-bottom: 14px;
+  letter-spacing: 0.2px;
+}
+.site-footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.site-footer-col a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+  transition: color 0.2s;
+}
+.site-footer-col a:hover {
+  color: var(--gold);
+}
+
+/* ── BOTTOM BAR ── */
+.site-footer-bottom {
+  border-top: 1px solid rgba(243, 234, 216, 0.08);
+}
+.site-footer-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.site-footer-copy {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* ── SOCIAL ── */
+.site-footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 14px;
+}
+.site-footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--text-dim);
+  border-radius: 50%;
+  transition: color 0.2s, background 0.2s;
+}
+.site-footer-social a:hover {
+  color: var(--dark);
+  background: var(--gold);
+}
+.site-footer-social svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .site-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 48px 24px 28px;
+  }
+  .site-footer-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .site-footer-bottom-inner {
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-footer-cols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .site-footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

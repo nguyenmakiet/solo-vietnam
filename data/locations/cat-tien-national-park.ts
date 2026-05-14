@@ -15,7 +15,7 @@ export const catTienNationalPark: Location = {
   tags: ["🌿 UNESCO Biosphere", "🦎 Wildlife Sanctuary", "🥾 Jungle Trek", "🦧 Primate Centre"],
   bestTime: "Nov - Apr (dry season; wet season Jun - Oct makes trails muddy and river crossings unpredictable, though wildlife is more active near water sources)",
   bestMonths: [1, 2, 3, 4, 11, 12],
-  entranceFee: "~60,000 VND park entry; activities additional",
+  entranceFee: "60,000 VND/adult, 20,000 VND/student, 10,000 VND/child (6-16 years), includes ferry",
   openingHours: "Park open daily; activity bookings through park HQ",
   mapUrl: "https://www.google.com/maps?q=11.424517877270743,107.42756061160924",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775749506954!6m8!1m7!1sCAoSHENJQUJJaEJWY0lUZG5BNDd6bjlXOGphT1NKU0U.!2m2!1d11.42405996435068!2d107.4300738916338!3f110.80245140194039!4f-19.56269614535016!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const honYenIsland: Location = {
   tags: ["🦞 Lobster Island", "🐠 Coral Snorkelling", "🏝️ Tidal Access", "📷 Hidden Gem"],
   bestTime: "Feb - Aug (dry season; tidal access possible at low tide Jan - Apr; avoid Sep - Dec rough seas)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "Boat tour ~100,000 - 150,000 VND per person",
+  entranceFee: "Free",
   openingHours: "Daylight hours; tidal access window varies by season",
   mapUrl: "https://www.google.com/maps?q=13.225688161973299,109.30868667111528",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776105474260!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU5T19pd0FF!2m2!1d13.22618997544958!2d109.3073999962672!3f295.7058649426591!4f-72.05340581638391!5f0.7820865974627469", },

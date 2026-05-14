@@ -15,7 +15,7 @@ export const elephantMountain: Location = {
   tags: ["🐘 Elephant Territory", "🌄 Highland Views", "🥾 Trekking", "☕ Coffee Country"],
   bestTime: "Nov – Apr (dry season; trails accessible and views clear)",
   bestMonths: [1, 2, 3, 4, 11, 12],
-  entranceFee: "",
+  entranceFee: "Free (parking fee ~5,000-10,000 VND)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=12.666700,108.050000",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775273788518!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHV2TlhHV1E.!2m2!1d12.48145191803785!2d108.2334295588426!3f282.1063773796864!4f-25.386943170115657!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const hungTemple: Location = {
   tags: ["🏛️ National Pilgrimage", "🛕 Founding Myth", "📸 Photography", "⛰️ Sacred Hill"],
   bestTime: "Oct - Mar (cool dry season; avoid the Hùng Kings Festival on the 10th day of the 3rd lunar month when millions of pilgrims converge on the site)",
   bestMonths: [1, 2, 3, 10, 11, 12],
-  entranceFee: "~30,000 VND",
+  entranceFee: "10,000 VND/person (over 1.2m), free for children under 1.2m",
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=21.368643714922786,105.32575135886921",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775813514043!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2tvUGJ2cndF!2m2!1d21.36815981787663!2d105.3246152876615!3f355.678158415362!4f16.00725846565956!5f0.7820865974627469", },

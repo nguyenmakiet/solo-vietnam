@@ -15,7 +15,7 @@ export const datanlaWaterfall: Location = {
   tags: ["💧 Multi-Tier Waterfall", "🎢 Alpine Coaster", "📸 Photography", "🌿 Forest Walk"],
   bestTime: "Jun – Oct (rainy season - maximum water flow and most dramatic falls)",
   bestMonths: [6, 7, 8, 9, 10],
-  entranceFee: "~50,000 VND; alpine coaster: ~70,000 VND one way",
+  entranceFee: "60,000 VND/adult, 30,000 VND/child",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.898464970455633,108.44969026368697",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775793629268!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2tnUHpmX0FF!2m2!1d11.9011995181067!2d108.4489255320626!3f255.51126749739268!4f0.8512766627312089!5f0.7820865974627469", },

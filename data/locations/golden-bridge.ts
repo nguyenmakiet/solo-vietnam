@@ -15,7 +15,7 @@ export const goldenBridge: Location = {
   tags: ["🌉 Giant Stone Hands", "📸 Most Photographed in Vietnam", "☁️ Above the Clouds", "🌅 Panoramic Views"],
   bestTime: "Mar – Aug (clearest views; avoid Nov – Jan when fog can obscure the hands)",
   bestMonths: [3, 4, 5, 6, 7, 8],
-  entranceFee: "Included in Bà Nà Hills ticket (~1,500,000 VND)",
+  entranceFee: "Included in Bà Nà Hills ticket (950,000 VND/adult, 750,000 VND/child)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
   mapUrl: "https://www.google.com/maps?q=15.994957886478177,107.996595959818",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775803366218!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0U2c0gxX3dF!2m2!1d15.99512514112659!2d107.9963089813182!3f316.8568323803896!4f-3.5947031071709574!5f0.7820865974627469", },

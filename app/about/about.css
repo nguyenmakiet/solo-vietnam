@@ -1,0 +1,376 @@
+/* ============================================================
+   about.css — soloinvietnam.com /about
+   ============================================================ */
+
+.about-wrap {
+  --gold: #c8a96e;
+  --gold-light: #e8d5a8;
+  --dark: #1a1209;
+  --text: #2d2110;
+  --text-muted: #7a6a52;
+  --surface: #f5f0e8;
+  --surface-2: #ece5d6;
+  --border: #e2d8c8;
+  --white: #ffffff;
+
+  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  background: var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.about-wrap h1,
+.about-wrap h2,
+.about-wrap h3 {
+  font-family: var(--font-serif), "Playfair Display", serif;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+
+.about-wrap p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+  font-weight: 300;
+}
+
+.about-section-eyebrow,
+.about-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ── PLACEHOLDERS ── */
+.about-placeholder {
+  background: linear-gradient(135deg, #d9d0bf, #c7bda8);
+  color: #5a4e35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+/* ── HERO ── */
+.about-hero {
+  padding: 80px 32px 0;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.about-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.about-hero-text h1 {
+  font-size: clamp(56px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 0 24px;
+}
+.about-tagline {
+  font-family: var(--font-serif), "Playfair Display", serif;
+  font-size: clamp(24px, 3.4vw, 36px);
+  line-height: 1.25;
+  color: var(--gold);
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+.about-tagline em {
+  font-style: italic;
+}
+.about-signature {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+}
+.about-hero-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.about-quote {
+  position: relative;
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 32px 40px 32px 80px;
+  max-width: 760px;
+}
+.about-quote-mark {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  font-family: var(--font-serif), "Playfair Display", serif;
+  font-size: 72px;
+  line-height: 1;
+  color: var(--gold);
+  font-weight: 700;
+}
+.about-quote p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* ── SHARED SECTION SHELL ── */
+.about-section,
+.about-section-alt {
+  padding: 80px 32px;
+}
+.about-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.about-section-alt {
+  background: var(--surface-2);
+}
+
+.about-section h2,
+.about-section-alt h2 {
+  font-size: clamp(28px, 3.6vw, 40px);
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+
+/* ── WHO I AM ── */
+.about-who-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  min-height: 380px;
+  position: relative;
+}
+.about-who-text p {
+  margin: 0 0 16px;
+}
+.about-who-text p strong {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* ── WHAT YOU'LL FIND HERE ── */
+.about-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+  font-weight: 300;
+}
+.about-bullet-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-bullet-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.about-find-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 480px;
+  position: relative;
+}
+
+/* ── OLD COMPANIONS ── */
+.about-companions-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+  align-items: center;
+}
+.about-companions-text p {
+  margin: 0 0 16px;
+}
+.about-companions-text strong {
+  font-weight: 600;
+  color: var(--dark);
+}
+.about-companions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.about-companions-grid figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-companion-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+.about-companions-grid figcaption {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ── THANKS BLOCK ── */
+.about-thanks {
+  max-width: 720px;
+  margin: 64px auto 0;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 36px 48px;
+  text-align: center;
+}
+.about-thanks-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.about-thanks-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.about-thanks h3 {
+  font-size: clamp(22px, 2.6vw, 28px);
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.about-thanks p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* ── CTA FOOTER BANNER ── */
+.about-cta {
+  background: var(--dark);
+  color: #f3ead8;
+  padding: 56px 32px;
+}
+.about-cta-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.about-cta-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.about-cta h2 {
+  font-family: var(--font-serif), "Playfair Display", serif;
+  color: #f3ead8;
+  font-size: clamp(28px, 3.6vw, 40px);
+  font-weight: 900;
+  margin: 0 0 8px;
+}
+.about-cta h2 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.about-cta-text p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(243, 234, 216, 0.65);
+}
+.about-cta-btn {
+  flex-shrink: 0;
+  background: var(--gold);
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.about-cta-btn:hover {
+  background: var(--gold-light);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .about-hero {
+    padding: 56px 24px 0;
+  }
+  .about-hero-inner,
+  .about-section,
+  .about-companions-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about-section,
+  .about-section-alt {
+    padding: 56px 24px;
+  }
+  .about-hero-image,
+  .about-who-image,
+  .about-find-image {
+    min-height: 280px;
+  }
+  .about-quote {
+    padding: 28px 24px 24px 64px;
+  }
+  .about-companions-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .about-thanks {
+    padding: 28px 24px;
+    margin-top: 40px;
+  }
+  .about-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-companions-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -15,7 +15,7 @@ export const catCatVillage: Location = {
   tags: ["🎎 H'mong Culture", "💧 Waterfall", "📸 Photography", "🚶 Walking Trail"],
   bestTime: "Mar – May or Sep – Nov (best light, comfortable weather)",
   bestMonths: [3, 4, 5, 9, 10, 11],
-  entranceFee: "150,000 VND",
+  entranceFee: "150,000 VND/adult, ~70,000-80,000 VND/child (1m-1.4m), free for children under 1m",
   openingHours: "7:00 AM – 6:00 PM",
   mapUrl: "https://maps.google.com/?q=22.3301,103.8325",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775747689042!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGsyTlNWYWc.!2m2!1d22.32840728004029!2d103.8342056380308!3f188.53461007034278!4f-29.704584728056048!5f0.7820865974627469", },

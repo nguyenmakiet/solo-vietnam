@@ -15,7 +15,7 @@ export const darkCave: Location = {
   tags: ["🧗 Adventure Cave", "🛶 Kayaking", "💧 Mud Bath", "🎢 Zip Line"],
   bestTime: "Feb – Aug (dry season, river level stable for kayaking)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "~450,000 VND (all activities included)",
+  entranceFee: "299,000 VND/adult (standard), 450,000 VND/adult (all activities included)",
   openingHours: "7:30 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.574355688827836,106.25458261828979",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775754964535!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDI0dUszOGdF!2m2!1d17.57434997734719!2d106.2516421754264!3f142.15513560570668!4f7.232951463300054!5f0.7820865974627469", },

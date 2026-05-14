@@ -15,7 +15,7 @@ export const imperialCity: Location = {
   tags: ["🏯 UNESCO Heritage", "👑 Nguyễn Dynasty", "📸 Photography", "🏛️ Imperial Architecture"],
   bestTime: "Feb – Apr or Sep – Nov (dry season, comfortable temperatures)",
   bestMonths: [2, 3, 4, 9, 10, 11],
-  entranceFee: "~200,000 VND (Forbidden Purple City included)",
+  entranceFee: "200,000 VND/adult & children 12+, 40,000 VND/child (7-12 years), free for children under 7",
   openingHours: "7:00 AM – 5:30 PM (last entry 5:00 PM)",
   mapUrl: "https://www.google.com/maps?q=16.4677616052903,107.57931947854229",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775813626512!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHEzTFNObWdF!2m2!1d16.46410503347066!2d107.581941720204!3f0.34018440097223124!4f-28.418483049825014!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const drayNurDraySapWaterfalls: Location = {
   tags: ["💧 Husband & Wife Falls", "🌊 Basalt Plateau", "📸 Photography", "🌿 Highland Forest"],
   bestTime: "Sep - Nov (end of rainy season when water volume is maximum; dry season Mar - May reduces flow significantly)",
   bestMonths: [9, 10, 11],
-  entranceFee: "~40,000 VND per waterfall; tickets sold separately",
+  entranceFee: "40,000 VND/adult, 20,000 VND/child",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.540509582270607,107.89028799489219",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775796450603!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHN0cjJiNkFF!2m2!1d12.54048176948401!2d107.8904106409812!3f307.3433116243208!4f-35.24877945650506!5f0.7820865974627469", },

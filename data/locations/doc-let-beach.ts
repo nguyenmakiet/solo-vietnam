@@ -15,7 +15,7 @@ export const docLetBeach: Location = {
   tags: ["🏖️ White Sand, Turquoise Water", "🌊 Calm Bay", "📸 Photography", "🚗 Day Trip from Nha Trang"],
   bestTime: "Feb – Aug (dry season, calmest water)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "~30,000–50,000 VND (some beach sections charge separately)",
+  entranceFee: "50,000 VND/adult, free for children under 1.2m",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=12.550209286631508,109.22816933280315",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1774771471886!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzRsLXItNmdF!2m2!1d12.55001981719517!2d109.2303784524443!3f32.54124489882476!4f12.534024462318953!5f0.7820865974627469",},

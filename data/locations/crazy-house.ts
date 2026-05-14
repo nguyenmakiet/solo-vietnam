@@ -15,7 +15,7 @@ export const crazyHouse: Location = {
   tags: ["🏠 Gaudi-Style Architecture", "📸 Photography", "🎨 Art & Design", "🏨 Functioning Guesthouse"],
   bestTime: "Year-round; visit early morning to avoid tour groups",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  entranceFee: "~60,000 VND",
+  entranceFee: "50,000 VND/adult, 20,000 VND/child",
   openingHours: "8:00 AM – 7:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.934822914969137,108.43136784176984",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775751962116!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHNvUDdCc3dF!2m2!1d11.93465788669864!2d108.4307074156503!3f146.78337646065336!4f24.10129674630609!5f0.7820865974627469", },
