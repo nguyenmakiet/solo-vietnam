@@ -15,7 +15,7 @@ export const nhoQueRiver: Location = {
   tags: ["🌊 Turquoise River", "🏔️ Canyon", "🛶 Boat Tour", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clearest water, best light)",
   bestMonths: [3, 4, 5, 9, 10, 11],
-  entranceFee: "Boat tour: 150,000–200,000 VND/person",
+  entranceFee: "150,000 VND (under 1.2m: 80,000 VND); includes shuttle + insurance (effective 13/04/2026)",
   openingHours: "7:00 AM – 5:00 PM (boat tours)",
   mapUrl: "https://maps.google.com/?q=23.1550,105.4100",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775832383230!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzZxWmZjamdF!2m2!1d23.17683018762244!2d105.4794520224838!3f83.86273787168946!4f3.4168110275333987!5f0.7820865974627469", },

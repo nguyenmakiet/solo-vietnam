@@ -15,7 +15,7 @@ export const phuQuyIsland: Location = {
   tags: ["🏝️ Offshore Island", "🤿 Diving & Snorkeling", "🚴 Island Cycling", "🌊 Clear Water"],
   bestTime: "Jan – Aug (dry season; calm seas essential for the 3-hour crossing and for diving conditions)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "Free; ferry fare from Phan Thiết applies",
+  entranceFee: "Free; ferry fare from Phan Thiết ~350,000 VND",
   openingHours: "Open daily; ferry schedule weather-dependent",
   mapUrl: "https://www.google.com/maps?q=10.516700,108.933300",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775400015696!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREUxTVhSTUE.!2m2!1d10.50798927649329!2d108.9683413739378!3f313.7717236583591!4f-14.848449310793484!5f0.7820865974627469" },
@@ -39,6 +39,7 @@ export const phuQuyIsland: Location = {
     "The coral reefs around the island are in better condition than almost anywhere on the mainland Vietnamese coast - bring or rent snorkeling gear, or arrange a diving day trip through one of the island's small dive operators",
     "Accommodation is basic guesthouses rather than resorts - book ahead for the peak season (April - June) as the island has limited total bed count",
     "The island has its own distinct character shaped by generations of offshore fishing - the Linh Quang Pagoda and the hilltop lighthouse are worth visiting alongside the beaches",
+    "Foreign visitors must carry a valid passport and visa (originals, not photos) when traveling to Phú Quý - the island has a border guard post and document checks do occur at the pier. Make sure your visa has sufficient validity for the trip dates",
   ],
   content: {
     intro:

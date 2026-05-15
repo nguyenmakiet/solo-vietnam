@@ -15,7 +15,7 @@ export const paSyWaterfall: Location = {
   tags: ["💧 Remote Waterfall", "🌿 Primary Forest", "🥾 Off the Beaten Path", "📸 Photography"],
   bestTime: "Oct - Dec (end of rainy season when water flow is at maximum; dry season Jan - Aug reduces flow significantly)",
   bestMonths: [10, 11, 12],
-  entranceFee: "Free",
+  entranceFee: "20,000 VND/person; children under 1.2m free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.59512835252321,108.25679237041005",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775832954200!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHlnNmlHelFF!2m2!1d14.59510150259714!2d108.2567019742836!3f12.79420576998577!4f4.785945864267774!5f0.7820865974627469", },

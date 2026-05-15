@@ -15,7 +15,7 @@ export const mauSonMountain: Location = {
   tags: ["❄️ Snow in Vietnam", "🌄 Cloud Sea", "🏔️ Northeast Highlands", "🌡️ Subalpine Climate"],
   bestTime: "Nov – Feb (cold season; possible frost and snow Dec – Jan); Sep – Oct (cloud sea after rains)",
   bestMonths: [1, 2, 9, 10, 11, 12],
-  entranceFee: "~20,000 VND",
+  entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=21.933300,106.916700",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775378697465!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzQxYm0yU1E.!2m2!1d21.84999287075887!2d106.9163649641276!3f144.1394404892482!4f-1.071773952381463!5f0.7820865974627469", },

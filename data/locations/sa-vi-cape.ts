@@ -15,7 +15,7 @@ export const saViCape: Location = {
   tags: ["🇻🇳 Northeast Tip of Vietnam", "🌅 First Sunrise in the North", "📍 Border Marker", "🏖️ Tra Co Beach"],
   bestTime: "Apr – Sep (beach season); any time for the landmark experience",
   bestMonths: [4, 5, 6, 7, 8, 9],
-  entranceFee: "~40,000 VND",
+  entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=21.492220115088482,108.06734019742865",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775883184237!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFpX0tNTWc.!2m2!1d21.49161078074545!2d108.0676277725845!3f163.24784293152072!4f17.06210130501843!5f0.7820865974627469", },

@@ -15,7 +15,7 @@ export const templeOfLiterature: Location = {
   tags: ["🏛️ Vietnam's First University", "📸 Architecture", "🇻🇳 National Heritage", "🎓 Confucian Temple"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat and rain)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
-  entranceFee: "~30,000 VND",
+  entranceFee: "Adults 70,000 VND; children under 16 free; audio guide (foreign language) 100,000 VND",
   openingHours: "Tue – Sun 8:00 – 17:00 (closed Monday)",
   mapUrl: "https://www.google.com/maps?q=21.028500,105.835600",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775379645353!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzY5cV9EU3c.!2m2!1d21.02856098881972!2d105.8358669872788!3f200.2776011926824!4f21.543806128189942!5f0.7820865974627469" },

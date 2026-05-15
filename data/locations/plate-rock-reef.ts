@@ -15,7 +15,7 @@ export const plateRockReef: Location = {
   tags: ["🪨 Basalt Columns", "🌊 Coastal Rock", "📸 Photography", "🌅 Sunrise Spot"],
   bestTime: "Jan – Aug (dry season; avoid Sep – Dec when storms and swells make the reef inaccessible)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "~20,000 VND",
+  entranceFee: "20,000 VND/person; children under 1.2m free",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=13.354005873751277,109.29390981181257",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775879801204!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzZpcmpHc2dF!2m2!1d13.35390672754356!2d109.2939582710656!3f312.6392688288815!4f-44.92045978478256!5f0.7820865974627469", },

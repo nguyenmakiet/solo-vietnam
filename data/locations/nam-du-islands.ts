@@ -15,7 +15,7 @@ export const namDuIslands: Location = {
   tags: ["🏝️ Remote Archipelago", "🤿 Snorkeling", "🌊 Gulf of Thailand", "🐟 Fishing Community"],
   bestTime: "Nov – May (dry season; calm seas and clear water essential for boat access to outer islands)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
-  entranceFee: "Free; boat fares from Rạch Giá apply",
+  entranceFee: "Adults ~226,000 VND / Children 6–11: 170,000 VND (one way) - 2026", 
   openingHours: "Open daily; ferry schedule limited - check in advance",
   mapUrl: "https://www.google.com/maps?q=9.683300,104.366700",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775379043954!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzg1dkNlcmdF!2m2!1d9.684440480858816!2d104.3546377025393!3f346.0371056783778!4f7.9069116816580305!5f0.7820865974627469" },

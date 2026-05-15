@@ -15,7 +15,7 @@ export const taVanVillage: Location = {
   tags: ["🏡 Homestay", "🎎 Giáy Culture", "🌾 Rice Terraces", "🥾 Trekking"],
   bestTime: "Sep – Oct (golden terraces) or Mar – Apr (green and clear)",
   bestMonths: [3, 4, 9, 10],
-  entranceFee: "Free (included in Muong Hoa Valley entrance fee)",
+  entranceFee: "75,000 VND/person; children under 1.2m free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=22.2970,103.8730",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775886849350!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdNQ1lyUGVlVkE.!2m2!1d22.30745533667469!2d103.8854287241391!3f50.2784310484462!4f-21.690225135575403!5f0.7820865974627469", },

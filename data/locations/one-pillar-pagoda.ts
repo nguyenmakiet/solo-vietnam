@@ -15,7 +15,7 @@ export const onePillarPagoda: Location = {
   tags: ["🏛️ National Symbol", "🪷 Lotus Pagoda", "👑 11th Century", "📷 Iconic Architecture"],
   bestTime: "Oct - Apr (cool dry season; the pagoda is photogenic year-round but spring lotus blooms enhance the setting)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
-  entranceFee: "Free",
+  entranceFee: "25,000 VND (foreigners)",
   openingHours: "5:00 AM - 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=21.0355,105.8349",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775903078522!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREVsT25xQ0E.!2m2!1d21.03584137507609!2d105.8335868017091!3f51.555339946560935!4f-0.8406551603336254!5f0.7820865974627469", },

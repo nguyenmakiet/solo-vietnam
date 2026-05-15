@@ -15,7 +15,7 @@ export const tayPhuongPagoda: Location = {
   tags: ["🛕 8th-Century Pagoda", "🏛️ National Relic", "🪨 Hilltop Pagoda", "📸 Architecture & Statues"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat on the climb)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
-  entranceFee: "Free (donations accepted)",
+  entranceFee: "10,000 VND",
   openingHours: "Open daily, dawn to dusk",
   mapUrl: "https://www.google.com/maps?q=20.966700,105.667800",
   streetView: { embedUrl: "" },

@@ -15,7 +15,7 @@ export const nguomNgaoCave: Location = {
   tags: ["🪨 Stalactite Cave", "📸 Photography", "🧗 Cave Walk", "🌿 Off the Beaten Path"],
   bestTime: "Oct – Apr (dry season, easier road access)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
-  entranceFee: "~30,000 VND",
+  entranceFee: "30,000 VND/person; children under 1.2m free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.845576774719714,106.70639496631787",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831688135!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzRwX0d6Smc.!2m2!1d22.84543126091632!2d106.7060626709624!3f238.3604917573734!4f11.313244104106744!5f0.7820865974627469", },

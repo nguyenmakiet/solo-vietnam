@@ -15,7 +15,7 @@ export const phuocBinhBeach: Location = {
   tags: ["🏖️ 4km Quiet Coastline", "🎣 Fishing Community Beach", "🌊 Between Long Hải & Hồ Tràm", "📸 Photography"],
   bestTime: "Nov – Apr (dry season; calm sea and cleaner water)",
   bestMonths: [1, 2, 3, 4, 11, 12],
-  entranceFee: "free",
+  entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.516700,109.083300",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775379180220!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREVzZi16TGc.!2m2!1d10.40577629520736!2d107.204322102251!3f264.68371508421393!4f12.454809195563897!5f0.7820865974627469" },

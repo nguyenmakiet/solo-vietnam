@@ -15,7 +15,7 @@ export const poNagarChamTowers: Location = {
   tags: ["🏯 Cham Towers", "⛩️ Active Hindu Temple", "📸 Photography", "🏛️ 8th Century"],
   bestTime: "Year-round; coolest and least humid Jan – Apr",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  entranceFee: "~22,000 VND",
+  entranceFee: "22,000 VND/person; children under 1.2m free",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.265491244831042,109.19565099450733",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775880088570!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDItZG5kdFFF!2m2!1d12.26538809104865!2d109.1953945305622!3f359.41879591222744!4f-26.80009571250155!5f0.7820865974627469", },

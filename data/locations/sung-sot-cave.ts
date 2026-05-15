@@ -15,7 +15,7 @@ export const sungSotCave: Location = {
   tags: ["🪨 Largest Cave in Ha Long", "📸 Photography", "🧗 Hiking", "🌊 UNESCO Heritage"],
   bestTime: "Oct – Dec or Apr – Jun (low crowds, comfortable temperatures)",
   bestMonths: [4, 5, 6, 10, 11, 12],
-  entranceFee: "~300,000 VND (included in most cruise packages)",
+  entranceFee: "250,000 VND (1m–1.4m: 195,000 VND; under 1m: free); boat tour not included (~150,000 VND/person shared)",
   openingHours: "7:30 AM – 4:30 PM (accessible by cruise only)",
   mapUrl: "https://maps.google.com/?q=20.8810,107.1140",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775884925418!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDB2X2lSMGdF!2m2!1d20.84398871403326!2d107.0914762637285!3f111.9154849064907!4f6.519375620023027!5f0.7820865974627469", },

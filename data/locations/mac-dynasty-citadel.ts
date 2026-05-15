@@ -4,11 +4,11 @@ import { heroUrl } from "@/lib/cloudinary"
 export const macDynastyCitadel: Location = {
   slug: "mac-dynasty-citadel",
   name: "Mạc Dynasty Citadel",
-  provinces: ["cao-bang"],
-  destination: "cao-bang",
+  provinces: ["lang-son"],
+  destination: "lang-son",
   lat: "21.857162327899132",
   lng: "106.74889564559105",
-  address: "Thị trấn Hòa Thuận, Quảng Hòa, Cao Bằng",
+  address: "Tô Thị, Tam Thanh, Lạng Sơn, Vietnam",
   type: ["citadel", "history", "heritage"],
   categories: [],
   experiences: ["history", "culture", "photography", "walking-tour"],
@@ -30,23 +30,23 @@ export const macDynastyCitadel: Location = {
     "mac-dynasty-citadel-lang-son-3_fd2guk",
   ],
   seoDescription:
-    "The Mạc Dynasty Citadel in Cao Bằng is one of Vietnam's most overlooked historical sites - a 16th-century mountain stronghold built by the Mạc lords after their retreat from Thăng Long, still partially standing in the borderlands near China.",
+    "The Mạc Dynasty Citadel in Lạng Sơn is a 16th-century mountain fortress built into the ridgelines above the city - one of Vietnam's few remaining feudal military strongholds, designated a National Special Relic in 2013.",
   tips: [
-    "The citadel sits at altitude - mornings can be cold from October to February, bring a layer even if the afternoon feels warm",
-    "Combine with Bản Giốc Waterfall and Ngườm Ngao Cave on a multi-day Cao Bằng loop - the citadel is a natural add-on when passing through Quảng Hòa district",
-    "Signage at the site is limited and mostly in Vietnamese - hiring a local guide in Cao Bằng city before visiting adds significant context to what you're looking at",
-    "The surrounding landscape of limestone karst and rice terraces is as much a reason to visit as the ruins themselves",
-    "Very few foreign tourists come here - locals are genuinely curious and friendly, budget extra time for spontaneous conversations",
+    "The citadel requires climbing roughly 100 stone steps up the hillside - wear proper footwear, the steps can be slippery after rain",
+    "Go early in the morning to avoid crowds and get cleaner views over Lạng Sơn city from the top",
+    "Bring water - there are no vendors at the site itself",
+    "Avoid visiting in winter if possible; temperatures in Lạng Sơn can drop significantly and the exposed hillside path becomes uncomfortable",
+    "The citadel pairs well with Tam Thanh Cave and Nhị Thanh Cave, both within walking distance in the same ward",
   ],
   content: {
     intro:
-      "The Mạc Dynasty Citadel (Thành Nhà Mạc) is a 16th-century fortification built by the Mạc lords in their mountain stronghold of Cao Bằng after being driven from Thăng Long by the Lê–Trịnh forces in 1592. For nearly a century, the Mạc clan controlled this remote border region and constructed a series of citadels to defend their territory - the Quảng Hòa citadel is among the best-preserved remnants of this period. Stone walls, gate foundations, and ramparts survive across a dramatic karst landscape that made natural military sense: ridgelines, river bends, and sheer cliff faces all incorporated into the defensive design. It is one of the least-visited significant historical sites in northern Vietnam, which is both its main drawback (limited infrastructure, sparse interpretation) and its appeal.",
+      "The Mạc Dynasty Citadel (Thành Nhà Mạc) sits on the hillside above Tam Thanh ward, built between the 16th and mid-17th centuries as the Mạc lords extended their northern stronghold following their retreat from Thăng Long. The fortification was constructed against three mountains - Tô Thị, Lô Cốt, and Mạc Kính Cung - using large stone blocks bonded with sugarcane and honey, a technique that has held for four centuries. Walls stand 4 meters high with loopholes and gated entrances still intact. Designated a National Special Relic in 2013, the citadel is one of the few surviving examples of feudal military architecture in northern Vietnam and the most accessible historical site in Lạng Sơn city.",
     howToGetThere:
-      "Cao Bằng city is the base for visiting the citadel, roughly 300km from Hanoi via National Highway 3 - a journey of 6–7 hours by car or bus. From Cao Bằng city, the citadel in Quảng Hòa district is approximately 30km southeast. Motorbike is the most practical transport for the final stretch, either rented in Cao Bằng or arranged through your guesthouse. The road quality is reasonable by Cao Bằng standards but involves some unpaved sections near the site.",
+      "Lạng Sơn city is approximately 150km from Hanoi, reachable by train or bus in around 3 hours. From the city center, the citadel in Tam Thanh ward is under 2km - easily reached by motorbike taxi or a short ride along Tam Thanh road. The site is walkable from the city center for those who prefer it.",
     whatToExpect:
-      "The citadel is a ruin site rather than a reconstructed attraction - expect partially standing stone walls, overgrown ramparts, and a few preserved gate structures. There is no ticketing booth, no visitor center, and no formal tour infrastructure. What you get instead is direct, unmediated contact with a genuinely old piece of Vietnamese history in a landscape that has changed remarkably little. The local commune around the site is small and agricultural. Allow 1–2 hours to walk the perimeter and explore the main structures.",
+      "The visit involves climbing around 100 stone steps up the mountainside to reach the main citadel structures. At the top, the preserved stone walls, gate foundations, and loopholes give a clear picture of the original defensive layout. The practical reward for the climb is a panoramic view over Lạng Sơn city and the surrounding limestone hills. Allow 1-2 hours including the ascent, time at the top, and descent. The site is maintained but not heavily interpreted - a basic knowledge of the Mạc dynasty adds considerably to the visit.",
     travelTips:
-      "This is a site for travelers who find the absence of tourist infrastructure refreshing rather than frustrating. The Mạc citadel rewards curiosity - knowledge of Vietnamese history, or a decent briefing beforehand, makes the visit significantly richer. If mày is already doing the Cao Bằng loop (Bản Giốc, Ngườm Ngao, Pác Bó), the citadel adds historical depth to what is otherwise a landscape-and-nature itinerary. Don't skip it for time - the detour is short and nothing else in Vietnam covers this particular chapter of history in physical form.",
+      "The citadel sits in the same area as Tam Thanh Cave and Nhị Thanh Cave, making it a natural half-day circuit through Tam Thanh ward. Most visitors to Lạng Sơn focus on the caves and the Kỳ Lừa market, leaving the citadel relatively quiet - an advantage for those who want to move at their own pace. The steps are manageable but uneven; take them slowly on the descent.",
   },
   insights: {
     highlights: [

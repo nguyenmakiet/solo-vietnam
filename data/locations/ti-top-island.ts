@@ -15,7 +15,7 @@ export const tiTopIsland: Location = {
   tags: ["🏖️ Crescent Beach", "🏔️ Summit Viewpoint", "🛶 Kayaking", "📸 Photography"],
   bestTime: "Sep – Nov or Mar – May (clear skies, fewer domestic crowds)",
   bestMonths: [3, 4, 5, 9, 10, 11],
-  entranceFee: "Included in Ha Long Bay Route 2 sightseeing ticket",
+  entranceFee: "50,000 VND/person; children under 1.2m free (Included in Ha Long Bay sightseeing ticket)",
   openingHours: "Open during cruise hours (typically 7:30 AM – 5:00 PM)",
   mapUrl: "https://maps.google.com/?q=20.8658,107.1020",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775889205422!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1QtLUROcmdF!2m2!1d20.85786593775521!2d107.0809216448357!3f4.27079449322294!4f-13.171432863232567!5f0.7820865974627469", },

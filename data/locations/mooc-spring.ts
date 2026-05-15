@@ -15,7 +15,7 @@ export const moocSpring: Location = {
   tags: ["💧 Natural Spring Pool", "🏊 Swimming", "🌿 Jungle", "📸 Photography"],
   bestTime: "Feb – Aug (dry season, clearest water; avoid Sep – Nov when spring floods)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "~80,000 VND",
+  entranceFee: "80,000 VND; full tour package: Adults 180,000 VND / Children 100,000 VND",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.556813119452748,106.23884445637982",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775830115139!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDI0c3FnY2c.!2m2!1d17.55613126585957!2d106.2367217887626!3f101.45606563519549!4f-8.60779153312464!5f0.7820865974627469", },

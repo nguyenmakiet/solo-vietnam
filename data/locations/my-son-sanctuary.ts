@@ -15,7 +15,7 @@ export const mySonSanctuary: Location = {
   tags: ["🏛️ UNESCO Heritage", "🛕 Cham Temples", "📸 Photography", "🌿 Jungle Ruins"],
   bestTime: "Feb – Aug (dry season; the site floods and paths become muddy in the Oct – Jan wet season)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
-  entranceFee: "~150,000 VND",
+  entranceFee: "International: 150,000 VND (children 5–15: 50,000 VND); under 5 free",
   openingHours: "6:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=15.76310079629061,108.12417516881945",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831507830!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0VndUdlZmc.!2m2!1d15.79072042184105!2d108.1078710160091!3f212.6383059632224!4f13.95153636340325!5f0.7820865974627469", },
