@@ -4,7 +4,6 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tacSayChurch: Location = {
   slug: "tac-say-church",
   name: "Father Diep Shrine",
-  status: "",
   provinces: ["bac-lieu"],
   destination: "",
   lat: "9.221890887161383",
