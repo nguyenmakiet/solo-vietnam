@@ -112,6 +112,7 @@ import { honThomCableCar } from "@/data/locations/hon-thom-cable-car"
 import { honYenIsland } from "@/data/locations/hon-yen-island"
 import { hospitalCave } from "@/data/locations/hospital-cave"
 import { hungTemple } from "@/data/locations/hung-temple"
+import { imperialCitadelOfThangLong } from "@/data/locations/imperial-citadel-of-thang-long"
 import { imperialCity } from "@/data/locations/imperial-city-hue"
 import { independencePalace } from "@/data/locations/independence-palace"
 import { jadeEmperorPagoda } from "@/data/locations/jade-emperor-pagoda"
@@ -359,6 +360,7 @@ export const allLocations: Location[] = [
   honYenIsland,
   hospitalCave,
   hungTemple,
+  imperialCitadelOfThangLong,
   imperialCity,
   independencePalace,
   jadeEmperorPagoda,

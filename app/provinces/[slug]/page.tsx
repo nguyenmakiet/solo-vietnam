@@ -3,6 +3,8 @@ import { activeLocations } from "@/data/all-locations"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 
+const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
+
 export async function generateStaticParams() {
   return provinces.map((p) => ({ slug: p.slug }))
 }
@@ -14,9 +16,10 @@ export async function generateMetadata({
 }) {
   const { slug } = await params
   const province = provinces.find((p) => p.slug === slug)
+  const isMunicipal = MUNICIPAL_CITIES.includes(slug)
 
   const description = province
-    ? `Explore ${province.name} as a solo traveler - discover top attractions, local tips, best time to visit, and hidden gems.`
+    ? `Explore ${province.name} ${isMunicipal ? "City" : "Province"} as a solo traveler - discover top attractions, local tips, best time to visit, and hidden gems.`
     : "Explore this province in Vietnam with practical tips for solo travelers."
 
   return {
@@ -34,6 +37,10 @@ export default async function ProvincePage({
   const { slug } = await params
   const province = provinces.find((p) => p.slug === slug)
   if (!province) return notFound()
+
+  const isMunicipal = MUNICIPAL_CITIES.includes(slug)
+  const pageLabel = isMunicipal ? "City Guide" : "Province Guide"
+  const titleSuffix = isMunicipal ? "City" : "Province"
 
   const provinceLocations = activeLocations.filter((l) =>
     l.provinces.includes(slug)
@@ -245,8 +252,8 @@ export default async function ProvincePage({
             }} />
           )}
           <div className="hero-inner">
-            <div className="hero-badge">{regionEmoji} {regionLabel} · Province Guide</div>
-            <h1>{province.name} Province</h1>
+            <div className="hero-badge">{regionEmoji} {regionLabel} · {pageLabel}</div>
+            <h1>{province.name} {titleSuffix}</h1>
             {province.description && (
               <p className="hero-desc">{province.description}</p>
             )}

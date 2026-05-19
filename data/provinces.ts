@@ -3533,7 +3533,7 @@ export const provinces: Province[] = [
   {
     slug: "ho-chi-minh-city",
     heroImage: heroUrl("sai-gon_vm2gku"),
-    name: "TP. Hồ Chí Minh",
+    name: "Hồ Chí Minh",
     region: "south",
     description: "Hồ Chí Minh City - still called Sài Gòn by everyone who lives there - is Vietnam's engine room, a city of 10 million people that never fully sleeps. The former capital of South Vietnam pulses with an energy unlike anywhere else in the country: rooftop bars above French colonial facades, dawn markets operating since the 1800s, and a street food culture so dense that entire alleys specialise in a single dish. For solo travelers, Sài Gòn is simultaneously the easiest city in Vietnam to navigate and the hardest to leave.",
     capital: "Quận 1",
