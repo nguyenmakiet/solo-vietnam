@@ -6,6 +6,7 @@ import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { anBinhIsland } from "@/data/locations/an-binh-island"
 import { anHaiCommunalHouse } from "@/data/locations/an-hai-communal-house"
 import { anVinhCommunalHouse } from "@/data/locations/an-vinh-communal-house"
+import { b52Wreck } from "@/data/locations/b52-wreck"
 import { baBeLake } from "@/data/locations/ba-be-lake"
 import { baDanhPagoda } from "@/data/locations/ba-danh-pagoda"
 import { baDenMountain } from "@/data/locations/ba-den-mountain"
@@ -133,6 +134,7 @@ import { lanHaBay } from "@/data/locations/lan-ha-bay"
 import { langbiangMountain } from "@/data/locations/langbiang-mountain"
 import { linhPhuocPagoda } from "@/data/locations/linh-phuoc-pagoda"
 import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
+import { longBienBridge } from "@/data/locations/long-bien-bridge"
 import { longSonPagoda } from "@/data/locations/long-son-pagoda"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
 import { lungPo } from "@/data/locations/lung-po-red-river-source"
@@ -169,10 +171,12 @@ import { ongCopBridge } from "@/data/locations/ong-cop-bridge"
 import { paSyWaterfall } from "@/data/locations/pa-sy-waterfall"
 import { pacBoHistoricSite } from "@/data/locations/pac-bo-historic-site"
 import { paradiseCave } from "@/data/locations/paradise-cave"
+import { phatDiemCathedral } from "@/data/locations/phat-diem-cathedral"
 import { phiLiengWaterfall } from "@/data/locations/phi-lieng-waterfall"
 import { phongNamValley } from "@/data/locations/phong-nam-valley"
 import { phongNhaBotanicGarden } from "@/data/locations/phong-nha-botanic-garden"
 import { phongNhaCave } from "@/data/locations/phong-nha-cave"
+import { phungHungMuralStreet } from "@/data/locations/phung-hung-mural-street"
 import { phuocBinhBeach } from "@/data/locations/phuoc-binh-beach"
 import { phuocHaiFishingVillage } from "@/data/locations/phuoc-hai-fishing-village"
 import { phuocTinhFishingVillage } from "@/data/locations/phuoc-tinh-fishing-village"
@@ -194,6 +198,7 @@ import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sShapeRiceTerraces } from "@/data/locations/s-shape-rice-terraces"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
+import { tacSayChurch } from "@/data/locations/tac-say-church"
 import { taDungLake } from "@/data/locations/ta-dung-lake"
 import { taHienStreet } from "@/data/locations/ta-hien-street"
 import { taNangPhanDungTrek } from "@/data/locations/ta-nang-phan-dung-trek"
@@ -226,6 +231,7 @@ import { tuyenLamLake } from "@/data/locations/tuyen-lam-lake"
 import { vanLongNatureReserve } from "@/data/locations/van-long-nature-reserve"
 import { vietHaiVillage } from "@/data/locations/viet-hai-village"
 import { vietnamMilitaryHistoryMuseum } from "@/data/locations/vietnam-military-history-museum"
+import { vietnamMuseumOfEthnology } from "@/data/locations/vietnam-museum-of-ethnology"
 import { vinpearlCableCar } from "@/data/locations/vinpearl-cable-car"
 import { vinpearlSafari } from "@/data/locations/vinpearl-safari"
 import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
@@ -247,6 +253,7 @@ export const allLocations: Location[] = [
   anBinhIsland,
   anHaiCommunalHouse,
   anVinhCommunalHouse,
+  b52Wreck,
   baBeLake,
   baDanhPagoda,
   baDenMountain,
@@ -374,6 +381,7 @@ export const allLocations: Location[] = [
   langbiangMountain,
   linhPhuocPagoda,
   loLoChaiVillage,
+  longBienBridge,
   longSonPagoda,
   lungCuFlagTower,
   lungPo,
@@ -410,10 +418,12 @@ export const allLocations: Location[] = [
   paSyWaterfall,
   pacBoHistoricSite,
   paradiseCave,
+  phatDiemCathedral,
   phiLiengWaterfall,
   phongNamValley,
   phongNhaBotanicGarden,
   phongNhaCave,
+  phungHungMuralStreet,
   phuocBinhBeach,
   phuocHaiFishingVillage,
   phuocTinhFishingVillage,
@@ -435,6 +445,7 @@ export const allLocations: Location[] = [
   sonTraPeninsula,
   sShapeRiceTerraces,
   sungSotCave,
+  tacSayChurch,
   taDungLake,
   taHienStreet,
   taNangPhanDungTrek,
@@ -467,6 +478,7 @@ export const allLocations: Location[] = [
   vanLongNatureReserve,
   vietHaiVillage,
   vietnamMilitaryHistoryMuseum,
+  vietnamMuseumOfEthnology,
   vinpearlCableCar,
   vinpearlSafari,
   vinWondersPhuQuoc,
