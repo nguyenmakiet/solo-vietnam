@@ -6,12 +6,12 @@ import "./about.css"
 export const metadata: Metadata = {
   title: "About | Solo in Vietnam",
   description:
-    "Aki Nguyen documents Vietnam's 63 provinces - famous places and the ones no one writes about - at soloinvietnam.com.",
+    "Nguyen Nguyen documents Vietnam's 63 provinces - famous places and the ones no one writes about - at soloinvietnam.com.",
   alternates: { canonical: "https://www.soloinvietnam.com/about" },
   openGraph: {
     title: "About | Solo in Vietnam",
     description:
-      "Aki Nguyen documents Vietnam's 63 provinces - famous places and the ones no one writes about - at soloinvietnam.com.",
+      "Nguyen Nguyen documents Vietnam's 63 provinces - famous places and the ones no one writes about - at soloinvietnam.com.",
   },
 }
 
@@ -31,7 +31,7 @@ export default function AboutPage() {
                 Still chasing that feeling.
               </em>
             </p>
-            <p className="about-signature">– Aki</p>
+            <p className="about-signature">– Nguyen Nguyen</p>
           </div>
 
           <div className="about-hero-image">
@@ -42,6 +42,7 @@ export default function AboutPage() {
               className="object-cover"
               priority
             />
+            <div className="about-hero-image-fade" />
           </div>
         </div>
 
@@ -63,7 +64,7 @@ export default function AboutPage() {
         <div className="about-who-image">
           <Image
             src="https://res.cloudinary.com/dl5kqhspv/image/upload/about-me-2_zjcsvk.jpg"
-            alt="Aki Nguyen - soloinvietnam.com"
+            alt="Nguyen Nguyen - soloinvietnam.com"
             fill
             className="object-cover"
           />
@@ -71,7 +72,7 @@ export default function AboutPage() {
 
         <div className="about-who-text">
           <div className="about-section-eyebrow">Who I am</div>
-          <h2>My name is Aki Nguyen.</h2>
+          <h2>My name is Nguyen Nguyen.</h2>
           <p>
             I&apos;m Vietnamese, born and raised along the coast of the Mekong
             Delta in southwestern Vietnam.

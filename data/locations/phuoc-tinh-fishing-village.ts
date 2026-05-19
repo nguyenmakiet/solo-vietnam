@@ -4,8 +4,8 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuocTinhFishingVillage: Location = {
   slug: "phuoc-tinh-fishing-village",
   name: "Phước Tỉnh Fishing Village",
-  provinces: ["ba-ria-vung-tau"],
-  destination: "vung-tau",
+  provinces: ["vung-tau"],
+  destination: "",
   lat: "10.402412684439296",
   lng: "107.17863802885124",
   address: "Phước Tỉnh, Long Điền, Bà Rịa - Vũng Tàu",

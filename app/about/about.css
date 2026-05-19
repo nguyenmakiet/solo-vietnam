@@ -65,6 +65,21 @@
   max-width: 1180px;
   margin: 0 auto;
 }
+.about-hero-image {
+  position: relative; /* đảm bảo cái này có */
+}
+
+.about-hero-image-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to left,
+    transparent 40%,
+    #f5f0e8 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
 .about-hero-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;

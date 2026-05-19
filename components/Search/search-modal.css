@@ -14,6 +14,7 @@
   padding: 72px 16px 16px;
   backdrop-filter: blur(3px);
   animation: sm-fade-in 0.12s ease;
+  z-index: 9999;
 }
 
 @keyframes sm-fade-in {

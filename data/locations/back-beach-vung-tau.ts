@@ -4,8 +4,8 @@ import { heroUrl } from "@/lib/cloudinary"
 export const backBeachVungTau: Location = {
   slug: "back-beach-vung-tau",
   name: "Back Beach Vũng Tàu",
-  provinces: ["ba-ria-vung-tau"],
-  destination: "vung-tau",
+  provinces: ["vung-tau"],
+  destination: "",
   lat: "10.345965126464138",
   lng: "107.09780711962715",
   address: "Thùy Vân, TP. Vũng Tàu, Bà Rịa - Vũng Tàu",
