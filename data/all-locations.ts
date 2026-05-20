@@ -42,6 +42,7 @@ import { canTiBridge } from "@/data/locations/can-ti-bridge"
 import { capeCaNa } from "@/data/locations/cape-ca-na"
 import { catBaCannonFort } from "@/data/locations/cat-ba-cannon-fort"
 import { catBaNationalPark } from "@/data/locations/cat-ba-national-park"
+import { catBaTown } from "@/data/locations/cat-ba-town"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
 import { catCoBeach } from "@/data/locations/cat-co-beach"
 import { catTienNationalPark } from "@/data/locations/cat-tien-national-park"
@@ -64,6 +65,7 @@ import { dinhMountain } from "@/data/locations/dinh-mountain"
 import { docLetBeach } from "@/data/locations/doc-let-beach"
 import { doiNhaiBeach } from "@/data/locations/doi-nhai-beach"
 import { donVillage } from "@/data/locations/don-village"
+import { dongVanMarket } from "@/data/locations/dong-van-market"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
 import { dragonBridge } from "@/data/locations/dragon-bridge"
 import { drayNurDraySapWaterfalls } from "@/data/locations/dray-nur-dray-sap-waterfalls"
@@ -127,6 +129,7 @@ import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { khemBeach } from "@/data/locations/khem-beach"
 import { khoMuongCave } from "@/data/locations/kho-muong-cave"
 import { khoMuongVillage } from "@/data/locations/kho-muong-village"
+import { km0HaGiang } from "@/data/locations/km0-ha-giang"
 import { konTumWoodenChurch } from "@/data/locations/kon-tum-wooden-church"
 import { kyCoBeach } from "@/data/locations/ky-co-beach"
 import { laNgauStream } from "@/data/locations/la-ngau-stream"
@@ -190,6 +193,7 @@ import { quanBaHeavenGate } from "@/data/locations/quan-ba-heaven-gate"
 import { quanBaTwinMountains } from "@/data/locations/quan-ba-twin-mountains"
 import { quangTriAncientCitadel } from "@/data/locations/quang-tri-ancient-citadel"
 import { rachVemFishingVillage } from "@/data/locations/rach-vem-fishing-village"
+import { radioTowerCatBa } from "@/data/locations/radio-tower-cat-ba"
 import { redSandDunes } from "@/data/locations/red-sand-dunes"
 import { saigonCentralPostOffice } from "@/data/locations/saigon-central-post-office"
 import { saViCape } from "@/data/locations/sa-vi-cape"
@@ -199,6 +203,7 @@ import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sShapeRiceTerraces } from "@/data/locations/s-shape-rice-terraces"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
+import { sunworldBeachCatBa } from "@/data/locations/sunworld-beach-cat-ba"
 import { tacSayChurch } from "@/data/locations/tac-say-church"
 import { taDungLake } from "@/data/locations/ta-dung-lake"
 import { taHienStreet } from "@/data/locations/ta-hien-street"
@@ -290,6 +295,7 @@ export const allLocations: Location[] = [
   capeCaNa,
   catBaCannonFort,
   catBaNationalPark,
+  catBaTown,
   catCatVillage,
   catCoBeach,
   catTienNationalPark,
@@ -312,6 +318,7 @@ export const allLocations: Location[] = [
   docLetBeach,
   doiNhaiBeach,
   donVillage,
+  dongVanMarket,
   dongVanOldTown,
   dragonBridge,
   drayNurDraySapWaterfalls,
@@ -375,6 +382,7 @@ export const allLocations: Location[] = [
   khemBeach,
   khoMuongCave,
   khoMuongVillage,
+  km0HaGiang,
   konTumWoodenChurch,
   kyCoBeach,
   laNgauStream,
@@ -438,6 +446,7 @@ export const allLocations: Location[] = [
   quanBaTwinMountains,
   quangTriAncientCitadel,
   rachVemFishingVillage,
+  radioTowerCatBa,
   redSandDunes,
   saigonCentralPostOffice,
   saViCape,
@@ -447,6 +456,7 @@ export const allLocations: Location[] = [
   sonTraPeninsula,
   sShapeRiceTerraces,
   sungSotCave,
+  sunworldBeachCatBa,
   tacSayChurch,
   taDungLake,
   taHienStreet,
