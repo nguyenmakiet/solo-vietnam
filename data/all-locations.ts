@@ -4,6 +4,7 @@ import { amTienCave } from "@/data/locations/am-tien-cave"
 import { angelEyeMountain } from "@/data/locations/angel-eye-mountain"
 import { anBangBeach } from "@/data/locations/an-bang-beach"
 import { anBinhIsland } from "@/data/locations/an-binh-island"
+import { anNhutRiceFields } from "@/data/locations/an-nhut-rice-fields"
 import { anHaiCommunalHouse } from "@/data/locations/an-hai-communal-house"
 import { anVinhCommunalHouse } from "@/data/locations/an-vinh-communal-house"
 import { b52Wreck } from "@/data/locations/b52-wreck"
@@ -48,12 +49,14 @@ import { catCoBeach } from "@/data/locations/cat-co-beach"
 import { catTienNationalPark } from "@/data/locations/cat-tien-national-park"
 import { chuaChanMountain } from "@/data/locations/chua-chan-mountain"
 import { coThachBeach } from "@/data/locations/co-thach-beach"
+import { coToIsland } from "@/data/locations/co-to-island"
 import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
 import { cuChiTunnels } from "@/data/locations/cu-chi-tunnels"
 import { cuMiBeach } from "@/data/locations/cu-mi-beach"
 import { cuaDaiBeach } from "@/data/locations/cua-dai-beach"
+import { cuaTuStream } from "@/data/locations/cua-tu-stream"
 import { daPloaStream } from "@/data/locations/da-ploa-stream"
 import { dalatRailwayStation } from "@/data/locations/dalat-railway-station"
 import { damTrauBeach } from "@/data/locations/dam-trau-beach"
@@ -67,6 +70,7 @@ import { doiNhaiBeach } from "@/data/locations/doi-nhai-beach"
 import { donVillage } from "@/data/locations/don-village"
 import { dongVanMarket } from "@/data/locations/dong-van-market"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
+import { doQuyenWaterfall } from "@/data/locations/do-quyen-waterfall"
 import { dragonBridge } from "@/data/locations/dragon-bridge"
 import { drayNurDraySapWaterfalls } from "@/data/locations/dray-nur-dray-sap-waterfalls"
 import { duGiaVillage } from "@/data/locations/du-gia-village"
@@ -147,6 +151,7 @@ import { macDynastyCitadel } from "@/data/locations/mac-dynasty-citadel"
 import { maPiLengPass } from "@/data/locations/ma-pi-leng-pass"
 import { mangLangChurch } from "@/data/locations/mang-lang-church"
 import { masaraHill } from "@/data/locations/masara-hill"
+import { marbleMountains } from "@/data/locations/marble-mountains"
 import { mauDueTown } from "@/data/locations/mau-due-town"
 import { mauSonMountain } from "@/data/locations/mau-son-mountain"
 import { meoVacTown } from "@/data/locations/meo-vac-town"
@@ -258,6 +263,7 @@ export const allLocations: Location[] = [
   anBangBeach,
   anBinhIsland,
   anHaiCommunalHouse,
+  anNhutRiceFields,
   anVinhCommunalHouse,
   b52Wreck,
   baBeLake,
@@ -301,12 +307,14 @@ export const allLocations: Location[] = [
   catTienNationalPark,
   chuaChanMountain,
   coThachBeach,
+  coToIsland,
   conDaoNationalPark,
   conDaoPrison,
   crazyHouse,
   cuChiTunnels,
   cuMiBeach,
   cuaDaiBeach,
+  cuaTuStream,
   daPloaStream,
   dalatRailwayStation,
   damTrauBeach,
@@ -320,6 +328,7 @@ export const allLocations: Location[] = [
   donVillage,
   dongVanMarket,
   dongVanOldTown,
+  doQuyenWaterfall,
   dragonBridge,
   drayNurDraySapWaterfalls,
   duGiaVillage,
@@ -400,6 +409,7 @@ export const allLocations: Location[] = [
   maPiLengPass,
   mangLangChurch,
   masaraHill,
+  marbleMountains,
   mauDueTown,
   mauSonMountain,
   meoVacTown,

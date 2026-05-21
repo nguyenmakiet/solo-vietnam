@@ -70,7 +70,6 @@ export const hospitalCave: Location = {
     ],
     faq: [
       { question: "How long does a visit take?", answer: "20-45 minutes depending on guide pace and exploration. Most visitors spend 20-30 minutes." },
-      { question: "What is the entrance fee?", answer: "50,000 VND per person. Guided tour is included with ticket; tipping guides is appreciated but optional." },
       { question: "Is the guide necessary to understand the site?", answer: "Guides significantly enhance experience through historical explanations. Mannequins and displays provide basic context, but guides add valuable details." },
     ],
     sentiment: {

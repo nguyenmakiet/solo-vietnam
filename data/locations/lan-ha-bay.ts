@@ -27,7 +27,6 @@ export const lanHaBay: Location = {
     "lan-ha-bay-cat-ba-hai-phong-3_zzblzm",
     "lan-ha-bay-cat-ba-hai-phong-2_da4xiq",
     "lan-ha-bay-cat-ba-hai-phong-1_anc0hl",
-    "",
   ],
   seoDescription:
     "Lan Hà Bay is the southern section of the Ha Long Bay karst system - 400 limestone islands, hidden beaches, floating fishing villages, and some of the clearest water in the Gulf of Tonkin, with a fraction of Ha Long's boat traffic and far better kayaking conditions.",
