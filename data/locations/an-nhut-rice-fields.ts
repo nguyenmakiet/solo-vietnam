@@ -19,10 +19,12 @@ export const anNhutRiceFields: Location = {
   openingHours: "Open all day. Food stalls and market vendors: approximately 4:00 PM - 10:00 PM on weekends, but vendors close earlier if it's quiet - in practice most stalls wind down by 8:30 PM.",
   mapUrl: "https://www.google.com/maps?q=10.484091864450695,107.23620766445066",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1779384141175!6m8!1m7!1stwa-7ckZwpCOc-_eRSd21w!2m2!1d10.48812927808965!2d107.2399287256004!3f3.31701900229979!4f-4.626232286810648!5f0.7820865974627469", },
-  heroImage: heroUrl("XXXX"),
+  heroImage: heroUrl("an-nhut-rice-fields-vung-tau-4_f5p6mt"),
   gallery: [
-    "",
-    "",
+    "an-nhut-rice-fields-vung-tau-4_f5p6mt",
+    "an-nhut-rice-fields-vung-tau-2_ffrfnt",
+    "an-nhut-rice-fields-vung-tau_ya7gii",
+    "an-nhut-rice-fields-vung-tau-3_fpbov0",
   ],
   seoDescription:
     "An Nhứt Rice Fields in Long Điền district, Bà Rịa - Vũng Tàu province, is a 2,000-hectare countryside escape near Vũng Tàu city - a 2km winding road through golden rice paddies, a lone tree landmark, drone photography spot, and a weekend countryside food market with bamboo stalls from 4 PM.",

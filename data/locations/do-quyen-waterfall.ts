@@ -3,8 +3,8 @@ import { heroUrl } from "@/lib/cloudinary"
 
 export const doQuyenWaterfall: Location = {
   slug: "do-quyen-waterfall",
-  name: "Thác Đỗ Quyên (Rhododendron Waterfall)",
-  provinces: ["thua-thien-hue"],
+  name: "Do Quyen waterfall (Rhododendron Waterfall)",
+  provinces: ["hue"],
   destination: "hue",
   lat: "16.18620793431291",
   lng: "107.84888865318162",
@@ -19,8 +19,10 @@ export const doQuyenWaterfall: Location = {
   openingHours: "Park hours: 7:00 AM - 5:00 PM daily. Trail access subject to weather conditions.",
   mapUrl: "https://www.google.com/maps?q=16.18620793431291,107.84888865318162",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1779384805645!6m8!1m7!1sCAoSHENJQUJJaENKdmo5WWxPZG1KNHlYclJDNUxzei0.!2m2!1d16.18606373242641!2d107.8488672345083!3f305.9586043170717!4f-22.96141349797186!5f0.7820865974627469", },
-  heroImage: heroUrl("XXXX"),
-  gallery: [],
+  heroImage: heroUrl("do-quyen-waterfall_aoce9z"),
+  gallery: [
+    "do-quyen-waterfall_aoce9z",
+  ],
   seoDescription:
     "Thác Đỗ Quyên (Rhododendron Waterfall) in Bạch Mã National Park is one of the tallest waterfalls in central Vietnam, cascading over 300 metres down a cliff face inside primary mountain forest - reached by a challenging trail from the park road at Km 16, with rhododendron flowers lining the path in March and April.",
   tips: [

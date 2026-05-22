@@ -19,8 +19,14 @@ export const marbleMountains: Location = {
   openingHours: "7:00 AM - 5:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=16.00395789717095,108.26316049550601",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1779385030215!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0VwYmYxN0FF!2m2!1d16.00362663782689!2d108.2630724485214!3f301.3091073897597!4f8.966566183691555!5f0.7820865974627469", },
-  heroImage: heroUrl("XXXX"),
-  gallery: [],
+  heroImage: heroUrl("marble-mountains-da-nang_mhh10p"),
+  gallery: [
+    "marble-mountains-da-nang_mhh10p",
+    "marble-mountains-da-nang-2_oub7mi",
+    "marble-mountains_psurqf",
+    "marble-mountains-da-nang-4_j6ephg",
+    "marble-mountains-da-nang_mhh10p",
+  ],
   seoDescription:
     "Ngũ Hành Sơn (Marble Mountains) in Đà Nẵng is a cluster of five marble and limestone peaks with caves, Buddhist shrines, ancient Cham sanctuaries, and sweeping sea views - most famously the Huyền Không Cave where sunlight shafts through a collapsed ceiling onto Buddhist altars below.",
   tips: [

@@ -19,8 +19,13 @@ export const sonTraPeninsula: Location = {
   openingHours: "Open daily; best visited 5:30–9:00 AM for wildlife",
   mapUrl: "https://www.google.com/maps?q=16.122257078414076,108.27692670069526",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775884649416!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRGtfTml3amdF!2m2!1d16.11998621388252!2d108.2759459200039!3f170.89627864340687!4f-0.8387997478284603!5f0.7820865974627469", },
-  heroImage: heroUrl("son-tra-peninsula-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("son-tra-peninsula-da-nang-4_wfanx0"),
+  gallery: [
+    "son-tra-peninsula-da-nang_fge112",
+    "son-tra-peninsula-da-nang-2_rbvyqs",
+    "son-tra-peninsula-da-nang-3_ocp6tc",
+    "son-tra-peninsula-da-nang-4_wfanx0",
+  ],
   seoDescription:
     "Sơn Trà Peninsula is Đà Nẵng's wild backyard - a 4,400-hectare nature reserve of dense jungle rising directly from the sea, home to one of Vietnam's last populations of the endangered red-shanked douc langur, and connected to the city by a scenic coastal road.",
   tips: [

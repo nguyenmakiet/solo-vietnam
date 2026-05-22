@@ -19,8 +19,11 @@ export const myKheBeach: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=16.056869445948998,108.24813952737027",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831138486!6m8!1m7!1sCAoSHENJQUJJaENzR3h1UmROQ2lDd3pRTXBISkVaQzA.!2m2!1d16.06617329164233!2d108.2497981810549!3f346.93574064018156!4f-17.832242318034545!5f0.7820865974627469", },
-  heroImage: heroUrl("my-khe-beach-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("my-khe-beach-da-nang_wqeiwz"),
+  gallery: [
+    "my-khe-beach-da-nang_wqeiwz",
+    "my-khe-beach-da-nang-2_kz3cij",
+  ],
   seoDescription:
     "Mỹ Khê Beach is Đà Nẵng's most famous stretch of coastline - 9km of white sand on the South China Sea, named by Forbes as one of the world's most luxurious beaches, and the closest major beach to a Vietnamese city centre.",
   tips: [
