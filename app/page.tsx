@@ -103,7 +103,7 @@ export default function Home() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
                 </svg>
               </div>
-              <div className="home-hero-stat-num">234</div>
+              <div className="home-hero-stat-num">250</div>
               <div className="home-hero-stat-label">Locations mapped</div>
             </div>
             <div className="home-hero-stat">
@@ -130,7 +130,7 @@ export default function Home() {
           <div className="home-map-wrap">
             <div className="home-map-heading">
               <h2>Explore Vietnam on the Map</h2>
-              <p>Discover 200+ places across the country</p>
+              <p>Discover 250+ places across the country</p>
             </div>
             <VietnamMap />
             <div className="home-map-hint">
