@@ -279,3 +279,9 @@
     max-height: 80vh;
   }
 }
+
+.sm-highlight {
+  background: transparent;
+  color: var(--color-primary, #e67e22);
+  font-weight: 600;
+}

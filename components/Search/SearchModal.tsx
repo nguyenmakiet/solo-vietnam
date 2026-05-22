@@ -39,7 +39,6 @@ const TYPE_CONFIG: Record<string, { label: string; cls: string; fallback: string
 
 /**
  * Rewrite any Cloudinary URL to a small 96×96 thumbnail.
- * All items in search-index.json use the standard Cloudinary URL format.
  */
 function toThumb(url: string | undefined): string | undefined {
   if (!url) return undefined
@@ -47,6 +46,33 @@ function toThumb(url: string | undefined): string | undefined {
     /\/image\/upload\/[^/]+\//,
     "/image/upload/w_96,h_96,c_fill,q_auto,f_auto/"
   )
+}
+
+/**
+ * Highlight matched character ranges in a string.
+ * Only highlights if indices are contiguous (avoids weird fuzzy highlights).
+ */
+function highlightName(
+  name: string,
+  indices: readonly [number, number][]
+): React.ReactNode {
+  if (!indices.length) return name
+
+  const parts: React.ReactNode[] = []
+  let last = 0
+
+  for (const [start, end] of indices) {
+    if (start > last) parts.push(name.slice(last, start))
+    parts.push(
+      <mark key={start} className="sm-highlight">
+        {name.slice(start, end + 1)}
+      </mark>
+    )
+    last = end + 1
+  }
+
+  if (last < name.length) parts.push(name.slice(last))
+  return parts
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -61,6 +87,7 @@ export default function SearchModal({ open, onClose }: Props) {
   const [activeIdx, setActiveIdx] = useState(0)
   const [fuse, setFuse] = useState<Fuse<SearchItem> | null>(null)
   const [loading, setLoading] = useState(false)
+  const [matchMap, setMatchMap] = useState<Map<string, readonly [number, number][]>>(new Map())
 
   // ── Load index lazily on first open ───────────────────────────────────────
   useEffect(() => {
@@ -74,6 +101,7 @@ export default function SearchModal({ open, onClose }: Props) {
             keys: ["name", "nameAscii", "description", "tags"],
             threshold: 0.3,
             ignoreLocation: true,
+            includeMatches: true,
           })
         )
         setLoading(false)
@@ -84,7 +112,6 @@ export default function SearchModal({ open, onClose }: Props) {
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden"
-      // Small delay so the modal is mounted before focus
       const t = setTimeout(() => inputRef.current?.focus(), 50)
       return () => clearTimeout(t)
     } else {
@@ -92,6 +119,7 @@ export default function SearchModal({ open, onClose }: Props) {
       setQuery("")
       setResults([])
       setActiveIdx(0)
+      setMatchMap(new Map())
     }
     return () => { document.body.style.overflow = "" }
   }, [open])
@@ -101,10 +129,21 @@ export default function SearchModal({ open, onClose }: Props) {
     if (!fuse || !query.trim()) {
       setResults([])
       setActiveIdx(0)
+      setMatchMap(new Map())
       return
     }
-    const hits = fuse.search(query, { limit: 8 }).map((r) => r.item)
+
+    const rawHits = fuse.search(query, { limit: 8 })
+    const hits = rawHits.map((r) => r.item)
+    const newMatchMap = new Map(
+      rawHits.map((r) => [
+        `${r.item.type}-${r.item.slug}`,
+        r.matches?.find((m) => m.key === "name")?.indices ?? [],
+      ])
+    )
+
     setResults(hits)
+    setMatchMap(newMatchMap)
     setActiveIdx(0)
   }, [query, fuse])
 
@@ -131,7 +170,7 @@ export default function SearchModal({ open, onClose }: Props) {
     }
     window.addEventListener("keydown", onKey)
     return () => window.removeEventListener("keydown", onKey)
-  }, [open, results, activeIdx]) // navigate is stable via useCallback below
+  }, [open, results, activeIdx])
 
   // ── Scroll active item into view ──────────────────────────────────────────
   useEffect(() => {
@@ -226,10 +265,11 @@ export default function SearchModal({ open, onClose }: Props) {
                 const meta = item.province
                   ? item.province.replace(/-/g, " ")
                   : item.region ?? ""
+                const key = `${item.type}-${item.slug}`
 
                 return (
                   <li
-                    key={`${item.type}-${item.slug}`}
+                    key={key}
                     id={`sm-result-${i}`}
                     className={`sm-result${i === activeIdx ? " selected" : ""}`}
                     onMouseEnter={() => setActiveIdx(i)}
@@ -240,7 +280,17 @@ export default function SearchModal({ open, onClose }: Props) {
                     {/* Thumbnail */}
                     <div className="sm-thumb">
                       {thumb ? (
-                        <img src={thumb} alt="" loading="lazy" />
+                        <img
+                          src={thumb}
+                          alt=""
+                          loading="lazy"
+                          onError={(e) => {
+                            const img = e.target as HTMLImageElement
+                            if (!img.src.includes("coming-soon.jpg")) {
+                              img.src = "/images/coming-soon.jpg"
+                            }
+                          }}
+                        />
                       ) : (
                         <span className="sm-thumb-fallback">{cfg.fallback}</span>
                       )}
@@ -248,7 +298,9 @@ export default function SearchModal({ open, onClose }: Props) {
 
                     {/* Name + meta */}
                     <div className="sm-result-text">
-                      <div className="sm-result-name">{item.name}</div>
+                      <div className="sm-result-name">
+                        {highlightName(item.name, matchMap.get(key) ?? [])}
+                      </div>
                       {meta && <div className="sm-result-meta">{meta}</div>}
                     </div>
 
