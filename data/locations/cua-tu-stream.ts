@@ -19,8 +19,10 @@ export const cuaTuStream: Location = {
   openingHours: "Daylight hours - arrive early to complete the trek comfortably",
   mapUrl: "https://www.google.com/maps?q=21.605532505545185,105.5466304981171",
   streetView: { embedUrl: "" },
-  heroImage: heroUrl("XXXX"),
-  gallery: [],
+  heroImage: heroUrl("cua-tu-stream_uyya62"),
+  gallery: [
+    "cua-tu-stream_uyya62",
+  ],
   seoDescription:
     "Suối Cửa Tử in Thái Nguyên province is a 9-gate stream trek through primary forest in Đại Từ district, approximately 2 hours from Hanoi - with natural swimming pools, waterfall jumps, and camping options that make it one of the most accessible wilderness day trips from the capital.",
   tips: [
