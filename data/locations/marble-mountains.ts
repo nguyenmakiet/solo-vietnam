@@ -13,8 +13,8 @@ export const marbleMountains: Location = {
   categories: [],
   experiences: ["history", "culture", "photography", "walking-tours", "trekking"],
   tags: ["🪨 Five Elements Mountains", "🕌 Buddhist Caves", "☀️ Sunbeam Cave", "🏯 Cham Heritage"],
-  bestTime: "Feb - Aug (dry season; Huyen Khong Cave light shafts are best between 9-11 AM on sunny mornings)",
-  bestMonths: [2, 3, 4, 5, 6, 7, 8],
+  bestTime: "Mar - Sep (best weather and clearest light for cave photography; avoid rainy season Oct-Feb when surfaces are slippery and visibility poor)",
+  bestMonths: [3, 4, 5, 6, 7, 8, 9],
   entranceFee: "40,000 VND (Thuy Son mountain). Âm Phủ Cave: additional 20,000 VND. Elevator: 15,000 VND one-way (optional). Children under 6: free.",
   openingHours: "7:00 AM - 5:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=16.00395789717095,108.26316049550601",
@@ -30,22 +30,25 @@ export const marbleMountains: Location = {
   seoDescription:
     "Ngũ Hành Sơn (Marble Mountains) in Đà Nẵng is a cluster of five marble and limestone peaks with caves, Buddhist shrines, ancient Cham sanctuaries, and sweeping sea views - most famously the Huyền Không Cave where sunlight shafts through a collapsed ceiling onto Buddhist altars below.",
   tips: [
-    "Arrive between 9-11 AM on a clear day to catch the sunlight shafts in Huyền Không Cave - the best natural lighting of the site and one of the most photogenic spots in central Vietnam",
-    "The mountain entrance ticket and the Âm Phủ Cave ticket are separate purchases - buy both at the ticket booths near the base. They are treated as completely different sites.",
-    "The elevator on the east side is optional at 15,000 VND one-way - useful for the climb up but walking the stone stairs down is manageable and gives better views",
-    "Dress modestly - shoulders and knees must be covered to enter the pagoda areas. Lightweight coverings are available to borrow or buy at the entrance.",
-    "Marble carving workshops and showrooms line the street approaching the site - the area has been a marble sculpture centre for centuries and the craftsmanship is genuine",
-    "Huyen Khong Cave served as a Việt Cộng field hospital during the American War - ask an older guide to point out the bullet scars on the cave walls",
-    "The site is between Đà Nẵng and Hội An (20 minutes from Da Nang, 35-40 minutes from Hoi An) - convenient to combine in transit between the two cities",
-    "Wear closed-toe shoes with grip - marble and stone surfaces become extremely slippery during and after rain",
+    "The name Ngũ Hành Sơn was given in 1837 by Emperor Minh Mạng, who named each peak after one of the five classical elements based on the natural shape and position of the mountains: Kim (metal), Mộc (wood), Thủy (water), Hỏa (fire), Thổ (earth).",
+    "Best time to visit Huyền Không Cave for the sunlight shaft effect: 11 AM - 12 PM on a clear sunny day - this is when the light falls through the collapsed ceiling most directly onto the altars below",
+    "Best visiting windows to avoid crowds: early morning 6:30-8 AM or late afternoon 3-5 PM",
+    "Only visit on sunny days - rain makes marble and stone surfaces extremely slippery, and the cave light effects are only visible in direct sunlight",
+    "The main caves inside Thủy Sơn: Huyền Không (largest, with the famous sunlight shaft), Tàng Chơn, Vân Thông, and Linh Nham - each has a different character worth exploring",
+    "Âm Phủ Cave is located near Gate 2 (cổng 2) and requires a separate 20,000 VND ticket - it is a descent into a cave carved with Buddhist depictions of heaven, purgatory, and hell",
+    "Elevator option: 15,000 VND one-way. Takes you up quickly with less effort. Walking the stone stairs up feels like trekking - steep and uneven. Many visitors take the elevator up and stairs down for the views.",
+    "From the summit, panoramic views over all of Đà Nẵng city, the coastline, and the sea - worth pausing at the viewpoints rather than rushing through",
+    "Dress modestly - shoulders and knees must be covered to enter pagoda areas. Lightweight coverings are available to buy or borrow at the entrance.",
+    "Marble carving workshops line the approach street - the area has been a marble sculpture centre for centuries and the craftmanship is genuine",
+    "The site is between Đà Nẵng and Hội An (20 minutes from Da Nang, 35-40 minutes from Hoi An) - convenient to stop in transit between the two cities",
   ],
   content: {
     intro:
-      "Ngũ Hành Sơn - the Five Elements Mountains - is a cluster of five marble and limestone peaks rising from the coastal plain of Đà Nẵng's Ngũ Hành Sơn district, approximately 7km south of the city centre and midway between Đà Nẵng and Hội An. The name was given by Emperor Minh Mạng in the early 19th century, with each peak named for one of the five classical elements: Kim (metal), Thủy (water), Mộc (wood), Hỏa (fire), Thổ (earth). Of these, Thủy Sơn (Water Mountain) is the only peak open for public climbing and contains the site's main attractions. The mountains have been a sacred site since the Cham civilisation, and the cave temples and pagodas added by Vietnamese Buddhists and Nguyễn dynasty emperors layer over the earlier Cham sanctuaries. The site's defining experience is Huyền Không Cave - a natural limestone cavern where a section of ceiling collapsed centuries ago, creating an opening through which sunlight falls in long pale shafts onto the Buddhist altars below, illuminating incense smoke in a way that draws visitors specifically to the 9-11 AM window.",
+      "Ngũ Hành Sơn - the Five Elements Mountains - is a cluster of five marble and limestone peaks rising from the coastal plain of Đà Nẵng's Ngũ Hành Sơn district, approximately 7km south of the city centre and midway between Đà Nẵng and Hội An. The name was given by Emperor Minh Mạng in 1837 (the 18th year of his reign), who named each peak after one of the five classical elements based on its natural shape and position: Kim (metal), Mộc (wood), Thủy (water), Hỏa (fire), and Thổ (earth). Of these, Thủy Sơn (Water Mountain) is the only peak open to the public and contains the site's main attractions. The mountains have been a sacred site since the Cham civilisation, and the cave temples added by Vietnamese Buddhists and Nguyễn dynasty emperors layer over the earlier Cham sanctuaries. The site's defining experience is Huyền Không Cave - a natural limestone cavern where a section of ceiling collapsed centuries ago, creating an opening through which sunlight falls in long shafts onto the Buddhist altars below, most dramatically between 11 AM and 12 PM on clear days. Other notable caves within Thủy Sơn include Tàng Chơn, Vân Thông, and Linh Nham, each with a distinct character and Buddhist shrine.",
     howToGetThere:
       "Marble Mountains are located at 81 Huyền Trân Công Chúa street in Ngũ Hành Sơn district, approximately 7km south of central Đà Nẵng. By Grab or taxi from Đà Nẵng city centre, the journey takes 15-20 minutes. By motorbike, follow the coastal road south toward Hội An. From Hội An, the site is approximately 35-40 minutes north by road. The location makes it convenient to stop in transit between the two cities rather than as a separate day trip.",
     whatToExpect:
-      "The visit covers Thủy Sơn peak only - the other four peaks are not open to tourists. The site includes the Linh Ứng Pagoda complex with Buddha statues and altar halls, Huyền Không Cave (the large cave with the collapsed ceiling and sunlight shafts), Tàng Chơn Cave (smaller, darker, with carved Buddhist deities), stone stairs and walkways between the caves and temples, and viewpoints over the coast and Da Nang city. The Âm Phủ Cave at the base is a separate ticket - a descent into a cave carved with Buddhist interpretations of heaven, purgatory, and hell. The marble carving village surrounding the entrance is worth exploring before or after the climb. A full visit including Âm Phủ Cave takes 2-3 hours.",
+      "The visit covers Thủy Sơn peak only - the other four peaks are not open to tourists. The site includes the Linh Ứng Pagoda complex, Huyền Không Cave (the largest cave with the collapsed ceiling and sunlight shafts, best at 11 AM-12 PM), Tàng Chơn Cave, Vân Thông Cave, Linh Nham Cave, stone stairs and walkways between the caves and temples, and viewpoints over all of Đà Nẵng city, the coastline, and the sea. The Âm Phủ Cave at the base near Gate 2 is a separate 20,000 VND ticket - a descent into a cave carved with Buddhist interpretations of heaven, purgatory, and hell. The marble carving village surrounding the entrance is worth exploring before or after the climb. A full visit including Âm Phủ Cave takes 2-3 hours. The stone stairs are steep enough that walking up feels like a genuine trekking effort - the elevator (15,000 VND one-way) is a practical option for those who want to conserve energy for exploring the caves.",
     travelTips:
       "Marble Mountains is one of the most accessible and rewarding half-day activities in central Vietnam and works well as a stop between Đà Nẵng and Hội An rather than a standalone excursion. The combination of the cave light show, the pagoda atmosphere, the war history layers, and the coastal views makes it more layered than most tourist sites of similar scale. Time the visit to arrive by 9 AM to catch the morning sunlight in Huyền Không Cave - this is the single most photographed moment at the site and is only visible on clear mornings.",
   },
@@ -78,7 +81,7 @@ export const marbleMountains: Location = {
       },
       {
         question: "What is the best time of day to visit?",
-        answer: "Arrive by 9 AM for the morning sunbeam effect in Huyen Khong Cave (best on clear days until around 11 AM) and to beat the main tour group arrivals. Early morning also gives the best photography light on the cave shrines.",
+        answer: "For the sunbeam effect in Huyền Không Cave: 11 AM - 12 PM on a clear sunny day is the prime window. For avoiding crowds: early morning 6:30-8 AM or late afternoon 3-5 PM. Only visit on sunny days - rain kills the cave light effects and makes surfaces dangerously slippery.",
       },
     ],
     sentiment: {
