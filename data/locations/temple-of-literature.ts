@@ -34,48 +34,51 @@ export const templeOfLiterature: Location = {
   seoDescription:
     "The Temple of Literature in Hanoi is Vietnam's best-preserved example of traditional Vietnamese architecture - a Confucian temple complex built in 1070 that served as the country's first university for over 700 years, with five courtyards of pavilions, ponds, and stone steles recording the names of doctoral graduates.",
   tips: [
-    "The 82 stone steles in the third courtyard are the most historically significant objects on the site - each one records the names, hometown, and examination results of doctoral graduates from 1484 to 1779, mounted on stone tortoise bases",
-    "Vietnamese students visit before major exams to pray for academic success - the ritual of touching the tortoise heads for luck has worn smooth patches into the stone over centuries, though the practice is now officially discouraged to preserve the steles",
-    "The fifth and final courtyard - the Thái Học house - was reconstructed in 2000 and contains statues of the three kings who established and developed the complex; the original structures were destroyed in the French colonial period",
-    "Arrive before 9:00 AM on weekdays to have the courtyards relatively to yourself - by mid-morning tour groups from hotels fill the main areas",
-    "The site is compact and fully covered in 45 - 60 minutes at a relaxed pace - combine with the Fine Arts Museum two blocks away for a half-day cultural circuit in the Ba Đình area",
+    "Give yourself about 2 hours here - long enough to move through all five courtyards without rushing and actually read the context panels. This is a site where slowing down pays off.",
+    "Walk in and try to picture it as a working institution: this was Vietnam's first national university, operating for 700 years. Students here were preparing for three rounds of imperial examinations - the regional (hương), national (hội), and palace (đình) exams - a system that determined who ran the country.",
+    "The 82 stone steles in the third courtyard are the most important objects on the site. Each one records the names, hometowns, and results of doctoral graduates from 1484 to 1779, mounted on stone tortoise bases. These are UNESCO Memory of the World documents - actual primary records, still legible after 500 years.",
+    "Do not touch the tortoise heads. Many Vietnamese believe rubbing them before an exam brings luck, and the stone has worn smooth in places from centuries of hands. The practice is officially banned - there are guards and cameras - and beyond the rules, it accelerates damage to an irreplaceable heritage site.",
+    "Dress modestly. This is an active place of reverence for many Vietnamese, not just a photo location. No bare shoulders, short shorts, or crop tops.",
+    "Arrive before 9 AM on weekdays to have the courtyards to yourself. By mid-morning, tour groups fill the main areas. Graduation season brings professional photo shoots with lighting rigs that take over entire sections.",
+    "The fifth courtyard - the Thái Học house - was reconstructed in 2000. The original was destroyed during the French colonial period. Worth knowing before you read too much into the 'ancient' atmosphere there.",
+    "The Khuê Văn Các pavilion in the second courtyard is Hanoi's official symbol and appears on the 100,000 VND banknote. It photographs best in morning light from the front gate side.",
   ],
   content: {
     intro:
-      "The Temple of Literature (Văn Miếu - Quốc Tử Giám) was founded in 1070 under Emperor Lý Thánh Tông, initially as a temple dedicated to Confucius, and expanded in 1076 to include the Quốc Tử Giám - Vietnam's first national university, where the children of the royal family and senior mandarins were educated. The institution operated for 700 years under successive dynasties until the French colonial administration replaced it with a Western-style education system in the early 20th century. The physical complex survived largely intact and remains the best-preserved example of traditional Vietnamese architectural design in Hanoi - five sequential courtyards progressing from the main gate to the inner sanctuary, each with its own character and function. The 82 stone doctoral steles, erected between 1484 and 1779, are listed by UNESCO as a Memory of the World documentary heritage and represent the most tangible surviving record of Vietnam's classical examination system.",
+      "The Temple of Literature (Văn Miếu - Quốc Tử Giám) was founded in 1070 under Emperor Lý Thánh Tông as a temple dedicated to Confucius, then expanded six years later to include the Quốc Tử Giám - Vietnam's first national university. For the next 700 years, under the Lý, Trần, and Lê dynasties, this compound trained the scholars and mandarins who administered the country. Entry was through the imperial examination system: three tiers of exams - regional (hương), national (hội), and palace (đình) - that filtered candidates across years of study. The French colonial administration dismantled that system in the early 20th century and replaced it with Western-style education. The physical complex survived largely intact and remains the best-preserved example of traditional Vietnamese architecture in Hanoi. The 82 stone doctoral steles, recording the names of 1,300 graduates between 1484 and 1779, are listed by UNESCO as a Memory of the World heritage document.",
     howToGetThere:
-      "The Temple of Literature is in Đống Đa district, approximately 2km southwest of Hoàn Kiếm Lake in central Hanoi. On foot from the Old Quarter, the walk takes about 25-30 minutes through the French Quarter. By taxi or Grab from Hoàn Kiếm takes 10 minutes. Several bus routes pass on Quốc Tử Giám street. The site is on Văn Miếu Street with the main entrance clearly marked - parking for motorbikes is available on the surrounding streets.",
+      "The Temple of Literature is in Đống Đa district, about 2km southwest of Hoàn Kiếm Lake. Walking from the Old Quarter takes 25-30 minutes through the French Quarter. Grab or taxi from Hoàn Kiếm is around 10 minutes. Several bus routes run along Quốc Tử Giám street. The main entrance is on Văn Miếu Street, clearly signed. Motorbike parking is available on surrounding streets.",
     whatToExpect:
-      "The complex is organized as five successive courtyards entered through a series of gates. The first two courtyards are landscaped gardens leading to the Khuê Văn Các pavilion - the most photographed structure, also depicted on the 100,000 VND banknote. The third courtyard contains the Thiên Quang Tĩnh reflecting pool flanked by the 82 doctoral steles. The fourth courtyard holds the main temple with statues of Confucius and his four principal disciples. The fifth courtyard contains the reconstructed Thái Học ceremonial hall. The architecture throughout uses traditional Vietnamese joinery and tile work, with decorative elements that draw on Chinese Confucian iconography filtered through Vietnamese aesthetic sensibility.",
+      "Five successive courtyards, each passed through a gate, moving from the street entrance to the inner sanctuary. The first two courtyards are landscaped gardens. The second holds the Khuê Văn Các pavilion - Hanoi's city symbol, depicted on the 100,000 VND banknote. The third courtyard has the Thiên Quang Tĩnh reflecting pool and the 82 doctoral steles. The fourth holds the main Confucius temple. The fifth contains the reconstructed Thái Học hall. Budget around 2 hours to move through everything at a pace that lets you read the panels and take in the context - not just the architecture.",
     travelTips:
-      "The Temple of Literature is one of Hanoi's genuinely unmissable sites - not because it is spectacular in the way of Hạ Long Bay or Hội An, but because it is the best physical record of the intellectual and administrative culture that shaped Vietnamese civilization for a millennium. The doctoral steles are the kind of primary historical document that is rarely accessible to casual visitors at any heritage site in the world - names, hometowns, examination dates, and ranks of 1,300 scholars carved in stone and still readable. If mày is doing Hanoi properly rather than just ticking landmarks, the Temple of Literature deserves more than a hurried 20-minute walk-through.",
+      "Văn Miếu carries real weight for Vietnamese people - this is not a decorative heritage site but a place with direct cultural meaning around education, achievement, and national identity. That context shapes how to behave here: the rules around dress and not touching the steles aren't bureaucratic formalities. Beyond the cultural dimension, it's also one of the few places in Hanoi where you can stand in front of a primary historical document - actual names of actual scholars, carved in stone in the 15th century - rather than a reconstruction or a replica. If you're treating Hanoi as more than a checklist, this is where to spend time.",
   },
   insights: {
     highlights: [
-      "Vietnam's first national university founded in 1070, honoring Confucian scholarly traditions and education",
-      "82 ancient Doctoral Stelae carried by stone turtles, engraving names of imperial exam graduates",
-      "Iconic Khue Van Pavilion (Constellation of Literature), Hanoi's symbol, with traditional Vietnamese architecture",
+      "Vietnam's first national university founded in 1070, operating for 700 years under the imperial examination system",
+      "82 UNESCO-listed doctoral steles recording 1,300 graduates from 1484 to 1779, mounted on stone tortoise bases",
+      "Khuê Văn Các pavilion - Hanoi's official city symbol, depicted on the 100,000 VND banknote",
     ],
     thingsToKnow: {
-      crowds: "Popular with young people taking graduation and áo dài photos, especially during Tết and weekends. Weekday visits and early morning times are quieter. Afternoon Saturday visits have minimal queues.",
+      crowds: "Weekday mornings are quietest. Tour groups peak from mid-morning. Graduation season brings professional photo shoots that occupy entire courtyard sections. Tết brings student visitors praying for exam success.",
       difficulty: null,
       safety: null,
       accessibility: null,
-      seasonal: "Early morning visits in early spring or Tết season offer cooler temperatures, fewer crowds, and festive atmosphere with peach blossoms and spring decorations",
+      seasonal: "Oct–Apr is the most comfortable visiting period. Early spring around Tết has a festive atmosphere with decorations, but also higher visitor numbers.",
     },
     visitorTips: [
-      "Allow 1-2 hours to explore five courtyards, courtyards, Confucius temple, and stele areas; 3 hours with detailed exploration",
-      "Dress modestly: no crop tops, shorts, or tank tops. Many visitors wear traditional áo dài for photos",
-      "Visit early morning or on weekdays to avoid graduation photo sessions and crowds; skip audio guide and read placard information instead",
+      "Allow 2 hours to move through all five courtyards properly. 3 hours if you want to read the full context panels on the steles and exhibition rooms.",
+      "Do not touch the tortoise heads on the steles - it's prohibited, there are guards and cameras, and it damages the stone. The 'good luck before exams' tradition has visibly worn the stone.",
+      "Dress modestly - no bare shoulders, crop tops, or short shorts. This is a place of active cultural significance for Vietnamese visitors, not just a photo stop.",
     ],
     faq: [
-      { question: "What is the entrance fee and ticket availability?", answer: "Adults pay 70,000-140,000 VND. Children under 13 enter free. Buy tickets at the main gate entrance. Minimal queues on weekdays." },
-      { question: "What time should I visit to avoid crowds?", answer: "Visit early morning or weekdays for peaceful atmosphere. Avoid graduation season (varies yearly) and Tết when packed with students, families, photographers, and professional photo shoots." },
-      { question: "Is a tour guide necessary to understand the site?", answer: "Optional but recommended. Without a guide, it feels like a peaceful park walk. With a guide, you learn meaningful history of Vietnam's first university, Confucian values, and architectural significance." },
+      { question: "What is the entrance fee?", answer: "70,000 VND for adults. Children under 16 enter free. Audio guide in foreign languages is 100,000 VND extra. Buy tickets at the main gate - minimal queues on weekdays." },
+      { question: "How long should I spend here?", answer: "2 hours is the right amount for most visitors - enough to cover all five courtyards without rushing and actually engage with what you're looking at. Budget 3 hours if you want to spend time with the stele inscriptions and exhibition content." },
+      { question: "What was the imperial examination system?", answer: "The Quốc Tử Giám trained candidates for three tiers of exams: the regional (hương), national (hội), and palace (đình) exams. Passing all three was the path to senior government positions. The 82 steles record the names of those who made it through the final round - roughly 1,300 people across nearly 300 years." },
     ],
     sentiment: {
-      positive: "Overwhelmingly praised as a serene, historically significant landmark offering peaceful escape from Hanoi's chaos. Visitors appreciate well-preserved architecture, cultural meaning, and calm atmosphere despite being a major tourist attraction.",
-      negative: "Professional photo sessions with photographers and lighting setups during graduation season create obstacles for other visitors trying to enjoy the peaceful environment and take photos freely.",
+      positive: "Consistently praised as one of Hanoi's most genuinely meaningful sites - calm, well-maintained, and historically substantive in a way that stands apart from more performative tourist attractions. Vietnamese visitors and international travellers both rate it highly.",
+      negative: "Graduation season photo shoots with professional lighting rigs take over sections of the courtyards and disrupt the atmosphere for other visitors. Worth checking before you go if this timing matters to you.",
     },
   },
 }
