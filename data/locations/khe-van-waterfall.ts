@@ -15,7 +15,7 @@ export const kheVanWaterfall: Location = {
   tags: ["💧 3-Tier Waterfall", "🏊 Natural Pool", "🌾 Ethnic Villages"],
   bestTime: "May - Sep (peak water flow, lush greenery); late Oct - Nov (reed flower season)",
   bestMonths: [5, 6, 7, 8, 9, 10, 11],
-  entranceFee: "Free",
+  entranceFee: "10,000 VND",
   openingHours: "Open 24 hours",
   mapUrl: "https://maps.google.com/?q=21.7089,107.5231",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775823241932!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzIydjNBS1E.!2m2!1d21.48636192128088!2d107.4805021994235!3f163.27850831753491!4f13.742574336003955!5f0.7820865974627469", },

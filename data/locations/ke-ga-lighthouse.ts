@@ -15,7 +15,7 @@ export const keGaLighthouse: Location = {
   tags: ["🏛️ Colonial Lighthouse", "🚣 Boat Crossing", "📸 Photography", "🏝️ Rocky Islet"],
   bestTime: "Nov - Jul (dry season with calm seas; avoid Aug - Oct when rough conditions make the boat crossing unreliable)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 11, 12],
-  entranceFee: "Free, for boat to lighthouse about 50,000 ~ 100,000 VND return",
+  entranceFee: "Free; boat to the lighthouse ~50,000–100,000 VND return",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.695329624836493,107.99144633590802",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775814136724!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0VtS0xpX3dF!2m2!1d10.69692667380949!2d107.9919032188049!3f176.1341542859635!4f8.412775141552942!5f0.7820865974627469", },

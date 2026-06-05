@@ -15,7 +15,7 @@ export const daPloaStream: Location = {
   tags: ["💦 Multi-tier Stream", "🌿 Remote Jungle", "🏍️ Motorbike Trail", "📸 Photography"],
   bestTime: "Jun – Nov (rainy season for maximum water volume; dry season for easier trail access)",
   bestMonths: [6, 7, 8, 9, 10, 11],
-  entranceFee: "",
+  entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.716700,108.116700",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775273580460!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFJ1YjNTc2dF!2m2!1d11.36354306449968!2d107.7171653876277!3f54.921052188076125!4f-15.05670470698162!5f0.7820865974627469", },

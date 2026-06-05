@@ -46,9 +46,15 @@ export async function generateMetadata({
   const description = `${location.name} in ${area} - what to expect, how to get there, best time to visit, and insider tips.`
 
   return {
+    title: `${location.name}, ${area} - Travel Guide | Solo in Vietnam`,
     description,
-    openGraph: { description },
-    alternates: { canonical: `https://www.soloinvietnam.com/locations/${slug}` },
+    openGraph: {
+      title: `${location.name}, ${area} - Travel Guide | Solo in Vietnam`,
+      description,
+    },
+    alternates: {
+      canonical: `https://www.soloinvietnam.com/locations/${slug}`,
+    },
   }
 }
 
