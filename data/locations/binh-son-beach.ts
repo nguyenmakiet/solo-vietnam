@@ -5,7 +5,7 @@ export const binhSonBeach: Location = {
   slug: "binh-son-beach",
   name: "Bình Sơn Beach",
   provinces: ["ninh-thuan"],
-  destination: "ninh-thuan",
+  destination: "",
   lat: "11.561876733112111",
   lng: "109.02501913079249",
   address: "Bình Sơn, Ninh Hải, Ninh Thuận",

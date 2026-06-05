@@ -5,7 +5,7 @@ export const muiCaMauNationalPark: Location = {
   slug: "mui-ca-mau-national-park",
   name: "Mũi Cà Mau National Park",
   provinces: ["ca-mau"],
-  destination: "ca-mau",
+  destination: "",
   lat: 8.605533331954971,
   lng: 104.71909855448533,
   address: "Đất Mũi, Ngọc Hiển, Cà Mau",

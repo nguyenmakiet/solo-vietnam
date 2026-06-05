@@ -5,7 +5,7 @@ export const dongVanMarket: Location = {
   slug: "dong-van-market",
   name: "Đồng Văn Market",
   provinces: ["ha-giang"],
-  destination: "ha-giang",
+  destination: "ha-giang-loop",
   lat: "23.277117868189283",
   lng: "105.36124291013778",
   address: "Thị trấn Đồng Văn, Đồng Văn, Hà Giang",

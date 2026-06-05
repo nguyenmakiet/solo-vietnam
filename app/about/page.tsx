@@ -39,6 +39,7 @@ export default function AboutPage() {
               src="https://res.cloudinary.com/dl5kqhspv/image/upload/about-me-cover_zglkkp.jpg"
               alt="About me"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               priority
             />
@@ -66,6 +67,7 @@ export default function AboutPage() {
             src="https://res.cloudinary.com/dl5kqhspv/image/upload/about-me-2_zjcsvk.jpg"
             alt="Nguyen Nguyen - soloinvietnam.com"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>
@@ -172,6 +174,7 @@ export default function AboutPage() {
             src="https://res.cloudinary.com/dl5kqhspv/image/upload/about-me-3_homhpd.jpg"
             alt="Vietnam highland road"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>
@@ -203,6 +206,7 @@ export default function AboutPage() {
                   src="https://res.cloudinary.com/dl5kqhspv/image/upload/sirius_llfisb.jpg"
                   alt="Yamaha Sirius"
                   fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
@@ -214,6 +218,7 @@ export default function AboutPage() {
                   src="https://res.cloudinary.com/dl5kqhspv/image/upload/kawasaki-w175_mscqui.jpg"
                   alt="Kawasaki W175"
                   fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
@@ -225,6 +230,7 @@ export default function AboutPage() {
                   src="https://res.cloudinary.com/dl5kqhspv/image/upload/nikon-d7000_lurk2r.jpg"
                   alt="Nikon D7000"
                   fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>

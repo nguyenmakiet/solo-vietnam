@@ -5,7 +5,7 @@ export const honSonIsland: Location = {
   slug: "hon-son-island",
   name: "Hòn Sơn Island",
   provinces: ["kien-giang"],
-  destination: "kien-giang",
+  destination: "",
   lat: 9.806794658299804,
   lng: 104.65066589563308,
   address: "Lại Sơn, Kiên Hải, Kiên Giang",

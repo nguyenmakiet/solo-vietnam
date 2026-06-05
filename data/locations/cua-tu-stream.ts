@@ -5,7 +5,7 @@ export const cuaTuStream: Location = {
   slug: "cua-tu-stream",
   name: "Cửa Tử Stream",
   provinces: ["thai-nguyen"],
-  destination: "thai-nguyen",
+  destination: "",
   lat: "21.605532505545185",
   lng: "105.5466304981171",
   address: "Xã Hoàng Nông, Đại Từ, Thái Nguyên",

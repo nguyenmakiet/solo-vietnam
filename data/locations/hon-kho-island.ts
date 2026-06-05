@@ -15,7 +15,7 @@ export const honKhoIsland: Location = {
   tags: ["🏝️ Day Trip Island", "🐠 Coral Reefs", "🚤 Boat Tour", "📷 Rocky Coastline"],
   bestTime: "Mar - Sep (dry season; sea conditions calm enough for boat access; avoid Oct - Jan when rough seas make the crossing dangerous)",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
-  entranceFee: "Boat tour ~150,000 - 200,000 VND per person (includes island access)",
+  entranceFee: "80,000 VND (not include boat)",
   openingHours: "Daylight hours; boat departures typically 7:00 AM - 2:00 PM",
   mapUrl: "https://www.google.com/maps?q=13.764548186649696,109.29977458585735",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776105168831!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHVsb3U3c1FF!2m2!1d13.76555808832058!2d109.2965300958454!3f352.98792843217154!4f-33.25140924114143!5f0.7820865974627469", },

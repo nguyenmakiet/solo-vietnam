@@ -5,7 +5,7 @@ export const khauPhaPass: Location = {
   slug: "khau-pha-pass",
   name: "Khau Phạ Pass",
   provinces: ["yen-bai"],
-  destination: "mu-cang-chai",
+  destination: "",
   lat: "21.748647085534405",
   lng: "104.21951455544009",
   address: "Tú Lệ - Mù Cang Chải, Văn Chấn, Yên Bái",

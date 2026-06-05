@@ -7,11 +7,11 @@ import "./header.css"
 import SearchModal from "./Search/SearchModal"
 
 const NAV_LINKS = [
-  { href: "/provinces", label: "Provinces" },
+  { href: "/destinations", label: "Destinations" },
   { href: "/locations", label: "Locations" },
-  { href: "/experiences", label: "Experiences" },
   { href: "/blog", label: "Blog" },
   { href: "/map", label: "Map" },
+  { href: "/about", label: "About" },
 ]
 
 export default function Header() {

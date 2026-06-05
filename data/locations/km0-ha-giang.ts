@@ -5,7 +5,7 @@ export const km0HaGiang: Location = {
   slug: "km0-ha-giang",
   name: "Km 0 Milestone — Hà Giang",
   provinces: ["ha-giang"],
-  destination: "ha-giang",
+  destination: "ha-giang-loop",
   lat: "22.827448496788932",
   lng: "104.98418992590295",
   address: "Đường Nguyễn Trãi, Phường Minh Khai, Thành phố Hà Giang",

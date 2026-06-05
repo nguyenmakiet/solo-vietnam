@@ -5,7 +5,7 @@ export const thuongPhuocBorderGate: Location = {
   slug: "thuong-phuoc-border-gate",
   name: "Thường Phước Border Gate",
   provinces: ["dong-thap"],
-  destination: "dong-thap",
+  destination: "",
   lat: "10.910484255076085",
   lng: "105.19761803298447",
   address: "Thường Phước 1, Hồng Ngự, Đồng Tháp",

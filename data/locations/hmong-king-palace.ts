@@ -5,7 +5,7 @@ export const hmongKingPalace: Location = {
   slug: "hmong-king-palace",
   name: "Hmong King Palace",
   provinces: ["ha-giang"],
-  destination: "ha-giang",
+  destination: "ha-giang-loop",
   lat: "23.25632622972936",
   lng: "105.2621945561199",
   address: "Đồng Văn, Hà Giang",

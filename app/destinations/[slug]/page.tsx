@@ -66,13 +66,25 @@ export async function generateMetadata({
   const { slug } = await params
   const destination = destinations.find((d) => d.slug === slug)
 
-  const description = destination
-    ? `${destination.name} travel guide - ${destination.tagline}. Best things to do, itineraries, and practical tips for solo travelers in Vietnam.`
-    : "Travel guide for this destination in Vietnam with useful tips for solo travelers."
+  if (!destination) {
+    return {
+      title: "Destination Not Found | Solo in Vietnam",
+      description: "Travel guide for this destination in Vietnam with useful tips for solo travelers.",
+      alternates: { canonical: `https://www.soloinvietnam.com/destinations/${slug}` },
+    }
+  }
+
+  const description = `${destination.name} travel guide - ${destination.tagline}. Best things to do, itineraries, and practical tips for solo travelers in Vietnam.`
 
   return {
+    title: `${destination.name} Travel Guide | Solo in Vietnam`,
     description,
-    openGraph: { description },
+    openGraph: {
+      title: `${destination.name}`,
+      description,
+      url: `https://www.soloinvietnam.com/destinations/${slug}`,
+      images: destination.heroImage ? [{ url: destination.heroImage }] : [],
+    },
     alternates: { canonical: `https://www.soloinvietnam.com/destinations/${slug}` },
   }
 }
@@ -439,32 +451,7 @@ export default async function DestinationPage({
               </div>
             </section>
           )}
-          {/* Practical Info */}
-          {/*<section className="dp-section">
-            <p className="section-label">Practical Info</p>
-            <div className="practical-grid">
-              <div className="practical-card safe">
-                <span className="card-icon">📱</span>
-                <div className="card-title">SIM & Connectivity</div>
-                <div className="card-body">Viettel or Vietnamobile available locally. Unlimited data from ~150,000 VND/month.</div>
-              </div>
-              <div className="practical-card warn">
-                <span className="card-icon">⚠️</span>
-                <div className="card-title">Scam Alerts</div>
-                <div className="card-body">Use Grab for transport. Agree on prices upfront for any local services.</div>
-              </div>
-              <div className="practical-card safe">
-                <span className="card-icon">💰</span>
-                <div className="card-title">Money</div>
-                <div className="card-body">Cash-first destination. Withdraw VND at ATMs - avoid airport exchange booths.</div>
-              </div>
-              <div className="practical-card warn">
-                <span className="card-icon">🏥</span>
-                <div className="card-title">Emergency</div>
-                <div className="card-body">Police: <strong>113</strong> · Ambulance: <strong>115</strong> · Fire: <strong>114</strong></div>
-              </div>
-            </div>
-          </section>*/}
+
           {/* Related destinations */}
           {related.length > 0 && (
             <section className="dp-section">

@@ -5,7 +5,7 @@ export const hoChiMinhChildhoodHome: Location = {
   slug: "ho-chi-minh-childhood-home",
   name: "Ho Chi Minh's Childhood Home",
   provinces: ["nghe-an"],
-  destination: "vinh",
+  destination: "",
   lat: "18.676032245825112",
   lng: "105.55404708457107",
   address: "Làng Sen, Kim Liên, Nam Đàn, Nghệ An",

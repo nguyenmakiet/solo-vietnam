@@ -5,7 +5,7 @@ export const baOmLake: Location = {
   slug: "ba-om-lake",
   name: "Ba Om Lake",
   provinces: ["tra-vinh"],
-  destination: "tra-vinh",
+  destination: "mekong-delta",
   lat: "9.917705660783596",
   lng: "106.30405967120855",
   address: "Đa Lộc, Châu Thành, Trà Vinh",

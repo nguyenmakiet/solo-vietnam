@@ -5,7 +5,7 @@ export const anNhutRiceFields: Location = {
   slug: "an-nhut-rice-fields",
   name: "An Nhứt Rice Fields",
   provinces: ["vung-tau"],
-  destination: "vung-tau",
+  destination: "",
   lat: "10.484091864450695",
   lng: "107.23620766445066",
   address: "Xã An Nhứt, Long Điền, Bà Rịa - Vũng Tàu",

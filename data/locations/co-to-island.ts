@@ -5,7 +5,7 @@ export const coToIsland: Location = {
   slug: "co-to-island",
   name: "Cô Tô Island",
   provinces: ["quang-ninh"],
-  destination: "quang-ninh",
+  destination: "",
   lat: "20.970013931734762",
   lng: "107.76311545711883",
   address: "Huyện Cô Tô, Quảng Ninh",

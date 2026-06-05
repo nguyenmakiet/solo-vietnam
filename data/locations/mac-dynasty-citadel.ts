@@ -5,7 +5,7 @@ export const macDynastyCitadel: Location = {
   slug: "mac-dynasty-citadel",
   name: "Mạc Dynasty Citadel",
   provinces: ["lang-son"],
-  destination: "lang-son",
+  destination: "",
   lat: "21.857162327899132",
   lng: "106.74889564559105",
   address: "Tô Thị, Tam Thanh, Lạng Sơn, Vietnam",

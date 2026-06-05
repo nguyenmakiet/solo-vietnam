@@ -5,7 +5,7 @@ export const doiNhaiBeach: Location = {
   slug: "doi-nhai-beach",
   name: "Đồi Nhái Beach",
   provinces: ["ba-ria-vung-tau"],
-  destination: "vung-tau",
+  destination: "",
   lat: "10.389740360346483",
   lng: "107.15635316774474",
   address: "Phước Tỉnh, Long Điền, Bà Rịa - Vũng Tàu",

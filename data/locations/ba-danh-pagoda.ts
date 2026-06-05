@@ -5,7 +5,7 @@ export const baDanhPagoda: Location = {
   slug: "ba-danh-pagoda",
   name: "Ba Danh Pagoda",
   provinces: ["ha-nam"],
-  destination: "ha-nam",
+  destination: "",
   lat: "20.56929376391253",
   lng: "105.85284438092059",
   address: "Xã Liêm Sơn, Thanh Liêm, Hà Nam",

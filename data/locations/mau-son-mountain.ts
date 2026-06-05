@@ -5,7 +5,7 @@ export const mauSonMountain: Location = {
   slug: "mau-son-mountain",
   name: "Mẫu Sơn Mountain",
   provinces: ["lang-son"],
-  destination: "lang-son",
+  destination: "",
   lat: "21.849873373608105",
   lng: "106.91696577893505",
   address: "Mẫu Sơn, Lộc Bình, Lạng Sơn",

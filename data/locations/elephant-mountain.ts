@@ -5,7 +5,7 @@ export const elephantMountain: Location = {
   slug: "elephant-mountain",
   name: "Elephant Mountain",
   provinces: ["dak-lak"],
-  destination: "buon-ma-thuot",
+  destination: "",
   lat: "12.481628765573047",
   lng: "108.23313331512834",
   address: "Buôn Ma Thuột, Đắk Lắk",
