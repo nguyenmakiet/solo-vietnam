@@ -34,6 +34,7 @@ export async function generateMetadata({
 
   if (!location) {
     return {
+      title: "Location Not Found | Solo in Vietnam",
       description: "Discover this location in Vietnam with helpful tips for solo travelers.",
       alternates: { canonical: `https://www.soloinvietnam.com/locations/${slug}` },
     }
@@ -43,14 +44,16 @@ export async function generateMetadata({
   const province = provinces.find((p) => p.slug === provinceSlug)
   const area = province?.name ?? provinceSlug?.replace(/-/g, " ") ?? "Vietnam"
 
-  const description = `${location.name} in ${area} - what to expect, how to get there, best time to visit, and insider tips.`
+  const description = `${location.name} in ${area} - what to expect, how to get there, best time to visit, and insider tips for solo travelers.`
 
   return {
     title: `${location.name}, ${area} - Travel Guide | Solo in Vietnam`,
     description,
     openGraph: {
-      title: `${location.name}, ${area} - Travel Guide | Solo in Vietnam`,
+      title: `${location.name}, ${area}`,
       description,
+      url: `https://www.soloinvietnam.com/locations/${slug}`,
+      images: location.heroImage ? [{ url: location.heroImage }] : [],
     },
     alternates: {
       canonical: `https://www.soloinvietnam.com/locations/${slug}`,
