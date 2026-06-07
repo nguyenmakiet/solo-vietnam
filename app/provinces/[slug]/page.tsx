@@ -2,6 +2,7 @@ import { provinces } from "../../../data/provinces"
 import { activeLocations } from "@/data/all-locations"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import FallbackImage from "@/components/FallbackImage"
 import "./province.css"
 
 const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
@@ -192,7 +193,8 @@ export default async function ProvincePage({
                   const icon = typeIcons[primaryType] ?? "📍"
                   return (
                     <Link key={l.slug} href={`/locations/${l.slug}`} className="dest-card">
-                      <img
+
+                      <FallbackImage
                         src={(!l.heroImage || l.heroImage.includes("placeholder")) ? "/images/coming-soon.jpg" : l.heroImage}
                         alt={l.name}
                         className="dc-img"

@@ -6,6 +6,7 @@ import { allLocations, activeLocations } from "@/data/all-locations"
 import ItineraryMapLoader from "@/components/ItineraryMapLoader"
 import FaqAccordion from "@/components/FaqAccordion"
 import "./destination.css"
+import FallbackImage from "@/components/FallbackImage"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function getImageSrc(heroImage?: string): string {
@@ -298,7 +299,7 @@ export default async function DestinationPage({
                     href={`/locations/${loc.slug}`}
                     className="location-card"
                   >
-                    <img
+                    <FallbackImage
                       src={getImageSrc(loc.heroImage)}
                       alt={loc.name}
                       className="location-card-img"

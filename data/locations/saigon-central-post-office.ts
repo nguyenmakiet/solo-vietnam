@@ -19,7 +19,7 @@ export const saigonCentralPostOffice: Location = {
   openingHours: "7:00 AM – 7:00 PM Mon–Fri · 7:00 AM – 6:00 PM Sat · 8:00 AM – 6:00 PM Sun",
   mapUrl: "https://www.google.com/maps?q=10.779864930790652,106.69990840101588",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776264706784!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2M4c19BN2dF!2m2!1d10.78014658052121!2d106.7000887251299!3f49.66963418157104!4f24.180007243195035!5f0.7820865974627469", },
-  heroImage: heroUrl("saigon-central-post-office_hero"),
+  heroImage: heroUrl("placeholder"),
   gallery: [],
   seoDescription:
     "The Saigon Central Post Office is a functioning French colonial post office designed by Gustave Eiffel's firm and completed in 1891, featuring a stunning barrel-vaulted interior hall, vintage tile maps of Indochina, and a portrait of Ho Chi Minh — one of Ho Chi Minh City's most photographed colonial landmarks.",

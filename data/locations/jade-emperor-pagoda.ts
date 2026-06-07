@@ -19,7 +19,7 @@ export const jadeEmperorPagoda: Location = {
   openingHours: "7:00 AM – 6:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.792009712766651,106.69819028397599",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776264382694!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREU2dVcyN0FF!2m2!1d10.79186523234672!2d106.6980051341843!3f185.07280170690404!4f3.2254625930738!5f0.7820865974627469", },
-  heroImage: heroUrl("jade-emperor-pagoda-hcmc_hero"),
+  heroImage: heroUrl("placeholder"),
   gallery: [],
   seoDescription:
     "The Jade Emperor Pagoda is Ho Chi Minh City's most atmospheric active temple — a dense, incense-filled Taoist and Buddhist sanctuary built by Cantonese immigrants in 1909, housing elaborate lacquered statues, a sacred turtle pond, and the densest concentration of religious iconography in the city.",

@@ -90,7 +90,7 @@
 }
 .location-card-img-placeholder {
   width: 100%; height: 160px;
-  background: url('/images/coming-soon.png') center/cover no-repeat;
+  background: url('/images/coming-soon.jpg') center/cover no-repeat;
 }
 .location-card-body { padding: 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 5px; }
 .location-card-type {
