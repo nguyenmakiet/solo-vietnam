@@ -399,6 +399,12 @@
   color: #c0392b;
   font-weight: 500;
 }
+.blog-content .no-highlight td:nth-child(2) {
+  color: inherit;
+  font-weight: inherit;
+  white-space: normal;
+  min-width: unset;
+}
 .blog-sidebar {
   position: sticky;
   top: 24px;
