@@ -82,6 +82,8 @@ export const taNangPhanDungTrek: Location = {
         question: "Is the Tà Năng - Phan Dũng Trek worth it?",
         answer: "If you're looking for the most iconic multi-day trek in southern Vietnam, yes. The route combines open grasslands, mountain ridges, river crossings, camping, and a genuine sense of wilderness rarely found this close to Ho Chi Minh City. The landscape shifts dramatically from highland pine forest to savannah-like grassland to lowland jungle over 2-3 days - no other trek in the south covers this much terrain variety. Come prepared, book through a reputable operator, and don't rush it into one day.",
       },
+      {
+        question: "Can beginners do the Tà Năng - Phan Dũng Trek?",
         answer: "Yes, with proper support. The route now has clear trail markers, xe ôm forest motorbike assistance on steep sections, porter services, and experienced guides. Someone with average fitness and no serious health issues can complete it - especially on a guided tour. The key is not attempting it alone and not pushing through dangerous river crossings in rain.",
       },
       {
