@@ -76,6 +76,8 @@ export const hangEn: Location = {
         question: "Why is Hang En considered the world's third largest cave?",
         answer: "Cave size is measured by cross-sectional volume - the width and height of the passages. Hang En ranks third globally behind Sơn Đoòng (also in Quảng Bình) and Deer Cave in Malaysia. Its passages reach up to 200m wide and 145m high, giving it a volume few caves on earth can match.",
       },
+      {
+        question: "Is Hang En the right alternative to Sơn Đoòng?",
         answer: "Yes - for most travellers it is. Hang En is part of the same underground cave system (3km from Sơn Đoòng, connected via river), requires a genuine 2-day jungle trek, and delivers the experience of camping inside one of the world's largest caves. Sơn Đoòng costs several thousand dollars and books years ahead; Hang En is around 333 USD and bookable 1-2 months ahead. If Sơn Đoòng is the dream but out of reach, Hang En is the right answer.",
       },
       {
