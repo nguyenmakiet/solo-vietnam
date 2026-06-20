@@ -80,6 +80,8 @@ export const oQuyHoPass: Location = {
         question: "Why does the weather change so dramatically crossing the pass?",
         answer: "The Hoàng Liên Sơn range acts as a barrier between two climate systems. Moist air from the east rises and condenses around Sapa, creating the persistent fog and cold that defines the town's character. The western Lai Châu side sits in the rain shadow - drier, warmer, and often sunny when Sapa is fogged in. Crossing the pass, you cross the boundary between these two systems. This is also why cloud sea forms so reliably: warm dry air from Lai Châu meets cold humid air from the Sapa side at the ridge, and the cloud pools in the valley below.",
       },
+      {
+        question: "What is the best time to see the cloud sea at Ô Quy Hồ?",
         answer: "16:00-17:30 is the golden window - when the late afternoon light hits the cloud sea and the sunset colours the horizon. The local rule: if Sapa town is foggy or just clearing after light rain, there's a 90% chance of a spectacular cloud sea on the summit. Spring (Mar-May) and autumn (Sep-Nov) give the most consistent conditions.",
       },
       {
