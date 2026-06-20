@@ -31,6 +31,8 @@ export const metadata: Metadata = {
     siteName: "Solo in Vietnam",
     title: "Solo in Vietnam - Travel Guides for Solo Travelers",
     description: "Practical travel guides for solo travelers in Vietnam. Safety tips, scam alerts, transport guides, and local insights.",
+    url: "https://www.soloinvietnam.com",
+    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
   },
 };
 

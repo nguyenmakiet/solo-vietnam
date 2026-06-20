@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { getPostBySlug, extractToc, getAllPosts } from "@/lib/blog"
+import { heroUrl } from "@/lib/cloudinary"
 import BlogToc from "./BlogToc"
 import CloudImage from "@/components/CloudImage"
 import CloudVideo from "@/components/CloudVideo"
@@ -101,8 +102,14 @@ export async function generateMetadata({
   description = description || "Travel insights and practical tips for solo travelers in Vietnam."
 
   return {
+    title: post.title,
     description,
-    openGraph: { description },
+    openGraph: {
+      title: post.title,
+      description,
+      url: `https://www.soloinvietnam.com/blog/${slug}`,
+      images: post.heroImage ? [{ url: heroUrl(post.heroImage), width: 1200, height: 630 }] : [],
+    },
     alternates: { canonical: `https://www.soloinvietnam.com/blog/${slug}` },
   }
 }

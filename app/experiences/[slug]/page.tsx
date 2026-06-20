@@ -41,8 +41,14 @@ export async function generateMetadata({
     : "Discover travel experiences in Vietnam with honest guides for solo travelers."
 
   return {
+    title: experience ? `${experience.label} in Vietnam | Solo in Vietnam` : undefined,
     description,
-    openGraph: { description },
+    openGraph: {
+      title: experience ? `${experience.label} in Vietnam | Solo in Vietnam` : undefined,
+      description,
+      url: `https://www.soloinvietnam.com/experiences/${slug}`,
+      images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    },
     alternates: {
       canonical: `https://www.soloinvietnam.com/experiences/${slug}`,
     },

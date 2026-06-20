@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: "Read travel guides, safety tips, and local insights for solo travelers exploring Vietnam.",
   openGraph: {
     description: "Read travel guides, safety tips, and local insights for solo travelers exploring Vietnam.",
+    url: "https://www.soloinvietnam.com/blog",
+    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
   },
   alternates: {
     canonical: "https://www.soloinvietnam.com/blog",

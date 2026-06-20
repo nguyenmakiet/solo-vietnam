@@ -30,7 +30,7 @@ export const trangAn: Location = {
   tips: [
     "Buy tickets online to avoid queuing: muave.disantrangan.vn, Klook, Agoda, or Traveloka.",
     "Common mistake: many visitors arrive at noon, do a single route, and leave disappointed. The experience is significantly better early morning or late afternoon when the light is softer and temperatures are lower.",
-    "Route recommendation: Each ticket is for one route only (Route 1, 2, or 3 - closed loop). However, an insider tip widely shared among Vietnamese visitors: Routes 2 and 3 meet at Hành Cung Vũ Lâm before returning to the main pier. At that meeting point, some visitors ask the rowers of the other route if they can board for the return leg. This is not an official policy and depends entirely on the rower's flexibility and whether there is space on the boat - easier in low season, harder when boats are full. Tipping generously increases the chance of being welcomed aboard.",
+    "Route recommendation: Routes 2 and 3 share the same return path back to Hành Cung Vũ Lâm and the main pier, so either one gives a similar overall experience - pick Route 2 or Route 3, you don't need to do both. Route 1 skips Hành Cung Vũ Lâm but has the most caves (9) and is the quietest option.",
     "Hành Cung Vũ Lâm - the iconic water pavilion on Routes 2 and 3, Tràng An's most photographed feature - is only accessible on Routes 2 and 3, not Route 1.",
     "The Kong: Skull Island filming village was dismantled by the management board in late 2019 to preserve the natural heritage landscape per UNESCO recommendations. Boats on Routes 2 and 3 now pass the island location where it once stood, but the village itself no longer exists.",
     "Go early morning or from 3 PM onward to avoid midday heat. The boat tour takes 2.5-3 hours.",
@@ -48,9 +48,9 @@ export const trangAn: Location = {
     howToGetThere:
       "Tràng An is 7km northwest of Ninh Bình city, clearly signposted from National Highway 1A. From Ninh Bình town: xe ôm or taxi, 15-20 minutes, 80,000-120,000 VND. From Hanoi: 90km south, about 1.5 hours by limousine bus (many operators depart from the Old Quarter). From Tam Cốc: bicycle or motorbike through scenic rice field roads - quiet roads, highly recommended. Buy tickets at the entrance gate or online in advance (muave.disantrangan.vn, Klook, Agoda, Traveloka) to skip the queue. Large parking area for self-drive visitors.",
     whatToExpect:
-      "Three boat routes are available, each 2.5-3 hours by wooden rowboat. Route 1: 9 caves, 3 temples - the most cave-heavy option, quietest. Route 2: 3 caves, 2 temples, Hành Cung Vũ Lâm water pavilion, and the island where the Kong: Skull Island village once stood (dismantled 2019) - most popular. Route 3: 3 caves (including a 1km cave), 2 temples, Hành Cung Vũ Lâm - recommended alongside Route 2. Each ticket covers one closed-loop route. Switching boats between routes at Hành Cung Vũ Lâm is an unofficial practice that depends on rower flexibility - not guaranteed. Your rower (most likely a local woman over 50, rowing with feet) navigates cave passages, open valleys, and flooded archways. Temple stops allow you to disembark and climb steps for elevated views.",
+      "Three boat routes are available, each 2.5-3 hours by wooden rowboat. Route 1: 9 caves, 3 temples - the most cave-heavy option, quietest, skips Hành Cung Vũ Lâm. Route 2: 3 caves, 2 temples, Hành Cung Vũ Lâm water pavilion, and the island where the Kong: Skull Island village once stood (dismantled 2019) - most popular. Route 3: 3 caves (including a 1km cave), 2 temples, Hành Cung Vũ Lâm - shares the same return path as Route 2, so either works well; you don't need to do both. Your rower (most likely a local woman over 50, rowing with feet) navigates cave passages, open valleys, and flooded archways. Temple stops allow you to disembark and climb steps for elevated views.",
     travelTips:
-      "Tràng An rewards an early start or late afternoon visit - avoid midday heat on the open water sections. If water levels are high after heavy rain, cave passages may be inaccessible - check before planning. For the best of Ninh Bình in one day: Tràng An in the morning (Route 2 + Route 3), Hang Mua viewpoint climb in the afternoon. If visiting May-June, add Tam Cốc for the rice field and lotus season. Dress modestly for temple stops. The ticket price (300,000 VND from January 2026) includes boat seat for 4-5 people, life jacket, and travel insurance.",
+      "Tràng An rewards an early start or late afternoon visit - avoid midday heat on the open water sections. If water levels are high after heavy rain, cave passages may be inaccessible - check before planning. For the best of Ninh Bình in one day: Tràng An in the morning (Route 2 or Route 3), Hang Mua viewpoint climb in the afternoon. If visiting May-June, add Tam Cốc for the rice field and lotus season. Dress modestly for temple stops. The ticket price (300,000 VND from January 2026) includes boat seat for 4-5 people, life jacket, and travel insurance.",
   },
   insights: {
     highlights: [
@@ -68,7 +68,7 @@ export const trangAn: Location = {
       seasonal: "Jan-Mar: cool, clear, dry - peak season, most pleasant weather. Apr-Jun: sunny, good water reflections, hot midday. Jul-Aug: hottest, can be rainy. Sep-Nov: quieter, mild, good conditions. Dec-Jan: coldest months.",
     },
     visitorTips: [
-      "Routes 2 and 3 combined (out on one, return on other) - most recommended combination",
+      "Pick Route 2 or Route 3 - both share the same return path and cover Hành Cung Vũ Lâm",
       "Buy tickets online to skip the queue",
       "Go early morning or from 3 PM to avoid midday heat",
       "Tip your rower 30,000-50,000 VND - physically demanding work",
@@ -81,11 +81,11 @@ export const trangAn: Location = {
       },
       {
         question: "Can I do two routes on one ticket?",
-        answer: "Officially, each ticket is for one closed-loop route only. However, Routes 2 and 3 converge at Hành Cung Vũ Lâm before returning to the main pier. At this meeting point, some visitors ask rowers from the other route if they can board for the return leg - an unofficial practice widely known among Vietnamese visitors. It depends entirely on the rower's flexibility and available space. Easier in low season when boats are less full; tipping generously helps. This is not guaranteed and not an official option at the ticket booth.",
+        answer: "No - each ticket covers one closed-loop route only (Route 1, 2, or 3). However, Routes 2 and 3 share the same return path back through Hành Cung Vũ Lâm to the main pier, so you don't need to do both to see the water pavilion - either route gives you that. Pick one based on preference: Route 2 is more popular overall, Route 3 includes a longer 1km cave.",
       },
       {
         question: "Which boat route should I choose at Tràng An?",
-        answer: "Most Vietnamese visitors recommend doing Route 2 out and Route 3 back (or reverse) - both cover Hành Cung Vũ Lâm water pavilion, which Route 1 skips. Route 1 has the most caves (9) and is the quietest option. Route 2 is the most popular overall combination of caves, temples, and famous landmarks.",
+        answer: "Route 2 or Route 3 - both share the same return path through Hành Cung Vũ Lâm water pavilion, which Route 1 skips, so you only need to pick one. Route 2 is the most popular overall combination of caves, temples, and famous landmarks. Route 3 adds a longer 1km cave. Route 1 has the most caves (9) and is the quietest option if you'd rather skip the crowds at Hành Cung Vũ Lâm.",
       },
       {
         question: "What is Hành Cung Vũ Lâm?",
@@ -105,7 +105,7 @@ export const trangAn: Location = {
       },
     ],
     sentiment: {
-      positive: "Consistently praised for the cave passages, the karst reflections in calm water, the intimate wooden rowboat experience, and the cultural depth of the temple stops. Visitors who do Routes 2 and 3 together rate it significantly higher than single-route visitors.",
+      positive: "Consistently praised for the cave passages, the karst reflections in calm water, the intimate wooden rowboat experience, and the cultural depth of the temple stops. Visitors who pick Route 2 or 3 (with Hành Cung Vũ Lâm) rate it higher than those who only do Route 1.",
       negative: "Can be very crowded Jan-Mar and on weekends. Midday heat on the open water sections is uncomfortable in summer. Some visitors find the commercial atmosphere at the dock area off-putting before getting on the water.",
     },
   },

@@ -38,7 +38,7 @@ export async function generateMetadata({
       title: `${province.name} ${label}`,
       description,
       url: `https://www.soloinvietnam.com/provinces/${slug}`,
-      images: province.heroImage ? [{ url: province.heroImage }] : [],
+      images: province.heroImage ? [{ url: province.heroImage, width: 1200, height: 630 }] : [],
     },
     alternates: { canonical: `https://www.soloinvietnam.com/provinces/${slug}` },
   }

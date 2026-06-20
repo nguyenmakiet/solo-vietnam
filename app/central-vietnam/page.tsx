@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Central Vietnam Travel Guide | Solo in Vietnam",
     description: "Central Vietnam travel guide - Hoi An, Hue Imperial City, Phong Nha caves, Da Nang, and the coast. Ancient kingdoms, white sand beaches, and Vietnam's finest cuisine.",
+    url: "https://www.soloinvietnam.com/central-vietnam",
+    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
   },
 }
 

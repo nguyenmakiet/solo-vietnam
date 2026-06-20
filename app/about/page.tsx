@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     title: "About | Solo in Vietnam",
     description:
       "Nguyen Nguyen documents Vietnam's 63 provinces - famous places and the ones no one writes about - at soloinvietnam.com.",
+    url: "https://www.soloinvietnam.com/about",
+    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
   },
 }
 
@@ -64,7 +66,7 @@ export default function AboutPage() {
       <section className="about-section about-who">
         <div className="about-who-image">
           <Image
-            src="https://res.cloudinary.com/dl5kqhspv/image/upload/about-me-2_zjcsvk.jpg"
+            src="https://res.cloudinary.com/dl5kqhspv/image/upload/f_auto,q_auto,w_1600/about-me-2_zjcsvk.jpg"
             alt="Nguyen Nguyen - soloinvietnam.com"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -215,7 +217,7 @@ export default function AboutPage() {
             <figure>
               <div className="about-companion-image">
                 <Image
-                  src="https://res.cloudinary.com/dl5kqhspv/image/upload/kawasaki-w175_mscqui.jpg"
+                  src="https://res.cloudinary.com/dl5kqhspv/image/upload/f_auto,q_auto,w_800/kawasaki-w175_mscqui.jpg"
                   alt="Kawasaki W175"
                   fill
                   sizes="(max-width: 768px) 50vw, 33vw"

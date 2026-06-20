@@ -16,6 +16,8 @@ export async function generateMetadata({ searchParams }: Props) {
       description: "Browse travel locations in Vietnam with practical tips and insights for solo travelers.",
       openGraph: {
         description: "Browse travel locations in Vietnam with practical tips and insights for solo travelers.",
+        url: `https://www.soloinvietnam.com/provinces/${province}`,
+        images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
       },
       alternates: {
         canonical: `https://www.soloinvietnam.com/provinces/${province}`,
@@ -27,7 +29,11 @@ export async function generateMetadata({ searchParams }: Props) {
   return {
     title: "Locations | Solo in Vietnam",
     description,
-    openGraph: { description },
+    openGraph: {
+      description,
+      url: "https://www.soloinvietnam.com/locations",
+      images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    },
     alternates: {
       canonical: "https://www.soloinvietnam.com/locations",
     },

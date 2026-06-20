@@ -53,7 +53,7 @@ export async function generateMetadata({
       title: `${location.name}, ${area}`,
       description,
       url: `https://www.soloinvietnam.com/locations/${slug}`,
-      images: location.heroImage ? [{ url: location.heroImage }] : [],
+      images: location.heroImage ? [{ url: location.heroImage, width: 1200, height: 630 }] : [],
     },
     alternates: {
       canonical: `https://www.soloinvietnam.com/locations/${slug}`,

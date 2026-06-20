@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: "Explore all provinces in Vietnam and discover top places, travel tips, and hidden gems.",
   openGraph: {
     description: "Explore all provinces in Vietnam and discover top places, travel tips, and hidden gems.",
+    url: "https://www.soloinvietnam.com/provinces",
+    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
   },
   alternates: {
     canonical: "https://www.soloinvietnam.com/provinces",

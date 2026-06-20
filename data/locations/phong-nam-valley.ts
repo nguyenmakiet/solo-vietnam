@@ -19,6 +19,7 @@ export const phongNamValley: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.880089,106.535739",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1780333812341!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHFqZFRsOEFF!2m2!1d22.87784961068904!2d106.5368423329495!3f357.4705761303941!4f-13.08581066323876!5f0.7820865974627469" },
+  heroImage: heroUrl("phong-nam-valley2_kof3er"),
   gallery: [
     "phong-nam-valley2_kof3er",
     "phong-nam-valley4_k1royx",
