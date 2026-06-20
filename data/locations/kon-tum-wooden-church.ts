@@ -5,7 +5,7 @@ export const konTumWoodenChurch: Location = {
   slug: "kon-tum-wooden-church",
   name: "Kon Tum Wooden Church",
   provinces: ["kon-tum"],
-  destination: " ",
+  destination: "",
   lat: "14.345152402216648",
   lng: "108.01323599142874",
   address: "Nguyễn Huệ, TP. Kon Tum, Kon Tum",
