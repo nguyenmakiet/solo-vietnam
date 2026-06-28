@@ -40,7 +40,8 @@ export const imperialCity: Location = {
     "Key stops: Ngọ Môn Gate (start here) → Điện Thái Hòa (golden throne, main hall) → Thế Miếu + Hiển Lâm Các (royal ancestral temples) → Tử Cấm Thành / Forbidden Purple City → Duyệt Thị Đường (oldest royal theater in Vietnam) → Lầu Kiến Trung (recently restored, unique Á-Âu architecture) → Cửu Vị Thần Công (9 bronze cannons, 1803).",
     "Recommended full-day structure: Morning (opening until 11 AM) - Ngọ Môn → Điện Thái Hòa → Thế Miếu. Midday - cơm cung đình (royal cuisine) at restaurants near the citadel. Afternoon - Duyệt Thị Đường (Nhã nhạc court music performance at 10 AM and 3 PM), Forbidden Purple City ruins, Lầu Kiến Trung.",
     "Hire an audio guide (100,000 VND, available in English/French/Japanese) or a local guide at the entrance. Many buildings are labelled only in Vietnamese and the historical context is what makes the ruins meaningful.",
-    "Đại Nội by Night: a separate evening program with illuminated palaces, guard-changing ceremony, court music, and traditional performances. Check current schedule at the ticket office.",
+    "Lễ Đổi Gác (Guard-Changing Ceremony): held daily at Ngọ Môn at 8:00 AM (summer) / 8:30 AM (winter) - a reenactment of Nguyễn Dynasty guard protocol. The procession includes a military officer, a captain, 12 royal guards, and a 7-member Tiểu Nhạc ensemble, moving through Ngọ Môn → Điện Thái Hòa → ending at Duyệt Thị Đường. The ensemble performs 'Đăng Đàn Cung', the Nguyễn Dynasty's national anthem, throughout. This is a separate daytime event from the evening 'Đại Nội by Night' program - don't confuse the two when planning your visit.",
+    "Đại Nội by Night: a separate evening program with illuminated palaces, court music, and traditional performances. Check current schedule at the ticket office.",
     "Huế Festival runs every two years (even years) in April-June - the citadel is the main venue with lit-up palaces and large-scale traditional performances. The most spectacular time to visit.",
     "The ruins in the northeast section were not restored - they remain as they were after the 1968 Tết Offensive. The contrast between the rebuilt grandeur and the roofless bombed-out shells is historically honest and deliberately preserved.",
   ],
@@ -58,6 +59,7 @@ export const imperialCity: Location = {
     highlights: [
       "147 buildings built 1804-1833 - the most complete imperial citadel complex in Southeast Asia",
       "Yellow vs blue-green roof tile hierarchy: imperial axis in yellow (hoàng lưu ly), all secondary structures in blue-green (thanh lưu ly) - visible from Ngọ Môn Gate looking south",
+      "Daily Guard-Changing Ceremony (Lễ Đổi Gác) at 8:00/8:30 AM - 12 royal guards and a 7-member music ensemble reenact Nguyễn Dynasty protocol from Ngọ Môn to Duyệt Thị Đường",
       "Duyệt Thị Đường: Vietnam's oldest royal theater, still hosting Nhã nhạc court music performances at 10 AM and 3 PM",
       "Northeast ruins: deliberately unrestored since the 1968 Tết Offensive - bombed-out shells beside rebuilt palaces",
       "Lầu Kiến Trung: recently restored pavilion with unique Á-Âu (Asian-European) blended architecture",
@@ -71,12 +73,17 @@ export const imperialCity: Location = {
     },
     visitorTips: [
       "Arrive at opening time - heat and crowds build quickly by 9 AM",
+      "Time your visit for the daily Guard-Changing Ceremony at Ngọ Môn (8:00 AM summer / 8:30 AM winter)",
       "From Ngọ Môn Gate top: look down the central axis to see the yellow-tile imperial band surrounded by blue-green - the clearest view of the hierarchy",
       "Buy tickets on Klook to skip the queue; combo ticket if visiting royal tombs",
       "Nón lá + áo dài (~100,000 VND rental near gate) = practical sun protection + best photo prop",
       "Note entry and exit gates are different - photograph the site map at the entrance",
     ],
     faq: [
+      {
+        question: "What is the Guard-Changing Ceremony (Lễ Đổi Gác)?",
+        answer: "A daily reenactment of Nguyễn Dynasty guard protocol, held at Ngọ Môn at 8:00 AM in summer and 8:30 AM in winter. The procession features a military officer, a captain, 12 royal guards, and a 7-member Tiểu Nhạc music ensemble, moving in sequence through Ngọ Môn, Điện Thái Hòa, and ending at Duyệt Thị Đường. Throughout the ceremony, the ensemble performs 'Đăng Đàn Cung' - the national anthem of the Nguyễn Dynasty. It's a separate daytime event from the evening 'Đại Nội by Night' program, so check timing carefully if you want to catch both.",
+      },
       {
         question: "Why are some roofs yellow while others are blue-green?",
         answer: "The roof colours were part of the Nguyễn Dynasty's visual hierarchy. Yellow glazed tiles (hoàng lưu ly) represented imperial authority and were reserved for the Emperor and the main ceremonial axis - the most important structures, Ngọ Môn Gate and Điện Thái Hòa, are covered in yellow. Blue-green glazed tiles (thanh lưu ly) were used for secondary royal buildings: libraries, theaters, and the Crown Prince's residence. This distinction allowed visitors and officials to understand the hierarchy of the court immediately through architecture alone. From the upper level of Ngọ Môn Gate, the system becomes obvious: a continuous ribbon of yellow roofs runs along the central axis, surrounded by blue-green roofs on either side.",
@@ -91,7 +98,7 @@ export const imperialCity: Location = {
       },
       {
         question: "What is Đại Nội by Night?",
-        answer: "A separate evening program with illuminated palaces, traditional guard-changing ceremony, Tiểu nhạc and Đại nhạc court music performances, Nhã nhạc, traditional dance, and folk games in the courtyards. Check current schedule and ticket pricing at the entrance or with your hotel - the program has evolved over time and runs on specific evenings.",
+        answer: "A separate evening program with illuminated palaces, court music performances, Nhã nhạc, traditional dance, and folk games in the courtyards. This is distinct from the daily daytime Guard-Changing Ceremony at Ngọ Môn. Check current schedule and ticket pricing at the entrance or with your hotel - the program has evolved over time and runs on specific evenings.",
       },
       {
         question: "Should I hire a guide or use the audio guide?",
@@ -99,7 +106,7 @@ export const imperialCity: Location = {
       },
     ],
     sentiment: {
-      positive: "Consistently praised for historical depth, the scale of the complex, the restored palaces, and the atmospheric contrast between grandeur and war-damaged ruins. The Nhã nhạc performances and Đại Nội by Night receive strong reviews.",
+      positive: "Consistently praised for historical depth, the scale of the complex, the restored palaces, and the atmospheric contrast between grandeur and war-damaged ruins. The Guard-Changing Ceremony, Nhã nhạc performances, and Đại Nội by Night receive strong reviews.",
       negative: "Midday heat in the open courtyards is intense. Some buildings still under restoration. Signage inside is inconsistent - guide or audio guide is genuinely needed. Entry/exit gate confusion wastes time for some visitors.",
     },
   },
