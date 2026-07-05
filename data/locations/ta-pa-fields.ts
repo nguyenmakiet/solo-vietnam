@@ -30,7 +30,7 @@ export const taPaFields: Location = {
   seoDescription:
     "Ta Pa Fields are a landscape of traditional floating rice paddies in the Seven Mountains region of An Giang province, submerged each flood season when the Mekong Delta rises. The combination of water-covered fields, distant mountain silhouettes, and Khmer stilt village architecture makes it one of the most distinctive seasonal landscapes in southern Vietnam.",
   tips: [
-    "Visit between September and November when flood waters are at their highest - the fields are fully submerged and farmers pole small wooden boats between the rice rows, which is the scene mày see in photographs of this place",
+    "Visit between September and November when flood waters are at their highest - the fields are fully submerged and farmers pole small wooden boats between the rice rows, which is the scene you see in photographs of this place",
     "The best photography positions are from the elevated road embankments looking west toward the Cambodian border mountains at sunrise - the flat water acts as a mirror in calm morning conditions",
     "Rent a bicycle or motorbike in Tri Ton town and explore the network of narrow elevated roads running between the flooded fields - many of these roads are only slightly above water level during peak flood and give an immersive experience of moving through the inundated landscape",
     "The surrounding area is predominantly Khmer Krom - visiting the active Khmer Buddhist pagodas in Tri Ton district alongside the fields gives a more complete picture of the region's culture than the landscape alone",

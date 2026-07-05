@@ -24,7 +24,7 @@ export const honTamIsland: Location = {
   seoDescription:
     "Hòn Tằm is Nha Trang Bay's most developed private island - a resort island 5km offshore with white sand beaches, clear water, water sports, and coral snorkeling, reached by speedboat in 15 minutes from Cầu Đá pier.",
   tips: [
-    "Book the day pass rather than a full resort stay if mày only want the beach - it includes all facilities and is a fraction of the room rate",
+    "Book the day pass rather than a full resort stay if you only want the beach - it includes all facilities and is a fraction of the room rate",
     "The snorkeling around the rocky headlands at the island's northern tip is better than the main beach area - ask the resort staff for the best snorkel spots",
     "Arrive on the first morning boat (8–8:30 AM) for the quietest beach experience - day visitors arrive in waves throughout the morning",
     "The island's eastern beach faces away from Nha Trang city and is quieter than the main western beach - worth exploring on foot",

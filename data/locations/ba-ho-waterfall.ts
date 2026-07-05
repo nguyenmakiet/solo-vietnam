@@ -29,7 +29,7 @@ export const baHoWaterfall: Location = {
     "The third (uppermost) pool is the most beautiful and the least visited - the trek to reach it takes 45–60 minutes from the entrance but the crowd drops dramatically after the first pool",
     "Wear shoes you can get wet - the trail involves multiple stream crossings and rocky scrambles that are much easier in water shoes or old trainers than sandals",
     "Go on a weekday morning - the first pool is popular with domestic tourists on weekends and the atmosphere changes significantly",
-    "Bring food and water - there are no facilities beyond the entrance gate, and the upper pools are too far for a comfortable return if mày run out of water",
+    "Bring food and water - there are no facilities beyond the entrance gate, and the upper pools are too far for a comfortable return if you run out of water",
     "The falls are at maximum flow August–October but some upper trail sections flood during heavy rain - check conditions before attempting the full trek in peak rainy season",
   ],
   content: {

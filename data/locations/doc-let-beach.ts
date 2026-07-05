@@ -40,7 +40,7 @@ export const docLetBeach: Location = {
     whatToExpect:
       "The beach is divided into a main resort section with sunbeds and umbrellas, and more informal sections where local families set up for the day. The water is typically clear and calm - ideal for wading, swimming, and floating. The beach is wider than Nha Trang's main beach and the sand is finer. Seafood restaurants line the beachfront road serving fresh catch at straightforward prices. The salt flats north of the beach are an unusual landscape feature - flat white expanses of evaporating seawater worked by salt farmers - and worth a brief detour on the way in or out.",
     travelTips:
-      "Dốc Lết is the beach mày go to when Nha Trang's main beach feels too crowded or too urban. The 1-hour drive north is a commitment but the beach quality justifies it - the water is genuinely better, the sand is genuinely whiter, and the surrounding landscape is more varied. The combination of Ba Hồ Waterfall in the morning (jungle, swimming, cool) and Dốc Lết in the afternoon (beach, seafood, sun) is the best full-day excursion available from Nha Trang.",
+      "Dốc Lết is the beach you go to when Nha Trang's main beach feels too crowded or too urban. The 1-hour drive north is a commitment but the beach quality justifies it - the water is genuinely better, the sand is genuinely whiter, and the surrounding landscape is more varied. The combination of Ba Hồ Waterfall in the morning (jungle, swimming, cool) and Dốc Lết in the afternoon (beach, seafood, sun) is the best full-day excursion available from Nha Trang.",
   },
   insights: {
     highlights: [

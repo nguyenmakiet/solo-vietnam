@@ -47,7 +47,7 @@ export const daPloaStream: Location = {
     whatToExpect:
       "The approach to Đa Ploa involves a motorbike ride on narrow forest roads followed by a forest trail with river crossings. The falls themselves consist of multiple drops over basalt rock formations, with a clear pool at the base suitable for swimming. The surrounding forest is intact enough to feel genuinely removed from the plantation landscapes that dominate much of southern Lâm Đồng. Expect no signage, no ticketing, no food vendors, and possibly no other visitors on weekdays. The total time from Đạ Huoai town to the falls and back is approximately 3-4 hours.",
     travelTips:
-      "Đa Ploa is the kind of Stream that rewards the traveler who has already done Pongour, Datanla, and the other Đà Lạt circuit falls and wants something that requires more than a 10-minute walk from a car park. The remoteness is genuine - this is not performative off-the-beaten-path tourism. If mày is routing through southern Lâm Đồng between HCMC and Đà Lạt by motorbike, Đạ Huoai district and Đa Ploa make a logical and rewarding overnight stop that almost nobody on the standard tourist circuit makes.",
+      "Đa Ploa is the kind of Stream that rewards the traveler who has already done Pongour, Datanla, and the other Đà Lạt circuit falls and wants something that requires more than a 10-minute walk from a car park. The remoteness is genuine - this is not performative off-the-beaten-path tourism. If you're routing through southern Lâm Đồng between HCMC and Đà Lạt by motorbike, Đạ Huoai district and Đa Ploa make a logical and rewarding overnight stop that almost nobody on the standard tourist circuit makes.",
   },
   insights: {
     highlights: [

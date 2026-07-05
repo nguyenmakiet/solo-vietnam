@@ -41,7 +41,7 @@ export const doiNhaiBeach: Location = {
     whatToExpect:
       "A wide, sandy, undeveloped beach with no facilities of any kind. Good swimming in calm dry-season conditions, unsuitable in rough weather. The water is clear in the dry season. The small hill behind the beach offers a viewpoint most rewarding at sunrise and in the late afternoon when the light is low. The surrounding coastal plain is agricultural and sparsely settled - the absence of development gives Đồi Nhái a different character from the resort beaches of Vũng Tàu proper.",
     travelTips:
-      "Đồi Nhái Beach is worth knowing about as part of a broader Phước Tỉnh area day trip rather than as a standalone destination requiring a dedicated journey. The combination of Phước Tỉnh fishing harbor at dawn, Đồi Nhái Beach for a morning swim, and the coastal drive back to Vũng Tàu or HCMC via Long Hải covers a section of Bà Rịa-Vũng Tàu coast that most visitors completely skip. If mày is interested in the less-developed end of the southern coast day-trip options from HCMC, this area - together with Phước Hải and Lộc An nearby - is the right zone to explore.",
+      "Đồi Nhái Beach is worth knowing about as part of a broader Phước Tỉnh area day trip rather than as a standalone destination requiring a dedicated journey. The combination of Phước Tỉnh fishing harbor at dawn, Đồi Nhái Beach for a morning swim, and the coastal drive back to Vũng Tàu or HCMC via Long Hải covers a section of Bà Rịa-Vũng Tàu coast that most visitors completely skip. If you're interested in the less-developed end of the southern coast day-trip options from HCMC, this area - together with Phước Hải and Lộc An nearby - is the right zone to explore.",
   },
   insights: {
     highlights: [

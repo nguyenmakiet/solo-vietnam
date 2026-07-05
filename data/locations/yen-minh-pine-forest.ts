@@ -29,7 +29,7 @@ export const yenMinhPineForest: Location = {
     "The Yên Minh Pine Forest is an unexpected stretch of highland pine on the Ha Giang Loop between Quản Bạ and Đồng Văn - a 10km section of road through dense Pinus kesiya forest at 1,200 metres, with morning mist threading between the trees and a completely different atmosphere from the surrounding karst landscape.",
   tips: [
     "Ride through in the early morning for the mist effect - by 9–10 AM the sun burns the mist off and the forest is pleasant but less atmospheric",
-    "The forest road has several pullouts where mày can stop and walk into the trees - 5 minutes off the road and the traffic disappears completely",
+    "The forest road has several pullouts where you can stop and walk into the trees - 5 minutes off the road and the traffic disappears completely",
     "Night camping in the forest is technically possible but check with local authorities - the area is sometimes used by rangers and overnight camping rules vary",
     "The light in late afternoon (4–5 PM) through the pine canopy is exceptional for photography - the low sun creates long shafts through the trees",
     "The transition from karst limestone landscape to pine forest and back is one of the most striking geographical changes on the loop - pay attention to where it begins and ends",

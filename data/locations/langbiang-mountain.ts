@@ -29,7 +29,7 @@ export const langbiangMountain: Location = {
     "Langbiang Mountain is the highest peak in the Đà Lạt plateau at 2,167 metres - a twin-peaked massif rising above pine forest north of the city, home to the K'Ho ethnic minority, with a summit trek rewarded by panoramic views over the entire Central Highlands.",
   tips: [
     "Start the summit trek before 6 AM to reach the top for sunrise - the light on the surrounding peaks and the cloud inversions in the valleys below are the best the mountain offers",
-    "The jeep ride to the mid-station (1,950m) cuts 2 hours off the trek - worthwhile if mày only want the summit view without the full climb",
+    "The jeep ride to the mid-station (1,950m) cuts 2 hours off the trek - worthwhile if you only want the summit view without the full climb",
     "The full trek from base to summit takes 3–4 hours return - wear proper shoes, the trail is steep and muddy after rain",
     "The K'Ho cultural village at the base has traditional longhouses and craft demonstrations - worth 30 minutes before or after the trek",
     "Bring a warm layer - the summit is consistently 8–12°C cooler than Đà Lạt town, and wind at the peak makes it feel colder",

@@ -38,7 +38,7 @@ export const diepSonIsland: Location = {
     "The boat from Vạn Giã takes about 1 hour each way - depart early morning to arrive at low tide and have maximum time on the sandbar before it submerges",
     "The water on both sides of the sandbar is shallow and clear - bring snorkeling gear for the reef areas around the island edges",
     "Điệp Sơn is 80km north of Nha Trang - it is not easily combined with a Nha Trang day and works better as a standalone overnight trip based in Vạn Giã town",
-    "Accommodation on the island is basic homestay - staying overnight allows mày to experience the sandbar at both morning and evening low tides and to see the island without day visitors",
+    "Accommodation on the island is basic homestay - staying overnight allows you to experience the sandbar at both morning and evening low tides and to see the island without day visitors",
   ],
   content: {
     intro:

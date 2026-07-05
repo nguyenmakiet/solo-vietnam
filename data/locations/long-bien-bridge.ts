@@ -80,8 +80,8 @@ export const longBienBridge: Location = {
       { question: "Can cars drive across Long Bien Bridge?", answer: "No, cars have long been banned from the bridge. Only trains, motorbikes, bicycles, and pedestrians are permitted to cross" },
     ],
     sentiment: {
-      positive: null,
-      negative: null,
+      positive: "No review data collected yet.",
+      negative: "No review data collected yet.",
     },
   },
 }

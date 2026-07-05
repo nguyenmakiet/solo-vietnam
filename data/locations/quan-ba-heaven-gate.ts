@@ -43,7 +43,7 @@ export const quanBaHeavenGate: Location = {
     whatToExpect:
       "The gate is a stone ceremonial arch across the road, wide enough for vehicle passage, with a small terrace on the right side overlooking the valley. The view from the terrace is immediate and dramatic - the valley drop, the Twin Mountains, and the plateau ridgelines are all visible on clear days. A small cafe serves cà phê and snacks. The descent from the gate into Quản Bạ town is approximately 10km of switchback road - tight bends, significant elevation loss, and continuous views. The Twin Mountains viewpoint 2km below the gate gives the best single-frame view of the Núi Đôi from above.",
     travelTips:
-      "Heaven Gate is the moment the Ha Giang Loop announces itself - the point where the road crests and the landscape mày came to see appears all at once. Most riders stop for 15–30 minutes. Sunrise arrivals require leaving Hà Giang city at 4:30–5:00 AM, which is worth doing at least once for the cloud inversion effect. The gate is also a useful orientation point - everything north of here is the karst plateau, and the riding quality and scenery improve consistently from this point onward.",
+      "Heaven Gate is the moment the Ha Giang Loop announces itself - the point where the road crests and the landscape you came to see appears all at once. Most riders stop for 15–30 minutes. Sunrise arrivals require leaving Hà Giang city at 4:30–5:00 AM, which is worth doing at least once for the cloud inversion effect. The gate is also a useful orientation point - everything north of here is the karst plateau, and the riding quality and scenery improve consistently from this point onward.",
   },
   insights: {
     highlights: [

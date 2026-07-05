@@ -32,7 +32,7 @@ export const yavlyWaterfall: Location = {
     "Go with an experienced guide or organised group - the trail crosses multiple streams and the forest navigation is not trivial; several trekkers have needed rescue on this route in rainy season",
     "Pack light but pack right - a waterproof bag liner is essential, proper trekking boots are non-negotiable, and a lightweight tent or hammock with rain fly covers the overnight sections",
     "The waterfall pool is swimmable and the water is clean - after a full day of trekking through the heat of the open grassland sections, arriving at Yavly for a swim is one of those moments the route is famous for",
-    "Water sources along the route are generally clean but bring a filter or purification tablets as a backup - stream crossings increase in number and depth the further into the route mày go",
+    "Water sources along the route are generally clean but bring a filter or purification tablets as a backup - stream crossings increase in number and depth the further into the route you go",
   ],
   content: {
     intro:

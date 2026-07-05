@@ -32,7 +32,7 @@ export const truongSonNationalCemetery: Location = {
   tips: [
     "Dress respectfully - covered shoulders and knees are appropriate given the site's significance. Behaviour should match the solemnity of the location.",
     "The cemetery is best visited as part of a DMZ day tour from Hue or Dong Ha, combined with Vinh Moc Tunnels and the Hien Luong Bridge - the historical context of multiple sites together is more powerful than any single stop",
-    "Allow at least 1 hour at the cemetery - the scale of the site only becomes apparent as mày walk the sections, and the individual grave markers each carry a name, home province, and date of death that rewards slow reading",
+    "Allow at least 1 hour at the cemetery - the scale of the site only becomes apparent as you walk the sections, and the individual grave markers each carry a name, home province, and date of death that rewards slow reading",
     "The monument at the entrance facing the graves is the symbolic focus of the site - Vietnamese visitors typically pay respects here with incense before walking the cemetery",
     "Visit in the morning when the light is better for photography and before tour groups from Hue arrive around 10:00 AM",
   ],

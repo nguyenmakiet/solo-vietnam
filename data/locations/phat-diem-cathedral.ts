@@ -77,8 +77,8 @@ export const phatDiemCathedral: Location = {
       { question: "Is there an entrance fee?", answer: "No, admission to the complex is free" },
     ],
     sentiment: {
-      positive: null,
-      negative: null,
+      positive: "No review data collected yet.",
+      negative: "No review data collected yet.",
     },
   },
 }

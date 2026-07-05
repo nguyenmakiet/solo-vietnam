@@ -24,7 +24,7 @@ export const eightLadiesCave: Location = {
   seoDescription:
     "Eight Ladies Cave is one of Vietnam's most sacred war memorials - a limestone cave in Phong Nha-Kẻ Bàng where eight young female volunteers were killed by American bombing in 1972 while sheltering inside, reached by a jungle trek and visited as a place of pilgrimage by Vietnamese travellers.",
   tips: [
-    "This is a sacred memorial site - approach it with the same respect mày would give any war memorial",
+    "This is a sacred memorial site - approach it with the same respect you would give any war memorial",
     "A local guide is required to reach the cave - book through accommodation in Sơn Trạch the evening before",
     "The trek takes about 2–3 hours return through jungle - wear proper shoes and bring water",
     "The cave itself is small and the experience is primarily about the history and the setting rather than geological formations",

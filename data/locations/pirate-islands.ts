@@ -35,7 +35,7 @@ export const pirateIslands: Location = {
     "The Hai Tac Islands are a remote archipelago of 16 islands in the Gulf of Thailand off the Kien Giang coast, historically known as the Pirate Islands. One of the least visited island groups in Vietnam, with coral reefs, white sand beaches, and almost no tourist infrastructure.",
   tips: [
     "Charter a boat from Ha Tien or Rach Gia - Ha Tien is closer at around 2 hours by speedboat vs 3-4 hours from Rach Gia. Negotiate the full boat price upfront including fuel and the return trip.",
-    "Bring everything mày need - food, water, snorkeling gear, and camping equipment if staying overnight. The islands have minimal facilities and no reliable places to buy supplies.",
+    "Bring everything you need - food, water, snorkeling gear, and camping equipment if staying overnight. The islands have minimal facilities and no reliable places to buy supplies.",
     "The islands are only reachable from November to April when the Gulf of Thailand is calm - do not attempt the crossing outside this window regardless of local assurances about conditions.",
     "Tien Hai island is the only one with a small permanent community and a basic guesthouse - this is the most practical base for multi-day visits.",
     "The reefs around the smaller uninhabited islands are in better condition than those near Tien Hai - ask the boat captain to anchor near the outer islands for snorkeling.",

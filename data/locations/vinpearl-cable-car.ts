@@ -29,7 +29,7 @@ export const vinpearlCableCar: Location = {
     "The Vinpearl Cable Car is the world's longest over-sea cable car - a 3,320-metre gondola crossing from the Nha Trang mainland to Hòn Tre Island, with aerial views over Nha Trang Bay, the city skyline, and the surrounding islands at 50 metres above the water.",
   tips: [
     "The cable car ride is 3,320 metres each way - sit on the bay-facing side for the best views of Nha Trang city and the surrounding islands",
-    "The ticket is expensive but includes Vinpearl Land theme park on Hòn Tre Island - worth it if mày plan to spend the full day on the island",
+    "The ticket is expensive but includes Vinpearl Land theme park on Hòn Tre Island - worth it if you plan to spend the full day on the island",
     "Go in the late afternoon for the cable car at golden hour - the light on the bay and the islands is exceptional around 4–5 PM",
     "The crossing takes about 12–15 minutes - long enough to properly enjoy the aerial perspective over the bay",
     "Ferry boats also cross to Hòn Tre from the same departure point - cheaper but the cable car is the experience worth having",
