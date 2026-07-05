@@ -141,6 +141,7 @@
   color: #6b7280; background: none; border: none;
   border-bottom: 3px solid transparent; cursor: pointer;
   white-space: nowrap; transition: all 0.2s; letter-spacing: 0.3px;
+  flex-shrink: 0;
 }
 .tab-btn:hover { color: var(--primary); }
 .tab-btn.active {

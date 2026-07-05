@@ -15,7 +15,7 @@ export const baDenMountain: Location = {
   tags: ["⛰️ Highest Peak South", "🚡 Cable Car", "🛕 Pilgrimage Site", "📸 Panoramic Views"],
   bestTime: "Nov - May (dry season, clear summit views); rainy season (Jun - Oct) suits trekkers who prefer cooler trails and lush greenery over clear photos. Best photo light is 7-9 AM before the crowds and haze build up",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
-  entranceFee: "General admission: 10,000 VND/adult, 5,000 VND/child. Three separate cable car lines run at different prices - Chùa Hang line (base to the temple complex, one-way 150,000 VND/adult or round-trip 250,000 VND/adult), Vân Sơn line (base to the true summit, round-trip only, 400,000 VND/adult), and Tâm An line (Chùa Bà to the summit, connecting the two). A toboggan/slide ride costs roughly 80,000-100,000 VND. Prices rise around Tet and other holidays - check the official Sun World booking site or Klook before visiting",
+  entranceFee: "General admission: 10,000 VND/adult, 5,000 VND/child (cable car tickets are separate - see tips)",
   openingHours: "5:00 AM - 6:00 PM (cable car); trekking routes accessible from dawn",
   mapUrl: "https://www.google.com/maps?q=11.382433262739763,106.17120718468603",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776108533778!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFJoNTdPdUFF!2m2!1d11.38168908650588!2d106.1757379305223!3f358.16875298401914!4f-16.587204953388962!5f0.7820865974627469", },
@@ -34,6 +34,7 @@ export const baDenMountain: Location = {
   seoDescription:
     "Ba Den Mountain is the highest peak in southern Vietnam at 986 metres, rising sharply from the flat Tay Ninh plain and visible for 50km in every direction. A major Buddhist and Cao Dai pilgrimage site with three cable car lines, a 72-metre bronze Lady Buddha statue, and trekking trails through forest to the top.",
   tips: [
+    "Cable car pricing (separate from the 10,000 VND entrance fee) runs on three lines: Chùa Hang (base to the temple complex) costs 150,000 VND one-way or 250,000 VND round-trip per adult; Vân Sơn (base to the true summit) is round-trip only at 400,000 VND per adult; Tâm An (Chùa Bà to the summit) connects the two. A toboggan/slide ride costs roughly 80,000-100,000 VND. Prices rise around Tet and other holidays - check the official Sun World booking site or Klook before visiting",
     "First-timers only need the Vân Sơn cable car line (base to summit) - it reaches the highest point, the best panoramic views, and the full wind-and-cloud experience in one ride. Save the Chùa Hang line for a future visit if you're short on time and more interested in scenery than temple-hopping; the Tâm An line through the forest is a nice bonus but not essential",
     "The summit is frequently cloud-covered in the morning - arriving by 9:00 AM on dry season days gives the best chance of clear views across the Tay Ninh plain to Cambodia. Go too late and you'll get harsh sun, bigger crowds, and harder photos; go between 7-9 AM for the softest light and thinnest crowds, or after 4 PM for fog and sunset, though arriving that late leaves little time to look around",
     "A 'sea of clouds' sometimes forms below the summit around 6-8 AM - most likely if it rained the previous evening and the following morning is clear. Not guaranteed, but worth an early arrival if the conditions look right",
