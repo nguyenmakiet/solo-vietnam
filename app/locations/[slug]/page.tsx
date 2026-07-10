@@ -9,6 +9,7 @@ import "./location.css"
 import NearbyLocations from "./NearbyLocations"
 import GalleryLightbox from "./GalleryLightbox"
 import GetDirectionsButton from "./GetDirectionsButton"
+import RichText from "./RichText"
 
 
 function toDecimal(val: number | string): number {
@@ -204,7 +205,7 @@ export default async function LocationPage({
               </div>
               <div className="content-section">
                 <h3>What Makes {location.name} Special</h3>
-                <p>{location.content.intro}</p>
+                <RichText text={location.content.intro} />
               </div>
             </div>
           )}
@@ -235,7 +236,7 @@ export default async function LocationPage({
           <p className="section-label">How to Get There</p>
           <div className="content-section">
             <h3>🚗 Getting There</h3>
-            <p>{location.content.howToGetThere}</p>
+            <RichText text={location.content.howToGetThere} />
           </div>
         </div>
 
@@ -244,7 +245,7 @@ export default async function LocationPage({
           <p className="section-label">What to Expect</p>
           <div className="content-section">
             <h3>👀 On the Ground</h3>
-            <p>{location.content.whatToExpect}</p>
+            <RichText text={location.content.whatToExpect} />
           </div>
         </div>
 
@@ -253,7 +254,7 @@ export default async function LocationPage({
           <p className="section-label">Travel Tips</p>
           <div className="content-section">
             <h3>🧳 Tips</h3>
-            <p>{location.content.travelTips}</p>
+            <RichText text={location.content.travelTips} />
           </div>
         </div>
 

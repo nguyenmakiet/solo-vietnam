@@ -266,6 +266,14 @@
 .content-section p {
   font-size: 15px; line-height: 1.85; color: #4b5563;
 }
+.content-section p.rt-para {
+  margin-top: 12px;
+}
+.content-section .rt-link {
+  color: var(--primary); text-decoration: underline; text-decoration-color: var(--primary-light);
+  text-underline-offset: 3px; transition: opacity 0.15s;
+}
+.content-section .rt-link:hover { opacity: 0.75; }
 
 /* ── TIPS ── */
 .tips-list { display: flex; flex-direction: column; gap: 10px; }
