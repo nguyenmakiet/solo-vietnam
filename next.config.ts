@@ -33,6 +33,16 @@ source: "/destinations/ho-chi-minh",
 destination: "/destinations/ho-chi-minh-city",
 permanent: true,
 },
+{
+source: "/destinations/thai-nguyen",
+destination: "/provinces/thai-nguyen",
+permanent: true,
+},
+{
+source: "/destinations/kon-tum",
+destination: "/provinces/kon-tum",
+permanent: true,
+},
 ];
 },
 };
