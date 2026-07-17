@@ -5,7 +5,7 @@ export const benHaiRiver: Location = {
   slug: "ben-hai-river",
   name: "Bến Hải River & Hiền Lương Bridge",
   provinces: ["quang-tri"],
-  destination: "quang-tri",
+  destination: "",
   lat: 17.005352993989394,
   lng: 107.05091365024349,
   address: "Vĩnh Linh - Gio Linh, Quảng Trị",

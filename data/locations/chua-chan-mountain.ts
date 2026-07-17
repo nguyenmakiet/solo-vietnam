@@ -5,7 +5,7 @@ export const chuaChanMountain: Location = {
   slug: "chua-chan-mountain",
   name: "Núi Chứa Chan (Chứa Chan Mountain)",
   provinces: ["dong-nai"],
-  destination: "dong-nai",
+  destination: "",
   lat: 10.938213833993702,
   lng: 107.37752745679926,
   address: "Xuân Trường, Xuân Lộc, Đồng Nai",

@@ -5,7 +5,7 @@ export const aPaChai: Location = {
   slug: "a-pa-chai",
   name: "A Pa Chai (Vietnam's Westernmost Point)",
   provinces: ["dien-bien"],
-  destination: "dien-bien",
+  destination: "",
   lat: 22.401192335843305,
   lng: 102.14371962758165,
   address: "Sín Thầu, Mường Nhé, Điện Biên",

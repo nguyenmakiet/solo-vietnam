@@ -5,7 +5,7 @@ export const caoDaiHolySee: Location = {
   slug: "cao-dai-holy-see",
   name: "Cao Dai Holy See",
   provinces: ["tay-ninh"],
-  destination: "tay-ninh",
+  destination: "",
   lat: 11.348625380427553,
   lng: 106.15234400083266,
   address: "Phạm Hộ Pháp, Hòa Thành, Tây Ninh",

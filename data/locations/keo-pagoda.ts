@@ -5,7 +5,7 @@ export const keoPagoda: Location = {
   slug: "keo-pagoda",
   name: "Keo Pagoda",
   provinces: ["thai-binh"],
-  destination: "thai-binh",
+  destination: "",
   lat: 20.361100,
   lng: 106.296944,
   address: "Xã Duy Nhất, Vũ Thư, Thái Bình",
