@@ -43,9 +43,9 @@ export const mekongDelta: Destination = {
       days: [
         {
           day: 1,
-          title: "My Tho + Ben Tre coconut village",
+          title: "My Tho + Phoenix & Unicorn Islands",
           stops: [
-            "ben-tre-coconut-village",
+            "phoenix-unicorn-islands-my-tho",
           ],
           notes: "My Tho is the closest delta town to HCMC (70km). Boat through the canals to Ben Tre for coconut candy making and river life. Back by evening. Touristy but gives a taste of the delta.",
         },
@@ -88,10 +88,10 @@ export const mekongDelta: Destination = {
         },
         {
           day: 2,
-          title: "Cai Rang dawn + Ben Tre day trip",
+          title: "Cai Rang dawn + My Tho islands",
           stops: [
             "cai-rang-floating-market",
-            "ben-tre-coconut-village",
+            "phoenix-unicorn-islands-my-tho",
           ],
           notes: "Floating market at 5am. Ben Tre in the afternoon by bus (1.5 hours) - coconut villages, cycling through palm groves.",
         },

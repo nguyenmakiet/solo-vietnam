@@ -43,6 +43,11 @@ source: "/destinations/kon-tum",
 destination: "/provinces/kon-tum",
 permanent: true,
 },
+{
+source: "/locations/ben-tre-coconut-village",
+destination: "/locations/phoenix-unicorn-islands-my-tho",
+permanent: true,
+},
 ];
 },
 };

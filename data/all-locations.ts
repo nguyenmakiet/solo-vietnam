@@ -26,7 +26,7 @@ import { bauSau } from "@/data/locations/bau-sau"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
 import { benHaiRiver } from "@/data/locations/ben-hai-river"
 import { benThanhMarket } from "@/data/locations/ben-thanh-market"
-import { benTreCoconutVillage } from "@/data/locations/ben-tre-coconut-village"
+
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
 import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mountains"
@@ -182,6 +182,7 @@ import { pacBoHistoricSite } from "@/data/locations/pac-bo-historic-site"
 import { paradiseCave } from "@/data/locations/paradise-cave"
 import { phatDiemCathedral } from "@/data/locations/phat-diem-cathedral"
 import { phiLiengWaterfall } from "@/data/locations/phi-lieng-waterfall"
+import { phoenixUnicornIslandsMyTho } from "@/data/locations/phoenix-unicorn-islands-my-tho"
 import { phongNamValley } from "@/data/locations/phong-nam-valley"
 import { phongNhaBotanicGarden } from "@/data/locations/phong-nha-botanic-garden"
 import { phongNhaCave } from "@/data/locations/phong-nha-cave"
@@ -284,7 +285,6 @@ export const allLocations: Location[] = [
   bayMauCoconutForest,
   benHaiRiver,
   benThanhMarket,
-  benTreCoconutVillage,
   bichDongPagoda,
   bidoupNuiBaNationalPark,
   binhLieuBorderMountains,
@@ -440,6 +440,7 @@ export const allLocations: Location[] = [
   paradiseCave,
   phatDiemCathedral,
   phiLiengWaterfall,
+  phoenixUnicornIslandsMyTho,
   phongNamValley,
   phongNhaBotanicGarden,
   phongNhaCave,
