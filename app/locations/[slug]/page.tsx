@@ -9,7 +9,7 @@ import "./location.css"
 import NearbyLocations from "./NearbyLocations"
 import GalleryLightbox from "./GalleryLightbox"
 import GetDirectionsButton from "./GetDirectionsButton"
-import RichText from "./RichText"
+import ContentRenderer from "./ContentRenderer"
 
 
 function toDecimal(val: number | string): number {
@@ -197,19 +197,6 @@ export default async function LocationPage({
           )
         })()}
 
-        {/* What Makes This Place Special */}
-          {location.content?.intro && (
-            <div id="about" className="section-anchor">
-              <div className="section-label">
-                ABOUT THIS PLACE
-              </div>
-              <div className="content-section">
-                <h3>What Makes {location.name} Special</h3>
-                <RichText text={location.content.intro} />
-              </div>
-            </div>
-          )}
-
         {/* Gallery */}
         <div id="gallery" className="section-anchor">
           <p className="section-label">Gallery</p>
@@ -231,32 +218,8 @@ export default async function LocationPage({
           )}
         </div>
 
-        {/* How to Get There */}
-        <div id="how-to-get-there" className="section-anchor">
-          <p className="section-label">How to Get There</p>
-          <div className="content-section">
-            <h3>🚗 Getting There</h3>
-            <RichText text={location.content.howToGetThere} />
-          </div>
-        </div>
-
-        {/* What to Expect */}
-        <div id="what-to-expect" className="section-anchor">
-          <p className="section-label">What to Expect</p>
-          <div className="content-section">
-            <h3>👀 On the Ground</h3>
-            <RichText text={location.content.whatToExpect} />
-          </div>
-        </div>
-
-        {/* Travel Tips */}
-        <div id="travel-tips" className="section-anchor">
-          <p className="section-label">Travel Tips</p>
-          <div className="content-section">
-            <h3>🧳 Tips</h3>
-            <RichText text={location.content.travelTips} />
-          </div>
-        </div>
+        {/* Content Sections */}
+        <ContentRenderer location={location} />
 
         {/* Insider Tips */}
         {(location.tips.length > 0 || (location.insights?.visitorTips?.length ?? 0) > 0) && (

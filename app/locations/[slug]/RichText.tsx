@@ -35,6 +35,10 @@ function parseInline(text: string, keyOffset: number): React.ReactNode[] {
   return nodes
 }
 
+export function InlineRichText({ text }: { text: string }) {
+  return <>{parseInline(text, 0)}</>
+}
+
 export default function RichText({ text }: { text: string }) {
   const paragraphs = text.split(/\n\n+/)
   return (

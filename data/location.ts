@@ -61,6 +61,22 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
 
 export type LocationCategory = "hidden-gem" | "must-see" | "iconic"
 
+export type ContentBlock =
+  | { type: "heading"; text: string; icon?: string }
+  | { type: "paragraph"; text: string }
+  | { type: "bullets"; items: string[] }
+  | { type: "table"; headers: string[]; rows: string[][] }
+  | { type: "callout"; variant: "info" | "warning" | "tip"; text: string; title?: string }
+  | { type: "quickfacts"; facts: Array<{ label: string; value: string; icon?: string }> }
+  | { type: "divider" }
+
+export type RichSection = {
+  id: string
+  label: string
+  title: string
+  blocks: ContentBlock[]
+}
+
 export type Location = {
   slug: string
   status?: "active" | "closed" | "seasonal" | "unverified"
@@ -85,10 +101,11 @@ export type Location = {
   tips: string[]
   seoDescription: string
   content: {
-    intro: string
-    howToGetThere: string
-    whatToExpect: string
-    travelTips: string
+    intro?: string
+    howToGetThere?: string
+    whatToExpect?: string
+    travelTips?: string
+    richSections?: RichSection[]
   }
   insights?: LocationInsights  // optional vì không phải location nào cũng có
 }
