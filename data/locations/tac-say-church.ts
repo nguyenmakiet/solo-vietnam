@@ -30,7 +30,7 @@ export const tacSayChurch: Location = {
     "tac-say-church-7_eezeln",
   ],
   seoDescription:
-    "The Father Diep Shrine at Tắc Sậy in Bạc Liêu province is one of the most visited Catholic pilgrimage sites in southern Vietnam - the burial site of Francois-Xavier Nguyen Van Diep, a Vietnamese priest martyred in 1945 and beatified by Pope John Paul II in 2000, believed by pilgrims to intercede for miraculous healings.",
+    "The Father Diep Shrine at Tắc Sậy in Bạc Liêu province is one of the most visited Catholic pilgrimage sites in southern Vietnam - the burial site of Francois-Xavier Truong Buu Diep, a Vietnamese priest martyred in 1945 and beatified by Pope John Paul II in 2000, believed by pilgrims to intercede for miraculous healings.",
   tips: [
     "The shrine is a serious Catholic pilgrimage site - dress modestly and behave respectfully regardless of personal religious belief",
     "The anniversary of Father Diep's martyrdom (26 February) and the newly established feast day of 2 July - marking the 2026 Beatification Mass, the first ever held on Vietnamese soil - are the two largest pilgrimage events of the year. Expect very large crowds on both dates",
