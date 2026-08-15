@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const mySonSanctuary: Location = {
@@ -9,9 +9,9 @@ export const mySonSanctuary: Location = {
   lat: "15.76310079629061",
   lng: "108.12417516881945",
   address: "Duy Phú, Duy Xuyên, Quảng Nam",
-  type: ["heritage", "history", "cultural", "temple"],
+  type: ["heritage", "citadel", "history", "cultural", "temple"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ UNESCO Heritage", "🛕 Cham Temples", "📸 Photography", "🌿 Jungle Ruins"],
   bestTime: "Feb – Aug (dry season; the site floods and paths become muddy in the Oct – Jan wet season)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],

@@ -12,6 +12,7 @@
   --surface-2: #ece5d6;
   --border: #e2d8c8;
   --white: #ffffff;
+  --news-bad: #a95d42;
 
   font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
   background: var(--surface);
@@ -45,7 +46,11 @@
   margin-bottom: 18px;
 }
 
-/* ── PLACEHOLDERS ── */
+
+/* ============================================================
+   PLACEHOLDERS
+   ============================================================ */
+
 .about-placeholder {
   background: linear-gradient(135deg, #d9d0bf, #c7bda8);
   color: #5a4e35;
@@ -59,14 +64,58 @@
   border-radius: 6px;
 }
 
-/* ── HERO ── */
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
 .about-hero {
   padding: 80px 32px 0;
   max-width: 1180px;
   margin: 0 auto;
 }
+
+.about-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.about-hero-text h1 {
+  font-size: clamp(56px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 0 24px;
+}
+
+.about-tagline {
+  font-family: var(--font-serif), "Playfair Display", serif;
+  font-size: clamp(24px, 3.4vw, 36px);
+  line-height: 1.25;
+  color: var(--gold);
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+
+.about-tagline em {
+  font-style: italic;
+}
+
+.about-signature {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
 .about-hero-image {
-  position: relative; /* đảm bảo cái này có */
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .about-hero-image-fade {
@@ -80,43 +129,6 @@
   pointer-events: none;
   z-index: 1;
 }
-.about-hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-  margin-bottom: 48px;
-}
-.about-hero-text h1 {
-  font-size: clamp(56px, 9vw, 96px);
-  font-weight: 900;
-  line-height: 1;
-  margin: 0 0 24px;
-}
-.about-tagline {
-  font-family: var(--font-serif), "Playfair Display", serif;
-  font-size: clamp(24px, 3.4vw, 36px);
-  line-height: 1.25;
-  color: var(--gold);
-  margin: 0 0 16px;
-  font-weight: 700;
-}
-.about-tagline em {
-  font-style: italic;
-}
-.about-signature {
-  font-size: 15px;
-  color: var(--text-muted);
-  margin: 0;
-}
-.about-hero-image {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  min-height: 360px;
-  overflow: hidden;
-  border-radius: 12px;
-}
 
 .about-quote {
   position: relative;
@@ -125,6 +137,7 @@
   padding: 32px 40px 32px 80px;
   max-width: 760px;
 }
+
 .about-quote-mark {
   position: absolute;
   left: 24px;
@@ -135,6 +148,7 @@
   color: var(--gold);
   font-weight: 700;
 }
+
 .about-quote p {
   margin: 0;
   font-size: 16px;
@@ -142,11 +156,16 @@
   color: var(--text);
 }
 
-/* ── SHARED SECTION SHELL ── */
+
+/* ============================================================
+   SHARED SECTION SHELL
+   ============================================================ */
+
 .about-section,
 .about-section-alt {
   padding: 80px 32px;
 }
+
 .about-section {
   max-width: 1180px;
   margin: 0 auto;
@@ -155,6 +174,7 @@
   gap: 64px;
   align-items: center;
 }
+
 .about-section-alt {
   background: var(--surface-2);
 }
@@ -166,226 +186,719 @@
   margin: 0 0 20px;
 }
 
-/* ── WHO I AM ── */
+
+/* ============================================================
+   WHO I AM
+   ============================================================ */
+
 .about-who-image {
   width: 100%;
   aspect-ratio: 1 / 1;
   min-height: 380px;
   position: relative;
 }
+
 .about-who-text p {
   margin: 0 0 16px;
 }
+
 .about-who-text p strong {
   font-weight: 600;
   color: var(--dark);
 }
 
-/* ── WHAT YOU'LL FIND HERE ── */
+
+/* ============================================================
+   GOOD NEWS / BAD NEWS
+   ============================================================
+
+   Design direction:
+   Editorial interlude between "Who I am" and
+   "What you'll find here".
+
+   The illustration is atmosphere, not content.
+   The timeline is a storytelling device, not a UI component.
+   ============================================================ */
+
+.about-newsblock {
+  position: relative;
+  padding: 88px 32px 96px;
+  overflow: hidden;
+}
+
+
+/* ── Background illustration ── */
+
+.about-newsblock-illus {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-image: url(
+    "https://res.cloudinary.com/dl5kqhspv/image/upload/f_auto,q_auto/about_me_background_sketch_h8iner"
+  );
+  background-size: 52% auto;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  opacity: 0.12;
+}
+
+
+/* ── Content container ── */
+
+.about-newsblock-wrap {
+  position: relative;
+  z-index: 2;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 0 54px;
+}
+
+
+/*
+ * The story occupies approximately the left half.
+ * The right half is intentionally allowed to breathe.
+ */
+.about-newsblock-timeline {
+  max-width: 560px;
+}
+
+
+/* ── Timeline item ── */
+
+.about-news-item {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  column-gap: 22px;
+  align-items: stretch;
+}
+
+
+/* ── Timeline rail ── */
+
+.about-news-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7px;
+}
+
+
+/* ── Timeline dot ── */
+
+.about-news-dot {
+  position: relative;
+  display: block;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.about-news-dot--good {
+  background: var(--gold);
+}
+
+.about-news-dot--bad {
+  background: var(--news-bad);
+}
+
+
+/*
+ * Very subtle outer ring.
+ */
+.about-news-dot--good::after,
+.about-news-dot--bad::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  opacity: 0.18;
+}
+
+.about-news-dot--good::after {
+  color: var(--gold);
+}
+
+.about-news-dot--bad::after {
+  color: var(--news-bad);
+}
+
+
+/* ── Timeline connector ── */
+
+.about-news-stem {
+  display: block;
+  width: 1px;
+  flex: 1;
+  min-height: 30px;
+  margin-top: 7px;
+  background: var(--border);
+}
+
+
+/* ── Text area ── */
+
+.about-news-body {
+  padding: 0 0 42px;
+}
+
+.about-news-item--last .about-news-body {
+  padding-bottom: 0;
+}
+
+
+/* ── GOOD / BAD label ── */
+
+.about-news-label {
+  margin: 0 0 8px;
+
+  font-family: var(--font-serif), "Playfair Display", serif;
+  font-size: 17px;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.about-news-label--good {
+  color: var(--gold);
+}
+
+.about-news-label--bad {
+  color: var(--news-bad);
+}
+
+
+/* ── Main sentence ── */
+
+.about-news-text {
+  margin: 0;
+  max-width: 580px;
+
+  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 300;
+
+  color: var(--text);
+}
+
+
+/* ── Final payoff ── */
+
+.about-news-item--last {
+  margin-top: 3px;
+}
+
+.about-news-item--last .about-news-label {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.about-news-item--last .about-news-text {
+  font-family: var(--font-serif), "Playfair Display", serif;
+  font-size: 23px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 0;
+}
+
+
+/*
+ * Small editorial rule under the final thought.
+ */
+.about-news-item--last .about-news-text::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  margin-top: 24px;
+  background: var(--gold);
+}
+
+
+/* ============================================================
+   WHAT YOU'LL FIND HERE
+   ============================================================ */
+
+.about-find-text {
+  min-width: 0;
+}
+
 .about-bullets {
   list-style: none;
-  margin: 0;
+  margin: 32px 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
+
 .about-bullets li {
   display: flex;
-  align-items: flex-start;
   gap: 16px;
-  font-size: 15px;
-  line-height: 1.7;
-  color: var(--text);
-  font-weight: 300;
+  align-items: flex-start;
 }
+
 .about-bullet-icon {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: var(--surface-2);
-  color: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.about-bullet-icon svg {
-  width: 18px;
-  height: 18px;
-}
-.about-find-image {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  min-height: 480px;
-  position: relative;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--gold);
+  margin-top: 3px;
 }
 
-/* ── OLD COMPANIONS ── */
+.about-bullet-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.about-bullets li > span:last-child {
+  font-size: 15px;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.about-find-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 520px;
+}
+
+
+/* ============================================================
+   OLD COMPANIONS
+   ============================================================ */
+
+.about-companions {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .about-companions-inner {
   max-width: 1180px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 64px;
-  align-items: center;
+  padding: 0 32px;
 }
+
+.about-companions-text {
+  max-width: 620px;
+  margin-bottom: 48px;
+}
+
 .about-companions-text p {
   margin: 0 0 16px;
 }
+
 .about-companions-text strong {
   font-weight: 600;
   color: var(--dark);
 }
+
 .about-companions-grid {
+  max-width: 1180px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
-.about-companions-grid figure {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+
 .about-companion-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
   position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
 }
-.about-companions-grid figcaption {
-  text-align: center;
-  font-size: 13px;
+
+.about-companions figure {
+  margin: 0;
+}
+
+.about-companions figcaption {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
   color: var(--text-muted);
 }
 
-/* ── THANKS BLOCK ── */
+
+/* ── Thanks ── */
+
 .about-thanks {
-  max-width: 720px;
-  margin: 64px auto 0;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 36px 48px;
+  max-width: 700px;
+  margin: 80px auto 0;
   text-align: center;
 }
+
 .about-thanks-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 20px;
   color: var(--gold);
-  margin-bottom: 12px;
 }
+
 .about-thanks-icon svg {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
 }
+
 .about-thanks h3 {
-  font-size: clamp(22px, 2.6vw, 28px);
-  font-weight: 700;
-  margin: 0 0 12px;
+  font-size: 24px;
+  margin: 0 0 14px;
 }
+
 .about-thanks p {
   margin: 0;
-  font-size: 15px;
   color: var(--text-muted);
 }
 
-/* ── CTA FOOTER BANNER ── */
+
+/* ============================================================
+   CTA FOOTER BANNER
+   ============================================================ */
+
 .about-cta {
   background: var(--dark);
-  color: #f3ead8;
-  padding: 56px 32px;
+  color: var(--surface);
+  padding: 72px 32px;
 }
+
 .about-cta-inner {
   max-width: 1180px;
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 48px;
 }
+
 .about-cta-eyebrow {
   font-size: 11px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
   font-weight: 600;
-  margin-bottom: 14px;
-}
-.about-cta h2 {
-  font-family: var(--font-serif), "Playfair Display", serif;
-  color: #f3ead8;
-  font-size: clamp(28px, 3.6vw, 40px);
-  font-weight: 900;
-  margin: 0 0 8px;
-}
-.about-cta h2 em {
-  font-style: italic;
-  color: var(--gold);
-}
-.about-cta-text p {
-  margin: 0;
-  font-size: 14px;
-  color: rgba(243, 234, 216, 0.65);
-}
-.about-cta-btn {
-  flex-shrink: 0;
-  background: var(--gold);
-  color: var(--dark);
-  font-weight: 600;
-  font-size: 15px;
-  padding: 14px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.about-cta-btn:hover {
-  background: var(--gold-light);
+  margin-bottom: 16px;
 }
 
-/* ── RESPONSIVE ── */
+.about-cta h2 {
+  color: var(--surface);
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 0 0 14px;
+}
+
+.about-cta h2 em {
+  color: var(--gold);
+}
+
+.about-cta p {
+  color: rgba(245, 240, 232, 0.72);
+  margin: 0;
+  max-width: 560px;
+}
+
+.about-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.about-cta-btn:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
 @media (max-width: 900px) {
   .about-hero {
-    padding: 56px 24px 0;
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  .about-hero-inner,
-  .about-section,
-  .about-companions-inner {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
+
   .about-section,
   .about-section-alt {
-    padding: 56px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  .about-hero-image,
-  .about-who-image,
-  .about-find-image {
+
+  .about-hero-inner {
+    gap: 32px;
+  }
+
+  .about-section {
+    gap: 40px;
+  }
+
+  .about-newsblock {
+    padding: 80px 24px 88px;
+  }
+
+  .about-newsblock-wrap {
+    padding: 0 32px;
+  }
+
+  .about-newsblock-timeline {
+    max-width: 62%;
+  }
+
+  .about-newsblock-illus {
+    background-size: 60% auto;
+    opacity: 0.10;
+  }
+
+  .about-news-text {
+    font-size: 16px;
+  }
+
+  .about-companions-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about-companions-grid {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about-cta-inner {
+    padding: 0;
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 56px 20px 0;
+  }
+
+  .about-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 36px;
+  }
+
+  .about-hero-image {
     min-height: 280px;
   }
+
+  .about-hero-text h1 {
+    font-size: clamp(52px, 17vw, 76px);
+  }
+
   .about-quote {
-    padding: 28px 24px 24px 64px;
+    padding: 28px 24px 28px 64px;
   }
+
+  .about-quote-mark {
+    left: 18px;
+    top: 12px;
+    font-size: 58px;
+  }
+
+  .about-section,
+  .about-section-alt {
+    padding: 64px 20px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-who-image {
+    min-height: 0;
+  }
+
+  /*
+   * NEWS BLOCK — MOBILE
+   */
+
+  .about-newsblock {
+    padding: 64px 24px 72px;
+  }
+
+  .about-newsblock-wrap {
+    padding: 0 28px;
+  }
+
+  .about-newsblock-timeline {
+    max-width: 100%;
+  }
+
+  /*
+   * Keep the sketch, but push it into the background.
+   */
+  .about-newsblock-illus {
+    background-size: 90% auto;
+    opacity: 0.07;
+  }
+
+  .about-news-item {
+    grid-template-columns: 14px minmax(0, 1fr);
+    column-gap: 16px;
+  }
+
+  .about-news-track {
+    padding-top: 6px;
+  }
+
+  .about-news-dot {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+  }
+
+  .about-news-stem {
+    min-height: 26px;
+    margin-top: 6px;
+  }
+
+  .about-news-body {
+    padding-bottom: 30px;
+  }
+
+  .about-news-label {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .about-news-text {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about-news-item--last .about-news-label {
+    font-size: 18px;
+  }
+
+  .about-news-item--last .about-news-text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .about-news-item--last .about-news-text::after {
+    margin-top: 20px;
+  }
+
+  .about-find-image {
+    min-height: 360px;
+  }
+
+  .about-bullets {
+    gap: 20px;
+  }
+
+  .about-companions {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .about-companions-inner {
+    padding: 0 20px;
+  }
+
+  .about-companions-text {
+    margin-bottom: 36px;
+  }
+
   .about-companions-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
+
   .about-thanks {
-    padding: 28px 24px;
-    margin-top: 40px;
+    margin-top: 64px;
+    padding: 0 20px;
   }
+
+  .about-cta {
+    padding: 60px 20px;
+  }
+
   .about-cta-inner {
     flex-direction: column;
     align-items: flex-start;
-    text-align: left;
+    gap: 32px;
   }
 }
 
-@media (max-width: 560px) {
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-section,
+  .about-section-alt {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-newsblock {
+    padding: 60px 16px 68px;
+  }
+
+  .about-newsblock-wrap {
+    padding: 0 22px;
+  }
+
+  .about-news-item {
+    column-gap: 13px;
+  }
+
+  .about-news-text {
+    font-size: 15px;
+  }
+
+  .about-news-item--last .about-news-text {
+    font-size: 20px;
+  }
+
+  .about-companions-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .about-companions-grid {
-    grid-template-columns: 1fr;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-cta {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

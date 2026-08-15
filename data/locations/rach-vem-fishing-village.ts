@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const rachVemFishingVillage: Location = {
@@ -11,7 +11,7 @@ export const rachVemFishingVillage: Location = {
   address: "Rạch Vẹm, Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["cultural", "nature", "beach"],
   categories: [],
-  experiences: ["culture", "photography", "food", "walking-tours", "boat-tours"],
+  experiences: ["culture", "photography", "food", "walking-tour", "boat-tour"],
   tags: ["🦑 Starfish Beach", "🎣 Stilt House Village", "🍚 Floating Restaurant", "🌊 Northern Phu Quoc"],
   bestTime: "Nov - Apr (dry season, calm water, best starfish visibility; peak Dec-Mar when starfish are most concentrated)",
   bestMonths: [11, 12, 1, 2, 3, 4],

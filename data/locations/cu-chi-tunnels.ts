@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const cuChiTunnels: Location = {
@@ -11,7 +11,7 @@ export const cuChiTunnels: Location = {
   address: "Phú Hiệp, Củ Chi, Thành phố Hồ Chí Minh",
   type: ["heritage", "history", "attraction"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🪖 War History", "🕳️ Underground Tunnels", "🌿 Jungle Warfare", "📷 Living Museum"],
   bestTime: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
   bestMonths: [11, 12, 1, 2, 3, 4],

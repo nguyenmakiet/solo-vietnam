@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const haLongBay: Location = {
@@ -11,7 +11,7 @@ export const haLongBay: Location = {
   address: "Vịnh Hạ Long, Quảng Ninh",
   type: ["nature", "bay"],
   categories: [],
-  experiences: ["boat-tours", "kayaking", "caving", "photography", "beaches"],
+  experiences: ["boat-tour", "kayaking", "caving", "photography", "beach"],
   tags: ["🌊 UNESCO World Heritage", "🚢 Overnight Cruise", "🪨 Karst Landscape", "📸 Photography"],
   bestTime: "Sep – Nov (clear skies, calm water, best visibility) or Mar – Apr. Avoid Jun-Aug for crowds and afternoon storms.",
   bestMonths: [3, 4, 9, 10, 11],

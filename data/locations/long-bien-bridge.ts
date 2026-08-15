@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const longBienBridge: Location = {
@@ -11,7 +11,7 @@ export const longBienBridge: Location = {
   address: "Long Biên, Hà Nội",
   type: ["landmark", "heritage", "history"],
   categories: [],
-  experiences: ["history", "photography", "walking-tours", "cycling"],
+  experiences: ["history", "photography", "walking-tour", "cycling"],
   tags: ["🌉 Colonial Bridge", "📷 Red River Views", "🚂 Active Rail Bridge", "🏯 French Heritage"],
   bestTime: "Oct - Apr (cool dry season; early morning for golden light and minimal traffic, or 3-5 PM for warm afternoon light and local activity); Oct-Nov brings reed grass season on the Red River rock beach below the bridge",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const coToIsland: Location = {
@@ -11,7 +11,7 @@ export const coToIsland: Location = {
   address: "Huyện Cô Tô, Quảng Ninh",
   type: ["island", "beach", "nature"],
   categories: [],
-  experiences: ["beaches", "snorkeling", "kayaking", "photography", "boat-tours"],
+  experiences: ["beach", "snorkeling", "kayaking", "photography", "boat-tour"],
   tags: ["🏝️ Remote Island", "🤿 Coral Snorkeling", "🏖️ White Sand Beaches", "🌊 Gulf of Tonkin"],
   bestTime: "Apr - Aug (warm, sunny, ideal for swimming and snorkeling; Sep-Oct still good but storm risk increases)",
   bestMonths: [4, 5, 6, 7, 8],

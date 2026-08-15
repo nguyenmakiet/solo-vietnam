@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const baNaCableCar: Location = {
@@ -11,7 +11,7 @@ export const baNaCableCar: Location = {
   address: "Suối Mơ Station, Hoà Ninh, Hoà Vang, Đà Nẵng",
   type: ["attraction"],
   categories: [],
-  experiences: ["cable-cars", "photography"],
+  experiences: ["cable-car", "photography"],
   tags: ["🚡 World Record Cable Car", "☁️ Through the Clouds", "📸 Aerial Views", "🏰 French Village"],
   bestTime: "Mar – Aug (clearest visibility). Arrive 7:30-8:30 AM before the 9:30-11 AM peak crowd window.",
   bestMonths: [3, 4, 5, 6, 7, 8],

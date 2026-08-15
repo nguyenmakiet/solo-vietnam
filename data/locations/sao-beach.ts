@@ -1,4 +1,4 @@
-import { Location } from "../location"
+﻿import { Location } from "../location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const saoBeach: Location = {
@@ -11,7 +11,7 @@ export const saoBeach: Location = {
   address: "Bãi Sao, An Thới, Phú Quốc, Kiên Giang",
   type: ["beach"],
   categories: [],
-  experiences: ["beaches", "photography", "food", "kayaking"],
+  experiences: ["beach", "photography", "food", "kayaking"],
   tags: ["🏖️ White Sand Beach", "🌊 Clear Water", "🦞 Seafood", "🚣 Kayaking"],
   bestTime: "Jun - Oct for the calmest, clearest water (sheltered from the southwest monsoon). Nov-Apr is when most international tourists visit Phú Quốc, but this is actually Bãi Sao's rougher season - waves and debris from the northeast monsoon are common.",
   bestMonths: [6, 7, 8, 9, 10],

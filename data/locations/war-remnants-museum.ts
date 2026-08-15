@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const warRemnantsMuseum: Location = {
@@ -11,7 +11,7 @@ export const warRemnantsMuseum: Location = {
   address: "28 Võ Văn Tần, Phường 6, Quận 3, Thành phố Hồ Chí Minh",
   type: ["history", "heritage"],
   categories: ["must-see"],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🪖 Vietnam War", "📸 War Photography", "⚔️ Agent Orange", "🚁 Military Hardware"],
   bestTime: "Year-round; mornings are quieter and cooler",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

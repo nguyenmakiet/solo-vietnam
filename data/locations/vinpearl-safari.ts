@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const vinpearlSafari: Location = {
@@ -11,7 +11,7 @@ export const vinpearlSafari: Location = {
   address: "Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["attraction", "nature"],
   categories: [],
-  experiences: ["wildlife", "photography", "walking-tours"],
+  experiences: ["wildlife", "photography", "walking-tour"],
   tags: ["🦁 Open Safari", "🦒 African Animals", "📸 Wildlife Photography", "🚌 Safari Bus"],
   bestTime: "Nov – Apr (dry season, animals most active in cooler temperatures). Visit early morning (9-11 AM) or late afternoon (from 3 PM) - midday heat drives animals into shade.",
   bestMonths: [1, 2, 3, 4, 11, 12],

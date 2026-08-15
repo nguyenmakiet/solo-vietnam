@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const imperialCitadelOfThangLong: Location = {
@@ -11,7 +11,7 @@ export const imperialCitadelOfThangLong: Location = {
   address: "19C Hoàng Diệu, Ba Đình, Hà Nội",
   type: ["citadel", "heritage", "history", "museum"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏯 UNESCO World Heritage", "👑 1,000 Years of Imperial History", "🌙 Night Tour", "🔍 Archaeological Site"],
   bestTime: "Oct - Apr (cool dry season; avoid public holidays when crowds are largest)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

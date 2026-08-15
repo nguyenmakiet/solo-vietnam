@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const catBaTown: Location = {
@@ -11,7 +11,7 @@ export const catBaTown: Location = {
   address: "Thị trấn Cát Bà, Cát Hải, Hải Phòng",
   type: ["town", "attraction", "landmark"],
   categories: [],
-  experiences: ["food", "nightlife", "walking-tours", "photography"],
+  experiences: ["food", "nightlife", "walking-tour", "photography"],
   tags: ["🏘️ Island Town", "🦞 Seafood", "🌅 Harbour Front", "🌙 Cat Ba Nightlife"],
   bestTime: "Apr - Jun and Sep - Nov (shoulder seasons avoid summer crowds and winter cold; Cat Ba town is lively year-round)",
   bestMonths: [4, 5, 6, 9, 10, 11],

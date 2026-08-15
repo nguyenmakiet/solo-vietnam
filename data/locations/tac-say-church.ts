@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const tacSayChurch: Location = {
@@ -11,7 +11,7 @@ export const tacSayChurch: Location = {
   address: "Tắc Sậy, Phong Thạnh Tây, Giá Rai, Bạc Liêu",
   type: ["heritage", "cultural", "landmark"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["⛪ Martyr Shrine", "🙏 Pilgrimage Site", "🌾 Mekong Delta", "✨ Miraculous Healings"],
   bestTime: "Year-round; the anniversary of Father Diep's martyrdom (26 February) draws the largest pilgrimages",
   bestMonths: [1, 2, 3, 11, 12],

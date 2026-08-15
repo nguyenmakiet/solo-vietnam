@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const phungHungMuralStreet: Location = {
@@ -12,7 +12,7 @@ export const phungHungMuralStreet: Location = {
   address: "Phùng Hưng, Hoàn Kiếm, Hà Nội",
   type: ["attraction", "cultural", "landmark"],
   categories: [],
-  experiences: ["photography", "walking-tours", "culture"],
+  experiences: ["photography", "walking-tour", "culture"],
   tags: ["🎨 Street Art", "📷 Photography", "🏯 Under the Railway", "🌸 Hanoi Hidden Gem"],
   bestTime: "Year-round; morning light (before 9 AM) is best for photography before the street gets busy",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

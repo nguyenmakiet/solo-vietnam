@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const phongNhaCave: Location = {
@@ -11,7 +11,7 @@ export const phongNhaCave: Location = {
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["nature", "cave"],
   categories: [],
-  experiences: ["caving", "boat-tours", "photography"],
+  experiences: ["caving", "boat-tour", "photography"],
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "📸 Photography", "🌊 Underground River"],
   bestTime: "Mar – Aug (dry season, Son River water is clearest and most turquoise; cave may close Sep-Nov due to flooding)",
   bestMonths: [3, 4, 5, 6, 7, 8],

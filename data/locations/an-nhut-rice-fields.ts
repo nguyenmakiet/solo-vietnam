@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const anNhutRiceFields: Location = {
@@ -11,7 +11,7 @@ export const anNhutRiceFields: Location = {
   address: "Xã An Nhứt, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["nature", "attraction", "cultural"],
   categories: [],
-  experiences: ["photography", "food", "culture", "walking-tours"],
+  experiences: ["photography", "food", "culture", "walking-tour"],
   tags: ["🌾 Rice Fields", "📷 Golden Season", "🍜 Countryside Food Market", "🌅 Sunset Views"],
   bestTime: "Rice harvest seasons: late March to early April, and early August, when the fields turn golden. Weekend afternoons for the food market atmosphere.",
   bestMonths: [3, 4, 8, 9],

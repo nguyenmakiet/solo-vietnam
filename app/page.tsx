@@ -81,11 +81,9 @@ export default function Home() {
   return (
     <main className="home-wrap">
 
-      {/* ── HERO + MAP ── */}
+      {/* ── HERO ── */}
       <section className="home-hero">
         <div className="home-hero-inner">
-          <div className="home-eyebrow">"Solo steps, YOLO Stories"</div>
-
           <h1>
             Most travelers see Vietnam.<br />
             <em>A few actually find it.</em>
@@ -94,8 +92,42 @@ export default function Home() {
           <p className="home-hero-desc">
             Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won't find in a guidebook.
           </p>
+        </div>
+      </section>
 
-          {/* STATS */}
+      {/* ── DISCOVERY INTRO ── */}
+      <section className="home-discovery-section">
+        <div className="home-discovery-inner">
+          <p className="home-discovery-question">
+            Want to explore Vietnam — but not sure where to start?
+          </p>
+          <p className="home-discovery-text">
+            From{" "}
+            <Link href="/locations?type=forest" className="discovery-link">ancient forests</Link>
+            {" "}where crocodiles still drift beneath the surface,{" "}
+            <Link href="/locations?type=beach" className="discovery-link">quiet beaches</Link>
+            {" "}that still feel genuinely wild,{" "}
+            <Link href="/locations?type=mountain&type=nature&type=cultural&experience=homestay" className="discovery-link">mountain villages</Link>
+            {" "}tucked into mist and highland fog,{" "}
+            <Link href="/locations?experience=motorcycling" className="discovery-link">winding roads</Link>
+            {" "}that reward anyone patient enough to follow them,{" "}
+            <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
+            {" "}full of noise and smoke and life, to the{" "}
+            <Link href="/locations?type=citadel&experience=history" className="discovery-link">ruins of dynasties</Link>
+            {" "}that shaped this country for centuries —
+          </p>
+          <p className="home-discovery-closing">
+            I didn&apos;t know where to start either. So I started everywhere.
+          </p>
+          <p className="home-discovery-cta">
+            Let&apos;s figure it out together.
+          </p>
+        </div>
+      </section>
+
+      {/* ── STATS ── */}
+      <section className="home-stats-section">
+        <div className="home-stats-inner">
           <div className="home-hero-stats">
             <div className="home-hero-stat">
               <div className="home-hero-stat-icon">
@@ -103,7 +135,7 @@ export default function Home() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
                 </svg>
               </div>
-              <div className="home-hero-stat-num">250</div>
+              <div className="home-hero-stat-num">250+</div>
               <div className="home-hero-stat-label">Locations mapped</div>
             </div>
             <div className="home-hero-stat">
@@ -125,8 +157,12 @@ export default function Home() {
               <div className="home-hero-stat-label">Hidden places discovered</div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* MAP */}
+      {/* ── MAP ── */}
+      <section className="home-map-section">
+        <div className="home-map-inner">
           <div className="home-map-wrap">
             <div className="home-map-heading">
               <h2>Explore Vietnam on the Map</h2>
@@ -137,8 +173,6 @@ export default function Home() {
               👆 Click a province to explore destinations
             </div>
           </div>
-
-          {/* MAP CTA BANNER */}
           <Link href="/map" className="home-map-cta-banner">
             <div className="home-map-cta-left">
               <span className="home-map-cta-icon">🗺️</span>

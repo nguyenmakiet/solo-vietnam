@@ -1,4 +1,4 @@
-import { Location } from "../location"
+﻿import { Location } from "../location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const khemBeach: Location = {
@@ -11,7 +11,7 @@ export const khemBeach: Location = {
   address: "An Thới, Phú Quốc, Kiên Giang",
   type: ["beach"],
   categories: [],
-  experiences: ["beaches", "photography"],
+  experiences: ["beach", "photography"],
   tags: ["🏖️ White Sand Beach", "🌅 Sunrise Spot", "🌊 Southeast Coast", "🧂 Salt History"],
   bestTime: "May - Sep (southwest monsoon season; Khem faces southeast so it is sheltered from the southwest wind and the water is at its clearest and calmest during these months)",
   bestMonths: [5, 6, 7, 8, 9],

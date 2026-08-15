@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const marbleMountains: Location = {
@@ -11,7 +11,7 @@ export const marbleMountains: Location = {
   address: "81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng",
   type: ["heritage", "cultural", "history", "landmark", "cave"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours", "trekking"],
+  experiences: ["history", "culture", "photography", "walking-tour", "trekking"],
   tags: ["🪨 Five Elements Mountains", "🕌 Buddhist Caves", "☀️ Sunbeam Cave", "🏯 Cham Heritage"],
   bestTime: "Mar - Sep (best weather and clearest light for cave photography; avoid rainy season Oct-Feb when surfaces are slippery and visibility poor)",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],

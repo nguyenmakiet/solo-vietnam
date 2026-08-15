@@ -95,6 +95,72 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── GOOD NEWS / BAD NEWS ── */}
+      <section className="about-newsblock">
+
+        <div className="about-newsblock-illus" aria-hidden="true" />
+
+        <div className="about-newsblock-wrap">
+          <div className="about-newsblock-timeline">
+
+            <div className="about-news-item">
+              <div className="about-news-track">
+                <span className="about-news-dot about-news-dot--good" />
+                <span className="about-news-stem" />
+              </div>
+              <div className="about-news-body">
+                <p className="about-news-label about-news-label--good">Good news.</p>
+                <p className="about-news-text">You just decided to explore a country with thousands of years of history.</p>
+              </div>
+            </div>
+
+            <div className="about-news-item">
+              <div className="about-news-track">
+                <span className="about-news-dot about-news-dot--bad" />
+                <span className="about-news-stem" />
+              </div>
+              <div className="about-news-body">
+                <p className="about-news-label about-news-label--bad">Bad news.</p>
+                <p className="about-news-text">Your boss gave you 10 days off.<br />Or your visa only gives you 30.</p>
+              </div>
+            </div>
+
+            <div className="about-news-item">
+              <div className="about-news-track">
+                <span className="about-news-dot about-news-dot--good" />
+                <span className="about-news-stem" />
+              </div>
+              <div className="about-news-body">
+                <p className="about-news-label about-news-label--good">Good news.</p>
+                <p className="about-news-text">There&apos;s a local here who can help.</p>
+              </div>
+            </div>
+
+            <div className="about-news-item">
+              <div className="about-news-track">
+                <span className="about-news-dot about-news-dot--bad" />
+                <span className="about-news-stem" />
+              </div>
+              <div className="about-news-body">
+                <p className="about-news-label about-news-label--bad">Bad news.</p>
+                <p className="about-news-text">He&apos;s lived here for more than 30 years —<br />and still wouldn&apos;t dare claim he understands all of Vietnam.</p>
+              </div>
+            </div>
+
+            <div className="about-news-item about-news-item--last">
+              <div className="about-news-track">
+                <span className="about-news-dot about-news-dot--good" />
+              </div>
+              <div className="about-news-body">
+                <p className="about-news-label about-news-label--good">Good news.</p>
+                <p className="about-news-text">He doesn&apos;t know everything.<br />But after 30 years, he&apos;s learned a thing or two.<br />And he&apos;s happy to share what he&apos;s found.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* ── WHAT YOU'LL FIND HERE ── */}
       <section className="about-section about-find">
         <div className="about-find-text">

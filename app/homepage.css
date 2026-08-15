@@ -97,6 +97,84 @@
   margin-right: auto;
 }
 
+/* ── DISCOVERY INTRO ── */
+.home-discovery-section {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 72px 32px;
+}
+.home-discovery-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.home-discovery-question {
+  font-family: var(--font-serif), "Playfair Display", serif;
+  font-size: clamp(20px, 2.8vw, 26px);
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.3px;
+  margin-bottom: 24px;
+  line-height: 1.35;
+}
+.home-discovery-text {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--text);
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+.home-discovery-closing {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.home-discovery-cta {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.discovery-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 4px;
+  transition: color 0.2s;
+}
+.discovery-link:hover {
+  color: var(--gold);
+  text-decoration-style: solid;
+}
+
+/* ── STATS SECTION ── */
+.home-stats-section {
+  background: linear-gradient(170deg, #fdf9f3 0%, #f5edd8 50%, #ede0c4 100%);
+  padding: 48px 32px;
+}
+.home-stats-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.home-stats-section .home-hero-stats {
+  margin-bottom: 0;
+}
+
+/* ── MAP SECTION ── */
+.home-map-section {
+  background: var(--surface);
+  padding: 48px 32px 64px;
+  border-top: 1px solid var(--border);
+}
+.home-map-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
 /* ── HERO STATS ── */
 .home-hero-stats {
   display: grid;

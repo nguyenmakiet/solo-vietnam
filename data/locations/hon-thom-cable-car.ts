@@ -1,4 +1,4 @@
-import { Location } from "../location"
+﻿import { Location } from "../location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const honThomCableCar: Location = {
@@ -11,7 +11,7 @@ export const honThomCableCar: Location = {
   address: "An Thới, Phú Quốc, Kiên Giang",
   type: ["attraction"],
   categories: [],
-  experiences: ["cable-cars", "beaches", "photography"],
+  experiences: ["cable-car", "beach", "photography"],
   tags: ["🚡 World's Longest Cable Car", "🏝️ Island", "🌅 Sunset Views", "🌊 Sea Views"],
   bestTime: "Nov – Apr (clear skies, calm sea). Nov-Dec: catch sunset on the afternoon crossing.",
   bestMonths: [1, 2, 3, 4, 11, 12],

@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const hoiAnAncientTown: Location = {
@@ -11,7 +11,7 @@ export const hoiAnAncientTown: Location = {
   address: "Minh An, Hội An, Quảng Nam",
   type: ["town", "heritage", "cultural"],
   categories: [],
-  experiences: ["culture", "history", "food", "markets", "walking-tours", "photography", "nightlife"],
+  experiences: ["culture", "history", "food", "markets", "walking-tour", "photography", "nightlife"],
   tags: ["🏮 Lantern Town", "🎑 UNESCO Heritage", "🍜 Street Food", "📸 Photography"],
   bestTime: "Feb – Apr (dry season, Tết lantern season in Feb) or Oct – Nov",
   bestMonths: [2, 3, 4, 10, 11],

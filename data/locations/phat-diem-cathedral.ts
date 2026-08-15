@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const phatDiemCathedral: Location = {
@@ -11,7 +11,7 @@ export const phatDiemCathedral: Location = {
   address: "Xã Phát Diệm, Ninh Bình",
   type: ["heritage", "cultural", "landmark"],
   categories: [],
-  experiences: ["history", "culture", "photography", "walking-tours"],
+  experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["⛪ Stone Cathedral", "🏯 Vietnamese Gothic", "🌊 Coastal Plains", "📷 Unique Architecture"],
   bestTime: "Nov - Apr (dry season); Christmas Eve is when the complex looks its best - decorated with festive lights and full of community activity, though it draws the largest crowds of the year",
   bestMonths: [11, 12, 1, 2, 3, 4],

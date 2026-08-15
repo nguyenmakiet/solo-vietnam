@@ -1,4 +1,4 @@
-import { Location } from "@/data/location"
+﻿import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const vinWondersPhuQuoc: Location = {
@@ -11,7 +11,7 @@ export const vinWondersPhuQuoc: Location = {
   address: "Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["attraction"],
   categories: [],
-  experiences: ["beaches", "photography", "walking-tours"],
+  experiences: ["beach", "photography", "walking-tour"],
   tags: ["🎡 Theme Park", "🏖️ Private Beach", "🎠 Family Activities", "🌊 Water Park"],
   bestTime: "Nov – Apr (dry season, best weather for outdoor areas and water park)",
   bestMonths: [1, 2, 3, 4, 11, 12],

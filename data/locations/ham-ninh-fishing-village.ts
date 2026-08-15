@@ -1,4 +1,4 @@
-import { Location } from "../location"
+﻿import { Location } from "../location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const hamNinhFishingVillage: Location = {
@@ -11,7 +11,7 @@ export const hamNinhFishingVillage: Location = {
   address: "Hàm Ninh, Phú Quốc, Kiên Giang",
   type: ["town", "cultural"],
   categories: [],
-  experiences: ["culture", "food", "photography", "walking-tours"],
+  experiences: ["culture", "food", "photography", "walking-tour"],
   tags: ["🎣 Oldest Fishing Village", "🦀 Seafood", "🌅 Sunrise Spot", "🪵 Wooden Bridge"],
   bestTime: "Nov – Apr (dry season; early morning for freshest catch, sunrise, and best atmosphere)",
   bestMonths: [1, 2, 3, 4, 11, 12],
