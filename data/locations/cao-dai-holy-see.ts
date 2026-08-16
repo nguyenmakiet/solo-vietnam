@@ -18,7 +18,7 @@ export const caoDaiHolySee: Location = {
   entranceFee: "Free. Daily ceremonies at 6:00 AM, 12:00 PM, 6:00 PM, and midnight (12:00 AM). All open to respectful observers; most visitors attend the noon ceremony.",
   openingHours: "7:00 AM - 10:00 PM. Open 24 hours during major festivals.",
   mapUrl: "https://www.google.com/maps?q=11.348625380427553,106.15234400083266",
-  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775835451893!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3lwb2lJa3c.!2m2!1d11.34883296905073!2d106.1521455263803!3f305.8428671226023!4f10.017208668408897!5f0.7820865974627469" },
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1786870079766!6m8!1m7!1sCAoSHENJQUJJaERJTkUyWGl1V3ZTN1JMaU45MG5teVQ.!2m2!1d11.30387106288756!2d106.132706693384!3f2.915013065682704!4f-28.632219664346962!5f0.7820865974627469" },
   heroImage: heroUrl("cao-dai-holy-see-tay-ninh_sw4tt0"),
   gallery: [
     "cao-dai-holy-see-tay-ninh-02_lihvdp",
