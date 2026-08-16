@@ -19,11 +19,12 @@ export const caoDaiHolySee: Location = {
   openingHours: "7:00 AM - 10:00 PM. Open 24 hours during major festivals.",
   mapUrl: "https://www.google.com/maps?q=11.348625380427553,106.15234400083266",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775835451893!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3lwb2lJa3c.!2m2!1d11.34883296905073!2d106.1521455263803!3f305.8428671226023!4f10.017208668408897!5f0.7820865974627469" },
-  heroImage: heroUrl("cao-dai-holy-see_xh3lmx"),
+  heroImage: heroUrl("cao-dai-holy-see-tay-ninh_sw4tt0"),
   gallery: [
-    "cao-dai-holy-see-2_gbxwah",
-    "cao-dai-holy-see-3_n1c0g3",
-    "cao-dai-holy-see_xh3lmx",
+    "cao-dai-holy-see-tay-ninh-02_lihvdp",
+    "cao-dai-holy-see-tay-ninh_sw4tt0",
+    "cao-dai-holy-see-tay-ninh-03_upuoy4",
+    "cao-dai-holy-see-tay-ninh-04_mek1dy",
   ],
   seoDescription:
     "The Cao Dai Holy See in Tây Ninh is the Vatican of Caodaism - Vietnam's most distinctive indigenous religion - built 1933-1955 using bamboo-reinforced concrete, fusing Catholic bell towers, Buddhist imagery, Confucian symbolism, and the Divine Eye into one dazzling complex. Free to visit; noon ceremony daily.",
