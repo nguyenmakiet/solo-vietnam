@@ -35,6 +35,7 @@ import { buGiaMapNationalPark } from "@/data/locations/bu-gia-map-national-park"
 import { buiHuiGrassland } from "@/data/locations/bui-hui-grassland"
 import { buiVienStreet } from "@/data/locations/bui-vien-street"
 import { bungBinhThienLake } from "@/data/locations/bung-binh-thien-lake"
+import { cafeApartmentSaigon } from "@/data/locations/cafe-apartment-saigon"
 import { caiRangFloatingMarket } from "@/data/locations/cai-rang-floating-market"
 import { caoDaiHolySee } from "@/data/locations/cao-dai-holy-see"
 import { canGioBeach } from "@/data/locations/can-gio-beach"
@@ -293,6 +294,7 @@ export const allLocations: Location[] = [
   buiHuiGrassland,
   buiVienStreet,
   bungBinhThienLake,
+  cafeApartmentSaigon,
   caiRangFloatingMarket,
   caoDaiHolySee,
   canGioBeach,
