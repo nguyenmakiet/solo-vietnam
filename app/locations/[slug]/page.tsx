@@ -75,6 +75,14 @@ export default async function LocationPage({
   const typeLabel = Array.isArray(location.type) ? location.type.join(" · ") : location.type
   const theme = locationTheme[primaryType] ?? "gray"
 
+  const updatedLabel = location.updatedAt
+    ? new Date(location.updatedAt).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      })
+    : null
+
   return (
     <div className={`lp theme-${theme}`}>
 
@@ -91,6 +99,9 @@ export default async function LocationPage({
         )}
         <span className="sep">›</span>
         <span className="current">{location.name}</span>
+        {updatedLabel && (
+          <span className="breadcrumb-updated">Updated {updatedLabel}</span>
+        )}
       </nav>
 
       {/* Hero */}

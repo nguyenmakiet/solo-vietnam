@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -m 90 http://localhost:3000/locations/kho-muong-cave -o /tmp/final-page.html -w \"HTTP %{http_code} time:%{time_total}s\\\\n\")"
+    ]
+  }
+}

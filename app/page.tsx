@@ -99,7 +99,7 @@ export default function Home() {
       <section className="home-discovery-section">
         <div className="home-discovery-inner">
           <p className="home-discovery-question">
-            Want to explore Vietnam — but not sure where to start?
+            Want to explore Vietnam - but not sure where to start?
           </p>
           <p className="home-discovery-text">
             From{" "}
@@ -114,7 +114,7 @@ export default function Home() {
             <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
             {" "}full of noise and smoke and life, to the{" "}
             <Link href="/locations?type=citadel&experience=history" className="discovery-link">ruins of dynasties</Link>
-            {" "}that shaped this country for centuries —
+            {" "}that shaped this country for centuries.
           </p>
           <p className="home-discovery-closing">
             I didn&apos;t know where to start either. So I started everywhere.
