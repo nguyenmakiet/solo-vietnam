@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const toVoGate: Location = {
   slug: "to-vo-gate",
   name: "Cổng Tò Vò",
+  updatedAt: "2026-08-24",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: "15.390100951312618",

@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hanoiStJosephsCathedral: Location = {
   slug: "hanoi-st-josephs-cathedral",
   name: "Hanoi St. Joseph's Cathedral",
+  updatedAt: "2026-08-24",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.02870465360659,

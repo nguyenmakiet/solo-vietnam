@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phongNhaBotanicGarden: Location = {
   slug: "phong-nha-botanic-garden",
   name: "Phong Nha Botanic Garden",
+  updatedAt: "2026-08-24",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.55254653358196,

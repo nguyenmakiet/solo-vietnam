@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const buGiaMapNationalPark: Location = {
   slug: "bu-gia-map-national-park",
   name: "Bù Gia Mập National Park",
+  updatedAt: "2026-08-24",
   provinces: ["binh-phuoc"],
   destination: "",
   lat: 12.096260710633082,

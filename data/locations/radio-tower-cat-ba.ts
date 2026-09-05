@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const radioTowerCatBa: Location = {
   slug: "radio-tower-cat-ba",
   name: "Radio Tower Viewpoint",
+  updatedAt: "2026-08-24",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.725680942118284",

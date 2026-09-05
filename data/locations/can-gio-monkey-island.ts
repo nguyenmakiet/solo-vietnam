@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const canGioMonkeyIsland: Location = {
   slug: "can-gio-monkey-island",
   name: "Cần Giờ Monkey Island",
+  updatedAt: "2026-08-24",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.409854763930516,

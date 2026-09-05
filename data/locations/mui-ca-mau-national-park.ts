@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muiCaMauNationalPark: Location = {
   slug: "mui-ca-mau-national-park",
   name: "Mũi Cà Mau National Park",
+  updatedAt: "2026-08-24",
   provinces: ["ca-mau"],
   destination: "",
   lat: 8.605533331954971,

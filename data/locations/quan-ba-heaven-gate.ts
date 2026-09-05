@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quanBaHeavenGate: Location = {
   slug: "quan-ba-heaven-gate",
   name: "Quản Bạ Heaven Gate",
+  updatedAt: "2026-08-24",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "23.04948889805356",

@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honChongRockFormation: Location = {
   slug: "hon-chong-rock-formation",
   name: "Hòn Chồng (Hòn Chồng Rock Formation)",
+  updatedAt: "2026-08-24",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.272947381203165,

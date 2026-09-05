@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vinpearlSafari: Location = {
   slug: "vinpearl-safari",
   name: "Vinpearl Safari",
+  updatedAt: "2026-08-24",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: "10.337243228996103",

@@ -103,8 +103,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const locationPages: MetadataRoute.Sitemap = allLocations.map((l) => ({
     url: `${BASE_URL}/locations/${l.slug}`,
-    lastModified: (l as any).updatedAt
-      ? new Date((l as any).updatedAt)
+    lastModified: l.updatedAt
+      ? new Date(l.updatedAt)
       : (l as any).datePublished
         ? new Date((l as any).datePublished)
         : new Date(),

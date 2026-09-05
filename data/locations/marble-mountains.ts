@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const marbleMountains: Location = {
   slug: "marble-mountains",
   name: "Marble Mountains (Ngũ Hành Sơn)",
+  updatedAt: "2026-08-24",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: "16.00395789717095",

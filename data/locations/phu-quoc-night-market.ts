@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuQuocNightMarket: Location = {
   slug: "phu-quoc-night-market",
   name: "Phú Quốc Night Market",
+  updatedAt: "2026-08-24",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: "10.2158553",

@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoChiMinhChildhoodHome: Location = {
   slug: "ho-chi-minh-childhood-home",
   name: "Ho Chi Minh's Childhood Home",
+  updatedAt: "2026-08-24",
   provinces: ["nghe-an"],
   destination: "",
   lat: "18.676032245825112",

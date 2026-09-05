@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const plateRockReef: Location = {
   slug: "plate-rock-reef",
   name: "Ghềnh Đá Đĩa (Plate Rock Reef)",
+  updatedAt: "2026-08-24",
   provinces: ["phu-yen"],
   destination: "",
   lat: "13.354005873751277",

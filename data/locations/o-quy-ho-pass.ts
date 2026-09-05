@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const oQuyHoPass: Location = {
   slug: "o-quy-ho-pass",
   name: "O Quy Ho Pass",
+  updatedAt: "2026-08-24",
   provinces: ["lao-cai", "lai-chau"],
   destination: "",
   lat: 22.352936964870516,

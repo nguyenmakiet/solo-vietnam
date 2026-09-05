@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const truongSonNationalCemetery: Location = {
   slug: "truong-son-national-cemetery",
   name: "Truong Son National Cemetery",
+  updatedAt: "2026-08-24",
   provinces: ["quang-tri"],
   destination: "",
   lat: "16.958242841270042",

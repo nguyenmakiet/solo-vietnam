@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const km0HaGiang: Location = {
   slug: "km0-ha-giang",
   name: "Km 0 Milestone — Hà Giang",
+  updatedAt: "2026-08-24",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "22.827448496788932",

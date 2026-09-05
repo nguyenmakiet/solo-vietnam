@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const pacBoHistoricSite: Location = {
   slug: "pac-bo-historic-site",
   name: "Pác Bó Historic Site",
+  updatedAt: "2026-08-24",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.978070844628746,

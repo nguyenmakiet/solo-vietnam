@@ -3,6 +3,7 @@ import { Location } from "@/data/location"
 export const haGiangCity: Location = {
   slug: "ha-giang-city",
   name: "Ha Giang",
+  updatedAt: "2026-08-24",
   status: "unverified",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",

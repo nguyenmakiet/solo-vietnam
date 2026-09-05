@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const caiRangFloatingMarket: Location = {
   slug: "cai-rang-floating-market",
   name: "Cái Răng Floating Market",
+  updatedAt: "2026-08-24",
   provinces: ["can-tho"],
   destination: "mekong-delta",
   lat: 10.005150042253042,

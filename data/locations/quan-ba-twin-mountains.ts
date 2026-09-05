@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quanBaTwinMountains: Location = {
   slug: "quan-ba-twin-mountains",
   name: "Quản Bạ Twin Mountains",
+  updatedAt: "2026-08-24",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "23.06521535060752",

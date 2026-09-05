@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vanLongNatureReserve: Location = {
   slug: "van-long-nature-reserve",
   name: "Vân Long Nature Reserve",
+  updatedAt: "2026-08-24",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: "20.37269717802166",

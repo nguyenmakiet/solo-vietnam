@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoChiMinhMausoleumComplex: Location = {
   slug: "ho-chi-minh-mausoleum-complex",
   name: "Ho Chi Minh Mausoleum Complex",
+  updatedAt: "2026-08-24",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.036779537375388",

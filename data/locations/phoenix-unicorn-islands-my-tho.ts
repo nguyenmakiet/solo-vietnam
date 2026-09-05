@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phoenixUnicornIslandsMyTho: Location = {
   slug: "phoenix-unicorn-islands-my-tho",
   name: "Phoenix & Unicorn Islands (Cồn Phụng & Cồn Thới Sơn)",
+  updatedAt: "2026-08-24",
   provinces: ["ben-tre", "tien-giang"],
   destination: "mekong-delta",
   lat: 10.335167589686217,

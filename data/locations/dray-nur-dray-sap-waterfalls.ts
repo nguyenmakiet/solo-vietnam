@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const drayNurDraySapWaterfalls: Location = {
   slug: "dray-nur-dray-sap-waterfalls",
   name: "Dray Nur & Dray Sap Waterfalls",
+  updatedAt: "2026-08-24",
   provinces: ["dak-lak", "dak-nong"],
   destination: "",
   lat: 12.540509582270607,

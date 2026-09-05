@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dalatRailwayStation: Location = {
   slug: "dalat-railway-station",
   name: "Đà Lạt Railway Station",
+  updatedAt: "2026-08-24",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.941882324564023,

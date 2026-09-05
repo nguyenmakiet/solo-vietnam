@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vietnamMuseumOfEthnology: Location = {
   slug: "vietnam-museum-of-ethnology",
   name: "Vietnam Museum of Ethnology",
+  updatedAt: "2026-08-24",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.040622256391238",

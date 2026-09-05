@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const cuaTuStream: Location = {
   slug: "cua-tu-stream",
   name: "Cửa Tử Stream",
+  updatedAt: "2026-08-24",
   provinces: ["thai-nguyen"],
   destination: "",
   lat: "21.605532505545185",

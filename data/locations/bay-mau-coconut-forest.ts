@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bayMauCoconutForest: Location = {
   slug: "bay-mau-coconut-forest",
   name: "Bảy Mẫu Coconut Forest",
+  updatedAt: "2026-08-24",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.877556321921798,

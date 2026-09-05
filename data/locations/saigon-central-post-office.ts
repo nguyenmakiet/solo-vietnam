@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const saigonCentralPostOffice: Location = {
   slug: "saigon-central-post-office",
   name: "Saigon Central Post Office",
+  updatedAt: "2026-08-24",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: "10.779864930790652",

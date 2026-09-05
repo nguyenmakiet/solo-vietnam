@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const fairyStream: Location = {
   slug: "fairy-stream",
   name: "Fairy Stream",
+  updatedAt: "2026-08-24",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: "10.955760120620356",

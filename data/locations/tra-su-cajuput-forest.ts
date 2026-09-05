@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const traSuCajuputForest: Location = {
   slug: "tra-su-cajuput-forest",
   name: "Trà Sư Cajuput Forest",
+  updatedAt: "2026-08-24",
   provinces: ["an-giang"],
   destination: "mekong-delta",
   lat: "10.584555814623155",

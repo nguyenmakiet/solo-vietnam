@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muiDien: Location = {
   slug: "mui-dien",
   name: "Mũi Điện (Cape Varella)",
+  updatedAt: "2026-08-24",
   provinces: ["phu-yen"],
   destination: "",
   lat: 12.895123856614404,

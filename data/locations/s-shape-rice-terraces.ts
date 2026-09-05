@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sShapeRiceTerraces: Location = {
   slug: "s-shape-rice-terraces",
   name: "S-Shape Rice Terraces",
+  updatedAt: "2026-08-24",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: "20.449345402727413", // TODO: verify

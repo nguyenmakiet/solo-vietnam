@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const aPaChai: Location = {
   slug: "a-pa-chai",
   name: "A Pa Chai (Vietnam's Westernmost Point)",
+  updatedAt: "2026-08-24",
   provinces: ["dien-bien"],
   destination: "",
   lat: 22.401192335843305,

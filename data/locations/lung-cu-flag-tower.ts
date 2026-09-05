@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lungCuFlagTower: Location = {
   slug: "lung-cu-flag-tower",
   name: "Lũng Cú Flag Tower",
+  updatedAt: "2026-08-24",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.363427116840306,

@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const traQueVillage: Location = {
   slug: "tra-que-village",
   name: "Trà Quế Village",
+  updatedAt: "2026-08-24",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.902579357686461,

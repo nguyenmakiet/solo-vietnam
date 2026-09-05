@@ -3,6 +3,7 @@ import { Location } from "@/data/location"
 export const canTiBridge: Location = {
   slug: "can-ti-bridge",
   name: "Can Ti Bridge",
+  updatedAt: "2026-08-24",
   status: "unverified",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",

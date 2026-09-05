@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const duGiaWaterfall: Location = {
   slug: "du-gia-waterfall",
   name: "Du Già Waterfall",
+  updatedAt: "2026-08-24",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "22.92605491197045",

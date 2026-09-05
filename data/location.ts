@@ -81,6 +81,7 @@ export type Location = {
   slug: string
   status?: "active" | "closed" | "seasonal" | "unverified"
   name: string
+  updatedAt?: string // ISO date "YYYY-MM-DD" - update whenever content in this file changes
   provinces: string[]
   destination?: string
   lat: number | string

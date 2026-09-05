@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bidoupNuiBaNationalPark: Location = {
   slug: "bidoup-nui-ba-national-park",
   name: "Bidoup Núi Bà National Park",
+  updatedAt: "2026-08-24",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 12.133961464408484,
