@@ -20,8 +20,18 @@ export const saigonCentralPostOffice: Location = {
   openingHours: "Typically open from around 7-8 AM until 6-7 PM, with shorter Sunday hours; posted hours vary between sources, so check locally if timing matters",
   mapUrl: "https://www.google.com/maps?q=10.779864930790652,106.69990840101588",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776264706784!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2M4c19BN2dF!2m2!1d10.78014658052121!2d106.7000887251299!3f49.66963418157104!4f24.180007243195035!5f0.7820865974627469", },
-  heroImage: heroUrl("placeholder"),
-  gallery: [],
+  heroImage: heroUrl("saigon-central-post-office_eefbna"),
+  gallery: [
+    "saigon-central-post-office_eefbna",
+    "saigon-central-post-office-2_jcsgzb",
+    "saigon-central-post-office-3_ymordy",
+    "saigon-central-post-office-4_epmr9b",
+    "saigon-central-post-office-5_bpn0v0",
+    "saigon-central-post-office-6_rfznre",
+    "saigon-central-post-office-8_lxon9l",
+    "saigon-central-post-office-7_dgtfjn",
+    "saigon-central-post-office-9_ycmreh",
+  ],
   seoDescription:
     "The Saigon Central Post Office is a functioning French colonial post office completed in 1891 - often attributed to Gustave Eiffel, though the building itself was designed by architects Auguste Henri Vildieu and Alfred Foulhoux, with Eiffel's company credited for the steel roof structure - featuring a stunning barrel-vaulted interior, historic tile maps of Indochina, and a portrait of Ho Chi Minh — one of Ho Chi Minh City's most photographed colonial landmarks.",
   tips: [

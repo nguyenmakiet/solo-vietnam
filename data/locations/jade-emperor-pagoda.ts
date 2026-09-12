@@ -20,8 +20,18 @@ export const jadeEmperorPagoda: Location = {
   openingHours: "Generally 7:00 AM - 5:30 PM daily. Hours may be extended on major lunar worship days.",
   mapUrl: "https://www.google.com/maps?q=10.792009712766651,106.69819028397599",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776264382694!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREU2dVcyN0FF!2m2!1d10.79186523234672!2d106.6980051341843!3f185.07280170690404!4f3.2254625930738!5f0.7820865974627469", },
-  heroImage: heroUrl("placeholder"),
-  gallery: [],
+  heroImage: heroUrl("jade-emperor-pagoda-2_h4zhmc"),
+  gallery: [
+    "jade-emperor-pagoda_aucvfx",
+    "jade-emperor-pagoda-3_axg0ii",
+    "jade-emperor-pagoda-4_zclgf1",
+    "jade-emperor-pagoda-5_rrufyj",
+    "jade-emperor-pagoda-6_jladgf",
+    "jade-emperor-pagoda-7_dsfx3m",
+    "jade-emperor-pagoda-8_nei52u",
+    "jade-emperor-pagoda-9_grbof2",
+    "jade-emperor-pagoda-10_sus8pm"
+  ],
   seoDescription:
     "The Jade Emperor Pagoda is Ho Chi Minh City's most atmospheric active temple - a dense, incense-filled Taoist and Buddhist sanctuary built in the early 1900s by a Cantonese Ming-loyalist merchant, housing over 300 lacquered and papier-mâché statues, a sacred turtle pond, and a rare stone shrine said to have travelled from Mount Tai in China.",
   tips: [

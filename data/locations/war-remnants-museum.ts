@@ -19,9 +19,19 @@ export const warRemnantsMuseum: Location = {
   entranceFee: "40,000 VND. Audio guide: 80,000 VND (available in 9 languages).",
   openingHours: "7:30 AM – 5:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.779534930802145,106.69218502415347",
-  heroImage: heroUrl("war-remnants-museum_hcmc_hero"),
+  heroImage: heroUrl("war-remnants-museum-ho-chi-minh-city_dycxfe"),
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776265244936!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREU2LUtXandF!2m2!1d10.77924821520708!2d106.6924896247323!3f283.32282647817425!4f16.770404134508738!5f0.7820865974627469", },
-  gallery: [],
+  gallery: [
+    "war-remnants-museum-ho-chi-minh-city-1_io63u2",
+    "war-remnants-museum-ho-chi-minh-city-2_akuyji",
+    "war-remnants-museum-ho-chi-minh-city-3_sijpcs",
+    "war-remnants-museum-ho-chi-minh-city-4_kl8olf",
+    "war-remnants-museum-ho-chi-minh-city-5_gcnyi2",
+    "war-remnants-museum-ho-chi-minh-city-6_ivbmx6",
+    "war-remnants-museum-ho-chi-minh-city-7_s26ol8",
+    "war-remnants-museum-ho-chi-minh-city-8_ygluhi",
+    "war-remnants-museum-ho-chi-minh-city-9_pclx9f",
+  ],
   seoDescription:
     "The War Remnants Museum in Ho Chi Minh City is Vietnam's most visited war museum, documenting the human cost of the Vietnam War through photographs, military hardware, and exhibits on the effects of Agent Orange — a sober and essential stop for understanding the country's modern history.",
   tips: [
