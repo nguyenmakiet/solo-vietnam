@@ -19,7 +19,7 @@ export const jadeEmperorPagoda: Location = {
   entranceFee: "Free",
   openingHours: "Generally 7:00 AM - 5:30 PM daily. Hours may be extended on major lunar worship days.",
   mapUrl: "https://www.google.com/maps?q=10.792009712766651,106.69819028397599",
-  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776264382694!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREU2dVcyN0FF!2m2!1d10.79186523234672!2d106.6980051341843!3f185.07280170690404!4f3.2254625930738!5f0.7820865974627469", },
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1789229295012!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFoY2J1T3c.!2m2!1d10.79177677300333!2d106.6976232916072!3f221.1058136186183!4f14.590965594662151!5f0.7820865974627469", },
   heroImage: heroUrl("jade-emperor-pagoda-2_h4zhmc"),
   gallery: [
     "jade-emperor-pagoda_aucvfx",

@@ -19,7 +19,7 @@ export const nhatBeach: Location = {
   entranceFee: "Free",
   openingHours: "Open all day (best at low tide)",
   mapUrl: "https://www.google.com/maps?q=8.644189602871363,106.6014777488132",
-  streetView: {},
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1789230186056!6m8!1m7!1sCAoSHENJQUJJaERScGl1MEI0R1FPbVAydzdneUxsdmE.!2m2!1d8.64401990006045!2d106.6010486390141!3f317.7469808683391!4f-7.685165606656483!5f0.7820865974627469", },
   heroImage: heroUrl("nha-beach-con-dao-2_nq4srl"),
   gallery: [
     "nha-beach-con-dao-4_xsx3wf",
