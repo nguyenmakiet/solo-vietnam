@@ -1,7 +1,24 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s -m 90 http://localhost:3000/locations/kho-muong-cave -o /tmp/final-page.html -w \"HTTP %{http_code} time:%{time_total}s\\\\n\")"
+      "Bash(curl -s -m 90 http://localhost:3000/locations/kho-muong-cave -o /tmp/final-page.html -w \"HTTP %{http_code} time:%{time_total}s\\\\n\")",
+      "Bash(chromium-cli --help)",
+      "Bash(python3 -c \"import PIL; print\\('PIL ok'\\)\")",
+      "Bash(python -c \"import PIL; print\\('PIL ok'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(node .tmp-shot-map.js \"/c/Users/ANHKIE~1/AppData/Local/Temp/map-no-filter.png\")",
+      "Bash(node .tmp-shot-map.js \"/c/Users/ANHKIE~1/AppData/Local/Temp/map-v2.png\")",
+      "Bash(taskkill //PID 27496 //F)",
+      "Bash(curl -s \"https://api.github.com/repos/thanglequoc/vietnamese-provinces-database/contents/json\")",
+      "Bash(curl -s \"https://api.github.com/repos/thanglequoc/vietnamese-provinces-database/contents/json/geojson\")",
+      "Bash(curl -s \"https://api.github.com/repos/thanglequoc/vietnamese-provinces-database/contents/json/geojson/04_cao_bang\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/thanglequoc/vietnamese-provinces-database/master/json/geojson/04_cao_bang/04_cao_bang.geojson\" -o \"C:\\\\Users\\\\ANHKIE~1\\\\AppData\\\\Local\\\\Temp\\\\cb2.geojson\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\ANHKIE~1\\\\AppData\\\\Local\\\\Temp\\\\vn-provinces-raw\")",
+      "Bash(node \"/c/Users/ANHKIE~1/AppData/Local/Temp/claude/c--Users-Anh-Kiet-solo-vietnam/f1566616-0ce3-4fc5-8777-b91606ad331c/scratchpad/fetch-provinces.js\" > \"C:\\\\Users\\\\ANHKIE~1\\\\AppData\\\\Local\\\\Temp\\\\vn-provinces-raw.geojson\" 2> \"C:\\\\Users\\\\ANHKIE~1\\\\AppData\\\\Local\\\\Temp\\\\fetch-log.txt\" *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\ANHKIE~1\\AppData\\Local\\Temp"
     ]
   }
 }

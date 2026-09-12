@@ -72,13 +72,32 @@ export default function MapPage() {
         attributionControl: false,
       })
 
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
+      // CARTO's free anonymous basemap tiles (basemaps.cartocdn.com) now require a paid
+      // API key and return a watermarked "API KEY REQUIRED" tile without one. Esri's
+      // World Light Gray Base is a free, no-key, no-signup raster basemap with a similar
+      // minimal look, so it's used here instead. See app/map/page.tsx git history / README
+      // if CARTO access is restored and this should be reverted.
+      L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
         maxZoom: 18,
-        subdomains: "abcd",
+        maxNativeZoom: 16,
       }).addTo(map)
 
       L.control.zoom({ position: "bottomright" }).addTo(map)
-      L.control.attribution({ position: "bottomright", prefix: "© CartoDB · OSM" }).addTo(map)
+      L.control.attribution({ position: "bottomright", prefix: "© Esri, HERE, Garmin · OSM" }).addTo(map)
+
+      // The basemap tile provider bakes in its own (pre-2025-merger) province boundary
+      // lines, which we can't edit since they're pixels. Overlay the current 34-province
+      // boundaries on top instead - see public/data/README.md for the data source.
+      fetch("/data/vn-provinces-2025.geojson")
+        .then((res) => res.json())
+        .then((geojson) => {
+          if (!mapRef.current) return
+          L.geoJSON(geojson, {
+            style: { color: "#c8a96e", weight: 1, opacity: 0.6, fill: false },
+            interactive: false,
+          }).addTo(map)
+        })
+        .catch(() => {}) // decorative overlay - fine to silently skip if it fails to load
 
       markersLayerRef.current = L.layerGroup().addTo(map)
       mapRef.current = map

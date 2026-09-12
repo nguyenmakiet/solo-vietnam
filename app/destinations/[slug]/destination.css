@@ -296,6 +296,9 @@
   100% { background-position: -200% 0; }
 }
 .itin-map { height: 400px; width: 100%; }
+/* Esri's Light Gray Canvas basemap is quite washed out by default - nudge contrast
+   up slightly so borders/coastline read clearly without affecting markers/controls. */
+.itin-map .leaflet-tile-pane { filter: brightness(0.92) contrast(1.35); }
 @media (max-width: 640px) { .itin-map { height: 280px; } }
 
 /* ── Transport Cards ── */

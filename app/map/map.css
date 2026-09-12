@@ -75,6 +75,15 @@
   width: 100%;
   height: 100%;
 }
+/* Esri's Light Gray Canvas basemap is quite washed out by default. Plain contrast()
+   pivots at mid-gray, which just clips this near-white palette to pure white instead
+   of helping - so brightness is nudged down first to leave headroom, then contrast
+   is boosted. Verified via pixel sampling: land/sea delta goes from 31 to 38 (out of
+   255) without land clipping to solid white. Scoped to the tile pane only so it
+   doesn't affect markers/popups/controls. */
+.map-container .leaflet-tile-pane {
+  filter: brightness(0.92) contrast(1.35);
+}
 
 /* ── POPUP ── */
 .map-popup {
