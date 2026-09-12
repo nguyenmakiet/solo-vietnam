@@ -104,6 +104,19 @@ export default async function LocationPage({
         )}
       </nav>
 
+      {/* Status Alert */}
+      {(location.status === "temporarily-closed" || location.status === "closed") && (
+        <div className={`status-alert status-alert--${location.status}`}>
+          <span className="status-alert-icon">
+            {location.status === "temporarily-closed" ? "⚠️" : "🚫"}
+          </span>
+          <span className="status-alert-text">
+            <strong>{location.status === "temporarily-closed" ? "Temporarily Closed." : "Closed."}</strong>
+            {location.statusNote && ` ${location.statusNote}`}
+          </span>
+        </div>
+      )}
+
       {/* Hero */}
       <header
         className="hero"

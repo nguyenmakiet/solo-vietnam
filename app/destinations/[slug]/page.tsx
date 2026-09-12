@@ -308,6 +308,8 @@ export default async function DestinationPage({
                       <div className="location-card-type">
                         {getTypeIcon(loc.type)} {getTypeLabel(loc.type)}
                         {loc.status === "seasonal" && <span className="seasonal-badge">Seasonal</span>}
+                        {loc.status === "temporarily-closed" && <span className="closed-badge">Temporarily Closed</span>}
+                        {loc.status === "closed" && <span className="closed-badge">Closed</span>}
                       </div>
                       <div className="location-card-name">{loc.name}</div>
                       <div className="location-card-desc">{loc.seoDescription}</div>

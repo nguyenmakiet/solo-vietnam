@@ -205,6 +205,12 @@ export default async function ProvincePage({
                           {l.status === "seasonal" && (
                             <span className="seasonal-badge">Seasonal</span>
                           )}
+                          {l.status === "temporarily-closed" && (
+                            <span className="closed-badge">Temporarily Closed</span>
+                          )}
+                          {l.status === "closed" && (
+                            <span className="closed-badge">Closed</span>
+                          )}
                         </div>
                         {l.seoDescription && (
                           <div className="dc-desc">

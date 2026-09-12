@@ -85,6 +85,21 @@
   text-transform: none;
 }
 
+/* ── STATUS ALERT ── */
+.status-alert {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 14px 24px;
+  font-size: 13.5px; line-height: 1.6;
+}
+.status-alert-icon { flex-shrink: 0; font-size: 15px; line-height: 1.5; }
+.status-alert-text { color: inherit; }
+.status-alert--temporarily-closed {
+  background: #fff7ed; color: #9a3412; border-bottom: 1px solid #fed7aa;
+}
+.status-alert--closed {
+  background: #fef2f2; color: #991b1b; border-bottom: 1px solid #fecaca;
+}
+
 /* ── HERO ── */
 .hero {
   position: relative;

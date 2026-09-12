@@ -79,7 +79,8 @@ export type RichSection = {
 
 export type Location = {
   slug: string
-  status?: "active" | "closed" | "seasonal" | "unverified"
+  status?: "active" | "closed" | "seasonal" | "unverified" | "temporarily-closed"
+  statusNote?: string // short reason/date shown in UI alongside a non-"active" status, e.g. "Suspended since Sept 2026 - rockfall risk, reserve management request"
   name: string
   updatedAt?: string // ISO date "YYYY-MM-DD" - update whenever content in this file changes
   provinces: string[]

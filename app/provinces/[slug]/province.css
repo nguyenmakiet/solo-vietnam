@@ -166,6 +166,20 @@
   vertical-align: middle;
 }
 
+/* Closed / temporarily-closed badge */
+.closed-badge {
+  margin-left: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  border-radius: 10px;
+  padding: 2px 8px;
+  vertical-align: middle;
+}
+
 /* Bottom CTA */
 .bottom-cta {
   background: var(--dark); border-radius: 12px; padding: 28px 24px;
