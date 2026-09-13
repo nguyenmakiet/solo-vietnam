@@ -32,6 +32,7 @@ export const paSyWaterfall: Location = {
   seoDescription:
     "Pa Sy Waterfall (Thác Pa Sỹ) is the centrepiece of an eco-tourism park in Măng Cành commune, Kon Plông district - a roughly 45-metre cascade formed from the confluence of three highland streams near Măng Đen, set at about 1,500m elevation amid pine forest, and tied to the Mơ Nâm legend of 'Seven Lakes, Three Waterfalls'.",
   tips: [
+    "Time needed: 1-3 hours if you explore the full park grounds",
     "The name 'Pa Sỹ' is a Kinh mispronunciation of 'Pau Suh', a Rơ Măm/Xê Đăng word meaning 'three streams converging into one' - referring to the confluence of Đắk Ke, Pau Suh, and Đắk Pne streams that form the falls",
     "Stone steps lead down to the base of the falls - moderately steep but manageable for most visitors, with a motorbike-taxi option available if you'd rather skip the walk down (and, more importantly, the walk back up)",
     "Visit early morning or on a weekday afternoon - the site gets genuinely crowded around midday and on weekends, with queues forming on the stairs",

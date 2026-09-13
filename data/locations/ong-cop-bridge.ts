@@ -37,6 +37,7 @@ export const ongCopBridge: Location = {
   seoDescription:
     "Cầu Ông Cọp is Vietnam's longest wooden bridge - a roughly 700-800 meter hand-built structure of timber and bamboo spanning the Bình Bá river (also called Phú Ngân river) in Phú Yên. Privately funded and built in 1998, opened in 1999, and rebuilt after every flood season, it became famous as a filming location for the 2015 Vietnamese film 'Yellow Flowers on the Green Grass' and is now one of Phú Yên's most photographed landmarks.",
   tips: [
+    "Time needed: 20-30 minutes for crossing and photos, longer if you're also enjoying the river scenery or stopping at nearby stalls",
     "If you're not confident on a motorbike, walk across - the bridge is only 1.5-1.8m wide in places, has gaps between the planks, and wobbles under weight; falling into the river is a real possibility for inexperienced riders",
     "The bridge isn't perfectly straight - some sections have shorter plank runs that create winding, zigzagging stretches, so keep a steady hand on the handlebars rather than expecting one continuous straight line",
     "Larger motorbikes (under about 200kg) are generally fine to cross, but heavier vehicles are uncertain - ask the person managing the toll at the entrance before attempting to cross with a heavy bike",
