@@ -18,7 +18,6 @@ export const moocSpring: Location = {
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
   entranceFee: "80,000 VND for sightseeing only (no swimming), year-round. For swimming and water activities, the official 2026 pricing from the Phong Nha-Kẻ Bàng Tourism Center is seasonal: a single-zone package (Ghềnh Moọc or Ghềnh Chụm) is 160,000 VND during Apr-Sep and 130,000 VND during Jan-Mar and Oct-Dec; the combined Moọc + Chụm package is 220,000 VND during Apr-Sep and 180,000 VND during the other months (100,000 VND for children in the combo package). Check current rates before visiting, since these can be adjusted. The paid service package includes swimming access, the jump platform, kayak, life jackets, paddles, staff supervision, and resting huts",
   openingHours: "Summer: 7:45 AM–4:30 PM; winter: 8:00 AM–3:30 PM",
-  timeNeeded: "About 4 hours",
   mapUrl: "https://www.google.com/maps?q=17.556813119452748,106.23884445637982",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775830115139!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDI0c3FnY2c.!2m2!1d17.55613126585957!2d106.2367217887626!3f101.45606563519549!4f-8.60779153312464!5f0.7820865974627469", },
   heroImage: heroUrl("mooc-spring-hero_placeholder"),
