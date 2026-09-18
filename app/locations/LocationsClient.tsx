@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import { Location, LocationType, locationTheme } from "@/data/location"
+import { stripLeadingEmoji } from "@/lib/text"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
@@ -18,15 +19,15 @@ const REGIONS: { value: Region; label: string; active: string; inactive: string 
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
-const SHORTCUTS: { label: string; emoji: string; type?: string; exp?: string }[] = [
-  { label: "Beaches",     emoji: "🏖️", type: "beach" },
-  { label: "Islands",     emoji: "🌴", type: "island" },
-  { label: "Mountains",   emoji: "⛰️", type: "mountain" },
-  { label: "Caves",       emoji: "🕳️", type: "cave" },
-  { label: "Waterfalls",  emoji: "💧", type: "waterfall" },
-  { label: "Trekking",    emoji: "🥾", exp: "trekking" },
-  { label: "Cultural",    emoji: "🏛️", type: "cultural" },
-  { label: "Photography", emoji: "📸", exp: "photography" },
+const SHORTCUTS: { label: string; type?: string; exp?: string }[] = [
+  { label: "Beaches",     type: "beach" },
+  { label: "Islands",     type: "island" },
+  { label: "Mountains",   type: "mountain" },
+  { label: "Caves",       type: "cave" },
+  { label: "Waterfalls",  type: "waterfall" },
+  { label: "Trekking",    exp: "trekking" },
+  { label: "Cultural",    type: "cultural" },
+  { label: "Photography", exp: "photography" },
 ]
 
 const PROVINCE_TO_REGION: Record<string, Region> = {
@@ -374,7 +375,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           </p>
           <h1
             className="text-4xl md:text-5xl font-bold leading-tight mb-3"
-            style={{ fontFamily: "var(--font-serif), 'Playfair Display', serif" }}
+            style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}
           >
             Locations in Vietnam
           </h1>
@@ -403,13 +404,12 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                     if (s.type) toggleType(s.type)
                     else if (s.exp) toggleExperience(s.exp)
                   }}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all ${
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium border transition-all ${
                     active
                       ? "bg-[#C9A84C] text-[#1C1C1A] border-[#C9A84C]"
                       : "bg-white/10 text-white/80 border-white/20 hover:bg-white/20 hover:text-white"
                   }`}
                 >
-                  <span>{s.emoji}</span>
                   {s.label}
                 </button>
               )
@@ -589,12 +589,11 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
         {/* No results */}
         {filtered.length === 0 && (
           <div className="text-center py-24">
-            <p className="text-4xl mb-4">🗺️</p>
             <p className="text-lg font-medium text-gray-800 mb-2">No locations found</p>
             <p className="text-gray-500 text-sm mb-6">Try adjusting your filters to see more results.</p>
             <button
               onClick={clearFilters}
-              className="px-5 py-2 bg-[#1C1C1A] text-white rounded-full text-sm font-medium hover:bg-black transition-colors"
+              className="px-5 py-2 bg-[#1C1C1A] text-white rounded-lg text-sm font-medium hover:bg-black transition-colors"
             >
               Clear all filters
             </button>
@@ -633,7 +632,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                 <div className="p-3">
                   <h2
                     className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2 mb-1"
-                    style={{ fontFamily: "var(--font-serif), 'Playfair Display', serif" }}
+                    style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}
                   >
                     {loc.name}
                   </h2>
@@ -644,7 +643,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   )}
                   {loc.tags?.[0] ? (
                     <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
-                      {loc.tags[0]}
+                      {stripLeadingEmoji(loc.tags[0])}
                     </p>
                   ) : (
                     <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
@@ -662,7 +661,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           <div className="mt-10 flex justify-center">
             <button
               onClick={loadMore}
-              className="px-8 py-3 bg-[#1C1C1A] text-white rounded-full text-sm font-medium hover:bg-black transition-colors"
+              className="px-8 py-3 bg-[#1C1C1A] text-white rounded-lg text-sm font-medium hover:bg-black transition-colors"
             >
               Load more
               <span className="ml-2 text-white/50 text-xs">({filtered.length - visibleCount} remaining)</span>

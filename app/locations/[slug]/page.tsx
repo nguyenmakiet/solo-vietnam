@@ -10,6 +10,7 @@ import NearbyLocations from "./NearbyLocations"
 import GalleryLightbox from "./GalleryLightbox"
 import GetDirectionsButton from "./GetDirectionsButton"
 import ContentRenderer from "./ContentRenderer"
+import { stripLeadingEmoji } from "@/lib/text"
 
 
 function toDecimal(val: number | string): number {
@@ -134,13 +135,13 @@ export default async function LocationPage({
         )}
         <div className="hero-inner">
           <div className="hero-badge">
-            📍 {typeLabel}{location.destination && ` · ${location.destination.replace(/-/g, " ")}`}
+            {typeLabel}{location.destination && ` · ${location.destination.replace(/-/g, " ")}`}
           </div>
           <h1>{location.name}</h1>
           <p className="hero-seo">{location.seoDescription}</p>
           <div className="hero-tags">
             {location.tags.map((t) => (
-              <span key={t} className="hero-tag">{t}</span>
+              <span key={t} className="hero-tag">{stripLeadingEmoji(t)}</span>
             ))}
           </div>
         </div>
@@ -171,23 +172,23 @@ export default async function LocationPage({
           <div className="overview-grid">
             <div className="overview-card">
               <div className="oc-label">Best Time to Visit</div>
-              <div className="oc-val">📅 {location.bestTime}</div>
+              <div className="oc-val">{location.bestTime}</div>
             </div>
             {location.entranceFee && (
               <div className="overview-card">
                 <div className="oc-label">Entry Fee</div>
-                <div className="oc-val">🎟️ {location.entranceFee}</div>
+                <div className="oc-val">{location.entranceFee}</div>
               </div>
             )}
             {location.openingHours && (
               <div className="overview-card">
                 <div className="oc-label">Opening Hours</div>
-                <div className="oc-val">🕐 {location.openingHours}</div>
+                <div className="oc-val">{location.openingHours}</div>
               </div>
             )}
             <div className="overview-card">
               <div className="oc-label">Address</div>
-              <div className="oc-val">📌 {location.address}</div>
+              <div className="oc-val">{location.address}</div>
             </div>
           </div>
         </div>
@@ -195,22 +196,21 @@ export default async function LocationPage({
         {/* Things to Know */}
         {location.insights?.thingsToKnow && (() => {
           const ttk = location.insights!.thingsToKnow
-          type Entry = { label: string; icon: string; value: string }
+          type Entry = { label: string; value: string }
           const entries: Entry[] = []
-          if (ttk.crowds)        entries.push({ label: "Crowds",        icon: "👥", value: ttk.crowds })
-          if (ttk.difficulty)    entries.push({ label: "Difficulty",    icon: "🥾", value: ttk.difficulty })
-          if (ttk.safety)        entries.push({ label: "Safety",        icon: "⚠️", value: ttk.safety })
-          if (ttk.accessibility) entries.push({ label: "Accessibility", icon: "🚶", value: ttk.accessibility })
-          if (ttk.seasonal)      entries.push({ label: "Seasonal",      icon: "🌤️", value: ttk.seasonal })
+          if (ttk.crowds)        entries.push({ label: "Crowds",        value: ttk.crowds })
+          if (ttk.difficulty)    entries.push({ label: "Difficulty",    value: ttk.difficulty })
+          if (ttk.safety)        entries.push({ label: "Safety",        value: ttk.safety })
+          if (ttk.accessibility) entries.push({ label: "Accessibility", value: ttk.accessibility })
+          if (ttk.seasonal)      entries.push({ label: "Seasonal",      value: ttk.seasonal })
           if (entries.length === 0) return null
           return (
             <div id="things-to-know" className="section-anchor">
               <p className="section-label">Things to Know</p>
               <div className="ttk-list">
-                {entries.map(({ label, icon, value }) => (
+                {entries.map(({ label, value }) => (
                   <div key={label} className="ttk-row">
                     <div className="ttk-label">
-                      <span className="ttk-icon">{icon}</span>
                       <span>{label}</span>
                     </div>
                     <div className="ttk-value">{value}</div>

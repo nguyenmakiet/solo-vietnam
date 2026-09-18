@@ -18,7 +18,7 @@
 
 /* ── BASE ── */
 .home-wrap {
-  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   background: var(--surface);
   color: var(--text);
   min-height: 100vh;
@@ -74,7 +74,7 @@
   background: var(--gold);
 }
 .home-hero h1 {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(40px, 7vw, 72px);
   font-weight: 900;
   line-height: 1.05;
@@ -108,7 +108,7 @@
   margin: 0 auto;
 }
 .home-discovery-question {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(20px, 2.8vw, 26px);
   font-weight: 700;
   color: var(--dark);
@@ -129,7 +129,6 @@
   color: var(--text-muted);
   font-weight: 400;
   margin-bottom: 12px;
-  font-style: italic;
 }
 .home-discovery-cta {
   font-size: 16px;
@@ -201,7 +200,7 @@
   opacity: 0.85;
 }
 .home-hero-stat-num {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(28px, 4.5vw, 38px);
   font-weight: 900;
   color: var(--dark);
@@ -232,7 +231,7 @@
   text-align: center;
 }
 .home-map-heading h2 {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(20px, 3vw, 26px);
   font-weight: 700;
   color: var(--dark);
@@ -249,7 +248,7 @@
 .home-map-wrap {
   background: linear-gradient(160deg, #fdf9f2 0%, #f7f0e4 100%);
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: 14px;
   padding: 32px;
   margin-bottom: 16px;
   box-shadow: 0 4px 24px rgba(120, 90, 40, 0.08), 0 1px 4px rgba(120, 90, 40, 0.04);
@@ -361,7 +360,7 @@
 }
 
 .home-section-title {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(26px, 3.5vw, 38px);
   font-weight: 700;
   color: var(--dark);
@@ -466,7 +465,7 @@
   font-weight: 500;
 }
 .home-dest-card-name {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--dark);
@@ -508,8 +507,8 @@
 .home-exp-card {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 24px 16px;
+  border-radius: 8px;
+  padding: 18px 16px;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s;
@@ -520,15 +519,11 @@
   border-color: rgba(200, 169, 110, 0.4);
   transform: translateY(-2px);
 }
-.home-exp-emoji {
-  font-size: 28px;
-  margin-bottom: 10px;
-  display: block;
-}
 .home-exp-label {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
+  letter-spacing: 0.2px;
 }
 
 /* ── BLOG ── */
@@ -582,7 +577,7 @@
   margin-bottom: 12px;
 }
 .home-blog-title {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 18px;
   font-weight: 700;
   color: var(--dark);
@@ -623,22 +618,10 @@
 .home-why-card {
   text-align: center;
 }
-.home-why-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  background: var(--white);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  margin: 0 auto 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
 .home-why-title {
-  font-size: 16px;
-  font-weight: 700;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 19px;
+  font-weight: 600;
   color: var(--dark);
   margin-bottom: 8px;
 }
@@ -686,7 +669,7 @@
   flex-shrink: 0;
 }
 .home-curiosity-title {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--dark);
@@ -719,7 +702,7 @@
   align-items: center;
   gap: 8px;
   padding: 8px 18px;
-  border-radius: 20px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
@@ -793,11 +776,6 @@
   display: flex;
   align-items: center;
   gap: 14px;
-}
-
-.home-map-cta-icon {
-  font-size: 24px;
-  flex-shrink: 0;
 }
 
 .home-map-cta-title {

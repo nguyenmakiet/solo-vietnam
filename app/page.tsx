@@ -1,6 +1,7 @@
 import VietnamMap from "@/components/VietnamMap"
 import Link from "next/link"
 import { destinations } from "@/data/destinations"
+import { stripLeadingEmoji } from "@/lib/text"
 import "./homepage.css"
 
 // Featured destinations - hardcoded order
@@ -71,10 +72,10 @@ const curiosityCategories = [
 ]
 
 const experiences = [
-  { emoji: "🏖️", label: "Beaches", href: "/experiences/beaches" },
-  { emoji: "🥾", label: "Trekking", href: "/experiences/trekking" },
-  { emoji: "🏕️", label: "Camping", href: "/experiences/camping" },
-  { emoji: "🍜", label: "Food", href: "/experiences/food" },
+  { label: "Beaches", href: "/experiences/beaches" },
+  { label: "Trekking", href: "/experiences/trekking" },
+  { label: "Camping", href: "/experiences/camping" },
+  { label: "Food", href: "/experiences/food" },
 ]
 
 export default function Home() {
@@ -170,12 +171,11 @@ export default function Home() {
             </div>
             <VietnamMap />
             <div className="home-map-hint">
-              👆 Click a province to explore destinations
+              Click a province to explore destinations
             </div>
           </div>
           <Link href="/map" className="home-map-cta-banner">
             <div className="home-map-cta-left">
-              <span className="home-map-cta-icon">🗺️</span>
               <div>
                 <div className="home-map-cta-title">Explore 200+ locations on the map</div>
                 <div className="home-map-cta-sub">Filter by beaches, trekking, caves, food & more</div>
@@ -217,7 +217,7 @@ export default function Home() {
                   {d.tags && (
                     <div className="home-dest-card-tags">
                       {d.tags.slice(0, 2).map((t) => (
-                        <span key={t} className="home-dest-card-tag">{t}</span>
+                        <span key={t} className="home-dest-card-tag">{stripLeadingEmoji(t)}</span>
                       ))}
                     </div>
                   )}
@@ -286,7 +286,6 @@ export default function Home() {
           <div className="home-exp-grid">
             {experiences.map((e) => (
               <Link key={e.label} href={e.href} className="home-exp-card">
-                <span className="home-exp-emoji">{e.emoji}</span>
                 <span className="home-exp-label">{e.label}</span>
               </Link>
             ))}
@@ -305,21 +304,18 @@ export default function Home() {
           </div>
           <div className="home-why-grid">
             <div className="home-why-card">
-              <div className="home-why-icon">🎯</div>
               <div className="home-why-title">Practical, not pretty</div>
               <div className="home-why-desc">
                 Real scam alerts, actual prices, honest safety info - not sponsored content dressed up as travel advice.
               </div>
             </div>
             <div className="home-why-card">
-              <div className="home-why-icon">🔄</div>
               <div className="home-why-title">Up to date info</div>
               <div className="home-why-desc">
                 Regularly updated guides with current prices, recent scam alerts, and the latest travel conditions - not outdated blog posts from years ago.
               </div>
             </div>
             <div className="home-why-card">
-              <div className="home-why-icon">🏝️</div>
               <div className="home-why-title">Local knowledge</div>
               <div className="home-why-desc">
                 Written by someone who actually lives here - a Vietnamese local sharing real travel insights.

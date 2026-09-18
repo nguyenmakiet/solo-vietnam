@@ -7,6 +7,7 @@ import ItineraryMapLoader from "@/components/ItineraryMapLoader"
 import FaqAccordion from "@/components/FaqAccordion"
 import "./destination.css"
 import FallbackImage from "@/components/FallbackImage"
+import { stripLeadingEmoji } from "@/lib/text"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function getImageSrc(heroImage?: string): string {
@@ -17,17 +18,6 @@ function getImageSrc(heroImage?: string): string {
 function getTypeLabel(type: Location["type"]): string {
   const primary = Array.isArray(type) ? type[0] : type
   return primary.charAt(0).toUpperCase() + primary.slice(1)
-}
-
-function getTypeIcon(type: Location["type"]): string {
-  const primary = Array.isArray(type) ? type[0] : type
-  const icons: Record<string, string> = {
-    beach: "🏖️", island: "🏝️", mountain: "🏔️", forest: "🌿",
-    nature: "🌿", waterfall: "💧", cave: "🪨", attraction: "✨",
-    cultural: "🎎", town: "🏘️", city: "🏙️", market: "🛒",
-    temple: "⛩️", heritage: "🏯",
-  }
-  return icons[primary] ?? "📍"
 }
 
 function formatSlug(slug: string): string {
@@ -43,14 +33,6 @@ const TRAVEL_STYLE_LABEL: Record<string, string> = {
   family: "Family",
   easy: "Easy",
   challenging: "Challenging",
-}
-
-const VEHICLE_ICON: Record<string, string> = {
-  fly: "✈️",
-  train: "🚂",
-  bus: "🚌",
-  ferry: "⛴️",
-  motorbike: "🏍️",
 }
 
 // ── Static params ─────────────────────────────────────────────────────────────
@@ -148,15 +130,8 @@ export default async function DestinationPage({
       ? "Central Vietnam"
       : "South Vietnam"
 
-  const regionEmoji =
-    destination.region === "north" ? "🏔️" : destination.region === "central" ? "🌊" : "🌴"
-
   return (
     <>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet"
-      />
       <div className="dp">
 
         {/* Breadcrumb */}
@@ -179,7 +154,7 @@ export default async function DestinationPage({
           />
           <div className="hero-overlay" />
           <div className="hero-content">
-            <div className="hero-badge">{regionEmoji} {regionLabel} · Solo Travel Guide</div>
+            <div className="hero-badge">{regionLabel} · Solo Travel Guide</div>
             <h1>{destination.name}</h1>
             {destination.tagline && <p className="hero-tagline">{destination.tagline}</p>}
 
@@ -188,7 +163,7 @@ export default async function DestinationPage({
                 {destination.tags && destination.tags.length > 0 && (
                   <div className="hero-tags">
                     {destination.tags.map((tag) => (
-                      <span key={tag} className="hero-tag">{tag}</span>
+                      <span key={tag} className="hero-tag">{stripLeadingEmoji(tag)}</span>
                     ))}
                   </div>
                 )}
@@ -306,7 +281,7 @@ export default async function DestinationPage({
                     />
                     <div className="location-card-body">
                       <div className="location-card-type">
-                        {getTypeIcon(loc.type)} {getTypeLabel(loc.type)}
+                        {getTypeLabel(loc.type)}
                         {loc.status === "seasonal" && <span className="seasonal-badge">Seasonal</span>}
                         {loc.status === "temporarily-closed" && <span className="closed-badge">Temporarily Closed</span>}
                         {loc.status === "closed" && <span className="closed-badge">Closed</span>}
@@ -323,7 +298,6 @@ export default async function DestinationPage({
               </div>
             ) : (
               <div className="locations-coming-soon">
-                <span className="cs-icon">🗺️</span>
                 Location guides coming soon
               </div>
             )}
@@ -391,7 +365,6 @@ export default async function DestinationPage({
                 {destination.gettingThere.map((opt, i) => (
                   <div key={i} className="transport-card">
                     <div className="tc-top">
-                      <span className="tc-icon">{VEHICLE_ICON[opt.vehicle] ?? "🚐"}</span>
                       <div className="tc-core">
                         <span className="tc-from">{opt.from}</span>
                         <span className="tc-vehicle">{opt.vehicle}</span>
@@ -439,14 +412,12 @@ export default async function DestinationPage({
               <div className="info-row">
                 {destination.bestTimeSummary && (
                   <div className="info-card">
-                    <span className="ic-icon">📅</span>
                     <div className="ic-title">Best Time to Visit</div>
                     <div className="ic-body">{destination.bestTimeSummary}</div>
                   </div>
                 )}
                 {destination.recommendedStay && (
                   <div className="info-card">
-                    <span className="ic-icon">🌙</span>
                     <div className="ic-title">Recommended Stay</div>
                     <div className="ic-body">{destination.recommendedStay}</div>
                   </div>
@@ -482,7 +453,7 @@ export default async function DestinationPage({
           <div className="region-cta">
             <div>
               <div className="cta-label">Explore the region</div>
-              <div className="cta-title">{regionEmoji} {regionLabel}</div>
+              <div className="cta-title">{regionLabel}</div>
             </div>
             <Link href={`/${destination.region}-vietnam`}>View all destinations →</Link>
           </div>

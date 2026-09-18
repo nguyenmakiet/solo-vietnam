@@ -58,7 +58,7 @@
 /* ── BASE ── */
 .lp * { box-sizing: border-box; margin: 0; padding: 0; }
 .lp {
-  font-family: var(--font-sans), 'Be Vietnam Pro', sans-serif;
+  font-family: var(--font-sans), 'IBM Plex Sans', sans-serif;
   background: #ffffff;
   color: #1a1a2e;
   min-height: 100vh;
@@ -115,24 +115,24 @@
 .hero-badge {
   display: inline-flex; align-items: center; gap: 6px;
   border: 1px solid rgba(255,255,255,0.25); padding: 5px 14px;
-  border-radius: 20px; font-size: 11px; letter-spacing: 2px;
+  border-radius: 6px; font-size: 11px; letter-spacing: 2px;
   text-transform: uppercase; color: var(--primary-mid);
   margin-bottom: 18px; font-weight: 600;
 }
 .hero h1 {
-  font-family: var(--font-serif), 'Playfair Display', serif;
+  font-family: var(--font-serif), 'Source Serif 4', serif;
   font-size: clamp(32px, 6vw, 56px); font-weight: 900; color: #fff;
   line-height: 1.05; margin-bottom: 12px; letter-spacing: -0.5px;
 }
 .hero-seo {
   font-size: 15px; color: rgba(255,255,255,0.65);
-  font-style: italic; font-family: var(--font-serif), 'Playfair Display', serif;
+  font-weight: 400; font-family: var(--font-sans), 'IBM Plex Sans', sans-serif;
   margin-bottom: 28px; max-width: 600px; line-height: 1.7;
 }
 .hero-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .hero-tag {
   background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-  padding: 5px 12px; border-radius: 16px; font-size: 12px; color: rgba(255,255,255,0.9);
+  padding: 5px 12px; border-radius: 6px; font-size: 12px; color: rgba(255,255,255,0.9);
 }
 
 /* ── MAP ── */
@@ -282,7 +282,7 @@
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 .content-section h3 {
-  font-family: var(--font-serif), 'Playfair Display', serif;
+  font-family: var(--font-serif), 'Source Serif 4', serif;
   font-size: 20px; font-weight: 700; color: #1a1a2e;
   margin-bottom: 14px;
 }
@@ -324,7 +324,7 @@
   color: var(--primary-mid); margin-bottom: 6px;
 }
 .bottom-cta .cta-title {
-  font-family: var(--font-serif), 'Playfair Display', serif;
+  font-family: var(--font-serif), 'Source Serif 4', serif;
   font-size: 22px; color: #fff; font-weight: 700;
 }
 .bottom-cta a {
@@ -502,13 +502,6 @@
   transform: translateX(3px);
 }
 
-.nearby-icon {
-  font-size: 18px;
-  flex-shrink: 0;
-  width: 32px;
-  text-align: center;
-}
-
 .nearby-name {
   font-size: 14px;
   font-weight: 600;
@@ -595,7 +588,6 @@
   color: #9ca3af;
   font-weight: 600;
 }
-.ttk-icon { font-size: 15px; }
 .ttk-value {
   flex: 1;
   padding: 14px 18px;

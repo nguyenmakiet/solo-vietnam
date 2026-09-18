@@ -106,7 +106,7 @@ function LegacyContent({ location }: { location: Location }) {
         <div id="how-to-get-there" className="section-anchor">
           <p className="section-label">How to Get There</p>
           <div className="content-section">
-            <h3>🚗 Getting There</h3>
+            <h3>Getting There</h3>
             <RichText text={c.howToGetThere} />
           </div>
         </div>
@@ -115,7 +115,7 @@ function LegacyContent({ location }: { location: Location }) {
         <div id="what-to-expect" className="section-anchor">
           <p className="section-label">What to Expect</p>
           <div className="content-section">
-            <h3>👀 On the Ground</h3>
+            <h3>On the Ground</h3>
             <RichText text={c.whatToExpect} />
           </div>
         </div>
@@ -124,7 +124,7 @@ function LegacyContent({ location }: { location: Location }) {
         <div id="travel-tips" className="section-anchor">
           <p className="section-label">Travel Tips</p>
           <div className="content-section">
-            <h3>🧳 Tips</h3>
+            <h3>Tips</h3>
             <RichText text={c.travelTips} />
           </div>
         </div>

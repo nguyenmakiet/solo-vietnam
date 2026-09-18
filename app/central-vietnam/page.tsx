@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { regions } from "@/data/regions"
 import { provinces } from "@/data/provinces"
+import { stripLeadingEmoji } from "@/lib/text"
 
 export const metadata: Metadata = {
   title: "Central Vietnam Travel Guide | Solo in Vietnam",
@@ -16,17 +17,6 @@ export const metadata: Metadata = {
   },
 }
 
-const TAG_COLORS: Record<string, string> = {
-  beach:    "bg-sky-100 text-sky-700",
-  nature:   "bg-emerald-100 text-emerald-700",
-  island:   "bg-teal-100 text-teal-700",
-  history:  "bg-amber-100 text-amber-700",
-  culture:  "bg-rose-100 text-rose-700",
-  food:     "bg-yellow-100 text-yellow-700",
-  wildlife: "bg-lime-100 text-lime-700",
-  city:     "bg-zinc-100 text-zinc-700",
-  adventure:"bg-orange-100 text-orange-700",
-}
 
 export default function RegionPage() {
   const region = regions.central
@@ -62,7 +52,7 @@ export default function RegionPage() {
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+            style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}>
             {label}
           </h1>
           <p className="text-[#A09880] text-lg max-w-2xl leading-relaxed mb-2">{tagline}</p>
@@ -87,7 +77,7 @@ export default function RegionPage() {
         <section>
           <div className="flex items-center gap-3 mb-8">
             <h2 className="text-2xl font-bold text-[#1C1C1A]"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+              style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}>
               Destinations
             </h2>
             <span className="text-sm text-[#A09880]">{destinations.length} places</span>
@@ -101,12 +91,12 @@ export default function RegionPage() {
                 <div className="h-1 w-full" style={{ backgroundColor: color, opacity: 0.7 }} />
                 <div className="p-5">
                   <h3 className="text-lg font-bold text-[#1C1C1A] mb-1 group-hover:text-[#C9A84C] transition-colors"
-                    style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>{dest.name}</h3>
+                    style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}>{dest.name}</h3>
                   <p className="text-[11px] text-[#A09880] mb-2">{dest.province}</p>
-                  <p className="text-[12px] text-[#7a7060] italic leading-relaxed mb-4">{dest.tagline}</p>
+                  <p className="text-[12px] text-[#7a7060] leading-relaxed mb-4">{dest.tagline}</p>
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {dest.tags.map(tag => (
-                      <span key={tag} className={`text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full ${TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600"}`}>{tag}</span>
+                      <span key={tag} className={`text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-md bg-[#F0EBE3] text-[#A09880]`}>{stripLeadingEmoji(tag)}</span>
                     ))}
                   </div>
                   <div className="text-[11px] font-semibold text-[#C9A84C]">Explore guide →</div>
@@ -118,14 +108,14 @@ export default function RegionPage() {
                 <div className="p-5">
                   <div className="flex items-start justify-between mb-1">
                     <h3 className="text-lg font-bold text-[#1C1C1A]"
-                      style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>{dest.name}</h3>
-                    <span className="text-[10px] font-semibold uppercase tracking-widest bg-[#F0EBE3] text-[#A09880] px-2 py-0.5 rounded-full shrink-0 ml-2">Soon</span>
+                      style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}>{dest.name}</h3>
+                    <span className="text-[10px] font-semibold uppercase tracking-widest bg-[#F0EBE3] text-[#A09880] px-2 py-0.5 rounded-md shrink-0 ml-2">Soon</span>
                   </div>
                   <p className="text-[11px] text-[#A09880] mb-2">{dest.province}</p>
-                  <p className="text-[12px] text-[#9a9080] italic leading-relaxed mb-4">{dest.tagline}</p>
+                  <p className="text-[12px] text-[#9a9080] leading-relaxed mb-4">{dest.tagline}</p>
                   <div className="flex flex-wrap gap-1.5">
                     {dest.tags.map(tag => (
-                      <span key={tag} className={`text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full opacity-60 ${TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600"}`}>{tag}</span>
+                      <span key={tag} className={`text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-md bg-[#F0EBE3] text-[#A09880] opacity-60`}>{stripLeadingEmoji(tag)}</span>
                     ))}
                   </div>
                 </div>
@@ -138,7 +128,7 @@ export default function RegionPage() {
         <section>
           <div className="flex items-center gap-3 mb-8">
             <h2 className="text-2xl font-bold text-[#1C1C1A]"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+              style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}>
               Provinces
             </h2>
             <span className="text-sm text-[#A09880]">{regionProvinces.length} provinces</span>
@@ -152,7 +142,7 @@ export default function RegionPage() {
                 <div className="w-2 h-2 rounded-full mt-1.5 shrink-0" style={{ backgroundColor: color }} />
                 <div className="min-w-0">
                   <div className="font-semibold text-[#1C1C1A] text-sm group-hover:text-[#C9A84C] transition-colors truncate"
-                    style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>{prov.name}</div>
+                    style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}>{prov.name}</div>
                   <div className="text-[11px] text-[#A09880] mt-0.5 truncate">{prov.knownFor}</div>
                 </div>
                 <span className="text-[#D0C9BE] group-hover:text-[#C9A84C] transition-colors ml-auto shrink-0 text-sm">→</span>
@@ -168,13 +158,13 @@ export default function RegionPage() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ color }}>Explore the map</p>
-            <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+            <h2 className="text-3xl font-bold" style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}>
               Browse 100+ locations
             </h2>
             <p className="text-[#A09880] mt-2 text-sm">Filter by experience - beaches, trekking, caves, food, and more.</p>
           </div>
           <Link href="/map"
-            className="shrink-0 text-[#1C1C1A] font-semibold text-sm px-7 py-3.5 rounded-full transition-colors"
+            className="shrink-0 text-[#1C1C1A] font-semibold text-sm px-7 py-3.5 rounded-lg transition-colors"
             style={{ backgroundColor: color }}>
             Open interactive map →
           </Link>

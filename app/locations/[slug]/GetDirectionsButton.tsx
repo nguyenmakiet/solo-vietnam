@@ -17,7 +17,7 @@ export default function GetDirectionsButton({ lat, lng, label }: GetDirectionsBu
       className="map-action-btn--directions"
       aria-label={`Get directions to ${label}`}
     >
-      🧭 Get Directions
+      Get Directions
     </a>
   )
 }

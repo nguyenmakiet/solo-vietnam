@@ -258,7 +258,7 @@ export default function MapPage() {
                 </div>
                 <div className="map-popup-body">
                   <div className="map-popup-name">{selectedLoc.name}</div>
-                  <div className="map-popup-province">📍 {getProvinceLabel(selectedLoc)}</div>
+                  <div className="map-popup-province">{getProvinceLabel(selectedLoc)}</div>
                   <div className="map-popup-footer">
                     <span className="map-popup-link">View Location →</span>
                     <button className="map-popup-close" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setSelectedLoc(null) }}>✕</button>
@@ -284,7 +284,6 @@ export default function MapPage() {
             onMouseLeave={() => setHoveredExp(null)}
           >
             <div className="map-sidebar-item-left">
-              <span className="map-sidebar-item-icon">🗺️</span>
               <span className="map-sidebar-item-label">All locations</span>
             </div>
             <span className="map-sidebar-item-count">{locationsWithCoords.length}</span>
@@ -305,7 +304,6 @@ export default function MapPage() {
                 onMouseLeave={() => setHoveredExp(null)}
               >
                 <div className="map-sidebar-item-left">
-                  <span className="map-sidebar-item-icon">{exp.icon}</span>
                   <span className="map-sidebar-item-label">{exp.label}</span>
                 </div>
                 <span className="map-sidebar-item-count">{count}</span>

@@ -12,12 +12,12 @@ import "../blog.css"
 import remarkGfm from "remark-gfm"
 
 const CATEGORY_LABELS: Record<string, string> = {
-  scams: "⚠️ Scams",
-  safety: "🛡️ Safety",
-  transport: "🚗 Transport",
-  food: "🍜 Food",
-  accommodation: "🏨 Accommodation",
-  general: "📝 General",
+  scams: "Scams",
+  safety: "Safety",
+  transport: "Transport",
+  food: "Food",
+  accommodation: "Accommodation",
+  general: "General",
 }
 const slugify = (text: string) =>
   text
@@ -39,9 +39,6 @@ const components = {
   ScamCard: ({ title, risk = "medium", children }: { title: string; risk?: string; children: React.ReactNode }) => (
     <div className={`mdx-scam-card risk-${risk}`}>
       <div className="scam-card-header">
-        <span className="scam-card-icon">
-          {risk === "high" ? "🔴" : risk === "medium" ? "🟡" : "🟢"}
-        </span>
         <h3 className="scam-card-title">{title}</h3>
         <span className={`scam-card-badge risk-${risk}`}>
           {risk.charAt(0).toUpperCase() + risk.slice(1)} Risk
@@ -164,11 +161,11 @@ export default async function BlogDetailPage({
           <h1>{post.title}</h1>
           <p className="blog-hero-desc">{post.description}</p>
           <div className="blog-hero-meta">
-            <span>📅 {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+            <span>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
             <span>·</span>
-            <span>⏱️ {post.readingTime}</span>
+            <span>{post.readingTime}</span>
             <span>·</span>
-            <span>✍️ {post.author}</span>
+            <span>{post.author}</span>
           </div>
         </div>
       </header>
@@ -205,10 +202,10 @@ export default async function BlogDetailPage({
             <div className="sidebar-card-label">Also Read</div>
             <div className="sidebar-related">
               <Link href="/blog?category=safety" className="sidebar-related-link">
-                🛡️ Safety Tips for Solo Travelers
+                Safety Tips for Solo Travelers
               </Link>
               <Link href="/blog?category=transport" className="sidebar-related-link">
-                🚗 Getting Around Vietnam
+                Getting Around Vietnam
               </Link>
             </div>
           </div>
