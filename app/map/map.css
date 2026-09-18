@@ -6,7 +6,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
 }
 
 /* ── HEADER ── */
@@ -225,10 +225,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.map-sidebar-item-icon {
-  font-size: 15px;
 }
 
 .map-sidebar-item-label {

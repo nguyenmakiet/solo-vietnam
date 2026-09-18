@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { provinces } from "@/data/provinces"
+import { stripLeadingEmoji } from "@/lib/text"
 import "./provinces.css"
 
 export const metadata: Metadata = {
@@ -96,7 +97,6 @@ export default function ProvincesPage() {
             {/* Region header */}
             <div className="prov-region-header" style={{ borderLeftColor: region.color }}>
               <div className="prov-region-header-left">
-                <span className="prov-region-emoji">{region.emoji}</span>
                 <div>
                   <div className="prov-region-label" style={{ color: region.color }}>
                     {region.labelEn}
@@ -131,13 +131,13 @@ export default function ProvincesPage() {
                     {p.tags && p.tags.length > 0 && (
                       <div className="prov-card-tags">
                         {p.tags.slice(0, 2).map(t => (
-                          <span key={t} className="prov-card-tag">{t}</span>
+                          <span key={t} className="prov-card-tag">{stripLeadingEmoji(t)}</span>
                         ))}
                       </div>
                     )}
                     <div className="prov-card-footer">
                       {p.bestTime && (
-                        <span className="prov-card-best-time">🗓 {p.bestTime}</span>
+                        <span className="prov-card-best-time">{p.bestTime}</span>
                       )}
                       <span className="prov-card-cta" style={{ color: region.color }}>
                         Explore →

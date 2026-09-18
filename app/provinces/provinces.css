@@ -13,7 +13,7 @@
 }
 
 .prov-wrap {
-  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   background: var(--surface);
   color: var(--text);
   min-height: 100vh;
@@ -66,7 +66,7 @@
 }
 
 .prov-hero-title {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(44px, 8vw, 80px);
   font-weight: 900;
   line-height: 1.05;
@@ -160,7 +160,7 @@
 }
 
 .prov-region-title {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 28px;
   font-weight: 700;
   color: var(--dark);
@@ -171,8 +171,7 @@
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.7;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
   max-width: 480px;
   margin: 0;
 }
@@ -258,7 +257,7 @@
 }
 
 .prov-card-name {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 17px;
   font-weight: 700;
   color: var(--dark);

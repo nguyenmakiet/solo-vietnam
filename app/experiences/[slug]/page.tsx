@@ -16,17 +16,6 @@ function getTypeLabel(type: Location["type"]): string {
   return primary.charAt(0).toUpperCase() + primary.slice(1)
 }
 
-function getTypeIcon(type: Location["type"]): string {
-  const primary = Array.isArray(type) ? type[0] : type
-  const icons: Record<string, string> = {
-    beach: "🏖️", island: "🏝️", mountain: "🏔️", forest: "🌿",
-    nature: "🌿", waterfall: "💧", cave: "🪨", attraction: "✨",
-    cultural: "🎎", town: "🏘️", city: "🏙️", market: "🛒",
-    temple: "⛩️", heritage: "🏯",
-  }
-  return icons[primary] ?? "📍"
-}
-
 // ── Metadata ──────────────────────────────────────────────────────────────────
 export async function generateMetadata({
   params,
@@ -76,10 +65,6 @@ export default async function ExperiencePage({
 
   return (
     <>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet"
-      />
       <div className="exp">
 
         {/* Breadcrumb */}
@@ -128,16 +113,16 @@ export default async function ExperiencePage({
                   />
                   <div className="location-card-body">
                     <div className="location-card-type">
-                      {getTypeIcon(loc.type)} {getTypeLabel(loc.type)}
+                      {getTypeLabel(loc.type)}
                     </div>
                     <div className="location-card-name">{loc.name}</div>
                     <div className="location-card-province">
-                      📍 {loc.provinces.join(", ").replace(/-/g, " ")}
+                      {loc.provinces.join(", ").replace(/-/g, " ")}
                     </div>
                     <div className="location-card-desc">{loc.seoDescription}</div>
                   </div>
                   <div className="location-card-footer">
-                    <span>📅 {loc.bestTime.split("(")[0].trim()}</span>
+                    <span>{loc.bestTime.split("(")[0].trim()}</span>
                     <span>→</span>
                   </div>
                 </Link>
@@ -145,7 +130,6 @@ export default async function ExperiencePage({
             </div>
           ) : (
               <div className="exp-empty">
-                <span className="empty-icon">{experience.icon}</span>
               No locations yet - check back soon
               </div>
             )}

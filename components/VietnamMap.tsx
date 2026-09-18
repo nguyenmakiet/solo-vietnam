@@ -305,7 +305,7 @@ export default function VietnamMap() {
                   )}
 
                   {!province && (
-                    <div className="text-[11px] italic" style={{ color: "#a89880" }}>
+                    <div className="text-[11px]" style={{ color: "#a89880" }}>
                       Guide coming soon
                     </div>
                   )}

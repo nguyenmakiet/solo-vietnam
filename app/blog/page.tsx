@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
-  scams: "⚠️ Scams",
-  safety: "🛡️ Safety",
-  transport: "🚗 Transport",
-  food: "🍜 Food",
-  accommodation: "🏨 Accommodation",
-  general: "📝 General",
+  scams: "Scams",
+  safety: "Safety",
+  transport: "Transport",
+  food: "Food",
+  accommodation: "Accommodation",
+  general: "General",
 }
 
 export default async function BlogIndexPage({
@@ -44,7 +44,7 @@ export default async function BlogIndexPage({
       {/* Hero */}
       <header className="bi-hero">
         <div className="bi-hero-inner">
-          <div className="bi-hero-badge">✍️ Travel Guides & Tips</div>
+          <div className="bi-hero-badge">Travel Guides & Tips</div>
           <h1>The Solo Vietnam Blog</h1>
           <p>Honest advice for independent travelers - scams to avoid, routes to ride, places to discover.</p>
         </div>

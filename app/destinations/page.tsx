@@ -2,6 +2,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { destinations } from "@/data/destinations"
+import { stripLeadingEmoji } from "@/lib/text"
 
 export const metadata: Metadata = {
   title: "Destinations | Solo in Vietnam",
@@ -26,18 +27,6 @@ const REGION_EMOJI: Record<string, string> = {
   north: "🏔️",
   central: "🌊",
   south: "🌴",
-}
-
-const TAG_COLORS: Record<string, string> = {
-  beach:    "bg-sky-100 text-sky-700",
-  nature:   "bg-emerald-100 text-emerald-700",
-  island:   "bg-teal-100 text-teal-700",
-  nightlife:"bg-violet-100 text-violet-700",
-  history:  "bg-amber-100 text-amber-700",
-  culture:  "bg-rose-100 text-rose-700",
-  food:     "bg-orange-100 text-orange-700",
-  mountain: "bg-slate-100 text-slate-700",
-  city:     "bg-zinc-100 text-zinc-700",
 }
 
 export default function DestinationsPage() {
@@ -117,7 +106,6 @@ export default function DestinationsPage() {
             <section key={region}>
               {/* Region heading */}
               <div className="flex items-center gap-3 mb-8">
-                <span className="text-2xl">{REGION_EMOJI[region]}</span>
                 <h2
                   className="text-2xl font-bold text-[#1C1C1A]"
                   style={{ fontFamily: "var(--font-serif)" }}
@@ -170,7 +158,7 @@ export default function DestinationsPage() {
                       </h3>
 
                       {dest.tagline && (
-                        <p className="text-[12px] text-[#A09880] italic mb-3 leading-relaxed line-clamp-2">
+                        <p className="text-[12px] text-[#A09880] mb-3 leading-relaxed line-clamp-2">
                           {dest.tagline}
                         </p>
                       )}
@@ -181,9 +169,9 @@ export default function DestinationsPage() {
                           {dest.tags?.slice(0, 3).map((tag) => (
                             <span
                               key={tag}
-                              className={`text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full ${TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600"}`}
+                              className="text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-md bg-[#F0EBE3] text-[#A09880]"
                             >
-                              {tag}
+                              {stripLeadingEmoji(tag)}
                             </span>
                           ))}
                         </div>
@@ -191,13 +179,10 @@ export default function DestinationsPage() {
 
                       {/* Meta row */}
                       <div className="flex items-center justify-between pt-3 border-t border-[#F0EBE3]">
-                        <div className="flex items-center gap-3 text-[11px] text-[#A09880]">
-                          {dest.budgetPerDay && (
-                            <span>💰 {dest.budgetPerDay}</span>
-                          )}
-                          {dest.recommendedStay && (
-                            <span>🕐 {dest.recommendedStay}</span>
-                          )}
+                        <div className="flex items-center gap-1.5 text-[11px] text-[#A09880]">
+                          {dest.budgetPerDay && <span>{dest.budgetPerDay}</span>}
+                          {dest.budgetPerDay && dest.recommendedStay && <span>·</span>}
+                          {dest.recommendedStay && <span>{dest.recommendedStay}</span>}
                         </div>
                         <span className="text-[11px] font-semibold text-[#C9A84C] group-hover:translate-x-0.5 transition-transform">
                           Guide →
@@ -231,7 +216,7 @@ export default function DestinationsPage() {
           </div>
           <Link
             href="/provinces"
-            className="shrink-0 bg-[#C9A84C] hover:bg-[#b8973d] text-[#1C1C1A] font-semibold text-sm px-7 py-3.5 rounded-full transition-colors"
+            className="shrink-0 bg-[#C9A84C] hover:bg-[#b8973d] text-[#1C1C1A] font-semibold text-sm px-7 py-3.5 rounded-lg transition-colors"
           >
             View province map →
           </Link>

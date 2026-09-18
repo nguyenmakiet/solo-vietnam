@@ -70,7 +70,7 @@ export default function GalleryLightbox({ publicIds, locationName, streetViewUrl
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             />
             <div className="gallery-streetview-overlay">
-              <span className="gallery-streetview-badge">🌐 Street View · Click to explore</span>
+              <span className="gallery-streetview-badge">Street View · Click to explore</span>
             </div>
           </div>
         )}

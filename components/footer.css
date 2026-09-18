@@ -10,7 +10,7 @@
 
   background: var(--dark);
   color: var(--text-on-dark);
-  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
 }
 
 .site-footer-inner {
@@ -25,7 +25,7 @@
 
 /* ── BRAND ── */
 .site-footer-logo {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--text-on-dark);

@@ -64,7 +64,7 @@
   background: none;
   border: none;
   outline: none;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #1a1209;
@@ -134,18 +134,13 @@
   gap: 6px;
   padding: 36px 20px;
   color: #9e8e7a;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 14px;
   text-align: center;
 }
 
 .sm-empty strong {
   color: #1a1209;
-}
-
-.sm-empty-icon {
-  font-size: 28px;
-  margin-bottom: 4px;
 }
 
 .sm-empty-hint {
@@ -211,7 +206,7 @@
 }
 
 .sm-result-name {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #1a1209;
@@ -221,7 +216,7 @@
 }
 
 .sm-result-meta {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 12px;
   color: #9e8e7a;
   margin-top: 2px;
@@ -233,7 +228,7 @@
 
 /* ── Type badge ────────────────────────────────────────────── */
 .sm-badge {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.5px;

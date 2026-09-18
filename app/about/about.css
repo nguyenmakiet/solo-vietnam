@@ -14,7 +14,7 @@
   --white: #ffffff;
   --news-bad: #a95d42;
 
-  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   background: var(--surface);
   color: var(--text);
   min-height: 100vh;
@@ -23,7 +23,7 @@
 .about-wrap h1,
 .about-wrap h2,
 .about-wrap h3 {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   color: var(--dark);
   letter-spacing: -0.5px;
 }
@@ -91,7 +91,7 @@
 }
 
 .about-tagline {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(24px, 3.4vw, 36px);
   line-height: 1.25;
   color: var(--gold);
@@ -142,7 +142,7 @@
   position: absolute;
   left: 24px;
   top: 16px;
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 72px;
   line-height: 1;
   color: var(--gold);
@@ -357,11 +357,12 @@
 .about-news-label {
   margin: 0 0 8px;
 
-  font-family: var(--font-serif), "Playfair Display", serif;
-  font-size: 17px;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
+  font-size: 12px;
   line-height: 1.2;
-  font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .about-news-label--good {
@@ -379,7 +380,7 @@
   margin: 0;
   max-width: 580px;
 
-  font-family: var(--font-sans), "Be Vietnam Pro", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 17px;
   line-height: 1.7;
   font-weight: 300;
@@ -400,7 +401,7 @@
 }
 
 .about-news-item--last .about-news-text {
-  font-family: var(--font-serif), "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 23px;
   line-height: 1.5;
   font-weight: 600;

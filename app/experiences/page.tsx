@@ -19,10 +19,6 @@ export const metadata: Metadata = {
 export default function ExperiencesIndexPage() {
   return (
     <>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet"
-      />
       <div className="exp">
         <nav className="breadcrumb">
           <Link href="/">Home</Link>

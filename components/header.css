@@ -2,8 +2,6 @@
    header.css — soloinvietnam.com
    ============================================================ */
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap");
-
 :root {
   --gold: #c8a96e;
   --gold-light: #e8d5a8;
@@ -45,7 +43,7 @@
 
 /* ── LOGO ── */
 .site-logo {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
@@ -74,7 +72,7 @@
 }
 
 .site-nav-link {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 13px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.6);
@@ -210,7 +208,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 22px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.75);
@@ -250,7 +248,7 @@
   color: var(--gold);
   opacity: 0.6;
   transition: transform 0.2s, opacity 0.2s;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-weight: 400;
 }
 

@@ -239,7 +239,6 @@ export default function SearchModal({ open, onClose }: Props) {
 
           {!loading && !query && (
             <div className="sm-empty">
-              <span className="sm-empty-icon">🗺️</span>
               <span>Start typing to search locations, destinations, blog posts…</span>
               <span className="sm-empty-hint">Try "Hoi An", "Ha Giang", "trekking", or "safety"</span>
             </div>

@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
+import { IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const beVietnamPro = Be_Vietnam_Pro({
+const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-sans",
   subsets: ["latin", "vietnamese"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const playfairDisplay = Playfair_Display({
+const sourceSerif4 = Source_Serif_4({
   variable: "--font-serif",
   subsets: ["latin", "vietnamese"],
-  weight: ["700", "900"],
+  weight: ["500", "600"],
   style: ["normal", "italic"],
 });
 
@@ -43,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${beVietnamPro.variable} ${playfairDisplay.variable} antialiased`}>
+      <body className={`${ibmPlexSans.variable} ${sourceSerif4.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

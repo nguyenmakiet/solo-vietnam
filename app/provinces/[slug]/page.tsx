@@ -3,6 +3,7 @@ import { activeLocations } from "@/data/all-locations"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import FallbackImage from "@/components/FallbackImage"
+import { stripLeadingEmoji } from "@/lib/text"
 import "./province.css"
 
 const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
@@ -68,16 +69,8 @@ export default async function ProvincePage({
         ? "Central Vietnam"
         : "South Vietnam"
 
-  const regionEmoji =
-    province.region === "north" ? "🏔️" : province.region === "central" ? "🌊" : "🌴"
-
   return (
     <>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet"
-      />
-
       <div className="pp">
         <nav className="breadcrumb">
           <Link href="/">Home</Link>
@@ -102,7 +95,7 @@ export default async function ProvincePage({
             }} />
           )}
           <div className="hero-inner">
-            <div className="hero-badge">{regionEmoji} {regionLabel} · {pageLabel}</div>
+            <div className="hero-badge">{regionLabel} · {pageLabel}</div>
             <h1>{province.name} {titleSuffix}</h1>
             {province.description && (
               <p className="hero-desc">{province.description}</p>
@@ -110,7 +103,7 @@ export default async function ProvincePage({
             {province.tags && province.tags.length > 0 && (
               <div className="hero-tags">
                 {province.tags.map((tag) => (
-                  <span key={tag} className="hero-tag">{tag}</span>
+                  <span key={tag} className="hero-tag">{stripLeadingEmoji(tag)}</span>
                 ))}
               </div>
             )}
@@ -139,7 +132,7 @@ export default async function ProvincePage({
                   <div className="fact-chip">
                     <div>
                       <div className="fc-label">Capital</div>
-                      <div className="fc-val">🏙️ {province.capital}</div>
+                      <div className="fc-val">{province.capital}</div>
                     </div>
                   </div>
                 )}
@@ -147,7 +140,7 @@ export default async function ProvincePage({
                   <div className="fact-chip">
                     <div>
                       <div className="fc-label">Known For</div>
-                      <div className="fc-val">⭐ {province.knownFor}</div>
+                      <div className="fc-val">{province.knownFor}</div>
                     </div>
                   </div>
                 )}
@@ -155,7 +148,7 @@ export default async function ProvincePage({
                   <div className="fact-chip">
                     <div>
                       <div className="fc-label">Best Time</div>
-                      <div className="fc-val">📅 {province.bestTime}</div>
+                      <div className="fc-val">{province.bestTime}</div>
                     </div>
                   </div>
                 )}
@@ -167,30 +160,20 @@ export default async function ProvincePage({
           <div className="region-nav">
             <div className="rn-label">Browse by region</div>
             <div className="rn-links">
-              <Link href="/north-vietnam" className={province.region === "north" ? "active" : ""}>🏔️ North</Link>
-              <Link href="/central-vietnam" className={province.region === "central" ? "active" : ""}>🌊 Central</Link>
-              <Link href="/south-vietnam" className={province.region === "south" ? "active" : ""}>🌴 South</Link>
+              <Link href="/north-vietnam" className={province.region === "north" ? "active" : ""}>North</Link>
+              <Link href="/central-vietnam" className={province.region === "central" ? "active" : ""}>Central</Link>
+              <Link href="/south-vietnam" className={province.region === "south" ? "active" : ""}>South</Link>
             </div>
           </div>
 
           {/* Locations */}
           <section style={{ marginBottom: 56 }}>
             <p className="section-label">
-              Locations in {province.name} — {provinceLocations.length} found
+              Locations in {province.name} - {provinceLocations.length} found
             </p>
             {provinceLocations.length > 0 ? (
               <div className="dest-grid">
                 {provinceLocations.map((l) => {
-                  const primaryType = Array.isArray(l.type) ? l.type[0] : l.type
-                  const typeIcons: Record<string, string> = {
-                    beach: "🏖️", island: "🏝️", bay: "🌊", mountain: "⛰️",
-                    waterfall: "💧", cave: "🕳️", forest: "🌿", nature: "🌿",
-                    lake: "🏞️", river: "🏞️", temple: "🛕", pagoda: "🛕",
-                    heritage: "🏯", cultural: "🎎", town: "🏘️", city: "🏙️",
-                    market: "🛒", attraction: "✨", citadel: "🏰", tomb: "🪦",
-                    history: "📜", landmark: "🗿",
-                  }
-                  const icon = typeIcons[primaryType] ?? "📍"
                   return (
                     <Link key={l.slug} href={`/locations/${l.slug}`} className="dest-card">
 
@@ -201,7 +184,7 @@ export default async function ProvincePage({
                       />
                       <div className="dc-body">
                         <div className="dc-name">
-                          {icon} {l.name}
+                          {l.name}
                           {l.status === "seasonal" && (
                             <span className="seasonal-badge">Seasonal</span>
                           )}
@@ -219,11 +202,11 @@ export default async function ProvincePage({
                         )}
                         {l.tags && l.tags.length > 0 && (
                           <div className="dc-tags">
-                            {l.tags.slice(0, 2).map((t) => <span key={t} className="dc-tag">{t}</span>)}
+                            {l.tags.slice(0, 2).map((t) => <span key={t} className="dc-tag">{stripLeadingEmoji(t)}</span>)}
                           </div>
                         )}
                         <div className="dc-footer">
-                          <span className="dc-time">🗓 {l.bestTime.split("(")[0].trim()}</span>
+                          <span className="dc-time">{l.bestTime.split("(")[0].trim()}</span>
                           <span className="dc-cta">View →</span>
                         </div>
                       </div>
@@ -233,7 +216,6 @@ export default async function ProvincePage({
               </div>
             ) : (
               <div className="empty-state">
-                <div className="icon">🗺️</div>
                 <p>No locations listed yet for {province.name}.<br />Content coming soon.</p>
               </div>
             )}
@@ -267,7 +249,7 @@ export default async function ProvincePage({
           <div className="bottom-cta">
             <div>
               <div className="cta-label">Explore the region</div>
-              <div className="cta-title">{regionEmoji} {regionLabel}</div>
+              <div className="cta-title">{regionLabel}</div>
             </div>
             <Link href={`/${province.region}-vietnam`}>View all destinations →</Link>
           </div>
