@@ -20,7 +20,7 @@ export const pongourWaterfall: Location = {
   openingHours: "7:00 AM - 5:30 PM daily.",
   mapUrl: "https://www.google.com/maps?q=11.658000,108.248000",
   streetView: { embedUrl: "" },
-  heroImage: heroUrl("pongour-waterfall-da-lat_sample"),
+  heroImage: heroUrl("pongour-waterfall-da-lat_placeholder"),
   gallery: [],
   seoDescription:
     "Pongour Waterfall is one of the largest waterfalls in Vietnam's Central Highlands - a 40-metre, 100-metre-wide cascade falling through seven natural basalt tiers, dubbed 'Nam Thiên Đệ Nhất Thác' (Greatest Waterfall Under the Southern Sky) by Emperor Bảo Đại. Located 50km south of Đà Lạt.",
