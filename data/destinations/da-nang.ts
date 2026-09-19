@@ -13,7 +13,7 @@ export const daNang: Destination = {
 
   tagline: "Beaches, bridges, and the best base for Central Vietnam",
 
-  heroImage: heroUrl("da-nang_abcxyz"), // TODO: replace with real Cloudinary public ID
+  heroImage: heroUrl("da-nang_f93yq1"),
 
   tags: ["beach", "city", "food", "culture", "nature"],
 
