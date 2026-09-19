@@ -505,8 +505,8 @@
 }
 
 .home-exp-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(var(--exp-color, 255, 255, 255), 0.2);
+  border: 1px solid rgba(var(--exp-color, 255, 255, 255), 0.35);
   border-radius: 8px;
   padding: 18px 16px;
   text-align: center;
@@ -515,13 +515,13 @@
   display: block;
 }
 .home-exp-card:hover {
-  background: rgba(200, 169, 110, 0.15);
-  border-color: rgba(200, 169, 110, 0.4);
+  background: rgba(var(--exp-color, 200, 169, 110), 0.3);
+  border-color: rgba(var(--exp-color, 200, 169, 110), 0.55);
   transform: translateY(-2px);
 }
 .home-exp-label {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(var(--exp-color, 255, 255, 255));
   font-weight: 500;
   letter-spacing: 0.2px;
 }

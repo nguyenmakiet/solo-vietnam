@@ -20,10 +20,12 @@ export const bichDongPagoda: Location = {
   openingHours: "7:30 AM - 4:30 PM. Best light: around 4:00 PM when afternoon sun hits the karst peaks.",
   mapUrl: "https://www.google.com/maps?q=20.22892866015645,105.95146127475308",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775864712631!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFqZExVakE.!2m2!1d20.22899186484476!2d105.9512685186898!3f124.36!4f3.98!5f0.7820865974627469" },
-  heroImage: heroUrl("bich-dong-pagoda_cxfq4b"),
+  heroImage: heroUrl("bich-dong-pagoda_oqfjcp"),
   gallery: [
-    "bich-dong-pagoda_cxfq4b",
-    "bich-dong-pagoda-2_cqe0uo",
+    "bich-dong-pagoda2_gnmc6g",
+    "bich-dong-pagoda_oqfjcp",
+    "bich-dong-pagoda3_fazodz",
+    "bich-dong-pagoda4_vu55wz",
   ],
   seoDescription:
     "Bích Động Pagoda is a 300-year-old cave temple complex built into a limestone karst in Ninh Bình - three separate temples (Lower, Middle, Upper) climb the mountain face via more than 100 stone steps, once ranked 'second most beautiful grotto in Vietnam'. Free entry; best combined with a Tam Cốc boat tour.",

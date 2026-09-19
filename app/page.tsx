@@ -72,10 +72,10 @@ const curiosityCategories = [
 ]
 
 const experiences = [
-  { label: "Beaches", href: "/experiences/beaches" },
-  { label: "Trekking", href: "/experiences/trekking" },
-  { label: "Camping", href: "/experiences/camping" },
-  { label: "Food", href: "/experiences/food" },
+  { label: "Beaches", href: "/experiences/beaches", color: "173, 216, 240" }, // pastel sea blue
+  { label: "Trekking", href: "/experiences/trekking", color: "179, 224, 175" }, // pastel green
+  { label: "Camping", href: "/experiences/camping", color: "245, 200, 145" }, // pastel amber/campfire
+  { label: "Food", href: "/experiences/food", color: "235, 160, 155" }, // pastel red
 ]
 
 export default function Home() {
@@ -285,7 +285,12 @@ export default function Home() {
 
           <div className="home-exp-grid">
             {experiences.map((e) => (
-              <Link key={e.label} href={e.href} className="home-exp-card">
+              <Link
+                key={e.label}
+                href={e.href}
+                className="home-exp-card"
+                style={{ "--exp-color": e.color } as React.CSSProperties}
+              >
                 <span className="home-exp-label">{e.label}</span>
               </Link>
             ))}

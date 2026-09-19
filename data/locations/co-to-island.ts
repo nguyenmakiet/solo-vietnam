@@ -20,7 +20,7 @@ export const coToIsland: Location = {
   openingHours: "Open all year - ferry access dependent on weather conditions",
   mapUrl: "https://www.google.com/maps?q=20.970013931734762,107.76311545711883",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1779384360981!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2UxT0NMQnc.!2m2!1d20.95436670386715!2d107.7583632748905!3f290.3709302308999!4f-20.46632346569035!5f0.7820865974627469" },
-  heroImage: heroUrl("XXXX"),
+  heroImage: heroUrl("co_to_placeholder"),
   gallery: [],
   seoDescription:
     "Cô Tô Island in Quảng Ninh province is one of northern Vietnam's most pristine island destinations - an archipelago of nearly 50 islands in the Gulf of Tonkin with white sand beaches, clear turquoise water, coral snorkeling, and an unhurried fishing village atmosphere far removed from the crowds of Hạ Long Bay. Accessible by fast ferry from Ao Tiên port in approximately 2.5 hours.",

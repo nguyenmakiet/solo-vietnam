@@ -20,10 +20,8 @@ export const anBangBeach: Location = {
   openingHours: "Beach open 24 hours. Official swimming hours: summer 4:30 AM - 7:00 PM; winter 5:00 AM - 6:00 PM. Swimming outside these hours is not supervised.",
   mapUrl: "https://www.google.com/maps?q=15.888946897083208,108.35416826046463",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776157890124!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzh2c3lMUlE.!2m2!1d15.8894895631765!2d108.3543780266765!3f206.22!4f-2.89!5f0.7820865974627469" },
-  heroImage: heroUrl("an-bang-beach_ho-chi-minh-city_2_dfrkej"),
+  heroImage: heroUrl("an_bang_placeholder"),
   gallery: [
-    "an-bang-beach_ho-chi-minh-city_2_dfrkej",
-    "an-bang-beach_ho-chi-minh-city_dfrkej",
   ],
   seoDescription:
     "An Bang Beach is Hội An's most accessible beach - a wide stretch of white sand 3-5km east of the Ancient Town, reachable by bicycle through rice paddies in 20-30 minutes. Calmer and less developed than Đà Nẵng's city beaches, with beach bars, watersports, and good sunrise views.",
