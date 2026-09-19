@@ -13,7 +13,7 @@ export const ducPagoda: Location = {
   type: ["pagoda", "landmark"],
   categories: [],
   experiences: ["culture", "photography"],
-  status: "partially-closed",
+  status: "temporarily-closed",
   statusNote: "As of mid-2026, the sole path leading up to the shrines and the Giếng Tiền volcano crater rim has been temporarily closed due to landslide risk - cracks and unstable sections have appeared on the cliff face. Confirm current access locally before planning a visit, since parts of the site may be off-limits.",
   tags: [
     "⛩️ Volcanic Rock Pagoda",
