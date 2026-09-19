@@ -385,6 +385,13 @@
   background: #fafafa;
 }
 
+/* Provinces-merged table (vietnam-34-provinces-explained) - pastel column backgrounds.
+   Extra specificity (.blog-content prefix) needed to win over the generic
+   td:nth-child(2) red text-color rule below, which other blog post tables rely on. */
+.blog-content .provinces-merge-table td:nth-child(1) { background: #fdf6e3; color: #3a3a2e; white-space: normal; }
+.blog-content .provinces-merge-table td:nth-child(2) { background: #e3f6ee; color: #1f3d33; }
+.blog-content .provinces-merge-table td:nth-child(3) { background: #e5f1fb; color: #1f3548; }
+
 /* Fix column widths for contacts table */
 .blog-content td:first-child {
   white-space: nowrap;
