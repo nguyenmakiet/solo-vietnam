@@ -26,7 +26,6 @@ import { bauSau } from "@/data/locations/bau-sau"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
 import { benHaiRiver } from "@/data/locations/ben-hai-river"
 import { benThanhMarket } from "@/data/locations/ben-thanh-market"
-
 import { bichDongPagoda } from "@/data/locations/bich-dong-pagoda"
 import { bidoupNuiBaNationalPark } from "@/data/locations/bidoup-nui-ba-national-park"
 import { binhLieuBorderMountains } from "@/data/locations/binh-lieu-border-mountains"

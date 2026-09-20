@@ -13,6 +13,12 @@ import ContentRenderer from "./ContentRenderer"
 import { stripLeadingEmoji } from "@/lib/text"
 
 
+const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed", { icon: string; label: string }> = {
+  "temporarily-closed": { icon: "⚠️", label: "Temporarily Closed." },
+  "closed": { icon: "🚫", label: "Closed." },
+  "seasonally-closed": { icon: "🗓️", label: "Seasonally Closed." },
+}
+
 function toDecimal(val: number | string): number {
   if (typeof val === "number") return val
   const match = val.match(/(\d+)°(\d+)'([\d.]+)"([NSEW])/)
@@ -106,13 +112,13 @@ export default async function LocationPage({
       </nav>
 
       {/* Status Alert */}
-      {(location.status === "temporarily-closed" || location.status === "closed") && (
+      {(location.status === "temporarily-closed" || location.status === "closed" || location.status === "seasonally-closed") && (
         <div className={`status-alert status-alert--${location.status}`}>
           <span className="status-alert-icon">
-            {location.status === "temporarily-closed" ? "⚠️" : "🚫"}
+            {STATUS_ALERT[location.status].icon}
           </span>
           <span className="status-alert-text">
-            <strong>{location.status === "temporarily-closed" ? "Temporarily Closed." : "Closed."}</strong>
+            <strong>{STATUS_ALERT[location.status].label}</strong>
             {location.statusNote && ` ${location.statusNote}`}
           </span>
         </div>
