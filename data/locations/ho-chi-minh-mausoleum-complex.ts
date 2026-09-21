@@ -44,7 +44,7 @@ export const hoChiMinhMausoleumComplex: Location = {
     "If self-driving, parking is available on Ông Ích Khiêm street or Ngọc Hà street, a short walk from the entrance; a cyclo ride past the complex is also a pleasant, low-key way to see it from outside",
     "Queues form early on weekends and Vietnamese holidays - arrive right at opening for shorter waits; the viewing itself is brief (2-3 minutes walking past the body)",
     "The stilt house where Ho Chi Minh lived from 1958 to 1969 (preferring it to the Presidential Palace) is the most humanising element of the complex - do not skip it",
-    "The complex grounds are large and pleasant to walk - allow 2-3 hours to cover the mausoleum queue, Presidential Palace exterior, stilt house, and garden",
+    "Time needed: 2-3 hours to cover the mausoleum queue, Presidential Palace exterior, stilt house, and garden",
   ],
   content: {
     intro:

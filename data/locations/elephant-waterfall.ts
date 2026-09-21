@@ -14,8 +14,8 @@ export const elephantWaterfall: Location = {
   categories: [],
   experiences: ["photography"],
   tags: ["🐘 Elephant Rock Formation", "💧 National Scenic Site", "🚫 Long-Term Closure", "📸 Viewpoint Photography"],
-  status: "temporarily-closed",
-  statusNote: "Elephant Waterfall has been closed to direct visitor access for over 5 years (since around 2020-2021) due to an unresolved dispute over the site's tourism investment licence, which Lâm Đồng province revoked. A local update as recent as July 20, 2026 confirms the site remains fully closed with no official reopening date, and explicitly warns visitors against climbing barriers or using informal trails down to the base, into the Hang Gió (Wind Cave) and Hang Dơi (Bat Cave) behind the falls, or approaching the water's edge upstream. Some nearby establishments still offer to guide visitors to the falls for an unofficial fee (commonly cited around 60,000 VND/person), but this is explicitly an unauthorised, informal activity rather than legitimate access - do not trust anyone offering paid 'special access' to the falls or cave. The site can currently only be viewed from a distance, from Chùa Linh Ẩn's platform or nearby coffee shops. Check recent local news before planning a visit.",
+  status: "closed",
+  statusNote: "Elephant Waterfall has been closed to direct visitor access since around 2020–2021 due to a tourism investment dispute. As of July 2026, there is still no official reopening date. Do not cross barriers or use unofficial trails to the falls or nearby caves.",
   bestTime: "Roughly 7-9 AM for the freshest air and best light on the falls when viewed from the surrounding viewpoints",
   bestMonths: [11, 12, 1, 2, 3],
   entranceFee: "No official entry currently, since the site is closed. Chùa Linh Ẩn's viewing platform is free. Some coffee shops nearby charge for their own seating/view (roughly 30,000-60,000 VND) - this is a coffee shop fee, not legitimate access to the falls or cave itself.",
@@ -31,6 +31,7 @@ export const elephantWaterfall: Location = {
   seoDescription:
     "Elephant Waterfall (Thác Voi) is a national scenic site near Đà Lạt in Nam Ban, Lâm Hà district - a roughly 30m cascade on the Cam Ly stream, named for elephant-shaped rock formations at its base. The site has been closed to direct visitor access for over 5 years amid an unresolved investment dispute; it can currently only be viewed from Chùa Linh Ẩn's platform or nearby coffee shops.",
   tips: [
+    "Time needed: 30-45 minutes for viewing from Chùa Linh Ẩn's platform or a nearby coffee shop, given the falls themselves are currently closed",
     "⚠️ The waterfall has been closed to direct access for over 5 years as of 2026, with no confirmed reopening date - don't book a tour or trust a vendor claiming they can get you 'special access' to the falls or the cave behind it",
     "Chùa Linh Ẩn, right next to the falls, has a free public viewing platform near its giant Quan Âm statue - this is the most reliable current way to see the falls",
     "Some coffee shops in the area (including one sometimes called 'Elephant Coffee') advertise paid access toward the falls - reviews suggest this doesn't actually get you past the closure, so treat any such offer with scepticism",

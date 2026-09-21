@@ -34,6 +34,7 @@ export const hoChiMinhChildhoodHome: Location = {
   seoDescription:
     "Ho Chi Minh's childhood home in Làng Sen, Kim Liên is the scene printed on the back of Vietnam's 500,000 VND note - the preserved village house where the future leader grew up, now the most significant pilgrimage site in Nghệ An.",
   tips: [
+    "Time needed: 30-45 minutes for the Làng Sen house itself; allow another 1-2 hours if also visiting the Làng Hoàng Trù birthplace complex 2km away",
     "Pull out a 500,000 VND note and flip it over - the thatched house, bamboo grove, betel nut palms, hammock and lotus details on the back are all drawn from this exact site at Làng Sen. The designer made 40 sketches over 4 months before the final version was chosen",
     "The site closes for a midday break (roughly 11:30 AM-1:30 PM in summer, slightly later in winter) - time your visit for the morning or afternoon window rather than arriving over lunch",
     "The site encompasses two homes: the house at Làng Sen where Hồ Chí Minh spent a formative stretch of his youth from late 1901 to mid-1906 (the more significant of the two) and the birthplace house at Làng Hoàng Trù, about 2km away, where he was actually born in 1890 and lived his first few years - visit both if time allows",
