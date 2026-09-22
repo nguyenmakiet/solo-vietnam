@@ -1,14 +1,14 @@
-﻿import { Location } from "@/data/location"
+import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
 export const coToIsland: Location = {
   slug: "co-to-island",
   name: "Cô Tô Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-09-22",
   provinces: ["quang-ninh"],
   destination: "",
-  lat: "20.970013931734762",
-  lng: "107.76311545711883",
+  lat: 20.970013931734762,
+  lng: 107.76311545711883,
   address: "Huyện Cô Tô, Quảng Ninh",
   type: ["island", "beach", "nature"],
   categories: [],
@@ -20,58 +20,66 @@ export const coToIsland: Location = {
   openingHours: "Open all year - ferry access dependent on weather conditions",
   mapUrl: "https://www.google.com/maps?q=20.970013931734762,107.76311545711883",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1779384360981!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2UxT0NMQnc.!2m2!1d20.95436670386715!2d107.7583632748905!3f290.3709302308999!4f-20.46632346569035!5f0.7820865974627469" },
-  heroImage: heroUrl("co_to_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("co_to_placeholder"), // TODO: replace with real photo
+  gallery: [], // TODO: add gallery photos
   seoDescription:
-    "Cô Tô Island in Quảng Ninh province is one of northern Vietnam's most pristine island destinations - an archipelago of nearly 50 islands in the Gulf of Tonkin with white sand beaches, clear turquoise water, coral snorkeling, and an unhurried fishing village atmosphere far removed from the crowds of Hạ Long Bay. Accessible by fast ferry from Ao Tiên port in approximately 2.5 hours.",
+    "Cô Tô Island in Quảng Ninh province is one of northern Vietnam's most pristine island destinations - an archipelago of nearly 50 islands in the Gulf of Tonkin with white sand beaches, clear turquoise water, coral snorkeling, and an unhurried fishing village atmosphere far removed from the crowds of Hạ Long Bay. Accessible by fast catamaran ferry from Ao Tiên port in around 60-90 minutes.",
   tips: [
-    "The main ferry for foot passengers departs from Ao Tiên port in Vân Đồn (not Cái Rồng). If you want to bring your own motorbike, use Cái Rồng port instead - but bike rental on the island is easy and recommended.",
-    "Ferry prices (2026): 350,000 VND/person each way for adults. Children 3-5: 200,000 VND. Seniors 70-80: 200,000 VND. Ao Tiên port fee: 50,000 VND adults / 20,000 VND children.",
-    "Ferry schedule from Ao Tiên: 7:30 AM, 10:00 AM, 1:30 PM. Return from Cô Tô: 8:00 AM, 10:00 AM, 1:30 PM, 4:00 PM (schedules vary by day and season).",
-    "Car parking at Ao Tiên port: 90,000-190,000 VND/night, 220,000-450,000 VND/2 nights depending on vehicle type.",
-    "Bus options from Hanoi to Ao Tiên: sleeper bus (500,000-550,000 VND return), cabin sleeper with curtain (550,000-600,000 VND), limousine (600,000-700,000 VND). Recommended operators: Xuân Trường, Minh Châu Limousine, Vân Đồn Xanh, Hoàng Công, Nguyên Hằng, Tuấn Thuỷ.",
-    "If prone to seasickness: bring medication, choose a seat at the back of the ferry, and check the weather forecast - crossings are smooth in good weather but rough when the sea is choppy.",
-    "Rent a motorbike on the island (~150,000-200,000 VND/day) - most homestays can arrange pickup from the ferry pier with an electric vehicle to drop luggage first.",
-    "Must-visit spots: Bãi Đá Móng Rồng (dragon claw rock beach, best at sunrise 5 AM), Bãi Đá Vòm Xi (cave arch at sunset), Bãi Hồng Vàn (calm water, water sports), Bãi Vụng Tiên, Bãi Vàn Chảy, Bãi Tình Yêu (sunset, near both town centre and beach - convenient for accommodation), Hải Đăng lighthouse, Âu Cảng, Cô Tô Con islet",
-    "Accommodation tip: Bãi Tình Yêu is the sweet spot - close to both the town centre (convenient for eating and transport) and the beach (convenient for swimming and sunset)",
+    "Time needed: 2-3 days is the standard trip length, given the travel time involved to reach the island",
+    "Both Ao Tiên and Cái Rồng ports in Vân Đồn serve passenger routes to Cô Tô, with Ao Tiên being the newer and larger of the two - if you want to bring your own motorbike, Cái Rồng is generally the more practical option, though bike rental on the island itself is easy and recommended instead",
+    "Several ferry operators (Havaco, Ka Long, Hoàng Quân, Quang Minh, and others) run the Ao Tiên-Cô Tô route with modern catamarans - crossing time is roughly 60-90 minutes, not the several hours older wooden boats used to take. Adult fares generally run 220,000-350,000 VND one-way depending on operator and class, plus a separate Ao Tiên port fee of around 50,000 VND for adults and 20,000-30,000 VND for children. Prices and schedules vary by operator and season, so check current listings when booking",
+    "Ferries typically run several times a day between roughly 7:00 AM and 3:00 PM from Ao Tiên, with return sailings from Cô Tô through the afternoon - exact times vary by operator and day, so confirm your specific sailing in advance, especially in peak season when seats can sell out",
+    "Car parking at Ao Tiên port: 90,000-190,000 VND/night, 220,000-450,000 VND/2 nights depending on vehicle type",
+    "Bus options from Hanoi to Ao Tiên/Vân Đồn: fares and journey times vary by operator (roughly 3-4 hours), with options ranging from standard seats to sleeper and limousine buses - Xuân Trường, Minh Châu Limousine, Vân Đồn Xanh, and Hoàng Công are among the operators serving this route",
+    "If prone to seasickness: bring medication, choose a seat toward the back or middle of the ferry, and check the weather forecast - crossings are smooth in good weather but rough when the sea is choppy",
+    "Rent a motorbike on the island (~150,000-250,000 VND/day, not including fuel) or bicycle (30,000-50,000 VND/hour) - most homestays can arrange pickup from the ferry pier with an electric vehicle to drop luggage first",
+    "Electric carts on the island typically operate as full-day or multi-day package hires rather than point-to-point taxis - if you flag one down for a single short trip, expect to be quoted a steep price (sometimes 200,000-300,000 VND for a short distance). For groups, book a cart package in advance; for solo travellers or couples, a rented motorbike is usually cheaper and more flexible",
+    "Insects here bite harder than typical mosquitoes - watch for tiny biting midges and yellow flies in the evenings on the beach, which leave itchy, swollen bites that can take weeks to heal. Bring proper insect repellent (DEET-based sprays like Soffell or Remos) and consider long, thin trousers for evening beach time",
+    "For fresh seafood to take home, go to the fishing port or morning market around 5:30-6:00 AM rather than the stalls right by the ferry pier just before departure, which tend to be pricier and less fresh",
+    "A wooden boat trip to Cô Tô Con costs roughly 600,000-800,000 VND per boat (shared among your group) for a morning of swimming and photos - most visitors consider this essential rather than optional",
+    "Night squid fishing tours sound appealing but often disappoint - small boats and rough seas mean seasickness for most participants, and catching much without experience is genuinely difficult. Go for the experience, not expecting a big catch",
+    "Weather can strand you on the island for 2-3 days if a storm rolls in - boats stop running once winds reach around force 6. This is most likely in July-August; check the forecast for the days before travel and build in a financial and schedule buffer during this period",
+    "Check menu prices before ordering, since the island's remoteness means goods cost somewhat more than the mainland - this applies to food as well as seafood souvenirs",
+    "Must-visit spots: Bãi Đá Móng Rồng (tide-dependent rock beach), Bãi Đá Vòm Xi (cave arch at sunset), Bãi Hồng Vàn (calm water, water sports), Bãi Vụng Tiên, Bãi Vàn Chảy, Bắc Vàn, Bãi Tình Yêu/Bãi Tàu Đắm (near both town centre and beach), Hải Đăng lighthouse (climb barefoot), Âu Cảng, Đồn Cao historical site, Cô Tô Con islet (widely considered unmissable)",
+    "Accommodation trade-off: the town centre is more convenient for food, transport, and nightlife, while the more scenic beaches (Hồng Vàn, Vàn Chảy) sit 6-8km away and feel quiet, even a little isolated, at night, with fewer good food options and more insects. Bãi Tình Yêu is a reasonable middle ground, close to both the town centre and the beach",
     "Peak season (Jun-Aug) brings heavy Vietnamese domestic tourist crowds; Apr-May and Sep are significantly more relaxed",
   ],
   content: {
     intro:
-      "Cô Tô Island is the main island of a nearly-50-island archipelago in the far eastern reaches of Quảng Ninh province, approximately 80km from the mainland in the Gulf of Tonkin. The island sits outside the boundaries of Hạ Long Bay and Bái Tử Long Bay, which has kept it off the main tourist trail and preserved a character that those areas have largely lost. The island has a permanent population of around 6,000 residents, mostly fisherfolk whose families migrated here during the Nguyễn dynasty period. The beaches are among the cleanest in northern Vietnam - Bãi Hồng Vàn for calm swimming, Bãi Đá Móng Rồng for dramatic rock formations at sunrise, Bãi Đá Vòm Xi for the cave arch sunset view, and the quieter Bãi Vụng Tiên and Bãi Vàn Chảy. The uninhabited Cô Tô Con islet nearby has become the go-to snorkeling destination in the archipelago with intact coral reefs in shallow water.",
+      "Cô Tô Island is the main island of a nearly-50-island archipelago (around 47 sq km) in the far eastern reaches of Quảng Ninh province, roughly 80km from the mainland and about 260km from Hanoi, in the Gulf of Tonkin. The island sits outside the boundaries of Hạ Long Bay and Bái Tử Long Bay, which has kept it off the main tourist trail and preserved a character that those areas have largely lost. Originally known as Chàng Sơn, the island was long used only as temporary shelter by Northeastern fishing boats rather than permanently settled, due to persistent pirate raids. Formal settlement began in 1832, when the Nguyễn court, at the request of the regional governor Nguyễn Công Trứ, established the first village here; many of the early settlers were of Chinese origin, from the coastal areas of Guangdong, Fujian, and Hainan. The island's population changed significantly in 1978, when most ethnic Chinese residents left for China amid the period's Sino-Vietnamese tensions, and it has since been repopulated largely by Vietnamese fisherfolk; today it has a permanent population of around 6,000 residents. The island also carries a more recent layer of history: on the night of November 13, 1945, the Ký Con Company - one of the first main units of the Đông Triều war zone - fought French forces at Đồn Cao, a hilltop position with commanding views the French had occupied; the site is now a provincial historical relic, and a street in the town centre is named after the company in tribute. The beaches are among the cleanest in northern Vietnam - Bãi Hồng Vàn for calm swimming, Bãi Đá Móng Rồng for dramatic rock formations, Bãi Đá Vòm Xi for the cave arch sunset view, Bãi Vàn Chảy, Bắc Vàn, and Bãi Tình Yêu (also known as Bãi Tàu Đắm, or Shipwreck Beach). The uninhabited Cô Tô Con islet nearby, with its own Bãi Nam and Bãi Đông beaches, has become the go-to snorkeling destination in the archipelago, with intact coral reefs, clear water, and soft sand that many compare favourably to the Maldives - most visitors consider it unmissable.",
     howToGetThere:
-      "The main route to Cô Tô is by fast ferry from Ao Tiên port in Vân Đồn district, Quảng Ninh - not Cái Rồng, which is used only for vehicle transport. From Hanoi, the journey to Ao Tiên takes approximately 3-3.5 hours by overnight sleeper bus (departing around 1:30-2:00 AM, arriving in time for the 7:30 AM ferry). Three bus types serve the Hanoi-Ao Tiên route: open sleeper (500,000-550,000 VND return), cabin sleeper with curtain (550,000-600,000 VND), and limousine (600,000-700,000 VND). The ferry crossing from Ao Tiên to Cô Tô takes approximately 2.5 hours. Ferries depart at 7:30 AM, 10:00 AM, and 1:30 PM. Return ferries from Cô Tô depart at 8:00 AM, 10:00 AM, 1:30 PM, and 4:00 PM (schedules vary). Book ferry tickets in advance during peak season.",
+      "Cô Tô is reached in two legs: first to the mainland port area in Vân Đồn district (Ao Tiên or Cái Rồng - both serve passenger routes, with Ao Tiên the newer, larger port), then by boat to the island itself. From Hanoi, the journey to Vân Đồn takes roughly 3-4 hours by bus, with options ranging from standard seats to overnight sleeper and limousine buses. From the port, you have two main boat options: fast catamaran ferries take approximately 60-90 minutes (occasionally up to around 2 hours depending on conditions), with adult fares generally 220,000-350,000 VND; or older wooden boats, a slower but noticeably cheaper option, taking around 3 hours for roughly 95,000 VND, departing once enough passengers have gathered rather than on a fixed schedule. Several operators run the fast-ferry route with their own schedules and pricing, generally departing multiple times daily from early morning into mid-afternoon, with return sailings from Cô Tô continuing into early evening - check specific times and book ahead, particularly in peak season.",
     whatToExpect:
-      "The island is small enough to explore by motorbike in a day. The main town has the ferry pier, accommodation, and restaurant cluster. The key beaches each have a distinct character: Bãi Hồng Vàn is the largest with calm waters protected by a nearby islet and water sports rentals; Bãi Đá Móng Rồng has dramatic wave-eroded rock formations best seen at 5 AM sunrise; Bãi Đá Vòm Xi has a natural rock arch framing the sunset; Bãi Tình Yêu (Love Beach) sits conveniently between the town centre and the sea. The Âu Cảng (marina) and Cảng Thanh Lân are photogenic harbour spots. Cô Tô Con islet is a 20-minute boat ride with the best snorkeling. The lighthouse at the island's highest point provides panoramic views over the archipelago.",
+      "The island is small enough to explore by motorbike in a day. The main town has the ferry pier, accommodation, and restaurant cluster, along with Phố Đi Bộ Ký Con, the district's first walking street (open 7-11 PM), and Chùa Trúc Lâm Cô Tô nearby. The key beaches each have a distinct character: Bãi Hồng Vàn is the largest with calm waters protected by a nearby islet and water sports rentals; Bãi Đá Móng Rồng (formerly known as Cầu Mỵ, renamed in 2015) is a striking stretch of wave-eroded sedimentary rock over 40 hectares and 2km long - note that its beauty depends more on the tide than the time of day, since high tide covers the rock formations and can be dangerous, so aim for low tide, which often (but not always) falls in the early morning; Bãi Đá Vòm Xi has a natural rock arch framing the sunset; Bãi Tình Yêu (also called Bãi Tàu Đắm, or Shipwreck Beach) sits conveniently between the town centre and the sea, linked by a 2km red-brick coastal path lined with casuarina trees known as the 'Love Road'. The Âu Cảng (marina) and Cảng Thanh Lân are photogenic harbour spots, and nearby Rừng Chõi, a roughly 10-hectare stretch of primary forest in Đồng Tiến commune, runs along Bắc Vàn beach near one of the piers to Cô Tô Con. Hồ Trường Xuân, one of the island's two main freshwater reservoirs, is a scenic spot with some accommodation nearby. Cô Tô Con islet, with its own Bãi Nam and Bãi Đông beaches, is a short boat ride away (from Bắc Vàn pier, about 30-45 minutes depending on conditions) and offers the best snorkeling in the area - most visitors consider it essential rather than optional. The lighthouse, on a hill over 100m high, is reached via 72 spiral steps - visitors are asked to climb barefoot, since the stairway also collects clean rainwater for the keepers' use, and it's worth a chat with the keepers if they're free.",
     travelTips:
-      "A 2-night 3-day trip is the standard itinerary from Hanoi: depart by overnight bus at 1:30 AM, catch the morning ferry, arrive mid-morning. Day 1: Cảng Thanh Lân, Bãi Vụng Tiên, Bãi Hồng Vàn, sunset at Bãi Tình Yêu. Day 2: Sunrise at Bãi Đá Móng Rồng (5 AM), Âu Cảng, 3-island boat tour, Phố Đi Bộ evening. Day 3: Sunrise at Bãi Đá Vòm Xi, buy souvenirs, check out, 1 PM ferry back. Accommodation at Bãi Tình Yêu is the most convenient base - close to both the town centre and beach. The island is at its best in May - early enough to avoid peak summer crowds with reliably good weather.",
+      "A 2-night, 3-day trip is the standard itinerary from Hanoi, allowing enough time to justify the travel involved. A typical structure: Day 1, travel to Ao Tiên and take the ferry over, then visit Cảng Thanh Lân, Bãi Vụng Tiên, and Bãi Hồng Vàn, with sunset at Bãi Tình Yêu. Day 2: sunrise at Bãi Đá Móng Rồng (around 5 AM), a visit to Âu Cảng, an islands boat tour, and the evening walking street. Day 3: sunrise at Bãi Đá Vòm Xi, souvenir shopping, check-out, and the ferry back. Accommodation at Bãi Tình Yêu is the most convenient base - close to both the town centre and the beach. The island is at its best in May - early enough to avoid peak summer crowds with reliably good weather.",
   },
   insights: {
     highlights: [
-      "Bãi Đá Móng Rồng sunrise (5 AM) and Bãi Đá Vòm Xi cave arch sunset - the two signature photography moments on Cô Tô",
-      "Cô Tô Con islet snorkeling - pristine coral reef in shallow clear water, 20-minute boat ride from the main island",
+      "Bãi Đá Móng Rồng at low tide and Bãi Đá Vòm Xi cave arch at sunset - two of the signature photography moments on Cô Tô",
+      "Cô Tô Con islet snorkeling - pristine coral reef in shallow clear water, a short boat ride from the main island",
       "Remote fishing village atmosphere with multiple distinct beaches, each with different character - far from the Hạ Long Bay cruise circuit",
     ],
     thingsToKnow: {
       crowds: "Peak Jun-Aug brings heavy domestic crowds; Apr-May and Sep are the sweet spot - good weather with significantly fewer visitors",
       difficulty: "No difficulty for beach and town areas. Cô Tô Con requires a boat trip and swimming/snorkeling ability.",
-      safety: "Ferry cancellations are common during rough weather - build flexibility into departure plans. Seasickness medication recommended for choppy days - sit at the back of the ferry.",
+      safety: "Ferry cancellations are common during rough weather - build flexibility into departure plans. Seasickness medication recommended for choppy days.",
       accessibility: "Town area and main beaches accessible. Cô Tô Con requires boat and water confidence.",
       seasonal: "Best Apr-Aug for beach and snorkeling. Sep-Oct still warm but typhoon risk increases. Winter (Nov-Mar) is cold with frequent boat cancellations.",
     },
     visitorTips: [
-      "Book ferry tickets in advance for peak season - seats sell out. Overnight bus from Hanoi + morning ferry is the standard approach.",
+      "Book ferry tickets in advance for peak season - seats sell out. A bus-plus-ferry combo from Hanoi is the standard approach.",
       "Parking at Ao Tiên port: 90,000-190,000 VND/night. Leave the car and take the bus-ferry combo instead if coming from Hanoi.",
       "Stay near Bãi Tình Yêu - convenient for both town and beach without choosing between them",
     ],
     faq: [
       {
         question: "How do I get to Cô Tô from Hanoi?",
-        answer: "Take an overnight sleeper bus from Hanoi (departing ~1:30 AM) to Ao Tiên port in Vân Đồn - approximately 3-3.5 hours. Then catch the 7:30 AM fast ferry to Cô Tô (2.5 hours crossing). Total journey around 5-6 hours. Several bus operators serve this route: Xuân Trường, Minh Châu Limousine, Vân Đồn Xanh.",
+        answer: "Take a bus from Hanoi to Ao Tiên port in Vân Đồn (roughly 3-4 hours, with standard, sleeper, and limousine options), then a fast catamaran ferry to Cô Tô (about 60-90 minutes). Total journey is typically 4-6 hours depending on connections. Several operators serve this route on both the bus and ferry legs.",
       },
       {
         question: "Can I bring my motorbike to Cô Tô?",
-        answer: "Not via Ao Tiên port - that's for foot passengers only. Motorbikes can be transported via Cái Rồng port but this is impractical for most visitors. Motorbike rental is available on the island for 150,000-200,000 VND/day and is the recommended option.",
+        answer: "It's generally impractical - motorbikes are typically transported via Cái Rồng port rather than Ao Tiên, and it's not a common choice for most visitors. Motorbike rental is available on the island for around 150,000-250,000 VND/day and is the recommended option instead.",
       },
       {
         question: "Is Cô Tô better than Hạ Long Bay?",
@@ -80,7 +88,7 @@ export const coToIsland: Location = {
     ],
     sentiment: {
       positive: "Consistently praised for pristine beaches with distinct characters, clear water, and authentic fishing village atmosphere. The Bãi Đá Móng Rồng sunrise and Cô Tô Con snorkeling are most frequently highlighted.",
-      negative: "The journey is long with an overnight bus required. Ferry is weather-dependent with cancellation risk. Peak season crowds and improving but still basic tourist infrastructure frustrate some visitors.",
+      negative: "The journey involves multiple legs (bus plus ferry). Ferry is weather-dependent with cancellation risk. Peak season crowds and improving but still basic tourist infrastructure frustrate some visitors.",
     },
   },
 }
