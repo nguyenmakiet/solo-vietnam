@@ -69,6 +69,11 @@
 .map-area {
   flex: 1;
   position: relative;
+  /* Leaflet panes/controls use z-index 400-1000, which would otherwise stack above
+     the site header's mobile menu (z-index 99). A new stacking context keeps them
+     contained inside the map area. */
+  isolation: isolate;
+  z-index: 0;
 }
 
 .map-container {
