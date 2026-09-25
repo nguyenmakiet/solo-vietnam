@@ -75,6 +75,7 @@ export const LOCATION_EXPERIENCES = {
   },
   kitesurfing: { label: "Kitesurfing", group: "water", status: "proposed" },
   "museum-visit": { label: "Museum Visit", group: "culture", status: "proposed" },
+  diving: { label: "Diving", group: "water", status: "proposed", description: "Scuba diving" },
 } as const satisfies Record<string, TaxonomyMeta<LocationExperienceGroup>>
 
 export type LocationExperience = keyof typeof LOCATION_EXPERIENCES
