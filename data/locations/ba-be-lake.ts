@@ -13,7 +13,7 @@ export const baBeLake: Location = {
   type: ["lake", "nature", "forest"],
   categories: ["nature", "culture"],
   experiences: ["boat-tour", "kayaking", "trekking", "wildlife", "photography", "homestay", "camping", "culture"],
-  tags: ["🏞️ National Park", "🚣 Freshwater Lake", "🦅 Wildlife Sanctuary", "🛖 Tày Homestay", "ethnic-minority-culture"],
+  tags: ["🏞️ National Park", "🚣 Freshwater Lake", "🦅 Wildlife Sanctuary", "🛖 Tày Homestay", "ethnic-minority-culture", "tay-culture"],
   bestTime: "Mar - May (spring, mild weather, Lồng Tồng festival). Sep - Nov (clear skies, green forest after rains). Avoid Dec - Feb (cold, can drop to 0°C).",
   bestMonths: [3, 4, 5, 9, 10, 11],
   entranceFee: "25,000 VND/person national park entrance. Boat hire: 500,000 VND/boat (10-12 people). Kayak/SUP: 1,200,000 - 1,500,000 VND for 3 boats (up to 6 people/day).",

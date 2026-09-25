@@ -11,8 +11,8 @@ export const ducPagoda: Location = {
   lng: 109.10196741829073,
   address: "An Hải, Lý Sơn, Quảng Ngãi",
   type: ["pagoda", "landmark"],
-  categories: [],
-  experiences: ["culture", "photography"],
+  categories: ["religion", "nature"],
+  experiences: ["culture", "photography", "temple-visit"],
   status: "temporarily-closed",
   statusNote: "As of mid-2026, the sole path leading up to the shrines and the Giếng Tiền volcano crater rim has been temporarily closed due to landslide risk - cracks and unstable sections have appeared on the cliff face. Confirm current access locally before planning a visit, since parts of the site may be off-limits.",
   tags: [
@@ -20,6 +20,7 @@ export const ducPagoda: Location = {
     "🗿 27m Quan Âm Statue",
     "🌊 Sea-facing Shrine",
     "🧗 139 Stone Steps",
+    "buddhism",
   ],
   bestTime: "Morning for cooler temperatures on the climb",
   bestMonths: [4, 5, 6, 7, 8],

@@ -92,6 +92,27 @@ export const LOCATION_TAGS = {
     filterable: true,
     description: "Caodaism - Vietnamese indigenous religion founded 1926",
   },
+  // Specific ethnic-culture tags: only where that group's culture is a
+  // traveler-facing reason to visit, never for a mere mention (CONTENT-REVIEW R3).
+  "hmong-culture": {
+    label: "H'Mông Culture",
+    group: "cultural-influence",
+    status: "proposed",
+    filterable: true,
+  },
+  "tay-culture": {
+    label: "Tày Culture",
+    group: "cultural-influence",
+    status: "proposed",
+    filterable: true,
+  },
+  "thai-culture": {
+    label: "Thái (Tai) Culture",
+    group: "cultural-influence",
+    status: "proposed",
+    filterable: true,
+    description: "Vietnam's Thái ethnic group - not Thailand. Slug naming under review",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTagGroup>>
 
 export type LocationTag = keyof typeof LOCATION_TAGS

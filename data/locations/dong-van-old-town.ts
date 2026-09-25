@@ -11,7 +11,7 @@ export const dongVanOldTown: Location = {
   lng: 105.362,
   address: "Phố Cổ Đồng Văn, Đồng Văn, Hà Giang",
   type: ["cultural", "town"],
-  categories: [],
+  categories: ["culture", "architecture", "history"],
   experiences: ["culture", "history", "photography", "walking-tour", "food", "markets"],
   tags: ["🏘️ 40 Ancient Stone Houses", "🔥 Weekend Bonfire & Cultural Night", "🛒 Sunday Minority Market", "🌙 Night Market"],
   bestTime: "Sep - Nov (buckwheat flowers, cooler air) or Mar - Apr (peach blossoms). Weekends for the cultural night events.",

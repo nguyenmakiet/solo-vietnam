@@ -13,7 +13,7 @@ export const catCatVillage: Location = {
   type: ["village", "cultural", "town"],
   categories: ["culture"],
   experiences: ["culture", "history", "photography", "walking-tour"],
-  tags: ["🎎 H'mong Culture", "💧 Waterfall", "🚶 Walking Trail"],
+  tags: ["hmong-culture", "💧 Waterfall", "🚶 Walking Trail"],
   bestTime: "Sep - Nov (golden rice terraces, cool weather - best). May - Sep (warm, sunny). Tết (Lunar New Year) for festivals and traditional performances.",
   bestMonths: [1, 2, 9, 10, 11],
   entranceFee: "150,000 VND adult, ~70,000-80,000 VND child (1m-1.4m), free under 1m. Traditional costume rental: 50,000-150,000 VND/outfit.",
