@@ -98,6 +98,13 @@ export const LOCATION_TYPES = {
   fortress: { label: "Fortress", group: "heritage", status: "proposed" },
   prison: { label: "Prison", group: "heritage", status: "proposed" },
   station: { label: "Station", group: "urban", status: "proposed", description: "Railway station" },
+  church: { label: "Church", group: "religious", status: "proposed", description: "Church or cathedral" },
+  "old-quarter": {
+    label: "Old Quarter",
+    group: "settlement",
+    status: "proposed",
+    description: "Historic town quarter (phố cổ)",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTypeGroup>>
 
 export type LocationType = keyof typeof LOCATION_TYPES

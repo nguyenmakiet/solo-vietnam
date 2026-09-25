@@ -11,7 +11,7 @@ export const elephantWaterfall: Location = {
   lng: 108.33847133316729,
   address: "Nam Ban, Lâm Hà, Lâm Đồng",
   type: ["waterfall", "nature"],
-  categories: [],
+  categories: ["nature"],
   experiences: ["photography"],
   tags: ["🐘 Elephant Rock Formation", "💧 National Scenic Site", "🚫 Long-Term Closure", "📸 Viewpoint Photography"],
   status: "closed",

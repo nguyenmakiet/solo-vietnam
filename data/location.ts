@@ -50,6 +50,8 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         fortress: "amber",
         prison: "purple",
         station: "purple",
+        church: "purple",
+        "old-quarter": "purple",
       }
 
 export type ContentBlock =

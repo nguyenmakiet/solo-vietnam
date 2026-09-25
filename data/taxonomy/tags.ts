@@ -113,6 +113,12 @@ export const LOCATION_TAGS = {
     filterable: true,
     description: "Vietnam's Thái ethnic group - not Thailand. Slug naming under review",
   },
+  catholicism: {
+    label: "Catholicism",
+    group: "religion",
+    status: "proposed",
+    filterable: true,
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTagGroup>>
 
 export type LocationTag = keyof typeof LOCATION_TAGS
