@@ -13,7 +13,7 @@ function getImageSrc(heroImage?: string): string {
 }
 function getTypeLabel(type: Location["type"]): string {
   const primary = Array.isArray(type) ? type[0] : type
-  return primary.charAt(0).toUpperCase() + primary.slice(1)
+  return primary.charAt(0).toUpperCase() + primary.slice(1).replace(/-/g, " ")
 }
 
 // ── Metadata ──────────────────────────────────────────────────────────────────

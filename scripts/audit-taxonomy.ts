@@ -1,8 +1,9 @@
 /**
  * Read-only taxonomy audit for Location data.
  *
- * Reports, per taxonomy field, which production values are canonical,
- * which resolve through a legacy alias, and which are still unmapped.
+ * Reports, per taxonomy field, which production values are registered in
+ * data/taxonomy (canonical or proposed), which resolve through a legacy
+ * alias, and which are still unmapped.
  * Never writes to any file.
  *
  * Usage: npm run audit:taxonomy
@@ -21,34 +22,34 @@ import {
 
 const verbose = process.argv.includes("--verbose")
 
-type Status = "canonical" | "alias" | "unmapped"
+type Status = "registered" | "alias" | "unmapped"
 
 function audit(
   field: string,
   values: string[],
-  isCanonical: (v: string) => boolean,
+  isRegistered: (v: string) => boolean,
   normalize: (v: string) => string | null
 ) {
   const counts = new Map<string, number>()
   for (const v of values) counts.set(v, (counts.get(v) ?? 0) + 1)
 
   const byStatus: Record<Status, [string, number, string | null][]> = {
-    canonical: [],
+    registered: [],
     alias: [],
     unmapped: [],
   }
   for (const [value, count] of counts) {
     const target = normalize(value)
-    const status: Status = isCanonical(value) ? "canonical" : target ? "alias" : "unmapped"
+    const status: Status = isRegistered(value) ? "registered" : target ? "alias" : "unmapped"
     byStatus[status].push([value, count, target])
   }
 
   const uses = (rows: [string, number, string | null][]) => rows.reduce((n, [, c]) => n + c, 0)
   console.log(`\n── ${field} ──`)
   console.log(`  unique values: ${counts.size}   total uses: ${values.length}`)
-  for (const status of ["canonical", "alias", "unmapped"] as Status[]) {
+  for (const status of ["registered", "alias", "unmapped"] as Status[]) {
     const rows = byStatus[status].sort((a, b) => b[1] - a[1])
-    console.log(`  ${status.padEnd(9)}: ${rows.length} values / ${uses(rows)} uses`)
+    console.log(`  ${status.padEnd(10)}: ${rows.length} values / ${uses(rows)} uses`)
     if (status === "alias") {
       for (const [v, c, t] of rows) console.log(`      ${v} (${c}) -> ${t}`)
     }

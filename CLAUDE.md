@@ -159,11 +159,11 @@ Three fields are typed enums and MUST use values from the source-of-truth files.
 - `"nature"` is a `LocationType`, NOT an `ExperienceValue` - do not put it in `experiences`
 - `"viewpoint"` does not exist in any enum - use `["nature", "landmark"]` for scenic lookouts
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
-- `"swimming"` does not exist as an experience - omit, or use `kayaking`/`snorkeling` if water-based
+- `"swimming"`, `"surfing"` and `"temple-visit"` are `proposed` experiences (added by the taxonomy content review) - valid, but they have no `/experiences/*` page yet
 
 **Before writing a new location file**, re-read `data/taxonomy/` (types, categories, experiences, tags) to confirm the current valid values. The lists above are accurate as of the rule's creation but may evolve.
 
-Taxonomy migration is in progress - see `data/taxonomy/AUDIT.md` for semantics, open decisions and legacy aliases. Run `npm run audit:taxonomy` (read-only) to see current canonical/alias/unmapped counts. Do not bulk-rewrite existing Location taxonomy values.
+Taxonomy migration is in progress - see `data/taxonomy/AUDIT.md` for semantics and legacy aliases, and `data/taxonomy/CONTENT-REVIEW.md` for the location-by-location review log and its working decisions (D1-D8). Run `npm run audit:taxonomy` (read-only) to see current canonical/alias/unmapped counts. Do not bulk-rewrite existing Location taxonomy values.
 
 ---
 

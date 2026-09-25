@@ -3,8 +3,9 @@ import { toTaxonomyKey, type TaxonomyMeta } from "./shared"
 // ─── Location "experiences" ──────────────────────────────────
 // Answers: "What can a traveler do or experience here?" (includes activities).
 //
-// The keys below are exactly the existing canonical values (previously the
-// ExperienceValue union in data/experiences.ts). Location.experiences stays
+// "canonical" keys are the values backed by a public /experiences/* page
+// (the ExperienceValue union in data/experiences.ts). "proposed" keys come
+// from the content review and have no page yet. Location.experiences stays
 // typed as string[] during the transition - values outside this list still
 // load and render; normalizeExperience() maps them where the meaning is clear.
 
@@ -56,9 +57,24 @@ export const LOCATION_EXPERIENCES = {
   wildlife: { label: "Wildlife", group: "outdoor", status: "canonical" },
   motorcycling: { label: "Motorcycling", group: "outdoor", status: "canonical" },
   shopping: { label: "Shopping", group: "food-and-local-life", status: "canonical" },
+
+  // ── Proposed during the content review (CONTENT-REVIEW.md) ──
+  swimming: { label: "Swimming", group: "water", status: "proposed" },
+  surfing: { label: "Surfing", group: "water", status: "proposed" },
+  "temple-visit": {
+    label: "Temple Visit",
+    group: "culture",
+    status: "proposed",
+    description: "Visiting an active place of worship - pagoda, temple, shrine",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationExperienceGroup>>
 
 export type LocationExperience = keyof typeof LOCATION_EXPERIENCES
+
+// Experiences backed by a public /experiences/* page (status "canonical").
+export type CanonicalLocationExperience = {
+  [K in LocationExperience]: (typeof LOCATION_EXPERIENCES)[K]["status"] extends "canonical" ? K : never
+}[LocationExperience]
 
 export function isLocationExperience(value: string): value is LocationExperience {
   return Object.prototype.hasOwnProperty.call(LOCATION_EXPERIENCES, value)

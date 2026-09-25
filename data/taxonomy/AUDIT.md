@@ -1,6 +1,7 @@
 # Location Taxonomy - Audit & Migration Notes
 
-Status: **Phase 0 (audit) + Phase 1 (architecture) done.** No Location data was changed.
+Status: **Phase 0 (audit) + Phase 1 (architecture) done.** No Location data was changed in these phases.
+The location-by-location content review is tracked in [CONTENT-REVIEW.md](./CONTENT-REVIEW.md).
 Re-run the numbers at any time with `npm run audit:taxonomy` (read-only).
 
 Snapshot below: 257 locations, audited 2026-09-25.

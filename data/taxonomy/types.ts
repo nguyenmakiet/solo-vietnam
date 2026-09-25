@@ -71,6 +71,21 @@ export const LOCATION_TYPES = {
     description: "Generic - does not say what the place is",
   },
   museum: { label: "Museum", group: "heritage", status: "canonical" },
+
+  // ── Proposed during the content review (CONTENT-REVIEW.md) ──
+  "communal-house": {
+    label: "Communal House",
+    group: "heritage",
+    status: "proposed",
+    description: "Đình làng - village communal house",
+  },
+  valley: { label: "Valley", group: "terrain", status: "proposed" },
+  "rice-fields": {
+    label: "Rice Fields",
+    group: "terrain",
+    status: "proposed",
+    description: "Farmed rice landscape - flat paddies or terraces (terrace split pending review)",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTypeGroup>>
 
 export type LocationType = keyof typeof LOCATION_TYPES

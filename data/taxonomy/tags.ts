@@ -1,3 +1,4 @@
+import { stripLeadingEmoji } from "../../lib/text"
 import { toTaxonomyKey, type TaxonomyMeta } from "./shared"
 
 // ─── Location "tags" ─────────────────────────────────────────
@@ -48,6 +49,36 @@ export const LOCATION_TAGS = {
     status: "proposed",
     filterable: true,
   },
+
+  // ── Proposed during the content review (CONTENT-REVIEW.md) ──
+  "medieval-vietnam": {
+    label: "Medieval Vietnam",
+    group: "historical-period",
+    status: "proposed",
+    filterable: true,
+    description: "Working scope: independent dynasties 10th-15th c. (Ngô, Đinh, Tiền Lê, Lý, Trần, Hồ). Not the Nguyễn era",
+  },
+  "east-sea-sovereignty": {
+    label: "East Sea Sovereignty",
+    group: "historical-period",
+    status: "proposed",
+    filterable: true,
+    description: "Hoàng Sa / Trường Sa maritime history, e.g. the Hải Đội Hoàng Sa",
+  },
+  "folk-religion": {
+    label: "Vietnamese Folk Religion",
+    group: "religion",
+    status: "proposed",
+    filterable: true,
+    description: "Mother Goddess, Tứ Pháp and local deity worship",
+  },
+  "ethnic-minority-culture": {
+    label: "Ethnic Minority Culture",
+    group: "cultural-influence",
+    status: "proposed",
+    filterable: true,
+    description: "Living highland ethnic communities (Tày, Nùng, Hà Nhì, H'Mông...) - per-group tags pending review",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTagGroup>>
 
 export type LocationTag = keyof typeof LOCATION_TAGS
@@ -70,6 +101,12 @@ export const LEGACY_TAG_ALIASES: Readonly<Record<string, LocationTag>> = {
   "cham-heritage": "cham-culture",
   "buddhist-pilgrimage": "buddhism",
   "buddhist-caves": "buddhism",
+}
+
+// Display text for a tag: canonical tags show their label, legacy
+// emoji labels keep rendering exactly as before (emoji stripped).
+export function tagDisplayLabel(tag: string): string {
+  return isLocationTag(tag) ? LOCATION_TAGS[tag].label : stripLeadingEmoji(tag)
 }
 
 export function normalizeLegacyTag(label: string): LocationTag | null {

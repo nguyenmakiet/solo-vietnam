@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import { Location, LocationType, locationTheme } from "@/data/location"
-import { stripLeadingEmoji } from "@/lib/text"
+import { tagDisplayLabel } from "@/data/taxonomy/tags"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
@@ -643,7 +643,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   )}
                   {loc.tags?.[0] ? (
                     <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
-                      {stripLeadingEmoji(loc.tags[0])}
+                      {tagDisplayLabel(loc.tags[0])}
                     </p>
                   ) : (
                     <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">

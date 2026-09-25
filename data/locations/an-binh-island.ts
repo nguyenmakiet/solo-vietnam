@@ -11,8 +11,8 @@ export const anBinhIsland: Location = {
   lng: 109.08039442282168,
   address: "An Bình, Lý Sơn, Quảng Ngãi",
   type: ["island"],
-  categories: [],
-  experiences: ["beach", "snorkeling", "photography", "boat-tour"],
+  categories: ["nature"],
+  experiences: ["beach", "snorkeling", "photography", "boat-tour", "swimming", "kayaking", "camping"],
   tags: [
     "🏝️ Outer Island",
     "🤿 Best Snorkeling on Lý Sơn",

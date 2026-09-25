@@ -31,6 +31,14 @@ export const LOCATION_CATEGORIES = {
     status: "under-review",
     description: "Editorial badge, not a travel theme",
   },
+
+  // ── Broad travel themes - proposed during the content review ──
+  nature: { label: "Nature", group: "theme", status: "proposed" },
+  culture: { label: "Culture", group: "theme", status: "proposed" },
+  history: { label: "History", group: "theme", status: "proposed" },
+  architecture: { label: "Architecture", group: "theme", status: "proposed" },
+  religion: { label: "Religion", group: "theme", status: "proposed" },
+  food: { label: "Food", group: "theme", status: "proposed" },
 } as const satisfies Record<string, TaxonomyMeta<LocationCategoryGroup>>
 
 export type LocationCategory = keyof typeof LOCATION_CATEGORIES

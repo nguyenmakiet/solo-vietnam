@@ -37,7 +37,12 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         citadel: "purple",
         history: "amber",
         landmark: "purple",
-        museum: "amber"
+        museum: "amber",
+
+        // proposed during the taxonomy content review
+        "communal-house": "purple",
+        valley: "green",
+        "rice-fields": "green",
       }
 
 export type ContentBlock =
