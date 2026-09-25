@@ -11,7 +11,7 @@ export const yTy: Location = {
   lng: 103.61233893234572,
   address: "Xã Y Tý, Huyện Bát Xát, Lào Cai",
   type: ["mountain", "nature", "cultural"],
-  categories: ["hidden-gem"],
+  categories: ["hidden-gem", "nature", "culture"],
   experiences: ["trekking", "photography", "homestay", "wildlife"],
   tags: ["☁️ Sea of Clouds", "🏔️ 2,860m Peak", "🌾 Rice Terraces", "🏡 Hà Nhì Villages", "❄️ Snow in Winter"],
   bestTime: "Late Jul - Sep (golden rice terraces). Oct - Feb (cloud hunting season, possible snow in winter). May - Jun (water pouring season - flooded terraces reflecting sky)",

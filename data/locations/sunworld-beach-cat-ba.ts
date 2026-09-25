@@ -12,7 +12,7 @@ export const sunworldBeachCatBa: Location = {
   address: "Thị trấn Cát Bà, Cát Hải, Hải Phòng",
   type: ["beach", "attraction", "landmark"],
   categories: [],
-  experiences: ["beach", "nightlife", "photography", "kayaking"],
+  experiences: ["beach", "nightlife", "photography", "kayaking", "swimming"],
   tags: ["🏖️ Artificial Beach", "🌴 Beach Club", "🎆 Fireworks Shows", "🌊 Cat Ba Town"],
   bestTime: "Late afternoon into evening (staying until around 10 PM) is when the beach club, dining, and any scheduled shows come alive; daytime is quieter and better for swimming before the heat peaks",
   bestMonths: [4, 5, 6, 7, 8, 9],

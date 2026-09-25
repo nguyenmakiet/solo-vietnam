@@ -145,6 +145,12 @@ export const LOCATION_TAGS = {
     filterable: true,
     description: "Cham Hindu sanctuaries and temples (Shiva, Po Nagar)",
   },
+  "giay-culture": {
+    label: "Giáy Culture",
+    group: "cultural-influence",
+    status: "proposed",
+    filterable: true,
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTagGroup>>
 
 export type LocationTag = keyof typeof LOCATION_TAGS

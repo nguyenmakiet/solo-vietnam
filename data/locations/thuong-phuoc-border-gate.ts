@@ -13,7 +13,7 @@ export const thuongPhuocBorderGate: Location = {
   type: ["landmark", "history", "river"],
   categories: [],
   experiences: ["history", "culture", "photography", "boat-tour", "cycling"],
-  tags: ["🛂 Vietnam-Cambodia Border", "🌊 Mekong River Crossing", "📸 Photography", "🚤 River Border"],
+  tags: ["🛂 Vietnam-Cambodia Border", "🌊 Mekong River Crossing", "🚤 River Border"],
   bestTime: "Nov – Apr (dry season; Mekong water levels lower and river crossings more predictable)",
   bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free (border crossing fees apply for those transiting to Cambodia)",
