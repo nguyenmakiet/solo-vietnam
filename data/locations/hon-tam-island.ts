@@ -13,7 +13,7 @@ export const honTamIsland: Location = {
   type: ["island", "beach"],
   categories: [],
   experiences: ["beach", "swimming", "snorkeling", "boat-tour", "kayaking"],
-  tags: ["🏝️ Private Island Resort", "🏖️ White Sand Beach", "♨️ Mineral Mud Baths", "🚢 Boat Tour"],
+  tags: ["🏝️ Private Island Resort", "🏖️ White Sand Beach", "♨️ Mineral Mud Baths"],
   bestTime: "Feb - Sep (dry season, calm water, best visibility); avoid Tết and major holidays if you want a quieter, less surge-priced visit",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],
   entranceFee: "From 2026, tickets are sold as whole-island packages rather than separate zone tickets: basic beach entry from around 350,000 VND/adult; mud bath only roughly 350,000-490,000 VND; full combo packages (round-trip boat, buffet lunch, and either mud bath or beach amenities) roughly 700,000-1,040,000 VND/adult depending on what's included. Prices surge during Tết and major holidays (up to ~990,000 VND for the top package). Child pricing is based on height (roughly 1-1.39m)",

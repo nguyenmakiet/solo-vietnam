@@ -105,6 +105,9 @@ export const LOCATION_TYPES = {
     status: "proposed",
     description: "Historic town quarter (phố cổ)",
   },
+  palace: { label: "Palace", group: "heritage", status: "proposed", description: "Dinh / palace or grand residence" },
+  pass: { label: "Mountain Pass", group: "terrain", status: "proposed" },
+  lighthouse: { label: "Lighthouse", group: "heritage", status: "proposed" },
 } as const satisfies Record<string, TaxonomyMeta<LocationTypeGroup>>
 
 export type LocationType = keyof typeof LOCATION_TYPES

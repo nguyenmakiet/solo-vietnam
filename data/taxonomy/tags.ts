@@ -119,6 +119,25 @@ export const LOCATION_TAGS = {
     status: "proposed",
     filterable: true,
   },
+  taoism: {
+    label: "Taoism",
+    group: "religion",
+    status: "proposed",
+    filterable: true,
+  },
+  "nguyen-dynasty": {
+    label: "Nguyễn Dynasty",
+    group: "historical-period",
+    status: "proposed",
+    filterable: true,
+    description: "1802-1945 - only where the dynasty is the focus (imperial Huế, royal tombs), not background",
+  },
+  "lolo-culture": {
+    label: "Lô Lô Culture",
+    group: "cultural-influence",
+    status: "proposed",
+    filterable: true,
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTagGroup>>
 
 export type LocationTag = keyof typeof LOCATION_TAGS

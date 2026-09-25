@@ -76,6 +76,12 @@ export const LOCATION_EXPERIENCES = {
   kitesurfing: { label: "Kitesurfing", group: "water", status: "proposed" },
   "museum-visit": { label: "Museum Visit", group: "culture", status: "proposed" },
   diving: { label: "Diving", group: "water", status: "proposed", description: "Scuba diving" },
+  hiking: {
+    label: "Hiking",
+    group: "outdoor",
+    status: "proposed",
+    description: "Day hike / trail walk. During the review only added where no trekking exists (CONTENT-REVIEW D10)",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationExperienceGroup>>
 
 export type LocationExperience = keyof typeof LOCATION_EXPERIENCES
