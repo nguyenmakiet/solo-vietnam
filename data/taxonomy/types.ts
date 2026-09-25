@@ -86,6 +86,14 @@ export const LOCATION_TYPES = {
     status: "proposed",
     description: "Farmed rice landscape - flat paddies or terraces (terrace split pending review)",
   },
+  "national-park": {
+    label: "National Park",
+    group: "terrain",
+    status: "proposed",
+    description: "Only when the location is the park itself, not a site inside it",
+  },
+  bridge: { label: "Bridge", group: "urban", status: "proposed" },
+  building: { label: "Building", group: "urban", status: "proposed" },
 } as const satisfies Record<string, TaxonomyMeta<LocationTypeGroup>>
 
 export type LocationType = keyof typeof LOCATION_TYPES

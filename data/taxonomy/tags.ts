@@ -77,7 +77,20 @@ export const LOCATION_TAGS = {
     group: "cultural-influence",
     status: "proposed",
     filterable: true,
-    description: "Living highland ethnic communities (Tày, Nùng, Hà Nhì, H'Mông...) - per-group tags pending review",
+    description: "Living highland ethnic communities (Tày, Nùng, Hà Nhì, H'Mông...) - PROVISIONAL, granularity undecided",
+  },
+  "khmer-architecture": {
+    label: "Khmer Architecture",
+    group: "architecture-style",
+    status: "proposed",
+    filterable: true,
+  },
+  "cao-dai": {
+    label: "Cao Đài",
+    group: "religion",
+    status: "proposed",
+    filterable: true,
+    description: "Caodaism - Vietnamese indigenous religion founded 1926",
   },
 } as const satisfies Record<string, TaxonomyMeta<LocationTagGroup>>
 
@@ -95,6 +108,7 @@ export function isLocationTag(value: string): value is LocationTag {
 export const LEGACY_TAG_ALIASES: Readonly<Record<string, LocationTag>> = {
   "vietnam-war-history": "vietnam-war",
   "vietnam-war-memorial": "vietnam-war",
+  "east-sea-sovereignty-history": "east-sea-sovereignty",
   "french-colonial": "french-influence",
   "french-heritage": "french-influence",
   "french-vietnamese-architecture": "french-influence",

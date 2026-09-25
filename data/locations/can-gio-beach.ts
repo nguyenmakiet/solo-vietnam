@@ -11,7 +11,7 @@ export const canGioBeach: Location = {
   lng: 106.92716186741883,
   address: "Cần Thạnh, Cần Giờ, TP. Hồ Chí Minh",
   type: ["beach", "nature"],
-  categories: [],
+  categories: ["food"],
   experiences: ["beach", "swimming", "food", "cycling", "photography"],
   tags: ["🏖️ Saigon's Own Beach", "🦀 Seafood", "🌊 Day Trip from HCMC", "🌿 Mangrove Coast"],
   bestTime: "Nov - Apr (dry season; calmer water and better beach conditions), though locals swim right through the warmer months too - just be aware August specifically sees a higher chance of storms making landfall in this area",

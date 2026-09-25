@@ -43,6 +43,9 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         "communal-house": "purple",
         valley: "green",
         "rice-fields": "green",
+        "national-park": "green",
+        bridge: "amber",
+        building: "purple",
       }
 
 export type ContentBlock =
