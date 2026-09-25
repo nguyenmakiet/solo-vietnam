@@ -82,6 +82,12 @@ export const LOCATION_EXPERIENCES = {
     status: "proposed",
     description: "Day hike / trail walk. During the review only added where no trekking exists (CONTENT-REVIEW D10)",
   },
+  "religious-site-visit": {
+    label: "Religious Site Visit",
+    group: "culture",
+    status: "proposed",
+    description: "Neutral candidate for visiting any active place of worship. Coexists with temple-visit until consolidation (CONTENT-REVIEW R24, D12)",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationExperienceGroup>>
 
 export type LocationExperience = keyof typeof LOCATION_EXPERIENCES

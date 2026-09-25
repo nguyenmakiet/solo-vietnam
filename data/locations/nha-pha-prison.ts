@@ -11,7 +11,7 @@ export const nhaPhaPrison: Location = {
   lng: 109.14170348441878,
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
   type: ["history", "landmark"],
-  categories: [],
+  categories: ["history"],
   experiences: ["history", "culture", "photography"],
   tags: [
     "🏚️ French Colonial Complex",

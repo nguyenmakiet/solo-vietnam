@@ -12,7 +12,7 @@ export const laVangSanctuary: Location = {
   address: "Thị trấn Hải Phú, Huyện Hải Lăng, Quảng Trị",
   type: ["church", "temple", "cultural"],
   categories: ["religion", "history"],
-  experiences: ["culture", "history", "photography", "walking-tour"],
+  experiences: ["culture", "history", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛪ National Marian Shrine", "🕊️ 1798 Apparition Site", "🏛️ Minor Basilica", "🌿 Vietnam's Lourdes", "catholicism", "vietnam-war"],
   bestTime: "Open year-round. August 13-15 offers the most atmospheric experience during the annual pilgrimage, while the cooler months from December to April are more comfortable for sightseeing",
   bestMonths: [8],

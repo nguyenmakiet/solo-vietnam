@@ -11,7 +11,7 @@ export const quanBaTwinMountains: Location = {
   lng: 105.00120271105881,
   address: "Nà Khoang, Tam Sơn, Quản Bạ, Hà Giang",
   type: ["mountain", "nature"],
-  categories: [],
+  categories: ["nature"],
   experiences: ["photography", "trekking", "motorcycling", "culture"],
   tags: ["🏔️ Núi Đôi", "📸 Ha Giang Icon", "🌾 Rice Terraces", "🏍️ Loop Landmark"],
   bestTime: "6-9 AM gives the best odds of the cloud sea and sunrise light; if fog is heavy that morning, waiting until it burns off (later morning, closer to midday) can actually give clearer general views of the valley instead",

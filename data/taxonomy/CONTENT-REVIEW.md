@@ -23,9 +23,11 @@ good evidence for that consolidation, not to reach a clean vocabulary after ever
 | - | - | **Checkpoint 2** (100 reviewed) | - | [see below](#checkpoint-2---100-locations-reviewed) |
 | 6 | 100-149 (50) | `hieu-waterfall` -> `ma-pi-leng-pass` | 48 | done |
 | - | - | **Checkpoint 3** (150 reviewed) | - | [see below](#checkpoint-3---150-locations-reviewed) |
-| 7 | 150-199 (50) | next after checkpoint | - | waiting |
+| 7 | 150-199 (50) | `mang-lang-church` -> `rach-vem-fishing-village` | 48 (+3 church follow-ups) | done |
+| - | - | **Checkpoint 4** (200 reviewed) | - | [see below](#checkpoint-4---200-locations-reviewed) |
+| 8 | 200-256 (57) | final batch, next after checkpoint | - | waiting |
 
-**Reviewed: 150 / 257. Remaining: 107.** Batch size is 50 from batch 6 onward (R23). Review depth is unchanged.
+**Reviewed: 200 / 257. Remaining: 57.** Batch size is 50 from batch 6 onward (R23). Review depth is unchanged.
 
 Note: batch 3 was requested as "from `cat-ba-island`". No location with that slug exists; `allLocations`
 index 40 is `can-ti-bridge`, so batch 3 starts there and covers the Cát Bà locations (`cat-ba-cannon-fort`,
@@ -94,6 +96,27 @@ index 40 is `can-ti-bridge`, so batch 3 starts there and covers the Cát Bà loc
   - **R22 - `coast`, `entertainment`, `theme-park` stay candidates.** Evidence is collected, including whether coastal
     concepts belong to `type`, `categories` or both. Frequency alone does not decide it.
   - **R23 - Batch size 50 from batch 6.** Review depth, validation and reporting are unchanged.
+- **Rules set after Checkpoint 3:**
+  - **R24 - Generic experiences** (`photography`, `culture`, `walking-tour`) are consolidation candidates. They are not removed,
+    and they are **not added** to new locations because they broadly apply. Evidence is collected on whether each one
+    discriminates. Open questions: does `culture` belong in `categories`? Is `walking-tour` a tour format, generic
+    walking/sightseeing, or an umbrella for hiking?
+  - **R25 - `religious-site-visit` is registered as `proposed`.** `temple-visit` is not migrated. Evidence is collected across all
+    worship-site kinds (see D12).
+  - **R26 - Historical period/context, historical event, cultural influence and architectural influence stay distinct.**
+    `nguyen-dynasty`, `french-colonial-era`, `vietnam-war`, `french-influence` and `french-architecture` are not synonyms.
+  - **R27 - Architectural influence is recorded separately** only when the evidence clearly supports it. A mention of
+    foreign architecture does not create a generic influence tag.
+  - **R28 - `coast` stays a candidate category.** Check whether type (beach/bay/island...) + category `coast` adds discovery
+    value that existing fields cannot express.
+  - **R29 - Recognition/designation is a taxonomy candidate** (likely `tags` or another structured concept), not generic travel
+    metadata. It supersedes the R18 wording for designations. Still no new Location field.
+  - **R30 - `tags` carries multiple legacy jobs** (discovery taxonomy, historical/cultural concepts, legacy presentation labels,
+    the UI subtitle). No fifth field. The distinction is documented for the post-review compatibility design. Legacy presentation
+    values (incl. `tags[0]`) stay unless D9 applies.
+  - **R31 - Field semantics restated.** `type` = what the place fundamentally is. `categories` = broad travel themes. `experiences` =
+    traveler-facing things to do/experience. `tags` = specific discovery concepts (period, event, influence, recognition...).
+    A concept is not forced into a field because another field has a similar word.
 - **R7 - The philosophy stays the same.** Review the whole object and preserve valid legacy values. New concepts are
   `proposed`, ambiguous cases are MANUAL REVIEW, nothing is forced into an imperfect value, and leaving a location
   unchanged is fine.
@@ -142,6 +165,12 @@ In batches 4-5 no location met the condition, so `hiking` is still unregistered.
 concepts (eco-lodge, farm-stay, overnight cruise, cave camping...) are **not** created. Recurrences are recorded in
 [Accommodation / stay evidence](#accommodation--stay-evidence) and the boundary is decided at consolidation.
 
+**D12 - `religious-site-visit` vs `temple-visit` during the review (batch 7).** East/Southeast-Asian worship sites
+(pagodas, đền, Taoist, Cao Đài, active Cham temples) keep receiving `temple-visit`, the existing proposed value, so there
+is no silent migration. `religious-site-visit` is applied where `temple-visit` does not describe the site: Christian churches,
+including a follow-up on the three churches from batch 6 (hanoi-st-josephs, kon-tum, la-vang). Ruins that are no longer an
+active place of worship (Mỹ Sơn) get neither. Communal houses (đình) and small shrines inside another site stay evidence only.
+
 **D9 - 1:1 legacy labels are replaced in place (new in batch 2, strict per R8).**
 Only when a legacy label is effectively 1:1 with the canonical tag being added is it replaced at the same
 position, instead of adding a near-duplicate chip. Otherwise both are kept. Examples: `🕌 Cham Culture` -> `cham-culture`
@@ -155,16 +184,16 @@ is not 1:1 with the Vietnam War), `🏛️ French Colonial Prison` (period/place
 
 ---
 
-## Vocabulary state (after batch 6)
+## Vocabulary state (after batch 7)
 
 `status: "proposed"` = introduced by this review, pending the freeze.
 
 | Field | Proposed values (batch introduced) |
 |-------|-------------------------------------|
-| `type` | `communal-house`, `valley`, `rice-fields` (1) · `national-park`, `bridge`, `building` (2) · `village`, `fortress`, `prison`, `station` (3) · `church`, `old-quarter` (5) · `palace`, `pass`, `lighthouse` (6) |
+| `type` | `communal-house`, `valley`, `rice-fields` (1) · `national-park`, `bridge`, `building` (2) · `village`, `fortress`, `prison`, `station` (3) · `church`, `old-quarter` (5) · `palace`, `pass`, `lighthouse` (6) · `cape` (7) |
 | `categories` | `nature`, `culture`, `history`, `architecture`, `religion`, `food` (1) - no new categories (R2) |
-| `experiences` | `swimming`, `surfing`, `temple-visit` (1) · `fishing`, `kitesurfing`, `museum-visit` (2) · `diving` (3) · `hiking` (6, first D10 application) |
-| `tags` | `medieval-vietnam`, `east-sea-sovereignty`, `folk-religion`, `ethnic-minority-culture` (1, the last is PROVISIONAL per R3) · `khmer-architecture`, `cao-dai` (2) · `hmong-culture`, `tay-culture`, `thai-culture` (4) · `catholicism` (5) · `taoism`, `nguyen-dynasty`, `lolo-culture` (6) |
+| `experiences` | `swimming`, `surfing`, `temple-visit` (1) · `fishing`, `kitesurfing`, `museum-visit` (2) · `diving` (3) · `hiking` (6, first D10 application) · `religious-site-visit` (7, R25) |
+| `tags` | `medieval-vietnam`, `east-sea-sovereignty`, `folk-religion`, `ethnic-minority-culture` (1, the last is PROVISIONAL per R3) · `khmer-architecture`, `cao-dai` (2) · `hmong-culture`, `tay-culture`, `thai-culture` (4) · `catholicism` (5) · `taoism`, `nguyen-dynasty`, `lolo-culture` (6) · `hinduism` (7) |
 
 Phase 1 seed tags: `vietnam-war`, `french-influence`, `khmer-culture`, `cham-culture`, `buddhism`.
 Working scope of `medieval-vietnam`: independent dynasties of the 10th-15th centuries (Ngô, Đinh, Tiền Lê, Lý, Trần, Hồ),
@@ -410,6 +439,67 @@ Reviewed, no change: `ha-giang-city` (stub).
 
 ---
 
+## Batch 7 - index 150-199 (50 locations)
+
+| # | Location | type | categories | experiences | tags |
+|---|----------|------|------------|-------------|------|
+| 150 | `mang-lang-church` | + church (primary) | + religion, history, architecture | + religious-site-visit | + catholicism (Gothic = architectural influence; the 1651 quốc ngữ book = cultural-influence evidence) |
+| 151 | `masara-hill` | kept (hill/grassland: NC-16) | + nature | kept | - 🏕️ Camping, - 📸 Photography |
+| 152 | `marble-mountains` | + mountain (primary) | + religion, nature, history | + temple-visit (Linh Ứng, cave shrines), caving | + buddhism (`🕌 Buddhist Caves` kept - not 1:1; Cham layer: evidence) |
+| 153 | `mau-due-town` | kept | none | none | none - **stub** (Ha Giang Loop waypoint) |
+| 154 | `mau-son-mountain` | kept | + nature | kept | kept (French hill-station ruins = colonial-era evidence) |
+| 155 | `meo-vac-town` | kept | none | none | none - **stub** (Ha Giang Loop waypoint) |
+| 156 | `minh-dam-mountain` | kept | + nature, history | + caving (resistance caves) | kept (resistance wars: NC-27/33) |
+| 157 | `minh-mang-tomb` | kept | + history, architecture | kept | 🏛️ Nguyễn Dynasty → nguyen-dynasty (D9, 1:1); - 📸 Photography |
+| 158 | `moc-chau-tea-hills` | kept - MANUAL (plantation: NC-32) | + nature | kept | - 📸 Photography |
+| 159 | `mooc-spring` | kept (spring: NC-16) | + nature | kept | - 🏊 Swimming, - 📸 Photography |
+| 160 | `mui-ca-mau-national-park` | + national-park (primary) | + nature | kept | - 🚤 Boat Tour |
+| 161 | `mui-dien` | + cape (primary) | hidden-gem; + nature | kept | - 📸 Photography (French lighthouse: colonial-era evidence) |
+| 162 | `mui-ne-fishing-village` | + village (primary) | + culture | + markets (morning fish market) | - 📸 Photography |
+| 163 | `mui-tro-fishing-village` | + village (primary) | + culture, nature | kept | - 🏕️ Camping, - 📸 Photography |
+| 164 | `muong-hoa-valley` | + valley (primary) | + nature, culture | kept | - 🥾 Trekking, - 📸 Photography, - 🏡 Homestay (H'Mông, Dao, Giáy, Tày: multi-group, evidence) |
+| 165 | `my-khe-beach` | kept | none - developed urban beach (coast: R28) | kept | - 🌊 Swimming, - 🏄 Surfing (`🏖️ Forbes Top 6 Beach` = media ranking, kept) |
+| 166 | `my-son-sanctuary` | `temple` moved to primary (`citadel` kept - MANUAL) | + history, architecture, culture | + museum-visit (entrance museum) | - 📸 Photography; + cham-culture, hinduism |
+| 167 | `nam-du-islands` | kept | + nature | kept | - 🤿 Snorkeling |
+| 168 | `ngoc-son-temple` | kept | + religion, history, culture | + temple-visit | + folk-religion (Trần Hưng Đạo, Mother Goddesses), taoism (Văn Xương) |
+| 169 | `nguom-ngao-cave` | `cave` moved to primary | + nature | kept | - 📸 Photography |
+| 170 | `nha-pha-historical-site` | kept - MANUAL (colonial compound + lighthouse) | + history | kept | kept (1945 uprising = event; French/US detention: evidence) |
+| 171 | `nhan-tower` | kept (`temple`; tower: NC-16) | + religion, history, architecture | + temple-visit (active Thiên Y A Na altar) | + cham-culture |
+| 172 | `bai-nhat` | kept | + nature | kept | kept |
+| 173 | `nho-que-river` | kept | + nature | kept (legacy `hiking` - the first pre-existing one) | - 🛶 Boat Tour, - 📸 Photography |
+| 174 | `notre-dame-cathedral-saigon` | + church (primary) | + religion, architecture, history | + religious-site-visit (mass open to observers) | + catholicism (French materials = architectural-influence evidence) |
+| 175 | `one-pillar-pagoda` | kept | + religion, architecture, history | + temple-visit | + buddhism, medieval-vietnam (1049, Lý) |
+| 176 | `o-quy-ho-pass` | + pass (primary) | + nature | kept | kept |
+| 177 | `ong-cop-bridge` | + bridge (primary) | + culture (community-built vernacular bridge) | kept | kept |
+| 178 | `pa-sy-waterfall` | kept | + nature | kept | - 📸 Photography (Rơ Măm craft/legend: evidence) |
+| 179 | `pac-bo-historic-site` | kept - MANUAL (historic site) | + history, nature | + museum-visit | - 📸 Photography (revolutionary history: NC-27) |
+| 180 | `paradise-cave` | `cave` moved to primary | + nature | kept | - 📸 Photography |
+| 181 | `phat-diem-cathedral` | + church (primary) | + religion, architecture, history | + religious-site-visit | + catholicism (Vietnamese-vernacular Catholic architecture: the *reverse* of french-architecture) |
+| 182 | `phi-lieng-waterfall` | kept | + nature | kept | - 📸 Photography |
+| 183 | `phoenix-unicorn-islands-my-tho` | `island` moved to primary | + culture, food | + fishing ("tát mương bắt cá" by hand) | kept (Đạo Dừa temple: religious-site evidence) |
+| 184 | `phong-nam-valley` | "nature" → + valley (primary) | hidden-gem; + nature | kept | kept |
+| 185 | `phong-nha-botanic-garden` | kept (garden vs forest: MANUAL) | + nature | + swimming (designated pools) | - 📸 Photography |
+| 186 | `phong-nha-cave` | `cave` moved to primary | + nature | kept | - 📸 Photography (Cham sanctuary inscriptions: evidence) |
+| 187 | `phung-hung-mural-street` | kept (street: NC-10) | + culture | kept | - 📷 Photography |
+| 188 | `phuoc-binh-beach` | kept | + nature (undeveloped fishing coast) | kept | - 📸 Photography |
+| 189 | `phuoc-hai-fishing-village` | + village (primary) | + food, culture | + swimming, markets | kept |
+| 190 | `phuoc-tinh-fishing-village` | kept - MANUAL (port vs village) | + food, culture | + markets | - 📸 Photography |
+| 191 | `phu-quoc-night-market` | + market (primary) | + food | + shopping (souvenirs, pearls) | - 🛍️ Shopping (now a dup) |
+| 192 | `phu-quy-island` | kept | + nature | kept | kept |
+| 193 | `plate-rock-reef` | kept (rock formation: NC-16) | + nature | kept (`beach` on a basalt reef: MANUAL) | - 📸 Photography |
+| 194 | `po-nagar-cham-towers` | kept | + religion, history, architecture | + temple-visit (active worship) | - 📸 Photography; + cham-culture, hinduism |
+| 195 | `pongour-waterfall` | kept | + nature | + swimming (base pool) | - 📸 Photography |
+| 196 | `quan-ba-heaven-gate` | + pass (primary) | + nature | kept | kept (1939 French gate: colonial-era evidence) |
+| 197 | `quan-ba-twin-mountains` | kept | + nature | kept | kept |
+| 198 | `quang-tri-ancient-citadel` | `citadel` moved to primary | + history | + museum-visit | + vietnam-war (1972 battle memorial) |
+| 199 | `rach-vem-fishing-village` | + village (primary) | + culture, nature | kept | kept |
+
+**Files modified in batch 7 (48 + 3):** every location from index 150 to 199 except the stubs `mau-due-town` and `meo-vac-town`,
+plus the `religious-site-visit` follow-ups on `hanoi-st-josephs-cathedral`, `kon-tum-wooden-church` and `la-vang-sanctuary`.
+Note: `nha-pha-historical-site` lives in `data/locations/nha-pha-prison.ts` (slug and filename differ).
+
+---
+
 ## Manual review (cumulative)
 
 | Location | Field | Proposed change / question |
@@ -460,6 +550,14 @@ Reviewed, no change: `ha-giang-city` (stub).
 | `hon-thom-cable-car`, `ba-na-cable-car` | type | The place *is* a cable car / resort - no type fits |
 | `lung-cu-flag-tower`, `lung-po-red-river-source`, `ly-son-garlic-fields` | type | Monument, border confluence, farmland - only broad types |
 | `hon-yen-island` | tags | `📷 Hidden Gem` is an editorial badge stored as a tag. It belongs with the categories badges (consolidation) |
+| `my-son-sanctuary` | type | `citadel` on a temple sanctuary (legacy, R1) |
+| `phuoc-tinh-fishing-village` | type | Fishing *port/town* ("not a village") - `village` vs a port type |
+| `nha-pha-historical-site`, `pac-bo-historic-site` | type | Historic compound / revolutionary site - no fitting type (NC-17) |
+| `moc-chau-tea-hills`, `ly-son-garlic-fields` | type | Plantations / farmland (NC-32) |
+| `phong-nha-botanic-garden` | type | Named a garden, but it is a forest reserve with trails - `garden` vs `forest` |
+| `plate-rock-reef`, `hon-chong-rock-formation` | experiences | `beach` on rock formations |
+| `an-hai-communal-house`, `an-vinh-communal-house` | experiences | Village worship + memorial: `religious-site-visit`? Left as evidence (D12) |
+| `mau-due-town`, `meo-vac-town`, `ha-giang-city`, `can-ti-bridge` | all | Ha Giang Loop waypoints with no content - are they locations or route waypoints? |
 | `cat-tien-national-park` | tags | Thánh Địa Cát Tiên Hindu temple ruins - a separate archaeological site, about an hour away. Tag it here? (NC-19) |
 
 ## New candidates (cumulative, recorded - not applied)
@@ -483,17 +581,22 @@ Reviewed, no change: `ha-giang-city` (stub).
 | NC-17 | type | `war-relic` / `historic-site` | b52-wreck (1) · cu-chi-tunnels (3) | Places that are neither buildings nor landscapes |
 | NC-18 | experiences | `train-ride` | dalat-railway-station (3) | A distinct traveler activity (the Trại Mát tourist train) |
 | NC-19 | tags | `hindu-heritage` / `oc-eo` | cat-tien (Thánh Địa Cát Tiên) (3) | Pairs with `cham-culture` for Hindu sites in the south? |
-| NC-20 | tags | `french-colonial-period` (history), separate from `french-influence` (culture/architecture) | con-dao-prison, dalat-railway-station, cat-ba-cannon-fort, ben-thanh-market, cat-cat-village (hydro ruins) (2-3) · hoa-lo-prison, ke-ga-lighthouse, long-bien-bridge, kon-tum-wooden-church, khai-dinh-tomb (6) | The colonial *period* is a frequent historical context. The *influence* has 0 confident uses so far |
+| NC-20 | tags | `french-colonial-era` (period, R26; earlier noted as `french-colonial-period`), separate from `french-influence` (culture) and `french-architecture` (NC-34) | con-dao-prison, dalat-railway-station, cat-ba-cannon-fort, ben-thanh-market, cat-cat-village (hydro ruins) (2-3) · hoa-lo-prison, ke-ga-lighthouse, long-bien-bridge, kon-tum-wooden-church, khai-dinh-tomb (6) · mau-son (hill station), mui-dien (lighthouse), nha-pha (1890 compound), quan-ba-heaven-gate (1939 gate), moc-chau (tea origin), notre-dame (7) | The colonial *period* is a frequent historical context. The *influence* has 0 confident uses so far |
 | NC-22 | type | `old-quarter` / `ancient-town` | dong-van-old-town (4) · **applied** to hanoi-old-quarter (5) | Proposed. Đồng Văn stays `town` (either reading is reasonable) |
 | NC-23 | type / experiences | `farm` / agritourism | duck-stop (4) | A working farm visit. No type, theme or experience fits |
 | NC-24 | experiences | adventure-park activities: `zipline`, `alpine-coaster`, `canyoning`/`abseiling`, `via-ferrata`, `rafting` | dark-cave, datanla, do-quyen (4) | Recurring at commercial adventure sites. One `adventure-activities` value or several? |
 | NC-25 | experiences | `windsurfing`, `sandboarding`, `stand-up-paddle` | doi-nhai (windsurf), doc-let (sandboard), dau-tieng, da-ploa (SUP) (3-4) | Niche water/beach sports. Relates to NC-7 |
 | NC-26 | categories | `entertainment` / theme parks | ba-na-cable-car (1) · datanla (4) · french-village-ba-na, golden-bridge (inside Bà Nà), duck-stop (5) · hon-thom-cable-car (Sun World), hon-tam-island (resort) (6) | The only recurring *broad theme* among the no-theme locations besides coast (R14, R22) |
-| NC-27 | tags | revolutionary history / `ho-chi-minh` | ho-chi-minh-childhood-home, ho-chi-minh-mausoleum-complex (6); hoa-lo (French-era political prisoners) | A period/topic between colonial resistance and the Vietnam War |
+| NC-27 | tags | revolutionary history / `ho-chi-minh` (+ batch 7: pac-bo, nha-pha 1945 uprising, minh-dam resistance base - now 6) | ho-chi-minh-childhood-home, ho-chi-minh-mausoleum-complex (6); hoa-lo (French-era political prisoners) | A period/topic between colonial resistance and the Vietnam War |
 | NC-28 | tags | `japanese-influence`, `chinese-influence` (Hoa) | hoi-an-ancient-town, japanese-bridge, jade-emperor-pagoda (Cantonese founder), hmong-king-palace (Chinese layout) (6); dong-van-old-town (4) | Same family as `french-influence`/`soviet-influence`: needs the cultural-vs-architectural decision first |
 | NC-29 | experiences | `spa` / mud bath | hon-tam-island (6), dark-cave (4) | Wellness experience - recurring at 2 places |
-| NC-30 | experiences | `traditional-performance` | imperial-city-hue (Nhã nhạc), lo-lo-chai (folk performances), khe-van (soong co singing) (6); don-village (xòe), dong-van-old-town (cultural nights), cai-rang (đờn ca tài tử), bay-mau (4, 2, 2) | Recurs in 7+ locations - a real traveler activity |
+| NC-30 | experiences | `traditional-performance` (+ batch 7: my-son Cham dance, nhan-tower Saturday music, phoenix-unicorn đờn ca tài tử) | imperial-city-hue (Nhã nhạc), lo-lo-chai (folk performances), khe-van (soong co singing) (6); don-village (xòe), dong-van-old-town (cultural nights), cai-rang (đờn ca tài tử), bay-mau (4, 2, 2) | Recurs in 7+ locations - a real traveler activity |
 | NC-31 | tags | `mac-dynasty` / a dynastic period scheme | mac-dynasty-citadel (6) | Period tags now: medieval, Mạc, Nguyễn, colonial, WWII, revolutionary, Vietnam War. A coherent period scheme is needed |
+| NC-32 | type | `plantation` / `farmland` | moc-chau-tea-hills (7), ly-son-garlic-fields (6); rice-fields exists | Agricultural landscapes beyond rice |
+| NC-33 | tags | historical *events* (vs periods) | Battle of Vân Đồn 1288, Mongol invasions (ngoc-son), 1945 August Revolution (nha-pha), 1954 partition (ben-hai), 1963 Buddhist crisis (long-son), 1968 Tết Offensive (hue), 1972 battles (quang-tri, la-vang, b52), 1975 fall of Saigon (independence-palace), 1979 border war (lung-cu, lung-po) | Events are very granular. They already live in legacy labels (`🕊️ 1972 Battle`, `🏛️ Fall of Saigon`, `🇻🇳 Christmas Bombing 1972`). Periods carry discovery better (R26) |
+| NC-34 | tags | `french-architecture` (architectural influence, R27) | hanoi-st-josephs, kon-tum, notre-dame, mang-lang, dalat-station, khai-dinh, hmong-king-palace, long-bien (engineering) (≥ 8 strong) | Clearly distinct from `french-influence` (cultural) and `french-colonial-era` (period) |
+| NC-35 | tags | `sino-vietnamese-border-war` (1979) | lung-cu-flag-tower, lung-po (6) | A period/event outside `vietnam-war` |
+| NC-36 | tags | `prehistory` / archaeology | muong-hoa-valley (Ancient Rock Field), imperial-citadel-of-thang-long (excavations) | Rare so far |
 | NC-21 | tags | `wwii` / `japanese-occupation` | cat-ba-cannon-fort, con-dao-prison (3) | Rare. Probably belongs under a period scheme with NC-6 and NC-20 |
 
 ## Recognition / status candidates
@@ -514,6 +617,8 @@ Tracked separately (R4). Not in `tags`. Destination concept undecided: tags, met
 | Batch 6 - UNESCO World Heritage | ho-dynasty-citadel, hoa-lu-ancient-capital (Tràng An), hoi-an-ancient-town, japanese-bridge (Hội An), imperial-citadel-of-thang-long, imperial-city-hue |
 | Batch 6 - UNESCO Intangible Heritage | hung-temple (Worship of Hùng Kings, 2012) |
 | Batch 6 - Special national relic / national heritage | ho-chi-minh-childhood-home (special, 2012), keo-pagoda (special; legacy `🏛️ National Relic`), mac-dynasty-citadel (1962), jade-emperor-pagoda (1994) |
+| Batch 7 - official | my-son-sanctuary, phong-nha-cave (UNESCO World Heritage), mui-ca-mau-national-park (UNESCO Biosphere), nho-que-river (UNESCO Geopark), nhan-tower (special national relic 2018), plate-rock-reef (special national heritage 2020), minh-dam-mountain (national historical relic 1993), muong-hoa-valley (Ancient Rock Field national monument), phong-nha-botanic-garden (inside the UNESCO site) |
+| Batch 7 - rankings (non-official) | my-khe-beach (Forbes, TripAdvisor), bai-nhat (news.com.au), one-pillar-pagoda (Asia Records), muong-hoa (Vietnam Records) |
 | Batch 6 - other | ma-pi-leng-pass (UNESCO Geopark), hon-mun-island (national marine protected area 2001), lo-lo-chai-village (UN Tourism Best Tourism Village 2025 - international, non-UNESCO), la-vang-sanctuary (Minor Basilica - a religious designation) |
 | Record listings / media rankings | co-thach-beach (Vietnam Records Book 2011), crazy-house, cai-rang (Rough Guides), dam-trau-beach (Travel + Leisure Top 25, legacy label `🏖️ Top 25 Beaches in the World`), duck-stop (TripAdvisor award) - editorial trivia, not recognition |
 | National intangible cultural heritage | an-vinh (Khao Lề Thế Lính ceremony), cai-rang-floating-market (2016) |
@@ -556,6 +661,10 @@ Tracked for the granularity decision (R3). "Central" = a traveler-facing reason 
 | `langbiang-mountain` | K'Ho | secondary - cultural village at the base; legacy `🌿 K'Ho Culture` | none (evidence) |
 | `k50-waterfall`, `lung-cu-flag-tower` | Bahnar; Lô Lô | villages passed en route | none |
 | `ma-pi-leng-pass` | 16 groups built the road | history only | none |
+| `my-son-sanctuary`, `po-nagar-cham-towers`, `nhan-tower` | Cham (historic Champa kingdom) | yes - Champa heritage is the site | **cham-culture** |
+| `muong-hoa-valley` | Black H'Mông, Red Dao, Giáy, Tày | yes, but multi-group | none (evidence) |
+| `mau-son-mountain`, `phong-nam-valley` | Dao; Tày | secondary / scenery | none |
+| `pa-sy-waterfall`, `phi-lieng-waterfall`, `pongour-waterfall` | Rơ Măm/Xơ Đăng; K'Ho; K'Ho (waterfall festival) | secondary | none |
 
 Early signal: the northern-highland locations usually involve **several** groups at once (Bắc Sơn, Bình Liêu), while
 Khmer and Cham locations are single-group and tied to distinct religious/architectural traditions. Cát Cát is
@@ -589,6 +698,11 @@ Central Highlands (K'ho, Ê Đê, M'nông) the groups so far appear only in name
 | `keo-pagoda` | `medieval-vietnam` | Founded 1061, but the standing pagoda is 1630 (Lê Trung Hưng) |
 | `long-bien-bridge` | `french-influence` via `🏯 French Heritage` | R21 - the alias is not semantic truth |
 | `hoi-an-ancient-town`, `japanese-bridge` | `french-influence` | French facades are one layer of several; the Japanese/Chinese layers are the draw (NC-28) |
+| `ngoc-son-temple` | `medieval-vietnam` | A 19th-century temple honouring a 13th-century hero - event connection, not period (R26) |
+| `phat-diem-cathedral` | `french-influence` / `french-architecture` | Built in *Vietnamese* architectural style by a Vietnamese priest - the opposite case |
+| `my-son-sanctuary` | `religious-site-visit` / `temple-visit` | Ruins, not an active place of worship (D12) |
+| `quang-tri-ancient-citadel` | `nguyen-dynasty` | Built 1809/1837, but the site is the 1972 battle memorial |
+| `pongour-waterfall` | `nguyen-dynasty` | Bảo Đại's title for the falls is an anecdote |
 
 ## Hiking/trekking observations
 
@@ -643,6 +757,27 @@ Central Highlands (K'ho, Ê Đê, M'nông) the groups so far appear only in name
 | `ma-pi-leng-pass` | trekking | a road pass | neither |
 | `hon-son-island` | **hiking** (added, D10) | Ma Thiên Lãnh trail, 1.5-2 h to the viewpoint | hiking |
 
+| `masara-hill` | trekking | 15-20 min walk across the slope | neither |
+| `marble-mountains` | trekking | stone stairs between caves ("feels like trekking effort") | neither |
+| `mau-son-mountain` | trekking | walking trails, descent routes through Dao villages | hiking |
+| `minh-dam-mountain` | trekking | 15-45 min beginner routes; deeper trails need experience | hiking |
+| `mooc-spring` | trekking | 500m boardwalk | neither |
+| `mui-dien` | trekking | 30-45 min cape walk + trail down to Bãi Môn | hiking |
+| `muong-hoa-valley` | trekking | 15km village-to-village corridor, 2 days | trekking |
+| `o-quy-ho-pass` | trekking | a road pass | neither |
+| `pa-sy-waterfall` | trekking | 180 steps | neither |
+| `pac-bo-historic-site` | trekking | stone steps and forest paths | hiking |
+| `paradise-cave` | trekking | 1km boardwalk; optional 4km adventure tour, 5-6 h | trekking (adventure tour) |
+| `phi-lieng-waterfall` | trekking | remote trail, 40-45° rope-assisted descent | trekking |
+| `phong-nha-botanic-garden` | trekking | "genuinely a hike", 40 min to 3 h | hiking |
+| `quan-ba-heaven-gate` | trekking | ~100 steps | neither |
+| `quan-ba-twin-mountains` | trekking | 135 steps | neither |
+| `nho-que-river` | **hiking** (legacy, pre-existing) | boat tour through the canyon | neither |
+
+**Tally after 200 locations (59 `trekking`, 2 `hiking` incl. 1 legacy):** about 17 fit "trekking" under R12, about 22 read as
+hiking and about 20 are neither. Only ~29% of `trekking` matches R12. The pre-existing legacy `hiking` (nho-que-river) is itself
+unsupported by its content.
+
 **Tally after 150 locations (44 `trekking`, 1 `hiking`):** about 14 fit "trekking" under R12, about 17 read as hiking and
 about 13 are neither. Only ~32% of `trekking` matches R12. For the first time D10 applied (`hon-son-island`).
 
@@ -691,6 +826,13 @@ The content itself often says "hike"/"hikers" where the data says `trekking` (ba
   Soviet (the mausoleum), Khmer. They all need the same cultural-vs-architectural decision (R17, R21).
 - **P19 - Colonial-era French *architecture* is common, colonial *period* even more so, French *cultural* influence rare.**
   This reinforces R21.
+- **P20 - `cham-culture` spans two different things:** the historic Champa kingdom (Mỹ Sơn, Po Nagar, Tháp Nhạn) and a living
+  Cham Muslim community (Búng Bình Thiên). This is a granularity question inside a single ethnic tag.
+- **P21 - Catholic sites form a clear cluster** (6 churches), and Christian architecture splits three ways: French Gothic
+  (Notre-Dame, St Joseph's, Mằng Lăng), French-Bahnar fusion (Kon Tum) and Vietnamese vernacular (Phát Diệm). This is
+  strong evidence for R27.
+- **P22 - Fishing villages recur** (6 in batch 7 alone). Their *type* is `village`, but their coastal identity is invisible in
+  `type` - the clearest argument for a `coast` theme (R28).
 - **P8 - Experiences are under-recorded rather than wrong.** Almost every change in batch 2 was an **addition**
   that the prose clearly supports (swimming, fishing, caving, cycling). Only 4 values look unsupported (MANUAL REVIEW).
 - **P9 - Many primary types were broad even when the place is obvious** (batch 3: fortress, prison, station, village,
@@ -1161,16 +1303,169 @@ not "nature". That points to `categories` for any coastal concept. Entertainment
 
 ---
 
+## Checkpoint 4 - 200 locations reviewed
+
+Nothing is frozen or consolidated here (R11). "a/b" = uses among the 200 reviewed / uses in all 257.
+
+Vocabulary at 200: type 16 proposed (+`cape`), categories 6, experiences 9 proposed (+`religious-site-visit`),
+tags 19 (+`hinduism`). Batch 7 (50 locations) added 3 values in total, down from 7 in batch 6.
+
+### 1. Generic experiences (R24)
+
+| Value | Reviewed | Discriminative? | Evidence |
+|-------|----------|-----------------|----------|
+| `photography` | 187/200 (94%) | **No** | On pagodas, beaches, markets, caves, museums alike. Never added in this review |
+| `culture` | 96/200 (48%) | **No, as an experience** | On exactly half of those (48) the location has *no* `culture` category: prisons, citadels, tombs, pagodas, churches, war sites, viewpoints. There it stands for "cultural/heritage sightseeing". Wherever a concrete cultural *activity* exists, a specific value already covers it (`homestay`, `temple-visit`, `religious-site-visit`, `museum-visit`, `markets`, NC-30 performance, NC-13 craft). The `culture` category is on 49, and on only 1 does it lack the experience. **Evidence says `culture` belongs in `categories`.** It still backs `/experiences/culture` (R5) |
+| `walking-tour` | 80/200 (40%) | **No** | Spread across 26 primary types: pagodas 10, villages 9, temples 6, bridges 5, churches 5, citadels 5, beaches 4, waterfalls 4... Only about 4 locations' content mentions an actual walking tour (hanoi-st-josephs, notre-dame, kho-muong, doc-let). It overlaps `trekking` on only 5 and `hiking` on 0, and appears on 18 nature places (waterfalls, beaches, caves). **Reading: generic "explore on foot / walking sightseeing"**, not an organised tour format and not an umbrella for hiking. It backs `/experiences/walking-tours` ("Explore ancient towns and hidden alleys on foot"), which matches the old-town subset only |
+| `history` (experience) | 63/200 | Weak | Same pattern as `culture`: the `history` category is on 51 |
+
+### 2. Religious-site experience (R25, D12)
+
+| Site kind | Reviewed locations | Value applied |
+|-----------|--------------------|---------------|
+| Buddhist pagodas (incl. cave/hill pagodas) | 17 | `temple-visit` |
+| Đền (kings, heroes, founders) | 3 (hung, hoa-lu, hoan-kiem via Ngọc Sơn) | `temple-visit` |
+| Taoist / Chinese folk (+ hero worship) | 2 (jade-emperor, ngoc-son-temple) | `temple-visit` |
+| Cao Đài | 1 | `temple-visit` |
+| Active Cham Hindu temples | 2 (po-nagar, nhan-tower) | `temple-visit` |
+| Catholic churches / cathedrals / basilica | 6 (st-josephs, kon-tum, la-vang, mang-lang, notre-dame, phat-diem) | `religious-site-visit` |
+| Cham ruins (not active) | 1 (my-son) | none |
+| Communal houses (đình) | 2 (an-hai, an-vinh) | none - evidence |
+| Whale-worship / sea-deity shrines (Lăng Ông, Đền Cá Ông) | 5 as secondary features (an-hai, hon-son, hon-yen, nam-du, phuoc-hai festival) | none - never the main site |
+| Mosques | 1 as a secondary feature (bung-binh-thien) | none |
+| Syncretic new religion (Đạo Dừa) | 1 (phoenix-unicorn), now defunct | none |
+
+Totals: `temple-visit` 25, `religious-site-visit` 6. Observations:
+- `temple-visit` fits every *active* East/Southeast-Asian worship site, including Hindu Cham towers.
+- Churches are the only kind needing another word.
+- The religion itself is always carried by a tag (`buddhism` 14, `catholicism` 6, `folk-religion` 5, `taoism` 2, `hinduism` 2,
+  `cao-dai` 1).
+
+That favours **one neutral value** (`religious-site-visit`) plus religion tags over per-religion visit values. No migration yet.
+
+### 3. Historical periods vs events (R26)
+
+**Periods / contexts** (discovery-worthy, span many places):
+
+| Concept | Status | Uses / evidence |
+|---------|--------|-----------------|
+| `medieval-vietnam` | proposed | 6 |
+| `nguyen-dynasty` | proposed | 3 (focus only: Huế, royal tombs) |
+| `vietnam-war` | proposed (seed) | 10 |
+| `east-sea-sovereignty` | proposed | 2 (topic, not a period) |
+| `french-colonial-era` | candidate (NC-20) | ≥ 16 evidence - the most frequent unapplied concept |
+| revolutionary / Hồ Chí Minh | candidate (NC-27) | 6 |
+| Champa era | covered by `cham-culture` today | 4-5 |
+| Mạc dynasty, WWII/Japanese, 1979 border war, prehistory | candidates (NC-31, 21, 35, 36) | 1-2 each |
+
+**Events** (NC-33): about 10 distinct events in 200 locations, mostly 1 location each. They are already expressed in legacy display labels.
+Evidence says events should **not** become canonical tags one by one. Periods are the discovery layer; events stay in prose and
+legacy labels (or become metadata later).
+
+`vietnam-war` sits on the line: it is a war (event-like) but spans 1955-1975 and many sites, so it behaves as a period.
+
+### 4. Influences (R26, R27)
+
+| Influence | Cultural | Architectural | Evidence |
+|-----------|----------|---------------|----------|
+| French | **weak** (quốc ngữ book at Mằng Lăng, Đà Lạt hill-station culture) | **strong, ≥ 8** (NC-34) | `french-influence` still 0 uses; the colonial *period* is far more common (NC-20) |
+| Chinese / Hoa | yes (Jade Emperor's Cantonese founder, Hội An assembly halls, Đồng Văn trading post) | yes (Hmong King Palace layout, Hội An) | NC-28 |
+| Japanese | Hội An merchant quarter | Japanese Bridge | NC-28 |
+| Indian / Hindu | via Champa | Mỹ Sơn towers | covered by `hinduism` + `cham-culture` |
+| Soviet | - | HCM Mausoleum (Stripped Classicism) | 1 (MANUAL) |
+| Khmer | `khmer-culture` 2 | `khmer-architecture` 1 | registered |
+| Vernacular adaptation (the reverse direction) | - | Phát Diệm (Catholic in Vietnamese form), Kon Tum (Bahnar construction) | new observation (P21) |
+
+The data supports **separate architectural-influence tags** (French at least) and a small set of cultural-influence tags.
+It does not support a generic "influence" tag.
+
+### 5. Recognition / designation (R29)
+
+46 of 200 reviewed locations mention an official designation (37 at 150):
+
+| Designation | Count |
+|-------------|-------|
+| UNESCO World Heritage | 11 (properties: Hạ Long/Bái Tử Long, Tràng An, Hội An, Huế, Thăng Long, Hồ citadel, Mỹ Sơn, Phong Nha-Kẻ Bàng) |
+| UNESCO Geopark | 5 |
+| UNESCO Biosphere | 4 |
+| UNESCO Intangible | 1 |
+| Ramsar | 3 |
+| Special / national relic or heritage | 16 |
+| National scenic site | 2 |
+| National intangible heritage | 2 |
+| Other (MPA, UN Tourism village, Minor Basilica) | 3 |
+
+Media rankings (Forbes, TripAdvisor, Travel + Leisure, news.com.au, Vietnam/Asia Records) now appear on 8 locations. They are
+non-official and should not share the designation concept.
+
+Shape the evidence suggests: **level** (UNESCO / national-special / national / provincial) + **type** (world heritage, geopark,
+biosphere, Ramsar, relic, scenic, intangible) + optionally the **property** (for UNESCO). That is richer than a flat tag list,
+which argues for a structured concept even if `tags` carries it at first.
+
+### 6. Coast (R28)
+
+- 46 of 200 have a coastal type (beach/island/bay/cape/lighthouse). 35 of them already carry `nature`, and 5 have no theme at all
+  (4 developed beaches + a resort island).
+- **What type cannot express:** coastal *settlements and heritage*. 6 fishing villages (type `village`), 2 lighthouse compounds,
+  and coastal pagodas (Chùa Hang, Hộ Quốc) have no coastal signal at all. A traveler looking for "the seaside" would miss them.
+- **What a category would add:** one theme that groups beaches, islands, capes, fishing villages and sea-facing heritage, and gives
+  the developed beaches a home.
+- **What it would duplicate:** for plain natural beaches/islands, `coast` + `nature` + type `beach` says the same thing three ways.
+
+Evidence therefore supports `coast` as a **category**, not a type: its value comes from places whose type is *not* coastal.
+But it overlaps `nature` for ~35 locations. Still a candidate.
+
+### 7. Ethnic-culture granularity
+
+| Tag | Uses | Note |
+|-----|------|------|
+| `cham-culture` | 4 | **Two meanings**: historic Champa heritage (my-son, po-nagar, nhan-tower) vs a living Cham Muslim community (bung-binh-thien) |
+| `hmong-culture` | 3 | |
+| `thai-culture` | 3 | All Pù Luông |
+| `khmer-culture` | 2 | Living Khmer Krom + temples |
+| `tay-culture` | 2 | |
+| `lolo-culture` | 1 | |
+| `ethnic-minority-culture` | 3 | Provisional; unused since batch 1 |
+
+Multi-group places (muong-hoa: 4 groups; bac-son, binh-lieu, dong-van-old-town) remain untagged. Per-group tags keep working where
+one group is the destination. The new pressure is *within* a group: heritage-of-a-historic-civilisation vs living-community culture
+(Cham now, possibly Khmer later).
+
+### 8. Structural pressure on the four-field model
+
+The model still holds for all 200 locations. Pressure points, ranked:
+
+1. **`tags` multiplexing (R30).** In one field, the reviewed data now mixes:
+   - canonical discovery tags (19 values)
+   - legacy display labels (hundreds)
+   - legacy labels that encode *events* (`🕊️ 1972 Battle`), *recognitions* (`🏛️ UNESCO Heritage`), *rankings* (`🏖️ Forbes Top 6 Beach`),
+     *editorial badges* (`📷 Hidden Gem`) and *attributes* (`🚫 Long-Term Closure`)
+   - the UI subtitle (`tags[0]`)
+
+   The compatibility layer will need at least three roles: canonical tag, display label, and structured concepts like
+   recognition. That is the biggest design task after the review.
+2. **Recognition wants structure** (level/type/property), which a flat tag list only partly provides.
+3. **`type[0]` drives colour.** 15 theme-colour changes across 7 batches, 6 in batch 7.
+4. **Waypoint stubs.** 4 Ha Giang Loop waypoints (can-ti-bridge, ha-giang-city, mau-due-town, meo-vac-town) have no content.
+   They may be a different entity (route waypoint) rather than a taxonomy problem.
+5. **Theme gaps** hold steady at 7.5% (15/200): developed beaches 4, entertainment 5, stubs 4, nightlife 1, route marker 1.
+6. **Generic experiences** (`photography`, `culture`, `walking-tour`) make `/experiences/*` pages very broad. Consolidating them is
+   an IA decision, not a data fix.
+
+None of these requires a fifth taxonomy field during the review. Item 1 and item 2 will shape the post-review compatibility layer.
+
+---
+
 ## Validation log
 
-| Check | Batch 1 | Batch 2 | Batch 3 | Batch 4 | Batch 5 | Batch 6 |
-|-------|---------|---------|---------|---------|---------|---------|
-| `tsc --noEmit` | clean | clean | clean | clean | clean | clean |
-| ESLint (changed files) | no new warnings | no new warnings | no new warnings | no new warnings | no new warnings | no new warnings |
-| `next build` | success | success | success | success | success | success (257 location + 20 experience pages) |
-| Non-taxonomy content (`taxonomy-content-snapshot.ts`, all 257 vs base) | identical | identical | identical | identical | identical | identical |
-| Location count / slug order | 257, unchanged | 257, unchanged | 257, unchanged | 257, unchanged | 257, unchanged | 257, unchanged |
-| `type`/`categories`/`experiences` values removed vs original data | 2 (restored in batch 2) | **0** | **0** | **0** | **0** | **0** |
+| Check | Batch 1 | Batch 2 | Batch 3 | Batch 4 | Batch 5 | Batch 6 | Batch 7 |
+|-------|---------|---------|---------|---------|---------|---------|---------|
+| `tsc --noEmit` | clean | clean | clean | clean | clean | clean | clean |
+| ESLint (changed files) | no new warnings | no new warnings | no new warnings | no new warnings | no new warnings | no new warnings | no new warnings |
+| `next build` | success | success | success | success | success | success (257 location + 20 experience pages) | success (257 + 20) |
+| Non-taxonomy content (`taxonomy-content-snapshot.ts`, all 257 vs base) | identical | identical | identical | identical | identical | identical | identical |
+| Location count / slug order | 257, unchanged | 257, unchanged | 257, unchanged | 257, unchanged | 257, unchanged | 257, unchanged | 257, unchanged |
+| `type`/`categories`/`experiences` values removed vs original data | 2 (restored in batch 2) | **0** | **0** | **0** | **0** | **0** | **0** |
 
 Visible side effects, cumulative vs the original data:
 - `/experiences/*` counts: beach 44->45, camping 34->36, caving 12->13, kayaking 22->26, culture 118->119,
@@ -1196,6 +1491,11 @@ Visible side effects, cumulative vs the original data:
   location). 17 primary-type changes. Theme colour changed for `hoa-lo-prison`, `hoi-an-ancient-town` (amber -> purple) and
   `japanese-bridge`, `long-bien-bridge` (purple -> amber). `tags[0]` unchanged everywhere. Destination "What to do":
   Phú Quốc gains `swimming`, Pù Luông gains `trekking`.
+- Batch 7: `/experiences/*` caving 14->16, markets 8->11, shopping 4->5 (no page lost a location). 22 primary-type changes.
+  Theme colour changed for `marble-mountains` (purple -> green, `mountain`), `mui-dien` (green -> blue, `cape`),
+  `mui-tro-fishing-village` and `phuoc-hai-fishing-village` (green -> purple, `village`), `ong-cop-bridge` (purple -> amber,
+  `bridge`), `phoenix-unicorn-islands-my-tho` (purple -> blue, `island`). `tags[0]` unchanged everywhere. Destination
+  "What to do": no change.
 
 ## Code changes supporting the review
 

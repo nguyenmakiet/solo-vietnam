@@ -13,7 +13,7 @@ export const myKheBeach: Location = {
   type: ["beach"],
   categories: [],
   experiences: ["beach", "swimming", "surfing", "photography"],
-  tags: ["🏖️ Forbes Top 6 Beach", "🌊 Swimming", "🏄 Surfing", "🌅 Sunrise"],
+  tags: ["🏖️ Forbes Top 6 Beach", "🌅 Sunrise"],
   bestTime: "Apr - Sep (dry season, calmest water); Jun - Jul is the busiest peak, partly driven by the Đà Nẵng International Fireworks Festival. Within any day, the two best windows for swimming are 5:00-9:00 AM (quiet, calm water, fishing boats returning, best light) and 15:00-18:00 PM (livelier, most services open, sunset from around 17:00) - many locals specifically avoid the water in the harsh midday sun. Avoid swimming roughly Oct - Feb, when the northeast monsoon brings rain, bigger waves, and more unpredictable conditions",
   bestMonths: [4, 5, 6, 7, 8, 9],
   entranceFee: "Free",

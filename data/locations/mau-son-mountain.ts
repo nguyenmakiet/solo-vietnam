@@ -11,7 +11,7 @@ export const mauSonMountain: Location = {
   lng: 106.91696577893505,
   address: "Mẫu Sơn, Lộc Bình, Lạng Sơn",
   type: ["mountain", "nature"],
-  categories: [],
+  categories: ["nature"],
   experiences: ["trekking", "photography", "camping", "motorcycling", "homestay"],
   tags: ["❄️ Snow in Vietnam", "🌄 Cloud Sea", "🏔️ Northeast Highlands", "🌡️ Subalpine Climate"],
   bestTime: "Nov-Mar for the coldest weather and the best chance of frost or snow, especially during cold snaps (though also the busiest and most traffic-jammed period); Sep-Oct is a good window for cool weather and reliable cloud-sea views. Apr-May brings spring greenery, terraced-field planting, and hydrangea blooms, while Jul-Aug coincides with the golden rice harvest in surrounding valleys",

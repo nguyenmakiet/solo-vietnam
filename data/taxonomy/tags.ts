@@ -138,6 +138,13 @@ export const LOCATION_TAGS = {
     status: "proposed",
     filterable: true,
   },
+  hinduism: {
+    label: "Hinduism",
+    group: "religion",
+    status: "proposed",
+    filterable: true,
+    description: "Cham Hindu sanctuaries and temples (Shiva, Po Nagar)",
+  },
 } as const satisfies Record<string, TaxonomyMeta<LocationTagGroup>>
 
 export type LocationTag = keyof typeof LOCATION_TAGS
