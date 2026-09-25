@@ -1,3 +1,5 @@
+import type { LocationExperience } from "./taxonomy/experiences"
+
 export type ExperienceSlug =
   | "beaches"
   | "trekking"
@@ -20,27 +22,8 @@ export type ExperienceSlug =
   | "motorcycling"
   | "shopping"
 
-export type ExperienceValue =
-  | "beach"
-  | "trekking"
-  | "camping"
-  | "caving"
-  | "snorkeling"
-  | "kayaking"
-  | "food"
-  | "culture"
-  | "history"
-  | "photography"
-  | "markets"
-  | "nightlife"
-  | "walking-tour"
-  | "cycling"
-  | "boat-tour"
-  | "cable-car"
-  | "homestay"
-  | "wildlife"
-  | "motorcycling"
-  | "shopping"
+// Canonical experience values live in data/taxonomy/experiences.ts.
+export type ExperienceValue = LocationExperience
 
 export type Experience = {
   slug: ExperienceSlug

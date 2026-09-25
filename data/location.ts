@@ -1,28 +1,9 @@
-export type LocationType =
-  | "beach"
-  | "island"
-  | "bay"
-  | "river"
-  | "lake"
-  | "mountain"
-  | "forest"
-  | "nature"
-  | "waterfall"
-  | "cave"
-  | "attraction"
-  | "cultural"
-  | "town"
-  | "city"
-  | "market"
-  | "temple"
-  | "pagoda"
-  | "tomb"
-  | "citadel"
-  | "heritage"
-  | "history"
-  | "landmark"
-  | "museum"
+import type { LocationType } from "./taxonomy/types"
+import type { LocationCategory } from "./taxonomy/categories"
 
+// Taxonomy vocabularies (values + metadata) live in data/taxonomy/.
+// Re-exported here so existing imports keep working unchanged.
+export type { LocationType, LocationCategory }
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
 
@@ -59,8 +40,6 @@ export const locationTheme: Record<LocationType, LocationTheme> = {
         museum: "amber"
       }
 
-export type LocationCategory = "hidden-gem" | "must-see" | "iconic"
-
 export type ContentBlock =
   | { type: "heading"; text: string; icon?: string }
   | { type: "paragraph"; text: string }
@@ -90,10 +69,12 @@ export type Location = {
   lat: number | string
   lng: number | string
   address: string
-  type: LocationType | LocationType[]
-  categories?: LocationCategory[]
-  experiences: string[]
-  tags: string[]
+  // Taxonomy fields - vocabularies and semantics in data/taxonomy/.
+  // experiences/tags stay string[] during the transition (legacy values allowed).
+  type: LocationType | LocationType[] // what is this place?
+  categories?: LocationCategory[] // broad travel themes (currently editorial badges - see data/taxonomy/AUDIT.md)
+  experiences: string[] // what can a traveler do here?
+  tags: string[] // specific interest / influence / period (currently emoji display labels)
   entranceFee?: string
   openingHours?: string
   bestTime: string
