@@ -390,3 +390,20 @@ and no Location data changed.
 
 Still deferred (unchanged): broad-type deprecation, trekking page membership, `walking-tour`, `photography`/`culture`/`history`
 IA, taxonomy UI, recognition verification (network-blocked), public URL changes.
+
+---
+
+## 10. Edge-case types before broad-type migration (owner decisions)
+
+`sand-dunes` is restored as a canonical type (terrain, green). This reverses the round-2 rejection: the manual review showed
+a reusable semantic case across both dune locations, and no existing type describes a dune landscape.
+
+| Location | Before | After |
+|----------|--------|-------|
+| radio-tower-cat-ba | landmark, attraction, nature | mountain |
+| red-sand-dunes | nature, attraction | sand-dunes |
+| white-sand-dunes | nature, attraction, lake | sand-dunes, lake |
+| thuong-phuoc-border-gate | landmark, history, river | monument, river |
+| thung-nham-bird-park | nature, river | valley |
+
+No categories, experiences or tags changed. The broad types remain in the registry and on all other locations.

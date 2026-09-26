@@ -216,6 +216,13 @@ export const LOCATION_TYPES = {
     description: "Khu bảo tồn thiên nhiên - only when the location is the reserve itself",
   },
   grassland: { label: "Grassland", group: "terrain", status: "canonical", theme: "green" },
+  "sand-dunes": {
+    label: "Sand Dunes",
+    group: "terrain",
+    status: "canonical",
+    theme: "green",
+    description: "Sand dune landscape (Đồi cát). Restored in Phase 2 after the edge-case review (red and white dunes, Mũi Né)",
+  },
 } as const satisfies Record<string, LocationTypeMeta>
 
 export type LocationType = keyof typeof LOCATION_TYPES

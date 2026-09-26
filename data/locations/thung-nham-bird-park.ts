@@ -10,7 +10,7 @@ export const thungNhamBirdPark: Location = {
   lat: "20.22245746050601",
   lng: "105.88641480523839",
   address: "Ninh Hải, Hoa Lư, Ninh Bình",
-  type: ["nature", "river"],
+  type: ["valley"],
   categories: ["nature"],
   experiences: ["wildlife", "boat-tour", "photography", "trekking"],
   tags: ["🦅 Egret Colony", "🌿 Wetland", "📸 Wildlife Photography"],

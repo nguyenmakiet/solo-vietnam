@@ -13,7 +13,7 @@ The registries in `data/taxonomy/` are the single source of truth for the four L
 
 | Field | Registry | Values at freeze | Notes |
 |-------|----------|------------------|-------|
-| `type` | `types.ts` `LOCATION_TYPES` | 49 canonical: 43 specific + 6 broad | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
+| `type` | `types.ts` `LOCATION_TYPES` | 50 canonical: 44 specific + 6 broad | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
 | `categories` | `categories.ts` `LOCATION_CATEGORIES` | 11 canonical: 8 themes + 3 editorial badges | Not rendered in the UI |
 | `experiences` | `experiences.ts` `LOCATION_EXPERIENCES` | 28 canonical (20 page-backed, 8 without a page) · 2 proposed · 1 deprecated | `page` = the `/experiences/*` slug. `ExperienceValue` = the page-backed subset |
 | `tags` | `tags.ts` `LOCATION_TAGS` | 24 canonical | Any unregistered tag string is a legacy display label (`legacy-display`) |

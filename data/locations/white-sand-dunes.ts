@@ -10,7 +10,7 @@ export const whiteSandDunes: Location = {
   lat: 11.07112795980011,
   lng: 108.42656899745431,
   address: "Bàu Trắng, Hoà Thắng, Bắc Bình, Bình Thuận",
-  type: ["nature", "attraction", "lake"],
+  type: ["sand-dunes", "lake"],
   categories: ["nature"],
   experiences: ["photography", "trekking", "camping", "wildlife"],
   tags: ["🏜️ Sahara of Vietnam", "🌅 Sunrise Dunes", "🚙 Jeep Tour"],

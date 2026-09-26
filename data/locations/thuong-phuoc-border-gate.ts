@@ -10,7 +10,7 @@ export const thuongPhuocBorderGate: Location = {
   lat: 10.910484255076085,
   lng: 105.19761803298447,
   address: "Thường Phước 1, Hồng Ngự, Đồng Tháp",
-  type: ["landmark", "history", "river"],
+  type: ["monument", "river"],
   categories: [],
   experiences: ["history", "culture", "photography", "boat-tour", "cycling"],
   tags: ["🛂 Vietnam-Cambodia Border", "🌊 Mekong River Crossing", "🚤 River Border"],

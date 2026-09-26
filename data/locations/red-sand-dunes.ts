@@ -10,7 +10,7 @@ export const redSandDunes: Location = {
   lat: 10.949408234413704,
   lng: 108.29650702647355,
   address: "Mũi Né, Phan Thiết, Bình Thuận",
-  type: ["nature", "attraction"],
+  type: ["sand-dunes"],
   categories: ["nature"],
   experiences: ["photography", "walking-tour"],
   tags: ["🔴 Red Iron-Oxide Dunes", "🌅 Sunset Views", "🚶 Walking"],

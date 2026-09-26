@@ -10,7 +10,7 @@ export const radioTowerCatBa: Location = {
   lat: "20.725680942118284",
   lng: "107.05569020932256",
   address: "Núi Ngọc, Cát Bà, Hải Phòng",
-  type: ["landmark", "attraction", "nature"],
+  type: ["mountain"],
   categories: ["nature"],
   experiences: ["photography", "trekking", "walking-tour", "hiking"],
   tags: ["🌅 Sunset Viewpoint", "📡 Radio Tower", "🏝️ Lan Hạ Bay Views", "🔭 Panoramic"],
