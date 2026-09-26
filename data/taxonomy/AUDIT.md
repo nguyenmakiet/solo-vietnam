@@ -13,7 +13,7 @@ The registries in `data/taxonomy/` are the single source of truth for the four L
 
 | Field | Registry | Values at freeze | Notes |
 |-------|----------|------------------|-------|
-| `type` | `types.ts` `LOCATION_TYPES` | 50 canonical: 44 specific + 6 broad | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
+| `type` | `types.ts` `LOCATION_TYPES` | 49 canonical: 44 specific + 5 broad · 1 deprecated (`history`) | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
 | `categories` | `categories.ts` `LOCATION_CATEGORIES` | 11 canonical: 8 themes + 3 editorial badges | Not rendered in the UI |
 | `experiences` | `experiences.ts` `LOCATION_EXPERIENCES` | 28 canonical (20 page-backed, 8 without a page) · 2 proposed · 1 deprecated | `page` = the `/experiences/*` slug. `ExperienceValue` = the page-backed subset |
 | `tags` | `tags.ts` `LOCATION_TAGS` | 24 canonical | Any unregistered tag string is a legacy display label (`legacy-display`) |
@@ -26,10 +26,14 @@ Official designations are not taxonomy values: they live in the side-car `recogn
 |--------|---------|------------------|
 | `canonical` | Approved, stable. Allowed in Location data | every other registered value |
 | `proposed` | Registered and valid, intentionally pending an owner decision. Not in the canonical UI grouping (`EXPERIENCE_GROUP_CONFIG`) | experiences: `paragliding`, `rock-climbing` |
-| `deprecated` | Not allowed in Location data. `replacedBy` names the replacement | experiences: `temple-visit` → `religious-site-visit` |
+| `deprecated` | Not allowed in Location data. `replacedBy` names the replacement (`replacedByCategory` for a type whose concept moved to categories) | experiences: `temple-visit` → `religious-site-visit`; type: `history` → category `history` |
 | `legacy-display` | Tags only. A free-form label kept for display/compatibility (hero chips, `tags[0]` card subtitle). Never used for discovery | 754 distinct labels (827 uses) |
 
-The six broad types (`nature`, `attraction`, `cultural`, `heritage`, `history`, `landmark`) are `canonical` with a `pendingDecision`:
+The broad type `history` is `deprecated` (broad-type migration step 1, PHASE2-LOG §11): it was removed from all Location data and
+is replaced by category `history` (`replacedByCategory`). `?type=history` is ignored by the `/locations` filter like any other
+non-canonical param; no URL alias exists.
+
+The other five broad types (`nature`, `attraction`, `cultural`, `heritage`, `landmark`) are `canonical` with a `pendingDecision`:
 their deprecation is **deferred by the owner**. They stay valid and must not be removed from Location data.
 
 Relationships (existing, frozen):
@@ -66,7 +70,7 @@ Read-only. It prints the usage report and then enforces the contract. It **exits
 | Location values | a Location uses an unregistered `type`/`categories`/`experiences` value, a key-like unregistered tag, or a duplicate value |
 | Deprecated values | a Location uses any `deprecated` value |
 | Frozen statuses | the set of `proposed` or `deprecated` values in any registry differs from the frozen list |
-| Registry integrity | an invalid status, `deprecated` without `replacedBy`, `replacedBy` on a non-deprecated value or pointing to a non-canonical value, a `broader` target that is missing/non-canonical/self/cyclic, or a `page` on a non-canonical value or outside experiences |
+| Registry integrity | an invalid status, `deprecated` without `replacedBy` (or `replacedByCategory`), `replacedBy` on a non-deprecated value or pointing to a non-canonical value, `replacedByCategory` outside `type`, on a non-deprecated value or pointing to a non-canonical category, a `broader` target that is missing/non-canonical/self/cyclic, or a `page` on a non-canonical value or outside experiences |
 | Public pages | a registry `page` disagrees with `data/experiences.ts` (slug or count) |
 | `EXPERIENCE_GROUP_CONFIG` | a non-canonical (unregistered, proposed, deprecated) experience is listed, a canonical experience is missing, or one is in several groups |
 | Aliases | an alias key shadows a registered key, an alias targets a non-canonical value, or a tag alias kind is not `equivalent`/`implies` |

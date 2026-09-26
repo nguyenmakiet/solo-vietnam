@@ -84,7 +84,7 @@ audit("experiences", experiences, isLocationExperience, normalizeExperience)
 audit("tags", tags, isLocationTag, normalizeLegacyTag)
 
 // ── Registry status of the values in use (Phase 2 status model) ──
-type Registry = Record<string, { status: string; replacedBy?: string }>
+type Registry = Record<string, { status: string; replacedBy?: string; replacedByCategory?: string }>
 function statusReport(field: string, values: string[], registry: Registry, fallback = "unregistered") {
   const byStatus = new Map<string, number>()
   const deprecated = new Map<string, number>()
@@ -94,7 +94,7 @@ function statusReport(field: string, values: string[], registry: Registry, fallb
     if (status === "deprecated") deprecated.set(v, (deprecated.get(v) ?? 0) + 1)
   }
   console.log(`  ${field.padEnd(12)} ${[...byStatus].map(([s, n]) => `${s} ${n}`).join(" · ")}`)
-  for (const [v, n] of deprecated) console.log(`      deprecated in use: ${v} (${n}) -> ${registry[v].replacedBy ?? "no replacement"}`)
+  for (const [v, n] of deprecated) console.log(`      deprecated in use: ${v} (${n}) -> ${registry[v].replacedBy ?? (registry[v].replacedByCategory ? `category ${registry[v].replacedByCategory}` : "no replacement")}`)
 }
 console.log("\n── status of values in use ──")
 statusReport("type", types, LOCATION_TYPES as Registry)
@@ -109,7 +109,7 @@ console.log(`  ${"tags".padEnd(12)} ${[...tagStatusCounts].map(([s, n]) => `${s}
 // Any violation below sets a non-zero exit code.
 const problems: string[] = []
 
-type Meta = { status: string; group?: string; replacedBy?: string; broader?: readonly string[]; page?: string }
+type Meta = { status: string; group?: string; replacedBy?: string; replacedByCategory?: string; broader?: readonly string[]; page?: string }
 type Reg = Record<string, Meta>
 const REGISTRIES: Record<string, Reg> = {
   type: LOCATION_TYPES as Reg,
@@ -121,7 +121,7 @@ const REGISTRIES: Record<string, Reg> = {
 // Intentional non-canonical values at the freeze. A status change needs an owner
 // decision; update this list together with AUDIT.md when that happens.
 const FROZEN_NON_CANONICAL: Record<string, { proposed: string[]; deprecated: string[] }> = {
-  type: { proposed: [], deprecated: [] },
+  type: { proposed: [], deprecated: ["history"] },
   categories: { proposed: [], deprecated: [] },
   experiences: { proposed: ["paragliding", "rock-climbing"], deprecated: ["temple-visit"] },
   tags: { proposed: [], deprecated: [] },
@@ -147,7 +147,7 @@ for (const loc of allLocations) {
       if (!meta) {
         if (field !== "tags" || isKeyLike(v)) problems.push(`${loc.slug}: ${field} "${v}" is not registered`)
       } else if (meta.status === "deprecated") {
-        problems.push(`${loc.slug}: ${field} "${v}" is deprecated${meta.replacedBy ? ` - use "${meta.replacedBy}"` : ""}`)
+        problems.push(`${loc.slug}: ${field} "${v}" is deprecated${meta.replacedBy ? ` - use "${meta.replacedBy}"` : meta.replacedByCategory ? ` - use category "${meta.replacedByCategory}"` : ""}`)
       }
     }
     if (new Set(values).size !== values.length) problems.push(`${loc.slug}: duplicate value in ${field}`)
@@ -165,7 +165,13 @@ for (const [field, reg] of Object.entries(REGISTRIES)) {
   }
   for (const [key, meta] of Object.entries(reg)) {
     if (!["canonical", "proposed", "deprecated"].includes(meta.status)) problems.push(`${field} "${key}": invalid registry status "${meta.status}"`)
-    if (meta.status === "deprecated" && !meta.replacedBy) problems.push(`${field} "${key}": deprecated without replacedBy`)
+    if (meta.status === "deprecated" && !meta.replacedBy && !meta.replacedByCategory) problems.push(`${field} "${key}": deprecated without replacedBy`)
+    if (meta.replacedByCategory) {
+      if (field !== "type") problems.push(`${field} "${key}": replacedByCategory is for types only`)
+      if (meta.status !== "deprecated") problems.push(`${field} "${key}": replacedByCategory set on a ${meta.status} value`)
+      if (meta.replacedBy) problems.push(`${field} "${key}": both replacedBy and replacedByCategory set`)
+      if (REGISTRIES.categories[meta.replacedByCategory]?.status !== "canonical") problems.push(`${field} "${key}": replacedByCategory "${meta.replacedByCategory}" is not a canonical category`)
+    }
     if (meta.replacedBy) {
       if (meta.status !== "deprecated") problems.push(`${field} "${key}": replacedBy set on a ${meta.status} value`)
       if (reg[meta.replacedBy]?.status !== "canonical") problems.push(`${field} "${key}": replacedBy "${meta.replacedBy}" is not a canonical ${field} value`)
@@ -240,6 +246,7 @@ for (const [a, b, reg] of siblingPairs) {
   }
 }
 if (REGISTRIES.experiences["temple-visit"]?.replacedBy !== "religious-site-visit") problems.push(`"temple-visit" must be deprecated with replacedBy "religious-site-visit"`)
+if (REGISTRIES.type["history"]?.replacedByCategory !== "history") problems.push(`type "history" must be deprecated with replacedByCategory "history"`)
 
 // 7. Recognition side-car slugs.
 const slugs = new Set(allLocations.map((l) => l.slug))

@@ -10,7 +10,7 @@ export const minhDamMountain: Location = {
   lat: 10.406176641081109,
   lng: 107.2592560602553,
   address: "Phước Hải, Đất Đỏ, Bà Rịa - Vũng Tàu",
-  type: ["mountain", "nature", "history"],
+  type: ["mountain", "nature"],
   categories: ["nature", "history"],
   experiences: ["trekking", "history", "photography", "caving", "hiking"],
   tags: ["⛰️ Resistance Base", "🥾 Forest Trek", "🏛️ National Historical Relic", "🐒 Wild Monkeys"],

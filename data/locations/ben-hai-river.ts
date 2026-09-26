@@ -10,7 +10,7 @@ export const benHaiRiver: Location = {
   lat: 17.005352993989394,
   lng: 107.05091365024349,
   address: "Vĩnh Linh - Gio Linh, Quảng Trị",
-  type: ["bridge", "history", "landmark", "river"],
+  type: ["bridge", "landmark", "river"],
   categories: ["history"],
   experiences: ["history", "culture", "photography", "walking-tour", "cycling", "museum-visit"],
   tags: ["🌉 Reunification Bridge", "🏳️ DMZ History", "🚗 DMZ Road Trip", "vietnam-war"],

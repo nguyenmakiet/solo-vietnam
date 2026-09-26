@@ -10,7 +10,7 @@ export const catBaCannonFort: Location = {
   lat: "20.72699791562507",
   lng: "107.05415352678563",
   address: "Cát Bà, Hải Phòng",
-  type: ["fortress", "history", "nature"],
+  type: ["fortress", "nature"],
   categories: ["history", "coast"],
   experiences: ["history", "photography", "trekking"],
   status: "closed",

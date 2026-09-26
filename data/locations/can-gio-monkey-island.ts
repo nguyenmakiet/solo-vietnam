@@ -10,7 +10,7 @@ export const canGioMonkeyIsland: Location = {
   lat: 10.409854763930516,
   lng: 106.88953198932505,
   address: "Đảo Khỉ, Lý Nhơn, Cần Giờ, TP. Hồ Chí Minh",
-  type: ["island", "nature", "attraction", "history"],
+  type: ["island", "nature", "attraction"],
   categories: ["nature"],
   experiences: ["wildlife", "boat-tour", "photography", "culture", "history"],
   tags: ["🐒 Wild Monkeys", "🌿 Mangrove Forest", "🌊 UNESCO Biosphere"],

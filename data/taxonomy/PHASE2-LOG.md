@@ -407,3 +407,43 @@ a reusable semantic case across both dune locations, and no existing type descri
 | thung-nham-bird-park | nature, river | valley |
 
 No categories, experiences or tags changed. The broad types remain in the registry and on all other locations.
+
+---
+
+## 11. Broad-type migration step 1 - `history` (owner decision D1 = B)
+
+`history` is removed from every Location `type` and **deprecated** in the registry. Its concept lives on in category
+`history` (29/30 already had it) and experience `history` (30/30, unchanged).
+
+| Decision | Applied |
+|----------|---------|
+| D1 = B: remove from data and deprecate | `types.ts`: `status: "deprecated"`, `replacedByCategory: "history"`, `pendingDecision` dropped. Frozen list: `type.deprecated = ["history"]` |
+| No category added to `can-gio-monkey-island` | Kept `categories: ["nature"]`. Its history angle (the separate Rừng Sác War Base, war-time defoliation) stays in experience `history` |
+| No URL alias | `?type=history` is ignored by the `/locations` filter (non-canonical param, existing behavior): all results shown, param kept in the URL |
+| Other broad types | Untouched: `nature`, `attraction`, `cultural`, `heritage`, `landmark` stay canonical with `pendingDecision` |
+
+The replacement is in another field, so `replacedBy` (same field only) cannot name it. `replacedByCategory` (types only) was
+added to `TaxonomyMeta`; the audit accepts it in place of `replacedBy`, checks that it is on a deprecated type and names a
+canonical category, and pins `history` → category `history` as an owner invariant.
+
+**Data** - 30 files, `type` line only, `"history"` removed, order of the remaining values unchanged:
+b52-wreck, ben-hai-river, can-gio-monkey-island, cat-ba-cannon-fort, con-dao-prison, cu-chi-tunnels, eight-ladies-cave,
+hmong-king-palace, ho-chi-minh-childhood-home, ho-chi-minh-mausoleum-complex, ho-dynasty-citadel, hoa-lo-prison,
+hoa-lu-ancient-capital, hospital-cave, hung-temple, imperial-citadel-of-thang-long, imperial-city-hue, independence-palace,
+long-bien-bridge, mac-dynasty-citadel, marble-mountains, minh-dam-mountain, my-son-sanctuary, nha-pha-historical-site,
+pac-bo-historic-site, quang-tri-ancient-citadel, temple-of-literature, truong-son-national-cemetery,
+vietnam-military-history-museum, war-remnants-museum.
+
+`history` was never `type[0]` and every location keeps a specific type first, so no primary type, badge or colour changed and
+no location became type-less or broad-only.
+
+| Check | Result |
+|-------|--------|
+| `npm run audit:taxonomy` | OK. type 49 canonical + 1 deprecated (`history`, 0 uses). Re-adding `history` to a location fails the audit |
+| Location data | 30 files, 30 lines, `type` only. Non-taxonomy content snapshot identical |
+| `type[0]`, colour, categories, experiences, tags, `tags[0]`, Similar Experiences | unchanged for all 257 locations |
+| `/experiences/*` membership, destination `bestMonths` / `whatToDo` / `highlights` | unchanged |
+| `/locations` | "History" gone from the type filter (48 options). `?type=history` shows all 245 active locations; `?type=history&type=cave` = `?type=cave` (17). Cultural shortcut 61 |
+| Location hero | the type line drops "History" (e.g. "Cave · History" → "Cave") |
+| Search index | 29 location items (cat-ba-cannon-fort is closed, not indexed) lose only the "History" type label; nothing else changes |
+| Build | 398 pages (257 location / 20 experience / 21 destination). No public URL change |

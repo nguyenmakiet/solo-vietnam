@@ -10,7 +10,7 @@ export const imperialCity: Location = {
   lat: 16.4677616052903,
   lng: 107.57931947854229,
   address: "Thuận Thành, Huế, Thừa Thiên Huế",
-  type: ["citadel", "heritage", "history", "museum"],
+  type: ["citadel", "heritage", "museum"],
   categories: ["history", "architecture", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏯 UNESCO Heritage", "nguyen-dynasty", "🏛️ Imperial Architecture"],

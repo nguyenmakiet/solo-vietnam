@@ -10,7 +10,7 @@ export const quangTriAncientCitadel: Location = {
   lat: 16.753698503710048,
   lng: 107.18981719454122,
   address: "Thành Cổ Quảng Trị, Quảng Trị city, Quảng Trị",
-  type: ["citadel", "heritage", "history", "cultural"],
+  type: ["citadel", "heritage", "cultural"],
   categories: ["history"],
   experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
   tags: ["🏛️ War Citadel", "🕊️ 1972 Battle", "🌿 Sacred Ground", "vietnam-war"],

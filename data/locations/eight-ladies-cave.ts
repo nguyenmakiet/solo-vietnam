@@ -10,7 +10,7 @@ export const eightLadiesCave: Location = {
   lat: 17.502701222486007,
   lng: 106.26089697322949,
   address: "Tân Trạch, Bố Trạch, Quảng Bình",
-  type: ["cave", "history"],
+  type: ["cave"],
   categories: ["history"],
   experiences: ["history", "culture", "photography"],
   tags: ["🕯️ Vietnam War Memorial", "⛰️ Special National Historical Relic", "🛣️ Roadside Site", "vietnam-war"],

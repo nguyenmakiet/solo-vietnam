@@ -8,9 +8,11 @@ import type { TaxonomyMeta } from "./shared"
 // data/location.ts is derived from this registry and a new type cannot be
 // added without a colour. Existing colours are unchanged.
 //
-// The six "broad" values (nature, attraction, cultural, heritage, history,
-// landmark) describe a theme rather than what the place is. Their deprecation
-// is deferred by the owner (Phase 2) - they stay valid and must not be removed.
+// The "broad" values describe a theme rather than what the place is.
+// `history` is deprecated (Phase 2 broad-type migration step 1): it is no longer
+// used by any Location and the audit fails if it reappears. The deprecation of the
+// other five (nature, attraction, cultural, heritage, landmark) is deferred by the
+// owner (Phase 2) - they stay valid and must not be removed.
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
 
@@ -80,10 +82,11 @@ export const LOCATION_TYPES = {
   history: {
     label: "History",
     group: "broad",
-    status: "canonical",
+    status: "deprecated",
     theme: "amber",
-    description: "Broad theme (category 'history'), not a kind of place",
-    pendingDecision: BROAD_PENDING,
+    replacedByCategory: "history",
+    description:
+      "Deprecated in Phase 2 (broad-type migration step 1). Removed from all Location data - use category 'history' (and experience 'history'). Never use as a type",
   },
   landmark: {
     label: "Landmark",

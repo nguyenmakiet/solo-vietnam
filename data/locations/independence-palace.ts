@@ -10,7 +10,7 @@ export const independencePalace: Location = {
   lat: "10.777204981398915",
   lng: "106.69534501075161",
   address: "135 Nam Kỳ Khởi Nghĩa, Bến Thành, Quận 1, Thành phố Hồ Chí Minh",
-  type: ["palace", "heritage", "history", "landmark"],
+  type: ["palace", "heritage", "landmark"],
   categories: ["history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ Fall of Saigon", "🪖 War History", "🏢 1960s Architecture", "🚗 Tank on Lawn", "vietnam-war"],

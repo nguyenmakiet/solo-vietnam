@@ -10,7 +10,7 @@ export const hoChiMinhMausoleumComplex: Location = {
   lat: 21.036779537375388,
   lng: 105.83472510393055,
   address: "Hùng Vương, Ba Đình, Hà Nội",
-  type: ["tomb", "historic-site", "heritage", "history", "landmark"],
+  type: ["tomb", "historic-site", "heritage", "landmark"],
   categories: ["history"],
   experiences: ["history", "culture", "walking-tour", "photography", "museum-visit"],
   status: "seasonally-closed",

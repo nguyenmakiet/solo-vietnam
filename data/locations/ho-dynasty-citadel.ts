@@ -10,7 +10,7 @@ export const hoDynastyCitadel: Location = {
   lat: 20.074269163206647,
   lng: 105.60681662780148,
   address: "Vĩnh Tiến and Vĩnh Long communes, Tây Đô (formerly Vĩnh Lộc district), Thanh Hóa",
-  type: ["citadel", "heritage", "history"],
+  type: ["citadel", "heritage"],
   categories: ["history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏯 UNESCO Heritage", "🪨 Stone Citadel", "👑 14th Century", "🌾 Rural Countryside", "medieval-vietnam"],

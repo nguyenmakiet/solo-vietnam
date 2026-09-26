@@ -10,7 +10,7 @@ export const nhaPhaPrison: Location = {
   lat: 15.386246450441275,
   lng: 109.14170348441878,
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
-  type: ["historic-site", "prison", "lighthouse", "history", "landmark"],
+  type: ["historic-site", "prison", "lighthouse", "landmark"],
   categories: ["history", "coast"],
   experiences: ["history", "culture", "photography"],
   tags: [

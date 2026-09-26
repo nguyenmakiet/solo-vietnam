@@ -10,7 +10,7 @@ export const hungTemple: Location = {
   lat: 21.368643714922786,
   lng: 105.32575135886921,
   address: "Hy Cương, Việt Trì, Phú Thọ",
-  type: ["temple", "heritage", "history", "cultural"],
+  type: ["temple", "heritage", "cultural"],
   categories: ["religion", "history", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏛️ National Pilgrimage", "🛕 UNESCO Intangible Cultural Heritage", "⛰️ Sacred Hill", "folk-religion"],

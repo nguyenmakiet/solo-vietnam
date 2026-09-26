@@ -10,7 +10,7 @@ export const hmongKingPalace: Location = {
   lat: 23.25632622972936,
   lng: 105.2621945561199,
   address: "Sà Phìn, Đồng Văn, Hà Giang, Vietnam",
-  type: ["palace", "heritage", "history", "cultural", "landmark"],
+  type: ["palace", "heritage", "cultural", "landmark"],
   experiences: ["history", "culture", "photography", "walking-tour", "motorcycling"],
   categories: ["history", "architecture", "culture"],
   tags: ["🏛️ Hmong Royal Residence", "📸 Architecture", "🧭 Đồng Văn Plateau", "🏍️ Ha Giang Loop", "hmong-culture", "french-architecture"],
