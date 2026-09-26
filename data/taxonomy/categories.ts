@@ -8,7 +8,8 @@ import type { TaxonomyMeta } from "./shared"
 //   theme     - broad travel themes. Owner-approved in Phase 2: the six
 //               original themes plus "coast" and "entertainment".
 // Place kinds (beach, waterfall, national-park...) belong to `type` (R14).
-// `categories` is not rendered anywhere in the UI today.
+// `categories` is not rendered as a badge. The theme group is filterable on
+// /locations (`?category=`); editorial badges are not.
 
 export type LocationCategoryGroup = "editorial" | "theme"
 
