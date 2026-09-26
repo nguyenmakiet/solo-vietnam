@@ -335,3 +335,39 @@ decision was not actually implemented. It was flagged in §7.3 of the round-3 re
 | Other taxonomy values | no other change in any location |
 | `/experiences/*` membership, public URLs, `tags[0]`, province chips, "What to do", `/locations` filter options | unchanged |
 | Recognition side-car | unchanged, consistency OK |
+
+---
+
+## 8. Downstream fix - `EXPERIENCE_GROUP_CONFIG` (after Phase 2, separate commit)
+
+This is a config consistency fix, not a consolidation round. No taxonomy value or owner decision changed.
+Destination "What to do" silently dropped every experience that was missing from `EXPERIENCE_GROUP_CONFIG`
+(`data/destinations/types.ts`).
+
+| Before | After |
+|--------|-------|
+| 8 values not in the registry: `waterfall`, `adventure`, `cafe`, `sunset`, `cruise` + 3 typos `motorbiking`, `kite-surfing`, `climbing` | typos fixed → `motorcycling`, `kitesurfing`. `climbing` → `rock-climbing` is `proposed`, so it is **not** listed (canonical only, owner decision). The 5 others removed (not experiences in the registry) |
+| 15 used canonical values in no group: boat-tour, cable-car, camping, caving, fishing, food, kitesurfing, markets, motorcycling, museum-visit, nightlife, religious-site-visit, shopping, walking-tour, wildlife | all grouped. Every canonical experience is now in exactly one group |
+
+Placement of the added values (presentation grouping only; reviewable):
+- `nature`: + camping, caving, wildlife, fishing
+- `culture`: + walking-tour, museum-visit, religious-site-visit
+- `activities`: + cable-car
+- `chill`: + boat-tour (takes the place of the retired "cruise")
+- new group `food-and-local-life` ("Food & Local Life", order 5, after `chill`): food, markets, nightlife, shopping (mirrors
+  the registry group of the same name)
+
+Existing group labels, orders and placements are unchanged. **The config holds canonical experiences only** (owner decision):
+proposed `paragliding` and `rock-climbing` and deprecated `temple-visit` are not listed until promoted.
+`npm run audit:taxonomy` fails if the config lists any non-canonical value (unregistered, proposed or deprecated), if a
+canonical experience is in no group, or if a value is in more than one group.
+
+Result:
+- Location taxonomy data is byte-identical.
+- `/experiences/*` membership, public URLs, `tags[0]` and Similar Experiences are unchanged.
+- "What to do" gains 117 pills across all 21 destinations. Nothing was removed or reordered.
+- The build covers 257 location pages, 20 experience pages and 21 destination pages.
+
+Follow-up (same commit, owner decision): the config holds canonical experiences only. `rock-climbing` was removed from
+`activities`, and `paragliding` stays out. Both remain `proposed` in the registry and in location data (lan-ha-bay,
+khau-pha-pass), and are not shown in "What to do" until promoted.

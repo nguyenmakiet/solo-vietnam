@@ -250,12 +250,14 @@ Defined in `data/destinations/types.ts`. Controls how `location.experiences[]` m
 
 | Group | Label | Experiences |
 |-------|-------|-------------|
-| `nature` | Nature & Outdoors | trekking, hiking, waterfall, swimming, kayaking, cycling, snorkeling, diving |
-| `culture` | Culture & History | culture, homestay, photography, history |
-| `activities` | Activities & Adventure | adventure, motorbiking, climbing, surfing, kite-surfing |
-| `chill` | Chill & Relax | cafe, beach, sunset, cruise |
+| `nature` | Nature & Outdoors | trekking, hiking, swimming, kayaking, cycling, snorkeling, diving, camping, caving, wildlife, fishing |
+| `culture` | Culture & History | culture, homestay, photography, history, walking-tour, museum-visit, religious-site-visit |
+| `activities` | Activities & Adventure | motorcycling, surfing, kitesurfing, cable-car |
+| `chill` | Chill & Relax | beach, boat-tour |
+| `food-and-local-life` | Food & Local Life | food, markets, nightlife, shopping |
 
 To add a new category or experience mapping, update `EXPERIENCE_GROUP_CONFIG` in `types.ts` only — do not hardcode groupings in components.
+Values must be **canonical** experiences (`data/taxonomy/experiences.ts`) - proposed and deprecated values stay out until promoted; every canonical experience must be in exactly one group (checked by `npm run audit:taxonomy`).
 
 ### Adding a new destination
 

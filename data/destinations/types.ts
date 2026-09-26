@@ -85,25 +85,35 @@ export type ExperienceGroupConfig = {
 }
 
 export const EXPERIENCE_GROUP_CONFIG: Record<string, ExperienceGroupConfig> = {
+  // Canonical experiences only (data/taxonomy/experiences.ts). Every canonical
+  // experience must appear in exactly one group, otherwise destination
+  // "What to do" silently drops it. Proposed (paragliding, rock-climbing) and
+  // deprecated (temple-visit) values are not listed until promoted.
+  // `npm run audit:taxonomy` checks this.
   nature: {
     label: "Nature & Outdoors",
     order: 1,
-    experiences: ["trekking", "hiking", "waterfall", "swimming", "kayaking", "cycling", "snorkeling", "diving"],
+    experiences: ["trekking", "hiking", "swimming", "kayaking", "cycling", "snorkeling", "diving", "camping", "caving", "wildlife", "fishing"],
   },
   culture: {
     label: "Culture & History",
     order: 2,
-    experiences: ["culture", "homestay", "photography", "history"],
+    experiences: ["culture", "homestay", "photography", "history", "walking-tour", "museum-visit", "religious-site-visit"],
   },
   activities: {
     label: "Activities & Adventure",
     order: 3,
-    experiences: ["adventure", "motorbiking", "climbing", "surfing", "kite-surfing"],
+    experiences: ["motorcycling", "surfing", "kitesurfing", "cable-car"],
   },
   chill: {
     label: "Chill & Relax",
     order: 4,
-    experiences: ["cafe", "beach", "sunset", "cruise"],
+    experiences: ["beach", "boat-tour"],
+  },
+  "food-and-local-life": {
+    label: "Food & Local Life",
+    order: 5,
+    experiences: ["food", "markets", "nightlife", "shopping"],
   },
 }
 

@@ -12,6 +12,7 @@
 
 import { allLocations } from "../data/all-locations"
 import { experiences as experiencePages } from "../data/experiences"
+import { EXPERIENCE_GROUP_CONFIG } from "../data/destinations/types"
 import {
   LOCATION_CATEGORIES,
   LOCATION_EXPERIENCES,
@@ -108,6 +109,22 @@ for (const [value, meta] of pageBacked) {
   else if (page.slug !== (meta as { page: string }).page) problems.push(`experience ${value}: registry page "${(meta as { page: string }).page}" != slug "${page.slug}"`)
 }
 if (pageBacked.length !== experiencePages.length) problems.push(`page-backed experiences: registry ${pageBacked.length} vs data/experiences.ts ${experiencePages.length}`)
+// EXPERIENCE_GROUP_CONFIG (destination "What to do") must only list canonical
+// experiences, and must list every canonical one exactly once.
+const groupCount = new Map<string, number>()
+for (const [group, config] of Object.entries(EXPERIENCE_GROUP_CONFIG)) {
+  for (const exp of config.experiences) {
+    groupCount.set(exp, (groupCount.get(exp) ?? 0) + 1)
+    const meta = (LOCATION_EXPERIENCES as Registry)[exp]
+    if (!meta) problems.push(`EXPERIENCE_GROUP_CONFIG.${group}: "${exp}" is not a registered experience`)
+    else if (meta.status !== "canonical") problems.push(`EXPERIENCE_GROUP_CONFIG.${group}: "${exp}" is ${meta.status}, not canonical`)
+  }
+}
+for (const [exp, meta] of Object.entries(LOCATION_EXPERIENCES)) {
+  const n = groupCount.get(exp) ?? 0
+  if (meta.status === "canonical" && n === 0) problems.push(`EXPERIENCE_GROUP_CONFIG: canonical experience "${exp}" is in no group`)
+  if (n > 1) problems.push(`EXPERIENCE_GROUP_CONFIG: "${exp}" is in ${n} groups`)
+}
 const slugs = new Set(allLocations.map((l) => l.slug))
 for (const slug of Object.keys(LOCATION_RECOGNITIONS)) if (!slugs.has(slug)) problems.push(`recognitions.ts: unknown location slug "${slug}"`)
 
