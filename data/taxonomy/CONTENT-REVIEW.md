@@ -28,7 +28,8 @@ good evidence for that consolidation, not to reach a clean vocabulary after ever
 | 8 | 200-256 (57) | `radio-tower-cat-ba` -> `yen-tu-mountain` | 53 | done |
 | - | - | **Checkpoint 5** (all 257 reviewed) | - | [see below](#checkpoint-5---all-257-locations-reviewed) |
 
-**Reviewed: 257 / 257. Remaining: 0.** The review is complete; the vocabulary is not frozen (R11). Batch size is 50 from batch 6 onward (R23). Review depth is unchanged.
+**Reviewed: 257 / 257. Remaining: 0.** The review is complete; the vocabulary is not frozen (R11).
+Phase 2 (consolidation analysis, nothing applied): [CONSOLIDATION-PROPOSAL.md](./CONSOLIDATION-PROPOSAL.md). Batch size is 50 from batch 6 onward (R23). Review depth is unchanged.
 
 Note: batch 3 was requested as "from `cat-ba-island`". No location with that slug exists; `allLocations`
 index 40 is `can-ti-bridge`, so batch 3 starts there and covers the Cát Bà locations (`cat-ba-cannon-fort`,
