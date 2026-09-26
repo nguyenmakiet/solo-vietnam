@@ -12,7 +12,7 @@ export const taPaTemple: Location = {
   address: "Núi Tô, Tri Tôn, An Giang",
   type: ["temple", "cultural", "nature"],
   categories: ["religion", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Khmer Temple", "🏔️ 'Floating' Pillar Architecture", "🌃 Night Views", "khmer-culture", "buddhism"],
   bestTime: "Roughly 6-9 AM or 4-6 PM for soft light and the best photos - avoid midday, when the sun is harsh",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

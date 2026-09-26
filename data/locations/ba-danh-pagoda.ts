@@ -12,7 +12,7 @@ export const baDanhPagoda: Location = {
   address: "Thôn Đanh Xá, Ngọc Sơn, Kim Bảng, Hà Nam",
   type: ["pagoda", "cultural", "heritage"],
   categories: ["religion", "culture", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Famous Proverb Pagoda", "🌿 Riverside Setting", "🧘 Tứ Pháp Worship", "buddhism", "folk-religion"],
   bestTime: "Feb - Apr (pleasant weather and the annual Chùa Bà Đanh Festival in the 2nd lunar month, usually March), and Sep - Nov for cooler temperatures and fewer visitors",
   bestMonths: [2, 3, 4, 9, 10, 11],

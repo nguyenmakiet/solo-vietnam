@@ -10,7 +10,7 @@ export const cuChiTunnels: Location = {
   lat: "11.141519428740597",
   lng: "106.461571250992",
   address: "Phú Hiệp, Củ Chi, Thành phố Hồ Chí Minh",
-  type: ["heritage", "history", "attraction"],
+  type: ["historic-site", "heritage", "history", "attraction"],
   categories: ["history"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🪖 War History", "🕳️ Underground Tunnels", "🌿 Jungle Warfare", "📷 Living Museum", "vietnam-war"],

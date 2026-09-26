@@ -12,7 +12,7 @@ export const poNagarChamTowers: Location = {
   address: "2 Tháng 4, Phường Bắc Nha Trang, Khánh Hòa",
   type: ["temple", "heritage"],
   categories: ["religion", "history", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏯 Cham Towers", "⛩️ Active Hindu Temple", "🏛️ 8th Century", "cham-culture", "hinduism"],
   bestTime: "Year-round; dry season (Jan-Sep) gives the clearest skies, with Apr-Jun especially sunny - bring sun protection (hat, sunscreen, sunglasses) if visiting in these hotter months",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

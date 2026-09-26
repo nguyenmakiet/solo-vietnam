@@ -12,7 +12,7 @@ export const ngocSonTemple: Location = {
   address: "Đảo Ngọc Sơn, Hồ Hoàn Kiếm, Hoàn Kiếm, Hà Nội",
   type: ["temple", "heritage", "landmark"],
   categories: ["religion", "history", "culture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏯 Island Temple", "🌉 Red Bridge", "🐢 Turtle Museum", "⚔️ Legend of Sword", "folk-religion", "taoism"],
   bestTime: "Roughly 7-9 AM for the softest light, calmest atmosphere, and the fewest crowds on the Huc Bridge, before tour groups build up through the morning",
   bestMonths: [9, 10, 11, 1, 2, 3, 4],

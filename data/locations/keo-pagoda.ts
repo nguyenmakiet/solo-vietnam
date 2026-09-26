@@ -12,7 +12,7 @@ export const keoPagoda: Location = {
   address: "Xã Duy Nhất, Vũ Thư, Thái Bình",
   type: ["pagoda", "cultural", "heritage"],
   categories: ["religion", "architecture", "history"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 17th-Century Pagoda", "🏛️ National Relic", "📸 Architecture", "🌾 Red River Delta", "buddhism", "folk-religion"],
   bestTime: "Feb - Apr (spring festival season, dry weather); mid-Sep to early-Oct (lunar month 9) for the larger autumn festival",
   bestMonths: [2, 3, 4, 9, 10],

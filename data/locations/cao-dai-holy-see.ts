@@ -12,7 +12,7 @@ export const caoDaiHolySee: Location = {
   address: "Phạm Hộ Pháp, Hòa Thành, Tây Ninh",
   type: ["temple", "heritage", "cultural"],
   categories: ["religion", "architecture", "culture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🕌 Caodaism Holy See", "📿 Religion & Philosophy", "🏛️ Eclectic Architecture", "👁️ Divine Eye", "cao-dai"],
   bestTime: "Year-round - no bad season for this indoor attraction. Major festivals in September and the 1st lunar month draw thousands of additional pilgrims. Daily noon ceremony (12:00 PM) is the most accessible for visitors.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

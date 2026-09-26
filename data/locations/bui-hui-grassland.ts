@@ -10,7 +10,7 @@ export const buiHuiGrassland: Location = {
   lat: 14.733767915481186,
   lng: 108.78824450755181,
   address: "Ba Trang, Ba Tơ, Quảng Ngãi",
-  type: ["mountain", "nature", "forest"],
+  type: ["grassland", "mountain", "nature", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography", "culture"],
   tags: ["🌿 Highland Meadow", "🌸 Sim Blossom", "🌄 Cloud Level Views"],

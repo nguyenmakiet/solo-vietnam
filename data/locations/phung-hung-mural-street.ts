@@ -11,7 +11,7 @@ export const phungHungMuralStreet: Location = {
   lat: "21.03841229431943",
   lng: "105.84676137053688",
   address: "Phùng Hưng, Hoàn Kiếm, Hà Nội",
-  type: ["attraction", "cultural", "landmark"],
+  type: ["street", "attraction", "cultural", "landmark"],
   categories: ["culture"],
   experiences: ["photography", "walking-tour", "culture"],
   tags: ["🎨 Street Art", "🏯 Under the Railway", "🌸 Hanoi Hidden Gem"],

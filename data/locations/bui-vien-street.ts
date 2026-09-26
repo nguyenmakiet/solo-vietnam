@@ -10,7 +10,7 @@ export const buiVienStreet: Location = {
   lat: 10.767394484893734,
   lng: 106.69395623211263,
   address: "Bùi Viện, Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh",
-  type: ["attraction", "city"],
+  type: ["street", "attraction", "city"],
   categories: [],
   experiences: ["nightlife", "food", "walking-tour"],
   tags: ["🎉 Walking Street", "🍺 Bar Strip", "🌃 Neon Nights", "🌍 Backpacker Central"],

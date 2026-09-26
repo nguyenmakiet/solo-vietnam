@@ -12,7 +12,7 @@ export const hoanKiemLake: Location = {
   address: "Hồ Hoàn Kiếm, Hoàn Kiếm, Hà Nội",
   type: ["lake", "landmark", "attraction"],
   categories: ["culture", "history"],
-  experiences: ["walking-tour", "culture", "history", "photography", "temple-visit"],
+  experiences: ["walking-tour", "culture", "history", "photography", "religious-site-visit"],
   tags: ["🐢 Turtle Lake", "🏙️ Hanoi Heart", "🌅 Morning Walks", "🏯 Ngoc Son Temple"],
   bestTime: "Aug - Oct (autumn, cool and dry - most pleasant for walking). Oct - Apr more broadly for cool dry season weather; weekend pedestrian zone creates the best atmosphere year-round.",
   bestMonths: [8, 9, 10, 11, 12, 1, 2, 3, 4],

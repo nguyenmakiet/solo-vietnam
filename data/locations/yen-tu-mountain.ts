@@ -12,7 +12,7 @@ export const yenTuMountain: Location = {
   address: "Thượng Yên Công, Uông Bí, Quảng Ninh",
   type: ["mountain", "nature", "temple", "heritage"],
   categories: ["religion", "nature", "history"],
-  experiences: ["trekking", "culture", "history", "photography", "temple-visit", "cable-car"],
+  experiences: ["trekking", "culture", "history", "photography", "religious-site-visit", "cable-car"],
   tags: ["⛰️ Sacred Peak", "🛕 Buddhist Pilgrimage", "🥾 Summit Trek", "🌲 Ancient Forest", "buddhism", "medieval-vietnam"],
   bestTime: "Apr - Jun (quiet, comfortable weather). Jan - Mar (lunar) for the festival atmosphere - culturally extraordinary but extremely crowded. Avoid the Saturday after the first full moon of Tết - the single busiest day of the year.",
   bestMonths: [4, 5, 6, 10, 11, 12],

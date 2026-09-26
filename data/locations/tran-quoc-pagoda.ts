@@ -12,7 +12,7 @@ export const tranQuocPagoda: Location = {
   address: "Thanh Niên, Yên Phụ, Tây Hồ, Hà Nội",
   type: ["pagoda", "heritage", "landmark"],
   categories: ["religion", "history", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Oldest Pagoda", "🌅 West Lake Views", "🏯 11-Tier Stupa", "📷 Sunset Photography", "buddhism"],
   bestTime: "Oct - Apr (cool dry season; sunset visits in any season are worthwhile for the West Lake light)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

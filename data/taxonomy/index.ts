@@ -73,3 +73,4 @@ export function normalizeLocationTaxonomy(location: TaxonomyFields): NormalizedL
     },
   }
 }
+export * from "./recognitions"

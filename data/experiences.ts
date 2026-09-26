@@ -1,4 +1,4 @@
-import type { CanonicalLocationExperience } from "./taxonomy/experiences"
+import type { PageBackedLocationExperience } from "./taxonomy/experiences"
 
 export type ExperienceSlug =
   | "beaches"
@@ -22,8 +22,8 @@ export type ExperienceSlug =
   | "motorcycling"
   | "shopping"
 
-// Canonical (page-backed) experience values live in data/taxonomy/experiences.ts.
-export type ExperienceValue = CanonicalLocationExperience
+// Page-backed experience values: entries with `page` in data/taxonomy/experiences.ts.
+export type ExperienceValue = PageBackedLocationExperience
 
 export type Experience = {
   slug: ExperienceSlug

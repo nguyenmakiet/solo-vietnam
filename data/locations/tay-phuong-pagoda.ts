@@ -12,7 +12,7 @@ export const tayPhuongPagoda: Location = {
   address: "Thạch Xá, Thạch Thất, Hà Nội",
   type: ["pagoda", "cultural", "heritage"],
   categories: ["religion", "architecture", "history"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 16th-Century Origins", "🏛️ National Special Relic", "🪨 Hilltop Pagoda", "📸 Architecture & Statues", "buddhism"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat on the climb)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

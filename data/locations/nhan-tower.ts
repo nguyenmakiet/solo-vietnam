@@ -12,7 +12,7 @@ export const nhanTower: Location = {
   address: "72 Lê Trung Kiên, Phường 1, TP. Tuy Hòa, Phú Yên",
   type: ["temple", "cultural"],
   categories: ["religion", "history", "architecture"],
-  experiences: ["photography", "culture", "history", "walking-tour", "temple-visit"],
+  experiences: ["photography", "culture", "history", "walking-tour", "religious-site-visit"],
   tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night", "cham-culture"],
   bestTime: "Roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],

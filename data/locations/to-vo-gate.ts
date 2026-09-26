@@ -10,7 +10,7 @@ export const toVoGate: Location = {
   lat: 15.390100951312618,
   lng: 109.09934087255056,
   address: "An Hải, Lý Sơn, Quảng Ngãi",
-  type: ["landmark", "nature"],
+  type: ["rock-formation", "landmark", "nature"],
   categories: ["nature"],
   experiences: ["photography", "nature"],
   tags: [

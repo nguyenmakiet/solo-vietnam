@@ -3,11 +3,14 @@ import { toTaxonomyKey, type TaxonomyMeta } from "./shared"
 // ─── Location "experiences" ──────────────────────────────────
 // Answers: "What can a traveler do or experience here?" (includes activities).
 //
-// "canonical" keys are the values backed by a public /experiences/* page
-// (the ExperienceValue union in data/experiences.ts). "proposed" keys come
-// from the content review and have no page yet. Location.experiences stays
-// typed as string[] during the transition - values outside this list still
-// load and render; normalizeExperience() maps them where the meaning is clear.
+// Status and public pages are separate (Phase 2 status model):
+//   - `page` = the /experiences/[slug] page backing the value. Only the 20
+//     page-backed values form ExperienceValue (data/experiences.ts). Pages,
+//     slugs and membership are unchanged by the consolidation (R5).
+//   - `status: "canonical"` = agreed vocabulary, with or without a page.
+//   - `status: "deprecated"` + `replacedBy` = still valid in old data, not to
+//     be added; normalizeExperience() maps it to the replacement.
+// Location.experiences stays typed as string[] during the transition.
 
 export type LocationExperienceGroup =
   | "outdoor"
@@ -20,43 +23,49 @@ export const LOCATION_EXPERIENCES = {
   beach: {
     label: "Beach",
     group: "water",
-    status: "canonical",
+    status: "canonical", page: "beaches",
     description: "Overlaps with type 'beach' - may become more specific activities (see AUDIT.md)",
   },
-  trekking: { label: "Trekking", group: "outdoor", status: "canonical" },
-  camping: { label: "Camping", group: "outdoor", status: "canonical" },
-  caving: { label: "Caving", group: "outdoor", status: "canonical" },
-  snorkeling: { label: "Snorkeling", group: "water", status: "canonical" },
-  kayaking: { label: "Kayaking", group: "water", status: "canonical" },
+  trekking: {
+    label: "Trekking",
+    group: "outdoor",
+    status: "canonical",
+    page: "trekking",
+    description: "Longer, demanding, multi-hour/multi-day route (R12). A sibling of 'hiking', not a supertype",
+  },
+  camping: { label: "Camping", group: "outdoor", status: "canonical", page: "camping" },
+  caving: { label: "Caving", group: "outdoor", status: "canonical", page: "caving" },
+  snorkeling: { label: "Snorkeling", group: "water", status: "canonical", page: "snorkeling" },
+  kayaking: { label: "Kayaking", group: "water", status: "canonical", page: "kayaking" },
   food: {
     label: "Food",
     group: "food-and-local-life",
-    status: "canonical",
+    status: "canonical", page: "food",
     description: "Overlaps with a future 'food' category (see AUDIT.md)",
   },
   culture: {
     label: "Culture",
     group: "culture",
-    status: "canonical",
+    status: "canonical", page: "culture",
     description: "Overlaps with a future 'culture' category (see AUDIT.md)",
   },
   history: {
     label: "History",
     group: "culture",
-    status: "canonical",
+    status: "canonical", page: "history",
     description: "Overlaps with a future 'history' category (see AUDIT.md)",
   },
-  photography: { label: "Photography", group: "sightseeing", status: "canonical" },
-  markets: { label: "Markets", group: "food-and-local-life", status: "canonical" },
-  nightlife: { label: "Nightlife", group: "food-and-local-life", status: "canonical" },
-  "walking-tour": { label: "Walking Tour", group: "culture", status: "canonical" },
-  cycling: { label: "Cycling", group: "outdoor", status: "canonical" },
-  "boat-tour": { label: "Boat Tour", group: "water", status: "canonical" },
-  "cable-car": { label: "Cable Car", group: "sightseeing", status: "canonical" },
-  homestay: { label: "Homestay", group: "culture", status: "canonical" },
-  wildlife: { label: "Wildlife", group: "outdoor", status: "canonical" },
-  motorcycling: { label: "Motorcycling", group: "outdoor", status: "canonical" },
-  shopping: { label: "Shopping", group: "food-and-local-life", status: "canonical" },
+  photography: { label: "Photography", group: "sightseeing", status: "canonical", page: "photography" },
+  markets: { label: "Markets", group: "food-and-local-life", status: "canonical", page: "markets" },
+  nightlife: { label: "Nightlife", group: "food-and-local-life", status: "canonical", page: "nightlife" },
+  "walking-tour": { label: "Walking Tour", group: "culture", status: "canonical", page: "walking-tours" },
+  cycling: { label: "Cycling", group: "outdoor", status: "canonical", page: "cycling" },
+  "boat-tour": { label: "Boat Tour", group: "water", status: "canonical", page: "boat-tours" },
+  "cable-car": { label: "Cable Car", group: "sightseeing", status: "canonical", page: "cable-cars" },
+  homestay: { label: "Homestay", group: "culture", status: "canonical", page: "homestays" },
+  wildlife: { label: "Wildlife", group: "outdoor", status: "canonical", page: "wildlife" },
+  motorcycling: { label: "Motorcycling", group: "outdoor", status: "canonical", page: "motorcycling" },
+  shopping: { label: "Shopping", group: "food-and-local-life", status: "canonical", page: "shopping" },
 
   // ── Proposed during the content review (CONTENT-REVIEW.md) ──
   swimming: { label: "Swimming", group: "water", status: "proposed" },
@@ -64,8 +73,9 @@ export const LOCATION_EXPERIENCES = {
   "temple-visit": {
     label: "Temple Visit",
     group: "culture",
-    status: "proposed",
-    description: "Visiting an active place of worship - pagoda, temple, shrine",
+    status: "deprecated",
+    replacedBy: "religious-site-visit",
+    description: "Consolidated into religious-site-visit (Phase 2, owner decision). Do not add",
   },
   fishing: {
     label: "Fishing",
@@ -79,22 +89,24 @@ export const LOCATION_EXPERIENCES = {
   hiking: {
     label: "Hiking",
     group: "outdoor",
-    status: "proposed",
-    description: "Day hike / trail walk. During the review only added where no trekking exists (CONTENT-REVIEW D10)",
+    status: "canonical",
+    description: "Day hike / trail walk (R12). A sibling of 'trekking', not a subtype - a location may have both",
   },
   "religious-site-visit": {
     label: "Religious Site Visit",
     group: "culture",
-    status: "proposed",
-    description: "Neutral candidate for visiting any active place of worship. Coexists with temple-visit until consolidation (CONTENT-REVIEW R24, D12)",
+    status: "canonical",
+    description: "Visiting any active place of worship (pagoda, temple, shrine, church...). The tradition is carried by a religion tag",
   },
-} as const satisfies Record<string, TaxonomyMeta<LocationExperienceGroup>>
+} as const satisfies Record<string, TaxonomyMeta<LocationExperienceGroup> & { page?: string }>
 
 export type LocationExperience = keyof typeof LOCATION_EXPERIENCES
 
-// Experiences backed by a public /experiences/* page (status "canonical").
-export type CanonicalLocationExperience = {
-  [K in LocationExperience]: (typeof LOCATION_EXPERIENCES)[K]["status"] extends "canonical" ? K : never
+type ExperienceEntry = (typeof LOCATION_EXPERIENCES)[LocationExperience]
+
+// Experiences backed by a public /experiences/* page (entries with `page`).
+export type PageBackedLocationExperience = {
+  [K in LocationExperience]: (typeof LOCATION_EXPERIENCES)[K] extends { page: string } ? K : never
 }[LocationExperience]
 
 export function isLocationExperience(value: string): value is LocationExperience {
@@ -102,17 +114,20 @@ export function isLocationExperience(value: string): value is LocationExperience
 }
 
 // ─── Legacy aliases ──────────────────────────────────────────
-// legacy value (as toTaxonomyKey output) -> canonical experience.
-// Only unambiguous equivalences. Values found in data without a clear
-// canonical target (swimming, diving, surfing, hiking...) are left unmapped
-// and listed in AUDIT.md for the vocabulary review.
+// legacy value (as toTaxonomyKey output) -> experience. Only true 1:1
+// equivalences (EQ). Deprecated registry values resolve via `replacedBy`.
 export const LEGACY_EXPERIENCE_ALIASES: Readonly<Record<string, LocationExperience>> = {
   "walking-tours": "walking-tour",
 }
 
+function resolveReplacement(value: LocationExperience): LocationExperience {
+  const entry: ExperienceEntry & { replacedBy?: string } = LOCATION_EXPERIENCES[value]
+  return entry.replacedBy && isLocationExperience(entry.replacedBy) ? entry.replacedBy : value
+}
+
 export function normalizeExperience(value: string): LocationExperience | null {
-  if (isLocationExperience(value)) return value
+  if (isLocationExperience(value)) return resolveReplacement(value)
   const key = toTaxonomyKey(value)
-  if (isLocationExperience(key)) return key
+  if (isLocationExperience(key)) return resolveReplacement(key)
   return LEGACY_EXPERIENCE_ALIASES[key] ?? null
 }

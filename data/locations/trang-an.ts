@@ -12,7 +12,7 @@ export const trangAn: Location = {
   address: "Tràng An, Hoa Lư, Ninh Bình",
   type: ["nature", "heritage"],
   categories: ["nature", "history"],
-  experiences: ["boat-tour", "caving", "photography", "culture", "history", "temple-visit"],
+  experiences: ["boat-tour", "caving", "photography", "culture", "history", "religious-site-visit"],
   tags: ["🚣 Boat Tour", "🪨 UNESCO Heritage", "⛩️ Temples"],
   bestTime: "Jan - Mar (cool, clear, dry - peak season). Sep - Nov (quieter, mild). Apr - Jun for sunny water reflections.",
   bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11],

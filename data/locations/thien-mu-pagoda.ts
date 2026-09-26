@@ -12,7 +12,7 @@ export const thienMuPagoda: Location = {
   address: "Kim Long, Huế, Thừa Thiên Huế",
   type: ["pagoda", "cultural"],
   categories: ["religion", "history", "architecture"],
-  experiences: ["history", "culture", "photography", "boat-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "boat-tour", "religious-site-visit"],
   tags: ["⛩️ Oldest Pagoda in Huế", "🏯 7-Tier Tower", "🌊 Perfume River", "buddhism"],
   bestTime: "Feb - Apr (cool, dry weather, clear skies, and the best overall conditions for sightseeing and photography); Sep - Nov (pleasant temperatures before the wettest part of the year). Jan - Mar coincides with the spring pilgrimage season and can be busier.",
   bestMonths: [2, 3, 4, 9, 10, 11],

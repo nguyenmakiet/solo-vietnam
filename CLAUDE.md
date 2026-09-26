@@ -159,11 +159,14 @@ Three fields are typed enums and MUST use values from the source-of-truth files.
 - `"nature"` is a `LocationType`, NOT an `ExperienceValue` - do not put it in `experiences`
 - `"viewpoint"` does not exist in any enum - use `["nature", "landmark"]` for scenic lookouts
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
-- `"swimming"`, `"surfing"` and `"temple-visit"` are `proposed` experiences (added by the taxonomy content review) - valid, but they have no `/experiences/*` page yet
+- `"swimming"` and `"surfing"` are `proposed` experiences (added by the taxonomy content review) - valid, but they have no `/experiences/*` page yet
+- `"hiking"` and `"religious-site-visit"` are `canonical` experiences without a public page (Phase 2). `hiking` and `trekking` are separate sibling concepts - a location may have both
+- `"temple-visit"` is `deprecated` - use `"religious-site-visit"` for any active place of worship (the tradition goes in a religion tag such as `buddhism`)
+- Official designations (UNESCO, Ramsar, national relic...) go in `data/taxonomy/recognitions.ts`, not in `tags`
 
 **Before writing a new location file**, re-read `data/taxonomy/` (types, categories, experiences, tags) to confirm the current valid values. The lists above are accurate as of the rule's creation but may evolve.
 
-Taxonomy migration is in progress - see `data/taxonomy/AUDIT.md` for semantics and legacy aliases, and `data/taxonomy/CONTENT-REVIEW.md` for the location-by-location review log, the owner rules (R1-R31), working decisions (D1-D12) and the full-review Checkpoint 5. Run `npm run audit:taxonomy` (read-only) to see current canonical/alias/unmapped counts. Do not bulk-rewrite existing Location taxonomy values.
+Taxonomy migration is in progress - see `data/taxonomy/AUDIT.md` for semantics and legacy aliases, and `data/taxonomy/CONTENT-REVIEW.md` for the location-by-location review log, the owner rules (R1-R31), working decisions (D1-D12) and the full-review Checkpoint 5. Phase 2 consolidation decisions and progress: `data/taxonomy/CONSOLIDATION-PROPOSAL.md`. Run `npm run audit:taxonomy` (read-only) to see current canonical/alias/unmapped counts. Do not bulk-rewrite existing Location taxonomy values.
 
 ---
 

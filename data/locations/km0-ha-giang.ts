@@ -10,7 +10,7 @@ export const km0HaGiang: Location = {
   lat: 22.827448496788932,
   lng: 104.98418992590295,
   address: "Đường Nguyễn Trãi, Phường Minh Khai, Thành phố Hà Giang",
-  type: ["landmark", "attraction"],
+  type: ["monument", "landmark", "attraction"],
   categories: [],
   experiences: ["photography", "motorcycling", "culture"],
   tags: ["📍 Km 0 Marker", "🏍️ Ha Giang Loop Start", "📷 Check-in Spot", "🏔️ Gateway to the Plateau"],

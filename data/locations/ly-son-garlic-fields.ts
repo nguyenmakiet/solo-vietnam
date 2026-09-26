@@ -10,7 +10,7 @@ export const lySonGarlicFields: Location = {
   lat: 15.38142400159663,
   lng: 109.11882432420393,
   address: "Lý Sơn Island (both Đảo Lớn and Đảo Bé), Quảng Ngãi",
-  type: ["nature"],
+  type: ["farmland", "nature"],
   categories: ["culture", "nature"],
   experiences: ["photography", "culture"],
   tags: [

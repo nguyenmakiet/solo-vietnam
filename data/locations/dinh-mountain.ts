@@ -12,7 +12,7 @@ export const dinhMountain: Location = {
   address: "Mỹ Xuân, Phú Mỹ (formerly Tân Thành district), Bà Rịa – Vũng Tàu",
   type: ["mountain", "nature", "temple"],
   categories: ["nature"],
-  experiences: ["trekking", "photography", "culture", "camping", "swimming", "temple-visit"],
+  experiences: ["trekking", "photography", "culture", "camping", "swimming", "religious-site-visit"],
   tags: ["⛰️ Coastal Peak", "🥾 Summit Trek", "🛕 Multiple Pagodas", "🚁 Former Helicopter Pad"],
   bestTime: "Start early to beat the midday heat, and to have the best chance of clear summit views before any afternoon haze builds",
   bestMonths: [1, 2, 3, 4, 11, 12],

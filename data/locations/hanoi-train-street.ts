@@ -10,7 +10,7 @@ export const hanoiTrainStreet: Location = {
   lat: "21.018024290863416",
   lng: "105.8408455979318",
   address: "Phùng Hưng, Hoàn Kiếm, Hà Nội",
-  type: ["attraction", "landmark", "cultural"],
+  type: ["street", "attraction", "landmark", "cultural"],
   categories: ["culture"],
   experiences: ["photography", "culture", "walking-tour"],
   tags: ["🚂 Train Passes Meters Away", "📷 Iconic Photo Spot", "☕ Trackside Cafes", "🏘️ Residential Street"],

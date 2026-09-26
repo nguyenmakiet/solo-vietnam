@@ -10,7 +10,7 @@ export const vinWondersPhuQuoc: Location = {
   lat: "10.340924472067309",
   lng: "103.8546052948659",
   address: "Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang",
-  type: ["attraction"],
+  type: ["theme-park", "attraction"],
   categories: [],
   experiences: ["beach", "photography", "walking-tour"],
   tags: ["🎡 Theme Park", "🏖️ Private Beach", "🎠 Family Activities", "🌊 Water Park"],

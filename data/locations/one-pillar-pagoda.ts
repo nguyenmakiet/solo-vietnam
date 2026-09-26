@@ -12,7 +12,7 @@ export const onePillarPagoda: Location = {
   address: "Đội Cấn, Ba Đình, Hà Nội",
   type: ["pagoda", "heritage", "landmark"],
   categories: ["religion", "architecture", "history"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏛️ National Symbol", "🪷 Lotus Pagoda", "👑 11th Century", "📷 Iconic Architecture", "buddhism", "medieval-vietnam"],
   bestTime: "Oct - Apr (cool dry season; the pagoda is photogenic year-round but spring lotus blooms enhance the setting)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

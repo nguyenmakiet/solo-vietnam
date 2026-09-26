@@ -10,7 +10,7 @@ export const frenchVillageBaNa: Location = {
   lat: "15.997655145396397",
   lng: "107.98932655723252",
   address: "Bà Nà Hills, Hoà Ninh, Hoà Vang, Đà Nẵng",
-  type: ["attraction"],
+  type: ["theme-park", "attraction"],
   categories: [],
   experiences: ["photography", "walking-tour", "food"],
   tags: ["🏰 French Gothic Architecture", "🎡 Fantasy Park", "🍷 Debay Wine Cellar"],

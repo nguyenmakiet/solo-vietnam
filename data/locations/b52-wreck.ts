@@ -10,7 +10,7 @@ export const b52Wreck: Location = {
   lat: "21.037935182346573",
   lng: "105.82708087218539",
   address: "Ngõ 55 Hoàng Hoa Thám, Ngọc Hà, Ba Đình, Hà Nội",
-  type: ["history", "landmark", "attraction"],
+  type: ["historic-site", "history", "landmark", "attraction"],
   categories: ["history"],
   experiences: ["history", "photography", "walking-tour"],
   tags: ["✈️ B52 Wreckage", "🏛️ War History", "📷 Hidden Alley", "🇻🇳 Christmas Bombing 1972", "vietnam-war"],

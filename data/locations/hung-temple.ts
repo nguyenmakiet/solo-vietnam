@@ -12,7 +12,7 @@ export const hungTemple: Location = {
   address: "Hy Cương, Việt Trì, Phú Thọ",
   type: ["temple", "heritage", "history", "cultural"],
   categories: ["religion", "history", "culture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏛️ National Pilgrimage", "🛕 UNESCO Intangible Cultural Heritage", "⛰️ Sacred Hill", "folk-religion"],
   bestTime: "Early morning gives the coolest temperatures for the climb and the quietest atmosphere at each temple before day-trip crowds build",
   bestMonths: [1, 2, 3, 4, 5, 10, 11, 12],

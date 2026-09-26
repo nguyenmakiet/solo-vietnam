@@ -12,7 +12,7 @@ export const marbleMountains: Location = {
   address: "81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng",
   type: ["mountain", "heritage", "cultural", "history", "landmark", "cave"],
   categories: ["religion", "nature", "history"],
-  experiences: ["history", "culture", "photography", "walking-tour", "trekking", "temple-visit", "caving"],
+  experiences: ["history", "culture", "photography", "walking-tour", "trekking", "religious-site-visit", "caving"],
   tags: ["🪨 Five Elements Mountains", "🕌 Buddhist Caves", "☀️ Sunbeam Cave", "🏯 Cham Heritage", "buddhism"],
   bestTime: "Mar - Sep (best weather and clearest light for cave photography; avoid rainy season Oct-Feb when surfaces are slippery and visibility poor)",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],

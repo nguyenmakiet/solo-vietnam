@@ -12,7 +12,7 @@ export const hoQuocPagoda: Location = {
   address: "Ấp Suối Lớn, Dương Tơ, Phú Quốc, Kiên Giang",
   type: ["pagoda", "temple", "landmark"],
   categories: ["religion", "architecture"],
-  experiences: ["culture", "history", "photography", "walking-tour", "temple-visit"],
+  experiences: ["culture", "history", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Largest Pagoda on Phú Quốc", "🏔️ Mountain-Backed, Sea-Facing", "🧘 Peaceful", "buddhism"],
   bestTime: "Roughly 5:45-6:15 AM for sunrise over the Gulf of Thailand lighting up the courtyard and jade statue, or 6-8 AM more broadly for good photo light while avoiding tour groups (which tend to arrive 9:30-11 AM); after 4 PM also works well to avoid the harshest sun",
   bestMonths: [1, 2, 3, 4, 11, 12],

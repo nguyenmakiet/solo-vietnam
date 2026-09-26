@@ -12,7 +12,7 @@ export const batPagodaSocTrang: Location = {
   address: "Mã Tộc, Châu Thành, Sóc Trăng",
   type: ["pagoda", "cultural", "heritage", "nature"],
   categories: ["religion", "culture", "architecture", "nature"],
-  experiences: ["culture", "history", "photography", "wildlife", "walking-tour", "temple-visit"],
+  experiences: ["culture", "history", "photography", "wildlife", "walking-tour", "religious-site-visit"],
   tags: ["🦇 Thousands of Bats", "🛕 Khmer Pagoda", "🌳 Ancient Trees", "khmer-culture", "khmer-architecture", "buddhism"],
   bestTime: "Year-round; morning (around 7-9 AM) gives softer light and a cooler, less crowded visit for appreciating the architecture, while late afternoon into dusk (roughly 16:00-18:00) is when the bats stir and eventually depart in a mass exodus - worth timing around whichever matters more to you, or allow enough time for both. Oct - Apr generally has the most comfortable weather",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

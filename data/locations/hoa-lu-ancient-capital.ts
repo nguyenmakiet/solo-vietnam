@@ -12,7 +12,7 @@ export const hoaLuAncientCapital: Location = {
   address: "Trường Yên, Hoa Lư, Ninh Bình",
   type: ["history", "heritage"],
   categories: ["history", "culture"],
-  experiences: ["history", "culture", "photography", "cycling", "temple-visit"],
+  experiences: ["history", "culture", "photography", "cycling", "religious-site-visit"],
   tags: ["🏯 10th Century Capital", "⛩️ Đinh & Lê Temples", "📖 Vietnam's First Capital", "medieval-vietnam"],
   bestTime: "Mar - May (festival season, golden rice fields, mild weather - ideal). Oct - Apr also good (dry season).",
   bestMonths: [1, 2, 3, 4, 5, 10, 11, 12],

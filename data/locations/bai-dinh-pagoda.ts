@@ -12,7 +12,7 @@ export const baiDinhPagoda: Location = {
   address: "Gia Sinh, Gia Viễn, Ninh Bình",
   type: ["pagoda", "heritage"],
   categories: ["religion", "culture", "architecture"],
-  experiences: ["culture", "history", "photography", "walking-tour", "temple-visit"],
+  experiences: ["culture", "history", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛩️ Largest Pagoda in Vietnam", "🏯 500 Arhat Statues", "🔔 Giant Bell", "buddhism"],
   bestTime: "Oct - Apr (dry season, cool weather - best for walking). Jan - Mar lunar calendar for festival atmosphere (also the most crowded period - avoid if seeking tranquility).",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

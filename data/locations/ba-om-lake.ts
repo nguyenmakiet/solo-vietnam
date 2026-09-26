@@ -12,7 +12,7 @@ export const baOmLake: Location = {
   address: "Khóm 3, Phường 8, Thành phố Trà Vinh, Trà Vinh",
   type: ["lake", "cultural", "nature"],
   categories: ["culture", "religion", "nature"],
-  experiences: ["culture", "history", "photography", "walking-tour", "cycling", "temple-visit"],
+  experiences: ["culture", "history", "photography", "walking-tour", "cycling", "religious-site-visit"],
   tags: ["🌊 Ancient Khmer Lake", "🛕 Âng Pagoda", "🌳 400-Year-Old Trees", "khmer-culture"],
   bestTime: "Nov - Apr (dry season; best for temple visits and cycling the lake circuit)",
   bestMonths: [1, 2, 3, 4, 11, 12],

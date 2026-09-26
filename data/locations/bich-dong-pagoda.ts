@@ -12,7 +12,7 @@ export const bichDongPagoda: Location = {
   address: "Văn Lâm, Ninh Hải, Hoa Lư, Ninh Bình",
   type: ["pagoda", "heritage", "cave"],
   categories: ["religion", "culture", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "cycling", "temple-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "cycling", "religious-site-visit"],
   tags: ["⛩️ Cave Pagoda", "🏔️ Three-Tier Temple", "🚲 Cycling from Tam Cốc", "buddhism"],
   bestTime: "Late May (timing varies slightly by year; golden rice fields, best photography). Mar - Apr (dry, cool). Visit around 4 PM for golden afternoon light over the karst landscape.",
   bestMonths: [3, 4, 5, 6],

@@ -12,7 +12,7 @@ export const linhPhuocPagoda: Location = {
   address: "120 Tự Phước, Trại Mát, Đà Lạt, Lâm Đồng",
   type: ["pagoda", "heritage"],
   categories: ["religion", "architecture"],
-  experiences: ["culture", "photography", "walking-tour", "history", "temple-visit"],
+  experiences: ["culture", "photography", "walking-tour", "history", "religious-site-visit"],
   tags: ["⛩️ Ceramic Mosaic Pagoda", "🐉 Dragon Staircase", "🚂 Train Access", "buddhism"],
   bestTime: "Year-round; morning for best photography light on the mosaics, and to arrive ahead of the tour buses",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

@@ -1,9 +1,10 @@
 # Phase 2 - Taxonomy Consolidation Proposal
 
-**Status: DRAFT FOR OWNER REVIEW. Analysis and design only.**
-Nothing in this document has been applied. No Location data, taxonomy registry, alias, URL, `/experiences/*` page,
-UI or IA was changed to produce it. Every change below is a *proposal* that needs explicit approval, step by step
-(see [13. Migration plan](#13-proposed-phase-2-migration-plan)).
+**Status: owner decisions received (Phase 2, round 1).** The approved safe registry work and the approved per-location
+changes are applied. What was applied, the before/after report and the owner decisions are in [PHASE2-LOG.md](./PHASE2-LOG.md).
+The per-location decisions still open are in [PHASE2-MANUAL-DECISIONS.md](./PHASE2-MANUAL-DECISIONS.md).
+The analysis below is kept as written. Where an owner decision differs from a recommendation here (e.g. `sand-dunes`
+rejected, `cable-car`/`nature-reserve`/`grassland` approved), **the decision in PHASE2-LOG.md wins**.
 
 Evidence base:
 - all 257 reviewed Locations (state after batch 8, commit `65c69d7`)

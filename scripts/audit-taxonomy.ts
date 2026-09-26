@@ -11,7 +11,13 @@
  */
 
 import { allLocations } from "../data/all-locations"
+import { experiences as experiencePages } from "../data/experiences"
 import {
+  LOCATION_CATEGORIES,
+  LOCATION_EXPERIENCES,
+  LOCATION_RECOGNITIONS,
+  LOCATION_TYPES,
+  tagStatus,
   isLocationCategory,
   isLocationExperience,
   isLocationTag,
@@ -71,3 +77,44 @@ audit("type", types, isLocationType, (v) => (isLocationType(v) ? v : null))
 audit("categories", categories, isLocationCategory, (v) => (isLocationCategory(v) ? v : null))
 audit("experiences", experiences, isLocationExperience, normalizeExperience)
 audit("tags", tags, isLocationTag, normalizeLegacyTag)
+
+// ── Registry status of the values in use (Phase 2 status model) ──
+type Registry = Record<string, { status: string; replacedBy?: string }>
+function statusReport(field: string, values: string[], registry: Registry, fallback = "unregistered") {
+  const byStatus = new Map<string, number>()
+  const deprecated = new Map<string, number>()
+  for (const v of values) {
+    const status = registry[v]?.status ?? fallback
+    byStatus.set(status, (byStatus.get(status) ?? 0) + 1)
+    if (status === "deprecated") deprecated.set(v, (deprecated.get(v) ?? 0) + 1)
+  }
+  console.log(`  ${field.padEnd(12)} ${[...byStatus].map(([s, n]) => `${s} ${n}`).join(" · ")}`)
+  for (const [v, n] of deprecated) console.log(`      deprecated in use: ${v} (${n}) -> ${registry[v].replacedBy ?? "no replacement"}`)
+}
+console.log("\n── status of values in use ──")
+statusReport("type", types, LOCATION_TYPES as Registry)
+statusReport("categories", categories, LOCATION_CATEGORIES as Registry)
+statusReport("experiences", experiences, LOCATION_EXPERIENCES as Registry)
+const tagStatusCounts = new Map<string, number>()
+for (const t of tags) tagStatusCounts.set(tagStatus(t), (tagStatusCounts.get(tagStatus(t)) ?? 0) + 1)
+console.log(`  ${"tags".padEnd(12)} ${[...tagStatusCounts].map(([s, n]) => `${s} ${n}`).join(" · ")}`)
+
+// ── Consistency checks (fail loudly, never write) ──
+const problems: string[] = []
+const pageBacked = Object.entries(LOCATION_EXPERIENCES).filter(([, m]) => "page" in m)
+for (const [value, meta] of pageBacked) {
+  const page = experiencePages.find((e) => e.value === value)
+  if (!page) problems.push(`experience ${value} has page "${(meta as { page: string }).page}" but no entry in data/experiences.ts`)
+  else if (page.slug !== (meta as { page: string }).page) problems.push(`experience ${value}: registry page "${(meta as { page: string }).page}" != slug "${page.slug}"`)
+}
+if (pageBacked.length !== experiencePages.length) problems.push(`page-backed experiences: registry ${pageBacked.length} vs data/experiences.ts ${experiencePages.length}`)
+const slugs = new Set(allLocations.map((l) => l.slug))
+for (const slug of Object.keys(LOCATION_RECOGNITIONS)) if (!slugs.has(slug)) problems.push(`recognitions.ts: unknown location slug "${slug}"`)
+
+console.log("\n── consistency ──")
+console.log(`  recognition records: ${Object.values(LOCATION_RECOGNITIONS).flat().length} on ${Object.keys(LOCATION_RECOGNITIONS).length} locations`)
+if (problems.length === 0) console.log("  OK")
+else {
+  for (const p of problems) console.log(`  PROBLEM: ${p}`)
+  process.exitCode = 1
+}
