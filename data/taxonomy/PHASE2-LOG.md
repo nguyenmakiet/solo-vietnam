@@ -511,3 +511,21 @@ Removed values: nature 134, cultural 62, heritage 50, landmark 48, attraction 32
 | `/locations` | 245 locations; 43 type / 28 experience / 8 category options. Shortcuts unchanged except Cultural = 79 (`category=culture&category=religion`). `?type=nature` → `?category=nature` (143), `?type=cultural` → `?category=culture` (57); `?type=heritage|landmark|attraction|history` ignored (245) |
 | Mixed URLs | `?type=nature&type=cave` → `?type=cave&category=nature` (14, cave AND nature); `?type=cultural&type=pagoda` → pagoda AND culture (5); `?type=landmark&type=bridge` → bridge (6, landmark ignored); `?type=heritage&category=history` → history (62) |
 | Homepage / experience pages | discovery links unchanged (forest 19, homestay 13, motorcycling 32, nightlife 8, citadel + history 5); experience pages list the same locations (history 76, culture 116, photography 235, beaches 45, trekking 74). Location heroes drop the broad labels (e.g. "Market · Ho Chi Minh City") |
+
+---
+
+## 14. Final cleanup and audit (after `be3af00`)
+
+No Location data change.
+
+| Area | Result |
+|------|--------|
+| Leftover references | None in code, config, blog content or root docs. `BROAD_PENDING` was already removed in `be3af00`. Destination `tags` (e.g. "heritage", "attraction" on destination cards) are editorial destination labels, not the Location taxonomy - left unchanged. The Phase 0/1 tables in AUDIT.md and the earlier sections of this log are kept as history |
+| Dead code removed | The transitional audit branch for a canonical broad type with a `pendingDecision`, and the now unused `pendingDecision` field of `TaxonomyMeta`. The audit now requires all six broad types to be `deprecated` with the owner-table replacement (tested: a canonical `landmark` fails) |
+| Stale comment | `data/location.ts` `categories` comment (themes + badges; themes are the `/locations` category filter) |
+| Registry / contract | type 44 canonical + 6 deprecated; categories 11; experiences 28 canonical + 2 proposed + 1 deprecated; tags 24. Audit OK |
+| Validation | tsc OK · ESLint 64 problems (baseline) · build 398 pages · search index identical to `be3af00`, no broad-only labels, no duplicates |
+| Browser smoke | `/locations`, category filter, `?type=` aliases and mixed URLs, Cultural shortcut (79), homepage links and experience pages identical to Phase 6; site search works ("nature", "culture", "history", "heritage" return results; result click-through navigates); sitemap 390 URLs, none with a query string (257 locations, 20 experiences, 21 destinations); canonical `/locations` for filtered URLs, `/locations/<slug>` for location pages |
+
+Note for Preview QA: `public/search-index.json` in git is stale; `npm run build` regenerates it before `next build`, so the
+Vercel build serves the current index.

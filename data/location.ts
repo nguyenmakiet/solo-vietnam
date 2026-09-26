@@ -41,7 +41,7 @@ export type Location = {
   // Taxonomy fields - vocabularies and semantics in data/taxonomy/.
   // experiences/tags stay string[] during the transition (legacy values allowed).
   type: LocationType | LocationType[] // what is this place?
-  categories?: LocationCategory[] // broad travel themes (currently editorial badges - see data/taxonomy/AUDIT.md)
+  categories?: LocationCategory[] // travel themes + editorial badges (data/taxonomy/categories.ts); themes are the /locations category filter
   experiences: string[] // what can a traveler do here?
   tags: string[] // specific interest / influence / period (currently emoji display labels)
   entranceFee?: string

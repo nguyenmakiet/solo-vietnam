@@ -82,7 +82,7 @@ Read-only. It prints the usage report and then enforces the contract. It **exits
 | Registry integrity | an invalid status, a `deprecated` value without exactly one of `replacedBy` / `replacedByCategory` / `noReplacement`, `replacedBy` on a non-deprecated value or pointing to a non-canonical value, `replacedByCategory` outside `type`, on a non-deprecated value or pointing to a non-canonical category, `noReplacement` outside the broad types, on a non-deprecated value or without a reason, a `broader` target that is missing/non-canonical/self/cyclic, or a `page` on a non-canonical value or outside experiences |
 | Public pages | a registry `page` disagrees with `data/experiences.ts` (slug or count) |
 | `EXPERIENCE_GROUP_CONFIG` | a non-canonical (unregistered, proposed, deprecated) experience is listed, a canonical experience is missing, or one is in several groups |
-| Broad types | the broad type set differs from the owner table above, a canonical broad type has no `pendingDecision`, or a deprecated one has another replacement than the table or keeps its `pendingDecision` |
+| Broad types | the broad type set differs from the owner table above, a broad type is not `deprecated`, or it has another replacement than the table |
 | Aliases | an alias key shadows a registered key, an alias targets a non-canonical value, or a tag alias kind is not `equivalent`/`implies` |
 | Owner invariants | `french-colonial` does not imply `french-colonial-era`; any alias targets `french-influence`; the sibling pairs above become aliased, nested or replaced, or stop being canonical; `temple-visit` is not replaced by `religious-site-visit` |
 | Recognition side-car | a record points to an unknown location slug |

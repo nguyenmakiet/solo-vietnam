@@ -252,8 +252,8 @@ for (const [a, b, reg] of siblingPairs) {
   }
 }
 if (REGISTRIES.experiences["temple-visit"]?.replacedBy !== "religious-site-visit") problems.push(`"temple-visit" must be deprecated with replacedBy "religious-site-visit"`)
-// Broad types (owner decisions D1', D1''): each is either still canonical with a
-// pendingDecision, or deprecated with exactly the replacement below.
+// Broad types (owner decisions D1', D1''): all six are deprecated (Phase 2
+// migration), each with exactly the replacement below.
 const BROAD_TYPE_REPLACEMENT: Record<string, { category: string } | "none"> = {
   history: { category: "history" },
   nature: { category: "nature" },
@@ -266,18 +266,15 @@ const broadTypes = Object.entries(REGISTRIES.type).filter(([, m]) => m.group ===
 if (broadTypes.join() !== Object.keys(BROAD_TYPE_REPLACEMENT).sort().join())
   problems.push(`broad types [${broadTypes}] differ from the owner-decided set [${Object.keys(BROAD_TYPE_REPLACEMENT).sort()}]`)
 for (const [key, expected] of Object.entries(BROAD_TYPE_REPLACEMENT)) {
-  const meta = REGISTRIES.type[key] as Meta & { pendingDecision?: string }
+  const meta = REGISTRIES.type[key]
   if (!meta) continue
-  if (meta.status === "canonical") {
-    if (!meta.pendingDecision) problems.push(`type "${key}": canonical broad type without pendingDecision`)
-  } else if (meta.status !== "deprecated") {
-    problems.push(`type "${key}": broad type must be canonical or deprecated, not ${meta.status}`)
+  if (meta.status !== "deprecated") {
+    problems.push(`type "${key}": broad type must be deprecated, not ${meta.status}`)
   } else if (expected === "none") {
     if (meta.noReplacement === undefined) problems.push(`type "${key}" must be deprecated with noReplacement (owner decision)`)
   } else if (meta.replacedByCategory !== expected.category) {
     problems.push(`type "${key}" must be deprecated with replacedByCategory "${expected.category}" (owner decision)`)
   }
-  if (meta.status === "deprecated" && meta.pendingDecision) problems.push(`type "${key}": deprecated but still has a pendingDecision`)
 }
 
 // 7. Recognition side-car slugs.
