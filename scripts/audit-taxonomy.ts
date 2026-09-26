@@ -2,8 +2,9 @@
  * Read-only taxonomy audit for Location data.
  *
  * Reports, per taxonomy field, which production values are registered in
- * data/taxonomy (canonical or proposed), which resolve through a legacy
- * alias, and which are still unmapped.
+ * data/taxonomy, which resolve through a legacy alias, and which are legacy
+ * display labels. Then enforces the frozen taxonomy contract (see
+ * data/taxonomy/AUDIT.md "Frozen contract") and exits non-zero on any violation.
  * Never writes to any file.
  *
  * Usage: npm run audit:taxonomy
@@ -17,6 +18,9 @@ import {
   LOCATION_CATEGORIES,
   LOCATION_EXPERIENCES,
   LOCATION_RECOGNITIONS,
+  LOCATION_TAGS,
+  LEGACY_EXPERIENCE_ALIASES,
+  LEGACY_TAG_ALIAS_TABLE,
   LOCATION_TYPES,
   tagStatus,
   isLocationCategory,
@@ -100,8 +104,83 @@ const tagStatusCounts = new Map<string, number>()
 for (const t of tags) tagStatusCounts.set(tagStatus(t), (tagStatusCounts.get(tagStatus(t)) ?? 0) + 1)
 console.log(`  ${"tags".padEnd(12)} ${[...tagStatusCounts].map(([s, n]) => `${s} ${n}`).join(" · ")}`)
 
-// ── Consistency checks (fail loudly, never write) ──
+// ── Frozen contract checks (fail loudly, never write) ─────────────────────
+// The taxonomy is frozen (see data/taxonomy/AUDIT.md "Frozen contract").
+// Any violation below sets a non-zero exit code.
 const problems: string[] = []
+
+type Meta = { status: string; group?: string; replacedBy?: string; broader?: readonly string[]; page?: string }
+type Reg = Record<string, Meta>
+const REGISTRIES: Record<string, Reg> = {
+  type: LOCATION_TYPES as Reg,
+  categories: LOCATION_CATEGORIES as Reg,
+  experiences: LOCATION_EXPERIENCES as Reg,
+  tags: LOCATION_TAGS as Reg,
+}
+
+// Intentional non-canonical values at the freeze. A status change needs an owner
+// decision; update this list together with AUDIT.md when that happens.
+const FROZEN_NON_CANONICAL: Record<string, { proposed: string[]; deprecated: string[] }> = {
+  type: { proposed: [], deprecated: [] },
+  categories: { proposed: [], deprecated: [] },
+  experiences: { proposed: ["paragliding", "rock-climbing"], deprecated: ["temple-visit"] },
+  tags: { proposed: [], deprecated: [] },
+}
+
+const isKeyLike = (v: string) => /^[a-z0-9]+(-[a-z0-9]+)*$/.test(v)
+
+// 1. Location data: every value registered; no deprecated value in use.
+//    Tags: a value that is not a registry key is a legacy display label
+//    ("legacy-display") and is allowed; a key-like value that is not registered
+//    (e.g. a misspelt canonical tag) is not.
+for (const loc of allLocations) {
+  const fields: Record<string, string[]> = {
+    type: (Array.isArray(loc.type) ? loc.type : [loc.type]) as string[],
+    categories: (loc.categories ?? []) as string[],
+    experiences: loc.experiences ?? [],
+    tags: loc.tags ?? [],
+  }
+  for (const [field, values] of Object.entries(fields)) {
+    const reg = REGISTRIES[field]
+    for (const v of values) {
+      const meta = reg[v]
+      if (!meta) {
+        if (field !== "tags" || isKeyLike(v)) problems.push(`${loc.slug}: ${field} "${v}" is not registered`)
+      } else if (meta.status === "deprecated") {
+        problems.push(`${loc.slug}: ${field} "${v}" is deprecated${meta.replacedBy ? ` - use "${meta.replacedBy}"` : ""}`)
+      }
+    }
+    if (new Set(values).size !== values.length) problems.push(`${loc.slug}: duplicate value in ${field}`)
+  }
+}
+
+// 2. Registry integrity.
+for (const [field, reg] of Object.entries(REGISTRIES)) {
+  const frozen = FROZEN_NON_CANONICAL[field]
+  for (const status of ["proposed", "deprecated"] as const) {
+    const actual = Object.entries(reg).filter(([, m]) => m.status === status).map(([k]) => k).sort()
+    const expected = [...frozen[status]].sort()
+    if (actual.join() !== expected.join())
+      problems.push(`${field}: ${status} values [${actual}] differ from the frozen list [${expected}]`)
+  }
+  for (const [key, meta] of Object.entries(reg)) {
+    if (!["canonical", "proposed", "deprecated"].includes(meta.status)) problems.push(`${field} "${key}": invalid registry status "${meta.status}"`)
+    if (meta.status === "deprecated" && !meta.replacedBy) problems.push(`${field} "${key}": deprecated without replacedBy`)
+    if (meta.replacedBy) {
+      if (meta.status !== "deprecated") problems.push(`${field} "${key}": replacedBy set on a ${meta.status} value`)
+      if (reg[meta.replacedBy]?.status !== "canonical") problems.push(`${field} "${key}": replacedBy "${meta.replacedBy}" is not a canonical ${field} value`)
+    }
+    for (const b of meta.broader ?? []) {
+      if (b === key) problems.push(`${field} "${key}": broader points to itself`)
+      else if (reg[b]?.status !== "canonical") problems.push(`${field} "${key}": broader "${b}" is not a canonical ${field} value`)
+      else if ((reg[b].broader ?? []).includes(key)) problems.push(`${field} "${key}": broader cycle with "${b}"`)
+    }
+    if (meta.page !== undefined && field !== "experiences") problems.push(`${field} "${key}": only experiences can have a page`)
+    if (meta.page !== undefined && meta.status !== "canonical") problems.push(`experience "${key}": page-backed but ${meta.status}`)
+  }
+}
+
+// 3. Public experience pages: registry `page` <-> data/experiences.ts.
 const pageBacked = Object.entries(LOCATION_EXPERIENCES).filter(([, m]) => "page" in m)
 for (const [value, meta] of pageBacked) {
   const page = experiencePages.find((e) => e.value === value)
@@ -109,28 +188,71 @@ for (const [value, meta] of pageBacked) {
   else if (page.slug !== (meta as { page: string }).page) problems.push(`experience ${value}: registry page "${(meta as { page: string }).page}" != slug "${page.slug}"`)
 }
 if (pageBacked.length !== experiencePages.length) problems.push(`page-backed experiences: registry ${pageBacked.length} vs data/experiences.ts ${experiencePages.length}`)
-// EXPERIENCE_GROUP_CONFIG (destination "What to do") must only list canonical
-// experiences, and must list every canonical one exactly once.
+
+// 4. EXPERIENCE_GROUP_CONFIG (destination "What to do"): canonical experiences
+//    only, every canonical experience exactly once.
 const groupCount = new Map<string, number>()
 for (const [group, config] of Object.entries(EXPERIENCE_GROUP_CONFIG)) {
   for (const exp of config.experiences) {
     groupCount.set(exp, (groupCount.get(exp) ?? 0) + 1)
-    const meta = (LOCATION_EXPERIENCES as Registry)[exp]
+    const meta = REGISTRIES.experiences[exp]
     if (!meta) problems.push(`EXPERIENCE_GROUP_CONFIG.${group}: "${exp}" is not a registered experience`)
     else if (meta.status !== "canonical") problems.push(`EXPERIENCE_GROUP_CONFIG.${group}: "${exp}" is ${meta.status}, not canonical`)
   }
 }
-for (const [exp, meta] of Object.entries(LOCATION_EXPERIENCES)) {
+for (const [exp, meta] of Object.entries(REGISTRIES.experiences)) {
   const n = groupCount.get(exp) ?? 0
   if (meta.status === "canonical" && n === 0) problems.push(`EXPERIENCE_GROUP_CONFIG: canonical experience "${exp}" is in no group`)
   if (n > 1) problems.push(`EXPERIENCE_GROUP_CONFIG: "${exp}" is in ${n} groups`)
 }
+
+// 5. Aliases: keys are never registry keys; targets are canonical; tag alias
+//    kinds are "equivalent" or "implies". Experience aliases are EQ only.
+for (const [key, target] of Object.entries(LEGACY_EXPERIENCE_ALIASES)) {
+  if (key in REGISTRIES.experiences) problems.push(`experience alias "${key}" shadows a registered experience`)
+  if (REGISTRIES.experiences[target]?.status !== "canonical") problems.push(`experience alias "${key}" -> "${target}" is not canonical`)
+}
+for (const [key, { tag, kind }] of Object.entries(LEGACY_TAG_ALIAS_TABLE)) {
+  if (key in REGISTRIES.tags) problems.push(`tag alias "${key}" shadows a registered tag`)
+  if (REGISTRIES.tags[tag]?.status !== "canonical") problems.push(`tag alias "${key}" -> "${tag}" is not canonical`)
+  if (kind !== "equivalent" && kind !== "implies") problems.push(`tag alias "${key}": invalid kind "${kind}"`)
+}
+
+// 6. Owner decisions that must not drift (Phase 2).
+const tagAlias = LEGACY_TAG_ALIAS_TABLE as Record<string, { tag: string; kind: string }>
+if (tagAlias["french-colonial"]?.tag !== "french-colonial-era") problems.push(`alias "french-colonial" must imply "french-colonial-era" (R21)`)
+for (const [key, { tag }] of Object.entries(tagAlias))
+  if (tag === "french-influence") problems.push(`alias "${key}" -> "french-influence": the French concepts are never inferred from labels`)
+const siblingPairs: [string, string, Reg][] = [
+  ["hiking", "trekking", REGISTRIES.experiences],
+  ["champa-heritage", "cham-culture", REGISTRIES.tags],
+  ["french-colonial-era", "french-influence", REGISTRIES.tags],
+  ["french-colonial-era", "french-architecture", REGISTRIES.tags],
+  ["french-influence", "french-architecture", REGISTRIES.tags],
+]
+const expAlias = LEGACY_EXPERIENCE_ALIASES as Record<string, string>
+for (const [a, b, reg] of siblingPairs) {
+  for (const [x, y] of [[a, b], [b, a]]) {
+    const m = reg[x]
+    if (m?.status !== "canonical") problems.push(`"${x}" must stay canonical`)
+    if (m?.replacedBy === y || (m?.broader ?? []).includes(y) || expAlias[x] === y || tagAlias[x]?.tag === y)
+      problems.push(`"${x}" and "${y}" are distinct concepts - no alias, broader or replacedBy between them`)
+  }
+}
+if (REGISTRIES.experiences["temple-visit"]?.replacedBy !== "religious-site-visit") problems.push(`"temple-visit" must be deprecated with replacedBy "religious-site-visit"`)
+
+// 7. Recognition side-car slugs.
 const slugs = new Set(allLocations.map((l) => l.slug))
 for (const slug of Object.keys(LOCATION_RECOGNITIONS)) if (!slugs.has(slug)) problems.push(`recognitions.ts: unknown location slug "${slug}"`)
 
-console.log("\n── consistency ──")
+console.log("\n── frozen contract ──")
+for (const [field, frozen] of Object.entries(FROZEN_NON_CANONICAL)) {
+  const reg = REGISTRIES[field]
+  const canonical = Object.values(reg).filter((m) => m.status === "canonical").length
+  console.log(`  ${field.padEnd(12)} canonical ${canonical} · proposed [${frozen.proposed.join(", ")}] · deprecated [${frozen.deprecated.join(", ")}]`)
+}
 console.log(`  recognition records: ${Object.values(LOCATION_RECOGNITIONS).flat().length} on ${Object.keys(LOCATION_RECOGNITIONS).length} locations`)
-if (problems.length === 0) console.log("  OK")
+if (problems.length === 0) console.log("  OK - no violations")
 else {
   for (const p of problems) console.log(`  PROBLEM: ${p}`)
   process.exitCode = 1

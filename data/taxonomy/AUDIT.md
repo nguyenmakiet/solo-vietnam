@@ -1,10 +1,85 @@
 # Location Taxonomy - Audit & Migration Notes
 
-Status: **Phase 0 (audit) + Phase 1 (architecture) done.** No Location data was changed in these phases.
-The location-by-location content review is tracked in [CONTENT-REVIEW.md](./CONTENT-REVIEW.md).
-Re-run the numbers at any time with `npm run audit:taxonomy` (read-only).
+Status: **FROZEN (Phase 2 freeze).** The taxonomy is a stable data contract enforced by `npm run audit:taxonomy`.
+The contract is below. The Phase 0/1 audit that follows it is kept as history (its numbers are from before the content review).
+History: [CONTENT-REVIEW.md](./CONTENT-REVIEW.md) (review, R1-R31, D1-D12), [CONSOLIDATION-PROPOSAL.md](./CONSOLIDATION-PROPOSAL.md),
+[PHASE2-LOG.md](./PHASE2-LOG.md) (owner decisions and before/after reports).
 
-Snapshot below: 257 locations, audited 2026-09-25.
+## Frozen contract
+
+### Source of truth
+
+The registries in `data/taxonomy/` are the single source of truth for the four Location taxonomy fields:
+
+| Field | Registry | Values at freeze | Notes |
+|-------|----------|------------------|-------|
+| `type` | `types.ts` `LOCATION_TYPES` | 49 canonical: 43 specific + 6 broad | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
+| `categories` | `categories.ts` `LOCATION_CATEGORIES` | 11 canonical: 8 themes + 3 editorial badges | Not rendered in the UI |
+| `experiences` | `experiences.ts` `LOCATION_EXPERIENCES` | 28 canonical (20 page-backed, 8 without a page) · 2 proposed · 1 deprecated | `page` = the `/experiences/*` slug. `ExperienceValue` = the page-backed subset |
+| `tags` | `tags.ts` `LOCATION_TAGS` | 24 canonical | Any unregistered tag string is a legacy display label (`legacy-display`) |
+
+Official designations are not taxonomy values: they live in the side-car `recognitions.ts` (93 records, all `verified: false`).
+
+### Statuses
+
+| Status | Meaning | Values at freeze |
+|--------|---------|------------------|
+| `canonical` | Approved, stable. Allowed in Location data | every other registered value |
+| `proposed` | Registered and valid, intentionally pending an owner decision. Not in the canonical UI grouping (`EXPERIENCE_GROUP_CONFIG`) | experiences: `paragliding`, `rock-climbing` |
+| `deprecated` | Not allowed in Location data. `replacedBy` names the replacement | experiences: `temple-visit` → `religious-site-visit` |
+| `legacy-display` | Tags only. A free-form label kept for display/compatibility (hero chips, `tags[0]` card subtitle). Never used for discovery | 754 distinct labels (827 uses) |
+
+The six broad types (`nature`, `attraction`, `cultural`, `heritage`, `history`, `landmark`) are `canonical` with a `pendingDecision`:
+their deprecation is **deferred by the owner**. They stay valid and must not be removed from Location data.
+
+Relationships (existing, frozen):
+- `broader` (narrower → broader, never used to rewrite data): `stream` → `river`, `rice-fields` → `farmland`.
+- Siblings, never aliased or nested: `hiking` / `trekking`; `champa-heritage` (historical Champa, `historical-period`) /
+  `cham-culture` (living Cham culture, `ethnic-culture`); `french-colonial-era` / `french-influence` / `french-architecture`
+  (never inferred from each other).
+- Aliases (`LEGACY_TAG_ALIAS_TABLE`, compatibility layer only; nothing in the UI uses them):
+  `equivalent` = true 1:1, safe to replace a label; `implies` = the label implies the tag but says more.
+  `french-colonial` implies `french-colonial-era` (R21 fix); no alias targets `french-influence`.
+  `LEGACY_EXPERIENCE_ALIASES` holds equivalents only (`walking-tours` → `walking-tour`).
+
+### Rules for Location data
+
+1. Every `type`, `categories` and `experiences` value is a registered key. Every `tags` value is a registered key or a legacy display
+   label; a key-like string (`lowercase-hyphenated`) that is not registered is an error (a misspelt tag).
+2. No `deprecated` value in any field.
+3. No duplicate value within a field.
+4. New registered tags are appended after legacy labels (`tags[0]` is the card subtitle).
+5. Changing the vocabulary (a new value, a status change, a new relationship) needs an explicit owner decision. Then update the
+   registry, the frozen lists in `scripts/audit-taxonomy.ts`, this contract and CLAUDE.md together.
+
+### `EXPERIENCE_GROUP_CONFIG` (destination "What to do")
+
+`data/destinations/types.ts`. It contains **canonical experiences only**, and every canonical experience appears in exactly one group.
+Group order at freeze: `nature` (1), `culture` (2), `activities` (3), `chill` (4), `food-and-local-life` (5).
+
+### Validation - `npm run audit:taxonomy`
+
+Read-only. It prints the usage report and then enforces the contract. It **exits non-zero** if:
+
+| Check | Fails when |
+|-------|------------|
+| Location values | a Location uses an unregistered `type`/`categories`/`experiences` value, a key-like unregistered tag, or a duplicate value |
+| Deprecated values | a Location uses any `deprecated` value |
+| Frozen statuses | the set of `proposed` or `deprecated` values in any registry differs from the frozen list |
+| Registry integrity | an invalid status, `deprecated` without `replacedBy`, `replacedBy` on a non-deprecated value or pointing to a non-canonical value, a `broader` target that is missing/non-canonical/self/cyclic, or a `page` on a non-canonical value or outside experiences |
+| Public pages | a registry `page` disagrees with `data/experiences.ts` (slug or count) |
+| `EXPERIENCE_GROUP_CONFIG` | a non-canonical (unregistered, proposed, deprecated) experience is listed, a canonical experience is missing, or one is in several groups |
+| Aliases | an alias key shadows a registered key, an alias targets a non-canonical value, or a tag alias kind is not `equivalent`/`implies` |
+| Owner invariants | `french-colonial` does not imply `french-colonial-era`; any alias targets `french-influence`; the sibling pairs above become aliased, nested or replaced, or stop being canonical; `temple-visit` is not replaced by `religious-site-visit` |
+| Recognition side-car | a record points to an unknown location slug |
+
+Run it before committing any Location file.
+
+---
+
+# Phase 0 / Phase 1 audit (history)
+
+Snapshot below: 257 locations, audited 2026-09-25, **before** the content review and Phase 2.
 
 ## Target semantics
 

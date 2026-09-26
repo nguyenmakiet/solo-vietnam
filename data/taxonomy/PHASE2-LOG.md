@@ -371,3 +371,22 @@ Result:
 Follow-up (same commit, owner decision): the config holds canonical experiences only. `rock-climbing` was removed from
 `activities`, and `paragliding` stays out. Both remain `proposed` in the registry and in location data (lan-ha-bay,
 khau-pha-pass), and are not shown in "What to do" until promoted.
+
+---
+
+## 9. Taxonomy freeze (separate commit after `4c90b97`)
+
+A contract and validation step only. No taxonomy decision was reopened, no value was promoted, demoted, added or removed,
+and no Location data changed.
+
+| Area | Result |
+|------|--------|
+| Registry vs 257 Locations | 0 unregistered `type`/`categories`/`experiences` values. Tags: 0 key-like unregistered values; 754 legacy display labels (827 uses) by design. 0 deprecated values in use. 0 duplicates |
+| Statuses | type 49 canonical · categories 11 canonical · experiences 28 canonical + `paragliding`, `rock-climbing` proposed + `temple-visit` deprecated (→ `religious-site-visit`, 0 uses) · tags 24 canonical |
+| `EXPERIENCE_GROUP_CONFIG` | canonical only, 28/28 exactly once. Group and experience order unchanged from `4c90b97` |
+| Aliases / relationships | unchanged and checked: `french-colonial` implies `french-colonial-era`, no alias to `french-influence`; `hiking`/`trekking`, `champa-heritage`/`cham-culture` and the three French tags are distinct siblings; `broader`: `stream` → `river`, `rice-fields` → `farmland` |
+| Guard | `npm run audit:taxonomy` now enforces the frozen contract and exits non-zero on a violation (AUDIT.md "Frozen contract"). Each rule was tested by injecting a violation and reverting it |
+| Docs | CLAUDE.md taxonomy table regenerated from the registry (it still listed the 22/3/20 pre-review values). AUDIT.md gains the frozen contract; its Phase 0/1 audit is kept as history |
+
+Still deferred (unchanged): broad-type deprecation, trekking page membership, `walking-tour`, `photography`/`culture`/`history`
+IA, taxonomy UI, recognition verification (network-blocked), public URL changes.
