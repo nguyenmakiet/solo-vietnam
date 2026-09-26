@@ -3,7 +3,10 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import { Location, LocationType, locationTheme } from "@/data/location"
-import { stripLeadingEmoji } from "@/lib/text"
+import { tagDisplayLabel } from "@/data/taxonomy/tags"
+import { LOCATION_TYPES, isLocationType, typeDisplayLabel } from "@/data/taxonomy/types"
+import { LOCATION_EXPERIENCES, experienceDisplayLabel, isLocationExperience } from "@/data/taxonomy/experiences"
+import { LOCATION_CATEGORIES, isLocationCategory } from "@/data/taxonomy/categories"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
@@ -19,14 +22,15 @@ const REGIONS: { value: Region; label: string; active: string; inactive: string 
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
-const SHORTCUTS: { label: string; type?: string; exp?: string }[] = [
+// A shortcut selects one type, one experience, or a set of categories.
+const SHORTCUTS: { label: string; type?: string; exp?: string; categories?: string[] }[] = [
   { label: "Beaches",     type: "beach" },
   { label: "Islands",     type: "island" },
   { label: "Mountains",   type: "mountain" },
   { label: "Caves",       type: "cave" },
   { label: "Waterfalls",  type: "waterfall" },
   { label: "Trekking",    exp: "trekking" },
-  { label: "Cultural",    type: "cultural" },
+  { label: "Cultural",    categories: ["culture", "religion"] },
   { label: "Photography", exp: "photography" },
 ]
 
@@ -96,9 +100,52 @@ function formatSlug(slug: string): string {
   return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
 }
 
-function formatType(type: string): string {
-  const s = type.replace(/-/g, " ")
-  return s.charAt(0).toUpperCase() + s.slice(1)
+// A type/experience is offered and applied as a filter only when the frozen
+// taxonomy registry allows it: registered, canonical, and not explicitly
+// marked `filterable: false`. Anything else in the URL (unknown, proposed,
+// deprecated) is ignored when filtering but left in the URL untouched.
+type FilterMeta = { status: string; filterable?: boolean }
+
+function isFilterableMeta(meta: FilterMeta): boolean {
+  return meta.status === "canonical" && meta.filterable !== false
+}
+
+function isFilterableType(value: string): boolean {
+  return isLocationType(value) && isFilterableMeta(LOCATION_TYPES[value])
+}
+
+function isFilterableExperience(value: string): boolean {
+  return isLocationExperience(value) && isFilterableMeta(LOCATION_EXPERIENCES[value])
+}
+
+// Categories: only the travel themes are filters. Editorial badges
+// (hidden-gem, must-see, iconic) are not offered.
+function isFilterableCategory(value: string): boolean {
+  return (
+    isLocationCategory(value) &&
+    LOCATION_CATEGORIES[value].group === "theme" &&
+    isFilterableMeta(LOCATION_CATEGORIES[value])
+  )
+}
+
+// Backward compatibility for old `?type=` URLs whose broad type has moved to a
+// category. Applied only when the type is no longer a filterable type, so it is
+// inert while the type is still canonical. Other stale types stay ignored.
+const LEGACY_TYPE_CATEGORY_ALIASES: Record<string, string> = {
+  nature: "nature",
+  cultural: "culture",
+}
+
+// Split URL types into the types kept as-is and the categories they alias to.
+function resolveLegacyTypes(types: string[]): { types: string[]; categories: string[] } {
+  const kept: string[] = []
+  const categories: string[] = []
+  for (const t of types) {
+    const alias = LEGACY_TYPE_CATEGORY_ALIASES[t]
+    if (alias && !isFilterableType(t) && isFilterableCategory(alias)) categories.push(alias)
+    else kept.push(t)
+  }
+  return { types: kept, categories }
 }
 
 function truncate(str: string, max: number): string {
@@ -120,6 +167,7 @@ function parseUrlState() {
     region: p.get("region") as Region | null,
     types: p.getAll("type"),
     experiences: p.getAll("experience"),
+    categories: p.getAll("category"),
     province: p.get("province") ?? "",
     months: p.getAll("month").map((m) => parseInt(m, 10)).filter(Boolean),
     page: Math.max(1, parseInt(p.get("page") ?? "1", 10)),
@@ -130,6 +178,7 @@ function buildSearch(
   region: Region | null,
   types: string[],
   experiences: string[],
+  categories: string[],
   province: string,
   months: number[],
   page: number
@@ -138,6 +187,7 @@ function buildSearch(
   if (region) p.set("region", region)
   types.forEach((t) => p.append("type", t))
   experiences.forEach((e) => p.append("experience", e))
+  categories.forEach((c) => p.append("category", c))
   if (province) p.set("province", province)
   months.forEach((m) => p.append("month", String(m)))
   if (page > 1) p.set("page", String(page))
@@ -161,6 +211,15 @@ function IconExperience() {
     <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
         d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+  )
+}
+
+function IconCategory() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M4 6h16M4 12h16M4 18h10" />
     </svg>
   )
 }
@@ -195,6 +254,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const [region, setRegion] = useState<Region | null>(null)
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedExperiences, setSelectedExperiences] = useState<string[]>([])
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [province, setProvince] = useState(initialProvince ?? "")
   const [selectedMonths, setSelectedMonths] = useState<number[]>([])
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
@@ -204,8 +264,12 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     const init = parseUrlState()
     if (!init) return
     if (init.region) setRegion(init.region)
-    if (init.types.length) setSelectedTypes(init.types)
+    // Old broad-type URLs (?type=nature) become the category they moved to.
+    const legacy = resolveLegacyTypes(init.types)
+    const categories = [...new Set([...init.categories, ...legacy.categories])]
+    if (legacy.types.length) setSelectedTypes(legacy.types)
     if (init.experiences.length) setSelectedExperiences(init.experiences)
+    if (categories.length) setSelectedCategories(categories)
     if (init.province) setProvince(init.province)
     if (init.months.length) setSelectedMonths(init.months)
     if (init.page > 1) setVisibleCount(init.page * PAGE_SIZE)
@@ -214,24 +278,32 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
 
   const [typeOpen, setTypeOpen] = useState(false)
   const [expOpen, setExpOpen] = useState(false)
+  const [catOpen, setCatOpen] = useState(false)
   const [provOpen, setProvOpen] = useState(false)
   const [provSearch, setProvSearch] = useState("")
 
   const typeRef = useRef<HTMLDivElement>(null)
   const expRef = useRef<HTMLDivElement>(null)
+  const catRef = useRef<HTMLDivElement>(null)
   const provRef = useRef<HTMLDivElement>(null)
   const provInputRef = useRef<HTMLInputElement>(null)
 
   const allTypes = useMemo(() => {
     const set = new Set<string>()
     locations.forEach((l) => getTypes(l).forEach((t) => set.add(t)))
-    return Array.from(set).sort()
+    return Array.from(set).filter(isFilterableType).sort()
   }, [locations])
 
   const allExperiences = useMemo(() => {
     const set = new Set<string>()
     locations.forEach((l) => l.experiences.forEach((e) => set.add(e)))
-    return Array.from(set).sort()
+    return Array.from(set).filter(isFilterableExperience).sort()
+  }, [locations])
+
+  const allCategories = useMemo(() => {
+    const set = new Set<string>()
+    locations.forEach((l) => (l.categories ?? []).forEach((c) => set.add(c)))
+    return Array.from(set).filter(isFilterableCategory).sort()
   }, [locations])
 
   const allProvinces = useMemo(() => {
@@ -255,16 +327,25 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     return counts
   }, [locations])
 
+  // Selected values that are valid filters. The raw selections stay in state
+  // (and therefore in the URL); stale ones are simply not applied.
+  const activeTypes = useMemo(() => selectedTypes.filter(isFilterableType), [selectedTypes])
+  const activeExperiences = useMemo(() => selectedExperiences.filter(isFilterableExperience), [selectedExperiences])
+  const activeCategories = useMemo(() => selectedCategories.filter(isFilterableCategory), [selectedCategories])
+
   const filtered = useMemo(() => {
     return locations.filter((loc) => {
       if (region !== null) {
         if (getLocationRegion(loc) !== region) return false
       }
-      if (selectedTypes.length > 0) {
-        if (!selectedTypes.some((t) => getTypes(loc).includes(t))) return false
+      if (activeTypes.length > 0) {
+        if (!activeTypes.some((t) => getTypes(loc).includes(t))) return false
       }
-      if (selectedExperiences.length > 0) {
-        if (!selectedExperiences.some((e) => loc.experiences.includes(e))) return false
+      if (activeExperiences.length > 0) {
+        if (!activeExperiences.some((e) => loc.experiences.includes(e))) return false
+      }
+      if (activeCategories.length > 0) {
+        if (!activeCategories.some((c) => ((loc.categories ?? []) as readonly string[]).includes(c))) return false
       }
       if (province) {
         if (!loc.provinces.includes(province)) return false
@@ -274,16 +355,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
       }
       return true
     })
-  }, [locations, region, selectedTypes, selectedExperiences, province, selectedMonths])
+  }, [locations, region, activeTypes, activeExperiences, activeCategories, province, selectedMonths])
 
   const visible = filtered.slice(0, visibleCount)
   const hasMore = visibleCount < filtered.length
   const currentPage = Math.ceil(visibleCount / PAGE_SIZE)
 
   useEffect(() => {
-    const search = buildSearch(region, selectedTypes, selectedExperiences, province, selectedMonths, 1)
+    const search = buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, province, selectedMonths, 1)
     history.replaceState(null, "", `/locations${search}`)
-  }, [region, selectedTypes, selectedExperiences, province, selectedMonths])
+  }, [region, selectedTypes, selectedExperiences, selectedCategories, province, selectedMonths])
 
   useEffect(() => {
     const href = province
@@ -302,6 +383,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     function handler(e: MouseEvent) {
       if (typeRef.current && !typeRef.current.contains(e.target as Node)) setTypeOpen(false)
       if (expRef.current && !expRef.current.contains(e.target as Node)) setExpOpen(false)
+      if (catRef.current && !catRef.current.contains(e.target as Node)) setCatOpen(false)
       if (provRef.current && !provRef.current.contains(e.target as Node)) {
         setProvOpen(false)
         setProvSearch("")
@@ -330,6 +412,20 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     setVisibleCount(PAGE_SIZE)
   }
 
+  function toggleCategory(c: string) {
+    setSelectedCategories((prev) => prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c])
+    setVisibleCount(PAGE_SIZE)
+  }
+
+  // Shortcut with several categories: select them all, or clear them all when
+  // every one is already selected.
+  function toggleCategorySet(set: string[]) {
+    setSelectedCategories((prev) =>
+      set.every((c) => prev.includes(c)) ? prev.filter((x) => !set.includes(x)) : [...new Set([...prev, ...set])]
+    )
+    setVisibleCount(PAGE_SIZE)
+  }
+
   function selectProvince(p: string) {
     setProvince(p)
     setProvOpen(false)
@@ -346,6 +442,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     setRegion(null)
     setSelectedTypes([])
     setSelectedExperiences([])
+    setSelectedCategories([])
     setProvince("")
     setSelectedMonths([])
     setVisibleCount(PAGE_SIZE)
@@ -354,10 +451,10 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   function loadMore() {
     const nextPage = currentPage + 1
     setVisibleCount(nextPage * PAGE_SIZE)
-    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, province, selectedMonths, nextPage)}`)
+    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, province, selectedMonths, nextPage)}`)
   }
 
-  const hasActiveFilters = region !== null || selectedTypes.length > 0 || selectedExperiences.length > 0 || province !== "" || selectedMonths.length > 0
+  const hasActiveFilters = region !== null || activeTypes.length > 0 || activeExperiences.length > 0 || activeCategories.length > 0 || province !== "" || selectedMonths.length > 0
 
   return (
     <main className="min-h-screen bg-[#F7F4EF]">
@@ -396,13 +493,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                 ? selectedTypes.includes(s.type)
                 : s.exp
                   ? selectedExperiences.includes(s.exp)
-                  : false
+                  : s.categories
+                    ? s.categories.every((c) => selectedCategories.includes(c))
+                    : false
               return (
                 <button
                   key={s.label}
                   onClick={() => {
                     if (s.type) toggleType(s.type)
                     else if (s.exp) toggleExperience(s.exp)
+                    else if (s.categories) toggleCategorySet(s.categories)
                   }}
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium border transition-all ${
                     active
@@ -470,13 +570,13 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             {/* Type */}
             <div ref={typeRef} className="relative">
               <button
-                onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setProvOpen(false) }}
+                onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setCatOpen(false); setProvOpen(false) }}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  selectedTypes.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
+                  activeTypes.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
               >
                 <IconType />
-                Type{selectedTypes.length > 0 ? ` · ${selectedTypes.length}` : ""}
+                Type{activeTypes.length > 0 ? ` · ${activeTypes.length}` : ""}
                 <IconChevron />
               </button>
               {typeOpen && (
@@ -484,7 +584,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   {allTypes.map((t) => (
                     <label key={t} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
                       <input type="checkbox" checked={selectedTypes.includes(t)} onChange={() => toggleType(t)} className="accent-[#1C1C1A] w-3.5 h-3.5" />
-                      {formatType(t)}
+                      {typeDisplayLabel(t)}
                     </label>
                   ))}
                 </div>
@@ -494,13 +594,13 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             {/* Experience */}
             <div ref={expRef} className="relative">
               <button
-                onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setProvOpen(false) }}
+                onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setCatOpen(false); setProvOpen(false) }}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  selectedExperiences.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
+                  activeExperiences.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
               >
                 <IconExperience />
-                Experience{selectedExperiences.length > 0 ? ` · ${selectedExperiences.length}` : ""}
+                Experience{activeExperiences.length > 0 ? ` · ${activeExperiences.length}` : ""}
                 <IconChevron />
               </button>
               {expOpen && (
@@ -508,7 +608,31 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   {allExperiences.map((e) => (
                     <label key={e} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
                       <input type="checkbox" checked={selectedExperiences.includes(e)} onChange={() => toggleExperience(e)} className="accent-[#1C1C1A]  w-3.5 h-3.5" />
-                      {formatType(e)}
+                      {experienceDisplayLabel(e)}
+                    </label>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Category (travel themes) */}
+            <div ref={catRef} className="relative">
+              <button
+                onClick={() => { setCatOpen(!catOpen); setTypeOpen(false); setExpOpen(false); setProvOpen(false) }}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
+                  activeCategories.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
+                }`}
+              >
+                <IconCategory />
+                Category{activeCategories.length > 0 ? ` · ${activeCategories.length}` : ""}
+                <IconChevron />
+              </button>
+              {catOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 min-w-[190px] max-h-64 overflow-y-auto py-1.5">
+                  {allCategories.map((c) => (
+                    <label key={c} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
+                      <input type="checkbox" checked={selectedCategories.includes(c)} onChange={() => toggleCategory(c)} className="accent-[#1C1C1A] w-3.5 h-3.5" />
+                      {LOCATION_CATEGORIES[c as keyof typeof LOCATION_CATEGORIES].label}
                     </label>
                   ))}
                 </div>
@@ -518,7 +642,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             {/* Province — search-style */}
             <div ref={provRef} className="relative">
               <button
-                onClick={() => { setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false) }}
+                onClick={() => { setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false) }}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
                   province ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
@@ -624,7 +748,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   />
                   {/* Type badge */}
                   <span className={`absolute top-2 right-2 text-[10px] font-semibold px-2 py-0.5 rounded-full ${themeColors(loc)}`}>
-                    {formatType(primaryType(loc))}
+                    {typeDisplayLabel(primaryType(loc))}
                   </span>
                 </div>
 
@@ -643,7 +767,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   )}
                   {loc.tags?.[0] ? (
                     <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
-                      {stripLeadingEmoji(loc.tags[0])}
+                      {tagDisplayLabel(loc.tags[0])}
                     </p>
                   ) : (
                     <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">

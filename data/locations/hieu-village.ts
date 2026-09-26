@@ -10,10 +10,10 @@ export const hieuVillage: Location = {
   lat: 20.465207207325047, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
   lng: 105.22192270503085, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
   address: "Bản Hiêu, Cổ Lũng, Bá Thước, Thanh Hóa",
-  type: ["cultural", "town"],
-  categories: [],
-  experiences: ["culture", "photography", "walking-tour"],
-  tags: ["🌾 Rice Terraces", "💧 Waterfall Village", "🏠 Thai Stilt Houses", "🌉 Bamboo Bridge"],
+  type: ["village"],
+  categories: ["culture", "nature"],
+  experiences: ["culture", "photography", "walking-tour", "swimming", "homestay"],
+  tags: ["🌾 Rice Terraces", "💧 Waterfall Village", "🏠 Thai Stilt Houses", "🌉 Bamboo Bridge", "thai-culture"],
   bestTime: "Early morning gives the quietest, softest light on the waterfall and bridges before any day-trippers from Don Village arrive; June specifically brings the year's strongest water flow at the falls, alongside the first rice harvest",
   bestMonths: [5, 6, 9, 10],
   entranceFee: "Free",

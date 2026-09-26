@@ -1,65 +1,13 @@
-export type LocationType =
-  | "beach"
-  | "island"
-  | "bay"
-  | "river"
-  | "lake"
-  | "mountain"
-  | "forest"
-  | "nature"
-  | "waterfall"
-  | "cave"
-  | "attraction"
-  | "cultural"
-  | "town"
-  | "city"
-  | "market"
-  | "temple"
-  | "pagoda"
-  | "tomb"
-  | "citadel"
-  | "heritage"
-  | "history"
-  | "landmark"
-  | "museum"
+import { LOCATION_TYPE_THEME, type LocationTheme, type LocationType } from "./taxonomy/types"
+import type { LocationCategory } from "./taxonomy/categories"
 
+// Taxonomy vocabularies (values + metadata) live in data/taxonomy/.
+// Re-exported here so existing imports keep working unchanged.
+export type { LocationType, LocationCategory, LocationTheme }
 
-export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
-
-export const locationTheme: Record<LocationType, LocationTheme> = {
-        // water
-        beach: "blue",
-        island: "blue",
-        bay: "blue",
-        river: "blue",
-        lake: "blue",
-      
-        // nature
-        mountain: "green",
-        forest: "green",
-        nature: "green",
-        waterfall: "green",
-        cave: "green",
-      
-        // urban
-        city: "amber",
-        town: "amber",
-        market: "amber",
-        attraction: "amber",
-      
-        // culture / history
-        cultural: "purple",
-        heritage: "purple",
-        temple: "purple",
-        pagoda: "purple",
-        tomb: "purple",
-        citadel: "purple",
-        history: "amber",
-        landmark: "purple",
-        museum: "amber"
-      }
-
-export type LocationCategory = "hidden-gem" | "must-see" | "iconic"
+// Theme colour per type. Source of truth: the `theme` of each entry in
+// data/taxonomy/types.ts (colours unchanged from the former hand-written map).
+export const locationTheme: Record<LocationType, LocationTheme> = LOCATION_TYPE_THEME
 
 export type ContentBlock =
   | { type: "heading"; text: string; icon?: string }
@@ -90,10 +38,12 @@ export type Location = {
   lat: number | string
   lng: number | string
   address: string
-  type: LocationType | LocationType[]
-  categories?: LocationCategory[]
-  experiences: string[]
-  tags: string[]
+  // Taxonomy fields - vocabularies and semantics in data/taxonomy/.
+  // experiences/tags stay string[] during the transition (legacy values allowed).
+  type: LocationType | LocationType[] // what is this place?
+  categories?: LocationCategory[] // travel themes + editorial badges (data/taxonomy/categories.ts); themes are the /locations category filter
+  experiences: string[] // what can a traveler do here?
+  tags: string[] // specific interest / influence / period (currently emoji display labels)
   entranceFee?: string
   openingHours?: string
   bestTime: string

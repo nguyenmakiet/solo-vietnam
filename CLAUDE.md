@@ -145,23 +145,31 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 - Use `heroUrl("...-placeholder")` with `// TODO: upload and replace` for unconfirmed Cloudinary publicIds
 - Skip the `insights` block until Outscraper data is available
 
-### Typed enum fields (strict - never invent values)
+### Taxonomy fields (frozen contract - never invent values)
 
-Three fields are typed enums and MUST use values from the source-of-truth files. Do not invent new values like `"viewpoint"`, `"photo-spot"`, or `"swimming"` - they will fail TypeScript and will not work with filtering/theming.
+The four taxonomy fields are a **frozen data contract** (Phase 2 freeze). Every value MUST come from the registry in `data/taxonomy/`. Do not invent values such as `"viewpoint"` or `"photo-spot"`. A new value needs an explicit owner decision and a registry entry first. `type` and `categories` fail TypeScript on an unknown value; `experiences` and `tags` fail `npm run audit:taxonomy`.
 
 | Field | Source file | Allowed values |
 |-------|-------------|----------------|
-| `type` | `data/location.ts` -> `LocationType` | `beach`, `island`, `bay`, `river`, `lake`, `mountain`, `forest`, `nature`, `waterfall`, `cave`, `attraction`, `cultural`, `town`, `city`, `market`, `temple`, `pagoda`, `tomb`, `citadel`, `heritage`, `history`, `landmark` |
-| `categories` | `data/location.ts` -> `LocationCategory` | `hidden-gem`, `must-see`, `iconic` |
-| `experiences` | `data/experiences.ts` -> `ExperienceValue` | `beach`, `trekking`, `camping`, `caving`, `snorkeling`, `kayaking`, `food`, `culture`, `history`, `photography`, `markets`, `nightlife`, `walking-tour`, `cycling`, `boat-tour`, `cable-car`, `homestay`, `wildlife`, `motorcycling`, `shopping` |
+| `type` | `data/taxonomy/types.ts` -> `LOCATION_TYPES` (re-exported as `LocationType` from `data/location.ts`). `type[0]` is the primary type and sets the theme colour | Specific: `beach`, `island`, `bay`, `river`, `lake`, `mountain`, `forest`, `waterfall`, `cave`, `town`, `city`, `market`, `temple`, `pagoda`, `tomb`, `citadel`, `museum`, `communal-house`, `valley`, `rice-fields`, `national-park`, `bridge`, `building`, `village`, `fortress`, `prison`, `station`, `church`, `old-quarter`, `palace`, `pass`, `lighthouse`, `cape`, `street`, `historic-site`, `monument`, `theme-park`, `stream`, `rock-formation`, `farmland`, `cable-car`, `nature-reserve`, `grassland`, `sand-dunes`. Deprecated broad types (never use): `nature` -> category `nature`, `cultural` -> category `culture`, `history` -> category `history`, `heritage` / `landmark` / `attraction` -> no replacement (use a specific type) |
+| `categories` | `data/taxonomy/categories.ts` -> `LOCATION_CATEGORIES` (re-exported as `LocationCategory`) | Themes: `nature`, `culture`, `history`, `architecture`, `religion`, `food`, `coast`, `entertainment`. Editorial badges: `hidden-gem`, `must-see`, `iconic` |
+| `experiences` | `data/taxonomy/experiences.ts` -> `LOCATION_EXPERIENCES`. `ExperienceValue` (`data/experiences.ts`) = the page-backed subset | Canonical with an `/experiences/*` page: `beach`, `trekking`, `camping`, `caving`, `snorkeling`, `kayaking`, `food`, `culture`, `history`, `photography`, `markets`, `nightlife`, `walking-tour`, `cycling`, `boat-tour`, `cable-car`, `homestay`, `wildlife`, `motorcycling`, `shopping`. Canonical without a page: `swimming`, `surfing`, `fishing`, `kitesurfing`, `museum-visit`, `diving`, `hiking`, `religious-site-visit`. Proposed (valid, not in "What to do"): `paragliding`, `rock-climbing`. Deprecated (never use): `temple-visit` |
+| `tags` | `data/taxonomy/tags.ts` -> `LOCATION_TAGS` | Registered tags: `vietnam-war`, `french-influence`, `khmer-culture`, `cham-culture`, `champa-heritage`, `buddhism`, `medieval-vietnam`, `east-sea-sovereignty`, `folk-religion`, `ethnic-minority-culture`, `khmer-architecture`, `cao-dai`, `hmong-culture`, `tay-culture`, `thai-culture`, `catholicism`, `taoism`, `nguyen-dynasty`, `lolo-culture`, `hinduism`, `giay-culture`, `confucianism`, `french-colonial-era`, `french-architecture`. Any other tag string is a legacy display label (emoji + text), kept for display only |
 
 **Common mismatches to avoid:**
-- `"nature"` is a `LocationType`, NOT an `ExperienceValue` - do not put it in `experiences`
-- `"viewpoint"` does not exist in any enum - use `["nature", "landmark"]` for scenic lookouts
+- `"nature"` is a category (the broad type is deprecated), NOT an experience - do not put it in `type` or `experiences`
+- `"viewpoint"` does not exist in any registry - for a scenic lookout use the landform type (`mountain`, `pass`, `cape`, `rock-formation`, `valley`...) plus `categories: ["nature"]`. Never use the deprecated broad types (`nature`, `landmark`...) for it
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
-- `"swimming"` does not exist as an experience - omit, or use `kayaking`/`snorkeling` if water-based
+- `hiking` and `trekking` are separate sibling concepts - a location may have both
+- The six broad types (`nature`, `cultural`, `history`, `heritage`, `landmark`, `attraction`) are `deprecated` - every location needs a specific place type; the theme goes in `categories`. E.g. `"history"` -> `categories: ["history"]` (and the `history` experience where it applies), with a specific place type such as `historic-site`, `citadel` or `museum`
+- `"temple-visit"` is `deprecated` - use `"religious-site-visit"` for any active place of worship (the tradition goes in a religion tag such as `buddhism`)
+- `champa-heritage` (historical Champa) and `cham-culture` (living Cham culture) are distinct. So are `french-colonial-era`, `french-influence` and `french-architecture` - never infer one from another
+- Append registered tags after the legacy display labels - `tags[0]` is the `/locations` card subtitle
+- Official designations (UNESCO, Ramsar, national relic...) go in `data/taxonomy/recognitions.ts`, not in `tags`
 
-**Before writing a new location file**, re-read `data/location.ts` and `data/experiences.ts` to confirm the current valid values. The lists above are accurate as of the rule's creation but may evolve.
+**Before writing a new location file**, re-read `data/taxonomy/` (types, categories, experiences, tags) to confirm the current valid values, and run `npm run audit:taxonomy` - it must pass.
+
+The taxonomy is frozen - see `data/taxonomy/AUDIT.md` ("Frozen contract") for the rules and validation. History: `data/taxonomy/CONTENT-REVIEW.md` (location-by-location review, owner rules R1-R31, decisions D1-D12), `data/taxonomy/CONSOLIDATION-PROPOSAL.md` and `data/taxonomy/PHASE2-LOG.md` (Phase 2 decisions). Do not bulk-rewrite existing Location taxonomy values.
 
 ---
 
@@ -245,12 +253,14 @@ Defined in `data/destinations/types.ts`. Controls how `location.experiences[]` m
 
 | Group | Label | Experiences |
 |-------|-------|-------------|
-| `nature` | Nature & Outdoors | trekking, hiking, waterfall, swimming, kayaking, cycling, snorkeling, diving |
-| `culture` | Culture & History | culture, homestay, photography, history |
-| `activities` | Activities & Adventure | adventure, motorbiking, climbing, surfing, kite-surfing |
-| `chill` | Chill & Relax | cafe, beach, sunset, cruise |
+| `nature` | Nature & Outdoors | trekking, hiking, swimming, kayaking, cycling, snorkeling, diving, camping, caving, wildlife, fishing |
+| `culture` | Culture & History | culture, homestay, photography, history, walking-tour, museum-visit, religious-site-visit |
+| `activities` | Activities & Adventure | motorcycling, surfing, kitesurfing, cable-car |
+| `chill` | Chill & Relax | beach, boat-tour |
+| `food-and-local-life` | Food & Local Life | food, markets, nightlife, shopping |
 
 To add a new category or experience mapping, update `EXPERIENCE_GROUP_CONFIG` in `types.ts` only — do not hardcode groupings in components.
+Values must be **canonical** experiences (`data/taxonomy/experiences.ts`) - proposed and deprecated values stay out until promoted; every canonical experience must be in exactly one group (checked by `npm run audit:taxonomy`).
 
 ### Adding a new destination
 

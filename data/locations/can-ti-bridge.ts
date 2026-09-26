@@ -10,7 +10,7 @@ export const canTiBridge: Location = {
   lat: "23.0789366",
   lng: "105.0259277",
   address: "Can Ti Bridge, Meo Vac District, Ha Giang Province",
-  type: ["landmark"],
+  type: ["bridge"],
   categories: [],
   experiences: [],
   tags: [],

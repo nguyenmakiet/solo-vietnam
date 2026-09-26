@@ -2,6 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { destinations, deriveFromLocations, EXPERIENCE_GROUP_CONFIG } from "@/data/destinations/index"
 import { Location } from "@/data/location"
+import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { allLocations, activeLocations } from "@/data/all-locations"
 import ItineraryMapLoader from "@/components/ItineraryMapLoader"
 import FaqAccordion from "@/components/FaqAccordion"
@@ -17,7 +18,7 @@ function getImageSrc(heroImage?: string): string {
 
 function getTypeLabel(type: Location["type"]): string {
   const primary = Array.isArray(type) ? type[0] : type
-  return primary.charAt(0).toUpperCase() + primary.slice(1)
+  return typeDisplayLabel(primary)
 }
 
 function formatSlug(slug: string): string {

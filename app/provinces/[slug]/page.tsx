@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import FallbackImage from "@/components/FallbackImage"
 import { stripLeadingEmoji } from "@/lib/text"
+import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import "./province.css"
 
 const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
@@ -205,7 +206,7 @@ export default async function ProvincePage({
                         )}
                         {l.tags && l.tags.length > 0 && (
                           <div className="dc-tags">
-                            {l.tags.slice(0, 2).map((t) => <span key={t} className="dc-tag">{stripLeadingEmoji(t)}</span>)}
+                            {l.tags.slice(0, 2).map((t) => <span key={t} className="dc-tag">{tagDisplayLabel(t)}</span>)}
                           </div>
                         )}
                         <div className="dc-footer">

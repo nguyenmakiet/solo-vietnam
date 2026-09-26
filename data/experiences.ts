@@ -1,3 +1,5 @@
+import type { PageBackedLocationExperience } from "./taxonomy/experiences"
+
 export type ExperienceSlug =
   | "beaches"
   | "trekking"
@@ -20,27 +22,8 @@ export type ExperienceSlug =
   | "motorcycling"
   | "shopping"
 
-export type ExperienceValue =
-  | "beach"
-  | "trekking"
-  | "camping"
-  | "caving"
-  | "snorkeling"
-  | "kayaking"
-  | "food"
-  | "culture"
-  | "history"
-  | "photography"
-  | "markets"
-  | "nightlife"
-  | "walking-tour"
-  | "cycling"
-  | "boat-tour"
-  | "cable-car"
-  | "homestay"
-  | "wildlife"
-  | "motorcycling"
-  | "shopping"
+// Page-backed experience values: entries with `page` in data/taxonomy/experiences.ts.
+export type ExperienceValue = PageBackedLocationExperience
 
 export type Experience = {
   slug: ExperienceSlug
