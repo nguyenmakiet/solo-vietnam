@@ -162,6 +162,7 @@ The four taxonomy fields are a **frozen data contract** (Phase 2 freeze). Every 
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
 - `hiking` and `trekking` are separate sibling concepts - a location may have both
 - The six broad types (`nature`, `cultural`, `history`, `heritage`, `landmark`, `attraction`) are `deprecated` - every location needs a specific place type; the theme goes in `categories`. E.g. `"history"` -> `categories: ["history"]` (and the `history` experience where it applies), with a specific place type such as `historic-site`, `citadel` or `museum`
+- Chùa → `pagoda` even when English content calls it a 'temple'. Classification follows the site's religious identity, not the generic English translation.
 - `"temple-visit"` is `deprecated` - use `"religious-site-visit"` for any active place of worship (the tradition goes in a religion tag such as `buddhism`)
 - `champa-heritage` (historical Champa) and `cham-culture` (living Cham culture) are distinct. So are `french-colonial-era`, `french-influence` and `french-architecture` - never infer one from another
 - Append registered tags after the legacy display labels - `tags[0]` is the `/locations` card subtitle
