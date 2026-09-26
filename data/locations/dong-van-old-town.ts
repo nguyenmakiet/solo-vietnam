@@ -10,7 +10,7 @@ export const dongVanOldTown: Location = {
   lat: 23.274,
   lng: 105.362,
   address: "Phố Cổ Đồng Văn, Đồng Văn, Hà Giang",
-  type: ["cultural", "town"],
+  type: ["town", "cultural"],
   categories: ["culture", "architecture", "history"],
   experiences: ["culture", "history", "photography", "walking-tour", "food", "markets"],
   tags: ["🏘️ 40 Ancient Stone Houses", "🔥 Weekend Bonfire & Cultural Night", "🛒 Sunday Minority Market", "🌙 Night Market"],

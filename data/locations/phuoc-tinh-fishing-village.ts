@@ -10,7 +10,7 @@ export const phuocTinhFishingVillage: Location = {
   lat: 10.402412684439296,
   lng: 107.17863802885124,
   address: "Phước Tỉnh, Long Điền, Bà Rịa - Vũng Tàu",
-  type: ["nature", "cultural", "beach"],
+  type: ["village", "nature", "cultural", "beach"],
   categories: ["food", "culture", "coast"],
   experiences: ["food", "culture", "walking-tour", "markets"],
   tags: ["🎣 Active Fishing Port", "🦐 Fresh Seafood", "🚢 Fishing Fleet"],

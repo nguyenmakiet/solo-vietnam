@@ -185,8 +185,9 @@ decision was ambiguous or did not fit the current data, it was **not guessed**: 
 | cua-tu-stream, da-ploa-stream | waterfall, ... | waterfall, **stream**, ... (secondary) |
 
 **Reorder only:** bay-mau-coconut-forest (`river` first), phong-nha-botanic-garden (`forest` first).
-**Unchanged by decision:** radio-tower-cat-ba, red-sand-dunes, white-sand-dunes, thung-nham-bird-park, dong-van-old-town,
-thuong-phuoc-border-gate.
+**Unchanged by decision:** radio-tower-cat-ba, red-sand-dunes, white-sand-dunes, thung-nham-bird-park,
+thuong-phuoc-border-gate. dong-van-old-town was left unchanged here by mistake: "keep `town` first" did not match the data
+(`cultural, town`). Corrected in §7.4.
 
 **Type removals (A3, the only subtractive type changes):** `town` from cat-cat, don, ham-ninh, hieu, kho-muong, ta-van,
 tra-que · `forest` from bui-hui-grassland · `citadel` from my-son-sanctuary · `river` from fairy-stream, mooc-spring,
@@ -267,3 +268,70 @@ Verifying against official sources failed: the environment's network policy bloc
 and search-result summaries are not official sources. So **no record was verified**. All 93 stay `verified: false`, as
 instructed. To proceed, allow those hosts in the environment's network settings, or verify offline. Content gaps found so
 far are recorded in [CONTENT-BACKLOG.md](./CONTENT-BACKLOG.md), not fixed here.
+
+---
+
+## 7. Owner decisions (round 3) - the six round-2 ambiguities
+
+| # | Decision | Applied |
+|---|----------|---------|
+| 1 | phuoc-tinh-fishing-village: add `village` as `type[0]` | `nature, cultural, beach` → `village, nature, cultural, beach` |
+| 2 | vinpearl-safari: add both `entertainment` and `nature` | categories → `entertainment, nature` |
+| 3 | `confucianism`: temple-of-literature only, not tu-duc-tomb | no change needed (already so) |
+| 4 | Promote the remaining approved `proposed` tags | all 20 promoted to `canonical`, including `champa-heritage` and `ethnic-minority-culture` (its "PROVISIONAL" note replaced by its multi-group scope). None of the rejected candidates were registered, so none were promoted |
+| 5 | `champa-heritage` group | `historical-period`, with a description stating it is the historical Champa civilization/kingdom, **not** living Cham culture (`cham-culture`) |
+| 6 | Multiple added types keep the owner's order; `type[0]` drives the colour | confirmed. The round-2 order is kept, no data change |
+
+### 7.1 Before / after report (round 3)
+
+| Check | Result |
+|-------|--------|
+| `tsc --noEmit` / ESLint | clean / clean |
+| `next build` | success, 398 static pages |
+| Non-taxonomy content snapshot (257) | **identical** |
+| Taxonomy additions | type `village` +1 (phuoc-tinh-fishing-village) · categories `nature` +1 (vinpearl-safari) |
+| Taxonomy removals | none |
+| Registry | 20 tags `proposed` → `canonical`. `champa-heritage` group `ethnic-culture` → `historical-period` |
+| `/experiences/*` membership, public URLs (`data/experiences.ts`, sitemap) | unchanged |
+| Theme colours | 1 change: phuoc-tinh-fishing-village green (`nature`) → purple (`village`). The type → colour map is unchanged |
+| `tags[0]` / province-card first two tags | unchanged |
+| Destination "What to do" | unchanged |
+| `/locations` filter options (types, experiences) | unchanged (`village` was already an option) |
+| Recognition side-car | unchanged: 93 records / 76 locations, all `verified: false`, slugs consistent |
+| `npm run audit:taxonomy` | type canonical 704 · categories canonical 451 · experiences canonical 1122 / proposed 2 · tags canonical 110 / legacy-display 827 · consistency OK |
+
+Cumulative colour changes since the start of the review: 36 + 1 = 37.
+
+### 7.2 State after round 3
+
+- Every registered `type`, `categories` value and tag is `canonical`.
+- Experiences: the 20 page-backed values + 9 canonical without a page (hiking, religious-site-visit, swimming, surfing, fishing,
+  kitesurfing, museum-visit, diving) are canonical. `paragliding` and `rock-climbing` are `proposed`. `temple-visit` is
+  `deprecated` (0 uses).
+- Legacy display labels in `tags`: 827 instances (`legacy-display`), untouched except the earlier D6/D9 cases.
+
+### 7.3 Still open
+
+- **Recognition verification:** blocked by network egress. 93 records stay `verified: false`. Gaps are in
+  [CONTENT-BACKLOG.md](./CONTENT-BACKLOG.md).
+- **Deferred by the owner, untouched:** broad-type deprecation, trekking page membership, `walking-tour` narrowing,
+  `photography`/`culture`/`history` IA, taxonomy UI, public URL changes.
+- **Plan steps not started (need approval):** `EXPERIENCE_GROUP_CONFIG` fix (proposal §6.8), UI compatibility (step 11:
+  "Cultural" shortcut, filter labels, search index labels), the freeze/CLAUDE.md enum-table regeneration (step 13).
+- **Known data gaps for a future broad-type deprecation:** radio-tower-cat-ba and red-sand-dunes still have only broad
+  types. white-sand-dunes, thung-nham-bird-park and thuong-phuoc-border-gate keep a broad primary type by decision.
+
+### 7.4 Correction - dong-van-old-town (implementation mismatch, not a new decision)
+
+The round-2 decision A2.4 was "keep `town` first". The data had `cultural, town` (unchanged since the original data), so the
+decision was not actually implemented. It was flagged in §7.3 of the round-3 report, and the owner confirmed the correction.
+
+| Check | Result |
+|-------|--------|
+| Change | dong-van-old-town `type`: `cultural, town` → `town, cultural` (reorder only, nothing added or removed) |
+| Theme colour | purple (`cultural`) → amber (`town`). Colour now follows `town` as the primary type. It had been purple since the original data. Cumulative colour changes: 37 + 1 = 38 |
+| `tsc --noEmit` / ESLint / `next build` | clean / clean / success, 398 pages |
+| Non-taxonomy content snapshot (257) | identical |
+| Other taxonomy values | no other change in any location |
+| `/experiences/*` membership, public URLs, `tags[0]`, province chips, "What to do", `/locations` filter options | unchanged |
+| Recognition side-car | unchanged, consistency OK |

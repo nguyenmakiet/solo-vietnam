@@ -9,12 +9,12 @@ import { toTaxonomyKey, type TaxonomyMeta, type TaxonomyStatus } from "./shared"
 //
 // Production Location.tags are currently free-form display labels with a
 // leading emoji (e.g. "🏛️ French Colonial"). They are rendered as-is in the
-// UI and MUST stay untouched. The canonical tags below are a small proposed
-// seed, each grounded in labels that already exist in the data. The full
-// vocabulary is pending review - see AUDIT.md.
+// UI and MUST stay untouched (status "legacy-display", see tagStatus()).
+// The registered tags below are canonical (Phase 2), each grounded in the
+// reviewed data - see CONSOLIDATION-PROPOSAL.md and PHASE2-LOG.md.
 
 export type LocationTagGroup =
-  | "historical-period"      // when: medieval-vietnam, nguyen-dynasty, french-colonial-era, vietnam-war
+  | "historical-period"      // when: medieval-vietnam, nguyen-dynasty, french-colonial-era, vietnam-war, champa-heritage
   | "topic"                  // cross-period theme: east-sea-sovereignty
   | "religion"               // religious tradition
   | "ethnic-culture"         // identity of the people/culture that is the draw
@@ -25,7 +25,7 @@ export const LOCATION_TAGS = {
   "vietnam-war": {
     label: "Vietnam War",
     group: "historical-period",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   "french-influence": {
@@ -38,69 +38,69 @@ export const LOCATION_TAGS = {
   "khmer-culture": {
     label: "Khmer Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   "cham-culture": {
     label: "Cham Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "Living Cham culture and communities. Historic Champa heritage is champa-heritage (Phase 2 split)",
   },
   "champa-heritage": {
     label: "Champa Heritage",
-    group: "ethnic-culture",
-    status: "proposed",
+    group: "historical-period",
+    status: "canonical",
     filterable: true,
-    description: "Heritage of the historic Champa kingdom (temple towers, sanctuaries). Living Cham culture is cham-culture",
+    description: "Heritage of the historical Champa civilization and kingdom (c. 2nd-17th c.): Cham temple towers and sanctuaries. NOT living Cham culture - that is cham-culture",
   },
   buddhism: {
     label: "Buddhism",
     group: "religion",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
 
-  // ── Proposed during the content review (CONTENT-REVIEW.md) ──
+  // ── Introduced by the content review (CONTENT-REVIEW.md), promoted to canonical in Phase 2 ──
   "medieval-vietnam": {
     label: "Medieval Vietnam",
     group: "historical-period",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "Working scope: independent dynasties 10th-15th c. (Ngô, Đinh, Tiền Lê, Lý, Trần, Hồ). Not the Nguyễn era",
   },
   "east-sea-sovereignty": {
     label: "East Sea Sovereignty",
     group: "topic",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "Hoàng Sa / Trường Sa maritime history, e.g. the Hải Đội Hoàng Sa",
   },
   "folk-religion": {
     label: "Vietnamese Folk Religion",
     group: "religion",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "Mother Goddess, Tứ Pháp and local deity worship",
   },
   "ethnic-minority-culture": {
     label: "Ethnic Minority Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
-    description: "Living highland ethnic communities (Tày, Nùng, Hà Nhì, H'Mông...) - PROVISIONAL, granularity undecided",
+    description: "Living ethnic-minority culture where several groups together are the draw (multi-group places). Use a per-group tag when one group is the reason to visit",
   },
   "khmer-architecture": {
     label: "Khmer Architecture",
     group: "architectural-influence",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   "cao-dai": {
     label: "Cao Đài",
     group: "religion",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "Caodaism - Vietnamese indigenous religion founded 1926",
   },
@@ -109,58 +109,58 @@ export const LOCATION_TAGS = {
   "hmong-culture": {
     label: "H'Mông Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   "tay-culture": {
     label: "Tày Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   "thai-culture": {
     label: "Thái (Tai) Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "Vietnam's Thái ethnic group - not Thailand. Slug naming under review",
   },
   catholicism: {
     label: "Catholicism",
     group: "religion",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   taoism: {
     label: "Taoism",
     group: "religion",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   "nguyen-dynasty": {
     label: "Nguyễn Dynasty",
     group: "historical-period",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "1802-1945 - only where the dynasty is the focus (imperial Huế, royal tombs), not background",
   },
   "lolo-culture": {
     label: "Lô Lô Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
   hinduism: {
     label: "Hinduism",
     group: "religion",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
     description: "Cham Hindu sanctuaries and temples (Shiva, Po Nagar)",
   },
   "giay-culture": {
     label: "Giáy Culture",
     group: "ethnic-culture",
-    status: "proposed",
+    status: "canonical",
     filterable: true,
   },
 
