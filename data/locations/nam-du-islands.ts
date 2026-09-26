@@ -12,7 +12,7 @@ export const namDuIslands: Location = {
   address: "An Sơn, Kiên Hải, Kiên Giang",
   type: ["island", "beach"],
   categories: ["nature", "coast"],
-  experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping", "cycling"],
+  experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping"],
   tags: ["🏝️ Remote Archipelago", "🌊 Gulf of Thailand", "🐟 Fishing Community"],
   bestTime: "Nov - May (dry season; calm seas and clear water essential for outer island boat access)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],

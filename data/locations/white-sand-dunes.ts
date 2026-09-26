@@ -12,7 +12,7 @@ export const whiteSandDunes: Location = {
   address: "Bàu Trắng, Hoà Thắng, Bắc Bình, Bình Thuận",
   type: ["sand-dunes", "lake"],
   categories: ["nature"],
-  experiences: ["photography", "trekking", "camping", "wildlife"],
+  experiences: ["photography", "wildlife"],
   tags: ["🏜️ Sahara of Vietnam", "🌅 Sunrise Dunes", "🚙 Jeep Tour"],
   bestTime: "Nov – Apr (dry season, calmest weather; sunrise and sunset visits are good year-round). Within a day, the golden windows are roughly 5-7 AM and 4-6 PM - strictly avoid 11 AM-2 PM, when temperatures can exceed 40°C and the sand genuinely burns bare feet",
   bestMonths: [11, 12, 1, 2, 3, 4],

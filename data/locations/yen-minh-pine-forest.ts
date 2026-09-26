@@ -12,7 +12,7 @@ export const yenMinhPineForest: Location = {
   address: "Na Khê - Lao Và Chải - Bạch Đích, Yên Minh, Hà Giang",
   type: ["forest"],
   categories: ["nature"],
-  experiences: ["photography", "motorcycling", "trekking", "camping"],
+  experiences: ["photography", "motorcycling", "camping"],
   tags: ["🌲 Highland Pine Forest", "🌫️ Morning Mist", "🏍️ Scenic Road"],
   bestTime: "Roughly 5:30-8:00 AM for sunrise mist, or 4:00-5:30 PM for golden late-afternoon light through the pines",
   bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],

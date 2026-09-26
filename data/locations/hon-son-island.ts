@@ -12,7 +12,7 @@ export const honSonIsland: Location = {
   address: "Lại Sơn, Kiên Hải, Kiên Giang",
   type: ["island", "beach"],
   categories: ["nature", "coast"],
-  experiences: ["beach", "snorkeling", "boat-tour", "photography", "cycling", "motorcycling", "swimming", "hiking"],
+  experiences: ["beach", "snorkeling", "boat-tour", "photography", "motorcycling", "swimming", "hiking"],
   tags: ["🏝️ Hidden Gulf Island", "🌊 Clear Water", "🚴 Island Cycling"],
   bestTime: "Nov - May (dry season, calm seas, clear water)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],

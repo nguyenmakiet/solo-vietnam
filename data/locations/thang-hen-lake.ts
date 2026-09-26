@@ -12,7 +12,7 @@ export const thangHenLake: Location = {
   address: "Quốc Toản, Trà Lĩnh, Cao Bằng",
   type: ["lake"],
   categories: ["nature"],
-  experiences: ["photography", "kayaking", "camping"],
+  experiences: ["photography"],
   tags: ["💙 Turquoise Karst Lake", "🏄 SUP on the Lake", "🌿 Green Grassland"],
   bestTime: "Jun - Sep (rainy season, lake at full depth, turquoise colour most intense, grasslands green)",
   bestMonths: [6, 7, 8, 9],

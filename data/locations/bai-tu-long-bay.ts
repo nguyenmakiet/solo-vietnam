@@ -12,7 +12,7 @@ export const baiTuLongBay: Location = {
   address: "Vịnh Bái Tử Long, Vân Đồn, Quảng Ninh",
   type: ["bay", "island"],
   categories: ["nature", "coast"],
-  experiences: ["kayaking", "boat-tour", "photography", "trekking", "swimming", "beach", "caving", "hiking"],
+  experiences: ["kayaking", "boat-tour", "photography", "swimming", "beach", "caving", "hiking"],
   tags: ["🌊 Off the Beaten Path", "🏖️ Isolated Beaches"],
   bestTime: "Mar - May (calm, clear, warm - best overall). Sep - Oct (clear skies, fewer boats). Avoid Jun - Jul (typhoon season).",
   bestMonths: [3, 4, 5, 9, 10],

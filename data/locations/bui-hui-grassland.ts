@@ -12,7 +12,7 @@ export const buiHuiGrassland: Location = {
   address: "Ba Trang, Ba Tơ, Quảng Ngãi",
   type: ["grassland", "mountain"],
   categories: ["nature"],
-  experiences: ["trekking", "camping", "photography", "culture"],
+  experiences: ["camping", "photography", "culture"],
   tags: ["🌿 Highland Meadow", "🌸 Sim Blossom", "🌄 Cloud Level Views"],
   bestTime: "Late March-April is best for the purple sim bloom. Aug-Sep is sim harvest season, when H'rê villagers gather berries for wine and syrup. For camping and sea-of-clouds views, arrive in the afternoon and stay overnight; dawn around 7:00-7:45 AM offers the best chance of seeing clouds over the surrounding peaks. Avoid heavy rain, when mountain roads can become slippery.",
   bestMonths: [3, 4, 5, 8, 9],

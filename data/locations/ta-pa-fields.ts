@@ -13,7 +13,7 @@ export const taPaFields: Location = {
   type: ["rice-fields"],
   categories: ["nature", "culture"],
   experiences: ["photography", "cycling", "motorcycling", "culture", "walking-tour"],
-  tags: ["🌾 Terraced Rice Fields", "🛕 Khmer Culture", "🌴 Twin Sugar Palms"],
+  tags: ["🌾 Terraced Rice Fields", "🛕 Khmer Culture", "🌴 Twin Sugar Palms", "khmer-culture"],
   bestTime: "Before 9:30 AM or after 3 PM to avoid harsh sun",
   bestMonths: [7, 8, 9, 10, 11],
   entranceFee: "Free",

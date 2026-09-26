@@ -12,7 +12,7 @@ export const benHaiRiver: Location = {
   address: "Vĩnh Linh - Gio Linh, Quảng Trị",
   type: ["bridge", "river"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography", "walking-tour", "cycling", "museum-visit"],
+  experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
   tags: ["🌉 Reunification Bridge", "🏳️ DMZ History", "🚗 DMZ Road Trip", "vietnam-war"],
   bestTime: "Feb - Aug (dry season; avoid Sep-Nov typhoon season)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],

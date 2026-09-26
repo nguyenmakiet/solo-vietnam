@@ -12,7 +12,7 @@ export const banGiocWaterfall: Location = {
   address: "Đàm Thủy, Trùng Khánh, Cao Bằng",
   type: ["waterfall"],
   categories: ["nature"],
-  experiences: ["photography", "boat-tour", "trekking", "wildlife"],
+  experiences: ["photography", "boat-tour"],
   tags: ["💧 Largest Waterfall on a National Border", "🛶 Bamboo Raft", "🌿 Nature"],
   bestTime: "Sep – Oct (golden rice terraces, peak water flow after rainy season)",
   bestMonths: [9, 10],

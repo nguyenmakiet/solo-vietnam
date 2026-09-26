@@ -12,7 +12,7 @@ export const bayMauCoconutForest: Location = {
   address: "Thôn Võng Nhi, Cẩm Thanh, Hội An, Quảng Nam",
   type: ["river"],
   categories: ["nature", "culture"],
-  experiences: ["boat-tour", "culture", "photography", "kayaking", "fishing"],
+  experiences: ["boat-tour", "culture", "photography", "fishing"],
   tags: ["🛶 Basket Boat", "🥥 Water Coconut Forest", "🎶 Local Performance"],
   bestTime: "Feb-Jun is coolest and driest; May-Jul overlaps with Hội An's lantern festival season if you want to combine visits, though it's hotter; Aug-Nov is cooler with less rain, and worth timing around a full moon if you want to see the lantern-floating festival too. Whatever the season, aim for early morning or after 3 PM to avoid the most intense heat",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],

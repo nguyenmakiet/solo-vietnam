@@ -12,7 +12,7 @@ export const oQuyHoPass: Location = {
   address: "Biên giới Lào Cai - Lai Châu, Quốc lộ 4D",
   type: ["pass", "mountain"],
   categories: ["nature"],
-  experiences: ["motorcycling", "trekking", "photography", "cycling"],
+  experiences: ["motorcycling", "photography"],
   tags: ["🏔️ Tứ Đại Đỉnh Đèo", "🌫️ Cloud Sea", "🛣️ Epic Road", "🌄 Northwest Loop"],
   bestTime: "Sep - Nov (autumn colour, clear skies). Mar - May (spring blossoms, cloud sea). For cloud sea: 16:00-17:30 daily is the golden window.",
   bestMonths: [3, 4, 5, 9, 10, 11],

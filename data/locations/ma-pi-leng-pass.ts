@@ -12,7 +12,7 @@ export const maPiLengPass: Location = {
   address: "Mã Pí Lèng, Mèo Vạc, Hà Giang",
   type: ["pass", "mountain"],
   categories: ["nature"],
-  experiences: ["photography", "trekking", "cycling", "motorcycling"],
+  experiences: ["photography", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "🌊 Canyon Views"],
   bestTime: "Sep - Nov (golden rice + buckwheat flowers). Mar - Apr (plum and pear blossoms). Avoid Jun - Aug rainy season.",
   bestMonths: [3, 4, 9, 10, 11],

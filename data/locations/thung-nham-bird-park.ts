@@ -12,7 +12,7 @@ export const thungNhamBirdPark: Location = {
   address: "Ninh Hải, Hoa Lư, Ninh Bình",
   type: ["valley"],
   categories: ["nature"],
-  experiences: ["wildlife", "boat-tour", "photography", "trekking"],
+  experiences: ["wildlife", "boat-tour", "photography"],
   tags: ["🦅 Egret Colony", "🌿 Wetland", "📸 Wildlife Photography"],
   bestTime: "Apr – Aug (nesting season, largest bird concentrations) or Oct – Nov",
   bestMonths: [4, 5, 6, 7, 8, 10, 11],
