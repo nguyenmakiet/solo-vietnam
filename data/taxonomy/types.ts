@@ -208,6 +208,7 @@ export const LOCATION_TYPES = {
     label: "Cable Car",
     group: "leisure",
     status: "canonical",
+    filterable: false,
     theme: "amber",
     description: "The location is the cable car itself. Different concept from the 'cable-car' experience",
   },
