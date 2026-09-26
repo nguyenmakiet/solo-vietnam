@@ -447,3 +447,41 @@ no location became type-less or broad-only.
 | Location hero | the type line drops "History" (e.g. "Cave · History" → "Cave") |
 | Search index | 29 location items (cat-ba-cannon-fort is closed, not indexed) lose only the "History" type label; nothing else changes |
 | Build | 398 pages (257 location / 20 experience / 21 destination). No public URL change |
+
+---
+
+## 12. Broad-type migration infrastructure (before migrating the other five)
+
+Owner decisions: D1' deprecate all five remaining broad types; D1'' `nature` → category `nature`, `cultural` → category
+`culture`, `heritage` / `landmark` / `attraction` → `noReplacement`; D3 category filter with URL param `category=`; D4 Cultural
+shortcut → categories `culture` + `religion`; D6 legacy `?type=` aliases; D8 category labels in search; D9 viewpoint rule.
+No Location data changed in these phases.
+
+| Phase | Commit | Change |
+|-------|--------|--------|
+| 1 (D8) | `62ef2c4` | Search index: location items also carry their canonical category labels, appended after type and tag labels and deduplicated. 189 items gain labels; nothing else in the index changes |
+| 2 (D3 + D6) | `edffe60` | `/locations` "Category" filter (`?category=`), registry-gated to the 8 theme categories (badges not offered). OR within, AND across filters; unknown values ignored and kept in the URL. `?type=nature` → `category=nature`, `?type=cultural` → `category=culture`, applied only once the type is not filterable (the URL is normalised to the category). `history` / `heritage` / `landmark` / `attraction` stay ignored |
+| 3 (D4) | `9f6b8c9` | Cultural shortcut → `?category=culture&category=religion`: 57 + 32 − 10 (both) = **79** unique active locations (was 61 via type `cultural`: 52 in common, 9 out, 27 in) |
+| 4 (D1'' + D9) | `f696738` | `noReplacement` in `TaxonomyMeta`; a deprecated value needs exactly one of `replacedBy` / `replacedByCategory` / `noReplacement`. The audit pins the owner table for all six broad types (AUDIT.md). CLAUDE.md viewpoint rule: landform type + category `nature` |
+| 5 | this commit | Full validation below |
+
+**Validation at `f696738` against `994f06d`**
+
+| Check | Result |
+|-------|--------|
+| Location data, taxonomy values, `type[0]`, colours, destination derived data, `/experiences/*` membership | identical (0 data files changed) |
+| Non-taxonomy content snapshot | identical |
+| `npm run audit:taxonomy` / tsc | OK. Each new contract rule failed when a violation was injected (11 cases) |
+| ESLint | 64 problems (39 errors, 25 warnings), identical to the baseline |
+| Build | 398 pages (257 location / 20 experience / 21 destination) |
+| `/locations` (browser) | 245 locations; shortcuts Beaches 43, Islands 18, Mountains 32, Caves 17, Waterfalls 15, Trekking 74, Photography 235, Cultural 79; 48 type / 28 experience / 8 category options; homepage discovery links unchanged (forest 19, homestay 13, motorcycling 32, nightlife 8, citadel + history 5); no page errors |
+
+**Dry run of the full five-type migration** (applied to a scratch working tree, validated, then reverted - not committed):
+231 files, `type` line only; audit OK with type 44 canonical + 6 deprecated; tsc OK; build 398 pages; no location type-less; content,
+`type[0]`, colours, derived data and experience pages identical. `/locations`: 43 type options; `?type=nature` → `?category=nature`
+(143); `?type=cultural` → `?category=culture` (57); `?type=heritage|landmark|attraction|history` ignored (245); Cultural 79.
+Search: only the five broad labels drop ("Nature" stays on 146 items through the category label). One expected new lint warning:
+`BROAD_PENDING` becomes unused and is removed in the cleanup step.
+
+Known behaviour to note: an old URL mixing a legacy type with a real type (`?type=nature&type=cave`) becomes `cave` AND category
+`nature` once aliased (it was `nature` OR `cave`), because the alias moves the value to another filter.
