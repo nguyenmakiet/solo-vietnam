@@ -54,7 +54,7 @@ export default function Home() {
             {" "}where crocodiles still drift beneath the surface,{" "}
             <Link href="/locations?type=beach" className="discovery-link">quiet beaches</Link>
             {" "}that still feel genuinely wild,{" "}
-            <Link href="/locations?type=mountain&type=nature&type=cultural&experience=homestay" className="discovery-link">mountain villages</Link>
+            <Link href="/locations?experience=homestay" className="discovery-link">mountain villages</Link>
             {" "}tucked into mist and highland fog,{" "}
             <Link href="/locations?experience=motorcycling" className="discovery-link">winding roads</Link>
             {" "}that reward anyone patient enough to follow them,{" "}
