@@ -12,7 +12,7 @@ export const catBaNationalPark: Location = {
   address: "Cát Bà, Hải Phòng",
   type: ["national-park", "forest"],
   categories: ["nature"],
-  experiences: ["trekking", "wildlife", "photography", "camping"],
+  experiences: ["trekking", "wildlife", "photography"],
   tags: ["🐒 Golden-Headed Langur", "🌿 Island Jungle", "🥾 Summit Trek", "🦜 Endemic Wildlife", "🦋 Butterfly Season"],
   bestTime: "Apr – Jun or Sep – Nov (dry season, trails accessible, best wildlife sightings)",
   bestMonths: [4, 5, 6, 9, 10, 11],

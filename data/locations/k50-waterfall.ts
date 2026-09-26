@@ -12,7 +12,7 @@ export const k50Waterfall: Location = {
   address: "Kbang, Gia Lai",
   type: ["waterfall"],
   categories: ["hidden-gem", "nature"],
-  experiences: ["trekking", "photography", "wildlife", "camping", "swimming"],
+  experiences: ["trekking", "photography", "wildlife", "swimming"],
   tags: ["💦 54m Waterfall", "🌿 Jungle Trek", "🦅 Swallow Cave"],
   bestTime: "Jan – Jun (dry season; trails safer, rivers lower, leeches somewhat less abundant)",
   bestMonths: [1, 2, 3, 4, 5, 6],

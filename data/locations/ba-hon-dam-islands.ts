@@ -12,7 +12,7 @@ export const baHonDamIslands: Location = {
   address: "Quần đảo Bà Lụa, Kiên Lương, Kiên Giang",
   type: ["island", "beach"],
   categories: ["nature", "coast"],
-  experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping", "swimming"],
+  experiences: ["beach", "snorkeling", "boat-tour", "photography", "swimming"],
   tags: ["🏝️ Remote Islands", "🚣 Boat Trip", "🏕️ Island Camping", "✨ Bioluminescence"],
   bestTime: "Nov - Apr (dry season, calm seas, good snorkeling visibility, bioluminescence most active)",
   bestMonths: [1, 2, 3, 4, 11, 12],

@@ -12,7 +12,7 @@ export const keGaLighthouse: Location = {
   address: "Tân Thành, Hàm Thuận Nam, Bình Thuận",
   type: ["lighthouse", "island", "beach"],
   categories: ["history", "coast"],
-  experiences: ["photography", "boat-tour", "beach"],
+  experiences: ["photography", "boat-tour", "beach", "snorkeling"],
   tags: ["🏛️ Colonial Lighthouse", "🚣 Boat Crossing", "🏝️ Rocky Islet", "french-colonial-era"],
   bestTime: "Nov - Apr is clearly the best window (dry, calm seas, clear water); May - Aug is still generally visitable but hot with strong midday sun; Sep - Oct brings occasional rain showers, so it's worth checking the forecast before heading out in that window. March specifically has the lowest tides of the year, occasionally low enough to walk across the exposed reef to the island",
   bestMonths: [11, 12, 1, 2, 3, 4, 5, 6, 7, 8],

@@ -12,7 +12,7 @@ export const elephantMountain: Location = {
   address: "Hòa Sơn, Đắk Lắk",
   type: ["mountain"],
   categories: ["nature"],
-  experiences: ["trekking", "photography", "culture"],
+  experiences: ["photography", "culture"],
   tags: ["🪨 Vietnam's Largest Granite Monolith", "🐘 Elephant-Shaped Rock", "🥾 Short Climb", "☕ Coffee Country"],
   bestTime: "Roughly 6:20-9:00 AM is cool with soft light and the easiest climbing conditions; late afternoon (around 4:00-6:00 PM) brings golden-hour light and sunset views from the summit. Avoid 11:00 AM-2:00 PM, when the sun is harsh and the rock surface gets uncomfortably hot underfoot",
   bestMonths: [1, 2, 3, 4, 11, 12],

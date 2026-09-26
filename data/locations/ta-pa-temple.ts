@@ -10,7 +10,7 @@ export const taPaTemple: Location = {
   lat: 10.4152711092553,
   lng: 104.99329389037788,
   address: "Núi Tô, Tri Tôn, An Giang",
-  type: ["temple"],
+  type: ["pagoda"],
   categories: ["religion", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Khmer Temple", "🏔️ 'Floating' Pillar Architecture", "🌃 Night Views", "khmer-culture", "buddhism"],

@@ -12,7 +12,7 @@ export const phuocBinhBeach: Location = {
   address: "Phước Bình, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["beach"],
   categories: ["nature", "coast"],
-  experiences: ["beach", "swimming", "photography", "cycling", "motorcycling"],
+  experiences: ["beach", "swimming", "photography", "motorcycling"],
   tags: ["🏖️ 4km Quiet Coastline", "🎣 Fishing Community Beach", "🌊 Between Long Hải & Hồ Tràm"],
   bestTime: "Oct - Nov (cool weather, clear skies, less rain - best overall). Nov - Apr dry season for calmer sea.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

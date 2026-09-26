@@ -12,7 +12,7 @@ export const benThanhMarket: Location = {
   address: "Le Loi Street, Ben Thanh Ward, District 1, Ho Chi Minh City",
   type: ["market"],
   categories: ["food", "culture"],
-  experiences: ["shopping", "food", "culture", "photography", "markets"],
+  experiences: ["shopping", "food", "culture", "photography", "markets", "nightlife"],
   tags: ["🏛️ HCMC Icon", "🛍️ Souvenir Central", "🍜 Food Hall", "📷 Landmark Clocktower"],
   bestTime: "Year-round; dry season (Dec-Apr) for comfortable walking; morning hours (7-10 AM) for the food section before heat builds.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

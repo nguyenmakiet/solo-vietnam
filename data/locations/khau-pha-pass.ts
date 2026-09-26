@@ -12,7 +12,7 @@ export const khauPhaPass: Location = {
   address: "Tú Lệ - Mù Cang Chải, Văn Chấn, Yên Bái",
   type: ["pass", "mountain"],
   categories: ["nature"],
-  experiences: ["motorcycling", "photography", "trekking", "cycling", "paragliding"],
+  experiences: ["motorcycling", "photography", "paragliding"],
   tags: ["🏔️ One of Vietnam's Four Great Passes", "🌄 Rice Terrace Views", "🪂 Paragliding"],
   bestTime: "Early morning for the clearest views before cloud builds over the summit",
   bestMonths: [5, 6, 9, 10],

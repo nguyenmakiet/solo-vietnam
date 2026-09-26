@@ -12,7 +12,7 @@ export const vanLongNatureReserve: Location = {
   address: "Gia Vân, Gia Viễn, Ninh Bình",
   type: ["nature-reserve", "river"],
   categories: ["nature"],
-  experiences: ["boat-tour", "wildlife", "photography", "kayaking"],
+  experiences: ["boat-tour", "wildlife", "photography"],
   tags: ["🦒 Delacour's Langur", "🚣 Rowing Boat", "🌿 Wetland Reserve"],
   bestTime: "Oct – Apr is the core dry-season window for wildlife viewing (migratory birds and the best chance of spotting the langurs) and generally the most pleasant weather; May-June is a separate bonus window when lotus flowers bloom across parts of the wetland, adding a pink-and-green landscape though outside the main wildlife season. Jul-Aug tends to be rainy and less ideal. Within a day, early morning (before 11 AM) or afternoon after 3-3:30 PM are both well-reviewed for cooler temperatures, better light, and more active wildlife - avoid the midday heat",
   bestMonths: [1, 2, 3, 4, 5, 6, 10, 11, 12],

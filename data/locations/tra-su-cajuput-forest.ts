@@ -12,7 +12,7 @@ export const traSuCajuputForest: Location = {
   address: "Văn Giáo, Tịnh Biên, An Giang",
   type: ["forest", "river"],
   categories: ["nature"],
-  experiences: ["boat-tour", "wildlife", "photography", "kayaking"],
+  experiences: ["boat-tour", "wildlife", "photography"],
   tags: ["🌿 Flooded Forest", "🦅 Birdwatching"],
   bestTime: "Sep - Nov (flood season; forest fully inundated, green reflection at its most vivid). Morning before 11 AM or late afternoon to avoid midday heat.",
   bestMonths: [9, 10, 11],

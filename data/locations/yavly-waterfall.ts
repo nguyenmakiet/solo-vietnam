@@ -12,7 +12,7 @@ export const yavlyWaterfall: Location = {
   address: "Tà Hoàng, Phan Dũng, Tuy Phong, Bình Thuận",
   type: ["waterfall", "forest"],
   categories: ["nature"],
-  experiences: ["trekking", "camping", "photography", "wildlife", "swimming"],
+  experiences: ["trekking", "camping", "photography", "swimming"],
   tags: ["💧 Tà Năng Waterfall", "🥾 Multi-day Trek", "🪢 Abseiling"],
   bestTime: "Nov - Apr (dry season; trails are manageable and stream crossings safe - avoid rainy season when the Tà Năng route becomes dangerously flooded)",
   bestMonths: [1, 2, 3, 4, 11, 12],

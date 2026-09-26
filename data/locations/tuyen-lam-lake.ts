@@ -12,7 +12,7 @@ export const tuyenLamLake: Location = {
   address: "Tuyền Lâm, Đà Lạt, Lâm Đồng",
   type: ["lake"],
   categories: ["nature"],
-  experiences: ["kayaking", "cycling", "photography", "walking-tour", "boat-tour", "camping"],
+  experiences: ["kayaking", "cycling", "photography", "walking-tour", "boat-tour", "camping", "cable-car"],
   tags: ["🚣 Kayaking", "🌲 Pine Forest"],
   bestTime: "Nov - May/Jun (dry season, calmest water and clearest skies); morning mist is most common between about 4:30 and 6:30 AM, particularly on calm mornings, though it doesn't appear every day. Jul-Oct rainy season makes the Prenn Pass road route slippery and foggy - stick to the Triệu Việt Vương route in that window if self-driving",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],

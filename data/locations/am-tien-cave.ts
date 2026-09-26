@@ -12,7 +12,7 @@ export const amTienCave: Location = {
   address: "Thôn Yên Thành, Trường Yên, Hoa Lư, Ninh Bình",
   type: ["cave"],
   categories: ["nature", "history"],
-  experiences: ["trekking", "caving", "photography", "history", "cycling", "kayaking", "religious-site-visit"],
+  experiences: ["caving", "photography", "history", "cycling", "kayaking", "religious-site-visit"],
   tags: ["🐉 Dragon-Mouth Cave", "🏞️ 'Tuyệt Tình Cốc' Lake", "🚴 Lake Cycling", "medieval-vietnam"],
   bestTime: "Jan - Apr (cool, dry weather, with Mar-Apr offering the best photography light) and Sep - Nov (pleasant temperatures and fewer rainy days); lotus and water lily bloom on the lake roughly Jun-Jul; avoid Jul-Aug when the stone steps get slippery in heavy rain",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],

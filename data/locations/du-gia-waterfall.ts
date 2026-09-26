@@ -12,7 +12,7 @@ export const duGiaWaterfall: Location = {
   address: "Du Già, Yên Minh, Hà Giang",
   type: ["waterfall"],
   categories: ["nature"],
-  experiences: ["trekking", "swimming", "photography"],
+  experiences: ["swimming", "photography"],
   tags: ["💧 Thác Ba Tiên", "🏊 Cliff Jumping", "🥾 River Trek"],
   bestTime: "Summer (Jun – Aug): clear water, warm weather, ideal for swimming and cliff jumping",
   bestMonths: [6, 7, 8],

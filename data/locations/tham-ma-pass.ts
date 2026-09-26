@@ -12,7 +12,7 @@ export const thamMaPass: Location = {
   address: "Thẩm Mã, Đồng Văn, Hà Giang",
   type: ["pass", "mountain"],
   categories: ["nature"],
-  experiences: ["photography", "trekking", "cycling", "motorcycling"],
+  experiences: ["photography", "cycling", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Nine-Bend Pass", "🌾 Rice Terraces"],
   bestTime: "Sep - Nov (golden rice terraces, then buckwheat flowers later in the window) or Mar - Apr (spring flowers) are the classic seasons. Fair warning: Sep-Nov, especially weekends during peak buckwheat season, is also when this pass gets its worst traffic - documented cases of 30-minute-plus jams have made local news. Weekday visits are far more pleasant if your schedule allows. Within a day, the best light is early morning (around 6-8 AM, often with mist for a softer look) or late afternoon (roughly 4:30-5:30 PM, golden light good for sunset shots)",
   bestMonths: [3, 4, 9, 10, 11],

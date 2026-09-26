@@ -12,7 +12,7 @@ export const baBeLake: Location = {
   address: "Vườn Quốc gia Ba Bể, Nam Mẫu, Ba Bể, Bắc Kạn",
   type: ["lake", "forest"],
   categories: ["nature", "culture"],
-  experiences: ["boat-tour", "kayaking", "trekking", "wildlife", "photography", "homestay", "camping", "culture", "hiking"],
+  experiences: ["boat-tour", "kayaking", "trekking", "wildlife", "photography", "homestay", "culture", "hiking"],
   tags: ["🏞️ National Park", "🚣 Freshwater Lake", "🦅 Wildlife Sanctuary", "🛖 Tày Homestay", "ethnic-minority-culture", "tay-culture"],
   bestTime: "Mar - May (spring, mild weather, Lồng Tồng festival). Sep - Nov (clear skies, green forest after rains). Avoid Dec - Feb (cold, can drop to 0°C).",
   bestMonths: [3, 4, 5, 9, 10, 11],

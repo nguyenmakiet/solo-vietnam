@@ -12,7 +12,7 @@ export const vietHaiVillage: Location = {
   address: "Việt Hải, Cát Bà, Hải Phòng",
   type: ["village"],
   categories: ["culture", "nature"],
-  experiences: ["cycling", "culture", "photography", "homestay", "kayaking"],
+  experiences: ["cycling", "culture", "photography", "homestay", "boat-tour"],
   tags: ["🚲 Jungle Cycling", "🏡 Isolated Fishing Village", "🌾 Rice Fields", "🛶 Kayak Access"],
   bestTime: "Feb–Mar (spring fog, cool air) or Jun (rice harvest, lush scenery). Avoid Jul–Aug when rough seas can prevent boat access.",
   bestMonths: [2, 3, 4, 5, 6, 10, 11, 12],

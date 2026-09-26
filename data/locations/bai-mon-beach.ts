@@ -12,7 +12,7 @@ export const baiMonBeach: Location = {
   address: "Mũi Điện, Đại Lãnh, Vạn Ninh, Phú Yên",
   type: ["beach"],
   categories: ["hidden-gem", "nature", "coast"],
-  experiences: ["beach", "photography", "trekking", "camping", "hiking"],
+  experiences: ["beach", "photography", "trekking", "camping", "hiking", "swimming"],
   tags: ["🌅 First Sunrise", "🏖️ Secluded Beach", "🏔️ Cape Walk"],
   bestTime: "Jan - Aug (dry season, clear skies for sunrise and swimming)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
