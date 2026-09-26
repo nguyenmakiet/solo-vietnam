@@ -117,6 +117,15 @@ export function isLocationExperience(value: string): value is LocationExperience
   return Object.prototype.hasOwnProperty.call(LOCATION_EXPERIENCES, value)
 }
 
+// Display label for an experience value: the registry label for a registered
+// experience ("boat-tour" -> "Boat Tour"); otherwise the raw value made
+// readable ("some-value" -> "Some value").
+export function experienceDisplayLabel(value: string): string {
+  if (isLocationExperience(value)) return LOCATION_EXPERIENCES[value].label
+  const text = value.replace(/-/g, " ")
+  return text.charAt(0).toUpperCase() + text.slice(1)
+}
+
 // ─── Legacy aliases ──────────────────────────────────────────
 // legacy value (as toTaxonomyKey output) -> experience. Only true 1:1
 // equivalences (EQ). Deprecated registry values resolve via `replacedBy`.

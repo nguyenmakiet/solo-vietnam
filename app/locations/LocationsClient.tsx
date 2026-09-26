@@ -4,7 +4,8 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import { Location, LocationType, locationTheme } from "@/data/location"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
-import { typeDisplayLabel } from "@/data/taxonomy/types"
+import { LOCATION_TYPES, isLocationType, typeDisplayLabel } from "@/data/taxonomy/types"
+import { LOCATION_EXPERIENCES, experienceDisplayLabel, isLocationExperience } from "@/data/taxonomy/experiences"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
@@ -97,9 +98,22 @@ function formatSlug(slug: string): string {
   return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
 }
 
-function formatType(type: string): string {
-  const s = type.replace(/-/g, " ")
-  return s.charAt(0).toUpperCase() + s.slice(1)
+// A type/experience is offered and applied as a filter only when the frozen
+// taxonomy registry allows it: registered, canonical, and not explicitly
+// marked `filterable: false`. Anything else in the URL (unknown, proposed,
+// deprecated) is ignored when filtering but left in the URL untouched.
+type FilterMeta = { status: string; filterable?: boolean }
+
+function isFilterableMeta(meta: FilterMeta): boolean {
+  return meta.status === "canonical" && meta.filterable !== false
+}
+
+function isFilterableType(value: string): boolean {
+  return isLocationType(value) && isFilterableMeta(LOCATION_TYPES[value])
+}
+
+function isFilterableExperience(value: string): boolean {
+  return isLocationExperience(value) && isFilterableMeta(LOCATION_EXPERIENCES[value])
 }
 
 function truncate(str: string, max: number): string {
@@ -226,13 +240,13 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const allTypes = useMemo(() => {
     const set = new Set<string>()
     locations.forEach((l) => getTypes(l).forEach((t) => set.add(t)))
-    return Array.from(set).sort()
+    return Array.from(set).filter(isFilterableType).sort()
   }, [locations])
 
   const allExperiences = useMemo(() => {
     const set = new Set<string>()
     locations.forEach((l) => l.experiences.forEach((e) => set.add(e)))
-    return Array.from(set).sort()
+    return Array.from(set).filter(isFilterableExperience).sort()
   }, [locations])
 
   const allProvinces = useMemo(() => {
@@ -256,16 +270,21 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     return counts
   }, [locations])
 
+  // Selected values that are valid filters. The raw selections stay in state
+  // (and therefore in the URL); stale ones are simply not applied.
+  const activeTypes = useMemo(() => selectedTypes.filter(isFilterableType), [selectedTypes])
+  const activeExperiences = useMemo(() => selectedExperiences.filter(isFilterableExperience), [selectedExperiences])
+
   const filtered = useMemo(() => {
     return locations.filter((loc) => {
       if (region !== null) {
         if (getLocationRegion(loc) !== region) return false
       }
-      if (selectedTypes.length > 0) {
-        if (!selectedTypes.some((t) => getTypes(loc).includes(t))) return false
+      if (activeTypes.length > 0) {
+        if (!activeTypes.some((t) => getTypes(loc).includes(t))) return false
       }
-      if (selectedExperiences.length > 0) {
-        if (!selectedExperiences.some((e) => loc.experiences.includes(e))) return false
+      if (activeExperiences.length > 0) {
+        if (!activeExperiences.some((e) => loc.experiences.includes(e))) return false
       }
       if (province) {
         if (!loc.provinces.includes(province)) return false
@@ -275,7 +294,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
       }
       return true
     })
-  }, [locations, region, selectedTypes, selectedExperiences, province, selectedMonths])
+  }, [locations, region, activeTypes, activeExperiences, province, selectedMonths])
 
   const visible = filtered.slice(0, visibleCount)
   const hasMore = visibleCount < filtered.length
@@ -358,7 +377,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, province, selectedMonths, nextPage)}`)
   }
 
-  const hasActiveFilters = region !== null || selectedTypes.length > 0 || selectedExperiences.length > 0 || province !== "" || selectedMonths.length > 0
+  const hasActiveFilters = region !== null || activeTypes.length > 0 || activeExperiences.length > 0 || province !== "" || selectedMonths.length > 0
 
   return (
     <main className="min-h-screen bg-[#F7F4EF]">
@@ -473,11 +492,11 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               <button
                 onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setProvOpen(false) }}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  selectedTypes.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
+                  activeTypes.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
               >
                 <IconType />
-                Type{selectedTypes.length > 0 ? ` · ${selectedTypes.length}` : ""}
+                Type{activeTypes.length > 0 ? ` · ${activeTypes.length}` : ""}
                 <IconChevron />
               </button>
               {typeOpen && (
@@ -497,11 +516,11 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               <button
                 onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setProvOpen(false) }}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  selectedExperiences.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
+                  activeExperiences.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
                 }`}
               >
                 <IconExperience />
-                Experience{selectedExperiences.length > 0 ? ` · ${selectedExperiences.length}` : ""}
+                Experience{activeExperiences.length > 0 ? ` · ${activeExperiences.length}` : ""}
                 <IconChevron />
               </button>
               {expOpen && (
@@ -509,7 +528,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   {allExperiences.map((e) => (
                     <label key={e} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
                       <input type="checkbox" checked={selectedExperiences.includes(e)} onChange={() => toggleExperience(e)} className="accent-[#1C1C1A]  w-3.5 h-3.5" />
-                      {formatType(e)}
+                      {experienceDisplayLabel(e)}
                     </label>
                   ))}
                 </div>
