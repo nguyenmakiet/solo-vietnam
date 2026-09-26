@@ -630,64 +630,6 @@
   color: var(--text-muted);
   line-height: 1.65;
 }
-/* ── CURIOSITY GRID ── */
-.home-curiosity-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
-}
-@media (max-width: 1024px) {
-  .home-curiosity-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 640px) {
-  .home-curiosity-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.home-curiosity-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 24px 20px 20px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-}
-.home-curiosity-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 32px rgba(120, 90, 40, 0.1);
-  border-color: var(--gold-light);
-}
-.home-curiosity-icon {
-  color: var(--gold);
-  opacity: 0.9;
-  flex-shrink: 0;
-}
-.home-curiosity-title {
-  font-family: var(--font-serif), "Source Serif 4", serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--dark);
-  line-height: 1.25;
-}
-.home-curiosity-desc {
-  font-size: 12px;
-  color: var(--text-muted);
-  line-height: 1.65;
-  flex: 1;
-}
-.home-curiosity-cta {
-  font-size: 12px;
-  color: var(--gold);
-  font-weight: 600;
-  margin-top: 4px;
-}
-
 /* Thêm vào homepage.css */
 
 .home-region-links {
