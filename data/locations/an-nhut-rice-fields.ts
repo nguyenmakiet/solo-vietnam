@@ -10,7 +10,7 @@ export const anNhutRiceFields: Location = {
   lat: 10.484091864450695,
   lng: 107.23620766445066,
   address: "Xã An Nhứt, Long Điền, Bà Rịa - Vũng Tàu",
-  type: ["rice-fields", "nature", "attraction", "cultural"],
+  type: ["rice-fields"],
   categories: ["nature", "food"],
   experiences: ["photography", "food", "culture", "walking-tour", "cycling"],
   tags: ["🌾 Rice Fields", "📷 Golden Season", "🍜 Countryside Food Market", "🌅 Sunset Views"],

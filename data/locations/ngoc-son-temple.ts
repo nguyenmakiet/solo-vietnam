@@ -10,7 +10,7 @@ export const ngocSonTemple: Location = {
   lat: 21.030680946550152,
   lng: 105.85236736680054,
   address: "Đảo Ngọc Sơn, Hồ Hoàn Kiếm, Hoàn Kiếm, Hà Nội",
-  type: ["temple", "heritage", "landmark"],
+  type: ["temple"],
   categories: ["religion", "history", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏯 Island Temple", "🌉 Red Bridge", "🐢 Turtle Museum", "⚔️ Legend of Sword", "folk-religion", "taoism"],

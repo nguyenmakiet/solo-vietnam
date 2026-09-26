@@ -10,7 +10,7 @@ export const hanoiStJosephsCathedral: Location = {
   lat: 21.02870465360659,
   lng: 105.84885596097946,
   address: "40 Nhà Chung, Hoàn Kiếm, Hà Nội",
-  type: ["church", "landmark", "heritage", "cultural"],
+  type: ["church"],
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛪ Gothic Cathedral", "🏛️ French Colonial", "📷 Old Quarter Icon", "🕯️ Active Parish", "catholicism", "french-architecture"],

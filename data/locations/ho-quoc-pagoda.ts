@@ -10,7 +10,7 @@ export const hoQuocPagoda: Location = {
   lat: 10.110135026513962,
   lng: 104.02895431741221,
   address: "Ấp Suối Lớn, Dương Tơ, Phú Quốc, Kiên Giang",
-  type: ["pagoda", "temple", "landmark"],
+  type: ["pagoda", "temple"],
   categories: ["religion", "architecture", "coast"],
   experiences: ["culture", "history", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Largest Pagoda on Phú Quốc", "🏔️ Mountain-Backed, Sea-Facing", "🧘 Peaceful", "buddhism"],

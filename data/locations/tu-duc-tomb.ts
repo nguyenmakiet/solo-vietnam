@@ -10,7 +10,7 @@ export const tuDucTomb: Location = {
   lat: 16.433211195700988,
   lng: 107.5670752256665,
   address: "Dương Xuân Thượng, Hương Thọ, Huế",
-  type: ["tomb", "heritage"],
+  type: ["tomb"],
   categories: ["history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🌿 Garden Tomb", "📖 Poet Emperor", "🏡 Pavilion & Lake", "nguyen-dynasty"],

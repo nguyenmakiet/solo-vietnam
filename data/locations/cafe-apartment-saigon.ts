@@ -10,7 +10,7 @@ export const cafeApartmentSaigon: Location = {
   lat: 10.774098930222388,
   lng: 106.70407797003224,
   address: "42 Nguyễn Huệ, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
-  type: ["building", "cultural", "landmark"],
+  type: ["building"],
   categories: ["architecture", "food"],
   experiences: ["food", "photography", "walking-tour", "shopping"],
   tags: ["☕ Vertical Cafe Building", "📸 Instagram Spot", "🏙️ Walking Street", "🏚️ Mid-Century Architecture"],

@@ -10,7 +10,7 @@ export const coThachBeach: Location = {
   lat: 11.17800572228083,
   lng: 108.71644682210062,
   address: "Bình Thạnh, Tuy Phong, Bình Thuận",
-  type: ["beach", "nature", "landmark"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["photography", "beach", "walking-tour"],
   tags: ["🪨 Moss-Covered Rocks", "🌈 Seven-Coloured Stones", "🌅 Sunrise Spot"],

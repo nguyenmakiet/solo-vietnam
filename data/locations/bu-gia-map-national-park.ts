@@ -10,7 +10,7 @@ export const buGiaMapNationalPark: Location = {
   lat: 12.096260710633082,
   lng: 107.19588006603547,
   address: "Bù Gia Mập, Bù Gia Mập, Bình Phước",
-  type: ["national-park", "forest", "nature", "mountain"],
+  type: ["national-park", "forest", "mountain"],
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "photography", "camping", "swimming"],
   tags: ["🌿 Primary Rainforest", "🦧 Gibbon Habitat", "🥾 Beginner Trek"],

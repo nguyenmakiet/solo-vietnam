@@ -10,7 +10,7 @@ export const hieuWaterfall: Location = {
   lat: "20.46548088770793",
   lng: "105.2224454532903",
   address: "Hieu Village, Cổ Lũng, Bá Thước, Thanh Hóa",
-  type: ["waterfall", "nature"],
+  type: ["waterfall"],
   categories: ["nature"],
   experiences: ["photography", "walking-tour", "swimming"],
   tags: ["💧 Multi-tier Waterfall", "🏊 Swimming Pools", "🌿 Forest Setting"],

@@ -10,7 +10,7 @@ export const caoDaiHolySee: Location = {
   lat: 11.303855281819674,
   lng: 106.13334876168078,
   address: "Phạm Hộ Pháp, Hòa Thành, Tây Ninh",
-  type: ["temple", "heritage", "cultural"],
+  type: ["temple"],
   categories: ["religion", "architecture", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🕌 Caodaism Holy See", "📿 Religion & Philosophy", "🏛️ Eclectic Architecture", "👁️ Divine Eye", "cao-dai"],

@@ -10,7 +10,7 @@ export const dinhMountain: Location = {
   lat: 10.537592530622792,
   lng: 107.12929659066629,
   address: "Mỹ Xuân, Phú Mỹ (formerly Tân Thành district), Bà Rịa – Vũng Tàu",
-  type: ["mountain", "nature", "temple"],
+  type: ["mountain", "temple"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "culture", "camping", "swimming", "religious-site-visit"],
   tags: ["⛰️ Coastal Peak", "🥾 Summit Trek", "🛕 Multiple Pagodas", "🚁 Former Helicopter Pad"],

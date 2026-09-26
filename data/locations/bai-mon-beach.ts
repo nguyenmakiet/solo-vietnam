@@ -10,7 +10,7 @@ export const baiMonBeach: Location = {
   lat: 12.896863628194192,
   lng: 109.45109317905293,
   address: "Mũi Điện, Đại Lãnh, Vạn Ninh, Phú Yên",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["hidden-gem", "nature", "coast"],
   experiences: ["beach", "photography", "trekking", "camping", "hiking"],
   tags: ["🌅 First Sunrise", "🏖️ Secluded Beach", "🏔️ Cape Walk"],

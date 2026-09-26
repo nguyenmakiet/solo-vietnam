@@ -10,7 +10,7 @@ export const honKhoIsland: Location = {
   lat: 13.764548186649696,
   lng: 109.29977458585735,
   address: "Hòn Khô, Nhơn Hải, Quy Nhơn, Bình Định",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "swimming"],
   tags: ["🏝️ Day Trip Island", "🐠 Coral Reefs", "📷 Rocky Coastline", "🌊 SUP & Seaweed Season"],

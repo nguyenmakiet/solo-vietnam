@@ -10,7 +10,7 @@ export const longSonPagoda: Location = {
   lat: 12.250327071591599,
   lng: 109.18072246606026,
   address: "22 Đường 23/10, Phương Sơn, Nha Trang, Khánh Hoà",
-  type: ["pagoda", "heritage"],
+  type: ["pagoda"],
   categories: ["religion"],
   experiences: ["culture", "history", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛩️ White Buddha", "🏔️ Hilltop Statue", "🕌 Active Pagoda", "buddhism"],

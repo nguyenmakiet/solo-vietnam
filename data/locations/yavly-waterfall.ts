@@ -10,7 +10,7 @@ export const yavlyWaterfall: Location = {
   lat: 11.511202745108713,
   lng: 108.61623377954047,
   address: "Tà Hoàng, Phan Dũng, Tuy Phong, Bình Thuận",
-  type: ["waterfall", "nature", "forest"],
+  type: ["waterfall", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography", "wildlife", "swimming"],
   tags: ["💧 Tà Năng Waterfall", "🥾 Multi-day Trek", "🪢 Abseiling"],

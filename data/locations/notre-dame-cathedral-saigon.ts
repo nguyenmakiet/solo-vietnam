@@ -10,7 +10,7 @@ export const notreDameCathedralSaigon: Location = {
   lat: 10.779943554525898,
   lng: 106.69904032687226,
   address: "01 Công xã Paris, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh",
-  type: ["church", "landmark", "heritage", "cultural"],
+  type: ["church"],
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛪ French Colonial Icon", "🏛️ 19th Century", "📷 District 1 Landmark", "🧱 Red Brick Facade", "catholicism", "french-colonial-era", "french-architecture"],

@@ -10,7 +10,7 @@ export const catBaNationalPark: Location = {
   lat: "20.793772701115774",
   lng: "106.98943675013382",
   address: "Cát Bà, Hải Phòng",
-  type: ["national-park", "forest", "nature"],
+  type: ["national-park", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "photography", "camping"],
   tags: ["🐒 Golden-Headed Langur", "🌿 Island Jungle", "🥾 Summit Trek", "🦜 Endemic Wildlife", "🦋 Butterfly Season"],

@@ -10,7 +10,7 @@ export const backBeachVungTau: Location = {
   lat: 10.345965126464138,
   lng: 107.09780711962715,
   address: "Thùy Vân, TP. Vũng Tàu, Bà Rịa - Vũng Tàu",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["food", "coast"],
   experiences: ["beach", "swimming", "food", "nightlife", "walking-tour"],
   tags: ["🏖️ Vũng Tàu Main Beach", "🌊 HCMC Weekend Beach", "🍺 Beachfront Restaurants", "🚢 2 Hours from Saigon"],

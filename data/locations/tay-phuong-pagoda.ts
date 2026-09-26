@@ -10,7 +10,7 @@ export const tayPhuongPagoda: Location = {
   lat: 21.025452515537896,
   lng: 105.58718664974505,
   address: "Thạch Xá, Thạch Thất, Hà Nội",
-  type: ["pagoda", "cultural", "heritage"],
+  type: ["pagoda"],
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 16th-Century Origins", "🏛️ National Special Relic", "🪨 Hilltop Pagoda", "📸 Architecture & Statues", "buddhism"],

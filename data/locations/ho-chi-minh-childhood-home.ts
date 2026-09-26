@@ -10,7 +10,7 @@ export const hoChiMinhChildhoodHome: Location = {
   lat: 18.676032245825112,
   lng: 105.55404708457107,
   address: "Làng Sen, Kim Liên, Nam Đàn, Nghệ An",
-  type: ["historic-site", "cultural", "heritage", "landmark"],
+  type: ["historic-site"],
   categories: ["history"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏛️ National Pilgrimage Site", "🌿 Historic Village", "🇻🇳 Vietnamese History"],

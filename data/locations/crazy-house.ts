@@ -10,7 +10,7 @@ export const crazyHouse: Location = {
   lat: 11.934822914969137,
   lng: 108.43136784176984,
   address: "3 Huỳnh Thúc Kháng, Đà Lạt, Lâm Đồng",
-  type: ["building", "attraction", "cultural"],
+  type: ["building"],
   categories: ["architecture"],
   experiences: ["photography", "walking-tour", "culture"],
   tags: ["🏠 Gaudí-Style Architecture", "🎨 Art & Design", "🏨 Functioning Guesthouse"],

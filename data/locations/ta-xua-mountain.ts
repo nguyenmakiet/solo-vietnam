@@ -10,7 +10,7 @@ export const taXuaMountain: Location = {
   lat: 21.458552357466253,
   lng: 104.34445105702092,
   address: "Bắc Yên, Sơn La",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["hidden-gem", "nature"],
   experiences: ["trekking", "photography", "camping"],
   tags: ["🦕 Dinosaur Spine Ridge", "🌊 Sea of Clouds", "🐢 Turtle Rock", "🌿 Moss Forest"],

@@ -10,7 +10,7 @@ export const anHaiCommunalHouse: Location = {
   lat: 15.374960915867455,
   lng: 109.12906613305788,
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
-  type: ["communal-house", "cultural"],
+  type: ["communal-house"],
   categories: ["history", "culture", "architecture", "coast"],
   experiences: ["history", "culture"],
   tags: [

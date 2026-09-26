@@ -10,7 +10,7 @@ export const traSuCajuputForest: Location = {
   lat: "10.584555814623155",
   lng: "105.05977775517107",
   address: "Văn Giáo, Tịnh Biên, An Giang",
-  type: ["forest", "nature", "river"],
+  type: ["forest", "river"],
   categories: ["nature"],
   experiences: ["boat-tour", "wildlife", "photography", "kayaking"],
   tags: ["🌿 Flooded Forest", "🦅 Birdwatching"],

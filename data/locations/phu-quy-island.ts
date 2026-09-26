@@ -10,7 +10,7 @@ export const phuQuyIsland: Location = {
   lat: 10.50468862452949,
   lng: 108.95176333752987,
   address: "Huyện Phú Quý, Bình Thuận",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "cycling", "diving"],
   tags: ["🏝️ Offshore Island", "🤿 Diving & Snorkeling", "🚴 Island Cycling", "🌊 Clear Water"],

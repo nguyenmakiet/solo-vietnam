@@ -10,7 +10,7 @@ export const oQuyHoPass: Location = {
   lat: 22.352936964870516,
   lng: 103.76559573923562,
   address: "Biên giới Lào Cai - Lai Châu, Quốc lộ 4D",
-  type: ["pass", "mountain", "nature", "landmark"],
+  type: ["pass", "mountain"],
   categories: ["nature"],
   experiences: ["motorcycling", "trekking", "photography", "cycling"],
   tags: ["🏔️ Tứ Đại Đỉnh Đèo", "🌫️ Cloud Sea", "🛣️ Epic Road", "🌄 Northwest Loop"],

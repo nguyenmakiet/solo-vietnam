@@ -10,7 +10,7 @@ export const tacSayChurch: Location = {
   lat: 9.221890887161383,
   lng: 105.39755916214018,
   address: "Tắc Sậy, Phong Thạnh Tây, Giá Rai, Bạc Liêu",
-  type: ["church", "heritage", "cultural", "landmark"],
+  type: ["church"],
   categories: ["religion", "history"],
   experiences: ["history", "culture", "photography", "religious-site-visit"],
   tags: ["⛪ Martyr Shrine", "🙏 Pilgrimage Site", "🌾 Mekong Delta", "✨ Miraculous Healings", "catholicism"],

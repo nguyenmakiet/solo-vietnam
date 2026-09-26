@@ -10,7 +10,7 @@ export const hanoiOldQuarter: Location = {
   lat: "21.035625405852137",
   lng: "105.85092919329092",
   address: "Hoàn Kiếm, Hà Nội",
-  type: ["old-quarter", "heritage", "city", "cultural"],
+  type: ["old-quarter", "city"],
   categories: ["culture", "food", "history", "architecture"],
   experiences: ["walking-tour", "food", "shopping", "culture", "history", "photography"],
   tags: ["🏘️ 36 Ancient Streets", "🛵 Chaotic & Alive", "🍜 Street Food Capital", "📷 Colonial Architecture", "medieval-vietnam"],

@@ -10,7 +10,7 @@ export const hangPagoda: Location = {
   lat: 15.391114193530264,
   lng: 109.12497065117606,
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
-  type: ["pagoda", "landmark"],
+  type: ["pagoda"],
   categories: ["religion", "history", "coast"],
   experiences: ["culture", "history", "photography", "religious-site-visit"],
   tags: [

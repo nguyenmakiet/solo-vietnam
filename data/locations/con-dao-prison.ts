@@ -10,7 +10,7 @@ export const conDaoPrison: Location = {
   lat: 8.689294969079059,
   lng: 106.6153057028259,
   address: "Côn Đảo, Bà Rịa - Vũng Tàu",
-  type: ["prison", "heritage"],
+  type: ["prison"],
   categories: ["history"],
   experiences: ["history", "culture", "walking-tour", "photography", "museum-visit"],
   tags: ["🏛️ French Colonial Prison", "⛓️ Tiger Cages", "vietnam-war", "🕯️ Hàng Dương Cemetery", "french-colonial-era"],

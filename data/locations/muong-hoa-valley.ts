@@ -10,7 +10,7 @@ export const muongHoaValley: Location = {
   lat: 22.3143616370346,
   lng: 103.87703660862965,
   address: "Hậu Thào – Tả Van – Lao Chải, Sa Pa, Lào Cai",
-  type: ["valley", "nature"],
+  type: ["valley"],
   categories: ["nature", "culture"],
   experiences: ["trekking", "photography", "culture", "homestay"],
   tags: ["🌾 Rice Terraces"],

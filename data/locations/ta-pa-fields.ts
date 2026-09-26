@@ -10,7 +10,7 @@ export const taPaFields: Location = {
   lat: 10.402127666662789,
   lng: 104.99288003222382,
   address: "Núi Tô, Tri Tôn, An Giang",
-  type: ["rice-fields", "nature", "attraction"],
+  type: ["rice-fields"],
   categories: ["nature", "culture"],
   experiences: ["photography", "cycling", "motorcycling", "culture", "walking-tour"],
   tags: ["🌾 Terraced Rice Fields", "🛕 Khmer Culture", "🌴 Twin Sugar Palms"],

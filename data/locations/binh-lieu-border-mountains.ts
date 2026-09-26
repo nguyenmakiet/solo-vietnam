@@ -10,7 +10,7 @@ export const binhLieuBorderMountains: Location = {
   lat: 21.64893803864023,
   lng: 107.44002584112907,
   address: "Bình Liêu, Quảng Ninh",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["hidden-gem", "nature", "culture"],
   experiences: ["trekking", "photography", "culture", "motorcycling"],
   tags: ["🌾 Reed Flower Season", "🏔️ Border Ridge Trek", "🪨 Cột Mốc 1305", "👘 Ethnic Villages"],

@@ -10,7 +10,7 @@ export const baOmLake: Location = {
   lat: 9.917705660783596,
   lng: 106.30405967120855,
   address: "Khóm 3, Phường 8, Thành phố Trà Vinh, Trà Vinh",
-  type: ["lake", "cultural", "nature"],
+  type: ["lake"],
   categories: ["culture", "religion", "nature"],
   experiences: ["culture", "history", "photography", "walking-tour", "cycling", "religious-site-visit"],
   tags: ["🌊 Ancient Khmer Lake", "🛕 Âng Pagoda", "🌳 400-Year-Old Trees", "khmer-culture"],

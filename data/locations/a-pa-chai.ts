@@ -10,7 +10,7 @@ export const aPaChai: Location = {
   lat: 22.401192335843305,
   lng: 102.14371962758165,
   address: "Sín Thầu, Mường Nhé, Điện Biên",
-  type: ["monument", "landmark", "mountain", "nature"],
+  type: ["monument", "mountain"],
   categories: ["nature", "culture"],
   experiences: ["trekking", "photography", "motorcycling", "culture", "hiking"],
   tags: ["🌐 Westernmost Point", "🏔️ Triple Border", "🥾 Remote Trek", "ethnic-minority-culture"],

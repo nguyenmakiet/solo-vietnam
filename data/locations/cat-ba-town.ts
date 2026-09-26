@@ -10,7 +10,7 @@ export const catBaTown: Location = {
   lat: "20.72440008462996",
   lng: "107.04949514147219",
   address: "Thị trấn Cát Bà, Cát Hải, Hải Phòng",
-  type: ["town", "attraction", "landmark"],
+  type: ["town"],
   categories: ["food"],
   experiences: ["food", "nightlife", "walking-tour", "photography", "markets"],
   tags: ["🏘️ Island Town", "🦞 Seafood", "🌅 Harbour Front", "🌙 Cat Ba Nightlife"],

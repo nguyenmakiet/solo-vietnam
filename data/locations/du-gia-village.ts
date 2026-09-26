@@ -10,7 +10,7 @@ export const duGiaVillage: Location = {
   lat: "22.930340238883847",
   lng: "105.22274726498522",
   address: "Du Già, Yên Minh, Hà Giang",
-  type: ["village", "cultural", "nature"],
+  type: ["village"],
   categories: ["culture", "nature"],
   experiences: ["homestay", "trekking", "culture", "photography", "cycling"],
   tags: ["🏡 Tày & H'mông Village", "🌾 Rice Terraces", "🥾 Eastern Loop", "🤫 Off the Beaten Track", "tay-culture"],

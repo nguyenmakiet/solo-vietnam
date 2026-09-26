@@ -10,7 +10,7 @@ export const yTy: Location = {
   lat: 22.657362311112333,
   lng: 103.61233893234572,
   address: "Xã Y Tý, Huyện Bát Xát, Lào Cai",
-  type: ["mountain", "nature", "cultural"],
+  type: ["mountain"],
   categories: ["hidden-gem", "nature", "culture"],
   experiences: ["trekking", "photography", "homestay", "wildlife"],
   tags: ["☁️ Sea of Clouds", "🏔️ 2,860m Peak", "🌾 Rice Terraces", "🏡 Hà Nhì Villages", "❄️ Snow in Winter"],

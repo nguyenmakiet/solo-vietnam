@@ -10,7 +10,7 @@ export const saigonCentralPostOffice: Location = {
   lat: 10.779864930790652,
   lng: 106.69990840101588,
   address: "2 Công Xã Paris, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh",
-  type: ["building", "landmark", "heritage", "cultural"],
+  type: ["building"],
   categories: ["iconic", "architecture", "history"],
   experiences: ["photography", "culture", "walking-tour"],
   tags: ["🏛️ French Colonial Landmark", "📮 Working Post Office", "🏙️ French Colonial", "📸 Architecture", "french-colonial-era", "french-architecture"],

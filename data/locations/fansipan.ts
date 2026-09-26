@@ -10,7 +10,7 @@ export const fansipan: Location = {
   lat: 22.303457926709047,
   lng: 103.77517218526022,
   address: "Hoàng Liên, Sa Pa, Lào Cai",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "cable-car", "photography"],
   tags: ["🏔️ Rooftop of Indochina", "🚡 World Record Cable Car"],

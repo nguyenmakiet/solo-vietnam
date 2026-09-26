@@ -10,7 +10,7 @@ export const sixSensesBeach: Location = {
   lat: 8.701360844209008,
   lng: 106.63442958678696,
   address: "Đất Dốc, Côn Đảo, Bà Rịa - Vũng Tàu",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "snorkeling", "photography", "camping"],
   tags: ["🏖️ Most Beautiful Beach in Con Dao", "🌊 Pristine Water"],

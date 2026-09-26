@@ -10,7 +10,7 @@ export const nhanTower: Location = {
   lat: 13.082464193252497,
   lng: 109.30199511819382,
   address: "72 Lê Trung Kiên, Phường 1, TP. Tuy Hòa, Phú Yên",
-  type: ["temple", "cultural"],
+  type: ["temple"],
   categories: ["religion", "history", "architecture"],
   experiences: ["photography", "culture", "history", "walking-tour", "religious-site-visit"],
   tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night", "champa-heritage"],

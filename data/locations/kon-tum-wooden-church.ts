@@ -10,7 +10,7 @@ export const konTumWoodenChurch: Location = {
   lat: 14.345152402216648,
   lng: 108.01323599142874,
   address: "13 Nguyễn Huệ, Thống Nhất, TP. Kon Tum, Kon Tum",
-  type: ["church", "cultural", "heritage", "landmark"],
+  type: ["church"],
   categories: ["religion", "architecture", "history", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛪ French Mission Architecture", "🪵 All-Wood Construction", "🏛️ Colonial Heritage", "catholicism", "french-colonial-era", "french-architecture"],

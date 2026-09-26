@@ -10,7 +10,7 @@ export const hoaLuAncientCapital: Location = {
   lat: 20.286875757053178,
   lng: 105.91801053940709,
   address: "Trường Yên, Hoa Lư, Ninh Bình",
-  type: ["historic-site", "temple", "heritage"],
+  type: ["historic-site", "temple"],
   categories: ["history", "culture"],
   experiences: ["history", "culture", "photography", "cycling", "religious-site-visit"],
   tags: ["🏯 10th Century Capital", "⛩️ Đinh & Lê Temples", "📖 Vietnam's First Capital", "medieval-vietnam"],

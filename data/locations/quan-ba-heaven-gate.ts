@@ -10,7 +10,7 @@ export const quanBaHeavenGate: Location = {
   lat: 23.04948889805356,
   lng: 104.99321363748844,
   address: "Quyết Tiến, Quản Bạ, Hà Giang",
-  type: ["pass", "nature", "mountain"],
+  type: ["pass", "mountain"],
   categories: ["nature"],
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🌄 Ha Giang Loop Gateway", "📸 Panoramic Views", "🏍️ Gateway to the Karst Plateau", "☁️ Cloud Valley", "french-colonial-era"],

@@ -10,7 +10,7 @@ export const baNaCableCar: Location = {
   lat: "16.025928263564783",
   lng: "108.03455022954422",
   address: "Suối Mơ Station, Hoà Ninh, Hoà Vang, Đà Nẵng",
-  type: ["cable-car", "theme-park", "attraction"],
+  type: ["cable-car", "theme-park"],
   categories: ["entertainment"],
   experiences: ["cable-car", "photography"],
   tags: ["🚡 World Record Cable Car", "☁️ Through the Clouds", "📸 Aerial Views", "🏰 French Village"],

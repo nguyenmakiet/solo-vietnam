@@ -10,7 +10,7 @@ export const masaraHill: Location = {
   lat: 11.516105652285598,
   lng: 108.43388764781206,
   address: "Thôn Masara, xã Đà Loan, Đức Trọng, Lâm Đồng",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "camping", "motorcycling"],
   tags: ["🌾 Pink Grass Hill", "🌄 Sunrise & Sunset"],

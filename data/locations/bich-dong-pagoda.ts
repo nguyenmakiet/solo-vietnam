@@ -10,7 +10,7 @@ export const bichDongPagoda: Location = {
   lat: 20.22892866015645,
   lng: 105.95146127475308,
   address: "Văn Lâm, Ninh Hải, Hoa Lư, Ninh Bình",
-  type: ["pagoda", "heritage", "cave"],
+  type: ["pagoda", "cave"],
   categories: ["religion", "culture", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour", "cycling", "religious-site-visit"],
   tags: ["⛩️ Cave Pagoda", "🏔️ Three-Tier Temple", "🚲 Cycling from Tam Cốc", "buddhism"],

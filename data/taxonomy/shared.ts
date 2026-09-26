@@ -35,7 +35,7 @@ export type TaxonomyMeta<Group extends string> = {
   // type or category). Exactly one of replacedBy / replacedByCategory /
   // noReplacement is set on a deprecated value.
   noReplacement?: string
-  // A decision explicitly deferred by the owner (e.g. deprecation of broad types).
+  // A decision explicitly deferred by the owner (e.g. the broad types before their migration).
   pendingDecision?: string
 }
 

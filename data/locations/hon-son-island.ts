@@ -10,7 +10,7 @@ export const honSonIsland: Location = {
   lat: 9.806794658299804,
   lng: 104.65066589563308,
   address: "Lại Sơn, Kiên Hải, Kiên Giang",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "cycling", "motorcycling", "swimming", "hiking"],
   tags: ["🏝️ Hidden Gulf Island", "🌊 Clear Water", "🚴 Island Cycling"],

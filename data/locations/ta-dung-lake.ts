@@ -10,7 +10,7 @@ export const taDungLake: Location = {
   lat: 11.85958318658573,
   lng: 107.923086633516,
   address: "Đắk Som, Đắk Glong, Đắk Nông",
-  type: ["lake", "nature"],
+  type: ["lake"],
   categories: ["hidden-gem", "nature"],
   experiences: ["kayaking", "boat-tour", "photography", "camping", "wildlife"],
   tags: ["⛵ Island-Dotted Lake", "🌲 National Park", "🛶 Kayaking & SUP"],

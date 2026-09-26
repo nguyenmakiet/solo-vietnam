@@ -10,7 +10,7 @@ export const baiDinhPagoda: Location = {
   lat: 20.268192723940388,
   lng: 105.85603779913747,
   address: "Gia Sinh, Gia Viễn, Ninh Bình",
-  type: ["pagoda", "heritage"],
+  type: ["pagoda"],
   categories: ["religion", "culture", "architecture"],
   experiences: ["culture", "history", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛩️ Largest Pagoda in Vietnam", "🏯 500 Arhat Statues", "🔔 Giant Bell", "buddhism"],

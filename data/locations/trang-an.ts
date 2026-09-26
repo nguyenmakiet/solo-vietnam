@@ -10,7 +10,7 @@ export const trangAn: Location = {
   lat: 20.253239649044314,
   lng: 105.91915249378707,
   address: "Tràng An, Hoa Lư, Ninh Bình",
-  type: ["river", "cave", "nature", "heritage"],
+  type: ["river", "cave"],
   categories: ["nature", "history"],
   experiences: ["boat-tour", "caving", "photography", "culture", "history", "religious-site-visit"],
   tags: ["🚣 Boat Tour", "🪨 UNESCO Heritage", "⛩️ Temples"],

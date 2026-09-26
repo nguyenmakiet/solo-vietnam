@@ -10,7 +10,7 @@ export const muiNeFishingVillage: Location = {
   lat: 10.94117833027457,
   lng: 108.2795665776806,
   address: "Mũi Né, Phan Thiết, Bình Thuận",
-  type: ["village", "cultural", "attraction"],
+  type: ["village"],
   categories: ["culture", "coast"],
   experiences: ["photography", "culture", "food", "markets"],
   tags: ["🎣 Fishing Village", "🌅 Sunrise", "🦐 Seafood"],

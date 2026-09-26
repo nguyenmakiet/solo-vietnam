@@ -10,7 +10,7 @@ export const donVillage: Location = {
   lat: 20.442325670852664, // TODO: verify - could not independently confirm via search; treat as approximate
   lng: 105.15306511972044, // TODO: verify - could not independently confirm via search; treat as approximate
   address: "Bản Đôn, xã Pù Luông (formerly Thành Lâm commune, merged 1 July 2025), Bá Thước, Thanh Hóa",
-  type: ["village", "cultural"],
+  type: ["village"],
   categories: ["culture", "nature"],
   experiences: ["culture", "photography", "walking-tour", "cycling", "homestay"],
   tags: ["🌾 Rice Terraces", "🏠 Thai Stilt Houses", "🛏️ Homestay Hub", "thai-culture"],

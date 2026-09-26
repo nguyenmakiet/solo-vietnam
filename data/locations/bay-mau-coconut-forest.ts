@@ -10,7 +10,7 @@ export const bayMauCoconutForest: Location = {
   lat: 15.877556321921798,
   lng: 108.37267755516427,
   address: "Thôn Võng Nhi, Cẩm Thanh, Hội An, Quảng Nam",
-  type: ["river", "nature"],
+  type: ["river"],
   categories: ["nature", "culture"],
   experiences: ["boat-tour", "culture", "photography", "kayaking", "fishing"],
   tags: ["🛶 Basket Boat", "🥥 Water Coconut Forest", "🎶 Local Performance"],

@@ -10,7 +10,7 @@ export const kyCoBeach: Location = {
   lat: 13.850407408494334,
   lng: 109.2927788212342,
   address: "Nhơn Lý, Quy Nhơn, Bình Định",
-  type: ["beach", "island", "nature"],
+  type: ["beach", "island"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "photography", "boat-tour", "camping"],
   tags: ["🏖️ Hidden Beach", "💎 Turquoise Water"],

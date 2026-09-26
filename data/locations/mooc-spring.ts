@@ -10,7 +10,7 @@ export const moocSpring: Location = {
   lat: 17.556813119452748,
   lng: 106.23884445637982,
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
-  type: ["stream", "nature"],
+  type: ["stream"],
   categories: ["nature"],
   experiences: ["swimming", "trekking", "photography", "kayaking"],
   tags: ["💧 Natural Spring Pool", "🌿 Jungle"],

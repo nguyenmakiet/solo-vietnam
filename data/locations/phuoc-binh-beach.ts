@@ -10,7 +10,7 @@ export const phuocBinhBeach: Location = {
   lat: 10.405786013422123,
   lng: 107.20493127981287,
   address: "Phước Bình, Long Điền, Bà Rịa - Vũng Tàu",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "photography", "cycling", "motorcycling"],
   tags: ["🏖️ 4km Quiet Coastline", "🎣 Fishing Community Beach", "🌊 Between Long Hải & Hồ Tràm"],

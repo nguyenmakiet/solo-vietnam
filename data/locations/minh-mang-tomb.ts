@@ -10,7 +10,7 @@ export const minhMangTomb: Location = {
   lat: 16.387662100068777,
   lng: 107.57082605265036,
   address: "An Bằng, Hương Thọ, Huế",
-  type: ["tomb", "heritage"],
+  type: ["tomb"],
   categories: ["history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["👑 Most Architecturally Grand Tomb", "🌊 Lake & Pavilion Gardens", "nguyen-dynasty"],

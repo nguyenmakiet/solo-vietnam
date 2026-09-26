@@ -10,7 +10,7 @@ export const doiNhaiBeach: Location = {
   lat: 10.389740360346483,
   lng: 107.15635316774474,
   address: "Phường 11, Vũng Tàu, Bà Rịa - Vũng Tàu",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["photography", "beach", "camping", "kitesurfing"],
   tags: ["🪁 Kitesurfing Spot", "🏕️ Wild Camping", "🌊 Undeveloped Beach", "🐚 Crab & Snail Foraging"],

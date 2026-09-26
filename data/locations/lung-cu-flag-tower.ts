@@ -10,7 +10,7 @@ export const lungCuFlagTower: Location = {
   lat: 23.363427116840306,
   lng: 105.31633882452529,
   address: "Lũng Cú, Đồng Văn, Hà Giang",
-  type: ["monument", "attraction"],
+  type: ["monument"],
   categories: ["history"],
   experiences: ["history", "culture", "photography", "trekking"],
   tags: ["🚩 Northernmost Point", "🏔️ Viewpoint", "🇻🇳 Landmark"],

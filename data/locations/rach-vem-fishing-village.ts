@@ -10,7 +10,7 @@ export const rachVemFishingVillage: Location = {
   lat: "10.36556980337033",
   lng: "103.93341470835864",
   address: "Rạch Vẹm, Gành Dầu, Phú Quốc, Kiên Giang",
-  type: ["village", "cultural", "nature", "beach"],
+  type: ["village", "beach"],
   categories: ["culture", "nature", "coast"],
   experiences: ["culture", "photography", "food", "walking-tour", "boat-tour"],
   tags: ["🦑 Starfish Beach", "🎣 Stilt House Village", "🍚 Floating Restaurant", "🌊 Northern Phu Quoc"],

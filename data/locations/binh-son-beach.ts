@@ -10,7 +10,7 @@ export const binhSonBeach: Location = {
   lat: 11.561876733112111,
   lng: 109.02501913079249,
   address: "Đường 16/4, Mỹ Bình, Phan Rang - Tháp Chàm, Ninh Thuận",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["coast"],
   experiences: ["beach", "swimming", "photography", "cycling", "motorcycling", "kitesurfing"],
   tags: ["🏖️ City Beach", "🌊 Clear Water"],

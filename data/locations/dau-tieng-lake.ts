@@ -10,7 +10,7 @@ export const dauTiengLake: Location = {
   lat: 11.354531,
   lng: 106.342298,
   address: "Dầu Tiếng, Bình Dương / Tây Ninh border",
-  type: ["lake", "nature", "forest"],
+  type: ["lake", "forest"],
   categories: ["nature"],
   experiences: ["photography", "camping", "cycling", "boat-tour", "fishing"],
   tags: ["🏞️ Largest Reservoir", "🌅 Sunrise Photography"],

@@ -10,7 +10,7 @@ export const khauCocChaPass: Location = {
   lat: 22.926557070752953,
   lng: 105.78388981658192,
   address: "Xuân Trường, Bảo Lạc, Cao Bằng",
-  type: ["pass", "nature", "mountain"],
+  type: ["pass", "mountain"],
   categories: ["nature"],
   experiences: ["motorcycling", "photography", "trekking", "hiking"],
   tags: ["🏍️ 15-Tier Pass", "📸 Panoramic Views", "🌀 Hairpin Switchbacks", "🏔️ Highland Road"],

@@ -10,7 +10,7 @@ export const plateRockReef: Location = {
   lat: 13.354005873751277,
   lng: 109.29390981181257,
   address: "An Ninh Đông, Tuy An, Phú Yên",
-  type: ["rock-formation", "beach", "nature", "landmark"],
+  type: ["rock-formation", "beach"],
   categories: ["nature", "coast"],
   experiences: ["photography", "walking-tour", "beach"],
   tags: ["🪨 Basalt Columns", "🌊 Coastal Rock", "🌅 Sunrise Spot"],

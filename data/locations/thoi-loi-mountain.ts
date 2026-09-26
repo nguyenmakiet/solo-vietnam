@@ -10,7 +10,7 @@ export const thoiLoiMountain: Location = {
   lat: 15.382293884994116,
   lng: 109.13179450157818,
   address: "An Hải, Lý Sơn, Quảng Ngãi",
-  type: ["mountain", "nature", "landmark"],
+  type: ["mountain"],
   categories: ["nature", "coast"],
   experiences: ["photography", "trekking", "camping"],
   tags: [

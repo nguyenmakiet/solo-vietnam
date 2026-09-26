@@ -10,7 +10,7 @@ export const catTienNationalPark: Location = {
   lat: 11.424517877270743,
   lng: 107.42756061160924,
   address: "Tân Phú, Đồng Nai",
-  type: ["national-park", "forest", "nature", "mountain"],
+  type: ["national-park", "forest", "mountain"],
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "photography", "camping", "cycling", "boat-tour"],
   tags: ["🌿 UNESCO Biosphere", "🦎 Wildlife Sanctuary", "🥾 Jungle Trek", "🦧 Primate Centre"],

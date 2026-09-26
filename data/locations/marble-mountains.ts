@@ -10,7 +10,7 @@ export const marbleMountains: Location = {
   lat: "16.00395789717095",
   lng: "108.26316049550601",
   address: "81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng",
-  type: ["mountain", "heritage", "cultural", "landmark", "cave"],
+  type: ["mountain", "cave"],
   categories: ["religion", "nature", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "trekking", "religious-site-visit", "caving"],
   tags: ["🪨 Five Elements Mountains", "🕌 Buddhist Caves", "☀️ Sunbeam Cave", "🏯 Cham Heritage", "buddhism"],

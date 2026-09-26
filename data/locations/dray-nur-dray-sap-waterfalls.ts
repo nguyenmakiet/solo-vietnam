@@ -10,7 +10,7 @@ export const drayNurDraySapWaterfalls: Location = {
   lat: 12.540509582270607,
   lng: 107.89028799489219,
   address: "Krông Kmar, Krông Bông, Đắk Lắk / Đắk Nông border",
-  type: ["waterfall", "nature", "forest"],
+  type: ["waterfall", "forest"],
   categories: ["nature"],
   experiences: ["photography", "walking-tour", "trekking", "hiking"],
   tags: ["💧 Husband & Wife Falls", "🌊 Basalt Plateau", "🌿 Highland Forest"],

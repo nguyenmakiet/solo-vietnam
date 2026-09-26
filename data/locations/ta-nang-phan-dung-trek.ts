@@ -10,7 +10,7 @@ export const taNangPhanDungTrek: Location = {
   lat: 11.536084933625041,
   lng: 108.53666725713427,
   address: "Tà Năng, Đức Trọng, Lâm Đồng to Phan Dũng, Tuy Phong, Bình Thuận",
-  type: ["mountain", "forest", "nature"],
+  type: ["mountain", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography", "wildlife"],
   tags: ["🥾 Multi-day Trek", "🌄 Highland to Coast"],

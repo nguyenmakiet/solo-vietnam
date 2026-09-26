@@ -10,7 +10,7 @@ export const vanLongNatureReserve: Location = {
   lat: 20.37269717802166,
   lng: 105.88325487973674,
   address: "Gia Vân, Gia Viễn, Ninh Bình",
-  type: ["nature-reserve", "nature", "river"],
+  type: ["nature-reserve", "river"],
   categories: ["nature"],
   experiences: ["boat-tour", "wildlife", "photography", "kayaking"],
   tags: ["🦒 Delacour's Langur", "🚣 Rowing Boat", "🌿 Wetland Reserve"],

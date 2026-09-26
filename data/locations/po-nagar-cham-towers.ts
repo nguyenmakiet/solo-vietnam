@@ -10,7 +10,7 @@ export const poNagarChamTowers: Location = {
   lat: 12.265491244831042,
   lng: 109.19565099450733,
   address: "2 Tháng 4, Phường Bắc Nha Trang, Khánh Hòa",
-  type: ["temple", "heritage"],
+  type: ["temple"],
   categories: ["religion", "history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏯 Cham Towers", "⛩️ Active Hindu Temple", "🏛️ 8th Century", "champa-heritage", "hinduism"],

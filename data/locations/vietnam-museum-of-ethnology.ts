@@ -10,7 +10,7 @@ export const vietnamMuseumOfEthnology: Location = {
   lat: "21.040622256391238",
   lng: "105.7985165933281",
   address: "Nguyễn Văn Huyên, Cầu Giấy, Hà Nội",
-  type: ["museum", "cultural", "heritage"],
+  type: ["museum"],
   categories: ["culture"],
   experiences: ["culture", "history", "photography", "walking-tour", "museum-visit"],
   tags: ["🏛️ Best Museum in Vietnam", "🎎 54 Ethnic Groups", "🌿 Outdoor Village", "ethnic-minority-culture"],

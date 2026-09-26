@@ -10,7 +10,7 @@ export const vinhTrungFields: Location = {
   lat: 10.557096724995187,
   lng: 105.02055578113539,
   address: "Vĩnh Trung, Tịnh Biên, An Giang",
-  type: ["rice-fields", "nature", "cultural"],
+  type: ["rice-fields"],
   categories: ["nature", "culture"],
   experiences: ["photography", "walking-tour", "culture", "motorcycling"],
   tags: ["🌴 Thốt Nốt Palm Fields", "🏛️ Sà-Đách-Tót Pagoda", "🏔️ Thất Sơn Backdrop"],

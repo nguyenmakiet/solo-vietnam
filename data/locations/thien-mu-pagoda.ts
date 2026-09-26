@@ -10,7 +10,7 @@ export const thienMuPagoda: Location = {
   lat: 16.453168591703893,
   lng: 107.54519432036955,
   address: "Kim Long, Huế, Thừa Thiên Huế",
-  type: ["pagoda", "cultural"],
+  type: ["pagoda"],
   categories: ["religion", "history", "architecture"],
   experiences: ["history", "culture", "photography", "boat-tour", "religious-site-visit"],
   tags: ["⛩️ Oldest Pagoda in Huế", "🏯 7-Tier Tower", "🌊 Perfume River", "buddhism"],

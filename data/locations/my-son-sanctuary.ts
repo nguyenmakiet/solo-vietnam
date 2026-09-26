@@ -10,7 +10,7 @@ export const mySonSanctuary: Location = {
   lat: "15.76310079629061",
   lng: "108.12417516881945",
   address: "Duy Phú, Duy Xuyên, Quảng Nam",
-  type: ["temple", "heritage", "cultural"],
+  type: ["temple"],
   categories: ["history", "architecture", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
   tags: ["🏛️ UNESCO Heritage", "🛕 Cham Temples", "🌿 Jungle Ruins", "champa-heritage", "hinduism"],

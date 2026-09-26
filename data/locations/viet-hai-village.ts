@@ -10,7 +10,7 @@ export const vietHaiVillage: Location = {
   lat: "20.787857336300597",
   lng: "107.05828009939815",
   address: "Việt Hải, Cát Bà, Hải Phòng",
-  type: ["village", "cultural", "nature"],
+  type: ["village"],
   categories: ["culture", "nature"],
   experiences: ["cycling", "culture", "photography", "homestay", "kayaking"],
   tags: ["🚲 Jungle Cycling", "🏡 Isolated Fishing Village", "🌾 Rice Fields", "🛶 Kayak Access"],

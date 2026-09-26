@@ -10,7 +10,7 @@ export const hieuVillage: Location = {
   lat: 20.465207207325047, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
   lng: 105.22192270503085, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
   address: "Bản Hiêu, Cổ Lũng, Bá Thước, Thanh Hóa",
-  type: ["village", "cultural"],
+  type: ["village"],
   categories: ["culture", "nature"],
   experiences: ["culture", "photography", "walking-tour", "swimming", "homestay"],
   tags: ["🌾 Rice Terraces", "💧 Waterfall Village", "🏠 Thai Stilt Houses", "🌉 Bamboo Bridge", "thai-culture"],

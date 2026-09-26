@@ -10,7 +10,7 @@ export const chuaChanMountain: Location = {
   lat: 10.938213833993702,
   lng: 107.37752745679926,
   address: "Xuân Trường, Xuân Lộc, Đồng Nai",
-  type: ["mountain", "nature", "temple"],
+  type: ["mountain", "temple"],
   categories: ["nature", "religion"],
   experiences: ["trekking", "photography", "culture", "camping", "cable-car", "religious-site-visit", "hiking"],
   tags: ["⛰️ Southern Peak", "🚡 Cable Car & Summit Trek", "🛕 Cave Pagoda", "buddhism"],

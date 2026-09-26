@@ -10,7 +10,7 @@ export const mauSonMountain: Location = {
   lat: 21.849873373608105,
   lng: 106.91696577893505,
   address: "Mẫu Sơn, Lộc Bình, Lạng Sơn",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "camping", "motorcycling", "homestay", "hiking"],
   tags: ["❄️ Snow in Vietnam", "🌄 Cloud Sea", "🏔️ Northeast Highlands", "🌡️ Subalpine Climate", "french-colonial-era"],

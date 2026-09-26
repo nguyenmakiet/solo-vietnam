@@ -10,7 +10,7 @@ export const hangCauCliffs: Location = {
   lat: 15.388917622220426,
   lng: 109.13405569310561,
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
-  type: ["beach", "landmark"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["photography", "swimming", "snorkeling", "kayaking"],
   tags: [

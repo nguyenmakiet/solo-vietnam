@@ -10,7 +10,7 @@ export const ducPagoda: Location = {
   lat: 15.38906217491256,
   lng: 109.10196741829073,
   address: "An Hải, Lý Sơn, Quảng Ngãi",
-  type: ["pagoda", "landmark"],
+  type: ["pagoda"],
   categories: ["religion", "nature"],
   experiences: ["culture", "photography", "religious-site-visit"],
   status: "temporarily-closed",

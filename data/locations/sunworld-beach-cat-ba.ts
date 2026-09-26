@@ -10,7 +10,7 @@ export const sunworldBeachCatBa: Location = {
   lat: 20.722033365092187,
   lng: 107.04538052522355,
   address: "Thị trấn Cát Bà, Cát Hải, Hải Phòng",
-  type: ["beach", "attraction", "landmark"],
+  type: ["beach"],
   categories: ["coast", "entertainment"],
   experiences: ["beach", "nightlife", "photography", "kayaking", "swimming"],
   tags: ["🏖️ Artificial Beach", "🌴 Beach Club", "🎆 Fireworks Shows", "🌊 Cat Ba Town"],

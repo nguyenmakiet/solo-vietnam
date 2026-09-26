@@ -10,7 +10,7 @@ export const hoaLoPrison: Location = {
   lat: "21.025370023417228",
   lng: "105.8467212199111",
   address: "1 Hỏa Lò, Trần Hưng Đạo, Hoàn Kiếm, Hà Nội",
-  type: ["prison", "heritage"],
+  type: ["prison"],
   categories: ["must-see", "history"],
   experiences: ["history", "culture", "walking-tour", "photography", "museum-visit"],
   tags: ["⛓️ French Colonial Prison", "✈️ Hanoi Hilton", "🪖 POW History", "🏛️ Colonial Architecture", "vietnam-war", "french-colonial-era"],

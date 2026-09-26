@@ -10,7 +10,7 @@ export const amTienCave: Location = {
   lat: 20.283351716721526,
   lng: 105.91444612825703,
   address: "Thôn Yên Thành, Trường Yên, Hoa Lư, Ninh Bình",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature", "history"],
   experiences: ["trekking", "caving", "photography", "history", "cycling", "kayaking", "religious-site-visit"],
   tags: ["🐉 Dragon-Mouth Cave", "🏞️ 'Tuyệt Tình Cốc' Lake", "🚴 Lake Cycling", "medieval-vietnam"],

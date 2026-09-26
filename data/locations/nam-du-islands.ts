@@ -10,7 +10,7 @@ export const namDuIslands: Location = {
   lat: 9.693846746908509,
   lng: 104.36148650825102,
   address: "An Sơn, Kiên Hải, Kiên Giang",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "camping", "cycling"],
   tags: ["🏝️ Remote Archipelago", "🌊 Gulf of Thailand", "🐟 Fishing Community"],

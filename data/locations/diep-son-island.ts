@@ -10,7 +10,7 @@ export const diepSonIsland: Location = {
   lat: 12.702371060987337,
   lng: 109.29151610832875,
   address: "Vạn Thạnh, Vạn Ninh, Khánh Hòa",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "boat-tour", "photography", "snorkeling", "kayaking", "homestay"],
   tags: ["🏝️ Sand Path Island", "🌊 Tidal Sandbar", "🚣 Boat Trip"],

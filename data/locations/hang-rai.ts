@@ -10,7 +10,7 @@ export const hangRai: Location = {
   lat: "11.678088681494673",
   lng: "109.18272230833225",
   address: "Thôn Thái An, Vĩnh Hải, Ninh Hải, Ninh Thuận",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["hidden-gem", "nature", "coast"],
   experiences: ["photography", "trekking", "wildlife", "swimming", "snorkeling"],
   tags: ["🪨 Ancient Coral Rock Formations", "🌅 Sunset Views", "🌊 Wild Coast"],

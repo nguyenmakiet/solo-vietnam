@@ -10,7 +10,7 @@ export const honMunIsland: Location = {
   lat: 12.17068371125258,
   lng: 109.30185373625723,
   address: "Hòn Mun, Vịnh Nha Trang, Khánh Hòa",
-  type: ["island", "nature"],
+  type: ["island"],
   categories: ["nature", "coast"],
   experiences: ["snorkeling", "diving", "photography", "boat-tour"],
   tags: ["🤿 Diving in Nha Trang", "🐠 Coral Reef", "🏝️ Marine Reserve"],

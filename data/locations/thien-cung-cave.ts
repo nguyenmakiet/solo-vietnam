@@ -10,7 +10,7 @@ export const thienCungCave: Location = {
   lat: 20.912819278073986,
   lng: 107.01721792446725,
   address: "Dau Go Island, Ha Long Bay, Quang Ninh Province",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature"],
   experiences: ["caving", "photography"],
   tags: ["🪨 Heavenly Palace Cave", "🌊 UNESCO Heritage", "🐉 Dragon King Legend"],

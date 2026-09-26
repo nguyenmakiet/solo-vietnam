@@ -10,7 +10,7 @@ export const baDanhPagoda: Location = {
   lat: 20.416700,
   lng: 105.916700,
   address: "Thôn Đanh Xá, Ngọc Sơn, Kim Bảng, Hà Nam",
-  type: ["pagoda", "cultural", "heritage"],
+  type: ["pagoda"],
   categories: ["religion", "culture", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Famous Proverb Pagoda", "🌿 Riverside Setting", "🧘 Tứ Pháp Worship", "buddhism", "folk-religion"],

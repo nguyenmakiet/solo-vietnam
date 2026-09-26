@@ -10,7 +10,7 @@ export const hoiAnAncientTown: Location = {
   lat: "15.877003160603328",
   lng: "108.32649087704544",
   address: "Minh An, Hội An, Quảng Nam",
-  type: ["old-quarter", "town", "heritage", "cultural"],
+  type: ["old-quarter", "town"],
   categories: ["culture", "history", "architecture", "food"],
   experiences: ["culture", "history", "food", "markets", "walking-tour", "photography", "nightlife", "shopping"],
   tags: ["🏮 Lantern Town", "🎑 UNESCO Heritage", "🍜 Street Food"],

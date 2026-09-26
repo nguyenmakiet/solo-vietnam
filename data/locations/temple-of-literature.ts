@@ -10,7 +10,7 @@ export const templeOfLiterature: Location = {
   lat: "21.028594787123282",
   lng: "105.83588039832362",
   address: "Quốc Tử Giám, Đống Đa, Hà Nội",
-  type: ["temple", "heritage", "cultural", "landmark"],
+  type: ["temple"],
   categories: ["history", "culture", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏛️ Vietnam's First University", "📸 Architecture", "🇻🇳 National Heritage", "🎓 Confucian Temple", "medieval-vietnam", "confucianism"],

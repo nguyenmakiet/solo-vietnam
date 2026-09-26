@@ -10,7 +10,7 @@ export const phatDiemCathedral: Location = {
   lat: 20.09305479535071,
   lng: 106.0794963740728,
   address: "Xã Phát Diệm, Ninh Bình",
-  type: ["church", "heritage", "cultural", "landmark"],
+  type: ["church"],
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["⛪ Stone Cathedral", "🏯 Vietnamese Gothic", "🌊 Coastal Plains", "📷 Unique Architecture", "catholicism"],

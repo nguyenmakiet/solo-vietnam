@@ -10,7 +10,7 @@ export const batPagodaSocTrang: Location = {
   lat: 9.579054592787864,
   lng: 105.97228381142124,
   address: "Mã Tộc, Châu Thành, Sóc Trăng",
-  type: ["pagoda", "cultural", "heritage", "nature"],
+  type: ["pagoda"],
   categories: ["religion", "culture", "architecture", "nature"],
   experiences: ["culture", "history", "photography", "wildlife", "walking-tour", "religious-site-visit"],
   tags: ["🦇 Thousands of Bats", "🛕 Khmer Pagoda", "🌳 Ancient Trees", "khmer-culture", "khmer-architecture", "buddhism"],

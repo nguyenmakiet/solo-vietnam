@@ -10,7 +10,7 @@ export const phongNamValley: Location = {
   lat: 22.880089,
   lng: 106.535739,
   address: "Phong Nậm, Trùng Khánh, Cao Bằng",
-  type: ["valley", "nature"],
+  type: ["valley"],
   categories: ["hidden-gem", "nature"],
   experiences: ["photography", "cycling", "culture"],
   tags: ["🌾 Golden Rice Fields", "🏞️ Quây Sơn River", "📸 Drone Photography", "🎎 Tày Villages"],

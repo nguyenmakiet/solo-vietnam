@@ -10,7 +10,7 @@ export const paSyWaterfall: Location = {
   lat: 14.59512835252321,
   lng: 108.25679237041005,
   address: "Măng Cành, Kon Plông, Kon Tum",
-  type: ["waterfall", "nature", "forest"],
+  type: ["waterfall", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "wildlife"],
   tags: ["💧 Măng Đen Highlight", "🌿 Pine Forest Highlands", "🥾 Eco-Tourism Site"],

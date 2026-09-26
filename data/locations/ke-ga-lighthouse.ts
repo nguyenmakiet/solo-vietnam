@@ -10,7 +10,7 @@ export const keGaLighthouse: Location = {
   lat: 10.695329624836493,
   lng: 107.99144633590802,
   address: "Tân Thành, Hàm Thuận Nam, Bình Thuận",
-  type: ["lighthouse", "landmark", "island", "beach"],
+  type: ["lighthouse", "island", "beach"],
   categories: ["history", "coast"],
   experiences: ["photography", "boat-tour", "beach"],
   tags: ["🏛️ Colonial Lighthouse", "🚣 Boat Crossing", "🏝️ Rocky Islet", "french-colonial-era"],

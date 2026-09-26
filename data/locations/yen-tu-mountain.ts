@@ -10,7 +10,7 @@ export const yenTuMountain: Location = {
   lat: 21.131344974258912,
   lng: 106.73006478199216,
   address: "Thượng Yên Công, Uông Bí, Quảng Ninh",
-  type: ["mountain", "nature", "temple", "heritage"],
+  type: ["mountain", "temple"],
   categories: ["religion", "nature", "history"],
   experiences: ["trekking", "culture", "history", "photography", "religious-site-visit", "cable-car", "hiking"],
   tags: ["⛰️ Sacred Peak", "🛕 Buddhist Pilgrimage", "🥾 Summit Trek", "🌲 Ancient Forest", "buddhism", "medieval-vietnam"],

@@ -10,7 +10,7 @@ export const onePillarPagoda: Location = {
   lat: 21.03587349277687,
   lng: 105.83360453336113,
   address: "Đội Cấn, Ba Đình, Hà Nội",
-  type: ["pagoda", "heritage", "landmark"],
+  type: ["pagoda"],
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🏛️ National Symbol", "🪷 Lotus Pagoda", "👑 11th Century", "📷 Iconic Architecture", "buddhism", "medieval-vietnam"],

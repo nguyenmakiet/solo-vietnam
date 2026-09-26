@@ -10,7 +10,7 @@ export const darkCave: Location = {
   lat: 17.574355688827836,
   lng: 106.25458261828979,
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature"],
   experiences: ["caving", "kayaking", "swimming", "trekking"],
   tags: ["🧗 Adventure Cave", "💧 Mud Bath", "🎢 Zip Line"],

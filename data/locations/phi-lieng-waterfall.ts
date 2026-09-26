@@ -10,7 +10,7 @@ export const phiLiengWaterfall: Location = {
   lat: 11.944546145566818,
   lng: 108.07039134773805,
   address: "Phi Liêng, Đam Rông, Lâm Đồng",
-  type: ["waterfall", "nature", "forest"],
+  type: ["waterfall", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "swimming", "motorcycling", "camping"],
   tags: ["💦 7-Tier Waterfall", "🌿 Remote Forest Trek", "🏍️ Motorbike Trail"],

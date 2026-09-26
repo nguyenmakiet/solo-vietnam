@@ -10,7 +10,7 @@ export const dongVanMarket: Location = {
   lat: "23.277117868189283",
   lng: "105.36124291013778",
   address: "Thị trấn Đồng Văn, Đồng Văn, Hà Giang",
-  type: ["market", "cultural", "heritage"],
+  type: ["market"],
   categories: ["culture", "food"],
   experiences: ["culture", "markets", "photography", "food"],
   tags: ["🛍️ Sunday Market", "🏔️ Karst Plateau", "🎎 Ethnic Minority", "hmong-culture"],

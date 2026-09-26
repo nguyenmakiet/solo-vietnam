@@ -10,7 +10,7 @@ export const elephantMountain: Location = {
   lat: 12.481628765573047,
   lng: 108.23313331512834,
   address: "Hòa Sơn, Đắk Lắk",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "culture"],
   tags: ["🪨 Vietnam's Largest Granite Monolith", "🐘 Elephant-Shaped Rock", "🥾 Short Climb", "☕ Coffee Country"],

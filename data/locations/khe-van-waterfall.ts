@@ -10,7 +10,7 @@ export const kheVanWaterfall: Location = {
   lat: 21.486276637358955,
   lng: 107.48048454527046,
   address: "Huc Dong Commune, Binh Lieu District, Quang Ninh",
-  type: ["waterfall", "nature"],
+  type: ["waterfall"],
   categories: ["nature", "culture"],
   experiences: ["swimming", "trekking", "photography", "culture"],
   tags: ["💧 3-Tier Waterfall", "🏊 Natural Pool", "🌾 Ethnic Villages"],

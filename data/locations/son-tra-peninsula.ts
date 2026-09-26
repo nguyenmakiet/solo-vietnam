@@ -10,7 +10,7 @@ export const sonTraPeninsula: Location = {
   lat: 16.122257078414076,
   lng: 108.27692670069526,
   address: "Thọ Quang, Sơn Trà, Đà Nẵng",
-  type: ["nature-reserve", "nature", "heritage"],
+  type: ["nature-reserve"],
   categories: ["nature", "coast"],
   experiences: ["wildlife", "photography", "trekking", "motorcycling", "beach", "religious-site-visit", "swimming"],
   tags: ["🐒 Red-Shanked Douc Langur", "🌿 Nature Reserve", "🏍️ Scenic Drive"],

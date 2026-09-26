@@ -10,7 +10,7 @@ export const bauSau: Location = {
   lat: "11.458838033233041",
   lng: "107.34506914941234",
   address: "Cat Tien National Park, Tân Phú, Đồng Nai",
-  type: ["lake", "forest", "nature"],
+  type: ["lake", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "photography", "boat-tour", "cycling", "hiking"],
   tags: ["🐊 Crocodile Lake", "🌿 Primary Forest", "🦅 Birdwatching", "🥾 Jungle Trek", "🌙 Overnight Stay"],

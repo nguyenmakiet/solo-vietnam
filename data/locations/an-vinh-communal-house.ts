@@ -10,7 +10,7 @@ export const anVinhCommunalHouse: Location = {
   lat: 15.376064479616458,
   lng: 109.10020318216426,
   address: "An Vĩnh, Lý Sơn, Quảng Ngãi",
-  type: ["communal-house", "cultural"],
+  type: ["communal-house"],
   categories: ["history", "culture", "architecture", "coast"],
   experiences: ["history", "culture"],
   tags: [

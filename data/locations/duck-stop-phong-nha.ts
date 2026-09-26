@@ -10,7 +10,7 @@ export const duckStopPhongNha: Location = {
   lat: 17.604600505245507,
   lng: 106.36632612569426,
   address: "Khương Hà 3, Hưng Trạch, Bố Trạch, Quảng Bình (Bong Lai Valley)",
-  type: ["farmland", "attraction", "nature"],
+  type: ["farmland"],
   categories: ["entertainment"],
   experiences: ["culture", "wildlife", "walking-tour"],
   tags: ["🦆 Duck Feeding Farm", "🐃 Buffalo Rides", "📸 TikTok-Famous", "🌾 Bong Lai Valley"],

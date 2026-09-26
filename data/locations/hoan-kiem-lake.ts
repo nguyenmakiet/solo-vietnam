@@ -10,7 +10,7 @@ export const hoanKiemLake: Location = {
   lat: 21.027833338357237,
   lng: 105.85226838963871,
   address: "Hồ Hoàn Kiếm, Hoàn Kiếm, Hà Nội",
-  type: ["lake", "landmark", "attraction"],
+  type: ["lake"],
   categories: ["culture", "history"],
   experiences: ["walking-tour", "culture", "history", "photography", "religious-site-visit"],
   tags: ["🐢 Turtle Lake", "🏙️ Hanoi Heart", "🌅 Morning Walks", "🏯 Ngoc Son Temple"],

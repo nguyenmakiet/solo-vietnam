@@ -10,7 +10,7 @@ export const phoenixUnicornIslandsMyTho: Location = {
   lat: 10.335167589686217,
   lng: 106.36046151034951,
   address: "Cồn Phụng: Tân Thạch, Châu Thành, Bến Tre. Cồn Thới Sơn: Ấp Thới Hòa, Thới Sơn, Mỹ Tho, Tiền Giang",
-  type: ["island", "cultural", "nature"],
+  type: ["island"],
   categories: ["culture", "food"],
   experiences: ["boat-tour", "cycling", "food", "culture", "photography", "fishing"],
   tags: ["🥥 Coconut Religion Temple", "🐉 Tứ Linh Islands", "🛶 Canal Boats", "🍈 Orchard Fruit"],

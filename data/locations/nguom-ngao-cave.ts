@@ -10,7 +10,7 @@ export const nguomNgaoCave: Location = {
   lat: 22.845576774719714,
   lng: 106.70639496631787,
   address: "Bản Gun, Đàm Thủy, Trùng Khánh, Cao Bằng",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature"],
   experiences: ["caving", "photography"],
   tags: ["🪨 Stalactite Cave", "🧗 Cave Walk", "🌿 Off the Beaten Path"],

@@ -10,7 +10,7 @@ export const bidoupNuiBaNationalPark: Location = {
   lat: 12.133961464408484,
   lng: 108.53404748226983,
   address: "Đa Nhim, Lạc Dương, Lâm Đồng",
-  type: ["national-park", "forest", "mountain", "nature"],
+  type: ["national-park", "forest", "mountain"],
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "photography", "camping"],
   tags: ["🌲 Cloud Forest", "🦅 Birdwatching", "🥾 Multi-day Trek"],

@@ -10,7 +10,7 @@ export const angelEyeMountain: Location = {
   lat: 22.77437449430503,
   lng: 106.31768739393065,
   address: "Bản Danh, Cao Chương, Trùng Khánh, Cao Bằng",
-  type: ["mountain", "nature", "landmark"],
+  type: ["mountain"],
   categories: ["nature"],
   experiences: ["photography", "camping", "trekking", "motorcycling", "walking-tour"],
   tags: ["👁️ 50m Natural Rock Hole", "🌿 Thang Hen Valley"],

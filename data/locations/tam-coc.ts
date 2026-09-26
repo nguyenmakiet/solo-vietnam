@@ -10,7 +10,7 @@ export const tamCoc: Location = {
   lat: 20.217617371413187,
   lng: 105.91576156501065,
   address: "Tam Cốc, Ninh Hải, Hoa Lư, Ninh Bình",
-  type: ["river", "cave", "rice-fields", "nature"],
+  type: ["river", "cave", "rice-fields"],
   categories: ["nature"],
   experiences: ["boat-tour", "cycling", "photography"],
   tags: ["🛶 Boat Tour", "🏔️ Karst", "🌾 Rice Fields"],

@@ -13,7 +13,7 @@ The registries in `data/taxonomy/` are the single source of truth for the four L
 
 | Field | Registry | Values at freeze | Notes |
 |-------|----------|------------------|-------|
-| `type` | `types.ts` `LOCATION_TYPES` | 49 canonical: 44 specific + 5 broad · 1 deprecated (`history`) | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
+| `type` | `types.ts` `LOCATION_TYPES` | 44 canonical (specific) · 6 deprecated (the broad types) | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
 | `categories` | `categories.ts` `LOCATION_CATEGORIES` | 11 canonical: 8 themes + 3 editorial badges | Not rendered in the UI |
 | `experiences` | `experiences.ts` `LOCATION_EXPERIENCES` | 28 canonical (20 page-backed, 8 without a page) · 2 proposed · 1 deprecated | `page` = the `/experiences/*` slug. `ExperienceValue` = the page-backed subset |
 | `tags` | `tags.ts` `LOCATION_TAGS` | 24 canonical | Any unregistered tag string is a legacy display label (`legacy-display`) |
@@ -26,28 +26,24 @@ Official designations are not taxonomy values: they live in the side-car `recogn
 |--------|---------|------------------|
 | `canonical` | Approved, stable. Allowed in Location data | every other registered value |
 | `proposed` | Registered and valid, intentionally pending an owner decision. Not in the canonical UI grouping (`EXPERIENCE_GROUP_CONFIG`) | experiences: `paragliding`, `rock-climbing` |
-| `deprecated` | Not allowed in Location data. Exactly one of: `replacedBy` (same field), `replacedByCategory` (a type whose concept moved to categories) or `noReplacement` (a broad type with no equivalent; the reason) | experiences: `temple-visit` → `religious-site-visit`; type: `history` → category `history` |
+| `deprecated` | Not allowed in Location data. Exactly one of: `replacedBy` (same field), `replacedByCategory` (a type whose concept moved to categories) or `noReplacement` (a broad type with no equivalent; the reason) | experiences: `temple-visit` → `religious-site-visit`; type: the six broad types (table below) |
 | `legacy-display` | Tags only. A free-form label kept for display/compatibility (hero chips, `tags[0]` card subtitle). Never used for discovery | 754 distinct labels (827 uses) |
 
-The broad type `history` is `deprecated` (broad-type migration step 1, PHASE2-LOG §11): it was removed from all Location data and
-is replaced by category `history` (`replacedByCategory`). `?type=history` is ignored by the `/locations` filter like any other
-non-canonical param; no URL alias exists.
+All six broad types are `deprecated` and used by no Location: `history` in migration step 1 (PHASE2-LOG §11), `nature`,
+`cultural`, `heritage`, `landmark` and `attraction` in step 2 (PHASE2-LOG §13). Their replacement is the owner decision below
+(D1', D1''), enforced by the audit:
 
-The other five broad types (`nature`, `attraction`, `cultural`, `heritage`, `landmark`) are still `canonical` with a
-`pendingDecision` and stay valid until each is migrated. The owner has decided how each one is deprecated (D1', D1''), and
-the audit enforces it: a broad type is either canonical with a `pendingDecision`, or deprecated with exactly this replacement.
-
-| Broad type | Replacement when deprecated |
+| Broad type | Replacement |
 |------------|-----------------------------|
-| `history` | `replacedByCategory: "history"` (deprecated) |
+| `history` | `replacedByCategory: "history"` |
 | `nature` | `replacedByCategory: "nature"` |
 | `cultural` | `replacedByCategory: "culture"` |
 | `heritage` | `noReplacement` - no type or category equivalent (designations live in `recognitions.ts`) |
 | `landmark` | `noReplacement` - generic; category `iconic` is not equivalent |
 | `attraction` | `noReplacement` - generic |
 
-`/locations` keeps old URLs working: `?type=nature` and `?type=cultural` alias to `?category=nature` / `?category=culture` once
-the type is no longer filterable; other non-filterable types (`history`, `heritage`, `landmark`, `attraction`) are ignored.
+`/locations` keeps old URLs working: `?type=nature` and `?type=cultural` alias to `?category=nature` / `?category=culture`;
+`?type=history|heritage|landmark|attraction` are ignored.
 
 Relationships (existing, frozen):
 - `broader` (narrower → broader, never used to rewrite data): `stream` → `river`, `rice-fields` → `farmland`.

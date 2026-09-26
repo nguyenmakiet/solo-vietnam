@@ -10,7 +10,7 @@ export const muiDien: Location = {
   lat: 12.895123856614404,
   lng: 109.45894759200604,
   address: "Mũi Điện, Đại Lãnh, Vạn Ninh, Phú Yên",
-  type: ["cape", "nature", "attraction"],
+  type: ["cape"],
   categories: ["hidden-gem", "nature", "coast"],
   experiences: ["photography", "trekking", "motorcycling", "hiking"],
   tags: ["🏮 Lighthouse", "🌅 First Sunrise", "🌊 Easternmost Cape", "french-colonial-era"],

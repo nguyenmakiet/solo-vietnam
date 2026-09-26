@@ -10,7 +10,7 @@ export const pirateIslands: Location = {
   lat: 10.316152333852845,
   lng: 104.33352273150865,
   address: "Xã Tiên Hải, Hà Tiên, Kiên Giang",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "kayaking", "boat-tour", "camping", "photography", "fishing", "swimming"],
   tags: ["🏝️ Pirate Islands", "🐠 Coral Reef"],

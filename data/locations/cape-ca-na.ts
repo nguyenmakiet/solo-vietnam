@@ -10,7 +10,7 @@ export const capeCaNa: Location = {
   lat: 11.333761739966421,
   lng: 108.87418245213733,
   address: "Cà Ná, Thuận Nam, Ninh Thuận",
-  type: ["beach", "nature", "landmark"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["photography", "beach", "motorcycling", "swimming"],
   tags: ["🏜️ Desert Coast", "🪨 Boulder Beach", "🌅 Sunset Spot"],

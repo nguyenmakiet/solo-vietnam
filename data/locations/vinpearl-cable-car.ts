@@ -10,7 +10,7 @@ export const vinpearlCableCar: Location = {
   lat: 12.203687968459107,
   lng: 109.21792171467011,
   address: "Hòn Tre Island, Nha Trang, Khánh Hoà",
-  type: ["cable-car", "attraction"],
+  type: ["cable-car"],
   categories: ["entertainment"],
   experiences: ["cable-car", "photography", "beach"],
   tags: ["🚡 Over-Sea Cable Car", "📸 Panoramic Views", "🏝️ Hon Tre Island", "🎡 Vinpearl Resort"],

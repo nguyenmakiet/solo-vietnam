@@ -10,7 +10,7 @@ export const keoPagoda: Location = {
   lat: 20.361100,
   lng: 106.296944,
   address: "Xã Duy Nhất, Vũ Thư, Thái Bình",
-  type: ["pagoda", "cultural", "heritage"],
+  type: ["pagoda"],
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 17th-Century Pagoda", "🏛️ National Relic", "📸 Architecture", "🌾 Red River Delta", "buddhism", "folk-religion"],

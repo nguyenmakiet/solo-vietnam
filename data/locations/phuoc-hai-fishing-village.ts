@@ -10,7 +10,7 @@ export const phuocHaiFishingVillage: Location = {
   lat: 10.417691097954336,
   lng: 107.28791445290544,
   address: "Phước Hải, Long Điền, Bà Rịa - Vũng Tàu",
-  type: ["village", "nature", "cultural", "beach", "market"],
+  type: ["village", "beach", "market"],
   categories: ["food", "culture", "coast"],
   experiences: ["photography", "food", "culture", "beach", "walking-tour", "swimming", "markets"],
   tags: ["🎣 Fishing Village + Beach Combo", "🦪 Oysters & Fresh Seafood", "📸 Sunrise Photography", "🏖️ Weekend Escape from Saigon"],

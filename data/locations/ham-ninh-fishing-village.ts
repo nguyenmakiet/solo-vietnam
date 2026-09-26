@@ -10,7 +10,7 @@ export const hamNinhFishingVillage: Location = {
   lat: "10.1807873",
   lng: "104.0458055",
   address: "Hàm Ninh, Phú Quốc, Kiên Giang",
-  type: ["village", "cultural"],
+  type: ["village"],
   categories: ["food", "culture", "coast"],
   experiences: ["culture", "food", "photography", "walking-tour", "markets"],
   tags: ["🎣 Oldest Fishing Village", "🦀 Seafood", "🌅 Sunrise Spot", "🪵 Wooden Bridge"],

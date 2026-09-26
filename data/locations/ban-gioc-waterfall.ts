@@ -10,7 +10,7 @@ export const banGiocWaterfall: Location = {
   lat: "22.854409352361497",
   lng: "106.72438321761962",
   address: "Đàm Thủy, Trùng Khánh, Cao Bằng",
-  type: ["waterfall", "nature"],
+  type: ["waterfall"],
   categories: ["nature"],
   experiences: ["photography", "boat-tour", "trekking", "wildlife"],
   tags: ["💧 Largest Waterfall on a National Border", "🛶 Bamboo Raft", "🌿 Nature"],

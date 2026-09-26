@@ -10,7 +10,7 @@ export const quanBaTwinMountains: Location = {
   lat: 23.06521535060752,
   lng: 105.00120271105881,
   address: "Nà Khoang, Tam Sơn, Quản Bạ, Hà Giang",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["nature"],
   experiences: ["photography", "trekking", "motorcycling", "culture"],
   tags: ["🏔️ Núi Đôi", "📸 Ha Giang Icon", "🌾 Rice Terraces", "🏍️ Loop Landmark"],

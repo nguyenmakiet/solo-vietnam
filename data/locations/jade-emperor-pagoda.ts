@@ -10,7 +10,7 @@ export const jadeEmperorPagoda: Location = {
   lat: 10.792009712766651,
   lng: 106.69819028397599,
   address: "73 Mai Thị Lựu, Đa Kao, Quận 1, Thành phố Hồ Chí Minh",
-  type: ["pagoda", "cultural"],
+  type: ["pagoda"],
   categories: ["must-see", "religion", "culture"],
   experiences: ["culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🐢 Sacred Turtle Pond", "🏮 Taoist Pagoda", "🧧 Incense & Offerings", "🗿 Jade Emperor Statues", "taoism"],

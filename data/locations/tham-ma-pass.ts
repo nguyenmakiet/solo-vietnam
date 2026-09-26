@@ -10,7 +10,7 @@ export const thamMaPass: Location = {
   lat: 23.170578279202783,
   lng: 105.19445930795216,
   address: "Thẩm Mã, Đồng Văn, Hà Giang",
-  type: ["pass", "mountain", "nature"],
+  type: ["pass", "mountain"],
   categories: ["nature"],
   experiences: ["photography", "trekking", "cycling", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Nine-Bend Pass", "🌾 Rice Terraces"],

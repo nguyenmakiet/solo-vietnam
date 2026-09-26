@@ -10,7 +10,7 @@ export const honYenIsland: Location = {
   lat: 13.225688161973299,
   lng: 109.30868667111528,
   address: "Hòn Yến, An Hòa, Tuy An, Phú Yên",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "wildlife", "camping"],
   tags: ["🦞 Lobster Island", "🐠 Coral Snorkelling", "🏝️ Tidal Access", "📷 Hidden Gem"],

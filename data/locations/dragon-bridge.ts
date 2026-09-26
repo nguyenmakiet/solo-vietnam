@@ -10,7 +10,7 @@ export const dragonBridge: Location = {
   lat: 16.06124852539428,
   lng: 108.22810029126948,
   address: "Cầu Rồng, Hải Châu, Đà Nẵng",
-  type: ["bridge", "attraction"],
+  type: ["bridge"],
   categories: ["architecture"],
   experiences: ["photography", "walking-tour", "nightlife"],
   tags: ["🐉 Fire-Breathing Dragon", "🌉 Icon of Đà Nẵng", "🔥 Weekend Show"],

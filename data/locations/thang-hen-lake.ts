@@ -10,7 +10,7 @@ export const thangHenLake: Location = {
   lat: 22.759334520663145,
   lng: 106.29375946526802,
   address: "Quốc Toản, Trà Lĩnh, Cao Bằng",
-  type: ["lake", "nature"],
+  type: ["lake"],
   categories: ["nature"],
   experiences: ["photography", "kayaking", "camping"],
   tags: ["💙 Turquoise Karst Lake", "🏄 SUP on the Lake", "🌿 Green Grassland"],

@@ -12,7 +12,7 @@ export const khoMuongCave: Location = {
   lat: 20.48417144014872,
   lng: 105.13857469704293,
   address: "Thành Sơn, Bá Thước, Thanh Hóa",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["hidden-gem", "nature"],
   experiences: ["photography", "walking-tour", "wildlife", "caving"],
   tags: ["🕳️ Karst Cave", "🦇 Bat Cave", "🥾 Self-Guided", "🌿 Pù Luông Reserve"],

@@ -10,7 +10,7 @@ export const macDynastyCitadel: Location = {
   lat: 21.857162327899132,
   lng: 106.74889564559105,
   address: "Tô Thị, Tam Thanh, Lạng Sơn, Vietnam",
-  type: ["citadel", "heritage"],
+  type: ["citadel"],
   categories: ["history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏰 16th-Century Citadel", "🏛️ Mạc Dynasty", "🧭 Off the Beaten Path"],

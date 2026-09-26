@@ -10,7 +10,7 @@ export const longBienBridge: Location = {
   lat: 21.04008590793085,
   lng: 105.85037194035824,
   address: "Long Biên, Hà Nội",
-  type: ["bridge", "landmark", "heritage"],
+  type: ["bridge"],
   categories: ["history", "architecture"],
   experiences: ["history", "photography", "walking-tour", "cycling"],
   tags: ["🌉 Colonial Bridge", "📷 Red River Views", "🚂 Active Rail Bridge", "🏯 French Heritage", "french-colonial-era", "french-architecture"],

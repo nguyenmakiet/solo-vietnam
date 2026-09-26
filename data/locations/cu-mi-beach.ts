@@ -10,7 +10,7 @@ export const cuMiBeach: Location = {
   lat: 10.596704182171713,
   lng: 107.62900799661435,
   address: "Tân Thắng, Hàm Tân, Bình Thuận",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "photography", "motorcycling"],
   tags: ["🏖️ Undeveloped Beach", "🌊 Fishing Village", "🏍️ Motorbike Route"],

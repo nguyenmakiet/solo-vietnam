@@ -10,7 +10,7 @@ export const conDaoNationalPark: Location = {
   lat: 8.700380477433058,
   lng: 106.59713651574016,
   address: "Côn Đảo, Bà Rịa - Vũng Tàu",
-  type: ["national-park", "nature"],
+  type: ["national-park"],
   categories: ["nature"],
   experiences: ["wildlife", "trekking", "snorkeling", "photography", "kayaking", "diving", "hiking"],
   tags: ["🐢 Sea Turtle Nesting", "🌿 Marine National Park", "🐠 Coral Reefs", "🥾 Jungle Trails"],

@@ -10,7 +10,7 @@ export const bungBinhThienLake: Location = {
   lat: 10.919979584967262,
   lng: 105.07286304988797,
   address: "Khánh Bình, An Phú, An Giang",
-  type: ["lake", "nature", "river"],
+  type: ["lake", "river"],
   categories: ["nature", "culture"],
   experiences: ["boat-tour", "photography", "wildlife", "culture", "fishing"],
   tags: ["🌸 Lotus Lake", "cham-culture"],

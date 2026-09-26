@@ -8,11 +8,12 @@ import type { TaxonomyMeta } from "./shared"
 // data/location.ts is derived from this registry and a new type cannot be
 // added without a colour. Existing colours are unchanged.
 //
-// The "broad" values describe a theme rather than what the place is.
-// `history` is deprecated (Phase 2 broad-type migration step 1): it is no longer
-// used by any Location and the audit fails if it reappears. The deprecation of the
-// other five (nature, attraction, cultural, heritage, landmark) is deferred by the
-// owner (Phase 2) - they stay valid and must not be removed.
+// The six "broad" values (nature, attraction, cultural, heritage, history,
+// landmark) describe a theme rather than what the place is. All six are
+// deprecated (Phase 2 broad-type migration): no Location uses them and the audit
+// fails if one reappears. Their replacement is fixed by the owner (AUDIT.md):
+// a category, or `noReplacement` when nothing is equivalent. They stay in the
+// registry for labels, colours and old URLs.
 
 export type LocationTheme = "blue" | "green" | "amber" | "purple" | "gray"
 
@@ -28,8 +29,6 @@ export type LocationTypeGroup =
 
 type LocationTypeMeta = TaxonomyMeta<LocationTypeGroup> & { theme: LocationTheme }
 
-const BROAD_PENDING = "Deprecation deferred by the owner (Phase 2). Keep in data, do not remove"
-
 export const LOCATION_TYPES = {
   beach: { label: "Beach", group: "water", status: "canonical", theme: "blue" },
   island: { label: "Island", group: "water", status: "canonical", theme: "blue" },
@@ -41,28 +40,29 @@ export const LOCATION_TYPES = {
   nature: {
     label: "Nature",
     group: "broad",
-    status: "canonical",
+    status: "deprecated",
     theme: "green",
-    description: "Broad theme (category 'nature'), not a kind of place",
-    pendingDecision: BROAD_PENDING,
+    replacedByCategory: "nature",
+    description: "Deprecated broad theme. Removed from all Location data - use category 'nature' with a specific place type",
   },
   waterfall: { label: "Waterfall", group: "water", status: "canonical", theme: "green" },
   cave: { label: "Cave", group: "terrain", status: "canonical", theme: "green" },
   attraction: {
     label: "Attraction",
     group: "broad",
-    status: "canonical",
+    status: "deprecated",
     theme: "amber",
-    description: "Generic - does not say what the place is",
-    pendingDecision: BROAD_PENDING,
+    noReplacement: "Generic - does not say what the place is; no type or category equivalent",
+    description: "Deprecated broad type. Removed from all Location data - use a specific place type",
   },
   cultural: {
     label: "Cultural",
     group: "broad",
-    status: "canonical",
+    status: "deprecated",
     theme: "purple",
-    description: "Broad theme (category 'culture' or 'religion'). Used by the /locations 'Cultural' shortcut",
-    pendingDecision: BROAD_PENDING,
+    replacedByCategory: "culture",
+    description:
+      "Deprecated broad theme. Removed from all Location data - use category 'culture' (or 'religion' for places of worship) with a specific place type",
   },
   town: { label: "Town", group: "settlement", status: "canonical", theme: "amber" },
   city: { label: "City", group: "settlement", status: "canonical", theme: "amber" },
@@ -74,10 +74,10 @@ export const LOCATION_TYPES = {
   heritage: {
     label: "Heritage",
     group: "broad",
-    status: "canonical",
+    status: "deprecated",
     theme: "purple",
-    description: "Designation/theme rather than a kind of place (see recognitions.ts)",
-    pendingDecision: BROAD_PENDING,
+    noReplacement: "Theme or designation, not a kind of place; no single category equivalent (designations live in recognitions.ts)",
+    description: "Deprecated broad type. Removed from all Location data - use a specific place type and theme categories",
   },
   history: {
     label: "History",
@@ -91,10 +91,10 @@ export const LOCATION_TYPES = {
   landmark: {
     label: "Landmark",
     group: "broad",
-    status: "canonical",
+    status: "deprecated",
     theme: "purple",
-    description: "Generic - does not say what the place is. Not equivalent to category 'iconic'",
-    pendingDecision: BROAD_PENDING,
+    noReplacement: "Generic - does not say what the place is; category 'iconic' is not equivalent",
+    description: "Deprecated broad type. Removed from all Location data - use a specific place type",
   },
   museum: { label: "Museum", group: "heritage", status: "canonical", theme: "amber" },
 

@@ -10,7 +10,7 @@ export const laNgauStream: Location = {
   lat: 11.236315974562396,
   lng: 107.78594527850618,
   address: "Tánh Linh, Bình Thuận",
-  type: ["stream", "nature"],
+  type: ["stream"],
   categories: ["hidden-gem", "nature"],
   experiences: ["trekking", "photography", "camping", "wildlife", "swimming", "hiking"],
   tags: ["🌿 Jungle Stream", "💧 Natural Pools"],

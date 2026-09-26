@@ -10,7 +10,7 @@ export const goldenBridge: Location = {
   lat: "15.994957886478177",
   lng: "107.996595959818",
   address: "Bà Nà Hills, Hoà Ninh, Hoà Vang, Đà Nẵng",
-  type: ["bridge", "attraction"],
+  type: ["bridge"],
   categories: ["architecture"],
   experiences: ["photography", "walking-tour"],
   tags: ["🌉 Giant Stone Hands", "📸 Most Photographed in Vietnam", "☁️ Above the Clouds", "🌅 Panoramic Views"],

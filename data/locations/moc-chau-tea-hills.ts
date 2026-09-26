@@ -10,7 +10,7 @@ export const mocChauTeaHills: Location = {
   lat: 20.815661,
   lng: 104.717577,
   address: "Mộc Châu, Sơn La",
-  type: ["farmland", "nature", "attraction"],
+  type: ["farmland"],
   categories: ["nature"],
   experiences: ["photography", "cycling", "motorcycling", "culture", "homestay"],
   tags: ["🍵 Tea Plantations", "🛵 Motorbike Scenic", "🌿 Highland Agriculture"],

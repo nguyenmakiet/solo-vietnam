@@ -10,7 +10,7 @@ export const doQuyenWaterfall: Location = {
   lat: "16.18620793431291",
   lng: "107.84888865318162",
   address: "Vườn Quốc Gia Bạch Mã, Thừa Thiên Huế",
-  type: ["waterfall", "forest", "nature"],
+  type: ["waterfall", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "wildlife", "hiking"],
   tags: ["💧 400m Waterfall", "🌸 Rhododendron Season", "🏔️ Bạch Mã NP", "🧗 Via Ferrata & Zipline"],

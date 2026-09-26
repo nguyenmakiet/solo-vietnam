@@ -10,7 +10,7 @@ export const muiTroFishingVillage: Location = {
   lat: 11.191860491067558,
   lng: 108.72934429502345,
   address: "Near Cô Thạch, Tuy Phong, Bình Thuận",
-  type: ["village", "nature", "beach", "cultural"],
+  type: ["village", "beach"],
   categories: ["culture", "nature", "coast"],
   experiences: ["photography", "camping", "beach", "walking-tour", "cycling"],
   tags: ["🎣 Small Fishing Village", "🌊 Rocky Coast"],

@@ -10,7 +10,7 @@ export const canGioBeach: Location = {
   lat: 10.388709041475133,
   lng: 106.92716186741883,
   address: "Cần Thạnh, Cần Giờ, TP. Hồ Chí Minh",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["food", "coast"],
   experiences: ["beach", "swimming", "food", "cycling", "photography"],
   tags: ["🏖️ Saigon's Own Beach", "🦀 Seafood", "🌊 Day Trip from HCMC", "🌿 Mangrove Coast"],

@@ -10,7 +10,7 @@ export const bacSonValley: Location = {
   lat: 21.898614655260356,
   lng: 106.33466895888493,
   address: "Bắc Sơn, Lạng Sơn",
-  type: ["valley", "nature", "cultural"],
+  type: ["valley"],
   categories: ["hidden-gem", "nature", "culture"],
   experiences: ["photography", "trekking", "culture", "motorcycling", "hiking"],
   tags: ["🌾 Rice Terraces", "🏔️ Karst Peaks", "🛵 Scenic Ride", "ethnic-minority-culture"],

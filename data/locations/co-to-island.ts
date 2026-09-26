@@ -10,7 +10,7 @@ export const coToIsland: Location = {
   lat: 20.970013931734762,
   lng: 107.76311545711883,
   address: "Huyện Cô Tô, Quảng Ninh",
-  type: ["island", "beach", "nature"],
+  type: ["island", "beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "kayaking", "photography", "boat-tour", "swimming", "motorcycling"],
   tags: ["🏝️ Remote Island", "🤿 Coral Snorkeling", "🏖️ White Sand Beaches", "🌊 Gulf of Tonkin"],

@@ -10,7 +10,7 @@ export const warRemnantsMuseum: Location = {
   lat: "10.779534930802145",
   lng: "106.69218502415347",
   address: "28 Võ Văn Tần, Phường 6, Quận 3, Thành phố Hồ Chí Minh",
-  type: ["museum", "heritage"],
+  type: ["museum"],
   categories: ["must-see", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
   tags: ["vietnam-war", "📸 War Photography", "⚔️ Agent Orange", "🚁 Military Hardware", "french-colonial-era"],

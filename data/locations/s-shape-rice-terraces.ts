@@ -10,7 +10,7 @@ export const sShapeRiceTerraces: Location = {
   lat: 20.449345402727413,
   lng: 105.15796254177532,
   address: "Thành Lâm, Bá Thước, Thanh Hóa",
-  type: ["rice-fields", "nature", "landmark"],
+  type: ["rice-fields"],
   categories: ["iconic", "nature"],
   experiences: ["photography", "walking-tour"],
   tags: ["🌾 S-Shaped Paddy", "📸 Iconic Viewpoint", "🌅 Sunset Spot", "🏞️ Pù Luông Highlight"],

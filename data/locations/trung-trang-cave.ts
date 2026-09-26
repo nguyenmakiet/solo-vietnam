@@ -10,7 +10,7 @@ export const trungTrangCave: Location = {
   lat: "20.788685844969777",
   lng: "106.99832793371839",
   address: "Cát Bà National Park, Hải Phòng",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature"],
   experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 Largest Cave on Cát Bà", "🦇 Bat Colony", "🥾 National Park"],

@@ -10,7 +10,7 @@ export const tranQuocPagoda: Location = {
   lat: 21.047885239405513,
   lng: 105.83688268728767,
   address: "Thanh Niên, Yên Phụ, Tây Hồ, Hà Nội",
-  type: ["pagoda", "heritage", "landmark"],
+  type: ["pagoda"],
   categories: ["religion", "history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🛕 Oldest Pagoda", "🌅 West Lake Views", "🏯 11-Tier Stupa", "📷 Sunset Photography", "buddhism"],

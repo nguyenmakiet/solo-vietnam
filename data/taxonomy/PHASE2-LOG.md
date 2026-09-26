@@ -485,3 +485,29 @@ Search: only the five broad labels drop ("Nature" stays on 146 items through the
 
 Known behaviour to note: an old URL mixing a legacy type with a real type (`?type=nature&type=cave`) becomes `cave` AND category
 `nature` once aliased (it was `nature` OR `cave`), because the alias moves the value to another filter.
+
+---
+
+## 13. Broad-type migration step 2 - `nature`, `cultural`, `heritage`, `landmark`, `attraction` (Phase 6)
+
+One batch, per the audited plan (§12, D1' / D1''). All six broad types are now `deprecated` and used by no Location.
+
+| Change | Applied |
+|--------|---------|
+| Location data | 231 files, `type` line only: the five values removed, the order of the remaining values unchanged. No location became type-less; `type[0]` was never a broad type, so no primary type, badge or colour changed |
+| Registry | `nature` → `replacedByCategory: "nature"`, `cultural` → `replacedByCategory: "culture"`, `heritage` / `landmark` / `attraction` → `noReplacement` (reason). `pendingDecision` and the `BROAD_PENDING` constant removed. Frozen list: type deprecated = the six broad types. Type: 44 canonical + 6 deprecated |
+| Categories | unchanged. The three audited edge cases (phoenix-unicorn-islands-my-tho, ta-pa-temple, an-nhut-rice-fields) keep their categories, as recommended in the audit |
+| Docs | CLAUDE.md type table and mismatch rules; AUDIT.md contract |
+
+Removed values: nature 134, cultural 62, heritage 50, landmark 48, attraction 32 (326 in 231 files).
+
+| Check | Result |
+|-------|--------|
+| `npm run audit:taxonomy` | OK. Re-adding any of the six broad types to a location fails with its replacement; a wrong replacement in the registry fails the owner-table check |
+| tsc / ESLint | OK / 64 problems, identical to the baseline (the `BROAD_PENDING` warning of the dry run is gone) |
+| Build | 398 pages (257 / 20 / 21) |
+| Exact diff | the 231 changed locations are exactly the audited list; only `type` changed. Non-taxonomy content snapshot identical. `type[0]`, colour, categories, experiences, tags, `tags[0]`, Similar Experiences, `/experiences/*` membership and destination derived data identical for all 257 |
+| Search index | 227 location items change, only by losing the five broad labels (Landmark 46, Cultural 61, Attraction 31, Heritage 50, Nature 9). "Nature" stays on 146 items and "Culture" on 57 through category labels |
+| `/locations` | 245 locations; 43 type / 28 experience / 8 category options. Shortcuts unchanged except Cultural = 79 (`category=culture&category=religion`). `?type=nature` → `?category=nature` (143), `?type=cultural` → `?category=culture` (57); `?type=heritage|landmark|attraction|history` ignored (245) |
+| Mixed URLs | `?type=nature&type=cave` → `?type=cave&category=nature` (14, cave AND nature); `?type=cultural&type=pagoda` → pagoda AND culture (5); `?type=landmark&type=bridge` → bridge (6, landmark ignored); `?type=heritage&category=history` → history (62) |
+| Homepage / experience pages | discovery links unchanged (forest 19, homestay 13, motorcycling 32, nightlife 8, citadel + history 5); experience pages list the same locations (history 76, culture 116, photography 235, beaches 45, trekking 74). Location heroes drop the broad labels (e.g. "Market · Ho Chi Minh City") |

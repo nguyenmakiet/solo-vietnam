@@ -10,7 +10,7 @@ export const paradiseCave: Location = {
   lat: 17.519727624952477,
   lng: 106.22333853972053,
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature"],
   experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 One of Asia's Longest Dry Caves", "🥾 Boardwalk", "✨ Formations"],

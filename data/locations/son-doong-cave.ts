@@ -10,7 +10,7 @@ export const sonDoongCave: Location = {
   lat: "17.466399525611973",
   lng: "106.30214901899664",
   address: "Tân Trạch, Bố Trạch, Quảng Bình",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature"],
   experiences: ["caving", "trekking", "camping", "photography"],
   tags: ["🏆 World's Largest Cave", "🏕️ Overnight Expedition"],

@@ -10,7 +10,7 @@ export const yenMinhPineForest: Location = {
   lat: 23.16731453372523,
   lng: 105.05474637426761,
   address: "Na Khê - Lao Và Chải - Bạch Đích, Yên Minh, Hà Giang",
-  type: ["forest", "nature"],
+  type: ["forest"],
   categories: ["nature"],
   experiences: ["photography", "motorcycling", "trekking", "camping"],
   tags: ["🌲 Highland Pine Forest", "🌫️ Morning Mist", "🏍️ Scenic Road"],

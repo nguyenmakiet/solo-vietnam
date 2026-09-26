@@ -10,7 +10,7 @@ export const triAnLake: Location = {
   lat: 11.11483833366682,
   lng: 107.03177682081524,
   address: "Hồ Trị An, Vĩnh Cửu, Đồng Nai",
-  type: ["lake", "nature"],
+  type: ["lake"],
   categories: ["nature"],
   experiences: ["camping", "kayaking", "boat-tour", "cycling", "photography", "wildlife", "swimming"],
   tags: ["⛺ Camping", "🌅 Sunset Views", "🏕️ Weekend Escape"],

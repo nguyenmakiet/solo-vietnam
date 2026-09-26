@@ -10,7 +10,7 @@ export const phuQuocNightMarket: Location = {
   lat: 10.2158553,
   lng: 103.9602497,
   address: "6 Bạch Đằng, Dương Đông, Phú Quốc, Kiên Giang (at the Bạch Đằng - Nguyễn Đình Chiểu junction)",
-  type: ["market", "attraction", "city"],
+  type: ["market", "city"],
   categories: ["food"],
   experiences: ["food", "markets", "nightlife", "walking-tour", "shopping"],
   tags: ["🌙 Night Market", "🦞 Seafood", "🍢 Street Food"],

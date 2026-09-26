@@ -10,7 +10,7 @@ export const phongNhaCave: Location = {
   lat: "17.58187380883147",
   lng: "106.28397697966346",
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
-  type: ["cave", "nature"],
+  type: ["cave"],
   categories: ["nature"],
   experiences: ["caving", "boat-tour", "photography"],
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "🌊 Underground River"],

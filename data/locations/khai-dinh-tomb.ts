@@ -10,7 +10,7 @@ export const khaiDinhTomb: Location = {
   lat: 16.39915933177038,
   lng: 107.59074610662047,
   address: "Châu Chữ, Hương Thủy, Thừa Thiên Huế",
-  type: ["tomb", "cultural"],
+  type: ["tomb"],
   categories: ["history", "architecture"],
   experiences: ["history", "culture", "photography"],
   tags: ["👑 Nguyễn Tomb", "🏯 French-Vietnamese Architecture", "✨ Mosaic Interior", "nguyen-dynasty", "french-colonial-era", "french-architecture"],

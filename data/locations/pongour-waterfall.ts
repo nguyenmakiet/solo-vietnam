@@ -10,7 +10,7 @@ export const pongourWaterfall: Location = {
   lat: 11.658000,
   lng: 108.248000,
   address: "Tân Nghĩa, Ninh Gia, Đức Trọng, Lâm Đồng",
-  type: ["waterfall", "nature"],
+  type: ["waterfall"],
   categories: ["nature"],
   experiences: ["photography", "walking-tour", "camping", "swimming"],
   tags: ["💧 Seven-Tier Waterfall", "👑 Nam Thiên Đệ Nhất Thác", "🏕️ Picnic & Camping"],

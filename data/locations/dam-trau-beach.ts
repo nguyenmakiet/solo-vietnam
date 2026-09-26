@@ -10,7 +10,7 @@ export const damTrauBeach: Location = {
   lat: 8.734371501177048,
   lng: 106.62476852169172,
   address: "Huyện Côn Đảo, Bà Rịa – Vũng Tàu",
-  type: ["beach", "nature"],
+  type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "photography", "wildlife", "swimming"],
   tags: ["🏖️ Top 25 Beaches in the World", "✈️ Planes Landing Overhead", "🪸 Coral Reef", "🌴 Day-Trip Beach"],

@@ -10,7 +10,7 @@ export const linhPhuocPagoda: Location = {
   lat: 11.944790636274039,
   lng: 108.49973009118906,
   address: "120 Tự Phước, Trại Mát, Đà Lạt, Lâm Đồng",
-  type: ["pagoda", "heritage"],
+  type: ["pagoda"],
   categories: ["religion", "architecture"],
   experiences: ["culture", "photography", "walking-tour", "history", "religious-site-visit"],
   tags: ["⛩️ Ceramic Mosaic Pagoda", "🐉 Dragon Staircase", "🚂 Train Access", "buddhism"],

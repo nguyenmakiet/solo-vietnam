@@ -10,7 +10,7 @@ export const daPloaStream: Location = {
   lat: 11.363286861517071,
   lng: 107.71713398943504,
   address: "Đạ Ploa, Đạ Huoai, Lâm Đồng",
-  type: ["waterfall", "stream", "nature", "forest"],
+  type: ["waterfall", "stream", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "swimming", "motorcycling", "camping", "fishing"],
   tags: ["💦 Multi-tier Stream", "🌿 Remote Jungle"],

@@ -10,7 +10,7 @@ export const baBeLake: Location = {
   lat: 22.409302543262182,
   lng: 105.6225488972304,
   address: "Vườn Quốc gia Ba Bể, Nam Mẫu, Ba Bể, Bắc Kạn",
-  type: ["lake", "nature", "forest"],
+  type: ["lake", "forest"],
   categories: ["nature", "culture"],
   experiences: ["boat-tour", "kayaking", "trekking", "wildlife", "photography", "homestay", "camping", "culture", "hiking"],
   tags: ["🏞️ National Park", "🚣 Freshwater Lake", "🦅 Wildlife Sanctuary", "🛖 Tày Homestay", "ethnic-minority-culture", "tay-culture"],

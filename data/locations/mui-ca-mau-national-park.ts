@@ -10,7 +10,7 @@ export const muiCaMauNationalPark: Location = {
   lat: 8.605533331954971,
   lng: 104.71909855448533,
   address: "Đất Mũi, Ngọc Hiển, Cà Mau",
-  type: ["national-park", "nature", "forest", "landmark", "heritage"],
+  type: ["national-park", "forest"],
   categories: ["nature"],
   experiences: ["boat-tour", "wildlife", "photography", "walking-tour", "cycling"],
   tags: ["🗺️ Southernmost Point of Vietnam", "🌿 Mangrove Forest", "🐦 Wildlife"],

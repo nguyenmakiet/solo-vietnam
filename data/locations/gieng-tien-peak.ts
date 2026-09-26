@@ -10,7 +10,7 @@ export const giengTienPeak: Location = {
   lat: 15.388855661824474,
   lng: 109.10258272120166,
   address: "Thôn Tây, An Vĩnh, Lý Sơn, Quảng Ngãi",
-  type: ["mountain", "nature"],
+  type: ["mountain"],
   categories: ["nature", "coast"],
   experiences: ["photography", "trekking"],
   status: "temporarily-closed",

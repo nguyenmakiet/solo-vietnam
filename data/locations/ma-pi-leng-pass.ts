@@ -10,7 +10,7 @@ export const maPiLengPass: Location = {
   lat: 23.24315558513546,
   lng: 105.39773522066236,
   address: "Mã Pí Lèng, Mèo Vạc, Hà Giang",
-  type: ["pass", "mountain", "attraction", "nature"],
+  type: ["pass", "mountain"],
   categories: ["nature"],
   experiences: ["photography", "trekking", "cycling", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "🌊 Canyon Views"],

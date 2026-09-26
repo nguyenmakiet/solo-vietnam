@@ -10,7 +10,7 @@ export const caiRangFloatingMarket: Location = {
   lat: 10.005150042253042,
   lng: 105.74627948543848,
   address: "Sông Cần Thơ, Quận Cái Răng, Cần Thơ",
-  type: ["market", "cultural"],
+  type: ["market"],
   categories: ["food", "culture"],
   experiences: ["boat-tour", "food", "markets", "photography", "culture"],
   tags: ["🛶 Floating Market", "🌅 Dawn Market", "🍜 Local Food"],

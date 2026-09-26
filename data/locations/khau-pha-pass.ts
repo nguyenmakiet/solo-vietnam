@@ -10,7 +10,7 @@ export const khauPhaPass: Location = {
   lat: 21.748647085534405,
   lng: 104.21951455544009,
   address: "Tú Lệ - Mù Cang Chải, Văn Chấn, Yên Bái",
-  type: ["pass", "mountain", "nature", "landmark"],
+  type: ["pass", "mountain"],
   categories: ["nature"],
   experiences: ["motorcycling", "photography", "trekking", "cycling", "paragliding"],
   tags: ["🏔️ One of Vietnam's Four Great Passes", "🌄 Rice Terrace Views", "🪂 Paragliding"],

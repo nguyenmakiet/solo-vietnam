@@ -10,7 +10,7 @@ export const mangLangChurch: Location = {
   lat: 13.334150812882358,
   lng: 109.225819751082,
   address: "An Thạch, Tuy An, Phú Yên",
-  type: ["church", "heritage", "landmark"],
+  type: ["church"],
   categories: ["religion", "history", "architecture"],
   experiences: ["culture", "history", "photography", "religious-site-visit"],
   tags: [

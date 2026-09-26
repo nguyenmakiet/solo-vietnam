@@ -10,7 +10,7 @@ export const k50Waterfall: Location = {
   lat: "14.519415223584105",
   lng: "108.60631909493844",
   address: "Kbang, Gia Lai",
-  type: ["waterfall", "nature"],
+  type: ["waterfall"],
   categories: ["hidden-gem", "nature"],
   experiences: ["trekking", "photography", "wildlife", "camping", "swimming"],
   tags: ["💦 54m Waterfall", "🌿 Jungle Trek", "🦅 Swallow Cave"],

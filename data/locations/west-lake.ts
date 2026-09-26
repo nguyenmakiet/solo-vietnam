@@ -10,7 +10,7 @@ export const westLake: Location = {
   lat: 21.053478320090974,
   lng: 105.82609433344021,
   address: "Hồ Tây, Tây Hồ, Hà Nội",
-  type: ["lake", "nature", "attraction"],
+  type: ["lake"],
   categories: ["nature", "culture"],
   experiences: ["cycling", "walking-tour", "food", "photography", "culture"],
   tags: ["🚲 Lake Loop Cycling", "🌅 Sunset Views", "☕ Cafe District", "🛕 Ancient Pagodas"],

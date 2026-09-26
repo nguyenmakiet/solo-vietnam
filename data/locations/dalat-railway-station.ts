@@ -10,7 +10,7 @@ export const dalatRailwayStation: Location = {
   lat: 11.941882324564023,
   lng: 108.45471880283058,
   address: "01 Quang Trung, Đà Lạt, Lâm Đồng",
-  type: ["station", "heritage", "attraction"],
+  type: ["station"],
   categories: ["history", "architecture"],
   experiences: ["history", "photography", "culture", "walking-tour"],
   tags: ["🚂 1938 French Colonial Station", "🏛️ Heritage Architecture", "🚃 Tourist Train", "french-colonial-era", "french-architecture"],

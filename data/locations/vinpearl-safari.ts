@@ -10,7 +10,7 @@ export const vinpearlSafari: Location = {
   lat: "10.337243228996103",
   lng: "103.89206976788087",
   address: "Gành Dầu, Phú Quốc, Kiên Giang",
-  type: ["theme-park", "attraction", "nature"],
+  type: ["theme-park"],
   categories: ["entertainment", "nature"],
   experiences: ["wildlife", "photography", "walking-tour"],
   tags: ["🦁 Open Safari", "🦒 African Animals", "📸 Wildlife Photography", "🚌 Safari Bus"],

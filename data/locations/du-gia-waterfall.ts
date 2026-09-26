@@ -10,7 +10,7 @@ export const duGiaWaterfall: Location = {
   lat: "22.92605491197045",
   lng: "105.1988164932612",
   address: "Du Già, Yên Minh, Hà Giang",
-  type: ["waterfall", "nature"],
+  type: ["waterfall"],
   categories: ["nature"],
   experiences: ["trekking", "swimming", "photography"],
   tags: ["💧 Thác Ba Tiên", "🏊 Cliff Jumping", "🥾 River Trek"],

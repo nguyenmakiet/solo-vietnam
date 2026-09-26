@@ -10,7 +10,7 @@ export const japaneseBridge: Location = {
   lat: 15.877113853056763,
   lng: 108.32614848011536,
   address: "Nguyễn Thị Minh Khai, Hội An, Quảng Nam",
-  type: ["bridge", "cultural"],
+  type: ["bridge"],
   categories: ["history", "architecture", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🌉 Iconic Landmark", "🏯 400-Year-Old Bridge", "🎑 UNESCO Heritage"],

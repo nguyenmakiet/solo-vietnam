@@ -10,7 +10,7 @@ export const benThanhMarket: Location = {
   lat: 10.772695965273028,
   lng: 106.69811735493076,
   address: "Le Loi Street, Ben Thanh Ward, District 1, Ho Chi Minh City",
-  type: ["market", "landmark", "attraction"],
+  type: ["market"],
   categories: ["food", "culture"],
   experiences: ["shopping", "food", "culture", "photography", "markets"],
   tags: ["🏛️ HCMC Icon", "🛍️ Souvenir Central", "🍜 Food Hall", "📷 Landmark Clocktower"],

@@ -10,7 +10,7 @@ export const baDenMountain: Location = {
   lat: 11.382433262739763,
   lng: 106.17120718468603,
   address: "Xã Thạnh Tân, Tây Ninh",
-  type: ["mountain", "cultural", "pagoda"],
+  type: ["mountain", "pagoda"],
   categories: ["nature", "religion"],
   experiences: ["cable-car", "trekking", "culture", "photography", "history", "religious-site-visit", "hiking"],
   tags: ["⛰️ Highest Peak South", "🛕 Pilgrimage Site", "📸 Panoramic Views", "buddhism", "folk-religion"],

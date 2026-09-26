@@ -121,7 +121,7 @@ const REGISTRIES: Record<string, Reg> = {
 // Intentional non-canonical values at the freeze. A status change needs an owner
 // decision; update this list together with AUDIT.md when that happens.
 const FROZEN_NON_CANONICAL: Record<string, { proposed: string[]; deprecated: string[] }> = {
-  type: { proposed: [], deprecated: ["history"] },
+  type: { proposed: [], deprecated: ["attraction", "cultural", "heritage", "history", "landmark", "nature"] },
   categories: { proposed: [], deprecated: [] },
   experiences: { proposed: ["paragliding", "rock-climbing"], deprecated: ["temple-visit"] },
   tags: { proposed: [], deprecated: [] },
