@@ -22,14 +22,15 @@ const REGIONS: { value: Region; label: string; active: string; inactive: string 
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
-const SHORTCUTS: { label: string; type?: string; exp?: string }[] = [
+// A shortcut selects one type, one experience, or a set of categories.
+const SHORTCUTS: { label: string; type?: string; exp?: string; categories?: string[] }[] = [
   { label: "Beaches",     type: "beach" },
   { label: "Islands",     type: "island" },
   { label: "Mountains",   type: "mountain" },
   { label: "Caves",       type: "cave" },
   { label: "Waterfalls",  type: "waterfall" },
   { label: "Trekking",    exp: "trekking" },
-  { label: "Cultural",    type: "cultural" },
+  { label: "Cultural",    categories: ["culture", "religion"] },
   { label: "Photography", exp: "photography" },
 ]
 
@@ -416,6 +417,15 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     setVisibleCount(PAGE_SIZE)
   }
 
+  // Shortcut with several categories: select them all, or clear them all when
+  // every one is already selected.
+  function toggleCategorySet(set: string[]) {
+    setSelectedCategories((prev) =>
+      set.every((c) => prev.includes(c)) ? prev.filter((x) => !set.includes(x)) : [...new Set([...prev, ...set])]
+    )
+    setVisibleCount(PAGE_SIZE)
+  }
+
   function selectProvince(p: string) {
     setProvince(p)
     setProvOpen(false)
@@ -483,13 +493,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                 ? selectedTypes.includes(s.type)
                 : s.exp
                   ? selectedExperiences.includes(s.exp)
-                  : false
+                  : s.categories
+                    ? s.categories.every((c) => selectedCategories.includes(c))
+                    : false
               return (
                 <button
                   key={s.label}
                   onClick={() => {
                     if (s.type) toggleType(s.type)
                     else if (s.exp) toggleExperience(s.exp)
+                    else if (s.categories) toggleCategorySet(s.categories)
                   }}
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium border transition-all ${
                     active
