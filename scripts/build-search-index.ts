@@ -18,6 +18,8 @@ import matter from "gray-matter"
 import { allLocations } from "../data/all-locations"
 import { destinations } from "../data/destinations"
 import { provinces } from "../data/provinces"
+import { LOCATION_TYPES, isLocationType } from "../data/taxonomy/types"
+import { LOCATION_TAGS, isLocationTag } from "../data/taxonomy/tags"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -66,6 +68,22 @@ function truncate(str: string | undefined | null, max = 160): string {
   return s.slice(0, max).replace(/\s+\S*$/, "") + "…"
 }
 
+/**
+ * Location taxonomy values are indexed by their display label from the frozen
+ * registry (data/taxonomy), not by the raw key:
+ *   type "historic-site"   → "Historic Site"
+ *   tag  "french-colonial-era" → "French Colonial Era"
+ * Legacy display tags (anything not in the tag registry, e.g. "🪖 War History")
+ * are indexed exactly as before.
+ */
+function typeSearchLabel(type: string): string {
+  return isLocationType(type) ? LOCATION_TYPES[type].label : type
+}
+
+function tagSearchLabel(tag: string): string {
+  return isLocationTag(tag) ? LOCATION_TAGS[tag].label : tag
+}
+
 // ─── Build index ─────────────────────────────────────────────────────────────
 
 const items: SearchItem[] = []
@@ -74,7 +92,8 @@ const items: SearchItem[] = []
 for (const loc of allLocations) {
   if (loc.status === "closed" || loc.status === "unverified") continue
 
-  const typeTags: string[] = Array.isArray(loc.type) ? loc.type : [loc.type]
+  const typeTags: string[] = (Array.isArray(loc.type) ? loc.type : [loc.type]).map(typeSearchLabel)
+  const locationTags: string[] = (loc.tags ?? []).map(tagSearchLabel)
 
   items.push({
     type: "location",
@@ -84,7 +103,7 @@ for (const loc of allLocations) {
     url: `/locations/${loc.slug}`,
     description: truncate(loc.seoDescription),
     province: loc.provinces?.[0],
-    tags: [...new Set([...typeTags, ...(loc.tags ?? [])])],
+    tags: [...new Set([...typeTags, ...locationTags])],
     heroImage: loc.heroImage ?? undefined,
   })
 }
