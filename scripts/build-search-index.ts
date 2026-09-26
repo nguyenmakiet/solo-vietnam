@@ -20,6 +20,7 @@ import { destinations } from "../data/destinations/index"
 import { provinces } from "../data/provinces"
 import { LOCATION_TYPES, isLocationType } from "../data/taxonomy/types"
 import { LOCATION_TAGS, isLocationTag } from "../data/taxonomy/tags"
+import { LOCATION_CATEGORIES, isLocationCategory } from "../data/taxonomy/categories"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -75,9 +76,17 @@ function truncate(str: string | undefined | null, max = 160): string {
  *   tag  "french-colonial-era" → "French Colonial Era"
  * Legacy display tags (anything not in the tag registry, e.g. "🪖 War History")
  * are indexed exactly as before.
+ * Canonical categories are indexed by label too ("nature" → "Nature"), appended
+ * after the type and tag labels, so themes stay searchable without broad types.
  */
 function typeSearchLabel(type: string): string {
   return isLocationType(type) ? LOCATION_TYPES[type].label : type
+}
+
+function categorySearchLabels(categories: readonly string[]): string[] {
+  return categories.flatMap((c) =>
+    isLocationCategory(c) && LOCATION_CATEGORIES[c].status === "canonical" ? [LOCATION_CATEGORIES[c].label] : []
+  )
 }
 
 function tagSearchLabel(tag: string): string {
@@ -94,6 +103,7 @@ for (const loc of allLocations) {
 
   const typeTags: string[] = (Array.isArray(loc.type) ? loc.type : [loc.type]).map(typeSearchLabel)
   const locationTags: string[] = (loc.tags ?? []).map(tagSearchLabel)
+  const categoryTags: string[] = categorySearchLabels(loc.categories ?? [])
 
   items.push({
     type: "location",
@@ -103,7 +113,7 @@ for (const loc of allLocations) {
     url: `/locations/${loc.slug}`,
     description: truncate(loc.seoDescription),
     province: loc.provinces?.[0],
-    tags: [...new Set([...typeTags, ...locationTags])],
+    tags: [...new Set([...typeTags, ...locationTags, ...categoryTags])],
     heroImage: loc.heroImage ?? undefined,
   })
 }
