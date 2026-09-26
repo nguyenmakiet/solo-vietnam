@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import { Location, LocationType, locationTheme } from "@/data/location"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
+import { typeDisplayLabel } from "@/data/taxonomy/types"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
@@ -484,7 +485,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   {allTypes.map((t) => (
                     <label key={t} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
                       <input type="checkbox" checked={selectedTypes.includes(t)} onChange={() => toggleType(t)} className="accent-[#1C1C1A] w-3.5 h-3.5" />
-                      {formatType(t)}
+                      {typeDisplayLabel(t)}
                     </label>
                   ))}
                 </div>
@@ -624,7 +625,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                   />
                   {/* Type badge */}
                   <span className={`absolute top-2 right-2 text-[10px] font-semibold px-2 py-0.5 rounded-full ${themeColors(loc)}`}>
-                    {formatType(primaryType(loc))}
+                    {typeDisplayLabel(primaryType(loc))}
                   </span>
                 </div>
 

@@ -2,6 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { experiences, getExperienceBySlug } from "@/data/experiences"
 import { Location } from "@/data/location"
+import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { activeLocations } from "@/data/all-locations"
 import "../experiences.css"
 
@@ -13,7 +14,7 @@ function getImageSrc(heroImage?: string): string {
 }
 function getTypeLabel(type: Location["type"]): string {
   const primary = Array.isArray(type) ? type[0] : type
-  return primary.charAt(0).toUpperCase() + primary.slice(1).replace(/-/g, " ")
+  return typeDisplayLabel(primary)
 }
 
 // ── Metadata ──────────────────────────────────────────────────────────────────

@@ -224,6 +224,15 @@ export function isLocationType(value: string): value is LocationType {
   return Object.prototype.hasOwnProperty.call(LOCATION_TYPES, value)
 }
 
+// Display label for a type value: the registry label for a registered type
+// ("pass" -> "Mountain Pass"); otherwise the raw value made readable
+// ("some-value" -> "Some value"), as the UI formatted it before.
+export function typeDisplayLabel(type: string): string {
+  if (isLocationType(type)) return LOCATION_TYPES[type].label
+  const text = type.replace(/-/g, " ")
+  return text.charAt(0).toUpperCase() + text.slice(1)
+}
+
 // Theme colour per type, derived from the registry.
 export const LOCATION_TYPE_THEME = Object.fromEntries(
   Object.entries(LOCATION_TYPES).map(([key, meta]) => [key, meta.theme])

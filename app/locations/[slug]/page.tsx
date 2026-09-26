@@ -11,6 +11,7 @@ import GalleryLightbox from "./GalleryLightbox"
 import GetDirectionsButton from "./GetDirectionsButton"
 import ContentRenderer from "./ContentRenderer"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
+import { typeDisplayLabel } from "@/data/taxonomy/types"
 
 
 const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed", { icon: string; label: string }> = {
@@ -79,7 +80,7 @@ export default async function LocationPage({
   if (!location) notFound()
 
   const primaryType = Array.isArray(location.type) ? location.type[0] : location.type
-  const typeLabel = (Array.isArray(location.type) ? location.type.join(" · ") : location.type).replace(/-/g, " ")
+  const typeLabel = (Array.isArray(location.type) ? location.type : [location.type]).map(typeDisplayLabel).join(" · ")
   const theme = locationTheme[primaryType] ?? "gray"
 
   const updatedLabel = location.updatedAt
