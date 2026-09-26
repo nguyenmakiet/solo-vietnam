@@ -67,8 +67,22 @@ export const LOCATION_TYPES = {
   town: { label: "Town", group: "settlement", status: "canonical", theme: "amber" },
   city: { label: "City", group: "settlement", status: "canonical", theme: "amber" },
   market: { label: "Market", group: "urban", status: "canonical", theme: "amber" },
-  temple: { label: "Temple", group: "religious", status: "canonical", theme: "purple" },
-  pagoda: { label: "Pagoda", group: "religious", status: "canonical", theme: "purple" },
+  temple: {
+    label: "Temple",
+    group: "religious",
+    status: "canonical",
+    theme: "purple",
+    description:
+      "Temple: a non-Buddhist sanctuary dedicated to a deity, deified king or hero, ancestor, or sage. Covers Vietnamese đền, miếu, điện, phủ, Taoist halls, Cao Đài worship sites, and Cham temple-towers. Not for Buddhist sites, churches, communal houses, or royal tombs.",
+  },
+  pagoda: {
+    label: "Pagoda",
+    group: "religious",
+    status: "canonical",
+    theme: "purple",
+    description:
+      "Pagoda: a Buddhist place of worship or monastic site. Covers Vietnamese chùa, tự, thiền viện, tịnh xá, Khmer Theravada Buddhist temples, and cave pagodas. Classification is based on Buddhist identity, even when English content uses the generic word 'temple'.",
+  },
   tomb: { label: "Tomb", group: "heritage", status: "canonical", theme: "purple" },
   citadel: { label: "Citadel", group: "heritage", status: "canonical", theme: "purple" },
   heritage: {
