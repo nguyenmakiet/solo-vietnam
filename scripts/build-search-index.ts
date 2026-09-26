@@ -16,7 +16,7 @@ import path from "path"
 import matter from "gray-matter"
 
 import { allLocations } from "../data/all-locations"
-import { destinations } from "../data/destinations"
+import { destinations } from "../data/destinations/index"
 import { provinces } from "../data/provinces"
 import { LOCATION_TYPES, isLocationType } from "../data/taxonomy/types"
 import { LOCATION_TAGS, isLocationTag } from "../data/taxonomy/tags"

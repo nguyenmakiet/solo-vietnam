@@ -1,6 +1,6 @@
 import VietnamMap from "@/components/VietnamMap"
 import Link from "next/link"
-import { destinations } from "@/data/destinations"
+import { destinations } from "@/data/destinations/index"
 import { stripLeadingEmoji } from "@/lib/text"
 import "./homepage.css"
 

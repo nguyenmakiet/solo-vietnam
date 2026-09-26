@@ -1,7 +1,7 @@
 // app/destinations/page.tsx
 import type { Metadata } from "next"
 import Link from "next/link"
-import { destinations } from "@/data/destinations"
+import { destinations } from "@/data/destinations/index"
 import { stripLeadingEmoji } from "@/lib/text"
 
 export const metadata: Metadata = {
@@ -180,8 +180,6 @@ export default function DestinationsPage() {
                       {/* Meta row */}
                       <div className="flex items-center justify-between pt-3 border-t border-[#F0EBE3]">
                         <div className="flex items-center gap-1.5 text-[11px] text-[#A09880]">
-                          {dest.budgetPerDay && <span>{dest.budgetPerDay}</span>}
-                          {dest.budgetPerDay && dest.recommendedStay && <span>·</span>}
                           {dest.recommendedStay && <span>{dest.recommendedStay}</span>}
                         </div>
                         <span className="text-[11px] font-semibold text-[#C9A84C] group-hover:translate-x-0.5 transition-transform">
