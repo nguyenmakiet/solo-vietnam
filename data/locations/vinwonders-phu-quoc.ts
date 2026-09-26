@@ -11,7 +11,7 @@ export const vinWondersPhuQuoc: Location = {
   lng: "103.8546052948659",
   address: "Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["theme-park", "attraction"],
-  categories: [],
+  categories: ["entertainment"],
   experiences: ["beach", "photography", "walking-tour"],
   tags: ["🎡 Theme Park", "🏖️ Private Beach", "🎠 Family Activities", "🌊 Water Park"],
   bestTime: "Nov – Apr (dry season, best weather for outdoor areas and water park)",

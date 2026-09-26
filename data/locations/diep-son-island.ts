@@ -11,7 +11,7 @@ export const diepSonIsland: Location = {
   lng: 109.29151610832875,
   address: "Vạn Thạnh, Vạn Ninh, Khánh Hòa",
   type: ["island", "beach", "nature"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "boat-tour", "photography", "snorkeling", "kayaking", "homestay"],
   tags: ["🏝️ Sand Path Island", "🌊 Tidal Sandbar", "🚣 Boat Trip"],
   bestTime: "Dec - Jun/Jul is generally the best window - dry weather, calmer seas, and the clearest, most photogenic sandbar. Jul - Sep is quieter with fewer visitors if you don't mind a higher chance of rain. The sandbar itself is governed by the lunar calendar, not the season: it's clearest around the 7th-8th and 23rd-24th days of the lunar month (neap tide), while the 1st, 15th, 16th, and 17th lunar days bring the highest tides and the poorest visibility - check a tide calendar or app before booking your boat, since exact timing shifts daily rather than following a fixed clock time",

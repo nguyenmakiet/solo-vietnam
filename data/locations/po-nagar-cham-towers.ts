@@ -13,7 +13,7 @@ export const poNagarChamTowers: Location = {
   type: ["temple", "heritage"],
   categories: ["religion", "history", "architecture"],
   experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
-  tags: ["🏯 Cham Towers", "⛩️ Active Hindu Temple", "🏛️ 8th Century", "cham-culture", "hinduism"],
+  tags: ["🏯 Cham Towers", "⛩️ Active Hindu Temple", "🏛️ 8th Century", "champa-heritage", "hinduism"],
   bestTime: "Year-round; dry season (Jan-Sep) gives the clearest skies, with Apr-Jun especially sunny - bring sun protection (hat, sunscreen, sunglasses) if visiting in these hotter months",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "30,000 VND/adult (subject to local adjustments); children under 1.2m free",

@@ -11,7 +11,7 @@ export const coThachBeach: Location = {
   lng: 108.71644682210062,
   address: "Bình Thạnh, Tuy Phong, Bình Thuận",
   type: ["beach", "nature", "landmark"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["photography", "beach", "walking-tour"],
   tags: ["🪨 Moss-Covered Rocks", "🌈 Seven-Coloured Stones", "🌅 Sunrise Spot"],
   bestTime: "Late Oct - Apr is the moss season overall, but March specifically is considered the single best month, when the moss is at its most vivid green. Aim for just after the tide recedes for the clearest view of the moss - too high and it's submerged, too low and it dries out and dulls. Avoid Jul - Aug specifically, when rain is heaviest and the sea gets rougher",

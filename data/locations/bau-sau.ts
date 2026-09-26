@@ -12,7 +12,7 @@ export const bauSau: Location = {
   address: "Cat Tien National Park, Tân Phú, Đồng Nai",
   type: ["lake", "forest", "nature"],
   categories: ["nature"],
-  experiences: ["trekking", "wildlife", "photography", "boat-tour", "cycling"],
+  experiences: ["trekking", "wildlife", "photography", "boat-tour", "cycling", "hiking"],
   tags: ["🐊 Crocodile Lake", "🌿 Primary Forest", "🦅 Birdwatching", "🥾 Jungle Trek", "🌙 Overnight Stay"],
   bestTime: "Nov - Apr (dry season when water levels drop and wildlife concentrates around the lake; wet season Jul - Oct makes the trek through the forest difficult but the forest sounds and atmosphere are at their most intense)",
   bestMonths: [1, 2, 3, 4, 11, 12],

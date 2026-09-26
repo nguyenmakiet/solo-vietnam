@@ -159,7 +159,7 @@ Three fields are typed enums and MUST use values from the source-of-truth files.
 - `"nature"` is a `LocationType`, NOT an `ExperienceValue` - do not put it in `experiences`
 - `"viewpoint"` does not exist in any enum - use `["nature", "landmark"]` for scenic lookouts
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
-- `"swimming"` and `"surfing"` are `proposed` experiences (added by the taxonomy content review) - valid, but they have no `/experiences/*` page yet
+- `"swimming"`, `"surfing"`, `"fishing"`, `"kitesurfing"`, `"diving"` and `"museum-visit"` are `canonical` experiences without an `/experiences/*` page. `"paragliding"` and `"rock-climbing"` are `proposed`
 - `"hiking"` and `"religious-site-visit"` are `canonical` experiences without a public page (Phase 2). `hiking` and `trekking` are separate sibling concepts - a location may have both
 - `"temple-visit"` is `deprecated` - use `"religious-site-visit"` for any active place of worship (the tradition goes in a religion tag such as `buddhism`)
 - Official designations (UNESCO, Ramsar, national relic...) go in `data/taxonomy/recognitions.ts`, not in `tags`

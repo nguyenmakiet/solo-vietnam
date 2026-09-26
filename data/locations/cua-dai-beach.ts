@@ -11,7 +11,7 @@ export const cuaDaiBeach: Location = {
   lng: 108.35901183162761,
   address: "Cửa Đại, Hội An, Quảng Nam",
   type: ["beach"],
-  categories: [],
+  categories: ["coast"],
   experiences: ["beach", "swimming", "cycling", "photography"],
   tags: ["🏖️ Hội An Beach", "🚲 Cycling Distance"],
   bestTime: "Mar – Aug (dry season, calm water; avoid Oct – Jan storm season)",

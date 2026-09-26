@@ -11,7 +11,7 @@ export const sonTraPeninsula: Location = {
   lng: 108.27692670069526,
   address: "Thọ Quang, Sơn Trà, Đà Nẵng",
   type: ["nature-reserve", "nature", "heritage"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["wildlife", "photography", "trekking", "motorcycling", "beach", "religious-site-visit", "swimming"],
   tags: ["🐒 Red-Shanked Douc Langur", "🌿 Nature Reserve", "🏍️ Scenic Drive"],
   bestTime: "Mar - Sep (dry season, clear roads, best wildlife sightings). Oct - Feb brings rain and fog; roads can be slippery.",

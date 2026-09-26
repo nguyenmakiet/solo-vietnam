@@ -12,7 +12,7 @@ export const drayNurDraySapWaterfalls: Location = {
   address: "Krông Kmar, Krông Bông, Đắk Lắk / Đắk Nông border",
   type: ["waterfall", "nature", "forest"],
   categories: ["nature"],
-  experiences: ["photography", "walking-tour", "trekking"],
+  experiences: ["photography", "walking-tour", "trekking", "hiking"],
   tags: ["💧 Husband & Wife Falls", "🌊 Basalt Plateau", "🌿 Highland Forest"],
   bestTime: "Nov - Apr (dry season) is generally considered the most beautiful window - clearer water, gentler flow, wild sunflower (dã quỳ) and coffee blossom season, and more pleasant weather overall, with Feb - May specifically singled out as the prettiest stretch. May - Nov (rainy season) brings the most powerful, dramatic flow, but the water runs notably murkier and the paths get slippery - genuinely impressive rather than classically beautiful",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],

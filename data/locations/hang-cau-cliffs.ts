@@ -11,7 +11,7 @@ export const hangCauCliffs: Location = {
   lng: 109.13405569310561,
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
   type: ["beach", "landmark"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["photography", "swimming", "snorkeling", "kayaking"],
   tags: [
     "🌊 Volcanic Cliff Beach",

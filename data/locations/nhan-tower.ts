@@ -13,7 +13,7 @@ export const nhanTower: Location = {
   type: ["temple", "cultural"],
   categories: ["religion", "history", "architecture"],
   experiences: ["photography", "culture", "history", "walking-tour", "religious-site-visit"],
-  tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night", "cham-culture"],
+  tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night", "champa-heritage"],
   bestTime: "Roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free to walk up. An optional electric cart to the summit costs around 10,000 VND one-way / 15,000 VND round-trip for adults (roughly half that for children) - walking up the stairs or road costs nothing.",

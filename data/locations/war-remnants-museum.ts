@@ -13,7 +13,7 @@ export const warRemnantsMuseum: Location = {
   type: ["museum", "history", "heritage"],
   categories: ["must-see", "history"],
   experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
-  tags: ["vietnam-war", "📸 War Photography", "⚔️ Agent Orange", "🚁 Military Hardware"],
+  tags: ["vietnam-war", "📸 War Photography", "⚔️ Agent Orange", "🚁 Military Hardware", "french-colonial-era"],
   bestTime: "Year-round; mornings are quieter and cooler",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "40,000 VND. Audio guide: 80,000 VND (available in 9 languages).",

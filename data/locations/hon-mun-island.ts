@@ -11,7 +11,7 @@ export const honMunIsland: Location = {
   lng: 109.30185373625723,
   address: "Hòn Mun, Vịnh Nha Trang, Khánh Hòa",
   type: ["island", "nature"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["snorkeling", "diving", "photography", "boat-tour"],
   tags: ["🤿 Diving in Nha Trang", "🐠 Coral Reef", "🏝️ Marine Reserve"],
   bestTime: "Mar - Aug (calmest seas and the clearest water for snorkeling and diving); Feb and Sep are generally still good but conditions become less predictable. Oct-Nov often see rough seas and tour cancellations.",

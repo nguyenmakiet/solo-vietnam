@@ -11,7 +11,7 @@ export const rachVemFishingVillage: Location = {
   lng: "103.93341470835864",
   address: "Rạch Vẹm, Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["village", "cultural", "nature", "beach"],
-  categories: ["culture", "nature"],
+  categories: ["culture", "nature", "coast"],
   experiences: ["culture", "photography", "food", "walking-tour", "boat-tour"],
   tags: ["🦑 Starfish Beach", "🎣 Stilt House Village", "🍚 Floating Restaurant", "🌊 Northern Phu Quoc"],
   bestTime: "Nov - Apr (dry season, calm water, best starfish visibility; peak Dec-Mar when starfish are most concentrated)",

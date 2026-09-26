@@ -13,7 +13,7 @@ export const khaiDinhTomb: Location = {
   type: ["tomb", "cultural"],
   categories: ["history", "architecture"],
   experiences: ["history", "culture", "photography"],
-  tags: ["👑 Nguyễn Tomb", "🏯 French-Vietnamese Architecture", "✨ Mosaic Interior", "nguyen-dynasty"],
+  tags: ["👑 Nguyễn Tomb", "🏯 French-Vietnamese Architecture", "✨ Mosaic Interior", "nguyen-dynasty", "french-colonial-era", "french-architecture"],
   bestTime: "Jan - Feb (most comfortable weather in Huế - ideal). Feb - Apr and Sep - Nov also good (dry season, best light for photography).",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
   entranceFee: "Adults 150,000 VND / Children (7-12) 30,000 VND",

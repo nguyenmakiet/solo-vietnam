@@ -11,7 +11,7 @@ export const pirateIslands: Location = {
   lng: 104.33352273150865,
   address: "Xã Tiên Hải, Hà Tiên, Kiên Giang",
   type: ["island", "beach", "nature"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "kayaking", "boat-tour", "camping", "photography", "fishing", "swimming"],
   tags: ["🏝️ Pirate Islands", "🐠 Coral Reef"],
   bestTime: "Your day on the island is effectively fixed by the boat schedule - typically an 8:00 AM sailing out and a 2:30 PM sailing back - so plan your on-island time around that roughly 6-hour window unless staying overnight",

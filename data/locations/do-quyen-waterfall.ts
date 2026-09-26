@@ -12,7 +12,7 @@ export const doQuyenWaterfall: Location = {
   address: "Vườn Quốc Gia Bạch Mã, Thừa Thiên Huế",
   type: ["waterfall", "forest", "nature"],
   categories: ["nature"],
-  experiences: ["trekking", "photography", "wildlife"],
+  experiences: ["trekking", "photography", "wildlife", "hiking"],
   tags: ["💧 400m Waterfall", "🌸 Rhododendron Season", "🏔️ Bạch Mã NP", "🧗 Via Ferrata & Zipline"],
   bestTime: "Jan – Aug (dry season). Mar–Apr for rhododendron bloom. Avoid Sep–Dec rainy season.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],

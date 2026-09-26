@@ -11,7 +11,7 @@ export const doiNhaiBeach: Location = {
   lng: 107.15635316774474,
   address: "Phường 11, Vũng Tàu, Bà Rịa - Vũng Tàu",
   type: ["beach", "nature"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["photography", "beach", "camping", "kitesurfing"],
   tags: ["🪁 Kitesurfing Spot", "🏕️ Wild Camping", "🌊 Undeveloped Beach", "🐚 Crab & Snail Foraging"],
   bestTime: "Windy days give the best kitesurfing conditions; early morning is quietest for swimming and camping",

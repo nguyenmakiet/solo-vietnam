@@ -1,7 +1,13 @@
 # Phase 2 - Per-location decisions for owner review
 
-Round 1 applied only what was approved and had one clear target ([PHASE2-LOG.md](./PHASE2-LOG.md)). Everything below is
-**not applied**. Each row needs an owner answer; "Suggested" is only a starting point. The owner's local knowledge wins.
+> **Round 2 status:** the owner answered sections A-F. The decisions were applied exactly and **override the "Suggested"
+> column below**. See [PHASE2-LOG.md §6](./PHASE2-LOG.md#6-owner-decisions-round-2-and-what-was-applied). Six items were
+> ambiguous and were not guessed ([PHASE2-LOG.md §6.4](./PHASE2-LOG.md#64-not-applied---ambiguity-or-conflict-needs-an-owner-answer)).
+> Recognition verification is blocked by network access (§6.5). Content gaps are in [CONTENT-BACKLOG.md](./CONTENT-BACKLOG.md).
+> The tables below are kept as the round-1 record.
+
+Round 1 applied only what was approved and had one clear target ([PHASE2-LOG.md](./PHASE2-LOG.md)). The rows below were
+**not applied** in round 1. Each needed an owner answer; "Suggested" was only a starting point.
 
 Legend for the relation column: **EQ** 1:1 · **SUB** narrower → broader · **XF** right concept, wrong field · **REL** related,
 not equivalent · **AMB** depends on the place.

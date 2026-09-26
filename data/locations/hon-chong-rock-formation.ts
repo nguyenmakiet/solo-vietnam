@@ -11,7 +11,7 @@ export const honChongRockFormation: Location = {
   lng: 109.20637893674045,
   address: "Phường Vĩnh Phước, Nha Trang, Khánh Hòa",
   type: ["rock-formation", "beach", "nature", "landmark"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["photography", "walking-tour", "beach"],
   tags: ["🪨 Rock Formation", "🌊 Coastal", "🌅 Sunset Spot"],
   bestTime: "Jan – Aug (dry season; sea is calm and rock formations fully accessible)",

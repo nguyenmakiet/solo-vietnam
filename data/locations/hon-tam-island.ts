@@ -11,7 +11,7 @@ export const honTamIsland: Location = {
   lng: 109.24323947785186,
   address: "Hòn Tằm, Vịnh Nha Trang, Khánh Hoà",
   type: ["island", "beach"],
-  categories: [],
+  categories: ["coast"],
   experiences: ["beach", "swimming", "snorkeling", "boat-tour", "kayaking"],
   tags: ["🏝️ Private Island Resort", "🏖️ White Sand Beach", "♨️ Mineral Mud Baths"],
   bestTime: "Feb - Sep (dry season, calm water, best visibility); avoid Tết and major holidays if you want a quieter, less surge-priced visit",

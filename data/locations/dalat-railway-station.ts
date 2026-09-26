@@ -13,7 +13,7 @@ export const dalatRailwayStation: Location = {
   type: ["station", "heritage", "attraction"],
   categories: ["history", "architecture"],
   experiences: ["history", "photography", "culture", "walking-tour"],
-  tags: ["🚂 1938 French Colonial Station", "🏛️ Heritage Architecture", "🚃 Tourist Train"],
+  tags: ["🚂 1938 French Colonial Station", "🏛️ Heritage Architecture", "🚃 Tourist Train", "french-colonial-era", "french-architecture"],
   bestTime: "Nov - May (dry season). Nov - Jan for cool air and tail-end rain views from the train window. Feb - May for wild cherry blossoms along the route.",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],
   entranceFee: "50,000 VND station entry (free if you buy a train ticket). Train to Trại Mát: Vietnamese visitors 72,000 VND one-way / 108,000-150,000 VND return; foreign visitors 150,000 VND one-way / 170,000 VND return. Children under 1m free.",

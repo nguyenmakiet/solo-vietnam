@@ -11,7 +11,7 @@ export const backBeachVungTau: Location = {
   lng: 107.09780711962715,
   address: "Thùy Vân, TP. Vũng Tàu, Bà Rịa - Vũng Tàu",
   type: ["beach", "nature"],
-  categories: ["food"],
+  categories: ["food", "coast"],
   experiences: ["beach", "swimming", "food", "nightlife", "walking-tour"],
   tags: ["🏖️ Vũng Tàu Main Beach", "🌊 HCMC Weekend Beach", "🍺 Beachfront Restaurants", "🚢 2 Hours from Saigon"],
   bestTime: "Nov - Apr (dry season; calmer water, clearer skies, and lower risk of the seasonal ocean debris that affects the beach later in the year); avoid Aug - Nov specifically if a clean beach matters to you, since that window brings a recurring surge of water hyacinth and floating debris from the Mekong river system, and Oct also carries typhoon risk. Also worth knowing: late April into early May, right at the start of the rainy season, sea lice and jellyfish tend to appear and can sting on contact - this fades as the season settles in, but it's a genuine reason to be more cautious swimming in that specific window",

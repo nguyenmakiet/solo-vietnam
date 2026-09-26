@@ -10,7 +10,7 @@ export const hangMua: Location = {
   lat: 20.229409892562945,
   lng: 105.93389756500189,
   address: "Thôn Khê Đầu Hạ, Ninh Xuân, Hoa Lư, Ninh Bình",
-  type: ["nature"],
+  type: ["mountain", "cave", "nature"],
   categories: ["nature"],
   experiences: ["trekking", "photography"],
   tags: ["🏔️ Viewpoint", "🪨 486 Stone Steps", "🌾 Panoramic View"],

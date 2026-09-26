@@ -10,7 +10,7 @@ export const khoMuongVillage: Location = {
   lat: 20.44871826696882, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
   lng: 105.15321491096157, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
   address: "Thành Sơn, Bá Thước, Thanh Hóa",
-  type: ["village", "cultural", "town"],
+  type: ["village", "cultural"],
   categories: ["hidden-gem", "culture", "nature"],
   experiences: ["culture", "photography", "walking-tour", "history", "homestay", "trekking"],
   tags: ["🏞️ Remote Valley", "🏠 Thai Stilt Houses", "🌾 Rice Terraces", "🕳️ Cave Access", "thai-culture"],

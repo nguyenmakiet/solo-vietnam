@@ -11,7 +11,7 @@ export const khemBeach: Location = {
   lng: "104.0308698",
   address: "An Thới, Phú Quốc, Kiên Giang",
   type: ["beach"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "photography", "swimming"],
   tags: ["🏖️ White Sand Beach", "🌅 Sunrise Spot", "🌊 Southeast Coast", "🧂 Salt History"],
   bestTime: "May - Sep (southwest monsoon season; Khem faces southeast so it is sheltered from the southwest wind and the water is at its clearest and calmest during these months)",

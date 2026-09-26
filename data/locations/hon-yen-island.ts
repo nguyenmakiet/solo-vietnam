@@ -11,7 +11,7 @@ export const honYenIsland: Location = {
   lng: 109.30868667111528,
   address: "Hòn Yến, An Hòa, Tuy An, Phú Yên",
   type: ["island", "beach", "nature"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "wildlife", "camping"],
   tags: ["🦞 Lobster Island", "🐠 Coral Snorkelling", "🏝️ Tidal Access", "📷 Hidden Gem"],
   bestTime: "Mar - Sep (dry season, best conditions). Tidal walk: days 1-15 of lunar month when tide recedes mid-afternoon.",

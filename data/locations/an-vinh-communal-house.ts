@@ -11,7 +11,7 @@ export const anVinhCommunalHouse: Location = {
   lng: 109.10020318216426,
   address: "An Vĩnh, Lý Sơn, Quảng Ngãi",
   type: ["communal-house", "cultural"],
-  categories: ["history", "culture", "architecture"],
+  categories: ["history", "culture", "architecture", "coast"],
   experiences: ["history", "culture"],
   tags: [
     "🏛️ Oldest Village on Lý Sơn",

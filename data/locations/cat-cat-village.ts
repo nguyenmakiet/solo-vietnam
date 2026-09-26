@@ -10,7 +10,7 @@ export const catCatVillage: Location = {
   lat: 22.33089349327537,
   lng: 103.83069280337017,
   address: "San Sả Hồ, Sa Pa, Lào Cai",
-  type: ["village", "cultural", "town"],
+  type: ["village", "cultural"],
   categories: ["culture"],
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["hmong-culture", "💧 Waterfall", "🚶 Walking Trail"],

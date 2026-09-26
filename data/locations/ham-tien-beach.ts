@@ -11,7 +11,7 @@ export const hamTienBeach: Location = {
   lng: 108.193239,
   address: "Hàm Tiến, Phan Thiết, Bình Thuận",
   type: ["beach", "nature"],
-  categories: [],
+  categories: ["coast"],
   experiences: ["beach", "photography", "swimming", "kitesurfing"],
   tags: ["🏖️ Beach", "🌊 Waves", "🏄 Surfing"],
   bestTime: "Early morning before the wind picks up is calmest; sunrise here, with the beach facing east, is one of the best photography moments on the coast",

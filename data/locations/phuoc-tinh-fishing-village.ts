@@ -11,7 +11,7 @@ export const phuocTinhFishingVillage: Location = {
   lng: 107.17863802885124,
   address: "Phước Tỉnh, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["nature", "cultural", "beach"],
-  categories: ["food", "culture"],
+  categories: ["food", "culture", "coast"],
   experiences: ["food", "culture", "walking-tour", "markets"],
   tags: ["🎣 Active Fishing Port", "🦐 Fresh Seafood", "🚢 Fishing Fleet"],
   bestTime: "4:00-7:00 AM for the fish market at full activity; 7-9 AM is pleasant for a slower walk watching daily life; 4-6 PM brings a calmer mood, good for walking the harbourside embankment and watching sunset over the port",

@@ -12,7 +12,7 @@ export const pongourWaterfall: Location = {
   address: "Tân Nghĩa, Ninh Gia, Đức Trọng, Lâm Đồng",
   type: ["waterfall", "nature"],
   categories: ["nature"],
-  experiences: ["photography", "walking-tour", "picnic", "camping", "swimming"],
+  experiences: ["photography", "walking-tour", "camping", "swimming"],
   tags: ["💧 Seven-Tier Waterfall", "👑 Nam Thiên Đệ Nhất Thác", "🏕️ Picnic & Camping"],
   bestTime: "Two distinct seasons, two different experiences. Rainy season (May-Nov): full roaring cascade, dramatic white water - best for the waterfall at its most powerful but expect muddy water and slippery paths. Dry season (Dec-Apr): clear turquoise water, safe for swimming and picnicking on the rock terraces - best for photography and relaxed exploration. Rằm tháng Giêng (first full moon of lunar new year) for the annual K'Ho festival.",
   bestMonths: [1, 2, 3, 7, 8, 9, 10],

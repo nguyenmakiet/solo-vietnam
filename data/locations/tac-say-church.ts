@@ -12,7 +12,7 @@ export const tacSayChurch: Location = {
   address: "Tắc Sậy, Phong Thạnh Tây, Giá Rai, Bạc Liêu",
   type: ["church", "heritage", "cultural", "landmark"],
   categories: ["religion", "history"],
-  experiences: ["history", "culture", "photography", "walking-tours", "religious-site-visit"],
+  experiences: ["history", "culture", "photography", "religious-site-visit"],
   tags: ["⛪ Martyr Shrine", "🙏 Pilgrimage Site", "🌾 Mekong Delta", "✨ Miraculous Healings", "catholicism"],
   bestTime: "Year-round; the anniversary of Father Diệp's death (11-12 March on the solar calendar) draws the largest annual pilgrimage. Visit outside 9:00-11:00 AM and 2:00-4:00 PM if possible, when the midday sun is harshest",
   bestMonths: [1, 2, 3, 11, 12],

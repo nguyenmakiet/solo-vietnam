@@ -46,6 +46,14 @@ export const LOCATION_TAGS = {
     group: "ethnic-culture",
     status: "proposed",
     filterable: true,
+    description: "Living Cham culture and communities. Historic Champa heritage is champa-heritage (Phase 2 split)",
+  },
+  "champa-heritage": {
+    label: "Champa Heritage",
+    group: "ethnic-culture",
+    status: "proposed",
+    filterable: true,
+    description: "Heritage of the historic Champa kingdom (temple towers, sanctuaries). Living Cham culture is cham-culture",
   },
   buddhism: {
     label: "Buddhism",
@@ -156,6 +164,15 @@ export const LOCATION_TAGS = {
     filterable: true,
   },
 
+  // ── Phase 2 - owner-approved ──
+  confucianism: {
+    label: "Confucianism",
+    group: "religion",
+    status: "canonical",
+    filterable: true,
+    description: "Confucian tradition where it is central to the place (e.g. a Temple of Literature)",
+  },
+
   // ── Phase 2 - owner-approved (three distinct French concepts, CONSOLIDATION-PROPOSAL.md §7) ──
   "french-colonial-era": {
     label: "French Colonial Era",
@@ -197,7 +214,7 @@ export const LEGACY_TAG_ALIAS_TABLE: Readonly<Record<string, { tag: LocationTag;
   // R21 fix: the French labels no longer map to french-influence.
   "french-colonial": { tag: "french-colonial-era", kind: "implies" },
   "french-vietnamese-architecture": { tag: "french-architecture", kind: "implies" },
-  "cham-heritage": { tag: "cham-culture", kind: "implies" },
+  "cham-heritage": { tag: "champa-heritage", kind: "implies" },
   "buddhist-pilgrimage": { tag: "buddhism", kind: "implies" },
   "buddhist-caves": { tag: "buddhism", kind: "implies" },
 }

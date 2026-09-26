@@ -18,6 +18,7 @@ export const mangLangChurch: Location = {
     "📖 Oldest Catholic Church in Vietnam",
     "📜 First Printed Vietnamese-Script Book",
     "catholicism",
+    "french-architecture",
   ],
   bestTime: "For general visiting and photography, before 8 AM or after 4 PM avoids the harshest sun; for the most atmospheric experience, time it around early morning mass (roughly 5:30 AM) or Sunday services",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9],

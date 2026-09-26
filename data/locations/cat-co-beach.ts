@@ -11,7 +11,7 @@ export const catCoBeach: Location = {
   lng: 107.05221565965415,
   address: "Cát Cò, Cát Bà, Hải Phòng",
   type: ["beach"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "photography", "kayaking"],
   tags: ["🏖️ Cát Bà's Main Beach", "🌅 Sunset"],
   bestTime: "Apr - Oct is the swimming season overall, with Jun - Aug as peak season (warmest water, busiest crowds). Within that window, Apr-Aug is the more weather-reliable stretch; Sep-Oct can bring storms and rougher seas, so check the forecast closely if travelling then. Within any day, mornings before around 7 AM have calmer water, cooler temperatures, and the best light for photos, while roughly 4-6 PM brings softer sun and a chance to catch the sunset - both are also quieter than the midday peak. Dec - Feb is cold and not really swimmable; Nov and Mar are quieter shoulder months worth checking the forecast for",

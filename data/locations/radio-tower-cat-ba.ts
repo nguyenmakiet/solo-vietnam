@@ -12,7 +12,7 @@ export const radioTowerCatBa: Location = {
   address: "Núi Ngọc, Cát Bà, Hải Phòng",
   type: ["landmark", "attraction", "nature"],
   categories: ["nature"],
-  experiences: ["photography", "trekking", "walking-tour"],
+  experiences: ["photography", "trekking", "walking-tour", "hiking"],
   tags: ["🌅 Sunset Viewpoint", "📡 Radio Tower", "🏝️ Lan Hạ Bay Views", "🔭 Panoramic"],
   bestTime: "Afternoon to sunset (check local sunset time before going - allow 30-60 minutes for the climb)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

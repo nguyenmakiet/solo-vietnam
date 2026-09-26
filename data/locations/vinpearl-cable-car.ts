@@ -11,7 +11,7 @@ export const vinpearlCableCar: Location = {
   lng: 109.21792171467011,
   address: "Hòn Tre Island, Nha Trang, Khánh Hoà",
   type: ["cable-car", "attraction"],
-  categories: [],
+  categories: ["entertainment"],
   experiences: ["cable-car", "photography", "beach"],
   tags: ["🚡 Over-Sea Cable Car", "📸 Panoramic Views", "🏝️ Hon Tre Island", "🎡 Vinpearl Resort"],
   bestTime: "Feb - Aug for the clearest visibility over the bay (cable car operates year-round); Jun-Aug specifically is peak summer beach season and genuinely crowded, while autumn offers cooler, quieter weather if you'd rather avoid the busiest months. Within a day, 9:00-10:00 AM gives cooler temperatures and pleasant soft light over the bay, while late afternoon (around 4-5 PM) is best for golden-hour views, and departing around 5-6 PM lets you catch sunset over the bay on the way to an evening at Vinpearl Land",

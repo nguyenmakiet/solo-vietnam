@@ -11,7 +11,7 @@ export const damTrauBeach: Location = {
   lng: 106.62476852169172,
   address: "Huyện Côn Đảo, Bà Rịa – Vũng Tàu",
   type: ["beach", "nature"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "photography", "wildlife", "swimming"],
   tags: ["🏖️ Top 25 Beaches in the World", "✈️ Planes Landing Overhead", "🪸 Coral Reef", "🌴 Day-Trip Beach"],
   bestTime: "Roughly 7-10 AM or 3-5 PM for the gentlest light and coolest temperatures for swimming and photos; low tide gives the best snorkeling conditions; check flight schedules or an app like Flightradar24 if plane-spotting is your goal, since arrivals are often a little ahead of schedule",

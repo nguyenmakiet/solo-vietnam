@@ -11,7 +11,7 @@ export const tiTopIsland: Location = {
   lng: 107.08129113548287,
   address: "Đảo Ti Tốp, Vịnh Hạ Long, Quảng Ninh",
   type: ["island", "beach"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "trekking", "photography"],
   tags: ["🏖️ Crescent Beach", "🏔️ Summit Viewpoint"],
   bestTime: "Roughly 9-10 AM or 3-4:30 PM tend to have better light for photos and avoid the harshest midday sun on the climb - though arriving as early as possible still gives the best odds of a quieter beach before cruise crowds build",

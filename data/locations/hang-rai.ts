@@ -11,7 +11,7 @@ export const hangRai: Location = {
   lng: "109.18272230833225",
   address: "Thôn Thái An, Vĩnh Hải, Ninh Hải, Ninh Thuận",
   type: ["beach", "nature"],
-  categories: ["hidden-gem", "nature"],
+  categories: ["hidden-gem", "nature", "coast"],
   experiences: ["photography", "trekking", "wildlife", "swimming", "snorkeling"],
   tags: ["🪨 Ancient Coral Rock Formations", "🌅 Sunset Views", "🌊 Wild Coast"],
   bestTime: "Jan – Aug (dry season). Best at sunrise (5–6 AM) or late afternoon (4–6 PM) - avoid midday sun which is extremely harsh.",

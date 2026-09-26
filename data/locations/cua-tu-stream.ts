@@ -10,7 +10,7 @@ export const cuaTuStream: Location = {
   lat: "21.605532505545185",
   lng: "105.5466304981171",
   address: "Xã Hoàng Nông, Đại Từ, Thái Nguyên",
-  type: ["waterfall", "river", "nature", "forest"],
+  type: ["waterfall", "stream", "river", "nature", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography", "wildlife", "swimming"],
   tags: ["🏞️ 9-Gate Stream", "🏊 Natural Pools", "🌿 Forest Trek"],

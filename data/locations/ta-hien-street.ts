@@ -11,7 +11,7 @@ export const taHienStreet: Location = {
   lng: 105.85214981581382,
   address: "Tạ Hiện, Hoàn Kiếm, Hà Nội",
   type: ["street", "attraction", "city"],
-  categories: ["food"],
+  categories: ["food", "entertainment"],
   experiences: ["nightlife", "food", "walking-tour", "culture"],
   tags: ["🍺 Bia Hơi Corner", "🌃 Night Street", "🗣️ Backpacker Hub", "🥘 Street Food"],
   bestTime: "Year-round; evenings from 6 PM onwards; weekend nights are peak atmosphere",

@@ -13,7 +13,7 @@ export const hmongKingPalace: Location = {
   type: ["palace", "heritage", "history", "cultural", "landmark"],
   experiences: ["history", "culture", "photography", "walking-tour", "motorcycling"],
   categories: ["history", "architecture", "culture"],
-  tags: ["🏛️ Hmong Royal Residence", "📸 Architecture", "🧭 Đồng Văn Plateau", "🏍️ Ha Giang Loop", "hmong-culture"],
+  tags: ["🏛️ Hmong Royal Residence", "📸 Architecture", "🧭 Đồng Văn Plateau", "🏍️ Ha Giang Loop", "hmong-culture", "french-architecture"],
   bestTime: "Sep - Nov (buckwheat flower season; best weather for the Ha Giang loop overall)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "20,000-25,000 VND/adult, free for children under 1.2m",

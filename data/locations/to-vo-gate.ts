@@ -11,8 +11,8 @@ export const toVoGate: Location = {
   lng: 109.09934087255056,
   address: "An Hải, Lý Sơn, Quảng Ngãi",
   type: ["rock-formation", "landmark", "nature"],
-  categories: ["nature"],
-  experiences: ["photography", "nature"],
+  categories: ["nature", "coast"],
+  experiences: ["photography"],
   tags: [
     "🌋 Volcanic Rock Arch",
     "📸 Iconic Photo Spot",

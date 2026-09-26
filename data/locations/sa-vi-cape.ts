@@ -11,7 +11,7 @@ export const saViCape: Location = {
   lng: 108.06734019742865,
   address: "Phường Trà Cổ, Móng Cái, Quảng Ninh",
   type: ["cape", "beach", "cultural"],
-  categories: ["history"],
+  categories: ["history", "coast"],
   experiences: ["photography", "culture", "history"],
   tags: ["🇻🇳 Northeast Tip of Vietnam", "🌅 First Sunrise in the North", "📍 Border Marker", "🏖️ Tra Co Beach"],
   bestTime: "Any time of day works for the landmark itself; sunrise is the most dramatic, since Mũi Sa Vĩ is the first point in northern Vietnam to catch the morning light",

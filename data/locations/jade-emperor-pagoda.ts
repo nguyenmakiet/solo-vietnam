@@ -12,7 +12,7 @@ export const jadeEmperorPagoda: Location = {
   address: "73 Mai Thị Lựu, Đa Kao, Quận 1, Thành phố Hồ Chí Minh",
   type: ["pagoda", "cultural"],
   categories: ["must-see", "religion", "culture"],
-  experiences: ["culture", "spirituality", "photography", "walking-tour", "religious-site-visit"],
+  experiences: ["culture", "photography", "walking-tour", "religious-site-visit"],
   tags: ["🐢 Sacred Turtle Pond", "🏮 Taoist Pagoda", "🧧 Incense & Offerings", "🗿 Jade Emperor Statues", "taoism"],
   bestTime: "Early morning year-round offers the quietest atmosphere. The 1st and 15th days of each lunar month are the busiest, while the 9th day of the 1st lunar month (the Jade Emperor's feast day) is the most vibrant but also the most crowded.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

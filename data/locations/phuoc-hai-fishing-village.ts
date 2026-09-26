@@ -11,7 +11,7 @@ export const phuocHaiFishingVillage: Location = {
   lng: 107.28791445290544,
   address: "Phước Hải, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["village", "nature", "cultural", "beach", "market"],
-  categories: ["food", "culture"],
+  categories: ["food", "culture", "coast"],
   experiences: ["photography", "food", "culture", "beach", "walking-tour", "swimming", "markets"],
   tags: ["🎣 Fishing Village + Beach Combo", "🦪 Oysters & Fresh Seafood", "📸 Sunrise Photography", "🏖️ Weekend Escape from Saigon"],
   bestTime: "Nov - Apr (dry season, calm sea, warm sun). Avoid Saturday if you want to avoid crowds.",

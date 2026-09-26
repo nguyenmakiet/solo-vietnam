@@ -11,7 +11,7 @@ export const honThomCableCar: Location = {
   lng: "104.0046602",
   address: "An Thới, Phú Quốc, Kiên Giang",
   type: ["cable-car", "attraction"],
-  categories: [],
+  categories: ["entertainment"],
   experiences: ["cable-car", "beach", "photography"],
   tags: ["🚡 World's Longest Cable Car", "🏝️ Island", "🌅 Sunset Views", "🌊 Sea Views"],
   bestTime: "Nov – Apr (clear skies, calm sea). Nov-Dec: catch sunset on the afternoon crossing.",

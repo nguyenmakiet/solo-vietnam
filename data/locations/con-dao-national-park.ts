@@ -12,7 +12,7 @@ export const conDaoNationalPark: Location = {
   address: "Côn Đảo, Bà Rịa - Vũng Tàu",
   type: ["national-park", "nature"],
   categories: ["nature"],
-  experiences: ["wildlife", "trekking", "snorkeling", "photography", "kayaking", "diving"],
+  experiences: ["wildlife", "trekking", "snorkeling", "photography", "kayaking", "diving", "hiking"],
   tags: ["🐢 Sea Turtle Nesting", "🌿 Marine National Park", "🐠 Coral Reefs", "🥾 Jungle Trails"],
   bestTime: "May - Sep (sea turtle nesting season, calmer seas, lush rainforest). Best overall: May - Aug.",
   bestMonths: [5, 6, 7, 8, 9],

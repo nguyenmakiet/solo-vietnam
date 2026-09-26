@@ -11,7 +11,7 @@ export const buiVienStreet: Location = {
   lng: 106.69395623211263,
   address: "Bùi Viện, Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh",
   type: ["street", "attraction", "city"],
-  categories: [],
+  categories: ["entertainment"],
   experiences: ["nightlife", "food", "walking-tour"],
   tags: ["🎉 Walking Street", "🍺 Bar Strip", "🌃 Neon Nights", "🌍 Backpacker Central"],
   bestTime: "Year-round; evenings only - the street is quiet during the day. Weekday evenings are lively but remain open to traffic; Saturday and Sunday nights (7 PM-2 AM) are when the street officially closes to vehicles and becomes a full walking street, which is when the atmosphere is most intense",

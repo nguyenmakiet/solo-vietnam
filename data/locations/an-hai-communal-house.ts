@@ -11,7 +11,7 @@ export const anHaiCommunalHouse: Location = {
   lng: 109.12906613305788,
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
   type: ["communal-house", "cultural"],
-  categories: ["history", "culture", "architecture"],
+  categories: ["history", "culture", "architecture", "coast"],
   experiences: ["history", "culture"],
   tags: [
     "🏛️ Historic Communal House",

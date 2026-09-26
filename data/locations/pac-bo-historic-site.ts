@@ -12,7 +12,7 @@ export const pacBoHistoricSite: Location = {
   address: "Trường Hà, Hà Quảng, Cao Bằng",
   type: ["historic-site", "history", "nature"],
   categories: ["history", "nature"],
-  experiences: ["history", "culture", "trekking", "photography", "museum-visit"],
+  experiences: ["history", "culture", "trekking", "photography", "museum-visit", "hiking"],
   tags: ["🏛️ Hồ Chí Minh Revolutionary Base", "📖 Vietnam History", "🌿 Jungle Caves"],
   bestTime: "Morning light gives the clearest reflections on Lenin Stream before any afternoon haze builds up",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

@@ -67,9 +67,9 @@ export const LOCATION_EXPERIENCES = {
   motorcycling: { label: "Motorcycling", group: "outdoor", status: "canonical", page: "motorcycling" },
   shopping: { label: "Shopping", group: "food-and-local-life", status: "canonical", page: "shopping" },
 
-  // ── Proposed during the content review (CONTENT-REVIEW.md) ──
-  swimming: { label: "Swimming", group: "water", status: "proposed" },
-  surfing: { label: "Surfing", group: "water", status: "proposed" },
+  // ── Introduced by the content review (CONTENT-REVIEW.md) - canonical without a page unless marked proposed ──
+  swimming: { label: "Swimming", group: "water", status: "canonical" },
+  surfing: { label: "Surfing", group: "water", status: "canonical" },
   "temple-visit": {
     label: "Temple Visit",
     group: "culture",
@@ -80,12 +80,12 @@ export const LOCATION_EXPERIENCES = {
   fishing: {
     label: "Fishing",
     group: "water",
-    status: "proposed",
+    status: "canonical",
     description: "Hands-on fishing (nets, traps, lines), not just watching fishermen",
   },
-  kitesurfing: { label: "Kitesurfing", group: "water", status: "proposed" },
-  "museum-visit": { label: "Museum Visit", group: "culture", status: "proposed" },
-  diving: { label: "Diving", group: "water", status: "proposed", description: "Scuba diving" },
+  kitesurfing: { label: "Kitesurfing", group: "water", status: "canonical" },
+  "museum-visit": { label: "Museum Visit", group: "culture", status: "canonical" },
+  diving: { label: "Diving", group: "water", status: "canonical", description: "Scuba diving" },
   hiking: {
     label: "Hiking",
     group: "outdoor",
@@ -98,6 +98,10 @@ export const LOCATION_EXPERIENCES = {
     status: "canonical",
     description: "Visiting any active place of worship (pagoda, temple, shrine, church...). The tradition is carried by a religion tag",
   },
+
+  // ── Phase 2 - owner-registered as proposed (no page, not canonical) ──
+  paragliding: { label: "Paragliding", group: "outdoor", status: "proposed" },
+  "rock-climbing": { label: "Rock Climbing", group: "outdoor", status: "proposed" },
 } as const satisfies Record<string, TaxonomyMeta<LocationExperienceGroup> & { page?: string }>
 
 export type LocationExperience = keyof typeof LOCATION_EXPERIENCES

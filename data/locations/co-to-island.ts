@@ -11,7 +11,7 @@ export const coToIsland: Location = {
   lng: 107.76311545711883,
   address: "Huyện Cô Tô, Quảng Ninh",
   type: ["island", "beach", "nature"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "kayaking", "photography", "boat-tour", "swimming", "motorcycling"],
   tags: ["🏝️ Remote Island", "🤿 Coral Snorkeling", "🏖️ White Sand Beaches", "🌊 Gulf of Tonkin"],
   bestTime: "Apr - Aug (warm, sunny, ideal for swimming and snorkeling; Sep-Oct still good but storm risk increases)",

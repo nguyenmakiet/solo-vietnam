@@ -11,7 +11,7 @@ export const docLetBeach: Location = {
   lng: 109.23014241805565,
   address: "Ninh Hải, Ninh Hoà, Khánh Hoà",
   type: ["beach"],
-  categories: ["nature"],
+  categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "photography", "cycling"],
   tags: ["🏖️ White Sand, Turquoise Water", "🌊 Calm Bay", "🚗 Day Trip from Nha Trang"],
   bestTime: "Jan - Aug is the dry season overall, with Jan - Apr generally the most pleasant (cooler, less intense sun) and the whole window good for calm water. Sep - Dec is the rainy season - avoid if possible, since roads to the beach can get slippery and the sea turns rougher and colder",
