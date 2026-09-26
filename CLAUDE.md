@@ -158,7 +158,7 @@ The four taxonomy fields are a **frozen data contract** (Phase 2 freeze). Every 
 
 **Common mismatches to avoid:**
 - `"nature"` is a `LocationType` and a category, NOT an experience - do not put it in `experiences`
-- `"viewpoint"` does not exist in any registry - use `["nature", "landmark"]` for scenic lookouts
+- `"viewpoint"` does not exist in any registry - for a scenic lookout use the landform type (`mountain`, `pass`, `cape`, `rock-formation`, `valley`...) plus `categories: ["nature"]`. Do not add the broad types `nature`/`landmark` for it
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
 - `hiking` and `trekking` are separate sibling concepts - a location may have both
 - `"history"` is a `deprecated` type - use `categories: ["history"]` (and the `history` experience where it applies), with a specific place type such as `historic-site`, `citadel` or `museum`

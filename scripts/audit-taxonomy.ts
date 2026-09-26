@@ -84,7 +84,7 @@ audit("experiences", experiences, isLocationExperience, normalizeExperience)
 audit("tags", tags, isLocationTag, normalizeLegacyTag)
 
 // ── Registry status of the values in use (Phase 2 status model) ──
-type Registry = Record<string, { status: string; replacedBy?: string; replacedByCategory?: string }>
+type Registry = Record<string, { status: string; replacedBy?: string; replacedByCategory?: string; noReplacement?: string }>
 function statusReport(field: string, values: string[], registry: Registry, fallback = "unregistered") {
   const byStatus = new Map<string, number>()
   const deprecated = new Map<string, number>()
@@ -109,7 +109,7 @@ console.log(`  ${"tags".padEnd(12)} ${[...tagStatusCounts].map(([s, n]) => `${s}
 // Any violation below sets a non-zero exit code.
 const problems: string[] = []
 
-type Meta = { status: string; group?: string; replacedBy?: string; replacedByCategory?: string; broader?: readonly string[]; page?: string }
+type Meta = { status: string; group?: string; replacedBy?: string; replacedByCategory?: string; noReplacement?: string; broader?: readonly string[]; page?: string }
 type Reg = Record<string, Meta>
 const REGISTRIES: Record<string, Reg> = {
   type: LOCATION_TYPES as Reg,
@@ -165,12 +165,18 @@ for (const [field, reg] of Object.entries(REGISTRIES)) {
   }
   for (const [key, meta] of Object.entries(reg)) {
     if (!["canonical", "proposed", "deprecated"].includes(meta.status)) problems.push(`${field} "${key}": invalid registry status "${meta.status}"`)
-    if (meta.status === "deprecated" && !meta.replacedBy && !meta.replacedByCategory) problems.push(`${field} "${key}": deprecated without replacedBy`)
-    if (meta.replacedByCategory) {
+    const replacements = [meta.replacedBy, meta.replacedByCategory, meta.noReplacement].filter((r) => r !== undefined)
+    if (meta.status === "deprecated" && replacements.length === 0) problems.push(`${field} "${key}": deprecated without replacedBy`)
+    if (replacements.length > 1) problems.push(`${field} "${key}": more than one of replacedBy / replacedByCategory / noReplacement set`)
+    if (meta.replacedByCategory !== undefined) {
       if (field !== "type") problems.push(`${field} "${key}": replacedByCategory is for types only`)
       if (meta.status !== "deprecated") problems.push(`${field} "${key}": replacedByCategory set on a ${meta.status} value`)
-      if (meta.replacedBy) problems.push(`${field} "${key}": both replacedBy and replacedByCategory set`)
       if (REGISTRIES.categories[meta.replacedByCategory]?.status !== "canonical") problems.push(`${field} "${key}": replacedByCategory "${meta.replacedByCategory}" is not a canonical category`)
+    }
+    if (meta.noReplacement !== undefined) {
+      if (field !== "type" || meta.group !== "broad") problems.push(`${field} "${key}": noReplacement is for broad types only`)
+      if (meta.status !== "deprecated") problems.push(`${field} "${key}": noReplacement set on a ${meta.status} value`)
+      if (!meta.noReplacement.trim()) problems.push(`${field} "${key}": noReplacement needs a reason`)
     }
     if (meta.replacedBy) {
       if (meta.status !== "deprecated") problems.push(`${field} "${key}": replacedBy set on a ${meta.status} value`)
@@ -246,7 +252,33 @@ for (const [a, b, reg] of siblingPairs) {
   }
 }
 if (REGISTRIES.experiences["temple-visit"]?.replacedBy !== "religious-site-visit") problems.push(`"temple-visit" must be deprecated with replacedBy "religious-site-visit"`)
-if (REGISTRIES.type["history"]?.replacedByCategory !== "history") problems.push(`type "history" must be deprecated with replacedByCategory "history"`)
+// Broad types (owner decisions D1', D1''): each is either still canonical with a
+// pendingDecision, or deprecated with exactly the replacement below.
+const BROAD_TYPE_REPLACEMENT: Record<string, { category: string } | "none"> = {
+  history: { category: "history" },
+  nature: { category: "nature" },
+  cultural: { category: "culture" },
+  heritage: "none",
+  landmark: "none",
+  attraction: "none",
+}
+const broadTypes = Object.entries(REGISTRIES.type).filter(([, m]) => m.group === "broad").map(([k]) => k).sort()
+if (broadTypes.join() !== Object.keys(BROAD_TYPE_REPLACEMENT).sort().join())
+  problems.push(`broad types [${broadTypes}] differ from the owner-decided set [${Object.keys(BROAD_TYPE_REPLACEMENT).sort()}]`)
+for (const [key, expected] of Object.entries(BROAD_TYPE_REPLACEMENT)) {
+  const meta = REGISTRIES.type[key] as Meta & { pendingDecision?: string }
+  if (!meta) continue
+  if (meta.status === "canonical") {
+    if (!meta.pendingDecision) problems.push(`type "${key}": canonical broad type without pendingDecision`)
+  } else if (meta.status !== "deprecated") {
+    problems.push(`type "${key}": broad type must be canonical or deprecated, not ${meta.status}`)
+  } else if (expected === "none") {
+    if (meta.noReplacement === undefined) problems.push(`type "${key}" must be deprecated with noReplacement (owner decision)`)
+  } else if (meta.replacedByCategory !== expected.category) {
+    problems.push(`type "${key}" must be deprecated with replacedByCategory "${expected.category}" (owner decision)`)
+  }
+  if (meta.status === "deprecated" && meta.pendingDecision) problems.push(`type "${key}": deprecated but still has a pendingDecision`)
+}
 
 // 7. Recognition side-car slugs.
 const slugs = new Set(allLocations.map((l) => l.slug))

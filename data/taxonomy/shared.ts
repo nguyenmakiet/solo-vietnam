@@ -7,7 +7,8 @@
 //   "proposed"       - grounded in the reviewed data, pending an owner decision
 //   "deprecated"     - still valid in data, not to be added to new files;
 //                      `replacedBy` names the target when one exists
-//                      (`replacedByCategory` for a type whose concept moved to categories)
+//                      (`replacedByCategory` for a type whose concept moved to categories,
+//                      `noReplacement` for a broad type with no equivalent anywhere)
 //   "legacy-display" - tags only: a free-form display label that is not in the
 //                      registry (presentation, never used for discovery).
 //                      Never set in a registry entry - see tagStatus().
@@ -30,6 +31,10 @@ export type TaxonomyMeta<Group extends string> = {
   // deprecated types only: the category that replaces it when the concept moves
   // to another field (a broad theme type -> its category). Used instead of replacedBy.
   replacedByCategory?: string
+  // deprecated broad types only: why there is no replacement (no equivalent
+  // type or category). Exactly one of replacedBy / replacedByCategory /
+  // noReplacement is set on a deprecated value.
+  noReplacement?: string
   // A decision explicitly deferred by the owner (e.g. deprecation of broad types).
   pendingDecision?: string
 }

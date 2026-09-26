@@ -26,15 +26,28 @@ Official designations are not taxonomy values: they live in the side-car `recogn
 |--------|---------|------------------|
 | `canonical` | Approved, stable. Allowed in Location data | every other registered value |
 | `proposed` | Registered and valid, intentionally pending an owner decision. Not in the canonical UI grouping (`EXPERIENCE_GROUP_CONFIG`) | experiences: `paragliding`, `rock-climbing` |
-| `deprecated` | Not allowed in Location data. `replacedBy` names the replacement (`replacedByCategory` for a type whose concept moved to categories) | experiences: `temple-visit` → `religious-site-visit`; type: `history` → category `history` |
+| `deprecated` | Not allowed in Location data. Exactly one of: `replacedBy` (same field), `replacedByCategory` (a type whose concept moved to categories) or `noReplacement` (a broad type with no equivalent; the reason) | experiences: `temple-visit` → `religious-site-visit`; type: `history` → category `history` |
 | `legacy-display` | Tags only. A free-form label kept for display/compatibility (hero chips, `tags[0]` card subtitle). Never used for discovery | 754 distinct labels (827 uses) |
 
 The broad type `history` is `deprecated` (broad-type migration step 1, PHASE2-LOG §11): it was removed from all Location data and
 is replaced by category `history` (`replacedByCategory`). `?type=history` is ignored by the `/locations` filter like any other
 non-canonical param; no URL alias exists.
 
-The other five broad types (`nature`, `attraction`, `cultural`, `heritage`, `landmark`) are `canonical` with a `pendingDecision`:
-their deprecation is **deferred by the owner**. They stay valid and must not be removed from Location data.
+The other five broad types (`nature`, `attraction`, `cultural`, `heritage`, `landmark`) are still `canonical` with a
+`pendingDecision` and stay valid until each is migrated. The owner has decided how each one is deprecated (D1', D1''), and
+the audit enforces it: a broad type is either canonical with a `pendingDecision`, or deprecated with exactly this replacement.
+
+| Broad type | Replacement when deprecated |
+|------------|-----------------------------|
+| `history` | `replacedByCategory: "history"` (deprecated) |
+| `nature` | `replacedByCategory: "nature"` |
+| `cultural` | `replacedByCategory: "culture"` |
+| `heritage` | `noReplacement` - no type or category equivalent (designations live in `recognitions.ts`) |
+| `landmark` | `noReplacement` - generic; category `iconic` is not equivalent |
+| `attraction` | `noReplacement` - generic |
+
+`/locations` keeps old URLs working: `?type=nature` and `?type=cultural` alias to `?category=nature` / `?category=culture` once
+the type is no longer filterable; other non-filterable types (`history`, `heritage`, `landmark`, `attraction`) are ignored.
 
 Relationships (existing, frozen):
 - `broader` (narrower → broader, never used to rewrite data): `stream` → `river`, `rice-fields` → `farmland`.
@@ -70,9 +83,10 @@ Read-only. It prints the usage report and then enforces the contract. It **exits
 | Location values | a Location uses an unregistered `type`/`categories`/`experiences` value, a key-like unregistered tag, or a duplicate value |
 | Deprecated values | a Location uses any `deprecated` value |
 | Frozen statuses | the set of `proposed` or `deprecated` values in any registry differs from the frozen list |
-| Registry integrity | an invalid status, `deprecated` without `replacedBy` (or `replacedByCategory`), `replacedBy` on a non-deprecated value or pointing to a non-canonical value, `replacedByCategory` outside `type`, on a non-deprecated value or pointing to a non-canonical category, a `broader` target that is missing/non-canonical/self/cyclic, or a `page` on a non-canonical value or outside experiences |
+| Registry integrity | an invalid status, a `deprecated` value without exactly one of `replacedBy` / `replacedByCategory` / `noReplacement`, `replacedBy` on a non-deprecated value or pointing to a non-canonical value, `replacedByCategory` outside `type`, on a non-deprecated value or pointing to a non-canonical category, `noReplacement` outside the broad types, on a non-deprecated value or without a reason, a `broader` target that is missing/non-canonical/self/cyclic, or a `page` on a non-canonical value or outside experiences |
 | Public pages | a registry `page` disagrees with `data/experiences.ts` (slug or count) |
 | `EXPERIENCE_GROUP_CONFIG` | a non-canonical (unregistered, proposed, deprecated) experience is listed, a canonical experience is missing, or one is in several groups |
+| Broad types | the broad type set differs from the owner table above, a canonical broad type has no `pendingDecision`, or a deprecated one has another replacement than the table or keeps its `pendingDecision` |
 | Aliases | an alias key shadows a registered key, an alias targets a non-canonical value, or a tag alias kind is not `equivalent`/`implies` |
 | Owner invariants | `french-colonial` does not imply `french-colonial-era`; any alias targets `french-influence`; the sibling pairs above become aliased, nested or replaced, or stop being canonical; `temple-visit` is not replaced by `religious-site-visit` |
 | Recognition side-car | a record points to an unknown location slug |
