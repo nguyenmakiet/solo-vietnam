@@ -12,7 +12,7 @@ export const sShapeRiceTerraces: Location = {
   address: "Thành Lâm, Bá Thước, Thanh Hóa",
   type: ["rice-fields"],
   categories: ["iconic", "nature"],
-  experiences: ["photography", "walking-tour"],
+  experiences: ["photography"],
   tags: ["🌾 S-Shaped Paddy", "📸 Iconic Viewpoint", "🌅 Sunset Spot", "🏞️ Pù Luông Highlight"],
   bestTime: "During peak season, aim for around 8-9 AM or 4-5 PM specifically - these windows avoid the worst crowds and traffic, and give enough open space to photograph the curve without other visitors in frame. Golden hour light (especially the afternoon window) also catches the winding road and surrounding limestone slopes best; midday light is flat and far less photogenic",
   bestMonths: [5, 6, 9, 10],

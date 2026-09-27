@@ -12,7 +12,7 @@ export const canGioMonkeyIsland: Location = {
   address: "Đảo Khỉ, Lý Nhơn, Cần Giờ, TP. Hồ Chí Minh",
   type: ["island"],
   categories: ["nature"],
-  experiences: ["wildlife", "boat-tour", "photography", "culture", "history"],
+  experiences: ["wildlife", "boat-tour", "history"],
   tags: ["🐒 Wild Monkeys", "🌿 Mangrove Forest", "🌊 UNESCO Biosphere"],
   bestTime: "Nov - Apr (dry season; more comfortable and better boat conditions)",
   bestMonths: [1, 2, 3, 4, 11, 12],

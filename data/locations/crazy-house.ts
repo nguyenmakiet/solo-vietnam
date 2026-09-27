@@ -12,7 +12,7 @@ export const crazyHouse: Location = {
   address: "3 Huỳnh Thúc Kháng, Đà Lạt, Lâm Đồng",
   type: ["building"],
   categories: ["architecture"],
-  experiences: ["photography", "walking-tour", "culture"],
+  experiences: ["photography"],
   tags: ["🏠 Gaudí-Style Architecture", "🎨 Art & Design", "🏨 Functioning Guesthouse"],
   bestTime: "Sep - Nov (cool weather, fewer crowds - best). Avoid Dec - Feb (Tết) and Jun - Jul (summer holidays) when crowds peak.",
   bestMonths: [9, 10, 11],

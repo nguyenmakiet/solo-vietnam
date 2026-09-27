@@ -65,6 +65,22 @@ Relationships (existing, frozen):
 5. Changing the vocabulary (a new value, a status change, a new relationship) needs an explicit owner decision. Then update the
    registry, the frozen lists in `scripts/audit-taxonomy.ts`, this contract and CLAUDE.md together.
 
+### Experience definitions (owner-approved, after the Experience audit)
+
+Assign an experience only when the Location content supports it at this location - not for activities at other places,
+prohibited or hypothetical activities, or transport-only mentions.
+
+| Experience | Use when | Do not use when |
+|------------|----------|-----------------|
+| `hiking` | A day hike or trail walk | The effort is only a staircase or a climb to a viewpoint, however demanding (physical effort is a separate follow-up signal - CONTENT-BACKLOG.md §4) |
+| `trekking` | A demanding multi-hour or multi-day trek | The walk is only stairs, a climb to a viewpoint, or walking around a site. Applies to new assignments: the `trekking` values that existed at the Experience audit are kept by owner decision, even where they would not qualify today |
+| `walking-tour` | Walking is the primary way to explore a substantial area or route: old quarters, streets, villages, pedestrian areas, heritage routes, large heritage complexes (e.g. Huế Imperial City, Mỹ Sơn) | Visitors can merely walk around a single attraction |
+| `photography` | The location has photography-focused value significant enough to be a reason/activity for visiting: iconic viewpoints or compositions, sunrise/sunset, landscape, architecture, wildlife/bird, street/people photography, distinctive photo spots | The place is merely scenic or attractive, or tourists can normally take photos there |
+| `culture` | The traveler can actively experience living culture: ethnic village life, crafts, performances, festivals, local traditions | Only a theme or backdrop - category `culture` remains the broader editorial classification |
+| `homestay` | Staying in a homestay is an actual traveler experience offered at the location | The content only mentions homestays or accommodation options |
+
+`hiking` and `trekking` stay siblings: a location may have both when it offers both.
+
 ### `EXPERIENCE_GROUP_CONFIG` (destination "What to do")
 
 `data/destinations/types.ts`. It contains **canonical experiences only**, and every canonical experience appears in exactly one group.

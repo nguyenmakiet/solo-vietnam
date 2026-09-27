@@ -12,7 +12,7 @@ export const nhaPhaPrison: Location = {
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
   type: ["historic-site", "prison", "lighthouse"],
   categories: ["history", "coast"],
-  experiences: ["history", "culture", "photography"],
+  experiences: ["history", "photography"],
   tags: [
     "🏚️ French Colonial Complex",
     "🚩 1945 Uprising Site",

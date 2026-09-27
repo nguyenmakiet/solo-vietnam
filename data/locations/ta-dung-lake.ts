@@ -12,7 +12,7 @@ export const taDungLake: Location = {
   address: "Đắk Som, Đắk Glong, Đắk Nông",
   type: ["lake"],
   categories: ["hidden-gem", "nature"],
-  experiences: ["kayaking", "boat-tour", "photography", "camping", "wildlife"],
+  experiences: ["kayaking", "boat-tour", "photography", "camping", "wildlife", "trekking"],
   tags: ["⛵ Island-Dotted Lake", "🌲 National Park", "🛶 Kayaking & SUP"],
   bestTime: "Nov - Apr (dry season, clear skies, blue water - best for photography). Jul - Oct (rainy season, lake at full level, sea of clouds possible at 5-6 AM).",
   bestMonths: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],

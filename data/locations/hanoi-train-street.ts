@@ -12,7 +12,7 @@ export const hanoiTrainStreet: Location = {
   address: "Phùng Hưng, Hoàn Kiếm, Hà Nội",
   type: ["street"],
   categories: ["culture"],
-  experiences: ["photography", "culture", "walking-tour"],
+  experiences: ["photography", "walking-tour"],
   tags: ["🚂 Train Passes Meters Away", "📷 Iconic Photo Spot", "☕ Trackside Cafes", "🏘️ Residential Street"],
   bestTime: "Oct - Apr (cool dry season). Afternoons and evenings have more train frequency.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

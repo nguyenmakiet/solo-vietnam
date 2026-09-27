@@ -12,7 +12,7 @@ export const phongNhaCave: Location = {
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["cave"],
   categories: ["nature"],
-  experiences: ["caving", "boat-tour", "photography"],
+  experiences: ["caving", "boat-tour"],
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "🌊 Underground River"],
   bestTime: "Mar – Aug (dry season, Son River water is clearest and most turquoise; cave may close Sep-Nov due to flooding)",
   bestMonths: [3, 4, 5, 6, 7, 8],

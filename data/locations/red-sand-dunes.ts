@@ -12,7 +12,7 @@ export const redSandDunes: Location = {
   address: "Mũi Né, Phan Thiết, Bình Thuận",
   type: ["sand-dunes"],
   categories: ["nature"],
-  experiences: ["photography", "walking-tour"],
+  experiences: ["photography"],
   tags: ["🔴 Red Iron-Oxide Dunes", "🌅 Sunset Views", "🚶 Walking"],
   bestTime: "Sunrise (roughly 5-7 AM) and late afternoon into sunset (roughly 4-6 PM) are both good windows, with softer light and cooler temperatures than midday",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

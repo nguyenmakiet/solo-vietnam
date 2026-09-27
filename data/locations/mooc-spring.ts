@@ -12,7 +12,7 @@ export const moocSpring: Location = {
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["stream"],
   categories: ["nature"],
-  experiences: ["swimming", "trekking", "photography", "kayaking"],
+  experiences: ["swimming", "trekking", "kayaking", "hiking"],
   tags: ["💧 Natural Spring Pool", "🌿 Jungle"],
   bestTime: "Early morning, before 10 AM, for the clearest water and the fewest crowds",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],

@@ -12,7 +12,7 @@ export const notreDameCathedralSaigon: Location = {
   address: "01 Công xã Paris, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh",
   type: ["church"],
   categories: ["religion", "architecture", "history"],
-  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
+  experiences: ["history", "photography", "religious-site-visit"],
   tags: ["⛪ French Colonial Icon", "🏛️ 19th Century", "📷 District 1 Landmark", "🧱 Red Brick Facade", "catholicism", "french-colonial-era", "french-architecture"],
   bestTime: "Nov - Apr (dry season; exterior is photogenic year-round but rain makes the square uncomfortable). December for Christmas lights and decorations.",
   bestMonths: [11, 12, 1, 2, 3, 4],

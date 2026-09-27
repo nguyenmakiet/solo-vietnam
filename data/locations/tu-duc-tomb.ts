@@ -12,7 +12,7 @@ export const tuDucTomb: Location = {
   address: "Dương Xuân Thượng, Hương Thọ, Huế",
   type: ["tomb"],
   categories: ["history", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history", "photography"],
   tags: ["🌿 Garden Tomb", "📖 Poet Emperor", "🏡 Pavilion & Lake", "nguyen-dynasty"],
   bestTime: "Jan - Apr (dry season, mild post-rain weather in Jan-Feb, garden at its best). Avoid Sep - Dec - Huế's rainy season brings prolonged heavy rain that makes the mossy stone paths genuinely slippery.",
   bestMonths: [1, 2, 3, 4],

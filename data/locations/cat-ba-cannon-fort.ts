@@ -12,7 +12,7 @@ export const catBaCannonFort: Location = {
   address: "Cát Bà, Hải Phòng",
   type: ["fortress"],
   categories: ["history", "coast"],
-  experiences: ["history", "photography", "trekking"],
+  experiences: ["history", "trekking"],
   status: "closed",
   statusNote: "Closed to ticketed visits since around 2020. As of 2026, access routes have barriers and signage advising against informal entry, reportedly due to safety concerns over deteriorating structures. Check current status locally before visiting - the nearby Radio Tower viewpoint is a reliable alternative.",
   tags: ["💣 WWII Cannon Fort", "📸 Panoramic Views", "🏔️ Hilltop", "french-colonial-era"],

@@ -12,7 +12,7 @@ export const vinhTrungFields: Location = {
   address: "Vĩnh Trung, Tịnh Biên, An Giang",
   type: ["rice-fields"],
   categories: ["nature", "culture"],
-  experiences: ["photography", "walking-tour", "culture", "motorcycling"],
+  experiences: ["photography", "walking-tour", "motorcycling"],
   tags: ["🌴 Thốt Nốt Palm Fields", "🏛️ Sà-Đách-Tót Pagoda", "🏔️ Thất Sơn Backdrop", "khmer-culture"],
   bestTime: "Roughly 5-7 AM for the flood-water reflections and softest light",
   bestMonths: [8, 9, 10, 11],

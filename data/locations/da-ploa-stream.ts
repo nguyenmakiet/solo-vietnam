@@ -12,7 +12,7 @@ export const daPloaStream: Location = {
   address: "Đạ Ploa, Đạ Huoai, Lâm Đồng",
   type: ["stream", "waterfall", "forest"],
   categories: ["nature"],
-  experiences: ["trekking", "photography", "swimming", "motorcycling", "camping", "fishing"],
+  experiences: ["trekking", "swimming", "motorcycling", "camping", "fishing", "hiking"],
   tags: ["💦 Multi-tier Stream", "🌿 Remote Jungle"],
   bestTime: "Roughly December-May has less rain and the clearest, coolest water; June-October brings heavy rain and real flash-flood risk, so visit after rain has cleared rather than during it if you're there in the wetter months",
   bestMonths: [12, 1, 2, 3, 4, 5],

@@ -12,7 +12,7 @@ export const catTienNationalPark: Location = {
   address: "Tân Phú, Đồng Nai",
   type: ["national-park", "forest", "mountain"],
   categories: ["nature"],
-  experiences: ["trekking", "wildlife", "photography", "camping", "cycling", "boat-tour"],
+  experiences: ["trekking", "wildlife", "camping", "cycling", "boat-tour", "hiking"],
   tags: ["🌿 UNESCO Biosphere", "🦎 Wildlife Sanctuary", "🥾 Jungle Trek", "🦧 Primate Centre"],
   bestTime: "Nov - May (dry season, easiest trails). Dec - Mar is the sweet spot (cool, dry, clearest conditions). Jun - Oct rainy season has lusher forest and 20% off accommodation, but Bàu Sấu and longer treks become harder.",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],

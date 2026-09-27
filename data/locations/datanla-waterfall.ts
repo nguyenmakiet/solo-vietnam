@@ -12,7 +12,7 @@ export const datanlaWaterfall: Location = {
   address: "QL20, Đèo Prenn, Phường 3, Đà Lạt, Lâm Đồng",
   type: ["waterfall"],
   categories: ["nature"],
-  experiences: ["photography", "walking-tour", "trekking", "cable-car"],
+  experiences: ["trekking", "cable-car"],
   tags: ["💧 Multi-Tier Waterfall", "🎢 Alpine Coaster", "🌿 Forest Walk"],
   bestTime: "Nov - Apr (dry season - best for the outdoor activities and rides; roller coaster doesn't operate well in heavy rain). May - Aug rainy season gives more dramatic water volume but activities are limited.",
   bestMonths: [11, 12, 1, 2, 3, 4],

@@ -12,7 +12,7 @@ export const saoBeach: Location = {
   address: "Bãi Sao, An Thới, Phú Quốc, Kiên Giang",
   type: ["beach"],
   categories: ["nature", "coast"],
-  experiences: ["beach", "photography", "food", "kayaking", "swimming"],
+  experiences: ["beach", "food", "kayaking", "swimming"],
   tags: ["🏖️ White Sand Beach", "🌊 Clear Water", "🦞 Seafood"],
   bestTime: "Jun - Oct for the calmest, clearest water (sheltered from the southwest monsoon). Nov-Apr is when most international tourists visit Phú Quốc, but this is actually Bãi Sao's rougher season - waves and debris from the northeast monsoon are common.",
   bestMonths: [6, 7, 8, 9, 10],

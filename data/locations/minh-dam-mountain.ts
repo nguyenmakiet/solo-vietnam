@@ -12,7 +12,7 @@ export const minhDamMountain: Location = {
   address: "Phước Hải, Đất Đỏ, Bà Rịa - Vũng Tàu",
   type: ["mountain"],
   categories: ["nature", "history"],
-  experiences: ["trekking", "history", "photography", "caving", "hiking"],
+  experiences: ["trekking", "history", "caving", "hiking"],
   tags: ["⛰️ Resistance Base", "🥾 Forest Trek", "🏛️ National Historical Relic", "🐒 Wild Monkeys"],
   bestTime: "Roughly 7-11 AM, when the sun isn't too harsh - afternoons turn overcast and make the caves harder to navigate",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],

@@ -12,7 +12,7 @@ export const muiTroFishingVillage: Location = {
   address: "Near Cô Thạch, Tuy Phong, Bình Thuận",
   type: ["village", "beach"],
   categories: ["culture", "nature", "coast"],
-  experiences: ["photography", "camping", "beach", "walking-tour", "cycling"],
+  experiences: ["camping", "beach", "walking-tour", "cycling"],
   tags: ["🎣 Small Fishing Village", "🌊 Rocky Coast"],
   bestTime: "Roughly 5-8 AM is best for a walk and watching fishing boats return; midday (11 AM-1 PM) is harsh and hot but gives the clearest skies for photos; 4-6 PM has softer light and is good for swimming",
   bestMonths: [1, 2, 3, 4, 11, 12],

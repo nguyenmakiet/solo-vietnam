@@ -14,7 +14,7 @@ export const khoMuongCave: Location = {
   address: "Thành Sơn, Bá Thước, Thanh Hóa",
   type: ["cave"],
   categories: ["hidden-gem", "nature"],
-  experiences: ["photography", "walking-tour", "wildlife", "caving"],
+  experiences: ["photography", "wildlife", "caving"],
   tags: ["🕳️ Karst Cave", "🦇 Bat Cave", "🥾 Self-Guided", "🌿 Pù Luông Reserve"],
   bestTime: "Afternoon for the best photography light through the entrance arch",
   bestMonths: [11, 12, 1, 2, 3, 4],

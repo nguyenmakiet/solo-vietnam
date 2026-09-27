@@ -12,7 +12,7 @@ export const thoiLoiMountain: Location = {
   address: "An Hải, Lý Sơn, Quảng Ngãi",
   type: ["mountain"],
   categories: ["nature", "coast"],
-  experiences: ["photography", "trekking", "camping"],
+  experiences: ["photography", "trekking", "camping", "hiking"],
   tags: [
     "🌋 Extinct Volcano",
     "🏔️ Highest Point on Lý Sơn (169m)",

@@ -12,7 +12,7 @@ export const khoMuongVillage: Location = {
   address: "Thành Sơn, Bá Thước, Thanh Hóa",
   type: ["village"],
   categories: ["hidden-gem", "culture", "nature"],
-  experiences: ["culture", "photography", "walking-tour", "history", "homestay", "trekking"],
+  experiences: ["culture", "walking-tour", "history", "homestay", "trekking"],
   tags: ["🏞️ Remote Valley", "🏠 Thai Stilt Houses", "🌾 Rice Terraces", "🕳️ Cave Access", "thai-culture"],
   bestTime: "Roughly 6-9 AM shows the village at its best, while 3-4 PM is the recommended window specifically for visiting Hang Dơi (Kho Muong Cave)",
   bestMonths: [5, 6, 9, 10],

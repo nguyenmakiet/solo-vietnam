@@ -12,7 +12,7 @@ export const phuQuocNightMarket: Location = {
   address: "6 Bạch Đằng, Dương Đông, Phú Quốc, Kiên Giang (at the Bạch Đằng - Nguyễn Đình Chiểu junction)",
   type: ["market", "city"],
   categories: ["food"],
-  experiences: ["food", "markets", "nightlife", "walking-tour", "shopping"],
+  experiences: ["food", "markets", "nightlife", "shopping"],
   tags: ["🌙 Night Market", "🦞 Seafood", "🍢 Street Food"],
   bestTime: "7:00-10:00 PM for the liveliest atmosphere; stalls start setting up from 5:00 PM and things wind down by around 11:00 PM",
   bestMonths: [1, 2, 3, 4, 11, 12],

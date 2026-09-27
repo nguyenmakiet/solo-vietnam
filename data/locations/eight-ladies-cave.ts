@@ -12,7 +12,7 @@ export const eightLadiesCave: Location = {
   address: "Tân Trạch, Bố Trạch, Quảng Bình",
   type: ["cave"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography"],
+  experiences: ["history"],
   tags: ["🕯️ Vietnam War Memorial", "⛰️ Special National Historical Relic", "🛣️ Roadside Site", "vietnam-war"],
   bestTime: "Any time of day works, though many visitors combine a stop here with a morning or afternoon drive along Road 20 - Quyết Thắng",
   bestMonths: [3, 4, 5, 6, 7, 8],

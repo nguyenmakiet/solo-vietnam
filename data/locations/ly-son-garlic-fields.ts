@@ -12,7 +12,7 @@ export const lySonGarlicFields: Location = {
   address: "Lý Sơn Island (both Đảo Lớn and Đảo Bé), Quảng Ngãi",
   type: ["farmland"],
   categories: ["culture", "nature"],
-  experiences: ["photography", "culture"],
+  experiences: ["photography"],
   tags: [
     "🧄 Vietnam's Garlic Capital",
     "🌾 Volcanic Soil Farming",

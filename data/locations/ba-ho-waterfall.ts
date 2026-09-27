@@ -12,7 +12,7 @@ export const baHoWaterfall: Location = {
   address: "Thôn Vạn Thuận, Ninh Ích, Ninh Hoà, Khánh Hoà",
   type: ["waterfall"],
   categories: ["nature"],
-  experiences: ["trekking", "swimming", "photography", "wildlife", "kayaking"],
+  experiences: ["trekking", "swimming", "wildlife", "kayaking", "hiking"],
   tags: ["💧 Three Pools Waterfall", "🏊 Natural Swimming", "🥾 Jungle Trek"],
   bestTime: "Feb - Aug for the most reliably safe conditions (dry season, good swimming). Dec-Jan sometimes brings a striking jade-green water color locals call 'Tuyệt Tình Cốc,' but this sits at the tail end of flood season, so check conditions before planning around it. Avoid Sep-Nov, when flash floods are a real risk on the upper trail",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],

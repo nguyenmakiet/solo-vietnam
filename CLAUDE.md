@@ -160,7 +160,12 @@ The four taxonomy fields are a **frozen data contract** (Phase 2 freeze). Every 
 - `"nature"` is a category (the broad type is deprecated), NOT an experience - do not put it in `type` or `experiences`
 - `"viewpoint"` does not exist in any registry - for a scenic lookout use the landform type (`mountain`, `pass`, `cape`, `rock-formation`, `valley`...) plus `categories: ["nature"]`. Never use the deprecated broad types (`nature`, `landmark`...) for it
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
-- `hiking` and `trekking` are separate sibling concepts - a location may have both
+- `hiking` and `trekking` are separate sibling concepts - a location may have both. `hiking` = day hike / trail walk; `trekking` = demanding multi-hour or multi-day trek. Stairs, a climb to a viewpoint, or walking around a site is never `trekking`, and a staircase-heavy climb is not `hiking` either, however demanding
+- `walking-tour` only when walking is the primary way to explore a substantial area or route (old quarters, streets, villages, pedestrian areas, heritage routes, large heritage complexes) - not merely because visitors can walk around a single attraction
+- `photography` only when the location has photography-focused value that is a real reason to visit (iconic viewpoints/compositions, sunrise/sunset, landscape, architecture, wildlife/bird, street/people photography, distinctive photo spots) - not merely because the place is scenic or photos can be taken
+- `culture` (experience) only when the traveler can actively experience living culture (ethnic village life, crafts, performances, festivals, local traditions). `categories: ["culture"]` stays the broader theme
+- `homestay` only when staying in a homestay is an actual traveler experience offered at the location - not merely because homestays or accommodation are mentioned
+- Every experience must be supported by the location's own content - not activities at other places, prohibited or hypothetical activities, or transport-only mentions
 - The six broad types (`nature`, `cultural`, `history`, `heritage`, `landmark`, `attraction`) are `deprecated` - every location needs a specific place type; the theme goes in `categories`. E.g. `"history"` -> `categories: ["history"]` (and the `history` experience where it applies), with a specific place type such as `historic-site`, `citadel` or `museum`
 - Chùa → `pagoda` even when English content calls it a 'temple'. Classification follows the site's religious identity, not the generic English translation.
 - `"temple-visit"` is `deprecated` - use `"religious-site-visit"` for any active place of worship (the tradition goes in a religion tag such as `buddhism`)

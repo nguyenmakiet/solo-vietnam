@@ -31,7 +31,8 @@ export const LOCATION_EXPERIENCES = {
     group: "outdoor",
     status: "canonical",
     page: "trekking",
-    description: "Longer, demanding, multi-hour/multi-day route (R12). A sibling of 'hiking', not a supertype",
+    description:
+      "Demanding multi-hour or multi-day trek. Not for stairs, a climb to a viewpoint, or walking around a site (owner definition, supersedes R12). A sibling of 'hiking', not a supertype",
   },
   camping: { label: "Camping", group: "outdoor", status: "canonical", page: "camping" },
   caving: { label: "Caving", group: "outdoor", status: "canonical", page: "caving" },
@@ -47,7 +48,8 @@ export const LOCATION_EXPERIENCES = {
     label: "Culture",
     group: "culture",
     status: "canonical", page: "culture",
-    description: "Overlaps with a future 'culture' category (see AUDIT.md)",
+    description:
+      "The traveler can actively experience living culture: ethnic village life, crafts, performances, festivals, local traditions. Category 'culture' stays the broader editorial theme",
   },
   history: {
     label: "History",
@@ -55,14 +57,35 @@ export const LOCATION_EXPERIENCES = {
     status: "canonical", page: "history",
     description: "Overlaps with a future 'history' category (see AUDIT.md)",
   },
-  photography: { label: "Photography", group: "sightseeing", status: "canonical", page: "photography" },
+  photography: {
+    label: "Photography",
+    group: "sightseeing",
+    status: "canonical",
+    page: "photography",
+    description:
+      "Photography-focused value significant enough to be a reason to visit: iconic viewpoints/compositions, sunrise/sunset, landscape, architecture, wildlife/bird, street/people photography, distinctive photo spots. Not for a place that is merely scenic or where photos are normally taken",
+  },
   markets: { label: "Markets", group: "food-and-local-life", status: "canonical", page: "markets" },
   nightlife: { label: "Nightlife", group: "food-and-local-life", status: "canonical", page: "nightlife" },
-  "walking-tour": { label: "Walking Tour", group: "culture", status: "canonical", page: "walking-tours" },
+  "walking-tour": {
+    label: "Walking Tour",
+    group: "culture",
+    status: "canonical",
+    page: "walking-tours",
+    description:
+      "Walking is the primary way to explore a substantial area or route: old quarters, streets, villages, pedestrian areas, heritage routes, large heritage complexes. Not merely because visitors can walk around a single attraction",
+  },
   cycling: { label: "Cycling", group: "outdoor", status: "canonical", page: "cycling" },
   "boat-tour": { label: "Boat Tour", group: "water", status: "canonical", page: "boat-tours" },
   "cable-car": { label: "Cable Car", group: "sightseeing", status: "canonical", page: "cable-cars" },
-  homestay: { label: "Homestay", group: "culture", status: "canonical", page: "homestays" },
+  homestay: {
+    label: "Homestay",
+    group: "culture",
+    status: "canonical",
+    page: "homestays",
+    description:
+      "Staying in a homestay is an actual traveler experience offered at the location. Not merely because the content mentions homestays or accommodation options",
+  },
   wildlife: { label: "Wildlife", group: "outdoor", status: "canonical", page: "wildlife" },
   motorcycling: { label: "Motorcycling", group: "outdoor", status: "canonical", page: "motorcycling" },
   shopping: { label: "Shopping", group: "food-and-local-life", status: "canonical", page: "shopping" },
@@ -90,7 +113,8 @@ export const LOCATION_EXPERIENCES = {
     label: "Hiking",
     group: "outdoor",
     status: "canonical",
-    description: "Day hike / trail walk (R12). A sibling of 'trekking', not a subtype - a location may have both",
+    description:
+      "Day hike / trail walk (owner definition, R12). A sibling of 'trekking', not a subtype - a location may have both",
   },
   "religious-site-visit": {
     label: "Religious Site Visit",

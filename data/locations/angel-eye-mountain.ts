@@ -12,7 +12,7 @@ export const angelEyeMountain: Location = {
   address: "Bản Danh, Cao Chương, Trùng Khánh, Cao Bằng",
   type: ["mountain"],
   categories: ["nature"],
-  experiences: ["photography", "camping", "trekking", "motorcycling", "walking-tour"],
+  experiences: ["photography", "camping", "trekking", "motorcycling", "hiking"],
   tags: ["👁️ 50m Natural Rock Hole", "🌿 Thang Hen Valley"],
   bestTime: "Sep - Oct (golden rice fields, pleasant weather, and the rare chance to witness Thang Hen Lake temporarily draining within hours as water disappears into the karst beneath); Nov - Apr (dry season; meadow, grazing livestock, and clearer skies); Apr - Sep (rainy season; the valley floods into a lake for kayaking, SUP, and the nearby Nậm Trá Waterfall at its fullest)",
   bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],

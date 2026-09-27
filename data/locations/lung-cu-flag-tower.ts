@@ -12,7 +12,7 @@ export const lungCuFlagTower: Location = {
   address: "Lũng Cú, Đồng Văn, Hà Giang",
   type: ["monument"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography", "trekking"],
+  experiences: ["history", "trekking"],
   tags: ["🚩 Northernmost Point", "🏔️ Viewpoint", "🇻🇳 Landmark"],
   bestTime: "Sep - Nov (buckwheat flowers + clear skies) or Mar - May (spring blossoms, clear weather). Jun - Aug also good (dry, cool, green).",
   bestMonths: [3, 4, 5, 6, 7, 8, 9, 10, 11],

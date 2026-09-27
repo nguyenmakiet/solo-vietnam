@@ -12,7 +12,7 @@ export const dongVanMarket: Location = {
   address: "Thị trấn Đồng Văn, Đồng Văn, Hà Giang",
   type: ["market"],
   categories: ["culture", "food"],
-  experiences: ["culture", "markets", "photography", "food"],
+  experiences: ["culture", "markets", "food"],
   tags: ["🛍️ Sunday Market", "🏔️ Karst Plateau", "🎎 Ethnic Minority", "hmong-culture"],
   bestTime: "Sunday morning - arrive before 9 AM. Buckwheat flower season (Oct-Nov) adds a dramatic backdrop.",
   bestMonths: [1, 2, 3, 10, 11, 12],

@@ -12,7 +12,7 @@ export const cafeApartmentSaigon: Location = {
   address: "42 Nguyễn Huệ, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
   type: ["building"],
   categories: ["architecture", "food"],
-  experiences: ["food", "photography", "walking-tour", "shopping"],
+  experiences: ["food", "photography", "shopping"],
   tags: ["☕ Vertical Cafe Building", "📸 Instagram Spot", "🏙️ Walking Street", "🏚️ Mid-Century Architecture"],
   bestTime: "Year-round, since it's entirely indoors/covered. For the best atmosphere, evening (roughly 7-10 PM) is when the building and the surrounding street light up in colour - most visitors find it genuinely beautiful at this time rather than in daylight, when it can look fairly ordinary and worn. Weekends bring the liveliest crowds to the walking street below; weekday mornings and early afternoons are the quietest time to explore the building itself without crowds",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

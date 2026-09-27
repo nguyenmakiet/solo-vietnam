@@ -12,7 +12,7 @@ export const phongNhaBotanicGarden: Location = {
   address: "Sơn Trạch, Bố Trạch, Quảng Bình",
   type: ["forest"],
   categories: ["nature"],
-  experiences: ["trekking", "wildlife", "photography", "cycling", "swimming", "hiking"],
+  experiences: ["trekking", "wildlife", "cycling", "swimming", "hiking"],
   tags: ["🌿 Jungle Trails", "💦 Gió Waterfall", "🏊 Natural Pools"],
   bestTime: "March-August offers the safest trekking, emerald-green swimming pools, and the clearest water. September-February brings fuller waterfalls and lush forest but also slippery trails, stronger currents, and more leeches",
   bestMonths: [3, 4, 5, 6, 7, 8],

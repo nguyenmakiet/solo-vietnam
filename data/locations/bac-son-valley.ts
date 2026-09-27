@@ -12,7 +12,7 @@ export const bacSonValley: Location = {
   address: "Bắc Sơn, Lạng Sơn",
   type: ["valley"],
   categories: ["hidden-gem", "nature", "culture"],
-  experiences: ["photography", "trekking", "culture", "motorcycling", "hiking"],
+  experiences: ["photography", "trekking", "culture", "motorcycling"],
   tags: ["🌾 Rice Terraces", "🏔️ Karst Peaks", "🛵 Scenic Ride", "ethnic-minority-culture"],
   bestTime: "Jul - Oct (golden rice harvest, peak season). Feb - Apr (spring blossoms, Lồng Tồng festival). Nov - Jan for trekking in cool weather.",
   bestMonths: [2, 3, 4, 7, 8, 9, 10],

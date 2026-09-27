@@ -12,7 +12,7 @@ export const laNgauStream: Location = {
   address: "Tánh Linh, Bình Thuận",
   type: ["stream"],
   categories: ["hidden-gem", "nature"],
-  experiences: ["trekking", "photography", "camping", "wildlife", "swimming", "hiking"],
+  experiences: ["trekking", "camping", "wildlife", "swimming", "hiking"],
   tags: ["🌿 Jungle Stream", "💧 Natural Pools"],
   bestTime: "Dec - Apr (dry season, clear water, accessible trails). Best water conditions: 12:00 - 16:00 daily.",
   bestMonths: [1, 2, 3, 4, 12],

@@ -12,7 +12,7 @@ export const mocChauTeaHills: Location = {
   address: "Mộc Châu, Sơn La",
   type: ["farmland"],
   categories: ["nature"],
-  experiences: ["photography", "cycling", "motorcycling", "culture", "homestay"],
+  experiences: ["photography", "cycling", "motorcycling"],
   tags: ["🍵 Tea Plantations", "🛵 Motorbike Scenic", "🌿 Highland Agriculture"],
   bestTime: "Mar - Apr (new green shoots, mist on leaves) or Oct - Nov (combine with plum and ban blossoms)",
   bestMonths: [3, 4, 10, 11],

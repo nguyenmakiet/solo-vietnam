@@ -12,7 +12,7 @@ export const khaiDinhTomb: Location = {
   address: "Châu Chữ, Hương Thủy, Thừa Thiên Huế",
   type: ["tomb"],
   categories: ["history", "architecture"],
-  experiences: ["history", "culture", "photography"],
+  experiences: ["history", "photography"],
   tags: ["👑 Nguyễn Tomb", "🏯 French-Vietnamese Architecture", "✨ Mosaic Interior", "nguyen-dynasty", "french-colonial-era", "french-architecture"],
   bestTime: "Jan - Feb (most comfortable weather in Huế - ideal). Feb - Apr and Sep - Nov also good (dry season, best light for photography).",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],

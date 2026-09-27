@@ -12,7 +12,7 @@ export const elephantWaterfall: Location = {
   address: "Nam Ban, Lâm Hà, Lâm Đồng",
   type: ["waterfall"],
   categories: ["nature"],
-  experiences: ["photography"],
+  experiences: [],
   tags: ["🐘 Elephant Rock Formation", "💧 National Scenic Site", "🚫 Long-Term Closure", "📸 Viewpoint Photography"],
   status: "closed",
   statusNote: "Elephant Waterfall has been closed to direct visitor access since around 2020–2021 due to a tourism investment dispute. As of July 2026, there is still no official reopening date. Do not cross barriers or use unofficial trails to the falls or nearby caves.",
