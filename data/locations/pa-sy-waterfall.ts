@@ -13,7 +13,7 @@ export const paSyWaterfall: Location = {
   type: ["waterfall", "forest"],
   categories: ["nature"],
   experiences: ["trekking", "photography", "wildlife", "culture"],
-  tags: ["💧 Măng Đen Highlight", "🌿 Pine Forest Highlands", "🥾 Eco-Tourism Site"],
+  tags: ["💧 Măng Đen Highlight", "🌿 Pine Forest Highlands", "🥾 Eco-Tourism Site", "ethnic-minority-culture"],
   bestTime: "Morning (roughly 8-10 AM) has soft light through the forest canopy and lingering mist, cool and quiet; afternoon (roughly 2-4 PM) has gentler light and works well for a return trip before it gets dark and cold, which happens quickly in Măng Đen",
   bestMonths: [9, 10, 11, 12],
   entranceFee: "50,000 VND/adult, 25,000 VND/child, per Resolution 52/2026 effective 30 May 2026, with exemptions or discounts for some groups - a notable jump from the previous long-standing 20,000 VND flat rate, and some visitors have found the new price steep for what's on offer",
