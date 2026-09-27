@@ -13,7 +13,7 @@ export const hoiAnAncientTown: Location = {
   type: ["old-quarter", "town"],
   categories: ["culture", "history", "architecture", "food"],
   experiences: ["culture", "history", "food", "markets", "walking-tour", "photography", "nightlife", "shopping"],
-  tags: ["🏮 Lantern Town", "🎑 UNESCO Heritage", "🍜 Street Food"],
+  tags: ["🏮 Lantern Town", "🎑 UNESCO Heritage", "🍜 Street Food", "early-modern-vietnam"],
   bestTime: "Feb – Apr (dry season, Tết lantern season in Feb) or Oct – Nov",
   bestMonths: [2, 3, 4, 10, 11],
   entranceFee: "120,000 VND (covers 5 heritage site entries within the Old Town from a list of 22 sites)",

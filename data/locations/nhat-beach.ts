@@ -13,7 +13,7 @@ export const nhatBeach: Location = {
   type: ["beach"],
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "photography", "wildlife"],
-  tags: ["🌅 Best Sunset on Côn Đảo", "🪨 Tidal Rock Formations", "🌊 Tide-Dependent Beach", "🏆 Once Ranked Among Asia's Top Wild Beaches"],
+  tags: ["🌅 Best Sunset on Côn Đảo", "🪨 Tidal Rock Formations", "🌊 Tide-Dependent Beach", "🏆 Once Ranked Among Asia's Top Wild Beaches", "french-colonial-era"],
   bestTime: "Morning (roughly 6-9 AM) has gentle, pleasant sunlight and works well for sunrise; from around 5 PM onward is the classic sunset window as the sun softens; and if you're visiting Apr-Aug, midnight to 4 AM offers a chance at Milky Way stargazing on clear nights, away from town lights. Whatever time you pick, arrive as the tide is dropping if you want sand rather than just rock",
   bestMonths: [3, 4, 5, 6, 7, 8, 9, 10],
   entranceFee: "Free",

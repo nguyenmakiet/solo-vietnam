@@ -13,7 +13,7 @@ export const baOmLake: Location = {
   type: ["lake"],
   categories: ["culture", "religion", "nature"],
   experiences: ["culture", "history", "cycling", "religious-site-visit"],
-  tags: ["🌊 Ancient Khmer Lake", "🛕 Âng Pagoda", "🌳 400-Year-Old Trees", "khmer-culture"],
+  tags: ["🌊 Ancient Khmer Lake", "🛕 Âng Pagoda", "🌳 400-Year-Old Trees", "khmer-culture", "buddhism"],
   bestTime: "Nov - Apr (dry season; best for temple visits and cycling the lake circuit)",
   bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free",

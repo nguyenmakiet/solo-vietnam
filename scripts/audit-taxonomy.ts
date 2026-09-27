@@ -124,7 +124,7 @@ const FROZEN_NON_CANONICAL: Record<string, { proposed: string[]; deprecated: str
   type: { proposed: [], deprecated: ["attraction", "cultural", "heritage", "history", "landmark", "nature"] },
   categories: { proposed: [], deprecated: [] },
   experiences: { proposed: ["paragliding", "rock-climbing"], deprecated: ["temple-visit"] },
-  tags: { proposed: ["early-modern-vietnam", "french-influence", "independence-movement"], deprecated: [] },
+  tags: { proposed: ["french-influence"], deprecated: [] },
 }
 
 const isKeyLike = (v: string) => /^[a-z0-9]+(-[a-z0-9]+)*$/.test(v)

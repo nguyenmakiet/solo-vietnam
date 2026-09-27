@@ -13,7 +13,7 @@ export const pacBoHistoricSite: Location = {
   type: ["historic-site"],
   categories: ["history", "nature"],
   experiences: ["history", "trekking", "photography", "museum-visit"],
-  tags: ["🏛️ Hồ Chí Minh Revolutionary Base", "📖 Vietnam History", "🌿 Jungle Caves"],
+  tags: ["🏛️ Hồ Chí Minh Revolutionary Base", "📖 Vietnam History", "🌿 Jungle Caves", "independence-movement"],
   bestTime: "Morning light gives the clearest reflections on Lenin Stream before any afternoon haze builds up",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "25,000 VND/adult, 5,000 VND/child (under 1.2m) - a recently updated rate; older sources cite 20,000 VND adult / free under 10. Electric vehicle (2-way): around 20,000 VND (a combined ticket covering entrance plus the electric vehicle runs about 45,000 VND total).",

@@ -13,7 +13,7 @@ export const dongVanOldTown: Location = {
   type: ["town"],
   categories: ["culture", "architecture", "history"],
   experiences: ["culture", "history", "photography", "walking-tour", "food", "markets"],
-  tags: ["🏘️ 40 Ancient Stone Houses", "🔥 Weekend Bonfire & Cultural Night", "🛒 Sunday Minority Market", "🌙 Night Market"],
+  tags: ["🏘️ 40 Ancient Stone Houses", "🔥 Weekend Bonfire & Cultural Night", "🛒 Sunday Minority Market", "🌙 Night Market", "ethnic-minority-culture", "french-colonial-era"],
   bestTime: "Sep - Nov (buckwheat flowers, cooler air) or Mar - Apr (peach blossoms). Weekends for the cultural night events.",
   bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",

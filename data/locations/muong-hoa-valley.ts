@@ -13,7 +13,7 @@ export const muongHoaValley: Location = {
   type: ["valley"],
   categories: ["nature", "culture"],
   experiences: ["trekking", "photography", "culture", "homestay"],
-  tags: ["🌾 Rice Terraces"],
+  tags: ["🌾 Rice Terraces", "ethnic-minority-culture"],
   bestTime: "Late Aug - mid Sep (golden harvest, peak season). Mar - May (flooded mirror terraces). Dec - Feb for winter mist and occasional snow.",
   bestMonths: [3, 4, 5, 8, 9, 10, 12, 1, 2],
   entranceFee: "150,000 VND adults / 100,000 VND children 6-12 / Free under 6",

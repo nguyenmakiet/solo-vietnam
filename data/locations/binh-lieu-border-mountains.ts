@@ -13,7 +13,7 @@ export const binhLieuBorderMountains: Location = {
   type: ["mountain"],
   categories: ["hidden-gem", "nature", "culture"],
   experiences: ["trekking", "photography", "culture", "motorcycling"],
-  tags: ["🌾 Reed Flower Season", "🏔️ Border Ridge Trek", "🪨 Cột Mốc 1305", "👘 Ethnic Villages"],
+  tags: ["🌾 Reed Flower Season", "🏔️ Border Ridge Trek", "🪨 Cột Mốc 1305", "👘 Ethnic Villages", "ethnic-minority-culture"],
   bestTime: "Late Oct - mid Nov (reed flowers at peak bloom). Sep for golden rice terraces. Dec - Jan for frost and year-end festivals.",
   bestMonths: [9, 10, 11, 12],
   entranceFee: "Free (parking at Cột Mốc 1305 base: 50,000 VND)",

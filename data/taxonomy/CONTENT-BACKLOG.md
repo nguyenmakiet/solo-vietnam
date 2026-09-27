@@ -33,6 +33,9 @@ network policy (see PHASE2-LOG.md §6.5). Priority order once access exists:
 ## 3. Other content observations from the review
 
 - Stub records with no content: can-ti-bridge, ha-giang-city, mau-due-town, meo-vac-town, yen-minh-town.
+- quang-tri-ancient-citadel (Tags Phase 2): the content calls the walls "Vauban-style French colonial construction, first built in
+  1809 and expanded in 1837". The citadel was built under the Nguyễn, so the "French colonial construction" wording needs
+  verification and a content fix. Not changed in the taxonomy PR; `french-colonial-era` was not assigned.
 
 ## 4. Follow-up requirement: physical-effort / accessibility signal
 

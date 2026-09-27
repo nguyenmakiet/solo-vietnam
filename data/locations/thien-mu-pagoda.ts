@@ -13,7 +13,7 @@ export const thienMuPagoda: Location = {
   type: ["pagoda"],
   categories: ["religion", "history", "architecture"],
   experiences: ["history", "photography", "boat-tour", "religious-site-visit"],
-  tags: ["⛩️ Oldest Pagoda in Huế", "🏯 7-Tier Tower", "🌊 Perfume River", "buddhism"],
+  tags: ["⛩️ Oldest Pagoda in Huế", "🏯 7-Tier Tower", "🌊 Perfume River", "buddhism", "early-modern-vietnam"],
   bestTime: "Feb - Apr (cool, dry weather, clear skies, and the best overall conditions for sightseeing and photography); Sep - Nov (pleasant temperatures before the wettest part of the year). Jan - Mar coincides with the spring pilgrimage season and can be busier.",
   bestMonths: [2, 3, 4, 9, 10, 11],
   entranceFee: "Free",

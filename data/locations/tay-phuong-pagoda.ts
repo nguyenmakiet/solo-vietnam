@@ -13,7 +13,7 @@ export const tayPhuongPagoda: Location = {
   type: ["pagoda"],
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "religious-site-visit"],
-  tags: ["🛕 16th-Century Origins", "🏛️ National Special Relic", "🪨 Hilltop Pagoda", "📸 Architecture & Statues", "buddhism"],
+  tags: ["🛕 16th-Century Origins", "🏛️ National Special Relic", "🪨 Hilltop Pagoda", "📸 Architecture & Statues", "buddhism", "early-modern-vietnam"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat on the climb)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   entranceFee: "10,000 VND",

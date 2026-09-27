@@ -13,7 +13,7 @@ export const kheVanWaterfall: Location = {
   type: ["waterfall"],
   categories: ["nature", "culture"],
   experiences: ["swimming", "trekking", "photography", "culture"],
-  tags: ["💧 3-Tier Waterfall", "🏊 Natural Pool", "🌾 Ethnic Villages"],
+  tags: ["💧 3-Tier Waterfall", "🏊 Natural Pool", "🌾 Ethnic Villages", "ethnic-minority-culture"],
   bestTime: "Roughly 10 AM-1 PM tends to have the clearest skies and is well suited to swimming",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "Free entry - there's no admission ticket for the waterfall itself. Motorbike parking runs around 10,000 VND, mainly charged during Bình Liêu's peak tourist season.",

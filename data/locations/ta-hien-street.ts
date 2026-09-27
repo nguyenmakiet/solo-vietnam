@@ -13,7 +13,7 @@ export const taHienStreet: Location = {
   type: ["street", "city"],
   categories: ["food", "entertainment"],
   experiences: ["nightlife", "food", "walking-tour", "culture"],
-  tags: ["🍺 Bia Hơi Corner", "🌃 Night Street", "🗣️ Backpacker Hub", "🥘 Street Food"],
+  tags: ["🍺 Bia Hơi Corner", "🌃 Night Street", "🗣️ Backpacker Hub", "🥘 Street Food", "french-colonial-era"],
   bestTime: "Year-round; evenings from 6 PM onwards; weekend nights are peak atmosphere",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",

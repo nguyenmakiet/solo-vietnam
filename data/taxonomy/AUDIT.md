@@ -16,7 +16,7 @@ The registries in `data/taxonomy/` are the single source of truth for the four L
 | `type` | `types.ts` `LOCATION_TYPES` | 44 canonical (specific) · 6 deprecated (the broad types) | Each entry carries its theme colour (`theme`). `locationTheme` is derived from it. `type[0]` is the primary type (badge + colour) |
 | `categories` | `categories.ts` `LOCATION_CATEGORIES` | 11 canonical: 8 themes + 3 editorial badges | Not rendered in the UI |
 | `experiences` | `experiences.ts` `LOCATION_EXPERIENCES` | 28 canonical (20 page-backed, 8 without a page) · 2 proposed · 1 deprecated | `page` = the `/experiences/*` slug. `ExperienceValue` = the page-backed subset |
-| `tags` | `tags.ts` `LOCATION_TAGS` | 23 canonical · 3 proposed (Tags Phase 1) | Any unregistered tag string is a legacy display label (`legacy-display`). Semantics: [TAGS-DEFINITIONS.md](./TAGS-DEFINITIONS.md) |
+| `tags` | `tags.ts` `LOCATION_TAGS` | 25 canonical · 1 proposed (Tags Phase 2: `early-modern-vietnam`, `independence-movement` promoted) | Any unregistered tag string is a legacy display label (`legacy-display`). Semantics: [TAGS-DEFINITIONS.md](./TAGS-DEFINITIONS.md) |
 
 Official designations are not taxonomy values: they live in the side-car `recognitions.ts` (93 records, all `verified: false`).
 
@@ -25,7 +25,7 @@ Official designations are not taxonomy values: they live in the side-car `recogn
 | Status | Meaning | Values at freeze |
 |--------|---------|------------------|
 | `canonical` | Approved, stable. Allowed in Location data | every other registered value |
-| `proposed` | Registered and valid, intentionally pending an owner decision. Not in the canonical UI grouping (`EXPERIENCE_GROUP_CONFIG`) | experiences: `paragliding`, `rock-climbing`; tags: `french-influence`, `early-modern-vietnam`, `independence-movement` (not assigned to any Location) |
+| `proposed` | Registered and valid, intentionally pending an owner decision. Not in the canonical UI grouping (`EXPERIENCE_GROUP_CONFIG`) | experiences: `paragliding`, `rock-climbing`; tags: `french-influence` (not assigned to any Location). `early-modern-vietnam` and `independence-movement` were promoted to `canonical` in Tags Phase 2 |
 | `deprecated` | Not allowed in Location data. Exactly one of: `replacedBy` (same field), `replacedByCategory` (a type whose concept moved to categories) or `noReplacement` (a broad type with no equivalent; the reason) | experiences: `temple-visit` → `religious-site-visit`; type: the six broad types (table below) |
 | `legacy-display` | Tags only. A free-form label kept for display/compatibility (hero chips, `tags[0]` card subtitle). Never used for discovery | 754 distinct labels (827 uses) |
 
@@ -86,7 +86,8 @@ prohibited or hypothetical activities, or transport-only mentions.
 Full semantics and boundaries for every registered tag: [TAGS-DEFINITIONS.md](./TAGS-DEFINITIONS.md).
 
 - **T1 - Question.** A tag names the history, faith, people or foreign influence that is a reason to visit. It is not a place kind (`type`), a theme (`categories`), an activity (`experiences`) or a designation (`recognitions.ts`).
-- **T2 - Focus.** Focus, not background: being built in a period, standing in a region, or a passing mention does not qualify.
+- **T2 - Focus.** Focus, not background: being built in a period, standing in a region, or a passing mention does not qualify. For period tags, a secondary historical layer qualifies only when the content presents it as a distinct reason to visit. Tags Phase 2 exception, `french-colonial-era` only: it applies when French colonial history or surviving colonial-era heritage is a meaningful, explicitly documented part of the location's historical identity (TAGS-DEFINITIONS §7.1).
+- **Folk religion.** `folk-religion` follows the worship practised at the site, not the body that administers it (TAGS-DEFINITIONS §7.3).
 - **T3 - Content.** Supported by the location's own content.
 - **T4 - Independence.** No tag implies another: the French trio, `champa-heritage` / `cham-culture` / `hinduism`, and the ethnic tags are each decided on their own evidence.
 - **T5 - Coexistence.** Tags coexist with `type`, `categories` and `experiences` and replace none of them.
@@ -97,10 +98,10 @@ Period tags are consecutive, not overlapping:
 | Tag | Span |
 |---|---|
 | `medieval-vietnam` | 10th c.-1527 |
-| `early-modern-vietnam` (proposed) | 1527-1802 |
+| `early-modern-vietnam` | 1527-1802 |
 | `nguyen-dynasty` | 1802-1945, not the Nguyễn lords |
 | `french-colonial-era` | c. 1858-1954, overlaps `nguyen-dynasty` by design |
-| `independence-movement` (proposed) | centred on 1930-1954 |
+| `independence-movement` | centred on 1930-1954 |
 | `vietnam-war` | 1955-1975 |
 
 `champa-heritage` is the Champa civilisation, parallel to this sequence.
