@@ -154,7 +154,7 @@ The four taxonomy fields are a **frozen data contract** (Phase 2 freeze). Every 
 | `type` | `data/taxonomy/types.ts` -> `LOCATION_TYPES` (re-exported as `LocationType` from `data/location.ts`). `type[0]` is the primary type and sets the theme colour | Specific: `beach`, `island`, `bay`, `river`, `lake`, `mountain`, `forest`, `waterfall`, `cave`, `town`, `city`, `market`, `temple`, `pagoda`, `tomb`, `citadel`, `museum`, `communal-house`, `valley`, `rice-fields`, `national-park`, `bridge`, `building`, `village`, `fortress`, `prison`, `station`, `church`, `old-quarter`, `palace`, `pass`, `lighthouse`, `cape`, `street`, `historic-site`, `monument`, `theme-park`, `stream`, `rock-formation`, `farmland`, `cable-car`, `nature-reserve`, `grassland`, `sand-dunes`. Deprecated broad types (never use): `nature` -> category `nature`, `cultural` -> category `culture`, `history` -> category `history`, `heritage` / `landmark` / `attraction` -> no replacement (use a specific type) |
 | `categories` | `data/taxonomy/categories.ts` -> `LOCATION_CATEGORIES` (re-exported as `LocationCategory`) | Themes: `nature`, `culture`, `history`, `architecture`, `religion`, `food`, `coast`, `entertainment`. Editorial badges: `hidden-gem`, `must-see`, `iconic` |
 | `experiences` | `data/taxonomy/experiences.ts` -> `LOCATION_EXPERIENCES`. `ExperienceValue` (`data/experiences.ts`) = the page-backed subset | Canonical with an `/experiences/*` page: `beach`, `trekking`, `camping`, `caving`, `snorkeling`, `kayaking`, `food`, `culture`, `history`, `photography`, `markets`, `nightlife`, `walking-tour`, `cycling`, `boat-tour`, `cable-car`, `homestay`, `wildlife`, `motorcycling`, `shopping`. Canonical without a page: `swimming`, `surfing`, `fishing`, `kitesurfing`, `museum-visit`, `diving`, `hiking`, `religious-site-visit`. Proposed (valid, not in "What to do"): `paragliding`, `rock-climbing`. Deprecated (never use): `temple-visit` |
-| `tags` | `data/taxonomy/tags.ts` -> `LOCATION_TAGS` | Registered tags: `vietnam-war`, `french-influence`, `khmer-culture`, `cham-culture`, `champa-heritage`, `buddhism`, `medieval-vietnam`, `east-sea-sovereignty`, `folk-religion`, `ethnic-minority-culture`, `khmer-architecture`, `cao-dai`, `hmong-culture`, `tay-culture`, `thai-culture`, `catholicism`, `taoism`, `nguyen-dynasty`, `lolo-culture`, `hinduism`, `giay-culture`, `confucianism`, `french-colonial-era`, `french-architecture`. Any other tag string is a legacy display label (emoji + text), kept for display only |
+| `tags` | `data/taxonomy/tags.ts` -> `LOCATION_TAGS` | Registered tags: `vietnam-war`, `french-influence`, `khmer-culture`, `cham-culture`, `champa-heritage`, `buddhism`, `medieval-vietnam`, `east-sea-sovereignty`, `folk-religion`, `ethnic-minority-culture`, `khmer-architecture`, `cao-dai`, `hmong-culture`, `tay-culture`, `thai-culture`, `catholicism`, `taoism`, `nguyen-dynasty`, `lolo-culture`, `hinduism`, `giay-culture`, `confucianism`, `french-colonial-era`, `french-architecture`. Proposed (valid, do not assign until approved): `french-influence`, `early-modern-vietnam`, `independence-movement`. Any other tag string is a legacy display label (emoji + text), kept for display only |
 
 **Common mismatches to avoid:**
 - `"nature"` is a category (the broad type is deprecated), NOT an experience - do not put it in `type` or `experiences`
@@ -172,6 +172,15 @@ The four taxonomy fields are a **frozen data contract** (Phase 2 freeze). Every 
 - `champa-heritage` (historical Champa) and `cham-culture` (living Cham culture) are distinct. So are `french-colonial-era`, `french-influence` and `french-architecture` - never infer one from another
 - Append registered tags after the legacy display labels - `tags[0]` is the `/locations` card subtitle
 - Official designations (UNESCO, Ramsar, national relic...) go in `data/taxonomy/recognitions.ts`, not in `tags`
+- A registered tag names the history, faith, people or influence that is a **reason to visit** (focus, not background) and must be supported by the location's content. Definitions, boundaries and the T1-T6 / E1-E6 rules: `data/taxonomy/TAGS-DEFINITIONS.md`
+- Period tags do not overlap:
+  - `medieval-vietnam`: to 1527
+  - `early-modern-vietnam` (proposed): 1527-1802
+  - `nguyen-dynasty`: 1802-1945, not the Nguyễn lords
+  - `french-colonial-era`: c. 1858-1954, only where colonial history is the focus
+  - `independence-movement` (proposed): 1930-1954
+  - `vietnam-war`: 1955-1975 only
+- Ethnic tags: one tagged group is the draw → its tag; several groups, or a group without its own tag (Hà Nhì, Dao, K'Ho...) → `ethnic-minority-culture`; never for villages merely passed on the way; never invent a per-group tag
 
 **Before writing a new location file**, re-read `data/taxonomy/` (types, categories, experiences, tags) to confirm the current valid values, and run `npm run audit:taxonomy` - it must pass.
 
