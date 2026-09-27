@@ -13,7 +13,7 @@ export const fansipan: Location = {
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "cable-car", "photography"],
-  tags: ["🏔️ Rooftop of Indochina", "🚡 World Record Cable Car"],
+  tags: ["🏔️ Rooftop of Indochina", "🚡 World Record Cable Car", "buddhism"],
   bestTime: "Mar - Apr (rhododendron season). Sep (golden rice + cool air). Oct - Dec (cloud sea). Dec - Jan (possible snow). Avoid Jun-Aug rainy season.",
   bestMonths: [3, 4, 5, 9, 10, 11, 12, 1],
   entranceFee: "Cable car (weekdays/Sunday): 800,000 VND adult, 550,000 VND child (1m-1.4m). Cable car (Saturday + public holidays): 850,000 VND adult. Mountain train Mường Hoa (return): 180,000 VND. Summit train (up): 150,000 VND. Summit train (down): 120,000 VND. Trekking: free (licensed guide required).",

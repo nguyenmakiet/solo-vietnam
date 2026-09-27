@@ -16,9 +16,12 @@ import { toTaxonomyKey, type TaxonomyMeta, type TaxonomyStatus } from "./shared"
 // (owner-approved, Tags Phase 1). A tag names the history, faith, people or
 // influence that is a reason to visit - focus, not background - and is never
 // inferred from another tag.
+// Tags Phase 2: a secondary historical layer qualifies for a period tag only
+// when the content presents it as a distinct reason to visit; the one relaxed
+// threshold is french-colonial-era (see its description).
 
 export type LocationTagGroup =
-  | "historical-period"      // when: medieval-vietnam, nguyen-dynasty, french-colonial-era, vietnam-war, champa-heritage
+  | "historical-period"      // when: medieval-vietnam, early-modern-vietnam, nguyen-dynasty, french-colonial-era, independence-movement, vietnam-war, champa-heritage
   | "topic"                  // cross-period theme: east-sea-sovereignty
   | "religion"               // religious tradition
   | "ethnic-culture"         // identity of the people/culture that is the draw
@@ -95,7 +98,7 @@ export const LOCATION_TAGS = {
     status: "canonical",
     filterable: true,
     description:
-      "Indigenous Vietnamese worship outside the organised religions where it is part of the draw: Mother Goddess (Đạo Mẫu), Tứ Pháp, Hùng Kings and deified heroes, village guardian spirits, whale worship, Bà Chúa Xứ",
+      "Indigenous Vietnamese worship outside the organised religions where it is part of the draw: Mother Goddess (Đạo Mẫu), Tứ Pháp, Hùng Kings and deified heroes, village guardian spirits, whale worship, Bà Chúa Xứ. Decided by the worship practised at the site, not by which body administers it (Tags Phase 2)",
   },
   "ethnic-minority-culture": {
     label: "Ethnic Minority Culture",
@@ -199,7 +202,7 @@ export const LOCATION_TAGS = {
     status: "canonical",
     filterable: true,
     description:
-      "c. 1858-1954, only where colonial-period history is the focus (colonial institutions, defences, the colonial experience) - not merely built in the period or a French-era object in a place visited for something else. Does not imply french-influence or french-architecture. Not the independence movement against it (independence-movement)",
+      "c. 1858-1954, where French colonial history or surviving colonial-era heritage is a meaningful part of the location's historical identity, even when it is not the primary attraction, provided the connection is explicitly documented in the Location content (Tags Phase 2 rule, this tag only). Not a single origin sentence, a French name or discoverer, a destruction event, a modern replica, or heritage that no longer survives. Does not imply french-influence or french-architecture. Not the independence movement against it (independence-movement)",
   },
   "french-architecture": {
     label: "French Architecture",
@@ -210,18 +213,20 @@ export const LOCATION_TAGS = {
       "French / European colonial design in historic built form (Gothic churches, colonial civic buildings, villas, Art Deco, Franco-Vietnamese hybrids) where the design is part of the draw. Not modern replicas or theme-park recreations. Not equivalent to french-influence (culture) or french-colonial-era (period)",
   },
 
-  // ── Tags Phase 1 - owner-approved as proposed (TAGS-DEFINITIONS.md §4). Not assigned to any Location yet ──
+  // ── Tags Phase 1 - defined (TAGS-DEFINITIONS.md §4); promoted to canonical in Tags Phase 2 ──
   "early-modern-vietnam": {
     label: "Early Modern Vietnam (16th-18th c.)",
     group: "historical-period",
-    status: "proposed",
+    status: "canonical",
+    filterable: true,
     description:
       "1527-1802 only: Mạc dynasty, Revival Lê with the Trịnh lords, Nguyễn lords, Tây Sơn - where that era is the focus. Fills the gap between medieval-vietnam (to 1527) and nguyen-dynasty (from 1802); medieval-vietnam is not extended",
   },
   "independence-movement": {
     label: "Independence Movement (1930-1954)",
     group: "historical-period",
-    status: "proposed",
+    status: "canonical",
+    filterable: true,
     description:
       "Vietnamese independence / revolutionary movement centred on 1930-1954 (Hồ Chí Minh's life and leadership, the Việt Minh, the August Revolution, the French war) where it is the focus. Not a generic tag for all anti-colonial or revolutionary history outside this scope; not the Vietnam War (1955-1975)",
   },

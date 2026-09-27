@@ -1,6 +1,6 @@
 # Tags - semantic definitions & boundaries (Tags Phase 1, owner-approved)
 
-**Status: approved by the owner (Tags Phase 1). Encoded in `tags.ts` descriptions and statuses (Phase 1b).**
+**Status: approved by the owner (Tags Phase 1). Encoded in `tags.ts` descriptions and statuses (Phase 1b). Amended in Tags Phase 2 - see §7; where §2-§4 disagree with §7, §7 wins.**
 Baseline: `main` 7762cf0. No Location data, tag assignments, type, categories, experiences or URLs were changed in Phase 1 or Phase 1b. Legacy emoji labels are editorial display chips: they are not renamed, removed, normalised or migrated, and they are out of scope here.
 Evidence comes from the Phase 0 audit (TAGS-AUDIT.md) and the locations' own content.
 
@@ -78,13 +78,14 @@ Evidence comes from the Phase 0 audit (TAGS-AUDIT.md) and the locations' own con
 
 **`french-colonial-era` - French Colonial Era** (historical period)
 - **Means:** the period of French rule, c. 1858-1954, as history you visit.
+- **Phase 2 rule (supersedes the focus test below for this tag only, §7.1):** applies when French colonial history or surviving colonial-era heritage is a meaningful part of the location's historical identity, even when it is not the primary attraction, provided the connection is explicitly documented in the Location content.
 - **Qualifies** where colonial-period history is the focus:
   - colonial institutions: prisons (Hỏa Lò, Côn Đảo, Nhà Pha), post office, railway station
   - colonial defences
   - a site whose interpreted story is colonial administration or the colonial experience
 - **Does not qualify:**
   - Merely built or founded in the period.
-  - A French-era object in a place visited for something else (a French-built lighthouse on a sunrise cape, villa ruins on a cloud-sea mountain).
+  - ~~A French-era object in a place visited for something else~~ - superseded by §7.1: surviving colonial heritage documented in the content now qualifies (mui-dien lighthouse, mau-son-mountain villa ruins).
   - French *design* alone → `french-architecture`.
   - French *cultural* legacy alone → `french-influence`.
 - **Current (16):**
@@ -167,6 +168,7 @@ Rule for the whole group:
   - whale worship (cá Ông)
   - Bà Chúa Xứ
 - **Qualifies** where that worship is part of the draw.
+- **Decided by worship practice, not administration** (Tags Phase 2, §7.3): a site whose worship is folk religion qualifies even if a Buddhist or other body administers it (jade-emperor-pagoda).
 - **Does not qualify:** generic incense offerings at a Buddhist pagoda; legends without an active cult.
 - **Current:** 5.
 - **Phase 2 check:** communal houses whose draw includes guardian-spirit ritual.
@@ -350,3 +352,42 @@ Plus:
 4. Independence movement: **approved as `proposed`** `independence-movement`, centred on 1930-1954, not a generic anti-colonial tag, not assigned automatically.
 5. Phase 1b: registry descriptions and statuses, the audit's frozen lists, AUDIT.md, CLAUDE.md and this document. No Location data or tag assignments.
 6. Next: Phase 2, a location-by-location review against these rules, showing the change list for owner approval before anything is applied.
+
+## 7. Tags Phase 2 amendments (owner-approved)
+
+### 7.1 `french-colonial-era` - relaxed threshold (this tag only)
+`french-colonial-era` may apply when French colonial history or surviving colonial-era heritage is a **meaningful part of the location's historical identity**, even when it is not the primary attraction, provided the connection is **explicitly documented in the Location content**.
+- **Qualifies:**
+  - surviving colonial-era structures or ruins that the content presents as something to see;
+  - a colonial-era event the site is remembered for and commemorates on site.
+- **Does not qualify:**
+  - a single origin sentence ("since the colonial period");
+  - a French name or French discoverer;
+  - a destruction event by French forces;
+  - a modern replica;
+  - colonial heritage the content says no longer survives (quan-ba-heaven-gate) or that stands elsewhere.
+- T3 and T4 still apply. It is never inferred from `french-architecture` or `french-influence`.
+
+### 7.2 Other historical-period tags - secondary layers
+For `medieval-vietnam`, `early-modern-vietnam`, `nguyen-dynasty`, `independence-movement` and `vietnam-war`, the §7.1 threshold is **not** generalised.
+- A secondary historical layer qualifies only when the content presents it as a **distinct reason to visit**, not merely as historical context.
+- Examples decided in Phase 2:
+  - `vietnam-war`: no on long-bien-bridge, imperial-citadel-of-thang-long, imperial-city-hue and thien-mu-pagoda.
+  - `medieval-vietnam`: removed from am-tien-cave (Đinh-era legend as context; the stated draw is the cave and lake scenery).
+
+### 7.3 `folk-religion` - worship practice decides
+Applicability follows the worship practised at the site, not the body that administers it.
+
+### 7.4 Proposed tags promoted
+`early-modern-vietnam` and `independence-movement` are promoted from `proposed` to `canonical`. Only owner-approved Locations are assigned:
+- `early-modern-vietnam` (7): mac-dynasty-citadel, japanese-bridge, hoi-an-ancient-town, thien-mu-pagoda, keo-pagoda, tay-phuong-pagoda, hang-pagoda.
+- `independence-movement` (1): pac-bo-historic-site.
+
+Other §4 candidates stay unassigned until a later owner decision:
+- the weaker early-modern candidates: tran-quoc-pagoda, bich-dong-pagoda, ba-danh-pagoda, la-vang-sanctuary;
+- ho-chi-minh-childhood-home and the other independence candidates.
+
+`french-influence` stays `proposed`, with no assignments.
+
+### 7.5 Scope
+Non-active Locations are out of the Phase 2 migration. Legacy emoji labels are untouched.

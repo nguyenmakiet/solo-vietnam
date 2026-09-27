@@ -13,7 +13,7 @@ export const pongourWaterfall: Location = {
   type: ["waterfall"],
   categories: ["nature"],
   experiences: ["photography", "swimming", "culture"],
-  tags: ["💧 Seven-Tier Waterfall", "👑 Nam Thiên Đệ Nhất Thác", "🏕️ Picnic & Camping"],
+  tags: ["💧 Seven-Tier Waterfall", "👑 Nam Thiên Đệ Nhất Thác", "🏕️ Picnic & Camping", "ethnic-minority-culture"],
   bestTime: "Two distinct seasons, two different experiences. Rainy season (May-Nov): full roaring cascade, dramatic white water - best for the waterfall at its most powerful but expect muddy water and slippery paths. Dry season (Dec-Apr): clear turquoise water, safe for swimming and picnicking on the rock terraces - best for photography and relaxed exploration. Rằm tháng Giêng (first full moon of lunar new year) for the annual K'Ho festival.",
   bestMonths: [1, 2, 3, 7, 8, 9, 10],
   entranceFee: "40,000 VND/adult. Electric cart from ticket area to waterfall: 15,000 VND/person (optional - walking takes about 20 minutes).",
