@@ -12,7 +12,7 @@ export const conDaoPrison: Location = {
   address: "Côn Đảo, Bà Rịa - Vũng Tàu",
   type: ["prison"],
   categories: ["history"],
-  experiences: ["history", "culture", "walking-tour", "photography", "museum-visit"],
+  experiences: ["history", "museum-visit"],
   tags: ["🏛️ French Colonial Prison", "⛓️ Tiger Cages", "vietnam-war", "🕯️ Hàng Dương Cemetery", "french-colonial-era"],
   bestTime: "Dec - Apr (dry season, most comfortable for walking between sites). Mar - Sep also workable - light rain but calmer seas.",
   bestMonths: [12, 1, 2, 3, 4],

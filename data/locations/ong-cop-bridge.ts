@@ -12,7 +12,7 @@ export const ongCopBridge: Location = {
   address: "An Ninh Tây, Tuy An, Phú Yên",
   type: ["bridge"],
   categories: ["culture"],
-  experiences: ["photography", "culture", "motorcycling"],
+  experiences: ["photography", "motorcycling"],
   tags: [
     "🌉 Longest Wooden Bridge in Vietnam",
     "📸 Photography Spot",

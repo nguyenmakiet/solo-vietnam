@@ -12,7 +12,7 @@ export const plateRockReef: Location = {
   address: "An Ninh Đông, Tuy An, Phú Yên",
   type: ["rock-formation", "beach"],
   categories: ["nature", "coast"],
-  experiences: ["photography", "walking-tour", "beach"],
+  experiences: ["photography", "beach"],
   tags: ["🪨 Basalt Columns", "🌊 Coastal Rock", "🌅 Sunrise Spot"],
   bestTime: "Jan – Aug (dry season; avoid Sep – Dec when storms and swells make the reef inaccessible). Within a day, around 7:00 AM or 3:00 PM are commonly cited as the ideal windows for photography, avoiding the harsh midday sun; sunset (after 5 PM) is a bit late for the fullest golden light but still workable for check-in photos as the sky turns pink over the rocks",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],

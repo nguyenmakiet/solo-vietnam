@@ -12,7 +12,7 @@ export const buGiaMapNationalPark: Location = {
   address: "Bù Gia Mập, Bù Gia Mập, Bình Phước",
   type: ["national-park", "forest", "mountain"],
   categories: ["nature"],
-  experiences: ["trekking", "wildlife", "photography", "camping", "swimming"],
+  experiences: ["trekking", "wildlife", "camping", "swimming"],
   tags: ["🌿 Primary Rainforest", "🦧 Gibbon Habitat", "🥾 Beginner Trek"],
   bestTime: "Nov - Apr (dry season: clear trails, clean streams, far fewer leeches). Avoid May - Oct wet season.",
   bestMonths: [1, 2, 3, 4, 11, 12],

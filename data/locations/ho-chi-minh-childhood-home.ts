@@ -12,7 +12,7 @@ export const hoChiMinhChildhoodHome: Location = {
   address: "Làng Sen, Kim Liên, Nam Đàn, Nghệ An",
   type: ["historic-site"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history"],
   tags: ["🏛️ National Pilgrimage Site", "🌿 Historic Village", "🇻🇳 Vietnamese History"],
   bestTime: "Roughly 7-10 AM or 3:30-5 PM for the most pleasant temperatures and best light - the site also closes over a midday lunch break (around 11:30 AM-1:30 PM), so plan around it either way",
   bestMonths: [5, 6, 7, 1, 2, 3, 4, 10, 11, 12],

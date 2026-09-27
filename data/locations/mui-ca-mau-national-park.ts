@@ -12,7 +12,7 @@ export const muiCaMauNationalPark: Location = {
   address: "Đất Mũi, Ngọc Hiển, Cà Mau",
   type: ["national-park", "forest"],
   categories: ["nature"],
-  experiences: ["boat-tour", "wildlife", "photography", "walking-tour", "cycling"],
+  experiences: ["boat-tour", "wildlife", "photography", "cycling"],
   tags: ["🗺️ Southernmost Point of Vietnam", "🌿 Mangrove Forest", "🐦 Wildlife"],
   bestTime: "Dec - Apr (dry season; accessible by road and boat, clearest skies for sunrise/sunset)",
   bestMonths: [1, 2, 3, 4, 12],

@@ -12,7 +12,7 @@ export const paSyWaterfall: Location = {
   address: "Măng Cành, Kon Plông, Kon Tum",
   type: ["waterfall", "forest"],
   categories: ["nature"],
-  experiences: ["trekking", "photography", "wildlife"],
+  experiences: ["trekking", "photography", "wildlife", "culture"],
   tags: ["💧 Măng Đen Highlight", "🌿 Pine Forest Highlands", "🥾 Eco-Tourism Site"],
   bestTime: "Morning (roughly 8-10 AM) has soft light through the forest canopy and lingering mist, cool and quiet; afternoon (roughly 2-4 PM) has gentler light and works well for a return trip before it gets dark and cold, which happens quickly in Măng Đen",
   bestMonths: [9, 10, 11, 12],

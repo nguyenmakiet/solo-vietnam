@@ -12,7 +12,7 @@ export const phongNamValley: Location = {
   address: "Phong Nậm, Trùng Khánh, Cao Bằng",
   type: ["valley"],
   categories: ["hidden-gem", "nature"],
-  experiences: ["photography", "cycling", "culture"],
+  experiences: ["photography", "cycling"],
   tags: ["🌾 Golden Rice Fields", "🏞️ Quây Sơn River", "📸 Drone Photography", "🎎 Tày Villages"],
   bestTime: "Sep - Oct (rice harvest, golden fields) or Mar - May (spring flowers, cool air, local festivals)",
   bestMonths: [3, 4, 5, 9, 10],

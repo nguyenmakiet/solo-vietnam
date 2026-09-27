@@ -12,7 +12,7 @@ export const taPaFields: Location = {
   address: "Núi Tô, Tri Tôn, An Giang",
   type: ["rice-fields"],
   categories: ["nature", "culture"],
-  experiences: ["photography", "cycling", "motorcycling", "culture", "walking-tour"],
+  experiences: ["photography", "cycling", "motorcycling", "walking-tour"],
   tags: ["🌾 Terraced Rice Fields", "🛕 Khmer Culture", "🌴 Twin Sugar Palms", "khmer-culture"],
   bestTime: "Before 9:30 AM or after 3 PM to avoid harsh sun",
   bestMonths: [7, 8, 9, 10, 11],

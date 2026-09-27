@@ -12,7 +12,7 @@ export const templeOfLiterature: Location = {
   address: "Quốc Tử Giám, Đống Đa, Hà Nội",
   type: ["temple"],
   categories: ["history", "culture", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "religious-site-visit"],
+  experiences: ["history", "culture", "religious-site-visit"],
   tags: ["🏛️ Vietnam's First University", "📸 Architecture", "🇻🇳 National Heritage", "🎓 Confucian Temple", "medieval-vietnam", "confucianism"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat and rain)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

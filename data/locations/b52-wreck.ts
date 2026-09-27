@@ -12,7 +12,7 @@ export const b52Wreck: Location = {
   address: "Ngõ 55 Hoàng Hoa Thám, Ngọc Hà, Ba Đình, Hà Nội",
   type: ["historic-site"],
   categories: ["history"],
-  experiences: ["history", "photography", "walking-tour"],
+  experiences: ["history"],
   tags: ["✈️ B52 Wreckage", "🏛️ War History", "📷 Hidden Alley", "🇻🇳 Christmas Bombing 1972", "vietnam-war"],
   bestTime: "Year-round - covered site; morning light is better for photography",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

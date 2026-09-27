@@ -12,7 +12,7 @@ export const vietnamMilitaryHistoryMuseum: Location = {
   address: "Km6+500 Thang Long Boulevard, Tay Mo Ward, Nam Tu Liem District, Hanoi",
   type: ["museum"],
   categories: ["history"],
-  experiences: ["history", "photography", "culture", "museum-visit"],
+  experiences: ["history", "museum-visit"],
   tags: ["🪖 Military History", "🏛️ National Museum", "🇻🇳 Vietnamese History"],
   bestTime: "Year-round. Mornings on weekdays for smaller crowds.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

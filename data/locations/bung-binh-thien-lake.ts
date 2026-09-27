@@ -12,7 +12,7 @@ export const bungBinhThienLake: Location = {
   address: "Khánh Bình, An Phú, An Giang",
   type: ["lake", "river"],
   categories: ["nature", "culture"],
-  experiences: ["boat-tour", "photography", "wildlife", "culture", "fishing"],
+  experiences: ["boat-tour", "wildlife", "culture", "fishing"],
   tags: ["🌸 Lotus Lake", "cham-culture"],
   bestTime: "Roughly Aug - early Nov (flood season, following the lunar calendar so exact dates shift year to year) is when the lake is at its fullest and the lotus blooms. The Búng Bình Thiên flood-season culture festival runs August 30-31 every year. Outside flood season the lake shrinks substantially and the lotus disappears - still peaceful, but a noticeably smaller and less scenic version of the place",
   bestMonths: [8, 9, 10, 11],

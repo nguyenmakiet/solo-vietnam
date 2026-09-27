@@ -12,7 +12,7 @@ export const bidoupNuiBaNationalPark: Location = {
   address: "Đa Nhim, Lạc Dương, Lâm Đồng",
   type: ["national-park", "forest", "mountain"],
   categories: ["nature"],
-  experiences: ["trekking", "wildlife", "photography", "camping"],
+  experiences: ["trekking", "wildlife", "camping", "hiking"],
   tags: ["🌲 Cloud Forest", "🦅 Birdwatching", "🥾 Multi-day Trek"],
   bestTime: "Jan - Apr is specifically cited as the most beautiful window (dry, lush vegetation after the winter dormancy); the wider Nov - Apr dry season is also drier than the rest of the year. Avoid Sep - Oct in particular, when trails are heavily overgrown, leeches are most active, and sudden heavy rain is common",
   bestMonths: [1, 2, 3, 4, 11, 12],

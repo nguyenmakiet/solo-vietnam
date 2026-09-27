@@ -12,7 +12,7 @@ export const hangPagoda: Location = {
   address: "Thôn Đông, An Hải, Lý Sơn, Quảng Ngãi",
   type: ["pagoda"],
   categories: ["religion", "history", "coast"],
-  experiences: ["culture", "history", "photography", "religious-site-visit"],
+  experiences: ["history", "photography", "religious-site-visit"],
   tags: [
     "⛩️ 400-Year-Old Sea Cave Pagoda",
     "🪨 Natural Volcanic Cave",

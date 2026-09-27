@@ -12,7 +12,7 @@ export const anNhutRiceFields: Location = {
   address: "Xã An Nhứt, Long Điền, Bà Rịa - Vũng Tàu",
   type: ["rice-fields"],
   categories: ["nature", "food"],
-  experiences: ["photography", "food", "culture", "walking-tour", "cycling"],
+  experiences: ["photography", "food", "walking-tour", "cycling"],
   tags: ["🌾 Rice Fields", "📷 Golden Season", "🍜 Countryside Food Market", "🌅 Sunset Views"],
   bestTime: "Rice harvest seasons: late March to early April, and early August, when the fields turn golden. Weekend afternoons for the food market atmosphere.",
   bestMonths: [3, 4, 8, 9],

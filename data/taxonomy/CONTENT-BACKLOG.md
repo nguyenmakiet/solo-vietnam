@@ -33,3 +33,21 @@ network policy (see PHASE2-LOG.md §6.5). Priority order once access exists:
 ## 3. Other content observations from the review
 
 - Stub records with no content: can-ti-bridge, ha-giang-city, mau-due-town, meo-vac-town, yen-minh-town.
+
+## 4. Follow-up requirement: physical-effort / accessibility signal
+
+Owner decision (Experience audit): staircase-heavy attractions are neither `hiking` (day hike / trail walk) nor `trekking`
+(demanding multi-hour or multi-day trek), however physically demanding they are. That removes the only data signal that
+told visitors these places need real effort. The Location data/UX architecture needs a dedicated physical-effort /
+accessibility signal - **not an experience, and not added in the Experience PR** - able to say, for example:
+
+- many stairs (with a step count where the content has one)
+- significant climbing
+- physically demanding
+- appropriate footwear / clothing recommended
+
+Known cases from the audit (content already states the effort): hang-mua (~500 steps), ti-top-island (~400-450 steps),
+lung-cu-flag-tower (steps at ~1,500m, "genuinely demanding"), quan-ba-heaven-gate (~100 steps), marble-mountains (steep
+stone stairs), bac-son-valley (Nà Lay viewpoint, 1,200 steps). Other step-heavy sites seen in the content: ta-pa-temple
+(240 steps), long-son-pagoda (193), khai-dinh-tomb (127), quan-ba-twin-mountains (135), tay-phuong-pagoda (239),
+mac-dynasty-citadel (~100), fansipan (600 steps from the summit station).

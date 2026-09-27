@@ -12,7 +12,7 @@ export const dalatRailwayStation: Location = {
   address: "01 Quang Trung, Đà Lạt, Lâm Đồng",
   type: ["station"],
   categories: ["history", "architecture"],
-  experiences: ["history", "photography", "culture", "walking-tour"],
+  experiences: ["history"],
   tags: ["🚂 1938 French Colonial Station", "🏛️ Heritage Architecture", "🚃 Tourist Train", "french-colonial-era", "french-architecture"],
   bestTime: "Nov - May (dry season). Nov - Jan for cool air and tail-end rain views from the train window. Feb - May for wild cherry blossoms along the route.",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],

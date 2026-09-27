@@ -12,7 +12,7 @@ export const hoDynastyCitadel: Location = {
   address: "Vĩnh Tiến and Vĩnh Long communes, Tây Đô (formerly Vĩnh Lộc district), Thanh Hóa",
   type: ["citadel"],
   categories: ["history", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history", "photography", "walking-tour"],
   tags: ["🏯 UNESCO Heritage", "🪨 Stone Citadel", "👑 14th Century", "🌾 Rural Countryside", "medieval-vietnam"],
   bestTime: "Roughly 7-9 AM or 4-5:30 PM for the best light and coolest temperatures; if visiting in summer (May-Aug), stick to early morning or late afternoon specifically to avoid the harsh midday heat",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

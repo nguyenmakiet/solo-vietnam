@@ -12,7 +12,7 @@ export const mangLangChurch: Location = {
   address: "An Thạch, Tuy An, Phú Yên",
   type: ["church"],
   categories: ["religion", "history", "architecture"],
-  experiences: ["culture", "history", "photography", "religious-site-visit"],
+  experiences: ["history", "photography", "religious-site-visit"],
   tags: [
     "⛪ Gothic Architecture",
     "📖 Oldest Catholic Church in Vietnam",

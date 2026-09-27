@@ -12,7 +12,7 @@ export const nhoQueRiver: Location = {
   address: "Nho Quế River, Mèo Vạc, Hà Giang",
   type: ["river"],
   categories: ["nature"],
-  experiences: ["photography", "kayaking", "boat-tour", "hiking"],
+  experiences: ["photography", "kayaking", "boat-tour"],
   tags: ["🌊 Turquoise River", "🏔️ Canyon"],
   bestTime: "Sep-Nov (autumn) is generally considered the best window - the water is at its clearest, most vivid turquoise, skies are clear, and it coincides with buckwheat flower season. Winter (Dec-Feb) still has clear water and a misty, atmospheric quality, but is genuinely cold - pack warm layers. Spring (Mar-Apr) brings peach and plum blossoms, though occasional light rain can make the water slightly murky. Summer (May-Aug) is best avoided if possible - frequent sudden rain tends to make the river run faster and murkier, undercutting the main reason to visit",
   bestMonths: [3, 4, 5, 9, 10, 11, 12],

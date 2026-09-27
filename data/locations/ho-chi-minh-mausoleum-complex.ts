@@ -12,7 +12,7 @@ export const hoChiMinhMausoleumComplex: Location = {
   address: "Hùng Vương, Ba Đình, Hà Nội",
   type: ["tomb", "historic-site"],
   categories: ["history"],
-  experiences: ["history", "culture", "walking-tour", "photography", "museum-visit"],
+  experiences: ["history", "museum-visit"],
   status: "seasonally-closed",
   statusNote: "The mausoleum itself closes annually for maintenance - for 2026, this closure runs from September 4 through November 2, with the mausoleum reopening on November 3. The surrounding complex (Presidential Palace grounds, stilt house, museum) may have separate hours during this period; confirm current status before planning a visit, since exact closure dates are announced each year and can shift.",
   tags: ["🏛️ National Mausoleum", "🇻🇳 Uncle Ho", "⚓ Ba Dinh Square", "🌿 Presidential Stilt House"],

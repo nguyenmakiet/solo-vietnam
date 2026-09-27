@@ -12,7 +12,7 @@ export const chuaChanMountain: Location = {
   address: "Xuân Trường, Xuân Lộc, Đồng Nai",
   type: ["mountain", "pagoda"],
   categories: ["nature", "religion"],
-  experiences: ["trekking", "photography", "culture", "camping", "cable-car", "religious-site-visit", "hiking"],
+  experiences: ["trekking", "photography", "camping", "cable-car", "religious-site-visit", "hiking"],
   tags: ["⛰️ Southern Peak", "🚡 Cable Car & Summit Trek", "🛕 Cave Pagoda", "buddhism"],
   bestTime: "Nov - Apr (dry season; wet season trails are muddy and slippery)",
   bestMonths: [1, 2, 3, 4, 11, 12],

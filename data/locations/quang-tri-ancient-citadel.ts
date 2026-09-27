@@ -12,7 +12,7 @@ export const quangTriAncientCitadel: Location = {
   address: "Thành Cổ Quảng Trị, Quảng Trị city, Quảng Trị",
   type: ["citadel"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
+  experiences: ["history", "museum-visit"],
   tags: ["🏛️ War Citadel", "🕊️ 1972 Battle", "🌿 Sacred Ground", "vietnam-war"],
   bestTime: "Dec - May (after Tết through spring is often cited as the most comfortable window; dry season overall runs roughly Feb - Aug, avoiding both the hot, dry 'gió Lào' winds of early-mid summer and the flooding that affects the area Sep - Nov)",
   bestMonths: [12, 1, 2, 3, 4, 5, 6, 7, 8],

@@ -12,7 +12,7 @@ export const km0HaGiang: Location = {
   address: "Đường Nguyễn Trãi, Phường Minh Khai, Thành phố Hà Giang",
   type: ["monument"],
   categories: [],
-  experiences: ["photography", "motorcycling", "culture"],
+  experiences: ["photography", "motorcycling"],
   tags: ["📍 Km 0 Marker", "🏍️ Ha Giang Loop Start", "📷 Check-in Spot", "🏔️ Gateway to the Plateau"],
   bestTime: "Roughly 6-8 AM, before setting off north toward Đồng Văn",
   bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],

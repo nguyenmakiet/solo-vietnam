@@ -12,7 +12,7 @@ export const aPaChai: Location = {
   address: "Sín Thầu, Mường Nhé, Điện Biên",
   type: ["monument", "mountain"],
   categories: ["nature", "culture"],
-  experiences: ["trekking", "photography", "motorcycling", "culture", "hiking"],
+  experiences: ["trekking", "motorcycling", "hiking"],
   tags: ["🌐 Westernmost Point", "🏔️ Triple Border", "🥾 Remote Trek", "ethnic-minority-culture"],
   bestTime: "Oct - Apr (dry season; wet season May - Sep makes the trail muddy and dangerous underfoot); Sep-Oct for golden rice terraces en route, Nov-Dec for wild sunflower (dã quỳ), Jan-Mar for plum, peach, and bauhinia (hoa ban) blossoms along the Northwest highlands",
   bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],

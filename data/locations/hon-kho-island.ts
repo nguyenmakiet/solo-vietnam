@@ -12,7 +12,7 @@ export const honKhoIsland: Location = {
   address: "Hòn Khô, Nhơn Hải, Quy Nhơn, Bình Định",
   type: ["island", "beach"],
   categories: ["nature", "coast"],
-  experiences: ["beach", "snorkeling", "boat-tour", "photography", "swimming"],
+  experiences: ["beach", "snorkeling", "boat-tour", "photography", "swimming", "culture"],
   tags: ["🏝️ Day Trip Island", "🐠 Coral Reefs", "📷 Rocky Coastline", "🌊 SUP & Seaweed Season"],
   bestTime: "Feb - Sep (dry season, calm seas). May - Jul for rong mơ (golden seaweed) season. Feb - Mar lunar calendar for Cầu Ngư festival.",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],

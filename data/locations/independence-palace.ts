@@ -12,7 +12,7 @@ export const independencePalace: Location = {
   address: "135 Nam Kỳ Khởi Nghĩa, Bến Thành, Quận 1, Thành phố Hồ Chí Minh",
   type: ["palace"],
   categories: ["history", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history"],
   tags: ["🏛️ Fall of Saigon", "🪖 War History", "🏢 1960s Architecture", "🚗 Tank on Lawn", "vietnam-war"],
   bestTime: "Nov - Apr (dry season; outdoor grounds more comfortable; interior is air-conditioned year-round)",
   bestMonths: [11, 12, 1, 2, 3, 4],

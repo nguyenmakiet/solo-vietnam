@@ -13,7 +13,7 @@ export const phungHungMuralStreet: Location = {
   address: "Phùng Hưng, Hoàn Kiếm, Hà Nội",
   type: ["street"],
   categories: ["culture"],
-  experiences: ["photography", "walking-tour", "culture"],
+  experiences: ["photography", "walking-tour"],
   tags: ["🎨 Street Art", "🏯 Under the Railway", "🌸 Hanoi Hidden Gem"],
   bestTime: "Year-round; morning light (before 9 AM) is best for photography before the street gets busy",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

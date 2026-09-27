@@ -12,7 +12,7 @@ export const truongSonNationalCemetery: Location = {
   address: "Vĩnh Trường, Gio Linh, Quảng Trị",
   type: ["historic-site"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history"],
   tags: ["🪦 War Memorial", "🕊️ Ho Chi Minh Trail", "📸 Sobering Visit", "🇻🇳 National Memorial", "vietnam-war"],
   bestTime: "Morning, for cooler temperatures and better light for photography",
   bestMonths: [1, 2, 3, 4, 11, 12],

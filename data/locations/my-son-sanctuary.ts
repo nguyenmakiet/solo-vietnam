@@ -12,7 +12,7 @@ export const mySonSanctuary: Location = {
   address: "Duy Phú, Duy Xuyên, Quảng Nam",
   type: ["temple"],
   categories: ["history", "architecture", "culture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
+  experiences: ["history", "culture", "walking-tour", "museum-visit"],
   tags: ["🏛️ UNESCO Heritage", "🛕 Cham Temples", "🌿 Jungle Ruins", "champa-heritage", "hinduism"],
   bestTime: "Feb – Aug (dry season; the site floods and paths become muddy in the Oct – Jan wet season)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],

@@ -12,7 +12,7 @@ export const vietnamMuseumOfEthnology: Location = {
   address: "Nguyễn Văn Huyên, Cầu Giấy, Hà Nội",
   type: ["museum"],
   categories: ["culture"],
-  experiences: ["culture", "history", "photography", "walking-tour", "museum-visit"],
+  experiences: ["culture", "history", "museum-visit"],
   tags: ["🏛️ Best Museum in Vietnam", "🎎 54 Ethnic Groups", "🌿 Outdoor Village", "ethnic-minority-culture"],
   bestTime: "Oct - Apr (cool dry season; outdoor exhibits are best explored outside of summer heat and rain)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

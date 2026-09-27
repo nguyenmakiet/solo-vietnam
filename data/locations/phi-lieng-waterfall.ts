@@ -12,7 +12,7 @@ export const phiLiengWaterfall: Location = {
   address: "Phi Liêng, Đam Rông, Lâm Đồng",
   type: ["waterfall", "forest"],
   categories: ["nature"],
-  experiences: ["trekking", "photography", "swimming", "motorcycling", "camping"],
+  experiences: ["trekking", "swimming", "motorcycling", "camping"],
   tags: ["💦 7-Tier Waterfall", "🌿 Remote Forest Trek", "🏍️ Motorbike Trail"],
   bestTime: "Late Nov - Apr (dry season: manageable trails, clear streams, campable base). Rainy season (Jun-Nov) for maximum water volume but treacherous descent.",
   bestMonths: [11, 12, 1, 2, 3, 4],

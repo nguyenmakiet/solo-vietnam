@@ -12,7 +12,7 @@ export const japaneseBridge: Location = {
   address: "Nguyễn Thị Minh Khai, Hội An, Quảng Nam",
   type: ["bridge"],
   categories: ["history", "architecture", "culture"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history", "photography"],
   tags: ["🌉 Iconic Landmark", "🏯 400-Year-Old Bridge", "🎑 UNESCO Heritage"],
   bestTime: "Feb - Aug (broad dry season window); Oct - Nov also offers exceptional golden hour light if you're visiting outside that range",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 10, 11],

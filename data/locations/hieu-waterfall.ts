@@ -12,7 +12,7 @@ export const hieuWaterfall: Location = {
   address: "Hieu Village, Cổ Lũng, Bá Thước, Thanh Hóa",
   type: ["waterfall"],
   categories: ["nature"],
-  experiences: ["photography", "walking-tour", "swimming"],
+  experiences: ["photography", "swimming"],
   tags: ["💧 Multi-tier Waterfall", "🏊 Swimming Pools", "🌿 Forest Setting"],
   bestTime: "Jun – Oct (peak water flow, golden rice terraces in surrounding fields)",
   bestMonths: [6, 7, 8, 9, 10],

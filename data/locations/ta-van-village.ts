@@ -12,7 +12,7 @@ export const taVanVillage: Location = {
   address: "Tả Van, Sa Pa, Lào Cai",
   type: ["village"],
   categories: ["culture", "nature"],
-  experiences: ["homestay", "culture", "trekking", "photography"],
+  experiences: ["homestay", "culture", "trekking", "photography", "hiking"],
   tags: ["🏡 Homestay", "giay-culture", "🌾 Rice Terraces"],
   bestTime: "Sep – Oct (golden terraces, though exact harvest timing shifts a bit year to year - some sources cite Aug-Sep) or Mar – Apr (green fields, clear weather). Dec – Feb is a colder, quite different alternative - occasional peach blossoms and a small chance of snow, worth considering if you'd rather avoid the busier harvest and spring crowds",
   bestMonths: [3, 4, 9, 10, 12, 1, 2],

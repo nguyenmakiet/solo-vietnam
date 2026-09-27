@@ -12,7 +12,7 @@ export const frenchVillageBaNa: Location = {
   address: "Bà Nà Hills, Hoà Ninh, Hoà Vang, Đà Nẵng",
   type: ["theme-park"],
   categories: ["entertainment"],
-  experiences: ["photography", "walking-tour", "food"],
+  experiences: ["photography", "food"],
   tags: ["🏰 French Gothic Architecture", "🎡 Fantasy Park", "🍷 Debay Wine Cellar"],
   bestTime: "Mar – Sep (dry season, best for outdoor photography and festivals). Oct – Feb brings fog and cold - atmospheric but bring warm layers.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],

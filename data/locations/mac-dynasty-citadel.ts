@@ -12,7 +12,7 @@ export const macDynastyCitadel: Location = {
   address: "Tô Thị, Tam Thanh, Lạng Sơn, Vietnam",
   type: ["citadel"],
   categories: ["history", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history"],
   tags: ["🏰 16th-Century Citadel", "🏛️ Mạc Dynasty", "🧭 Off the Beaten Path"],
   bestTime: "Early morning to avoid crowds and get cleaner views over Lạng Sơn city from the top",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],

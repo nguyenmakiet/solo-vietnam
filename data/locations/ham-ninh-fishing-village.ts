@@ -12,7 +12,7 @@ export const hamNinhFishingVillage: Location = {
   address: "Hàm Ninh, Phú Quốc, Kiên Giang",
   type: ["village"],
   categories: ["food", "culture", "coast"],
-  experiences: ["culture", "food", "photography", "walking-tour", "markets"],
+  experiences: ["culture", "food", "walking-tour", "markets"],
   tags: ["🎣 Oldest Fishing Village", "🦀 Seafood", "🌅 Sunrise Spot", "🪵 Wooden Bridge"],
   bestTime: "Nov – Apr (dry season; early morning for freshest catch, sunrise, and best atmosphere)",
   bestMonths: [1, 2, 3, 4, 11, 12],

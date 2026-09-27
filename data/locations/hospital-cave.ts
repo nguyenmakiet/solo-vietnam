@@ -12,7 +12,7 @@ export const hospitalCave: Location = {
   address: "Cát Bà, Hải Phòng",
   type: ["cave"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history"],
   status: "temporarily-closed",
   statusNote: "As of 2026, both entrances to Hospital Cave are gated and closed to the public, and the interior is no longer accessible for visits.",
   tags: ["🏥 Wartime Underground Hospital", "vietnam-war", "🪨 Limestone Cave"],

@@ -12,7 +12,7 @@ export const cuChiTunnels: Location = {
   address: "Phú Hiệp, Củ Chi, Thành phố Hồ Chí Minh",
   type: ["historic-site"],
   categories: ["history"],
-  experiences: ["history", "culture", "photography", "walking-tour"],
+  experiences: ["history"],
   tags: ["🪖 War History", "🕳️ Underground Tunnels", "🌿 Jungle Warfare", "📷 Living Museum", "vietnam-war"],
   bestTime: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
   bestMonths: [11, 12, 1, 2, 3, 4],

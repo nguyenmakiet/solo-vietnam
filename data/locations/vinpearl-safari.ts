@@ -12,7 +12,7 @@ export const vinpearlSafari: Location = {
   address: "Gành Dầu, Phú Quốc, Kiên Giang",
   type: ["theme-park"],
   categories: ["entertainment", "nature"],
-  experiences: ["wildlife", "photography", "walking-tour"],
+  experiences: ["wildlife"],
   tags: ["🦁 Open Safari", "🦒 African Animals", "📸 Wildlife Photography", "🚌 Safari Bus"],
   bestTime: "Nov – Apr (dry season, animals most active in cooler temperatures). Visit early morning (9-11 AM) or late afternoon (from 3 PM) - midday heat drives animals into shade.",
   bestMonths: [1, 2, 3, 4, 11, 12],

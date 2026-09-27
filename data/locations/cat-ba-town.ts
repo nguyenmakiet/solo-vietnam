@@ -12,7 +12,7 @@ export const catBaTown: Location = {
   address: "Thị trấn Cát Bà, Cát Hải, Hải Phòng",
   type: ["town"],
   categories: ["food"],
-  experiences: ["food", "nightlife", "walking-tour", "photography", "markets"],
+  experiences: ["food", "nightlife", "walking-tour", "markets"],
   tags: ["🏘️ Island Town", "🦞 Seafood", "🌅 Harbour Front", "🌙 Cat Ba Nightlife"],
   bestTime: "Apr - Jun and Sep - Nov (shoulder seasons avoid summer crowds and winter cold; Cat Ba town is lively year-round)",
   bestMonths: [4, 5, 6, 9, 10, 11],

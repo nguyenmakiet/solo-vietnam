@@ -12,7 +12,7 @@ export const imperialCitadelOfThangLong: Location = {
   address: "19C Hoàng Diệu, Ba Đình, Hà Nội",
   type: ["citadel", "museum"],
   categories: ["history", "architecture"],
-  experiences: ["history", "culture", "photography", "walking-tour", "museum-visit"],
+  experiences: ["history", "walking-tour", "museum-visit"],
   tags: ["🏯 UNESCO World Heritage", "👑 1,000 Years of Imperial History", "🌙 Night Tour", "🔍 Archaeological Site", "medieval-vietnam"],
   bestTime: "Oct - Apr (cool dry season; avoid public holidays when crowds are largest)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

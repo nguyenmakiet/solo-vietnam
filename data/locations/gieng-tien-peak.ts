@@ -12,7 +12,7 @@ export const giengTienPeak: Location = {
   address: "Thôn Tây, An Vĩnh, Lý Sơn, Quảng Ngãi",
   type: ["mountain"],
   categories: ["nature", "coast"],
-  experiences: ["photography", "trekking"],
+  experiences: ["trekking"],
   status: "temporarily-closed",
   statusNote: "As of mid-2026, the path to the crater rim and the Đỉnh Liêm Tự area is temporarily closed due to landslide risk (cracks in the rock face). Confirm current access locally before visiting.",
   tags: [

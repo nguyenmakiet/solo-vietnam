@@ -12,7 +12,7 @@ export const cuaTuStream: Location = {
   address: "Xã Hoàng Nông, Đại Từ, Thái Nguyên",
   type: ["waterfall", "stream", "river", "forest"],
   categories: ["nature"],
-  experiences: ["trekking", "camping", "photography", "wildlife", "swimming"],
+  experiences: ["trekking", "camping", "wildlife", "swimming"],
   tags: ["🏞️ 9-Gate Stream", "🏊 Natural Pools", "🌿 Forest Trek"],
   bestTime: "Apr - Oct (water levels are best for swimming and the waterfalls are active; avoid during heavy flood season)",
   bestMonths: [4, 5, 6, 7, 8, 9, 10],

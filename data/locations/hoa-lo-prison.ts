@@ -12,7 +12,7 @@ export const hoaLoPrison: Location = {
   address: "1 Hỏa Lò, Trần Hưng Đạo, Hoàn Kiếm, Hà Nội",
   type: ["prison"],
   categories: ["must-see", "history"],
-  experiences: ["history", "culture", "walking-tour", "photography", "museum-visit"],
+  experiences: ["history", "museum-visit"],
   tags: ["⛓️ French Colonial Prison", "✈️ Hanoi Hilton", "🪖 POW History", "🏛️ Colonial Architecture", "vietnam-war", "french-colonial-era"],
   bestTime: "Oct – Apr (cooler, drier weather; more comfortable for walking between exhibits)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],

@@ -12,7 +12,7 @@ export const caiRangFloatingMarket: Location = {
   address: "Sông Cần Thơ, Quận Cái Răng, Cần Thơ",
   type: ["market"],
   categories: ["food", "culture"],
-  experiences: ["boat-tour", "food", "markets", "photography", "culture"],
+  experiences: ["boat-tour", "food", "markets", "culture"],
   tags: ["🛶 Floating Market", "🌅 Dawn Market", "🍜 Local Food"],
   bestTime: "Year-round (market operates daily regardless of season). May - Aug (dry season, stable water levels, peak tropical fruit season) is the most comfortable. Market most active 5:30-8:00 AM. Avoid 1st-2nd day of Tết and Tết Đoan Ngọ (5th day of 5th lunar month) when market closes or winds down significantly.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

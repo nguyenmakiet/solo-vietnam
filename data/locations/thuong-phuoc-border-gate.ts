@@ -12,7 +12,7 @@ export const thuongPhuocBorderGate: Location = {
   address: "Thường Phước 1, Hồng Ngự, Đồng Tháp",
   type: ["monument", "river"],
   categories: [],
-  experiences: ["history", "culture", "photography", "boat-tour", "cycling"],
+  experiences: ["history", "photography", "boat-tour", "cycling"],
   tags: ["🛂 Vietnam-Cambodia Border", "🌊 Mekong River Crossing", "🚤 River Border"],
   bestTime: "Nov – Apr (dry season; Mekong water levels lower and river crossings more predictable)",
   bestMonths: [1, 2, 3, 4, 11, 12],

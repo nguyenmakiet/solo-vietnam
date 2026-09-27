@@ -11,7 +11,7 @@ export const hmongKingPalace: Location = {
   lng: 105.2621945561199,
   address: "Sà Phìn, Đồng Văn, Hà Giang, Vietnam",
   type: ["palace"],
-  experiences: ["history", "culture", "photography", "walking-tour", "motorcycling"],
+  experiences: ["history", "photography", "motorcycling"],
   categories: ["history", "architecture", "culture"],
   tags: ["🏛️ Hmong Royal Residence", "📸 Architecture", "🧭 Đồng Văn Plateau", "🏍️ Ha Giang Loop", "hmong-culture", "french-architecture"],
   bestTime: "Sep - Nov (buckwheat flower season; best weather for the Ha Giang loop overall)",
