@@ -124,7 +124,7 @@ const FROZEN_NON_CANONICAL: Record<string, { proposed: string[]; deprecated: str
   type: { proposed: [], deprecated: ["attraction", "cultural", "heritage", "history", "landmark", "nature"] },
   categories: { proposed: [], deprecated: [] },
   experiences: { proposed: ["paragliding", "rock-climbing"], deprecated: ["temple-visit"] },
-  tags: { proposed: [], deprecated: [] },
+  tags: { proposed: ["early-modern-vietnam", "french-influence", "independence-movement"], deprecated: [] },
 }
 
 const isKeyLike = (v: string) => /^[a-z0-9]+(-[a-z0-9]+)*$/.test(v)
@@ -243,10 +243,14 @@ const siblingPairs: [string, string, Reg][] = [
   ["french-influence", "french-architecture", REGISTRIES.tags],
 ]
 const expAlias = LEGACY_EXPERIENCE_ALIASES as Record<string, string>
+// Owner decision (Tags Phase 1): french-influence moved to "proposed" (no Location
+// evidence yet). It stays registered and distinct; it must never be deprecated.
+const siblingMayBeProposed = new Set(["french-influence"])
 for (const [a, b, reg] of siblingPairs) {
   for (const [x, y] of [[a, b], [b, a]]) {
     const m = reg[x]
-    if (m?.status !== "canonical") problems.push(`"${x}" must stay canonical`)
+    const allowed = siblingMayBeProposed.has(x) ? ["canonical", "proposed"] : ["canonical"]
+    if (!allowed.includes(m?.status ?? "")) problems.push(`"${x}" must stay ${allowed.join(" or ")}`)
     if (m?.replacedBy === y || (m?.broader ?? []).includes(y) || expAlias[x] === y || tagAlias[x]?.tag === y)
       problems.push(`"${x}" and "${y}" are distinct concepts - no alias, broader or replacedBy between them`)
   }
