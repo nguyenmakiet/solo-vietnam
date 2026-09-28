@@ -16,6 +16,7 @@ import { baHonDamIslands } from "@/data/locations/ba-hon-dam-islands"
 import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
 import { baOmLake } from "@/data/locations/ba-om-lake"
 import { bacSonValley } from "@/data/locations/bac-son-valley"
+import { bachMaTemple } from "@/data/locations/bach-ma-temple"
 import { backBeachVungTau } from "@/data/locations/back-beach-vung-tau"
 import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
 import { baiMonBeach } from "@/data/locations/bai-mon-beach"
@@ -133,6 +134,7 @@ import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { khemBeach } from "@/data/locations/khem-beach"
 import { khoMuongCave } from "@/data/locations/kho-muong-cave"
 import { khoMuongVillage } from "@/data/locations/kho-muong-village"
+import { kimLienTemple } from "@/data/locations/kim-lien-temple"
 import { km0HaGiang } from "@/data/locations/km0-ha-giang"
 import { konTumWoodenChurch } from "@/data/locations/kon-tum-wooden-church"
 import { kyCoBeach } from "@/data/locations/ky-co-beach"
@@ -197,6 +199,7 @@ import { poNagarChamTowers } from "@/data/locations/po-nagar-cham-towers"
 import { pongourWaterfall } from "@/data/locations/pongour-waterfall"
 import { quanBaHeavenGate } from "@/data/locations/quan-ba-heaven-gate"
 import { quanBaTwinMountains } from "@/data/locations/quan-ba-twin-mountains"
+import { quanThanhTemple } from "@/data/locations/quan-thanh-temple"
 import { quangTriAncientCitadel } from "@/data/locations/quang-tri-ancient-citadel"
 import { rachVemFishingVillage } from "@/data/locations/rach-vem-fishing-village"
 import { radioTowerCatBa } from "@/data/locations/radio-tower-cat-ba"
@@ -248,6 +251,7 @@ import { vinpearlCableCar } from "@/data/locations/vinpearl-cable-car"
 import { vinpearlSafari } from "@/data/locations/vinpearl-safari"
 import { vinWondersPhuQuoc } from "@/data/locations/vinwonders-phu-quoc"
 import { vinhTrungFields } from "@/data/locations/vinh-trung-fields"
+import { voiPhucTemple } from "@/data/locations/voi-phuc-temple"
 import { warRemnantsMuseum } from "@/data/locations/war-remnants-museum"
 import { westLake } from "@/data/locations/west-lake"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
@@ -275,6 +279,7 @@ export const allLocations: Location[] = [
   baNaCableCar,
   baOmLake,
   bacSonValley,
+  bachMaTemple,
   backBeachVungTau,
   baiDinhPagoda,
   baiMonBeach,
@@ -392,6 +397,7 @@ export const allLocations: Location[] = [
   khemBeach,
   khoMuongCave,
   khoMuongVillage,
+  kimLienTemple,
   km0HaGiang,
   konTumWoodenChurch,
   kyCoBeach,
@@ -456,6 +462,7 @@ export const allLocations: Location[] = [
   pongourWaterfall,
   quanBaHeavenGate,
   quanBaTwinMountains,
+  quanThanhTemple,
   quangTriAncientCitadel,
   rachVemFishingVillage,
   radioTowerCatBa,
@@ -507,6 +514,7 @@ export const allLocations: Location[] = [
   vinpearlSafari,
   vinWondersPhuQuoc,
   vinhTrungFields,
+  voiPhucTemple,
   warRemnantsMuseum,
   westLake,
   whiteSandDunes,
