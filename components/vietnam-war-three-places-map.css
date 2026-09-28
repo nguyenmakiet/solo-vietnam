@@ -1,0 +1,387 @@
+/* ============================================================
+   vietnam-war-three-places-map.css — editorial map for
+   "The Vietnam War Through Three Places" (blog)
+   ============================================================ */
+
+.vwmap {
+  --vwmap-paper: #f6f1e6;
+  --vwmap-paper-edge: #e4d9c5;
+  --vwmap-land: #ebe3d2;
+  --vwmap-land-line: #d6c9b0;
+  --vwmap-ink: #2d2110;
+  --vwmap-ink-soft: #7a6a52;
+  --vwmap-ink-faint: #a89880;
+  --vwmap-up: #4f6d7e;   /* sky - Look Up */
+  --vwmap-down: #8a5a3a; /* earth - Look Down */
+  --vwmap-focus: #c8a96e;
+
+  position: relative;
+  margin: 32px 0 40px;
+  padding: 28px 16px 20px;
+  border: 1px solid var(--vwmap-paper-edge);
+  border-radius: 4px;
+  color: var(--vwmap-ink);
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
+  background-color: var(--vwmap-paper);
+  /* Paper grain + faint vignette, CSS only */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .18 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 50% 40%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 70%),
+    linear-gradient(180deg, rgba(122, 106, 82, 0) 70%, rgba(122, 106, 82, 0.06) 100%);
+  box-shadow: inset 0 0 0 6px var(--vwmap-paper), inset 0 0 0 7px rgba(168, 152, 128, 0.25);
+}
+
+/* ── Heading ── */
+.vwmap-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.vwmap-title {
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--vwmap-ink);
+  max-width: 18em;
+}
+.vwmap-subtitle {
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--vwmap-ink-soft);
+}
+
+/* ── Map stage ── */
+.vwmap-stage {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.vwmap-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.vwmap-province {
+  fill: var(--vwmap-land);
+  stroke: var(--vwmap-land-line);
+  stroke-width: 0.5;
+  stroke-linejoin: round;
+  transition: fill 0.25s ease, opacity 0.25s ease;
+}
+.vwmap-province.is-active {
+  fill: #dccfb6;
+}
+.vwmap-province.is-region {
+  opacity: 0.55;
+  stroke: var(--vwmap-ink-soft);
+  stroke-width: 0.8;
+  cursor: pointer;
+}
+.vwmap-province.is-region.is-active {
+  opacity: 0.85;
+}
+
+.vwmap-route {
+  fill: none;
+  stroke: var(--vwmap-ink-faint);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-dasharray: 0 8;
+}
+.vwmap-route-reveal {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 14;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.vwmap.is-visible .vwmap-route-reveal {
+  animation: vwmap-draw 1.8s 0.3s ease-out forwards;
+}
+@keyframes vwmap-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+.vwmap-leader {
+  stroke: var(--vwmap-ink-faint);
+  stroke-width: 0.75;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.8;
+  transition: stroke 0.2s ease;
+}
+.vwmap-leader.is-active {
+  stroke: var(--vwmap-ink);
+}
+
+/* ── Markers ── */
+.vwmap-place {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.vwmap.is-visible .vwmap-place { opacity: 1; }
+.vwmap.is-visible .vwmap-place-2 { transition-delay: 0.5s; }
+.vwmap.is-visible .vwmap-place-3 { transition-delay: 1s; }
+
+.vwmap-pin {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-tap-highlight-color: transparent;
+}
+.vwmap-pin-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--vwmap-ink);
+  border: 2px solid var(--vwmap-paper);
+  box-shadow: 0 0 0 1.5px var(--vwmap-ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.vwmap-pin-look-up .vwmap-pin-dot { background: var(--vwmap-up); box-shadow: 0 0 0 1.5px var(--vwmap-up); }
+.vwmap-pin-look-down .vwmap-pin-dot { background: var(--vwmap-down); box-shadow: 0 0 0 1.5px var(--vwmap-down); }
+.vwmap-pin-look-up-down .vwmap-pin-dot {
+  background: linear-gradient(180deg, var(--vwmap-up) 50%, var(--vwmap-down) 50%);
+  box-shadow: 0 0 0 1.5px var(--vwmap-ink-soft);
+}
+.vwmap-pin-region .vwmap-pin-dot {
+  /* Smaller pin so the highlighted province shape stays visible */
+  width: 9px;
+  height: 9px;
+  border-width: 1.5px;
+}
+.vwmap-place.is-active .vwmap-pin-dot {
+  transform: scale(1.25);
+}
+.vwmap-pin:focus { outline: none; }
+.vwmap-pin:focus-visible .vwmap-pin-dot {
+  outline: 2px solid var(--vwmap-focus);
+  outline-offset: 5px;
+}
+
+/* ── Labels ── */
+.vwmap-label {
+  position: absolute;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px 0 4px 2px;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+.vwmap-label-name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--vwmap-ink);
+}
+.vwmap-label-num {
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--vwmap-ink-faint);
+}
+.vwmap-label-dir {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vwmap-ink-soft);
+}
+.vwmap-place.is-active .vwmap-label-text { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
+.vwmap-dir-mark {
+  display: inline-flex;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.vwmap-dir-up { color: var(--vwmap-up); }
+.vwmap-dir-down { color: var(--vwmap-down); }
+
+/* ── Desktop tooltip (hover / keyboard focus only) ── */
+.vwmap-tooltip {
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .vwmap-tooltip {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 200px;
+    padding: 10px 12px;
+    background: #fffdf8;
+    border: 1px solid var(--vwmap-paper-edge);
+    border-top: 2px solid var(--vwmap-ink);
+    border-radius: 3px;
+    box-shadow: 0 6px 18px rgba(45, 33, 16, 0.12);
+    white-space: normal;
+    pointer-events: none;
+    animation: vwmap-fade 0.18s ease-out;
+  }
+  .vwmap-tooltip.is-above {
+    top: auto;
+    bottom: calc(100% + 8px);
+  }
+}
+@keyframes vwmap-fade {
+  from { opacity: 0; transform: translateY(3px); }
+}
+.vwmap-tooltip-name {
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--vwmap-ink);
+}
+.vwmap-tooltip-dir {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vwmap-ink-soft);
+}
+.vwmap-tooltip-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--vwmap-ink-soft);
+}
+
+.vwmap-north {
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--vwmap-ink-faint);
+}
+
+/* ── Text version / info cards ── */
+.vwmap .vwmap-cards {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.vwmap .vwmap-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  row-gap: 2px;
+  align-content: start;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--vwmap-paper-edge);
+  border-left: 2px solid transparent;
+  border-radius: 3px;
+  background: rgba(255, 253, 248, 0.6);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--vwmap-ink-soft);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.vwmap .vwmap-card.is-active {
+  border-left-color: var(--vwmap-ink);
+  background: #fffdf8;
+}
+.vwmap-card > span:not(.vwmap-card-num) {
+  grid-column: 2;
+}
+.vwmap-card-num {
+  grid-row: 1 / span 3;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--vwmap-ink-faint);
+  padding-top: 3px;
+}
+.vwmap-card-name {
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--vwmap-ink);
+}
+.vwmap-card-dir {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.vwmap-note {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--vwmap-ink-faint);
+}
+
+@media (min-width: 640px) {
+  .vwmap {
+    padding: 40px 32px 24px;
+  }
+  .vwmap-label-name { font-size: 15px; }
+  .vwmap-label-num { font-size: 10px; }
+  .vwmap-label-dir { font-size: 11px; }
+  .vwmap .vwmap-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .vwmap .vwmap-card {
+    grid-template-columns: 1fr;
+    border-left-width: 1px;
+    border-top: 2px solid transparent;
+  }
+  .vwmap .vwmap-card.is-active {
+    border-left-color: var(--vwmap-paper-edge);
+    border-top-color: var(--vwmap-ink);
+  }
+  .vwmap-card > span:not(.vwmap-card-num) { grid-column: 1; }
+  .vwmap-card-num { grid-row: auto; padding-top: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vwmap-route-reveal { stroke-dashoffset: 0; }
+  .vwmap.is-visible .vwmap-route-reveal { animation: none; }
+  .vwmap-place,
+  .vwmap.is-visible .vwmap-place { opacity: 1; transition: none; }
+  .vwmap-tooltip { animation: none; }
+}

@@ -8,6 +8,7 @@ import { heroUrl } from "@/lib/cloudinary"
 import BlogToc from "./BlogToc"
 import CloudImage from "@/components/CloudImage"
 import CloudVideo from "@/components/CloudVideo"
+import VietnamWarThreePlacesMap from "@/components/VietnamWarThreePlacesMap"
 import "../blog.css"
 import remarkGfm from "remark-gfm"
 
@@ -49,6 +50,8 @@ const components = {
   ),
   CloudImage,
   CloudVideo,
+  // Editorial map: <VietnamWarThreePlacesMap />
+  VietnamWarThreePlacesMap,
   h2: ({ children }: { children: React.ReactNode }) => {
     const text = typeof children === "string" ? children : ""
     const id = slugify(text)
