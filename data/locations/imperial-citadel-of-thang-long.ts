@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const imperialCitadelOfThangLong: Location = {
   slug: "imperial-citadel-of-thang-long",
   name: "Imperial Citadel of Thang Long",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-09-30",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.032608",
