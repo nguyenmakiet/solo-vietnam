@@ -10,14 +10,12 @@ import { LOCATION_CATEGORIES, isLocationCategory } from "@/data/taxonomy/categor
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
-type Region = "north" | "central" | "south" | "mekong" | "highlands"
+type Region = "north" | "central" | "south"
 
 const REGIONS: { value: Region; label: string; active: string; inactive: string }[] = [
   { value: "north",     label: "North",     active: "bg-blue-600 text-white border-blue-600",       inactive: "bg-white text-blue-600 border-blue-400 hover:bg-blue-50" },
   { value: "central",   label: "Central",   active: "bg-orange-500 text-white border-orange-500",   inactive: "bg-white text-orange-600 border-orange-400 hover:bg-orange-50" },
   { value: "south",     label: "South",     active: "bg-emerald-600 text-white border-emerald-600", inactive: "bg-white text-emerald-600 border-emerald-400 hover:bg-emerald-50" },
-  { value: "mekong",    label: "Mekong",    active: "bg-teal-600 text-white border-teal-600",       inactive: "bg-white text-teal-600 border-teal-400 hover:bg-teal-50" },
-  { value: "highlands", label: "Highlands", active: "bg-purple-600 text-white border-purple-600",   inactive: "bg-white text-purple-600 border-purple-400 hover:bg-purple-50" },
 ]
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
@@ -45,25 +43,23 @@ const PROVINCE_TO_REGION: Record<string, Region> = {
   "son-la": "north", "thai-binh": "north", "thai-nguyen": "north",
   "tuyen-quang": "north", "vinh-phuc": "north", "yen-bai": "north",
   "ha-nam": "north",
-  // Central (North Central + South Central coast)
+  // Central (North Central coast, South Central coast, Central Highlands)
   "thanh-hoa": "central", "nghe-an": "central", "ha-tinh": "central",
   "quang-binh": "central", "quang-tri": "central", "thua-thien-hue": "central", "hue": "central",
   "da-nang": "central", "quang-nam": "central", "quang-ngai": "central",
   "binh-dinh": "central", "phu-yen": "central", "khanh-hoa": "central",
   "ninh-thuan": "central", "binh-thuan": "central",
-  // Highlands
-  "kon-tum": "highlands", "gia-lai": "highlands",
-  "dak-lak": "highlands", "dak-nong": "highlands", "lam-dong": "highlands",
-  // South (mainland)
+  "kon-tum": "central", "gia-lai": "central",
+  "dak-lak": "central", "dak-nong": "central", "lam-dong": "central",
+  // South (Southeast + Mekong Delta)
   "ho-chi-minh-city": "south", "ba-ria-vung-tau": "south", "vung-tau": "south",
   "binh-duong": "south", "binh-phuoc": "south", "dong-nai": "south",
   "tay-ninh": "south",
-  // Mekong Delta
-  "long-an": "mekong", "an-giang": "mekong", "bac-lieu": "mekong",
-  "ben-tre": "mekong", "ca-mau": "mekong", "can-tho": "mekong",
-  "dong-thap": "mekong", "hau-giang": "mekong", "kien-giang": "mekong",
-  "tien-giang": "mekong", "tra-vinh": "mekong", "soc-trang": "mekong",
-  "vinh-long": "mekong",
+  "long-an": "south", "an-giang": "south", "bac-lieu": "south",
+  "ben-tre": "south", "ca-mau": "south", "can-tho": "south",
+  "dong-thap": "south", "hau-giang": "south", "kien-giang": "south",
+  "tien-giang": "south", "tra-vinh": "south", "soc-trang": "south",
+  "vinh-long": "south",
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -160,11 +156,23 @@ function getLocationRegion(loc: Location): Region | null {
   return null
 }
 
+// Old `?region=` values from before the 3-region split.
+const LEGACY_REGION_ALIASES: Record<string, Region> = {
+  mekong: "south",
+  highlands: "central",
+}
+
+function parseRegion(value: string | null): Region | null {
+  if (!value) return null
+  if (REGIONS.some((r) => r.value === value)) return value as Region
+  return LEGACY_REGION_ALIASES[value] ?? null
+}
+
 function parseUrlState() {
   if (typeof window === "undefined") return null
   const p = new URLSearchParams(window.location.search)
   return {
-    region: p.get("region") as Region | null,
+    region: parseRegion(p.get("region")),
     types: p.getAll("type"),
     experiences: p.getAll("experience"),
     categories: p.getAll("category"),
