@@ -28,6 +28,8 @@
  *
  * Usage: npm run audit:best-time
  *        npm run audit:best-time -- --md reports/best-time-audit.md
+ *        npm run audit:best-time -- --json reports/best-time-audit.json
+ *        add --all to include the NON_PUBLIC draft locations
  */
 
 import { writeFileSync, mkdirSync } from "fs"
@@ -196,7 +198,13 @@ function auditLocation(slug: string, bestTime: string, bestMonths: number[]): Ro
   return { slug, bestTime: text, bestMonths, shape, ranges, group, reasons, notes }
 }
 
+// Draft / internal locations that are not displayed publicly (owner decision).
+// Excluded from the public audit; pass --all to include them.
+const NON_PUBLIC = new Set(["can-ti-bridge", "ha-giang-city", "mau-due-town", "meo-vac-town", "yen-minh-town"])
+const includeAll = process.argv.includes("--all")
+
 const rows = allLocations
+  .filter((l) => includeAll || !NON_PUBLIC.has(l.slug))
   .map((l) => auditLocation(l.slug, l.bestTime ?? "", l.bestMonths ?? []))
   .sort((a, b) => a.slug.localeCompare(b.slug))
 
@@ -212,6 +220,14 @@ for (const g of ["EMPTY", "CONFLICT"] as Group[]) {
   for (const r of byGroup(g)) {
     console.log(`${g === "EMPTY" ? "∅" : "❌"} ${r.slug}\n   bestTime:   ${r.bestTime || "(empty)"}\n   bestMonths: ${fmt(r.bestMonths)}\n   ${r.reasons.join("\n   ")}\n`)
   }
+}
+
+const jsonIndex = process.argv.indexOf("--json")
+if (jsonIndex !== -1) {
+  const out = process.argv[jsonIndex + 1] ?? "reports/best-time-audit.json"
+  mkdirSync(dirname(out), { recursive: true })
+  writeFileSync(out, JSON.stringify(rows.map(({ ranges, ...r }) => r), null, 2))
+  console.log(`JSON written to ${out}`)
 }
 
 const mdIndex = process.argv.indexOf("--md")

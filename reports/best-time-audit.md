@@ -10,7 +10,7 @@ Heuristics, not verdicts: only explicit month names count; season words are neve
 
 | Group | Count | Action |
 |-------|-------|--------|
-| EMPTY | 5 | Research and fill bestMonths (and the text) from scratch. |
+| EMPTY | 0 | Research and fill bestMonths (and the text) from scratch. |
 | CONFLICT | 20 | Factual review: decide which side is right and fix the other. |
 | NEEDS_RESEARCH | 63 | Provenance unknown. Do not treat as verified - confirm the months from a source or firsthand notes. |
 | MULTI_SEASON | 39 | Under the "all worthwhile months" semantic, widen bestMonths if the extra season is genuinely worth visiting; keep the trade-off in bestSeasonNote. |
@@ -22,19 +22,13 @@ Heuristics, not verdicts: only explicit month names count; season words are neve
 | time | 62 |
 | mixed | 61 |
 | season-only | 1 |
-| empty | 5 |
+| empty | 0 |
 
-## EMPTY - bestMonths = [] (5)
+## EMPTY - bestMonths = [] (0)
 
 Research and fill bestMonths (and the text) from scratch.
 
-| Location | Shape | bestTime | bestMonths | Text months | Reasons | Notes |
-|---|---|---|---|---|---|---|
-| `can-ti-bridge` | empty | _(empty)_ | - | - | bestMonths and bestTime are both empty | - |
-| `ha-giang-city` | empty | _(empty)_ | - | - | bestMonths and bestTime are both empty | - |
-| `mau-due-town` | empty | _(empty)_ | - | - | bestMonths and bestTime are both empty | - |
-| `meo-vac-town` | empty | _(empty)_ | - | - | bestMonths and bestTime are both empty | - |
-| `yen-minh-town` | empty | _(empty)_ | - | - | bestMonths and bestTime are both empty | - |
+None.
 
 ## CONFLICT - bestMonths contradicts bestTime (20)
 
