@@ -18,6 +18,7 @@ import { baOmLake } from "@/data/locations/ba-om-lake"
 import { bacSonValley } from "@/data/locations/bac-son-valley"
 import { bachMaTemple } from "@/data/locations/bach-ma-temple"
 import { backBeachVungTau } from "@/data/locations/back-beach-vung-tau"
+import { baiDaiCamRanhBeach } from "@/data/locations/bai-dai-cam-ranh-beach"
 import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
 import { baiMonBeach } from "@/data/locations/bai-mon-beach"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
@@ -255,6 +256,7 @@ import { voiPhucTemple } from "@/data/locations/voi-phuc-temple"
 import { warRemnantsMuseum } from "@/data/locations/war-remnants-museum"
 import { westLake } from "@/data/locations/west-lake"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
+import { worldCoffeeMuseum } from "@/data/locations/world-coffee-museum"
 import { yTy } from "@/data/locations/y-ty"
 import { yavlyWaterfall } from "@/data/locations/yavly-waterfall"
 import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
@@ -281,6 +283,7 @@ export const allLocations: Location[] = [
   bacSonValley,
   bachMaTemple,
   backBeachVungTau,
+  baiDaiCamRanhBeach,
   baiDinhPagoda,
   baiMonBeach,
   baiTuLongBay,
@@ -518,6 +521,7 @@ export const allLocations: Location[] = [
   warRemnantsMuseum,
   westLake,
   whiteSandDunes,
+  worldCoffeeMuseum,
   yTy,
   yavlyWaterfall,
   yenMinhPineForest,
