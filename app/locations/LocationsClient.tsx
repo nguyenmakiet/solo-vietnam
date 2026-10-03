@@ -47,7 +47,7 @@ const PROVINCE_TO_REGION: Record<string, Region> = {
   "ha-nam": "north",
   // Central (North Central + South Central coast)
   "thanh-hoa": "central", "nghe-an": "central", "ha-tinh": "central",
-  "quang-binh": "central", "quang-tri": "central", "thua-thien-hue": "central",
+  "quang-binh": "central", "quang-tri": "central", "thua-thien-hue": "central", "hue": "central",
   "da-nang": "central", "quang-nam": "central", "quang-ngai": "central",
   "binh-dinh": "central", "phu-yen": "central", "khanh-hoa": "central",
   "ninh-thuan": "central", "binh-thuan": "central",
