@@ -47,6 +47,9 @@ export type Location = {
   entranceFee?: string
   openingHours?: string
   bestTime: string
+  // Every month the location is worth visiting / suitable to experience - a positive
+  // recommendation, not only the peak season. Months to avoid are left out.
+  // User-facing and used by filters + destination derivation. Audit: npm run audit:best-time
   bestMonths?: number[]
   mapUrl: string
   streetView?: { lat?: number | string; lng?: number | string; embedUrl?: string }
