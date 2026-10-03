@@ -20,8 +20,11 @@ export const duGiaWaterfall: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.92605491197045,105.1988164932612",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775796907667!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ01zSnFOY3c.!2m2!1d22.92540742711635!2d105.197746291903!3f190.82097550166682!4f-2.3425163707687915!5f0.7820865974627469", },
-  heroImage: heroUrl("du-gia-waterfall-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ha-giang-du-gia-waterfall_b9l5rz"),
+  gallery: [
+    "ha-giang-du-gia-waterfall_b9l5rz",
+    "ha-giang-du-gia-waterfall-2_d1jssu"
+  ],
   seoDescription:
     "Du Già Waterfall (Thác Ba Tiên) is a tiered cascade in Yên Minh district on the eastern Ha Giang Loop - known locally as the Three Fairies Waterfall, with two cliff jumping levels at 3.5m and 6m and cold clear water that makes it the best place to refresh after a dusty day on the loop.",
   tips: [
