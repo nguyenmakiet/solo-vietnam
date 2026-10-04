@@ -4,7 +4,7 @@
 export default function PhotoPlaceholder({ label = "Photo coming soon" }: { label?: string }) {
   return (
     <div className="absolute inset-0 flex items-center justify-center bg-paper">
-      <span className="text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-2">
+      <span className="px-2 text-center text-[10px] font-semibold tracking-[0.14em] uppercase text-ink-2">
         {label}
       </span>
     </div>

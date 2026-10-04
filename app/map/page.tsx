@@ -5,6 +5,9 @@ import Link from "next/link"
 import { activeLocations } from "@/data/all-locations"
 import { experiences } from "@/data/experiences"
 import { Location } from "@/data/location"
+import { typeDisplayLabel } from "@/data/taxonomy/types"
+import { dotClass } from "@/lib/category-dot"
+import PhotoPlaceholder from "@/components/PhotoPlaceholder"
 import "./map.css"
 
 const locationsWithCoords = activeLocations.filter((l) => {
@@ -30,17 +33,31 @@ const expCounts = experiences.reduce((acc, exp) => {
   return acc
 }, {} as Record<string, number>)
 
-const PIN_SVG = (active = false, highlighted = false, selected = false) => `
-  <svg width="22" height="30" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 20 12 20S24 21 24 12C24 5.373 18.627 0 12 0z"
-      fill="${selected ? "#e53e3e" : active ? "#e8c97e" : highlighted ? "#f0d898" : "#c8a96e"}"
-      stroke="#fff"
-      stroke-width="1.5"
-      opacity="1"
-    />
-    <circle cx="12" cy="12" r="4" fill="#fff" opacity="0.9"/>
-  </svg>
-`
+function primaryType(loc: Location) {
+  return Array.isArray(loc.type) ? loc.type[0] : loc.type
+}
+
+// Popup photo: same 600x400 crop as /locations cards; null = no photo yet
+function popupImageUrl(heroImage: string | undefined): string | null {
+  if (!heroImage || heroImage.includes("placeholder")) return null
+  return heroImage.replace("w_1200,h_630,c_fill", "w_600,h_400,c_fill")
+}
+
+function PopupImage({ src, alt }: { src: string | null; alt: string }) {
+  const [failed, setFailed] = useState(false)
+  if (!src || failed) return <PhotoPlaceholder />
+  return <img src={src} alt={alt} className="map-popup-thumb-img" onError={() => setFailed(true)} />
+}
+
+// Markers: teal dot; the selected one is a larger signal dot with an ink ring,
+// so selection reads by size and outline as well as colour (styles in map.css)
+const markerIcon = (L: typeof import("leaflet"), selected = false) =>
+  L.divIcon({
+    className: "",
+    html: `<span class="map-marker${selected ? " map-marker--selected" : ""}"></span>`,
+    iconSize: selected ? [22, 22] : [14, 14],
+    iconAnchor: selected ? [11, 11] : [7, 7],
+  })
 
 export default function MapPage() {
   const mapRef = useRef<any>(null)
@@ -82,7 +99,8 @@ export default function MapPage() {
         maxNativeZoom: 16,
       }).addTo(map)
 
-      L.control.zoom({ position: "bottomright" }).addTo(map)
+      // Top right, so the selected-location card at the bottom never covers it
+      L.control.zoom({ position: "topright" }).addTo(map)
       L.control.attribution({ position: "bottomright", prefix: "© Esri, HERE, Garmin · OSM" }).addTo(map)
 
       // The basemap tile provider bakes in its own (pre-2025-merger) province boundary
@@ -93,7 +111,7 @@ export default function MapPage() {
         .then((geojson) => {
           if (!mapRef.current) return
           L.geoJSON(geojson, {
-            style: { color: "#c8a96e", weight: 1, opacity: 0.6, fill: false },
+            style: { weight: 1, fill: false, className: "map-province-boundary" }, // colour in map.css
             interactive: false,
           }).addTo(map)
         })
@@ -127,20 +145,24 @@ export default function MapPage() {
     locationsWithCoords.forEach((loc) => {
       const [lat, lng] = getLatLng(loc)
 
-      const icon = L.divIcon({
-        className: "",
-        html: PIN_SVG(false, false),
-        iconSize: [22, 30],
-        iconAnchor: [11, 30],
-      })
+      const icon = markerIcon(L)
 
       const clickHandler = (e: any) => {
         e.originalEvent.stopPropagation()
         setSelectedLoc(loc)
       }
 
-      const marker = L.marker([lat, lng], { icon })
+      const marker = L.marker([lat, lng], { icon, title: loc.name })
         .on("click", clickHandler)
+        // Leaflet's own Enter handling only opens Leaflet popups; this page uses its
+        // own card, so keyboard users select a focused marker with Enter or Space
+        .on("keypress", (e: import("leaflet").LeafletKeyboardEvent) => {
+          const key = e.originalEvent.key
+          if (key === "Enter" || key === " ") {
+            e.originalEvent.preventDefault()
+            setSelectedLoc(loc)
+          }
+        })
 
       markersLayerRef.current.addLayer(marker)
       allMarkersRef.current.set(loc.slug, { marker, loc, clickHandler })
@@ -165,21 +187,21 @@ export default function MapPage() {
         marker.off("click")
         // Make marker element non-interactive via DOM
         const el = marker.getElement()
-        if (el) el.style.pointerEvents = "none"
+        if (el) {
+          el.style.pointerEvents = "none"
+          el.tabIndex = -1 // hidden markers leave the tab order
+        }
       } else {
         // Show and enable click
         marker.setOpacity(1)
         marker.off("click")
         marker.on("click", clickHandler)
+        marker.setIcon(markerIcon(L, isSelected))
         const el = marker.getElement()
-        if (el) el.style.pointerEvents = "auto"
-
-        marker.setIcon(L.divIcon({
-          className: "",
-          html: PIN_SVG(false, effectiveExp !== null && matchesFilter, isSelected), // ← thêm isSelected
-          iconSize: [22, 30],
-          iconAnchor: [11, 30],
-        }))
+        if (el) {
+          el.style.pointerEvents = "auto"
+          el.tabIndex = 0
+        }
         marker.setZIndexOffset(isSelected ? 1000 : 0)
       }
     })
@@ -221,21 +243,28 @@ export default function MapPage() {
     ? locationsWithCoords.filter(l => l.experiences.includes(effectiveExp as any)).length
     : locationsWithCoords.length
 
+  const activeLabel = effectiveExp ? experiences.find(e => e.value === effectiveExp)?.label : null
+
   return (
     <div className="map-page-wrap">
 
-      {/* Header */}
-      <div className="map-header">
-        <div className="map-header-left">
-          <Link href="/" className="map-header-back">← Home</Link>
-          <div className="map-header-divider" />
-          <span className="map-header-count">
-            {filteredCount} locations
-            {effectiveExp && ` · ${experiences.find(e => e.value === effectiveExp)?.label}`}
+      {/* Header: compact editorial context; the map stays dominant */}
+      <header className="map-header">
+        <nav className="map-header-crumb" aria-label="Breadcrumb">
+          <Link href="/">Home</Link>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Map</span>
+        </nav>
+        <div className="map-header-row">
+          <div>
+            <h1 className="map-header-title">Explore Vietnam</h1>
+            <p className="map-header-intro">Discover places across Vietnam by experience and location.</p>
+          </div>
+          <span className="map-header-count" aria-live="polite">
+            <strong>{filteredCount}</strong> locations{activeLabel && ` · ${activeLabel}`}
           </span>
         </div>
-        <h1 className="map-header-title">Explore Vietnam</h1>
-      </div>
+      </header>
 
       {/* Main body */}
       <div className="map-body">
@@ -244,77 +273,86 @@ export default function MapPage() {
         <div className="map-area">
           <div ref={mapContainerRef} className="map-container" />
 
-          {/* Popup */}
+          {/* Selected location */}
           {selectedLoc && (
             <div className="map-popup" onClick={(e) => e.stopPropagation()}>
               <Link href={`/locations/${selectedLoc.slug}`} className="map-popup-card-link">
                 <div className="map-popup-thumb">
-                  <img
-                    src={selectedLoc.heroImage || "/images/coming-soon.jpg"}
-                    alt={selectedLoc.name}
-                    className="map-popup-thumb-img"
-                    onError={(e) => { e.currentTarget.src = "/images/coming-soon.jpg" }}
-                  />
+                  <PopupImage key={selectedLoc.slug} src={popupImageUrl(selectedLoc.heroImage)} alt={selectedLoc.name} />
                 </div>
                 <div className="map-popup-body">
+                  <span className="ui-dot-label map-popup-type">
+                    <span className={dotClass(primaryType(selectedLoc))} aria-hidden="true" />
+                    {typeDisplayLabel(primaryType(selectedLoc))}
+                  </span>
                   <div className="map-popup-name">{selectedLoc.name}</div>
                   <div className="map-popup-province">{getProvinceLabel(selectedLoc)}</div>
-                  <div className="map-popup-footer">
-                    <span className="map-popup-link">View Location →</span>
-                    <button className="map-popup-close" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setSelectedLoc(null) }}>✕</button>
-                  </div>
+                  <span className="map-popup-link">View location →</span>
                 </div>
               </Link>
+              <button
+                className="map-popup-close"
+                aria-label="Close location card"
+                onClick={(e) => { e.stopPropagation(); setSelectedLoc(null) }}
+              >
+                ×
+              </button>
             </div>
           )}
         </div>
 
-        {/* Sidebar */}
-        <div className="map-sidebar">
+        {/* Browse by experience */}
+        <nav className="map-sidebar" aria-label="Browse by experience">
           <div className="map-sidebar-header">
             <div className="map-sidebar-eyebrow">Browse by</div>
             <div className="map-sidebar-title">Experience</div>
           </div>
 
-          {/* All */}
-          <button
-            className={`map-sidebar-item ${activeExp === null ? "active" : ""}`}
-            onClick={() => { setActiveExp(null); setSelectedLoc(null) }}
-            onMouseEnter={() => setHoveredExp(null)}
-            onMouseLeave={() => setHoveredExp(null)}
-          >
-            <div className="map-sidebar-item-left">
-              <span className="map-sidebar-item-label">All locations</span>
-            </div>
-            <span className="map-sidebar-item-count">{locationsWithCoords.length}</span>
-          </button>
+          <div className="map-sidebar-list">
+            {/* All */}
+            <button
+              className={`map-sidebar-item ${activeExp === null ? "active" : ""}`}
+              aria-pressed={activeExp === null}
+              onClick={() => { setActiveExp(null); setSelectedLoc(null) }}
+              onMouseEnter={() => setHoveredExp(null)}
+              onMouseLeave={() => setHoveredExp(null)}
+            >
+              <span className="map-sidebar-item-left">
+                <span className="ui-dot" aria-hidden="true" />
+                <span className="map-sidebar-item-label">All locations</span>
+              </span>
+              <span className="map-sidebar-item-count">{locationsWithCoords.length}</span>
+            </button>
 
-          {/* Experiences */}
-          {experiences.map((exp) => {
-            const count = expCounts[exp.value] ?? 0
-            if (count === 0) return null
-            const isActive = activeExp === exp.value
+            {/* Experiences */}
+            {experiences.map((exp) => {
+              const count = expCounts[exp.value] ?? 0
+              if (count === 0) return null
+              const isActive = activeExp === exp.value
 
-            return (
-              <button
-                key={exp.slug}
-                className={`map-sidebar-item ${isActive ? "active" : ""}`}
-                onClick={() => handleExpClick(exp.value)}
-                onMouseEnter={() => setHoveredExp(exp.value)}
-                onMouseLeave={() => setHoveredExp(null)}
-              >
-                <div className="map-sidebar-item-left">
-                  <span className="map-sidebar-item-label">{exp.label}</span>
-                </div>
-                <span className="map-sidebar-item-count">{count}</span>
-              </button>
-            )
-          })}
+              return (
+                <button
+                  key={exp.slug}
+                  className={`map-sidebar-item ${isActive ? "active" : ""}`}
+                  aria-pressed={isActive}
+                  onClick={() => handleExpClick(exp.value)}
+                  onMouseEnter={() => setHoveredExp(exp.value)}
+                  onMouseLeave={() => setHoveredExp(null)}
+                >
+                  <span className="map-sidebar-item-left">
+                    <span className={dotClass(exp.value)} aria-hidden="true" />
+                    <span className="map-sidebar-item-label">{exp.label}</span>
+                  </span>
+                  <span className="map-sidebar-item-count">{count}</span>
+                </button>
+              )
+            })}
+          </div>
 
           <div className="map-sidebar-footer">
             Hover to preview · Click to filter & zoom
           </div>
-        </div>
+        </nav>
       </div>
     </div>
   )

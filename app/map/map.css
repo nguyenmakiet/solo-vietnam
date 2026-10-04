@@ -1,66 +1,90 @@
 /* ============================================================
    map.css — soloinvietnam.com/map
+   Design tokens from app/globals.css. 1px borders, 2px radii,
+   no shadows, no gradients.
    ============================================================ */
 
 .map-page-wrap {
-  height: 100vh;
+  /* fill the viewport below the sticky site navbar (60px + 1px border) */
+  height: calc(100vh - 61px);
+  height: calc(100dvh - 61px);
   display: flex;
   flex-direction: column;
+  background: var(--color-paper);
+  color: var(--color-ink);
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
 }
 
-/* ── HEADER ── */
+/* ── HEADER: compact editorial context ── */
 .map-header {
-  background: #1a1209;
-  padding: 10px 20px;
-  border-bottom: 1px solid rgba(200, 169, 110, 0.2);
   flex-shrink: 0;
+  padding: 14px 20px 12px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.map-header-crumb {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.map-header-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.map-header-back {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  text-decoration: none;
-  transition: color 0.15s;
-}
-.map-header-back:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.map-header-divider {
-  width: 1px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.map-header-count {
-  color: #c8a96e;
+  gap: 8px;
+  margin: 0 0 4px;
   font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.map-header-crumb a {
+  color: var(--color-ink-2);
+  text-decoration: none;
+}
+.map-header-crumb a:hover {
+  color: var(--color-signal-text);
+}
+.map-header-crumb span[aria-hidden] {
+  color: var(--color-line);
+}
+.map-header-crumb [aria-current] {
+  color: var(--color-teal);
+}
+
+.map-header-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2px 20px;
 }
 
 .map-header-title {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
   margin: 0;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+  color: var(--color-ink);
+}
+
+.map-header-intro {
+  margin: 2px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-ink-2);
+}
+
+.map-header-count {
+  font-size: 13px;
+  color: var(--color-ink-2);
+  white-space: nowrap;
+}
+.map-header-count strong {
+  color: var(--color-ink);
+  font-weight: 600;
 }
 
 /* ── MAIN BODY ── */
 .map-body {
   flex: 1;
+  min-height: 0;
   display: flex;
   overflow: hidden;
 }
@@ -76,34 +100,106 @@
   z-index: 0;
 }
 
-.map-container {
+.map-container,
+.map-container.leaflet-container {
+  /* .leaflet-container (loaded later by Leaflet) sets a grey #ddd background */
   width: 100%;
   height: 100%;
+  background: var(--color-paper);
 }
 /* Esri's Light Gray Canvas basemap is quite washed out by default. Plain contrast()
    pivots at mid-gray, which just clips this near-white palette to pure white instead
    of helping - so brightness is nudged down first to leave headroom, then contrast
    is boosted. Verified via pixel sampling: land/sea delta goes from 31 to 38 (out of
-   255) without land clipping to solid white. Scoped to the tile pane only so it
-   doesn't affect markers/popups/controls. */
+   255) without land clipping to solid white. No tint: the base map stays a neutral
+   grey canvas and brand colour comes only from the markers and UI. Scoped to the
+   tile pane only so it doesn't affect markers/popups/controls. */
 .map-container .leaflet-tile-pane {
   filter: brightness(0.92) contrast(1.35);
 }
 
-/* ── POPUP ── */
+/* 2025 province boundaries (L.geoJSON className) - hairline ink */
+.map-container .map-province-boundary {
+  stroke: var(--color-ink);
+  stroke-opacity: 0.18;
+  stroke-width: 0.8;
+}
+
+/* ── MARKERS: teal dot; selected = larger signal dot with an ink ring ── */
+.map-marker {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-teal);
+  border: 2px solid var(--color-surface);
+  box-sizing: border-box;
+  transition: transform 0.15s;
+}
+.leaflet-marker-icon:hover .map-marker {
+  transform: scale(1.15);
+}
+.map-marker--selected {
+  width: 22px;
+  height: 22px;
+  background: var(--color-signal);
+  border: 3px solid var(--color-surface);
+  outline: 2px solid var(--color-ink);
+}
+.map-container .leaflet-marker-icon:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+/* ── LEAFLET CONTROLS ── */
+.map-container .leaflet-bar {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-button);
+  box-shadow: none;
+}
+.map-container .leaflet-bar a {
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-line);
+  font-weight: 400;
+}
+.map-container .leaflet-bar a:last-child {
+  border-bottom: none;
+}
+.map-container .leaflet-bar a:first-child,
+.map-container .leaflet-bar a:last-child {
+  border-radius: 0;
+}
+.map-container .leaflet-bar a:hover {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.map-container .leaflet-bar a:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
+}
+.map-container .leaflet-control-attribution {
+  background: color-mix(in srgb, var(--color-surface) 85%, transparent);
+  color: var(--color-ink-2);
+  font-size: 10px;
+}
+
+/* ── SELECTED LOCATION CARD ── */
 .map-popup {
   position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+  /* bottom left: over the land west of Vietnam, not over the southern markers */
+  bottom: 24px;
+  left: 20px;
   z-index: 1000;
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
-  border: 1px solid #e2d8c8;
+  width: 280px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
   overflow: hidden;
-  min-width: 240px;
-  max-width: 300px;
 }
 
 .map-popup-card-link {
@@ -111,15 +207,17 @@
   text-decoration: none;
   color: inherit;
 }
-
-.map-popup-card-link:hover .map-popup-thumb-img {
-  transform: scale(1.03);
+.map-popup-card-link:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
 }
 
 .map-popup-thumb {
+  position: relative;
   width: 100%;
-  height: 140px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  background: var(--color-paper);
 }
 
 .map-popup-thumb-img {
@@ -127,54 +225,82 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.2s ease;
 }
 
 .map-popup-body {
-  padding: 12px 14px;
+  padding: 12px 14px 14px;
+}
+
+.map-popup-type {
+  margin-bottom: 4px;
 }
 
 .map-popup-name {
-  font-weight: 700;
-  font-size: 15px;
-  color: #1a1209;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.25;
+  color: var(--color-ink);
   margin-bottom: 3px;
+}
+.map-popup-card-link:hover .map-popup-name {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 .map-popup-province {
-  font-size: 11px;
-  color: #7a6a52;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
   margin-bottom: 10px;
 }
 
-.map-popup-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .map-popup-link {
-  font-size: 12px;
-  font-weight: 700;
-  color: #c8a96e;
-  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.map-popup-card-link:hover .map-popup-link {
+  color: var(--color-signal-text);
 }
 
 .map-popup-close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #ccc;
-  font-size: 13px;
-  padding: 2px 4px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-button);
+  color: var(--color-ink);
+  font-size: 16px;
   line-height: 1;
+  cursor: pointer;
+}
+.map-popup-close:hover {
+  border-color: var(--color-ink-2);
+}
+.map-popup-close:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
 }
 
-/* ── SIDEBAR ── */
+/* ── BROWSE PANEL ── */
 .map-sidebar {
-  width: 280px;
-  background: #1a1209;
-  border-left: 1px solid rgba(200, 169, 110, 0.15);
+  width: 290px;
+  background: var(--color-surface);
+  border-left: 1px solid var(--color-line);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -183,47 +309,59 @@
 
 .map-sidebar-header {
   padding: 16px 20px 12px;
-  border-bottom: 1px solid rgba(200, 169, 110, 0.1);
+  border-bottom: 1px solid var(--color-line);
   flex-shrink: 0;
 }
 
 .map-sidebar-eyebrow {
-  font-size: 10px;
-  letter-spacing: 3px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #c8a96e;
+  color: var(--color-teal);
   font-weight: 600;
   margin-bottom: 2px;
 }
 
 .map-sidebar-title {
-  color: #fff;
-  font-size: 15px;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  color: var(--color-ink);
+  font-size: 20px;
   font-weight: 700;
+}
+
+.map-sidebar-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .map-sidebar-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 11px 20px;
+  gap: 12px;
+  padding: 10px 20px 10px 17px;
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid var(--color-line);
   border-left: 3px solid transparent;
   cursor: pointer;
   text-align: left;
   width: 100%;
-  transition: background 0.15s;
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s;
 }
 
 .map-sidebar-item:hover {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--color-paper);
+}
+.map-sidebar-item:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
 }
 
 .map-sidebar-item.active {
-  background: rgba(200, 169, 110, 0.12);
-  border-left-color: #c8a96e;
+  background: var(--color-paper);
+  border-left-color: var(--color-teal);
 }
 
 .map-sidebar-item-left {
@@ -233,72 +371,152 @@
 }
 
 .map-sidebar-item-label {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
+  color: var(--color-ink);
+  font-size: 14px;
   font-weight: 500;
-  transition: color 0.15s;
-}
-
-.map-sidebar-item:hover .map-sidebar-item-label {
-  color: rgba(255, 255, 255, 0.95);
 }
 
 .map-sidebar-item.active .map-sidebar-item-label {
-  color: #c8a96e;
+  color: var(--color-teal);
   font-weight: 700;
 }
 
 .map-sidebar-item-count {
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 10px;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 10px;
-  transition: all 0.15s;
+  color: var(--color-ink-2);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
 }
 
 .map-sidebar-item.active .map-sidebar-item-count {
-  background: #c8a96e;
-  color: #1a1209;
+  color: var(--color-teal);
+  font-weight: 600;
 }
 
 .map-sidebar-footer {
   margin-top: auto;
-  padding: 16px 20px;
-  border-top: 1px solid rgba(200, 169, 110, 0.1);
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.2);
+  padding: 14px 20px;
+  border-top: 1px solid var(--color-line);
+  font-size: 12px;
+  color: var(--color-ink-2);
   line-height: 1.5;
   flex-shrink: 0;
 }
 
-/* ── MOBILE ── */
+/* ── MOBILE: map dominant, experiences as one scrolling row above it ── */
 @media (max-width: 768px) {
+  .map-header {
+    padding: 10px 16px 8px;
+  }
+  .map-header-title {
+    font-size: 22px;
+  }
+  .map-header-intro {
+    display: none;
+  }
+
   .map-body {
     flex-direction: column;
   }
 
   .map-area {
-    height: 55vh;
-    flex: none;
+    flex: 1;
+    min-height: 0;
   }
 
+  /* Same buttons, laid out as a compact horizontal strip */
   .map-sidebar {
+    order: -1;
     width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
     border-left: none;
-    border-top: 1px solid rgba(200, 169, 110, 0.15);
-    flex: 1;
-    overflow-y: auto;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .map-sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 16px;
+    border-bottom: none;
+    border-right: 1px solid var(--color-line);
+  }
+  .map-sidebar-eyebrow {
+    display: none;
+  }
+  .map-sidebar-title {
+    font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-ink-2);
+  }
+
+  .map-sidebar-list {
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .map-sidebar-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .map-sidebar-item {
+    width: auto;
+    gap: 6px;
+    padding: 11px 12px 9px;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+  .map-sidebar-item.active {
+    background: transparent;
+    border-bottom-color: var(--color-teal);
+  }
+  .map-sidebar-item-left {
+    gap: 6px;
+  }
+  .map-sidebar-item-label {
+    font-size: 13px;
   }
 
   .map-sidebar-footer {
     display: none;
   }
 
+  /* Compact horizontal card so it never covers much of the map */
   .map-popup {
-    bottom: 16px;
-    width: calc(100% - 32px);
-    max-width: none;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 24px);
+    max-width: 420px;
+  }
+  .map-popup-card-link {
+    display: flex;
+  }
+  .map-popup-thumb {
+    width: 112px;
+    flex-shrink: 0;
+    aspect-ratio: auto;
+    min-height: 100px;
+  }
+  .map-popup-body {
+    padding: 10px 46px 10px 12px;
+    min-width: 0;
+  }
+  /* comfortable touch target on phones */
+  .map-popup-close {
+    width: 36px;
+    height: 36px;
+    top: 4px;
+    right: 4px;
+  }
+  .map-popup-name {
+    font-size: 16px;
+  }
+  .map-popup-province {
+    margin-bottom: 6px;
   }
 }
