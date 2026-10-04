@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const capeCaNa: Location = {
   slug: "cape-ca-na",
   name: "Cape Cà Ná",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-thuan"],
   destination: "",
   lat: 11.333761739966421,
@@ -15,7 +15,7 @@ export const capeCaNa: Location = {
   experiences: ["beach", "motorcycling", "swimming"],
   tags: ["🏜️ Desert Coast", "🪨 Boulder Beach", "🌅 Sunset Spot"],
   bestTime: "Feb - Aug (dry season; Ninh Thuận is one of the driest provinces in Vietnam and sunny most of the year) for the clearest, calmest water overall. Within a day, early morning (before around 6:30 AM) is best if you want to swim, while midday (roughly 11 AM - 3 PM), though hottest, brings out the most vivid colour in the water and sky. Sep - Dec brings windier, sometimes rainy conditions less suited to swimming, though it's still fine for the drive-through views, the seafood, and local culture",
-  bestMonths: [2, 3, 4, 5, 6, 7, 8],
+  bestMonths: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.33780195985091,108.86728048488189",

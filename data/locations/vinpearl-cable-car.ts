@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vinpearlCableCar: Location = {
   slug: "vinpearl-cable-car",
   name: "Vinpearl Cable Car",
-  updatedAt: "2026-09-05",
+  updatedAt: "2026-10-04",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.203687968459107,
@@ -15,7 +15,7 @@ export const vinpearlCableCar: Location = {
   experiences: ["cable-car", "photography", "beach"],
   tags: ["🚡 Over-Sea Cable Car", "📸 Panoramic Views", "🏝️ Hon Tre Island", "🎡 Vinpearl Resort"],
   bestTime: "Feb - Aug for the clearest visibility over the bay (cable car operates year-round); Jun-Aug specifically is peak summer beach season and genuinely crowded, while autumn offers cooler, quieter weather if you'd rather avoid the busiest months. Within a day, 9:00-10:00 AM gives cooler temperatures and pleasant soft light over the bay, while late afternoon (around 4-5 PM) is best for golden-hour views, and departing around 5-6 PM lets you catch sunset over the bay on the way to an evening at Vinpearl Land",
-  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestMonths: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   entranceFee: "There are two distinct ticket types, worth knowing apart: a cable-car-only round trip to Vinpearl Harbour (the dining/shopping area at the arrival station, no theme park) costs around 200,000 VND/person - this is the option for anyone who just wants the crossing itself. The full VinWonders package (cable car plus theme park entry) runs roughly 950,000-1,050,000 VND/adult depending on ticket type, date, and booking channel, with a corresponding child/senior price and a cheaper after-16:00 'sunset' version of the same combo - check current pricing when booking, since it varies by promotion and season. Children under 100cm are free on either option",
   openingHours: "8:00 AM – 10:00 PM (last return crossing around 9:45-10 PM)",
   mapUrl: "https://www.google.com/maps?q=12.203687968459107,109.21792171467011",

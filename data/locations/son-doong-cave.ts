@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sonDoongCave: Location = {
   slug: "son-doong-cave",
   name: "Son Doong Cave",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: "17.466399525611973",
@@ -14,7 +14,7 @@ export const sonDoongCave: Location = {
   categories: ["nature"],
   experiences: ["caving", "trekking", "camping", "photography"],
   tags: ["🏆 World's Largest Cave", "🏕️ Overnight Expedition"],
-  bestTime: "Jan – Aug (expedition season; cave closes Sep – Jan)",
+  bestTime: "Jan - Aug (expedition season; cave closed Sep - Dec)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "~3,000 USD/person (6-day expedition, all-inclusive, via Oxalis Adventure only) — price increase to 15,000 USD under discussion",
   openingHours: "Expedition departures: Jan – Aug only",
@@ -61,7 +61,7 @@ export const sonDoongCave: Location = {
       difficulty: "Oxalis rates this level 5-6. Requires sustained cardiovascular fitness across multiple days: trekking, rope sections, river crossings, cave camping. Safety assistants support technical passages but physical preparation is essential",
       safety: "Oxalis Adventure holds the sole permit and provides a 30-person support team per group including safety specialists and forest rangers. The cave is remote - far from medical facilities. Independent entry is illegal and genuinely dangerous",
       accessibility: "No public access. Guided expedition only through Oxalis Adventure. Not suitable for visitors with significant health conditions or low fitness levels",
-      seasonal: "Open Jan–Aug. Jan–Mar: cool, sunlight shafts, best photography clarity. Apr–May: mild, butterflies, transitional light. Jun–Aug: clouds in chambers, swimmable river, cave stays 18-23°C. Closed Sep–Jan",
+      seasonal: "Open Jan–Aug. Jan–Mar: cool, sunlight shafts, best photography clarity. Apr–May: mild, butterflies, transitional light. Jun–Aug: clouds in chambers, swimmable river, cave stays 18-23°C. Closed Sep-Dec",
     },
     visitorTips: [
       "All bookings through oxalisadventure.com only. Current price ~3,000 USD; potential increase to 15,000 USD under discussion - verify before planning",
