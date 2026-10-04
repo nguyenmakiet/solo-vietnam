@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { destinations } from "@/data/destinations/index"
 import { stripLeadingEmoji } from "@/lib/text"
+import CloudinaryImage from "@/components/CloudinaryImage"
+import PhotoPlaceholder from "@/components/PhotoPlaceholder"
 
 export const metadata: Metadata = {
   title: "Destinations | Solo in Vietnam",
@@ -23,11 +25,8 @@ const REGION_LABELS: Record<string, string> = {
   south: "South Vietnam",
 }
 
-const REGION_EMOJI: Record<string, string> = {
-  north: "🏔️",
-  central: "🌊",
-  south: "🌴",
-}
+const SERIF = { fontFamily: "var(--font-serif), 'Source Serif 4', serif" }
+const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
 
 export default function DestinationsPage() {
   const grouped = destinations.reduce<Record<string, typeof destinations>>(
@@ -41,180 +40,164 @@ export default function DestinationsPage() {
   )
 
   const regionOrder = ["north", "central", "south"]
+  // Only the first row of the first region can be in the initial viewport
+  const firstRegion = regionOrder.find((r) => grouped[r]?.length)
 
   return (
-    <main className="min-h-screen bg-[#F7F4EF]">
+    <main className="min-h-screen bg-paper text-ink">
 
-      {/* ── Hero header ── */}
-      <section className="bg-[#1C1C1A] text-white px-6 pt-20 pb-16 relative overflow-hidden">
-        {/* Subtle grain overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.03] pointer-events-none"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E")`,
-            backgroundSize: "128px",
-          }}
-        />
-        <div className="max-w-5xl mx-auto relative">
-          {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-xs text-[#A09880] mb-8">
-            <Link href="/" className="hover:text-[#C9A84C] transition-colors font-medium">
+      {/* ── Header: light editorial opening, not a dark hero ── */}
+      <section className="pt-7 pb-6 md:pt-10 md:pb-8">
+        <div className="max-w-5xl mx-auto px-6">
+          {/* Breadcrumb doubles as the section label: HOME / DESTINATIONS */}
+          <nav className="flex items-center gap-2 text-[11px] font-semibold tracking-[0.14em] uppercase mb-2" aria-label="Breadcrumb">
+            <Link href="/" className={`text-ink-2 hover:text-signal-text ${FOCUS}`}>
               Home
             </Link>
-            <span className="text-[#4a4a46]">/</span>
-            <span className="text-white/60">Destinations</span>
+            <span className="text-line" aria-hidden="true">/</span>
+            <span className="text-teal" aria-current="page">Destinations</span>
           </nav>
 
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C] mb-4">
-            Solo Travel Guide
-          </p>
           <h1
-            className="text-5xl md:text-6xl font-bold leading-tight mb-4"
-            style={{ fontFamily: "var(--font-serif)" }}
+            className="text-[34px] md:text-5xl font-bold leading-[1.1] tracking-[-0.5px] text-ink mb-2"
+            style={SERIF}
           >
             Destinations
           </h1>
-          <p className="text-[#A09880] text-lg max-w-xl leading-relaxed">
+          <p className="text-[15px] md:text-base text-ink-2 max-w-xl leading-relaxed">
             Handpicked places across Vietnam - with honest guides for solo travelers.
           </p>
 
           {/* Stats row */}
-          <div className="flex gap-8 mt-10 pt-10 border-t border-white/10">
-            <div>
-              <div className="text-2xl font-bold text-white">{destinations.length}</div>
-              <div className="text-xs text-[#A09880] uppercase tracking-widest mt-0.5">Destinations</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-white">63</div>
-              <div className="text-xs text-[#A09880] uppercase tracking-widest mt-0.5">Provinces</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-white">3</div>
-              <div className="text-xs text-[#A09880] uppercase tracking-widest mt-0.5">Regions</div>
-            </div>
-          </div>
+          <dl className="flex mt-6 pt-4 border-t border-line">
+            {[
+              { value: destinations.length, label: "Destinations" },
+              { value: 63, label: "Provinces" },
+              { value: 3, label: "Regions" },
+            ].map((s, i) => (
+              <div key={s.label} className={`flex flex-col-reverse pr-6 md:pr-10 ${i > 0 ? "pl-6 md:pl-10 border-l border-line" : ""}`}>
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.12em] text-ink-2 mt-1">{s.label}</dt>
+                <dd className="text-2xl md:text-[28px] font-bold leading-none text-ink" style={SERIF}>{s.value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
       {/* ── Region sections ── */}
-      <div className="max-w-5xl mx-auto px-6 py-16 space-y-20">
+      <div className="max-w-5xl mx-auto px-6 pt-4 pb-16 md:pt-6 md:pb-20 space-y-14 md:space-y-16">
         {regionOrder.map((region) => {
           const dests = grouped[region]
           if (!dests?.length) return null
 
           return (
-            <section key={region}>
-              {/* Region heading */}
-              <div className="flex items-center gap-3 mb-8">
+            <section key={region} aria-labelledby={`region-${region}`}>
+              {/* Region heading: a chapter opener */}
+              <div className="flex items-baseline justify-between gap-4 pb-3 mb-6 border-b border-ink">
                 <h2
-                  className="text-2xl font-bold text-[#1C1C1A]"
-                  style={{ fontFamily: "var(--font-serif)" }}
+                  id={`region-${region}`}
+                  className="text-[26px] md:text-[32px] font-bold leading-tight text-ink"
+                  style={SERIF}
                 >
                   {REGION_LABELS[region]}
                 </h2>
-                <span className="ml-2 text-sm text-[#A09880] font-medium">
+                <span className="text-xs text-ink-2 whitespace-nowrap">
                   {dests.length} {dests.length === 1 ? "destination" : "destinations"}
                 </span>
-                <div className="flex-1 h-px bg-[#E0D9CF] ml-4" />
               </div>
 
               {/* Cards grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {dests.map((dest, i) => (
-                  <Link
-                    key={dest.slug}
-                    href={`/destinations/${dest.slug}`}
-                    className="group block bg-white rounded-2xl overflow-hidden border border-[#E8E2D9] hover:border-[#C9A84C] hover:shadow-lg transition-all duration-300"
-                    style={{ animationDelay: `${i * 60}ms` }}
-                  >
-                    {/* Image */}
-                    <div className="relative h-44 overflow-hidden bg-[#E8E2D9]">
-                      {dest.heroImage ? (
-                        <img
-                          src={dest.heroImage}
-                          alt={dest.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center text-4xl">
-                          {REGION_EMOJI[dest.region]}
-                        </div>
-                      )}
-                      {/* Province badge */}
-                      <div className="absolute top-3 left-3">
-                        <span className="text-[10px] font-semibold uppercase tracking-widest bg-black/50 text-white/90 px-2.5 py-1 rounded-full backdrop-blur-sm">
+                {dests.map((dest, i) => {
+                  const tags = (dest.tags ?? []).slice(0, 3).map(stripLeadingEmoji)
+                  return (
+                    <Link
+                      key={dest.slug}
+                      href={`/destinations/${dest.slug}`}
+                      className={`group flex flex-col bg-surface border border-line rounded-card overflow-hidden hover:border-ink-2 transition-colors ${FOCUS}`}
+                    >
+                      {/* Image: rectangular, edge to edge */}
+                      <div className="relative aspect-[16/9] overflow-hidden bg-paper">
+                        {dest.heroImage ? (
+                          <CloudinaryImage
+                            src={dest.heroImage}
+                            alt={dest.name}
+                            fill
+                            sizes="(min-width: 1024px) 330px, (min-width: 640px) 50vw, 100vw"
+                            className="object-cover"
+                            loading={region === firstRegion && i < 3 ? "eager" : "lazy"}
+                          />
+                        ) : (
+                          <PhotoPlaceholder />
+                        )}
+                        {/* Province label */}
+                        <span className="absolute top-3 left-3 text-[10px] font-semibold uppercase tracking-[0.12em] bg-ink/75 text-paper px-2 py-1 rounded-card">
                           {dest.province}
                         </span>
                       </div>
-                    </div>
 
-                    {/* Content */}
-                    <div className="p-4">
-                      <h3
-                        className="text-lg font-bold text-[#1C1C1A] mb-1 group-hover:text-[#C9A84C] transition-colors"
-                        style={{ fontFamily: "var(--font-serif)" }}
-                      >
-                        {dest.name}
-                      </h3>
+                      {/* Content */}
+                      <div className="flex flex-col flex-1 p-4 md:p-5">
+                        <h3
+                          className="text-xl font-bold leading-snug text-ink mb-1.5 group-hover:underline underline-offset-2 decoration-1"
+                          style={SERIF}
+                        >
+                          {dest.name}
+                        </h3>
 
-                      {dest.tagline && (
-                        <p className="text-[12px] text-[#A09880] mb-3 leading-relaxed line-clamp-2">
-                          {dest.tagline}
-                        </p>
-                      )}
+                        {dest.tagline && (
+                          <p className="text-sm text-ink-2 mb-3 leading-relaxed line-clamp-3">
+                            {dest.tagline}
+                          </p>
+                        )}
 
-                      {/* Tags */}
-                      {(dest.tags?.length ?? 0) > 0 && (
-                        <div className="flex flex-wrap gap-1.5 mb-3">
-                          {dest.tags?.slice(0, 3).map((tag) => (
-                            <span
-                              key={tag}
-                              className="text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-md bg-[#F0EBE3] text-[#A09880]"
-                            >
-                              {stripLeadingEmoji(tag)}
-                            </span>
-                          ))}
+                        {/* Tags: quiet inline labels, not pills */}
+                        {tags.length > 0 && (
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-ink-2 mb-4">
+                            {tags.join(" · ")}
+                          </p>
+                        )}
+
+                        {/* Meta row */}
+                        <div className="mt-auto flex items-start justify-between gap-4 pt-3 border-t border-line">
+                          <span className="flex-1 min-w-0 text-xs leading-snug text-ink-2">
+                            {dest.recommendedStay}
+                          </span>
+                          <span className="shrink-0 whitespace-nowrap text-[13px] font-semibold text-teal underline underline-offset-[3px] decoration-1 group-hover:text-signal-text">
+                            Guide →
+                          </span>
                         </div>
-                      )}
-
-                      {/* Meta row */}
-                      <div className="flex items-center justify-between pt-3 border-t border-[#F0EBE3]">
-                        <div className="flex items-center gap-1.5 text-[11px] text-[#A09880]">
-                          {dest.recommendedStay && <span>{dest.recommendedStay}</span>}
-                        </div>
-                        <span className="text-[11px] font-semibold text-[#C9A84C] group-hover:translate-x-0.5 transition-transform">
-                          Guide →
-                        </span>
                       </div>
-                    </div>
-                  </Link>
-                ))}
+                    </Link>
+                  )
+                })}
               </div>
             </section>
           )
         })}
       </div>
 
-      {/* ── Browse provinces CTA ── */}
-      <section className="bg-[#1C1C1A] text-white py-16 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      {/* ── Browse provinces: teal-ink band that flows into the footer ── */}
+      <section className="bg-teal-ink text-paper py-14 md:py-16 px-6" aria-labelledby="browse-provinces">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div>
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C] mb-2">
+            <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-teal-light mb-2">
               Explore by province
             </p>
             <h2
-              className="text-3xl font-bold"
-              style={{ fontFamily: "var(--font-serif)" }}
+              id="browse-provinces"
+              className="text-[28px] md:text-3xl font-bold leading-tight text-paper"
+              style={SERIF}
             >
               Browse all 63 provinces
             </h2>
-            <p className="text-[#A09880] mt-2 text-sm">
+            <p className="mt-2 text-sm text-paper/80">
               Interactive map with local food, culture, and travel tips.
             </p>
           </div>
           <Link
             href="/provinces"
-            className="shrink-0 bg-[#C9A84C] hover:bg-[#b8973d] text-[#1C1C1A] font-semibold text-sm px-7 py-3.5 rounded-lg transition-colors"
+            className="ui-btn shrink-0 self-start md:self-auto focus-visible:outline-teal-light"
           >
             View province map →
           </Link>
