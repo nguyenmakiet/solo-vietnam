@@ -190,7 +190,7 @@ export default async function LocationPage({
       <main className="content-wrap">
 
         {/* Overview */}
-        <section id="overview" className="section-anchor" aria-labelledby="h-overview">
+        <section id="overview" className="section-anchor ov-section" aria-labelledby="h-overview">
           <h2 id="h-overview" className="section-label">Overview</h2>
           <dl className="overview">
             {showBestMonths ? (
@@ -301,7 +301,7 @@ export default async function LocationPage({
 
         {/* Insider Tips */}
         {hasTips && (
-          <section id="insider-tips" className="section-anchor" aria-labelledby="h-tips">
+          <section id="insider-tips" className="section-anchor split-section" aria-labelledby="h-tips">
             <h2 id="h-tips" className="section-label">Insider Tips</h2>
             <p className="section-subtext">Based on real traveler experiences and commonly mentioned advice from multiple visitors.</p>
             <ul className="tips-list">
@@ -323,7 +323,7 @@ export default async function LocationPage({
 
         {/* FAQ */}
         {hasFaq && (
-          <section id="faq" className="section-anchor" aria-labelledby="h-faq">
+          <section id="faq" className="section-anchor split-section" aria-labelledby="h-faq">
             <h2 id="h-faq" className="section-label">FAQ</h2>
             <p className="section-subtext">Common questions from travelers who&apos;ve visited this place.</p>
             <div className="faq-list">

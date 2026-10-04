@@ -150,7 +150,7 @@ export default async function DestinationPage({
 
       {/* ── Head: text on paper, photo below ── */}
       <header className="dd-head">
-        <div className="dd-container">
+        <div className="dd-container dd-head-inner">
           <nav className="dd-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link>
             <span className="sep" aria-hidden="true">/</span>
@@ -214,7 +214,7 @@ export default async function DestinationPage({
 
         {/* Best Months */}
         {bestMonths.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-months">
+          <section className="dp-section dd-months" aria-labelledby="h-months">
             <h2 id="h-months" className="section-label">Best Months to Visit</h2>
             <div
               className="month-strip"
@@ -388,7 +388,7 @@ export default async function DestinationPage({
         {destination.gettingThere && destination.gettingThere.length > 0 && (
           <section className="dp-section" aria-labelledby="h-getting">
             <h2 id="h-getting" className="section-label">Getting There</h2>
-            <div className="dd-rows">
+            <div className="dd-rows dd-routes">
               {destination.gettingThere.map((opt, i) => (
                 <div key={i} className="dd-route">
                   <div className="dd-route-top">
@@ -412,7 +412,7 @@ export default async function DestinationPage({
         {(destination.bestTimeSummary || destination.recommendedStay) && (
           <section className="dp-section" aria-labelledby="h-plan">
             <h2 id="h-plan" className="section-label">Plan Your Trip</h2>
-            <dl className="dd-rows">
+            <dl className="dd-rows dd-plans">
               {destination.bestTimeSummary && (
                 <div className="dd-plan">
                   <dt>Best Time to Visit</dt>
