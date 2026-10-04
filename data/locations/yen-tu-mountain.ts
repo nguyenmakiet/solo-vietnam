@@ -16,6 +16,7 @@ export const yenTuMountain: Location = {
   tags: ["⛰️ Sacred Peak", "🛕 Buddhist Pilgrimage", "🥾 Summit Trek", "🌲 Ancient Forest", "buddhism", "medieval-vietnam"],
   bestTime: "Apr - Jun (quiet, comfortable weather). Jan - Mar (lunar) for the festival atmosphere - culturally extraordinary but extremely crowded. Avoid the Saturday after the first full moon of Tết - the single busiest day of the year.",
   bestMonths: [1, 2, 3, 4, 5, 6],
+  bestSeasonNote: "Apr - Jun (quiet, comfortable weather). Jan - Mar (lunar) for the festival atmosphere - culturally extraordinary but extremely crowded. Avoid the Saturday after the first full moon of Tết - the single busiest day of the year.",
   entranceFee: "Free (entry to the heritage site). Cable car tickets charged separately - check official ticket office for current fares.",
   openingHours: "Open daily. Cable car operating hours vary slightly by season, weather, and festival periods, but services generally run from around 7:00-8:00 AM until 5:00-6:00 PM. Visitors walking the full route often begin before cable car operating hours.",
   mapUrl: "https://www.google.com/maps?q=21.131344974258912,106.73006478199216",

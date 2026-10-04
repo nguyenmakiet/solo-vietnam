@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const yTy: Location = {
   slug: "y-ty",
   name: "Y Tý",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lao-cai"],
   destination: "",
   lat: 22.657362311112333,
@@ -16,6 +16,7 @@ export const yTy: Location = {
   tags: ["☁️ Sea of Clouds", "🏔️ 2,860m Peak", "🌾 Rice Terraces", "🏡 Hà Nhì Villages", "❄️ Snow in Winter", "ethnic-minority-culture"],
   bestTime: "Late Jul - Sep (golden rice terraces). Oct - Feb (cloud hunting season, possible snow in winter). May - Jun (water pouring season - flooded terraces reflecting sky)",
   bestMonths: [5, 6, 7, 8, 9, 10, 11, 12, 1, 2],
+  bestSeasonNote: "Late Jul - Sep (golden rice terraces). Oct - Feb (cloud hunting season, possible snow in winter). May - Jun (water pouring season - flooded terraces reflecting sky)",
   entranceFee: "Free",
   openingHours: "Open; overnight permit required for foreigners. Saturday morning market - arrive early, disperses by noon.",
   mapUrl: "https://www.google.com/maps?q=22.657362311112333,103.61233893234572",

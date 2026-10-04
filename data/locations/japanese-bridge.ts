@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const japaneseBridge: Location = {
   slug: "japanese-bridge",
   name: "Japanese Bridge",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.877113853056763,
@@ -16,6 +16,7 @@ export const japaneseBridge: Location = {
   tags: ["🌉 Iconic Landmark", "🏯 400-Year-Old Bridge", "🎑 UNESCO Heritage", "early-modern-vietnam"],
   bestTime: "Feb - Aug (broad dry season window); Oct - Nov also offers exceptional golden hour light if you're visiting outside that range",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 10, 11],
+  bestSeasonNote: "Feb - Aug (broad dry season window); Oct - Nov also offers exceptional golden hour light if you're visiting outside that range",
   entranceFee: "Free to walk across; entry to the small inner shrine requires the Hội An Old Town combined ticket (~120,000 VND), which also covers several other heritage houses, assembly halls, and museums in the Ancient Town",
   openingHours: "Open daily; best visited early morning or after 5 PM",
   mapUrl: "https://www.google.com/maps?q=15.877113853056763,108.32614848011536",

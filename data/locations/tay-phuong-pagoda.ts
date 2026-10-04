@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tayPhuongPagoda: Location = {
   slug: "tay-phuong-pagoda",
   name: "Tây Phương Pagoda",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.025452515537896,
@@ -16,6 +16,7 @@ export const tayPhuongPagoda: Location = {
   tags: ["🛕 16th-Century Origins", "🏛️ National Special Relic", "🪨 Hilltop Pagoda", "📸 Architecture & Statues", "buddhism", "early-modern-vietnam"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat on the climb)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
+  bestSeasonNote: "Oct - Apr (cool and dry; avoid summer heat on the climb)",
   entranceFee: "10,000 VND",
   openingHours: "Open daily, dawn to dusk",
   mapUrl: "https://www.google.com/maps?q=21.025452515537896,105.58718664974505",

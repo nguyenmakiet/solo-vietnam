@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const duGiaWaterfall: Location = {
   slug: "du-gia-waterfall",
   name: "Du Già Waterfall",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "22.92605491197045",
@@ -16,6 +16,7 @@ export const duGiaWaterfall: Location = {
   tags: ["💧 Thác Ba Tiên", "🏊 Cliff Jumping", "🥾 River Trek"],
   bestTime: "Summer (Jun – Aug): clear water, warm weather, ideal for swimming and cliff jumping",
   bestMonths: [6, 7, 8],
+  bestSeasonNote: "Summer (Jun - Aug): clear water, warm weather, ideal for swimming and cliff jumping",
   entranceFee: "Free (20,000 VND motorbike parking)",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.92605491197045,105.1988164932612",

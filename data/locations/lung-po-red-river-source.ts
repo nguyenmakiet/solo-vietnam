@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lungPo: Location = {
   slug: "lung-po-red-river-source",
   name: "Lũng Pô",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lao-cai"],
   destination: "",
   lat: 22.79305606355363,
@@ -16,6 +16,7 @@ export const lungPo: Location = {
   tags: ["🔴 Red River Entry Point", "🇻🇳 Border Marker 92", "🏴 31m Flagpole", "🌸 Kapok Season (March)"],
   bestTime: "Mar (kapok bloom); Sep - Nov (clear skies, best visibility from flagpole)",
   bestMonths: [3, 9, 10, 11],
+  bestSeasonNote: "Mar (kapok bloom); Sep - Nov (clear skies, best visibility from flagpole)",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=22.79305606355363,103.64781973074007",

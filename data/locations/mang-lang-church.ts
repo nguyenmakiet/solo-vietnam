@@ -22,6 +22,7 @@ export const mangLangChurch: Location = {
   ],
   bestTime: "For general visiting and photography, before 8 AM or after 4 PM avoids the harshest sun; for the most atmospheric experience, time it around early morning mass (roughly 5:30 AM) or Sunday services",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
+  bestTimeOfDay: "For general visiting and photography, before 8 AM or after 4 PM avoids the harshest sun; for the most atmospheric experience, time it around early morning mass (roughly 5:30 AM) or Sunday services",
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM (mass times may restrict visitor access)",
   mapUrl: "https://www.google.com/maps?q=13.334150812882358,109.225819751082",

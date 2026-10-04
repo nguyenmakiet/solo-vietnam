@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dalatRailwayStation: Location = {
   slug: "dalat-railway-station",
   name: "Đà Lạt Railway Station",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.941882324564023,
@@ -16,6 +16,7 @@ export const dalatRailwayStation: Location = {
   tags: ["🚂 1938 French Colonial Station", "🏛️ Heritage Architecture", "🚃 Tourist Train", "french-colonial-era", "french-architecture"],
   bestTime: "Nov - May (dry season). Nov - Jan for cool air and tail-end rain views from the train window. Feb - May for wild cherry blossoms along the route.",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],
+  bestSeasonNote: "Nov - May (dry season). Nov - Jan for cool air and tail-end rain views from the train window. Feb - May for wild cherry blossoms along the route.",
   entranceFee: "50,000 VND station entry (free if you buy a train ticket). Train to Trại Mát: Vietnamese visitors 72,000 VND one-way / 108,000-150,000 VND return; foreign visitors 150,000 VND one-way / 170,000 VND return. Children under 1m free.",
   openingHours: "7:30 AM - 5:00 PM (some sources cite 5:30 PM). Best visiting window: 8-10 AM for comfortable weather.",
   mapUrl: "https://www.google.com/maps?q=11.941882324564023,108.45471880283058",

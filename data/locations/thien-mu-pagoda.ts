@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thienMuPagoda: Location = {
   slug: "thien-mu-pagoda",
   name: "Thiên Mụ Pagoda",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.453168591703893,
@@ -16,6 +16,7 @@ export const thienMuPagoda: Location = {
   tags: ["⛩️ Oldest Pagoda in Huế", "🏯 7-Tier Tower", "🌊 Perfume River", "buddhism", "early-modern-vietnam"],
   bestTime: "Feb - Apr (cool, dry weather, clear skies, and the best overall conditions for sightseeing and photography); Sep - Nov (pleasant temperatures before the wettest part of the year). Jan - Mar coincides with the spring pilgrimage season and can be busier.",
   bestMonths: [2, 3, 4, 9, 10, 11],
+  bestSeasonNote: "Feb - Apr (cool, dry weather, clear skies, and the best overall conditions for sightseeing and photography); Sep - Nov (pleasant temperatures before the wettest part of the year). Jan - Mar coincides with the spring pilgrimage season and can be busier.",
   entranceFee: "Free",
   openingHours: "Generally 8:00 AM - 6:00 PM daily - as an active monastery rather than a ticketed attraction, this isn't strictly enforced, but it's the window most commonly cited and a respectful time to visit given the monks' prayer schedule",
   mapUrl: "https://www.google.com/maps?q=16.453168591703893,107.54519432036955",

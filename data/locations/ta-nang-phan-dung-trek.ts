@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taNangPhanDungTrek: Location = {
   slug: "ta-nang-phan-dung-trek",
   name: "Ta Năng - Phan Dũng Trek",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong", "ninh-thuan", "binh-thuan"],
   destination: "",
   lat: 11.536084933625041,
@@ -16,6 +16,7 @@ export const taNangPhanDungTrek: Location = {
   tags: ["🥾 Multi-day Trek", "🌄 Highland to Coast"],
   bestTime: "Late Jan - early Mar (golden grass, dry, not too hot). Aug - Oct for green grasslands (rainy season - monitor weather carefully).",
   bestMonths: [1, 2, 3, 8, 9, 10],
+  bestSeasonNote: "Late Jan - early Mar (golden grass, dry, not too hot). Aug - Oct for green grasslands (rainy season - monitor weather carefully).",
   entranceFee: "Free (tour packages typically 1,500,000 - 3,000,000 VND/person for 2N1D with guide, porter, meals)",
   openingHours: "Multi-day trek. Standard format: 2 nights 1 day.",
   mapUrl: "https://www.google.com/maps?q=11.536084933625041,108.53666725713427",

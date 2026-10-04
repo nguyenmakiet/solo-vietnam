@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const keoPagoda: Location = {
   slug: "keo-pagoda",
   name: "Keo Pagoda",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["thai-binh"],
   destination: "",
   lat: 20.361100,
@@ -16,6 +16,7 @@ export const keoPagoda: Location = {
   tags: ["🛕 17th-Century Pagoda", "🏛️ National Relic", "📸 Architecture", "🌾 Red River Delta", "buddhism", "folk-religion", "early-modern-vietnam"],
   bestTime: "Feb - Apr (spring festival season, dry weather); mid-Sep to early-Oct (lunar month 9) for the larger autumn festival",
   bestMonths: [2, 3, 4, 9, 10],
+  bestSeasonNote: "Feb - Apr (spring festival season, dry weather); mid-Sep to early-Oct (lunar month 9) for the larger autumn festival",
   entranceFee: "Free (donations accepted)",
   openingHours: "Open daily, dawn to dusk",
   mapUrl: "https://www.google.com/maps?q=20.361100,106.296944",

@@ -16,6 +16,7 @@ export const vinhTrungFields: Location = {
   tags: ["🌴 Thốt Nốt Palm Fields", "🏛️ Sà-Đách-Tót Pagoda", "🏔️ Thất Sơn Backdrop", "khmer-culture"],
   bestTime: "Roughly 5-7 AM for the flood-water reflections and softest light",
   bestMonths: [8, 9, 10, 11, 12, 1, 2, 3, 4],
+  bestTimeOfDay: "Roughly 5-7 AM for the flood-water reflections and softest light",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.557096724995187,105.02055578113539",

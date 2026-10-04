@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const mauSonMountain: Location = {
   slug: "mau-son-mountain",
   name: "Mẫu Sơn Mountain",
-  updatedAt: "2026-09-06",
+  updatedAt: "2026-10-04",
   provinces: ["lang-son"],
   destination: "",
   lat: 21.849873373608105,
@@ -16,6 +16,7 @@ export const mauSonMountain: Location = {
   tags: ["❄️ Snow in Vietnam", "🌄 Cloud Sea", "🏔️ Northeast Highlands", "🌡️ Subalpine Climate", "french-colonial-era"],
   bestTime: "Nov-Mar for the coldest weather and the best chance of frost or snow, especially during cold snaps (though also the busiest and most traffic-jammed period); Sep-Oct is a good window for cool weather and reliable cloud-sea views. Apr-May brings spring greenery, terraced-field planting, and hydrangea blooms, while Jul-Aug coincides with the golden rice harvest in surrounding valleys",
   bestMonths: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Nov-Mar for the coldest weather and the best chance of frost or snow, especially during cold snaps (though also the busiest and most traffic-jammed period); Sep-Oct is a good window for cool weather and reliable cloud-sea views. Apr-May brings spring greenery, terraced-field planting, and hydrangea blooms, while Jul-Aug coincides with the golden rice harvest in surrounding valleys",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=21.849873373608105,106.91696577893505",

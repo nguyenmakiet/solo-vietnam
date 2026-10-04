@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phongNamValley: Location = {
   slug: "phong-nam-valley",
   name: "Phong Nặm Valley",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.880089,
@@ -16,6 +16,7 @@ export const phongNamValley: Location = {
   tags: ["🌾 Golden Rice Fields", "🏞️ Quây Sơn River", "📸 Drone Photography", "🎎 Tày Villages"],
   bestTime: "Sep - Oct (rice harvest, golden fields) or Mar - May (spring flowers, cool air, local festivals)",
   bestMonths: [3, 4, 5, 9, 10],
+  bestSeasonNote: "Sep - Oct (rice harvest, golden fields) or Mar - May (spring flowers, cool air, local festivals)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.880089,106.535739",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thangHenLake: Location = {
   slug: "thang-hen-lake",
   name: "Thang Hen Lake",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.759334520663145,
@@ -16,6 +16,7 @@ export const thangHenLake: Location = {
   tags: ["💙 Turquoise Karst Lake", "🏄 SUP on the Lake", "🌿 Green Grassland"],
   bestTime: "Jun - Sep (rainy season, lake at full depth, turquoise colour most intense, grasslands green)",
   bestMonths: [6, 7, 8, 9],
+  bestSeasonNote: "Jun - Sep (rainy season, lake at full depth, turquoise colour most intense, grasslands green)",
   entranceFee: "30,000 VND (includes access to nearby caves)",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.759334520663145,106.29375946526802",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const goldenBridge: Location = {
   slug: "golden-bridge",
   name: "Golden Bridge",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["da-nang"],
   destination: "ba-na-hills",
   lat: "15.994957886478177",
@@ -16,6 +16,7 @@ export const goldenBridge: Location = {
   tags: ["🌉 Giant Stone Hands", "📸 Most Photographed in Vietnam", "☁️ Above the Clouds", "🌅 Panoramic Views"],
   bestTime: "Mar – Aug (clearest views; avoid Nov – Jan when fog can obscure the hands)",
   bestMonths: [3, 4, 5, 6, 7, 8],
+  bestSeasonNote: "Mar - Aug (clearest views; avoid Nov - Jan when fog can obscure the hands)",
   entranceFee: "Included in Bà Nà Hills ticket (950,000 VND/adult, 750,000 VND/child)",
   openingHours: "7:30 AM – 9:00 PM (within Bà Nà Hills complex)",
   mapUrl: "https://www.google.com/maps?q=15.994957886478177,107.996595959818",

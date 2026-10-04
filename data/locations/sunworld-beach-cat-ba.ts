@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sunworldBeachCatBa: Location = {
   slug: "sunworld-beach-cat-ba",
   name: "Sunworld Beach Cat Ba",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-10-04",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: 20.722033365092187,
@@ -16,6 +16,7 @@ export const sunworldBeachCatBa: Location = {
   tags: ["🏖️ Artificial Beach", "🌴 Beach Club", "🎆 Fireworks Shows", "🌊 Cat Ba Town"],
   bestTime: "Late afternoon into evening (staying until around 10 PM) is when the beach club, dining, and any scheduled shows come alive; daytime is quieter and better for swimming before the heat peaks",
   bestMonths: [4, 5, 6, 7, 8, 9],
+  bestTimeOfDay: "Late afternoon into evening (staying until around 10 PM) is when the beach club, dining, and any scheduled shows come alive; daytime is quieter and better for swimming before the heat peaks",
   entranceFee: "Free beach access for swimming and sand. The fireworks/jet-ski show and similar evening spectacles are separately ticketed with tiered pricing (standing tickets roughly 350,000-650,000 VND, seated tickets roughly 550,000-1,000,000 VND, per recent 2026 pricing) - this is a proper ticketed show, not a casual free bonus. Some beach club seating and dining areas may also have a minimum spend",
   openingHours: "Beach: open daily from early morning. Beach club, dining, and evening shows: from approximately 4 PM, with showtimes varying by schedule",
   mapUrl: "https://www.google.com/maps?q=20.722033365092187,107.04538052522355",

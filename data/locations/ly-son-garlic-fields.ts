@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lySonGarlicFields: Location = {
   slug: "ly-son-garlic-fields",
   name: "Lý Sơn Garlic Fields",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.38142400159663,
@@ -21,6 +21,7 @@ export const lySonGarlicFields: Location = {
   ],
   bestTime: "Feb - Mar (harvest season - garlic fully grown, drying scenes everywhere). Nov - Jan for young green fields and tall areca palms.",
   bestMonths: [11, 12, 1, 2, 3],
+  bestSeasonNote: "Feb - Mar (harvest season - garlic fully grown, drying scenes everywhere). Nov - Jan for young green fields and tall areca palms.",
   entranceFee: "Free",
   openingHours: "Open 24/7 (farming fields - respect crops and stay on paths)",
   mapUrl: "https://www.google.com/maps?q=15.38142400159663,109.11882432420393",

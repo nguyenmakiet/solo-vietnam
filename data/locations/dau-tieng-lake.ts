@@ -16,6 +16,7 @@ export const dauTiengLake: Location = {
   tags: ["🏞️ Largest Reservoir", "🌅 Sunrise Photography"],
   bestTime: "Early morning (before sunrise) for photography and the coolest temperatures - the lake is at its most atmospheric with morning mist and fishing boats out on the water",
   bestMonths: [12, 1, 2, 3, 4, 6],
+  bestTimeOfDay: "Early morning (before sunrise) for photography and the coolest temperatures - the lake is at its most atmospheric with morning mist and fishing boats out on the water",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.354531,106.342298",

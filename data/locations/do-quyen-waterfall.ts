@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const doQuyenWaterfall: Location = {
   slug: "do-quyen-waterfall",
   name: "Do Quyen Waterfall (Rhododendron Waterfall)",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hue"],
   destination: "hue",
   lat: "16.18620793431291",
@@ -16,6 +16,7 @@ export const doQuyenWaterfall: Location = {
   tags: ["💧 400m Waterfall", "🌸 Rhododendron Season", "🏔️ Bạch Mã NP", "🧗 Via Ferrata & Zipline"],
   bestTime: "Jan – Aug (dry season). Mar–Apr for rhododendron bloom. Avoid Sep–Dec rainy season.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
+  bestSeasonNote: "Jan - Aug (dry season). Mar-Apr for rhododendron bloom. Avoid Sep-Dec rainy season.",
   entranceFee: "65,000 VND adults / 25,000 VND children. Park shuttle: 900,000 VND/trip up to 12 people (1,300,000 VND return). Adventure tour (Jungle Boss): 11,250,000 VND/person.",
   openingHours: "Park hours: 7:00 AM – 5:00 PM daily. Trail access subject to weather conditions.",
   mapUrl: "https://www.google.com/maps?q=16.18620793431291,107.84888865318162",

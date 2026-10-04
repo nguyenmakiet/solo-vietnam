@@ -188,7 +188,7 @@ export default async function LocationPage({
                     </span>
                   ))}
                 </div>
-                {(location.bestSeasonNote ?? location.bestTime) && (
+                {(location.bestSeasonNote ?? (location.bestTimeOfDay ? undefined : location.bestTime)) && (
                   <div className="oc-note">{location.bestSeasonNote ?? location.bestTime}</div>
                 )}
               </div>

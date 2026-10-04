@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phoenixUnicornIslandsMyTho: Location = {
   slug: "phoenix-unicorn-islands-my-tho",
   name: "Phoenix & Unicorn Islands (Cồn Phụng & Cồn Thới Sơn)",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ben-tre", "tien-giang"],
   destination: "mekong-delta",
   lat: 10.335167589686217,
@@ -16,6 +16,7 @@ export const phoenixUnicornIslandsMyTho: Location = {
   tags: ["🥥 Coconut Religion Temple", "🐉 Tứ Linh Islands", "🛶 Canal Boats", "🍈 Orchard Fruit"],
   bestTime: "Nov - Feb is the most consistently recommended window - cooler, pleasant weather with good water levels for canal boat rides. Jun - Aug is peak fruit season (durian, rambutan, longan, mangosteen) and the busiest time of year, though with a real chance of rain. Sep - Nov brings the Mekong's flood season, with seasonal specialties like water lily stems, sesbania flowers, and linh fish. Avoid Mar - May if the basket boat ride matters to you. This is generally the driest part of the year, and many smaller canals can experience noticeably lower water levels. Even then, the exact experience still depends on the tide at the time of your visit - see the tips below for more on that",
   bestMonths: [11, 12, 1, 2, 6, 7, 8, 9, 10],
+  bestSeasonNote: "Nov - Feb is the most consistently recommended window - cooler, pleasant weather with good water levels for canal boat rides. Jun - Aug is peak fruit season (durian, rambutan, longan, mangosteen) and the busiest time of year, though with a real chance of rain. Sep - Nov brings the Mekong's flood season, with seasonal specialties like water lily stems, sesbania flowers, and linh fish. Avoid Mar - May if the basket boat ride matters to you. This is generally the driest part of the year, and many smaller canals can experience noticeably lower water levels. Even then, the exact experience still depends on the tide at the time of your visit - see the tips below for more on that",
   entranceFee: "Packaged tours typically run 200,000-300,000 VND/person for the base entrance and program (honey tea, đờn ca tài tử music, horse cart ride); food is usually 100,000-200,000 VND/person separately, and folk games/activities around 100,000 VND/person. Independent access via the Tân Thạch or Mỹ Tho ferry piers is cheaper but skips the organised program",
   openingHours: "Open daily, roughly 7:30 AM - 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.335167589686217,106.36046151034951",

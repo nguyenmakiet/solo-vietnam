@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phongNhaCave: Location = {
   slug: "phong-nha-cave",
   name: "Phong Nha Cave",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: "17.58187380883147",
@@ -16,6 +16,7 @@ export const phongNhaCave: Location = {
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "🌊 Underground River"],
   bestTime: "Mar – Aug (dry season, Son River water is clearest and most turquoise; cave may close Sep-Nov due to flooding)",
   bestMonths: [3, 4, 5, 6, 7, 8],
+  bestSeasonNote: "Mar - Aug (dry season, Son River water is clearest and most turquoise; cave may close Sep-Nov due to flooding)",
   entranceFee: "Boat: 700,000 VND per boat (max 12 people, shared cost). Cave entry ticket purchased at Phong Nha - Tien Son visitor centre.",
   openingHours: "7:00 AM – 4:00 PM (closed during flood season Sep – Nov)",
   mapUrl: "https://www.google.com/maps?q=17.58187380883147,106.28397697966346",

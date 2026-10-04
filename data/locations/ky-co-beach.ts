@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const kyCoBeach: Location = {
   slug: "ky-co-beach",
   name: "Kỳ Co Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["binh-dinh"],
   destination: "",
   lat: 13.850407408494334,
@@ -16,6 +16,7 @@ export const kyCoBeach: Location = {
   tags: ["🏖️ Hidden Beach", "💎 Turquoise Water"],
   bestTime: "Apr - late Sep (summer and early autumn; best conditions around Sep 2 national holiday)",
   bestMonths: [4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Apr - late Sep (summer and early autumn; best conditions around Sep 2 national holiday)",
   entranceFee: "120,000 VND adults / 50,000 VND children. Electric cart: 50,000 VND. Speedboat from Nhơn Lý: additional fee.",
   openingHours: "7:00 AM - 5:30 PM. Afternoon from 3:00 PM is less crowded with better light.",
   mapUrl: "https://www.google.com/maps?q=13.850407408494334,109.2927788212342",

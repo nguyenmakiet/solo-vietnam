@@ -16,6 +16,7 @@ export const bauSau: Location = {
   tags: ["🐊 Crocodile Lake", "🌿 Primary Forest", "🦅 Birdwatching", "🥾 Jungle Trek", "🌙 Overnight Stay"],
   bestTime: "Nov - Apr (dry season when water levels drop and wildlife concentrates around the lake; wet season Jul - Oct makes the trek through the forest difficult but the forest sounds and atmosphere are at their most intense)",
   bestMonths: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season when water levels drop and wildlife concentrates around the lake; wet season Jul - Oct makes the trek through the forest difficult but the forest sounds and atmosphere are at their most intense)",
   entranceFee: "250,000 VND. Not include Cát Tiên National Park entry (~60,000 VND)",
   openingHours: "Treks depart from park HQ at scheduled times - book in advance",
   mapUrl: "https://www.google.com/maps?q=11.458838033233041,107.34506914941234",

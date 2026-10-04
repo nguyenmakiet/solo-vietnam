@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const maPiLengPass: Location = {
   slug: "ma-pi-leng-pass",
   name: "Mã Pí Lèng Pass",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.24315558513546,
@@ -16,6 +16,7 @@ export const maPiLengPass: Location = {
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "🌊 Canyon Views"],
   bestTime: "Sep - Nov (golden rice + buckwheat flowers). Mar - Apr (plum and pear blossoms). Avoid Jun - Aug rainy season.",
   bestMonths: [3, 4, 9, 10, 11],
+  bestSeasonNote: "Sep - Nov (golden rice + buckwheat flowers). Mar - Apr (plum and pear blossoms). Avoid Jun - Aug rainy season.",
   entranceFee: "Free. Nho Quế river boat: 100,000 - 200,000 VND/person.",
   openingHours: "Open 24/7. Best: sunrise 7-9 AM. Avoid night driving.",
   mapUrl: "https://maps.google.com/?q=23.1900,105.3800",

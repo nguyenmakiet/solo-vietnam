@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const worldCoffeeMuseum: Location = {
   slug: "world-coffee-museum",
   name: "World Coffee Museum",
-  updatedAt: "2026-10-03",
+  updatedAt: "2026-10-04",
   provinces: ["dak-lak"],
   destination: "",
   lat: 12.691043,
@@ -20,6 +20,7 @@ export const worldCoffeeMuseum: Location = {
   ],
   bestTime: "Roughly 7-8 AM or 4-6 PM for the best natural light and a quieter visit - it's largely an indoor site, so the exact time matters mainly for photography and crowds",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestTimeOfDay: "Roughly 7-8 AM or 4-6 PM for the best natural light and a quieter visit - it's largely an indoor site, so the exact time matters mainly for photography and crowds",
   entranceFee: "Around 150,000 VND for adults (includes one small cup of coffee), roughly 40,000-50,000 VND for children (no coffee included), with a discounted student rate reported around 105,000 VND. Booking through Klook or similar platforms can be slightly cheaper per ticket, though it may not include combo extras available when buying in person - compare before deciding. If you only want to see the exterior architecture and grounds, this is viewable without a ticket.",
   openingHours: "8:00 AM-5:00 PM daily. The museum may open in the evening on major holidays or special occasions, so check the official website before visiting.",
   mapUrl: "https://www.google.com/maps?q=12.691043,108.044683",

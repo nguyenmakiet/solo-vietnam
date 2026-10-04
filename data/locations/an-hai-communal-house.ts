@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const anHaiCommunalHouse: Location = {
   slug: "an-hai-communal-house",
   name: "Đình làng An Hải",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.374960915867455,
@@ -21,6 +21,7 @@ export const anHaiCommunalHouse: Location = {
   ],
   bestTime: "Dec - Jun (calmer seas make the ferry crossing to Lý Sơn more reliable; rough weather from around Jul-Nov can delay or cancel sailings); the Khao Lề Thế Lính Hoàng Sa ceremony here is held annually around the 15th day of the 3rd lunar month, in the same general window as An Vĩnh's version of the same ceremony",
   bestMonths: [12, 1, 2, 3, 4, 5, 6],
+  bestSeasonNote: "Dec - Jun (calmer seas make the ferry crossing to Lý Sơn more reliable; rough weather from around Jul-Nov can delay or cancel sailings); the Khao Lề Thế Lính Hoàng Sa ceremony here is held annually around the 15th day of the 3rd lunar month, in the same general window as An Vĩnh's version of the same ceremony",
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours",
   mapUrl: "https://www.google.com/maps?q=15.374960915867455,109.12906613305788",

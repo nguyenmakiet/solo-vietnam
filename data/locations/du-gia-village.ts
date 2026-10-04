@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const duGiaVillage: Location = {
   slug: "du-gia-village",
   name: "Du Già Village",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "22.930340238883847",
@@ -16,6 +16,7 @@ export const duGiaVillage: Location = {
   tags: ["🏡 Tày & H'mông Village", "🌾 Rice Terraces", "🥾 Eastern Loop", "🤫 Off the Beaten Track", "tay-culture"],
   bestTime: "Oct – May (dry season). Oct–Nov for buckwheat flowers and golden rice terraces.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4, 5],
+  bestSeasonNote: "Oct - May (dry season). Oct-Nov for buckwheat flowers and golden rice terraces.",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.930340238883847,105.22274726498522",

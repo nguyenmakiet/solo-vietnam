@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const saViCape: Location = {
   slug: "sa-vi-cape",
   name: "Mũi Sa Vĩ (Trà Cổ)",
-  updatedAt: "2026-09-09",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 21.492220115088482,
@@ -16,6 +16,7 @@ export const saViCape: Location = {
   tags: ["🇻🇳 Northeast Tip of Vietnam", "🌅 First Sunrise in the North", "📍 Border Marker", "🏖️ Tra Co Beach"],
   bestTime: "Any time of day works for the landmark itself; sunrise is the most dramatic, since Mũi Sa Vĩ is the first point in northern Vietnam to catch the morning light",
   bestMonths: [4, 5, 6, 7, 8, 9],
+  bestTimeOfDay: "Any time of day works for the landmark itself; sunrise is the most dramatic, since Mũi Sa Vĩ is the first point in northern Vietnam to catch the morning light",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=21.492220115088482,108.06734019742865",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const traQueVillage: Location = {
   slug: "tra-que-village",
   name: "Trà Quế Village",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.902579357686461,
@@ -16,6 +16,7 @@ export const traQueVillage: Location = {
   tags: ["🌿 Herb Village", "👨‍🍳 Cooking Class"],
   bestTime: "Feb - Apr or Sep - Nov (cool and dry, herbs at their most fragrant)",
   bestMonths: [2, 3, 4, 9, 10, 11],
+  bestSeasonNote: "Feb - Apr or Sep - Nov (cool and dry, herbs at their most fragrant)",
   entranceFee: "Free to walk through the vegetable plots. A 35,000 VND ticket unlocks the village's historical relics (Nguyễn Điển's tomb, the Cham-era stone well) and helps support local farmers",
   openingHours: "Open daily from 7:00 AM",
   mapUrl: "https://www.google.com/maps?q=15.902579357686461,108.33718030263948",

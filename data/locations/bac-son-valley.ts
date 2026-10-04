@@ -16,6 +16,7 @@ export const bacSonValley: Location = {
   tags: ["🌾 Rice Terraces", "🏔️ Karst Peaks", "🛵 Scenic Ride", "ethnic-minority-culture"],
   bestTime: "Jul - Oct (golden rice harvest, peak season). Feb - Apr (spring blossoms, Lồng Tồng festival). Nov - Jan for trekking in cool weather.",
   bestMonths: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Jul - Oct (golden rice harvest, peak season). Feb - Apr (spring blossoms, Lồng Tồng festival). Nov - Jan for trekking in cool weather.",
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.898614655260356,106.33466895888493",

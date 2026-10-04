@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const pacBoHistoricSite: Location = {
   slug: "pac-bo-historic-site",
   name: "Pác Bó Historic Site",
-  updatedAt: "2026-09-13",
+  updatedAt: "2026-10-04",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.978070844628746,
@@ -16,6 +16,7 @@ export const pacBoHistoricSite: Location = {
   tags: ["🏛️ Hồ Chí Minh Revolutionary Base", "📖 Vietnam History", "🌿 Jungle Caves", "independence-movement"],
   bestTime: "Morning light gives the clearest reflections on Lenin Stream before any afternoon haze builds up",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
+  bestTimeOfDay: "Morning light gives the clearest reflections on Lenin Stream before any afternoon haze builds up",
   entranceFee: "25,000 VND/adult, 5,000 VND/child (under 1.2m) - a recently updated rate; older sources cite 20,000 VND adult / free under 10. Electric vehicle (2-way): around 20,000 VND (a combined ticket covering entrance plus the electric vehicle runs about 45,000 VND total).",
   openingHours: "8:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.978070844628746,106.05087511003386",

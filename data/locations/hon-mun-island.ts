@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honMunIsland: Location = {
   slug: "hon-mun-island",
   name: "Hòn Mun Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.17068371125258,
@@ -16,6 +16,7 @@ export const honMunIsland: Location = {
   tags: ["🤿 Diving in Nha Trang", "🐠 Coral Reef", "🏝️ Marine Reserve"],
   bestTime: "Mar - Aug (calmest seas and the clearest water for snorkeling and diving); Feb and Sep are generally still good but conditions become less predictable. Oct-Nov often see rough seas and tour cancellations.",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Mar - Aug (calmest seas and the clearest water for snorkeling and diving); Feb and Sep are generally still good but conditions become less predictable. Oct-Nov often see rough seas and tour cancellations.",
   entranceFee: "22,000 VND/adult, 11,000 VND/child (marine park fee, collected separately from tour cost)",
   openingHours: "Accessible by organized boat tours. Most departures from Cầu Đá Pier leave between 7:30 AM and 8:30 AM.",
   mapUrl: "https://www.google.com/maps?q=12.17068371125258,109.30185373625723",

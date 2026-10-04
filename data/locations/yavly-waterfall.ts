@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const yavlyWaterfall: Location = {
   slug: "yavly-waterfall",
   name: "Yavly Waterfall",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "",
   lat: 11.511202745108713,
@@ -16,6 +16,7 @@ export const yavlyWaterfall: Location = {
   tags: ["💧 Tà Năng Waterfall", "🥾 Multi-day Trek", "🪢 Abseiling"],
   bestTime: "Nov - Apr (dry season; trails are manageable and stream crossings safe - avoid rainy season when the Tà Năng route becomes dangerously flooded)",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season; trails are manageable and stream crossings safe - avoid rainy season when the Tà Năng route becomes dangerously flooded)",
   entranceFee: "Free",
   openingHours: "Trek typically starts at dawn; overnight camping required for the full multi-day itinerary, though a quick stop is possible for those passing through on the Tà Năng - Phan Dũng route",
   mapUrl: "https://www.google.com/maps?q=11.511202745108713,108.61623377954047",

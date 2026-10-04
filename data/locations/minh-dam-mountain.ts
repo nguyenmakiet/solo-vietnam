@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const minhDamMountain: Location = {
   slug: "minh-dam-mountain",
   name: "Minh Đạm Mountain",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.406176641081109,
@@ -16,6 +16,7 @@ export const minhDamMountain: Location = {
   tags: ["⛰️ Resistance Base", "🥾 Forest Trek", "🏛️ National Historical Relic", "🐒 Wild Monkeys", "vietnam-war"],
   bestTime: "Roughly 7-11 AM, when the sun isn't too harsh - afternoons turn overcast and make the caves harder to navigate",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],
+  bestTimeOfDay: "Roughly 7-11 AM, when the sun isn't too harsh - afternoons turn overcast and make the caves harder to navigate",
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.406176641081109,107.2592560602553",

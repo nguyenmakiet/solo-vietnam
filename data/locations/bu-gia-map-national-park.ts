@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const buGiaMapNationalPark: Location = {
   slug: "bu-gia-map-national-park",
   name: "Bù Gia Mập National Park",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["binh-phuoc"],
   destination: "",
   lat: 12.096260710633082,
@@ -16,6 +16,7 @@ export const buGiaMapNationalPark: Location = {
   tags: ["🌿 Primary Rainforest", "🦧 Gibbon Habitat", "🥾 Beginner Trek"],
   bestTime: "Nov - Apr (dry season: clear trails, clean streams, far fewer leeches). Avoid May - Oct wet season.",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season: clear trails, clean streams, far fewer leeches). Avoid May - Oct wet season.",
   entranceFee: "100,000 VND/adult, 50,000 VND/child (over 1.2m), free under 1.2m. Tour packages 2,290,000 - 2,700,000 VND/person (2N1D, all-inclusive from HCMC).",
   openingHours: "7:00 AM - 5:00 PM (park HQ). Overnight camping treks by arrangement.",
   mapUrl: "https://www.google.com/maps?q=12.096260710633082,107.19588006603547",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const templeOfLiterature: Location = {
   slug: "temple-of-literature",
   name: "Temple of Literature",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.028594787123282",
@@ -16,6 +16,7 @@ export const templeOfLiterature: Location = {
   tags: ["🏛️ Vietnam's First University", "📸 Architecture", "🇻🇳 National Heritage", "🎓 Confucian Temple", "medieval-vietnam", "confucianism"],
   bestTime: "Oct – Apr (cool and dry; avoid summer heat and rain)",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
+  bestSeasonNote: "Oct - Apr (cool and dry; avoid summer heat and rain)",
   entranceFee: "Adults 70,000 VND; children under 16 free; audio guide (foreign language) 100,000 VND",
   openingHours: "Tue – Sun 8:00 – 17:00 (closed Monday)",
   mapUrl: "https://www.google.com/maps?q=21.028500,105.835600",

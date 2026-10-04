@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baHonDamIslands: Location = {
   slug: "ba-hon-dam-islands",
   name: "Ba Hòn Đầm Islands",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "",
   lat: 10.142223284688743,
@@ -16,6 +16,7 @@ export const baHonDamIslands: Location = {
   tags: ["🏝️ Remote Islands", "🚣 Boat Trip", "🏕️ Island Camping", "✨ Bioluminescence"],
   bestTime: "Nov - Apr (dry season, calm seas, good snorkeling visibility, bioluminescence most active)",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season, calm seas, good snorkeling visibility, bioluminescence most active)",
   entranceFee: "Boat ticket from Kiên Lương: 250,000 VND/person same-day return, 300,000 VND overnight return",
   openingHours: "Boats depart 7:30 AM and 9:00 AM. Return boats: 14:00 and 16:00 (day trips). Overnight guests: contact accommodation directly, typically 8-9 AM return.",
   mapUrl: "https://www.google.com/maps?q=10.142223284688743,104.49597050771709",

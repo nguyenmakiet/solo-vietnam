@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const donVillage: Location = {
   slug: "don-village",
   name: "Don Village",
-  updatedAt: "2026-09-17",
+  updatedAt: "2026-10-04",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: 20.442325670852664, // TODO: verify - could not independently confirm via search; treat as approximate
@@ -16,6 +16,7 @@ export const donVillage: Location = {
   tags: ["🌾 Rice Terraces", "🏠 Thai Stilt Houses", "🛏️ Homestay Hub", "thai-culture"],
   bestTime: "Sunrise for mist in the valley and the clearest light on the terraces; late afternoon for softer photography light",
   bestMonths: [5, 6, 9, 10],
+  bestTimeOfDay: "Sunrise for mist in the valley and the clearest light on the terraces; late afternoon for softer photography light",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.442325670852664,105.15306511972044", // TODO: verify with exact coords

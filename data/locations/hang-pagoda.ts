@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hangPagoda: Location = {
   slug: "hang-pagoda",
   name: "Chùa Hang",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.391114193530264,
@@ -23,6 +23,7 @@ export const hangPagoda: Location = {
   ],
   bestTime: "Roughly 6-8 AM for the quietest atmosphere and softest light through the sea almond trees, or 4-6 PM for sunset over the water from the courtyard",
   bestMonths: [4, 5, 6, 7, 8],
+  bestTimeOfDay: "Roughly 6-8 AM for the quietest atmosphere and softest light through the sea almond trees, or 4-6 PM for sunset over the water from the courtyard",
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.391114193530264,109.12497065117606",

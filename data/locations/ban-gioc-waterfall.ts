@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const banGiocWaterfall: Location = {
   slug: "ban-gioc-waterfall",
   name: "Ban Gioc Waterfall",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: "22.854409352361497",
@@ -16,6 +16,7 @@ export const banGiocWaterfall: Location = {
   tags: ["💧 Largest Waterfall on a National Border", "🛶 Bamboo Raft", "🌿 Nature"],
   bestTime: "Sep – Oct (golden rice terraces, peak water flow after rainy season)",
   bestMonths: [9, 10],
+  bestSeasonNote: "Sep - Oct (golden rice terraces, peak water flow after rainy season)",
   entranceFee: "45,000 VND (bamboo raft to base: ~150,000 VND)",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=22.854409352361497,106.72438321761962",

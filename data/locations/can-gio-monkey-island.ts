@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const canGioMonkeyIsland: Location = {
   slug: "can-gio-monkey-island",
   name: "Cần Giờ Monkey Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.409854763930516,
@@ -16,6 +16,7 @@ export const canGioMonkeyIsland: Location = {
   tags: ["🐒 Wild Monkeys", "🌿 Mangrove Forest", "🌊 UNESCO Biosphere"],
   bestTime: "Nov - Apr (dry season; more comfortable and better boat conditions)",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season; more comfortable and better boat conditions)",
   entranceFee: "35,000 VND/person (Vietnamese), 100,000 VND/person (foreigners) - includes the monkey performance show. Optional extras: crocodile feeding (~20,000 VND/turn), canoe rental deeper into the Rừng Sác reserve (600,000-1,000,000 VND round-trip depending on group size), parking (5,000 VND motorbike, 20,000 VND car)",
   openingHours: "7:00 - 17:00 daily",
   mapUrl: "https://www.google.com/maps?q=10.409854763930516,106.88953198932505",

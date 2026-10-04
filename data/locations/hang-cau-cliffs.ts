@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hangCauCliffs: Location = {
   slug: "hang-cau-cliffs",
   name: "Hang Câu",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.388917622220426,
@@ -18,6 +18,7 @@ export const hangCauCliffs: Location = {
   ],
   bestTime: "Roughly 5-6 AM for sunrise, 5:30-6:30 PM for sunset, or afternoon generally when the tide is lower and the beach widens with the cliff face fully exposed for photography",
   bestMonths: [4, 5, 6, 7, 8],
+  bestTimeOfDay: "Roughly 5-6 AM for sunrise, 5:30-6:30 PM for sunset, or afternoon generally when the tide is lower and the beach widens with the cliff face fully exposed for photography",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388917622220426,109.13405569310561",

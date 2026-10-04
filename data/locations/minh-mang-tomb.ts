@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const minhMangTomb: Location = {
   slug: "minh-mang-tomb",
   name: "Minh Mạng Tomb",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.387662100068777,
@@ -16,6 +16,7 @@ export const minhMangTomb: Location = {
   tags: ["👑 Most Architecturally Grand Tomb", "🌊 Lake & Pavilion Gardens", "nguyen-dynasty"],
   bestTime: "Jan - Feb (most comfortable weather - ideal). Feb - Apr and Sep - Nov also good (dry season).",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
+  bestSeasonNote: "Jan - Feb (most comfortable weather - ideal). Feb - Apr and Sep - Nov also good (dry season).",
   entranceFee: "Adults 150,000 VND / Children (7-12) 30,000 VND",
   openingHours: "7:30 AM - 5:30 PM daily. Best: 7-9 AM or 3-5 PM to avoid the midday heat.",
   mapUrl: "https://www.google.com/maps?q=16.387662100068777,107.57082605265036",

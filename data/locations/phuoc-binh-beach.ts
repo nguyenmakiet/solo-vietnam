@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuocBinhBeach: Location = {
   slug: "phuoc-binh-beach",
   name: "Phước Bình Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.405786013422123,
@@ -16,6 +16,7 @@ export const phuocBinhBeach: Location = {
   tags: ["🏖️ 4km Quiet Coastline", "🎣 Fishing Community Beach", "🌊 Between Long Hải & Hồ Tràm"],
   bestTime: "Oct - Nov (cool weather, clear skies, less rain - best overall). Nov - Apr dry season for calmer sea.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Oct - Nov (cool weather, clear skies, less rain - best overall). Nov - Apr dry season for calmer sea.",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.405786013422123,107.20493127981287",

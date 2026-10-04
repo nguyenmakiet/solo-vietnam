@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taPaFields: Location = {
   slug: "ta-pa-fields",
   name: "Ta Pa Fields",
-  updatedAt: "2026-09-22",
+  updatedAt: "2026-10-04",
   provinces: ["an-giang"],
   destination: "",
   lat: 10.402127666662789,
@@ -16,6 +16,7 @@ export const taPaFields: Location = {
   tags: ["🌾 Terraced Rice Fields", "🛕 Khmer Culture", "🌴 Twin Sugar Palms"],
   bestTime: "Before 9:30 AM or after 3 PM to avoid harsh sun",
   bestMonths: [7, 8, 9, 10, 11],
+  bestTimeOfDay: "Before 9:30 AM or after 3 PM to avoid harsh sun",
   entranceFee: "Free",
   openingHours: "Open all day",
   mapUrl: "https://www.google.com/maps?q=10.402127666662789,104.99288003222382",

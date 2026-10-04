@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nhatBeach: Location = {
   slug: "bai-nhat",
   name: "Bãi Nhát",
-  updatedAt: "2026-09-13",
+  updatedAt: "2026-10-04",
   provinces: ["ba-ria-vung-tau"],
   destination: "con-dao",
   lat: 8.644189602871363,
@@ -16,6 +16,7 @@ export const nhatBeach: Location = {
   tags: ["🌅 Best Sunset on Côn Đảo", "🪨 Tidal Rock Formations", "🌊 Tide-Dependent Beach", "🏆 Once Ranked Among Asia's Top Wild Beaches", "french-colonial-era"],
   bestTime: "Morning (roughly 6-9 AM) has gentle, pleasant sunlight and works well for sunrise; from around 5 PM onward is the classic sunset window as the sun softens; and if you're visiting Apr-Aug, midnight to 4 AM offers a chance at Milky Way stargazing on clear nights, away from town lights. Whatever time you pick, arrive as the tide is dropping if you want sand rather than just rock",
   bestMonths: [3, 4, 5, 6, 7, 8, 9, 10],
+  bestTimeOfDay: "Morning (roughly 6-9 AM) has gentle, pleasant sunlight and works well for sunrise; from around 5 PM onward is the classic sunset window as the sun softens; and if you're visiting Apr-Aug, midnight to 4 AM offers a chance at Milky Way stargazing on clear nights, away from town lights. Whatever time you pick, arrive as the tide is dropping if you want sand rather than just rock",
   entranceFee: "Free",
   openingHours: "Open all day (best at low tide)",
   mapUrl: "https://www.google.com/maps?q=8.644189602871363,106.6014777488132",

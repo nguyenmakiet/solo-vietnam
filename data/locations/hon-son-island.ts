@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honSonIsland: Location = {
   slug: "hon-son-island",
   name: "Hòn Sơn Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "",
   lat: 9.806794658299804,
@@ -16,6 +16,7 @@ export const honSonIsland: Location = {
   tags: ["🏝️ Hidden Gulf Island", "🌊 Clear Water", "🚴 Island Cycling"],
   bestTime: "Nov - May (dry season, calm seas, clear water)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
+  bestSeasonNote: "Nov - May (dry season, calm seas, clear water)",
   entranceFee: "Free. Ferry from Rạch Giá: 90,000 VND (regular boat) to 180,000 VND (high-speed) per trip.",
   openingHours: "Open daily; earliest ferry departs 6:30 AM, crossing ~1.5 hours",
   mapUrl: "https://www.google.com/maps?q=10.045800,104.506900",

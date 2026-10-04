@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const saoBeach: Location = {
   slug: "sao-beach",
   name: "Bãi Sao Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: "10.057750",
@@ -16,6 +16,7 @@ export const saoBeach: Location = {
   tags: ["🏖️ White Sand Beach", "🌊 Clear Water", "🦞 Seafood"],
   bestTime: "Jun - Oct for the calmest, clearest water (sheltered from the southwest monsoon). Nov-Apr is when most international tourists visit Phú Quốc, but this is actually Bãi Sao's rougher season - waves and debris from the northeast monsoon are common.",
   bestMonths: [6, 7, 8, 9, 10],
+  bestSeasonNote: "Jun - Oct for the calmest, clearest water (sheltered from the southwest monsoon). Nov-Apr is when most international tourists visit Phú Quốc, but this is actually Bãi Sao's rougher season - waves and debris from the northeast monsoon are common.",
   entranceFee: "Free if entering via the left fork toward Nhà Hàng Mỹ Lan. 60,000 VND charged if entering via the right fork (Bãi Sao 1 signposted on Google Maps).",
   openingHours: "Open 24/7 - best from midday to late afternoon",
   mapUrl: "https://maps.google.com/?q=10.0134,104.0498",

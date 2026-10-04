@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khoMuongVillage: Location = {
   slug: "kho-muong-village",
   name: "Kho Muong Village",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: 20.44871826696882, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
@@ -16,6 +16,7 @@ export const khoMuongVillage: Location = {
   tags: ["🏞️ Remote Valley", "🏠 Thai Stilt Houses", "🌾 Rice Terraces", "🕳️ Cave Access", "thai-culture"],
   bestTime: "Roughly 6-9 AM shows the village at its best, while 3-4 PM is the recommended window specifically for visiting Hang Dơi (Kho Muong Cave)",
   bestMonths: [5, 6, 9, 10],
+  bestTimeOfDay: "Roughly 6-9 AM shows the village at its best, while 3-4 PM is the recommended window specifically for visiting Hang Dơi (Kho Muong Cave)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=20.44871826696882,105.15321491096157", // TODO: verify with exact coords

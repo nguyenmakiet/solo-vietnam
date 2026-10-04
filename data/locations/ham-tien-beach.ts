@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hamTienBeach: Location = {
   slug: "ham-tien-beach",
   name: "Hàm Tiến Beach",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 10.940316,
@@ -16,6 +16,7 @@ export const hamTienBeach: Location = {
   tags: ["🏖️ Beach", "🌊 Waves", "🏄 Surfing"],
   bestTime: "Early morning before the wind picks up is calmest; sunrise here, with the beach facing east, is one of the best photography moments on the coast",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestTimeOfDay: "Early morning before the wind picks up is calmest; sunrise here, with the beach facing east, is one of the best photography moments on the coast",
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=10.940316,108.193239",

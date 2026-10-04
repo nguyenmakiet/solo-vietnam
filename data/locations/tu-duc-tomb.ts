@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tuDucTomb: Location = {
   slug: "tu-duc-tomb",
   name: "Tự Đức Tomb",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.433211195700988,
@@ -16,6 +16,7 @@ export const tuDucTomb: Location = {
   tags: ["🌿 Garden Tomb", "📖 Poet Emperor", "🏡 Pavilion & Lake", "nguyen-dynasty"],
   bestTime: "Jan - Apr (dry season, mild post-rain weather in Jan-Feb, garden at its best). Avoid Sep - Dec - Huế's rainy season brings prolonged heavy rain that makes the mossy stone paths genuinely slippery.",
   bestMonths: [1, 2, 3, 4],
+  bestSeasonNote: "Jan - Apr (dry season, mild post-rain weather in Jan-Feb, garden at its best). Avoid Sep - Dec - Huế's rainy season brings prolonged heavy rain that makes the mossy stone paths genuinely slippery.",
   entranceFee: "150,000 VND adult / 30,000 VND child (7-12). Combo ticket with Khải Định + Minh Mạng tombs available - better value than individual entries.",
   openingHours: "7:00 AM - 5:30 PM. Best: 7:00-10:00 AM (soft light, fewer visitors) or 3:00-5:00 PM (sunset over Lưu Khiêm Lake).",
   mapUrl: "https://www.google.com/maps?q=16.433211195700988,107.5670752256665",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const saigonCentralPostOffice: Location = {
   slug: "saigon-central-post-office",
   name: "Saigon Central Post Office",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-10-04",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.779864930790652,
@@ -16,6 +16,7 @@ export const saigonCentralPostOffice: Location = {
   tags: ["🏛️ French Colonial Landmark", "📮 Working Post Office", "🏙️ French Colonial", "📸 Architecture", "french-colonial-era", "french-architecture"],
   bestTime: "8-10 AM or 4-6 PM tend to be less crowded with more flattering natural light than midday - arriving right at opening is your best bet for an empty hall",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestTimeOfDay: "8-10 AM or 4-6 PM tend to be less crowded with more flattering natural light than midday - arriving right at opening is your best bet for an empty hall",
   entranceFee: "Free",
   openingHours: "Typically open from around 7-8 AM until 6-7 PM, with shorter Sunday hours; posted hours vary between sources, so check locally if timing matters",
   mapUrl: "https://www.google.com/maps?q=10.779864930790652,106.69990840101588",

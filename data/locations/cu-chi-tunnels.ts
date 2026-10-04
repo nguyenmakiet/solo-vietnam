@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const cuChiTunnels: Location = {
   slug: "cu-chi-tunnels",
   name: "Cu Chi Tunnels",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: "11.141519428740597",
@@ -16,6 +16,7 @@ export const cuChiTunnels: Location = {
   tags: ["🪖 War History", "🕳️ Underground Tunnels", "🌿 Jungle Warfare", "📷 Living Museum", "vietnam-war"],
   bestTime: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
   bestMonths: [11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
   entranceFee: "35,000 VND/person (site entry). Guided tour service: additional 100,000 VND/person. Children under 7: free.",
   openingHours: "7:00 AM - 5:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=11.1416,106.4619",

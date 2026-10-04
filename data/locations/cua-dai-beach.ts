@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const cuaDaiBeach: Location = {
   slug: "cua-dai-beach",
   name: "Cửa Đại Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.902162713109306,
@@ -16,6 +16,7 @@ export const cuaDaiBeach: Location = {
   tags: ["🏖️ Hội An Beach", "🚲 Cycling Distance"],
   bestTime: "Mar – Aug (dry season, calm water; avoid Oct – Jan storm season)",
   bestMonths: [3, 4, 5, 6, 7, 8],
+  bestSeasonNote: "Mar - Aug (dry season, calm water; avoid Oct - Jan storm season)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.902162713109306,108.35901183162761",

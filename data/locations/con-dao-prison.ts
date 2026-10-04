@@ -16,6 +16,7 @@ export const conDaoPrison: Location = {
   tags: ["🏛️ French Colonial Prison", "⛓️ Tiger Cages", "vietnam-war", "🕯️ Hàng Dương Cemetery", "french-colonial-era"],
   bestTime: "Dec - Apr (dry season, most comfortable for walking between sites). Mar - Sep also workable - light rain but calmer seas.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 12],
+  bestSeasonNote: "Dec - Apr (dry season, most comfortable for walking between sites). Mar - Sep also workable - light rain but calmer seas.",
   entranceFee: "50,000 VND - one ticket covers the Côn Đảo Museum, Dinh Chúa Đảo, and all prison camps; keep it with you for the full visit.",
   openingHours: "7:00/7:30 AM - 11:00/11:30 AM, 1:30 PM - 5:00/5:30 PM (times vary slightly by source - arrive in the morning to avoid running out of time).",
   mapUrl: "https://www.google.com/maps?q=8.689294969079059,106.6153057028259",
