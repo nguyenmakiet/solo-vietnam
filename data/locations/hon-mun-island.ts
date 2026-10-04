@@ -14,7 +14,6 @@ export const honMunIsland: Location = {
   categories: ["nature", "coast"],
   experiences: ["snorkeling", "diving", "boat-tour"],
   tags: ["🤿 Diving in Nha Trang", "🐠 Coral Reef", "🏝️ Marine Reserve"],
-  bestTime: "Mar - Aug (calmest seas and the clearest water for snorkeling and diving); Feb and Sep are generally still good but conditions become less predictable. Oct-Nov often see rough seas and tour cancellations.",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - Aug (calmest seas and the clearest water for snorkeling and diving); Feb and Sep are generally still good but conditions become less predictable. Oct-Nov often see rough seas and tour cancellations.",
   entranceFee: "22,000 VND/adult, 11,000 VND/child (marine park fee, collected separately from tour cost)",

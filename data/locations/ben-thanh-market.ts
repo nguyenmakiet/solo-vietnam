@@ -14,7 +14,6 @@ export const benThanhMarket: Location = {
   categories: ["food", "culture"],
   experiences: ["shopping", "food", "culture", "photography", "markets", "nightlife"],
   tags: ["🏛️ HCMC Icon", "🛍️ Souvenir Central", "🍜 Food Hall", "📷 Landmark Clocktower", "french-colonial-era"],
-  bestTime: "Year-round; dry season (Dec-Apr) for comfortable walking; morning hours (7-10 AM) for the food section before heat builds.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round; dry season (Dec-Apr) for comfortable walking.",
   bestTimeOfDay: "Morning hours (7-10 AM) for the food section before heat builds.",

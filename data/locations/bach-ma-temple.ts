@@ -19,7 +19,6 @@ export const bachMaTemple: Location = {
     "folk-religion",
     "medieval-vietnam",
   ],
-  bestTime: "Any time of day or year - it's an indoor site, though hours vary by source (see openingHours)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Any time of day or year - it's an indoor site, though hours vary by source (see openingHours)",
   entranceFee: "20,000 VND (as of June 2026) - notably, unlike most temples and pagodas in the area, which are free to enter",

@@ -1,8 +1,7 @@
 /**
  * Read-only consistency audit: season / time-of-day text vs `bestMonths`.
  *
- * Reads `bestSeasonNote` and `bestTimeOfDay` (the fields the legacy
- * `bestTime` text was migrated into). Never writes to data files.
+ * Reads `bestSeasonNote` and `bestTimeOfDay`. Never writes to data files.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to

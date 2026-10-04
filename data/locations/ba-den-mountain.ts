@@ -14,7 +14,6 @@ export const baDenMountain: Location = {
   categories: ["nature", "religion"],
   experiences: ["cable-car", "trekking", "culture", "photography", "history", "religious-site-visit", "hiking"],
   tags: ["⛰️ Highest Peak South", "🛕 Pilgrimage Site", "📸 Panoramic Views", "buddhism", "folk-religion"],
-  bestTime: "Nov - May (dry season, clear summit views); rainy season (Jun - Oct) suits trekkers who prefer cooler trails and lush greenery over clear photos. Best photo light is 7-9 AM before the crowds and haze build up",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Nov - May (dry season, clear summit views); rainy season (Jun - Oct) suits trekkers who prefer cooler trails and lush greenery over clear photos.",
   bestTimeOfDay: "Best photo light is 7-9 AM before the crowds and haze build up",

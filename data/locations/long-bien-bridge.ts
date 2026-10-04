@@ -14,7 +14,6 @@ export const longBienBridge: Location = {
   categories: ["history", "architecture"],
   experiences: ["history", "photography", "walking-tour", "cycling"],
   tags: ["🌉 Colonial Bridge", "📷 Red River Views", "🚂 Active Rail Bridge", "🏯 French Heritage", "french-colonial-era", "french-architecture"],
-  bestTime: "Oct - Apr (cool dry season; early morning for golden light and minimal traffic, or 3-5 PM for warm afternoon light and local activity); Oct-Nov brings reed grass season on the Red River rock beach below the bridge",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cool dry season); Oct-Nov brings reed grass season on the Red River rock beach below the bridge.",
   bestTimeOfDay: "Early morning for golden light and minimal traffic, or 3-5 PM for warm afternoon light and local activity.",

@@ -19,7 +19,6 @@ export const toVoGate: Location = {
     "🌅 Sunset Viewpoint",
     "🏛️ National Heritage Site (2025)",
   ],
-  bestTime: "This spot works for both sunrise and sunset. For golden light without backlighting, aim for roughly 6-8 AM or 5-6:30 PM; if you want general photos without harsh contrast, staying within the 6 AM-1 PM window generally avoids shooting directly into the sun",
   bestMonths: [1, 2, 3, 4],
   bestTimeOfDay: "This spot works for both sunrise and sunset. For golden light without backlighting, aim for roughly 6-8 AM or 5-6:30 PM; if you want general photos without harsh contrast, staying within the 6 AM-1 PM window generally avoids shooting directly into the sun",
   entranceFee: "Free",

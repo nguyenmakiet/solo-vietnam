@@ -14,7 +14,6 @@ export const baHonDamIslands: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "swimming"],
   tags: ["🏝️ Remote Islands", "🚣 Boat Trip", "🏕️ Island Camping", "✨ Bioluminescence"],
-  bestTime: "Nov - Apr (dry season, calm seas, good snorkeling visibility, bioluminescence most active)",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season, calm seas, good snorkeling visibility, bioluminescence most active)",
   entranceFee: "Boat ticket from Kiên Lương: 250,000 VND/person same-day return, 300,000 VND overnight return",

@@ -14,7 +14,6 @@ export const cuaTuStream: Location = {
   categories: ["nature"],
   experiences: ["trekking", "camping", "wildlife", "swimming"],
   tags: ["🏞️ 9-Gate Stream", "🏊 Natural Pools", "🌿 Forest Trek"],
-  bestTime: "Apr - Oct (water levels are best for swimming and the waterfalls are active; avoid during heavy flood season)",
   bestMonths: [4, 5, 6, 7, 8, 9, 10],
   bestSeasonNote: "Apr - Oct (water levels are best for swimming and the waterfalls are active; avoid during heavy flood season)",
   entranceFee: "10,000 VND at Gate 1 (cửa 1). Environmental fee (phí vệ sinh môi trường) may apply - introduced recently to keep the stream cleaner. Parking: 50,000 VND/vehicle. Free if entering via the forest route without passing the gate.",

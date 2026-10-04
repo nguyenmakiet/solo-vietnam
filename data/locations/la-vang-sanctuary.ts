@@ -14,7 +14,6 @@ export const laVangSanctuary: Location = {
   categories: ["religion", "history"],
   experiences: ["culture", "history", "religious-site-visit"],
   tags: ["⛪ National Marian Shrine", "🕊️ 1798 Apparition Site", "🏛️ Minor Basilica", "🌿 Vietnam's Lourdes", "catholicism", "vietnam-war"],
-  bestTime: "Open year-round. August 13-15 offers the most atmospheric experience during the annual pilgrimage, while the cooler months from December to April are more comfortable for sightseeing",
   bestMonths: [1, 2, 3, 4, 8, 12],
   bestSeasonNote: "Open year-round. August 13-15 offers the most atmospheric experience during the annual pilgrimage, while the cooler months from December to April are more comfortable for sightseeing",
   entranceFee: "Free",

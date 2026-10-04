@@ -14,7 +14,6 @@ export const phuQuyIsland: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "cycling", "diving"],
   tags: ["🏝️ Offshore Island", "🤿 Diving & Snorkeling", "🚴 Island Cycling", "🌊 Clear Water"],
-  bestTime: "Mar - Aug (dry season, calm seas, best diving visibility)",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug (dry season, calm seas, best diving visibility)",
   entranceFee: "Free; ferry fare from Phan Thiết 250,000 - 400,000 VND",

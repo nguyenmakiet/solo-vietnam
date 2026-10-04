@@ -14,7 +14,6 @@ export const vietnamMuseumOfEthnology: Location = {
   categories: ["culture"],
   experiences: ["culture", "history", "museum-visit"],
   tags: ["🏛️ Best Museum in Vietnam", "🎎 54 Ethnic Groups", "🌿 Outdoor Village", "ethnic-minority-culture"],
-  bestTime: "Oct - Apr (cool dry season; outdoor exhibits are best explored outside of summer heat and rain)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cool dry season; outdoor exhibits are best explored outside of summer heat and rain)",
   entranceFee: "40,000 VND adults / free for children under 6. Water puppet show: 50,000 VND extra.",

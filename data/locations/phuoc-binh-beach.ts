@@ -14,7 +14,6 @@ export const phuocBinhBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "motorcycling"],
   tags: ["🏖️ 4km Quiet Coastline", "🎣 Fishing Community Beach", "🌊 Between Long Hải & Hồ Tràm"],
-  bestTime: "Oct - Nov (cool weather, clear skies, less rain - best overall). Nov - Apr dry season for calmer sea.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Nov (cool weather, clear skies, less rain - best overall). Nov - Apr dry season for calmer sea.",
   entranceFee: "Free",

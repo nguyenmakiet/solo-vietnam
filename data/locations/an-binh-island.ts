@@ -19,7 +19,6 @@ export const anBinhIsland: Location = {
     "🐠 Coral Reefs",
     "⛵ Boat Trip Required",
   ],
-  bestTime: "Apr - Aug (calm seas, clearest water, best underwater visibility); Sep - Dec seas are rougher and best avoided; late Dec - Apr the island's volcanic rocks turn a distinctive green with seasonal moss, a niche draw for photographers even though it overlaps with rougher sailing conditions early in that window",
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - Aug (calm seas, clearest water, best underwater visibility); Sep - Dec seas are rougher and best avoided; late Dec - Apr the island's volcanic rocks turn a distinctive green with seasonal moss, a niche draw for photographers even though it overlaps with rougher sailing conditions early in that window",
   entranceFee: "No entry fee for the island itself. Getting there costs extra: boat from Lý Sơn's main port to Đảo Bé runs around 170,000 VND/person round-trip (2026 pricing; historically as low as 60,000-120,000 VND in past years). Chartering a private canoe for a group costs roughly 2.5-3 million VND/day. On the island, an electric cart tour costs about 50,000 VND/person and motorbike rental about 100,000 VND/bike",

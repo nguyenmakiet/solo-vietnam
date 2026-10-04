@@ -14,7 +14,6 @@ export const muiCaMauNationalPark: Location = {
   categories: ["nature"],
   experiences: ["boat-tour", "wildlife", "photography", "cycling"],
   tags: ["🗺️ Southernmost Point of Vietnam", "🌿 Mangrove Forest", "🐦 Wildlife"],
-  bestTime: "Dec - Apr (dry season; accessible by road and boat, clearest skies for sunrise/sunset)",
   bestMonths: [1, 2, 3, 4, 12],
   bestSeasonNote: "Dec - Apr (dry season; accessible by road and boat, clearest skies for sunrise/sunset)",
   entranceFee: "90,000 VND per person",

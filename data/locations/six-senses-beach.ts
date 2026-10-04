@@ -14,7 +14,6 @@ export const sixSensesBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "snorkeling", "camping"],
   tags: ["🏖️ Most Beautiful Beach in Con Dao", "🌊 Pristine Water"],
-  bestTime: "Early morning (before 8 AM) for the calmest water, best light, and an empty beach",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestTimeOfDay: "Early morning (before 8 AM) for the calmest water, best light, and an empty beach",
   entranceFee: "Free for the public sections of the beach; the Six Senses resort frontage is private to guests",

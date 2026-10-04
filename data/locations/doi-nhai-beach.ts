@@ -14,7 +14,6 @@ export const doiNhaiBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "camping", "kitesurfing"],
   tags: ["🪁 Kitesurfing Spot", "🏕️ Wild Camping", "🌊 Undeveloped Beach", "🐚 Crab & Snail Foraging"],
-  bestTime: "Windy days give the best kitesurfing conditions; early morning is quietest for swimming and camping",
   bestMonths: [12, 1, 2, 3, 4],
   bestTimeOfDay: "Windy days give the best kitesurfing conditions; early morning is quietest for swimming and camping",
   entranceFee: "Free",

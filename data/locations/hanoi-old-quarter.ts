@@ -14,7 +14,6 @@ export const hanoiOldQuarter: Location = {
   categories: ["culture", "food", "history", "architecture"],
   experiences: ["walking-tour", "food", "shopping", "culture", "history"],
   tags: ["🏘️ 36 Ancient Streets", "🛵 Chaotic & Alive", "🍜 Street Food Capital", "📷 Colonial Architecture", "medieval-vietnam"],
-  bestTime: "Oct - Apr (cool dry season; the streets are more comfortable to walk and the weekend pedestrian zone is best enjoyed in cool weather)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cool dry season; the streets are more comfortable to walk and the weekend pedestrian zone is best enjoyed in cool weather)",
   entranceFee: "Free",

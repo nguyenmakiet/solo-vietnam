@@ -14,7 +14,6 @@ export const catBaTown: Location = {
   categories: ["food"],
   experiences: ["food", "nightlife", "walking-tour", "markets"],
   tags: ["🏘️ Island Town", "🦞 Seafood", "🌅 Harbour Front", "🌙 Cat Ba Nightlife"],
-  bestTime: "Apr - Oct (cool and well suited to resort and beach activities); peak season is May - Jul, when the town is busiest",
   bestMonths: [4, 5, 6, 7, 8, 9, 10],
   bestSeasonNote: "Apr - Oct (cool and well suited to resort and beach activities); peak season is May - Jul, when the town is busiest",
   entranceFee: "Free",

@@ -21,7 +21,6 @@ export const hangPagoda: Location = {
     "buddhism",
     "early-modern-vietnam",
   ],
-  bestTime: "Roughly 6-8 AM for the quietest atmosphere and softest light through the sea almond trees, or 4-6 PM for sunset over the water from the courtyard",
   bestMonths: [4, 5, 6, 7, 8],
   bestTimeOfDay: "Roughly 6-8 AM for the quietest atmosphere and softest light through the sea almond trees, or 4-6 PM for sunset over the water from the courtyard",
   entranceFee: "Free",

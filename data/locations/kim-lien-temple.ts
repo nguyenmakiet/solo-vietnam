@@ -19,7 +19,6 @@ export const kimLienTemple: Location = {
     "folk-religion",
     "medieval-vietnam",
   ],
-  bestTime: "Early morning or afternoon - it's an indoor site, so weather matters less than avoiding the busiest hours",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Early morning or afternoon - it's an indoor site, so weather matters less than avoiding the busiest hours",
   entranceFee: "Free (a separate, small motorbike parking fee applies at the gate, around 10,000 VND)",

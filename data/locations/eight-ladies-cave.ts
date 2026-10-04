@@ -14,7 +14,6 @@ export const eightLadiesCave: Location = {
   categories: ["history"],
   experiences: ["history"],
   tags: ["🕯️ Vietnam War Memorial", "⛰️ Special National Historical Relic", "🛣️ Roadside Site", "vietnam-war"],
-  bestTime: "Mar - Aug is the most convenient period - Quảng Bình's weather is dry and sunny, well suited to the forest road and visiting nearby sights. Any time of day works, though many visitors combine a stop here with a morning or afternoon drive along Road 20 - Quyết Thắng",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug is the most convenient period - Quảng Bình's weather is dry and sunny, well suited to the forest road and visiting nearby sights.",
   bestTimeOfDay: "Any time of day works, though many visitors combine a stop here with a morning or afternoon drive along Road 20 - Quyết Thắng",

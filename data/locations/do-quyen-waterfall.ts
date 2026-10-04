@@ -14,7 +14,6 @@ export const doQuyenWaterfall: Location = {
   categories: ["nature"],
   experiences: ["trekking", "photography", "wildlife", "hiking"],
   tags: ["💧 400m Waterfall", "🌸 Rhododendron Season", "🏔️ Bạch Mã NP", "🧗 Via Ferrata & Zipline"],
-  bestTime: "Jan – Aug (dry season). Mar–Apr for rhododendron bloom. Avoid Sep–Dec rainy season.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Jan - Aug (dry season). Mar-Apr for rhododendron bloom. Avoid Sep-Dec rainy season.",
   entranceFee: "65,000 VND adults / 25,000 VND children. Park shuttle: 900,000 VND/trip up to 12 people (1,300,000 VND return). Adventure tour (Jungle Boss): 11,250,000 VND/person.",

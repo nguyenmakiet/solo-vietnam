@@ -14,7 +14,6 @@ export const trangAn: Location = {
   categories: ["nature", "history"],
   experiences: ["boat-tour", "caving", "photography", "history", "religious-site-visit"],
   tags: ["🚣 Boat Tour", "🪨 UNESCO Heritage", "⛩️ Temples"],
-  bestTime: "Jan - Mar (cool, clear, dry - peak season). Sep - Nov (quieter, mild). Apr - Jun for sunny water reflections.",
   bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11],
   bestSeasonNote: "Jan - Mar (cool, clear, dry - peak season). Sep - Nov (quieter, mild). Apr - Jun for sunny water reflections.",
   entranceFee: "300,000 VND adults / 150,000 VND children (from Jan 2026, includes boat seat, life jacket, travel insurance)",

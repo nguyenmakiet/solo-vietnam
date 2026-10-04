@@ -14,7 +14,6 @@ export const imperialCity: Location = {
   categories: ["history", "architecture", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
   tags: ["🏯 UNESCO Heritage", "nguyen-dynasty", "🏛️ Imperial Architecture"],
-  bestTime: "Jan - Apr (spring, cool and dry - ideal). Apr - Jun for Huế Festival. Avoid Oct - Nov (peak flood season).",
   bestMonths: [1, 2, 3, 4, 5, 6],
   bestSeasonNote: "Jan - Apr (spring, cool and dry - ideal). Apr - Jun for Huế Festival. Avoid Oct - Nov (peak flood season).",
   entranceFee: "200,000 VND/adult & children 12+, 40,000 VND/child (7-12), free under 7. Combo ticket with royal tombs available. Áo dài rental nearby: ~100,000 VND/set.",

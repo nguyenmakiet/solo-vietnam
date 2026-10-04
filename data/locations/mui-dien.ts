@@ -14,7 +14,6 @@ export const muiDien: Location = {
   categories: ["hidden-gem", "nature", "coast"],
   experiences: ["photography", "trekking", "motorcycling", "hiking"],
   tags: ["🏮 Lighthouse", "🌅 First Sunrise", "🌊 Easternmost Cape", "french-colonial-era"],
-  bestTime: "Apr - Sep (warm sunny weather, sea breeze, best for lighthouse and swimming)",
   bestMonths: [4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Apr - Sep (warm sunny weather, sea breeze, best for lighthouse and swimming)",
   entranceFee: "30,000 VND",

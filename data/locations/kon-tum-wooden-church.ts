@@ -14,7 +14,6 @@ export const konTumWoodenChurch: Location = {
   categories: ["religion", "architecture", "history", "culture"],
   experiences: ["history", "culture", "photography", "religious-site-visit"],
   tags: ["⛪ French Mission Architecture", "🪵 All-Wood Construction", "🏛️ Colonial Heritage", "catholicism", "french-colonial-era", "french-architecture"],
-  bestTime: "Sep - Dec is generally considered ideal (dry season, clear skies, soft light for photos); Nov-Dec specifically coincides with Christmas decorations and a livelier atmosphere around the grounds",
   bestMonths: [9, 10, 11, 12],
   bestSeasonNote: "Sep - Dec is generally considered ideal (dry season, clear skies, soft light for photos); Nov-Dec specifically coincides with Christmas decorations and a livelier atmosphere around the grounds",
   entranceFee: "Free",

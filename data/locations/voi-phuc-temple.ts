@@ -19,7 +19,6 @@ export const voiPhucTemple: Location = {
     "folk-religion",
     "medieval-vietnam",
   ],
-  bestTime: "Afternoon (roughly 4-5 PM) for the best light, though mornings are also calm - it's largely weather-independent as most of the experience is within the temple grounds",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Largely weather-independent as most of the experience is within the temple grounds.",
   bestTimeOfDay: "Afternoon (roughly 4-5 PM) for the best light, though mornings are also calm",

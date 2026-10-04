@@ -20,7 +20,6 @@ export const quanThanhTemple: Location = {
     "medieval-vietnam",
     "early-modern-vietnam",
   ],
-  bestTime: "Early morning for the quietest, most contemplative visit - it gets busier on the 1st and 15th of the lunar month",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Early morning for the quietest, most contemplative visit - it gets busier on the 1st and 15th of the lunar month",
   entranceFee: "10,000 VND per person, free for young children",

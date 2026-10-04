@@ -14,7 +14,6 @@ export const imperialCitadelOfThangLong: Location = {
   categories: ["history", "architecture"],
   experiences: ["history", "walking-tour", "museum-visit"],
   tags: ["🏯 UNESCO World Heritage", "👑 1,000 Years of Imperial History", "🌙 Night Tour", "🔍 Archaeological Site", "medieval-vietnam"],
-  bestTime: "Oct - Apr (cool dry season; avoid public holidays when crowds are largest)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cool dry season; avoid public holidays when crowds are largest)",
   entranceFee: "30,000 VND adults / 15,000 VND students. Night tour: 300,000 VND adults / 150,000 VND children under 12 / free for children under 5",

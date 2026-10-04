@@ -15,7 +15,6 @@ export const phungHungMuralStreet: Location = {
   categories: ["culture"],
   experiences: ["photography", "walking-tour"],
   tags: ["🎨 Street Art", "🏯 Under the Railway", "🌸 Hanoi Hidden Gem"],
-  bestTime: "Year-round; morning light (before 9 AM) is best for photography before the street gets busy",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   bestSeasonNote: "Year-round.",
   bestTimeOfDay: "Morning light (before 9 AM) is best for photography before the street gets busy",

@@ -14,7 +14,6 @@ export const daPloaStream: Location = {
   categories: ["nature"],
   experiences: ["trekking", "swimming", "motorcycling", "camping", "fishing", "hiking"],
   tags: ["💦 Multi-tier Stream", "🌿 Remote Jungle"],
-  bestTime: "Roughly December-May has less rain and the clearest, coolest water; June-October brings heavy rain and real flash-flood risk, so visit after rain has cleared rather than during it if you're there in the wetter months",
   bestMonths: [12, 1, 2, 3, 4, 5],
   bestSeasonNote: "Roughly December-May has less rain and the clearest, coolest water; June-October brings heavy rain and real flash-flood risk, so visit after rain has cleared rather than during it if you're there in the wetter months",
   entranceFee: "Free if you bring and pitch your own tent. Locals nearby also rent tents for those who'd rather not bring their own gear, priced around 150,000 VND/person (as of 2026) - a helpful middle option between fully self-sufficient wild camping and a full-service commercial site.",

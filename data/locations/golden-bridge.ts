@@ -14,7 +14,6 @@ export const goldenBridge: Location = {
   categories: ["architecture"],
   experiences: ["photography"],
   tags: ["🌉 Giant Stone Hands", "📸 Most Photographed in Vietnam", "☁️ Above the Clouds", "🌅 Panoramic Views"],
-  bestTime: "Mar – Aug (clearest views; avoid Nov – Jan when fog can obscure the hands)",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug (clearest views; avoid Nov - Jan when fog can obscure the hands)",
   entranceFee: "Included in Bà Nà Hills ticket (950,000 VND/adult, 750,000 VND/child)",

@@ -14,7 +14,6 @@ export const masaraHill: Location = {
   categories: ["nature"],
   experiences: ["trekking", "photography", "camping", "motorcycling"],
   tags: ["🌾 Pink Grass Hill", "🌄 Sunrise & Sunset"],
-  bestTime: "Roughly 6-8 AM while dew still lingers on the grass, or after 4 PM for the softest afternoon light - avoid overcast or rainy days if photography is the priority",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestTimeOfDay: "Roughly 6-8 AM while dew still lingers on the grass, or after 4 PM for the softest afternoon light - avoid overcast or rainy days if photography is the priority",
   entranceFee: "Free",

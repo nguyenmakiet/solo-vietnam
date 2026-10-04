@@ -14,7 +14,6 @@ export const honSonIsland: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "motorcycling", "swimming", "hiking"],
   tags: ["🏝️ Hidden Gulf Island", "🌊 Clear Water", "🚴 Island Cycling"],
-  bestTime: "Nov - May (dry season, calm seas, clear water)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
   bestSeasonNote: "Nov - May (dry season, calm seas, clear water)",
   entranceFee: "Free. Ferry from Rạch Giá: 90,000 VND (regular boat) to 180,000 VND (high-speed) per trip.",

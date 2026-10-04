@@ -14,7 +14,6 @@ export const hamTienBeach: Location = {
   categories: ["coast"],
   experiences: ["beach", "photography", "swimming", "kitesurfing"],
   tags: ["🏖️ Beach", "🌊 Waves", "🏄 Surfing"],
-  bestTime: "Early morning before the wind picks up is calmest; sunrise here, with the beach facing east, is one of the best photography moments on the coast",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestTimeOfDay: "Early morning before the wind picks up is calmest; sunrise here, with the beach facing east, is one of the best photography moments on the coast",
   entranceFee: "Free",

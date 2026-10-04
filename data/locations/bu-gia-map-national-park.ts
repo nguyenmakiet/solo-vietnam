@@ -14,7 +14,6 @@ export const buGiaMapNationalPark: Location = {
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "camping", "swimming"],
   tags: ["🌿 Primary Rainforest", "🦧 Gibbon Habitat", "🥾 Beginner Trek"],
-  bestTime: "Nov - Apr (dry season: clear trails, clean streams, far fewer leeches). Avoid May - Oct wet season.",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season: clear trails, clean streams, far fewer leeches). Avoid May - Oct wet season.",
   entranceFee: "100,000 VND/adult, 50,000 VND/child (over 1.2m), free under 1.2m. Tour packages 2,290,000 - 2,700,000 VND/person (2N1D, all-inclusive from HCMC).",

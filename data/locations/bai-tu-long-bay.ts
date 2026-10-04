@@ -14,7 +14,6 @@ export const baiTuLongBay: Location = {
   categories: ["nature", "coast"],
   experiences: ["kayaking", "boat-tour", "swimming", "beach", "caving"],
   tags: ["🌊 Off the Beaten Path", "🏖️ Isolated Beaches"],
-  bestTime: "Mar - May (calm, clear, warm - best overall). Sep - Oct (clear skies, fewer boats). Avoid Jun - Jul (typhoon season).",
   bestMonths: [3, 4, 5, 9, 10],
   bestSeasonNote: "Mar - May (calm, clear, warm - best overall). Sep - Oct (clear skies, fewer boats). Avoid Jun - Jul (typhoon season).",
   entranceFee: "Included in cruise packages. Cruises: 2,000,000 - 3,500,000 VND/person/night depending on cruise class and itinerary.",

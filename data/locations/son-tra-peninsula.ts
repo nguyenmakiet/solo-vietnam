@@ -14,7 +14,6 @@ export const sonTraPeninsula: Location = {
   categories: ["nature", "coast"],
   experiences: ["wildlife", "photography", "motorcycling", "beach", "religious-site-visit", "swimming"],
   tags: ["🐒 Red-Shanked Douc Langur", "🌿 Nature Reserve", "🏍️ Scenic Drive", "buddhism", "french-colonial-era"],
-  bestTime: "Mar - Sep (dry season, clear roads, best wildlife sightings). Oct - Feb brings rain and fog; roads can be slippery.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - Sep (dry season, clear roads, best wildlife sightings). Oct - Feb brings rain and fog; roads can be slippery.",
   entranceFee: "Free",

@@ -14,7 +14,6 @@ export const hieuVillage: Location = {
   categories: ["culture", "nature"],
   experiences: ["culture", "photography", "walking-tour", "swimming", "homestay"],
   tags: ["🌾 Rice Terraces", "💧 Waterfall Village", "🏠 Thai Stilt Houses", "🌉 Bamboo Bridge", "thai-culture"],
-  bestTime: "Early morning gives the quietest, softest light on the waterfall and bridges before any day-trippers from Don Village arrive; June specifically brings the year's strongest water flow at the falls, alongside the first rice harvest",
   bestMonths: [5, 6, 9, 10],
   bestSeasonNote: "June specifically brings the year's strongest water flow at the falls, alongside the first rice harvest",
   bestTimeOfDay: "Early morning gives the quietest, softest light on the waterfall and bridges before any day-trippers from Don Village arrive.",

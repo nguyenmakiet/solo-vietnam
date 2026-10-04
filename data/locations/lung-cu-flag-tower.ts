@@ -14,7 +14,6 @@ export const lungCuFlagTower: Location = {
   categories: ["history"],
   experiences: ["history", "trekking"],
   tags: ["🚩 Northernmost Point", "🏔️ Viewpoint", "🇻🇳 Landmark"],
-  bestTime: "Sep - Nov (buckwheat flowers + clear skies) or Mar - May (spring blossoms, clear weather). Jun - Aug also good (dry, cool, green).",
   bestMonths: [3, 4, 5, 6, 7, 8, 9, 10, 11],
   bestSeasonNote: "Sep - Nov (buckwheat flowers + clear skies) or Mar - May (spring blossoms, clear weather). Jun - Aug also good (dry, cool, green).",
   entranceFee: "25,000 VND/adult, free for children under 1.2m",

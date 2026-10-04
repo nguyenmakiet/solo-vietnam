@@ -14,7 +14,6 @@ export const buiVienStreet: Location = {
   categories: ["entertainment"],
   experiences: ["nightlife", "food", "walking-tour"],
   tags: ["🎉 Walking Street", "🍺 Bar Strip", "🌃 Neon Nights", "🌍 Backpacker Central"],
-  bestTime: "Year-round; evenings only - the street is quiet during the day. Weekday evenings are lively but remain open to traffic; Saturday and Sunday nights (7 PM-2 AM) are when the street officially closes to vehicles and becomes a full walking street, which is when the atmosphere is most intense",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Evenings only - the street is quiet during the day. Weekday evenings are lively but remain open to traffic; Saturday and Sunday nights (7 PM-2 AM) are when the street officially closes to vehicles and becomes a full walking street, which is when the atmosphere is most intense",
   entranceFee: "Free (the street closes to vehicle traffic and becomes a walking street on Saturday and Sunday nights, 7 PM-2 AM; on other nights it stays open to traffic, and even on weekend nights, enforcement of the vehicle barriers has reportedly been inconsistent lately, so stay alert regardless)",

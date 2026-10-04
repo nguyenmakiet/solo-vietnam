@@ -14,7 +14,6 @@ export const lungPo: Location = {
   categories: ["nature", "history"],
   experiences: ["photography", "history", "motorcycling"],
   tags: ["🔴 Red River Entry Point", "🇻🇳 Border Marker 92", "🏴 31m Flagpole", "🌸 Kapok Season (March)"],
-  bestTime: "Mar (kapok bloom); Sep - Nov (clear skies, best visibility from flagpole)",
   bestMonths: [3, 9, 10, 11],
   bestSeasonNote: "Mar (kapok bloom); Sep - Nov (clear skies, best visibility from flagpole)",
   entranceFee: "Free",

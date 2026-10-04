@@ -14,7 +14,6 @@ export const anBangBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "surfing", "kayaking", "photography", "cycling"],
   tags: ["🏖️ Hoi An Beach", "🚲 Cycling Distance", "🌊 Watersports", "🌅 Sunrise"],
-  bestTime: "Mar - Sep (dry season, calm seas, clear water - ideal). Oct - Feb brings unpredictable rain and rougher conditions.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - Sep (dry season, calm seas, clear water - ideal). Oct - Feb brings unpredictable rain and rougher conditions.",
   entranceFee: "Free",

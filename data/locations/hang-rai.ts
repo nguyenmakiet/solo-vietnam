@@ -14,7 +14,6 @@ export const hangRai: Location = {
   categories: ["hidden-gem", "nature", "coast"],
   experiences: ["photography", "trekking", "swimming", "snorkeling"],
   tags: ["🪨 Ancient Coral Rock Formations", "🌅 Sunset Views", "🌊 Wild Coast"],
-  bestTime: "Jan – Aug (dry season). Best at sunrise (5–6 AM) or late afternoon (4–6 PM) - avoid midday sun which is extremely harsh.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Jan - Aug (dry season).",
   bestTimeOfDay: "Best at sunrise (5-6 AM) or late afternoon (4-6 PM) - avoid midday sun which is extremely harsh.",

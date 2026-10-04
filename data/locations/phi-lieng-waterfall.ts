@@ -14,7 +14,6 @@ export const phiLiengWaterfall: Location = {
   categories: ["nature"],
   experiences: ["trekking", "swimming", "motorcycling", "camping"],
   tags: ["💦 7-Tier Waterfall", "🌿 Remote Forest Trek", "🏍️ Motorbike Trail"],
-  bestTime: "Nov - Apr (dry season: manageable trails, clear streams, campable base). The May - Oct rainy season brings the strongest, most beautiful flow and is worth seeing, but the trail turns muddy and the descent becomes genuinely dangerous - only go with care and local guidance.",
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season: manageable trails, clear streams, campable base). The May - Oct rainy season brings the strongest, most beautiful flow and is worth seeing, but the trail turns muddy and the descent becomes genuinely dangerous - only go with care and local guidance.",
   entranceFee: "Free (may need to pass through forest protection station)",

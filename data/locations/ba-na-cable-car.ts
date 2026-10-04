@@ -14,7 +14,6 @@ export const baNaCableCar: Location = {
   categories: ["entertainment"],
   experiences: ["cable-car", "photography"],
   tags: ["🚡 World Record Cable Car", "☁️ Through the Clouds", "📸 Aerial Views", "🏰 French Village"],
-  bestTime: "Mar – Aug (clearest visibility). Arrive 7:30-8:30 AM before the 9:30-11 AM peak crowd window.",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug (clearest visibility).",
   bestTimeOfDay: "Arrive 7:30-8:30 AM before the 9:30-11 AM peak crowd window.",

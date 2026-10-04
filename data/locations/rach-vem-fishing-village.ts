@@ -14,7 +14,6 @@ export const rachVemFishingVillage: Location = {
   categories: ["culture", "nature", "coast"],
   experiences: ["culture", "food", "walking-tour", "boat-tour"],
   tags: ["🦑 Starfish Beach", "🎣 Stilt House Village", "🍚 Floating Restaurant", "🌊 Northern Phu Quoc"],
-  bestTime: "Nov - Apr (dry season, calm water, best starfish visibility; peak Dec-Mar when starfish are most concentrated)",
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season, calm water, best starfish visibility; peak Dec-Mar when starfish are most concentrated)",
   entranceFee: "Free. Boat to Starfish Beach: 100,000 VND/person return. Beach chair rental: 50,000 VND/chair.",

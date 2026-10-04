@@ -14,7 +14,6 @@ export const taXuaMountain: Location = {
   categories: ["hidden-gem", "nature"],
   experiences: ["trekking", "photography", "camping"],
   tags: ["🦕 Dinosaur Spine Ridge", "🌊 Sea of Clouds", "🐢 Turtle Rock", "🌿 Moss Forest"],
-  bestTime: "Nov - Apr (dry season, highest chance of sea of clouds, clearest skies)",
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season, highest chance of sea of clouds, clearest skies)",
   entranceFee: "Free (guide + porter fees apply)",

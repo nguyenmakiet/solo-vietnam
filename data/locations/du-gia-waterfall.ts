@@ -14,7 +14,6 @@ export const duGiaWaterfall: Location = {
   categories: ["nature"],
   experiences: ["swimming"],
   tags: ["💧 Thác Ba Tiên", "🏊 Cliff Jumping", "🥾 River Trek"],
-  bestTime: "Summer (Jun – Aug): clear water, warm weather, ideal for swimming and cliff jumping",
   bestMonths: [6, 7, 8],
   bestSeasonNote: "Summer (Jun - Aug): clear water, warm weather, ideal for swimming and cliff jumping",
   entranceFee: "Free (20,000 VND motorbike parking)",

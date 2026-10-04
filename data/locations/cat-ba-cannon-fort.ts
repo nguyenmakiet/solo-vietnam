@@ -16,7 +16,6 @@ export const catBaCannonFort: Location = {
   status: "closed",
   statusNote: "Closed to ticketed visits since around 2020. As of 2026, access routes have barriers and signage advising against informal entry, reportedly due to safety concerns over deteriorating structures. Check current status locally before visiting - the nearby Radio Tower viewpoint is a reliable alternative.",
   tags: ["💣 WWII Cannon Fort", "📸 Panoramic Views", "🏔️ Hilltop", "french-colonial-era"],
-  bestTime: "Currently closed - the nearby Radio Tower viewpoint is open year-round; best at sunset Oct - Apr",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   bestSeasonNote: "Currently closed - the nearby Radio Tower viewpoint is open year-round; best at sunset Oct - Apr",
   entranceFee: "Closed — no entry",

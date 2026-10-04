@@ -14,7 +14,6 @@ export const yenMinhPineForest: Location = {
   categories: ["nature"],
   experiences: ["photography", "motorcycling", "camping"],
   tags: ["🌲 Highland Pine Forest", "🌫️ Morning Mist", "🏍️ Scenic Road"],
-  bestTime: "Roughly 5:30-8:00 AM for sunrise mist, or 4:00-5:30 PM for golden late-afternoon light through the pines",
   bestMonths: [3, 4, 9, 10, 11],
   bestTimeOfDay: "Roughly 5:30-8:00 AM for sunrise mist, or 4:00-5:30 PM for golden late-afternoon light through the pines",
   entranceFee: "Free",

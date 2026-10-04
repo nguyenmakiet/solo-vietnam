@@ -14,7 +14,6 @@ export const benHaiRiver: Location = {
   categories: ["history"],
   experiences: ["history", "photography", "museum-visit"],
   tags: ["🌉 Reunification Bridge", "🏳️ DMZ History", "🚗 DMZ Road Trip", "vietnam-war"],
-  bestTime: "Feb - Aug (dry season; avoid Sep-Nov typhoon season)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Feb - Aug (dry season; avoid Sep-Nov typhoon season)",
   entranceFee: "50,000 VND/adult (from March 2026 pricing); children under 6 free, children 6-12 counted two per ticket",

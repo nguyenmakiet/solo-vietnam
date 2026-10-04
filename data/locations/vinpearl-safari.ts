@@ -14,7 +14,6 @@ export const vinpearlSafari: Location = {
   categories: ["entertainment", "nature"],
   experiences: ["wildlife"],
   tags: ["🦁 Open Safari", "🦒 African Animals", "📸 Wildlife Photography", "🚌 Safari Bus"],
-  bestTime: "Nov – Apr (dry season, animals most active in cooler temperatures). Visit early morning (9-11 AM) or late afternoon (from 3 PM) - midday heat drives animals into shade.",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season, animals most active in cooler temperatures).",
   bestTimeOfDay: "Visit early morning (9-11 AM) or late afternoon (from 3 PM) - midday heat drives animals into shade.",

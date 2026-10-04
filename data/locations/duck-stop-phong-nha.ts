@@ -14,7 +14,6 @@ export const duckStopPhongNha: Location = {
   categories: ["entertainment"],
   experiences: ["wildlife"],
   tags: ["🦆 Duck Feeding Farm", "🐃 Buffalo Rides", "📸 TikTok-Famous", "🌾 Bong Lai Valley"],
-  bestTime: "Apr - Aug is the dry season and the more reliable window - the rural, unpaved sections of road getting out here turn muddy and harder to navigate in the Sep-Mar rainy season. Within any visit, aim outside peak tour-group hours (roughly late afternoon) for a quieter experience and better photos without crowds. A popular pairing: Duck Stop in the morning, Phong Nha Cave in the afternoon",
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - Aug is the dry season and the more reliable window - the rural, unpaved sections of road getting out here turn muddy and harder to navigate in the Sep-Mar rainy season.",
   bestTimeOfDay: "Aim outside peak tour-group hours (roughly late afternoon) for a quieter experience and better photos without crowds. A popular pairing: Duck Stop in the morning, Phong Nha Cave in the afternoon",

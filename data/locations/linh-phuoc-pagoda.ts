@@ -14,7 +14,6 @@ export const linhPhuocPagoda: Location = {
   categories: ["religion", "architecture"],
   experiences: ["photography", "history", "religious-site-visit"],
   tags: ["⛩️ Ceramic Mosaic Pagoda", "🐉 Dragon Staircase", "🚂 Train Access", "buddhism"],
-  bestTime: "Year-round; morning for best photography light on the mosaics, and to arrive ahead of the tour buses",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Morning for best photography light on the mosaics, and to arrive ahead of the tour buses",
   entranceFee: "Free",

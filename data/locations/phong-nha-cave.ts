@@ -14,7 +14,6 @@ export const phongNhaCave: Location = {
   categories: ["nature"],
   experiences: ["caving", "boat-tour"],
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "🌊 Underground River"],
-  bestTime: "Mar – Aug (dry season, Son River water is clearest and most turquoise; cave may close Sep-Nov due to flooding)",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug (dry season, Son River water is clearest and most turquoise; cave may close Sep-Nov due to flooding)",
   entranceFee: "Boat: 700,000 VND per boat (max 12 people, shared cost). Cave entry ticket purchased at Phong Nha - Tien Son visitor centre.",

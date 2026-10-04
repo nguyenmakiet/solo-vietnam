@@ -14,7 +14,6 @@ export const phongNhaBotanicGarden: Location = {
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "cycling", "swimming", "hiking"],
   tags: ["🌿 Jungle Trails", "💦 Gió Waterfall", "🏊 Natural Pools"],
-  bestTime: "March-August offers the safest trekking, emerald-green swimming pools, and the clearest water. September-February brings fuller waterfalls and lush forest but also slippery trails, stronger currents, and more leeches",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "March-August offers the safest trekking, emerald-green swimming pools, and the clearest water. September-February brings fuller waterfalls and lush forest but also slippery trails, stronger currents, and more leeches",
   entranceFee: "Entrance fees have varied in recent years (historically around 40,000 VND; some operators now quote around 80,000 VND) - check locally before visiting. Parking: 5,000 VND motorbike, 10,000 VND car. Motorbike rental in Phong Nha town runs around 150,000 VND/day if you need one to get here",

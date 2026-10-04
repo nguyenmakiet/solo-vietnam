@@ -14,7 +14,6 @@ export const traQueVillage: Location = {
   categories: ["food", "culture"],
   experiences: ["culture", "food", "cycling", "photography", "walking-tour"],
   tags: ["🌿 Herb Village", "👨‍🍳 Cooking Class"],
-  bestTime: "Feb - Apr or Sep - Nov (cool and dry, herbs at their most fragrant)",
   bestMonths: [2, 3, 4, 9, 10, 11],
   bestSeasonNote: "Feb - Apr or Sep - Nov (cool and dry, herbs at their most fragrant)",
   entranceFee: "Free to walk through the vegetable plots. A 35,000 VND ticket unlocks the village's historical relics (Nguyễn Điển's tomb, the Cham-era stone well) and helps support local farmers",

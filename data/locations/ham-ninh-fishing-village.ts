@@ -14,7 +14,6 @@ export const hamNinhFishingVillage: Location = {
   categories: ["food", "culture", "coast"],
   experiences: ["culture", "food", "walking-tour", "markets"],
   tags: ["🎣 Oldest Fishing Village", "🦀 Seafood", "🌅 Sunrise Spot", "🪵 Wooden Bridge"],
-  bestTime: "Nov – Apr (dry season; early morning for freshest catch, sunrise, and best atmosphere)",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season).",
   bestTimeOfDay: "Early morning for freshest catch, sunrise, and best atmosphere.",

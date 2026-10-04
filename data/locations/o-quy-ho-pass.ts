@@ -14,7 +14,6 @@ export const oQuyHoPass: Location = {
   categories: ["nature"],
   experiences: ["motorcycling", "photography"],
   tags: ["🏔️ Tứ Đại Đỉnh Đèo", "🌫️ Cloud Sea", "🛣️ Epic Road", "🌄 Northwest Loop"],
-  bestTime: "Sep - Nov (autumn colour, clear skies). Mar - May (spring blossoms, cloud sea). For cloud sea: 16:00-17:30 daily is the golden window.",
   bestMonths: [3, 4, 5, 9, 10, 11],
   bestSeasonNote: "Sep - Nov (autumn colour, clear skies). Mar - May (spring blossoms, cloud sea). For cloud sea: 16:00-17:30 daily is the golden window.",
   entranceFee: "Free",

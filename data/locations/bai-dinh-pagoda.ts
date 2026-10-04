@@ -14,7 +14,6 @@ export const baiDinhPagoda: Location = {
   categories: ["religion", "culture", "architecture"],
   experiences: ["history", "religious-site-visit"],
   tags: ["⛩️ Largest Pagoda in Vietnam", "🏯 500 Arhat Statues", "🔔 Giant Bell", "buddhism"],
-  bestTime: "Oct - Apr (dry season, cool weather - best for walking). Jan - Mar lunar calendar for festival atmosphere (also the most crowded period - avoid if seeking tranquility).",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   bestSeasonNote: "Oct - Apr (dry season, cool weather - best for walking). Jan - Mar lunar calendar for festival atmosphere (also the most crowded period - avoid if seeking tranquility).",
   entranceFee: "Free entry. Electric cart: 60,000 VND/person round-trip (gate to main complex, ~3.5km), or combo tickets 150,000 VND (cart + bảo tháp access) / 300,000 VND (cart + transfers between zones + bảo tháp) / 390,000 VND (adds Tràng An boat tour). Bảo tháp (tower) alone: 50,000 VND. Guide: 300,000 VND/tour.",

@@ -14,7 +14,6 @@ export const damTrauBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "photography", "wildlife", "swimming"],
   tags: ["🏖️ Top 25 Beaches in the World", "✈️ Planes Landing Overhead", "🪸 Coral Reef", "🌴 Day-Trip Beach"],
-  bestTime: "Roughly 7-10 AM or 3-5 PM for the gentlest light and coolest temperatures for swimming and photos; low tide gives the best snorkeling conditions; check flight schedules or an app like Flightradar24 if plane-spotting is your goal, since arrivals are often a little ahead of schedule",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Roughly 7-10 AM or 3-5 PM for the gentlest light and coolest temperatures for swimming and photos; low tide gives the best snorkeling conditions; check flight schedules or an app like Flightradar24 if plane-spotting is your goal, since arrivals are often a little ahead of schedule",
   entranceFee: "A small entrance fee applies (commonly cited around 2,000-3,000 VND/person), plus parking (roughly 3,000-5,000 VND/scooter). Deckchair and hammock rental runs about 30,000-40,000 VND/hour if you don't want to sit directly on the sand.",

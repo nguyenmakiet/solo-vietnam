@@ -14,7 +14,6 @@ export const whiteSandDunes: Location = {
   categories: ["nature"],
   experiences: ["photography", "wildlife"],
   tags: ["🏜️ Sahara of Vietnam", "🌅 Sunrise Dunes", "🚙 Jeep Tour"],
-  bestTime: "Apr - Aug is the most visually striking period - clear skies, white clouds, and lotus season on the lake. Sep - Dec is the rainy season, when wet sand loses its characteristic white look. Within a day, the golden windows are roughly 5-7 AM and 4-6 PM - strictly avoid 11 AM-2 PM, when temperatures can exceed 40°C and the sand genuinely burns bare feet",
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - Aug is the most visually striking period - clear skies, white clouds, and lotus season on the lake. Sep - Dec is the rainy season, when wet sand loses its characteristic white look.",
   bestTimeOfDay: "The golden windows are roughly 5-7 AM and 4-6 PM - strictly avoid 11 AM-2 PM, when temperatures can exceed 40°C and the sand genuinely burns bare feet",

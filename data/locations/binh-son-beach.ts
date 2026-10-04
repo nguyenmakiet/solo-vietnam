@@ -14,7 +14,6 @@ export const binhSonBeach: Location = {
   categories: ["coast"],
   experiences: ["beach", "swimming", "photography", "cycling", "motorcycling", "kitesurfing"],
   tags: ["🏖️ City Beach", "🌊 Clear Water"],
-  bestTime: "Roughly Mar - Sep is the dry season here (Ninh Thuận has the least rainfall of any province in Vietnam), with Apr - Jun often the liveliest stretch for water sports events and beach activity. For golden light, sunrise (around 5:30-7:30 AM) or sunset (around 4:30-6:30 PM) are best - note these are also when local crowds are heaviest, so if you want it quiet you'll need to trade off against harsher midday sun. Avoid Oct - Dec, when the sea gets rough and swimming becomes impractical",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Roughly Mar - Sep is the dry season here (Ninh Thuận has the least rainfall of any province in Vietnam), with Apr - Jun often the liveliest stretch for water sports events and beach activity. Avoid Oct - Dec, when the sea gets rough and swimming becomes impractical",
   bestTimeOfDay: "For golden light, sunrise (around 5:30-7:30 AM) or sunset (around 4:30-6:30 PM) are best - note these are also when local crowds are heaviest, so if you want it quiet you'll need to trade off against harsher midday sun.",

@@ -14,7 +14,6 @@ export const hangMua: Location = {
   categories: ["nature"],
   experiences: ["trekking", "photography"],
   tags: ["🏔️ Viewpoint", "🪨 486 Stone Steps", "🌾 Panoramic View"],
-  bestTime: "May - Jun (golden rice harvest + lotus season - peak scenery). Oct - Dec (cool, dry, quiet). Early morning 7-8 AM year-round for best light and fewest people.",
   bestMonths: [5, 6, 10, 11, 12],
   bestSeasonNote: "May - Jun (golden rice harvest + lotus season - peak scenery). Oct - Dec (cool, dry, quiet).",
   bestTimeOfDay: "Early morning 7-8 AM for best light and fewest people.",

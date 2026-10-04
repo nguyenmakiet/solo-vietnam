@@ -14,7 +14,6 @@ export const westLake: Location = {
   categories: ["nature", "culture"],
   experiences: ["cycling", "food", "photography"],
   tags: ["🚲 Lake Loop Cycling", "🌅 Sunset Views", "☕ Cafe District", "🛕 Ancient Pagodas"],
-  bestTime: "Oct - Apr is the classic cool, dry-season recommendation, most comfortable for cycling the perimeter; some locals specifically favour Aug-Oct as a pleasant transitional window (not too hot, not yet cold). Lotus blooms Jun - Jul. Sunset (roughly 5-6 PM, depending on season and weather) is consistently the best time of day, and early morning is a good, quieter alternative",
   bestMonths: [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Oct - Apr is the classic cool, dry-season recommendation, most comfortable for cycling the perimeter; some locals specifically favour Aug-Oct as a pleasant transitional window (not too hot, not yet cold). Lotus blooms Jun - Jul.",
   bestTimeOfDay: "Sunset (roughly 5-6 PM, depending on season and weather) is consistently the best time of day, and early morning is a good, quieter alternative",

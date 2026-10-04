@@ -14,7 +14,6 @@ export const cuaDaiBeach: Location = {
   categories: ["coast"],
   experiences: ["beach", "swimming", "cycling"],
   tags: ["🏖️ Hội An Beach", "🚲 Cycling Distance"],
-  bestTime: "Mar – Aug (dry season, calm water; avoid Oct – Jan storm season)",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug (dry season, calm water; avoid Oct - Jan storm season)",
   entranceFee: "Free",

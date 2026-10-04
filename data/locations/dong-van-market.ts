@@ -14,7 +14,6 @@ export const dongVanMarket: Location = {
   categories: ["culture", "food"],
   experiences: ["culture", "markets", "food"],
   tags: ["🛍️ Sunday Market", "🏔️ Karst Plateau", "🎎 Ethnic Minority", "ethnic-minority-culture"],
-  bestTime: "Sunday morning - arrive before 9 AM. Buckwheat flower season (Oct-Nov) adds a dramatic backdrop.",
   bestMonths: [1, 2, 3, 10, 11, 12],
   bestSeasonNote: "Buckwheat flower season (Oct-Nov) adds a dramatic backdrop.",
   bestTimeOfDay: "Sunday morning - arrive before 9 AM.",

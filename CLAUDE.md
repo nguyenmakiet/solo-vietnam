@@ -134,6 +134,7 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 
 - Each location is a `.ts` file with structured data fields
 - Fields include: `highlights`, `thingsToKnow`, `visitorTips`, `FAQ`, `sentiment`, `bestMonths` (number[]), nearby locations, similar experiences
+- Best time to visit = `bestMonths` (month strip) + `bestSeasonNote` (seasonal context shown under the strip) + `bestTimeOfDay` (time-of-day card). Locations have no `bestTime` field; `bestTime` on provinces and destinations is a separate field
 
 ### `bestMonths` semantic
 

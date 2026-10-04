@@ -14,7 +14,6 @@ export const paradiseCave: Location = {
   categories: ["nature"],
   experiences: ["caving", "photography", "trekking"],
   tags: ["🪨 One of Asia's Longest Dry Caves", "🥾 Boardwalk", "✨ Formations"],
-  bestTime: "Apr - early Aug (dry season - best). Avoid Sep - Mar (rainy season, slippery trails and steps, risk of flooding Oct-Nov).",
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - early Aug (dry season - best). Avoid Sep - Mar (rainy season, slippery trails and steps, risk of flooding Oct-Nov).",
   entranceFee: "Standard 1km tour: 265,000 VND adult / 143,000 VND child (1.1-1.3m) / free under 1.1m (includes VAT + electric buggy). 4km adventure tour: ~2,200,000 VND/person (includes guide, safety gear, meal).",

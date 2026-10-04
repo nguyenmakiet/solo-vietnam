@@ -14,7 +14,6 @@ export const thungNhamBirdPark: Location = {
   categories: ["nature"],
   experiences: ["wildlife", "boat-tour", "photography"],
   tags: ["🦅 Egret Colony", "🌿 Wetland", "📸 Wildlife Photography"],
-  bestTime: "Apr – Aug (nesting season, largest bird concentrations) or Oct – Nov",
   bestMonths: [4, 5, 6, 7, 8, 10, 11],
   bestSeasonNote: "Apr - Aug (nesting season, largest bird concentrations) or Oct - Nov",
   entranceFee: "100,000 VND/person (over 1.2m), free for children under 1.2m",

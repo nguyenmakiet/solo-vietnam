@@ -16,7 +16,6 @@ export const hangCauCliffs: Location = {
   tags: [
     "🌊 Volcanic Cliff Beach",
   ],
-  bestTime: "Roughly 5-6 AM for sunrise, 5:30-6:30 PM for sunset, or afternoon generally when the tide is lower and the beach widens with the cliff face fully exposed for photography",
   bestMonths: [4, 5, 6, 7, 8],
   bestTimeOfDay: "Roughly 5-6 AM for sunrise, 5:30-6:30 PM for sunset, or afternoon generally when the tide is lower and the beach widens with the cliff face fully exposed for photography",
   entranceFee: "Free",

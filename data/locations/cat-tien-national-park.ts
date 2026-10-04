@@ -14,7 +14,6 @@ export const catTienNationalPark: Location = {
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "camping", "cycling", "boat-tour", "hiking"],
   tags: ["🌿 UNESCO Biosphere", "🦎 Wildlife Sanctuary", "🥾 Jungle Trek", "🦧 Primate Centre"],
-  bestTime: "Nov - May (dry season, easiest trails). Dec - Mar is the sweet spot (cool, dry, clearest conditions). Jun - Oct rainy season has lusher forest and 20% off accommodation, but Bàu Sấu and longer treks become harder.",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],
   bestSeasonNote: "Nov - May (dry season, easiest trails). Dec - Mar is the sweet spot (cool, dry, clearest conditions). Jun - Oct rainy season has lusher forest and 20% off accommodation, but Bàu Sấu and longer treks become harder.",
   entranceFee: "60,000 VND adult (includes ferry), 20,000 VND student, 10,000 VND child (under 16). Museum: 20,000 VND. Bear Rescue Center: 30,000 VND. Night safari: 145,000 VND/person. Bàu Sấu trek: 250,000 VND/person (excludes guide/transport). Guide: 350,000-450,000 VND/5 hours. Bicycle: 30,000 VND/hour or 150,000 VND/day (or 100,000 VND for a 4-hour combo if doing a day trip).",

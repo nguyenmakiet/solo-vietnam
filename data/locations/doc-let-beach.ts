@@ -14,7 +14,6 @@ export const docLetBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "photography", "cycling"],
   tags: ["🏖️ White Sand, Turquoise Water", "🌊 Calm Bay", "🚗 Day Trip from Nha Trang"],
-  bestTime: "Jan - Aug is the dry season overall, with Jan - Apr generally the most pleasant (cooler, less intense sun) and the whole window good for calm water. Sep - Dec is the rainy season - avoid if possible, since roads to the beach can get slippery and the sea turns rougher and colder",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Jan - Aug is the dry season overall, with Jan - Apr generally the most pleasant (cooler, less intense sun) and the whole window good for calm water. Sep - Dec is the rainy season - avoid if possible, since roads to the beach can get slippery and the sea turns rougher and colder",
   entranceFee: "The beach itself, which runs about 8km, generally has no blanket entrance fee - but specific managed sections and facilities (such as ticketed zones within KDL Dốc Lết or resort-run stretches) do charge, commonly cited around 50,000 VND/adult and 25,000 VND/child at those specific spots. Which fee, if any, applies depends entirely on which stretch of the 8km beach you end up at - check locally rather than assuming either a free or paid experience",

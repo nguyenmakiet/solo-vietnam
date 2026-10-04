@@ -14,7 +14,6 @@ export const conDaoNationalPark: Location = {
   categories: ["nature"],
   experiences: ["wildlife", "trekking", "snorkeling", "photography", "kayaking", "diving", "hiking"],
   tags: ["🐢 Sea Turtle Nesting", "🌿 Marine National Park", "🐠 Coral Reefs", "🥾 Jungle Trails"],
-  bestTime: "May - Sep (sea turtle nesting season, calmer seas, lush rainforest). Best overall: May - Aug.",
   bestMonths: [5, 6, 7, 8, 9],
   bestSeasonNote: "May - Sep (sea turtle nesting season, calmer seas, lush rainforest). Best overall: May - Aug.",
   entranceFee: "60,000 VND/adult, 20,000 VND/student, 10,000 VND/child",

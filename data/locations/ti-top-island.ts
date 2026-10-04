@@ -14,7 +14,6 @@ export const tiTopIsland: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "trekking", "photography"],
   tags: ["🏖️ Crescent Beach", "🏔️ Summit Viewpoint"],
-  bestTime: "Roughly 9-10 AM or 3-4:30 PM tend to have better light for photos and avoid the harshest midday sun on the climb - though arriving as early as possible still gives the best odds of a quieter beach before cruise crowds build",
   bestMonths: [6, 7],
   bestTimeOfDay: "Roughly 9-10 AM or 3-4:30 PM tend to have better light for photos and avoid the harshest midday sun on the climb - though arriving as early as possible still gives the best odds of a quieter beach before cruise crowds build",
   entranceFee: "Ti Top is included in the Ha Long Bay Route 2 sightseeing ticket, which costs 250,000 VND/person/visit. This is a route-wide sightseeing fee rather than a separate Ti Top entrance fee. Check the current port and ticketing charges when booking, as total costs may vary by departure point and ticket arrangement.",

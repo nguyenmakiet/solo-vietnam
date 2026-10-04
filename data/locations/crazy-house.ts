@@ -14,7 +14,6 @@ export const crazyHouse: Location = {
   categories: ["architecture"],
   experiences: ["photography"],
   tags: ["🏠 Gaudí-Style Architecture", "🎨 Art & Design", "🏨 Functioning Guesthouse"],
-  bestTime: "Sep - Nov (cool weather, fewer crowds - best). Avoid Dec - Feb (Tết) and Jun - Jul (summer holidays) when crowds peak.",
   bestMonths: [9, 10, 11],
   bestSeasonNote: "Sep - Nov (cool weather, fewer crowds - best). Avoid Dec - Feb (Tết) and Jun - Jul (summer holidays) when crowds peak.",
   entranceFee: "Free under 1.2m, 30,000 VND (1.2-1.4m), 80,000 VND (1.4m+). Overnight stays in themed rooms: ~1,000,000-2,700,000 VND.",

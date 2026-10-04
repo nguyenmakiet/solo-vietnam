@@ -14,7 +14,6 @@ export const banGiocWaterfall: Location = {
   categories: ["nature"],
   experiences: ["boat-tour"],
   tags: ["💧 Largest Waterfall on a National Border", "🛶 Bamboo Raft", "🌿 Nature"],
-  bestTime: "Sep – Oct (golden rice terraces, peak water flow after rainy season)",
   bestMonths: [9, 10],
   bestSeasonNote: "Sep - Oct (golden rice terraces, peak water flow after rainy season)",
   entranceFee: "45,000 VND (bamboo raft to base: ~150,000 VND)",
