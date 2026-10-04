@@ -168,15 +168,19 @@ body {
      --type-border        hairline border on tinted surfaces
      --type-accent        dots, bars, active markers (>= 3:1 on white)
      --type-accent-strong text in the accent colour (>= 6:1 on tint/white/paper)
+   Destination pages reuse the same palettes as regional accents:
+   .region-theme-north = sage, -central = warm stone/terracotta, -south = sea-glass.
    ============================================================ */
-.type-theme-blue {
+.type-theme-blue,
+.region-theme-south {
   /* water: beach, island, bay, river, lake, cape, stream */
   --type-tint: #edf4f4;
   --type-border: #c9dcdd;
   --type-accent: #3f7f8c;
   --type-accent-strong: #2b5f69;
 }
-.type-theme-green {
+.type-theme-green,
+.region-theme-north {
   /* land and nature: mountain, forest, waterfall, cave, valley, pass... */
   --type-tint: #eff3eb;
   --type-border: #d3dccb;
@@ -190,7 +194,8 @@ body {
   --type-accent: #736b86;
   --type-accent-strong: #575069;
 }
-.type-theme-purple {
+.type-theme-purple,
+.region-theme-central {
   /* heritage: temple, pagoda, citadel, tomb, historic site, village... */
   --type-tint: #f7efea;
   --type-border: #e8d3c7;
