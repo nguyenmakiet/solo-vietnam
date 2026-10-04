@@ -129,3 +129,18 @@ Released as `batch-4` (21). Total released: 216/258.
   - `mui-tro-fishing-village`: "clear and calm in the dry season", with no months given.
 - **Audit overrides:** 21 added, because `bestTime` is time-of-day only for all of them.
 - **Not processed:** the 8 owner-decision rows (`sa-vi-cape`, `khe-van-waterfall`, `pa-sy-waterfall`, `fairy-stream`, `dau-tieng-lake`, `yen-minh-pine-forest`, `vinh-trung-fields`, `quan-ba-twin-mountains`) and the 25 Medium/Low locations.
+
+## Resolution log - Batch 5 (2026-10-04, owner decisions on the 8 remaining rows)
+
+| Location | bestMonths before → after | Content change |
+|---|---|---|
+| `sa-vi-cape` | Apr-Sep (unchanged) | - |
+| `khe-van-waterfall` | Jan-Aug → Jan-Apr + Oct-Nov | Tip, seasonal insight and visitor tip no longer recommend May-Sep; they describe it as the strongest but dangerous flow (dangerous-season rule) |
+| `pa-sy-waterfall` | Sep-Dec (unchanged, owner keeps Dec) | - |
+| `fairy-stream` | Nov-Apr → Mar + Nov | Seasonal insight rewritten from the owner's source; "Feb–Apr" removed from the trickle tip |
+| `dau-tieng-lake` | Nov-Apr → Dec-Apr + Jun | - |
+| `yen-minh-pine-forest` | Jan-Apr + Sep-Dec → Mar-Apr + Sep-Nov | Seasonal insight filled from the owner's source (was null) |
+| `vinh-trung-fields` | Aug-Nov → Aug-Apr | - |
+| `quan-ba-twin-mountains` | Mar-May + Sep-Nov → Sep-Apr | - |
+
+Released as `batch-5` (8), each with an audit override. Total released: 224/258.

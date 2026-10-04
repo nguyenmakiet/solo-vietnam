@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const fairyStream: Location = {
   slug: "fairy-stream",
   name: "Fairy Stream",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 10.955760120620356,
@@ -15,7 +15,7 @@ export const fairyStream: Location = {
   experiences: ["walking-tour", "photography"],
   tags: ["🏞️ Wading Stream", "🔴 Red Canyon Walls", "🚶 Wading Walk"],
   bestTime: "Roughly 6:30-9:00 AM for the coolest air and fewest crowds, or 2:30-5:30 PM as the light softens and brings out the red sandstone colour more vividly - both are better than the harsh midday sun reflecting off the canyon walls",
-  bestMonths: [1, 2, 3, 4, 11, 12],
+  bestMonths: [3, 11],
   entranceFee: "Historically 15,000 VND/adult and 6,000-7,000 VND/child at the main gate, though recent reports suggest entry may now be free - confirm current pricing on arrival. Either way, ignore anyone charging around 50,000 VND for an unofficial 'zoo ticket' elsewhere along the stream, as this isn't a legitimate fee. Parking runs around 40,000 VND for a car.",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.955760120620356,108.25941870282894",
@@ -37,7 +37,7 @@ export const fairyStream: Location = {
     "Most visitors get the best scenery in the first 20-30 minutes of walking, where the canyon walls are tallest and most colourful; some find the final stretch to the waterfall (35-60 minutes each way) underwhelming, with a small waterfall and less appealing water - decide based on your own time and interest rather than assuming further is always better",
     "The canyon walls are tallest and most dramatic in the mid-section - the red and yellow layering is the result of different iron oxide concentrations in the sandstone",
     "Go in the morning - the light enters the canyon from the east in the morning hours and illuminates the red walls directly, and it's also quieter before weekend crowds build up",
-    "The stream dries to a trickle in extreme dry season (Feb–Apr) - the walk is still possible but less scenic without flowing water",
+    "The stream can drop to a trickle in the driest weeks - the walk is still possible but less scenic without flowing water",
     "Multiple entry points exist along the stream - if you run into pushy parking attendants or fee collectors at one, it's fine to try another",
   ],
   content: {
@@ -61,7 +61,7 @@ export const fairyStream: Location = {
       difficulty: "An easy walk overall, though the water reaches knee-deep in places, the streambed can have sharp rocks, and some sections get muddy and slippery - not ideal for elderly visitors or very young children",
       safety: "Wear water shoes or sandals rather than going barefoot, given sharp rocks, debris, and occasional litter in the water. Some visitors have reported strong currents near the waterfall - keep a safe distance. A few reports mention snakes in the area and occasional soft, quicksand-like patches - stay alert, especially off the main path.",
       accessibility: "The official entrance fee is free-to-low-cost depending on the source (15,000 VND is the most commonly cited current rate) - ignore unofficial 'zoo ticket' collectors asking for around 50,000 VND elsewhere along the stream. Parking runs about 40,000 VND. Multiple entry points exist if one has problematic attendants.",
-      seasonal: "Water flow is better in the rainy season (roughly November onward); sunny weather gives the best visibility and photos.",
+      seasonal: "March and November are the best months - the scenery is at its most vivid and the weather makes exploring and getting around easy; sunny weather gives the best visibility and photos.",
     },
     visitorTips: [
       "Wear sand-friendly shoes or sandals rather than going barefoot, and bring a bag to carry them if you need to remove them at any point",

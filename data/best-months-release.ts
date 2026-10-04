@@ -234,6 +234,16 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "ta-pa-fields",
     "ti-top-island",
   ],
+  "batch-5": [
+    "dau-tieng-lake",
+    "fairy-stream",
+    "khe-van-waterfall",
+    "pa-sy-waterfall",
+    "quan-ba-twin-mountains",
+    "sa-vi-cape",
+    "vinh-trung-fields",
+    "yen-minh-pine-forest",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -296,6 +306,15 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "masara-hill": "Pink grass Nov-Dec, green Jan-Feb, golden Mar-Apr; Jun-Oct roads 'treacherous'",
   "quan-ba-heaven-gate": "Tips: Aug-Sep rice, Oct-Dec buckwheat, Dec-Mar flower valley; avoid Jun-Jul",
   "khau-pha-pass": "Tips: Sep-Oct peak season; avoid the June-August rainy season",
+  // batch-5 (reports/best-months-needs-research-high.md, owner-decision rows)
+  "sa-vi-cape": "Owner decision: tips - Trà Cổ beach calm Apr-Jul and popular in summer; bestTime is time-of-day only",
+  "khe-van-waterfall": "Jan-Apr safe flow, late Oct-Nov reed season; May-Sep dangerous currents excluded (dangerous-season rule)",
+  "pa-sy-waterfall": "Seasonal insight + FAQ: roughly September through early December; owner keeps Dec",
+  "fairy-stream": "Owner decision (source-reviewed): March and November; seasonal insight aligned",
+  "dau-tieng-lake": "Seasonal insight: Dec-Apr low water (best camping) and mid-June sweet spot",
+  "yen-minh-pine-forest": "Owner decision (source-reviewed): autumn Sep-Nov and spring Mar-Apr; seasonal insight added",
+  "vinh-trung-fields": "Seasonal insight + FAQ: Aug-Nov flood reflections; Nov-Apr 'different but still attractive'",
+  "quan-ba-twin-mountains": "Seasonal insight + tips: Sep-Nov and Mar-Apr best, Oct-Dec buckwheat, Jan-Mar visitors",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
