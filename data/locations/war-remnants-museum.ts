@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const warRemnantsMuseum: Location = {
   slug: "war-remnants-museum",
   name: "War Remnants Museum",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: "10.779534930802145",
@@ -16,6 +16,7 @@ export const warRemnantsMuseum: Location = {
   tags: ["📸 War Photography", "⚔️ Agent Orange", "🚁 Military Hardware", "vietnam-war", "french-colonial-era"],
   bestTime: "Year-round; mornings are quieter and cooler",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestTimeOfDay: "Mornings are quieter and cooler",
   entranceFee: "40,000 VND. Audio guide: 80,000 VND (available in 9 languages).",
   openingHours: "7:30 AM – 5:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.779534930802145,106.69218502415347",

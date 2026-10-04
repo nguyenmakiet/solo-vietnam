@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dragonBridge: Location = {
   slug: "dragon-bridge",
   name: "Dragon Bridge",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: 16.06124852539428,
@@ -16,6 +16,8 @@ export const dragonBridge: Location = {
   tags: ["🐉 Fire-Breathing Dragon", "🌉 Icon of Đà Nẵng", "🔥 Weekend Show"],
   bestTime: "Year-round. For the best experience, visit on Friday, Saturday, or Sunday at 9 PM for the fire and water show. December-March offers the most comfortable evening weather, while April-September has clearer skies but larger crowds.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round. December-March offers the most comfortable evening weather, while April-September has clearer skies but larger crowds.",
+  bestTimeOfDay: "For the best experience, visit on Friday, Saturday, or Sunday at 9 PM for the fire and water show.",
   entranceFee: "Free",
   openingHours: "Open 24/7; fire and water show: Fri, Sat & Sun 9:00 PM (extended schedule during Tết and major holidays)",
   mapUrl: "https://www.google.com/maps?q=16.06124852539428,108.22810029126948",

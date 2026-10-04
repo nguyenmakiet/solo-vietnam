@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dongVanOldTown: Location = {
   slug: "dong-van-old-town",
   name: "Đồng Văn Old Town",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.274,
@@ -16,6 +16,8 @@ export const dongVanOldTown: Location = {
   tags: ["🏘️ 40 Ancient Stone Houses", "🔥 Weekend Bonfire & Cultural Night", "🛒 Sunday Minority Market", "🌙 Night Market", "ethnic-minority-culture", "french-colonial-era"],
   bestTime: "Sep - Nov (buckwheat flowers, cooler air) or Mar - Apr (peach blossoms). Weekends for the cultural night events.",
   bestMonths: [3, 4, 9, 10, 11],
+  bestSeasonNote: "Sep - Nov (buckwheat flowers, cooler air) or Mar - Apr (peach blossoms).",
+  bestTimeOfDay: "Weekends for the cultural night events.",
   entranceFee: "Free",
   openingHours: "Open 24/7. Cultural night events: Saturday and Sunday evenings from around 8 PM.",
   mapUrl: "https://maps.google.com/?q=23.2739,105.3622",

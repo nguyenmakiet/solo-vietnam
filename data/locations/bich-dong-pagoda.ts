@@ -16,6 +16,8 @@ export const bichDongPagoda: Location = {
   tags: ["⛩️ Cave Pagoda", "🏔️ Three-Tier Temple", "🚲 Cycling from Tam Cốc", "buddhism"],
   bestTime: "Late May - early June (timing varies slightly by year; golden rice fields, best photography). Mar - Apr (dry, cool). Lunar Jan - Mar (around Feb) for the festival season. Visit around 4 PM for golden afternoon light over the karst landscape.",
   bestMonths: [2, 3, 4, 5, 6],
+  bestSeasonNote: "Late May - early June (timing varies slightly by year; golden rice fields, best photography). Mar - Apr (dry, cool). Lunar Jan - Mar (around Feb) for the festival season.",
+  bestTimeOfDay: "Visit around 4 PM for golden afternoon light over the karst landscape.",
   entranceFee: "Free (donation box inside).",
   openingHours: "7:30 AM - 4:30 PM. Best light: around 4:00 PM when afternoon sun hits the karst peaks.",
   mapUrl: "https://www.google.com/maps?q=20.22892866015645,105.95146127475308",

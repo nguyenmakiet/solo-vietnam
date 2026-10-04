@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hanoiOldQuarter: Location = {
   slug: "hanoi-old-quarter",
   name: "Hanoi Old Quarter",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.035625405852137",
@@ -16,6 +16,7 @@ export const hanoiOldQuarter: Location = {
   tags: ["🏘️ 36 Ancient Streets", "🛵 Chaotic & Alive", "🍜 Street Food Capital", "📷 Colonial Architecture", "medieval-vietnam"],
   bestTime: "Oct - Apr (cool dry season; the streets are more comfortable to walk and the weekend pedestrian zone is best enjoyed in cool weather)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Oct - Apr (cool dry season; the streets are more comfortable to walk and the weekend pedestrian zone is best enjoyed in cool weather)",
   entranceFee: "Free",
   openingHours: "Open 24 hours; weekend pedestrian zone Fri evening - Sun night",
   mapUrl: "https://www.google.com/maps?q=21.035625405852137,105.85092919329092",

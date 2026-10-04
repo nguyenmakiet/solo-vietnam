@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const longBienBridge: Location = {
   slug: "long-bien-bridge",
   name: "Long Bien Bridge",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.04008590793085,
@@ -16,6 +16,8 @@ export const longBienBridge: Location = {
   tags: ["🌉 Colonial Bridge", "📷 Red River Views", "🚂 Active Rail Bridge", "🏯 French Heritage", "french-colonial-era", "french-architecture"],
   bestTime: "Oct - Apr (cool dry season; early morning for golden light and minimal traffic, or 3-5 PM for warm afternoon light and local activity); Oct-Nov brings reed grass season on the Red River rock beach below the bridge",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Oct - Apr (cool dry season); Oct-Nov brings reed grass season on the Red River rock beach below the bridge.",
+  bestTimeOfDay: "Early morning for golden light and minimal traffic, or 3-5 PM for warm afternoon light and local activity.",
   entranceFee: "Free",
   openingHours: "Open 24 hours - pedestrian and bicycle access at all times",
   mapUrl: "https://www.google.com/maps?q=21.04008590793085,105.85037194035824",

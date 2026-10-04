@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bayMauCoconutForest: Location = {
   slug: "bay-mau-coconut-forest",
   name: "Bảy Mẫu Coconut Forest",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.877556321921798,
@@ -16,6 +16,8 @@ export const bayMauCoconutForest: Location = {
   tags: ["🛶 Basket Boat", "🥥 Water Coconut Forest", "🎶 Local Performance"],
   bestTime: "Feb-Jun is coolest and driest; May-Jul overlaps with Hội An's lantern festival season if you want to combine visits, though it's hotter; Aug-Nov is cooler with less rain, and worth timing around a full moon if you want to see the lantern-floating festival too. Whatever the season, aim for early morning or after 3 PM to avoid the most intense heat",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  bestSeasonNote: "Feb-Jun is coolest and driest; May-Jul overlaps with Hội An's lantern festival season if you want to combine visits, though it's hotter; Aug-Nov is cooler with less rain, and worth timing around a full moon if you want to see the lantern-floating festival too.",
+  bestTimeOfDay: "Aim for early morning or after 3 PM to avoid the most intense heat",
   entranceFee: "Entrance ticket: 30,000 VND. Basket boat, per boat (2 people): around 200,000 VND for Vietnamese visitors, 250,000 VND for foreign visitors (foreign visitors over 100kg are seated one per boat for safety) - booking online in advance (around 140,000 VND/boat as of 2026) is typically cheaper than arranging on-site, where prices are more often quoted higher. Full package tours (entry, basket boat, fishing, craft village visit, lunch) run roughly 300,000-500,000 VND/person",
   openingHours: "7:30 AM - 6:30 PM",
   mapUrl: "https://www.google.com/maps?q=15.877556321921798,108.37267755516427",

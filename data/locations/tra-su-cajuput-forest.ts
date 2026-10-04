@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const traSuCajuputForest: Location = {
   slug: "tra-su-cajuput-forest",
   name: "Trà Sư Cajuput Forest",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["an-giang"],
   destination: "mekong-delta",
   lat: "10.584555814623155",
@@ -16,6 +16,8 @@ export const traSuCajuputForest: Location = {
   tags: ["🌿 Flooded Forest", "🦅 Birdwatching"],
   bestTime: "Sep - Nov (flood season; forest fully inundated, green reflection at its most vivid). Morning before 11 AM or late afternoon to avoid midday heat.",
   bestMonths: [9, 10, 11],
+  bestSeasonNote: "Sep - Nov (flood season; forest fully inundated, green reflection at its most vivid).",
+  bestTimeOfDay: "Morning before 11 AM or late afternoon to avoid midday heat.",
   entranceFee: "120,000 VND entrance + 70,000 VND boat (rowing or motorized, different routes). Observation tower: 5,000 VND.",
   openingHours: "6:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.584555814623155,105.05977775517107",

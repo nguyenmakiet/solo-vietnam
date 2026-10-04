@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hanoiTrainStreet: Location = {
   slug: "hanoi-train-street",
   name: "Hanoi Train Street",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.018024290863416",
@@ -16,6 +16,8 @@ export const hanoiTrainStreet: Location = {
   tags: ["🚂 Train Passes Meters Away", "📷 Iconic Photo Spot", "☕ Trackside Cafes", "🏘️ Residential Street"],
   bestTime: "Oct - Apr (cool dry season). Afternoons and evenings have more train frequency.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Oct - Apr (cool dry season).",
+  bestTimeOfDay: "Afternoons and evenings have more train frequency.",
   entranceFee: "Free (cafes charge for drinks - expect above-average prices)",
   openingHours: "Accessible at all times. See tips for current train schedule.",
   mapUrl: "https://www.google.com/maps?q=21.018024290863416,105.8408455979318",

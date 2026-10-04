@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const buiVienStreet: Location = {
   slug: "bui-vien-street",
   name: "Bui Vien Street",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.767394484893734,
@@ -16,6 +16,7 @@ export const buiVienStreet: Location = {
   tags: ["🎉 Walking Street", "🍺 Bar Strip", "🌃 Neon Nights", "🌍 Backpacker Central"],
   bestTime: "Year-round; evenings only - the street is quiet during the day. Weekday evenings are lively but remain open to traffic; Saturday and Sunday nights (7 PM-2 AM) are when the street officially closes to vehicles and becomes a full walking street, which is when the atmosphere is most intense",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestTimeOfDay: "Evenings only - the street is quiet during the day. Weekday evenings are lively but remain open to traffic; Saturday and Sunday nights (7 PM-2 AM) are when the street officially closes to vehicles and becomes a full walking street, which is when the atmosphere is most intense",
   entranceFee: "Free (the street closes to vehicle traffic and becomes a walking street on Saturday and Sunday nights, 7 PM-2 AM; on other nights it stays open to traffic, and even on weekend nights, enforcement of the vehicle barriers has reportedly been inconsistent lately, so stay alert regardless)",
   openingHours: "Bars open from around 5:00 PM daily; the street becomes a car-free walking zone specifically on Saturday and Sunday nights, 7:00 PM - 2:00 AM",
   mapUrl: "https://www.google.com/maps?q=10.767394484893734,106.69395623211263",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thamMaPass: Location = {
   slug: "tham-ma-pass",
   name: "Thẩm Mã Pass",
-  updatedAt: "2026-09-05",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.170578279202783,
@@ -16,6 +16,8 @@ export const thamMaPass: Location = {
   tags: ["🏍️ Motorbike", "🏔️ Nine-Bend Pass", "🌾 Rice Terraces"],
   bestTime: "Sep - Nov (golden rice terraces, then buckwheat flowers later in the window) or Mar - Apr (spring flowers) are the classic seasons. Fair warning: Sep-Nov, especially weekends during peak buckwheat season, is also when this pass gets its worst traffic - documented cases of 30-minute-plus jams have made local news. Weekday visits are far more pleasant if your schedule allows. Within a day, the best light is early morning (around 6-8 AM, often with mist for a softer look) or late afternoon (roughly 4:30-5:30 PM, golden light good for sunset shots)",
   bestMonths: [3, 4, 9, 10, 11],
+  bestSeasonNote: "Sep - Nov (golden rice terraces, then buckwheat flowers later in the window) or Mar - Apr (spring flowers) are the classic seasons. Fair warning: Sep-Nov, especially weekends during peak buckwheat season, is also when this pass gets its worst traffic - documented cases of 30-minute-plus jams have made local news. Weekday visits are far more pleasant if your schedule allows.",
+  bestTimeOfDay: "The best light is early morning (around 6-8 AM, often with mist for a softer look) or late afternoon (roughly 4:30-5:30 PM, golden light good for sunset shots)",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.2833,105.2500",

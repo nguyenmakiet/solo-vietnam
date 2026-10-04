@@ -16,6 +16,8 @@ export const muiNeFishingVillage: Location = {
   tags: ["🎣 Fishing Village", "🌅 Sunrise", "🦐 Seafood"],
   bestTime: "Jun - Aug is the ideal period - relatively little rain and plenty of sunshine. Sep - Nov brings storms and heavy rain that make coastal exploration dangerous. Early morning is the right time for the fish market",
   bestMonths: [6, 7, 8],
+  bestSeasonNote: "Jun - Aug is the ideal period - relatively little rain and plenty of sunshine. Sep - Nov brings storms and heavy rain that make coastal exploration dangerous.",
+  bestTimeOfDay: "Early morning is the right time for the fish market",
   entranceFee: "Free",
   openingHours: "Open 24 hours (fish market most active 5:00 - 8:00 AM)",
   mapUrl: "https://www.google.com/maps?q=10.94117833027457,108.2795665776806",

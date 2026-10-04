@@ -16,6 +16,8 @@ export const nhanTower: Location = {
   tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night", "champa-heritage", "hinduism"],
   bestTime: "Mar - early Sep is ideal - Phú Yên's dry season, with clear skies, plenty of sun, little rain and pleasant conditions for sightseeing. Oct - Feb is the rainy season, cooler and harder for sightseeing. Within a day, roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Mar - early Sep is ideal - Phú Yên's dry season, with clear skies, plenty of sun, little rain and pleasant conditions for sightseeing. Oct - Feb is the rainy season, cooler and harder for sightseeing.",
+  bestTimeOfDay: "Roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",
   entranceFee: "Free to walk up. An optional electric cart to the summit costs around 10,000 VND one-way / 15,000 VND round-trip for adults (roughly half that for children) - walking up the stairs or road costs nothing.",
   openingHours: "6:30 AM – 11:00 PM daily (the electric cart typically runs during a shorter daytime window - check on arrival)",
   mapUrl: "https://www.google.com/maps?q=13.082464193252497,109.30199511819382",

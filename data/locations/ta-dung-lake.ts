@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taDungLake: Location = {
   slug: "ta-dung-lake",
   name: "Tà Đùng Lake",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["dak-nong"],
   destination: "",
   lat: 11.85958318658573,
@@ -16,6 +16,7 @@ export const taDungLake: Location = {
   tags: ["⛵ Island-Dotted Lake", "🌲 National Park", "🛶 Kayaking & SUP"],
   bestTime: "Nov - Apr (dry season, clear skies, blue water - best for photography). Jul - Oct (rainy season, lake at full level, sea of clouds possible at 5-6 AM).",
   bestMonths: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season, clear skies, blue water - best for photography). Jul - Oct (rainy season, lake at full level, sea of clouds possible at 5-6 AM).",
   entranceFee: "~60,000 VND (national park entry). Boat rental: 500,000 - 1,000,000 VND per boat (depending on duration and group size).",
   openingHours: "6:00 AM - 6:00 PM. Best light: 6:00 - 7:00 AM.",
   mapUrl: "https://www.google.com/maps?q=11.85958318658573,107.923086633516",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const caoDaiHolySee: Location = {
   slug: "cao-dai-holy-see",
   name: "Cao Dai Holy See",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["tay-ninh"],
   destination: "",
   lat: 11.303855281819674,
@@ -16,6 +16,8 @@ export const caoDaiHolySee: Location = {
   tags: ["🕌 Caodaism Holy See", "📿 Religion & Philosophy", "🏛️ Eclectic Architecture", "👁️ Divine Eye", "cao-dai"],
   bestTime: "Year-round - no bad season for this indoor attraction. Major festivals in September and the 1st lunar month draw thousands of additional pilgrims. Daily noon ceremony (12:00 PM) is the most accessible for visitors.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round - no bad season for this indoor attraction. Major festivals in September and the 1st lunar month draw thousands of additional pilgrims.",
+  bestTimeOfDay: "Daily noon ceremony (12:00 PM) is the most accessible for visitors.",
   entranceFee: "Free. Daily ceremonies at 6:00 AM, 12:00 PM, 6:00 PM, and midnight (12:00 AM). All open to respectful observers; most visitors attend the noon ceremony.",
   openingHours: "7:00 AM - 10:00 PM. Open 24 hours during major festivals.",
   mapUrl: "https://www.google.com/maps?q=11.303855281819674,106.13334876168078",

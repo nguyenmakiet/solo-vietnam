@@ -16,6 +16,8 @@ export const hoQuocPagoda: Location = {
   tags: ["🛕 Largest Pagoda on Phú Quốc", "🏔️ Mountain-Backed, Sea-Facing", "🧘 Peaceful", "buddhism"],
   bestTime: "Nov - Apr (dry season) is cool with little rain, convenient for getting around and sightseeing; May - Oct (rainy season) brings lush greenery but sudden showers, so bring an umbrella. Within a day, roughly 5:45-6:15 AM for sunrise over the Gulf of Thailand lighting up the courtyard and jade statue, or 6-8 AM more broadly for good photo light while avoiding tour groups (which tend to arrive 9:30-11 AM); after 4 PM also works well to avoid the harshest sun",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season) is cool with little rain, convenient for getting around and sightseeing; May - Oct (rainy season) brings lush greenery but sudden showers, so bring an umbrella.",
+  bestTimeOfDay: "Roughly 5:45-6:15 AM for sunrise over the Gulf of Thailand lighting up the courtyard and jade statue, or 6-8 AM more broadly for good photo light while avoiding tour groups (which tend to arrive 9:30-11 AM); after 4 PM also works well to avoid the harshest sun",
   entranceFee: "Free (free parking also available)",
   openingHours: "6:00 AM – 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=10.110135026513962,104.02895431741221",

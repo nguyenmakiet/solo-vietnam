@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taHienStreet: Location = {
   slug: "ta-hien-street",
   name: "Ta Hien Street",
-  updatedAt: "2026-09-05",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.03468686412898,
@@ -16,6 +16,7 @@ export const taHienStreet: Location = {
   tags: ["🍺 Bia Hơi Corner", "🌃 Night Street", "🗣️ Backpacker Hub", "🥘 Street Food", "french-colonial-era"],
   bestTime: "Year-round; evenings from 6 PM onwards; weekend nights are peak atmosphere",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestTimeOfDay: "Evenings from 6 PM onwards; weekend nights are peak atmosphere",
   entranceFee: "Free",
   openingHours: "No single official hours, since each business sets its own schedule, but a general pattern: 9:00 AM - 5:00 PM (shops, cafes, and restaurants open); 5:00 PM - 7:00 PM (bars and beer stalls start opening); 7:00 PM - midnight (peak hours - crowded, lively, full nightlife atmosphere); midnight - 2:00 AM (a handful of bars and clubs, such as 1900 Le Théâtre, stay open). The surrounding Old Quarter area also becomes a pedestrian-only walking zone from 7 PM Friday to midnight Sunday",
   mapUrl: "https://www.google.com/maps?q=21.03468686412898,105.85214981581382",

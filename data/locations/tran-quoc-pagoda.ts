@@ -16,6 +16,8 @@ export const tranQuocPagoda: Location = {
   tags: ["🛕 Oldest Pagoda", "🌅 West Lake Views", "🏯 11-Tier Stupa", "📷 Sunset Photography", "buddhism"],
   bestTime: "Oct - Apr (cool dry season; sunset visits in any season are worthwhile for the West Lake light)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Oct - Apr (cool dry season).",
+  bestTimeOfDay: "Sunset visits in any season are worthwhile for the West Lake light.",
   entranceFee: "5,000 VND",
   openingHours: "7:30 AM - 11:30 AM and 1:30 PM - 6:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=21.047885239405513,105.83688268728767",

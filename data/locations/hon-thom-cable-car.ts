@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honThomCableCar: Location = {
   slug: "hon-thom-cable-car",
   name: "Hòn Thơm Cable Car",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: "10.0269723",
@@ -16,6 +16,7 @@ export const honThomCableCar: Location = {
   tags: ["🚡 World's Longest Cable Car", "🏝️ Island", "🌅 Sunset Views", "🌊 Sea Views"],
   bestTime: "Nov – Apr (clear skies, calm sea). Nov-Dec: catch sunset on the afternoon crossing.",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (clear skies, calm sea). Nov-Dec: catch sunset on the afternoon crossing.",
   entranceFee: "750,000 VND/adult return (includes cable car + Hòn Thơm Nature Park). Buy online for faster entry and potential discounts.",
   openingHours: "9:00 AM – 11:30 AM and 1:30 PM – 5:00 PM daily. Closed midday 11:30 AM – 1:30 PM.",
   mapUrl: "https://maps.google.com/?q=10.0089,104.0303",

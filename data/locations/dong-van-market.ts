@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dongVanMarket: Location = {
   slug: "dong-van-market",
   name: "Đồng Văn Market",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "23.277117868189283",
@@ -16,6 +16,8 @@ export const dongVanMarket: Location = {
   tags: ["🛍️ Sunday Market", "🏔️ Karst Plateau", "🎎 Ethnic Minority", "ethnic-minority-culture"],
   bestTime: "Sunday morning - arrive before 9 AM. Buckwheat flower season (Oct-Nov) adds a dramatic backdrop.",
   bestMonths: [1, 2, 3, 10, 11, 12],
+  bestSeasonNote: "Buckwheat flower season (Oct-Nov) adds a dramatic backdrop.",
+  bestTimeOfDay: "Sunday morning - arrive before 9 AM.",
   entranceFee: "Free",
   openingHours: "Sunday market: from ~6 AM, busiest 7–10 AM, winds down by midday. Small daily market other days.",
   mapUrl: "https://www.google.com/maps?q=23.277117868189283,105.36124291013778",

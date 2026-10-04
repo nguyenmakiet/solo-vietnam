@@ -16,6 +16,8 @@ export const anNhutRiceFields: Location = {
   tags: ["🌾 Rice Fields", "📷 Golden Season", "🍜 Countryside Food Market", "🌅 Sunset Views"],
   bestTime: "Rice harvest seasons: late March to early April, and early August, when the fields turn golden. Weekend afternoons for the food market atmosphere.",
   bestMonths: [3, 4, 8],
+  bestSeasonNote: "Rice harvest seasons: late March to early April, and early August, when the fields turn golden.",
+  bestTimeOfDay: "Weekend afternoons for the food market atmosphere.",
   entranceFee: "Free",
   openingHours: "Open all day. Food stalls and market vendors: approximately 4:00 PM - 10:00 PM on weekends, but vendors close earlier if it's quiet - in practice most stalls wind down by 8:30 PM.",
   mapUrl: "https://www.google.com/maps?q=10.484091864450695,107.23620766445066",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baiMonBeach: Location = {
   slug: "bai-mon-beach",
   name: "Bãi Môn Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["phu-yen"],
   destination: "",
   lat: 12.896863628194192,
@@ -16,6 +16,7 @@ export const baiMonBeach: Location = {
   tags: ["🌅 First Sunrise", "🏖️ Secluded Beach", "🏔️ Cape Walk"],
   bestTime: "Jan - Aug (dry season, clear skies for sunrise and swimming)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
+  bestSeasonNote: "Jan - Aug (dry season, clear skies for sunrise and swimming)",
   entranceFee: "30,000 VND",
   openingHours: "5:00 AM - 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.896863628194192,109.45109317905293",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vanLongNatureReserve: Location = {
   slug: "van-long-nature-reserve",
   name: "Vân Long Nature Reserve",
-  updatedAt: "2026-09-05",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.37269717802166,
@@ -16,6 +16,8 @@ export const vanLongNatureReserve: Location = {
   tags: ["🦒 Delacour's Langur", "🚣 Rowing Boat", "🌿 Wetland Reserve"],
   bestTime: "Oct – Apr is the core dry-season window for wildlife viewing (migratory birds and the best chance of spotting the langurs) and generally the most pleasant weather; May-June is a separate bonus window when lotus flowers bloom across parts of the wetland, adding a pink-and-green landscape though outside the main wildlife season. Jul-Aug tends to be rainy and less ideal. Within a day, early morning (before 11 AM) or afternoon after 3-3:30 PM are both well-reviewed for cooler temperatures, better light, and more active wildlife - avoid the midday heat",
   bestMonths: [1, 2, 3, 4, 5, 6, 10, 11, 12],
+  bestSeasonNote: "Oct - Apr is the core dry-season window for wildlife viewing (migratory birds and the best chance of spotting the langurs) and generally the most pleasant weather; May-June is a separate bonus window when lotus flowers bloom across parts of the wetland, adding a pink-and-green landscape though outside the main wildlife season. Jul-Aug tends to be rainy and less ideal.",
+  bestTimeOfDay: "Early morning (before 11 AM) or afternoon after 3-3:30 PM are both well-reviewed for cooler temperatures, better light, and more active wildlife - avoid the midday heat",
   entranceFee: "150,000 VND/person for one round-trip boat route (20,000 VND entrance + 130,000 VND boat fee), per the official HTX Vân Long price list effective 10 Feb 2026 - notably cheaper than Tam Cốc's roughly 250,000 VND. Boats typically pair 2 people together. Children under 1m are typically free. Tipping the rower (commonly around 50,000 VND if you're happy with the trip) is customary, though it should remain voluntary even if a rower hints for more",
   openingHours: "Roughly 6:00 AM – 5:30/6:00 PM, with slightly shorter winter hours in some years - check current times locally",
   mapUrl: "https://www.google.com/maps?q=20.37269717802166,105.88325487973674",

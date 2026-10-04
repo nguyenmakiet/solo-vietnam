@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hamNinhFishingVillage: Location = {
   slug: "ham-ninh-fishing-village",
   name: "Hàm Ninh Fishing Village",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: "10.1807873",
@@ -16,6 +16,8 @@ export const hamNinhFishingVillage: Location = {
   tags: ["🎣 Oldest Fishing Village", "🦀 Seafood", "🌅 Sunrise Spot", "🪵 Wooden Bridge"],
   bestTime: "Nov – Apr (dry season; early morning for freshest catch, sunrise, and best atmosphere)",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season).",
+  bestTimeOfDay: "Early morning for freshest catch, sunrise, and best atmosphere.",
   entranceFee: "Free",
   openingHours: "Open 24/7 - best visited 5–9 AM for morning catch and breakfast",
   mapUrl: "https://maps.google.com/?q=10.1792,104.0700",
