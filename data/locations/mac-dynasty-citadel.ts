@@ -37,7 +37,7 @@ export const macDynastyCitadel: Location = {
     "The citadel requires climbing roughly 100 stone steps up the hillside - wear proper footwear, the steps can be slippery after rain",
     "Go early in the morning to avoid crowds and get cleaner views over Lạng Sơn city from the top",
     "Bring water - there are no vendors at the site itself",
-    "Avoid visiting in winter if possible; temperatures in Lạng Sơn can drop significantly and the exposed hillside path becomes uncomfortable",
+    "Winter visits are still worthwhile, but temperatures in Lạng Sơn can drop significantly and the exposed hillside path gets less comfortable - bring warm layers",
     "Stick to the marked paths and viewing areas - some visitors have reported hazardous debris in overgrown vegetation off the main trail, so there's little reason to wander into the bushes anyway",
     "The citadel pairs well with Tam Thanh Cave and Nhị Thanh Cave, both within walking distance in the same ward",
   ],
