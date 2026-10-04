@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const anNhutRiceFields: Location = {
   slug: "an-nhut-rice-fields",
   name: "An Nhứt Rice Fields",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.484091864450695,
@@ -15,7 +15,7 @@ export const anNhutRiceFields: Location = {
   experiences: ["photography", "food", "walking-tour", "cycling"],
   tags: ["🌾 Rice Fields", "📷 Golden Season", "🍜 Countryside Food Market", "🌅 Sunset Views"],
   bestTime: "Rice harvest seasons: late March to early April, and early August, when the fields turn golden. Weekend afternoons for the food market atmosphere.",
-  bestMonths: [3, 4, 8, 9],
+  bestMonths: [3, 4, 8],
   entranceFee: "Free",
   openingHours: "Open all day. Food stalls and market vendors: approximately 4:00 PM - 10:00 PM on weekends, but vendors close earlier if it's quiet - in practice most stalls wind down by 8:30 PM.",
   mapUrl: "https://www.google.com/maps?q=10.484091864450695,107.23620766445066",

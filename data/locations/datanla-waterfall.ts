@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const datanlaWaterfall: Location = {
   slug: "datanla-waterfall",
   name: "Datanla Waterfall",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.898464970455633,
@@ -14,7 +14,7 @@ export const datanlaWaterfall: Location = {
   categories: ["nature"],
   experiences: ["trekking", "cable-car"],
   tags: ["💧 Multi-Tier Waterfall", "🎢 Alpine Coaster", "🌿 Forest Walk"],
-  bestTime: "Nov - Apr (dry season - best for the outdoor activities and rides; roller coaster doesn't operate well in heavy rain). May - Aug rainy season gives more dramatic water volume but activities are limited.",
+  bestTime: "Nov - Apr (dry season - best for the outdoor activities and rides; roller coaster doesn't operate well in heavy rain). The May - Oct rainy season brings the strongest, most impressive water flow and is worth seeing, but paths get muddy and slippery and some activities are limited - take extra care.",
   bestMonths: [11, 12, 1, 2, 3, 4],
   entranceFee: "60,000 VND/adult, 30,000 VND/child (general entry). Alpine coaster (Xe trượt 1, 1,200m): ~130,000-250,000 VND round trip. Alpine coaster 3 (Xe trượt 3, 2,400m, one of Southeast Asia's longest): ~250,000 VND. Zipline + coaster combo: ~1,000,000 VND. Costume photo booth (hóa thân sơn nữ): 50,000 VND/session.",
   openingHours: "7:00 AM - 5:00 PM. Best: 7-8 AM or 1-2 PM to avoid the heaviest crowds (the falls are close to the city centre and easy to reach, so they're consistently busy).",

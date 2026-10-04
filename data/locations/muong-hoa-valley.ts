@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muongHoaValley: Location = {
   slug: "muong-hoa-valley",
   name: "Muong Hoa Valley",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.3143616370346,
@@ -15,7 +15,7 @@ export const muongHoaValley: Location = {
   experiences: ["trekking", "photography", "culture", "homestay"],
   tags: ["🌾 Rice Terraces", "ethnic-minority-culture"],
   bestTime: "Late Aug - mid Sep (golden harvest, peak season). Mar - May (flooded mirror terraces). Dec - Feb for winter mist and occasional snow.",
-  bestMonths: [3, 4, 5, 8, 9, 10, 12, 1, 2],
+  bestMonths: [1, 2, 3, 4, 5, 8, 9, 12],
   entranceFee: "150,000 VND adults / 100,000 VND children 6-12 / Free under 6",
   openingHours: "Open daily. Best light: 6:30 - 7:30 AM (fog lifting off terraces).",
   mapUrl: "https://maps.google.com/?q=22.3100,103.8650",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phiLiengWaterfall: Location = {
   slug: "phi-lieng-waterfall",
   name: "Phi Liêng Waterfall",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.944546145566818,
@@ -14,7 +14,7 @@ export const phiLiengWaterfall: Location = {
   categories: ["nature"],
   experiences: ["trekking", "swimming", "motorcycling", "camping"],
   tags: ["💦 7-Tier Waterfall", "🌿 Remote Forest Trek", "🏍️ Motorbike Trail"],
-  bestTime: "Late Nov - Apr (dry season: manageable trails, clear streams, campable base). Rainy season (Jun-Nov) for maximum water volume but treacherous descent.",
+  bestTime: "Nov - Apr (dry season: manageable trails, clear streams, campable base). The May - Oct rainy season brings the strongest, most beautiful flow and is worth seeing, but the trail turns muddy and the descent becomes genuinely dangerous - only go with care and local guidance.",
   bestMonths: [11, 12, 1, 2, 3, 4],
   entranceFee: "Free (may need to pass through forest protection station)",
   openingHours: "Open daily. Day trip possible but depart early from Đà Lạt.",

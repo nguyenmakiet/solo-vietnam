@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const buiHuiGrassland: Location = {
   slug: "bui-hui-grassland",
   name: "Bùi Hui Grassland",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "",
   lat: 14.733767915481186,
@@ -15,7 +15,7 @@ export const buiHuiGrassland: Location = {
   experiences: ["camping", "photography"],
   tags: ["🌿 Highland Meadow", "🌸 Sim Blossom", "🌄 Cloud Level Views"],
   bestTime: "Late March-April is best for the purple sim bloom. Aug-Sep is sim harvest season, when H'rê villagers gather berries for wine and syrup. For camping and sea-of-clouds views, arrive in the afternoon and stay overnight; dawn around 7:00-7:45 AM offers the best chance of seeing clouds over the surrounding peaks. Avoid heavy rain, when mountain roads can become slippery.",
-  bestMonths: [3, 4, 5, 8, 9],
+  bestMonths: [3, 4, 8, 9],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.733767915481186,108.78824450755181",

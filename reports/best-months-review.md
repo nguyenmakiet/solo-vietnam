@@ -176,3 +176,28 @@ Regex limitations seen in this review (worth fixing in the audit script before i
 ## SAFE (136)
 
 `a-pa-chai`, `an-bang-beach`, `an-hai-communal-house`, `an-vinh-communal-house`, `b52-wreck`, `ba-be-lake`, `ba-danh-pagoda`, `ba-hon-dam-islands`, `ba-na-cable-car`, `ba-om-lake`, `back-beach-vung-tau`, `bai-dinh-pagoda`, `bai-mon-beach`, `bai-tu-long-bay`, `ban-gioc-waterfall`, `bat-pagoda-soc-trang`, `bau-sau`, `bay-mau-coconut-forest`, `ben-hai-river`, `ben-thanh-market`, `bidoup-nui-ba-national-park`, `bu-gia-map-national-park`, `bui-vien-street`, `bung-binh-thien-lake`, `cafe-apartment-saigon`, `cai-rang-floating-market`, `can-gio-beach`, `can-gio-monkey-island`, `cao-dai-holy-see`, `cape-ca-na`, `cat-ba-national-park`, `chua-chan-mountain`, `co-thach-beach`, `con-dao-national-park`, `cu-chi-tunnels`, `cu-mi-beach`, `cua-dai-beach`, `cua-tu-stream`, `da-ploa-stream`, `dalat-railway-station`, `do-quyen-waterfall`, `doc-let-beach`, `dong-van-old-town`, `dragon-bridge`, `du-gia-village`, `du-gia-waterfall`, `duck-stop-phong-nha`, `golden-bridge`, `ha-long-bay`, `ham-ninh-fishing-village`, `hang-en`, `hang-rai`, `hanoi-old-quarter`, `hanoi-train-street`, `hieu-waterfall`, `hoa-lo-prison`, `hoa-lu-ancient-capital`, `hoi-an-ancient-town`, `hon-chong-rock-formation`, `hon-kho-island`, `hon-mun-island`, `hon-son-island`, `hon-tam-island`, `hon-thom-cable-car`, `hon-yen-island`, `hospital-cave`, `imperial-citadel-of-thang-long`, `imperial-city-hue`, `jade-emperor-pagoda`, `japanese-bridge`, `k50-waterfall`, `keo-pagoda`, `khai-dinh-tomb`, `khem-beach`, `kon-tum-wooden-church`, `ky-co-beach`, `la-ngau-stream`, `lan-ha-bay`, `langbiang-mountain`, `linh-phuoc-pagoda`, `lo-lo-chai-village`, `long-bien-bridge`, `long-son-pagoda`, `lung-cu-flag-tower`, `lung-po-red-river-source`, `ly-son-garlic-fields`, `ma-pi-leng-pass`, `marble-mountains`, `mau-son-mountain`, `minh-mang-tomb`, `moc-chau-tea-hills`, `mui-ca-mau-national-park`, `mui-dien`, `my-khe-beach`, `my-son-sanctuary`, `nam-du-islands`, `nguom-ngao-cave`, `o-quy-ho-pass`, `phat-diem-cathedral`, `phoenix-unicorn-islands-my-tho`, `phong-nam-valley`, `phong-nha-cave`, `phu-quy-island`, `phuoc-binh-beach`, `phuoc-hai-fishing-village`, `plate-rock-reef`, `po-nagar-cham-towers`, `quang-tri-ancient-citadel`, `rach-vem-fishing-village`, `son-doong-cave`, `sung-sot-cave`, `ta-dung-lake`, `ta-hien-street`, `ta-nang-phan-dung-trek`, `ta-xua-mountain`, `tay-phuong-pagoda`, `temple-of-literature`, `tham-ma-pass`, `thang-hen-lake`, `thung-khe-pass`, `thung-nham-bird-park`, `thuong-phuoc-border-gate`, `tra-que-village`, `tra-su-cajuput-forest`, `tran-quoc-pagoda`, `trang-an`, `trung-trang-cave`, `tu-duc-tomb`, `vietnam-military-history-museum`, `vietnam-museum-of-ethnology`, `vinpearl-cable-car`, `vinpearl-safari`, `vinwonders-phu-quoc`, `war-remnants-museum`, `y-ty`, `yavly-waterfall`
+
+## Resolution log - 2026-10-04 (owner decisions)
+
+Applied to location data (`updatedAt` bumped on each file):
+
+| Location | Decision | bestMonths before → after | Text change |
+|---|---|---|---|
+| `an-nhut-rice-fields` | Follow text | Mar, Apr, Aug, Sep → Mar, Apr, Aug | - |
+| `binh-lieu-border-mountains` | Follow text | Sep-Dec → Jan, Sep-Dec | - |
+| `binh-son-beach` | Follow text | Jan-Aug → Mar-Sep | - |
+| `bui-hui-grassland` | Follow text | Mar-May, Aug-Sep → Mar, Apr, Aug, Sep | - |
+| `fansipan` | Follow text | + May → Jan, Mar, Apr, Sep-Dec | - |
+| `hanoi-st-josephs-cathedral` | Follow text (Sep-Nov + Christmas Eve) | Oct-Apr → Sep-Dec | - |
+| `muong-hoa-valley` | Follow text | + Oct → Jan-May, Aug, Sep, Dec | - |
+| `nho-que-river` | Follow text | Mar-May, Sep-Dec → Jan-Apr, Sep-Dec | - |
+| `pongour-waterfall` | Follow text (both seasons valid) | Jan-Mar, Jul-Oct → all 12 | - |
+| `tam-coc` | Follow text | Mar-Jun, Sep, Oct → Mar-Jul | - |
+| `yen-tu-mountain` | Follow text | Apr-Jun, Oct-Dec → Jan-Jun | - |
+| `datanla-waterfall` | Owner: Nov-Apr | unchanged (Nov-Apr) | rainy season May-Oct: strongest flow, worth seeing, muddy/slippery |
+| `phi-lieng-waterfall` | Owner: Nov-Apr | unchanged (Nov-Apr) | rainy season May-Oct: strongest flow, worth seeing, muddy/dangerous descent |
+| `cat-cat-village` | Owner: Apr-Oct | Jan, Feb, Sep-Nov → Apr-Oct | rewritten from owner notes |
+
+Not changed: `cat-ba-cannon-fort` (owner: not needed), `notre-dame-cathedral-saigon` (restoration is still ongoing and already documented throughout the file).
+
+Known audit noise after the fixes: `hanoi-st-josephs-cathedral` still shows as CONFLICT because the regex does not read "Christmas Eve" as December.

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const yenTuMountain: Location = {
   slug: "yen-tu-mountain",
   name: "Yên Tử Mountain",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 21.131344974258912,
@@ -15,7 +15,7 @@ export const yenTuMountain: Location = {
   experiences: ["trekking", "culture", "history", "religious-site-visit", "cable-car", "hiking"],
   tags: ["⛰️ Sacred Peak", "🛕 Buddhist Pilgrimage", "🥾 Summit Trek", "🌲 Ancient Forest", "buddhism", "medieval-vietnam"],
   bestTime: "Apr - Jun (quiet, comfortable weather). Jan - Mar (lunar) for the festival atmosphere - culturally extraordinary but extremely crowded. Avoid the Saturday after the first full moon of Tết - the single busiest day of the year.",
-  bestMonths: [4, 5, 6, 10, 11, 12],
+  bestMonths: [1, 2, 3, 4, 5, 6],
   entranceFee: "Free (entry to the heritage site). Cable car tickets charged separately - check official ticket office for current fares.",
   openingHours: "Open daily. Cable car operating hours vary slightly by season, weather, and festival periods, but services generally run from around 7:00-8:00 AM until 5:00-6:00 PM. Visitors walking the full route often begin before cable car operating hours.",
   mapUrl: "https://www.google.com/maps?q=21.131344974258912,106.73006478199216",

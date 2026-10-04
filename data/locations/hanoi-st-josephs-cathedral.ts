@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hanoiStJosephsCathedral: Location = {
   slug: "hanoi-st-josephs-cathedral",
   name: "Hanoi St. Joseph's Cathedral",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.02870465360659,
@@ -15,7 +15,7 @@ export const hanoiStJosephsCathedral: Location = {
   experiences: ["history", "photography", "religious-site-visit"],
   tags: ["⛪ Gothic Cathedral", "🏛️ French Colonial", "📷 Old Quarter Icon", "🕯️ Active Parish", "catholicism", "french-architecture", "french-colonial-era"],
   bestTime: "Sep - Nov (autumn) is often cited as the most pleasant season, alongside Christmas Eve for its unique atmosphere despite the crowds. Within a day, there are three good windows: early morning (5-7 AM) to avoid harsh sun, late afternoon (5-6 PM) for the best natural light, or evening (7-9 PM) when the cathedral is lit up and the surrounding streets are at their liveliest",
-  bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestMonths: [9, 10, 11, 12],
   entranceFee: "Free (donations accepted)",
   openingHours: "Exterior accessible 24/7. For interior viewing, the front gate is usually closed, but a back gate is generally open during visiting hours: roughly 8:00-11:00 AM and 2:00-8:00 PM Monday-Saturday, and 7:00-11:00 AM or 3:00-9:00 PM on Sunday - aim to visit before 5 PM if you specifically want to look around outside of a mass. Mass times have varied across sources and can change, but recent schedules cite around 5:30 AM and 6:15 PM on weekdays, 6 PM on Saturday, and several Sunday services between 5 AM and 8 PM (including some in French) - confirm current times locally rather than relying on a fixed schedule",
   mapUrl: "https://www.google.com/maps?q=21.02870465360659,105.84885596097946",

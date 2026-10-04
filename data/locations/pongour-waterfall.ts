@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const pongourWaterfall: Location = {
   slug: "pongour-waterfall",
   name: "Pongour Waterfall",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.658000,
@@ -15,7 +15,7 @@ export const pongourWaterfall: Location = {
   experiences: ["photography", "swimming", "culture"],
   tags: ["💧 Seven-Tier Waterfall", "👑 Nam Thiên Đệ Nhất Thác", "🏕️ Picnic & Camping", "ethnic-minority-culture"],
   bestTime: "Two distinct seasons, two different experiences. Rainy season (May-Nov): full roaring cascade, dramatic white water - best for the waterfall at its most powerful but expect muddy water and slippery paths. Dry season (Dec-Apr): clear turquoise water, safe for swimming and picnicking on the rock terraces - best for photography and relaxed exploration. Rằm tháng Giêng (first full moon of lunar new year) for the annual K'Ho festival.",
-  bestMonths: [1, 2, 3, 7, 8, 9, 10],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "40,000 VND/adult. Electric cart from ticket area to waterfall: 15,000 VND/person (optional - walking takes about 20 minutes).",
   openingHours: "7:00 AM - 5:30 PM daily.",
   mapUrl: "https://www.google.com/maps?q=11.658000,108.248000",
