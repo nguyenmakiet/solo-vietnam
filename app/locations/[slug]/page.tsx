@@ -329,7 +329,7 @@ export default async function LocationPage({
                 <p className="section-label">
                   <Link href="/experiences" className="section-label-link">Similar Experiences</Link>
                 </p>
-                <p style={{ fontSize: 14, color: "var(--text-muted, #6b7280)", marginTop: 4 }}>
+                <p style={{ fontSize: 14, color: "var(--color-ink-2)", marginTop: 4 }}>
                   Explore more things to do like this around Vietnam
                 </p>
               </div>
