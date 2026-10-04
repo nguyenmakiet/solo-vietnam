@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nhaPhaPrison: Location = {
   slug: "nha-pha-historical-site",
   name: "Di tích Nhà Pha",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.386246450441275,
@@ -21,7 +21,7 @@ export const nhaPhaPrison: Location = {
     "french-colonial-era",
   ],
   bestTime: "Sunrise or sunset from the lighthouse viewing platform for the best panoramic light over the island",
-  bestMonths: [3, 4, 5, 6, 7, 8],
+  bestMonths: [4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "The grounds are open freely, day and night, with no ticket gate or fixed hours. However, staffed access to climb the lighthouse itself appears to end around 4-5 PM based on visitor reports - plan a daytime visit if climbing to the top is your goal.",
   mapUrl: "https://www.google.com/maps?q=15.386246450441275,109.14170348441878",

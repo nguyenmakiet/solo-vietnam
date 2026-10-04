@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dinhMountain: Location = {
   slug: "dinh-mountain",
   name: "Núi Dinh (Dinh Mountain)",
-  updatedAt: "2026-09-18",
+  updatedAt: "2026-10-04",
   provinces: ["ba-ria-vung-tau"],
   destination: "",
   lat: 10.537592530622792,
@@ -15,7 +15,7 @@ export const dinhMountain: Location = {
   experiences: ["trekking", "photography", "camping", "swimming", "religious-site-visit", "hiking"],
   tags: ["⛰️ Coastal Peak", "🥾 Summit Trek", "🛕 Multiple Pagodas", "🚁 Former Helicopter Pad", "buddhism"],
   bestTime: "Start early to beat the midday heat, and to have the best chance of clear summit views before any afternoon haze builds",
-  bestMonths: [1, 2, 3, 4, 11, 12],
+  bestMonths: [6, 7, 8, 9, 10, 11],
   entranceFee: "Free (a parking fee of roughly 10,000-20,000 VND applies at the various trailhead lots)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.537592530622792,107.12929659066629",

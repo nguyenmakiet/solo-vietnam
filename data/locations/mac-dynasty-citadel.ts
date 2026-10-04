@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const macDynastyCitadel: Location = {
   slug: "mac-dynasty-citadel",
   name: "Mạc Dynasty Citadel",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["lang-son"],
   destination: "",
   lat: 21.857162327899132,
@@ -15,7 +15,7 @@ export const macDynastyCitadel: Location = {
   experiences: ["history"],
   tags: ["🏰 16th-Century Citadel", "🏛️ Mạc Dynasty", "🧭 Off the Beaten Path", "early-modern-vietnam"],
   bestTime: "Early morning to avoid crowds and get cleaner views over Lạng Sơn city from the top",
-  bestMonths: [1, 2, 3, 4, 10, 11, 12],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=21.857162327899132,106.74889564559105",

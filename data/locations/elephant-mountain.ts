@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const elephantMountain: Location = {
   slug: "elephant-mountain",
   name: "Elephant Mountain",
-  updatedAt: "2026-09-14",
+  updatedAt: "2026-10-04",
   provinces: ["dak-lak"],
   destination: "",
   lat: 12.481628765573047,
@@ -14,7 +14,7 @@ export const elephantMountain: Location = {
   categories: ["nature"],
   experiences: ["photography"],
   tags: ["🪨 Vietnam's Largest Granite Monolith", "🐘 Elephant-Shaped Rock", "🥾 Short Climb", "☕ Coffee Country"],
-  bestTime: "Roughly 6:20-9:00 AM is cool with soft light and the easiest climbing conditions; late afternoon (around 4:00-6:00 PM) brings golden-hour light and sunset views from the summit. Avoid 11:00 AM-2:00 PM, when the sun is harsh and the rock surface gets uncomfortably hot underfoot",
+  bestTime: "Nov - Apr (dry season) is the best period, with March adding white coffee blossoms across the region; May - Oct is best avoided, when the rock gets slippery and unsafe to climb. Within a day, roughly 6:20-9:00 AM is cool with soft light and the easiest climbing conditions; late afternoon (around 4:00-6:00 PM) brings golden-hour light and sunset views from the summit. Avoid 11:00 AM-2:00 PM, when the sun is harsh and the rock surface gets uncomfortably hot underfoot",
   bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Historically free to visit, though some more recent accounts describe a ticket (roughly 50,000-60,000 VND, including a complimentary homemade drink) - confirm current pricing locally, since sources disagree on whether this is now a paid site",
   openingHours: "Open daily",

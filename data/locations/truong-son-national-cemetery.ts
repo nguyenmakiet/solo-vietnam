@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const truongSonNationalCemetery: Location = {
   slug: "truong-son-national-cemetery",
   name: "Truong Son National Cemetery",
-  updatedAt: "2026-09-22",
+  updatedAt: "2026-10-04",
   provinces: ["quang-tri"],
   destination: "",
   lat: 16.958242841270042,
@@ -15,7 +15,7 @@ export const truongSonNationalCemetery: Location = {
   experiences: ["history"],
   tags: ["🪦 War Memorial", "🕊️ Ho Chi Minh Trail", "📸 Sobering Visit", "🇻🇳 National Memorial", "vietnam-war"],
   bestTime: "Morning, for cooler temperatures and better light for photography",
-  bestMonths: [1, 2, 3, 4, 11, 12],
+  bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=16.958242841270042,106.95473875403596",
