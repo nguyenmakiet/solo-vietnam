@@ -22,10 +22,17 @@
  *                  leaves out - candidate to widen bestMonths
  *   SAFE           consistent with the text
  *
+ * Evidence sources (each parsed separately): primary = bestTime and
+ * bestSeasonNote; secondary = insights.thingsToKnow.seasonal, FAQ answers to
+ * seasonal questions, and tips that talk about seasons (see evidenceOf). Shape (months / time / mixed) still describes
+ * bestTime alone, because it drives the text migration.
+ *
  * Month extraction is deliberately conservative: only explicit month names
- * (Jan / January ...) and ranges between them count. Season words ("dry
- * season", "Tet", "summer") are reported but never converted to months.
- * Everything here is a heuristic flag for human review, not a verdict.
+ * (Jan / January ...), ranges between them and "Christmas" count. Historical
+ * dates ("January 28, 1941") are ignored. Season words ("dry season", "Tet",
+ * "summer") are reported but never converted to months. Ranges inside an
+ * "if visiting in ..." conditional count for nothing. Everything here is a
+ * heuristic flag for human review, not a verdict.
  *
  * Usage: npm run audit:best-time
  *        npm run audit:best-time -- --md reports/best-time-audit.md
@@ -55,9 +62,23 @@ const CLAUSE_SPLIT = /;|\.\s|,?\s+(?=(?:but|while|whereas|though|although)\b)/
 const NEUTRAL_RE = /\bavoid\w*\s+(?:the\s+)?(?:[\w-]+\s+){0,4}?crowds\b|\bnot too hot\b/gi
 // Verbs that point at the months after them ("avoid Sep-Nov")
 const FORWARD_RE = /^(avoid\w*|not recommended)$/i
-const NEGATIVE_RE = /\b(avoid\w*|closed?|closes|closure|not recommended|typhoons?|storms?|heavy rain|slippery|dangerous|treacherous|off-season|scorching|too hot|unsafe|suspended|muddy|rough(?:er)?|difficult|harder|limited|less suited|unpredictable|delay\w*|cancel\w*)\b/gi
+const NEGATIVE_RE = /\b(avoid\w*|closed?|closes|closure|not recommended|typhoons?|storms?|heavy rain|slippery|dangerous|treacherous|hazardous|off-season|scorching|too hot|unsafe|suspended|muddy|rough(?:er)?|difficult|harder|limited|less suited|less ideal|not suitable|unpredictable|delay\w*|cancel\w*|disrupt\w*|flooding|flash floods?|risk of flood\w*)\b/gi
+// Strong danger words: a "..., but unsafe" clause with no months of its own
+// marks the last range of the clause before it ("May - Oct is green, but the
+// rock gets slippery and unsafe")
+const DANGER_RE = /\b(unsafe|dangerous|hazardous|treacherous|not safe)\b/i
+const CONTRAST_START_RE = /^\s*(but|though|although|while|whereas)\b/i
+// Historical dates are not seasonal evidence: "January 28, 1941", "28 June 1972", "June 1998"
+const HISTORIC_DATE_RE = new RegExp(String.raw`\b(?:\d{1,2}(?:st|nd|rd|th)?\s+)?${MONTH}\s*(?:\d{1,2}(?:st|nd|rd|th)?,?\s*)?(?:1[0-9]{3}|20[0-9]{2})\b`, "g")
+// "if visiting in summer (May-Aug), ..." - a conditional, not a recommendation
+const CONDITIONAL_RE = /\bif (?:you(?:'re| are) )?visiting\b[^;.]*/gi
+// Seasonal FAQ questions and tips worth reading as evidence
+const SEASONAL_CUE_RE = /\b(best time|best months?|best window|when (?:to|should)|season|dry|rainy|wet|monsoon|bloom\w*|harvest|flood|weather|typhoon|winter|summer|spring|autumn|avoid)\b/i
 const SEASON_RE = /\b(dry season|rainy season|wet season|monsoon|spring|summer|autumn|fall|winter|t[eế]t|lunar|festival)\b/gi
-const YEAR_ROUND_RE = /\b(year[- ]round|all year|any time of (?:the )?year)\b/i
+const YEAR_ROUND_RE = /\b(year[- ]round|all year|any time of (?:day or )?(?:the )?year|(?:in )?any (?:weather or )?season|any season works|weather-independent)\b/gi
+// "open year-round", "operates year-round", "early morning year-round" describe
+// a facility or a time of day, not seasonal suitability
+const YEAR_ROUND_NOT_SEASONAL_RE = /\b(open|opens|operat\w*|runs?|running|accessible|available|air-conditioned|active|morning|evening|sunrise|sunset|visits are good)\W+(?:\w+\W+){0,2}$/i
 const TIME_OF_DAY_RE = /\b(\d{1,2}(?::\d{2})?\s*(?:-\s*\d{1,2}(?::\d{2})?\s*)?(?:AM|PM|am|pm)|sunrise|sunset|morning|afternoon|evening|night|midday|noon|dawn|dusk|weekdays?|weekends?)\b/i
 
 type Shape = "empty" | "months" | "time" | "mixed" | "season-only"
@@ -93,12 +114,18 @@ function expand(start: number, end: number): number[] {
   return out
 }
 
+const blank = (m: string) => " ".repeat(m.length)
+
 function extractRanges(text: string): MonthRange[] {
   const ranges: MonthRange[] = []
-  for (const raw of text.split(CLAUSE_SPLIT)) {
+  const masked = text.replace(HISTORIC_DATE_RE, blank).replace(CONDITIONAL_RE, blank)
+  for (const raw of masked.split(CLAUSE_SPLIT)) {
     if (!raw) continue
-    const clause = raw.replace(NEUTRAL_RE, (m) => " ".repeat(m.length))
+    const clause = raw.replace(NEUTRAL_RE, blank)
     const start = ranges.length
+    for (const m of clause.matchAll(/\bChristmas(?: Eve)?\b/g)) {
+      ranges.push({ text: m[0], months: [12], negative: false, softStart: false, softEnd: false, at: m.index ?? 0 })
+    }
     // RANGE_RE is case-insensitive for the qualifiers; re-check the month
     // tokens are capitalised so "may" / "march" as words never count
     for (const m of clause.matchAll(RANGE_RE)) {
@@ -112,6 +139,9 @@ function extractRanges(text: string): MonthRange[] {
     // Attribute each negative word to one range in the clause: "avoid" to the
     // next range after it, anything else to the nearest range
     const local = ranges.slice(start)
+    if (!local.length && start > 0 && CONTRAST_START_RE.test(clause) && DANGER_RE.test(clause)) {
+      ranges[start - 1].negative = true
+    }
     for (const w of clause.matchAll(NEGATIVE_RE)) {
       if (!local.length) break
       const at = w.index ?? 0
@@ -125,21 +155,58 @@ function extractRanges(text: string): MonthRange[] {
   return ranges
 }
 
-function auditLocation(slug: string, bestTime: string, bestMonths: number[]): Row {
+// Seasonal text worth reading as evidence. Primary sources are the editorial
+// season fields (bestTime, bestSeasonNote). Secondary ones - the generated
+// seasonal insight, seasonal FAQ answers and tips - often name months
+// descriptively ("Dec-Feb is cold", "accessible year-round"), so they only
+// confirm that a month is mentioned and contribute "avoid" statements; they
+// never raise MULTI_SEASON or "year-round" on their own.
+type Evidence = { primary: string[]; secondary: string[]; insight: string }
+const clean = (xs: unknown[]) => xs.filter((x): x is string => typeof x === "string" && x.trim().length > 0).map((x) => x.trim())
+
+function evidenceOf(loc: any): Evidence {
+  const secondary: unknown[] = [loc.insights?.thingsToKnow?.seasonal]
+  for (const f of loc.insights?.faq ?? []) {
+    if (SEASONAL_CUE_RE.test(f.question ?? "")) secondary.push(f.answer)
+  }
+  for (const t of [...(loc.tips ?? []), ...(loc.insights?.visitorTips ?? [])]) {
+    if (SEASONAL_CUE_RE.test(t)) secondary.push(t)
+  }
+  return {
+    primary: clean([loc.bestTime, loc.bestSeasonNote]),
+    secondary: clean(secondary),
+    insight: typeof loc.insights?.thingsToKnow?.seasonal === "string" ? loc.insights.thingsToKnow.seasonal : "",
+  }
+}
+
+function isYearRound(text: string): boolean {
+  for (const m of text.matchAll(YEAR_ROUND_RE)) {
+    if (!YEAR_ROUND_NOT_SEASONAL_RE.test(text.slice(0, m.index ?? 0))) return true
+  }
+  return false
+}
+
+function auditLocation(slug: string, bestTime: string, bestMonths: number[], evidence: Evidence): Row {
   const text = bestTime.trim()
-  const ranges = extractRanges(text)
-  const yearRound = YEAR_ROUND_RE.test(text)
+  const ranges = evidence.primary.flatMap(extractRanges)
+  const extra = evidence.secondary.flatMap(extractRanges)
+  const yearRound = evidence.primary.some(isYearRound)
+  // A year-round statement in the seasonal insight confirms 12 months, but
+  // (like all secondary evidence) never flags a missing season by itself
+  const yearRoundSupported = yearRound || isYearRound(evidence.insight)
   const hasTime = TIME_OF_DAY_RE.test(text)
   const seasons = [...new Set([...text.matchAll(SEASON_RE)].map((m) => m[1].toLowerCase()))]
+  const ownRanges = extractRanges(text)
 
   const shape: Shape = !text
     ? "empty"
-    : ranges.length || yearRound
+    : ownRanges.length || isYearRound(text)
       ? hasTime ? "mixed" : "months"
       : hasTime ? "time" : "season-only"
 
-  const positive = new Set(ranges.filter((r) => !r.negative).flatMap((r) => r.months))
-  const negative = new Set(ranges.filter((r) => r.negative).flatMap((r) => r.months).filter((m) => !positive.has(m)))
+  const all = [...ranges, ...extra]
+  const positive = new Set(all.filter((r) => !r.negative).flatMap((r) => r.months))
+  const negative = new Set(all.filter((r) => r.negative).flatMap((r) => r.months).filter((m) => !positive.has(m)))
   const inBest = (m: number) => bestMonths.includes(m)
 
   const conflict: string[] = []
@@ -148,7 +215,7 @@ function auditLocation(slug: string, bestTime: string, bestMonths: number[]): Ro
 
   const negIncluded = [...negative].filter(inBest)
   if (negIncluded.length) conflict.push(`includes ${fmt(negIncluded)}, which the text only describes negatively`)
-  if (ranges.length && !yearRound) {
+  if (all.length && !yearRoundSupported) {
     const unmentioned = bestMonths.filter((m) => !positive.has(m) && !negative.has(m))
     if (unmentioned.length) conflict.push(`includes ${fmt(unmentioned)}, never mentioned in the text`)
   }
@@ -173,7 +240,7 @@ function auditLocation(slug: string, bestTime: string, bestMonths: number[]): Ro
 
   if (/[–—]/.test(text)) notes.push("en/em dash")
   if (shape === "mixed") notes.push("mixed months + time of day - manual split")
-  if (seasons.length && !ranges.length) notes.push(`season words only: ${seasons.join(", ")}`)
+  if (seasons.length && !ownRanges.length) notes.push(`season words only: ${seasons.join(", ")}`)
   if (new Set(bestMonths).size !== bestMonths.length) notes.push("bestMonths has duplicates")
   if (bestMonths.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) conflict.push("bestMonths has a value outside 1-12")
 
@@ -185,11 +252,9 @@ function auditLocation(slug: string, bestTime: string, bestMonths: number[]): Ro
   } else if (conflict.length) {
     group = "CONFLICT"
     reasons = [...conflict, ...multi]
-  } else if (!ranges.length && !yearRound) {
+  } else if (!all.length && !yearRoundSupported) {
     group = "NEEDS_RESEARCH"
-    reasons = [shape === "time"
-      ? "bestTime is time of day only - bestMonths has no textual source"
-      : text ? "no explicit months in bestTime - bestMonths has no textual source" : "bestTime is empty - bestMonths has no textual source"]
+    reasons = ["no explicit months in bestTime, bestSeasonNote, seasonal insight, seasonal FAQ or tips - bestMonths has no textual source"]
   } else if (multi.length) {
     group = "MULTI_SEASON"
     reasons = multi
@@ -208,7 +273,7 @@ const includeAll = process.argv.includes("--all")
 
 const rows = allLocations
   .filter((l) => includeAll || !NON_PUBLIC.has(l.slug))
-  .map((l) => auditLocation(l.slug, l.bestTime ?? "", l.bestMonths ?? []))
+  .map((l) => auditLocation(l.slug, l.bestTime ?? "", l.bestMonths ?? [], evidenceOf(l)))
   .sort((a, b) => a.slug.localeCompare(b.slug))
 
 const byGroup = (g: Group) => rows.filter((r) => r.group === g)
@@ -244,10 +309,10 @@ if (mdIndex !== -1) {
   }
   const meta: Record<Group, { title: string; action: string }> = {
     EMPTY: { title: "EMPTY - bestMonths = []", action: "Research and fill bestMonths (and the text) from scratch." },
-    CONFLICT: { title: "CONFLICT - bestMonths contradicts bestTime", action: "Factual review: decide which side is right and fix the other." },
-    NEEDS_RESEARCH: { title: "NEEDS_RESEARCH - bestMonths cannot be derived from bestTime", action: "Provenance unknown. Do not treat as verified - confirm the months from a source or firsthand notes." },
+    CONFLICT: { title: "CONFLICT - bestMonths contradicts the seasonal text", action: "Factual review: decide which side is right and fix the other." },
+    NEEDS_RESEARCH: { title: "NEEDS_RESEARCH - bestMonths cannot be derived from the seasonal text", action: "Provenance unknown. Do not treat as verified - confirm the months from a source or firsthand notes." },
     MULTI_SEASON: { title: "MULTI_SEASON - text recommends seasons bestMonths leaves out", action: "Under the \"all worthwhile months\" semantic, widen bestMonths if the extra season is genuinely worth visiting; keep the trade-off in bestSeasonNote." },
-    SAFE: { title: "SAFE - consistent with bestTime", action: "No month change needed. Still listed with migration notes (dashes, mixed text)." },
+    SAFE: { title: "SAFE - consistent with the seasonal text", action: "No month change needed. Still listed with migration notes (dashes, mixed text)." },
   }
   const lines: string[] = [
     "# Best time consistency audit",
@@ -256,7 +321,7 @@ if (mdIndex !== -1) {
     "",
     "**Semantic:** `bestMonths` = every month the location is worth visiting / suitable to experience (positive recommendation, not only peak season). Months to avoid are excluded; secondary seasons are included.",
     "",
-    "Heuristics, not verdicts: only explicit month names count; season words are never converted to months; a month range in a clause with avoid / closed / typhoon / slippery / rough... counts as negative.",
+    "Evidence = bestTime + bestSeasonNote + seasonal insight + seasonal FAQ answers + seasonal tips. Heuristics, not verdicts: only explicit month names (and Christmas) count; historical dates and \"if visiting in ...\" conditionals are ignored; season words are never converted to months; a month range in a clause with avoid / closed / typhoon / slippery / rough / flooding... counts as negative.",
     "",
     "## Summary",
     "",
@@ -310,6 +375,8 @@ if (process.argv.includes("--released")) {
   for (const slug of Object.keys(BEST_MONTHS_AUDIT_OVERRIDES)) {
     if (!Object.values(BEST_MONTHS_RELEASES).flat().includes(slug)) failures.push(`override for unreleased slug: ${slug}`)
   }
+  const stale = Object.keys(BEST_MONTHS_AUDIT_OVERRIDES).filter((slug) => bySlug.get(slug)?.group === "SAFE")
+  if (stale.length) console.log(`\nStale overrides (location is SAFE without them - safe to remove): ${stale.join(", ")}`)
   const total = Object.values(BEST_MONTHS_RELEASES).flat().length
   if (failures.length) {
     console.log(`\nRELEASE GATE FAILED (${failures.length}):\n  ${failures.join("\n  ")}`)
