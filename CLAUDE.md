@@ -146,7 +146,7 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 - Never guess months. If the content does not support them, flag `// TODO: verify`.
 - Locations with a non-active `status` (`closed`, `unverified`, `temporarily-closed`, `seasonally-closed`) do not get the Best Months strip; `npm run audit:best-time -- --released` rejects them in `data/best-months-release.ts`.
 - Month filters and month aggregates (`/locations` filter, destination best months) read `releasedBestMonths()`, so only released locations count.
-- Check consistency with `npm run audit:best-time` (report: `reports/best-time-audit.md`). The audit reads `bestTime` and `bestSeasonNote` as primary evidence, and the seasonal insight, seasonal FAQ answers and tips as secondary evidence. Add an entry to `BEST_MONTHS_AUDIT_OVERRIDES` only when the months are right but the audit cannot read the evidence (for example an owner decision from an outside source); `--released` lists overrides that have become stale.
+- Check consistency with `npm run audit:best-time` (report: `reports/best-time-audit.md`). The audit reads `bestSeasonNote` and `bestTimeOfDay` as primary evidence, and the seasonal insight, seasonal FAQ answers and tips as secondary evidence. Add an entry to `BEST_MONTHS_AUDIT_OVERRIDES` only when the months are right but the audit cannot read the evidence (for example an owner decision from an outside source); `--released` lists overrides that have become stale.
 - AI insights generated via Outscraper pipeline: max 30 reviews/location, min 30 words/review, prioritizing 3-4 star ratings
 - **Anti-hallucination rule**: if data is uncertain, leave field empty or flag with `// TODO: verify` - never fabricate
 

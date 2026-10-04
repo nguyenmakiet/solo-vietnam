@@ -1,9 +1,8 @@
 /**
- * Read-only consistency audit: legacy `bestTime` text vs `bestMonths`.
+ * Read-only consistency audit: season / time-of-day text vs `bestMonths`.
  *
- * Steps 0 / 0.5 of the bestTime -> bestMonths / bestSeasonNote / bestTimeOfDay
- * migration. Runs BEFORE any data is moved, so the original text is still
- * there as evidence when bestMonths looks wrong. Never writes to data files.
+ * Reads `bestSeasonNote` and `bestTimeOfDay` (the fields the legacy
+ * `bestTime` text was migrated into). Never writes to data files.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -22,10 +21,10 @@
  *                  leaves out - candidate to widen bestMonths
  *   SAFE           consistent with the text
  *
- * Evidence sources (each parsed separately): primary = bestTime and
- * bestSeasonNote; secondary = insights.thingsToKnow.seasonal, FAQ answers to
- * seasonal questions, and tips that talk about seasons (see evidenceOf). Shape (months / time / mixed) still describes
- * bestTime alone, because it drives the text migration.
+ * Evidence sources (each parsed separately): primary = bestSeasonNote and
+ * bestTimeOfDay; secondary = insights.thingsToKnow.seasonal, FAQ answers to
+ * seasonal questions, and tips that talk about seasons (see evidenceOf).
+ * Shape says which of the two text fields are filled.
  *
  * Month extraction is deliberately conservative: only explicit month names
  * (Jan / January ...), ranges between them and "Christmas" count. Historical
@@ -79,9 +78,8 @@ const YEAR_ROUND_RE = /\b(year[- ]round|all year|any time of (?:day or )?(?:the 
 // "open year-round", "operates year-round", "early morning year-round" describe
 // a facility or a time of day, not seasonal suitability
 const YEAR_ROUND_NOT_SEASONAL_RE = /\b(open|opens|operat\w*|runs?|running|accessible|available|air-conditioned|active|morning|evening|sunrise|sunset|visits are good)\W+(?:\w+\W+){0,2}$/i
-const TIME_OF_DAY_RE = /\b(\d{1,2}(?::\d{2})?\s*(?:-\s*\d{1,2}(?::\d{2})?\s*)?(?:AM|PM|am|pm)|sunrise|sunset|morning|afternoon|evening|night|midday|noon|dawn|dusk|weekdays?|weekends?)\b/i
 
-type Shape = "empty" | "months" | "time" | "mixed" | "season-only"
+type Shape = "season+time" | "season" | "time" | "empty"
 type Group = "EMPTY" | "CONFLICT" | "NEEDS_RESEARCH" | "MULTI_SEASON" | "SAFE"
 const GROUPS: Group[] = ["EMPTY", "CONFLICT", "NEEDS_RESEARCH", "MULTI_SEASON", "SAFE"]
 
@@ -89,7 +87,7 @@ type MonthRange = { text: string; months: number[]; negative: boolean; softStart
 
 type Row = {
   slug: string
-  bestTime: string
+  text: string
   bestMonths: number[]
   shape: Shape
   ranges: MonthRange[]
@@ -156,7 +154,7 @@ function extractRanges(text: string): MonthRange[] {
 }
 
 // Seasonal text worth reading as evidence. Primary sources are the editorial
-// season fields (bestTime, bestSeasonNote). Secondary ones - the generated
+// text fields (bestSeasonNote, bestTimeOfDay). Secondary ones - the generated
 // seasonal insight, seasonal FAQ answers and tips - often name months
 // descriptively ("Dec-Feb is cold", "accessible year-round"), so they only
 // confirm that a month is mentioned and contribute "avoid" statements; they
@@ -173,7 +171,7 @@ function evidenceOf(loc: any): Evidence {
     if (SEASONAL_CUE_RE.test(t)) secondary.push(t)
   }
   return {
-    primary: clean([loc.bestTime, loc.bestSeasonNote]),
+    primary: clean([loc.bestSeasonNote, loc.bestTimeOfDay]),
     secondary: clean(secondary),
     insight: typeof loc.insights?.thingsToKnow?.seasonal === "string" ? loc.insights.thingsToKnow.seasonal : "",
   }
@@ -186,23 +184,20 @@ function isYearRound(text: string): boolean {
   return false
 }
 
-function auditLocation(slug: string, bestTime: string, bestMonths: number[], evidence: Evidence): Row {
-  const text = bestTime.trim()
+function auditLocation(slug: string, season: string, time: string, bestMonths: number[], evidence: Evidence): Row {
+  season = season.trim()
+  time = time.trim()
+  const text = [season && `season: ${season}`, time && `time of day: ${time}`].filter(Boolean).join(" / ")
   const ranges = evidence.primary.flatMap(extractRanges)
   const extra = evidence.secondary.flatMap(extractRanges)
   const yearRound = evidence.primary.some(isYearRound)
   // A year-round statement in the seasonal insight confirms 12 months, but
   // (like all secondary evidence) never flags a missing season by itself
   const yearRoundSupported = yearRound || isYearRound(evidence.insight)
-  const hasTime = TIME_OF_DAY_RE.test(text)
-  const seasons = [...new Set([...text.matchAll(SEASON_RE)].map((m) => m[1].toLowerCase()))]
-  const ownRanges = extractRanges(text)
+  const seasons = [...new Set([...season.matchAll(SEASON_RE)].map((m) => m[1].toLowerCase()))]
+  const ownRanges = extractRanges(season)
 
-  const shape: Shape = !text
-    ? "empty"
-    : ownRanges.length || isYearRound(text)
-      ? hasTime ? "mixed" : "months"
-      : hasTime ? "time" : "season-only"
+  const shape: Shape = season ? (time ? "season+time" : "season") : time ? "time" : "empty"
 
   const all = [...ranges, ...extra]
   const positive = new Set(all.filter((r) => !r.negative).flatMap((r) => r.months))
@@ -239,7 +234,6 @@ function auditLocation(slug: string, bestTime: string, bestMonths: number[], evi
   if (yearRound && bestMonths.length < 12) multi.push(`text says year-round but bestMonths has ${bestMonths.length} months`)
 
   if (/[–—]/.test(text)) notes.push("en/em dash")
-  if (shape === "mixed") notes.push("mixed months + time of day - manual split")
   if (seasons.length && !ownRanges.length) notes.push(`season words only: ${seasons.join(", ")}`)
   if (new Set(bestMonths).size !== bestMonths.length) notes.push("bestMonths has duplicates")
   if (bestMonths.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) conflict.push("bestMonths has a value outside 1-12")
@@ -248,13 +242,13 @@ function auditLocation(slug: string, bestTime: string, bestMonths: number[], evi
   let reasons: string[]
   if (bestMonths.length === 0) {
     group = "EMPTY"
-    reasons = [text ? "bestMonths is empty although bestTime has text" : "bestMonths and bestTime are both empty"]
+    reasons = [text ? "bestMonths is empty although the season / time-of-day text is filled" : "bestMonths, bestSeasonNote and bestTimeOfDay are all empty"]
   } else if (conflict.length) {
     group = "CONFLICT"
     reasons = [...conflict, ...multi]
   } else if (!all.length && !yearRoundSupported) {
     group = "NEEDS_RESEARCH"
-    reasons = ["no explicit months in bestTime, bestSeasonNote, seasonal insight, seasonal FAQ or tips - bestMonths has no textual source"]
+    reasons = ["no explicit months in bestSeasonNote, bestTimeOfDay, seasonal insight, seasonal FAQ or tips - bestMonths has no textual source"]
   } else if (multi.length) {
     group = "MULTI_SEASON"
     reasons = multi
@@ -263,7 +257,7 @@ function auditLocation(slug: string, bestTime: string, bestMonths: number[], evi
     reasons = []
   }
 
-  return { slug, bestTime: text, bestMonths, shape, ranges, group, reasons, notes }
+  return { slug, text, bestMonths, shape, ranges, group, reasons, notes }
 }
 
 // Draft / internal locations that are not displayed publicly (owner decision).
@@ -273,12 +267,12 @@ const includeAll = process.argv.includes("--all")
 
 const rows = allLocations
   .filter((l) => includeAll || !NON_PUBLIC.has(l.slug))
-  .map((l) => auditLocation(l.slug, l.bestTime ?? "", l.bestMonths ?? [], evidenceOf(l)))
+  .map((l) => auditLocation(l.slug, l.bestSeasonNote ?? "", l.bestTimeOfDay ?? "", l.bestMonths ?? [], evidenceOf(l)))
   .sort((a, b) => a.slug.localeCompare(b.slug))
 
 const byGroup = (g: Group) => rows.filter((r) => r.group === g)
 const count = (pred: (r: Row) => boolean) => rows.filter(pred).length
-const shapes: Shape[] = ["months", "time", "mixed", "season-only", "empty"]
+const shapes: Shape[] = ["season+time", "season", "time", "empty"]
 
 console.log("BEST TIME CONSISTENCY AUDIT\n")
 console.log(`Locations: ${rows.length}`)
@@ -286,7 +280,7 @@ console.log("Shape:  " + shapes.map((s) => `${s}=${count((r) => r.shape === s)}`
 console.log("Group:  " + GROUPS.map((g) => `${g}=${byGroup(g).length}`).join("  ") + "\n")
 for (const g of ["EMPTY", "CONFLICT"] as Group[]) {
   for (const r of byGroup(g)) {
-    console.log(`${g === "EMPTY" ? "∅" : "❌"} ${r.slug}\n   bestTime:   ${r.bestTime || "(empty)"}\n   bestMonths: ${fmt(r.bestMonths)}\n   ${r.reasons.join("\n   ")}\n`)
+    console.log(`${g === "EMPTY" ? "∅" : "❌"} ${r.slug}\n   text:       ${r.text || "(empty)"}\n   bestMonths: ${fmt(r.bestMonths)}\n   ${r.reasons.join("\n   ")}\n`)
   }
 }
 
@@ -312,16 +306,16 @@ if (mdIndex !== -1) {
     CONFLICT: { title: "CONFLICT - bestMonths contradicts the seasonal text", action: "Factual review: decide which side is right and fix the other." },
     NEEDS_RESEARCH: { title: "NEEDS_RESEARCH - bestMonths cannot be derived from the seasonal text", action: "Provenance unknown. Do not treat as verified - confirm the months from a source or firsthand notes." },
     MULTI_SEASON: { title: "MULTI_SEASON - text recommends seasons bestMonths leaves out", action: "Under the \"all worthwhile months\" semantic, widen bestMonths if the extra season is genuinely worth visiting; keep the trade-off in bestSeasonNote." },
-    SAFE: { title: "SAFE - consistent with the seasonal text", action: "No month change needed. Still listed with migration notes (dashes, mixed text)." },
+    SAFE: { title: "SAFE - consistent with the seasonal text", action: "No month change needed." },
   }
   const lines: string[] = [
     "# Best time consistency audit",
     "",
-    "Generated by `npm run audit:best-time -- --md`. Read-only: compares the legacy `bestTime` text with `bestMonths` before the migration to `bestSeasonNote` / `bestTimeOfDay`.",
+    "Generated by `npm run audit:best-time -- --md`. Read-only: compares the `bestSeasonNote` / `bestTimeOfDay` text with `bestMonths`.",
     "",
     "**Semantic:** `bestMonths` = every month the location is worth visiting / suitable to experience (positive recommendation, not only peak season). Months to avoid are excluded; secondary seasons are included.",
     "",
-    "Evidence = bestTime + bestSeasonNote + seasonal insight + seasonal FAQ answers + seasonal tips. Heuristics, not verdicts: only explicit month names (and Christmas) count; historical dates and \"if visiting in ...\" conditionals are ignored; season words are never converted to months; a month range in a clause with avoid / closed / typhoon / slippery / rough / flooding... counts as negative.",
+    "Evidence = bestSeasonNote + bestTimeOfDay + seasonal insight + seasonal FAQ answers + seasonal tips. Heuristics, not verdicts: only explicit month names (and Christmas) count; historical dates and \"if visiting in ...\" conditionals are ignored; season words are never converted to months; a month range in a clause with avoid / closed / typhoon / slippery / rough / flooding... counts as negative.",
     "",
     "## Summary",
     "",
@@ -329,8 +323,8 @@ if (mdIndex !== -1) {
     "|-------|-------|--------|",
     ...GROUPS.map((g) => `| ${g} | ${byGroup(g).length} | ${meta[g].action} |`),
     "",
-    "| bestTime shape | Count |",
-    "|----------------|-------|",
+    "| Text fields | Count |",
+    "|-------------|-------|",
     ...shapes.map((s) => `| ${s} | ${count((r) => r.shape === s)} |`),
     "",
   ]
@@ -341,9 +335,9 @@ if (mdIndex !== -1) {
       lines.push("None.", "")
       continue
     }
-    lines.push("| Location | Shape | bestTime | bestMonths | Text months | Reasons | Notes |", "|---|---|---|---|---|---|---|")
+    lines.push("| Location | Text fields | Text | bestMonths | Text months | Reasons | Notes |", "|---|---|---|---|---|---|---|")
     for (const r of picked) {
-      lines.push(`| \`${r.slug}\` | ${r.shape} | ${esc(r.bestTime) || "_(empty)_"} | ${fmt(r.bestMonths)} | ${textMonths(r)} | ${esc(r.reasons.join("; ")) || "-"} | ${esc(r.notes.join("; ")) || "-"} |`)
+      lines.push(`| \`${r.slug}\` | ${r.shape} | ${esc(r.text) || "_(empty)_"} | ${fmt(r.bestMonths)} | ${textMonths(r)} | ${esc(r.reasons.join("; ")) || "-"} | ${esc(r.notes.join("; ")) || "-"} |`)
     }
     lines.push("")
   }

@@ -124,7 +124,7 @@ export default async function ExperiencePage({
                     <div className="location-card-desc">{loc.seoDescription}</div>
                   </div>
                   <div className="location-card-footer">
-                    <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : loc.bestTime.split("(")[0].trim()}</span>
+                    <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : (loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "").split("(")[0].trim()}</span>
                     <span>→</span>
                   </div>
                 </Link>

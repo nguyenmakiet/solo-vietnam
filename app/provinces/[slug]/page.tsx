@@ -211,7 +211,7 @@ export default async function ProvincePage({
                           </div>
                         )}
                         <div className="dc-footer">
-                          <span className="dc-time">{isBestMonthsReleased(l.slug) && l.bestMonths?.length ? formatMonths(l.bestMonths) : l.bestTime.split("(")[0].trim()}</span>
+                          <span className="dc-time">{isBestMonthsReleased(l.slug) && l.bestMonths?.length ? formatMonths(l.bestMonths) : (l.bestSeasonNote ?? l.bestTimeOfDay ?? "").split("(")[0].trim()}</span>
                           <span className="dc-cta">View →</span>
                         </div>
                       </div>

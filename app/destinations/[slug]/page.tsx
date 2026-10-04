@@ -293,7 +293,7 @@ export default async function DestinationPage({
                       <div className="location-card-desc">{loc.seoDescription}</div>
                     </div>
                     <div className="location-card-footer">
-                      <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : loc.bestTime}</span>
+                      <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : loc.bestSeasonNote ?? loc.bestTimeOfDay}</span>
                       <span>→</span>
                     </div>
                   </Link>

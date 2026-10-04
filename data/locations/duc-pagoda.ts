@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const ducPagoda: Location = {
   slug: "duc-pagoda",
   name: "Chùa Đục",
-  updatedAt: "2026-09-15",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.38906217491256,
@@ -24,6 +24,7 @@ export const ducPagoda: Location = {
   ],
   bestTime: "Morning for cooler temperatures on the climb",
   bestMonths: [4, 5, 6, 7, 8],
+  bestTimeOfDay: "Morning for cooler temperatures on the climb",
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.38906217491256,109.10196741829073",

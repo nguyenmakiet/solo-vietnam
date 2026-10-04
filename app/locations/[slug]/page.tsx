@@ -188,17 +188,15 @@ export default async function LocationPage({
                     </span>
                   ))}
                 </div>
-                {(location.bestSeasonNote ?? (location.bestTimeOfDay ? undefined : location.bestTime)) && (
-                  <div className="oc-note">{location.bestSeasonNote ?? location.bestTime}</div>
-                )}
+                {location.bestSeasonNote && <div className="oc-note">{location.bestSeasonNote}</div>}
               </div>
-            ) : (
+            ) : location.bestSeasonNote ? (
               <div className="overview-card">
                 <div className="oc-label">Best Time to Visit</div>
-                <div className="oc-val">{location.bestTime}</div>
+                <div className="oc-val">{location.bestSeasonNote}</div>
               </div>
-            )}
-            {isBestMonthsReleased(location.slug) && location.bestTimeOfDay && (
+            ) : null}
+            {location.bestTimeOfDay && (
               <div className="overview-card">
                 <div className="oc-label">Best Time of Day</div>
                 <div className="oc-val">{location.bestTimeOfDay}</div>

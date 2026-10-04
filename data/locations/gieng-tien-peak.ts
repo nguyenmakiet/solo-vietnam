@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const giengTienPeak: Location = {
   slug: "gieng-tien-peak",
   name: "Núi Giếng Tiền",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.388855661824474,
@@ -22,6 +22,7 @@ export const giengTienPeak: Location = {
   ],
   bestTime: "Roughly 7-9 AM or 4:30-6:30 PM for the softest light and calmest conditions on the exposed upper slopes",
   bestMonths: [4, 5, 6, 7, 8],
+  bestTimeOfDay: "Roughly 7-9 AM or 4:30-6:30 PM for the softest light and calmest conditions on the exposed upper slopes",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388855661824474,109.10258272120166",
