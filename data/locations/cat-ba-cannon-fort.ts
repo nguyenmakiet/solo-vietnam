@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catBaCannonFort: Location = {
   slug: "cat-ba-cannon-fort",
   name: "Cát Bà Cannon Fort",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.72699791562507",
@@ -18,6 +18,7 @@ export const catBaCannonFort: Location = {
   tags: ["💣 WWII Cannon Fort", "📸 Panoramic Views", "🏔️ Hilltop", "french-colonial-era"],
   bestTime: "Currently closed - the nearby Radio Tower viewpoint is open year-round; best at sunset Oct - Apr",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
+  bestSeasonNote: "Currently closed - the nearby Radio Tower viewpoint is open year-round; best at sunset Oct - Apr",
   entranceFee: "Closed — no entry",
   openingHours: "Closed long-term as of late 2025",
   mapUrl: "https://www.google.com/maps?q=20.72699791562507,107.05415352678563",

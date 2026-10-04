@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const elephantWaterfall: Location = {
   slug: "elephant-waterfall",
   name: "Elephant Waterfall",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.823680791959426,
@@ -18,6 +18,7 @@ export const elephantWaterfall: Location = {
   statusNote: "Elephant Waterfall has been closed to direct visitor access since around 2020–2021 due to a tourism investment dispute. As of July 2026, there is still no official reopening date. Do not cross barriers or use unofficial trails to the falls or nearby caves.",
   bestTime: "Roughly 7-9 AM for the freshest air and best light on the falls when viewed from the surrounding viewpoints",
   bestMonths: [11, 12, 1, 2, 3],
+  bestTimeOfDay: "Roughly 7-9 AM for the freshest air and best light on the falls when viewed from the surrounding viewpoints",
   entranceFee: "No official entry currently, since the site is closed. Chùa Linh Ẩn's viewing platform is free. Some coffee shops nearby charge for their own seating/view (roughly 30,000-60,000 VND) - this is a coffee shop fee, not legitimate access to the falls or cave itself.",
   openingHours: "The falls themselves are closed to direct access; Chùa Linh Ẩn is generally open during daylight hours",
   mapUrl: "https://www.google.com/maps?q=11.823680791959426,108.33847133316729",

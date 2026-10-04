@@ -1,6 +1,6 @@
 // Incremental release of the bestMonths month strip.
 // Only slugs listed here render the new Best Months UI; every other location
-// keeps the legacy bestTime display. Each batch must pass
+// shows its season note / time of day without the strip. Each batch must pass
 // `npm run audit:best-time -- --released` (see reports/best-months-batch1-plan.md).
 
 export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
@@ -277,7 +277,6 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
 export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "crazy-house": "Jun-Jul is an explicit avoid window (summer holiday crowds)",
   "datanla-waterfall": "Owner decision: rainy season worth seeing but dangerous, excluded",
-  "hang-mua": "'year-round' qualifies the 7-8 AM time slot, not the seasons",
   "sao-beach": "Nov-Apr is described as the rougher season",
   "son-tra-peninsula": "Oct-Feb is described only negatively (rain, fog, slippery roads)",
   // batch-2a (reports/best-months-batch2a-plan.md)
@@ -298,20 +297,26 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "an-binh-island": "Owner decision: late Dec-Apr moss is a niche draw during rougher sailing; Sep-Dec 'best avoided'",
   "bich-dong-pagoda": "'Lunar Jan - Mar (around Feb)' maps to solar Feb; Jan is not included",
   // batch-4 (reports/best-months-needs-research-high.md)
-  "dam-trau-beach": "Owner decision (source-reviewed): all 12; bestTime is time-of-day only",
-  "doi-nhai-beach": "Owner decision (source-reviewed): Dec-Apr; bestTime is time-of-day only",
-  "ti-top-island": "Owner decision (source-reviewed): Jun-Jul; bestTime is time-of-day only",
-  "mui-tro-fishing-village": "Owner decision (source-reviewed): Jun-Aug; bestTime is time-of-day only",
-  "dark-cave": "Owner decision (source-reviewed): Mar-Jul; bestTime is time-of-day only",
+  "dam-trau-beach": "Owner decision (source-reviewed): all 12; the text is time-of-day only",
+  "doi-nhai-beach": "Owner decision (source-reviewed): Dec-Apr; the text is time-of-day only",
+  "ti-top-island": "Owner decision (source-reviewed): Jun-Jul; the text is time-of-day only",
+  "mui-tro-fishing-village": "Owner decision (source-reviewed): Jun-Aug; the text is time-of-day only",
+  "dark-cave": "Owner decision (source-reviewed): Mar-Jul; the text is time-of-day only",
   // batch-5 (reports/best-months-needs-research-high.md, owner-decision rows)
-  "sa-vi-cape": "Owner decision: tips - Trà Cổ beach calm Apr-Jul and popular in summer; bestTime is time-of-day only",
+  "sa-vi-cape": "Owner decision: tips - Trà Cổ beach calm Apr-Jul and popular in summer; the text is time-of-day only",
   // batch-6 (reports/best-months-needs-research-medium-low.md)
   "quan-thanh-temple": "Seasonal insight + travel tips: mostly indoors, an easy year-round stop",
   "saigon-central-post-office": "Seasonal insight: open year-round; covered interior works in hot or rainy weather",
   "ong-cop-bridge": "Owner decision: Jan-Aug; Sep-Dec flood season excluded (bridge damage/closures)",
   "km0-ha-giang": "Seasonal insight: 'Year-round' for the marker itself (owner decision)",
-  "mac-dynasty-citadel": "Owner decision (source-reviewed): Jan-Nov; bestTime is time-of-day only",
+  "mac-dynasty-citadel": "Owner decision (source-reviewed): Jan-Nov; the text is time-of-day only",
   "ho-quoc-pagoda": "Owner decision: Nov-Apr dry season; May-Oct sudden showers is a caveat the owner excludes",
+  // bestTime migration (reports/best-time-migration-mixed.md): the "Year-round." note was dropped because the strip already shows it
+  "bui-vien-street": "Year-round: owner decision, the note only repeated the strip",
+  "linh-phuoc-pagoda": "Year-round: owner decision, the note only repeated the strip",
+  "long-son-pagoda": "Year-round: owner decision, the note only repeated the strip",
+  "vietnam-military-history-museum": "Year-round: owner decision, the note only repeated the strip",
+  "war-remnants-museum": "Year-round: owner decision, the note only repeated the strip",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())

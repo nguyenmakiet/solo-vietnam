@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khoMuongCave: Location = {
   slug: "kho-muong-cave",
   name: "Kho Muong Cave",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-10-04",
   status: "temporarily-closed",
   statusNote: "Suspended since September 2026 - Pù Luông Nature Reserve management has requested a halt to tourist visits over rockfall safety risk, and flagged that entrance fee collection was never officially licensed. Contact your homestay in Pù Luông before setting out - they'll have the most current word on whether visits have resumed.",
   provinces: ["thanh-hoa"],
@@ -18,6 +18,7 @@ export const khoMuongCave: Location = {
   tags: ["🕳️ Karst Cave", "🦇 Bat Cave", "🥾 Self-Guided", "🌿 Pù Luông Reserve"],
   bestTime: "Afternoon for the best photography light through the entrance arch",
   bestMonths: [11, 12, 1, 2, 3, 4],
+  bestTimeOfDay: "Afternoon for the best photography light through the entrance arch",
   entranceFee: "Historically around 10,000 VND (parking included), collected informally by the Kho Mường village community - as of September 2026, the Pù Luông Nature Reserve management has flagged that this fee collection was never officially licensed. See the safety note below before planning a visit.",
   openingHours: "Daylight hours - subject to change given the current access situation (see safety note)",
   mapUrl: "https://maps.google.com/?q=20.48417144014872,105.13857469704293",

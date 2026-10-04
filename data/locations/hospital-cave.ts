@@ -18,6 +18,7 @@ export const hospitalCave: Location = {
   tags: ["🏥 Wartime Underground Hospital", "vietnam-war", "🪨 Limestone Cave"],
   bestTime: "Year-round (exterior only, 10-15 minutes)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round (exterior only, 10-15 minutes)",
   entranceFee: "Free",
   openingHours: "Accessible anytime (exterior only - both entrances closed as of 2026)",
   mapUrl: "https://www.google.com/maps?q=20.77004838620462,107.02138423927063",

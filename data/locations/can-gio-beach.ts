@@ -18,6 +18,7 @@ export const canGioBeach: Location = {
   tags: ["🏖️ Saigon's Own Beach", "🦀 Seafood", "🌊 Day Trip from HCMC", "🌿 Mangrove Coast"],
   bestTime: "Nov - Apr (dry season; calmer water and better beach conditions), though locals swim right through the warmer months too - just be aware August specifically sees a higher chance of storms making landfall in this area",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season; calmer water and better beach conditions), though locals swim right through the warmer months too - just be aware August specifically sees a higher chance of storms making landfall in this area",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.383300,106.966700",

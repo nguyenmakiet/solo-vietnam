@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phungHungMuralStreet: Location = {
   slug: "phung-hung-mural-street",
   name: "Phùng Hưng Mural Street",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   status: "unverified",
   provinces: ["ha-noi"],
   destination: "ha-noi",
@@ -17,6 +17,8 @@ export const phungHungMuralStreet: Location = {
   tags: ["🎨 Street Art", "🏯 Under the Railway", "🌸 Hanoi Hidden Gem"],
   bestTime: "Year-round; morning light (before 9 AM) is best for photography before the street gets busy",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
+  bestSeasonNote: "Year-round.",
+  bestTimeOfDay: "Morning light (before 9 AM) is best for photography before the street gets busy",
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.03841229431943,105.84676137053688",
