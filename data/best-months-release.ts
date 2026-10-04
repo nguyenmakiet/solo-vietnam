@@ -158,6 +158,16 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "yavly-waterfall",
     "yen-tu-mountain",
   ],
+  "batch-2a": [
+    "a-pa-chai",
+    "back-beach-vung-tau",
+    "bau-sau",
+    "cape-ca-na",
+    "phoenix-unicorn-islands-my-tho",
+    "son-doong-cave",
+    "tran-quoc-pagoda",
+    "vinpearl-cable-car",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -172,6 +182,11 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "sao-beach": "Nov-Apr is described as the rougher season",
   "son-tra-peninsula": "Oct-Feb is described only negatively (rain, fog, slippery roads)",
   "van-long-nature-reserve": "Jul-Aug is 'rainy and less ideal'",
+  // batch-2a (reports/best-months-batch2a-plan.md)
+  "bau-sau": "Jul-Oct is 'difficult' but 'worth experiencing' - difficult is not dangerous, so the secondary season is included",
+  "cape-ca-na": "Sep-Dec is less suited to swimming but 'still fine' for the coastal drive and seafood; Jan is not mentioned",
+  "tran-quoc-pagoda": "'Sunset visits in any season are worthwhile' supports all 12 months",
+  "vinpearl-cable-car": "'Operates year-round' is a facility statement; Feb-Aug + autumn (Sep-Nov) are the recommended months",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
