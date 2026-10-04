@@ -75,15 +75,15 @@ function Block({ block }: { block: ContentBlock }) {
 
 function RichSectionCard({ section }: { section: RichSection }) {
   return (
-    <div id={section.id} className="section-anchor">
-      <p className="section-label">{section.label}</p>
+    <section id={section.id} className="section-anchor">
+      <h2 className="section-label">{section.label}</h2>
       <div className="content-section">
         <h3>{section.title}</h3>
         {section.blocks.map((block, i) => (
           <Block key={i} block={block} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
@@ -94,40 +94,40 @@ function LegacyContent({ location }: { location: Location }) {
   return (
     <>
       {c.intro && (
-        <div id="about" className="section-anchor">
-          <p className="section-label">About This Place</p>
+        <section id="about" className="section-anchor">
+          <h2 className="section-label">About This Place</h2>
           <div className="content-section">
             <h3>What Makes {location.name} Special</h3>
             <RichText text={c.intro} />
           </div>
-        </div>
+        </section>
       )}
       {c.howToGetThere && (
-        <div id="how-to-get-there" className="section-anchor">
-          <p className="section-label">How to Get There</p>
+        <section id="how-to-get-there" className="section-anchor">
+          <h2 className="section-label">How to Get There</h2>
           <div className="content-section">
             <h3>Getting There</h3>
             <RichText text={c.howToGetThere} />
           </div>
-        </div>
+        </section>
       )}
       {c.whatToExpect && (
-        <div id="what-to-expect" className="section-anchor">
-          <p className="section-label">What to Expect</p>
+        <section id="what-to-expect" className="section-anchor">
+          <h2 className="section-label">What to Expect</h2>
           <div className="content-section">
             <h3>On the Ground</h3>
             <RichText text={c.whatToExpect} />
           </div>
-        </div>
+        </section>
       )}
       {c.travelTips && (
-        <div id="travel-tips" className="section-anchor">
-          <p className="section-label">Travel Tips</p>
+        <section id="travel-tips" className="section-anchor">
+          <h2 className="section-label">Travel Tips</h2>
           <div className="content-section">
             <h3>Tips</h3>
             <RichText text={c.travelTips} />
           </div>
-        </div>
+        </section>
       )}
     </>
   )

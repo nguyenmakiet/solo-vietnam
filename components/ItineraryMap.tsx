@@ -15,7 +15,9 @@ interface ItineraryMapProps {
   stopDataMap: Record<string, StopData>
 }
 
-const DAY_COLORS = ["#3b82f6", "#f97316", "#22c55e", "#a855f7", "#ef4444"]
+// Day colours from the design tokens (app/globals.css): teal, signal, sage, slate, ink.
+// Literal values because they are written into SVG/HTML strings where CSS variables do not resolve.
+const DAY_COLORS = ["#2b6a6f", "#c4452a", "#6f8060", "#736b86", "#1b2427"]
 const OSRM_TIMEOUT_MS = 5000
 
 function pinSvg(num: number, color: string): string {
@@ -94,7 +96,7 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
       .then((geojson) => {
         if (!mapRef.current) return
         L.geoJSON(geojson, {
-          style: { color: "#c8a96e", weight: 1, opacity: 0.5, fill: false },
+          style: { color: "#1b2427", weight: 0.8, opacity: 0.2, fill: false }, // ink hairline
           interactive: false,
         }).addTo(map)
       })
@@ -148,12 +150,12 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
 
         const popup = `
           <div style="font-family:-apple-system,sans-serif;min-width:140px;padding:2px">
-            <div style="font-size:13px;font-weight:700;color:#1a2d1a;margin-bottom:3px">${stop.name}</div>
-            <div style="font-size:11px;color:#6b7280;margin-bottom:8px">Day ${day.day} · Stop ${i + 1}</div>
+            <div style="font-size:13px;font-weight:700;color:#1b2427;margin-bottom:3px">${stop.name}</div>
+            <div style="font-size:11px;color:#5b676a;margin-bottom:8px">Day ${day.day} · Stop ${i + 1}</div>
             ${stop.status === "unverified" || stop.status === "closed"
-              ? `<span style="font-size:11px;color:#9ca3af;font-style:italic">Waypoint</span>`
+              ? `<span style="font-size:11px;color:#5b676a;font-style:italic">Waypoint</span>`
               : `<a href="/locations/${slug}"
-                style="font-size:11px;color:${color};font-weight:600;text-decoration:none"
+                style="font-size:12px;color:#2b6a6f;font-weight:600;text-decoration:underline"
                 onclick="window.location.href='/locations/${slug}';return false">
                 View location →
               </a>`

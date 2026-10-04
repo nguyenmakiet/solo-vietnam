@@ -1,0 +1,170 @@
+/* ============================================================
+   vietnam-map.css - shared province map (components/VietnamMap.tsx)
+   Colours come from the design tokens in app/globals.css.
+   ============================================================ */
+
+.vn-map {
+  position: relative;
+  width: 100%;
+}
+
+.vn-map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── Provinces ── */
+.vn-map-province {
+  stroke: var(--color-ink);
+  stroke-opacity: 0.3;
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: fill 0.2s ease;
+}
+.vn-map-province--north { fill: var(--color-map-north); }
+.vn-map-province--central { fill: var(--color-map-central); }
+.vn-map-province--south { fill: var(--color-map-south); }
+.vn-map-province--unknown { fill: var(--color-line); }
+
+/* Hover / active: a darker step of the same regional colour */
+.vn-map-province--north.is-active { fill: color-mix(in srgb, var(--color-map-north) 78%, var(--color-ink)); }
+.vn-map-province--central.is-active { fill: color-mix(in srgb, var(--color-map-central) 78%, var(--color-ink)); }
+.vn-map-province--south.is-active { fill: color-mix(in srgb, var(--color-map-south) 78%, var(--color-ink)); }
+.vn-map-province--unknown.is-active { fill: color-mix(in srgb, var(--color-line) 78%, var(--color-ink)); }
+
+/* ── Legend ── */
+.vn-map-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.vn-map-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.vn-map-legend-item:hover {
+  color: var(--color-signal-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.vn-map-legend-item:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+.vn-map-swatch {
+  width: 12px;
+  height: 12px;
+  border: 1px solid color-mix(in srgb, var(--color-ink) 30%, transparent);
+}
+.vn-map-swatch--north { background: var(--color-map-north); }
+.vn-map-swatch--central { background: var(--color-map-central); }
+.vn-map-swatch--south { background: var(--color-map-south); }
+
+/* ── Hover label ── */
+.vn-map-hover {
+  position: absolute;
+  z-index: 40;
+  pointer-events: none;
+  white-space: nowrap;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: var(--radius-card);
+}
+.vn-map-hover span {
+  margin-left: 6px;
+  font-weight: 400;
+  color: var(--color-teal-light);
+}
+
+/* ── Province card ── */
+.vn-map-card {
+  position: absolute;
+  z-index: 50;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-top: 3px solid var(--color-ink-2);
+  border-radius: var(--radius-card);
+  padding: 12px 14px 14px;
+}
+.vn-map-card--north { border-top-color: var(--color-map-north); }
+.vn-map-card--central { border-top-color: var(--color-map-central); }
+.vn-map-card--south { border-top-color: var(--color-map-south); }
+
+.vn-map-card-name {
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: 4px;
+}
+.vn-map-card-intro {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--color-ink-2);
+  margin: 0 0 10px;
+}
+.vn-map-card-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
+  margin-bottom: 4px;
+}
+.vn-map-card-list {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.vn-map-card-list button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+  color: var(--color-ink);
+  padding: 3px 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.vn-map-card-list button:hover {
+  color: var(--color-signal-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.vn-map-card-cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.vn-map-card-cta:hover {
+  color: var(--color-signal-text);
+}
+.vn-map-card-list button:focus-visible,
+.vn-map-card-cta:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+.vn-map-card-soon {
+  font-size: 12px;
+  color: var(--color-ink-2);
+}

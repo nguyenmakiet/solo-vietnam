@@ -1,8 +1,29 @@
-import VietnamMap from "@/components/VietnamMap"
+import type { Metadata } from "next"
 import Link from "next/link"
+import VietnamMap, { VietnamMapLegend } from "@/components/VietnamMap"
+import CloudinaryImage from "@/components/CloudinaryImage"
 import { destinations } from "@/data/destinations/index"
+import { experiences as allExperiences } from "@/data/experiences"
 import { stripLeadingEmoji } from "@/lib/text"
+import { dotClass } from "@/lib/category-dot"
+import { LOCATION_COUNT_LABEL } from "@/lib/site-stats"
 import "./homepage.css"
+
+const META_TITLE = "Solo in Vietnam - Travel Guides for Solo Travelers"
+const META_DESCRIPTION = `Practical travel guides for solo travelers in Vietnam - ${LOCATION_COUNT_LABEL} places mapped, with safety tips, scam alerts, transport guides, and local insights.`
+
+export const metadata: Metadata = {
+  title: META_TITLE,
+  description: META_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: "Solo in Vietnam",
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    url: "https://www.soloinvietnam.com",
+    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+  },
+}
 
 // Featured destinations - hardcoded order
 const FEATURED_SLUGS = [
@@ -17,12 +38,13 @@ const featured = FEATURED_SLUGS
   .map((slug) => destinations.find((d) => d.slug === slug))
   .filter(Boolean) as typeof destinations
 
-const experiences = [
-  { label: "Beaches", href: "/experiences/beaches", color: "173, 216, 240" }, // pastel sea blue
-  { label: "Trekking", href: "/experiences/trekking", color: "179, 224, 175" }, // pastel green
-  { label: "Camping", href: "/experiences/camping", color: "245, 200, 145" }, // pastel amber/campfire
-  { label: "Food", href: "/experiences/food", color: "235, 160, 155" }, // pastel red
-]
+// Photography strip: the first four featured destination photos (no new assets)
+const stripPhotos = featured.filter((d) => d.heroImage).slice(0, 4)
+
+const experiences = ["beaches", "trekking", "camping", "food"].flatMap((slug) => {
+  const e = allExperiences.find((x) => x.slug === slug)
+  return e ? [{ label: e.label, value: e.value, tagline: e.tagline, href: `/experiences/${slug}` }] : []
+})
 
 export default function Home() {
   return (
@@ -37,10 +59,34 @@ export default function Home() {
           </h1>
 
           <p className="home-hero-desc">
-            Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won't find in a guidebook.
+            Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won&apos;t find in a guidebook.
           </p>
+
+          <Link href="/destinations" className="ui-btn">
+            Explore destinations
+          </Link>
         </div>
       </section>
+
+      {/* ── PHOTOGRAPHY STRIP ── */}
+      {stripPhotos.length > 0 && (
+        <section className="home-strip" aria-label="Featured destinations in photos">
+          {stripPhotos.map((d, i) => (
+            <Link key={d.slug} href={`/destinations/${d.slug}`} className="home-strip-item">
+              <CloudinaryImage
+                src={d.heroImage!}
+                alt={d.name}
+                fill
+                // All four sit in the first viewport on desktop. On mobile only three show:
+                // the 4th is hidden by CSS, and "0vw" resolves it to the smallest (16px) candidate.
+                sizes={i < 3 ? "(min-width: 768px) 25vw, 34vw" : "(min-width: 768px) 25vw, 0vw"}
+                loading="eager"
+                fetchPriority={i < 3 ? "high" : "auto"}
+              />
+            </Link>
+          ))}
+        </section>
+      )}
 
       {/* ── DISCOVERY INTRO ── */}
       <section className="home-discovery-section">
@@ -74,66 +120,48 @@ export default function Home() {
 
       {/* ── STATS ── */}
       <section className="home-stats-section">
-        <div className="home-stats-inner">
-          <div className="home-hero-stats">
-            <div className="home-hero-stat">
-              <div className="home-hero-stat-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                </svg>
-              </div>
-              <div className="home-hero-stat-num">250+</div>
-              <div className="home-hero-stat-label">Locations mapped</div>
-            </div>
-            <div className="home-hero-stat">
-              <div className="home-hero-stat-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
-                </svg>
-              </div>
-              <div className="home-hero-stat-num">63</div>
-              <div className="home-hero-stat-label">Provinces explored</div>
-            </div>
-            <div className="home-hero-stat">
-              <div className="home-hero-stat-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
-                </svg>
-              </div>
-              <div className="home-hero-stat-num">80+</div>
-              <div className="home-hero-stat-label">Hidden places discovered</div>
-            </div>
+        <dl className="home-stats">
+          <div className="home-stat">
+            <dt className="home-stat-label">Locations explored</dt>
+            <dd className="home-stat-num">{LOCATION_COUNT_LABEL}</dd>
           </div>
-        </div>
+          <div className="home-stat">
+            <dt className="home-stat-label">Provinces explored</dt>
+            <dd className="home-stat-num">63</dd>
+          </div>
+        </dl>
       </section>
 
       {/* ── MAP ── */}
       <section className="home-map-section">
         <div className="home-map-inner">
-          <div className="home-map-wrap">
-            <div className="home-map-heading">
+          <div className="home-map-card">
+            <div className="home-map-summary">
               <h2>Explore Vietnam on the Map</h2>
-              <p>Discover 250+ places across the country</p>
+              <p>Discover {LOCATION_COUNT_LABEL} places across the country</p>
+              <VietnamMapLegend className="home-map-legend" />
+              <p className="home-map-hint">Click a province to explore destinations</p>
+              <Link href="/provinces" className="ui-link home-map-browse">
+                Browse all provinces →
+              </Link>
             </div>
-            <VietnamMap />
-            <div className="home-map-hint">
-              Click a province to explore destinations
+            <div className="home-map-canvas">
+              <VietnamMap />
             </div>
           </div>
+
           <Link href="/map" className="home-map-cta-banner">
-            <div className="home-map-cta-left">
-              <div>
-                <div className="home-map-cta-title">Explore 200+ locations on the map</div>
-                <div className="home-map-cta-sub">Filter by beaches, trekking, caves, food & more</div>
-              </div>
+            <div>
+              <div className="home-map-cta-title">Explore {LOCATION_COUNT_LABEL} locations across Vietnam</div>
+              <div className="home-map-cta-sub">Filter by beaches, trekking, caves, food & more</div>
             </div>
-            <span className="home-map-cta-btn">Open map →</span>
+            <span className="ui-btn home-map-cta-btn">Open map →</span>
           </Link>
         </div>
       </section>
 
       {/* ── FEATURED DESTINATIONS ── */}
-      <div>
+      <section className="home-section-band">
         <div className="home-section">
           <div className="home-section-header">
             <div>
@@ -145,7 +173,7 @@ export default function Home() {
                 Handpicked for solo travelers - not just the obvious ones.
               </p>
             </div>
-            <Link href="/destinations" className="home-section-link">
+            <Link href="/destinations" className="ui-link home-section-link">
               View all →
             </Link>
           </div>
@@ -154,17 +182,27 @@ export default function Home() {
             {featured.map((d) => (
               <Link key={d.slug} href={`/destinations/${d.slug}`} className="home-dest-card">
                 <div className="home-dest-card-img">
-                  {d.heroImage
-                    ? <img src={d.heroImage} alt={d.name} />
-                    : <span>{d.tags?.[0]?.split(" ")[0] ?? "🌏"}</span>
-                  }
+                  {d.heroImage && (
+                    <CloudinaryImage
+                      src={d.heroImage}
+                      alt={d.name}
+                      fill
+                      sizes="(min-width: 900px) 360px, (min-width: 560px) 50vw, 100vw"
+                    />
+                  )}
                 </div>
                 <div className="home-dest-card-body">
                   {d.tags && (
                     <div className="home-dest-card-tags">
-                      {d.tags.slice(0, 2).map((t) => (
-                        <span key={t} className="home-dest-card-tag">{stripLeadingEmoji(t)}</span>
-                      ))}
+                      {d.tags.slice(0, 2).map((t) => {
+                        const label = stripLeadingEmoji(t)
+                        return (
+                          <span key={t} className="ui-dot-label">
+                            <span className={dotClass(label)} aria-hidden="true" />
+                            {label}
+                          </span>
+                        )
+                      })}
                     </div>
                   )}
                   <div className="home-dest-card-name">{d.name}</div>
@@ -182,10 +220,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* ── TRAVEL EXPERIENCES ── */}
-      <div className="home-section-dark">
+      <section>
         <div className="home-section">
           <div className="home-section-header">
             <div>
@@ -197,28 +235,30 @@ export default function Home() {
                 From beach-hopping to highland trekking - Vietnam has it all.
               </p>
             </div>
-            <Link href="/experiences" className="home-section-link">
+            <Link href="/experiences" className="ui-link home-section-link">
               View all →
             </Link>
           </div>
 
-          <div className="home-exp-grid">
+          <ul className="home-exp-list">
             {experiences.map((e) => (
-              <Link
-                key={e.label}
-                href={e.href}
-                className="home-exp-card"
-                style={{ "--exp-color": e.color } as React.CSSProperties}
-              >
-                <span className="home-exp-label">{e.label}</span>
-              </Link>
+              <li key={e.label}>
+                <Link href={e.href} className="home-exp-item">
+                  <span className="home-exp-label">
+                    <span className={dotClass(e.value)} aria-hidden="true" />
+                    {e.label}
+                  </span>
+                  <span className="home-exp-tagline">{e.tagline}</span>
+                  <span className="home-exp-arrow" aria-hidden="true">→</span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
-      </div>
+      </section>
 
-      {/* ── WHY SOLO VIETNAM ── */}
-      <div className="home-section-alt">
+      {/* ── WHY SOLO VIETNAM (flows into the footer as one teal-ink band) ── */}
+      <section className="home-why-band">
         <div className="home-section">
           <div className="home-section-header home-section-header-center">
             <div className="home-section-eyebrow">Why this site</div>
@@ -247,7 +287,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
     </main>
   )

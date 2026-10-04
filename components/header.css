@@ -1,26 +1,15 @@
 /* ============================================================
    header.css — soloinvietnam.com
+   Uses the design tokens in app/globals.css (teal-ink navbar).
    ============================================================ */
-
-:root {
-  --gold: #c8a96e;
-  --gold-light: #e8d5a8;
-  --dark: #1a1209;
-  --text-muted: #7a6a52;
-}
 
 /* ── HEADER ── */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--dark);
-  border-bottom: 1px solid rgba(200, 169, 110, 0.12);
-  transition: box-shadow 0.3s;
-}
-
-.site-header.scrolled {
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  background: var(--color-teal-ink);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-paper) 14%, var(--color-teal-ink));
 }
 
 .site-header-inner {
@@ -46,7 +35,7 @@
   font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-surface);
   text-decoration: none;
   letter-spacing: -0.3px;
   white-space: nowrap;
@@ -60,7 +49,16 @@
 
 .site-logo em {
   font-style: italic;
-  color: var(--gold);
+  color: var(--color-teal-light);
+}
+
+.site-logo:focus-visible,
+.site-nav-link:focus-visible,
+.site-search-btn:focus-visible,
+.site-hamburger:focus-visible,
+.site-mobile-link:focus-visible {
+  outline: 2px solid var(--color-teal-light);
+  outline-offset: 2px;
 }
 
 /* ── DESKTOP NAV ── */
@@ -75,23 +73,24 @@
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 13px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: color-mix(in srgb, var(--color-paper) 78%, var(--color-teal-ink));
   text-decoration: none;
   padding: 6px 12px;
-  border-radius: 6px;
-  transition: color 0.2s, background 0.2s;
+  border-radius: var(--radius-button);
+  transition: color 0.2s;
   letter-spacing: 0.2px;
   white-space: nowrap;
 }
 
 .site-nav-link:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.07);
+  color: var(--color-surface);
 }
 
 .site-nav-link.active {
-  color: var(--gold);
-  background: rgba(200, 169, 110, 0.1);
+  color: var(--color-teal-light);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
 }
 
 /* ── SEARCH BUTTON ── */
@@ -101,11 +100,11 @@
   justify-content: center;
   width: 34px;
   height: 34px;
-  background: rgba(200, 169, 110, 0.12);
-  border: 1px solid rgba(200, 169, 110, 0.35);
-  border-radius: 8px;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-paper) 40%, var(--color-teal-ink));
+  border-radius: var(--radius-button);
   cursor: pointer;
-  color: var(--gold);
+  color: var(--color-paper);
   flex-shrink: 0;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
@@ -116,9 +115,8 @@
 }
 
 .site-search-btn:hover {
-  background: rgba(200, 169, 110, 0.22);
-  border-color: rgba(200, 169, 110, 0.6);
-  color: var(--gold-light);
+  border-color: var(--color-teal-light);
+  color: var(--color-teal-light);
 }
 
 /* ── HAMBURGER ── */
@@ -137,8 +135,8 @@
   display: block;
   width: 22px;
   height: 1.5px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 2px;
+  background: var(--color-paper);
+  border-radius: 1px;
   transition: transform 0.3s, opacity 0.3s, width 0.3s;
   transform-origin: center;
 }
@@ -159,7 +157,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: color-mix(in srgb, var(--color-ink) 60%, transparent);
   z-index: 98;
   opacity: 0;
   transition: opacity 0.3s;
@@ -179,8 +177,8 @@
   right: 0;
   bottom: 0;
   width: 280px;
-  background: var(--dark);
-  border-left: 1px solid rgba(200, 169, 110, 0.15);
+  background: var(--color-teal-ink);
+  border-left: 1px solid color-mix(in srgb, var(--color-paper) 14%, var(--color-teal-ink));
   z-index: 99;
   transform: translateX(100%);
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -199,7 +197,7 @@
   font-size: 10px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba(200, 169, 110, 0.5);
+  color: var(--color-teal-light);
   font-weight: 600;
   margin-bottom: 24px;
 }
@@ -211,10 +209,10 @@
   font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 22px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.75);
+  color: color-mix(in srgb, var(--color-paper) 85%, var(--color-teal-ink));
   text-decoration: none;
   padding: 14px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-paper) 12%, var(--color-teal-ink));
   transition: color 0.2s;
   opacity: 0;
   animation: none;
@@ -236,17 +234,17 @@
 }
 
 .site-mobile-link:hover {
-  color: #fff;
+  color: var(--color-surface);
 }
 
 .site-mobile-link.active {
-  color: var(--gold);
+  color: var(--color-teal-light);
 }
 
 .site-mobile-link-arrow {
   font-size: 14px;
-  color: var(--gold);
-  opacity: 0.6;
+  color: var(--color-teal-light);
+  opacity: 0.8;
   transition: transform 0.2s, opacity 0.2s;
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-weight: 400;

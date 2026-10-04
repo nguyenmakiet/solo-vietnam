@@ -1,6 +1,8 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
+
+const CDN = "https://res.cloudinary.com/dl5kqhspv/image/upload"
 
 interface GalleryLightboxProps {
   publicIds: string[]
@@ -14,6 +16,16 @@ export default function GalleryLightbox({ publicIds, locationName, streetViewUrl
 
   const close = useCallback(() => setActiveIndex(null), [])
   const closeStreetView = useCallback(() => setStreetViewOpen(false), [])
+
+  // Focus: into the dialog on open, back to the tile that opened it on close
+  const opener = useRef<HTMLElement | null>(null)
+  const dialogClose = useRef<HTMLButtonElement>(null)
+  const isOpen = activeIndex !== null || streetViewOpen
+  useEffect(() => {
+    if (isOpen) dialogClose.current?.focus()
+    else if (opener.current) { opener.current.focus(); opener.current = null }
+  }, [isOpen])
+  const open = (e: React.MouseEvent<HTMLElement>, action: () => void) => { opener.current = e.currentTarget; action() }
 
   const prev = useCallback(() => {
     setActiveIndex((i) => (i !== null ? (i - 1 + publicIds.length) % publicIds.length : null))
@@ -51,53 +63,60 @@ export default function GalleryLightbox({ publicIds, locationName, streetViewUrl
     <>
       <div className="gallery-grid">
         {publicIds.map((publicId, i) => (
-          <img
+          <button
             key={publicId}
-            src={`https://res.cloudinary.com/dl5kqhspv/image/upload/w_600,h_450,c_fill,q_auto,f_auto/${publicId}`}
-            alt={`${locationName} ${i + 1}`}
-            className="gallery-img gallery-img--clickable"
-            onClick={() => setActiveIndex(i)}
-          />
-        ))}
-        {streetViewUrl && (
-          <div
-            className="gallery-streetview-tile gallery-img--clickable"
-            onClick={() => setStreetViewOpen(true)}
+            type="button"
+            className={`gallery-tile${i === 0 ? " gallery-tile--lead" : ""}`}
+            aria-label={`Open photo ${i + 1} of ${publicIds.length}`}
+            onClick={(e) => open(e, () => setActiveIndex(i))}
           >
             <img
-              src="/images/streetview.avif"
-              alt="Street View"
-              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              // lead photo spans two columns, so it gets a larger source
+              src={`${CDN}/${i === 0 ? "w_1000,h_750" : "w_600,h_450"},c_fill,q_auto,f_auto/${publicId}`}
+              alt={`${locationName} ${i + 1}`}
+              className="gallery-img"
+              loading="lazy"
+              decoding="async"
             />
-            <div className="gallery-streetview-overlay">
-              <span className="gallery-streetview-badge">Street View · Click to explore</span>
-            </div>
-          </div>
+          </button>
+        ))}
+        {streetViewUrl && (
+          <button
+            type="button"
+            className="gallery-tile"
+            aria-label={`Open Street View of ${locationName}`}
+            onClick={(e) => open(e, () => setStreetViewOpen(true))}
+          >
+            <span className="gallery-streetview">
+              <span className="gallery-streetview-label">Street View</span>
+              <span className="gallery-streetview-cta">Look around →</span>
+            </span>
+          </button>
         )}
       </div>
 
       {/* Photo lightbox */}
       {activeIndex !== null && (
-        <div className="lightbox-overlay" onClick={close}>
-          <button className="lightbox-close" onClick={close} aria-label="Close">✕</button>
+        <div className="lightbox-overlay" onClick={close} role="dialog" aria-modal="true" aria-label={`${locationName} photos`}>
+          <button ref={dialogClose} className="lightbox-close" onClick={close} aria-label="Close photo">×</button>
 
           {publicIds.length > 1 && (
             <>
               <button
                 className="lightbox-nav lightbox-nav--prev"
                 onClick={(e) => { e.stopPropagation(); prev() }}
-                aria-label="Previous"
+                aria-label="Previous photo"
               >‹</button>
               <button
                 className="lightbox-nav lightbox-nav--next"
                 onClick={(e) => { e.stopPropagation(); next() }}
-                aria-label="Next"
+                aria-label="Next photo"
               >›</button>
             </>
           )}
 
           <img
-            src={`https://res.cloudinary.com/dl5kqhspv/image/upload/w_1600,q_auto,f_auto/${publicIds[activeIndex]}`}
+            src={`${CDN}/w_1600,q_auto,f_auto/${publicIds[activeIndex]}`}
             alt={`${locationName} ${activeIndex + 1}`}
             className="lightbox-img"
             onClick={(e) => e.stopPropagation()}
@@ -111,14 +130,15 @@ export default function GalleryLightbox({ publicIds, locationName, streetViewUrl
 
       {/* Street View modal */}
       {streetViewOpen && streetViewUrl && (
-        <div className="lightbox-overlay" onClick={closeStreetView}>
-          <button className="lightbox-close" onClick={closeStreetView} aria-label="Close">✕</button>
+        <div className="lightbox-overlay" onClick={closeStreetView} role="dialog" aria-modal="true" aria-label={`Street View of ${locationName}`}>
+          <button ref={dialogClose} className="lightbox-close" onClick={closeStreetView} aria-label="Close Street View">×</button>
           <div
             className="streetview-modal"
             onClick={(e) => e.stopPropagation()}
           >
             <iframe
               src={streetViewUrl}
+              title={`Street View of ${locationName}`}
               allowFullScreen
               style={{ width: "100%", height: "100%", border: 0 }}
             />

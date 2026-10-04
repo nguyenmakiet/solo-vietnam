@@ -44,7 +44,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
       />
 
       <section className="dp-section">
-        <p className="section-label">{title}</p>
+        <h2 className="section-label">{title}</h2>
         <div className="faq-list">
           {faqs.map((faq, idx) => {
             const isOpen = openSet.has(idx)

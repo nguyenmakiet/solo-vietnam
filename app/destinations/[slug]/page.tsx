@@ -7,19 +7,30 @@ import { allLocations, activeLocations } from "@/data/all-locations"
 import ItineraryMapLoader from "@/components/ItineraryMapLoader"
 import FaqAccordion from "@/components/FaqAccordion"
 import "./destination.css"
-import FallbackImage from "@/components/FallbackImage"
+import CloudinaryImage from "@/components/CloudinaryImage"
+import PhotoPlaceholder from "@/components/PhotoPlaceholder"
 import { stripLeadingEmoji } from "@/lib/text"
+import { dotClass } from "@/lib/category-dot"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
-function getImageSrc(heroImage?: string): string {
-  if (!heroImage || heroImage.includes("placeholder")) return "/images/coming-soon.jpg"
+// null = no real photo yet (rendered as PhotoPlaceholder)
+function realImage(heroImage?: string): string | null {
+  if (!heroImage || heroImage.includes("placeholder")) return null
   return heroImage
 }
 
-function getTypeLabel(type: Location["type"]): string {
-  const primary = Array.isArray(type) ? type[0] : type
-  return typeDisplayLabel(primary)
+function primaryType(type: Location["type"]) {
+  return Array.isArray(type) ? type[0] : type
+}
+
+const MONTH_NAMES = Array.from({ length: 12 }, (_, i) => new Date(2000, i).toLocaleString("en", { month: "short" }))
+
+// Presentation only: bold the lead phrase of a highlight (before the first ": "
+// or " - "). The text itself is unchanged.
+function splitLead(text: string): [string, string] {
+  const m = text.match(/^([^\n]{3,90}?(?::| -))(\s[\s\S]*)$/)
+  return m ? [m[1], m[2]] : ["", text]
 }
 
 function formatSlug(slug: string): string {
@@ -132,337 +143,329 @@ export default async function DestinationPage({
       ? "Central Vietnam"
       : "South Vietnam"
 
+  const heroImage = realImage(destination.heroImage)
+
   return (
-    <>
-      <div className="dp">
+    <div className={`dp region-theme-${destination.region}`}>
 
-        {/* Breadcrumb */}
-        <nav className="breadcrumb">
-          <Link href="/">Home</Link>
-          <span className="sep">›</span>
-          <Link href={`/${destination.region}-vietnam`}>{regionLabel}</Link>
-          <span className="sep">›</span>
-          <Link href={`/provinces/${destination.provinceSlug}`}>{destination.province}</Link>
-          <span className="sep">›</span>
-          <span className="current">{destination.name}</span>
-        </nav>
+      {/* ── Head: text on paper, photo below ── */}
+      <header className="dd-head">
+        <div className="dd-container">
+          <nav className="dd-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <Link href={`/${destination.region}-vietnam`}>{regionLabel}</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <Link href={`/provinces/${destination.provinceSlug}`}>{destination.province}</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <span className="current" aria-current="page">{destination.name}</span>
+          </nav>
 
-        {/* Hero */}
-        <header className="hero">
-          <img
-            src={getImageSrc(destination.heroImage)}
-            alt={destination.name}
-            className="hero-img"
-          />
-          <div className="hero-overlay" />
-          <div className="hero-content">
-            <div className="hero-badge">{regionLabel} · Solo Travel Guide</div>
-            <h1>{destination.name}</h1>
-            {destination.tagline && <p className="hero-tagline">{destination.tagline}</p>}
+          <h1>{destination.name}</h1>
+          {destination.tagline && <p className="dd-tagline">{destination.tagline}</p>}
 
-            {(destination.tags?.length || destination.travelStyle?.length) ? (
-              <div className="hero-labels">
-                {destination.tags && destination.tags.length > 0 && (
-                  <div className="hero-tags">
-                    {destination.tags.map((tag) => (
-                      <span key={tag} className="hero-tag">{stripLeadingEmoji(tag)}</span>
-                    ))}
-                  </div>
-                )}
-                {destination.travelStyle && destination.travelStyle.length > 0 && (
-                  <div className="travel-style-tags">
-                    {destination.travelStyle.map((ts) => (
-                      <span key={ts} className="ts-tag">{TRAVEL_STYLE_LABEL[ts] ?? ts}</span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ) : null}
+          {destination.tags && destination.tags.length > 0 && (
+            <p className="dd-tags">{destination.tags.map(stripLeadingEmoji).join(" · ")}</p>
+          )}
+          {destination.travelStyle && destination.travelStyle.length > 0 && (
+            <p className="dd-styles">{destination.travelStyle.map((ts) => TRAVEL_STYLE_LABEL[ts] ?? ts).join(" · ")}</p>
+          )}
 
-            <div className="hero-meta">
-              <div className="hero-meta-item">
-                <span className="val">{destination.province}</span>
-                <span className="lbl">Province</span>
-              </div>
-              {destination.recommendedStay && (
-                <div className="hero-meta-item">
-                  <span className="val">{destination.recommendedStay}</span>
-                  <span className="lbl">Stay</span>
-                </div>
-              )}
-              {destination.cost?.budget && (
-                <div className="hero-meta-item">
-                  <span className="val">{destination.cost.budget}</span>
-                  <span className="lbl">Budget/day</span>
-                </div>
-              )}
-              {destination.transport && (
-                <div className="hero-meta-item">
-                  <span className="val">{destination.transport}</span>
-                  <span className="lbl">Transport</span>
-                </div>
-              )}
+          <dl className="dd-facts">
+            <div className="dd-fact">
+              <dt>Province</dt>
+              <dd>{destination.province}</dd>
             </div>
-          </div>
-        </header>
-
-        <main className="content-wrap">
-
-          {/* Description */}
-          <div className="description-block">
-            <p>{destination.description}</p>
-          </div>
-
-          {/* Best Months */}
-          {bestMonths.length > 0 && (
-            <section className="dp-section">
-              <p className="section-label">Best Months to Visit</p>
-              <div className="month-pills">
-                {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => (
-                  <span key={m} className={`month-pill${bestMonths.includes(m) ? " active" : ""}`}>
-                    {new Date(2000, m - 1).toLocaleString("en", { month: "short" })}
-                  </span>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Highlights */}
-          {highlights.length > 0 && (
-            <section className="dp-section">
-              <p className="section-label">Highlights</p>
-              <div className="highlights-list">
-                {highlights.map((h) => (
-                  <Link key={h.text} href={`/locations/${h.locationSlug}`} className="highlight-pill">
-                    {h.text}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* What To Do */}
-          {Object.keys(whatToDo).length > 0 && (
-            <section className="dp-section">
-              <p className="section-label">What To Do</p>
-              <div className="whatdo-grid">
-                {Object.entries(whatToDo).map(([group, experiences]) => (
-                  <div key={group} className="whatdo-group">
-                    <div className="group-label">
-                      {EXPERIENCE_GROUP_CONFIG[group]?.label ?? group}
-                    </div>
-                    <div className="exp-pills">
-                      {experiences.map((exp) => (
-                        <span key={exp} className="exp-pill">{formatSlug(exp)}</span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Places to Visit */}
-          <section className="dp-section">
-            <p className="section-label">
-              Places to Visit
-              {destinationLocations.length > 0 && ` · ${destinationLocations.length} spots`}
-            </p>
-            {destinationLocations.length > 0 ? (
-              <div className="locations-grid">
-                {destinationLocations.map((loc) => (
-                  <Link
-                    key={loc.slug}
-                    href={`/locations/${loc.slug}`}
-                    className="location-card"
-                  >
-                    <FallbackImage
-                      src={getImageSrc(loc.heroImage)}
-                      alt={loc.name}
-                      className="location-card-img"
-                    />
-                    <div className="location-card-body">
-                      <div className="location-card-type">
-                        {getTypeLabel(loc.type)}
-                        {loc.status === "seasonal" && <span className="seasonal-badge">Seasonal</span>}
-                        {loc.status === "temporarily-closed" && <span className="closed-badge">Temporarily Closed</span>}
-                        {loc.status === "seasonally-closed" && <span className="closed-badge">Seasonally Closed</span>}
-                        {loc.status === "closed" && <span className="closed-badge">Closed</span>}
-                      </div>
-                      <div className="location-card-name">{loc.name}</div>
-                      <div className="location-card-desc">{loc.seoDescription}</div>
-                    </div>
-                    <div className="location-card-footer">
-                      <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : loc.bestSeasonNote ?? loc.bestTimeOfDay}</span>
-                      <span>→</span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="locations-coming-soon">
-                Location guides coming soon
+            {destination.recommendedStay && (
+              <div className="dd-fact">
+                <dt>Stay</dt>
+                <dd>{destination.recommendedStay}</dd>
               </div>
             )}
-          </section>
-
-          {/* Itinerary Map */}
-          {MAP_DESTINATIONS.has(destination.slug) && destination.itineraries && destination.itineraries.length > 0 && (
-            <section className="dp-section">
-              <p className="section-label">Route Map</p>
-              <ItineraryMapLoader itineraries={destination.itineraries} stopDataMap={stopDataMap} />
-            </section>
-          )}
-
-          {/* Itineraries */}
-          {destination.itineraries && destination.itineraries.length > 0 && (
-            <section className="dp-section">
-              <p className="section-label">Suggested Itineraries</p>
-              <div className="itineraries-stack">
-                {destination.itineraries.map((itin) => (
-                  <div key={itin.duration} className="itinerary-block">
-                    <div className="itinerary-header">
-                      <span className="itin-duration">{itin.duration}</span>
-                      <span className="itin-label">{itin.label}</span>
-                    </div>
-                    <div className="day-list">
-                      {itin.days.map((day) => (
-                        <div key={day.day} className="day-card">
-                          <div className="day-header">
-                            <span className="day-num">Day {day.day}</span>
-                            <span className="day-title">{day.title}</span>
-                            {day.distance && (
-                              <span className="day-distance">{day.distance}</span>
-                            )}
-                          </div>
-                          {day.stops.length > 0 && (
-                            <div className="day-stops">
-                              {day.stops.map((stop) =>
-                                locationNameMap[stop] ? (
-                                  <Link key={stop} href={`/locations/${stop}`} className="stop-tag linked">
-                                    {locationNameMap[stop]}
-                                  </Link>
-                                ) : (
-                                  <span key={stop} className="stop-tag">
-                                    {formatSlug(stop)}
-                                  </span>
-                                )
-                              )}
-                            </div>
-                          )}
-                          {day.notes && <p className="day-notes">{day.notes}</p>}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+            {destination.transport && (
+              <div className="dd-fact dd-fact--wide">
+                <dt>Transport</dt>
+                <dd>{destination.transport}</dd>
               </div>
-            </section>
-          )}
+            )}
+          </dl>
+        </div>
+      </header>
 
-          {/* Getting There */}
-          {destination.gettingThere && destination.gettingThere.length > 0 && (
-            <section className="dp-section">
-              <p className="section-label">Getting There</p>
-              <div className="transport-cards">
-                {destination.gettingThere.map((opt, i) => (
-                  <div key={i} className="transport-card">
-                    <div className="tc-top">
-                      <div className="tc-core">
-                        <span className="tc-from">{opt.from}</span>
-                        <span className="tc-vehicle">{opt.vehicle}</span>
-                      </div>
-                      <div className="tc-right">
-                        <span className="tc-duration">{opt.duration}</span>
-                        <span className="tc-cost">{opt.cost}</span>
-                      </div>
-                    </div>
-                    {opt.notes && <p className="tc-notes">{opt.notes}</p>}
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+      {heroImage && (
+        <div className="dd-hero-media">
+          <CloudinaryImage
+            src={heroImage}
+            alt={destination.name}
+            fill
+            sizes="(min-width: 1200px) 1200px, 100vw"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </div>
+      )}
 
-          {/* Budget */}
-          {destination.cost && (
-            <section className="dp-section">
-              <p className="section-label">Budget per Day</p>
-              <div className="cost-grid">
-                <div className="cost-tier">
-                  <div className="ct-label">Budget</div>
-                  <div className="ct-value">{destination.cost.budget}</div>
-                </div>
-                <div className="cost-tier mid">
-                  <div className="ct-label">Mid-range</div>
-                  <div className="ct-value">{destination.cost.midRange}</div>
-                </div>
-                <div className="cost-tier">
-                  <div className="ct-label">Comfortable</div>
-                  <div className="ct-value">{destination.cost.comfortable}</div>
-                </div>
-              </div>
-              {destination.cost.notes && (
-                <p className="cost-notes">{destination.cost.notes}</p>
-              )}
-            </section>
-          )}
+      <main className="dd-container dd-main">
 
-          {/* Plan Your Trip */}
-          {(destination.bestTimeSummary || destination.recommendedStay) && (
-            <section className="dp-section">
-              <p className="section-label">Plan Your Trip</p>
-              <div className="info-row">
-                {destination.bestTimeSummary && (
-                  <div className="info-card">
-                    <div className="ic-title">Best Time to Visit</div>
-                    <div className="ic-body">{destination.bestTimeSummary}</div>
-                  </div>
-                )}
-                {destination.recommendedStay && (
-                  <div className="info-card">
-                    <div className="ic-title">Recommended Stay</div>
-                    <div className="ic-body">{destination.recommendedStay}</div>
-                  </div>
-                )}
-              </div>
-            </section>
-          )}
+        {/* Intro */}
+        <div className="dd-intro">
+          <p>{destination.description}</p>
+        </div>
 
-          {/* Related destinations */}
-          {related.length > 0 && (
-            <section className="dp-section">
-              <p className="section-label">More in {destination.province} Province</p>
-              <div className="related-grid">
-                {related.map((d) => (
-                  <Link key={d.slug} href={`/destinations/${d.slug}`} className="related-card">
-                    <div>
-                      <div className="rc-name">{d.name}</div>
-                      <div className="rc-sub">{d.province}</div>
-                    </div>
-                    <span className="rc-arrow">→</span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* FAQ */}
-          {destination.faqs && destination.faqs.length > 0 && (
-            <FaqAccordion faqs={destination.faqs} />
-          )}
-
-          {/* Region CTA */}
-          <div className="region-cta">
-            <div>
-              <div className="cta-label">Explore the region</div>
-              <div className="cta-title">{regionLabel}</div>
+        {/* Best Months */}
+        {bestMonths.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-months">
+            <h2 id="h-months" className="section-label">Best Months to Visit</h2>
+            <div
+              className="month-strip"
+              role="img"
+              aria-label={`Best months to visit: ${bestMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}`}
+            >
+              {MONTH_NAMES.map((name, i) => (
+                <span key={name} className={`month-cell${bestMonths.includes(i + 1) ? " active" : ""}`} aria-hidden="true">
+                  {name}
+                </span>
+              ))}
             </div>
-            <Link href={`/${destination.region}-vietnam`}>View all destinations →</Link>
-          </div>
+          </section>
+        )}
 
-        </main>
-      </div>
-    </>
+        {/* Highlights */}
+        {highlights.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-highlights">
+            <h2 id="h-highlights" className="section-label">Highlights</h2>
+            <ol className="dd-highlights">
+              {highlights.map((h, i) => {
+                const [lead, rest] = splitLead(h.text)
+                return (
+                  <li key={h.text} className="dd-highlight">
+                    <Link href={`/locations/${h.locationSlug}`}>
+                      <span className="dd-hl-num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+                      <span className="dd-hl-text">
+                        {lead && <strong>{lead}</strong>}{rest}
+                      </span>
+                      <span className="dd-hl-arrow" aria-hidden="true">→</span>
+                      {locationNameMap[h.locationSlug] && (
+                        <span className="dd-hl-place">{locationNameMap[h.locationSlug]}</span>
+                      )}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ol>
+          </section>
+        )}
+
+        {/* What To Do */}
+        {Object.keys(whatToDo).length > 0 && (
+          <section className="dp-section" aria-labelledby="h-whatdo">
+            <h2 id="h-whatdo" className="section-label">What To Do</h2>
+            <div className="dd-whatdo">
+              {Object.entries(whatToDo).map(([group, experiences]) => (
+                <div key={group} className="dd-whatdo-group">
+                  <h3>{EXPERIENCE_GROUP_CONFIG[group]?.label ?? group}</h3>
+                  <ul className="dd-chips">
+                    {experiences.map((exp) => (
+                      <li key={exp} className="dd-chip">
+                        <span className={dotClass(exp)} aria-hidden="true" />
+                        {formatSlug(exp)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Places to Visit */}
+        <section className="dp-section" aria-labelledby="h-places">
+          <h2 id="h-places" className="section-label">
+            <span>
+              Places to Visit
+              {destinationLocations.length > 0 && <span className="dd-count"> · {destinationLocations.length} spots</span>}
+            </span>
+          </h2>
+          {destinationLocations.length > 0 ? (
+            <div className="dd-places">
+              {destinationLocations.map((loc) => {
+                const img = realImage(loc.heroImage)
+                const type = primaryType(loc.type)
+                const best = isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : loc.bestSeasonNote ?? loc.bestTimeOfDay
+                return (
+                  <Link key={loc.slug} href={`/locations/${loc.slug}`} className="dd-place">
+                    <div className="dd-place-media">
+                      {img ? (
+                        <CloudinaryImage
+                          src={img}
+                          alt={loc.name}
+                          fill
+                          sizes="(min-width: 960px) 300px, (min-width: 640px) 50vw, 100vw"
+                        />
+                      ) : (
+                        <PhotoPlaceholder />
+                      )}
+                    </div>
+                    <div className="dd-place-body">
+                      <div className="dd-place-meta">
+                        <span className="ui-dot-label">
+                          <span className={dotClass(type)} aria-hidden="true" />
+                          {typeDisplayLabel(type)}
+                        </span>
+                        {loc.status === "seasonal" && <span className="dd-status dd-status--seasonal">Seasonal</span>}
+                        {loc.status === "temporarily-closed" && <span className="dd-status">Temporarily Closed</span>}
+                        {loc.status === "seasonally-closed" && <span className="dd-status">Seasonally Closed</span>}
+                        {loc.status === "closed" && <span className="dd-status">Closed</span>}
+                      </div>
+                      <h3 className="dd-place-name">{loc.name}</h3>
+                      <p className="dd-place-desc">{loc.seoDescription}</p>
+                    </div>
+                    <div className="dd-place-foot">
+                      <span className="dd-place-best">{best}</span>
+                      <span className="dd-place-arrow" aria-hidden="true">→</span>
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+          ) : (
+            <div className="dd-empty">Location guides coming soon</div>
+          )}
+        </section>
+
+        {/* Itinerary Map */}
+        {MAP_DESTINATIONS.has(destination.slug) && destination.itineraries && destination.itineraries.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-route">
+            <h2 id="h-route" className="section-label">Route Map</h2>
+            <ItineraryMapLoader itineraries={destination.itineraries} stopDataMap={stopDataMap} />
+          </section>
+        )}
+
+        {/* Itineraries */}
+        {destination.itineraries && destination.itineraries.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-itins">
+            <h2 id="h-itins" className="section-label">Suggested Itineraries</h2>
+            <div className="dd-itins">
+              {destination.itineraries.map((itin) => (
+                <article key={itin.duration} className="dd-itin">
+                  <div className="dd-itin-head">
+                    <span className="dd-itin-duration">{itin.duration}</span>
+                    <h3>{itin.label}</h3>
+                  </div>
+                  <div>
+                    {itin.days.map((day) => (
+                      <div key={day.day} className="dd-day">
+                        <div className="dd-day-head">
+                          <span className="dd-day-num">Day {day.day}</span>
+                          <span className="dd-day-title">{day.title}</span>
+                          {day.distance && <span className="dd-day-distance">{day.distance}</span>}
+                        </div>
+                        {day.stops.length > 0 && (
+                          <p className="dd-stops">
+                            {day.stops.map((stop, i) => (
+                              <span key={stop}>
+                                {i > 0 && <span className="dd-stop-sep" aria-hidden="true">·</span>}
+                                {locationNameMap[stop] ? (
+                                  <Link href={`/locations/${stop}`}>{locationNameMap[stop]}</Link>
+                                ) : (
+                                  formatSlug(stop)
+                                )}
+                              </span>
+                            ))}
+                          </p>
+                        )}
+                        {day.notes && <p className="dd-day-notes">{day.notes}</p>}
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Getting There */}
+        {destination.gettingThere && destination.gettingThere.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-getting">
+            <h2 id="h-getting" className="section-label">Getting There</h2>
+            <div className="dd-rows">
+              {destination.gettingThere.map((opt, i) => (
+                <div key={i} className="dd-route">
+                  <div className="dd-route-top">
+                    <div>
+                      <span className="dd-route-from">{opt.from}</span>
+                      <span className="dd-route-vehicle">{opt.vehicle}</span>
+                    </div>
+                    <div className="dd-route-right">
+                      <span className="dd-route-duration">{opt.duration}</span>
+                      <span className="dd-route-cost">{opt.cost}</span>
+                    </div>
+                  </div>
+                  {opt.notes && <p className="dd-route-notes">{opt.notes}</p>}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Plan Your Trip (Budget per Day intentionally not shown) */}
+        {(destination.bestTimeSummary || destination.recommendedStay) && (
+          <section className="dp-section" aria-labelledby="h-plan">
+            <h2 id="h-plan" className="section-label">Plan Your Trip</h2>
+            <dl className="dd-rows">
+              {destination.bestTimeSummary && (
+                <div className="dd-plan">
+                  <dt>Best Time to Visit</dt>
+                  <dd>{destination.bestTimeSummary}</dd>
+                </div>
+              )}
+              {destination.recommendedStay && (
+                <div className="dd-plan">
+                  <dt>Recommended Stay</dt>
+                  <dd>{destination.recommendedStay}</dd>
+                </div>
+              )}
+            </dl>
+          </section>
+        )}
+
+        {/* Related destinations */}
+        {related.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-related">
+            <h2 id="h-related" className="section-label">More in {destination.province} Province</h2>
+            <ul className="dd-related">
+              {related.map((d) => (
+                <li key={d.slug}>
+                  <Link href={`/destinations/${d.slug}`}>
+                    <span>
+                      <span className="dd-related-name">{d.name}</span>
+                      <span className="dd-related-sub">{d.province}</span>
+                    </span>
+                    <span className="dd-related-arrow" aria-hidden="true">→</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {/* FAQ */}
+        {destination.faqs && destination.faqs.length > 0 && (
+          <FaqAccordion faqs={destination.faqs} />
+        )}
+
+      </main>
+
+      {/* Region CTA: teal-ink band into the footer */}
+      <section className="dd-cta" aria-label="Explore the region">
+        <div className="dd-container dd-cta-inner">
+          <div>
+            <p className="dd-cta-label">Explore the region</p>
+            <p className="dd-cta-title">{regionLabel}</p>
+          </div>
+          <Link href={`/${destination.region}-vietnam`} className="ui-btn">View all destinations →</Link>
+        </div>
+      </section>
+    </div>
   )
 }

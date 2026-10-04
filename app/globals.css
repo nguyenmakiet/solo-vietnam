@@ -10,6 +10,49 @@
   --color-foreground: var(--foreground);
 }
 
+/* ============================================================
+   SoloInVietnam visual system - single source of truth.
+   `static` keeps every token emitted as a CSS variable even when
+   no Tailwind utility uses it, so plain CSS can rely on them.
+   Utilities: bg-paper, text-ink, border-line, rounded-card...
+   ============================================================ */
+@theme static {
+  /* Base */
+  --color-paper: #f6f3ec;
+  --color-surface: #ffffff;
+  --color-ink: #1b2427;
+  --color-ink-2: #5b676a;
+  --color-line: #dad5c8;
+
+  /* Brand */
+  --color-teal-ink: #12353c;
+  --color-teal: #2b6a6f;
+  --color-teal-light: #9cc5bf;
+
+  /* Action. signal = fills (white text on it); signal-text = text on paper/surface */
+  --color-signal: #c4452a;
+  --color-signal-text: #b8401f;
+
+  /* Map regions */
+  --color-map-north: #8c9886;
+  --color-map-central: #7fa3a0;
+  --color-map-south: #cbb27a;
+
+  /* Semantic category dots */
+  --color-dot-water: #3f7f8c;
+  --color-dot-trek: #6f8060;
+  --color-dot-food: #b8603f;
+  --color-dot-highlight: #c79a3b;
+
+  --color-verified: #4f6b4a;
+
+  /* Shape - no shadows, no decorative gradients: use 1px borders */
+  --radius-card: 2px;
+  --radius-button: 2px;
+  --radius-input: 2px;
+  --radius-image: 0px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -21,4 +64,147 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
+}
+
+/* ============================================================
+   Shared UI primitives (site-wide)
+   ============================================================ */
+@layer components {
+  /* Text link: teal + underline, signal-text on hover (both >= 4.5:1 on paper/surface) */
+  .ui-link {
+    color: var(--color-teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
+  .ui-link:hover {
+    color: var(--color-signal-text);
+  }
+
+  /* Link on teal-ink. Signal fails contrast there, so hover stays light. */
+  .ui-link-on-dark {
+    color: var(--color-paper);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
+  .ui-link-on-dark:hover {
+    color: var(--color-teal-light);
+  }
+
+  /* Primary button: signal fill, white text (4.96:1) */
+  .ui-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: var(--color-signal);
+    color: var(--color-surface);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 12px 20px;
+    border: 1px solid var(--color-signal);
+    border-radius: var(--radius-button);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .ui-btn:hover {
+    background: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
+    border-color: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
+  }
+
+  .ui-link:focus-visible,
+  .ui-btn:focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+  .ui-link-on-dark:focus-visible {
+    outline: 2px solid var(--color-teal-light);
+    outline-offset: 2px;
+  }
+
+  /* Category label: 6px dot + small lowercase text */
+  .ui-dot-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 1.4;
+    text-transform: lowercase;
+    color: var(--color-ink-2);
+  }
+  .ui-dot {
+    flex: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-ink-2);
+  }
+  .ui-dot--water {
+    background: var(--color-dot-water);
+  }
+  .ui-dot--trek {
+    background: var(--color-dot-trek);
+  }
+  .ui-dot--food {
+    background: var(--color-dot-food);
+  }
+  .ui-dot--highlight {
+    background: var(--color-dot-highlight);
+  }
+}
+
+/* ============================================================
+   Location type themes - soft, semantic, reusable.
+   The type -> theme key mapping is data-driven (`theme` in
+   data/taxonomy/types.ts, re-exported as locationTheme). Each key
+   defines the same four variables; apply with .type-theme-{key}.
+     --type-tint          very light background wash
+     --type-border        hairline border on tinted surfaces
+     --type-accent        dots, bars, active markers (>= 3:1 on white)
+     --type-accent-strong text in the accent colour (>= 6:1 on tint/white/paper)
+   Destination pages reuse the same palettes as regional accents:
+   .region-theme-north = sage, -central = warm stone/terracotta, -south = sea-glass.
+   ============================================================ */
+.type-theme-blue,
+.region-theme-south {
+  /* water: beach, island, bay, river, lake, cape, stream */
+  --type-tint: #edf4f4;
+  --type-border: #c9dcdd;
+  --type-accent: #3f7f8c;
+  --type-accent-strong: #2b5f69;
+}
+.type-theme-green,
+.region-theme-north {
+  /* land and nature: mountain, forest, waterfall, cave, valley, pass... */
+  --type-tint: #eff3eb;
+  --type-border: #d3dccb;
+  --type-accent: #6f8060;
+  --type-accent-strong: #4a6044;
+}
+.type-theme-amber {
+  /* civic: town, city, market, museum, bridge, fortress... */
+  --type-tint: #f1f0f5;
+  --type-border: #d8d4e1;
+  --type-accent: #736b86;
+  --type-accent-strong: #575069;
+}
+.type-theme-purple,
+.region-theme-central {
+  /* heritage: temple, pagoda, citadel, tomb, historic site, village... */
+  --type-tint: #f7efea;
+  --type-border: #e8d3c7;
+  --type-accent: #b8603f;
+  --type-accent-strong: #8e4529;
+}
+.type-theme-gray {
+  --type-tint: #f2f1ec;
+  --type-border: #dad5c8;
+  --type-accent: #5b676a;
+  --type-accent-strong: #3f4a4d;
 }

@@ -1,9 +1,11 @@
 "use client"
 import Vietnam from "@svg-maps/vietnam"
 import { useRouter } from "next/navigation"
-import { useState } from "react"
+import Link from "next/link"
+import { useRef, useState } from "react"
 import { provinces } from "@/data/provinces"
 import { allLocations } from "@/data/all-locations"
+import "./vietnam-map.css"
 
 const PROVINCE_TO_SLUG: Record<string, string> = {
   // NORTH
@@ -96,19 +98,46 @@ const PROVINCE_REGION: Record<string, "north" | "central" | "south"> = {
   "Can Tho": "south", "Soc Trang": "south", "Bac Lieu": "south", "Ca Mau": "south",
 }
 
-const COLORS = {
-  north: { base: "#c0d5ec", hover: "#93bedc" },
-  central: { base: "#bcd9c2", hover: "#8ec4a0" },
-  south: { base: "#f2d4a8", hover: "#e6b87a" },
-  unknown: { base: "#e8dfd0", hover: "#cfc3ae" },
+type Region = "north" | "central" | "south" | "unknown"
+
+const REGION_CLASS: Record<Region, string> = {
+  north: "vn-map-province--north",
+  central: "vn-map-province--central",
+  south: "vn-map-province--south",
+  unknown: "vn-map-province--unknown",
 }
+
+const LEGEND = [
+  { region: "north", label: "North", href: "/north-vietnam" },
+  { region: "central", label: "Central", href: "/central-vietnam" },
+  { region: "south", label: "South", href: "/south-vietnam" },
+] as const
+
+/** Region legend - square swatches in the map region colours, linking to the region guides. */
+export function VietnamMapLegend({ className = "" }: { className?: string }) {
+  return (
+    <ul className={`vn-map-legend ${className}`}>
+      {LEGEND.map(({ region, label, href }) => (
+        <li key={region}>
+          <Link href={href} className="vn-map-legend-item">
+            <span className={`vn-map-swatch vn-map-swatch--${region}`} aria-hidden="true" />
+            {label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+const CARD_WIDTH = 240
 
 export default function VietnamMap() {
   const router = useRouter()
+  const wrapRef = useRef<HTMLDivElement>(null)
 
   const [tooltip, setTooltip] = useState<{
-    x: number
-    y: number
+    left: number
+    top: number
     name: string
     slug?: string
   } | null>(null)
@@ -123,209 +152,105 @@ export default function VietnamMap() {
   } | null>(null)
 
   return (
-    <div
-      className="flex flex-col items-center gap-8 py-4 px-4"
-      onClick={() => setTooltip(null)}
-    >
-
-      {/* Legend */}
-      <div className="flex flex-wrap justify-center gap-5 text-sm font-medium">
-        {[
-          { color: "#c0d5ec", label: "North", href: "/north-vietnam" },
-          { color: "#bcd9c2", label: "Central", href: "/central-vietnam" },
-          { color: "#f2d4a8", label: "South", href: "/south-vietnam" },
-        ].map(({ color, label, href }) => (
-          <a key={label} href={href} className="flex items-center gap-2 transition-opacity hover:opacity-70" style={{ color: "#7a6a52", textDecoration: "none" }}>
-            <div style={{ background: color, border: "1px solid #d4c4a8" }} className="w-3 h-3 rounded-full" />
-            {label}
-          </a>
-        ))}
-      </div>
-
-      {/* Map */}
-      <div className="relative w-full max-w-2xl">
-        <svg viewBox={Vietnam.viewBox} className="w-full drop-shadow-sm">
-          {Vietnam.locations.map((location: { id: string; name: string; path: string }) => {
-            const slug = PROVINCE_TO_SLUG[location.name]
-            const region = PROVINCE_REGION[location.name] || "unknown"
-            const colors = COLORS[region]
-            const hasGuide = !!slug
-
-            return (
-              <path
-                key={location.id}
-                d={location.path}
-                stroke="#a89880"
-                strokeWidth="0.6"
-                strokeLinejoin="round"
-                style={{
-                  cursor: "pointer",
-                  transition: "fill 0.2s ease",
-                  fill: hoveredId === location.id ? colors.hover : colors.base,
-                  filter: hasGuide ? "brightness(0.85)" : "none",
-                }}
-                onMouseEnter={() => setHoveredId(location.id)}
-                onMouseMove={(e) => {
-                  const rect = (e.currentTarget as SVGPathElement)
-                    .closest("svg")!
-                    .getBoundingClientRect()
-                  const count = slug
-                    ? allLocations.filter((l) => l.provinces.includes(slug)).length
-                    : 0
-                  setHoverLabel({
-                    x: e.clientX - rect.left,
-                    y: e.clientY - rect.top,
-                    name: location.name,
-                    count,
-                  })
-                }}
-                onMouseLeave={() => {
-                  setHoveredId(null)
-                  setHoverLabel(null)
-                }}
-                onClick={(e) => {
-                  e.stopPropagation()
-                  const rect = (e.currentTarget as SVGPathElement)
-                    .closest("svg")!
-                    .getBoundingClientRect()
-                  setTooltip({
-                    x: e.clientX - rect.left,
-                    y: e.clientY - rect.top,
-                    name: location.name,
-                    slug,
-                  })
-                }}
-              />
-            )
-          })}
-        </svg>
-
-        {/* Hover label */}
-        {hoverLabel && !tooltip && (
-          <div
-            className="absolute pointer-events-none"
-            style={{ left: hoverLabel.x + 12, top: hoverLabel.y - 40, zIndex: 40 }}
-          >
-            <div
-              className="rounded-lg px-2.5 py-1.5 text-xs font-medium whitespace-nowrap shadow-md"
-              style={{
-                background: "#1a1209",
-                color: "#faf8f4",
-                border: "1px solid rgba(200,169,110,0.25)",
-              }}
-            >
-              {hoverLabel.name}
-              {hoverLabel.count > 0 && (
-                <span className="ml-1.5 font-normal" style={{ color: "#c8a96e" }}>
-                  {hoverLabel.count} {hoverLabel.count === 1 ? "place" : "places"}
-                </span>
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* Tooltip */}
-        {tooltip && (() => {
-          const province = provinces.find((p) => p.slug === tooltip.slug)
-          const OFFSET_X = 16
-          const OFFSET_Y = 16
-          const region = province?.region ?? PROVINCE_REGION[tooltip.name]
-          const provinceLocations = tooltip.slug
-            ? allLocations.filter((l) => l.provinces.includes(tooltip.slug!)).slice(0, 4)
-            : []
+    <div className="vn-map" ref={wrapRef} onClick={() => setTooltip(null)}>
+      <svg viewBox={Vietnam.viewBox} className="vn-map-svg" role="img" aria-label="Map of Vietnam by province">
+        {Vietnam.locations.map((location: { id: string; name: string; path: string }) => {
+          const slug = PROVINCE_TO_SLUG[location.name]
+          const region: Region = PROVINCE_REGION[location.name] || "unknown"
 
           return (
-            <div
-              style={{
-                left: tooltip.x + OFFSET_X,
-                top: tooltip.y + OFFSET_Y,
-                zIndex: 50,
+            <path
+              key={location.id}
+              d={location.path}
+              className={`vn-map-province ${REGION_CLASS[region]}${hoveredId === location.id ? " is-active" : ""}`}
+              onMouseEnter={() => setHoveredId(location.id)}
+              onMouseMove={(e) => {
+                const rect = wrapRef.current!.getBoundingClientRect()
+                const count = slug
+                  ? allLocations.filter((l) => l.provinces.includes(slug)).length
+                  : 0
+                setHoverLabel({
+                  x: e.clientX - rect.left,
+                  y: e.clientY - rect.top,
+                  name: location.name,
+                  count,
+                })
               }}
-              className="absolute w-60"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="rounded-2xl shadow-xl overflow-hidden" style={{ background: "#fefcf8", border: "1px solid #e2d8c8" }}>
-
-                {/* Header accent bar */}
-                <div style={{
-                  height: 3,
-                  width: "100%",
-                  background: region === "north" ? "#6b9fc4"
-                    : region === "central" ? "#5a9e6f"
-                    : region === "south" ? "#c8784a"
-                    : "#a89880"
-                }} />
-
-                <div className="p-3">
-                  <div className="font-bold text-sm mb-1 tracking-tight" style={{ color: "#2d2110" }}>
-                    {tooltip.name}
-                  </div>
-
-                  {province?.popupIntro && (
-                    <p className="text-[11px] leading-relaxed mb-2.5" style={{ color: "#7a6a52" }}>
-                      {province.popupIntro}
-                    </p>
-                  )}
-
-                  {provinceLocations.length > 0 && (
-                    <>
-                      <div className="text-[10px] font-semibold uppercase tracking-widest mb-1.5" style={{ color: "#a89880" }}>
-                        Top Locations
-                      </div>
-                      <ul className="space-y-1 mb-2.5">
-                        {provinceLocations.map((l) => (
-                          <li key={l.slug}>
-                            <button
-                              onClick={() => router.push(`/locations/${l.slug}`)}
-                              className="flex items-center gap-1.5 text-[11px] transition-colors w-full text-left"
-                              style={{ color: "#7a6a52" }}
-                              onMouseEnter={e => (e.currentTarget.style.color = "#c8a96e")}
-                              onMouseLeave={e => (e.currentTarget.style.color = "#7a6a52")}
-                            >
-                              <span className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: "#c4b49a" }} />
-                              {l.name}
-                            </button>
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  )}
-
-                  {province && tooltip.slug && (
-                    <button
-                      onClick={() => router.push(`/provinces/${tooltip.slug}`)}
-                      className="text-[11px] font-semibold flex items-center gap-1 transition-colors"
-                      style={{ color: "#c8a96e" }}
-                      onMouseEnter={e => (e.currentTarget.style.color = "#a07c3a")}
-                      onMouseLeave={e => (e.currentTarget.style.color = "#c8a96e")}
-                    >
-                      Explore guide
-                      <span className="text-[10px]">→</span>
-                    </button>
-                  )}
-
-                  {!province && (
-                    <div className="text-[11px]" style={{ color: "#a89880" }}>
-                      Guide coming soon
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
+              onMouseLeave={() => {
+                setHoveredId(null)
+                setHoverLabel(null)
+              }}
+              onClick={(e) => {
+                e.stopPropagation()
+                const rect = wrapRef.current!.getBoundingClientRect()
+                const x = e.clientX - rect.left
+                // Keep the card inside the map on narrow screens
+                const left = Math.max(4, Math.min(x + 16, rect.width - CARD_WIDTH - 4))
+                setTooltip({
+                  left,
+                  top: e.clientY - rect.top + 16,
+                  name: location.name,
+                  slug,
+                })
+              }}
+            />
           )
-        })()}
-      </div>
+        })}
+      </svg>
 
-      {/* Browse link */}
-      <a
-        href="/provinces"
-        className="text-sm font-medium underline underline-offset-4 transition"
-        style={{ color: "#c8a96e" }}
-        onMouseEnter={e => (e.currentTarget.style.color = "#a07c3a")}
-        onMouseLeave={e => (e.currentTarget.style.color = "#c8a96e")}
-      >
-        Browse all provinces →
-      </a>
+      {/* Hover label */}
+      {hoverLabel && !tooltip && (
+        <div className="vn-map-hover" style={{ left: hoverLabel.x + 12, top: hoverLabel.y - 40 }}>
+          {hoverLabel.name}
+          {hoverLabel.count > 0 && (
+            <span>
+              {hoverLabel.count} {hoverLabel.count === 1 ? "place" : "places"}
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* Tooltip */}
+      {tooltip && (() => {
+        const province = provinces.find((p) => p.slug === tooltip.slug)
+        const region: Region = province?.region ?? PROVINCE_REGION[tooltip.name] ?? "unknown"
+        const provinceLocations = tooltip.slug
+          ? allLocations.filter((l) => l.provinces.includes(tooltip.slug!)).slice(0, 4)
+          : []
+
+        return (
+          <div
+            className={`vn-map-card vn-map-card--${region}`}
+            style={{ left: tooltip.left, top: tooltip.top, width: CARD_WIDTH }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="vn-map-card-name">{tooltip.name}</div>
+
+            {province?.popupIntro && <p className="vn-map-card-intro">{province.popupIntro}</p>}
+
+            {provinceLocations.length > 0 && (
+              <>
+                <div className="vn-map-card-label">Top locations</div>
+                <ul className="vn-map-card-list">
+                  {provinceLocations.map((l) => (
+                    <li key={l.slug}>
+                      <button onClick={() => router.push(`/locations/${l.slug}`)}>{l.name}</button>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {province && tooltip.slug && (
+              <button className="vn-map-card-cta" onClick={() => router.push(`/provinces/${tooltip.slug}`)}>
+                Explore guide →
+              </button>
+            )}
+
+            {!province && <div className="vn-map-card-soon">Guide coming soon</div>}
+          </div>
+        )
+      })()}
     </div>
   )
 }
