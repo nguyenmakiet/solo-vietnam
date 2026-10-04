@@ -8,7 +8,8 @@
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
  *   experience - a positive recommendation, NOT only the peak season.
- *   Months to avoid are left out; secondary seasons are included.
+ *   Months to avoid are left out; secondary seasons are included, except
+ *   seasons that are worth seeing but dangerous (left out on purpose).
  *
  * Groups (first match wins):
  *   EMPTY          bestMonths = []

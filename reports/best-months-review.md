@@ -201,3 +201,8 @@ Applied to location data (`updatedAt` bumped on each file):
 Not changed: `cat-ba-cannon-fort` (owner: not needed), `notre-dame-cathedral-saigon` (restoration is still ongoing and already documented throughout the file).
 
 Known audit noise after the fixes: `hanoi-st-josephs-cathedral` still shows as CONFLICT because the regex does not read "Christmas Eve" as December.
+
+### Follow-up - 2026-10-04
+
+- Rule added (CLAUDE.md "`bestMonths` semantic"): seasons that are worth seeing but dangerous stay out of `bestMonths` and are described in the season text. `datanla-waterfall` and `phi-lieng-waterfall` keep Nov-Apr; the audit will still list them as MULTI_SEASON, which is expected.
+- `cat-cat-village`: Apr-Oct confirmed (Nov and Tết dropped). `insights.thingsToKnow.seasonal` rewritten to match.

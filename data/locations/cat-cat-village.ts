@@ -64,7 +64,7 @@ export const catCatVillage: Location = {
       difficulty: "Steep stone-paved stairs and paths, slippery when wet. Extensive walking required to cover the village and waterfall. Allow a half day rather than rushing.",
       safety: "Negotiate motorbike fares before agreeing - drivers commonly ask 100,000 VND round trip at the entrance. Wooden platforms/structures can be slippery from moisture - use designated viewpoints rather than improvised spots.",
       accessibility: "Entrance fee 150,000 VND adult. Electric cart (10,000 VND, may require waiting) or motorbike (negotiate) available for the return uphill walk. Costume rental 50,000-150,000 VND. Open 5 AM-10 PM but return before dark.",
-      seasonal: "Sep-Nov: golden rice terraces, cool comfortable weather - best overall. May-Sep: warm, sunny, good for general visits. Tết (Lunar New Year): festivals, folk games, traditional H'mong performances. Winter: cold, occasional fog.",
+      seasonal: "Apr-Oct: mild climate with less rain - the easiest time to get around and explore, and the season of many traditional H'Mông festivals. Sep-Oct: golden rice terraces. Winter: cold, occasional fog.",
     },
     visitorTips: [
       "Go in with realistic expectations - the village is heavily developed for tourism, not an untouched settlement",
