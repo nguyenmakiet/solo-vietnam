@@ -389,8 +389,7 @@
   color: var(--color-ink);
 }
 .content-section p.rt-para { margin-top: 16px; }
-.content-section > h3 + p,
-.content-section > h3 + .rt-para {
+.content-body > p:first-child {
   font-size: 18px; line-height: 1.7;
 }
 .content-section .rt-link {
@@ -406,8 +405,7 @@
   max-width: 680px;
   margin: 28px 0 8px;
 }
-.content-section > .rc-h:first-child,
-.content-section > h3 + .rc-h { margin-top: 4px; }
+.content-body > .rc-h:first-child { margin-top: 4px; }
 .rc-h-icon, .qf-icon { display: none; }
 .rc-h-text {
   font-family: var(--font-serif), 'Source Serif 4', serif;
@@ -647,7 +645,129 @@
   .month-strip .month-cell:nth-child(-n + 6) { border-bottom: 1px solid var(--color-line); }
   .map-wrap iframe { height: 240px; }
   .content-section p { font-size: 16px; }
-  .content-section > h3 + p,
-  .content-section > h3 + .rt-para { font-size: 17px; }
+  .content-body > p:first-child { font-size: 17px; }
   .bottom-cta { padding: 40px 0; }
+}
+
+/* ── DESKTOP COMPOSITION (>= 1024px) ──
+   Mobile and tablet stay as above. On desktop the page uses a wide
+   container (1200px content) for the header, hero, overview, gallery,
+   lists and CTA, while long-form prose keeps a ~720px reading column
+   beside a left rail that carries the section heading. */
+@media (min-width: 1024px) {
+  .lp-container,
+  .content-wrap { max-width: 1264px; padding-left: 32px; padding-right: 32px; }
+  .tabs-inner { max-width: 1264px; padding: 0 22px; }
+  .tab-btn { padding: 15px 12px 13px; font-size: 14px; }
+
+  /* Header */
+  .lp-head { padding: 18px 0 36px; }
+  .breadcrumb { margin-bottom: 28px; }
+  .hero-badge { margin-bottom: 14px; }
+  .lp-head h1 { font-size: clamp(52px, 4.4vw, 64px); letter-spacing: -0.8px; margin-bottom: 16px; max-width: 980px; }
+  .hero-seo { font-size: 18px; line-height: 1.65; max-width: 740px; }
+  .hero-tags { margin-top: 16px; font-size: 14px; }
+
+  /* Hero: a feature image aligned with the content edges */
+  .lp-hero-media {
+    width: calc(100% - 64px);
+    max-width: 1200px;
+    height: clamp(420px, 36vw, 520px);
+  }
+
+  /* Sections */
+  .section-anchor { padding-top: 64px; scroll-margin-top: 120px; }
+  .section-label { font-size: 12px; margin-bottom: 20px; }
+  .section-subtext { font-size: 15px; }
+
+  /* Overview: practical rows beside a usable map */
+  .ov-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    column-gap: 32px;
+    align-items: stretch;
+  }
+  .ov-section > .section-label { grid-column: 1 / -1; }
+  .ov-row { grid-template-columns: 140px minmax(0, 1fr); padding: 16px 22px; }
+  .ov-val { font-size: 16px; }
+  .ov-section .map-wrap { margin-top: 0; display: flex; flex-direction: column; min-height: 400px; }
+  .ov-section .map-wrap iframe { flex: 1; height: auto; min-height: 340px; }
+
+  /* Things to know: independent notes in two columns */
+  .ttk-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+  .ttk-list:has(> :only-child) { grid-template-columns: minmax(0, 1fr); }
+  .ttk-row { grid-template-columns: minmax(0, 1fr); align-content: start; gap: 6px; padding: 18px 0; }
+  .ttk-value { font-size: 16px; max-width: 640px; }
+
+  /* Gallery: lead image with a secondary column, wider gutter */
+  .gallery-grid { gap: 8px; }
+
+  /* Long-form: heading on the left rail, prose in the reading column */
+  .content-section {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 720px);
+    column-gap: 64px;
+    align-items: start;
+  }
+  .content-section h3 {
+    position: sticky; top: 125px;
+    font-size: clamp(30px, 2.4vw, 34px);
+    margin-bottom: 0;
+  }
+  .content-body p,
+  .content-body .rc-h,
+  .content-body .rc-ul,
+  .content-body .rc-callout,
+  .content-body .rc-div { max-width: none; }
+  .content-section p { font-size: 17px; }
+  .content-body > p:first-child { font-size: 19px; line-height: 1.65; }
+  .content-body > .rc-h:first-child { margin-top: 0; }
+  .rc-ul li { font-size: 16.5px; }
+
+  /* Tips and FAQ: intro on the left rail, list in the reading column */
+  .split-section {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 720px);
+    column-gap: 64px;
+    align-items: start;
+  }
+  .split-section > .section-label { grid-column: 1 / -1; }
+  .split-section > .section-subtext { grid-column: 1; margin: 0; }
+  .split-section > .tips-list,
+  .split-section > .faq-list { grid-column: 2; }
+  .tip-item { font-size: 16px; }
+  .faq-question { font-size: 16.5px; }
+  .faq-answer { font-size: 16px; }
+
+  /* Nearby and similar experiences: use the width */
+  .nearby-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+  .exp-links { grid-template-columns: repeat(4, 1fr); column-gap: 24px; }
+
+  /* Closing CTA */
+  .bottom-cta { margin-top: 88px; padding: 64px 0; }
+  .bottom-cta .cta-title { font-size: clamp(34px, 3vw, 42px); }
+}
+@media (min-width: 1024px) {
+  /* Gallery: lead image (2 cols x 2 rows) beside a secondary column, then rows
+     of three. A flatter tile keeps it from growing too tall, and the counts
+     that would leave a gap get a closed composition instead. */
+  .gallery-tile { aspect-ratio: 3 / 2; }
+  .gallery-tile--lead { aspect-ratio: auto; } /* height comes from the two secondary rows */
+  .gallery-grid > .gallery-tile:only-child { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 3 / 1; }
+  .gallery-grid > .gallery-tile--lead:only-child { aspect-ratio: 21 / 9; }
+  .gallery-grid:has(> :nth-child(2):last-child) > .gallery-tile--lead { grid-row: auto; aspect-ratio: 16 / 9; }
+  .gallery-grid:has(> :nth-child(2):last-child) > .gallery-tile:last-child { aspect-ratio: auto; }
+  .gallery-grid:has(> :nth-child(4):last-child) > .gallery-tile--lead { grid-row: span 3; aspect-ratio: auto; }
+  .gallery-grid > .gallery-tile:nth-child(n + 5):last-child:nth-child(3n + 2) { grid-column: span 2; aspect-ratio: auto; }
+  .gallery-grid > .gallery-tile:nth-child(n + 7):last-child:nth-child(3n + 1) { grid-column: 1 / -1; aspect-ratio: 3 / 1; }
+}
+/* Narrow desktop: the overview column is too slim for 12 month cells in a row */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .ov-section .month-strip { grid-template-columns: repeat(6, 1fr); }
+  .ov-section .month-cell:nth-child(7) { border-left: none; }
+  .ov-section .month-cell:nth-child(-n + 6) { border-bottom: 1px solid var(--color-line); }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .content-section,
+  .split-section { grid-template-columns: minmax(0, 240px) minmax(0, 1fr); column-gap: 48px; }
 }

@@ -444,3 +444,146 @@
   .dp .itin-map { height: 280px; }
   .dp .dd-cta { padding: 40px 0; }
 }
+
+/* ── DESKTOP COMPOSITION (>= 1024px) ──
+   Mobile and tablet stay as above. Desktop uses a wide container
+   (1200px content): title beside the trip facts, a feature-size hero,
+   the intro beside the month strip, two-column lists, and itinerary
+   days with the day title on a left rail. Prose stays ~720px wide. */
+@media (min-width: 1024px) {
+  .dp .dd-container { max-width: 1264px; padding: 0 32px; }
+
+  /* Head: title block on the left, trip facts as a ruled column on the right */
+  .dp .dd-head { padding: 18px 0 40px; }
+  .dp .dd-head-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    grid-template-rows: repeat(5, auto) 1fr;
+    column-gap: 64px;
+  }
+  .dp .dd-head-inner > * { grid-column: 1; }
+  .dp .dd-breadcrumb { grid-column: 1 / -1; margin-bottom: 28px; }
+  .dp .dd-head h1 { font-size: clamp(56px, 4.8vw, 68px); margin-bottom: 14px; }
+  .dp .dd-tagline { font-size: 25px; max-width: 760px; }
+  .dp .dd-tags { margin-top: 18px; font-size: 13px; }
+  .dp .dd-styles { font-size: 14px; }
+  .dp .dd-facts {
+    grid-column: 2; grid-row: 2 / 7;
+    align-self: start;
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 10px;
+    border-top: 1px solid var(--color-ink);
+  }
+  .dp .dd-fact,
+  .dp .dd-fact + .dd-fact,
+  .dp .dd-fact.dd-fact--wide {
+    padding: 14px 0;
+    margin-top: 0;
+    border-left: none;
+    border-bottom: 1px solid var(--color-line);
+  }
+  .dp .dd-fact dd { font-size: 16px; }
+
+  /* Hero: a feature image aligned with the content edges */
+  .dp .dd-hero-media {
+    width: calc(100% - 64px);
+    max-width: 1200px;
+    height: clamp(420px, 36vw, 520px);
+  }
+
+  /* Sections */
+  .dp .dp-section { padding-top: 72px; }
+  .dp .section-label { font-size: 12px; margin-bottom: 22px; }
+
+  /* Intro beside the best-months strip; every other block spans the width */
+  .dp .dd-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    column-gap: 64px;
+    align-items: start;
+  }
+  .dp .dd-main > * { grid-column: 1 / -1; }
+  .dp .dd-main > .dd-intro { grid-column: 1; grid-row: 1; margin-top: 56px; max-width: 760px; }
+  .dp .dd-main > .dd-months { grid-column: 2; grid-row: 1; padding-top: 56px; }
+  .dp .dd-intro { padding-left: 24px; }
+  .dp .dd-intro p { font-size: 22px; line-height: 1.65; }
+  .dp .dd-months .month-strip { grid-template-columns: repeat(6, 1fr); }
+  .dp .dd-months .month-cell { padding: 10px 0 9px; font-size: 13px; }
+  .dp .dd-months .month-cell:nth-child(7) { border-left: none; }
+  .dp .dd-months .month-cell:nth-child(-n + 6) { border-bottom: 1px solid var(--color-line); }
+
+  /* Highlights: two numbered columns */
+  .dp .dd-highlights {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 48px;
+  }
+  .dp .dd-highlight a { padding: 16px 0; }
+  .dp .dd-hl-num { font-size: 18px; }
+  .dp .dd-hl-text { font-size: 16px; }
+
+  /* What to do */
+  .dp .dd-whatdo { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 40px; }
+  .dp .dd-chip { font-size: 14px; padding: 6px 12px; }
+
+  /* Places to visit: wider cards */
+  .dp .dd-places { gap: 24px; }
+  .dp .dd-place-body { padding: 16px 18px 14px; }
+  .dp .dd-place-name { font-size: 20px; }
+  .dp .dd-place-desc { font-size: 14px; }
+  .dp .dd-place-foot { padding: 12px 18px 14px; }
+
+  /* Route map */
+  .dp .itin-map { height: 520px; }
+
+  /* Itineraries: day title on a left rail, stops and notes beside it */
+  .dp .dd-itins { gap: 28px; }
+  .dp .dd-itin-head { padding: 18px 28px; gap: 16px; }
+  .dp .dd-itin-head h3 { font-size: 23px; }
+  .dp .dd-day {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    column-gap: 48px;
+    padding: 20px 28px 22px;
+  }
+  .dp .dd-day > * { grid-column: 2; }
+  .dp .dd-day > .dd-day-head {
+    grid-column: 1; grid-row: 1 / span 2;
+    flex-direction: column; align-items: flex-start; gap: 4px;
+    margin-bottom: 0;
+  }
+  .dp .dd-day-title { flex: none; font-size: 17px; }
+  .dp .dd-stops { font-size: 15px; }
+  .dp .dd-day-notes { font-size: 16px; }
+
+  /* Getting there: routes side by side */
+  .dp .dd-routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+  .dp .dd-routes:has(> :only-child) { grid-template-columns: minmax(0, 1fr); max-width: 880px; }
+  .dp .dd-route { padding: 20px 0; }
+  .dp .dd-route-from { font-size: 21px; }
+  .dp .dd-route-notes { font-size: 15.5px; }
+
+  /* Plan your trip: the two answers side by side */
+  .dp .dd-plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+  .dp .dd-plans:has(> :only-child) { grid-template-columns: minmax(0, 1fr); }
+  .dp .dd-plan { grid-template-columns: minmax(0, 1fr); align-content: start; gap: 6px; padding: 20px 0; }
+  .dp .dd-plan dd { font-size: 17px; }
+
+  /* More in this province */
+  .dp .dd-related { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  /* FAQ: comfortable rows, answers in a reading column */
+  .dp .faq-question { font-size: 16.5px; }
+  .dp .faq-answer p { font-size: 16px; }
+
+  /* Closing CTA */
+  .dp .dd-cta { margin-top: 88px; padding: 64px 0; }
+  .dp .dd-cta-title { font-size: clamp(36px, 3vw, 44px); }
+}
+/* Narrow desktop: give the intro more of the row */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .dp .dd-head-inner { grid-template-columns: minmax(0, 1fr) 300px; column-gap: 48px; }
+  .dp .dd-main { grid-template-columns: minmax(0, 1fr) 320px; column-gap: 48px; }
+  .dp .dd-day { grid-template-columns: minmax(0, 240px) minmax(0, 1fr); column-gap: 32px; }
+}

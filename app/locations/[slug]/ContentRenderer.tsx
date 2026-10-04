@@ -79,9 +79,11 @@ function RichSectionCard({ section }: { section: RichSection }) {
       <h2 className="section-label">{section.label}</h2>
       <div className="content-section">
         <h3>{section.title}</h3>
-        {section.blocks.map((block, i) => (
-          <Block key={i} block={block} />
-        ))}
+        <div className="content-body">
+          {section.blocks.map((block, i) => (
+            <Block key={i} block={block} />
+          ))}
+        </div>
       </div>
     </section>
   )
@@ -98,7 +100,7 @@ function LegacyContent({ location }: { location: Location }) {
           <h2 className="section-label">About This Place</h2>
           <div className="content-section">
             <h3>What Makes {location.name} Special</h3>
-            <RichText text={c.intro} />
+            <div className="content-body"><RichText text={c.intro} /></div>
           </div>
         </section>
       )}
@@ -107,7 +109,7 @@ function LegacyContent({ location }: { location: Location }) {
           <h2 className="section-label">How to Get There</h2>
           <div className="content-section">
             <h3>Getting There</h3>
-            <RichText text={c.howToGetThere} />
+            <div className="content-body"><RichText text={c.howToGetThere} /></div>
           </div>
         </section>
       )}
@@ -116,7 +118,7 @@ function LegacyContent({ location }: { location: Location }) {
           <h2 className="section-label">What to Expect</h2>
           <div className="content-section">
             <h3>On the Ground</h3>
-            <RichText text={c.whatToExpect} />
+            <div className="content-body"><RichText text={c.whatToExpect} /></div>
           </div>
         </section>
       )}
@@ -125,7 +127,7 @@ function LegacyContent({ location }: { location: Location }) {
           <h2 className="section-label">Travel Tips</h2>
           <div className="content-section">
             <h3>Tips</h3>
-            <RichText text={c.travelTips} />
+            <div className="content-body"><RichText text={c.travelTips} /></div>
           </div>
         </section>
       )}
