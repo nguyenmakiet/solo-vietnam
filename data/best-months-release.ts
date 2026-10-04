@@ -189,6 +189,28 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "jade-emperor-pagoda",
     "quang-tri-ancient-citadel",
   ],
+  "batch-2d": [
+    "bach-ma-temple",
+    "khau-coc-cha-pass",
+    "kim-lien-temple",
+    "thien-mu-pagoda",
+    "voi-phuc-temple",
+    "world-coffee-museum",
+  ],
+  "batch-3": [
+    "an-binh-island",
+    "ba-ho-waterfall",
+    "bai-nhat",
+    "bich-dong-pagoda",
+    "dong-van-market",
+    "hieu-village",
+    "hmong-king-palace",
+    "ho-dynasty-citadel",
+    "independence-palace",
+    "notre-dame-cathedral-saigon",
+    "ta-van-village",
+    "viet-hai-village",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -216,6 +238,19 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "white-sand-dunes": "Sep-Dec is described as the rainy season, when wet sand loses its white look",
   // batch-2c (reports/best-months-post-2b-review.md)
   "quang-tri-ancient-citadel": "Sep-Nov is mentioned only as flooding risk; Dec-May is the recommended period",
+  // batch-2d
+  "bach-ma-temple": "'Any time of day or year - it's an indoor site'; seasonal insight: visitable in any weather or season",
+  "khau-coc-cha-pass": "Aug-Oct rice bonus falls in the wet season, which the content calls dangerous for riding",
+  "kim-lien-temple": "Indoor, weather-independent site - 'any season works equally well' (tip + seasonal insight)",
+  "thien-mu-pagoda": "Jan-Mar pilgrimage season is only described as busier, not as a reason to visit",
+  "voi-phuc-temple": "'Largely weather-independent'; seasonal insight: visitable in any season",
+  "world-coffee-museum": "'Largely an indoor site'; seasonal insight: minimal, most of the visit is indoors",
+  // batch-3 (reports/best-months-batch3-sheet.md)
+  "an-binh-island": "Owner decision: late Dec-Apr moss is a niche draw during rougher sailing; Sep-Dec 'best avoided'",
+  "bai-nhat": "bestTime is time-of-day only; seasonal insight + FAQ: best roughly March to October",
+  "bich-dong-pagoda": "'Lunar Jan - Mar (around Feb)' maps to solar Feb; Jan is not included",
+  "dong-van-market": "Seasonal insight: 'Oct-Mar is the richest atmosphere' (market runs year-round)",
+  "hieu-village": "Seasonal insight: rice green late May-early June, gold late September-early October",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())

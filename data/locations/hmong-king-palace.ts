@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hmongKingPalace: Location = {
   slug: "hmong-king-palace",
   name: "Hmong King Palace",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.25632622972936,
@@ -14,7 +14,7 @@ export const hmongKingPalace: Location = {
   experiences: ["history", "photography", "motorcycling"],
   categories: ["history", "architecture", "culture"],
   tags: ["🏛️ Hmong Royal Residence", "📸 Architecture", "🧭 Đồng Văn Plateau", "🏍️ Ha Giang Loop", "hmong-culture", "french-architecture", "french-colonial-era"],
-  bestTime: "Sep - Nov (buckwheat flower season; best weather for the Ha Giang loop overall)",
+  bestTime: "Worth visiting year-round as a stone heritage compound; Sep - Nov (buckwheat flower season; best weather for the Ha Giang loop overall) is the best overall window",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "20,000-25,000 VND/adult, free for children under 1.2m",
   openingHours: "7:30 AM - 5:00 PM daily",

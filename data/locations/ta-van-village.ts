@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taVanVillage: Location = {
   slug: "ta-van-village",
   name: "Tả Van Village",
-  updatedAt: "2026-09-05",
+  updatedAt: "2026-10-04",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.303361298569694,
@@ -15,7 +15,7 @@ export const taVanVillage: Location = {
   experiences: ["homestay", "culture", "trekking", "photography", "hiking"],
   tags: ["🏡 Homestay", "giay-culture", "🌾 Rice Terraces"],
   bestTime: "Sep – Oct (golden terraces, though exact harvest timing shifts a bit year to year - some sources cite Aug-Sep) or Mar – Apr (green fields, clear weather). Dec – Feb is a colder, quite different alternative - occasional peach blossoms and a small chance of snow, worth considering if you'd rather avoid the busier harvest and spring crowds",
-  bestMonths: [3, 4, 9, 10, 12, 1, 2],
+  bestMonths: [1, 2, 3, 4, 8, 9, 10, 12],
   entranceFee: "75,000 VND/adult, roughly 30,000-50,000 VND/child, children under 1.2m free - this covers the combined Lao Chải-Tả Van route. Ticket checking is reportedly not very strict; on bad-weather days or around midday, the booth is sometimes unstaffed",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=22.2970,103.8730",
