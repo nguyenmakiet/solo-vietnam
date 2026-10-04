@@ -318,6 +318,11 @@ const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
 
 export const isBestMonthsReleased = (slug: string) => released.has(slug)
 
+// bestMonths for month filters and aggregates: released locations only, so
+// unreleased or non-active locations never affect month filtering or counts
+export const releasedBestMonths = (loc: { slug: string; bestMonths?: number[] }): number[] =>
+  isBestMonthsReleased(loc.slug) ? loc.bestMonths ?? [] : []
+
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 // Compact label for cards, e.g. [11, 12, 1, 2] -> "Nov - Feb", [3, 4, 9, 10] -> "Mar - Apr, Sep - Oct"
