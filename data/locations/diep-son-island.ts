@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const diepSonIsland: Location = {
   slug: "diep-son-island",
   name: "Điệp Sơn Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["khanh-hoa"],
   destination: "",
   lat: 12.702371060987337,
@@ -15,7 +15,7 @@ export const diepSonIsland: Location = {
   experiences: ["beach", "boat-tour", "photography", "snorkeling", "kayaking"],
   tags: ["🏝️ Sand Path Island", "🌊 Tidal Sandbar", "🚣 Boat Trip"],
   bestTime: "Dec - Jun/Jul is generally the best window - dry weather, calmer seas, and the clearest, most photogenic sandbar. Jul - Sep is quieter with fewer visitors if you don't mind a higher chance of rain. The sandbar itself is governed by the lunar calendar, not the season: it's clearest around the 7th-8th and 23rd-24th days of the lunar month (neap tide), while the 1st, 15th, 16th, and 17th lunar days bring the highest tides and the poorest visibility - check a tide calendar or app before booking your boat, since exact timing shifts daily rather than following a fixed clock time",
-  bestMonths: [12, 1, 2, 3, 4, 5, 6],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 12],
   entranceFee: "200,000-300,000 VND/person (round-trip boat to island); kayak rental around 250,000 VND/30 minutes for a 2-person kayak",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.702371060987337,109.29151610832875",

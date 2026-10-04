@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phongNhaBotanicGarden: Location = {
   slug: "phong-nha-botanic-garden",
   name: "Phong Nha Botanic Garden",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.55254653358196,
@@ -15,7 +15,7 @@ export const phongNhaBotanicGarden: Location = {
   experiences: ["trekking", "wildlife", "cycling", "swimming", "hiking"],
   tags: ["🌿 Jungle Trails", "💦 Gió Waterfall", "🏊 Natural Pools"],
   bestTime: "March-August offers the safest trekking, emerald-green swimming pools, and the clearest water. September-February brings fuller waterfalls and lush forest but also slippery trails, stronger currents, and more leeches",
-  bestMonths: [3, 4, 5, 6, 7, 8],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Entrance fees have varied in recent years (historically around 40,000 VND; some operators now quote around 80,000 VND) - check locally before visiting. Parking: 5,000 VND motorbike, 10,000 VND car. Motorbike rental in Phong Nha town runs around 150,000 VND/day if you need one to get here",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.55254653358196,106.30196116431941",

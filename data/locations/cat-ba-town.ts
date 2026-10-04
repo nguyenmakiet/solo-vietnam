@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catBaTown: Location = {
   slug: "cat-ba-town",
   name: "Cat Ba Town",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.72440008462996",
@@ -14,8 +14,8 @@ export const catBaTown: Location = {
   categories: ["food"],
   experiences: ["food", "nightlife", "walking-tour", "markets"],
   tags: ["🏘️ Island Town", "🦞 Seafood", "🌅 Harbour Front", "🌙 Cat Ba Nightlife"],
-  bestTime: "Apr - Jun and Sep - Nov (shoulder seasons avoid summer crowds and winter cold; Cat Ba town is lively year-round)",
-  bestMonths: [4, 5, 6, 9, 10, 11],
+  bestTime: "Apr - Oct (cool and well suited to resort and beach activities); peak season is May - Jul, when the town is busiest",
+  bestMonths: [4, 5, 6, 7, 8, 9, 10],
   entranceFee: "Free",
   openingHours: "Open 24 hours - restaurants and bars on 1/4 street and Núi Ngọc street active from 6 PM to midnight",
   mapUrl: "https://www.google.com/maps?q=20.72440008462996,107.04949514147219",
@@ -61,11 +61,11 @@ export const catBaTown: Location = {
       "Sunworld beach is 200 metres from the town welcome gate - the easiest sea access directly from the town centre",
     ],
     thingsToKnow: {
-      crowds: "Peak summer (Jul-Aug) brings heavy domestic tourist crowds; shoulder seasons (Apr-Jun, Sep-Nov) are significantly more pleasant",
+      crowds: "Peak season (roughly May-Jul) brings heavy domestic tourist crowds - book transport and rooms ahead in that window",
       difficulty: "No difficulty - flat town centre, entirely walkable",
       safety: null,
       accessibility: "Flat and accessible throughout the town centre",
-      seasonal: "Cat Ba town is active year-round but summer brings crowds and higher prices; winter (Dec-Feb) is cool and quieter with some restaurants reducing hours",
+      seasonal: "Apr-Oct is the main season; the May-Jul peak brings crowds and higher prices; winter (Dec-Feb) is cool and quieter with some restaurants reducing hours",
     },
     visitorTips: [
       "Eat on Núi Ngọc street for local prices - look for restaurants with Vietnamese-language menus and no English signage outside",

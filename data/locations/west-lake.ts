@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const westLake: Location = {
   slug: "west-lake",
   name: "West Lake",
-  updatedAt: "2026-09-06",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.053478320090974,
@@ -15,7 +15,7 @@ export const westLake: Location = {
   experiences: ["cycling", "food", "photography"],
   tags: ["🚲 Lake Loop Cycling", "🌅 Sunset Views", "☕ Cafe District", "🛕 Ancient Pagodas"],
   bestTime: "Oct - Apr is the classic cool, dry-season recommendation, most comfortable for cycling the perimeter; some locals specifically favour Aug-Oct as a pleasant transitional window (not too hot, not yet cold). Lotus blooms Jun - Jul. Sunset (roughly 5-6 PM, depending on season and weather) is consistently the best time of day, and early morning is a good, quieter alternative",
-  bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestMonths: [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.053478320090974,105.82609433344021",
