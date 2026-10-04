@@ -1,254 +1,304 @@
-import VietnamMap from "@/components/VietnamMap"
 import Link from "next/link"
-import { destinations } from "@/data/destinations/index"
-import { stripLeadingEmoji } from "@/lib/text"
+import { IBM_Plex_Mono, Kalam } from "next/font/google"
+import HomeFieldMap from "./_home/HomeFieldMap"
+import { KarstHorizon, NoteArrow, Swash, VIBE_SKETCH } from "./_home/sketches"
+import {
+  featured,
+  heroPhoto,
+  mapDots,
+  mapStops,
+  placesLabel,
+  provinceInfo,
+  resizeCloudinary,
+  totalPlaces,
+  vibes,
+} from "./_home/data"
 import "./homepage.css"
 
-// Featured destinations - hardcoded order
-const FEATURED_SLUGS = [
-  "ha-giang-loop",
-  "ninh-binh",
-  "ha-long",
-  "hoi-an",
-  "phong-nha-ke-bang",
-  "phu-quoc",
-]
-const featured = FEATURED_SLUGS
-  .map((slug) => destinations.find((d) => d.slug === slug))
-  .filter(Boolean) as typeof destinations
+// Homepage-only fonts: mono for field-note labels, a hand for real annotations
+const mono = IBM_Plex_Mono({
+  variable: "--fn-font-mono",
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500"],
+})
+const hand = Kalam({
+  variable: "--fn-font-hand",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+})
 
-const experiences = [
-  { label: "Beaches", href: "/experiences/beaches", color: "173, 216, 240" }, // pastel sea blue
-  { label: "Trekking", href: "/experiences/trekking", color: "179, 224, 175" }, // pastel green
-  { label: "Camping", href: "/experiences/camping", color: "245, 200, 145" }, // pastel amber/campfire
-  { label: "Food", href: "/experiences/food", color: "235, 160, 155" }, // pastel red
-]
+const REGION_LABEL = { north: "North", central: "Central", south: "South" } as const
+
+const pad = (n: number) => String(n).padStart(2, "0")
 
 export default function Home() {
+  const [lead, ...rest] = featured
+
   return (
-    <main className="home-wrap">
-
+    <main className={`fn-home ${mono.variable} ${hand.variable}`}>
       {/* ── HERO ── */}
-      <section className="home-hero">
-        <div className="home-hero-inner">
-          <h1>
-            Most travelers see Vietnam.<br />
-            <em>A few actually find it.</em>
-          </h1>
-
-          <p className="home-hero-desc">
-            Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won't find in a guidebook.
-          </p>
-        </div>
-      </section>
-
-      {/* ── DISCOVERY INTRO ── */}
-      <section className="home-discovery-section">
-        <div className="home-discovery-inner">
-          <p className="home-discovery-question">
-            Want to explore Vietnam - but not sure where to start?
-          </p>
-          <p className="home-discovery-text">
-            From{" "}
-            <Link href="/locations?type=forest" className="discovery-link">ancient forests</Link>
-            {" "}where crocodiles still drift beneath the surface,{" "}
-            <Link href="/locations?type=beach" className="discovery-link">quiet beaches</Link>
-            {" "}that still feel genuinely wild,{" "}
-            <Link href="/locations?experience=homestay" className="discovery-link">mountain villages</Link>
-            {" "}tucked into mist and highland fog,{" "}
-            <Link href="/locations?experience=motorcycling" className="discovery-link">winding roads</Link>
-            {" "}that reward anyone patient enough to follow them,{" "}
-            <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
-            {" "}full of noise and smoke and life, to the{" "}
-            <Link href="/locations?type=citadel&experience=history" className="discovery-link">ruins of dynasties</Link>
-            {" "}that shaped this country for centuries.
-          </p>
-          <p className="home-discovery-closing">
-            I didn&apos;t know where to start either. So I started everywhere.
-          </p>
-          <p className="home-discovery-cta">
-            Let&apos;s figure it out together.
-          </p>
-        </div>
-      </section>
-
-      {/* ── STATS ── */}
-      <section className="home-stats-section">
-        <div className="home-stats-inner">
-          <div className="home-hero-stats">
-            <div className="home-hero-stat">
-              <div className="home-hero-stat-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                </svg>
-              </div>
-              <div className="home-hero-stat-num">250+</div>
-              <div className="home-hero-stat-label">Locations mapped</div>
-            </div>
-            <div className="home-hero-stat">
-              <div className="home-hero-stat-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
-                </svg>
-              </div>
-              <div className="home-hero-stat-num">63</div>
-              <div className="home-hero-stat-label">Provinces explored</div>
-            </div>
-            <div className="home-hero-stat">
-              <div className="home-hero-stat-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
-                </svg>
-              </div>
-              <div className="home-hero-stat-num">80+</div>
-              <div className="home-hero-stat-label">Hidden places discovered</div>
+      <section className="fn-hero">
+        <div className="fn-hero-inner">
+          <div className="fn-hero-copy">
+            <p className="fn-kicker">
+              <span className="fn-kicker-dot" /> Field notebook · {placesLabel} places · 63 provinces
+            </p>
+            <h1 className="fn-hero-title">
+              Don&apos;t just see Vietnam.
+              <br />
+              <span className="fn-hero-find">
+                Find it.
+                <Swash className="fn-swash" />
+              </span>
+            </h1>
+            <p className="fn-hero-desc">
+              Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won&apos;t find
+              in a guidebook.
+            </p>
+            <div className="fn-hero-actions">
+              <Link href="/locations" className="fn-btn">
+                Browse {placesLabel} places
+              </Link>
+              <Link href="/map" className="fn-link">
+                Open the field map →
+              </Link>
             </div>
           </div>
+
+          {heroPhoto && (
+            <Link href={`/locations/${heroPhoto.slug}`} className="fn-hero-photo">
+              <figure>
+                <div className="fn-hero-photo-img">
+                  <img
+                    src={resizeCloudinary(heroPhoto.image, 960, 1080)}
+                    alt={`${heroPhoto.name}, ${heroPhoto.province}`}
+                    fetchPriority="high"
+                  />
+                </div>
+                <figcaption>
+                  <span className="fn-meta">
+                    Field note - {heroPhoto.name}, {heroPhoto.province}
+                  </span>
+                  <span className="fn-hand fn-hero-photo-note">
+                    <NoteArrow className="fn-note-arrow" />
+                    Don&apos;t rush this road.
+                  </span>
+                </figcaption>
+              </figure>
+            </Link>
+          )}
         </div>
+        <KarstHorizon className="fn-horizon" />
       </section>
 
-      {/* ── MAP ── */}
-      <section className="home-map-section">
-        <div className="home-map-inner">
-          <div className="home-map-wrap">
-            <div className="home-map-heading">
-              <h2>Explore Vietnam on the Map</h2>
-              <p>Discover 250+ places across the country</p>
-            </div>
-            <VietnamMap />
-            <div className="home-map-hint">
-              Click a province to explore destinations
-            </div>
-          </div>
-          <Link href="/map" className="home-map-cta-banner">
-            <div className="home-map-cta-left">
+      {/* ── FIELD NOTE / INTRO ── */}
+      <section className="fn-note">
+        <div className="fn-note-inner">
+          <aside className="fn-note-margin">
+            <span className="fn-meta">Field note 000</span>
+            <span className="fn-meta fn-meta-soft">Where to start</span>
+          </aside>
+
+          <div className="fn-note-body">
+            <h2 className="fn-note-question">Want to explore Vietnam - but not sure where to start?</h2>
+            <p className="fn-note-text">
+              From{" "}
+              <Link href="/locations?type=forest" className="fn-inline">ancient forests</Link>
+              {" "}where crocodiles still drift beneath the surface,{" "}
+              <Link href="/locations?type=beach" className="fn-inline">quiet beaches</Link>
+              {" "}that still feel genuinely wild,{" "}
+              <Link href="/locations?experience=homestay" className="fn-inline">mountain villages</Link>
+              {" "}tucked into mist and highland fog,{" "}
+              <Link href="/locations?experience=motorcycling" className="fn-inline">winding roads</Link>
+              {" "}that reward anyone patient enough to follow them,{" "}
+              <Link href="/locations?experience=nightlife" className="fn-inline">chaotic city streets</Link>
+              {" "}full of noise and smoke and life, to the{" "}
+              <Link href="/locations?type=citadel&experience=history" className="fn-inline">ruins of dynasties</Link>
+              {" "}that shaped this country for centuries.
+            </p>
+            <p className="fn-note-pull">
+              I didn&apos;t know where to start either. So I started <mark>everywhere</mark>.
+            </p>
+            <p className="fn-hand fn-note-sign">Let&apos;s figure it out together.</p>
+
+            <dl className="fn-log">
               <div>
-                <div className="home-map-cta-title">Explore 200+ locations on the map</div>
-                <div className="home-map-cta-sub">Filter by beaches, trekking, caves, food & more</div>
+                <dt>Places logged</dt>
+                <dd>{totalPlaces}</dd>
               </div>
-            </div>
-            <span className="home-map-cta-btn">Open map →</span>
+              <div>
+                <dt>Provinces explored</dt>
+                <dd>63</dd>
+              </div>
+              <div>
+                <dt>Hidden places</dt>
+                <dd>80+</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FIELD MAP ── */}
+      <section className="fn-mapsec" aria-labelledby="fn-map-title">
+        <div className="fn-mapsec-inner">
+          <header className="fn-mapsec-head">
+            <p className="fn-meta">Map 01 - Vietnam, north to south</p>
+            <h2 id="fn-map-title" className="fn-h2">
+              {placesLabel} places worth finding.
+            </h2>
+            <p className="fn-sub">
+              Every dot is a place on this site. The dashed line connects six good places to start, from the Ha Giang
+              mountains to the island of Phu Quoc.
+            </p>
+          </header>
+
+          <HomeFieldMap dots={mapDots} stops={mapStops} provinceInfo={provinceInfo} placesLabel={placesLabel} />
+
+          <Link href="/map" className="fn-mapsec-cta">
+            <span>
+              <strong>Explore {placesLabel} locations on the map</strong>
+              <span>Filter by beaches, trekking, caves, food & more</span>
+            </span>
+            <span className="fn-mapsec-cta-go">Open map →</span>
           </Link>
         </div>
       </section>
 
       {/* ── FEATURED DESTINATIONS ── */}
-      <div>
-        <div className="home-section">
-          <div className="home-section-header">
+      <section className="fn-stories" aria-labelledby="fn-stories-title">
+        <div className="fn-stories-inner">
+          <header className="fn-sec-head">
             <div>
-              <div className="home-section-eyebrow">Top Picks</div>
-              <h2 className="home-section-title">
-                Featured <em>destinations</em>
+              <p className="fn-meta">Where to begin</p>
+              <h2 id="fn-stories-title" className="fn-h2">
+                Six places to start.
               </h2>
-              <p className="home-section-sub">
-                Handpicked for solo travelers - not just the obvious ones.
-              </p>
+              <p className="fn-sub">Handpicked for solo travelers - not just the obvious ones.</p>
             </div>
-            <Link href="/destinations" className="home-section-link">
-              View all →
+            <Link href="/destinations" className="fn-link">
+              All destinations →
             </Link>
-          </div>
+          </header>
 
-          <div className="home-dest-grid">
-            {featured.map((d) => (
-              <Link key={d.slug} href={`/destinations/${d.slug}`} className="home-dest-card">
-                <div className="home-dest-card-img">
-                  {d.heroImage
-                    ? <img src={d.heroImage} alt={d.name} />
-                    : <span>{d.tags?.[0]?.split(" ")[0] ?? "🌏"}</span>
-                  }
-                </div>
-                <div className="home-dest-card-body">
-                  {d.tags && (
-                    <div className="home-dest-card-tags">
-                      {d.tags.slice(0, 2).map((t) => (
-                        <span key={t} className="home-dest-card-tag">{stripLeadingEmoji(t)}</span>
-                      ))}
-                    </div>
-                  )}
-                  <div className="home-dest-card-name">{d.name}</div>
-                  {d.description && (
-                    <div className="home-dest-card-desc">
-                      {d.description.slice(0, 80)}{d.description.length > 80 ? "…" : ""}
-                    </div>
-                  )}
-                  <div className="home-dest-card-footer">
-                    <span className="home-dest-card-province">{d.province}</span>
-                    <span className="home-dest-card-cta">Explore →</span>
-                  </div>
-                </div>
-              </Link>
+          {lead && <Story story={lead} lead />}
+
+          <div className="fn-story-grid">
+            {rest.map((s) => (
+              <Story key={s.slug} story={s} />
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* ── TRAVEL EXPERIENCES ── */}
-      <div className="home-section-dark">
-        <div className="home-section">
-          <div className="home-section-header">
+      {/* ── BY VIBE ── */}
+      <section className="fn-vibes" aria-labelledby="fn-vibes-title">
+        <div className="fn-vibes-inner">
+          <header className="fn-sec-head">
             <div>
-              <div className="home-section-eyebrow">Browse by vibe</div>
-              <h2 className="home-section-title">
-                What kind of trip are <em>you</em> planning?
+              <p className="fn-meta">Browse by vibe</p>
+              <h2 id="fn-vibes-title" className="fn-h2">
+                What are you chasing?
               </h2>
-              <p className="home-section-sub">
-                From beach-hopping to highland trekking - Vietnam has it all.
-              </p>
+              <p className="fn-sub">From beach-hopping to highland trekking - pick a thread and follow it.</p>
             </div>
-            <Link href="/experiences" className="home-section-link">
-              View all →
+            <Link href="/experiences" className="fn-link">
+              All experiences →
             </Link>
-          </div>
+          </header>
 
-          <div className="home-exp-grid">
-            {experiences.map((e) => (
-              <Link
-                key={e.label}
-                href={e.href}
-                className="home-exp-card"
-                style={{ "--exp-color": e.color } as React.CSSProperties}
-              >
-                <span className="home-exp-label">{e.label}</span>
-              </Link>
-            ))}
-          </div>
+          <ul className="fn-vibe-list">
+            {vibes.map((v) => {
+              const Sketch = VIBE_SKETCH[v.slug]
+              return (
+                <li key={v.slug}>
+                  <Link href={v.href} className={`fn-vibe fn-accent-${v.accent}`}>
+                    <Sketch className="fn-vibe-sketch" />
+                    <span className="fn-vibe-text">
+                      <span className="fn-vibe-label">{v.label}</span>
+                      <span className="fn-vibe-tagline">{v.tagline}</span>
+                    </span>
+                    <span className="fn-vibe-count">
+                      {v.count}
+                      <small>places</small>
+                    </span>
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
         </div>
-      </div>
+      </section>
 
-      {/* ── WHY SOLO VIETNAM ── */}
-      <div className="home-section-alt">
-        <div className="home-section">
-          <div className="home-section-header home-section-header-center">
-            <div className="home-section-eyebrow">Why this site</div>
-            <h2 className="home-section-title">
-              Built for solo travelers.<br /><em>Not tour groups.</em>
+      {/* ── WHY THIS SITE ── */}
+      <section className="fn-why" aria-labelledby="fn-why-title">
+        <div className="fn-why-inner">
+          <header>
+            <p className="fn-meta">Why this site</p>
+            <h2 id="fn-why-title" className="fn-h2">
+              Built for solo travelers.
+              <br />
+              <span className="fn-strike">Not tour groups.</span>
             </h2>
-          </div>
-          <div className="home-why-grid">
-            <div className="home-why-card">
-              <div className="home-why-title">Practical, not pretty</div>
-              <div className="home-why-desc">
-                Real scam alerts, actual prices, honest safety info - not sponsored content dressed up as travel advice.
-              </div>
-            </div>
-            <div className="home-why-card">
-              <div className="home-why-title">Up to date info</div>
-              <div className="home-why-desc">
-                Regularly updated guides with current prices, recent scam alerts, and the latest travel conditions - not outdated blog posts from years ago.
-              </div>
-            </div>
-            <div className="home-why-card">
-              <div className="home-why-title">Local knowledge</div>
-              <div className="home-why-desc">
-                Written by someone who actually lives here - a Vietnamese local sharing real travel insights.
-              </div>
-            </div>
-          </div>
+          </header>
+          <ol className="fn-why-list">
+            <li>
+              <h3>Practical, not pretty</h3>
+              <p>
+                Real scam alerts, actual prices, honest safety info - not sponsored content dressed up as travel
+                advice.
+              </p>
+            </li>
+            <li>
+              <h3>Up to date info</h3>
+              <p>
+                Regularly updated guides with current prices, recent scam alerts, and the latest travel conditions -
+                not outdated blog posts from years ago.
+              </p>
+            </li>
+            <li>
+              <h3>Local knowledge</h3>
+              <p>Written by someone who actually lives here - a Vietnamese local sharing real travel insights.</p>
+            </li>
+          </ol>
         </div>
-      </div>
-
+      </section>
     </main>
+  )
+}
+
+function Story({ story, lead = false }: { story: (typeof featured)[number]; lead?: boolean }) {
+  return (
+    <Link href={`/destinations/${story.slug}`} className={`fn-story${lead ? " fn-story-lead" : ""}`}>
+      <div className="fn-story-img">
+        {story.heroImage ? (
+          <img
+            src={lead ? story.heroImage : resizeCloudinary(story.heroImage, 900, 675)}
+            alt={story.name}
+            loading="lazy"
+          />
+        ) : (
+          <span className="fn-story-img-empty" />
+        )}
+        <span className="fn-story-num">{pad(story.index)}</span>
+      </div>
+      <div className="fn-story-body">
+        <p className="fn-meta">
+          {story.province} · {REGION_LABEL[story.region]}
+          {story.placeCount > 0 && ` · ${story.placeCount} places`}
+        </p>
+        <h3 className="fn-story-name">{story.name}</h3>
+        {story.tagline && <p className="fn-hand fn-story-tagline">{story.tagline}</p>}
+        <p className="fn-story-desc">{story.description}</p>
+        <p className="fn-story-foot">
+          {story.bestMonths && (
+            <span className="fn-meta">
+              Best: <b>{story.bestMonths}</b>
+            </span>
+          )}
+          <span className="fn-story-go">Read the notes →</span>
+        </p>
+      </div>
+    </Link>
   )
 }

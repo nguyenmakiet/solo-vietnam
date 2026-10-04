@@ -5,7 +5,7 @@ import { useState } from "react"
 import { provinces } from "@/data/provinces"
 import { allLocations } from "@/data/all-locations"
 
-const PROVINCE_TO_SLUG: Record<string, string> = {
+export const PROVINCE_TO_SLUG: Record<string, string> = {
   // NORTH
   "Ha Noi": "ha-noi",
   "Ha Giang": "ha-giang",
@@ -76,7 +76,7 @@ const PROVINCE_TO_SLUG: Record<string, string> = {
   "Ca Mau": "ca-mau",
 }
 
-const PROVINCE_REGION: Record<string, "north" | "central" | "south"> = {
+export const PROVINCE_REGION: Record<string, "north" | "central" | "south"> = {
   "Ha Giang": "north", "Cao Bang": "north", "Lao Cai": "north", "Bac Kan": "north",
   "Lang Son": "north", "Tuyen Quang": "north", "Thai Nguyen": "north", "Quang Ninh": "north",
   "Phu Tho": "north", "Vinh Phuc": "north", "Bac Giang": "north", "Bac Ninh": "north",
