@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tiTopIsland: Location = {
   slug: "ti-top-island",
   name: "Ti Top Island",
-  updatedAt: "2026-09-13",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.85912770557982,
@@ -15,7 +15,7 @@ export const tiTopIsland: Location = {
   experiences: ["beach", "swimming", "trekking", "photography"],
   tags: ["🏖️ Crescent Beach", "🏔️ Summit Viewpoint"],
   bestTime: "Roughly 9-10 AM or 3-4:30 PM tend to have better light for photos and avoid the harshest midday sun on the climb - though arriving as early as possible still gives the best odds of a quieter beach before cruise crowds build",
-  bestMonths: [3, 4, 5, 9, 10, 11],
+  bestMonths: [6, 7],
   entranceFee: "Ti Top is included in the Ha Long Bay Route 2 sightseeing ticket, which costs 250,000 VND/person/visit. This is a route-wide sightseeing fee rather than a separate Ti Top entrance fee. Check the current port and ticketing charges when booking, as total costs may vary by departure point and ticket arrangement.",
   openingHours: "Ha Long Bay Route 2 sightseeing hours are typically 6:30 AM-6:30 PM; actual time at Ti Top depends on your cruise itinerary and operating conditions",
   mapUrl: "https://www.google.com/maps?q=20.85912770557982,107.08129113548287",

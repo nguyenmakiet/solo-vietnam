@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const pirateIslands: Location = {
   slug: "pirate-islands",
   name: "Pirate Islands",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "",
   lat: 10.316152333852845,
@@ -15,7 +15,7 @@ export const pirateIslands: Location = {
   experiences: ["beach", "snorkeling", "kayaking", "boat-tour", "camping", "photography", "fishing", "swimming"],
   tags: ["🏝️ Pirate Islands", "🐠 Coral Reef"],
   bestTime: "Your day on the island is effectively fixed by the boat schedule - typically an 8:00 AM sailing out and a 2:30 PM sailing back - so plan your on-island time around that roughly 6-hour window unless staying overnight",
-  bestMonths: [1, 2, 3, 4, 12],
+  bestMonths: [11, 12, 1, 2, 3, 4],
   entranceFee: "No entrance fee. Superdong speedboat tickets from Hà Tiên (most recently updated pricing): adults 110,000 VND/person one-way, children aged 6-11 80,000 VND/person one-way. Other operators (Minh Nga and others) run similar routes at broadly comparable prices. On the island, an electric cart around the loop road runs about 40,000 VND/person, or roughly 15,000 VND for a single point-to-point ride.",
   openingHours: "Scheduled speedboats run daily. Superdong's current schedule departs Hà Tiên around 8:00 AM (arriving ~8:30 AM) and returns from the island around 2:30 PM (arriving Hà Tiên ~3:00 PM); other operators run similar or slightly earlier morning departures, with more frequent sailings Friday-Sunday. Your day on the island is effectively bookended by these fixed sailing times, so plan around them.",
   mapUrl: "https://www.google.com/maps?q=10.316152333852845,104.33352273150865",

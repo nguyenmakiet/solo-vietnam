@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khauPhaPass: Location = {
   slug: "khau-pha-pass",
   name: "Khau Phạ Pass",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-10-04",
   provinces: ["yen-bai"],
   destination: "",
   lat: 21.748647085534405,
@@ -15,7 +15,7 @@ export const khauPhaPass: Location = {
   experiences: ["motorcycling", "photography", "paragliding"],
   tags: ["🏔️ One of Vietnam's Four Great Passes", "🌄 Rice Terrace Views", "🪂 Paragliding"],
   bestTime: "Early morning for the clearest views before cloud builds over the summit",
-  bestMonths: [5, 6, 9, 10],
+  bestMonths: [9, 10],
   entranceFee: "Free (the pass itself); tandem paragliding is a separate paid activity, with sources citing anywhere from around 1,500,000 to 2,190,000 VND per flight depending on operator and season",
   openingHours: "Open daily; road occasionally closed after heavy rain or landslide",
   mapUrl: "https://www.google.com/maps?q=21.748647085534405,104.21951455544009",

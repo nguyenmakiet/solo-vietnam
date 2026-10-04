@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muiTroFishingVillage: Location = {
   slug: "mui-tro-fishing-village",
   name: "Mũi Trọ Fishing Village",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 11.191860491067558,
@@ -15,7 +15,7 @@ export const muiTroFishingVillage: Location = {
   experiences: ["camping", "beach", "walking-tour", "cycling"],
   tags: ["🎣 Small Fishing Village", "🌊 Rocky Coast"],
   bestTime: "Roughly 5-8 AM is best for a walk and watching fishing boats return; midday (11 AM-1 PM) is harsh and hot but gives the clearest skies for photos; 4-6 PM has softer light and is good for swimming",
-  bestMonths: [1, 2, 3, 4, 11, 12],
+  bestMonths: [6, 7, 8],
   entranceFee: "Free to visit the coastline itself; if using an organised camping spot nearby, expect a modest self-catering camping fee - confirm locally, since facilities and pricing appear to vary along this stretch",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.191860491067558,108.72934429502345",
