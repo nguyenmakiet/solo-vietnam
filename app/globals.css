@@ -158,3 +158,48 @@ body {
     background: var(--color-dot-highlight);
   }
 }
+
+/* ============================================================
+   Location type themes - soft, semantic, reusable.
+   The type -> theme key mapping is data-driven (`theme` in
+   data/taxonomy/types.ts, re-exported as locationTheme). Each key
+   defines the same four variables; apply with .type-theme-{key}.
+     --type-tint          very light background wash
+     --type-border        hairline border on tinted surfaces
+     --type-accent        dots, bars, active markers (>= 3:1 on white)
+     --type-accent-strong text in the accent colour (>= 6:1 on tint/white/paper)
+   ============================================================ */
+.type-theme-blue {
+  /* water: beach, island, bay, river, lake, cape, stream */
+  --type-tint: #edf4f4;
+  --type-border: #c9dcdd;
+  --type-accent: #3f7f8c;
+  --type-accent-strong: #2b5f69;
+}
+.type-theme-green {
+  /* land and nature: mountain, forest, waterfall, cave, valley, pass... */
+  --type-tint: #eff3eb;
+  --type-border: #d3dccb;
+  --type-accent: #6f8060;
+  --type-accent-strong: #4a6044;
+}
+.type-theme-amber {
+  /* civic: town, city, market, museum, bridge, fortress... */
+  --type-tint: #f1f0f5;
+  --type-border: #d8d4e1;
+  --type-accent: #736b86;
+  --type-accent-strong: #575069;
+}
+.type-theme-purple {
+  /* heritage: temple, pagoda, citadel, tomb, historic site, village... */
+  --type-tint: #f7efea;
+  --type-border: #e8d3c7;
+  --type-accent: #b8603f;
+  --type-accent-strong: #8e4529;
+}
+.type-theme-gray {
+  --type-tint: #f2f1ec;
+  --type-border: #dad5c8;
+  --type-accent: #5b676a;
+  --type-accent-strong: #3f4a4d;
+}

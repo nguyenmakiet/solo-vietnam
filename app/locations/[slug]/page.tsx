@@ -13,13 +13,17 @@ import ContentRenderer from "./ContentRenderer"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { isBestMonthsReleased } from "@/data/best-months-release"
+import { getNearbyLocations } from "@/lib/nearbyLocations"
+import { dotClass } from "@/lib/category-dot"
+import CloudinaryImage from "@/components/CloudinaryImage"
 
-
-const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed", { icon: string; label: string }> = {
-  "temporarily-closed": { icon: "⚠️", label: "Temporarily Closed." },
-  "closed": { icon: "🚫", label: "Closed." },
-  "seasonally-closed": { icon: "🗓️", label: "Seasonally Closed." },
+const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed", { label: string }> = {
+  "temporarily-closed": { label: "Temporarily Closed." },
+  "closed": { label: "Closed." },
+  "seasonally-closed": { label: "Seasonally Closed." },
 }
+
+const MONTH_NAMES = Array.from({ length: 12 }, (_, i) => new Date(2000, i).toLocaleString("en", { month: "short" }))
 
 function toDecimal(val: number | string): number {
   if (typeof val === "number") return val
@@ -83,6 +87,35 @@ export default async function LocationPage({
   const primaryType = Array.isArray(location.type) ? location.type[0] : location.type
   const typeLabel = (Array.isArray(location.type) ? location.type : [location.type]).map(typeDisplayLabel).join(" · ")
   const theme = locationTheme[primaryType] ?? "gray"
+  const destinationName = location.destination?.replace(/-/g, " ")
+
+  // Things to Know rows (shown only when present)
+  const ttk = location.insights?.thingsToKnow
+  const ttkEntries: { label: string; value: string }[] = []
+  if (ttk?.crowds)        ttkEntries.push({ label: "Crowds",        value: ttk.crowds })
+  if (ttk?.difficulty)    ttkEntries.push({ label: "Difficulty",    value: ttk.difficulty })
+  if (ttk?.safety)        ttkEntries.push({ label: "Safety",        value: ttk.safety })
+  if (ttk?.accessibility) ttkEntries.push({ label: "Accessibility", value: ttk.accessibility })
+  if (ttk?.seasonal)      ttkEntries.push({ label: "Seasonal",      value: ttk.seasonal })
+
+  const hasTips = location.tips.length > 0 || (location.insights?.visitorTips?.length ?? 0) > 0
+  const hasFaq = (location.insights?.faq?.length ?? 0) > 0
+  const showBestMonths = isBestMonthsReleased(location.slug) && (location.bestMonths?.length ?? 0) > 0
+
+  // Section ids that exist on this page - the contents bar only lists these
+  const c = location.content
+  const contentIds = c.richSections?.length
+    ? c.richSections.map((sec) => sec.id)
+    : [c.intro && "about", c.howToGetThere && "how-to-get-there", c.whatToExpect && "what-to-expect", c.travelTips && "travel-tips"].filter(Boolean) as string[]
+  const sectionIds = [
+    "overview",
+    ...(ttkEntries.length ? ["things-to-know"] : []),
+    "gallery",
+    ...contentIds,
+    ...(hasTips ? ["insider-tips"] : []),
+    ...(hasFaq ? ["faq"] : []),
+    ...(getNearbyLocations(slug).length ? ["nearby"] : []),
+  ]
 
   const updatedLabel = location.updatedAt
     ? new Date(location.updatedAt).toLocaleDateString("en-US", {
@@ -93,32 +126,41 @@ export default async function LocationPage({
     : null
 
   return (
-    <div className={`lp theme-${theme}`}>
+    <div className={`lp type-theme-${theme}`}>
 
-      {/* Breadcrumb */}
-      <nav className="breadcrumb">
-        <Link href="/">Home</Link>
-        {location.destination && (
-          <>
-            <span className="sep">›</span>
-            <Link href={`/destinations/${location.destination}`}>
-              {location.destination.replace(/-/g, " ")}
-            </Link>
-          </>
-        )}
-        <span className="sep">›</span>
-        <span className="current">{location.name}</span>
-        {updatedLabel && (
-          <span className="breadcrumb-updated">Updated {updatedLabel}</span>
-        )}
-      </nav>
+      {/* Head: breadcrumb + title on the type tint */}
+      <header className="lp-head">
+        <div className="lp-container">
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            {location.destination && (
+              <>
+                <span className="sep" aria-hidden="true">/</span>
+                <Link href={`/destinations/${location.destination}`}>{destinationName}</Link>
+              </>
+            )}
+            <span className="sep" aria-hidden="true">/</span>
+            <span className="current" aria-current="page">{location.name}</span>
+            {updatedLabel && (
+              <span className="breadcrumb-updated">Updated {updatedLabel}</span>
+            )}
+          </nav>
+
+          <div className="hero-badge">
+            <span className="hero-badge-dot" aria-hidden="true" />
+            {typeLabel}{destinationName && ` · ${destinationName}`}
+          </div>
+          <h1>{location.name}</h1>
+          <p className="hero-seo">{location.seoDescription}</p>
+          {location.tags.length > 0 && (
+            <p className="hero-tags">{location.tags.map(tagDisplayLabel).join(" · ")}</p>
+          )}
+        </div>
+      </header>
 
       {/* Status Alert */}
       {(location.status === "temporarily-closed" || location.status === "closed" || location.status === "seasonally-closed") && (
-        <div className={`status-alert status-alert--${location.status}`}>
-          <span className="status-alert-icon">
-            {STATUS_ALERT[location.status].icon}
-          </span>
+        <div className={`status-alert status-alert--${location.status}`} role="status">
           <span className="status-alert-text">
             <strong>{STATUS_ALERT[location.status].label}</strong>
             {location.statusNote && ` ${location.statusNote}`}
@@ -126,132 +168,116 @@ export default async function LocationPage({
         </div>
       )}
 
-      {/* Hero */}
-      <header
-        className="hero"
-        style={location.heroImage ? {
-          backgroundImage: `url(${location.heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        } : {}}
-      >
-        {location.heroImage && (
-          <div style={{
-            position: "absolute", inset: 0,
-            background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%)"
-          }} />
-        )}
-        <div className="hero-inner">
-          <div className="hero-badge">
-            {typeLabel}{location.destination && ` · ${location.destination.replace(/-/g, " ")}`}
-          </div>
-          <h1>{location.name}</h1>
-          <p className="hero-seo">{location.seoDescription}</p>
-          <div className="hero-tags">
-            {location.tags.map((t) => (
-              <span key={t} className="hero-tag">{tagDisplayLabel(t)}</span>
-            ))}
-          </div>
+      {/* Hero photo */}
+      {location.heroImage && (
+        <div className="lp-hero-media">
+          <CloudinaryImage
+            src={location.heroImage}
+            alt={location.name}
+            fill
+            sizes="(min-width: 1200px) 1200px, 100vw"
+            loading="eager"
+            fetchPriority="high"
+          />
         </div>
-      </header>
+      )}
 
-      {/* Map */}
-      <div className="map-wrap">
-        <iframe
-          src={`https://maps.google.com/maps?q=${toDecimal(location.lat)},${toDecimal(location.lng)}&z=15&output=embed`}
-          allowFullScreen
-          loading="lazy"
-        />
-        <GetDirectionsButton
-          lat={toDecimal(location.lat)}
-          lng={toDecimal(location.lng)}
-          label={location.name}
-        />
-      </div>
-
-      {/* Tabs */}
-      <LocationTabs />
+      {/* Section navigation + content: the sticky bar's scope ends with the content,
+          so it scrolls away before the closing CTA band */}
+      <div>
+      <LocationTabs available={sectionIds} />
 
       <main className="content-wrap">
 
         {/* Overview */}
-        <div id="overview" className="section-anchor">
-          <p className="section-label">Overview</p>
-          <div className="overview-grid">
-            {isBestMonthsReleased(location.slug) && location.bestMonths?.length ? (
-              <div className="overview-card oc-wide">
-                <div className="oc-label">Best Months to Visit</div>
-                <div className="month-pills">
-                  {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => (
-                    <span key={m} className={`month-pill${location.bestMonths!.includes(m) ? " active" : ""}`}>
-                      {new Date(2000, m - 1).toLocaleString("en", { month: "short" })}
-                    </span>
-                  ))}
-                </div>
-                {location.bestSeasonNote && <div className="oc-note">{location.bestSeasonNote}</div>}
+        <section id="overview" className="section-anchor" aria-labelledby="h-overview">
+          <h2 id="h-overview" className="section-label">Overview</h2>
+          <dl className="overview">
+            {showBestMonths ? (
+              <div className="ov-row">
+                <dt className="ov-label">Best months</dt>
+                <dd className="ov-val">
+                  <div
+                    className="month-strip"
+                    role="img"
+                    aria-label={`Best months to visit: ${location.bestMonths!.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}`}
+                  >
+                    {MONTH_NAMES.map((name, i) => (
+                      <span key={name} className={`month-cell${location.bestMonths!.includes(i + 1) ? " active" : ""}`} aria-hidden="true">
+                        {name}
+                      </span>
+                    ))}
+                  </div>
+                  {location.bestSeasonNote && <p className="ov-note">{location.bestSeasonNote}</p>}
+                </dd>
               </div>
             ) : location.bestSeasonNote ? (
-              <div className="overview-card">
-                <div className="oc-label">Best Time to Visit</div>
-                <div className="oc-val">{location.bestSeasonNote}</div>
+              <div className="ov-row">
+                <dt className="ov-label">Best time to visit</dt>
+                <dd className="ov-val">{location.bestSeasonNote}</dd>
               </div>
             ) : null}
             {location.bestTimeOfDay && (
-              <div className="overview-card">
-                <div className="oc-label">Best Time of Day</div>
-                <div className="oc-val">{location.bestTimeOfDay}</div>
+              <div className="ov-row">
+                <dt className="ov-label">Best time of day</dt>
+                <dd className="ov-val">{location.bestTimeOfDay}</dd>
               </div>
             )}
             {location.entranceFee && (
-              <div className="overview-card">
-                <div className="oc-label">Entry Fee</div>
-                <div className="oc-val">{location.entranceFee}</div>
+              <div className="ov-row">
+                <dt className="ov-label">Entry fee</dt>
+                <dd className="ov-val">{location.entranceFee}</dd>
               </div>
             )}
             {location.openingHours && (
-              <div className="overview-card">
-                <div className="oc-label">Opening Hours</div>
-                <div className="oc-val">{location.openingHours}</div>
+              <div className="ov-row">
+                <dt className="ov-label">Opening hours</dt>
+                <dd className="ov-val">{location.openingHours}</dd>
               </div>
             )}
-            <div className="overview-card">
-              <div className="oc-label">Address</div>
-              <div className="oc-val">{location.address}</div>
+            <div className="ov-row">
+              <dt className="ov-label">Address</dt>
+              <dd className="ov-val">{location.address}</dd>
+            </div>
+          </dl>
+
+          {/* Map */}
+          <div className="map-wrap">
+            <iframe
+              src={`https://maps.google.com/maps?q=${toDecimal(location.lat)},${toDecimal(location.lng)}&z=15&output=embed`}
+              title={`Map of ${location.name}`}
+              allowFullScreen
+              loading="lazy"
+            />
+            <div className="map-caption">
+              <span>Google Maps</span>
+              <GetDirectionsButton
+                lat={toDecimal(location.lat)}
+                lng={toDecimal(location.lng)}
+                label={location.name}
+              />
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Things to Know */}
-        {location.insights?.thingsToKnow && (() => {
-          const ttk = location.insights!.thingsToKnow
-          type Entry = { label: string; value: string }
-          const entries: Entry[] = []
-          if (ttk.crowds)        entries.push({ label: "Crowds",        value: ttk.crowds })
-          if (ttk.difficulty)    entries.push({ label: "Difficulty",    value: ttk.difficulty })
-          if (ttk.safety)        entries.push({ label: "Safety",        value: ttk.safety })
-          if (ttk.accessibility) entries.push({ label: "Accessibility", value: ttk.accessibility })
-          if (ttk.seasonal)      entries.push({ label: "Seasonal",      value: ttk.seasonal })
-          if (entries.length === 0) return null
-          return (
-            <div id="things-to-know" className="section-anchor">
-              <p className="section-label">Things to Know</p>
-              <div className="ttk-list">
-                {entries.map(({ label, value }) => (
-                  <div key={label} className="ttk-row">
-                    <div className="ttk-label">
-                      <span>{label}</span>
-                    </div>
-                    <div className="ttk-value">{value}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )
-        })()}
+        {ttkEntries.length > 0 && (
+          <section id="things-to-know" className="section-anchor" aria-labelledby="h-ttk">
+            <h2 id="h-ttk" className="section-label">Things to Know</h2>
+            <dl className="ttk-list">
+              {ttkEntries.map(({ label, value }) => (
+                <div key={label} className="ttk-row">
+                  <dt className="ttk-label">{label}</dt>
+                  <dd className="ttk-value">{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
 
         {/* Gallery */}
-        <div id="gallery" className="section-anchor">
-          <p className="section-label">Gallery</p>
+        <section id="gallery" className="section-anchor" aria-labelledby="h-gallery">
+          <h2 id="h-gallery" className="section-label">Gallery</h2>
           {location.gallery.length > 0 || location.streetView ? (
             <GalleryLightbox
               publicIds={location.gallery}
@@ -268,50 +294,50 @@ export default async function LocationPage({
               <div className="gallery-empty">Photos coming soon</div>
             </div>
           )}
-        </div>
+        </section>
 
         {/* Content Sections */}
         <ContentRenderer location={location} />
 
         {/* Insider Tips */}
-        {(location.tips.length > 0 || (location.insights?.visitorTips?.length ?? 0) > 0) && (
-          <div id="insider-tips" className="section-anchor">
-            <p className="section-label">Insider Tips</p>
+        {hasTips && (
+          <section id="insider-tips" className="section-anchor" aria-labelledby="h-tips">
+            <h2 id="h-tips" className="section-label">Insider Tips</h2>
             <p className="section-subtext">Based on real traveler experiences and commonly mentioned advice from multiple visitors.</p>
-            <div className="tips-list">
+            <ul className="tips-list">
               {location.insights?.visitorTips?.map((tip, i) => (
-                <div key={`vt-${i}`} className="tip-item">
-                  <div className="tip-dot" />
+                <li key={`vt-${i}`} className="tip-item">
+                  <span className="tip-dot" aria-hidden="true" />
                   <span>{tip}</span>
-                </div>
+                </li>
               ))}
               {location.tips.map((tip, i) => (
-                <div key={`t-${i}`} className="tip-item">
-                  <div className="tip-dot" />
+                <li key={`t-${i}`} className="tip-item">
+                  <span className="tip-dot" aria-hidden="true" />
                   <span>{tip}</span>
-                </div>
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </section>
         )}
 
         {/* FAQ */}
-        {location.insights?.faq && location.insights.faq.length > 0 && (
-          <div id="faq" className="section-anchor">
-            <p className="section-label">FAQ</p>
+        {hasFaq && (
+          <section id="faq" className="section-anchor" aria-labelledby="h-faq">
+            <h2 id="h-faq" className="section-label">FAQ</h2>
             <p className="section-subtext">Common questions from travelers who&apos;ve visited this place.</p>
             <div className="faq-list">
-              {location.insights.faq.map((item, i) => (
+              {location.insights!.faq!.map((item, i) => (
                 <details key={i} className="faq-item">
                   <summary className="faq-question">
                     <span>{item.question}</span>
-                    <span className="faq-chevron">›</span>
+                    <span className="faq-chevron" aria-hidden="true">›</span>
                   </summary>
                   <div className="faq-answer">{item.answer}</div>
                 </details>
               ))}
             </div>
-          </div>
+          </section>
         )}
 
         {/* Nearby Locations */}
@@ -324,44 +350,43 @@ export default async function LocationPage({
             .filter(Boolean) as typeof experiences
           if (matched.length === 0) return null
           return (
-            <div id="similar-experiences" className="section-anchor">
-              <div style={{ marginBottom: 16 }}>
-                <p className="section-label">
-                  <Link href="/experiences" className="section-label-link">Similar Experiences</Link>
-                </p>
-                <p style={{ fontSize: 14, color: "var(--color-ink-2)", marginTop: 4 }}>
-                  Explore more things to do like this around Vietnam
-                </p>
-              </div>
-              <div className="exp-links">
+            <section id="similar-experiences" className="section-anchor" aria-labelledby="h-similar">
+              <h2 id="h-similar" className="section-label">
+                <Link href="/experiences" className="section-label-link">Similar Experiences</Link>
+              </h2>
+              <p className="section-subtext">Explore more things to do like this around Vietnam</p>
+              <ul className="exp-links">
                 {matched.map(exp => (
-                  <Link key={exp.slug} href={`/experiences/${exp.slug}`} className="exp-link">
-                    <span className="exp-link-icon">{exp.icon}</span>
-                    <span className="exp-link-label">{exp.label}</span>
-                    <span className="exp-link-arrow">→</span>
-                  </Link>
+                  <li key={exp.slug}>
+                    <Link href={`/experiences/${exp.slug}`} className="exp-link">
+                      <span className={dotClass(exp.value)} aria-hidden="true" />
+                      <span className="exp-link-label">{exp.label}</span>
+                      <span className="exp-link-arrow" aria-hidden="true">→</span>
+                    </Link>
+                  </li>
                 ))}
-              </div>
-            </div>
+              </ul>
+            </section>
           )
         })()}
 
-        {/* Bottom CTA */}
-        {location.destination && (
-          <div className="bottom-cta">
+      </main>
+      </div>
+
+      {/* Closing CTA: teal-ink band into the footer */}
+      {location.destination && (
+        <section className="bottom-cta" aria-label="Destination guide">
+          <div className="lp-container bottom-cta-inner">
             <div>
-              <div className="cta-label">Explore more</div>
-              <div className="cta-title">
-                {location.destination.replace(/-/g, " ")} - Full Guide
-              </div>
+              <p className="cta-label">Explore more</p>
+              <p className="cta-title">{destinationName} - Full Guide</p>
             </div>
-            <Link href={`/destinations/${location.destination}`}>
+            <Link href={`/destinations/${location.destination}`} className="ui-btn">
               View destination guide →
             </Link>
           </div>
-        )}
-
-      </main>
+        </section>
+      )}
     </div>
   )
 }
