@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const caiRangFloatingMarket: Location = {
   slug: "cai-rang-floating-market",
   name: "Cái Răng Floating Market",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["can-tho"],
   destination: "mekong-delta",
   lat: 10.005150042253042,
@@ -16,6 +16,8 @@ export const caiRangFloatingMarket: Location = {
   tags: ["🛶 Floating Market", "🌅 Dawn Market", "🍜 Local Food"],
   bestTime: "Year-round (market operates daily regardless of season). May - Aug (dry season, stable water levels, peak tropical fruit season) is the most comfortable. Market most active 5:30-8:00 AM. Avoid 1st-2nd day of Tết and Tết Đoan Ngọ (5th day of 5th lunar month) when market closes or winds down significantly.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round (market operates daily regardless of season). May - Aug (dry season, stable water levels, peak tropical fruit season) is the most comfortable. Avoid 1st-2nd day of Tết and Tết Đoan Ngọ (5th day of 5th lunar month) when market closes or winds down significantly.",
+  bestTimeOfDay: "Market most active 5:30-8:00 AM.",
   entranceFee: "Free. Boat hire: shared (ghép thuyền) 50,000-100,000 VND/person; private small boat ~400,000-500,000 VND/trip (1.5-2 hrs, depending on season and bargaining); private large group boat from 600,000 VND.",
   openingHours: "Depart Ninh Kiều Pier by 4:45-5:00 AM → arrive at market 5:30-5:45 AM → peak trading 5:45-7:30 AM → winding down after 8:00 AM. Market essentially over by 9:00 AM.",
   mapUrl: "https://www.google.com/maps?q=10.005150042253042,105.74627948543848",

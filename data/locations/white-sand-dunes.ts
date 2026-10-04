@@ -16,6 +16,8 @@ export const whiteSandDunes: Location = {
   tags: ["🏜️ Sahara of Vietnam", "🌅 Sunrise Dunes", "🚙 Jeep Tour"],
   bestTime: "Apr - Aug is the most visually striking period - clear skies, white clouds, and lotus season on the lake. Sep - Dec is the rainy season, when wet sand loses its characteristic white look. Within a day, the golden windows are roughly 5-7 AM and 4-6 PM - strictly avoid 11 AM-2 PM, when temperatures can exceed 40°C and the sand genuinely burns bare feet",
   bestMonths: [4, 5, 6, 7, 8],
+  bestSeasonNote: "Apr - Aug is the most visually striking period - clear skies, white clouds, and lotus season on the lake. Sep - Dec is the rainy season, when wet sand loses its characteristic white look.",
+  bestTimeOfDay: "The golden windows are roughly 5-7 AM and 4-6 PM - strictly avoid 11 AM-2 PM, when temperatures can exceed 40°C and the sand genuinely burns bare feet",
   entranceFee: "15,000 VND/adult, 7,000 VND/child (2026 official pricing); parking roughly 10,000 VND. On-site vehicle rental (optional, not required to enter) is separate: ATVs (1-2 people) roughly 700,000-1,600,000 VND for 20-60 minutes, open-top 'xe land' buggies (4-6 people) around 800,000 VND. Sand-sledding boards are about 50,000 VND, camel photo sessions around 100,000 VND, and a lake boat ride (round trip, 20-30 minutes, 2-3 people max) is around 300,000 VND",
   openingHours: "Around 5:30 AM–6:00 PM; sunrise tours from Mũi Né typically depart around 4:00–4:30 AM",
   mapUrl: "https://www.google.com/maps?q=11.07112795980011,108.42656899745431",

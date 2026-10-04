@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hangRai: Location = {
   slug: "hang-rai",
   name: "Hang Rai",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-thuan"],
   destination: "",
   lat: "11.678088681494673",
@@ -16,6 +16,8 @@ export const hangRai: Location = {
   tags: ["🪨 Ancient Coral Rock Formations", "🌅 Sunset Views", "🌊 Wild Coast"],
   bestTime: "Jan – Aug (dry season). Best at sunrise (5–6 AM) or late afternoon (4–6 PM) - avoid midday sun which is extremely harsh.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
+  bestSeasonNote: "Jan - Aug (dry season).",
+  bestTimeOfDay: "Best at sunrise (5-6 AM) or late afternoon (4-6 PM) - avoid midday sun which is extremely harsh.",
   entranceFee: "40,000 VND (entrance) + 10,000 VND electric cart round trip (1km from gate to site)",
   openingHours: "Open daily (weather-dependent)",
   mapUrl: "https://www.google.com/maps?q=11.678088681494673,109.18272230833225",

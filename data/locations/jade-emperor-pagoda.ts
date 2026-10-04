@@ -16,6 +16,8 @@ export const jadeEmperorPagoda: Location = {
   tags: ["🐢 Sacred Turtle Pond", "🏮 Taoist Pagoda", "🧧 Incense & Offerings", "🗿 Jade Emperor Statues", "taoism", "folk-religion"],
   bestTime: "Year-round - the main prayer halls are indoors, so the visit works in any season. Early morning offers the quietest atmosphere. The 1st and 15th days of each lunar month are the busiest, while the 9th day of the 1st lunar month (the Jade Emperor's feast day) is the most vibrant but also the most crowded.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round - the main prayer halls are indoors, so the visit works in any season. The 1st and 15th days of each lunar month are the busiest, while the 9th day of the 1st lunar month (the Jade Emperor's feast day) is the most vibrant but also the most crowded.",
+  bestTimeOfDay: "Early morning offers the quietest atmosphere.",
   entranceFee: "Free",
   openingHours: "Generally 7:00 AM - 5:30 PM daily. Hours may be extended on major lunar worship days.",
   mapUrl: "https://www.google.com/maps?q=10.792009712766651,106.69819028397599",

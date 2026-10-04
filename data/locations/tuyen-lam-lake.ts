@@ -16,6 +16,8 @@ export const tuyenLamLake: Location = {
   tags: ["🚣 Kayaking", "🌲 Pine Forest"],
   bestTime: "Nov - May/Jun (dry season, calmest water and clearest skies); morning mist is most common between about 4:30 and 6:30 AM, particularly on calm mornings, though it doesn't appear every day. Jul-Oct rainy season makes the Prenn Pass road route slippery and foggy - stick to the Triệu Việt Vương route in that window if self-driving",
   bestMonths: [1, 2, 3, 4, 5, 6, 11, 12],
+  bestSeasonNote: "Nov - May/Jun (dry season, calmest water and clearest skies); Jul-Oct rainy season makes the Prenn Pass road route slippery and foggy - stick to the Triệu Việt Vương route in that window if self-driving",
+  bestTimeOfDay: "Morning mist is most common between about 4:30 and 6:30 AM, particularly on calm mornings, though it doesn't appear every day.",
   entranceFee: "Free (cable car ~80,000-100,000 VND one-way; kayak/paddleboat rentals ~300,000-600,000 VND solo, better value via a guided tour)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.899932123833151,108.43143048972007",

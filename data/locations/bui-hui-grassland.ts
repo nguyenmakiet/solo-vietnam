@@ -16,6 +16,8 @@ export const buiHuiGrassland: Location = {
   tags: ["🌿 Highland Meadow", "🌸 Sim Blossom", "🌄 Cloud Level Views"],
   bestTime: "Late March-April is best for the purple sim bloom. Aug-Sep is sim harvest season, when H'rê villagers gather berries for wine and syrup. For camping and sea-of-clouds views, arrive in the afternoon and stay overnight; dawn around 7:00-7:45 AM offers the best chance of seeing clouds over the surrounding peaks. Avoid heavy rain, when mountain roads can become slippery.",
   bestMonths: [3, 4, 8, 9],
+  bestSeasonNote: "Late March-April is best for the purple sim bloom. Aug-Sep is sim harvest season, when H'rê villagers gather berries for wine and syrup. Avoid heavy rain, when mountain roads can become slippery.",
+  bestTimeOfDay: "For camping and sea-of-clouds views, arrive in the afternoon and stay overnight; dawn around 7:00-7:45 AM offers the best chance of seeing clouds over the surrounding peaks.",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.733767915481186,108.78824450755181",

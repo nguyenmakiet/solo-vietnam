@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honYenIsland: Location = {
   slug: "hon-yen-island",
   name: "Hon Yen Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["phu-yen"],
   destination: "",
   lat: 13.225688161973299,
@@ -16,6 +16,8 @@ export const honYenIsland: Location = {
   tags: ["🦞 Lobster Island", "🐠 Coral Snorkelling", "🏝️ Tidal Access", "📷 Hidden Gem"],
   bestTime: "Mar - Sep (dry season, best conditions). Tidal walk: days 1-15 of lunar month when tide recedes mid-afternoon.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Mar - Sep (dry season, best conditions).",
+  bestTimeOfDay: "Tidal walk: days 1-15 of lunar month when tide recedes mid-afternoon.",
   entranceFee: "Free",
   openingHours: "Daylight hours. Tidal window varies - check lunar calendar.",
   mapUrl: "https://www.google.com/maps?q=13.225688161973299,109.30868667111528",

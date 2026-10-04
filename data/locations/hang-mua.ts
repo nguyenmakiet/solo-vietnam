@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hangMua: Location = {
   slug: "hang-mua",
   name: "Hang Mua",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.229409892562945,
@@ -16,6 +16,8 @@ export const hangMua: Location = {
   tags: ["🏔️ Viewpoint", "🪨 486 Stone Steps", "🌾 Panoramic View"],
   bestTime: "May - Jun (golden rice harvest + lotus season - peak scenery). Oct - Dec (cool, dry, quiet). Early morning 7-8 AM year-round for best light and fewest people.",
   bestMonths: [5, 6, 10, 11, 12],
+  bestSeasonNote: "May - Jun (golden rice harvest + lotus season - peak scenery). Oct - Dec (cool, dry, quiet).",
+  bestTimeOfDay: "Early morning 7-8 AM for best light and fewest people.",
   entranceFee: "150,000 VND/person. Free parking at the base.",
   openingHours: "7:00 AM - 6:00 PM. Best: 7:00-8:00 AM (cool, soft light, lotus flowers open) or 4:30-6:00 PM (sunset, golden light).",
   mapUrl: "https://www.google.com/maps?q=20.229409892562945,105.93389756500189",

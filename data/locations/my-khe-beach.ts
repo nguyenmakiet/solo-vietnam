@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const myKheBeach: Location = {
   slug: "my-khe-beach",
   name: "Mỹ Khê Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: 16.056869445948998,
@@ -16,6 +16,8 @@ export const myKheBeach: Location = {
   tags: ["🏖️ Forbes Top 6 Beach", "🌅 Sunrise"],
   bestTime: "Apr - Sep (dry season, calmest water); Jun - Jul is the busiest peak, partly driven by the Đà Nẵng International Fireworks Festival. Within any day, the two best windows for swimming are 5:00-9:00 AM (quiet, calm water, fishing boats returning, best light) and 15:00-18:00 PM (livelier, most services open, sunset from around 17:00) - many locals specifically avoid the water in the harsh midday sun. Avoid swimming roughly Oct - Feb, when the northeast monsoon brings rain, bigger waves, and more unpredictable conditions",
   bestMonths: [4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Apr - Sep (dry season, calmest water); Jun - Jul is the busiest peak, partly driven by the Đà Nẵng International Fireworks Festival. Avoid swimming roughly Oct - Feb, when the northeast monsoon brings rain, bigger waves, and more unpredictable conditions",
+  bestTimeOfDay: "The two best windows for swimming are 5:00-9:00 AM (quiet, calm water, fishing boats returning, best light) and 15:00-18:00 PM (livelier, most services open, sunset from around 17:00) - many locals specifically avoid the water in the harsh midday sun.",
   entranceFee: "Free",
   openingHours: "Open 24/7; lifeguards generally patrol the main swimming zones from around 6 AM to 6 PM in peak season",
   mapUrl: "https://www.google.com/maps?q=16.056869445948998,108.24813952737027",

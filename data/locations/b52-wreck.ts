@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const b52Wreck: Location = {
   slug: "b52-wreck",
   name: "B52 Wreck - Hữu Tiệp Lake",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.037935182346573",
@@ -16,6 +16,8 @@ export const b52Wreck: Location = {
   tags: ["✈️ B52 Wreckage", "🏛️ War History", "📷 Hidden Alley", "🇻🇳 Christmas Bombing 1972", "vietnam-war"],
   bestTime: "Year-round - covered site; morning light is better for photography",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round - covered site.",
+  bestTimeOfDay: "Morning light is better for photography",
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours",
   mapUrl: "https://www.google.com/maps?q=21.037935182346573,105.82708087218539",

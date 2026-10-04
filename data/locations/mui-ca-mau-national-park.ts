@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muiCaMauNationalPark: Location = {
   slug: "mui-ca-mau-national-park",
   name: "Mũi Cà Mau National Park",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ca-mau"],
   destination: "",
   lat: 8.605533331954971,
@@ -16,6 +16,7 @@ export const muiCaMauNationalPark: Location = {
   tags: ["🗺️ Southernmost Point of Vietnam", "🌿 Mangrove Forest", "🐦 Wildlife"],
   bestTime: "Dec - Apr (dry season; accessible by road and boat, clearest skies for sunrise/sunset)",
   bestMonths: [1, 2, 3, 4, 12],
+  bestSeasonNote: "Dec - Apr (dry season; accessible by road and boat, clearest skies for sunrise/sunset)",
   entranceFee: "90,000 VND per person",
   openingHours: "7:00 - 17:00 daily",
   mapUrl: "https://www.google.com/maps?q=8.633300,104.733300",

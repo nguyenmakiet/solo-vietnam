@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const voiPhucTemple: Location = {
   slug: "voi-phuc-temple",
   name: "Voi Phuc Temple",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.030661760804428, 
@@ -21,6 +21,8 @@ export const voiPhucTemple: Location = {
   ],
   bestTime: "Afternoon (roughly 4-5 PM) for the best light, though mornings are also calm - it's largely weather-independent as most of the experience is within the temple grounds",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Largely weather-independent as most of the experience is within the temple grounds.",
+  bestTimeOfDay: "Afternoon (roughly 4-5 PM) for the best light, though mornings are also calm",
   entranceFee: "Free (a separate motorbike parking fee of around 10,000 VND applies at the official entrance)",
   openingHours: "8:00 AM-5:00 PM Monday-Sunday; extended to 6:00 AM-8:00 PM on the 1st and 15th of the lunar month; open 24 hours on Lunar New Year's Eve",
   mapUrl: "https://www.google.com/maps?q=21.030661760804428,105.80424857215515",

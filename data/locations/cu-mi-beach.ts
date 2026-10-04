@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const cuMiBeach: Location = {
   slug: "cu-mi-beach",
   name: "Cù Mi Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 10.596704182171713,
@@ -16,6 +16,8 @@ export const cuMiBeach: Location = {
   tags: ["🏖️ Undeveloped Beach", "🌊 Fishing Village", "🏍️ Motorbike Route"],
   bestTime: "Oct - Apr (dry season, calm water). Within a day, early morning (5:30-7:00 AM) is best - fishermen bring the day's catch in from the sea, the light is soft, and the sun isn't yet harsh. Late afternoon (4:30-6:00 PM) is the other good window, also cooler. The beach's lack of light pollution also makes it a decent spot for stargazing or Milky Way photography after dark",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Oct - Apr (dry season, calm water).",
+  bestTimeOfDay: "Early morning (5:30-7:00 AM) is best - fishermen bring the day's catch in from the sea, the light is soft, and the sun isn't yet harsh. Late afternoon (4:30-6:00 PM) is the other good window, also cooler. The beach's lack of light pollution also makes it a decent spot for stargazing or Milky Way photography after dark",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.596704182171713,107.62900799661435",

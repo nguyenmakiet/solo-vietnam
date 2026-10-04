@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hieuVillage: Location = {
   slug: "hieu-village",
   name: "Hieu Village",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: 20.465207207325047, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
@@ -16,6 +16,8 @@ export const hieuVillage: Location = {
   tags: ["🌾 Rice Terraces", "💧 Waterfall Village", "🏠 Thai Stilt Houses", "🌉 Bamboo Bridge", "thai-culture"],
   bestTime: "Early morning gives the quietest, softest light on the waterfall and bridges before any day-trippers from Don Village arrive; June specifically brings the year's strongest water flow at the falls, alongside the first rice harvest",
   bestMonths: [5, 6, 9, 10],
+  bestSeasonNote: "June specifically brings the year's strongest water flow at the falls, alongside the first rice harvest",
+  bestTimeOfDay: "Early morning gives the quietest, softest light on the waterfall and bridges before any day-trippers from Don Village arrive.",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.465207207325047,105.22192270503085", // TODO: verify with exact coords

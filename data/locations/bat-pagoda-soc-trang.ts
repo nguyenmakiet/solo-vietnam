@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const batPagodaSocTrang: Location = {
   slug: "bat-pagoda-soc-trang",
   name: "Bat Pagoda",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["soc-trang"],
   destination: "",
   lat: 9.579054592787864,
@@ -16,6 +16,8 @@ export const batPagodaSocTrang: Location = {
   tags: ["🦇 Thousands of Bats", "🛕 Khmer Pagoda", "🌳 Ancient Trees", "khmer-culture", "khmer-architecture", "buddhism"],
   bestTime: "Year-round; morning (around 7-9 AM) gives softer light and a cooler, less crowded visit for appreciating the architecture, while late afternoon into dusk (roughly 16:00-18:00) is when the bats stir and eventually depart in a mass exodus - worth timing around whichever matters more to you, or allow enough time for both. Oct - Apr generally has the most comfortable weather",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round; Oct - Apr generally has the most comfortable weather",
+  bestTimeOfDay: "Morning (around 7-9 AM) gives softer light and a cooler, less crowded visit for appreciating the architecture, while late afternoon into dusk (roughly 16:00-18:00) is when the bats stir and eventually depart in a mass exodus - worth timing around whichever matters more to you, or allow enough time for both.",
   entranceFee: "Entry is generally free (a donation box is available for those who wish to contribute); parking arrangements can vary, so it's worth checking current options on arrival",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=9.600000,105.966700",

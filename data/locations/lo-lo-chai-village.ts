@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const loLoChaiVillage: Location = {
   slug: "lo-lo-chai-village",
   name: "Lô Lô Chải Village",
-  updatedAt: "2026-09-05",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination:"ha-giang-loop",
   lat: 23.36452656422781,
@@ -16,6 +16,7 @@ export const loLoChaiVillage: Location = {
   tags: ["🏆 UN Best Tourism Village 2025", "🎎 Ethnic Culture", "lolo-culture"],
   bestTime: "Oct - Dec is the most popular window, largely for the buckwheat flower season, though this now means serious weekend crowds and inflated prices - book well ahead or aim for weekdays. Mar - Apr is a quieter, greener alternative with its own appeal",
   bestMonths: [3, 4, 10, 11, 12],
+  bestSeasonNote: "Oct - Dec is the most popular window, largely for the buckwheat flower season, though this now means serious weekend crowds and inflated prices - book well ahead or aim for weekdays. Mar - Apr is a quieter, greener alternative with its own appeal",
   entranceFee: "Free to visit and walk around. Foreign visitors staying overnight are legally required to register temporary residence (giấy tạm trú), a nationwide requirement rather than a village-specific fee - one homestay owner cited a cost of around 10 USD (about 260,000 VND) for this, though that likely reflects the homestay's own processing/service charge rather than a fixed official fee, so actual cost may vary. This paperwork is part of why many foreign tourists visit only for the day rather than staying over",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=23.3533,105.3300",
