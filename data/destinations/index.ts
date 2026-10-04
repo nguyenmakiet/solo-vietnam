@@ -1,4 +1,5 @@
 import { Location } from "@/data/location"
+import { releasedBestMonths } from "@/data/best-months-release"
 import {
   Destination,
   DerivedDestinationData,
@@ -76,15 +77,17 @@ export function deriveFromLocations(
   const locations = allLocations.filter((l) => l.destination === destinationSlug)
 
   // ── bestMonths ──────────────────────────────────────────────────────────────
-  // Count how many locations include each month, then keep months present in
-  // >= 30% of the matched locations.
+  // Count how many released locations include each month, then keep months
+  // present in >= 30% of them. Locations whose bestMonths is not released
+  // (see data/best-months-release.ts) count neither way.
+  const monthLocations = locations.filter((l) => releasedBestMonths(l).length > 0)
   const monthCount: Record<number, number> = {}
-  for (const loc of locations) {
-    for (const month of loc.bestMonths ?? []) {
+  for (const loc of monthLocations) {
+    for (const month of releasedBestMonths(loc)) {
       monthCount[month] = (monthCount[month] ?? 0) + 1
     }
   }
-  const threshold = locations.length * 0.3
+  const threshold = monthLocations.length * 0.3
   const bestMonths = Object.entries(monthCount)
     .filter(([, count]) => count >= threshold)
     .map(([month]) => Number(month))

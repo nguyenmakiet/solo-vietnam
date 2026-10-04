@@ -7,6 +7,7 @@ import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { LOCATION_TYPES, isLocationType, typeDisplayLabel } from "@/data/taxonomy/types"
 import { LOCATION_EXPERIENCES, experienceDisplayLabel, isLocationExperience } from "@/data/taxonomy/experiences"
 import { LOCATION_CATEGORIES, isLocationCategory } from "@/data/taxonomy/categories"
+import { releasedBestMonths } from "@/data/best-months-release"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
@@ -330,7 +331,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     const counts: Record<number, number> = {}
     for (let m = 1; m <= 12; m++) counts[m] = 0
     locations.forEach((loc) => {
-      loc.bestMonths?.forEach((m) => { counts[m] = (counts[m] ?? 0) + 1 })
+      releasedBestMonths(loc).forEach((m) => { counts[m] = (counts[m] ?? 0) + 1 })
     })
     return counts
   }, [locations])
@@ -359,7 +360,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
         if (!loc.provinces.includes(province)) return false
       }
       if (selectedMonths.length > 0) {
-        if (!selectedMonths.some((m) => loc.bestMonths?.includes(m))) return false
+        if (!selectedMonths.some((m) => releasedBestMonths(loc).includes(m))) return false
       }
       return true
     })

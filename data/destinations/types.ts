@@ -13,7 +13,7 @@
 //    - fallback fields (dùng tạm khi location data chưa đủ)
 //
 // ❌ KHÔNG hardcode (derive runtime qua deriveFromLocations()):
-//    - bestMonths  → frequency(location.bestMonths[]) >= 30% locations
+//    - bestMonths  → frequency(location.bestMonths[]) >= 30% of released locations (data/best-months-release.ts)
 //    - whatToDo    → group(location.experiences[]) → UI categories
 //    - highlights  → top location.insights.highlights[] với slug + text
 //
