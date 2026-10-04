@@ -16,6 +16,10 @@ export const honChongRockFormation: Location = {
   tags: ["🪨 Rock Formation", "🌊 Coastal", "🌅 Sunset Spot"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Jan - Aug (dry season; sea is calm and rock formations fully accessible)",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 30,
+  },
   entranceFee: "22,000 VND/adult, 11,000 VND/child - some sources cite higher prices up to 30,000-50,000 VND, so it's worth confirming current rates at the gate",
   openingHours: "7:00 AM – 7:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.272947381203165,109.20637893674045",

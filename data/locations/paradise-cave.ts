@@ -16,6 +16,10 @@ export const paradiseCave: Location = {
   tags: ["🪨 One of Asia's Longest Dry Caves", "🥾 Boardwalk", "✨ Formations"],
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - early Aug (dry season - best). Avoid Sep - Mar (rainy season, slippery trails and steps, risk of flooding Oct-Nov).",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 360,
+  },
   entranceFee: "Standard 1km tour: 265,000 VND adult / 143,000 VND child (1.1-1.3m) / free under 1.1m (includes VAT + electric buggy). 4km adventure tour: ~2,200,000 VND/person (includes guide, safety gear, meal).",
   openingHours: "7:00 AM - 4:00 PM. Go before 9 AM to avoid heat and weekend crowds.",
   mapUrl: "https://www.google.com/maps?q=17.519727624952477,106.22333853972053",

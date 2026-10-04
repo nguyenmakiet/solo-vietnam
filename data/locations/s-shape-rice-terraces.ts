@@ -16,6 +16,10 @@ export const sShapeRiceTerraces: Location = {
   tags: ["🌾 S-Shaped Paddy", "📸 Iconic Viewpoint", "🌅 Sunset Spot", "🏞️ Pù Luông Highlight"],
   bestMonths: [5, 6, 9, 10],
   bestTimeOfDay: "During peak season, aim for around 8-9 AM or 4-5 PM specifically - these windows avoid the worst crowds and traffic, and give enough open space to photograph the curve without other visitors in frame. Golden hour light (especially the afternoon window) also catches the winding road and surrounding limestone slopes best; midday light is flat and far less photogenic",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Open 24/7 (best in golden hour)",
   mapUrl: "https://www.google.com/maps?q=20.449345402727413,105.15796254177532",

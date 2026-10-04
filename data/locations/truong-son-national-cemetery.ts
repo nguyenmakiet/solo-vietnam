@@ -17,6 +17,10 @@ export const truongSonNationalCemetery: Location = {
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug is usually the most convenient period for travel and for combining with other nearby sites. On 27 July (War Invalids and Martyrs Day) many groups come to offer incense - a solemn, moving atmosphere, but busier than usual.",
   bestTimeOfDay: "Morning gives cooler temperatures and better light for photography",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=16.958242841270042,106.95473875403596",

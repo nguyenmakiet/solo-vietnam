@@ -16,6 +16,10 @@ export const coToIsland: Location = {
   tags: ["🏝️ Remote Island", "🤿 Coral Snorkeling", "🏖️ White Sand Beaches", "🌊 Gulf of Tonkin"],
   bestMonths: [4, 5, 6, 7, 8, 9, 10],
   bestSeasonNote: "Apr - Aug (warm, sunny, ideal for swimming and snorkeling; Sep-Oct still good but storm risk increases)",
+  timeNeeded: {
+    minMinutes: 2880,
+    maxMinutes: 4320,
+  },
   entranceFee: "Free island access. Some beaches and activities have separate fees.",
   openingHours: "Open all year - ferry access dependent on weather conditions",
   mapUrl: "https://www.google.com/maps?q=20.970013931734762,107.76311545711883",

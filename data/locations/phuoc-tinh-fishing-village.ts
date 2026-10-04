@@ -16,6 +16,10 @@ export const phuocTinhFishingVillage: Location = {
   tags: ["🎣 Active Fishing Port", "🦐 Fresh Seafood", "🚢 Fishing Fleet"],
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestTimeOfDay: "4:00-7:00 AM for the fish market at full activity; 7-9 AM is pleasant for a slower walk watching daily life; 4-6 PM brings a calmer mood, good for walking the harbourside embankment and watching sunset over the port",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 240,
+  },
   entranceFee: "Free",
   openingHours: "Fish market most active 4:00 – 8:00 AM daily",
   mapUrl: "https://www.google.com/maps?q=10.402412684439296,107.17863802885124",

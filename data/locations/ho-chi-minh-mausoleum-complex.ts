@@ -18,6 +18,10 @@ export const hoChiMinhMausoleumComplex: Location = {
   tags: ["🏛️ National Mausoleum", "🇻🇳 Uncle Ho", "⚓ Ba Dinh Square", "🌿 Presidential Stilt House"],
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestTimeOfDay: "Arrive by 7:30 AM (summer) or 8:00 AM (winter) when the mausoleum opens - queues build quickly, especially on weekends and Vietnamese holidays",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 180,
+  },
   entranceFee: "Free for the mausoleum itself, for both Vietnamese citizens and foreign visitors. The Ho Chi Minh Museum and the stilt house area have separate entrance fees for foreign visitors; check the current rates at each site.",
   openingHours: "Open Tue, Wed, Thu, Sat, Sun (closed Mon and Fri for routine maintenance, except on major holidays, when it opens regardless of weekday). Hours are seasonal: April 1 - October 31, Tue-Thu 7:30-10:30 AM and Sat-Sun/holidays 7:30-11:00 AM; November 1 - March 31, Tue-Thu 8:00-11:00 AM and Sat-Sun/holidays 8:00-11:30 AM. The mausoleum also closes for an extended annual maintenance period, typically 1-2 months in autumn (September-November 2026) - check current dates before visiting.",
   mapUrl: "https://www.google.com/maps?q=21.036779537375388,105.83472510393055",

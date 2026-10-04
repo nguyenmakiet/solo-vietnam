@@ -22,6 +22,10 @@ export const quanThanhTemple: Location = {
   ],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Early morning for the quietest, most contemplative visit - it gets busier on the 1st and 15th of the lunar month",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 45,
+  },
   entranceFee: "10,000 VND per person, free for young children",
   openingHours: "8:00 AM-5:00 PM daily; extended to 6:00 AM-8:00 PM on the 1st and 15th of the lunar month; open all night on Lunar New Year's Eve",
   mapUrl: "https://www.google.com/maps?q=21.043075560648294,105.8364996802918",

@@ -16,6 +16,10 @@ export const vietnamMilitaryHistoryMuseum: Location = {
   tags: ["🪖 Military History", "🏛️ National Museum", "🇻🇳 Vietnamese History", "vietnam-war"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Mornings on weekdays for smaller crowds.",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 240,
+  },
   entranceFee: "40,000 VND per person (from April 12, 2025). Free for under 16, over 80, and war veterans",
   openingHours: "8:00 AM – 11:30 AM and 1:00 PM – 4:30 PM. Closed Mondays and Fridays.",
   mapUrl: "https://maps.google.com/?q=21.01028361187014,105.75411207567583",

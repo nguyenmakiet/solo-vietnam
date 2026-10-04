@@ -16,6 +16,10 @@ export const cuChiTunnels: Location = {
   tags: ["🪖 War History", "🕳️ Underground Tunnels", "🌿 Jungle Warfare", "📷 Living Museum", "vietnam-war"],
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 180,
+  },
   entranceFee: "35,000 VND/person (site entry). Guided tour service: additional 100,000 VND/person. Children under 7: free.",
   openingHours: "7:00 AM - 5:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=11.1416,106.4619",

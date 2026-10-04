@@ -16,6 +16,10 @@ export const hungTemple: Location = {
   tags: ["🏛️ National Pilgrimage", "🛕 UNESCO Intangible Cultural Heritage", "⛰️ Sacred Hill", "folk-religion"],
   bestMonths: [1, 2, 3, 4, 5, 10, 11, 12],
   bestTimeOfDay: "Early morning gives the coolest temperatures for the climb and the quietest atmosphere at each temple before day-trip crowds build",
+  timeNeeded: {
+    minMinutes: 180,
+    maxMinutes: 240,
+  },
   entranceFee: "10,000 VND/person for temple access (children under 1.2m free); the Hùng Kings Museum is a separate 15,000 VND; an optional electric car (round trip) costs around 50,000 VND per person, sometimes adjusted upward during peak festival periods",
   openingHours: "7:00 AM - 6:00 PM for the temple complex; the Hùng Kings Museum specifically closes earlier, around 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=21.368643714922786,105.32575135886921",

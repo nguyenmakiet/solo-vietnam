@@ -16,6 +16,10 @@ export const japaneseBridge: Location = {
   tags: ["🌉 Iconic Landmark", "🏯 400-Year-Old Bridge", "🎑 UNESCO Heritage", "early-modern-vietnam"],
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 10, 11],
   bestSeasonNote: "Feb - Aug (broad dry season window); Oct - Nov also offers exceptional golden hour light if you're visiting outside that range",
+  timeNeeded: {
+    minMinutes: 5,
+    maxMinutes: 10,
+  },
   entranceFee: "Free to walk across; entry to the small inner shrine requires the Hội An Old Town combined ticket (~120,000 VND), which also covers several other heritage houses, assembly halls, and museums in the Ancient Town",
   openingHours: "Open daily; best visited early morning or after 5 PM",
   mapUrl: "https://www.google.com/maps?q=15.877113853056763,108.32614848011536",

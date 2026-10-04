@@ -16,6 +16,10 @@ export const taPaFields: Location = {
   tags: ["🌾 Terraced Rice Fields", "🛕 Khmer Culture", "🌴 Twin Sugar Palms"],
   bestMonths: [7, 8, 9, 10, 11],
   bestTimeOfDay: "Before 9:30 AM or after 3 PM to avoid harsh sun",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Open all day",
   mapUrl: "https://www.google.com/maps?q=10.402127666662789,104.99288003222382",

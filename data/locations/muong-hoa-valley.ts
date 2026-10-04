@@ -16,6 +16,10 @@ export const muongHoaValley: Location = {
   tags: ["🌾 Rice Terraces", "ethnic-minority-culture"],
   bestMonths: [1, 2, 3, 4, 5, 8, 9, 12],
   bestSeasonNote: "Late Aug - mid Sep (golden harvest, peak season). Mar - May (flooded mirror terraces). Dec - Feb for winter mist and occasional snow.",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 2880,
+  },
   entranceFee: "150,000 VND adults / 100,000 VND children 6-12 / Free under 6",
   openingHours: "Open daily. Best light: 6:30 - 7:30 AM (fog lifting off terraces).",
   mapUrl: "https://maps.google.com/?q=22.3100,103.8650",

@@ -18,6 +18,10 @@ export const khoMuongCave: Location = {
   tags: ["🕳️ Karst Cave", "🦇 Bat Cave", "🥾 Self-Guided", "🌿 Pù Luông Reserve"],
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestTimeOfDay: "Afternoon for the best photography light through the entrance arch",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 60,
+  },
   entranceFee: "Historically around 10,000 VND (parking included), collected informally by the Kho Mường village community - as of September 2026, the Pù Luông Nature Reserve management has flagged that this fee collection was never officially licensed. See the safety note below before planning a visit.",
   openingHours: "Daylight hours - subject to change given the current access situation (see safety note)",
   mapUrl: "https://maps.google.com/?q=20.48417144014872,105.13857469704293",

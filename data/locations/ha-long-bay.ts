@@ -16,6 +16,10 @@ export const haLongBay: Location = {
   tags: ["🌊 UNESCO World Heritage", "🚢 Overnight Cruise", "🪨 Karst Landscape"],
   bestMonths: [3, 4, 9, 10, 11],
   bestSeasonNote: "Sep - Nov (clear skies, calm water, best visibility) or Mar - Apr. Avoid Jun-Aug for crowds and afternoon storms.",
+  timeNeeded: {
+    minMinutes: 180,
+    maxMinutes: 2880,
+  },
   entranceFee: "Bay entry ticket: 310,000 VND/person (adults). Free for children under 1.2m. Ticket is separate from and in addition to cruise/boat costs.",
   openingHours: "Year-round. Traditional wooden boats depart 8:00-8:30 AM. Cruise ships depart 9:00-9:30 AM, return ~5:00 PM.",
   mapUrl: "https://maps.google.com/?q=20.9101,107.1839",

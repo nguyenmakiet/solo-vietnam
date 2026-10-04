@@ -16,6 +16,10 @@ export const muiTroFishingVillage: Location = {
   tags: ["🎣 Small Fishing Village", "🌊 Rocky Coast"],
   bestMonths: [6, 7, 8],
   bestTimeOfDay: "Roughly 5-8 AM is best for a walk and watching fishing boats return; midday (11 AM-1 PM) is harsh and hot but gives the clearest skies for photos; 4-6 PM has softer light and is good for swimming",
+  timeNeeded: {
+    minMinutes: 2880,
+    maxMinutes: 2880,
+  },
   entranceFee: "Free to visit the coastline itself; if using an organised camping spot nearby, expect a modest self-catering camping fee - confirm locally, since facilities and pricing appear to vary along this stretch",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.191860491067558,108.72934429502345",

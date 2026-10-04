@@ -16,6 +16,10 @@ export const longSonPagoda: Location = {
   tags: ["⛩️ White Buddha", "🏔️ Hilltop Statue", "🕌 Active Pagoda", "buddhism"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Early morning for quietest atmosphere",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Generally open from around 7:00 AM to 5:00 PM; the temple grounds may be accessible outside these hours",
   mapUrl: "https://www.google.com/maps?q=12.250327071591599,109.18072246606026",

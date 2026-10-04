@@ -17,6 +17,10 @@ export const catCoBeach: Location = {
   bestMonths: [4, 5, 6, 7, 8, 9, 10],
   bestSeasonNote: "Apr - Oct is the swimming season overall, with Jun - Aug as peak season (warmest water, busiest crowds). Within that window, Apr-Aug is the more weather-reliable stretch; Sep-Oct can bring storms and rougher seas, so check the forecast closely if travelling then. Dec - Feb is cold and not really swimmable; Nov and Mar are quieter shoulder months worth checking the forecast for",
   bestTimeOfDay: "Mornings before around 7 AM have calmer water, cooler temperatures, and the best light for photos, while roughly 4-6 PM brings softer sun and a chance to catch the sunset - both are also quieter than the midday peak.",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 180,
+  },
   entranceFee: "All three beaches (Cát Cò 1, 2, and 3) are generally free to enter as of recent visitor reports, though this has reportedly varied over time (older sources cite a small fee at Cát Cò 2) - worth confirming locally, since policies can change",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=20.71792329725481,107.05221565965415",

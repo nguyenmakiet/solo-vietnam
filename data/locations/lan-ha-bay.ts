@@ -16,6 +16,10 @@ export const lanHaBay: Location = {
   tags: ["🛶 Kayaking", "🌊 Cleaner than Ha Long", "🏖️ Hidden Beaches", "✨ Bioluminescence Night Kayaking", "🧗 Limestone Rock Climbing"],
   bestMonths: [4, 5, 6, 9, 10, 11],
   bestSeasonNote: "Apr - Jun or Sep - Nov (calm water, best visibility, fewest boats)",
+  timeNeeded: {
+    minMinutes: 540,
+    maxMinutes: 540,
+  },
   entranceFee: "From 120,000 VND/person (children from 60,000 VND)",
   openingHours: "Tours depart from Cát Bà town daily from 8:00 AM",
   mapUrl: "https://www.google.com/maps?q=20.731973471390784,107.05945027622396",

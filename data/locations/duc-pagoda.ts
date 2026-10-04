@@ -24,6 +24,10 @@ export const ducPagoda: Location = {
   ],
   bestMonths: [4, 5, 6, 7, 8],
   bestTimeOfDay: "Morning for cooler temperatures on the climb",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.38906217491256,109.10196741829073",

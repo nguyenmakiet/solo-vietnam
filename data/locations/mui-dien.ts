@@ -16,6 +16,10 @@ export const muiDien: Location = {
   tags: ["🏮 Lighthouse", "🌅 First Sunrise", "🌊 Easternmost Cape", "french-colonial-era"],
   bestMonths: [4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Apr - Sep (warm sunny weather, sea breeze, best for lighthouse and swimming)",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 45,
+  },
   entranceFee: "30,000 VND",
   openingHours: "Morning: 7:30 - 11:30. Afternoon: 13:30 - 17:00.",
   mapUrl: "https://www.google.com/maps?q=12.895123856614404,109.45894759200604",

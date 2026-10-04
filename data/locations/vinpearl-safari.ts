@@ -17,6 +17,10 @@ export const vinpearlSafari: Location = {
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season, animals most active in cooler temperatures).",
   bestTimeOfDay: "Visit early morning (9-11 AM) or late afternoon (from 3 PM) - midday heat drives animals into shade.",
+  timeNeeded: {
+    minMinutes: 180,
+    maxMinutes: 480,
+  },
   entranceFee: "850,000 VND adults. 650,000 VND (children 100-140cm and seniors 60+). Free for children under 1m. Electric buggy tour: ~100,000 VND/person (shared) or 1,500,000 VND/60 min private with guide (up to 7 people).",
   openingHours: "9:00 AM – 4:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.337243228996103,103.89206976788087",

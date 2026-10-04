@@ -16,6 +16,10 @@ export const imperialCity: Location = {
   tags: ["🏯 UNESCO Heritage", "nguyen-dynasty", "🏛️ Imperial Architecture"],
   bestMonths: [1, 2, 3, 4, 5, 6],
   bestSeasonNote: "Jan - Apr (spring, cool and dry - ideal). Apr - Jun for Huế Festival. Avoid Oct - Nov (peak flood season).",
+  timeNeeded: {
+    minMinutes: 180,
+    maxMinutes: 480,
+  },
   entranceFee: "200,000 VND/adult & children 12+, 40,000 VND/child (7-12), free under 7. Combo ticket with royal tombs available. Áo dài rental nearby: ~100,000 VND/set.",
   openingHours: "Summer: 6:30 AM - 5:30 PM. Winter: 7:00 AM - 5:00 PM. Đại Nội by Night: separate evening program.",
   mapUrl: "https://www.google.com/maps?q=16.4677616052903,107.57931947854229",

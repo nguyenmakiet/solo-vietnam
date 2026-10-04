@@ -16,6 +16,10 @@ export const phuQuocNightMarket: Location = {
   tags: ["🌙 Night Market", "🦞 Seafood", "🍢 Street Food"],
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestTimeOfDay: "7:00-10:00 PM for the liveliest atmosphere; stalls start setting up from 5:00 PM and things wind down by around 11:00 PM",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 180,
+  },
   entranceFee: "Free",
   openingHours: "Roughly 5:00 PM – 11:00 PM daily, busiest 7-10 PM",
   mapUrl: "https://maps.google.com/?q=10.2158553,103.9602497",

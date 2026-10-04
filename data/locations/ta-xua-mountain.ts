@@ -16,6 +16,10 @@ export const taXuaMountain: Location = {
   tags: ["🦕 Dinosaur Spine Ridge", "🌊 Sea of Clouds", "🐢 Turtle Rock", "🌿 Moss Forest"],
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season, highest chance of sea of clouds, clearest skies)",
+  timeNeeded: {
+    minMinutes: 2880,
+    maxMinutes: 2880,
+  },
   entranceFee: "Free (guide + porter fees apply)",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.458552357466253,104.34445105702092",

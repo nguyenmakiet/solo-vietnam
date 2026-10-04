@@ -16,6 +16,10 @@ export const hoaLuAncientCapital: Location = {
   tags: ["🏯 10th Century Capital", "⛩️ Đinh & Lê Temples", "📖 Vietnam's First Capital", "medieval-vietnam", "folk-religion"],
   bestMonths: [1, 2, 3, 4, 5, 10, 11, 12],
   bestSeasonNote: "Mar - May (festival season, golden rice fields, mild weather - ideal). Oct - Apr also good (dry season).",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 120,
+  },
   entranceFee: "20,000 VND/person (over 1.2m), free for children under 1.2m",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.286875757053178,105.91801053940709",

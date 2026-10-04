@@ -16,6 +16,10 @@ export const yavlyWaterfall: Location = {
   tags: ["💧 Tà Năng Waterfall", "🥾 Multi-day Trek", "🪢 Abseiling"],
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season; trails are manageable and stream crossings safe - avoid rainy season when the Tà Năng route becomes dangerously flooded)",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 2880,
+  },
   entranceFee: "Free",
   openingHours: "Trek typically starts at dawn; overnight camping required for the full multi-day itinerary, though a quick stop is possible for those passing through on the Tà Năng - Phan Dũng route",
   mapUrl: "https://www.google.com/maps?q=11.511202745108713,108.61623377954047",

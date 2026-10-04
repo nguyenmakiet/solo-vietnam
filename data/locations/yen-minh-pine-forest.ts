@@ -16,6 +16,10 @@ export const yenMinhPineForest: Location = {
   tags: ["🌲 Highland Pine Forest", "🌫️ Morning Mist", "🏍️ Scenic Road"],
   bestMonths: [3, 4, 9, 10, 11],
   bestTimeOfDay: "Roughly 5:30-8:00 AM for sunrise mist, or 4:00-5:30 PM for golden late-afternoon light through the pines",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.16731453372523,105.05474637426761",

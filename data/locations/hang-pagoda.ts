@@ -23,6 +23,10 @@ export const hangPagoda: Location = {
   ],
   bestMonths: [4, 5, 6, 7, 8],
   bestTimeOfDay: "Roughly 6-8 AM for the quietest atmosphere and softest light through the sea almond trees, or 4-6 PM for sunset over the water from the courtyard",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Open daily, roughly 6 AM - 6 PM",
   mapUrl: "https://www.google.com/maps?q=15.391114193530264,109.12497065117606",

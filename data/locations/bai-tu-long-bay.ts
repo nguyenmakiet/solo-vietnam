@@ -16,6 +16,10 @@ export const baiTuLongBay: Location = {
   tags: ["🌊 Off the Beaten Path", "🏖️ Isolated Beaches"],
   bestMonths: [3, 4, 5, 9, 10],
   bestSeasonNote: "Mar - May (calm, clear, warm - best overall). Sep - Oct (clear skies, fewer boats). Avoid Jun - Jul (typhoon season).",
+  timeNeeded: {
+    minMinutes: 4320,
+    maxMinutes: 5760,
+  },
   entranceFee: "Included in cruise packages. Cruises: 2,000,000 - 3,500,000 VND/person/night depending on cruise class and itinerary.",
   openingHours: "Accessible year-round via cruise from Hòn Gai pier (Hạ Long International Port).",
   mapUrl: "https://www.google.com/maps?q=20.984007222280045,107.2457308779769",

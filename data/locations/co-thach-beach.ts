@@ -16,6 +16,10 @@ export const coThachBeach: Location = {
   tags: ["🪨 Moss-Covered Rocks", "🌈 Seven-Coloured Stones", "🌅 Sunrise Spot"],
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Late Oct - Apr is the moss season overall, but March specifically is considered the single best month, when the moss is at its most vivid green. Aim for just after the tide recedes for the clearest view of the moss - too high and it's submerged, too low and it dries out and dulls. Avoid Jul - Aug specifically, when rain is heaviest and the sea gets rougher",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.17800572228083,108.71644682210062",

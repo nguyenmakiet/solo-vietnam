@@ -22,6 +22,10 @@ export const giengTienPeak: Location = {
   ],
   bestMonths: [4, 5, 6, 7, 8],
   bestTimeOfDay: "Roughly 7-9 AM or 4:30-6:30 PM for the softest light and calmest conditions on the exposed upper slopes",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388855661824474,109.10258272120166",

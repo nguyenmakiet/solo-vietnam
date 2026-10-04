@@ -17,6 +17,10 @@ export const batPagodaSocTrang: Location = {
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round; Oct - Apr generally has the most comfortable weather",
   bestTimeOfDay: "Morning (around 7-9 AM) gives softer light and a cooler, less crowded visit for appreciating the architecture, while late afternoon into dusk (roughly 16:00-18:00) is when the bats stir and eventually depart in a mass exodus - worth timing around whichever matters more to you, or allow enough time for both.",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 180,
+  },
   entranceFee: "Entry is generally free (a donation box is available for those who wish to contribute); parking arrangements can vary, so it's worth checking current options on arrival",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=9.600000,105.966700",

@@ -17,6 +17,10 @@ export const plateRockReef: Location = {
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Jan - Aug (dry season; avoid Sep - Dec when storms and swells make the reef inaccessible).",
   bestTimeOfDay: "Around 7:00 AM or 3:00 PM are commonly cited as the ideal windows for photography, avoiding the harsh midday sun; sunset (after 5 PM) is a bit late for the fullest golden light but still workable for check-in photos as the sky turns pink over the rocks",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "Around 40,000 VND/adult as of recent 2026 pricing (including insurance) - older sources cite a lower 20,000 VND, so this appears to have increased at some point in 2026; children and some other groups (over-80s, people with disabilities, revolutionary contributors) are free. Parking runs roughly 5,000-20,000 VND depending on vehicle, and an optional electric cart from the entrance to the rocks costs around 5,000 VND/ride",
   openingHours: "Roughly 6:00 AM – 6:30 PM, though exact hours vary a bit by source - some cite an 8:00 AM start",
   mapUrl: "https://www.google.com/maps?q=13.354005873751277,109.29390981181257",

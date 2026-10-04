@@ -17,6 +17,10 @@ export const baNaCableCar: Location = {
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug (clearest visibility).",
   bestTimeOfDay: "Arrive 7:30-8:30 AM before the 9:30-11 AM peak crowd window.",
+  timeNeeded: {
+    minMinutes: 630,
+    maxMinutes: 630,
+  },
   entranceFee: "~900,000 VND adults / ~750,000 VND children. Buy on Klook for a discount and to skip the ticket queue.",
   openingHours: "First cable car: 7:30 AM. Most stations close at 6:00 PM - after 6 PM frequency can reduce to roughly hourly departures. Last return: 9:00 PM (night route).",
   mapUrl: "https://www.google.com/maps?q=16.025928263564783,108.03455022954422",

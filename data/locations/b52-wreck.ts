@@ -17,6 +17,10 @@ export const b52Wreck: Location = {
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round - covered site.",
   bestTimeOfDay: "Morning light is better for photography",
+  timeNeeded: {
+    minMinutes: 10,
+    maxMinutes: 15,
+  },
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours",
   mapUrl: "https://www.google.com/maps?q=21.037935182346573,105.82708087218539",

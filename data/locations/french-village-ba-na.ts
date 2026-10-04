@@ -16,6 +16,10 @@ export const frenchVillageBaNa: Location = {
   tags: ["🏰 French Gothic Architecture", "🎡 Fantasy Park", "🍷 Debay Wine Cellar"],
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - Sep (dry season, best for outdoor photography and festivals). Oct - Feb brings fog and cold - atmospheric but bring warm layers.",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 45,
+  },
   entranceFee: "Included in Bà Nà Hills ticket (1,000,000 VND/adult, 800,000 VND/child — 2026 price)",
   openingHours: "8:00 AM – 10:00 PM (within Bà Nà Hills complex)",
   mapUrl: "https://www.google.com/maps?q=15.997655145396397,107.98932655723252",

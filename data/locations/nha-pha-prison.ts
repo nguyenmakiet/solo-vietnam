@@ -23,6 +23,10 @@ export const nhaPhaPrison: Location = {
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - Aug brings stable weather with little rain and plenty of sun; Apr - Jun is peak season, so expect crowds then. Sep - Dec is the rainy, stormy season with rough seas.",
   bestTimeOfDay: "Sunrise or sunset from the lighthouse viewing platform gives the best panoramic light over the island",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "The grounds are open freely, day and night, with no ticket gate or fixed hours. However, staffed access to climb the lighthouse itself appears to end around 4-5 PM based on visitor reports - plan a daytime visit if climbing to the top is your goal.",
   mapUrl: "https://www.google.com/maps?q=15.386246450441275,109.14170348441878",

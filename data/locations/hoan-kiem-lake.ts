@@ -17,6 +17,10 @@ export const hoanKiemLake: Location = {
   bestMonths: [8, 9, 10],
   bestSeasonNote: "Aug - Oct (autumn - cool, dry, less harsh sun and rain, and the best scenery for walking around the lake).",
   bestTimeOfDay: "The weekend pedestrian zone adds the liveliest atmosphere.",
+  timeNeeded: {
+    minMinutes: 20,
+    maxMinutes: 25,
+  },
   entranceFee: "Free (Ngọc Sơn Temple has a modest separate entrance fee)",
   openingHours: "Open 24 hours; weekend pedestrian zone Friday-Sunday, 6:00 PM - 6:00 AM (next morning)",
   mapUrl: "https://www.google.com/maps?q=21.027833338357237,105.85226838963871",

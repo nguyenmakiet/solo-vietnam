@@ -16,6 +16,10 @@ export const phatDiemCathedral: Location = {
   tags: ["⛪ Stone Cathedral", "🏯 Vietnamese Gothic", "🌊 Coastal Plains", "📷 Unique Architecture", "catholicism"],
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season); Christmas Eve is when the complex looks its best - decorated with festive lights and full of community activity, though it draws the largest crowds of the year",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 90,
+  },
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours; mass times vary",
   mapUrl: "https://www.google.com/maps?q=20.09305479535071,106.0794963740728",

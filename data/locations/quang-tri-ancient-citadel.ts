@@ -16,6 +16,10 @@ export const quangTriAncientCitadel: Location = {
   tags: ["🏛️ War Citadel", "🕊️ 1972 Battle", "🌿 Sacred Ground", "vietnam-war"],
   bestMonths: [12, 1, 2, 3, 4, 5],
   bestSeasonNote: "Dec - May is the most comfortable period to visit (after Tết through spring). Early-mid summer brings hot, dry 'gió Lào' winds, and Sep - Nov carries a risk of flooding in the area",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 90,
+  },
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.753698503710048,107.18981719454122",

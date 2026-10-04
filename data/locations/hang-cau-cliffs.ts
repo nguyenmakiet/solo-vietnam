@@ -18,6 +18,10 @@ export const hangCauCliffs: Location = {
   ],
   bestMonths: [4, 5, 6, 7, 8],
   bestTimeOfDay: "Roughly 5-6 AM for sunrise, 5:30-6:30 PM for sunset, or afternoon generally when the tide is lower and the beach widens with the cliff face fully exposed for photography",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.388917622220426,109.13405569310561",

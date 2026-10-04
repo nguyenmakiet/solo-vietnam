@@ -16,6 +16,10 @@ export const benHaiRiver: Location = {
   tags: ["🌉 Reunification Bridge", "🏳️ DMZ History", "🚗 DMZ Road Trip", "vietnam-war"],
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Feb - Aug (dry season; avoid Sep-Nov typhoon season)",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 150,
+  },
   entranceFee: "50,000 VND/adult (from March 2026 pricing); children under 6 free, children 6-12 counted two per ticket",
   openingHours: "Open daily 7:00 AM - 6:00 PM (2026 update following renovation); museum hours within that typically 7:00-11:30 and 13:30-17:00. Early morning (7-9 AM) is cooler and quieter with softer light; late afternoon (3-5 PM) has good light for photos",
   mapUrl: "https://www.google.com/maps?q=17.005352993989394,107.05091365024349",

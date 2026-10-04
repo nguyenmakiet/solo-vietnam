@@ -16,6 +16,10 @@ export const thuongPhuocBorderGate: Location = {
   tags: ["🛂 Vietnam-Cambodia Border", "🌊 Mekong River Crossing", "🚤 River Border"],
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season; Mekong water levels lower and river crossings more predictable)",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 30,
+  },
   entranceFee: "Free (border crossing fees apply for those transiting to Cambodia)",
   openingHours: "Border gate hours: 6:00 AM – 6:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.910484255076085,105.19761803298447",
