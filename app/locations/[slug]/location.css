@@ -406,6 +406,11 @@
   margin: 28px 0 8px;
 }
 .content-body > .rc-h:first-child { margin-top: 4px; }
+/* Long-form prose paragraphs only (not headings, lists, callouts or tables).
+   Phones keep left alignment: the column is too narrow for even word spacing. */
+@media (min-width: 641px) {
+  .content-body > p { text-align: justify; }
+}
 .rc-h-icon, .qf-icon { display: none; }
 .rc-h-text {
   font-family: var(--font-serif), 'Source Serif 4', serif;
