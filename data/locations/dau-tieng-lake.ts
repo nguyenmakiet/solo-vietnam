@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dauTiengLake: Location = {
   slug: "dau-tieng-lake",
   name: "Dầu Tiếng Lake",
-  updatedAt: "2026-09-19",
+  updatedAt: "2026-10-04",
   provinces: ["tay-ninh"],
   destination: "",
   lat: 11.354531,
@@ -15,7 +15,7 @@ export const dauTiengLake: Location = {
   experiences: ["photography", "camping", "cycling", "boat-tour", "fishing"],
   tags: ["🏞️ Largest Reservoir", "🌅 Sunrise Photography"],
   bestTime: "Early morning (before sunrise) for photography and the coolest temperatures - the lake is at its most atmospheric with morning mist and fishing boats out on the water",
-  bestMonths: [1, 2, 3, 4, 11, 12],
+  bestMonths: [12, 1, 2, 3, 4, 6],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.354531,106.342298",

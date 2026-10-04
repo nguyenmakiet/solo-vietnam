@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vinhTrungFields: Location = {
   slug: "vinh-trung-fields",
   name: "Vĩnh Trung Fields",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["an-giang"],
   destination: "",
   lat: 10.557096724995187,
@@ -15,7 +15,7 @@ export const vinhTrungFields: Location = {
   experiences: ["photography", "walking-tour", "motorcycling"],
   tags: ["🌴 Thốt Nốt Palm Fields", "🏛️ Sà-Đách-Tót Pagoda", "🏔️ Thất Sơn Backdrop", "khmer-culture"],
   bestTime: "Roughly 5-7 AM for the flood-water reflections and softest light",
-  bestMonths: [8, 9, 10, 11],
+  bestMonths: [8, 9, 10, 11, 12, 1, 2, 3, 4],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.557096724995187,105.02055578113539",

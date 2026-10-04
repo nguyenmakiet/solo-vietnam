@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quanBaTwinMountains: Location = {
   slug: "quan-ba-twin-mountains",
   name: "Quản Bạ Twin Mountains",
-  updatedAt: "2026-09-08",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.06521535060752,
@@ -15,7 +15,7 @@ export const quanBaTwinMountains: Location = {
   experiences: ["photography", "trekking", "motorcycling"],
   tags: ["🏔️ Núi Đôi", "📸 Ha Giang Icon", "🌾 Rice Terraces", "🏍️ Loop Landmark"],
   bestTime: "6-9 AM gives the best odds of the cloud sea and sunrise light; if fog is heavy that morning, waiting until it burns off (later morning, closer to midday) can actually give clearer general views of the valley instead",
-  bestMonths: [3, 4, 5, 9, 10, 11],
+  bestMonths: [9, 10, 11, 12, 1, 2, 3, 4],
   entranceFee: "Free (roadside viewpoints)",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.06521535060752,105.00120271105881",

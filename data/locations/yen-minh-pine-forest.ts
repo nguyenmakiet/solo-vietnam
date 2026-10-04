@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const yenMinhPineForest: Location = {
   slug: "yen-minh-pine-forest",
   name: "Yên Minh Pine Forest",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.16731453372523,
@@ -15,7 +15,7 @@ export const yenMinhPineForest: Location = {
   experiences: ["photography", "motorcycling", "camping"],
   tags: ["🌲 Highland Pine Forest", "🌫️ Morning Mist", "🏍️ Scenic Road"],
   bestTime: "Roughly 5:30-8:00 AM for sunrise mist, or 4:00-5:30 PM for golden late-afternoon light through the pines",
-  bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],
+  bestMonths: [3, 4, 9, 10, 11],
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.16731453372523,105.05474637426761",
@@ -59,7 +59,7 @@ export const yenMinhPineForest: Location = {
       difficulty: "Steep hill requires careful motorbike riding in first gear; walking alternative available",
       safety: null,
       accessibility: "Located right next to highway; easily accessible as roadside stop - but confirm you're on the 41km route at the Cán Tỷ fork, since the shorter 22.6km alternative bypasses the forest",
-      seasonal: null,
+      seasonal: "Best in autumn (September-November) and spring (March-April)",
     },
     visitorTips: [
       "Use first gear when riding motorbike up the steep pathway to avoid difficulties",
