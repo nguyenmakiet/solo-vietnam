@@ -30,12 +30,14 @@
  * Usage: npm run audit:best-time
  *        npm run audit:best-time -- --md reports/best-time-audit.md
  *        npm run audit:best-time -- --json reports/best-time-audit.json
+ *        npm run audit:best-time -- --released   (release gate, exits 1 on failure)
  *        add --all to include the NON_PUBLIC draft locations
  */
 
 import { writeFileSync, mkdirSync } from "fs"
 import { dirname } from "path"
 import { allLocations } from "../data/all-locations"
+import { BEST_MONTHS_RELEASES, BEST_MONTHS_AUDIT_OVERRIDES } from "../data/best-months-release"
 
 const MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 // Capitalised only, so the verb "may" and "march" never count as months
@@ -284,3 +286,34 @@ if (mdIndex !== -1) {
   writeFileSync(out, lines.join("\n"))
   console.log(`Markdown report written to ${out}`)
 }
+
+// Release gate: every slug in data/best-months-release.ts must be public,
+// displayable, have a valid bestMonths and be SAFE (or carry a reviewed override)
+if (process.argv.includes("--released")) {
+  const failures: string[] = []
+  const bySlug = new Map(rows.map((r) => [r.slug, r]))
+  for (const [batch, slugs] of Object.entries(BEST_MONTHS_RELEASES)) {
+    for (const slug of slugs) {
+      const loc = allLocations.find((l) => l.slug === slug)
+      const row = bySlug.get(slug)
+      const fail = (msg: string) => failures.push(`${batch} ${slug}: ${msg}`)
+      if (!loc) { fail("not in allLocations"); continue }
+      if (!row) { fail("not a public location"); continue }
+      if (loc.status === "closed" || loc.status === "unverified") fail(`status is ${loc.status}`)
+      if (row.group === "EMPTY") fail("bestMonths is empty")
+      if (row.bestMonths.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) fail("bestMonths has a value outside 1-12")
+      if (new Set(row.bestMonths).size !== row.bestMonths.length) fail("bestMonths has duplicates")
+      if (row.group !== "SAFE" && !BEST_MONTHS_AUDIT_OVERRIDES[slug]) fail(`${row.group}: ${row.reasons.join("; ")}`)
+    }
+  }
+  for (const slug of Object.keys(BEST_MONTHS_AUDIT_OVERRIDES)) {
+    if (!Object.values(BEST_MONTHS_RELEASES).flat().includes(slug)) failures.push(`override for unreleased slug: ${slug}`)
+  }
+  const total = Object.values(BEST_MONTHS_RELEASES).flat().length
+  if (failures.length) {
+    console.log(`\nRELEASE GATE FAILED (${failures.length}):\n  ${failures.join("\n  ")}`)
+    process.exit(1)
+  }
+  console.log(`\nRelease gate passed: ${total} released locations.`)
+}
+

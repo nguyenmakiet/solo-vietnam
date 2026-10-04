@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const coToIsland: Location = {
   slug: "co-to-island",
   name: "Cô Tô Island",
-  updatedAt: "2026-09-22",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 20.970013931734762,
@@ -15,7 +15,7 @@ export const coToIsland: Location = {
   experiences: ["beach", "snorkeling", "kayaking", "photography", "boat-tour", "swimming", "motorcycling"],
   tags: ["🏝️ Remote Island", "🤿 Coral Snorkeling", "🏖️ White Sand Beaches", "🌊 Gulf of Tonkin"],
   bestTime: "Apr - Aug (warm, sunny, ideal for swimming and snorkeling; Sep-Oct still good but storm risk increases)",
-  bestMonths: [4, 5, 6, 7, 8],
+  bestMonths: [4, 5, 6, 7, 8, 9, 10],
   entranceFee: "Free island access. Some beaches and activities have separate fees.",
   openingHours: "Open all year - ferry access dependent on weather conditions",
   mapUrl: "https://www.google.com/maps?q=20.970013931734762,107.76311545711883",

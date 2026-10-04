@@ -6,6 +6,7 @@ import FallbackImage from "@/components/FallbackImage"
 import { stripLeadingEmoji } from "@/lib/text"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import "./province.css"
+import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 
 const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
 
@@ -210,7 +211,7 @@ export default async function ProvincePage({
                           </div>
                         )}
                         <div className="dc-footer">
-                          <span className="dc-time">{l.bestTime.split("(")[0].trim()}</span>
+                          <span className="dc-time">{isBestMonthsReleased(l.slug) && l.bestMonths?.length ? formatMonths(l.bestMonths) : l.bestTime.split("(")[0].trim()}</span>
                           <span className="dc-cta">View →</span>
                         </div>
                       </div>

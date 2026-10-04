@@ -204,6 +204,22 @@
 .overview-card .oc-val {
   font-size: 14px; font-weight: 600; color: #1a1a2e; line-height: 1.4;
 }
+.overview-card.oc-wide { grid-column: 1 / -1; }
+.overview-card .oc-note {
+  font-size: 13px; color: #4b5563; line-height: 1.6; margin-top: 10px;
+}
+.month-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.month-pill {
+  min-width: 40px; text-align: center;
+  padding: 6px 0; border-radius: 8px;
+  font-size: 12px; font-weight: 500;
+  border: 1px solid var(--chip-border);
+  background: #fff; color: #9ca3af;
+}
+.month-pill.active {
+  background: #1a1a2e; color: #fff;
+  border-color: #1a1a2e; font-weight: 700;
+}
 
 /* ── GALLERY ── */
 .gallery-grid {

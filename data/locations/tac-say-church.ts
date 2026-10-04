@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tacSayChurch: Location = {
   slug: "tac-say-church",
   name: "Father Diep Shrine",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["bac-lieu"],
   destination: "",
   lat: 9.221890887161383,
@@ -15,7 +15,7 @@ export const tacSayChurch: Location = {
   experiences: ["history", "culture", "religious-site-visit"],
   tags: ["⛪ Martyr Shrine", "🙏 Pilgrimage Site", "🌾 Mekong Delta", "✨ Miraculous Healings", "catholicism"],
   bestTime: "Year-round; the anniversary of Father Diệp's death (11-12 March on the solar calendar) draws the largest annual pilgrimage. Visit outside 9:00-11:00 AM and 2:00-4:00 PM if possible, when the midday sun is harshest",
-  bestMonths: [1, 2, 3, 11, 12],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Daily 4:00 AM - 9:00 PM. Mass times: weekdays 5:00 AM, 9:00 AM, and 5:00 PM (Saturday afternoon Mass at 4:00 PM instead); Sundays 5:00, 7:00, and 9:00 AM, and 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=9.221890887161383,105.39755916214018",

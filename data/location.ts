@@ -52,6 +52,8 @@ export type Location = {
   // seasons that are worth seeing but dangerous (put those in the season note instead).
   // User-facing and used by filters + destination derivation. Audit: npm run audit:best-time
   bestMonths?: number[]
+  bestSeasonNote?: string // seasonal context the month strip cannot show; may name months, must agree with bestMonths
+  bestTimeOfDay?: string // recommended time of day, with its nuance
   mapUrl: string
   streetView?: { lat?: number | string; lng?: number | string; embedUrl?: string }
   heroImage?: string

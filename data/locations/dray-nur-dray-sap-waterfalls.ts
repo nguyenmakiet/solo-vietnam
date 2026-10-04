@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const drayNurDraySapWaterfalls: Location = {
   slug: "dray-nur-dray-sap-waterfalls",
   name: "Dray Nur & Dray Sap Waterfalls",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["dak-lak", "dak-nong"],
   destination: "",
   lat: 12.540509582270607,
@@ -15,7 +15,7 @@ export const drayNurDraySapWaterfalls: Location = {
   experiences: ["trekking", "hiking"],
   tags: ["💧 Husband & Wife Falls", "🌊 Basalt Plateau", "🌿 Highland Forest"],
   bestTime: "Nov - Apr (dry season) is generally considered the most beautiful window - clearer water, gentler flow, wild sunflower (dã quỳ) and coffee blossom season, and more pleasant weather overall, with Feb - May specifically singled out as the prettiest stretch. May - Nov (rainy season) brings the most powerful, dramatic flow, but the water runs notably murkier and the paths get slippery - genuinely impressive rather than classically beautiful",
-  bestMonths: [11, 12, 1, 2, 3, 4, 5],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Dray Nur and Dray Sap have separate entrances and separate tickets. Dray Nur: 50,000 VND/adult, 30,000 VND/child. Dray Sap: widely listed at around 40,000 VND/adult, though there are unconfirmed reports of a price increase to 80,000 VND around 2024 - the two figures conflict across sources, so confirm the current rate locally before visiting. Kayak rental, life jackets, and bicycle rental are available as separate paid extras",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.540509582270607,107.89028799489219",

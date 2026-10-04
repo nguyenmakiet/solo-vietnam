@@ -12,6 +12,7 @@ import GetDirectionsButton from "./GetDirectionsButton"
 import ContentRenderer from "./ContentRenderer"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { typeDisplayLabel } from "@/data/taxonomy/types"
+import { isBestMonthsReleased } from "@/data/best-months-release"
 
 
 const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed", { icon: string; label: string }> = {
@@ -177,10 +178,32 @@ export default async function LocationPage({
         <div id="overview" className="section-anchor">
           <p className="section-label">Overview</p>
           <div className="overview-grid">
-            <div className="overview-card">
-              <div className="oc-label">Best Time to Visit</div>
-              <div className="oc-val">{location.bestTime}</div>
-            </div>
+            {isBestMonthsReleased(location.slug) && location.bestMonths?.length ? (
+              <div className="overview-card oc-wide">
+                <div className="oc-label">Best Months to Visit</div>
+                <div className="month-pills">
+                  {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => (
+                    <span key={m} className={`month-pill${location.bestMonths!.includes(m) ? " active" : ""}`}>
+                      {new Date(2000, m - 1).toLocaleString("en", { month: "short" })}
+                    </span>
+                  ))}
+                </div>
+                {(location.bestSeasonNote ?? location.bestTime) && (
+                  <div className="oc-note">{location.bestSeasonNote ?? location.bestTime}</div>
+                )}
+              </div>
+            ) : (
+              <div className="overview-card">
+                <div className="oc-label">Best Time to Visit</div>
+                <div className="oc-val">{location.bestTime}</div>
+              </div>
+            )}
+            {isBestMonthsReleased(location.slug) && location.bestTimeOfDay && (
+              <div className="overview-card">
+                <div className="oc-label">Best Time of Day</div>
+                <div className="oc-val">{location.bestTimeOfDay}</div>
+              </div>
+            )}
             {location.entranceFee && (
               <div className="overview-card">
                 <div className="oc-label">Entry Fee</div>

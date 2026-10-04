@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const angelEyeMountain: Location = {
   slug: "angel-eye-mountain",
   name: "Angel Eye Mountain (God Eye Mountain)",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.77437449430503,
@@ -15,7 +15,7 @@ export const angelEyeMountain: Location = {
   experiences: ["photography", "camping", "trekking", "motorcycling", "hiking"],
   tags: ["👁️ 50m Natural Rock Hole", "🌿 Thang Hen Valley"],
   bestTime: "Sep - Oct (golden rice fields, pleasant weather, and the rare chance to witness Thang Hen Lake temporarily draining within hours as water disappears into the karst beneath); Nov - Apr (dry season; meadow, grazing livestock, and clearer skies); Apr - Sep (rainy season; the valley floods into a lake for kayaking, SUP, and the nearby Nậm Trá Waterfall at its fullest)",
-  bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free; camping service fees apply if using local providers (around US$30/person)",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=22.77437449430503,106.31768739393065",
