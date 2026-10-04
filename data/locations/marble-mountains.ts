@@ -14,7 +14,6 @@ export const marbleMountains: Location = {
   categories: ["religion", "nature", "history"],
   experiences: ["history", "culture", "photography", "trekking", "religious-site-visit", "caving"],
   tags: ["🪨 Five Elements Mountains", "🕌 Buddhist Caves", "☀️ Sunbeam Cave", "🏯 Cham Heritage", "buddhism"],
-  bestTime: "Mar - Sep (best weather and clearest light for cave photography; avoid rainy season Oct-Feb when surfaces are slippery and visibility poor)",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - Sep (best weather and clearest light for cave photography; avoid rainy season Oct-Feb when surfaces are slippery and visibility poor)",
   entranceFee: "40,000 VND (Thuy Son mountain). Âm Phủ Cave: additional 20,000 VND. Elevator: 15,000 VND one-way (optional). Children under 6: free.",

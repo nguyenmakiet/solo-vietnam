@@ -14,7 +14,6 @@ export const hanoiTrainStreet: Location = {
   categories: ["culture"],
   experiences: ["photography", "walking-tour"],
   tags: ["🚂 Train Passes Meters Away", "📷 Iconic Photo Spot", "☕ Trackside Cafes", "🏘️ Residential Street"],
-  bestTime: "Oct - Apr (cool dry season). Afternoons and evenings have more train frequency.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cool dry season).",
   bestTimeOfDay: "Afternoons and evenings have more train frequency.",

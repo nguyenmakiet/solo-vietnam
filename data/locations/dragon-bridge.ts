@@ -14,7 +14,6 @@ export const dragonBridge: Location = {
   categories: ["architecture"],
   experiences: ["photography", "nightlife"],
   tags: ["🐉 Fire-Breathing Dragon", "🌉 Icon of Đà Nẵng", "🔥 Weekend Show"],
-  bestTime: "Year-round. For the best experience, visit on Friday, Saturday, or Sunday at 9 PM for the fire and water show. December-March offers the most comfortable evening weather, while April-September has clearer skies but larger crowds.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round. December-March offers the most comfortable evening weather, while April-September has clearer skies but larger crowds.",
   bestTimeOfDay: "For the best experience, visit on Friday, Saturday, or Sunday at 9 PM for the fire and water show.",

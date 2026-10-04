@@ -14,7 +14,6 @@ export const amTienCave: Location = {
   categories: ["nature", "history"],
   experiences: ["caving", "photography", "history", "cycling", "kayaking", "religious-site-visit"],
   tags: ["🐉 Dragon-Mouth Cave", "🏞️ 'Tuyệt Tình Cốc' Lake", "🚴 Lake Cycling"],
-  bestTime: "Jan - Apr (cool, dry weather, with Mar-Apr offering the best photography light) and Sep - Nov (pleasant temperatures and fewer rainy days); lotus and water lily bloom on the lake roughly Jun-Jul; avoid Jul-Aug when the stone steps get slippery in heavy rain",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
   bestSeasonNote: "Jan - Apr (cool, dry weather, with Mar-Apr offering the best photography light) and Sep - Nov (pleasant temperatures and fewer rainy days); lotus and water lily bloom on the lake roughly Jun-Jul; avoid Jul-Aug when the stone steps get slippery in heavy rain",
   entranceFee: "50,000 VND/adult (includes the cave and Am Tiên pagoda); children's pricing varies by source - roughly free under 1m, discounted 1-1.3m. Parking: 10,000 VND motorbike, 30,000-50,000 VND car. Bike rental available on-site for the lake loop.",

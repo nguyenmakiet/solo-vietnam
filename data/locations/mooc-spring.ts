@@ -14,7 +14,6 @@ export const moocSpring: Location = {
   categories: ["nature"],
   experiences: ["swimming", "trekking", "kayaking", "hiking"],
   tags: ["💧 Natural Spring Pool", "🌿 Jungle"],
-  bestTime: "Early morning, before 10 AM, for the clearest water and the fewest crowds",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
   bestTimeOfDay: "Early morning, before 10 AM, for the clearest water and the fewest crowds",
   entranceFee: "80,000 VND for sightseeing only (no swimming), year-round. For swimming and water activities, the official 2026 pricing from the Phong Nha-Kẻ Bàng Tourism Center is seasonal: a single-zone package (Ghềnh Moọc or Ghềnh Chụm) is 160,000 VND during Apr-Sep and 130,000 VND during Jan-Mar and Oct-Dec; the combined Moọc + Chụm package is 220,000 VND during Apr-Sep and 180,000 VND during the other months (100,000 VND for children in the combo package). Check current rates before visiting, since these can be adjusted. The paid service package includes swimming access, the jump platform, kayak, life jackets, paddles, staff supervision, and resting huts",

@@ -14,7 +14,6 @@ export const yenTuMountain: Location = {
   categories: ["religion", "nature", "history"],
   experiences: ["trekking", "culture", "history", "religious-site-visit", "cable-car", "hiking"],
   tags: ["⛰️ Sacred Peak", "🛕 Buddhist Pilgrimage", "🥾 Summit Trek", "🌲 Ancient Forest", "buddhism", "medieval-vietnam"],
-  bestTime: "Apr - Jun (quiet, comfortable weather). Jan - Mar (lunar) for the festival atmosphere - culturally extraordinary but extremely crowded. Avoid the Saturday after the first full moon of Tết - the single busiest day of the year.",
   bestMonths: [1, 2, 3, 4, 5, 6],
   bestSeasonNote: "Apr - Jun (quiet, comfortable weather). Jan - Mar (lunar) for the festival atmosphere - culturally extraordinary but extremely crowded. Avoid the Saturday after the first full moon of Tết - the single busiest day of the year.",
   entranceFee: "Free (entry to the heritage site). Cable car tickets charged separately - check official ticket office for current fares.",

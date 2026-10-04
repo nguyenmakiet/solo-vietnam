@@ -14,7 +14,6 @@ export const maPiLengPass: Location = {
   categories: ["nature"],
   experiences: ["photography", "motorcycling"],
   tags: ["🏍️ Motorbike", "🏔️ Mountain Pass", "🌊 Canyon Views"],
-  bestTime: "Sep - Nov (golden rice + buckwheat flowers). Mar - Apr (plum and pear blossoms). Avoid Jun - Aug rainy season.",
   bestMonths: [3, 4, 9, 10, 11],
   bestSeasonNote: "Sep - Nov (golden rice + buckwheat flowers). Mar - Apr (plum and pear blossoms). Avoid Jun - Aug rainy season.",
   entranceFee: "Free. Nho Quế river boat: 100,000 - 200,000 VND/person.",

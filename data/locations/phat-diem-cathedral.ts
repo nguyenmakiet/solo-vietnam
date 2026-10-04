@@ -14,7 +14,6 @@ export const phatDiemCathedral: Location = {
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "photography", "religious-site-visit"],
   tags: ["⛪ Stone Cathedral", "🏯 Vietnamese Gothic", "🌊 Coastal Plains", "📷 Unique Architecture", "catholicism"],
-  bestTime: "Nov - Apr (dry season); Christmas Eve is when the complex looks its best - decorated with festive lights and full of community activity, though it draws the largest crowds of the year",
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season); Christmas Eve is when the complex looks its best - decorated with festive lights and full of community activity, though it draws the largest crowds of the year",
   entranceFee: "Free",

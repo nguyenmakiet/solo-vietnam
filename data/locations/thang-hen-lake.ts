@@ -14,7 +14,6 @@ export const thangHenLake: Location = {
   categories: ["nature"],
   experiences: ["photography"],
   tags: ["💙 Turquoise Karst Lake", "🏄 SUP on the Lake", "🌿 Green Grassland"],
-  bestTime: "Jun - Sep (rainy season, lake at full depth, turquoise colour most intense, grasslands green)",
   bestMonths: [6, 7, 8, 9],
   bestSeasonNote: "Jun - Sep (rainy season, lake at full depth, turquoise colour most intense, grasslands green)",
   entranceFee: "30,000 VND (includes access to nearby caves)",

@@ -14,7 +14,6 @@ export const macDynastyCitadel: Location = {
   categories: ["history", "architecture"],
   experiences: ["history"],
   tags: ["🏰 16th-Century Citadel", "🏛️ Mạc Dynasty", "🧭 Off the Beaten Path", "early-modern-vietnam"],
-  bestTime: "Early morning to avoid crowds and get cleaner views over Lạng Sơn city from the top",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   bestTimeOfDay: "Early morning to avoid crowds and get cleaner views over Lạng Sơn city from the top",
   entranceFee: "Free",

@@ -14,7 +14,6 @@ export const traSuCajuputForest: Location = {
   categories: ["nature"],
   experiences: ["boat-tour", "wildlife", "photography", "walking-tour"],
   tags: ["🌿 Flooded Forest", "🦅 Birdwatching"],
-  bestTime: "Sep - Nov (flood season; forest fully inundated, green reflection at its most vivid). Morning before 11 AM or late afternoon to avoid midday heat.",
   bestMonths: [9, 10, 11],
   bestSeasonNote: "Sep - Nov (flood season; forest fully inundated, green reflection at its most vivid).",
   bestTimeOfDay: "Morning before 11 AM or late afternoon to avoid midday heat.",

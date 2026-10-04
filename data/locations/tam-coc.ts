@@ -14,7 +14,6 @@ export const tamCoc: Location = {
   categories: ["nature"],
   experiences: ["boat-tour", "cycling", "photography"],
   tags: ["🛶 Boat Tour", "🏔️ Karst", "🌾 Rice Fields"],
-  bestTime: "Mid May - mid Jun (golden rice harvest - peak scenery). Jun - Jul (lotus season). Mar - Apr (green rice, pleasant weather).",
   bestMonths: [3, 4, 5, 6, 7],
   bestSeasonNote: "Mid May - mid Jun (golden rice harvest - peak scenery). Jun - Jul (lotus season). Mar - Apr (green rice, pleasant weather).",
   entranceFee: "120,000 VND/person (over 1.2m), free under 1.2m. Boat: 150,000 VND/boat (max 4 people). Combo with temples + electric buggy: 350,000 VND.",

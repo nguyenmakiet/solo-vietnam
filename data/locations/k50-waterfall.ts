@@ -14,7 +14,6 @@ export const k50Waterfall: Location = {
   categories: ["hidden-gem", "nature"],
   experiences: ["trekking", "photography", "wildlife", "swimming"],
   tags: ["💦 54m Waterfall", "🌿 Jungle Trek", "🦅 Swallow Cave"],
-  bestTime: "Jan – Jun (dry season; trails safer, rivers lower, leeches somewhat less abundant)",
   bestMonths: [1, 2, 3, 4, 5, 6],
   bestSeasonNote: "Jan - Jun (dry season; trails safer, rivers lower, leeches somewhat less abundant)",
   entranceFee: "Fees vary depending on route, transport and guide arrangements - confirm current fees when arranging entry with the reserve.",

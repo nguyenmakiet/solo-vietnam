@@ -14,7 +14,6 @@ export const mocChauTeaHills: Location = {
   categories: ["nature"],
   experiences: ["photography", "cycling", "motorcycling"],
   tags: ["🍵 Tea Plantations", "🛵 Motorbike Scenic", "🌿 Highland Agriculture"],
-  bestTime: "Mar - Apr (new green shoots, mist on leaves) or Oct - Nov (combine with plum and ban blossoms)",
   bestMonths: [3, 4, 10, 11],
   bestSeasonNote: "Mar - Apr (new green shoots, mist on leaves) or Oct - Nov (combine with plum and ban blossoms)",
   entranceFee: "Free (some private tea hills charge a small gate fee)",

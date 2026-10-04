@@ -14,7 +14,6 @@ export const duGiaVillage: Location = {
   categories: ["culture", "nature"],
   experiences: ["homestay", "trekking", "culture", "photography", "cycling"],
   tags: ["🏡 Tày & H'mông Village", "🌾 Rice Terraces", "🥾 Eastern Loop", "🤫 Off the Beaten Track", "tay-culture"],
-  bestTime: "Oct – May (dry season). Oct–Nov for buckwheat flowers and golden rice terraces.",
   bestMonths: [10, 11, 12, 1, 2, 3, 4, 5],
   bestSeasonNote: "Oct - May (dry season). Oct-Nov for buckwheat flowers and golden rice terraces.",
   entranceFee: "Free",

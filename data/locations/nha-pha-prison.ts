@@ -20,7 +20,6 @@ export const nhaPhaPrison: Location = {
     "🇻🇳 Vietnamese Resistance History",
     "french-colonial-era",
   ],
-  bestTime: "Apr - Aug brings stable weather with little rain and plenty of sun; Apr - Jun is peak season, so expect crowds then. Sep - Dec is the rainy, stormy season with rough seas. Within a day, sunrise or sunset from the lighthouse viewing platform gives the best panoramic light over the island",
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - Aug brings stable weather with little rain and plenty of sun; Apr - Jun is peak season, so expect crowds then. Sep - Dec is the rainy, stormy season with rough seas.",
   bestTimeOfDay: "Sunrise or sunset from the lighthouse viewing platform gives the best panoramic light over the island",

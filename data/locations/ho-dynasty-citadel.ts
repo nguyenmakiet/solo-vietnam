@@ -14,7 +14,6 @@ export const hoDynastyCitadel: Location = {
   categories: ["history", "architecture"],
   experiences: ["history", "photography", "walking-tour"],
   tags: ["🏯 UNESCO Heritage", "🪨 Stone Citadel", "👑 14th Century", "🌾 Rural Countryside", "medieval-vietnam"],
-  bestTime: "Nov - Apr is the ideal period - cooler, less rain, and clearer weather. May - Aug is still visitable; go early morning (roughly 7-9 AM) or late afternoon (4-5:30 PM) to avoid the strong heat. Sep - Oct brings unstable weather and heavy rain that can affect the visit",
   bestMonths: [11, 12, 1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Nov - Apr is the ideal period - cooler, less rain, and clearer weather. May - Aug is still visitable; go early morning (roughly 7-9 AM) or late afternoon (4-5:30 PM) to avoid the strong heat. Sep - Oct brings unstable weather and heavy rain that can affect the visit",
   entranceFee: "40,000 VND/adult, 20,000 VND for children aged 8-15 (some sources cite lower rates at secondary gates, so this can vary by entry point - confirm at the ticket booth)",

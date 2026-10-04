@@ -14,7 +14,6 @@ export const minhMangTomb: Location = {
   categories: ["history", "architecture"],
   experiences: ["history", "photography"],
   tags: ["👑 Most Architecturally Grand Tomb", "🌊 Lake & Pavilion Gardens", "nguyen-dynasty"],
-  bestTime: "Jan - Feb (most comfortable weather - ideal). Feb - Apr and Sep - Nov also good (dry season).",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
   bestSeasonNote: "Jan - Feb (most comfortable weather - ideal). Feb - Apr and Sep - Nov also good (dry season).",
   entranceFee: "Adults 150,000 VND / Children (7-12) 30,000 VND",

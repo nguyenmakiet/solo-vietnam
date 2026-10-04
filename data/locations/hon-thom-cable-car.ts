@@ -14,7 +14,6 @@ export const honThomCableCar: Location = {
   categories: ["entertainment"],
   experiences: ["cable-car", "beach", "photography"],
   tags: ["🚡 World's Longest Cable Car", "🏝️ Island", "🌅 Sunset Views", "🌊 Sea Views"],
-  bestTime: "Nov – Apr (clear skies, calm sea). Nov-Dec: catch sunset on the afternoon crossing.",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (clear skies, calm sea). Nov-Dec: catch sunset on the afternoon crossing.",
   entranceFee: "750,000 VND/adult return (includes cable car + Hòn Thơm Nature Park). Buy online for faster entry and potential discounts.",

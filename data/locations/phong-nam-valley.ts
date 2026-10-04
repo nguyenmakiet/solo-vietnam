@@ -14,7 +14,6 @@ export const phongNamValley: Location = {
   categories: ["hidden-gem", "nature"],
   experiences: ["photography", "cycling"],
   tags: ["🌾 Golden Rice Fields", "🏞️ Quây Sơn River", "📸 Drone Photography", "🎎 Tày Villages"],
-  bestTime: "Sep - Oct (rice harvest, golden fields) or Mar - May (spring flowers, cool air, local festivals)",
   bestMonths: [3, 4, 5, 9, 10],
   bestSeasonNote: "Sep - Oct (rice harvest, golden fields) or Mar - May (spring flowers, cool air, local festivals)",
   entranceFee: "Free",

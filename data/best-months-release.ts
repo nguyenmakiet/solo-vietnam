@@ -311,7 +311,7 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "km0-ha-giang": "Seasonal insight: 'Year-round' for the marker itself (owner decision)",
   "mac-dynasty-citadel": "Owner decision (source-reviewed): Jan-Nov; the text is time-of-day only",
   "ho-quoc-pagoda": "Owner decision: Nov-Apr dry season; May-Oct sudden showers is a caveat the owner excludes",
-  // bestTime migration (reports/best-time-migration-mixed.md): the "Year-round." note was dropped because the strip already shows it
+  // Season / time-of-day text migration (reports/best-time-migration-mixed.md): the "Year-round." note was dropped because the strip already shows it
   "bui-vien-street": "Year-round: owner decision, the note only repeated the strip",
   "linh-phuoc-pagoda": "Year-round: owner decision, the note only repeated the strip",
   "long-son-pagoda": "Year-round: owner decision, the note only repeated the strip",

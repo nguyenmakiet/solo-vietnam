@@ -14,7 +14,6 @@ export const saViCape: Location = {
   categories: ["history", "coast"],
   experiences: ["history"],
   tags: ["🇻🇳 Northeast Tip of Vietnam", "🌅 First Sunrise in the North", "📍 Border Marker", "🏖️ Tra Co Beach"],
-  bestTime: "Any time of day works for the landmark itself; sunrise is the most dramatic, since Mũi Sa Vĩ is the first point in northern Vietnam to catch the morning light",
   bestMonths: [4, 5, 6, 7, 8, 9],
   bestTimeOfDay: "Any time of day works for the landmark itself; sunrise is the most dramatic, since Mũi Sa Vĩ is the first point in northern Vietnam to catch the morning light",
   entranceFee: "Free",

@@ -14,7 +14,6 @@ export const phuocHaiFishingVillage: Location = {
   categories: ["food", "culture", "coast"],
   experiences: ["photography", "food", "culture", "beach", "walking-tour", "swimming", "markets"],
   tags: ["🎣 Fishing Village + Beach Combo", "🦪 Oysters & Fresh Seafood", "📸 Sunrise Photography", "🏖️ Weekend Escape from Saigon"],
-  bestTime: "Nov - Apr (dry season, calm sea, warm sun). Avoid Saturday if you want to avoid crowds.",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season, calm sea, warm sun). Avoid Saturday if you want to avoid crowds.",
   entranceFee: "Free. Freshwater rinse after swimming: 15,000 VND/person.",

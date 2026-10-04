@@ -14,7 +14,6 @@ export const namDuIslands: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "camping"],
   tags: ["🏝️ Remote Archipelago", "🌊 Gulf of Thailand", "🐟 Fishing Community"],
-  bestTime: "Nov - May (dry season; calm seas and clear water essential for outer island boat access)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
   bestSeasonNote: "Nov - May (dry season; calm seas and clear water essential for outer island boat access)",
   entranceFee: "Free. Ferry from Rạch Giá: 210,000 VND/person one way",

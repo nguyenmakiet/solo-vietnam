@@ -14,7 +14,6 @@ export const yenMinhTown: Location = {
   categories: [],
   experiences: [],
   tags: [],
-  bestTime: "",
   bestMonths: [],
   entranceFee: "Free",
   openingHours: "Open 24/7",

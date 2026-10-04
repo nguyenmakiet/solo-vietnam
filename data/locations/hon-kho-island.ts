@@ -14,7 +14,6 @@ export const honKhoIsland: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "swimming", "culture"],
   tags: ["🏝️ Day Trip Island", "🐠 Coral Reefs", "📷 Rocky Coastline", "🌊 SUP & Seaweed Season"],
-  bestTime: "Feb - Sep (dry season, calm seas). May - Jul for rong mơ (golden seaweed) season. Feb - Mar lunar calendar for Cầu Ngư festival.",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Feb - Sep (dry season, calm seas). May - Jul for rong mơ (golden seaweed) season. Feb - Mar lunar calendar for Cầu Ngư festival.",
   entranceFee: "80,000 VND/person (from 2025). Boat hire from Nhơn Hải: 200,000 - 300,000 VND return per boat.",

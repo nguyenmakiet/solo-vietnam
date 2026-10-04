@@ -14,7 +14,6 @@ export const saoBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "food", "kayaking", "swimming"],
   tags: ["🏖️ White Sand Beach", "🌊 Clear Water", "🦞 Seafood"],
-  bestTime: "Jun - Oct for the calmest, clearest water (sheltered from the southwest monsoon). Nov-Apr is when most international tourists visit Phú Quốc, but this is actually Bãi Sao's rougher season - waves and debris from the northeast monsoon are common.",
   bestMonths: [6, 7, 8, 9, 10],
   bestSeasonNote: "Jun - Oct for the calmest, clearest water (sheltered from the southwest monsoon). Nov-Apr is when most international tourists visit Phú Quốc, but this is actually Bãi Sao's rougher season - waves and debris from the northeast monsoon are common.",
   entranceFee: "Free if entering via the left fork toward Nhà Hàng Mỹ Lan. 60,000 VND charged if entering via the right fork (Bãi Sao 1 signposted on Google Maps).",

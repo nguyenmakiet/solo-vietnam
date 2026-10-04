@@ -14,7 +14,6 @@ export const honYenIsland: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "boat-tour", "photography", "wildlife", "camping"],
   tags: ["🦞 Lobster Island", "🐠 Coral Snorkelling", "🏝️ Tidal Access", "📷 Hidden Gem"],
-  bestTime: "Mar - Sep (dry season, best conditions). Tidal walk: days 1-15 of lunar month when tide recedes mid-afternoon.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - Sep (dry season, best conditions).",
   bestTimeOfDay: "Tidal walk: days 1-15 of lunar month when tide recedes mid-afternoon.",

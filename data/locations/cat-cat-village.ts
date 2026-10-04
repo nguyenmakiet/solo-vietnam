@@ -14,7 +14,6 @@ export const catCatVillage: Location = {
   categories: ["culture"],
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["💧 Waterfall", "🚶 Walking Trail", "hmong-culture", "french-colonial-era"],
-  bestTime: "Apr - Oct is the ideal window - the climate is mild with less rain, making it easy to get around and explore the village, and many traditional H'Mông festivals take place during this period. Sep - Oct adds golden rice terraces.",
   bestMonths: [4, 5, 6, 7, 8, 9, 10],
   bestSeasonNote: "Apr - Oct is the ideal window - the climate is mild with less rain, making it easy to get around and explore the village, and many traditional H'Mông festivals take place during this period. Sep - Oct adds golden rice terraces.",
   entranceFee: "150,000 VND adult, ~70,000-80,000 VND child (1m-1.4m), free under 1m. Traditional costume rental: 50,000-150,000 VND/outfit.",

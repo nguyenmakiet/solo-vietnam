@@ -14,7 +14,6 @@ export const truongSonNationalCemetery: Location = {
   categories: ["history"],
   experiences: ["history"],
   tags: ["🪦 War Memorial", "🕊️ Ho Chi Minh Trail", "📸 Sobering Visit", "🇻🇳 National Memorial", "vietnam-war"],
-  bestTime: "Mar - Aug is usually the most convenient period for travel and for combining with other nearby sites. On 27 July (War Invalids and Martyrs Day) many groups come to offer incense - a solemn, moving atmosphere, but busier than usual. Within a day, morning gives cooler temperatures and better light for photography",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug is usually the most convenient period for travel and for combining with other nearby sites. On 27 July (War Invalids and Martyrs Day) many groups come to offer incense - a solemn, moving atmosphere, but busier than usual.",
   bestTimeOfDay: "Morning gives cooler temperatures and better light for photography",

@@ -14,7 +14,6 @@ export const lanHaBay: Location = {
   categories: ["nature", "coast"],
   experiences: ["kayaking", "boat-tour", "swimming", "photography", "snorkeling", "rock-climbing"],
   tags: ["🛶 Kayaking", "🌊 Cleaner than Ha Long", "🏖️ Hidden Beaches", "✨ Bioluminescence Night Kayaking", "🧗 Limestone Rock Climbing"],
-  bestTime: "Apr – Jun or Sep – Nov (calm water, best visibility, fewest boats)",
   bestMonths: [4, 5, 6, 9, 10, 11],
   bestSeasonNote: "Apr - Jun or Sep - Nov (calm water, best visibility, fewest boats)",
   entranceFee: "From 120,000 VND/person (children from 60,000 VND)",

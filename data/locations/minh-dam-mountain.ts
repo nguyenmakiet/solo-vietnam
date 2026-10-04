@@ -14,7 +14,6 @@ export const minhDamMountain: Location = {
   categories: ["nature", "history"],
   experiences: ["trekking", "history", "caving", "hiking"],
   tags: ["⛰️ Resistance Base", "🥾 Forest Trek", "🏛️ National Historical Relic", "🐒 Wild Monkeys", "vietnam-war"],
-  bestTime: "Roughly 7-11 AM, when the sun isn't too harsh - afternoons turn overcast and make the caves harder to navigate",
   bestMonths: [11, 12, 1, 2, 3, 4, 5],
   bestTimeOfDay: "Roughly 7-11 AM, when the sun isn't too harsh - afternoons turn overcast and make the caves harder to navigate",
   entranceFee: "Free",

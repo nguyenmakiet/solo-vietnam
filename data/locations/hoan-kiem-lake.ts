@@ -14,7 +14,6 @@ export const hoanKiemLake: Location = {
   categories: ["culture", "history"],
   experiences: ["walking-tour", "culture", "history", "photography", "religious-site-visit"],
   tags: ["🐢 Turtle Lake", "🏙️ Hanoi Heart", "🌅 Morning Walks", "🏯 Ngoc Son Temple"],
-  bestTime: "Aug - Oct (autumn - cool, dry, less harsh sun and rain, and the best scenery for walking around the lake). The weekend pedestrian zone adds the liveliest atmosphere.",
   bestMonths: [8, 9, 10],
   bestSeasonNote: "Aug - Oct (autumn - cool, dry, less harsh sun and rain, and the best scenery for walking around the lake).",
   bestTimeOfDay: "The weekend pedestrian zone adds the liveliest atmosphere.",

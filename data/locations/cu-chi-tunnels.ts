@@ -14,7 +14,6 @@ export const cuChiTunnels: Location = {
   categories: ["history"],
   experiences: ["history"],
   tags: ["🪖 War History", "🕳️ Underground Tunnels", "🌿 Jungle Warfare", "📷 Living Museum", "vietnam-war"],
-  bestTime: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Nov - Apr (dry season; rainy season makes tunnel access muddy and humid)",
   entranceFee: "35,000 VND/person (site entry). Guided tour service: additional 100,000 VND/person. Children under 7: free.",

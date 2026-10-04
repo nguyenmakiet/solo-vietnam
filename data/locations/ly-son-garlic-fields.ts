@@ -19,7 +19,6 @@ export const lySonGarlicFields: Location = {
     "📸 Landscape Photography",
     "🌿 Harvest Season Feb - Mar",
   ],
-  bestTime: "Feb - Mar (harvest season - garlic fully grown, drying scenes everywhere). Nov - Jan for young green fields and tall areca palms.",
   bestMonths: [11, 12, 1, 2, 3],
   bestSeasonNote: "Feb - Mar (harvest season - garlic fully grown, drying scenes everywhere). Nov - Jan for young green fields and tall areca palms.",
   entranceFee: "Free",

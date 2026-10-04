@@ -14,7 +14,6 @@ export const bidoupNuiBaNationalPark: Location = {
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "camping", "hiking"],
   tags: ["🌲 Cloud Forest", "🦅 Birdwatching", "🥾 Multi-day Trek"],
-  bestTime: "Jan - Apr is specifically cited as the most beautiful window (dry, lush vegetation after the winter dormancy); the wider Nov - Apr dry season is also drier than the rest of the year. Avoid Sep - Oct in particular, when trails are heavily overgrown, leeches are most active, and sudden heavy rain is common",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Jan - Apr is specifically cited as the most beautiful window (dry, lush vegetation after the winter dormancy); the wider Nov - Apr dry season is also drier than the rest of the year. Avoid Sep - Oct in particular, when trails are heavily overgrown, leeches are most active, and sudden heavy rain is common",
   entranceFee: "From 40,000 VND park entry; guided treks additional cost",

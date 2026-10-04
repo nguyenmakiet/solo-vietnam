@@ -14,7 +14,6 @@ export const dinhMountain: Location = {
   categories: ["nature", "religion"],
   experiences: ["trekking", "photography", "camping", "swimming", "religious-site-visit", "hiking"],
   tags: ["⛰️ Coastal Peak", "🥾 Summit Trek", "🛕 Multiple Pagodas", "🚁 Former Helicopter Pad", "buddhism"],
-  bestTime: "Start early to beat the midday heat, and to have the best chance of clear summit views before any afternoon haze builds",
   bestMonths: [6, 7, 8, 9, 10, 11],
   bestTimeOfDay: "Start early to beat the midday heat, and to have the best chance of clear summit views before any afternoon haze builds",
   entranceFee: "Free (a parking fee of roughly 10,000-20,000 VND applies at the various trailhead lots)",

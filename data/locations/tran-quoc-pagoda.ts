@@ -14,7 +14,6 @@ export const tranQuocPagoda: Location = {
   categories: ["religion", "history", "architecture"],
   experiences: ["history", "photography", "religious-site-visit"],
   tags: ["🛕 Oldest Pagoda", "🌅 West Lake Views", "🏯 11-Tier Stupa", "📷 Sunset Photography", "buddhism"],
-  bestTime: "Oct - Apr (cool dry season; sunset visits in any season are worthwhile for the West Lake light)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Oct - Apr (cool dry season).",
   bestTimeOfDay: "Sunset visits in any season are worthwhile for the West Lake light.",

@@ -14,7 +14,6 @@ export const nhanTower: Location = {
   categories: ["religion", "history", "architecture"],
   experiences: ["photography", "culture", "history", "religious-site-visit"],
   tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night", "champa-heritage", "hinduism"],
-  bestTime: "Mar - early Sep is ideal - Phú Yên's dry season, with clear skies, plenty of sun, little rain and pleasant conditions for sightseeing. Oct - Feb is the rainy season, cooler and harder for sightseeing. Within a day, roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - early Sep is ideal - Phú Yên's dry season, with clear skies, plenty of sun, little rain and pleasant conditions for sightseeing. Oct - Feb is the rainy season, cooler and harder for sightseeing.",
   bestTimeOfDay: "Roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",

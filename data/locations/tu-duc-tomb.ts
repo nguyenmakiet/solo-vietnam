@@ -14,7 +14,6 @@ export const tuDucTomb: Location = {
   categories: ["history", "architecture"],
   experiences: ["history", "photography"],
   tags: ["🌿 Garden Tomb", "📖 Poet Emperor", "🏡 Pavilion & Lake", "nguyen-dynasty"],
-  bestTime: "Jan - Apr (dry season, mild post-rain weather in Jan-Feb, garden at its best). Avoid Sep - Dec - Huế's rainy season brings prolonged heavy rain that makes the mossy stone paths genuinely slippery.",
   bestMonths: [1, 2, 3, 4],
   bestSeasonNote: "Jan - Apr (dry season, mild post-rain weather in Jan-Feb, garden at its best). Avoid Sep - Dec - Huế's rainy season brings prolonged heavy rain that makes the mossy stone paths genuinely slippery.",
   entranceFee: "150,000 VND adult / 30,000 VND child (7-12). Combo ticket with Khải Định + Minh Mạng tombs available - better value than individual entries.",

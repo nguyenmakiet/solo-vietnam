@@ -14,7 +14,6 @@ export const taDungLake: Location = {
   categories: ["hidden-gem", "nature"],
   experiences: ["kayaking", "boat-tour", "photography", "camping", "wildlife", "trekking"],
   tags: ["⛵ Island-Dotted Lake", "🌲 National Park", "🛶 Kayaking & SUP"],
-  bestTime: "Nov - Apr (dry season, clear skies, blue water - best for photography). Jul - Oct (rainy season, lake at full level, sea of clouds possible at 5-6 AM).",
   bestMonths: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season, clear skies, blue water - best for photography). Jul - Oct (rainy season, lake at full level, sea of clouds possible at 5-6 AM).",
   entranceFee: "~60,000 VND (national park entry). Boat rental: 500,000 - 1,000,000 VND per boat (depending on duration and group size).",

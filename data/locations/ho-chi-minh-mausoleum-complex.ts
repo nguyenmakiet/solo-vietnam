@@ -16,7 +16,6 @@ export const hoChiMinhMausoleumComplex: Location = {
   status: "seasonally-closed",
   statusNote: "The mausoleum itself closes annually for maintenance - for 2026, this closure runs from September 4 through November 2, with the mausoleum reopening on November 3. The surrounding complex (Presidential Palace grounds, stilt house, museum) may have separate hours during this period; confirm current status before planning a visit, since exact closure dates are announced each year and can shift.",
   tags: ["🏛️ National Mausoleum", "🇻🇳 Uncle Ho", "⚓ Ba Dinh Square", "🌿 Presidential Stilt House"],
-  bestTime: "Arrive by 7:30 AM (summer) or 8:00 AM (winter) when the mausoleum opens - queues build quickly, especially on weekends and Vietnamese holidays",
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestTimeOfDay: "Arrive by 7:30 AM (summer) or 8:00 AM (winter) when the mausoleum opens - queues build quickly, especially on weekends and Vietnamese holidays",
   entranceFee: "Free for the mausoleum itself, for both Vietnamese citizens and foreign visitors. The Ho Chi Minh Museum and the stilt house area have separate entrance fees for foreign visitors; check the current rates at each site.",

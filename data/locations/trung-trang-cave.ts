@@ -14,7 +14,6 @@ export const trungTrangCave: Location = {
   categories: ["nature"],
   experiences: ["caving", "trekking"],
   tags: ["🪨 Largest Cave on Cát Bà", "🦇 Bat Colony", "🥾 National Park"],
-  bestTime: "Apr – Sep (dry season, best weather for combining with outdoor activities)",
   bestMonths: [4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Apr - Sep (dry season, best weather for combining with outdoor activities)",
   entranceFee: "120,000 VND adults / 60,000 VND children (includes national park entry - not sold separately)",

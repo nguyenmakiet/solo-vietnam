@@ -14,7 +14,6 @@ export const independencePalace: Location = {
   categories: ["history", "architecture"],
   experiences: ["history"],
   tags: ["🏛️ Fall of Saigon", "🪖 War History", "🏢 1960s Architecture", "🚗 Tank on Lawn", "vietnam-war"],
-  bestTime: "Worth visiting year-round - the main experience is the preserved, air-conditioned interior; Nov - Apr (dry season) makes the outdoor grounds more comfortable",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Worth visiting year-round - the main experience is the preserved, air-conditioned interior; Nov - Apr (dry season) makes the outdoor grounds more comfortable",
   entranceFee: "40,000 VND",

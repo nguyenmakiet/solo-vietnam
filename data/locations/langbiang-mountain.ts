@@ -14,7 +14,6 @@ export const langbiangMountain: Location = {
   categories: ["nature"],
   experiences: ["trekking", "wildlife", "camping", "hiking"],
   tags: ["🏔️ Highest Peak near Đà Lạt", "📸 Sunrise Views", "🌿 K'Ho Culture", "ethnic-minority-culture"],
-  bestTime: "Nov - Mar is the dry season and the most reliable window - cooler, drier trails, and the local mai anh đào (wild Himalayan cherry) blossoms bloom during this stretch. Feb - Mar specifically tends to offer the most ideal trekking temperatures (around 18-22°C, sunny, little rain). Apr - Oct is the rainy season - trails get genuinely muddy, slippery, and buggy (mosquitoes and leeches), and is best avoided for the Núi Bà trek specifically. Start early morning if cloud-hunting at the summit is a priority",
   bestMonths: [11, 12, 1, 2, 3],
   bestSeasonNote: "Nov - Mar is the dry season and the most reliable window - cooler, drier trails, and the local mai anh đào (wild Himalayan cherry) blossoms bloom during this stretch. Feb - Mar specifically tends to offer the most ideal trekking temperatures (around 18-22°C, sunny, little rain). Apr - Oct is the rainy season - trails get genuinely muddy, slippery, and buggy (mosquitoes and leeches), and is best avoided for the Núi Bà trek specifically.",
   bestTimeOfDay: "Start early morning if cloud-hunting at the summit is a priority",

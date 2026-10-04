@@ -14,7 +14,6 @@ export const sunworldBeachCatBa: Location = {
   categories: ["coast", "entertainment"],
   experiences: ["beach", "nightlife", "kayaking", "swimming"],
   tags: ["🏖️ Artificial Beach", "🌴 Beach Club", "🎆 Fireworks Shows", "🌊 Cat Ba Town"],
-  bestTime: "Late afternoon into evening (staying until around 10 PM) is when the beach club, dining, and any scheduled shows come alive; daytime is quieter and better for swimming before the heat peaks",
   bestMonths: [4, 5, 6, 7, 8, 9],
   bestTimeOfDay: "Late afternoon into evening (staying until around 10 PM) is when the beach club, dining, and any scheduled shows come alive; daytime is quieter and better for swimming before the heat peaks",
   entranceFee: "Free beach access for swimming and sand. The fireworks/jet-ski show and similar evening spectacles are separately ticketed with tiered pricing (standing tickets roughly 350,000-650,000 VND, seated tickets roughly 550,000-1,000,000 VND, per recent 2026 pricing) - this is a proper ticketed show, not a casual free bonus. Some beach club seating and dining areas may also have a minimum spend",

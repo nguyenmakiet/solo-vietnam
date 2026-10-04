@@ -20,7 +20,6 @@ export const thoiLoiMountain: Location = {
     "🌅 Sunrise Viewpoint",
     "east-sea-sovereignty",
   ],
-  bestTime: "Mar - Aug is the ideal period - the dry season, with clear skies and calm seas for outdoor activities and the boat crossing to the island, and Lý Sơn at its most vivid with blue skies and bright garlic and onion fields. Within a day, roughly 5:00-6:30 AM for sunrise, or 5:00-6:00 PM for sunset - both are considered the best light of day",
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug is the ideal period - the dry season, with clear skies and calm seas for outdoor activities and the boat crossing to the island, and Lý Sơn at its most vivid with blue skies and bright garlic and onion fields.",
   bestTimeOfDay: "Roughly 5:00-6:30 AM for sunrise, or 5:00-6:00 PM for sunset - both are considered the best light of day",

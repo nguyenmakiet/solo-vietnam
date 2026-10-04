@@ -14,7 +14,6 @@ export const longSonPagoda: Location = {
   categories: ["religion"],
   experiences: ["history", "religious-site-visit"],
   tags: ["⛩️ White Buddha", "🏔️ Hilltop Statue", "🕌 Active Pagoda", "buddhism"],
-  bestTime: "Year-round; early morning for quietest atmosphere",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Early morning for quietest atmosphere",
   entranceFee: "Free",

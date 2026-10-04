@@ -14,7 +14,6 @@ export const cuMiBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "swimming", "photography", "motorcycling"],
   tags: ["🏖️ Undeveloped Beach", "🌊 Fishing Village", "🏍️ Motorbike Route"],
-  bestTime: "Oct - Apr (dry season, calm water). Within a day, early morning (5:30-7:00 AM) is best - fishermen bring the day's catch in from the sea, the light is soft, and the sun isn't yet harsh. Late afternoon (4:30-6:00 PM) is the other good window, also cooler. The beach's lack of light pollution also makes it a decent spot for stargazing or Milky Way photography after dark",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (dry season, calm water).",
   bestTimeOfDay: "Early morning (5:30-7:00 AM) is best - fishermen bring the day's catch in from the sea, the light is soft, and the sun isn't yet harsh. Late afternoon (4:30-6:00 PM) is the other good window, also cooler. The beach's lack of light pollution also makes it a decent spot for stargazing or Milky Way photography after dark",

@@ -14,7 +14,6 @@ export const haLongBay: Location = {
   categories: ["nature", "coast"],
   experiences: ["boat-tour", "kayaking", "caving", "photography", "beach"],
   tags: ["🌊 UNESCO World Heritage", "🚢 Overnight Cruise", "🪨 Karst Landscape"],
-  bestTime: "Sep – Nov (clear skies, calm water, best visibility) or Mar – Apr. Avoid Jun-Aug for crowds and afternoon storms.",
   bestMonths: [3, 4, 9, 10, 11],
   bestSeasonNote: "Sep - Nov (clear skies, calm water, best visibility) or Mar - Apr. Avoid Jun-Aug for crowds and afternoon storms.",
   entranceFee: "Bay entry ticket: 310,000 VND/person (adults). Free for children under 1.2m. Ticket is separate from and in addition to cruise/boat costs.",

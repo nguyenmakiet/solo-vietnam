@@ -14,7 +14,6 @@ export const angelEyeMountain: Location = {
   categories: ["nature"],
   experiences: ["photography", "camping", "trekking", "motorcycling", "hiking"],
   tags: ["👁️ 50m Natural Rock Hole", "🌿 Thang Hen Valley"],
-  bestTime: "Sep - Oct (golden rice fields, pleasant weather, and the rare chance to witness Thang Hen Lake temporarily draining within hours as water disappears into the karst beneath); Nov - Apr (dry season; meadow, grazing livestock, and clearer skies); Apr - Sep (rainy season; the valley floods into a lake for kayaking, SUP, and the nearby Nậm Trá Waterfall at its fullest)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Sep - Oct (golden rice fields, pleasant weather, and the rare chance to witness Thang Hen Lake temporarily draining within hours as water disappears into the karst beneath); Nov - Apr (dry season; meadow, grazing livestock, and clearer skies); Apr - Sep (rainy season; the valley floods into a lake for kayaking, SUP, and the nearby Nậm Trá Waterfall at its fullest)",
   entranceFee: "Free; camping service fees apply if using local providers (around US$30/person)",

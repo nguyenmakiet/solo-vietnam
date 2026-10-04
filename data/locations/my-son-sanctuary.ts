@@ -14,7 +14,6 @@ export const mySonSanctuary: Location = {
   categories: ["history", "architecture", "culture"],
   experiences: ["history", "culture", "walking-tour", "museum-visit"],
   tags: ["🏛️ UNESCO Heritage", "🛕 Cham Temples", "🌿 Jungle Ruins", "champa-heritage", "hinduism"],
-  bestTime: "Feb – Aug (dry season; the site floods and paths become muddy in the Oct – Jan wet season)",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Feb - Aug (dry season; the site floods and paths become muddy in the Oct - Jan wet season)",
   entranceFee: "150,000 VND adults (international). Children 5-15: 50,000 VND. Under 5: free. Audio guide: 70,000 VND - recommended.",

@@ -14,7 +14,6 @@ export const kyCoBeach: Location = {
   categories: ["nature", "coast"],
   experiences: ["beach", "snorkeling", "photography", "boat-tour", "camping", "swimming"],
   tags: ["🏖️ Hidden Beach", "💎 Turquoise Water"],
-  bestTime: "Apr - late Sep (summer and early autumn; best conditions around Sep 2 national holiday)",
   bestMonths: [4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Apr - late Sep (summer and early autumn; best conditions around Sep 2 national holiday)",
   entranceFee: "120,000 VND adults / 50,000 VND children. Electric cart: 50,000 VND. Speedboat from Nhơn Lý: additional fee.",

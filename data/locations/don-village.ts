@@ -14,7 +14,6 @@ export const donVillage: Location = {
   categories: ["culture", "nature"],
   experiences: ["culture", "photography", "walking-tour", "cycling", "homestay", "trekking"],
   tags: ["🌾 Rice Terraces", "🏠 Thai Stilt Houses", "🛏️ Homestay Hub", "thai-culture"],
-  bestTime: "Sunrise for mist in the valley and the clearest light on the terraces; late afternoon for softer photography light",
   bestMonths: [5, 6, 9, 10],
   bestTimeOfDay: "Sunrise for mist in the valley and the clearest light on the terraces; late afternoon for softer photography light",
   entranceFee: "Free",

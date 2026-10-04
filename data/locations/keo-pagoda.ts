@@ -14,7 +14,6 @@ export const keoPagoda: Location = {
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "culture", "photography", "religious-site-visit"],
   tags: ["🛕 17th-Century Pagoda", "🏛️ National Relic", "📸 Architecture", "🌾 Red River Delta", "buddhism", "folk-religion", "early-modern-vietnam"],
-  bestTime: "Feb - Apr (spring festival season, dry weather); mid-Sep to early-Oct (lunar month 9) for the larger autumn festival",
   bestMonths: [2, 3, 4, 9, 10],
   bestSeasonNote: "Feb - Apr (spring festival season, dry weather); mid-Sep to early-Oct (lunar month 9) for the larger autumn festival",
   entranceFee: "Free (donations accepted)",

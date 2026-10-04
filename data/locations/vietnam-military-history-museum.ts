@@ -14,7 +14,6 @@ export const vietnamMilitaryHistoryMuseum: Location = {
   categories: ["history"],
   experiences: ["history", "museum-visit"],
   tags: ["🪖 Military History", "🏛️ National Museum", "🇻🇳 Vietnamese History", "vietnam-war"],
-  bestTime: "Year-round. Mornings on weekdays for smaller crowds.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Mornings on weekdays for smaller crowds.",
   entranceFee: "40,000 VND per person (from April 12, 2025). Free for under 16, over 80, and war veterans",

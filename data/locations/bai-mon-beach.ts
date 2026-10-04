@@ -14,7 +14,6 @@ export const baiMonBeach: Location = {
   categories: ["hidden-gem", "nature", "coast"],
   experiences: ["beach", "trekking", "camping", "hiking", "swimming"],
   tags: ["🌅 First Sunrise", "🏖️ Secluded Beach", "🏔️ Cape Walk"],
-  bestTime: "Jan - Aug (dry season, clear skies for sunrise and swimming)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Jan - Aug (dry season, clear skies for sunrise and swimming)",
   entranceFee: "30,000 VND",

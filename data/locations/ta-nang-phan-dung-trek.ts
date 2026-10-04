@@ -14,7 +14,6 @@ export const taNangPhanDungTrek: Location = {
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography", "wildlife"],
   tags: ["🥾 Multi-day Trek", "🌄 Highland to Coast"],
-  bestTime: "Late Jan - early Mar (golden grass, dry, not too hot). Aug - Oct for green grasslands (rainy season - monitor weather carefully).",
   bestMonths: [1, 2, 3, 8, 9, 10],
   bestSeasonNote: "Late Jan - early Mar (golden grass, dry, not too hot). Aug - Oct for green grasslands (rainy season - monitor weather carefully).",
   entranceFee: "Free (tour packages typically 1,500,000 - 3,000,000 VND/person for 2N1D with guide, porter, meals)",

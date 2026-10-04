@@ -14,7 +14,6 @@ export const chuaChanMountain: Location = {
   categories: ["nature", "religion"],
   experiences: ["trekking", "photography", "camping", "cable-car", "religious-site-visit", "hiking"],
   tags: ["⛰️ Southern Peak", "🚡 Cable Car & Summit Trek", "🛕 Cave Pagoda", "buddhism"],
-  bestTime: "Nov - Apr (dry season; wet season trails are muddy and slippery)",
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season; wet season trails are muddy and slippery)",
   entranceFee: "Free to enter the mountain itself. The cable car to Bửu Quang Pagoda is a separate paid ticket - reported round-trip adult prices have ranged from roughly 160,000 to 200,000 VND depending on the year, with reduced child pricing. Check current rates locally, since they change fairly often",

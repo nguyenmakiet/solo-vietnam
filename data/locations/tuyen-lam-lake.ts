@@ -14,7 +14,6 @@ export const tuyenLamLake: Location = {
   categories: ["nature"],
   experiences: ["kayaking", "cycling", "photography", "boat-tour", "camping", "cable-car"],
   tags: ["🚣 Kayaking", "🌲 Pine Forest"],
-  bestTime: "Nov - May/Jun (dry season, calmest water and clearest skies); morning mist is most common between about 4:30 and 6:30 AM, particularly on calm mornings, though it doesn't appear every day. Jul-Oct rainy season makes the Prenn Pass road route slippery and foggy - stick to the Triệu Việt Vương route in that window if self-driving",
   bestMonths: [1, 2, 3, 4, 5, 6, 11, 12],
   bestSeasonNote: "Nov - May/Jun (dry season, calmest water and clearest skies); Jul-Oct rainy season makes the Prenn Pass road route slippery and foggy - stick to the Triệu Việt Vương route in that window if self-driving",
   bestTimeOfDay: "Morning mist is most common between about 4:30 and 6:30 AM, particularly on calm mornings, though it doesn't appear every day.",

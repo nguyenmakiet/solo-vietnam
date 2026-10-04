@@ -14,7 +14,6 @@ export const tacSayChurch: Location = {
   categories: ["religion", "history"],
   experiences: ["history", "culture", "religious-site-visit"],
   tags: ["⛪ Martyr Shrine", "🙏 Pilgrimage Site", "🌾 Mekong Delta", "✨ Miraculous Healings", "catholicism"],
-  bestTime: "Year-round; the anniversary of Father Diệp's death (11-12 March on the solar calendar) draws the largest annual pilgrimage. Visit outside 9:00-11:00 AM and 2:00-4:00 PM if possible, when the midday sun is harshest",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round; the anniversary of Father Diệp's death (11-12 March on the solar calendar) draws the largest annual pilgrimage.",
   bestTimeOfDay: "Visit outside 9:00-11:00 AM and 2:00-4:00 PM if possible, when the midday sun is harshest",

@@ -14,7 +14,6 @@ export const vietHaiVillage: Location = {
   categories: ["culture", "nature"],
   experiences: ["cycling", "culture", "photography", "homestay", "boat-tour", "trekking"],
   tags: ["🚲 Jungle Cycling", "🏡 Isolated Fishing Village", "🌾 Rice Fields", "🛶 Kayak Access"],
-  bestTime: "Feb–Mar (spring fog, cool air) or Jun (rice harvest, lush scenery); Oct–Dec is quieter with good conditions. Avoid Jul–Aug when rough seas can prevent boat access.",
   bestMonths: [2, 3, 6, 10, 11, 12],
   bestSeasonNote: "Feb-Mar (spring fog, cool air) or Jun (rice harvest, lush scenery); Oct-Dec is quieter with good conditions. Avoid Jul-Aug when rough seas can prevent boat access.",
   entranceFee: "Free to enter village. Boat from Bến Bèo: 50,000 VND/person. National park entry (trekking route): 160,000 VND.",

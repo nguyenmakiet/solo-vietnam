@@ -14,7 +14,6 @@ export const b52Wreck: Location = {
   categories: ["history"],
   experiences: ["history"],
   tags: ["✈️ B52 Wreckage", "🏛️ War History", "📷 Hidden Alley", "🇻🇳 Christmas Bombing 1972", "vietnam-war"],
-  bestTime: "Year-round - covered site; morning light is better for photography",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round - covered site.",
   bestTimeOfDay: "Morning light is better for photography",

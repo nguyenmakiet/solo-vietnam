@@ -14,7 +14,6 @@ export const quanBaHeavenGate: Location = {
   categories: ["nature"],
   experiences: ["motorcycling", "photography", "trekking"],
   tags: ["🌄 Ha Giang Loop Gateway", "📸 Panoramic Views", "🏍️ Gateway to the Karst Plateau", "☁️ Cloud Valley"],
-  bestTime: "6-9 AM gives the best odds of the cloud sea and sunrise light; if fog is heavy that morning, waiting until it burns off (later morning, closer to midday) can actually give clearer general views of the valley instead",
   bestMonths: [8, 9, 10, 11, 12, 1, 2, 3, 4],
   bestTimeOfDay: "6-9 AM gives the best odds of the cloud sea and sunrise light; if fog is heavy that morning, waiting until it burns off (later morning, closer to midday) can actually give clearer general views of the valley instead",
   entranceFee: "Free",

@@ -14,7 +14,6 @@ export const hieuWaterfall: Location = {
   categories: ["nature"],
   experiences: ["photography", "swimming"],
   tags: ["💧 Multi-tier Waterfall", "🏊 Swimming Pools", "🌿 Forest Setting"],
-  bestTime: "Jun – Oct (peak water flow, golden rice terraces in surrounding fields)",
   bestMonths: [6, 7, 8, 9, 10],
   bestSeasonNote: "Jun - Oct (peak water flow, golden rice terraces in surrounding fields)",
   entranceFee: "~10,000 - 20,000 VND (collected by village) + 5,000 VND motorbike parking",

@@ -14,7 +14,6 @@ export const notreDameCathedralSaigon: Location = {
   categories: ["religion", "architecture", "history"],
   experiences: ["history", "photography", "religious-site-visit"],
   tags: ["⛪ French Colonial Icon", "🏛️ 19th Century", "📷 District 1 Landmark", "🧱 Red Brick Facade", "catholicism", "french-colonial-era", "french-architecture"],
-  bestTime: "Year-round for the exterior and the square (the interior is closed for restoration); Nov - Apr (dry season) is the most comfortable, since rain makes the open square unpleasant. December for Christmas lights and decorations.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round for the exterior and the square (the interior is closed for restoration); Nov - Apr (dry season) is the most comfortable, since rain makes the open square unpleasant. December for Christmas lights and decorations.",
   entranceFee: "Free (exterior only; interior closed for restoration since 1 July 2017)",

@@ -22,7 +22,6 @@ export const ducPagoda: Location = {
     "🧗 139 Stone Steps",
     "buddhism",
   ],
-  bestTime: "Morning for cooler temperatures on the climb",
   bestMonths: [4, 5, 6, 7, 8],
   bestTimeOfDay: "Morning for cooler temperatures on the climb",
   entranceFee: "Free",

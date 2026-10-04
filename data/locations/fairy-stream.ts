@@ -14,7 +14,6 @@ export const fairyStream: Location = {
   categories: ["nature"],
   experiences: ["walking-tour", "photography"],
   tags: ["🏞️ Wading Stream", "🔴 Red Canyon Walls", "🚶 Wading Walk"],
-  bestTime: "Roughly 6:30-9:00 AM for the coolest air and fewest crowds, or 2:30-5:30 PM as the light softens and brings out the red sandstone colour more vividly - both are better than the harsh midday sun reflecting off the canyon walls",
   bestMonths: [3, 11],
   bestTimeOfDay: "Roughly 6:30-9:00 AM for the coolest air and fewest crowds, or 2:30-5:30 PM as the light softens and brings out the red sandstone colour more vividly - both are better than the harsh midday sun reflecting off the canyon walls",
   entranceFee: "Historically 15,000 VND/adult and 6,000-7,000 VND/child at the main gate, though recent reports suggest entry may now be free - confirm current pricing on arrival. Either way, ignore anyone charging around 50,000 VND for an unofficial 'zoo ticket' elsewhere along the stream, as this isn't a legitimate fee. Parking runs around 40,000 VND for a car.",

@@ -14,7 +14,6 @@ export const sonDoongCave: Location = {
   categories: ["nature"],
   experiences: ["caving", "trekking", "camping", "photography"],
   tags: ["🏆 World's Largest Cave", "🏕️ Overnight Expedition"],
-  bestTime: "Jan - Aug (expedition season; cave closed Sep - Dec)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Jan - Aug (expedition season; cave closed Sep - Dec)",
   entranceFee: "~3,000 USD/person (6-day expedition, all-inclusive, via Oxalis Adventure only) — price increase to 15,000 USD under discussion",
