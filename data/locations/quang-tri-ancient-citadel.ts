@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quangTriAncientCitadel: Location = {
   slug: "quang-tri-ancient-citadel",
   name: "Quảng Trị Ancient Citadel",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-tri"],
   destination: "",
   lat: 16.753698503710048,
@@ -14,8 +14,8 @@ export const quangTriAncientCitadel: Location = {
   categories: ["history"],
   experiences: ["history", "museum-visit"],
   tags: ["🏛️ War Citadel", "🕊️ 1972 Battle", "🌿 Sacred Ground", "vietnam-war"],
-  bestTime: "Dec - May (after Tết through spring is often cited as the most comfortable window; dry season overall runs roughly Feb - Aug, avoiding both the hot, dry 'gió Lào' winds of early-mid summer and the flooding that affects the area Sep - Nov)",
-  bestMonths: [12, 1, 2, 3, 4, 5, 6, 7, 8],
+  bestTime: "Dec - May is the most comfortable period to visit (after Tết through spring). Early-mid summer brings hot, dry 'gió Lào' winds, and Sep - Nov carries a risk of flooding in the area",
+  bestMonths: [12, 1, 2, 3, 4, 5],
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=16.753698503710048,107.18981719454122",
@@ -63,7 +63,7 @@ export const quangTriAncientCitadel: Location = {
       difficulty: null,
       safety: null,
       accessibility: null,
-      seasonal: null,
+      seasonal: "Dec-May is the most comfortable window; early-mid summer brings hot, dry gió Lào winds, and Sep-Nov carries a risk of flooding",
     },
     visitorTips: [
       "Hire a tour guide to better understand the historical significance and detailed context of the site",

@@ -144,6 +144,7 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 - **Exclude seasons that are worth seeing but dangerous** (e.g. a waterfall at its strongest in the rainy season while the trail becomes muddy and dangerous). Keep them out of `bestMonths` and describe them in the season text instead - see `datanla-waterfall`, `phi-lieng-waterfall`.
 - A month mentioned in passing is not a recommendation: conditionals ("if visiting in summer...") and facility statements ("open year-round", "air-conditioned year-round") do not add months.
 - Never guess months. If the content does not support them, flag `// TODO: verify`.
+- Locations with a non-active `status` (`closed`, `unverified`, `temporarily-closed`, `seasonally-closed`) do not get the Best Months strip; `npm run audit:best-time -- --released` rejects them in `data/best-months-release.ts`.
 - Check consistency with `npm run audit:best-time` (report: `reports/best-time-audit.md`).
 - AI insights generated via Outscraper pipeline: max 30 reviews/location, min 30 words/review, prioritizing 3-4 star ratings
 - **Anti-hallucination rule**: if data is uncertain, leave field empty or flag with `// TODO: verify` - never fabricate

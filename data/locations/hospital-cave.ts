@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hospitalCave: Location = {
   slug: "hospital-cave",
   name: "Hospital Cave",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.77004838620462",
@@ -16,7 +16,7 @@ export const hospitalCave: Location = {
   status: "temporarily-closed",
   statusNote: "As of 2026, both entrances to Hospital Cave are gated and closed to the public, and the interior is no longer accessible for visits.",
   tags: ["🏥 Wartime Underground Hospital", "vietnam-war", "🪨 Limestone Cave"],
-  bestTime: "Year-round (exterior only, 10-15 minutes - or skip entirely)",
+  bestTime: "Year-round (exterior only, 10-15 minutes)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Accessible anytime (exterior only - both entrances closed as of 2026)",

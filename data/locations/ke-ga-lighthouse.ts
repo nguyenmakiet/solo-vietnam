@@ -14,7 +14,7 @@ export const keGaLighthouse: Location = {
   categories: ["history", "coast"],
   experiences: ["photography", "boat-tour", "beach", "snorkeling"],
   tags: ["🏛️ Colonial Lighthouse", "🚣 Boat Crossing", "🏝️ Rocky Islet", "french-colonial-era"],
-  bestTime: "The best periods are Feb - Jul and Sep - Jan. Nov - Apr has the calmest seas and clearest water; May - Jul is hot with strong midday sun; Sep - Oct brings occasional rain showers, so it's worth checking the forecast before heading out in that window. March specifically has the lowest tides of the year, occasionally low enough to walk across the exposed reef to the island",
+  bestTime: "The best periods are Feb - Jul and Sep - Jan. Nov - Apr has the calmest seas and clearest water; May - Jul is hot with strong midday sun; Sep - Oct brings occasional rain showers, so it's worth checking the forecast before heading out in that window. Rough conditions during the rainy season (roughly May - Oct) can suspend the boat crossing on some days - check local conditions before you go. March specifically has the lowest tides of the year, occasionally low enough to walk across the exposed reef to the island",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12],
   entranceFee: "No standard entrance fee is generally charged for the lighthouse; the main cost is the boat crossing from the mainland, typically around 50,000-100,000 VND per person round trip, though prices are negotiable and can vary by season and group size",
   openingHours: "7:30 AM - 5:30 PM",
@@ -67,7 +67,7 @@ export const keGaLighthouse: Location = {
       difficulty: "When accessible, the climb to the top is a genuine physical effort - around 183 steps with no lift - though manageable for most visitors at a comfortable pace with a few pauses. Access to the top itself isn't always guaranteed and can depend on border guard or station permission",
       safety: "The tower and staircase are open to the public and well-maintained; take care on the rocky shoreline of the islet, which can be slippery near the waterline",
       accessibility: "Located on an island a short boat ride from shore; requires a boat to access, and some scrambling over rocks on the islet itself. The spiral staircase to the top isn't accessible for visitors with mobility limitations",
-      seasonal: "Best in the dry season (Nov-Apr) when the sea is calm; rough conditions in the rainy season (May-Oct) can suspend boat crossings entirely",
+      seasonal: "Calmest seas in the dry season (Nov-Apr); during the rainy season (roughly May-Oct), rough conditions can suspend boat crossings on some days, so check local conditions before going",
     },
     visitorTips: [
       "Take a boat in the late afternoon to catch sunset views from the islet or the mainland shore before returning",

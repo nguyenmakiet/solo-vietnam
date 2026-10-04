@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const canGioBeach: Location = {
   slug: "can-gio-beach",
   name: "Cần Giờ Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.388709041475133,
@@ -13,6 +13,8 @@ export const canGioBeach: Location = {
   type: ["beach"],
   categories: ["food", "coast"],
   experiences: ["beach", "swimming", "food"],
+  status: "temporarily-closed",
+  statusNote: "The main beach (Bãi biển 30/4) has been fenced off since 2025 for a land reclamation and resort construction project, expected to run until around 2029-2030. Nearby spots such as the old ferry pier (Bến Đò Cũ) in Cần Thạnh offer sea views and, in some cases, swimming.",
   tags: ["🏖️ Saigon's Own Beach", "🦀 Seafood", "🌊 Day Trip from HCMC", "🌿 Mangrove Coast"],
   bestTime: "Nov - Apr (dry season; calmer water and better beach conditions), though locals swim right through the warmer months too - just be aware August specifically sees a higher chance of storms making landfall in this area",
   bestMonths: [1, 2, 3, 4, 11, 12],

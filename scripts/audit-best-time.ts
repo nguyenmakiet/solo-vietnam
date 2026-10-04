@@ -288,7 +288,7 @@ if (mdIndex !== -1) {
 }
 
 // Release gate: every slug in data/best-months-release.ts must be public,
-// displayable, have a valid bestMonths and be SAFE (or carry a reviewed override)
+// active (not closed / unverified / temporarily- or seasonally-closed), have a valid bestMonths and be SAFE (or carry a reviewed override)
 if (process.argv.includes("--released")) {
   const failures: string[] = []
   const bySlug = new Map(rows.map((r) => [r.slug, r]))
@@ -299,7 +299,8 @@ if (process.argv.includes("--released")) {
       const fail = (msg: string) => failures.push(`${batch} ${slug}: ${msg}`)
       if (!loc) { fail("not in allLocations"); continue }
       if (!row) { fail("not a public location"); continue }
-      if (loc.status === "closed" || loc.status === "unverified") fail(`status is ${loc.status}`)
+      // Non-active locations never get the month strip
+      if (loc.status && ["closed", "unverified", "temporarily-closed", "seasonally-closed"].includes(loc.status)) fail(`status is ${loc.status}`)
       if (row.group === "EMPTY") fail("bestMonths is empty")
       if (row.bestMonths.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) fail("bestMonths has a value outside 1-12")
       if (new Set(row.bestMonths).size !== row.bestMonths.length) fail("bestMonths has duplicates")

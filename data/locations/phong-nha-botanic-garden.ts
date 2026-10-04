@@ -53,7 +53,7 @@ export const phongNhaBotanicGarden: Location = {
       difficulty: "Easy to moderate jungle walk; steep and slippery sections near the waterfall; rock scrambling with ropes; the rocky descent to the waterfall base can be challenging",
       safety: "Trail is well-marked with clear signage; some visitors have slipped on wet rocks near the waterfall; snakes are present but rare and not encountered casually; bring insect repellent for mosquitoes",
       accessibility: "Not suitable for visitors with limited mobility; rocky terrain, uneven paths, and steep sections; rope assistance provided on the more difficult parts",
-      seasonal: "Best visited April-June when water flows most abundantly; can be hot and humid; paths become slippery after rain",
+      seasonal: "Mar-Aug: clearer water and safer trekking, with the pools suited to swimming; can be hot and humid. Sep-Feb: fuller, more dramatic waterfall and a greener, mistier forest, but wetter, slippery trails, higher, faster and murkier streams that are not suitable for swimming, and more active leeches",
     },
     visitorTips: [
       "Wear sturdy waterproof shoes, or be prepared to remove them at water crossings; bring insect repellent for mosquitoes",

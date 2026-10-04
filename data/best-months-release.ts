@@ -185,6 +185,10 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "west-lake",
     "white-sand-dunes",
   ],
+  "batch-2c": [
+    "jade-emperor-pagoda",
+    "quang-tri-ancient-citadel",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -210,6 +214,8 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "cat-tien-national-park": "Owner decision: Jun-Oct wording ('harder', leeches) not strong enough to add",
   "french-village-ba-na": "Owner decision: Oct-Feb fog and cold is a caveat; Mar-Sep is the ideal period",
   "white-sand-dunes": "Sep-Dec is described as the rainy season, when wet sand loses its white look",
+  // batch-2c (reports/best-months-post-2b-review.md)
+  "quang-tri-ancient-citadel": "Sep-Nov is mentioned only as flooding risk; Dec-May is the recommended period",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
