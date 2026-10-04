@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const km0HaGiang: Location = {
   slug: "km0-ha-giang",
   name: "Km 0 Milestone — Hà Giang",
-  updatedAt: "2026-09-22",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 22.827448496788932,
@@ -15,7 +15,7 @@ export const km0HaGiang: Location = {
   experiences: ["photography", "motorcycling"],
   tags: ["📍 Km 0 Marker", "🏍️ Ha Giang Loop Start", "📷 Check-in Spot", "🏔️ Gateway to the Plateau"],
   bestTime: "Roughly 6-8 AM, before setting off north toward Đồng Văn",
-  bestMonths: [1, 2, 3, 4, 9, 10, 11, 12],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=22.827448496788932,104.98418992590295",

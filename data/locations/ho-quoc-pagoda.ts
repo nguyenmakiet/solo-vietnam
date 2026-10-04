@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoQuocPagoda: Location = {
   slug: "ho-quoc-pagoda",
   name: "Hộ Quốc Pagoda",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: 10.110135026513962,
@@ -14,7 +14,7 @@ export const hoQuocPagoda: Location = {
   categories: ["religion", "architecture", "coast"],
   experiences: ["history", "religious-site-visit"],
   tags: ["🛕 Largest Pagoda on Phú Quốc", "🏔️ Mountain-Backed, Sea-Facing", "🧘 Peaceful", "buddhism"],
-  bestTime: "Roughly 5:45-6:15 AM for sunrise over the Gulf of Thailand lighting up the courtyard and jade statue, or 6-8 AM more broadly for good photo light while avoiding tour groups (which tend to arrive 9:30-11 AM); after 4 PM also works well to avoid the harshest sun",
+  bestTime: "Nov - Apr (dry season) is cool with little rain, convenient for getting around and sightseeing; May - Oct (rainy season) brings lush greenery but sudden showers, so bring an umbrella. Within a day, roughly 5:45-6:15 AM for sunrise over the Gulf of Thailand lighting up the courtyard and jade statue, or 6-8 AM more broadly for good photo light while avoiding tour groups (which tend to arrive 9:30-11 AM); after 4 PM also works well to avoid the harshest sun",
   bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Free (free parking also available)",
   openingHours: "6:00 AM – 6:00 PM",
@@ -58,7 +58,7 @@ export const hoQuocPagoda: Location = {
       difficulty: "Multiple staircases throughout the temple grounds. The access road is curvy but well-paved. Not easily accessible for those with significant mobility challenges.",
       safety: null,
       accessibility: "Free entry and parking. Open 6 AM to 6 PM. Shoes must be removed inside the temple halls. Free loaner robes are available for those wearing shorts.",
-      seasonal: "Can be hot and humid during the day, especially in summer, with limited wind flow in places due to tree cover. Early morning visits are cooler and better for photography.",
+      seasonal: "Nov-Apr (dry season): cool, little rain, easy sightseeing. May-Oct (rainy season): lush greenery but sudden showers - bring an umbrella. Can be hot and humid during the day, especially in summer, with limited wind flow in places due to tree cover. Early morning visits are cooler and better for photography.",
     },
     visitorTips: [
       "Arrive before 7 AM to avoid tour buses and enjoy a calmer atmosphere",

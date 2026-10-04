@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const elephantMountain: Location = {
   slug: "elephant-mountain",
   name: "Elephant Mountain",
-  updatedAt: "2026-09-14",
+  updatedAt: "2026-10-04",
   provinces: ["dak-lak"],
   destination: "",
   lat: 12.481628765573047,
@@ -14,7 +14,7 @@ export const elephantMountain: Location = {
   categories: ["nature"],
   experiences: ["photography"],
   tags: ["🪨 Vietnam's Largest Granite Monolith", "🐘 Elephant-Shaped Rock", "🥾 Short Climb", "☕ Coffee Country"],
-  bestTime: "Roughly 6:20-9:00 AM is cool with soft light and the easiest climbing conditions; late afternoon (around 4:00-6:00 PM) brings golden-hour light and sunset views from the summit. Avoid 11:00 AM-2:00 PM, when the sun is harsh and the rock surface gets uncomfortably hot underfoot",
+  bestTime: "Nov - Apr (dry season) is the best period - dry with little rain, good for climbing and exploring. March adds white coffee blossoms across Đắk Lắk on the drive out, and the rice harvest turns the fields at the base of the rock gold, often considered the most beautiful time of year. May - Oct is lush and green, but the rock gets slippery and unsafe to climb. Within a day, roughly 6:20-9:00 AM is cool with soft light and the easiest climbing conditions; late afternoon (around 4:00-6:00 PM) brings golden-hour light and sunset views from the summit. Avoid 11:00 AM-2:00 PM, when the sun is harsh and the rock surface gets uncomfortably hot underfoot",
   bestMonths: [1, 2, 3, 4, 11, 12],
   entranceFee: "Historically free to visit, though some more recent accounts describe a ticket (roughly 50,000-60,000 VND, including a complimentary homemade drink) - confirm current pricing locally, since sources disagree on whether this is now a paid site",
   openingHours: "Open daily",
@@ -63,7 +63,7 @@ export const elephantMountain: Location = {
       difficulty: "The granite surface is steep in places and requires careful footing, especially when wet. The descent is more challenging than the ascent. Manageable for children with supervision.",
       safety: "Sources disagree on how family-friendly the climb really is: some describe it as manageable for young children with hand-holding, while others explicitly advise against it for elderly visitors, young children, and anyone afraid of heights, citing the rock's smooth surface, very few handholds, and genuine risk of being blown off balance in strong wind. Treat the more cautious framing as the safer default, especially on windy days.",
       accessibility: "Some sources describe it as manageable for children as young as 3-5 with adult assistance, though others advise against bringing young children, elderly visitors, or anyone uneasy with heights, given the exposed, low-grip surface. Not wheelchair accessible.",
-      seasonal: "Best visited in the morning or evening to avoid intense midday heat. Not recommended on rainy days, when the granite surface becomes slippery and genuinely hazardous.",
+      seasonal: "Nov-Apr dry season is best for climbing; March brings coffee blossoms, and the rice harvest turns the fields below gold. May-Oct is green but the rock is slippery and unsafe to climb. Best visited in the morning or evening to avoid intense midday heat. Not recommended on rainy days, when the granite surface becomes slippery and genuinely hazardous.",
     },
     visitorTips: [
       "Bring sports shoes or sneakers for better grip on the smooth granite surface",

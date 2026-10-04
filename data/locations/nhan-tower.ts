@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nhanTower: Location = {
   slug: "nhan-tower",
   name: "Tháp Nhạn",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["phu-yen"],
   destination: "",
   lat: 13.082464193252497,
@@ -14,8 +14,8 @@ export const nhanTower: Location = {
   categories: ["religion", "history", "architecture"],
   experiences: ["photography", "culture", "history", "religious-site-visit"],
   tags: ["🏛️ 11th-Century Cham Tower", "🌅 City & River Views", "🆓 Free Entry", "🌃 Lit Up at Night", "champa-heritage", "hinduism"],
-  bestTime: "Roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",
-  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
+  bestTime: "Mar - early Sep is ideal - Phú Yên's dry season, with clear skies, plenty of sun, little rain and pleasant conditions for sightseeing. Oct - Feb is the rainy season, cooler and harder for sightseeing. Within a day, roughly 6:30-9:30 AM for soft morning light and the fewest visitors, or 4:30-8:30 PM to catch sunset on the tower and the after-dark illumination across the city; Saturday evenings for cultural performances",
+  bestMonths: [3, 4, 5, 6, 7, 8, 9],
   entranceFee: "Free to walk up. An optional electric cart to the summit costs around 10,000 VND one-way / 15,000 VND round-trip for adults (roughly half that for children) - walking up the stairs or road costs nothing.",
   openingHours: "6:30 AM – 11:00 PM daily (the electric cart typically runs during a shorter daytime window - check on arrival)",
   mapUrl: "https://www.google.com/maps?q=13.082464193252497,109.30199511819382",
@@ -66,7 +66,7 @@ export const nhanTower: Location = {
       difficulty: "An easy uphill walk of several minutes, or an optional electric cart for those who'd rather not walk",
       safety: null,
       accessibility: "An electric cart shuttle service is available for visitors who prefer not to walk up the hill",
-      seasonal: "Visit in the evening for less sun and sunset views; sunrise is also recommended for photography",
+      seasonal: "Mar-early Sep (dry season): clear skies, plenty of sun, little rain. Oct-Feb (rainy season): cooler and harder for sightseeing. Visit in the evening for less sun and sunset views; sunrise is also recommended for photography",
     },
     visitorTips: [
       "Walking up is free; the electric cart costs around 10,000 VND one-way or 15,000 VND round-trip for adults (roughly half for children)",

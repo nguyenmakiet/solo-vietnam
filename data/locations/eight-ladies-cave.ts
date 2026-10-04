@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const eightLadiesCave: Location = {
   slug: "eight-ladies-cave",
   name: "Eight Ladies Cave",
-  updatedAt: "2026-09-15",
+  updatedAt: "2026-10-04",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.502701222486007,
@@ -14,7 +14,7 @@ export const eightLadiesCave: Location = {
   categories: ["history"],
   experiences: ["history"],
   tags: ["🕯️ Vietnam War Memorial", "⛰️ Special National Historical Relic", "🛣️ Roadside Site", "vietnam-war"],
-  bestTime: "Any time of day works, though many visitors combine a stop here with a morning or afternoon drive along Road 20 - Quyết Thắng",
+  bestTime: "Mar - Aug is the most convenient period - Quảng Bình's weather is dry and sunny, well suited to the forest road and visiting nearby sights. Any time of day works, though many visitors combine a stop here with a morning or afternoon drive along Road 20 - Quyết Thắng",
   bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open daily, roughly 7 AM - 5 PM",
@@ -55,7 +55,7 @@ export const eightLadiesCave: Location = {
       difficulty: null,
       safety: null,
       accessibility: "The cave entrance is sealed and cannot be entered; visitors view it from outside. About a 50m walk from the parking area to the site.",
-      seasonal: null,
+      seasonal: "Mar-Aug is the most convenient period: dry, sunny weather for the forest road and nearby sights",
     },
     visitorTips: [
       "Consider a guide if you want deeper context connecting this site to the broader history of Road 20 - Quyết Thắng and the wider Phong Nha area",
