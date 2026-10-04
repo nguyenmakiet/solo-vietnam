@@ -168,6 +168,23 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "tran-quoc-pagoda",
     "vinpearl-cable-car",
   ],
+  "batch-2b": [
+    "am-tien-cave",
+    "cat-ba-town",
+    "cat-co-beach",
+    "cat-tien-national-park",
+    "diep-son-island",
+    "french-village-ba-na",
+    "hoan-kiem-lake",
+    "ke-ga-lighthouse",
+    "mui-ne-fishing-village",
+    "one-pillar-pagoda",
+    "phong-nha-botanic-garden",
+    "tri-an-lake",
+    "tuyen-lam-lake",
+    "west-lake",
+    "white-sand-dunes",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -187,6 +204,12 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "cape-ca-na": "Sep-Dec is less suited to swimming but 'still fine' for the coastal drive and seafood; Jan is not mentioned",
   "tran-quoc-pagoda": "'Sunset visits in any season are worthwhile' supports all 12 months",
   "vinpearl-cable-car": "'Operates year-round' is a facility statement; Feb-Aug + autumn (Sep-Nov) are the recommended months",
+  // batch-2b (reports/best-months-batch2b-plan.md)
+  "am-tien-cave": "Owner decision: Jun-Jul lotus is a side note, not added; Jul-Aug is an explicit avoid window",
+  "cat-co-beach": "Dec-Feb is 'not really suited to swimming'; Nov and Mar are only 'worth checking the forecast'",
+  "cat-tien-national-park": "Owner decision: Jun-Oct wording ('harder', leeches) not strong enough to add",
+  "french-village-ba-na": "Owner decision: Oct-Feb fog and cold is a caveat; Mar-Sep is the ideal period",
+  "white-sand-dunes": "Sep-Dec is described as the rainy season, when wet sand loses its white look",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())

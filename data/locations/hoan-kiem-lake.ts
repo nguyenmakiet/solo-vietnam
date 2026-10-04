@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoanKiemLake: Location = {
   slug: "hoan-kiem-lake",
   name: "Hoan Kiem Lake",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.027833338357237,
@@ -14,8 +14,8 @@ export const hoanKiemLake: Location = {
   categories: ["culture", "history"],
   experiences: ["walking-tour", "culture", "history", "photography", "religious-site-visit"],
   tags: ["🐢 Turtle Lake", "🏙️ Hanoi Heart", "🌅 Morning Walks", "🏯 Ngoc Son Temple"],
-  bestTime: "Aug - Oct (autumn, cool and dry - most pleasant for walking). Oct - Apr more broadly for cool dry season weather; weekend pedestrian zone creates the best atmosphere year-round.",
-  bestMonths: [8, 9, 10, 11, 12, 1, 2, 3, 4],
+  bestTime: "Aug - Oct (autumn - cool, dry, less harsh sun and rain, and the best scenery for walking around the lake). The weekend pedestrian zone adds the liveliest atmosphere.",
+  bestMonths: [8, 9, 10],
   entranceFee: "Free (Ngọc Sơn Temple has a modest separate entrance fee)",
   openingHours: "Open 24 hours; weekend pedestrian zone Friday-Sunday, 6:00 PM - 6:00 AM (next morning)",
   mapUrl: "https://www.google.com/maps?q=21.027833338357237,105.85226838963871",
@@ -68,7 +68,7 @@ export const hoanKiemLake: Location = {
       difficulty: "Easy - flat paved perimeter path, about 1.7km/20-25 minutes at a relaxed walking pace. Comfortable shoes recommended given the distance.",
       safety: "Standard city awareness around the busy pedestrian zone (crowds, belongings). Dress modestly if visiting Ngọc Sơn Temple or other nearby shrines.",
       accessibility: "Free lake access at all times. Ngọc Sơn Temple has a separate modest entrance fee. Flat, walkable terrain suitable for most visitors.",
-      seasonal: "Aug-Oct: autumn, cool, dry, most pleasant for walking - best season overall. Oct-Apr: cool dry season more broadly, also comfortable. Weekend pedestrian zone atmosphere holds year-round regardless of season.",
+      seasonal: "Aug-Oct: autumn, cool, dry, most pleasant for walking - best season overall. The weekend pedestrian zone adds atmosphere on Friday-Sunday evenings.",
     },
     visitorTips: [
       "Visit early morning (5-8 AM) to see locals exercising and experience the lake at its quietest and most authentic",

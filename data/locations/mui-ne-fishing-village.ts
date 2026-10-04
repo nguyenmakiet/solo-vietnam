@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muiNeFishingVillage: Location = {
   slug: "mui-ne-fishing-village",
   name: "Mũi Né Fishing Village",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 10.94117833027457,
@@ -14,8 +14,8 @@ export const muiNeFishingVillage: Location = {
   categories: ["culture", "coast"],
   experiences: ["photography", "culture", "food", "markets"],
   tags: ["🎣 Fishing Village", "🌅 Sunrise", "🦐 Seafood"],
-  bestTime: "Nov - Apr (dry season); early morning any time of year for the fish market",
-  bestMonths: [1, 2, 3, 4, 11, 12],
+  bestTime: "Jun - Aug is the ideal period - relatively little rain and plenty of sunshine. Sep - Nov brings storms and heavy rain that make coastal exploration dangerous. Early morning is the right time for the fish market",
+  bestMonths: [6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open 24 hours (fish market most active 5:00 - 8:00 AM)",
   mapUrl: "https://www.google.com/maps?q=10.94117833027457,108.2795665776806",
@@ -67,7 +67,7 @@ export const muiNeFishingVillage: Location = {
       difficulty: null,
       safety: "Buy only visibly fresh seafood - inspect before purchasing. Bring cash; no card payments at market stalls.",
       accessibility: "Easy motorbike or bicycle access from the resort strip, 10-15 minutes. Flat walking around the harbour area.",
-      seasonal: "Nov-Apr dry season is most comfortable for an extended visit. The morning market runs year-round regardless of season - early morning is always the right time.",
+      seasonal: "Jun-Aug is the ideal period, with relatively little rain and plenty of sunshine; Sep-Nov storms and heavy rain make coastal exploration dangerous. Early morning is always the right time for the market.",
     },
     visitorTips: [
       "Arrive 5:00-7:00 AM for the full market experience",
@@ -78,7 +78,7 @@ export const muiNeFishingVillage: Location = {
     faq: [
       {
         question: "What is the best time to visit Mũi Né Fishing Village?",
-        answer: "5:00-8:00 AM when the night fishing boats return and the morning market is in full operation. By mid-morning the action is largely over. Worth visiting any time of year - the market runs regardless of season.",
+        answer: "5:00-8:00 AM when the night fishing boats return and the morning market is in full operation. By mid-morning the action is largely over. Seasonally, Jun-Aug is the ideal period.",
       },
       {
         question: "Is the seafood safe to buy at the market?",

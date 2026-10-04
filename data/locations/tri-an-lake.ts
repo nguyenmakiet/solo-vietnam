@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const triAnLake: Location = {
   slug: "tri-an-lake",
   name: "Tri An Lake",
-  updatedAt: "2026-09-05",
+  updatedAt: "2026-10-04",
   provinces: ["dong-nai"],
   destination: "",
   lat: 11.11483833366682,
@@ -15,7 +15,7 @@ export const triAnLake: Location = {
   experiences: ["camping", "kayaking", "boat-tour", "cycling", "photography", "wildlife", "swimming"],
   tags: ["⛺ Camping", "🌅 Sunset Views", "🏕️ Weekend Escape"],
   bestTime: "Roughly Sep/Oct - Jun is the best overall window, split into two distinct phases: Sep-Dec, when the lake is at its fullest and most scenic for boating and photos, and Jan-Jun, when receding water exposes wide grassy flats that make excellent, spacious camping ground with vivid sunsets - many consider this the prime camping season. Jul-Sep brings more rain and slicker access roads, though it also brings a striking algae bloom across parts of the lake if you don't mind the weather risk. Within a day, paddleboarding is best done early morning or after 3 PM (the water gets uncomfortably warm at midday), and sunset is typically strongest around 4:45-6:10 PM - check the forecast before heading out, since rain can move in quickly",
-  bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free (boat hire and camping fees vary by operator: camping from 100,000 VND/person)",
   openingHours: "Open all day; camping operators typically run overnight packages",
   mapUrl: "https://www.google.com/maps?q=11.11483833366682,107.03177682081524",
