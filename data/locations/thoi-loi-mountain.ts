@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thoiLoiMountain: Location = {
   slug: "thoi-loi-mountain",
   name: "Núi Thới Lới",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.382293884994116,
@@ -20,7 +20,7 @@ export const thoiLoiMountain: Location = {
     "🌅 Sunrise Viewpoint",
     "east-sea-sovereignty",
   ],
-  bestTime: "Roughly 5:00-6:30 AM for sunrise, or 5:00-6:00 PM for sunset - both are considered the best light of day",
+  bestTime: "Mar - Aug is the ideal period - the dry season, with clear skies and calm seas for outdoor activities and the boat crossing to the island, and Lý Sơn at its most vivid with blue skies and bright garlic and onion fields. Within a day, roughly 5:00-6:30 AM for sunrise, or 5:00-6:00 PM for sunset - both are considered the best light of day",
   bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "Open 24/7",
@@ -73,7 +73,7 @@ export const thoiLoiMountain: Location = {
       difficulty: "Road is steep with sharp descents requiring good braking. Manual transmission motorcycles recommended over automatic scooters. Walking sections are moderate.",
       safety: "Avoid visiting at sunset or when few people are present, due to reported harassment incidents. Strong winds can be dangerous near cliff edges. No railings or barriers in most areas. No toilet facilities available.",
       accessibility: "Motorcycles can reach the summit. The narrow road makes car passage difficult, especially with oncoming traffic. Some hiking trails are overgrown or partly blocked by vegetation.",
-      seasonal: "Summer daytime (8am-4pm) is extremely hot and sunny; early morning visits (from 5am) are recommended for cooler weather and sunrise views. Late afternoon light (around 3pm onward) is best for photography.",
+      seasonal: "Mar-Aug (dry season): clear skies, calm seas for the boat crossing, and vivid garlic and onion fields. Summer daytime (8am-4pm) is extremely hot and sunny; early morning visits (from 5am) are recommended for cooler weather and sunrise views. Late afternoon light (around 3pm onward) is best for photography.",
     },
     visitorTips: [
       "Arrive early morning (from around 5am) to avoid intense summer heat and catch sunrise for a memorable experience",

@@ -20,7 +20,7 @@ export const nhaPhaPrison: Location = {
     "🇻🇳 Vietnamese Resistance History",
     "french-colonial-era",
   ],
-  bestTime: "Sunrise or sunset from the lighthouse viewing platform for the best panoramic light over the island",
+  bestTime: "Apr - Aug brings stable weather with little rain and plenty of sun; Apr - Jun is peak season, so expect crowds then. Sep - Dec is the rainy, stormy season with rough seas. Within a day, sunrise or sunset from the lighthouse viewing platform gives the best panoramic light over the island",
   bestMonths: [4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "The grounds are open freely, day and night, with no ticket gate or fixed hours. However, staffed access to climb the lighthouse itself appears to end around 4-5 PM based on visitor reports - plan a daytime visit if climbing to the top is your goal.",
@@ -69,7 +69,7 @@ export const nhaPhaPrison: Location = {
       difficulty: "The lighthouse involves a 362-step spiral climb - moderate effort, manageable for most visitors but not a quick stroll",
       safety: null,
       accessibility: "The lighthouse has railings and viewing platforms; the historical office building is open-air ruins with no formal ticketing or facilities",
-      seasonal: null,
+      seasonal: "Apr-Aug: stable, mostly dry and sunny weather (Apr-Jun is the busiest peak). Sep-Dec: rainy season with storms and rough seas",
     },
     visitorTips: [
       "Read up on the August 16, 1945 uprising and the site's role in it before visiting, since there's little on-site interpretation for the historical side",

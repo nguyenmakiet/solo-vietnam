@@ -14,7 +14,7 @@ export const ngocSonTemple: Location = {
   categories: ["religion", "history", "culture"],
   experiences: ["history", "photography", "religious-site-visit"],
   tags: ["🏯 Island Temple", "🌉 Red Bridge", "🐢 Turtle Museum", "⚔️ Legend of Sword", "folk-religion", "taoism"],
-  bestTime: "Roughly 7-9 AM for the softest light around Tháp Bút and the Huc Bridge, the calmest atmosphere, and the fewest crowds, before tour groups build up through the morning; or roughly 4-6 PM for sunset and a softer atmosphere around Hoàn Kiếm Lake",
+  bestTime: "Sep - Nov (Hanoi's autumn) is the best season - cool weather, clear blue skies and golden sunlight that bring out the mossy old walls and the willows by the temple. Within a day, roughly 7-9 AM is the best moment for Tháp Bút and the Huc Bridge: the rising sun lights up the red bridge (its name means 'where the early morning sunlight rests') and its reflection on the lake, and it is quiet enough to read the Hán-script couplets and take in the history before tour groups arrive. Roughly 4-6 PM brings sunset over the Turtle Tower and Đình Trấn Ba, and a slower view of old and modern Hanoi around Hoàn Kiếm Lake",
   bestMonths: [9, 10, 11],
   entranceFee: "50,000 VND/adult, free for children under 15",
   openingHours: "Roughly 7:00 AM - 7:00 PM Monday-Thursday, extending to around 10:00 PM Friday-Sunday - hours can shift seasonally or around holidays, so treat these as approximate",
@@ -67,7 +67,7 @@ export const ngocSonTemple: Location = {
       difficulty: "Flat, easy, fully accessible walk across the bridge and through the temple grounds",
       safety: null,
       accessibility: "Wheelchair access is limited in places due to the bridge and temple thresholds; the site is otherwise flat and easy to navigate",
-      seasonal: "Weekend hours may extend later into the evening when the surrounding lakeside walking street is active",
+      seasonal: "Sep-Nov (autumn) is the best season: cool, clear skies and golden light on the old walls and willows. Weekend hours may extend later into the evening when the surrounding lakeside walking street is active",
     },
     visitorTips: [
       "Visit right at opening for a quieter experience before tour groups build up through the morning",

@@ -14,7 +14,7 @@ export const truongSonNationalCemetery: Location = {
   categories: ["history"],
   experiences: ["history"],
   tags: ["🪦 War Memorial", "🕊️ Ho Chi Minh Trail", "📸 Sobering Visit", "🇻🇳 National Memorial", "vietnam-war"],
-  bestTime: "Morning, for cooler temperatures and better light for photography",
+  bestTime: "Mar - Aug is usually the most convenient period for travel and for combining with other nearby sites. On 27 July (War Invalids and Martyrs Day) many groups come to offer incense - a solemn, moving atmosphere, but busier than usual. Within a day, morning gives cooler temperatures and better light for photography",
   bestMonths: [3, 4, 5, 6, 7, 8],
   entranceFee: "Free",
   openingHours: "7:00 AM – 5:00 PM",
@@ -67,7 +67,7 @@ export const truongSonNationalCemetery: Location = {
       difficulty: null,
       safety: null,
       accessibility: "The cemetery spans a large area across three hills; most visitors cover the central monument and a few provincial sections in 1-2 hours, though seeing every section in detail would take considerably longer",
-      seasonal: "Visit during cooler mornings or late afternoons; bring light rain gear as weather can be unpredictable",
+      seasonal: "Mar-Aug is usually the most convenient period; 27 July draws large, solemn crowds. Visit during cooler mornings or late afternoons; bring light rain gear as weather can be unpredictable",
     },
     visitorTips: [
       "Bring flowers or incense to pay respects; some graves are memorial markers without remains, given the conditions many soldiers died under",

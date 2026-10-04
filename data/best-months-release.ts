@@ -360,13 +360,8 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "km0-ha-giang": "Seasonal insight: 'Year-round' for the marker itself (owner decision)",
   "mac-dynasty-citadel": "Owner decision (source-reviewed): Jan-Nov; bestTime is time-of-day only",
   "ho-chi-minh-childhood-home": "Tip: May to July lotus-blooming season (owner decision)",
-  "thoi-loi-mountain": "Owner decision (source-reviewed): Mar-Aug; bestTime is time-of-day only",
-  "eight-ladies-cave": "Owner decision (source-reviewed): Mar-Aug; no seasonal text in the file",
-  "nha-pha-historical-site": "Owner decision (source-reviewed): Apr-Aug; bestTime is time-of-day only",
-  "ho-quoc-pagoda": "Owner decision (source-reviewed): Nov-Apr; bestTime is time-of-day only",
-  "nhan-tower": "Owner decision (source-reviewed): Mar-Sep; bestTime is time-of-day only",
-  "ngoc-son-temple": "Owner decision (source-reviewed): Sep-Nov; bestTime is time-of-day only",
-  "truong-son-national-cemetery": "Owner decision (source-reviewed): Mar-Aug; bestTime is time-of-day only",
+  "ho-quoc-pagoda": "Owner decision: Nov-Apr dry season; May-Oct sudden showers is a caveat the owner excludes",
+  "elephant-mountain": "May-Oct is green but the rock is slippery and unsafe to climb (dangerous-season rule)",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
