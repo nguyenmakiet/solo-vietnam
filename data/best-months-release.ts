@@ -189,6 +189,14 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "jade-emperor-pagoda",
     "quang-tri-ancient-citadel",
   ],
+  "batch-2d": [
+    "bach-ma-temple",
+    "khau-coc-cha-pass",
+    "kim-lien-temple",
+    "thien-mu-pagoda",
+    "voi-phuc-temple",
+    "world-coffee-museum",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -216,6 +224,13 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "white-sand-dunes": "Sep-Dec is described as the rainy season, when wet sand loses its white look",
   // batch-2c (reports/best-months-post-2b-review.md)
   "quang-tri-ancient-citadel": "Sep-Nov is mentioned only as flooding risk; Dec-May is the recommended period",
+  // batch-2d
+  "bach-ma-temple": "'Any time of day or year - it's an indoor site'; seasonal insight: visitable in any weather or season",
+  "khau-coc-cha-pass": "Aug-Oct rice bonus falls in the wet season, which the content calls dangerous for riding",
+  "kim-lien-temple": "Indoor, weather-independent site - 'any season works equally well' (tip + seasonal insight)",
+  "thien-mu-pagoda": "Jan-Mar pilgrimage season is only described as busier, not as a reason to visit",
+  "voi-phuc-temple": "'Largely weather-independent'; seasonal insight: visitable in any season",
+  "world-coffee-museum": "'Largely an indoor site'; seasonal insight: minimal, most of the visit is indoors",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
