@@ -53,6 +53,10 @@ export type Location = {
   bestMonths?: number[]
   bestSeasonNote?: string // seasonal context the month strip cannot show; may name months, must agree with bestMonths
   bestTimeOfDay?: string // recommended time of day, with its nuance
+  // Total time a traveler should allocate for the visit / experience, in minutes only.
+  // Multi-day experiences are normalised to total minutes (1 day = 1440, "2 days 1 night" = 2880).
+  // Left out when the content gives no reliable duration - see reports/time-needed-migration.md
+  timeNeeded?: { minMinutes: number; maxMinutes: number }
   mapUrl: string
   streetView?: { lat?: number | string; lng?: number | string; embedUrl?: string }
   heroImage?: string

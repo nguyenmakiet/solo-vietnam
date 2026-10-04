@@ -16,6 +16,10 @@ export const namDuIslands: Location = {
   tags: ["🏝️ Remote Archipelago", "🌊 Gulf of Thailand", "🐟 Fishing Community"],
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
   bestSeasonNote: "Nov - May (dry season; calm seas and clear water essential for outer island boat access)",
+  timeNeeded: {
+    minMinutes: 2880,
+    maxMinutes: 4320,
+  },
   entranceFee: "Free. Ferry from Rạch Giá: 210,000 VND/person one way",
   openingHours: "Open daily; ferry schedule limited - book in advance, weekends sell out fast",
   mapUrl: "https://www.google.com/maps?q=9.683300,104.366700",

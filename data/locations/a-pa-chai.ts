@@ -16,6 +16,10 @@ export const aPaChai: Location = {
   tags: ["🌐 Westernmost Point", "🏔️ Triple Border", "🥾 Remote Trek"],
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   bestSeasonNote: "Oct - Apr (dry season; wet season May - Sep makes the trail muddy and dangerous underfoot); Oct for golden rice terraces en route, Nov-Dec for wild sunflower (dã quỳ), Jan-Mar for plum, peach, and bauhinia (hoa ban) blossoms along the Northwest highlands",
+  timeNeeded: {
+    minMinutes: 180,
+    maxMinutes: 240,
+  },
   entranceFee: "Free to view the marker, but budget for local logistics: escort/guide fee around 400,000 VND/group, xe ôm around 500,000 VND/group, or motorbike rental around 300,000 VND/bike - registration with ID required at Đồn Biên Phòng 317 (A Pa Chải border post)",
   openingHours: "Arrive at Đồn Biên Phòng 317 before 4:00 PM - the border post does not receive visitors after that time",
   mapUrl: "https://www.google.com/maps?q=22.401192335843305,102.14371962758165",

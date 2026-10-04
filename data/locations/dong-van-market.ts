@@ -17,6 +17,10 @@ export const dongVanMarket: Location = {
   bestMonths: [1, 2, 3, 10, 11, 12],
   bestSeasonNote: "Buckwheat flower season (Oct-Nov) adds a dramatic backdrop.",
   bestTimeOfDay: "Sunday morning - arrive before 9 AM.",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "Sunday market: from ~6 AM, busiest 7–10 AM, winds down by midday. Small daily market other days.",
   mapUrl: "https://www.google.com/maps?q=23.277117868189283,105.36124291013778",

@@ -16,6 +16,10 @@ export const keGaLighthouse: Location = {
   tags: ["🏛️ Colonial Lighthouse", "🚣 Boat Crossing", "🏝️ Rocky Islet", "french-colonial-era"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12],
   bestSeasonNote: "The best periods are Feb - Jul and Sep - Jan. Nov - Apr has the calmest seas and clearest water; May - Jul is hot with strong midday sun; Sep - Oct brings occasional rain showers, so it's worth checking the forecast before heading out in that window. Rough conditions during the rainy season (roughly May - Oct) can suspend the boat crossing on some days - check local conditions before you go. March specifically has the lowest tides of the year, occasionally low enough to walk across the exposed reef to the island",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "No standard entrance fee is generally charged for the lighthouse; the main cost is the boat crossing from the mainland, typically around 50,000-100,000 VND per person round trip, though prices are negotiable and can vary by season and group size",
   openingHours: "7:30 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=10.695329624836493,107.99144633590802",

@@ -17,6 +17,10 @@ export const elephantMountain: Location = {
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season) is the best period - dry with little rain, good for climbing and exploring. March adds white coffee blossoms across Đắk Lắk on the drive out, and the rice harvest turns the fields at the base of the rock gold, often considered the most beautiful time of year. May - Oct is lush and green, but the rock gets slippery and unsafe to climb.",
   bestTimeOfDay: "Roughly 6:20-9:00 AM is cool with soft light and the easiest climbing conditions; late afternoon (around 4:00-6:00 PM) brings golden-hour light and sunset views from the summit. Avoid 11:00 AM-2:00 PM, when the sun is harsh and the rock surface gets uncomfortably hot underfoot",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 60,
+  },
   entranceFee: "Historically free to visit, though some more recent accounts describe a ticket (roughly 50,000-60,000 VND, including a complimentary homemade drink) - confirm current pricing locally, since sources disagree on whether this is now a paid site",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=12.481628765573047,108.23313331512834",

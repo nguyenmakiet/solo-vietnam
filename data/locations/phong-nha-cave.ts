@@ -16,6 +16,10 @@ export const phongNhaCave: Location = {
   tags: ["🚣 Boat Cave Tour", "🪨 Stalactites", "🌊 Underground River"],
   bestMonths: [3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Mar - Aug (dry season, Son River water is clearest and most turquoise; cave may close Sep-Nov due to flooding)",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 90,
+  },
   entranceFee: "Boat: 700,000 VND per boat (max 12 people, shared cost). Cave entry ticket purchased at Phong Nha - Tien Son visitor centre.",
   openingHours: "7:00 AM – 4:00 PM (closed during flood season Sep – Nov)",
   mapUrl: "https://www.google.com/maps?q=17.58187380883147,106.28397697966346",

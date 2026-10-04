@@ -16,6 +16,10 @@ export const bungBinhThienLake: Location = {
   tags: ["🌸 Lotus Lake", "cham-culture"],
   bestMonths: [8, 9, 10, 11],
   bestSeasonNote: "Roughly Aug - early Nov (flood season, following the lunar calendar so exact dates shift year to year) is when the lake is at its fullest and the lotus blooms. The Búng Bình Thiên flood-season culture festival runs August 30-31 every year. Outside flood season the lake shrinks substantially and the lotus disappears - still peaceful, but a noticeably smaller and less scenic version of the place",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 90,
+  },
   entranceFee: "Free; boat hire is informal, run by local residents rather than a company - roughly 150,000-300,000 VND per person, or around 300,000 VND for a whole boat (4-10 people) if arranged as a group through guides connected to the Cham mosque. Agree the price before boarding either way",
   openingHours: "Open daily; best visited at dawn",
   mapUrl: "https://www.google.com/maps?q=10.919979584967262,105.07286304988797",

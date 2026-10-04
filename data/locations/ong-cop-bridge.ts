@@ -21,6 +21,10 @@ export const ongCopBridge: Location = {
   ],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
   bestTimeOfDay: "Early morning (roughly 5:00-8:30 AM) for sunrise, soft light, and cooler air, or late afternoon (roughly 3:30-5:30 PM) for sunset over the water - though some visitors also get good results shooting in full midday sun if those windows don't fit your schedule",
+  timeNeeded: {
+    minMinutes: 20,
+    maxMinutes: 30,
+  },
   entranceFee: "A small toll applies, though exact rates vary by source and over time - commonly cited figures include around 3,000-5,000 VND for motorbikes and somewhat less for pedestrians or bicycles. Confirm at the toll hut, since these are locally set and adjusted periodically",
   openingHours: "Open 24/7 (when structurally intact - check locally during Oct - Nov)",
   mapUrl: "https://www.google.com/maps?q=13.365233794366752,109.24146230185562",

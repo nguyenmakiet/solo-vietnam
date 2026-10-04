@@ -16,6 +16,10 @@ export const masaraHill: Location = {
   tags: ["🌾 Pink Grass Hill", "🌄 Sunrise & Sunset"],
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestTimeOfDay: "Roughly 6-8 AM while dew still lingers on the grass, or after 4 PM for the softest afternoon light - avoid overcast or rainy days if photography is the priority",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 180,
+  },
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.516105652285598,108.43388764781206",

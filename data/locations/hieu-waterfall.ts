@@ -16,6 +16,10 @@ export const hieuWaterfall: Location = {
   tags: ["💧 Multi-tier Waterfall", "🏊 Swimming Pools", "🌿 Forest Setting"],
   bestMonths: [6, 7, 8, 9, 10],
   bestSeasonNote: "Jun - Oct (peak water flow, golden rice terraces in surrounding fields)",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "~10,000 - 20,000 VND (collected by village) + 5,000 VND motorbike parking",
   openingHours: "Open 24/7 (best in daylight)",
   mapUrl: "https://www.google.com/maps?q=20.46548088770793,105.2224454532903",

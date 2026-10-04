@@ -16,6 +16,10 @@ export const radioTowerCatBa: Location = {
   tags: ["🌅 Sunset Viewpoint", "📡 Radio Tower", "🏝️ Lan Hạ Bay Views", "🔭 Panoramic"],
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   bestTimeOfDay: "Afternoon to sunset (check local sunset time before going - allow 30-60 minutes for the climb)",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 60,
+  },
   entranceFee: "Free",
   openingHours: "Daylight hours - best visited 2-3 hours before sunset",
   mapUrl: "https://www.google.com/maps?q=20.725680942118284,107.05569020932256",

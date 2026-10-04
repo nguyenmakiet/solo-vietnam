@@ -16,6 +16,10 @@ export const taPaTemple: Location = {
   tags: ["🛕 Khmer Temple", "🏔️ 'Floating' Pillar Architecture", "🌃 Night Views", "khmer-culture", "buddhism"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Roughly 6-9 AM or 4-6 PM for soft light and the best photos - avoid midday, when the sun is harsh",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 90,
+  },
   entranceFee: "Free",
   openingHours: "6:00 AM - 10:00 PM (best visited outside worship/ceremony hours for a quieter experience)",
   mapUrl: "https://www.google.com/maps?q=10.4152711092553,104.99329389037788",

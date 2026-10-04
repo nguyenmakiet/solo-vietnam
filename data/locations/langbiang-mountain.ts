@@ -17,6 +17,10 @@ export const langbiangMountain: Location = {
   bestMonths: [11, 12, 1, 2, 3],
   bestSeasonNote: "Nov - Mar is the dry season and the most reliable window - cooler, drier trails, and the local mai anh đào (wild Himalayan cherry) blossoms bloom during this stretch. Feb - Mar specifically tends to offer the most ideal trekking temperatures (around 18-22°C, sunny, little rain). Apr - Oct is the rainy season - trails get genuinely muddy, slippery, and buggy (mosquitoes and leeches), and is best avoided for the Núi Bà trek specifically.",
   bestTimeOfDay: "Start early morning if cloud-hunting at the summit is a priority",
+  timeNeeded: {
+    minMinutes: 300,
+    maxMinutes: 300,
+  },
   entranceFee: "Around 50,000 VND/adult, 25,000 VND/child for park entry; jeep to Đồi Ra-đa (Radar Hill), shared vehicle round trip, runs roughly 100,000-150,000 VND/person depending on timing - prices and exact policies shift periodically, so confirm current rates locally",
   openingHours: "5:30 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=12.048102933200623,108.44188630307653",

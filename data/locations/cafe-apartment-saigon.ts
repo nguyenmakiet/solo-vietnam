@@ -17,6 +17,10 @@ export const cafeApartmentSaigon: Location = {
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round, since it's entirely indoors/covered.",
   bestTimeOfDay: "For the best atmosphere, evening (roughly 7-10 PM) is when the building and the surrounding street light up in colour - most visitors find it genuinely beautiful at this time rather than in daylight, when it can look fairly ordinary and worn. Weekends bring the liveliest crowds to the walking street below; weekday mornings and early afternoons are the quietest time to explore the building itself without crowds",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "Free to enter and browse; the stairs are free, while the elevator costs around 5,000 VND/person - though many of the cafes and restaurants inside will refund this fee if you buy something, so it's often effectively free anyway if you're planning to order. Individual cafes charge separately, typically 40,000-120,000 VND per drink",
   openingHours: "Most individual cafes and shops operate roughly 7-8 AM to 10-10:30 PM daily, though hours vary floor to floor and business to business - some open later or close earlier, and a few operate limited days",
   mapUrl: "https://www.google.com/maps?q=10.774098930222388,106.70407797003224",

@@ -16,6 +16,10 @@ export const vietnamMuseumOfEthnology: Location = {
   tags: ["🏛️ Best Museum in Vietnam", "🎎 54 Ethnic Groups", "🌿 Outdoor Village", "ethnic-minority-culture"],
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cool dry season; outdoor exhibits are best explored outside of summer heat and rain)",
+  timeNeeded: {
+    minMinutes: 120,
+    maxMinutes: 150,
+  },
   entranceFee: "40,000 VND adults / free for children under 6. Water puppet show: 50,000 VND extra.",
   openingHours: "Tue - Sun: 8:30 AM - 5:30 PM. Closed Mondays. Hours may vary on public holidays.",
   mapUrl: "https://www.google.com/maps?q=21.040622256391238,105.7985165933281",

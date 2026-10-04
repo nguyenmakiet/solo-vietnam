@@ -16,6 +16,10 @@ export const khauCocChaPass: Location = {
   tags: ["🏍️ 15-Tier Pass", "📸 Panoramic Views", "🌀 Hairpin Switchbacks", "🏔️ Highland Road"],
   bestMonths: [11, 12, 1, 2, 3, 4],
   bestSeasonNote: "For the safest road conditions, Nov - Apr (the dry season) is the more reliable window - drier pavement and lower landslide risk on a road where that genuinely matters. Aug - Oct offers a real scenic bonus (golden rice ripening in the valley below) and Feb - Mar brings wildflowers, but both fall partly or fully within the wetter months, so weigh the extra scenery against riskier riding conditions. Avoid riding in heavy rain regardless of season",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 90,
+  },
   entranceFee: "Free; the viewpoint hike has an informal 10,000 VND motorbike parking fee at the small shop where the trail starts",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.926557070752953,105.78388981658192",

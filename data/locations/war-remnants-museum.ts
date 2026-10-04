@@ -16,6 +16,10 @@ export const warRemnantsMuseum: Location = {
   tags: ["📸 War Photography", "⚔️ Agent Orange", "🚁 Military Hardware", "vietnam-war", "french-colonial-era"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Mornings are quieter and cooler",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 180,
+  },
   entranceFee: "40,000 VND. Audio guide: 80,000 VND (available in 9 languages).",
   openingHours: "7:30 AM – 5:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.779534930802145,106.69218502415347",

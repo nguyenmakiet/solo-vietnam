@@ -16,6 +16,10 @@ export const km0HaGiang: Location = {
   tags: ["📍 Km 0 Marker", "🏍️ Ha Giang Loop Start", "📷 Check-in Spot", "🏔️ Gateway to the Plateau"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Roughly 6-8 AM, before setting off north toward Đồng Văn",
+  timeNeeded: {
+    minMinutes: 15,
+    maxMinutes: 45,
+  },
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=22.827448496788932,104.98418992590295",

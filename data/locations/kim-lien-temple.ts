@@ -21,6 +21,10 @@ export const kimLienTemple: Location = {
   ],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Early morning or afternoon - it's an indoor site, so weather matters less than avoiding the busiest hours",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 60,
+  },
   entranceFee: "Free (a separate, small motorbike parking fee applies at the gate, around 10,000 VND)",
   openingHours: "8:30-11:00 AM and 2:00-5:00 PM daily. Note: Google Maps listings showing 24-hour access are incorrect - visitors have flagged this discrepancy.",
   mapUrl: "https://www.google.com/maps?q=21.010672987778825,105.83820335334727",

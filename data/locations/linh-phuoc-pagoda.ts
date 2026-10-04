@@ -16,6 +16,10 @@ export const linhPhuocPagoda: Location = {
   tags: ["⛩️ Ceramic Mosaic Pagoda", "🐉 Dragon Staircase", "🚂 Train Access", "buddhism"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Morning for best photography light on the mosaics, and to arrive ahead of the tour buses",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=11.944790636274039,108.49973009118906",

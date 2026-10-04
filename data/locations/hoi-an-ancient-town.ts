@@ -16,6 +16,10 @@ export const hoiAnAncientTown: Location = {
   tags: ["🏮 Lantern Town", "🎑 UNESCO Heritage", "🍜 Street Food", "early-modern-vietnam"],
   bestMonths: [2, 3, 4, 10, 11],
   bestSeasonNote: "Feb - Apr (dry season, Tết lantern season in Feb) or Oct - Nov",
+  timeNeeded: {
+    minMinutes: 1440,
+    maxMinutes: 4320,
+  },
   entranceFee: "120,000 VND (covers 5 heritage site entries within the Old Town from a list of 22 sites)",
   openingHours: "Old Town streets: open 24/7. Heritage houses: 8:00 AM – 9:00 PM. Lantern Night (Đêm phố cổ): 6:00 PM – 10:00 PM on the 14th of each lunar month.",
   mapUrl: "https://www.google.com/maps?q=15.877003160603328,108.32649087704544",

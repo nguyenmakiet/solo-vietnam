@@ -17,6 +17,10 @@ export const benThanhMarket: Location = {
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round; dry season (Dec-Apr) for comfortable walking.",
   bestTimeOfDay: "Morning hours (7-10 AM) for the food section before heat builds.",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "6:00 AM - 6:00 PM daily (some sources cite 7:30 AM opening); night market outside from approximately 6:00 PM - 10:00/midnight.",
   mapUrl: "https://www.google.com/maps?q=10.772695965273028,106.69811735493076",

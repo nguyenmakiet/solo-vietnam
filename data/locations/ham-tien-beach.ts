@@ -16,6 +16,10 @@ export const hamTienBeach: Location = {
   tags: ["🏖️ Beach", "🌊 Waves", "🏄 Surfing"],
   bestMonths: [1, 2, 3, 4, 11, 12],
   bestTimeOfDay: "Early morning before the wind picks up is calmest; sunrise here, with the beach facing east, is one of the best photography moments on the coast",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=10.940316,108.193239",

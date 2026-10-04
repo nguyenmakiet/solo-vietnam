@@ -21,6 +21,10 @@ export const anBinhIsland: Location = {
   ],
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - Aug (calm seas, clearest water, best underwater visibility); Sep - Dec seas are rougher and best avoided; late Dec - Apr the island's volcanic rocks turn a distinctive green with seasonal moss, a niche draw for photographers even though it overlaps with rougher sailing conditions early in that window",
+  timeNeeded: {
+    minMinutes: 360,
+    maxMinutes: 360,
+  },
   entranceFee: "No entry fee for the island itself. Getting there costs extra: boat from Lý Sơn's main port to Đảo Bé runs around 170,000 VND/person round-trip (2026 pricing; historically as low as 60,000-120,000 VND in past years). Chartering a private canoe for a group costs roughly 2.5-3 million VND/day. On the island, an electric cart tour costs about 50,000 VND/person and motorbike rental about 100,000 VND/bike",
   openingHours: "Boats to Đảo Bé typically run roughly 7 AM - 11:30 AM out and 10 AM - 2:30/3 PM back, but exact times shift seasonally - check locally or via [Cảng Sa Kỳ's schedule page](https://cangsaky.com.vn/)",
   mapUrl: "https://www.google.com/maps?q=15.427950714721403,109.08039442282168",

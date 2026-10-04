@@ -16,6 +16,10 @@ export const baHoWaterfall: Location = {
   tags: ["💧 Three Pools Waterfall", "🏊 Natural Swimming", "🥾 Jungle Trek"],
   bestMonths: [12, 1, 2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Feb - Aug for the most reliably safe conditions (dry season, good swimming). Dec-Jan sometimes brings a striking jade-green water color locals call 'Tuyệt Tình Cốc,' but this sits at the tail end of flood season, so check conditions before planning around it. Avoid Sep-Nov, when flash floods are a real risk on the upper trail",
+  timeNeeded: {
+    minMinutes: 240,
+    maxMinutes: 300,
+  },
   entranceFee: "185,000 VND/person (includes kayaking and one bottle of water); shuttle to the trailhead extra (150,000 VND round-trip or 40,000 VND one-way)",
   openingHours: "8:00 AM - 4:30 PM (start the descent from the third pool by around 4 PM to be safely down before closing)",
   mapUrl: "https://www.google.com/maps?q=12.390044772272377,109.13860165627212",

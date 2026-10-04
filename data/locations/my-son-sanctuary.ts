@@ -16,6 +16,10 @@ export const mySonSanctuary: Location = {
   tags: ["🏛️ UNESCO Heritage", "🛕 Cham Temples", "🌿 Jungle Ruins", "champa-heritage", "hinduism"],
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
   bestSeasonNote: "Feb - Aug (dry season; the site floods and paths become muddy in the Oct - Jan wet season)",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 180,
+  },
   entranceFee: "150,000 VND adults (international). Children 5-15: 50,000 VND. Under 5: free. Audio guide: 70,000 VND - recommended.",
   openingHours: "6:00 AM – 5:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=15.76310079629061,108.12417516881945",

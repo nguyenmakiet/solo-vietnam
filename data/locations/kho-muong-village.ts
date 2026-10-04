@@ -16,6 +16,10 @@ export const khoMuongVillage: Location = {
   tags: ["🏞️ Remote Valley", "🏠 Thai Stilt Houses", "🌾 Rice Terraces", "🕳️ Cave Access", "thai-culture"],
   bestMonths: [5, 6, 9, 10],
   bestTimeOfDay: "Roughly 6-9 AM shows the village at its best, while 3-4 PM is the recommended window specifically for visiting Hang Dơi (Kho Muong Cave)",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 90,
+  },
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://maps.google.com/?q=20.44871826696882,105.15321491096157", // TODO: verify with exact coords

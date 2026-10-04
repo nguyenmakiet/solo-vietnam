@@ -16,6 +16,10 @@ export const hoaLoPrison: Location = {
   tags: ["⛓️ French Colonial Prison", "✈️ Hanoi Hilton", "🪖 POW History", "🏛️ Colonial Architecture", "vietnam-war", "french-colonial-era"],
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cooler, drier weather; more comfortable for walking between exhibits)",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "50,000 VND. Audio guide: 50,000 VND (recommended).",
   openingHours: "8:00 AM – 5:00 PM daily; last entry 4:30 PM. Arrive before 3:00 PM to allow enough time.",
   mapUrl: "https://www.google.com/maps?q=21.025370023417228,105.8467212199111",

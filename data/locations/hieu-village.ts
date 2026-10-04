@@ -17,6 +17,10 @@ export const hieuVillage: Location = {
   bestMonths: [5, 6, 9, 10],
   bestSeasonNote: "June specifically brings the year's strongest water flow at the falls, alongside the first rice harvest",
   bestTimeOfDay: "Early morning gives the quietest, softest light on the waterfall and bridges before any day-trippers from Don Village arrive.",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 120,
+  },
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=20.465207207325047,105.22192270503085", // TODO: verify with exact coords

@@ -16,6 +16,10 @@ export const poNagarChamTowers: Location = {
   tags: ["🏯 Cham Towers", "⛩️ Active Hindu Temple", "🏛️ 8th Century", "champa-heritage", "hinduism", "cham-culture"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round; dry season (Jan-Sep) gives the clearest skies, with Apr-Jun especially sunny - bring sun protection (hat, sunscreen, sunglasses) if visiting in these hotter months",
+  timeNeeded: {
+    minMinutes: 60,
+    maxMinutes: 90,
+  },
   entranceFee: "30,000 VND/adult (subject to local adjustments); children under 1.2m free",
   openingHours: "6:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=12.265491244831042,109.19565099450733",

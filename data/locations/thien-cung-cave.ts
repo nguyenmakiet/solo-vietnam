@@ -16,6 +16,10 @@ export const thienCungCave: Location = {
   tags: ["🪨 Heavenly Palace Cave", "🌊 UNESCO Heritage", "🐉 Dragon King Legend"],
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestTimeOfDay: "Roughly 8-10 AM or 3-4:30 PM for the fewest crowds - 11 AM-1 PM is when day tours converge most heavily",
+  timeNeeded: {
+    minMinutes: 25,
+    maxMinutes: 35,
+  },
   entranceFee: "Around 250,000 VND per person for the combined bay ticket covering both Đầu Gỗ and Thiên Cung caves, plus a separate boat/tender fare. Usually included in cruise packages - independent visitors buy the bay sightseeing ticket at the port.",
   openingHours: "Daytime bay sightseeing routes run roughly 6:30 AM–6:30 PM; actual cave access depends on your sightseeing boat schedule",
   mapUrl: "https://maps.google.com/?q=20.912819278073986,107.01721792446725",

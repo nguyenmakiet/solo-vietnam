@@ -16,6 +16,10 @@ export const catBaNationalPark: Location = {
   tags: ["🐒 Golden-Headed Langur", "🌿 Island Jungle", "🥾 Summit Trek", "🦜 Endemic Wildlife", "🦋 Butterfly Season"],
   bestMonths: [4, 5, 6, 9, 10, 11],
   bestSeasonNote: "Apr - Jun or Sep - Nov (dry season, trails accessible, best wildlife sightings)",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 1440,
+  },
   entranceFee: "From 80,000 VND (160,000 for full sightseeing)",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.793772701115774,106.98943675013382",

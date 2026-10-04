@@ -18,6 +18,10 @@ export const phungHungMuralStreet: Location = {
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   bestSeasonNote: "Year-round.",
   bestTimeOfDay: "Morning light (before 9 AM) is best for photography before the street gets busy",
+  timeNeeded: {
+    minMinutes: 15,
+    maxMinutes: 20,
+  },
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.03841229431943,105.84676137053688",

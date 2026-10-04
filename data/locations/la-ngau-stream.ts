@@ -16,6 +16,10 @@ export const laNgauStream: Location = {
   tags: ["🌿 Jungle Stream", "💧 Natural Pools"],
   bestMonths: [1, 2, 3, 4, 12],
   bestSeasonNote: "Dec - Apr (dry season, clear water, accessible trails). Best water conditions: 12:00 - 16:00 daily.",
+  timeNeeded: {
+    minMinutes: 2880,
+    maxMinutes: 2880,
+  },
   entranceFee: "Day visit: 20,000 VND/person. Overnight: ~50,000 VND/group of 2-4 (varies by campsite, some free). Tent rental: 250,000 VND/tent (2-3 person, includes blanket, pillow, light).",
   openingHours: "Open 24 hours. Water levels fluctuate significantly through the day - follow campsite manager's guidance.",
   mapUrl: "https://www.google.com/maps?q=11.236315974562396,107.78594527850618",

@@ -16,6 +16,10 @@ export const sungSotCave: Location = {
   tags: ["🪨 Largest Cave in Ha Long", "🧗 Hiking", "🌊 UNESCO Heritage"],
   bestMonths: [4, 5, 6, 10, 11, 12],
   bestSeasonNote: "Apr - Jun (warm, sunny, fewer tourists than peak summer). Oct - Dec also good (cooler, comfortable). Bring a warm layer in winter.",
+  timeNeeded: {
+    minMinutes: 45,
+    maxMinutes: 60,
+  },
   entranceFee: "250,000 VND (1m-1.4m: 195,000 VND; under 1m: free); boat tour not included. Route 2 day cruise ticket: ~290,000 VND bay entrance + ~200,000 VND boat.",
   openingHours: "7:30 AM - 4:30 PM. Accessible by boat/cruise only - no independent access.",
   mapUrl: "https://maps.google.com/?q=20.8810,107.1140",

@@ -16,6 +16,10 @@ export const hoChiMinhChildhoodHome: Location = {
   tags: ["🏛️ National Pilgrimage Site", "🌿 Historic Village", "🇻🇳 Vietnamese History"],
   bestMonths: [5, 6, 7],
   bestTimeOfDay: "Roughly 7-10 AM or 3:30-5 PM for the most pleasant temperatures and best light - the site also closes over a midday lunch break (around 11:30 AM-1:30 PM), so plan around it either way",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 45,
+  },
   entranceFee: "Free",
   openingHours: "Summer: 7:00-11:30 AM and 1:30-5:00 PM daily; Winter: roughly 7:00/7:30 AM-12:00 PM and 1:30-5:00 PM daily. Closed over the midday break in both seasons - plan your visit around this.",
   mapUrl: "https://www.google.com/maps?q=18.676032245825112,105.55404708457107",

@@ -16,6 +16,10 @@ export const quanBaTwinMountains: Location = {
   tags: ["🏔️ Núi Đôi", "📸 Ha Giang Icon", "🌾 Rice Terraces", "🏍️ Loop Landmark"],
   bestMonths: [9, 10, 11, 12, 1, 2, 3, 4],
   bestTimeOfDay: "6-9 AM gives the best odds of the cloud sea and sunrise light; if fog is heavy that morning, waiting until it burns off (later morning, closer to midday) can actually give clearer general views of the valley instead",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 45,
+  },
   entranceFee: "Free (roadside viewpoints)",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=23.06521535060752,105.00120271105881",

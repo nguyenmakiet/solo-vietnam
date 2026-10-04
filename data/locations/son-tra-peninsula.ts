@@ -16,6 +16,10 @@ export const sonTraPeninsula: Location = {
   tags: ["🐒 Red-Shanked Douc Langur", "🌿 Nature Reserve", "🏍️ Scenic Drive", "buddhism", "french-colonial-era"],
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
   bestSeasonNote: "Mar - Sep (dry season, clear roads, best wildlife sightings). Oct - Feb brings rain and fog; roads can be slippery.",
+  timeNeeded: {
+    minMinutes: 390,
+    maxMinutes: 1440,
+  },
   entranceFee: "Free",
   openingHours: "Open daily. Best 5:30-9:00 AM for wildlife. Avoid after dark - forest roads are dangerous at night.",
   mapUrl: "https://www.google.com/maps?q=16.122257078414076,108.27692670069526",

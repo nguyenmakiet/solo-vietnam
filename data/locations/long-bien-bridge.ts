@@ -17,6 +17,10 @@ export const longBienBridge: Location = {
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
   bestSeasonNote: "Oct - Apr (cool dry season); Oct-Nov brings reed grass season on the Red River rock beach below the bridge.",
   bestTimeOfDay: "Early morning for golden light and minimal traffic, or 3-5 PM for warm afternoon light and local activity.",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 45,
+  },
   entranceFee: "Free",
   openingHours: "Open 24 hours - pedestrian and bicycle access at all times",
   mapUrl: "https://www.google.com/maps?q=21.04008590793085,105.85037194035824",

@@ -16,6 +16,10 @@ export const minhMangTomb: Location = {
   tags: ["👑 Most Architecturally Grand Tomb", "🌊 Lake & Pavilion Gardens", "nguyen-dynasty"],
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
   bestSeasonNote: "Jan - Feb (most comfortable weather - ideal). Feb - Apr and Sep - Nov also good (dry season).",
+  timeNeeded: {
+    minMinutes: 90,
+    maxMinutes: 120,
+  },
   entranceFee: "Adults 150,000 VND / Children (7-12) 30,000 VND",
   openingHours: "7:30 AM - 5:30 PM daily. Best: 7-9 AM or 3-5 PM to avoid the midday heat.",
   mapUrl: "https://www.google.com/maps?q=16.387662100068777,107.57082605265036",

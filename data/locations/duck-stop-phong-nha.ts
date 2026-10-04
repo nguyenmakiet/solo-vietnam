@@ -17,6 +17,10 @@ export const duckStopPhongNha: Location = {
   bestMonths: [4, 5, 6, 7, 8],
   bestSeasonNote: "Apr - Aug is the dry season and the more reliable window - the rural, unpaved sections of road getting out here turn muddy and harder to navigate in the Sep-Mar rainy season.",
   bestTimeOfDay: "Aim outside peak tour-group hours (roughly late afternoon) for a quieter experience and better photos without crowds. A popular pairing: Duck Stop in the morning, Phong Nha Cave in the afternoon",
+  timeNeeded: {
+    minMinutes: 30,
+    maxMinutes: 60,
+  },
   entranceFee: "Around 100,000 VND/person for the duck experience (feeding and 'massage') plus a light snack; buffalo riding is a separate add-on for around 50,000 VND. Duck feed itself is included and unlimited. Cash only - there's no card payment on-site",
   openingHours: "Daily, roughly 8:30 AM - 5:00/6:00 PM",
   mapUrl: "https://www.google.com/maps?q=17.604600505245507,106.36632612569426",
