@@ -15,8 +15,14 @@
 /* ── HERO (text-led) ── */
 .home-hero {
   background: var(--color-paper);
-  padding: 64px 24px 48px;
+  /* bottom = CTA-to-strip gap: 40px on mobile (was 48), 48px from 768px */
+  padding: 64px 24px 40px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .home-hero {
+    padding-bottom: 48px;
+  }
 }
 .home-hero-inner {
   max-width: 760px;
@@ -152,7 +158,8 @@
   max-width: 680px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* two stats on the intro's 680px measure: equal halves, no stretched gaps */
+  grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid var(--color-teal);
 }
 .home-stat {
@@ -164,6 +171,19 @@
 .home-stat + .home-stat {
   padding-left: 16px;
   border-left: 1px solid var(--color-line);
+}
+/* Wider screens: the pair sits at its natural width under the full-measure
+   rule instead of being stretched into two half-empty columns */
+@media (min-width: 768px) {
+  .home-stats {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .home-stat {
+    padding-right: 56px;
+  }
+  .home-stat + .home-stat {
+    padding-left: 56px;
+  }
 }
 .home-stat-num {
   margin: 0;
@@ -402,6 +422,12 @@
 .home-dest-card-img img {
   object-fit: cover;
   border-radius: var(--radius-image);
+}
+/* Single-column mobile: 16/9 is 10% shorter than 16/10, a gentle crop */
+@media (max-width: 560px) {
+  .home-dest-card-img {
+    aspect-ratio: 16 / 9;
+  }
 }
 .home-dest-card-body {
   padding: 16px 20px 18px;

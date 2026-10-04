@@ -122,16 +122,12 @@ export default function Home() {
       <section className="home-stats-section">
         <dl className="home-stats">
           <div className="home-stat">
-            <dt className="home-stat-label">Locations mapped</dt>
+            <dt className="home-stat-label">Locations explored</dt>
             <dd className="home-stat-num">{LOCATION_COUNT_LABEL}</dd>
           </div>
           <div className="home-stat">
             <dt className="home-stat-label">Provinces explored</dt>
             <dd className="home-stat-num">63</dd>
-          </div>
-          <div className="home-stat">
-            <dt className="home-stat-label">Hidden places discovered</dt>
-            <dd className="home-stat-num">80+</dd>
           </div>
         </dl>
       </section>
