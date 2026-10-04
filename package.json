@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "build:search-index": "tsx scripts/build-search-index.ts",
-    "audit:taxonomy": "tsx scripts/audit-taxonomy.ts"
+    "audit:taxonomy": "tsx scripts/audit-taxonomy.ts",
+    "audit:best-time": "tsx scripts/audit-best-time.ts"
   },
   "dependencies": {
     "@svg-maps/vietnam": "^2.0.0",

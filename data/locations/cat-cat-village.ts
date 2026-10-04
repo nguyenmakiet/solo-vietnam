@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catCatVillage: Location = {
   slug: "cat-cat-village",
   name: "Cat Cat Village",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.33089349327537,
@@ -14,8 +14,8 @@ export const catCatVillage: Location = {
   categories: ["culture"],
   experiences: ["culture", "history", "photography", "walking-tour"],
   tags: ["💧 Waterfall", "🚶 Walking Trail", "hmong-culture", "french-colonial-era"],
-  bestTime: "Sep - Nov (golden rice terraces, cool weather - best). May - Sep (warm, sunny). Tết (Lunar New Year) for festivals and traditional performances.",
-  bestMonths: [1, 2, 9, 10, 11],
+  bestTime: "Apr - Oct is the ideal window - the climate is mild with less rain, making it easy to get around and explore the village, and many traditional H'Mông festivals take place during this period. Sep - Oct adds golden rice terraces.",
+  bestMonths: [4, 5, 6, 7, 8, 9, 10],
   entranceFee: "150,000 VND adult, ~70,000-80,000 VND child (1m-1.4m), free under 1m. Traditional costume rental: 50,000-150,000 VND/outfit.",
   openingHours: "5:00 AM - 10:00 PM. Return to Sa Pa town before dark to avoid mountain road risk and night cold.",
   mapUrl: "https://maps.google.com/?q=22.3301,103.8325",
@@ -64,7 +64,7 @@ export const catCatVillage: Location = {
       difficulty: "Steep stone-paved stairs and paths, slippery when wet. Extensive walking required to cover the village and waterfall. Allow a half day rather than rushing.",
       safety: "Negotiate motorbike fares before agreeing - drivers commonly ask 100,000 VND round trip at the entrance. Wooden platforms/structures can be slippery from moisture - use designated viewpoints rather than improvised spots.",
       accessibility: "Entrance fee 150,000 VND adult. Electric cart (10,000 VND, may require waiting) or motorbike (negotiate) available for the return uphill walk. Costume rental 50,000-150,000 VND. Open 5 AM-10 PM but return before dark.",
-      seasonal: "Sep-Nov: golden rice terraces, cool comfortable weather - best overall. May-Sep: warm, sunny, good for general visits. Tết (Lunar New Year): festivals, folk games, traditional H'mong performances. Winter: cold, occasional fog.",
+      seasonal: "Apr-Oct: mild climate with less rain - the easiest time to get around and explore, and the season of many traditional H'Mông festivals. Sep-Oct: golden rice terraces. Winter: cold, occasional fog.",
     },
     visitorTips: [
       "Go in with realistic expectations - the village is heavily developed for tourism, not an untouched settlement",

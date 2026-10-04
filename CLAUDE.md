@@ -134,6 +134,17 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 
 - Each location is a `.ts` file with structured data fields
 - Fields include: `highlights`, `thingsToKnow`, `visitorTips`, `FAQ`, `sentiment`, `bestMonths` (number[]), nearby locations, similar experiences
+
+### `bestMonths` semantic
+
+`bestMonths: number[]` is user-facing (month strip on location pages) and feeds the `/locations` filter and destination derivation. It lists **every month the location is reasonably worth considering for a visit** - not only the peak, driest or safest season.
+
+- **Include** secondary seasons that offer a different valid experience (e.g. greener scenery, festivals, harvest), even with caveats such as heat, crowds, light rain or cold. Explain the trade-off in the season text.
+- **Exclude** months the content explicitly or materially recommends avoiding.
+- **Exclude seasons that are worth seeing but dangerous** (e.g. a waterfall at its strongest in the rainy season while the trail becomes muddy and dangerous). Keep them out of `bestMonths` and describe them in the season text instead - see `datanla-waterfall`, `phi-lieng-waterfall`.
+- A month mentioned in passing is not a recommendation: conditionals ("if visiting in summer...") and facility statements ("open year-round", "air-conditioned year-round") do not add months.
+- Never guess months. If the content does not support them, flag `// TODO: verify`.
+- Check consistency with `npm run audit:best-time` (report: `reports/best-time-audit.md`).
 - AI insights generated via Outscraper pipeline: max 30 reviews/location, min 30 words/review, prioritizing 3-4 star ratings
 - **Anti-hallucination rule**: if data is uncertain, leave field empty or flag with `// TODO: verify` - never fabricate
 

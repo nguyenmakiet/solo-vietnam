@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bacSonValley: Location = {
   slug: "bac-son-valley",
   name: "Bắc Sơn Valley",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lang-son"],
   destination: "",
   lat: 21.898614655260356,
@@ -15,7 +15,7 @@ export const bacSonValley: Location = {
   experiences: ["photography", "trekking", "culture", "motorcycling"],
   tags: ["🌾 Rice Terraces", "🏔️ Karst Peaks", "🛵 Scenic Ride", "ethnic-minority-culture"],
   bestTime: "Jul - Oct (golden rice harvest, peak season). Feb - Apr (spring blossoms, Lồng Tồng festival). Nov - Jan for trekking in cool weather.",
-  bestMonths: [2, 3, 4, 7, 8, 9, 10],
+  bestMonths: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
   entranceFee: "Free",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.898614655260356,106.33466895888493",

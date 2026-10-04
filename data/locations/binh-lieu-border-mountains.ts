@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const binhLieuBorderMountains: Location = {
   slug: "binh-lieu-border-mountains",
   name: "Bình Liêu Border Mountains",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 21.64893803864023,
@@ -15,7 +15,7 @@ export const binhLieuBorderMountains: Location = {
   experiences: ["trekking", "photography", "culture", "motorcycling"],
   tags: ["🌾 Reed Flower Season", "🏔️ Border Ridge Trek", "🪨 Cột Mốc 1305", "👘 Ethnic Villages", "ethnic-minority-culture"],
   bestTime: "Late Oct - mid Nov (reed flowers at peak bloom). Sep for golden rice terraces. Dec - Jan for frost and year-end festivals.",
-  bestMonths: [9, 10, 11, 12],
+  bestMonths: [1, 9, 10, 11, 12],
   entranceFee: "Free (parking at Cột Mốc 1305 base: 50,000 VND)",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.64893803864023,107.44002584112907",

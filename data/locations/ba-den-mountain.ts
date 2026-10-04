@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baDenMountain: Location = {
   slug: "ba-den-mountain",
   name: "Ba Den Mountain",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["tay-ninh"],
   destination: "",
   lat: 11.382433262739763,
@@ -15,7 +15,7 @@ export const baDenMountain: Location = {
   experiences: ["cable-car", "trekking", "culture", "photography", "history", "religious-site-visit", "hiking"],
   tags: ["⛰️ Highest Peak South", "🛕 Pilgrimage Site", "📸 Panoramic Views", "buddhism", "folk-religion"],
   bestTime: "Nov - May (dry season, clear summit views); rainy season (Jun - Oct) suits trekkers who prefer cooler trails and lush greenery over clear photos. Best photo light is 7-9 AM before the crowds and haze build up",
-  bestMonths: [1, 2, 3, 4, 5, 11, 12],
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   entranceFee: "General admission: 10,000 VND/adult, 5,000 VND/child (cable car tickets are separate - see tips)",
   openingHours: "5:00 AM - 6:00 PM (cable car); trekking routes accessible from dawn",
   mapUrl: "https://www.google.com/maps?q=11.382433262739763,106.17120718468603",

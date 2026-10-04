@@ -9,6 +9,7 @@ import FaqAccordion from "@/components/FaqAccordion"
 import "./destination.css"
 import FallbackImage from "@/components/FallbackImage"
 import { stripLeadingEmoji } from "@/lib/text"
+import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function getImageSrc(heroImage?: string): string {
@@ -292,7 +293,7 @@ export default async function DestinationPage({
                       <div className="location-card-desc">{loc.seoDescription}</div>
                     </div>
                     <div className="location-card-footer">
-                      <span>{loc.bestTime}</span>
+                      <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : loc.bestTime}</span>
                       <span>→</span>
                     </div>
                   </Link>
