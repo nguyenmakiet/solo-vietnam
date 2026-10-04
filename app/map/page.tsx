@@ -207,18 +207,12 @@ export default function MapPage() {
     })
   }, [mapReady, activeExp, hoveredExp, selectedLoc])
 
-  // Click to zoom to experience markers
-  const handleExpClick = useCallback((expValue: string) => {
-    if (!mapRef.current || !LRef.current) return
-    const L = LRef.current
-
-    if (activeExp === expValue) {
-      setActiveExp(null)
-      return
-    }
-
-    setActiveExp(expValue)
+  // Select one experience (null = all locations) and zoom to its markers
+  const selectExp = useCallback((expValue: string | null) => {
     setSelectedLoc(null)
+    setActiveExp(expValue)
+    if (expValue === null || !mapRef.current || !LRef.current) return
+    const L = LRef.current
 
     const matchingLocs = locationsWithCoords.filter(l =>
       l.experiences.includes(expValue as any)
@@ -228,7 +222,78 @@ export default function MapPage() {
       const bounds = L.latLngBounds(matchingLocs.map(l => getLatLng(l)))
       mapRef.current.fitBounds(bounds, { padding: [60, 60], maxZoom: 10 })
     }
-  }, [activeExp])
+  }, [])
+
+  // Desktop list: clicking the active experience again clears it
+  const handleExpClick = useCallback((expValue: string) => {
+    if (!mapRef.current || !LRef.current) return
+    if (activeExp === expValue) {
+      setActiveExp(null)
+      return
+    }
+    selectExp(expValue)
+  }, [activeExp, selectExp])
+
+  // ── Mobile filter sheet ──
+  const [sheetOpen, setSheetOpen] = useState(false)
+  const filterBtnRef = useRef<HTMLButtonElement>(null)
+  const sheetRef = useRef<HTMLDivElement>(null)
+  const wasOpen = useRef(false)
+
+  const closeSheet = useCallback(() => setSheetOpen(false), [])
+
+  // Focus into the sheet on open, back to the filter control on close;
+  // lock page scroll while the modal sheet is open
+  useEffect(() => {
+    if (sheetOpen) {
+      wasOpen.current = true
+      document.body.style.overflow = "hidden"
+      const checked = sheetRef.current?.querySelector<HTMLElement>("[aria-checked='true']")
+      checked?.focus()
+    } else if (wasOpen.current) {
+      wasOpen.current = false
+      document.body.style.overflow = ""
+      filterBtnRef.current?.focus()
+    }
+  }, [sheetOpen])
+
+  // Escape closes; Tab stays inside the sheet
+  const onSheetKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Escape") {
+      e.preventDefault()
+      closeSheet()
+      return
+    }
+    if (e.key !== "Tab" || !sheetRef.current) return
+    const focusables = sheetRef.current.querySelectorAll<HTMLElement>("button:not([disabled])")
+    const first = focusables[0]
+    const last = focusables[focusables.length - 1]
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+  }
+
+  const countFor = (value: string | null) => (value ? expCounts[value] ?? 0 : locationsWithCoords.length)
+  const sheetOptions = [
+    { value: null as string | null, label: "All locations" },
+    ...experiences.filter(e => (expCounts[e.value] ?? 0) > 0).map(e => ({ value: e.value as string | null, label: e.label })),
+  ]
+
+  // ── Selected card: swipe down to dismiss (touch only; close button stays) ──
+  const swipeStart = useRef<number | null>(null)
+  const popupRef = useRef<HTMLDivElement>(null)
+  const onPopupTouchStart = (e: React.TouchEvent) => { swipeStart.current = e.touches[0].clientY }
+  const onPopupTouchMove = (e: React.TouchEvent) => {
+    if (swipeStart.current === null || !popupRef.current) return
+    const dy = Math.max(0, e.touches[0].clientY - swipeStart.current)
+    popupRef.current.style.transform = `translateY(${dy}px)`
+  }
+  const onPopupTouchEnd = (e: React.TouchEvent) => {
+    if (swipeStart.current === null || !popupRef.current) return
+    const dy = e.changedTouches[0].clientY - swipeStart.current
+    swipeStart.current = null
+    popupRef.current.style.transform = ""
+    if (dy > 60) setSelectedLoc(null)
+  }
 
   // Close popup on map click
   useEffect(() => {
@@ -244,12 +309,14 @@ export default function MapPage() {
     : locationsWithCoords.length
 
   const activeLabel = effectiveExp ? experiences.find(e => e.value === effectiveExp)?.label : null
+  const selectedLabel = activeExp ? experiences.find(e => e.value === activeExp)?.label : null
+  const showCount = countFor(activeExp)
 
   return (
     <div className="map-page-wrap">
 
       {/* Header: compact editorial context; the map stays dominant */}
-      <header className="map-header">
+      <header className="map-header" inert={sheetOpen}>
         <nav className="map-header-crumb" aria-label="Breadcrumb">
           <Link href="/">Home</Link>
           <span aria-hidden="true">/</span>
@@ -266,8 +333,45 @@ export default function MapPage() {
         </div>
       </header>
 
+      {/* Mobile filter: one compact control; opens the experience sheet */}
+      <div className="map-filterbar" inert={sheetOpen}>
+        <button
+          ref={filterBtnRef}
+          type="button"
+          className={`map-filter-btn${activeExp ? " is-active" : ""}`}
+          aria-haspopup="dialog"
+          aria-expanded={sheetOpen}
+          onClick={() => setSheetOpen(true)}
+        >
+          {activeExp ? (
+            <>
+              <span className={dotClass(activeExp)} aria-hidden="true" />
+              <span className="map-filter-btn-label">{selectedLabel}</span>
+              <span className="map-filter-btn-count">· {showCount}</span>
+            </>
+          ) : (
+            <>
+              <span className="map-filter-btn-kicker">Filter ·</span>
+              <span className="map-filter-btn-label">All locations</span>
+              <span className="map-filter-btn-count">{showCount}</span>
+              <svg className="map-filter-btn-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+            </>
+          )}
+        </button>
+        {activeExp && (
+          <button
+            type="button"
+            className="map-filter-clear"
+            aria-label={`Clear filter: ${selectedLabel}`}
+            onClick={() => selectExp(null)}
+          >
+            ×
+          </button>
+        )}
+      </div>
+
       {/* Main body */}
-      <div className="map-body">
+      <div className="map-body" inert={sheetOpen}>
 
         {/* Map */}
         <div className="map-area">
@@ -275,7 +379,14 @@ export default function MapPage() {
 
           {/* Selected location */}
           {selectedLoc && (
-            <div className="map-popup" onClick={(e) => e.stopPropagation()}>
+            <div
+              ref={popupRef}
+              className="map-popup"
+              onClick={(e) => e.stopPropagation()}
+              onTouchStart={onPopupTouchStart}
+              onTouchMove={onPopupTouchMove}
+              onTouchEnd={onPopupTouchEnd}
+            >
               <Link href={`/locations/${selectedLoc.slug}`} className="map-popup-card-link">
                 <div className="map-popup-thumb">
                   <PopupImage key={selectedLoc.slug} src={popupImageUrl(selectedLoc.heroImage)} alt={selectedLoc.name} />
@@ -354,6 +465,50 @@ export default function MapPage() {
           </div>
         </nav>
       </div>
+
+      {/* Mobile experience sheet (modal) */}
+      {sheetOpen && (
+        <div className="map-sheet-layer">
+          <div className="map-sheet-backdrop" onClick={closeSheet} aria-hidden="true" />
+          <div
+            ref={sheetRef}
+            className="map-sheet"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="map-sheet-title"
+            onKeyDown={onSheetKeyDown}
+          >
+            <div className="map-sheet-head">
+              <h2 id="map-sheet-title" className="map-sheet-title">Browse by experience</h2>
+              <button type="button" className="map-sheet-close" aria-label="Close filter" onClick={closeSheet}>×</button>
+            </div>
+            <div className="map-sheet-list" role="radiogroup" aria-labelledby="map-sheet-title">
+              {sheetOptions.map((o) => {
+                const checked = activeExp === o.value
+                return (
+                  <button
+                    key={o.value ?? "all"}
+                    type="button"
+                    role="radio"
+                    aria-checked={checked}
+                    className={`map-sheet-option${checked ? " is-checked" : ""}`}
+                    onClick={() => { if (!checked) selectExp(o.value) }}
+                  >
+                    <span className={o.value ? dotClass(o.value) : "ui-dot"} aria-hidden="true" />
+                    <span className="map-sheet-option-label">{o.label}</span>
+                    <span className="map-sheet-option-count">{countFor(o.value)}</span>
+                  </button>
+                )
+              })}
+            </div>
+            <div className="map-sheet-foot">
+              <button type="button" className="ui-btn map-sheet-show" onClick={closeSheet}>
+                Show {showCount} {showCount === 1 ? "place" : "places"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
