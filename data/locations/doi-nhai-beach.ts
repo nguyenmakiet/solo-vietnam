@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const doiNhaiBeach: Location = {
   slug: "doi-nhai-beach",
   name: "Đồi Nhái Beach",
-  updatedAt: "2026-09-17",
+  updatedAt: "2026-10-04",
   provinces: ["ba-ria-vung-tau"],
   destination: "",
   lat: 10.389740360346483,
@@ -15,7 +15,7 @@ export const doiNhaiBeach: Location = {
   experiences: ["beach", "camping", "kitesurfing"],
   tags: ["🪁 Kitesurfing Spot", "🏕️ Wild Camping", "🌊 Undeveloped Beach", "🐚 Crab & Snail Foraging"],
   bestTime: "Windy days give the best kitesurfing conditions; early morning is quietest for swimming and camping",
-  bestMonths: [1, 2, 3, 4, 11, 12],
+  bestMonths: [12, 1, 2, 3, 4],
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=10.389740360346483,107.15635316774474",
