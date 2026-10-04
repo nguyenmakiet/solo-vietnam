@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoDynastyCitadel: Location = {
   slug: "ho-dynasty-citadel",
   name: "Ho Dynasty Citadel",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["thanh-hoa"],
   destination: "",
   lat: 20.074269163206647,
@@ -14,8 +14,8 @@ export const hoDynastyCitadel: Location = {
   categories: ["history", "architecture"],
   experiences: ["history", "photography", "walking-tour"],
   tags: ["🏯 UNESCO Heritage", "🪨 Stone Citadel", "👑 14th Century", "🌾 Rural Countryside", "medieval-vietnam"],
-  bestTime: "Roughly 7-9 AM or 4-5:30 PM for the best light and coolest temperatures; if visiting in summer (May-Aug), stick to early morning or late afternoon specifically to avoid the harsh midday heat",
-  bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestTime: "Nov - Apr is the ideal period - cooler, less rain, and clearer weather. May - Aug is still visitable; go early morning (roughly 7-9 AM) or late afternoon (4-5:30 PM) to avoid the strong heat. Sep - Oct brings unstable weather and heavy rain that can affect the visit",
+  bestMonths: [11, 12, 1, 2, 3, 4, 5, 6, 7, 8],
   entranceFee: "40,000 VND/adult, 20,000 VND for children aged 8-15 (some sources cite lower rates at secondary gates, so this can vary by entry point - confirm at the ticket booth)",
   openingHours: "Roughly 7:00 AM - 5:30 PM in summer, 7:00 AM - 5:00 PM in winter",
   mapUrl: "https://www.google.com/maps?q=20.074269163206647,105.60681662780148",
@@ -62,7 +62,7 @@ export const hoDynastyCitadel: Location = {
       difficulty: "Requires substantial walking across a large area; wear comfortable footwear. Exits aren't always intuitive and may require walking long distances back to the entrance.",
       safety: null,
       accessibility: "Can be explored on foot, bicycle, or motorbike. Multiple entry gates exist (north, east, and west gates, alongside the main south gate). Some ticket booths at secondary gates may be unstaffed at times.",
-      seasonal: "Hot and dry inside the citadel in summer; plan visits to avoid peak heat. Ongoing restoration work (2025-2028) may affect specific areas at any given time.",
+      seasonal: "Nov-Apr is the ideal period (cooler, less rain, clearer). May-Aug is hot and dry inside the citadel - plan visits to avoid peak heat. Sep-Oct brings unstable weather and heavy rain. Ongoing restoration work (2025-2028) may affect specific areas at any given time.",
     },
     visitorTips: [
       "Enter through the south gate (the main entrance, with ticket booth, guides, and the small museum) for the clearest orientation and information",

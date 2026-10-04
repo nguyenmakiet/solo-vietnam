@@ -11,7 +11,7 @@ Months: 1 = Jan ... 12 = Dec. "Lunar Jan-Mar" ≈ solar Feb-Apr.
 | # | Location | Current bestMonths | Evidence in the file | Question for owner | Proposed default | Owner answer |
 |---|---|---|---|---|---|---|
 | 1 | `ba-ho-waterfall` | Jan-Aug | `bestTime`: Feb-Aug "most reliably safe" (dry season, swimming); Dec-Jan "sometimes" jade-green water "at the tail end of flood season, so check conditions"; **"Avoid Sep-Nov"** (flash floods). Safety/FAQ: flash floods "roughly September to November". | Is the Dec-Jan jade-green window worth considering? Today Jan is in and Dec is out, which splits the same window. | `[12, 1, 2, 3, 4, 5, 6, 7, 8]` - include Dec (the danger warning only covers Sep-Nov; Dec-Jan carries a "check conditions" caveat) | |
-| 2 | `nhat-beach` | Mar-Oct | **(supported elsewhere)** `bestTime` is time-of-day only, but insights.seasonal and FAQ say "best conditions roughly March to October: calmer water, warmer weather, less wind". Tip: "November to December brings green algae season - the boulders turn vivid green". | Keep Mar-Oct, or add Nov-Dec for the green-algae photography season ("windier conditions" outside Mar-Oct)? | `[3, 4, 5, 6, 7, 8, 9, 10]` KEEP | |
+| 2 | `bai-nhat` (file `nhat-beach.ts`) | Mar-Oct | **(supported elsewhere)** `bestTime` is time-of-day only, but insights.seasonal and FAQ say "best conditions roughly March to October: calmer water, warmer weather, less wind". Tip: "November to December brings green algae season - the boulders turn vivid green". | Keep Mar-Oct, or add Nov-Dec for the green-algae photography season ("windier conditions" outside Mar-Oct)? | `[3, 4, 5, 6, 7, 8, 9, 10]` KEEP | |
 | 3 | `bich-dong-pagoda` | Mar-Jun | `bestTime`: late May (golden rice), Mar-Apr (dry, cool). insights.seasonal: "Late May-early Jun: golden rice ... Jan-Mar (lunar): festival season, lively atmosphere. Apr: dry, cool. Rainy season (Jun-Oct): lush green but slippery steps". Tip: lunar festival season is a "good time to visit". | Add the lunar festival season (≈ solar Feb)? Jun is supported (early-June harvest). Should the rainy season (Jul-Oct, "lush green but slippery steps") be included? | `[2, 3, 4, 5, 6]` - add Feb (festival); Jul-Oct stay out | |
 | 4 | `dong-van-market` | Jan-Mar, Oct-Dec | **(supported elsewhere)** insights.seasonal: "Runs year-round. Oct-Mar is the richest atmosphere when highland communities are less busy with farming. Oct-Nov adds buckwheat flowers". `bestTime`: Sunday morning. | Keep Oct-Mar, or open to all 12 (the market runs every Sunday all year)? | `[10, 11, 12, 1, 2, 3]` KEEP | |
 | 5 | `hieu-village` | May-Jun, Sep-Oct | **(supported elsewhere)** insights.seasonal: rice "green in late May-early June and gold in late September-early October". `bestTime`: June has the strongest waterfall flow + first harvest. | Keep the two rice windows? | `[5, 6, 9, 10]` KEEP | |
@@ -33,4 +33,23 @@ Months: 1 = Jan ... 12 = Dec. "Lunar Jan-Mar" ≈ solar Feb-Apr.
 - Several rows (2, 4, 5) are already supported by the location's own insights. Answering OK releases them without data changes, each with an audit override.
 - Rows 6 and 11 need one owner-confirmed sentence each, like `jade-emperor-pagoda`.
 - Row 12 is a status question first.
-- Name correction: the location called "bai-nhat" in earlier reports is the slug `nhat-beach`.
+- Name note: the file is `data/locations/nhat-beach.ts`, but the slug is `bai-nhat` (the earlier "name correction" was wrong; `bai-nhat` is correct).
+
+## Resolution log - Batch 3 (2026-10-04, owner decisions)
+
+| Location | bestMonths before → after | Wording change |
+|---|---|---|
+| `bai-nhat` | Mar-Oct (unchanged) | - |
+| `dong-van-market` | Oct-Mar (unchanged) | - |
+| `hieu-village` | May-Jun + Sep-Oct (unchanged) | - |
+| `an-binh-island` | Apr-Aug (unchanged) | - |
+| `ba-ho-waterfall` | Jan-Aug → Dec-Aug | - (Dec-Jan is already in the text) |
+| `bich-dong-pagoda` | Mar-Jun → Feb-Jun | `bestTime`: "late May - early June", plus "Lunar Jan - Mar (around Feb) for the festival season" (from the existing seasonal insight) |
+| `ta-van-village` | + Aug | - (late-Aug harvest is already in the text) |
+| `hmong-king-palace` | all 12 (unchanged) | `bestTime` opens with the owner-confirmed year-round sentence |
+| `independence-palace` | Nov-Apr → all 12 | `bestTime` opens with the owner-confirmed year-round sentence (the interior is the main experience) |
+| `ho-dynasty-citadel` | Oct-Apr → Nov-Aug | `bestTime` and the seasonal insight rewritten from the source: Nov-Apr ideal; May-Aug visitable early or late in the day; Sep-Oct unstable weather / heavy rain. Restoration note kept |
+| `viet-hai-village` | Feb-Jun + Oct-Dec → Feb-Mar, Jun, Oct-Dec | `bestTime`: added "Oct–Dec is quieter with good conditions" (from the existing seasonal insight). The sheet originally said Oct-Dec was unmentioned; corrected, and the owner chose to include it |
+| `notre-dame-cathedral-saigon` | Nov-Apr → all 12 | `bestTime`: year-round for the exterior and square, with the interior closed for restoration. `status` stays active: the exterior is a valid visit, and the interior closure is already explicit throughout the content |
+
+Released as `batch-3` (12). Audit overrides: `an-binh-island`, `bai-nhat`, `bich-dong-pagoda`, `dong-van-market`, `hieu-village`. Total released: 195.
