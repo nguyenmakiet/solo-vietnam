@@ -21,6 +21,7 @@ export const toVoGate: Location = {
   ],
   bestTime: "This spot works for both sunrise and sunset. For golden light without backlighting, aim for roughly 6-8 AM or 5-6:30 PM; if you want general photos without harsh contrast, staying within the 6 AM-1 PM window generally avoids shooting directly into the sun",
   bestMonths: [1, 2, 3, 4],
+  bestTimeOfDay: "This spot works for both sunrise and sunset. For golden light without backlighting, aim for roughly 6-8 AM or 5-6:30 PM; if you want general photos without harsh contrast, staying within the 6 AM-1 PM window generally avoids shooting directly into the sun",
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.390100951312618,109.09934087255056",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sixSensesBeach: Location = {
   slug: "six-senses-beach",
   name: "Six Senses Beach",
-  updatedAt: "2026-09-13",
+  updatedAt: "2026-10-04",
   provinces: ["vung-tau"],
   destination: "con-dao",
   lat: 8.701360844209008,
@@ -16,6 +16,7 @@ export const sixSensesBeach: Location = {
   tags: ["🏖️ Most Beautiful Beach in Con Dao", "🌊 Pristine Water"],
   bestTime: "Early morning (before 8 AM) for the calmest water, best light, and an empty beach",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
+  bestTimeOfDay: "Early morning (before 8 AM) for the calmest water, best light, and an empty beach",
   entranceFee: "Free for the public sections of the beach; the Six Senses resort frontage is private to guests",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=8.701360844209008,106.63442958678696",

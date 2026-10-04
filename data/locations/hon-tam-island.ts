@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honTamIsland: Location = {
   slug: "hon-tam-island",
   name: "Hòn Tằm Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.177120449066654,
@@ -16,6 +16,7 @@ export const honTamIsland: Location = {
   tags: ["🏝️ Private Island Resort", "🏖️ White Sand Beach", "♨️ Mineral Mud Baths"],
   bestTime: "Feb - Sep (dry season, calm water, best visibility); avoid Tết and major holidays if you want a quieter, less surge-priced visit",
   bestMonths: [2, 3, 4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Feb - Sep (dry season, calm water, best visibility); avoid Tết and major holidays if you want a quieter, less surge-priced visit",
   entranceFee: "From 2026, tickets are sold as whole-island packages rather than separate zone tickets: basic beach entry from around 350,000 VND/adult; mud bath only roughly 350,000-490,000 VND; full combo packages (round-trip boat, buffet lunch, and either mud bath or beach amenities) roughly 700,000-1,040,000 VND/adult depending on what's included. Prices surge during Tết and major holidays (up to ~990,000 VND for the top package). Child pricing is based on height (roughly 1-1.39m)",
   openingHours: "Boats run frequently through the day, roughly every 20-60 minutes from around 8:00 AM to 4:00 PM, with the last return crossing around 4:30-5:00 PM for day visitors - check current times when booking, since the schedule can change and varies by source",
   mapUrl: "https://www.google.com/maps?q=12.177120449066654,109.24323947785186",

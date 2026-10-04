@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muiDien: Location = {
   slug: "mui-dien",
   name: "Mũi Điện (Cape Varella)",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["phu-yen"],
   destination: "",
   lat: 12.895123856614404,
@@ -16,6 +16,7 @@ export const muiDien: Location = {
   tags: ["🏮 Lighthouse", "🌅 First Sunrise", "🌊 Easternmost Cape", "french-colonial-era"],
   bestTime: "Apr - Sep (warm sunny weather, sea breeze, best for lighthouse and swimming)",
   bestMonths: [4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Apr - Sep (warm sunny weather, sea breeze, best for lighthouse and swimming)",
   entranceFee: "30,000 VND",
   openingHours: "Morning: 7:30 - 11:30. Afternoon: 13:30 - 17:00.",
   mapUrl: "https://www.google.com/maps?q=12.895123856614404,109.45894759200604",

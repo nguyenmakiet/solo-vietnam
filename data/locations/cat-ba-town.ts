@@ -16,6 +16,7 @@ export const catBaTown: Location = {
   tags: ["🏘️ Island Town", "🦞 Seafood", "🌅 Harbour Front", "🌙 Cat Ba Nightlife"],
   bestTime: "Apr - Oct (cool and well suited to resort and beach activities); peak season is May - Jul, when the town is busiest",
   bestMonths: [4, 5, 6, 7, 8, 9, 10],
+  bestSeasonNote: "Apr - Oct (cool and well suited to resort and beach activities); peak season is May - Jul, when the town is busiest",
   entranceFee: "Free",
   openingHours: "Open 24 hours - restaurants and bars on 1/4 street and Núi Ngọc street active from 6 PM to midnight",
   mapUrl: "https://www.google.com/maps?q=20.72440008462996,107.04949514147219",

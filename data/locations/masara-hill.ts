@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const masaraHill: Location = {
   slug: "masara-hill",
   name: "Masara Hill",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "",
   lat: 11.516105652285598,
@@ -16,6 +16,7 @@ export const masaraHill: Location = {
   tags: ["🌾 Pink Grass Hill", "🌄 Sunrise & Sunset"],
   bestTime: "Roughly 6-8 AM while dew still lingers on the grass, or after 4 PM for the softest afternoon light - avoid overcast or rainy days if photography is the priority",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestTimeOfDay: "Roughly 6-8 AM while dew still lingers on the grass, or after 4 PM for the softest afternoon light - avoid overcast or rainy days if photography is the priority",
   entranceFee: "Free",
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=11.516105652285598,108.43388764781206",

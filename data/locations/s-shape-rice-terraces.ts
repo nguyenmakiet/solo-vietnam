@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sShapeRiceTerraces: Location = {
   slug: "s-shape-rice-terraces",
   name: "S-Shape Rice Terraces",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-10-04",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: 20.449345402727413,
@@ -16,6 +16,7 @@ export const sShapeRiceTerraces: Location = {
   tags: ["🌾 S-Shaped Paddy", "📸 Iconic Viewpoint", "🌅 Sunset Spot", "🏞️ Pù Luông Highlight"],
   bestTime: "During peak season, aim for around 8-9 AM or 4-5 PM specifically - these windows avoid the worst crowds and traffic, and give enough open space to photograph the curve without other visitors in frame. Golden hour light (especially the afternoon window) also catches the winding road and surrounding limestone slopes best; midday light is flat and far less photogenic",
   bestMonths: [5, 6, 9, 10],
+  bestTimeOfDay: "During peak season, aim for around 8-9 AM or 4-5 PM specifically - these windows avoid the worst crowds and traffic, and give enough open space to photograph the curve without other visitors in frame. Golden hour light (especially the afternoon window) also catches the winding road and surrounding limestone slopes best; midday light is flat and far less photogenic",
   entranceFee: "Free",
   openingHours: "Open 24/7 (best in golden hour)",
   mapUrl: "https://www.google.com/maps?q=20.449345402727413,105.15796254177532",

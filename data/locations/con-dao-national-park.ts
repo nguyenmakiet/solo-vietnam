@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const conDaoNationalPark: Location = {
   slug: "con-dao-national-park",
   name: "Con Dao National Park",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["vung-tau"],
   destination: "con-dao",
   lat: 8.700380477433058,
@@ -16,6 +16,7 @@ export const conDaoNationalPark: Location = {
   tags: ["🐢 Sea Turtle Nesting", "🌿 Marine National Park", "🐠 Coral Reefs", "🥾 Jungle Trails"],
   bestTime: "May - Sep (sea turtle nesting season, calmer seas, lush rainforest). Best overall: May - Aug.",
   bestMonths: [5, 6, 7, 8, 9],
+  bestSeasonNote: "May - Sep (sea turtle nesting season, calmer seas, lush rainforest). Best overall: May - Aug.",
   entranceFee: "60,000 VND/adult, 20,000 VND/student, 10,000 VND/child",
   openingHours: "Park office: 7:00 AM - 5:00 PM. Trails and beaches open daily.",
   mapUrl: "https://www.google.com/maps?q=8.700380477433058,106.59713651574016",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const moocSpring: Location = {
   slug: "mooc-spring",
   name: "Mooc Spring",
-  updatedAt: "2026-09-13",
+  updatedAt: "2026-10-04",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.556813119452748,
@@ -16,6 +16,7 @@ export const moocSpring: Location = {
   tags: ["💧 Natural Spring Pool", "🌿 Jungle"],
   bestTime: "Early morning, before 10 AM, for the clearest water and the fewest crowds",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
+  bestTimeOfDay: "Early morning, before 10 AM, for the clearest water and the fewest crowds",
   entranceFee: "80,000 VND for sightseeing only (no swimming), year-round. For swimming and water activities, the official 2026 pricing from the Phong Nha-Kẻ Bàng Tourism Center is seasonal: a single-zone package (Ghềnh Moọc or Ghềnh Chụm) is 160,000 VND during Apr-Sep and 130,000 VND during Jan-Mar and Oct-Dec; the combined Moọc + Chụm package is 220,000 VND during Apr-Sep and 180,000 VND during the other months (100,000 VND for children in the combo package). Check current rates before visiting, since these can be adjusted. The paid service package includes swimming access, the jump platform, kayak, life jackets, paddles, staff supervision, and resting huts",
   openingHours: "Summer: 7:45 AM–4:30 PM; winter: 8:00 AM–3:30 PM",
   mapUrl: "https://www.google.com/maps?q=17.556813119452748,106.23884445637982",

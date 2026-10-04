@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phatDiemCathedral: Location = {
   slug: "phat-diem-cathedral",
   name: "Phát Diệm Cathedral",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.09305479535071,
@@ -16,6 +16,7 @@ export const phatDiemCathedral: Location = {
   tags: ["⛪ Stone Cathedral", "🏯 Vietnamese Gothic", "🌊 Coastal Plains", "📷 Unique Architecture", "catholicism"],
   bestTime: "Nov - Apr (dry season); Christmas Eve is when the complex looks its best - decorated with festive lights and full of community activity, though it draws the largest crowds of the year",
   bestMonths: [11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Nov - Apr (dry season); Christmas Eve is when the complex looks its best - decorated with festive lights and full of community activity, though it draws the largest crowds of the year",
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours; mass times vary",
   mapUrl: "https://www.google.com/maps?q=20.09305479535071,106.0794963740728",

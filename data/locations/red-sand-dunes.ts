@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const redSandDunes: Location = {
   slug: "red-sand-dunes",
   name: "Red Sand Dunes",
-  updatedAt: "2026-09-11",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 10.949408234413704,
@@ -16,6 +16,7 @@ export const redSandDunes: Location = {
   tags: ["🔴 Red Iron-Oxide Dunes", "🌅 Sunset Views", "🚶 Walking"],
   bestTime: "Sunrise (roughly 5-7 AM) and late afternoon into sunset (roughly 4-6 PM) are both good windows, with softer light and cooler temperatures than midday",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestTimeOfDay: "Sunrise (roughly 5-7 AM) and late afternoon into sunset (roughly 4-6 PM) are both good windows, with softer light and cooler temperatures than midday",
   entranceFee: "Free; optional activities such as sand-sledding cost extra, with sled rental typically around 20,000-50,000 VND",
   openingHours: "Open 24/7; best at sunrise and sunset",
   mapUrl: "https://www.google.com/maps?q=10.949408234413704,108.29650702647355",

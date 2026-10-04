@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taXuaMountain: Location = {
   slug: "ta-xua-mountain",
   name: "Tà Xùa Mountain",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["son-la", "yen-bai"],
   destination: "",
   lat: 21.458552357466253,
@@ -16,6 +16,7 @@ export const taXuaMountain: Location = {
   tags: ["🦕 Dinosaur Spine Ridge", "🌊 Sea of Clouds", "🐢 Turtle Rock", "🌿 Moss Forest"],
   bestTime: "Nov - Apr (dry season, highest chance of sea of clouds, clearest skies)",
   bestMonths: [11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Nov - Apr (dry season, highest chance of sea of clouds, clearest skies)",
   entranceFee: "Free (guide + porter fees apply)",
   openingHours: "Open 24 hours",
   mapUrl: "https://www.google.com/maps?q=21.458552357466253,104.34445105702092",

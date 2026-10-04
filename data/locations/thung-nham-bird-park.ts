@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thungNhamBirdPark: Location = {
   slug: "thung-nham-bird-park",
   name: "Thung Nham Bird Park",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: "20.22245746050601",
@@ -16,6 +16,7 @@ export const thungNhamBirdPark: Location = {
   tags: ["🦅 Egret Colony", "🌿 Wetland", "📸 Wildlife Photography"],
   bestTime: "Apr – Aug (nesting season, largest bird concentrations) or Oct – Nov",
   bestMonths: [4, 5, 6, 7, 8, 10, 11],
+  bestSeasonNote: "Apr - Aug (nesting season, largest bird concentrations) or Oct - Nov",
   entranceFee: "100,000 VND/person (over 1.2m), free for children under 1.2m",
   openingHours: "7:00 AM – 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.22245746050601,105.88641480523839",

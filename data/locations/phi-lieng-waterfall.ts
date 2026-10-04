@@ -16,6 +16,7 @@ export const phiLiengWaterfall: Location = {
   tags: ["💦 7-Tier Waterfall", "🌿 Remote Forest Trek", "🏍️ Motorbike Trail"],
   bestTime: "Nov - Apr (dry season: manageable trails, clear streams, campable base). The May - Oct rainy season brings the strongest, most beautiful flow and is worth seeing, but the trail turns muddy and the descent becomes genuinely dangerous - only go with care and local guidance.",
   bestMonths: [11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Nov - Apr (dry season: manageable trails, clear streams, campable base). The May - Oct rainy season brings the strongest, most beautiful flow and is worth seeing, but the trail turns muddy and the descent becomes genuinely dangerous - only go with care and local guidance.",
   entranceFee: "Free (may need to pass through forest protection station)",
   openingHours: "Open daily. Day trip possible but depart early from Đà Lạt.",
   mapUrl: "https://www.google.com/maps?q=11.883300,108.216700",

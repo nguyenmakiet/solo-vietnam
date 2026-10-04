@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const namDuIslands: Location = {
   slug: "nam-du-islands",
   name: "Nam Du Islands",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "",
   lat: 9.693846746908509,
@@ -16,6 +16,7 @@ export const namDuIslands: Location = {
   tags: ["🏝️ Remote Archipelago", "🌊 Gulf of Thailand", "🐟 Fishing Community"],
   bestTime: "Nov - May (dry season; calm seas and clear water essential for outer island boat access)",
   bestMonths: [1, 2, 3, 4, 5, 11, 12],
+  bestSeasonNote: "Nov - May (dry season; calm seas and clear water essential for outer island boat access)",
   entranceFee: "Free. Ferry from Rạch Giá: 210,000 VND/person one way",
   openingHours: "Open daily; ferry schedule limited - book in advance, weekends sell out fast",
   mapUrl: "https://www.google.com/maps?q=9.683300,104.366700",

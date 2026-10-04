@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const mocChauTeaHills: Location = {
   slug: "moc-chau-tea-hills",
   name: "Moc Chau Tea Hills",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["son-la"],
   destination: "",
   lat: 20.815661,
@@ -16,6 +16,7 @@ export const mocChauTeaHills: Location = {
   tags: ["🍵 Tea Plantations", "🛵 Motorbike Scenic", "🌿 Highland Agriculture"],
   bestTime: "Mar - Apr (new green shoots, mist on leaves) or Oct - Nov (combine with plum and ban blossoms)",
   bestMonths: [3, 4, 10, 11],
+  bestSeasonNote: "Mar - Apr (new green shoots, mist on leaves) or Oct - Nov (combine with plum and ban blossoms)",
   entranceFee: "Free (some private tea hills charge a small gate fee)",
   openingHours: "Open all day. Best light: 6:00 - 7:00 AM and 5:00 - 6:00 PM.",
   mapUrl: "https://www.google.com/maps?q=20.815661,104.717577",

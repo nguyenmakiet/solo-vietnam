@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khaiDinhTomb: Location = {
   slug: "khai-dinh-tomb",
   name: "Khải Định Tomb",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.39915933177038,
@@ -16,6 +16,7 @@ export const khaiDinhTomb: Location = {
   tags: ["👑 Nguyễn Tomb", "🏯 French-Vietnamese Architecture", "✨ Mosaic Interior", "nguyen-dynasty", "french-colonial-era", "french-architecture"],
   bestTime: "Jan - Feb (most comfortable weather in Huế - ideal). Feb - Apr and Sep - Nov also good (dry season, best light for photography).",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
+  bestSeasonNote: "Jan - Feb (most comfortable weather in Huế - ideal). Feb - Apr and Sep - Nov also good (dry season, best light for photography).",
   entranceFee: "Adults 150,000 VND / Children (7-12) 30,000 VND",
   openingHours: "Summer (16 Mar - 15 Oct): 6:30 AM - 6:00 PM. Winter (16 Oct - 15 Mar): 7:00 AM - 5:30 PM. Arrive at least 30-45 minutes before closing for a full visit.",
   mapUrl: "https://www.google.com/maps?q=16.39915933177038,107.59074610662047",

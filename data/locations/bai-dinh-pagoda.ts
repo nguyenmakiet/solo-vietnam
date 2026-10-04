@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baiDinhPagoda: Location = {
   slug: "bai-dinh-pagoda",
   name: "Bái Đính Pagoda",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.268192723940388,
@@ -16,6 +16,7 @@ export const baiDinhPagoda: Location = {
   tags: ["⛩️ Largest Pagoda in Vietnam", "🏯 500 Arhat Statues", "🔔 Giant Bell", "buddhism"],
   bestTime: "Oct - Apr (dry season, cool weather - best for walking). Jan - Mar lunar calendar for festival atmosphere (also the most crowded period - avoid if seeking tranquility).",
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
+  bestSeasonNote: "Oct - Apr (dry season, cool weather - best for walking). Jan - Mar lunar calendar for festival atmosphere (also the most crowded period - avoid if seeking tranquility).",
   entranceFee: "Free entry. Electric cart: 60,000 VND/person round-trip (gate to main complex, ~3.5km), or combo tickets 150,000 VND (cart + bảo tháp access) / 300,000 VND (cart + transfers between zones + bảo tháp) / 390,000 VND (adds Tràng An boat tour). Bảo tháp (tower) alone: 50,000 VND. Guide: 300,000 VND/tour.",
   openingHours: "6:00 AM - 9:00 PM daily. Best before 11 AM or after 3 PM to avoid both crowds and midday heat.",
   mapUrl: "https://www.google.com/maps?q=20.268192723940388,105.85603779913747",

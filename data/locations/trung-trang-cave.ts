@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const trungTrangCave: Location = {
   slug: "trung-trang-cave",
   name: "Trung Trang Cave",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.788685844969777",
@@ -16,6 +16,7 @@ export const trungTrangCave: Location = {
   tags: ["🪨 Largest Cave on Cát Bà", "🦇 Bat Colony", "🥾 National Park"],
   bestTime: "Apr – Sep (dry season, best weather for combining with outdoor activities)",
   bestMonths: [4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Apr - Sep (dry season, best weather for combining with outdoor activities)",
   entranceFee: "120,000 VND adults / 60,000 VND children (includes national park entry - not sold separately)",
   openingHours: "7:00 AM – 4:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.788685844969777,106.99832793371839",

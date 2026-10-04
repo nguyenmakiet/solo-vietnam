@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const oQuyHoPass: Location = {
   slug: "o-quy-ho-pass",
   name: "O Quy Ho Pass",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lao-cai", "lai-chau"],
   destination: "",
   lat: 22.352936964870516,
@@ -16,6 +16,7 @@ export const oQuyHoPass: Location = {
   tags: ["🏔️ Tứ Đại Đỉnh Đèo", "🌫️ Cloud Sea", "🛣️ Epic Road", "🌄 Northwest Loop"],
   bestTime: "Sep - Nov (autumn colour, clear skies). Mar - May (spring blossoms, cloud sea). For cloud sea: 16:00-17:30 daily is the golden window.",
   bestMonths: [3, 4, 5, 9, 10, 11],
+  bestSeasonNote: "Sep - Nov (autumn colour, clear skies). Mar - May (spring blossoms, cloud sea). For cloud sea: 16:00-17:30 daily is the golden window.",
   entranceFee: "Free",
   openingHours: "Open 24 hours. Road may close in severe weather. Best: 16:00-17:30 for cloud sea and sunset.",
   mapUrl: "https://www.google.com/maps?q=22.3547,103.7631",

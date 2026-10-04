@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const anVinhCommunalHouse: Location = {
   slug: "an-vinh-communal-house",
   name: "Đình làng An Vĩnh",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.376064479616458,
@@ -21,6 +21,7 @@ export const anVinhCommunalHouse: Location = {
   ],
   bestTime: "Year-round; the Khao Lề Thế Lính Hoàng Sa ceremony is held annually on the 15th-16th day of the 3rd lunar month, commonly falling in April",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Year-round; the Khao Lề Thế Lính Hoàng Sa ceremony is held annually on the 15th-16th day of the 3rd lunar month, commonly falling in April",
   entranceFee: "Free",
   openingHours: "Open daily during daylight hours",
   mapUrl: "https://www.google.com/maps?q=15.376064479616458,109.10020318216426",

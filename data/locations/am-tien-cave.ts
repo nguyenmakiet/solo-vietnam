@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const amTienCave: Location = {
   slug: "am-tien-cave",
   name: "Am Tiên Cave",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.283351716721526,
@@ -16,6 +16,7 @@ export const amTienCave: Location = {
   tags: ["🐉 Dragon-Mouth Cave", "🏞️ 'Tuyệt Tình Cốc' Lake", "🚴 Lake Cycling"],
   bestTime: "Jan - Apr (cool, dry weather, with Mar-Apr offering the best photography light) and Sep - Nov (pleasant temperatures and fewer rainy days); lotus and water lily bloom on the lake roughly Jun-Jul; avoid Jul-Aug when the stone steps get slippery in heavy rain",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
+  bestSeasonNote: "Jan - Apr (cool, dry weather, with Mar-Apr offering the best photography light) and Sep - Nov (pleasant temperatures and fewer rainy days); lotus and water lily bloom on the lake roughly Jun-Jul; avoid Jul-Aug when the stone steps get slippery in heavy rain",
   entranceFee: "50,000 VND/adult (includes the cave and Am Tiên pagoda); children's pricing varies by source - roughly free under 1m, discounted 1-1.3m. Parking: 10,000 VND motorbike, 30,000-50,000 VND car. Bike rental available on-site for the lake loop.",
   openingHours: "7:00 AM - 6:00 PM daily; arrive before 5 PM to have enough time to see everything",
   mapUrl: "https://www.google.com/maps?q=20.283351716721526,105.91444612825703",

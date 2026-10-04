@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nguomNgaoCave: Location = {
   slug: "nguom-ngao-cave",
   name: "Nguom Ngao Cave",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.845576774719714,
@@ -16,6 +16,7 @@ export const nguomNgaoCave: Location = {
   tags: ["🪨 Stalactite Cave", "🧗 Cave Walk", "🌿 Off the Beaten Path"],
   bestTime: "Oct - Apr (dry season, easier road access); May - Sep is rainier and cooler inside, but occasionally allows a short boat ride through part of the cave",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Oct - Apr (dry season, easier road access); May - Sep is rainier and cooler inside, but occasionally allows a short boat ride through part of the cave",
   entranceFee: "Standard ticket (self-guided, about 1km, ~45 minutes): 45,000 VND. Full guided ticket (the entire ~3.3km cave with a local guide, about 2 hours): approximately 195,000 VND, including safety gear such as a reflective vest and headlamp since parts of the route involve wading through water. Children under 1.2m free. Nothing is sold inside the cave, so bring water and supplies beforehand",
   openingHours: "7:30 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.845576774719714,106.70639496631787",

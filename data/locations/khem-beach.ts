@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khemBeach: Location = {
   slug: "khem-beach",
   name: "Khem Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: "10.0366035",
@@ -16,6 +16,7 @@ export const khemBeach: Location = {
   tags: ["🏖️ White Sand Beach", "🌅 Sunrise Spot", "🌊 Southeast Coast", "🧂 Salt History"],
   bestTime: "May - Sep (southwest monsoon season; Khem faces southeast so it is sheltered from the southwest wind and the water is at its clearest and calmest during these months)",
   bestMonths: [5, 6, 7, 8, 9],
+  bestSeasonNote: "May - Sep (southwest monsoon season; Khem faces southeast so it is sheltered from the southwest wind and the water is at its clearest and calmest during these months)",
   entranceFee: "Free (public beach section). Resort section: sunbeds 100,000-150,000 VND per 4 hours (some free with food/drink purchase).",
   openingHours: "Open 24/7 - best visited early morning for sunrise and before crowds arrive",
   mapUrl: "https://maps.google.com/?q=10.0289,104.0439",

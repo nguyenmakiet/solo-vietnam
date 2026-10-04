@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bidoupNuiBaNationalPark: Location = {
   slug: "bidoup-nui-ba-national-park",
   name: "Bidoup Núi Bà National Park",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 12.133961464408484,
@@ -16,6 +16,7 @@ export const bidoupNuiBaNationalPark: Location = {
   tags: ["🌲 Cloud Forest", "🦅 Birdwatching", "🥾 Multi-day Trek"],
   bestTime: "Jan - Apr is specifically cited as the most beautiful window (dry, lush vegetation after the winter dormancy); the wider Nov - Apr dry season is also drier than the rest of the year. Avoid Sep - Oct in particular, when trails are heavily overgrown, leeches are most active, and sudden heavy rain is common",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Jan - Apr is specifically cited as the most beautiful window (dry, lush vegetation after the winter dormancy); the wider Nov - Apr dry season is also drier than the rest of the year. Avoid Sep - Oct in particular, when trails are heavily overgrown, leeches are most active, and sudden heavy rain is common",
   entranceFee: "From 40,000 VND park entry; guided treks additional cost",
   openingHours: "7:00 AM - 5:00 PM (park HQ); overnight treks by arrangement",
   mapUrl: "https://www.google.com/maps?q=12.133961464408484,108.53404748226983",

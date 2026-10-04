@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const laNgauStream: Location = {
   slug: "la-ngau-stream",
   name: "La Ngâu Stream",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "",
   lat: 11.236315974562396,
@@ -16,6 +16,7 @@ export const laNgauStream: Location = {
   tags: ["🌿 Jungle Stream", "💧 Natural Pools"],
   bestTime: "Dec - Apr (dry season, clear water, accessible trails). Best water conditions: 12:00 - 16:00 daily.",
   bestMonths: [1, 2, 3, 4, 12],
+  bestSeasonNote: "Dec - Apr (dry season, clear water, accessible trails). Best water conditions: 12:00 - 16:00 daily.",
   entranceFee: "Day visit: 20,000 VND/person. Overnight: ~50,000 VND/group of 2-4 (varies by campsite, some free). Tent rental: 250,000 VND/tent (2-3 person, includes blanket, pillow, light).",
   openingHours: "Open 24 hours. Water levels fluctuate significantly through the day - follow campsite manager's guidance.",
   mapUrl: "https://www.google.com/maps?q=11.236315974562396,107.78594527850618",

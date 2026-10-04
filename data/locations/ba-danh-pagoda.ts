@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baDanhPagoda: Location = {
   slug: "ba-danh-pagoda",
   name: "Ba Danh Pagoda",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-nam"],
   destination: "",
   lat: 20.416700,
@@ -16,6 +16,7 @@ export const baDanhPagoda: Location = {
   tags: ["🛕 Famous Proverb Pagoda", "🌿 Riverside Setting", "🧘 Tứ Pháp Worship", "buddhism", "folk-religion"],
   bestTime: "Feb - Apr (pleasant weather and the annual Chùa Bà Đanh Festival in the 2nd lunar month, usually March), and Sep - Nov for cooler temperatures and fewer visitors",
   bestMonths: [2, 3, 4, 9, 10, 11],
+  bestSeasonNote: "Feb - Apr (pleasant weather and the annual Chùa Bà Đanh Festival in the 2nd lunar month, usually March), and Sep - Nov for cooler temperatures and fewer visitors",
   entranceFee: "30,000 VND/adult; children under 6 free",
   openingHours: "6:00 AM - 6:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=20.416700,105.916700",

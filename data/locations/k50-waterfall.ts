@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const k50Waterfall: Location = {
   slug: "k50-waterfall",
   name: "K50 Waterfall",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["gia-lai"],
   destination: "",
   lat: "14.519415223584105",
@@ -16,6 +16,7 @@ export const k50Waterfall: Location = {
   tags: ["💦 54m Waterfall", "🌿 Jungle Trek", "🦅 Swallow Cave"],
   bestTime: "Jan – Jun (dry season; trails safer, rivers lower, leeches somewhat less abundant)",
   bestMonths: [1, 2, 3, 4, 5, 6],
+  bestSeasonNote: "Jan - Jun (dry season; trails safer, rivers lower, leeches somewhat less abundant)",
   entranceFee: "Fees vary depending on route, transport and guide arrangements - confirm current fees when arranging entry with the reserve.",
   openingHours: "Pre-arranged entry only - permits required through Kon Chu Rang Nature Reserve management",
   mapUrl: "https://www.google.com/maps?q=14.519415223584105,108.60631909493844",

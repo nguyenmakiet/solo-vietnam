@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const anBangBeach: Location = {
   slug: "an-bang-beach",
   name: "An Bang Beach",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.888946897083208,
@@ -16,6 +16,7 @@ export const anBangBeach: Location = {
   tags: ["🏖️ Hoi An Beach", "🚲 Cycling Distance", "🌊 Watersports", "🌅 Sunrise"],
   bestTime: "Mar - Sep (dry season, calm seas, clear water - ideal). Oct - Feb brings unpredictable rain and rougher conditions.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
+  bestSeasonNote: "Mar - Sep (dry season, calm seas, clear water - ideal). Oct - Feb brings unpredictable rain and rougher conditions.",
   entranceFee: "Free",
   openingHours: "Beach open 24 hours. Official swimming hours: summer 4:30 AM - 7:00 PM; winter 5:00 AM - 6:00 PM. Swimming outside these hours is not supervised.",
   mapUrl: "https://www.google.com/maps?q=15.888946897083208,108.35416826046463",

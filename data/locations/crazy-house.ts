@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const crazyHouse: Location = {
   slug: "crazy-house",
   name: "Crazy House",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.934822914969137,
@@ -16,6 +16,7 @@ export const crazyHouse: Location = {
   tags: ["🏠 Gaudí-Style Architecture", "🎨 Art & Design", "🏨 Functioning Guesthouse"],
   bestTime: "Sep - Nov (cool weather, fewer crowds - best). Avoid Dec - Feb (Tết) and Jun - Jul (summer holidays) when crowds peak.",
   bestMonths: [9, 10, 11],
+  bestSeasonNote: "Sep - Nov (cool weather, fewer crowds - best). Avoid Dec - Feb (Tết) and Jun - Jul (summer holidays) when crowds peak.",
   entranceFee: "Free under 1.2m, 30,000 VND (1.2-1.4m), 80,000 VND (1.4m+). Overnight stays in themed rooms: ~1,000,000-2,700,000 VND.",
   openingHours: "8:30 AM - 6:00 PM (some sources cite an earlier 8:00 AM opening - arrive early regardless to beat tour groups).",
   mapUrl: "https://www.google.com/maps?q=11.934822914969137,108.43136784176984",

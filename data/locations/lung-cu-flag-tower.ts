@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lungCuFlagTower: Location = {
   slug: "lung-cu-flag-tower",
   name: "Lũng Cú Flag Tower",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.363427116840306,
@@ -16,6 +16,7 @@ export const lungCuFlagTower: Location = {
   tags: ["🚩 Northernmost Point", "🏔️ Viewpoint", "🇻🇳 Landmark"],
   bestTime: "Sep - Nov (buckwheat flowers + clear skies) or Mar - May (spring blossoms, clear weather). Jun - Aug also good (dry, cool, green).",
   bestMonths: [3, 4, 5, 6, 7, 8, 9, 10, 11],
+  bestSeasonNote: "Sep - Nov (buckwheat flowers + clear skies) or Mar - May (spring blossoms, clear weather). Jun - Aug also good (dry, cool, green).",
   entranceFee: "25,000 VND/adult, free for children under 1.2m",
   openingHours: "8:00 AM - 5:00 PM daily, including holidays.",
   mapUrl: "https://maps.google.com/?q=23.3786,105.3336",

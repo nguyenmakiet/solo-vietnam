@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lanHaBay: Location = {
   slug: "lan-ha-bay",
   name: "Lan Hạ Bay",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.731973471390784",
@@ -16,6 +16,7 @@ export const lanHaBay: Location = {
   tags: ["🛶 Kayaking", "🌊 Cleaner than Ha Long", "🏖️ Hidden Beaches", "✨ Bioluminescence Night Kayaking", "🧗 Limestone Rock Climbing"],
   bestTime: "Apr – Jun or Sep – Nov (calm water, best visibility, fewest boats)",
   bestMonths: [4, 5, 6, 9, 10, 11],
+  bestSeasonNote: "Apr - Jun or Sep - Nov (calm water, best visibility, fewest boats)",
   entranceFee: "From 120,000 VND/person (children from 60,000 VND)",
   openingHours: "Tours depart from Cát Bà town daily from 8:00 AM",
   mapUrl: "https://www.google.com/maps?q=20.731973471390784,107.05945027622396",

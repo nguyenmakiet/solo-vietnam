@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoaLuAncientCapital: Location = {
   slug: "hoa-lu-ancient-capital",
   name: "Hoa Lư Ancient Capital",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.286875757053178,
@@ -16,6 +16,7 @@ export const hoaLuAncientCapital: Location = {
   tags: ["🏯 10th Century Capital", "⛩️ Đinh & Lê Temples", "📖 Vietnam's First Capital", "medieval-vietnam", "folk-religion"],
   bestTime: "Mar - May (festival season, golden rice fields, mild weather - ideal). Oct - Apr also good (dry season).",
   bestMonths: [1, 2, 3, 4, 5, 10, 11, 12],
+  bestSeasonNote: "Mar - May (festival season, golden rice fields, mild weather - ideal). Oct - Apr also good (dry season).",
   entranceFee: "20,000 VND/person (over 1.2m), free for children under 1.2m",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.286875757053178,105.91801053940709",

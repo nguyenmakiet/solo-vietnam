@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hangEn: Location = {
   slug: "hang-en",
   name: "Hang En Cave",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.552330941921934,
@@ -16,6 +16,7 @@ export const hangEn: Location = {
   tags: ["🦅 World's 3rd Largest Cave", "🏕️ Camp Inside the Cave", "🥾 2-Day Trek", "🌊 Underground River"],
   bestTime: "Dec - Feb (sunbeam season - light shafts into the cave, mild trekking temperature). Jun - Aug (dry, warm, best swimming). Mar - May (spring, butterfly season, green forest).",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 12],
+  bestSeasonNote: "Dec - Feb (sunbeam season - light shafts into the cave, mild trekking temperature). Jun - Aug (dry, warm, best swimming). Mar - May (spring, butterfly season, green forest).",
   entranceFee: "8,800,000 VND (~333 USD)/person. All-inclusive: guide, porters, meals, camping gear, caving equipment, travel insurance, national park fees.",
   openingHours: "Tour-based only; no independent access. Closed Oct - Nov for flood season.",
   mapUrl: "https://www.google.com/maps?q=17.552330941921934,106.1436802588683",

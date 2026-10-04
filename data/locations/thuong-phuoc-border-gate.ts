@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thuongPhuocBorderGate: Location = {
   slug: "thuong-phuoc-border-gate",
   name: "Thường Phước Border Gate",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-10-04",
   provinces: ["dong-thap"],
   destination: "",
   lat: 10.910484255076085,
@@ -16,6 +16,7 @@ export const thuongPhuocBorderGate: Location = {
   tags: ["🛂 Vietnam-Cambodia Border", "🌊 Mekong River Crossing", "🚤 River Border"],
   bestTime: "Nov – Apr (dry season; Mekong water levels lower and river crossings more predictable)",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season; Mekong water levels lower and river crossings more predictable)",
   entranceFee: "Free (border crossing fees apply for those transiting to Cambodia)",
   openingHours: "Border gate hours: 6:00 AM – 6:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.910484255076085,105.19761803298447",

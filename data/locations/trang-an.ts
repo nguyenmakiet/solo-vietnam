@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const trangAn: Location = {
   slug: "trang-an",
   name: "Trang An",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.253239649044314,
@@ -16,6 +16,7 @@ export const trangAn: Location = {
   tags: ["🚣 Boat Tour", "🪨 UNESCO Heritage", "⛩️ Temples"],
   bestTime: "Jan - Mar (cool, clear, dry - peak season). Sep - Nov (quieter, mild). Apr - Jun for sunny water reflections.",
   bestMonths: [1, 2, 3, 4, 5, 6, 9, 10, 11],
+  bestSeasonNote: "Jan - Mar (cool, clear, dry - peak season). Sep - Nov (quieter, mild). Apr - Jun for sunny water reflections.",
   entranceFee: "300,000 VND adults / 150,000 VND children (from Jan 2026, includes boat seat, life jacket, travel insurance)",
   openingHours: "7:00 AM - 5:00 PM. Best: early morning or from 3:00 PM onward to avoid midday heat.",
   mapUrl: "https://maps.google.com/?q=20.2800,105.9100",

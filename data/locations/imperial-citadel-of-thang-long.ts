@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const imperialCitadelOfThangLong: Location = {
   slug: "imperial-citadel-of-thang-long",
   name: "Imperial Citadel of Thang Long",
-  updatedAt: "2026-09-30",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.032608",
@@ -16,6 +16,7 @@ export const imperialCitadelOfThangLong: Location = {
   tags: ["🏯 UNESCO World Heritage", "👑 1,000 Years of Imperial History", "🌙 Night Tour", "🔍 Archaeological Site", "medieval-vietnam"],
   bestTime: "Oct - Apr (cool dry season; avoid public holidays when crowds are largest)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Oct - Apr (cool dry season; avoid public holidays when crowds are largest)",
   entranceFee: "30,000 VND adults / 15,000 VND students. Night tour: 300,000 VND adults / 150,000 VND children under 12 / free for children under 5",
   openingHours: "8:00 AM - 5:00 PM daily. Night tour: Every Friday and Saturday at 7:00 PM (1.5 hours)",
   mapUrl: "https://www.google.com/maps?q=21.032608,105.839832",

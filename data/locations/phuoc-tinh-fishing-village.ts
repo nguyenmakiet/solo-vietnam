@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuocTinhFishingVillage: Location = {
   slug: "phuoc-tinh-fishing-village",
   name: "Phước Tỉnh Fishing Village",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-10-04",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.402412684439296,
@@ -16,6 +16,7 @@ export const phuocTinhFishingVillage: Location = {
   tags: ["🎣 Active Fishing Port", "🦐 Fresh Seafood", "🚢 Fishing Fleet"],
   bestTime: "4:00-7:00 AM for the fish market at full activity; 7-9 AM is pleasant for a slower walk watching daily life; 4-6 PM brings a calmer mood, good for walking the harbourside embankment and watching sunset over the port",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestTimeOfDay: "4:00-7:00 AM for the fish market at full activity; 7-9 AM is pleasant for a slower walk watching daily life; 4-6 PM brings a calmer mood, good for walking the harbourside embankment and watching sunset over the port",
   entranceFee: "Free",
   openingHours: "Fish market most active 4:00 – 8:00 AM daily",
   mapUrl: "https://www.google.com/maps?q=10.402412684439296,107.17863802885124",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bachMaTemple: Location = {
   slug: "bach-ma-temple",
   name: "Bach Ma Temple",
-  updatedAt: "2026-09-29",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.03575979681265, 
@@ -21,6 +21,7 @@ export const bachMaTemple: Location = {
   ],
   bestTime: "Any time of day or year - it's an indoor site, though hours vary by source (see openingHours)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Any time of day or year - it's an indoor site, though hours vary by source (see openingHours)",
   entranceFee: "20,000 VND (as of June 2026) - notably, unlike most temples and pagodas in the area, which are free to enter",
   openingHours: "Open daily 8:00 AM-12:00 PM and 1:30-5:30 PM; additional evening hours 7:00-9:00 PM on Fridays, Saturdays and Sundays. Hours may change during festivals or special events.",
   mapUrl: "https://www.google.com/maps?q=21.03575979681265,105.85102404212795",

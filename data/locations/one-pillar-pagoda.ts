@@ -16,6 +16,7 @@ export const onePillarPagoda: Location = {
   tags: ["🏛️ National Symbol", "🪷 Lotus Pagoda", "👑 11th Century", "📷 Iconic Architecture", "buddhism", "medieval-vietnam"],
   bestTime: "Oct - Apr (cool dry season; the pagoda is photogenic year-round but spring lotus blooms enhance the setting)",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  bestSeasonNote: "Oct - Apr (cool dry season; the pagoda is photogenic year-round but spring lotus blooms enhance the setting)",
   entranceFee: "Free for Vietnamese citizens; 25,000 VND for foreign visitors (some sources cite a small student/senior discount for foreigners) - this is a fee for the pagoda itself, separate from the Ho Chi Minh Mausoleum next door, which is free for everyone",
   openingHours: "Daily, 7:00 AM - 6:00 PM",
   mapUrl: "https://www.google.com/maps?q=21.0355,105.8349",

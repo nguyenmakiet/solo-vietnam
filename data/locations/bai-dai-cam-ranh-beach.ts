@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baiDaiCamRanhBeach: Location = {
   slug: "bai-dai-cam-ranh-beach",
   name: "Bai Dai Cam Ranh Beach",
-  updatedAt: "2026-10-03",
+  updatedAt: "2026-10-04",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.110626,
@@ -20,6 +20,7 @@ export const baiDaiCamRanhBeach: Location = {
   ],
   bestTime: "Roughly 5-7 AM for sunrise and the calmest water, or after 3:30-4 PM for softer light - afternoons draw more local crowds",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
+  bestTimeOfDay: "Roughly 5-7 AM for sunrise and the calmest water, or after 3:30-4 PM for softer light - afternoons draw more local crowds",
   entranceFee: "Free (public freshwater shower/changing facilities cost around 10,000 VND)",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=12.110626,109.194845",

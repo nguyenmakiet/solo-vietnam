@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuQuyIsland: Location = {
   slug: "phu-quy-island",
   name: "Phú Quý Island",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 10.50468862452949,
@@ -16,6 +16,7 @@ export const phuQuyIsland: Location = {
   tags: ["🏝️ Offshore Island", "🤿 Diving & Snorkeling", "🚴 Island Cycling", "🌊 Clear Water"],
   bestTime: "Mar - Aug (dry season, calm seas, best diving visibility)",
   bestMonths: [3, 4, 5, 6, 7, 8],
+  bestSeasonNote: "Mar - Aug (dry season, calm seas, best diving visibility)",
   entranceFee: "Free; ferry fare from Phan Thiết 250,000 - 400,000 VND",
   openingHours: "Open daily; ferry schedule weather-dependent (1-2 sailings/day)",
   mapUrl: "https://www.google.com/maps?q=10.516700,108.933300",

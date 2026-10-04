@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuocHaiFishingVillage: Location = {
   slug: "phuoc-hai-fishing-village",
   name: "Phước Hải Fishing Village",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.417691097954336,
@@ -16,6 +16,7 @@ export const phuocHaiFishingVillage: Location = {
   tags: ["🎣 Fishing Village + Beach Combo", "🦪 Oysters & Fresh Seafood", "📸 Sunrise Photography", "🏖️ Weekend Escape from Saigon"],
   bestTime: "Nov - Apr (dry season, calm sea, warm sun). Avoid Saturday if you want to avoid crowds.",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season, calm sea, warm sun). Avoid Saturday if you want to avoid crowds.",
   entranceFee: "Free. Freshwater rinse after swimming: 15,000 VND/person.",
   openingHours: "Fish market and seafood street: most active 6:00 - 9:00 AM. Beach: best 4:00 - 6:00 PM (cooler, less sun).",
   mapUrl: "https://www.google.com/maps?q=10.466700,107.383300",

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thungKhePass: Location = {
   slug: "thung-khe-pass",
   name: "Thung Khe Pass",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["hoa-binh"],
   destination: "",
   lat: 20.659973197100356,
@@ -16,6 +16,7 @@ export const thungKhePass: Location = {
   tags: ["🏔️ 1,000m White Limestone Pass", "🌄 Mai Chau Valley Views", "🛵 Hanoi–Mai Chau Route", "🌽 Roadside Market"],
   bestTime: "Sep - Nov (golden rice season, clearest skies). Mar - May (spring clarity). Avoid Jul - Aug (rain, landslide risk).",
   bestMonths: [3, 4, 5, 9, 10, 11],
+  bestSeasonNote: "Sep - Nov (golden rice season, clearest skies). Mar - May (spring clarity). Avoid Jul - Aug (rain, landslide risk).",
   entranceFee: "Free",
   openingHours: "Open; drive in daylight only. Avoid evening - fog thickens significantly after dark.",
   mapUrl: "https://www.google.com/maps?q=20.659973197100356,105.14358253798274",

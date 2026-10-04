@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const konTumWoodenChurch: Location = {
   slug: "kon-tum-wooden-church",
   name: "Kon Tum Wooden Church",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kon-tum"],
   destination: "",
   lat: 14.345152402216648,
@@ -16,6 +16,7 @@ export const konTumWoodenChurch: Location = {
   tags: ["⛪ French Mission Architecture", "🪵 All-Wood Construction", "🏛️ Colonial Heritage", "catholicism", "french-colonial-era", "french-architecture"],
   bestTime: "Sep - Dec is generally considered ideal (dry season, clear skies, soft light for photos); Nov-Dec specifically coincides with Christmas decorations and a livelier atmosphere around the grounds",
   bestMonths: [9, 10, 11, 12],
+  bestSeasonNote: "Sep - Dec is generally considered ideal (dry season, clear skies, soft light for photos); Nov-Dec specifically coincides with Christmas decorations and a livelier atmosphere around the grounds",
   entranceFee: "Free",
   openingHours: "Daily, 6:00 AM - 6:00 PM. Sunday Mass: 5:00, 7:30, and 4:00 PM; weekday Mass: 5:00 AM and 5:30 PM. If visiting on a Sunday, wait until after 9 AM to avoid disrupting the morning services",
   mapUrl: "https://www.google.com/maps?q=14.349700,107.999800",

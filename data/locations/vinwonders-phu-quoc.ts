@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vinWondersPhuQuoc: Location = {
   slug: "vinwonders-phu-quoc",
   name: "VinWonders Phú Quốc",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: "10.340924472067309",
@@ -16,6 +16,7 @@ export const vinWondersPhuQuoc: Location = {
   tags: ["🎡 Theme Park", "🏖️ Private Beach", "🎠 Family Activities", "🌊 Water Park"],
   bestTime: "Nov – Apr (dry season, best weather for outdoor areas and water park)",
   bestMonths: [1, 2, 3, 4, 11, 12],
+  bestSeasonNote: "Nov - Apr (dry season, best weather for outdoor areas and water park)",
   entranceFee: "950,000 VND adults. 710,000 VND (children 100-140cm and seniors 60+). Free for children under 1m. Buggy (internal transport): ~150,000 VND/ticket - cheaper if bundled with entry ticket.",
   openingHours: "9:00 AM – 7:30 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.340924472067309,103.8546052948659",

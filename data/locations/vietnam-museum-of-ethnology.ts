@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vietnamMuseumOfEthnology: Location = {
   slug: "vietnam-museum-of-ethnology",
   name: "Vietnam Museum of Ethnology",
-  updatedAt: "2026-08-24",
+  updatedAt: "2026-10-04",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.040622256391238",
@@ -16,6 +16,7 @@ export const vietnamMuseumOfEthnology: Location = {
   tags: ["🏛️ Best Museum in Vietnam", "🎎 54 Ethnic Groups", "🌿 Outdoor Village", "ethnic-minority-culture"],
   bestTime: "Oct - Apr (cool dry season; outdoor exhibits are best explored outside of summer heat and rain)",
   bestMonths: [10, 11, 12, 1, 2, 3, 4],
+  bestSeasonNote: "Oct - Apr (cool dry season; outdoor exhibits are best explored outside of summer heat and rain)",
   entranceFee: "40,000 VND adults / free for children under 6. Water puppet show: 50,000 VND extra.",
   openingHours: "Tue - Sun: 8:30 AM - 5:30 PM. Closed Mondays. Hours may vary on public holidays.",
   mapUrl: "https://www.google.com/maps?q=21.040622256391238,105.7985165933281",
