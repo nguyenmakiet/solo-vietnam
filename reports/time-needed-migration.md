@@ -4,13 +4,27 @@ Adds `Location.timeNeeded = { minMinutes, maxMinutes }`: the total time a travel
 
 ## Method
 
-- Every string in every Location object was read: metadata, `bestSeasonNote` / `bestTimeOfDay`, `tips`, `content.*` (including `richSections` blocks, tables and quick facts), `insights.*` (highlights, things to know, visitor tips, FAQ, sentiment), `entranceFee`, `openingHours` and tags. Each sentence containing duration language (minutes, hours, days, nights, half/full day, overnight, allow / spend / budget, "time needed", ...) was reviewed in the context of its location, and a value was decided by hand per location.
+- Every string in every Location object was scanned: metadata, `bestSeasonNote` / `bestTimeOfDay`, `tips`, `content.*` (including `richSections` blocks, tables and quick facts), `insights.*` (highlights, things to know, visitor tips, FAQ, sentiment), `entranceFee`, `openingHours` and tags. Each sentence containing duration language (minutes, hours, days, nights, half/full day, overnight, allow / spend / budget, "time needed", ...) was reviewed in the context of its location, and a value was decided by hand per location.
 - Excluded by definition: travel time to the location, opening hours, waiting/queue time, the length of a tour or trip that bundles other places, and a stay at a destination that the content uses as a base for other activities.
 - A sub-activity (a climb, a single boat leg, a show) is used only when it is the location's main experience; otherwise the location is left unresolved.
 - Several statements that agree or overlap are merged into one range (class M). Statements that cannot be reconciled are NEEDS_RESEARCH.
-- Normalisation: 1 hour = 60, 1 day = 1440, "2 days 1 night" = 2880, "3 days 2 nights" = 4320 (the day count sets the value). An explicit clock window is used as stated (e.g. "a full day (7:30 AM to 6 PM)" = 630).
-- "Half a day" without hours has no conversion rule, so those locations are NEEDS_RESEARCH (see Owner decisions). Phrases that give nights only ("minimum 2 nights", "1-2 nights") are also NEEDS_RESEARCH, because the elapsed duration is unclear.
 - `updatedAt` was not changed; no existing text was edited.
+
+## Normalisation rules (owner-approved)
+
+| Source phrase | Minutes |
+|---|---|
+| 1 hour | 60 |
+| an explicit clock window, e.g. "a full day (7:30 AM to 6 PM)" | as stated (630) |
+| "a full day" with no clock window | **480** - a typical morning-to-afternoon allocation, not 24 hours |
+| multi-day by day count: "2 days 1 night" / "2 days" | 2880 |
+| "3 days 2 nights" / "3 days" | 4320 |
+| "half a day" without hours | no canonical conversion - left NEEDS_RESEARCH |
+| nights only ("minimum 2 nights", "1-2 nights", "2 nights 1 day") | no canonical conversion - left NEEDS_RESEARCH |
+
+"A full day" = 480 is applied to 10 locations: `bau-sau`, `cat-ba-national-park`, `con-dao-national-park`, `cua-tu-stream`, `dinh-mountain`, `hoi-an-ancient-town`, `imperial-city-hue`, `phoenix-unicorn-islands-my-tho`, `son-tra-peninsula`, `vinpearl-safari`.
+
+"Half a day" without hours affects 10 locations, left NEEDS_RESEARCH: `an-bang-beach`, `dau-tieng-lake`, `doi-nhai-beach`, `dray-nur-dray-sap-waterfalls`, `hon-thom-cable-car`, `mooc-spring`, `my-khe-beach`, `o-quy-ho-pass`, `thang-hen-lake`, `tuyen-lam-lake`.
 
 ## Summary
 
@@ -21,15 +35,9 @@ Adds `Location.timeNeeded = { minMinutes, maxMinutes }`: the total time a travel
 | Not enough evidence (UNRESOLVED) | 71 |
 | Evidence present but unclear or conflicting (NEEDS_RESEARCH) | 28 |
 | Conflicting duration evidence | 15 (4 reconciled into a range, 11 left NEEDS_RESEARCH) |
-| Populated values flagged for manual review | 27 (18 judgement calls + 9 using the full day = 1440 rule) |
+| Populated values requiring manual review | 17 |
 
 Of the 164 populated locations, 17 have a `maxMinutes` above 1,440 (multi-day).
-
-## Owner decisions needed
-
-1. **"Half a day" without hours** (10 locations: `an-bang-beach`, `dau-tieng-lake`, `doi-nhai-beach`, `dray-nur-dray-sap-waterfalls`, `hon-thom-cable-car`, `mooc-spring`, `my-khe-beach`, `o-quy-ho-pass`, `thang-hen-lake`, `tuyen-lam-lake`). No value was set. A rule (for example "half a day = 240-360") would let these be filled.
-2. **"A full day" = 1440** (9 locations: `cat-ba-national-park`, `con-dao-national-park`, `cua-tu-stream`, `dinh-mountain`, `hoi-an-ancient-town`, `imperial-city-hue`, `phoenix-unicorn-islands-my-tho`, `son-tra-peninsula`, `vinpearl-safari`). Applied from the rule "1 ngày = 1440". For a day visit this reads as 24 hours; if a daytime figure is preferred (as used where the content gives a clock window, e.g. `ba-na-cable-car` 630, `vinwonders-phu-quoc` 600, `lan-ha-bay` 540), these values need a rule change.
-3. **Nights-only phrasing** ("minimum 2 nights", "2 nights 1 day", "rewards two to three nights"): left NEEDS_RESEARCH. A rule such as "N nights = N+1 days" would resolve most of them.
 
 ## Distribution
 
@@ -39,9 +47,9 @@ Of the 164 populated locations, 17 have a `maxMinutes` above 1,440 (multi-day).
 | 30-60 min | 85 | 47 |
 | 1-2 hours | 31 | 39 |
 | 2-4 hours | 13 | 36 |
-| 4-8 hours | 5 | 7 |
+| 4-8 hours | 10 | 14 |
 | 8-24 hours | 3 | 4 |
-| 1-2 days | 12 | 20 |
+| 1-2 days | 7 | 13 |
 | 2-3 days | 1 | 4 |
 | 3+ days | 0 | 1 |
 
@@ -194,7 +202,6 @@ Populated values that rest on a judgement call (owner check recommended):
 |---|---|---|
 | `a-pa-chai` | 3h - 4h | Marker visit 3-4h round trip from Border Post 317; "2-3 days" includes travel from Điện Biên Phủ (excluded) |
 | `bidoup-nui-ba-national-park` | 1h30 - 2 days | Short trails 1.5-3h; summit is a 2-day trek |
-| `cat-ba-town` | - | Town is a base: 30-45 min walking loop vs "2-3 night base" for other activities - neither is the town visit itself |
 | `chua-chan-mountain` | 2h - 2 days | Cable car + trail 2-4h; power-pole trail 4-6h; "2 days and 1 night is the more rewarding way" |
 | `co-to-island` | 2 days - 3 days | "Time needed: 2-3 days is the standard trip length" (content says this accounts for travel time) |
 | `da-ploa-stream` | 1 day | "Time needed: 1 day and 1 night if camping overnight" (1 day = 1440) |
@@ -211,7 +218,7 @@ Populated values that rest on a judgement call (owner check recommended):
 | `yavly-waterfall` | 30 min - 2 days | "Time needed: 30 minutes to 1 hour if just passing through ... or 2 days/1 night if camping" |
 | `yen-tu-mountain` | 3h - 6h | Cable car only ~3h; cable up/walk down 3-4h; full walk 4-6h one way (descent not stated) |
 
-Plus the full day = 1440 and half-day groups under Owner decisions, and every NEEDS_RESEARCH row above.
+Every NEEDS_RESEARCH row above also needs a source or an owner decision.
 
 ## Populated values (164)
 
@@ -233,7 +240,7 @@ Plus the full day = 1440 and half-day groups under Owner decisions, and every NE
 | `bai-nhat` | 30 | 120 | 30 min - 2h | D | tips | "as little as 30 minutes ... up to 2 hours" |
 | `bai-tu-long-bay` | 4320 | 5760 | 3 days - 4 days | M | howToGetThere, tips, accessibility | "2 nights or 3 days 2 nights" standard (4320); accessibility "2-3 night cruise minimum" (up to 4D3N = 5760) |
 | `bat-pagoda-soc-trang` | 120 | 180 | 2h - 3h | D | whatToExpect | "Budget 2-3 hours" |
-| `bau-sau` | 1440 | 2880 | 1 day - 2 days | M | FAQ | "Allow a full day" (1 day = 1440); overnight "strongly recommended" (2 days 1 night = 2880) |
+| `bau-sau` | 480 | 2880 | 8h - 2 days | M | FAQ | "Allow a full day" (full day = 480); overnight "strongly recommended" (2 days 1 night = 2880) |
 | `bay-mau-coconut-forest` | 40 | 50 | 40 min - 50 min | A | whatToExpect, sentiment | Basket-boat round trip "about 50 minutes" / "roughly 40-minute ride" |
 | `ben-hai-river` | 90 | 150 | 1h30 - 2h30 | D | whatToExpect | "1.5-2.5 hours" |
 | `ben-thanh-market` | 45 | 120 | 45 min - 2h | D | tips | "45 minutes ... up to 2 hours" |
@@ -245,21 +252,21 @@ Plus the full day = 1440 and half-day groups under Owner decisions, and every NE
 | `cai-rang-floating-market` | 180 | 210 | 3h - 3h30 | M | tips, travelTips, FAQ | Boat trip from Ninh Kiều is the visit: "Total door-to-door: about 3-3.5 hours", "Budget 3 hours total"; 1.5-2h is the time at the market itself |
 | `can-gio-monkey-island` | 60 | 180 | 1h - 3h | D | visitorTips | "plan 1-3 hours" |
 | `cape-ca-na` | 30 | 60 | 30 min - 1h | D | travelTips | "Budget 30-60 minutes at the cape itself" |
-| `cat-ba-national-park` | 90 | 1440 | 1h30 - 1 day | M | whatToExpect, tips, travelTips | Route 1 1.5-2h; Route 2 3-4h one way; "a full day if you're doing the Việt Hải trek or the summit" |
+| `cat-ba-national-park` | 90 | 480 | 1h30 - 8h | M | whatToExpect, tips, travelTips | Route 1 1.5-2h; Route 2 3-4h one way; "a full day if you're doing the Việt Hải trek or the summit" (full day = 480) |
 | `cat-cat-village` | 120 | 180 | 2h - 3h | D | FAQ, tips | "Budget 2-3 hours minimum"; also "Allow a half day" |
 | `cat-co-beach` | 120 | 180 | 2h - 3h | D | travelTips | "2-3 hours is enough" |
 | `chua-chan-mountain` | 120 | 2880 | 2h - 2 days | M | FAQ, whatToExpect | Cable car + trail 2-4h; power-pole trail 4-6h; "2 days and 1 night is the more rewarding way" |
 | `co-thach-beach` | 60 | 60 | 1h | A | whatToExpect | "An hour or so of walking and scrambling covers the main formation" |
 | `co-to-island` | 2880 | 4320 | 2 days - 3 days | D | tips, travelTips | "Time needed: 2-3 days is the standard trip length" (content says this accounts for travel time) |
-| `con-dao-national-park` | 1440 | 1440 | 1 day | D | tips, FAQ | ~7.5km day trek circuit: "Allow a full day" |
+| `con-dao-national-park` | 480 | 480 | 8h | D | tips, FAQ | ~7.5km day trek circuit: "Allow a full day" (full day = 480) |
 | `cu-chi-tunnels` | 120 | 180 | 2h - 3h | D | travelTips | "the site itself takes 2-3 hours" |
-| `cua-tu-stream` | 1440 | 2880 | 1 day - 2 days | M | intro, travelTips, FAQ | Day trip to Gate 3 = "a full day"; "1-night 2-day" / 2-day Gate 7 camp |
+| `cua-tu-stream` | 480 | 2880 | 8h - 2 days | M | intro, travelTips, FAQ | Day trip to Gate 3 = "a full day" (480); "1-night 2-day" / 2-day Gate 7 camp (2880) |
 | `da-ploa-stream` | 1440 | 1440 | 1 day | D | tips | "Time needed: 1 day and 1 night if camping overnight" (1 day = 1440) |
 | `dalat-railway-station` | 45 | 150 | 45 min - 2h30 | D | tips, travelTips | "about 45 minutes" station only; "about 2.5 hours" with the round-trip train |
 | `dam-trau-beach` | 60 | 240 | 1h - 4h | D | tips | "Time needed: 1-4 hours" |
 | `dark-cave` | 180 | 240 | 3h - 4h | D | tips, whatToExpect, FAQ | "Time needed: 3-4 hours" |
 | `datanla-waterfall` | 60 | 240 | 1h - 4h | D | tips, travelTips | "Allow 1-4 hours" |
-| `dinh-mountain` | 120 | 1440 | 2h - 1 day | D | tips, whatToExpect | "Time needed: 2-3 hours ... 4-6 hours or a full day" |
+| `dinh-mountain` | 120 | 480 | 2h - 8h | D | tips, whatToExpect | "Time needed: 2-3 hours ... 4-6 hours or a full day" (full day = 480) |
 | `dong-van-market` | 120 | 120 | 2h | D | FAQ | "give it at least 2 hours" |
 | `duc-pagoda` | 45 | 60 | 45 min - 1h | D | tips | "Time needed: 45-60 minutes" |
 | `duck-stop-phong-nha` | 30 | 60 | 30 min - 1h | D | whatToExpect | "full visit ... closer to 30 minutes to an hour" |
@@ -286,12 +293,12 @@ Plus the full day = 1440 and half-day groups under Owner decisions, and every NE
 | `hoa-lo-prison` | 60 | 120 | 1h - 2h | M | tips, FAQ | "1.5 to 2 hours" with audio guide; "60-90 minutes" without |
 | `hoa-lu-ancient-capital` | 90 | 120 | 1h30 - 2h | D | travelTips, FAQ | "Allow 1.5-2 hours" |
 | `hoan-kiem-lake` | 20 | 25 | 20 min - 25 min | A | whatToExpect, difficulty | Perimeter walk "about 1.7km, 20-25 minutes" |
-| `hoi-an-ancient-town` | 1440 | 4320 | 1 day - 3 days | M | travelTips | "One full day covers the landmarks; two or three days..." |
+| `hoi-an-ancient-town` | 480 | 4320 | 8h - 3 days | M | travelTips | "One full day covers the landmarks" (480); "two or three days" (up to 4320) |
 | `hon-chong-rock-formation` | 30 | 30 | 30 min | D | tips, FAQ | "30 minutes is genuinely sufficient" |
 | `hospital-cave` | 10 | 15 | 10 min - 15 min | D | tips, travelTips | "Budget 10-15 minutes at most" |
 | `hung-temple` | 180 | 240 | 3h - 4h | D | tips, visitorTips | "Plan for 3-4 hours to see the site properly" |
 | `imperial-citadel-of-thang-long` | 120 | 180 | 2h - 3h | D | tips, whatToExpect | "at least 2-3 hours"; "The full visit ... takes 2-3 hours" (Fri/Sat night tour is a separate 1.5h activity) |
-| `imperial-city-hue` | 180 | 1440 | 3h - 1 day | M | seoDescription, travelTips, FAQ | "at least 3-4 hours for the main buildings; a full day covers everything" |
+| `imperial-city-hue` | 180 | 480 | 3h - 8h | M | seoDescription, travelTips, FAQ | "at least 3-4 hours for the main buildings; a full day covers everything" (full day = 480) |
 | `japanese-bridge` | 5 | 10 | 5 min - 10 min | A | FAQ, whatToExpect | "Walking across the bridge takes 5-10 minutes" |
 | `ke-ga-lighthouse` | 60 | 120 | 1h - 2h | D | travelTips, FAQ | "takes 1-2 hours"; "Plan for 1-2 hours at the island in total" |
 | `khai-dinh-tomb` | 45 | 120 | 45 min - 2h | M | tips, FAQ | "45-60 minutes to 1-2 hours depending on pace" / with a guide |
@@ -330,7 +337,7 @@ Plus the full day = 1440 and half-day groups under Owner decisions, and every NE
 | `pac-bo-historic-site` | 240 | 360 | 4h - 6h | D | travelTips, visitorTips | "Allow half a day (roughly 4-6 hours) for the fuller site" |
 | `paradise-cave` | 120 | 360 | 2h - 6h | D | tips, whatToExpect, FAQ | Standard tour "2-3 hours total"; adventure tour "5-6 hours" |
 | `phat-diem-cathedral` | 60 | 90 | 1h - 1h30 | D | tips, FAQ | "At least 1-1.5 hours" |
-| `phoenix-unicorn-islands-my-tho` | 1440 | 1440 | 1 day | D | tips | "One full day is enough to cover the main activities on both islands" |
+| `phoenix-unicorn-islands-my-tho` | 480 | 480 | 8h | D | tips | "One full day is enough to cover the main activities on both islands" (full day = 480) |
 | `phong-nha-botanic-garden` | 30 | 150 | 30 min - 2h30 | D | tips, visitorTips, FAQ | Short route "30-40 minutes round trip"; loops "1.5-2.5 hours" |
 | `phong-nha-cave` | 90 | 90 | 1h30 | D | whatToExpect | "The full round trip takes approximately 1.5 hours" |
 | `phu-quoc-night-market` | 60 | 180 | 1h - 3h | D | tips | "Time needed: 1-3 hours" |
@@ -347,7 +354,7 @@ Plus the full day = 1440 and half-day groups under Owner decisions, and every NE
 | `red-sand-dunes` | 15 | 30 | 15 min - 30 min | M | tips, visitorTips, FAQ | "20-30 minute visit"; "15-30 minutes" |
 | `s-shape-rice-terraces` | 30 | 60 | 30 min - 1h | D | whatToExpect, FAQ | "30 minutes to an hour is enough" |
 | `six-senses-beach` | 60 | 120 | 1h - 2h | D | travelTips | "A visit of 1-2 hours is plenty" |
-| `son-tra-peninsula` | 390 | 1440 | 6h30 - 1 day | I | tips, FAQ | "Half a day minimum" = "A tight half-day (5:30 AM to noon)" (390 min); "a full day is better" |
+| `son-tra-peninsula` | 390 | 480 | 6h30 - 8h | I | tips, FAQ | "Half a day minimum" = "A tight half-day (5:30 AM to noon)" (390 min); "a full day is better" (480) |
 | `sung-sot-cave` | 45 | 60 | 45 min - 1h | D | whatToExpect, FAQ | "45-60 minutes total" |
 | `ta-pa-fields` | 45 | 60 | 45 min - 1h | D | tips | "Time needed: 45-60 minutes" |
 | `ta-pa-temple` | 45 | 90 | 45 min - 1h30 | D | tips | "Time needed: 45-90 minutes" |
@@ -372,7 +379,7 @@ Plus the full day = 1440 and half-day groups under Owner decisions, and every NE
 | `vietnam-military-history-museum` | 120 | 240 | 2h - 4h | M | tips, FAQ | "at least 2 hours"; enthusiasts "3-4 hours" |
 | `vietnam-museum-of-ethnology` | 120 | 150 | 2h - 2h30 | M | tips, FAQ | 1h indoor + 1h outdoor; "About 2.5 hours covers everything" incl. 30-min puppet show |
 | `vinh-trung-fields` | 45 | 60 | 45 min - 1h | D | tips | "Time needed: 45-60 minutes" |
-| `vinpearl-safari` | 180 | 1440 | 3h - 1 day | M | whatToExpect, FAQ | "3-4 hours minimum"; "Each park easily fills a full day" |
+| `vinpearl-safari` | 180 | 480 | 3h - 8h | M | whatToExpect, FAQ | "3-4 hours minimum"; "Each park easily fills a full day" (full day = 480) |
 | `vinwonders-phu-quoc` | 600 | 600 | 10h | I | FAQ | "A full day (9 AM to 7 PM)" = 600 min |
 | `voi-phuc-temple` | 30 | 60 | 30 min - 1h | D | tips | "Time needed: 30-60 minutes" |
 | `war-remnants-museum` | 90 | 180 | 1h30 - 3h | M | tips, FAQ | "Most visitors spend 1.5-2 hours"; "at least 2 hours; serious visitors often need 3" |

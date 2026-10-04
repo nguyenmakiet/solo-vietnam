@@ -4,7 +4,10 @@
  *
  * Rules: when present, timeNeeded is an object with exactly minMinutes and
  * maxMinutes, both integers (not strings), minMinutes > 0 and
- * maxMinutes >= minMinutes. Multi-day values above 1440 are allowed.
+ * maxMinutes >= minMinutes. Normalisation: "a full day" = 480, multi-day
+ * by day count ("2 days 1 night" = 2880), so values above 1440 are allowed.
+ * "Half a day" and nights-only phrasing have no canonical conversion and stay
+ * unresolved.
  * Locations without enough evidence leave the field out
  * (reports/time-needed-migration.md).
  *

@@ -17,7 +17,7 @@ export const bauSau: Location = {
   bestMonths: [1, 2, 3, 4, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Nov - Apr (dry season when water levels drop and wildlife concentrates around the lake; wet season Jul - Oct makes the trek through the forest difficult but the forest sounds and atmosphere are at their most intense)",
   timeNeeded: {
-    minMinutes: 1440,
+    minMinutes: 480,
     maxMinutes: 2880,
   },
   entranceFee: "250,000 VND. Not include Cát Tiên National Park entry (~60,000 VND)",

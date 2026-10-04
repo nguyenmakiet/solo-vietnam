@@ -18,7 +18,7 @@ export const catBaNationalPark: Location = {
   bestSeasonNote: "Apr - Jun or Sep - Nov (dry season, trails accessible, best wildlife sightings)",
   timeNeeded: {
     minMinutes: 90,
-    maxMinutes: 1440,
+    maxMinutes: 480,
   },
   entranceFee: "From 80,000 VND (160,000 for full sightseeing)",
   openingHours: "7:00 AM – 4:00 PM",

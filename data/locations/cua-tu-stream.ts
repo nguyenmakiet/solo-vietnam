@@ -17,7 +17,7 @@ export const cuaTuStream: Location = {
   bestMonths: [4, 5, 6, 7, 8, 9, 10],
   bestSeasonNote: "Apr - Oct (water levels are best for swimming and the waterfalls are active; avoid during heavy flood season)",
   timeNeeded: {
-    minMinutes: 1440,
+    minMinutes: 480,
     maxMinutes: 2880,
   },
   entranceFee: "10,000 VND at Gate 1 (cửa 1). Environmental fee (phí vệ sinh môi trường) may apply - introduced recently to keep the stream cleaner. Parking: 50,000 VND/vehicle. Free if entering via the forest route without passing the gate.",

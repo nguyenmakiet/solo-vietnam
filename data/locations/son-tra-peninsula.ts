@@ -18,7 +18,7 @@ export const sonTraPeninsula: Location = {
   bestSeasonNote: "Mar - Sep (dry season, clear roads, best wildlife sightings). Oct - Feb brings rain and fog; roads can be slippery.",
   timeNeeded: {
     minMinutes: 390,
-    maxMinutes: 1440,
+    maxMinutes: 480,
   },
   entranceFee: "Free",
   openingHours: "Open daily. Best 5:30-9:00 AM for wildlife. Avoid after dark - forest roads are dangerous at night.",

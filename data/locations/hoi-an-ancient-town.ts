@@ -17,7 +17,7 @@ export const hoiAnAncientTown: Location = {
   bestMonths: [2, 3, 4, 10, 11],
   bestSeasonNote: "Feb - Apr (dry season, Tết lantern season in Feb) or Oct - Nov",
   timeNeeded: {
-    minMinutes: 1440,
+    minMinutes: 480,
     maxMinutes: 4320,
   },
   entranceFee: "120,000 VND (covers 5 heritage site entries within the Old Town from a list of 22 sites)",
