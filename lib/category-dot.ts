@@ -5,18 +5,23 @@
 export type DotCategory = "water" | "trek" | "food" | "highlight"
 
 const CATEGORY_KEYWORDS: Record<DotCategory, string[]> = {
+  // Tags / experiences, plus place types (data/taxonomy/types.ts)
   water: [
     "beach", "beaches", "island", "bay", "river", "lake", "waterfall", "cruise", "boat-tour",
     "kayaking", "snorkeling", "diving", "swimming", "surfing", "kitesurfing", "coast",
+    "stream", "cape", "lighthouse",
   ],
   trek: [
     "trekking", "hiking", "camping", "nature", "adventure", "mountain", "cave", "caving",
     "motorcycling", "cycling", "wildlife", "national-park",
+    "forest", "valley", "pass", "rock-formation", "nature-reserve", "grassland", "sand-dunes",
+    "rice-fields",
   ],
-  food: ["food", "markets", "street-food", "nightlife", "coffee"],
+  food: ["food", "markets", "market", "street-food", "nightlife", "coffee"],
   highlight: [
     "history", "culture", "heritage", "hidden-gem", "must-see", "iconic", "photography",
-    "pagoda", "temple",
+    "pagoda", "temple", "church", "monument", "historic-site", "citadel", "palace", "tomb",
+    "museum", "communal-house", "old-quarter", "fortress", "prison",
   ],
 }
 

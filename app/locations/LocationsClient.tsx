@@ -2,21 +2,23 @@
 
 import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
-import { Location, LocationType, locationTheme } from "@/data/location"
+import { Location, LocationType } from "@/data/location"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { LOCATION_TYPES, isLocationType, typeDisplayLabel } from "@/data/taxonomy/types"
 import { LOCATION_EXPERIENCES, experienceDisplayLabel, isLocationExperience } from "@/data/taxonomy/experiences"
 import { LOCATION_CATEGORIES, isLocationCategory } from "@/data/taxonomy/categories"
 import { releasedBestMonths } from "@/data/best-months-release"
+import { dotClass } from "@/lib/category-dot"
+import PhotoPlaceholder from "@/components/PhotoPlaceholder"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
 type Region = "north" | "central" | "south"
 
-const REGIONS: { value: Region; label: string; active: string; inactive: string }[] = [
-  { value: "north",     label: "North",     active: "bg-blue-600 text-white border-blue-600",       inactive: "bg-white text-blue-600 border-blue-400 hover:bg-blue-50" },
-  { value: "central",   label: "Central",   active: "bg-orange-500 text-white border-orange-500",   inactive: "bg-white text-orange-600 border-orange-400 hover:bg-orange-50" },
-  { value: "south",     label: "South",     active: "bg-emerald-600 text-white border-emerald-600", inactive: "bg-white text-emerald-600 border-emerald-400 hover:bg-emerald-50" },
+const REGIONS: { value: Region; label: string }[] = [
+  { value: "north",   label: "North" },
+  { value: "central", label: "Central" },
+  { value: "south",   label: "South" },
 ]
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
@@ -66,7 +68,6 @@ const PROVINCE_TO_REGION: Record<string, Region> = {
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 const PAGE_SIZE = 24
-const DEFAULT_IMAGE = "/images/coming-soon.jpg"
 
 function getTypes(loc: Location): string[] {
   return Array.isArray(loc.type) ? loc.type : [loc.type]
@@ -76,21 +77,34 @@ function primaryType(loc: Location): LocationType {
   return Array.isArray(loc.type) ? loc.type[0] : loc.type
 }
 
-function themeColors(loc: Location): string {
-  const theme = locationTheme[primaryType(loc)]
-  const map: Record<string, string> = {
-    blue: "bg-sky-100 text-sky-700",
-    green: "bg-emerald-100 text-emerald-700",
-    amber: "bg-[#fee2e2] text-[#b91c1c]",
-    purple: "bg-[#fff0eb] text-[#d53600]",
-    gray: "bg-gray-100 text-gray-700",
-  }
-  return map[theme] ?? "bg-gray-100 text-gray-700"
+// null = no real photo yet; the card shows PhotoPlaceholder instead of artwork
+function cardImageUrl(heroImage: string | undefined): string | null {
+  if (!heroImage || heroImage.includes("placeholder")) return null
+  return heroImage.replace("w_1200,h_630,c_fill", "w_600,h_400,c_fill")
 }
 
-function cardImageUrl(heroImage: string | undefined): string {
-  if (!heroImage || heroImage.includes("placeholder")) return DEFAULT_IMAGE
-  return heroImage.replace("w_1200,h_630,c_fill", "w_600,h_400,c_fill")
+// Card photo; falls back to the placeholder if the photo fails to load.
+// An image can fail before hydration (onError is then never called), so the
+// mount effect also checks for an already-broken image.
+function CardImage({ src, alt }: { src: string | null; alt: string }) {
+  const [failed, setFailed] = useState(false)
+  const imgRef = useRef<HTMLImageElement>(null)
+  useEffect(() => {
+    const img = imgRef.current
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- syncing with a load error that happened before hydration
+    if (img && img.complete && img.naturalWidth === 0) setFailed(true)
+  }, [src])
+  if (!src || failed) return <PhotoPlaceholder />
+  return (
+    <img
+      ref={imgRef}
+      src={src}
+      alt={alt}
+      className="w-full h-full object-cover"
+      loading="lazy"
+      onError={() => setFailed(true)}
+    />
+  )
 }
 
 function formatSlug(slug: string): string {
@@ -206,51 +220,41 @@ function buildSearch(
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 
-function IconType() {
+function IconChevron({ open }: { open: boolean }) {
   return (
-    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-        d="M7 7h.01M3 3h18a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+    <svg className={`w-3 h-3 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
     </svg>
   )
 }
 
-function IconExperience() {
-  return (
-    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-        d="M13 10V3L4 14h7v7l9-11h-7z" />
-    </svg>
-  )
+// ─── Styles (design tokens from app/globals.css) ─────────────────────────────
+
+const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+const SERIF = { fontFamily: "var(--font-serif), 'Source Serif 4', serif" }
+
+// Segmented group: one 1px frame with hairline dividers, not a row of boxed chips
+const SEGMENTED = "inline-flex shrink-0 border border-line rounded-button bg-surface divide-x divide-line overflow-hidden"
+
+// Segment inside a group; selected = teal-ink fill. Inset focus ring so the
+// group's overflow (and the scrolling month row) never clips it.
+function segmentClass(active: boolean) {
+  return `px-2.5 md:px-3 py-1.5 text-[13px] font-medium whitespace-nowrap transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
+    active ? "bg-teal-ink text-paper" : "text-ink hover:bg-paper"
+  }`
 }
 
-function IconCategory() {
-  return (
-    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-        d="M4 6h16M4 12h16M4 18h10" />
-    </svg>
-  )
+// Dropdown trigger: quiet framed select (stays a real control for usability),
+// teal when it has selections
+function triggerClass(hasSelection: boolean) {
+  return `flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 rounded-button border text-[13px] font-medium whitespace-nowrap transition-colors ${FOCUS} ${
+    hasSelection ? "border-teal text-teal bg-surface" : "border-line text-ink hover:border-ink-2"
+  }`
 }
 
-function IconProvince() {
-  return (
-    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-        d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-    </svg>
-  )
-}
-
-function IconChevron() {
-  return (
-    <svg className="w-3 h-3 shrink-0 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-    </svg>
-  )
-}
+const PANEL = "absolute top-full left-0 mt-1 bg-surface border border-line rounded-card z-30 max-h-64 overflow-y-auto py-1.5"
+const OPTION = "flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-paper cursor-pointer text-sm text-ink"
+const ROW_LABEL = "w-[76px] md:w-[88px] shrink-0 text-[11px] font-semibold tracking-[0.12em] uppercase text-ink-2 select-none"
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -466,38 +470,34 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const hasActiveFilters = region !== null || activeTypes.length > 0 || activeExperiences.length > 0 || activeCategories.length > 0 || province !== "" || selectedMonths.length > 0
 
   return (
-    <main className="min-h-screen bg-[#F7F4EF]">
+    <main className="min-h-screen bg-paper text-ink">
 
-      {/* ── Header ── */}
-      <section className="bg-[#1C1C1A] text-white px-6 pt-20 pb-8">
-        <div className="max-w-6xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-[#A09880] mb-8">
-            <Link href="/" className="hover:text-[#C9A84C] transition-colors font-medium">Home</Link>
-            <span className="text-[#4a4a46]">/</span>
-            <span className="text-white/60">Locations</span>
+      {/* ── Header: editorial index opening, paper not a dark hero ── */}
+      <section className="pt-6 pb-4 md:pt-9 md:pb-5">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Breadcrumb doubles as the section label: HOME / LOCATIONS */}
+          <nav className="flex items-center gap-2 text-[11px] font-semibold tracking-[0.14em] uppercase mb-2" aria-label="Breadcrumb">
+            <Link href="/" className={`text-ink-2 hover:text-signal-text ${FOCUS}`}>Home</Link>
+            <span className="text-line" aria-hidden="true">/</span>
+            <span className="text-teal" aria-current="page">Locations</span>
           </nav>
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C] mb-3">
-            Solo Travel Guide
-          </p>
           <h1
-            className="text-4xl md:text-5xl font-bold leading-tight mb-3"
-            style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}
+            className="text-[30px] md:text-[42px] font-bold leading-[1.1] tracking-[-0.5px] text-ink mb-2"
+            style={SERIF}
           >
             Locations in Vietnam
           </h1>
-          <p className="text-[#A09880] text-base mb-1">
-            {locations.length}+ places across Vietnam —
-          </p>
-          <p className="text-white/50 text-sm mb-8">
-            beaches, mountains, caves, temples, waterfalls and hidden gems worth going solo.
+          <p className="text-[15px] md:text-base text-ink-2 max-w-2xl leading-relaxed">
+            {locations.length}+ places across Vietnam - beaches, mountains, caves, temples, waterfalls and hidden gems worth going solo.
           </p>
 
-          {/* ── Experience shortcuts ── */}
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-[#A09880] mr-1 select-none">
+          {/* ── Experience shortcuts: text links between thin rules ── */}
+          {/* One row: scrolls sideways on narrow screens (like the month row) so dividers never start a wrapped line */}
+          <div className="mt-4 pt-3 border-t border-line flex items-center overflow-x-auto scrollbar-none">
+            <span className="shrink-0 text-[11px] font-semibold tracking-[0.12em] uppercase text-ink-2 mr-3 select-none">
               Explore by
             </span>
-            {SHORTCUTS.map((s) => {
+            {SHORTCUTS.map((s, i) => {
               const active = s.type
                 ? selectedTypes.includes(s.type)
                 : s.exp
@@ -508,15 +508,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               return (
                 <button
                   key={s.label}
+                  aria-pressed={active}
                   onClick={() => {
                     if (s.type) toggleType(s.type)
                     else if (s.exp) toggleExperience(s.exp)
                     else if (s.categories) toggleCategorySet(s.categories)
                   }}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium border transition-all ${
+                  className={`shrink-0 whitespace-nowrap text-sm leading-none px-2.5 py-1 transition-colors ${i > 0 ? "border-l border-line" : ""} focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
                     active
-                      ? "bg-[#C9A84C] text-[#1C1C1A] border-[#C9A84C]"
-                      : "bg-white/10 text-white/80 border-white/20 hover:bg-white/20 hover:text-white"
+                      ? "text-teal font-semibold underline underline-offset-4 decoration-1"
+                      : "text-ink hover:text-teal"
                   }`}
                 >
                   {s.label}
@@ -528,71 +529,66 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
       </section>
 
       {/* ── Filter bar ── */}
-      <div className="sticky top-0 z-20 bg-white border-b border-gray-200 shadow-sm">
+      {/* Sticks below the site navbar: 60px + 1px border (components/header.css) */}
+      <div className="sticky top-[61px] z-20 bg-paper border-y border-line">
         <div className="max-w-6xl mx-auto px-6">
 
-          {/* Row 1 — Region chips */}
-          <div className="flex items-center gap-1.5 pt-3 pb-2.5 border-b border-gray-100 flex-wrap">
-            <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-gray-500 mr-1 select-none">
-              Region
-            </span>
-            {REGIONS.map((r) => (
-              <button
-                key={r.value}
-                onClick={() => toggleRegion(r.value)}
-                className={`px-3.5 py-1 rounded-full text-xs font-semibold transition-all whitespace-nowrap border ${
-                  region === r.value ? r.active : r.inactive
-                }`}
-              >
-                {r.label}
-              </button>
-            ))}
+          {/* Row 1 — Region */}
+          <div className="flex items-center pt-2.5 pb-1.5">
+            <span className={ROW_LABEL}>Region</span>
+            <div className={SEGMENTED} role="group" aria-label="Region">
+              {REGIONS.map((r) => (
+                <button
+                  key={r.value}
+                  aria-pressed={region === r.value}
+                  onClick={() => toggleRegion(r.value)}
+                  className={segmentClass(region === r.value)}
+                >
+                  {r.label}
+                </button>
+              ))}
+            </div>
           </div>
 
-          {/* Row 2 — Month chips */}
-          <div className="flex items-center gap-1 py-2.5 border-b border-gray-100 overflow-x-auto scrollbar-none">
-            <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-gray-500 mr-1 select-none shrink-0">
-              Best time
-            </span>
-            {MONTHS.map((label, i) => {
-              const m = i + 1
-              const active = selectedMonths.includes(m)
-              return (
-                <button
-                  key={m}
-                  onClick={() => toggleMonth(m)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all whitespace-nowrap border shrink-0 ${
-                    active
-                      ? "bg-[#1C1C1A] text-[#C9A84C] border-[#1C1C1A] shadow-sm"
-                      : "bg-white text-gray-700 border-gray-300 hover:border-gray-500 hover:text-gray-900"
-                  }`}
-                >
-                  {label}
-                </button>
-              )
-            })}
+          {/* Row 2 — Best time (scrolls horizontally on narrow screens) */}
+          <div className="flex items-center py-1.5 overflow-x-auto scrollbar-none">
+            <span className={ROW_LABEL}>Best time</span>
+            <div className={SEGMENTED} role="group" aria-label="Best time to visit">
+              {MONTHS.map((label, i) => {
+                const m = i + 1
+                const active = selectedMonths.includes(m)
+                return (
+                  <button
+                    key={m}
+                    aria-pressed={active}
+                    onClick={() => toggleMonth(m)}
+                    className={segmentClass(active)}
+                  >
+                    {label}
+                  </button>
+                )
+              })}
+            </div>
           </div>
 
           {/* Row 3 — Dropdowns + result count */}
-          <div className="flex items-center gap-2 py-2.5 flex-wrap">
+          <div className="flex items-center gap-1.5 pt-2 pb-2.5 flex-wrap border-t border-line mt-1">
 
             {/* Type */}
             <div ref={typeRef} className="relative">
               <button
+                aria-expanded={typeOpen}
                 onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setCatOpen(false); setProvOpen(false) }}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  activeTypes.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
-                }`}
+                className={triggerClass(activeTypes.length > 0)}
               >
-                <IconType />
                 Type{activeTypes.length > 0 ? ` · ${activeTypes.length}` : ""}
-                <IconChevron />
+                <IconChevron open={typeOpen} />
               </button>
               {typeOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 min-w-[190px] max-h-64 overflow-y-auto py-1.5">
+                <div className={`${PANEL} min-w-[190px]`}>
                   {allTypes.map((t) => (
-                    <label key={t} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
-                      <input type="checkbox" checked={selectedTypes.includes(t)} onChange={() => toggleType(t)} className="accent-[#1C1C1A] w-3.5 h-3.5" />
+                    <label key={t} className={OPTION}>
+                      <input type="checkbox" checked={selectedTypes.includes(t)} onChange={() => toggleType(t)} className="accent-teal w-3.5 h-3.5" />
                       {typeDisplayLabel(t)}
                     </label>
                   ))}
@@ -603,20 +599,18 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             {/* Experience */}
             <div ref={expRef} className="relative">
               <button
+                aria-expanded={expOpen}
                 onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setCatOpen(false); setProvOpen(false) }}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  activeExperiences.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
-                }`}
+                className={triggerClass(activeExperiences.length > 0)}
               >
-                <IconExperience />
                 Experience{activeExperiences.length > 0 ? ` · ${activeExperiences.length}` : ""}
-                <IconChevron />
+                <IconChevron open={expOpen} />
               </button>
               {expOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 min-w-[210px] max-h-64 overflow-y-auto py-1.5">
+                <div className={`${PANEL} min-w-[210px]`}>
                   {allExperiences.map((e) => (
-                    <label key={e} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
-                      <input type="checkbox" checked={selectedExperiences.includes(e)} onChange={() => toggleExperience(e)} className="accent-[#1C1C1A]  w-3.5 h-3.5" />
+                    <label key={e} className={OPTION}>
+                      <input type="checkbox" checked={selectedExperiences.includes(e)} onChange={() => toggleExperience(e)} className="accent-teal w-3.5 h-3.5" />
                       {experienceDisplayLabel(e)}
                     </label>
                   ))}
@@ -627,20 +621,18 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             {/* Category (travel themes) */}
             <div ref={catRef} className="relative">
               <button
+                aria-expanded={catOpen}
                 onClick={() => { setCatOpen(!catOpen); setTypeOpen(false); setExpOpen(false); setProvOpen(false) }}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  activeCategories.length > 0 ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
-                }`}
+                className={triggerClass(activeCategories.length > 0)}
               >
-                <IconCategory />
                 Category{activeCategories.length > 0 ? ` · ${activeCategories.length}` : ""}
-                <IconChevron />
+                <IconChevron open={catOpen} />
               </button>
               {catOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 min-w-[190px] max-h-64 overflow-y-auto py-1.5">
+                <div className={`${PANEL} min-w-[190px]`}>
                   {allCategories.map((c) => (
-                    <label key={c} className="flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-gray-50 cursor-pointer text-sm text-gray-700">
-                      <input type="checkbox" checked={selectedCategories.includes(c)} onChange={() => toggleCategory(c)} className="accent-[#1C1C1A] w-3.5 h-3.5" />
+                    <label key={c} className={OPTION}>
+                      <input type="checkbox" checked={selectedCategories.includes(c)} onChange={() => toggleCategory(c)} className="accent-teal w-3.5 h-3.5" />
                       {LOCATION_CATEGORIES[c as keyof typeof LOCATION_CATEGORIES].label}
                     </label>
                   ))}
@@ -651,31 +643,30 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             {/* Province — search-style */}
             <div ref={provRef} className="relative">
               <button
+                aria-expanded={provOpen}
                 onClick={() => { setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false) }}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold transition-all bg-[#1C1C1A] border-[#1C1C1A] ${
-                  province ? "text-[#C9A84C]" : "text-[#C9A84C]/70 hover:text-[#C9A84C]"
-                }`}
+                className={triggerClass(province !== "")}
               >
-                <IconProvince />
                 {province ? formatSlug(province) : "Province"}
-                <IconChevron />
+                <IconChevron open={provOpen} />
               </button>
               {provOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-xl shadow-xl z-30 w-56">
-                  <div className="p-2 border-b border-gray-100">
+                <div className="absolute top-full left-0 mt-1 bg-surface border border-line rounded-card z-30 w-56">
+                  <div className="p-2 border-b border-line">
                     <input
                       ref={provInputRef}
                       type="text"
                       value={provSearch}
                       onChange={(e) => setProvSearch(e.target.value)}
                       placeholder="Search province…"
-                      className="w-full px-2.5 py-1.5 text-sm border border-gray-200 rounded-lg outline-none focus:border-gray-400"
+                      aria-label="Search province"
+                      className="w-full px-2.5 py-1.5 text-sm text-ink placeholder:text-ink-2 bg-surface border border-line rounded-input outline-none focus:border-teal"
                     />
                   </div>
                   <div className="max-h-52 overflow-y-auto py-1">
                     <button
                       onClick={() => selectProvince("")}
-                      className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-gray-50 ${!province ? "font-medium text-[#1C1C1A]" : "text-gray-600"}`}
+                      className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-paper ${!province ? "font-semibold text-teal" : "text-ink"}`}
                     >
                       All provinces
                     </button>
@@ -683,7 +674,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                       <button
                         key={p}
                         onClick={() => selectProvince(p)}
-                        className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-gray-50 ${province === p ? "font-medium text-[#1C1C1A]" : "text-gray-600"}`}
+                        className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-paper ${province === p ? "font-semibold text-teal" : "text-ink"}`}
                       >
                         {formatSlug(p)}
                       </button>
@@ -697,19 +688,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             {hasActiveFilters && (
               <button
                 onClick={clearFilters}
-                className="flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium text-gray-400 border border-gray-200 hover:border-gray-400 hover:text-gray-700 transition-all bg-white"
+                className={`px-2 py-1.5 text-[13px] font-medium text-teal underline underline-offset-4 decoration-1 hover:text-signal-text ${FOCUS}`}
               >
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-                Clear
+                Clear filters
               </button>
             )}
 
-            {/* Result count — pushed right */}
-            <p className="ml-auto text-xs text-gray-400">
-              Showing <span className="text-gray-700 font-medium">{visible.length}</span> of{" "}
-              <span className="text-gray-700 font-medium">{filtered.length}</span> locations
+            {/* Result count — quiet, pushed right */}
+            <p className="ml-auto text-xs text-ink-2" aria-live="polite">
+              Showing <span className="text-ink font-medium">{visible.length}</span> of{" "}
+              <span className="text-ink font-medium">{filtered.length}</span> locations
             </p>
           </div>
 
@@ -717,16 +705,16 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
       </div>
 
       {/* ── Content ── */}
-      <div className="max-w-6xl mx-auto px-6 py-8">
+      <div className="max-w-6xl mx-auto px-6 pt-6 pb-16 md:pt-8">
 
         {/* No results */}
         {filtered.length === 0 && (
           <div className="text-center py-24">
-            <p className="text-lg font-medium text-gray-800 mb-2">No locations found</p>
-            <p className="text-gray-500 text-sm mb-6">Try adjusting your filters to see more results.</p>
+            <p className="text-xl font-semibold text-ink mb-2" style={SERIF}>No locations found</p>
+            <p className="text-ink-2 text-sm mb-6">Try adjusting your filters to see more results.</p>
             <button
               onClick={clearFilters}
-              className="px-5 py-2 bg-[#1C1C1A] text-white rounded-lg text-sm font-medium hover:bg-black transition-colors"
+              className={`px-5 py-2.5 rounded-button border border-teal text-teal text-sm font-semibold hover:bg-teal hover:text-surface transition-colors ${FOCUS}`}
             >
               Clear all filters
             </button>
@@ -735,69 +723,56 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
 
         {/* Grid */}
         {filtered.length > 0 && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {visible.map((loc) => (
-              <Link
-                key={loc.slug}
-                href={`/locations/${loc.slug}`}
-                className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-gray-200 hover:-translate-y-0.5"
-              >
-                {/* Image */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                  <img
-                    src={cardImageUrl(loc.heroImage)}
-                    alt={loc.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                    onError={(e) => {
-                      const img = e.currentTarget as HTMLImageElement
-                      img.onerror = null
-                      img.src = DEFAULT_IMAGE
-                    }}
-                  />
-                  {/* Type badge */}
-                  <span className={`absolute top-2 right-2 text-[10px] font-semibold px-2 py-0.5 rounded-full ${themeColors(loc)}`}>
-                    {typeDisplayLabel(primaryType(loc))}
-                  </span>
-                </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+            {visible.map((loc) => {
+              const type = primaryType(loc)
+              return (
+                <Link
+                  key={loc.slug}
+                  href={`/locations/${loc.slug}`}
+                  className={`group flex flex-col bg-surface border border-line rounded-card overflow-hidden hover:border-ink-2 transition-colors ${FOCUS}`}
+                >
+                  {/* Image: edge to edge, no radius */}
+                  <div className="relative aspect-[4/3] overflow-hidden bg-paper">
+                    <CardImage src={cardImageUrl(loc.heroImage)} alt={loc.name} />
+                  </div>
 
-                {/* Body */}
-                <div className="p-3">
-                  <h2
-                    className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2 mb-1"
-                    style={{ fontFamily: "var(--font-serif), 'Source Serif 4', serif" }}
-                  >
-                    {loc.name}
-                  </h2>
-                  {loc.provinces.length > 0 && (
-                    <p className="text-[10px] text-gray-400 font-medium mb-1.5 uppercase tracking-wide">
-                      {formatSlug(loc.provinces[0])}
+                  {/* Body */}
+                  <div className="p-3 md:p-4">
+                    <span className="ui-dot-label mb-1.5">
+                      <span className={dotClass(type)} aria-hidden="true" />
+                      {typeDisplayLabel(type)}
+                    </span>
+                    <h2
+                      className="text-[15px] md:text-base font-semibold text-ink leading-snug line-clamp-2 mb-1 group-hover:underline underline-offset-2 decoration-1"
+                      style={SERIF}
+                    >
+                      {loc.name}
+                    </h2>
+                    {loc.provinces.length > 0 && (
+                      <p className="text-[10px] text-ink-2 font-medium mb-1.5 uppercase tracking-[0.08em]">
+                        {formatSlug(loc.provinces[0])}
+                      </p>
+                    )}
+                    <p className="text-xs text-ink-2 leading-relaxed line-clamp-2">
+                      {loc.tags?.[0] ? tagDisplayLabel(loc.tags[0]) : truncate(loc.seoDescription, 70)}
                     </p>
-                  )}
-                  {loc.tags?.[0] ? (
-                    <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
-                      {tagDisplayLabel(loc.tags[0])}
-                    </p>
-                  ) : (
-                    <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
-                      {truncate(loc.seoDescription, 70)}
-                    </p>
-                  )}
-                </div>
-              </Link>
-            ))}
+                  </div>
+                </Link>
+              )
+            })}
           </div>
         )}
 
-        {/* Load more */}
+        {/* Load more — teal outline: a catalogue control, not a promo CTA */}
         {hasMore && (
           <div className="mt-10 flex justify-center">
             <button
               onClick={loadMore}
-              className="px-8 py-3 bg-[#1C1C1A] text-white rounded-lg text-sm font-medium hover:bg-black transition-colors"
+              className={`px-7 py-3 rounded-button border border-teal text-teal text-sm font-semibold bg-surface hover:bg-teal hover:text-surface transition-colors ${FOCUS}`}
             >
               Load more
-              <span className="ml-2 text-white/50 text-xs">({filtered.length - visibleCount} remaining)</span>
+              <span className="ml-2 text-xs font-normal opacity-80">({filtered.length - visibleCount} remaining)</span>
             </button>
           </div>
         )}
