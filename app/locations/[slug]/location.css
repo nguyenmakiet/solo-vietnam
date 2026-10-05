@@ -769,10 +769,80 @@
 /* Narrow desktop: the overview column is too slim for 12 month cells in a row */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .ov-section .month-strip { grid-template-columns: repeat(6, 1fr); }
-  .ov-section .month-cell:nth-child(7) { border-left: none; }
-  .ov-section .month-cell:nth-child(-n + 6) { border-bottom: 1px solid var(--color-line); }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .content-section,
   .split-section { grid-template-columns: minmax(0, 240px) minmax(0, 1fr); column-gap: 48px; }
+}
+
+/* ── QUIET LAYER (>= 641px): borders are the exception, not the layout ──
+   Tablet and desktop separate content with type, whitespace and soft
+   surfaces instead of rules. Kept: the sticky section nav edge, FAQ
+   question dividers, tables, callout accent bars and button outlines.
+   Phones keep the ruled mobile layout above. */
+@media (min-width: 641px) {
+  .lp-head { border-bottom: none; }
+
+  /* Section labels: a small kicker, no rule running across the page */
+  .section-label { margin-bottom: 24px; }
+  .section-label::after { display: none; }
+
+  /* Overview: an information panel, label above value, spacing between fields */
+  .overview {
+    border: none;
+    padding: 28px 32px 30px;
+    display: flex; flex-direction: column; gap: 26px;
+  }
+  .ov-row,
+  .ov-row:last-child { display: block; padding: 0; border-bottom: none; }
+  .ov-label { padding-top: 0; margin-bottom: 8px; }
+  .ov-val { font-size: 16px; }
+
+  /* Month strip: separate soft cells instead of a ruled table */
+  .month-strip { border: none; border-radius: 0; overflow: visible; gap: 3px; }
+  .month-cell,
+  .month-cell:first-child {
+    border: none;
+    border-top: 2px solid transparent;
+    border-radius: var(--radius-card);
+    background: color-mix(in srgb, var(--color-ink) 4%, var(--color-surface));
+  }
+  .month-cell.active {
+    background: color-mix(in srgb, var(--type-accent) 18%, var(--color-surface));
+    border-top-color: var(--type-accent);
+  }
+
+  /* Map: the same quiet surface as the panel, no frame */
+  .map-wrap { border: none; }
+  .map-caption { border-top: none; padding: 12px 16px; }
+
+  /* Things to know: label + text, separated by space */
+  .ttk-list { display: grid; row-gap: 30px; border-top: none; }
+  .ttk-row { border-bottom: none; padding: 0; }
+
+  /* Gallery: photos only */
+  .gallery-streetview { border: none; }
+  .gallery-empty { border: none; }
+
+  /* Long-form: quick facts as metadata, content dividers as a short mark */
+  .qf-grid { border: none; gap: 18px 28px; margin: 8px 0 28px; }
+  .qf-card { border: none; padding: 0; background: none; }
+  .rc-div { width: 48px; margin: 32px 0; }
+
+  /* Tips: keep the tinted block, drop its frame and row rules */
+  .tips-list { border: none; padding: 14px 28px; }
+  .tip-item { border-bottom: none; padding: 9px 0; }
+
+  /* FAQ: light dividers between questions only */
+  .faq-list { border-top: none; }
+  .faq-item { border-bottom-color: color-mix(in srgb, var(--color-line) 70%, var(--color-paper)); }
+
+  /* Nearby and similar experiences: scannable lists, no row rules */
+  .nearby-list { border-top: none; }
+  .nearby-item { border-bottom: none; min-height: 44px; padding: 10px 0; }
+  .exp-links { border-top: none; }
+  .exp-link { border-bottom: none; }
+}
+@media (min-width: 1024px) {
+  .section-anchor { padding-top: 80px; }
 }
