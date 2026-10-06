@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const cafeApartmentSaigon: Location = {
   slug: "cafe-apartment-saigon",
   name: "The Cafe Apartment",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.774098930222388,
@@ -52,14 +52,77 @@ export const cafeApartmentSaigon: Location = {
     "If a major national event is happening - a football match, a concert, a public celebration - a balcony seat here is a genuinely great vantage point to watch the crowds gather on the street below",
   ],
   content: {
-    intro:
-      "The Cafe Apartment - officially just 42 Nguyễn Huệ, though almost nobody calls it that - is a nine-storey former residential building standing right on Ho Chi Minh City's central walking street, wedged between the Saigon River and the old City Hall. Built in the 1960s, its early residents included senior officials - among them Trương Bửu Khanh, an interpreter for President Ngô Đình Diệm - and American military advisors during the Vietnam War era. After 1975, the building's character shifted considerably: it became housing for workers from the Ba Son Shipyard, most of them from modest backgrounds, a far cry from its earlier official residents. When Nguyễn Huệ was redeveloped into a pedestrian boulevard in 2015, young entrepreneurs began quietly taking over individual apartments and converting them into cafes, boutiques, and small studios - one balcony at a time, without any single coordinated renovation, as land values in the area climbed to among the highest in the city. The building's rundown concrete facade, tangled wiring, and peeling paint were left largely as they were rather than polished over, which is a large part of its appeal: it's a genuine piece of old Saigon still standing amid the glass towers that have grown up around it, now filled with dozens of independent businesses each with their own character. It's one of the most photographed buildings in the city - a photo of it lit up at night has reportedly drawn praise from National Geographic - and a rare example of organic, bottom-up urban reuse in a country where that kind of thing is usually not permitted to happen.",
-    howToGetThere:
-      "The Cafe Apartment sits directly on Nguyễn Huệ Walking Street in District 1, an easy landmark to find on foot if you're anywhere in central Saigon - it's within walking distance of the Saigon Opera House, Bến Thành Market (about 900m), Bitexco Financial Tower (about 550m), and Nguyễn Văn Bình Book Street (about 300m). Metro Line 1 is also an option: get off at Nhà hát Thành phố (Opera House) station and walk about 400m. City buses 03, 19, and 45 stop near the walking street, and motorbike parking is available nearby for around 10,000 VND. Grab or a taxi can drop you right at the entrance for roughly 30,000-70,000 VND depending on your starting point; just set the destination to '42 Nguyễn Huệ' or 'The Cafe Apartment.' The ground floor is occupied by a Fahasa bookstore - the entrance to the cafes and shops above is just to its left, marked with a blue sign, easy to miss if you're not looking for it.",
-    whatToExpect:
-      "Past the entrance, a narrow staircase (with an elevator alongside, for a small fee) leads up through all nine floors, each divided into small units that now house a mix of cafes, boutiques, nail salons, and creative studios rather than a single uniform business. The original architectural details are largely intact - narrow corridors, patterned tile floors, and old wooden doors that give the whole place a step-back-in-time feel between destinations. The atmosphere shifts floor by floor - some levels lean toward quiet, minimalist coffee spots, others toward Indochine-style decor, European-style cafes and small restaurants, or bubble tea and dessert shops aimed at a younger crowd. Balconies on the street-facing side of the building are the main draw, giving direct views down onto the walking street below - especially atmospheric in the evening, when the street fills with people, occasional street performers add to the energy, and the building's own lights come on. At peak times the elevator queue can get long; walking down the stairs after your visit is an easy way to skip the wait on the way out.",
-    travelTips:
-      "The Cafe Apartment works best as a stop of an hour or two within a broader walk around central Saigon, rather than a standalone destination - it pairs naturally with the Walking Street itself, the Opera House, Bến Thành Market, and the Book Street nearby. It's a good pick for an early evening stop before dinner, when the balcony views and lighting are at their best, or a quieter weekday morning visit if you'd rather browse without crowds. Go in with realistic expectations about the coffee itself - the draw here is the building, the view, and the atmosphere of a genuinely reused piece of old Saigon, not a destination coffee experience. It's also worth being honest that the building looks fairly ordinary, even a little worn, in daytime light - most of what makes it special is really the energy of Nguyễn Huệ Walking Street around it rather than the apartment block itself, so treat it as a photo stop and a good vantage point on the city's street life rather than a headline attraction in its own right.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes The Cafe Apartment Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Cafe Apartment - officially just 42 Nguyễn Huệ, though almost nobody calls it that - is a nine-storey former residential building standing right on Ho Chi Minh City's central walking street, wedged between the Saigon River and the old City Hall.",
+          },
+          { type: "heading", text: "Residents Before and After 1975" },
+          {
+            type: "paragraph",
+            text: "Built in the 1960s, its early residents included senior officials - among them Trương Bửu Khanh, an interpreter for President Ngô Đình Diệm - and American military advisors during the Vietnam War era. After 1975, the building's character shifted considerably: it became housing for workers from the Ba Son Shipyard, most of them from modest backgrounds, a far cry from its earlier official residents.",
+          },
+          { type: "heading", text: "From Apartments to Cafes" },
+          {
+            type: "paragraph",
+            text: "When Nguyễn Huệ was redeveloped into a pedestrian boulevard in 2015, young entrepreneurs began quietly taking over individual apartments and converting them into cafes, boutiques, and small studios - one balcony at a time, without any single coordinated renovation, as land values in the area climbed to among the highest in the city. The building's rundown concrete facade, tangled wiring, and peeling paint were left largely as they were rather than polished over, which is a large part of its appeal: it's a genuine piece of old Saigon still standing amid the glass towers that have grown up around it, now filled with dozens of independent businesses each with their own character. It's one of the most photographed buildings in the city - a photo of it lit up at night has reportedly drawn praise from National Geographic - and a rare example of organic, bottom-up urban reuse in a country where that kind of thing is usually not permitted to happen.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to The Cafe Apartment",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Cafe Apartment sits directly on Nguyễn Huệ Walking Street in District 1, an easy landmark to find on foot if you're anywhere in central Saigon - it's within walking distance of the Saigon Opera House, Bến Thành Market (about 900m), Bitexco Financial Tower (about 550m), and Nguyễn Văn Bình Book Street (about 300m). Metro Line 1 is also an option: get off at Nhà hát Thành phố (Opera House) station and walk about 400m.",
+          },
+          { type: "heading", text: "Bus, Grab and the Entrance" },
+          {
+            type: "paragraph",
+            text: "City buses 03, 19, and 45 stop near the walking street, and motorbike parking is available nearby for around 10,000 VND. Grab or a taxi can drop you right at the entrance for roughly 30,000-70,000 VND depending on your starting point; just set the destination to '42 Nguyễn Huệ' or 'The Cafe Apartment.' The ground floor is occupied by a Fahasa bookstore - the entrance to the cafes and shops above is just to its left, marked with a blue sign, easy to miss if you're not looking for it.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at The Cafe Apartment",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Past the entrance, a narrow staircase (with an elevator alongside, for a small fee) leads up through all nine floors, each divided into small units that now house a mix of cafes, boutiques, nail salons, and creative studios rather than a single uniform business. The original architectural details are largely intact - narrow corridors, patterned tile floors, and old wooden doors that give the whole place a step-back-in-time feel between destinations. The atmosphere shifts floor by floor - some levels lean toward quiet, minimalist coffee spots, others toward Indochine-style decor, European-style cafes and small restaurants, or bubble tea and dessert shops aimed at a younger crowd.",
+          },
+          { type: "heading", text: "Balconies and the Elevator" },
+          {
+            type: "paragraph",
+            text: "Balconies on the street-facing side of the building are the main draw, giving direct views down onto the walking street below - especially atmospheric in the evening, when the street fills with people, occasional street performers add to the energy, and the building's own lights come on. At peak times the elevator queue can get long; walking down the stairs after your visit is an easy way to skip the wait on the way out.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for The Cafe Apartment",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Cafe Apartment works best as a stop of an hour or two within a broader walk around central Saigon, rather than a standalone destination - it pairs naturally with the Walking Street itself, the Opera House, Bến Thành Market, and the Book Street nearby. It's a good pick for an early evening stop before dinner, when the balcony views and lighting are at their best, or a quieter weekday morning visit if you'd rather browse without crowds.",
+          },
+          { type: "heading", text: "Setting Expectations" },
+          {
+            type: "paragraph",
+            text: "Go in with realistic expectations about the coffee itself - the draw here is the building, the view, and the atmosphere of a genuinely reused piece of old Saigon, not a destination coffee experience. It's also worth being honest that the building looks fairly ordinary, even a little worn, in daytime light - most of what makes it special is really the energy of Nguyễn Huệ Walking Street around it rather than the apartment block itself, so treat it as a photo stop and a good vantage point on the city's street life rather than a headline attraction in its own right.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

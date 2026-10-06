@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const konTumWoodenChurch: Location = {
   slug: "kon-tum-wooden-church",
   name: "Kon Tum Wooden Church",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["kon-tum"],
   destination: "",
   lat: 14.345152402216648,
@@ -45,14 +45,74 @@ export const konTumWoodenChurch: Location = {
     "Kon Tum town is one of the most pleasant highland towns to walk around - the wooden church, the nearby Bahnar rong houses, and the Đắk Bla River bank make a natural walking circuit",
   ],
   content: {
-    intro:
-      "Kon Tum Wooden Church (Nhà thờ Gỗ Kon Tum), officially the Cathedral of the Immaculate Conception, is the seat of the Kon Tum diocese and the fourth church built on this site since Catholicism first reached the Central Highlands in 1848. Construction began on 7 April 1913 and finished on 6 January 1918, under the direction of French priest Joseph Décrouille - just under five years, slowed in part by the outbreak of the First World War. The result is a building that looks, from a distance, like a Romanesque Catholic church topped with a 24-metre, four-tier wooden bell tower, but reveals on closer inspection a completely different structural logic: the columns, beams, floors, and roof trusses are all gỗ cà chít, a Central Highlands hardwood, held together with traditional mortise-and-tenon joinery and no nails, while the walls and ceiling are packed earth and straw rather than brick or concrete. The skilled carpenters who built it were recruited from Bình Định, Quảng Nam, and Quảng Ngãi provinces, several hundred kilometres away. As originally completed in 1918, the church measured 47m long, 15m wide, and 12m tall, with a total area of roughly 703.8m²; a major 1994-1996 renovation extended it to 54m long and 19m wide, bringing the total area to about 1,228.8m² while preserving the original architectural character. It remains an active cathedral and one of the most architecturally distinctive buildings in the Vietnamese highlands - some sources describe it as the only wooden church of its scale and style left standing anywhere in the world, though that's a striking claim worth taking as a point of local pride rather than a verified fact.",
-    howToGetThere:
-      "Kon Tum Wooden Church is in Kon Tum city center on Nguyễn Huệ Street, easily walkable from the main accommodation area. Kon Tum city is approximately 50km north of Pleiku and 215km from Đà Nẵng via the Ho Chi Minh Road (Highway 14). From Pleiku, the drive takes about 1 hour. From Đà Nẵng, the journey via Highway 14 takes approximately 4-5 hours. Kon Tum has a bus station with connections from Pleiku, Đà Nẵng, and Ho Chi Minh City. The church is in the town center and accessible on foot from the main guesthouse cluster.",
-    whatToExpect:
-      "The exterior presents as a dark-toned, imposing mass topped by its central bell tower, with wide, deep side galleries and steeply pitched roofs supported on rows of round timber columns - but the entirely wooden construction gives it a warmth and texture that stone churches lack. Inside, tall polished timber columns on stone bases line the nave, rising to a vaulted wooden roof structure, with light filtering through stained glass - including a striking circular window facing the sanctuary, designed as a sun motif and illustrated with scenes of traditional highland life. The polished wood floors and the dark, almost black patina of the columns give the interior a solemn, warm atmosphere very different from a typical stone cathedral. The compound behind the church includes the orphanage, guesthouse, artifact display hall, and craft workshops, maintained by a community of nuns as part of the same mission complex. The Đắk Bla River is visible from the church grounds, and the surrounding street has some of Kon Tum's older French-era buildings, giving the immediate area a colonial townscape character.",
-    travelTips:
-      "Kon Tum Wooden Church is the anchor of a Central Highlands itinerary that most visitors rush through on the way between the coast and the plateau. The town itself is underrated - the Bahnar rong community houses on the north bank of the Đắk Bla, the Bahnar villages accessible by motorbike in the surrounding district, and the mission-era architecture of the church and orphanage together create a layered cultural landscape that takes at least a full day to appreciate. If you're doing the Central Highlands loop - Kon Tum, Pleiku, Buôn Ma Thuột - allocating 1.5 days in Kon Tum rather than treating it as a transit stop gives the town enough time to deliver on what it offers.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Kon Tum Wooden Church Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kon Tum Wooden Church (Nhà thờ Gỗ Kon Tum), officially the Cathedral of the Immaculate Conception, is the seat of the Kon Tum diocese and the fourth church built on this site since Catholicism first reached the Central Highlands in 1848.",
+          },
+          { type: "heading", text: "Construction and Design" },
+          {
+            type: "paragraph",
+            text: "Construction began on 7 April 1913 and finished on 6 January 1918, under the direction of French priest Joseph Décrouille - just under five years, slowed in part by the outbreak of the First World War. The result is a building that looks, from a distance, like a Romanesque Catholic church topped with a 24-metre, four-tier wooden bell tower, but reveals on closer inspection a completely different structural logic: the columns, beams, floors, and roof trusses are all gỗ cà chít, a Central Highlands hardwood, held together with traditional mortise-and-tenon joinery and no nails, while the walls and ceiling are packed earth and straw rather than brick or concrete.",
+          },
+          { type: "heading", text: "The Builders and the Church Today" },
+          {
+            type: "paragraph",
+            text: "The skilled carpenters who built it were recruited from Bình Định, Quảng Nam, and Quảng Ngãi provinces, several hundred kilometres away. As originally completed in 1918, the church measured 47m long, 15m wide, and 12m tall, with a total area of roughly 703.8m²; a major 1994-1996 renovation extended it to 54m long and 19m wide, bringing the total area to about 1,228.8m² while preserving the original architectural character. It remains an active cathedral and one of the most architecturally distinctive buildings in the Vietnamese highlands - some sources describe it as the only wooden church of its scale and style left standing anywhere in the world, though that's a striking claim worth taking as a point of local pride rather than a verified fact.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Kon Tum Wooden Church",
+        blocks: [
+          { type: "heading", text: "In Kon Tum City" },
+          {
+            type: "paragraph",
+            text: "Kon Tum Wooden Church is in Kon Tum city center on Nguyễn Huệ Street, easily walkable from the main accommodation area.",
+          },
+          { type: "heading", text: "Getting to Kon Tum" },
+          {
+            type: "paragraph",
+            text: "Kon Tum city is approximately 50km north of Pleiku and 215km from Đà Nẵng via the Ho Chi Minh Road (Highway 14). From Pleiku, the drive takes about 1 hour. From Đà Nẵng, the journey via Highway 14 takes approximately 4-5 hours. Kon Tum has a bus station with connections from Pleiku, Đà Nẵng, and Ho Chi Minh City. The church is in the town center and accessible on foot from the main guesthouse cluster.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Kon Tum Wooden Church",
+        blocks: [
+          { type: "heading", text: "Exterior and Interior" },
+          {
+            type: "paragraph",
+            text: "The exterior presents as a dark-toned, imposing mass topped by its central bell tower, with wide, deep side galleries and steeply pitched roofs supported on rows of round timber columns - but the entirely wooden construction gives it a warmth and texture that stone churches lack. Inside, tall polished timber columns on stone bases line the nave, rising to a vaulted wooden roof structure, with light filtering through stained glass - including a striking circular window facing the sanctuary, designed as a sun motif and illustrated with scenes of traditional highland life. The polished wood floors and the dark, almost black patina of the columns give the interior a solemn, warm atmosphere very different from a typical stone cathedral.",
+          },
+          { type: "heading", text: "The Compound and Surroundings" },
+          {
+            type: "paragraph",
+            text: "The compound behind the church includes the orphanage, guesthouse, artifact display hall, and craft workshops, maintained by a community of nuns as part of the same mission complex. The Đắk Bla River is visible from the church grounds, and the surrounding street has some of Kon Tum's older French-era buildings, giving the immediate area a colonial townscape character.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Kon Tum Wooden Church",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kon Tum Wooden Church is the anchor of a Central Highlands itinerary that most visitors rush through on the way between the coast and the plateau. The town itself is underrated - the Bahnar rong community houses on the north bank of the Đắk Bla, the Bahnar villages accessible by motorbike in the surrounding district, and the mission-era architecture of the church and orphanage together create a layered cultural landscape that takes at least a full day to appreciate. If you're doing the Central Highlands loop - Kon Tum, Pleiku, Buôn Ma Thuột - allocating 1.5 days in Kon Tum rather than treating it as a transit stop gives the town enough time to deliver on what it offers.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

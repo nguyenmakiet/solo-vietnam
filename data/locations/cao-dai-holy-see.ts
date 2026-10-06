@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const caoDaiHolySee: Location = {
   slug: "cao-dai-holy-see",
   name: "Cao Dai Holy See",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["tay-ninh"],
   destination: "",
   lat: 11.303855281819674,
@@ -46,14 +46,83 @@ export const caoDaiHolySee: Location = {
     "About 100km from Ho Chi Minh City via Highway 22, through Hóc Môn and Củ Chi to Tây Ninh, then about 5km to the Holy See - roughly 1.5-2 hours by car or motorbike in reasonable traffic. Day trips from HCMC are common and easily combined with a visit to the Củ Chi Tunnels along the same highway corridor.",
   ],
   content: {
-    intro:
-      "Few religious buildings anywhere in the world combine Buddha, Jesus Christ, Confucius, Laozi, and the Divine Eye under one roof. The Cao Dai Holy See is one of them. It is the central seat of Caodaism (Đại Đạo Tam Kỳ Phổ Độ), a Vietnamese indigenous religion founded in 1926 after Ngô Minh Chiêu claimed to have received divine communication from the Supreme Being. The religion synthesises Buddhism, Taoism, Confucianism, and elements of Christianity into a unified spiritual framework summarised by its founding principle: a return to the common origins of all three great teachings. The Holy See's main cathedral - built without architectural blueprints using bamboo-reinforced concrete between 1933 and 1955, measuring 97.5m long and 22m wide - makes the religion's philosophical core visible through architecture. Catholic bell towers rise at the front of a building whose central figure is the Buddha and whose interior columns are wrapped in carved dragons; a Confucian sense of hierarchy organises the 9-level floor plan; and at the building's rear, a globe painted with stars holds the Divine Eye - the left eye of God, Caodaism's central symbol. The effect is genuinely unlike any other religious building in the world - extravagantly colourful, densely symbolic, and built entirely on the premise that all religions are pointing at the same truth. Around 5 million people follow Caodaism today, primarily in southern Vietnam, and the Holy See draws both pilgrims and visitors in large numbers throughout the year. The grounds extend well beyond the cathedral itself, encompassing a school, dormitories, temples, and working buildings that together form something closer to a self-contained pilgrimage village than a conventional religious site.",
-    howToGetThere:
-      "The Holy See is in Hòa Thành district, about 5km from Tây Ninh city centre and roughly 100km from Ho Chi Minh City via Highway 22 through Hóc Môn and Củ Chi. By car or motorbike from HCMC, allow 1.5-2 hours in normal traffic. Day trips from HCMC are common and the same highway runs through Củ Chi, making a combined Holy See/Củ Chi Tunnels day trip logistically straightforward. Guided day tours from HCMC are widely available and typically cover both sites. From the Tây Ninh town centre, the Holy See is an easy 5-minute motorbike ride or xe ôm trip.",
-    whatToExpect:
-      "Visitors approach through the main grounds - a broad open area flanked by ancient trees, a flagpole adorned with dragons, and a sacred bodhi tree at the centre of the forecourt. The main Chánh Môn gate, with its striking dragon-over-lotus entrance, remains closed except during major ceremonies; regular visitors enter through the side doors. Inside the main hall, two rows of columns wound with carved dragons line a central aisle that visitors must not walk along - the sides are reserved for observers. The hall is divided into 9 progressively elevated levels, with the Càn Khôn globe at the rear altar bearing the Divine Eye gazing out from its starred surface. The noon ceremony (12:00 PM daily) brings hundreds of white-robed worshippers moving in orderly procession, divided by gender and spiritual rank, filling the main hall with chanted prayer for about 45 minutes while observers watch from the sides. The colours of robes worn indicate religious rank within the hierarchy, while men and women pray in entirely separate sections - this gender and rank separation creates the temple's remarkable symmetrical appearance when viewed from the gallery during ceremonies. Volunteers stationed throughout the hall enforce the site's etiquette rules - their instructions should be followed without question. Despite the vivid colours and unusual architecture, the atmosphere inside during ceremonies is remarkably quiet and disciplined.",
-    travelTips:
-      "The Cao Dai Holy See is most impactful when visited with some understanding of what Caodaism actually is - a brief read beforehand transforms what might otherwise look like a chaotic collision of religious symbols into something deliberately and coherently intentional. The noon ceremony is the visit's highlight for most travellers; arriving 15-20 minutes early allows time to find a good viewing position before the procession begins. Dress code and behavioural rules are strictly enforced - shorts, bare shoulders, selfies, and walking the central aisle will all result in being asked to leave. The wild monkeys living in the forested areas surrounding the compound are a local fixture - treat them as you would any wild animal, don't feed or provoke, and secure your belongings when walking near the tree lines. If you're visiting as a day trip from Ho Chi Minh City, combine the Holy See with the Củ Chi Tunnels - they're along the same Highway 22 corridor and offer two very different perspectives on southern Vietnam: one spiritual, one historical.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cao Dai Holy See Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Few religious buildings anywhere in the world combine Buddha, Jesus Christ, Confucius, Laozi, and the Divine Eye under one roof. The Cao Dai Holy See is one of them.",
+          },
+          { type: "heading", text: "Caodaism" },
+          {
+            type: "paragraph",
+            text: "It is the central seat of Caodaism (Đại Đạo Tam Kỳ Phổ Độ), a Vietnamese indigenous religion founded in 1926 after Ngô Minh Chiêu claimed to have received divine communication from the Supreme Being. The religion synthesises Buddhism, Taoism, Confucianism, and elements of Christianity into a unified spiritual framework summarised by its founding principle: a return to the common origins of all three great teachings.",
+          },
+          { type: "heading", text: "The Cathedral" },
+          {
+            type: "paragraph",
+            text: "The Holy See's main cathedral - built without architectural blueprints using bamboo-reinforced concrete between 1933 and 1955, measuring 97.5m long and 22m wide - makes the religion's philosophical core visible through architecture. Catholic bell towers rise at the front of a building whose central figure is the Buddha and whose interior columns are wrapped in carved dragons; a Confucian sense of hierarchy organises the 9-level floor plan; and at the building's rear, a globe painted with stars holds the Divine Eye - the left eye of God, Caodaism's central symbol. The effect is genuinely unlike any other religious building in the world - extravagantly colourful, densely symbolic, and built entirely on the premise that all religions are pointing at the same truth.",
+          },
+          { type: "heading", text: "Followers and Grounds" },
+          {
+            type: "paragraph",
+            text: "Around 5 million people follow Caodaism today, primarily in southern Vietnam, and the Holy See draws both pilgrims and visitors in large numbers throughout the year. The grounds extend well beyond the cathedral itself, encompassing a school, dormitories, temples, and working buildings that together form something closer to a self-contained pilgrimage village than a conventional religious site.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cao Dai Holy See",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Holy See is in Hòa Thành district, about 5km from Tây Ninh city centre and roughly 100km from Ho Chi Minh City via Highway 22 through Hóc Môn and Củ Chi. By car or motorbike from HCMC, allow 1.5-2 hours in normal traffic.",
+          },
+          { type: "heading", text: "Combining with Củ Chi" },
+          {
+            type: "paragraph",
+            text: "Day trips from HCMC are common and the same highway runs through Củ Chi, making a combined Holy See/Củ Chi Tunnels day trip logistically straightforward. Guided day tours from HCMC are widely available and typically cover both sites. From the Tây Ninh town centre, the Holy See is an easy 5-minute motorbike ride or xe ôm trip.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cao Dai Holy See",
+        blocks: [
+          { type: "heading", text: "The Grounds and the Main Hall" },
+          {
+            type: "paragraph",
+            text: "Visitors approach through the main grounds - a broad open area flanked by ancient trees, a flagpole adorned with dragons, and a sacred bodhi tree at the centre of the forecourt. The main Chánh Môn gate, with its striking dragon-over-lotus entrance, remains closed except during major ceremonies; regular visitors enter through the side doors. Inside the main hall, two rows of columns wound with carved dragons line a central aisle that visitors must not walk along - the sides are reserved for observers. The hall is divided into 9 progressively elevated levels, with the Càn Khôn globe at the rear altar bearing the Divine Eye gazing out from its starred surface.",
+          },
+          { type: "heading", text: "The Noon Ceremony" },
+          {
+            type: "paragraph",
+            text: "The noon ceremony (12:00 PM daily) brings hundreds of white-robed worshippers moving in orderly procession, divided by gender and spiritual rank, filling the main hall with chanted prayer for about 45 minutes while observers watch from the sides. The colours of robes worn indicate religious rank within the hierarchy, while men and women pray in entirely separate sections - this gender and rank separation creates the temple's remarkable symmetrical appearance when viewed from the gallery during ceremonies. Volunteers stationed throughout the hall enforce the site's etiquette rules - their instructions should be followed without question. Despite the vivid colours and unusual architecture, the atmosphere inside during ceremonies is remarkably quiet and disciplined.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cao Dai Holy See",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Cao Dai Holy See is most impactful when visited with some understanding of what Caodaism actually is - a brief read beforehand transforms what might otherwise look like a chaotic collision of religious symbols into something deliberately and coherently intentional. The noon ceremony is the visit's highlight for most travellers; arriving 15-20 minutes early allows time to find a good viewing position before the procession begins.",
+          },
+          { type: "heading", text: "Dress Code, Monkeys and Củ Chi" },
+          {
+            type: "paragraph",
+            text: "Dress code and behavioural rules are strictly enforced - shorts, bare shoulders, selfies, and walking the central aisle will all result in being asked to leave. The wild monkeys living in the forested areas surrounding the compound are a local fixture - treat them as you would any wild animal, don't feed or provoke, and secure your belongings when walking near the tree lines. If you're visiting as a day trip from Ho Chi Minh City, combine the Holy See with the Củ Chi Tunnels - they're along the same Highway 22 corridor and offer two very different perspectives on southern Vietnam: one spiritual, one historical.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

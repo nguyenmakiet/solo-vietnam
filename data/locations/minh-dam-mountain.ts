@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const minhDamMountain: Location = {
   slug: "minh-dam-mountain",
   name: "Minh Đạm Mountain",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.406176641081109,
@@ -51,14 +51,87 @@ export const minhDamMountain: Location = {
     "The road up is steep and winding with occasional large vehicles coming the other way - drive carefully",
   ],
   content: {
-    intro:
-      "Minh Đạm is a 355m-high, 8km-long mountain range in Bà Rịa-Vũng Tàu, running through several communes including Tam Phước, Long Hải town, Phước Hưng, Phước Hải, and Long Mỹ, with three sides facing the sea. The range is actually made up of several distinct peaks - including Núi Đá Dựng, Hòn Thung, Núi Đá Ngang, Núi Điện Bà, Núi Châu Viên, and Núi Trương Phi (also called Núi Kỳ Vân and Thùy Vân) - collectively forming what's known as the Châu Viên and Châu Long ranges. It's roughly 6km northeast of Long Hải town and about 30km from central Vũng Tàu. The mountain's rugged terrain and more than 300 caves of various sizes made it a natural stronghold for Vietnamese resistance fighters during both the French and American wars, organised into four historic base areas - Đá Chẻ, Đá Chồng, Chùa Viên, and Chùa Giếng Gạch - connected today by a scenic stone-paved forest path. Specific caves still preserved include the District Party Committee cave (Hang Huyện Ủy), the Ordnance cave (Hang Quân Giới), and the Medical cave (Hang Quân Y), among others, several retaining original furniture, wooden bridges, and cooking equipment from the resistance period. The mountain's name honours two soldiers, Mạc Thanh Đạm and Bùi Công Minh, who died defending the base on November 17, 1948 - local residents combined their names to name the mountain in their memory. The base was recognised as a National Historical Relic by the Ministry of Culture, Sports and Tourism in 1993. Beyond its history, Minh Đạm's forest supports rare hardwoods like gõ đỏ and cẩm lai, medicinal plants, and wildlife, drawing hikers as much for the trekking as for the history.",
-    howToGetThere:
-      "Minh Đạm Mountain is located in Phước Hải commune, Đất Đỏ district, approximately 100km from Ho Chi Minh City and 30km from Vũng Tàu city. By car or motorbike from HCMC, follow Highway 51 toward Vũng Tàu then branch south toward Long Hải and Phước Hải - the journey takes around 2 hours. From Vũng Tàu, follow road ĐT44A through Phước Hải and Đất Đỏ toward Long Hải; at the Pháp Hoa Pagoda junction (ngã ba chùa Pháp Hoa), turn left to reach the site. Don't rely on a generic Google Maps pin - search specifically for 'Minh Dam Historic Relic' for accurate directions. The final approach road is steep and winding, with occasional large vehicles coming the other way, so drive with care. Safe parking is available at the base near the historical site entrance.",
-    whatToExpect:
-      "From the parking area, a beginner-friendly route leads to Bạch Vân Điện (about 15-20 minutes), where stairs descend to a large rock outcrop with sea views - a popular, manageable first stop. Two other reasonable routes for newer visitors lead to the Đá Chẻ flagpole (roughly 30+ minutes via stairs and the main path) or Tứ Sơn Tự temple (about 45 minutes via a gravel road). Deeper trails connect Bạch Vân Động to Bồng Lai, Hàm Rồng, and Hang Dơi (Bat Cave), but this network has many confusing junctions and isn't recommended without a group and real trekking experience - there's a documented case of a visitor getting lost here and needing local rangers' help. The historical zones themselves are linked by an attractive stone-paved forest path, with preserved furniture, wooden bridges, and cooking equipment giving a sense of how resistance fighters lived - some sites even demonstrate cooking bamboo-tube rice or making fire from stone. Wild monkeys are common and can be assertive around food. The overall climb is moderate and suitable for most fitness levels on the main routes, though afternoons turn overcast and make the cave sections harder to navigate - mornings are notably better.",
-    travelTips:
-      "Minh Đạm works best as a secondary stop alongside Long Hải beach rather than a full day trip on its own - many visitors treat it as a morning activity on day two of a Long Hải overnight stay, after breakfast and before heading back. If you're coming from HCMC as a single day trip, decide your priority: a beach-focused day doesn't leave much room for the mountain, while a history-and-nature-focused day can make room for a shorter beach stop instead. Families with older, capable kids and couples or groups who've already done the beach and want something different tend to get the most out of it; families with young children or elderly members with limited walking stamina may want to treat it as optional rather than essential, especially in hot weather. Whatever your pace, this is a historical site as much as a hike - keep noise down, don't litter or write on structures, and take the time to actually absorb the place rather than rushing through for photos.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Minh Đạm Mountain Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Minh Đạm is a 355m-high, 8km-long mountain range in Bà Rịa-Vũng Tàu, running through several communes including Tam Phước, Long Hải town, Phước Hưng, Phước Hải, and Long Mỹ, with three sides facing the sea. The range is actually made up of several distinct peaks - including Núi Đá Dựng, Hòn Thung, Núi Đá Ngang, Núi Điện Bà, Núi Châu Viên, and Núi Trương Phi (also called Núi Kỳ Vân and Thùy Vân) - collectively forming what's known as the Châu Viên and Châu Long ranges. It's roughly 6km northeast of Long Hải town and about 30km from central Vũng Tàu.",
+          },
+          { type: "heading", text: "A Resistance Base with Over 300 Caves" },
+          {
+            type: "paragraph",
+            text: "The mountain's rugged terrain and more than 300 caves of various sizes made it a natural stronghold for Vietnamese resistance fighters during both the French and American wars, organised into four historic base areas - Đá Chẻ, Đá Chồng, Chùa Viên, and Chùa Giếng Gạch - connected today by a scenic stone-paved forest path. Specific caves still preserved include the District Party Committee cave (Hang Huyện Ủy), the Ordnance cave (Hang Quân Giới), and the Medical cave (Hang Quân Y), among others, several retaining original furniture, wooden bridges, and cooking equipment from the resistance period. The mountain's name honours two soldiers, Mạc Thanh Đạm and Bùi Công Minh, who died defending the base on November 17, 1948 - local residents combined their names to name the mountain in their memory.",
+          },
+          { type: "heading", text: "Heritage Status and Forest" },
+          {
+            type: "paragraph",
+            text: "The base was recognised as a National Historical Relic by the Ministry of Culture, Sports and Tourism in 1993. Beyond its history, Minh Đạm's forest supports rare hardwoods like gõ đỏ and cẩm lai, medicinal plants, and wildlife, drawing hikers as much for the trekking as for the history.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Minh Đạm Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Minh Đạm Mountain is located in Phước Hải commune, Đất Đỏ district, approximately 100km from Ho Chi Minh City and 30km from Vũng Tàu city.",
+          },
+          { type: "heading", text: "From HCMC and Vũng Tàu" },
+          {
+            type: "paragraph",
+            text: "By car or motorbike from HCMC, follow Highway 51 toward Vũng Tàu then branch south toward Long Hải and Phước Hải - the journey takes around 2 hours. From Vũng Tàu, follow road ĐT44A through Phước Hải and Đất Đỏ toward Long Hải; at the Pháp Hoa Pagoda junction (ngã ba chùa Pháp Hoa), turn left to reach the site. Don't rely on a generic Google Maps pin - search specifically for 'Minh Dam Historic Relic' for accurate directions.",
+          },
+          { type: "heading", text: "The Final Road and Parking" },
+          {
+            type: "paragraph",
+            text: "The final approach road is steep and winding, with occasional large vehicles coming the other way, so drive with care. Safe parking is available at the base near the historical site entrance.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Minh Đạm Mountain",
+        blocks: [
+          { type: "heading", text: "Beginner Routes" },
+          {
+            type: "paragraph",
+            text: "From the parking area, a beginner-friendly route leads to Bạch Vân Điện (about 15-20 minutes), where stairs descend to a large rock outcrop with sea views - a popular, manageable first stop. Two other reasonable routes for newer visitors lead to the Đá Chẻ flagpole (roughly 30+ minutes via stairs and the main path) or Tứ Sơn Tự temple (about 45 minutes via a gravel road).",
+          },
+          { type: "heading", text: "Deeper Trails" },
+          {
+            type: "paragraph",
+            text: "Deeper trails connect Bạch Vân Động to Bồng Lai, Hàm Rồng, and Hang Dơi (Bat Cave), but this network has many confusing junctions and isn't recommended without a group and real trekking experience - there's a documented case of a visitor getting lost here and needing local rangers' help.",
+          },
+          { type: "heading", text: "Historical Zones, Monkeys and Difficulty" },
+          {
+            type: "paragraph",
+            text: "The historical zones themselves are linked by an attractive stone-paved forest path, with preserved furniture, wooden bridges, and cooking equipment giving a sense of how resistance fighters lived - some sites even demonstrate cooking bamboo-tube rice or making fire from stone. Wild monkeys are common and can be assertive around food. The overall climb is moderate and suitable for most fitness levels on the main routes, though afternoons turn overcast and make the cave sections harder to navigate - mornings are notably better.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Minh Đạm Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Minh Đạm works best as a secondary stop alongside Long Hải beach rather than a full day trip on its own - many visitors treat it as a morning activity on day two of a Long Hải overnight stay, after breakfast and before heading back. If you're coming from HCMC as a single day trip, decide your priority: a beach-focused day doesn't leave much room for the mountain, while a history-and-nature-focused day can make room for a shorter beach stop instead. Families with older, capable kids and couples or groups who've already done the beach and want something different tend to get the most out of it; families with young children or elderly members with limited walking stamina may want to treat it as optional rather than essential, especially in hot weather.",
+          },
+          {
+            type: "paragraph",
+            text: "Whatever your pace, this is a historical site as much as a hike - keep noise down, don't litter or write on structures, and take the time to actually absorb the place rather than rushing through for photos.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

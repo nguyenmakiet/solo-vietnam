@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const myKheBeach: Location = {
   slug: "my-khe-beach",
   name: "Mỹ Khê Beach",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: 16.056869445948998,
@@ -43,14 +43,83 @@ export const myKheBeach: Location = {
     "A rip current is often recognisable by water that's noticeably darker than its surroundings, an unusually flat or calm patch amid otherwise normal waves, and sometimes foam or floating debris on the surface - if you spot these signs, stay well clear",
   ],
   content: {
-    intro:
-      "Mỹ Khê Beach stretches roughly 9-10km along the eastern edge of Đà Nẵng, running from the base of Sơn Trà Peninsula (near Linh Ứng Pagoda) down to the Marble Mountains in the south - one of the longest urban beaches in Southeast Asia, and before 1975 a beach used by the US military. Its international reputation has built steadily over two decades: Forbes named it one of the six most beautiful beaches on Earth in 2005, Australia's Herald Sun included it among Asia's ten most-loved beaches in 2009, and TripAdvisor has repeatedly ranked it among Asia's best beaches since - 25th in 2021, 8th in 2023, and 6th in 2024. The beach faces directly east into the East Sea, which gives it exceptional sunrise light and consistent surf conditions during the northeast monsoon season. The coastline is organised into three named swimming zones: Bãi tắm Phạm Văn Đồng, a small beach within a park setting with calm water, popular with families; Bãi tắm T20-T18, the first swimming area established here, near Non Nước, with a shorter stretch of sand, deeper water, and bigger waves suited to more adventurous swimmers and surfers; and Bãi tắm 1-2-3, the main officially planned swimming beach, with the fullest range of services - parking, storage, freshwater rinse, food, lifeguards, and sanitation. The sand is fine and white, the water clear in dry season, and the beach is wide enough that even on busy weekends there's room to breathe. A promenade of resort hotels, seafood restaurants, and beach bars runs the length of the strip - the infrastructure is more developed than anywhere else on Vietnam's coast outside of Phú Quốc.",
-    howToGetThere:
-      "Mỹ Khê Beach is 3-5km east of Đà Nẵng city centre, easily reached by Grab, taxi, or bicycle. From Đà Nẵng International Airport, the beach is about 10 minutes by taxi (around 80,000-100,000 VND). The main beach access points are along Võ Nguyên Giáp Street and Phạm Văn Đồng Street, which run parallel to the shoreline. City bus route 1 (running between Đà Nẵng's bus station and Hội An) also stops at Mỹ Khê if you'd rather not arrange your own transport. There are public showers and changing facilities at several points along the beach. Parking is available at multiple access points for motorbikes and cars - look for officially marked parking areas (signed by the Sơn Trà Peninsula and beach tourism management board) charging around 5,000 VND, rather than informal roadside operators who sometimes charge 20,000-30,000 VND at peak times.",
-    whatToExpect:
-      "The beach has a well-maintained promenade with sun loungers, umbrellas, and beach bar seating for most of its length. The water is calm and shallow for 50-100 metres from shore in dry season at the more sheltered sections, making it suitable for swimming and wading, while the T20-T18 zone in the north runs deeper with stronger waves. Lifeguard watchtowers, life buoys, and flags marking rip current zones are in place along the main swimming areas, generally staffed from around 6 AM to 6 PM in peak season - only swim within the flagged, staffed zones. Water sports on offer include banana boat rides, jet skis, parasailing, kayaking, SUP, and coral snorkeling/diving trips. The central section has the highest concentration of resort hotels and beach clubs; the southern end near Non Nước village transitions toward the Marble Mountains. Early morning brings joggers, swimmers, and local fishermen; evenings are dominated by seafood restaurants and sunset crowds, along with beach vendors who can be persistent. A few extra health precautions are worth knowing: locals generally avoid swimming below about 18°C water temperature, and it's best to skip swimming altogether during thunderstorms, rough seas, after drinking alcohol, or with certain health conditions like asthma, heart problems, or an ear infection.",
-    travelTips:
-      "Mỹ Khê is the most accessible beach in central Vietnam - less remote than An Bàng in Hội An, less crowded than Phú Quốc's main beaches in peak season, and with better infrastructure than most alternatives. It works equally well as a half-day beach stop for travellers based in Đà Nẵng city or as the primary reason to visit. The combination of Mỹ Khê in the morning, Marble Mountains in the afternoon, and Bà Nà Hills or the Dragon Bridge at night is the standard Đà Nẵng day itinerary - covering the city's three most distinct attractions in a single day.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Mỹ Khê Beach Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mỹ Khê Beach stretches roughly 9-10km along the eastern edge of Đà Nẵng, running from the base of Sơn Trà Peninsula (near Linh Ứng Pagoda) down to the Marble Mountains in the south - one of the longest urban beaches in Southeast Asia, and before 1975 a beach used by the US military. Its international reputation has built steadily over two decades: Forbes named it one of the six most beautiful beaches on Earth in 2005, Australia's Herald Sun included it among Asia's ten most-loved beaches in 2009, and TripAdvisor has repeatedly ranked it among Asia's best beaches since - 25th in 2021, 8th in 2023, and 6th in 2024.",
+          },
+          { type: "heading", text: "Sunrise and Surf" },
+          {
+            type: "paragraph",
+            text: "The beach faces directly east into the East Sea, which gives it exceptional sunrise light and consistent surf conditions during the northeast monsoon season.",
+          },
+          { type: "heading", text: "Swimming Zones and the Promenade" },
+          {
+            type: "paragraph",
+            text: "The coastline is organised into three named swimming zones: Bãi tắm Phạm Văn Đồng, a small beach within a park setting with calm water, popular with families; Bãi tắm T20-T18, the first swimming area established here, near Non Nước, with a shorter stretch of sand, deeper water, and bigger waves suited to more adventurous swimmers and surfers; and Bãi tắm 1-2-3, the main officially planned swimming beach, with the fullest range of services - parking, storage, freshwater rinse, food, lifeguards, and sanitation. The sand is fine and white, the water clear in dry season, and the beach is wide enough that even on busy weekends there's room to breathe. A promenade of resort hotels, seafood restaurants, and beach bars runs the length of the strip - the infrastructure is more developed than anywhere else on Vietnam's coast outside of Phú Quốc.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Mỹ Khê Beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mỹ Khê Beach is 3-5km east of Đà Nẵng city centre, easily reached by Grab, taxi, or bicycle. From Đà Nẵng International Airport, the beach is about 10 minutes by taxi (around 80,000-100,000 VND). The main beach access points are along Võ Nguyên Giáp Street and Phạm Văn Đồng Street, which run parallel to the shoreline. City bus route 1 (running between Đà Nẵng's bus station and Hội An) also stops at Mỹ Khê if you'd rather not arrange your own transport.",
+          },
+          { type: "heading", text: "Facilities and Parking" },
+          {
+            type: "paragraph",
+            text: "There are public showers and changing facilities at several points along the beach. Parking is available at multiple access points for motorbikes and cars - look for officially marked parking areas (signed by the Sơn Trà Peninsula and beach tourism management board) charging around 5,000 VND, rather than informal roadside operators who sometimes charge 20,000-30,000 VND at peak times.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Mỹ Khê Beach",
+        blocks: [
+          { type: "heading", text: "Facilities and Swimming Safety" },
+          {
+            type: "paragraph",
+            text: "The beach has a well-maintained promenade with sun loungers, umbrellas, and beach bar seating for most of its length. The water is calm and shallow for 50-100 metres from shore in dry season at the more sheltered sections, making it suitable for swimming and wading, while the T20-T18 zone in the north runs deeper with stronger waves. Lifeguard watchtowers, life buoys, and flags marking rip current zones are in place along the main swimming areas, generally staffed from around 6 AM to 6 PM in peak season - only swim within the flagged, staffed zones.",
+          },
+          { type: "heading", text: "Water Sports" },
+          {
+            type: "paragraph",
+            text: "Water sports on offer include banana boat rides, jet skis, parasailing, kayaking, SUP, and coral snorkeling/diving trips.",
+          },
+          { type: "heading", text: "Sections and Times of Day" },
+          {
+            type: "paragraph",
+            text: "The central section has the highest concentration of resort hotels and beach clubs; the southern end near Non Nước village transitions toward the Marble Mountains. Early morning brings joggers, swimmers, and local fishermen; evenings are dominated by seafood restaurants and sunset crowds, along with beach vendors who can be persistent.",
+          },
+          { type: "heading", text: "Health Precautions" },
+          {
+            type: "paragraph",
+            text: "A few extra health precautions are worth knowing: locals generally avoid swimming below about 18°C water temperature, and it's best to skip swimming altogether during thunderstorms, rough seas, after drinking alcohol, or with certain health conditions like asthma, heart problems, or an ear infection.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Mỹ Khê Beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mỹ Khê is the most accessible beach in central Vietnam - less remote than An Bàng in Hội An, less crowded than Phú Quốc's main beaches in peak season, and with better infrastructure than most alternatives. It works equally well as a half-day beach stop for travellers based in Đà Nẵng city or as the primary reason to visit. The combination of Mỹ Khê in the morning, Marble Mountains in the afternoon, and Bà Nà Hills or the Dragon Bridge at night is the standard Đà Nẵng day itinerary - covering the city's three most distinct attractions in a single day.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

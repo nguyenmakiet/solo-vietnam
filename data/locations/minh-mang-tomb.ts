@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const minhMangTomb: Location = {
   slug: "minh-mang-tomb",
   name: "Minh Mạng Tomb",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.387662100068777,
@@ -48,14 +48,83 @@ export const minhMangTomb: Location = {
     "Combine with Tự Đức Tomb (5km away) and Khải Định Tomb (6km from Tự Đức) for a full royal tombs day.",
   ],
   content: {
-    intro:
-      "Minh Mạng Tomb - also known as Hiếu Lăng - is widely regarded as the most architecturally complete and harmonious of the seven Nguyễn royal mausoleums near Huế. It was commissioned by Emperor Minh Mạng (born Nguyễn Phúc Đảm), the 2nd of 13 Nguyễn emperors and the dynasty's most accomplished administrator and reformer. Seven years into his reign, he began searching for the right site for his own resting place. After seven years of searching, he finally chose Cẩm Khê mountain, at the precise point where the Hữu Trạch and Tả Trạch rivers join to form the Perfume River. He renamed the mountain Hiếu Sơn, and construction began in April 1840 after more than a decade of planning - naming the tomb Hiếu Lăng - but he died before it was finished, and his successor completed it between 1840 and 1843. The complex covers 18 hectares with nearly 40 structures arranged in perfect symmetry across three parallel axes, centred on the Thần Đạo (Spirit Way) running from the entrance gate through successive courtyards, pavilions, and halls to the burial mound at the rear. The design embodies feng shui philosophy directly: a still lake in front, a mountain behind, greenery flanking both sides, creating a perfectly balanced space. The exterior is comparatively understated; the interior balance and proportion are what leave the deepest impression. The exact burial location of Minh Mạng within the complex remains unknown today - not a source of unease, but a quiet mystery that lingers with visitors as they move through the grounds, reinforced by the architecture and the unresolved history rather than by anything overtly spooky.",
-    howToGetThere:
-      "Minh Mạng Tomb is about 12-14km southwest of Huế city centre. By motorbike or taxi: follow QL49 along the Perfume River to Tuần Bridge, then continue a short distance further - about 25-30 minutes total. The location is accurately pinned on Google Maps. By boat: about 1 hour along the Perfume River, organised through Huế tourist agencies. The riverside motorbike or bicycle route passes through quiet countryside and is one of the most pleasant easy rides near Huế. Most travellers combine Minh Mạng with Tự Đức Tomb (5km away) and Khải Định Tomb (6km from Tự Đức) in a single royal tombs day.",
-    whatToExpect:
-      "The complex is entered through a series of ceremonial gates, each marking a transition to a more sacred inner zone, with stone mandarins, elephants, and horses lining the first courts. The Sung Ân Điện worship hall holds the most decorated interior of any Nguyễn tomb - carved wooden doors, lacquer columns, and the ancestral altar. Beyond the hall, the crescent-shaped Tân Nguyệt Hồ lake reflects the Minh Lâu pavilion above it - the most photographed scene in the complex, with lotus flowers scenting the air and tall pines ringing the water. A bridge crosses the lake to the burial mound, enclosed within the Bửu Thành (Precious City) wall and topped with pine trees. The gate to Bửu Thành remains permanently locked year-round, for the public and royal descendants alike - even on the emperor's death anniversary, ceremonies take place at the Sung Ân Điện worship hall rather than inside the burial hill itself.",
-    travelTips:
-      "Minh Mạng is the tomb to visit if you only have time for one - the combination of scale, preservation, and architectural quality makes it the most complete royal mausoleum experience in Huế. The lake and pavilion sections in the middle of the complex are the most beautiful and least visited by hurrying tour groups, so don't rush through them. Allow the full 1.5-2 hours and walk slowly. Best visited 7-9 AM or 3-5 PM to avoid Huế's midday heat. For comparison: Minh Mạng impresses through harmony with nature and symmetry; Tự Đức through poetic, romantic atmosphere; Khải Định through ornate, unconventional artistry unlike anything else in Huế.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Minh Mạng Tomb Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Minh Mạng Tomb - also known as Hiếu Lăng - is widely regarded as the most architecturally complete and harmonious of the seven Nguyễn royal mausoleums near Huế. It was commissioned by Emperor Minh Mạng (born Nguyễn Phúc Đảm), the 2nd of 13 Nguyễn emperors and the dynasty's most accomplished administrator and reformer.",
+          },
+          { type: "heading", text: "Choosing the Site" },
+          {
+            type: "paragraph",
+            text: "Seven years into his reign, he began searching for the right site for his own resting place. After seven years of searching, he finally chose Cẩm Khê mountain, at the precise point where the Hữu Trạch and Tả Trạch rivers join to form the Perfume River. He renamed the mountain Hiếu Sơn, and construction began in April 1840 after more than a decade of planning - naming the tomb Hiếu Lăng - but he died before it was finished, and his successor completed it between 1840 and 1843.",
+          },
+          { type: "heading", text: "Layout and Feng Shui" },
+          {
+            type: "paragraph",
+            text: "The complex covers 18 hectares with nearly 40 structures arranged in perfect symmetry across three parallel axes, centred on the Thần Đạo (Spirit Way) running from the entrance gate through successive courtyards, pavilions, and halls to the burial mound at the rear. The design embodies feng shui philosophy directly: a still lake in front, a mountain behind, greenery flanking both sides, creating a perfectly balanced space. The exterior is comparatively understated; the interior balance and proportion are what leave the deepest impression.",
+          },
+          { type: "heading", text: "The Unknown Burial Location" },
+          {
+            type: "paragraph",
+            text: "The exact burial location of Minh Mạng within the complex remains unknown today - not a source of unease, but a quiet mystery that lingers with visitors as they move through the grounds, reinforced by the architecture and the unresolved history rather than by anything overtly spooky.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Minh Mạng Tomb",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Minh Mạng Tomb is about 12-14km southwest of Huế city centre. By motorbike or taxi: follow QL49 along the Perfume River to Tuần Bridge, then continue a short distance further - about 25-30 minutes total. The location is accurately pinned on Google Maps.",
+          },
+          { type: "heading", text: "By Boat or the Riverside Road" },
+          {
+            type: "paragraph",
+            text: "By boat: about 1 hour along the Perfume River, organised through Huế tourist agencies. The riverside motorbike or bicycle route passes through quiet countryside and is one of the most pleasant easy rides near Huế. Most travellers combine Minh Mạng with Tự Đức Tomb (5km away) and Khải Định Tomb (6km from Tự Đức) in a single royal tombs day.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Minh Mạng Tomb",
+        blocks: [
+          { type: "heading", text: "The Gates and Sung Ân Điện" },
+          {
+            type: "paragraph",
+            text: "The complex is entered through a series of ceremonial gates, each marking a transition to a more sacred inner zone, with stone mandarins, elephants, and horses lining the first courts. The Sung Ân Điện worship hall holds the most decorated interior of any Nguyễn tomb - carved wooden doors, lacquer columns, and the ancestral altar.",
+          },
+          { type: "heading", text: "Tân Nguyệt Hồ and the Burial Mound" },
+          {
+            type: "paragraph",
+            text: "Beyond the hall, the crescent-shaped Tân Nguyệt Hồ lake reflects the Minh Lâu pavilion above it - the most photographed scene in the complex, with lotus flowers scenting the air and tall pines ringing the water. A bridge crosses the lake to the burial mound, enclosed within the Bửu Thành (Precious City) wall and topped with pine trees. The gate to Bửu Thành remains permanently locked year-round, for the public and royal descendants alike - even on the emperor's death anniversary, ceremonies take place at the Sung Ân Điện worship hall rather than inside the burial hill itself.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Minh Mạng Tomb",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Minh Mạng is the tomb to visit if you only have time for one - the combination of scale, preservation, and architectural quality makes it the most complete royal mausoleum experience in Huế. The lake and pavilion sections in the middle of the complex are the most beautiful and least visited by hurrying tour groups, so don't rush through them. Allow the full 1.5-2 hours and walk slowly.",
+          },
+          { type: "heading", text: "Timing and Comparison" },
+          {
+            type: "paragraph",
+            text: "Best visited 7-9 AM or 3-5 PM to avoid Huế's midday heat. For comparison: Minh Mạng impresses through harmony with nature and symmetry; Tự Đức through poetic, romantic atmosphere; Khải Định through ornate, unconventional artistry unlike anything else in Huế.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
