@@ -31,7 +31,7 @@ export const hoaLoPrison: Location = {
     "hoa-lo-prison-ha-noi-3_gbv3hu",
   ],
   seoDescription:
-    "Hoa Lo Prison — nicknamed the 'Hanoi Hilton' by American POWs — is a preserved French colonial prison in central Hanoi, used to incarcerate Vietnamese political prisoners before 1954 and American pilots during the Vietnam War. One of Hanoi's most historically significant sites.",
+    "Hoa Lo Prison - nicknamed the 'Hanoi Hilton' by American POWs - is a preserved French colonial prison in central Hanoi, used to incarcerate Vietnamese political prisoners before 1954 and American pilots during the Vietnam War. One of Hanoi's most historically significant sites.",
   tips: [
     "Rent the audio guide (50,000 VND) - it's worth it. The exhibits have English signage but the audio adds considerably more context to both the French colonial and American War sections.",
     "Budget 1.5 to 2 hours with the audio guide. Last entry is 4:30 PM - arrive before 3:00 PM to have enough time without rushing.",
@@ -43,7 +43,7 @@ export const hoaLoPrison: Location = {
   ],
   content: {
     intro:
-      "Hoa Lo Prison — Nhà tù Hỏa Lò — was built by the French colonial administration in 1896 on the site of a village known for producing pottery and stoves, from which the name derives: hỏa lò means 'fiery furnace' or 'stove'. Originally designed to hold 450 prisoners, the complex at times held over 2,000, becoming a central site of Vietnamese revolutionary history as the French used it to incarcerate independence activists, including many future leaders of the Democratic Republic of Vietnam. After the French departure in 1954, the prison was used by North Vietnam, most notably during the Vietnam War when American pilots shot down over Hanoi were held there — a period during which the prison was nicknamed the 'Hanoi Hilton' by US prisoners of war. The original complex was largely demolished in the 1990s to make way for the Hanoi Towers development; the preserved section — the main entrance block and several cell buildings — now operates as a museum covering both phases of the prison's history.",
+      "Hoa Lo Prison - Nhà tù Hỏa Lò - was built by the French colonial administration in 1896 on the site of a village known for producing pottery and stoves, from which the name derives: hỏa lò means 'fiery furnace' or 'stove'. Originally designed to hold 450 prisoners, the complex at times held over 2,000, becoming a central site of Vietnamese revolutionary history as the French used it to incarcerate independence activists, including many future leaders of the Democratic Republic of Vietnam. After the French departure in 1954, the prison was used by North Vietnam, most notably during the Vietnam War when American pilots shot down over Hanoi were held there - a period during which the prison was nicknamed the 'Hanoi Hilton' by US prisoners of war. The original complex was largely demolished in the 1990s to make way for the Hanoi Towers development; the preserved section - the main entrance block and several cell buildings - now operates as a museum covering both phases of the prison's history.",
     howToGetThere:
       "Hoa Lo Prison is at 1 Hỏa Lò Street in Hoàn Kiếm district, approximately 500m southwest of Hoàn Kiếm Lake. Walkable from the Old Quarter in 10-15 minutes. The entrance is clearly marked with a large gate on Hỏa Lò Street. No dedicated parking; motorbikes can be parked on nearby side streets.",
     whatToExpect:

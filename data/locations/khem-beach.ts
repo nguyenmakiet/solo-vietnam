@@ -54,7 +54,7 @@ export const khemBeach: Location = {
     highlights: [
       "Best sunrise beach on Phú Quốc - southeast-facing, sheltered from southwest wind May-September, exceptional water clarity in the right season",
       "Fine white sand and vivid turquoise water when conditions are right - consistently rated one of the top beaches on the island",
-      "The origin of the name is debated — some trace it to Khmer salt production history, while many locals associate it with the cream-soft white sand underfoot",
+      "The origin of the name is debated - some trace it to Khmer salt production history, while many locals associate it with the cream-soft white sand underfoot",
     ],
     thingsToKnow: {
       crowds: "Large and well-known beach - always busy in peak hours. Arrive before 8 AM for the best experience. Free sunbeds at the resort section are gone by 10 AM.",

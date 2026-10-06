@@ -18,7 +18,7 @@ export const catBaCannonFort: Location = {
   tags: ["💣 WWII Cannon Fort", "📸 Panoramic Views", "🏔️ Hilltop", "french-colonial-era"],
   bestMonths: [1, 2, 3, 4, 10, 11, 12],
   bestSeasonNote: "Currently closed - the nearby Radio Tower viewpoint is open year-round; best at sunset Oct - Apr",
-  entranceFee: "Closed — no entry",
+  entranceFee: "Closed - no entry",
   openingHours: "Closed long-term as of late 2025",
   mapUrl: "https://www.google.com/maps?q=20.72699791562507,107.05415352678563",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1774768522625!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3NuTEdoMUFF!2m2!1d20.72553134415704!2d107.0519851983662!3f239.02503821532432!4f-14.659227288351687!5f0.7820865974627469" },
