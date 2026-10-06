@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const templeOfLiterature: Location = {
   slug: "temple-of-literature",
   name: "Temple of Literature",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.028594787123282",
@@ -49,14 +49,85 @@ export const templeOfLiterature: Location = {
     "The Khuê Văn Các pavilion in the second courtyard is Hanoi's official symbol and appears on the 100,000 VND banknote. It photographs best in morning light from the front gate side.",
   ],
   content: {
-    intro:
-      "The Temple of Literature (Văn Miếu - Quốc Tử Giám) was founded in 1070 under Emperor Lý Thánh Tông as a temple dedicated to Confucius, then expanded six years later to include the Quốc Tử Giám - Vietnam's first national university. For the next 700 years, under the Lý, Trần, and Lê dynasties, this compound trained the scholars and mandarins who administered the country. Entry was through the imperial examination system: three tiers of exams - regional (hương), national (hội), and palace (đình) - that filtered candidates across years of study. The French colonial administration dismantled that system in the early 20th century and replaced it with Western-style education. The physical complex survived largely intact and remains the best-preserved example of traditional Vietnamese architecture in Hanoi. The 82 stone doctoral steles, recording the names of 1,300 graduates between 1484 and 1779, are listed by UNESCO as a Memory of the World heritage document.",
-    howToGetThere:
-      "The Temple of Literature is in Đống Đa district, about 2km southwest of Hoàn Kiếm Lake. Walking from the Old Quarter takes 25-30 minutes through the French Quarter. Grab or taxi from Hoàn Kiếm is around 10 minutes. Several bus routes run along Quốc Tử Giám street. The main entrance is on Văn Miếu Street, clearly signed. Motorbike parking is available on surrounding streets.",
-    whatToExpect:
-      "Five successive courtyards, each passed through a gate, moving from the street entrance to the inner sanctuary. The first two courtyards are landscaped gardens. The second holds the Khuê Văn Các pavilion - Hanoi's city symbol, depicted on the 100,000 VND banknote. The third courtyard has the Thiên Quang Tĩnh reflecting pool and the 82 doctoral steles. The fourth holds the main Confucius temple. The fifth contains the reconstructed Thái Học hall. Budget around 2 hours to move through everything at a pace that lets you read the panels and take in the context - not just the architecture.",
-    travelTips:
-      "Văn Miếu carries real weight for Vietnamese people - this is not a decorative heritage site but a place with direct cultural meaning around education, achievement, and national identity. That context shapes how to behave here: the rules around dress and not touching the steles aren't bureaucratic formalities. Beyond the cultural dimension, it's also one of the few places in Hanoi where you can stand in front of a primary historical document - actual names of actual scholars, carved in stone in the 15th century - rather than a reconstruction or a replica. If you're treating Hanoi as more than a checklist, this is where to spend time.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Temple of Literature Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Temple of Literature (Văn Miếu - Quốc Tử Giám) was founded in 1070 under Emperor Lý Thánh Tông as a temple dedicated to Confucius, then expanded six years later to include the Quốc Tử Giám - Vietnam's first national university.",
+          },
+          { type: "heading", text: "Centuries of Scholarship" },
+          {
+            type: "paragraph",
+            text: "For the next 700 years, under the Lý, Trần, and Lê dynasties, this compound trained the scholars and mandarins who administered the country. Entry was through the imperial examination system: three tiers of exams - regional (hương), national (hội), and palace (đình) - that filtered candidates across years of study. The French colonial administration dismantled that system in the early 20th century and replaced it with Western-style education.",
+          },
+          { type: "heading", text: "The Complex and the Doctoral Steles" },
+          {
+            type: "paragraph",
+            text: "The physical complex survived largely intact and remains the best-preserved example of traditional Vietnamese architecture in Hanoi. The 82 stone doctoral steles, recording the names of 1,300 graduates between 1484 and 1779, are listed by UNESCO as a Memory of the World heritage document.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Temple of Literature",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Temple of Literature is in Đống Đa district, about 2km southwest of Hoàn Kiếm Lake. Walking from the Old Quarter takes 25-30 minutes through the French Quarter. Grab or taxi from Hoàn Kiếm is around 10 minutes.",
+          },
+          {
+            type: "paragraph",
+            text: "Several bus routes run along Quốc Tử Giám street. The main entrance is on Văn Miếu Street, clearly signed. Motorbike parking is available on surrounding streets.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Temple of Literature",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Five successive courtyards, each passed through a gate, moving from the street entrance to the inner sanctuary. The first two courtyards are landscaped gardens.",
+          },
+          { type: "heading", text: "Khuê Văn Các and the Doctoral Steles" },
+          {
+            type: "paragraph",
+            text: "The second holds the Khuê Văn Các pavilion - Hanoi's city symbol, depicted on the 100,000 VND banknote. The third courtyard has the Thiên Quang Tĩnh reflecting pool and the 82 doctoral steles.",
+          },
+          { type: "heading", text: "The Confucius Temple and Thái Học Hall" },
+          {
+            type: "paragraph",
+            text: "The fourth holds the main Confucius temple. The fifth contains the reconstructed Thái Học hall.",
+          },
+          { type: "heading", text: "Time Needed" },
+          {
+            type: "paragraph",
+            text: "Budget around 2 hours to move through everything at a pace that lets you read the panels and take in the context - not just the architecture.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Temple of Literature",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Văn Miếu carries real weight for Vietnamese people - this is not a decorative heritage site but a place with direct cultural meaning around education, achievement, and national identity. That context shapes how to behave here: the rules around dress and not touching the steles aren't bureaucratic formalities.",
+          },
+          {
+            type: "paragraph",
+            text: "Beyond the cultural dimension, it's also one of the few places in Hanoi where you can stand in front of a primary historical document - actual names of actual scholars, carved in stone in the 15th century - rather than a reconstruction or a replica. If you're treating Hanoi as more than a checklist, this is where to spend time.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

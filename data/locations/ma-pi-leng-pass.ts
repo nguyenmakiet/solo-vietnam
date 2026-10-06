@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const maPiLengPass: Location = {
   slug: "ma-pi-leng-pass",
   name: "Mã Pí Lèng Pass",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.24315558513546,
@@ -48,14 +48,83 @@ export const maPiLengPass: Location = {
     "Bring warm layers - temperature can drop below 10°C. Gloves and a good helmet are essential.",
   ],
   content: {
-    intro:
-      "Mã Pí Lèng is Vietnam's most spectacular mountain pass - a 20km stretch of the Happiness Road (Đường Hạnh Phúc) clinging to sheer limestone cliffs above the Nho Quế River gorge, at over 1,200m elevation. The pass connects Đồng Văn to Mèo Vạc and is the centerpiece of the Hà Giang Loop, located in Pải Lủng and Pả Vi communes, Mèo Vạc district. The name comes from the Quan Hỏa language meaning 'horse's muzzle ridge' - describing the near-vertical steepness of the terrain. The road was built 1959-1965 by over 2,000 workers from 16 ethnic groups; on the cliff sections, workers hung suspended from ropes on the rock faces to drill and blast the limestone by hand for nearly a year. The canyon below - the Tu Sản gorge with the turquoise Nho Quế River - is one of the deepest in Southeast Asia. The scale is genuinely staggering and the pass is a part of the Đồng Văn Karst Plateau Global Geopark.",
-    howToGetThere:
-      "Mã Pí Lèng Pass is on National Highway 4C between Đồng Văn and Mèo Vạc - the total Đồng Văn to Mèo Vạc stretch is about 22-24km, with the summit roughly 10-12km from Đồng Văn. Most travelers ride through as part of the Hà Giang Loop, approaching from Đồng Văn going east toward Mèo Vạc. From Hà Giang city to Đồng Văn is about 160km and 4-5 hours by motorbike via QL4C - the shortest route. The pass takes 30-45 minutes to cross at a comfortable pace with stops. Motorbike rental in Hà Giang: 150,000-250,000 VND/day. Car tours and Easy Rider services are available for those not confident on mountain roads.",
-    whatToExpect:
-      "The road winds through dramatic karst landscape with 9 major hairpin bends before the canyon opens up suddenly. One side is sheer limestone cliff face; the other drops thousands of metres to the turquoise Nho Quế River below. Two viewpoint cafés offer the best stopping points: Coffee Panorama (on the pass, easy access, view of Tu Sản gorge) and Coffee Mí Pó (higher elevation, full panoramic view of the entire pass and river - steeper road up, xe ôm available if needed). The Nho Quế river boat tour from Mèo Vạc gives a completely different perspective - looking up at the canyon walls from the water below. The road surface is generally good but narrow, with sheer drops and no barriers in places.",
-    travelTips:
-      "Ride Đồng Văn to Mèo Vạc for the best canyon views on the right-hand side going down. Check brakes and fuel before departure - the pass has limited services on the road itself. Never ride at night. June to August brings frequent rain and morning fog that makes the road genuinely dangerous - this is the period to avoid if safety is a priority. The pass is best in clear weather; September to November and March to April offer the most reliable conditions. Budget 2.5-5 million VND per person for a 2-3 day circuit from Hà Giang including motorbike, food, accommodation, and boat tour.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Mã Pí Lèng Pass Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mã Pí Lèng is Vietnam's most spectacular mountain pass - a 20km stretch of the Happiness Road (Đường Hạnh Phúc) clinging to sheer limestone cliffs above the Nho Quế River gorge, at over 1,200m elevation. The pass connects Đồng Văn to Mèo Vạc and is the centerpiece of the Hà Giang Loop, located in Pải Lủng and Pả Vi communes, Mèo Vạc district.",
+          },
+          { type: "heading", text: "Name and Construction" },
+          {
+            type: "paragraph",
+            text: "The name comes from the Quan Hỏa language meaning 'horse's muzzle ridge' - describing the near-vertical steepness of the terrain. The road was built 1959-1965 by over 2,000 workers from 16 ethnic groups; on the cliff sections, workers hung suspended from ropes on the rock faces to drill and blast the limestone by hand for nearly a year.",
+          },
+          { type: "heading", text: "The Tu Sản Gorge and the Geopark" },
+          {
+            type: "paragraph",
+            text: "The canyon below - the Tu Sản gorge with the turquoise Nho Quế River - is one of the deepest in Southeast Asia. The scale is genuinely staggering and the pass is a part of the Đồng Văn Karst Plateau Global Geopark.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Mã Pí Lèng Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mã Pí Lèng Pass is on National Highway 4C between Đồng Văn and Mèo Vạc - the total Đồng Văn to Mèo Vạc stretch is about 22-24km, with the summit roughly 10-12km from Đồng Văn. Most travelers ride through as part of the Hà Giang Loop, approaching from Đồng Văn going east toward Mèo Vạc. From Hà Giang city to Đồng Văn is about 160km and 4-5 hours by motorbike via QL4C - the shortest route. The pass takes 30-45 minutes to cross at a comfortable pace with stops.",
+          },
+          { type: "heading", text: "Rentals and Tours" },
+          {
+            type: "paragraph",
+            text: "Motorbike rental in Hà Giang: 150,000-250,000 VND/day. Car tours and Easy Rider services are available for those not confident on mountain roads.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Mã Pí Lèng Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The road winds through dramatic karst landscape with 9 major hairpin bends before the canyon opens up suddenly. One side is sheer limestone cliff face; the other drops thousands of metres to the turquoise Nho Quế River below.",
+          },
+          { type: "heading", text: "Viewpoint Cafés and the River Boat" },
+          {
+            type: "paragraph",
+            text: "Two viewpoint cafés offer the best stopping points: Coffee Panorama (on the pass, easy access, view of Tu Sản gorge) and Coffee Mí Pó (higher elevation, full panoramic view of the entire pass and river - steeper road up, xe ôm available if needed). The Nho Quế river boat tour from Mèo Vạc gives a completely different perspective - looking up at the canyon walls from the water below.",
+          },
+          { type: "heading", text: "Road Conditions" },
+          {
+            type: "paragraph",
+            text: "The road surface is generally good but narrow, with sheer drops and no barriers in places.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Mã Pí Lèng Pass",
+        blocks: [
+          { type: "heading", text: "Riding Safely" },
+          {
+            type: "paragraph",
+            text: "Ride Đồng Văn to Mèo Vạc for the best canyon views on the right-hand side going down. Check brakes and fuel before departure - the pass has limited services on the road itself. Never ride at night. June to August brings frequent rain and morning fog that makes the road genuinely dangerous - this is the period to avoid if safety is a priority.",
+          },
+          { type: "heading", text: "When to Go and Budget" },
+          {
+            type: "paragraph",
+            text: "The pass is best in clear weather; September to November and March to April offer the most reliable conditions. Budget 2.5-5 million VND per person for a 2-3 day circuit from Hà Giang including motorbike, food, accommodation, and boat tour.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

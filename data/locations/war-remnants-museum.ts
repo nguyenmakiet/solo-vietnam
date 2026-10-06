@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const warRemnantsMuseum: Location = {
   slug: "war-remnants-museum",
   name: "War Remnants Museum",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: "10.779534930802145",
@@ -50,14 +50,73 @@ export const warRemnantsMuseum: Location = {
     "Allow at least 2 hours; serious visitors often need 3 - there is significant written content alongside the photographs",
   ],
   content: {
-    intro:
-      "The War Remnants Museum - Bảo tàng Chứng tích Chiến tranh - is a four-storey museum in District 3 of Ho Chi Minh City dedicated to documenting the Vietnam War from the Vietnamese perspective. Originally opened in 1975 as the Exhibition House for US and Puppet Crimes, the museum holds an extensive collection of photographs, military equipment, weapons, and personal testimonies covering the period from French colonialism through the end of the American War in 1975. The most internationally recognised exhibits are the Agent Orange / Dioxin gallery, which documents the long-term health consequences of chemical defoliant use on Vietnamese civilians across generations, and the Requiem gallery, which displays the work of photographers from multiple countries - including American, Vietnamese, Japanese, and French journalists - who were killed while covering the conflict. Outside, the courtyard houses a collection of decommissioned US military hardware: helicopters, tanks, artillery pieces, and an F-5A fighter jet. The museum is the most visited paid attraction in Ho Chi Minh City and draws both international tourists and Vietnamese school groups.",
-    howToGetThere:
-      "The museum is located at 28 Võ Văn Tần in District 3, about 1km from the Reunification Palace and 1.5km from Ben Thanh Market. Easily reached on foot from the backpacker area around Phạm Ngũ Lão Street (15-20 minute walk) or by Grab from anywhere in the city centre. Motorbike parking is available on Lê Quý Đôn street alongside the museum.",
-    whatToExpect:
-      "The museum is spread across three main floors plus the outdoor courtyard. The ground floor covers the international movement against the Vietnam War. The upper floors document specific aspects of the conflict: military operations, war crimes investigations, the press corps, and the effects of chemical warfare. The Requiem gallery, dedicated to photographers who died during the war, contains some of the most iconic images of 20th-century conflict photography. The Agent Orange exhibit is clinically documented but confronting - it includes photographs of affected individuals across multiple generations and maps of defoliant application zones. The outdoor exhibits of US military hardware are accessible without entering the building. Audio guides in 9 languages (80,000 VND) add significant context to the photographic exhibits.",
-    travelTips:
-      "The museum presents the war from a specific political perspective - that of the victorious North Vietnamese government - and visitors should approach the exhibits with that context in mind. Some sections are deliberately graphic. The museum pairs naturally with the Independence Palace (400m away), which documents the same period from the perspective of the South Vietnamese government. For a broader understanding of the war's geography, the Cu Chi Tunnels (40km northwest) show the underground infrastructure used by Viet Cong fighters during the conflict. Combined, these three sites give the fullest picture of the war available in the Ho Chi Minh City area.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes War Remnants Museum Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The War Remnants Museum - Bảo tàng Chứng tích Chiến tranh - is a four-storey museum in District 3 of Ho Chi Minh City dedicated to documenting the Vietnam War from the Vietnamese perspective. Originally opened in 1975 as the Exhibition House for US and Puppet Crimes, the museum holds an extensive collection of photographs, military equipment, weapons, and personal testimonies covering the period from French colonialism through the end of the American War in 1975.",
+          },
+          { type: "heading", text: "Key Exhibits and Visitors" },
+          {
+            type: "paragraph",
+            text: "The most internationally recognised exhibits are the Agent Orange / Dioxin gallery, which documents the long-term health consequences of chemical defoliant use on Vietnamese civilians across generations, and the Requiem gallery, which displays the work of photographers from multiple countries - including American, Vietnamese, Japanese, and French journalists - who were killed while covering the conflict. Outside, the courtyard houses a collection of decommissioned US military hardware: helicopters, tanks, artillery pieces, and an F-5A fighter jet. The museum is the most visited paid attraction in Ho Chi Minh City and draws both international tourists and Vietnamese school groups.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to War Remnants Museum",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The museum is located at 28 Võ Văn Tần in District 3, about 1km from the Reunification Palace and 1.5km from Ben Thanh Market. Easily reached on foot from the backpacker area around Phạm Ngũ Lão Street (15-20 minute walk) or by Grab from anywhere in the city centre. Motorbike parking is available on Lê Quý Đôn street alongside the museum.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at War Remnants Museum",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The museum is spread across three main floors plus the outdoor courtyard. The ground floor covers the international movement against the Vietnam War. The upper floors document specific aspects of the conflict: military operations, war crimes investigations, the press corps, and the effects of chemical warfare.",
+          },
+          { type: "heading", text: "The Requiem and Agent Orange Galleries" },
+          {
+            type: "paragraph",
+            text: "The Requiem gallery, dedicated to photographers who died during the war, contains some of the most iconic images of 20th-century conflict photography. The Agent Orange exhibit is clinically documented but confronting - it includes photographs of affected individuals across multiple generations and maps of defoliant application zones.",
+          },
+          { type: "heading", text: "Outdoor Exhibits and Audio Guides" },
+          {
+            type: "paragraph",
+            text: "The outdoor exhibits of US military hardware are accessible without entering the building. Audio guides in 9 languages (80,000 VND) add significant context to the photographic exhibits.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for War Remnants Museum",
+        blocks: [
+          { type: "heading", text: "Perspective and Content" },
+          {
+            type: "paragraph",
+            text: "The museum presents the war from a specific political perspective - that of the victorious North Vietnamese government - and visitors should approach the exhibits with that context in mind. Some sections are deliberately graphic.",
+          },
+          { type: "heading", text: "Pairing with Other Sites" },
+          {
+            type: "paragraph",
+            text: "The museum pairs naturally with the Independence Palace (400m away), which documents the same period from the perspective of the South Vietnamese government. For a broader understanding of the war's geography, the Cu Chi Tunnels (40km northwest) show the underground infrastructure used by Viet Cong fighters during the conflict. Combined, these three sites give the fullest picture of the war available in the Ho Chi Minh City area.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const goldenBridge: Location = {
   slug: "golden-bridge",
   name: "Golden Bridge",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["da-nang"],
   destination: "ba-na-hills",
   lat: "15.994957886478177",
@@ -42,14 +42,79 @@ export const goldenBridge: Location = {
     "The hands are wire mesh and fibreglass aged to look like ancient stone - up close the construction is obvious, but at normal viewing distance the effect holds.",
   ],
   content: {
-    intro:
-      "The photo that made the Golden Bridge famous is a specific image: a slender gold walkway cutting through mountain mist, held up by two enormous stone hands, no people in sight, the Đà Nẵng coastline dissolving somewhere far below. That image is real - it was taken early morning, in good light, by a photographer who timed it right. What most visitors actually experience is different: a 150-metre pedestrian bridge inside a large European-style theme park, with tour groups moving through in waves and the same shot attempted by hundreds of people simultaneously. Both versions are true. The Golden Bridge opened in June 2018 and was designed by TA Landscape Architecture. The hands are wire mesh and fibreglass, engineered to look centuries old. The bridge sits at around 1,400 metres elevation on Ba Na Hills, a mountain resort 25km west of Đà Nẵng. It won international design awards and became one of the most copied travel images of the last decade.",
-    howToGetThere:
-      "The Golden Bridge is only accessible as part of the Bà Nà Hills complex - there is no independent route in. From the upper cable car terminal, follow signs through the French Village section roughly 15 minutes uphill to the bridge entrance. To reach the bridge directly, take the Station 1 (Ga Số 1) cable car line from the top terminal. The Bà Nà Hills base station is 25km west of Đà Nẵng city centre - most visitors come by Grab, taxi, or hotel shuttle. There is no public bus that goes directly to the base station.",
-    whatToExpect:
-      "The bridge deck is gold-painted steel, 150 metres long, wide enough for four people across. There are glass panel sections in the floor - if you look down you're looking straight at forested slope dropping away below the bridge. The two hands sit at either end, each around 20 metres tall, textured to read as weathered rock. At the summit on a clear day, you can see the full Đà Nẵng coastline, the city, and the islands offshore. On heavy fog days the hands can disappear completely and the bridge becomes a gold strip floating in grey nothing - a different look, still photogenic, but not what most people came for. The surrounding complex is a full theme park: French colonial architecture, gardens, a wax museum, game zones, restaurants. The bridge is the centrepiece, but it sits inside all of that.",
-    travelTips:
-      "The bridge takes 15-20 minutes at a comfortable pace. The rest of the Bà Nà Hills complex can fill a full day if you want it to - most international visitors treat the Golden Bridge as the main event and the rest as filler. The ticket price is the highest of any single attraction in central Vietnam and covers the cable car and full complex access. The crowd window to avoid is 8:30 AM to 2 PM when day-tour buses from Đà Nẵng and Hội An arrive in waves. If you're not staying overnight and can't hit the 4 PM lull, the first cable car up (around 7:30 AM) is the next best option. Weather on the summit shifts fast - clear at 9 AM can be completely fogged in by 11 AM. Check conditions the morning you plan to go.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Golden Bridge Special",
+        blocks: [
+          { type: "heading", text: "The Photo and the Reality" },
+          {
+            type: "paragraph",
+            text: "The photo that made the Golden Bridge famous is a specific image: a slender gold walkway cutting through mountain mist, held up by two enormous stone hands, no people in sight, the Đà Nẵng coastline dissolving somewhere far below. That image is real - it was taken early morning, in good light, by a photographer who timed it right. What most visitors actually experience is different: a 150-metre pedestrian bridge inside a large European-style theme park, with tour groups moving through in waves and the same shot attempted by hundreds of people simultaneously. Both versions are true.",
+          },
+          { type: "heading", text: "Design and Setting" },
+          {
+            type: "paragraph",
+            text: "The Golden Bridge opened in June 2018 and was designed by TA Landscape Architecture. The hands are wire mesh and fibreglass, engineered to look centuries old. The bridge sits at around 1,400 metres elevation on Ba Na Hills, a mountain resort 25km west of Đà Nẵng. It won international design awards and became one of the most copied travel images of the last decade.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Golden Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Golden Bridge is only accessible as part of the Bà Nà Hills complex - there is no independent route in. From the upper cable car terminal, follow signs through the French Village section roughly 15 minutes uphill to the bridge entrance. To reach the bridge directly, take the Station 1 (Ga Số 1) cable car line from the top terminal.",
+          },
+          { type: "heading", text: "Getting to Bà Nà Hills" },
+          {
+            type: "paragraph",
+            text: "The Bà Nà Hills base station is 25km west of Đà Nẵng city centre - most visitors come by Grab, taxi, or hotel shuttle. There is no public bus that goes directly to the base station.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Golden Bridge",
+        blocks: [
+          { type: "heading", text: "The Bridge and the Hands" },
+          {
+            type: "paragraph",
+            text: "The bridge deck is gold-painted steel, 150 metres long, wide enough for four people across. There are glass panel sections in the floor - if you look down you're looking straight at forested slope dropping away below the bridge. The two hands sit at either end, each around 20 metres tall, textured to read as weathered rock.",
+          },
+          { type: "heading", text: "Views and Fog" },
+          {
+            type: "paragraph",
+            text: "At the summit on a clear day, you can see the full Đà Nẵng coastline, the city, and the islands offshore. On heavy fog days the hands can disappear completely and the bridge becomes a gold strip floating in grey nothing - a different look, still photogenic, but not what most people came for.",
+          },
+          { type: "heading", text: "The Surrounding Theme Park" },
+          {
+            type: "paragraph",
+            text: "The surrounding complex is a full theme park: French colonial architecture, gardens, a wax museum, game zones, restaurants. The bridge is the centrepiece, but it sits inside all of that.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Golden Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The bridge takes 15-20 minutes at a comfortable pace. The rest of the Bà Nà Hills complex can fill a full day if you want it to - most international visitors treat the Golden Bridge as the main event and the rest as filler. The ticket price is the highest of any single attraction in central Vietnam and covers the cable car and full complex access.",
+          },
+          { type: "heading", text: "Timing and Weather" },
+          {
+            type: "paragraph",
+            text: "The crowd window to avoid is 8:30 AM to 2 PM when day-tour buses from Đà Nẵng and Hội An arrive in waves. If you're not staying overnight and can't hit the 4 PM lull, the first cable car up (around 7:30 AM) is the next best option. Weather on the summit shifts fast - clear at 9 AM can be completely fogged in by 11 AM. Check conditions the morning you plan to go.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

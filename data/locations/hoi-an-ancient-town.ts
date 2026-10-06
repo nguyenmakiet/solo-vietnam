@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoiAnAncientTown: Location = {
   slug: "hoi-an-ancient-town",
   name: "Hội An Ancient Town",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: "15.877003160603328",
@@ -44,14 +44,88 @@ export const hoiAnAncientTown: Location = {
     "If ordering tailored clothing, place the order on the first morning to allow time for fitting and alterations - never order on the last day",
   ],
   content: {
-    intro:
-      "Hội An Ancient Town is the most intact historic trading port in Southeast Asia - a 30-block district of 1,000-year-old merchant houses, Chinese assembly halls, Japanese-built bridges, French colonial facades, and Vietnamese tube houses compressed along the north bank of the Thu Bồn River. The town reached its peak as a trading port in the 16th and 17th centuries, when Japanese, Chinese, Portuguese, Dutch, and later French merchants maintained quarters here, each community leaving architectural traces. UNESCO World Heritage inscription in 1999 recognised the exceptional preservation of the urban fabric - Hội An avoided the bombing that destroyed most Vietnamese cities during the wars, and subsequent decades of poverty meant no modernisation redevelopment. The result is a historic district where the original street layout, building scale, and architectural language survive almost intact. Today it's one of Vietnam's most visited destinations - the Old Town's atmospheric lantern-lit evenings can feel genuinely magical or genuinely overcrowded depending on timing.",
-    howToGetThere:
-      "Hội An is 30km south of Đà Nẵng city and 30km from Đà Nẵng International Airport. The most common approach is taxi or Grab from Đà Nẵng (40-50 minutes, around 300,000-400,000 VND). There is no train station in Hội An - the nearest is Đà Nẵng. Express buses run from Đà Nẵng's bus station to Hội An (about 1 hour, 50,000 VND). Within Hội An, the Old Town is best explored on foot - it's compact, flat, and most key sites are within a 15-minute walk of each other.",
-    whatToExpect:
-      "The Ancient Town is organised around Trần Phú Street - the main east-west axis - and the riverfront Bạch Đằng Street. The key heritage buildings include the Japanese Covered Bridge (Chùa Cầu) at the western end, the Tấn Ký Ancient House and Phùng Hưng House on Nguyễn Thái Học, the Phúc Kiến Assembly Hall on Trần Phú, and the central market near the river. The streets between are lined with yellow-walled shophouses selling silk, lanterns, tailored clothing, lacquerware, and art. The Thu Bồn riverfront has cafes and restaurants with views across to the coconut-palm-lined opposite bank. On the 14th of each lunar month (and every Saturday), Đêm Phố Cổ transforms the streets from 6 PM to 10 PM: all electric lights off, lanterns everywhere, traditional rowing boats on the river. It is one of the most atmospheric evenings in Vietnam.",
-    travelTips:
-      "Hội An rewards slow travel more than almost anywhere in Vietnam. One full day covers the landmarks; two or three days lets you find the less-visited streets, eat your way through the food stalls, cycle to Trà Quế village and An Bàng Beach, and experience the town at different times of day. The crowds are real - Trần Phú Street at 11 AM in peak season is shoulder-to-shoulder - but the town is large enough that early mornings (5-6 AM), late evenings (after 9 PM), and the quieter eastern streets remain genuinely pleasant.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hội An Ancient Town Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hội An Ancient Town is the most intact historic trading port in Southeast Asia - a 30-block district of 1,000-year-old merchant houses, Chinese assembly halls, Japanese-built bridges, French colonial facades, and Vietnamese tube houses compressed along the north bank of the Thu Bồn River.",
+          },
+          { type: "heading", text: "A Trading Port's History" },
+          {
+            type: "paragraph",
+            text: "The town reached its peak as a trading port in the 16th and 17th centuries, when Japanese, Chinese, Portuguese, Dutch, and later French merchants maintained quarters here, each community leaving architectural traces.",
+          },
+          { type: "heading", text: "UNESCO Recognition" },
+          {
+            type: "paragraph",
+            text: "UNESCO World Heritage inscription in 1999 recognised the exceptional preservation of the urban fabric - Hội An avoided the bombing that destroyed most Vietnamese cities during the wars, and subsequent decades of poverty meant no modernisation redevelopment. The result is a historic district where the original street layout, building scale, and architectural language survive almost intact.",
+          },
+          { type: "heading", text: "Hội An Today" },
+          {
+            type: "paragraph",
+            text: "Today it's one of Vietnam's most visited destinations - the Old Town's atmospheric lantern-lit evenings can feel genuinely magical or genuinely overcrowded depending on timing.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hội An Ancient Town",
+        blocks: [
+          { type: "heading", text: "From Đà Nẵng" },
+          {
+            type: "paragraph",
+            text: "Hội An is 30km south of Đà Nẵng city and 30km from Đà Nẵng International Airport. The most common approach is taxi or Grab from Đà Nẵng (40-50 minutes, around 300,000-400,000 VND). There is no train station in Hội An - the nearest is Đà Nẵng. Express buses run from Đà Nẵng's bus station to Hội An (about 1 hour, 50,000 VND).",
+          },
+          { type: "heading", text: "Getting Around" },
+          {
+            type: "paragraph",
+            text: "Within Hội An, the Old Town is best explored on foot - it's compact, flat, and most key sites are within a 15-minute walk of each other.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hội An Ancient Town",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Ancient Town is organised around Trần Phú Street - the main east-west axis - and the riverfront Bạch Đằng Street.",
+          },
+          { type: "heading", text: "Heritage Buildings and Shophouses" },
+          {
+            type: "paragraph",
+            text: "The key heritage buildings include the Japanese Covered Bridge (Chùa Cầu) at the western end, the Tấn Ký Ancient House and Phùng Hưng House on Nguyễn Thái Học, the Phúc Kiến Assembly Hall on Trần Phú, and the central market near the river. The streets between are lined with yellow-walled shophouses selling silk, lanterns, tailored clothing, lacquerware, and art.",
+          },
+          { type: "heading", text: "The Riverfront" },
+          {
+            type: "paragraph",
+            text: "The Thu Bồn riverfront has cafes and restaurants with views across to the coconut-palm-lined opposite bank.",
+          },
+          { type: "heading", text: "Đêm Phố Cổ" },
+          {
+            type: "paragraph",
+            text: "On the 14th of each lunar month (and every Saturday), Đêm Phố Cổ transforms the streets from 6 PM to 10 PM: all electric lights off, lanterns everywhere, traditional rowing boats on the river. It is one of the most atmospheric evenings in Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hội An Ancient Town",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hội An rewards slow travel more than almost anywhere in Vietnam. One full day covers the landmarks; two or three days lets you find the less-visited streets, eat your way through the food stalls, cycle to Trà Quế village and An Bàng Beach, and experience the town at different times of day. The crowds are real - Trần Phú Street at 11 AM in peak season is shoulder-to-shoulder - but the town is large enough that early mornings (5-6 AM), late evenings (after 9 PM), and the quieter eastern streets remain genuinely pleasant.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lanHaBay: Location = {
   slug: "lan-ha-bay",
   name: "Lan Hạ Bay",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.731973471390784",
@@ -47,14 +47,81 @@ export const lanHaBay: Location = {
     "Lan Hạ has fewer high-end services and facilities than Ha Long Bay. The natural scenery is the same - arguably more pristine and untouched - but don't expect the same level of cruise boat amenities.",
   ],
   content: {
-    intro:
-      "Lan Hạ Bay occupies the southern section of the same limestone karst system as Ha Long Bay, with approximately 400 islands spread across calm water south of Cát Bà Island. Administratively it falls within Hải Phòng province rather than Quảng Ninh - outside the main Ha Long Bay management zone - which means significantly fewer cruise boats, cleaner water, and beaches that see a fraction of Ha Long's daily visitor numbers. The two bays share a border; on a clear day you can see Ha Long's karsts from Lan Hạ's water. The difference is in the atmosphere: Ha Long Bay runs on a well-oiled mass tourism circuit; Lan Hạ is where you still paddle into an enclosed lagoon and find it empty. That gap has been closing - improved road and ferry access to Cát Bà has made Lan Hạ increasingly popular, especially with Vietnamese domestic tourists on weekends - but it still offers something Ha Long Bay's main route can't match, including one experience that's entirely unique: bioluminescence night kayaking, where the water around your paddle glows blue-green in the darkness between the karsts.",
-    howToGetThere:
-      "Lan Hạ Bay is accessed by boat or kayak tour from Cát Bà town. Tour operators run full-day and half-day excursions departing from the main pier from around 8 AM. Kayak tours - paddling sea kayaks rather than sitting on a motorboat - are the recommended format and available from most operators. Overnight boat tours on Lan Hạ are also available, a smaller-scale version of the Ha Long overnight cruise with far fewer other boats around. The bioluminescence night kayaking tour departs after dark and is booked separately - most hostels and hotels in Cát Bà town can arrange it, with prices around 28 USD per person though this varies by operator.",
-    whatToExpect:
-      "Several distinct zones make up the bay. The floating fishing village at Ba Trái Đào has traditional wooden houses on pontoons with fish farms below the surface. Cave beach passages - narrow archways through limestone that open into enclosed lagoons with small beaches - are the most dramatic kayaking terrain and not accessible any other way. Open water sections between the karsts give long paddles with rock faces rising on all sides. Rocky outcrops around several islands have shallow snorkeling. The night kayaking tour covers a different version of this landscape - darkness, the sound of your paddle, and water that lights up blue-green with each stroke. The effect comes from bioluminescent plankton and is weather and season dependent, but when conditions align it's the kind of thing people remember long after the standard daytime tour fades.",
-    travelTips:
-      "Lan Hạ Bay is the strongest argument for basing yourself in Cát Bà rather than joining a Ha Long Bay overnight cruise from the mainland. Geologically the two are identical - same karsts, same water, same landscape. What Lan Hạ offers is that landscape with fewer boats, lower prices, and the bioluminescence night tour as a genuine point of difference. The tradeoff is fewer premium services - if you want a well-appointed cruise boat with a full activity programme, Ha Long Bay still has more options. For independent travellers who want to paddle, swim, and explore on their own terms, a full day on Lan Hạ - departing Cát Bà town at 8 AM and returning at 5 PM, followed by the night kayaking tour after dark - is two of the best consecutive experiences available anywhere in northern Vietnam.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Lan Hạ Bay Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lan Hạ Bay occupies the southern section of the same limestone karst system as Ha Long Bay, with approximately 400 islands spread across calm water south of Cát Bà Island. Administratively it falls within Hải Phòng province rather than Quảng Ninh - outside the main Ha Long Bay management zone - which means significantly fewer cruise boats, cleaner water, and beaches that see a fraction of Ha Long's daily visitor numbers. The two bays share a border; on a clear day you can see Ha Long's karsts from Lan Hạ's water.",
+          },
+          { type: "heading", text: "Lan Hạ or Ha Long" },
+          {
+            type: "paragraph",
+            text: "The difference is in the atmosphere: Ha Long Bay runs on a well-oiled mass tourism circuit; Lan Hạ is where you still paddle into an enclosed lagoon and find it empty. That gap has been closing - improved road and ferry access to Cát Bà has made Lan Hạ increasingly popular, especially with Vietnamese domestic tourists on weekends - but it still offers something Ha Long Bay's main route can't match, including one experience that's entirely unique: bioluminescence night kayaking, where the water around your paddle glows blue-green in the darkness between the karsts.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Lan Hạ Bay",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lan Hạ Bay is accessed by boat or kayak tour from Cát Bà town. Tour operators run full-day and half-day excursions departing from the main pier from around 8 AM.",
+          },
+          { type: "heading", text: "Kayak, Overnight and Night Tours" },
+          {
+            type: "paragraph",
+            text: "Kayak tours - paddling sea kayaks rather than sitting on a motorboat - are the recommended format and available from most operators. Overnight boat tours on Lan Hạ are also available, a smaller-scale version of the Ha Long overnight cruise with far fewer other boats around. The bioluminescence night kayaking tour departs after dark and is booked separately - most hostels and hotels in Cát Bà town can arrange it, with prices around 28 USD per person though this varies by operator.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Lan Hạ Bay",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Several distinct zones make up the bay.",
+          },
+          { type: "heading", text: "The Floating Village and Cave Beaches" },
+          {
+            type: "paragraph",
+            text: "The floating fishing village at Ba Trái Đào has traditional wooden houses on pontoons with fish farms below the surface. Cave beach passages - narrow archways through limestone that open into enclosed lagoons with small beaches - are the most dramatic kayaking terrain and not accessible any other way.",
+          },
+          { type: "heading", text: "Open Water and Snorkeling" },
+          {
+            type: "paragraph",
+            text: "Open water sections between the karsts give long paddles with rock faces rising on all sides. Rocky outcrops around several islands have shallow snorkeling.",
+          },
+          { type: "heading", text: "Bioluminescent Night Kayaking" },
+          {
+            type: "paragraph",
+            text: "The night kayaking tour covers a different version of this landscape - darkness, the sound of your paddle, and water that lights up blue-green with each stroke. The effect comes from bioluminescent plankton and is weather and season dependent, but when conditions align it's the kind of thing people remember long after the standard daytime tour fades.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Lan Hạ Bay",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lan Hạ Bay is the strongest argument for basing yourself in Cát Bà rather than joining a Ha Long Bay overnight cruise from the mainland. Geologically the two are identical - same karsts, same water, same landscape. What Lan Hạ offers is that landscape with fewer boats, lower prices, and the bioluminescence night tour as a genuine point of difference.",
+          },
+          {
+            type: "paragraph",
+            text: "The tradeoff is fewer premium services - if you want a well-appointed cruise boat with a full activity programme, Ha Long Bay still has more options. For independent travellers who want to paddle, swim, and explore on their own terms, a full day on Lan Hạ - departing Cát Bà town at 8 AM and returning at 5 PM, followed by the night kayaking tour after dark - is two of the best consecutive experiences available anywhere in northern Vietnam.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

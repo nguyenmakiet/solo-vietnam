@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const paradiseCave: Location = {
   slug: "paradise-cave",
   name: "Paradise Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.519727624952477,
@@ -45,14 +45,77 @@ export const paradiseCave: Location = {
     "Don't litter inside the cave.",
   ],
   content: {
-    intro:
-      "Paradise Cave (Động Thiên Đường) was discovered in 2005 by Hồ Khanh, a local man from Sơn Trạch commune who was logging in the forest when he noticed cool air blowing from a crevice in the rock and remembered the spot. Later that year, an expedition from the British Cave Research Association led by Howard Limbert surveyed the cave and confirmed it as one of the longest and most spectacular dry caves in Asia: 31.4km long (still not fully explored), 30-150m wide, averaging 60-80m high with some chambers approaching 100m. The cave opened to the public in 2010 after a concrete access road, a wooden boardwalk, and a lighting system were built. Known as the 'underground palace' for its scale, Paradise Cave differs from neighbouring Phong Nha Cave in one key way: it has no underground river, so the space stays dry and airy throughout rather than requiring a boat. Stalactite and stalagmite formations here are celebrated for resembling specific figures under the lighting - Buddhist immortals, Avalokiteśvara statues, and Champa-style towers - giving the cave a temple-like atmosphere distinct from its dramatic geology. Cave temperature stays a stable 18-22°C year-round, a natural relief from Quảng Bình's summer heat outside.",
-    howToGetThere:
-      "Paradise Cave is inside Phong Nha-Kẻ Bàng National Park, accessible from Đồng Hới via Highway 1A to Đông Dương junction, then following signposted roads to the cave. Options: motorbike rental (150,000-200,000 VND/day), taxi/car service (800,000-1,200,000 VND one-way, book ahead), or budget bus + xe ôm combo (50,000-80,000 VND). From Hanoi or Ho Chi Minh City, fly into Đồng Hới airport, then arrange transport or join a tour. Combined tour packages (~1,242,000 VND/person) include transport, entrance ticket, and guide - convenient for those who don't want to self-drive. From the park gate, an electric buggy covers the 2km to the cave mouth, or it's a 25-minute walk through forest.",
-    whatToExpect:
-      "Two tour options. Standard tour: a 1km elevated wooden boardwalk descends through three main chambers, taking 2-3 hours total including the buggy ride and walk to the entrance. The first chamber opens immediately into a vast space where the boardwalk looks small against the surrounding formations - stalactites hang in curtains and columns, stalagmites rise in clusters up to 15-20m, some resembling Buddhist figures and Champa towers under the lighting. The boardwalk ends at a platform overlooking the cave passage continuing into darkness beyond. Adventure tour (4km, ~5-6 hours): goes deeper into sections with minimal infrastructure, includes a guide, safety gear, and a meal inside the cave - requires good fitness and is not suitable for those with heart or joint conditions.",
-    travelTips:
-      "Paradise Cave is the most visually spectacular of the accessible Phong Nha caves - larger and more dramatic than Phong Nha Cave itself, though it lacks the underground river boat experience that makes Phong Nha distinctive in its own way. The 1km standard tour suits all fitness levels and ages. The 4km adventure tour is for visitors with good fitness who want to go beyond the standard infrastructure - book in advance, as it's limited to small groups. Go before 9 AM for the best light, coolest temperature, and fewest crowds; weekends and the late-morning tour bus window (around 10-11 AM) bring the heaviest traffic on the boardwalk.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Paradise Cave Special",
+        blocks: [
+          { type: "heading", text: "Discovery and Opening" },
+          {
+            type: "paragraph",
+            text: "Paradise Cave (Động Thiên Đường) was discovered in 2005 by Hồ Khanh, a local man from Sơn Trạch commune who was logging in the forest when he noticed cool air blowing from a crevice in the rock and remembered the spot. Later that year, an expedition from the British Cave Research Association led by Howard Limbert surveyed the cave and confirmed it as one of the longest and most spectacular dry caves in Asia: 31.4km long (still not fully explored), 30-150m wide, averaging 60-80m high with some chambers approaching 100m. The cave opened to the public in 2010 after a concrete access road, a wooden boardwalk, and a lighting system were built.",
+          },
+          { type: "heading", text: "The Underground Palace" },
+          {
+            type: "paragraph",
+            text: "Known as the 'underground palace' for its scale, Paradise Cave differs from neighbouring Phong Nha Cave in one key way: it has no underground river, so the space stays dry and airy throughout rather than requiring a boat. Stalactite and stalagmite formations here are celebrated for resembling specific figures under the lighting - Buddhist immortals, Avalokiteśvara statues, and Champa-style towers - giving the cave a temple-like atmosphere distinct from its dramatic geology. Cave temperature stays a stable 18-22°C year-round, a natural relief from Quảng Bình's summer heat outside.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Paradise Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Paradise Cave is inside Phong Nha-Kẻ Bàng National Park, accessible from Đồng Hới via Highway 1A to Đông Dương junction, then following signposted roads to the cave. Options: motorbike rental (150,000-200,000 VND/day), taxi/car service (800,000-1,200,000 VND one-way, book ahead), or budget bus + xe ôm combo (50,000-80,000 VND). From Hanoi or Ho Chi Minh City, fly into Đồng Hới airport, then arrange transport or join a tour. Combined tour packages (~1,242,000 VND/person) include transport, entrance ticket, and guide - convenient for those who don't want to self-drive.",
+          },
+          { type: "heading", text: "From the Park Gate" },
+          {
+            type: "paragraph",
+            text: "From the park gate, an electric buggy covers the 2km to the cave mouth, or it's a 25-minute walk through forest.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Paradise Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Two tour options.",
+          },
+          { type: "heading", text: "Standard Tour" },
+          {
+            type: "paragraph",
+            text: "Standard tour: a 1km elevated wooden boardwalk descends through three main chambers, taking 2-3 hours total including the buggy ride and walk to the entrance. The first chamber opens immediately into a vast space where the boardwalk looks small against the surrounding formations - stalactites hang in curtains and columns, stalagmites rise in clusters up to 15-20m, some resembling Buddhist figures and Champa towers under the lighting. The boardwalk ends at a platform overlooking the cave passage continuing into darkness beyond.",
+          },
+          { type: "heading", text: "Adventure Tour" },
+          {
+            type: "paragraph",
+            text: "Adventure tour (4km, ~5-6 hours): goes deeper into sections with minimal infrastructure, includes a guide, safety gear, and a meal inside the cave - requires good fitness and is not suitable for those with heart or joint conditions.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Paradise Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Paradise Cave is the most visually spectacular of the accessible Phong Nha caves - larger and more dramatic than Phong Nha Cave itself, though it lacks the underground river boat experience that makes Phong Nha distinctive in its own way. The 1km standard tour suits all fitness levels and ages. The 4km adventure tour is for visitors with good fitness who want to go beyond the standard infrastructure - book in advance, as it's limited to small groups.",
+          },
+          {
+            type: "paragraph",
+            text: "Go before 9 AM for the best light, coolest temperature, and fewest crowds; weekends and the late-morning tour bus window (around 10-11 AM) bring the heaviest traffic on the boardwalk.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

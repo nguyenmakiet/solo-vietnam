@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoaLoPrison: Location = {
   slug: "hoa-lo-prison",
   name: "Hoa Lo Prison",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.025370023417228",
@@ -42,14 +42,81 @@ export const hoaLoPrison: Location = {
     "The museum is a short walk from Hoàn Kiếm Lake - combine both in a morning itinerary.",
   ],
   content: {
-    intro:
-      "Hoa Lo Prison - Nhà tù Hỏa Lò - was built by the French colonial administration in 1896 on the site of a village known for producing pottery and stoves, from which the name derives: hỏa lò means 'fiery furnace' or 'stove'. Originally designed to hold 450 prisoners, the complex at times held over 2,000, becoming a central site of Vietnamese revolutionary history as the French used it to incarcerate independence activists, including many future leaders of the Democratic Republic of Vietnam. After the French departure in 1954, the prison was used by North Vietnam, most notably during the Vietnam War when American pilots shot down over Hanoi were held there - a period during which the prison was nicknamed the 'Hanoi Hilton' by US prisoners of war. The original complex was largely demolished in the 1990s to make way for the Hanoi Towers development; the preserved section - the main entrance block and several cell buildings - now operates as a museum covering both phases of the prison's history.",
-    howToGetThere:
-      "Hoa Lo Prison is at 1 Hỏa Lò Street in Hoàn Kiếm district, approximately 500m southwest of Hoàn Kiếm Lake. Walkable from the Old Quarter in 10-15 minutes. The entrance is clearly marked with a large gate on Hỏa Lò Street. No dedicated parking; motorbikes can be parked on nearby side streets.",
-    whatToExpect:
-      "The museum divides into two main sections. The French colonial section covers the construction of the prison, conditions for Vietnamese political prisoners, escape attempts, and the use of the guillotine - which is displayed on site, along with shackles, cell reconstructions, and prisoner photographs. The American War section documents US pilots held at Hoa Lo from the mid-1960s onward, including personal items, photographs, and accounts of captivity. John McCain's flight suit is in the collection. The North Vietnamese framing emphasises humane treatment - a characterisation disputed by many former POWs. The interior is air-conditioned and has fans throughout. With the audio guide, the full visit takes 1.5 to 2 hours.",
-    travelTips:
-      "Hoa Lo is one of Hanoi's most historically layered sites - French colonial oppression, Vietnamese revolutionary history, and American war memory in a single location. The French colonial section is typically less familiar to international visitors but is equally worth time. The prison pairs naturally with the Temple of Literature (2km) and Hoàn Kiếm Lake (500m) for a half-day historical itinerary in central Hanoi. Rent the audio guide at the entrance - the signage alone covers the facts, but the audio fills in the context that makes the difference between reading about history and actually understanding it.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hoa Lo Prison Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoa Lo Prison - Nhà tù Hỏa Lò - was built by the French colonial administration in 1896 on the site of a village known for producing pottery and stoves, from which the name derives: hỏa lò means 'fiery furnace' or 'stove'. Originally designed to hold 450 prisoners, the complex at times held over 2,000, becoming a central site of Vietnamese revolutionary history as the French used it to incarcerate independence activists, including many future leaders of the Democratic Republic of Vietnam.",
+          },
+          { type: "heading", text: "After 1954" },
+          {
+            type: "paragraph",
+            text: "After the French departure in 1954, the prison was used by North Vietnam, most notably during the Vietnam War when American pilots shot down over Hanoi were held there - a period during which the prison was nicknamed the 'Hanoi Hilton' by US prisoners of war.",
+          },
+          { type: "heading", text: "What Remains Today" },
+          {
+            type: "paragraph",
+            text: "The original complex was largely demolished in the 1990s to make way for the Hanoi Towers development; the preserved section - the main entrance block and several cell buildings - now operates as a museum covering both phases of the prison's history.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hoa Lo Prison",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoa Lo Prison is at 1 Hỏa Lò Street in Hoàn Kiếm district, approximately 500m southwest of Hoàn Kiếm Lake. Walkable from the Old Quarter in 10-15 minutes. The entrance is clearly marked with a large gate on Hỏa Lò Street. No dedicated parking; motorbikes can be parked on nearby side streets.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hoa Lo Prison",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The museum divides into two main sections.",
+          },
+          { type: "heading", text: "The French Colonial Section" },
+          {
+            type: "paragraph",
+            text: "The French colonial section covers the construction of the prison, conditions for Vietnamese political prisoners, escape attempts, and the use of the guillotine - which is displayed on site, along with shackles, cell reconstructions, and prisoner photographs.",
+          },
+          { type: "heading", text: "The American War Section" },
+          {
+            type: "paragraph",
+            text: "The American War section documents US pilots held at Hoa Lo from the mid-1960s onward, including personal items, photographs, and accounts of captivity. John McCain's flight suit is in the collection. The North Vietnamese framing emphasises humane treatment - a characterisation disputed by many former POWs.",
+          },
+          { type: "heading", text: "Visiting" },
+          {
+            type: "paragraph",
+            text: "The interior is air-conditioned and has fans throughout. With the audio guide, the full visit takes 1.5 to 2 hours.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hoa Lo Prison",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoa Lo is one of Hanoi's most historically layered sites - French colonial oppression, Vietnamese revolutionary history, and American war memory in a single location. The French colonial section is typically less familiar to international visitors but is equally worth time.",
+          },
+          {
+            type: "paragraph",
+            text: "The prison pairs naturally with the Temple of Literature (2km) and Hoàn Kiếm Lake (500m) for a half-day historical itinerary in central Hanoi. Rent the audio guide at the entrance - the signage alone covers the facts, but the audio fills in the context that makes the difference between reading about history and actually understanding it.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

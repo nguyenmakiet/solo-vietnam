@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sonDoongCave: Location = {
   slug: "son-doong-cave",
   name: "Son Doong Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: "17.466399525611973",
@@ -41,14 +41,84 @@ export const sonDoongCave: Location = {
     "A mirrorless camera with a fast wide-angle lens is the practical kit. Phone cameras don't capture the scale of the main chambers. Bring a waterproof case regardless.",
   ],
   content: {
-    intro:
-      "Son Doong - Hang Sơn Đoòng, 'Mountain River Cave' - is the largest cave in the world by volume, discovered by a local farmer named Hồ Khanh in 1991 and left unreported for nearly two decades before a British Cave Research Association expedition entered and surveyed it in 2009. The main passage runs over 9km, 200 metres wide and 150 metres high - large enough for some chambers to fit a 40-story Manhattan skyscraper with room to spare. Two dolines (collapsed ceiling sections) allow sunlight in, creating separate underground jungles where trees reach 30 metres inside the mountain. Clouds form inside the largest chamber. The Son River runs through the cave floor. The walls carry 400-million-year-old formations. Since opening to tourism in 2013, access has been controlled by a single licensed operator, Oxalis Adventure, under a quota that makes it one of the most sought-after natural experiences anywhere. As of 2026, slots are booked out to 2028.",
-    howToGetThere:
-      "Son Doong is only accessible through Oxalis Adventure (oxalisadventure.com) - they hold the sole permit issued by Quảng Bình province and the national park authority. There is no other legal route in. Expeditions depart from Sơn Trạch village in Phong Nha, 50km north of Đồng Hới. Day 1 begins with a jungle trek of roughly 10km before reaching the cave entrance. Fly or take the train to Đồng Hới, then transfer to Sơn Trạch. Booking is entirely through the Oxalis website - spots open once a year, typically in September for the following season, and sell out within hours. With current bookings running to 2028, check the site directly for the latest availability.",
-    whatToExpect:
-      "The expedition spans multiple days through Son Doong and the adjacent Hang Én cave system. Day 1 is jungle trekking to Hang Én, where the group camps overnight on a beach inside the cave. Day 2 enters Son Doong - the first view of the main chamber is the moment most participants describe as stopping them completely. The scale doesn't read from photographs. Days 2 and 3 move through the cave: crossing the underground river, climbing 'The Great Wall of Vietnam' (a 90-metre calcite formation inside the cave), and camping in the second jungle beneath the second doline. Day 4 exits. Around 30 support staff travel with each group of up to 10 participants - guides, porters, cooks, safety specialists, and forest rangers. The cave interior holds at 18-23°C year-round; outside conditions are irrelevant once you're inside.",
-    travelTips:
-      "Son Doong is not an upgrade from Paradise Cave or any other cave in Vietnam - it's a different category of experience entirely, closer to a wilderness expedition than tourism. The cost is the highest of any tour in the country. The controversy around pricing - that very few Vietnamese can afford it - is real and ongoing. The practical reality is that the current model funds the conservation infrastructure and the 30-person support team that makes each trip possible. A proposed increase to 15,000 USD would change the calculus for many travellers; check current pricing at oxalisadventure.com before planning. The fitness bar is achievable with preparation - it's a level 5-6 expedition, not a technical mountaineering route - but showing up undertrained makes every day harder than it needs to be. For everyone who can afford it and does the prep work, the consensus is consistent: nothing else in Vietnam compares.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Son Doong Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Son Doong - Hang Sơn Đoòng, 'Mountain River Cave' - is the largest cave in the world by volume, discovered by a local farmer named Hồ Khanh in 1991 and left unreported for nearly two decades before a British Cave Research Association expedition entered and surveyed it in 2009. The main passage runs over 9km, 200 metres wide and 150 metres high - large enough for some chambers to fit a 40-story Manhattan skyscraper with room to spare.",
+          },
+          { type: "heading", text: "Dolines, Clouds and the Underground River" },
+          {
+            type: "paragraph",
+            text: "Two dolines (collapsed ceiling sections) allow sunlight in, creating separate underground jungles where trees reach 30 metres inside the mountain. Clouds form inside the largest chamber. The Son River runs through the cave floor. The walls carry 400-million-year-old formations.",
+          },
+          { type: "heading", text: "Access" },
+          {
+            type: "paragraph",
+            text: "Since opening to tourism in 2013, access has been controlled by a single licensed operator, Oxalis Adventure, under a quota that makes it one of the most sought-after natural experiences anywhere. As of 2026, slots are booked out to 2028.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Son Doong Cave",
+        blocks: [
+          { type: "heading", text: "Oxalis Adventure Only" },
+          {
+            type: "paragraph",
+            text: "Son Doong is only accessible through Oxalis Adventure (oxalisadventure.com) - they hold the sole permit issued by Quảng Bình province and the national park authority. There is no other legal route in. Expeditions depart from Sơn Trạch village in Phong Nha, 50km north of Đồng Hới. Day 1 begins with a jungle trek of roughly 10km before reaching the cave entrance.",
+          },
+          { type: "heading", text: "Getting There and Booking" },
+          {
+            type: "paragraph",
+            text: "Fly or take the train to Đồng Hới, then transfer to Sơn Trạch. Booking is entirely through the Oxalis website - spots open once a year, typically in September for the following season, and sell out within hours. With current bookings running to 2028, check the site directly for the latest availability.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Son Doong Cave",
+        blocks: [
+          { type: "heading", text: "Day by Day" },
+          {
+            type: "paragraph",
+            text: "The expedition spans multiple days through Son Doong and the adjacent Hang Én cave system. Day 1 is jungle trekking to Hang Én, where the group camps overnight on a beach inside the cave. Day 2 enters Son Doong - the first view of the main chamber is the moment most participants describe as stopping them completely. The scale doesn't read from photographs. Days 2 and 3 move through the cave: crossing the underground river, climbing 'The Great Wall of Vietnam' (a 90-metre calcite formation inside the cave), and camping in the second jungle beneath the second doline. Day 4 exits.",
+          },
+          { type: "heading", text: "Support Team and Conditions" },
+          {
+            type: "paragraph",
+            text: "Around 30 support staff travel with each group of up to 10 participants - guides, porters, cooks, safety specialists, and forest rangers. The cave interior holds at 18-23°C year-round; outside conditions are irrelevant once you're inside.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Son Doong Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Son Doong is not an upgrade from Paradise Cave or any other cave in Vietnam - it's a different category of experience entirely, closer to a wilderness expedition than tourism.",
+          },
+          { type: "heading", text: "Cost and Controversy" },
+          {
+            type: "paragraph",
+            text: "The cost is the highest of any tour in the country. The controversy around pricing - that very few Vietnamese can afford it - is real and ongoing. The practical reality is that the current model funds the conservation infrastructure and the 30-person support team that makes each trip possible. A proposed increase to 15,000 USD would change the calculus for many travellers; check current pricing at oxalisadventure.com before planning.",
+          },
+          { type: "heading", text: "Fitness and Worth" },
+          {
+            type: "paragraph",
+            text: "The fitness bar is achievable with preparation - it's a level 5-6 expedition, not a technical mountaineering route - but showing up undertrained makes every day harder than it needs to be. For everyone who can afford it and does the prep work, the consensus is consistent: nothing else in Vietnam compares.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
