@@ -60,7 +60,7 @@ export const benHaiRiver: Location = {
           { type: "heading", text: "From Wooden Crossing to Demarcation Line" },
           {
             type: "paragraph",
-            text: "Local residents built the first crossing here in 1928, a modest 2-metre-wide wooden bridge for everyday local use; French colonial authorities replaced it with a 178-metre reinforced concrete bridge in 1950-1952. It was this bridge that, under the Geneva Accords of 1954, became the temporary demarcation line between North and South Vietnam - a partition intended to last two years until national reunification elections that never happened, but which held for 21 years instead.",
+            text: "Local residents built the first crossing here in 1928, a modest 2-metre-wide wooden bridge for everyday local use; French colonial authorities replaced it with a 178-metre reinforced concrete bridge in 1950-1952. It was this bridge that, under the Geneva Accords of 1954, became the temporary demarcation line between North and South Vietnam - a partition intended to last two years until national reunification elections that never happened, but which held for 21 years instead. Families separated overnight and did not reunite for over two decades.",
           },
           { type: "heading", text: "The Colour, Flag and Speaker Wars" },
           {
@@ -70,7 +70,7 @@ export const benHaiRiver: Location = {
           { type: "heading", text: "Destruction and Reconstruction" },
           {
             type: "paragraph",
-            text: "American bombing destroyed the bridge entirely in 1967; it was rebuilt to its original 1952 design in 2001-2008, at a slightly longer 183.65 metres, and repainted in its historically accurate blue-and-yellow scheme in 2014. Families separated overnight and did not reunite for over two decades.",
+            text: "American bombing destroyed the bridge entirely in 1967; it was rebuilt to its original 1952 design in 2001-2008, at a slightly longer 183.65 metres, and repainted in its historically accurate blue-and-yellow scheme in 2014.",
           },
           { type: "heading", text: "The Memorial Complex Today" },
           {
