@@ -67,7 +67,6 @@ export type Location = {
   // Left out when the content gives no reliable duration - see reports/time-needed-migration.md
   timeNeeded?: { minMinutes: number; maxMinutes: number }
   mapUrl: string
-  mapZoom?: number // embedded map zoom (1-20); overrides the per-type default in lib/map-embed.ts
   streetView?: { lat?: number | string; lng?: number | string; embedUrl?: string }
   heroImage?: string
   gallery: string[]

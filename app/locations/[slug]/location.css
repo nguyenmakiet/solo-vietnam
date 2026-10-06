@@ -237,8 +237,6 @@
   /* quiet the Google basemap a little so it sits with the paper UI */
   filter: saturate(0.7);
 }
-/* satellite imagery keeps its natural colour */
-.map-wrap--satellite iframe { filter: none; }
 .map-caption {
   display: flex; align-items: center; justify-content: space-between;
   flex-wrap: wrap; gap: 8px 16px;
@@ -656,7 +654,7 @@
   .month-strip { grid-template-columns: repeat(6, 1fr); }
   .month-cell:nth-child(7) { border-left: none; }
   .month-strip .month-cell:nth-child(-n + 6) { border-bottom: 1px solid var(--color-line); }
-  .map-wrap iframe { height: 280px; }
+  .map-wrap iframe { height: 240px; }
   .content-section p { font-size: 16px; }
   .bottom-cta { padding: 40px 0; }
 }

@@ -17,7 +17,6 @@ import { isBestMonthsReleased } from "@/data/best-months-release"
 import { getNearbyLocations } from "@/lib/nearbyLocations"
 import { dotClass } from "@/lib/category-dot"
 import CloudinaryImage from "@/components/CloudinaryImage"
-import { mapEmbedSrc, mapView } from "@/lib/map-embed"
 
 const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed" | "partially-closed", { label: string }> = {
   "temporarily-closed": { label: "Temporarily Closed." },
@@ -93,7 +92,6 @@ export default async function LocationPage({
   const destinationName = location.destination?.replace(/-/g, " ")
 
   // Things to Know rows (shown only when present)
-  const mapViewSettings = mapView(location)
   const ttk = location.insights?.thingsToKnow
   const ttkEntries: { label: string; value: string }[] = []
   if (ttk?.crowds)        ttkEntries.push({ label: "Crowds",        value: ttk.crowds })
@@ -246,9 +244,9 @@ export default async function LocationPage({
           </dl>
 
           {/* Map */}
-          <div className={`map-wrap${mapViewSettings.satellite ? " map-wrap--satellite" : ""}`}>
+          <div className="map-wrap">
             <iframe
-              src={mapEmbedSrc(toDecimal(location.lat), toDecimal(location.lng), mapViewSettings)}
+              src={`https://maps.google.com/maps?q=${toDecimal(location.lat)},${toDecimal(location.lng)}&z=15&output=embed`}
               title={`Map of ${location.name}`}
               allowFullScreen
               loading="lazy"
