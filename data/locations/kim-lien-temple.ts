@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const kimLienTemple: Location = {
   slug: "kim-lien-temple",
   name: "Kim Lien Temple",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.010672987778825, 
@@ -52,14 +52,82 @@ export const kimLienTemple: Location = {
     "If you want the livelier side of the site, time your visit for the 15th-16th day of the third lunar month, when the annual festival includes a palanquin procession and a traditional hair-cutting competition; for a quieter visit, go on a weekday morning instead",
   ],
   content: {
-    intro:
-      "Kim Lien Temple (Đình Kim Liên), also called Đền Kim Liên or Đền Cao Sơn, is the southern guardian of the Thăng Long Tứ Trấn - the four sacred temples said to protect the old citadel of Thăng Long from each cardinal direction. It sits in what was once Đông Tác ward, Thọ Xương district, Hoài Đức prefecture, now part of Văn Miếu - Quốc Tử Giám ward in central Hanoi, and is the youngest of the four temples in its present form. The site is dedicated to Cao Sơn Đại Vương, a deity linked in legend to Lạc Long Quân and Âu Cơ, the mythological founding parents of the Vietnamese people, and credited with helping King Lê Tương Dực suppress a rebellion and restore the Lê dynasty's rule in the early 16th century. According to the temple's own history, the king, passing through Phụng Hóa district while campaigning, came across an old shrine inscribed with the name Cao Sơn Đại Vương and prayed there for the deity's help; his campaign succeeded within ten days, and he first built a temple in Phụng Hóa in gratitude. In 1509, a grander temple was built in Kim Hoa ward (today's Kim Liên), and local villagers later added a triple gate and other structures, giving the complex its combined identity as a đền (housing a deity) and an đình (the village's communal gathering space) - hence its two names. The oldest surviving document connected to the site, a stele dated to the third year of Hồng Thuận (1510) titled 'Cao Sơn Đại Vương thần từ bi minh', was composed by the court historian Lê Tụng and records the deity's merits; the temple also holds 39 royal decrees (sắc phong) honouring Cao Sơn. Beyond his role as a guardian of the citadel, Cao Sơn is also venerated as an agricultural deity, associated with good harvests and protection from calamity. Today, alongside the main worship of Cao Sơn, the temple also includes spaces for Mother Goddess (Mẫu) and Tam Phủ worship, as well as a space honouring President Hồ Chí Minh. The temple has been recognised as a national-level historical and cultural relic.",
-    howToGetThere:
-      "Kim Lien Temple is in Văn Miếu - Quốc Tử Giám ward, a bit further from Hanoi's Old Quarter than the other three guardian temples, so it's best reached by taxi, ride-hailing app, or motorbike rather than on foot from most central accommodation. A small motorbike parking area is available right at the gate for a modest fee. Since taxis can be less plentiful in the immediate area for the return trip, it's worth booking one in advance or using a ride-hailing app rather than expecting to flag one down easily.",
-    whatToExpect:
-      "The complex includes a triple gate (tam quan) added by villagers after the original temple was built, a brick courtyard, and the main worship halls housing Cao Sơn Đại Vương's altar alongside the newer spaces for Mẫu, Tam Phủ, and Hồ Chí Minh. The architecture is described by visitors as dignified and atmospheric, with finely carved interior details, mossy, weathered stonework, and shaded greenery that gives the grounds a notably calm feel despite sitting near a busy road. Some structures show visible wear and could use further restoration. The most important preserved artifact is the 1510 stele recording Cao Sơn's merits, alongside the temple's collection of royal decrees. Visitor experiences with staff are mixed - some describe helpful, friendly guidance, while a number of others report caretakers as unfriendly or brusque, so temper your expectations of a warm welcome. The site can also feel busier or less private at peak times despite its generally tranquil character.",
-    travelTips:
-      "Kim Lien Temple works well as part of a wider look at the Thăng Long Tứ Trấn, alongside Bạch Mã (east), Voi Phục (west), and Quán Thánh (north), though each sits in a different part of the city, so treat visiting all four as a loose theme across a Hanoi trip rather than a single afternoon loop. Locals visit not only to pray for peace and health, but also for exam success and career fortune, reflecting Cao Sơn's broader role as a protector of both people and livelihoods. If you're drawn to festival atmosphere - including a palanquin procession and a traditional hair-cutting competition - time your visit for the 15th-16th of the third lunar month; for quiet contemplation, a weekday morning is a better fit. Because it sits further out than the other three temples and transport back can be less convenient, it's worth pairing this visit with something else in the general area rather than treating it as a quick, standalone stop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Kim Lien Temple Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kim Lien Temple (Đình Kim Liên), also called Đền Kim Liên or Đền Cao Sơn, is the southern guardian of the Thăng Long Tứ Trấn - the four sacred temples said to protect the old citadel of Thăng Long from each cardinal direction. It sits in what was once Đông Tác ward, Thọ Xương district, Hoài Đức prefecture, now part of Văn Miếu - Quốc Tử Giám ward in central Hanoi, and is the youngest of the four temples in its present form.",
+          },
+          { type: "heading", text: "Cao Sơn Đại Vương and the Temple's Origins" },
+          {
+            type: "paragraph",
+            text: "The site is dedicated to Cao Sơn Đại Vương, a deity linked in legend to Lạc Long Quân and Âu Cơ, the mythological founding parents of the Vietnamese people, and credited with helping King Lê Tương Dực suppress a rebellion and restore the Lê dynasty's rule in the early 16th century. According to the temple's own history, the king, passing through Phụng Hóa district while campaigning, came across an old shrine inscribed with the name Cao Sơn Đại Vương and prayed there for the deity's help; his campaign succeeded within ten days, and he first built a temple in Phụng Hóa in gratitude. In 1509, a grander temple was built in Kim Hoa ward (today's Kim Liên), and local villagers later added a triple gate and other structures, giving the complex its combined identity as a đền (housing a deity) and an đình (the village's communal gathering space) - hence its two names.",
+          },
+          { type: "heading", text: "The 1510 Stele" },
+          {
+            type: "paragraph",
+            text: "The oldest surviving document connected to the site, a stele dated to the third year of Hồng Thuận (1510) titled 'Cao Sơn Đại Vương thần từ bi minh', was composed by the court historian Lê Tụng and records the deity's merits; the temple also holds 39 royal decrees (sắc phong) honouring Cao Sơn.",
+          },
+          { type: "heading", text: "Worship at the Temple Today" },
+          {
+            type: "paragraph",
+            text: "Beyond his role as a guardian of the citadel, Cao Sơn is also venerated as an agricultural deity, associated with good harvests and protection from calamity. Today, alongside the main worship of Cao Sơn, the temple also includes spaces for Mother Goddess (Mẫu) and Tam Phủ worship, as well as a space honouring President Hồ Chí Minh. The temple has been recognised as a national-level historical and cultural relic.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Kim Lien Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kim Lien Temple is in Văn Miếu - Quốc Tử Giám ward, a bit further from Hanoi's Old Quarter than the other three guardian temples, so it's best reached by taxi, ride-hailing app, or motorbike rather than on foot from most central accommodation. A small motorbike parking area is available right at the gate for a modest fee. Since taxis can be less plentiful in the immediate area for the return trip, it's worth booking one in advance or using a ride-hailing app rather than expecting to flag one down easily.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Kim Lien Temple",
+        blocks: [
+          { type: "heading", text: "Layout and Architecture" },
+          {
+            type: "paragraph",
+            text: "The complex includes a triple gate (tam quan) added by villagers after the original temple was built, a brick courtyard, and the main worship halls housing Cao Sơn Đại Vương's altar alongside the newer spaces for Mẫu, Tam Phủ, and Hồ Chí Minh. The architecture is described by visitors as dignified and atmospheric, with finely carved interior details, mossy, weathered stonework, and shaded greenery that gives the grounds a notably calm feel despite sitting near a busy road. Some structures show visible wear and could use further restoration.",
+          },
+          { type: "heading", text: "The 1510 Stele and Other Artifacts" },
+          {
+            type: "paragraph",
+            text: "The most important preserved artifact is the 1510 stele recording Cao Sơn's merits, alongside the temple's collection of royal decrees.",
+          },
+          { type: "heading", text: "Staff and Crowds" },
+          {
+            type: "paragraph",
+            text: "Visitor experiences with staff are mixed - some describe helpful, friendly guidance, while a number of others report caretakers as unfriendly or brusque, so temper your expectations of a warm welcome. The site can also feel busier or less private at peak times despite its generally tranquil character.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Kim Lien Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kim Lien Temple works well as part of a wider look at the Thăng Long Tứ Trấn, alongside Bạch Mã (east), Voi Phục (west), and Quán Thánh (north), though each sits in a different part of the city, so treat visiting all four as a loose theme across a Hanoi trip rather than a single afternoon loop. Locals visit not only to pray for peace and health, but also for exam success and career fortune, reflecting Cao Sơn's broader role as a protector of both people and livelihoods.",
+          },
+          {
+            type: "paragraph",
+            text: "If you're drawn to festival atmosphere - including a palanquin procession and a traditional hair-cutting competition - time your visit for the 15th-16th of the third lunar month; for quiet contemplation, a weekday morning is a better fit. Because it sits further out than the other three temples and transport back can be less convenient, it's worth pairing this visit with something else in the general area rather than treating it as a quick, standalone stop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

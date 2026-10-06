@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bachMaTemple: Location = {
   slug: "bach-ma-temple",
   name: "Bach Ma Temple",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.03575979681265, 
@@ -53,14 +53,73 @@ export const bachMaTemple: Location = {
     "Locals traditionally come to pray for peace and good health (bình an, mạnh khỏe) here, tied to Long Đỗ's role as protector of the citadel",
   ],
   content: {
-    intro:
-      "Bach Ma Temple (Đền Bạch Mã) sits on Hàng Buồm street in the heart of Hanoi's Old Quarter, in what was once Thọ Xương district of Hoài Đức prefecture. It is one of the Thăng Long Tứ Trấn - the four guardian temples believed to protect the old citadel of Thăng Long from each cardinal direction, with Bạch Mã watching over the east, and it holds the smallest footprint of the four. The temple is dedicated to Long Đỗ, an original tutelary spirit of ancient Hanoi, and by tradition dates back to the 9th century, around the time Cao Biền built the Đại La citadel. Its most famous association, though, comes from the year 1010, when Lý Thái Tổ moved the capital from Hoa Lư to Thăng Long: according to legend, the new citadel walls kept collapsing during construction, so the king prayed to Long Đỗ for help. A white horse is said to have emerged from the temple, walked a circuit, and left hoofprints on the ground; the king had the wall built along that path, and it held firm from then on - giving rise to the temple's name and its enduring white-horse symbolism. A related legend from the 10th century tells of Đinh Bộ Lĩnh praying here during his military campaigns and promising to bestow a title on the spirit if he succeeded; after his victory, he is said to have dreamed of a deity identifying itself as Thần Bạch Mã, prompting him to properly honour Long Đỗ with a dedicated shrine. The temple has been restored several times over the centuries, most significantly during the Chính Hòa era under Lê Hy Tông and again with a major renovation in 1839 (Minh Mệnh's 20th year), and its current buildings reflect Nguyễn-dynasty architectural style, laid out in the shape of the Chinese character 'Tam' (三, 'three'). The complex covers just over 500 square metres, with an eight-roofed Phương Đình pavilion at the front, and inside, a statue of Long Đỗ sits alongside a ceremonial palanquin shaped to evoke the white horse itself - both central to the temple's spiritual focus.",
-    howToGetThere:
-      "Bach Ma Temple is at 76 Hàng Buồm, in Hoàn Kiếm district, central Hanoi. By car or motorbike from the city centre, the trip takes around 30 minutes: head along Nguyễn Thái Học, past Cửa Nam, onto Phùng Hưng and then Hàng Vải, before reaching Hàng Buồm street, about 2km from the starting point. By bus, routes 18, 32, and 34 stop at Trần Nhật Duật, from where it's about a 500m walk to the temple - roughly 40 minutes door to door.",
-    whatToExpect:
-      "The temple complex follows a traditional Nguyễn-dynasty religious layout arranged in a straight line within an enclosed space: the entrance gate (nghi môn), a square pavilion (phương đình), the main worship hall (đại bái), an incense-offering hall (thiêu hương), the inner sanctum (cung cấm), and a community hall (nhà hội đồng) at the back. The atmosphere is quiet and unhurried, with a sense of age reflected in weathered stonework, wood-carved panels, painted columns, and larger-than-life crane sculptures. Inside, the temple preserves a number of valuable artifacts accumulated over more than a thousand years: royal decrees (sắc phong), a pair of ceremonial figures, a bronze bell, a ceremonial palanquin shaped to evoke the white horse, large ceramic vessels, and 15 stone stelae recording the temple's founding legends, its rituals, and its history of restorations - it's worth reading the information board near the entrance for context on these legends before heading in. A small stand near the entrance sells fortune cards and other temple items. As an indoor site in a busy commercial street of the Old Quarter, the temple offers a noticeably calmer, more contemplative pocket within an otherwise lively part of the city, though it can feel more crowded and less peaceful when tour groups pass through.",
-    travelTips:
-      "Bach Ma Temple pairs naturally with a walk through the rest of the Old Quarter, since it sits right on Hàng Buồm among the area's historic shophouses and street-food stalls. For travellers interested in the Thăng Long Tứ Trấn as a set, it makes sense to visit Bach Ma alongside the other three guardian temples - Voi Phục (west), Kim Liên (south), and Quán Thánh (north) - though each sits in a different part of the city, so treat this as a multi-stop theme across a Hanoi itinerary rather than a single afternoon. The Friday-to-Sunday evening hours are worth knowing about if you'd rather visit after the daytime crowds thin out, particularly around the February lunar festival.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bach Ma Temple Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bach Ma Temple (Đền Bạch Mã) sits on Hàng Buồm street in the heart of Hanoi's Old Quarter, in what was once Thọ Xương district of Hoài Đức prefecture. It is one of the Thăng Long Tứ Trấn - the four guardian temples believed to protect the old citadel of Thăng Long from each cardinal direction, with Bạch Mã watching over the east, and it holds the smallest footprint of the four. The temple is dedicated to Long Đỗ, an original tutelary spirit of ancient Hanoi, and by tradition dates back to the 9th century, around the time Cao Biền built the Đại La citadel.",
+          },
+          { type: "heading", text: "The White Horse Legend" },
+          {
+            type: "paragraph",
+            text: "Its most famous association, though, comes from the year 1010, when Lý Thái Tổ moved the capital from Hoa Lư to Thăng Long: according to legend, the new citadel walls kept collapsing during construction, so the king prayed to Long Đỗ for help. A white horse is said to have emerged from the temple, walked a circuit, and left hoofprints on the ground; the king had the wall built along that path, and it held firm from then on - giving rise to the temple's name and its enduring white-horse symbolism. A related legend from the 10th century tells of Đinh Bộ Lĩnh praying here during his military campaigns and promising to bestow a title on the spirit if he succeeded; after his victory, he is said to have dreamed of a deity identifying itself as Thần Bạch Mã, prompting him to properly honour Long Đỗ with a dedicated shrine.",
+          },
+          { type: "heading", text: "Restorations and Layout" },
+          {
+            type: "paragraph",
+            text: "The temple has been restored several times over the centuries, most significantly during the Chính Hòa era under Lê Hy Tông and again with a major renovation in 1839 (Minh Mệnh's 20th year), and its current buildings reflect Nguyễn-dynasty architectural style, laid out in the shape of the Chinese character 'Tam' (三, 'three'). The complex covers just over 500 square metres, with an eight-roofed Phương Đình pavilion at the front, and inside, a statue of Long Đỗ sits alongside a ceremonial palanquin shaped to evoke the white horse itself - both central to the temple's spiritual focus.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bach Ma Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bach Ma Temple is at 76 Hàng Buồm, in Hoàn Kiếm district, central Hanoi. By car or motorbike from the city centre, the trip takes around 30 minutes: head along Nguyễn Thái Học, past Cửa Nam, onto Phùng Hưng and then Hàng Vải, before reaching Hàng Buồm street, about 2km from the starting point. By bus, routes 18, 32, and 34 stop at Trần Nhật Duật, from where it's about a 500m walk to the temple - roughly 40 minutes door to door.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bach Ma Temple",
+        blocks: [
+          { type: "heading", text: "Layout and Atmosphere" },
+          {
+            type: "paragraph",
+            text: "The temple complex follows a traditional Nguyễn-dynasty religious layout arranged in a straight line within an enclosed space: the entrance gate (nghi môn), a square pavilion (phương đình), the main worship hall (đại bái), an incense-offering hall (thiêu hương), the inner sanctum (cung cấm), and a community hall (nhà hội đồng) at the back. The atmosphere is quiet and unhurried, with a sense of age reflected in weathered stonework, wood-carved panels, painted columns, and larger-than-life crane sculptures.",
+          },
+          { type: "heading", text: "Artifacts" },
+          {
+            type: "paragraph",
+            text: "Inside, the temple preserves a number of valuable artifacts accumulated over more than a thousand years: royal decrees (sắc phong), a pair of ceremonial figures, a bronze bell, a ceremonial palanquin shaped to evoke the white horse, large ceramic vessels, and 15 stone stelae recording the temple's founding legends, its rituals, and its history of restorations - it's worth reading the information board near the entrance for context on these legends before heading in. A small stand near the entrance sells fortune cards and other temple items.",
+          },
+          { type: "heading", text: "A Quiet Spot in the Old Quarter" },
+          {
+            type: "paragraph",
+            text: "As an indoor site in a busy commercial street of the Old Quarter, the temple offers a noticeably calmer, more contemplative pocket within an otherwise lively part of the city, though it can feel more crowded and less peaceful when tour groups pass through.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bach Ma Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bach Ma Temple pairs naturally with a walk through the rest of the Old Quarter, since it sits right on Hàng Buồm among the area's historic shophouses and street-food stalls. For travellers interested in the Thăng Long Tứ Trấn as a set, it makes sense to visit Bach Ma alongside the other three guardian temples - Voi Phục (west), Kim Liên (south), and Quán Thánh (north) - though each sits in a different part of the city, so treat this as a multi-stop theme across a Hanoi itinerary rather than a single afternoon. The Friday-to-Sunday evening hours are worth knowing about if you'd rather visit after the daytime crowds thin out, particularly around the February lunar festival.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

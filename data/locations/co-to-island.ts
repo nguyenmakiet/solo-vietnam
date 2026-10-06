@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const coToIsland: Location = {
   slug: "co-to-island",
   name: "Cô Tô Island",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 20.970013931734762,
@@ -49,14 +49,90 @@ export const coToIsland: Location = {
     "Peak season (Jun-Aug) brings heavy Vietnamese domestic tourist crowds; Apr-May and Sep are significantly more relaxed",
   ],
   content: {
-    intro:
-      "Cô Tô Island is the main island of a nearly-50-island archipelago (around 47 sq km) in the far eastern reaches of Quảng Ninh province, roughly 80km from the mainland and about 260km from Hanoi, in the Gulf of Tonkin. The island sits outside the boundaries of Hạ Long Bay and Bái Tử Long Bay, which has kept it off the main tourist trail and preserved a character that those areas have largely lost. Originally known as Chàng Sơn, the island was long used only as temporary shelter by Northeastern fishing boats rather than permanently settled, due to persistent pirate raids. Formal settlement began in 1832, when the Nguyễn court, at the request of the regional governor Nguyễn Công Trứ, established the first village here; many of the early settlers were of Chinese origin, from the coastal areas of Guangdong, Fujian, and Hainan. The island's population changed significantly in 1978, when most ethnic Chinese residents left for China amid the period's Sino-Vietnamese tensions, and it has since been repopulated largely by Vietnamese fisherfolk; today it has a permanent population of around 6,000 residents. The island also carries a more recent layer of history: on the night of November 13, 1945, the Ký Con Company - one of the first main units of the Đông Triều war zone - fought French forces at Đồn Cao, a hilltop position with commanding views the French had occupied; the site is now a provincial historical relic, and a street in the town centre is named after the company in tribute. The beaches are among the cleanest in northern Vietnam - Bãi Hồng Vàn for calm swimming, Bãi Đá Móng Rồng for dramatic rock formations, Bãi Đá Vòm Xi for the cave arch sunset view, Bãi Vàn Chảy, Bắc Vàn, and Bãi Tình Yêu (also known as Bãi Tàu Đắm, or Shipwreck Beach). The uninhabited Cô Tô Con islet nearby, with its own Bãi Nam and Bãi Đông beaches, has become the go-to snorkeling destination in the archipelago, with intact coral reefs, clear water, and soft sand that many compare favourably to the Maldives - most visitors consider it unmissable.",
-    howToGetThere:
-      "Cô Tô is reached in two legs: first to the mainland port area in Vân Đồn district (Ao Tiên or Cái Rồng - both serve passenger routes, with Ao Tiên the newer, larger port), then by boat to the island itself. From Hanoi, the journey to Vân Đồn takes roughly 3-4 hours by bus, with options ranging from standard seats to overnight sleeper and limousine buses. From the port, you have two main boat options: fast catamaran ferries take approximately 60-90 minutes (occasionally up to around 2 hours depending on conditions), with adult fares generally 220,000-350,000 VND; or older wooden boats, a slower but noticeably cheaper option, taking around 3 hours for roughly 95,000 VND, departing once enough passengers have gathered rather than on a fixed schedule. Several operators run the fast-ferry route with their own schedules and pricing, generally departing multiple times daily from early morning into mid-afternoon, with return sailings from Cô Tô continuing into early evening - check specific times and book ahead, particularly in peak season.",
-    whatToExpect:
-      "The island is small enough to explore by motorbike in a day. The main town has the ferry pier, accommodation, and restaurant cluster, along with Phố Đi Bộ Ký Con, the district's first walking street (open 7-11 PM), and Chùa Trúc Lâm Cô Tô nearby. The key beaches each have a distinct character: Bãi Hồng Vàn is the largest with calm waters protected by a nearby islet and water sports rentals; Bãi Đá Móng Rồng (formerly known as Cầu Mỵ, renamed in 2015) is a striking stretch of wave-eroded sedimentary rock over 40 hectares and 2km long - note that its beauty depends more on the tide than the time of day, since high tide covers the rock formations and can be dangerous, so aim for low tide, which often (but not always) falls in the early morning; Bãi Đá Vòm Xi has a natural rock arch framing the sunset; Bãi Tình Yêu (also called Bãi Tàu Đắm, or Shipwreck Beach) sits conveniently between the town centre and the sea, linked by a 2km red-brick coastal path lined with casuarina trees known as the 'Love Road'. The Âu Cảng (marina) and Cảng Thanh Lân are photogenic harbour spots, and nearby Rừng Chõi, a roughly 10-hectare stretch of primary forest in Đồng Tiến commune, runs along Bắc Vàn beach near one of the piers to Cô Tô Con. Hồ Trường Xuân, one of the island's two main freshwater reservoirs, is a scenic spot with some accommodation nearby. Cô Tô Con islet, with its own Bãi Nam and Bãi Đông beaches, is a short boat ride away (from Bắc Vàn pier, about 30-45 minutes depending on conditions) and offers the best snorkeling in the area - most visitors consider it essential rather than optional. The lighthouse, on a hill over 100m high, is reached via 72 spiral steps - visitors are asked to climb barefoot, since the stairway also collects clean rainwater for the keepers' use, and it's worth a chat with the keepers if they're free.",
-    travelTips:
-      "A 2-night, 3-day trip is the standard itinerary from Hanoi, allowing enough time to justify the travel involved. A typical structure: Day 1, travel to Ao Tiên and take the ferry over, then visit Cảng Thanh Lân, Bãi Vụng Tiên, and Bãi Hồng Vàn, with sunset at Bãi Tình Yêu. Day 2: sunrise at Bãi Đá Móng Rồng (around 5 AM), a visit to Âu Cảng, an islands boat tour, and the evening walking street. Day 3: sunrise at Bãi Đá Vòm Xi, souvenir shopping, check-out, and the ferry back. Accommodation at Bãi Tình Yêu is the most convenient base - close to both the town centre and the beach. The island is at its best in May - early enough to avoid peak summer crowds with reliably good weather.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cô Tô Island Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cô Tô Island is the main island of a nearly-50-island archipelago (around 47 sq km) in the far eastern reaches of Quảng Ninh province, roughly 80km from the mainland and about 260km from Hanoi, in the Gulf of Tonkin. The island sits outside the boundaries of Hạ Long Bay and Bái Tử Long Bay, which has kept it off the main tourist trail and preserved a character that those areas have largely lost.",
+          },
+          { type: "heading", text: "Settlement History" },
+          {
+            type: "paragraph",
+            text: "Originally known as Chàng Sơn, the island was long used only as temporary shelter by Northeastern fishing boats rather than permanently settled, due to persistent pirate raids. Formal settlement began in 1832, when the Nguyễn court, at the request of the regional governor Nguyễn Công Trứ, established the first village here; many of the early settlers were of Chinese origin, from the coastal areas of Guangdong, Fujian, and Hainan. The island's population changed significantly in 1978, when most ethnic Chinese residents left for China amid the period's Sino-Vietnamese tensions, and it has since been repopulated largely by Vietnamese fisherfolk; today it has a permanent population of around 6,000 residents.",
+          },
+          { type: "heading", text: "November 1945" },
+          {
+            type: "paragraph",
+            text: "The island also carries a more recent layer of history: on the night of November 13, 1945, the Ký Con Company - one of the first main units of the Đông Triều war zone - fought French forces at Đồn Cao, a hilltop position with commanding views the French had occupied; the site is now a provincial historical relic, and a street in the town centre is named after the company in tribute.",
+          },
+          { type: "heading", text: "Beaches and Cô Tô Con Islet" },
+          {
+            type: "paragraph",
+            text: "The beaches are among the cleanest in northern Vietnam - Bãi Hồng Vàn for calm swimming, Bãi Đá Móng Rồng for dramatic rock formations, Bãi Đá Vòm Xi for the cave arch sunset view, Bãi Vàn Chảy, Bắc Vàn, and Bãi Tình Yêu (also known as Bãi Tàu Đắm, or Shipwreck Beach). The uninhabited Cô Tô Con islet nearby, with its own Bãi Nam and Bãi Đông beaches, has become the go-to snorkeling destination in the archipelago, with intact coral reefs, clear water, and soft sand that many compare favourably to the Maldives - most visitors consider it unmissable.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cô Tô Island",
+        blocks: [
+          { type: "heading", text: "From Hanoi to Vân Đồn" },
+          {
+            type: "paragraph",
+            text: "Cô Tô is reached in two legs: first to the mainland port area in Vân Đồn district (Ao Tiên or Cái Rồng - both serve passenger routes, with Ao Tiên the newer, larger port), then by boat to the island itself. From Hanoi, the journey to Vân Đồn takes roughly 3-4 hours by bus, with options ranging from standard seats to overnight sleeper and limousine buses.",
+          },
+          { type: "heading", text: "Ferries to Cô Tô" },
+          {
+            type: "paragraph",
+            text: "From the port, you have two main boat options: fast catamaran ferries take approximately 60-90 minutes (occasionally up to around 2 hours depending on conditions), with adult fares generally 220,000-350,000 VND; or older wooden boats, a slower but noticeably cheaper option, taking around 3 hours for roughly 95,000 VND, departing once enough passengers have gathered rather than on a fixed schedule. Several operators run the fast-ferry route with their own schedules and pricing, generally departing multiple times daily from early morning into mid-afternoon, with return sailings from Cô Tô continuing into early evening - check specific times and book ahead, particularly in peak season.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cô Tô Island",
+        blocks: [
+          { type: "heading", text: "Getting Around and the Main Town" },
+          {
+            type: "paragraph",
+            text: "The island is small enough to explore by motorbike in a day. The main town has the ferry pier, accommodation, and restaurant cluster, along with Phố Đi Bộ Ký Con, the district's first walking street (open 7-11 PM), and Chùa Trúc Lâm Cô Tô nearby.",
+          },
+          { type: "heading", text: "Beaches and Harbours" },
+          {
+            type: "paragraph",
+            text: "The key beaches each have a distinct character: Bãi Hồng Vàn is the largest with calm waters protected by a nearby islet and water sports rentals; Bãi Đá Móng Rồng (formerly known as Cầu Mỵ, renamed in 2015) is a striking stretch of wave-eroded sedimentary rock over 40 hectares and 2km long - note that its beauty depends more on the tide than the time of day, since high tide covers the rock formations and can be dangerous, so aim for low tide, which often (but not always) falls in the early morning; Bãi Đá Vòm Xi has a natural rock arch framing the sunset; Bãi Tình Yêu (also called Bãi Tàu Đắm, or Shipwreck Beach) sits conveniently between the town centre and the sea, linked by a 2km red-brick coastal path lined with casuarina trees known as the 'Love Road'. The Âu Cảng (marina) and Cảng Thanh Lân are photogenic harbour spots, and nearby Rừng Chõi, a roughly 10-hectare stretch of primary forest in Đồng Tiến commune, runs along Bắc Vàn beach near one of the piers to Cô Tô Con.",
+          },
+          { type: "heading", text: "Hồ Trường Xuân, Cô Tô Con and the Lighthouse" },
+          {
+            type: "paragraph",
+            text: "Hồ Trường Xuân, one of the island's two main freshwater reservoirs, is a scenic spot with some accommodation nearby. Cô Tô Con islet, with its own Bãi Nam and Bãi Đông beaches, is a short boat ride away (from Bắc Vàn pier, about 30-45 minutes depending on conditions) and offers the best snorkeling in the area - most visitors consider it essential rather than optional. The lighthouse, on a hill over 100m high, is reached via 72 spiral steps - visitors are asked to climb barefoot, since the stairway also collects clean rainwater for the keepers' use, and it's worth a chat with the keepers if they're free.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cô Tô Island",
+        blocks: [
+          { type: "heading", text: "A 3-Day Itinerary" },
+          {
+            type: "paragraph",
+            text: "A 2-night, 3-day trip is the standard itinerary from Hanoi, allowing enough time to justify the travel involved. A typical structure: Day 1, travel to Ao Tiên and take the ferry over, then visit Cảng Thanh Lân, Bãi Vụng Tiên, and Bãi Hồng Vàn, with sunset at Bãi Tình Yêu. Day 2: sunrise at Bãi Đá Móng Rồng (around 5 AM), a visit to Âu Cảng, an islands boat tour, and the evening walking street. Day 3: sunrise at Bãi Đá Vòm Xi, souvenir shopping, check-out, and the ferry back.",
+          },
+          { type: "heading", text: "Where to Stay and When to Go" },
+          {
+            type: "paragraph",
+            text: "Accommodation at Bãi Tình Yêu is the most convenient base - close to both the town centre and the beach. The island is at its best in May - early enough to avoid peak summer crowds with reliably good weather.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

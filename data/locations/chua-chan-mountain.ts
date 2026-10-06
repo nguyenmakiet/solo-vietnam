@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const chuaChanMountain: Location = {
   slug: "chua-chan-mountain",
   name: "Núi Chứa Chan (Chứa Chan Mountain)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dong-nai"],
   destination: "",
   lat: 10.938213833993702,
@@ -54,14 +54,82 @@ export const chuaChanMountain: Location = {
     "Beyond the pagoda, look out for the mountain's other historical traces - Emperor Bảo Đại's former tea garden, the remains of a French colonial rest house, an old wartime airstrip, and Mật Khu Hầm Hinh, a revolutionary-era guerrilla base - scattered across the slopes for those interested in the mountain's layered history",
   ],
   content: {
-    intro:
-      "Núi Chứa Chan - also known as Gia Ray or Gia Lào - rises to 837 metres above the flat agricultural plains of Xuân Lộc district in Đồng Nai province, making it the second-highest peak in southern Vietnam after Núi Bà Đen in Tây Ninh, and the highest point in the southeastern lowlands between Ho Chi Minh City and the coast. Recognised as a National Scenic Site in 2012, the mountain is about 100-110km from central HCMC - close enough for a day trip, far enough that it sees a different crowd from the city's usual weekend escapes. A cable car (opened 2016, running 1,265 metres on European-built equipment with 44 eight-person cabins) now carries most pilgrims and casual visitors up to Bửu Quang Pagoda, also known as Chùa Gia Lào - a temple built into a natural cave shaped like a dragon's mouth, founded in the early 20th century on the site of an older clay-built shrine from the Nguyễn dynasty. Beyond the pagoda, a numbered power-pole trail continues to the true summit through forest, passing four streams that rise on the mountain (Gia Ui, Gia Miên, Gia Liêu, and Gia Lào, one for each point of the compass) and natural spring pools locals call giếng Tiên (Fairy Wells). The mountain also carries older, less-visited layers of history - a former tea garden planted for Emperor Bảo Đại, the remains of a French colonial governor's rest house, traces of a wartime airstrip, and Mật Khu Hầm Hinh, a revolutionary-era guerrilla base - alongside a handful of smaller temples (Lâm Sơn Tự and Linh Sơn Tự, the latter also called Chùa Ông Ngộ) and a sacred banyan tree with three trunks and a single canopy. The combination of cable car access, a genuine forest trail, meaningful elevation gain, and working religious sites makes Chứa Chan one of the more complete and varied mountain day trips accessible from southern Vietnam's largest city.",
-    howToGetThere:
-      "Núi Chứa Chan is located in Xuân Trường commune, Xuân Lộc district, approximately 100-110km east of Ho Chi Minh City. By motorbike or car, follow National Highway 1A east through Biên Hòa and Long Khánh - the mountain and its cable car station are well signposted from the highway, and the trip takes roughly 2-3 hours depending on traffic. Public bus options run from HCMC's Miền Đông bus station toward Long Khánh (or further to Bình Thuận/Đức Linh, stopping near the site), from where a taxi or xe ôm to the base costs around 100,000-150,000 VND. Note that the cable car/pagoda route and the power-pole trailhead have separate parking areas roughly 8km apart by road - decide which route you're starting from before you arrive, since they aren't within walking distance of each other.",
-    whatToExpect:
-      "Most visitors now ride the cable car to Bửu Quang Pagoda rather than climbing the full ~300-step staircase - the roughly 8-minute cabin ride gives sweeping views over the surrounding forest and plains that the stair climb doesn't offer until much higher up. Note that the cable car and stair route only reach the pagoda, about a third of the way up - reaching the true summit from there requires the separate power-pole trail, and isn't recommended via the pagoda side, because the pagoda route and the power-pole trail are separate systems that don't connect naturally. The pagoda itself, built into its dragon-mouth cave, is an active place of worship with incense, offerings, and a steady stream of pilgrims, especially on weekends and lunar holy days. Hikers wanting to reach the true summit generally start instead from the power-pole trailhead - a rougher path through secondary forest, marked by 125 sequentially numbered telecom-cable poles that make navigation straightforward even without a guide, taking roughly 4-6 hours round trip depending on fitness. The upper section opens onto views across the Đồng Nai plains - on clear days the flat agricultural landscape extends to the horizon in all directions, giving a strong sense of how isolated the peak is in this terrain, and fog is common at the summit, especially at night and in the early morning, making it a decent spot for 'cloud hunting.' As of early 2026, the summit itself is a visible construction site as part of a planned upgrade, so it can look less pristine than photos suggest for now. Along the way, older relics - Bảo Đại's former tea garden, a French rest house, wartime airstrip traces, and the Mật Khu Hầm Hinh guerrilla base - reward those interested in the mountain's history beyond its natural scenery. The mountain has also hosted Vietnam's national paragliding championship, held here for the first time in 2021. A popular weekend plan is to set off Saturday afternoon, camp overnight near pole 135 or 144, and wake for sunrise on Sunday before heading back down.",
-    travelTips:
-      "Chứa Chan is not a wilderness experience - the cable car, the pagoda, and the weekend crowds mean this is a social mountain as much as a natural one. For solo travellers it works best as a half-day physical challenge combined with genuine cultural observation: watching local pilgrims make the journey is as memorable as reaching the summit itself. A common approach is to take the cable car up to visit the pagoda first, then follow the power-pole trail further up or down for a more active, trail-based experience, rather than treating the staircase as the only route. Start early, carry water, and plan to be back at the base by noon before the heat peaks.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Núi Chứa Chan (Chứa Chan Mountain) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Chứa Chan - also known as Gia Ray or Gia Lào - rises to 837 metres above the flat agricultural plains of Xuân Lộc district in Đồng Nai province, making it the second-highest peak in southern Vietnam after Núi Bà Đen in Tây Ninh, and the highest point in the southeastern lowlands between Ho Chi Minh City and the coast. Recognised as a National Scenic Site in 2012, the mountain is about 100-110km from central HCMC - close enough for a day trip, far enough that it sees a different crowd from the city's usual weekend escapes.",
+          },
+          { type: "heading", text: "The Cable Car and the Summit Trail" },
+          {
+            type: "paragraph",
+            text: "A cable car (opened 2016, running 1,265 metres on European-built equipment with 44 eight-person cabins) now carries most pilgrims and casual visitors up to Bửu Quang Pagoda, also known as Chùa Gia Lào - a temple built into a natural cave shaped like a dragon's mouth, founded in the early 20th century on the site of an older clay-built shrine from the Nguyễn dynasty. Beyond the pagoda, a numbered power-pole trail continues to the true summit through forest, passing four streams that rise on the mountain (Gia Ui, Gia Miên, Gia Liêu, and Gia Lào, one for each point of the compass) and natural spring pools locals call giếng Tiên (Fairy Wells).",
+          },
+          { type: "heading", text: "Older Layers of History" },
+          {
+            type: "paragraph",
+            text: "The mountain also carries older, less-visited layers of history - a former tea garden planted for Emperor Bảo Đại, the remains of a French colonial governor's rest house, traces of a wartime airstrip, and Mật Khu Hầm Hinh, a revolutionary-era guerrilla base - alongside a handful of smaller temples (Lâm Sơn Tự and Linh Sơn Tự, the latter also called Chùa Ông Ngộ) and a sacred banyan tree with three trunks and a single canopy. The combination of cable car access, a genuine forest trail, meaningful elevation gain, and working religious sites makes Chứa Chan one of the more complete and varied mountain day trips accessible from southern Vietnam's largest city.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Núi Chứa Chan (Chứa Chan Mountain)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Chứa Chan is located in Xuân Trường commune, Xuân Lộc district, approximately 100-110km east of Ho Chi Minh City. By motorbike or car, follow National Highway 1A east through Biên Hòa and Long Khánh - the mountain and its cable car station are well signposted from the highway, and the trip takes roughly 2-3 hours depending on traffic.",
+          },
+          { type: "heading", text: "Public Buses and Parking" },
+          {
+            type: "paragraph",
+            text: "Public bus options run from HCMC's Miền Đông bus station toward Long Khánh (or further to Bình Thuận/Đức Linh, stopping near the site), from where a taxi or xe ôm to the base costs around 100,000-150,000 VND. Note that the cable car/pagoda route and the power-pole trailhead have separate parking areas roughly 8km apart by road - decide which route you're starting from before you arrive, since they aren't within walking distance of each other.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Núi Chứa Chan (Chứa Chan Mountain)",
+        blocks: [
+          { type: "heading", text: "The Cable Car and Bửu Quang Pagoda" },
+          {
+            type: "paragraph",
+            text: "Most visitors now ride the cable car to Bửu Quang Pagoda rather than climbing the full ~300-step staircase - the roughly 8-minute cabin ride gives sweeping views over the surrounding forest and plains that the stair climb doesn't offer until much higher up. Note that the cable car and stair route only reach the pagoda, about a third of the way up - reaching the true summit from there requires the separate power-pole trail, and isn't recommended via the pagoda side, because the pagoda route and the power-pole trail are separate systems that don't connect naturally. The pagoda itself, built into its dragon-mouth cave, is an active place of worship with incense, offerings, and a steady stream of pilgrims, especially on weekends and lunar holy days.",
+          },
+          { type: "heading", text: "Hiking to the True Summit" },
+          {
+            type: "paragraph",
+            text: "Hikers wanting to reach the true summit generally start instead from the power-pole trailhead - a rougher path through secondary forest, marked by 125 sequentially numbered telecom-cable poles that make navigation straightforward even without a guide, taking roughly 4-6 hours round trip depending on fitness. The upper section opens onto views across the Đồng Nai plains - on clear days the flat agricultural landscape extends to the horizon in all directions, giving a strong sense of how isolated the peak is in this terrain, and fog is common at the summit, especially at night and in the early morning, making it a decent spot for 'cloud hunting.' As of early 2026, the summit itself is a visible construction site as part of a planned upgrade, so it can look less pristine than photos suggest for now.",
+          },
+          { type: "heading", text: "Relics, Paragliding and Camping" },
+          {
+            type: "paragraph",
+            text: "Along the way, older relics - Bảo Đại's former tea garden, a French rest house, wartime airstrip traces, and the Mật Khu Hầm Hinh guerrilla base - reward those interested in the mountain's history beyond its natural scenery. The mountain has also hosted Vietnam's national paragliding championship, held here for the first time in 2021. A popular weekend plan is to set off Saturday afternoon, camp overnight near pole 135 or 144, and wake for sunrise on Sunday before heading back down.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Núi Chứa Chan (Chứa Chan Mountain)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Chứa Chan is not a wilderness experience - the cable car, the pagoda, and the weekend crowds mean this is a social mountain as much as a natural one. For solo travellers it works best as a half-day physical challenge combined with genuine cultural observation: watching local pilgrims make the journey is as memorable as reaching the summit itself.",
+          },
+          {
+            type: "paragraph",
+            text: "A common approach is to take the cable car up to visit the pagoda first, then follow the power-pole trail further up or down for a more active, trail-based experience, rather than treating the staircase as the only route. Start early, carry water, and plan to be back at the base by noon before the heat peaks.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

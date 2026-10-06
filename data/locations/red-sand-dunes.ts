@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const redSandDunes: Location = {
   slug: "red-sand-dunes",
   name: "Red Sand Dunes",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 10.949408234413704,
@@ -45,14 +45,84 @@ export const redSandDunes: Location = {
     "Local food carts nearby sell warm tàu hủ (soft tofu pudding with coconut milk), crispy wafer snacks, and the well-known 'dừa 3 nhát' (three-cut coconut) from the nearby Thiện Nghiệp area",
   ],
   content: {
-    intro:
-      "The Red Sand Dunes go by several different names locally - Đồi Cát Hồng (Pink Dunes), Đồi Cát Vàng (Golden Dunes), and Đồi Cát Bay (Flying Sand Dunes) all refer to this same site, the name shifting depending on what colour the sand happens to look like when someone visited: pale yellow in the morning, deepening to orange around midday, and turning a warm pink-red by late afternoon and sunset. 'Đồi Cát Bay' specifically references how sea winds constantly reshape the dune surface, shifting sand from day to day. The dunes sit about 2km east of Mũi Né town centre (roughly 25km from Phan Thiết city itself), directly above the fishing village on the bay - the most accessible dune landscape in the area and the easiest to visit independently without a tour. The colouration is associated with iron-rich minerals in the sand, giving the dunes their characteristic orange-red tones - the same minerals that give much of Bình Thuận province's soil its rust colour; locals sometimes describe the wider dune area as having as many as 18 subtly different sand colours in total. The dunes are smaller than the White Sand Dunes at Bàu Trắng - rising perhaps 20–30 metres at their highest - but the colour is more vivid and the proximity to the fishing village below adds a human dimension that the more remote white dunes lack. Worth knowing: some longtime visitors and locals say the dunes were noticeably larger and more dramatic around 2006, closer to a genuine desert landscape, and have gradually shrunk and flattened since - wind, erosion, and human activity (including sand extraction and nearby development) are commonly cited as factors. If the dunes look less dramatic than older photos suggest, this is likely part of why. At sunset, the low western light saturates the red-orange colour and the fishing boats in the bay catch the same warm tones - the combination of dune, village, and water in a single frame is one of the most characteristic images of Mũi Né.",
-    howToGetThere:
-      "The Red Sand Dunes are 2km east of Mũi Né town centre on the road toward Phan Thiết - easily reached by motorbike (5 minutes), bicycle, or on foot in 20–25 minutes. The dune access point is on the inland side of the coast road, opposite the fishing village. There is no formal entrance gate - the dunes begin directly from the roadside. Most accommodation in Mũi Né can provide directions or arrange a xe ôm.",
-    whatToExpect:
-      "The dune face rises steeply from the road, with a worn path leading to the main ridge. The ridge gives views in both directions - inland over scrub and the Bình Thuận plateau, and seaward over the fishing village and the bay. The sand surface is firm enough to walk on comfortably in dry season. Children with plastic sleds operate at the entrance and along the main slope - the slope is gentle enough for sliding, though it's worth agreeing on a price before using one. The dunes are small enough that the entire area can be explored in 20–30 minutes. At sunset, the ridge is a popular gathering point for both travellers and locals watching the light change on the water.",
-    travelTips:
-      "The Red Sand Dunes are best treated as an easy late-afternoon activity rather than a destination in their own right - walk up for sunset, spend 30 minutes on the ridge, and combine with a stroll through the fishing village below. Go in with realistic expectations: some visitors, especially those arriving with very specific photos in mind, find the site smaller or less dramatic than expected, and the vendor and tipping dynamic at the entrance can feel pushy if you're not prepared for it. The White Sand Dunes at Bàu Trắng are the more dramatic dune experience; the Red Dunes are more convenient and require no planning or early wake-up. Most visitors to Mũi Né do both in the same day: Red Dunes at sunset one evening, White Dunes at sunrise the following morning.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Red Sand Dunes Special",
+        blocks: [
+          { type: "heading", text: "Names of the Dunes" },
+          {
+            type: "paragraph",
+            text: "The Red Sand Dunes go by several different names locally - Đồi Cát Hồng (Pink Dunes), Đồi Cát Vàng (Golden Dunes), and Đồi Cát Bay (Flying Sand Dunes) all refer to this same site, the name shifting depending on what colour the sand happens to look like when someone visited: pale yellow in the morning, deepening to orange around midday, and turning a warm pink-red by late afternoon and sunset. 'Đồi Cát Bay' specifically references how sea winds constantly reshape the dune surface, shifting sand from day to day.",
+          },
+          { type: "heading", text: "Location and Colour" },
+          {
+            type: "paragraph",
+            text: "The dunes sit about 2km east of Mũi Né town centre (roughly 25km from Phan Thiết city itself), directly above the fishing village on the bay - the most accessible dune landscape in the area and the easiest to visit independently without a tour. The colouration is associated with iron-rich minerals in the sand, giving the dunes their characteristic orange-red tones - the same minerals that give much of Bình Thuận province's soil its rust colour; locals sometimes describe the wider dune area as having as many as 18 subtly different sand colours in total.",
+          },
+          { type: "heading", text: "Size and Changes Over Time" },
+          {
+            type: "paragraph",
+            text: "The dunes are smaller than the White Sand Dunes at Bàu Trắng - rising perhaps 20–30 metres at their highest - but the colour is more vivid and the proximity to the fishing village below adds a human dimension that the more remote white dunes lack. Worth knowing: some longtime visitors and locals say the dunes were noticeably larger and more dramatic around 2006, closer to a genuine desert landscape, and have gradually shrunk and flattened since - wind, erosion, and human activity (including sand extraction and nearby development) are commonly cited as factors. If the dunes look less dramatic than older photos suggest, this is likely part of why.",
+          },
+          { type: "heading", text: "Sunset" },
+          {
+            type: "paragraph",
+            text: "At sunset, the low western light saturates the red-orange colour and the fishing boats in the bay catch the same warm tones - the combination of dune, village, and water in a single frame is one of the most characteristic images of Mũi Né.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Red Sand Dunes",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Red Sand Dunes are 2km east of Mũi Né town centre on the road toward Phan Thiết - easily reached by motorbike (5 minutes), bicycle, or on foot in 20–25 minutes. The dune access point is on the inland side of the coast road, opposite the fishing village. There is no formal entrance gate - the dunes begin directly from the roadside. Most accommodation in Mũi Né can provide directions or arrange a xe ôm.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Red Sand Dunes",
+        blocks: [
+          { type: "heading", text: "The Ridge and Views" },
+          {
+            type: "paragraph",
+            text: "The dune face rises steeply from the road, with a worn path leading to the main ridge. The ridge gives views in both directions - inland over scrub and the Bình Thuận plateau, and seaward over the fishing village and the bay. The sand surface is firm enough to walk on comfortably in dry season.",
+          },
+          { type: "heading", text: "Sand Sledding" },
+          {
+            type: "paragraph",
+            text: "Children with plastic sleds operate at the entrance and along the main slope - the slope is gentle enough for sliding, though it's worth agreeing on a price before using one. The dunes are small enough that the entire area can be explored in 20–30 minutes.",
+          },
+          { type: "heading", text: "Sunset on the Ridge" },
+          {
+            type: "paragraph",
+            text: "At sunset, the ridge is a popular gathering point for both travellers and locals watching the light change on the water.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Red Sand Dunes",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Red Sand Dunes are best treated as an easy late-afternoon activity rather than a destination in their own right - walk up for sunset, spend 30 minutes on the ridge, and combine with a stroll through the fishing village below. Go in with realistic expectations: some visitors, especially those arriving with very specific photos in mind, find the site smaller or less dramatic than expected, and the vendor and tipping dynamic at the entrance can feel pushy if you're not prepared for it.",
+          },
+          { type: "heading", text: "Red Dunes or White Dunes" },
+          {
+            type: "paragraph",
+            text: "The White Sand Dunes at Bàu Trắng are the more dramatic dune experience; the Red Dunes are more convenient and require no planning or early wake-up. Most visitors to Mũi Né do both in the same day: Red Dunes at sunset one evening, White Dunes at sunrise the following morning.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

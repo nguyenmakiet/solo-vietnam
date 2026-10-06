@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nhanTower: Location = {
   slug: "nhan-tower",
   name: "Tháp Nhạn",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["phu-yen"],
   destination: "",
   lat: 13.082464193252497,
@@ -51,14 +51,93 @@ export const nhanTower: Location = {
     "Tuy Hòa is on the main north–south train line - a natural stop between Quy Nhơn (2 hours north) and Nha Trang (2.5 hours south)",
   ],
   content: {
-    intro:
-      "Tháp Nhạn stands on the summit of Núi Nhạn (Swallow Mountain, also called Bảo Sơn), a 64-metre hill on the northern bank of the Đà Rằng River - also known as Sông Ba, the largest coastal river in central Vietnam, flowing through Phú Yên, Gia Lai, and Kon Tum - in the centre of Tuy Hòa city, Phú Yên province. The tower was built by the Cham people in the late 11th to early 12th century as a place of worship dedicated to Thiên Y A Na, a goddess central to Cham religious practice; in the Ê Đê and Jarai languages it's also known as Yang Kơ Hmeng. Local legend holds that Thiên Y A Na descended to earth to teach the area's struggling residents to spin thread, weave cloth, and farm the land, easing their hardship - after she ascended back to the heavens, the tower was built in gratitude and remembrance of her. Structurally, the tower is a standalone, square-based structure in three parts - base, body, and crown - with a single east-facing door (the traditional orientation toward sunrise in Cham temple architecture), opening onto an altar to Thiên Y A Na laid with offerings. It stands approximately 24 metres tall overall, with the crowning section alone about 8.5 metres, divided into four tiered blocks with distinctive lines; each corner pillar is topped with a lotus-bud-shaped brick finial that narrows and tapers as it rises. At the very top sits a large, monolithic grey stone Linga, finely carved with a square base narrowing on all four sides - a symbol of the Hindu god Shiva. The tower is constructed entirely from fired red brick without visible mortar, in the transitional style between Mỹ Sơn A1 and Bình Định Cham architecture. The name 'Nhạn' has two explanations locally: the swallows that once gathered around the mountain in large numbers, or a link to Thiên Y A Na herself. The tower was classified as a National Architectural and Artistic Relic in 1988 and upgraded to a Special National Relic in 2018.",
-    howToGetThere:
-      "Tháp Nhạn is roughly 3.5-6km from Tuy Hòa city centre depending on the source (accounts vary), and walkable from the train station for those staying centrally. From the station, head along Lê Trung Kiên street, pass the Tân Đà intersection, and look for the road leading up the hill on your left. By motorbike or taxi the base of Núi Nhạn is easy to reach with parking available. The hill has both a staircase and an asphalt road to the summit - about 5–10 minutes on foot, or a few minutes by the optional electric cart. Tuy Hòa is served by the main north–south railway and by Đông Tác Airport with domestic connections.",
-    whatToExpect:
-      "The tower is remarkably intact, with fine brickwork and carved details that hold up well on close inspection. From the hilltop, views stretch over Tuy Hòa's grid of streets, the broad Đà Rằng River, and the coastline. A war memorial on the hill's western flank commemorates Phú Yên's martyrs from both resistance wars. In the evenings the tower is lit up and visible from across the city. On Saturday evenings a performance programme in the courtyard features traditional music and dance. The atmosphere is calm and uncrowded compared to Mỹ Sơn or the Bình Định towers - Phú Yên sees a fraction of the tourist traffic of its neighbours.",
-    travelTips:
-      "Phú Yên is one of the most rewarding provinces on the central coast for travellers who take time beyond the Gành Đá Đĩa photo stop. Tháp Nhạn is an ideal base for a full-day circuit: north to Gành Đá Đĩa and Bãi Môn–Mũi Điện, south to Vũng Rô Bay and Đại Lãnh Cape. The city is compact, pleasant, and largely unreshaped by beach tourism. The train makes it a natural one-night stop on the Hanoi–Ho Chi Minh City rail journey.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tháp Nhạn Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tháp Nhạn stands on the summit of Núi Nhạn (Swallow Mountain, also called Bảo Sơn), a 64-metre hill on the northern bank of the Đà Rằng River - also known as Sông Ba, the largest coastal river in central Vietnam, flowing through Phú Yên, Gia Lai, and Kon Tum - in the centre of Tuy Hòa city, Phú Yên province.",
+          },
+          { type: "heading", text: "Cham Origins and the Legend of Thiên Y A Na" },
+          {
+            type: "paragraph",
+            text: "The tower was built by the Cham people in the late 11th to early 12th century as a place of worship dedicated to Thiên Y A Na, a goddess central to Cham religious practice; in the Ê Đê and Jarai languages it's also known as Yang Kơ Hmeng. Local legend holds that Thiên Y A Na descended to earth to teach the area's struggling residents to spin thread, weave cloth, and farm the land, easing their hardship - after she ascended back to the heavens, the tower was built in gratitude and remembrance of her.",
+          },
+          { type: "heading", text: "Architecture of the Tower" },
+          {
+            type: "paragraph",
+            text: "Structurally, the tower is a standalone, square-based structure in three parts - base, body, and crown - with a single east-facing door (the traditional orientation toward sunrise in Cham temple architecture), opening onto an altar to Thiên Y A Na laid with offerings. It stands approximately 24 metres tall overall, with the crowning section alone about 8.5 metres, divided into four tiered blocks with distinctive lines; each corner pillar is topped with a lotus-bud-shaped brick finial that narrows and tapers as it rises. At the very top sits a large, monolithic grey stone Linga, finely carved with a square base narrowing on all four sides - a symbol of the Hindu god Shiva. The tower is constructed entirely from fired red brick without visible mortar, in the transitional style between Mỹ Sơn A1 and Bình Định Cham architecture.",
+          },
+          { type: "heading", text: "The Name and Heritage Status" },
+          {
+            type: "paragraph",
+            text: "The name 'Nhạn' has two explanations locally: the swallows that once gathered around the mountain in large numbers, or a link to Thiên Y A Na herself. The tower was classified as a National Architectural and Artistic Relic in 1988 and upgraded to a Special National Relic in 2018.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tháp Nhạn",
+        blocks: [
+          { type: "heading", text: "From Tuy Hòa Station" },
+          {
+            type: "paragraph",
+            text: "Tháp Nhạn is roughly 3.5-6km from Tuy Hòa city centre depending on the source (accounts vary), and walkable from the train station for those staying centrally. From the station, head along Lê Trung Kiên street, pass the Tân Đà intersection, and look for the road leading up the hill on your left.",
+          },
+          { type: "heading", text: "Reaching the Summit" },
+          {
+            type: "paragraph",
+            text: "By motorbike or taxi the base of Núi Nhạn is easy to reach with parking available. The hill has both a staircase and an asphalt road to the summit - about 5–10 minutes on foot, or a few minutes by the optional electric cart.",
+          },
+          { type: "heading", text: "Getting to Tuy Hòa" },
+          {
+            type: "paragraph",
+            text: "Tuy Hòa is served by the main north–south railway and by Đông Tác Airport with domestic connections.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tháp Nhạn",
+        blocks: [
+          { type: "heading", text: "The Tower and Hilltop Views" },
+          {
+            type: "paragraph",
+            text: "The tower is remarkably intact, with fine brickwork and carved details that hold up well on close inspection. From the hilltop, views stretch over Tuy Hòa's grid of streets, the broad Đà Rằng River, and the coastline. A war memorial on the hill's western flank commemorates Phú Yên's martyrs from both resistance wars.",
+          },
+          { type: "heading", text: "Evening Lights and Performances" },
+          {
+            type: "paragraph",
+            text: "In the evenings the tower is lit up and visible from across the city. On Saturday evenings a performance programme in the courtyard features traditional music and dance.",
+          },
+          { type: "heading", text: "Atmosphere" },
+          {
+            type: "paragraph",
+            text: "The atmosphere is calm and uncrowded compared to Mỹ Sơn or the Bình Định towers - Phú Yên sees a fraction of the tourist traffic of its neighbours.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tháp Nhạn",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phú Yên is one of the most rewarding provinces on the central coast for travellers who take time beyond the Gành Đá Đĩa photo stop. Tháp Nhạn is an ideal base for a full-day circuit: north to Gành Đá Đĩa and Bãi Môn–Mũi Điện, south to Vũng Rô Bay and Đại Lãnh Cape.",
+          },
+          {
+            type: "paragraph",
+            text: "The city is compact, pleasant, and largely unreshaped by beach tourism. The train makes it a natural one-night stop on the Hanoi–Ho Chi Minh City rail journey.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

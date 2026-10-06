@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dinhMountain: Location = {
   slug: "dinh-mountain",
   name: "Núi Dinh (Dinh Mountain)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ba-ria-vung-tau"],
   destination: "",
   lat: 10.537592530622792,
@@ -51,14 +51,77 @@ export const dinhMountain: Location = {
     "Children aged 6 and up can generally manage the trek with parental supervision",
   ],
   content: {
-    intro:
-      "Núi Dinh rises 504 metres from the flat coastal plains of Bà Rịa–Vũng Tàu province, making it the highest peak in the region, spread across what are now Tân Hải, Long Hương, and Châu Pha wards in Phú Mỹ city (formerly Tân Thành district). The mountain is visible as an isolated forested peak from much of the surrounding lowland, roughly 80km from Ho Chi Minh City (about a 2-hour drive), about 30-35km from Vũng Tàu city, and around 13-15km from Bà Rịa's centre. The range's highest point is Núi Ông Trịnh, at 504m, though the mountain's best-known high point among visitors is Đỉnh La Bàn ('Compass Peak'), a large, flat rock outcrop that American forces used as a helicopter landing pad during the war - today it's the mountain's signature viewpoint, sunrise/sunset spot, and most popular campsite, though the flat ground up there is limited, so larger groups need to manage tent space carefully. The mountain has an informal but well-established network of colour-coded trails of varying length and difficulty - roughly a 5km 'Green' route, a 7km 'Blue' route, an 11km 'Yellow' route, and a 13km 'Red' route - linking a scatter of pagodas and landmarks: Chùa Hang Mai (a centuries-old cave pagoda, since rebuilt), Chùa Thiền Tôn Phật Quang (built into a cave over 30 years ago, with a Tam Thế Phật statue weighing more than 10 tonnes), Chùa Hang Tổ, Thiền viện Minh Đức, and streams including Suối Tiên and Suối Đá, which form small, clear, moss-edged pools shaded by forest canopy - a popular cool-off spot when they're running well after rain. Local vendor stalls along the way (referred to by hikers simply as 'cô Kiều', 'cô Hướng', and similar) double as informal trail junctions and rest stops. The mountain's combination of an active pilgrimage site, a wartime history, natural swimming spots, and a genuine choice of routes gives it a richer character than a straightforward hill walk - though the trail network is informal enough that getting lost is a real, well-documented risk despite the mountain's easy reputation.",
-    howToGetThere:
-      "Núi Dinh is located in what's now Phú Mỹ city (formerly Tân Thành district), approximately 80km from Ho Chi Minh City and around 30-35km from Vũng Tàu city. By motorbike from HCMC, take the HCMC–Long Thành–Dầu Giây Expressway, continue onto QL51 toward Bà Rịa–Vũng Tàu, then turn off onto Đường Tránh (the bypass road) toward the mountain, where signage points the way up. A paved road climbs a substantial part of the mountain to a parking area (around 10,000 VND), from which the main sights are a manageable walk away. There is no regular public transport to the trailhead; motorbike or car is the standard approach.",
-    whatToExpect:
-      "For a light visit, the walk from the parking area to Chùa Hang Mai, Suối Tiên, and Đỉnh La Bàn takes roughly 2-3 hours at a comfortable pace; going deeper into the forest to explore further can take 4-6 hours or a full day. The paved road handles much of the elevation gain, so the walking sections are shorter and less strenuous than a full mountain hike from the base. Along the way, Chùa Hang Mai and Chùa Phật Quang are active pagodas with regular visitors and pilgrims; Suối Tiên and Suối Đá offer shaded, clear pools for a swim when water levels are good (roughly June-November - the streams can run low or dry in the peak dry season of March-May). Đỉnh La Bàn itself is a large, open rock platform with 360-degree views across the province - on clear days you can see the Vũng Tàu peninsula, the Cần Giờ mangrove coast, and the offshore oil platforms in the South China Sea.",
-    travelTips:
-      "Núi Dinh is well suited to travellers combining a Vũng Tàu beach trip with something more active, or to trail runners and casual trekkers based in Ho Chi Minh City looking for an accessible weekend outing. Because a paved road covers much of the ascent, it's more approachable than its 504m height might suggest - you can drive most of the way and still get a genuine trekking experience on the remaining trail sections. The religious dimension - multiple active pagodas and regular pilgrim traffic - adds cultural texture, and the streams give it an edge over drier hill walks nearby. It gets busy on weekends, so a weekday visit or an early weekend start will make for a much quieter trip.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Núi Dinh (Dinh Mountain) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Dinh rises 504 metres from the flat coastal plains of Bà Rịa–Vũng Tàu province, making it the highest peak in the region, spread across what are now Tân Hải, Long Hương, and Châu Pha wards in Phú Mỹ city (formerly Tân Thành district). The mountain is visible as an isolated forested peak from much of the surrounding lowland, roughly 80km from Ho Chi Minh City (about a 2-hour drive), about 30-35km from Vũng Tàu city, and around 13-15km from Bà Rịa's centre. The range's highest point is Núi Ông Trịnh, at 504m, though the mountain's best-known high point among visitors is Đỉnh La Bàn ('Compass Peak'), a large, flat rock outcrop that American forces used as a helicopter landing pad during the war - today it's the mountain's signature viewpoint, sunrise/sunset spot, and most popular campsite, though the flat ground up there is limited, so larger groups need to manage tent space carefully.",
+          },
+          { type: "heading", text: "Trails and Vendor Stalls" },
+          {
+            type: "paragraph",
+            text: "The mountain has an informal but well-established network of colour-coded trails of varying length and difficulty - roughly a 5km 'Green' route, a 7km 'Blue' route, an 11km 'Yellow' route, and a 13km 'Red' route - linking a scatter of pagodas and landmarks: Chùa Hang Mai (a centuries-old cave pagoda, since rebuilt), Chùa Thiền Tôn Phật Quang (built into a cave over 30 years ago, with a Tam Thế Phật statue weighing more than 10 tonnes), Chùa Hang Tổ, Thiền viện Minh Đức, and streams including Suối Tiên and Suối Đá, which form small, clear, moss-edged pools shaded by forest canopy - a popular cool-off spot when they're running well after rain. Local vendor stalls along the way (referred to by hikers simply as 'cô Kiều', 'cô Hướng', and similar) double as informal trail junctions and rest stops.",
+          },
+          { type: "heading", text: "Why Visit" },
+          {
+            type: "paragraph",
+            text: "The mountain's combination of an active pilgrimage site, a wartime history, natural swimming spots, and a genuine choice of routes gives it a richer character than a straightforward hill walk - though the trail network is informal enough that getting lost is a real, well-documented risk despite the mountain's easy reputation.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Núi Dinh (Dinh Mountain)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Dinh is located in what's now Phú Mỹ city (formerly Tân Thành district), approximately 80km from Ho Chi Minh City and around 30-35km from Vũng Tàu city. By motorbike from HCMC, take the HCMC–Long Thành–Dầu Giây Expressway, continue onto QL51 toward Bà Rịa–Vũng Tàu, then turn off onto Đường Tránh (the bypass road) toward the mountain, where signage points the way up.",
+          },
+          { type: "heading", text: "Parking and Public Transport" },
+          {
+            type: "paragraph",
+            text: "A paved road climbs a substantial part of the mountain to a parking area (around 10,000 VND), from which the main sights are a manageable walk away. There is no regular public transport to the trailhead; motorbike or car is the standard approach.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Núi Dinh (Dinh Mountain)",
+        blocks: [
+          { type: "heading", text: "The Walk and the Pagodas" },
+          {
+            type: "paragraph",
+            text: "For a light visit, the walk from the parking area to Chùa Hang Mai, Suối Tiên, and Đỉnh La Bàn takes roughly 2-3 hours at a comfortable pace; going deeper into the forest to explore further can take 4-6 hours or a full day. The paved road handles much of the elevation gain, so the walking sections are shorter and less strenuous than a full mountain hike from the base. Along the way, Chùa Hang Mai and Chùa Phật Quang are active pagodas with regular visitors and pilgrims; Suối Tiên and Suối Đá offer shaded, clear pools for a swim when water levels are good (roughly June-November - the streams can run low or dry in the peak dry season of March-May).",
+          },
+          { type: "heading", text: "Đỉnh La Bàn" },
+          {
+            type: "paragraph",
+            text: "Đỉnh La Bàn itself is a large, open rock platform with 360-degree views across the province - on clear days you can see the Vũng Tàu peninsula, the Cần Giờ mangrove coast, and the offshore oil platforms in the South China Sea.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Núi Dinh (Dinh Mountain)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Dinh is well suited to travellers combining a Vũng Tàu beach trip with something more active, or to trail runners and casual trekkers based in Ho Chi Minh City looking for an accessible weekend outing. Because a paved road covers much of the ascent, it's more approachable than its 504m height might suggest - you can drive most of the way and still get a genuine trekking experience on the remaining trail sections.",
+          },
+          {
+            type: "paragraph",
+            text: "The religious dimension - multiple active pagodas and regular pilgrim traffic - adds cultural texture, and the streams give it an edge over drier hill walks nearby. It gets busy on weekends, so a weekday visit or an early weekend start will make for a much quieter trip.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

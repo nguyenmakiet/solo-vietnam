@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const saigonCentralPostOffice: Location = {
   slug: "saigon-central-post-office",
   name: "Saigon Central Post Office",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.779864930790652,
@@ -43,14 +43,89 @@ export const saigonCentralPostOffice: Location = {
     "You'll almost certainly hear a guide or fellow traveller say Gustave Eiffel designed this building - it's a persistent Saigon tourism myth, but there's a real nuance behind it: architects Auguste Henri Vildieu and Marie-Alfred Foulhoux are credited as the building's architects, while some sources also credit Eiffel's company with the steel roof structure and other steel elements. So Eiffel likely wasn't the architect, but his firm may genuinely have had a hand in the steelwork",
   ],
   content: {
-    intro:
-      "The Saigon Central Post Office — Bưu điện Trung tâm Sài Gòn — was built between 1886 and 1891 under architects Auguste Henri Vildieu and Marie-Alfred Foulhoux. It's often credited entirely to Gustave Eiffel, but that attribution is misleading rather than simply false: Vildieu and Foulhoux are credited as the building's architects, while some sources - including city heritage materials - also credit Eiffel's company with the steel roof structure and other steel elements, though this specific claim isn't backed by primary documentation as solid as the architectural attribution. Either way, the 'Eiffel building' story has some real basis, just not the one usually told. An earlier telegraph office (Sở Dây Thép Sài Gòn) also occupied this site from 1860-63 and is associated with Eiffel in some accounts, which may have further fuelled the confusion between the two eras. The building faces Notre-Dame Cathedral across a small plaza in the heart of District 1, forming one of the city's most intact concentrations of French colonial civic architecture. A large round clock above the main entrance displays the 1886-1891 construction years and is a popular photo detail. The interior is a single large hall with a barrel-vaulted iron-and-glass ceiling, yellow and cream painted walls, and large tile maps of Southern Vietnam and the Indochina telegraph network mounted on either side of the main entrance. Green iron columns and rows of wooden benches line the entrance passage, giving the space something of the feel of a European train station waiting area. The hall remains in full operation as a post office: phone booths, postal counters, and a gift shop line the walls, and a large portrait of Ho Chi Minh faces visitors from the rear wall. The building underwent a renovation in 2014 (reportedly around 5 billion VND) that preserved its historical character while updating its condition. Despite its tourist appeal, the building functions as it was built to function — letters and parcels move through it daily — which gives it a vitality that purely museum-converted colonial buildings lack.",
-    howToGetThere:
-      "The post office is at 2 Công Xã Paris in District 1, directly opposite Notre-Dame Cathedral and a 5-minute walk from Dong Khoi Street. It is within easy walking distance of most central hotels. City buses 03, 14, 15, and 30 all stop near the area, and public bicycles or the hop-on double-decker tourist bus are other options if you're combining this with a wider city loop. The surrounding area — the former French colonial civic quarter — contains the most concentrated cluster of colonial-era buildings in the city. Grab rides from Ben Thanh Market take about 5 minutes.",
-    whatToExpect:
-      "The main hall is the entire attraction: a single large vaulted space approximately 60 metres long, with the iron ceiling structure visible above and the original tile floors intact. The building is well maintained and the yellow paint scheme has been kept close to the original colonial colours. On weekdays the hall is busy with postal customers alongside tourists; weekends are quieter on the functional side but busier with visitors. The gift shop along the right wall sells stamps, postcards, lacquerware, and souvenirs — the stamps in particular are worth browsing. The vaulted ceiling and the light from the tall windows create genuinely good conditions for interior architectural photography.",
-    travelTips:
-      "The post office pairs naturally with Notre-Dame Cathedral directly across the plaza, and the whole Công Xã Paris area rewards a slow walk — the surrounding streets contain the former City Hall (now the People's Committee building, lit at night), the Opera House, and the Continental Hotel, forming one of the city's most intact concentrations of French colonial civic architecture. Nearby Đường Sách Nguyễn Văn Bình (Book Street), Bến Thành Market, and Independence Palace are all easy to combine into the same outing. An evening walk through this quarter, when the buildings are illuminated in warm light, is one of the most atmospheric experiences in Ho Chi Minh City, and the post office's exterior in particular takes on a romantic, old-world quality after dark even though the interior is closed. The post office itself closes in the evening but the exterior and plaza remain accessible. One small piece of trivia worth knowing before a guide repeats it: Gustave Eiffel didn't design this building - that credit belongs to architects Auguste Henri Vildieu and Alfred Foulhoux - though Eiffel's company is genuinely credited with the steel roof structure, so the popular story isn't entirely made up, just misattributed.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Saigon Central Post Office Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Saigon Central Post Office — Bưu điện Trung tâm Sài Gòn — was built between 1886 and 1891 under architects Auguste Henri Vildieu and Marie-Alfred Foulhoux.",
+          },
+          { type: "heading", text: "The Gustave Eiffel Story" },
+          {
+            type: "paragraph",
+            text: "It's often credited entirely to Gustave Eiffel, but that attribution is misleading rather than simply false: Vildieu and Foulhoux are credited as the building's architects, while some sources - including city heritage materials - also credit Eiffel's company with the steel roof structure and other steel elements, though this specific claim isn't backed by primary documentation as solid as the architectural attribution. Either way, the 'Eiffel building' story has some real basis, just not the one usually told. An earlier telegraph office (Sở Dây Thép Sài Gòn) also occupied this site from 1860-63 and is associated with Eiffel in some accounts, which may have further fuelled the confusion between the two eras.",
+          },
+          { type: "heading", text: "Setting and Exterior" },
+          {
+            type: "paragraph",
+            text: "The building faces Notre-Dame Cathedral across a small plaza in the heart of District 1, forming one of the city's most intact concentrations of French colonial civic architecture. A large round clock above the main entrance displays the 1886-1891 construction years and is a popular photo detail.",
+          },
+          { type: "heading", text: "The Interior Hall" },
+          {
+            type: "paragraph",
+            text: "The interior is a single large hall with a barrel-vaulted iron-and-glass ceiling, yellow and cream painted walls, and large tile maps of Southern Vietnam and the Indochina telegraph network mounted on either side of the main entrance. Green iron columns and rows of wooden benches line the entrance passage, giving the space something of the feel of a European train station waiting area. The hall remains in full operation as a post office: phone booths, postal counters, and a gift shop line the walls, and a large portrait of Ho Chi Minh faces visitors from the rear wall.",
+          },
+          { type: "heading", text: "Renovation and Daily Use" },
+          {
+            type: "paragraph",
+            text: "The building underwent a renovation in 2014 (reportedly around 5 billion VND) that preserved its historical character while updating its condition. Despite its tourist appeal, the building functions as it was built to function — letters and parcels move through it daily — which gives it a vitality that purely museum-converted colonial buildings lack.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Saigon Central Post Office",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The post office is at 2 Công Xã Paris in District 1, directly opposite Notre-Dame Cathedral and a 5-minute walk from Dong Khoi Street. It is within easy walking distance of most central hotels.",
+          },
+          { type: "heading", text: "Buses, Bikes and Grab" },
+          {
+            type: "paragraph",
+            text: "City buses 03, 14, 15, and 30 all stop near the area, and public bicycles or the hop-on double-decker tourist bus are other options if you're combining this with a wider city loop. The surrounding area — the former French colonial civic quarter — contains the most concentrated cluster of colonial-era buildings in the city. Grab rides from Ben Thanh Market take about 5 minutes.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Saigon Central Post Office",
+        blocks: [
+          { type: "heading", text: "The Main Hall" },
+          {
+            type: "paragraph",
+            text: "The main hall is the entire attraction: a single large vaulted space approximately 60 metres long, with the iron ceiling structure visible above and the original tile floors intact. The building is well maintained and the yellow paint scheme has been kept close to the original colonial colours. On weekdays the hall is busy with postal customers alongside tourists; weekends are quieter on the functional side but busier with visitors.",
+          },
+          { type: "heading", text: "Gift Shop and Photography" },
+          {
+            type: "paragraph",
+            text: "The gift shop along the right wall sells stamps, postcards, lacquerware, and souvenirs — the stamps in particular are worth browsing. The vaulted ceiling and the light from the tall windows create genuinely good conditions for interior architectural photography.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Saigon Central Post Office",
+        blocks: [
+          { type: "heading", text: "Nearby Landmarks" },
+          {
+            type: "paragraph",
+            text: "The post office pairs naturally with Notre-Dame Cathedral directly across the plaza, and the whole Công Xã Paris area rewards a slow walk — the surrounding streets contain the former City Hall (now the People's Committee building, lit at night), the Opera House, and the Continental Hotel, forming one of the city's most intact concentrations of French colonial civic architecture. Nearby Đường Sách Nguyễn Văn Bình (Book Street), Bến Thành Market, and Independence Palace are all easy to combine into the same outing. An evening walk through this quarter, when the buildings are illuminated in warm light, is one of the most atmospheric experiences in Ho Chi Minh City, and the post office's exterior in particular takes on a romantic, old-world quality after dark even though the interior is closed. The post office itself closes in the evening but the exterior and plaza remain accessible.",
+          },
+          { type: "heading", text: "The Eiffel Myth" },
+          {
+            type: "paragraph",
+            text: "One small piece of trivia worth knowing before a guide repeats it: Gustave Eiffel didn't design this building - that credit belongs to architects Auguste Henri Vildieu and Alfred Foulhoux - though Eiffel's company is genuinely credited with the steel roof structure, so the popular story isn't entirely made up, just misattributed.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
