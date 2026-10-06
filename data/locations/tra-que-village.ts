@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const traQueVillage: Location = {
   slug: "tra-que-village",
   name: "Trà Quế Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.902579357686461,
@@ -40,14 +40,89 @@ export const traQueVillage: Location = {
     "Combine with the Bảy Mẫu Coconut Forest (about 5km away) or An Bàng Beach to round out a fuller day trip from Hội An",
   ],
   content: {
-    intro:
-      "Trà Quế is a herb farming village that has supplied Hội An's kitchens for more than 300 years (some accounts trace its farming roots back over 400 years, to the 16th century) - a compact patchwork of irrigated plots, covering around 40 hectares and farmed by roughly 130 households, growing more than 20 varieties of herbs and vegetables using organic methods and a green fertiliser made from algae harvested from the Trà Quế lagoon and the Đế Võng River, rather than chemical fertilisers or animal manure. The village sits on a small islet-like strip of land between the lagoon and the river, about 2.5-3km north of Hội An Ancient Town, and has been farmed continuously by the same families across multiple generations - archaeological traces of the much older Sa Huỳnh culture, some 2,000 years old, have also been found in the area. The village's original livelihood was actually fishing, given its position on the Đế Võng River, before shifting toward vegetable farming. It was once known as Nhự Quế, for herbs with a scent reminiscent of cinnamon; local legend holds that a Nguyễn-dynasty king passing through in the 18th century tasted the village's unusual herbs - spicy-warm like cinnamon, fragrant like tea blossom - and renamed it Trà Quế ('tea and cinnamon') in their honour. The herbs grown here - rau răm, húng quế, tía tô, kinh giới, and others - are the aromatic foundation of Hội An's most iconic dishes: Cao Lầu, White Rose dumplings, and Mì Quảng. The village was recognised as a National Intangible Cultural Heritage in April 2022, and picked up an even bigger international accolade in 2024, when UN Tourism (the World Tourism Organization) named it one of the world's 'Best Tourism Villages.' Within its grounds also sit a handful of minor historical and folk-religious sites - the tomb of Nguyễn Điển, a Nguyễn-dynasty official who served under three emperors; a stone well dating to the Cham era, historically a source of clean water for the village; and small shrines to the earth god (Miếu Thổ Thần) and the Five Elements (Miếu Ngũ Hành). Unlike many 'cultural villages' in Vietnam that have been staged for tourism, Trà Quế is a working farm first - the tourism activity, mainly cooking classes and farm experience sessions, is layered onto an agricultural operation that would exist regardless. Interestingly, relatively few Vietnamese visitors come here, largely because rural farming life is already familiar to many locals, whereas for foreign travellers it offers one of the most distinctive experiences around Hội An.",
-    howToGetThere:
-      "Trà Quế is roughly 2.5-3km north of Hội An Ancient Town, easily reached by bicycle (15-20 minutes), motorbike, or on foot. The route from town follows Hai Bà Trưng Street north, crossing a Thu Bồn River tributary and continuing through coconut palm groves. Bicycles are widely available for rent in Hội An for 50,000-80,000 VND per day. Cooking class operators typically offer pickup from Hội An hotels if cycling isn't preferred. The village has no formal entrance gate for the vegetable plots themselves - they begin immediately off the road - though a separate ticket applies if you want to visit the village's historical relics.",
-    whatToExpect:
-      "Visitors can walk freely through the herb plots and observe or join the farmers at work - transplanting seedlings, weeding, harvesting, and applying the algae-based fertiliser that gives Trà Quế herbs their distinctive intensity. Cooking classes run by local families typically begin with a farm tour and hands-on planting session, followed by a market visit or ingredient gathering, and a cooking lesson for 3-4 traditional Hội An dishes, finishing with a meal of everything prepared. The village itself is small and visually beautiful - rows of herbs in different shades of green, farmers in conical hats, the lagoon visible beyond the plots. Most visitors spend between two and four hours here, depending on whether they simply explore the gardens or join a cooking class.",
-    travelTips:
-      "Trà Quế works best as a half-day activity combined with cycling - ride out in the morning, do a cooking class or farm visit, and ride back through a different route via the rice fields. It's one of the most genuinely local experiences available near Hội An, and the cooking classes here - taught in the village by farming families rather than in a dedicated cooking school - are more authentic than the tourist-oriented cooking schools in town. The herbs and vegetables used are grown metres from where you cook them, which makes a noticeable difference in flavour.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Trà Quế Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Trà Quế is a herb farming village that has supplied Hội An's kitchens for more than 300 years (some accounts trace its farming roots back over 400 years, to the 16th century) - a compact patchwork of irrigated plots, covering around 40 hectares and farmed by roughly 130 households, growing more than 20 varieties of herbs and vegetables using organic methods and a green fertiliser made from algae harvested from the Trà Quế lagoon and the Đế Võng River, rather than chemical fertilisers or animal manure. The village sits on a small islet-like strip of land between the lagoon and the river, about 2.5-3km north of Hội An Ancient Town, and has been farmed continuously by the same families across multiple generations - archaeological traces of the much older Sa Huỳnh culture, some 2,000 years old, have also been found in the area.",
+          },
+          { type: "heading", text: "From Fishing Village to Herb Garden" },
+          {
+            type: "paragraph",
+            text: "The village's original livelihood was actually fishing, given its position on the Đế Võng River, before shifting toward vegetable farming. It was once known as Nhự Quế, for herbs with a scent reminiscent of cinnamon; local legend holds that a Nguyễn-dynasty king passing through in the 18th century tasted the village's unusual herbs - spicy-warm like cinnamon, fragrant like tea blossom - and renamed it Trà Quế ('tea and cinnamon') in their honour.",
+          },
+          { type: "heading", text: "The Herbs Behind Hội An's Signature Dishes" },
+          {
+            type: "paragraph",
+            text: "The herbs grown here - rau răm, húng quế, tía tô, kinh giới, and others - are the aromatic foundation of Hội An's most iconic dishes: Cao Lầu, White Rose dumplings, and Mì Quảng.",
+          },
+          { type: "heading", text: "Recognition and Historic Sites" },
+          {
+            type: "paragraph",
+            text: "The village was recognised as a National Intangible Cultural Heritage in April 2022, and picked up an even bigger international accolade in 2024, when UN Tourism (the World Tourism Organization) named it one of the world's 'Best Tourism Villages.' Within its grounds also sit a handful of minor historical and folk-religious sites - the tomb of Nguyễn Điển, a Nguyễn-dynasty official who served under three emperors; a stone well dating to the Cham era, historically a source of clean water for the village; and small shrines to the earth god (Miếu Thổ Thần) and the Five Elements (Miếu Ngũ Hành).",
+          },
+          { type: "heading", text: "A Working Farm, Not a Staged Village" },
+          {
+            type: "paragraph",
+            text: "Unlike many 'cultural villages' in Vietnam that have been staged for tourism, Trà Quế is a working farm first - the tourism activity, mainly cooking classes and farm experience sessions, is layered onto an agricultural operation that would exist regardless. Interestingly, relatively few Vietnamese visitors come here, largely because rural farming life is already familiar to many locals, whereas for foreign travellers it offers one of the most distinctive experiences around Hội An.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Trà Quế Village",
+        blocks: [
+          { type: "heading", text: "Cycling from Hội An" },
+          {
+            type: "paragraph",
+            text: "Trà Quế is roughly 2.5-3km north of Hội An Ancient Town, easily reached by bicycle (15-20 minutes), motorbike, or on foot. The route from town follows Hai Bà Trưng Street north, crossing a Thu Bồn River tributary and continuing through coconut palm groves. Bicycles are widely available for rent in Hội An for 50,000-80,000 VND per day.",
+          },
+          { type: "heading", text: "Pickup and Tickets" },
+          {
+            type: "paragraph",
+            text: "Cooking class operators typically offer pickup from Hội An hotels if cycling isn't preferred. The village has no formal entrance gate for the vegetable plots themselves - they begin immediately off the road - though a separate ticket applies if you want to visit the village's historical relics.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Trà Quế Village",
+        blocks: [
+          { type: "heading", text: "Farming Activities" },
+          {
+            type: "paragraph",
+            text: "Visitors can walk freely through the herb plots and observe or join the farmers at work - transplanting seedlings, weeding, harvesting, and applying the algae-based fertiliser that gives Trà Quế herbs their distinctive intensity.",
+          },
+          { type: "heading", text: "Cooking Classes" },
+          {
+            type: "paragraph",
+            text: "Cooking classes run by local families typically begin with a farm tour and hands-on planting session, followed by a market visit or ingredient gathering, and a cooking lesson for 3-4 traditional Hội An dishes, finishing with a meal of everything prepared.",
+          },
+          { type: "heading", text: "Village Scenery and Time Needed" },
+          {
+            type: "paragraph",
+            text: "The village itself is small and visually beautiful - rows of herbs in different shades of green, farmers in conical hats, the lagoon visible beyond the plots. Most visitors spend between two and four hours here, depending on whether they simply explore the gardens or join a cooking class.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Trà Quế Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Trà Quế works best as a half-day activity combined with cycling - ride out in the morning, do a cooking class or farm visit, and ride back through a different route via the rice fields. It's one of the most genuinely local experiences available near Hội An, and the cooking classes here - taught in the village by farming families rather than in a dedicated cooking school - are more authentic than the tourist-oriented cooking schools in town. The herbs and vegetables used are grown metres from where you cook them, which makes a noticeable difference in flavour.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

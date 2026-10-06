@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const keoPagoda: Location = {
   slug: "keo-pagoda",
   name: "Keo Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["thai-binh"],
   destination: "",
   lat: 20.361100,
@@ -45,14 +45,87 @@ export const keoPagoda: Location = {
     "Don't confuse this with 'Chùa Keo Dưới' in Nam Định - after a catastrophic flood in 1611 split the original village, two separate pagodas were rebuilt using the same name; this one, in Thái Bình, is known locally as 'Keo Trên'",
   ],
   content: {
-    intro:
-      "Keo Pagoda (Chùa Keo), also known as Thần Quang Tự, is among the finest surviving examples of traditional Vietnamese wooden architecture, and one of the few major pagodas in northern Vietnam that has not been significantly rebuilt or restored. The name 'Keo' is believed to come from the ancient village where the original pagoda first stood, carried over by its community when they later relocated. Its history stretches back to 1061, when the monk Dương Không Lộ - later revered as a healer who cured a Lý dynasty king and honoured as a Quốc Sư (National Preceptor) - first founded a pagoda near the Red River in what is now Nam Định. A catastrophic flood in 1611 destroyed the original site and scattered the village; one group resettled and rebuilt on the river's lower course in Nam Định (still known today as 'Chùa Keo Dưới'), while another resettled upstream in what is now Duy Nhất commune, Thái Bình, and rebuilt the pagoda that stands today - the two are sometimes described as twin pagodas. That reconstruction was led by the mandarin Hoàng Nhân Dũng under the Lê Trung Hưng court, who spent 19 years raising funds and timber (1611-1630) before construction began in July 1630; completed in 1632 after 28 months of work by 42 guilds of craftsmen, the result is what's now informally called 'Chùa Keo Trên'. The complex follows the traditional 'nội công ngoại quốc' layout - an inner core of Buddha halls, incense hall, and ancestral shrine arranged along the vertical stroke pattern of the character công (工), enclosed by a surrounding ring of corridors and walls forming the shape of quốc (囗) - paired with a 'tiền Phật, hậu Thánh' arrangement: Buddha worship halls toward the front, the shrine to Dương Không Lộ toward the rear. Today it covers roughly 41,500 square metres across 16 structures and 116 rooms. The three-tiered wooden bell tower is a certified Vietnam Record holder for tallest wooden bell tower in the country: just over 11 metres tall and more than 70 square metres at its base, built using the traditional đấu củng bracket system and a chồng diêm (stacked-eave) roof structure, with four roof eaves fanning out from each of its three tiers - 12 in total, evoking the shape of a lotus flower - entirely without nails. It's a rare surviving example of that technique in Vietnam, even if it can't match the scale of comparable dougong-bracket structures in China, Japan, or Korea. The tower houses a stone chime and three bronze bells cast in the 17th and 18th centuries, each reportedly weighing close to two tons. Throughout the complex, 17th-century woodcarving of flowers, clouds, dragons, and phoenixes covers the beams, brackets, and roof finials. The pagoda is dedicated to Dương Không Lộ and remains an active place of pilgrimage; it was recognised as a national historic-cultural relic in 1962 and upgraded to Special National Relic status in September 2012, with its festival separately recognised as a national intangible cultural heritage in 2017.",
-    howToGetThere:
-      "Keo Pagoda is located in Vũ Thư district, approximately 10km from Thái Bình city. Thái Bình itself is around 110km southeast of Hanoi - about 2.5 hours by car via the Cầu Giẽ-Ninh Bình Expressway and Highway 10. From Thái Bình city, the pagoda is easily reached by motorbike taxi (xe ôm) or by renting a bicycle. There is no direct bus from Hanoi to the pagoda; the practical approach is to travel to Thái Bình city first (long-distance coach operators run this route) and arrange onward transport locally.",
-    whatToExpect:
-      "Keo Pagoda is a large, multi-courtyard complex set on flat delta land surrounded by water and rice fields, near the Red River dyke. The approach through a series of gates, a large pond, and inner courtyards is deliberately staged, following the traditional 'nội công ngoại quốc' layout from outer gate to Buddha hall to the shrine of Dương Không Lộ and finally the bell tower at the rear. Two long corridors, East and West, run from the Ông Hộ chapel back to the bell tower, their dozens of rooms historically used as rest areas for pilgrims and visitors. The bell tower itself is the visual anchor and the most photographed element. The interior worship halls contain significant lacquerwork, 17th- and 18th-century statuary (including figures of Quan Âm, Arhats, and Tuyết Sơn), and a nationally recognised treasure, the Keo Pagoda incense altar. An old stone-rimmed well on the grounds is fenced off and can only be viewed from outside. Unlike reconstructed heritage sites, Keo retains the patina and material authenticity of a building that has genuinely been in continuous use for centuries.",
-    travelTips:
-      "Keo Pagoda is undervisited by foreign travellers relative to its architectural and historical significance - it belongs in the same conversation as the Perfume Pagoda or Bút Tháp Pagoda but gets a fraction of the attention. The flat, rural Thái Bình landscape is very different from the karst scenery that dominates northern Vietnam tourism, but has its own low-key appeal. For anyone interested in Vietnamese religious architecture who wants to see something genuinely old without the tour group overlay, this is one of the best options in the north.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Keo Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Keo Pagoda (Chùa Keo), also known as Thần Quang Tự, is among the finest surviving examples of traditional Vietnamese wooden architecture, and one of the few major pagodas in northern Vietnam that has not been significantly rebuilt or restored. The name 'Keo' is believed to come from the ancient village where the original pagoda first stood, carried over by its community when they later relocated.",
+          },
+          { type: "heading", text: "History: From 1061 to the 1632 Rebuild" },
+          {
+            type: "paragraph",
+            text: "Its history stretches back to 1061, when the monk Dương Không Lộ - later revered as a healer who cured a Lý dynasty king and honoured as a Quốc Sư (National Preceptor) - first founded a pagoda near the Red River in what is now Nam Định. A catastrophic flood in 1611 destroyed the original site and scattered the village; one group resettled and rebuilt on the river's lower course in Nam Định (still known today as 'Chùa Keo Dưới'), while another resettled upstream in what is now Duy Nhất commune, Thái Bình, and rebuilt the pagoda that stands today - the two are sometimes described as twin pagodas. That reconstruction was led by the mandarin Hoàng Nhân Dũng under the Lê Trung Hưng court, who spent 19 years raising funds and timber (1611-1630) before construction began in July 1630; completed in 1632 after 28 months of work by 42 guilds of craftsmen, the result is what's now informally called 'Chùa Keo Trên'.",
+          },
+          { type: "heading", text: "Layout of the Complex" },
+          {
+            type: "paragraph",
+            text: "The complex follows the traditional 'nội công ngoại quốc' layout - an inner core of Buddha halls, incense hall, and ancestral shrine arranged along the vertical stroke pattern of the character công (工), enclosed by a surrounding ring of corridors and walls forming the shape of quốc (囗) - paired with a 'tiền Phật, hậu Thánh' arrangement: Buddha worship halls toward the front, the shrine to Dương Không Lộ toward the rear. Today it covers roughly 41,500 square metres across 16 structures and 116 rooms.",
+          },
+          { type: "heading", text: "The Wooden Bell Tower" },
+          {
+            type: "paragraph",
+            text: "The three-tiered wooden bell tower is a certified Vietnam Record holder for tallest wooden bell tower in the country: just over 11 metres tall and more than 70 square metres at its base, built using the traditional đấu củng bracket system and a chồng diêm (stacked-eave) roof structure, with four roof eaves fanning out from each of its three tiers - 12 in total, evoking the shape of a lotus flower - entirely without nails. It's a rare surviving example of that technique in Vietnam, even if it can't match the scale of comparable dougong-bracket structures in China, Japan, or Korea. The tower houses a stone chime and three bronze bells cast in the 17th and 18th centuries, each reportedly weighing close to two tons.",
+          },
+          { type: "heading", text: "Woodcarving and Heritage Status" },
+          {
+            type: "paragraph",
+            text: "Throughout the complex, 17th-century woodcarving of flowers, clouds, dragons, and phoenixes covers the beams, brackets, and roof finials. The pagoda is dedicated to Dương Không Lộ and remains an active place of pilgrimage; it was recognised as a national historic-cultural relic in 1962 and upgraded to Special National Relic status in September 2012, with its festival separately recognised as a national intangible cultural heritage in 2017.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Keo Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Keo Pagoda is located in Vũ Thư district, approximately 10km from Thái Bình city. Thái Bình itself is around 110km southeast of Hanoi - about 2.5 hours by car via the Cầu Giẽ-Ninh Bình Expressway and Highway 10.",
+          },
+          { type: "heading", text: "Local Transport from Thái Bình" },
+          {
+            type: "paragraph",
+            text: "From Thái Bình city, the pagoda is easily reached by motorbike taxi (xe ôm) or by renting a bicycle. There is no direct bus from Hanoi to the pagoda; the practical approach is to travel to Thái Bình city first (long-distance coach operators run this route) and arrange onward transport locally.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Keo Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Keo Pagoda is a large, multi-courtyard complex set on flat delta land surrounded by water and rice fields, near the Red River dyke. The approach through a series of gates, a large pond, and inner courtyards is deliberately staged, following the traditional 'nội công ngoại quốc' layout from outer gate to Buddha hall to the shrine of Dương Không Lộ and finally the bell tower at the rear.",
+          },
+          { type: "heading", text: "Corridors and the Bell Tower" },
+          {
+            type: "paragraph",
+            text: "Two long corridors, East and West, run from the Ông Hộ chapel back to the bell tower, their dozens of rooms historically used as rest areas for pilgrims and visitors. The bell tower itself is the visual anchor and the most photographed element.",
+          },
+          { type: "heading", text: "Worship Halls and Grounds" },
+          {
+            type: "paragraph",
+            text: "The interior worship halls contain significant lacquerwork, 17th- and 18th-century statuary (including figures of Quan Âm, Arhats, and Tuyết Sơn), and a nationally recognised treasure, the Keo Pagoda incense altar. An old stone-rimmed well on the grounds is fenced off and can only be viewed from outside. Unlike reconstructed heritage sites, Keo retains the patina and material authenticity of a building that has genuinely been in continuous use for centuries.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Keo Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Keo Pagoda is undervisited by foreign travellers relative to its architectural and historical significance - it belongs in the same conversation as the Perfume Pagoda or Bút Tháp Pagoda but gets a fraction of the attention. The flat, rural Thái Bình landscape is very different from the karst scenery that dominates northern Vietnam tourism, but has its own low-key appeal. For anyone interested in Vietnamese religious architecture who wants to see something genuinely old without the tour group overlay, this is one of the best options in the north.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

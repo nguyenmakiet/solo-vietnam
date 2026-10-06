@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const ongCopBridge: Location = {
   slug: "ong-cop-bridge",
   name: "Cầu Ông Cọp",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["phu-yen"],
   destination: "",
   lat: 13.365233794366752,
@@ -52,14 +52,94 @@ export const ongCopBridge: Location = {
     "The bridge is a shortcut on the route to Gành Đá Đĩa and saves a detour of roughly 10km compared to going the long way via the main road",
   ],
   content: {
-    intro:
-      "Cầu Ông Cọp - also known as Cầu Miếu Ông Cọp or Cầu Bình Thạnh - is a roughly 700-800 meter wooden bridge crossing the Bình Bá river (also called the Phú Ngân river) in Tuy An district, connecting villages in An Ninh Tây commune with Xuân Đài ward in neighbouring Sông Cầu town. It's built almost entirely from phi lao and eucalyptus timber planks, with bamboo railings, no concrete, no steel, and no engineering firm involved. Perhaps surprisingly, it wasn't a grassroots community project: it was privately funded and built in 1998 for over 1 billion VND by Nguyễn Phước Thọ, an individual from Nha Trang, and opened for use in 1999. Local families later took over its ongoing management, toll collection, and reconstruction, with some now also contributing capital themselves. Every flood season, parts of the bridge get swept away or damaged, and in 2025 it was reportedly washed away entirely by flooding before being rebuilt - a dramatic but telling example of the bridge's whole design philosophy: wood and bamboo are relatively quick and cheap to rebuild compared to a concrete structure, which is precisely why this cycle of damage-and-reconstruction has continued for decades rather than pushing the community toward a permanent replacement. A concrete replacement was in fact proposed by Phú Yên's transport department around 2016, targeted for completion by 2018-2020, but as of the last confirmed update the project remained unbuilt due to funding shortfalls - so the wooden bridge experience may not be permanent, but it has also proven more durable in practice than its fragile appearance suggests. The bridge became known beyond Phú Yên after appearing as a filming location in the 2015 film 'Tôi Thấy Hoa Vàng Trên Cỏ Xanh' (Yellow Flowers on the Green Grass) - a critically acclaimed Vietnamese coming-of-age film that put Phú Yên on the domestic tourism map. The bridge's name comes from a nearby shrine, tied to a fuller local legend: a renowned local midwife was once visited late one night by a tiger, terrifying the household - but the tiger's actual purpose was to lead her up the mountain to help deliver its own cub. After a successful delivery, the tiger carried her home and later repaid her kindness with a wild boar. When the midwife eventually died, the tiger is said to have continued visiting her grave out of remembrance; when the tiger itself later died, villagers built a small shrine - Miếu Ông Cọp - in tribute to its loyalty and good character. The bridge, built near this shrine, inherited its name.",
-    howToGetThere:
-      "Cầu Ông Cọp is about 35km north of Tuy Hòa, in An Ninh Tây commune, Tuy An district, just a few hundred metres off National Highway 1. From Tuy Hòa, take Highway 1 north for around 30km, then turn off toward the bridge - it's a few kilometers from the turnoff. The ride takes around 50 minutes by motorbike. The bridge also serves as a shortcut on the route to Gành Đá Đĩa: cross it heading north and continue to the rock formation rather than backtracking to the highway. Grab drivers from Tuy Hòa may not know the exact location - show them 'Cầu Gỗ Ông Cọp, An Ninh Tây, Tuy An' in Vietnamese. There is free parking on both sides of the bridge.",
-    whatToExpect:
-      "The bridge is a working piece of infrastructure, not a tourist installation - motorbikes and locals on foot use it throughout the day as a genuine transport route. It flexes and shakes under weight, the planks are uneven, and gaps between boards are wide enough to catch a wheel. The river below is shallow on the Tuy An side and widens toward the estuary. The surrounding scenery - flat rice fields, low hills, open sky - is quietly beautiful rather than dramatic. There are no cafes, shops, or facilities at the bridge itself. The toll booth at the southern entrance is a small wooden hut where a local family member usually sits. The crossing takes around 10 minutes on foot.",
-    travelTips:
-      "Cầu Ông Cọp fits naturally into a north Phú Yên day loop from Tuy Hòa: head up Highway 1, cross the bridge, continue to Gành Đá Đĩa further north, then loop back via Nhà Thờ Mằng Lăng on the return. The bridge is most worth visiting for the experience of crossing it and for the surrounding river scenery - if photography is the main goal, timing around golden hour makes a significant difference to the results.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cầu Ông Cọp Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cầu Ông Cọp - also known as Cầu Miếu Ông Cọp or Cầu Bình Thạnh - is a roughly 700-800 meter wooden bridge crossing the Bình Bá river (also called the Phú Ngân river) in Tuy An district, connecting villages in An Ninh Tây commune with Xuân Đài ward in neighbouring Sông Cầu town. It's built almost entirely from phi lao and eucalyptus timber planks, with bamboo railings, no concrete, no steel, and no engineering firm involved.",
+          },
+          { type: "heading", text: "Who Built the Bridge" },
+          {
+            type: "paragraph",
+            text: "Perhaps surprisingly, it wasn't a grassroots community project: it was privately funded and built in 1998 for over 1 billion VND by Nguyễn Phước Thọ, an individual from Nha Trang, and opened for use in 1999. Local families later took over its ongoing management, toll collection, and reconstruction, with some now also contributing capital themselves.",
+          },
+          { type: "heading", text: "Floods and Rebuilding" },
+          {
+            type: "paragraph",
+            text: "Every flood season, parts of the bridge get swept away or damaged, and in 2025 it was reportedly washed away entirely by flooding before being rebuilt - a dramatic but telling example of the bridge's whole design philosophy: wood and bamboo are relatively quick and cheap to rebuild compared to a concrete structure, which is precisely why this cycle of damage-and-reconstruction has continued for decades rather than pushing the community toward a permanent replacement. A concrete replacement was in fact proposed by Phú Yên's transport department around 2016, targeted for completion by 2018-2020, but as of the last confirmed update the project remained unbuilt due to funding shortfalls - so the wooden bridge experience may not be permanent, but it has also proven more durable in practice than its fragile appearance suggests.",
+          },
+          { type: "heading", text: "Film Location: Yellow Flowers on the Green Grass" },
+          {
+            type: "paragraph",
+            text: "The bridge became known beyond Phú Yên after appearing as a filming location in the 2015 film 'Tôi Thấy Hoa Vàng Trên Cỏ Xanh' (Yellow Flowers on the Green Grass) - a critically acclaimed Vietnamese coming-of-age film that put Phú Yên on the domestic tourism map.",
+          },
+          { type: "heading", text: "The Legend Behind the Name" },
+          {
+            type: "paragraph",
+            text: "The bridge's name comes from a nearby shrine, tied to a fuller local legend: a renowned local midwife was once visited late one night by a tiger, terrifying the household - but the tiger's actual purpose was to lead her up the mountain to help deliver its own cub. After a successful delivery, the tiger carried her home and later repaid her kindness with a wild boar. When the midwife eventually died, the tiger is said to have continued visiting her grave out of remembrance; when the tiger itself later died, villagers built a small shrine - Miếu Ông Cọp - in tribute to its loyalty and good character. The bridge, built near this shrine, inherited its name.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cầu Ông Cọp",
+        blocks: [
+          { type: "heading", text: "From Tuy Hòa" },
+          {
+            type: "paragraph",
+            text: "Cầu Ông Cọp is about 35km north of Tuy Hòa, in An Ninh Tây commune, Tuy An district, just a few hundred metres off National Highway 1. From Tuy Hòa, take Highway 1 north for around 30km, then turn off toward the bridge - it's a few kilometers from the turnoff. The ride takes around 50 minutes by motorbike.",
+          },
+          { type: "heading", text: "Shortcut to Gành Đá Đĩa" },
+          {
+            type: "paragraph",
+            text: "The bridge also serves as a shortcut on the route to Gành Đá Đĩa: cross it heading north and continue to the rock formation rather than backtracking to the highway.",
+          },
+          { type: "heading", text: "Grab and Parking" },
+          {
+            type: "paragraph",
+            text: "Grab drivers from Tuy Hòa may not know the exact location - show them 'Cầu Gỗ Ông Cọp, An Ninh Tây, Tuy An' in Vietnamese. There is free parking on both sides of the bridge.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cầu Ông Cọp",
+        blocks: [
+          { type: "heading", text: "Crossing the Bridge" },
+          {
+            type: "paragraph",
+            text: "The bridge is a working piece of infrastructure, not a tourist installation - motorbikes and locals on foot use it throughout the day as a genuine transport route. It flexes and shakes under weight, the planks are uneven, and gaps between boards are wide enough to catch a wheel.",
+          },
+          { type: "heading", text: "River and Scenery" },
+          {
+            type: "paragraph",
+            text: "The river below is shallow on the Tuy An side and widens toward the estuary. The surrounding scenery - flat rice fields, low hills, open sky - is quietly beautiful rather than dramatic.",
+          },
+          { type: "heading", text: "Facilities and Toll" },
+          {
+            type: "paragraph",
+            text: "There are no cafes, shops, or facilities at the bridge itself. The toll booth at the southern entrance is a small wooden hut where a local family member usually sits. The crossing takes around 10 minutes on foot.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cầu Ông Cọp",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cầu Ông Cọp fits naturally into a north Phú Yên day loop from Tuy Hòa: head up Highway 1, cross the bridge, continue to Gành Đá Đĩa further north, then loop back via Nhà Thờ Mằng Lăng on the return. The bridge is most worth visiting for the experience of crossing it and for the surrounding river scenery - if photography is the main goal, timing around golden hour makes a significant difference to the results.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

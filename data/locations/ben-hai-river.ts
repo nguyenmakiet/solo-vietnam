@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const benHaiRiver: Location = {
   slug: "ben-hai-river",
   name: "Bến Hải River & Hiền Lương Bridge",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-tri"],
   destination: "",
   lat: 17.005352993989394,
@@ -46,14 +46,102 @@ export const benHaiRiver: Location = {
     "As with any war memorial site, keep the area clean, don't write or carve on the structures, and dress reasonably respectfully",
   ],
   content: {
-    intro:
-      "The Bến Hải River rises at Động Chân mountain in the Trường Sơn range and flows roughly 100km west to east along the 17th parallel before reaching the sea at Cửa Tùng, forming the boundary between Vĩnh Linh and Gio Linh districts - as narrow as 20-30m in places, no more than 200m at its widest. Local residents built the first crossing here in 1928, a modest 2-metre-wide wooden bridge for everyday local use; French colonial authorities replaced it with a 178-metre reinforced concrete bridge in 1950-1952. It was this bridge that, under the Geneva Accords of 1954, became the temporary demarcation line between North and South Vietnam - a partition intended to last two years until national reunification elections that never happened, but which held for 21 years instead. The bridge became the physical symbol of that division: the north half painted blue, the south half painted yellow, split by a 1cm-wide white line at the centre - though the exact colours shifted back and forth for years as each side repainted its half in response to the other, a strange 'colour war' running alongside a parallel 'flag war,' in which the North's flagpole was rebuilt ever taller (reaching 38.6 metres by 1962) to outdo the South's, and a 'speaker war' of giant propaganda loudspeakers broadcast across the water not unlike the broadcast rivalry across the Korean DMZ decades later. In one sense, it's arguably Vietnam's longest bridge: barely 200 metres long, but it took more than two decades for anyone to cross it freely. American bombing destroyed the bridge entirely in 1967; it was rebuilt to its original 1952 design in 2001-2008, at a slightly longer 183.65 metres, and repainted in its historically accurate blue-and-yellow scheme in 2014. Families separated overnight and did not reunite for over two decades. Today the roughly 22-hectare memorial complex - recognised as a Special National Relic in 2013 - includes the reconstructed bridge (alongside a modern, separate 230-metre road bridge that now carries actual traffic), the restored northern flagpole, the reconstructed Hiền Lương border police post, the Nhà Liên Hợp ('Joint House,' a four-roofed stilt building once used for cross-border negotiations), a watchtower and loudspeaker system, the 'Aspiration for Reunification' statue on the south bank (a young mother and child carved from bluestone, gazing north), and exhibition halls on both banks covering the 17th Parallel and the reunification story. It is one of the most historically resonant points on the entire Vietnam War trail, and one of the least commercialised historical sites on the DMZ trail.",
-    howToGetThere:
-      "The Bến Hải River crossing sits on National Highway 1A. From Đông Hà, it's about 30km (40-45 minutes) north via QL1A through Hồ Xá town, following signs to the relic site. From Huế, it's roughly 100km (2.5-3 hours) via QL1A through Đông Hà and on to Vĩnh Linh. From Đồng Hới, it's about 90km (around 2 hours) via QL1A south through Vĩnh Linh. QL1A carries heavy traffic along this stretch, so drive carefully, stay in your lane, and follow the posted signs regardless of which direction you're coming from. Đông Hà is the most practical base for DMZ exploration - it has good guesthouse options and is the hub from which most DMZ tour operators run day trips. The bridge is also accessible by local bus running between Đông Hà and Đồng Hới along Highway 1A.",
-    whatToExpect:
-      "The complex runs along a north-south axis with the bridge at its centre, and a logical visit covers both banks in 1.5-2.5 hours. On the north bank (Vĩnh Linh district): the flagpole (with the Vietnamese flag flying, on the site of the original 38.6-metre 1962 structure), the reconstructed border police post, the Nhà Liên Hợp - a four-roofed stilt house once used for cross-border talks - a watchtower and the loudspeaker system, and an exhibition hall covering the 17th Parallel and wartime life. On the south bank (Gio Linh district): the 'Aspiration for Reunification' statue - a bluestone carving of a mother and child - and a second exhibition hall focused on the reunification story. The bridge itself, at 183.65 metres with its blue-and-yellow paint scheme meeting at a white centre line, is the most photographed spot in the complex and is walkable in only a few minutes - the historical weight comes from understanding what you're standing on, not from the physical scale of the site. The surrounding landscape is flat, agricultural, and often windy - check the forecast, since strong winds off the river can affect the visit.",
-    travelTips:
-      "The Bến Hải River hits differently depending on how much history you bring to it. Visitors who arrive knowing the Geneva Accords, the flag pole wars, and the personal stories of separation tend to find the site profoundly moving. Visitors who arrive cold often find it underwhelming - a small bridge over a small river. The right preparation is a half-hour of reading beforehand. The DMZ as a whole is one of the most historically dense corridors in Vietnam, and Bến Hải is widely regarded as one of its most emotionally resonant sites. It belongs on any serious itinerary through central Vietnam.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bến Hải River & Hiền Lương Bridge Special",
+        blocks: [
+          { type: "heading", text: "The River and the 17th Parallel" },
+          {
+            type: "paragraph",
+            text: "The Bến Hải River rises at Động Chân mountain in the Trường Sơn range and flows roughly 100km west to east along the 17th parallel before reaching the sea at Cửa Tùng, forming the boundary between Vĩnh Linh and Gio Linh districts - as narrow as 20-30m in places, no more than 200m at its widest.",
+          },
+          { type: "heading", text: "From Wooden Crossing to Demarcation Line" },
+          {
+            type: "paragraph",
+            text: "Local residents built the first crossing here in 1928, a modest 2-metre-wide wooden bridge for everyday local use; French colonial authorities replaced it with a 178-metre reinforced concrete bridge in 1950-1952. It was this bridge that, under the Geneva Accords of 1954, became the temporary demarcation line between North and South Vietnam - a partition intended to last two years until national reunification elections that never happened, but which held for 21 years instead.",
+          },
+          { type: "heading", text: "The Colour, Flag and Speaker Wars" },
+          {
+            type: "paragraph",
+            text: "The bridge became the physical symbol of that division: the north half painted blue, the south half painted yellow, split by a 1cm-wide white line at the centre - though the exact colours shifted back and forth for years as each side repainted its half in response to the other, a strange 'colour war' running alongside a parallel 'flag war,' in which the North's flagpole was rebuilt ever taller (reaching 38.6 metres by 1962) to outdo the South's, and a 'speaker war' of giant propaganda loudspeakers broadcast across the water not unlike the broadcast rivalry across the Korean DMZ decades later. In one sense, it's arguably Vietnam's longest bridge: barely 200 metres long, but it took more than two decades for anyone to cross it freely.",
+          },
+          { type: "heading", text: "Destruction and Reconstruction" },
+          {
+            type: "paragraph",
+            text: "American bombing destroyed the bridge entirely in 1967; it was rebuilt to its original 1952 design in 2001-2008, at a slightly longer 183.65 metres, and repainted in its historically accurate blue-and-yellow scheme in 2014. Families separated overnight and did not reunite for over two decades.",
+          },
+          { type: "heading", text: "The Memorial Complex Today" },
+          {
+            type: "paragraph",
+            text: "Today the roughly 22-hectare memorial complex - recognised as a Special National Relic in 2013 - includes the reconstructed bridge (alongside a modern, separate 230-metre road bridge that now carries actual traffic), the restored northern flagpole, the reconstructed Hiền Lương border police post, the Nhà Liên Hợp ('Joint House,' a four-roofed stilt building once used for cross-border negotiations), a watchtower and loudspeaker system, the 'Aspiration for Reunification' statue on the south bank (a young mother and child carved from bluestone, gazing north), and exhibition halls on both banks covering the 17th Parallel and the reunification story. It is one of the most historically resonant points on the entire Vietnam War trail, and one of the least commercialised historical sites on the DMZ trail.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bến Hải River & Hiền Lương Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Bến Hải River crossing sits on National Highway 1A.",
+          },
+          { type: "heading", text: "Driving Distances" },
+          {
+            type: "paragraph",
+            text: "From Đông Hà, it's about 30km (40-45 minutes) north via QL1A through Hồ Xá town, following signs to the relic site. From Huế, it's roughly 100km (2.5-3 hours) via QL1A through Đông Hà and on to Vĩnh Linh. From Đồng Hới, it's about 90km (around 2 hours) via QL1A south through Vĩnh Linh. QL1A carries heavy traffic along this stretch, so drive carefully, stay in your lane, and follow the posted signs regardless of which direction you're coming from.",
+          },
+          { type: "heading", text: "Base and Public Transport" },
+          {
+            type: "paragraph",
+            text: "Đông Hà is the most practical base for DMZ exploration - it has good guesthouse options and is the hub from which most DMZ tour operators run day trips. The bridge is also accessible by local bus running between Đông Hà and Đồng Hới along Highway 1A.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bến Hải River & Hiền Lương Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The complex runs along a north-south axis with the bridge at its centre, and a logical visit covers both banks in 1.5-2.5 hours.",
+          },
+          { type: "heading", text: "North Bank" },
+          {
+            type: "paragraph",
+            text: "On the north bank (Vĩnh Linh district): the flagpole (with the Vietnamese flag flying, on the site of the original 38.6-metre 1962 structure), the reconstructed border police post, the Nhà Liên Hợp - a four-roofed stilt house once used for cross-border talks - a watchtower and the loudspeaker system, and an exhibition hall covering the 17th Parallel and wartime life.",
+          },
+          { type: "heading", text: "South Bank" },
+          {
+            type: "paragraph",
+            text: "On the south bank (Gio Linh district): the 'Aspiration for Reunification' statue - a bluestone carving of a mother and child - and a second exhibition hall focused on the reunification story.",
+          },
+          { type: "heading", text: "The Bridge and the Weather" },
+          {
+            type: "paragraph",
+            text: "The bridge itself, at 183.65 metres with its blue-and-yellow paint scheme meeting at a white centre line, is the most photographed spot in the complex and is walkable in only a few minutes - the historical weight comes from understanding what you're standing on, not from the physical scale of the site. The surrounding landscape is flat, agricultural, and often windy - check the forecast, since strong winds off the river can affect the visit.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bến Hải River & Hiền Lương Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Bến Hải River hits differently depending on how much history you bring to it. Visitors who arrive knowing the Geneva Accords, the flag pole wars, and the personal stories of separation tend to find the site profoundly moving. Visitors who arrive cold often find it underwhelming - a small bridge over a small river. The right preparation is a half-hour of reading beforehand.",
+          },
+          {
+            type: "paragraph",
+            text: "The DMZ as a whole is one of the most historically dense corridors in Vietnam, and Bến Hải is widely regarded as one of its most emotionally resonant sites. It belongs on any serious itinerary through central Vietnam.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
