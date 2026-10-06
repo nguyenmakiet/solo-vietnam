@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const fansipan: Location = {
   slug: "fansipan",
   name: "Fansipan",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.303457926709047,
@@ -47,14 +47,90 @@ export const fansipan: Location = {
     "Du Soleil Café and Vân Sơn Trà Quán near the summit are popular spots for tea and coffee while cloud-watching. Factor in time if this appeals.",
   ],
   content: {
-    intro:
-      "At 3,143 metres, Fansipan is the highest point in Vietnam and Indochina, rising from the Hoàng Liên Sơn range inside Hoàng Liên National Park, 9km southwest of Sapa. It is the highest peak across the entire Indochinese Peninsula - Vietnam, Laos, and Cambodia - which is why it carries the title 'Roof of Indochina'. The origin of the name is debated: one widely cited theory links it to 'Hủa Xi Pan' (滑石板) in Mandarin, meaning 'the giant leaning rock'; another suggests it comes from the H'Mông language, meaning 'mountain of rhododendrons'. Both names fit - the summit is dramatic in its exposed rock faces and the slopes are famous for their rhododendron blooms in spring. The mountain sits within Hoàng Liên National Park, one of Vietnam's most biodiverse protected areas: over 2,000 plant species, 60+ rhododendron species, and wildlife including black-crested gibbons and Asiatic black bears in the cloud forest below the summit. Before 2016, reaching the top required a demanding 2-3 day trek through this forest - only a small number of trekkers reached the peak each year. The opening of the world-record cable car (6,292.5m, Guinness record for longest 3-rope gondola) transformed Fansipan into one of Vietnam's most accessible high-mountain destinations. The summit complex blends natural and spiritual dimensions - a 12-building Buddhist complex from 2,900m to the top, pagodas and gardens on the descent, and the summit marker at 3,143m.",
-    howToGetThere:
-      "Cable car route: From Sapa center, head to Sun Plaza (roughly 10-15 minutes by taxi or xe ôm). Take the Mường Hoa mountain train (6-7 min, 180,000 VND return) to Hoàng Liên cable car station. The cable car takes 15 minutes to Fansipan station. From there, take the summit train (150,000 VND up, 120,000 VND down) or walk 600 steps to the true summit. Buy tickets in advance on Klook to skip the counter queue. Total journey from Sapa center to summit: 1.5-3 hours depending on waiting times and pace. Trekking route: Most commonly starts from Trạm Tôn Pass on Highway 4D (about 15km from Sapa by motorbike). Licensed guide required - arrange through Sapa travel agencies. Standard format is 2 nights 3 days with overnight camps at 2,200m and 2,800m.",
-    whatToExpect:
-      "Cable car: Aerial views over terraced fields, primary forest, and (on clear days or in cloud season) a sea of white below the cabin. At Fansipan station (2,800m), the summit train or 600 steps leads to the true summit at 3,143m. The summit area has the altitude marker, photo platforms, and views across the Hoàng Liên Sơn range. The descent via steps passes through the spiritual complex - pagodas, Buddhist statues, gardens - significantly more scenic than taking the train back down. Trekking: mossy cloud forest at lower elevations transitions to bamboo groves, then rhododendron thickets, then exposed subalpine scrub near the summit. Overnight camps in forest clearings. Far fewer people than the cable car route - often entirely alone above 2,500m.",
-    travelTips:
-      "The cable car is efficient but can feel like a theme park on busy days - weekend queues, crowds at the summit, a commercial complex. If you have 3 days and reasonable fitness, the trek delivers a completely different experience: genuine wilderness, physical challenge, and a summit arrival that feels earned. For the cable car, weekday mornings are significantly better than weekends. Buy on Klook in advance. Take the summit train up and walk down for the best value and scenery combination. For photography, arrive on the first cable car of the day in October-December when cloud inversions are at their most dramatic.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Fansipan Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "At 3,143 metres, Fansipan is the highest point in Vietnam and Indochina, rising from the Hoàng Liên Sơn range inside Hoàng Liên National Park, 9km southwest of Sapa. It is the highest peak across the entire Indochinese Peninsula - Vietnam, Laos, and Cambodia - which is why it carries the title 'Roof of Indochina'.",
+          },
+          { type: "heading", text: "Origin of the Name" },
+          {
+            type: "paragraph",
+            text: "The origin of the name is debated: one widely cited theory links it to 'Hủa Xi Pan' (滑石板) in Mandarin, meaning 'the giant leaning rock'; another suggests it comes from the H'Mông language, meaning 'mountain of rhododendrons'. Both names fit - the summit is dramatic in its exposed rock faces and the slopes are famous for their rhododendron blooms in spring.",
+          },
+          { type: "heading", text: "Hoàng Liên National Park" },
+          {
+            type: "paragraph",
+            text: "The mountain sits within Hoàng Liên National Park, one of Vietnam's most biodiverse protected areas: over 2,000 plant species, 60+ rhododendron species, and wildlife including black-crested gibbons and Asiatic black bears in the cloud forest below the summit.",
+          },
+          { type: "heading", text: "From Trek to Cable Car" },
+          {
+            type: "paragraph",
+            text: "Before 2016, reaching the top required a demanding 2-3 day trek through this forest - only a small number of trekkers reached the peak each year. The opening of the world-record cable car (6,292.5m, Guinness record for longest 3-rope gondola) transformed Fansipan into one of Vietnam's most accessible high-mountain destinations.",
+          },
+          { type: "heading", text: "The Summit Complex" },
+          {
+            type: "paragraph",
+            text: "The summit complex blends natural and spiritual dimensions - a 12-building Buddhist complex from 2,900m to the top, pagodas and gardens on the descent, and the summit marker at 3,143m.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Fansipan",
+        blocks: [
+          { type: "heading", text: "By Cable Car" },
+          {
+            type: "paragraph",
+            text: "Cable car route: From Sapa center, head to Sun Plaza (roughly 10-15 minutes by taxi or xe ôm). Take the Mường Hoa mountain train (6-7 min, 180,000 VND return) to Hoàng Liên cable car station. The cable car takes 15 minutes to Fansipan station. From there, take the summit train (150,000 VND up, 120,000 VND down) or walk 600 steps to the true summit. Buy tickets in advance on Klook to skip the counter queue. Total journey from Sapa center to summit: 1.5-3 hours depending on waiting times and pace.",
+          },
+          { type: "heading", text: "Trekking" },
+          {
+            type: "paragraph",
+            text: "Trekking route: Most commonly starts from Trạm Tôn Pass on Highway 4D (about 15km from Sapa by motorbike). Licensed guide required - arrange through Sapa travel agencies. Standard format is 2 nights 3 days with overnight camps at 2,200m and 2,800m.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Fansipan",
+        blocks: [
+          { type: "heading", text: "By Cable Car" },
+          {
+            type: "paragraph",
+            text: "Cable car: Aerial views over terraced fields, primary forest, and (on clear days or in cloud season) a sea of white below the cabin. At Fansipan station (2,800m), the summit train or 600 steps leads to the true summit at 3,143m. The summit area has the altitude marker, photo platforms, and views across the Hoàng Liên Sơn range. The descent via steps passes through the spiritual complex - pagodas, Buddhist statues, gardens - significantly more scenic than taking the train back down.",
+          },
+          { type: "heading", text: "Trekking" },
+          {
+            type: "paragraph",
+            text: "Trekking: mossy cloud forest at lower elevations transitions to bamboo groves, then rhododendron thickets, then exposed subalpine scrub near the summit. Overnight camps in forest clearings. Far fewer people than the cable car route - often entirely alone above 2,500m.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Fansipan",
+        blocks: [
+          { type: "heading", text: "Cable Car or Trek" },
+          {
+            type: "paragraph",
+            text: "The cable car is efficient but can feel like a theme park on busy days - weekend queues, crowds at the summit, a commercial complex. If you have 3 days and reasonable fitness, the trek delivers a completely different experience: genuine wilderness, physical challenge, and a summit arrival that feels earned.",
+          },
+          { type: "heading", text: "Cable Car Tips" },
+          {
+            type: "paragraph",
+            text: "For the cable car, weekday mornings are significantly better than weekends. Buy on Klook in advance. Take the summit train up and walk down for the best value and scenery combination. For photography, arrive on the first cable car of the day in October-December when cloud inversions are at their most dramatic.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

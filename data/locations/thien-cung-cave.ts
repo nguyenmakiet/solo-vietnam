@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thienCungCave: Location = {
   slug: "thien-cung-cave",
   name: "Thien Cung Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.912819278073986,
@@ -51,14 +51,76 @@ export const thienCungCave: Location = {
     "If your tour only stops at one cave, ask in advance which one (Thien Cung, Đầu Gỗ, or Sửng Sốt) so you know what to expect",
   ],
   content: {
-    intro:
-      "Thien Cung - literally 'Heavenly Palace' - is one of Ha Long Bay's well-known caves, located on Dau Go Island about 4 kilometres from Tuan Chau Harbor, right next to Đầu Gỗ Cave (the two are connected by a short path over the island and usually visited together). Officially discovered and opened to visitors in 1998, Thien Cung is smaller in scale than Sửng Sốt or Đầu Gỗ, but earned its 'Heavenly Palace' name from the density of its stalactite formations, which local guides interpret as royal court scenes, dragons, phoenixes, and fairies. Thien Cung is a large cave divided into three main chambers, with the central spaces densely packed with stalactite formations; the cave's interior extends for roughly 120-130 metres, with ceilings rising more than 20 metres, and a total area of nearly 10,000 square metres. According to legend, the Dragon King held a seven-day wedding celebration inside the cave with a mortal girl named Mây - and the rock formations on the walls and ceiling are said to be images of that mythical feast frozen in stone. Thien Cung is also known locally as the most elaborately lit cave in the core Ha Long cluster, with layered blue, red, purple, and yellow lighting (including some colour-changing LED sections) that sets it apart from the warmer, more natural lighting used in Sửng Sốt and Đầu Gỗ - a look some visitors love and others find overdone.",
-    howToGetThere:
-      "Thien Cung Cave is only accessible by boat. It's included on Ha Long Bay Sightseeing Route 1, departing from Tuan Chau International Port (about 11km from Ha Long City center) or Ha Long International Passenger Port. Independent visitors buy the general bay sightseeing ticket (around 250,000 VND, covering both Đầu Gỗ and Thien Cung) plus a boat/tender fare at the port; most day cruise and overnight cruise packages already include this. Dau Go Island has two separate entrances - the Đầu Gỗ cave entrance on the south side, and the Thien Cung entrance on the north side - so depending on your tour, you may enter one cave first and walk through to the other via a short path over the top of the island, with a brief view down to the bay along the way.",
-    whatToExpect:
-      "From the boat dock, a path runs along steep cliff edges covered with vegetation before reaching the cave entrance at about 25 metres above sea level. The entrance is a narrow gap in the rock that opens into the first of three main chambers, with a domed ceiling over 20 metres high, densely draped in stalactites shaped, according to local guides, like dragons, phoenixes, and figures from folklore. The second chamber is generally considered the largest and most striking, with brighter, more naturally-coloured stalactite formations and a tall limestone column near its centre, lit directly - one of the better photo spots. The third chamber holds small, clear pools of water said in legend to be where the Dragon King's wife bathed her children, along with a quieter feel and less foot traffic than the earlier chambers. Unlike Sung Sot Cave, Thien Cung has no separate exit viewpoint - visitors return via the same entrance path, or continue on to Đầu Gỗ Cave via the connecting path over the island if that's part of the tour.",
-    travelTips:
-      "Thien Cung Cave's proximity to the harbor (4km) and pairing with Đầu Gỗ Cave makes it one of the first stops on most day cruise itineraries, which also means it receives heavy foot traffic around midday. The cave is best experienced in the 8-10 AM or 3-4:30 PM windows, avoiding the 11 AM-1 PM peak when day tours converge and the one-way walkway can back up. Avoid the July-September typhoon window when boats may be cancelled on short notice - choosing a cruise operator with a clear storm refund policy is worth doing if you're booking during this period. For a less crowded Ha Long Bay cave experience, overnight cruises that include Sung Sot Cave or Thien Canh Son Cave cover less-visited areas of the bay.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Thien Cung Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thien Cung - literally 'Heavenly Palace' - is one of Ha Long Bay's well-known caves, located on Dau Go Island about 4 kilometres from Tuan Chau Harbor, right next to Đầu Gỗ Cave (the two are connected by a short path over the island and usually visited together). Officially discovered and opened to visitors in 1998, Thien Cung is smaller in scale than Sửng Sốt or Đầu Gỗ, but earned its 'Heavenly Palace' name from the density of its stalactite formations, which local guides interpret as royal court scenes, dragons, phoenixes, and fairies.",
+          },
+          { type: "heading", text: "Chambers and the Dragon King Legend" },
+          {
+            type: "paragraph",
+            text: "Thien Cung is a large cave divided into three main chambers, with the central spaces densely packed with stalactite formations; the cave's interior extends for roughly 120-130 metres, with ceilings rising more than 20 metres, and a total area of nearly 10,000 square metres. According to legend, the Dragon King held a seven-day wedding celebration inside the cave with a mortal girl named Mây - and the rock formations on the walls and ceiling are said to be images of that mythical feast frozen in stone.",
+          },
+          { type: "heading", text: "Lighting" },
+          {
+            type: "paragraph",
+            text: "Thien Cung is also known locally as the most elaborately lit cave in the core Ha Long cluster, with layered blue, red, purple, and yellow lighting (including some colour-changing LED sections) that sets it apart from the warmer, more natural lighting used in Sửng Sốt and Đầu Gỗ - a look some visitors love and others find overdone.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Thien Cung Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thien Cung Cave is only accessible by boat. It's included on Ha Long Bay Sightseeing Route 1, departing from Tuan Chau International Port (about 11km from Ha Long City center) or Ha Long International Passenger Port.",
+          },
+          { type: "heading", text: "Tickets and Entrances" },
+          {
+            type: "paragraph",
+            text: "Independent visitors buy the general bay sightseeing ticket (around 250,000 VND, covering both Đầu Gỗ and Thien Cung) plus a boat/tender fare at the port; most day cruise and overnight cruise packages already include this. Dau Go Island has two separate entrances - the Đầu Gỗ cave entrance on the south side, and the Thien Cung entrance on the north side - so depending on your tour, you may enter one cave first and walk through to the other via a short path over the top of the island, with a brief view down to the bay along the way.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Thien Cung Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From the boat dock, a path runs along steep cliff edges covered with vegetation before reaching the cave entrance at about 25 metres above sea level. The entrance is a narrow gap in the rock that opens into the first of three main chambers, with a domed ceiling over 20 metres high, densely draped in stalactites shaped, according to local guides, like dragons, phoenixes, and figures from folklore.",
+          },
+          { type: "heading", text: "The Second and Third Chambers" },
+          {
+            type: "paragraph",
+            text: "The second chamber is generally considered the largest and most striking, with brighter, more naturally-coloured stalactite formations and a tall limestone column near its centre, lit directly - one of the better photo spots. The third chamber holds small, clear pools of water said in legend to be where the Dragon King's wife bathed her children, along with a quieter feel and less foot traffic than the earlier chambers. Unlike Sung Sot Cave, Thien Cung has no separate exit viewpoint - visitors return via the same entrance path, or continue on to Đầu Gỗ Cave via the connecting path over the island if that's part of the tour.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Thien Cung Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thien Cung Cave's proximity to the harbor (4km) and pairing with Đầu Gỗ Cave makes it one of the first stops on most day cruise itineraries, which also means it receives heavy foot traffic around midday. The cave is best experienced in the 8-10 AM or 3-4:30 PM windows, avoiding the 11 AM-1 PM peak when day tours converge and the one-way walkway can back up.",
+          },
+          {
+            type: "paragraph",
+            text: "Avoid the July-September typhoon window when boats may be cancelled on short notice - choosing a cruise operator with a clear storm refund policy is worth doing if you're booking during this period. For a less crowded Ha Long Bay cave experience, overnight cruises that include Sung Sot Cave or Thien Canh Son Cave cover less-visited areas of the bay.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const poNagarChamTowers: Location = {
   slug: "po-nagar-cham-towers",
   name: "Po Nagar Cham Towers",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.265491244831042,
@@ -41,14 +41,81 @@ export const poNagarChamTowers: Location = {
     "The Thap Ba Festival (Lễ hội Tháp Bà), held on the 20th-23rd day of the third lunar month (usually falling in April), draws thousands of Vietnamese pilgrims - a completely different atmosphere from a normal day",
   ],
   content: {
-    intro:
-      "Po Nagar - from the Cham \"Ponagar,\" meaning Mother of the Country - was the principal goddess of the Cham Kingdom, a Hindu-Buddhist civilisation that shaped central and southern Vietnam for over a thousand years. She's known by several names depending on the source: Cham inscriptions call her Yang Po Ina Nagar or Yang Po Ana Gar, while Vietnamese tradition venerates her as Thien Y Ana, the goddess credited with teaching locals how to farm and weave. The temple complex on the granite hill above the Cai River mouth in Nha Trang was first built around the 7th century and progressively expanded through the 13th century, with the tallest tower reaching over 23 metres. Four towers remain of a larger original complex - the main north tower, the central tower, the south tower, and the northwest tower - each built of fired brick using a Cham construction technique that archaeologists still debate: the bricks appear to have been bonded without mortar, using a resin-based adhesive that has held the structures together for over a millennium. Unlike many Cham monuments in central Vietnam, Po Nagar has remained an active place of worship continuously for centuries - Cham devotees, Vietnamese Buddhists, and followers of the Thien Y Ana cult all still come here to pray, giving the complex a living spiritual atmosphere rather than that of an archaeological ruin. Incense smoke and fresh flower offerings are present at every altar.",
-    howToGetThere:
-      "Po Nagar Cham Towers are about 2km north of central Nha Trang. The simplest route is north along Tran Phu Street, across the Tran Phu Bridge, then a turn onto Thap Ba Street to the end, where the tower complex comes into view. From the central beach strip it's about 10 minutes by Grab, xe om, taxi, or motorbike; a taxi is the easiest option if you're unfamiliar with the roads. Parking is available at the base of the hill, and a short staircase leads up to the tower terrace. Most visitors combine the towers with a morning at Nha Trang Beach and an afternoon island tour as part of a standard Nha Trang day.",
-    whatToExpect:
-      "The complex sits on a hill with views over the Cai River estuary, the fishing village below, and the mountains inland. It's organised in roughly three tiers: a gate at the base, the Mandapa meditation hall on the middle terrace, and the tower shrine area at the top. The main north tower dominates the complex with its multi-tiered roof and the active shrine inside, containing the black stone goddess statue draped in silk and surrounded by offerings. Alongside the main shrine, several of the smaller towers are dedicated to other Hindu deities, including Shiva and Ganesha, reflecting how deeply Hindu cosmology shaped Cham religious life. The architecture combines sandstone carvings - dancing figures, mythological scenes, Sanskrit inscriptions - with fired brick construction, and the contrast between the worn carvings and the intact brickwork shows how differently the two materials have aged. A covered pavilion on the lower terrace has additional altars and is used for festival ceremonies. The atmosphere is genuinely devotional rather than purely touristic.",
-    travelTips:
-      "Po Nagar is the most historically significant site in Nha Trang and consistently undervisited relative to the beach and island tours. Plan for about 60-90 minutes to explore properly - enough time to look closely at the carvings, sit inside the main tower, and take in the river view from the hilltop. If you want more context than the on-site signage gives, a guide can be arranged for around 100,000 VND per group. The Thap Ba Festival (Lễ hội Tháp Bà) on the 20th-23rd of the third lunar month is worth timing a visit around if you want to see the site in full ceremonial use, though expect much larger crowds than a normal day. For travellers with an interest in history or religious architecture, Po Nagar is the most rewarding stop in Nha Trang.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Po Nagar Cham Towers Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Po Nagar - from the Cham \"Ponagar,\" meaning Mother of the Country - was the principal goddess of the Cham Kingdom, a Hindu-Buddhist civilisation that shaped central and southern Vietnam for over a thousand years. She's known by several names depending on the source: Cham inscriptions call her Yang Po Ina Nagar or Yang Po Ana Gar, while Vietnamese tradition venerates her as Thien Y Ana, the goddess credited with teaching locals how to farm and weave.",
+          },
+          { type: "heading", text: "History of the Temple Complex" },
+          {
+            type: "paragraph",
+            text: "The temple complex on the granite hill above the Cai River mouth in Nha Trang was first built around the 7th century and progressively expanded through the 13th century, with the tallest tower reaching over 23 metres. Four towers remain of a larger original complex - the main north tower, the central tower, the south tower, and the northwest tower - each built of fired brick using a Cham construction technique that archaeologists still debate: the bricks appear to have been bonded without mortar, using a resin-based adhesive that has held the structures together for over a millennium.",
+          },
+          { type: "heading", text: "An Active Place of Worship" },
+          {
+            type: "paragraph",
+            text: "Unlike many Cham monuments in central Vietnam, Po Nagar has remained an active place of worship continuously for centuries - Cham devotees, Vietnamese Buddhists, and followers of the Thien Y Ana cult all still come here to pray, giving the complex a living spiritual atmosphere rather than that of an archaeological ruin. Incense smoke and fresh flower offerings are present at every altar.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Po Nagar Cham Towers",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Po Nagar Cham Towers are about 2km north of central Nha Trang. The simplest route is north along Tran Phu Street, across the Tran Phu Bridge, then a turn onto Thap Ba Street to the end, where the tower complex comes into view. From the central beach strip it's about 10 minutes by Grab, xe om, taxi, or motorbike; a taxi is the easiest option if you're unfamiliar with the roads.",
+          },
+          {
+            type: "paragraph",
+            text: "Parking is available at the base of the hill, and a short staircase leads up to the tower terrace. Most visitors combine the towers with a morning at Nha Trang Beach and an afternoon island tour as part of a standard Nha Trang day.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Po Nagar Cham Towers",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The complex sits on a hill with views over the Cai River estuary, the fishing village below, and the mountains inland. It's organised in roughly three tiers: a gate at the base, the Mandapa meditation hall on the middle terrace, and the tower shrine area at the top.",
+          },
+          { type: "heading", text: "The Towers and Their Deities" },
+          {
+            type: "paragraph",
+            text: "The main north tower dominates the complex with its multi-tiered roof and the active shrine inside, containing the black stone goddess statue draped in silk and surrounded by offerings. Alongside the main shrine, several of the smaller towers are dedicated to other Hindu deities, including Shiva and Ganesha, reflecting how deeply Hindu cosmology shaped Cham religious life. The architecture combines sandstone carvings - dancing figures, mythological scenes, Sanskrit inscriptions - with fired brick construction, and the contrast between the worn carvings and the intact brickwork shows how differently the two materials have aged.",
+          },
+          { type: "heading", text: "The Festival Pavilion and Atmosphere" },
+          {
+            type: "paragraph",
+            text: "A covered pavilion on the lower terrace has additional altars and is used for festival ceremonies. The atmosphere is genuinely devotional rather than purely touristic.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Po Nagar Cham Towers",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Po Nagar is the most historically significant site in Nha Trang and consistently undervisited relative to the beach and island tours. Plan for about 60-90 minutes to explore properly - enough time to look closely at the carvings, sit inside the main tower, and take in the river view from the hilltop. If you want more context than the on-site signage gives, a guide can be arranged for around 100,000 VND per group.",
+          },
+          { type: "heading", text: "The Thap Ba Festival" },
+          {
+            type: "paragraph",
+            text: "The Thap Ba Festival (Lễ hội Tháp Bà) on the 20th-23rd of the third lunar month is worth timing a visit around if you want to see the site in full ceremonial use, though expect much larger crowds than a normal day. For travellers with an interest in history or religious architecture, Po Nagar is the most rewarding stop in Nha Trang.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

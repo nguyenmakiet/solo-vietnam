@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baHoWaterfall: Location = {
   slug: "ba-ho-waterfall",
   name: "Ba Hồ Waterfall",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.390044772272377,
@@ -43,14 +43,80 @@ export const baHoWaterfall: Location = {
     "Take all your rubbish out with you - there's no formal waste collection along the trail",
   ],
   content: {
-    intro:
-      "Ba Hồ - Three Lakes - is a series of three natural rock pools fed by a stream that runs about 10km off the 660m summit of Hòn Sơn, cutting through primary rainforest in Ninh Hoà District, 25km north of Nha Trang city, before the water eventually reaches the sea. The pools sit at different elevations, connected by a genuinely rugged, undeveloped trail - Pool 1 near the entrance is the easiest to reach, Pool 2 requires real rock scrambling through dense forest, and Pool 3 at the top involves a further roughly 500m of rocky, overgrown trail. Some basic tourist infrastructure exists near the entrance and first pool - kayaking, camping gear rental, and electric carts among them - but this doesn't extend to the trail itself, which stays close to its natural state the further up you go. The water is cool, clear, and deep enough for swimming and cliff jumping at Pool 1 in particular, though water clarity and level vary noticeably between the three pools and by season. The site receives a fraction of the visitors that Nha Trang's coastal attractions draw, and rewards those who come prepared for a genuine hike rather than a gentle nature walk.",
-    howToGetThere:
-      "Ba Hồ Waterfall is 25km north of Nha Trang city centre in Ninh Hoà District. From central Nha Trang, follow Highway 1A north toward Ninh Hòa; about 15 minutes past the Long Phú tourist site gate, watch for a sign on the left reading 'Hướng dẫn đi đến khu du lịch Ba Hồ,' turn left onto the concrete road, and at the T-junction turn left again to reach the entrance. The journey takes about 40-45 minutes by motorbike. Motorbike rental in Nha Trang runs roughly 120,000-150,000 VND/bike for the day; a private car costs more, around 1,000,000-1,200,000 VND/day, but is a safer and less tiring option if your group prefers it. Grab bikes can reach the entrance but return trips are hard to book from this remote location - a rented motorbike for the day, or a private car/Grab car booked both ways, is more reliable than relying on local buses, given motorcycle traffic on the approach road. A shuttle from the entrance to the trailhead is available on-site (150,000 VND round-trip or 40,000 VND one-way) for those who'd rather skip the initial walk-in.",
-    whatToExpect:
-      "From the entrance gate, a smooth path leads to the stream, with a shuttle option available for this initial stretch. Pool 1 is reached first - roughly 100m² in area, with clear, poetic scenery and the best waterfall views of the three in rainy season, plus enough depth for cliff jumping from the surrounding rocks. From here, the trail to Pool 2 gets noticeably rougher, climbing over boulders and through dense forest; Pool 2 sits in a shadier, more sheltered spot; its water is usually less clear than Pool 1's, so many visitors pause here for the scenery before heading onward rather than swimming. The push to Pool 3 covers roughly 500m of rocky, overgrown trail with some steep, rope-assisted sections - the reward is the best mountain views of the three pools, looking out over distant ranges, though the pool itself can run low and murkier in the driest months. Basic facilities - kayaks, camping gear rental, and electric carts - are available near the entrance, though there's no formal food service beyond this point and outside food is officially restricted. The jungle between the pools has wild orchids, large old-growth trees, and the sounds of birds and insects that make the trek itself as much a part of the experience as the pools.",
-    travelTips:
-      "Ba Hồ is the best half-day adventure excursion from Nha Trang for travellers who want something more physically engaging than the beach and islands - just go in with accurate expectations about the difficulty, since this is a real scramble past the first pool rather than a relaxing nature walk. The combination of jungle trek, swimming, cliff jumping, and the genuine remoteness of the upper pools makes it qualitatively different from anything available in the city, but it's best suited to visitors who are reasonably fit, comfortable on wet rock, and not travelling with young children, older relatives, or anyone with mobility concerns. Allow 4-5 hours for the full round trip including swimming time. If your timing allows, the Dec-Jan window when the water sometimes turns a striking jade green - locally nicknamed 'Tuyệt Tình Cốc' - is visually the most memorable time to visit, but it overlaps with the tail end of flood season, so check conditions before committing to a trip built specifically around it. The motorbike ride north along Highway 1A, with mountain views on one side and the coast on the other, is itself scenic and adds to the experience.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ba Hồ Waterfall Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Hồ - Three Lakes - is a series of three natural rock pools fed by a stream that runs about 10km off the 660m summit of Hòn Sơn, cutting through primary rainforest in Ninh Hoà District, 25km north of Nha Trang city, before the water eventually reaches the sea. The pools sit at different elevations, connected by a genuinely rugged, undeveloped trail - Pool 1 near the entrance is the easiest to reach, Pool 2 requires real rock scrambling through dense forest, and Pool 3 at the top involves a further roughly 500m of rocky, overgrown trail.",
+          },
+          {
+            type: "paragraph",
+            text: "Some basic tourist infrastructure exists near the entrance and first pool - kayaking, camping gear rental, and electric carts among them - but this doesn't extend to the trail itself, which stays close to its natural state the further up you go. The water is cool, clear, and deep enough for swimming and cliff jumping at Pool 1 in particular, though water clarity and level vary noticeably between the three pools and by season. The site receives a fraction of the visitors that Nha Trang's coastal attractions draw, and rewards those who come prepared for a genuine hike rather than a gentle nature walk.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ba Hồ Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Hồ Waterfall is 25km north of Nha Trang city centre in Ninh Hoà District. From central Nha Trang, follow Highway 1A north toward Ninh Hòa; about 15 minutes past the Long Phú tourist site gate, watch for a sign on the left reading 'Hướng dẫn đi đến khu du lịch Ba Hồ,' turn left onto the concrete road, and at the T-junction turn left again to reach the entrance. The journey takes about 40-45 minutes by motorbike.",
+          },
+          { type: "heading", text: "Rentals, Grab and the Shuttle" },
+          {
+            type: "paragraph",
+            text: "Motorbike rental in Nha Trang runs roughly 120,000-150,000 VND/bike for the day; a private car costs more, around 1,000,000-1,200,000 VND/day, but is a safer and less tiring option if your group prefers it. Grab bikes can reach the entrance but return trips are hard to book from this remote location - a rented motorbike for the day, or a private car/Grab car booked both ways, is more reliable than relying on local buses, given motorcycle traffic on the approach road. A shuttle from the entrance to the trailhead is available on-site (150,000 VND round-trip or 40,000 VND one-way) for those who'd rather skip the initial walk-in.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ba Hồ Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From the entrance gate, a smooth path leads to the stream, with a shuttle option available for this initial stretch.",
+          },
+          { type: "heading", text: "Pool 1" },
+          {
+            type: "paragraph",
+            text: "Pool 1 is reached first - roughly 100m² in area, with clear, poetic scenery and the best waterfall views of the three in rainy season, plus enough depth for cliff jumping from the surrounding rocks.",
+          },
+          { type: "heading", text: "Pools 2 and 3" },
+          {
+            type: "paragraph",
+            text: "From here, the trail to Pool 2 gets noticeably rougher, climbing over boulders and through dense forest; Pool 2 sits in a shadier, more sheltered spot; its water is usually less clear than Pool 1's, so many visitors pause here for the scenery before heading onward rather than swimming. The push to Pool 3 covers roughly 500m of rocky, overgrown trail with some steep, rope-assisted sections - the reward is the best mountain views of the three pools, looking out over distant ranges, though the pool itself can run low and murkier in the driest months.",
+          },
+          { type: "heading", text: "Facilities and Jungle" },
+          {
+            type: "paragraph",
+            text: "Basic facilities - kayaks, camping gear rental, and electric carts - are available near the entrance, though there's no formal food service beyond this point and outside food is officially restricted. The jungle between the pools has wild orchids, large old-growth trees, and the sounds of birds and insects that make the trek itself as much a part of the experience as the pools.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ba Hồ Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Hồ is the best half-day adventure excursion from Nha Trang for travellers who want something more physically engaging than the beach and islands - just go in with accurate expectations about the difficulty, since this is a real scramble past the first pool rather than a relaxing nature walk. The combination of jungle trek, swimming, cliff jumping, and the genuine remoteness of the upper pools makes it qualitatively different from anything available in the city, but it's best suited to visitors who are reasonably fit, comfortable on wet rock, and not travelling with young children, older relatives, or anyone with mobility concerns. Allow 4-5 hours for the full round trip including swimming time.",
+          },
+          {
+            type: "paragraph",
+            text: "If your timing allows, the Dec-Jan window when the water sometimes turns a striking jade green - locally nicknamed 'Tuyệt Tình Cốc' - is visually the most memorable time to visit, but it overlaps with the tail end of flood season, so check conditions before committing to a trip built specifically around it. The motorbike ride north along Highway 1A, with mountain views on one side and the coast on the other, is itself scenic and adds to the experience.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

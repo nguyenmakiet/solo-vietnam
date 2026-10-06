@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const japaneseBridge: Location = {
   slug: "japanese-bridge",
   name: "Japanese Bridge",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.877113853056763,
@@ -42,14 +42,82 @@ export const japaneseBridge: Location = {
     "A major 2022-2024 restoration was genuinely controversial when it reopened in August 2024 - many locals and visitors felt the bright new paint, tiles, and timber made the 400-year-old bridge look artificially new, and researchers publicly disputed some of the restoration choices (including whether the bridge floor was originally curved or flat). By 2026, weathering has mellowed the brighter colours and much of that controversy has settled, but it's worth knowing the bridge you see today looks a bit different from how it looked before 2022, and the debate over the restoration is part of its recent history",
   ],
   content: {
-    intro:
-      "The Japanese Covered Bridge - Chùa Cầu, literally 'Pagoda Bridge' - was built by the Japanese merchant community in Hội An in the early 17th century, believed to date to around 1593, making it roughly 400 years old. At the time, Hội An was one of Southeast Asia's most active trading ports, and a substantial Japanese quarter had developed on the western side of the canal. The bridge connected the Japanese and Chinese merchant quarters across the waterway, and a small temple was built into its northern side - though despite being called a 'chùa' (pagoda), it holds no Buddha image; it's dedicated instead to Bắc Đế Trấn Võ, a protective deity of happiness and wellbeing. According to a Japanese legend tied to the bridge, a giant sea monster called Namazu lay stretched across three countries - its head in India, its body in Vietnam, and its tail in Japan - and every time it stirred, the movement caused earthquakes and floods across all three; the bridge and temple were built as a symbolic sword laid across the creature's back to pin it in place and keep it still. A carved wooden plaque above the main door, reading 'Lai Viễn Kiều' ('Bridge for Travelers from Afar'), was given by Nguyễn lord Nguyễn Phúc Chu during a visit in 1719. The bridge has been repaired and rebuilt multiple times since its construction, with sources citing various major restoration campaigns across the 18th, 19th, and 20th centuries.\n\nThe most recent restoration ran from December 2022 to August 2024, a full dismantling-and-rebuild project costing over 20 billion VND, with input from Vietnamese and international conservation experts (including Japanese specialists, given the bridge's historical connection to Japan). The reopening proved controversial, with many locals, visitors, and conservation researchers arguing that the bridge looked too new after restoration, including public disputes over details like whether the bridge's floor was originally curved or flat. By 2026, after two of Hội An's rainy seasons, sun and rain have mellowed the brighter colours into something darker and more muted, closer to the bridge's historic patina, and much of the controversy has settled down. It appears on the Vietnamese 20,000 đồng banknote and is the symbol of Hội An as a city.",
-    howToGetThere:
-      "The Japanese Bridge is at the western end of Trần Phú Street, the main street of Hội An Ancient Town, at its intersection with Nguyễn Thị Minh Khai. It's a short walk from anywhere in the Ancient Town - most visitors encounter it naturally while exploring the old streets. Walking across the bridge itself is free; entry to the small inner shrine requires the Hội An Old Town combined ticket (120,000 VND), which also covers admission to several other heritage houses, assembly halls, and museums within the Ancient Town.",
-    whatToExpect:
-      "The bridge is small - about 18 metres long and 3 metres wide - roofed with dark timber and tile, and wide enough for two people to pass comfortably. The interior has a slightly arched wooden walkway with a low balustrade on both sides, looking down to the canal below. The Chùa Cầu temple occupies a small room on the northern side, containing a shrine and incense rather than a Buddha statue. Even when crowded, most visitors only spend a few minutes actually on the bridge before moving to the canal banks, where the classic postcard views are found - the real value is the surrounding area, including the old merchant houses lining the waterfront and the lanterns that frame the bridge at dusk. It's worth knowing that the picturesque canal look depends on water levels, though: during low-water periods, the waterway beneath the bridge can look more like an unremarkable small ditch than the classic postcard image, so don't be surprised if your visit doesn't quite match the photos you've seen.",
-    travelTips:
-      "The Japanese Bridge is a mandatory stop in Hội An but should not be rushed or reduced to a photo op. The surrounding western end of the Ancient Town - Nguyễn Thị Minh Khai Street, the canal bank, the small streets feeding off Trần Phú - is less crowded than the central market area and has better preserved shophouse architecture. Early morning is the only time the bridge is genuinely peaceful; by 9 AM the tour groups arrive and the bridge becomes a queue. If you're hoping to photograph the bridge with almost nobody on it, sunrise is realistically your only chance. The evening lantern view is the best compromise between crowd and atmosphere if morning isn't possible.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Japanese Bridge Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Japanese Covered Bridge - Chùa Cầu, literally 'Pagoda Bridge' - was built by the Japanese merchant community in Hội An in the early 17th century, believed to date to around 1593, making it roughly 400 years old. At the time, Hội An was one of Southeast Asia's most active trading ports, and a substantial Japanese quarter had developed on the western side of the canal. The bridge connected the Japanese and Chinese merchant quarters across the waterway, and a small temple was built into its northern side - though despite being called a 'chùa' (pagoda), it holds no Buddha image; it's dedicated instead to Bắc Đế Trấn Võ, a protective deity of happiness and wellbeing.",
+          },
+          { type: "heading", text: "The Namazu Legend and the Plaque" },
+          {
+            type: "paragraph",
+            text: "According to a Japanese legend tied to the bridge, a giant sea monster called Namazu lay stretched across three countries - its head in India, its body in Vietnam, and its tail in Japan - and every time it stirred, the movement caused earthquakes and floods across all three; the bridge and temple were built as a symbolic sword laid across the creature's back to pin it in place and keep it still. A carved wooden plaque above the main door, reading 'Lai Viễn Kiều' ('Bridge for Travelers from Afar'), was given by Nguyễn lord Nguyễn Phúc Chu during a visit in 1719.",
+          },
+          { type: "heading", text: "Repairs and Restorations" },
+          {
+            type: "paragraph",
+            text: "The bridge has been repaired and rebuilt multiple times since its construction, with sources citing various major restoration campaigns across the 18th, 19th, and 20th centuries.",
+          },
+          {
+            type: "paragraph",
+            text: "The most recent restoration ran from December 2022 to August 2024, a full dismantling-and-rebuild project costing over 20 billion VND, with input from Vietnamese and international conservation experts (including Japanese specialists, given the bridge's historical connection to Japan). The reopening proved controversial, with many locals, visitors, and conservation researchers arguing that the bridge looked too new after restoration, including public disputes over details like whether the bridge's floor was originally curved or flat. By 2026, after two of Hội An's rainy seasons, sun and rain have mellowed the brighter colours into something darker and more muted, closer to the bridge's historic patina, and much of the controversy has settled down.",
+          },
+          { type: "heading", text: "A Symbol of Hội An" },
+          {
+            type: "paragraph",
+            text: "It appears on the Vietnamese 20,000 đồng banknote and is the symbol of Hội An as a city.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Japanese Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Japanese Bridge is at the western end of Trần Phú Street, the main street of Hội An Ancient Town, at its intersection with Nguyễn Thị Minh Khai. It's a short walk from anywhere in the Ancient Town - most visitors encounter it naturally while exploring the old streets. Walking across the bridge itself is free; entry to the small inner shrine requires the Hội An Old Town combined ticket (120,000 VND), which also covers admission to several other heritage houses, assembly halls, and museums within the Ancient Town.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Japanese Bridge",
+        blocks: [
+          { type: "heading", text: "The Bridge and Its Temple" },
+          {
+            type: "paragraph",
+            text: "The bridge is small - about 18 metres long and 3 metres wide - roofed with dark timber and tile, and wide enough for two people to pass comfortably. The interior has a slightly arched wooden walkway with a low balustrade on both sides, looking down to the canal below. The Chùa Cầu temple occupies a small room on the northern side, containing a shrine and incense rather than a Buddha statue.",
+          },
+          { type: "heading", text: "Crowds and Water Levels" },
+          {
+            type: "paragraph",
+            text: "Even when crowded, most visitors only spend a few minutes actually on the bridge before moving to the canal banks, where the classic postcard views are found - the real value is the surrounding area, including the old merchant houses lining the waterfront and the lanterns that frame the bridge at dusk. It's worth knowing that the picturesque canal look depends on water levels, though: during low-water periods, the waterway beneath the bridge can look more like an unremarkable small ditch than the classic postcard image, so don't be surprised if your visit doesn't quite match the photos you've seen.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Japanese Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Japanese Bridge is a mandatory stop in Hội An but should not be rushed or reduced to a photo op. The surrounding western end of the Ancient Town - Nguyễn Thị Minh Khai Street, the canal bank, the small streets feeding off Trần Phú - is less crowded than the central market area and has better preserved shophouse architecture.",
+          },
+          { type: "heading", text: "Timing" },
+          {
+            type: "paragraph",
+            text: "Early morning is the only time the bridge is genuinely peaceful; by 9 AM the tour groups arrive and the bridge becomes a queue. If you're hoping to photograph the bridge with almost nobody on it, sunrise is realistically your only chance. The evening lantern view is the best compromise between crowd and atmosphere if morning isn't possible.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

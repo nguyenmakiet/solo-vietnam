@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thangHenLake: Location = {
   slug: "thang-hen-lake",
   name: "Thang Hen Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.759334520663145,
@@ -36,14 +36,86 @@ export const thangHenLake: Location = {
     "Go early morning for mist in the karst valleys, or 3-4 PM for the best light on the water. Midday is flat and harsh.",
   ],
   content: {
-    intro:
-      "Thang Hen is a cluster of 36 interconnected lakes scattered across a karst plateau at approximately 900 metres elevation in Trà Lĩnh District, 30km northeast of Cao Bằng city. The name is Tày for 'bee's tail' - from above, the shape of the main lake resembles the tail of a bee. What makes Thang Hen unusual is its water: while every other lake in the surrounding area runs brown and muddy after rain, Thang Hen stays turquoise year-round. The reason is its source - fresh water flows continuously from a cave system upstream, constantly replenishing and filtering the lake. The main lake is 100-300m wide and 500-1,000m long depending on season, and has two tidal cycles per day - the water level rises and falls twice in 24 hours. In September and October the lake can drain almost completely within a few hours. According to local Tày legend, the 36 lakes were formed from the 36 mountain valleys a young scholar crossed in darkness, rushing back to the royal court after lingering too long with his new bride - he collapsed and died on the final stretch, and the place where he fell became Thang Hen. It is a quiet place - no crowds, no noise - just flat turquoise water, green hills, and clean mountain air.",
-    howToGetThere:
-      "Thang Hen is 30km northeast of Cao Bằng city in Trà Lĩnh District - about 45 minutes by motorbike. From Cao Bằng, follow the road toward Trà Lĩnh and look for signs for Hồ Thang Hen. The road climbs through villages and forest to the plateau - paved but narrow and winding in sections. There is no public transport to the lakes; motorbike is the only practical option. Most visitors combine Thang Hen with nearby Nguồm Pục Cave or include it as part of a northern Cao Bằng loop.",
-    whatToExpect:
-      "The main lake is the largest of the 36, with flat turquoise water reflecting the surrounding limestone mountains. A path runs along the shore with open views over the water and the karst landscape beyond. SUP boards are available for rent from local vendors - paddling on the calm surface with mountains reflected around you is genuinely memorable. The 30,000 VND entrance ticket also covers the small caves accessible from the plateau road nearby. The atmosphere is calm and unhurried - this is not a spectacle destination but a place that rewards simply being there. Arrive in the afternoon when the light hits the water and you understand why it appears on so many Cao Bằng itineraries.",
-    travelTips:
-      "Thang Hen is seasonal in the truest sense - the difference between visiting in July versus February is the difference between a beautiful mountain lake and a dried-up pond with brown grass. Check the month before planning. The ideal visit is a half-day from Cao Bằng: leave mid-morning, arrive at the lake by noon, explore the caves, rent a SUP in the afternoon, and catch the 3-4 PM light before heading back. Combine with Nguồm Pục Cave (30km south) for a full day of Cao Bằng's less-visited north. Budget accommodation is available in Trà Lĩnh town for those wanting to stay overnight.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Thang Hen Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thang Hen is a cluster of 36 interconnected lakes scattered across a karst plateau at approximately 900 metres elevation in Trà Lĩnh District, 30km northeast of Cao Bằng city. The name is Tày for 'bee's tail' - from above, the shape of the main lake resembles the tail of a bee.",
+          },
+          { type: "heading", text: "Turquoise Water" },
+          {
+            type: "paragraph",
+            text: "What makes Thang Hen unusual is its water: while every other lake in the surrounding area runs brown and muddy after rain, Thang Hen stays turquoise year-round. The reason is its source - fresh water flows continuously from a cave system upstream, constantly replenishing and filtering the lake.",
+          },
+          { type: "heading", text: "Seasons and Drainage" },
+          {
+            type: "paragraph",
+            text: "The main lake is 100-300m wide and 500-1,000m long depending on season, and has two tidal cycles per day - the water level rises and falls twice in 24 hours. In September and October the lake can drain almost completely within a few hours.",
+          },
+          { type: "heading", text: "The Legend of the 36 Lakes" },
+          {
+            type: "paragraph",
+            text: "According to local Tày legend, the 36 lakes were formed from the 36 mountain valleys a young scholar crossed in darkness, rushing back to the royal court after lingering too long with his new bride - he collapsed and died on the final stretch, and the place where he fell became Thang Hen. It is a quiet place - no crowds, no noise - just flat turquoise water, green hills, and clean mountain air.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Thang Hen Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thang Hen is 30km northeast of Cao Bằng city in Trà Lĩnh District - about 45 minutes by motorbike. From Cao Bằng, follow the road toward Trà Lĩnh and look for signs for Hồ Thang Hen. The road climbs through villages and forest to the plateau - paved but narrow and winding in sections.",
+          },
+          {
+            type: "paragraph",
+            text: "There is no public transport to the lakes; motorbike is the only practical option. Most visitors combine Thang Hen with nearby Nguồm Pục Cave or include it as part of a northern Cao Bằng loop.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Thang Hen Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The main lake is the largest of the 36, with flat turquoise water reflecting the surrounding limestone mountains. A path runs along the shore with open views over the water and the karst landscape beyond.",
+          },
+          { type: "heading", text: "SUP, Tickets and Caves" },
+          {
+            type: "paragraph",
+            text: "SUP boards are available for rent from local vendors - paddling on the calm surface with mountains reflected around you is genuinely memorable. The 30,000 VND entrance ticket also covers the small caves accessible from the plateau road nearby.",
+          },
+          { type: "heading", text: "Atmosphere" },
+          {
+            type: "paragraph",
+            text: "The atmosphere is calm and unhurried - this is not a spectacle destination but a place that rewards simply being there. Arrive in the afternoon when the light hits the water and you understand why it appears on so many Cao Bằng itineraries.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Thang Hen Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thang Hen is seasonal in the truest sense - the difference between visiting in July versus February is the difference between a beautiful mountain lake and a dried-up pond with brown grass. Check the month before planning.",
+          },
+          { type: "heading", text: "Planning Your Visit" },
+          {
+            type: "paragraph",
+            text: "The ideal visit is a half-day from Cao Bằng: leave mid-morning, arrive at the lake by noon, explore the caves, rent a SUP in the afternoon, and catch the 3-4 PM light before heading back. Combine with Nguồm Pục Cave (30km south) for a full day of Cao Bằng's less-visited north. Budget accommodation is available in Trà Lĩnh town for those wanting to stay overnight.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

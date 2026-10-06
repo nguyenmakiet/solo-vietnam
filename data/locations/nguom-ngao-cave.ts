@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nguomNgaoCave: Location = {
   slug: "nguom-ngao-cave",
   name: "Nguom Ngao Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.845576774719714,
@@ -41,14 +41,79 @@ export const nguomNgaoCave: Location = {
     "Wear sturdy, slip-resistant shoes - the cave floor is wet in places from an internal stream, and some sections require ducking under low passages or careful footing on steep, slippery stairs",
   ],
   content: {
-    intro:
-      "Nguồm Ngao - also known locally as Động Ngao - means 'Tiger Cave' in the Tày language, the ethnic minority group that has lived in this karst region for centuries. Despite its scale, Nguồm Ngao receives only a fraction of the tourist traffic that flows through Ha Long Bay's caves, giving it a stillness and atmosphere that's genuinely rare. Unlike many of Vietnam's famous caves, whose appeal comes largely from enormous chambers, Nguồm Ngao stands out for the density and variety of its limestone formations - stalactites, stalagmites, flowstone curtains, and cave coral packed through a system with three known entrances: Ngườm Lồm, Ngườm Ngao, and Bản Thuôn. Two local explanations exist for the name: one holds that tigers once lived near the cave and preyed on villagers' livestock until they were trapped and driven off; the other traces it to the sound of the underground stream inside, which locals say echoes like a tiger's roar. Discovered in 1921 and opened to tourism in 1996, the cave's main passage was surveyed at just over 2.1km, though the guided route visitors can walk today extends to roughly 3.3km. The limestone here formed more than 400 million years ago, and the stalactites carry a distinctive coloring compared to many other Vietnamese caves, attributed to a higher mix of impurities in the calcium deposits.",
-    howToGetThere:
-      "Nguồm Ngao is 3km from Bản Giốc Waterfall, along a paved road (ĐT 206) in Đàm Thủy commune - the turnoff to Bản Giốc is signposted about 2km before you reach the cave along the same road. From the waterfall, follow the main road back toward Trùng Khánh; by motorbike, the cave is under 10 minutes from Bản Giốc. From Cao Bằng city, the route runs about 60km along QL4A over the Mã Phục and Khau Liêu passes to Trùng Khánh town, then a further 29km to the cave in bản Gun - roughly 90km and around two hours total. Mountain roads can be slippery or foggy in the rainy season (May-Sep), so check conditions before setting out, and consider a local driver or a guided tour if you're not confident on mountain roads. Renting a motorbike from Cao Bằng city gives the flexibility to combine the trip with other nearby sites such as the Pác Bó historical site. The cave has a small ticket booth, a parking area, and guides available at the entrance. Most visitors combine it with Bản Giốc as a single half-day stop.",
-    whatToExpect:
-      "At the ticket booth, visitors choose between the standard self-guided route (about 1km, roughly 45 minutes) and the full guided route (about 3.3km, roughly 2 hours) with a local guide. The chambers vary dramatically in scale: some sections are intimate, with formations at arm's reach; others open into vast vaulted spaces where the ceiling disappears. The cave is electrically lit throughout the visitor section, with spotlights on the most notable formations, though a flashlight still helps in the dimmer corners. The temperature inside stays noticeably cooler than outside, more so during the rainy season. One of the chambers has a natural opening that allows daylight to filter in, creating an unusual interplay of artificial and natural light on the formations - the same opening said to produce a brief, striking sunbeam effect around April 22 each year. On the full guided route, several sections involve wading through water, so guides provide gear such as reflective vests and headlamps; quick-dry clothing is worth wearing if you're taking this option. Between roughly May and September, rising stream levels occasionally allow a short boat ride through part of the cave. Nothing is sold inside, and touching or removing formations is discouraged to protect their growth.",
-    travelTips:
-      "Nguồm Ngao is significantly less visited than Ha Long Bay's caves despite being comparably impressive - partly because Cao Bằng is remote, partly because it doesn't have the marketing infrastructure. The result is a cave experience that feels genuinely exploratory rather than like a managed tourist attraction. The cave is open 7:30 AM-5:00 PM, but the most comfortable window is roughly 8:00 AM-4:00 PM, when the light and temperature are best for walking and photography; arriving early also means beating the tour groups that tend to build up by mid-morning. Visiting after 4 PM is best avoided, especially in the rainy season, since natural light fades quickly and visibility inside can suffer. The combination of Bản Giốc Waterfall in the morning and Nguồm Ngao Cave before lunch is the most efficient pairing in Cao Bằng province, and one of the best half-days in northern Vietnam.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Nguom Ngao Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Nguồm Ngao - also known locally as Động Ngao - means 'Tiger Cave' in the Tày language, the ethnic minority group that has lived in this karst region for centuries. Despite its scale, Nguồm Ngao receives only a fraction of the tourist traffic that flows through Ha Long Bay's caves, giving it a stillness and atmosphere that's genuinely rare. Unlike many of Vietnam's famous caves, whose appeal comes largely from enormous chambers, Nguồm Ngao stands out for the density and variety of its limestone formations - stalactites, stalagmites, flowstone curtains, and cave coral packed through a system with three known entrances: Ngườm Lồm, Ngườm Ngao, and Bản Thuôn.",
+          },
+          { type: "heading", text: "The Name" },
+          {
+            type: "paragraph",
+            text: "Two local explanations exist for the name: one holds that tigers once lived near the cave and preyed on villagers' livestock until they were trapped and driven off; the other traces it to the sound of the underground stream inside, which locals say echoes like a tiger's roar.",
+          },
+          { type: "heading", text: "Discovery and Geology" },
+          {
+            type: "paragraph",
+            text: "Discovered in 1921 and opened to tourism in 1996, the cave's main passage was surveyed at just over 2.1km, though the guided route visitors can walk today extends to roughly 3.3km. The limestone here formed more than 400 million years ago, and the stalactites carry a distinctive coloring compared to many other Vietnamese caves, attributed to a higher mix of impurities in the calcium deposits.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Nguom Ngao Cave",
+        blocks: [
+          { type: "heading", text: "From Bản Giốc and Cao Bằng" },
+          {
+            type: "paragraph",
+            text: "Nguồm Ngao is 3km from Bản Giốc Waterfall, along a paved road (ĐT 206) in Đàm Thủy commune - the turnoff to Bản Giốc is signposted about 2km before you reach the cave along the same road. From the waterfall, follow the main road back toward Trùng Khánh; by motorbike, the cave is under 10 minutes from Bản Giốc. From Cao Bằng city, the route runs about 60km along QL4A over the Mã Phục and Khau Liêu passes to Trùng Khánh town, then a further 29km to the cave in bản Gun - roughly 90km and around two hours total. Mountain roads can be slippery or foggy in the rainy season (May-Sep), so check conditions before setting out, and consider a local driver or a guided tour if you're not confident on mountain roads. Renting a motorbike from Cao Bằng city gives the flexibility to combine the trip with other nearby sites such as the Pác Bó historical site.",
+          },
+          { type: "heading", text: "At the Cave" },
+          {
+            type: "paragraph",
+            text: "The cave has a small ticket booth, a parking area, and guides available at the entrance. Most visitors combine it with Bản Giốc as a single half-day stop.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Nguom Ngao Cave",
+        blocks: [
+          { type: "heading", text: "Routes and Chambers" },
+          {
+            type: "paragraph",
+            text: "At the ticket booth, visitors choose between the standard self-guided route (about 1km, roughly 45 minutes) and the full guided route (about 3.3km, roughly 2 hours) with a local guide. The chambers vary dramatically in scale: some sections are intimate, with formations at arm's reach; others open into vast vaulted spaces where the ceiling disappears. The cave is electrically lit throughout the visitor section, with spotlights on the most notable formations, though a flashlight still helps in the dimmer corners. The temperature inside stays noticeably cooler than outside, more so during the rainy season. One of the chambers has a natural opening that allows daylight to filter in, creating an unusual interplay of artificial and natural light on the formations - the same opening said to produce a brief, striking sunbeam effect around April 22 each year.",
+          },
+          { type: "heading", text: "Wading and Boat Rides" },
+          {
+            type: "paragraph",
+            text: "On the full guided route, several sections involve wading through water, so guides provide gear such as reflective vests and headlamps; quick-dry clothing is worth wearing if you're taking this option. Between roughly May and September, rising stream levels occasionally allow a short boat ride through part of the cave. Nothing is sold inside, and touching or removing formations is discouraged to protect their growth.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Nguom Ngao Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Nguồm Ngao is significantly less visited than Ha Long Bay's caves despite being comparably impressive - partly because Cao Bằng is remote, partly because it doesn't have the marketing infrastructure. The result is a cave experience that feels genuinely exploratory rather than like a managed tourist attraction.",
+          },
+          { type: "heading", text: "Timing" },
+          {
+            type: "paragraph",
+            text: "The cave is open 7:30 AM-5:00 PM, but the most comfortable window is roughly 8:00 AM-4:00 PM, when the light and temperature are best for walking and photography; arriving early also means beating the tour groups that tend to build up by mid-morning. Visiting after 4 PM is best avoided, especially in the rainy season, since natural light fades quickly and visibility inside can suffer. The combination of Bản Giốc Waterfall in the morning and Nguồm Ngao Cave before lunch is the most efficient pairing in Cao Bằng province, and one of the best half-days in northern Vietnam.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lungCuFlagTower: Location = {
   slug: "lung-cu-flag-tower",
   name: "Lũng Cú Flag Tower",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.363427116840306,
@@ -45,14 +45,82 @@ export const lungCuFlagTower: Location = {
     "From Hà Giang city: about 150-160km total. Realistically 5-6 hours by motorbike or car, not 2-3 - this is continuous mountain pass terrain (Dốc Bắc Sum, Dốc Thẩm Mã, and more), with average speeds on these winding roads of only 30-35km/h. Two main route options: via Quản Bạ - Yên Minh - Đồng Văn (~150km, passes Quản Bạ Heaven's Gate, Yên Minh pine forest, Đồng Văn Old Quarter) or via Mèo Vạc - Đồng Văn (~160km, includes Mã Pí Lèng Pass, one of Vietnam's four great mountain passes). Both routes converge through Đồng Văn before the final ~24km stretch to Lũng Cú. From Hanoi to Lũng Cú: about 500km total, realistically a full day's travel including a stop in Hà Giang city.",
   ],
   content: {
-    intro:
-      "Lũng Cú Flag Tower stands at Vietnam's symbolic northernmost point on Dragon Mountain (Núi Rồng), at roughly 1,500m elevation on the Đồng Văn Karst Plateau. Its history runs deep: Lý Thường Kiệt is said to have planted the first wooden flag here during the Lý Dynasty to mark Vietnam's frontier, and Emperor Quang Trung later built a military post here with a bronze drum sounded three times nightly to reassert the claim - giving the site its old name, Long Cổ ('dragon drum'). The first official flagpole went up in 1978 - a 12m tree trunk carrying a 1.2 sq metre flag - and the site became a fortified military position during the 1979 border war with China. The pole was rebuilt in concrete in 2000, and the current 33.15m octagonal tower, styled after the Hanoi Flag Tower, was completed in 2010. It flies a 54 square metre flag - one square metre for each of Vietnam's 54 recognised ethnic groups. Today, standing here with China visible across the valley and the karst plateau stretching in every direction is one of the more affecting geographical and emotional experiences Vietnam offers - many Vietnamese visitors describe a genuine swell of feeling looking south, as if taking in the whole country at once.",
-    howToGetThere:
-      "Lũng Cú is 24km north of Đồng Văn town (about 40 minutes by motorbike) and roughly 150-160km from Hà Giang city. Realistically, this takes 5-6 hours by motorbike or car, not 2-3 - the entire route is continuous mountain pass terrain (Dốc Bắc Sum, Dốc Thẩm Mã, and more) where average speeds rarely exceed 30-35km/h. Two main route options from Hà Giang: via Quản Bạ - Yên Minh - Đồng Văn (~150km, passing Quản Bạ Heaven's Gate, Yên Minh pine forest, and Đồng Văn Old Quarter) or via Mèo Vạc - Đồng Văn (~160km, including Mã Pí Lèng Pass, one of Vietnam's four great mountain passes). Both converge through Đồng Văn before the final stretch to Lũng Cú. From Hanoi, total travel distance is about 500km - realistically a full day's journey including a stop in Hà Giang city. Most travellers visit as a day trip from Đồng Văn or as part of a multi-day Ha Giang Loop rather than attempting it all in one push. If you're not confident riding mountain roads, hire a local guide or book an Easy Rider service.",
-    whatToExpect:
-      "At the base of Dragon Mountain, a paved path leads through a Lô Lô minority village before the staircase begins. The climb is 839 steps total, split into three stages with rest points - allow time, especially at this altitude. The tower itself is a concrete octagonal structure; you can't climb inside, but a panoramic viewing platform around its base gives 360° views: China to the north, the karst plateau in every direction, and the Nho Quế River valley to the south. For an even better, near-empty viewpoint, a short unmarked trail up a nearby hill (10-15 minutes, ask locals for directions) gives a genuine panorama over terraced fields and distant mountains, best at sunrise or sunset.",
-    travelTips:
-      "Lũng Cú is most meaningful when you understand the history behind it - the Lý Thường Kiệt flag, the dragon drum, the 1979 border war - so a little reading or a local guide adds real depth. Remember that the tower is a symbolic marker, not the literal geographic northernmost point - that's at Xéo Lủng, 3.3km away, reachable only with a local guide over difficult, unmarked terrain. Most travellers don't regret stopping here, even if they skip the true northernmost point. The road from Đồng Văn to Lũng Cú and back is one of the Loop's most scenic stretches - don't rush it. Bring warm layers regardless of season, and dress respectfully given the site's solemn national significance.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Lũng Cú Flag Tower Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lũng Cú Flag Tower stands at Vietnam's symbolic northernmost point on Dragon Mountain (Núi Rồng), at roughly 1,500m elevation on the Đồng Văn Karst Plateau.",
+          },
+          { type: "heading", text: "History of the Flag" },
+          {
+            type: "paragraph",
+            text: "Its history runs deep: Lý Thường Kiệt is said to have planted the first wooden flag here during the Lý Dynasty to mark Vietnam's frontier, and Emperor Quang Trung later built a military post here with a bronze drum sounded three times nightly to reassert the claim - giving the site its old name, Long Cổ ('dragon drum'). The first official flagpole went up in 1978 - a 12m tree trunk carrying a 1.2 sq metre flag - and the site became a fortified military position during the 1979 border war with China. The pole was rebuilt in concrete in 2000, and the current 33.15m octagonal tower, styled after the Hanoi Flag Tower, was completed in 2010.",
+          },
+          { type: "heading", text: "The Flag Today" },
+          {
+            type: "paragraph",
+            text: "It flies a 54 square metre flag - one square metre for each of Vietnam's 54 recognised ethnic groups. Today, standing here with China visible across the valley and the karst plateau stretching in every direction is one of the more affecting geographical and emotional experiences Vietnam offers - many Vietnamese visitors describe a genuine swell of feeling looking south, as if taking in the whole country at once.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Lũng Cú Flag Tower",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lũng Cú is 24km north of Đồng Văn town (about 40 minutes by motorbike) and roughly 150-160km from Hà Giang city. Realistically, this takes 5-6 hours by motorbike or car, not 2-3 - the entire route is continuous mountain pass terrain (Dốc Bắc Sum, Dốc Thẩm Mã, and more) where average speeds rarely exceed 30-35km/h.",
+          },
+          { type: "heading", text: "Route Options" },
+          {
+            type: "paragraph",
+            text: "Two main route options from Hà Giang: via Quản Bạ - Yên Minh - Đồng Văn (~150km, passing Quản Bạ Heaven's Gate, Yên Minh pine forest, and Đồng Văn Old Quarter) or via Mèo Vạc - Đồng Văn (~160km, including Mã Pí Lèng Pass, one of Vietnam's four great mountain passes). Both converge through Đồng Văn before the final stretch to Lũng Cú.",
+          },
+          { type: "heading", text: "From Hanoi, and Guided Options" },
+          {
+            type: "paragraph",
+            text: "From Hanoi, total travel distance is about 500km - realistically a full day's journey including a stop in Hà Giang city. Most travellers visit as a day trip from Đồng Văn or as part of a multi-day Ha Giang Loop rather than attempting it all in one push. If you're not confident riding mountain roads, hire a local guide or book an Easy Rider service.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Lũng Cú Flag Tower",
+        blocks: [
+          { type: "heading", text: "The Climb" },
+          {
+            type: "paragraph",
+            text: "At the base of Dragon Mountain, a paved path leads through a Lô Lô minority village before the staircase begins. The climb is 839 steps total, split into three stages with rest points - allow time, especially at this altitude.",
+          },
+          { type: "heading", text: "The Tower and a Quieter Viewpoint" },
+          {
+            type: "paragraph",
+            text: "The tower itself is a concrete octagonal structure; you can't climb inside, but a panoramic viewing platform around its base gives 360° views: China to the north, the karst plateau in every direction, and the Nho Quế River valley to the south. For an even better, near-empty viewpoint, a short unmarked trail up a nearby hill (10-15 minutes, ask locals for directions) gives a genuine panorama over terraced fields and distant mountains, best at sunrise or sunset.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Lũng Cú Flag Tower",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lũng Cú is most meaningful when you understand the history behind it - the Lý Thường Kiệt flag, the dragon drum, the 1979 border war - so a little reading or a local guide adds real depth. Remember that the tower is a symbolic marker, not the literal geographic northernmost point - that's at Xéo Lủng, 3.3km away, reachable only with a local guide over difficult, unmarked terrain. Most travellers don't regret stopping here, even if they skip the true northernmost point.",
+          },
+          {
+            type: "paragraph",
+            text: "The road from Đồng Văn to Lũng Cú and back is one of the Loop's most scenic stretches - don't rush it. Bring warm layers regardless of season, and dress respectfully given the site's solemn national significance.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

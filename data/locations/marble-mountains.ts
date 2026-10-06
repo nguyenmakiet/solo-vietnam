@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const marbleMountains: Location = {
   slug: "marble-mountains",
   name: "Marble Mountains (Ngũ Hành Sơn)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: "16.00395789717095",
@@ -48,14 +48,77 @@ export const marbleMountains: Location = {
     "The site is between Đà Nẵng and Hội An (20 minutes from Da Nang, 35-40 minutes from Hoi An) - convenient to stop in transit between the two cities",
   ],
   content: {
-    intro:
-      "Ngũ Hành Sơn - the Five Elements Mountains - is a cluster of five marble and limestone peaks rising from the coastal plain of Đà Nẵng's Ngũ Hành Sơn district, approximately 7km south of the city centre and midway between Đà Nẵng and Hội An. The name was given by Emperor Minh Mạng in 1837 (the 18th year of his reign), who named each peak after one of the five classical elements based on its natural shape and position: Kim (metal), Mộc (wood), Thủy (water), Hỏa (fire), and Thổ (earth). Of these, Thủy Sơn (Water Mountain) is the only peak open to the public and contains the site's main attractions. The mountains have been a sacred site since the Cham civilisation, and the cave temples added by Vietnamese Buddhists and Nguyễn dynasty emperors layer over the earlier Cham sanctuaries. The site's defining experience is Huyền Không Cave - a natural limestone cavern where a section of ceiling collapsed centuries ago, creating an opening through which sunlight falls in long shafts onto the Buddhist altars below, most dramatically between 11 AM and 12 PM on clear days. Other notable caves within Thủy Sơn include Tàng Chơn, Vân Thông, and Linh Nham, each with a distinct character and Buddhist shrine.",
-    howToGetThere:
-      "Marble Mountains are located at 81 Huyền Trân Công Chúa street in Ngũ Hành Sơn district, approximately 7km south of central Đà Nẵng. By Grab or taxi from Đà Nẵng city centre, the journey takes 15-20 minutes. By motorbike, follow the coastal road south toward Hội An. From Hội An, the site is approximately 35-40 minutes north by road. The location makes it convenient to stop in transit between the two cities rather than as a separate day trip.",
-    whatToExpect:
-      "The visit covers Thủy Sơn peak only - the other four peaks are not open to tourists. The site includes the Linh Ứng Pagoda complex, Huyền Không Cave (the largest cave with the collapsed ceiling and sunlight shafts, best at 11 AM-12 PM), Tàng Chơn Cave, Vân Thông Cave, Linh Nham Cave, stone stairs and walkways between the caves and temples, and viewpoints over all of Đà Nẵng city, the coastline, and the sea. The Âm Phủ Cave at the base near Gate 2 is a separate 20,000 VND ticket - a descent into a cave carved with Buddhist interpretations of heaven, purgatory, and hell. The marble carving village surrounding the entrance is worth exploring before or after the climb. A full visit including Âm Phủ Cave takes 2-3 hours. The stone stairs are steep enough that walking up feels like a genuine trekking effort - the elevator (15,000 VND one-way) is a practical option for those who want to conserve energy for exploring the caves.",
-    travelTips:
-      "Marble Mountains is one of the most accessible and rewarding half-day activities in central Vietnam and works well as a stop between Đà Nẵng and Hội An rather than a standalone excursion. The combination of the cave light show, the pagoda atmosphere, the war history layers, and the coastal views makes it more layered than most tourist sites of similar scale. Time the visit to arrive by 9 AM to catch the morning sunlight in Huyền Không Cave - this is the single most photographed moment at the site and is only visible on clear mornings.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Marble Mountains (Ngũ Hành Sơn) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ngũ Hành Sơn - the Five Elements Mountains - is a cluster of five marble and limestone peaks rising from the coastal plain of Đà Nẵng's Ngũ Hành Sơn district, approximately 7km south of the city centre and midway between Đà Nẵng and Hội An. The name was given by Emperor Minh Mạng in 1837 (the 18th year of his reign), who named each peak after one of the five classical elements based on its natural shape and position: Kim (metal), Mộc (wood), Thủy (water), Hỏa (fire), and Thổ (earth). Of these, Thủy Sơn (Water Mountain) is the only peak open to the public and contains the site's main attractions.",
+          },
+          { type: "heading", text: "A Sacred Site Since the Cham Era" },
+          {
+            type: "paragraph",
+            text: "The mountains have been a sacred site since the Cham civilisation, and the cave temples added by Vietnamese Buddhists and Nguyễn dynasty emperors layer over the earlier Cham sanctuaries.",
+          },
+          { type: "heading", text: "Huyền Không and Other Caves" },
+          {
+            type: "paragraph",
+            text: "The site's defining experience is Huyền Không Cave - a natural limestone cavern where a section of ceiling collapsed centuries ago, creating an opening through which sunlight falls in long shafts onto the Buddhist altars below, most dramatically between 11 AM and 12 PM on clear days. Other notable caves within Thủy Sơn include Tàng Chơn, Vân Thông, and Linh Nham, each with a distinct character and Buddhist shrine.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Marble Mountains (Ngũ Hành Sơn)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Marble Mountains are located at 81 Huyền Trân Công Chúa street in Ngũ Hành Sơn district, approximately 7km south of central Đà Nẵng. By Grab or taxi from Đà Nẵng city centre, the journey takes 15-20 minutes. By motorbike, follow the coastal road south toward Hội An.",
+          },
+          { type: "heading", text: "From Hội An" },
+          {
+            type: "paragraph",
+            text: "From Hội An, the site is approximately 35-40 minutes north by road. The location makes it convenient to stop in transit between the two cities rather than as a separate day trip.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Marble Mountains (Ngũ Hành Sơn)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The visit covers Thủy Sơn peak only - the other four peaks are not open to tourists. The site includes the Linh Ứng Pagoda complex, Huyền Không Cave (the largest cave with the collapsed ceiling and sunlight shafts, best at 11 AM-12 PM), Tàng Chơn Cave, Vân Thông Cave, Linh Nham Cave, stone stairs and walkways between the caves and temples, and viewpoints over all of Đà Nẵng city, the coastline, and the sea.",
+          },
+          { type: "heading", text: "Âm Phủ Cave and the Carving Village" },
+          {
+            type: "paragraph",
+            text: "The Âm Phủ Cave at the base near Gate 2 is a separate 20,000 VND ticket - a descent into a cave carved with Buddhist interpretations of heaven, purgatory, and hell. The marble carving village surrounding the entrance is worth exploring before or after the climb.",
+          },
+          { type: "heading", text: "Time and Effort" },
+          {
+            type: "paragraph",
+            text: "A full visit including Âm Phủ Cave takes 2-3 hours. The stone stairs are steep enough that walking up feels like a genuine trekking effort - the elevator (15,000 VND one-way) is a practical option for those who want to conserve energy for exploring the caves.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Marble Mountains (Ngũ Hành Sơn)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Marble Mountains is one of the most accessible and rewarding half-day activities in central Vietnam and works well as a stop between Đà Nẵng and Hội An rather than a standalone excursion. The combination of the cave light show, the pagoda atmosphere, the war history layers, and the coastal views makes it more layered than most tourist sites of similar scale. Time the visit to arrive by 9 AM to catch the morning sunlight in Huyền Không Cave - this is the single most photographed moment at the site and is only visible on clear mornings.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

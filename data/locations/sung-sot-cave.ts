@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sungSotCave: Location = {
   slug: "sung-sot-cave",
   name: "Sung Sot Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.8442292975383,
@@ -45,14 +45,81 @@ export const sungSotCave: Location = {
     "Book boat tickets and tours in advance, check what's included, bring ID/travel documents, and check the weather forecast before departure.",
   ],
   content: {
-    intro:
-      "Most caves gradually reveal themselves. Sung Sot does the opposite. You squeeze through a narrow limestone crack expecting a small grotto, and suddenly emerge into a chamber large enough to hold a thousand people. Sung Sot - literally 'Surprise' - earned its name in exactly that moment in 1901, when a French scientist made the same crack-to-cathedral discovery and could only exclaim 'Grotte de la Surprise.' Despite being discovered that year, the cave didn't open to tourists until 1993 - nearly a century later. It's the largest cave in Ha Long Bay, covering nearly 12,200 square metres across two main chambers on Bồ Hòn Island, alongside neighbouring Hang Luồn, Hang Trống, and Hang Trinh Nữ near the centre of the bay. The first chamber resembles a grand theatre with a ceiling like rolling velvet, illuminated dramatically, containing rock formations that resemble elephants and seals. The second chamber opens without warning into a vastly larger space - capable of holding a thousand people - filled with rock formations tied to the legend of Thánh Gióng, the mythical warrior who left his horse and sword here after defeating Chinese invaders, with small pools inside said to be his horse's hoofprints. At the highest point of the cave's interior trail, a 'royal garden' area opens up with a clear pool, plants, and birdlife - troops of monkeys regularly descend here looking for fruit.",
-    howToGetThere:
-      "Sung Sot Cave is only accessible by boat - there's no independent way to reach it from shore. From Hạ Long city centre, head 4.1km along Hải Quân road to Bãi Cháy ferry pier, then by boat/speedboat about 14km south to Bồ Hòn Island. Alternatively, depart from Tuần Châu International Port (about 12km from Hạ Long centre) or Hạ Long International Passenger Port (in the city centre). The cave sits on sightseeing Route 2 (about 6 hours total), included on most day cruises and standard 1-2 night overnight cruise itineraries. Book through a shared boat ticket, a tour company, or arrange a private boat through the Bay Management Board.",
-    whatToExpect:
-      "From the boat dock on Bồ Hòn Island, climb 50 stone steps up, then 10 steps down through forest canopy on sturdy stairs with handrails, reaching the cave entrance at 25 metres above sea level. Squeeze through a narrow rock gap into the main chamber - nearly 12,200 sq metres, about 30m at its highest. A lit 800-metre stone walkway guides visitors through both chambers; total visit takes 45-60 minutes including the climb to the exit viewpoint. The first chamber feels theatrical with its velvet-textured ceiling and animal-shaped rock formations; the second chamber, opening suddenly into a vastly larger space, holds the Thánh Gióng legend formations and small hoofprint pools. The exit path loops to a 'royal garden' viewpoint with a clear pool and birdlife - monkeys are commonly spotted here - before descending with bay views.",
-    travelTips:
-      "Sung Sot is Ha Long Bay's most visited cave and the crowds reflect that - arriving in the midday window means sharing the path with dozens of tour groups simultaneously. Cruise itineraries that schedule Sung Sot early in the morning or late afternoon give a noticeably better experience. If you're choosing between Ha Long Bay caves, Sung Sot's second chamber is uniquely large and worth prioritising - it's in a different scale to the other caves on the bay. April-June offers warm weather with comparatively fewer tourists than peak summer; October-December is cooler and also comfortable, though bring a layer for boat decks and cave interior.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Sung Sot Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Most caves gradually reveal themselves. Sung Sot does the opposite. You squeeze through a narrow limestone crack expecting a small grotto, and suddenly emerge into a chamber large enough to hold a thousand people.",
+          },
+          { type: "heading", text: "Discovery and Opening" },
+          {
+            type: "paragraph",
+            text: "Sung Sot - literally 'Surprise' - earned its name in exactly that moment in 1901, when a French scientist made the same crack-to-cathedral discovery and could only exclaim 'Grotte de la Surprise.' Despite being discovered that year, the cave didn't open to tourists until 1993 - nearly a century later.",
+          },
+          { type: "heading", text: "The Two Chambers" },
+          {
+            type: "paragraph",
+            text: "It's the largest cave in Ha Long Bay, covering nearly 12,200 square metres across two main chambers on Bồ Hòn Island, alongside neighbouring Hang Luồn, Hang Trống, and Hang Trinh Nữ near the centre of the bay. The first chamber resembles a grand theatre with a ceiling like rolling velvet, illuminated dramatically, containing rock formations that resemble elephants and seals. The second chamber opens without warning into a vastly larger space - capable of holding a thousand people - filled with rock formations tied to the legend of Thánh Gióng, the mythical warrior who left his horse and sword here after defeating Chinese invaders, with small pools inside said to be his horse's hoofprints.",
+          },
+          { type: "heading", text: "The Royal Garden" },
+          {
+            type: "paragraph",
+            text: "At the highest point of the cave's interior trail, a 'royal garden' area opens up with a clear pool, plants, and birdlife - troops of monkeys regularly descend here looking for fruit.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Sung Sot Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Sung Sot Cave is only accessible by boat - there's no independent way to reach it from shore. From Hạ Long city centre, head 4.1km along Hải Quân road to Bãi Cháy ferry pier, then by boat/speedboat about 14km south to Bồ Hòn Island. Alternatively, depart from Tuần Châu International Port (about 12km from Hạ Long centre) or Hạ Long International Passenger Port (in the city centre).",
+          },
+          { type: "heading", text: "Routes and Tickets" },
+          {
+            type: "paragraph",
+            text: "The cave sits on sightseeing Route 2 (about 6 hours total), included on most day cruises and standard 1-2 night overnight cruise itineraries. Book through a shared boat ticket, a tour company, or arrange a private boat through the Bay Management Board.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Sung Sot Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From the boat dock on Bồ Hòn Island, climb 50 stone steps up, then 10 steps down through forest canopy on sturdy stairs with handrails, reaching the cave entrance at 25 metres above sea level. Squeeze through a narrow rock gap into the main chamber - nearly 12,200 sq metres, about 30m at its highest. A lit 800-metre stone walkway guides visitors through both chambers; total visit takes 45-60 minutes including the climb to the exit viewpoint.",
+          },
+          { type: "heading", text: "The Chambers and the Royal Garden" },
+          {
+            type: "paragraph",
+            text: "The first chamber feels theatrical with its velvet-textured ceiling and animal-shaped rock formations; the second chamber, opening suddenly into a vastly larger space, holds the Thánh Gióng legend formations and small hoofprint pools. The exit path loops to a 'royal garden' viewpoint with a clear pool and birdlife - monkeys are commonly spotted here - before descending with bay views.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Sung Sot Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Sung Sot is Ha Long Bay's most visited cave and the crowds reflect that - arriving in the midday window means sharing the path with dozens of tour groups simultaneously. Cruise itineraries that schedule Sung Sot early in the morning or late afternoon give a noticeably better experience.",
+          },
+          {
+            type: "paragraph",
+            text: "If you're choosing between Ha Long Bay caves, Sung Sot's second chamber is uniquely large and worth prioritising - it's in a different scale to the other caves on the bay. April-June offers warm weather with comparatively fewer tourists than peak summer; October-December is cooler and also comfortable, though bring a layer for boat decks and cave interior.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

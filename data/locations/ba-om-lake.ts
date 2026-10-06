@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baOmLake: Location = {
   slug: "ba-om-lake",
   name: "Ba Om Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["tra-vinh"],
   destination: "mekong-delta",
   lat: 9.917705660783596,
@@ -50,14 +50,82 @@ export const baOmLake: Location = {
     "Bring a hat, sunscreen, and water, especially if you're walking or cycling the lake circuit in the middle of the day",
   ],
   content: {
-    intro:
-      "Ba Om Lake (Ao Bà Om, also called Ao Vuông) is a rectangular man-made reservoir in Trà Vinh city, constructed by the Khmer community as a dry-season water source and sacred site. The lake is approximately 300m x 500m, flanked by close to 500 sao and dầu trees - some estimated at hundreds of years old - and anchored by the Âng Pagoda (Chùa Âng, also known as Angkorajaborey) on its shore, said to date back to around the 10th century and considered one of the oldest Khmer temples in Vietnam. Sources disagree on the size of the surrounding grounds - estimates range from roughly 10 to 60 hectares depending on whether they're counting just the water and immediate temple grounds or a wider area - but the lake and its tree canopy are the consistent centrepiece either way. In the right season, lotus and water lily blooms spread across parts of the lake surface.\n\nThe lake's name comes from a well-known Khmer folk legend, one of around ten variants told locally: villagers once settled a long-running dispute over Khmer marriage customs - specifically, over which side, men or women, should bear the cost and responsibility of proposing - with a nighttime pond-digging contest. Whichever team finished with the bigger, deeper pond by the time the morning star rose would win, and the losing side would have to propose marriage to the other. The women's team, led by a woman remembered as Bà Om, worked through the night while the men's team grew overconfident; near dawn, the women raised a lit lantern on a tall pole to the east, which the men mistook for the morning star and abandoned their digging early. The women's pond turned out bigger and deeper, and the custom that followed - men proposing to women, with children traditionally taking their mother's family name until the French colonial period shifted the practice - is remembered through the lake that still bears her name. According to some tellings, the pond was originally dug round or irregular, and only took its current near-square shape after villagers dreamed of deities scolding them to fix it - hence the alternate name Ao Vuông ('square pond').\n\nTrà Vinh has one of the largest Khmer Krom populations in Vietnam, and the cultural landscape around Ba Om Lake reflects this - the architecture, the monks, the ceremonies, and the community that uses the lake and temple are distinctly Khmer rather than the Vietnamese Buddhist tradition that dominates the rest of the delta. A small Khmer Culture Museum sits within the same complex, displaying traditional costumes, musical instruments, tools, ceramics, and wood carvings. The site was recognised as a National Historic-Cultural Relic in 1994.",
-    howToGetThere:
-      "Ba Om Lake is approximately 5-7km from Trà Vinh city center, within the city itself. From Trà Vinh city, the route is straightforward by motorbike or bicycle - about 20 minutes. Trà Vinh city is approximately 130km from Ho Chi Minh City via the Mekong Delta expressway and Highway 53, taking about 2.5 - 3 hours. From Cần Thơ, the distance is about 100km - roughly 2 hours. There are buses from HCMC to Trà Vinh; the bus station is in the city center from where motorbike taxi reaches the lake. The road from Trà Vinh city to Ba Om Lake passes through Khmer villages and is itself scenic.",
-    whatToExpect:
-      "The lake perimeter path passes under a continuous canopy of ancient sao and dầu trees - the scale and age of the trees give the lakeside an atmosphere found in very few places in the flat delta landscape, their roots often exposed above ground in striking, gnarled shapes. The Âng Pagoda on the shore is a working temple with monks in residence, Angkor-influenced curved tile roofs, intricate reliefs, and imposing Buddha statues that differ distinctly from the Vietnamese Buddhist temples that fill the rest of the region. The lake surface is still and shaded for most of the day, and in the right season carries patches of blooming lotus and water lily. Local families, students, and couples use the lake perimeter as a leisure and social space - it's a popular spot for student camping trips during holidays, casual dates, and newlywed photoshoots, and during festivals hosts folk dance and Dù kê theatrical performances alongside lantern releases. A handful of small drink stalls around the lake are worth stopping at just to sit and cool off in the shade. Allow about 1-1.5 hours to cover the lake, the pagoda, and the small Khmer Culture Museum in the same complex.",
-    travelTips:
-      "Ba Om Lake and Trà Vinh province represent one of the most accessible and least-visited pockets of Khmer Krom culture in Vietnam. The combination of the ancient lake, the old-growth tree canopy, and the active Khmer Buddhist temple creates a place that feels genuinely different from the rest of the Mekong Delta - the tall trees, the Khmer-style pagoda, and the still water together give it a distinctly Khmer atmosphere unlike anywhere else in the delta. If you're expecting something grand or dramatic enough to make jaws drop, this isn't that place - it's a quiet, low-key stop for anyone who wants a change of pace, an interest in Khmer culture, and a bit of fresh air rather than a bucket-list spectacle. If that's what you're after, though, and you're doing a thorough Mekong Delta itinerary that goes beyond the standard Cần Thơ floating market, Trà Vinh with Ba Om Lake and the city's temple cluster is the right next stop - and worth pairing with Chùa Hang (Kompong Chray Pagoda), Chùa Ông Mẹt, or the Ba Trinh stork garden if you have more time in the area.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ba Om Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Om Lake (Ao Bà Om, also called Ao Vuông) is a rectangular man-made reservoir in Trà Vinh city, constructed by the Khmer community as a dry-season water source and sacred site. The lake is approximately 300m x 500m, flanked by close to 500 sao and dầu trees - some estimated at hundreds of years old - and anchored by the Âng Pagoda (Chùa Âng, also known as Angkorajaborey) on its shore, said to date back to around the 10th century and considered one of the oldest Khmer temples in Vietnam. Sources disagree on the size of the surrounding grounds - estimates range from roughly 10 to 60 hectares depending on whether they're counting just the water and immediate temple grounds or a wider area - but the lake and its tree canopy are the consistent centrepiece either way. In the right season, lotus and water lily blooms spread across parts of the lake surface.",
+          },
+          { type: "heading", text: "The Legend of Bà Om" },
+          {
+            type: "paragraph",
+            text: "The lake's name comes from a well-known Khmer folk legend, one of around ten variants told locally: villagers once settled a long-running dispute over Khmer marriage customs - specifically, over which side, men or women, should bear the cost and responsibility of proposing - with a nighttime pond-digging contest. Whichever team finished with the bigger, deeper pond by the time the morning star rose would win, and the losing side would have to propose marriage to the other. The women's team, led by a woman remembered as Bà Om, worked through the night while the men's team grew overconfident; near dawn, the women raised a lit lantern on a tall pole to the east, which the men mistook for the morning star and abandoned their digging early. The women's pond turned out bigger and deeper, and the custom that followed - men proposing to women, with children traditionally taking their mother's family name until the French colonial period shifted the practice - is remembered through the lake that still bears her name. According to some tellings, the pond was originally dug round or irregular, and only took its current near-square shape after villagers dreamed of deities scolding them to fix it - hence the alternate name Ao Vuông ('square pond').",
+          },
+          { type: "heading", text: "Khmer Culture and Heritage Status" },
+          {
+            type: "paragraph",
+            text: "Trà Vinh has one of the largest Khmer Krom populations in Vietnam, and the cultural landscape around Ba Om Lake reflects this - the architecture, the monks, the ceremonies, and the community that uses the lake and temple are distinctly Khmer rather than the Vietnamese Buddhist tradition that dominates the rest of the delta. A small Khmer Culture Museum sits within the same complex, displaying traditional costumes, musical instruments, tools, ceramics, and wood carvings. The site was recognised as a National Historic-Cultural Relic in 1994.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ba Om Lake",
+        blocks: [
+          { type: "heading", text: "From Trà Vinh City" },
+          {
+            type: "paragraph",
+            text: "Ba Om Lake is approximately 5-7km from Trà Vinh city center, within the city itself. From Trà Vinh city, the route is straightforward by motorbike or bicycle - about 20 minutes.",
+          },
+          { type: "heading", text: "Getting to Trà Vinh" },
+          {
+            type: "paragraph",
+            text: "Trà Vinh city is approximately 130km from Ho Chi Minh City via the Mekong Delta expressway and Highway 53, taking about 2.5 - 3 hours. From Cần Thơ, the distance is about 100km - roughly 2 hours. There are buses from HCMC to Trà Vinh; the bus station is in the city center from where motorbike taxi reaches the lake. The road from Trà Vinh city to Ba Om Lake passes through Khmer villages and is itself scenic.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ba Om Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The lake perimeter path passes under a continuous canopy of ancient sao and dầu trees - the scale and age of the trees give the lakeside an atmosphere found in very few places in the flat delta landscape, their roots often exposed above ground in striking, gnarled shapes.",
+          },
+          { type: "heading", text: "Âng Pagoda and the Lake" },
+          {
+            type: "paragraph",
+            text: "The Âng Pagoda on the shore is a working temple with monks in residence, Angkor-influenced curved tile roofs, intricate reliefs, and imposing Buddha statues that differ distinctly from the Vietnamese Buddhist temples that fill the rest of the region. The lake surface is still and shaded for most of the day, and in the right season carries patches of blooming lotus and water lily.",
+          },
+          { type: "heading", text: "Local Life and Time Needed" },
+          {
+            type: "paragraph",
+            text: "Local families, students, and couples use the lake perimeter as a leisure and social space - it's a popular spot for student camping trips during holidays, casual dates, and newlywed photoshoots, and during festivals hosts folk dance and Dù kê theatrical performances alongside lantern releases. A handful of small drink stalls around the lake are worth stopping at just to sit and cool off in the shade. Allow about 1-1.5 hours to cover the lake, the pagoda, and the small Khmer Culture Museum in the same complex.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ba Om Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Om Lake and Trà Vinh province represent one of the most accessible and least-visited pockets of Khmer Krom culture in Vietnam. The combination of the ancient lake, the old-growth tree canopy, and the active Khmer Buddhist temple creates a place that feels genuinely different from the rest of the Mekong Delta - the tall trees, the Khmer-style pagoda, and the still water together give it a distinctly Khmer atmosphere unlike anywhere else in the delta.",
+          },
+          {
+            type: "paragraph",
+            text: "If you're expecting something grand or dramatic enough to make jaws drop, this isn't that place - it's a quiet, low-key stop for anyone who wants a change of pace, an interest in Khmer culture, and a bit of fresh air rather than a bucket-list spectacle. If that's what you're after, though, and you're doing a thorough Mekong Delta itinerary that goes beyond the standard Cần Thơ floating market, Trà Vinh with Ba Om Lake and the city's temple cluster is the right next stop - and worth pairing with Chùa Hang (Kompong Chray Pagoda), Chùa Ông Mẹt, or the Ba Trinh stork garden if you have more time in the area.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

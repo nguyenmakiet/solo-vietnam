@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sonTraPeninsula: Location = {
   slug: "son-tra-peninsula",
   name: "Sơn Trà Peninsula",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: 16.122257078414076,
@@ -49,14 +49,82 @@ export const sonTraPeninsula: Location = {
     "Don't litter and don't disturb wildlife - the peninsula's forest is one of the few remaining habitats for the douc langur, and its survival depends on minimal human interference.",
   ],
   content: {
-    intro:
-      "Sơn Trà Peninsula juts into the sea northeast of Đà Nẵng, rising to 696 metres at its summit and covering 4,439 hectares of protected nature reserve. The peninsula's position - three sides surrounded by water, the fourth connected to the city by a narrow isthmus - has preserved its forest in a way that almost nothing else near a Vietnamese city has matched. Sơn Trà protects one of the world's largest remaining populations of the red-shanked douc langur - a species often described as one of the most beautiful primates on Earth, vivid orange, black, white and grey with a face that looks almost painted, and listed as endangered. The peninsula's combination of protected status, accessible roads, and proximity to a major city makes it one of the few places anywhere where visitors can observe this species without deep-forest expeditions. The site carries historical weight as well. On 1 September 1858, French and Spanish forces fired the first shots of their invasion of Vietnam from Đà Nẵng Bay, landing at the foot of this peninsula - the moment that opened nearly a century of colonial rule. A former US radar installation from the 1960s, known as Trạm Radar 29 or the 'Eye of Indochina', still stands on the slopes; one of Vietnam's eight oldest lighthouses, built by the French and operational since 1902, marks the peninsula's eastern point.",
-    howToGetThere:
-      "Sơn Trà Peninsula is approximately 10-15km northeast of Đà Nẵng city centre, accessible by motorbike or car via the coastal road from Mỹ Khê Beach - the peninsula entrance is near Tiên Sa Port. A scenic loop road covers much of the peninsula (approximately 25km total by motorbike, 1.5-2 hours with stops). Motorbike rental in Đà Nẵng: 100,000-150,000 VND/day. Important: automatic scooters (xe tay ga) are banned on upper mountain roads to Đỉnh Bàn Cờ - you need a manual motorbike (xe số) or car to access the summit area. Grab works for lower attractions (Linh Ứng Pagoda, Bãi Bắc) but a motorbike gives flexibility for wildlife areas and the summit road. Bus 9 (Sơn Trà - Hội An route) passes through the lower peninsula.",
-    whatToExpect:
-      "The peninsula divides into three zones. The lower section near the isthmus holds the main road, Linh Ứng Pagoda (home to the 67-metre Lady Buddha statue - the largest in Vietnam, visible from Mỹ Khê Beach across the bay), and several beach access points including Bãi Bắc and Bãi Nam on the quieter northern side. The mid-slopes are dense primary jungle - the best douc langur habitat. Pull over anywhere along the forest road at dawn and scan the canopy; sightings are most likely in the trees directly above the road in the early morning quiet. The summit area (Đỉnh Bàn Cờ, 696m) holds the Trạm Radar 29 former US radar station, a stone chess table and pieces tied to local legend, and panoramic views over Đà Nẵng Bay and the Marble Mountains. The contrast between the wild forest and the resort city visible below is one of Đà Nẵng's most striking visual experiences. Unlike a national park, Sơn Trà has no formal entrance gate or single visitor centre - exploration feels more like driving through a protected mountain than visiting a managed attraction.",
-    travelTips:
-      "Sơn Trà is consistently underestimated by visitors who focus on the beach and the bridges. A half-day loop - leaving at 5:30 AM for wildlife, stopping at the summit viewpoint, swimming at Bãi Bắc, finishing at Linh Ứng Pagoda - is one of the best half-days available in any Vietnamese city. It is one of the few places in Southeast Asia where you can leave a modern city after sunrise and be watching endangered primates less than thirty minutes later. Few places in Vietnam also combine colonial history, Cold War relics, Buddhist pilgrimage sites, and endangered wildlife within such a compact area. The douc langurs are the main draw for wildlife travellers; seeing them in the wild is genuinely rare given how few accessible populations remain anywhere. Budget at least half a day; a full day allows a more relaxed pace with swimming and time at multiple stops. Check your motorbike's brakes before heading up - the summit road is steep and narrow with little room for error on the descent.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Sơn Trà Peninsula Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Sơn Trà Peninsula juts into the sea northeast of Đà Nẵng, rising to 696 metres at its summit and covering 4,439 hectares of protected nature reserve. The peninsula's position - three sides surrounded by water, the fourth connected to the city by a narrow isthmus - has preserved its forest in a way that almost nothing else near a Vietnamese city has matched.",
+          },
+          { type: "heading", text: "Red-Shanked Douc Langurs" },
+          {
+            type: "paragraph",
+            text: "Sơn Trà protects one of the world's largest remaining populations of the red-shanked douc langur - a species often described as one of the most beautiful primates on Earth, vivid orange, black, white and grey with a face that looks almost painted, and listed as endangered. The peninsula's combination of protected status, accessible roads, and proximity to a major city makes it one of the few places anywhere where visitors can observe this species without deep-forest expeditions.",
+          },
+          { type: "heading", text: "History" },
+          {
+            type: "paragraph",
+            text: "The site carries historical weight as well. On 1 September 1858, French and Spanish forces fired the first shots of their invasion of Vietnam from Đà Nẵng Bay, landing at the foot of this peninsula - the moment that opened nearly a century of colonial rule. A former US radar installation from the 1960s, known as Trạm Radar 29 or the 'Eye of Indochina', still stands on the slopes; one of Vietnam's eight oldest lighthouses, built by the French and operational since 1902, marks the peninsula's eastern point.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Sơn Trà Peninsula",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Sơn Trà Peninsula is approximately 10-15km northeast of Đà Nẵng city centre, accessible by motorbike or car via the coastal road from Mỹ Khê Beach - the peninsula entrance is near Tiên Sa Port. A scenic loop road covers much of the peninsula (approximately 25km total by motorbike, 1.5-2 hours with stops). Motorbike rental in Đà Nẵng: 100,000-150,000 VND/day.",
+          },
+          { type: "heading", text: "Scooter Ban, Grab and Bus" },
+          {
+            type: "paragraph",
+            text: "Important: automatic scooters (xe tay ga) are banned on upper mountain roads to Đỉnh Bàn Cờ - you need a manual motorbike (xe số) or car to access the summit area. Grab works for lower attractions (Linh Ứng Pagoda, Bãi Bắc) but a motorbike gives flexibility for wildlife areas and the summit road. Bus 9 (Sơn Trà - Hội An route) passes through the lower peninsula.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Sơn Trà Peninsula",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The peninsula divides into three zones. The lower section near the isthmus holds the main road, Linh Ứng Pagoda (home to the 67-metre Lady Buddha statue - the largest in Vietnam, visible from Mỹ Khê Beach across the bay), and several beach access points including Bãi Bắc and Bãi Nam on the quieter northern side.",
+          },
+          { type: "heading", text: "Jungle and Douc Langurs" },
+          {
+            type: "paragraph",
+            text: "The mid-slopes are dense primary jungle - the best douc langur habitat. Pull over anywhere along the forest road at dawn and scan the canopy; sightings are most likely in the trees directly above the road in the early morning quiet.",
+          },
+          { type: "heading", text: "The Summit and Exploring" },
+          {
+            type: "paragraph",
+            text: "The summit area (Đỉnh Bàn Cờ, 696m) holds the Trạm Radar 29 former US radar station, a stone chess table and pieces tied to local legend, and panoramic views over Đà Nẵng Bay and the Marble Mountains. The contrast between the wild forest and the resort city visible below is one of Đà Nẵng's most striking visual experiences. Unlike a national park, Sơn Trà has no formal entrance gate or single visitor centre - exploration feels more like driving through a protected mountain than visiting a managed attraction.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Sơn Trà Peninsula",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Sơn Trà is consistently underestimated by visitors who focus on the beach and the bridges. A half-day loop - leaving at 5:30 AM for wildlife, stopping at the summit viewpoint, swimming at Bãi Bắc, finishing at Linh Ứng Pagoda - is one of the best half-days available in any Vietnamese city. It is one of the few places in Southeast Asia where you can leave a modern city after sunrise and be watching endangered primates less than thirty minutes later. Few places in Vietnam also combine colonial history, Cold War relics, Buddhist pilgrimage sites, and endangered wildlife within such a compact area.",
+          },
+          { type: "heading", text: "Langurs, Time and Safety" },
+          {
+            type: "paragraph",
+            text: "The douc langurs are the main draw for wildlife travellers; seeing them in the wild is genuinely rare given how few accessible populations remain anywhere. Budget at least half a day; a full day allows a more relaxed pace with swimming and time at multiple stops. Check your motorbike's brakes before heading up - the summit road is steep and narrow with little room for error on the descent.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

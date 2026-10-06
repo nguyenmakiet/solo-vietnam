@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const imperialCity: Location = {
   slug: "imperial-city-hue",
   name: "Imperial City",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.4677616052903,
@@ -51,14 +51,88 @@ export const imperialCity: Location = {
     "The ruins in the northeast section were not restored - they remain as they were after the 1968 Tết Offensive. The contrast between the rebuilt grandeur and the roofless bombed-out shells is historically honest and deliberately preserved.",
   ],
   content: {
-    intro:
-      "Huế's Imperial City - Đại Nội, or Hoàng Thành - is the second walled enclosure of the Huế Citadel complex, built between 1804 and 1833 under Emperors Gia Long and Minh Mạng of the Nguyễn Dynasty, Vietnam's last imperial family. To build it, Gia Long personally selected the site, relocated 9 villages, reshaped rivers, and mobilised thousands of workers over 29 years. The result was 147 buildings across 3km², following the same cosmological principles as Beijing's Forbidden City - oriented south, surrounded by a moat, organised around an axis of increasingly sacred spaces from Ngọ Môn Gate to the Forbidden Purple City at the centre. The colour hierarchy made power visible in architecture: yellow glazed roof tiles (hoàng lưu ly) marked only the Emperor's axis; blue-green tiles marked everything secondary. Unlike Beijing's Forbidden City - where the great ceremonial courtyards remain largely open and bare - Đại Nội contains thousands of trees planted over two centuries, many originally selected by the court for symbolism, shade, fragrance, or seasonal flowers. The result is a palace complex that feels inhabitable rather than intimidating. UNESCO inscribed it in 1993. The 1968 Tết Offensive destroyed much of the northeast section; those ruins remain deliberately unrestored beside the rebuilt palaces, creating a site that is simultaneously a grand imperial monument and an honest record of what war does to history.",
-    howToGetThere:
-      "The Imperial City sits on the north bank of the Perfume River, about 1km from the main hotel district on the south bank. Walkable in 15-20 minutes, or by bicycle, xe ôm, or Grab. Main entrance: Ngọ Môn Gate (south facade). Áo dài rental shops cluster near the gate. Motorbike and car parking available outside. Entrance and exit gates are different - note your entry point.",
-    whatToExpect:
-      "The visit begins at Ngọ Môn Gate - the ceremonial southern entrance with the five-roofed Lầu Ngũ Phụng pavilion above, where emperors watched festivals from height. The yellow-tiled central axis leads through the Esplanade of Great Salutation to Điện Thái Hòa (Palace of Supreme Harmony) - the most intact building, with red lacquer columns, gilded throne, and the ornate 'nhất thi nhất họa' (one poem, one painting) carvings on every structural element. Beyond is the Forbidden Purple City (Tử Cấm Thành), the emperor's private residence - now mostly open foundations with a few restored pavilions including the recently rebuilt Lầu Kiến Trung (notable for its unusual Á-Âu blended architecture). Duyệt Thị Đường, Vietnam's oldest surviving royal theater, hosts Nhã nhạc court music performances at 10 AM and 3 PM. The Thế Miếu and Hiển Lâm Các in the southwest hold the ancestral altars of the Nguyễn kings. The northeast section - heavily damaged in 1968 - preserves the ruins as they stand: roofless walls, overgrown foundations, scattered tiles.",
-    travelTips:
-      "The Imperial City requires at least 3-4 hours for the main buildings; a full day covers everything comfortably. Arrive at opening time to avoid midday heat and the tourist groups that arrive by bus from 9 AM onwards. The combination of Imperial City, Thiên Mụ Pagoda, and one royal tomb (Khải Định for architecture, Tự Đức for scale and mood) is the standard Huế full-day itinerary. The combo ticket saves money if visiting the tombs. Huế's Imperial City is similar to but distinct from Beijing's Forbidden City: Beijing is monumental stone at 72 hectares with deliberately bare ceremonial courtyards; Đại Nội is 37 hectares, deeply integrated with lotus ponds, trees, and gardens, with architecture adapted to tropical monsoon conditions - lower buildings, elevated foundations for flood tolerance, covered corridors between palaces.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Imperial City Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Huế's Imperial City - Đại Nội, or Hoàng Thành - is the second walled enclosure of the Huế Citadel complex, built between 1804 and 1833 under Emperors Gia Long and Minh Mạng of the Nguyễn Dynasty, Vietnam's last imperial family.",
+          },
+          { type: "heading", text: "Construction and Layout" },
+          {
+            type: "paragraph",
+            text: "To build it, Gia Long personally selected the site, relocated 9 villages, reshaped rivers, and mobilised thousands of workers over 29 years. The result was 147 buildings across 3km², following the same cosmological principles as Beijing's Forbidden City - oriented south, surrounded by a moat, organised around an axis of increasingly sacred spaces from Ngọ Môn Gate to the Forbidden Purple City at the centre. The colour hierarchy made power visible in architecture: yellow glazed roof tiles (hoàng lưu ly) marked only the Emperor's axis; blue-green tiles marked everything secondary.",
+          },
+          { type: "heading", text: "Compared with Beijing's Forbidden City" },
+          {
+            type: "paragraph",
+            text: "Unlike Beijing's Forbidden City - where the great ceremonial courtyards remain largely open and bare - Đại Nội contains thousands of trees planted over two centuries, many originally selected by the court for symbolism, shade, fragrance, or seasonal flowers. The result is a palace complex that feels inhabitable rather than intimidating.",
+          },
+          { type: "heading", text: "UNESCO and the 1968 Ruins" },
+          {
+            type: "paragraph",
+            text: "UNESCO inscribed it in 1993. The 1968 Tết Offensive destroyed much of the northeast section; those ruins remain deliberately unrestored beside the rebuilt palaces, creating a site that is simultaneously a grand imperial monument and an honest record of what war does to history.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Imperial City",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Imperial City sits on the north bank of the Perfume River, about 1km from the main hotel district on the south bank. Walkable in 15-20 minutes, or by bicycle, xe ôm, or Grab.",
+          },
+          { type: "heading", text: "Entrance and Parking" },
+          {
+            type: "paragraph",
+            text: "Main entrance: Ngọ Môn Gate (south facade). Áo dài rental shops cluster near the gate. Motorbike and car parking available outside. Entrance and exit gates are different - note your entry point.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Imperial City",
+        blocks: [
+          { type: "heading", text: "Ngọ Môn and Điện Thái Hòa" },
+          {
+            type: "paragraph",
+            text: "The visit begins at Ngọ Môn Gate - the ceremonial southern entrance with the five-roofed Lầu Ngũ Phụng pavilion above, where emperors watched festivals from height. The yellow-tiled central axis leads through the Esplanade of Great Salutation to Điện Thái Hòa (Palace of Supreme Harmony) - the most intact building, with red lacquer columns, gilded throne, and the ornate 'nhất thi nhất họa' (one poem, one painting) carvings on every structural element.",
+          },
+          { type: "heading", text: "The Forbidden Purple City and Duyệt Thị Đường" },
+          {
+            type: "paragraph",
+            text: "Beyond is the Forbidden Purple City (Tử Cấm Thành), the emperor's private residence - now mostly open foundations with a few restored pavilions including the recently rebuilt Lầu Kiến Trung (notable for its unusual Á-Âu blended architecture). Duyệt Thị Đường, Vietnam's oldest surviving royal theater, hosts Nhã nhạc court music performances at 10 AM and 3 PM.",
+          },
+          { type: "heading", text: "Ancestral Temples and the 1968 Ruins" },
+          {
+            type: "paragraph",
+            text: "The Thế Miếu and Hiển Lâm Các in the southwest hold the ancestral altars of the Nguyễn kings. The northeast section - heavily damaged in 1968 - preserves the ruins as they stand: roofless walls, overgrown foundations, scattered tiles.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Imperial City",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Imperial City requires at least 3-4 hours for the main buildings; a full day covers everything comfortably. Arrive at opening time to avoid midday heat and the tourist groups that arrive by bus from 9 AM onwards.",
+          },
+          { type: "heading", text: "Combining Sites and Tickets" },
+          {
+            type: "paragraph",
+            text: "The combination of Imperial City, Thiên Mụ Pagoda, and one royal tomb (Khải Định for architecture, Tự Đức for scale and mood) is the standard Huế full-day itinerary. The combo ticket saves money if visiting the tombs. Huế's Imperial City is similar to but distinct from Beijing's Forbidden City: Beijing is monumental stone at 72 hectares with deliberately bare ceremonial courtyards; Đại Nội is 37 hectares, deeply integrated with lotus ponds, trees, and gardens, with architecture adapted to tropical monsoon conditions - lower buildings, elevated foundations for flood tolerance, covered corridors between palaces.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

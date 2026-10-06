@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const aPaChai: Location = {
   slug: "a-pa-chai",
   name: "A Pa Chai (Vietnam's Westernmost Point)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dien-bien"],
   destination: "",
   lat: 22.401192335843305,
@@ -47,14 +47,83 @@ export const aPaChai: Location = {
     "Sín Thầu commune is home to seven ethnic groups, with the Hà Nhì making up about 98% of the population - one of the smallest and least-known highland groups in Vietnam, with a distinct culture and architecture visible in the village",
   ],
   content: {
-    intro:
-      "A Pa Chai marks the westernmost point of Vietnam - the peak in Mường Nhé district, Điện Biên province, where Vietnam, Laos, and China converge at a tri-border marker set atop Núi Khoang La San. The point sits at an elevation of 1,864 metres in a landscape of dense mountain forest populated by the Hà Nhì ethnic minority, one of the smallest highland groups in Vietnam - 'A Pa Chải' itself means 'flat, wide land' in the Hà Nhì language. The granite marker - a triangular pillar about 2 metres tall on a 5x5 metre base, with three faces pointing toward each of the three countries - was completed on 27 June 2005 through a joint agreement between all three governments, and Đồn Biên Phòng 317 was established in 2007 to manage the surrounding border area, including the marker itself.\n\nReaching A Pa Chai requires a combination of remote road travel to the district capital of Mường Nhé, a further journey to the Hà Nhì village of Sín Thầu, and registration at Đồn Biên Phòng 317 before the final approach. The journey used to be considerably harder - before border patrol roads were built, the climb from the base involved 4-5 hours on foot through sharp elephant grass tall enough to cut skin. Patrol road construction has steadily cut this down, and as of a May 2026 update, motorbikes can now ride to within roughly 200-300m of the marker, though this newly extended stretch is still rough and under construction. A large flagpole has also been erected near the trailhead in recent years - worth knowing that this is not the tri-border marker itself, which sits about 2.4km further along.",
-    howToGetThere:
-      "A Pa Chai is located in Sín Thầu commune, Mường Nhé district, approximately 250-260km west of Điện Biên Phủ city - reachable but genuinely remote, with the full one-way drive taking around 10 hours on rough roads. From Hanoi, overnight buses run from Mỹ Đình station to Điện Biên Phủ (10-12 hours, departing roughly 6-10 PM, 300,000-450,000 VND); a direct Hanoi-Mường Nhé bus exists but runs infrequently, so an overnight stop in Điện Biên Phủ before continuing is the more practical option for most visitors. From Điện Biên Phủ, rent a high-clearance car or motorbike and follow QL12 through Mường Chà, then Tỉnh lộ 131 through Chà Cang to Sín Thầu - allow 5-6 hours for this stretch. From Sín Thầu, register at Đồn Biên Phòng 317 before continuing; as of May 2026 motorbikes can ride most of the remaining distance, leaving a final 200-300m on foot, though check current road conditions locally since this section is still being finished. The total journey from Điện Biên Phủ is realistically a minimum of 2-3 days once travel time, registration, and the return trip are accounted for.",
-    whatToExpect:
-      "At Đồn Biên Phòng 317, registration is straightforward for Vietnamese citizens with valid ID; a border guard soldier then escorts your group the rest of the way, both to guide you and to make sure no one strays across the border by mistake. Along the way, a large flagpole near the trailhead is easy to mistake for the destination, but the actual tri-border marker is about 2.4km further on. The marker itself is a granite pillar on a paved 5x5m base, its three faces pointing toward Vietnam, Laos, and China, each engraved with that country's national emblem and name - a striking, simple monument on a forest ridge with sweeping views into Laos and China on clear days. The Hà Nhì village of Sín Thầu along the way is a significant cultural experience in itself - traditional architecture and daily life that few outside visitors ever encounter. Depending on the latest road conditions, expect anywhere from a steep, roughly hour-long climb (with a faster descent) to a much shorter final walk of a few hundred metres, given how quickly the access road has been improving. Allow about 3-4 hours round trip from Đồn Biên Phòng 317 to the marker and back.",
-    travelTips:
-      "A Pa Chai is for travellers who specifically want to reach one of Vietnam's geographic extremities and are prepared for the logistics involved - multiple days of remote road travel, a border post registration process, and genuine physical distance from any city or major town. Foreign visitors should expect extra steps and should reach out to local homestays or guesthouses ahead of time to understand current requirements, since procedures for non-Vietnamese citizens are noticeably more involved. It's not a casual add-on to a Điện Biên itinerary - treat it as the primary reason for visiting Mường Nhé district, and plan for 2-3 days minimum from Điện Biên Phủ there and back. Time your trip with one of the Northwest's seasonal highlights if you can (golden rice terraces in Sep-Oct, wild sunflower in Nov-Dec, plum, peach, or bauhinia blossoms Jan-Mar) and consider combining the trip with Mù Cang Chải, Sa Pa, or Y Tý for a broader Northwest loop, since you'll already be deep in the region. The reward is proportional to the effort: standing at the point where three countries' borders meet, in a part of Vietnam that sees a fraction of the visitors of almost anywhere else in the country. Visitors must stay on the Vietnamese side of the marker and follow the escorting border guards' instructions at all times - this is a working border post, not a place to step across into Laos or China.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes A Pa Chai (Vietnam's Westernmost Point) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "A Pa Chai marks the westernmost point of Vietnam - the peak in Mường Nhé district, Điện Biên province, where Vietnam, Laos, and China converge at a tri-border marker set atop Núi Khoang La San. The point sits at an elevation of 1,864 metres in a landscape of dense mountain forest populated by the Hà Nhì ethnic minority, one of the smallest highland groups in Vietnam - 'A Pa Chải' itself means 'flat, wide land' in the Hà Nhì language. The granite marker - a triangular pillar about 2 metres tall on a 5x5 metre base, with three faces pointing toward each of the three countries - was completed on 27 June 2005 through a joint agreement between all three governments, and Đồn Biên Phòng 317 was established in 2007 to manage the surrounding border area, including the marker itself.",
+          },
+          { type: "heading", text: "The Journey" },
+          {
+            type: "paragraph",
+            text: "Reaching A Pa Chai requires a combination of remote road travel to the district capital of Mường Nhé, a further journey to the Hà Nhì village of Sín Thầu, and registration at Đồn Biên Phòng 317 before the final approach. The journey used to be considerably harder - before border patrol roads were built, the climb from the base involved 4-5 hours on foot through sharp elephant grass tall enough to cut skin. Patrol road construction has steadily cut this down, and as of a May 2026 update, motorbikes can now ride to within roughly 200-300m of the marker, though this newly extended stretch is still rough and under construction.",
+          },
+          { type: "heading", text: "The Flagpole Is Not the Marker" },
+          {
+            type: "paragraph",
+            text: "A large flagpole has also been erected near the trailhead in recent years - worth knowing that this is not the tri-border marker itself, which sits about 2.4km further along.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to A Pa Chai (Vietnam's Westernmost Point)",
+        blocks: [
+          { type: "heading", text: "From Hanoi to Điện Biên Phủ" },
+          {
+            type: "paragraph",
+            text: "A Pa Chai is located in Sín Thầu commune, Mường Nhé district, approximately 250-260km west of Điện Biên Phủ city - reachable but genuinely remote, with the full one-way drive taking around 10 hours on rough roads. From Hanoi, overnight buses run from Mỹ Đình station to Điện Biên Phủ (10-12 hours, departing roughly 6-10 PM, 300,000-450,000 VND); a direct Hanoi-Mường Nhé bus exists but runs infrequently, so an overnight stop in Điện Biên Phủ before continuing is the more practical option for most visitors.",
+          },
+          { type: "heading", text: "From Điện Biên Phủ to Sín Thầu" },
+          {
+            type: "paragraph",
+            text: "From Điện Biên Phủ, rent a high-clearance car or motorbike and follow QL12 through Mường Chà, then Tỉnh lộ 131 through Chà Cang to Sín Thầu - allow 5-6 hours for this stretch. From Sín Thầu, register at Đồn Biên Phòng 317 before continuing; as of May 2026 motorbikes can ride most of the remaining distance, leaving a final 200-300m on foot, though check current road conditions locally since this section is still being finished. The total journey from Điện Biên Phủ is realistically a minimum of 2-3 days once travel time, registration, and the return trip are accounted for.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at A Pa Chai (Vietnam's Westernmost Point)",
+        blocks: [
+          { type: "heading", text: "Registration and the Flagpole" },
+          {
+            type: "paragraph",
+            text: "At Đồn Biên Phòng 317, registration is straightforward for Vietnamese citizens with valid ID; a border guard soldier then escorts your group the rest of the way, both to guide you and to make sure no one strays across the border by mistake. Along the way, a large flagpole near the trailhead is easy to mistake for the destination, but the actual tri-border marker is about 2.4km further on.",
+          },
+          { type: "heading", text: "The Marker" },
+          {
+            type: "paragraph",
+            text: "The marker itself is a granite pillar on a paved 5x5m base, its three faces pointing toward Vietnam, Laos, and China, each engraved with that country's national emblem and name - a striking, simple monument on a forest ridge with sweeping views into Laos and China on clear days.",
+          },
+          { type: "heading", text: "Sín Thầu and the Climb" },
+          {
+            type: "paragraph",
+            text: "The Hà Nhì village of Sín Thầu along the way is a significant cultural experience in itself - traditional architecture and daily life that few outside visitors ever encounter. Depending on the latest road conditions, expect anywhere from a steep, roughly hour-long climb (with a faster descent) to a much shorter final walk of a few hundred metres, given how quickly the access road has been improving. Allow about 3-4 hours round trip from Đồn Biên Phòng 317 to the marker and back.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for A Pa Chai (Vietnam's Westernmost Point)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "A Pa Chai is for travellers who specifically want to reach one of Vietnam's geographic extremities and are prepared for the logistics involved - multiple days of remote road travel, a border post registration process, and genuine physical distance from any city or major town. Foreign visitors should expect extra steps and should reach out to local homestays or guesthouses ahead of time to understand current requirements, since procedures for non-Vietnamese citizens are noticeably more involved. It's not a casual add-on to a Điện Biên itinerary - treat it as the primary reason for visiting Mường Nhé district, and plan for 2-3 days minimum from Điện Biên Phủ there and back.",
+          },
+          {
+            type: "paragraph",
+            text: "Time your trip with one of the Northwest's seasonal highlights if you can (golden rice terraces in Sep-Oct, wild sunflower in Nov-Dec, plum, peach, or bauhinia blossoms Jan-Mar) and consider combining the trip with Mù Cang Chải, Sa Pa, or Y Tý for a broader Northwest loop, since you'll already be deep in the region. The reward is proportional to the effort: standing at the point where three countries' borders meet, in a part of Vietnam that sees a fraction of the visitors of almost anywhere else in the country. Visitors must stay on the Vietnamese side of the marker and follow the escorting border guards' instructions at all times - this is a working border post, not a place to step across into Laos or China.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

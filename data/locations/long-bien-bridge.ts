@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const longBienBridge: Location = {
   slug: "long-bien-bridge",
   name: "Long Bien Bridge",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.04008590793085,
@@ -52,14 +52,82 @@ export const longBienBridge: Location = {
     "Traffic peaks 6-9 AM and 4-7:30 PM on the approach roads - cars aren't permitted on the bridge itself (only trains, motorbikes, bicycles, and pedestrians), so parking nearby in the Old Quarter and walking or cycling up is the way to go. Bus routes 01, 18, 34, 36 CT, 41, 50, and 55B all stop near the foot of the bridge",
   ],
   content: {
-    intro:
-      "Long Bien Bridge (Cầu Long Biên) is Hanoi's oldest and most historically layered river crossing, a steel bridge spanning the Red River between the Long Biên and Hoàn Kiếm areas. Despite a persistent myth linking it to Gustave Eiffel, the bridge was designed and built by the rival French firm Daydé & Pillé, selected by Governor-General Paul Doumer in 1898 on a budget of 5.9 million francs (the project ultimately cost about 6.2 million). Construction ran from 1899 to 1902. The steel truss structure - 19 spans on 20 piers, running about 2,290 metres across the river, plus a further 896-metre stone-built approach causeway leading up to the western end - does share the same lattice ironwork style Eiffel's company was known for, which is likely why the comparison stuck; Hanoians have long nicknamed it 'a horizontal Eiffel Tower in the heart of the city,' alongside other names like 'the Dragon's Back' and 'a silk ribbon draped across the Red River.' At 4.75 metres wide, the bridge carries a single rail track down the centre flanked by two lanes for motorbikes and handcarts, with a narrow pedestrian strip on the outer edge of each side. At completion, contemporary French reports described it as the world's second-longest bridge after the Brooklyn Bridge - a widely repeated claim, if not independently verified here.\n\nOriginally named Cầu Doumer after the governor-general (and known informally to locals as cầu Sông Cái, 'Big River Bridge'), it was renamed Long Biên in 1945 by Hanoi mayor Trần Văn Lai. On September 2, 1945, thousands of people from the outlying districts crossed the bridge into the city to hear Ho Chi Minh read the Declaration of Independence at Ba Đình Square, and it stood witness again to the city's liberation celebrations in October 1954 and to reunification celebrations in 1975. During the American War, the bridge was targeted repeatedly by US bombing campaigns between 1967 and 1972 - sections were destroyed and rebuilt multiple times, and the mismatched repair work is still visible in the bridge's current structure. Today the bridge carries a single railway track, a motorcycle and bicycle lane, and a pedestrian path, and remains in active daily use - though cars have long been banned from crossing it.",
-    howToGetThere:
-      "Long Bien Bridge is located at the eastern edge of the Old Quarter, approximately 1km from Hoan Kiem Lake. The Hanoi-side entrance is accessible on foot from the Old Quarter in around 15 minutes via Hàng Chiếu or Trần Nhật Duật streets. The bridge entrance is adjacent to Long Bien train station on the Hanoi side. Grab or taxi from central Hanoi takes 5-10 minutes, though traffic on and around the bridge peaks 6-9 AM and 4-7:30 PM, so walking up after parking nearby is often faster than driving during those windows. Bus routes 01, 18, 34, 36 CT, 41, 50, and 55B stop near the foot of the bridge for those without their own transport.",
-    whatToExpect:
-      "Walking or cycling the full bridge length takes approximately 20-30 minutes one way. The pedestrian path runs alongside the railway track with open views across the Red River in both directions - the river is wide at this point and the views extend to market gardens and flood plain villages on the far bank. Train crossings happen several times daily and are audible and visible from the pedestrian path. The bridge surface is uneven and the walkway is narrow in sections - comfortable walking shoes are recommended, and it's worth avoiding contact with the aging railings. Partway across, a staircase leads down to the Red River rock beach (bãi đá sông Hồng), a quiet market-garden area that's especially photogenic during reed grass season (roughly October-November). The Long Biên side of the bridge connects to a network of market garden villages on the Red River flood plain that are worth exploring by bicycle. In the evenings, especially in winter, roadside stalls near the bridge sell roasted corn and sweet potato - a good way to end a sunset walk, as long as you confirm prices before ordering.",
-    travelTips:
-      "Long Bien Bridge works well as a morning walk from the Old Quarter combined with a visit to the Long Bien wholesale market on the Hanoi side - one of the largest and most active early-morning markets in the city. It's equally worthwhile in the late afternoon, when locals come out to walk, cycle, and watch the sunset over the river. The bridge itself takes around 30-45 minutes to cross and return, and the experience of walking an active colonial railway bridge above the Red River - past the visible bomb damage repairs - is one of the more atmospheric free activities available in Hanoi. One detail that surprises visitors: motorbikes on the bridge travel on the left, the opposite of the rest of Vietnam. The popular explanation - that it avoids crossing the train track - doesn't hold up structurally and is largely considered a myth. A more commonly cited account: the bridge originally carried right-hand traffic, but uneven colonial-era cargo loading and an imperfect geological survey caused it to lean over time, so French engineers shifted traffic to the left to help rebalance it. The habit stuck after 1954 and has remained ever since.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Long Bien Bridge Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Long Bien Bridge (Cầu Long Biên) is Hanoi's oldest and most historically layered river crossing, a steel bridge spanning the Red River between the Long Biên and Hoàn Kiếm areas.",
+          },
+          { type: "heading", text: "Design and Construction" },
+          {
+            type: "paragraph",
+            text: "Despite a persistent myth linking it to Gustave Eiffel, the bridge was designed and built by the rival French firm Daydé & Pillé, selected by Governor-General Paul Doumer in 1898 on a budget of 5.9 million francs (the project ultimately cost about 6.2 million). Construction ran from 1899 to 1902. The steel truss structure - 19 spans on 20 piers, running about 2,290 metres across the river, plus a further 896-metre stone-built approach causeway leading up to the western end - does share the same lattice ironwork style Eiffel's company was known for, which is likely why the comparison stuck; Hanoians have long nicknamed it 'a horizontal Eiffel Tower in the heart of the city,' alongside other names like 'the Dragon's Back' and 'a silk ribbon draped across the Red River.' At 4.75 metres wide, the bridge carries a single rail track down the centre flanked by two lanes for motorbikes and handcarts, with a narrow pedestrian strip on the outer edge of each side. At completion, contemporary French reports described it as the world's second-longest bridge after the Brooklyn Bridge - a widely repeated claim, if not independently verified here.",
+          },
+          { type: "heading", text: "Names and History" },
+          {
+            type: "paragraph",
+            text: "Originally named Cầu Doumer after the governor-general (and known informally to locals as cầu Sông Cái, 'Big River Bridge'), it was renamed Long Biên in 1945 by Hanoi mayor Trần Văn Lai. On September 2, 1945, thousands of people from the outlying districts crossed the bridge into the city to hear Ho Chi Minh read the Declaration of Independence at Ba Đình Square, and it stood witness again to the city's liberation celebrations in October 1954 and to reunification celebrations in 1975. During the American War, the bridge was targeted repeatedly by US bombing campaigns between 1967 and 1972 - sections were destroyed and rebuilt multiple times, and the mismatched repair work is still visible in the bridge's current structure.",
+          },
+          { type: "heading", text: "The Bridge Today" },
+          {
+            type: "paragraph",
+            text: "Today the bridge carries a single railway track, a motorcycle and bicycle lane, and a pedestrian path, and remains in active daily use - though cars have long been banned from crossing it.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Long Bien Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Long Bien Bridge is located at the eastern edge of the Old Quarter, approximately 1km from Hoan Kiem Lake. The Hanoi-side entrance is accessible on foot from the Old Quarter in around 15 minutes via Hàng Chiếu or Trần Nhật Duật streets. The bridge entrance is adjacent to Long Bien train station on the Hanoi side.",
+          },
+          { type: "heading", text: "Grab, Taxi and Bus" },
+          {
+            type: "paragraph",
+            text: "Grab or taxi from central Hanoi takes 5-10 minutes, though traffic on and around the bridge peaks 6-9 AM and 4-7:30 PM, so walking up after parking nearby is often faster than driving during those windows. Bus routes 01, 18, 34, 36 CT, 41, 50, and 55B stop near the foot of the bridge for those without their own transport.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Long Bien Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Walking or cycling the full bridge length takes approximately 20-30 minutes one way. The pedestrian path runs alongside the railway track with open views across the Red River in both directions - the river is wide at this point and the views extend to market gardens and flood plain villages on the far bank. Train crossings happen several times daily and are audible and visible from the pedestrian path. The bridge surface is uneven and the walkway is narrow in sections - comfortable walking shoes are recommended, and it's worth avoiding contact with the aging railings.",
+          },
+          { type: "heading", text: "The Red River Rock Beach and Beyond" },
+          {
+            type: "paragraph",
+            text: "Partway across, a staircase leads down to the Red River rock beach (bãi đá sông Hồng), a quiet market-garden area that's especially photogenic during reed grass season (roughly October-November). The Long Biên side of the bridge connects to a network of market garden villages on the Red River flood plain that are worth exploring by bicycle. In the evenings, especially in winter, roadside stalls near the bridge sell roasted corn and sweet potato - a good way to end a sunset walk, as long as you confirm prices before ordering.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Long Bien Bridge",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Long Bien Bridge works well as a morning walk from the Old Quarter combined with a visit to the Long Bien wholesale market on the Hanoi side - one of the largest and most active early-morning markets in the city. It's equally worthwhile in the late afternoon, when locals come out to walk, cycle, and watch the sunset over the river. The bridge itself takes around 30-45 minutes to cross and return, and the experience of walking an active colonial railway bridge above the Red River - past the visible bomb damage repairs - is one of the more atmospheric free activities available in Hanoi.",
+          },
+          { type: "heading", text: "Why Motorbikes Keep Left" },
+          {
+            type: "paragraph",
+            text: "One detail that surprises visitors: motorbikes on the bridge travel on the left, the opposite of the rest of Vietnam. The popular explanation - that it avoids crossing the train track - doesn't hold up structurally and is largely considered a myth. A more commonly cited account: the bridge originally carried right-hand traffic, but uneven colonial-era cargo loading and an imperfect geological survey caused it to lean over time, so French engineers shifted traffic to the left to help rebalance it. The habit stuck after 1954 and has remained ever since.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
