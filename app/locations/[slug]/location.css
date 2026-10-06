@@ -390,10 +390,11 @@
   font-size: 16.5px; line-height: 1.8;
   color: var(--color-ink);
 }
-.content-section p.rt-para { margin-top: 16px; }
-.content-body > p:first-child {
-  font-size: 18px; line-height: 1.7;
-}
+/* Every paragraph after another paragraph gets the same gap, whether it came
+   from a blank-line split, an auto-split or a separate richSections block. */
+.content-body > p + p { margin-top: 16px; }
+/* No enlarged lede: all body paragraphs share one size, so a section split
+   into several paragraphs never shows mixed font sizes. */
 /* Inline links from RichTextString fields (content, tips, FAQ, overview) */
 .rt-link {
   color: var(--color-teal);
@@ -655,7 +656,6 @@
   .month-strip .month-cell:nth-child(-n + 6) { border-bottom: 1px solid var(--color-line); }
   .map-wrap iframe { height: 240px; }
   .content-section p { font-size: 16px; }
-  .content-body > p:first-child { font-size: 17px; }
   .bottom-cta { padding: 40px 0; }
 }
 
@@ -730,7 +730,6 @@
   .content-body .rc-callout,
   .content-body .rc-div { max-width: none; }
   .content-section p { font-size: 17px; }
-  .content-body > p:first-child { font-size: 19px; line-height: 1.65; }
   .content-body > .rc-h:first-child { margin-top: 0; }
   .rc-ul li { font-size: 16.5px; }
 

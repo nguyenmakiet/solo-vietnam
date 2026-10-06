@@ -55,7 +55,7 @@ export default function RichText({ text }: { text: string }) {
   return (
     <>
       {paragraphs.map((para, i) => (
-        <p key={i} className={i > 0 ? "rt-para" : undefined}>
+        <p key={i}>
           {parseInline(para, `p${i}`)}
         </p>
       ))}
