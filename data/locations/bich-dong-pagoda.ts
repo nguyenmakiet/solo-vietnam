@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bichDongPagoda: Location = {
   slug: "bich-dong-pagoda",
   name: "Bích Động Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.22892866015645,
@@ -49,14 +49,86 @@ export const bichDongPagoda: Location = {
     "Part of the Tràng An Scenic Landscape Complex, designated a UNESCO Mixed Cultural and Natural World Heritage Site in 2014 and a national special heritage site in 2012.",
   ],
   content: {
-    intro:
-      "Bích Động Pagoda is a complex of three cave temples built vertically into a limestone karst face above Văn Lâm village, about 2km from the Tam Cốc boat dock in Ninh Bình. The site has a recorded history dating to 1428, though the current temple form was established in 1705 by two monks - Trí Kiên and Trí Thể - sworn brothers from different provinces who had spent years travelling to spread Buddhism before settling here. They rebuilt the temple in the unusual 'chữ Tam' (三) arrangement: three separate pagodas climbing the mountain in vertical alignment rather than the horizontal or courtyard plans typical of most Vietnamese Buddhist temples. The lower pagoda sits at the mountain's foot; more than 100 stone steps lead to the middle pagoda, partly built inside a cave; and the upper pagoda offers open views over the karst and rice plains below. The complex was historically called 'Bạch Ngọc Thạch Sơn Đồng' until Prince-Lord Trịnh Sâm renamed it 'Bích Động' in 1774, the same year it was given the title 'Nam Thiên Đệ Nhị Động' - the second most beautiful grotto in Vietnam, after Hương Tích near Hanoi. After around 300 years of continuous use, the complex became part of the Tràng An Scenic Landscape Complex, recognised as a national special heritage site in 2012 and a UNESCO Mixed Cultural and Natural World Heritage Site in 2014.",
-    howToGetThere:
-      "Bích Động is in Văn Lâm village, Hoa Lư district, about 2km from the Tam Cốc boat dock on the Ngô Đồng River. Most visitors arrive from Tam Cốc by bicycle (10-15 minutes, flat countryside road - the best option), motorbike, or on foot. From Ninh Bình city, about 10km by motorbike or bicycle. The site is almost always visited in combination with a Tam Cốc boat tour - do the boat tour first, then cycle or ride to Bích Động. Bicycles can be rented at the Tam Cốc dock for around 30,000-50,000 VND/day.",
-    whatToExpect:
-      "Before reaching the first pagoda, visitors cross a narrow stone bridge spanning a lotus pond - framed by the limestone cliffs rising behind it, this entrance is one of Ninh Bình's most recognisable photographs, and worth pausing at before climbing. The visit then follows a single path upward through the three pagodas. Chùa Hạ (Lower Pagoda) at the base is the largest and most accessible, with a courtyard and traditional wooden architecture. From here, 100+ steep stone steps (slippery when wet, so tread carefully) lead up through the karst to Chùa Trung (Middle Pagoda), built partly inside a natural cave - the most dramatic of the three, with stalactites visible overhead and the large bell cast in 1707 hanging nearby in the adjacent Hang Tối (Dark Cave). Continuing upward, Chùa Thượng (Upper Pagoda) is the smallest but highest point, offering unobstructed views over the Ninh Bình karst landscape and rice fields stretching to the horizon. Descending by the same path, the afternoon light hitting the karst faces from the west makes the late afternoon the best time for photography.",
-    travelTips:
-      "Rather than replacing Tam Cốc or Tràng An, Bích Động complements them. After spending hours on the river, climbing through the pagodas offers a completely different perspective of the same limestone landscape - the karst that looks dramatic from water level becomes something else entirely when you're walking up through it. The middle cave pagoda is the visual highlight - the combination of Buddhist altar, natural stalactites, carved stone, and the 1707 bell in a cave setting is genuinely unusual. The upper pagoda's viewpoint is worth the extra effort beyond Chùa Trung. Visit late afternoon (around 4 PM) for the best light; late May (timing varies slightly by year) for golden rice fields below; and avoid rainy days when the stone steps become hazardous. Unlike many temples where the destination is the main hall itself, at Bích Động the journey upward is as much the attraction as the temples - each level reveals a different relationship between the architecture and the rock around it. Entry is free, so budget only for donations, bicycle hire, and optional refreshments at the entrance stalls.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bích Động Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bích Động Pagoda is a complex of three cave temples built vertically into a limestone karst face above Văn Lâm village, about 2km from the Tam Cốc boat dock in Ninh Bình.",
+          },
+          { type: "heading", text: "History and the Three-Tier Layout" },
+          {
+            type: "paragraph",
+            text: "The site has a recorded history dating to 1428, though the current temple form was established in 1705 by two monks - Trí Kiên and Trí Thể - sworn brothers from different provinces who had spent years travelling to spread Buddhism before settling here. They rebuilt the temple in the unusual 'chữ Tam' (三) arrangement: three separate pagodas climbing the mountain in vertical alignment rather than the horizontal or courtyard plans typical of most Vietnamese Buddhist temples. The lower pagoda sits at the mountain's foot; more than 100 stone steps lead to the middle pagoda, partly built inside a cave; and the upper pagoda offers open views over the karst and rice plains below.",
+          },
+          { type: "heading", text: "The Name and UNESCO Status" },
+          {
+            type: "paragraph",
+            text: "The complex was historically called 'Bạch Ngọc Thạch Sơn Đồng' until Prince-Lord Trịnh Sâm renamed it 'Bích Động' in 1774, the same year it was given the title 'Nam Thiên Đệ Nhị Động' - the second most beautiful grotto in Vietnam, after Hương Tích near Hanoi. After around 300 years of continuous use, the complex became part of the Tràng An Scenic Landscape Complex, recognised as a national special heritage site in 2012 and a UNESCO Mixed Cultural and Natural World Heritage Site in 2014.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bích Động Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bích Động is in Văn Lâm village, Hoa Lư district, about 2km from the Tam Cốc boat dock on the Ngô Đồng River. Most visitors arrive from Tam Cốc by bicycle (10-15 minutes, flat countryside road - the best option), motorbike, or on foot. From Ninh Bình city, about 10km by motorbike or bicycle.",
+          },
+          { type: "heading", text: "Combining with Tam Cốc" },
+          {
+            type: "paragraph",
+            text: "The site is almost always visited in combination with a Tam Cốc boat tour - do the boat tour first, then cycle or ride to Bích Động. Bicycles can be rented at the Tam Cốc dock for around 30,000-50,000 VND/day.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bích Động Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Before reaching the first pagoda, visitors cross a narrow stone bridge spanning a lotus pond - framed by the limestone cliffs rising behind it, this entrance is one of Ninh Bình's most recognisable photographs, and worth pausing at before climbing. The visit then follows a single path upward through the three pagodas.",
+          },
+          { type: "heading", text: "Chùa Hạ and the Climb" },
+          {
+            type: "paragraph",
+            text: "Chùa Hạ (Lower Pagoda) at the base is the largest and most accessible, with a courtyard and traditional wooden architecture. From here, 100+ steep stone steps (slippery when wet, so tread carefully) lead up through the karst to Chùa Trung (Middle Pagoda), built partly inside a natural cave - the most dramatic of the three, with stalactites visible overhead and the large bell cast in 1707 hanging nearby in the adjacent Hang Tối (Dark Cave).",
+          },
+          { type: "heading", text: "Chùa Thượng and the Descent" },
+          {
+            type: "paragraph",
+            text: "Continuing upward, Chùa Thượng (Upper Pagoda) is the smallest but highest point, offering unobstructed views over the Ninh Bình karst landscape and rice fields stretching to the horizon. Descending by the same path, the afternoon light hitting the karst faces from the west makes the late afternoon the best time for photography.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bích Động Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Rather than replacing Tam Cốc or Tràng An, Bích Động complements them. After spending hours on the river, climbing through the pagodas offers a completely different perspective of the same limestone landscape - the karst that looks dramatic from water level becomes something else entirely when you're walking up through it.",
+          },
+          {
+            type: "paragraph",
+            text: "The middle cave pagoda is the visual highlight - the combination of Buddhist altar, natural stalactites, carved stone, and the 1707 bell in a cave setting is genuinely unusual. The upper pagoda's viewpoint is worth the extra effort beyond Chùa Trung.",
+          },
+          { type: "heading", text: "Timing and Cost" },
+          {
+            type: "paragraph",
+            text: "Visit late afternoon (around 4 PM) for the best light; late May (timing varies slightly by year) for golden rice fields below; and avoid rainy days when the stone steps become hazardous. Unlike many temples where the destination is the main hall itself, at Bích Động the journey upward is as much the attraction as the temples - each level reveals a different relationship between the architecture and the rock around it. Entry is free, so budget only for donations, bicycle hire, and optional refreshments at the entrance stalls.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

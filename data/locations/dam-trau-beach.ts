@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const damTrauBeach: Location = {
   slug: "dam-trau-beach",
   name: "Đầm Trầu beach",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["vung-tau"],
   destination: "con-dao",
   lat: 8.734371501177048,
@@ -48,14 +48,78 @@ export const damTrauBeach: Location = {
     "Drinks from the beachside cafés are fine, but some visitors find the full restaurant meals overpriced for what you get",
   ],
   content: {
-    intro:
-      "Bãi Đầm Trầu takes its name from a legend of impossible love: a young man named Cau rescued a girl named Trầu from drowning at sea, and the two fell for each other - only to discover they were half-siblings. Cau fled to another island, where a betel palm grew on his grave, giving that island its name, Hòn Cau. Trầu returned each day to the cliff where they had met, and when the truth finally reached her, she threw herself into the sea. The bay where she fell is Đầm Trầu. The legend aside, the beach itself is one of the most distinctive in Vietnam: a crescent of fine white sand (reports vary on the exact length, from around 700m to 1km) backed by dense primary forest, with rocky outcrops, a coral reef visible in the shallows, and a peculiarity that earns it a category of its own - the beach sits directly underneath the approach path to Cỏ Ống Airport, just a little over 1km away. Multiple times a day, aircraft pass low overhead as they come in to land, close enough to feel the engines, creating one of the most photogenic and improbable beach backdrops in the country. In 2021, Travel + Leisure ranked it among the top 25 most beautiful beaches in the world.",
-    howToGetThere:
-      "Bãi Đầm Trầu is roughly 14km north of Con Son town, very close to Cỏ Ống Airport - the turnoff is about 200m before the airport itself. From the town centre, follow the Cỏ Ống road north - the beach is well-signposted and the route passes through forested sections with gentle hills before descending to the coast. By motorbike the journey takes 25–30 minutes; by taxi about 20 minutes. From the airport itself, it is only 5–10 minutes away - worth stopping at if arriving by air. To reach Côn Đảo: fly direct from Ho Chi Minh City (around 45 minutes), or take a high-speed ferry from Vũng Tàu (about 3–4 hours) or from Trần Đề port in Sóc Trăng (about 2 hours).",
-    whatToExpect:
-      "The beach curves in a crescent shape, bordered on both sides by rocky headlands with coral and rock pools. The water is clear and calm enough for swimming and snorkelling close to shore, best at low tide; the coral reef is accessible without a boat. A stream near the beach entrance needs crossing, easiest with water shoes and before the tide comes in too far. The forest at the back of the beach provides intermittent shade and the air is noticeably cooler than the open coast. Deckchairs and hammocks can be rented for a modest hourly fee if you'd rather not sit on the sand. The main draw beyond the sand and water is the plane-spotting: flights approach from the north and pass very low directly over the beach before touching down on the runway just behind the tree line. Simple seafood shacks operate seasonally near the beach, generally from around midday until dusk. Keep an eye on food and drinks, since monkeys near the western end of the beach are known to steal from unattended bags. There are no permanent facilities beyond this, which contributes to the beach's relatively undeveloped character despite its international recognition.",
-    travelTips:
-      "Bãi Đầm Trầu works best as a half-day trip combined with Bãi Suối Nóng - a small secluded beach accessible on foot via a short forest trail from the left side of the main beach. Late afternoon is a particularly peaceful time to visit, as the crowds thin out and the evening light can be excellent - overnight camping is not permitted on the beach, though, so plan to head back before dark. Côn Đảo as a whole has very limited ATMs (only two on the island as of recent reports), so bring enough cash before you arrive. Snorkelling gear should ideally be packed from the mainland.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Đầm Trầu beach Special",
+        blocks: [
+          { type: "heading", text: "The Legend of Cau and Trầu" },
+          {
+            type: "paragraph",
+            text: "Bãi Đầm Trầu takes its name from a legend of impossible love: a young man named Cau rescued a girl named Trầu from drowning at sea, and the two fell for each other - only to discover they were half-siblings. Cau fled to another island, where a betel palm grew on his grave, giving that island its name, Hòn Cau. Trầu returned each day to the cliff where they had met, and when the truth finally reached her, she threw herself into the sea. The bay where she fell is Đầm Trầu.",
+          },
+          { type: "heading", text: "The Beach and the Planes" },
+          {
+            type: "paragraph",
+            text: "The legend aside, the beach itself is one of the most distinctive in Vietnam: a crescent of fine white sand (reports vary on the exact length, from around 700m to 1km) backed by dense primary forest, with rocky outcrops, a coral reef visible in the shallows, and a peculiarity that earns it a category of its own - the beach sits directly underneath the approach path to Cỏ Ống Airport, just a little over 1km away. Multiple times a day, aircraft pass low overhead as they come in to land, close enough to feel the engines, creating one of the most photogenic and improbable beach backdrops in the country. In 2021, Travel + Leisure ranked it among the top 25 most beautiful beaches in the world.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Đầm Trầu beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bãi Đầm Trầu is roughly 14km north of Con Son town, very close to Cỏ Ống Airport - the turnoff is about 200m before the airport itself. From the town centre, follow the Cỏ Ống road north - the beach is well-signposted and the route passes through forested sections with gentle hills before descending to the coast. By motorbike the journey takes 25–30 minutes; by taxi about 20 minutes. From the airport itself, it is only 5–10 minutes away - worth stopping at if arriving by air.",
+          },
+          { type: "heading", text: "Getting to Côn Đảo" },
+          {
+            type: "paragraph",
+            text: "To reach Côn Đảo: fly direct from Ho Chi Minh City (around 45 minutes), or take a high-speed ferry from Vũng Tàu (about 3–4 hours) or from Trần Đề port in Sóc Trăng (about 2 hours).",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Đầm Trầu beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The beach curves in a crescent shape, bordered on both sides by rocky headlands with coral and rock pools. The water is clear and calm enough for swimming and snorkelling close to shore, best at low tide; the coral reef is accessible without a boat. A stream near the beach entrance needs crossing, easiest with water shoes and before the tide comes in too far. The forest at the back of the beach provides intermittent shade and the air is noticeably cooler than the open coast. Deckchairs and hammocks can be rented for a modest hourly fee if you'd rather not sit on the sand.",
+          },
+          { type: "heading", text: "Plane-Spotting" },
+          {
+            type: "paragraph",
+            text: "The main draw beyond the sand and water is the plane-spotting: flights approach from the north and pass very low directly over the beach before touching down on the runway just behind the tree line.",
+          },
+          { type: "heading", text: "Food, Monkeys and Facilities" },
+          {
+            type: "paragraph",
+            text: "Simple seafood shacks operate seasonally near the beach, generally from around midday until dusk. Keep an eye on food and drinks, since monkeys near the western end of the beach are known to steal from unattended bags. There are no permanent facilities beyond this, which contributes to the beach's relatively undeveloped character despite its international recognition.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Đầm Trầu beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bãi Đầm Trầu works best as a half-day trip combined with Bãi Suối Nóng - a small secluded beach accessible on foot via a short forest trail from the left side of the main beach. Late afternoon is a particularly peaceful time to visit, as the crowds thin out and the evening light can be excellent - overnight camping is not permitted on the beach, though, so plan to head back before dark.",
+          },
+          { type: "heading", text: "Cash and Gear" },
+          {
+            type: "paragraph",
+            text: "Côn Đảo as a whole has very limited ATMs (only two on the island as of recent reports), so bring enough cash before you arrive. Snorkelling gear should ideally be packed from the mainland.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

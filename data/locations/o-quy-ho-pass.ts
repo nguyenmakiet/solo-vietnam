@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const oQuyHoPass: Location = {
   slug: "o-quy-ho-pass",
   name: "O Quy Ho Pass",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lao-cai", "lai-chau"],
   destination: "",
   lat: 22.352936964870516,
@@ -45,14 +45,85 @@ export const oQuyHoPass: Location = {
     "Seasonal character: Spring (Mar-May): cherry blossoms and cloud sea. Summer (Jun-Aug): lush green, frequent mist, rain risk. Autumn (Sep-Nov): terraced fields turn gold. Winter (Dec-Feb): frost, rare snow, dramatic cold atmosphere.",
   ],
   content: {
-    intro:
-      "Ô Quy Hồ Pass is one of Vietnam's 'tứ đại đỉnh đèo' - the four great mountain passes of the northwest - and at nearly 50km the longest of them. It crosses the Hoàng Liên Sơn range at 2,035m along Highway 4D between Sapa and Lai Châu, known locally also as Đèo Hoàng Liên, Đèo Mây (Cloud Pass), and Cổng Trời (Heaven's Gate). The name Ô Quy Hồ comes from a bird's mournful call at dusk - from a legend about a forbidden love between the son of a Mountain God (Ô Quy Hồ) and the youngest daughter of the Jade Emperor. She was turned into a phoenix and calls his name each sunset while he remains transformed as a black turtle beside the waterfall where they once met. The pass also forms a natural climatic divide between two distinct weather systems. The Sapa side - Lào Cai - is cold, humid, and frequently fog-bound. The Lai Châu side descends into warmer, drier conditions. It is common to leave Sapa in cold grey mist and emerge into sunshine on the Lai Châu side less than an hour later, having crossed the same mountain. The pass is an iconic destination for motorbike riders on the Northwest Loop, a serious cloud-sea photography location, and one of the most dramatic stretches of mountain road in Southeast Asia.",
-    howToGetThere:
-      "Ô Quy Hồ is approximately 15-17km from Sapa town center on Highway 4D toward Lai Châu. By motorbike from Sapa: about 30 minutes to the summit. Follow Highway 4D from Điện Biên Phủ Street in Sapa - the road passes Thác Bạc, Thác Tình Yêu, and Cầu Kính Rồng Mây before the summit. Taxi from Sapa is also available (~20 minutes). From Hanoi: train to Lào Cai, then bus or taxi to Sapa (45-60 min), then continue to the pass. Or drive/ride from Hanoi via Lào Cai - Sapa on National Highway 4D. The pass is a core section of the Northwest Loop (Hanoi - Điện Biên Phủ - Mù Cang Chải - Lai Châu - Sapa), typically done over 4-6 days.",
-    whatToExpect:
-      "The Sapa side climbs gradually through pine forest and cloud forest to Cổng Trời (Heaven's Gate), the highest viewpoint, where on clear afternoons - especially 16:00-17:30 - a sea of cloud fills the valley below with only the highest ridges visible. The café terraces at the summit jut over the cliff face, offering the classic cloud sea photos without any dangerous climbing. The descent into Lai Châu is the more dramatic section: long exposed switchbacks drop through bare rock faces into increasingly subtropical vegetation. The Lai Châu side is far less visited than the Sapa side - fewer guesthouses, more authentic village life, and a rougher character. The full 50km rewards slow riding with frequent stops.",
-    travelTips:
-      "The cloud sea timing rule: if Sapa town is foggy or clearing after light rain, there's a 90% chance of a spectacular sea of cloud on the pass between 16:00 and 17:30. This is the local knowledge that separates visitors who get the shot from those who don't. Arrive at the summit cafés by 16:00 and wait - the light from 17:00 to 17:30 is extraordinary when conditions align. For the full pass experience, plan at least half a day: combine Thác Bạc and Thác Tình Yêu on the way up, arrive at the summit for late afternoon, and descend in the fading light. Riders doing the Northwest Loop should ride east to west (Sapa toward Lai Châu) for sun behind them on the descent and the most dramatic canyon views.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes O Quy Ho Pass Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ô Quy Hồ Pass is one of Vietnam's 'tứ đại đỉnh đèo' - the four great mountain passes of the northwest - and at nearly 50km the longest of them. It crosses the Hoàng Liên Sơn range at 2,035m along Highway 4D between Sapa and Lai Châu, known locally also as Đèo Hoàng Liên, Đèo Mây (Cloud Pass), and Cổng Trời (Heaven's Gate).",
+          },
+          { type: "heading", text: "The Legend Behind the Name" },
+          {
+            type: "paragraph",
+            text: "The name Ô Quy Hồ comes from a bird's mournful call at dusk - from a legend about a forbidden love between the son of a Mountain God (Ô Quy Hồ) and the youngest daughter of the Jade Emperor. She was turned into a phoenix and calls his name each sunset while he remains transformed as a black turtle beside the waterfall where they once met.",
+          },
+          { type: "heading", text: "A Climatic Divide" },
+          {
+            type: "paragraph",
+            text: "The pass also forms a natural climatic divide between two distinct weather systems. The Sapa side - Lào Cai - is cold, humid, and frequently fog-bound. The Lai Châu side descends into warmer, drier conditions. It is common to leave Sapa in cold grey mist and emerge into sunshine on the Lai Châu side less than an hour later, having crossed the same mountain.",
+          },
+          { type: "heading", text: "Why Riders Come" },
+          {
+            type: "paragraph",
+            text: "The pass is an iconic destination for motorbike riders on the Northwest Loop, a serious cloud-sea photography location, and one of the most dramatic stretches of mountain road in Southeast Asia.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to O Quy Ho Pass",
+        blocks: [
+          { type: "heading", text: "From Sapa" },
+          {
+            type: "paragraph",
+            text: "Ô Quy Hồ is approximately 15-17km from Sapa town center on Highway 4D toward Lai Châu. By motorbike from Sapa: about 30 minutes to the summit. Follow Highway 4D from Điện Biên Phủ Street in Sapa - the road passes Thác Bạc, Thác Tình Yêu, and Cầu Kính Rồng Mây before the summit. Taxi from Sapa is also available (~20 minutes).",
+          },
+          { type: "heading", text: "From Hanoi and the Northwest Loop" },
+          {
+            type: "paragraph",
+            text: "From Hanoi: train to Lào Cai, then bus or taxi to Sapa (45-60 min), then continue to the pass. Or drive/ride from Hanoi via Lào Cai - Sapa on National Highway 4D. The pass is a core section of the Northwest Loop (Hanoi - Điện Biên Phủ - Mù Cang Chải - Lai Châu - Sapa), typically done over 4-6 days.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at O Quy Ho Pass",
+        blocks: [
+          { type: "heading", text: "The Sapa Side and the Summit" },
+          {
+            type: "paragraph",
+            text: "The Sapa side climbs gradually through pine forest and cloud forest to Cổng Trời (Heaven's Gate), the highest viewpoint, where on clear afternoons - especially 16:00-17:30 - a sea of cloud fills the valley below with only the highest ridges visible. The café terraces at the summit jut over the cliff face, offering the classic cloud sea photos without any dangerous climbing.",
+          },
+          { type: "heading", text: "The Lai Châu Side" },
+          {
+            type: "paragraph",
+            text: "The descent into Lai Châu is the more dramatic section: long exposed switchbacks drop through bare rock faces into increasingly subtropical vegetation. The Lai Châu side is far less visited than the Sapa side - fewer guesthouses, more authentic village life, and a rougher character. The full 50km rewards slow riding with frequent stops.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for O Quy Ho Pass",
+        blocks: [
+          { type: "heading", text: "Cloud Sea Timing" },
+          {
+            type: "paragraph",
+            text: "The cloud sea timing rule: if Sapa town is foggy or clearing after light rain, there's a 90% chance of a spectacular sea of cloud on the pass between 16:00 and 17:30. This is the local knowledge that separates visitors who get the shot from those who don't. Arrive at the summit cafés by 16:00 and wait - the light from 17:00 to 17:30 is extraordinary when conditions align.",
+          },
+          { type: "heading", text: "Planning the Ride" },
+          {
+            type: "paragraph",
+            text: "For the full pass experience, plan at least half a day: combine Thác Bạc and Thác Tình Yêu on the way up, arrive at the summit for late afternoon, and descend in the fading light. Riders doing the Northwest Loop should ride east to west (Sapa toward Lai Châu) for sun behind them on the descent and the most dramatic canyon views.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

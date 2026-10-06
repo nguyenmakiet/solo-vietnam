@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taVanVillage: Location = {
   slug: "ta-van-village",
   name: "Tả Van Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.303361298569694,
@@ -43,14 +43,81 @@ export const taVanVillage: Location = {
     "This suits travellers who want to slow down and experience simple, low-key daily life rather than a packed schedule of activities - there genuinely isn't a lot of organised entertainment here, which is rather the point",
   ],
   content: {
-    intro:
-      "Tả Van sits at the far end of Muong Hoa Valley, roughly 10-12km from Sa Pa town. In the H'mong language, the name is said to mean 'large arc,' describing the village's setting - backed by the Hoàng Liên Sơn mountain range, facing the Mường Hoa stream. The commune is home to a mix of communities, most closely associated with the Giáy people - one of the smaller minorities in the Sa Pa area - alongside H'mong and Red Dao families. It's often mentioned in the same breath as neighbouring Lao Chải, a H'mong village a few kilometres up the valley - the two share a combined entrance ticket and a connecting trail, which is part of why the ethnic groups of the wider area are often discussed together even when a review is really about one particular village. The village is surrounded on all sides by terraced rice fields that are consistently rated among the most beautiful in the valley, especially in late September when the harvest turns the hillsides gold. Unlike Cat Cat - which is close to town and heavy with day visitors - Tả Van is quiet, genuine, and far better suited for an overnight stay.",
-    howToGetThere:
-      "Tả Van is at the end of the main Muong Hoa Valley road, about 10-12km from Sa Pa town centre (sources vary slightly on the exact distance). You can reach it by motorbike along Provincial Road 152 (30–40 minutes from Sa Pa), or trek the full valley route from Cat Cat through Lao Chải to Tả Van - a full day's walk of around 9-12km depending on the exact route. Most trekkers go with a local guide arranged in Sa Pa. There is no direct bus to Tả Van.",
-    whatToExpect:
-      "The village is quiet and spread out along the valley floor, with wooden stilt houses, vegetable gardens, and rice paddies immediately beside the path. Cầu Mây (Cloud Bridge), a suspension bridge over the stream, is a well-known photo spot right in the village - it gets genuinely slippery and can feel precarious in the rainy season, so it's worth standing near it for photos rather than walking out onto it if the weather's been wet. Other things worth doing include visiting the local highland market to see everyday village life, taking in the valley views from one of several elevated cafes, and exploring the Mường Hoa stream itself. Culturally minded visitors can also ask about visiting one of a couple of well-known historic Giáy houses in the area, over 90 years old - always ask permission first before entering or photographing, since these are still private family homes. Giáy families run homestays that typically include breakfast and dinner - home-cooked meals using local vegetables, free-range chicken, and rice from the surrounding fields. The pace of life here is slow and unhurried. In the evenings, the village settles into near silence. From Tả Van you can continue further into the valley toward Giang Tả Chải and Bản Hồ for more remote trekking, or detour about 2km to Bãi Đá Cổ, a field of centuries-old carved stone inscriptions, on a separate ticket.",
-    travelTips:
-      "Tả Van is the best overnight base in the Sa Pa valley system for travellers who want genuine immersion rather than just a scenic walk. The difference between day-tripping from Sa Pa town and staying the night here is enormous - the village completely changes after 5 PM. If you only have one night in the Sa Pa area and want to remember it clearly, spend it in Tả Van rather than in a hotel in Sa Pa town. If you're visiting during the colder Nov-Dec stretch, pack in layers rather than relying on one heavy coat: a thermal base layer, a fleece or sweater, and a windproof or down outer layer, plus trekking shoes, a couple of spare pairs of thick socks, gloves, a warm hat, and a scarf - the temperature swings enough between day and night that this system works better than a single jacket.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tả Van Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tả Van sits at the far end of Muong Hoa Valley, roughly 10-12km from Sa Pa town. In the H'mong language, the name is said to mean 'large arc,' describing the village's setting - backed by the Hoàng Liên Sơn mountain range, facing the Mường Hoa stream.",
+          },
+          { type: "heading", text: "The People of Tả Van" },
+          {
+            type: "paragraph",
+            text: "The commune is home to a mix of communities, most closely associated with the Giáy people - one of the smaller minorities in the Sa Pa area - alongside H'mong and Red Dao families. It's often mentioned in the same breath as neighbouring Lao Chải, a H'mong village a few kilometres up the valley - the two share a combined entrance ticket and a connecting trail, which is part of why the ethnic groups of the wider area are often discussed together even when a review is really about one particular village.",
+          },
+          { type: "heading", text: "Rice Terraces and Village Character" },
+          {
+            type: "paragraph",
+            text: "The village is surrounded on all sides by terraced rice fields that are consistently rated among the most beautiful in the valley, especially in late September when the harvest turns the hillsides gold. Unlike Cat Cat - which is close to town and heavy with day visitors - Tả Van is quiet, genuine, and far better suited for an overnight stay.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tả Van Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tả Van is at the end of the main Muong Hoa Valley road, about 10-12km from Sa Pa town centre (sources vary slightly on the exact distance). You can reach it by motorbike along Provincial Road 152 (30–40 minutes from Sa Pa), or trek the full valley route from Cat Cat through Lao Chải to Tả Van - a full day's walk of around 9-12km depending on the exact route. Most trekkers go with a local guide arranged in Sa Pa. There is no direct bus to Tả Van.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tả Van Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The village is quiet and spread out along the valley floor, with wooden stilt houses, vegetable gardens, and rice paddies immediately beside the path.",
+          },
+          { type: "heading", text: "Things to Do" },
+          {
+            type: "paragraph",
+            text: "Cầu Mây (Cloud Bridge), a suspension bridge over the stream, is a well-known photo spot right in the village - it gets genuinely slippery and can feel precarious in the rainy season, so it's worth standing near it for photos rather than walking out onto it if the weather's been wet. Other things worth doing include visiting the local highland market to see everyday village life, taking in the valley views from one of several elevated cafes, and exploring the Mường Hoa stream itself. Culturally minded visitors can also ask about visiting one of a couple of well-known historic Giáy houses in the area, over 90 years old - always ask permission first before entering or photographing, since these are still private family homes.",
+          },
+          { type: "heading", text: "Homestays and Evenings" },
+          {
+            type: "paragraph",
+            text: "Giáy families run homestays that typically include breakfast and dinner - home-cooked meals using local vegetables, free-range chicken, and rice from the surrounding fields. The pace of life here is slow and unhurried. In the evenings, the village settles into near silence.",
+          },
+          { type: "heading", text: "Further into the Valley" },
+          {
+            type: "paragraph",
+            text: "From Tả Van you can continue further into the valley toward Giang Tả Chải and Bản Hồ for more remote trekking, or detour about 2km to Bãi Đá Cổ, a field of centuries-old carved stone inscriptions, on a separate ticket.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tả Van Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tả Van is the best overnight base in the Sa Pa valley system for travellers who want genuine immersion rather than just a scenic walk. The difference between day-tripping from Sa Pa town and staying the night here is enormous - the village completely changes after 5 PM. If you only have one night in the Sa Pa area and want to remember it clearly, spend it in Tả Van rather than in a hotel in Sa Pa town.",
+          },
+          {
+            type: "paragraph",
+            text: "If you're visiting during the colder Nov-Dec stretch, pack in layers rather than relying on one heavy coat: a thermal base layer, a fleece or sweater, and a windproof or down outer layer, plus trekking shoes, a couple of spare pairs of thick socks, gloves, a warm hat, and a scarf - the temperature swings enough between day and night that this system works better than a single jacket.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tuyenLamLake: Location = {
   slug: "tuyen-lam-lake",
   name: "Tuyền Lâm Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.899932123833151,
@@ -44,14 +44,86 @@ export const tuyenLamLake: Location = {
     "Common mistakes that derail a visit here: arriving after 5 PM and only then looking for a boat or SUP slot, riding a motorbike back at night on unfamiliar roads, choosing a resort based on straight-line map distance rather than actual road distance, and pitching a tent or lighting a campfire in the pine forest without confirming who manages that specific patch of land (fire risk is a real concern in the dry season)",
   ],
   content: {
-    intro:
-      "Tuyền Lâm Lake is the largest artificial lake in Đà Lạt, covering somewhere between 320 and 360 hectares depending on the source, roughly 7-8km south of the city centre (the nearby Trúc Lâm Monastery, closer to the main road, is often cited as only 5-6km away - the two figures aren't contradictory, just measuring to slightly different points). The lake was formed by damming Suối Tía (the Tía stream) with a 235-metre dam, built in 1987 by Lâm Đồng's irrigation department; the area was first noted by a Frenchman named Farrau in the 1930s and later served as a resistance-war base known as Khu Quang Trung or Khu Suối Tía. The reservoir was initially named Hồ Quang Trung after construction before later being renamed Hồ Tuyền Lâm. It was recognised as a National Historical-Cultural Relic in 1988, a National Scenic Site in 1998, and a National Tourism Area in 2017. The lake sits at 1,200 metres elevation - lower than Đà Lạt town - which gives it a slightly warmer microclimate and persistent morning mist that lingers over the water until mid-morning, often at its most striking between 4:30 and 6:30 AM. The surrounding pine forest is among the most intact remaining around Đà Lạt, which has lost much of its original forest cover to flower farming and urban expansion.\n\nOn Núi Phụng Hoàng (Phoenix Mountain), overlooking the lake, sits Trúc Lâm Thiền Monastery - one of the three largest monasteries of the historic Trúc Lâm Yên Tử Zen lineage (originally founded by King Trần Nhân Tông) in Vietnam, covering around 24 hectares. The mountain's name comes from a story about the monastery's founder: while resting at a Đà Lạt pagoda in the mid-1980s after finding the climate at his previous monastery too harsh for meditation practice, Hòa thượng Thích Thanh Từ reportedly dreamed of holding a phoenix by the neck and flying high above the ground - after waking, he took this as a sign to build a new monastery in Đà Lạt's cool mountain air, and the peak he chose came to be known as Phụng Hoàng (Phoenix) in connection with that dream. Built in 1993-1994, the monastery sits noticeably cooler than central Đà Lạt - typically 15-20°C, some 2-5 degrees below the city centre depending on the source - and its gardens, meditation halls, and lakeside setting make it as much a landscape destination as a religious site. The lake is accessible by the Đà Lạt cable car, which departs from Robin Hill near the city centre and arrives at the monastery - not directly at the lake itself.",
-    howToGetThere:
-      "Tuyền Lâm Lake is roughly 7-8km south of Đà Lạt city centre (Trúc Lâm Monastery, closer to the main road, is about 5-6km), a drive of around 15-20 minutes on paved roads. Two road routes are commonly used: via Triệu Việt Vương street past the Bảo Đại Summer Palace and Trúc Lâm Monastery - flatter and easier, recommended if you're not a confident rider - or via the more dramatic but steeper and curvier Prenn Pass, which can get slippery and foggy in the rainy season (roughly Jul-Oct) and is better left to experienced riders. The cable car from Robin Hill station (address: Đồi Robin, Phường Xuân Hương; hours 7:30 AM-5:00 PM; around 80,000-100,000 VND one-way) is a scenic alternative, but it's worth knowing it only reaches Trúc Lâm Monastery, not the lake itself - from there, reaching the lakeshore means descending roughly 140 stone steps on foot, a route that isn't well suited to elderly visitors or young children. The southern shore has the main boat rental and activity area; the northern shore near the monastery is quieter and more scenic. Because 'Tuyền Lâm Lake' covers a large area with multiple piers, resorts, and viewpoints, it's worth confirming the exact spot you're heading to rather than just entering the lake's name into a map app, which may not take you to a spot with parking or services.",
-    whatToExpect:
-      "The lake has two distinct atmospheres. The southern shore near the dam is developed with boat rentals, a small resort, and a café strip - swan pedal boats, kayaks, and motorboats operate here, and it's the busiest section on weekends. The northern shore around Trúc Lâm Monastery is calmer - monastery gardens open to visitors, lakeside walking paths through pine forest, and views down the length of the lake from the monastery's elevated position on Phụng Hoàng Mountain. The cable car brings visitors to the monastery itself rather than directly to the water, so reaching the lakeshore from there means a further walk down roughly 140 stone steps. Overnight camping is also popular at designated lakeside areas - arguably one of the biggest reasons people come to Tuyền Lâm in the first place - though you'll need to confirm permission with the land manager for your chosen spot rather than simply pitching a tent anywhere in the pine forest. Kayaking on the lake in early morning, when the mist sits low and the pine forest is reflected in still water, is one of the most photogenic experiences in Đà Lạt.",
-    travelTips:
-      "Tuyền Lâm Lake is best as a half-day excursion from Đà Lạt - arrive by cable car, visit Trúc Lâm Monastery, kayak or walk the northern shore, and return by motorbike or bicycle along the back road through the forest. The lake on its own doesn't require a full day. The combination of cable car + monastery + kayak covers the three best things the lake offers. For cyclists, the 12km perimeter road is a solid morning ride with minimal traffic and consistent pine forest scenery.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tuyền Lâm Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tuyền Lâm Lake is the largest artificial lake in Đà Lạt, covering somewhere between 320 and 360 hectares depending on the source, roughly 7-8km south of the city centre (the nearby Trúc Lâm Monastery, closer to the main road, is often cited as only 5-6km away - the two figures aren't contradictory, just measuring to slightly different points). The lake was formed by damming Suối Tía (the Tía stream) with a 235-metre dam, built in 1987 by Lâm Đồng's irrigation department; the area was first noted by a Frenchman named Farrau in the 1930s and later served as a resistance-war base known as Khu Quang Trung or Khu Suối Tía. The reservoir was initially named Hồ Quang Trung after construction before later being renamed Hồ Tuyền Lâm.",
+          },
+          { type: "heading", text: "Heritage Status and Setting" },
+          {
+            type: "paragraph",
+            text: "It was recognised as a National Historical-Cultural Relic in 1988, a National Scenic Site in 1998, and a National Tourism Area in 2017. The lake sits at 1,200 metres elevation - lower than Đà Lạt town - which gives it a slightly warmer microclimate and persistent morning mist that lingers over the water until mid-morning, often at its most striking between 4:30 and 6:30 AM. The surrounding pine forest is among the most intact remaining around Đà Lạt, which has lost much of its original forest cover to flower farming and urban expansion.",
+          },
+          { type: "heading", text: "Trúc Lâm Monastery" },
+          {
+            type: "paragraph",
+            text: "On Núi Phụng Hoàng (Phoenix Mountain), overlooking the lake, sits Trúc Lâm Thiền Monastery - one of the three largest monasteries of the historic Trúc Lâm Yên Tử Zen lineage (originally founded by King Trần Nhân Tông) in Vietnam, covering around 24 hectares. The mountain's name comes from a story about the monastery's founder: while resting at a Đà Lạt pagoda in the mid-1980s after finding the climate at his previous monastery too harsh for meditation practice, Hòa thượng Thích Thanh Từ reportedly dreamed of holding a phoenix by the neck and flying high above the ground - after waking, he took this as a sign to build a new monastery in Đà Lạt's cool mountain air, and the peak he chose came to be known as Phụng Hoàng (Phoenix) in connection with that dream. Built in 1993-1994, the monastery sits noticeably cooler than central Đà Lạt - typically 15-20°C, some 2-5 degrees below the city centre depending on the source - and its gardens, meditation halls, and lakeside setting make it as much a landscape destination as a religious site.",
+          },
+          { type: "heading", text: "The Cable Car" },
+          {
+            type: "paragraph",
+            text: "The lake is accessible by the Đà Lạt cable car, which departs from Robin Hill near the city centre and arrives at the monastery - not directly at the lake itself.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tuyền Lâm Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tuyền Lâm Lake is roughly 7-8km south of Đà Lạt city centre (Trúc Lâm Monastery, closer to the main road, is about 5-6km), a drive of around 15-20 minutes on paved roads. Two road routes are commonly used: via Triệu Việt Vương street past the Bảo Đại Summer Palace and Trúc Lâm Monastery - flatter and easier, recommended if you're not a confident rider - or via the more dramatic but steeper and curvier Prenn Pass, which can get slippery and foggy in the rainy season (roughly Jul-Oct) and is better left to experienced riders.",
+          },
+          { type: "heading", text: "Cable Car, Shores and Navigation" },
+          {
+            type: "paragraph",
+            text: "The cable car from Robin Hill station (address: Đồi Robin, Phường Xuân Hương; hours 7:30 AM-5:00 PM; around 80,000-100,000 VND one-way) is a scenic alternative, but it's worth knowing it only reaches Trúc Lâm Monastery, not the lake itself - from there, reaching the lakeshore means descending roughly 140 stone steps on foot, a route that isn't well suited to elderly visitors or young children. The southern shore has the main boat rental and activity area; the northern shore near the monastery is quieter and more scenic. Because 'Tuyền Lâm Lake' covers a large area with multiple piers, resorts, and viewpoints, it's worth confirming the exact spot you're heading to rather than just entering the lake's name into a map app, which may not take you to a spot with parking or services.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tuyền Lâm Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The lake has two distinct atmospheres.",
+          },
+          { type: "heading", text: "The Southern and Northern Shores" },
+          {
+            type: "paragraph",
+            text: "The southern shore near the dam is developed with boat rentals, a small resort, and a café strip - swan pedal boats, kayaks, and motorboats operate here, and it's the busiest section on weekends. The northern shore around Trúc Lâm Monastery is calmer - monastery gardens open to visitors, lakeside walking paths through pine forest, and views down the length of the lake from the monastery's elevated position on Phụng Hoàng Mountain. The cable car brings visitors to the monastery itself rather than directly to the water, so reaching the lakeshore from there means a further walk down roughly 140 stone steps.",
+          },
+          { type: "heading", text: "Camping and Kayaking" },
+          {
+            type: "paragraph",
+            text: "Overnight camping is also popular at designated lakeside areas - arguably one of the biggest reasons people come to Tuyền Lâm in the first place - though you'll need to confirm permission with the land manager for your chosen spot rather than simply pitching a tent anywhere in the pine forest. Kayaking on the lake in early morning, when the mist sits low and the pine forest is reflected in still water, is one of the most photogenic experiences in Đà Lạt.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tuyền Lâm Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tuyền Lâm Lake is best as a half-day excursion from Đà Lạt - arrive by cable car, visit Trúc Lâm Monastery, kayak or walk the northern shore, and return by motorbike or bicycle along the back road through the forest. The lake on its own doesn't require a full day. The combination of cable car + monastery + kayak covers the three best things the lake offers.",
+          },
+          {
+            type: "paragraph",
+            text: "For cyclists, the 12km perimeter road is a solid morning ride with minimal traffic and consistent pine forest scenery.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baDanhPagoda: Location = {
   slug: "ba-danh-pagoda",
   name: "Ba Danh Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-nam"],
   destination: "",
   lat: 20.416700,
@@ -49,14 +49,79 @@ export const baDanhPagoda: Location = {
     "Dress modestly (no shorts or short skirts), keep noise down, and don't touch or move any of the temple objects",
   ],
   content: {
-    intro:
-      "Ba Danh Pagoda (Chùa Bà Đanh), also known as Bảo Sơn Tự, sits in Đanh Xá village, Ngọc Sơn commune, Kim Bảng district, Hà Nam province - the pagoda's own tam quan gate opens south onto a riverside landing on the Đáy River, while the north side backs onto the green slopes of Núi Ngọc, where a centuries-old banyan-fig tree grips the rock face with long trailing roots. The pagoda gave rise to one of the most widely known proverbs in the Vietnamese language - 'vắng như chùa Bà Đanh' (as deserted as Ba Danh Pagoda) - a saying used to describe any place of unusual quietness.\n\nThe proverb reportedly originated because the pagoda's isolated riverside position - forest on one side, river on the other three, with access historically limited to a single path or boat crossing - made villagers reluctant to visit, especially at night, when they had to carry torches and beat drums and gongs to scare off wild animals along the way. That isolation is long gone: the pagoda was recognised as a National Historic-Cultural Relic in 1994, and a further ~20 billion VND provincial investment in 2007 renovated and expanded the site considerably. These days the irony is that the proverb itself is a bigger draw than actual solitude - festival days and even regular weekends can be genuinely busy, a fact worth knowing before making the trip specifically in search of quiet. The pagoda also carries a lesser-known layer of history: during the resistance war against the French (1946-1950), it served as a base for revolutionary activity - a training ground for local guerrillas, a garrison point for troops, and a key node on the resistance's transport and communication network.\n\nThe pagoda belongs to the Tứ Pháp system of worship - Pháp Vân, Pháp Vũ, Pháp Lôi, and Pháp Điện, the folk-Buddhist cloud, rain, thunder, and lightning goddesses associated with the legend of Man Nương - with the goddess worshipped here identified as Bà Man Nương herself, in her aspect as Đại Thánh Pháp Vũ (the rain goddess), the most revered of the four and the namesake behind 'chùa Bà'. Local legend holds that a village elder was visited in a dream by a young woman promising to protect the area from flooding and bring good harvests if honoured with a shrine; villagers later found a wooden throne floating on the river and enshrined it, and when a statue was eventually carved - according to different accounts, either during a major renovation under Lê Thánh Tông that gave the pagoda its current scale, or later during the reign of Lê Hy Tông (1676-1680) - it fit the throne perfectly. The resulting statue of Bà Đanh - seated in meditation on a dark wooden throne rather than a lotus, with an unusually gentle, feminine face compared to typical Buddha statues - remains the spiritual centre of the complex, alongside standard Mahayana Buddhist figures (Thích Ca, Quán Âm) and Taoist-folk figures including Thái Thượng Lão Quân, Nam Tào, and Bắc Đẩu.",
-    howToGetThere:
-      "Ba Danh Pagoda is in Kim Bảng district, roughly 7-10km from Phủ Lý city and about 60-70km south of Hanoi. From Hanoi, take the Pháp Vân - Cầu Giẽ Expressway south to Phủ Lý, then follow QL21B toward Kim Bảng district. By motorbike or car the total journey from Hanoi takes about 1.5 hours. If you're driving, take the Trần Hưng Đạo road approach into the site rather than the more direct route over the Cấm Sơn suspension bridge, which is off-limits to cars. From Phủ Lý city, the pagoda is easily reached by motorbike in around 20 minutes. There is no direct bus to the site - local transport from Phủ Lý bus station is the practical option for those without their own vehicle.",
-    whatToExpect:
-      "The roughly 10-hectare compound is arranged along a central axis. The tam quan gate faces south toward the Đáy River landing, framed by a small garden of jasmine, peony, and areca palms; a brick courtyard and two ironwood corridors with lam-glazed tile roofs lead up to the Bái Đường. The five-bay Trung Đường adjoins it, its front hung with curtains and wooden baluster screens, walls and pillars built perpendicular for durability as much as looks. Beyond that, the more modest three-bay Thượng Điện, framed entirely in ironwood, holds the main altars in a hushed, solemn space suited to worship rather than sightseeing. Stone dragon and tiger statues flank the steps up to the Bái Đường, and the roof ridges carry dragon-and-moon reliefs in a lime-and-porcelain-shard style reminiscent of Nguyễn-dynasty ornamentation. Close to 40 rooms make up the complex in total. The main halls contain the statue of Bà Đanh alongside Buddhist and Taoist-folk figures, lacquerwork, and ceremonial objects in good condition. The riverside atmosphere - water on multiple sides, birdsong, minimal traffic noise - still makes the visit notably calming outside of festival periods and weekends, when the site draws a lot more visitors than its reputation suggests. The site can be covered in 30-45 minutes, but the setting rewards sitting quietly for longer if you catch it on a quiet day.",
-    travelTips:
-      "Ba Danh is worth visiting for the gap between its cultural fame and what's actually there today - one of Vietnam's most quoted proverbs describes a pagoda that, these days, gets a steady trickle of curious visitors precisely because of that same proverb. If you're doing a day trip south of Hanoi and want something with genuine character rather than another reconstructed heritage site with tour buses, this is a strong option - just go on a weekday outside festival season if quiet is actually the point for you. The proverb alone makes for good content - the story of why it became known as deserted (isolation, river floods, wild animals discouraging night visits) is more interesting than most temple origin stories, and the twist that the reputation now outlives the reality is worth telling honestly rather than repeating the old cliché unchallenged.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ba Danh Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Danh Pagoda (Chùa Bà Đanh), also known as Bảo Sơn Tự, sits in Đanh Xá village, Ngọc Sơn commune, Kim Bảng district, Hà Nam province - the pagoda's own tam quan gate opens south onto a riverside landing on the Đáy River, while the north side backs onto the green slopes of Núi Ngọc, where a centuries-old banyan-fig tree grips the rock face with long trailing roots. The pagoda gave rise to one of the most widely known proverbs in the Vietnamese language - 'vắng như chùa Bà Đanh' (as deserted as Ba Danh Pagoda) - a saying used to describe any place of unusual quietness.",
+          },
+          { type: "heading", text: "The Proverb and the Pagoda Today" },
+          {
+            type: "paragraph",
+            text: "The proverb reportedly originated because the pagoda's isolated riverside position - forest on one side, river on the other three, with access historically limited to a single path or boat crossing - made villagers reluctant to visit, especially at night, when they had to carry torches and beat drums and gongs to scare off wild animals along the way. That isolation is long gone: the pagoda was recognised as a National Historic-Cultural Relic in 1994, and a further ~20 billion VND provincial investment in 2007 renovated and expanded the site considerably. These days the irony is that the proverb itself is a bigger draw than actual solitude - festival days and even regular weekends can be genuinely busy, a fact worth knowing before making the trip specifically in search of quiet.",
+          },
+          { type: "heading", text: "Resistance History" },
+          {
+            type: "paragraph",
+            text: "The pagoda also carries a lesser-known layer of history: during the resistance war against the French (1946-1950), it served as a base for revolutionary activity - a training ground for local guerrillas, a garrison point for troops, and a key node on the resistance's transport and communication network.",
+          },
+          { type: "heading", text: "Tứ Pháp Worship and the Statue of Bà Đanh" },
+          {
+            type: "paragraph",
+            text: "The pagoda belongs to the Tứ Pháp system of worship - Pháp Vân, Pháp Vũ, Pháp Lôi, and Pháp Điện, the folk-Buddhist cloud, rain, thunder, and lightning goddesses associated with the legend of Man Nương - with the goddess worshipped here identified as Bà Man Nương herself, in her aspect as Đại Thánh Pháp Vũ (the rain goddess), the most revered of the four and the namesake behind 'chùa Bà'. Local legend holds that a village elder was visited in a dream by a young woman promising to protect the area from flooding and bring good harvests if honoured with a shrine; villagers later found a wooden throne floating on the river and enshrined it, and when a statue was eventually carved - according to different accounts, either during a major renovation under Lê Thánh Tông that gave the pagoda its current scale, or later during the reign of Lê Hy Tông (1676-1680) - it fit the throne perfectly. The resulting statue of Bà Đanh - seated in meditation on a dark wooden throne rather than a lotus, with an unusually gentle, feminine face compared to typical Buddha statues - remains the spiritual centre of the complex, alongside standard Mahayana Buddhist figures (Thích Ca, Quán Âm) and Taoist-folk figures including Thái Thượng Lão Quân, Nam Tào, and Bắc Đẩu.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ba Danh Pagoda",
+        blocks: [
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "Ba Danh Pagoda is in Kim Bảng district, roughly 7-10km from Phủ Lý city and about 60-70km south of Hanoi. From Hanoi, take the Pháp Vân - Cầu Giẽ Expressway south to Phủ Lý, then follow QL21B toward Kim Bảng district. By motorbike or car the total journey from Hanoi takes about 1.5 hours. If you're driving, take the Trần Hưng Đạo road approach into the site rather than the more direct route over the Cấm Sơn suspension bridge, which is off-limits to cars.",
+          },
+          { type: "heading", text: "From Phủ Lý" },
+          {
+            type: "paragraph",
+            text: "From Phủ Lý city, the pagoda is easily reached by motorbike in around 20 minutes. There is no direct bus to the site - local transport from Phủ Lý bus station is the practical option for those without their own vehicle.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ba Danh Pagoda",
+        blocks: [
+          { type: "heading", text: "Layout of the Compound" },
+          {
+            type: "paragraph",
+            text: "The roughly 10-hectare compound is arranged along a central axis. The tam quan gate faces south toward the Đáy River landing, framed by a small garden of jasmine, peony, and areca palms; a brick courtyard and two ironwood corridors with lam-glazed tile roofs lead up to the Bái Đường. The five-bay Trung Đường adjoins it, its front hung with curtains and wooden baluster screens, walls and pillars built perpendicular for durability as much as looks. Beyond that, the more modest three-bay Thượng Điện, framed entirely in ironwood, holds the main altars in a hushed, solemn space suited to worship rather than sightseeing. Stone dragon and tiger statues flank the steps up to the Bái Đường, and the roof ridges carry dragon-and-moon reliefs in a lime-and-porcelain-shard style reminiscent of Nguyễn-dynasty ornamentation. Close to 40 rooms make up the complex in total.",
+          },
+          { type: "heading", text: "Statues and Atmosphere" },
+          {
+            type: "paragraph",
+            text: "The main halls contain the statue of Bà Đanh alongside Buddhist and Taoist-folk figures, lacquerwork, and ceremonial objects in good condition. The riverside atmosphere - water on multiple sides, birdsong, minimal traffic noise - still makes the visit notably calming outside of festival periods and weekends, when the site draws a lot more visitors than its reputation suggests. The site can be covered in 30-45 minutes, but the setting rewards sitting quietly for longer if you catch it on a quiet day.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ba Danh Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Danh is worth visiting for the gap between its cultural fame and what's actually there today - one of Vietnam's most quoted proverbs describes a pagoda that, these days, gets a steady trickle of curious visitors precisely because of that same proverb. If you're doing a day trip south of Hanoi and want something with genuine character rather than another reconstructed heritage site with tour buses, this is a strong option - just go on a weekday outside festival season if quiet is actually the point for you. The proverb alone makes for good content - the story of why it became known as deserted (isolation, river floods, wild animals discouraging night visits) is more interesting than most temple origin stories, and the twist that the reputation now outlives the reality is worth telling honestly rather than repeating the old cliché unchallenged.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

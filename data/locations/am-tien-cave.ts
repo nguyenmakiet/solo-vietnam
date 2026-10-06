@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const amTienCave: Location = {
   slug: "am-tien-cave",
   name: "Am Tiên Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.283351716721526,
@@ -38,14 +38,73 @@ export const amTienCave: Location = {
     "No public toilets or shops beyond the entrance area - bring water and snacks, and note that strongly-smelling food isn't welcome near the pagoda's spiritual spaces",
   ],
   content: {
-    intro:
-      "Am Tiên Cave sits in the karst hillside above a small lake in the Hoa Lư valley, in Thôn Yên Thành, Trường Yên - about 12km from Ninh Bình city and roughly 400m from the East Gate of Đinh Tiên Hoàng's temple, on the old eastern boundary of the Hoa Lư citadel. Its modern nickname, 'Tuyệt Tình Cốc,' borrows the name of a lake from Chinese wuxia fiction, and the comparison sticks: a jade-green lake, ringed by sheer limestone cliffs, sits below the cave entrance like a scene from a martial-arts film. The cliffs almost completely enclose the lake, giving it the feel of a hidden valley separated from the outside world.\n\nThe cave's real history is considerably darker than its present-day reputation as a photogenic day trip. Under Đinh Tiên Hoàng, it served as a holding ground for tigers and leopards used to execute prisoners convicted of serious crimes against the court, and the lake at its base - Ao Giải - was reportedly used to keep crocodiles for the same purpose, as well as to hold prisoners of war from Đại Cồ Việt's conflicts. Queen Dương Vân Nga is said to have retreated here to practise Buddhism in her later years, remaining until her death; a monk, Nguyễn Minh Không, later built a small shrine at the cave specifically to dispel the lingering dark energy (âm khí) of its history as an execution site, and over time the sound of chanting and temple bells is said to have settled the site into the calm it's known for today. A pagoda now stands on the path up to the old cave-shrine, honouring both the Buddha and historical figures connected to the Đinh dynasty. The cave itself is shaped like an open dragon's mouth, its stalactites forming shapes locals read as rice sheaves, money trees, Buddha's-hand fruit, and lotus buds - and it still preserves an old bronze bell and a carved stone stele from its long use as a place of worship.",
-    howToGetThere:
-      "Am Tiên Cave is about 12km from Ninh Bình city and roughly 2km from Hoa Lư Ancient Capital's main temple complexes, in Trường Yên. From Hanoi, it's about 93-100km and roughly 2 hours by motorbike or car via Highway 1A, turning onto Tỉnh lộ 491C toward Trường Yên. From Ninh Bình city, a taxi or xe ôm takes about 15-20 minutes; by bicycle from the Đinh and Lê temples, the cave entrance is about 10 minutes along the same road. The stone staircase to the cave is signposted from the road, with a ticket booth and parking area at the base - a bike or boat rental point sits near the lake for those who'd rather not walk the full loop. The cave is typically visited as an add-on to a Hoa Lư or Tràng An day rather than as a standalone destination.",
-    whatToExpect:
-      "From the entrance, the path skirts the jade-green lake (Ao Giải), past lotus and water lilies in season, before a climb of around 200-250 stone steps cut into the karst cliff to the cave and pagoda above. The steps are uneven in places and the descent is harder on the knees than the climb. Partway up, the view already opens out over the lake and surrounding limestone peaks; at the cave mouth, the passage opens into a dragon-mouth-shaped chamber with stalactites in distinctive shapes, a small altar with incense and offerings, and a carved stone stele - the cave still preserves an old bronze bell from its long use as a place of worship. The newer pagoda on the approach path honours both the Buddha and historical figures tied to the Đinh dynasty. Back at the lake, rental bikes, kayaks, and inflatable boats offer a different way to take in the scenery, and there are a few small snack and drink stalls near the entrance, though nothing beyond that - come prepared with water. Remnants of an old stone gate and citadel wall nearby are worth a look for anyone interested in the site's defensive history. Allow about 2-3 hours to see the lake, climb to the cave, and explore at an unhurried pace.",
-    travelTips:
-      "Am Tiên works well as a half-day addition to a Hoa Lư or Tràng An itinerary, for travellers who want a physical element - and a genuinely layered history - alongside the temple visits. The site rewards knowing the backstory before you arrive: without it, it's just a pretty lake and a steep climb; with it, the calm of the place lands rather differently against the site's history as an execution ground and Queen Dương Vân Nga's retreat. Go early morning or late afternoon both for the light and to avoid the worst of the heat on the climb, and consider renting a bike for the lake loop rather than saving all your energy for the stairs.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Am Tiên Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Am Tiên Cave sits in the karst hillside above a small lake in the Hoa Lư valley, in Thôn Yên Thành, Trường Yên - about 12km from Ninh Bình city and roughly 400m from the East Gate of Đinh Tiên Hoàng's temple, on the old eastern boundary of the Hoa Lư citadel. Its modern nickname, 'Tuyệt Tình Cốc,' borrows the name of a lake from Chinese wuxia fiction, and the comparison sticks: a jade-green lake, ringed by sheer limestone cliffs, sits below the cave entrance like a scene from a martial-arts film. The cliffs almost completely enclose the lake, giving it the feel of a hidden valley separated from the outside world.",
+          },
+          { type: "heading", text: "A Dark History" },
+          {
+            type: "paragraph",
+            text: "The cave's real history is considerably darker than its present-day reputation as a photogenic day trip. Under Đinh Tiên Hoàng, it served as a holding ground for tigers and leopards used to execute prisoners convicted of serious crimes against the court, and the lake at its base - Ao Giải - was reportedly used to keep crocodiles for the same purpose, as well as to hold prisoners of war from Đại Cồ Việt's conflicts. Queen Dương Vân Nga is said to have retreated here to practise Buddhism in her later years, remaining until her death; a monk, Nguyễn Minh Không, later built a small shrine at the cave specifically to dispel the lingering dark energy (âm khí) of its history as an execution site, and over time the sound of chanting and temple bells is said to have settled the site into the calm it's known for today.",
+          },
+          { type: "heading", text: "The Pagoda and the Cave" },
+          {
+            type: "paragraph",
+            text: "A pagoda now stands on the path up to the old cave-shrine, honouring both the Buddha and historical figures connected to the Đinh dynasty. The cave itself is shaped like an open dragon's mouth, its stalactites forming shapes locals read as rice sheaves, money trees, Buddha's-hand fruit, and lotus buds - and it still preserves an old bronze bell and a carved stone stele from its long use as a place of worship.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Am Tiên Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Am Tiên Cave is about 12km from Ninh Bình city and roughly 2km from Hoa Lư Ancient Capital's main temple complexes, in Trường Yên. From Hanoi, it's about 93-100km and roughly 2 hours by motorbike or car via Highway 1A, turning onto Tỉnh lộ 491C toward Trường Yên. From Ninh Bình city, a taxi or xe ôm takes about 15-20 minutes; by bicycle from the Đinh and Lê temples, the cave entrance is about 10 minutes along the same road.",
+          },
+          { type: "heading", text: "Entrance and Combining Visits" },
+          {
+            type: "paragraph",
+            text: "The stone staircase to the cave is signposted from the road, with a ticket booth and parking area at the base - a bike or boat rental point sits near the lake for those who'd rather not walk the full loop. The cave is typically visited as an add-on to a Hoa Lư or Tràng An day rather than as a standalone destination.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Am Tiên Cave",
+        blocks: [
+          { type: "heading", text: "The Climb" },
+          {
+            type: "paragraph",
+            text: "From the entrance, the path skirts the jade-green lake (Ao Giải), past lotus and water lilies in season, before a climb of around 200-250 stone steps cut into the karst cliff to the cave and pagoda above. The steps are uneven in places and the descent is harder on the knees than the climb. Partway up, the view already opens out over the lake and surrounding limestone peaks; at the cave mouth, the passage opens into a dragon-mouth-shaped chamber with stalactites in distinctive shapes, a small altar with incense and offerings, and a carved stone stele - the cave still preserves an old bronze bell from its long use as a place of worship.",
+          },
+          { type: "heading", text: "The Pagoda, Lake and Old Walls" },
+          {
+            type: "paragraph",
+            text: "The newer pagoda on the approach path honours both the Buddha and historical figures tied to the Đinh dynasty. Back at the lake, rental bikes, kayaks, and inflatable boats offer a different way to take in the scenery, and there are a few small snack and drink stalls near the entrance, though nothing beyond that - come prepared with water. Remnants of an old stone gate and citadel wall nearby are worth a look for anyone interested in the site's defensive history. Allow about 2-3 hours to see the lake, climb to the cave, and explore at an unhurried pace.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Am Tiên Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Am Tiên works well as a half-day addition to a Hoa Lư or Tràng An itinerary, for travellers who want a physical element - and a genuinely layered history - alongside the temple visits. The site rewards knowing the backstory before you arrive: without it, it's just a pretty lake and a steep climb; with it, the calm of the place lands rather differently against the site's history as an execution ground and Queen Dương Vân Nga's retreat. Go early morning or late afternoon both for the light and to avoid the worst of the heat on the climb, and consider renting a bike for the lake loop rather than saving all your energy for the stairs.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
