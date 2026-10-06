@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const loLoChaiVillage: Location = {
   slug: "lo-lo-chai-village",
   name: "Lô Lô Chải Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination:"ha-giang-loop",
   lat: 23.36452656422781,
@@ -41,14 +41,78 @@ export const loLoChaiVillage: Location = {
     "Respect privacy when photographing - always ask before pointing a camera at people, especially elders",
   ],
   content: {
-    intro:
-      "Lô Lô Chải sits at the foot of Dragon Mountain at around 1,470m elevation, roughly 154km from Hà Giang city and just over a kilometre from the Lũng Cú Flag Tower at Vietnam's northernmost point - the flag itself is 54m², symbolising the country's 54 recognised ethnic groups. Around 120 households and 550+ people live in the village, most of them Lô Lô Đen (Black Lô Lô) - one of Vietnam's smallest ethnic groups - alongside a number of H'Mông families. The village is a cluster of traditional 'nhà trình tường' (rammed-earth) houses, walls 40-60cm thick for warmth in winter and coolness in summer, topped with yin-yang style roof tiles and carved wooden doors, surrounded by buckwheat fields in autumn and corn in summer. What makes Lô Lô Chải's story unusual is its transformation over the past decade and a half: community-based tourism began here in 2011, pioneered by village head Sình Dỉ Gai after a study trip to Sa Pa, starting with just three households offering homestays. By October 2025, 56 of the village's 120 households were involved in tourism in some form, the local poverty rate had fallen from over 80% to under 10%, and the village welcomed nearly 1,000 overnight guests and around 50,000 day-trip visitors in the first nine months of 2025 alone. That same October, UN Tourism named Lô Lô Chải one of the world's 'Best Tourism Villages' for 2025 - a genuinely significant global recognition that has brought a fresh wave of attention, and with it, the growing pains of sudden popularity: inflated peak-season prices, room-reselling by brokers, and real questions locally about how to manage visitor numbers without losing what made the place special. The Lô Lô are also known for their intricate patchwork textiles and bronze drum ceremonies, which mark the rhythm of births, deaths, and harvests.",
-    howToGetThere:
-      "Lô Lô Chải is just over a kilometre from the Lũng Cú Flag Tower and about 26km north of Đồng Văn town. From Đồng Văn, take the road north toward Lũng Cú - the village is signposted on the left just before the flag tower turnoff. The road is paved and takes about 45 minutes by motorbike from Đồng Văn. Most travelers visit as part of a Lũng Cú day trip from Đồng Văn, though staying overnight is increasingly popular given the village's rising profile.",
-    whatToExpect:
-      "The village is a cluster of households spread across a gentle slope below the mountain, with stone walls dividing vegetable plots and narrow, quiet paths between houses - though it's worth knowing this has gotten noticeably busier during the day since the UN Tourism award, with popular photo corners (the persimmon tree at Seeme homestay and the courtyard at Chìu Pa homestay in particular) drawing genuine queues on weekends. Lô Lô women wear distinctive traditional dress of black indigo cloth embroidered with geometric patterns in red, yellow, and white - you'll often see them working on textiles outside their homes. Lễ Cầu An, an ancestor-worship ceremony asking for peace and prosperity for the village, is one of the more significant cultural events here, alongside opportunities to join folk performances, a bonfire, traditional costume embroidery, or seasonal vegetable planting and harvesting with local families. More than 40 of the village's traditional rammed-earth houses now operate as homestays, ranging from simple family setups to more polished operations with ensuite bathrooms, typically running 600,000 VND to nearly 2,000,000 VND a night - most also serve lẩu gà đen (black chicken hotpot), the village's signature dish. Evenings bring a different, quieter energy: fires for warmth, grilled snacks (meat wrapped in greens, grilled eggs, grilled sweet potato), bánh thắng dền (a warm rice-ball dessert in ginger syrup), and drinks like mèn mén coffee at Cà Phê Cực Bắc or shan tuyết milk tea at Trà Sữa Seeme. Outside daytime hours and peak weekends, the atmosphere is genuinely calm and unhurried.",
-    travelTips:
-      "Lô Lô Chải is one of the few places on the Hà Giang Loop where staying overnight makes a real difference to the experience, and its recent global recognition means it's no longer quite the under-the-radar stop it once was. The village empties of day visitors by late afternoon, and the evenings - dinner with a local family, sitting around the fire, hearing the sounds of the plateau at night - are what make the Loop memorable rather than just scenic. Book homestays directly or through a verified source well in advance if you're travelling during buckwheat season or on a weekend, since demand now regularly outstrips easy availability and informal brokers have been known to mark up prices sharply during busy periods. A few practical realities are worth knowing: many residents speak Vietnamese as a second language and aren't fully fluent, so keep expectations modest around service polish; the dry season around the end of the year can bring genuine water scarcity, so use it sparingly; and food, drink, and general costs run noticeably higher here than in the lowlands, given the remoteness. Quiet hours are generally observed after 10 PM even though this is a working tourism village, so keep noise down for residents once evening festivities wind down. Despite the crowds and rising commercialisation some visitors now complain about, it remains a place worth visiting at least once.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Lô Lô Chải Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lô Lô Chải sits at the foot of Dragon Mountain at around 1,470m elevation, roughly 154km from Hà Giang city and just over a kilometre from the Lũng Cú Flag Tower at Vietnam's northernmost point - the flag itself is 54m², symbolising the country's 54 recognised ethnic groups. Around 120 households and 550+ people live in the village, most of them Lô Lô Đen (Black Lô Lô) - one of Vietnam's smallest ethnic groups - alongside a number of H'Mông families. The village is a cluster of traditional 'nhà trình tường' (rammed-earth) houses, walls 40-60cm thick for warmth in winter and coolness in summer, topped with yin-yang style roof tiles and carved wooden doors, surrounded by buckwheat fields in autumn and corn in summer.",
+          },
+          { type: "heading", text: "Community Tourism and the 2025 UN Tourism Award" },
+          {
+            type: "paragraph",
+            text: "What makes Lô Lô Chải's story unusual is its transformation over the past decade and a half: community-based tourism began here in 2011, pioneered by village head Sình Dỉ Gai after a study trip to Sa Pa, starting with just three households offering homestays. By October 2025, 56 of the village's 120 households were involved in tourism in some form, the local poverty rate had fallen from over 80% to under 10%, and the village welcomed nearly 1,000 overnight guests and around 50,000 day-trip visitors in the first nine months of 2025 alone. That same October, UN Tourism named Lô Lô Chải one of the world's 'Best Tourism Villages' for 2025 - a genuinely significant global recognition that has brought a fresh wave of attention, and with it, the growing pains of sudden popularity: inflated peak-season prices, room-reselling by brokers, and real questions locally about how to manage visitor numbers without losing what made the place special.",
+          },
+          { type: "heading", text: "Textiles and Bronze Drums" },
+          {
+            type: "paragraph",
+            text: "The Lô Lô are also known for their intricate patchwork textiles and bronze drum ceremonies, which mark the rhythm of births, deaths, and harvests.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Lô Lô Chải Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lô Lô Chải is just over a kilometre from the Lũng Cú Flag Tower and about 26km north of Đồng Văn town. From Đồng Văn, take the road north toward Lũng Cú - the village is signposted on the left just before the flag tower turnoff. The road is paved and takes about 45 minutes by motorbike from Đồng Văn. Most travelers visit as part of a Lũng Cú day trip from Đồng Văn, though staying overnight is increasingly popular given the village's rising profile.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Lô Lô Chải Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The village is a cluster of households spread across a gentle slope below the mountain, with stone walls dividing vegetable plots and narrow, quiet paths between houses - though it's worth knowing this has gotten noticeably busier during the day since the UN Tourism award, with popular photo corners (the persimmon tree at Seeme homestay and the courtyard at Chìu Pa homestay in particular) drawing genuine queues on weekends. Lô Lô women wear distinctive traditional dress of black indigo cloth embroidered with geometric patterns in red, yellow, and white - you'll often see them working on textiles outside their homes.",
+          },
+          { type: "heading", text: "The Lễ Cầu An Ceremony" },
+          {
+            type: "paragraph",
+            text: "Lễ Cầu An, an ancestor-worship ceremony asking for peace and prosperity for the village, is one of the more significant cultural events here, alongside opportunities to join folk performances, a bonfire, traditional costume embroidery, or seasonal vegetable planting and harvesting with local families.",
+          },
+          { type: "heading", text: "Homestays and Evenings" },
+          {
+            type: "paragraph",
+            text: "More than 40 of the village's traditional rammed-earth houses now operate as homestays, ranging from simple family setups to more polished operations with ensuite bathrooms, typically running 600,000 VND to nearly 2,000,000 VND a night - most also serve lẩu gà đen (black chicken hotpot), the village's signature dish. Evenings bring a different, quieter energy: fires for warmth, grilled snacks (meat wrapped in greens, grilled eggs, grilled sweet potato), bánh thắng dền (a warm rice-ball dessert in ginger syrup), and drinks like mèn mén coffee at Cà Phê Cực Bắc or shan tuyết milk tea at Trà Sữa Seeme. Outside daytime hours and peak weekends, the atmosphere is genuinely calm and unhurried.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Lô Lô Chải Village",
+        blocks: [
+          { type: "heading", text: "Why Stay Overnight" },
+          {
+            type: "paragraph",
+            text: "Lô Lô Chải is one of the few places on the Hà Giang Loop where staying overnight makes a real difference to the experience, and its recent global recognition means it's no longer quite the under-the-radar stop it once was. The village empties of day visitors by late afternoon, and the evenings - dinner with a local family, sitting around the fire, hearing the sounds of the plateau at night - are what make the Loop memorable rather than just scenic. Book homestays directly or through a verified source well in advance if you're travelling during buckwheat season or on a weekend, since demand now regularly outstrips easy availability and informal brokers have been known to mark up prices sharply during busy periods.",
+          },
+          { type: "heading", text: "Language and Etiquette" },
+          {
+            type: "paragraph",
+            text: "A few practical realities are worth knowing: many residents speak Vietnamese as a second language and aren't fully fluent, so keep expectations modest around service polish; the dry season around the end of the year can bring genuine water scarcity, so use it sparingly; and food, drink, and general costs run noticeably higher here than in the lowlands, given the remoteness. Quiet hours are generally observed after 10 PM even though this is a working tourism village, so keep noise down for residents once evening festivities wind down. Despite the crowds and rising commercialisation some visitors now complain about, it remains a place worth visiting at least once.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

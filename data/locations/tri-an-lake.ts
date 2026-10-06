@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const triAnLake: Location = {
   slug: "tri-an-lake",
   name: "Tri An Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dong-nai"],
   destination: "",
   lat: 11.11483833366682,
@@ -51,14 +51,85 @@ export const triAnLake: Location = {
     "If driving from Ho Chi Minh City for the day, leaving around 3 PM gets you there in time for evening without arriving in the harshest midday heat",
   ],
   content: {
-    intro:
-      "Tri An Lake was formed in 1987 when the Tri An hydroelectric dam was completed on the Dong Nai River, with construction backed by Soviet technical assistance starting in 1984. The lake stretches across four districts of Dong Nai province - Vinh Cuu, Dinh Quan, Thong Nhat, and Trang Bom - flooding what was once forest and farmland. The reservoir covers approximately 323 square kilometres at full capacity and contains 76 islands of varying sizes, making it one of the largest artificial lakes in Vietnam; the dam itself is well-known enough to appear on Vietnam's 5,000 VND banknote. The lake is effectively split into a larger main body and a smaller secondary lake, with most camping operators concentrated around the smaller lake, which also has a reputation for excellent sunrise views. A small town has grown up around parts of the shoreline, with grocery stores and food stalls covering basic needs. Its forested shoreline and scattered islands have made it a popular escape from Ho Chi Minh City for residents who want camping, water activities, and natural scenery within a couple of hours' drive. The lake borders Vinh Cuu Nature Reserve on its northern shore, and sections of the forest around the lake retain good canopy cover with populations of birds and freshwater fish. The dam itself remains an active power station supplying electricity to the southern grid.",
-    howToGetThere:
-      "Tri An Lake is roughly 65-70km from central Ho Chi Minh City, approximately 1.5-2 hours by motorbike or car via Highway 1 through Bien Hoa and then north into Dong Nai province, though exact travel time depends heavily on Bien Hoa traffic. Most visitors with camping or boat tour bookings receive specific pickup point directions from their operators, as the lake's access roads vary by section - some remote camping spots involve a final stretch of tree-lined road through forest to reach the water. The main public access area is near the dam site in Thanh Phu commune. From Bien Hoa city, the lake's closest points are about 25-30km - reachable by xe ôm.",
-    whatToExpect:
-      "The lake experience varies significantly depending on which section you access and whether you're camping or doing a day visit. The island camping experience - typically on one of the lake's small forested islands accessible by boat - is the most popular format: operators provide tents, hammocks, basic cooking equipment, and boat transfers. The water is clear enough for kayaking, paddleboarding, and swimming in the dry season. Day-trip boat tours typically circle the larger islands and stop at fishing spots. Đảo Chim Ó and Đảo Đồng Trường are among the best-established tourist islands, reached by speedboat from the Đồng Trường ferry pier (about 45 minutes each way) and worth booking food in advance for if visiting on a weekend, while several other islands and lakeside sites - including Đảo Cao Minh (camping, bungalows, SUP, and food service) and Đảo Sói (camping and SUP) - now also offer their own camping and outdoor activities. The far end of Đảo Chim Ó has a scenic stone-paved lakeside path, best for photos early in the morning before it gets busy. Cyclists can also ride out through Mã Đà Forest, part of the Đồng Nai Culture-Nature Reserve and tied to the historic 'Chiến khu Đ' wartime resistance base - a popular route runs roughly 10-15km depending on fitness. The Tri An dam itself, built in the 1980s with Soviet assistance, is a sightseeing stop in its own right, with the dam body and spillway tower best viewed from below the dam or from the bridge crossing the Dong Nai River. Sunsets over the lake in the dry season can be very striking - the combination of flat water, silhouetted forest, and open western sky creates the kind of light that photographs well without much effort, and the scene is popular with wedding photographers as well as casual visitors.",
-    travelTips:
-      "Tri An functions primarily as a weekend destination for Ho Chi Minh City residents rather than an international tourism site, which means the infrastructure is geared toward group bookings and overnight packages rather than individual drop-in visits. The most straightforward approach for solo travellers or couples is to book through one of the established camping operators who run regular weekend packages - these typically include boat transfer, tent, meals, and kayak use for around 400,000 - 600,000 VND per person. Weekday evenings are noticeably calmer than weekends, when the lake draws real crowds and noise from other campers. The lake is genuinely pleasant rather than spectacular, but the combination of relatively easy access from the city, calm water, and forested setting makes it one of the better quick-escape options in the south for travellers based in Ho Chi Minh City for more than a few days.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tri An Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tri An Lake was formed in 1987 when the Tri An hydroelectric dam was completed on the Dong Nai River, with construction backed by Soviet technical assistance starting in 1984. The lake stretches across four districts of Dong Nai province - Vinh Cuu, Dinh Quan, Thong Nhat, and Trang Bom - flooding what was once forest and farmland.",
+          },
+          { type: "heading", text: "Islands and Shoreline" },
+          {
+            type: "paragraph",
+            text: "The reservoir covers approximately 323 square kilometres at full capacity and contains 76 islands of varying sizes, making it one of the largest artificial lakes in Vietnam; the dam itself is well-known enough to appear on Vietnam's 5,000 VND banknote. The lake is effectively split into a larger main body and a smaller secondary lake, with most camping operators concentrated around the smaller lake, which also has a reputation for excellent sunrise views. A small town has grown up around parts of the shoreline, with grocery stores and food stalls covering basic needs. Its forested shoreline and scattered islands have made it a popular escape from Ho Chi Minh City for residents who want camping, water activities, and natural scenery within a couple of hours' drive.",
+          },
+          { type: "heading", text: "Nature Reserve and the Dam" },
+          {
+            type: "paragraph",
+            text: "The lake borders Vinh Cuu Nature Reserve on its northern shore, and sections of the forest around the lake retain good canopy cover with populations of birds and freshwater fish. The dam itself remains an active power station supplying electricity to the southern grid.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tri An Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tri An Lake is roughly 65-70km from central Ho Chi Minh City, approximately 1.5-2 hours by motorbike or car via Highway 1 through Bien Hoa and then north into Dong Nai province, though exact travel time depends heavily on Bien Hoa traffic. Most visitors with camping or boat tour bookings receive specific pickup point directions from their operators, as the lake's access roads vary by section - some remote camping spots involve a final stretch of tree-lined road through forest to reach the water.",
+          },
+          {
+            type: "paragraph",
+            text: "The main public access area is near the dam site in Thanh Phu commune. From Bien Hoa city, the lake's closest points are about 25-30km - reachable by xe ôm.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tri An Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The lake experience varies significantly depending on which section you access and whether you're camping or doing a day visit.",
+          },
+          { type: "heading", text: "Island Camping and Water Activities" },
+          {
+            type: "paragraph",
+            text: "The island camping experience - typically on one of the lake's small forested islands accessible by boat - is the most popular format: operators provide tents, hammocks, basic cooking equipment, and boat transfers. The water is clear enough for kayaking, paddleboarding, and swimming in the dry season. Day-trip boat tours typically circle the larger islands and stop at fishing spots.",
+          },
+          { type: "heading", text: "Islands, Forest and the Dam" },
+          {
+            type: "paragraph",
+            text: "Đảo Chim Ó and Đảo Đồng Trường are among the best-established tourist islands, reached by speedboat from the Đồng Trường ferry pier (about 45 minutes each way) and worth booking food in advance for if visiting on a weekend, while several other islands and lakeside sites - including Đảo Cao Minh (camping, bungalows, SUP, and food service) and Đảo Sói (camping and SUP) - now also offer their own camping and outdoor activities. The far end of Đảo Chim Ó has a scenic stone-paved lakeside path, best for photos early in the morning before it gets busy. Cyclists can also ride out through Mã Đà Forest, part of the Đồng Nai Culture-Nature Reserve and tied to the historic 'Chiến khu Đ' wartime resistance base - a popular route runs roughly 10-15km depending on fitness. The Tri An dam itself, built in the 1980s with Soviet assistance, is a sightseeing stop in its own right, with the dam body and spillway tower best viewed from below the dam or from the bridge crossing the Dong Nai River.",
+          },
+          { type: "heading", text: "Sunsets" },
+          {
+            type: "paragraph",
+            text: "Sunsets over the lake in the dry season can be very striking - the combination of flat water, silhouetted forest, and open western sky creates the kind of light that photographs well without much effort, and the scene is popular with wedding photographers as well as casual visitors.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tri An Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tri An functions primarily as a weekend destination for Ho Chi Minh City residents rather than an international tourism site, which means the infrastructure is geared toward group bookings and overnight packages rather than individual drop-in visits. The most straightforward approach for solo travellers or couples is to book through one of the established camping operators who run regular weekend packages - these typically include boat transfer, tent, meals, and kayak use for around 400,000 - 600,000 VND per person.",
+          },
+          {
+            type: "paragraph",
+            text: "Weekday evenings are noticeably calmer than weekends, when the lake draws real crowds and noise from other campers. The lake is genuinely pleasant rather than spectacular, but the combination of relatively easy access from the city, calm water, and forested setting makes it one of the better quick-escape options in the south for travellers based in Ho Chi Minh City for more than a few days.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoaLuAncientCapital: Location = {
   slug: "hoa-lu-ancient-capital",
   name: "Hoa Lư Ancient Capital",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.286875757053178,
@@ -51,14 +51,92 @@ export const hoaLuAncientCapital: Location = {
     "Comfortable walking shoes recommended - the grounds are spacious and spread out.",
   ],
   content: {
-    intro:
-      "Hoa Lư served as the capital of Đại Cồ Việt - Vietnam's first independent unified state - from 968 to 1010 AD, across three dynasties: the Đinh (968-980) under Đinh Tiên Hoàng, who ended the chaos of 12 warring lords and unified the country for the first time; the Early Lê (980-1009) under Lê Đại Hành, who twice repelled Song dynasty invasions; and the very beginning of the Lý dynasty (1009-1010) under Lý Công Uẩn, before he moved the capital north to Đại La (later Thăng Long, today's Hanoi) in 1010. In its 42 years as capital, the city was built inside a natural fortress: two main enclosures plus an adjoining mountain area, forming a shape resembling the number 8 facing east, fully enclosed by limestone karst peaks with only narrow passes for entry - the same geography that makes Ninh Bình scenic today made Hoa Lư nearly impregnable a thousand years ago. After the capital moved, Hoa Lư remained an important military base through the Lý, Trần, Lê, Mạc, and Tây Sơn dynasties, and also functioned as a Buddhist centre of Vietnam in the 10th-11th centuries. Of the original palace complex, nothing physical survives except earthworks. That often surprises first-time visitors, but the site's value lies less in surviving buildings than in understanding where Vietnam's first independent state began - two 17th-century temple complexes built on the sites of the original palaces remain: Đền Đinh, honouring Đinh Tiên Hoàng, and Đền Lê, honouring Lê Đại Hành. The site is one of 4 core zones of the Tràng An Scenic Landscape Complex, recognised by UNESCO as a mixed Cultural and Natural World Heritage Site in 2014. Important note: this historic site (Cố Đô Hoa Lư, in Trường Yên commune) should not be confused with 'Phố Cổ Hoa Lư', an unrelated recreated old-town tourist complex built in 2022 in Ninh Bình city centre.",
-    howToGetThere:
-      "Hoa Lư Ancient Capital is 12km northwest of Ninh Bình city, in Trường Yên commune. From Ninh Bình city centre: turn toward Tràng An, follow signs to the Tràng An Scenic Landscape Complex, then continue about 200m further. By bicycle, the ride takes about 45 minutes through flat countryside - one of the nicest cycling routes in the province. By motorbike, about 20 minutes. From Hanoi: limousine van with door-to-door pickup near the Tràng An/Trường Yên area (~150,000-180,000 VND, expressway, the most popular option for solo travellers today) or a high-quality express bus via expressway (~100,000-120,000 VND) to Ninh Bình bus station then taxi onward; self-drive via the Pháp Vân - Cầu Giẽ expressway (1.5-2 hours, toll ~90,000-120,000 VND); motorbike via Highway 1A (~2.5 hours; foreign visitors need an International Driving Permit); or train to Ninh Bình station (~2 hours, from 100,000 VND) then taxi or xe ôm (~50,000 VND) the rest of the way. Note: Hoa Lư's ticket booth only sells entrance to the historical site itself - boat tickets for Tràng An or Tam Cốc are purchased separately at their own respective docks, not at Hoa Lư.",
-    whatToExpect:
-      "Don't expect ruined palaces like Angkor or Ayutthaya - what survives today is mainly the temples built centuries later on the sites of the original royal palaces. The two temple complexes - Đền Đinh and Đền Lê - are traditional Vietnamese wooden architecture set among the karst peaks, about 300-500m apart. Đền Đinh is the larger and more elaborately decorated, with a dragon staircase, carved stone tortoise stelae, and a gilded bronze statue of Đinh Tiên Hoàng - the only place in Vietnam where he's worshipped alongside his parents and sons. Đền Lê is smaller and quieter, honouring Lê Đại Hành, Queen Dương Vân Nga, and others, with a rear moat that once formed part of the capital's defences. Nearby, Đền Phất Kim offers a smaller, more sombre stop tied to a royal princess's tragic story, and Chùa Nhất Trụ holds Vietnam's oldest stone Buddhist sutra pillar. The grounds of the main temples are garden-like, with ancient trees, stone courtyards, and mountain views in every direction. A path beyond the temples leads into the karst hills - a short climb gives views over the enclosed valley that was once the capital.",
-    travelTips:
-      "Hoa Lư is the historical anchor of Ninh Bình - the context that explains why this karst landscape was chosen as Vietnam's first capital rather than merely admired as scenery. The temples are not architecturally spectacular by Vietnamese standards, but the setting - enclosed by the same natural limestone walls the kings relied on for defence - gives them a power that more elaborate temple complexes lack. Allow 1.5-2 hours, and pair with a Tràng An boat tour, Tam Cốc cycling, or Bái Đính Pagoda for a complete Ninh Bình day. Visit around March-May if you can, for festival season (including the Trường Yên Festival in the 3rd lunar month) and golden rice fields nearby.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hoa Lư Ancient Capital Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoa Lư served as the capital of Đại Cồ Việt - Vietnam's first independent unified state - from 968 to 1010 AD, across three dynasties: the Đinh (968-980) under Đinh Tiên Hoàng, who ended the chaos of 12 warring lords and unified the country for the first time; the Early Lê (980-1009) under Lê Đại Hành, who twice repelled Song dynasty invasions; and the very beginning of the Lý dynasty (1009-1010) under Lý Công Uẩn, before he moved the capital north to Đại La (later Thăng Long, today's Hanoi) in 1010.",
+          },
+          { type: "heading", text: "The Capital and Its Fortifications" },
+          {
+            type: "paragraph",
+            text: "In its 42 years as capital, the city was built inside a natural fortress: two main enclosures plus an adjoining mountain area, forming a shape resembling the number 8 facing east, fully enclosed by limestone karst peaks with only narrow passes for entry - the same geography that makes Ninh Bình scenic today made Hoa Lư nearly impregnable a thousand years ago. After the capital moved, Hoa Lư remained an important military base through the Lý, Trần, Lê, Mạc, and Tây Sơn dynasties, and also functioned as a Buddhist centre of Vietnam in the 10th-11th centuries.",
+          },
+          { type: "heading", text: "What Survives Today" },
+          {
+            type: "paragraph",
+            text: "Of the original palace complex, nothing physical survives except earthworks. That often surprises first-time visitors, but the site's value lies less in surviving buildings than in understanding where Vietnam's first independent state began - two 17th-century temple complexes built on the sites of the original palaces remain: Đền Đinh, honouring Đinh Tiên Hoàng, and Đền Lê, honouring Lê Đại Hành.",
+          },
+          { type: "heading", text: "UNESCO Status and a Name to Avoid Confusing" },
+          {
+            type: "paragraph",
+            text: "The site is one of 4 core zones of the Tràng An Scenic Landscape Complex, recognised by UNESCO as a mixed Cultural and Natural World Heritage Site in 2014. Important note: this historic site (Cố Đô Hoa Lư, in Trường Yên commune) should not be confused with 'Phố Cổ Hoa Lư', an unrelated recreated old-town tourist complex built in 2022 in Ninh Bình city centre.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hoa Lư Ancient Capital",
+        blocks: [
+          { type: "heading", text: "From Ninh Bình City" },
+          {
+            type: "paragraph",
+            text: "Hoa Lư Ancient Capital is 12km northwest of Ninh Bình city, in Trường Yên commune. From Ninh Bình city centre: turn toward Tràng An, follow signs to the Tràng An Scenic Landscape Complex, then continue about 200m further. By bicycle, the ride takes about 45 minutes through flat countryside - one of the nicest cycling routes in the province. By motorbike, about 20 minutes.",
+          },
+          { type: "heading", text: "From Hanoi, and Tickets" },
+          {
+            type: "paragraph",
+            text: "From Hanoi: limousine van with door-to-door pickup near the Tràng An/Trường Yên area (~150,000-180,000 VND, expressway, the most popular option for solo travellers today) or a high-quality express bus via expressway (~100,000-120,000 VND) to Ninh Bình bus station then taxi onward; self-drive via the Pháp Vân - Cầu Giẽ expressway (1.5-2 hours, toll ~90,000-120,000 VND); motorbike via Highway 1A (~2.5 hours; foreign visitors need an International Driving Permit); or train to Ninh Bình station (~2 hours, from 100,000 VND) then taxi or xe ôm (~50,000 VND) the rest of the way. Note: Hoa Lư's ticket booth only sells entrance to the historical site itself - boat tickets for Tràng An or Tam Cốc are purchased separately at their own respective docks, not at Hoa Lư.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hoa Lư Ancient Capital",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Don't expect ruined palaces like Angkor or Ayutthaya - what survives today is mainly the temples built centuries later on the sites of the original royal palaces. The two temple complexes - Đền Đinh and Đền Lê - are traditional Vietnamese wooden architecture set among the karst peaks, about 300-500m apart.",
+          },
+          { type: "heading", text: "Đền Đinh" },
+          {
+            type: "paragraph",
+            text: "Đền Đinh is the larger and more elaborately decorated, with a dragon staircase, carved stone tortoise stelae, and a gilded bronze statue of Đinh Tiên Hoàng - the only place in Vietnam where he's worshipped alongside his parents and sons.",
+          },
+          { type: "heading", text: "Đền Lê" },
+          {
+            type: "paragraph",
+            text: "Đền Lê is smaller and quieter, honouring Lê Đại Hành, Queen Dương Vân Nga, and others, with a rear moat that once formed part of the capital's defences.",
+          },
+          { type: "heading", text: "Nearby Temples and the Karst Hills" },
+          {
+            type: "paragraph",
+            text: "Nearby, Đền Phất Kim offers a smaller, more sombre stop tied to a royal princess's tragic story, and Chùa Nhất Trụ holds Vietnam's oldest stone Buddhist sutra pillar. The grounds of the main temples are garden-like, with ancient trees, stone courtyards, and mountain views in every direction. A path beyond the temples leads into the karst hills - a short climb gives views over the enclosed valley that was once the capital.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hoa Lư Ancient Capital",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoa Lư is the historical anchor of Ninh Bình - the context that explains why this karst landscape was chosen as Vietnam's first capital rather than merely admired as scenery. The temples are not architecturally spectacular by Vietnamese standards, but the setting - enclosed by the same natural limestone walls the kings relied on for defence - gives them a power that more elaborate temple complexes lack.",
+          },
+          {
+            type: "paragraph",
+            text: "Allow 1.5-2 hours, and pair with a Tràng An boat tour, Tam Cốc cycling, or Bái Đính Pagoda for a complete Ninh Bình day. Visit around March-May if you can, for festival season (including the Trường Yên Festival in the 3rd lunar month) and golden rice fields nearby.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

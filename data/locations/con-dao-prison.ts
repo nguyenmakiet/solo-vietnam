@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const conDaoPrison: Location = {
   slug: "con-dao-prison",
   name: "Con Dao Prison",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["vung-tau"],
   destination: "con-dao",
   lat: 8.689294969079059,
@@ -45,14 +45,103 @@ export const conDaoPrison: Location = {
     "Visit in the morning when the complex is cooler - the open-air sections, especially the Tiger Cages, are exposed to direct sun and the midday heat is intense.",
   ],
   content: {
-    intro:
-      "Con Dao Prison - Nhà Tù Côn Đảo - is a complex of prison camps and associated buildings constructed by the French colonial administration from 1862 onward, used continuously for 113 years through the French colonial period, the Japanese occupation, and the American-supported South Vietnamese government, finally closing in 1975 after national reunification. Over that period, more than 20,000 Vietnamese patriots and revolutionaries are estimated to have been imprisoned, tortured, or to have died here - the island's remoteness and the difficulty of reaching the mainland were precisely why the French chose it as a penal colony, making escape virtually impossible. The complex grew to include multiple separate camps - Phú Hải (the oldest, 1862), Phú Sơn (1916), Phú Thọ, Phú Tường (1940, containing the notorious Tiger Cages), Phú An, Phú Phong, and Phú Hưng - along with the later, separate Phú Bình complex built by the South Vietnamese government with American support in 1971, modelled on the French Tiger Cages but built at greater scale. At its peak during the Vietnam War, the island held an estimated 10,000 prisoners in conditions that became internationally notorious after American journalist Don Luce photographed the Tiger Cages in 1970 - underground stone cells with iron bar ceilings through which guards could pour lime on prisoners. Published in Life magazine, those photographs became one of the most significant anti-war images of the era and contributed to shifting American public opinion. Notable Vietnamese revolutionary figures including Phan Châu Trinh and Tôn Đức Thắng were held at Phú Hải over the prison's long history. The complex is now a national historical relic site and the most visited cultural attraction on Côn Đảo, alongside the nearby Hàng Dương Cemetery, where the great majority of prisoners who died on the island are buried.",
-    howToGetThere:
-      "Getting to Côn Đảo itself: by air, VASCO (Vietnam Airlines) operates ATR-72 flights from Hanoi, Cần Thơ, and Ho Chi Minh City to Cỏ Ống Airport (about 45 minutes, roughly 800,000-1,200,000 VND) - Bamboo Airways discontinued its routes here in 2024. By sea, modern high-speed ferries now run from Trần Đề (Sóc Trăng), taking about 2-2.5 hours, or from Vũng Tàu, taking about 3.5 hours on the newer high-speed service (though this route only operates 3 days a week, not daily) - both are a significant improvement on the slower boats of years past. Once on the island, the prison complex sits in the centre of Côn Đảo town, about 1km from the local market and within walking distance of most accommodation. The single ticket (50,000 VND, purchased at the Côn Đảo Museum) covers the museum, Dinh Chúa Đảo, and all prison camps - getting between them is easiest by motorbike (5-7 minutes from most hotels via Nguyễn Huệ street), taxi/xe ôm (around 4 minutes from the market, agree on price or ask for the meter), or bicycle if you prefer a quieter pace. Hàng Dương Cemetery is about 2km north of the town centre, best reached by motorbike.",
-    whatToExpect:
-      "The complex consists of multiple distinct prison camps, each reflecting a different period and different conditions. Phú Hải, the oldest and largest, has 33 cells - 10 communal, 20 individual stone cells - plus a rice-grinding chamber, a forced-labour stone-breaking yard, and a dedicated interrogation room; its scale and age make it the most commonly recommended starting point. Phú Tường contains the French-era Tiger Cages: rows of underground cells with iron bar ceilings, restored to their historical configuration, with figures depicting prisoners in documented positions described by survivors. Phú Bình, built later by the South Vietnamese government with American support, mirrors the French design at a larger scale and offers a direct point of comparison between the two periods of incarceration. The Côn Đảo Museum holds over 2,000 artefacts, photographs, and documents tracing the island's history, including a recreated space depicting prisoners' forced-labour conditions. Dinh Chúa Đảo, the former residence and administrative centre for the island's successive wardens, retains many original furnishings - desks, beds, bookshelves, antique clocks - offering a stark contrast in comfort to the prison camps nearby. Unlike many museums, there are few interactive displays or multimedia presentations here. Much of the impact comes simply from walking through the preserved cells, corridors, and courtyards where thousands of prisoners once lived. Visiting one camp thoroughly takes 45 minutes to an hour; covering the museum, residence, and two or more camps realistically fills most of a day.",
-    travelTips:
-      "Con Dao Prison is one of the most historically and emotionally significant sites in Vietnam - for many visitors, more directly affecting than the War Remnants Museum in Ho Chi Minh City, because the physical spaces remain largely intact, allowing visitors to stand where the events actually happened rather than viewing them through photographs alone. It asks for time, quiet attention, and a measure of emotional readiness rather than a quick walk-through between beach activities. The prison camps are spread across Côn Đảo town rather than concentrated in a single building, so don't expect one large prison structure - plan to move between several distinct sites. If you can only visit two camps, Phú Hải (the oldest and largest, with the clearest sense of the prison's full scale) and Phú Tường (containing the Tiger Cages, the most direct encounter with the conditions political prisoners endured) together give the fullest picture. Hire a guide if possible - the context they provide, including specific survivor accounts, adds meaningfully to what the physical spaces alone convey. Pairing a morning visit to the prison complex with an afternoon visit to Hàng Dương Cemetery - where Vietnamese families often come to pay respects, especially around 23 January, the anniversary of Võ Thị Sáu's execution - gives a fuller sense of what Côn Đảo represents in Vietnamese historical memory.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Con Dao Prison Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Con Dao Prison - Nhà Tù Côn Đảo - is a complex of prison camps and associated buildings constructed by the French colonial administration from 1862 onward, used continuously for 113 years through the French colonial period, the Japanese occupation, and the American-supported South Vietnamese government, finally closing in 1975 after national reunification. Over that period, more than 20,000 Vietnamese patriots and revolutionaries are estimated to have been imprisoned, tortured, or to have died here - the island's remoteness and the difficulty of reaching the mainland were precisely why the French chose it as a penal colony, making escape virtually impossible.",
+          },
+          { type: "heading", text: "The Camps" },
+          {
+            type: "paragraph",
+            text: "The complex grew to include multiple separate camps - Phú Hải (the oldest, 1862), Phú Sơn (1916), Phú Thọ, Phú Tường (1940, containing the notorious Tiger Cages), Phú An, Phú Phong, and Phú Hưng - along with the later, separate Phú Bình complex built by the South Vietnamese government with American support in 1971, modelled on the French Tiger Cages but built at greater scale.",
+          },
+          { type: "heading", text: "The Tiger Cages and the 1970 Photographs" },
+          {
+            type: "paragraph",
+            text: "At its peak during the Vietnam War, the island held an estimated 10,000 prisoners in conditions that became internationally notorious after American journalist Don Luce photographed the Tiger Cages in 1970 - underground stone cells with iron bar ceilings through which guards could pour lime on prisoners. Published in Life magazine, those photographs became one of the most significant anti-war images of the era and contributed to shifting American public opinion.",
+          },
+          { type: "heading", text: "Notable Prisoners and the Site Today" },
+          {
+            type: "paragraph",
+            text: "Notable Vietnamese revolutionary figures including Phan Châu Trinh and Tôn Đức Thắng were held at Phú Hải over the prison's long history. The complex is now a national historical relic site and the most visited cultural attraction on Côn Đảo, alongside the nearby Hàng Dương Cemetery, where the great majority of prisoners who died on the island are buried.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Con Dao Prison",
+        blocks: [
+          { type: "heading", text: "Getting to Côn Đảo" },
+          {
+            type: "paragraph",
+            text: "Getting to Côn Đảo itself: by air, VASCO (Vietnam Airlines) operates ATR-72 flights from Hanoi, Cần Thơ, and Ho Chi Minh City to Cỏ Ống Airport (about 45 minutes, roughly 800,000-1,200,000 VND) - Bamboo Airways discontinued its routes here in 2024. By sea, modern high-speed ferries now run from Trần Đề (Sóc Trăng), taking about 2-2.5 hours, or from Vũng Tàu, taking about 3.5 hours on the newer high-speed service (though this route only operates 3 days a week, not daily) - both are a significant improvement on the slower boats of years past.",
+          },
+          { type: "heading", text: "On the Island, and Tickets" },
+          {
+            type: "paragraph",
+            text: "Once on the island, the prison complex sits in the centre of Côn Đảo town, about 1km from the local market and within walking distance of most accommodation. The single ticket (50,000 VND, purchased at the Côn Đảo Museum) covers the museum, Dinh Chúa Đảo, and all prison camps - getting between them is easiest by motorbike (5-7 minutes from most hotels via Nguyễn Huệ street), taxi/xe ôm (around 4 minutes from the market, agree on price or ask for the meter), or bicycle if you prefer a quieter pace. Hàng Dương Cemetery is about 2km north of the town centre, best reached by motorbike.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Con Dao Prison",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The complex consists of multiple distinct prison camps, each reflecting a different period and different conditions.",
+          },
+          { type: "heading", text: "Phú Hải" },
+          {
+            type: "paragraph",
+            text: "Phú Hải, the oldest and largest, has 33 cells - 10 communal, 20 individual stone cells - plus a rice-grinding chamber, a forced-labour stone-breaking yard, and a dedicated interrogation room; its scale and age make it the most commonly recommended starting point.",
+          },
+          { type: "heading", text: "Phú Tường and the Tiger Cages" },
+          {
+            type: "paragraph",
+            text: "Phú Tường contains the French-era Tiger Cages: rows of underground cells with iron bar ceilings, restored to their historical configuration, with figures depicting prisoners in documented positions described by survivors.",
+          },
+          { type: "heading", text: "Phú Bình" },
+          {
+            type: "paragraph",
+            text: "Phú Bình, built later by the South Vietnamese government with American support, mirrors the French design at a larger scale and offers a direct point of comparison between the two periods of incarceration.",
+          },
+          { type: "heading", text: "The Museum and Dinh Chúa Đảo" },
+          {
+            type: "paragraph",
+            text: "The Côn Đảo Museum holds over 2,000 artefacts, photographs, and documents tracing the island's history, including a recreated space depicting prisoners' forced-labour conditions. Dinh Chúa Đảo, the former residence and administrative centre for the island's successive wardens, retains many original furnishings - desks, beds, bookshelves, antique clocks - offering a stark contrast in comfort to the prison camps nearby.",
+          },
+          { type: "heading", text: "Visiting the Camps" },
+          {
+            type: "paragraph",
+            text: "Unlike many museums, there are few interactive displays or multimedia presentations here. Much of the impact comes simply from walking through the preserved cells, corridors, and courtyards where thousands of prisoners once lived. Visiting one camp thoroughly takes 45 minutes to an hour; covering the museum, residence, and two or more camps realistically fills most of a day.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Con Dao Prison",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Con Dao Prison is one of the most historically and emotionally significant sites in Vietnam - for many visitors, more directly affecting than the War Remnants Museum in Ho Chi Minh City, because the physical spaces remain largely intact, allowing visitors to stand where the events actually happened rather than viewing them through photographs alone. It asks for time, quiet attention, and a measure of emotional readiness rather than a quick walk-through between beach activities.",
+          },
+          { type: "heading", text: "Planning Your Visit" },
+          {
+            type: "paragraph",
+            text: "The prison camps are spread across Côn Đảo town rather than concentrated in a single building, so don't expect one large prison structure - plan to move between several distinct sites. If you can only visit two camps, Phú Hải (the oldest and largest, with the clearest sense of the prison's full scale) and Phú Tường (containing the Tiger Cages, the most direct encounter with the conditions political prisoners endured) together give the fullest picture. Hire a guide if possible - the context they provide, including specific survivor accounts, adds meaningfully to what the physical spaces alone convey. Pairing a morning visit to the prison complex with an afternoon visit to Hàng Dương Cemetery - where Vietnamese families often come to pay respects, especially around 23 January, the anniversary of Võ Thị Sáu's execution - gives a fuller sense of what Côn Đảo represents in Vietnamese historical memory.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

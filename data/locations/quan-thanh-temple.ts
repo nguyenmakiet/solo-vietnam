@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quanThanhTemple: Location = {
   slug: "quan-thanh-temple",
   name: "Quan Thanh Temple",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.043075560648294, 
@@ -52,14 +52,73 @@ export const quanThanhTemple: Location = {
     "If you want festival atmosphere, visit on the 3rd day of the third lunar month; for a quiet visit, avoid this date, the 1st and 15th, and major holidays",
   ],
   content: {
-    intro:
-      "Quan Thanh Temple (Đền Quán Thánh), formally known as Trấn Vũ Quán (鎮武觀), is the northern guardian of the Thăng Long Tứ Trấn - the four sacred temples believed to protect the old citadel of Thăng Long from each cardinal direction. It sits on Quán Thánh street in Ba Đình district, right beside West Lake (Hồ Tây), at the corner where Thanh Niên street meets Quán Thánh street. The temple is dedicated to Huyền Thiên Trấn Vũ, a Taoist deity and one of the four guardians of Thăng Long's approaches; local legend holds that he was sent by the Jade Emperor to defeat a nine-tailed fox spirit troubling Long Đỗ village, and that Lý Thái Tổ founded the temple here upon moving the capital to Thăng Long (1010-1028) specifically to ward off evil spirits and protect the new citadel. The name 'Quán' comes from 'Đạo Quán' (道觀), meaning a place of Taoist worship - the temple is known today by both names, Quán Thánh and Trấn Vũ Quán. It has been restored multiple times across the Lê and Nguyễn dynasties; notably, under Lê Hy Tông, Lord Trịnh Tạc assigned his son Trịnh Căn to oversee a major rebuilding of Trấn Vũ Quán, during which the craftsman Vũ Công Chấn cast a bronze statue of Huyền Thiên Trấn Vũ in 1677 to replace an earlier wooden one - at 3.96m tall, it's one of the largest bronze statues in Hanoi, its firm yet fluid posture reflecting Taoist artistic sensibility. In 1794, under the Tây Sơn emperor Cảnh Thịnh, Admiral Lê Văn Ngữ had a large bronze ceremonial gong (khánh) cast and placed in the main hall, which survives at the temple today. Quan Thanh Temple was recognised as a national historical relic in 1962, the same year as nearby Chùa Trấn Quốc.",
-    howToGetThere:
-      "Quan Thanh Temple is at 190 Quán Thánh street, Ba Đình district, right on the shore of West Lake - a central, easy-to-find location. By personal vehicle, taxi, or ride-hailing app, it's a straightforward trip from most parts of central Hanoi. By bus, routes 14, 33, and 50 all stop within a short walk of the temple. It's also a stop on the Hanoi City Tour double-decker bus route, if you're using that to get around.",
-    whatToExpect:
-      "The complex is laid out in traditional East Asian temple style, common to Taoist sites across the region: a triple gate (tam quan), front and middle halls, a worship courtyard, and the rear sanctuary. The outer gate is a highlight in itself, with pillars formed by four phoenixes set back-to-back, topped by an intricately carved nghê (a Vietnamese guardian-lion figure), and further decorated with carvings of carp leaping the dragon gate (a symbol of transformation and success) and a tiger descending the mountain. Inside the main hall stands the temple's centrepiece: the 3.96m bronze statue of Huyền Thiên Trấn Vũ, cast in 1677, which visitors consistently single out as the most impressive feature. The buildings combine timber framing, plastered brick, and cement, with finely worked wooden pillars, rafters, and beams, and red brick that takes on a warm glow with age. A small shop inside sells calligraphy, woodblock prints, and items like lotus tea. Some visitors mention a centuries-old mango tree in the temple garden. Entry is ticketed (10,000 VND, scanned via QR code), and while the temple is compact enough to see in well under an hour, its atmosphere is consistently described as peaceful and dignified, if occasionally busier around lunar festival dates.",
-    travelTips:
-      "Quan Thanh Temple pairs naturally with a walk along West Lake and a stop at nearby Chùa Trấn Quốc, and fits into a wider look at the Thăng Long Tứ Trấn alongside Bạch Mã, Kim Liên, and Voi Phục, though each temple sits in a different part of the city, so treat the full set as a loose Hanoi-wide theme rather than a single afternoon. The temple is small, so most visitors treat it as a brief, worthwhile stop rather than a half-day destination in itself - pairing it with the lake and other nearby sights makes for a fuller outing. Autumn (roughly September-November), when Hanoi's weather turns cooler and clearer, is often mentioned as a particularly pleasant time to visit, on top of the temple being an easy year-round stop given how much of the experience is indoors.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Quan Thanh Temple Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Quan Thanh Temple (Đền Quán Thánh), formally known as Trấn Vũ Quán (鎮武觀), is the northern guardian of the Thăng Long Tứ Trấn - the four sacred temples believed to protect the old citadel of Thăng Long from each cardinal direction. It sits on Quán Thánh street in Ba Đình district, right beside West Lake (Hồ Tây), at the corner where Thanh Niên street meets Quán Thánh street.",
+          },
+          { type: "heading", text: "Huyền Thiên Trấn Vũ and the Temple's Name" },
+          {
+            type: "paragraph",
+            text: "The temple is dedicated to Huyền Thiên Trấn Vũ, a Taoist deity and one of the four guardians of Thăng Long's approaches; local legend holds that he was sent by the Jade Emperor to defeat a nine-tailed fox spirit troubling Long Đỗ village, and that Lý Thái Tổ founded the temple here upon moving the capital to Thăng Long (1010-1028) specifically to ward off evil spirits and protect the new citadel. The name 'Quán' comes from 'Đạo Quán' (道觀), meaning a place of Taoist worship - the temple is known today by both names, Quán Thánh and Trấn Vũ Quán.",
+          },
+          { type: "heading", text: "Restorations and the 1794 Bronze Gong" },
+          {
+            type: "paragraph",
+            text: "It has been restored multiple times across the Lê and Nguyễn dynasties; notably, under Lê Hy Tông, Lord Trịnh Tạc assigned his son Trịnh Căn to oversee a major rebuilding of Trấn Vũ Quán, during which the craftsman Vũ Công Chấn cast a bronze statue of Huyền Thiên Trấn Vũ in 1677 to replace an earlier wooden one - at 3.96m tall, it's one of the largest bronze statues in Hanoi, its firm yet fluid posture reflecting Taoist artistic sensibility. In 1794, under the Tây Sơn emperor Cảnh Thịnh, Admiral Lê Văn Ngữ had a large bronze ceremonial gong (khánh) cast and placed in the main hall, which survives at the temple today. Quan Thanh Temple was recognised as a national historical relic in 1962, the same year as nearby Chùa Trấn Quốc.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Quan Thanh Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Quan Thanh Temple is at 190 Quán Thánh street, Ba Đình district, right on the shore of West Lake - a central, easy-to-find location. By personal vehicle, taxi, or ride-hailing app, it's a straightforward trip from most parts of central Hanoi. By bus, routes 14, 33, and 50 all stop within a short walk of the temple. It's also a stop on the Hanoi City Tour double-decker bus route, if you're using that to get around.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Quan Thanh Temple",
+        blocks: [
+          { type: "heading", text: "Layout and the Phoenix Gate" },
+          {
+            type: "paragraph",
+            text: "The complex is laid out in traditional East Asian temple style, common to Taoist sites across the region: a triple gate (tam quan), front and middle halls, a worship courtyard, and the rear sanctuary. The outer gate is a highlight in itself, with pillars formed by four phoenixes set back-to-back, topped by an intricately carved nghê (a Vietnamese guardian-lion figure), and further decorated with carvings of carp leaping the dragon gate (a symbol of transformation and success) and a tiger descending the mountain.",
+          },
+          { type: "heading", text: "The Bronze Statue of Trấn Vũ" },
+          {
+            type: "paragraph",
+            text: "Inside the main hall stands the temple's centrepiece: the 3.96m bronze statue of Huyền Thiên Trấn Vũ, cast in 1677, which visitors consistently single out as the most impressive feature. The buildings combine timber framing, plastered brick, and cement, with finely worked wooden pillars, rafters, and beams, and red brick that takes on a warm glow with age.",
+          },
+          { type: "heading", text: "Shop, Garden and Tickets" },
+          {
+            type: "paragraph",
+            text: "A small shop inside sells calligraphy, woodblock prints, and items like lotus tea. Some visitors mention a centuries-old mango tree in the temple garden. Entry is ticketed (10,000 VND, scanned via QR code), and while the temple is compact enough to see in well under an hour, its atmosphere is consistently described as peaceful and dignified, if occasionally busier around lunar festival dates.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Quan Thanh Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Quan Thanh Temple pairs naturally with a walk along West Lake and a stop at nearby Chùa Trấn Quốc, and fits into a wider look at the Thăng Long Tứ Trấn alongside Bạch Mã, Kim Liên, and Voi Phục, though each temple sits in a different part of the city, so treat the full set as a loose Hanoi-wide theme rather than a single afternoon. The temple is small, so most visitors treat it as a brief, worthwhile stop rather than a half-day destination in itself - pairing it with the lake and other nearby sights makes for a fuller outing. Autumn (roughly September-November), when Hanoi's weather turns cooler and clearer, is often mentioned as a particularly pleasant time to visit, on top of the temple being an easy year-round stop given how much of the experience is indoors.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

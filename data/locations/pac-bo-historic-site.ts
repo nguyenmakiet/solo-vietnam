@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const pacBoHistoricSite: Location = {
   slug: "pac-bo-historic-site",
   name: "Pác Bó Historic Site",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.978070844628746,
@@ -46,14 +46,82 @@ export const pacBoHistoricSite: Location = {
     "Pác Bó is on the northern branch from Cao Bằng city (toward Hà Quảng). Thang Hen Lake and Bản Giốc Waterfall are on a separate eastern branch (toward Trà Lĩnh and Trùng Khánh). Plan as two separate day trips from Cao Bằng city, not a single loop.",
   ],
   content: {
-    intro:
-      "Pác Bó is a small valley on the Chinese border where Hồ Chí Minh secretly crossed back into Vietnam on January 28, 1941, after 30 years abroad. He didn't move into a permanent base immediately - after about 12 days, on February 8, 1941, he relocated into a limestone cave, Cốc Bó, beside a clear mountain stream, living here in the jungle under the pseudonym 'Già Thu' while building the Việt Minh independence movement. During his time here he named the stream Suối Lênin (Lenin Stream) - previously known locally as Suối Giàng ('heaven stream') - and the mountain above Núi Các Mác (Karl Marx Mountain), and wrote several of his most celebrated poems describing the cave, the stream, and the life of a revolutionary in the forest, including the well-known line 'Sáng ra bờ suối, tối vào hang' from his poem 'Tức cảnh Pác Bó'. The stone table by the stream where he worked - a wobbly, uneven slab, per period descriptions - remains in place, alongside a nearby rock where he's said to have enjoyed fishing. The cave itself is small, only around 15 square metres. About 1km away, Lán Khuổi Nặm - a small (~12 sqm) stilt-house-style shelter by a stream, recently repaved with stone for easier access - was actually where Hồ Chí Minh stayed the longest during his time in this area, chosen for its visibility and easy retreat if enemy forces approached. A memorial temple to Hồ Chí Minh, completed in May 2011 to coincide with the 121st anniversary of his birth, now stands on nearby Đồi Tiếng Chấy hill. For Vietnamese visitors this is among the most emotionally significant revolutionary sites in the country. For international visitors it is an unusually intimate window into the history that shaped modern Vietnam, set in a valley of genuine natural beauty.",
-    howToGetThere:
-      "Pác Bó is roughly 50-55km north of Cao Bằng city in Hà Quảng District, near the Chinese border. By motorbike from Cao Bằng: about 1.5 hours on a paved road that is relatively flat and scenic - karst limestone valleys, rice fields, and Tày and Nùng minority villages along the way. Motorbike rental in Cao Bằng: 100,000-200,000 VND/day. Bus line 02 from Cao Bằng city also serves the area. From Hanoi to Cao Bằng: bus from Mỹ Đình or Giáp Bát (300,000-350,000 VND, 6-8 hours via QL3). Thang Hen Lake and Bản Giốc are on a separate eastern branch from Cao Bằng city - plan as a second day trip rather than a single loop with Pác Bó.",
-    whatToExpect:
-      "The site is set in a narrow valley where Lenin Stream runs between limestone cliffs, though its colour genuinely varies: reddish-brown and murky during flooding, greenish just after rain, and blue and clear on an ordinary dry day - don't be surprised if it doesn't match the classic jade-green photos if conditions aren't ideal. The main stops: Cốc Bó cave (small, around 15 square metres, with the original plank bed and stone ledge intact), the stone table by the stream where Hồ Chí Minh worked and wrote poetry, Lán Khuổi Nặm shelter about 1km away (where he actually stayed the longest), border marker 108 (renumbered 675 under the current border marker system) where he crossed back into Vietnam in 1941, the memorial temple on Đồi Tiếng Chấy hill, and the Kim Đồng memorial on the approach road. A small museum has photographs and documents from the period. The terrain involves walking on stone steps and forest paths - sports shoes with grip are recommended. Feeding the stream's fish is allowed at designated spots, though swimming or entering the water isn't. Watch for snakes along the rocky trail sections.",
-    travelTips:
-      "Pác Bó means something different depending on who you are: for Vietnamese visitors it is a deeply emotional pilgrimage to the birthplace of the revolution; for international visitors it is one of the most historically layered sites in the north, where the personal life of Hồ Chí Minh during the most formative period of Vietnamese history becomes physically tangible. Either way, the valley is genuinely beautiful - the Lenin Stream, the karst cliffs, the jungle - and the roughly 50-55km motorbike ride from Cao Bằng through the northern landscape is itself one of the more scenic stretches in the province. Allow half a day (roughly 4-6 hours) for the fuller site including the museum, cave, stone table, Lán Khuổi Nặm, border marker, memorial temple, and Kim Đồng memorial, especially if you want to see everything rather than just the core cave and stream area.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Pác Bó Historic Site Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Pác Bó is a small valley on the Chinese border where Hồ Chí Minh secretly crossed back into Vietnam on January 28, 1941, after 30 years abroad.",
+          },
+          { type: "heading", text: "Cốc Bó Cave and Lenin Stream" },
+          {
+            type: "paragraph",
+            text: "He didn't move into a permanent base immediately - after about 12 days, on February 8, 1941, he relocated into a limestone cave, Cốc Bó, beside a clear mountain stream, living here in the jungle under the pseudonym 'Già Thu' while building the Việt Minh independence movement. During his time here he named the stream Suối Lênin (Lenin Stream) - previously known locally as Suối Giàng ('heaven stream') - and the mountain above Núi Các Mác (Karl Marx Mountain), and wrote several of his most celebrated poems describing the cave, the stream, and the life of a revolutionary in the forest, including the well-known line 'Sáng ra bờ suối, tối vào hang' from his poem 'Tức cảnh Pác Bó'. The stone table by the stream where he worked - a wobbly, uneven slab, per period descriptions - remains in place, alongside a nearby rock where he's said to have enjoyed fishing. The cave itself is small, only around 15 square metres.",
+          },
+          { type: "heading", text: "Lán Khuổi Nặm and the Memorial Temple" },
+          {
+            type: "paragraph",
+            text: "About 1km away, Lán Khuổi Nặm - a small (~12 sqm) stilt-house-style shelter by a stream, recently repaved with stone for easier access - was actually where Hồ Chí Minh stayed the longest during his time in this area, chosen for its visibility and easy retreat if enemy forces approached. A memorial temple to Hồ Chí Minh, completed in May 2011 to coincide with the 121st anniversary of his birth, now stands on nearby Đồi Tiếng Chấy hill.",
+          },
+          { type: "heading", text: "Why It Matters" },
+          {
+            type: "paragraph",
+            text: "For Vietnamese visitors this is among the most emotionally significant revolutionary sites in the country. For international visitors it is an unusually intimate window into the history that shaped modern Vietnam, set in a valley of genuine natural beauty.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Pác Bó Historic Site",
+        blocks: [
+          { type: "heading", text: "From Cao Bằng" },
+          {
+            type: "paragraph",
+            text: "Pác Bó is roughly 50-55km north of Cao Bằng city in Hà Quảng District, near the Chinese border. By motorbike from Cao Bằng: about 1.5 hours on a paved road that is relatively flat and scenic - karst limestone valleys, rice fields, and Tày and Nùng minority villages along the way. Motorbike rental in Cao Bằng: 100,000-200,000 VND/day. Bus line 02 from Cao Bằng city also serves the area.",
+          },
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "From Hanoi to Cao Bằng: bus from Mỹ Đình or Giáp Bát (300,000-350,000 VND, 6-8 hours via QL3).",
+          },
+          {
+            type: "paragraph",
+            text: "Thang Hen Lake and Bản Giốc are on a separate eastern branch from Cao Bằng city - plan as a second day trip rather than a single loop with Pác Bó.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Pác Bó Historic Site",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The site is set in a narrow valley where Lenin Stream runs between limestone cliffs, though its colour genuinely varies: reddish-brown and murky during flooding, greenish just after rain, and blue and clear on an ordinary dry day - don't be surprised if it doesn't match the classic jade-green photos if conditions aren't ideal. The main stops: Cốc Bó cave (small, around 15 square metres, with the original plank bed and stone ledge intact), the stone table by the stream where Hồ Chí Minh worked and wrote poetry, Lán Khuổi Nặm shelter about 1km away (where he actually stayed the longest), border marker 108 (renumbered 675 under the current border marker system) where he crossed back into Vietnam in 1941, the memorial temple on Đồi Tiếng Chấy hill, and the Kim Đồng memorial on the approach road. A small museum has photographs and documents from the period.",
+          },
+          { type: "heading", text: "Practical Notes" },
+          {
+            type: "paragraph",
+            text: "The terrain involves walking on stone steps and forest paths - sports shoes with grip are recommended. Feeding the stream's fish is allowed at designated spots, though swimming or entering the water isn't. Watch for snakes along the rocky trail sections.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Pác Bó Historic Site",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Pác Bó means something different depending on who you are: for Vietnamese visitors it is a deeply emotional pilgrimage to the birthplace of the revolution; for international visitors it is one of the most historically layered sites in the north, where the personal life of Hồ Chí Minh during the most formative period of Vietnamese history becomes physically tangible. Either way, the valley is genuinely beautiful - the Lenin Stream, the karst cliffs, the jungle - and the roughly 50-55km motorbike ride from Cao Bằng through the northern landscape is itself one of the more scenic stretches in the province. Allow half a day (roughly 4-6 hours) for the fuller site including the museum, cave, stone table, Lán Khuổi Nặm, border marker, memorial temple, and Kim Đồng memorial, especially if you want to see everything rather than just the core cave and stream area.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
