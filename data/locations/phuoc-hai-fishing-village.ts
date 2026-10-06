@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuocHaiFishingVillage: Location = {
   slug: "phuoc-hai-fishing-village",
   name: "Phước Hải Fishing Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.417691097954336,
@@ -49,14 +49,87 @@ export const phuocHaiFishingVillage: Location = {
     "Nov-Apr dry season: little rain, warm sun, good for swimming and outdoor activities. May-Oct rainy season: frequent sudden showers - bring a rain jacket if visiting.",
   ],
   content: {
-    intro:
-      "Phước Hải is one of the oldest fishing villages in Bà Rịa-Vũng Tàu province. The settlement traces back to 1725-1730 when a man named Trần Văn Mầu first cleared land here, establishing a small community called Xóm Lưới Rê. The area was later renamed Hải Chữ (meaning 'sea and shore'), and during the reign of Emperor Gia Long it merged with Phước Điền to form the current Phước Hải village. Today the community has over 5,500 fishing boats operating regularly with an annual catch exceeding 5,000 tonnes - more than two-thirds of residents earn their living from the sea. It sits about 25km south of Vũng Tàu city and 1.5 hours from Ho Chi Minh City by Toàn Thắng bus. The combination it offers is unusual on this stretch of coastline: a genuine working fishing village with boats moored along the shore, a morning seafood market, and a beach that's actually good enough to swim in. Most nearby alternatives compromise on one or the other - Phước Tỉnh is a serious fishing port but the beach is poor; Hồ Tràm has a nicer beach but little fishing character left; Vũng Tàu has both but is overcrowded. Phước Hải holds the middle position and has become one of the most popular weekend escapes for young people from Saigon.",
-    howToGetThere:
-      "From Ho Chi Minh City, take the Toàn Thắng bus - book tickets online or directly at the bus station, direct service to Phước Hải, approximately 1.5 hours. From Vũng Tàu, the coastal road south through Long Hải takes about 40 minutes by motorbike and is the scenic option. From Bà Rịa city, Provincial Road 44 is faster. Day trippers from HCMC typically combine Phước Hải with Phước Tỉnh harbor for a full coastal day.",
-    whatToExpect:
-      "A 1km seafront promenade backed by seafood restaurants, with fishing boats moored along the shore and a working harbor at the northern end. The most active period is 6-9 AM when the morning market runs, the seafood restaurants are steaming, and the fishing community is moving. The seafood market (chợ hải sản) sits directly across from the main square. The beach south of the harbor is sandy and swimmable - the water is not particularly clear but is reasonably clean. For swimming, check the lunar calendar: days 8-12 and 22-27 of the lunar month have stable tides best suited for swimming; days 1-5 and 15-20 see dramatic tidal movement with water going out far - better for foraging shellfish than swimming. The square in front of the beach hosts kite displays on weekends. Freshwater rinse showers are available by the square (15,000 VND). Chờ Iu Chill cafe nearby has good sea views and is a natural stop after swimming.",
-    travelTips:
-      "Phước Hải is an easy weekend trip from Saigon that delivers on its main promise: good seafood, a functional beach, and the visual texture of a working fishing community all in the same place. Saturday is the peak day - large numbers of young people from HCMC arrive Saturday and leave Sunday midday. If you want the experience without the crowd, go Sunday or any weekday. The 6-9 AM window on the promenade is worth getting up for regardless - the fishing activity and morning market atmosphere are what makes Phước Hải different from a regular beach town. If visiting in the 2nd lunar month, check dates for Lễ Hội Nghinh Ông (15th-17th) and Lễ Hội Dinh Cô at nearby Long Hải (12th) - both are significant local festivals worth timing around.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Phước Hải Fishing Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phước Hải is one of the oldest fishing villages in Bà Rịa-Vũng Tàu province.",
+          },
+          { type: "heading", text: "History" },
+          {
+            type: "paragraph",
+            text: "The settlement traces back to 1725-1730 when a man named Trần Văn Mầu first cleared land here, establishing a small community called Xóm Lưới Rê. The area was later renamed Hải Chữ (meaning 'sea and shore'), and during the reign of Emperor Gia Long it merged with Phước Điền to form the current Phước Hải village.",
+          },
+          { type: "heading", text: "The Fleet and Location" },
+          {
+            type: "paragraph",
+            text: "Today the community has over 5,500 fishing boats operating regularly with an annual catch exceeding 5,000 tonnes - more than two-thirds of residents earn their living from the sea. It sits about 25km south of Vũng Tàu city and 1.5 hours from Ho Chi Minh City by Toàn Thắng bus.",
+          },
+          { type: "heading", text: "A Working Village and a Beach" },
+          {
+            type: "paragraph",
+            text: "The combination it offers is unusual on this stretch of coastline: a genuine working fishing village with boats moored along the shore, a morning seafood market, and a beach that's actually good enough to swim in. Most nearby alternatives compromise on one or the other - Phước Tỉnh is a serious fishing port but the beach is poor; Hồ Tràm has a nicer beach but little fishing character left; Vũng Tàu has both but is overcrowded. Phước Hải holds the middle position and has become one of the most popular weekend escapes for young people from Saigon.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Phước Hải Fishing Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From Ho Chi Minh City, take the Toàn Thắng bus - book tickets online or directly at the bus station, direct service to Phước Hải, approximately 1.5 hours. From Vũng Tàu, the coastal road south through Long Hải takes about 40 minutes by motorbike and is the scenic option. From Bà Rịa city, Provincial Road 44 is faster.",
+          },
+          {
+            type: "paragraph",
+            text: "Day trippers from HCMC typically combine Phước Hải with Phước Tỉnh harbor for a full coastal day.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Phước Hải Fishing Village",
+        blocks: [
+          { type: "heading", text: "The Promenade and Morning Market" },
+          {
+            type: "paragraph",
+            text: "A 1km seafront promenade backed by seafood restaurants, with fishing boats moored along the shore and a working harbor at the northern end. The most active period is 6-9 AM when the morning market runs, the seafood restaurants are steaming, and the fishing community is moving. The seafood market (chợ hải sản) sits directly across from the main square.",
+          },
+          { type: "heading", text: "The Beach and Swimming" },
+          {
+            type: "paragraph",
+            text: "The beach south of the harbor is sandy and swimmable - the water is not particularly clear but is reasonably clean. For swimming, check the lunar calendar: days 8-12 and 22-27 of the lunar month have stable tides best suited for swimming; days 1-5 and 15-20 see dramatic tidal movement with water going out far - better for foraging shellfish than swimming.",
+          },
+          { type: "heading", text: "The Square, Showers and Cafe" },
+          {
+            type: "paragraph",
+            text: "The square in front of the beach hosts kite displays on weekends. Freshwater rinse showers are available by the square (15,000 VND). Chờ Iu Chill cafe nearby has good sea views and is a natural stop after swimming.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Phước Hải Fishing Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phước Hải is an easy weekend trip from Saigon that delivers on its main promise: good seafood, a functional beach, and the visual texture of a working fishing community all in the same place. Saturday is the peak day - large numbers of young people from HCMC arrive Saturday and leave Sunday midday. If you want the experience without the crowd, go Sunday or any weekday.",
+          },
+          { type: "heading", text: "Morning Market and Festivals" },
+          {
+            type: "paragraph",
+            text: "The 6-9 AM window on the promenade is worth getting up for regardless - the fishing activity and morning market atmosphere are what makes Phước Hải different from a regular beach town. If visiting in the 2nd lunar month, check dates for Lễ Hội Nghinh Ông (15th-17th) and Lễ Hội Dinh Cô at nearby Long Hải (12th) - both are significant local festivals worth timing around.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

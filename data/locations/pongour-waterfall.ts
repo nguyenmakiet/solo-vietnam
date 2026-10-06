@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const pongourWaterfall: Location = {
   slug: "pongour-waterfall",
   name: "Pongour Waterfall",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.658000,
@@ -39,14 +39,73 @@ export const pongourWaterfall: Location = {
     "Compared to Datanla Waterfall (closer to Đà Lạt, with roller coasters and adventure activities), Pongour is a quieter, less commercialised natural experience - significantly larger in scale but with fewer organised activities. Choose Datanla for adventure attractions; come to Pongour for the falls themselves.",
   ],
   content: {
-    intro:
-      "Pongour Waterfall sits in Đức Trọng district, 50km south of Đà Lạt, in a natural forest basin carved from basalt plateau. The falls drop about 40 metres across a width of roughly 100 metres through seven natural stepped tiers - giving the site its other name, Thác Bảy Tầng (Seven-Tier Waterfall). In K'Ho language, 'Pongour' means the sound and force of falling water, and both meanings are accurate: on a full rainy-season day, the noise reaches visitors well before the view does. French-era travel writers frequently described Pongour as one of the most beautiful waterfalls in Indochina. Emperor Bảo Đại is said to have been so struck by the falls during an early 20th-century hunting expedition through the Đức Trọng forests that he gave it the title 'Nam Thiên Đệ Nhất Thác' - Greatest Waterfall Under the Southern Sky - a name that has stuck for a century. The surrounding 2.5-hectare primary forest adds to the sense of the falls as a self-contained ecosystem rather than just a scenic feature. The K'Ho people, whose name the waterfall carries, hold an annual festival here on the 15th day of the first lunar month - reputedly the only traditional waterfall festival in Vietnam.",
-    howToGetThere:
-      "Pongour Waterfall is 50km south of Đà Lạt city centre on National Highway 20, about 1-1.5 hours by motorbike or car - a natural stop on the Đà Lạt-HCMC route rather than a separate detour. Motorcyclists should note that QL20 carries heavy truck and sleeper bus traffic; ride defensively and keep right, especially through Định Quán toward Đức Trọng. From the ticket entrance, an electric cart (15,000 VND) runs to the trailhead, or the walk through forested path to the viewing area takes about 20 minutes.",
-    whatToExpect:
-      "The approach through forest gives way to the falls suddenly - seven broad basalt steps descending 40 metres, the full 100-metre width only visible from a distance or the lower viewing area. Unlike most Vietnamese waterfalls, which plunge through a narrow gorge, Pongour spreads horizontally across a series of basalt terraces - a geological feature that explains why photographs of Pongour look so different from waterfalls like Datanla, Elephant, or Prenn, and why the falls are best appreciated from a distance rather than standing directly underneath. In rainy season, the cascade is continuous white water filling the entire face; in dry season, the same structure reveals its geology more clearly - striated basalt tiers, moss-covered ledges, and clear pools between the steps. The pool at the base of the seventh tier is the main swimming area: relatively calm, 0.5-1.5m deep, and in clear conditions you can see the bottom. The mid-tiers (5th-6th) have shallower spots where children can wade. The entire rock surface is slick with algae regardless of season, which requires careful footing throughout. The open area around the falls has minimal shade; the forest path in and out provides relief from the sun but the main viewing and swimming areas are exposed.",
-    travelTips:
-      "Pongour is a place that rewards choosing the right season for your priorities rather than having one objectively 'best' time. Rainy season gives you the spectacle - the full cascade with all seven tiers running at full width is genuinely impressive and unlike most waterfalls in southern Vietnam. Dry season gives you the experience - swimming in clear water, walking the rock terraces, picnicking on the basalt shelves with the falls in the background. For photography, early morning in either season provides the best light; overcast rainy-season mornings produce particularly dramatic images of the falls. The comparison with Datanla Waterfall (closer to Đà Lạt, with roller coasters and organised activities) is worth making explicit: Pongour is significantly larger and more naturally spectacular, but comes without the activity infrastructure. Come here if the waterfall itself is the point.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Pongour Waterfall Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Pongour Waterfall sits in Đức Trọng district, 50km south of Đà Lạt, in a natural forest basin carved from basalt plateau. The falls drop about 40 metres across a width of roughly 100 metres through seven natural stepped tiers - giving the site its other name, Thác Bảy Tầng (Seven-Tier Waterfall). In K'Ho language, 'Pongour' means the sound and force of falling water, and both meanings are accurate: on a full rainy-season day, the noise reaches visitors well before the view does.",
+          },
+          { type: "heading", text: "Pongour in History" },
+          {
+            type: "paragraph",
+            text: "French-era travel writers frequently described Pongour as one of the most beautiful waterfalls in Indochina. Emperor Bảo Đại is said to have been so struck by the falls during an early 20th-century hunting expedition through the Đức Trọng forests that he gave it the title 'Nam Thiên Đệ Nhất Thác' - Greatest Waterfall Under the Southern Sky - a name that has stuck for a century.",
+          },
+          { type: "heading", text: "The Forest and the K'Ho Festival" },
+          {
+            type: "paragraph",
+            text: "The surrounding 2.5-hectare primary forest adds to the sense of the falls as a self-contained ecosystem rather than just a scenic feature. The K'Ho people, whose name the waterfall carries, hold an annual festival here on the 15th day of the first lunar month - reputedly the only traditional waterfall festival in Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Pongour Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Pongour Waterfall is 50km south of Đà Lạt city centre on National Highway 20, about 1-1.5 hours by motorbike or car - a natural stop on the Đà Lạt-HCMC route rather than a separate detour. Motorcyclists should note that QL20 carries heavy truck and sleeper bus traffic; ride defensively and keep right, especially through Định Quán toward Đức Trọng. From the ticket entrance, an electric cart (15,000 VND) runs to the trailhead, or the walk through forested path to the viewing area takes about 20 minutes.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Pongour Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The approach through forest gives way to the falls suddenly - seven broad basalt steps descending 40 metres, the full 100-metre width only visible from a distance or the lower viewing area. Unlike most Vietnamese waterfalls, which plunge through a narrow gorge, Pongour spreads horizontally across a series of basalt terraces - a geological feature that explains why photographs of Pongour look so different from waterfalls like Datanla, Elephant, or Prenn, and why the falls are best appreciated from a distance rather than standing directly underneath. In rainy season, the cascade is continuous white water filling the entire face; in dry season, the same structure reveals its geology more clearly - striated basalt tiers, moss-covered ledges, and clear pools between the steps.",
+          },
+          { type: "heading", text: "Swimming and Footing" },
+          {
+            type: "paragraph",
+            text: "The pool at the base of the seventh tier is the main swimming area: relatively calm, 0.5-1.5m deep, and in clear conditions you can see the bottom. The mid-tiers (5th-6th) have shallower spots where children can wade. The entire rock surface is slick with algae regardless of season, which requires careful footing throughout. The open area around the falls has minimal shade; the forest path in and out provides relief from the sun but the main viewing and swimming areas are exposed.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Pongour Waterfall",
+        blocks: [
+          { type: "heading", text: "Rainy or Dry Season" },
+          {
+            type: "paragraph",
+            text: "Pongour is a place that rewards choosing the right season for your priorities rather than having one objectively 'best' time. Rainy season gives you the spectacle - the full cascade with all seven tiers running at full width is genuinely impressive and unlike most waterfalls in southern Vietnam. Dry season gives you the experience - swimming in clear water, walking the rock terraces, picnicking on the basalt shelves with the falls in the background. For photography, early morning in either season provides the best light; overcast rainy-season mornings produce particularly dramatic images of the falls.",
+          },
+          { type: "heading", text: "Pongour or Datanla" },
+          {
+            type: "paragraph",
+            text: "The comparison with Datanla Waterfall (closer to Đà Lạt, with roller coasters and organised activities) is worth making explicit: Pongour is significantly larger and more naturally spectacular, but comes without the activity infrastructure. Come here if the waterfall itself is the point.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vinpearlCableCar: Location = {
   slug: "vinpearl-cable-car",
   name: "Vinpearl Cable Car",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.203687968459107,
@@ -41,14 +41,77 @@ export const vinpearlCableCar: Location = {
     "This is best suited to families and travellers who want a lively, entertainment-focused day out with rides and activities - if you're hoping for untouched nature or an authentic local-life experience, this isn't the place for that, and you're better off looking elsewhere",
   ],
   content: {
-    intro:
-      "The Vinpearl Cable Car is marketed as one of the world's longest over-sea cable cars, having held a Guinness World Record for the category - 3,320 metres of cable, built starting in August 2006, stretching from the Vinpearl pier on the Nha Trang mainland across the bay to Hòn Tre Island. The system runs 65 eight-person cabins at around 6 metres per second, moving 1,500-2,000 passengers per hour. The gondolas cross at an average of around 50 metres above the water, providing aerial views over Nha Trang Bay, the city's beachfront, and on clear days, the surrounding islands of the bay. The cable car is the gateway to Vinpearl Land, the large resort and theme park complex on Hòn Tre developed by Vingroup - Vietnam's largest private conglomerate - though it's also possible to ride the cable car on its own, without the theme park, to visit Vinpearl Harbour, a smaller dining and shopping area at the arrival station. The crossing itself, which has been featured on the Discovery Channel for its scale and engineering, is as much an attraction as a transport link: several minutes over open water, with the bay spreading out in every direction below, is one of the more distinctive travel experiences available in coastal Vietnam.",
-    howToGetThere:
-      "The Vinpearl Cable Car departs from the Vinpearl pier at the southern end of Trần Phú Street in Nha Trang, approximately 6km from the central beach area. The pier is accessible by taxi, Grab, or xe ôm from central Nha Trang (about 15 minutes). Tickets are purchased at the pier or booked online in advance - decide beforehand whether you want the cable-car-only ticket to Vinpearl Harbour or the full VinWonders package, since pricing differs substantially between the two. On weekdays, buying directly at the ticket counter usually gives the most flexibility; on weekends and holidays, booking ahead through an agency or online is worth it to guarantee a ticket and skip the busier counter queues. Ferry boats to Hòn Tre also depart from the same pier as a cheaper, slower alternative to the cable car.",
-    whatToExpect:
-      "The gondolas hold up to 8 passengers and have glass walls on all sides. The crossing begins over the pier area, quickly moves over open water, and the views open up over the full bay within the first minute. At the midpoint of the crossing - approximately 1,660 metres from either shore - the perspective is at its most dramatic, with water in every direction and the Nha Trang skyline visible to the north. Along the way, fishing rafts and cages dotted across the water below add some visual interest to the open-sea stretch of the crossing. Coming out of the arrival station on Hòn Tre, there are two clear directions to know: turning left leads to the festival square and the main VinWonders entrance (thrill rides, water park, family zone, and daily shows), while turning right leads to Vinpearl Harbour (the shopping, dining, and photo-friendly commercial street, and a good spot to wait for evening shows). If you're only there for a day and want to make the most of the water park and rides, head into VinWonders first before the crowds build, and save Vinpearl Harbour for later in the day. The cable car back to the mainland runs until around 9:45-10 PM, allowing a full day or an evening visit.",
-    travelTips:
-      "The Vinpearl Cable Car works for two quite different kinds of visitors, and it's worth being clear on which one you are before buying a ticket. If you specifically want the Vinpearl Land theme park experience - families with children, or anyone after a beach day on a private island - the full-day ticket (which bundles in the park entrance) is the one to get. If you're mainly curious about the cable car crossing itself and don't care about the theme park, the much cheaper Vinpearl Harbour round-trip ticket (around 200,000 VND) gets you the same aerial views without paying for a park you won't use. The over-sea perspective is genuinely unlike any other cable car in Vietnam - the combination of bay, islands, and coastal city visible simultaneously is the defining view of Nha Trang from above. If you're staying overnight on the island rather than just visiting for the day, Vinpearl Nha Trang's own resort is the natural choice for easy access to everything on Hòn Tre.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Vinpearl Cable Car Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Vinpearl Cable Car is marketed as one of the world's longest over-sea cable cars, having held a Guinness World Record for the category - 3,320 metres of cable, built starting in August 2006, stretching from the Vinpearl pier on the Nha Trang mainland across the bay to Hòn Tre Island. The system runs 65 eight-person cabins at around 6 metres per second, moving 1,500-2,000 passengers per hour. The gondolas cross at an average of around 50 metres above the water, providing aerial views over Nha Trang Bay, the city's beachfront, and on clear days, the surrounding islands of the bay.",
+          },
+          { type: "heading", text: "Gateway to Vinpearl Land" },
+          {
+            type: "paragraph",
+            text: "The cable car is the gateway to Vinpearl Land, the large resort and theme park complex on Hòn Tre developed by Vingroup - Vietnam's largest private conglomerate - though it's also possible to ride the cable car on its own, without the theme park, to visit Vinpearl Harbour, a smaller dining and shopping area at the arrival station. The crossing itself, which has been featured on the Discovery Channel for its scale and engineering, is as much an attraction as a transport link: several minutes over open water, with the bay spreading out in every direction below, is one of the more distinctive travel experiences available in coastal Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Vinpearl Cable Car",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Vinpearl Cable Car departs from the Vinpearl pier at the southern end of Trần Phú Street in Nha Trang, approximately 6km from the central beach area. The pier is accessible by taxi, Grab, or xe ôm from central Nha Trang (about 15 minutes).",
+          },
+          { type: "heading", text: "Tickets and the Ferry Alternative" },
+          {
+            type: "paragraph",
+            text: "Tickets are purchased at the pier or booked online in advance - decide beforehand whether you want the cable-car-only ticket to Vinpearl Harbour or the full VinWonders package, since pricing differs substantially between the two. On weekdays, buying directly at the ticket counter usually gives the most flexibility; on weekends and holidays, booking ahead through an agency or online is worth it to guarantee a ticket and skip the busier counter queues. Ferry boats to Hòn Tre also depart from the same pier as a cheaper, slower alternative to the cable car.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Vinpearl Cable Car",
+        blocks: [
+          { type: "heading", text: "The Crossing" },
+          {
+            type: "paragraph",
+            text: "The gondolas hold up to 8 passengers and have glass walls on all sides. The crossing begins over the pier area, quickly moves over open water, and the views open up over the full bay within the first minute. At the midpoint of the crossing - approximately 1,660 metres from either shore - the perspective is at its most dramatic, with water in every direction and the Nha Trang skyline visible to the north. Along the way, fishing rafts and cages dotted across the water below add some visual interest to the open-sea stretch of the crossing.",
+          },
+          { type: "heading", text: "Arriving on Hòn Tre" },
+          {
+            type: "paragraph",
+            text: "Coming out of the arrival station on Hòn Tre, there are two clear directions to know: turning left leads to the festival square and the main VinWonders entrance (thrill rides, water park, family zone, and daily shows), while turning right leads to Vinpearl Harbour (the shopping, dining, and photo-friendly commercial street, and a good spot to wait for evening shows). If you're only there for a day and want to make the most of the water park and rides, head into VinWonders first before the crowds build, and save Vinpearl Harbour for later in the day. The cable car back to the mainland runs until around 9:45-10 PM, allowing a full day or an evening visit.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Vinpearl Cable Car",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Vinpearl Cable Car works for two quite different kinds of visitors, and it's worth being clear on which one you are before buying a ticket.",
+          },
+          { type: "heading", text: "Theme Park or Just the Crossing" },
+          {
+            type: "paragraph",
+            text: "If you specifically want the Vinpearl Land theme park experience - families with children, or anyone after a beach day on a private island - the full-day ticket (which bundles in the park entrance) is the one to get. If you're mainly curious about the cable car crossing itself and don't care about the theme park, the much cheaper Vinpearl Harbour round-trip ticket (around 200,000 VND) gets you the same aerial views without paying for a park you won't use.",
+          },
+          {
+            type: "paragraph",
+            text: "The over-sea perspective is genuinely unlike any other cable car in Vietnam - the combination of bay, islands, and coastal city visible simultaneously is the defining view of Nha Trang from above. If you're staying overnight on the island rather than just visiting for the day, Vinpearl Nha Trang's own resort is the natural choice for easy access to everything on Hòn Tre.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

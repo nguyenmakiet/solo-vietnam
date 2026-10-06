@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khauCocChaPass: Location = {
   slug: "khau-coc-cha-pass",
   name: "Khau Cóc Chà Pass",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.926557070752953,
@@ -37,14 +37,96 @@ export const khauCocChaPass: Location = {
     "Fuel up before setting out - this is a remote stretch of highway with no petrol stations directly on the pass itself",
   ],
   content: {
-    intro:
-      "Khau Cóc Chà Pass, often called the '15-tier pass' (đèo 15 tầng), is a short but dramatic stretch of National Highway 4A in Bảo Lạc district, Cao Bằng, connecting Xuân Trường commune to Bảo Lạc town near the Chinese border. In the Tày language, 'khau' means mountain pass, while 'Cốc Chà' refers to both a small Tày village near the summit and a tree species common in the area - not, as sometimes claimed, a description of the terrain itself. Despite covering barely 2.5km, the road packs in 14 tight hairpin switchbacks, stacking into roughly 15 visible tiers when viewed from a distance - a sight often compared to a ribbon or a staircase draped across the mountainside. The pass began as a narrow, roughly 40cm-wide footpath dating to the French colonial period, used mainly for foot and horse traffic, before the province invested in a full upgrade between 2009 and 2011 - widening the road to around 5 metres, paving it, and easing the sharpest bends for safety. It isn't included among Vietnam's famous 'Four Great Passes' (Pha Đin, Ô Quy Hồ, Mã Pí Lèng, and Khau Phạ), but it has become an increasingly popular stop for younger domestic travellers and adventure riders exploring Cao Bằng.",
-    howToGetThere:
-      "There are two main approaches. From Cao Bằng city, the more direct route follows Highway 3 to Bảo Lạc town (roughly 90-100km, around 3 hours by motorbike), then onto QL4A to the pass. From Hà Giang, a longer but more scenic option runs via QL4C to Yên Minh, then QL4A over Mã Pí Lèng Pass before reaching Khau Cóc Chà - a good way to combine two of the north's most dramatic mountain roads in one trip, if you have the time. A motorbike is the practical choice for either route, given the flexibility it offers on these roads; if travelling by car, a high-clearance vehicle with a reasonably powerful engine is worth insisting on. The road is paved but narrow and steep, with ongoing safety improvement work reported on some of the more accident-prone sections, so delays or detours are possible and may not show up on Google Maps - allow extra time and ride cautiously.",
-    whatToExpect:
-      "The road climbs and descends through the 14 switchbacks in quick succession, with a sheer rock face on one side and a steep drop on the other for much of the route - genuinely intense riding that rewards a steady hand rather than speed. There's a small flat clearing right at the top of the pass itself, a good spot to catch your breath, but it's not the best view. For the fuller, classic panorama of all the switchbacks stacked together, hike up to Đỉnh Pác Thốc (Pác Thốc Peak), known locally as the 'roof of Bảo Lạc,' on the mountain facing the pass - about 30-40 minutes each way, with sections of sharp, jagged limestone ('đá tai mèo') and stone steps that demand reasonable fitness. Budget around 1.5 hours round trip if you want time for photos at the top, and note there are no shops or vendors anywhere along this trail, so bring your own water and snacks. The trail is manageable in the dry season but gets genuinely slippery on the rock steps when wet. Cloud and mist are common, especially in the morning, adding to the atmosphere but sometimes obscuring the view entirely - if that happens, waiting isn't a bad strategy, since conditions can shift within 20-30 minutes.",
-    travelTips:
-      "Khau Cóc Chà is a landscape and riding experience rather than a single sight to check off - the switchbacks themselves and the hike to the viewpoint are the point, not a specific building or landmark. It suits travellers in good health who genuinely enjoy dramatic mountain roads and don't mind a moderately demanding trek for the payoff - it's a poor fit for anyone without decent fitness, or with cardiovascular conditions, given the combination of tense, blind-corner riding and a real uphill hike to the best viewpoint. It fits naturally into a Cao Bằng loop that also takes in Bản Giốc Waterfall, Ngườm Ngao Cave, and the Quây Sơn River, though the Bảo Lạc area is far enough from those better-known spots that it works best as part of a dedicated northwestern Cao Bằng route rather than a quick add-on. Riders who've done the Ha Giang Loop and want a shorter, similarly intense switchback experience without the crowds will find this a worthwhile detour - and combining it with Mã Pí Lèng Pass via the Hà Giang approach route makes for one of the more memorable stretches of riding in northern Vietnam.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Khau Cóc Chà Pass Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khau Cóc Chà Pass, often called the '15-tier pass' (đèo 15 tầng), is a short but dramatic stretch of National Highway 4A in Bảo Lạc district, Cao Bằng, connecting Xuân Trường commune to Bảo Lạc town near the Chinese border. In the Tày language, 'khau' means mountain pass, while 'Cốc Chà' refers to both a small Tày village near the summit and a tree species common in the area - not, as sometimes claimed, a description of the terrain itself.",
+          },
+          { type: "heading", text: "The 14 Switchbacks" },
+          {
+            type: "paragraph",
+            text: "Despite covering barely 2.5km, the road packs in 14 tight hairpin switchbacks, stacking into roughly 15 visible tiers when viewed from a distance - a sight often compared to a ribbon or a staircase draped across the mountainside.",
+          },
+          { type: "heading", text: "History and Status" },
+          {
+            type: "paragraph",
+            text: "The pass began as a narrow, roughly 40cm-wide footpath dating to the French colonial period, used mainly for foot and horse traffic, before the province invested in a full upgrade between 2009 and 2011 - widening the road to around 5 metres, paving it, and easing the sharpest bends for safety. It isn't included among Vietnam's famous 'Four Great Passes' (Pha Đin, Ô Quy Hồ, Mã Pí Lèng, and Khau Phạ), but it has become an increasingly popular stop for younger domestic travellers and adventure riders exploring Cao Bằng.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Khau Cóc Chà Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "There are two main approaches.",
+          },
+          { type: "heading", text: "From Cao Bằng" },
+          {
+            type: "paragraph",
+            text: "From Cao Bằng city, the more direct route follows Highway 3 to Bảo Lạc town (roughly 90-100km, around 3 hours by motorbike), then onto QL4A to the pass.",
+          },
+          { type: "heading", text: "From Hà Giang" },
+          {
+            type: "paragraph",
+            text: "From Hà Giang, a longer but more scenic option runs via QL4C to Yên Minh, then QL4A over Mã Pí Lèng Pass before reaching Khau Cóc Chà - a good way to combine two of the north's most dramatic mountain roads in one trip, if you have the time.",
+          },
+          { type: "heading", text: "Road Conditions" },
+          {
+            type: "paragraph",
+            text: "A motorbike is the practical choice for either route, given the flexibility it offers on these roads; if travelling by car, a high-clearance vehicle with a reasonably powerful engine is worth insisting on. The road is paved but narrow and steep, with ongoing safety improvement work reported on some of the more accident-prone sections, so delays or detours are possible and may not show up on Google Maps - allow extra time and ride cautiously.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Khau Cóc Chà Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The road climbs and descends through the 14 switchbacks in quick succession, with a sheer rock face on one side and a steep drop on the other for much of the route - genuinely intense riding that rewards a steady hand rather than speed.",
+          },
+          { type: "heading", text: "The Summit Clearing" },
+          {
+            type: "paragraph",
+            text: "There's a small flat clearing right at the top of the pass itself, a good spot to catch your breath, but it's not the best view.",
+          },
+          { type: "heading", text: "Hiking to the Viewpoint" },
+          {
+            type: "paragraph",
+            text: "For the fuller, classic panorama of all the switchbacks stacked together, hike up to Đỉnh Pác Thốc (Pác Thốc Peak), known locally as the 'roof of Bảo Lạc,' on the mountain facing the pass - about 30-40 minutes each way, with sections of sharp, jagged limestone ('đá tai mèo') and stone steps that demand reasonable fitness. Budget around 1.5 hours round trip if you want time for photos at the top, and note there are no shops or vendors anywhere along this trail, so bring your own water and snacks. The trail is manageable in the dry season but gets genuinely slippery on the rock steps when wet.",
+          },
+          { type: "heading", text: "Weather" },
+          {
+            type: "paragraph",
+            text: "Cloud and mist are common, especially in the morning, adding to the atmosphere but sometimes obscuring the view entirely - if that happens, waiting isn't a bad strategy, since conditions can shift within 20-30 minutes.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Khau Cóc Chà Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khau Cóc Chà is a landscape and riding experience rather than a single sight to check off - the switchbacks themselves and the hike to the viewpoint are the point, not a specific building or landmark. It suits travellers in good health who genuinely enjoy dramatic mountain roads and don't mind a moderately demanding trek for the payoff - it's a poor fit for anyone without decent fitness, or with cardiovascular conditions, given the combination of tense, blind-corner riding and a real uphill hike to the best viewpoint.",
+          },
+          {
+            type: "paragraph",
+            text: "It fits naturally into a Cao Bằng loop that also takes in Bản Giốc Waterfall, Ngườm Ngao Cave, and the Quây Sơn River, though the Bảo Lạc area is far enough from those better-known spots that it works best as part of a dedicated northwestern Cao Bằng route rather than a quick add-on. Riders who've done the Ha Giang Loop and want a shorter, similarly intense switchback experience without the crowds will find this a worthwhile detour - and combining it with Mã Pí Lèng Pass via the Hà Giang approach route makes for one of the more memorable stretches of riding in northern Vietnam.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

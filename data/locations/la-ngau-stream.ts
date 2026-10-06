@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const laNgauStream: Location = {
   slug: "la-ngau-stream",
   name: "La Ngâu Stream",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
   destination: "",
   lat: 11.236315974562396,
@@ -53,14 +53,83 @@ export const laNgauStream: Location = {
     "The area has seen multiple drowning incidents over the years. Local communities treat the stream with a quiet sense of respect. Whether you believe the stories or not, it's a reminder that this isn't a resort pool - conditions can change quickly and people have died here.",
   ],
   content: {
-    intro:
-      "La Ngâu Stream flows through Tánh Linh district in the interior of Bình Thuận province, about 4-5 hours from Ho Chi Minh City and completely unknown to international tourists. The stream runs over exposed rock formations through lowland jungle, creating a series of natural pools and small rapids that have made it one of the better weekend camping destinations within reach of Saigon. It sits in a useful middle ground: far enough from the city that the Vũng Tàu crowd problem doesn't apply, just offroad enough to give motorbike riders a sense of genuine adventure, and isolated enough - no electricity, weak phone signal, cold water - to feel properly removed from urban life. Multiple campsites line the stream banks, ranging from free wild spots to managed sites with toilets, showers, and tent rental. The rocky streambed keeps the water cold and clear in the dry season. The main hazard is the dam upstream: water levels follow a daily cycle driven partly by dam releases around 4 PM, when the stream can rise fast enough to be dangerous. The area has had multiple drowning incidents over the years - locals treat it with the quiet respect that comes from knowing a place well.",
-    howToGetThere:
-      "La Ngâu Stream is approximately 4-5 hours from Ho Chi Minh City. From HCMC, take the HCM - Long Thành - Dầu Giây Expressway, exit toward National Highway 55 (QL55) at Hàm Tân district, then follow QL55 north directly into Tánh Linh district toward La Ngâu. Search Google Maps for 'khu cắm trại tự túc vườn điều' for the main campsite cluster. Most of the road is paved and easy; the last section is unpaved with rocks and dirt. High-clearance 4WD handles it without issue. Standard cars can park at the outer campsites. There is limited public transport to this area - motorbike or car is the practical option.",
-    whatToExpect:
-      "The stream runs over exposed flat rock with natural pools at various depths - from ankle-deep wading sections to deeper pools suitable for swimming. Water is cold year-round due to the rocky substrate. The best conditions are 12:00-16:00 when water levels are lowest and calmest. Morning hours (6-9 AM) have higher, faster water. From 4 PM the dam releases and water rises quickly - campsite managers will call everyone out. Facilities at managed campsites include toilets, showers, and tent rental with basic bedding. No electricity; phone signal is weak. The surrounding lowland forest has birdlife active in early morning. Trekking upstream toward Hồ Tiên (Fairy Lake) is the more adventurous extension of the visit.",
-    travelTips:
-      "La Ngâu works best as a 2-day 1-night weekend trip from Saigon. Arrive in the afternoon, set up camp, swim in the evening before the 4 PM dam release, BBQ dinner, overnight in tent, morning swim in the calm 9-10 AM window, then head back. Budget approximately 500,000-600,000 VND total for two people including campsite, tent rental, and food brought from outside. Bring insect repellent, a power bank, and a handheld fan for sleeping. Always choose a managed campsite on the first visit - the dam release schedule is the single most important safety variable and local managers know it.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes La Ngâu Stream Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "La Ngâu Stream flows through Tánh Linh district in the interior of Bình Thuận province, about 4-5 hours from Ho Chi Minh City and completely unknown to international tourists. The stream runs over exposed rock formations through lowland jungle, creating a series of natural pools and small rapids that have made it one of the better weekend camping destinations within reach of Saigon. It sits in a useful middle ground: far enough from the city that the Vũng Tàu crowd problem doesn't apply, just offroad enough to give motorbike riders a sense of genuine adventure, and isolated enough - no electricity, weak phone signal, cold water - to feel properly removed from urban life.",
+          },
+          { type: "heading", text: "Campsites" },
+          {
+            type: "paragraph",
+            text: "Multiple campsites line the stream banks, ranging from free wild spots to managed sites with toilets, showers, and tent rental. The rocky streambed keeps the water cold and clear in the dry season.",
+          },
+          { type: "heading", text: "The Dam and Safety" },
+          {
+            type: "paragraph",
+            text: "The main hazard is the dam upstream: water levels follow a daily cycle driven partly by dam releases around 4 PM, when the stream can rise fast enough to be dangerous. The area has had multiple drowning incidents over the years - locals treat it with the quiet respect that comes from knowing a place well.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to La Ngâu Stream",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "La Ngâu Stream is approximately 4-5 hours from Ho Chi Minh City. From HCMC, take the HCM - Long Thành - Dầu Giây Expressway, exit toward National Highway 55 (QL55) at Hàm Tân district, then follow QL55 north directly into Tánh Linh district toward La Ngâu. Search Google Maps for 'khu cắm trại tự túc vườn điều' for the main campsite cluster.",
+          },
+          { type: "heading", text: "The Final Stretch" },
+          {
+            type: "paragraph",
+            text: "Most of the road is paved and easy; the last section is unpaved with rocks and dirt. High-clearance 4WD handles it without issue. Standard cars can park at the outer campsites. There is limited public transport to this area - motorbike or car is the practical option.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at La Ngâu Stream",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The stream runs over exposed flat rock with natural pools at various depths - from ankle-deep wading sections to deeper pools suitable for swimming. Water is cold year-round due to the rocky substrate.",
+          },
+          { type: "heading", text: "Water Levels Through the Day" },
+          {
+            type: "paragraph",
+            text: "The best conditions are 12:00-16:00 when water levels are lowest and calmest. Morning hours (6-9 AM) have higher, faster water. From 4 PM the dam releases and water rises quickly - campsite managers will call everyone out.",
+          },
+          { type: "heading", text: "Facilities and Surroundings" },
+          {
+            type: "paragraph",
+            text: "Facilities at managed campsites include toilets, showers, and tent rental with basic bedding. No electricity; phone signal is weak. The surrounding lowland forest has birdlife active in early morning. Trekking upstream toward Hồ Tiên (Fairy Lake) is the more adventurous extension of the visit.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for La Ngâu Stream",
+        blocks: [
+          { type: "heading", text: "A 2-Day Plan" },
+          {
+            type: "paragraph",
+            text: "La Ngâu works best as a 2-day 1-night weekend trip from Saigon. Arrive in the afternoon, set up camp, swim in the evening before the 4 PM dam release, BBQ dinner, overnight in tent, morning swim in the calm 9-10 AM window, then head back.",
+          },
+          { type: "heading", text: "Budget and Packing" },
+          {
+            type: "paragraph",
+            text: "Budget approximately 500,000-600,000 VND total for two people including campsite, tent rental, and food brought from outside. Bring insect repellent, a power bank, and a handheld fan for sleeping. Always choose a managed campsite on the first visit - the dam release schedule is the single most important safety variable and local managers know it.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
