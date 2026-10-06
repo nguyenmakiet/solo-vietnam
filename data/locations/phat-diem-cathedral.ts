@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phatDiemCathedral: Location = {
   slug: "phat-diem-cathedral",
   name: "Phát Diệm Cathedral",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.09305479535071,
@@ -46,14 +46,77 @@ export const phatDiemCathedral: Location = {
     "Look closely at the carved wooden beams and columns in the side chapels - the decorative motifs (pine, chrysanthemum, bamboo, plum blossom, lotus) are far closer to what you'd find in a đình or chùa than in a European church",
   ],
   content: {
-    intro:
-      "Phát Diệm Cathedral (Nhà Thờ Đá Phát Diệm) in the Kim Sơn area of Ninh Bình province is one of the very few Catholic cathedrals in the world whose architecture is unmistakably Vietnamese rather than European. The usual pattern was reversed here: instead of importing European Gothic or Baroque design, the builders let Catholic liturgy adapt itself to Vietnamese architecture, holding Mass inside a form borrowed from the Vietnamese communal house and pagoda tradition. The roughly 22-hectare complex was built over about two decades starting in 1875, under the direction of Father Phêrô Trần Lục (known as Cụ Sáu, 1825-1899), a Vietnamese Catholic priest who devoted much of his life to the project, using local granite and ironwood rather than imported materials. The main cathedral building itself is 76 metres long, 24 metres wide, and 16 metres high, its interior held up by 52 ironwood columns carved with the same floral and decorative motifs found in Vietnamese communal houses. The complex also includes a jackfruit wood chapel (Nhà Thờ Gỗ Mít), four smaller side chapels, the Phương Đình bell tower, and a large artificial lake with a central island statue of Christ. The overall site plan is often described as forming the shape of the Chinese character VƯƠNG (king), with the main cathedral at the centre.",
-    howToGetThere:
-      "Phát Diệm is located approximately 28km south of Ninh Bình city, in the Kim Sơn area near the coast, and about 120km from Hanoi (roughly 2 hours by car). From Ninh Bình, the most practical option is motorbike or hired car along Route 10 south toward Kim Sơn - journey time approximately 45 minutes; look for the old Cầu Ngói bridge on the left side of Route 10 as a landmark before the turn toward the cathedral. From Hanoi, Phát Diệm can be reached by direct private vehicle in about 2 hours, or by bus to Ninh Bình followed by local transport - total journey approximately 3.5-4 hours by bus. The cathedral is in the centre of Phát Diệm and easily found with GPS.",
-    whatToExpect:
-      "The complex is entered through a large stone gate facing an ornamental pond. Walking in along the main north-south axis, the Phương Đình bell tower sits directly ahead, aligned with the facade of the main cathedral behind it rather than off to one side - the whole complex follows a strict central axis. The bell tower is a three-story stone structure built from monolithic slabs, predating the main cathedral, with five small towers on its top level and a large bell said to carry more than 10km. The main cathedral itself is the largest structure, its interior supported by massive ironwood columns and decorated with carved stone altars. The four side chapels - dedicated to Saint Joseph, Saint Peter, the Sacred Heart of Mary (the stone chapel), and Saint Roch - all follow the same wooden architectural style typical of the Red River Delta, with low curved roof eaves, timber columns, and layered truss-and-beam framing, decorated with East Asian-style carvings of pine, chrysanthemum, bamboo, plum blossom, and lotus rather than any regional or ethnic-minority styling. Walking through the complex feels closer to exploring a traditional Vietnamese temple precinct than a European cathedral. The grounds are well-maintained and the stone construction throughout gives the complex a solidity and permanence that feels different from the brick and render Catholic churches common elsewhere in Vietnam. As an active place of worship, visitors are expected to stay quiet, dress modestly, and keep photos respectful of the setting.",
-    travelTips:
-      "Phát Diệm is most commonly visited as an add-on to Ninh Bình province itineraries that include Tràng An, Tam Cốc, or Van Long - the roughly 45-minute journey from Ninh Bình city makes it feasible as a half-day side trip. The cathedral is less visited than the karst landscape attractions of northern Ninh Bình, which means quieter conditions and more space, though the 22-hectare grounds are large enough that a map is genuinely useful. Even travellers who aren't interested in Christianity often leave impressed simply because nowhere else in Vietnam - or arguably Southeast Asia - presents Catholic architecture in such an unmistakably Vietnamese form. For visitors interested in the intersection of Vietnamese culture and Catholicism - one of the more complex and historically significant threads in Vietnamese history - Phát Diệm is the single most architecturally coherent expression of that history available to visit.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Phát Diệm Cathedral Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phát Diệm Cathedral (Nhà Thờ Đá Phát Diệm) in the Kim Sơn area of Ninh Bình province is one of the very few Catholic cathedrals in the world whose architecture is unmistakably Vietnamese rather than European. The usual pattern was reversed here: instead of importing European Gothic or Baroque design, the builders let Catholic liturgy adapt itself to Vietnamese architecture, holding Mass inside a form borrowed from the Vietnamese communal house and pagoda tradition.",
+          },
+          { type: "heading", text: "Construction and Scale" },
+          {
+            type: "paragraph",
+            text: "The roughly 22-hectare complex was built over about two decades starting in 1875, under the direction of Father Phêrô Trần Lục (known as Cụ Sáu, 1825-1899), a Vietnamese Catholic priest who devoted much of his life to the project, using local granite and ironwood rather than imported materials. The main cathedral building itself is 76 metres long, 24 metres wide, and 16 metres high, its interior held up by 52 ironwood columns carved with the same floral and decorative motifs found in Vietnamese communal houses.",
+          },
+          { type: "heading", text: "Chapels and Site Plan" },
+          {
+            type: "paragraph",
+            text: "The complex also includes a jackfruit wood chapel (Nhà Thờ Gỗ Mít), four smaller side chapels, the Phương Đình bell tower, and a large artificial lake with a central island statue of Christ. The overall site plan is often described as forming the shape of the Chinese character VƯƠNG (king), with the main cathedral at the centre.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Phát Diệm Cathedral",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phát Diệm is located approximately 28km south of Ninh Bình city, in the Kim Sơn area near the coast, and about 120km from Hanoi (roughly 2 hours by car). From Ninh Bình, the most practical option is motorbike or hired car along Route 10 south toward Kim Sơn - journey time approximately 45 minutes; look for the old Cầu Ngói bridge on the left side of Route 10 as a landmark before the turn toward the cathedral. From Hanoi, Phát Diệm can be reached by direct private vehicle in about 2 hours, or by bus to Ninh Bình followed by local transport - total journey approximately 3.5-4 hours by bus. The cathedral is in the centre of Phát Diệm and easily found with GPS.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Phát Diệm Cathedral",
+        blocks: [
+          { type: "heading", text: "The Gate and Phương Đình Bell Tower" },
+          {
+            type: "paragraph",
+            text: "The complex is entered through a large stone gate facing an ornamental pond. Walking in along the main north-south axis, the Phương Đình bell tower sits directly ahead, aligned with the facade of the main cathedral behind it rather than off to one side - the whole complex follows a strict central axis. The bell tower is a three-story stone structure built from monolithic slabs, predating the main cathedral, with five small towers on its top level and a large bell said to carry more than 10km.",
+          },
+          { type: "heading", text: "The Cathedral and Side Chapels" },
+          {
+            type: "paragraph",
+            text: "The main cathedral itself is the largest structure, its interior supported by massive ironwood columns and decorated with carved stone altars. The four side chapels - dedicated to Saint Joseph, Saint Peter, the Sacred Heart of Mary (the stone chapel), and Saint Roch - all follow the same wooden architectural style typical of the Red River Delta, with low curved roof eaves, timber columns, and layered truss-and-beam framing, decorated with East Asian-style carvings of pine, chrysanthemum, bamboo, plum blossom, and lotus rather than any regional or ethnic-minority styling.",
+          },
+          { type: "heading", text: "Atmosphere and Etiquette" },
+          {
+            type: "paragraph",
+            text: "Walking through the complex feels closer to exploring a traditional Vietnamese temple precinct than a European cathedral. The grounds are well-maintained and the stone construction throughout gives the complex a solidity and permanence that feels different from the brick and render Catholic churches common elsewhere in Vietnam. As an active place of worship, visitors are expected to stay quiet, dress modestly, and keep photos respectful of the setting.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Phát Diệm Cathedral",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phát Diệm is most commonly visited as an add-on to Ninh Bình province itineraries that include Tràng An, Tam Cốc, or Van Long - the roughly 45-minute journey from Ninh Bình city makes it feasible as a half-day side trip. The cathedral is less visited than the karst landscape attractions of northern Ninh Bình, which means quieter conditions and more space, though the 22-hectare grounds are large enough that a map is genuinely useful.",
+          },
+          {
+            type: "paragraph",
+            text: "Even travellers who aren't interested in Christianity often leave impressed simply because nowhere else in Vietnam - or arguably Southeast Asia - presents Catholic architecture in such an unmistakably Vietnamese form. For visitors interested in the intersection of Vietnamese culture and Catholicism - one of the more complex and historically significant threads in Vietnamese history - Phát Diệm is the single most architecturally coherent expression of that history available to visit.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

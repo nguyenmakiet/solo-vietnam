@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const kheVanWaterfall: Location = {
   slug: "khe-van-waterfall",
   name: "Khe Van Waterfall",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 21.486276637358955,
@@ -45,14 +45,87 @@ export const kheVanWaterfall: Location = {
     "Try the local chicken cooked with dong vermicelli at a homestay in Huc Dong village - it is the signature dish of the area and genuinely good",
   ],
   content: {
-    intro:
-      "Khe Van Waterfall sits in Huc Dong Commune in Binh Lieu District - a mountainous border area in the far northeast of Quang Ninh province, about 100km from Ha Long City and a world away from its tourism infrastructure. The waterfall is the largest in Quang Ninh province, dropping in three consecutive tiers through dense subtropical forest from a source high in the Khe Van - Thong Chau mountain range. Its name comes from the Tay language: 'khe' means stream, 'van' means smoke or mist - a reference to the spray that rises from the lower pool on heavy flow days. The surrounding area is San Chi, Tay, and Dao ethnic minority territory, and the waterfall has a cultural dimension that most natural attractions in Vietnam lack: it has traditionally been a meeting place for San Chi couples, who come to sing soong co, a form of call-and-response folk song unique to the group. Almost no foreign tourists make it here.",
-    howToGetThere:
-      "From Hanoi, the most practical route is via National Highway 18A to Tien Yen town, then National Highway 18C northeast to Binh Lieu town - total distance around 270km, roughly 5 to 6 hours by car or motorbike. From Ha Long City, follow Highway 18 northeast to Hoanh Mo intersection, turn onto Highway 18C to Binh Lieu - about 120km, 2 to 3 hours. From Binh Lieu town, the waterfall is 12 to 14km southeast toward Huc Dong Commune. Follow signs to the Khe Van tourism area, park at the trailhead near the commune, and walk around 15 minutes along a dirt path to the base of the falls. A motorbike is the most flexible way to do the final stretch from Binh Lieu.",
-    whatToExpect:
-      "The waterfall drops nearly 100m in total across three distinct tiers, each with its own character - visitor accounts number them from top to bottom. The uppermost tier is where water spills from the high cliff face into a wide, clear pool, with a striking rock formation off to one side. The middle tier splits into two parallel streams (one larger, one smaller) crashing over big boulders into a foam-flecked basin, with flat rocks nearby good for resting - impressive to look at, but the height and slippery rock here make it a poor choice for swimming. The lowest, final tier is calmer, where the water from above settles out before continuing on as a regular stream - look for a large rock in the middle of this tier said to resemble a crouching elephant. This final, lowest tier is the recommended (and official) swimming spot; heed any posted 'no swimming' signs at the upper tiers, especially when the water's running high. The scramble between tiers requires some care - the bedrock is bare and slippery, particularly in wet season. The surrounding forest is dense and largely intact, and the walk in passes through terraced rice fields and San Chi village houses. There's no formal entrance ticket - just a small motorbike parking fee during peak season - and beyond a few informal local food and rest stalls, don't expect built-out tourist facilities.",
-    travelTips:
-      "Khe Van is genuinely remote and that is its appeal - do not expect tourist facilities beyond a basic parking area and a few food stalls near the trailhead. Binh Lieu town has guesthouses and local restaurants and works well as a base for a one or two night stay. The waterfall pairs well with the Binh Lieu border trekking routes and Cao Ly Mountain if you want a full outdoor itinerary in the district. Late October and November add a bonus: the surrounding hills enter reed flower season and the entire Binh Lieu landscape shifts to a silver-white that is highly photogenic alongside the waterfall. If arriving from Ha Long, this makes an excellent detour on a self-drive loop rather than an out-and-back trip.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Khe Van Waterfall Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khe Van Waterfall sits in Huc Dong Commune in Binh Lieu District - a mountainous border area in the far northeast of Quang Ninh province, about 100km from Ha Long City and a world away from its tourism infrastructure. The waterfall is the largest in Quang Ninh province, dropping in three consecutive tiers through dense subtropical forest from a source high in the Khe Van - Thong Chau mountain range.",
+          },
+          { type: "heading", text: "The Name" },
+          {
+            type: "paragraph",
+            text: "Its name comes from the Tay language: 'khe' means stream, 'van' means smoke or mist - a reference to the spray that rises from the lower pool on heavy flow days.",
+          },
+          { type: "heading", text: "Culture and Visitors" },
+          {
+            type: "paragraph",
+            text: "The surrounding area is San Chi, Tay, and Dao ethnic minority territory, and the waterfall has a cultural dimension that most natural attractions in Vietnam lack: it has traditionally been a meeting place for San Chi couples, who come to sing soong co, a form of call-and-response folk song unique to the group. Almost no foreign tourists make it here.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Khe Van Waterfall",
+        blocks: [
+          { type: "heading", text: "From Hanoi or Ha Long" },
+          {
+            type: "paragraph",
+            text: "From Hanoi, the most practical route is via National Highway 18A to Tien Yen town, then National Highway 18C northeast to Binh Lieu town - total distance around 270km, roughly 5 to 6 hours by car or motorbike. From Ha Long City, follow Highway 18 northeast to Hoanh Mo intersection, turn onto Highway 18C to Binh Lieu - about 120km, 2 to 3 hours.",
+          },
+          { type: "heading", text: "From Binh Lieu" },
+          {
+            type: "paragraph",
+            text: "From Binh Lieu town, the waterfall is 12 to 14km southeast toward Huc Dong Commune. Follow signs to the Khe Van tourism area, park at the trailhead near the commune, and walk around 15 minutes along a dirt path to the base of the falls. A motorbike is the most flexible way to do the final stretch from Binh Lieu.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Khe Van Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The waterfall drops nearly 100m in total across three distinct tiers, each with its own character - visitor accounts number them from top to bottom.",
+          },
+          { type: "heading", text: "The Three Tiers" },
+          {
+            type: "paragraph",
+            text: "The uppermost tier is where water spills from the high cliff face into a wide, clear pool, with a striking rock formation off to one side. The middle tier splits into two parallel streams (one larger, one smaller) crashing over big boulders into a foam-flecked basin, with flat rocks nearby good for resting - impressive to look at, but the height and slippery rock here make it a poor choice for swimming. The lowest, final tier is calmer, where the water from above settles out before continuing on as a regular stream - look for a large rock in the middle of this tier said to resemble a crouching elephant.",
+          },
+          { type: "heading", text: "Swimming and Safety" },
+          {
+            type: "paragraph",
+            text: "This final, lowest tier is the recommended (and official) swimming spot; heed any posted 'no swimming' signs at the upper tiers, especially when the water's running high. The scramble between tiers requires some care - the bedrock is bare and slippery, particularly in wet season.",
+          },
+          { type: "heading", text: "Forest and Facilities" },
+          {
+            type: "paragraph",
+            text: "The surrounding forest is dense and largely intact, and the walk in passes through terraced rice fields and San Chi village houses. There's no formal entrance ticket - just a small motorbike parking fee during peak season - and beyond a few informal local food and rest stalls, don't expect built-out tourist facilities.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Khe Van Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khe Van is genuinely remote and that is its appeal - do not expect tourist facilities beyond a basic parking area and a few food stalls near the trailhead. Binh Lieu town has guesthouses and local restaurants and works well as a base for a one or two night stay.",
+          },
+          {
+            type: "paragraph",
+            text: "The waterfall pairs well with the Binh Lieu border trekking routes and Cao Ly Mountain if you want a full outdoor itinerary in the district. Late October and November add a bonus: the surrounding hills enter reed flower season and the entire Binh Lieu landscape shifts to a silver-white that is highly photogenic alongside the waterfall. If arriving from Ha Long, this makes an excellent detour on a self-drive loop rather than an out-and-back trip.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

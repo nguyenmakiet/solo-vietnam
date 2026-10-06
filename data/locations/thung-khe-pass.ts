@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thungKhePass: Location = {
   slug: "thung-khe-pass",
   name: "Thung Khe Pass",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hoa-binh"],
   destination: "",
   lat: 20.659973197100356,
@@ -50,14 +50,87 @@ export const thungKhePass: Location = {
     "Go Lao Waterfall (18km from summit) and Mai Chau valley (20-30km) are the natural extensions - combine all three for a full day from Hanoi.",
   ],
   content: {
-    intro:
-      "Thung Khe Pass - also known as Đèo Đá Trắng (White Rock Pass) - sits at approximately 1,000 metres above sea level on National Highway 6 in Hòa Bình province, about 100km from Hanoi. It is the standard route from Hanoi to Mai Chau valley, and for most travellers who cross it, the pass is the more memorable part of the journey. Many Vietnamese riders say Thung Khe is the moment the trip begins to feel like the mountains. Up to this point, the road from Hanoi is largely ordinary. Crossing the summit and seeing Mai Chau valley appear below is the first real sense that you've entered Vietnam's northwest highlands. The white limestone appearance is not natural snow - it came from road construction: when Highway 6 was blasted through the mountain, large sections of pale limestone broke away and slid down the slopes, coating the hillsides in bright rock. From a distance, especially in winter fog, the white slopes look so out of place in tropical Vietnam that many first-time visitors assume they are seeing limestone dust or even patches of snow. At the summit, a cluster of thatched-roof roadside stalls run by Mường ethnic vendors serves local snacks. About 4-5km further down the descent toward Mai Chau, the Mai Chau Flagpole viewpoint (in Tòng Đậu commune) gives one of the finest unobstructed valley views in northern Vietnam - a separate stop from the summit market area.",
-    howToGetThere:
-      "Thung Khe Pass is 100km southwest of Hanoi - about 2.5-3 hours by motorbike or car. From Hanoi, take National Highway 6 through Hòa Bình city, then continue approximately 40km further to the pass. The pass is a natural stopping point on any journey to Mai Chau, Mộc Châu, or further northwest. Buses from Hanoi (Mỹ Đình station) to Mai Chau pass through Thung Khe. Renting a motorbike in Hanoi for a Mai Chau loop is the most popular independent option.",
-    whatToExpect:
-      "Two distinct stops on the same route. The summit area has thatched-roof roadside stalls, the white limestone cliff faces, and the market atmosphere. About 4-5km further down the descent, the Mai Chau Flagpole viewpoint (Tòng Đậu commune) opens up the full valley panorama - rice paddies, stilt houses, and limestone ridges stretching to the horizon. On clear mornings the view is exceptional. Weather changes rapidly through the day: mornings are typically clear, afternoons often bring mist, evenings bring thick fog. The white rock is most dramatic mid-morning with direct sunlight on the pale faces.",
-    travelTips:
-      "Thung Khe is most rewarding as part of a multi-day northwest loop. The natural itinerary continues to Mai Chau (stilt-house homestay, valley cycling), then to Pù Luông Nature Reserve (jungle trekking and waterfalls). Avoid the pass in fog, heavy rain, or after dark - the combination of steep drops, active mountain terrain, and heavy truck traffic makes low-visibility conditions genuinely hazardous. July and August are the highest-risk months for road conditions. Drive in daylight, keep speed low on blind curves, and stop only at the wider roadside areas.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Thung Khe Pass Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thung Khe Pass - also known as Đèo Đá Trắng (White Rock Pass) - sits at approximately 1,000 metres above sea level on National Highway 6 in Hòa Bình province, about 100km from Hanoi. It is the standard route from Hanoi to Mai Chau valley, and for most travellers who cross it, the pass is the more memorable part of the journey. Many Vietnamese riders say Thung Khe is the moment the trip begins to feel like the mountains. Up to this point, the road from Hanoi is largely ordinary. Crossing the summit and seeing Mai Chau valley appear below is the first real sense that you've entered Vietnam's northwest highlands.",
+          },
+          { type: "heading", text: "The White Rock" },
+          {
+            type: "paragraph",
+            text: "The white limestone appearance is not natural snow - it came from road construction: when Highway 6 was blasted through the mountain, large sections of pale limestone broke away and slid down the slopes, coating the hillsides in bright rock. From a distance, especially in winter fog, the white slopes look so out of place in tropical Vietnam that many first-time visitors assume they are seeing limestone dust or even patches of snow.",
+          },
+          { type: "heading", text: "Summit Stalls and the Mai Chau Flagpole" },
+          {
+            type: "paragraph",
+            text: "At the summit, a cluster of thatched-roof roadside stalls run by Mường ethnic vendors serves local snacks. About 4-5km further down the descent toward Mai Chau, the Mai Chau Flagpole viewpoint (in Tòng Đậu commune) gives one of the finest unobstructed valley views in northern Vietnam - a separate stop from the summit market area.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Thung Khe Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thung Khe Pass is 100km southwest of Hanoi - about 2.5-3 hours by motorbike or car. From Hanoi, take National Highway 6 through Hòa Bình city, then continue approximately 40km further to the pass. The pass is a natural stopping point on any journey to Mai Chau, Mộc Châu, or further northwest.",
+          },
+          { type: "heading", text: "Bus and Motorbike" },
+          {
+            type: "paragraph",
+            text: "Buses from Hanoi (Mỹ Đình station) to Mai Chau pass through Thung Khe. Renting a motorbike in Hanoi for a Mai Chau loop is the most popular independent option.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Thung Khe Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Two distinct stops on the same route.",
+          },
+          { type: "heading", text: "The Summit" },
+          {
+            type: "paragraph",
+            text: "The summit area has thatched-roof roadside stalls, the white limestone cliff faces, and the market atmosphere.",
+          },
+          { type: "heading", text: "The Mai Chau Flagpole Viewpoint" },
+          {
+            type: "paragraph",
+            text: "About 4-5km further down the descent, the Mai Chau Flagpole viewpoint (Tòng Đậu commune) opens up the full valley panorama - rice paddies, stilt houses, and limestone ridges stretching to the horizon. On clear mornings the view is exceptional.",
+          },
+          { type: "heading", text: "Weather and Light" },
+          {
+            type: "paragraph",
+            text: "Weather changes rapidly through the day: mornings are typically clear, afternoons often bring mist, evenings bring thick fog. The white rock is most dramatic mid-morning with direct sunlight on the pale faces.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Thung Khe Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thung Khe is most rewarding as part of a multi-day northwest loop. The natural itinerary continues to Mai Chau (stilt-house homestay, valley cycling), then to Pù Luông Nature Reserve (jungle trekking and waterfalls).",
+          },
+          { type: "heading", text: "Safety" },
+          {
+            type: "paragraph",
+            text: "Avoid the pass in fog, heavy rain, or after dark - the combination of steep drops, active mountain terrain, and heavy truck traffic makes low-visibility conditions genuinely hazardous. July and August are the highest-risk months for road conditions. Drive in daylight, keep speed low on blind curves, and stop only at the wider roadside areas.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
