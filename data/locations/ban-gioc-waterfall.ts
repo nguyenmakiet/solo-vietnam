@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const banGiocWaterfall: Location = {
   slug: "ban-gioc-waterfall",
   name: "Ban Gioc Waterfall",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: "22.854409352361497",
@@ -41,14 +41,88 @@ export const banGiocWaterfall: Location = {
     "Bus number 3 from Cao Bằng city goes directly to the waterfall if you only want to see Bản Giốc. But if you're planning to visit the surrounding sites, rent a motorbike instead - it's the only practical way to move between them.",
   ],
   content: {
-    intro:
-      "Bản Giốc sits on the Quây Sơn River at the Vietnam-China border, 90km north of Cao Bằng city, and is the largest waterfall on any national border in Southeast Asia. The falls spread across 300 metres in three distinct tiers, dropping 30 metres into a wide turquoise pool before the river continues south into Vietnam. The border runs down the middle of the water - the right section belongs to Vietnam, the left to China - which means you can watch the falls and see another country at the same time. In September and October, after the monsoon, the Quây Sơn swells and the tiers merge into a single roaring wall of white water. The surrounding rice terraces turn gold at the same time, which is why those two months are consistently the best for the full picture. In dry season, the individual cascades separate and the volume drops - though the dam upstream releases water around midday and the falls temporarily recover. The karst mountains on both sides and the working farmland on the Vietnamese bank give Bản Giốc a context that most waterfall destinations don't have.",
-    howToGetThere:
-      "Bản Giốc is 90km north of Cao Bằng city, around 2.5–3 hours by motorbike on winding mountain roads. Bus number 3 from Cao Bằng city runs directly to the falls - a practical option if Bản Giốc is your only stop. But the area around the falls has several worthwhile sites: Nguồm Ngao Cave (3km), Chùa Trúc Lâm Phật Tích, and Làng Đá Cổ Khuổi Ky. A motorbike is the only way to move between all of them without backtracking. Most independent travellers ride from Cao Bằng city, either on their own bike or renting one in town. Guided motorbike tours from Cao Bằng are available if you're not comfortable with the road conditions. The nearest overnight accommodation is in Trùng Khánh town, 20km south, or guesthouses in Đàm Thủy village beside the falls.",
-    whatToExpect:
-      "The main viewpoint is a flat grassy bank with unobstructed sight lines to the full width of the falls. Bamboo raft operators run short trips across the river to the base of the falls - close enough to feel spray and hear the full roar of the water. The pool at the base runs jade-green from suspended minerals. On the Vietnamese bank, rice terraces rise behind the viewing area and karst peaks frame both sides. On busy days, Chinese visitors are visible on viewing platforms directly across the border. One thing to know before you arrive: your phone may switch automatically to China Standard Time when you get near the border - that's one hour ahead of Vietnam. Check your clock when you get there and fix it before it causes problems with transport or alarms.",
-    travelTips:
-      "Bản Giốc is the centrepiece of Cao Bằng and worth the journey from Hanoi on its own. The standard approach pairs it with Nguồm Ngao Cave and Phong Nam Valley in a one or two-day loop from Cao Bằng city. Staying overnight in Đàm Thủy village gets you to the falls at sunrise, before tour groups arrive - early morning mist over the pool and no one else on the bank is the best version of this place. Water volume is the main variable: June to October is high season for the falls. November to May is dry season - the falls lose volume but midday releases from the upstream dam partially compensate, so aim for 11 AM to 2 PM if you're visiting in those months.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ban Gioc Waterfall Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bản Giốc sits on the Quây Sơn River at the Vietnam-China border, 90km north of Cao Bằng city, and is the largest waterfall on any national border in Southeast Asia. The falls spread across 300 metres in three distinct tiers, dropping 30 metres into a wide turquoise pool before the river continues south into Vietnam. The border runs down the middle of the water - the right section belongs to Vietnam, the left to China - which means you can watch the falls and see another country at the same time.",
+          },
+          { type: "heading", text: "The Falls Through the Seasons" },
+          {
+            type: "paragraph",
+            text: "In September and October, after the monsoon, the Quây Sơn swells and the tiers merge into a single roaring wall of white water. The surrounding rice terraces turn gold at the same time, which is why those two months are consistently the best for the full picture. In dry season, the individual cascades separate and the volume drops - though the dam upstream releases water around midday and the falls temporarily recover.",
+          },
+          { type: "heading", text: "Setting" },
+          {
+            type: "paragraph",
+            text: "The karst mountains on both sides and the working farmland on the Vietnamese bank give Bản Giốc a context that most waterfall destinations don't have.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ban Gioc Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bản Giốc is 90km north of Cao Bằng city, around 2.5–3 hours by motorbike on winding mountain roads. Bus number 3 from Cao Bằng city runs directly to the falls - a practical option if Bản Giốc is your only stop.",
+          },
+          { type: "heading", text: "Nearby Sites and Getting Around" },
+          {
+            type: "paragraph",
+            text: "But the area around the falls has several worthwhile sites: Nguồm Ngao Cave (3km), Chùa Trúc Lâm Phật Tích, and Làng Đá Cổ Khuổi Ky. A motorbike is the only way to move between all of them without backtracking. Most independent travellers ride from Cao Bằng city, either on their own bike or renting one in town. Guided motorbike tours from Cao Bằng are available if you're not comfortable with the road conditions.",
+          },
+          { type: "heading", text: "Where to Stay" },
+          {
+            type: "paragraph",
+            text: "The nearest overnight accommodation is in Trùng Khánh town, 20km south, or guesthouses in Đàm Thủy village beside the falls.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ban Gioc Waterfall",
+        blocks: [
+          { type: "heading", text: "The Viewpoint and Bamboo Rafts" },
+          {
+            type: "paragraph",
+            text: "The main viewpoint is a flat grassy bank with unobstructed sight lines to the full width of the falls. Bamboo raft operators run short trips across the river to the base of the falls - close enough to feel spray and hear the full roar of the water. The pool at the base runs jade-green from suspended minerals.",
+          },
+          { type: "heading", text: "Rice Terraces and the Border" },
+          {
+            type: "paragraph",
+            text: "On the Vietnamese bank, rice terraces rise behind the viewing area and karst peaks frame both sides. On busy days, Chinese visitors are visible on viewing platforms directly across the border.",
+          },
+          { type: "heading", text: "Phone Time Zone Warning" },
+          {
+            type: "paragraph",
+            text: "One thing to know before you arrive: your phone may switch automatically to China Standard Time when you get near the border - that's one hour ahead of Vietnam. Check your clock when you get there and fix it before it causes problems with transport or alarms.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ban Gioc Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bản Giốc is the centrepiece of Cao Bằng and worth the journey from Hanoi on its own. The standard approach pairs it with Nguồm Ngao Cave and Phong Nam Valley in a one or two-day loop from Cao Bằng city. Staying overnight in Đàm Thủy village gets you to the falls at sunrise, before tour groups arrive - early morning mist over the pool and no one else on the bank is the best version of this place.",
+          },
+          { type: "heading", text: "Water Volume by Season" },
+          {
+            type: "paragraph",
+            text: "Water volume is the main variable: June to October is high season for the falls. November to May is dry season - the falls lose volume but midday releases from the upstream dam partially compensate, so aim for 11 AM to 2 PM if you're visiting in those months.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

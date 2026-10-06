@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const trangAn: Location = {
   slug: "trang-an",
   name: "Trang An",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.253239649044314,
@@ -48,14 +48,103 @@ export const trangAn: Location = {
     "From Ninh Bình town or Tam Cốc, cycling through the rice field roads to Tràng An is a great experience - roads are quiet and scenic.",
   ],
   content: {
-    intro:
-      "Tràng An is Vietnam's only UNESCO dual World Heritage Site - recognised for both natural and cultural values simultaneously since 2014. Vietnam has many UNESCO sites; Tràng An is the only one to receive this dual recognition at the same time. The landscape is a dense cluster of karst limestone peaks rising from interconnected rivers, lakes, and valleys, threaded by 48 caves and grottoes. Often called 'Hạ Long Bay on land', the rivers at Tràng An are narrow - only small wooden rowboats can navigate the cave passages, giving it an intimacy that Hạ Long Bay's cruise ships cannot replicate. Archaeological excavations inside the caves found human remains and tools dating back 30,000 years. The temples and shrines built into the cliffs - including Hành Cung Vũ Lâm, the water pavilion famously photographed on social media - add a spiritual dimension to the landscape. In 2017, several scenes of Kong: Skull Island were filmed here; the native village set was dismantled in late 2019 per UNESCO heritage conservation recommendations.",
-    howToGetThere:
-      "Tràng An is 7km northwest of Ninh Bình city, clearly signposted from National Highway 1A. From Ninh Bình town: xe ôm or taxi, 15-20 minutes, 80,000-120,000 VND. From Hanoi: 90km south, about 1.5 hours by limousine bus (many operators depart from the Old Quarter). From Tam Cốc: bicycle or motorbike through scenic rice field roads - quiet roads, highly recommended. Buy tickets at the entrance gate or online in advance (muave.disantrangan.vn, Klook, Agoda, Traveloka) to skip the queue. Large parking area for self-drive visitors.",
-    whatToExpect:
-      "Three boat routes are available, each 2.5-3 hours by wooden rowboat. Route 1: 9 caves, 3 temples - the most cave-heavy option, quietest, skips Hành Cung Vũ Lâm. Route 2: 3 caves, 2 temples, Hành Cung Vũ Lâm water pavilion, and the island where the Kong: Skull Island village once stood (dismantled 2019) - most popular. Route 3: 3 caves (including a 1km cave), 2 temples, Hành Cung Vũ Lâm - shares the same return path as Route 2, so either works well; you don't need to do both. Your rower (most likely a local woman over 50, rowing with feet) navigates cave passages, open valleys, and flooded archways. Temple stops allow you to disembark and climb steps for elevated views.",
-    travelTips:
-      "Tràng An rewards an early start or late afternoon visit - avoid midday heat on the open water sections. If water levels are high after heavy rain, cave passages may be inaccessible - check before planning. For the best of Ninh Bình in one day: Tràng An in the morning (Route 2 or Route 3), Hang Mua viewpoint climb in the afternoon. If visiting May-June, add Tam Cốc for the rice field and lotus season. Dress modestly for temple stops. The ticket price (300,000 VND from January 2026) includes boat seat for 4-5 people, life jacket, and travel insurance.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Trang An Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tràng An is Vietnam's only UNESCO dual World Heritage Site - recognised for both natural and cultural values simultaneously since 2014. Vietnam has many UNESCO sites; Tràng An is the only one to receive this dual recognition at the same time.",
+          },
+          { type: "heading", text: "Karst Landscape and Rivers" },
+          {
+            type: "paragraph",
+            text: "The landscape is a dense cluster of karst limestone peaks rising from interconnected rivers, lakes, and valleys, threaded by 48 caves and grottoes. Often called 'Hạ Long Bay on land', the rivers at Tràng An are narrow - only small wooden rowboats can navigate the cave passages, giving it an intimacy that Hạ Long Bay's cruise ships cannot replicate.",
+          },
+          { type: "heading", text: "Archaeology, Temples and Kong: Skull Island" },
+          {
+            type: "paragraph",
+            text: "Archaeological excavations inside the caves found human remains and tools dating back 30,000 years. The temples and shrines built into the cliffs - including Hành Cung Vũ Lâm, the water pavilion famously photographed on social media - add a spiritual dimension to the landscape. In 2017, several scenes of Kong: Skull Island were filmed here; the native village set was dismantled in late 2019 per UNESCO heritage conservation recommendations.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Trang An",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tràng An is 7km northwest of Ninh Bình city, clearly signposted from National Highway 1A.",
+          },
+          { type: "heading", text: "From Ninh Bình, Hanoi and Tam Cốc" },
+          {
+            type: "paragraph",
+            text: "From Ninh Bình town: xe ôm or taxi, 15-20 minutes, 80,000-120,000 VND. From Hanoi: 90km south, about 1.5 hours by limousine bus (many operators depart from the Old Quarter). From Tam Cốc: bicycle or motorbike through scenic rice field roads - quiet roads, highly recommended.",
+          },
+          { type: "heading", text: "Tickets and Parking" },
+          {
+            type: "paragraph",
+            text: "Buy tickets at the entrance gate or online in advance (muave.disantrangan.vn, Klook, Agoda, Traveloka) to skip the queue. Large parking area for self-drive visitors.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Trang An",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Three boat routes are available, each 2.5-3 hours by wooden rowboat.",
+          },
+          { type: "heading", text: "Route 1" },
+          {
+            type: "paragraph",
+            text: "Route 1: 9 caves, 3 temples - the most cave-heavy option, quietest, skips Hành Cung Vũ Lâm.",
+          },
+          { type: "heading", text: "Route 2" },
+          {
+            type: "paragraph",
+            text: "Route 2: 3 caves, 2 temples, Hành Cung Vũ Lâm water pavilion, and the island where the Kong: Skull Island village once stood (dismantled 2019) - most popular.",
+          },
+          { type: "heading", text: "Route 3" },
+          {
+            type: "paragraph",
+            text: "Route 3: 3 caves (including a 1km cave), 2 temples, Hành Cung Vũ Lâm - shares the same return path as Route 2, so either works well; you don't need to do both.",
+          },
+          { type: "heading", text: "On the Boat" },
+          {
+            type: "paragraph",
+            text: "Your rower (most likely a local woman over 50, rowing with feet) navigates cave passages, open valleys, and flooded archways. Temple stops allow you to disembark and climb steps for elevated views.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Trang An",
+        blocks: [
+          { type: "heading", text: "Timing and Water Levels" },
+          {
+            type: "paragraph",
+            text: "Tràng An rewards an early start or late afternoon visit - avoid midday heat on the open water sections. If water levels are high after heavy rain, cave passages may be inaccessible - check before planning.",
+          },
+          { type: "heading", text: "A One-Day Ninh Bình Plan" },
+          {
+            type: "paragraph",
+            text: "For the best of Ninh Bình in one day: Tràng An in the morning (Route 2 or Route 3), Hang Mua viewpoint climb in the afternoon. If visiting May-June, add Tam Cốc for the rice field and lotus season.",
+          },
+          { type: "heading", text: "Dress and Tickets" },
+          {
+            type: "paragraph",
+            text: "Dress modestly for temple stops. The ticket price (300,000 VND from January 2026) includes boat seat for 4-5 people, life jacket, and travel insurance.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

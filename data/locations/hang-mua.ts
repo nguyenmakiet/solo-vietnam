@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hangMua: Location = {
   slug: "hang-mua",
   name: "Hang Mua",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.229409892562945,
@@ -45,14 +45,79 @@ export const hangMua: Location = {
     "Free/included parking is available inside the official ticket gate. Ignore the aggressive locals waving you into private lots along the approach road - they display 'Free Parking' signs but are private operations that pressure you to buy food or charge fees.",
   ],
   content: {
-    intro:
-      "Hang Mua takes its name from a legend about the Trần Dynasty king Trần Thái Tông, who came to this valley to watch court performers dance (múa) in the cave at the mountain's base after establishing Am Thái Vi pagoda nearby. Today the cave is a minor footnote; the draw is the 486 stone steps carved up the side of Ngọa Long peak to a summit at 200 metres, from which the entire Tam Cốc valley unfolds. The Ngô Đồng River threads through the karst below, rice fields extend in every direction, and the distant limestone ridges of Tràng An mark the horizon. The summit has two focal points reached by a junction midway up: left leads to a giant dragon statue jutting from the cliff face; right leads to a five-tiered Buddhist stone tower. Both see the same valley panorama from slightly different angles. In May and June when the rice harvest turns the fields gold and the lotus ponds at the base bloom simultaneously, Hang Mua produces one of the most reliably photogenic landscape combinations in northern Vietnam.",
-    howToGetThere:
-      "Hang Mua is in Ninh Xuân commune, Hoa Lư district, about 10km from Ninh Bình city and 1.5km from the Tam Cốc boat dock. From Ninh Bình city: motorbike or xe ôm, about 25 minutes. From the Tam Cốc dock: bicycle (10 minutes) or on foot (20 minutes) along a flat riverside road. From Hanoi: 90km south, about 2-2.5 hours by bus or train to Ninh Bình, then local transport. Search 'Mua Cave' (not 'Hang Múa') on Google Maps - the Vietnamese search returns the wrong pin location. Free parking at the base.",
-    whatToExpect:
-      "486 stone steps carved into the karst face, steep in places with rope handrails on exposed sections. The ascent takes 20-45 minutes depending on pace and stops. At the midway junction, the path splits: left for the dragon statue (a giant carved dragon emerging from the cliff, overlooking the valley), right for the stone tower (a five-tiered Buddhist bảo tháp). The summit viewpoint gives 360° views: Ngô Đồng River below, patchwork rice fields, karst formations extending to Cúc Phương National Park on the horizon. At the base, a lotus pond with a heart-shaped bridge is the secondary attraction - most photogenic June-August when the lotus is in bloom, and best photographed early morning when the flowers are open.",
-    travelTips:
-      "Hang Mua is Ninh Bình's most efficient viewpoint - 30 minutes up, 20 minutes down, and the panorama rivals anything in the province. Pair it with Tam Cốc boat tour for the best single half-day in Ninh Bình: river-level perspective in the morning, aerial perspective in the afternoon. The Golden rice season (May-June) combined with lotus bloom makes it the most photogenic window of the year. For photography without the crowds, arrive at 7 AM. For sunset shots, arrive at 4:30 PM. Avoid the 11 AM-2 PM window regardless of season.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hang Mua Special",
+        blocks: [
+          { type: "heading", text: "The Legend Behind the Name" },
+          {
+            type: "paragraph",
+            text: "Hang Mua takes its name from a legend about the Trần Dynasty king Trần Thái Tông, who came to this valley to watch court performers dance (múa) in the cave at the mountain's base after establishing Am Thái Vi pagoda nearby.",
+          },
+          { type: "heading", text: "The Climb and the View" },
+          {
+            type: "paragraph",
+            text: "Today the cave is a minor footnote; the draw is the 486 stone steps carved up the side of Ngọa Long peak to a summit at 200 metres, from which the entire Tam Cốc valley unfolds. The Ngô Đồng River threads through the karst below, rice fields extend in every direction, and the distant limestone ridges of Tràng An mark the horizon. The summit has two focal points reached by a junction midway up: left leads to a giant dragon statue jutting from the cliff face; right leads to a five-tiered Buddhist stone tower. Both see the same valley panorama from slightly different angles.",
+          },
+          { type: "heading", text: "Harvest and Lotus Season" },
+          {
+            type: "paragraph",
+            text: "In May and June when the rice harvest turns the fields gold and the lotus ponds at the base bloom simultaneously, Hang Mua produces one of the most reliably photogenic landscape combinations in northern Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hang Mua",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hang Mua is in Ninh Xuân commune, Hoa Lư district, about 10km from Ninh Bình city and 1.5km from the Tam Cốc boat dock. From Ninh Bình city: motorbike or xe ôm, about 25 minutes. From the Tam Cốc dock: bicycle (10 minutes) or on foot (20 minutes) along a flat riverside road. From Hanoi: 90km south, about 2-2.5 hours by bus or train to Ninh Bình, then local transport.",
+          },
+          { type: "heading", text: "Navigation and Parking" },
+          {
+            type: "paragraph",
+            text: "Search 'Mua Cave' (not 'Hang Múa') on Google Maps - the Vietnamese search returns the wrong pin location. Free parking at the base.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hang Mua",
+        blocks: [
+          { type: "heading", text: "The Steps" },
+          {
+            type: "paragraph",
+            text: "486 stone steps carved into the karst face, steep in places with rope handrails on exposed sections. The ascent takes 20-45 minutes depending on pace and stops. At the midway junction, the path splits: left for the dragon statue (a giant carved dragon emerging from the cliff, overlooking the valley), right for the stone tower (a five-tiered Buddhist bảo tháp).",
+          },
+          { type: "heading", text: "The Summit and the Lotus Pond" },
+          {
+            type: "paragraph",
+            text: "The summit viewpoint gives 360° views: Ngô Đồng River below, patchwork rice fields, karst formations extending to Cúc Phương National Park on the horizon. At the base, a lotus pond with a heart-shaped bridge is the secondary attraction - most photogenic June-August when the lotus is in bloom, and best photographed early morning when the flowers are open.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hang Mua",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hang Mua is Ninh Bình's most efficient viewpoint - 30 minutes up, 20 minutes down, and the panorama rivals anything in the province. Pair it with Tam Cốc boat tour for the best single half-day in Ninh Bình: river-level perspective in the morning, aerial perspective in the afternoon. The Golden rice season (May-June) combined with lotus bloom makes it the most photogenic window of the year.",
+          },
+          { type: "heading", text: "Timing" },
+          {
+            type: "paragraph",
+            text: "For photography without the crowds, arrive at 7 AM. For sunset shots, arrive at 4:30 PM. Avoid the 11 AM-2 PM window regardless of season.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

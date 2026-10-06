@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const mySonSanctuary: Location = {
   slug: "my-son-sanctuary",
   name: "Mỹ Sơn Sanctuary",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: "15.76310079629061",
@@ -44,14 +44,77 @@ export const mySonSanctuary: Location = {
     "Dress modestly and wear a hat - most of the visit is outdoors in direct sun",
   ],
   content: {
-    intro:
-      "Mỹ Sơn Sanctuary occupies a sheltered valley in Duy Xuyên district, Quảng Nam - a roughly 2km-diameter basin ringed by jungle-covered mountains that has isolated the site from the surrounding plain for centuries. The valley contains over 70 Cham brick temple towers built by successive kings of the Champa kingdom between the 4th and 14th centuries, dedicated primarily to the Hindu god Shiva. The site's origins trace to an earlier wooden temple, also dedicated to Shiva, which was destroyed by fire. The brick towers that replaced it reflect a deep influence from Indian Hindu architecture and culture - all face east toward the sunrise in accordance with Cham cosmological tradition. From 1306, when the territory was absorbed into Đại Việt, Mỹ Sơn was gradually abandoned and swallowed by jungle, remaining unknown outside the local area until a French researcher rediscovered it in 1889. UNESCO World Heritage inscription followed in 1999, recognising the site as the most significant evidence of Cham civilisation in Vietnam.",
-    howToGetThere:
-      "Mỹ Sơn is 40km west of Hội An and 60km southwest of Đà Nẵng. By motorbike from Hội An, approximately 1 hour on well-signposted roads through Duy Xuyên district. Organised day tours from Hội An and Đà Nẵng are widely available, typically departing in the morning. Some tours combine the site with a Thu Bồn River boat trip. Independent visitors by motorbike can arrive at opening before the tour groups. From the site entrance car park, an electric buggy (included in the ticket) transports visitors to the sanctuary itself.",
-    whatToExpect:
-      "Start at the entrance museum for background on Cham Pa history and the sanctuary before heading into the valley. The electric buggy drops visitors at the main temple area, from which the 8 lettered zones are accessible on foot across the valley floor and lower hillsides. The brick towers range from partially ruined to largely standing - the best-preserved structures in Groups B, C, and D show Cham architectural style clearly: tapering towers with ornate stone carvings of Hindu deities and decorative motifs. Group A, the original main complex, was destroyed by US bombing in 1969. Cham dance and music performances run at two locations - check show times at the visitor guidelines board near the entrance and factor them into the route. The audio guide (70,000 VND) is the most useful supplement given limited on-site signage.",
-    travelTips:
-      "Early arrival (6 AM) makes a meaningful difference at Mỹ Sơn - the 2-3 hours before tour groups arrive from Hội An give the site an atmosphere that is almost impossible to find later in the day. The jungle valley setting, the quality of the surviving architecture, and the relative unfamiliarity of Cham history to most visitors makes this one of the more genuinely interesting UNESCO sites in central Vietnam. The Cham civilisation shaped the region for over a millennium before the Vietnamese expansion southward - Mỹ Sơn is the most tangible place to understand what that civilisation actually looked like.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Mỹ Sơn Sanctuary Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mỹ Sơn Sanctuary occupies a sheltered valley in Duy Xuyên district, Quảng Nam - a roughly 2km-diameter basin ringed by jungle-covered mountains that has isolated the site from the surrounding plain for centuries. The valley contains over 70 Cham brick temple towers built by successive kings of the Champa kingdom between the 4th and 14th centuries, dedicated primarily to the Hindu god Shiva.",
+          },
+          { type: "heading", text: "Origins and Indian Influence" },
+          {
+            type: "paragraph",
+            text: "The site's origins trace to an earlier wooden temple, also dedicated to Shiva, which was destroyed by fire. The brick towers that replaced it reflect a deep influence from Indian Hindu architecture and culture - all face east toward the sunrise in accordance with Cham cosmological tradition.",
+          },
+          { type: "heading", text: "Abandonment and UNESCO" },
+          {
+            type: "paragraph",
+            text: "From 1306, when the territory was absorbed into Đại Việt, Mỹ Sơn was gradually abandoned and swallowed by jungle, remaining unknown outside the local area until a French researcher rediscovered it in 1889. UNESCO World Heritage inscription followed in 1999, recognising the site as the most significant evidence of Cham civilisation in Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Mỹ Sơn Sanctuary",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mỹ Sơn is 40km west of Hội An and 60km southwest of Đà Nẵng. By motorbike from Hội An, approximately 1 hour on well-signposted roads through Duy Xuyên district.",
+          },
+          { type: "heading", text: "Tours and the Buggy" },
+          {
+            type: "paragraph",
+            text: "Organised day tours from Hội An and Đà Nẵng are widely available, typically departing in the morning. Some tours combine the site with a Thu Bồn River boat trip. Independent visitors by motorbike can arrive at opening before the tour groups. From the site entrance car park, an electric buggy (included in the ticket) transports visitors to the sanctuary itself.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Mỹ Sơn Sanctuary",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Start at the entrance museum for background on Cham Pa history and the sanctuary before heading into the valley. The electric buggy drops visitors at the main temple area, from which the 8 lettered zones are accessible on foot across the valley floor and lower hillsides.",
+          },
+          { type: "heading", text: "The Towers and Group A" },
+          {
+            type: "paragraph",
+            text: "The brick towers range from partially ruined to largely standing - the best-preserved structures in Groups B, C, and D show Cham architectural style clearly: tapering towers with ornate stone carvings of Hindu deities and decorative motifs. Group A, the original main complex, was destroyed by US bombing in 1969.",
+          },
+          { type: "heading", text: "Performances and the Audio Guide" },
+          {
+            type: "paragraph",
+            text: "Cham dance and music performances run at two locations - check show times at the visitor guidelines board near the entrance and factor them into the route. The audio guide (70,000 VND) is the most useful supplement given limited on-site signage.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Mỹ Sơn Sanctuary",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Early arrival (6 AM) makes a meaningful difference at Mỹ Sơn - the 2-3 hours before tour groups arrive from Hội An give the site an atmosphere that is almost impossible to find later in the day. The jungle valley setting, the quality of the surviving architecture, and the relative unfamiliarity of Cham history to most visitors makes this one of the more genuinely interesting UNESCO sites in central Vietnam. The Cham civilisation shaped the region for over a millennium before the Vietnamese expansion southward - Mỹ Sơn is the most tangible place to understand what that civilisation actually looked like.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

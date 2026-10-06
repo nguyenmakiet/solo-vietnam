@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const imperialCitadelOfThangLong: Location = {
   slug: "imperial-citadel-of-thang-long",
   name: "Imperial Citadel of Thang Long",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.032608",
@@ -47,14 +47,78 @@ export const imperialCitadelOfThangLong: Location = {
     "Keep your entry ticket with you throughout the visit - when moving between the main site, the 18 Hoang Dieu archaeological building, and the Northern Gate area, you may be asked to show it again. All three are covered under the same ticket.",
   ],
   content: {
-    intro:
-      "The Imperial Citadel of Thang Long (Hoàng Thành Thăng Long) in Hanoi's Ba Đình district is one of the most historically significant sites in Southeast Asia and a UNESCO World Heritage Site since 2010. The complex occupies the former political and administrative heart of Vietnam for over 1,300 years, from the construction of the first citadel by Emperor Lý Thái Tổ in 1010 through successive Lý, Trần, Lê, and Nguyễn dynasties, continuing into the 20th century when the site served as the military headquarters from which General Võ Nguyên Giáp directed the wars against France and the United States. The UNESCO inscription recognises the site's outstanding universal value as evidence of the long interaction of diverse cultures across a continuous period of human settlement. The visible remains include restored palace gates, the foundations of Kinh Thien Palace, the Hanoi Flag Tower dating to 1812, wartime bunkers and command facilities from the 20th century, and the extraordinary underground archaeological excavations at 18 Hoàng Diệu - a site of international archaeological significance where layers of palace foundations, ceramics, drainage systems, and structural remains from successive dynasties have been exposed and are displayed in situ.",
-    howToGetThere:
-      "The main entrance to the Imperial Citadel is at 19C Hoàng Diệu street in Ba Đình district, approximately 1.5km from Hoan Kiem Lake and adjacent to the Vietnam Military History Museum. From the Old Quarter, Grab or taxi takes 10-15 minutes. On foot from Hoan Kiem Lake, the walk takes approximately 20-25 minutes via Điện Biên Phủ street. The site is also within easy walking distance of the Ho Chi Minh Mausoleum complex - the two sites are commonly combined in a Ba Đình half-day itinerary. The Northern Gate (Cửa Bắc) is a separate structure on Phan Đình Phùng street, approximately 550 metres from the main archaeological site on foot.",
-    whatToExpect:
-      "The main site at 19C Hoàng Diệu covers the restored citadel gates, the Kinh Thien Palace foundations with their elaborate stone dragon staircases, the Hanoi Flag Tower, the Hậu Lâu (Princess Pagoda), wartime bunkers including the D67 command house used during the American War, and the artifact exhibition buildings. Kinh Thien Palace is currently undergoing a major restoration and reconstruction project that began in September 2026 and is planned for completion by 2030, so the appearance of the central area and visitor access arrangements may change during the works. The archaeological site at 18 Hoàng Diệu - accessible through the same ticket - displays the excavated foundations of successive palace complexes through a series of glass-floored walkways and open excavation pits, allowing visitors to look directly down onto the exposed archaeological layers. The full visit covering both areas takes 2-3 hours at a comfortable pace. The Night Tour on Friday and Saturday evenings transforms the experience significantly: the site is lit atmospherically, performers in period costume recreate court scenes, and a laser light show is used to interpret the archaeological finds.",
-    travelTips:
-      "The Imperial Citadel is one of the most important historical sites in Vietnam and warrants more time than most visitors allocate - the combination of restored imperial architecture, 20th century military history, and world-class archaeological excavations in one compact site is genuinely unusual. The Night Tour is particularly recommended for visitors with a specific interest in history or those who have already seen the site by day - the theatrical presentation is well-produced and the after-hours atmosphere of the citadel grounds is markedly different from the daytime visit. Book the night tour in advance by phone as capacity is limited: +84 848455222.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Imperial Citadel of Thang Long Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Imperial Citadel of Thang Long (Hoàng Thành Thăng Long) in Hanoi's Ba Đình district is one of the most historically significant sites in Southeast Asia and a UNESCO World Heritage Site since 2010. The complex occupies the former political and administrative heart of Vietnam for over 1,300 years, from the construction of the first citadel by Emperor Lý Thái Tổ in 1010 through successive Lý, Trần, Lê, and Nguyễn dynasties, continuing into the 20th century when the site served as the military headquarters from which General Võ Nguyên Giáp directed the wars against France and the United States. The UNESCO inscription recognises the site's outstanding universal value as evidence of the long interaction of diverse cultures across a continuous period of human settlement.",
+          },
+          { type: "heading", text: "What Remains" },
+          {
+            type: "paragraph",
+            text: "The visible remains include restored palace gates, the foundations of Kinh Thien Palace, the Hanoi Flag Tower dating to 1812, wartime bunkers and command facilities from the 20th century, and the extraordinary underground archaeological excavations at 18 Hoàng Diệu - a site of international archaeological significance where layers of palace foundations, ceramics, drainage systems, and structural remains from successive dynasties have been exposed and are displayed in situ.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Imperial Citadel of Thang Long",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The main entrance to the Imperial Citadel is at 19C Hoàng Diệu street in Ba Đình district, approximately 1.5km from Hoan Kiem Lake and adjacent to the Vietnam Military History Museum. From the Old Quarter, Grab or taxi takes 10-15 minutes. On foot from Hoan Kiem Lake, the walk takes approximately 20-25 minutes via Điện Biên Phủ street. The site is also within easy walking distance of the Ho Chi Minh Mausoleum complex - the two sites are commonly combined in a Ba Đình half-day itinerary.",
+          },
+          { type: "heading", text: "The Northern Gate" },
+          {
+            type: "paragraph",
+            text: "The Northern Gate (Cửa Bắc) is a separate structure on Phan Đình Phùng street, approximately 550 metres from the main archaeological site on foot.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Imperial Citadel of Thang Long",
+        blocks: [
+          { type: "heading", text: "The Main Site and Kinh Thien Palace" },
+          {
+            type: "paragraph",
+            text: "The main site at 19C Hoàng Diệu covers the restored citadel gates, the Kinh Thien Palace foundations with their elaborate stone dragon staircases, the Hanoi Flag Tower, the Hậu Lâu (Princess Pagoda), wartime bunkers including the D67 command house used during the American War, and the artifact exhibition buildings. Kinh Thien Palace is currently undergoing a major restoration and reconstruction project that began in September 2026 and is planned for completion by 2030, so the appearance of the central area and visitor access arrangements may change during the works.",
+          },
+          { type: "heading", text: "The Archaeological Site at 18 Hoàng Diệu" },
+          {
+            type: "paragraph",
+            text: "The archaeological site at 18 Hoàng Diệu - accessible through the same ticket - displays the excavated foundations of successive palace complexes through a series of glass-floored walkways and open excavation pits, allowing visitors to look directly down onto the exposed archaeological layers. The full visit covering both areas takes 2-3 hours at a comfortable pace.",
+          },
+          { type: "heading", text: "The Night Tour" },
+          {
+            type: "paragraph",
+            text: "The Night Tour on Friday and Saturday evenings transforms the experience significantly: the site is lit atmospherically, performers in period costume recreate court scenes, and a laser light show is used to interpret the archaeological finds.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Imperial Citadel of Thang Long",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Imperial Citadel is one of the most important historical sites in Vietnam and warrants more time than most visitors allocate - the combination of restored imperial architecture, 20th century military history, and world-class archaeological excavations in one compact site is genuinely unusual.",
+          },
+          { type: "heading", text: "Booking the Night Tour" },
+          {
+            type: "paragraph",
+            text: "The Night Tour is particularly recommended for visitors with a specific interest in history or those who have already seen the site by day - the theatrical presentation is well-produced and the after-hours atmosphere of the citadel grounds is markedly different from the daytime visit. Book the night tour in advance by phone as capacity is limited: +84 848455222.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
