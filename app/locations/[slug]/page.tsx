@@ -10,6 +10,7 @@ import NearbyLocations from "./NearbyLocations"
 import GalleryLightbox from "./GalleryLightbox"
 import GetDirectionsButton from "./GetDirectionsButton"
 import ContentRenderer from "./ContentRenderer"
+import { InlineRichText } from "./RichText"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { isBestMonthsReleased } from "@/data/best-months-release"
@@ -209,31 +210,31 @@ export default async function LocationPage({
                       </span>
                     ))}
                   </div>
-                  {location.bestSeasonNote && <p className="ov-note">{location.bestSeasonNote}</p>}
+                  {location.bestSeasonNote && <p className="ov-note"><InlineRichText text={location.bestSeasonNote} /></p>}
                 </dd>
               </div>
             ) : location.bestSeasonNote ? (
               <div className="ov-row">
                 <dt className="ov-label">Best time to visit</dt>
-                <dd className="ov-val">{location.bestSeasonNote}</dd>
+                <dd className="ov-val"><InlineRichText text={location.bestSeasonNote} /></dd>
               </div>
             ) : null}
             {location.bestTimeOfDay && (
               <div className="ov-row">
                 <dt className="ov-label">Best time of day</dt>
-                <dd className="ov-val">{location.bestTimeOfDay}</dd>
+                <dd className="ov-val"><InlineRichText text={location.bestTimeOfDay} /></dd>
               </div>
             )}
             {location.entranceFee && (
               <div className="ov-row">
                 <dt className="ov-label">Entry fee</dt>
-                <dd className="ov-val">{location.entranceFee}</dd>
+                <dd className="ov-val"><InlineRichText text={location.entranceFee} /></dd>
               </div>
             )}
             {location.openingHours && (
               <div className="ov-row">
                 <dt className="ov-label">Opening hours</dt>
-                <dd className="ov-val">{location.openingHours}</dd>
+                <dd className="ov-val"><InlineRichText text={location.openingHours} /></dd>
               </div>
             )}
             <div className="ov-row">
@@ -309,13 +310,13 @@ export default async function LocationPage({
               {location.insights?.visitorTips?.map((tip, i) => (
                 <li key={`vt-${i}`} className="tip-item">
                   <span className="tip-dot" aria-hidden="true" />
-                  <span>{tip}</span>
+                  <span><InlineRichText text={tip} /></span>
                 </li>
               ))}
               {location.tips.map((tip, i) => (
                 <li key={`t-${i}`} className="tip-item">
                   <span className="tip-dot" aria-hidden="true" />
-                  <span>{tip}</span>
+                  <span><InlineRichText text={tip} /></span>
                 </li>
               ))}
             </ul>
@@ -334,7 +335,7 @@ export default async function LocationPage({
                     <span>{item.question}</span>
                     <span className="faq-chevron" aria-hidden="true">›</span>
                   </summary>
-                  <div className="faq-answer">{item.answer}</div>
+                  <div className="faq-answer"><InlineRichText text={item.answer} /></div>
                 </details>
               ))}
             </div>

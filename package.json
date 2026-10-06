@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build:search-index && next build",
+    "build": "npm run build:search-index && npm run audit:links && next build",
     "start": "next start",
     "lint": "eslint",
     "build:search-index": "tsx scripts/build-search-index.ts",
     "audit:taxonomy": "tsx scripts/audit-taxonomy.ts",
     "audit:best-time": "tsx scripts/audit-best-time.ts",
-    "audit:time-needed": "tsx scripts/audit-time-needed.ts"
+    "audit:time-needed": "tsx scripts/audit-time-needed.ts",
+    "audit:links": "tsx scripts/audit-links.ts"
   },
   "dependencies": {
     "@svg-maps/vietnam": "^2.0.0",

@@ -1,7 +1,11 @@
 import React from "react"
+import Link from "next/link"
 
-function parseInline(text: string, keyOffset: number): React.ReactNode[] {
-  const pattern = /\*\*(.+?)\*\*|\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g
+// Syntax: see lib/rich-text.ts
+import { INLINE_PATTERN } from "@/lib/rich-text"
+
+function parseInline(text: string, keyPrefix: string): React.ReactNode[] {
+  const pattern = new RegExp(INLINE_PATTERN.source, "g")
   const nodes: React.ReactNode[] = []
   let last = 0
   let match: RegExpExecArray | null
@@ -10,12 +14,19 @@ function parseInline(text: string, keyOffset: number): React.ReactNode[] {
     if (match.index > last) {
       nodes.push(text.slice(last, match.index))
     }
+    const key = `${keyPrefix}-${match.index}`
     if (match[1] !== undefined) {
-      nodes.push(<strong key={keyOffset + match.index}>{match[1]}</strong>)
+      nodes.push(<strong key={key}>{parseInline(match[1], key)}</strong>)
+    } else if (match[3].startsWith("/")) {
+      nodes.push(
+        <Link key={key} href={match[3]} className="rt-link">
+          {match[2]}
+        </Link>
+      )
     } else {
       nodes.push(
         <a
-          key={keyOffset + match.index}
+          key={key}
           href={match[3]}
           target="_blank"
           rel="noopener noreferrer"
@@ -36,7 +47,7 @@ function parseInline(text: string, keyOffset: number): React.ReactNode[] {
 }
 
 export function InlineRichText({ text }: { text: string }) {
-  return <>{parseInline(text, 0)}</>
+  return <>{parseInline(text, "i")}</>
 }
 
 export default function RichText({ text }: { text: string }) {
@@ -45,7 +56,7 @@ export default function RichText({ text }: { text: string }) {
     <>
       {paragraphs.map((para, i) => (
         <p key={i} className={i > 0 ? "rt-para" : undefined}>
-          {parseInline(para, i * 10000)}
+          {parseInline(para, `p${i}`)}
         </p>
       ))}
     </>
