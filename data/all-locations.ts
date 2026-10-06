@@ -530,5 +530,5 @@ export const allLocations: Location[] = [
 ]
 
 export const activeLocations = allLocations.filter(
-  (l) => !l.status || l.status === "active" || l.status === "seasonal"
+  (l) => !l.status || l.status === "active" || l.status === "seasonal" || l.status === "partially-closed"
 )

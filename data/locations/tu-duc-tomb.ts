@@ -9,6 +9,8 @@ export const tuDucTomb: Location = {
   destination: "hue",
   lat: 16.433211195700988,
   lng: 107.5670752256665,
+  status: "partially-closed",
+  statusNote: "Restoration is ongoing in parts of the complex, including Hòa Khiêm Palace (Điện Hòa Khiêm) and Minh Khiêm Đường, and some areas are closed or have restricted access. Originally scheduled to run until October 2027; as of 2026, contractors were targeting completion by the end of 2026. If visiting in 2027, check the latest status before your trip, as the completion date may change.",
   address: "Dương Xuân Thượng, Hương Thọ, Huế",
   type: ["tomb"],
   categories: ["history", "architecture"],
@@ -33,7 +35,6 @@ export const tuDucTomb: Location = {
   seoDescription:
     "Tự Đức Tomb is the most garden-like of Huế's royal mausoleums - a romantic complex of pine forests, lotus ponds, and wooden pavilions built by Vietnam's longest-reigning Nguyễn emperor, who spent years here composing poetry before his death in 1883. Often ranked the most beautiful of Huế's four major tombs.",
   tips: [
-    "Current status: restoration is ongoing in parts of the complex, including Hòa Khiêm Palace (Điện Hòa Khiêm) and Minh Khiêm Đường. The project was originally scheduled to run until October 2027, but as of 2026 contractors were targeting completion by the end of 2026. Some areas remain closed or have restricted access during the works - if you're visiting in 2027, check the latest status before your trip, as the actual completion date may change.",
     "Tự Đức was the 4th of 13 Nguyễn emperors and reigned the longest of all of them. Of the 13 emperors, only 7 have constructed tombs, and 4 of those - Gia Long, Minh Mạng, Tự Đức, and Khải Định - are considered the most beautiful.",
     "Quick comparison guide to Huế's 4 major tombs: Khải Định for unique, modern-fusion architecture. Tự Đức for tranquil, nature-harmonized scenery. Minh Mạng for quiet, classic 'Huế vibe' symmetry. Gia Long for historical significance and dramatic natural setting.",
     "Originally named Vạn Niên Cơ when construction began in 1864, then renamed Khiêm Cung during Tự Đức's lifetime, then Khiêm Lăng after his death. Built with 50,000 soldiers and laborers.",
