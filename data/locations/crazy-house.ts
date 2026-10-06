@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const crazyHouse: Location = {
   slug: "crazy-house",
   name: "Crazy House",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.934822914969137,
@@ -43,14 +43,78 @@ export const crazyHouse: Location = {
     "About 1.5km from Đà Lạt's central market - an easy, short ride or walk from most central accommodation.",
   ],
   content: {
-    intro:
-      "The Crazy House - Biệt Thự Hằng Nga - is a private guesthouse and architectural landmark in central Đà Lạt, designed by Đặng Việt Nga, daughter of former Communist Party General Secretary Trường Chinh. After earning an architecture doctorate in Moscow and working in the USSR and Hanoi, she relocated to Đà Lạt in 1983, captivated by its scenery and climate. By February 1990, after years working on conventional projects, she felt the need to 'free her imagination' - rather than standard blueprints, she painted a series of pictures to capture her vision before construction began on what she would later call 'the pinnacle of my life and creativity'. The property opened to its first visitors about a year later and has never stopped evolving since - now over 30 years into construction, with Nga herself saying: 'The Crazy House will never be complete. It's a living entity, always changing.' Built in an expressionist style with no straight lines, the structure draws on organic forms - mushrooms, seashells, caves, spiderwebs - using concrete chosen specifically because it's cheap and infinitely mouldable. The result has drawn comparisons to Salvador Dalí's paintings and Antoni Gaudí's organic Catalan architecture, and was ranked among the world's 10 strangest buildings by China's People's Daily. The main building sits elevated in an open garden surrounded by 4 large concrete 'tree houses', connected by winding cement-branch bridges - an effect visitors have compared to a scene from Hansel and Gretel. It functions simultaneously as a tourist attraction, a working guesthouse, and an architectural experiment that continues to evolve more than three decades after construction began - still privately owned, with the architect herself continuing to shape its direction.",
-    howToGetThere:
-      "The Crazy House is in central Đà Lạt, on Huỳnh Thúc Kháng Street, about 1.5km from the central market - within walking distance of most accommodation in the city centre, or about 5 minutes by motorbike. The building is impossible to miss once nearby - its organic sculptural forms rise visibly above the surrounding conventional architecture.",
-    whatToExpect:
-      "Visitors are free to explore the full structure - interior rooms, exterior walkways, rooftop areas, and gardens - with no fixed route or map, which is part of the deliberate disorientation. There are no arrows, no signposted path, and almost no point where you can see the whole building at once - you climb, turn, duck through a passage, and climb again, rarely certain exactly where you are relative to where you started. The 11 themed guest rooms (Honeymoon, Ant, Eagle, Termite Nest, Bamboo, Kangaroo, Bear, Gourd, Pheasant, and others) are viewable when not occupied, giving a sense of what an overnight stay involves. Concrete tree-trunk staircases wind up to roof terraces overlooking Đà Lạt's pine-covered hills. Giant animal and insect sculptures - giraffes, eagles, bears, spiderwebs made of wire - emerge from the structure at various levels, alongside small ponds, an aquarium room, and a dance hall. Some sections remain under active construction, so expect occasional scaffolding or work-in-progress areas. Since 2017, a French-installed night lighting system (funded with around 1.5 billion VND) transforms the building after dark, though most visitors come during the day.",
-    travelTips:
-      "The Crazy House is a 45-minute visit at a relaxed pace - enough to see everything without rushing, though photography enthusiasts may want longer. Morning (7-10 AM) gives the best light for photos but draws the most crowds; afternoon (3-5 PM) is quieter with softer, more atmospheric light, particularly good near sunset. Visit Sep-Nov for the most comfortable weather and lightest crowds overall - avoid Tết (Dec-Feb) and summer holidays (Jun-Jul) unless you've booked ahead, as both periods get genuinely busy. Even if you don't stay overnight, take time to peek into the guest rooms when they're unoccupied - they're among the most imaginative parts of the entire property. And don't rush the visit generally: half the fun here comes from getting slightly lost.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Crazy House Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Crazy House - Biệt Thự Hằng Nga - is a private guesthouse and architectural landmark in central Đà Lạt, designed by Đặng Việt Nga, daughter of former Communist Party General Secretary Trường Chinh.",
+          },
+          { type: "heading", text: "Đặng Việt Nga and the Origins" },
+          {
+            type: "paragraph",
+            text: "After earning an architecture doctorate in Moscow and working in the USSR and Hanoi, she relocated to Đà Lạt in 1983, captivated by its scenery and climate. By February 1990, after years working on conventional projects, she felt the need to 'free her imagination' - rather than standard blueprints, she painted a series of pictures to capture her vision before construction began on what she would later call 'the pinnacle of my life and creativity'. The property opened to its first visitors about a year later and has never stopped evolving since - now over 30 years into construction, with Nga herself saying: 'The Crazy House will never be complete. It's a living entity, always changing.'",
+          },
+          { type: "heading", text: "Architecture and Use" },
+          {
+            type: "paragraph",
+            text: "Built in an expressionist style with no straight lines, the structure draws on organic forms - mushrooms, seashells, caves, spiderwebs - using concrete chosen specifically because it's cheap and infinitely mouldable. The result has drawn comparisons to Salvador Dalí's paintings and Antoni Gaudí's organic Catalan architecture, and was ranked among the world's 10 strangest buildings by China's People's Daily. The main building sits elevated in an open garden surrounded by 4 large concrete 'tree houses', connected by winding cement-branch bridges - an effect visitors have compared to a scene from Hansel and Gretel. It functions simultaneously as a tourist attraction, a working guesthouse, and an architectural experiment that continues to evolve more than three decades after construction began - still privately owned, with the architect herself continuing to shape its direction.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Crazy House",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Crazy House is in central Đà Lạt, on Huỳnh Thúc Kháng Street, about 1.5km from the central market - within walking distance of most accommodation in the city centre, or about 5 minutes by motorbike. The building is impossible to miss once nearby - its organic sculptural forms rise visibly above the surrounding conventional architecture.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Crazy House",
+        blocks: [
+          { type: "heading", text: "Exploring the Structure" },
+          {
+            type: "paragraph",
+            text: "Visitors are free to explore the full structure - interior rooms, exterior walkways, rooftop areas, and gardens - with no fixed route or map, which is part of the deliberate disorientation. There are no arrows, no signposted path, and almost no point where you can see the whole building at once - you climb, turn, duck through a passage, and climb again, rarely certain exactly where you are relative to where you started.",
+          },
+          { type: "heading", text: "Guest Rooms, Terraces and Sculptures" },
+          {
+            type: "paragraph",
+            text: "The 11 themed guest rooms (Honeymoon, Ant, Eagle, Termite Nest, Bamboo, Kangaroo, Bear, Gourd, Pheasant, and others) are viewable when not occupied, giving a sense of what an overnight stay involves. Concrete tree-trunk staircases wind up to roof terraces overlooking Đà Lạt's pine-covered hills. Giant animal and insect sculptures - giraffes, eagles, bears, spiderwebs made of wire - emerge from the structure at various levels, alongside small ponds, an aquarium room, and a dance hall.",
+          },
+          { type: "heading", text: "Construction and Night Lighting" },
+          {
+            type: "paragraph",
+            text: "Some sections remain under active construction, so expect occasional scaffolding or work-in-progress areas. Since 2017, a French-installed night lighting system (funded with around 1.5 billion VND) transforms the building after dark, though most visitors come during the day.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Crazy House",
+        blocks: [
+          { type: "heading", text: "Timing" },
+          {
+            type: "paragraph",
+            text: "The Crazy House is a 45-minute visit at a relaxed pace - enough to see everything without rushing, though photography enthusiasts may want longer. Morning (7-10 AM) gives the best light for photos but draws the most crowds; afternoon (3-5 PM) is quieter with softer, more atmospheric light, particularly good near sunset. Visit Sep-Nov for the most comfortable weather and lightest crowds overall - avoid Tết (Dec-Feb) and summer holidays (Jun-Jul) unless you've booked ahead, as both periods get genuinely busy.",
+          },
+          {
+            type: "paragraph",
+            text: "Even if you don't stay overnight, take time to peek into the guest rooms when they're unoccupied - they're among the most imaginative parts of the entire property. And don't rush the visit generally: half the fun here comes from getting slightly lost.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

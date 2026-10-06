@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tayPhuongPagoda: Location = {
   slug: "tay-phuong-pagoda",
   name: "Tây Phương Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.025452515537896,
@@ -45,14 +45,72 @@ export const tayPhuongPagoda: Location = {
     "If bringing offerings, keep it simple and vegetarian - this is a Buddhist site, so avoid meat offerings",
   ],
   content: {
-    intro:
-      "Tây Phương Pagoda (Chùa Tây Phương), formally Sùng Phúc Tự, sits atop Câu Lâu hill (roughly 50m high) in Thạch Xá, Thạch Thất. Local legend traces the pagoda's origins back as far as the 3rd century, though its surviving decorative style points more concretely to the Mạc dynasty (16th century) as an early phase. Its recorded history is easier to pin down from the 17th century onward: in 1632, under King Lê Thần Tông, a three-bay upper sanctuary and a 20-bay rear corridor were added; between 1657 and 1682, Tây Đô Vương Trịnh Tạc had the older structure demolished and rebuilt, including a new triple gate; and the pagoda reached its current form during the Tây Sơn period, specifically 1793-1802, under Nguyễn Quang Toản. The architecture alone justifies the visit - the overlapping, multi-layered eave roofs (mái chồng diêm), covered in boat-shaped tiles (ngói mũi hài) with upturned, curving corners, the carved wooden beams, and the integration of the three parallel halls (arranged in a 'Tam' shape, stepped up the hillside) are all exceptional. But the pagoda's defining treasures are its wooden Buddhist statues, most carved from jackfruit wood in the 18th century with an expressiveness and individuality rarely seen in Vietnamese religious art - the exact total varies by source (roughly 60 to 76 depending on which count you read), and beyond the famous Arhats includes figures like Tuyết Sơn (the ascetic Buddha) and the Di Đà Tam Tôn (Amitabha Triad). Among them, the set of 18 Arhat figures - each one distinct in posture, expression, and symbolic meaning - has been recognised as a National Treasure and described by Vietnamese art historians as the country's greatest achievement in traditional sculpture. The collection has earned the pagoda the nickname 'the living Buddha statue museum.'",
-    howToGetThere:
-      "Tây Phương Pagoda is approximately 40km west of central Hanoi, in Thạch Thất district. By motorbike, the journey takes about 1.5 hours via National Highway 6 toward Hòa Bình, turning off at Thạch Xá. Car hire from Hanoi is straightforward for a day trip. There is no direct public bus to the pagoda; buses to Thạch Thất town run from Hanoi's Mỹ Đình bus station, with motorbike taxi for the final few kilometers.",
-    whatToExpect:
-      "The approach to the pagoda involves climbing 239 laterite stone steps through a canopy of old trees, past old houses that belong to long-settled local families rather than the pagoda itself - the ascent is part of the ritual and the transition from the flat paddy landscape below to the hilltop complex above is well-composed. The main buildings are arranged on three levels corresponding to the hill's natural terracing, with a two-tiered, eight-sectioned roof style typical of the period. Inside the dim interior halls, the wooden statues line the walls and occupy alcoves - the scale of the figures, the quality of the lacquer and gilding, and the detail of the carving are all striking. The site is an active pagoda and the resident monks maintain it carefully.",
-    travelTips:
-      "Tây Phương is 40km from Hanoi but feels genuinely removed from the city - the paddy fields, water buffalo, and quiet villages on the approach set a different pace. The combination of Tây Phương and Thầy Pagoda makes for a rewarding single-day cultural excursion from Hanoi that's often overlooked. Thầy Pagoda is on a lake with water puppet performances and cave trails; Tây Phương has the sculptures. Together they cover more ground than a morning at the Temple of Literature. If you have limited time in Hanoi and have already done the standard sites, this day trip is the right next move.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tây Phương Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tây Phương Pagoda (Chùa Tây Phương), formally Sùng Phúc Tự, sits atop Câu Lâu hill (roughly 50m high) in Thạch Xá, Thạch Thất.",
+          },
+          { type: "heading", text: "History" },
+          {
+            type: "paragraph",
+            text: "Local legend traces the pagoda's origins back as far as the 3rd century, though its surviving decorative style points more concretely to the Mạc dynasty (16th century) as an early phase. Its recorded history is easier to pin down from the 17th century onward: in 1632, under King Lê Thần Tông, a three-bay upper sanctuary and a 20-bay rear corridor were added; between 1657 and 1682, Tây Đô Vương Trịnh Tạc had the older structure demolished and rebuilt, including a new triple gate; and the pagoda reached its current form during the Tây Sơn period, specifically 1793-1802, under Nguyễn Quang Toản.",
+          },
+          { type: "heading", text: "Architecture" },
+          {
+            type: "paragraph",
+            text: "The architecture alone justifies the visit - the overlapping, multi-layered eave roofs (mái chồng diêm), covered in boat-shaped tiles (ngói mũi hài) with upturned, curving corners, the carved wooden beams, and the integration of the three parallel halls (arranged in a 'Tam' shape, stepped up the hillside) are all exceptional.",
+          },
+          { type: "heading", text: "The Wooden Statues and the 18 Arhats" },
+          {
+            type: "paragraph",
+            text: "But the pagoda's defining treasures are its wooden Buddhist statues, most carved from jackfruit wood in the 18th century with an expressiveness and individuality rarely seen in Vietnamese religious art - the exact total varies by source (roughly 60 to 76 depending on which count you read), and beyond the famous Arhats includes figures like Tuyết Sơn (the ascetic Buddha) and the Di Đà Tam Tôn (Amitabha Triad). Among them, the set of 18 Arhat figures - each one distinct in posture, expression, and symbolic meaning - has been recognised as a National Treasure and described by Vietnamese art historians as the country's greatest achievement in traditional sculpture. The collection has earned the pagoda the nickname 'the living Buddha statue museum.'",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tây Phương Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tây Phương Pagoda is approximately 40km west of central Hanoi, in Thạch Thất district. By motorbike, the journey takes about 1.5 hours via National Highway 6 toward Hòa Bình, turning off at Thạch Xá. Car hire from Hanoi is straightforward for a day trip. There is no direct public bus to the pagoda; buses to Thạch Thất town run from Hanoi's Mỹ Đình bus station, with motorbike taxi for the final few kilometers.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tây Phương Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The approach to the pagoda involves climbing 239 laterite stone steps through a canopy of old trees, past old houses that belong to long-settled local families rather than the pagoda itself - the ascent is part of the ritual and the transition from the flat paddy landscape below to the hilltop complex above is well-composed. The main buildings are arranged on three levels corresponding to the hill's natural terracing, with a two-tiered, eight-sectioned roof style typical of the period. Inside the dim interior halls, the wooden statues line the walls and occupy alcoves - the scale of the figures, the quality of the lacquer and gilding, and the detail of the carving are all striking. The site is an active pagoda and the resident monks maintain it carefully.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tây Phương Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tây Phương is 40km from Hanoi but feels genuinely removed from the city - the paddy fields, water buffalo, and quiet villages on the approach set a different pace.",
+          },
+          { type: "heading", text: "Combining with Thầy Pagoda" },
+          {
+            type: "paragraph",
+            text: "The combination of Tây Phương and Thầy Pagoda makes for a rewarding single-day cultural excursion from Hanoi that's often overlooked. Thầy Pagoda is on a lake with water puppet performances and cave trails; Tây Phương has the sculptures. Together they cover more ground than a morning at the Temple of Literature. If you have limited time in Hanoi and have already done the standard sites, this day trip is the right next move.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

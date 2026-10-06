@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hanoiStJosephsCathedral: Location = {
   slug: "hanoi-st-josephs-cathedral",
   name: "Hanoi St. Joseph's Cathedral",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.02870465360659,
@@ -50,14 +50,77 @@ export const hanoiStJosephsCathedral: Location = {
     "Modest dress (shoulders and knees covered) is expected, especially if entering during a service",
   ],
   content: {
-    intro:
-      "Hanoi St. Joseph's Cathedral (Nhà thờ Lớn Hà Nội, formally Nhà thờ Chính tòa Thánh Giuse) is the oldest church in Hanoi and the seat of the Roman Catholic Archdiocese of Hanoi. It stands on land once occupied by Báo Thiên Pagoda, a major Buddhist temple dating to the Lý dynasty and a significant religious site through the Lý and Trần periods - though historians note that surviving records of exactly how and when the pagoda was cleared for the cathedral are inconsistent with one another, so the popularly cited version of events is worth treating as the traditional account rather than settled fact. Construction of the cathedral, led by Bishop Paul-François-Marie Puginier, began in 1884, following an earlier temporary wooden chapel on the same site - funded partly through two lottery ticket sales the Bishop was eventually permitted to run after French colonial authorities twice refused the idea, raising around 30,000 francs toward a total cost of roughly 200,000 francs. Sources differ on the exact completion date, with the first mass commonly cited as either Christmas Eve 1886 or Christmas 1887 - a discrepancy worth being aware of rather than a settled fact. Modelled on Notre-Dame de Paris, the neo-Gothic cathedral runs about 64.5 metres long and 20.5 metres wide, with twin bell towers rising 31.5 metres above the surrounding Old Quarter streetscape - visible from several blocks away and giving it a scale that still feels incongruous against the low-rise fabric around it. The cathedral remains an active Catholic parish, with masses held multiple times daily. The square in front of the main entrance has become one of the social centres of the Old Quarter, particularly in the evenings when the surrounding cafes fill and the lit facade creates a distinctive backdrop.",
-    howToGetThere:
-      "The cathedral is located in the Hoàn Kiếm district of Hanoi's Old Quarter, approximately 500 metres southwest of Hoàn Kiếm Lake, at the meeting point of Nhà Thờ, Lý Quốc Sư, and Nhà Chung streets. From the lake, walk west along Hàng Trống street and turn left onto Nhà Thờ street - the cathedral is at the end of the street. City buses 1, 2, 9, 14, and 36 all stop within walking distance around Hoàn Kiếm Lake. The surrounding area is pedestrian-friendly and most Old Quarter hotels are within walking distance. Grab or taxi from anywhere in central Hanoi takes under 10 minutes.",
-    whatToExpect:
-      "The exterior of the cathedral is the main attraction for most visitors - the neo-Gothic facade with its twin towers, stained glass rose window, and iron gate is one of the most photographed facades in Hanoi, with a bronze statue of the Virgin Mary out front. The interior, when accessible, contains original 19th-century stained glass windows imported from France, a rib-vaulted ceiling, fired-clay tile flooring, and walls originally finished with a traditional plastered-paper technique ('giấy bổi') rather than modern render - a mix of largely European design with some traditional Vietnamese construction touches. A statue of the Virgin Mary and child stands out front, though sources disagree on whether it's bronze or carved stone. The square in front of the cathedral is lined with cafes and small shops selling religious goods, and has a lively social atmosphere particularly in the late afternoon and evening - it's also where Hanoi's well-known 'trà chanh nhà thờ' (cathedral lemon tea) culture is centred, a favourite hangout for local youth. The surrounding streets of Nhà Thờ and Nhà Chung are among the more pleasant walking streets in the Old Quarter, and nearby lanes are known for street food like bánh gối and phở Lý Quốc Sư.",
-    travelTips:
-      "The cathedral is best visited as part of a broader Old Quarter walking tour rather than as a standalone destination - its historical and architectural significance is the main draw, and a visit itself is typically brief. What makes it genuinely worth a stop is the contrast it offers: a still, solemn structure standing right against the flexible, sometimes overwhelming rhythm of the streets around it - cafes, street food, and crowds of people living ordinary life right up against a 19th-century cathedral. It's a legible, easy-to-fit-into-any-itinerary anchor point in a neighbourhood where small streets, shopfronts, and the church facade all sit close together, which makes it a genuinely useful stop rather than just another famous name to check off. The Christmas period (particularly December 24) transforms the square into one of the most atmospheric public gatherings in Hanoi, with thousands of locals and visitors filling the area around midnight mass - worth experiencing if visiting in December, but plan for serious crowds. 19 March, the feast of Saint Joseph, is another day with a special ceremony worth knowing about if your visit lines up. Respectful, modest dress is expected to enter during services.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hanoi St. Joseph's Cathedral Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hanoi St. Joseph's Cathedral (Nhà thờ Lớn Hà Nội, formally Nhà thờ Chính tòa Thánh Giuse) is the oldest church in Hanoi and the seat of the Roman Catholic Archdiocese of Hanoi. It stands on land once occupied by Báo Thiên Pagoda, a major Buddhist temple dating to the Lý dynasty and a significant religious site through the Lý and Trần periods - though historians note that surviving records of exactly how and when the pagoda was cleared for the cathedral are inconsistent with one another, so the popularly cited version of events is worth treating as the traditional account rather than settled fact.",
+          },
+          { type: "heading", text: "Construction" },
+          {
+            type: "paragraph",
+            text: "Construction of the cathedral, led by Bishop Paul-François-Marie Puginier, began in 1884, following an earlier temporary wooden chapel on the same site - funded partly through two lottery ticket sales the Bishop was eventually permitted to run after French colonial authorities twice refused the idea, raising around 30,000 francs toward a total cost of roughly 200,000 francs. Sources differ on the exact completion date, with the first mass commonly cited as either Christmas Eve 1886 or Christmas 1887 - a discrepancy worth being aware of rather than a settled fact. Modelled on Notre-Dame de Paris, the neo-Gothic cathedral runs about 64.5 metres long and 20.5 metres wide, with twin bell towers rising 31.5 metres above the surrounding Old Quarter streetscape - visible from several blocks away and giving it a scale that still feels incongruous against the low-rise fabric around it.",
+          },
+          { type: "heading", text: "Parish Life and the Square" },
+          {
+            type: "paragraph",
+            text: "The cathedral remains an active Catholic parish, with masses held multiple times daily. The square in front of the main entrance has become one of the social centres of the Old Quarter, particularly in the evenings when the surrounding cafes fill and the lit facade creates a distinctive backdrop.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hanoi St. Joseph's Cathedral",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The cathedral is located in the Hoàn Kiếm district of Hanoi's Old Quarter, approximately 500 metres southwest of Hoàn Kiếm Lake, at the meeting point of Nhà Thờ, Lý Quốc Sư, and Nhà Chung streets. From the lake, walk west along Hàng Trống street and turn left onto Nhà Thờ street - the cathedral is at the end of the street.",
+          },
+          {
+            type: "paragraph",
+            text: "City buses 1, 2, 9, 14, and 36 all stop within walking distance around Hoàn Kiếm Lake. The surrounding area is pedestrian-friendly and most Old Quarter hotels are within walking distance. Grab or taxi from anywhere in central Hanoi takes under 10 minutes.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hanoi St. Joseph's Cathedral",
+        blocks: [
+          { type: "heading", text: "Exterior and Interior" },
+          {
+            type: "paragraph",
+            text: "The exterior of the cathedral is the main attraction for most visitors - the neo-Gothic facade with its twin towers, stained glass rose window, and iron gate is one of the most photographed facades in Hanoi, with a bronze statue of the Virgin Mary out front. The interior, when accessible, contains original 19th-century stained glass windows imported from France, a rib-vaulted ceiling, fired-clay tile flooring, and walls originally finished with a traditional plastered-paper technique ('giấy bổi') rather than modern render - a mix of largely European design with some traditional Vietnamese construction touches. A statue of the Virgin Mary and child stands out front, though sources disagree on whether it's bronze or carved stone.",
+          },
+          { type: "heading", text: "The Square and Surrounding Streets" },
+          {
+            type: "paragraph",
+            text: "The square in front of the cathedral is lined with cafes and small shops selling religious goods, and has a lively social atmosphere particularly in the late afternoon and evening - it's also where Hanoi's well-known 'trà chanh nhà thờ' (cathedral lemon tea) culture is centred, a favourite hangout for local youth. The surrounding streets of Nhà Thờ and Nhà Chung are among the more pleasant walking streets in the Old Quarter, and nearby lanes are known for street food like bánh gối and phở Lý Quốc Sư.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hanoi St. Joseph's Cathedral",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The cathedral is best visited as part of a broader Old Quarter walking tour rather than as a standalone destination - its historical and architectural significance is the main draw, and a visit itself is typically brief. What makes it genuinely worth a stop is the contrast it offers: a still, solemn structure standing right against the flexible, sometimes overwhelming rhythm of the streets around it - cafes, street food, and crowds of people living ordinary life right up against a 19th-century cathedral. It's a legible, easy-to-fit-into-any-itinerary anchor point in a neighbourhood where small streets, shopfronts, and the church facade all sit close together, which makes it a genuinely useful stop rather than just another famous name to check off.",
+          },
+          { type: "heading", text: "Christmas and Saint Joseph's Day" },
+          {
+            type: "paragraph",
+            text: "The Christmas period (particularly December 24) transforms the square into one of the most atmospheric public gatherings in Hanoi, with thousands of locals and visitors filling the area around midnight mass - worth experiencing if visiting in December, but plan for serious crowds. 19 March, the feast of Saint Joseph, is another day with a special ceremony worth knowing about if your visit lines up. Respectful, modest dress is expected to enter during services.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

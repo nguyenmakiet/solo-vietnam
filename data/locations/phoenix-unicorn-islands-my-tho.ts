@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phoenixUnicornIslandsMyTho: Location = {
   slug: "phoenix-unicorn-islands-my-tho",
   name: "Phoenix & Unicorn Islands (Cồn Phụng & Cồn Thới Sơn)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ben-tre", "tien-giang"],
   destination: "mekong-delta",
   lat: 10.335167589686217,
@@ -47,13 +47,83 @@ export const phoenixUnicornIslandsMyTho: Location = {
   ],
 
   content: {
-    intro:
-      "Cồn Phụng (Phoenix Island) and Cồn Thới Sơn (Unicorn Island, also called Cồn Lân) are two of four small alluvial islands - collectively known as 'Tứ Linh,' the Four Sacred Animals of Vietnamese folk belief (Long/dragon, Lân/unicorn, Quy/turtle, Phụng/phoenix) - that sit in the Tiền River near Mỹ Tho, on the border between Tiền Giang and Bến Tre provinces. Cồn Phụng was originally known as Cồn Tân Vinh; it was renamed after workers building the Nam Quốc Phật pagoda here in the early 20th century unearthed an antique cup shaped like a phoenix. That pagoda's builder, Nguyễn Thành Nam (1909-1990), went on to found a syncretic religious movement known as Đạo Dừa (the 'Coconut Religion'), preaching peace and a diet of fruit, and built an eccentric temple complex on the island that still stands today - a Nine Dragons courtyard, a 'Peace Tower' encrusted with dragon and phoenix reliefs pieced together from broken porcelain and glassware, and other structures reflecting his unusual religious vision. The island has grown considerably since then: originally about 28 hectares when it first emerged in the 1930s, ongoing sediment deposits have expanded it to more than 50 hectares today. Cồn Phụng was also a pioneer of Bến Tre's coconut-wood handicraft industry, which later spread across the whole province, and some families on the island still keep bees for honey from longan and other orchard blossoms.\n\nCồn Thới Sơn, just across the water in Tiền Giang, is the largest of the four islands at around 1,200 hectares, and is better known for its fruit orchards than for any single landmark - durian, rambutan, longan, mangosteen, mulberry, pomelo, and star fruit are all grown here, with June to August the peak season to taste them straight from the garden, and also the busiest time of year on the island. The islands are usually visited together: boats cross the narrow channels between them, passing coconut groves, orchards, and stretches of open river, with the striking Rạch Miễu cable-stayed bridge - which connects Tiền Giang and Bến Tre provinces - visible from parts of the route, especially striking at sunset. The most talked-about single moment of a Thới Sơn visit, and the one that shows up constantly on social media, is a short basket-boat (xuồng ba lá) ride through a shaded canal lined with water coconut palms - conical hats on, oars dipping quietly, a world away from the open river just minutes earlier. As of 2026, this ride has become unexpectedly popular on Chinese social media platforms such as Xiaohongshu and Douyin, where videos of visitors in nón lá gliding through the coconut-lined canals have racked up millions of views.",
-    howToGetThere:
-      "The islands sit roughly between Mỹ Tho (Tiền Giang) and Bến Tre city, both around 70-85km from Ho Chi Minh City (roughly 1.5-2 hours by road). Independent travellers can reach Cồn Phụng via the Tân Thạch ferry pier in Châu Thành district, Bến Tre, crossing by boat or ferry to the island; Cồn Thới Sơn is reached similarly from Mỹ Tho. Most visitors instead join a boat tour departing from Mỹ Tho or Bến Tre that combines both islands (and often a third, Cồn Quy) in a single half-day or full-day itinerary, with transport, boat crossings, and a guide included.",
-    whatToExpect:
-      "A typical full-day combined tour departs Mỹ Tho's tourist pier (Bến tàu du lịch Mỹ Tho, 8 Đường 30/4) by large boat down the Tiền River - a genuinely scenic stretch on its own, passing coconut groves, riverside houses, and fish-farming rafts, with particularly good light in late afternoon as the Rạch Miễu bridge comes into view. On Cồn Thới Sơn, the programme usually runs through a bee farm (with honey tea tasting and a chance to hold an artificial hive for photos - the bees here are docile), a stretch by horse cart or electric cart through the village lanes, đờn ca tài tử folk music performances with fruit tasting and local shopping, the signature basket-boat ride through the shaded water-coconut canal, and a coconut candy workshop. Fuller-featured tours also add a hands-on 'tát mương bắt cá' activity - draining a small canal and catching fish by hand - and a photo opportunity with a python. Cồn Thới Sơn is the larger, more orchard-focused island, while Cồn Phụng is smaller and centres on the former Đạo Dừa temple complex - a genuinely strange and memorable piece of religious architecture, best appreciated with a guide who can explain the story of Nguyễn Thành Nam and his movement. The Coconut Museum here, built from coconut trunks, covers the material's role in local life, economy, and even wartime history, and the island also has a family-friendly, slightly amusement-park side - crocodile ponds, novelty bottle-fed fish, water zorbing balls, and similar games, usually charged separately. Most full tours visit Thới Sơn first, then cross to Cồn Phụng for games, lunch, and the temple visit, before returning to Mỹ Tho - a day that typically runs from around 8 AM to 5 PM if starting from Saigon.",
-    travelTips:
-      "Cồn Phụng and Cồn Thới Sơn work well as a full-day addition to a Mỹ Tho or Bến Tre itinerary, and make sense to combine specifically because of their contrasting characters - one an eccentric and highly unusual religious complex with amusement-park extras, the other a calmer, much larger orchard island with the tour's signature basket-boat moment. If you genuinely only have time for one, Thới Sơn covers most of the distinctive, photogenic experiences (the canal boat ride, the orchards, the folk music); Cồn Phụng's specific draw is the Đạo Dừa religious history, worth the extra stop if that kind of offbeat story interests you. Local food worth trying in the area includes bún gỏi già, fried elephant-ear fish, puffed sticky rice, rice snails, and grilled snakehead fish, and regional specialties like Gò Công fermented crab paste or Trung Lương plums make good souvenirs to bring home. It's honest to say some of the experiences here feel produced for visitors rather than stumbled upon - locals here largely make their living from tourism, and the schedule is tightly programmed - but the underlying activities (basket-boat rowing, đờn ca tài tử music, coconut candy-making) are genuine cultural practices, not inventions for tourists. Treat a day here as a real but necessarily brief introduction to Mekong Delta life, not the full picture - the delta is far larger and richer than any single day trip can cover, but for travellers without more time to spare, this is a solid and honest sample of it. Book at least a day or two ahead, especially on weekends and holidays, to guarantee boat transport and restaurant seating.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Phoenix & Unicorn Islands (Cồn Phụng & Cồn Thới Sơn) Special",
+        blocks: [
+          { type: "heading", text: "Cồn Phụng and the Coconut Religion" },
+          {
+            type: "paragraph",
+            text: "Cồn Phụng (Phoenix Island) and Cồn Thới Sơn (Unicorn Island, also called Cồn Lân) are two of four small alluvial islands - collectively known as 'Tứ Linh,' the Four Sacred Animals of Vietnamese folk belief (Long/dragon, Lân/unicorn, Quy/turtle, Phụng/phoenix) - that sit in the Tiền River near Mỹ Tho, on the border between Tiền Giang and Bến Tre provinces. Cồn Phụng was originally known as Cồn Tân Vinh; it was renamed after workers building the Nam Quốc Phật pagoda here in the early 20th century unearthed an antique cup shaped like a phoenix. That pagoda's builder, Nguyễn Thành Nam (1909-1990), went on to found a syncretic religious movement known as Đạo Dừa (the 'Coconut Religion'), preaching peace and a diet of fruit, and built an eccentric temple complex on the island that still stands today - a Nine Dragons courtyard, a 'Peace Tower' encrusted with dragon and phoenix reliefs pieced together from broken porcelain and glassware, and other structures reflecting his unusual religious vision.",
+          },
+          { type: "heading", text: "Growth and Coconut Handicrafts" },
+          {
+            type: "paragraph",
+            text: "The island has grown considerably since then: originally about 28 hectares when it first emerged in the 1930s, ongoing sediment deposits have expanded it to more than 50 hectares today. Cồn Phụng was also a pioneer of Bến Tre's coconut-wood handicraft industry, which later spread across the whole province, and some families on the island still keep bees for honey from longan and other orchard blossoms.",
+          },
+          { type: "heading", text: "Cồn Thới Sơn" },
+          {
+            type: "paragraph",
+            text: "Cồn Thới Sơn, just across the water in Tiền Giang, is the largest of the four islands at around 1,200 hectares, and is better known for its fruit orchards than for any single landmark - durian, rambutan, longan, mangosteen, mulberry, pomelo, and star fruit are all grown here, with June to August the peak season to taste them straight from the garden, and also the busiest time of year on the island. The islands are usually visited together: boats cross the narrow channels between them, passing coconut groves, orchards, and stretches of open river, with the striking Rạch Miễu cable-stayed bridge - which connects Tiền Giang and Bến Tre provinces - visible from parts of the route, especially striking at sunset.",
+          },
+          { type: "heading", text: "The Water Coconut Canal Ride" },
+          {
+            type: "paragraph",
+            text: "The most talked-about single moment of a Thới Sơn visit, and the one that shows up constantly on social media, is a short basket-boat (xuồng ba lá) ride through a shaded canal lined with water coconut palms - conical hats on, oars dipping quietly, a world away from the open river just minutes earlier. As of 2026, this ride has become unexpectedly popular on Chinese social media platforms such as Xiaohongshu and Douyin, where videos of visitors in nón lá gliding through the coconut-lined canals have racked up millions of views.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Phoenix & Unicorn Islands (Cồn Phụng & Cồn Thới Sơn)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The islands sit roughly between Mỹ Tho (Tiền Giang) and Bến Tre city, both around 70-85km from Ho Chi Minh City (roughly 1.5-2 hours by road). Independent travellers can reach Cồn Phụng via the Tân Thạch ferry pier in Châu Thành district, Bến Tre, crossing by boat or ferry to the island; Cồn Thới Sơn is reached similarly from Mỹ Tho. Most visitors instead join a boat tour departing from Mỹ Tho or Bến Tre that combines both islands (and often a third, Cồn Quy) in a single half-day or full-day itinerary, with transport, boat crossings, and a guide included.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Phoenix & Unicorn Islands (Cồn Phụng & Cồn Thới Sơn)",
+        blocks: [
+          { type: "heading", text: "A Typical Combined Tour" },
+          {
+            type: "paragraph",
+            text: "A typical full-day combined tour departs Mỹ Tho's tourist pier (Bến tàu du lịch Mỹ Tho, 8 Đường 30/4) by large boat down the Tiền River - a genuinely scenic stretch on its own, passing coconut groves, riverside houses, and fish-farming rafts, with particularly good light in late afternoon as the Rạch Miễu bridge comes into view. On Cồn Thới Sơn, the programme usually runs through a bee farm (with honey tea tasting and a chance to hold an artificial hive for photos - the bees here are docile), a stretch by horse cart or electric cart through the village lanes, đờn ca tài tử folk music performances with fruit tasting and local shopping, the signature basket-boat ride through the shaded water-coconut canal, and a coconut candy workshop. Fuller-featured tours also add a hands-on 'tát mương bắt cá' activity - draining a small canal and catching fish by hand - and a photo opportunity with a python.",
+          },
+          { type: "heading", text: "Cồn Phụng and the Coconut Museum" },
+          {
+            type: "paragraph",
+            text: "Cồn Thới Sơn is the larger, more orchard-focused island, while Cồn Phụng is smaller and centres on the former Đạo Dừa temple complex - a genuinely strange and memorable piece of religious architecture, best appreciated with a guide who can explain the story of Nguyễn Thành Nam and his movement. The Coconut Museum here, built from coconut trunks, covers the material's role in local life, economy, and even wartime history, and the island also has a family-friendly, slightly amusement-park side - crocodile ponds, novelty bottle-fed fish, water zorbing balls, and similar games, usually charged separately. Most full tours visit Thới Sơn first, then cross to Cồn Phụng for games, lunch, and the temple visit, before returning to Mỹ Tho - a day that typically runs from around 8 AM to 5 PM if starting from Saigon.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Phoenix & Unicorn Islands (Cồn Phụng & Cồn Thới Sơn)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cồn Phụng and Cồn Thới Sơn work well as a full-day addition to a Mỹ Tho or Bến Tre itinerary, and make sense to combine specifically because of their contrasting characters - one an eccentric and highly unusual religious complex with amusement-park extras, the other a calmer, much larger orchard island with the tour's signature basket-boat moment. If you genuinely only have time for one, Thới Sơn covers most of the distinctive, photogenic experiences (the canal boat ride, the orchards, the folk music); Cồn Phụng's specific draw is the Đạo Dừa religious history, worth the extra stop if that kind of offbeat story interests you.",
+          },
+          { type: "heading", text: "Local Food" },
+          {
+            type: "paragraph",
+            text: "Local food worth trying in the area includes bún gỏi già, fried elephant-ear fish, puffed sticky rice, rice snails, and grilled snakehead fish, and regional specialties like Gò Công fermented crab paste or Trung Lương plums make good souvenirs to bring home.",
+          },
+          { type: "heading", text: "Expectations and Booking" },
+          {
+            type: "paragraph",
+            text: "It's honest to say some of the experiences here feel produced for visitors rather than stumbled upon - locals here largely make their living from tourism, and the schedule is tightly programmed - but the underlying activities (basket-boat rowing, đờn ca tài tử music, coconut candy-making) are genuine cultural practices, not inventions for tourists. Treat a day here as a real but necessarily brief introduction to Mekong Delta life, not the full picture - the delta is far larger and richer than any single day trip can cover, but for travellers without more time to spare, this is a solid and honest sample of it. Book at least a day or two ahead, especially on weekends and holidays, to guarantee boat transport and restaurant seating.",
+          },
+        ],
+      },
+    ],
   },
 }

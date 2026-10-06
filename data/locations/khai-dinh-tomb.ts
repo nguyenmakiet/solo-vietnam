@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khaiDinhTomb: Location = {
   slug: "khai-dinh-tomb",
   name: "Khải Định Tomb",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.39915933177038,
@@ -50,14 +50,93 @@ export const khaiDinhTomb: Location = {
     "From central Huế: motorbike or taxi via Highway 49 (about 20-30 minutes). Bus option: route 05 (Bến xe Đông Ba - Chợ Tuần) - catch it at Đông Ba bus station on Trần Hưng Đạo if you're on the north bank, or flag it down along central south-bank roads like Điện Biên Phủ, Lê Ngô Cát, or Minh Mạng if you're staying in that area. Frequency is low (45-60 minutes between buses) and timing can be inconsistent, so motorbike rental (100,000-150,000 VND/day) is the more reliable option, especially if combining Khải Định with Minh Mạng and Tự Đức tombs in one day.",
   ],
   content: {
-    intro:
-      "Khải Định Tomb - also known as Ứng Lăng - was built by Khải Định, the 12th Nguyễn emperor, who ruled from 1916 to 1925 under French protectorate conditions that left him with largely ceremonial power. He personally selected the site on Châu Chữ hillside and directed construction beginning 4 September 1920. He died in 1925 and was buried inside while work continued; the tomb wasn't completed until 1931, under his successor Bảo Đại - 11 years in total, the longest construction time, highest cost, and most modern design of any Nguyễn royal tomb, despite having the smallest footprint (117m × 48.5m). Lê Văn Bá led the construction, working with renowned craftsmen from across the country. To help fund it, Khải Định requested a 30% increase in land tax from the French protectorate government - a decision that drew fierce criticism from contemporaries and remains historically controversial, seen by critics as a symbol of collaboration with French rule. Materials were imported internationally: steel, cement, and slate tiles from France, porcelain and coloured glass from China and Japan. The result is a fusion unlike any other Nguyễn tomb - traditional Vietnamese elements combined with French Gothic, Roman, and Hindu architectural influences, set on a forested hillside that gives it the appearance of a European castle transplanted into the Vietnamese countryside. The grey concrete exterior often surprises first-time visitors, making the explosion of colour inside even more dramatic. Inside, the Cung Thiên Định (Thiên Định Palace) holds the most elaborate interior of any Vietnamese royal tomb - every surface covered in mosaic assembled from fragments of porcelain, glass, and ceramic, forming dragons, phoenixes, clouds, and celestial scenes. A bronze effigy of the emperor sits above the actual burial vault beneath the Cửu Long (nine dragons) canopy.",
-    howToGetThere:
-      "Khải Định Tomb is on Châu Chữ hillside, about 10km south of central Huế. By motorbike or taxi: Highway 49, about 20-30 minutes. By bus: route 05 (Bến xe Đông Ba - Chợ Tuần) passes near the tomb - catch it at Đông Ba bus station on Trần Hưng Đạo street if you're north of the river, or flag it down along central south-bank roads like Điện Biên Phủ, Lê Ngô Cát, or Minh Mạng street if you're staying on that side. Frequency is low (45-60 minutes between buses) and timing isn't always reliable, so most independent travellers - especially those visiting multiple tombs in one day - rent a motorbike (100,000-150,000 VND/day) instead. Most travellers combine Khải Định with Tự Đức Tomb (nearby) and sometimes Minh Mạng Tomb in a single royal tombs circuit by motorbike, all within about a 15km radius of central Huế.",
-    whatToExpect:
-      "The tomb rises in terraces up the hillside via 127 steps divided into platforms, each flanked by stone mandarins, elephants, and horses standing at attention - steep in sections, so take it slowly, especially in heat. The Cung Thiên Định at the summit is the visual centrepiece: a single large chamber where floor, walls, and ceiling are entirely covered in mosaic made from broken porcelain and coloured glass imported from China, France, and Japan. The detail rewards close inspection - patterns shift from geometric to figurative to calligraphic across the surfaces. It's dark inside, so adjust your camera settings accordingly (no flash permitted). The bronze statue of Khải Định sits on a dais above the sealed burial vault beneath the Cửu Long canopy. The surrounding hillside has gardens and smaller pavilions, though the outer grounds offer little shade - bring sun protection.",
-    travelTips:
-      "Of Huế's seven royal tombs, Khải Định is the most visually dramatic and the most compact - a good choice if you only have time for one. Tự Đức Tomb is the natural pairing: larger, more garden-oriented, and more traditionally Vietnamese in feel, an easy combination in the same afternoon since they're close by. Minh Mạng Tomb is the most architecturally grand of the three but takes more time to explore properly. For first-time visitors to Huế with one day, the standard itinerary - Imperial City in the morning, Thiên Mụ Pagoda midday, Khải Định Tomb in the afternoon - covers the three most visually distinctive sites in the city. Go early if possible; the sun gets intense by midday with little shade on the grounds.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Khải Định Tomb Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khải Định Tomb - also known as Ứng Lăng - was built by Khải Định, the 12th Nguyễn emperor, who ruled from 1916 to 1925 under French protectorate conditions that left him with largely ceremonial power. He personally selected the site on Châu Chữ hillside and directed construction beginning 4 September 1920. He died in 1925 and was buried inside while work continued; the tomb wasn't completed until 1931, under his successor Bảo Đại - 11 years in total, the longest construction time, highest cost, and most modern design of any Nguyễn royal tomb, despite having the smallest footprint (117m × 48.5m).",
+          },
+          { type: "heading", text: "Construction and Funding" },
+          {
+            type: "paragraph",
+            text: "Lê Văn Bá led the construction, working with renowned craftsmen from across the country. To help fund it, Khải Định requested a 30% increase in land tax from the French protectorate government - a decision that drew fierce criticism from contemporaries and remains historically controversial, seen by critics as a symbol of collaboration with French rule. Materials were imported internationally: steel, cement, and slate tiles from France, porcelain and coloured glass from China and Japan.",
+          },
+          { type: "heading", text: "Vietnamese and European Styles" },
+          {
+            type: "paragraph",
+            text: "The result is a fusion unlike any other Nguyễn tomb - traditional Vietnamese elements combined with French Gothic, Roman, and Hindu architectural influences, set on a forested hillside that gives it the appearance of a European castle transplanted into the Vietnamese countryside. The grey concrete exterior often surprises first-time visitors, making the explosion of colour inside even more dramatic.",
+          },
+          { type: "heading", text: "Cung Thiên Định and the Bronze Effigy" },
+          {
+            type: "paragraph",
+            text: "Inside, the Cung Thiên Định (Thiên Định Palace) holds the most elaborate interior of any Vietnamese royal tomb - every surface covered in mosaic assembled from fragments of porcelain, glass, and ceramic, forming dragons, phoenixes, clouds, and celestial scenes. A bronze effigy of the emperor sits above the actual burial vault beneath the Cửu Long (nine dragons) canopy.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Khải Định Tomb",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khải Định Tomb is on Châu Chữ hillside, about 10km south of central Huế. By motorbike or taxi: Highway 49, about 20-30 minutes.",
+          },
+          { type: "heading", text: "By Bus" },
+          {
+            type: "paragraph",
+            text: "By bus: route 05 (Bến xe Đông Ba - Chợ Tuần) passes near the tomb - catch it at Đông Ba bus station on Trần Hưng Đạo street if you're north of the river, or flag it down along central south-bank roads like Điện Biên Phủ, Lê Ngô Cát, or Minh Mạng street if you're staying on that side. Frequency is low (45-60 minutes between buses) and timing isn't always reliable, so most independent travellers - especially those visiting multiple tombs in one day - rent a motorbike (100,000-150,000 VND/day) instead.",
+          },
+          { type: "heading", text: "Combining with Other Tombs" },
+          {
+            type: "paragraph",
+            text: "Most travellers combine Khải Định with Tự Đức Tomb (nearby) and sometimes Minh Mạng Tomb in a single royal tombs circuit by motorbike, all within about a 15km radius of central Huế.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Khải Định Tomb",
+        blocks: [
+          { type: "heading", text: "The Terraced Approach" },
+          {
+            type: "paragraph",
+            text: "The tomb rises in terraces up the hillside via 127 steps divided into platforms, each flanked by stone mandarins, elephants, and horses standing at attention - steep in sections, so take it slowly, especially in heat.",
+          },
+          { type: "heading", text: "Inside Cung Thiên Định" },
+          {
+            type: "paragraph",
+            text: "The Cung Thiên Định at the summit is the visual centrepiece: a single large chamber where floor, walls, and ceiling are entirely covered in mosaic made from broken porcelain and coloured glass imported from China, France, and Japan. The detail rewards close inspection - patterns shift from geometric to figurative to calligraphic across the surfaces. It's dark inside, so adjust your camera settings accordingly (no flash permitted). The bronze statue of Khải Định sits on a dais above the sealed burial vault beneath the Cửu Long canopy.",
+          },
+          { type: "heading", text: "The Grounds" },
+          {
+            type: "paragraph",
+            text: "The surrounding hillside has gardens and smaller pavilions, though the outer grounds offer little shade - bring sun protection.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Khải Định Tomb",
+        blocks: [
+          { type: "heading", text: "Choosing Among Huế's Tombs" },
+          {
+            type: "paragraph",
+            text: "Of Huế's seven royal tombs, Khải Định is the most visually dramatic and the most compact - a good choice if you only have time for one. Tự Đức Tomb is the natural pairing: larger, more garden-oriented, and more traditionally Vietnamese in feel, an easy combination in the same afternoon since they're close by. Minh Mạng Tomb is the most architecturally grand of the three but takes more time to explore properly. For first-time visitors to Huế with one day, the standard itinerary - Imperial City in the morning, Thiên Mụ Pagoda midday, Khải Định Tomb in the afternoon - covers the three most visually distinctive sites in the city.",
+          },
+          {
+            type: "paragraph",
+            text: "Go early if possible; the sun gets intense by midday with little shade on the grounds.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

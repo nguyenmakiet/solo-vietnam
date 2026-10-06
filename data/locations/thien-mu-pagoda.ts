@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thienMuPagoda: Location = {
   slug: "thien-mu-pagoda",
   name: "Thiên Mụ Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hue"],
   destination: "hue",
   lat: 16.453168591703893,
@@ -43,14 +43,98 @@ export const thienMuPagoda: Location = {
     "You may hear a local rumour that couples who visit together are doomed to break up - it's pure folklore with no real basis, but persistent enough that some Huế couples still visit separately just in case",
   ],
   content: {
-    intro:
-      "Thiên Mụ Pagoda - 'Pagoda of the Celestial Lady' - traces its founding to 1601, when Nguyễn Hoàng, the lord who first established Nguyễn rule over Đàng Trong (the 'Inner Region' of southern Vietnam, as distinct from Đàng Ngoài, the Trịnh-ruled north, during the centuries the country was split between the two families), came upon Hà Khê hill above the Perfume River. Two versions of the founding legend circulate side by side: one holds that Nguyễn Hoàng noticed the hill's terrain resembled a dragon turning its head; the other says villagers had long spoken of an old woman in a red robe and green skirt who appeared on the hill at night, foretelling that a true lord would come to build a pagoda there to strengthen the region's fortunes - which is how the hill came to be known as Thiên Mụ Sơn even before Nguyễn Hoàng's arrival. Along with Sùng Hóa Pagoda, Thiên Mụ was one of the earliest 'quốc tự' (state-sanctioned royal pagodas) in Đàng Trong, hosting state ceremonies and major Buddhist rituals from the early 17th century onward. The pagoda's name itself has shifted over the centuries: after Emperor Tự Đức failed to produce a male heir, he came to believe the court had shown disrespect toward Heaven and, seeking to atone, ordered place names containing the character 'Thiên' (heaven) changed to avoid further offence - Thiên Mụ became 'Linh Mụ' in 1862, before the original name was restored in 1869. Both names remain in everyday use today.\n\nThe seven-tiered Phước Duyên Tower, built in 1844 under Emperor Thiệu Trị, rises 21 metres above the riverbank and was officially recognised by the Vietnam Records Association in 2006 as the country's tallest ancient octagonal pagoda tower - a record that sits alongside a second, for the largest surviving stele from the Lê Trung Hưng era, awarded in 2008. The pagoda has been rebuilt and expanded through the centuries: a major storm in 1904 destroyed the Hương Nguyện pavilion in front of the tower entirely (only its stone foundation survives today), and further restoration followed under Emperor Thành Thái in 1907 and, most extensively, under Hòa thượng Thích Đôn Hậu, whose 30-year restoration effort began in 1945 and whose memorial stupa now stands in the garden behind the tower. Two of the pagoda's most treasured relics - the Đại Hồng Chung bell, cast in 1710, and the 'Ngự kiến Thiên Mụ tự' stele mounted on a white marble turtle, carved in 1715, both commissioned under Lord Nguyễn Phúc Chu - were officially recognised as National Treasures in 2013. Today the complex is an active Buddhist monastery and one of 16 constituent sites in the UNESCO-listed Complex of Huế Monuments (1993). In one corner of the grounds sits a pale blue Austin car, preserved under glass, that carried monk Thích Quảng Đức to his self-immolation in Saigon on June 11, 1963 - an act that contributed directly to the fall of the Diệm government and became one of the defining images of the Vietnam War era.",
-    howToGetThere:
-      "Thiên Mụ Pagoda is about 5km west of central Huế, on the north bank of the Perfume River. The most scenic approach is by dragon boat from the dock near Trần Tiến Street in central Huế - a 30-minute river journey that delivers the classic tower-above-trees view. Alternatively, the pagoda is easily reached by bicycle, motorbike, or Grab along the riverside road (Đường Kim Long). Most travellers combine the pagoda with the Imperial City and a royal tomb in a single full day of Huế sightseeing.",
-    whatToExpect:
-      "From the river landing, a brick staircase of around 20 steps leads up to the pagoda's outer courtyard, past four tall stone pillars and the tam quan gate. The main draw is the Phước Duyên Tower just beyond - seven octagonal tiers of diminishing size, each historically housing a Buddha image, brick-red against the tree canopy and visible from the river before you dock. A spiral staircase inside once led to a gold Buddha statue on the top floor, though the tower itself is not open for climbing today; it's best appreciated from the surrounding courtyard, where the stone foundation of the long-vanished Hương Nguyện pavilion and a scatter of stele houses from the Thiệu Trị and Nguyễn Phúc Chu eras still stand. Behind the tower, the main sanctuary hall (Điện Đại Hùng) houses a Buddha Di Lặc statue and further Buddhist figures, along with the Đại Hồng Chung bell and the marble-turtle stele - both National Treasures - a short walk away. Seen from above, the hill itself is sometimes described as resembling a giant turtle carrying the tower on its back. The rear gardens are planted with pine forest and flowering trees maintained by the monks, leading back to monks' quarters, guest halls, and the memorial stupa of Hòa thượng Thích Đôn Hậu. The Austin car - license plate DBA 599 - is in a covered display area behind the main hall, accompanied by a photograph of Thích Quảng Đức's self-immolation. A handful of souvenir stalls inside the pagoda grounds sell nón lá, áo dài, and other Huế keepsakes. Many visitors cool off with a bowl of tào phớ (soft tofu pudding) from the vendors near the entrance - a simple local specialty that has become part of the Thiên Mụ experience.",
-    travelTips:
-      "Thiên Mụ is the most photographed landmark in Huế and genuinely merits the reputation - the tower, the river, and the garden create a composition that photographs well at almost any time of day. The boat approach from central Huế is worth doing at least one-way; returning by motorbike or Grab along the riverside road gives a different perspective on the Kim Long neighbourhood. The pagoda is free to enter, takes about 45-60 minutes to explore fully (longer if combined with the Imperial City or a royal tomb on the same day), and is most meaningful with some background on the history of the car and the monk - one of the most consequential objects in a Vietnamese religious site anywhere in the country.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Thiên Mụ Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thiên Mụ Pagoda - 'Pagoda of the Celestial Lady' - traces its founding to 1601, when Nguyễn Hoàng, the lord who first established Nguyễn rule over Đàng Trong (the 'Inner Region' of southern Vietnam, as distinct from Đàng Ngoài, the Trịnh-ruled north, during the centuries the country was split between the two families), came upon Hà Khê hill above the Perfume River.",
+          },
+          { type: "heading", text: "The Founding Legend" },
+          {
+            type: "paragraph",
+            text: "Two versions of the founding legend circulate side by side: one holds that Nguyễn Hoàng noticed the hill's terrain resembled a dragon turning its head; the other says villagers had long spoken of an old woman in a red robe and green skirt who appeared on the hill at night, foretelling that a true lord would come to build a pagoda there to strengthen the region's fortunes - which is how the hill came to be known as Thiên Mụ Sơn even before Nguyễn Hoàng's arrival.",
+          },
+          { type: "heading", text: "Royal Status and Changing Names" },
+          {
+            type: "paragraph",
+            text: "Along with Sùng Hóa Pagoda, Thiên Mụ was one of the earliest 'quốc tự' (state-sanctioned royal pagodas) in Đàng Trong, hosting state ceremonies and major Buddhist rituals from the early 17th century onward. The pagoda's name itself has shifted over the centuries: after Emperor Tự Đức failed to produce a male heir, he came to believe the court had shown disrespect toward Heaven and, seeking to atone, ordered place names containing the character 'Thiên' (heaven) changed to avoid further offence - Thiên Mụ became 'Linh Mụ' in 1862, before the original name was restored in 1869. Both names remain in everyday use today.",
+          },
+          { type: "heading", text: "Phước Duyên Tower and Later Rebuilding" },
+          {
+            type: "paragraph",
+            text: "The seven-tiered Phước Duyên Tower, built in 1844 under Emperor Thiệu Trị, rises 21 metres above the riverbank and was officially recognised by the Vietnam Records Association in 2006 as the country's tallest ancient octagonal pagoda tower - a record that sits alongside a second, for the largest surviving stele from the Lê Trung Hưng era, awarded in 2008. The pagoda has been rebuilt and expanded through the centuries: a major storm in 1904 destroyed the Hương Nguyện pavilion in front of the tower entirely (only its stone foundation survives today), and further restoration followed under Emperor Thành Thái in 1907 and, most extensively, under Hòa thượng Thích Đôn Hậu, whose 30-year restoration effort began in 1945 and whose memorial stupa now stands in the garden behind the tower.",
+          },
+          { type: "heading", text: "Relics and UNESCO Status" },
+          {
+            type: "paragraph",
+            text: "Two of the pagoda's most treasured relics - the Đại Hồng Chung bell, cast in 1710, and the 'Ngự kiến Thiên Mụ tự' stele mounted on a white marble turtle, carved in 1715, both commissioned under Lord Nguyễn Phúc Chu - were officially recognised as National Treasures in 2013. Today the complex is an active Buddhist monastery and one of 16 constituent sites in the UNESCO-listed Complex of Huế Monuments (1993).",
+          },
+          { type: "heading", text: "Thích Quảng Đức's Car" },
+          {
+            type: "paragraph",
+            text: "In one corner of the grounds sits a pale blue Austin car, preserved under glass, that carried monk Thích Quảng Đức to his self-immolation in Saigon on June 11, 1963 - an act that contributed directly to the fall of the Diệm government and became one of the defining images of the Vietnam War era.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Thiên Mụ Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thiên Mụ Pagoda is about 5km west of central Huế, on the north bank of the Perfume River.",
+          },
+          { type: "heading", text: "By Dragon Boat or by Road" },
+          {
+            type: "paragraph",
+            text: "The most scenic approach is by dragon boat from the dock near Trần Tiến Street in central Huế - a 30-minute river journey that delivers the classic tower-above-trees view. Alternatively, the pagoda is easily reached by bicycle, motorbike, or Grab along the riverside road (Đường Kim Long). Most travellers combine the pagoda with the Imperial City and a royal tomb in a single full day of Huế sightseeing.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Thiên Mụ Pagoda",
+        blocks: [
+          { type: "heading", text: "The Courtyard and Phước Duyên Tower" },
+          {
+            type: "paragraph",
+            text: "From the river landing, a brick staircase of around 20 steps leads up to the pagoda's outer courtyard, past four tall stone pillars and the tam quan gate. The main draw is the Phước Duyên Tower just beyond - seven octagonal tiers of diminishing size, each historically housing a Buddha image, brick-red against the tree canopy and visible from the river before you dock. A spiral staircase inside once led to a gold Buddha statue on the top floor, though the tower itself is not open for climbing today; it's best appreciated from the surrounding courtyard, where the stone foundation of the long-vanished Hương Nguyện pavilion and a scatter of stele houses from the Thiệu Trị and Nguyễn Phúc Chu eras still stand.",
+          },
+          { type: "heading", text: "Main Hall and Gardens" },
+          {
+            type: "paragraph",
+            text: "Behind the tower, the main sanctuary hall (Điện Đại Hùng) houses a Buddha Di Lặc statue and further Buddhist figures, along with the Đại Hồng Chung bell and the marble-turtle stele - both National Treasures - a short walk away. Seen from above, the hill itself is sometimes described as resembling a giant turtle carrying the tower on its back. The rear gardens are planted with pine forest and flowering trees maintained by the monks, leading back to monks' quarters, guest halls, and the memorial stupa of Hòa thượng Thích Đôn Hậu.",
+          },
+          { type: "heading", text: "The Austin Car" },
+          {
+            type: "paragraph",
+            text: "The Austin car - license plate DBA 599 - is in a covered display area behind the main hall, accompanied by a photograph of Thích Quảng Đức's self-immolation.",
+          },
+          { type: "heading", text: "Souvenirs and Tào Phớ" },
+          {
+            type: "paragraph",
+            text: "A handful of souvenir stalls inside the pagoda grounds sell nón lá, áo dài, and other Huế keepsakes. Many visitors cool off with a bowl of tào phớ (soft tofu pudding) from the vendors near the entrance - a simple local specialty that has become part of the Thiên Mụ experience.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Thiên Mụ Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thiên Mụ is the most photographed landmark in Huế and genuinely merits the reputation - the tower, the river, and the garden create a composition that photographs well at almost any time of day. The boat approach from central Huế is worth doing at least one-way; returning by motorbike or Grab along the riverside road gives a different perspective on the Kim Long neighbourhood. The pagoda is free to enter, takes about 45-60 minutes to explore fully (longer if combined with the Imperial City or a royal tomb on the same day), and is most meaningful with some background on the history of the car and the monk - one of the most consequential objects in a Vietnamese religious site anywhere in the country.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vanLongNatureReserve: Location = {
   slug: "van-long-nature-reserve",
   name: "Vân Long Nature Reserve",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.37269717802166,
@@ -43,14 +43,89 @@ export const vanLongNatureReserve: Location = {
     "Tipping the rower is customary and appreciated at the end of the tour",
   ],
   content: {
-    intro:
-      "Vân Long Nature Reserve, nicknamed 'vịnh không sóng' ('the waveless bay') for its still, glass-like water, is Vietnam's largest inland wetland protected area - 2,736 hectares of flooded karst valley in Gia Viễn District, 20km northwest of Ninh Bình city, established in 1998. The reserve was created specifically to protect the Delacour's langur (Trachypithecus delacouri), a black-and-white monkey endemic to northern Vietnam and one of the world's 25 most endangered primates - only a few hundred individuals survive in total, and Vân Long holds Vietnam's largest single population, with more than 40 recorded here. The reserve holds two official Vietnam records: for the largest natural landscape painting-like scenery of its kind, and for having the country's largest number of Delacour's langur individuals. The landscape is a submerged valley of karst peaks - including the named formations Núi Mèo Cào, Núi Mâm Xôi, and Núi Hòm Sách - rising from shallow clear water, navigated by wooden rowing boats through channels between the limestone formations. There are actually two distinct boat routes: one passes through a cave system (the reserve is sometimes described as having around 1,000 caves in total, though only a portion are part of the tourist route), while the other stays entirely on open water and reportedly offers better odds of spotting the langurs. A useful tip: ask your rower directly about combining both routes into one trip, since this isn't always offered upfront. Vân Long also served as one of the filming locations for the 2017 Hollywood blockbuster 'Kong: Skull Island.' The combination of endemic wildlife, intact wetland ecosystem, and boat navigation through karst makes Vân Long one of the most complete nature experiences in Ninh Bình - and one of the least crowded, receiving a fraction of the visitors that Tràng An draws.",
-    howToGetThere:
-      "Vân Long Nature Reserve is 20km northwest of Ninh Bình city in Gia Viễn District. By motorbike from Ninh Bình, the journey takes about 35–40 minutes on flat provincial roads. The boat dock and ticket office are at the reserve entrance in Gia Vân village. Most accommodation in Ninh Bình can arrange transport to Vân Long. There is no public bus directly to the reserve - motorbike or private transport is the standard approach.",
-    whatToExpect:
-      "The boat tour takes roughly 1-2 hours, navigated by a local rower through wetland channels between the karst peaks. The water is shallow and clear - the limestone bottom visible in many sections. It's worth asking your rower directly about combining both available routes (one through a cave section, one entirely open-water) into a single trip, rather than assuming you'll get both automatically. The langur population inhabits the cliff faces of several specific karst peaks in the reserve, and the open-water route is generally considered to have better odds of a sighting than the cave route, though sightings are genuinely variable rather than guaranteed - some visitors see several individuals, others see none, depending on season, weather, and simple luck. If you do explore any deeper cave sections, don't go in without a guide, and travelling in a small group of 3-4 is a sensible precaution. The landscape is wide and open - different from the enclosed cave-and-river experience of Tràng An, with broad views over the flooded valley and mountain reflections in the still water. Waterbirds including herons, kingfishers, and cormorants are common throughout, and lotus flowers bloom across parts of the wetland around May-June.",
-    travelTips:
-      "Vân Long is one of the best wildlife experiences in Ninh Bình and one of the better ones in northern Vietnam, though it's worth being honest that a langur sighting isn't a sure thing - visitor reports suggest something closer to a coin flip than a guarantee, even with good timing. The Delacour's langur is a genuinely rare animal regardless - there are more giant pandas in the world than Delacour's langurs - and seeing them in the wild at Vân Long, even briefly, is a privilege that few travellers to Vietnam take advantage of. Early morning gives the best odds, but go in with realistic expectations rather than assuming a sighting is guaranteed. Pair with Hoa Lư Ancient Capital in the afternoon - both are in the western part of Ninh Bình province and the combination covers the province's best wildlife and best history in a single day. If you're deciding between Vân Long and Tam Cốc and can only fit one boat tour into a tight schedule, Tam Cốc's rice-field scenery is the more iconic, classically photogenic choice for a first-timer; Vân Long suits travellers who prefer a quieter, more genuinely wild setting, care more about wildlife photography, or have already done Tam Cốc and want something different. Worth noting: as of 2026, there are reportedly plans for a large (2,100+ billion VND) project to build a new pier and restore part of the old river system at Vân Long, which could bring more developed sightseeing infrastructure and improved conservation in the coming years - worth checking current status if you're curious how the site might have changed by the time you visit.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Vân Long Nature Reserve Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Vân Long Nature Reserve, nicknamed 'vịnh không sóng' ('the waveless bay') for its still, glass-like water, is Vietnam's largest inland wetland protected area - 2,736 hectares of flooded karst valley in Gia Viễn District, 20km northwest of Ninh Bình city, established in 1998.",
+          },
+          { type: "heading", text: "Delacour's Langur and Vietnam Records" },
+          {
+            type: "paragraph",
+            text: "The reserve was created specifically to protect the Delacour's langur (Trachypithecus delacouri), a black-and-white monkey endemic to northern Vietnam and one of the world's 25 most endangered primates - only a few hundred individuals survive in total, and Vân Long holds Vietnam's largest single population, with more than 40 recorded here. The reserve holds two official Vietnam records: for the largest natural landscape painting-like scenery of its kind, and for having the country's largest number of Delacour's langur individuals.",
+          },
+          { type: "heading", text: "Karst Peaks and Boat Routes" },
+          {
+            type: "paragraph",
+            text: "The landscape is a submerged valley of karst peaks - including the named formations Núi Mèo Cào, Núi Mâm Xôi, and Núi Hòm Sách - rising from shallow clear water, navigated by wooden rowing boats through channels between the limestone formations. There are actually two distinct boat routes: one passes through a cave system (the reserve is sometimes described as having around 1,000 caves in total, though only a portion are part of the tourist route), while the other stays entirely on open water and reportedly offers better odds of spotting the langurs. A useful tip: ask your rower directly about combining both routes into one trip, since this isn't always offered upfront.",
+          },
+          { type: "heading", text: "Film Location and Why Visit" },
+          {
+            type: "paragraph",
+            text: "Vân Long also served as one of the filming locations for the 2017 Hollywood blockbuster 'Kong: Skull Island.' The combination of endemic wildlife, intact wetland ecosystem, and boat navigation through karst makes Vân Long one of the most complete nature experiences in Ninh Bình - and one of the least crowded, receiving a fraction of the visitors that Tràng An draws.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Vân Long Nature Reserve",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Vân Long Nature Reserve is 20km northwest of Ninh Bình city in Gia Viễn District. By motorbike from Ninh Bình, the journey takes about 35–40 minutes on flat provincial roads. The boat dock and ticket office are at the reserve entrance in Gia Vân village. Most accommodation in Ninh Bình can arrange transport to Vân Long. There is no public bus directly to the reserve - motorbike or private transport is the standard approach.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Vân Long Nature Reserve",
+        blocks: [
+          { type: "heading", text: "The Boat Tour" },
+          {
+            type: "paragraph",
+            text: "The boat tour takes roughly 1-2 hours, navigated by a local rower through wetland channels between the karst peaks. The water is shallow and clear - the limestone bottom visible in many sections. It's worth asking your rower directly about combining both available routes (one through a cave section, one entirely open-water) into a single trip, rather than assuming you'll get both automatically.",
+          },
+          { type: "heading", text: "Spotting Langurs" },
+          {
+            type: "paragraph",
+            text: "The langur population inhabits the cliff faces of several specific karst peaks in the reserve, and the open-water route is generally considered to have better odds of a sighting than the cave route, though sightings are genuinely variable rather than guaranteed - some visitors see several individuals, others see none, depending on season, weather, and simple luck. If you do explore any deeper cave sections, don't go in without a guide, and travelling in a small group of 3-4 is a sensible precaution.",
+          },
+          { type: "heading", text: "Landscape and Birdlife" },
+          {
+            type: "paragraph",
+            text: "The landscape is wide and open - different from the enclosed cave-and-river experience of Tràng An, with broad views over the flooded valley and mountain reflections in the still water. Waterbirds including herons, kingfishers, and cormorants are common throughout, and lotus flowers bloom across parts of the wetland around May-June.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Vân Long Nature Reserve",
+        blocks: [
+          { type: "heading", text: "Wildlife Expectations" },
+          {
+            type: "paragraph",
+            text: "Vân Long is one of the best wildlife experiences in Ninh Bình and one of the better ones in northern Vietnam, though it's worth being honest that a langur sighting isn't a sure thing - visitor reports suggest something closer to a coin flip than a guarantee, even with good timing. The Delacour's langur is a genuinely rare animal regardless - there are more giant pandas in the world than Delacour's langurs - and seeing them in the wild at Vân Long, even briefly, is a privilege that few travellers to Vietnam take advantage of. Early morning gives the best odds, but go in with realistic expectations rather than assuming a sighting is guaranteed.",
+          },
+          { type: "heading", text: "Combining with Other Sites" },
+          {
+            type: "paragraph",
+            text: "Pair with Hoa Lư Ancient Capital in the afternoon - both are in the western part of Ninh Bình province and the combination covers the province's best wildlife and best history in a single day. If you're deciding between Vân Long and Tam Cốc and can only fit one boat tour into a tight schedule, Tam Cốc's rice-field scenery is the more iconic, classically photogenic choice for a first-timer; Vân Long suits travellers who prefer a quieter, more genuinely wild setting, care more about wildlife photography, or have already done Tam Cốc and want something different.",
+          },
+          { type: "heading", text: "Planned Development" },
+          {
+            type: "paragraph",
+            text: "Worth noting: as of 2026, there are reportedly plans for a large (2,100+ billion VND) project to build a new pier and restore part of the old river system at Vân Long, which could bring more developed sightseeing infrastructure and improved conservation in the coming years - worth checking current status if you're curious how the site might have changed by the time you visit.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

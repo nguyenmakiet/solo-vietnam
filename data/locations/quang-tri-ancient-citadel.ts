@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quangTriAncientCitadel: Location = {
   slug: "quang-tri-ancient-citadel",
   name: "Quảng Trị Ancient Citadel",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-tri"],
   destination: "",
   lat: 16.753698503710048,
@@ -47,14 +47,82 @@ export const quangTriAncientCitadel: Location = {
     "Quảng Trị province has an exceptionally high concentration of unexploded ordnance left over from the war - do not stray from marked paths anywhere in the province, although the citadel itself and all visitor areas have long been cleared and are completely safe",
   ],
   content: {
-    intro:
-      "Quảng Trị Ancient Citadel stands in the centre of Quảng Trị city, on Lý Thái Tổ street near the Thạch Hãn River - a Vauban-style fortification founded under Emperor Gia Long and built by the Nguyễn dynasty in two phases, 1809 and 1837, originally square in plan with brick walls over 4 metres tall and a perimeter of more than 2,000 metres, its four gates (Tiền, Hậu, Tả, Hữu - front, rear, left, and right) framed by 3.4-metre brick vaults, ironwood doors, and curved yin-yang tile roofs. For more than 160 years it functioned primarily as a regional administrative centre representing the imperial court in Huế, housing government offices, a royal residence hall, and a flagpole, alongside its defensive walls, bastions, and moat - more a seat of provincial government than a purely military structure, at least until the 20th century. French colonial authorities later added a police post, prison, military command posts, a post office, a clinic, and a rice warehouse; by the time the Saigon government had converted much of the site into barracks, a stadium, and a prison in the years before 1972, many of the original Nguyễn-era buildings were already damaged or gone.\n\nIn the summer of 1972, North Vietnamese forces held the citadel during the Easter Offensive, and South Vietnamese forces, backed by massive American air and naval support, launched a campaign to retake it - an attempt, from the northern side's perspective, to gain leverage at the Paris peace talks by retaking lost ground. The resulting battle - fought from 28 June to 16 September 1972, 81 days and nights in total - reduced the citadel and the surrounding town to rubble; Vietnamese sources cite figures for the bombardment ranging from roughly 120,000 to 328,000 tonnes of bombs and artillery shells over that period (accounts vary), sometimes described as equivalent to several Hiroshima-scale atomic bombs in destructive power - a popular comparison worth treating with some caution, since it compares the raw weight of conventional ordnance to the explosive yield of a nuclear weapon, two different measures rather than a precise equivalence. Of the citadel's original four gates, only the one facing east remained standing after the battle; the other three, along with most of the interior structures, were reduced to rubble. Many of the fallen were young men in their late teens and early twenties, students who had set aside their studies to fight. Vietnamese sources commonly cite a toll of around 18,000 soldiers and Quảng Trị civilians killed across the campaign, though as with most wartime casualty figures, exact numbers are difficult to verify and vary by source. The citadel's interior, now covered in grass and memorial structures, is considered by the Vietnamese government and people to be sacred ground: the remains of soldiers are believed to lie in the earth beneath the surface, making it simultaneously a battlefield, a cemetery, and a place of ongoing spiritual significance.\n\nRestoration work through the 1990s rebuilt all four gates in the historical style, and the grounds now centre on an octagonal memorial to the fallen, its design following traditional yin-yang principles - visitors climb 81 steps to reach the memorial platform, one for each day and night of the 1972 battle. The site was first recognised as a National Historical-Cultural Relic in 1986, and its status was upgraded to Special National Relic in 2013, a designation that also covers several associated memorial locations nearby, including Trí Bưu Church and the Long Hưng crossroads.",
-    howToGetThere:
-      "Quảng Trị Ancient Citadel sits about 2km east of Highway 1A, roughly 10-14km from Đông Hà (the provincial capital), 60km south of Huế (about 1.5 hours via QL1A), and around 180km north of Đà Nẵng (3-4 hours). By motorbike or car from Huế, follow Highway 1A north - the citadel is well signposted throughout the drive ('Thành cổ Quảng Trị' or 'Di tích Thành cổ'). Regular buses run between Huế and Quảng Trị city. If riding a motorbike from Huế or Đà Nẵng, fill up on fuel before setting out, since it's a fairly long stretch, and travel during daylight hours for safety. Free or low-cost parking (around 10,000-20,000 VND) is available near the citadel. The citadel is often visited as a stop on the drive between Huế and the DMZ sites further north, or as a day trip from Huế city.",
-    whatToExpect:
-      "The citadel walls enclose a wide green interior space where an octagonal memorial to the fallen - its design following traditional yin-yang principles, reached by climbing 81 steps, one for each day and night of the 1972 battle - stands alongside a memorial bell tower (completed 2007), a museum, and several other commemorative structures. The grounds are immaculately maintained and treated with evident reverence. The museum at the entrance documents the 1972 battle with photographs, maps, and artefacts. Photography and filming are allowed throughout, though visitors are expected to keep a solemn, respectful demeanour rather than posing for casual 'check-in' style photos near the memorial itself. The walls - thick masonry with corner bastions typical of Vauban military architecture - survived the bombing better than the interior; only the east-facing gate of the original four remained standing after 1972, though all four were rebuilt in the historical style during restoration work in the 1990s. Just outside the citadel stands Trí Bưu Church, another important wartime site - a 17th-century church that served as a defensive position northeast of the citadel in 1972, of which only the reinforced concrete frame and part of the bell tower wall remained standing afterward, since restored twice (in 1994 and 2000) with support from the local Catholic community.",
-    travelTips:
-      "Quảng Trị is the most emotionally significant stop on the central Vietnam war history circuit, and the citadel requires a different approach from the more touristically packaged sites further south. The scale of death here - concentrated into 81 days in a space that can be crossed in minutes on foot - is not immediately apparent from the peaceful green grounds. The numbers are easy enough to read off the information boards; the atmosphere is harder to explain. Spend a few minutes simply watching Vietnamese families come here to burn incense and pay their respects - the way locals interact with the site often says more than the exhibits do. Allow time to observe as well as to read.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Quảng Trị Ancient Citadel Special",
+        blocks: [
+          { type: "heading", text: "History as an Administrative Centre" },
+          {
+            type: "paragraph",
+            text: "Quảng Trị Ancient Citadel stands in the centre of Quảng Trị city, on Lý Thái Tổ street near the Thạch Hãn River - a Vauban-style fortification founded under Emperor Gia Long and built by the Nguyễn dynasty in two phases, 1809 and 1837, originally square in plan with brick walls over 4 metres tall and a perimeter of more than 2,000 metres, its four gates (Tiền, Hậu, Tả, Hữu - front, rear, left, and right) framed by 3.4-metre brick vaults, ironwood doors, and curved yin-yang tile roofs. For more than 160 years it functioned primarily as a regional administrative centre representing the imperial court in Huế, housing government offices, a royal residence hall, and a flagpole, alongside its defensive walls, bastions, and moat - more a seat of provincial government than a purely military structure, at least until the 20th century. French colonial authorities later added a police post, prison, military command posts, a post office, a clinic, and a rice warehouse; by the time the Saigon government had converted much of the site into barracks, a stadium, and a prison in the years before 1972, many of the original Nguyễn-era buildings were already damaged or gone.",
+          },
+          { type: "heading", text: "The 81-Day Battle of 1972" },
+          {
+            type: "paragraph",
+            text: "In the summer of 1972, North Vietnamese forces held the citadel during the Easter Offensive, and South Vietnamese forces, backed by massive American air and naval support, launched a campaign to retake it - an attempt, from the northern side's perspective, to gain leverage at the Paris peace talks by retaking lost ground. The resulting battle - fought from 28 June to 16 September 1972, 81 days and nights in total - reduced the citadel and the surrounding town to rubble; Vietnamese sources cite figures for the bombardment ranging from roughly 120,000 to 328,000 tonnes of bombs and artillery shells over that period (accounts vary), sometimes described as equivalent to several Hiroshima-scale atomic bombs in destructive power - a popular comparison worth treating with some caution, since it compares the raw weight of conventional ordnance to the explosive yield of a nuclear weapon, two different measures rather than a precise equivalence. Of the citadel's original four gates, only the one facing east remained standing after the battle; the other three, along with most of the interior structures, were reduced to rubble.",
+          },
+          { type: "heading", text: "The Human Cost" },
+          {
+            type: "paragraph",
+            text: "Many of the fallen were young men in their late teens and early twenties, students who had set aside their studies to fight. Vietnamese sources commonly cite a toll of around 18,000 soldiers and Quảng Trị civilians killed across the campaign, though as with most wartime casualty figures, exact numbers are difficult to verify and vary by source. The citadel's interior, now covered in grass and memorial structures, is considered by the Vietnamese government and people to be sacred ground: the remains of soldiers are believed to lie in the earth beneath the surface, making it simultaneously a battlefield, a cemetery, and a place of ongoing spiritual significance.",
+          },
+          { type: "heading", text: "Restoration and Heritage Status" },
+          {
+            type: "paragraph",
+            text: "Restoration work through the 1990s rebuilt all four gates in the historical style, and the grounds now centre on an octagonal memorial to the fallen, its design following traditional yin-yang principles - visitors climb 81 steps to reach the memorial platform, one for each day and night of the 1972 battle. The site was first recognised as a National Historical-Cultural Relic in 1986, and its status was upgraded to Special National Relic in 2013, a designation that also covers several associated memorial locations nearby, including Trí Bưu Church and the Long Hưng crossroads.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Quảng Trị Ancient Citadel",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Quảng Trị Ancient Citadel sits about 2km east of Highway 1A, roughly 10-14km from Đông Hà (the provincial capital), 60km south of Huế (about 1.5 hours via QL1A), and around 180km north of Đà Nẵng (3-4 hours). By motorbike or car from Huế, follow Highway 1A north - the citadel is well signposted throughout the drive ('Thành cổ Quảng Trị' or 'Di tích Thành cổ'). Regular buses run between Huế and Quảng Trị city.",
+          },
+          {
+            type: "paragraph",
+            text: "If riding a motorbike from Huế or Đà Nẵng, fill up on fuel before setting out, since it's a fairly long stretch, and travel during daylight hours for safety. Free or low-cost parking (around 10,000-20,000 VND) is available near the citadel. The citadel is often visited as a stop on the drive between Huế and the DMZ sites further north, or as a day trip from Huế city.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Quảng Trị Ancient Citadel",
+        blocks: [
+          { type: "heading", text: "The Memorial and Museum" },
+          {
+            type: "paragraph",
+            text: "The citadel walls enclose a wide green interior space where an octagonal memorial to the fallen - its design following traditional yin-yang principles, reached by climbing 81 steps, one for each day and night of the 1972 battle - stands alongside a memorial bell tower (completed 2007), a museum, and several other commemorative structures. The grounds are immaculately maintained and treated with evident reverence. The museum at the entrance documents the 1972 battle with photographs, maps, and artefacts. Photography and filming are allowed throughout, though visitors are expected to keep a solemn, respectful demeanour rather than posing for casual 'check-in' style photos near the memorial itself.",
+          },
+          { type: "heading", text: "The Walls and Trí Bưu Church" },
+          {
+            type: "paragraph",
+            text: "The walls - thick masonry with corner bastions typical of Vauban military architecture - survived the bombing better than the interior; only the east-facing gate of the original four remained standing after 1972, though all four were rebuilt in the historical style during restoration work in the 1990s. Just outside the citadel stands Trí Bưu Church, another important wartime site - a 17th-century church that served as a defensive position northeast of the citadel in 1972, of which only the reinforced concrete frame and part of the bell tower wall remained standing afterward, since restored twice (in 1994 and 2000) with support from the local Catholic community.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Quảng Trị Ancient Citadel",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Quảng Trị is the most emotionally significant stop on the central Vietnam war history circuit, and the citadel requires a different approach from the more touristically packaged sites further south. The scale of death here - concentrated into 81 days in a space that can be crossed in minutes on foot - is not immediately apparent from the peaceful green grounds. The numbers are easy enough to read off the information boards; the atmosphere is harder to explain.",
+          },
+          {
+            type: "paragraph",
+            text: "Spend a few minutes simply watching Vietnamese families come here to burn incense and pay their respects - the way locals interact with the site often says more than the exhibits do. Allow time to observe as well as to read.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
