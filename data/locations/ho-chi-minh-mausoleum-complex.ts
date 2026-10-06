@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoChiMinhMausoleumComplex: Location = {
   slug: "ho-chi-minh-mausoleum-complex",
   name: "Ho Chi Minh Mausoleum Complex",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.036779537375388,
@@ -51,14 +51,83 @@ export const hoChiMinhMausoleumComplex: Location = {
     "Time needed: 2-3 hours to cover the mausoleum queue, Presidential Palace exterior, stilt house, and garden",
   ],
   content: {
-    intro:
-      "The Ho Chi Minh Mausoleum Complex occupies a significant portion of the Ba Đình district in western Hanoi, centred on Ba Đình Square - the site where Hồ Chí Minh declared Vietnamese independence on September 2, 1945. Construction of the mausoleum broke ground on September 2, 1973 (deliberately on the anniversary of that declaration) and it was officially inaugurated on August 29, 1975. Designed by Soviet architect Garol Isakovich in a Stripped Classicism style, the three-tiered structure stands about 21.6m tall and 41.2m wide, clad in grey granite with sturdy granite columns on all four sides and a polished black stone main entrance. It holds the embalmed body of Hồ Chí Minh in a climate-controlled chamber and receives hundreds of thousands of Vietnamese visitors annually, predominantly in organised group pilgrimages from provinces across the country. A daily flag-raising and flag-lowering ceremony, performed by a 37-member Honour Guard unit (selected partly for height, at 1.7m and above), is one of the complex's signature rituals - flags go up at 6:00 AM in summer or 6:30 AM in winter, and come down at 9:00 PM every night, rain or shine. The surrounding complex includes the Presidential Palace (the French colonial residence that Ho Chi Minh refused to inhabit), the modest stilt house where he actually lived and worked from 1958 until his death in 1969, a large garden with carp ponds, and the Ho Chi Minh Museum. The combination of the formal mausoleum ritual with the intimate stilt house gives the complex an unusual emotional range.",
-    howToGetThere:
-      "The mausoleum complex is located in the Ba Đình district, approximately 3km west of Hoan Kiem Lake. From the Old Quarter, take a taxi or Grab (10-15 minutes) or walk west along Điện Biên Phủ street (30-35 minutes). The One Pillar Pagoda is immediately adjacent and typically combined in the same visit. Entry to the mausoleum queue is from the Hùng Vương street side of Ba Đình Square.",
-    whatToExpect:
-      "The mausoleum visit follows a strictly managed process: bags and cameras must be deposited before entering, visitors queue in an orderly line and file slowly through the darkened viewing chamber in silence past the glass sarcophagus containing Ho Chi Minh's embalmed body. The viewing takes approximately 2-3 minutes. The experience is solemn and the Vietnamese pilgrims who make up the majority of visitors treat it with corresponding reverence. After the mausoleum, the complex grounds can be explored freely - the Presidential Palace exterior and the stilt house with its original furnishings and the two fish ponds are the highlights. The Ho Chi Minh Museum adjacent to the square covers his life and the independence movement. Note that the mausoleum itself closes annually for a maintenance period of roughly 1-2 months, typically in autumn - the surrounding grounds and museum may keep separate hours during this window.",
-    travelTips:
-      "The mausoleum complex rewards visitors who approach it as a window into Vietnamese political culture and the cult of personality around Hồ Chí Minh rather than simply as a historical site. Observing the Vietnamese pilgrims - many travelling long distances specifically for this visit, some visibly emotional - gives the experience a dimension that purely historical framing misses. The stilt house is the most unexpectedly affecting part of the complex: the deliberate simplicity of how Ho Chi Minh chose to live, in contrast to the French colonial grandeur of the Presidential Palace next door, communicates something about his self-presentation that no museum label can fully convey. Given the seasonal hours and annual maintenance closure, double-check current opening status before building your Hanoi itinerary around this stop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ho Chi Minh Mausoleum Complex Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Ho Chi Minh Mausoleum Complex occupies a significant portion of the Ba Đình district in western Hanoi, centred on Ba Đình Square - the site where Hồ Chí Minh declared Vietnamese independence on September 2, 1945.",
+          },
+          { type: "heading", text: "Construction and Design" },
+          {
+            type: "paragraph",
+            text: "Construction of the mausoleum broke ground on September 2, 1973 (deliberately on the anniversary of that declaration) and it was officially inaugurated on August 29, 1975. Designed by Soviet architect Garol Isakovich in a Stripped Classicism style, the three-tiered structure stands about 21.6m tall and 41.2m wide, clad in grey granite with sturdy granite columns on all four sides and a polished black stone main entrance.",
+          },
+          { type: "heading", text: "The Mausoleum and the Flag Ceremony" },
+          {
+            type: "paragraph",
+            text: "It holds the embalmed body of Hồ Chí Minh in a climate-controlled chamber and receives hundreds of thousands of Vietnamese visitors annually, predominantly in organised group pilgrimages from provinces across the country. A daily flag-raising and flag-lowering ceremony, performed by a 37-member Honour Guard unit (selected partly for height, at 1.7m and above), is one of the complex's signature rituals - flags go up at 6:00 AM in summer or 6:30 AM in winter, and come down at 9:00 PM every night, rain or shine.",
+          },
+          { type: "heading", text: "The Wider Complex" },
+          {
+            type: "paragraph",
+            text: "The surrounding complex includes the Presidential Palace (the French colonial residence that Ho Chi Minh refused to inhabit), the modest stilt house where he actually lived and worked from 1958 until his death in 1969, a large garden with carp ponds, and the Ho Chi Minh Museum. The combination of the formal mausoleum ritual with the intimate stilt house gives the complex an unusual emotional range.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ho Chi Minh Mausoleum Complex",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The mausoleum complex is located in the Ba Đình district, approximately 3km west of Hoan Kiem Lake. From the Old Quarter, take a taxi or Grab (10-15 minutes) or walk west along Điện Biên Phủ street (30-35 minutes). The One Pillar Pagoda is immediately adjacent and typically combined in the same visit. Entry to the mausoleum queue is from the Hùng Vương street side of Ba Đình Square.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ho Chi Minh Mausoleum Complex",
+        blocks: [
+          { type: "heading", text: "Visiting the Mausoleum" },
+          {
+            type: "paragraph",
+            text: "The mausoleum visit follows a strictly managed process: bags and cameras must be deposited before entering, visitors queue in an orderly line and file slowly through the darkened viewing chamber in silence past the glass sarcophagus containing Ho Chi Minh's embalmed body. The viewing takes approximately 2-3 minutes. The experience is solemn and the Vietnamese pilgrims who make up the majority of visitors treat it with corresponding reverence.",
+          },
+          { type: "heading", text: "The Grounds and the Museum" },
+          {
+            type: "paragraph",
+            text: "After the mausoleum, the complex grounds can be explored freely - the Presidential Palace exterior and the stilt house with its original furnishings and the two fish ponds are the highlights. The Ho Chi Minh Museum adjacent to the square covers his life and the independence movement.",
+          },
+          { type: "heading", text: "Annual Closure" },
+          {
+            type: "paragraph",
+            text: "Note that the mausoleum itself closes annually for a maintenance period of roughly 1-2 months, typically in autumn - the surrounding grounds and museum may keep separate hours during this window.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ho Chi Minh Mausoleum Complex",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The mausoleum complex rewards visitors who approach it as a window into Vietnamese political culture and the cult of personality around Hồ Chí Minh rather than simply as a historical site. Observing the Vietnamese pilgrims - many travelling long distances specifically for this visit, some visibly emotional - gives the experience a dimension that purely historical framing misses.",
+          },
+          { type: "heading", text: "The Stilt House and Opening Status" },
+          {
+            type: "paragraph",
+            text: "The stilt house is the most unexpectedly affecting part of the complex: the deliberate simplicity of how Ho Chi Minh chose to live, in contrast to the French colonial grandeur of the Presidential Palace next door, communicates something about his self-presentation that no museum label can fully convey. Given the seasonal hours and annual maintenance closure, double-check current opening status before building your Hanoi itinerary around this stop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khoMuongVillage: Location = {
   slug: "kho-muong-village",
   name: "Kho Muong Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: 20.44871826696882, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
@@ -51,14 +51,77 @@ export const khoMuongVillage: Location = {
     "The valley has a noticeably moderated microclimate - cooler than the surrounding lowlands in summer and milder in winter",
   ],
   content: {
-    intro:
-      "Kho Muong Village (Bản Kho Mường), also known as Hua Mường, is a small Thai village in Thành Sơn commune, hidden at the bottom of a narrow karst valley on the western side of Pù Luông Nature Reserve, roughly 130km (about 3 hours) from Thanh Hóa city. In the Thai language, 'Kho' means root or origin and 'Mường' means village - fitting, since local history holds that around 300 years ago, hunters from Lũng Cao commune came across this flat, water-rich valley while hunting in the surrounding hills and decided to settle and farm here, making it the founding village of the area. It is widely considered the most remote and least developed of the main villages inside the reserve, reached by a steep, twisting mountain road that descends sharply into the valley floor. Around 60 households and 225 people, mostly White Thai farmers, live in traditional stilt houses arranged along the valley bottom, with rice terraces stepping up toward the surrounding limestone walls. The village sits directly beneath the mouth of Kho Muong Cave (also known locally as Hang Dơi, or Bat Cave), a large karst cave that gives the valley its closed, basin-like character. Tourism here is small in scale and largely centred on a handful of family homestays - there are no retreats, no large lodges, and no infrastructure beyond what the village itself uses. For travellers who specifically want to experience Pù Luông without the photography crowds of Don Village, Kho Muong Village is the standard recommendation.",
-    howToGetThere:
-      "Kho Muong Village is approximately 12km from Don Village, but the road takes around 45 minutes due to its steep gradient and switchbacks. From Cành Nàng town (the Bá Thước district centre), the route heads northwest around the base of the mountains for roughly 30km. The drive is genuinely demanding - one of the steepest sections in the reserve, with a cliff face on one side and a deep valley drop on the other. Most travellers arrange a 4WD or xe ôm transfer through their homestay; if self-driving, rent a manual/semi-automatic motorbike rather than a scooter given the terrain (around 200,000 VND/day) and only attempt it with confidence on steep, narrow surfaces. From Phố Đoàn the distance is around 20km. Some hikers walk in from Don Village over a 4 to 5 hour mountain trail with a local guide, which is the most rewarding way to arrive but should not be attempted without a guide. A separate, easier option is a short village walk starting from QL15C (also marked CT02), following local paths about 3km into Kho Muong - a gentle, 40-minute to 1-hour walk suited to anyone wanting a slower, low-effort way to see the valley.",
-    whatToExpect:
-      "The village is genuinely small and a single afternoon is enough to walk its full length. The valley floor is given to rice farming, with terraces stepping up the slopes and water buffalo grazing between paddies. Homestay life is the main cultural experience - shared meals, rice wine, and conversations with Thai families who have lived here across generations. The cave (Kho Muong Cave) is at the valley head, a 15-minute walk from the village core, and is the natural day-trip from any homestay. Trekking routes lead from Kho Muong Village to other villages including Don Village and Bản Pồn - a 1 to 2 day guided trek is one of the more rewarding ways to see the inner reserve, and this trekking-hub role is one of the things Kho Muong is best known for locally. Outside of these activities the rhythm is genuinely slow and the village is quiet from sunset onward.",
-    travelTips:
-      "Kho Muong Village is the recommended counterpoint to Don Village for travellers staying multiple nights in Pù Luông - one night in Don Village for the wide rice bowl and easy access, one night in Kho Muong Village for the remoteness and quieter homestay scale. The village is not a good fit for travellers who need reliable internet, charging-heavy equipment, or rapid logistics. Expect 24/7 access to nature and limited access to comfort. The road in is the single largest filter for visitors and keeps the village protected by default - this is also its main appeal.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Kho Muong Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kho Muong Village (Bản Kho Mường), also known as Hua Mường, is a small Thai village in Thành Sơn commune, hidden at the bottom of a narrow karst valley on the western side of Pù Luông Nature Reserve, roughly 130km (about 3 hours) from Thanh Hóa city. In the Thai language, 'Kho' means root or origin and 'Mường' means village - fitting, since local history holds that around 300 years ago, hunters from Lũng Cao commune came across this flat, water-rich valley while hunting in the surrounding hills and decided to settle and farm here, making it the founding village of the area.",
+          },
+          { type: "heading", text: "A Remote Thai Village" },
+          {
+            type: "paragraph",
+            text: "It is widely considered the most remote and least developed of the main villages inside the reserve, reached by a steep, twisting mountain road that descends sharply into the valley floor. Around 60 households and 225 people, mostly White Thai farmers, live in traditional stilt houses arranged along the valley bottom, with rice terraces stepping up toward the surrounding limestone walls. The village sits directly beneath the mouth of Kho Muong Cave (also known locally as Hang Dơi, or Bat Cave), a large karst cave that gives the valley its closed, basin-like character.",
+          },
+          { type: "heading", text: "Homestays and Why Visit" },
+          {
+            type: "paragraph",
+            text: "Tourism here is small in scale and largely centred on a handful of family homestays - there are no retreats, no large lodges, and no infrastructure beyond what the village itself uses. For travellers who specifically want to experience Pù Luông without the photography crowds of Don Village, Kho Muong Village is the standard recommendation.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Kho Muong Village",
+        blocks: [
+          { type: "heading", text: "By Road" },
+          {
+            type: "paragraph",
+            text: "Kho Muong Village is approximately 12km from Don Village, but the road takes around 45 minutes due to its steep gradient and switchbacks. From Cành Nàng town (the Bá Thước district centre), the route heads northwest around the base of the mountains for roughly 30km. The drive is genuinely demanding - one of the steepest sections in the reserve, with a cliff face on one side and a deep valley drop on the other. Most travellers arrange a 4WD or xe ôm transfer through their homestay; if self-driving, rent a manual/semi-automatic motorbike rather than a scooter given the terrain (around 200,000 VND/day) and only attempt it with confidence on steep, narrow surfaces. From Phố Đoàn the distance is around 20km.",
+          },
+          { type: "heading", text: "On Foot" },
+          {
+            type: "paragraph",
+            text: "Some hikers walk in from Don Village over a 4 to 5 hour mountain trail with a local guide, which is the most rewarding way to arrive but should not be attempted without a guide. A separate, easier option is a short village walk starting from QL15C (also marked CT02), following local paths about 3km into Kho Muong - a gentle, 40-minute to 1-hour walk suited to anyone wanting a slower, low-effort way to see the valley.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Kho Muong Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The village is genuinely small and a single afternoon is enough to walk its full length. The valley floor is given to rice farming, with terraces stepping up the slopes and water buffalo grazing between paddies. Homestay life is the main cultural experience - shared meals, rice wine, and conversations with Thai families who have lived here across generations.",
+          },
+          { type: "heading", text: "The Cave and Trekking Routes" },
+          {
+            type: "paragraph",
+            text: "The cave (Kho Muong Cave) is at the valley head, a 15-minute walk from the village core, and is the natural day-trip from any homestay. Trekking routes lead from Kho Muong Village to other villages including Don Village and Bản Pồn - a 1 to 2 day guided trek is one of the more rewarding ways to see the inner reserve, and this trekking-hub role is one of the things Kho Muong is best known for locally. Outside of these activities the rhythm is genuinely slow and the village is quiet from sunset onward.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Kho Muong Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kho Muong Village is the recommended counterpoint to Don Village for travellers staying multiple nights in Pù Luông - one night in Don Village for the wide rice bowl and easy access, one night in Kho Muong Village for the remoteness and quieter homestay scale. The village is not a good fit for travellers who need reliable internet, charging-heavy equipment, or rapid logistics.",
+          },
+          {
+            type: "paragraph",
+            text: "Expect 24/7 access to nature and limited access to comfort. The road in is the single largest filter for visitors and keeps the village protected by default - this is also its main appeal.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

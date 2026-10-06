@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bayMauCoconutForest: Location = {
   slug: "bay-mau-coconut-forest",
   name: "Bảy Mẫu Coconut Forest",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-nam"],
   destination: "hoi-an",
   lat: 15.877556321921798,
@@ -44,14 +44,82 @@ export const bayMauCoconutForest: Location = {
     "If you're prone to motion sickness, bring appropriate medication and ask your rower to go gently - most of the visit takes place in a basket boat",
   ],
   content: {
-    intro:
-      "Bảy Mẫu Coconut Forest - 'Seven-Acre Forest,' also widely nicknamed 'Miền Tây thu nhỏ' ('Mini Mekong Delta') - is a wetland of water coconut palms (Nypa fruticans) in Cẩm Thanh village, 3km from Hội An Ancient Town and about 31km from Đà Nẵng, navigated by the traditional Vietnamese basket boat (thúng chai). The nickname comes from two things at once: the dense, winding network of canals and channels through the palms genuinely resembles the landscape of Vietnam's southwestern Mekong Delta, and activities here - basket boat rowing, traditional fishing, folk games - echo the culture of that region too. According to local tradition, migrants from the Mekong Delta brought water coconut seedlings here around 200 years ago and planted them on the fertile wetland soil, and the favourable conditions let the palms spread into a forest of roughly seven mẫu (about 7 acres) - which is where the name comes from, even though the forest has since expanded to cover more than 100 hectares today. The water coconut is a palm species that grows in brackish waterways and tidal zones, and the wetland sits at the meeting point of three rivers - Hoài, Thu Bồn, and Đế Võng - whose brackish water and tropical climate make ideal growing conditions; the Cẩm Thanh wetland is one of the largest remaining stands of water coconut in central Vietnam, and beyond its scenic and cultural value, the forest plays a real ecological role, moderating the local climate, reducing soil erosion, and sheltering aquatic species and birds.\n\nDuring the resistance wars against France and then the United States, the dense palm cover made Cẩm Thanh one of Hội An's most important revolutionary bases, sheltering guerrilla fighters and hosting clandestine operations - the area saw heavy fighting, and the forest itself was targeted by bombing aimed at destroying that cover. One particularly striking episode, according to local accounts: on the night of 27 September 1964, local forces staged an uprising using rifles fashioned from coconut fronds and a show of noisy, large-scale troop movement to convince occupying forces that regular army units had arrived to liberate the area - a deception said to have helped the uprising succeed. Replanting after the war restored the forest, and the site was developed into an ecological and tourism resource from the 2000s onward. Today the wetland is navigated by basket boats through narrow waterways beneath interlocking palm fronds, and the experience - paddling through the tunnel of green vegetation with fish often visible in the clear water below - has become one of the most distinctive activity offerings near Hội An, alongside its recognised status as a wartime historical site.",
-    howToGetThere:
-      "The Coconut Forest is in Cẩm Thanh village, 3km from Hội An Ancient Town. From central Hội An, options include self-driving a rented motorbike (around 100,000-150,000 VND/day; some hotels offer bicycles free or for 20,000-30,000 VND/day), a taxi (roughly 100,000-150,000 VND one-way, about 10-15 minutes), cycling via Cửa Đại road into Cẩm Thanh (about 15-20 minutes, a genuinely enjoyable ride), or taking a boat from Bạch Đằng pier down the Thu Bồn River to the forest. From Đà Nẵng, follow the coastal Võ Nguyên Giáp - Trường Sa road into Hội An, a journey of about 45 minutes. The boat dock and ticket area are at the waterway entrance in the village. Tour operators in Hội An town offer half-day packages combining the forest with Trà Quế Village.",
-    whatToExpect:
-      "The tour begins in basket boats - round, traditional Vietnamese fishing vessels that seat 2-3 passengers - paddled by a local guide through the narrow palm-canopied waterways. A full round trip typically runs about 50 minutes, emerging at points into wider sections of the waterway where the guide performs the basket boat spinning - a traditional fishing technique turned performance where the guide spins the round boat in circles using a single oar, which can be fast enough that holding onto the boat's rim is a good idea. Fuller tour packages often add hands-on traditional fishing - trying lift nets (vó), cast nets, and fish traps (rập cá), sometimes with the chance to eat your catch on the spot - along with visits to small craft workshops in the area making coconut candy, woven coconut-leaf items (hats, baskets, mats), and coconut-based products like oil, milk, and soap. The water is clear and shallow, with fish, crabs, and water birds often visible from the boat. If you visit around the 8th lunar month, ripe water coconut fruit is sometimes available to try fresh on-site.",
-    travelTips:
-      "The Coconut Forest is one of Hội An's most photogenic experiences - the visual of the basket boat under the coconut canopy is distinctive and hard to replicate elsewhere in Vietnam. The tour has become somewhat performative (the spinning demonstration is entertainment rather than fishing) but the forest itself, its wartime history, and the basket boat navigation are genuine - local folk songs still commemorate how the forest was torn up by bombing during the war yet grew back regardless. The half-day combination of Trà Quế Village and the Coconut Forest, both reached by bicycle from Hội An town, is one of the best single mornings available in the area.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bảy Mẫu Coconut Forest Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bảy Mẫu Coconut Forest - 'Seven-Acre Forest,' also widely nicknamed 'Miền Tây thu nhỏ' ('Mini Mekong Delta') - is a wetland of water coconut palms (Nypa fruticans) in Cẩm Thanh village, 3km from Hội An Ancient Town and about 31km from Đà Nẵng, navigated by the traditional Vietnamese basket boat (thúng chai). The nickname comes from two things at once: the dense, winding network of canals and channels through the palms genuinely resembles the landscape of Vietnam's southwestern Mekong Delta, and activities here - basket boat rowing, traditional fishing, folk games - echo the culture of that region too.",
+          },
+          { type: "heading", text: "Origins of the Forest" },
+          {
+            type: "paragraph",
+            text: "According to local tradition, migrants from the Mekong Delta brought water coconut seedlings here around 200 years ago and planted them on the fertile wetland soil, and the favourable conditions let the palms spread into a forest of roughly seven mẫu (about 7 acres) - which is where the name comes from, even though the forest has since expanded to cover more than 100 hectares today. The water coconut is a palm species that grows in brackish waterways and tidal zones, and the wetland sits at the meeting point of three rivers - Hoài, Thu Bồn, and Đế Võng - whose brackish water and tropical climate make ideal growing conditions; the Cẩm Thanh wetland is one of the largest remaining stands of water coconut in central Vietnam, and beyond its scenic and cultural value, the forest plays a real ecological role, moderating the local climate, reducing soil erosion, and sheltering aquatic species and birds.",
+          },
+          { type: "heading", text: "Wartime History" },
+          {
+            type: "paragraph",
+            text: "During the resistance wars against France and then the United States, the dense palm cover made Cẩm Thanh one of Hội An's most important revolutionary bases, sheltering guerrilla fighters and hosting clandestine operations - the area saw heavy fighting, and the forest itself was targeted by bombing aimed at destroying that cover. One particularly striking episode, according to local accounts: on the night of 27 September 1964, local forces staged an uprising using rifles fashioned from coconut fronds and a show of noisy, large-scale troop movement to convince occupying forces that regular army units had arrived to liberate the area - a deception said to have helped the uprising succeed.",
+          },
+          { type: "heading", text: "The Forest Today" },
+          {
+            type: "paragraph",
+            text: "Replanting after the war restored the forest, and the site was developed into an ecological and tourism resource from the 2000s onward. Today the wetland is navigated by basket boats through narrow waterways beneath interlocking palm fronds, and the experience - paddling through the tunnel of green vegetation with fish often visible in the clear water below - has become one of the most distinctive activity offerings near Hội An, alongside its recognised status as a wartime historical site.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bảy Mẫu Coconut Forest",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Coconut Forest is in Cẩm Thanh village, 3km from Hội An Ancient Town. From central Hội An, options include self-driving a rented motorbike (around 100,000-150,000 VND/day; some hotels offer bicycles free or for 20,000-30,000 VND/day), a taxi (roughly 100,000-150,000 VND one-way, about 10-15 minutes), cycling via Cửa Đại road into Cẩm Thanh (about 15-20 minutes, a genuinely enjoyable ride), or taking a boat from Bạch Đằng pier down the Thu Bồn River to the forest. From Đà Nẵng, follow the coastal Võ Nguyên Giáp - Trường Sa road into Hội An, a journey of about 45 minutes.",
+          },
+          { type: "heading", text: "The Dock and Half-Day Tours" },
+          {
+            type: "paragraph",
+            text: "The boat dock and ticket area are at the waterway entrance in the village. Tour operators in Hội An town offer half-day packages combining the forest with Trà Quế Village.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bảy Mẫu Coconut Forest",
+        blocks: [
+          { type: "heading", text: "The Basket Boat Tour" },
+          {
+            type: "paragraph",
+            text: "The tour begins in basket boats - round, traditional Vietnamese fishing vessels that seat 2-3 passengers - paddled by a local guide through the narrow palm-canopied waterways. A full round trip typically runs about 50 minutes, emerging at points into wider sections of the waterway where the guide performs the basket boat spinning - a traditional fishing technique turned performance where the guide spins the round boat in circles using a single oar, which can be fast enough that holding onto the boat's rim is a good idea.",
+          },
+          { type: "heading", text: "Fishing and Wildlife" },
+          {
+            type: "paragraph",
+            text: "Fuller tour packages often add hands-on traditional fishing - trying lift nets (vó), cast nets, and fish traps (rập cá), sometimes with the chance to eat your catch on the spot - along with visits to small craft workshops in the area making coconut candy, woven coconut-leaf items (hats, baskets, mats), and coconut-based products like oil, milk, and soap. The water is clear and shallow, with fish, crabs, and water birds often visible from the boat. If you visit around the 8th lunar month, ripe water coconut fruit is sometimes available to try fresh on-site.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bảy Mẫu Coconut Forest",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Coconut Forest is one of Hội An's most photogenic experiences - the visual of the basket boat under the coconut canopy is distinctive and hard to replicate elsewhere in Vietnam. The tour has become somewhat performative (the spinning demonstration is entertainment rather than fishing) but the forest itself, its wartime history, and the basket boat navigation are genuine - local folk songs still commemorate how the forest was torn up by bombing during the war yet grew back regardless.",
+          },
+          {
+            type: "paragraph",
+            text: "The half-day combination of Trà Quế Village and the Coconut Forest, both reached by bicycle from Hội An town, is one of the best single mornings available in the area.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

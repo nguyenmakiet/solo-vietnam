@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const langbiangMountain: Location = {
   slug: "langbiang-mountain",
   name: "Langbiang Mountain",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 12.048102933200623,
@@ -45,14 +45,83 @@ export const langbiangMountain: Location = {
     "Only the ranger station partway up sells water and snacks, and there are no facilities at the true summit - carry enough water (2-3 litres per person) and energy snacks for the full round trip if trekking",
   ],
   content: {
-    intro:
-      "Langbiang is a small mountain range just north of Đà Lạt, within Bidoup-Núi Bà National Park, one of Vietnam's four key biodiversity centres. Its highest point, Núi Bà, reaches 2,167 metres, alongside the lower Núi Ông and Đồi Ra-đa (Radar Hill). Most visitors, though, don't actually reach Núi Bà's true summit - the far more common experience is Đồi Ra-đa, an easier, jeep-accessible viewpoint with cafes, flower gardens, a telescope area, and horse riding, offering sweeping views over Đà Lạt, the pine forests, and Đan Kia - Suối Vàng lake in the distance. Reaching Núi Bà's actual peak instead means a genuine trek through primary montane forest via a Bidoup-Núi Bà National Park ranger checkpoint, where hikers heading for the true summit need to register - a different, more demanding experience from the Radar Hill visit that most tour itineraries include. It's also worth setting expectations honestly: the true summit itself is little more than a small dirt clearing with a summit marker sign - the panoramic view over Đà Lạt is the entire reward, with no services, shade, or shelter up there, so it rewards the journey more than the destination itself. The name Langbiang comes from K'Ho legend: K'Lang and H'Biang were young lovers from feuding tribes whose deaths, according to the story, led their families to make peace - the mountain is named for them, and the legend remains central to the cultural identity of the K'Ho people who have lived on the Đà Lạt plateau for centuries.",
-    howToGetThere:
-      "Langbiang is about 12km north of Đà Lạt city centre in Lạc Dương District. By motorbike, the base station is approximately 25 minutes from central Đà Lạt on Highway 723 - just follow Google Maps. A local bus also runs to Langbiang, departing from around 48 Lạc Dương street in Đà Lạt roughly every 15-30 minutes between 5:30 AM and 7 PM, a workable budget option if you'd rather not ride yourself. Grab rides are available but return trips can be difficult to book from the remote base - motorbike or the bus are the more practical options. From the base, most visitors take a shared jeep up to Đồi Ra-đa (round trip, shared vehicle, around 120,000 VND/person) or walk the easier route on foot. Trekking to Núi Bà's true summit instead starts from the same general area but follows a separate, longer trail through a Bidoup-Núi Bà National Park checkpoint - ask locally about current access and conditions for this route specifically, since it's a genuinely different undertaking from the Radar Hill visit.",
-    whatToExpect:
-      "The base area has a K'Ho cultural village with traditional longhouses, a small museum, and craft and food stalls, plus horses available for photos or a short ride. Most visitors head up to Đồi Ra-đa, where cafes, flower gardens, a telescope viewing area, and clear views (on good days) over Đà Lạt and the surrounding pine forest await, reached easily by jeep or on foot. The separate trek toward Núi Bà's true summit climbs through pine forest, with noticeable changes in vegetation as you gain elevation, before transitioning to old-growth montane forest on the upper slopes - the final half of the climb gets genuinely steep (roughly 45 degrees in places) on a dirt trail that turns very slippery when wet, so this route is best avoided in rainy conditions. Camping at the summit itself isn't a good idea despite the temptation - it's cold, exposed to strong wind with no tree cover, and the clearing is small. Some hikers continue on from Núi Bà to Núi Ông (the 'male' peak), but there's no marked trail for that extension and it genuinely requires an experienced local guide - and there isn't much to see there beyond dense old-growth forest, so most visitors get the full experience from Radar Hill and the Núi Bà summit alone. Cloud inversions in the valleys below are common in the early morning, particularly in the dry season, and this is regarded as one of the better cloud-hunting spots near Đà Lạt.",
-    travelTips:
-      "Langbiang works for very different kinds of visitors depending on which experience you're after: Đồi Ra-đa is a relaxed, easy outing suitable for most fitness levels and travel styles, while the trek to Núi Bà's actual summit is a genuinely demanding full-day hike best suited to fit, well-prepared hikers. Decide which one you actually want before you go, since they're not the same trip. If sunrise and cloud-hunting are the goal, an early departure from Đà Lạt (around 4:30-5:00 AM) gets you there before the crowds and gives the best chance of catching the cloud inversion in the valleys below. Whichever route you take, this is one of the more rewarding outdoor half-days or full days available from Đà Lạt.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Langbiang Mountain Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Langbiang is a small mountain range just north of Đà Lạt, within Bidoup-Núi Bà National Park, one of Vietnam's four key biodiversity centres. Its highest point, Núi Bà, reaches 2,167 metres, alongside the lower Núi Ông and Đồi Ra-đa (Radar Hill).",
+          },
+          { type: "heading", text: "Đồi Ra-đa or the True Summit" },
+          {
+            type: "paragraph",
+            text: "Most visitors, though, don't actually reach Núi Bà's true summit - the far more common experience is Đồi Ra-đa, an easier, jeep-accessible viewpoint with cafes, flower gardens, a telescope area, and horse riding, offering sweeping views over Đà Lạt, the pine forests, and Đan Kia - Suối Vàng lake in the distance. Reaching Núi Bà's actual peak instead means a genuine trek through primary montane forest via a Bidoup-Núi Bà National Park ranger checkpoint, where hikers heading for the true summit need to register - a different, more demanding experience from the Radar Hill visit that most tour itineraries include. It's also worth setting expectations honestly: the true summit itself is little more than a small dirt clearing with a summit marker sign - the panoramic view over Đà Lạt is the entire reward, with no services, shade, or shelter up there, so it rewards the journey more than the destination itself.",
+          },
+          { type: "heading", text: "The K'Ho Legend of K'Lang and H'Biang" },
+          {
+            type: "paragraph",
+            text: "The name Langbiang comes from K'Ho legend: K'Lang and H'Biang were young lovers from feuding tribes whose deaths, according to the story, led their families to make peace - the mountain is named for them, and the legend remains central to the cultural identity of the K'Ho people who have lived on the Đà Lạt plateau for centuries.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Langbiang Mountain",
+        blocks: [
+          { type: "heading", text: "From Đà Lạt" },
+          {
+            type: "paragraph",
+            text: "Langbiang is about 12km north of Đà Lạt city centre in Lạc Dương District. By motorbike, the base station is approximately 25 minutes from central Đà Lạt on Highway 723 - just follow Google Maps. A local bus also runs to Langbiang, departing from around 48 Lạc Dương street in Đà Lạt roughly every 15-30 minutes between 5:30 AM and 7 PM, a workable budget option if you'd rather not ride yourself. Grab rides are available but return trips can be difficult to book from the remote base - motorbike or the bus are the more practical options.",
+          },
+          { type: "heading", text: "From the Base" },
+          {
+            type: "paragraph",
+            text: "From the base, most visitors take a shared jeep up to Đồi Ra-đa (round trip, shared vehicle, around 120,000 VND/person) or walk the easier route on foot. Trekking to Núi Bà's true summit instead starts from the same general area but follows a separate, longer trail through a Bidoup-Núi Bà National Park checkpoint - ask locally about current access and conditions for this route specifically, since it's a genuinely different undertaking from the Radar Hill visit.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Langbiang Mountain",
+        blocks: [
+          { type: "heading", text: "The Base and Đồi Ra-đa" },
+          {
+            type: "paragraph",
+            text: "The base area has a K'Ho cultural village with traditional longhouses, a small museum, and craft and food stalls, plus horses available for photos or a short ride. Most visitors head up to Đồi Ra-đa, where cafes, flower gardens, a telescope viewing area, and clear views (on good days) over Đà Lạt and the surrounding pine forest await, reached easily by jeep or on foot.",
+          },
+          { type: "heading", text: "Trekking to Núi Bà" },
+          {
+            type: "paragraph",
+            text: "The separate trek toward Núi Bà's true summit climbs through pine forest, with noticeable changes in vegetation as you gain elevation, before transitioning to old-growth montane forest on the upper slopes - the final half of the climb gets genuinely steep (roughly 45 degrees in places) on a dirt trail that turns very slippery when wet, so this route is best avoided in rainy conditions. Camping at the summit itself isn't a good idea despite the temptation - it's cold, exposed to strong wind with no tree cover, and the clearing is small. Some hikers continue on from Núi Bà to Núi Ông (the 'male' peak), but there's no marked trail for that extension and it genuinely requires an experienced local guide - and there isn't much to see there beyond dense old-growth forest, so most visitors get the full experience from Radar Hill and the Núi Bà summit alone.",
+          },
+          { type: "heading", text: "Cloud Inversions" },
+          {
+            type: "paragraph",
+            text: "Cloud inversions in the valleys below are common in the early morning, particularly in the dry season, and this is regarded as one of the better cloud-hunting spots near Đà Lạt.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Langbiang Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Langbiang works for very different kinds of visitors depending on which experience you're after: Đồi Ra-đa is a relaxed, easy outing suitable for most fitness levels and travel styles, while the trek to Núi Bà's actual summit is a genuinely demanding full-day hike best suited to fit, well-prepared hikers. Decide which one you actually want before you go, since they're not the same trip.",
+          },
+          {
+            type: "paragraph",
+            text: "If sunrise and cloud-hunting are the goal, an early departure from Đà Lạt (around 4:30-5:00 AM) gets you there before the crowds and gives the best chance of catching the cloud inversion in the valleys below. Whichever route you take, this is one of the more rewarding outdoor half-days or full days available from Đà Lạt.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

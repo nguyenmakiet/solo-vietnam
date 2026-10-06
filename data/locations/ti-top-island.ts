@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tiTopIsland: Location = {
   slug: "ti-top-island",
   name: "Ti Top Island",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.85912770557982,
@@ -39,14 +39,67 @@ export const tiTopIsland: Location = {
     "There's no overnight accommodation on the island - it's a day-stop only, visited as part of a cruise or day tour",
   ],
   content: {
-    intro:
-      "Ti Top Island sits in Cửa Lục Bay within Ha Long Bay, about 7-8km southeast of Bãi Cháy Harbour, opposite Sửng Sốt Cave on Bồ Hòn Island, with Dầm Nam Island to its west and Dầm Bắc Island to its north. The island covers about 3.7 hectares and holds two distinct draws: a crescent-shaped white sand beach and a 110-metre summit with 360° views over the bay. The island's name has changed several times. Local accounts associate the island's former names, Đảo Nghĩa Địa (Cemetery Island) and Đảo Hồng Thập Tự (Red Cross Island), with a reported 1905 shipwreck near Vũng Con Cóc, in which a French cargo ship lacking a harbour pilot struck submerged rocks; sailors who died in the wreck were said to be buried here, giving rise to these names. Later French-era maps of Ha Long Bay used yet another name, Cát Nàng. It reached its current name on January 22, 1962, when President Hồ Chí Minh brought Soviet cosmonaut Gherman Stepanovich Titov - the second human in space - to visit, and named the island in his honour to mark the occasion. Today it's one of the most visited stops on the bay and a well-known swimming beach, with the beach itself sometimes called Bãi Vầng Trăng (Crescent Moon Beach). The beach is small - around 500 square metres - but the sand is clean, the water calm, and the karst backdrop is unlike anywhere else. There's no accommodation directly on the island - it's a day-visit stop, though overnight cruises commonly include it on their route.",
-    howToGetThere:
-      "Ti Top Island is part of Ha Long Bay sightseeing Route 2 and is normally visited by cruise or boat from Tuần Châu International Marina or Hạ Long International Passenger Port. There is no road access to the island. Most cruise itineraries stop here for roughly 45 minutes to 1.5 hours, which is generally enough for both the beach and summit climb. Day-cruise tickets can be arranged through the relevant port or cruise operator.",
-    whatToExpect:
-      "The island has a clear two-part structure: the beach at the base and the summit at the top, connected by a roughly 400-450-step cement staircase with handrails and rest platforms along the way. The beach has basic visitor facilities and service shops, although the quality and availability of individual services can vary with operating conditions and crowd levels. The climb takes around 10-20 minutes at a comfortable pace, depending on fitness and how crowded the single-file staircase is - note that the same path handles both up and down traffic, which can cause congestion and queuing when cruise boats arrive in clusters. The summit has a pavilion and viewing platform. The panorama from the top - limestone karsts in every direction, cruise ships threading through the channels below, the bay's green-grey water - is the definitive Ha Long Bay aerial view. On a clear autumn morning, visibility extends across the entire bay.",
-    travelTips:
-      "Ti Top works best as part of an overnight cruise rather than a rushed day trip - if your cruise arrives before 9 AM, the beach is less crowded and the summit light is at its best. The combination of beach and summit in one stop makes it genuinely satisfying for the time allotted, though the shared up-and-down staircase means peak-time visits can involve real queuing. If you're choosing between Ti Top and Sung Sot Cave on a short itinerary, do both - they're close together on Route 2 and each offers something completely different.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ti Top Island Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ti Top Island sits in Cửa Lục Bay within Ha Long Bay, about 7-8km southeast of Bãi Cháy Harbour, opposite Sửng Sốt Cave on Bồ Hòn Island, with Dầm Nam Island to its west and Dầm Bắc Island to its north. The island covers about 3.7 hectares and holds two distinct draws: a crescent-shaped white sand beach and a 110-metre summit with 360° views over the bay.",
+          },
+          { type: "heading", text: "The Island's Names" },
+          {
+            type: "paragraph",
+            text: "The island's name has changed several times. Local accounts associate the island's former names, Đảo Nghĩa Địa (Cemetery Island) and Đảo Hồng Thập Tự (Red Cross Island), with a reported 1905 shipwreck near Vũng Con Cóc, in which a French cargo ship lacking a harbour pilot struck submerged rocks; sailors who died in the wreck were said to be buried here, giving rise to these names. Later French-era maps of Ha Long Bay used yet another name, Cát Nàng. It reached its current name on January 22, 1962, when President Hồ Chí Minh brought Soviet cosmonaut Gherman Stepanovich Titov - the second human in space - to visit, and named the island in his honour to mark the occasion.",
+          },
+          { type: "heading", text: "The Beach Today" },
+          {
+            type: "paragraph",
+            text: "Today it's one of the most visited stops on the bay and a well-known swimming beach, with the beach itself sometimes called Bãi Vầng Trăng (Crescent Moon Beach). The beach is small - around 500 square metres - but the sand is clean, the water calm, and the karst backdrop is unlike anywhere else. There's no accommodation directly on the island - it's a day-visit stop, though overnight cruises commonly include it on their route.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ti Top Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ti Top Island is part of Ha Long Bay sightseeing Route 2 and is normally visited by cruise or boat from Tuần Châu International Marina or Hạ Long International Passenger Port. There is no road access to the island. Most cruise itineraries stop here for roughly 45 minutes to 1.5 hours, which is generally enough for both the beach and summit climb. Day-cruise tickets can be arranged through the relevant port or cruise operator.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ti Top Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The island has a clear two-part structure: the beach at the base and the summit at the top, connected by a roughly 400-450-step cement staircase with handrails and rest platforms along the way. The beach has basic visitor facilities and service shops, although the quality and availability of individual services can vary with operating conditions and crowd levels.",
+          },
+          { type: "heading", text: "The Climb and the Summit" },
+          {
+            type: "paragraph",
+            text: "The climb takes around 10-20 minutes at a comfortable pace, depending on fitness and how crowded the single-file staircase is - note that the same path handles both up and down traffic, which can cause congestion and queuing when cruise boats arrive in clusters. The summit has a pavilion and viewing platform. The panorama from the top - limestone karsts in every direction, cruise ships threading through the channels below, the bay's green-grey water - is the definitive Ha Long Bay aerial view. On a clear autumn morning, visibility extends across the entire bay.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ti Top Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ti Top works best as part of an overnight cruise rather than a rushed day trip - if your cruise arrives before 9 AM, the beach is less crowded and the summit light is at its best. The combination of beach and summit in one stop makes it genuinely satisfying for the time allotted, though the shared up-and-down staircase means peak-time visits can involve real queuing. If you're choosing between Ti Top and Sung Sot Cave on a short itinerary, do both - they're close together on Route 2 and each offers something completely different.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

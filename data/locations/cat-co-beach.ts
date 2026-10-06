@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catCoBeach: Location = {
   slug: "cat-co-beach",
   name: "Cát Cò Beach",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: 20.71792329725481,
@@ -50,14 +50,81 @@ export const catCoBeach: Location = {
     "Bring a refillable water bottle, sunscreen, a wide-brimmed hat, and beach sandals with good grip if you're walking the wooden boardwalk. Pack out your own rubbish and skip single-use plastic where you can - it makes a real difference to how clean the beaches stay",
   ],
   content: {
-    intro:
-      "Cát Cò is a cluster of three small beaches on the southern headland of Cát Bà town, each set in a separate cove between limestone karst spurs that drop directly to the water - the name comes from the egret ('cò'), a gentle wading bird once common along this shore. Despite the numbering, the three beaches aren't simply arranged in a straight line one after another. Cát Cò 1 and Cát Cò 3 are connected by a cliffside boardwalk, while Cát Cò 2 is reached separately via a walkway behind the Flamingo hotel. Cát Cò 1 is the liveliest and most developed of the three - cafes, public toilets, water sports rental, and the biggest crowds, especially with weekend visitors from Hanoi. Cát Cò 2, reached via a walkway behind the Flamingo hotel, is smaller, quieter, and has gentler water that suits calm swimming better than the other two. Cát Cò 3, the furthest from the town centre but still walkable or reachable by electric cart, has deeper water and bigger waves, appeals to a more active crowd (banana boats, diving, kayaking out to nearby islets and caves in Lan Hà Bay), and sits near the upscale Flamingo Cát Bà Beach Resort. A wooden boardwalk along the cliffside specifically connects Cát Cò 1 and Cát Cò 3 - walking from 1 toward 3 is the direction that catches the sunset, not the reverse. The beaches are the primary swimming destination for visitors staying in Cát Bà town and are within easy walking distance of the town centre.",
-    howToGetThere:
-      "To reach Cát Bà island in the first place, take a ferry or the cable car from Hải Phòng. Once on the island, the Cát Cò beaches are roughly 5-10 minutes' walk from the centre of Cát Bà town, with electric transport available where permitted - vehicle access rules on the roads to the beaches can change at times, so check current access if you're not planning to walk. Cát Cò 2 is reached via a walkway behind the Flamingo hotel, and Cát Cò 3 via the connecting cliffside boardwalk. All three beaches are signposted, and the short distances between them make it realistic to visit all three in a single day.",
-    whatToExpect:
-      "Each beach is a separate cove of 100-200 metres of sand, relatively narrow (and noticeably narrower still at high tide), with karst cliffs forming the sides and the bay opening to the south. The water is calm in dry season - the southern orientation and the surrounding karst provide natural protection from the northeast monsoon swells that affect the island's exposed north shore. The three beaches have distinct personalities: Cát Cò 1 is the crescent-shaped, crowded heart of the area, with cafes, public toilets, and kayak or jet-ski rental for those who want to be in the middle of things. Cát Cò 2 is smaller and calmer, with gentler waves that make it the best of the three for a straightforward, relaxed swim. Cát Cò 3 is generally considered to have finer sand and a slight edge for photos over Cát Cò 1, along with deeper water and bigger waves suited to banana boats, diving, or kayaking out to nearby islets and sea caves in Lan Hà Bay, plus nearby resort dining, pools, and spa facilities. Kayaking is available at all three, but the scenery is best heading out from Cát Cò 3. Morning, especially before 7 AM, tends to have calmer water and better light for photos, and low tide in the morning makes it easier to walk out onto the rocks - just don't go too far, since the tide rises steadily through the day and you don't want to find your path back cut off by afternoon.",
-    travelTips:
-      "Cát Cò is the right beach for travellers who want a straightforward swim close to Cát Bà town - the combination of walking distance from accommodation, karst backdrop, and clean water makes it a solid half-morning or afternoon option, and 2-3 hours is enough to cover swimming, a bit of trekking along the boardwalk, and photos. If you want to see all three in a day, visit Cát Cò 2 separately first, then Cát Cò 1 and walk the cliffside boardwalk to Cát Cò 3 for the scenery and sunset. For a full beach day with more isolation, the hidden beaches inside Lan Hà Bay (accessible only by kayak) are considerably more scenic, but Cát Cò is the practical choice for a quick swim.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cát Cò Beach Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cát Cò is a cluster of three small beaches on the southern headland of Cát Bà town, each set in a separate cove between limestone karst spurs that drop directly to the water - the name comes from the egret ('cò'), a gentle wading bird once common along this shore. Despite the numbering, the three beaches aren't simply arranged in a straight line one after another. Cát Cò 1 and Cát Cò 3 are connected by a cliffside boardwalk, while Cát Cò 2 is reached separately via a walkway behind the Flamingo hotel.",
+          },
+          { type: "heading", text: "Cát Cò 1" },
+          {
+            type: "paragraph",
+            text: "Cát Cò 1 is the liveliest and most developed of the three - cafes, public toilets, water sports rental, and the biggest crowds, especially with weekend visitors from Hanoi.",
+          },
+          { type: "heading", text: "Cát Cò 2" },
+          {
+            type: "paragraph",
+            text: "Cát Cò 2, reached via a walkway behind the Flamingo hotel, is smaller, quieter, and has gentler water that suits calm swimming better than the other two.",
+          },
+          { type: "heading", text: "Cát Cò 3 and the Boardwalk" },
+          {
+            type: "paragraph",
+            text: "Cát Cò 3, the furthest from the town centre but still walkable or reachable by electric cart, has deeper water and bigger waves, appeals to a more active crowd (banana boats, diving, kayaking out to nearby islets and caves in Lan Hà Bay), and sits near the upscale Flamingo Cát Bà Beach Resort. A wooden boardwalk along the cliffside specifically connects Cát Cò 1 and Cát Cò 3 - walking from 1 toward 3 is the direction that catches the sunset, not the reverse. The beaches are the primary swimming destination for visitors staying in Cát Bà town and are within easy walking distance of the town centre.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cát Cò Beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "To reach Cát Bà island in the first place, take a ferry or the cable car from Hải Phòng. Once on the island, the Cát Cò beaches are roughly 5-10 minutes' walk from the centre of Cát Bà town, with electric transport available where permitted - vehicle access rules on the roads to the beaches can change at times, so check current access if you're not planning to walk.",
+          },
+          {
+            type: "paragraph",
+            text: "Cát Cò 2 is reached via a walkway behind the Flamingo hotel, and Cát Cò 3 via the connecting cliffside boardwalk. All three beaches are signposted, and the short distances between them make it realistic to visit all three in a single day.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cát Cò Beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Each beach is a separate cove of 100-200 metres of sand, relatively narrow (and noticeably narrower still at high tide), with karst cliffs forming the sides and the bay opening to the south. The water is calm in dry season - the southern orientation and the surrounding karst provide natural protection from the northeast monsoon swells that affect the island's exposed north shore.",
+          },
+          { type: "heading", text: "Three Beaches, Three Personalities" },
+          {
+            type: "paragraph",
+            text: "The three beaches have distinct personalities: Cát Cò 1 is the crescent-shaped, crowded heart of the area, with cafes, public toilets, and kayak or jet-ski rental for those who want to be in the middle of things. Cát Cò 2 is smaller and calmer, with gentler waves that make it the best of the three for a straightforward, relaxed swim. Cát Cò 3 is generally considered to have finer sand and a slight edge for photos over Cát Cò 1, along with deeper water and bigger waves suited to banana boats, diving, or kayaking out to nearby islets and sea caves in Lan Hà Bay, plus nearby resort dining, pools, and spa facilities.",
+          },
+          { type: "heading", text: "Kayaking and Timing" },
+          {
+            type: "paragraph",
+            text: "Kayaking is available at all three, but the scenery is best heading out from Cát Cò 3. Morning, especially before 7 AM, tends to have calmer water and better light for photos, and low tide in the morning makes it easier to walk out onto the rocks - just don't go too far, since the tide rises steadily through the day and you don't want to find your path back cut off by afternoon.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cát Cò Beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cát Cò is the right beach for travellers who want a straightforward swim close to Cát Bà town - the combination of walking distance from accommodation, karst backdrop, and clean water makes it a solid half-morning or afternoon option, and 2-3 hours is enough to cover swimming, a bit of trekking along the boardwalk, and photos. If you want to see all three in a day, visit Cát Cò 2 separately first, then Cát Cò 1 and walk the cliffside boardwalk to Cát Cò 3 for the scenery and sunset. For a full beach day with more isolation, the hidden beaches inside Lan Hà Bay (accessible only by kayak) are considerably more scenic, but Cát Cò is the practical choice for a quick swim.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

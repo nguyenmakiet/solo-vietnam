@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dalatRailwayStation: Location = {
   slug: "dalat-railway-station",
   name: "Đà Lạt Railway Station",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.941882324564023,
@@ -53,14 +53,77 @@ export const dalatRailwayStation: Location = {
     "The station building's Art Deco interior - original wooden ticket windows, vintage benches, tiled floors, and a small historical photo/documentary display - is worth 20 minutes even without taking the train.",
   ],
   content: {
-    intro:
-      "Đà Lạt Railway Station was built between 1932 and 1938 by French architects Moncet and Revéron as the terminus of the Tháp Chàm - Đà Lạt railway, a mountain line ordered by Indochina Governor-General Paul Doumer starting in 1908. The full railway ran 84km with a dramatic 1,500m elevation gain, including 12 stations, 5 tunnels, and 16km of rack-and-pinion track - a technology at the time shared only with Switzerland, climbing an average 12% gradient to reach the plateau. The station building itself is widely considered the most elegant in Indochina, and holds several distinctions: the only railway station in the Central Highlands, Vietnam's highest at 1,500m elevation, and the only one that once ran a steam-powered rack-and-pinion locomotive. Its architecture - 66.5m long, 11.4m wide, 11m high, with a curved roofline - is shaped to echo both the three peaks of Langbiang Mountain and the traditional longhouse (nhà rông) roofs of Central Highlands ethnic architecture, fusing French colonial design with local form. A large facade clock is set to the date Dr. Alexandre Yersin discovered the Đà Lạt plateau. The railway was destroyed during wartime in 1972, briefly restored after 1975, then shut down again due to poor economic viability - most of the original track and stations were dismantled or abandoned. The Đà Lạt terminus survived and was recognised as a national historical-cultural relic in 2001. Today, only a short 7km stretch survives, turning what was once an engineering achievement into one of Vietnam's most nostalgic train journeys, running on vintage wooden carriages to Trại Mát village.",
-    howToGetThere:
-      "The station is about 1-3km from Đà Lạt's central market on Quang Trung Street (sources vary slightly on exact distance), easily reached by motorbike, car, taxi, or Grab, or walkable from central accommodation. The tourist train to Trại Mát runs 5 scheduled departures daily plus an evening service, though posted timetables don't always match actual departure times in practice - arriving at the station directly to confirm and buy tickets is more reliable than planning solely around the online schedule.",
-    whatToExpect:
-      "The station interior preserves original wooden ticket windows, period benches, vintage signage, and tiled floors largely unchanged since 1938, along with a small historical photo and documentary display on the original railway. Ticket counters 1 and 2 sell grounds-only entry; counter 3 sells train tickets (which include free station entry). The train itself uses old wooden carriages that rock noticeably at speed, with onboard saxophone or violin music and complimentary warm artichoke tea, making the 25-30 minute journey to Trại Mát feel deliberately old-fashioned rather than purely functional. As the train leaves the station, colonial buildings quickly give way to vegetable farms, greenhouses, and pine-covered hills - a slow reminder that Đà Lạt has always been more agricultural than urban. Unlike modern trains, nobody boards this one because it's the fastest way anywhere; most passengers spend the journey looking out the windows, taking photos, or simply enjoying how slowly it moves through the outskirts of the city. At Trại Mát, a 30-40 minute stop allows time to walk to Linh Phước Pagoda ('chùa Ve Chai'), about 5 minutes away, before the train returns - or some travellers taxi back instead of waiting.",
-    travelTips:
-      "The station is worth visiting purely as architecture even without taking the train - one of the most elegant colonial structures in the Central Highlands, with several genuine historical 'firsts' attached to it. Whether the train ride itself is worth it depends on your trip pace: if you have time to spare and want a slow, nostalgic experience tied to a railway era that's otherwise vanished from Đà Lạt, it delivers exactly that. If you're tight on time with only a day or two in the city, it's a reasonable one to deprioritise in favour of other sights, since the appeal here is atmosphere rather than spectacle. Combine the train with Linh Phước Pagoda at Trại Mát for a half-morning excursion, and budget about 45 minutes for the station alone or roughly 2.5 hours for the full round-trip with pagoda visit.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Đà Lạt Railway Station Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đà Lạt Railway Station was built between 1932 and 1938 by French architects Moncet and Revéron as the terminus of the Tháp Chàm - Đà Lạt railway, a mountain line ordered by Indochina Governor-General Paul Doumer starting in 1908. The full railway ran 84km with a dramatic 1,500m elevation gain, including 12 stations, 5 tunnels, and 16km of rack-and-pinion track - a technology at the time shared only with Switzerland, climbing an average 12% gradient to reach the plateau.",
+          },
+          { type: "heading", text: "The Station Building" },
+          {
+            type: "paragraph",
+            text: "The station building itself is widely considered the most elegant in Indochina, and holds several distinctions: the only railway station in the Central Highlands, Vietnam's highest at 1,500m elevation, and the only one that once ran a steam-powered rack-and-pinion locomotive. Its architecture - 66.5m long, 11.4m wide, 11m high, with a curved roofline - is shaped to echo both the three peaks of Langbiang Mountain and the traditional longhouse (nhà rông) roofs of Central Highlands ethnic architecture, fusing French colonial design with local form. A large facade clock is set to the date Dr. Alexandre Yersin discovered the Đà Lạt plateau.",
+          },
+          { type: "heading", text: "Decline and Recognition" },
+          {
+            type: "paragraph",
+            text: "The railway was destroyed during wartime in 1972, briefly restored after 1975, then shut down again due to poor economic viability - most of the original track and stations were dismantled or abandoned. The Đà Lạt terminus survived and was recognised as a national historical-cultural relic in 2001. Today, only a short 7km stretch survives, turning what was once an engineering achievement into one of Vietnam's most nostalgic train journeys, running on vintage wooden carriages to Trại Mát village.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Đà Lạt Railway Station",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The station is about 1-3km from Đà Lạt's central market on Quang Trung Street (sources vary slightly on exact distance), easily reached by motorbike, car, taxi, or Grab, or walkable from central accommodation. The tourist train to Trại Mát runs 5 scheduled departures daily plus an evening service, though posted timetables don't always match actual departure times in practice - arriving at the station directly to confirm and buy tickets is more reliable than planning solely around the online schedule.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Đà Lạt Railway Station",
+        blocks: [
+          { type: "heading", text: "Inside the Station" },
+          {
+            type: "paragraph",
+            text: "The station interior preserves original wooden ticket windows, period benches, vintage signage, and tiled floors largely unchanged since 1938, along with a small historical photo and documentary display on the original railway. Ticket counters 1 and 2 sell grounds-only entry; counter 3 sells train tickets (which include free station entry).",
+          },
+          { type: "heading", text: "The Tourist Train" },
+          {
+            type: "paragraph",
+            text: "The train itself uses old wooden carriages that rock noticeably at speed, with onboard saxophone or violin music and complimentary warm artichoke tea, making the 25-30 minute journey to Trại Mát feel deliberately old-fashioned rather than purely functional. As the train leaves the station, colonial buildings quickly give way to vegetable farms, greenhouses, and pine-covered hills - a slow reminder that Đà Lạt has always been more agricultural than urban. Unlike modern trains, nobody boards this one because it's the fastest way anywhere; most passengers spend the journey looking out the windows, taking photos, or simply enjoying how slowly it moves through the outskirts of the city.",
+          },
+          { type: "heading", text: "The Trại Mát Stop" },
+          {
+            type: "paragraph",
+            text: "At Trại Mát, a 30-40 minute stop allows time to walk to Linh Phước Pagoda ('chùa Ve Chai'), about 5 minutes away, before the train returns - or some travellers taxi back instead of waiting.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Đà Lạt Railway Station",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The station is worth visiting purely as architecture even without taking the train - one of the most elegant colonial structures in the Central Highlands, with several genuine historical 'firsts' attached to it. Whether the train ride itself is worth it depends on your trip pace: if you have time to spare and want a slow, nostalgic experience tied to a railway era that's otherwise vanished from Đà Lạt, it delivers exactly that. If you're tight on time with only a day or two in the city, it's a reasonable one to deprioritise in favour of other sights, since the appeal here is atmosphere rather than spectacle.",
+          },
+          {
+            type: "paragraph",
+            text: "Combine the train with Linh Phước Pagoda at Trại Mát for a half-morning excursion, and budget about 45 minutes for the station alone or roughly 2.5 hours for the full round-trip with pagoda visit.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

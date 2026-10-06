@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoanKiemLake: Location = {
   slug: "hoan-kiem-lake",
   name: "Hoan Kiem Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.027833338357237,
@@ -51,14 +51,77 @@ export const hoanKiemLake: Location = {
     "Wear comfortable walking shoes - you'll cover real distance around the perimeter. If visiting Ngọc Sơn Temple or other nearby shrines, dress modestly (covered shoulders/knees).",
   ],
   content: {
-    intro:
-      "Hoan Kiem Lake - Lake of the Returned Sword (Hán-Việt: 湖還劍) - sits at the geographical and symbolic centre of Hanoi, a roughly 12-hectare basin (700m by 200m, 1-1.4m deep) in Hoàn Kiếm district surrounded by the city's most historic streets. Historically known as Hồ Lục Thủy (Green Water Lake) for its colour, and later Hồ Thủy Quân (Naval Lake) when kings used it to review naval troops, the lake took its current name in the early 15th century from the legend of Emperor Lê Lợi: after using a magic sword to defeat Ming Chinese occupiers and founding a new dynasty in 1428, he was boating on the lake when a Golden Turtle surfaced and asked him to return the sword to its divine owner, Long Quân - he did, and the turtle vanished beneath the water. The lake's real turtles - the critically endangered Hồ Gươm softshell species (Rafetus leloii) - were genuine animals documented for generations, with the last known living individual, affectionately called 'Cụ Rùa', dying in 2016; preserved specimens are displayed today in Ngọc Sơn Temple and the Hanoi Museum. The small Turtle Tower visible on the lake's central island, despite its strong association with the legend, is a much newer addition - built in 1886 by a local figure named Bá hộ Kim with unrelated original intentions, and only later folded into the lake's mythology. Hoan Kiem functions as Hanoi's primary public living room: morning exercise ground, weekend gathering place, central navigation landmark, and the backdrop against which the city's public life has unfolded for centuries.",
-    howToGetThere:
-      "Hoan Kiem Lake is the central landmark of Hanoi's Old Quarter and within walking distance of virtually every hotel in the Hoàn Kiếm district. From the main backpacker area around Tạ Hiện street, it's a 5-minute walk south. Motorbike rental is the most flexible option for getting around Hanoi generally; Xanh GSM electric taxis offer a comfortable, reasonably priced alternative; city buses (routes 04, 08, 09, 11, 14, 18, 23, 31, 34, 36, 40) all stop near the lake. The lake is the primary navigation reference point for the entire Old Quarter - directions in central Hanoi are commonly given relative to it.",
-    whatToExpect:
-      "The lake perimeter is a continuous shaded walkway (about 1.7km, 20-25 minutes) lined with trees, benches, and views across the water to the Turtle Tower and Ngọc Sơn Temple. The northern end connects via the red Huc Bridge to Ngọc Sơn Temple island - one of the city's most photographed scenes, especially in morning light from the east side of the lake. The surrounding streets change character dramatically between weekday and weekend: Friday through Sunday nights (6 PM-6 AM), the roads close to traffic and become a pedestrian zone filled with street food, performers, games, and large crowds. Few places in Vietnam bring together tourists, students, office workers, retirees, street performers, families, and photographers as naturally as Hoan Kiem Lake does on a weekend evening - the lake's central location and centuries of public use have made it a default gathering point for nearly every demographic in the city at once, something most planned public squares never quite achieve. Note that the once-iconic 'Hàm Cá Mập' building near the lake's north end has been demolished and the area is currently under redevelopment.",
-    travelTips:
-      "Hoan Kiem Lake rewards multiple visits at different times rather than one single stop - the early morning exercise culture (5-8 AM), the midday tourist activity, and the weekend evening pedestrian zone are three genuinely different experiences of the same place. The lake also works well as an orientation point for first-time visitors to Hanoi: walking the perimeter on arrival builds a reliable mental map of the Old Quarter. Ngọc Sơn Temple is worth the modest entrance fee for historical context on the lake's legend, including a preserved turtle specimen inside. August-October (autumn) offers the most comfortable weather for an extended walk around the lake.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hoan Kiem Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoan Kiem Lake - Lake of the Returned Sword (Hán-Việt: 湖還劍) - sits at the geographical and symbolic centre of Hanoi, a roughly 12-hectare basin (700m by 200m, 1-1.4m deep) in Hoàn Kiếm district surrounded by the city's most historic streets.",
+          },
+          { type: "heading", text: "Names and the Lake's Turtles" },
+          {
+            type: "paragraph",
+            text: "Historically known as Hồ Lục Thủy (Green Water Lake) for its colour, and later Hồ Thủy Quân (Naval Lake) when kings used it to review naval troops, the lake took its current name in the early 15th century from the legend of Emperor Lê Lợi: after using a magic sword to defeat Ming Chinese occupiers and founding a new dynasty in 1428, he was boating on the lake when a Golden Turtle surfaced and asked him to return the sword to its divine owner, Long Quân - he did, and the turtle vanished beneath the water. The lake's real turtles - the critically endangered Hồ Gươm softshell species (Rafetus leloii) - were genuine animals documented for generations, with the last known living individual, affectionately called 'Cụ Rùa', dying in 2016; preserved specimens are displayed today in Ngọc Sơn Temple and the Hanoi Museum.",
+          },
+          { type: "heading", text: "The Turtle Tower" },
+          {
+            type: "paragraph",
+            text: "The small Turtle Tower visible on the lake's central island, despite its strong association with the legend, is a much newer addition - built in 1886 by a local figure named Bá hộ Kim with unrelated original intentions, and only later folded into the lake's mythology.",
+          },
+          { type: "heading", text: "Hanoi's Public Living Room" },
+          {
+            type: "paragraph",
+            text: "Hoan Kiem functions as Hanoi's primary public living room: morning exercise ground, weekend gathering place, central navigation landmark, and the backdrop against which the city's public life has unfolded for centuries.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hoan Kiem Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoan Kiem Lake is the central landmark of Hanoi's Old Quarter and within walking distance of virtually every hotel in the Hoàn Kiếm district. From the main backpacker area around Tạ Hiện street, it's a 5-minute walk south. Motorbike rental is the most flexible option for getting around Hanoi generally; Xanh GSM electric taxis offer a comfortable, reasonably priced alternative; city buses (routes 04, 08, 09, 11, 14, 18, 23, 31, 34, 36, 40) all stop near the lake. The lake is the primary navigation reference point for the entire Old Quarter - directions in central Hanoi are commonly given relative to it.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hoan Kiem Lake",
+        blocks: [
+          { type: "heading", text: "The Perimeter Walk and Huc Bridge" },
+          {
+            type: "paragraph",
+            text: "The lake perimeter is a continuous shaded walkway (about 1.7km, 20-25 minutes) lined with trees, benches, and views across the water to the Turtle Tower and Ngọc Sơn Temple. The northern end connects via the red Huc Bridge to Ngọc Sơn Temple island - one of the city's most photographed scenes, especially in morning light from the east side of the lake.",
+          },
+          { type: "heading", text: "Weekend Streets and Recent Changes" },
+          {
+            type: "paragraph",
+            text: "The surrounding streets change character dramatically between weekday and weekend: Friday through Sunday nights (6 PM-6 AM), the roads close to traffic and become a pedestrian zone filled with street food, performers, games, and large crowds. Few places in Vietnam bring together tourists, students, office workers, retirees, street performers, families, and photographers as naturally as Hoan Kiem Lake does on a weekend evening - the lake's central location and centuries of public use have made it a default gathering point for nearly every demographic in the city at once, something most planned public squares never quite achieve. Note that the once-iconic 'Hàm Cá Mập' building near the lake's north end has been demolished and the area is currently under redevelopment.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hoan Kiem Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hoan Kiem Lake rewards multiple visits at different times rather than one single stop - the early morning exercise culture (5-8 AM), the midday tourist activity, and the weekend evening pedestrian zone are three genuinely different experiences of the same place. The lake also works well as an orientation point for first-time visitors to Hanoi: walking the perimeter on arrival builds a reliable mental map of the Old Quarter.",
+          },
+          {
+            type: "paragraph",
+            text: "Ngọc Sơn Temple is worth the modest entrance fee for historical context on the lake's legend, including a preserved turtle specimen inside. August-October (autumn) offers the most comfortable weather for an extended walk around the lake.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

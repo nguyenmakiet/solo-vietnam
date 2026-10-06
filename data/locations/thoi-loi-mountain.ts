@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thoiLoiMountain: Location = {
   slug: "thoi-loi-mountain",
   name: "Núi Thới Lới",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.382293884994116,
@@ -58,14 +58,77 @@ export const thoiLoiMountain: Location = {
     "Stay well back from the crater rim and cliff edges - there are no railings or barriers in most areas, the wind can be strong enough to affect your balance, and the rock can be slippery",
   ],
   content: {
-    intro:
-      "Núi Thới Lới is the highest point on Lý Sơn at 169 meters and the island's largest extinct volcanic crater, formed by an eruption millions of years ago along with the four other craters that shaped the island. The crater has a base diameter of roughly 1.4km and a mouth around 350m across; its bowl now holds the island's only freshwater lake, along with an open grassy pasture where cattle graze - a peaceful, pastoral scene in sharp contrast to the rugged, wind-scoured rim above. Local legend holds that this bowl was once a dense primeval forest fed by a stream called Suối Chình, with trees too large for two people to wrap their arms around; the forest and stream have since disappeared, though tradition also credits centuries of wave erosion at the mountain's base with carving out the cave that later became the well-known Chùa Hang. The summit is capped with a 20-meter national flag tower, built in 2013 with contributions from students and businesses across the country and oriented to face the Hoàng Sa (Paracel) Islands to the northeast - a deliberate statement of sovereignty in an area of ongoing territorial dispute. From the rim of the crater, the entire island is visible: garlic and onion fields spreading across the flat sections below like a patchwork chessboard, a cluster of fishing villages along the shore, Đảo Bé floating on the water to the west, and Hang Câu beach directly at the mountain's base. On clear mornings the view extends across open sea in every direction.",
-    howToGetThere:
-      "From the ferry port in An Vĩnh, head east along the coastal road toward An Hải - the base of Thới Lới is roughly 4-5km away, about 15-20 minutes by motorbike. The road to Núi Thới Lới branches inland and is signposted; most guesthouses can give directions. The road up the mountain itself is steep and narrow with some sharp bends - a manual/semi-automatic motorbike is preferable to a scooter, and experienced riders can take it to the base of the summit trail, from which it's a 20-30 minute walk to the top. Less confident riders should park at the base and walk the whole way. Motorbike rental on the island runs around 150,000 VND/day; an electric cart is available for around 300,000 VND per trip if you'd rather not drive.",
-    whatToExpect:
-      "The summit area around the flag tower is open and paved, with clear views in all directions and the island's garlic fields spread out below like a colourful chessboard. A trail continues from the tower down into the caldera - the interior is quieter, holds the island's only freshwater lake, and gives a better sense of the volcanic geology than the summit itself, with cattle often grazing on the grassy bowl floor. Hang Câu beach is directly below on the northern side and reachable in a few minutes by motorbike after descending. The climb is not technically difficult but the path has some steep, rocky, and exposed sections, with no railings or barriers in most spots and strong wind common near the rim - keep a safe distance from the edges. There are no food stalls, shade structures, or toilet facilities at the summit, so come prepared, and avoid visiting alone during quiet periods given reported harassment incidents at less busy times.",
-    travelTips:
-      "Núi Thới Lới and Hang Câu are always paired - climb the mountain first, then ride down to the beach for a swim. The eastern side of the island (Tò Vò Gate, Chùa Đục, garlic fields) forms a separate cluster. Most visitors split the island into two half-days along these two natural groupings. If you want the summit largely to yourself, aim for dawn before day-trippers arrive, though it's worth going with at least one other person rather than alone given past harassment reports during quiet hours. Overnight camping and a small BBQ at the summit is also possible for a sunrise view without the crowds - bring your own gear or rent locally, and pack out all rubbish afterward.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Núi Thới Lới Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Thới Lới is the highest point on Lý Sơn at 169 meters and the island's largest extinct volcanic crater, formed by an eruption millions of years ago along with the four other craters that shaped the island. The crater has a base diameter of roughly 1.4km and a mouth around 350m across; its bowl now holds the island's only freshwater lake, along with an open grassy pasture where cattle graze - a peaceful, pastoral scene in sharp contrast to the rugged, wind-scoured rim above.",
+          },
+          { type: "heading", text: "The Legend of the Crater" },
+          {
+            type: "paragraph",
+            text: "Local legend holds that this bowl was once a dense primeval forest fed by a stream called Suối Chình, with trees too large for two people to wrap their arms around; the forest and stream have since disappeared, though tradition also credits centuries of wave erosion at the mountain's base with carving out the cave that later became the well-known Chùa Hang.",
+          },
+          { type: "heading", text: "The Flag Tower and the View" },
+          {
+            type: "paragraph",
+            text: "The summit is capped with a 20-meter national flag tower, built in 2013 with contributions from students and businesses across the country and oriented to face the Hoàng Sa (Paracel) Islands to the northeast - a deliberate statement of sovereignty in an area of ongoing territorial dispute. From the rim of the crater, the entire island is visible: garlic and onion fields spreading across the flat sections below like a patchwork chessboard, a cluster of fishing villages along the shore, Đảo Bé floating on the water to the west, and Hang Câu beach directly at the mountain's base. On clear mornings the view extends across open sea in every direction.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Núi Thới Lới",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From the ferry port in An Vĩnh, head east along the coastal road toward An Hải - the base of Thới Lới is roughly 4-5km away, about 15-20 minutes by motorbike. The road to Núi Thới Lới branches inland and is signposted; most guesthouses can give directions.",
+          },
+          { type: "heading", text: "The Road Up and Rentals" },
+          {
+            type: "paragraph",
+            text: "The road up the mountain itself is steep and narrow with some sharp bends - a manual/semi-automatic motorbike is preferable to a scooter, and experienced riders can take it to the base of the summit trail, from which it's a 20-30 minute walk to the top. Less confident riders should park at the base and walk the whole way. Motorbike rental on the island runs around 150,000 VND/day; an electric cart is available for around 300,000 VND per trip if you'd rather not drive.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Núi Thới Lới",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The summit area around the flag tower is open and paved, with clear views in all directions and the island's garlic fields spread out below like a colourful chessboard. A trail continues from the tower down into the caldera - the interior is quieter, holds the island's only freshwater lake, and gives a better sense of the volcanic geology than the summit itself, with cattle often grazing on the grassy bowl floor. Hang Câu beach is directly below on the northern side and reachable in a few minutes by motorbike after descending.",
+          },
+          { type: "heading", text: "Safety and Facilities" },
+          {
+            type: "paragraph",
+            text: "The climb is not technically difficult but the path has some steep, rocky, and exposed sections, with no railings or barriers in most spots and strong wind common near the rim - keep a safe distance from the edges. There are no food stalls, shade structures, or toilet facilities at the summit, so come prepared, and avoid visiting alone during quiet periods given reported harassment incidents at less busy times.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Núi Thới Lới",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Thới Lới and Hang Câu are always paired - climb the mountain first, then ride down to the beach for a swim. The eastern side of the island (Tò Vò Gate, Chùa Đục, garlic fields) forms a separate cluster. Most visitors split the island into two half-days along these two natural groupings.",
+          },
+          { type: "heading", text: "Sunrise and Camping" },
+          {
+            type: "paragraph",
+            text: "If you want the summit largely to yourself, aim for dawn before day-trippers arrive, though it's worth going with at least one other person rather than alone given past harassment reports during quiet hours. Overnight camping and a small BBQ at the summit is also possible for a sunrise view without the crowds - bring your own gear or rent locally, and pack out all rubbish afterward.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
