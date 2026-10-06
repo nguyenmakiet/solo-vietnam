@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const canGioMonkeyIsland: Location = {
   slug: "can-gio-monkey-island",
   name: "Cần Giờ Monkey Island",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.409854763930516,
@@ -51,14 +51,88 @@ export const canGioMonkeyIsland: Location = {
     "Don't shout or make loud noises around the monkeys. If you're travelling alone, stay aware of your surroundings and keep your belongings secured at all times",
   ],
   content: {
-    intro:
-      "Monkey Island (Đảo Khỉ) is a river island within the Cần Giờ Mangrove Biosphere Reserve, approximately 50-60km south of central Ho Chi Minh City. The reserve - one of Southeast Asia's largest mangrove forests and a UNESCO-recognized biosphere since 2000 - was heavily deforested during the Vietnam War through the use of Agent Orange and has been substantially replanted since the 1980s in one of the largest ecological restoration projects in the country. Within the reserve, a population of long-tailed macaques (khỉ đuôi dài) - now numbering over 2,000 individuals, up from a much smaller founding population - has established on the island and surrounding mangrove areas, living in semi-wild conditions with a level of habituation to human visitors that allows close observation, typically in troops of 20-50 at a time. The island is reached by motorized boat through the Cần Giờ waterway network - the boat journey through the dense mangrove channels is itself a significant part of the experience. Nearby, reachable by the same canoe network, sits Rừng Sác War Base (Chiến Khu Rừng Sác) - a separate historical site marking where a special forces division operated a guerrilla base from 1966 until the war's end in 1975, now recreated with guerrilla huts, hidden bunkers, and sampans among the mangroves. A third nearby site, the Vàm Sát ecological tourism area, adds a bat swamp (Đầm Dơi), crab fishing, and a viewing tower (Tháp Tang Bồng) with panoramic views over the mangroves. All three - Đảo Khỉ, Rừng Sác War Base, and Vàm Sát - are commonly combined into a single day trip, even though they are distinct attractions rather than one and the same.",
-    howToGetThere:
-      "Cần Giờ district is 50-60km south of central Ho Chi Minh City, connected by the Bình Khánh ferry crossing from Nhà Bè district. By motorbike or car, the journey from District 1 takes about 1.5 - 2 hours including the ferry crossing. On a budget, city bus route 20 (Bến Thành - Nhà Bè) runs to the Bình Khánh ferry pier; after crossing, bus route 90 continues out to Cần Giờ beach, with a stop near Lâm Viên/Đảo Khỉ - ask the driver to call out the stop. From the Cần Giờ area, Monkey Island is reached by organized boat tour from the Lý Nhơn or Cần Thạnh area - independent access by private boat is possible but most visitors join organized tours. Day tours from HCMC are the most common approach, departing from District 1 in the morning and returning by late afternoon. Tour prices typically include transport, ferry, boat, guide, and island entry, and often bundle in Rừng Sác War Base or Vàm Sát as a second stop on the same waterway network. If driving yourself, stick to the speed limit (under 50km/h) on Rừng Sác road, which has regular traffic police checkpoints.",
-    whatToExpect:
-      "The boat journey through narrow mangrove channels takes 20-30 minutes from the main Cần Giờ waterway to the island. On the island, troops of long-tailed macaques move freely through the tree canopy and along the river banks, with several troops of 20-50 individuals commonly encountered during a visit. The monkeys approach closely and interact with visitors, particularly around food. There are basic facilities on the island including a small performance area where trained monkeys demonstrate tasks (cycling, balancing, juggling routines with a trainer), scheduled at certain times mainly on weekends and holidays - a common component of Vietnamese wildlife attractions that may not suit all visitors. A crocodile conservation area also sits on-site, with a paid crocodile-feeding activity available for those interested. The mangrove environment surrounding the island is dense, atmospheric, and home to water birds including egrets and kingfishers. Many visitors continue on by canoe to Rừng Sác War Base afterward, where the recreated wartime camp gives a very different, more solemn counterpoint to the monkeys.",
-    travelTips:
-      "Cần Giờ Monkey Island is the right choice for HCMC day trips when you want something genuinely different from the city rather than another war museum or street food tour. The mangrove biosphere reserve context - the scale of the reforestation, the waterway ecosystem, the crocodile population, and the nearby Rừng Sác War Base - gives the visit more depth than the monkeys alone. The monkeys are entertaining and the boat journey is scenic, but the most interesting thing about Cần Giờ is actually the ecological recovery story: what was a chemically defoliated landscape in the 1970s is now a functioning biosphere reserve with monitor lizards, crocodiles, and a recovering mangrove ecosystem. The UNESCO designation is earned rather than honorary. If you have a full day, pairing Đảo Khỉ with Rừng Sác War Base, Cần Giờ's black-sand beach, or the whale-worship shrine at Lăng Ông Thủy Tướng (home to a preserved 12-metre whale skeleton) rounds out the area's mix of nature, history, and local culture.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cần Giờ Monkey Island Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Monkey Island (Đảo Khỉ) is a river island within the Cần Giờ Mangrove Biosphere Reserve, approximately 50-60km south of central Ho Chi Minh City. The reserve - one of Southeast Asia's largest mangrove forests and a UNESCO-recognized biosphere since 2000 - was heavily deforested during the Vietnam War through the use of Agent Orange and has been substantially replanted since the 1980s in one of the largest ecological restoration projects in the country.",
+          },
+          { type: "heading", text: "The Macaques" },
+          {
+            type: "paragraph",
+            text: "Within the reserve, a population of long-tailed macaques (khỉ đuôi dài) - now numbering over 2,000 individuals, up from a much smaller founding population - has established on the island and surrounding mangrove areas, living in semi-wild conditions with a level of habituation to human visitors that allows close observation, typically in troops of 20-50 at a time. The island is reached by motorized boat through the Cần Giờ waterway network - the boat journey through the dense mangrove channels is itself a significant part of the experience.",
+          },
+          { type: "heading", text: "Rừng Sác War Base and Vàm Sát" },
+          {
+            type: "paragraph",
+            text: "Nearby, reachable by the same canoe network, sits Rừng Sác War Base (Chiến Khu Rừng Sác) - a separate historical site marking where a special forces division operated a guerrilla base from 1966 until the war's end in 1975, now recreated with guerrilla huts, hidden bunkers, and sampans among the mangroves. A third nearby site, the Vàm Sát ecological tourism area, adds a bat swamp (Đầm Dơi), crab fishing, and a viewing tower (Tháp Tang Bồng) with panoramic views over the mangroves. All three - Đảo Khỉ, Rừng Sác War Base, and Vàm Sát - are commonly combined into a single day trip, even though they are distinct attractions rather than one and the same.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cần Giờ Monkey Island",
+        blocks: [
+          { type: "heading", text: "Getting to Cần Giờ" },
+          {
+            type: "paragraph",
+            text: "Cần Giờ district is 50-60km south of central Ho Chi Minh City, connected by the Bình Khánh ferry crossing from Nhà Bè district. By motorbike or car, the journey from District 1 takes about 1.5 - 2 hours including the ferry crossing. On a budget, city bus route 20 (Bến Thành - Nhà Bè) runs to the Bình Khánh ferry pier; after crossing, bus route 90 continues out to Cần Giờ beach, with a stop near Lâm Viên/Đảo Khỉ - ask the driver to call out the stop.",
+          },
+          { type: "heading", text: "Boat Tours and Day Trips" },
+          {
+            type: "paragraph",
+            text: "From the Cần Giờ area, Monkey Island is reached by organized boat tour from the Lý Nhơn or Cần Thạnh area - independent access by private boat is possible but most visitors join organized tours. Day tours from HCMC are the most common approach, departing from District 1 in the morning and returning by late afternoon. Tour prices typically include transport, ferry, boat, guide, and island entry, and often bundle in Rừng Sác War Base or Vàm Sát as a second stop on the same waterway network.",
+          },
+          { type: "heading", text: "Driving Note" },
+          {
+            type: "paragraph",
+            text: "If driving yourself, stick to the speed limit (under 50km/h) on Rừng Sác road, which has regular traffic police checkpoints.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cần Giờ Monkey Island",
+        blocks: [
+          { type: "heading", text: "The Boat Journey and the Macaques" },
+          {
+            type: "paragraph",
+            text: "The boat journey through narrow mangrove channels takes 20-30 minutes from the main Cần Giờ waterway to the island. On the island, troops of long-tailed macaques move freely through the tree canopy and along the river banks, with several troops of 20-50 individuals commonly encountered during a visit. The monkeys approach closely and interact with visitors, particularly around food.",
+          },
+          { type: "heading", text: "Shows and Crocodiles" },
+          {
+            type: "paragraph",
+            text: "There are basic facilities on the island including a small performance area where trained monkeys demonstrate tasks (cycling, balancing, juggling routines with a trainer), scheduled at certain times mainly on weekends and holidays - a common component of Vietnamese wildlife attractions that may not suit all visitors. A crocodile conservation area also sits on-site, with a paid crocodile-feeding activity available for those interested.",
+          },
+          { type: "heading", text: "Mangroves and Rừng Sác" },
+          {
+            type: "paragraph",
+            text: "The mangrove environment surrounding the island is dense, atmospheric, and home to water birds including egrets and kingfishers. Many visitors continue on by canoe to Rừng Sác War Base afterward, where the recreated wartime camp gives a very different, more solemn counterpoint to the monkeys.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cần Giờ Monkey Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cần Giờ Monkey Island is the right choice for HCMC day trips when you want something genuinely different from the city rather than another war museum or street food tour. The mangrove biosphere reserve context - the scale of the reforestation, the waterway ecosystem, the crocodile population, and the nearby Rừng Sác War Base - gives the visit more depth than the monkeys alone.",
+          },
+          {
+            type: "paragraph",
+            text: "The monkeys are entertaining and the boat journey is scenic, but the most interesting thing about Cần Giờ is actually the ecological recovery story: what was a chemically defoliated landscape in the 1970s is now a functioning biosphere reserve with monitor lizards, crocodiles, and a recovering mangrove ecosystem. The UNESCO designation is earned rather than honorary. If you have a full day, pairing Đảo Khỉ with Rừng Sác War Base, Cần Giờ's black-sand beach, or the whale-worship shrine at Lăng Ông Thủy Tướng (home to a preserved 12-metre whale skeleton) rounds out the area's mix of nature, history, and local culture.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

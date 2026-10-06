@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const anVinhCommunalHouse: Location = {
   slug: "an-vinh-communal-house",
   name: "Đình làng An Vĩnh",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.376064479616458,
@@ -46,14 +46,77 @@ export const anVinhCommunalHouse: Location = {
     "The communal house documents and family genealogies held here trace the lineages of Lý Sơn families who participated in the Hoàng Sa missions going back to the 17th century",
   ],
   content: {
-    intro:
-      "Đình làng An Vĩnh is the communal house of An Vĩnh - Lý Sơn's oldest village, in Tây hamlet, right by the island's main port, about 15 nautical miles from the mainland. Like its counterpart in An Hải, it is both a traditional village institution and a living memorial to the **Hải Đội Hoàng Sa** (Hoàng Sa Flotilla). An Vĩnh village was one of the founding communities of Lý Sơn, established when settlers from the mainland crossed to the island several centuries ago.\n\nThe communal house itself dates to the late 18th century, originally a modest structure of earth, stone, wood, bamboo, and thatch. It was rebuilt under Emperor Cảnh Thịnh in 1798, then damaged by Qing raiders in 1842 under Thiệu Trị. In 1920, under Khải Định, it was substantially rebuilt and expanded into the **'chữ tam' (three-part) layout** still standing today - đình hạ, đình trung, and đình thượng (lower, middle, and upper halls), connected by a shared gutter system. The building suffered further damage from French bombing in 1953 and from a major storm in 1992, before the state funded research and restoration starting in 2009. In 2013, it was recognised as a **National Historic-Cultural Relic**, the same year the ceremony held here was separately recognised as a national intangible cultural heritage.\n\nThe families that settled here provided many of the roughly 70 sailors conscripted each year for the Hoàng Sa missions - and only a fraction were guaranteed to come home. The ceremony's name, **Khao Lề Thế Lính Hoàng Sa**, reflects a specific, sobering custom: before departing, many sailors expected never to return, so their families held a symbolic funeral while they were still alive, preparing bamboo funeral tablets and offerings so their spirits would have a home to return to if they died at sea. The communal house holds genealogical records and ancestral altars for the founding lineages - Nguyễn, Lê, Phạm Văn, Phạm Quang, Đặng, Võ Văn, and Võ Xuân among them - credited with expanding the territory, founding the village, and placing sovereignty markers on Hoàng Sa and Trường Sa. Carved in the Nguyễn-dynasty decorative style, the structure's timberwork features tứ linh (four sacred creatures) and ngũ phúc (five blessings) motifs reflecting a yin-yang balance meant to bring peace and happiness to the village. The complex covers roughly 2,000 square metres, including a 1,000 square-metre front courtyard, and its gate faces east toward the sea, back across the water toward the mainland - a quiet, literal orientation toward more than two centuries of history. It remains the community centre for over 13 clans on Lý Sơn, hosting not only the Khao Lề Thế Lính Hoàng Sa ceremony on the 15th-16th day of the 3rd lunar month, but also the Xuân Thu nhị kỳ rites (20th day of the 2nd and 8th lunar months), a founders' memorial on the 16th day of the 7th lunar month, a lantern festival, and the traditional tứ linh boat race.",
-    howToGetThere:
-      "Đình làng An Vĩnh is in the An Vĩnh area near the main ferry port on the western side of the island. It is within walking distance of the port - ask locally for directions from the ferry terminal. No motorbike is needed.",
-    whatToExpect:
-      "The structure follows the traditional **'chữ tam' layout** - three connected halls (đình hạ, đình trung, đình thượng) joined by a shared gutter system, with a large tiled roof and carved wooden interior. Ancestral altars for the village's founding lineages line the halls, simple and unadorned but solemn. This is an active community space rather than a museum - the courtyard is open for viewing daily, but the interior halls are generally only unlocked during ceremonies and festival periods. Visitors are welcome, but the site has no formal tourist infrastructure, ticket booth, or English signage.",
-    travelTips:
-      "An Vĩnh communal house is the most convenient historical site to visit on arrival, given its proximity to the ferry port. A visit here before renting a motorbike and heading out to the island's natural sites gives useful context - particularly the references to Hoàng Sa and maritime history that appear throughout the island. Visiting both this communal house and its counterpart in An Hải gives a fuller picture of how the two villages jointly supplied the Hoàng Sa Flotilla each year, and pairing either with the nearby Hải Đội Hoàng Sa museum fills in the historical detail neither building alone fully covers. Time it around the 15th-16th of the 3rd lunar month if you want to see the ceremony itself and gain access to the interior halls.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Đình làng An Vĩnh Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đình làng An Vĩnh is the communal house of An Vĩnh - Lý Sơn's oldest village, in Tây hamlet, right by the island's main port, about 15 nautical miles from the mainland. Like its counterpart in An Hải, it is both a traditional village institution and a living memorial to the **Hải Đội Hoàng Sa** (Hoàng Sa Flotilla). An Vĩnh village was one of the founding communities of Lý Sơn, established when settlers from the mainland crossed to the island several centuries ago.",
+          },
+          { type: "heading", text: "History of the Building" },
+          {
+            type: "paragraph",
+            text: "The communal house itself dates to the late 18th century, originally a modest structure of earth, stone, wood, bamboo, and thatch. It was rebuilt under Emperor Cảnh Thịnh in 1798, then damaged by Qing raiders in 1842 under Thiệu Trị. In 1920, under Khải Định, it was substantially rebuilt and expanded into the **'chữ tam' (three-part) layout** still standing today - đình hạ, đình trung, and đình thượng (lower, middle, and upper halls), connected by a shared gutter system. The building suffered further damage from French bombing in 1953 and from a major storm in 1992, before the state funded research and restoration starting in 2009. In 2013, it was recognised as a **National Historic-Cultural Relic**, the same year the ceremony held here was separately recognised as a national intangible cultural heritage.",
+          },
+          { type: "heading", text: "The Hoàng Sa Sailors and the Khao Lề Ceremony" },
+          {
+            type: "paragraph",
+            text: "The families that settled here provided many of the roughly 70 sailors conscripted each year for the Hoàng Sa missions - and only a fraction were guaranteed to come home. The ceremony's name, **Khao Lề Thế Lính Hoàng Sa**, reflects a specific, sobering custom: before departing, many sailors expected never to return, so their families held a symbolic funeral while they were still alive, preparing bamboo funeral tablets and offerings so their spirits would have a home to return to if they died at sea.",
+          },
+          { type: "heading", text: "Lineages, Carvings and Community Life" },
+          {
+            type: "paragraph",
+            text: "The communal house holds genealogical records and ancestral altars for the founding lineages - Nguyễn, Lê, Phạm Văn, Phạm Quang, Đặng, Võ Văn, and Võ Xuân among them - credited with expanding the territory, founding the village, and placing sovereignty markers on Hoàng Sa and Trường Sa. Carved in the Nguyễn-dynasty decorative style, the structure's timberwork features tứ linh (four sacred creatures) and ngũ phúc (five blessings) motifs reflecting a yin-yang balance meant to bring peace and happiness to the village. The complex covers roughly 2,000 square metres, including a 1,000 square-metre front courtyard, and its gate faces east toward the sea, back across the water toward the mainland - a quiet, literal orientation toward more than two centuries of history. It remains the community centre for over 13 clans on Lý Sơn, hosting not only the Khao Lề Thế Lính Hoàng Sa ceremony on the 15th-16th day of the 3rd lunar month, but also the Xuân Thu nhị kỳ rites (20th day of the 2nd and 8th lunar months), a founders' memorial on the 16th day of the 7th lunar month, a lantern festival, and the traditional tứ linh boat race.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Đình làng An Vĩnh",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đình làng An Vĩnh is in the An Vĩnh area near the main ferry port on the western side of the island. It is within walking distance of the port - ask locally for directions from the ferry terminal. No motorbike is needed.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Đình làng An Vĩnh",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The structure follows the traditional **'chữ tam' layout** - three connected halls (đình hạ, đình trung, đình thượng) joined by a shared gutter system, with a large tiled roof and carved wooden interior. Ancestral altars for the village's founding lineages line the halls, simple and unadorned but solemn.",
+          },
+          { type: "heading", text: "Visiting" },
+          {
+            type: "paragraph",
+            text: "This is an active community space rather than a museum - the courtyard is open for viewing daily, but the interior halls are generally only unlocked during ceremonies and festival periods. Visitors are welcome, but the site has no formal tourist infrastructure, ticket booth, or English signage.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Đình làng An Vĩnh",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "An Vĩnh communal house is the most convenient historical site to visit on arrival, given its proximity to the ferry port. A visit here before renting a motorbike and heading out to the island's natural sites gives useful context - particularly the references to Hoàng Sa and maritime history that appear throughout the island. Visiting both this communal house and its counterpart in An Hải gives a fuller picture of how the two villages jointly supplied the Hoàng Sa Flotilla each year, and pairing either with the nearby Hải Đội Hoàng Sa museum fills in the historical detail neither building alone fully covers.",
+          },
+          { type: "heading", text: "The Ceremony" },
+          {
+            type: "paragraph",
+            text: "Time it around the 15th-16th of the 3rd lunar month if you want to see the ceremony itself and gain access to the interior halls.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

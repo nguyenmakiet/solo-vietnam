@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tranQuocPagoda: Location = {
   slug: "tran-quoc-pagoda",
   name: "Tran Quoc Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.047885239405513,
@@ -46,13 +46,77 @@ export const tranQuocPagoda: Location = {
     "The bodhi tree in the courtyard is a cutting from the tree in Bodh Gaya, India, under which the Buddha is said to have attained enlightenment - gifted by India's President, Dr. Rajendra Prasad, during his visit to Hanoi on 24 March 1959 (not to be confused with Prime Minister Nehru, who is sometimes mistakenly credited with the gift)",
   ],
   content: {
-    intro:
-      "Tran Quoc Pagoda claims the distinction of being the oldest Buddhist pagoda in Hanoi, founded in 541 AD under the name Khai Quốc ('Nation-Opening') Pagoda during the Early Lý dynasty, at Yên Hoa village on the banks of the Red River - today's Yên Phụ. It served as a major pilgrimage centre for the Lý and Trần dynasties' capital at Thăng Long. Its name has changed several times since: Emperor Lê Thái Tông renamed it An Quốc ('National Peace') in 1440; in 1615, under Emperor Lê Kính Tông, riverbank erosion forced a move to its current site on what was then Kim Ngư islet in West Lake (Hồ Tây), built over the former foundations of the Trần dynasty's Điện Hàn Nguyên and the Lý dynasty's Cung Thúy Hoa; the Trịnh lords added side corridors and repaired the entrance gate in 1639; and at some point under Emperor Lê Hy Tông, it took on its present name, Trấn Quốc ('Protecting the Nation'). Emperor Minh Mạng visited and funded further restoration in 1821, and in 1842 Emperor Thiệu Trị renamed it Trấn Bắc and funded another round of work - though the older name Trấn Quốc had already stuck with the public and never really left use. The pagoda was recognised as a National Historical-Cultural Relic in 1989, and has picked up international recognition more recently too: the Daily Mail named it one of the 16 most beautiful temples in the world in 2016, Wanderlust ranked it third among ten temples most in harmony with nature in 2017, and National Geographic listed it among the world's most beautiful Buddhist temple buildings in 2019.\n\nThe pagoda follows the Mahayana (Bắc Tông) tradition and is dedicated primarily to Shakyamuni Buddha, alongside Amitabha Buddha, Quan Âm (Avalokiteshvara), and a wider pantheon of Bodhisattvas, Arhats, and Dharma protectors - plus, in a reflection of Vietnam's blended folk and Buddhist traditions, altars to Quan Vũ and his attendants, Đức Ông, and Đức Thánh Từ Đạo Hạnh, a revered Lý-dynasty Zen monk. Laid out in the classic 'công' (工)-shaped floor plan across more than 3,000 square metres, the complex comprises the Tiền Đường (front hall), Thiêu Hương hall, and Thượng Điện (upper sanctuary) - the last of which holds 14 stone stelae recording poems by celebrated scholars and details of the pagoda's many restorations across the centuries. The Tiền Đường houses a wood-carved, lacquered and gilded statue of the Buddha entering Nirvana, often cited as the most beautiful reclining Buddha statue in Vietnam. The defining visual element today is the 11-tier stupa, Bảo Tháp Lục Độ Đài Sen, erected in 1998 and rising 15 metres above the lake surface, visible from considerable distance across the water. The surrounding pagoda complex contains ancient steles, a bodhi tree descended from the original at Bodh Gaya, and active monks' quarters, making it a functioning monastic community as well as a historical site.",
-    howToGetThere:
-      "Tran Quoc Pagoda is located on the eastern shore of West Lake in the Tây Hồ district, approximately 5km north of Hoan Kiem Lake. From the Old Quarter, take Grab or taxi north along Thanh Niên street - the road that runs between West Lake and Truc Bach Lake - and the pagoda entrance is on the right. Journey time from the Old Quarter is 15-20 minutes by vehicle, with free parking available at the pagoda. On a budget, city bus route 50 (Long Biên - National Stadium) stops close to the pagoda gate. The pagoda can also be reached by bicycle from the Old Quarter in around 25-30 minutes via Thanh Niên street.",
-    whatToExpect:
-      "The visit covers the main pagoda halls containing Buddha statues and altars, the stupa garden with the 11-tier tower and the bodhi tree, and the outer path around the peninsula with water views on multiple sides. The complex is compact and the full visit takes 30-45 minutes. Vietnamese Buddhist pilgrims visit regularly and incense burns continuously at the main altars. The stupa and its reflection in the lake water are the primary photographic subject - the best reflection conditions are in calm morning or evening light. Many visitors spend as much time outside the main halls as inside, since the peninsula setting and views across West Lake are as much a draw here as the religious architecture itself. The surrounding West Lake setting, with its wide water surface and distant city skyline, gives the pagoda a more spacious character than most urban temple sites.",
-    travelTips:
-      "Tran Quoc Pagoda works well as part of a West Lake half-day that also takes in the lake perimeter cycling route and the Quan Thanh Temple nearby. The combination of the pagoda's antiquity, its West Lake setting, and the genuine monastic activity make it one of the more substantive temple visits available in Hanoi - more atmospherically authentic than the more touristed sites in the Old Quarter. This is genuinely one of the best sunset spots in Hanoi - the stupa catches the last light over the lake, and the water often turns gold and pink behind it, drawing a steady crowd of photographers in the final hour before dusk. The pagoda is smaller than its fame suggests, though - many first-time visitors expect a much larger complex, so plan on around 30-45 minutes here unless you're also walking the surrounding West Lake promenade.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tran Quoc Pagoda Special",
+        blocks: [
+          { type: "heading", text: "History and Changing Names" },
+          {
+            type: "paragraph",
+            text: "Tran Quoc Pagoda claims the distinction of being the oldest Buddhist pagoda in Hanoi, founded in 541 AD under the name Khai Quốc ('Nation-Opening') Pagoda during the Early Lý dynasty, at Yên Hoa village on the banks of the Red River - today's Yên Phụ. It served as a major pilgrimage centre for the Lý and Trần dynasties' capital at Thăng Long. Its name has changed several times since: Emperor Lê Thái Tông renamed it An Quốc ('National Peace') in 1440; in 1615, under Emperor Lê Kính Tông, riverbank erosion forced a move to its current site on what was then Kim Ngư islet in West Lake (Hồ Tây), built over the former foundations of the Trần dynasty's Điện Hàn Nguyên and the Lý dynasty's Cung Thúy Hoa; the Trịnh lords added side corridors and repaired the entrance gate in 1639; and at some point under Emperor Lê Hy Tông, it took on its present name, Trấn Quốc ('Protecting the Nation'). Emperor Minh Mạng visited and funded further restoration in 1821, and in 1842 Emperor Thiệu Trị renamed it Trấn Bắc and funded another round of work - though the older name Trấn Quốc had already stuck with the public and never really left use. The pagoda was recognised as a National Historical-Cultural Relic in 1989, and has picked up international recognition more recently too: the Daily Mail named it one of the 16 most beautiful temples in the world in 2016, Wanderlust ranked it third among ten temples most in harmony with nature in 2017, and National Geographic listed it among the world's most beautiful Buddhist temple buildings in 2019.",
+          },
+          { type: "heading", text: "Buddhist Tradition and Layout" },
+          {
+            type: "paragraph",
+            text: "The pagoda follows the Mahayana (Bắc Tông) tradition and is dedicated primarily to Shakyamuni Buddha, alongside Amitabha Buddha, Quan Âm (Avalokiteshvara), and a wider pantheon of Bodhisattvas, Arhats, and Dharma protectors - plus, in a reflection of Vietnam's blended folk and Buddhist traditions, altars to Quan Vũ and his attendants, Đức Ông, and Đức Thánh Từ Đạo Hạnh, a revered Lý-dynasty Zen monk. Laid out in the classic 'công' (工)-shaped floor plan across more than 3,000 square metres, the complex comprises the Tiền Đường (front hall), Thiêu Hương hall, and Thượng Điện (upper sanctuary) - the last of which holds 14 stone stelae recording poems by celebrated scholars and details of the pagoda's many restorations across the centuries. The Tiền Đường houses a wood-carved, lacquered and gilded statue of the Buddha entering Nirvana, often cited as the most beautiful reclining Buddha statue in Vietnam.",
+          },
+          { type: "heading", text: "The 11-Tier Stupa and the Bodhi Tree" },
+          {
+            type: "paragraph",
+            text: "The defining visual element today is the 11-tier stupa, Bảo Tháp Lục Độ Đài Sen, erected in 1998 and rising 15 metres above the lake surface, visible from considerable distance across the water. The surrounding pagoda complex contains ancient steles, a bodhi tree descended from the original at Bodh Gaya, and active monks' quarters, making it a functioning monastic community as well as a historical site.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tran Quoc Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tran Quoc Pagoda is located on the eastern shore of West Lake in the Tây Hồ district, approximately 5km north of Hoan Kiem Lake. From the Old Quarter, take Grab or taxi north along Thanh Niên street - the road that runs between West Lake and Truc Bach Lake - and the pagoda entrance is on the right. Journey time from the Old Quarter is 15-20 minutes by vehicle, with free parking available at the pagoda.",
+          },
+          { type: "heading", text: "Bus and Bicycle" },
+          {
+            type: "paragraph",
+            text: "On a budget, city bus route 50 (Long Biên - National Stadium) stops close to the pagoda gate. The pagoda can also be reached by bicycle from the Old Quarter in around 25-30 minutes via Thanh Niên street.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tran Quoc Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The visit covers the main pagoda halls containing Buddha statues and altars, the stupa garden with the 11-tier tower and the bodhi tree, and the outer path around the peninsula with water views on multiple sides. The complex is compact and the full visit takes 30-45 minutes. Vietnamese Buddhist pilgrims visit regularly and incense burns continuously at the main altars.",
+          },
+          { type: "heading", text: "Photography and the Lake Setting" },
+          {
+            type: "paragraph",
+            text: "The stupa and its reflection in the lake water are the primary photographic subject - the best reflection conditions are in calm morning or evening light. Many visitors spend as much time outside the main halls as inside, since the peninsula setting and views across West Lake are as much a draw here as the religious architecture itself. The surrounding West Lake setting, with its wide water surface and distant city skyline, gives the pagoda a more spacious character than most urban temple sites.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tran Quoc Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tran Quoc Pagoda works well as part of a West Lake half-day that also takes in the lake perimeter cycling route and the Quan Thanh Temple nearby. The combination of the pagoda's antiquity, its West Lake setting, and the genuine monastic activity make it one of the more substantive temple visits available in Hanoi - more atmospherically authentic than the more touristed sites in the Old Quarter.",
+          },
+          { type: "heading", text: "Sunset and Scale" },
+          {
+            type: "paragraph",
+            text: "This is genuinely one of the best sunset spots in Hanoi - the stupa catches the last light over the lake, and the water often turns gold and pink behind it, drawing a steady crowd of photographers in the final hour before dusk. The pagoda is smaller than its fame suggests, though - many first-time visitors expect a much larger complex, so plan on around 30-45 minutes here unless you're also walking the surrounding West Lake promenade.",
+          },
+        ],
+      },
+    ],
   },
 }

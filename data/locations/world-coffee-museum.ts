@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const worldCoffeeMuseum: Location = {
   slug: "world-coffee-museum",
   name: "World Coffee Museum",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dak-lak"],
   destination: "",
   lat: 12.691043,
@@ -50,14 +50,77 @@ export const worldCoffeeMuseum: Location = {
     "The museum sits just 5-10 minutes from central Buôn Ma Thuột by motorbike or taxi, with ample on-site parking",
   ],
   content: {
-    intro:
-      "The World Coffee Museum (Bảo Tàng Thế Giới Cà Phê) in Buôn Ma Thuột, Đắk Lắk, is Vietnam's first museum dedicated entirely to coffee, set within the Coffee City (Thành Phố Cà Phê) development on Nguyễn Đình Chiểu street, a site of more than 45 hectares - the museum building itself occupies a smaller footprint within this larger complex. Opened on November 24, 2018, the museum's architecture draws on the traditional nhà rông (communal house) and nhà dài (longhouse) styles of Central Highlands ethnic groups, with a distinctive curved interior said to shape the flow of sound through the space. Inside, around 10,000 coffee-related artifacts - sourced from the Jens Burg coffee museum in Germany, built up over 20 years - trace the history of major coffee civilizations including Ottoman, Roman, and Zen traditions, alongside traditional brewing tools, roasting equipment, old books, and documents. The museum has drawn international recognition, including praise from the Associated Press as a vivid, distinctive 'living museum', and a spot on Wanderlust magazine's list of top Vietnam destinations. Alongside its coffee exhibits, the museum also runs parallel displays on the people and nature of the Central Highlands, highlighting the cultural identity of groups including the M'nông, Ba Na, J'Rai, and Ê Đê, whose lives have long been intertwined with coffee cultivation in this region. That said, visitor opinion on the museum is genuinely split: many praise the architecture, cleanliness, and photogenic spaces, while a large number of others feel the content leans more toward promoting the museum's owner, Trung Nguyên coffee, than offering deep, impartial education about coffee - a perspective worth knowing before you visit, especially given the relatively high ticket price.",
-    howToGetThere:
-      "The museum is about 5-10 minutes from central Buôn Ma Thuột by motorbike, taxi, or private car - a short, straightforward trip. Larger groups may want to arrange a car. The museum has a spacious, secure on-site parking area.",
-    whatToExpect:
-      "The grounds are spacious and green, with the nhà rông-inspired buildings forming a striking, highly photogenic silhouette from almost any angle. Inside, the design is minimalist - concrete walls, high domed ceilings drawing in natural light, a reading room, a film screening room, exhibition halls, and a basement level, all kept cool with strong air conditioning. Exhibits are organised thematically: old brewing tools, roasting machines, antique books, and displays tracing coffee's spread from its origins to Vietnam specifically. Distinctive photo spots include an area displaying hanging umbrellas associated with notable historical figures and a row of national flags. Each display area has a QR code for a free audio guide, though in practice many visitors browse without using them. After the exhibits, there's a coffee-tasting area where the adult ticket price includes one small cup; additional drinks, including teas, are available to purchase separately. Crowds can build with tour groups and school trips, which some visitors find limits a fully relaxed, independent experience.",
-    travelTips:
-      "Given the genuinely mixed reception - some visitors find it a worthwhile, well-designed cultural stop, while many others feel it's overpriced for content that leans heavily toward brand promotion - it's worth calibrating your expectations before buying a ticket. If photography and the architecture are your main draw, you may be just as satisfied viewing the exterior without paying for entry. If you're a genuine coffee enthusiast willing to read the exhibit information closely, you're likely to get more out of the visit than someone expecting a quick, casual walkthrough. Either way, it remains one of the signature attractions in Buôn Ma Thuột and a common stop for visitors exploring Vietnam's coffee capital.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes World Coffee Museum Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The World Coffee Museum (Bảo Tàng Thế Giới Cà Phê) in Buôn Ma Thuột, Đắk Lắk, is Vietnam's first museum dedicated entirely to coffee, set within the Coffee City (Thành Phố Cà Phê) development on Nguyễn Đình Chiểu street, a site of more than 45 hectares - the museum building itself occupies a smaller footprint within this larger complex. Opened on November 24, 2018, the museum's architecture draws on the traditional nhà rông (communal house) and nhà dài (longhouse) styles of Central Highlands ethnic groups, with a distinctive curved interior said to shape the flow of sound through the space.",
+          },
+          { type: "heading", text: "The Collection" },
+          {
+            type: "paragraph",
+            text: "Inside, around 10,000 coffee-related artifacts - sourced from the Jens Burg coffee museum in Germany, built up over 20 years - trace the history of major coffee civilizations including Ottoman, Roman, and Zen traditions, alongside traditional brewing tools, roasting equipment, old books, and documents. The museum has drawn international recognition, including praise from the Associated Press as a vivid, distinctive 'living museum', and a spot on Wanderlust magazine's list of top Vietnam destinations. Alongside its coffee exhibits, the museum also runs parallel displays on the people and nature of the Central Highlands, highlighting the cultural identity of groups including the M'nông, Ba Na, J'Rai, and Ê Đê, whose lives have long been intertwined with coffee cultivation in this region.",
+          },
+          { type: "heading", text: "Mixed Reviews" },
+          {
+            type: "paragraph",
+            text: "That said, visitor opinion on the museum is genuinely split: many praise the architecture, cleanliness, and photogenic spaces, while a large number of others feel the content leans more toward promoting the museum's owner, Trung Nguyên coffee, than offering deep, impartial education about coffee - a perspective worth knowing before you visit, especially given the relatively high ticket price.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to World Coffee Museum",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The museum is about 5-10 minutes from central Buôn Ma Thuột by motorbike, taxi, or private car - a short, straightforward trip. Larger groups may want to arrange a car. The museum has a spacious, secure on-site parking area.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at World Coffee Museum",
+        blocks: [
+          { type: "heading", text: "Grounds and Design" },
+          {
+            type: "paragraph",
+            text: "The grounds are spacious and green, with the nhà rông-inspired buildings forming a striking, highly photogenic silhouette from almost any angle. Inside, the design is minimalist - concrete walls, high domed ceilings drawing in natural light, a reading room, a film screening room, exhibition halls, and a basement level, all kept cool with strong air conditioning.",
+          },
+          { type: "heading", text: "Exhibits and Photo Spots" },
+          {
+            type: "paragraph",
+            text: "Exhibits are organised thematically: old brewing tools, roasting machines, antique books, and displays tracing coffee's spread from its origins to Vietnam specifically. Distinctive photo spots include an area displaying hanging umbrellas associated with notable historical figures and a row of national flags. Each display area has a QR code for a free audio guide, though in practice many visitors browse without using them.",
+          },
+          { type: "heading", text: "Coffee Tasting and Crowds" },
+          {
+            type: "paragraph",
+            text: "After the exhibits, there's a coffee-tasting area where the adult ticket price includes one small cup; additional drinks, including teas, are available to purchase separately. Crowds can build with tour groups and school trips, which some visitors find limits a fully relaxed, independent experience.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for World Coffee Museum",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Given the genuinely mixed reception - some visitors find it a worthwhile, well-designed cultural stop, while many others feel it's overpriced for content that leans heavily toward brand promotion - it's worth calibrating your expectations before buying a ticket. If photography and the architecture are your main draw, you may be just as satisfied viewing the exterior without paying for entry.",
+          },
+          {
+            type: "paragraph",
+            text: "If you're a genuine coffee enthusiast willing to read the exhibit information closely, you're likely to get more out of the visit than someone expecting a quick, casual walkthrough. Either way, it remains one of the signature attractions in Buôn Ma Thuột and a common stop for visitors exploring Vietnam's coffee capital.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

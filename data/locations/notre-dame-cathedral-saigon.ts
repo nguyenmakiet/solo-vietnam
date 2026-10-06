@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const notreDameCathedralSaigon: Location = {
   slug: "notre-dame-cathedral-saigon",
   name: "Notre-Dame Cathedral Saigon",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.779943554525898,
@@ -49,14 +49,92 @@ export const notreDameCathedralSaigon: Location = {
     "From Tân Sơn Nhất Airport: taxi or ride-hailing app, 20-30 minutes depending on traffic. From central District 1: walkable, or by bicycle/cyclo to combine with nearby sights. From other districts: bus, metro (where lines are operational), taxi, or ride-hailing to Công Xã Paris square. Parking available nearby for motorbikes/cars at modest rates.",
   ],
   content: {
-    intro:
-      "Notre-Dame Cathedral Saigon - formally the Vương Cung Thánh Đường Chính Tòa Đức Mẹ Vô Nhiễm Nguyên Tội (Basilica of Our Lady of The Immaculate Conception) - stands at the junction of Đồng Khởi and Nguyễn Du streets in central District 1. It was actually the second Catholic church the French built in this area: the first was a converted Vietnamese pagoda, repurposed during early colonial occupation, which quickly proved too small for the growing congregation. Construction of the current cathedral began 7 October 1877 under Bishop Isidore Colombert, using materials shipped entirely from France - red bricks from Marseille, stained glass from Chartres. The main building was completed in 1880; the twin bell towers, designed by architect Gardes, weren't added until 1895, bringing the structure to its current 57-metre height. The cathedral remains an active Catholic parish and one of Vietnam's largest religious structures, though the interior has been closed to casual sightseeing since 1 July 2017 for a major restoration using materials imported from Europe to match the original construction - a project that has run well past its original end-2027 target due to the extent of damage requiring careful, slower repair work. Regular mass continues throughout, and visitors are welcome to attend as respectful observers, but there is currently no general walk-in access to view the interior outside of service times. What keeps the surrounding square genuinely alive day to day, though, has less to do with religion than with local youth culture: 'cà phê bệt' on the grass facing the façade, pigeon feeding, street food, and the classic cathedral photo have made this one of Ho Chi Minh City's most reliable casual meetup spots for young Saigonese.",
-    howToGetThere:
-      "The cathedral is located in the heart of District 1, at the top of Đồng Khởi street approximately 1km from Bến Thành Market. From most District 1 hotels, it is within walking distance. From Tân Sơn Nhất Airport: taxi or ride-hailing app, 20-30 minutes depending on traffic. From other districts: bus, metro (where operational), or taxi/ride-hailing to Công Xã Paris square. The cathedral is a natural stop on any walking tour of the French colonial architecture cluster in District 1, alongside the Central Post Office and Independence Palace.",
-    whatToExpect:
-      "The visit centres on the exterior - the red brick neo-Romanesque/Gothic facade with its twin 57m towers, and the open square in front, are the main visual elements. The square contains a statue of the Virgin Mary that has drawn reported apparition claims and a steady stream of Catholic pilgrims alongside general tourists and local youth. Restoration work is visible but ongoing - sections of the original red brick façade have recently re-emerged from scaffolding as the project progresses, though full completion remains some years off. Inside, when accessible, the nave runs 93m long beneath a vaulted ceiling nearly 21m high, seating over 1,200 people, with marble altars and 56 Chartres stained glass windows depicting biblical scenes - but there is currently no general walk-in access to see this. The distinction matters: you cannot enter simply to look around, but you can enter to attend a scheduled mass as a respectful observer, which is the only way to see the interior at present. The Central Post Office immediately adjacent - designed by Gustave Eiffel's firm and still fully operational - is worth entering instead; its iron-frame interior is one of the finest colonial-era interior spaces in Vietnam. Around the square, expect pigeons, coffee vendors, street food carts, and a steady stream of people taking the same iconic facade photo from slightly different angles.",
-    travelTips:
-      "The cathedral works on two registers at once: a serious piece of French colonial architecture and religious history, and a low-key, much-loved local hangout spot. Don't expect to go inside during your visit - the restoration has been running since 2017 and is now expected to extend well past its original 2027 target - but the exterior alone, combined with the Post Office next door, makes for a solid 45-minute stop. If attending mass interests you (even as a respectful non-Catholic observer), the Sunday 9:30 AM English-language service is the most accessible option for international visitors; just don't receive Communion and dress modestly. For the most local experience, skip the formal sightseeing approach entirely and just grab a coffee, sit on the grass facing the façade, and watch the city move around the square for twenty minutes - that's genuinely what most young Saigonese come here to do.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Notre-Dame Cathedral Saigon Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Notre-Dame Cathedral Saigon - formally the Vương Cung Thánh Đường Chính Tòa Đức Mẹ Vô Nhiễm Nguyên Tội (Basilica of Our Lady of The Immaculate Conception) - stands at the junction of Đồng Khởi and Nguyễn Du streets in central District 1. It was actually the second Catholic church the French built in this area: the first was a converted Vietnamese pagoda, repurposed during early colonial occupation, which quickly proved too small for the growing congregation.",
+          },
+          { type: "heading", text: "Construction" },
+          {
+            type: "paragraph",
+            text: "Construction of the current cathedral began 7 October 1877 under Bishop Isidore Colombert, using materials shipped entirely from France - red bricks from Marseille, stained glass from Chartres. The main building was completed in 1880; the twin bell towers, designed by architect Gardes, weren't added until 1895, bringing the structure to its current 57-metre height.",
+          },
+          { type: "heading", text: "An Active Parish Under Restoration" },
+          {
+            type: "paragraph",
+            text: "The cathedral remains an active Catholic parish and one of Vietnam's largest religious structures, though the interior has been closed to casual sightseeing since 1 July 2017 for a major restoration using materials imported from Europe to match the original construction - a project that has run well past its original end-2027 target due to the extent of damage requiring careful, slower repair work. Regular mass continues throughout, and visitors are welcome to attend as respectful observers, but there is currently no general walk-in access to view the interior outside of service times.",
+          },
+          { type: "heading", text: "Life on the Square" },
+          {
+            type: "paragraph",
+            text: "What keeps the surrounding square genuinely alive day to day, though, has less to do with religion than with local youth culture: 'cà phê bệt' on the grass facing the façade, pigeon feeding, street food, and the classic cathedral photo have made this one of Ho Chi Minh City's most reliable casual meetup spots for young Saigonese.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Notre-Dame Cathedral Saigon",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The cathedral is located in the heart of District 1, at the top of Đồng Khởi street approximately 1km from Bến Thành Market. From most District 1 hotels, it is within walking distance.",
+          },
+          {
+            type: "paragraph",
+            text: "From Tân Sơn Nhất Airport: taxi or ride-hailing app, 20-30 minutes depending on traffic. From other districts: bus, metro (where operational), or taxi/ride-hailing to Công Xã Paris square. The cathedral is a natural stop on any walking tour of the French colonial architecture cluster in District 1, alongside the Central Post Office and Independence Palace.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Notre-Dame Cathedral Saigon",
+        blocks: [
+          { type: "heading", text: "The Exterior and the Virgin Mary Statue" },
+          {
+            type: "paragraph",
+            text: "The visit centres on the exterior - the red brick neo-Romanesque/Gothic facade with its twin 57m towers, and the open square in front, are the main visual elements. The square contains a statue of the Virgin Mary that has drawn reported apparition claims and a steady stream of Catholic pilgrims alongside general tourists and local youth. Restoration work is visible but ongoing - sections of the original red brick façade have recently re-emerged from scaffolding as the project progresses, though full completion remains some years off.",
+          },
+          { type: "heading", text: "The Interior and Mass" },
+          {
+            type: "paragraph",
+            text: "Inside, when accessible, the nave runs 93m long beneath a vaulted ceiling nearly 21m high, seating over 1,200 people, with marble altars and 56 Chartres stained glass windows depicting biblical scenes - but there is currently no general walk-in access to see this. The distinction matters: you cannot enter simply to look around, but you can enter to attend a scheduled mass as a respectful observer, which is the only way to see the interior at present.",
+          },
+          { type: "heading", text: "The Post Office and the Square" },
+          {
+            type: "paragraph",
+            text: "The Central Post Office immediately adjacent - designed by Gustave Eiffel's firm and still fully operational - is worth entering instead; its iron-frame interior is one of the finest colonial-era interior spaces in Vietnam. Around the square, expect pigeons, coffee vendors, street food carts, and a steady stream of people taking the same iconic facade photo from slightly different angles.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Notre-Dame Cathedral Saigon",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The cathedral works on two registers at once: a serious piece of French colonial architecture and religious history, and a low-key, much-loved local hangout spot.",
+          },
+          { type: "heading", text: "Restoration and Mass" },
+          {
+            type: "paragraph",
+            text: "Don't expect to go inside during your visit - the restoration has been running since 2017 and is now expected to extend well past its original 2027 target - but the exterior alone, combined with the Post Office next door, makes for a solid 45-minute stop. If attending mass interests you (even as a respectful non-Catholic observer), the Sunday 9:30 AM English-language service is the most accessible option for international visitors; just don't receive Communion and dress modestly.",
+          },
+          { type: "heading", text: "The Local Experience" },
+          {
+            type: "paragraph",
+            text: "For the most local experience, skip the formal sightseeing approach entirely and just grab a coffee, sit on the grass facing the façade, and watch the city move around the square for twenty minutes - that's genuinely what most young Saigonese come here to do.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

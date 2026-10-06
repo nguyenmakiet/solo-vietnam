@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hieuVillage: Location = {
   slug: "hieu-village",
   name: "Hieu Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: 20.465207207325047, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
@@ -48,14 +48,83 @@ export const hieuVillage: Location = {
     "Phố Đoàn market, a historic multi-ethnic trading market dating to the French resistance era, runs Thursday and Sunday mornings only - time your visit around one of these days if you want to see it",
   ],
   content: {
-    intro:
-      "Hieu Village (Bản Hiêu) is a Thai village of just over 100 households in Cổ Lũng commune, on the eastern side of Pù Luông Nature Reserve, roughly 180km from Hanoi, built along the course of the Hiêu Stream which descends through the village in a series of waterfalls and pools. The name 'Hiêu' comes from a Thai word for a precarious, overhanging outcrop of land - a fitting description of the terrain the village and waterfall sit on. The stream's water, fed from a source higher up on Pà Hé peak, carries a high limestone content that gradually calcifies tree roots submerged in the streambed - a striking, slow 'wood-to-stone' effect visible in parts of the watercourse. The village shares its identity with the water - rice terraces step down to the stream banks, bamboo footbridges cross between hamlets (a wooden suspension bridge marks the main entrance into the village), and traditional stilt houses are arranged along the upper slopes above the waterfall tiers. An older, less-visited hamlet sits directly above Hieu Waterfall itself, reachable only on foot up the steep terrain, with panoramic views over the wider Pù Luông valley as the reward. Compared to Don Village, Hieu Village is smaller, less developed, and noticeably quieter, with a handful of family-run homestays rather than the larger retreats found elsewhere in the reserve. The combination of village life and the running water of Hieu Waterfall gives Hieu Village a distinctive atmosphere that is unlike any other settlement in Pù Luông, and it is the second most photographed village in the reserve after Don Village.",
-    howToGetThere:
-      "Hieu Village is around 7km from Don Village by road - a 20-minute motorbike ride through the reserve along a road that climbs and descends through forest and farmland. The route is well-paved but narrow and twisty, with steep sections that less confident motorbike riders may find demanding. Most homestays in Don Village can arrange a xe ôm transfer or a guide to ride with you. From Phố Đoàn market town, the direct distance to Hieu Village is around 12km. An alternative approach follows a scenic 25km road from Cành Nàng town, running alongside rice terraces on both sides of the stream. The final approach into the village is on a smaller road that descends to the stream.",
-    whatToExpect:
-      "The village is built around the Hiêu Stream, and the layout follows the water - houses on the slopes, terraces along the edges, and footpaths crossing back and forth on bamboo and concrete bridges. The waterfall (Hieu Waterfall) drops in tiers through the village itself, with the largest tier just below the main hamlet, splitting into two branches that meet at the base in a natural pool roughly 1m deep - shallow enough for a relaxed swim. The water itself has an unusual quality: cool in summer and noticeably warmer in winter than the surrounding air. Walking the village takes 1 to 2 hours and includes the bridges, the rice terraces, and access points to the upper waterfall pools. Local Thai families farm rice and raise Cổ Lũng ducks on the stream - the ducks are a regional delicacy and feature on most homestay menus. If you have more time, nearby Phố Đoàn market is worth the detour: a centuries-old market dating back to the French resistance era, held only on Thursday and Sunday mornings, where Kinh, Mường, and Thái communities gather as much to socialise as to trade - some goods are still bartered rather than bought with cash. The village itself is genuinely small and you will likely encounter more farmers than other visitors outside of weekends, though tourism has grown substantially in recent years, with over a dozen community-run homestays now clustered around the waterfall itself.",
-    travelTips:
-      "Hieu Village pairs well with Don Village as a day trip or a one-night stop - the contrast between the larger, busier Don Village and the smaller, water-defined Hieu Village shows two different sides of Thai village life in Pù Luông. For photography, Hieu Village has more visual variety than Don Village because of the stream, the waterfall tiers, and the bamboo bridges - but the rice terraces here are smaller and less wide-angle dramatic. Solo travellers in particular often prefer Hieu Village for its slower pace and more personal homestay scale. Avoid weekends in peak season if you are looking for the quietest experience.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hieu Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hieu Village (Bản Hiêu) is a Thai village of just over 100 households in Cổ Lũng commune, on the eastern side of Pù Luông Nature Reserve, roughly 180km from Hanoi, built along the course of the Hiêu Stream which descends through the village in a series of waterfalls and pools. The name 'Hiêu' comes from a Thai word for a precarious, overhanging outcrop of land - a fitting description of the terrain the village and waterfall sit on. The stream's water, fed from a source higher up on Pà Hé peak, carries a high limestone content that gradually calcifies tree roots submerged in the streambed - a striking, slow 'wood-to-stone' effect visible in parts of the watercourse.",
+          },
+          { type: "heading", text: "Village Life Along the Stream" },
+          {
+            type: "paragraph",
+            text: "The village shares its identity with the water - rice terraces step down to the stream banks, bamboo footbridges cross between hamlets (a wooden suspension bridge marks the main entrance into the village), and traditional stilt houses are arranged along the upper slopes above the waterfall tiers. An older, less-visited hamlet sits directly above Hieu Waterfall itself, reachable only on foot up the steep terrain, with panoramic views over the wider Pù Luông valley as the reward.",
+          },
+          { type: "heading", text: "Compared with Don Village" },
+          {
+            type: "paragraph",
+            text: "Compared to Don Village, Hieu Village is smaller, less developed, and noticeably quieter, with a handful of family-run homestays rather than the larger retreats found elsewhere in the reserve. The combination of village life and the running water of Hieu Waterfall gives Hieu Village a distinctive atmosphere that is unlike any other settlement in Pù Luông, and it is the second most photographed village in the reserve after Don Village.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hieu Village",
+        blocks: [
+          { type: "heading", text: "From Don Village" },
+          {
+            type: "paragraph",
+            text: "Hieu Village is around 7km from Don Village by road - a 20-minute motorbike ride through the reserve along a road that climbs and descends through forest and farmland. The route is well-paved but narrow and twisty, with steep sections that less confident motorbike riders may find demanding. Most homestays in Don Village can arrange a xe ôm transfer or a guide to ride with you.",
+          },
+          { type: "heading", text: "Other Routes" },
+          {
+            type: "paragraph",
+            text: "From Phố Đoàn market town, the direct distance to Hieu Village is around 12km. An alternative approach follows a scenic 25km road from Cành Nàng town, running alongside rice terraces on both sides of the stream. The final approach into the village is on a smaller road that descends to the stream.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hieu Village",
+        blocks: [
+          { type: "heading", text: "The Stream and the Waterfall" },
+          {
+            type: "paragraph",
+            text: "The village is built around the Hiêu Stream, and the layout follows the water - houses on the slopes, terraces along the edges, and footpaths crossing back and forth on bamboo and concrete bridges. The waterfall (Hieu Waterfall) drops in tiers through the village itself, with the largest tier just below the main hamlet, splitting into two branches that meet at the base in a natural pool roughly 1m deep - shallow enough for a relaxed swim. The water itself has an unusual quality: cool in summer and noticeably warmer in winter than the surrounding air.",
+          },
+          { type: "heading", text: "Walking the Village and Local Farming" },
+          {
+            type: "paragraph",
+            text: "Walking the village takes 1 to 2 hours and includes the bridges, the rice terraces, and access points to the upper waterfall pools. Local Thai families farm rice and raise Cổ Lũng ducks on the stream - the ducks are a regional delicacy and feature on most homestay menus.",
+          },
+          { type: "heading", text: "Phố Đoàn Market and the Quiet Pace" },
+          {
+            type: "paragraph",
+            text: "If you have more time, nearby Phố Đoàn market is worth the detour: a centuries-old market dating back to the French resistance era, held only on Thursday and Sunday mornings, where Kinh, Mường, and Thái communities gather as much to socialise as to trade - some goods are still bartered rather than bought with cash. The village itself is genuinely small and you will likely encounter more farmers than other visitors outside of weekends, though tourism has grown substantially in recent years, with over a dozen community-run homestays now clustered around the waterfall itself.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hieu Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hieu Village pairs well with Don Village as a day trip or a one-night stop - the contrast between the larger, busier Don Village and the smaller, water-defined Hieu Village shows two different sides of Thai village life in Pù Luông. For photography, Hieu Village has more visual variety than Don Village because of the stream, the waterfall tiers, and the bamboo bridges - but the rice terraces here are smaller and less wide-angle dramatic.",
+          },
+          {
+            type: "paragraph",
+            text: "Solo travellers in particular often prefer Hieu Village for its slower pace and more personal homestay scale. Avoid weekends in peak season if you are looking for the quietest experience.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
