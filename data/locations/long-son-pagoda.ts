@@ -60,7 +60,7 @@ export const longSonPagoda: Location = {
           { type: "heading", text: "Founder and Later History" },
           {
             type: "paragraph",
-            text: "The pagoda was founded in 1886 by Hòa thượng Ngộ Trí (also recorded as Thích Ngộ Chí, dharma name Phổ Trí, 1856-1935), a monk from Vĩnh Xương who had taken part in anti-French resistance in his youth before entering monastic life. In 1936 the pagoda was donated to the An Nam Buddhist Studies Association and remains the seat of Khánh Hòa's provincial Buddhist association today.",
+            text: "Its founder, Hòa thượng Ngộ Trí (also recorded as Thích Ngộ Chí, dharma name Phổ Trí, 1856-1935), was a monk from Vĩnh Xương who had taken part in anti-French resistance in his youth before entering monastic life. In 1936 the pagoda was donated to the An Nam Buddhist Studies Association and remains the seat of Khánh Hòa's provincial Buddhist association today.",
           },
           { type: "heading", text: "The Climb to the Summit" },
           {
