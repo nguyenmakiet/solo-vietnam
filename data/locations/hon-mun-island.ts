@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honMunIsland: Location = {
   slug: "hon-mun-island",
   name: "Hòn Mun Island",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.17068371125258,
@@ -37,14 +37,85 @@ export const honMunIsland: Location = {
     "A waterproof phone pouch is worth bringing if you want underwater photos or video without renting a proper camera",
   ],
   content: {
-    intro:
-      "Hòn Mun - 'Ebony Island' - takes its name from the limestone cliffs and caves on the island's southeast side, weathered into striking formations as dark as ebony wood. It's a small rocky island 10km southeast of Nha Trang city, the core zone of the Nha Trang Bay Marine Protected Area (established 2001, one of Vietnam's first) and historically the premier diving site in the bay - often ranked among the four most beautiful islands in Nha Trang Bay. In the mid-2000s the reef was valued at around US$70 million for its biodiversity and was home to more than 340 recorded coral species - the richest reef system in Vietnam at the time. That reputation, still repeated in a lot of older travel content, took a serious hit starting around 2020: a June 2022 survey found coral loss exceeding 70% compared to 2015 levels in numerous locations, prompting Nha Trang authorities to temporarily close the island to swimming, diving, and boat traffic later that month while a fish farming operation was relocated out of the strictly protected zone and conservation measures (surveillance cameras, crown-of-thorns starfish removal, seabed clean-ups) were put in place. A subsequent survey found average coral coverage had fallen to around 41.6% in the healthiest zone (the northeast) and as low as 7.8% in the worst-affected zone (the southwest), down from over 50% across most zones in 2015, and a global coral bleaching event in 2024 added further, if comparatively moderate, damage on top of that. As of early 2026, the more encouraging update is that field surveys by Nha Trang Bay's Conservation Division in the years since have reported genuine recovery, with young coral colonies now growing at high survival rates in areas that were bare rock rubble in 2022, and natural coral reproduction cycles functioning normally again - a sign that water quality has stabilised enough to support real regeneration. The reef is best understood right now as a conservation story in progress rather than either the pristine showcase of old guides or the write-off some 2022-era coverage suggested. The island itself is steep and largely inaccessible on land - visitors approach by boat and enter the water directly from the surface.",
-    howToGetThere:
-      "Hòn Mun is only accessible by boat. Diving and snorkeling tours depart from Cầu Đá pier in southern Nha Trang city, approximately 5km from the central beach strip. The boat journey takes about 45 minutes. Multiple operators run daily tours - prices vary significantly based on group size, equipment quality, and which reefs are included. Day tours typically depart 7:30-8:00 AM and return by 3:00-4:00 PM, covering 3-4 islands with a snorkeling or diving stop at Hòn Mun. Dedicated diving tours with certified instruction are also available for beginners.",
-    whatToExpect:
-      "Results at Hòn Mun now vary more than older guides suggest, and depend heavily on which section of reef your boat visits and when recent surveys were done. The northern and western sides generally hold more surviving and recovering coral and marine life; southern and eastern sections took the heaviest hit in 2022 and some areas are still visibly recovering rather than fully restored. On a good day, in a well-chosen spot, there's real coral, young colonies establishing themselves, and a reasonable variety of reef fish; a poorly chosen spot, or an operator that doesn't prioritise the healthier sections, can still be disappointing. The reef begins at 3-5 metres depth and extends to 20+ metres on the deeper dive sites. Snorkelers access the shallower sections directly from the surface; divers descend through the coral slope to the deeper formations. Fins and snorkel flippers are not permitted in the water here, and life jackets are compulsory while swimming - part of the marine park's rules to reduce physical damage to the recovering reef. The island surface is steep and rocky with minimal beach - the experience is entirely water-based, and unlike some of the other islands on a typical Nha Trang tour, Hòn Mun has no motorised thrill rides (no jet skis, parasailing, or banana boats) - it's purely a nature and reef-focused stop. A novelty here is the floating 'sea bar' - inflatable platforms anchored offshore where visitors can sit or lie down with food and drinks, at a higher price than the standard snacks. Most tours anchor in a sheltered bay for lunch before moving to the next island.",
-    travelTips:
-      "Hòn Mun's quality depends heavily on the operator, arguably more so now than ever - Cheaper island-hopping tours (some as cheap as 150,000 VND) tend to anchor at the same overcrowded, more degraded reef sections with poor equipment; mid-range and dedicated diving operators are more likely to prioritise the healthier northern and western reef patches and provide a meaningfully better experience. If diving specifically is the priority, book with a PADI-certified dive centre in Nha Trang rather than a general island tour, and don't be shy about asking upfront which reef sections they typically visit. The marine park fee is separate from the tour cost and collected at the pier. October and November bring rough seas and suspended tours - check conditions before booking. It's worth going in with realistic expectations: Hòn Mun remains a worthwhile stop and a genuine marine protected area with active conservation work underway, but it's a reef in recovery rather than the pristine showcase it once was.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hòn Mun Island Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hòn Mun - 'Ebony Island' - takes its name from the limestone cliffs and caves on the island's southeast side, weathered into striking formations as dark as ebony wood. It's a small rocky island 10km southeast of Nha Trang city, the core zone of the Nha Trang Bay Marine Protected Area (established 2001, one of Vietnam's first) and historically the premier diving site in the bay - often ranked among the four most beautiful islands in Nha Trang Bay. In the mid-2000s the reef was valued at around US$70 million for its biodiversity and was home to more than 340 recorded coral species - the richest reef system in Vietnam at the time.",
+          },
+          { type: "heading", text: "Coral Decline Since 2020" },
+          {
+            type: "paragraph",
+            text: "That reputation, still repeated in a lot of older travel content, took a serious hit starting around 2020: a June 2022 survey found coral loss exceeding 70% compared to 2015 levels in numerous locations, prompting Nha Trang authorities to temporarily close the island to swimming, diving, and boat traffic later that month while a fish farming operation was relocated out of the strictly protected zone and conservation measures (surveillance cameras, crown-of-thorns starfish removal, seabed clean-ups) were put in place. A subsequent survey found average coral coverage had fallen to around 41.6% in the healthiest zone (the northeast) and as low as 7.8% in the worst-affected zone (the southwest), down from over 50% across most zones in 2015, and a global coral bleaching event in 2024 added further, if comparatively moderate, damage on top of that.",
+          },
+          { type: "heading", text: "Recovery Status in 2026" },
+          {
+            type: "paragraph",
+            text: "As of early 2026, the more encouraging update is that field surveys by Nha Trang Bay's Conservation Division in the years since have reported genuine recovery, with young coral colonies now growing at high survival rates in areas that were bare rock rubble in 2022, and natural coral reproduction cycles functioning normally again - a sign that water quality has stabilised enough to support real regeneration. The reef is best understood right now as a conservation story in progress rather than either the pristine showcase of old guides or the write-off some 2022-era coverage suggested. The island itself is steep and largely inaccessible on land - visitors approach by boat and enter the water directly from the surface.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hòn Mun Island",
+        blocks: [
+          { type: "heading", text: "Boats from Cầu Đá Pier" },
+          {
+            type: "paragraph",
+            text: "Hòn Mun is only accessible by boat. Diving and snorkeling tours depart from Cầu Đá pier in southern Nha Trang city, approximately 5km from the central beach strip. The boat journey takes about 45 minutes.",
+          },
+          { type: "heading", text: "Tours and Schedules" },
+          {
+            type: "paragraph",
+            text: "Multiple operators run daily tours - prices vary significantly based on group size, equipment quality, and which reefs are included. Day tours typically depart 7:30-8:00 AM and return by 3:00-4:00 PM, covering 3-4 islands with a snorkeling or diving stop at Hòn Mun. Dedicated diving tours with certified instruction are also available for beginners.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hòn Mun Island",
+        blocks: [
+          { type: "heading", text: "Reef Conditions" },
+          {
+            type: "paragraph",
+            text: "Results at Hòn Mun now vary more than older guides suggest, and depend heavily on which section of reef your boat visits and when recent surveys were done. The northern and western sides generally hold more surviving and recovering coral and marine life; southern and eastern sections took the heaviest hit in 2022 and some areas are still visibly recovering rather than fully restored. On a good day, in a well-chosen spot, there's real coral, young colonies establishing themselves, and a reasonable variety of reef fish; a poorly chosen spot, or an operator that doesn't prioritise the healthier sections, can still be disappointing.",
+          },
+          { type: "heading", text: "Snorkeling and Diving Depths" },
+          {
+            type: "paragraph",
+            text: "The reef begins at 3-5 metres depth and extends to 20+ metres on the deeper dive sites. Snorkelers access the shallower sections directly from the surface; divers descend through the coral slope to the deeper formations. Fins and snorkel flippers are not permitted in the water here, and life jackets are compulsory while swimming - part of the marine park's rules to reduce physical damage to the recovering reef.",
+          },
+          { type: "heading", text: "The Island, Sea Bar and Lunch" },
+          {
+            type: "paragraph",
+            text: "The island surface is steep and rocky with minimal beach - the experience is entirely water-based, and unlike some of the other islands on a typical Nha Trang tour, Hòn Mun has no motorised thrill rides (no jet skis, parasailing, or banana boats) - it's purely a nature and reef-focused stop. A novelty here is the floating 'sea bar' - inflatable platforms anchored offshore where visitors can sit or lie down with food and drinks, at a higher price than the standard snacks. Most tours anchor in a sheltered bay for lunch before moving to the next island.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hòn Mun Island",
+        blocks: [
+          { type: "heading", text: "Choosing an Operator" },
+          {
+            type: "paragraph",
+            text: "Hòn Mun's quality depends heavily on the operator, arguably more so now than ever - Cheaper island-hopping tours (some as cheap as 150,000 VND) tend to anchor at the same overcrowded, more degraded reef sections with poor equipment; mid-range and dedicated diving operators are more likely to prioritise the healthier northern and western reef patches and provide a meaningfully better experience. If diving specifically is the priority, book with a PADI-certified dive centre in Nha Trang rather than a general island tour, and don't be shy about asking upfront which reef sections they typically visit. The marine park fee is separate from the tour cost and collected at the pier.",
+          },
+          { type: "heading", text: "Season and Expectations" },
+          {
+            type: "paragraph",
+            text: "October and November bring rough seas and suspended tours - check conditions before booking. It's worth going in with realistic expectations: Hòn Mun remains a worthwhile stop and a genuine marine protected area with active conservation work underway, but it's a reef in recovery rather than the pristine showcase it once was.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

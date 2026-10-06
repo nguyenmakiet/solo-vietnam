@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const ngocSonTemple: Location = {
   slug: "ngoc-son-temple",
   name: "Ngoc Son Temple",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.030680946550152,
@@ -48,14 +48,82 @@ export const ngocSonTemple: Location = {
     "The area around the lake and temple gets crowded, especially around Tết - keep a crossbody bag and keep an eye on your belongings",
   ],
   content: {
-    intro:
-      "Ngoc Son Temple - Jade Mountain Temple - occupies a small island (Đảo Ngọc) in the northeastern section of Hoan Kiem Lake - if Turtle Tower marks the lake's south, Ngọc Sơn sits opposite in the northeast - connected to the shore by the distinctive red Huc Bridge (Bridge of the Rising Sun). The site's naming history stretches back centuries before the temple's current form: named 'Ngọc Tượng' when Lý Thái Tổ moved the capital to Thăng Long, renamed 'Ngọc Sơn' under the Trần dynasty to honour soldiers who died fighting the Mongol-Yuan invasions, then fell into ruin. Lord Trịnh Giang later built Khánh Thụy Palace on the site, which was partly destroyed at the end of the Lê dynasty and rebuilt by villagers as Đền Khánh Thụy; a philanthropist named Tín Trai subsequently built a Buddhist pagoda, Chùa Ngọc Sơn, on part of the old palace foundation, which was later converted into Đền Tam Thánh (Temple of the Three Saints) and eventually took the name Đền Ngọc Sơn. According to a stele inside the temple, the current temple was founded in autumn 1841, and in a major 1865 renovation led by the scholar Nguyễn Văn Siêu, the complex gained the features that define it today: Đình Trấn Ba (Trấn Ba Pavilion), the red Huc Bridge, Tháp Bút (the Pen Tower, a favourite spot for students and exam candidates), and Đài Nghiên (the Inkstone). It is dedicated primarily to General Trần Hưng Đạo, the 13th-century military commander who led Vietnamese forces to defeat two Mongol invasions, and to Văn Xương Đế Quân, a deity revered in folk religion and Taoism as patron of scholarly success, alongside further shrines to the Buddha, Tam Tòa Thánh Mẫu (the Mother Goddesses), and a Công Đồng altar - reflecting the 'tam giáo đồng nguyên' (three religions, one origin) syncretism of Vietnamese Buddhism, Confucianism, and Taoism. The temple was recognised as a Special National Relic of Vietnam in 2013. It also houses two preserved specimens of the giant Yangtze soft-shell turtle displayed side by side in glass cases - one that died in 1967, and the other, the last known individual in Hoan Kiem Lake, found dead in 2016 - both tied to the lake's founding legend.",
-    howToGetThere:
-      "Ngoc Son Temple is accessed via the Huc Bridge on the northern shore of Hoan Kiem Lake. The bridge entrance is on Đinh Tiên Hoàng street, the road running along the eastern side of the lake. From the main Old Quarter streets, the lake and bridge are visible and walkable within 5-10 minutes from any point in the Hoàn Kiếm district.",
-    whatToExpect:
-      "The visit follows a defined path across the Huc Bridge, through the Ink Slab gateway tower, and into the temple courtyard and main hall. The complex is compact - the full visit takes 20-30 minutes at a considered pace. The main hall houses the large altar to Trần Hưng Đạo alongside the preserved turtle specimen, which is displayed in a glass case and is genuinely impressive in scale. The surrounding views from the island back toward the lake shore and the Turtle Tower are among the better vantage points on Hoan Kiem Lake. The atmosphere inside the temple - incense, offering tables, Vietnamese families making prayers - is that of an active religious site rather than a museum.",
-    travelTips:
-      "Ngoc Son Temple is a compact but contextually rich visit that rewards visitors who read about the Hoan Kiem legend and the history of General Trần Hưng Đạo before arriving. Without this context, the temple is simply a small complex with an interesting stuffed turtle. With it, the site connects to two of the most significant episodes in Vietnamese history - the founding myth of Hanoi and the defeat of the Mongol invasions - in a single compact space. The entrance fee is modest whatever the current rate, and the visit pairs naturally with the lake perimeter walk.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ngoc Son Temple Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ngoc Son Temple - Jade Mountain Temple - occupies a small island (Đảo Ngọc) in the northeastern section of Hoan Kiem Lake - if Turtle Tower marks the lake's south, Ngọc Sơn sits opposite in the northeast - connected to the shore by the distinctive red Huc Bridge (Bridge of the Rising Sun).",
+          },
+          { type: "heading", text: "History of the Site" },
+          {
+            type: "paragraph",
+            text: "The site's naming history stretches back centuries before the temple's current form: named 'Ngọc Tượng' when Lý Thái Tổ moved the capital to Thăng Long, renamed 'Ngọc Sơn' under the Trần dynasty to honour soldiers who died fighting the Mongol-Yuan invasions, then fell into ruin. Lord Trịnh Giang later built Khánh Thụy Palace on the site, which was partly destroyed at the end of the Lê dynasty and rebuilt by villagers as Đền Khánh Thụy; a philanthropist named Tín Trai subsequently built a Buddhist pagoda, Chùa Ngọc Sơn, on part of the old palace foundation, which was later converted into Đền Tam Thánh (Temple of the Three Saints) and eventually took the name Đền Ngọc Sơn. According to a stele inside the temple, the current temple was founded in autumn 1841, and in a major 1865 renovation led by the scholar Nguyễn Văn Siêu, the complex gained the features that define it today: Đình Trấn Ba (Trấn Ba Pavilion), the red Huc Bridge, Tháp Bút (the Pen Tower, a favourite spot for students and exam candidates), and Đài Nghiên (the Inkstone).",
+          },
+          { type: "heading", text: "Dedication to Trần Hưng Đạo" },
+          {
+            type: "paragraph",
+            text: "It is dedicated primarily to General Trần Hưng Đạo, the 13th-century military commander who led Vietnamese forces to defeat two Mongol invasions, and to Văn Xương Đế Quân, a deity revered in folk religion and Taoism as patron of scholarly success, alongside further shrines to the Buddha, Tam Tòa Thánh Mẫu (the Mother Goddesses), and a Công Đồng altar - reflecting the 'tam giáo đồng nguyên' (three religions, one origin) syncretism of Vietnamese Buddhism, Confucianism, and Taoism. The temple was recognised as a Special National Relic of Vietnam in 2013.",
+          },
+          { type: "heading", text: "The Preserved Giant Turtles" },
+          {
+            type: "paragraph",
+            text: "It also houses two preserved specimens of the giant Yangtze soft-shell turtle displayed side by side in glass cases - one that died in 1967, and the other, the last known individual in Hoan Kiem Lake, found dead in 2016 - both tied to the lake's founding legend.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ngoc Son Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ngoc Son Temple is accessed via the Huc Bridge on the northern shore of Hoan Kiem Lake. The bridge entrance is on Đinh Tiên Hoàng street, the road running along the eastern side of the lake. From the main Old Quarter streets, the lake and bridge are visible and walkable within 5-10 minutes from any point in the Hoàn Kiếm district.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ngoc Son Temple",
+        blocks: [
+          { type: "heading", text: "The Path to the Temple" },
+          {
+            type: "paragraph",
+            text: "The visit follows a defined path across the Huc Bridge, through the Ink Slab gateway tower, and into the temple courtyard and main hall. The complex is compact - the full visit takes 20-30 minutes at a considered pace.",
+          },
+          { type: "heading", text: "The Main Hall" },
+          {
+            type: "paragraph",
+            text: "The main hall houses the large altar to Trần Hưng Đạo alongside the preserved turtle specimen, which is displayed in a glass case and is genuinely impressive in scale.",
+          },
+          { type: "heading", text: "Views and Atmosphere" },
+          {
+            type: "paragraph",
+            text: "The surrounding views from the island back toward the lake shore and the Turtle Tower are among the better vantage points on Hoan Kiem Lake. The atmosphere inside the temple - incense, offering tables, Vietnamese families making prayers - is that of an active religious site rather than a museum.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ngoc Son Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ngoc Son Temple is a compact but contextually rich visit that rewards visitors who read about the Hoan Kiem legend and the history of General Trần Hưng Đạo before arriving. Without this context, the temple is simply a small complex with an interesting stuffed turtle. With it, the site connects to two of the most significant episodes in Vietnamese history - the founding myth of Hanoi and the defeat of the Mongol invasions - in a single compact space.",
+          },
+          {
+            type: "paragraph",
+            text: "The entrance fee is modest whatever the current rate, and the visit pairs naturally with the lake perimeter walk.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

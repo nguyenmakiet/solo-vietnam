@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const elephantMountain: Location = {
   slug: "elephant-mountain",
   name: "Elephant Mountain",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dak-lak"],
   destination: "",
   lat: 12.481628765573047,
@@ -48,14 +48,79 @@ export const elephantMountain: Location = {
     "Go early morning or evening for cooler temperatures and better light for photos",
   ],
   content: {
-    intro:
-      "Elephant Mountain - known locally as Đá Voi Mẹ - is Vietnam's largest monolithic granite rock, in Hòa Sơn commune (in what was formerly known as the Yang Tao area before administrative boundaries were redrawn), roughly 40km from Buôn Ma Thuột via Highway 27 toward Lắk Lake. Despite being called a 'mountain', it's technically a single enormous granite boulder rather than a true mountain: sources put its length at around 200 metres, base circumference at roughly 500 metres, and height at somewhere between 30 and 50 metres depending on the source. From a distance, its shape resembles a giant elephant resting against the Central Highlands landscape, which gives it its name. About 5km away, in neighbouring Liên Sơn commune, sits a second, smaller rock known as Đá Voi Cha ('Father Elephant Rock', roughly 70m long and 180m in circumference - noticeably smaller than its 'Mother' counterpart), and together the pair are sometimes called Đá Voi Yang Tao. No one is certain how old either formation is, and locals tell a genuinely distinctive legend that gives the rock its most evocative local nickname, 'hòn đá biết đi' ('the walking stone'): according to the story, both rocks have mysteriously shifted position over the generations without explanation - Đá Voi Cha is said to have gradually moved closer to the mountain over time, while Đá Voi Mẹ supposedly once faced Lắk Lake to the north before turning up overnight in its current spot in the rice-field valley; one version of the tale even holds that the rock slides down to the paddy fields to 'drink water' during the rainy season. A separate, more romantic legend ties the pair to a forbidden young couple whose loyal elephants turned to stone so they could remain together forever in the highlands, which is why some visiting couples - and reportedly singles or the heartbroken - come to the rocks to confide in them or pray for lasting love. To the M'nông community locally, Đá Voi is regarded as a guardian spirit of the village, so visitors are encouraged to treat the site with respect. The rock was recognised as Vietnam's largest natural monolith in the country's official records of enduring records (Kỷ lục Việt Nam). The surrounding area is part of Đắk Lắk's coffee-growing highlands and a short distance from Chư Yang Sin National Park.",
-    howToGetThere:
-      "Buôn Ma Thuột is the capital of Đắk Lắk province and has a domestic airport with daily flights from Ho Chi Minh City (1 hour) and Hanoi (1.5 hours). By road from HCMC, the journey via Highway 14 takes approximately 5-6 hours. From Buôn Ma Thuột city centre, Elephant Mountain (Đá Voi Mẹ) is about 40km away via Highway 27, heading toward Lắk Lake - roughly 45 minutes to an hour by motorbike or car, with the rock visible from the road. Ride-hailing services and taxis both cover this route.",
-    whatToExpect:
-      "The rock itself is the whole show - an enormous, smooth granite surface you climb via a gently sloping route to a summit with panoramic views over the surrounding rice paddies, Yang Réh Lake, and, on a clear day, the Chư Yang Sin range. The climb takes around 10-20 minutes at a comfortable pace, but the surface offers very few real handholds, so footing matters far more than the modest climbing time suggests - go slowly and skip it entirely in wind or rain, when the risk of a fall or being blown off balance is real. If pricing is currently in effect at the site, it reportedly includes a complimentary homemade drink. Đá Voi Cha, the smaller paired rock (roughly 70m long versus Đá Voi Mẹ's 200m), sits about 5km away in open farmland and makes for an easy add-on stop, along with the chance to visit a nearby M'nông village.",
-    travelTips:
-      "Elephant Mountain works best as a half-day add-on to a Buôn Ma Thuột base rather than the main reason to visit the area - the climb itself is short, so pair it with Đá Voi Cha, a M'nông village visit, or a stop at a local coffee farm to make the trip out worthwhile. Buôn Ma Thuột itself is one of the more underrated bases in Vietnam for travellers wanting something different from the coastal and northern circuits, combining highland culture, coffee at its source, and landscapes unlike anywhere else in the country. Budget at least a night or two in the city, using Elephant Mountain as one stop among several - Lắk Lake, further along the same road, is a natural pairing for the same day or trip.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Elephant Mountain Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Elephant Mountain - known locally as Đá Voi Mẹ - is Vietnam's largest monolithic granite rock, in Hòa Sơn commune (in what was formerly known as the Yang Tao area before administrative boundaries were redrawn), roughly 40km from Buôn Ma Thuột via Highway 27 toward Lắk Lake. Despite being called a 'mountain', it's technically a single enormous granite boulder rather than a true mountain: sources put its length at around 200 metres, base circumference at roughly 500 metres, and height at somewhere between 30 and 50 metres depending on the source. From a distance, its shape resembles a giant elephant resting against the Central Highlands landscape, which gives it its name.",
+          },
+          { type: "heading", text: "Đá Voi Cha, the Paired Rock" },
+          {
+            type: "paragraph",
+            text: "About 5km away, in neighbouring Liên Sơn commune, sits a second, smaller rock known as Đá Voi Cha ('Father Elephant Rock', roughly 70m long and 180m in circumference - noticeably smaller than its 'Mother' counterpart), and together the pair are sometimes called Đá Voi Yang Tao.",
+          },
+          { type: "heading", text: "Legends of the Elephant Rocks" },
+          {
+            type: "paragraph",
+            text: "No one is certain how old either formation is, and locals tell a genuinely distinctive legend that gives the rock its most evocative local nickname, 'hòn đá biết đi' ('the walking stone'): according to the story, both rocks have mysteriously shifted position over the generations without explanation - Đá Voi Cha is said to have gradually moved closer to the mountain over time, while Đá Voi Mẹ supposedly once faced Lắk Lake to the north before turning up overnight in its current spot in the rice-field valley; one version of the tale even holds that the rock slides down to the paddy fields to 'drink water' during the rainy season. A separate, more romantic legend ties the pair to a forbidden young couple whose loyal elephants turned to stone so they could remain together forever in the highlands, which is why some visiting couples - and reportedly singles or the heartbroken - come to the rocks to confide in them or pray for lasting love. To the M'nông community locally, Đá Voi is regarded as a guardian spirit of the village, so visitors are encouraged to treat the site with respect.",
+          },
+          { type: "heading", text: "Records and Surroundings" },
+          {
+            type: "paragraph",
+            text: "The rock was recognised as Vietnam's largest natural monolith in the country's official records of enduring records (Kỷ lục Việt Nam). The surrounding area is part of Đắk Lắk's coffee-growing highlands and a short distance from Chư Yang Sin National Park.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Elephant Mountain",
+        blocks: [
+          { type: "heading", text: "Getting to Buôn Ma Thuột" },
+          {
+            type: "paragraph",
+            text: "Buôn Ma Thuột is the capital of Đắk Lắk province and has a domestic airport with daily flights from Ho Chi Minh City (1 hour) and Hanoi (1.5 hours). By road from HCMC, the journey via Highway 14 takes approximately 5-6 hours.",
+          },
+          { type: "heading", text: "From Buôn Ma Thuột" },
+          {
+            type: "paragraph",
+            text: "From Buôn Ma Thuột city centre, Elephant Mountain (Đá Voi Mẹ) is about 40km away via Highway 27, heading toward Lắk Lake - roughly 45 minutes to an hour by motorbike or car, with the rock visible from the road. Ride-hailing services and taxis both cover this route.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Elephant Mountain",
+        blocks: [
+          { type: "heading", text: "Climbing the Rock" },
+          {
+            type: "paragraph",
+            text: "The rock itself is the whole show - an enormous, smooth granite surface you climb via a gently sloping route to a summit with panoramic views over the surrounding rice paddies, Yang Réh Lake, and, on a clear day, the Chư Yang Sin range. The climb takes around 10-20 minutes at a comfortable pace, but the surface offers very few real handholds, so footing matters far more than the modest climbing time suggests - go slowly and skip it entirely in wind or rain, when the risk of a fall or being blown off balance is real. If pricing is currently in effect at the site, it reportedly includes a complimentary homemade drink.",
+          },
+          { type: "heading", text: "Visiting Đá Voi Cha" },
+          {
+            type: "paragraph",
+            text: "Đá Voi Cha, the smaller paired rock (roughly 70m long versus Đá Voi Mẹ's 200m), sits about 5km away in open farmland and makes for an easy add-on stop, along with the chance to visit a nearby M'nông village.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Elephant Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Elephant Mountain works best as a half-day add-on to a Buôn Ma Thuột base rather than the main reason to visit the area - the climb itself is short, so pair it with Đá Voi Cha, a M'nông village visit, or a stop at a local coffee farm to make the trip out worthwhile. Buôn Ma Thuột itself is one of the more underrated bases in Vietnam for travellers wanting something different from the coastal and northern circuits, combining highland culture, coffee at its source, and landscapes unlike anywhere else in the country. Budget at least a night or two in the city, using Elephant Mountain as one stop among several - Lắk Lake, further along the same road, is a natural pairing for the same day or trip.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

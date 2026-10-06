@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuocTinhFishingVillage: Location = {
   slug: "phuoc-tinh-fishing-village",
   name: "Phước Tỉnh Fishing Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.402412684439296,
@@ -48,14 +48,89 @@ export const phuocTinhFishingVillage: Location = {
     "Phước Tỉnh leans simple and unhurried rather than crowded or lively like Vũng Tàu proper - it has its own harbourside embankment for a stroll, and Dinh Cô temple in nearby Long Hải is an easy add-on if you have more time",
   ],
   content: {
-    intro:
-      "Phước Tỉnh is a large fishing commune of over 300 years' standing in Long Điền district, Bà Rịa-Vũng Tàu province, and one of the oldest and most productive fishing ports in southern Vietnam - sometimes called Vietnam's richest fishing village. The village formed early in the region's settlement, sitting east of the Cửa Lấp river mouth on a strip of land that juts into the sea in a distinctive plowshare shape, with clear water and a gently sloping beach. According to the historical gazetteer Đại Nam Nhất Thống Chí, locals built Đàn Kỳ Phong here as early as the Gia Long period (1802-1820) to worship sea deities - a reflection of how long fishing has anchored life in this town. Per capita income here has been cited around 2,500 USD a year, well above many surrounding areas, and the village has earned a 'billionaire village' reputation locally, with a number of fishermen owning paired trawlers worth tens of billions of đồng. Beyond fishing itself, Phước Tỉnh has built real wealth from shipbuilding: five shipyards here employ hundreds of skilled tradespeople and many more local labourers, launching upwards of 40 offshore fishing vessels a year, and the town has a strong reputation for ship repair, drawing boats from as far as Quảng Ngãi, Phú Yên, and Kiên Giang. Today the harbor holds hundreds of fishing vessels - trawlers, gill-netters, and the round basket boats (thuyền thúng) used for nearshore work - and the morning fish market that operates on the beach and dock from before dawn remains a genuine scene of commercial fishing activity, though in recent years the offshore fishing industry has slowed somewhat as marine resources have declined, giving the village a bit more of its old, unhurried character back. The town has grown up entirely around the fishing and shipbuilding industries: fish sauce factories, dried seafood processing, ice plants, boat repair yards, and the dense residential fabric of a community that has lived from the sea for generations. It is not a built-up tourist destination, but it is one of the most visually compelling and authentic working port experiences accessible from Ho Chi Minh City, with its own harbourside embankment for a quieter evening walk. Note: this is a different place from Phước Hải, a similarly-named fishing town in neighbouring Đất Đỏ district that has its own well-known waterfront promenade (bờ kè) and seafood dining scene - easy to confuse by name, but a separate destination.",
-    howToGetThere:
-      "Phước Tỉnh is approximately 100km from Ho Chi Minh City, in Long Điền district of Bà Rịa-Vũng Tàu. From HCMC, the most direct route is via the Long Thành-Dầu Giây Expressway to Bà Rịa city, then Provincial Road 44A south toward Long Điền and Phước Tỉnh - total driving time about 1.5-2 hours. From Vũng Tàu city, Phước Tỉnh is roughly 15-20km away and takes around 25-35 minutes by road, depending on traffic and route - a scenic coastal drive worth taking slowly. By bus from HCMC, services run to Bà Rịa and Long Điền; motorbike taxi covers the final stretch. For the early morning market, driving or riding from HCMC the night before and staying in Long Hải or Long Điền is the most practical approach.",
-    whatToExpect:
-      "The harbor area is centered around the fish market dock and the boat anchorage. From before dawn, fishing vessels return and unload directly onto the dock where buyers - wholesalers, restaurant owners, and individual shoppers - bid for and purchase the catch. The range of seafood is exceptional: shrimp, squid, crab, various fish species, and shellfish, all live or freshly caught. The market is loud, wet, and smells strongly of the sea - an environment of genuine commercial activity rather than tourist performance. The harbor itself, viewed from the elevated road above, shows the full scale of the fishing fleet anchored in rows - nearby ports in the same district (Tân Phước, Phước Hiệp) are so busy during fishing season that hundreds of boats can be waiting for space meant for a fraction of that number. The surrounding streets have dried seafood shops, fish sauce producers, and basic seafood restaurants serving the catch at low prices.",
-    travelTips:
-      "Phước Tỉnh is the answer to the question of what Mũi Né's fishing village used to feel like before resort development enclosed it. The scale is larger - this is a proper fishing port, not a village - and the activity is more commercial, but the authenticity is complete. If you're based in HCMC and want a day trip that combines genuine working Vietnam with good food and a beach option afterward, the Phước Tỉnh morning market followed by Phước Hải or Lộc An beach in the afternoon is one of the best day-trip circuits available from the city. The drive along the Bà Rịa coast is underrated as a motorbike road.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Phước Tỉnh Fishing Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phước Tỉnh is a large fishing commune of over 300 years' standing in Long Điền district, Bà Rịa-Vũng Tàu province, and one of the oldest and most productive fishing ports in southern Vietnam - sometimes called Vietnam's richest fishing village. The village formed early in the region's settlement, sitting east of the Cửa Lấp river mouth on a strip of land that juts into the sea in a distinctive plowshare shape, with clear water and a gently sloping beach.",
+          },
+          { type: "heading", text: "History" },
+          {
+            type: "paragraph",
+            text: "According to the historical gazetteer Đại Nam Nhất Thống Chí, locals built Đàn Kỳ Phong here as early as the Gia Long period (1802-1820) to worship sea deities - a reflection of how long fishing has anchored life in this town.",
+          },
+          { type: "heading", text: "Fishing and Shipbuilding Economy" },
+          {
+            type: "paragraph",
+            text: "Per capita income here has been cited around 2,500 USD a year, well above many surrounding areas, and the village has earned a 'billionaire village' reputation locally, with a number of fishermen owning paired trawlers worth tens of billions of đồng. Beyond fishing itself, Phước Tỉnh has built real wealth from shipbuilding: five shipyards here employ hundreds of skilled tradespeople and many more local labourers, launching upwards of 40 offshore fishing vessels a year, and the town has a strong reputation for ship repair, drawing boats from as far as Quảng Ngãi, Phú Yên, and Kiên Giang. Today the harbor holds hundreds of fishing vessels - trawlers, gill-netters, and the round basket boats (thuyền thúng) used for nearshore work - and the morning fish market that operates on the beach and dock from before dawn remains a genuine scene of commercial fishing activity, though in recent years the offshore fishing industry has slowed somewhat as marine resources have declined, giving the village a bit more of its old, unhurried character back. The town has grown up entirely around the fishing and shipbuilding industries: fish sauce factories, dried seafood processing, ice plants, boat repair yards, and the dense residential fabric of a community that has lived from the sea for generations.",
+          },
+          { type: "heading", text: "Why Visit" },
+          {
+            type: "paragraph",
+            text: "It is not a built-up tourist destination, but it is one of the most visually compelling and authentic working port experiences accessible from Ho Chi Minh City, with its own harbourside embankment for a quieter evening walk.",
+          },
+          { type: "heading", text: "Not to Be Confused with Phước Hải" },
+          {
+            type: "paragraph",
+            text: "Note: this is a different place from Phước Hải, a similarly-named fishing town in neighbouring Đất Đỏ district that has its own well-known waterfront promenade (bờ kè) and seafood dining scene - easy to confuse by name, but a separate destination.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Phước Tỉnh Fishing Village",
+        blocks: [
+          { type: "heading", text: "From Ho Chi Minh City" },
+          {
+            type: "paragraph",
+            text: "Phước Tỉnh is approximately 100km from Ho Chi Minh City, in Long Điền district of Bà Rịa-Vũng Tàu. From HCMC, the most direct route is via the Long Thành-Dầu Giây Expressway to Bà Rịa city, then Provincial Road 44A south toward Long Điền and Phước Tỉnh - total driving time about 1.5-2 hours.",
+          },
+          { type: "heading", text: "From Vũng Tàu" },
+          {
+            type: "paragraph",
+            text: "From Vũng Tàu city, Phước Tỉnh is roughly 15-20km away and takes around 25-35 minutes by road, depending on traffic and route - a scenic coastal drive worth taking slowly.",
+          },
+          { type: "heading", text: "Bus and Overnight Options" },
+          {
+            type: "paragraph",
+            text: "By bus from HCMC, services run to Bà Rịa and Long Điền; motorbike taxi covers the final stretch. For the early morning market, driving or riding from HCMC the night before and staying in Long Hải or Long Điền is the most practical approach.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Phước Tỉnh Fishing Village",
+        blocks: [
+          { type: "heading", text: "The Morning Fish Market" },
+          {
+            type: "paragraph",
+            text: "The harbor area is centered around the fish market dock and the boat anchorage. From before dawn, fishing vessels return and unload directly onto the dock where buyers - wholesalers, restaurant owners, and individual shoppers - bid for and purchase the catch. The range of seafood is exceptional: shrimp, squid, crab, various fish species, and shellfish, all live or freshly caught. The market is loud, wet, and smells strongly of the sea - an environment of genuine commercial activity rather than tourist performance.",
+          },
+          { type: "heading", text: "The Harbor and Surrounding Streets" },
+          {
+            type: "paragraph",
+            text: "The harbor itself, viewed from the elevated road above, shows the full scale of the fishing fleet anchored in rows - nearby ports in the same district (Tân Phước, Phước Hiệp) are so busy during fishing season that hundreds of boats can be waiting for space meant for a fraction of that number. The surrounding streets have dried seafood shops, fish sauce producers, and basic seafood restaurants serving the catch at low prices.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Phước Tỉnh Fishing Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phước Tỉnh is the answer to the question of what Mũi Né's fishing village used to feel like before resort development enclosed it. The scale is larger - this is a proper fishing port, not a village - and the activity is more commercial, but the authenticity is complete. If you're based in HCMC and want a day trip that combines genuine working Vietnam with good food and a beach option afterward, the Phước Tỉnh morning market followed by Phước Hải or Lộc An beach in the afternoon is one of the best day-trip circuits available from the city. The drive along the Bà Rịa coast is underrated as a motorbike road.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

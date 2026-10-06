@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const mauSonMountain: Location = {
   slug: "mau-son-mountain",
   name: "Mẫu Sơn Mountain",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lang-son"],
   destination: "",
   lat: 21.849873373608105,
@@ -46,14 +46,103 @@ export const mauSonMountain: Location = {
     "If riding a motorbike yourself, use a low gear on the steeper sections of the ascent and descent rather than relying on the brakes alone",
   ],
   content: {
-    intro:
-      "Mẫu Sơn is a highland massif of roughly 80 peaks spanning around 10,000 hectares in Lạng Sơn province, straddling the old district boundaries of Lộc Bình and Cao Lộc, about 30km east of Lạng Sơn city and hard against the Chinese border. Its highest point, Phia Pò - also called Núi Cha ('Father Mountain') or, in some sources, Núi Công Sơn - reaches 1,541m, while the nearby Phia Mè ('Mother Mountain', 1,520m) hosts a weather station. About 5,000 hectares of the massif remains dense forest, home to rare tree species and wildlife. It is one of the few locations in Vietnam that experiences genuinely subalpine winter conditions - temperatures regularly drop below 0°C in December and January, and snowfall, while infrequent, does occur during severe cold events driven by cold air masses from southern China. Mẫu Sơn has a notable colonial history: the French developed it as a hill-station retreat in the early 20th century, building villas and a hotel to escape the lowland heat, and the roofless, overgrown ruins of some of these structures still stand on the upper slopes today. The mountain sits in the northeastern highlands, a region of limestone karst, dense forest, and minority communities (primarily Tày, Nùng, and Dao) that has historically been more connected to southern China than to the lowland Vietnamese cultural sphere. The combination of the cold-climate reputation, the cloud sea views, the colonial ruins, and the relative accessibility from Hanoi - about 4 hours - has made Mẫu Sơn increasingly popular with Vietnamese visitors seeking highland scenery without the long journey to the northwest. Worth knowing before you go: a major redevelopment project by Sun Group - the conglomerate behind large-scale cable car and resort developments at Bà Nà Hills and Fansipan - is now being implemented at Mẫu Sơn, including a cable car and resort/tourism facilities. The investment plan was revised in June 2026 (total investment reportedly around 7.35 trillion VND), with Phase I scheduled for 2026 and initial operations targeted for late 2027. Given Sun Group's track record elsewhere, the quiet, slightly eerie, underdeveloped character that currently defines Mẫu Sơn is likely to change substantially over the next few years - worth checking current news before you visit if that atmosphere is specifically what you're after, or worth visiting sooner rather than later if you want to see it before the transformation.",
-    howToGetThere:
-      "Mẫu Sơn is approximately 170-180km northeast of Hanoi via National Highway 1A and National Highway 4B - about 3.5-4 hours by car or 4-5 hours by motorbike. Lạng Sơn city is the transit point; from there, follow Highway 4B east toward the turnoff, then the final mountain road up to the resort area is roughly 15km of winding, occasionally rough road (about 30km covers the fuller stretch from Lạng Sơn city), taking around 1 hour by motorbike from the turnoff. When navigating, search specifically for 'Khu du lịch Mẫu Sơn' rather than a generic 'Mẫu Sơn' pin, since the wrong pin has reportedly led some visitors to a remote dead-end near the border instead. Buses run from Hanoi to Lạng Sơn city regularly; from Lạng Sơn, motorbike taxi or rented motorbike covers the mountain road. The road is paved throughout but steep and narrow on the upper section, and sections have been reported under reconstruction with heavy truck traffic at times.",
-    whatToExpect:
-      "The lower slopes are forested with temperate species including pine and oak, transitioning to sub-montane scrub near the summit area. The upper plateau has guesthouses, a few restaurants, walking trails, and the scattered ruins of French colonial-era villas and a former hotel, left roofless and overgrown since the mid-20th century. Also worth seeking out is Linh Địa Cổ, an ancient sacred site at around 1,190m elevation on the mountain's slope, laid out according to traditional feng shui principles with Núi Mẹ (Mother Mountain) at its back, and Núi Phặt Chỉ, another site regarded as spiritually significant nearby. Suối Long Đầu, a stream partway down the mountain, is a popular spot for bathing and camping, and Dao ethnic minority villages - including Khuổi Tẳng and Khuổi Cấp - lie along some of the descent routes, offering a glimpse of local minority life and cuisine. The surrounding terraced rice fields have their own seasonal rhythm: locals plant in April-May, when hydrangea flowers also bloom across the mountain, and the terraces turn a deep gold at harvest time in July-August. On clear winter mornings the views extend over the Lạng Sơn lowlands and toward China. In the cold season the temperature can feel extreme by Vietnamese standards - locals wear padded jackets and visitors from the south are reliably unprepared. The frost on vegetation and occasional ice on the road surface in December and January are genuine, not tourist performance. Cloud sea conditions produce striking photography from the summit when valley cloud fills below the ridgeline. Facilities remain basic overall - expect a single main rest house area at the peak rather than a developed resort, with fog capable of obscuring the views entirely on a bad day.",
-    travelTips:
-      "Mẫu Sơn fills a specific niche in northern Vietnam travel: accessible enough from Hanoi for a weekend trip, cold enough in winter to feel genuinely different from lowland Vietnam, and northeast enough to be off the standard tourist circuit that concentrates on the northwest. If you're in Hanoi in December or January and want to experience what passes for a Vietnamese winter, Mẫu Sơn is the practical choice. The snow headline is real but unreliable - treat it as a possibility rather than a guarantee, and the visit delivers on its own terms regardless of the weather, between the cloud sea, the colonial ruins, and the cool climate. Combining with Lạng Sơn city's markets and the nearby Bắc Sơn valley (50km west) makes a proper 2-day northeast circuit.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Mẫu Sơn Mountain Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mẫu Sơn is a highland massif of roughly 80 peaks spanning around 10,000 hectares in Lạng Sơn province, straddling the old district boundaries of Lộc Bình and Cao Lộc, about 30km east of Lạng Sơn city and hard against the Chinese border. Its highest point, Phia Pò - also called Núi Cha ('Father Mountain') or, in some sources, Núi Công Sơn - reaches 1,541m, while the nearby Phia Mè ('Mother Mountain', 1,520m) hosts a weather station. About 5,000 hectares of the massif remains dense forest, home to rare tree species and wildlife.",
+          },
+          { type: "heading", text: "Winter Climate" },
+          {
+            type: "paragraph",
+            text: "It is one of the few locations in Vietnam that experiences genuinely subalpine winter conditions - temperatures regularly drop below 0°C in December and January, and snowfall, while infrequent, does occur during severe cold events driven by cold air masses from southern China.",
+          },
+          { type: "heading", text: "French Colonial History" },
+          {
+            type: "paragraph",
+            text: "Mẫu Sơn has a notable colonial history: the French developed it as a hill-station retreat in the early 20th century, building villas and a hotel to escape the lowland heat, and the roofless, overgrown ruins of some of these structures still stand on the upper slopes today.",
+          },
+          { type: "heading", text: "Highland Setting" },
+          {
+            type: "paragraph",
+            text: "The mountain sits in the northeastern highlands, a region of limestone karst, dense forest, and minority communities (primarily Tày, Nùng, and Dao) that has historically been more connected to southern China than to the lowland Vietnamese cultural sphere. The combination of the cold-climate reputation, the cloud sea views, the colonial ruins, and the relative accessibility from Hanoi - about 4 hours - has made Mẫu Sơn increasingly popular with Vietnamese visitors seeking highland scenery without the long journey to the northwest.",
+          },
+          { type: "heading", text: "Planned Sun Group Development" },
+          {
+            type: "paragraph",
+            text: "Worth knowing before you go: a major redevelopment project by Sun Group - the conglomerate behind large-scale cable car and resort developments at Bà Nà Hills and Fansipan - is now being implemented at Mẫu Sơn, including a cable car and resort/tourism facilities. The investment plan was revised in June 2026 (total investment reportedly around 7.35 trillion VND), with Phase I scheduled for 2026 and initial operations targeted for late 2027. Given Sun Group's track record elsewhere, the quiet, slightly eerie, underdeveloped character that currently defines Mẫu Sơn is likely to change substantially over the next few years - worth checking current news before you visit if that atmosphere is specifically what you're after, or worth visiting sooner rather than later if you want to see it before the transformation.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Mẫu Sơn Mountain",
+        blocks: [
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "Mẫu Sơn is approximately 170-180km northeast of Hanoi via National Highway 1A and National Highway 4B - about 3.5-4 hours by car or 4-5 hours by motorbike. Lạng Sơn city is the transit point; from there, follow Highway 4B east toward the turnoff, then the final mountain road up to the resort area is roughly 15km of winding, occasionally rough road (about 30km covers the fuller stretch from Lạng Sơn city), taking around 1 hour by motorbike from the turnoff. When navigating, search specifically for 'Khu du lịch Mẫu Sơn' rather than a generic 'Mẫu Sơn' pin, since the wrong pin has reportedly led some visitors to a remote dead-end near the border instead.",
+          },
+          { type: "heading", text: "By Bus and Motorbike" },
+          {
+            type: "paragraph",
+            text: "Buses run from Hanoi to Lạng Sơn city regularly; from Lạng Sơn, motorbike taxi or rented motorbike covers the mountain road. The road is paved throughout but steep and narrow on the upper section, and sections have been reported under reconstruction with heavy truck traffic at times.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Mẫu Sơn Mountain",
+        blocks: [
+          { type: "heading", text: "Forest and the Upper Plateau" },
+          {
+            type: "paragraph",
+            text: "The lower slopes are forested with temperate species including pine and oak, transitioning to sub-montane scrub near the summit area. The upper plateau has guesthouses, a few restaurants, walking trails, and the scattered ruins of French colonial-era villas and a former hotel, left roofless and overgrown since the mid-20th century.",
+          },
+          { type: "heading", text: "Linh Địa Cổ and Suối Long Đầu" },
+          {
+            type: "paragraph",
+            text: "Also worth seeking out is Linh Địa Cổ, an ancient sacred site at around 1,190m elevation on the mountain's slope, laid out according to traditional feng shui principles with Núi Mẹ (Mother Mountain) at its back, and Núi Phặt Chỉ, another site regarded as spiritually significant nearby. Suối Long Đầu, a stream partway down the mountain, is a popular spot for bathing and camping, and Dao ethnic minority villages - including Khuổi Tẳng and Khuổi Cấp - lie along some of the descent routes, offering a glimpse of local minority life and cuisine.",
+          },
+          { type: "heading", text: "Terraced Rice Fields and Views" },
+          {
+            type: "paragraph",
+            text: "The surrounding terraced rice fields have their own seasonal rhythm: locals plant in April-May, when hydrangea flowers also bloom across the mountain, and the terraces turn a deep gold at harvest time in July-August. On clear winter mornings the views extend over the Lạng Sơn lowlands and toward China.",
+          },
+          { type: "heading", text: "Cold Season and Cloud Sea" },
+          {
+            type: "paragraph",
+            text: "In the cold season the temperature can feel extreme by Vietnamese standards - locals wear padded jackets and visitors from the south are reliably unprepared. The frost on vegetation and occasional ice on the road surface in December and January are genuine, not tourist performance. Cloud sea conditions produce striking photography from the summit when valley cloud fills below the ridgeline.",
+          },
+          { type: "heading", text: "Facilities" },
+          {
+            type: "paragraph",
+            text: "Facilities remain basic overall - expect a single main rest house area at the peak rather than a developed resort, with fog capable of obscuring the views entirely on a bad day.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Mẫu Sơn Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mẫu Sơn fills a specific niche in northern Vietnam travel: accessible enough from Hanoi for a weekend trip, cold enough in winter to feel genuinely different from lowland Vietnam, and northeast enough to be off the standard tourist circuit that concentrates on the northwest. If you're in Hanoi in December or January and want to experience what passes for a Vietnamese winter, Mẫu Sơn is the practical choice. The snow headline is real but unreliable - treat it as a possibility rather than a guarantee, and the visit delivers on its own terms regardless of the weather, between the cloud sea, the colonial ruins, and the cool climate.",
+          },
+          {
+            type: "paragraph",
+            text: "Combining with Lạng Sơn city's markets and the nearby Bắc Sơn valley (50km west) makes a proper 2-day northeast circuit.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const eightLadiesCave: Location = {
   slug: "eight-ladies-cave",
   name: "Eight Ladies Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.502701222486007,
@@ -40,14 +40,68 @@ export const eightLadiesCave: Location = {
     "Time needed: 15-30 minutes for the memorial site itself",
   ],
   content: {
-    intro:
-      "Eight Ladies Cave - Hang Tám Cô - is part of the special national historical relic complex on Road 20 - Quyết Thắng, at Km 16+200, in Tân Trạch commune within Phong Nha-Kẻ Bàng National Park, roughly 20m deep and 10m wide. The name predates the 1972 tragedy: locals had long called this stretch after a nearby liaison station once staffed by eight cheerful young women, and the name stuck even after a different, mixed-gender group died here. On the afternoon of November 14, 1972, eight young Youth Volunteers (Thanh Niên Xung Phong) - accounts consistently describe four men and four women - were sheltering in the cave when American bombing struck the area; a large dislodged rock sealed the entrance, trapping all eight inside, who died from lack of oxygen and food. Their ages are usually given as around 18-20, with one member older (different sources cite this as either 25 or 37). Sources differ on the exact names recorded, though several commemorative accounts list them as Trần Thị Tơ, Lê Thị Mai, Đỗ Thị Loan, and Lê Thị Lương among the women, and Nguyễn Văn Huệ, Hoàng Văn Vụ, Nguyễn Mậu Kỷ, and Nguyễn Hữu Phương among the men - members of Company 217 (part of the Quảng Bình Youth Volunteer Corps) tasked with keeping this stretch of the strategic Road 20 open under heavy bombing during the war, and reportedly originally from Thanh Hóa province. The cave itself remained sealed for nearly 24 years: on March 22, 1996, a search team used explosives to clear the blocking rock and recovered all eight sets of remains, which were formally handed over and returned to their home province of Thanh Hóa for burial on June 4, 1996. The cave sits within a larger memorial complex that also includes the Đền thờ các Anh hùng liệt sĩ đường 20 - Quyết Thắng (Memorial Temple for the Road 20 - Quyết Thắng martyrs), and the site - officially the Special National Historical Relic of Road 20 - Quyết Thắng and Eight Youth Volunteers Cave - is a place of pilgrimage for Vietnamese travellers, particularly around the anniversary of the incident and on War Invalids and Martyrs Day (27 July).",
-    howToGetThere:
-      "Eight Ladies Cave sits directly on Road 20 - Quyết Thắng at Km 16+200, roughly 55-70km northwest of Đồng Hới (sources vary on the exact distance) and about 1.5-2 hours by road from Phong Nha. It's reachable by motorbike, car, or bus - no guide or trekking is required, and the road is paved. One common route follows Road 20 - Quyết Thắng to Trạ Ang bridge, then continues around 4km further to the site; an alternative is via the western Hồ Chí Minh trail to Trạ Ang bridge, then following signage the rest of the way.",
-    whatToExpect:
-      "The site includes the cave itself - a modest opening in the roadside karst, now sealed and not enterable - along with a memorial area, shrine, and the adjacent Road 20 martyrs' memorial temple nearby. Information panels and a memorial wall explain the history for visitors. It's a quiet, contemplative stop rather than a physical exploration site: most visitors spend a short time here paying respects and reading the history before continuing their journey. The broader Road 20 - Quyết Thắng corridor, of which this is one stop, was a heavily bombed strategic supply route during the war, and other memorial sites and a war cemetery lie along the same road.",
-    travelTips:
-      "Eight Ladies Cave is one of the more accessible historical stops in the Phong Nha area precisely because it sits right on the road rather than requiring a trek - it fits easily into a day that also includes the Phong Nha cave system or a drive along Road 20 - Quyết Thắng itself, a scenic route through national park forest with its own wartime significance. Because the visit itself is brief, most travellers treat it as one stop among several on a fuller day out along this corridor rather than a standalone destination.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Eight Ladies Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Eight Ladies Cave - Hang Tám Cô - is part of the special national historical relic complex on Road 20 - Quyết Thắng, at Km 16+200, in Tân Trạch commune within Phong Nha-Kẻ Bàng National Park, roughly 20m deep and 10m wide. The name predates the 1972 tragedy: locals had long called this stretch after a nearby liaison station once staffed by eight cheerful young women, and the name stuck even after a different, mixed-gender group died here.",
+          },
+          { type: "heading", text: "The November 14, 1972 Tragedy" },
+          {
+            type: "paragraph",
+            text: "On the afternoon of November 14, 1972, eight young Youth Volunteers (Thanh Niên Xung Phong) - accounts consistently describe four men and four women - were sheltering in the cave when American bombing struck the area; a large dislodged rock sealed the entrance, trapping all eight inside, who died from lack of oxygen and food. Their ages are usually given as around 18-20, with one member older (different sources cite this as either 25 or 37). Sources differ on the exact names recorded, though several commemorative accounts list them as Trần Thị Tơ, Lê Thị Mai, Đỗ Thị Loan, and Lê Thị Lương among the women, and Nguyễn Văn Huệ, Hoàng Văn Vụ, Nguyễn Mậu Kỷ, and Nguyễn Hữu Phương among the men - members of Company 217 (part of the Quảng Bình Youth Volunteer Corps) tasked with keeping this stretch of the strategic Road 20 open under heavy bombing during the war, and reportedly originally from Thanh Hóa province.",
+          },
+          { type: "heading", text: "Recovery and the Memorial Complex" },
+          {
+            type: "paragraph",
+            text: "The cave itself remained sealed for nearly 24 years: on March 22, 1996, a search team used explosives to clear the blocking rock and recovered all eight sets of remains, which were formally handed over and returned to their home province of Thanh Hóa for burial on June 4, 1996. The cave sits within a larger memorial complex that also includes the Đền thờ các Anh hùng liệt sĩ đường 20 - Quyết Thắng (Memorial Temple for the Road 20 - Quyết Thắng martyrs), and the site - officially the Special National Historical Relic of Road 20 - Quyết Thắng and Eight Youth Volunteers Cave - is a place of pilgrimage for Vietnamese travellers, particularly around the anniversary of the incident and on War Invalids and Martyrs Day (27 July).",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Eight Ladies Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Eight Ladies Cave sits directly on Road 20 - Quyết Thắng at Km 16+200, roughly 55-70km northwest of Đồng Hới (sources vary on the exact distance) and about 1.5-2 hours by road from Phong Nha. It's reachable by motorbike, car, or bus - no guide or trekking is required, and the road is paved. One common route follows Road 20 - Quyết Thắng to Trạ Ang bridge, then continues around 4km further to the site; an alternative is via the western Hồ Chí Minh trail to Trạ Ang bridge, then following signage the rest of the way.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Eight Ladies Cave",
+        blocks: [
+          { type: "heading", text: "The Cave and Memorial" },
+          {
+            type: "paragraph",
+            text: "The site includes the cave itself - a modest opening in the roadside karst, now sealed and not enterable - along with a memorial area, shrine, and the adjacent Road 20 martyrs' memorial temple nearby. Information panels and a memorial wall explain the history for visitors. It's a quiet, contemplative stop rather than a physical exploration site: most visitors spend a short time here paying respects and reading the history before continuing their journey.",
+          },
+          { type: "heading", text: "The Road 20 - Quyết Thắng Corridor" },
+          {
+            type: "paragraph",
+            text: "The broader Road 20 - Quyết Thắng corridor, of which this is one stop, was a heavily bombed strategic supply route during the war, and other memorial sites and a war cemetery lie along the same road.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Eight Ladies Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Eight Ladies Cave is one of the more accessible historical stops in the Phong Nha area precisely because it sits right on the road rather than requiring a trek - it fits easily into a day that also includes the Phong Nha cave system or a drive along Road 20 - Quyết Thắng itself, a scenic route through national park forest with its own wartime significance. Because the visit itself is brief, most travellers treat it as one stop among several on a fuller day out along this corridor rather than a standalone destination.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bidoupNuiBaNationalPark: Location = {
   slug: "bidoup-nui-ba-national-park",
   name: "Bidoup Núi Bà National Park",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 12.133961464408484,
@@ -47,14 +47,92 @@ export const bidoupNuiBaNationalPark: Location = {
     "Nights on the mountain get genuinely cold - pack a warm, quick-dry jacket and a sleeping bag if camping, along with 2-3 changes of socks for river crossings and sweat, and comfortable sandals to wear around camp after a day in trekking boots",
   ],
   content: {
-    intro:
-      "Bidoup Núi Bà National Park covers roughly 64,000-64,800 hectares (sources vary slightly) across Lạc Dương district and part of neighbouring Đam Rông district in Lâm Đồng province, centred on the Đà Lạt Plateau north of Đà Lạt city, with elevation across the park ranging from about 1,400m to 2,287m and around 91% of the park still primary forest. The name 'Bidoup' is said to mean 'bowing' or 'prostrating,' tied to a local legend: Bidoup and neighbouring Langbiang were brothers, with Bidoup the younger of the two - when Bidoup grew taller than his older brother, Langbiang refused to accept it, struck Bidoup's head, and pulled it down, which is why the summit today looks notched or indented on one side rather than perfectly round. The park protects one of the largest continuous blocks of montane cloud forest remaining in southern Vietnam - a landscape of moss-draped conifers (including red pine, Calocedrus, Fokienia, the Đà Lạt five-needle pine, and the rare flat-needle pine found almost nowhere else), tree ferns, and epiphyte-covered canopy, famed locally as something of a kingdom for wild orchid species (over 250 recorded), that bears little resemblance to the lowland jungle further south. Along the harder summit trekking route stands a Fokienia (Pơ mu) tree estimated at around 1,300 years old, one of the park's most memorable single landmarks. The highest point, Bidoup Peak at 2,287 metres, is the highest point of the Đà Lạt Plateau and is sometimes called the 'roof of the Central Highlands' or 'roof of Lâm Viên' - not, as sometimes claimed, one of Vietnam's highest peaks nationally, since several mountains in the far north exceed 3,000m. The park's biodiversity is nonetheless among the richest of any protected area in the country: recorded flora runs to more than 1,400-1,900 vascular plant species (estimates vary by source), alongside 441 vertebrate species, and it's recognised as one of Vietnam's four national biodiversity centres and one of the world's 221 Endemic Bird Areas. Rare and endangered mammals recorded here include the pygmy slow loris, black-shanked douc, southern yellow-cheeked gibbon, Asian black bear, dhole, and gaur, though sightings of any of these on a typical visit are rare to nonexistent - this is a park better known for what lives quietly in its canopy than for dramatic wildlife encounters.",
-    howToGetThere:
-      "Bidoup Núi Bà National Park headquarters is located in Đa Nhim commune, Lạc Dương district, approximately 50km north of Đà Lạt city. By motorbike from Đà Lạt, the drive takes about 1.5 hours on a good road through pine forest and highland villages, generally following Highway 723 (the route that eventually continues toward Nha Trang) before turning off toward the park headquarters. Most visitors arrange transport and guides through Đà Lạt operators, as independent access to the park interior requires a guide regardless. The park entrance gate is clearly signposted from the main road.",
-    whatToExpect:
-      "The park offers several trekking options ranging from 2-hour nature walks near the headquarters to multi-day wilderness routes to Bidoup summit. Short day walks, including the well-marked roughly 3-3.2km trail to Thiên Thai waterfall, pass through secondary forest and give a taste of the cloud forest atmosphere - moss, mist, and bird calls - without requiring overnight gear, and are manageable for most fitness levels. For the summit itself, there are two named route options covering around 26-27km in total: an easier loop running DT723 - Bidoup ranger station - the summit - K'long K'lanh station - Bidoup forest, which crosses the Đa Nhim River by a cable-pulled raft and camps overnight near the summit on the boundary between pine forest and evergreen closed forest (with a cold stream and toilets, but no electricity - water needs to be boiled); and a harder, steeper route in the reverse direction starting from K'long K'lanh station, crossing a suspension bridge, passing a rest-stop rock with views toward Langbiang on clear days and the park's roughly 1,300-year-old Pơ mu tree, before a final 45-degree scramble to the summit using both hands and feet. Don't confuse this with the separately popular 'Bidoup - Tà Giang' route nearby, which crosses open grassland rather than climbing to the true summit - if reaching 2,287m and the deep primary/mossy forest is the goal, make sure your route and guide are specifically headed for Bidoup Peak. The longer routes enter primary forest where the tree canopy closes overhead and the trail narrows to a single track through undergrowth, with river crossings on some routes that aren't recommended for young children or elderly visitors. Wildlife sightings on any given walk depend heavily on season and luck, but bird activity is reliable - the endemic species are genuinely findable with a knowledgeable guide, particularly around the Giang Ly area, which records most of the Đà Lạt Plateau's endemic bird species.",
-    travelTips:
-      "Bidoup rewards visitors who treat it as a destination rather than a day trip add-on from Đà Lạt. The short walks accessible without much planning give a flavour of the forest but not the full experience - a two-day trek to the summit or into the core zone is where the park's character becomes apparent. Birdwatchers in particular should plan multiple days and hire a specialist birding guide through the park or through Đà Lạt operators who know the endemic species' territories. The park is undervisited relative to its ecological significance, which means solitude is available even at popular sites - and it makes a genuinely quieter, less touristy alternative to nearby Lang Biang mountain for travellers who've already done that hike.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bidoup Núi Bà National Park Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bidoup Núi Bà National Park covers roughly 64,000-64,800 hectares (sources vary slightly) across Lạc Dương district and part of neighbouring Đam Rông district in Lâm Đồng province, centred on the Đà Lạt Plateau north of Đà Lạt city, with elevation across the park ranging from about 1,400m to 2,287m and around 91% of the park still primary forest.",
+          },
+          { type: "heading", text: "The Legend Behind the Name" },
+          {
+            type: "paragraph",
+            text: "The name 'Bidoup' is said to mean 'bowing' or 'prostrating,' tied to a local legend: Bidoup and neighbouring Langbiang were brothers, with Bidoup the younger of the two - when Bidoup grew taller than his older brother, Langbiang refused to accept it, struck Bidoup's head, and pulled it down, which is why the summit today looks notched or indented on one side rather than perfectly round.",
+          },
+          { type: "heading", text: "Cloud Forest and Ancient Trees" },
+          {
+            type: "paragraph",
+            text: "The park protects one of the largest continuous blocks of montane cloud forest remaining in southern Vietnam - a landscape of moss-draped conifers (including red pine, Calocedrus, Fokienia, the Đà Lạt five-needle pine, and the rare flat-needle pine found almost nowhere else), tree ferns, and epiphyte-covered canopy, famed locally as something of a kingdom for wild orchid species (over 250 recorded), that bears little resemblance to the lowland jungle further south. Along the harder summit trekking route stands a Fokienia (Pơ mu) tree estimated at around 1,300 years old, one of the park's most memorable single landmarks.",
+          },
+          { type: "heading", text: "Bidoup Peak" },
+          {
+            type: "paragraph",
+            text: "The highest point, Bidoup Peak at 2,287 metres, is the highest point of the Đà Lạt Plateau and is sometimes called the 'roof of the Central Highlands' or 'roof of Lâm Viên' - not, as sometimes claimed, one of Vietnam's highest peaks nationally, since several mountains in the far north exceed 3,000m.",
+          },
+          { type: "heading", text: "Biodiversity and Rare Wildlife" },
+          {
+            type: "paragraph",
+            text: "The park's biodiversity is nonetheless among the richest of any protected area in the country: recorded flora runs to more than 1,400-1,900 vascular plant species (estimates vary by source), alongside 441 vertebrate species, and it's recognised as one of Vietnam's four national biodiversity centres and one of the world's 221 Endemic Bird Areas. Rare and endangered mammals recorded here include the pygmy slow loris, black-shanked douc, southern yellow-cheeked gibbon, Asian black bear, dhole, and gaur, though sightings of any of these on a typical visit are rare to nonexistent - this is a park better known for what lives quietly in its canopy than for dramatic wildlife encounters.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bidoup Núi Bà National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bidoup Núi Bà National Park headquarters is located in Đa Nhim commune, Lạc Dương district, approximately 50km north of Đà Lạt city. By motorbike from Đà Lạt, the drive takes about 1.5 hours on a good road through pine forest and highland villages, generally following Highway 723 (the route that eventually continues toward Nha Trang) before turning off toward the park headquarters.",
+          },
+          { type: "heading", text: "Guides and Access" },
+          {
+            type: "paragraph",
+            text: "Most visitors arrange transport and guides through Đà Lạt operators, as independent access to the park interior requires a guide regardless. The park entrance gate is clearly signposted from the main road.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bidoup Núi Bà National Park",
+        blocks: [
+          { type: "heading", text: "Trekking Options" },
+          {
+            type: "paragraph",
+            text: "The park offers several trekking options ranging from 2-hour nature walks near the headquarters to multi-day wilderness routes to Bidoup summit. Short day walks, including the well-marked roughly 3-3.2km trail to Thiên Thai waterfall, pass through secondary forest and give a taste of the cloud forest atmosphere - moss, mist, and bird calls - without requiring overnight gear, and are manageable for most fitness levels.",
+          },
+          { type: "heading", text: "Summit Routes" },
+          {
+            type: "paragraph",
+            text: "For the summit itself, there are two named route options covering around 26-27km in total: an easier loop running DT723 - Bidoup ranger station - the summit - K'long K'lanh station - Bidoup forest, which crosses the Đa Nhim River by a cable-pulled raft and camps overnight near the summit on the boundary between pine forest and evergreen closed forest (with a cold stream and toilets, but no electricity - water needs to be boiled); and a harder, steeper route in the reverse direction starting from K'long K'lanh station, crossing a suspension bridge, passing a rest-stop rock with views toward Langbiang on clear days and the park's roughly 1,300-year-old Pơ mu tree, before a final 45-degree scramble to the summit using both hands and feet. Don't confuse this with the separately popular 'Bidoup - Tà Giang' route nearby, which crosses open grassland rather than climbing to the true summit - if reaching 2,287m and the deep primary/mossy forest is the goal, make sure your route and guide are specifically headed for Bidoup Peak.",
+          },
+          { type: "heading", text: "Primary Forest and Birdlife" },
+          {
+            type: "paragraph",
+            text: "The longer routes enter primary forest where the tree canopy closes overhead and the trail narrows to a single track through undergrowth, with river crossings on some routes that aren't recommended for young children or elderly visitors. Wildlife sightings on any given walk depend heavily on season and luck, but bird activity is reliable - the endemic species are genuinely findable with a knowledgeable guide, particularly around the Giang Ly area, which records most of the Đà Lạt Plateau's endemic bird species.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bidoup Núi Bà National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bidoup rewards visitors who treat it as a destination rather than a day trip add-on from Đà Lạt. The short walks accessible without much planning give a flavour of the forest but not the full experience - a two-day trek to the summit or into the core zone is where the park's character becomes apparent.",
+          },
+          {
+            type: "paragraph",
+            text: "Birdwatchers in particular should plan multiple days and hire a specialist birding guide through the park or through Đà Lạt operators who know the endemic species' territories. The park is undervisited relative to its ecological significance, which means solitude is available even at popular sites - and it makes a genuinely quieter, less touristy alternative to nearby Lang Biang mountain for travellers who've already done that hike.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
