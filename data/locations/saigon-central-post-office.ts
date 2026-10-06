@@ -33,13 +33,13 @@ export const saigonCentralPostOffice: Location = {
     "saigon-central-post-office-9_ycmreh",
   ],
   seoDescription:
-    "The Saigon Central Post Office is a functioning French colonial post office completed in 1891 - often attributed to Gustave Eiffel, though the building itself was designed by architects Auguste Henri Vildieu and Alfred Foulhoux, with Eiffel's company credited for the steel roof structure - featuring a stunning barrel-vaulted interior, historic tile maps of Indochina, and a portrait of Ho Chi Minh — one of Ho Chi Minh City's most photographed colonial landmarks.",
+    "The Saigon Central Post Office is a functioning French colonial post office completed in 1891 - often attributed to Gustave Eiffel, though the building itself was designed by architects Auguste Henri Vildieu and Alfred Foulhoux, with Eiffel's company credited for the steel roof structure - featuring a stunning barrel-vaulted interior, historic tile maps of Indochina, and a portrait of Ho Chi Minh - one of Ho Chi Minh City's most photographed colonial landmarks.",
   tips: [
-    "Arrive at opening (7 AM) for the best photography — the morning light comes through the side windows and the hall is empty before tour groups arrive at 8:30 AM",
-    "The building is a working post office — you can send postcards and letters from here, which adds a genuine reason to visit beyond sightseeing",
-    "The two large tile maps on the interior walls date from the original construction and show the telegraph network of Indochina circa 1892 — worth examining closely",
+    "Arrive at opening (7 AM) for the best photography - the morning light comes through the side windows and the hall is empty before tour groups arrive at 8:30 AM",
+    "The building is a working post office - you can send postcards and letters from here, which adds a genuine reason to visit beyond sightseeing",
+    "The two large tile maps on the interior walls date from the original construction and show the telegraph network of Indochina circa 1892 - worth examining closely",
     "The portrait of Ho Chi Minh on the rear wall replaced the original French official portraits after 1975 and is now itself a historical document of the transition",
-    "Notre-Dame Cathedral is directly across the plaza (50m) — visit both in the same stop; the cathedral has been under renovation but the exterior remains accessible",
+    "Notre-Dame Cathedral is directly across the plaza (50m) - visit both in the same stop; the cathedral has been under renovation but the exterior remains accessible",
     "You'll almost certainly hear a guide or fellow traveller say Gustave Eiffel designed this building - it's a persistent Saigon tourism myth, but there's a real nuance behind it: architects Auguste Henri Vildieu and Marie-Alfred Foulhoux are credited as the building's architects, while some sources also credit Eiffel's company with the steel roof structure and other steel elements. So Eiffel likely wasn't the architect, but his firm may genuinely have had a hand in the steelwork",
   ],
   content: {
@@ -51,7 +51,7 @@ export const saigonCentralPostOffice: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "The Saigon Central Post Office — Bưu điện Trung tâm Sài Gòn — was built between 1886 and 1891 under architects Auguste Henri Vildieu and Marie-Alfred Foulhoux.",
+            text: "The Saigon Central Post Office - Bưu điện Trung tâm Sài Gòn - was built between 1886 and 1891 under architects Auguste Henri Vildieu and Marie-Alfred Foulhoux.",
           },
           { type: "heading", text: "The Gustave Eiffel Story" },
           {
@@ -71,7 +71,7 @@ export const saigonCentralPostOffice: Location = {
           { type: "heading", text: "Renovation and Daily Use" },
           {
             type: "paragraph",
-            text: "The building underwent a renovation in 2014 (reportedly around 5 billion VND) that preserved its historical character while updating its condition. Despite its tourist appeal, the building functions as it was built to function — letters and parcels move through it daily — which gives it a vitality that purely museum-converted colonial buildings lack.",
+            text: "The building underwent a renovation in 2014 (reportedly around 5 billion VND) that preserved its historical character while updating its condition. Despite its tourist appeal, the building functions as it was built to function - letters and parcels move through it daily - which gives it a vitality that purely museum-converted colonial buildings lack.",
           },
         ],
       },
@@ -87,7 +87,7 @@ export const saigonCentralPostOffice: Location = {
           { type: "heading", text: "Buses, Bikes and Grab" },
           {
             type: "paragraph",
-            text: "City buses 03, 14, 15, and 30 all stop near the area, and public bicycles or the hop-on double-decker tourist bus are other options if you're combining this with a wider city loop. The surrounding area — the former French colonial civic quarter — contains the most concentrated cluster of colonial-era buildings in the city. Grab rides from Ben Thanh Market take about 5 minutes.",
+            text: "City buses 03, 14, 15, and 30 all stop near the area, and public bicycles or the hop-on double-decker tourist bus are other options if you're combining this with a wider city loop. The surrounding area - the former French colonial civic quarter - contains the most concentrated cluster of colonial-era buildings in the city. Grab rides from Ben Thanh Market take about 5 minutes.",
           },
         ],
       },
@@ -104,7 +104,7 @@ export const saigonCentralPostOffice: Location = {
           { type: "heading", text: "Gift Shop and Photography" },
           {
             type: "paragraph",
-            text: "The gift shop along the right wall sells stamps, postcards, lacquerware, and souvenirs — the stamps in particular are worth browsing. The vaulted ceiling and the light from the tall windows create genuinely good conditions for interior architectural photography.",
+            text: "The gift shop along the right wall sells stamps, postcards, lacquerware, and souvenirs - the stamps in particular are worth browsing. The vaulted ceiling and the light from the tall windows create genuinely good conditions for interior architectural photography.",
           },
         ],
       },
@@ -116,7 +116,7 @@ export const saigonCentralPostOffice: Location = {
           { type: "heading", text: "Nearby Landmarks" },
           {
             type: "paragraph",
-            text: "The post office pairs naturally with Notre-Dame Cathedral directly across the plaza, and the whole Công Xã Paris area rewards a slow walk — the surrounding streets contain the former City Hall (now the People's Committee building, lit at night), the Opera House, and the Continental Hotel, forming one of the city's most intact concentrations of French colonial civic architecture. Nearby Đường Sách Nguyễn Văn Bình (Book Street), Bến Thành Market, and Independence Palace are all easy to combine into the same outing. An evening walk through this quarter, when the buildings are illuminated in warm light, is one of the most atmospheric experiences in Ho Chi Minh City, and the post office's exterior in particular takes on a romantic, old-world quality after dark even though the interior is closed. The post office itself closes in the evening but the exterior and plaza remain accessible.",
+            text: "The post office pairs naturally with Notre-Dame Cathedral directly across the plaza, and the whole Công Xã Paris area rewards a slow walk - the surrounding streets contain the former City Hall (now the People's Committee building, lit at night), the Opera House, and the Continental Hotel, forming one of the city's most intact concentrations of French colonial civic architecture. Nearby Đường Sách Nguyễn Văn Bình (Book Street), Bến Thành Market, and Independence Palace are all easy to combine into the same outing. An evening walk through this quarter, when the buildings are illuminated in warm light, is one of the most atmospheric experiences in Ho Chi Minh City, and the post office's exterior in particular takes on a romantic, old-world quality after dark even though the interior is closed. The post office itself closes in the evening but the exterior and plaza remain accessible.",
           },
           { type: "heading", text: "The Eiffel Myth" },
           {
@@ -129,7 +129,7 @@ export const saigonCentralPostOffice: Location = {
   },
   insights: {
     highlights: [
-      "A barrel-vaulted French colonial interior hall — among the finest examples in Southeast Asia — popularly attributed entirely to Gustave Eiffel, though the building was designed by Auguste Henri Vildieu and Alfred Foulhoux, with Eiffel's company sometimes credited for the steel roof structure",
+      "A barrel-vaulted French colonial interior hall - among the finest examples in Southeast Asia - popularly attributed entirely to Gustave Eiffel, though the building was designed by Auguste Henri Vildieu and Alfred Foulhoux, with Eiffel's company sometimes credited for the steel roof structure",
       "Original 1892 tile maps of Indochina's telegraph network mounted on the interior walls",
       "Fully functioning post office where visitors can send postcards from one of Vietnam's most beautiful buildings",
     ],
@@ -141,9 +141,9 @@ export const saigonCentralPostOffice: Location = {
       seasonal: "Open year-round; the covered interior makes it a practical stop in hot or rainy weather",
     },
     visitorTips: [
-      "Buy a postcard from the gift shop and send it from the counter — it takes 5 minutes and arrives delivered with a Saigon postmark",
+      "Buy a postcard from the gift shop and send it from the counter - it takes 5 minutes and arrives delivered with a Saigon postmark",
       "Photograph the hall from the rear (near the Ho Chi Minh portrait) looking toward the entrance for the best perspective of the vaulted ceiling",
-      "The building is free to enter and requires no ticket — just walk in through the main doors",
+      "The building is free to enter and requires no ticket - just walk in through the main doors",
     ],
     faq: [
       { question: "Is the post office free to visit?", answer: "Yes, entry is completely free. It is a functioning public building open to all visitors." },

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const plateRockReef: Location = {
   slug: "plate-rock-reef",
   name: "Ghềnh Đá Đĩa (Plate Rock Reef)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["phu-yen"],
   destination: "",
   lat: 13.354005873751277,
@@ -49,14 +49,88 @@ export const plateRockReef: Location = {
     "Wear brighter-coloured clothing if photography is a priority - it stands out well against the dark basalt",
   ],
   content: {
-    intro:
-      "Ghềnh Đá Đĩa - literally 'Plate Rock Reef' - is a coastal formation on Phú Yên's northern shoreline where basalt columns have fractured into tight hexagonal (and some pentagonal) stacks that extend directly into the East Sea. The formation is the result of ancient volcanic lava - reportedly originating from the Vân Hòa plateau in nearby Sơn Hòa district - cooling slowly against seawater, a process that produces the characteristic columnar jointing visible in the rock faces; the rock is commonly cited as being around 200 million years old, though treat that figure as a popularly repeated estimate rather than a rigorously footnoted one. The site was first recognised as a national scenic heritage site in 1998, then upgraded to Special National Heritage status (di tích quốc gia đặc biệt) by the Prime Minister in 2020. It's often compared to a small handful of similar coastal basalt column formations elsewhere in the world - Giant's Causeway in Northern Ireland, Fingal's Cave in Scotland, and Los Órganos in Spain are the most commonly cited - and has reportedly drawn praise from international travel media, though treat specific outlet name-drops with some caution since these aren't always independently verifiable. Additional smaller formations of similar rock have since been identified elsewhere in the province. Vietnam has few geological formations of this kind at sea level, which makes Ghềnh Đá Đĩa genuinely unusual in a country where most coastal scenery is defined by limestone karst or sandy beach. The reef sits at the base of a low headland in Tuy An district, accessible by a short path from the road. The protected site covers roughly 2km² in total, with the visible rock formation itself reaching about 200 metres at its longest and narrowing to around 50 metres at its narrowest point. At low tide the full extent of the columns is exposed - stacked plates of basalt ranging from fist-sized to table-wide, fitted together without mortar like a natural mosaic extending into the surf.",
-    howToGetThere:
-      "Ghềnh Đá Đĩa is located in An Ninh Đông commune, Tuy An district, approximately 35-40km north of Tuy Hòa city. By motorbike from Tuy Hòa, follow National Highway 1A north for about 30km to Chí Thạnh town, then turn right onto provincial road DT 643 and continue about 12km to reach the site - the trip takes roughly 45-60 minutes. From Quy Nhơn to the north, the reef is considerably further than it might appear on a map - around 95-110km, roughly 2.5-3 hours by car via Highway 1A and the coastal road. There is no direct public transport to the reef; renting a motorbike in Tuy Hòa is the most practical option for those based there. A small car park and ticket booth mark the entrance.",
-    whatToExpect:
-      "A short path leads from the entrance down to the reef edge (an optional electric cart is available for a small fee). The basalt columns are immediately impressive up close - the geometric precision of the hexagonal fractures looks almost engineered. The reef extends maybe 100 metres along the shore and 30–40 metres out to sea at low tide. Waves push between the columns and fill the pools in the lower sections. The sound and movement of water through the rock is constant. At high tide the outer formations are submerged and the accessible area shrinks. Photography here is straightforward - almost any composition pointing seaward works, and the rock texture holds detail well in direct light. There's little shade around the reef itself, so the midday sun can make the rocks and surrounding area genuinely hot.",
-    travelTips:
-      "Ghềnh Đá Đĩa is the kind of place where the formation itself is the entire point - there is no nearby town or beach, though a small cluster of drink and snack stalls has developed near the entrance over time. Plan to spend 1–2 hours, combine it with other Phú Yên coastal stops (Gành Đèn Lighthouse, Mằng Lăng Church, and Đầm Ô Loan lagoon are all reasonably close), and time arrival for low tide and cooler hours (early morning or late afternoon) if possible. The reef has appeared in enough travel photography that some visitors arrive with specific compositions in mind - the reality matches the photos, which is not always the case with natural landmarks. Phú Yên remains one of the less-touristed coastal provinces in central Vietnam, though the reef itself does get genuinely busy with tour groups and holiday crowds, particularly around Tết.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ghềnh Đá Đĩa (Plate Rock Reef) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ghềnh Đá Đĩa - literally 'Plate Rock Reef' - is a coastal formation on Phú Yên's northern shoreline where basalt columns have fractured into tight hexagonal (and some pentagonal) stacks that extend directly into the East Sea. The formation is the result of ancient volcanic lava - reportedly originating from the Vân Hòa plateau in nearby Sơn Hòa district - cooling slowly against seawater, a process that produces the characteristic columnar jointing visible in the rock faces; the rock is commonly cited as being around 200 million years old, though treat that figure as a popularly repeated estimate rather than a rigorously footnoted one.",
+          },
+          { type: "heading", text: "Heritage Status and Similar Formations" },
+          {
+            type: "paragraph",
+            text: "The site was first recognised as a national scenic heritage site in 1998, then upgraded to Special National Heritage status (di tích quốc gia đặc biệt) by the Prime Minister in 2020. It's often compared to a small handful of similar coastal basalt column formations elsewhere in the world - Giant's Causeway in Northern Ireland, Fingal's Cave in Scotland, and Los Órganos in Spain are the most commonly cited - and has reportedly drawn praise from international travel media, though treat specific outlet name-drops with some caution since these aren't always independently verifiable. Additional smaller formations of similar rock have since been identified elsewhere in the province. Vietnam has few geological formations of this kind at sea level, which makes Ghềnh Đá Đĩa genuinely unusual in a country where most coastal scenery is defined by limestone karst or sandy beach.",
+          },
+          { type: "heading", text: "The Site" },
+          {
+            type: "paragraph",
+            text: "The reef sits at the base of a low headland in Tuy An district, accessible by a short path from the road. The protected site covers roughly 2km² in total, with the visible rock formation itself reaching about 200 metres at its longest and narrowing to around 50 metres at its narrowest point. At low tide the full extent of the columns is exposed - stacked plates of basalt ranging from fist-sized to table-wide, fitted together without mortar like a natural mosaic extending into the surf.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ghềnh Đá Đĩa (Plate Rock Reef)",
+        blocks: [
+          { type: "heading", text: "From Tuy Hòa" },
+          {
+            type: "paragraph",
+            text: "Ghềnh Đá Đĩa is located in An Ninh Đông commune, Tuy An district, approximately 35-40km north of Tuy Hòa city. By motorbike from Tuy Hòa, follow National Highway 1A north for about 30km to Chí Thạnh town, then turn right onto provincial road DT 643 and continue about 12km to reach the site - the trip takes roughly 45-60 minutes.",
+          },
+          { type: "heading", text: "From Quy Nhơn" },
+          {
+            type: "paragraph",
+            text: "From Quy Nhơn to the north, the reef is considerably further than it might appear on a map - around 95-110km, roughly 2.5-3 hours by car via Highway 1A and the coastal road.",
+          },
+          { type: "heading", text: "Transport and Entrance" },
+          {
+            type: "paragraph",
+            text: "There is no direct public transport to the reef; renting a motorbike in Tuy Hòa is the most practical option for those based there. A small car park and ticket booth mark the entrance.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ghềnh Đá Đĩa (Plate Rock Reef)",
+        blocks: [
+          { type: "heading", text: "The Basalt Columns" },
+          {
+            type: "paragraph",
+            text: "A short path leads from the entrance down to the reef edge (an optional electric cart is available for a small fee). The basalt columns are immediately impressive up close - the geometric precision of the hexagonal fractures looks almost engineered. The reef extends maybe 100 metres along the shore and 30–40 metres out to sea at low tide.",
+          },
+          { type: "heading", text: "Tides and Waves" },
+          {
+            type: "paragraph",
+            text: "Waves push between the columns and fill the pools in the lower sections. The sound and movement of water through the rock is constant. At high tide the outer formations are submerged and the accessible area shrinks.",
+          },
+          { type: "heading", text: "Photography and Heat" },
+          {
+            type: "paragraph",
+            text: "Photography here is straightforward - almost any composition pointing seaward works, and the rock texture holds detail well in direct light. There's little shade around the reef itself, so the midday sun can make the rocks and surrounding area genuinely hot.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ghềnh Đá Đĩa (Plate Rock Reef)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ghềnh Đá Đĩa is the kind of place where the formation itself is the entire point - there is no nearby town or beach, though a small cluster of drink and snack stalls has developed near the entrance over time. Plan to spend 1–2 hours, combine it with other Phú Yên coastal stops (Gành Đèn Lighthouse, Mằng Lăng Church, and Đầm Ô Loan lagoon are all reasonably close), and time arrival for low tide and cooler hours (early morning or late afternoon) if possible.",
+          },
+          {
+            type: "paragraph",
+            text: "The reef has appeared in enough travel photography that some visitors arrive with specific compositions in mind - the reality matches the photos, which is not always the case with natural landmarks. Phú Yên remains one of the less-touristed coastal provinces in central Vietnam, though the reef itself does get genuinely busy with tour groups and holiday crowds, particularly around Tết.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

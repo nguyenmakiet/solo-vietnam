@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const angelEyeMountain: Location = {
   slug: "angel-eye-mountain",
   name: "Angel Eye Mountain (God Eye Mountain)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.77437449430503,
@@ -40,14 +40,92 @@ export const angelEyeMountain: Location = {
     "Combine with Thang Hen Lake (10 minutes away) and the Ma Phục Pass on the same day - all three are within the same Cao Bằng loop corridor between the city and Bản Giốc Waterfall",
   ],
   content: {
-    intro:
-      "Angel Eye Mountain (Núi Mắt Thần, also written as Núi Thủng - 'the mountain with a hole through it') is a limestone karst peak in Trùng Khánh district of Cao Bằng province, part of the Non Nước Cao Bằng UNESCO Global Geopark. Its defining feature is a naturally formed circular passage, locally named Phia Lông, roughly 50 metres in diameter at its widest point and positioned around 50 metres above the surrounding valley floor - a through-going hole that resembles a giant eye when viewed from the valley floor. It's a dry, fossilised cave that formed over 300 million years ago and was lifted to its current elevation by tectonic uplift during the Cenozoic. International geologists cataloguing the UNESCO Geopark gave it the English name 'Mountain Angel Eye,' which is where the mountain's English nickname comes from; locals also sometimes call it Núi Mắt Rồng ('Dragon Eye Mountain').\n\nThe mountain sits in the Thang Hen valley system - a karst landscape of cone-shaped limestone towers interspersed with more than 30 interconnected lakes at 650-700m elevation. Each year from roughly April to August, rainfall fills the valley floor into a single lake of around 15 hectares, and the mountain rises directly from the water. By September the lake drains underground and the valley returns to meadow. In Tày language the mountain is called Phja Piót - the mountain with a hole. 'Núi Mắt Thần' and 'Núi Thủng' are both widely used, more or less interchangeably, in Vietnamese media and among travellers - Mắt Thần is the more evocative, marketing-friendly name, while Núi Thủng is the plainer folk description of the same feature.\n\nThe valley's character shifts noticeably through the year: winter and spring bring a dry, windswept grassland with exposed grass mounds and wide open sky; the rainy season floods the valley and connects the wider 36-lake Thang Hen system into one dramatic sheet of water; and autumn brings soft light and a slower pace, with buffalo, cattle, and horses grazing and wallowing freely across the meadow.",
-    howToGetThere:
-      "Angel Eye Mountain is most commonly cited as about 50km from Cao Bằng city (some sources give a shorter ~30km depending on exact route and reference point), in Cao Chương commune, Trùng Khánh district. The mountain actually has two accessible faces - the Cao Chương side, where most photographers and visitors stop for the classic view, and a second face reached via Quốc Toản commune. For the popular Cao Chương-side approach: from Cao Bằng city, follow National Highway 3 for about 12km, climb the scenic Ma Phục Pass, then continue on Tỉnh lộ 205 toward Trà Lĩnh for about 7km to Thang Hen Lake, then on to Bản Danh hamlet - park vehicles at the track and walk the final 1.5 - 3km on foot through rice paddies to the mountain base. An alternative route approaches from Suối Lê-nin in Trường Hà commune, Hà Quảng district, for those coming from that direction. The total journey from Cao Bằng city takes about 1.5 - 2 hours. Motorbike is strongly preferred over car for the final stretch - the valley approach road narrows considerably near the mountain, and only motorbikes can comfortably get all the way in. The site is a natural add-on to the standard Cao Bằng loop that includes Bản Giốc Waterfall and Ngườm Ngao Cave.",
-    whatToExpect:
-      "The valley approach on foot passes through rice paddies and along stone paths with the mountain visible ahead - the circular hole is visible from the valley floor and becomes more dramatic as you get closer. At the base, a climb of about 15-20 minutes reaches the opening itself, roughly 50m in diameter at its widest - a through-going arch rather than a blind cave, positioned about 50m above the surrounding valley floor. Inside, nghiến trees (a slow-growing native ironwood) grow from the limestone floor and walls. Looking through the arch in each direction gives framed views of the valley and distant mountain ranges. A separate, longer trek leads to a summit viewpoint over the wider Phja Cao valley, crossing meadow, small streams, and gentle slopes - from up there, the hole appears as a striking landmark seen from above - but this extended trekking (as opposed to the short climb to the opening) should only be done with a local guide, since it's easy to lose the way and phone signal is weak in places. In the rainy season (roughly April-September), the walk is replaced by a raft crossing or SUP paddleboarding as the mountain rises directly from the lake surface, with jade-green water reflecting the peak and surrounding grass - a popular alternative to the dry-season visit. Around September-October, Thang Hen Lake sometimes drains away within just a few hours, a striking natural phenomenon that briefly reveals the valley floor and the nearby Nậm Trá Waterfall beneath - though the waterfall itself is at its fullest and most impressive earlier in the rainy season, running dry and replaced by grassland by the time the dry season sets in. The flat valley meadow in the dry season is suitable for camping and cycling, with space for tents well away from the mountain base.",
-    travelTips:
-      "Angel Eye Mountain is one of those geological features that photographs poorly relative to how it feels in person - the 50m hole in a limestone cliff is genuinely extraordinary at close range in a way that no image fully conveys. It sits on the Cao Bằng loop that most riders do for Bản Giốc, but is frequently skipped because it requires a detour through Thang Hen rather than the direct highway. That detour is short and the valley - with its interconnected lakes, karst towers, and meadow floor - is itself worth the deviation. The combination of Thang Hen Lake, Angel Eye Mountain, and Ma Phục Pass covers a section of Cao Bằng that most visitors miss entirely and is arguably as interesting as the more famous Bản Giốc end of the loop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Angel Eye Mountain (God Eye Mountain) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Angel Eye Mountain (Núi Mắt Thần, also written as Núi Thủng - 'the mountain with a hole through it') is a limestone karst peak in Trùng Khánh district of Cao Bằng province, part of the Non Nước Cao Bằng UNESCO Global Geopark. Its defining feature is a naturally formed circular passage, locally named Phia Lông, roughly 50 metres in diameter at its widest point and positioned around 50 metres above the surrounding valley floor - a through-going hole that resembles a giant eye when viewed from the valley floor. It's a dry, fossilised cave that formed over 300 million years ago and was lifted to its current elevation by tectonic uplift during the Cenozoic. International geologists cataloguing the UNESCO Geopark gave it the English name 'Mountain Angel Eye,' which is where the mountain's English nickname comes from; locals also sometimes call it Núi Mắt Rồng ('Dragon Eye Mountain').",
+          },
+          { type: "heading", text: "Thang Hen Valley and Its Seasonal Lake" },
+          {
+            type: "paragraph",
+            text: "The mountain sits in the Thang Hen valley system - a karst landscape of cone-shaped limestone towers interspersed with more than 30 interconnected lakes at 650-700m elevation. Each year from roughly April to August, rainfall fills the valley floor into a single lake of around 15 hectares, and the mountain rises directly from the water. By September the lake drains underground and the valley returns to meadow.",
+          },
+          { type: "heading", text: "Names of the Mountain" },
+          {
+            type: "paragraph",
+            text: "In Tày language the mountain is called Phja Piót - the mountain with a hole. 'Núi Mắt Thần' and 'Núi Thủng' are both widely used, more or less interchangeably, in Vietnamese media and among travellers - Mắt Thần is the more evocative, marketing-friendly name, while Núi Thủng is the plainer folk description of the same feature.",
+          },
+          { type: "heading", text: "The Valley Through the Year" },
+          {
+            type: "paragraph",
+            text: "The valley's character shifts noticeably through the year: winter and spring bring a dry, windswept grassland with exposed grass mounds and wide open sky; the rainy season floods the valley and connects the wider 36-lake Thang Hen system into one dramatic sheet of water; and autumn brings soft light and a slower pace, with buffalo, cattle, and horses grazing and wallowing freely across the meadow.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Angel Eye Mountain (God Eye Mountain)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Angel Eye Mountain is most commonly cited as about 50km from Cao Bằng city (some sources give a shorter ~30km depending on exact route and reference point), in Cao Chương commune, Trùng Khánh district. The mountain actually has two accessible faces - the Cao Chương side, where most photographers and visitors stop for the classic view, and a second face reached via Quốc Toản commune.",
+          },
+          { type: "heading", text: "The Cao Chương Approach" },
+          {
+            type: "paragraph",
+            text: "For the popular Cao Chương-side approach: from Cao Bằng city, follow National Highway 3 for about 12km, climb the scenic Ma Phục Pass, then continue on Tỉnh lộ 205 toward Trà Lĩnh for about 7km to Thang Hen Lake, then on to Bản Danh hamlet - park vehicles at the track and walk the final 1.5 - 3km on foot through rice paddies to the mountain base.",
+          },
+          { type: "heading", text: "Other Routes and Timing" },
+          {
+            type: "paragraph",
+            text: "An alternative route approaches from Suối Lê-nin in Trường Hà commune, Hà Quảng district, for those coming from that direction. The total journey from Cao Bằng city takes about 1.5 - 2 hours. Motorbike is strongly preferred over car for the final stretch - the valley approach road narrows considerably near the mountain, and only motorbikes can comfortably get all the way in. The site is a natural add-on to the standard Cao Bằng loop that includes Bản Giốc Waterfall and Ngườm Ngao Cave.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Angel Eye Mountain (God Eye Mountain)",
+        blocks: [
+          { type: "heading", text: "The Approach and the Opening" },
+          {
+            type: "paragraph",
+            text: "The valley approach on foot passes through rice paddies and along stone paths with the mountain visible ahead - the circular hole is visible from the valley floor and becomes more dramatic as you get closer. At the base, a climb of about 15-20 minutes reaches the opening itself, roughly 50m in diameter at its widest - a through-going arch rather than a blind cave, positioned about 50m above the surrounding valley floor. Inside, nghiến trees (a slow-growing native ironwood) grow from the limestone floor and walls. Looking through the arch in each direction gives framed views of the valley and distant mountain ranges.",
+          },
+          { type: "heading", text: "Summit Trek" },
+          {
+            type: "paragraph",
+            text: "A separate, longer trek leads to a summit viewpoint over the wider Phja Cao valley, crossing meadow, small streams, and gentle slopes - from up there, the hole appears as a striking landmark seen from above - but this extended trekking (as opposed to the short climb to the opening) should only be done with a local guide, since it's easy to lose the way and phone signal is weak in places.",
+          },
+          { type: "heading", text: "Rainy Season, Lake Drainage and Camping" },
+          {
+            type: "paragraph",
+            text: "In the rainy season (roughly April-September), the walk is replaced by a raft crossing or SUP paddleboarding as the mountain rises directly from the lake surface, with jade-green water reflecting the peak and surrounding grass - a popular alternative to the dry-season visit. Around September-October, Thang Hen Lake sometimes drains away within just a few hours, a striking natural phenomenon that briefly reveals the valley floor and the nearby Nậm Trá Waterfall beneath - though the waterfall itself is at its fullest and most impressive earlier in the rainy season, running dry and replaced by grassland by the time the dry season sets in. The flat valley meadow in the dry season is suitable for camping and cycling, with space for tents well away from the mountain base.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Angel Eye Mountain (God Eye Mountain)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Angel Eye Mountain is one of those geological features that photographs poorly relative to how it feels in person - the 50m hole in a limestone cliff is genuinely extraordinary at close range in a way that no image fully conveys. It sits on the Cao Bằng loop that most riders do for Bản Giốc, but is frequently skipped because it requires a detour through Thang Hen rather than the direct highway.",
+          },
+          {
+            type: "paragraph",
+            text: "That detour is short and the valley - with its interconnected lakes, karst towers, and meadow floor - is itself worth the deviation. The combination of Thang Hen Lake, Angel Eye Mountain, and Ma Phục Pass covers a section of Cao Bằng that most visitors miss entirely and is arguably as interesting as the more famous Bản Giốc end of the loop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

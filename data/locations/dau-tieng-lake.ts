@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dauTiengLake: Location = {
   slug: "dau-tieng-lake",
   name: "Dầu Tiếng Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["tay-ninh"],
   destination: "",
   lat: 11.354531,
@@ -50,14 +50,82 @@ export const dauTiengLake: Location = {
     "Fishing is the main local activity on the lake - early mornings see dozens of fishing boats on the water, which add to the atmosphere for photography",
   ],
   content: {
-    intro:
-      "Dầu Tiếng Lake is the largest artificial reservoir in Vietnam by surface area, covering approximately 270 square kilometres (with a total capacity of about 1.58 billion cubic metres) on the border between Tây Ninh and Bình Dương provinces, formed by damming the upper reaches of the Saigon River. Construction began on 29 April 1981 and the reservoir was completed on 10 January 1985, built to provide irrigation water for the agricultural land of the southeastern region - it remains the primary water source for large areas of Tây Ninh, Bình Dương, and neighbouring provinces. The lake's scale - its shoreline extends for hundreds of kilometres through forested terrain - gives it a character more like a natural lake than an infrastructure project. On the Bình Dương shore, right by the lake, sits Núi Cậu, a cluster of 21 hills (the tallest, Núi Cửa Ông, reaching 295m) covering around 1,600 hectares, home to Chùa Thái Sơn - a well-known temple, its grounds spanning more than 5 hectares, built partway up the hillside in 1988 by the monk Thích Đạt Phẩm and renovated in 2003. Notable structures include a 12m-tall Quan Âm Nam Hải statue, the Cửu Trùng tower, the 'dinh Cậu' shrine, and a traditional tam quan gate, drawing a steady stream of pilgrims, trekkers, and sightseers. Local folklore even ties Núi Cậu and the far-off Núi Bà Đen together in a bittersweet love legend, though accounts of the story vary. Elsewhere around the lake, other named stops include Suối Trúc (a quiet, bamboo-lined stream near Núi Cậu, popular for camping and photos), Đảo Nhím ('Hedgehog Island', a small island in the lake off Dương Minh Châu commune reachable by boat, also used for camping), and Bãi Đá Trứng ('Egg Rock Beach'). The surrounding forest, the open water horizon, and the absence of resort development have made Dầu Tiếng a destination for weekend camping, temple visits, and sunrise photography from Ho Chi Minh City.",
-    howToGetThere:
-      "Dầu Tiếng Lake sits near Dầu Tiếng town in Bình Dương province, with sources giving a range of roughly 70-85km from Ho Chi Minh City depending on the exact access point measured (an international compiled source puts the lake itself at 70km, while several Vietnamese travel guides cite 80-85km to the district centre). By motorbike or car from HCMC, follow Highway 13 north through Bình Dương then turn west toward Dầu Tiếng - the journey takes about 1.5 to 2 hours. The dam and main access points are clearly signposted from Dầu Tiếng town. The lake can also be approached from the Tây Ninh side, adding it to a circuit that includes Núi Bà Đen and the Cao Đài Holy See. No public transport runs directly to the lake; motorbike or car is required.",
-    whatToExpect:
-      "The dam structure provides an elevated walkway above the water with views across the full expanse of the lake - on clear days the far shore is barely visible. The forested banks on the southern side have informal camping areas used by Vietnamese groups on weekends. Fishing boats are active on the water from dawn, and the morning mist that sits over the lake surface before the sun rises is the characteristic image of the site. On the water, SUP rental (a set with board, paddle, pump, and life jacket runs around 200,000-300,000 VND/day) and motorboat rides out to Đảo Nhím (roughly 300,000 VND for 15-20 minutes) are popular; fishing is also a major draw, with more than 50 fish species recorded in the lake. The perimeter roads allow cycling and motorbike exploration of the lakeside terrain. Near the Bình Dương shore, Núi Cậu and its Chùa Thái Sơn temple offer a short climb with views back over the lake and surrounding hills, alongside the temple's own pilgrimage atmosphere. The surrounding forest has bird activity - local restaurants in Dầu Tiếng town serve freshwater fish from the reservoir, and some visitors dive for clams and mussels near the shore to grill themselves.",
-    travelTips:
-      "Dầu Tiếng works best as an early morning destination or an overnight camping trip - the lake at sunrise is the experience that draws people, and arriving in the middle of the day gives little sense of what makes it interesting. The scale of the reservoir becomes apparent only from elevated viewpoints or from the water itself - a boat ride gives the most direct sense of the lake's size. Pairing the lake with Chùa Thái Sơn and Núi Cậu on the Bình Dương side adds a cultural and slightly more active dimension to the trip. For HCMC-based travellers looking for natural scenery within 2 hours of the city, Dầu Tiếng offers a genuinely large water body surrounded by forest in a region where both are otherwise scarce.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Dầu Tiếng Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dầu Tiếng Lake is the largest artificial reservoir in Vietnam by surface area, covering approximately 270 square kilometres (with a total capacity of about 1.58 billion cubic metres) on the border between Tây Ninh and Bình Dương provinces, formed by damming the upper reaches of the Saigon River. Construction began on 29 April 1981 and the reservoir was completed on 10 January 1985, built to provide irrigation water for the agricultural land of the southeastern region - it remains the primary water source for large areas of Tây Ninh, Bình Dương, and neighbouring provinces. The lake's scale - its shoreline extends for hundreds of kilometres through forested terrain - gives it a character more like a natural lake than an infrastructure project.",
+          },
+          { type: "heading", text: "Núi Cậu" },
+          {
+            type: "paragraph",
+            text: "On the Bình Dương shore, right by the lake, sits Núi Cậu, a cluster of 21 hills (the tallest, Núi Cửa Ông, reaching 295m) covering around 1,600 hectares, home to Chùa Thái Sơn - a well-known temple, its grounds spanning more than 5 hectares, built partway up the hillside in 1988 by the monk Thích Đạt Phẩm and renovated in 2003. Notable structures include a 12m-tall Quan Âm Nam Hải statue, the Cửu Trùng tower, the 'dinh Cậu' shrine, and a traditional tam quan gate, drawing a steady stream of pilgrims, trekkers, and sightseers. Local folklore even ties Núi Cậu and the far-off Núi Bà Đen together in a bittersweet love legend, though accounts of the story vary.",
+          },
+          { type: "heading", text: "Other Stops Around the Lake" },
+          {
+            type: "paragraph",
+            text: "Elsewhere around the lake, other named stops include Suối Trúc (a quiet, bamboo-lined stream near Núi Cậu, popular for camping and photos), Đảo Nhím ('Hedgehog Island', a small island in the lake off Dương Minh Châu commune reachable by boat, also used for camping), and Bãi Đá Trứng ('Egg Rock Beach'). The surrounding forest, the open water horizon, and the absence of resort development have made Dầu Tiếng a destination for weekend camping, temple visits, and sunrise photography from Ho Chi Minh City.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Dầu Tiếng Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dầu Tiếng Lake sits near Dầu Tiếng town in Bình Dương province, with sources giving a range of roughly 70-85km from Ho Chi Minh City depending on the exact access point measured (an international compiled source puts the lake itself at 70km, while several Vietnamese travel guides cite 80-85km to the district centre). By motorbike or car from HCMC, follow Highway 13 north through Bình Dương then turn west toward Dầu Tiếng - the journey takes about 1.5 to 2 hours. The dam and main access points are clearly signposted from Dầu Tiếng town.",
+          },
+          { type: "heading", text: "From the Tây Ninh Side" },
+          {
+            type: "paragraph",
+            text: "The lake can also be approached from the Tây Ninh side, adding it to a circuit that includes Núi Bà Đen and the Cao Đài Holy See. No public transport runs directly to the lake; motorbike or car is required.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Dầu Tiếng Lake",
+        blocks: [
+          { type: "heading", text: "The Dam and the Shore" },
+          {
+            type: "paragraph",
+            text: "The dam structure provides an elevated walkway above the water with views across the full expanse of the lake - on clear days the far shore is barely visible. The forested banks on the southern side have informal camping areas used by Vietnamese groups on weekends. Fishing boats are active on the water from dawn, and the morning mist that sits over the lake surface before the sun rises is the characteristic image of the site.",
+          },
+          { type: "heading", text: "SUP, Cycling and Núi Cậu" },
+          {
+            type: "paragraph",
+            text: "On the water, SUP rental (a set with board, paddle, pump, and life jacket runs around 200,000-300,000 VND/day) and motorboat rides out to Đảo Nhím (roughly 300,000 VND for 15-20 minutes) are popular; fishing is also a major draw, with more than 50 fish species recorded in the lake. The perimeter roads allow cycling and motorbike exploration of the lakeside terrain. Near the Bình Dương shore, Núi Cậu and its Chùa Thái Sơn temple offer a short climb with views back over the lake and surrounding hills, alongside the temple's own pilgrimage atmosphere.",
+          },
+          { type: "heading", text: "Birds and Freshwater Fish" },
+          {
+            type: "paragraph",
+            text: "The surrounding forest has bird activity - local restaurants in Dầu Tiếng town serve freshwater fish from the reservoir, and some visitors dive for clams and mussels near the shore to grill themselves.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Dầu Tiếng Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dầu Tiếng works best as an early morning destination or an overnight camping trip - the lake at sunrise is the experience that draws people, and arriving in the middle of the day gives little sense of what makes it interesting. The scale of the reservoir becomes apparent only from elevated viewpoints or from the water itself - a boat ride gives the most direct sense of the lake's size.",
+          },
+          {
+            type: "paragraph",
+            text: "Pairing the lake with Chùa Thái Sơn and Núi Cậu on the Bình Dương side adds a cultural and slightly more active dimension to the trip. For HCMC-based travellers looking for natural scenery within 2 hours of the city, Dầu Tiếng offers a genuinely large water body surrounded by forest in a region where both are otherwise scarce.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const anHaiCommunalHouse: Location = {
   slug: "an-hai-communal-house",
   name: "Đình làng An Hải",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.374960915867455,
@@ -54,14 +54,73 @@ export const anHaiCommunalHouse: Location = {
     "Allow about 30-45 minutes for a visit, longer if you're taking time to look at the woodcarving detail or asking a caretaker about the site's history",
   ],
   content: {
-    intro:
-      "Đình làng An Hải is the communal house of An Hải village - one of the two original settlements on Lý Sơn - and serves as both a traditional village cultural center and a memorial to one of the most significant and least-known chapters in Vietnamese history. For over two centuries under the Nguyễn lords and later emperors, young men from Lý Sơn were conscripted into the **Hải Đội Hoàng Sa** - naval units sent each year to the Hoàng Sa (Paracel) Islands to assert sovereignty, survey sea routes, patrol the waters, and salvage shipwrecks. The crossings were dangerous and many sailors never returned.\n\nAccording to local elders, the site began modestly in **1815**, under Gia Long, as a small structure of bamboo, thatch, and local timber known as 'Sở Tam Phủ.' It was rebuilt on a larger scale in **1820** under Minh Mạng - the construction date is carved into the ridge beam inside the middle hall - in the 'chữ nhị' (二) layout of front hall and main sanctuary typical of central Vietnamese communal houses of the era. Eight founding lineages funded the rebuilding - Nguyễn, Dương, Trương, Trần, Võ, Nguyễn Đình, Nguyễn Văn, and the wider village - though the Lê clan was later struck from the list of recognised founders after a ritual infraction, leaving seven tiền hiền (founding ancestors) honoured in the hall today. The building's current architectural character mostly dates to its 18th recorded restoration, in 1943 under Bảo Đại, with the most recent restoration in 2019 giving it the bright yellow paint common to Vietnamese coastal shrines. It was recognised as a **National Historic-Cultural Relic in 1995**.\n\nBefore each departure, the men held farewell ceremonies at the communal houses of An Hải and An Vĩnh - ceremonies that continue today in the form of the annual **Khao Lề Thế Lính Hoàng Sa** memorial, held here around the 15th day of the 3rd lunar month, in roughly the same window as An Vĩnh's own version a short distance away.",
-    howToGetThere:
-      "Đình làng An Hải is in Thôn Đông, An Hải, on the eastern side of Lý Sơn's main island, about 3km from the district centre. From the ferry port in An Vĩnh, follow the main road toward An Hải - the communal house is in the village center. By motorbike from the port, around 10-15 minutes. The building faces southeast toward the sea, with Thới Lới mountain rising behind it.",
-    whatToExpect:
-      "The communal house is a traditional Vietnamese đình structure built to a 'chữ nhị' plan - a front hall and main sanctuary - with an elaborate roof, decorated with paired stone lions and dual-dragon roof ornamentation ('lưỡng long triều nhật', 'long phụng triều quy'), plus fine woodcarving on altar surfaces, truss beams, pillars, and doorways in the Nguyễn-dynasty style. A pair of stone nghê statues stands guard at pillars flanking the entrance gate, gazing out to sea - a yin-yang pairing motif rarely seen elsewhere in Vietnam. Inside are altars, historical documents, and artifacts related to the Hoàng Sa missions, alongside altars for the village's tiền hiền (founding ancestors) and, notably, the Cham-origin deities Thiên Y A Na and Ngu Man Nương - a quiet reminder that Lý Sơn's culture blends Cham and Việt heritage. Nearby, to the north and along the coast, sits a small cluster of related shrines that grew up around the đình over time - Chùa Bà, Chùa Ông, Âm Linh Tự, a Thành Hoàng shrine, and a whale-worship shrine (lăng thờ Cá Ông) among them. The building is well-maintained and actively used - before heading out to sea, local fishermen still come to light incense and leave offerings, returning afterward to give thanks. Although generally open during daylight hours, access to the interior may occasionally depend on local ceremonies or the caretaker being present. Around the 4th-5th day of the 1st lunar month, the waters nearby fill with crowds for the island's traditional boat racing festival, and the communal house's own ritual calendar runs busy year-round - a spring prayer rite in the 2nd lunar month, a founders' memorial on the 20th of the 2nd lunar month, and the Hoàng Sa memorial around the 15th of the 3rd lunar month among the largest.",
-    travelTips:
-      "The two communal houses (An Hải and An Vĩnh) and the Hải Đội Hoàng Sa museum form the historical core of Lý Sơn - together they tell a story of maritime sovereignty, sacrifice, and community that is unlike anything else in Vietnam. Allocate at least half a morning to understand the history before visiting the natural sites - it changes how the island feels. Visiting both communal houses back to back is worthwhile if you have the time: beyond the shared Hoàng Sa history, the two buildings follow genuinely different architectural plans and are worth comparing directly.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Đình làng An Hải Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đình làng An Hải is the communal house of An Hải village - one of the two original settlements on Lý Sơn - and serves as both a traditional village cultural center and a memorial to one of the most significant and least-known chapters in Vietnamese history. For over two centuries under the Nguyễn lords and later emperors, young men from Lý Sơn were conscripted into the **Hải Đội Hoàng Sa** - naval units sent each year to the Hoàng Sa (Paracel) Islands to assert sovereignty, survey sea routes, patrol the waters, and salvage shipwrecks. The crossings were dangerous and many sailors never returned.",
+          },
+          { type: "heading", text: "History of the Building" },
+          {
+            type: "paragraph",
+            text: "According to local elders, the site began modestly in **1815**, under Gia Long, as a small structure of bamboo, thatch, and local timber known as 'Sở Tam Phủ.' It was rebuilt on a larger scale in **1820** under Minh Mạng - the construction date is carved into the ridge beam inside the middle hall - in the 'chữ nhị' (二) layout of front hall and main sanctuary typical of central Vietnamese communal houses of the era. Eight founding lineages funded the rebuilding - Nguyễn, Dương, Trương, Trần, Võ, Nguyễn Đình, Nguyễn Văn, and the wider village - though the Lê clan was later struck from the list of recognised founders after a ritual infraction, leaving seven tiền hiền (founding ancestors) honoured in the hall today. The building's current architectural character mostly dates to its 18th recorded restoration, in 1943 under Bảo Đại, with the most recent restoration in 2019 giving it the bright yellow paint common to Vietnamese coastal shrines. It was recognised as a **National Historic-Cultural Relic in 1995**.",
+          },
+          { type: "heading", text: "The Farewell Ceremonies" },
+          {
+            type: "paragraph",
+            text: "Before each departure, the men held farewell ceremonies at the communal houses of An Hải and An Vĩnh - ceremonies that continue today in the form of the annual **Khao Lề Thế Lính Hoàng Sa** memorial, held here around the 15th day of the 3rd lunar month, in roughly the same window as An Vĩnh's own version a short distance away.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Đình làng An Hải",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đình làng An Hải is in Thôn Đông, An Hải, on the eastern side of Lý Sơn's main island, about 3km from the district centre. From the ferry port in An Vĩnh, follow the main road toward An Hải - the communal house is in the village center. By motorbike from the port, around 10-15 minutes. The building faces southeast toward the sea, with Thới Lới mountain rising behind it.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Đình làng An Hải",
+        blocks: [
+          { type: "heading", text: "Architecture and Interior" },
+          {
+            type: "paragraph",
+            text: "The communal house is a traditional Vietnamese đình structure built to a 'chữ nhị' plan - a front hall and main sanctuary - with an elaborate roof, decorated with paired stone lions and dual-dragon roof ornamentation ('lưỡng long triều nhật', 'long phụng triều quy'), plus fine woodcarving on altar surfaces, truss beams, pillars, and doorways in the Nguyễn-dynasty style. A pair of stone nghê statues stands guard at pillars flanking the entrance gate, gazing out to sea - a yin-yang pairing motif rarely seen elsewhere in Vietnam. Inside are altars, historical documents, and artifacts related to the Hoàng Sa missions, alongside altars for the village's tiền hiền (founding ancestors) and, notably, the Cham-origin deities Thiên Y A Na and Ngu Man Nương - a quiet reminder that Lý Sơn's culture blends Cham and Việt heritage.",
+          },
+          { type: "heading", text: "Nearby Shrines and Daily Use" },
+          {
+            type: "paragraph",
+            text: "Nearby, to the north and along the coast, sits a small cluster of related shrines that grew up around the đình over time - Chùa Bà, Chùa Ông, Âm Linh Tự, a Thành Hoàng shrine, and a whale-worship shrine (lăng thờ Cá Ông) among them. The building is well-maintained and actively used - before heading out to sea, local fishermen still come to light incense and leave offerings, returning afterward to give thanks. Although generally open during daylight hours, access to the interior may occasionally depend on local ceremonies or the caretaker being present.",
+          },
+          { type: "heading", text: "Festivals and the Ritual Calendar" },
+          {
+            type: "paragraph",
+            text: "Around the 4th-5th day of the 1st lunar month, the waters nearby fill with crowds for the island's traditional boat racing festival, and the communal house's own ritual calendar runs busy year-round - a spring prayer rite in the 2nd lunar month, a founders' memorial on the 20th of the 2nd lunar month, and the Hoàng Sa memorial around the 15th of the 3rd lunar month among the largest.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Đình làng An Hải",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The two communal houses (An Hải and An Vĩnh) and the Hải Đội Hoàng Sa museum form the historical core of Lý Sơn - together they tell a story of maritime sovereignty, sacrifice, and community that is unlike anything else in Vietnam. Allocate at least half a morning to understand the history before visiting the natural sites - it changes how the island feels. Visiting both communal houses back to back is worthwhile if you have the time: beyond the shared Hoàng Sa history, the two buildings follow genuinely different architectural plans and are worth comparing directly.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

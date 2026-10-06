@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const pirateIslands: Location = {
   slug: "pirate-islands",
   name: "Pirate Islands",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["kien-giang"],
   destination: "",
   lat: 10.316152333852845,
@@ -48,14 +48,83 @@ export const pirateIslands: Location = {
     "4G signal can be patchy depending on where you are in the archipelago - don't rely on it",
   ],
   content: {
-    intro:
-      "The Hai Tac Islands - Pirate Islands in direct translation - are an archipelago of 16 emergent islands plus 2 submerged reef features (sometimes counted together as 18) in the Gulf of Thailand, about 28km off the coast of Hà Tiên and roughly 40km from Phú Quốc, forming Tiên Hải commune. The name dates back to the 17th century, when the archipelago sat on a key trade route linking China to Western markets via the Hà Tiên-Rạch Giá waters and the Gulf of Thailand - a position that made it a favoured base for pirates preying on passing merchant ships, prompting Mạc Thiên Tích, the Hà Tiên governor of the time, to repeatedly send troops to suppress them. Piracy reportedly persisted in these waters into the early 20th century, and some local accounts hold that descendants of the old pirate bands still live in Tiên Hải today. The islands are also wrapped in treasure legend: stories of a 300-year-old map, foreign treasure hunters who reportedly landed in the 1980s, and a notable haul of old coins once found here still circulate, even though none of it has been formally verified. Today the archipelago remains one of the least developed island groups in Vietnam - lacking the scale of Phú Quốc or the growing tourism infrastructure of Nam Du - though it's more accessible than its remote reputation suggests: a regular, scheduled speedboat service connects Hà Tiên to the main island in around 30 minutes. Hòn Đốc (also known as Tiên Hải or Hòn Tre), the largest island, has a small fishing community along with a modest guesthouse scene. The surrounding waters and smaller, largely uninhabited islands support reef fish and coral in reasonable condition given the relatively light boat traffic, and the beaches on these outer islands remain undeveloped white sand.",
-    howToGetThere:
-      "Hà Tiên is the departure point for the Hai Tac Islands, with several operators (including Minh Nga and Superdong) running scheduled speedboats from the Hà Tiên high-speed boat pier (Kim Dự street, Tô Châu ward) to Tiên Hải, a crossing of around 30 minutes. Departures generally run in the morning (roughly 7-8:30 AM), with return sailings in the early-to-mid afternoon; schedules run more frequently on Fridays, Saturdays, and Sundays than on weekdays, so check current timetables and book ahead, especially for weekend trips. Once on the main island, chartering a smaller local boat is the way to reach the outer, uninhabited islets for snorkeling and beach time. Hà Tiên itself is reachable from Ho Chi Minh City by bus (around 8-9 hours) or via Phú Quốc/Rạch Giá by boat and road combinations.",
-    whatToExpect:
-      "The Hai Tac Islands offer a low-key, largely undeveloped island experience rather than a resort one. Hòn Đốc has been connected to the national power grid with 24/7 electricity since 2020, and has just one road running its roughly 5km loop around the island, with mountains on one side and sea on the other - easy to self-drive without getting lost, or explore by xe ôm, whose drivers are often happy to double as informal guides. On clear days, you can see part of Phú Quốc island and Cambodian territory in the distance from various points on the island - a striking reminder of how close this frontier archipelago sits to the maritime border. Despite its small size, the island packs in a pagoda, a church, a military zone, and a scattering of specific landmarks: a national sovereignty marker erected by the former Republic of Vietnam government in 1958, and, just across from it, Miếu Bà Chúa Hòn, a small temple. For a taste of something wilder, boats can run 5-10 minutes out to nearby uninhabited islets for a 'Robinson Crusoe'-style stretch of empty beach. Long stretches of white sand, some running for a few hundred metres and backed by tall coconut palms, are good for a swim, a walk, or a game of beach volleyball. The surrounding smaller islands are largely uninhabited and best reached by chartering a local boat once you've arrived - a typical day involves anchoring off different islets for snorkeling, swimming, and beach time, sometimes with fresh seafood prepared by the boat crew. Reef condition varies across the archipelago, with less-visited outer islets generally in better shape than the reef closest to the main village. Litter is a recurring downside noted by visitors, particularly around the more frequented parts of the main island. Camping overnight on an uninhabited island's beach is possible with the right equipment and a cooperative boat operator, and rewards you with quiet sunrise and sunset light away from any other visitors.",
-    travelTips:
-      "The Hai Tac Islands sit in the same general Gulf of Thailand waters as Phú Quốc and Nam Du, but see a fraction of the visitors, thanks to their smaller scale and more limited accommodation - even though the crossing itself is a straightforward, scheduled 30-minute boat ride rather than the multi-hour charter expedition some older accounts describe. For travellers who've already done Phú Quốc and want something quieter and less developed, Hai Tac is a logical next stop, and it's more approachable logistically than its remote reputation might suggest. Hà Tiên makes a pleasant, manageable base before or after the crossing, with good food and proximity to the Xà Xía border crossing into Cambodia for those continuing that way.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Pirate Islands Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Hai Tac Islands - Pirate Islands in direct translation - are an archipelago of 16 emergent islands plus 2 submerged reef features (sometimes counted together as 18) in the Gulf of Thailand, about 28km off the coast of Hà Tiên and roughly 40km from Phú Quốc, forming Tiên Hải commune.",
+          },
+          { type: "heading", text: "Pirates and Treasure Legends" },
+          {
+            type: "paragraph",
+            text: "The name dates back to the 17th century, when the archipelago sat on a key trade route linking China to Western markets via the Hà Tiên-Rạch Giá waters and the Gulf of Thailand - a position that made it a favoured base for pirates preying on passing merchant ships, prompting Mạc Thiên Tích, the Hà Tiên governor of the time, to repeatedly send troops to suppress them. Piracy reportedly persisted in these waters into the early 20th century, and some local accounts hold that descendants of the old pirate bands still live in Tiên Hải today. The islands are also wrapped in treasure legend: stories of a 300-year-old map, foreign treasure hunters who reportedly landed in the 1980s, and a notable haul of old coins once found here still circulate, even though none of it has been formally verified.",
+          },
+          { type: "heading", text: "The Islands Today" },
+          {
+            type: "paragraph",
+            text: "Today the archipelago remains one of the least developed island groups in Vietnam - lacking the scale of Phú Quốc or the growing tourism infrastructure of Nam Du - though it's more accessible than its remote reputation suggests: a regular, scheduled speedboat service connects Hà Tiên to the main island in around 30 minutes. Hòn Đốc (also known as Tiên Hải or Hòn Tre), the largest island, has a small fishing community along with a modest guesthouse scene. The surrounding waters and smaller, largely uninhabited islands support reef fish and coral in reasonable condition given the relatively light boat traffic, and the beaches on these outer islands remain undeveloped white sand.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Pirate Islands",
+        blocks: [
+          { type: "heading", text: "Boats from Hà Tiên" },
+          {
+            type: "paragraph",
+            text: "Hà Tiên is the departure point for the Hai Tac Islands, with several operators (including Minh Nga and Superdong) running scheduled speedboats from the Hà Tiên high-speed boat pier (Kim Dự street, Tô Châu ward) to Tiên Hải, a crossing of around 30 minutes. Departures generally run in the morning (roughly 7-8:30 AM), with return sailings in the early-to-mid afternoon; schedules run more frequently on Fridays, Saturdays, and Sundays than on weekdays, so check current timetables and book ahead, especially for weekend trips. Once on the main island, chartering a smaller local boat is the way to reach the outer, uninhabited islets for snorkeling and beach time.",
+          },
+          { type: "heading", text: "Getting to Hà Tiên" },
+          {
+            type: "paragraph",
+            text: "Hà Tiên itself is reachable from Ho Chi Minh City by bus (around 8-9 hours) or via Phú Quốc/Rạch Giá by boat and road combinations.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Pirate Islands",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Hai Tac Islands offer a low-key, largely undeveloped island experience rather than a resort one.",
+          },
+          { type: "heading", text: "Life on Hòn Đốc" },
+          {
+            type: "paragraph",
+            text: "Hòn Đốc has been connected to the national power grid with 24/7 electricity since 2020, and has just one road running its roughly 5km loop around the island, with mountains on one side and sea on the other - easy to self-drive without getting lost, or explore by xe ôm, whose drivers are often happy to double as informal guides. On clear days, you can see part of Phú Quốc island and Cambodian territory in the distance from various points on the island - a striking reminder of how close this frontier archipelago sits to the maritime border. Despite its small size, the island packs in a pagoda, a church, a military zone, and a scattering of specific landmarks: a national sovereignty marker erected by the former Republic of Vietnam government in 1958, and, just across from it, Miếu Bà Chúa Hòn, a small temple.",
+          },
+          { type: "heading", text: "Uninhabited Islets and Beaches" },
+          {
+            type: "paragraph",
+            text: "For a taste of something wilder, boats can run 5-10 minutes out to nearby uninhabited islets for a 'Robinson Crusoe'-style stretch of empty beach. Long stretches of white sand, some running for a few hundred metres and backed by tall coconut palms, are good for a swim, a walk, or a game of beach volleyball. The surrounding smaller islands are largely uninhabited and best reached by chartering a local boat once you've arrived - a typical day involves anchoring off different islets for snorkeling, swimming, and beach time, sometimes with fresh seafood prepared by the boat crew.",
+          },
+          { type: "heading", text: "Reefs, Litter and Camping" },
+          {
+            type: "paragraph",
+            text: "Reef condition varies across the archipelago, with less-visited outer islets generally in better shape than the reef closest to the main village. Litter is a recurring downside noted by visitors, particularly around the more frequented parts of the main island. Camping overnight on an uninhabited island's beach is possible with the right equipment and a cooperative boat operator, and rewards you with quiet sunrise and sunset light away from any other visitors.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Pirate Islands",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Hai Tac Islands sit in the same general Gulf of Thailand waters as Phú Quốc and Nam Du, but see a fraction of the visitors, thanks to their smaller scale and more limited accommodation - even though the crossing itself is a straightforward, scheduled 30-minute boat ride rather than the multi-hour charter expedition some older accounts describe. For travellers who've already done Phú Quốc and want something quieter and less developed, Hai Tac is a logical next stop, and it's more approachable logistically than its remote reputation might suggest. Hà Tiên makes a pleasant, manageable base before or after the crossing, with good food and proximity to the Xà Xía border crossing into Cambodia for those continuing that way.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

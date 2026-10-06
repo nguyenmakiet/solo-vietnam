@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const diepSonIsland: Location = {
   slug: "diep-son-island",
   name: "Điệp Sơn Island",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "",
   lat: 12.702371060987337,
@@ -46,14 +46,82 @@ export const diepSonIsland: Location = {
     "Midday sun is harsh, but it's also when the water looks its clearest and most vivid, and when the sandbar photographs best from above (drone shots in particular) - a trade-off worth knowing about if photography is a priority",
   ],
   content: {
-    intro:
-      "Điệp Sơn is a cluster of three small islands - Hòn Bịp, Hòn Giữa, and Hòn Đuốc - in Vân Phong Bay, Vạn Ninh district, northern Khánh Hòa, where a narrow sandbar emerges from the sea to connect the islands in a single walkable path. Estimates of its length and width vary quite a bit between sources - roughly 700 metres to a kilometre long, and anywhere from about 1 metre to several metres wide depending on the section and who's measuring - but the core experience is consistent: a strip of sand with open sea on both sides. The sandbar has become one of Vietnam's most circulated travel images: a line of people walking across open water with turquoise sea on either side. The reality holds up in person, though the path's visibility depends on the lunar calendar rather than any fixed daily schedule - one local eco-tourism guide has noted that even at the highest tides the water over the path rarely rises above waist height, so it's less an all-or-nothing phenomenon than a matter of degree. The islands sit in a sheltered bay with clear water and minimal development, reached by boat from Vạn Giã port. The surrounding reef supports reasonable snorkeling, though it's worth being clear-eyed about overnight options: there are no real hotels or guesthouses on the island - staying over means bringing your own camping tent or renting one locally, and most visitors who want proper accommodation base themselves back in Nha Trang or Vạn Giã instead. Điệp Sơn sits outside the Nha Trang tourist circuit and sees a fraction of the visitor numbers that comparable island destinations in Khánh Hòa attract - helped along by the fact that, as of recent reports, the island only has temporary tourism permission and falls outside the province's formal tourism development zoning.",
-    howToGetThere:
-      "Điệp Sơn is reached by boat from Vạn Giã fishing port in Vạn Ninh district, approximately 60km north of Nha Trang city. By motorbike from Nha Trang, follow Highway 1A north to Vạn Giã - the journey takes around 1.5 hours. Speedboats to Điệp Sơn depart from Vạn Giã pier and the crossing takes roughly 15-20 minutes (around 100,000 VND one-way or 200,000 VND round trip); a slower wooden boat runs cheaper (around 50,000 VND one-way) but only about every 2 hours, taking closer to 30 minutes. Boats can be arranged at the pier or through guesthouses in Vạn Giã town. There is no fixed public ferry schedule for the speedboats - they typically start departing from around 9 AM once enough passengers (10-20 people) have gathered, with the earliest return crossing usually around 1 PM. This matters for planning: it means actual time on the island for a day trip is often only around 1-2.5 hours once you account for the boat schedule, not a full leisurely day - factor that into your expectations. Check sea conditions before departing, as the bay can be rough in bad weather.",
-    whatToExpect:
-      "The boat arrives at the main island where a small fishing community and several homestays are located. From the pier, the sandbar path to the adjacent islands is visible when the tide allows - a pale strip of sand extending across the water. Walking the sandbar takes 10-15 minutes one way; the path is firm sand, with the sea depth on either side varying with the tide, from ankle-deep at low tide to potentially waist-deep at the highest tides. The outer islands are largely uninhabited with small beaches and reef areas. Snorkeling around the island edges reveals coral and fish life in water that is clear enough to see the bottom in most conditions, and kayaks are available to rent for exploring the coastline. A speedboat tour around the islands is also on offer (around 400,000 VND for 15 minutes through Điệp Sơn Quán, a local operator), taking in nearby Hòn Mao as well. The pace of the island is slow - there are no tour groups, no organised activities beyond the boat, and limited facilities.",
-    travelTips:
-      "Điệp Sơn is most rewarding for visitors who stay overnight rather than attempting a same-day return from Nha Trang - even though the crossing itself is short, the sandbar's best visibility depends on the lunar tide cycle rather than a convenient daytime window, so having flexibility matters more than a fast boat. The sandbar is the centrepiece but the broader appeal of Điệp Sơn is its remoteness relative to the rest of Khánh Hòa's island destinations - no cable cars, no floating bars, no jet skis, and, for now, no large-scale development. For travellers moving along the coast between Hội An and Nha Trang, Vạn Ninh makes a logical overnight stop and Điệp Sơn justifies the detour from the main highway.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Điệp Sơn Island Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Điệp Sơn is a cluster of three small islands - Hòn Bịp, Hòn Giữa, and Hòn Đuốc - in Vân Phong Bay, Vạn Ninh district, northern Khánh Hòa, where a narrow sandbar emerges from the sea to connect the islands in a single walkable path. Estimates of its length and width vary quite a bit between sources - roughly 700 metres to a kilometre long, and anywhere from about 1 metre to several metres wide depending on the section and who's measuring - but the core experience is consistent: a strip of sand with open sea on both sides.",
+          },
+          { type: "heading", text: "The Sandbar Walk" },
+          {
+            type: "paragraph",
+            text: "The sandbar has become one of Vietnam's most circulated travel images: a line of people walking across open water with turquoise sea on either side. The reality holds up in person, though the path's visibility depends on the lunar calendar rather than any fixed daily schedule - one local eco-tourism guide has noted that even at the highest tides the water over the path rarely rises above waist height, so it's less an all-or-nothing phenomenon than a matter of degree.",
+          },
+          { type: "heading", text: "Setting and Overnight Options" },
+          {
+            type: "paragraph",
+            text: "The islands sit in a sheltered bay with clear water and minimal development, reached by boat from Vạn Giã port. The surrounding reef supports reasonable snorkeling, though it's worth being clear-eyed about overnight options: there are no real hotels or guesthouses on the island - staying over means bringing your own camping tent or renting one locally, and most visitors who want proper accommodation base themselves back in Nha Trang or Vạn Giã instead. Điệp Sơn sits outside the Nha Trang tourist circuit and sees a fraction of the visitor numbers that comparable island destinations in Khánh Hòa attract - helped along by the fact that, as of recent reports, the island only has temporary tourism permission and falls outside the province's formal tourism development zoning.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Điệp Sơn Island",
+        blocks: [
+          { type: "heading", text: "From Nha Trang to Vạn Giã" },
+          {
+            type: "paragraph",
+            text: "Điệp Sơn is reached by boat from Vạn Giã fishing port in Vạn Ninh district, approximately 60km north of Nha Trang city. By motorbike from Nha Trang, follow Highway 1A north to Vạn Giã - the journey takes around 1.5 hours.",
+          },
+          { type: "heading", text: "Speedboats and Timing" },
+          {
+            type: "paragraph",
+            text: "Speedboats to Điệp Sơn depart from Vạn Giã pier and the crossing takes roughly 15-20 minutes (around 100,000 VND one-way or 200,000 VND round trip); a slower wooden boat runs cheaper (around 50,000 VND one-way) but only about every 2 hours, taking closer to 30 minutes. Boats can be arranged at the pier or through guesthouses in Vạn Giã town. There is no fixed public ferry schedule for the speedboats - they typically start departing from around 9 AM once enough passengers (10-20 people) have gathered, with the earliest return crossing usually around 1 PM. This matters for planning: it means actual time on the island for a day trip is often only around 1-2.5 hours once you account for the boat schedule, not a full leisurely day - factor that into your expectations. Check sea conditions before departing, as the bay can be rough in bad weather.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Điệp Sơn Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The boat arrives at the main island where a small fishing community and several homestays are located.",
+          },
+          { type: "heading", text: "Walking the Sandbar" },
+          {
+            type: "paragraph",
+            text: "From the pier, the sandbar path to the adjacent islands is visible when the tide allows - a pale strip of sand extending across the water. Walking the sandbar takes 10-15 minutes one way; the path is firm sand, with the sea depth on either side varying with the tide, from ankle-deep at low tide to potentially waist-deep at the highest tides. The outer islands are largely uninhabited with small beaches and reef areas.",
+          },
+          { type: "heading", text: "Snorkeling and Boat Tours" },
+          {
+            type: "paragraph",
+            text: "Snorkeling around the island edges reveals coral and fish life in water that is clear enough to see the bottom in most conditions, and kayaks are available to rent for exploring the coastline. A speedboat tour around the islands is also on offer (around 400,000 VND for 15 minutes through Điệp Sơn Quán, a local operator), taking in nearby Hòn Mao as well.",
+          },
+          {
+            type: "paragraph",
+            text: "The pace of the island is slow - there are no tour groups, no organised activities beyond the boat, and limited facilities.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Điệp Sơn Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Điệp Sơn is most rewarding for visitors who stay overnight rather than attempting a same-day return from Nha Trang - even though the crossing itself is short, the sandbar's best visibility depends on the lunar tide cycle rather than a convenient daytime window, so having flexibility matters more than a fast boat. The sandbar is the centrepiece but the broader appeal of Điệp Sơn is its remoteness relative to the rest of Khánh Hòa's island destinations - no cable cars, no floating bars, no jet skis, and, for now, no large-scale development. For travellers moving along the coast between Hội An and Nha Trang, Vạn Ninh makes a logical overnight stop and Điệp Sơn justifies the detour from the main highway.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

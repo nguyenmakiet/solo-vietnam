@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const batPagodaSocTrang: Location = {
   slug: "bat-pagoda-soc-trang",
   name: "Bat Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["soc-trang"],
   destination: "",
   lat: 9.579054592787864,
@@ -51,14 +51,83 @@ export const batPagodaSocTrang: Location = {
     "Sóc Trăng city is the base - Ba Om Lake and Khmer temples in Trà Vinh make a logical multi-day Khmer Krom cultural circuit in the lower delta",
   ],
   content: {
-    intro:
-      "Bat Pagoda (Chùa Dơi, also known as Chùa Mã Tộc, formally Mahatup Pagoda) is a Khmer Buddhist temple in Châu Thành district of Sóc Trăng province, recognised as a National Artistic Relic in 1999. Records trace its founding to 1569, making it over 450 years old - it began as a simple bamboo-and-thatch structure and was gradually rebuilt in brick and tile through community donations, then substantially renovated in 1960 with the Khmer-style architectural details seen today. The original main hall burned down entirely in 2008; it was rebuilt with the support of donors and local government and reopened by April 2009, which is part of why some of the temple's construction looks newer than its centuries-old history might suggest. The temple complex is home to a resident colony of thousands of large fruit bats (flying foxes), among the larger bat species found in Vietnam, that roost year-round in the ancient trees of the pagoda compound. The bats are considered sacred by the temple community, and local belief holds they've never once damaged the temple's own fruit trees, and always fly around rather than through the main hall. During the day they hang in dense clusters in the tree canopy; from around 6 PM they depart to feed for the night, returning by around 5 AM. A formal tourism zone was established here in 2013, adding parking, restaurants, and electric carts alongside the existing temple.",
-    howToGetThere:
-      "Bat Pagoda is approximately 2km from Sóc Trăng city center in Châu Thành district. From the city center by motorbike the journey takes about 10 minutes. Sóc Trăng city is approximately 230km from Ho Chi Minh City via the Mekong Delta expressway - about 3.5-4 hours. From Cần Thơ, the distance is about 62km - roughly 1.5 hours. Buses run from HCMC to Sóc Trăng regularly. Motorbike rental in Sóc Trăng city runs around 100,000-150,000 VND/day if you want to explore independently. The pagoda is clearly signposted from the city center and accessible by motorbike taxi. Parking inside the temple grounds has generally been free, though it's worth checking current arrangements on arrival rather than assuming, and being aware that attendants across the street sometimes charge for parking that may not be necessary.",
-    whatToExpect:
-      "The pagoda compound is large and shaded by ancient trees whose canopy is visibly occupied by roosting bats even in the middle of the day - dark shapes hanging in the branches at every angle, though they're often still and don't perform for visitors on cue, so a bit of luck plays a role in how good the daytime viewing is on any given visit. During daylight hours the temple has its normal religious atmosphere, with intricately carved and painted decoration characteristic of significant Khmer temples in the Mekong Delta - the tiled roof curves up at each corner into carved Naga serpent forms, columns around the main hall are each carved with a Kemnar celestial dancer in a prayerful pose, and inside sits a monolithic stone Shakyamuni Buddha on a lotus throne around 2m tall, alongside a finely carved statue of the Buddha seated on the serpent king Muchalinda. In a corner of the grounds, small graves marked with painted pig images hold the temple's five-toed pigs - according to Khmer belief, five-toed piglets (unlike the three toes of an ordinary pig) carry a human spirit, and families who have one born fear it brings misfortune, so they bring the piglet to the monks to be cared for here, in the hope it will absorb the sutras and be reborn human; visitors sometimes light incense at the graves for good luck. From late afternoon the bats begin to stir, and toward dusk they depart in a sustained wave - the sound of thousands of large wings and the sight of the darkening sky filling with bat silhouettes is one of the more extraordinary natural performances in the delta. Budget 2-3 hours to see the main hall, grounds, the five-toed pig cemetery, and the bats properly.",
-    travelTips:
-      "Bat Pagoda is on almost every Sóc Trăng day-trip itinerary because it combines two compelling things in one location - a genuinely significant piece of Khmer Buddhist heritage and a wildlife spectacle that requires no special effort to witness. Rather than treating the dusk departure as the only reason to come, consider splitting your visit: architecture and grounds in the cooler, softer light of the morning, then a return trip (or a full afternoon stay) for the bat departure at dusk. Sóc Trăng province has the largest Khmer Krom population in Vietnam and the highest density of Khmer temples outside Cambodia - if you're in the lower delta and interested in Khmer culture, Sóc Trăng with Bat Pagoda, Đất Sét Pagoda, and the city's Khmer market covers the cultural dimension thoroughly.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bat Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bat Pagoda (Chùa Dơi, also known as Chùa Mã Tộc, formally Mahatup Pagoda) is a Khmer Buddhist temple in Châu Thành district of Sóc Trăng province, recognised as a National Artistic Relic in 1999. Records trace its founding to 1569, making it over 450 years old - it began as a simple bamboo-and-thatch structure and was gradually rebuilt in brick and tile through community donations, then substantially renovated in 1960 with the Khmer-style architectural details seen today. The original main hall burned down entirely in 2008; it was rebuilt with the support of donors and local government and reopened by April 2009, which is part of why some of the temple's construction looks newer than its centuries-old history might suggest.",
+          },
+          { type: "heading", text: "The Fruit Bat Colony" },
+          {
+            type: "paragraph",
+            text: "The temple complex is home to a resident colony of thousands of large fruit bats (flying foxes), among the larger bat species found in Vietnam, that roost year-round in the ancient trees of the pagoda compound. The bats are considered sacred by the temple community, and local belief holds they've never once damaged the temple's own fruit trees, and always fly around rather than through the main hall. During the day they hang in dense clusters in the tree canopy; from around 6 PM they depart to feed for the night, returning by around 5 AM.",
+          },
+          { type: "heading", text: "The Tourism Zone" },
+          {
+            type: "paragraph",
+            text: "A formal tourism zone was established here in 2013, adding parking, restaurants, and electric carts alongside the existing temple.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bat Pagoda",
+        blocks: [
+          { type: "heading", text: "From Sóc Trăng City" },
+          {
+            type: "paragraph",
+            text: "Bat Pagoda is approximately 2km from Sóc Trăng city center in Châu Thành district. From the city center by motorbike the journey takes about 10 minutes.",
+          },
+          { type: "heading", text: "Getting to Sóc Trăng" },
+          {
+            type: "paragraph",
+            text: "Sóc Trăng city is approximately 230km from Ho Chi Minh City via the Mekong Delta expressway - about 3.5-4 hours. From Cần Thơ, the distance is about 62km - roughly 1.5 hours. Buses run from HCMC to Sóc Trăng regularly.",
+          },
+          { type: "heading", text: "Rental, Signs and Parking" },
+          {
+            type: "paragraph",
+            text: "Motorbike rental in Sóc Trăng city runs around 100,000-150,000 VND/day if you want to explore independently. The pagoda is clearly signposted from the city center and accessible by motorbike taxi. Parking inside the temple grounds has generally been free, though it's worth checking current arrangements on arrival rather than assuming, and being aware that attendants across the street sometimes charge for parking that may not be necessary.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bat Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The pagoda compound is large and shaded by ancient trees whose canopy is visibly occupied by roosting bats even in the middle of the day - dark shapes hanging in the branches at every angle, though they're often still and don't perform for visitors on cue, so a bit of luck plays a role in how good the daytime viewing is on any given visit. During daylight hours the temple has its normal religious atmosphere, with intricately carved and painted decoration characteristic of significant Khmer temples in the Mekong Delta - the tiled roof curves up at each corner into carved Naga serpent forms, columns around the main hall are each carved with a Kemnar celestial dancer in a prayerful pose, and inside sits a monolithic stone Shakyamuni Buddha on a lotus throne around 2m tall, alongside a finely carved statue of the Buddha seated on the serpent king Muchalinda.",
+          },
+          { type: "heading", text: "The Five-Toed Pig Graves" },
+          {
+            type: "paragraph",
+            text: "In a corner of the grounds, small graves marked with painted pig images hold the temple's five-toed pigs - according to Khmer belief, five-toed piglets (unlike the three toes of an ordinary pig) carry a human spirit, and families who have one born fear it brings misfortune, so they bring the piglet to the monks to be cared for here, in the hope it will absorb the sutras and be reborn human; visitors sometimes light incense at the graves for good luck.",
+          },
+          { type: "heading", text: "The Dusk Departure" },
+          {
+            type: "paragraph",
+            text: "From late afternoon the bats begin to stir, and toward dusk they depart in a sustained wave - the sound of thousands of large wings and the sight of the darkening sky filling with bat silhouettes is one of the more extraordinary natural performances in the delta. Budget 2-3 hours to see the main hall, grounds, the five-toed pig cemetery, and the bats properly.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bat Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bat Pagoda is on almost every Sóc Trăng day-trip itinerary because it combines two compelling things in one location - a genuinely significant piece of Khmer Buddhist heritage and a wildlife spectacle that requires no special effort to witness. Rather than treating the dusk departure as the only reason to come, consider splitting your visit: architecture and grounds in the cooler, softer light of the morning, then a return trip (or a full afternoon stay) for the bat departure at dusk. Sóc Trăng province has the largest Khmer Krom population in Vietnam and the highest density of Khmer temples outside Cambodia - if you're in the lower delta and interested in Khmer culture, Sóc Trăng with Bat Pagoda, Đất Sét Pagoda, and the city's Khmer market covers the cultural dimension thoroughly.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

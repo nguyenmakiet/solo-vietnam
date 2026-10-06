@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const darkCave: Location = {
   slug: "dark-cave",
   name: "Dark Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.574355688827836,
@@ -42,14 +42,79 @@ export const darkCave: Location = {
     "For the mud bath specifically, a two-piece swimsuit (women) or snug swim trunks (men) work best - looser clothing can be a hassle in the mud",
   ],
   content: {
-    intro:
-      "Dark Cave - Hang Tối - is the outlier in Phong Nha-Kẻ Bàng National Park: while the other caves are visited for their geological formations and historical significance, Dark Cave is explicitly an adventure activity, often marketed together with the Chày River as 'Sông Chày - Hang Tối'. Both names have specific origins: the Chày River is said to take its name from Thác Chày, a waterfall upstream whose sound of falling water reminded locals of a rice-pounding pestle (chày); the cave earned 'Tối' ('dark') from how thick and impenetrable the darkness feels just past its entrance. The full experience begins with a zip line over the Chày River, continues with kayaking into the cave entrance, transitions into a swim through underground passages in complete darkness, and culminates in a mineral mud bath inside one of the cave's chambers - a natural pool of fine grey-white mud with a consistency unlike any spa. A cheaper standard package skips the cave and mud bath entirely, sticking instead to a shorter zipline, kayaking, river swimming, a Sasuke-style obstacle bridge, and a water slide on the river itself. The cave itself was discovered in 1990 and runs close to 6km long, with reported heights of up to 80m in places (some sources cite more modest figures depending on which section is measured) - it contains impressive stalactite formations, many coated in green moss from the high humidity of sitting right beside the river. The cave entrance area is also home to swallows, bats, and the Hà Tĩnh langur, an endangered primate species listed in Vietnam's Red Book. The focus here is on experience rather than sightseeing, and it attracts a younger, more active crowd than the other Phong Nha caves - the atmosphere on a busy morning, zip lines and splashing and laughter echoing off cave walls, is completely different from the cathedral quiet of Paradise Cave.",
-    howToGetThere:
-      "Dark Cave is on the Chày River, roughly 15-20 minutes by motorbike from Phong Nha/Sơn Trạch town (about 20km), and around 50km from Đồng Hới - from Đồng Hới airport, follow the eastern Hồ Chí Minh Highway (QL16) toward Km 0 at Khe Gát, then turn onto the western branch (QL15) for a further 15km. By water, one popular route starts at the Phong Nha cave boat dock, heads upstream along the Son River past Phong Nha Cave for about 1km to the confluence of the Son, Chày, and Troóc rivers, then follows the Chày River about 5km to Dark Cave, ending at the Trộ Mợng ranger station. The activity base is on the riverbank with a clearly marked entrance, lockers, changing rooms, and a restaurant. Tickets are purchased at the base (cash) or in advance online through platforms like Klook or GetYourGuide. Most travellers do Dark Cave in the morning and combine it with a boat tour to Phong Nha Cave in the afternoon, as the two are close and logistically easy to pair.",
-    whatToExpect:
-      "The full-package activity runs in a set sequence: gear up at the base, zip line across the Chày River (about 400 metres), swim or kayak across the river to the cave entrance, continue into the cave for several hundred metres, then disembark and wade/swim deeper into the cave in the dark, with water reaching chest-high in places. The mud bath chamber is roughly 400 metres inside - a wide, low-ceilinged room with a pool of mineral-rich mud about chest-deep. After the mud bath, the route reverses: swim back out, kayak back to the river, and return to the base. On the river itself, other activities include a shorter zipline, a Sasuke-style obstacle bridge, a water slide, and various inflatables. The full experience takes around 3-4 hours. Lockers, showers, and a restaurant are available at the base.",
-    travelTips:
-      "Dark Cave is the most fun of the Phong Nha activities for travellers who want something physically engaging rather than purely scenic. The combination of zip line, kayaking, cave swimming, and mud bath in a single ticket is genuinely good value and well-organised. It's not suitable for people uncomfortable with enclosed spaces, darkness, or open water. The mud bath is the highlight - the mineral content makes the mud unusually buoyant and the texture is unlike anything available in a standard spa. Rinse off in the river after - the mud takes multiple washes to fully remove. It generally suits younger, more active travellers best, though families are welcome too - pairing it with a calmer day at Phong Nha Cave works well if you're travelling with kids or older relatives who'd rather skip the zipline and mud.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Dark Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dark Cave - Hang Tối - is the outlier in Phong Nha-Kẻ Bàng National Park: while the other caves are visited for their geological formations and historical significance, Dark Cave is explicitly an adventure activity, often marketed together with the Chày River as 'Sông Chày - Hang Tối'. Both names have specific origins: the Chày River is said to take its name from Thác Chày, a waterfall upstream whose sound of falling water reminded locals of a rice-pounding pestle (chày); the cave earned 'Tối' ('dark') from how thick and impenetrable the darkness feels just past its entrance.",
+          },
+          { type: "heading", text: "Packages" },
+          {
+            type: "paragraph",
+            text: "The full experience begins with a zip line over the Chày River, continues with kayaking into the cave entrance, transitions into a swim through underground passages in complete darkness, and culminates in a mineral mud bath inside one of the cave's chambers - a natural pool of fine grey-white mud with a consistency unlike any spa. A cheaper standard package skips the cave and mud bath entirely, sticking instead to a shorter zipline, kayaking, river swimming, a Sasuke-style obstacle bridge, and a water slide on the river itself.",
+          },
+          { type: "heading", text: "The Cave and Its Wildlife" },
+          {
+            type: "paragraph",
+            text: "The cave itself was discovered in 1990 and runs close to 6km long, with reported heights of up to 80m in places (some sources cite more modest figures depending on which section is measured) - it contains impressive stalactite formations, many coated in green moss from the high humidity of sitting right beside the river. The cave entrance area is also home to swallows, bats, and the Hà Tĩnh langur, an endangered primate species listed in Vietnam's Red Book. The focus here is on experience rather than sightseeing, and it attracts a younger, more active crowd than the other Phong Nha caves - the atmosphere on a busy morning, zip lines and splashing and laughter echoing off cave walls, is completely different from the cathedral quiet of Paradise Cave.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Dark Cave",
+        blocks: [
+          { type: "heading", text: "Getting to the Chày River" },
+          {
+            type: "paragraph",
+            text: "Dark Cave is on the Chày River, roughly 15-20 minutes by motorbike from Phong Nha/Sơn Trạch town (about 20km), and around 50km from Đồng Hới - from Đồng Hới airport, follow the eastern Hồ Chí Minh Highway (QL16) toward Km 0 at Khe Gát, then turn onto the western branch (QL15) for a further 15km. By water, one popular route starts at the Phong Nha cave boat dock, heads upstream along the Son River past Phong Nha Cave for about 1km to the confluence of the Son, Chày, and Troóc rivers, then follows the Chày River about 5km to Dark Cave, ending at the Trộ Mợng ranger station.",
+          },
+          { type: "heading", text: "Base Facilities and Tickets" },
+          {
+            type: "paragraph",
+            text: "The activity base is on the riverbank with a clearly marked entrance, lockers, changing rooms, and a restaurant. Tickets are purchased at the base (cash) or in advance online through platforms like Klook or GetYourGuide. Most travellers do Dark Cave in the morning and combine it with a boat tour to Phong Nha Cave in the afternoon, as the two are close and logistically easy to pair.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Dark Cave",
+        blocks: [
+          { type: "heading", text: "The Full-Package Sequence" },
+          {
+            type: "paragraph",
+            text: "The full-package activity runs in a set sequence: gear up at the base, zip line across the Chày River (about 400 metres), swim or kayak across the river to the cave entrance, continue into the cave for several hundred metres, then disembark and wade/swim deeper into the cave in the dark, with water reaching chest-high in places. The mud bath chamber is roughly 400 metres inside - a wide, low-ceilinged room with a pool of mineral-rich mud about chest-deep. After the mud bath, the route reverses: swim back out, kayak back to the river, and return to the base.",
+          },
+          { type: "heading", text: "Other River Activities" },
+          {
+            type: "paragraph",
+            text: "On the river itself, other activities include a shorter zipline, a Sasuke-style obstacle bridge, a water slide, and various inflatables. The full experience takes around 3-4 hours. Lockers, showers, and a restaurant are available at the base.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Dark Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dark Cave is the most fun of the Phong Nha activities for travellers who want something physically engaging rather than purely scenic. The combination of zip line, kayaking, cave swimming, and mud bath in a single ticket is genuinely good value and well-organised. It's not suitable for people uncomfortable with enclosed spaces, darkness, or open water.",
+          },
+          { type: "heading", text: "The Mud Bath" },
+          {
+            type: "paragraph",
+            text: "The mud bath is the highlight - the mineral content makes the mud unusually buoyant and the texture is unlike anything available in a standard spa. Rinse off in the river after - the mud takes multiple washes to fully remove. It generally suits younger, more active travellers best, though families are welcome too - pairing it with a calmer day at Phong Nha Cave works well if you're travelling with kids or older relatives who'd rather skip the zipline and mud.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

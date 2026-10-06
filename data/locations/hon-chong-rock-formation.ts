@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honChongRockFormation: Location = {
   slug: "hon-chong-rock-formation",
   name: "Hòn Chồng (Hòn Chồng Rock Formation)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.272947381203165,
@@ -47,14 +47,72 @@ export const honChongRockFormation: Location = {
     "Hội Quán Vịnh Nha Trang, the small cultural exhibition space near the entrance, hosts traditional Vietnamese instrument performances - tickets were around 30,000 VND as of 2026, worth checking current pricing and schedule if that interests you",
   ],
   content: {
-    intro:
-      "Hòn Chồng is a granite rock formation on the northern edge of Nha Trang, at the foot of La San Hill, where a cluster of weathered boulders stack against each other at the shoreline and extend into the shallow water. The name literally means 'stacked rocks,' describing the way the boulders pile on top of one another - though it's also the basis for a well-loved local legend that plays on the double meaning of 'chồng' (which also means 'husband'). The most touching version tells of a young fisherman couple caught in a storm: as the wife was swept away, the husband held onto her with one hand and gripped the rock with the other, but the sea eventually took them both - leaving behind a large handprint-shaped depression in the main boulder as a symbol of that devotion. A smaller rock cluster nearby, called Hòn Vợ ('Wife Rock'), completes the pairing - four squarish blocks of rock arranged in two rows, tucked into a corner of the strait below the cliff near Hội Quán Hòn Chồng (the on-site pavilion), in noticeable contrast to Hòn Chồng's bolder position jutting proudly out to sea. Many visitors miss Hòn Vợ entirely, since it's only partly visible from above and easy to overlook - seeing it properly means following the path down close to the water's edge. Other, older versions of the legend involve a giant who left the handprint while fishing, or while watching sea fairies bathe - locals will often share whichever version they know. The site sits 3km north of Nha Trang's central beach strip, separated from the resort zone by a short distance that most visitors cover by taxi or motorbike. The appeal is straightforward: unusual rock shapes at the water's edge, views back along the coastline toward the city, and the offshore island silhouettes of Hòn Tre and the Con Sẽ Tre archipelago.",
-    howToGetThere:
-      "Hòn Chồng is located in Vĩnh Phước ward, approximately 3km north of Nha Trang city centre. By motorbike or taxi from central Nha Trang, the trip takes 10–15 minutes: follow Trần Phú street north, past the Phạm Văn Đồng flyover, and take the signposted turn on the right down to the site. A small car park and ticket booth are at the entrance, alongside Hội Quán Vịnh Nha Trang, a small cultural exhibition space. Most visitors combine it with other northern Nha Trang sites - the Ponagar Cham Towers are a short distance away and make a logical pairing.",
-    whatToExpect:
-      "The site is compact - a pathway leads from the entrance down to the rock formation at the waterline. The boulders are large and climbable, with the largest formation extending several metres into the sea. From the upper rocks, the view encompasses Nha Trang Bay to the south and the offshore islands - Hòn Yến and Hòn Tre among them - to the east. The handprint depression in the main rock face is prominent and visitors typically photograph it, alongside the smaller Hòn Vợ formation nearby. The surrounding area has been developed with a small garden and seating, keeping the site tidy if slightly over-managed. It's worth being honest about scale and expectations here: this is fundamentally a rocky outcrop with an unusually shaped stack of boulders, not a sprawling attraction - there's little shade and the site can feel quite exposed and hot at midday. Most visitors find 30 minutes is genuinely enough time to see everything, even if the setting and the view make it worth a stop.",
-    travelTips:
-      "Hòn Chồng is a short stop rather than a half-day destination - factor it into a broader Nha Trang itinerary alongside the Ponagar Towers, Long Sơn Pagoda, or a northern beach rather than treating it as a standalone trip. The site is pleasant in the late afternoon when the crowds thin and the light improves. For a city that leans heavily toward beach resort tourism, Hòn Chồng offers a coastal experience that is different in character - rock scrambling and sea views rather than sunbathing - which makes it a useful contrast for visitors who want more than the main beach strip.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hòn Chồng (Hòn Chồng Rock Formation) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hòn Chồng is a granite rock formation on the northern edge of Nha Trang, at the foot of La San Hill, where a cluster of weathered boulders stack against each other at the shoreline and extend into the shallow water. The name literally means 'stacked rocks,' describing the way the boulders pile on top of one another - though it's also the basis for a well-loved local legend that plays on the double meaning of 'chồng' (which also means 'husband').",
+          },
+          { type: "heading", text: "The Legend of Hòn Chồng and Hòn Vợ" },
+          {
+            type: "paragraph",
+            text: "The most touching version tells of a young fisherman couple caught in a storm: as the wife was swept away, the husband held onto her with one hand and gripped the rock with the other, but the sea eventually took them both - leaving behind a large handprint-shaped depression in the main boulder as a symbol of that devotion. A smaller rock cluster nearby, called Hòn Vợ ('Wife Rock'), completes the pairing - four squarish blocks of rock arranged in two rows, tucked into a corner of the strait below the cliff near Hội Quán Hòn Chồng (the on-site pavilion), in noticeable contrast to Hòn Chồng's bolder position jutting proudly out to sea. Many visitors miss Hòn Vợ entirely, since it's only partly visible from above and easy to overlook - seeing it properly means following the path down close to the water's edge. Other, older versions of the legend involve a giant who left the handprint while fishing, or while watching sea fairies bathe - locals will often share whichever version they know.",
+          },
+          { type: "heading", text: "Location and Appeal" },
+          {
+            type: "paragraph",
+            text: "The site sits 3km north of Nha Trang's central beach strip, separated from the resort zone by a short distance that most visitors cover by taxi or motorbike. The appeal is straightforward: unusual rock shapes at the water's edge, views back along the coastline toward the city, and the offshore island silhouettes of Hòn Tre and the Con Sẽ Tre archipelago.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hòn Chồng (Hòn Chồng Rock Formation)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hòn Chồng is located in Vĩnh Phước ward, approximately 3km north of Nha Trang city centre. By motorbike or taxi from central Nha Trang, the trip takes 10–15 minutes: follow Trần Phú street north, past the Phạm Văn Đồng flyover, and take the signposted turn on the right down to the site.",
+          },
+          {
+            type: "paragraph",
+            text: "A small car park and ticket booth are at the entrance, alongside Hội Quán Vịnh Nha Trang, a small cultural exhibition space. Most visitors combine it with other northern Nha Trang sites - the Ponagar Cham Towers are a short distance away and make a logical pairing.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hòn Chồng (Hòn Chồng Rock Formation)",
+        blocks: [
+          { type: "heading", text: "The Rocks and the View" },
+          {
+            type: "paragraph",
+            text: "The site is compact - a pathway leads from the entrance down to the rock formation at the waterline. The boulders are large and climbable, with the largest formation extending several metres into the sea. From the upper rocks, the view encompasses Nha Trang Bay to the south and the offshore islands - Hòn Yến and Hòn Tre among them - to the east. The handprint depression in the main rock face is prominent and visitors typically photograph it, alongside the smaller Hòn Vợ formation nearby.",
+          },
+          { type: "heading", text: "Setting Expectations" },
+          {
+            type: "paragraph",
+            text: "The surrounding area has been developed with a small garden and seating, keeping the site tidy if slightly over-managed. It's worth being honest about scale and expectations here: this is fundamentally a rocky outcrop with an unusually shaped stack of boulders, not a sprawling attraction - there's little shade and the site can feel quite exposed and hot at midday. Most visitors find 30 minutes is genuinely enough time to see everything, even if the setting and the view make it worth a stop.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hòn Chồng (Hòn Chồng Rock Formation)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hòn Chồng is a short stop rather than a half-day destination - factor it into a broader Nha Trang itinerary alongside the Ponagar Towers, Long Sơn Pagoda, or a northern beach rather than treating it as a standalone trip. The site is pleasant in the late afternoon when the crowds thin and the light improves. For a city that leans heavily toward beach resort tourism, Hòn Chồng offers a coastal experience that is different in character - rock scrambling and sea views rather than sunbathing - which makes it a useful contrast for visitors who want more than the main beach strip.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

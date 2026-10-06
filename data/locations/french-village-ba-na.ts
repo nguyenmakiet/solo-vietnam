@@ -20,7 +20,7 @@ export const frenchVillageBaNa: Location = {
     minMinutes: 30,
     maxMinutes: 45,
   },
-  entranceFee: "Included in Bà Nà Hills ticket (1,000,000 VND/adult, 800,000 VND/child — 2026 price)",
+  entranceFee: "Included in Bà Nà Hills ticket (1,000,000 VND/adult, 800,000 VND/child - 2026 price)",
   openingHours: "8:00 AM – 10:00 PM (within Bà Nà Hills complex)",
   mapUrl: "https://www.google.com/maps?q=15.997655145396397,107.98932655723252",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775802336159!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDQ4TWJ2amdF!2m2!1d15.99772141975089!2d107.9941198829035!3f44.81667518592979!4f-4.621657097063633!5f0.7820865974627469", },

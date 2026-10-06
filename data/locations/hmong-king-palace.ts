@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hmongKingPalace: Location = {
   slug: "hmong-king-palace",
   name: "Hmong King Palace",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.25632622972936,
@@ -54,14 +54,88 @@ export const hmongKingPalace: Location = {
     "From Hà Giang city: follow QL4C through Quản Bạ Heaven's Gate and Yên Minh pine forest - about 125-131km, 3-4 hours. From Đồng Văn town: only about 15km, 20-30 minutes.",
   ],
   content: {
-    intro:
-      "The Hmong King Palace (Dinh thự họ Vương, also called Nhà Vương or Dinh Vua Mèo) is the former residence of the Vương clan in Sà Phìn commune, Đồng Văn district, Hà Giang - a powerful Hmong family that controlled the opium-producing plateau region under French colonial administration. Construction ran from 1898 to 1907 under Vương Chính Đức, popularly known as 'Vua Mèo' - the 'Hmong King' (often translated from the Vietnamese nickname; he wasn't a sovereign monarch in the formal sense, but a regional clan leader whose authority over the plateau's Hmong communities and opium trade earned him that title locally) - who funded the project with 150,000 Indochinese silver piastres - equivalent to roughly 150 billion VND today - earned through control of the regional opium trade. Before building, he sent for a Chinese geomancer, Trương Chiếu, who selected the Sà Phìn valley for its turtle-shaped hill formation, believed under feng shui principles to bring lasting prosperity and natural defensive protection from the surrounding mountains. The architecture is a deliberate three-way synthesis: the courtyard layout, curved rooflines, and Han-character plaques follow Chinese tradition; fireplaces, chimneys, and iron railings reflect French colonial influence; and rammed earth sections and local bluestone and pine materials carry Hmong building traditions. The compound covers nearly 3,000 square metres (with the walled grounds extending to roughly 4,800-4,876 square metres), comprising 64 rooms across 4 horizontal and 6 vertical two-storey buildings, enclosed by a defensive stone wall 60-70cm thick and 265m long with gun ports and two bunkers. It was officially designated a national heritage site in 1993. The family's later history adds another layer: Vương Chí Sình, the original builder's son, became a National Assembly delegate after 1945 and was posthumously awarded Vietnam's National Unity Medal in 2006, his tomb now standing in front of the palace gate.",
-    howToGetThere:
-      "The Hmong King Palace is in Sà Phìn commune, roughly 125-131km north of Hà Giang city and about 15km from Đồng Văn town on the Ha Giang loop road. From Hà Giang city, the standard route follows National Highway 4C through Quản Bạ Heaven's Gate and the Yên Minh pine forest before reaching Sà Phìn - about 3-4 hours of riding. From Đồng Văn, it's a short 20-30 minute ride. Hà Giang city itself is about 320km from Hanoi via National Highway 2, roughly 6-8 hours by car or bus. The Ha Giang loop is almost exclusively done by motorbike; easy rider tours and self-guided rental are both common. Park near the local market rather than directly at the palace gate to avoid inflated parking charges.",
-    whatToExpect:
-      "Despite its reputation as a 'palace', don't expect a sprawling royal complex - the experience is intimate rather than monumental, and many first-time visitors are surprised by how compact it feels in person. The compound is entered through a stone gate with rounded steps (a feng shui design choice) into a series of stone courtyards surrounded by residential and ceremonial buildings. The layout divides into Tiền Dinh (front, for guards and servants), Trung Dinh (middle, for receiving guests and ancestral worship), and Hậu Dinh (rear, the family's private quarters) - 64 rooms total across two-storey stone buildings with carved window frames and wooden interior fittings. Look closely at the column bases for carvings shaped like opium poppy pods, and at the granite-paved walkways and courtyards. A large stone rainwater cistern behind the compound still supplies water to the local area today. Original artifacts on display include wooden furniture, stone grinding tools, cooking equipment, and the 1923 imperial plaque gifted by Emperor Khải Định. The compound is well-maintained and the stonework is in good condition. A visit takes 30-60 minutes depending on how much time you spend with the exhibits and a guide.",
-    travelTips:
-      "The Hmong King Palace is one of the few sites on the Ha Giang loop that provides historical and cultural context for the landscape you're riding through. The plateau's dramatic scenery is the main draw of the loop, but understanding that this was an opium-producing region controlled by a single powerful clan under a colonial arrangement - and that the architectural evidence of that history is sitting right there in Sà Phìn - makes the visit significantly richer. Most loop riders stop here for 30-45 minutes and move on; combining it with the nearby Sà Phìn market, the Yên Minh pine forest along the approach road, and (in October) nearby buckwheat fields makes for a fuller half-day rather than a quick photo stop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hmong King Palace Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Hmong King Palace (Dinh thự họ Vương, also called Nhà Vương or Dinh Vua Mèo) is the former residence of the Vương clan in Sà Phìn commune, Đồng Văn district, Hà Giang - a powerful Hmong family that controlled the opium-producing plateau region under French colonial administration.",
+          },
+          { type: "heading", text: "Construction and Feng Shui" },
+          {
+            type: "paragraph",
+            text: "Construction ran from 1898 to 1907 under Vương Chính Đức, popularly known as 'Vua Mèo' - the 'Hmong King' (often translated from the Vietnamese nickname; he wasn't a sovereign monarch in the formal sense, but a regional clan leader whose authority over the plateau's Hmong communities and opium trade earned him that title locally) - who funded the project with 150,000 Indochinese silver piastres - equivalent to roughly 150 billion VND today - earned through control of the regional opium trade. Before building, he sent for a Chinese geomancer, Trương Chiếu, who selected the Sà Phìn valley for its turtle-shaped hill formation, believed under feng shui principles to bring lasting prosperity and natural defensive protection from the surrounding mountains.",
+          },
+          { type: "heading", text: "Architecture" },
+          {
+            type: "paragraph",
+            text: "The architecture is a deliberate three-way synthesis: the courtyard layout, curved rooflines, and Han-character plaques follow Chinese tradition; fireplaces, chimneys, and iron railings reflect French colonial influence; and rammed earth sections and local bluestone and pine materials carry Hmong building traditions. The compound covers nearly 3,000 square metres (with the walled grounds extending to roughly 4,800-4,876 square metres), comprising 64 rooms across 4 horizontal and 6 vertical two-storey buildings, enclosed by a defensive stone wall 60-70cm thick and 265m long with gun ports and two bunkers. It was officially designated a national heritage site in 1993.",
+          },
+          { type: "heading", text: "The Family's Later History" },
+          {
+            type: "paragraph",
+            text: "The family's later history adds another layer: Vương Chí Sình, the original builder's son, became a National Assembly delegate after 1945 and was posthumously awarded Vietnam's National Unity Medal in 2006, his tomb now standing in front of the palace gate.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hmong King Palace",
+        blocks: [
+          { type: "heading", text: "From Hà Giang City and Đồng Văn" },
+          {
+            type: "paragraph",
+            text: "The Hmong King Palace is in Sà Phìn commune, roughly 125-131km north of Hà Giang city and about 15km from Đồng Văn town on the Ha Giang loop road. From Hà Giang city, the standard route follows National Highway 4C through Quản Bạ Heaven's Gate and the Yên Minh pine forest before reaching Sà Phìn - about 3-4 hours of riding. From Đồng Văn, it's a short 20-30 minute ride.",
+          },
+          { type: "heading", text: "Getting to Hà Giang, and Parking" },
+          {
+            type: "paragraph",
+            text: "Hà Giang city itself is about 320km from Hanoi via National Highway 2, roughly 6-8 hours by car or bus. The Ha Giang loop is almost exclusively done by motorbike; easy rider tours and self-guided rental are both common. Park near the local market rather than directly at the palace gate to avoid inflated parking charges.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hmong King Palace",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Despite its reputation as a 'palace', don't expect a sprawling royal complex - the experience is intimate rather than monumental, and many first-time visitors are surprised by how compact it feels in person.",
+          },
+          { type: "heading", text: "Layout of the Compound" },
+          {
+            type: "paragraph",
+            text: "The compound is entered through a stone gate with rounded steps (a feng shui design choice) into a series of stone courtyards surrounded by residential and ceremonial buildings. The layout divides into Tiền Dinh (front, for guards and servants), Trung Dinh (middle, for receiving guests and ancestral worship), and Hậu Dinh (rear, the family's private quarters) - 64 rooms total across two-storey stone buildings with carved window frames and wooden interior fittings.",
+          },
+          { type: "heading", text: "Details and Artifacts" },
+          {
+            type: "paragraph",
+            text: "Look closely at the column bases for carvings shaped like opium poppy pods, and at the granite-paved walkways and courtyards. A large stone rainwater cistern behind the compound still supplies water to the local area today. Original artifacts on display include wooden furniture, stone grinding tools, cooking equipment, and the 1923 imperial plaque gifted by Emperor Khải Định.",
+          },
+          { type: "heading", text: "Condition and Time Needed" },
+          {
+            type: "paragraph",
+            text: "The compound is well-maintained and the stonework is in good condition. A visit takes 30-60 minutes depending on how much time you spend with the exhibits and a guide.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hmong King Palace",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Hmong King Palace is one of the few sites on the Ha Giang loop that provides historical and cultural context for the landscape you're riding through. The plateau's dramatic scenery is the main draw of the loop, but understanding that this was an opium-producing region controlled by a single powerful clan under a colonial arrangement - and that the architectural evidence of that history is sitting right there in Sà Phìn - makes the visit significantly richer. Most loop riders stop here for 30-45 minutes and move on; combining it with the nearby Sà Phìn market, the Yên Minh pine forest along the approach road, and (in October) nearby buckwheat fields makes for a fuller half-day rather than a quick photo stop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

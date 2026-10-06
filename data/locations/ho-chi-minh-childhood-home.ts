@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoChiMinhChildhoodHome: Location = {
   slug: "ho-chi-minh-childhood-home",
   name: "Ho Chi Minh's Childhood Home",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["nghe-an"],
   destination: "",
   lat: 18.676032245825112,
@@ -52,14 +52,88 @@ export const hoChiMinhChildhoodHome: Location = {
     "Nam Đàn district is about 15km from Vinh city and easily combined with a stop in Vinh on a central Vietnam road trip",
   ],
   content: {
-    intro:
-      "The village of Làng Sen, whose name means 'Lotus' after the flower grown extensively in the village pond (in blooming season, the house sits amid a picturesque scene of pink lotus blossoms), is in Kim Liên commune, Nam Đàn district, Nghệ An province - where Nguyễn Sinh Cung, later known to the world as Hồ Chí Minh, spent an important part of his youth with his father Nguyễn Sinh Sắc. The house itself was built by fellow villagers in 1901 to celebrate Nguyễn Sinh Sắc passing the prestigious Phó Bảng civil service examination that year, and the family lived there from late 1901 to mid-1906. The five-section (5-gian) thatched house, built on a plot of roughly 2,500m², was laid out with the two front sections used for the family altar and receiving guests, a third section as the bedroom of Hồ Chí Minh's elder sister Nguyễn Thị Thanh, a fourth with a wooden platform bed by the window where Nguyễn Sinh Sắc read, and a fifth where father and son - Nguyễn Sinh Khiêm and young Nguyễn Sinh Cung - slept, with a separate kitchen building alongside. The house has been preserved as a national heritage site since 1990, and in 2012 was included among Vietnam's 23 Special National Relic sites; the current structure was carefully restored on its original site starting in the 1950s and was substantially complete by 1961, furnished with period items and artifacts, several donated by villagers and still preserved today. The wider Kim Liên historical complex covers some 205 hectares, with various related sites spread 2-10km apart - including the nearby village of Làng Hoàng Trù, about 2km from Làng Sen, where Hồ Chí Minh was actually born in 1890 and spent his first few years at his maternal family's home.",
-    howToGetThere:
-      "Kim Liên is in Nam Đàn district, approximately 15km southwest of Vinh city on National Highway 46. From Vinh, the journey by motorbike takes about 30 minutes. From Hanoi, Vinh is 295km south - about 4-5 hours by car via the North-South Expressway, or accessible by train (roughly 5-6 hours on express services). From Huế, Vinh is roughly 320-370km north by road, and from Đà Nẵng roughly 460-470km - both long overland journeys of 6.5-9 hours by car rather than a quick trip, so factor this in if you're combining the visit with central Vietnam. Vinh city has a train station and bus connections from both north and south, making it a natural stop on any overland journey through central Vietnam. From Vinh, local buses run to Nam Đàn; motorbike taxi covers the final stretch to the site.",
-    whatToExpect:
-      "The main Làng Sen site is a compound including the reconstructed family home, a small exhibition hall with photographs and historical documents, and landscaped grounds featuring the nearby Giếng Cốc well and Lò Rèn Cố Điền blacksmith forge. The house itself is small - a few rooms with period furnishings - and the visit is short by physical scale alone, though the historical weight makes most visitors slow down. Remember that the site closes over a midday break, so plan around the morning or afternoon opening windows. The site is maintained to a high standard and is clearly treated as a place of national reverence. Vietnamese visitors often arrive in organized groups, many traveling significant distances specifically to pay respects. Foreign visitors are relatively uncommon and are welcomed warmly. The Làng Hoàng Trù birthplace complex, 2km away, is a separate but related cluster worth including in the same visit (allow another 1-2 hours) - it includes the family's own three-section thatched house, flanked by rows of areca palms, plus the house of Hồ Chí Minh's maternal grandfather Hoàng Xuân Đường and the Hoàng Xuân family's ancestral worship house, together preserving period items like a wooden loom, a hemp hammock, and writing implements.",
-    travelTips:
-      "Kim Liên sits in one of Vietnam's most historically dense regions - Nghệ An produced a disproportionate number of the country's revolutionary leaders and scholars, a fact locals attribute to the province's hardscrabble climate and culture of study under adversity. The site is significant for understanding Vietnamese history regardless of one's political perspective. Even for travelers with limited interest in the political history, the physical environment - a well-preserved 19th-century-style Vietnamese rural village - is genuinely interesting. If you're driving or riding the coastal route between Hanoi and Huế, the 30-minute detour from Vinh to Kim Liên is easily worth making, just plan your arrival time around the midday closure.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ho Chi Minh's Childhood Home Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The village of Làng Sen, whose name means 'Lotus' after the flower grown extensively in the village pond (in blooming season, the house sits amid a picturesque scene of pink lotus blossoms), is in Kim Liên commune, Nam Đàn district, Nghệ An province - where Nguyễn Sinh Cung, later known to the world as Hồ Chí Minh, spent an important part of his youth with his father Nguyễn Sinh Sắc.",
+          },
+          { type: "heading", text: "The House" },
+          {
+            type: "paragraph",
+            text: "The house itself was built by fellow villagers in 1901 to celebrate Nguyễn Sinh Sắc passing the prestigious Phó Bảng civil service examination that year, and the family lived there from late 1901 to mid-1906. The five-section (5-gian) thatched house, built on a plot of roughly 2,500m², was laid out with the two front sections used for the family altar and receiving guests, a third section as the bedroom of Hồ Chí Minh's elder sister Nguyễn Thị Thanh, a fourth with a wooden platform bed by the window where Nguyễn Sinh Sắc read, and a fifth where father and son - Nguyễn Sinh Khiêm and young Nguyễn Sinh Cung - slept, with a separate kitchen building alongside.",
+          },
+          { type: "heading", text: "Heritage Status and the Wider Complex" },
+          {
+            type: "paragraph",
+            text: "The house has been preserved as a national heritage site since 1990, and in 2012 was included among Vietnam's 23 Special National Relic sites; the current structure was carefully restored on its original site starting in the 1950s and was substantially complete by 1961, furnished with period items and artifacts, several donated by villagers and still preserved today. The wider Kim Liên historical complex covers some 205 hectares, with various related sites spread 2-10km apart - including the nearby village of Làng Hoàng Trù, about 2km from Làng Sen, where Hồ Chí Minh was actually born in 1890 and spent his first few years at his maternal family's home.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ho Chi Minh's Childhood Home",
+        blocks: [
+          { type: "heading", text: "From Vinh" },
+          {
+            type: "paragraph",
+            text: "Kim Liên is in Nam Đàn district, approximately 15km southwest of Vinh city on National Highway 46. From Vinh, the journey by motorbike takes about 30 minutes.",
+          },
+          { type: "heading", text: "From Hanoi, Huế and Đà Nẵng" },
+          {
+            type: "paragraph",
+            text: "From Hanoi, Vinh is 295km south - about 4-5 hours by car via the North-South Expressway, or accessible by train (roughly 5-6 hours on express services). From Huế, Vinh is roughly 320-370km north by road, and from Đà Nẵng roughly 460-470km - both long overland journeys of 6.5-9 hours by car rather than a quick trip, so factor this in if you're combining the visit with central Vietnam.",
+          },
+          { type: "heading", text: "Train and Bus" },
+          {
+            type: "paragraph",
+            text: "Vinh city has a train station and bus connections from both north and south, making it a natural stop on any overland journey through central Vietnam. From Vinh, local buses run to Nam Đàn; motorbike taxi covers the final stretch to the site.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ho Chi Minh's Childhood Home",
+        blocks: [
+          { type: "heading", text: "The Làng Sen Compound" },
+          {
+            type: "paragraph",
+            text: "The main Làng Sen site is a compound including the reconstructed family home, a small exhibition hall with photographs and historical documents, and landscaped grounds featuring the nearby Giếng Cốc well and Lò Rèn Cố Điền blacksmith forge. The house itself is small - a few rooms with period furnishings - and the visit is short by physical scale alone, though the historical weight makes most visitors slow down. Remember that the site closes over a midday break, so plan around the morning or afternoon opening windows.",
+          },
+          { type: "heading", text: "Atmosphere and Visitors" },
+          {
+            type: "paragraph",
+            text: "The site is maintained to a high standard and is clearly treated as a place of national reverence. Vietnamese visitors often arrive in organized groups, many traveling significant distances specifically to pay respects. Foreign visitors are relatively uncommon and are welcomed warmly.",
+          },
+          { type: "heading", text: "Làng Hoàng Trù" },
+          {
+            type: "paragraph",
+            text: "The Làng Hoàng Trù birthplace complex, 2km away, is a separate but related cluster worth including in the same visit (allow another 1-2 hours) - it includes the family's own three-section thatched house, flanked by rows of areca palms, plus the house of Hồ Chí Minh's maternal grandfather Hoàng Xuân Đường and the Hoàng Xuân family's ancestral worship house, together preserving period items like a wooden loom, a hemp hammock, and writing implements.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ho Chi Minh's Childhood Home",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Kim Liên sits in one of Vietnam's most historically dense regions - Nghệ An produced a disproportionate number of the country's revolutionary leaders and scholars, a fact locals attribute to the province's hardscrabble climate and culture of study under adversity. The site is significant for understanding Vietnamese history regardless of one's political perspective.",
+          },
+          {
+            type: "paragraph",
+            text: "Even for travelers with limited interest in the political history, the physical environment - a well-preserved 19th-century-style Vietnamese rural village - is genuinely interesting. If you're driving or riding the coastal route between Hanoi and Huế, the 30-minute detour from Vinh to Kim Liên is easily worth making, just plan your arrival time around the midday closure.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
