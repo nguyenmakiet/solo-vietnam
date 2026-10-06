@@ -29,6 +29,8 @@ export const imperialCity: Location = {
     "imperial-citadel-hue2_mzy6pe",
     "imperial-citadel-hue_hdqp43",
     "imperial-citadel-hue5_vqduoy",
+    "imperial-citadel-hue4_a9knan",
+    "hue_mdvn0h",
   ],
   seoDescription:
     "Huế's Imperial City (Đại Nội) is the former seat of the Nguyễn Dynasty - a 3km² walled citadel of palaces, gates, pavilions, and ceremonial halls built 1804-1833, UNESCO World Heritage since 1993. Yellow roofs mark imperial authority; blue-green roofs mark secondary structures. Allow 3-4 hours minimum.",
