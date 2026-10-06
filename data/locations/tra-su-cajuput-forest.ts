@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const traSuCajuputForest: Location = {
   slug: "tra-su-cajuput-forest",
   name: "Trà Sư Cajuput Forest",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["an-giang"],
   destination: "mekong-delta",
   lat: "10.584555814623155",
@@ -46,14 +46,80 @@ export const traSuCajuputForest: Location = {
     "September to November is flood season when the forest is fully inundated and the mirror reflection is at its strongest. Outside this window the water drops and the visual impact decreases significantly.",
   ],
   content: {
-    intro:
-      "Trà Sư Cajuput Forest covers 845 hectares of seasonally flooded wetland in Tịnh Biên district, An Giang province. The land was heavily acidic soil before reforestation began in 1983 - the cajuput planting was originally intended to stabilise the floodplain and prevent upstream flooding, not to create a tourist destination. The trees took hold, the birds followed, and now over 70 species nest and feed here, led by large colonies of herons and night herons whose calls hit you before you've even paid for your ticket. During flood season from September to November, the Mekong's rising waters inundate the forest floor and the trees stand in still green water that mirrors the canopy overhead - the image most people associate with Trà Sư. Step into a rowboat and within minutes the cajuput trunks close in on both sides, the light filters green through the canopy, the duckweed covers the water surface, and the noise of the outside world disappears entirely.",
-    howToGetThere:
-      "Trà Sư is in Văn Giáo commune, Tịnh Biên district, approximately 30km southwest of Châu Đốc city - about 45 minutes by motorbike. From Châu Đốc, follow the road toward the Cambodian border at Tịnh Biên; the forest entrance is signposted. Organised day tours from Châu Đốc are available and include transport, entrance, and boat. The entrance area has a ticket office, boat dock, observation tower, and food stalls.",
-    whatToExpect:
-      "The visit has three main components. The rowboat tour (recommended over the motorized option) takes about 30 minutes through narrow channels between cajuput trunks - slow, quiet, and close to the forest. The Cầu Tre Vạn Bước bamboo walkway runs 10km through the forest on foot - the longest bamboo bridge in Vietnam. The observation tower (5,000 VND) gives a full canopy view over the forest and the surrounding floodplain. Bird colonies are audible from the entrance - herons and night herons in large numbers, most active at dawn and from around 5 PM as they return from feeding. Food and drinks are available inside the forest. Midday can be hot and the water occasionally carries an organic smell - early morning or late afternoon visits are significantly more comfortable.",
-    travelTips:
-      "Trà Sư is one of the Mekong Delta's most visually distinctive natural sites and genuinely matches its photographs during flood season - the flooded cajuput forest is as green and mirror-flat in person as in the images online, provided the visit falls between September and November. Outside flood season the water drops, the reflection disappears, and the forest becomes drier cajuput woodland that is pleasant but lacks the visual drama. Châu Đốc makes the natural base - a river town with Cham Muslim communities, floating fish farms, and Bà Chúa Xứ temple on Sam Mountain - and Trà Sư fits naturally into a broader An Giang day rather than requiring a standalone trip.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Trà Sư Cajuput Forest Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Trà Sư Cajuput Forest covers 845 hectares of seasonally flooded wetland in Tịnh Biên district, An Giang province. The land was heavily acidic soil before reforestation began in 1983 - the cajuput planting was originally intended to stabilise the floodplain and prevent upstream flooding, not to create a tourist destination. The trees took hold, the birds followed, and now over 70 species nest and feed here, led by large colonies of herons and night herons whose calls hit you before you've even paid for your ticket.",
+          },
+          { type: "heading", text: "Flood Season" },
+          {
+            type: "paragraph",
+            text: "During flood season from September to November, the Mekong's rising waters inundate the forest floor and the trees stand in still green water that mirrors the canopy overhead - the image most people associate with Trà Sư. Step into a rowboat and within minutes the cajuput trunks close in on both sides, the light filters green through the canopy, the duckweed covers the water surface, and the noise of the outside world disappears entirely.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Trà Sư Cajuput Forest",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Trà Sư is in Văn Giáo commune, Tịnh Biên district, approximately 30km southwest of Châu Đốc city - about 45 minutes by motorbike. From Châu Đốc, follow the road toward the Cambodian border at Tịnh Biên; the forest entrance is signposted.",
+          },
+          {
+            type: "paragraph",
+            text: "Organised day tours from Châu Đốc are available and include transport, entrance, and boat. The entrance area has a ticket office, boat dock, observation tower, and food stalls.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Trà Sư Cajuput Forest",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The visit has three main components.",
+          },
+          { type: "heading", text: "The Rowboat Tour" },
+          {
+            type: "paragraph",
+            text: "The rowboat tour (recommended over the motorized option) takes about 30 minutes through narrow channels between cajuput trunks - slow, quiet, and close to the forest.",
+          },
+          { type: "heading", text: "The Bamboo Walkway and Observation Tower" },
+          {
+            type: "paragraph",
+            text: "The Cầu Tre Vạn Bước bamboo walkway runs 10km through the forest on foot - the longest bamboo bridge in Vietnam. The observation tower (5,000 VND) gives a full canopy view over the forest and the surrounding floodplain.",
+          },
+          { type: "heading", text: "Birds, Food and Timing" },
+          {
+            type: "paragraph",
+            text: "Bird colonies are audible from the entrance - herons and night herons in large numbers, most active at dawn and from around 5 PM as they return from feeding. Food and drinks are available inside the forest. Midday can be hot and the water occasionally carries an organic smell - early morning or late afternoon visits are significantly more comfortable.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Trà Sư Cajuput Forest",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Trà Sư is one of the Mekong Delta's most visually distinctive natural sites and genuinely matches its photographs during flood season - the flooded cajuput forest is as green and mirror-flat in person as in the images online, provided the visit falls between September and November. Outside flood season the water drops, the reflection disappears, and the forest becomes drier cajuput woodland that is pleasant but lacks the visual drama.",
+          },
+          {
+            type: "paragraph",
+            text: "Châu Đốc makes the natural base - a river town with Cham Muslim communities, floating fish farms, and Bà Chúa Xứ temple on Sam Mountain - and Trà Sư fits naturally into a broader An Giang day rather than requiring a standalone trip.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honYenIsland: Location = {
   slug: "hon-yen-island",
   name: "Hon Yen Island",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["phu-yen"],
   destination: "",
   lat: 13.225688161973299,
@@ -44,14 +44,87 @@ export const honYenIsland: Location = {
     "Avoid September to December - rough seas make boat access unreliable.",
   ],
   content: {
-    intro:
-      "Hòn Yến sits off the coast of An Hòa commune in Tuy An district, 15km north of Tuy Hòa city. The name comes from the swifts (chim yến) that once nested on the island in large numbers - while fewer remain today, the island has kept its unhurried character. There are actually two islands: Hòn Yến and Hòn Sụn, which sit side by side and are connected by a natural rock path that emerges at low tide. This tidal feature - combined with the coral reef exposed above the waterline during the right lunar window - is what makes Hòn Yến distinctive. The surrounding waters support active lobster farming, supplying several floating restaurants near the island with fresh seafood at prices that reflect the fishing supply chain rather than tourist markup. Phú Yên as a whole sees far fewer international visitors than its neighbours, and Hòn Yến sits at the quieter end of even that.",
-    howToGetThere:
-      "From Tuy Hòa city, take Highway 1A north for about 15km, then turn east toward An Hòa fishing village (approximately 5km on a village road). Boat hire from local fishermen at the village: negotiate at the waterfront, crossing takes 15-20 minutes. The tidal walk option is available during the first half of the lunar month when afternoon tides are low enough - water recedes to knee depth, making the reef flat crossable on foot. Water shoes essential for the tidal walk. Tuy Hòa is connected by train and domestic flights to major cities.",
-    whatToExpect:
-      "Two small islands connected by a tidal rock path. The reef flat exposed at low tide is the main visual experience - coral formations above water, rock pools, golden sand, and the natural causeway between Hòn Yến and Hòn Sụn. At low tide (best during days 1-15 of the lunar month, afternoon), you can walk freely on the exposed reef and see coral without getting in the water. Snorkeling the surrounding reef gives access to the underwater sections. The floating restaurants moored near the island serve lobster, sea urchin, and fresh fish at genuinely low prices. The Lăng Ông Nam Hải shrine, surrounded by distinctive red-leafed almond trees, is the island's cultural landmark. No permanent services on the island itself - bring everything.",
-    travelTips:
-      "The tidal timing matters more than the date - visit during the first half of the lunar month when afternoon tides are at their lowest for the full reef flat experience. Combine with Gành Đá Đĩa (15km, hexagonal basalt columns) for a complete coastal day in Phú Yên's Tuy An district. September to December brings rough seas and unreliable boat access. The floating seafood lunch is the most memorable part of most visits and should not be skipped. Camping overnight is possible and recommended for those who want the island at its quietest - sunrise on the reef before any day visitors arrive is a different experience entirely.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hon Yen Island Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hòn Yến sits off the coast of An Hòa commune in Tuy An district, 15km north of Tuy Hòa city. The name comes from the swifts (chim yến) that once nested on the island in large numbers - while fewer remain today, the island has kept its unhurried character.",
+          },
+          { type: "heading", text: "Two Islands and a Tidal Path" },
+          {
+            type: "paragraph",
+            text: "There are actually two islands: Hòn Yến and Hòn Sụn, which sit side by side and are connected by a natural rock path that emerges at low tide. This tidal feature - combined with the coral reef exposed above the waterline during the right lunar window - is what makes Hòn Yến distinctive.",
+          },
+          { type: "heading", text: "Lobster Farms and Visitors" },
+          {
+            type: "paragraph",
+            text: "The surrounding waters support active lobster farming, supplying several floating restaurants near the island with fresh seafood at prices that reflect the fishing supply chain rather than tourist markup. Phú Yên as a whole sees far fewer international visitors than its neighbours, and Hòn Yến sits at the quieter end of even that.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hon Yen Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From Tuy Hòa city, take Highway 1A north for about 15km, then turn east toward An Hòa fishing village (approximately 5km on a village road). Boat hire from local fishermen at the village: negotiate at the waterfront, crossing takes 15-20 minutes.",
+          },
+          { type: "heading", text: "The Tidal Walk" },
+          {
+            type: "paragraph",
+            text: "The tidal walk option is available during the first half of the lunar month when afternoon tides are low enough - water recedes to knee depth, making the reef flat crossable on foot. Water shoes essential for the tidal walk.",
+          },
+          { type: "heading", text: "Getting to Tuy Hòa" },
+          {
+            type: "paragraph",
+            text: "Tuy Hòa is connected by train and domestic flights to major cities.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hon Yen Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Two small islands connected by a tidal rock path.",
+          },
+          { type: "heading", text: "The Reef at Low Tide" },
+          {
+            type: "paragraph",
+            text: "The reef flat exposed at low tide is the main visual experience - coral formations above water, rock pools, golden sand, and the natural causeway between Hòn Yến and Hòn Sụn. At low tide (best during days 1-15 of the lunar month, afternoon), you can walk freely on the exposed reef and see coral without getting in the water. Snorkeling the surrounding reef gives access to the underwater sections.",
+          },
+          { type: "heading", text: "Floating Restaurants and the Shrine" },
+          {
+            type: "paragraph",
+            text: "The floating restaurants moored near the island serve lobster, sea urchin, and fresh fish at genuinely low prices. The Lăng Ông Nam Hải shrine, surrounded by distinctive red-leafed almond trees, is the island's cultural landmark. No permanent services on the island itself - bring everything.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hon Yen Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The tidal timing matters more than the date - visit during the first half of the lunar month when afternoon tides are at their lowest for the full reef flat experience. Combine with Gành Đá Đĩa (15km, hexagonal basalt columns) for a complete coastal day in Phú Yên's Tuy An district.",
+          },
+          { type: "heading", text: "Seasons, Food and Camping" },
+          {
+            type: "paragraph",
+            text: "September to December brings rough seas and unreliable boat access. The floating seafood lunch is the most memorable part of most visits and should not be skipped. Camping overnight is possible and recommended for those who want the island at its quietest - sunrise on the reef before any day visitors arrive is a different experience entirely.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

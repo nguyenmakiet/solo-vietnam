@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taDungLake: Location = {
   slug: "ta-dung-lake",
   name: "Tà Đùng Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dak-nong"],
   destination: "",
   lat: 11.85958318658573,
@@ -43,14 +43,83 @@ export const taDungLake: Location = {
     "Average temperature 21-22°C year-round - genuinely cooler than the lowlands.",
   ],
   content: {
-    intro:
-      "Tà Đùng Lake is a reservoir in Đắk Nông province, formed when the Đồng Nai 3 hydroelectric dam flooded a valley of highland forest. The 47-plus islands visible on the lake surface are not natural formations - they are the hilltops and ridges of terrain that was submerged, with the original forest still standing above the waterline. This origin gives the lake its distinctive character: the islands are covered in dense tropical forest, the water between them is calm, and in the dry season bleached tree trunks emerge from the shallower areas where the submerged forest meets the surface. The lake has earned the informal title of 'Hạ Long Bay of the Central Highlands' for the visual logic of forested islands rising from still water - though the two places share only that basic image. The national park surrounding the lake sits at 700-1,000m elevation with an average temperature of 21-22°C year-round, giving Tà Đùng a genuinely cooler climate than the surrounding lowlands.",
-    howToGetThere:
-      "Tà Đùng Lake is approximately 250km from Ho Chi Minh City and 60km from Gia Nghĩa (Đắk Nông provincial capital). From Saigon, two route options: (1) via Bình Dương, Bình Phước, QL14 to Gia Nghĩa - about 6 hours; (2) Long Thành - Dầu Giây expressway then QL20 to QL28 via Bảo Lộc - allows an overnight stop in Bảo Lộc en route. Sleeper buses from Saigon to Gia Nghĩa (~7 hours): nhà xe Đại Nghĩa (0978 719 989 / 0973 484 848) or Thùy Linh (1900 888 684). From Gia Nghĩa, rent a motorbike and ride to Đắk Som (about 1.5 hours). From Đà Lạt: 170km via Bảo Lộc, about 3.5-4 hours.",
-    whatToExpect:
-      "The boat launch area near Đắk Som has boat rentals, food stalls, and the national park office where guides and camping permits are arranged. Boat hire from local fishermen: 500,000-1,000,000 VND per boat. SUP and kayak rentals available. The best photography window is 6-7 AM when morning light hits the water and mist moves between the islands. During the rainy season (Jun-Nov), early mornings occasionally produce a sea of clouds at the lake surface - visible from 5-6 AM. In the dry season the lake level drops, exposing bleached submerged tree trunks for a different kind of visual. Gibbons and hornbills are present in the national park forest - most active in early morning.",
-    travelTips:
-      "Book a homestay with a lake view to be in position for the 6-7 AM golden window without travel time. An overnight stay is significantly better than a day trip - the early morning is the defining experience. Tà Đùng fits naturally into a Central Highlands circuit: Đà Lạt - Bảo Lộc - Tà Đùng - Gia Nghĩa coffee country. The Tà Đùng peak trek (1,600m) is worth adding if you have an extra day - contact the national park management in advance. Thác Ông Voi is a good half-day combination.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tà Đùng Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tà Đùng Lake is a reservoir in Đắk Nông province, formed when the Đồng Nai 3 hydroelectric dam flooded a valley of highland forest. The 47-plus islands visible on the lake surface are not natural formations - they are the hilltops and ridges of terrain that was submerged, with the original forest still standing above the waterline. This origin gives the lake its distinctive character: the islands are covered in dense tropical forest, the water between them is calm, and in the dry season bleached tree trunks emerge from the shallower areas where the submerged forest meets the surface.",
+          },
+          { type: "heading", text: "The Hạ Long Bay of the Central Highlands" },
+          {
+            type: "paragraph",
+            text: "The lake has earned the informal title of 'Hạ Long Bay of the Central Highlands' for the visual logic of forested islands rising from still water - though the two places share only that basic image. The national park surrounding the lake sits at 700-1,000m elevation with an average temperature of 21-22°C year-round, giving Tà Đùng a genuinely cooler climate than the surrounding lowlands.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tà Đùng Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tà Đùng Lake is approximately 250km from Ho Chi Minh City and 60km from Gia Nghĩa (Đắk Nông provincial capital).",
+          },
+          { type: "heading", text: "From Saigon" },
+          {
+            type: "paragraph",
+            text: "From Saigon, two route options: (1) via Bình Dương, Bình Phước, QL14 to Gia Nghĩa - about 6 hours; (2) Long Thành - Dầu Giây expressway then QL20 to QL28 via Bảo Lộc - allows an overnight stop in Bảo Lộc en route. Sleeper buses from Saigon to Gia Nghĩa (~7 hours): nhà xe Đại Nghĩa (0978 719 989 / 0973 484 848) or Thùy Linh (1900 888 684). From Gia Nghĩa, rent a motorbike and ride to Đắk Som (about 1.5 hours).",
+          },
+          { type: "heading", text: "From Đà Lạt" },
+          {
+            type: "paragraph",
+            text: "From Đà Lạt: 170km via Bảo Lộc, about 3.5-4 hours.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tà Đùng Lake",
+        blocks: [
+          { type: "heading", text: "Boats and Rentals" },
+          {
+            type: "paragraph",
+            text: "The boat launch area near Đắk Som has boat rentals, food stalls, and the national park office where guides and camping permits are arranged. Boat hire from local fishermen: 500,000-1,000,000 VND per boat. SUP and kayak rentals available.",
+          },
+          { type: "heading", text: "Light, Clouds and Water Levels" },
+          {
+            type: "paragraph",
+            text: "The best photography window is 6-7 AM when morning light hits the water and mist moves between the islands. During the rainy season (Jun-Nov), early mornings occasionally produce a sea of clouds at the lake surface - visible from 5-6 AM. In the dry season the lake level drops, exposing bleached submerged tree trunks for a different kind of visual.",
+          },
+          { type: "heading", text: "Wildlife" },
+          {
+            type: "paragraph",
+            text: "Gibbons and hornbills are present in the national park forest - most active in early morning.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tà Đùng Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Book a homestay with a lake view to be in position for the 6-7 AM golden window without travel time. An overnight stay is significantly better than a day trip - the early morning is the defining experience.",
+          },
+          { type: "heading", text: "Combining with Other Sites" },
+          {
+            type: "paragraph",
+            text: "Tà Đùng fits naturally into a Central Highlands circuit: Đà Lạt - Bảo Lộc - Tà Đùng - Gia Nghĩa coffee country. The Tà Đùng peak trek (1,600m) is worth adding if you have an extra day - contact the national park management in advance. Thác Ông Voi is a good half-day combination.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

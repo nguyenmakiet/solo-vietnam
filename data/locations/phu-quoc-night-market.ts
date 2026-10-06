@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phuQuocNightMarket: Location = {
   slug: "phu-quoc-night-market",
   name: "Phú Quốc Night Market",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["kien-giang"],
   destination: "phu-quoc",
   lat: 10.2158553,
@@ -44,14 +44,67 @@ export const phuQuocNightMarket: Location = {
     "Bring cash, and wash your hands or use hand sanitizer before eating from street stalls",
   ],
   content: {
-    intro:
-      "Phú Quốc Night Market - properly Chợ Đêm Bạch Đằng, and formerly known as Chợ Đêm Dinh Cậu before it relocated here - opens every evening on Bạch Đằng street in central Dương Đông, along the river. Phú Quốc has several newer night markets, but this is the original, long-running one most people mean when they talk about 'the' Phú Quốc night market. Stalls begin setting up from around 5:00 PM, with the busiest stretch running 7:00-10:00 PM before the market winds down by around 11:00 PM. As of 2026, part of the riverside section is being demolished to make way for a new park, so the market's current footprint - roughly 300m from the gate - is smaller than in previous years, despite earlier rumours that it might close entirely. What remains is still a genuinely lively, smoky, fragrant stretch of grilled seafood, souvenir stalls, and local food vendors, where locals and tourists mix around shared tables.",
-    howToGetThere:
-      "The night market is in central Dương Đông town, at 6 Bạch Đằng street, near the Bạch Đằng - Nguyễn Đình Chiểu junction - walking distance from most hotels in the main tourist area. If you're staying nearby, walk rather than taking a taxi, since the surrounding streets get heavily congested with foot and vehicle traffic in the evening. Motorbike rental on Phú Quốc typically runs 120,000-180,000 VND/day if you want the flexibility to explore more of the island's evening streets afterward.",
-    whatToExpect:
-      "The market is divided into two main sections. The front section, near the entrance, is the busiest - grilled seafood stalls, prepared food, and dried specialties. The back section is quieter, with souvenirs, pearl jewellery, clothing, and handicrafts. Seafood is ordered by weight - point at what you want, confirm the price (and the unit - some stalls price by the lạng, or 100g, rather than the kg), and it goes straight onto the grill. Squid, prawns, sea urchin, oysters, and crab are popular choices, though prices run noticeably higher than at casual eateries elsewhere on the island. Pearl stalls sell a wide range, but most of the cheaper pieces are freshwater or imported costume jewellery rather than fine Phú Quốc pearls.",
-    travelTips:
-      "The night market is a reliable, atmospheric dinner option but not a bargain - seafood prices are tourist-facing, and the reduced footprint in 2026 means less to explore than in past years. For cheaper eating with the same dishes, try the local restaurants a block back from the market, or head to Hàm Ninh fishing village or 30/4 street for a fuller, more affordable seafood meal. Treat pearl and souvenir shopping here as casual rather than serious investment buying, keep your belongings secure and in front of you given the crowds, and politely wave off any touts steering you toward a specific restaurant.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Phú Quốc Night Market Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phú Quốc Night Market - properly Chợ Đêm Bạch Đằng, and formerly known as Chợ Đêm Dinh Cậu before it relocated here - opens every evening on Bạch Đằng street in central Dương Đông, along the river. Phú Quốc has several newer night markets, but this is the original, long-running one most people mean when they talk about 'the' Phú Quốc night market.",
+          },
+          { type: "heading", text: "Hours and Recent Changes" },
+          {
+            type: "paragraph",
+            text: "Stalls begin setting up from around 5:00 PM, with the busiest stretch running 7:00-10:00 PM before the market winds down by around 11:00 PM. As of 2026, part of the riverside section is being demolished to make way for a new park, so the market's current footprint - roughly 300m from the gate - is smaller than in previous years, despite earlier rumours that it might close entirely. What remains is still a genuinely lively, smoky, fragrant stretch of grilled seafood, souvenir stalls, and local food vendors, where locals and tourists mix around shared tables.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Phú Quốc Night Market",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The night market is in central Dương Đông town, at 6 Bạch Đằng street, near the Bạch Đằng - Nguyễn Đình Chiểu junction - walking distance from most hotels in the main tourist area. If you're staying nearby, walk rather than taking a taxi, since the surrounding streets get heavily congested with foot and vehicle traffic in the evening. Motorbike rental on Phú Quốc typically runs 120,000-180,000 VND/day if you want the flexibility to explore more of the island's evening streets afterward.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Phú Quốc Night Market",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The market is divided into two main sections. The front section, near the entrance, is the busiest - grilled seafood stalls, prepared food, and dried specialties. The back section is quieter, with souvenirs, pearl jewellery, clothing, and handicrafts.",
+          },
+          { type: "heading", text: "Ordering Seafood" },
+          {
+            type: "paragraph",
+            text: "Seafood is ordered by weight - point at what you want, confirm the price (and the unit - some stalls price by the lạng, or 100g, rather than the kg), and it goes straight onto the grill. Squid, prawns, sea urchin, oysters, and crab are popular choices, though prices run noticeably higher than at casual eateries elsewhere on the island.",
+          },
+          { type: "heading", text: "Pearls" },
+          {
+            type: "paragraph",
+            text: "Pearl stalls sell a wide range, but most of the cheaper pieces are freshwater or imported costume jewellery rather than fine Phú Quốc pearls.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Phú Quốc Night Market",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The night market is a reliable, atmospheric dinner option but not a bargain - seafood prices are tourist-facing, and the reduced footprint in 2026 means less to explore than in past years. For cheaper eating with the same dishes, try the local restaurants a block back from the market, or head to Hàm Ninh fishing village or 30/4 street for a fuller, more affordable seafood meal. Treat pearl and souvenir shopping here as casual rather than serious investment buying, keep your belongings secure and in front of you given the crowds, and politely wave off any touts steering you toward a specific restaurant.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

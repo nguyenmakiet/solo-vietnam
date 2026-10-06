@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const namDuIslands: Location = {
   slug: "nam-du-islands",
   name: "Nam Du Islands",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["kien-giang"],
   destination: "",
   lat: 9.693846746908509,
@@ -53,14 +53,78 @@ export const namDuIslands: Location = {
     "For Mekong Delta families and Vietnamese travelers, Nam Du is the practical alternative to an overcrowded and increasingly expensive Phú Quốc - closer from Rạch Giá, cheaper, and still genuinely island in character.",
   ],
   content: {
-    intro:
-      "Nam Du is one of the southernmost inhabited island archipelagos in Vietnam, a cluster of 21 islands in the Gulf of Thailand about 90km southwest of Rạch Giá. For Vietnamese travelers - particularly from the Mekong Delta - it has emerged as the sensible alternative to Phú Quốc, which many now consider too crowded, too expensive, and increasingly oriented toward foreign visitors rather than domestic tourism. Nam Du is closer from Rạch Giá, cheaper to reach and stay, and still has the island character that Phú Quốc has largely traded away for resort infrastructure. Tourism services are developing quickly - guesthouses, small resorts, restaurants, diving, and paragliding have all appeared in recent years - but the archipelago retains its fishing community foundation. The water around the outer islands is among the clearest in southern Vietnam, and the multi-island structure gives Nam Du a different rhythm from single-island destinations: the main island for orientation, the outer islands for the water experience.",
-    howToGetThere:
-      "From Ho Chi Minh City, take an 11 PM overnight bus to Rạch Giá, arriving around 4 AM. Allow 30 minutes to transfer to the ferry pier. Many shuttle drivers use 'Phú Quốc?' as shorthand for the ferry terminal area - if asked, don't worry, the same pier serves all Gulf island ferries. Ferry operators: Phú Quốc Express, Superdong, Ngọc Thành, Hoa Binh Ship. Book online through operator websites. Crossing takes approximately 2 hours; fare is 210,000 VND per person one way. Only 1-2 sailings per day - book ahead. Weekends sell out fast.",
-    whatToExpect:
-      "The main island (Hòn Lớn) has the pier, guesthouses, seafood restaurants, and motorbike rental. A suggested itinerary: Day 1 - arrive, pick up motorbike, Dốc Ân Tình (lighthouse road - go in the morning or late afternoon for sunset), Miếu Bà Chúa Xứ, Đền Cá Ông, Bãi Ngự, Bãi Cây Mến (the most famous beach on Nam Du - must visit). Day 2 - full-day 3-island boat tour: Hòn Mấu, Hòn Dầu, Hòn Hai Bờ Đập (350,000 VND/person). Day 3 - buy local specialties, check out, return to Rạch Giá. For a 2-night 1-day trip, skip the outer island tour and focus on the main island circuit. The key difference between 2N1Đ and 3N2Đ is whether you do the outer island boat tour.",
-    travelTips:
-      "Nam Du rewards the extra night over Hòn Sơn specifically because of the multi-island structure - the outer island boat tour on day 2 is what makes the trip complete. The 2-hour crossing from Rạch Giá is the right amount of distance to filter day-trippers while still being accessible for a weekend trip. July to September rough season is a real risk - ferries can be suspended for 1-3 days and being stranded is a genuine possibility. Build contingency if visiting outside the dry season window. No national power grid means generator-dependent electricity with morning cuts around 6-7 AM - bring a portable charger and set expectations accordingly.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Nam Du Islands Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Nam Du is one of the southernmost inhabited island archipelagos in Vietnam, a cluster of 21 islands in the Gulf of Thailand about 90km southwest of Rạch Giá. For Vietnamese travelers - particularly from the Mekong Delta - it has emerged as the sensible alternative to Phú Quốc, which many now consider too crowded, too expensive, and increasingly oriented toward foreign visitors rather than domestic tourism. Nam Du is closer from Rạch Giá, cheaper to reach and stay, and still has the island character that Phú Quốc has largely traded away for resort infrastructure.",
+          },
+          { type: "heading", text: "Tourism and the Water" },
+          {
+            type: "paragraph",
+            text: "Tourism services are developing quickly - guesthouses, small resorts, restaurants, diving, and paragliding have all appeared in recent years - but the archipelago retains its fishing community foundation. The water around the outer islands is among the clearest in southern Vietnam, and the multi-island structure gives Nam Du a different rhythm from single-island destinations: the main island for orientation, the outer islands for the water experience.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Nam Du Islands",
+        blocks: [
+          { type: "heading", text: "The Bus to Rạch Giá" },
+          {
+            type: "paragraph",
+            text: "From Ho Chi Minh City, take an 11 PM overnight bus to Rạch Giá, arriving around 4 AM. Allow 30 minutes to transfer to the ferry pier. Many shuttle drivers use 'Phú Quốc?' as shorthand for the ferry terminal area - if asked, don't worry, the same pier serves all Gulf island ferries.",
+          },
+          { type: "heading", text: "The Ferry" },
+          {
+            type: "paragraph",
+            text: "Ferry operators: Phú Quốc Express, Superdong, Ngọc Thành, Hoa Binh Ship. Book online through operator websites. Crossing takes approximately 2 hours; fare is 210,000 VND per person one way. Only 1-2 sailings per day - book ahead. Weekends sell out fast.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Nam Du Islands",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The main island (Hòn Lớn) has the pier, guesthouses, seafood restaurants, and motorbike rental.",
+          },
+          { type: "heading", text: "A 3-Day Itinerary" },
+          {
+            type: "paragraph",
+            text: "A suggested itinerary: Day 1 - arrive, pick up motorbike, Dốc Ân Tình (lighthouse road - go in the morning or late afternoon for sunset), Miếu Bà Chúa Xứ, Đền Cá Ông, Bãi Ngự, Bãi Cây Mến (the most famous beach on Nam Du - must visit). Day 2 - full-day 3-island boat tour: Hòn Mấu, Hòn Dầu, Hòn Hai Bờ Đập (350,000 VND/person). Day 3 - buy local specialties, check out, return to Rạch Giá.",
+          },
+          { type: "heading", text: "A Shorter Trip" },
+          {
+            type: "paragraph",
+            text: "For a 2-night 1-day trip, skip the outer island tour and focus on the main island circuit. The key difference between 2N1Đ and 3N2Đ is whether you do the outer island boat tour.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Nam Du Islands",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Nam Du rewards the extra night over Hòn Sơn specifically because of the multi-island structure - the outer island boat tour on day 2 is what makes the trip complete. The 2-hour crossing from Rạch Giá is the right amount of distance to filter day-trippers while still being accessible for a weekend trip.",
+          },
+          { type: "heading", text: "Weather and Electricity" },
+          {
+            type: "paragraph",
+            text: "July to September rough season is a real risk - ferries can be suspended for 1-3 days and being stranded is a genuine possibility. Build contingency if visiting outside the dry season window. No national power grid means generator-dependent electricity with morning cuts around 6-7 AM - bring a portable charger and set expectations accordingly.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

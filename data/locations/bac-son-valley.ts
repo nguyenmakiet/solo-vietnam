@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bacSonValley: Location = {
   slug: "bac-son-valley",
   name: "Bắc Sơn Valley",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lang-son"],
   destination: "",
   lat: 21.898614655260356,
@@ -44,14 +44,80 @@ export const bacSonValley: Location = {
     "Combine with Bắc Sơn Uprising Monument - the valley has significant historical importance from the 1940 independence movement.",
   ],
   content: {
-    intro:
-      "Bắc Sơn Valley lies in the limestone uplands of Lạng Sơn province, about 170km northeast of Hanoi and 80km from Lạng Sơn city. The valley floor is a broad flat basin of rice paddies at different stages of the growing cycle - golden, green, and newly planted fields creating a patchwork that locals compare to traditional textile patterns. The horizon on every side is defined by jagged limestone karst peaks. Scattered through the fields are the red-roofed stilt houses of Tày, Nùng, Dao, and Kinh communities who have farmed this valley for generations. Unlike the more famous valleys of Mù Cang Chải or Hà Giang, Bắc Sơn has not yet attracted significant tourism infrastructure - the guesthouses are basic and cheap, the villages are genuine agricultural communities, and the sense of quiet is rare by northern Vietnam standards. The Nà Lay viewpoint at 600m gives the full panoramic perspective - 1,200 stone steps from the valley floor.",
-    howToGetThere:
-      "Bắc Sơn is 170km from Hanoi and 80km from Lạng Sơn city. Direct buses run from Hanoi's major bus stations (Giáp Bát, Yên Nghĩa, Mỹ Đình, Gia Lâm) - nhà xe Dung Nghị operates the route (0985 381 888 / 0971 787 868), journey approximately 4-5 hours. Alternatively, bus to Lạng Sơn city then transfer to Bắc Sơn (80km, about 1.5 hours). By motorbike from Hanoi: via Thái Nguyên or via Lạng Sơn city, both around 4 hours. The approach road from Đồng Mỏ through the karst corridor is scenic.",
-    whatToExpect:
-      "Bắc Sơn town is a small district capital with basic guesthouses, local restaurants, a morning market, and motorbike rental. The valley is agricultural working land - rice paddies, maize, fruit orchards, and stilt house villages. The landscape is wide and quiet rather than dramatically vertical: limestone peaks frame the view without dominating it. The Nà Lay hill viewpoint (1,200 steps, 40-50 minutes up) gives the classic panoramic perspective - the full patchwork of fields, the village rooftops, and the karst peaks on all sides. On clear mornings, mist settles in the lower paddies and the peaks emerge slowly. Motorbike loop around the valley floor passes through Tày and Nùng villages with traditional stilt houses.",
-    travelTips:
-      "Bắc Sơn works best as one or two nights rather than a day trip - the valley changes completely with the light and weather, and the Nà Lay sunrise combined with a valley motorbike loop is the ideal structure. July to October is peak season for golden rice. February to April brings spring blossoms and the Lồng Tồng festival. November to January is cooler, quieter, and good for trekking. From Bắc Sơn, it is easy to continue northeast to Lạng Sơn city or loop back toward Thái Nguyên - natural addition to any northeast Vietnam itinerary.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bắc Sơn Valley Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bắc Sơn Valley lies in the limestone uplands of Lạng Sơn province, about 170km northeast of Hanoi and 80km from Lạng Sơn city. The valley floor is a broad flat basin of rice paddies at different stages of the growing cycle - golden, green, and newly planted fields creating a patchwork that locals compare to traditional textile patterns. The horizon on every side is defined by jagged limestone karst peaks.",
+          },
+          { type: "heading", text: "Villages and the Viewpoint" },
+          {
+            type: "paragraph",
+            text: "Scattered through the fields are the red-roofed stilt houses of Tày, Nùng, Dao, and Kinh communities who have farmed this valley for generations. Unlike the more famous valleys of Mù Cang Chải or Hà Giang, Bắc Sơn has not yet attracted significant tourism infrastructure - the guesthouses are basic and cheap, the villages are genuine agricultural communities, and the sense of quiet is rare by northern Vietnam standards. The Nà Lay viewpoint at 600m gives the full panoramic perspective - 1,200 stone steps from the valley floor.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bắc Sơn Valley",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bắc Sơn is 170km from Hanoi and 80km from Lạng Sơn city. Direct buses run from Hanoi's major bus stations (Giáp Bát, Yên Nghĩa, Mỹ Đình, Gia Lâm) - nhà xe Dung Nghị operates the route (0985 381 888 / 0971 787 868), journey approximately 4-5 hours. Alternatively, bus to Lạng Sơn city then transfer to Bắc Sơn (80km, about 1.5 hours).",
+          },
+          {
+            type: "paragraph",
+            text: "By motorbike from Hanoi: via Thái Nguyên or via Lạng Sơn city, both around 4 hours. The approach road from Đồng Mỏ through the karst corridor is scenic.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bắc Sơn Valley",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bắc Sơn town is a small district capital with basic guesthouses, local restaurants, a morning market, and motorbike rental. The valley is agricultural working land - rice paddies, maize, fruit orchards, and stilt house villages. The landscape is wide and quiet rather than dramatically vertical: limestone peaks frame the view without dominating it.",
+          },
+          { type: "heading", text: "The Nà Lay Viewpoint and Morning Mist" },
+          {
+            type: "paragraph",
+            text: "The Nà Lay hill viewpoint (1,200 steps, 40-50 minutes up) gives the classic panoramic perspective - the full patchwork of fields, the village rooftops, and the karst peaks on all sides. On clear mornings, mist settles in the lower paddies and the peaks emerge slowly.",
+          },
+          { type: "heading", text: "The Village Loop" },
+          {
+            type: "paragraph",
+            text: "Motorbike loop around the valley floor passes through Tày and Nùng villages with traditional stilt houses.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bắc Sơn Valley",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bắc Sơn works best as one or two nights rather than a day trip - the valley changes completely with the light and weather, and the Nà Lay sunrise combined with a valley motorbike loop is the ideal structure.",
+          },
+          { type: "heading", text: "When to Go" },
+          {
+            type: "paragraph",
+            text: "July to October is peak season for golden rice. February to April brings spring blossoms and the Lồng Tồng festival. November to January is cooler, quieter, and good for trekking.",
+          },
+          {
+            type: "paragraph",
+            text: "From Bắc Sơn, it is easy to continue northeast to Lạng Sơn city or loop back toward Thái Nguyên - natural addition to any northeast Vietnam itinerary.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

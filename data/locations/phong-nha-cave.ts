@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const phongNhaCave: Location = {
   slug: "phong-nha-cave",
   name: "Phong Nha Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: "17.58187380883147",
@@ -45,14 +45,79 @@ export const phongNhaCave: Location = {
     "Sep-Nov: rising water from heavy rain may temporarily close the cave or prevent boats from entering - check conditions before travelling.",
   ],
   content: {
-    intro:
-      "Phong Nha Cave is the most historically significant cave in Phong Nha-Kẻ Bàng National Park - the limestone formation dates back approximately 400 million years, and the cave is believed to have been used as a Cham Hindu sanctuary from the 9th to 11th centuries. The Son River flows through its base, giving the cave an experience that no other cave in the park can replicate: visitors travel by wooden boat up the turquoise Son River for 30 minutes through jungle and karst cliffs before the cave mouth appears - a 25-metre arch of dripping limestone rising directly from the water. Inside, the boatman cuts the engine and rows by hand through chambers of stalactites, the lamplight reflected in the still river below. The overall effect - the silence, the cool air, the reflections on the water, the ancient formations - is atmospheric in a way that the larger dry caves are not. Phong Nha is the intimate, poetic counterpart to the grandeur of Paradise Cave.",
-    howToGetThere:
-      "Phong Nha Cave is accessed by boat from the dock at Sơn Trạch village, approximately 45 minutes from Đồng Hới city by motorbike or car. Buy tickets first at the Phong Nha - Tien Son visitor centre, then proceed to the boat dock. Boats are shared with other visitors and depart throughout the morning. Most travellers stay in Sơn Trạch village which has accommodation and easy access to all national park caves.",
-    whatToExpect:
-      "The full visit has three parts. First: the 30-minute boat ride up the Son River - water is turquoise and cold, the banks are jungle and limestone karst. Second: approximately 1km inside the cave by boat, with the engine off and the boatman rowing by hand. The cave interior is cool, the stalactites and stalagmites lit by the boat's lights reflecting off the river surface - the formations take shapes that catch the imagination. Ancient Cham inscriptions and altar remnants are visible on the cave walls. Third: the boat docks and visitors disembark to walk and lightly climb through Tien Son Cave  on foot before returning to the boats. The full round trip takes approximately 1.5 hours.",
-    travelTips:
-      "Phong Nha is the most accessible of the park's caves - no hiking, no fitness requirements, suitable for all ages. The boat format makes it genuinely different from Paradise Cave rather than inferior to it. For visitors with one day in the park, combining Phong Nha in the morning and Paradise Cave in the afternoon covers both the underground river experience and the dry cathedral cave walk. The cave may close temporarily September to November when floodwater rises - check current conditions before planning.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Phong Nha Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phong Nha Cave is the most historically significant cave in Phong Nha-Kẻ Bàng National Park - the limestone formation dates back approximately 400 million years, and the cave is believed to have been used as a Cham Hindu sanctuary from the 9th to 11th centuries. The Son River flows through its base, giving the cave an experience that no other cave in the park can replicate: visitors travel by wooden boat up the turquoise Son River for 30 minutes through jungle and karst cliffs before the cave mouth appears - a 25-metre arch of dripping limestone rising directly from the water.",
+          },
+          {
+            type: "paragraph",
+            text: "Inside, the boatman cuts the engine and rows by hand through chambers of stalactites, the lamplight reflected in the still river below. The overall effect - the silence, the cool air, the reflections on the water, the ancient formations - is atmospheric in a way that the larger dry caves are not. Phong Nha is the intimate, poetic counterpart to the grandeur of Paradise Cave.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Phong Nha Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phong Nha Cave is accessed by boat from the dock at Sơn Trạch village, approximately 45 minutes from Đồng Hới city by motorbike or car. Buy tickets first at the Phong Nha - Tien Son visitor centre, then proceed to the boat dock.",
+          },
+          {
+            type: "paragraph",
+            text: "Boats are shared with other visitors and depart throughout the morning. Most travellers stay in Sơn Trạch village which has accommodation and easy access to all national park caves.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Phong Nha Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The full visit has three parts.",
+          },
+          { type: "heading", text: "The Boat Ride Upriver" },
+          {
+            type: "paragraph",
+            text: "First: the 30-minute boat ride up the Son River - water is turquoise and cold, the banks are jungle and limestone karst.",
+          },
+          { type: "heading", text: "Inside the Cave by Boat" },
+          {
+            type: "paragraph",
+            text: "Second: approximately 1km inside the cave by boat, with the engine off and the boatman rowing by hand. The cave interior is cool, the stalactites and stalagmites lit by the boat's lights reflecting off the river surface - the formations take shapes that catch the imagination. Ancient Cham inscriptions and altar remnants are visible on the cave walls.",
+          },
+          { type: "heading", text: "Tien Son Cave and Timing" },
+          {
+            type: "paragraph",
+            text: "Third: the boat docks and visitors disembark to walk and lightly climb through Tien Son Cave  on foot before returning to the boats. The full round trip takes approximately 1.5 hours.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Phong Nha Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Phong Nha is the most accessible of the park's caves - no hiking, no fitness requirements, suitable for all ages. The boat format makes it genuinely different from Paradise Cave rather than inferior to it.",
+          },
+          {
+            type: "paragraph",
+            text: "For visitors with one day in the park, combining Phong Nha in the morning and Paradise Cave in the afternoon covers both the underground river experience and the dry cathedral cave walk. The cave may close temporarily September to November when floodwater rises - check current conditions before planning.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

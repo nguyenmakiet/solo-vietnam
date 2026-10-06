@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baBeLake: Location = {
   slug: "ba-be-lake",
   name: "Ba Be Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["bac-kan"],
   destination: "",
   lat: 22.409302543262182,
@@ -42,14 +42,88 @@ export const baBeLake: Location = {
     "Tour packages from Hanoi (2N weekend, SUP/kayak + trekking): 2,000,000 - 3,000,000 VND/person.",
   ],
   content: {
-    intro:
-      "Ba Be Lake sits within Ba Be National Park in Bắc Kạn province, approximately 230km north of Hanoi. The lake is actually three interconnected bodies of water - Pé Lèng, Pé Lù, and Pé Lầm, known collectively as Slam Pé in the Tày language - stretching 8km through a valley of karst limestone mountains at 125m elevation. The lake reaches 20-25m deep on average, 35m at its deepest. It was recognised as one of 20 freshwater lakes globally requiring special protection at the 1995 World Freshwater Lake Conference, designated a national historical and cultural monument in 1996, and became a Ramsar Wetland site in 2011. According to Tày legend, the lake formed when the earth swallowed a village that had been cruel to an old beggar woman - who was a fairy testing their hearts. Two mothers and children who showed kindness were warned and escaped; the rest were swallowed by the rising waters. The three sections of the lake reflect the three valleys that filled. The Tày communities around the lake - most notably Bản Pác Ngòi with its 80+ stilt houses - have maintained this landscape for generations.",
-    howToGetThere:
-      "Ba Be is 230km north of Hanoi, about 4-5 hours by car or motorbike. By motorbike: QL3 through Thái Nguyên to Bắc Kạn city, then Provincial Road 256 (~60km) or PR257 via Chợ Đồn (~70km) to the lake. By car: the Hanoi-Thái Nguyên expressway accelerates the Hanoi-Bắc Kạn section before joining QL3. By bus: from Mỹ Đình, Gia Lâm, or Yên Nghĩa stations to Bắc Kạn city, then local transport for the final 60km. Pre-arranged pickup from Bắc Kạn city is possible through most homestays. Weekend tour packages from Hanoi (2 days, 2,000,000-3,000,000 VND/person) are popular for those without personal transport.",
-    whatToExpect:
-      "The lake is navigated by boat - the water connects all the main sites. The main circuit covers the lake itself, the Năng River gorge, Động Puông cave (a 300m cavern the river passes through with 30m+ ceilings and a large bat colony), Thác Đầu Đẳng waterfall, and Đảo Bà Góa (Widow Island, the most photographed spot). Additional sites include Đền An Mã temple on the island, Ao Tiên (Fairy Pond), and Động Hua Mạ cave. Boat options range from motorboats to kayaks, SUP boards, and traditional Tày dugout canoes carved from single logs. The Tày village of Bản Pác Ngòi on the lakeshore is the main homestay base - 80+ stilt houses, family meals, and the lake at dawn before any day visitors arrive.",
-    travelTips:
-      "Ba Be rewards two nights over one. The first afternoon orients you to the lake; the boat trip covers the main circuit; a second morning allows early paddling or village walks before returning. Visitors cramming it into a single overnight from Hanoi typically spend more time in transit than at the lake. Mar-May is the best season: mild temperatures (25-30°C), clear spring weather, and the Lồng Tồng festival in early spring. Sep-Nov is the second window: post-rain green, clear skies, calm water. Avoid Dec-Feb if sensitive to cold - temperatures can drop to 0°C and boat rides are genuinely cold. The lake is cool even in summer at dawn and dusk - always bring a jacket.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ba Be Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Be Lake sits within Ba Be National Park in Bắc Kạn province, approximately 230km north of Hanoi. The lake is actually three interconnected bodies of water - Pé Lèng, Pé Lù, and Pé Lầm, known collectively as Slam Pé in the Tày language - stretching 8km through a valley of karst limestone mountains at 125m elevation. The lake reaches 20-25m deep on average, 35m at its deepest. It was recognised as one of 20 freshwater lakes globally requiring special protection at the 1995 World Freshwater Lake Conference, designated a national historical and cultural monument in 1996, and became a Ramsar Wetland site in 2011.",
+          },
+          { type: "heading", text: "The Tày Legend of the Lake" },
+          {
+            type: "paragraph",
+            text: "According to Tày legend, the lake formed when the earth swallowed a village that had been cruel to an old beggar woman - who was a fairy testing their hearts. Two mothers and children who showed kindness were warned and escaped; the rest were swallowed by the rising waters. The three sections of the lake reflect the three valleys that filled.",
+          },
+          { type: "heading", text: "Bản Pác Ngòi" },
+          {
+            type: "paragraph",
+            text: "The Tày communities around the lake - most notably Bản Pác Ngòi with its 80+ stilt houses - have maintained this landscape for generations.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ba Be Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ba Be is 230km north of Hanoi, about 4-5 hours by car or motorbike.",
+          },
+          { type: "heading", text: "By Motorbike, Car or Bus" },
+          {
+            type: "paragraph",
+            text: "By motorbike: QL3 through Thái Nguyên to Bắc Kạn city, then Provincial Road 256 (~60km) or PR257 via Chợ Đồn (~70km) to the lake. By car: the Hanoi-Thái Nguyên expressway accelerates the Hanoi-Bắc Kạn section before joining QL3. By bus: from Mỹ Đình, Gia Lâm, or Yên Nghĩa stations to Bắc Kạn city, then local transport for the final 60km.",
+          },
+          { type: "heading", text: "Pickups and Tours" },
+          {
+            type: "paragraph",
+            text: "Pre-arranged pickup from Bắc Kạn city is possible through most homestays. Weekend tour packages from Hanoi (2 days, 2,000,000-3,000,000 VND/person) are popular for those without personal transport.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ba Be Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The lake is navigated by boat - the water connects all the main sites.",
+          },
+          { type: "heading", text: "The Boat Circuit" },
+          {
+            type: "paragraph",
+            text: "The main circuit covers the lake itself, the Năng River gorge, Động Puông cave (a 300m cavern the river passes through with 30m+ ceilings and a large bat colony), Thác Đầu Đẳng waterfall, and Đảo Bà Góa (Widow Island, the most photographed spot). Additional sites include Đền An Mã temple on the island, Ao Tiên (Fairy Pond), and Động Hua Mạ cave.",
+          },
+          { type: "heading", text: "Boats and the Homestay Village" },
+          {
+            type: "paragraph",
+            text: "Boat options range from motorboats to kayaks, SUP boards, and traditional Tày dugout canoes carved from single logs. The Tày village of Bản Pác Ngòi on the lakeshore is the main homestay base - 80+ stilt houses, family meals, and the lake at dawn before any day visitors arrive.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ba Be Lake",
+        blocks: [
+          { type: "heading", text: "How Long to Stay" },
+          {
+            type: "paragraph",
+            text: "Ba Be rewards two nights over one. The first afternoon orients you to the lake; the boat trip covers the main circuit; a second morning allows early paddling or village walks before returning. Visitors cramming it into a single overnight from Hanoi typically spend more time in transit than at the lake.",
+          },
+          { type: "heading", text: "When to Go" },
+          {
+            type: "paragraph",
+            text: "Mar-May is the best season: mild temperatures (25-30°C), clear spring weather, and the Lồng Tồng festival in early spring. Sep-Nov is the second window: post-rain green, clear skies, calm water. Avoid Dec-Feb if sensitive to cold - temperatures can drop to 0°C and boat rides are genuinely cold. The lake is cool even in summer at dawn and dusk - always bring a jacket.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

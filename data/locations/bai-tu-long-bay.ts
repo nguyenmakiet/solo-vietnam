@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baiTuLongBay: Location = {
   slug: "bai-tu-long-bay",
   name: "Bai Tu Long Bay",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.984007222280045,
@@ -48,14 +48,78 @@ export const baiTuLongBay: Location = {
     "Historical significance: Vân Đồn was one of Vietnam's first international trading ports (from the Lý Dynasty, ~900 years ago), with merchants from China, Japan, Siam, and India. In 1288, General Trần Khánh Dư destroyed the Mongol supply fleet here - one of the most decisive battles in Vietnamese history.",
   ],
   content: {
-    intro:
-      "Bái Tử Long Bay stretches northeast of Hạ Long Bay across Hạ Long, Cẩm Phả, and Vân Đồn district of Quảng Ninh province, sharing the same UNESCO-listed limestone karst geology but with 600+ islands and almost none of the tourist traffic. The name comes from Vietnamese legend: when enemies threatened Vietnam, the Jade Emperor sent a mother dragon and her children to protect the country. The mother landed in what became Hạ Long Bay; her children (bái tử) landed nearby. The jade pearls they breathed out formed the islands - natural fortresses against invasion. The legend is not merely decorative: Bái Tử Long has genuine historical weight. Vân Đồn, within the bay, was one of Vietnam's first international trading ports - active from the Lý Dynasty, nearly 900 years ago, trading with China, Japan, Siam, and India. In 1288, General Trần Khánh Dư destroyed the Mongol Yuan supply fleet here in the Battle of Vân Đồn, one of the most strategically significant naval victories in Vietnamese history. Today the bay receives a fraction of Hạ Long Bay's cruise traffic - approximately 4-6 operators currently run itineraries here compared to hundreds in Hạ Long Bay's main corridor.",
-    howToGetThere:
-      "Bái Tử Long Bay is only accessible by overnight cruise - the bay is 22.5km from shore and too far for a day trip to be worthwhile. Cruises depart from Hòn Gai pier (Hạ Long International Port) on the east side of Hạ Long city - not from the busier Tuần Châu pier used by most Hạ Long Bay cruises. Standard format is 2 nights or 3 days 2 nights; some itineraries combine 1 night in Hạ Long Bay and 1 night in Bái Tử Long. Prices: 2,000,000-3,500,000 VND/person/night depending on cruise class. Fewer operators than Hạ Long Bay mean fewer options but also a more exclusive experience. Book 1-2 weeks ahead in peak season.",
-    whatToExpect:
-      "600+ limestone karst islands spread across a wide bay, with far fewer cruise boats than Hạ Long's main corridor - sometimes only 2-3 vessels anchored in the same area overnight. Key highlights: Làng chài Vung Viêng (floating fishing village, 40 households, 24km from mainland, bamboo boat exploration), Hang Thiên Cảnh Sơn (large cave accessed through dense forest), Đảo Ngọc Vừng (best beach for swimming and relaxing in the bay - white sand, clear water, minimal crowds), Bãi biển Bàn Chân (the most remote and pristine beach in the bay, 2.5 hours by boat - for those on deeper itineraries), Đảo Trà Bản (impressive limestone formations, forest famous for colourful butterflies), Khu vực Cống Đầm. Kayaking through quieter channels early morning is the defining experience - often completely alone between the karst towers.",
-    travelTips:
-      "The honest comparison with Hạ Long Bay: Hạ Long has the famous caves (Sửng Sốt, Thiên Cung), the infrastructure, and more cruise options. Bái Tử Long has solitude, better beaches, and a more traditional atmosphere - 'Hạ Long Bay the way it was 20 years ago'. For first-time visitors to the region, Hạ Long Bay is still the standard recommendation - easier to book, more choice, better known highlights. For a second visit, or for travellers who specifically want fewer people and a more authentic fishing village experience, Bái Tử Long is the clear choice. A third alternative: Cát Bà Island and Lan Hạ Bay offer a middle ground - easier to reach independently, good beaches, less crowded than Hạ Long main route.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bai Tu Long Bay Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bái Tử Long Bay stretches northeast of Hạ Long Bay across Hạ Long, Cẩm Phả, and Vân Đồn district of Quảng Ninh province, sharing the same UNESCO-listed limestone karst geology but with 600+ islands and almost none of the tourist traffic.",
+          },
+          { type: "heading", text: "The Legend of the Descending Dragons" },
+          {
+            type: "paragraph",
+            text: "The name comes from Vietnamese legend: when enemies threatened Vietnam, the Jade Emperor sent a mother dragon and her children to protect the country. The mother landed in what became Hạ Long Bay; her children (bái tử) landed nearby. The jade pearls they breathed out formed the islands - natural fortresses against invasion.",
+          },
+          { type: "heading", text: "Vân Đồn and the 1288 Battle" },
+          {
+            type: "paragraph",
+            text: "The legend is not merely decorative: Bái Tử Long has genuine historical weight. Vân Đồn, within the bay, was one of Vietnam's first international trading ports - active from the Lý Dynasty, nearly 900 years ago, trading with China, Japan, Siam, and India. In 1288, General Trần Khánh Dư destroyed the Mongol Yuan supply fleet here in the Battle of Vân Đồn, one of the most strategically significant naval victories in Vietnamese history.",
+          },
+          { type: "heading", text: "Bái Tử Long Today" },
+          {
+            type: "paragraph",
+            text: "Today the bay receives a fraction of Hạ Long Bay's cruise traffic - approximately 4-6 operators currently run itineraries here compared to hundreds in Hạ Long Bay's main corridor.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bai Tu Long Bay",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bái Tử Long Bay is only accessible by overnight cruise - the bay is 22.5km from shore and too far for a day trip to be worthwhile. Cruises depart from Hòn Gai pier (Hạ Long International Port) on the east side of Hạ Long city - not from the busier Tuần Châu pier used by most Hạ Long Bay cruises. Standard format is 2 nights or 3 days 2 nights; some itineraries combine 1 night in Hạ Long Bay and 1 night in Bái Tử Long.",
+          },
+          { type: "heading", text: "Prices and Booking" },
+          {
+            type: "paragraph",
+            text: "Prices: 2,000,000-3,500,000 VND/person/night depending on cruise class. Fewer operators than Hạ Long Bay mean fewer options but also a more exclusive experience. Book 1-2 weeks ahead in peak season.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bai Tu Long Bay",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "600+ limestone karst islands spread across a wide bay, with far fewer cruise boats than Hạ Long's main corridor - sometimes only 2-3 vessels anchored in the same area overnight. Key highlights: Làng chài Vung Viêng (floating fishing village, 40 households, 24km from mainland, bamboo boat exploration), Hang Thiên Cảnh Sơn (large cave accessed through dense forest), Đảo Ngọc Vừng (best beach for swimming and relaxing in the bay - white sand, clear water, minimal crowds), Bãi biển Bàn Chân (the most remote and pristine beach in the bay, 2.5 hours by boat - for those on deeper itineraries), Đảo Trà Bản (impressive limestone formations, forest famous for colourful butterflies), Khu vực Cống Đầm. Kayaking through quieter channels early morning is the defining experience - often completely alone between the karst towers.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bai Tu Long Bay",
+        blocks: [
+          { type: "heading", text: "Bái Tử Long or Hạ Long" },
+          {
+            type: "paragraph",
+            text: "The honest comparison with Hạ Long Bay: Hạ Long has the famous caves (Sửng Sốt, Thiên Cung), the infrastructure, and more cruise options. Bái Tử Long has solitude, better beaches, and a more traditional atmosphere - 'Hạ Long Bay the way it was 20 years ago'. For first-time visitors to the region, Hạ Long Bay is still the standard recommendation - easier to book, more choice, better known highlights. For a second visit, or for travellers who specifically want fewer people and a more authentic fishing village experience, Bái Tử Long is the clear choice.",
+          },
+          { type: "heading", text: "A Third Option" },
+          {
+            type: "paragraph",
+            text: "A third alternative: Cát Bà Island and Lan Hạ Bay offer a middle ground - easier to reach independently, good beaches, less crowded than Hạ Long main route.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

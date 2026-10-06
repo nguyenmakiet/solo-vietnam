@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const frenchVillageBaNa: Location = {
   slug: "french-village-ba-na",
   name: "French Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["da-nang"],
   destination: "ba-na-hills",
   lat: "15.997655145396397",
@@ -44,14 +44,83 @@ export const frenchVillageBaNa: Location = {
     "Road access to Bà Nà has been closed since 2018 - cable car is the only way up. Bus number 3 from Đà Nẵng airport reaches the base cable car station (30,000 VND, 25km, runs 5:30 AM–7 PM every 15-30 minutes).",
   ],
   content: {
-    intro:
-      "The French Village at Bà Nà Hills is a full-scale resort complex built in French Gothic and Romanesque style at 1,487 metres on the summit of Núi Chúa mountain. Construction began in 2014 under Sun Group - this is not a restoration of the original French hill station (which was destroyed during the wars) but a deliberate recreation of 19th-century French aesthetics: cobbled streets, vaulted stone facades, Saint Denis Cathedral with its rough stone walls and arched ceiling, a central square, wine cellar, beer hall, and the imposing multi-story Fantasy Park fortress. The one genuinely historic element is the Debay Wine Cellar, carved into the mountain by the French in 1923. The village is the commercial and entertainment hub of the Bà Nà Hills complex - everything else on the mountain (Golden Bridge, gardens, cable car terminals) connects back to it.",
-    howToGetThere:
-      "The French Village is only accessible via the Bà Nà Hills cable car. Road access has been closed since 2018. From Đà Nẵng city centre, take a taxi or Grab to the Suối Mơ base station (around 45 minutes), then ride the cable car to the summit. Alternatively, bus number 3 from Đà Nẵng airport runs to the base station (30,000 VND, 25km, every 15-30 minutes, 5:30 AM–7 PM). At the top, take the Champa cable car station for the most direct route into the village. The Golden Bridge is accessed from the village via the Louvre–Bordeaux cable car (672m, about 5 minutes). Louvre Station is inside the French Village - follow signs from the main square.",
-    whatToExpect:
-      "A logical route through the village: central square (Forever Square) → Saint Denis Cathedral → cafe → wander the cobbled streets → Fantasy Park. Food options range from buffet restaurants (Brasserie, Le Jardin, La Crique) to smaller cafes - all within the village and included in the same complex. The village occupies a wide plateau at the summit. The main cobbled street runs between the cable car terminal and Saint Denis Cathedral, flanked by restaurants, cafes, shops, and the cathedral's stone facade. Side streets lead to the Debay Wine Cellar (built 1923, carved into the rock face, dark and cool inside), the beer hall, and the Mercure hotel. Fantasy Park is a large multi-story building housing rides, a wax museum, 4D cinema, and arcade games - all included in the ticket. The outdoor square has a giant book installation (The Little Prince, The Old Man and the Sea) and regular street performances. The temperature at the summit runs 5–7°C cooler than Đà Nẵng. October to February brings heavy fog - the village can disappear into cloud, which is atmospheric but means the Golden Bridge may not be visible.",
-    travelTips:
-      "The French Village is the most divisive part of Bà Nà Hills. Visitors who want European-style photography, theme park rides, and a mountain resort atmosphere find it delivers exactly what it promises. Visitors expecting something more authentic or connected to the natural environment of the mountain will find it disorienting - the entire summit has been developed for entertainment and hospitality. For families with children, Fantasy Park justifies significant time. For travellers primarily visiting for the Golden Bridge, the village is a convenient place to eat and wait out afternoon rain. Overnight stays at Mercure French Village are the strongest version of the experience - early morning on the mountain before day visitors arrive is a genuinely different place.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes French Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The French Village at Bà Nà Hills is a full-scale resort complex built in French Gothic and Romanesque style at 1,487 metres on the summit of Núi Chúa mountain. Construction began in 2014 under Sun Group - this is not a restoration of the original French hill station (which was destroyed during the wars) but a deliberate recreation of 19th-century French aesthetics: cobbled streets, vaulted stone facades, Saint Denis Cathedral with its rough stone walls and arched ceiling, a central square, wine cellar, beer hall, and the imposing multi-story Fantasy Park fortress.",
+          },
+          { type: "heading", text: "The Debay Wine Cellar and the Village Today" },
+          {
+            type: "paragraph",
+            text: "The one genuinely historic element is the Debay Wine Cellar, carved into the mountain by the French in 1923. The village is the commercial and entertainment hub of the Bà Nà Hills complex - everything else on the mountain (Golden Bridge, gardens, cable car terminals) connects back to it.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to French Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The French Village is only accessible via the Bà Nà Hills cable car. Road access has been closed since 2018.",
+          },
+          { type: "heading", text: "Getting to the Cable Car" },
+          {
+            type: "paragraph",
+            text: "From Đà Nẵng city centre, take a taxi or Grab to the Suối Mơ base station (around 45 minutes), then ride the cable car to the summit. Alternatively, bus number 3 from Đà Nẵng airport runs to the base station (30,000 VND, 25km, every 15-30 minutes, 5:30 AM–7 PM).",
+          },
+          { type: "heading", text: "Inside the Complex" },
+          {
+            type: "paragraph",
+            text: "At the top, take the Champa cable car station for the most direct route into the village. The Golden Bridge is accessed from the village via the Louvre–Bordeaux cable car (672m, about 5 minutes). Louvre Station is inside the French Village - follow signs from the main square.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at French Village",
+        blocks: [
+          { type: "heading", text: "A Route Through the Village" },
+          {
+            type: "paragraph",
+            text: "A logical route through the village: central square (Forever Square) → Saint Denis Cathedral → cafe → wander the cobbled streets → Fantasy Park. Food options range from buffet restaurants (Brasserie, Le Jardin, La Crique) to smaller cafes - all within the village and included in the same complex.",
+          },
+          { type: "heading", text: "Streets, the Wine Cellar and Fantasy Park" },
+          {
+            type: "paragraph",
+            text: "The village occupies a wide plateau at the summit. The main cobbled street runs between the cable car terminal and Saint Denis Cathedral, flanked by restaurants, cafes, shops, and the cathedral's stone facade. Side streets lead to the Debay Wine Cellar (built 1923, carved into the rock face, dark and cool inside), the beer hall, and the Mercure hotel. Fantasy Park is a large multi-story building housing rides, a wax museum, 4D cinema, and arcade games - all included in the ticket. The outdoor square has a giant book installation (The Little Prince, The Old Man and the Sea) and regular street performances.",
+          },
+          { type: "heading", text: "Weather" },
+          {
+            type: "paragraph",
+            text: "The temperature at the summit runs 5–7°C cooler than Đà Nẵng. October to February brings heavy fog - the village can disappear into cloud, which is atmospheric but means the Golden Bridge may not be visible.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for French Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The French Village is the most divisive part of Bà Nà Hills. Visitors who want European-style photography, theme park rides, and a mountain resort atmosphere find it delivers exactly what it promises. Visitors expecting something more authentic or connected to the natural environment of the mountain will find it disorienting - the entire summit has been developed for entertainment and hospitality.",
+          },
+          { type: "heading", text: "Who It Suits" },
+          {
+            type: "paragraph",
+            text: "For families with children, Fantasy Park justifies significant time. For travellers primarily visiting for the Golden Bridge, the village is a convenient place to eat and wait out afternoon rain. Overnight stays at Mercure French Village are the strongest version of the experience - early morning on the mountain before day visitors arrive is a genuinely different place.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

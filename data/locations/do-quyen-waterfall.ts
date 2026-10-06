@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const doQuyenWaterfall: Location = {
   slug: "do-quyen-waterfall",
   name: "Do Quyen Waterfall (Rhododendron Waterfall)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hue"],
   destination: "hue",
   lat: "16.18620793431291",
@@ -41,14 +41,87 @@ export const doQuyenWaterfall: Location = {
     "Do not attempt the adventure activities if you have heart conditions.",
   ],
   content: {
-    intro:
-      "Thác Đỗ Quyên - the Rhododendron Waterfall - drops nearly 400 metres through primary forest in Bạch Mã National Park, making it one of the tallest waterfalls in central Vietnam. The name comes from the rhododendron trees lining the trail and stream banks, which bloom red and pink from March to April. The waterfall sits inside the park's core zone, about 10km from the entrance by road. Getting to the base requires either descending 689 stone steps - steep, uneven, with deteriorating railings - or taking the Jungle Boss adventure package, which approaches the base via via ferrata, a 200m abseil, a 130m suspension bridge, and a 85m zipline. The park itself covers nearly 37,500 hectares of some of the most biodiverse primary forest in central Vietnam and is significantly cooler than the surrounding coast year-round.",
-    howToGetThere:
-      "Bạch Mã National Park is 55km south of Huế and 40km from Đà Nẵng. From Huế, take National Highway 1A south toward Lăng Cô, then turn inland toward the park entrance - about 1.5 hours by car or motorbike. Buy the entry ticket (65,000 VND) at the gate. Important: motorbikes and bicycles are not permitted on the summit road - the road is steep with dangerous bends and the rule is enforced. From the gate, you can drive a private car up, walk (10km), or book the park shuttle at the visitor centre (900,000 VND one way, 1,300,000 VND return, up to 12 people). Note for 2026: a landslide has cut the summit road partway up - vehicles stop at the landslide point and visitors continue on foot for 2-3 hours to reach the main attractions. From the summit, the waterfall is about 500m from the villa.",
-    whatToExpect:
-      "The recommended route covers all key points in one loop: up to Hải Vọng Đài summit viewpoint, down via the Đỗ Quyên villa, across to the Ngũ Hồ (Five Lakes) trail, and finishing at the waterfall. The trail passes through dense primary montane forest with large trees and no phone signal throughout. At the waterfall, the top viewpoint gives the full scale of the drop. The descent to the base is via 689 stone steps - steep with an average gradient over 45%, 30cm steps, and railings that are deteriorating and should not be relied on. The alternative is the Jungle Boss adventure package, which descends via via ferrata (301 steps), a 200m abseil from the top, a 130m suspension bridge called the 'Stairway to Heaven' with 319 iron rungs, and a 85m zipline through old-growth forest. The package costs 11,250,000 VND per person and departs daily from 4 guests minimum - details at junglebosstours.com.",
-    travelTips:
-      "Bạch Mã rewards a full day rather than a quick stop. The Đỗ Quyên and Ngũ Hồ trails together make the most complete experience. Start at the park entrance by 8 AM to finish comfortably before closing. The September-December rainy season is genuinely dangerous here - Bạch Mã is one of the highest-rainfall locations in Vietnam, and flash floods and landslides are real risks. The dry season (January to August) is when the park is at its best, with March-April offering the rhododendron bloom as an additional draw. The 2026 landslide situation means building in extra time for the on-foot section - check current conditions with the park before visiting.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Do Quyen Waterfall (Rhododendron Waterfall) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Thác Đỗ Quyên - the Rhododendron Waterfall - drops nearly 400 metres through primary forest in Bạch Mã National Park, making it one of the tallest waterfalls in central Vietnam. The name comes from the rhododendron trees lining the trail and stream banks, which bloom red and pink from March to April.",
+          },
+          { type: "heading", text: "Getting to the Base" },
+          {
+            type: "paragraph",
+            text: "The waterfall sits inside the park's core zone, about 10km from the entrance by road. Getting to the base requires either descending 689 stone steps - steep, uneven, with deteriorating railings - or taking the Jungle Boss adventure package, which approaches the base via via ferrata, a 200m abseil, a 130m suspension bridge, and a 85m zipline.",
+          },
+          { type: "heading", text: "Bạch Mã National Park" },
+          {
+            type: "paragraph",
+            text: "The park itself covers nearly 37,500 hectares of some of the most biodiverse primary forest in central Vietnam and is significantly cooler than the surrounding coast year-round.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Do Quyen Waterfall (Rhododendron Waterfall)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bạch Mã National Park is 55km south of Huế and 40km from Đà Nẵng. From Huế, take National Highway 1A south toward Lăng Cô, then turn inland toward the park entrance - about 1.5 hours by car or motorbike.",
+          },
+          { type: "heading", text: "Tickets and Access Rules" },
+          {
+            type: "paragraph",
+            text: "Buy the entry ticket (65,000 VND) at the gate. Important: motorbikes and bicycles are not permitted on the summit road - the road is steep with dangerous bends and the rule is enforced. From the gate, you can drive a private car up, walk (10km), or book the park shuttle at the visitor centre (900,000 VND one way, 1,300,000 VND return, up to 12 people).",
+          },
+          { type: "heading", text: "The 2026 Landslide" },
+          {
+            type: "paragraph",
+            text: "Note for 2026: a landslide has cut the summit road partway up - vehicles stop at the landslide point and visitors continue on foot for 2-3 hours to reach the main attractions. From the summit, the waterfall is about 500m from the villa.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Do Quyen Waterfall (Rhododendron Waterfall)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The recommended route covers all key points in one loop: up to Hải Vọng Đài summit viewpoint, down via the Đỗ Quyên villa, across to the Ngũ Hồ (Five Lakes) trail, and finishing at the waterfall. The trail passes through dense primary montane forest with large trees and no phone signal throughout.",
+          },
+          { type: "heading", text: "The Waterfall and the 689 Steps" },
+          {
+            type: "paragraph",
+            text: "At the waterfall, the top viewpoint gives the full scale of the drop. The descent to the base is via 689 stone steps - steep with an average gradient over 45%, 30cm steps, and railings that are deteriorating and should not be relied on.",
+          },
+          { type: "heading", text: "The Jungle Boss Via Ferrata" },
+          {
+            type: "paragraph",
+            text: "The alternative is the Jungle Boss adventure package, which descends via via ferrata (301 steps), a 200m abseil from the top, a 130m suspension bridge called the 'Stairway to Heaven' with 319 iron rungs, and a 85m zipline through old-growth forest. The package costs 11,250,000 VND per person and departs daily from 4 guests minimum - details at junglebosstours.com.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Do Quyen Waterfall (Rhododendron Waterfall)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bạch Mã rewards a full day rather than a quick stop. The Đỗ Quyên and Ngũ Hồ trails together make the most complete experience. Start at the park entrance by 8 AM to finish comfortably before closing.",
+          },
+          { type: "heading", text: "Seasons and the Landslide" },
+          {
+            type: "paragraph",
+            text: "The September-December rainy season is genuinely dangerous here - Bạch Mã is one of the highest-rainfall locations in Vietnam, and flash floods and landslides are real risks. The dry season (January to August) is when the park is at its best, with March-April offering the rhododendron bloom as an additional draw. The 2026 landslide situation means building in extra time for the on-foot section - check current conditions with the park before visiting.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

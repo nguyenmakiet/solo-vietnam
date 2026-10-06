@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const cuaTuStream: Location = {
   slug: "cua-tu-stream",
   name: "Cửa Tử Stream",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["thai-nguyen"],
   destination: "",
   lat: "21.605532505545185",
@@ -46,14 +46,76 @@ export const cuaTuStream: Location = {
     "Check weather before going - flash flood risk is real. Leave the stream immediately if rain begins upstream.",
   ],
   content: {
-    intro:
-      "Suối Cửa Tử is a forested stream trek in Hoàng Nông commune, Đại Từ district, Thái Nguyên province - approximately 2 hours from Hanoi by expressway. The name refers to the 9 natural 'gates' (cửa) formed by the stream as it tumbles down through the mountain forest: each gate is a section where the water narrows or drops through rock, creating pools, slides, and small waterfalls that can be swum, jumped, or slid through depending on water levels. The trek is one of the most accessible proper wilderness day trips from Hanoi - the journey is entirely on expressway, the terrain is manageable, and the payoff is a full day wading, swimming, and moving through primary forest with almost no infrastructure. Since the 2024 flash floods, the route is accessible up to Gate 7, with Gates 5-7 requiring attention to leeches. The first three gates remain the sweet spot for a day trip.",
-    howToGetThere:
-      "From Hanoi, take the expressway toward Thái Nguyên - approximately 2 hours by car or motorbike, entirely on highway. From Thái Nguyên city, continue to Hoàng Nông commune in Đại Từ district. The trailhead is in Hoàng Nông village where the stream access begins. Stilt house homestays near the trailhead are available for the night before - recommended for an early start.",
-    whatToExpect:
-      "Two routes access the stream from the trailhead: the forest path (đường rừng) climbs through primary forest before descending to the stream; the streamside path (đường suối) follows the water from the start. Both routes take approximately 1.5 hours to reach Gate 3. The recommended approach is to take the forest path in and return via the streamside route - this gives a different landscape in each direction and allows the natural swimming pools on the streamside route to be enjoyed on the return. Gate 3 is the standard turnaround for a day trip: the waterfall here can be jumped and the natural rock chute (máng) can be slid. On the return, the two large natural pools on the streamside route are the main swimming spots - clear green water, natural surrounds, wide enough for proper swimming. For those camping at Gate 7, the upper section from Gate 5 onward follows the streambank through denser forest with higher leech activity.",
-    travelTips:
-      "Suối Cửa Tử works best as a 1-night 2-day trip from Hanoi - arrive the evening before, stay at a homestay near the trailhead, trek the following day, and return to Hanoi in the afternoon. The 2-day version pushing to Gate 7 with overnight camping is the fuller experience but requires leech preparation for the upper section. For a pure day trip, the Gate 3 route is comfortably doable and requires no camping equipment. The stream is at its best between April and October when water levels support swimming - outside this window the pools are shallower and the waterfalls less impressive.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cửa Tử Stream Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Suối Cửa Tử is a forested stream trek in Hoàng Nông commune, Đại Từ district, Thái Nguyên province - approximately 2 hours from Hanoi by expressway. The name refers to the 9 natural 'gates' (cửa) formed by the stream as it tumbles down through the mountain forest: each gate is a section where the water narrows or drops through rock, creating pools, slides, and small waterfalls that can be swum, jumped, or slid through depending on water levels. The trek is one of the most accessible proper wilderness day trips from Hanoi - the journey is entirely on expressway, the terrain is manageable, and the payoff is a full day wading, swimming, and moving through primary forest with almost no infrastructure.",
+          },
+          { type: "heading", text: "The Route Since the 2024 Floods" },
+          {
+            type: "paragraph",
+            text: "Since the 2024 flash floods, the route is accessible up to Gate 7, with Gates 5-7 requiring attention to leeches. The first three gates remain the sweet spot for a day trip.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cửa Tử Stream",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From Hanoi, take the expressway toward Thái Nguyên - approximately 2 hours by car or motorbike, entirely on highway. From Thái Nguyên city, continue to Hoàng Nông commune in Đại Từ district. The trailhead is in Hoàng Nông village where the stream access begins.",
+          },
+          {
+            type: "paragraph",
+            text: "Stilt house homestays near the trailhead are available for the night before - recommended for an early start.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cửa Tử Stream",
+        blocks: [
+          { type: "heading", text: "The Two Routes to Gate 3" },
+          {
+            type: "paragraph",
+            text: "Two routes access the stream from the trailhead: the forest path (đường rừng) climbs through primary forest before descending to the stream; the streamside path (đường suối) follows the water from the start. Both routes take approximately 1.5 hours to reach Gate 3. The recommended approach is to take the forest path in and return via the streamside route - this gives a different landscape in each direction and allows the natural swimming pools on the streamside route to be enjoyed on the return.",
+          },
+          { type: "heading", text: "Gate 3 and the Swimming Pools" },
+          {
+            type: "paragraph",
+            text: "Gate 3 is the standard turnaround for a day trip: the waterfall here can be jumped and the natural rock chute (máng) can be slid. On the return, the two large natural pools on the streamside route are the main swimming spots - clear green water, natural surrounds, wide enough for proper swimming.",
+          },
+          { type: "heading", text: "Beyond Gate 5" },
+          {
+            type: "paragraph",
+            text: "For those camping at Gate 7, the upper section from Gate 5 onward follows the streambank through denser forest with higher leech activity.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cửa Tử Stream",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Suối Cửa Tử works best as a 1-night 2-day trip from Hanoi - arrive the evening before, stay at a homestay near the trailhead, trek the following day, and return to Hanoi in the afternoon. The 2-day version pushing to Gate 7 with overnight camping is the fuller experience but requires leech preparation for the upper section.",
+          },
+          {
+            type: "paragraph",
+            text: "For a pure day trip, the Gate 3 route is comfortably doable and requires no camping equipment. The stream is at its best between April and October when water levels support swimming - outside this window the pools are shallower and the waterfalls less impressive.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

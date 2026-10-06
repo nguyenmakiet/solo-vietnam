@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const trungTrangCave: Location = {
   slug: "trung-trang-cave",
   name: "Trung Trang Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.788685844969777",
@@ -49,11 +49,11 @@ export const trungTrangCave: Location = {
   ],
   content: {
     intro:
-      "Trung Trang Cave is the largest limestone cave on Cát Bà Island, sitting inside the national park 17km from Cát Bà town. The cave runs approximately 300 metres into the karst hillside with two main chambers connected by a passage, and it's dense with stalactite and stalagmite formations that have built up over thousands of years. The name and the history layered into the cave are both worth knowing before you walk in. The cave was originally called Hang Dơi - Bat Cave - for its resident colony. During the resistance wars it was used as a military base and became known as Hang Hải Quân (Navy Cave), with traces of that occupation still visible inside today. The name Trung Trang comes from an older local legend: Bà Chúa Trung Trang, a woman who rallied the island's young men to repel foreign invaders, then retreated to the cave to guard the island. The villagers named the cave after her in her honour.",
+      "Trung Trang Cave is the largest limestone cave on Cát Bà Island, sitting inside the national park 17km from Cát Bà town. The cave runs approximately 300 metres into the karst hillside with two main chambers connected by a passage, and it's dense with stalactite and stalagmite formations that have built up over thousands of years.\n\nThe name and the history layered into the cave are both worth knowing before you walk in. The cave was originally called Hang Dơi - Bat Cave - for its resident colony. During the resistance wars it was used as a military base and became known as Hang Hải Quân (Navy Cave), with traces of that occupation still visible inside today.\n\nThe name Trung Trang comes from an older local legend: Bà Chúa Trung Trang, a woman who rallied the island's young men to repel foreign invaders, then retreated to the cave to guard the island. The villagers named the cave after her in her honour.",
     howToGetThere:
       "Trung Trang Cave is inside Cát Bà National Park, 17km from Cát Bà town on the main road toward the park interior - about 25 minutes by motorbike. The cave entrance is clearly signed from the road. Hospital Cave and the national park trailheads are on the same road, making a combined northern Cát Bà day straightforward.",
     whatToExpect:
-      "The path from the road to the cave entrance is short and clearly marked. A sign at the entrance points to a shortcut on the left - it's not meaningfully shorter, so follow the main path. Inside, the cave is cool and well-lit with concrete paths throughout. The stalactite and stalagmite formations are the centrepiece - dense, varied, and well-preserved. The bats are present but not in large numbers; keep noise down near them. The full cave is about 300 metres. On the way out, follow the main road back to the car park - or if the heat is unpleasant, simply retrace your steps through the cave.",
+      "The path from the road to the cave entrance is short and clearly marked. A sign at the entrance points to a shortcut on the left - it's not meaningfully shorter, so follow the main path. Inside, the cave is cool and well-lit with concrete paths throughout.\n\nThe stalactite and stalagmite formations are the centrepiece - dense, varied, and well-preserved. The bats are present but not in large numbers; keep noise down near them. The full cave is about 300 metres. On the way out, follow the main road back to the car park - or if the heat is unpleasant, simply retrace your steps through the cave.",
     travelTips:
       "Trung Trang is best as part of a combined northern Cát Bà day: the cave, Ngự Lâm viewpoint trek, and Hospital Cave are all on the same road and together cover the island's main historical and geological sites. The 120,000 VND ticket includes national park entry - keep it if you're continuing to the Ngự Lâm trail. On its own the cave is around an hour and doesn't justify the 17km drive from town, but as a component of a full day it fits naturally into the route.",
   },

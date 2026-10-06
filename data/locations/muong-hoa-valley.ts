@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muongHoaValley: Location = {
   slug: "muong-hoa-valley",
   name: "Muong Hoa Valley",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.3143616370346,
@@ -48,14 +48,88 @@ export const muongHoaValley: Location = {
     "Good trekking shoes are essential - terrain is muddy and slippery in wet season, uneven throughout.",
   ],
   content: {
-    intro:
-      "Muong Hoa Valley is Sa Pa's most iconic landscape - a 15km corridor of terraced rice fields stretching from Sa Pa town to Bản Hồ, home to Vietnam's largest terrace system covering over 2,200 hectares. Recognised by the Vietnam Guinness Book of Records, the valley is home to four ethnic groups - Black H'Mông, Red Dao, Giáy, and Tày - each with distinct textiles, architecture, and customs visible in the villages along the route. The valley changes completely with the seasons: flooded silver terraces reflecting the sky in March to May, lush green through summer, gold during harvest in late August to September, and misty bare fields under occasional frost or snow in winter. Running through everything is the 15km Muong Hoa Stream, fed by 22 mountain streams, passing through every village from the highland edge to the valley floor. Near Hậu Thào, the Ancient Rock Field - nearly 200 carved megalithic stones believed to date back thousands of years - adds an archaeological dimension that most visitors overlook entirely.",
-    howToGetThere:
-      "Muong Hoa Valley starts 8-10km southeast of Sa Pa town centre, along Provincial Road 152 toward Lao Chải and Tả Van. There is a ticket checkpoint before the valley villages. From Sa Pa: motorbike rental (100,000-150,000 VND/day), xe ôm (~12,000 VND/km), or trek on foot (1.5-2 hours to Lao Chải). Mountain train (tàu hỏa leo núi Mường Hoa) runs 6 minutes with panoramic valley views, 180,000 VND return. From Hanoi to Sa Pa: limousine bus 5-6 hours (300,000-800,000 VND), or overnight train to Lào Cai then bus/taxi to Sa Pa (total ~8 hours).",
-    whatToExpect:
-      "The main trekking route passes through Cat Cat, Y Linh Ho, Lao Chải, and Tả Van. Lao Chải is predominantly Black H'Mông with the famous bamboo bridge across the stream. Tả Van is Giáy, quieter, with the most homestay options. The Ancient Rock Field near Hậu Thào contains nearly 200 carved stones believed to be thousands of years old - a national monument and one of Vietnam's most mysterious archaeological sites. The valley floor is relatively flat for walking; trails between villages involve some climbing. Weather and season define the experience: flooded terraces in spring, green in summer, gold in harvest season, misty in winter. Avoid June-July peak rain when trails become slippery and muddy.",
-    travelTips:
-      "The valley is best experienced over two days rather than a rushed day trip. Stay overnight in a Tả Van or Lao Chải homestay, have dinner with a local family, and wake up to the valley empty of day visitors. The morning light on the terraces from a homestay balcony is one of the most memorable scenes in northern Vietnam. If limited to one day, prioritise the Lao Chải to Tả Van section - most varied and least crowded. Check weather forecasts before visiting. Bring a windproof jacket regardless of season - valley temperatures drop significantly in the morning and evening.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Muong Hoa Valley Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Muong Hoa Valley is Sa Pa's most iconic landscape - a 15km corridor of terraced rice fields stretching from Sa Pa town to Bản Hồ, home to Vietnam's largest terrace system covering over 2,200 hectares. Recognised by the Vietnam Guinness Book of Records, the valley is home to four ethnic groups - Black H'Mông, Red Dao, Giáy, and Tày - each with distinct textiles, architecture, and customs visible in the villages along the route.",
+          },
+          { type: "heading", text: "Seasons" },
+          {
+            type: "paragraph",
+            text: "The valley changes completely with the seasons: flooded silver terraces reflecting the sky in March to May, lush green through summer, gold during harvest in late August to September, and misty bare fields under occasional frost or snow in winter.",
+          },
+          { type: "heading", text: "Muong Hoa Stream and the Ancient Rock Field" },
+          {
+            type: "paragraph",
+            text: "Running through everything is the 15km Muong Hoa Stream, fed by 22 mountain streams, passing through every village from the highland edge to the valley floor. Near Hậu Thào, the Ancient Rock Field - nearly 200 carved megalithic stones believed to date back thousands of years - adds an archaeological dimension that most visitors overlook entirely.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Muong Hoa Valley",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Muong Hoa Valley starts 8-10km southeast of Sa Pa town centre, along Provincial Road 152 toward Lao Chải and Tả Van. There is a ticket checkpoint before the valley villages.",
+          },
+          { type: "heading", text: "Transport Options" },
+          {
+            type: "paragraph",
+            text: "From Sa Pa: motorbike rental (100,000-150,000 VND/day), xe ôm (~12,000 VND/km), or trek on foot (1.5-2 hours to Lao Chải). Mountain train (tàu hỏa leo núi Mường Hoa) runs 6 minutes with panoramic valley views, 180,000 VND return. From Hanoi to Sa Pa: limousine bus 5-6 hours (300,000-800,000 VND), or overnight train to Lào Cai then bus/taxi to Sa Pa (total ~8 hours).",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Muong Hoa Valley",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The main trekking route passes through Cat Cat, Y Linh Ho, Lao Chải, and Tả Van.",
+          },
+          { type: "heading", text: "Lao Chải and Tả Van" },
+          {
+            type: "paragraph",
+            text: "Lao Chải is predominantly Black H'Mông with the famous bamboo bridge across the stream. Tả Van is Giáy, quieter, with the most homestay options.",
+          },
+          { type: "heading", text: "The Ancient Rock Field" },
+          {
+            type: "paragraph",
+            text: "The Ancient Rock Field near Hậu Thào contains nearly 200 carved stones believed to be thousands of years old - a national monument and one of Vietnam's most mysterious archaeological sites.",
+          },
+          { type: "heading", text: "Trails and Seasons" },
+          {
+            type: "paragraph",
+            text: "The valley floor is relatively flat for walking; trails between villages involve some climbing. Weather and season define the experience: flooded terraces in spring, green in summer, gold in harvest season, misty in winter. Avoid June-July peak rain when trails become slippery and muddy.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Muong Hoa Valley",
+        blocks: [
+          { type: "heading", text: "Stay Overnight" },
+          {
+            type: "paragraph",
+            text: "The valley is best experienced over two days rather than a rushed day trip. Stay overnight in a Tả Van or Lao Chải homestay, have dinner with a local family, and wake up to the valley empty of day visitors. The morning light on the terraces from a homestay balcony is one of the most memorable scenes in northern Vietnam.",
+          },
+          { type: "heading", text: "A One-Day Option and Weather" },
+          {
+            type: "paragraph",
+            text: "If limited to one day, prioritise the Lao Chải to Tả Van section - most varied and least crowded. Check weather forecasts before visiting. Bring a windproof jacket regardless of season - valley temperatures drop significantly in the morning and evening.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

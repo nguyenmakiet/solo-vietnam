@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muiCaMauNationalPark: Location = {
   slug: "mui-ca-mau-national-park",
   name: "Mũi Cà Mau National Park",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ca-mau"],
   destination: "",
   lat: 8.605533331954971,
@@ -42,14 +42,71 @@ export const muiCaMauNationalPark: Location = {
     "Stay overnight - Đất Mũi now has basic guesthouses with decent facilities, and having the morning to yourself before day-trippers arrive is worth it; the sunrise boat tour alone justifies the extra night",
   ],
   content: {
-    intro:
-      "Đất Mũi - the tip of the Cà Mau Peninsula - is the southernmost point of Vietnam's mainland, where the East Sea and the Gulf of Thailand converge at a low coastline of mangrove and tidal mudflat. The national park protecting this area covers 42,000 hectares and is a UNESCO Biosphere Reserve, but what draws visitors here is only partly ecological. This is also a place of considerable symbolic weight: the GPS 0001 national coordinate monument marks the official end of the country's territory; the Ho Chi Minh Road terminus marker records the southern endpoint of the highway that runs the length of Vietnam; and the Hanoi Flag Tower replica - inaugurated in 2019 and modeled on the original at Thăng Long Citadel - embodies the idea of national unity from one end of the country to the other. A famous Vietnamese poem captures the feeling: 'My homeland is like a ship / And its bow is Mũi Cà Mau.' The ship monument on the coast - moved seaward in 2019 as the land itself advanced - is built from that image.",
-    howToGetThere:
-      "Đất Mũi is approximately 100km from Cà Mau city. Road access has improved significantly and the route is now fully driveable - the most common approach is by bus from Cà Mau's Năm Căn bus station (Trường Giang or Đen Mập services, approximately 100,000 VND per person), or by motorbike along Highway 1. The older boat-only access is still available and remains the more atmospheric option - speedboats from Cà Mau city take 2.5-3 hours through the mangrove canal network. Cà Mau city itself is 350km from Ho Chi Minh City (6-7 hours by road) or 55 minutes by domestic flight.",
-    whatToExpect:
-      "The monument area clusters several landmarks within walking distance: the GPS 0001 coordinate marker, the Ho Chi Minh Road terminus, the Hanoi Flag Tower replica, and the ship monument on the coast. Most visitors spend time at each of these before joining a boat tour through the mangrove canals - small wooden boats that push into the forest interior, canopy closing overhead, the water dark and tannin-stained. The canal tour reveals stilt-house fishing communities and the sensory experience of being inside a mangrove forest: close, quiet, the smell of mud and saltwater, occasional kingfishers and wading birds. For those staying overnight, the sunrise boat tour departing at 5 AM is the standout activity - the only place in Vietnam where both sunrise and sunset are visible from the same point.",
-    travelTips:
-      "Đất Mũi works as a day trip from Cà Mau city but a night there changes the experience. The day-trip crowd arrives mid-morning, photographs the monuments, and leaves by early afternoon - staying overnight means having the canal tours, the sunrise, and the mangrove trails in relative quiet. The dry season (December to April) gives reliable conditions for the boat tours and the open coastal sections; the wet season (May to November) makes the journey muddier and the coastal views less reliable, though the forest itself stays lush year-round.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Mũi Cà Mau National Park Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đất Mũi - the tip of the Cà Mau Peninsula - is the southernmost point of Vietnam's mainland, where the East Sea and the Gulf of Thailand converge at a low coastline of mangrove and tidal mudflat. The national park protecting this area covers 42,000 hectares and is a UNESCO Biosphere Reserve, but what draws visitors here is only partly ecological.",
+          },
+          { type: "heading", text: "The GPS 0001 Monument and the Ship" },
+          {
+            type: "paragraph",
+            text: "This is also a place of considerable symbolic weight: the GPS 0001 national coordinate monument marks the official end of the country's territory; the Ho Chi Minh Road terminus marker records the southern endpoint of the highway that runs the length of Vietnam; and the Hanoi Flag Tower replica - inaugurated in 2019 and modeled on the original at Thăng Long Citadel - embodies the idea of national unity from one end of the country to the other. A famous Vietnamese poem captures the feeling: 'My homeland is like a ship / And its bow is Mũi Cà Mau.' The ship monument on the coast - moved seaward in 2019 as the land itself advanced - is built from that image.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Mũi Cà Mau National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đất Mũi is approximately 100km from Cà Mau city. Road access has improved significantly and the route is now fully driveable - the most common approach is by bus from Cà Mau's Năm Căn bus station (Trường Giang or Đen Mập services, approximately 100,000 VND per person), or by motorbike along Highway 1.",
+          },
+          { type: "heading", text: "By Boat, and Getting to Cà Mau" },
+          {
+            type: "paragraph",
+            text: "The older boat-only access is still available and remains the more atmospheric option - speedboats from Cà Mau city take 2.5-3 hours through the mangrove canal network. Cà Mau city itself is 350km from Ho Chi Minh City (6-7 hours by road) or 55 minutes by domestic flight.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Mũi Cà Mau National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The monument area clusters several landmarks within walking distance: the GPS 0001 coordinate marker, the Ho Chi Minh Road terminus, the Hanoi Flag Tower replica, and the ship monument on the coast. Most visitors spend time at each of these before joining a boat tour through the mangrove canals - small wooden boats that push into the forest interior, canopy closing overhead, the water dark and tannin-stained.",
+          },
+          { type: "heading", text: "The Mangrove Canals and the Sunrise Boat" },
+          {
+            type: "paragraph",
+            text: "The canal tour reveals stilt-house fishing communities and the sensory experience of being inside a mangrove forest: close, quiet, the smell of mud and saltwater, occasional kingfishers and wading birds. For those staying overnight, the sunrise boat tour departing at 5 AM is the standout activity - the only place in Vietnam where both sunrise and sunset are visible from the same point.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Mũi Cà Mau National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đất Mũi works as a day trip from Cà Mau city but a night there changes the experience. The day-trip crowd arrives mid-morning, photographs the monuments, and leaves by early afternoon - staying overnight means having the canal tours, the sunrise, and the mangrove trails in relative quiet.",
+          },
+          {
+            type: "paragraph",
+            text: "The dry season (December to April) gives reliable conditions for the boat tours and the open coastal sections; the wet season (May to November) makes the journey muddier and the coastal views less reliable, though the forest itself stays lush year-round.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

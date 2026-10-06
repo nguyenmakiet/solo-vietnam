@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const buGiaMapNationalPark: Location = {
   slug: "bu-gia-map-national-park",
   name: "Bù Gia Mập National Park",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["binh-phuoc"],
   destination: "",
   lat: 12.096260710633082,
@@ -50,14 +50,83 @@ export const buGiaMapNationalPark: Location = {
     "Dry season (Nov-Apr): best. Forest changes colour (bằng lăng trees turn orange-red), streams clear and swimmable, far fewer leeches. Wet season (May-Oct): hardcore only - extremely muddy, leech-heavy, stream crossings dangerous without a ranger.",
   ],
   content: {
-    intro:
-      "Bù Gia Mập National Park protects 26,000 hectares of lowland and transitional rainforest in the northern corner of Bình Phước province on the Cambodian border, about 200km from Ho Chi Minh City. It is one of the last significant blocks of primary lowland rainforest remaining in southeastern Vietnam - a forest type once continuous across the region, now almost entirely cleared. The park is home to 1,117 plant species, 104 mammal species (including yellow-cheeked gibbons, black-shanked douc langurs, gaur, and sun bear), 246 bird species, and 63 reptile and amphibian species. The border with Cambodia means the forest continues uninterrupted across a larger protected landscape, which is why wildlife density in the core zone remains high. On the difficulty scale, Bù Gia Mập rates about 2/10 compared to northern highland treks - the terrain is red basalt soil, gentle gradients, and stream crossings rather than technical climbing. The main challenge is not altitude but vắt (leeches), which are present in all seasons and abundant in the wet months.",
-    howToGetThere:
-      "Bù Gia Mập is 200km north of Ho Chi Minh City, 4-5 hours by car or motorbike. By bus from Bến xe Miền Đông: Petro Bình Phước runs ~10 services/day to Đắk Ơ near the park checkpoint (4h45m, ~150,000 VND). Xe Thành Công runs ~40 services/day to Phước Long (3h30m, ~130,000-150,000 VND) from where you continue to the park. By motorbike: QL13 through Bình Dương to Phú Giáo, then to Phước Long, then Đắk Ơ, then 25km to the park checkpoint. Fill up at Đắk Ơ - the final stretch into the forest is remote. Park HQ contact for permits: 02713.724.237.",
-    whatToExpect:
-      "Trek routes of 8-11km through primary rainforest with stream crossings, gentle gradients, and dense jungle canopy. The main trails lead to Thác Lưu Ly waterfall, Tuyệt Tình Cốc pool (rope swing and swimming), and camping beside Đắk Manh stream. The highest point is around 738m with open forest views. Gibbon calls at dawn are audible from camp. The forest floor is red basalt soil - manageable when dry, slippery when wet. Standard 2-day 1-night format: trek in on day one, camp by the stream, return on day two. Evening meals at the campsite are typically cơm lam, grilled meat, and forest vegetables prepared by porters if on an organised tour.",
-    travelTips:
-      "Bù Gia Mập is the closest primary rainforest experience to Saigon at a beginner-friendly difficulty level - a realistic 2N1D weekend trip that doesn't require northern highland fitness or preparation. The dry season (November to April) is significantly more comfortable: clear trails, swimmable streams, and far fewer leeches. Wet season (May-October) is possible for experienced trekkers who want maximum wildlife activity and the most dramatic waterfalls, but the leech density and slippery trails make it genuinely tiring. Tour packages from HCMC covering transport, guide, camping, and meals run 2,290,000-2,700,000 VND/person. Day tours are available for 700,000-800,000 VND. Book through the park or an established operator - independent forest access is not permitted.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bù Gia Mập National Park Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bù Gia Mập National Park protects 26,000 hectares of lowland and transitional rainforest in the northern corner of Bình Phước province on the Cambodian border, about 200km from Ho Chi Minh City. It is one of the last significant blocks of primary lowland rainforest remaining in southeastern Vietnam - a forest type once continuous across the region, now almost entirely cleared.",
+          },
+          { type: "heading", text: "Biodiversity" },
+          {
+            type: "paragraph",
+            text: "The park is home to 1,117 plant species, 104 mammal species (including yellow-cheeked gibbons, black-shanked douc langurs, gaur, and sun bear), 246 bird species, and 63 reptile and amphibian species. The border with Cambodia means the forest continues uninterrupted across a larger protected landscape, which is why wildlife density in the core zone remains high.",
+          },
+          { type: "heading", text: "Difficulty and Leeches" },
+          {
+            type: "paragraph",
+            text: "On the difficulty scale, Bù Gia Mập rates about 2/10 compared to northern highland treks - the terrain is red basalt soil, gentle gradients, and stream crossings rather than technical climbing. The main challenge is not altitude but vắt (leeches), which are present in all seasons and abundant in the wet months.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bù Gia Mập National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bù Gia Mập is 200km north of Ho Chi Minh City, 4-5 hours by car or motorbike.",
+          },
+          { type: "heading", text: "By Bus" },
+          {
+            type: "paragraph",
+            text: "By bus from Bến xe Miền Đông: Petro Bình Phước runs ~10 services/day to Đắk Ơ near the park checkpoint (4h45m, ~150,000 VND). Xe Thành Công runs ~40 services/day to Phước Long (3h30m, ~130,000-150,000 VND) from where you continue to the park.",
+          },
+          { type: "heading", text: "By Motorbike, and Permits" },
+          {
+            type: "paragraph",
+            text: "By motorbike: QL13 through Bình Dương to Phú Giáo, then to Phước Long, then Đắk Ơ, then 25km to the park checkpoint. Fill up at Đắk Ơ - the final stretch into the forest is remote. Park HQ contact for permits: 02713.724.237.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bù Gia Mập National Park",
+        blocks: [
+          { type: "heading", text: "Trek Routes" },
+          {
+            type: "paragraph",
+            text: "Trek routes of 8-11km through primary rainforest with stream crossings, gentle gradients, and dense jungle canopy. The main trails lead to Thác Lưu Ly waterfall, Tuyệt Tình Cốc pool (rope swing and swimming), and camping beside Đắk Manh stream. The highest point is around 738m with open forest views. Gibbon calls at dawn are audible from camp.",
+          },
+          { type: "heading", text: "Terrain, Format and Meals" },
+          {
+            type: "paragraph",
+            text: "The forest floor is red basalt soil - manageable when dry, slippery when wet. Standard 2-day 1-night format: trek in on day one, camp by the stream, return on day two. Evening meals at the campsite are typically cơm lam, grilled meat, and forest vegetables prepared by porters if on an organised tour.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bù Gia Mập National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bù Gia Mập is the closest primary rainforest experience to Saigon at a beginner-friendly difficulty level - a realistic 2N1D weekend trip that doesn't require northern highland fitness or preparation. The dry season (November to April) is significantly more comfortable: clear trails, swimmable streams, and far fewer leeches. Wet season (May-October) is possible for experienced trekkers who want maximum wildlife activity and the most dramatic waterfalls, but the leech density and slippery trails make it genuinely tiring.",
+          },
+          { type: "heading", text: "Tours and Booking" },
+          {
+            type: "paragraph",
+            text: "Tour packages from HCMC covering transport, guide, camping, and meals run 2,290,000-2,700,000 VND/person. Day tours are available for 700,000-800,000 VND. Book through the park or an established operator - independent forest access is not permitted.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

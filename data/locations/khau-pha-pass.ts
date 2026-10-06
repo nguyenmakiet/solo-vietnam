@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khauPhaPass: Location = {
   slug: "khau-pha-pass",
   name: "Khau Phạ Pass",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["yen-bai"],
   destination: "",
   lat: 21.748647085534405,
@@ -47,14 +47,87 @@ export const khauPhaPass: Location = {
     "Crossing the pass alone typically takes 1.5-2 hours; budget around 1.5 hours total if you're just driving through, or up to 3 hours if you're also doing the paragliding experience",
   ],
   content: {
-    intro:
-      "Khau Phạ Pass is ranked among Vietnam's tứ đại đỉnh đèo - the four great mountain passes - alongside Ô Quy Hồ, Pha Đin, and Mã Pí Lèng, and is sometimes also called Đèo Cao Phạ locally. At approximately 1,200-1,268m above sea level, it crosses the Hoàng Liên Sơn range between Tú Lệ valley in Văn Chấn district and the Mù Cang Chải plateau in Yên Bái province, covering about 30km of mountain road through terrain that drops several hundred meters on both sides. The name Khau Phạ means 'Horn of the Sky' in the local Thái language - a name that describes the cloud-shrouded summit accurately. The pass is the gateway to Mù Cang Chải, which holds Vietnam's most photographed rice terraces, and the descent toward those terraces from the pass summit is one of the most celebrated stretches of road in the country. Beyond the drive itself, the summit is also the only paragliding launch site in the whole Mù Cang Chải region.",
-    howToGetThere:
-      "Khau Phạ Pass connects Nghĩa Lộ and Tú Lệ to the east with Mù Cang Chải to the west, on National Highway 32. From Hanoi, the standard route is Highway 32 west through Sơn Tây and Nghĩa Lộ to Tú Lệ - approximately 280km, taking 6-7 hours by motorbike or 5-6 hours by car. Tú Lệ is the last town with fuel, food, and accommodation before the pass. From the west, Mù Cang Chải town is the base for the Mù Cang Chải rice terrace area and sits at the foot of the pass on the western side. The pass is an integral part of the Mù Cang Chải motorbike circuit from Hanoi.",
-    whatToExpect:
-      "The road climbs through dense forest on the eastern approach from Tú Lệ, breaking into open views as it nears the summit. At the top, on clear days, the rice terraces of Mù Cang Chải's La Pán Tẩn and Chế Cu Nha communes are visible cascading down the western slopes - the full panoramic view that appears on most Mù Cang Chải photography. The descent toward Mù Cang Chải is the most spectacular section: switchbacks dropping through terraced fields with the valley floor far below. The road is paved throughout but requires full attention - truck traffic, motorbikes, and the occasional landslide debris demand steady riding. Roadside viewpoints have developed organically at the best vantage points. At the summit, a dedicated paragliding launch point operates tandem flights over Lìm Mông valley, and during peak season the sight of paragliders launching against the terraced backdrop is itself part of the pass's appeal, whether or not you fly yourself.",
-    travelTips:
-      "Khau Phạ is not just a road to Mù Cang Chải - it is itself one of the defining experiences of the northern Vietnam motorbike circuit. The combination of the Tú Lệ approach through valley farmland, the forest climb to the pass, and the vertiginous descent into the terrace landscape below is a sequence that most riders remember as one of the best half-days of riding in Vietnam. If you're doing the northwest loop from Hanoi - Nghĩa Lộ, Mù Cang Chải, Tú Lệ, Sơn La, Điện Biên - Khau Phạ is the highlight of the eastern leg. Allocate the whole day for Tú Lệ to Mù Cang Chải rather than treating it as a transit stage, and if paragliding interests you, book with a specialist operator in advance rather than hoping to arrange it on the spot, especially during the harvest season festival window.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Khau Phạ Pass Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khau Phạ Pass is ranked among Vietnam's tứ đại đỉnh đèo - the four great mountain passes - alongside Ô Quy Hồ, Pha Đin, and Mã Pí Lèng, and is sometimes also called Đèo Cao Phạ locally. At approximately 1,200-1,268m above sea level, it crosses the Hoàng Liên Sơn range between Tú Lệ valley in Văn Chấn district and the Mù Cang Chải plateau in Yên Bái province, covering about 30km of mountain road through terrain that drops several hundred meters on both sides.",
+          },
+          { type: "heading", text: "The Name" },
+          {
+            type: "paragraph",
+            text: "The name Khau Phạ means 'Horn of the Sky' in the local Thái language - a name that describes the cloud-shrouded summit accurately.",
+          },
+          { type: "heading", text: "Gateway to Mù Cang Chải, and Paragliding" },
+          {
+            type: "paragraph",
+            text: "The pass is the gateway to Mù Cang Chải, which holds Vietnam's most photographed rice terraces, and the descent toward those terraces from the pass summit is one of the most celebrated stretches of road in the country. Beyond the drive itself, the summit is also the only paragliding launch site in the whole Mù Cang Chải region.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Khau Phạ Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khau Phạ Pass connects Nghĩa Lộ and Tú Lệ to the east with Mù Cang Chải to the west, on National Highway 32.",
+          },
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "From Hanoi, the standard route is Highway 32 west through Sơn Tây and Nghĩa Lộ to Tú Lệ - approximately 280km, taking 6-7 hours by motorbike or 5-6 hours by car. Tú Lệ is the last town with fuel, food, and accommodation before the pass.",
+          },
+          { type: "heading", text: "From the West" },
+          {
+            type: "paragraph",
+            text: "From the west, Mù Cang Chải town is the base for the Mù Cang Chải rice terrace area and sits at the foot of the pass on the western side. The pass is an integral part of the Mù Cang Chải motorbike circuit from Hanoi.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Khau Phạ Pass",
+        blocks: [
+          { type: "heading", text: "The Climb and the Summit" },
+          {
+            type: "paragraph",
+            text: "The road climbs through dense forest on the eastern approach from Tú Lệ, breaking into open views as it nears the summit. At the top, on clear days, the rice terraces of Mù Cang Chải's La Pán Tẩn and Chế Cu Nha communes are visible cascading down the western slopes - the full panoramic view that appears on most Mù Cang Chải photography.",
+          },
+          { type: "heading", text: "The Descent" },
+          {
+            type: "paragraph",
+            text: "The descent toward Mù Cang Chải is the most spectacular section: switchbacks dropping through terraced fields with the valley floor far below. The road is paved throughout but requires full attention - truck traffic, motorbikes, and the occasional landslide debris demand steady riding.",
+          },
+          { type: "heading", text: "Viewpoints and Paragliding" },
+          {
+            type: "paragraph",
+            text: "Roadside viewpoints have developed organically at the best vantage points. At the summit, a dedicated paragliding launch point operates tandem flights over Lìm Mông valley, and during peak season the sight of paragliders launching against the terraced backdrop is itself part of the pass's appeal, whether or not you fly yourself.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Khau Phạ Pass",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Khau Phạ is not just a road to Mù Cang Chải - it is itself one of the defining experiences of the northern Vietnam motorbike circuit. The combination of the Tú Lệ approach through valley farmland, the forest climb to the pass, and the vertiginous descent into the terrace landscape below is a sequence that most riders remember as one of the best half-days of riding in Vietnam.",
+          },
+          {
+            type: "paragraph",
+            text: "If you're doing the northwest loop from Hanoi - Nghĩa Lộ, Mù Cang Chải, Tú Lệ, Sơn La, Điện Biên - Khau Phạ is the highlight of the eastern leg. Allocate the whole day for Tú Lệ to Mù Cang Chải rather than treating it as a transit stage, and if paragliding interests you, book with a specialist operator in advance rather than hoping to arrange it on the spot, especially during the harvest season festival window.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
