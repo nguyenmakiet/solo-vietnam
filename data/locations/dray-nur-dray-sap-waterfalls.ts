@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const drayNurDraySapWaterfalls: Location = {
   slug: "dray-nur-dray-sap-waterfalls",
   name: "Dray Nur & Dray Sap Waterfalls",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dak-lak", "dak-nong"],
   destination: "",
   lat: 12.540509582270607,
@@ -48,14 +48,88 @@ export const drayNurDraySapWaterfalls: Location = {
     "The falls are around 25-30km from Buôn Ma Thuột - combine with a coffee plantation visit, a stop to learn about Ê Đê and M'Nông culture (weaving, cơm lam, rượu cần, gong music), or the Đắk Lắk Elephant Conservation Centre for a full day in the region",
   ],
   content: {
-    intro:
-      "Dray Nur and Dray Sap are twin waterfalls on the Sêrêpôk River, situated on the provincial boundary between Đắk Lắk and Đắk Nông in the Central Highlands, part of a wider three-waterfall system that also includes Gia Long further upstream. In the Ê Đê language of the local ethnic majority, Dray Nur means 'female waterfall' - hence its common name, the Wife Falls - while Dray Sap means 'smoke waterfall,' also known locally as the Husband Falls, paired with Dray Nur in local tradition and folklore. Local legend explains the split: a pair of lovers, forbidden from marrying by their families, are said to have thrown themselves into the Sêrêpôk out of grief, after which the river divided into two named branches - Krông Knô ('male river') and Krông Ana ('female river') - whose flows go on to form Dray Sap and Dray Nur respectively. Another local legend tells of a water-king's son who fell in love with two earthly princesses and later transformed into a golden mole to return to a cave behind the falls. Dray Sap is the wider of the two, roughly 100 metres across with a drop of around 50 metres; the volume of water during the rainy season generates a permanent mist cloud visible from a distance. Dray Nur, 3km upstream, is narrower but the trail reaches the base of the falls where the full scale of the drop is felt - and behind its curtain of water sits a cave of nearly 3,000 square metres. Both waterfalls sit within a landscape of basalt plateau forest typical of the Central Highlands - a combination of secondary woodland, coffee plantations on the approach roads, and the red laterite soil characteristic of the region. The wider three-waterfall cluster spans roughly 1,655 hectares in total. The Buôn Kuốp hydroelectric dam, just 2-3km upstream, has some influence on water volume and flow patterns at both falls. Together with Gia Long Waterfall upstream, the two falls form one of the largest and most impressive waterfall systems in Vietnam's Central Highlands.",
-    howToGetThere:
-      "The waterfalls are located approximately 25-30km south of Buôn Ma Thuột, the capital of Đắk Lắk province. Dray Nur is reached from the Đắk Lắk side, while Dray Sap has its own separate entrance on the Đắk Nông side - Google Maps handles both routes reliably, and organised day tours from Buôn Ma Thuột typically include both falls and handle the routing for you. A city bus also runs from Buôn Ma Thuột toward Dray Nur if you'd rather not drive. Whichever route you take, expect to pass the Buôn Kuốp hydroelectric dam en route, and be prepared for some uneven, pothole-prone stretches. Dray Sap is reached from a separate entrance 3km from Dray Nur, or via the walking trail and suspension bridge connecting the two.",
-    whatToExpect:
-      "Each waterfall has its own entrance, ticket booth, and path to the viewing area. At Dray Sap, the path leads through forest to a viewing platform and then down to the riverbank where the full width of the falls is visible - the mist at close range is heavy enough to require rain gear at high water. The sound at full flow is loud enough to require raised voices for conversation. At Dray Nur, the path reaches the base pool where the falls drop directly into accessible water, and the cave behind the water curtain is worth seeking out. The forest between and around the falls is secondary growth with some larger trees - bird activity is good in the early morning. The connecting trail between the two sites passes through relatively intact woodland, and can include a swaying suspension bridge crossing - fine for most visitors, but worth knowing about if heights or unstable footing bother you. Expect to get wet even if you never step into the river - the spray from Dray Sap drifts surprisingly far on windy days.",
-    travelTips:
-      "The twin falls are most rewarding when visited together rather than individually - the contrast between the scale of Dray Sap and the intimacy of Dray Nur gives the visit more dimension. The Central Highlands as a whole are undervisited relative to the coast, and Buôn Ma Thuột makes a useful base for combining the waterfalls with coffee culture (the city is the centre of Vietnamese coffee production), Ê Đê minority villages, and the elephant conservation work happening in the region. The falls themselves are genuinely impressive at peak flow - among the most powerful waterfalls accessible with minimal trekking in the southern half of Vietnam - though it's worth going in aware that water volume isn't purely a matter of season, since the nearby Buôn Kuốp hydroelectric dam also has some influence on flow - so don't assume a rainy-season visit automatically guarantees the biggest waterfall.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Dray Nur & Dray Sap Waterfalls Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dray Nur and Dray Sap are twin waterfalls on the Sêrêpôk River, situated on the provincial boundary between Đắk Lắk and Đắk Nông in the Central Highlands, part of a wider three-waterfall system that also includes Gia Long further upstream.",
+          },
+          { type: "heading", text: "Names and Legends" },
+          {
+            type: "paragraph",
+            text: "In the Ê Đê language of the local ethnic majority, Dray Nur means 'female waterfall' - hence its common name, the Wife Falls - while Dray Sap means 'smoke waterfall,' also known locally as the Husband Falls, paired with Dray Nur in local tradition and folklore. Local legend explains the split: a pair of lovers, forbidden from marrying by their families, are said to have thrown themselves into the Sêrêpôk out of grief, after which the river divided into two named branches - Krông Knô ('male river') and Krông Ana ('female river') - whose flows go on to form Dray Sap and Dray Nur respectively. Another local legend tells of a water-king's son who fell in love with two earthly princesses and later transformed into a golden mole to return to a cave behind the falls.",
+          },
+          { type: "heading", text: "Dray Sap and Dray Nur" },
+          {
+            type: "paragraph",
+            text: "Dray Sap is the wider of the two, roughly 100 metres across with a drop of around 50 metres; the volume of water during the rainy season generates a permanent mist cloud visible from a distance. Dray Nur, 3km upstream, is narrower but the trail reaches the base of the falls where the full scale of the drop is felt - and behind its curtain of water sits a cave of nearly 3,000 square metres.",
+          },
+          { type: "heading", text: "Landscape and the Buôn Kuốp Dam" },
+          {
+            type: "paragraph",
+            text: "Both waterfalls sit within a landscape of basalt plateau forest typical of the Central Highlands - a combination of secondary woodland, coffee plantations on the approach roads, and the red laterite soil characteristic of the region. The wider three-waterfall cluster spans roughly 1,655 hectares in total. The Buôn Kuốp hydroelectric dam, just 2-3km upstream, has some influence on water volume and flow patterns at both falls. Together with Gia Long Waterfall upstream, the two falls form one of the largest and most impressive waterfall systems in Vietnam's Central Highlands.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Dray Nur & Dray Sap Waterfalls",
+        blocks: [
+          { type: "heading", text: "From Buôn Ma Thuột" },
+          {
+            type: "paragraph",
+            text: "The waterfalls are located approximately 25-30km south of Buôn Ma Thuột, the capital of Đắk Lắk province. Dray Nur is reached from the Đắk Lắk side, while Dray Sap has its own separate entrance on the Đắk Nông side - Google Maps handles both routes reliably, and organised day tours from Buôn Ma Thuột typically include both falls and handle the routing for you. A city bus also runs from Buôn Ma Thuột toward Dray Nur if you'd rather not drive.",
+          },
+          { type: "heading", text: "Separate Entrances" },
+          {
+            type: "paragraph",
+            text: "Whichever route you take, expect to pass the Buôn Kuốp hydroelectric dam en route, and be prepared for some uneven, pothole-prone stretches. Dray Sap is reached from a separate entrance 3km from Dray Nur, or via the walking trail and suspension bridge connecting the two.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Dray Nur & Dray Sap Waterfalls",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Each waterfall has its own entrance, ticket booth, and path to the viewing area.",
+          },
+          { type: "heading", text: "Dray Sap" },
+          {
+            type: "paragraph",
+            text: "At Dray Sap, the path leads through forest to a viewing platform and then down to the riverbank where the full width of the falls is visible - the mist at close range is heavy enough to require rain gear at high water. The sound at full flow is loud enough to require raised voices for conversation.",
+          },
+          { type: "heading", text: "Dray Nur" },
+          {
+            type: "paragraph",
+            text: "At Dray Nur, the path reaches the base pool where the falls drop directly into accessible water, and the cave behind the water curtain is worth seeking out.",
+          },
+          { type: "heading", text: "Forest Trail and Spray" },
+          {
+            type: "paragraph",
+            text: "The forest between and around the falls is secondary growth with some larger trees - bird activity is good in the early morning. The connecting trail between the two sites passes through relatively intact woodland, and can include a swaying suspension bridge crossing - fine for most visitors, but worth knowing about if heights or unstable footing bother you. Expect to get wet even if you never step into the river - the spray from Dray Sap drifts surprisingly far on windy days.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Dray Nur & Dray Sap Waterfalls",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The twin falls are most rewarding when visited together rather than individually - the contrast between the scale of Dray Sap and the intimacy of Dray Nur gives the visit more dimension. The Central Highlands as a whole are undervisited relative to the coast, and Buôn Ma Thuột makes a useful base for combining the waterfalls with coffee culture (the city is the centre of Vietnamese coffee production), Ê Đê minority villages, and the elephant conservation work happening in the region. The falls themselves are genuinely impressive at peak flow - among the most powerful waterfalls accessible with minimal trekking in the southern half of Vietnam - though it's worth going in aware that water volume isn't purely a matter of season, since the nearby Buôn Kuốp hydroelectric dam also has some influence on flow - so don't assume a rainy-season visit automatically guarantees the biggest waterfall.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

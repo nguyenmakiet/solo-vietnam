@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoDynastyCitadel: Location = {
   slug: "ho-dynasty-citadel",
   name: "Ho Dynasty Citadel",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["thanh-hoa"],
   destination: "",
   lat: 20.074269163206647,
@@ -46,14 +46,98 @@ export const hoDynastyCitadel: Location = {
     "Distances between the different sights (gates, moat, Nam Giao altar) can be significant - pack light rather than carrying bulky items around the whole site",
   ],
   content: {
-    intro:
-      "The Ho Dynasty Citadel stands in a low river valley between the Mã and Bưởi rivers, in what are now Vĩnh Tiến and Vĩnh Long communes in Tây Đô (formerly Vĩnh Lộc district), Thanh Hóa province, and represents one of the most extraordinary feats of pre-modern construction in Southeast Asia. Also historically known as Tây Đô, Tây Kinh, An Tôn, or simply Thạch Thành ('Stone Citadel'), it was built under the direction of Hồ Quý Ly - the reformist mandarin who would go on to found the short-lived Hồ dynasty. Remarkably, the main citadel structure was raised in just three months starting in the spring of 1397, with construction continuing until 1402 to complete the inner citadel, outer walls, and the Đàn Nam Giao ceremonial altar. The walls were built from precisely cut blocks of green limestone - averaging 10-16 tonnes each, with the largest confirmed blocks approaching 27 tonnes - fitted together without mortar with a precision that has kept them standing for over 600 years, using an estimated 20,000 cubic metres of stone and 100,000 cubic metres of packed earth. Hồ Quý Ly formally took the throne and proclaimed the Hồ dynasty (naming the country Đại Ngu) in February 1400, but the dynasty's rule proved brief: Ming Chinese forces invaded and captured Hồ Quý Ly and his son on June 17, 1407, bringing the dynasty to an end after just seven years. Contemporary accounts reportedly described the original complex - which included palace buildings such as Điện Hoàng Nguyên, Cung Diên Thọ, and several other halls and temples, all since destroyed or buried by time and war - as rivalling the grandeur of the Imperial Citadel of Thăng Long in Hà Nội. The site was recognised as a Vietnamese National Historical Relic in 1962, and UNESCO inscribed it as a World Heritage Site in 2011, citing its cultural value and its significance to a major stage of human history.",
-    howToGetThere:
-      "The Ho Dynasty Citadel is located approximately 45km west of Thanh Hoa city. By motorbike or car from Thanh Hoa city, follow Highway 45 west toward the former Vĩnh Lộc district - the journey takes around 1 hour. From Hanoi, the total journey is approximately 160km south on Highway 1A to Thanh Hoa city, then west on Highway 45. Local buses run between Thanh Hoa city and the nearby town, from where xe ôm drivers can take visitors to the citadel. The citadel is not typically included in standard tour itineraries and requires independent planning to reach.",
-    whatToExpect:
-      "The citadel walls form a near-perfect rectangle measuring roughly 870 metres north-south by 883 metres east-west, with an overall perimeter of more than 3.5km and an average wall height of around 5-6 metres (up to 10m at the highest points). Four stone gates sit at the cardinal points - South, North, East, and West. The South Gate (Cổng Tiền), the main and best-preserved entrance, has three archways: a central passage 5.82m wide and 5.75m tall, flanked by two side archways each 5.45m wide and 5.35m tall. From here, Đường Hoa Nhai (also called the Royal Road, Đường Hoàng Gia) - a stone-paved processional road roughly 2.5km long - once led toward the Đàn Nam Giao ceremonial altar. Around the citadel, a moat (Hào Thành) over 90m wide, with a 52m-wide base and more than 6.5m deep, once encircled the walls, lined with crushed stone and gravel for durability. Just inside, La Thành - an outer earthen rampart roughly 6m tall and 9.2m wide, steep on the outer face and sloped inside, planted with thorny bamboo - linked the surrounding hills and the Mã and Bưởi river basins, serving both as a defensive line and flood control. The interior is largely open agricultural land - the original palace buildings were destroyed following the Ming invasion - but the scale of the surviving walls, gates, moat, and outer rampart conveys the ambition of the original construction. The Đàn Nam Giao altar itself, within La Thành to the south, spans some 35,000 square metres across multiple tiers, with a central platform reaching 21.7m and a base platform around 10.5m, ringed by three enclosing walls - it was used for royal ceremonies giving thanks to heaven and earth, praying for good harvests and national peace, and honouring past emperors and meritorious generals. A small museum near the entrance displays artefacts and explains the historical context of the Hồ dynasty. As of 2025, a major conservation project (running through 2028) is restoring parts of the site, so some areas may be affected by ongoing work. The surrounding rural landscape of rice paddies, low hills, and the Mã River valley is itself a significant part of the UNESCO listing.",
-    travelTips:
-      "The Ho Dynasty Citadel rewards visitors who approach it with historical preparation - without context about the Hồ dynasty's brief and turbulent existence and the significance of the construction achievement, the largely empty interior can feel underwhelming. Reading about Hồ Quý Ly's radical reform program and the subsequent Ming invasion before visiting transforms the site into something genuinely haunting. The citadel sees very few foreign visitors and the local staff are accommodating to independent travellers. Budget 2-3 hours for a thorough walk of the walls and gates, or a bit less if you're skipping the more remote Nam Giao altar site. Thanh Hoa city itself is a functional transit point with adequate accommodation if combining this with other regional sites.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ho Dynasty Citadel Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Ho Dynasty Citadel stands in a low river valley between the Mã and Bưởi rivers, in what are now Vĩnh Tiến and Vĩnh Long communes in Tây Đô (formerly Vĩnh Lộc district), Thanh Hóa province, and represents one of the most extraordinary feats of pre-modern construction in Southeast Asia. Also historically known as Tây Đô, Tây Kinh, An Tôn, or simply Thạch Thành ('Stone Citadel'), it was built under the direction of Hồ Quý Ly - the reformist mandarin who would go on to found the short-lived Hồ dynasty.",
+          },
+          { type: "heading", text: "Built in Three Months from Green Limestone" },
+          {
+            type: "paragraph",
+            text: "Remarkably, the main citadel structure was raised in just three months starting in the spring of 1397, with construction continuing until 1402 to complete the inner citadel, outer walls, and the Đàn Nam Giao ceremonial altar. The walls were built from precisely cut blocks of green limestone - averaging 10-16 tonnes each, with the largest confirmed blocks approaching 27 tonnes - fitted together without mortar with a precision that has kept them standing for over 600 years, using an estimated 20,000 cubic metres of stone and 100,000 cubic metres of packed earth.",
+          },
+          { type: "heading", text: "The Hồ Dynasty" },
+          {
+            type: "paragraph",
+            text: "Hồ Quý Ly formally took the throne and proclaimed the Hồ dynasty (naming the country Đại Ngu) in February 1400, but the dynasty's rule proved brief: Ming Chinese forces invaded and captured Hồ Quý Ly and his son on June 17, 1407, bringing the dynasty to an end after just seven years. Contemporary accounts reportedly described the original complex - which included palace buildings such as Điện Hoàng Nguyên, Cung Diên Thọ, and several other halls and temples, all since destroyed or buried by time and war - as rivalling the grandeur of the Imperial Citadel of Thăng Long in Hà Nội.",
+          },
+          { type: "heading", text: "Heritage Recognition" },
+          {
+            type: "paragraph",
+            text: "The site was recognised as a Vietnamese National Historical Relic in 1962, and UNESCO inscribed it as a World Heritage Site in 2011, citing its cultural value and its significance to a major stage of human history.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ho Dynasty Citadel",
+        blocks: [
+          { type: "heading", text: "From Thanh Hoa City" },
+          {
+            type: "paragraph",
+            text: "The Ho Dynasty Citadel is located approximately 45km west of Thanh Hoa city. By motorbike or car from Thanh Hoa city, follow Highway 45 west toward the former Vĩnh Lộc district - the journey takes around 1 hour.",
+          },
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "From Hanoi, the total journey is approximately 160km south on Highway 1A to Thanh Hoa city, then west on Highway 45.",
+          },
+          { type: "heading", text: "Local Buses and Planning" },
+          {
+            type: "paragraph",
+            text: "Local buses run between Thanh Hoa city and the nearby town, from where xe ôm drivers can take visitors to the citadel. The citadel is not typically included in standard tour itineraries and requires independent planning to reach.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ho Dynasty Citadel",
+        blocks: [
+          { type: "heading", text: "Walls and the Four Gates" },
+          {
+            type: "paragraph",
+            text: "The citadel walls form a near-perfect rectangle measuring roughly 870 metres north-south by 883 metres east-west, with an overall perimeter of more than 3.5km and an average wall height of around 5-6 metres (up to 10m at the highest points). Four stone gates sit at the cardinal points - South, North, East, and West. The South Gate (Cổng Tiền), the main and best-preserved entrance, has three archways: a central passage 5.82m wide and 5.75m tall, flanked by two side archways each 5.45m wide and 5.35m tall. From here, Đường Hoa Nhai (also called the Royal Road, Đường Hoàng Gia) - a stone-paved processional road roughly 2.5km long - once led toward the Đàn Nam Giao ceremonial altar.",
+          },
+          { type: "heading", text: "Moat and La Thành Rampart" },
+          {
+            type: "paragraph",
+            text: "Around the citadel, a moat (Hào Thành) over 90m wide, with a 52m-wide base and more than 6.5m deep, once encircled the walls, lined with crushed stone and gravel for durability. Just inside, La Thành - an outer earthen rampart roughly 6m tall and 9.2m wide, steep on the outer face and sloped inside, planted with thorny bamboo - linked the surrounding hills and the Mã and Bưởi river basins, serving both as a defensive line and flood control.",
+          },
+          { type: "heading", text: "Inside the Citadel and Đàn Nam Giao" },
+          {
+            type: "paragraph",
+            text: "The interior is largely open agricultural land - the original palace buildings were destroyed following the Ming invasion - but the scale of the surviving walls, gates, moat, and outer rampart conveys the ambition of the original construction. The Đàn Nam Giao altar itself, within La Thành to the south, spans some 35,000 square metres across multiple tiers, with a central platform reaching 21.7m and a base platform around 10.5m, ringed by three enclosing walls - it was used for royal ceremonies giving thanks to heaven and earth, praying for good harvests and national peace, and honouring past emperors and meritorious generals. A small museum near the entrance displays artefacts and explains the historical context of the Hồ dynasty.",
+          },
+          { type: "heading", text: "Conservation Works and Surroundings" },
+          {
+            type: "paragraph",
+            text: "As of 2025, a major conservation project (running through 2028) is restoring parts of the site, so some areas may be affected by ongoing work. The surrounding rural landscape of rice paddies, low hills, and the Mã River valley is itself a significant part of the UNESCO listing.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ho Dynasty Citadel",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Ho Dynasty Citadel rewards visitors who approach it with historical preparation - without context about the Hồ dynasty's brief and turbulent existence and the significance of the construction achievement, the largely empty interior can feel underwhelming. Reading about Hồ Quý Ly's radical reform program and the subsequent Ming invasion before visiting transforms the site into something genuinely haunting.",
+          },
+          {
+            type: "paragraph",
+            text: "The citadel sees very few foreign visitors and the local staff are accommodating to independent travellers. Budget 2-3 hours for a thorough walk of the walls and gates, or a bit less if you're skipping the more remote Nam Giao altar site. Thanh Hoa city itself is a functional transit point with adequate accommodation if combining this with other regional sites.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

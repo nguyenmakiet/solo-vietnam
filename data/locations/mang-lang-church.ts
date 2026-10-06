@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const mangLangChurch: Location = {
   slug: "mang-lang-church",
   name: "Mằng Lăng Church",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["phu-yen"],
   destination: "",
   lat: 13.334150812882358,
@@ -50,14 +50,99 @@ export const mangLangChurch: Location = {
     "There is no entrance fee but a small donation to the church is appropriate if you spend time inside",
   ],
   content: {
-    intro:
-      "Mằng Lăng Church stands on a gentle hill in An Thạch commune, Tuy An district, 35km north of Tuy Hòa near the Kỳ Lộ river, and holds a specific place in Vietnamese history that goes well beyond its architecture. The area was once a forest of white bằng lăng trees (crape myrtle) - known locally as 'mằng lăng' - and when Father Joseph de La Cassagne (known locally as Cố Xuân), the parish's first priest, cleared the land to build the church starting in 1892, it took the forest's name. One large mằng lăng tree was deliberately spared and later cut into four wooden tables, each 1.7m in diameter, distributed to Làng Sông Seminary, Mằng Lăng itself (kept today in the guest house), Quy Nhơn Cathedral, and Hộ Diêm Church. Construction finished roughly 15 years later, making Mằng Lăng the oldest Catholic church still in active use in Vietnam - a red-brick Gothic structure painted blue-grey, with bamboo-shoot-shaped windows, pointed arches, a symmetrical twin-bell tower facade topped by a cross, and moss-covered walls that add to its aged character; the nave seats several hundred across a 5,000 square-metre site. The surrounding grounds are shaded by old trees, the air is quiet, and the congregation is local and devout. Two things draw historians and curious travellers here beyond the building itself. First, the church houses the original 1651 edition of 'Phép Giảng Tám Ngày' (Catechism in Eight Days), printed in Rome and written by the Jesuit missionary Alexandre de Rhodes (known in Vietnamese as Đắc Lộ, 1593-1660) - a book widely credited as the foundational text that standardized chữ Quốc ngữ, the romanized script Vietnamese is written in today. Second, Mằng Lăng is the birthplace of Chân Phước Anrê Phú Yên - Blessed Andrew of Phú Yên - one of the first Vietnamese Catholic martyrs, executed in Quảng Nam in July 1644 at just 19 years old while evangelizing, and now recognised among 117 martyrs worldwide honoured as 'Blessed' by the Catholic Church. He's venerated today as a patron of Vietnamese Catholic youth, and the church remains an active pilgrimage site around his commemoration and an annual mass for Vietnamese Catholic youth. Mằng Lăng is a quiet, unhurried place that rewards visitors who know what they are looking at.",
-    howToGetThere:
-      "Mằng Lăng Church is 35km north of Tuy Hòa city center, in An Thạch commune, Tuy An district, close to National Highway 1A near Chí Thạnh town. The most practical way to reach it is by motorbike - take National Highway 1A north from Tuy Hòa, then follow signs toward Tuy An district. The ride takes around 45-50 minutes and passes through flat coastal countryside. Grab is available from Tuy Hòa but drivers may be unfamiliar with the exact location - show them the address in Vietnamese (Nhà Thờ Mằng Lăng, An Thạch, Tuy An). There is no public bus that stops directly at the church. Parking at the site is free.",
-    whatToExpect:
-      "The church exterior is the main visual draw - red brick, Gothic arches, and a facade that looks transplanted from rural France into Vietnamese rice-field country. The interior is modest: wooden pews, stained glass, and a simple altar. The original 1651 book is kept in a glass display case near the entrance, though access depends on whether the church is open to visitors at the time of arrival - a caretaker is usually present during daytime hours. In front of the church, a man-made hill built in 2006 houses a small cave-like underground exhibit dedicated to Blessed Andrew of Phú Yên, with carved reliefs narrating his life, a reprint of 'Phép Giảng Tám Ngày' (the original stays in the main display case), a lock of his hair, and other relics linked to his story, topped by a statue of him on the hill above. The grounds are well-maintained and peaceful. There are no food vendors or tourist facilities at the site itself. The surrounding landscape - low hills, rice paddies, the wide Tuy An plain - is worth spending time in before or after the visit.",
-    travelTips:
-      "Mằng Lăng works best as part of a Phú Yên day trip rather than a standalone destination. The most logical combination is to pair it with Gành Đá Đĩa - the UNESCO-nominated basalt rock plateau 15km further north along the coast - making a single route: Tuy Hòa north to Mằng Lăng, then continue to Gành Đá Đĩa, then return south. The full loop is around 100km and takes a comfortable day on a motorbike. Travellers based in Quy Nhơn can also reach Mằng Lăng as a day trip south - it sits roughly halfway between Tuy Hòa and the Bình Định border.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Mằng Lăng Church Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mằng Lăng Church stands on a gentle hill in An Thạch commune, Tuy An district, 35km north of Tuy Hòa near the Kỳ Lộ river, and holds a specific place in Vietnamese history that goes well beyond its architecture.",
+          },
+          { type: "heading", text: "How the Church Got Its Name" },
+          {
+            type: "paragraph",
+            text: "The area was once a forest of white bằng lăng trees (crape myrtle) - known locally as 'mằng lăng' - and when Father Joseph de La Cassagne (known locally as Cố Xuân), the parish's first priest, cleared the land to build the church starting in 1892, it took the forest's name. One large mằng lăng tree was deliberately spared and later cut into four wooden tables, each 1.7m in diameter, distributed to Làng Sông Seminary, Mằng Lăng itself (kept today in the guest house), Quy Nhơn Cathedral, and Hộ Diêm Church.",
+          },
+          { type: "heading", text: "Vietnam's Oldest Active Catholic Church" },
+          {
+            type: "paragraph",
+            text: "Construction finished roughly 15 years later, making Mằng Lăng the oldest Catholic church still in active use in Vietnam - a red-brick Gothic structure painted blue-grey, with bamboo-shoot-shaped windows, pointed arches, a symmetrical twin-bell tower facade topped by a cross, and moss-covered walls that add to its aged character; the nave seats several hundred across a 5,000 square-metre site. The surrounding grounds are shaded by old trees, the air is quiet, and the congregation is local and devout.",
+          },
+          { type: "heading", text: "The 1651 Catechism" },
+          {
+            type: "paragraph",
+            text: "Two things draw historians and curious travellers here beyond the building itself. First, the church houses the original 1651 edition of 'Phép Giảng Tám Ngày' (Catechism in Eight Days), printed in Rome and written by the Jesuit missionary Alexandre de Rhodes (known in Vietnamese as Đắc Lộ, 1593-1660) - a book widely credited as the foundational text that standardized chữ Quốc ngữ, the romanized script Vietnamese is written in today.",
+          },
+          { type: "heading", text: "Blessed Andrew of Phú Yên" },
+          {
+            type: "paragraph",
+            text: "Second, Mằng Lăng is the birthplace of Chân Phước Anrê Phú Yên - Blessed Andrew of Phú Yên - one of the first Vietnamese Catholic martyrs, executed in Quảng Nam in July 1644 at just 19 years old while evangelizing, and now recognised among 117 martyrs worldwide honoured as 'Blessed' by the Catholic Church. He's venerated today as a patron of Vietnamese Catholic youth, and the church remains an active pilgrimage site around his commemoration and an annual mass for Vietnamese Catholic youth. Mằng Lăng is a quiet, unhurried place that rewards visitors who know what they are looking at.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Mằng Lăng Church",
+        blocks: [
+          { type: "heading", text: "By Motorbike from Tuy Hòa" },
+          {
+            type: "paragraph",
+            text: "Mằng Lăng Church is 35km north of Tuy Hòa city center, in An Thạch commune, Tuy An district, close to National Highway 1A near Chí Thạnh town. The most practical way to reach it is by motorbike - take National Highway 1A north from Tuy Hòa, then follow signs toward Tuy An district. The ride takes around 45-50 minutes and passes through flat coastal countryside.",
+          },
+          { type: "heading", text: "Grab, Bus and Parking" },
+          {
+            type: "paragraph",
+            text: "Grab is available from Tuy Hòa but drivers may be unfamiliar with the exact location - show them the address in Vietnamese (Nhà Thờ Mằng Lăng, An Thạch, Tuy An). There is no public bus that stops directly at the church. Parking at the site is free.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Mằng Lăng Church",
+        blocks: [
+          { type: "heading", text: "The Church Building" },
+          {
+            type: "paragraph",
+            text: "The church exterior is the main visual draw - red brick, Gothic arches, and a facade that looks transplanted from rural France into Vietnamese rice-field country. The interior is modest: wooden pews, stained glass, and a simple altar.",
+          },
+          { type: "heading", text: "The 1651 Book and the Underground Exhibit" },
+          {
+            type: "paragraph",
+            text: "The original 1651 book is kept in a glass display case near the entrance, though access depends on whether the church is open to visitors at the time of arrival - a caretaker is usually present during daytime hours. In front of the church, a man-made hill built in 2006 houses a small cave-like underground exhibit dedicated to Blessed Andrew of Phú Yên, with carved reliefs narrating his life, a reprint of 'Phép Giảng Tám Ngày' (the original stays in the main display case), a lock of his hair, and other relics linked to his story, topped by a statue of him on the hill above.",
+          },
+          { type: "heading", text: "Grounds and Surroundings" },
+          {
+            type: "paragraph",
+            text: "The grounds are well-maintained and peaceful. There are no food vendors or tourist facilities at the site itself. The surrounding landscape - low hills, rice paddies, the wide Tuy An plain - is worth spending time in before or after the visit.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Mằng Lăng Church",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Mằng Lăng works best as part of a Phú Yên day trip rather than a standalone destination.",
+          },
+          { type: "heading", text: "Combining with Gành Đá Đĩa" },
+          {
+            type: "paragraph",
+            text: "The most logical combination is to pair it with Gành Đá Đĩa - the UNESCO-nominated basalt rock plateau 15km further north along the coast - making a single route: Tuy Hòa north to Mằng Lăng, then continue to Gành Đá Đĩa, then return south. The full loop is around 100km and takes a comfortable day on a motorbike.",
+          },
+          { type: "heading", text: "Day Trip from Quy Nhơn" },
+          {
+            type: "paragraph",
+            text: "Travellers based in Quy Nhơn can also reach Mằng Lăng as a day trip south - it sits roughly halfway between Tuy Hòa and the Bình Định border.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

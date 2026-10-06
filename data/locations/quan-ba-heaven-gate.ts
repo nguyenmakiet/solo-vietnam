@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quanBaHeavenGate: Location = {
   slug: "quan-ba-heaven-gate",
   name: "Quản Bạ Heaven Gate",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.04948889805356,
@@ -47,14 +47,94 @@ export const quanBaHeavenGate: Location = {
     "A tripod and a spare phone or camera battery are worth packing if you're serious about the cloud-hunting photos, since the best light often means an early, extended wait",
   ],
   content: {
-    intro:
-      "Quản Bạ Heaven Gate - Cổng Trời Quản Bạ - sits at approximately 1,500 metres in Quyết Tiến commune, on the road between Hà Giang city and Quản Bạ (Tam Sơn) town, about 3km from Tam Sơn itself, marking the point where the lowland approach to the loop crests the first major ridge and the karst plateau landscape begins. The name and the site have real history behind them: a massive wooden gate, built by the French in 1939 from thick hardwood planking around 1.5 metres deep, once stood here - a genuinely unique structure that no other site in the region had, marking what local lore describes as the boundary into H'Mông territory beyond. That original gate no longer survives, having succumbed to decades of harsh sun and rain; today a sign marks the spot instead, and a modern stone archway crosses the road nearby, distinct from the vanished 1939 structure. The gate also marks the start of 'Đường Hạnh Phúc' ('Happiness Road'), the famous route connecting Hà Giang's four plateau districts of Quản Bạ, Yên Minh, Đồng Văn, and Mèo Vạc. From the roadside terrace, the Quản Bạ Valley opens below in a dramatic panorama - a steep, deep drop to the valley floor, the Twin Mountains (Núi Đôi, also called Núi Cô Tiên - 'Fairy Mountain') rising from the basin floor, and the layered ridgelines of the Đồng Văn Karst Plateau extending to the horizon. A set of concrete steps - close to 100 of them - climbs the hillside across from the terrace to what's regarded as the true summit viewpoint, offering an even wider view for those willing to climb. In October and November, cold nights cause cloud inversions that fill the valley below the gate - the Twin Mountains appear above the cloud surface as isolated peaks, and the gate itself sits at the cloud boundary. It's one of the most photographed viewpoints in northern Vietnam, and often compared to the more rugged Mã Pí Lèng Pass further along the loop - Quản Bạ is a broad valley viewpoint with an easier stop, while Mã Pí Lèng is known for its dramatic cliffside road and views over Nho Quế River and Tu Sản Canyon.",
-    howToGetThere:
-      "Quản Bạ Heaven Gate is roughly 44-50km north of Hà Giang city on Highway 4C - the main Ha Giang Loop road, with most sources converging around 46km. By motorbike from Hà Giang city, the gate is reached in about 1.5 hours, passing through the first sections of the loop's winding mountain road. A modern stone archway marks the gate on the road, with a small parking area and cafe on the right side at the top. Most riders on the loop pass through the gate as the first significant stop after leaving Hà Giang city. Lùng Khúy Cave, about 10km away, is a worthwhile detour if you have extra time.",
-    whatToExpect:
-      "A modern stone archway spans the road at the site of the original 1939 wooden gate (long gone), with a small terrace on the right side overlooking the valley. The view from the terrace is immediate and dramatic - the valley drop, the Twin Mountains, and the plateau ridgelines are all visible on clear days. A small cafe serves cà phê and snacks, and a nearby stall is known locally for its cassava cake. Across the road, a flight of concrete steps - close to 100 in total - climbs to a higher viewpoint many consider the 'true' summit, generally less crowded than the main terrace. The descent from the gate into Quản Bạ (Tam Sơn) town is roughly 3km of switchback road - tight bends, significant elevation loss, and continuous views. The Twin Mountains viewpoint 2km below the gate gives the best single-frame view of the Núi Đôi from above.",
-    travelTips:
-      "Heaven Gate is the moment the Ha Giang Loop announces itself - the point where the road crests and the landscape you came to see appears all at once. Most riders stop for 15–30 minutes at the main terrace, longer if you also climb the steps to the upper viewpoint. Sunrise arrivals require leaving Hà Giang city at 4:30–5:00 AM, which is worth doing at least once for the cloud inversion effect. The gate is also a useful orientation point - everything north of here is the karst plateau, and the riding quality and scenery improve consistently from this point onward.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Quản Bạ Heaven Gate Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Quản Bạ Heaven Gate - Cổng Trời Quản Bạ - sits at approximately 1,500 metres in Quyết Tiến commune, on the road between Hà Giang city and Quản Bạ (Tam Sơn) town, about 3km from Tam Sơn itself, marking the point where the lowland approach to the loop crests the first major ridge and the karst plateau landscape begins.",
+          },
+          { type: "heading", text: "History of the Gate" },
+          {
+            type: "paragraph",
+            text: "The name and the site have real history behind them: a massive wooden gate, built by the French in 1939 from thick hardwood planking around 1.5 metres deep, once stood here - a genuinely unique structure that no other site in the region had, marking what local lore describes as the boundary into H'Mông territory beyond. That original gate no longer survives, having succumbed to decades of harsh sun and rain; today a sign marks the spot instead, and a modern stone archway crosses the road nearby, distinct from the vanished 1939 structure. The gate also marks the start of 'Đường Hạnh Phúc' ('Happiness Road'), the famous route connecting Hà Giang's four plateau districts of Quản Bạ, Yên Minh, Đồng Văn, and Mèo Vạc.",
+          },
+          { type: "heading", text: "Quản Bạ Valley and the Twin Mountains" },
+          {
+            type: "paragraph",
+            text: "From the roadside terrace, the Quản Bạ Valley opens below in a dramatic panorama - a steep, deep drop to the valley floor, the Twin Mountains (Núi Đôi, also called Núi Cô Tiên - 'Fairy Mountain') rising from the basin floor, and the layered ridgelines of the Đồng Văn Karst Plateau extending to the horizon. A set of concrete steps - close to 100 of them - climbs the hillside across from the terrace to what's regarded as the true summit viewpoint, offering an even wider view for those willing to climb.",
+          },
+          { type: "heading", text: "Cloud Inversions in October and November" },
+          {
+            type: "paragraph",
+            text: "In October and November, cold nights cause cloud inversions that fill the valley below the gate - the Twin Mountains appear above the cloud surface as isolated peaks, and the gate itself sits at the cloud boundary. It's one of the most photographed viewpoints in northern Vietnam, and often compared to the more rugged Mã Pí Lèng Pass further along the loop - Quản Bạ is a broad valley viewpoint with an easier stop, while Mã Pí Lèng is known for its dramatic cliffside road and views over Nho Quế River and Tu Sản Canyon.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Quản Bạ Heaven Gate",
+        blocks: [
+          { type: "heading", text: "From Hà Giang City" },
+          {
+            type: "paragraph",
+            text: "Quản Bạ Heaven Gate is roughly 44-50km north of Hà Giang city on Highway 4C - the main Ha Giang Loop road, with most sources converging around 46km. By motorbike from Hà Giang city, the gate is reached in about 1.5 hours, passing through the first sections of the loop's winding mountain road. A modern stone archway marks the gate on the road, with a small parking area and cafe on the right side at the top. Most riders on the loop pass through the gate as the first significant stop after leaving Hà Giang city.",
+          },
+          { type: "heading", text: "Lùng Khúy Cave Detour" },
+          {
+            type: "paragraph",
+            text: "Lùng Khúy Cave, about 10km away, is a worthwhile detour if you have extra time.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Quản Bạ Heaven Gate",
+        blocks: [
+          { type: "heading", text: "The Archway and Terrace" },
+          {
+            type: "paragraph",
+            text: "A modern stone archway spans the road at the site of the original 1939 wooden gate (long gone), with a small terrace on the right side overlooking the valley. The view from the terrace is immediate and dramatic - the valley drop, the Twin Mountains, and the plateau ridgelines are all visible on clear days. A small cafe serves cà phê and snacks, and a nearby stall is known locally for its cassava cake.",
+          },
+          { type: "heading", text: "The Upper Viewpoint" },
+          {
+            type: "paragraph",
+            text: "Across the road, a flight of concrete steps - close to 100 in total - climbs to a higher viewpoint many consider the 'true' summit, generally less crowded than the main terrace.",
+          },
+          { type: "heading", text: "Descent to Quản Bạ Town" },
+          {
+            type: "paragraph",
+            text: "The descent from the gate into Quản Bạ (Tam Sơn) town is roughly 3km of switchback road - tight bends, significant elevation loss, and continuous views. The Twin Mountains viewpoint 2km below the gate gives the best single-frame view of the Núi Đôi from above.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Quản Bạ Heaven Gate",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Heaven Gate is the moment the Ha Giang Loop announces itself - the point where the road crests and the landscape you came to see appears all at once. Most riders stop for 15–30 minutes at the main terrace, longer if you also climb the steps to the upper viewpoint.",
+          },
+          { type: "heading", text: "Sunrise Visits" },
+          {
+            type: "paragraph",
+            text: "Sunrise arrivals require leaving Hà Giang city at 4:30–5:00 AM, which is worth doing at least once for the cloud inversion effect.",
+          },
+          { type: "heading", text: "Gateway to the Karst Plateau" },
+          {
+            type: "paragraph",
+            text: "The gate is also a useful orientation point - everything north of here is the karst plateau, and the riding quality and scenery improve consistently from this point onward.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

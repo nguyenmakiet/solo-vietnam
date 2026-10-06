@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const datanlaWaterfall: Location = {
   slug: "datanla-waterfall",
   name: "Datanla Waterfall",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.898464970455633,
@@ -45,14 +45,100 @@ export const datanlaWaterfall: Location = {
     "Allow 1-4 hours depending on how many activities you want to do - a simple walk to the main falls and back can be done quickly, but the full activity menu (coaster, zipline, rafting, etc.) takes considerably longer.",
   ],
   content: {
-    intro:
-      "Datanla Waterfall sits 5km south of Đà Lạt city centre on Prenn Pass, in a forested gorge carved by a tributary of the Cam Ly River. The name comes from K'ho language - generally rendered as 'Đạ Tam N'nha', meaning 'water under the leaves' - describing how the falls hide beneath a dense forest canopy and only reveal themselves up close; on foggy days the water becomes audible before it's visible at all. Local K'ho legend ties the site to a tragic love story: K'Lang, a brave warrior, and Hơbiang, a chief's daughter, fell in love despite family opposition; K'Lang died defending her, and Hơbiang threw herself from the cliff in grief - the spot where she fell is now called 'Vực Tử Thần' (Death Abyss). The main waterfall drops about 20m through several rocky tiers before reaching the primary viewing area, with the gorge continuing downstream through increasingly remote forest. What makes Datanla one of the most-visited natural sites near Đà Lạt isn't just the waterfall itself but the surrounding activity park built around it: two separate alpine coaster tracks, ziplining, canyon swinging, whitewater rafting, waterfall rappelling, and a cable car. Unlike most Vietnamese waterfalls, reaching Datanla isn't the highlight - choosing how to reach it is. Datanla isn't the most beautiful waterfall around Đà Lạt - Pongour is more spectacular, Elephant Falls more powerful - but it's the most accessible, and the easiest to enjoy with kids, elderly parents, or anyone on a tight schedule who still wants a genuine adventure rather than just a photo stop.",
-    howToGetThere:
-      "Datanla is 5km south of Đà Lạt city centre on Highway 20 (Prenn Pass direction) - about 10km from the very centre, 8km from Prenn Waterfall. By motorbike, about 10 minutes from central Đà Lạt; the pass was widened to 4 lanes in a major 2024 upgrade, with smooth asphalt and wider curves, making it an easy drive for both motorbikes and cars. The entrance gate is clearly signposted on the right side of the highway heading down from Đà Lạt market. Grab rides cost approximately 40,000-60,000 VND one way. From the entrance, you can walk down into the gorge (~15 minutes), take the alpine coaster, zipline, or cable car as alternative descents.",
-    whatToExpect:
-      "From the entrance, your choice of coaster, zipline, walking trail, or cable car determines both your route and the character of the visit - this is a place where the way down matters as much as the destination. The forest walk descends about 200 gradual steps over roughly 1km to the main viewing platform, where the waterfall drops about 20m into a rocky pool; it's quieter than the rides and gives a genuine sense of the surrounding pine forest. Xe Trượt 1 stops at Thác 1, generally considered the most beautiful individual waterfall on site; Xe Trượt 3 is the longer, faster, more modern ride. Purists sometimes dismiss Datanla as 'too commercialised' compared to wilder waterfalls elsewhere in Lâm Đồng - but that's also exactly why it's one of the easiest waterfalls in Vietnam to enjoy with children, elderly parents, or first-time visitors who want adventure without genuine risk or a long trek.",
-    travelTips:
-      "Datanla works well as a half-day rather than a full day - depending on which activities you choose, 1-4 hours covers it comfortably. Decide upfront what kind of visit you want: a quiet waterfall walk, or the full activity-park experience. If it's the latter, the alpine coaster (either track) is the most universally enjoyable option, including for elderly visitors and most children; the zipline-plus-coaster combo is worth the extra cost if you want a bit more adrenaline, since the zipline conveniently drops you near the coaster for the return trip anyway. Go in the morning (7-8 AM) or early afternoon (1-2 PM) to beat both the crowds and, in dry season, the worst of the midday heat. Avoid May-August if the rides matter to you - the rainy season limits or shuts down coaster operation and makes the trails slippery, even though the waterfall itself looks more dramatic with higher water volume during these months.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Datanla Waterfall Special",
+        blocks: [
+          { type: "heading", text: "Location and the Meaning of the Name" },
+          {
+            type: "paragraph",
+            text: "Datanla Waterfall sits 5km south of Đà Lạt city centre on Prenn Pass, in a forested gorge carved by a tributary of the Cam Ly River. The name comes from K'ho language - generally rendered as 'Đạ Tam N'nha', meaning 'water under the leaves' - describing how the falls hide beneath a dense forest canopy and only reveal themselves up close; on foggy days the water becomes audible before it's visible at all.",
+          },
+          { type: "heading", text: "The K'ho Legend of K'Lang and Hơbiang" },
+          {
+            type: "paragraph",
+            text: "Local K'ho legend ties the site to a tragic love story: K'Lang, a brave warrior, and Hơbiang, a chief's daughter, fell in love despite family opposition; K'Lang died defending her, and Hơbiang threw herself from the cliff in grief - the spot where she fell is now called 'Vực Tử Thần' (Death Abyss).",
+          },
+          { type: "heading", text: "The Waterfall and the Activity Park" },
+          {
+            type: "paragraph",
+            text: "The main waterfall drops about 20m through several rocky tiers before reaching the primary viewing area, with the gorge continuing downstream through increasingly remote forest. What makes Datanla one of the most-visited natural sites near Đà Lạt isn't just the waterfall itself but the surrounding activity park built around it: two separate alpine coaster tracks, ziplining, canyon swinging, whitewater rafting, waterfall rappelling, and a cable car.",
+          },
+          { type: "heading", text: "Is Datanla Worth Visiting?" },
+          {
+            type: "paragraph",
+            text: "Unlike most Vietnamese waterfalls, reaching Datanla isn't the highlight - choosing how to reach it is. Datanla isn't the most beautiful waterfall around Đà Lạt - Pongour is more spectacular, Elephant Falls more powerful - but it's the most accessible, and the easiest to enjoy with kids, elderly parents, or anyone on a tight schedule who still wants a genuine adventure rather than just a photo stop.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Datanla Waterfall",
+        blocks: [
+          { type: "heading", text: "Location on Prenn Pass" },
+          {
+            type: "paragraph",
+            text: "Datanla is 5km south of Đà Lạt city centre on Highway 20 (Prenn Pass direction) - about 10km from the very centre, 8km from Prenn Waterfall.",
+          },
+          { type: "heading", text: "By Motorbike or Grab" },
+          {
+            type: "paragraph",
+            text: "By motorbike, about 10 minutes from central Đà Lạt; the pass was widened to 4 lanes in a major 2024 upgrade, with smooth asphalt and wider curves, making it an easy drive for both motorbikes and cars. The entrance gate is clearly signposted on the right side of the highway heading down from Đà Lạt market. Grab rides cost approximately 40,000-60,000 VND one way.",
+          },
+          { type: "heading", text: "Getting Down to the Falls" },
+          {
+            type: "paragraph",
+            text: "From the entrance, you can walk down into the gorge (~15 minutes), take the alpine coaster, zipline, or cable car as alternative descents.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Datanla Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "From the entrance, your choice of coaster, zipline, walking trail, or cable car determines both your route and the character of the visit - this is a place where the way down matters as much as the destination.",
+          },
+          { type: "heading", text: "The Forest Walk" },
+          {
+            type: "paragraph",
+            text: "The forest walk descends about 200 gradual steps over roughly 1km to the main viewing platform, where the waterfall drops about 20m into a rocky pool; it's quieter than the rides and gives a genuine sense of the surrounding pine forest.",
+          },
+          { type: "heading", text: "Alpine Coaster Tracks" },
+          {
+            type: "paragraph",
+            text: "Xe Trượt 1 stops at Thác 1, generally considered the most beautiful individual waterfall on site; Xe Trượt 3 is the longer, faster, more modern ride.",
+          },
+          { type: "heading", text: "Is It Too Commercialised?" },
+          {
+            type: "paragraph",
+            text: "Purists sometimes dismiss Datanla as 'too commercialised' compared to wilder waterfalls elsewhere in Lâm Đồng - but that's also exactly why it's one of the easiest waterfalls in Vietnam to enjoy with children, elderly parents, or first-time visitors who want adventure without genuine risk or a long trek.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Datanla Waterfall",
+        blocks: [
+          { type: "heading", text: "How Long to Spend" },
+          {
+            type: "paragraph",
+            text: "Datanla works well as a half-day rather than a full day - depending on which activities you choose, 1-4 hours covers it comfortably. Decide upfront what kind of visit you want: a quiet waterfall walk, or the full activity-park experience. If it's the latter, the alpine coaster (either track) is the most universally enjoyable option, including for elderly visitors and most children; the zipline-plus-coaster combo is worth the extra cost if you want a bit more adrenaline, since the zipline conveniently drops you near the coaster for the return trip anyway.",
+          },
+          { type: "heading", text: "Best Time of Day and Season" },
+          {
+            type: "paragraph",
+            text: "Go in the morning (7-8 AM) or early afternoon (1-2 PM) to beat both the crowds and, in dry season, the worst of the midday heat. Avoid May-August if the rides matter to you - the rainy season limits or shuts down coaster operation and makes the trails slippery, even though the waterfall itself looks more dramatic with higher water volume during these months.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

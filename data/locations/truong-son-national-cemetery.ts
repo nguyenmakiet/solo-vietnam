@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const truongSonNationalCemetery: Location = {
   slug: "truong-son-national-cemetery",
   name: "Truong Son National Cemetery",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-tri"],
   destination: "",
   lat: 16.958242841270042,
@@ -52,14 +52,93 @@ export const truongSonNationalCemetery: Location = {
     "Some visitors following folk tradition avoid visiting right at 12 noon (giờ chính Ngọ), a time some consider inauspicious for this kind of visit - purely a matter of personal belief, not an official rule",
   ],
   content: {
-    intro:
-      "Truong Son National Cemetery sits on Bến Tắt Hill (đồi Bến Tắt) near Cồn Tiên in Gio Linh district of Quảng Trị province, close to the former Demilitarized Zone that divided North and South Vietnam along the 17th parallel, and named for a nearby crossing on the Bến Hải river. The site's location isn't incidental: Bến Tắt sits near Khe Hó, where the 559th Division - the unit responsible for building and running the Ho Chi Minh Trail - was founded back in 1959, tying the cemetery directly to the origin point of the trail it commemorates. Construction began on October 24, 1975 - just months after reunification - and was completed on April 10, 1977, built by the 559th Division's engineering command with the help of more than 40 army units. The cemetery holds 10,333 graves of Vietnamese People's Army soldiers and volunteer youth who died on the Ho Chi Minh Trail logistics network that ran through the Trường Sơn mountain range during the American War. Many of these graves remain unidentified, though the exact number changes as identification efforts continue; where a soldier's identity couldn't be recovered, the headstone reads simply 'Liệt sĩ chưa biết tên, quê quán: Tổ quốc' - 'An unknown soldier, homeland: the Fatherland' - one of the most quietly affecting details for visitors who read the markers closely. Separately, a nearby memorial temple commemorates the far larger number of Trường Sơn soldiers - by some accounts over 13,000 - whose remains were never recovered at all and who have no grave here or elsewhere. Spread across three hills and roughly 140,000 square metres, the site is organised into 10 main sections, historically grouped by home province using the province names in use at the time of construction (Hà Nội, Nghệ Tĩnh, Thanh Hóa, Bình Trị Thiên, Hà Nam Ninh, and others, some of which have since been split or renamed); distinctively, each provincial section has its own memorial house, built in a style reflecting that province's own local architecture and cultural symbols, so the cemetery reads as much as a map of the whole country's wartime sacrifice as a single uniform site. Each white grave marker carries the soldier's name, date of birth, date of death, and home district - a level of individual record that reflects the sustained effort to identify the dead along a trail where many casualties occurred in remote forest far from medical facilities.",
-    howToGetThere:
-      "Truong Son National Cemetery is roughly 30-38km northwest of Đông Hà city (about 32km along Highway 15/the Ho Chi Minh Trail road before turning off at the signposted junction) and about 83km north of Huế. Most visitors reach it as part of an organised DMZ day tour from Huế, which typically combines the cemetery with Vinh Moc Tunnels, the Hien Luong Bridge at the former border, and the Khe Sanh Combat Base. By motorbike or car from Đông Hà, the cemetery is approximately 40-60 minutes via Highway 15, which follows part of the Ho Chi Minh Trail's original route. The site is well signposted from the main roads, with a car park at the entrance.",
-    whatToExpect:
-      "The entrance gate opens onto a wide central avenue lined with pine trees leading toward the central monument area on Bến Tắt Hill's summit, about 32m above the entrance. The monument itself is a distinctive hollow, three-sided open structure in white stone, surrounded by six stone relief carvings depicting the different military units of the Trường Sơn forces alongside a separate Tổ Quốc Ghi Công (Fatherland Remembers) statue group; a Bodhi tree said to have grown there naturally stands just behind it, and a large bell at a nearby bell tower is inscribed with a commemorative verse for visitors to ring. Beyond the monument, the hillsides are covered in rows of white grave markers extending across the cemetery's 10 sections, each grouped by home province and marked by its own distinctly-styled memorial house reflecting that province's local architecture. A separate memorial temple nearby, Đền Tưởng Niệm Liệt Sĩ Trường Sơn - Bến Tắt, is dedicated specifically to soldiers whose remains were never recovered, extending the site's memorial space beyond the marked graves. An on-site lookup system, accessible via website and QR codes, helps visitors search for specific soldiers' records. Walking the rows is a slow and particular experience - the dates of death cluster in years of heavy American bombing campaigns, and the home provinces on the markers trace the geography of wartime mobilisation from across the country. The site is maintained in good condition, with paved or cemented paths, mown grass, and trees and flowers throughout that keep it from feeling cold or bleak.",
-    travelTips:
-      "Quảng Trị province holds more war memorials and historical sites per square kilometre than anywhere else in Vietnam - the province was the most intensively bombed area in the country and the site of some of the war's most destructive ground campaigns. Truong Son Cemetery is the largest and most formally significant of these sites, but the broader DMZ landscape repays a full day of exploration. The nearby Vinh Moc Tunnels - where an entire village lived underground for years to survive the bombing - provides a civilian counterpoint to the military focus of the cemetery. For travellers with a serious interest in the war's history, staying a night in Đông Hà rather than doing the DMZ as a day trip from Huế allows for a less rushed engagement with the sites.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Truong Son National Cemetery Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Truong Son National Cemetery sits on Bến Tắt Hill (đồi Bến Tắt) near Cồn Tiên in Gio Linh district of Quảng Trị province, close to the former Demilitarized Zone that divided North and South Vietnam along the 17th parallel, and named for a nearby crossing on the Bến Hải river. The site's location isn't incidental: Bến Tắt sits near Khe Hó, where the 559th Division - the unit responsible for building and running the Ho Chi Minh Trail - was founded back in 1959, tying the cemetery directly to the origin point of the trail it commemorates.",
+          },
+          { type: "heading", text: "Construction" },
+          {
+            type: "paragraph",
+            text: "Construction began on October 24, 1975 - just months after reunification - and was completed on April 10, 1977, built by the 559th Division's engineering command with the help of more than 40 army units.",
+          },
+          { type: "heading", text: "The Graves and the Memorial Temple" },
+          {
+            type: "paragraph",
+            text: "The cemetery holds 10,333 graves of Vietnamese People's Army soldiers and volunteer youth who died on the Ho Chi Minh Trail logistics network that ran through the Trường Sơn mountain range during the American War. Many of these graves remain unidentified, though the exact number changes as identification efforts continue; where a soldier's identity couldn't be recovered, the headstone reads simply 'Liệt sĩ chưa biết tên, quê quán: Tổ quốc' - 'An unknown soldier, homeland: the Fatherland' - one of the most quietly affecting details for visitors who read the markers closely. Separately, a nearby memorial temple commemorates the far larger number of Trường Sơn soldiers - by some accounts over 13,000 - whose remains were never recovered at all and who have no grave here or elsewhere.",
+          },
+          { type: "heading", text: "Layout of the Cemetery" },
+          {
+            type: "paragraph",
+            text: "Spread across three hills and roughly 140,000 square metres, the site is organised into 10 main sections, historically grouped by home province using the province names in use at the time of construction (Hà Nội, Nghệ Tĩnh, Thanh Hóa, Bình Trị Thiên, Hà Nam Ninh, and others, some of which have since been split or renamed); distinctively, each provincial section has its own memorial house, built in a style reflecting that province's own local architecture and cultural symbols, so the cemetery reads as much as a map of the whole country's wartime sacrifice as a single uniform site. Each white grave marker carries the soldier's name, date of birth, date of death, and home district - a level of individual record that reflects the sustained effort to identify the dead along a trail where many casualties occurred in remote forest far from medical facilities.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Truong Son National Cemetery",
+        blocks: [
+          { type: "heading", text: "Location" },
+          {
+            type: "paragraph",
+            text: "Truong Son National Cemetery is roughly 30-38km northwest of Đông Hà city (about 32km along Highway 15/the Ho Chi Minh Trail road before turning off at the signposted junction) and about 83km north of Huế.",
+          },
+          { type: "heading", text: "DMZ Day Tours from Huế" },
+          {
+            type: "paragraph",
+            text: "Most visitors reach it as part of an organised DMZ day tour from Huế, which typically combines the cemetery with Vinh Moc Tunnels, the Hien Luong Bridge at the former border, and the Khe Sanh Combat Base.",
+          },
+          { type: "heading", text: "By Motorbike or Car from Đông Hà" },
+          {
+            type: "paragraph",
+            text: "By motorbike or car from Đông Hà, the cemetery is approximately 40-60 minutes via Highway 15, which follows part of the Ho Chi Minh Trail's original route. The site is well signposted from the main roads, with a car park at the entrance.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Truong Son National Cemetery",
+        blocks: [
+          { type: "heading", text: "The Central Avenue and Monument" },
+          {
+            type: "paragraph",
+            text: "The entrance gate opens onto a wide central avenue lined with pine trees leading toward the central monument area on Bến Tắt Hill's summit, about 32m above the entrance. The monument itself is a distinctive hollow, three-sided open structure in white stone, surrounded by six stone relief carvings depicting the different military units of the Trường Sơn forces alongside a separate Tổ Quốc Ghi Công (Fatherland Remembers) statue group; a Bodhi tree said to have grown there naturally stands just behind it, and a large bell at a nearby bell tower is inscribed with a commemorative verse for visitors to ring.",
+          },
+          { type: "heading", text: "Grave Sections and the Memorial Temple" },
+          {
+            type: "paragraph",
+            text: "Beyond the monument, the hillsides are covered in rows of white grave markers extending across the cemetery's 10 sections, each grouped by home province and marked by its own distinctly-styled memorial house reflecting that province's local architecture. A separate memorial temple nearby, Đền Tưởng Niệm Liệt Sĩ Trường Sơn - Bến Tắt, is dedicated specifically to soldiers whose remains were never recovered, extending the site's memorial space beyond the marked graves. An on-site lookup system, accessible via website and QR codes, helps visitors search for specific soldiers' records.",
+          },
+          { type: "heading", text: "Walking the Rows" },
+          {
+            type: "paragraph",
+            text: "Walking the rows is a slow and particular experience - the dates of death cluster in years of heavy American bombing campaigns, and the home provinces on the markers trace the geography of wartime mobilisation from across the country. The site is maintained in good condition, with paved or cemented paths, mown grass, and trees and flowers throughout that keep it from feeling cold or bleak.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Truong Son National Cemetery",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Quảng Trị province holds more war memorials and historical sites per square kilometre than anywhere else in Vietnam - the province was the most intensively bombed area in the country and the site of some of the war's most destructive ground campaigns. Truong Son Cemetery is the largest and most formally significant of these sites, but the broader DMZ landscape repays a full day of exploration.",
+          },
+          {
+            type: "paragraph",
+            text: "The nearby Vinh Moc Tunnels - where an entire village lived underground for years to survive the bombing - provides a civilian counterpoint to the military focus of the cemetery. For travellers with a serious interest in the war's history, staying a night in Đông Hà rather than doing the DMZ as a day trip from Huế allows for a less rushed engagement with the sites.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

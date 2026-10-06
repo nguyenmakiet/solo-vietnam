@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hungTemple: Location = {
   slug: "hung-temple",
   name: "Hùng Temple (Đền Hùng)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["phu-tho"],
   destination: "",
   lat: 21.368643714922786,
@@ -49,14 +49,109 @@ export const hungTemple: Location = {
     "Combine with the Hùng Kings Museum at the base of the hill, which provides historical and archaeological context for the site",
   ],
   content: {
-    intro:
-      "Đền Hùng sits on Nghĩa Lĩnh mountain, 175m high, in Phú Thọ province, roughly 90km northwest of Hanoi - the site traditionally associated with the Hùng Kings, the legendary dynasty said to have founded the Vietnamese nation and ruled through 18 generations. According to the founding myth, the fairy Âu Cơ and the dragon lord Lạc Long Quân were the mother and father of the Vietnamese people; Âu Cơ gave birth to a sac of 100 eggs, and when the couple later separated, she led 50 children into the mountains while Lạc Long Quân led 49 down to the sea, leaving their eldest son to become the first Hùng King, ruling from a capital at Phong Châu. The Hùng Kings occupy a position in Vietnamese national identity that has no direct equivalent elsewhere: they are simultaneously historical ancestors, mythological figures, and the symbolic origin point of Vietnamese civilisation. Every Vietnamese person is considered a descendant of the Hùng Kings, and in December 2012 UNESCO recognised the associated 'Worship of Hùng Kings' tradition as Intangible Cultural Heritage of Humanity. The annual pilgrimage on the 10th day of the third lunar month is among the largest national religious gatherings in the country, and is now a public holiday. The temple complex climbs the hill through a sequence of shrines connected by stone staircases through forest, looping down a separate path on the way back rather than retracing the same route.",
-    howToGetThere:
-      "Đền Hùng is located in Hy Cương commune, Việt Trì city, Phú Thọ province, approximately 90km northwest of Hanoi (phone: 0210 3860 026). By car, follow the Nội Bài-Lào Cai Expressway and exit at IC7 (Việt Trì), or take Highway 2 via Hạc Trì bridge into central Việt Trì. By motorbike, take Highway 32 via Trung Hà bridge toward Việt Trì, since motorbikes aren't permitted on the expressway. By bus, services run roughly every 30 minutes from Hanoi's Mỹ Đình or Giáp Bát stations to Việt Trì. By train, travel from Hanoi station to Việt Trì or Tiên Kiên station, then continue by taxi or local bus route 19. Chauffeured car rental (4 to 45 seats) is also available through local tour operators for those who'd rather not drive themselves.",
-    whatToExpect:
-      "From the main gate (Cổng Đền - a two-tier structure about 8.5m tall, decorated with a twin-dragon motif and the inscription 'Cao Sơn Cảnh Hành'), around 225 steps lead up to Đền Hạ, built roughly between the 17th and 18th centuries (most recently restored in 2011) and consisting of a front hall and rear sanctuary, worshipping the mountain spirit alongside the Hùng King and princesses Tiên Dung and Ngọc Hoa. According to legend, this is where Âu Cơ gave birth to the sac of 100 eggs. Immediately behind Đền Hạ sits Giếng Cổ (also called Giếng Rồng, the 'Dragon Well'), now covered for preservation, where legend says Âu Cơ bathed her children - visitors should not throw coins into it despite what some guides suggest. Nearby, Chùa Thiên Quang (whose name evokes heavenly light shining down on the mortal world) is a Mahayana Buddhist temple holding 32 gilded, lacquered wooden Buddha statues. Continuing up roughly 159-168 stone steps leads to Đền Trung (formal name: Hùng Vương Tổ Miếu), where tradition holds the Hùng Kings met with their lạc hầu and lạc tướng (advisors and generals) to discuss affairs of state. A further roughly 100-102 steps lead to Đền Thượng (formal name: Kính Thiên Lĩnh Điện, 'Heaven-Worship Palace on the Mountain') at the summit, where the Hùng Kings are said to have held ceremonies praying for national peace, and where the main rites of the modern festival take place. To the left of Đền Thượng stands Cột Đá Thề (the Oath Stone) - tied to the legend of Thục Phán, who inherited the throne from the heirless 18th Hùng King and erected the stone to swear that the nation and the Hùng Kings' memory would endure forever; the original was lost over the centuries and later officially reconstructed. The nearby Lăng Hùng Vương (royal tomb) is said to hold the 6th Hùng King, who reportedly asked to be buried atop the mountain so he could watch over the nation's territory forever. From here, the route descends a separate path to Đền Giếng (Well Temple) at the end of the journey - a distinct site from Giếng Cổ above, associated with princesses Tiên Dung and Ngọc Hoa and the Giếng Ngọc (Jade Well), and traditionally where people pray for love and romantic happiness, as opposed to Đền Hạ, associated with prayers for children.",
-    travelTips:
-      "Đền Hùng is one of those sites where understanding the cultural and legendary significance transforms what might otherwise seem like a modest hilltop temple complex into something more interesting. The Hùng Kings narrative - treated by historians as a foundational myth rather than a literal historical record, but deeply held by Vietnamese people across all regions and political backgrounds - functions as the origin story of a nation, and the pilgrimage here is an expression of that identity. The festival itself runs from the 1st to the 10th of the third lunar month: incense-offering ceremonies from the 1st to the 5th (led by local district and commune officials), a memorial ceremony for Lạc Long Quân and offerings to Âu Cơ on the 6th, a palanquin procession of the Hùng Kings on the 7th (one of the festival's most important events), and the largest-scale rites on the 10th itself. Outside the festival period the site is quiet and the forest walk is pleasant - a half-day to full day from Hanoi combined with other stops in Phú Thọ or as a stop on the route north.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hùng Temple (Đền Hùng) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đền Hùng sits on Nghĩa Lĩnh mountain, 175m high, in Phú Thọ province, roughly 90km northwest of Hanoi - the site traditionally associated with the Hùng Kings, the legendary dynasty said to have founded the Vietnamese nation and ruled through 18 generations.",
+          },
+          { type: "heading", text: "The Founding Myth" },
+          {
+            type: "paragraph",
+            text: "According to the founding myth, the fairy Âu Cơ and the dragon lord Lạc Long Quân were the mother and father of the Vietnamese people; Âu Cơ gave birth to a sac of 100 eggs, and when the couple later separated, she led 50 children into the mountains while Lạc Long Quân led 49 down to the sea, leaving their eldest son to become the first Hùng King, ruling from a capital at Phong Châu.",
+          },
+          { type: "heading", text: "The Hùng Kings in Vietnamese Identity" },
+          {
+            type: "paragraph",
+            text: "The Hùng Kings occupy a position in Vietnamese national identity that has no direct equivalent elsewhere: they are simultaneously historical ancestors, mythological figures, and the symbolic origin point of Vietnamese civilisation. Every Vietnamese person is considered a descendant of the Hùng Kings, and in December 2012 UNESCO recognised the associated 'Worship of Hùng Kings' tradition as Intangible Cultural Heritage of Humanity.",
+          },
+          { type: "heading", text: "The Annual Pilgrimage" },
+          {
+            type: "paragraph",
+            text: "The annual pilgrimage on the 10th day of the third lunar month is among the largest national religious gatherings in the country, and is now a public holiday.",
+          },
+          { type: "heading", text: "The Temple Complex" },
+          {
+            type: "paragraph",
+            text: "The temple complex climbs the hill through a sequence of shrines connected by stone staircases through forest, looping down a separate path on the way back rather than retracing the same route.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hùng Temple (Đền Hùng)",
+        blocks: [
+          { type: "heading", text: "By Car or Motorbike" },
+          {
+            type: "paragraph",
+            text: "Đền Hùng is located in Hy Cương commune, Việt Trì city, Phú Thọ province, approximately 90km northwest of Hanoi (phone: 0210 3860 026). By car, follow the Nội Bài-Lào Cai Expressway and exit at IC7 (Việt Trì), or take Highway 2 via Hạc Trì bridge into central Việt Trì. By motorbike, take Highway 32 via Trung Hà bridge toward Việt Trì, since motorbikes aren't permitted on the expressway.",
+          },
+          { type: "heading", text: "Bus, Train and Car Rental" },
+          {
+            type: "paragraph",
+            text: "By bus, services run roughly every 30 minutes from Hanoi's Mỹ Đình or Giáp Bát stations to Việt Trì. By train, travel from Hanoi station to Việt Trì or Tiên Kiên station, then continue by taxi or local bus route 19. Chauffeured car rental (4 to 45 seats) is also available through local tour operators for those who'd rather not drive themselves.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hùng Temple (Đền Hùng)",
+        blocks: [
+          { type: "heading", text: "Main Gate and Đền Hạ" },
+          {
+            type: "paragraph",
+            text: "From the main gate (Cổng Đền - a two-tier structure about 8.5m tall, decorated with a twin-dragon motif and the inscription 'Cao Sơn Cảnh Hành'), around 225 steps lead up to Đền Hạ, built roughly between the 17th and 18th centuries (most recently restored in 2011) and consisting of a front hall and rear sanctuary, worshipping the mountain spirit alongside the Hùng King and princesses Tiên Dung and Ngọc Hoa. According to legend, this is where Âu Cơ gave birth to the sac of 100 eggs.",
+          },
+          { type: "heading", text: "Giếng Cổ and Chùa Thiên Quang" },
+          {
+            type: "paragraph",
+            text: "Immediately behind Đền Hạ sits Giếng Cổ (also called Giếng Rồng, the 'Dragon Well'), now covered for preservation, where legend says Âu Cơ bathed her children - visitors should not throw coins into it despite what some guides suggest. Nearby, Chùa Thiên Quang (whose name evokes heavenly light shining down on the mortal world) is a Mahayana Buddhist temple holding 32 gilded, lacquered wooden Buddha statues.",
+          },
+          { type: "heading", text: "Đền Trung and Đền Thượng" },
+          {
+            type: "paragraph",
+            text: "Continuing up roughly 159-168 stone steps leads to Đền Trung (formal name: Hùng Vương Tổ Miếu), where tradition holds the Hùng Kings met with their lạc hầu and lạc tướng (advisors and generals) to discuss affairs of state. A further roughly 100-102 steps lead to Đền Thượng (formal name: Kính Thiên Lĩnh Điện, 'Heaven-Worship Palace on the Mountain') at the summit, where the Hùng Kings are said to have held ceremonies praying for national peace, and where the main rites of the modern festival take place.",
+          },
+          { type: "heading", text: "The Oath Stone and Royal Tomb" },
+          {
+            type: "paragraph",
+            text: "To the left of Đền Thượng stands Cột Đá Thề (the Oath Stone) - tied to the legend of Thục Phán, who inherited the throne from the heirless 18th Hùng King and erected the stone to swear that the nation and the Hùng Kings' memory would endure forever; the original was lost over the centuries and later officially reconstructed. The nearby Lăng Hùng Vương (royal tomb) is said to hold the 6th Hùng King, who reportedly asked to be buried atop the mountain so he could watch over the nation's territory forever.",
+          },
+          { type: "heading", text: "Đền Giếng" },
+          {
+            type: "paragraph",
+            text: "From here, the route descends a separate path to Đền Giếng (Well Temple) at the end of the journey - a distinct site from Giếng Cổ above, associated with princesses Tiên Dung and Ngọc Hoa and the Giếng Ngọc (Jade Well), and traditionally where people pray for love and romantic happiness, as opposed to Đền Hạ, associated with prayers for children.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hùng Temple (Đền Hùng)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đền Hùng is one of those sites where understanding the cultural and legendary significance transforms what might otherwise seem like a modest hilltop temple complex into something more interesting. The Hùng Kings narrative - treated by historians as a foundational myth rather than a literal historical record, but deeply held by Vietnamese people across all regions and political backgrounds - functions as the origin story of a nation, and the pilgrimage here is an expression of that identity.",
+          },
+          { type: "heading", text: "Festival Dates" },
+          {
+            type: "paragraph",
+            text: "The festival itself runs from the 1st to the 10th of the third lunar month: incense-offering ceremonies from the 1st to the 5th (led by local district and commune officials), a memorial ceremony for Lạc Long Quân and offerings to Âu Cơ on the 6th, a palanquin procession of the Hùng Kings on the 7th (one of the festival's most important events), and the largest-scale rites on the 10th itself.",
+          },
+          { type: "heading", text: "Visiting Outside the Festival" },
+          {
+            type: "paragraph",
+            text: "Outside the festival period the site is quiet and the forest walk is pleasant - a half-day to full day from Hanoi combined with other stops in Phú Thọ or as a stop on the route north.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

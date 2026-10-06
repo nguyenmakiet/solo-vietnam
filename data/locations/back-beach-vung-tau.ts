@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const backBeachVungTau: Location = {
   slug: "back-beach-vung-tau",
   name: "Back Beach Vũng Tàu",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["vung-tau"],
   destination: "",
   lat: 10.345965126464138,
@@ -40,14 +40,97 @@ export const backBeachVungTau: Location = {
     "The high-speed ferry from Bạch Đằng pier in District 1 HCMC to Vũng Tàu takes about 90 minutes and is a far more pleasant arrival than the highway - worth booking the ferry for at least one direction, though double-check current operators and schedules since routes and providers can change",
   ],
   content: {
-    intro:
-      "Back Beach (Bãi Sau, formally Bãi Thùy Vân) is the main beach of Vũng Tàu city and the primary weekend coastal destination for Ho Chi Minh City's population of around 10 million people. It gets its common name from its position on the 'back' side of the city, facing away from the main downtown frontage, in contrast to Bãi Trước (Front Beach) on the western side. The more poetic name Thùy Vân has a couple of competing folk explanations involving clouds - one likens them to a soft silk ribbon drooping toward nearby Nghinh Phong Cape, another describes them at dawn stretching level with the horizon. The beach stretches a little over 8km along the eastern face of the Vũng Tàu peninsula, facing the open East Sea, and is backed by a dense strip of hotels, restaurants, and beach services that has developed over decades into a concentrated resort district. A major urban redevelopment project along Thùy Vân street, begun in late October 2024, has since added flower gardens, tall coconut palms, a completed beachfront walking path, and decorative arches, shifting some of the space from purely fee-based services toward a more open public gathering area - part of why the beachfront feels noticeably more polished than it did a few years ago. Vũng Tàu is approximately 120km from HCMC and accessible by highway in 2 hours or by high-speed ferry in around 90 minutes - close enough for a Saturday-Sunday trip without an overnight, which is how most visitors use it. The beach itself is wide and sandy, lined with umbrellas and sunbeds on weekends, and the water is generally swimmable in the dry season. It's worth being upfront, though, that this isn't a pristine beach: roughly August to November, Vũng Tàu's coastline faces a real, well-documented seasonal problem with water hyacinth and floating debris washing in from the Mekong river system, sometimes in large enough quantities to cover multiple kilometres of shoreline before cleanup crews can clear it - over 5,000 tonnes were removed from local beaches in 2025 alone. Outside that window, and especially in the dry season, the beach is in much better shape, and the seafood restaurants along Thùy Vân street remain a genuine draw in their own right regardless of season.",
-    howToGetThere:
-      "Vũng Tàu is approximately 120km southeast of Ho Chi Minh City. By road via National Highway 51, the journey takes about 2 hours by car or motorbike; a newer expressway option can cut the drive to roughly 1.5-2 hours by car. Coach operators like Hoa Mai and Toàn Thắng run frequent direct services from central Saigon for around 100,000-150,000 VND one-way, taking about 2-2.5 hours. High-speed ferries from Bạch Đằng pier in District 1 HCMC take around 90 minutes and arrive at the Vũng Tàu ferry terminal, from where Back Beach is a short taxi or motorbike ride - it's worth checking current ferry operators and schedules before you go, since these details can change. The ferry option avoids highway traffic and provides a more scenic arrival. Back Beach is on the eastern side of the peninsula - arriving from the bus station, follow signs to Thùy Vân.",
-    whatToExpect:
-      "A developed resort beach with the full infrastructure - sunbeds, umbrellas, beach vendors, lifeguards on duty, and food and drink service on the sand. The water is typically murky near the sand due to wave action but clears somewhat at depth, and water quality and cleanliness vary noticeably by season - the Aug-Nov debris influx is the main thing to know about going in with the right expectations. Weekend mornings are the most pleasant time on the beach before the heat and crowds build. The Thùy Vân street restaurant strip runs the length of the beach and is particularly lively in the evenings. The Giant Jesus statue on Núi Nhỏ hill at the southern end is visible from the beach and worth a separate visit for the panoramic viewpoint it offers over the peninsula. At the far end of Back Beach, Mũi Nghinh Phong (Nghinh Phong Cape) and its 'Cổng Trời' (Heaven's Gate) rock archway are another popular add-on stop, particularly at sunrise or sunset. Back from the sand, Công viên Bãi Sau (Back Beach Park) adds a green public square, walking paths, and a fountain, doubling as a venue for fairs and events beyond just a place to relax. The northern end of Back Beach connects to the quieter Mulberry Beach area.",
-    travelTips:
-      "Back Beach is not a pristine destination - it's a heavily used urban beach resort serving one of the largest metropolitan populations in Vietnam, and its value is exactly that: a well-developed, reliably enjoyable beach day with good food, easy logistics, and the specific energy of a place where a city goes to decompress, rather than an escape from crowds or a guarantee of postcard-clean water. If you're based in HCMC and want a proper beach day without flying or a long journey, Vũng Tàu Back Beach is a solid answer, provided you time it outside the Aug-Nov debris season if a clean beach matters to you. The ferry makes the trip feel like more of an event than the highway drive. For a chiller, sunset-focused alternative in the same city, Bãi Trước (Front Beach) suits that mood better than Back Beach does; for quiet, undeveloped coastline, look further afield to Long Hải, Phước Hải, or Phước Tỉnh south of the city. Always swim within the marked safe zone and follow lifeguard flags rather than trusting how calm the water looks.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Back Beach Vũng Tàu Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Back Beach (Bãi Sau, formally Bãi Thùy Vân) is the main beach of Vũng Tàu city and the primary weekend coastal destination for Ho Chi Minh City's population of around 10 million people.",
+          },
+          { type: "heading", text: "Origin of the Names" },
+          {
+            type: "paragraph",
+            text: "It gets its common name from its position on the 'back' side of the city, facing away from the main downtown frontage, in contrast to Bãi Trước (Front Beach) on the western side. The more poetic name Thùy Vân has a couple of competing folk explanations involving clouds - one likens them to a soft silk ribbon drooping toward nearby Nghinh Phong Cape, another describes them at dawn stretching level with the horizon.",
+          },
+          { type: "heading", text: "The Beach and Thùy Vân Street" },
+          {
+            type: "paragraph",
+            text: "The beach stretches a little over 8km along the eastern face of the Vũng Tàu peninsula, facing the open East Sea, and is backed by a dense strip of hotels, restaurants, and beach services that has developed over decades into a concentrated resort district. A major urban redevelopment project along Thùy Vân street, begun in late October 2024, has since added flower gardens, tall coconut palms, a completed beachfront walking path, and decorative arches, shifting some of the space from purely fee-based services toward a more open public gathering area - part of why the beachfront feels noticeably more polished than it did a few years ago. Vũng Tàu is approximately 120km from HCMC and accessible by highway in 2 hours or by high-speed ferry in around 90 minutes - close enough for a Saturday-Sunday trip without an overnight, which is how most visitors use it.",
+          },
+          { type: "heading", text: "Beach Conditions Through the Year" },
+          {
+            type: "paragraph",
+            text: "The beach itself is wide and sandy, lined with umbrellas and sunbeds on weekends, and the water is generally swimmable in the dry season. It's worth being upfront, though, that this isn't a pristine beach: roughly August to November, Vũng Tàu's coastline faces a real, well-documented seasonal problem with water hyacinth and floating debris washing in from the Mekong river system, sometimes in large enough quantities to cover multiple kilometres of shoreline before cleanup crews can clear it - over 5,000 tonnes were removed from local beaches in 2025 alone. Outside that window, and especially in the dry season, the beach is in much better shape, and the seafood restaurants along Thùy Vân street remain a genuine draw in their own right regardless of season.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Back Beach Vũng Tàu",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Vũng Tàu is approximately 120km southeast of Ho Chi Minh City.",
+          },
+          { type: "heading", text: "By Road and Coach" },
+          {
+            type: "paragraph",
+            text: "By road via National Highway 51, the journey takes about 2 hours by car or motorbike; a newer expressway option can cut the drive to roughly 1.5-2 hours by car. Coach operators like Hoa Mai and Toàn Thắng run frequent direct services from central Saigon for around 100,000-150,000 VND one-way, taking about 2-2.5 hours.",
+          },
+          { type: "heading", text: "By High-Speed Ferry" },
+          {
+            type: "paragraph",
+            text: "High-speed ferries from Bạch Đằng pier in District 1 HCMC take around 90 minutes and arrive at the Vũng Tàu ferry terminal, from where Back Beach is a short taxi or motorbike ride - it's worth checking current ferry operators and schedules before you go, since these details can change. The ferry option avoids highway traffic and provides a more scenic arrival.",
+          },
+          { type: "heading", text: "Finding the Beach" },
+          {
+            type: "paragraph",
+            text: "Back Beach is on the eastern side of the peninsula - arriving from the bus station, follow signs to Thùy Vân.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Back Beach Vũng Tàu",
+        blocks: [
+          { type: "heading", text: "Beach Facilities and Water" },
+          {
+            type: "paragraph",
+            text: "A developed resort beach with the full infrastructure - sunbeds, umbrellas, beach vendors, lifeguards on duty, and food and drink service on the sand. The water is typically murky near the sand due to wave action but clears somewhat at depth, and water quality and cleanliness vary noticeably by season - the Aug-Nov debris influx is the main thing to know about going in with the right expectations. Weekend mornings are the most pleasant time on the beach before the heat and crowds build.",
+          },
+          { type: "heading", text: "Thùy Vân Street Restaurants" },
+          {
+            type: "paragraph",
+            text: "The Thùy Vân street restaurant strip runs the length of the beach and is particularly lively in the evenings.",
+          },
+          { type: "heading", text: "Nearby Sights Along the Beach" },
+          {
+            type: "paragraph",
+            text: "The Giant Jesus statue on Núi Nhỏ hill at the southern end is visible from the beach and worth a separate visit for the panoramic viewpoint it offers over the peninsula. At the far end of Back Beach, Mũi Nghinh Phong (Nghinh Phong Cape) and its 'Cổng Trời' (Heaven's Gate) rock archway are another popular add-on stop, particularly at sunrise or sunset. Back from the sand, Công viên Bãi Sau (Back Beach Park) adds a green public square, walking paths, and a fountain, doubling as a venue for fairs and events beyond just a place to relax. The northern end of Back Beach connects to the quieter Mulberry Beach area.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Back Beach Vũng Tàu",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Back Beach is not a pristine destination - it's a heavily used urban beach resort serving one of the largest metropolitan populations in Vietnam, and its value is exactly that: a well-developed, reliably enjoyable beach day with good food, easy logistics, and the specific energy of a place where a city goes to decompress, rather than an escape from crowds or a guarantee of postcard-clean water. If you're based in HCMC and want a proper beach day without flying or a long journey, Vũng Tàu Back Beach is a solid answer, provided you time it outside the Aug-Nov debris season if a clean beach matters to you. The ferry makes the trip feel like more of an event than the highway drive.",
+          },
+          {
+            type: "paragraph",
+            text: "For a chiller, sunset-focused alternative in the same city, Bãi Trước (Front Beach) suits that mood better than Back Beach does; for quiet, undeveloped coastline, look further afield to Long Hải, Phước Hải, or Phước Tỉnh south of the city. Always swim within the marked safe zone and follow lifeguard flags rather than trusting how calm the water looks.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

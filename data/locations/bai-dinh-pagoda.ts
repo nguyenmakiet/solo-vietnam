@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baiDinhPagoda: Location = {
   slug: "bai-dinh-pagoda",
   name: "Bái Đính Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.268192723940388,
@@ -52,14 +52,84 @@ export const baiDinhPagoda: Location = {
     "Allow at least 3-4 hours (half a day) to see the complex properly, including the ancient pagoda.",
   ],
   content: {
-    intro:
-      "Bái Đính Pagoda complex is the largest Buddhist complex in Vietnam and one of the largest in Southeast Asia - a hilltop development of temples, bell towers, corridors, and shrines on a limestone ridge above Gia Sinh village, 15km from Ninh Bình city and 95km from Hanoi. The total project area, including landscaped grounds, lakes, and parking, covers 539 hectares, though the area visitors actually walk through is far smaller. The name is Hán-Việt for 'paying respects at Đính Mountain'. The complex divides into two distinct parts: the ancient pagoda (Bái Đính Cổ, 27 hectares), founded in the 11th century by the monk Lý Quốc Sư Nguyễn Minh Không - who, according to legend, discovered the mountain's caves while searching for medicinal herbs to treat Emperor Lý Thần Tông and built a temple to worship Buddha and prepare remedies for local people - and the modern complex (80 hectares), constructed from 2003 and inaugurated in phases from 2010. Although often described simply as 'Vietnam's largest pagoda', most of what visitors actually see today is 21st-century construction rather than an ancient monument - only the smaller, older section dates back centuries. The modern complex holds multiple Vietnamese records: the largest bronze Shakyamuni Buddha (100 tonnes, 10 metres), a double corridor of 500 uniquely carved arhat statues stretching 3km in total (about 1.5km per side), and the largest bronze bell (36 tonnes). The ancient pagoda, about 800m south of the new complex, retains its 11th-century character: a shrine to Cao Sơn (one of the four guardian deities of old Hoa Lư), a temple to Nguyễn Minh Không himself (worshipped as 'Đức Thánh Nguyễn'), the Bright Cave and Dark Cave with their own legends and stalactite formations, and Giếng Ngọc (Jade Well) - officially Vietnam's largest pagoda well, 30m across and 6m deep, never running dry. The ancient pagoda was recognised as a national historical-cultural-revolutionary relic in 1977. Locals often recommend the ancient pagoda over the new complex for visitors seeking a genuinely spiritual rather than monumental experience - the new pagoda's scale draws the crowds, but the older site retains a quieter, more intimate atmosphere.",
-    howToGetThere:
-      "Bái Đính Pagoda is 95km from Hanoi and 15km west of Ninh Bình city. From Hanoi by car: CT01 expressway, about 1.5 hours. By motorbike: QL1A then QL21C. By bus: services from Giáp Bát, Mỹ Đình, or Nước Ngầm stations in Hanoi, 60,000-100,000 VND one-way, dropping at Ninh Bình city centre or Bái Đính bus station. Direct limousine services run from Hanoi straight to the pagoda for around 200,000 VND (2026 pricing). From Ninh Bình city/Hoa Lư: about 20-25 minutes by motorbike. The complex is 5km from Tràng An, connected by a scenic rural road - commonly combined in a single day trip, with combo tickets (390,000 VND) covering both sites plus the tower.",
-    whatToExpect:
-      "The modern complex is built around scale: the bell tower rises 27 metres, the Quan Âm (Guanyin) statue reaches 9 metres, and a double corridor stretches 3km in total (about 1.5km per side), lined with 500 individually carved stone statues - not duplicates, each with its own unique facial expression, posture, and gesture. Main halls include the Jade Buddha hall, the Triple Buddha hall housing the 100-tonne bronze Shakyamuni, and the bell tower itself, with views north over the Tràng An karst landscape and Ninh Bình's river plain. The experience changes noticeably as you move from this monumental modern complex into the older cave temples, where the atmosphere becomes quieter and more intimate. The ancient pagoda, 800m south, requires climbing 300 stone steps through a Tam Quan gate partway up the mountain to reach a fork: Hang Sáng (Bright Cave) housing Buddha and Cao Sơn deity worship, and Động Tối (Dark Cave) with 7 interconnected chambers dedicated to Mother Goddess worship, stalactites that ring like stone chimes when struck, and a small spring pool (Ao Tiên) that never dries up. Giếng Ngọc, the record-holding well, sits near the ancient pagoda's base.",
-    travelTips:
-      "Bái Đính works on two registers simultaneously, and knowing which one you're after changes the visit. For scale, modern ambition, and a sense of Vietnamese Buddhism at its most monumental, the new complex delivers - it's one of the busiest pilgrimage sites in northern Vietnam, especially during the Jan-Mar lunar festival season. For an intimate, genuinely old, and quieter experience, prioritise the ancient pagoda - most visitors skip it simply because it sits outside the main complex grounds, which is a mistake. On choosing the electric cart package: don't default to the most expensive option out of reluctance to walk - the basic 150,000 VND tier covers most needs, and walking the grounds is arguably part of the intended pilgrimage experience rather than an inconvenience to engineer around. Visit before 11 AM or after 3 PM regardless of season, and allow at least 3-4 hours for a proper visit covering both the new and ancient sections.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bái Đính Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bái Đính Pagoda complex is the largest Buddhist complex in Vietnam and one of the largest in Southeast Asia - a hilltop development of temples, bell towers, corridors, and shrines on a limestone ridge above Gia Sinh village, 15km from Ninh Bình city and 95km from Hanoi. The total project area, including landscaped grounds, lakes, and parking, covers 539 hectares, though the area visitors actually walk through is far smaller. The name is Hán-Việt for 'paying respects at Đính Mountain'.",
+          },
+          { type: "heading", text: "Ancient Pagoda and Modern Complex" },
+          {
+            type: "paragraph",
+            text: "The complex divides into two distinct parts: the ancient pagoda (Bái Đính Cổ, 27 hectares), founded in the 11th century by the monk Lý Quốc Sư Nguyễn Minh Không - who, according to legend, discovered the mountain's caves while searching for medicinal herbs to treat Emperor Lý Thần Tông and built a temple to worship Buddha and prepare remedies for local people - and the modern complex (80 hectares), constructed from 2003 and inaugurated in phases from 2010. Although often described simply as 'Vietnam's largest pagoda', most of what visitors actually see today is 21st-century construction rather than an ancient monument - only the smaller, older section dates back centuries.",
+          },
+          { type: "heading", text: "Vietnamese Records" },
+          {
+            type: "paragraph",
+            text: "The modern complex holds multiple Vietnamese records: the largest bronze Shakyamuni Buddha (100 tonnes, 10 metres), a double corridor of 500 uniquely carved arhat statues stretching 3km in total (about 1.5km per side), and the largest bronze bell (36 tonnes).",
+          },
+          { type: "heading", text: "The Ancient Pagoda" },
+          {
+            type: "paragraph",
+            text: "The ancient pagoda, about 800m south of the new complex, retains its 11th-century character: a shrine to Cao Sơn (one of the four guardian deities of old Hoa Lư), a temple to Nguyễn Minh Không himself (worshipped as 'Đức Thánh Nguyễn'), the Bright Cave and Dark Cave with their own legends and stalactite formations, and Giếng Ngọc (Jade Well) - officially Vietnam's largest pagoda well, 30m across and 6m deep, never running dry. The ancient pagoda was recognised as a national historical-cultural-revolutionary relic in 1977. Locals often recommend the ancient pagoda over the new complex for visitors seeking a genuinely spiritual rather than monumental experience - the new pagoda's scale draws the crowds, but the older site retains a quieter, more intimate atmosphere.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bái Đính Pagoda",
+        blocks: [
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "Bái Đính Pagoda is 95km from Hanoi and 15km west of Ninh Bình city. From Hanoi by car: CT01 expressway, about 1.5 hours. By motorbike: QL1A then QL21C. By bus: services from Giáp Bát, Mỹ Đình, or Nước Ngầm stations in Hanoi, 60,000-100,000 VND one-way, dropping at Ninh Bình city centre or Bái Đính bus station. Direct limousine services run from Hanoi straight to the pagoda for around 200,000 VND (2026 pricing).",
+          },
+          { type: "heading", text: "From Ninh Bình and Tràng An" },
+          {
+            type: "paragraph",
+            text: "From Ninh Bình city/Hoa Lư: about 20-25 minutes by motorbike. The complex is 5km from Tràng An, connected by a scenic rural road - commonly combined in a single day trip, with combo tickets (390,000 VND) covering both sites plus the tower.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bái Đính Pagoda",
+        blocks: [
+          { type: "heading", text: "The Modern Complex" },
+          {
+            type: "paragraph",
+            text: "The modern complex is built around scale: the bell tower rises 27 metres, the Quan Âm (Guanyin) statue reaches 9 metres, and a double corridor stretches 3km in total (about 1.5km per side), lined with 500 individually carved stone statues - not duplicates, each with its own unique facial expression, posture, and gesture. Main halls include the Jade Buddha hall, the Triple Buddha hall housing the 100-tonne bronze Shakyamuni, and the bell tower itself, with views north over the Tràng An karst landscape and Ninh Bình's river plain. The experience changes noticeably as you move from this monumental modern complex into the older cave temples, where the atmosphere becomes quieter and more intimate.",
+          },
+          { type: "heading", text: "The Ancient Pagoda and Giếng Ngọc" },
+          {
+            type: "paragraph",
+            text: "The ancient pagoda, 800m south, requires climbing 300 stone steps through a Tam Quan gate partway up the mountain to reach a fork: Hang Sáng (Bright Cave) housing Buddha and Cao Sơn deity worship, and Động Tối (Dark Cave) with 7 interconnected chambers dedicated to Mother Goddess worship, stalactites that ring like stone chimes when struck, and a small spring pool (Ao Tiên) that never dries up. Giếng Ngọc, the record-holding well, sits near the ancient pagoda's base.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bái Đính Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bái Đính works on two registers simultaneously, and knowing which one you're after changes the visit. For scale, modern ambition, and a sense of Vietnamese Buddhism at its most monumental, the new complex delivers - it's one of the busiest pilgrimage sites in northern Vietnam, especially during the Jan-Mar lunar festival season. For an intimate, genuinely old, and quieter experience, prioritise the ancient pagoda - most visitors skip it simply because it sits outside the main complex grounds, which is a mistake.",
+          },
+          { type: "heading", text: "Electric Carts and Timing" },
+          {
+            type: "paragraph",
+            text: "On choosing the electric cart package: don't default to the most expensive option out of reluctance to walk - the basic 150,000 VND tier covers most needs, and walking the grounds is arguably part of the intended pilgrimage experience rather than an inconvenience to engineer around. Visit before 11 AM or after 3 PM regardless of season, and allow at least 3-4 hours for a proper visit covering both the new and ancient sections.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

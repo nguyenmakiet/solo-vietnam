@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catTienNationalPark: Location = {
   slug: "cat-tien-national-park",
   name: "Cát Tiên National Park",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["dong-nai"],
   destination: "",
   lat: 11.424517877270743,
@@ -53,14 +53,99 @@ export const catTienNationalPark: Location = {
     "Accommodation: two zones - park center and Bàu Sấu (14km away). 400,000-1,600,000 VND/night for 2-4 person rooms; 8-person dorm ~800,000 VND. Breakfast and entrance fees not included. 20% discount Jun-Oct. WiFi available in rooms.",
   ],
   content: {
-    intro:
-      "Cát Tiên National Park protects approximately 71,920 hectares of lowland rainforest - larger than Singapore - across the border zone of Đồng Nai, Lâm Đồng, and Bình Phước provinces, 160km north of Ho Chi Minh City. Established January 13, 1992 by merging three separate reserves (Nam Cát Tiên forest reserve, Tây Cát Tiên nature reserve, and the Cát Lộc rhino sanctuary), it is recognised by UNESCO as a Biosphere Reserve and is the most ecologically significant protected area within practical range of Saigon. The numbers are substantial: over 1,610 plant species, 1,568 animal species, 300+ bird species (nearly half of all bird species recorded in Vietnam), 450+ butterfly species (over half of Vietnam's total), 80% natural forest cover, and 90km of the Đồng Nai River flowing through the park. Forty animal species and 34 plant species here are globally threatened. The Cát Lộc sector of the park carries a particularly sobering history: in 1988, a small population of Javan rhinoceros was rediscovered here after the species was believed extinct on mainland Asia - the only such population left on the continent. Despite conservation efforts through the 1990s and 2000s, the last individual was poached for its horn and found dead in April 2010, confirmed by WWF genetic analysis to be the final rhino in Vietnam. The extinction marked the end of the species on mainland Asia entirely, leaving only one small population on the island of Java, Indonesia. It remains one of the most cited cautionary stories in Southeast Asian conservation - a reminder of what protection failure costs, and part of why Cát Tiên's current conservation programmes (gibbon and crocodile reintroduction, the primate rescue centre, anti-poaching patrols) are taken so seriously today. In 2025, the park won 4 awards at the AEN International Ecotourism Awards, including the top prize for Biodiversity Conservation - confirming its position as one of Asia's leading sustainable ecotourism destinations. The Dao Tien Endangered Primate Species Centre, on an island in the Đồng Nai River, runs a rehabilitation programme for confiscated and injured primates that provides one of the most intimate wildlife encounters in Vietnam.",
-    howToGetThere:
-      "By car or motorbike from HCMC: Xa lộ Hà Nội → QL1A toward Đồng Nai → Dầu Giây junction (67km) → left onto QL20 → 58km to Tà Lài junction → left, 24km to the park entrance. Total around 3 hours. By bus: Xe Kim Hoàn runs directly from Bến xe Miền Đông mới to the park gate (110,000 VND, no transfer). Phương Trang or Thành Bưởi (HCMC-Đà Lạt route, 80,000-120,000 VND) drop passengers at Tà Lài junction or Tân Phú station, 24km from the gate - continue by Grab, taxi (~150,000-200,000 VND), or the park's own shuttle service (book ahead: 0251 366 9227). A ferry crossing connects the highway-side car park to park headquarters on the opposite bank of the Đồng Nai River.",
-    whatToExpect:
-      "Six trekking routes cover the accessible forest, passing landmarks like the 400-year-old Cây Tung tree, Gõ Bác Đồng, Thác Trời waterfall, and Hồ Cây Si Trăm Thân (the only swimming spot in the park). Bàu Sấu (Crocodile Lake) is the signature activity: 9km by vehicle/bike plus 5km on foot through primary forest, about 7 hours round trip, leading to a Ramsar-listed wetland with 60+ reintroduced Siamese crocodiles. The Dao Tien Primate Centre requires a boat trip to observe gibbons and langurs in rehabilitation. Night safari (145,000 VND, up to 12 trips nightly) covers a 12km loop spotting deer, civets, and occasionally gaur or sambar. The Bear Rescue Center and Natural History Museum (20-30 min, family-friendly) house rehabilitated bears. The Thánh Địa Cát Tiên archaeological site - Hindu temple ruins called 'the Mỹ Sơn of the South' - sits an hour away in the Tây Cát Tiên zone. Tà Lài Community Village offers Mạ and Stiêng ethnic cultural exchange in the buffer zone.",
-    travelTips:
-      "Cát Tiên is the clearest answer to where to see serious wildlife near Ho Chi Minh City. Budget for at least 2 nights to cover the highlights properly: Day 1 - arrive, center trail trek, night safari. Day 2 - dawn birdwatching, full-day Bàu Sấu trek. Day 3 (optional) - cycle to Tà Lài village, kayaking on the Đồng Nai River (confirm availability with park management), stop at Trọng Đức Cacao Farm (30km away) on the return to HCMC. Self-guided 2D1N budget: roughly 1,000,000 VND (basic/camping) to 1,500,000-2,000,000 VND (comfortable) per person, covering transport, entrance, accommodation, food, night safari, and bicycle/guide fees. Book accommodation, night safari, and the Bàu Sấu trek in advance, especially for weekends and holidays.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cát Tiên National Park Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cát Tiên National Park protects approximately 71,920 hectares of lowland rainforest - larger than Singapore - across the border zone of Đồng Nai, Lâm Đồng, and Bình Phước provinces, 160km north of Ho Chi Minh City. Established January 13, 1992 by merging three separate reserves (Nam Cát Tiên forest reserve, Tây Cát Tiên nature reserve, and the Cát Lộc rhino sanctuary), it is recognised by UNESCO as a Biosphere Reserve and is the most ecologically significant protected area within practical range of Saigon.",
+          },
+          { type: "heading", text: "Biodiversity" },
+          {
+            type: "paragraph",
+            text: "The numbers are substantial: over 1,610 plant species, 1,568 animal species, 300+ bird species (nearly half of all bird species recorded in Vietnam), 450+ butterfly species (over half of Vietnam's total), 80% natural forest cover, and 90km of the Đồng Nai River flowing through the park. Forty animal species and 34 plant species here are globally threatened.",
+          },
+          { type: "heading", text: "The Javan Rhino Extinction" },
+          {
+            type: "paragraph",
+            text: "The Cát Lộc sector of the park carries a particularly sobering history: in 1988, a small population of Javan rhinoceros was rediscovered here after the species was believed extinct on mainland Asia - the only such population left on the continent. Despite conservation efforts through the 1990s and 2000s, the last individual was poached for its horn and found dead in April 2010, confirmed by WWF genetic analysis to be the final rhino in Vietnam. The extinction marked the end of the species on mainland Asia entirely, leaving only one small population on the island of Java, Indonesia. It remains one of the most cited cautionary stories in Southeast Asian conservation - a reminder of what protection failure costs, and part of why Cát Tiên's current conservation programmes (gibbon and crocodile reintroduction, the primate rescue centre, anti-poaching patrols) are taken so seriously today.",
+          },
+          { type: "heading", text: "Awards and the Dao Tien Primate Centre" },
+          {
+            type: "paragraph",
+            text: "In 2025, the park won 4 awards at the AEN International Ecotourism Awards, including the top prize for Biodiversity Conservation - confirming its position as one of Asia's leading sustainable ecotourism destinations. The Dao Tien Endangered Primate Species Centre, on an island in the Đồng Nai River, runs a rehabilitation programme for confiscated and injured primates that provides one of the most intimate wildlife encounters in Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cát Tiên National Park",
+        blocks: [
+          { type: "heading", text: "By Car or Motorbike from HCMC" },
+          {
+            type: "paragraph",
+            text: "By car or motorbike from HCMC: Xa lộ Hà Nội → QL1A toward Đồng Nai → Dầu Giây junction (67km) → left onto QL20 → 58km to Tà Lài junction → left, 24km to the park entrance. Total around 3 hours.",
+          },
+          { type: "heading", text: "By Bus" },
+          {
+            type: "paragraph",
+            text: "By bus: Xe Kim Hoàn runs directly from Bến xe Miền Đông mới to the park gate (110,000 VND, no transfer). Phương Trang or Thành Bưởi (HCMC-Đà Lạt route, 80,000-120,000 VND) drop passengers at Tà Lài junction or Tân Phú station, 24km from the gate - continue by Grab, taxi (~150,000-200,000 VND), or the park's own shuttle service (book ahead: 0251 366 9227).",
+          },
+          { type: "heading", text: "Ferry to Park Headquarters" },
+          {
+            type: "paragraph",
+            text: "A ferry crossing connects the highway-side car park to park headquarters on the opposite bank of the Đồng Nai River.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cát Tiên National Park",
+        blocks: [
+          { type: "heading", text: "Trekking Routes and Bàu Sấu" },
+          {
+            type: "paragraph",
+            text: "Six trekking routes cover the accessible forest, passing landmarks like the 400-year-old Cây Tung tree, Gõ Bác Đồng, Thác Trời waterfall, and Hồ Cây Si Trăm Thân (the only swimming spot in the park). Bàu Sấu (Crocodile Lake) is the signature activity: 9km by vehicle/bike plus 5km on foot through primary forest, about 7 hours round trip, leading to a Ramsar-listed wetland with 60+ reintroduced Siamese crocodiles.",
+          },
+          { type: "heading", text: "Wildlife Centres and Night Safari" },
+          {
+            type: "paragraph",
+            text: "The Dao Tien Primate Centre requires a boat trip to observe gibbons and langurs in rehabilitation. Night safari (145,000 VND, up to 12 trips nightly) covers a 12km loop spotting deer, civets, and occasionally gaur or sambar. The Bear Rescue Center and Natural History Museum (20-30 min, family-friendly) house rehabilitated bears.",
+          },
+          { type: "heading", text: "Archaeology and Village Culture" },
+          {
+            type: "paragraph",
+            text: "The Thánh Địa Cát Tiên archaeological site - Hindu temple ruins called 'the Mỹ Sơn of the South' - sits an hour away in the Tây Cát Tiên zone. Tà Lài Community Village offers Mạ and Stiêng ethnic cultural exchange in the buffer zone.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cát Tiên National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cát Tiên is the clearest answer to where to see serious wildlife near Ho Chi Minh City.",
+          },
+          { type: "heading", text: "A 3-Day Plan" },
+          {
+            type: "paragraph",
+            text: "Budget for at least 2 nights to cover the highlights properly: Day 1 - arrive, center trail trek, night safari. Day 2 - dawn birdwatching, full-day Bàu Sấu trek. Day 3 (optional) - cycle to Tà Lài village, kayaking on the Đồng Nai River (confirm availability with park management), stop at Trọng Đức Cacao Farm (30km away) on the return to HCMC.",
+          },
+          { type: "heading", text: "Budget and Booking" },
+          {
+            type: "paragraph",
+            text: "Self-guided 2D1N budget: roughly 1,000,000 VND (basic/camping) to 1,500,000-2,000,000 VND (comfortable) per person, covering transport, entrance, accommodation, food, night safari, and bicycle/guide fees. Book accommodation, night safari, and the Bàu Sấu trek in advance, especially for weekends and holidays.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

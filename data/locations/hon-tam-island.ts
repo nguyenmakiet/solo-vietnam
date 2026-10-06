@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const honTamIsland: Location = {
   slug: "hon-tam-island",
   name: "Hòn Tằm Island",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.177120449066654,
@@ -39,14 +39,89 @@ export const honTamIsland: Location = {
     "If you're prone to seasickness, bring motion sickness medication for the boat crossing",
   ],
   content: {
-    intro:
-      "Hòn Tằm - Silkworm Island - is a roughly 90-110 hectare island (estimates vary by source) about 7km off the coast of Nha Trang, developed as a private beach resort under the MerPerle Hòn Tằm brand, with a 5-star resort offering overnight stays in beachfront bungalows and villas for those who want to extend beyond a day trip. It's the most developed of the bay's islands, effectively split into two character areas - Zone A, centred on the mud bath complex, and Zone B, centred on beach and water activities - though as of 2026 tickets are sold as bundled whole-island packages rather than separate zone-specific tickets, so check what a given package actually includes. The main beach runs over 1km of sand with the usual resort water-sports lineup, while the mud bath side is marketed as the largest hot mineral mud bath complex on any island in Vietnam - a terraced hillside facility with individual soaking tubs set under trees, an infinity mineral pool, a jacuzzi, and water massage therapy. Beyond the beach and mud baths, the island also holds Hoàng Hoa Thôn, a small cluster of five houses said to be over 100 years old, and a Seawalker underwater walking activity that lets visitors see the coral without diving certification. The island has two main beaches: the western beach facing Nha Trang city, with the resort facilities, water sports, and restaurant strip; and the quieter eastern beach facing the open sea, reachable by a short walk across the island. The waters around the island are calm enough to support pearl farming nearby, and are part of the Nha Trang Marine Protected Area - the same zone as Hòn Mun - with coral snorkeling available from the rocky headlands, though the quality is secondary to Hòn Mun's dedicated dive sites. Hòn Tằm draws a genuine mix of independent travellers and large tour groups (Chinese and domestic Vietnamese tour groups are both common, typically arriving from around 9-10 AM), which shapes the on-the-ground experience as much as the beach or mud baths do - this is a polished, sometimes crowded resort day rather than a quiet island escape.",
-    howToGetThere:
-      "Since 2024, speedboats to Hòn Tằm depart from the new Nha Trang Tourist Port (also called the Vinpearl port), near the former Cầu Đá pier site in Vĩnh Nguyên ward, southern Nha Trang - about 15-20 minutes by taxi or Grab from central Nha Trang. The crossing itself takes roughly 7-10 minutes by speedboat. Boats run frequently through the day, roughly hourly or more often, from around 8 AM, with the last return crossing for day visitors around 4:30-5 PM. Arrive at the port 15-20 minutes before your scheduled departure to check in. Day tickets, including the boat transfer, are best booked online in advance (ideally at least a day ahead, especially on weekends or holidays) to skip the paper-ticket queue at the port, though tickets are also available at the port ticket office or through a travel agency.",
-    whatToExpect:
-      "The main western beach has a long sandy shore with sunbeds, umbrellas, beach bars, a swimming pool, and water sports equipment - jet skis, banana boats, kayaks, and snorkeling gear available for hire. The beach is clean and the water calm in the dry season, though it fills up with sunbeds and activity noise (jet skis in particular) as the morning boats arrive. The mud bath complex is a separate, genuinely distinct experience - warm mineral mud soaks, an infinity pool, and water massage in a landscaped hillside setting, popular enough with visitors that some come specifically for this rather than the beach. Resort restaurants serve buffet or set-menu lunches at prices most visitors find high for what's offered. The eastern beach is accessible by a roughly 15-minute walk across the island - less developed, facing the open sea, and noticeably quieter than the main beach. Snorkeling from the rocky points at either end of the western beach gives access to some coral and reef fish, though this isn't the island's strong suit - the Seawalker activity, which lets visitors walk along the seabed in a diving helmet without certification, is a popular alternative way to see the coral up close. Hoàng Hoa Thôn, a small cluster of five houses said to be over 100 years old, is a quieter cultural corner of the island worth a short detour, and the pier itself has become something of a photo spot in its own right.",
-    travelTips:
-      "Hòn Tằm suits travellers who want a full-service beach and spa day with easy logistics more than those seeking an untouched island escape - the short boat transfer, developed beach, and now-headline mud bath complex make it one of the most effortless resort-island days available from Nha Trang, provided you go in accepting the crowds, the gated resort segments, and the inflated food prices as part of the deal. It's a reasonable fit for couples, families, and travellers who specifically want the mud bath experience; it's a weaker choice for anyone prioritising quiet, uncrowded scenery or serious snorkeling, both of which are better found elsewhere in the bay - Hòn Mun for reef quality, or a quieter island altogether if crowds are the main concern. For travellers prioritising snorkeling or diving quality specifically, Hòn Mun's marine reserve remains the better destination, and the two islands can be combined on a single boat tour.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hòn Tằm Island Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hòn Tằm - Silkworm Island - is a roughly 90-110 hectare island (estimates vary by source) about 7km off the coast of Nha Trang, developed as a private beach resort under the MerPerle Hòn Tằm brand, with a 5-star resort offering overnight stays in beachfront bungalows and villas for those who want to extend beyond a day trip.",
+          },
+          { type: "heading", text: "Beach Zone and Mud Bath Zone" },
+          {
+            type: "paragraph",
+            text: "It's the most developed of the bay's islands, effectively split into two character areas - Zone A, centred on the mud bath complex, and Zone B, centred on beach and water activities - though as of 2026 tickets are sold as bundled whole-island packages rather than separate zone-specific tickets, so check what a given package actually includes. The main beach runs over 1km of sand with the usual resort water-sports lineup, while the mud bath side is marketed as the largest hot mineral mud bath complex on any island in Vietnam - a terraced hillside facility with individual soaking tubs set under trees, an infinity mineral pool, a jacuzzi, and water massage therapy.",
+          },
+          { type: "heading", text: "Hoàng Hoa Thôn and the Two Beaches" },
+          {
+            type: "paragraph",
+            text: "Beyond the beach and mud baths, the island also holds Hoàng Hoa Thôn, a small cluster of five houses said to be over 100 years old, and a Seawalker underwater walking activity that lets visitors see the coral without diving certification. The island has two main beaches: the western beach facing Nha Trang city, with the resort facilities, water sports, and restaurant strip; and the quieter eastern beach facing the open sea, reachable by a short walk across the island.",
+          },
+          { type: "heading", text: "Waters and Visitors" },
+          {
+            type: "paragraph",
+            text: "The waters around the island are calm enough to support pearl farming nearby, and are part of the Nha Trang Marine Protected Area - the same zone as Hòn Mun - with coral snorkeling available from the rocky headlands, though the quality is secondary to Hòn Mun's dedicated dive sites. Hòn Tằm draws a genuine mix of independent travellers and large tour groups (Chinese and domestic Vietnamese tour groups are both common, typically arriving from around 9-10 AM), which shapes the on-the-ground experience as much as the beach or mud baths do - this is a polished, sometimes crowded resort day rather than a quiet island escape.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hòn Tằm Island",
+        blocks: [
+          { type: "heading", text: "Speedboats from Nha Trang Tourist Port" },
+          {
+            type: "paragraph",
+            text: "Since 2024, speedboats to Hòn Tằm depart from the new Nha Trang Tourist Port (also called the Vinpearl port), near the former Cầu Đá pier site in Vĩnh Nguyên ward, southern Nha Trang - about 15-20 minutes by taxi or Grab from central Nha Trang. The crossing itself takes roughly 7-10 minutes by speedboat. Boats run frequently through the day, roughly hourly or more often, from around 8 AM, with the last return crossing for day visitors around 4:30-5 PM. Arrive at the port 15-20 minutes before your scheduled departure to check in.",
+          },
+          { type: "heading", text: "Booking Tickets" },
+          {
+            type: "paragraph",
+            text: "Day tickets, including the boat transfer, are best booked online in advance (ideally at least a day ahead, especially on weekends or holidays) to skip the paper-ticket queue at the port, though tickets are also available at the port ticket office or through a travel agency.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hòn Tằm Island",
+        blocks: [
+          { type: "heading", text: "The Western Beach" },
+          {
+            type: "paragraph",
+            text: "The main western beach has a long sandy shore with sunbeds, umbrellas, beach bars, a swimming pool, and water sports equipment - jet skis, banana boats, kayaks, and snorkeling gear available for hire. The beach is clean and the water calm in the dry season, though it fills up with sunbeds and activity noise (jet skis in particular) as the morning boats arrive.",
+          },
+          { type: "heading", text: "The Mud Bath Complex" },
+          {
+            type: "paragraph",
+            text: "The mud bath complex is a separate, genuinely distinct experience - warm mineral mud soaks, an infinity pool, and water massage in a landscaped hillside setting, popular enough with visitors that some come specifically for this rather than the beach.",
+          },
+          { type: "heading", text: "Food" },
+          {
+            type: "paragraph",
+            text: "Resort restaurants serve buffet or set-menu lunches at prices most visitors find high for what's offered.",
+          },
+          { type: "heading", text: "The Eastern Beach, Snorkeling and Hoàng Hoa Thôn" },
+          {
+            type: "paragraph",
+            text: "The eastern beach is accessible by a roughly 15-minute walk across the island - less developed, facing the open sea, and noticeably quieter than the main beach. Snorkeling from the rocky points at either end of the western beach gives access to some coral and reef fish, though this isn't the island's strong suit - the Seawalker activity, which lets visitors walk along the seabed in a diving helmet without certification, is a popular alternative way to see the coral up close. Hoàng Hoa Thôn, a small cluster of five houses said to be over 100 years old, is a quieter cultural corner of the island worth a short detour, and the pier itself has become something of a photo spot in its own right.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hòn Tằm Island",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hòn Tằm suits travellers who want a full-service beach and spa day with easy logistics more than those seeking an untouched island escape - the short boat transfer, developed beach, and now-headline mud bath complex make it one of the most effortless resort-island days available from Nha Trang, provided you go in accepting the crowds, the gated resort segments, and the inflated food prices as part of the deal. It's a reasonable fit for couples, families, and travellers who specifically want the mud bath experience; it's a weaker choice for anyone prioritising quiet, uncrowded scenery or serious snorkeling, both of which are better found elsewhere in the bay - Hòn Mun for reef quality, or a quieter island altogether if crowds are the main concern. For travellers prioritising snorkeling or diving quality specifically, Hòn Mun's marine reserve remains the better destination, and the two islands can be combined on a single boat tour.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

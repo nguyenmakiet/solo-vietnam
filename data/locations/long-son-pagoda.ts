@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const longSonPagoda: Location = {
   slug: "long-son-pagoda",
   name: "Long Sơn Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.250327071591599,
@@ -42,14 +42,82 @@ export const longSonPagoda: Location = {
     "The pagoda was associated with Buddhist activism during the 1963 Buddhist Crisis against the Diệm government - reliefs of seven Buddhist martyrs, including the famous Thích Quảng Đức, decorate the base of the White Buddha statue",
   ],
   content: {
-    intro:
-      "Long Sơn Pagoda was founded in 1886 by Hòa thượng Ngộ Trí under the name Đằng Long Tự, originally a simple thatched-roof structure built right at the TOP of Trại Thủy Hill - the exact spot where the giant White Buddha stands today. A storm destroyed that original structure in 1900, and the pagoda was rebuilt at the foot of the hill under its current name, Long Sơn. The pagoda became historically significant during the Buddhist Crisis of 1963, when the monks here were among those who protested against the anti-Buddhist policies of President Ngô Đình Diệm's government - the same movement that led to Thích Quảng Đức's self-immolation in Saigon; reliefs of Thích Quảng Đức and six other Buddhist martyrs decorate the base of the hilltop statue today. That statue - Kim Thân Phật Tổ, the White Buddha, credited to Venerable Thích Đức Minh - was built in 1964-65 on the site of the original pagoda and is officially recognised in Vietnam's Guinness records as the country's largest outdoor Buddha statue (a separate seated Buddha in Bình Định has since surpassed it in height specifically). Measurements of the statue vary depending on what's being measured: the total structure stands 24 metres from ground level (21 metres from its pedestal), with the seated Buddha figure itself accounting for about 14 metres and the lotus pedestal beneath it another 7 metres, 10 metres in diameter. The pagoda was founded in 1886 by Hòa thượng Ngộ Trí (also recorded as Thích Ngộ Chí, dharma name Phổ Trí, 1856-1935), a monk from Vĩnh Xương who had taken part in anti-French resistance in his youth before entering monastic life. In 1936 the pagoda was donated to the An Nam Buddhist Studies Association and remains the seat of Khánh Hòa's provincial Buddhist association today. The climb to the summit runs 193 steps in total, passing a reclining Buddha (Phật nhập Niết Bàn, built 2003) at step 44 - sources disagree on its exact length, variously citing 7 or 17 metres, though all agree on a 5-metre height - and a large bell tower (donated by Buddhists from Huế in 2002) about 10 steps further up, which rings at dawn and dusk.",
-    howToGetThere:
-      "Long Sơn Pagoda is in central Nha Trang, 500 metres from the train station on Đường 23/10 Street - within walking distance of most central accommodation and the train station. By Grab or taxi from the beach strip, about 10 minutes. The pagoda entrance is at street level; the hill climb to the White Buddha begins from the rear of the main courtyard.",
-    whatToExpect:
-      "The main pagoda hall - about 1,670 square metres, built in a 'công'-shaped layout across a compound of roughly 3,200 square metres - is a traditional Vietnamese Buddhist structure with ornate carved and lacquered interior and Nguyễn-dynasty-style dragon roof motifs throughout. At its centre sits a 1.6-metre, 700kg bronze Shakyamuni Buddha, flanked by bodhisattvas Quán Thế Âm and Đại Thế Chí, alongside two giant candles recognised in Vietnam's records at 900kg and 3.4 metres each, carved with dragon and lotus motifs. The courtyard has the memorial to the 1963 protest monks. From the rear of the courtyard, 193 steps climb the hillside toward the summit. At step 44, a reclining Buddha entering Nirvana (length disputed between sources, 7 or 17 metres, height 5 metres) rests on a plinth, backed by a relief of 49 disciples gathered in mourning; about 10 steps further up sits a large bell tower (Đại Hồng Chung, donated by Huế Buddhists in 2002), which rings at dawn and dusk. The White Buddha at the summit is seated, faces the city, and stands 24 metres tall overall - one of the largest outdoor Buddha statues in the country. The surrounding terrace gives panoramic views over Nha Trang - the bay, the bridge, the city grid, and the mountains behind.",
-    travelTips:
-      "Long Sơn Pagoda is the best free attraction in Nha Trang and consistently underutilised by visitors focused on the beach and islands. The hilltop view is the best elevated perspective over the city and bay available without paying for a cable car or rooftop bar. The historical connection to the 1963 Buddhist Crisis adds a layer of significance that most beach-focused visitors are unaware of, and the reclining Buddha partway up the steps is easy to rush past if you're focused only on reaching the summit - it's worth the few minutes to stop there properly. Allow 45–60 minutes including the climb and descent - easy to combine with a morning at the train station (500 metres away) or as a standalone half-hour stop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Long Sơn Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Long Sơn Pagoda was founded in 1886 by Hòa thượng Ngộ Trí under the name Đằng Long Tự, originally a simple thatched-roof structure built right at the TOP of Trại Thủy Hill - the exact spot where the giant White Buddha stands today. A storm destroyed that original structure in 1900, and the pagoda was rebuilt at the foot of the hill under its current name, Long Sơn.",
+          },
+          { type: "heading", text: "The 1963 Buddhist Crisis and the White Buddha" },
+          {
+            type: "paragraph",
+            text: "The pagoda became historically significant during the Buddhist Crisis of 1963, when the monks here were among those who protested against the anti-Buddhist policies of President Ngô Đình Diệm's government - the same movement that led to Thích Quảng Đức's self-immolation in Saigon; reliefs of Thích Quảng Đức and six other Buddhist martyrs decorate the base of the hilltop statue today. That statue - Kim Thân Phật Tổ, the White Buddha, credited to Venerable Thích Đức Minh - was built in 1964-65 on the site of the original pagoda and is officially recognised in Vietnam's Guinness records as the country's largest outdoor Buddha statue (a separate seated Buddha in Bình Định has since surpassed it in height specifically). Measurements of the statue vary depending on what's being measured: the total structure stands 24 metres from ground level (21 metres from its pedestal), with the seated Buddha figure itself accounting for about 14 metres and the lotus pedestal beneath it another 7 metres, 10 metres in diameter.",
+          },
+          { type: "heading", text: "Founder and Later History" },
+          {
+            type: "paragraph",
+            text: "Its founder, Hòa thượng Ngộ Trí (also recorded as Thích Ngộ Chí, dharma name Phổ Trí, 1856-1935), was a monk from Vĩnh Xương who had taken part in anti-French resistance in his youth before entering monastic life. In 1936 the pagoda was donated to the An Nam Buddhist Studies Association and remains the seat of Khánh Hòa's provincial Buddhist association today.",
+          },
+          { type: "heading", text: "The Climb to the Summit" },
+          {
+            type: "paragraph",
+            text: "The climb to the summit runs 193 steps in total, passing a reclining Buddha (Phật nhập Niết Bàn, built 2003) at step 44 - sources disagree on its exact length, variously citing 7 or 17 metres, though all agree on a 5-metre height - and a large bell tower (donated by Buddhists from Huế in 2002) about 10 steps further up, which rings at dawn and dusk.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Long Sơn Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Long Sơn Pagoda is in central Nha Trang, 500 metres from the train station on Đường 23/10 Street - within walking distance of most central accommodation and the train station. By Grab or taxi from the beach strip, about 10 minutes. The pagoda entrance is at street level; the hill climb to the White Buddha begins from the rear of the main courtyard.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Long Sơn Pagoda",
+        blocks: [
+          { type: "heading", text: "The Main Pagoda Hall" },
+          {
+            type: "paragraph",
+            text: "The main pagoda hall - about 1,670 square metres, built in a 'công'-shaped layout across a compound of roughly 3,200 square metres - is a traditional Vietnamese Buddhist structure with ornate carved and lacquered interior and Nguyễn-dynasty-style dragon roof motifs throughout. At its centre sits a 1.6-metre, 700kg bronze Shakyamuni Buddha, flanked by bodhisattvas Quán Thế Âm and Đại Thế Chí, alongside two giant candles recognised in Vietnam's records at 900kg and 3.4 metres each, carved with dragon and lotus motifs. The courtyard has the memorial to the 1963 protest monks.",
+          },
+          { type: "heading", text: "The 193 Steps and the Reclining Buddha" },
+          {
+            type: "paragraph",
+            text: "From the rear of the courtyard, 193 steps climb the hillside toward the summit. At step 44, a reclining Buddha entering Nirvana (length disputed between sources, 7 or 17 metres, height 5 metres) rests on a plinth, backed by a relief of 49 disciples gathered in mourning; about 10 steps further up sits a large bell tower (Đại Hồng Chung, donated by Huế Buddhists in 2002), which rings at dawn and dusk.",
+          },
+          { type: "heading", text: "The White Buddha and Hilltop Views" },
+          {
+            type: "paragraph",
+            text: "The White Buddha at the summit is seated, faces the city, and stands 24 metres tall overall - one of the largest outdoor Buddha statues in the country. The surrounding terrace gives panoramic views over Nha Trang - the bay, the bridge, the city grid, and the mountains behind.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Long Sơn Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Long Sơn Pagoda is the best free attraction in Nha Trang and consistently underutilised by visitors focused on the beach and islands. The hilltop view is the best elevated perspective over the city and bay available without paying for a cable car or rooftop bar. The historical connection to the 1963 Buddhist Crisis adds a layer of significance that most beach-focused visitors are unaware of, and the reclining Buddha partway up the steps is easy to rush past if you're focused only on reaching the summit - it's worth the few minutes to stop there properly.",
+          },
+          {
+            type: "paragraph",
+            text: "Allow 45–60 minutes including the climb and descent - easy to combine with a morning at the train station (500 metres away) or as a standalone half-hour stop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

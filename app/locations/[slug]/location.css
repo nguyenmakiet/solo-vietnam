@@ -377,7 +377,7 @@
 }
 
 /* ── LONG-FORM CONTENT: an article, not a card ── */
-.content-section h3 {
+.content-section .content-title {
   font-family: var(--font-serif), 'Source Serif 4', serif;
   font-size: clamp(24px, 4vw, 30px); font-weight: 700;
   line-height: 1.2; letter-spacing: -0.3px;
@@ -416,7 +416,7 @@
   text-align: justify;
   hyphens: auto; -webkit-hyphens: auto;
 }
-.rc-h-icon, .qf-icon { display: none; }
+.qf-icon { display: none; }
 .rc-h-text {
   font-family: var(--font-serif), 'Source Serif 4', serif;
   font-size: 19px; font-weight: 700;
@@ -719,7 +719,7 @@
     column-gap: 64px;
     align-items: start;
   }
-  .content-section h3 {
+  .content-section .content-title {
     position: sticky; top: 125px;
     font-size: clamp(30px, 2.4vw, 34px);
     margin-bottom: 0;
