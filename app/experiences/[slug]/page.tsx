@@ -6,6 +6,7 @@ import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { activeLocations } from "@/data/all-locations"
 import "../experiences.css"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
+import { stripInlineMarkdown } from "@/lib/rich-text"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // Thêm vào đầu file, trước component
@@ -124,7 +125,7 @@ export default async function ExperiencePage({
                     <div className="location-card-desc">{loc.seoDescription}</div>
                   </div>
                   <div className="location-card-footer">
-                    <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : (loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "").split("(")[0].trim()}</span>
+                    <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : stripInlineMarkdown(loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "").split("(")[0].trim()}</span>
                     <span>→</span>
                   </div>
                 </Link>

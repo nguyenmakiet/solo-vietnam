@@ -394,12 +394,13 @@
 .content-body > p:first-child {
   font-size: 18px; line-height: 1.7;
 }
-.content-section .rt-link {
+/* Inline links from RichTextString fields (content, tips, FAQ, overview) */
+.rt-link {
   color: var(--color-teal);
   text-decoration: underline; text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
-.content-section .rt-link:hover { color: var(--color-signal-text); }
+.rt-link:hover { color: var(--color-signal-text); }
 
 /* Rich blocks: subsection heading (data icons are decorative - hidden) */
 .rc-h {
@@ -409,9 +410,11 @@
 }
 .content-body > .rc-h:first-child { margin-top: 4px; }
 /* Long-form prose paragraphs only (not headings, lists, callouts or tables).
-   Phones keep left alignment: the column is too narrow for even word spacing. */
-@media (min-width: 641px) {
-  .content-body > p { text-align: justify; }
+   Justified on every width; hyphenation keeps word spacing even in the
+   narrow phone column (the page is lang="en"). */
+.content-body > p {
+  text-align: justify;
+  hyphens: auto; -webkit-hyphens: auto;
 }
 .rc-h-icon, .qf-icon { display: none; }
 .rc-h-text {

@@ -12,6 +12,7 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder"
 import { stripLeadingEmoji } from "@/lib/text"
 import { dotClass } from "@/lib/category-dot"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
+import { stripInlineMarkdown } from "@/lib/rich-text"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
@@ -291,7 +292,7 @@ export default async function DestinationPage({
               {destinationLocations.map((loc) => {
                 const img = realImage(loc.heroImage)
                 const type = primaryType(loc.type)
-                const best = isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : loc.bestSeasonNote ?? loc.bestTimeOfDay
+                const best = isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : stripInlineMarkdown(loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "")
                 return (
                   <Link key={loc.slug} href={`/locations/${loc.slug}`} className="dd-place">
                     <div className="dd-place-media">
