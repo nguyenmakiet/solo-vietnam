@@ -315,6 +315,7 @@ export default async function DestinationPage({
                         {loc.status === "seasonal" && <span className="dd-status dd-status--seasonal">Seasonal</span>}
                         {loc.status === "temporarily-closed" && <span className="dd-status">Temporarily Closed</span>}
                         {loc.status === "seasonally-closed" && <span className="dd-status">Seasonally Closed</span>}
+                        {loc.status === "partially-closed" && <span className="dd-status dd-status--seasonal">Partially Closed</span>}
                         {loc.status === "closed" && <span className="dd-status">Closed</span>}
                       </div>
                       <h3 className="dd-place-name">{loc.name}</h3>

@@ -17,10 +17,11 @@ import { getNearbyLocations } from "@/lib/nearbyLocations"
 import { dotClass } from "@/lib/category-dot"
 import CloudinaryImage from "@/components/CloudinaryImage"
 
-const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed", { label: string }> = {
+const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed" | "partially-closed", { label: string }> = {
   "temporarily-closed": { label: "Temporarily Closed." },
   "closed": { label: "Closed." },
   "seasonally-closed": { label: "Seasonally Closed." },
+  "partially-closed": { label: "Partially Closed." },
 }
 
 const MONTH_NAMES = Array.from({ length: 12 }, (_, i) => new Date(2000, i).toLocaleString("en", { month: "short" }))
@@ -159,7 +160,7 @@ export default async function LocationPage({
       </header>
 
       {/* Status Alert */}
-      {(location.status === "temporarily-closed" || location.status === "closed" || location.status === "seasonally-closed") && (
+      {(location.status === "temporarily-closed" || location.status === "closed" || location.status === "seasonally-closed" || location.status === "partially-closed") && (
         <div className={`status-alert status-alert--${location.status}`} role="status">
           <span className="status-alert-text">
             <strong>{STATUS_ALERT[location.status].label}</strong>

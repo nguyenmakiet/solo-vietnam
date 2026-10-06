@@ -103,11 +103,13 @@
   color: var(--color-ink);
 }
 .status-alert strong { color: var(--color-signal-text); }
-.status-alert--seasonally-closed {
+.status-alert--seasonally-closed,
+.status-alert--partially-closed {
   border-left-color: var(--color-teal);
   background: color-mix(in srgb, var(--color-teal) 7%, var(--color-surface));
 }
-.status-alert--seasonally-closed strong { color: var(--color-teal); }
+.status-alert--seasonally-closed strong,
+.status-alert--partially-closed strong { color: var(--color-teal); }
 
 /* ── SECTION NAV: editorial table of contents ── */
 .tabs-wrap {

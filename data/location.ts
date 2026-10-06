@@ -27,9 +27,11 @@ export type RichSection = {
 
 export type Location = {
   slug: string
-  status?: "active" | "closed" | "seasonal" | "unverified" | "temporarily-closed" | "seasonally-closed"
+  status?: "active" | "closed" | "seasonal" | "unverified" | "temporarily-closed" | "seasonally-closed" | "partially-closed"
   // "temporarily-closed": one-off, unplanned closure (incident, safety risk) with no fixed reopening pattern.
   // "seasonally-closed": recurring, predictable closure on a yearly schedule (e.g. annual maintenance closure).
+  // "partially-closed": still open and worth visiting, but some areas are closed or restricted (e.g. restoration works).
+  //   Counts as active everywhere (listings, Best Months strip, month aggregates); only adds a notice + badge.
   statusNote?: string // short reason/date shown in UI alongside a non-"active" status, e.g. "Suspended since Sept 2026 - rockfall risk, reserve management request"
   name: string
   updatedAt?: string // ISO date "YYYY-MM-DD" - update whenever content in this file changes
