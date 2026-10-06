@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const caiRangFloatingMarket: Location = {
   slug: "cai-rang-floating-market",
   name: "Cái Răng Floating Market",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["can-tho"],
   destination: "mekong-delta",
   lat: 10.005150042253042,
@@ -49,14 +49,84 @@ export const caiRangFloatingMarket: Location = {
     "Full experience timing: depart Ninh Kiều by 4:45-5:00 AM, arrive at market 5:30-5:45 AM, spend 1.5-2 hours at peak trading (5:45-7:30 AM), return by 8:00-8:30 AM before the heat builds. Total door-to-door: about 3-3.5 hours.",
   ],
   content: {
-    intro:
-      "Cái Răng Floating Market sits on the Cần Thơ River 6km south of Cần Thơ city centre, in a channel connecting to the Hậu River - a location that made it the Mekong Delta's primary wholesale hub for goods moving between Cà Mau, Rạch Giá, and the wider delta network. The market formed in the early 20th century as a major rice-trading centre for Hoa Kiều (ethnic Chinese) merchants, and has continued in the same form ever since: hundreds of wooden boats converging on the same stretch of river each morning to trade wholesale agricultural produce - fruit, vegetables, and delta goods - boat to boat, without ever docking. The trading system is almost entirely non-verbal: the cây bẹo, a 3-5 metre bamboo pole planted at each boat's bow and hung with samples of the vessel's goods, allows buyers to identify what's available from a distance across a noisy, crowded river. Recognised as Vietnam's national intangible cultural heritage in 2016 and listed by Rough Guides among the world's 10 most impressive markets, Cái Răng has outlasted the wave of road construction that eliminated most of the Mekong's estimated 15+ floating markets, though the scale has contracted and tourist boats now outnumber wholesale trading vessels during peak morning hours. If you look closely, the gaps are growing: fewer trading boats, fewer thương hồ (river merchants), less bargaining noise. The Vietnamese government has actively subsidised and promoted the market as cultural heritage precisely because organic commercial forces have been pulling trade toward road transport for decades. What remains is real, but it is also fragile - a living tradition being carefully kept alive rather than one that would sustain itself without support. That dual identity defines today's Cái Răng: part working market, part cultural heritage attraction.",
-    howToGetThere:
-      "The standard departure point is Ninh Kiều Pier on Hai Bà Trưng Street in central Cần Thơ. Boat hire operators are stationed at the pier; depart by 4:45-5:00 AM to arrive at the market by 5:30-5:45 AM at peak trading. By motorboat from Ninh Kiều, the journey takes about 30-40 minutes. Alternatively, boats can be hired from Chợ An Bình (An Bình Market dock) for a slightly shorter journey if staying on that side of the city. Hotel-arranged boats are convenient but typically priced 1.5x-2x higher than booking directly at the pier. Cần Thơ is 3-4 hours from Ho Chi Minh City by car or bus.",
-    whatToExpect:
-      "The market occupies a 500-800 metre stretch of river that is dense with boats in the early morning and progressively quieter as trading concludes after 8:00 AM. Large wholesale boats - loaded with jackfruit, watermelon, durian, dragon fruit, and other delta produce - anchor in the centre channel while smaller retail and food boats weave between them. The visual signature is the forest of cây bẹo poles above the waterline, each hung with its owner's goods. Small food boats pull alongside visitor vessels to offer breakfast. Đờn ca tài tử (traditional southern Vietnamese folk music) performances have been added to some tour routes as a cultural extra - not every tour includes this, so check beforehand if it matters to you. The riverbanks show the urban working waterfront of the delta: warehouses, boat repair yards, riverside houses - functional rather than picturesque. The atmosphere shifts noticeably between weekday mornings (more genuine trade activity, fewer tourist boats) and weekends (more crowded, faster-paced tours).",
-    travelTips:
-      "Cái Răng rewards visitors who arrive with calibrated expectations. The market is real - wholesale trade genuinely happens here every morning - but promotional photographs from 10-15 years ago show a denser, more purely commercial scene than the current reality, where tourist boats have become a significant part of the morning river traffic. The experience is not a handicraft bazaar and this is a working wholesale market first and a tourist attraction second. What the market genuinely offers is unusual: the cây bẹo system, the sound of the river at dawn, breakfast eaten on the water while the delta wakes up, and a direct encounter with a way of doing commerce that survives on few rivers in the world. A shared boat is fine for solo travellers; a private small boat gives more time at the market and more control over where to linger. Budget 3 hours total from departure to return.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cái Răng Floating Market Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cái Răng Floating Market sits on the Cần Thơ River 6km south of Cần Thơ city centre, in a channel connecting to the Hậu River - a location that made it the Mekong Delta's primary wholesale hub for goods moving between Cà Mau, Rạch Giá, and the wider delta network. The market formed in the early 20th century as a major rice-trading centre for Hoa Kiều (ethnic Chinese) merchants, and has continued in the same form ever since: hundreds of wooden boats converging on the same stretch of river each morning to trade wholesale agricultural produce - fruit, vegetables, and delta goods - boat to boat, without ever docking.",
+          },
+          { type: "heading", text: "The Cây Bẹo System" },
+          {
+            type: "paragraph",
+            text: "The trading system is almost entirely non-verbal: the cây bẹo, a 3-5 metre bamboo pole planted at each boat's bow and hung with samples of the vessel's goods, allows buyers to identify what's available from a distance across a noisy, crowded river.",
+          },
+          { type: "heading", text: "A Tradition in Decline" },
+          {
+            type: "paragraph",
+            text: "Recognised as Vietnam's national intangible cultural heritage in 2016 and listed by Rough Guides among the world's 10 most impressive markets, Cái Răng has outlasted the wave of road construction that eliminated most of the Mekong's estimated 15+ floating markets, though the scale has contracted and tourist boats now outnumber wholesale trading vessels during peak morning hours. If you look closely, the gaps are growing: fewer trading boats, fewer thương hồ (river merchants), less bargaining noise. The Vietnamese government has actively subsidised and promoted the market as cultural heritage precisely because organic commercial forces have been pulling trade toward road transport for decades. What remains is real, but it is also fragile - a living tradition being carefully kept alive rather than one that would sustain itself without support. That dual identity defines today's Cái Răng: part working market, part cultural heritage attraction.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cái Răng Floating Market",
+        blocks: [
+          { type: "heading", text: "Boats from Ninh Kiều Pier" },
+          {
+            type: "paragraph",
+            text: "The standard departure point is Ninh Kiều Pier on Hai Bà Trưng Street in central Cần Thơ. Boat hire operators are stationed at the pier; depart by 4:45-5:00 AM to arrive at the market by 5:30-5:45 AM at peak trading. By motorboat from Ninh Kiều, the journey takes about 30-40 minutes.",
+          },
+          { type: "heading", text: "Other Docks and Prices" },
+          {
+            type: "paragraph",
+            text: "Alternatively, boats can be hired from Chợ An Bình (An Bình Market dock) for a slightly shorter journey if staying on that side of the city. Hotel-arranged boats are convenient but typically priced 1.5x-2x higher than booking directly at the pier. Cần Thơ is 3-4 hours from Ho Chi Minh City by car or bus.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cái Răng Floating Market",
+        blocks: [
+          { type: "heading", text: "The Market at Dawn" },
+          {
+            type: "paragraph",
+            text: "The market occupies a 500-800 metre stretch of river that is dense with boats in the early morning and progressively quieter as trading concludes after 8:00 AM. Large wholesale boats - loaded with jackfruit, watermelon, durian, dragon fruit, and other delta produce - anchor in the centre channel while smaller retail and food boats weave between them. The visual signature is the forest of cây bẹo poles above the waterline, each hung with its owner's goods. Small food boats pull alongside visitor vessels to offer breakfast.",
+          },
+          { type: "heading", text: "Music and the Riverbanks" },
+          {
+            type: "paragraph",
+            text: "Đờn ca tài tử (traditional southern Vietnamese folk music) performances have been added to some tour routes as a cultural extra - not every tour includes this, so check beforehand if it matters to you. The riverbanks show the urban working waterfront of the delta: warehouses, boat repair yards, riverside houses - functional rather than picturesque.",
+          },
+          { type: "heading", text: "Weekdays and Weekends" },
+          {
+            type: "paragraph",
+            text: "The atmosphere shifts noticeably between weekday mornings (more genuine trade activity, fewer tourist boats) and weekends (more crowded, faster-paced tours).",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cái Răng Floating Market",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cái Răng rewards visitors who arrive with calibrated expectations. The market is real - wholesale trade genuinely happens here every morning - but promotional photographs from 10-15 years ago show a denser, more purely commercial scene than the current reality, where tourist boats have become a significant part of the morning river traffic. The experience is not a handicraft bazaar and this is a working wholesale market first and a tourist attraction second. What the market genuinely offers is unusual: the cây bẹo system, the sound of the river at dawn, breakfast eaten on the water while the delta wakes up, and a direct encounter with a way of doing commerce that survives on few rivers in the world.",
+          },
+          { type: "heading", text: "Boats and Timing" },
+          {
+            type: "paragraph",
+            text: "A shared boat is fine for solo travellers; a private small boat gives more time at the market and more control over where to linger. Budget 3 hours total from departure to return.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nhatBeach: Location = {
   slug: "bai-nhat",
   name: "Bãi Nhát",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ba-ria-vung-tau"],
   destination: "con-dao",
   lat: 8.644189602871363,
@@ -47,14 +47,82 @@ export const nhatBeach: Location = {
     "Use a Côn Đảo tide-tracking app or ask locally, since the low-tide window shifts by day and season and isn't always in the afternoon",
   ],
   content: {
-    intro:
-      "Bãi Nhát sits on the southeastern coast of Côn Đảo, on the road between Con Son town and Bến Đầm port, about 6km from the town centre, near Cửa Tử and Mũi Cá Mập (Shark Point). One popular account of the name's origin holds that debris used to wash ashore here via ocean currents, and locals informally called it Bãi Rác ('Rubbish Beach') as a result; after years of clean-up and an ongoing anti-litter culture among visitors and locals, the name softened to Bãi Nhát, though accounts of the exact etymology vary. The beach covers about 13.6 hectares within Côn Đảo National Park's ecological restoration zone, where tourism development is deliberately kept minimal to preserve its wild character. Its defining characteristic is tide-dependence: at high tide, the roughly 1km stretch of sand disappears completely under the sea, leaving only the boulder field exposed. As the tide recedes, the white sand gradually re-emerges, and the multicoloured rocks - shaped over time by sun, salt, and wave - become the main event. The beach was once included in a list of Asia's top wild beaches compiled by Australia's news.com.au, alongside sites like Bako National Park (Malaysia) and Furuzamami Beach (Japan) - a past recognition rather than an ongoing formal ranking, but one still commonly cited in local write-ups. Beside the beach is a stone stele commemorating 198 prisoners from Côn Đảo Prison who attempted a mass escape in 1952. The escape failed, but it is remembered as one of the most significant acts of resistance against the French colonial prison administration.",
-    howToGetThere:
-      "Bãi Nhát is on Đường Bến Đầm, the coastal road connecting Con Son town to Bến Đầm port. From the town centre, head south and follow the coast road for about 6km - the beach is visible from the road and clearly signed. The route is one of the most scenic on the island: one side is jungle-covered hillside, the other is open sea. By motorbike it takes about 15 minutes; by bicycle about 30–40 minutes. Taxis are available in Con Son town if needed. To reach Côn Đảo itself: fly from Ho Chi Minh City (45 minutes), or take a high-speed ferry from Vũng Tàu or Trần Đề port.",
-    whatToExpect:
-      "The beach stretches roughly 1km from Cửa Tử at Hòn Bà to Mũi Cá Mập (Shark Point), facing east-southeast. The sand section is relatively short at high tide but the boulder field extends the full length of the shoreline, and the rocks are the real attraction for photography - stacked, layered, and patterned in shades of grey, ochre, and rust. The water is clear and shallow close to shore, but the narrow, rocky shoreline and fast-changing tides mean this isn't a spot for swimming out from shore - most visitors wade, soak their feet, or splash around close to the beach rather than swimming properly, and it's worth watching your footing for sharp or slippery rocks underfoot. Some visitors report seeing colourful coral and clear views of the sandy bottom, though this varies by spot and season. Looking west from the beach, the silhouette of Đỉnh Tình Yêu (Love Peak, about 328m) fills the horizon - a peak that from certain angles resembles two figures leaning against each other, embracing. Local legend tells of a young couple forbidden from being together who came to Côn Đảo and embraced, turning to stone so their love could last forever - the story behind the mountain's shape and name. At sunset, the light falls directly behind the peak and reflects across the sea in what is widely regarded as one of the best sunset views on Côn Đảo; mornings (roughly 6-9 AM) offer a gentler, quieter alternative with good sunrise light, and on clear nights from April to August, the beach is far enough from town lights for a chance at Milky Way stargazing, roughly midnight to 4 AM. A few nearby resorts offer picnic service (roughly 300,000-500,000 VND per person) if you'd rather not bring your own food.",
-    travelTips:
-      "Bãi Nhát rewards timing above almost everything else: the wrong tide turns it into a rock field with nothing to swim in; the right tide paired with sunset light makes it extraordinary. The most practical approach is to arrive in the mid-to-late afternoon when the tide is dropping, swim for an hour or two, then stay for the sunset. November to December is worth noting for photographers - the algae season coats the boulders in vivid green, which photographs very differently from the dry-season rock textures. The beach is quiet relative to more accessible spots on the island, and the coastal road itself is worth riding slowly in both directions.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bãi Nhát Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bãi Nhát sits on the southeastern coast of Côn Đảo, on the road between Con Son town and Bến Đầm port, about 6km from the town centre, near Cửa Tử and Mũi Cá Mập (Shark Point). One popular account of the name's origin holds that debris used to wash ashore here via ocean currents, and locals informally called it Bãi Rác ('Rubbish Beach') as a result; after years of clean-up and an ongoing anti-litter culture among visitors and locals, the name softened to Bãi Nhát, though accounts of the exact etymology vary. The beach covers about 13.6 hectares within Côn Đảo National Park's ecological restoration zone, where tourism development is deliberately kept minimal to preserve its wild character.",
+          },
+          { type: "heading", text: "A Beach That Depends on the Tide" },
+          {
+            type: "paragraph",
+            text: "Its defining characteristic is tide-dependence: at high tide, the roughly 1km stretch of sand disappears completely under the sea, leaving only the boulder field exposed. As the tide recedes, the white sand gradually re-emerges, and the multicoloured rocks - shaped over time by sun, salt, and wave - become the main event. The beach was once included in a list of Asia's top wild beaches compiled by Australia's news.com.au, alongside sites like Bako National Park (Malaysia) and Furuzamami Beach (Japan) - a past recognition rather than an ongoing formal ranking, but one still commonly cited in local write-ups.",
+          },
+          { type: "heading", text: "The 198-Prisoner Escape Memorial" },
+          {
+            type: "paragraph",
+            text: "Beside the beach is a stone stele commemorating 198 prisoners from Côn Đảo Prison who attempted a mass escape in 1952. The escape failed, but it is remembered as one of the most significant acts of resistance against the French colonial prison administration.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bãi Nhát",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bãi Nhát is on Đường Bến Đầm, the coastal road connecting Con Son town to Bến Đầm port. From the town centre, head south and follow the coast road for about 6km - the beach is visible from the road and clearly signed. The route is one of the most scenic on the island: one side is jungle-covered hillside, the other is open sea. By motorbike it takes about 15 minutes; by bicycle about 30–40 minutes. Taxis are available in Con Son town if needed.",
+          },
+          { type: "heading", text: "Getting to Côn Đảo" },
+          {
+            type: "paragraph",
+            text: "To reach Côn Đảo itself: fly from Ho Chi Minh City (45 minutes), or take a high-speed ferry from Vũng Tàu or Trần Đề port.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bãi Nhát",
+        blocks: [
+          { type: "heading", text: "The Shoreline and Swimming" },
+          {
+            type: "paragraph",
+            text: "The beach stretches roughly 1km from Cửa Tử at Hòn Bà to Mũi Cá Mập (Shark Point), facing east-southeast. The sand section is relatively short at high tide but the boulder field extends the full length of the shoreline, and the rocks are the real attraction for photography - stacked, layered, and patterned in shades of grey, ochre, and rust. The water is clear and shallow close to shore, but the narrow, rocky shoreline and fast-changing tides mean this isn't a spot for swimming out from shore - most visitors wade, soak their feet, or splash around close to the beach rather than swimming properly, and it's worth watching your footing for sharp or slippery rocks underfoot. Some visitors report seeing colourful coral and clear views of the sandy bottom, though this varies by spot and season.",
+          },
+          { type: "heading", text: "Love Peak and Sunset" },
+          {
+            type: "paragraph",
+            text: "Looking west from the beach, the silhouette of Đỉnh Tình Yêu (Love Peak, about 328m) fills the horizon - a peak that from certain angles resembles two figures leaning against each other, embracing. Local legend tells of a young couple forbidden from being together who came to Côn Đảo and embraced, turning to stone so their love could last forever - the story behind the mountain's shape and name. At sunset, the light falls directly behind the peak and reflects across the sea in what is widely regarded as one of the best sunset views on Côn Đảo; mornings (roughly 6-9 AM) offer a gentler, quieter alternative with good sunrise light, and on clear nights from April to August, the beach is far enough from town lights for a chance at Milky Way stargazing, roughly midnight to 4 AM.",
+          },
+          { type: "heading", text: "Picnic Service" },
+          {
+            type: "paragraph",
+            text: "A few nearby resorts offer picnic service (roughly 300,000-500,000 VND per person) if you'd rather not bring your own food.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bãi Nhát",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bãi Nhát rewards timing above almost everything else: the wrong tide turns it into a rock field with nothing to swim in; the right tide paired with sunset light makes it extraordinary. The most practical approach is to arrive in the mid-to-late afternoon when the tide is dropping, swim for an hour or two, then stay for the sunset.",
+          },
+          {
+            type: "paragraph",
+            text: "November to December is worth noting for photographers - the algae season coats the boulders in vivid green, which photographs very differently from the dry-season rock textures. The beach is quiet relative to more accessible spots on the island, and the coastal road itself is worth riding slowly in both directions.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

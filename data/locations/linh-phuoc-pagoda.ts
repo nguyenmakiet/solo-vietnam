@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const linhPhuocPagoda: Location = {
   slug: "linh-phuoc-pagoda",
   name: "Linh Phước Pagoda",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong"],
   destination: "da-lat",
   lat: 11.944790636274039,
@@ -47,14 +47,88 @@ export const linhPhuocPagoda: Location = {
     "Dress modestly, keep your voice down, don't touch the statues or mosaic work, and don't litter - this is an active place of worship as well as a photo destination",
   ],
   content: {
-    intro:
-      "Linh Phước Pagoda - widely nicknamed Chùa Ve Chai, the 'Bottle Pagoda' - sits in Trại Mát village about 8-10km from central Đà Lạt, just off National Highway 20, and is the most visually extraordinary religious building in the Central Highlands. The entire complex is covered in mosaics assembled from broken glass, ceramic shards, and porcelain fragments: the main hall facade has dragons and phoenixes in vivid green, blue, and gold; the bell tower is encrusted with floral and figural patterns from base to top; a dragon sculpture beside the pond in the Long Hoa Viên area runs 49 metres long, its body built from roughly 12,000 recycled beer bottles set in concrete. The bell tower is also 37 metres tall over 7 storeys. This mosaic-inlay technique, known as khảm sành sứ, belongs to the same Vietnamese tradition that reached its imperial peak at Huế's royal tombs, particularly Khải Định Tomb - though where Khải Định showcased expensive imported Chinese and Japanese porcelain and French glass for an emperor, Linh Phước demonstrates how the same craft evolved using recycled beer bottles and broken ceramics donated by ordinary Buddhists. The pagoda was first built between 1949 and 1951, then substantially rebuilt and expanded from 1990 under the direction of its fifth abbot, Thượng Tọa Thích Tâm Vị, with funding from Buddhists across the country. Many of the craftsmen were brought from Huế, where generations of artisans had preserved the imperial porcelain-mosaic tradition developed for the Nguyễn court, and they worked from themes set by the monks rather than fixed architectural plans. The pagoda now holds 11 Vietnam Records, including for its bell tower height, a Buddha statue made from immortelle flowers, and the sheer scale of its mosaic-covered architecture.",
-    howToGetThere:
-      "Linh Phước Pagoda is in Trại Mát village, roughly 8-10km northeast of Đà Lạt city, just off National Highway 20. The most atmospheric approach is by the tourist train from Đà Lạt Railway Station - trains commonly depart around 8:00 AM, cover the roughly 7km route through pine forest and greenhouse-covered hillsides in about 30 minutes, and a round-trip ticket runs about 170,000 VND per person. Buying a one-way ticket and returning by Grab or taxi gives more flexibility if you'd rather not be tied to the train's return schedule. By car, taxi, or motorbike from Đà Lạt, it's about 15-20 minutes on the road toward Trại Mát. The pagoda is a 5-15 minute walk from Trại Mát station, signposted from the platform.",
-    whatToExpect:
-      "The pagoda complex is large - the main hall, bell tower, dragon sculpture and pond, a basement exhibition, and several ancillary shrines spread across roughly 6,667 square metres. The main hall itself is 12 metres wide and 33 metres long, its interior lined with two rows of dragon-inlaid columns and centred on a 4.9-metre concrete Sakyamuni Buddha statue. The separate Quan Thế Âm Hall contains a 17-metre concrete Avalokitesvara statue surrounded by 324 smaller statues and was once recognized as Vietnam's tallest indoor concrete Buddha. Outside, the main hall facade makes the first visual impact: dragon columns, mosaic walls, and a multi-tiered roof entirely covered in ceramic work. The dragon sculpture in the Long Hoa Viên area coils gracefully beside a pond, its bottle-glass surface catching the sunlight. Below the main hall, a basement level holds an '18 Levels of Hell' exhibition with demon and underworld guardian statues, a Buddha statue made from immortelle flowers, and a collection of carved wooden tables - easy to miss if you don't specifically look for the stairs down. Around the grounds and along Tự Phước street out front, vegetarian food stalls sell bún chay, warm soy milk, and local jams at modest prices. Plan on about 1.5-2 hours to see the complex properly; by mid-morning the grounds can get crowded and congested with tour buses parked close to the walkways, so visiting earlier makes for a calmer walk around.",
-    travelTips:
-      "Linh Phước is the best reason to take the Đà Lạt tourist train - the pagoda on its own justifies the excursion and the train adds the pleasure of a preserved colonial railway journey. The combination of a train ride from the 1938 French station and the extraordinary mosaic pagoda at the other end makes for one of Đà Lạt's most varied half-mornings, especially if you go early enough to beat the tour buses. If you've already visited Khải Định Tomb in Huế, you'll immediately recognize the same artistic tradition here. The difference is one of philosophy as much as material: Khải Định uses imperial porcelain mosaics to decorate a royal mausoleum, while Linh Phước transforms the same technique into one of the most extravagant Buddhist temples in Vietnam, built from bottles and broken ceramics rather than imported luxury materials.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Linh Phước Pagoda Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Linh Phước Pagoda - widely nicknamed Chùa Ve Chai, the 'Bottle Pagoda' - sits in Trại Mát village about 8-10km from central Đà Lạt, just off National Highway 20, and is the most visually extraordinary religious building in the Central Highlands. The entire complex is covered in mosaics assembled from broken glass, ceramic shards, and porcelain fragments: the main hall facade has dragons and phoenixes in vivid green, blue, and gold; the bell tower is encrusted with floral and figural patterns from base to top; a dragon sculpture beside the pond in the Long Hoa Viên area runs 49 metres long, its body built from roughly 12,000 recycled beer bottles set in concrete. The bell tower is also 37 metres tall over 7 storeys. This mosaic-inlay technique, known as khảm sành sứ, belongs to the same Vietnamese tradition that reached its imperial peak at Huế's royal tombs, particularly Khải Định Tomb - though where Khải Định showcased expensive imported Chinese and Japanese porcelain and French glass for an emperor, Linh Phước demonstrates how the same craft evolved using recycled beer bottles and broken ceramics donated by ordinary Buddhists.",
+          },
+          { type: "heading", text: "History and Craftsmen" },
+          {
+            type: "paragraph",
+            text: "The pagoda was first built between 1949 and 1951, then substantially rebuilt and expanded from 1990 under the direction of its fifth abbot, Thượng Tọa Thích Tâm Vị, with funding from Buddhists across the country. Many of the craftsmen were brought from Huế, where generations of artisans had preserved the imperial porcelain-mosaic tradition developed for the Nguyễn court, and they worked from themes set by the monks rather than fixed architectural plans.",
+          },
+          { type: "heading", text: "Vietnam Records" },
+          {
+            type: "paragraph",
+            text: "The pagoda now holds 11 Vietnam Records, including for its bell tower height, a Buddha statue made from immortelle flowers, and the sheer scale of its mosaic-covered architecture.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Linh Phước Pagoda",
+        blocks: [
+          { type: "heading", text: "By Tourist Train" },
+          {
+            type: "paragraph",
+            text: "Linh Phước Pagoda is in Trại Mát village, roughly 8-10km northeast of Đà Lạt city, just off National Highway 20. The most atmospheric approach is by the tourist train from Đà Lạt Railway Station - trains commonly depart around 8:00 AM, cover the roughly 7km route through pine forest and greenhouse-covered hillsides in about 30 minutes, and a round-trip ticket runs about 170,000 VND per person. Buying a one-way ticket and returning by Grab or taxi gives more flexibility if you'd rather not be tied to the train's return schedule.",
+          },
+          { type: "heading", text: "By Road, and from the Station" },
+          {
+            type: "paragraph",
+            text: "By car, taxi, or motorbike from Đà Lạt, it's about 15-20 minutes on the road toward Trại Mát. The pagoda is a 5-15 minute walk from Trại Mát station, signposted from the platform.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Linh Phước Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The pagoda complex is large - the main hall, bell tower, dragon sculpture and pond, a basement exhibition, and several ancillary shrines spread across roughly 6,667 square metres.",
+          },
+          { type: "heading", text: "The Main Hall and Quan Thế Âm Hall" },
+          {
+            type: "paragraph",
+            text: "The main hall itself is 12 metres wide and 33 metres long, its interior lined with two rows of dragon-inlaid columns and centred on a 4.9-metre concrete Sakyamuni Buddha statue. The separate Quan Thế Âm Hall contains a 17-metre concrete Avalokitesvara statue surrounded by 324 smaller statues and was once recognized as Vietnam's tallest indoor concrete Buddha. Outside, the main hall facade makes the first visual impact: dragon columns, mosaic walls, and a multi-tiered roof entirely covered in ceramic work.",
+          },
+          { type: "heading", text: "The Dragon and the Basement Exhibition" },
+          {
+            type: "paragraph",
+            text: "The dragon sculpture in the Long Hoa Viên area coils gracefully beside a pond, its bottle-glass surface catching the sunlight. Below the main hall, a basement level holds an '18 Levels of Hell' exhibition with demon and underworld guardian statues, a Buddha statue made from immortelle flowers, and a collection of carved wooden tables - easy to miss if you don't specifically look for the stairs down.",
+          },
+          { type: "heading", text: "Food and Timing" },
+          {
+            type: "paragraph",
+            text: "Around the grounds and along Tự Phước street out front, vegetarian food stalls sell bún chay, warm soy milk, and local jams at modest prices. Plan on about 1.5-2 hours to see the complex properly; by mid-morning the grounds can get crowded and congested with tour buses parked close to the walkways, so visiting earlier makes for a calmer walk around.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Linh Phước Pagoda",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Linh Phước is the best reason to take the Đà Lạt tourist train - the pagoda on its own justifies the excursion and the train adds the pleasure of a preserved colonial railway journey. The combination of a train ride from the 1938 French station and the extraordinary mosaic pagoda at the other end makes for one of Đà Lạt's most varied half-mornings, especially if you go early enough to beat the tour buses.",
+          },
+          { type: "heading", text: "Comparison with Khải Định Tomb" },
+          {
+            type: "paragraph",
+            text: "If you've already visited Khải Định Tomb in Huế, you'll immediately recognize the same artistic tradition here. The difference is one of philosophy as much as material: Khải Định uses imperial porcelain mosaics to decorate a royal mausoleum, while Linh Phước transforms the same technique into one of the most extravagant Buddhist temples in Vietnam, built from bottles and broken ceramics rather than imported luxury materials.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
