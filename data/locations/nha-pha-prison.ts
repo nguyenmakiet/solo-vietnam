@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nhaPhaPrison: Location = {
   slug: "nha-pha-historical-site",
   name: "Di tích Nhà Pha",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.386246450441275,
@@ -54,14 +54,82 @@ export const nhaPhaPrison: Location = {
     "Time needed: 45-60 minutes",
   ],
   content: {
-    intro:
-      "Di tích Nhà Pha is a French colonial complex built in 1890 in Đông village, An Hải commune, originally comprising an office building, a lighthouse (nhà đèn), and a kitchen. 'Nhà Pha' derives from the French 'phare' ('lighthouse'), reflecting the site's original role as a French lighthouse and administrative compound - not, as sometimes assumed, from 'maison de force'. After the French returned to Lý Sơn in 1951, the complex was also converted into a detention centre, giving the site its later association with imprisonment and resistance history. On August 16, 1945, as part of the nationwide August Revolution, Lý Sơn's residents rose up to seize power here, raising the red flag with the hammer and sickle at Nhà Pha itself. The French reoccupied the island in 1951 and turned the complex into a detention centre, imprisoning more than 120 people; roughly 100 more resistance fighters and suspected sympathisers were arrested and held in 1953. The United States later used Nhà Pha as its own base and detention site during the war, holding revolutionary figures including Võ Khế, Trần Quy, and Lê Thiện. The former office building survives as the only remaining example of French colonial architecture on the island, with interior walls up to 60cm thick and underground water cisterns beneath the floor for natural cooling and heating. The site was recognised as a provincial-level historical relic by Quảng Ngãi province in 2014.",
-    howToGetThere:
-      "Di tích Nhà Pha is in Đông village, An Hải commune, near the island's eastern side. Ask locally for precise directions, as the historical office building itself is not prominently signposted, though the lighthouse is a well-known local landmark.",
-    whatToExpect:
-      "The complex combines the quiet, under-interpreted remains of the former office building with the still-active lighthouse, which visitors can climb. Note that this is Hải Đăng Lý Sơn specifically, distinct from the nearby Hải Đăng Mù Cu (Mù Cu Cape lighthouse), about 1km away - the two are sometimes confused given how close they sit to each other. The French originally named the lighthouse 'Phare Polo Canton' (Sở Đèn Pha), built it in 1890 about 80m from the shoreline, and brought it into operation in 1898; it topped (and reportedly still tops) a list of Vietnam's five tallest lighthouses, and is cited among nine lighthouses particularly popular with independent travellers nationwide. Functionally, it helps fishing vessels navigate and find their bearings at sea, marks the coastline and dangerous shoals, guides safe entry into port, and can assist aircraft with orientation. The lighthouse itself has been rebuilt since its original 1890s iron structure: the old lamp was removed and briefly relocated to the summit of Núi Thới Lới between 1982-2000 before being judged unsuitable there, then rebuilt on the original site in 2000 and brought back into service on October 16, 2001, with a modern lamp manufactured in Spain. The current structure is a hexagonal cylinder about 3.6m in average diameter with flared support legs at the base, standing 45m from its foundation (50.4m to the sea-level datum), with a light range of 21 nautical miles. A 362-step interior spiral staircase leads up to viewing platforms with iron railings and telescopes, looking out over Lý Sơn's coastline, onion and garlic fields, and fishing boats - one of just three spots on the island (alongside the Thới Lới and Giếng Tiền volcanic craters) offering a full panoramic view. Sunrise is particularly striking here, typically falling somewhere between 5:15-6:10 AM depending on the season. The historical side of the site - the 1945 uprising and later imprisonments - has little on-site interpretation, so the significance is easy to miss without some background reading first.",
-    travelTips:
-      "Di tích Nhà Pha rewards visitors who come with a little background on the 1945 uprising and the site's later use as a prison under both French and American administrations - the physical remains alone don't convey much without that context. The lighthouse climb, on the other hand, is worthwhile purely for the panoramic views, regardless of interest in the history. Pair with both communal houses and the Hải Đội Hoàng Sa museum for a coherent half-day covering the island's past.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Di tích Nhà Pha Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Di tích Nhà Pha is a French colonial complex built in 1890 in Đông village, An Hải commune, originally comprising an office building, a lighthouse (nhà đèn), and a kitchen. 'Nhà Pha' derives from the French 'phare' ('lighthouse'), reflecting the site's original role as a French lighthouse and administrative compound - not, as sometimes assumed, from 'maison de force'. After the French returned to Lý Sơn in 1951, the complex was also converted into a detention centre, giving the site its later association with imprisonment and resistance history.",
+          },
+          { type: "heading", text: "The 1945 Uprising" },
+          {
+            type: "paragraph",
+            text: "On August 16, 1945, as part of the nationwide August Revolution, Lý Sơn's residents rose up to seize power here, raising the red flag with the hammer and sickle at Nhà Pha itself.",
+          },
+          { type: "heading", text: "French and American Detention" },
+          {
+            type: "paragraph",
+            text: "The French reoccupied the island in 1951 and turned the complex into a detention centre, imprisoning more than 120 people; roughly 100 more resistance fighters and suspected sympathisers were arrested and held in 1953. The United States later used Nhà Pha as its own base and detention site during the war, holding revolutionary figures including Võ Khế, Trần Quy, and Lê Thiện.",
+          },
+          { type: "heading", text: "The Surviving Office Building" },
+          {
+            type: "paragraph",
+            text: "The former office building survives as the only remaining example of French colonial architecture on the island, with interior walls up to 60cm thick and underground water cisterns beneath the floor for natural cooling and heating. The site was recognised as a provincial-level historical relic by Quảng Ngãi province in 2014.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Di tích Nhà Pha",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Di tích Nhà Pha is in Đông village, An Hải commune, near the island's eastern side. Ask locally for precise directions, as the historical office building itself is not prominently signposted, though the lighthouse is a well-known local landmark.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Di tích Nhà Pha",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The complex combines the quiet, under-interpreted remains of the former office building with the still-active lighthouse, which visitors can climb. Note that this is Hải Đăng Lý Sơn specifically, distinct from the nearby Hải Đăng Mù Cu (Mù Cu Cape lighthouse), about 1km away - the two are sometimes confused given how close they sit to each other.",
+          },
+          { type: "heading", text: "History of the Lighthouse" },
+          {
+            type: "paragraph",
+            text: "The French originally named the lighthouse 'Phare Polo Canton' (Sở Đèn Pha), built it in 1890 about 80m from the shoreline, and brought it into operation in 1898; it topped (and reportedly still tops) a list of Vietnam's five tallest lighthouses, and is cited among nine lighthouses particularly popular with independent travellers nationwide. Functionally, it helps fishing vessels navigate and find their bearings at sea, marks the coastline and dangerous shoals, guides safe entry into port, and can assist aircraft with orientation. The lighthouse itself has been rebuilt since its original 1890s iron structure: the old lamp was removed and briefly relocated to the summit of Núi Thới Lới between 1982-2000 before being judged unsuitable there, then rebuilt on the original site in 2000 and brought back into service on October 16, 2001, with a modern lamp manufactured in Spain.",
+          },
+          { type: "heading", text: "Climbing the Lighthouse" },
+          {
+            type: "paragraph",
+            text: "The current structure is a hexagonal cylinder about 3.6m in average diameter with flared support legs at the base, standing 45m from its foundation (50.4m to the sea-level datum), with a light range of 21 nautical miles. A 362-step interior spiral staircase leads up to viewing platforms with iron railings and telescopes, looking out over Lý Sơn's coastline, onion and garlic fields, and fishing boats - one of just three spots on the island (alongside the Thới Lới and Giếng Tiền volcanic craters) offering a full panoramic view. Sunrise is particularly striking here, typically falling somewhere between 5:15-6:10 AM depending on the season.",
+          },
+          { type: "heading", text: "Limited On-Site Interpretation" },
+          {
+            type: "paragraph",
+            text: "The historical side of the site - the 1945 uprising and later imprisonments - has little on-site interpretation, so the significance is easy to miss without some background reading first.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Di tích Nhà Pha",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Di tích Nhà Pha rewards visitors who come with a little background on the 1945 uprising and the site's later use as a prison under both French and American administrations - the physical remains alone don't convey much without that context. The lighthouse climb, on the other hand, is worthwhile purely for the panoramic views, regardless of interest in the history. Pair with both communal houses and the Hải Đội Hoàng Sa museum for a coherent half-day covering the island's past.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

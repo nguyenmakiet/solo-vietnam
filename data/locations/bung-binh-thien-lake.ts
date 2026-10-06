@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const bungBinhThienLake: Location = {
   slug: "bung-binh-thien-lake",
   name: "Búng Bình Thiên Lake",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["an-giang"],
   destination: "",
   lat: 10.919979584967262,
@@ -50,14 +50,83 @@ export const bungBinhThienLake: Location = {
     "Búng Bình Thiên is roughly 35km from Châu Đốc (40-50 minutes by motorbike) - combine with the Sam Mountain temples and the Châu Đốc floating villages for a full An Giang border district day. On its own, plan for 1-1.5 hours here, including a full loop of the lake by boat (about 40 minutes) and something to eat",
   ],
   content: {
-    intro:
-      "Búng Bình Thiên is the largest natural freshwater lake in the Mekong Delta, in An Phú district, the northernmost district of An Giang province, at the junction of Khánh An, Khánh Bình, Nhơn Hội, and Quốc Thái communes, close to the Cambodian border (about 4km away). Locally it's also called the 'Heaven Lake' (hồ Nước Trời), and local legend explains why: a Tây Sơn dynasty general is said to have used the area as a supply base in the late 18th century, and when the land proved too dry, he prayed to Heaven and Earth for water, then plunged his sword into the ground - fresh water is said to have sprung up from that spot and, over time, filled into the lake seen today. That story is offered as the origin of the name 'Búng Bình Thiên' - 'búng' (lake/pond), 'bình' (peaceful), 'thiên' (heaven) - though a more prosaic historical account, based on the Nguyễn dynasty's 1832 land registry, suggests the name instead evolved from an earlier place name, 'Bình Tiên,' gradually shifting in pronunciation over time. The lake actually comprises two connected bodies of water: Búng Lớn, the larger at around 193 hectares and up to 6 metres deep, and the smaller Búng Nhỏ, around 10 hectares and up to 5 metres deep - when people say 'Búng Bình Thiên,' they usually mean Búng Lớn. Its size shifts a great deal with the seasons, roughly 220-300 hectares in the dry season (estimates vary by source) and expanding to 600-900 hectares during the Mekong flood. The lake's mouth connects to the Bình Di River, and during flood season the reddish, silt-heavy river water entering at C3 bridge stays visibly separate from the lake's clear water for a stretch, rather than blending - a phenomenon locals attribute to underwater plants that slow the current and filter the water, keeping the lake clear year-round even as the river beside it runs muddy.",
-    howToGetThere:
-      "Búng Bình Thiên is located in Khánh Bình commune, An Phú district, roughly 35km north of Châu Đốc city (about 40-50 minutes by motorbike, taxi, or local bus). From Hồ Chí Minh City or Hà Nội, the most practical approach is to fly to the nearest airport (Cần Thơ is the closest with regular service) and continue overland to Châu Đốc, or take a direct long-distance bus to Châu Đốc. From Châu Đốc, follow the road north along the Mekong toward the border - the lake is signposted from the main road, passing a series of Cham villages and C3 bridge along the way. It's worth double-checking directions with Google Maps or asking locally, since the final stretch isn't always obvious. Small wooden boats are available for hire at the lake edge, arranged informally with local residents. The area is also accessible as part of organised day tours from Châu Đốc.",
-    whatToExpect:
-      "At peak flood season the lake is a wide expanse of water, with lotus blossoms covering parts of the surface and no visible far shore from some points on the boat. Boatmen pole or motor through open channels, and the atmosphere is quiet - rustling lotus leaves, waterbirds calling from the reeds, and, at C3 bridge, the visibly two-toned water where the Bình Di River meets the lake. Beyond the boat trip, visitors can join in with more hands-on activities the local community does regardless of tourists - netting cá linh (a small Mekong fish), catching frogs, picking sesbania flowers, or having a look at the floating houses and fish cages along the shore. The surrounding Cham villages are visible from the water - mosque domes and stilt houses along the shoreline - and walking through them, especially around prayer times, gives a glimpse of daily Cham Muslim life that's genuinely distinct from the rest of the Mekong Delta. It's worth being honest about the overall impression, though: this isn't a dramatic, jaw-dropping landscape. It's calm, plain in a good way, and rewards people who come specifically for the pace of life and the Cham culture rather than expecting a single spectacular view.",
-    travelTips:
-      "Búng Bình Thiên is best suited to travellers specifically curious about rural Mekong Delta life and Cham Muslim culture, or those who enjoy a slow, quiet destination without needing a dramatic payoff - it's not the right stop for anyone expecting the kind of view that makes people gasp. The lotus and the expanded lake are strongly seasonal, so visiting outside flood season (roughly Aug-early Nov) means a smaller, less visually striking lake. This is also a fairly undeveloped destination - services are limited, boat trips are arranged informally rather than through a proper tour operator, and there isn't much in the way of restaurants or facilities beyond a handful of simple food stalls in the Cham village. Combine the lake with time in the villages, a stop at a local mosque if you're respectful about it, and a proper meal of local Cham and Mekong Delta specialties (lẩu mắm with cá rô đồng, bông súng, bông điên điển, chả cá linh) rather than treating it as a quick photo stop. Pack a hat, sunglasses, sunscreen, a light jacket for the boat, and insect repellent if you're out at dusk.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Búng Bình Thiên Lake Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Búng Bình Thiên is the largest natural freshwater lake in the Mekong Delta, in An Phú district, the northernmost district of An Giang province, at the junction of Khánh An, Khánh Bình, Nhơn Hội, and Quốc Thái communes, close to the Cambodian border (about 4km away).",
+          },
+          { type: "heading", text: "The Legend Behind the Name" },
+          {
+            type: "paragraph",
+            text: "Locally it's also called the 'Heaven Lake' (hồ Nước Trời), and local legend explains why: a Tây Sơn dynasty general is said to have used the area as a supply base in the late 18th century, and when the land proved too dry, he prayed to Heaven and Earth for water, then plunged his sword into the ground - fresh water is said to have sprung up from that spot and, over time, filled into the lake seen today. That story is offered as the origin of the name 'Búng Bình Thiên' - 'búng' (lake/pond), 'bình' (peaceful), 'thiên' (heaven) - though a more prosaic historical account, based on the Nguyễn dynasty's 1832 land registry, suggests the name instead evolved from an earlier place name, 'Bình Tiên,' gradually shifting in pronunciation over time.",
+          },
+          { type: "heading", text: "Two Lakes and the Seasons" },
+          {
+            type: "paragraph",
+            text: "The lake actually comprises two connected bodies of water: Búng Lớn, the larger at around 193 hectares and up to 6 metres deep, and the smaller Búng Nhỏ, around 10 hectares and up to 5 metres deep - when people say 'Búng Bình Thiên,' they usually mean Búng Lớn. Its size shifts a great deal with the seasons, roughly 220-300 hectares in the dry season (estimates vary by source) and expanding to 600-900 hectares during the Mekong flood. The lake's mouth connects to the Bình Di River, and during flood season the reddish, silt-heavy river water entering at C3 bridge stays visibly separate from the lake's clear water for a stretch, rather than blending - a phenomenon locals attribute to underwater plants that slow the current and filter the water, keeping the lake clear year-round even as the river beside it runs muddy.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Búng Bình Thiên Lake",
+        blocks: [
+          { type: "heading", text: "Getting to the Lake" },
+          {
+            type: "paragraph",
+            text: "Búng Bình Thiên is located in Khánh Bình commune, An Phú district, roughly 35km north of Châu Đốc city (about 40-50 minutes by motorbike, taxi, or local bus). From Hồ Chí Minh City or Hà Nội, the most practical approach is to fly to the nearest airport (Cần Thơ is the closest with regular service) and continue overland to Châu Đốc, or take a direct long-distance bus to Châu Đốc. From Châu Đốc, follow the road north along the Mekong toward the border - the lake is signposted from the main road, passing a series of Cham villages and C3 bridge along the way. It's worth double-checking directions with Google Maps or asking locally, since the final stretch isn't always obvious.",
+          },
+          { type: "heading", text: "Boats and Day Tours" },
+          {
+            type: "paragraph",
+            text: "Small wooden boats are available for hire at the lake edge, arranged informally with local residents. The area is also accessible as part of organised day tours from Châu Đốc.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Búng Bình Thiên Lake",
+        blocks: [
+          { type: "heading", text: "Flood Season on the Lake" },
+          {
+            type: "paragraph",
+            text: "At peak flood season the lake is a wide expanse of water, with lotus blossoms covering parts of the surface and no visible far shore from some points on the boat. Boatmen pole or motor through open channels, and the atmosphere is quiet - rustling lotus leaves, waterbirds calling from the reeds, and, at C3 bridge, the visibly two-toned water where the Bình Di River meets the lake.",
+          },
+          { type: "heading", text: "Activities and Cham Villages" },
+          {
+            type: "paragraph",
+            text: "Beyond the boat trip, visitors can join in with more hands-on activities the local community does regardless of tourists - netting cá linh (a small Mekong fish), catching frogs, picking sesbania flowers, or having a look at the floating houses and fish cages along the shore. The surrounding Cham villages are visible from the water - mosque domes and stilt houses along the shoreline - and walking through them, especially around prayer times, gives a glimpse of daily Cham Muslim life that's genuinely distinct from the rest of the Mekong Delta.",
+          },
+          { type: "heading", text: "Setting Expectations" },
+          {
+            type: "paragraph",
+            text: "It's worth being honest about the overall impression, though: this isn't a dramatic, jaw-dropping landscape. It's calm, plain in a good way, and rewards people who come specifically for the pace of life and the Cham culture rather than expecting a single spectacular view.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Búng Bình Thiên Lake",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Búng Bình Thiên is best suited to travellers specifically curious about rural Mekong Delta life and Cham Muslim culture, or those who enjoy a slow, quiet destination without needing a dramatic payoff - it's not the right stop for anyone expecting the kind of view that makes people gasp. The lotus and the expanded lake are strongly seasonal, so visiting outside flood season (roughly Aug-early Nov) means a smaller, less visually striking lake. This is also a fairly undeveloped destination - services are limited, boat trips are arranged informally rather than through a proper tour operator, and there isn't much in the way of restaurants or facilities beyond a handful of simple food stalls in the Cham village.",
+          },
+          {
+            type: "paragraph",
+            text: "Combine the lake with time in the villages, a stop at a local mosque if you're respectful about it, and a proper meal of local Cham and Mekong Delta specialties (lẩu mắm with cá rô đồng, bông súng, bông điên điển, chả cá linh) rather than treating it as a quick photo stop. Pack a hat, sunglasses, sunscreen, a light jacket for the boat, and insect repellent if you're out at dusk.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

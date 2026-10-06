@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const capeCaNa: Location = {
   slug: "cape-ca-na",
   name: "Cape Cà Ná",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ninh-thuan"],
   destination: "",
   lat: 11.333761739966421,
@@ -50,14 +50,84 @@ export const capeCaNa: Location = {
     "The surrounding landscape is classified as semi-arid - the combination of bare rock, sparse cactus scrub, and intense blue sea is unlike anything else on the Vietnamese coast",
   ],
   content: {
-    intro:
-      "Cape Cà Ná sits on the southern Ninh Thuận coastline where Highway 1A - running alongside the Reunification Railway line for this stretch - rounds a granite headland between the sea and the near-desert interior. The name comes from a Cham word meaning roughly 'submerged rocks,' a reference to the reef-strewn, mountainous headland running into the sea here, and the combined road-and-rail coastal route between Cà Ná and Phan Rang is often cited as one of the most beautiful in Vietnam. The landscape is unlike any other stretch of the Vietnamese coast: Ninh Thuận receives less annual rainfall than almost any province in the country, and the vegetation inland from the shore is sparse scrub and cactus rather than the tropical greenery found north and south. The cape itself is a mass of rounded granite boulders that descend directly to the sea - weathered into smooth forms by millennia of wave action, arranged in the chaotic geometry of a collapsed rockfall - interspersed with a handful of small, sheltered swimming coves rather than one continuous sandy beach. Cà Ná is also known as one of the country's largest salt-producing areas, supplying salt and fish sauce to markets around Vietnam, and the nearby salt fields are a distinctive sight in their own right. The combination of bare rock, clear blue water, and the arid backdrop creates a distinctive visual character that makes Cà Ná one of the most recognisable coastal landmarks for anyone riding or driving the length of Vietnam - about 3-4 hours from Ho Chi Minh City, far enough that it stays relatively uncrowded even as a weekend option. It's worth knowing, too, that the Vĩnh Tân power complex sits a few kilometres away just across the Bình Thuận border and is visible from parts of the coast here - it has been the subject of environmental concerns in the past, particularly around dust, ash, and waste management, though current oversight and ash-recycling efforts are reportedly more robust than in earlier years.",
-    howToGetThere:
-      "Cape Cà Ná is located on Highway 1A in Thuận Nam district, approximately 30km south of Phan Rang city and 130km north of Phan Thiết. The cape is directly on the main highway - no detour is required. By motorbike or car from Phan Rang (the nearest significant town), the drive takes about 30-40 minutes south. From Phan Thiết, the journey is approximately 2 hours north; from Ho Chi Minh City, budget around 3-4 hours by car or motorbike. Long-distance bus or train to Phan Rang typically costs around 130,000-500,000 VND depending on the operator and seat class, with onward travel to Cà Ná by motorbike, taxi, or local bus. The roadside pullout at the cape is clearly identifiable from the highway - the boulder formations are visible from the road. Parking is informal on the highway shoulder. A handful of accommodation options exist nearby if you want to stay over rather than just pass through, including Hòn Cò Cà Ná resort and a couple of smaller hotels in the village.",
-    whatToExpect:
-      "The boulder field extends from the roadside down to the waterline - a scramble of 5-10 minutes reaches the lower rocks at sea level. The granite surfaces are smooth and the formations create natural seats and platforms overlooking the water. The coastline alternates between rocky headland sections - clear water, but not really suitable for swimming - and small sheltered coves where swimming is genuinely pleasant in the dry season, provided you stay close to shore. In the right spots and conditions, surfing, diving, and windsurfing are also possible, and coral snorkeling is an option on clear days. The fishing village of Cà Ná is visible nearby - a working community with boats, nets, and the infrastructure of the local seafood trade, and Ninh Thuận's largest fishing fleet is based here. The surrounding landscape is visibly arid: the hills behind the cape are brown and rock-strewn with little vegetation cover. On a clear day, structures from the Vĩnh Tân power complex across the provincial line are visible in the distance along parts of the coast.",
-    travelTips:
-      "Cà Ná works best as a stop on a longer coastal journey rather than a standalone destination - the appeal is the visual impact of the landscape and the opportunity to stretch the legs on a boulder scramble, not a full day's itinerary, though staying overnight is possible if you want to linger. For riders on the Hanoi to Ho Chi Minh City route, the cape marks the beginning of the most visually distinctive section of the southern coastal run - the Ninh Thuận and Bình Thuận coast between here and Mũi Né has the most dramatic scenery of the entire route. Budget 30-60 minutes at the cape itself, longer if you add the pass viewpoint, the salt fields, or the rock formations nearby, eat at the village if the timing works, and continue.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cape Cà Ná Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cape Cà Ná sits on the southern Ninh Thuận coastline where Highway 1A - running alongside the Reunification Railway line for this stretch - rounds a granite headland between the sea and the near-desert interior. The name comes from a Cham word meaning roughly 'submerged rocks,' a reference to the reef-strewn, mountainous headland running into the sea here, and the combined road-and-rail coastal route between Cà Ná and Phan Rang is often cited as one of the most beautiful in Vietnam.",
+          },
+          { type: "heading", text: "Arid Landscape and Granite Boulders" },
+          {
+            type: "paragraph",
+            text: "The landscape is unlike any other stretch of the Vietnamese coast: Ninh Thuận receives less annual rainfall than almost any province in the country, and the vegetation inland from the shore is sparse scrub and cactus rather than the tropical greenery found north and south. The cape itself is a mass of rounded granite boulders that descend directly to the sea - weathered into smooth forms by millennia of wave action, arranged in the chaotic geometry of a collapsed rockfall - interspersed with a handful of small, sheltered swimming coves rather than one continuous sandy beach.",
+          },
+          { type: "heading", text: "Salt Production and Surroundings" },
+          {
+            type: "paragraph",
+            text: "Cà Ná is also known as one of the country's largest salt-producing areas, supplying salt and fish sauce to markets around Vietnam, and the nearby salt fields are a distinctive sight in their own right. The combination of bare rock, clear blue water, and the arid backdrop creates a distinctive visual character that makes Cà Ná one of the most recognisable coastal landmarks for anyone riding or driving the length of Vietnam - about 3-4 hours from Ho Chi Minh City, far enough that it stays relatively uncrowded even as a weekend option. It's worth knowing, too, that the Vĩnh Tân power complex sits a few kilometres away just across the Bình Thuận border and is visible from parts of the coast here - it has been the subject of environmental concerns in the past, particularly around dust, ash, and waste management, though current oversight and ash-recycling efforts are reportedly more robust than in earlier years.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cape Cà Ná",
+        blocks: [
+          { type: "heading", text: "Location on Highway 1A" },
+          {
+            type: "paragraph",
+            text: "Cape Cà Ná is located on Highway 1A in Thuận Nam district, approximately 30km south of Phan Rang city and 130km north of Phan Thiết. The cape is directly on the main highway - no detour is required.",
+          },
+          { type: "heading", text: "Driving Times" },
+          {
+            type: "paragraph",
+            text: "By motorbike or car from Phan Rang (the nearest significant town), the drive takes about 30-40 minutes south. From Phan Thiết, the journey is approximately 2 hours north; from Ho Chi Minh City, budget around 3-4 hours by car or motorbike.",
+          },
+          { type: "heading", text: "Bus, Parking and Accommodation" },
+          {
+            type: "paragraph",
+            text: "Long-distance bus or train to Phan Rang typically costs around 130,000-500,000 VND depending on the operator and seat class, with onward travel to Cà Ná by motorbike, taxi, or local bus. The roadside pullout at the cape is clearly identifiable from the highway - the boulder formations are visible from the road. Parking is informal on the highway shoulder. A handful of accommodation options exist nearby if you want to stay over rather than just pass through, including Hòn Cò Cà Ná resort and a couple of smaller hotels in the village.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cape Cà Ná",
+        blocks: [
+          { type: "heading", text: "The Boulder Field" },
+          {
+            type: "paragraph",
+            text: "The boulder field extends from the roadside down to the waterline - a scramble of 5-10 minutes reaches the lower rocks at sea level. The granite surfaces are smooth and the formations create natural seats and platforms overlooking the water.",
+          },
+          { type: "heading", text: "Swimming, Surfing and Snorkeling" },
+          {
+            type: "paragraph",
+            text: "The coastline alternates between rocky headland sections - clear water, but not really suitable for swimming - and small sheltered coves where swimming is genuinely pleasant in the dry season, provided you stay close to shore. In the right spots and conditions, surfing, diving, and windsurfing are also possible, and coral snorkeling is an option on clear days.",
+          },
+          { type: "heading", text: "Fishing Village and Landscape" },
+          {
+            type: "paragraph",
+            text: "The fishing village of Cà Ná is visible nearby - a working community with boats, nets, and the infrastructure of the local seafood trade, and Ninh Thuận's largest fishing fleet is based here. The surrounding landscape is visibly arid: the hills behind the cape are brown and rock-strewn with little vegetation cover. On a clear day, structures from the Vĩnh Tân power complex across the provincial line are visible in the distance along parts of the coast.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cape Cà Ná",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cà Ná works best as a stop on a longer coastal journey rather than a standalone destination - the appeal is the visual impact of the landscape and the opportunity to stretch the legs on a boulder scramble, not a full day's itinerary, though staying overnight is possible if you want to linger. For riders on the Hanoi to Ho Chi Minh City route, the cape marks the beginning of the most visually distinctive section of the southern coastal run - the Ninh Thuận and Bình Thuận coast between here and Mũi Né has the most dramatic scenery of the entire route. Budget 30-60 minutes at the cape itself, longer if you add the pass viewpoint, the salt fields, or the rock formations nearby, eat at the village if the timing works, and continue.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const voiPhucTemple: Location = {
   slug: "voi-phuc-temple",
   name: "Voi Phuc Temple",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.030661760804428, 
@@ -58,14 +58,82 @@ export const voiPhucTemple: Location = {
     "If you want festival atmosphere - lion and dragon dances, a palanquin procession, chess competitions, and more - visit during the 9th-11th day of the second lunar month, with the 10th being the core commemoration day for Linh Lang. For a quieter visit, go on an ordinary weekday",
   ],
   content: {
-    intro:
-      "Voi Phuc Temple (Đền Voi Phục), more precisely Đền Voi Phục Thủ Lệ, is the western guardian of the Thăng Long Tứ Trấn - the four sacred temples believed to protect the old citadel of Thăng Long from each cardinal direction - standing opposite Bạch Mã (east), Quán Thánh (north), and Kim Liên (south). It sits on Kim Mã street next to Thủ Lệ Park, in what was once Thủ Lệ village, now Ngọc Khánh ward, Ba Đình district. Note that there's a second, unrelated temple in Hanoi also called Đền Voi Phục, located on Thụy Khuê street - the two are easy to confuse, so it's worth specifying 'Thủ Lệ' when asking directions. The temple's founding is attributed to the Lý dynasty, with sources citing either the reign of Lý Thái Tông (1028-1054) or, more specifically, the year 1065 - which would actually place it under Lý Thánh Tông, who succeeded Thái Tông in 1054. It's dedicated to Linh Lang Đại Vương, a prince who, according to legend, was a reincarnation of a son of the Dragon King (Long Quân) and helped defeat invading Song Chinese forces; some accounts place his death in 1076 at the Cầu (Như Nguyệt) river defensive line, after which he was posthumously honoured as Đại Vương Thượng Đẳng Phúc Thần. Local legend also explains the temple's name: whenever Linh Lang rode into battle, his elephants would kneel down so he could mount them, and two stone elephant statues kneeling at the temple gate commemorate this today. Unlike the more purely legendary or nature-deity figures honoured at some of the other Tứ Trấn temples, Linh Lang is often described as a genuine historical figure, even though his legend also carries this mythological reincarnation element. Voi Phục is generally considered the largest and grandest of the four guardian temples, and together with the other three, it has been recognised as part of a Special National Relic.",
-    howToGetThere:
-      "Voi Phuc Temple is at 306B Kim Mã street, Ngọc Khánh ward, Ba Đình district (some sources cite the nearby address 362 Kim Mã), right next to Thủ Lệ Park, near the Kim Mã/La Thành intersection. By personal vehicle or taxi, navigate directly to 'Đền Voi Phục' rather than 'Thủ Lệ Park' or 'Thủ Lệ Zoo' to avoid being directed to the wrong gate. By bus, routes 16, 27, 32, 34, and 49 all serve the area around Thủ Lệ Park. Whichever way you arrive, don't park at the zoo's back gate - self-appointed attendants there sometimes mislead visitors into thinking it's a short walk to the temple, when in reality it can be well over a kilometre.",
-    whatToExpect:
-      "The temple sits apart from the rest of Thủ Lệ Park, on raised ground known as Long Thủ mound, with mature trees and a lake in front. Two stone elephants kneel at the gate, and three paths lead up to the main courtyard - a central staircase of 12 stone steps reserved for ceremonial palanquin use, and two side paths for everyday visitors. The complex is laid out symmetrically along a central axis: triple gate (tam quan), a crescent-moon well (giếng bán nguyệt), a front ceremonial hall, a middle hall, and the rear sanctuary, growing progressively more sacred toward the back. Despite the temple's Lý-dynasty origins, its current buildings mainly reflect Nguyễn-dynasty architectural style, the result of many rounds of restoration over the centuries, most recently a major renovation completed around 2009-2010 to coincide with Thăng Long-Hanoi's 1000th anniversary. Woodcarvings throughout depict tứ linh (the four sacred creatures - dragon, unicorn, turtle, phoenix, symbolising power and good fortune) and tứ quý (the four seasons, symbolising permanence), alongside lacquered and gilded horizontal boards, parallel couplets, and inlaid ceramic work. The grounds are notably spacious and green, with birdsong and old trees giving the site a calm, unhurried feel despite sitting in a busy part of the city - though it can get crowded during the Lunar New Year period and the February festival.",
-    travelTips:
-      "Voi Phục pairs naturally with a stop at Thủ Lệ Park next door, and fits into a wider look at the Thăng Long Tứ Trấn alongside Bạch Mã, Kim Liên, and Quán Thánh, though each temple sits in a different part of the city, so treat visiting all four as a loose Hanoi-wide theme rather than a single day trip. Locals come here not just for the festival but on ordinary days too, to pray for good fortune, prosperity, and success. Given its size and relative distance from other central landmarks, it works well paired with sights further west or north in Ba Đình district. Most importantly: search specifically for the temple's own entrance on your map rather than Thủ Lệ Park or Zoo, and don't be talked into parking at the zoo's back gate.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Voi Phuc Temple Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Voi Phuc Temple (Đền Voi Phục), more precisely Đền Voi Phục Thủ Lệ, is the western guardian of the Thăng Long Tứ Trấn - the four sacred temples believed to protect the old citadel of Thăng Long from each cardinal direction - standing opposite Bạch Mã (east), Quán Thánh (north), and Kim Liên (south). It sits on Kim Mã street next to Thủ Lệ Park, in what was once Thủ Lệ village, now Ngọc Khánh ward, Ba Đình district. Note that there's a second, unrelated temple in Hanoi also called Đền Voi Phục, located on Thụy Khuê street - the two are easy to confuse, so it's worth specifying 'Thủ Lệ' when asking directions.",
+          },
+          { type: "heading", text: "Founding and Linh Lang Đại Vương" },
+          {
+            type: "paragraph",
+            text: "The temple's founding is attributed to the Lý dynasty, with sources citing either the reign of Lý Thái Tông (1028-1054) or, more specifically, the year 1065 - which would actually place it under Lý Thánh Tông, who succeeded Thái Tông in 1054. It's dedicated to Linh Lang Đại Vương, a prince who, according to legend, was a reincarnation of a son of the Dragon King (Long Quân) and helped defeat invading Song Chinese forces; some accounts place his death in 1076 at the Cầu (Như Nguyệt) river defensive line, after which he was posthumously honoured as Đại Vương Thượng Đẳng Phúc Thần. Local legend also explains the temple's name: whenever Linh Lang rode into battle, his elephants would kneel down so he could mount them, and two stone elephant statues kneeling at the temple gate commemorate this today. Unlike the more purely legendary or nature-deity figures honoured at some of the other Tứ Trấn temples, Linh Lang is often described as a genuine historical figure, even though his legend also carries this mythological reincarnation element.",
+          },
+          { type: "heading", text: "The Largest of the Four Guardian Temples" },
+          {
+            type: "paragraph",
+            text: "Voi Phục is generally considered the largest and grandest of the four guardian temples, and together with the other three, it has been recognised as part of a Special National Relic.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Voi Phuc Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Voi Phuc Temple is at 306B Kim Mã street, Ngọc Khánh ward, Ba Đình district (some sources cite the nearby address 362 Kim Mã), right next to Thủ Lệ Park, near the Kim Mã/La Thành intersection. By personal vehicle or taxi, navigate directly to 'Đền Voi Phục' rather than 'Thủ Lệ Park' or 'Thủ Lệ Zoo' to avoid being directed to the wrong gate.",
+          },
+          { type: "heading", text: "Bus and Parking" },
+          {
+            type: "paragraph",
+            text: "By bus, routes 16, 27, 32, 34, and 49 all serve the area around Thủ Lệ Park. Whichever way you arrive, don't park at the zoo's back gate - self-appointed attendants there sometimes mislead visitors into thinking it's a short walk to the temple, when in reality it can be well over a kilometre.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Voi Phuc Temple",
+        blocks: [
+          { type: "heading", text: "Setting and Approach" },
+          {
+            type: "paragraph",
+            text: "The temple sits apart from the rest of Thủ Lệ Park, on raised ground known as Long Thủ mound, with mature trees and a lake in front. Two stone elephants kneel at the gate, and three paths lead up to the main courtyard - a central staircase of 12 stone steps reserved for ceremonial palanquin use, and two side paths for everyday visitors.",
+          },
+          { type: "heading", text: "Layout and Architecture" },
+          {
+            type: "paragraph",
+            text: "The complex is laid out symmetrically along a central axis: triple gate (tam quan), a crescent-moon well (giếng bán nguyệt), a front ceremonial hall, a middle hall, and the rear sanctuary, growing progressively more sacred toward the back. Despite the temple's Lý-dynasty origins, its current buildings mainly reflect Nguyễn-dynasty architectural style, the result of many rounds of restoration over the centuries, most recently a major renovation completed around 2009-2010 to coincide with Thăng Long-Hanoi's 1000th anniversary. Woodcarvings throughout depict tứ linh (the four sacred creatures - dragon, unicorn, turtle, phoenix, symbolising power and good fortune) and tứ quý (the four seasons, symbolising permanence), alongside lacquered and gilded horizontal boards, parallel couplets, and inlaid ceramic work.",
+          },
+          { type: "heading", text: "The Grounds" },
+          {
+            type: "paragraph",
+            text: "The grounds are notably spacious and green, with birdsong and old trees giving the site a calm, unhurried feel despite sitting in a busy part of the city - though it can get crowded during the Lunar New Year period and the February festival.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Voi Phuc Temple",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Voi Phục pairs naturally with a stop at Thủ Lệ Park next door, and fits into a wider look at the Thăng Long Tứ Trấn alongside Bạch Mã, Kim Liên, and Quán Thánh, though each temple sits in a different part of the city, so treat visiting all four as a loose Hanoi-wide theme rather than a single day trip. Locals come here not just for the festival but on ordinary days too, to pray for good fortune, prosperity, and success.",
+          },
+          {
+            type: "paragraph",
+            text: "Given its size and relative distance from other central landmarks, it works well paired with sights further west or north in Ba Đình district. Most importantly: search specifically for the temple's own entrance on your map rather than Thủ Lệ Park or Zoo, and don't be talked into parking at the zoo's back gate.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

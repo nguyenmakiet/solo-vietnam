@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const quanBaTwinMountains: Location = {
   slug: "quan-ba-twin-mountains",
   name: "Quản Bạ Twin Mountains",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.06521535060752,
@@ -43,14 +43,88 @@ export const quanBaTwinMountains: Location = {
     "The road here has frequent hairpin turns and grades over 10% - if you're not a confident rider, or you're travelling with elderly relatives or young children, consider a private driver or guided tour for this stretch",
   ],
   content: {
-    intro:
-      "The Twin Mountains - Núi Đôi, also known locally as Núi Cô Tiên ('Fairy Mountain') - are two near-identical, rounded dolomite peaks rising from the Quản Bạ (Tam Sơn) Valley floor, side by side, their symmetry so precise that they appear deliberately placed. The peaks are the visual centrepiece of the Quản Bạ section of the Ha Giang Loop and appear in more photographs of the route than almost any other single landmark. The best-known legend behind them tells of a fairy named Hoa Đào, who fell in love with a H'mông man after hearing him play a haunting tune on a đàn môi (jaw harp); the two married and had a son. When the Jade Emperor discovered the affair, she was forced back to heaven, leaving her young child behind - and left her breasts as a token of that maternal bond, which became the two round, breast-shaped peaks that give the mountains their folk name. Her tears of grief for the husband and child she left behind are said to have become the Miện River, which winds through the valley below, and her flowing milk is said to explain the valley's cool climate and abundant groundwater, keeping the Tam Sơn valley fertile and productive. Geologically, the peaks are composed of dolomite and formed through tectonic processes during the Quaternary, with local geological sources dating their formation to roughly 1.6–2 million years ago; subsequent weathering gradually shaped the soft, rounded forms seen today, symmetric enough to look almost deliberately matched. The site was officially recognised as a National Scenic Heritage Site by Vietnam's Ministry of Culture, Sports and Tourism in 2010. The valley floor sits at around 1,000m elevation - notably lower than the 1,500m at Heaven Gate above. The peaks are surrounded by rice terraces worked by H'mong, Dao, Tày, and Bố Y minority families, and the combination of the rounded mountain forms rising from the layered green and gold terraces is one of the most compositionally distinctive landscapes in northern Vietnam.",
-    howToGetThere:
-      "The Twin Mountains sit in Tam Sơn town, Quản Bạ district, on Highway 4C - the same road that passes Heaven Gate just before it. Sources give somewhat different distances from Hà Giang city, ranging from about 40km to 52km, so treat any single figure as approximate. The main viewpoints are along the descent road below Heaven Gate (the peaks are visible along most of that roughly 3km stretch) and from a roadside viewpoint above Tam Sơn town. The valley floor around the peaks is accessible by motorbike on side roads from Tam Sơn - riding the roads around the mountains gives ground-level views of the surrounding rice terraces. Tam Sơn town is the nearest accommodation base.",
-    whatToExpect:
-      "From the descent road below Heaven Gate, both peaks are visible simultaneously against the valley backdrop. The view changes continuously as the road switchbacks down - different angles, different distances, different proportions of terrace and mountain and sky. From the valley floor, the peaks are massive and close - the scale only apparent when standing beneath them. There is a dedicated staircase specific to the mountains - a climb of about 135 steps to a spot known as 'Fairy Bosom Panorama,' located roughly 1.3km from Heaven Gate on the left side of the road - distinct from the separate ~100-step climb at Heaven Gate itself, which is a different viewpoint entirely. Most visitors, though, simply pull over at one of the roadside viewpoints for photos rather than climbing either staircase. The surrounding terrace roads are excellent for slow motorbike riding or walking - the farms and villages around the mountains are active and unhurried.",
-    travelTips:
-      "Núi Đôi is a photograph destination first and a trekking destination second - the views of the peaks from the descent road and the roadside viewpoint above town are the primary draw. It's also easy to combine with other nearby stops on the loop, including Thẩm Mã Pass and the H'mông King's Palace further along toward Đồng Văn. Allow at least 30–45 minutes in the Quản Bạ/Tam Sơn area for the mountains specifically - the descent road offers multiple stopping points and the views change enough to justify pausing at two or three spots. In cloud inversion conditions (dawn, roughly October-November), the peaks above the mist are one of the most exceptional natural photographs available on the loop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Quản Bạ Twin Mountains Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Twin Mountains - Núi Đôi, also known locally as Núi Cô Tiên ('Fairy Mountain') - are two near-identical, rounded dolomite peaks rising from the Quản Bạ (Tam Sơn) Valley floor, side by side, their symmetry so precise that they appear deliberately placed. The peaks are the visual centrepiece of the Quản Bạ section of the Ha Giang Loop and appear in more photographs of the route than almost any other single landmark.",
+          },
+          { type: "heading", text: "The Legend of the Fairy Hoa Đào" },
+          {
+            type: "paragraph",
+            text: "The best-known legend behind them tells of a fairy named Hoa Đào, who fell in love with a H'mông man after hearing him play a haunting tune on a đàn môi (jaw harp); the two married and had a son. When the Jade Emperor discovered the affair, she was forced back to heaven, leaving her young child behind - and left her breasts as a token of that maternal bond, which became the two round, breast-shaped peaks that give the mountains their folk name. Her tears of grief for the husband and child she left behind are said to have become the Miện River, which winds through the valley below, and her flowing milk is said to explain the valley's cool climate and abundant groundwater, keeping the Tam Sơn valley fertile and productive.",
+          },
+          { type: "heading", text: "Geology and Heritage Status" },
+          {
+            type: "paragraph",
+            text: "Geologically, the peaks are composed of dolomite and formed through tectonic processes during the Quaternary, with local geological sources dating their formation to roughly 1.6–2 million years ago; subsequent weathering gradually shaped the soft, rounded forms seen today, symmetric enough to look almost deliberately matched. The site was officially recognised as a National Scenic Heritage Site by Vietnam's Ministry of Culture, Sports and Tourism in 2010.",
+          },
+          { type: "heading", text: "The Valley and Its Communities" },
+          {
+            type: "paragraph",
+            text: "The valley floor sits at around 1,000m elevation - notably lower than the 1,500m at Heaven Gate above. The peaks are surrounded by rice terraces worked by H'mong, Dao, Tày, and Bố Y minority families, and the combination of the rounded mountain forms rising from the layered green and gold terraces is one of the most compositionally distinctive landscapes in northern Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Quản Bạ Twin Mountains",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Twin Mountains sit in Tam Sơn town, Quản Bạ district, on Highway 4C - the same road that passes Heaven Gate just before it. Sources give somewhat different distances from Hà Giang city, ranging from about 40km to 52km, so treat any single figure as approximate.",
+          },
+          { type: "heading", text: "Viewpoints and Valley Roads" },
+          {
+            type: "paragraph",
+            text: "The main viewpoints are along the descent road below Heaven Gate (the peaks are visible along most of that roughly 3km stretch) and from a roadside viewpoint above Tam Sơn town. The valley floor around the peaks is accessible by motorbike on side roads from Tam Sơn - riding the roads around the mountains gives ground-level views of the surrounding rice terraces. Tam Sơn town is the nearest accommodation base.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Quản Bạ Twin Mountains",
+        blocks: [
+          { type: "heading", text: "Views from the Descent Road" },
+          {
+            type: "paragraph",
+            text: "From the descent road below Heaven Gate, both peaks are visible simultaneously against the valley backdrop. The view changes continuously as the road switchbacks down - different angles, different distances, different proportions of terrace and mountain and sky. From the valley floor, the peaks are massive and close - the scale only apparent when standing beneath them.",
+          },
+          { type: "heading", text: "The Staircase and Roadside Stops" },
+          {
+            type: "paragraph",
+            text: "There is a dedicated staircase specific to the mountains - a climb of about 135 steps to a spot known as 'Fairy Bosom Panorama,' located roughly 1.3km from Heaven Gate on the left side of the road - distinct from the separate ~100-step climb at Heaven Gate itself, which is a different viewpoint entirely. Most visitors, though, simply pull over at one of the roadside viewpoints for photos rather than climbing either staircase.",
+          },
+          { type: "heading", text: "Terrace Roads" },
+          {
+            type: "paragraph",
+            text: "The surrounding terrace roads are excellent for slow motorbike riding or walking - the farms and villages around the mountains are active and unhurried.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Quản Bạ Twin Mountains",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Núi Đôi is a photograph destination first and a trekking destination second - the views of the peaks from the descent road and the roadside viewpoint above town are the primary draw. It's also easy to combine with other nearby stops on the loop, including Thẩm Mã Pass and the H'mông King's Palace further along toward Đồng Văn. Allow at least 30–45 minutes in the Quản Bạ/Tam Sơn area for the mountains specifically - the descent road offers multiple stopping points and the views change enough to justify pausing at two or three spots.",
+          },
+          { type: "heading", text: "Cloud Inversions" },
+          {
+            type: "paragraph",
+            text: "In cloud inversion conditions (dawn, roughly October-November), the peaks above the mist are one of the most exceptional natural photographs available on the loop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

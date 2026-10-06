@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const benThanhMarket: Location = {
   slug: "ben-thanh-market",
   name: "Ben Thanh Market",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ho-chi-minh-city"],
   destination: "ho-chi-minh-city",
   lat: 10.772695965273028,
@@ -56,14 +56,87 @@ export const benThanhMarket: Location = {
     "If your time in Vietnam is tight and you want a concentrated taste of Saigon market energy without travelling far, Ben Thanh is genuinely hard to beat for convenience. If you have a longer trip planned - riding a motorbike around the country, for instance - know that hundreds of cheaper, more authentic local markets are waiting for you elsewhere along the way; Ben Thanh doesn't need to be the only market experience of your trip.",
   ],
   content: {
-    intro:
-      "Ben Thanh Market has occupied its current site at the centre of District 1 since 1914. The market's name dates back much further, to 1788-1790, when Nguyễn Vương (later Emperor Gia Long) built the Bát Quái citadel after retaking Gia Định from Tây Sơn forces - a riverside dock (bến) near the citadel (thành) served soldiers and visitors, and a market that grew up beside it took the name 'Chợ Bến Thành' (Dock-Before-the-Citadel Market). That original market burned down when French and Spanish forces attacked Gia Định in 1859 and was rebuilt nearby; by 1911 the rebuilt structure had become structurally unsound, and French authorities relocated it again to its current site, filling in a swamp called Ao Bồ Rệt. The current building - a large covered hall with a central clocktower entrance that has become the primary visual symbol of Ho Chi Minh City - was built by French contractor Brossard et Maupin from 1912 to 1914, opening with a three-day festival (28-30 March 1914) called 'Tân Vương Hội' that drew over 100,000 visitors. It covers approximately 13,000-13,056 square metres and houses hundreds of stalls selling food, clothing, textiles, souvenirs, and household goods. A 1952 renovation added 12 ceramic relief panels by the Biên Hòa workshop at the four gates, and a major restoration took place in 1985. The market functions simultaneously as a working local market and one of the most visited tourist destinations in southern Vietnam - though many Vietnamese now half-joke that it's 'only for foreigners', since locals tend to shop elsewhere for better prices. Yet almost everyone in Ho Chi Minh City still uses the clocktower as a landmark when giving directions - proof that the market's role as an orientation point has outlasted its role as a place locals actually shop. The surrounding traffic roundabout and the adjacent Ben Thanh metro station (terminus of HCMC's first metro line) have made the market's clocktower the default orientation landmark for central District 1.",
-    howToGetThere:
-      "Ben Thanh Market is located at the heart of District 1, at the intersection of Lê Lợi, Trần Hưng Đạo, and Lê Lai streets. It is visible from most points in central District 1 and within walking distance of the majority of hotels in the area. The Ben Thanh metro station (Line 1) is immediately adjacent. From Bùi Viện street, the market is a 10-minute walk north. By bus, numerous routes (01, 02, 03, 04, 18, 19, 28, 36, 45, 52, 53, 56, 65, 93, 109, 152, and others) serve the area for around 6,000 VND. By motorbike, car, or ride-hailing app (Grab, Gojek, Be), the location is easy to find via GPS, with paid parking available nearby.",
-    whatToExpect:
-      "The market interior is divided by gate and section: food and produce toward the interior, clothing and textiles around the perimeter, souvenirs and handicrafts concentrated near the main tourist entrances. Each of the four cardinal gates specializes differently - East for cosmetics and sweets, West for shoes and handicrafts, South (the iconic clocktower entrance) for dry goods and textiles, North for flowers and fruit. The food section is the most authentic part of the market - fresh produce, dried goods, and a cluster of food stalls serving cooked Vietnamese dishes from multiple regions, including some long-running stalls with 50+ years of history. The souvenir and clothing sections are heavily oriented toward tourist trade, with English commonly spoken by vendors. The outside perimeter hosts additional stalls and, from around 6 PM, a livelier night market with street food, grilled dishes, seafood, and beer that many visitors prefer to the interior.",
-    travelTips:
-      "Ben Thanh Market is worth visiting once for orientation and atmosphere even if serious shopping isn't the goal - the building itself, the clocktower, and the energy of a large covered market are interesting independently of whether anything is purchased. For buying souvenirs, the market is convenient but not the best value in the city - the same lacquerware, silk items, and coffee that sell here are available for less at wholesale areas near Bình Tây Market in Chợ Lớn, or from street vendors elsewhere. The food stalls inside are consistently good value and represent one of the most straightforward ways to sample a range of Vietnamese regional dishes in one place. Combine with nearby District 1 landmarks - Independence Palace, Notre-Dame Cathedral, the War Remnants Museum, and Nguyễn Huệ walking street are all within easy reach.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ben Thanh Market Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ben Thanh Market has occupied its current site at the centre of District 1 since 1914.",
+          },
+          { type: "heading", text: "Earlier Markets Since 1788" },
+          {
+            type: "paragraph",
+            text: "The market's name dates back much further, to 1788-1790, when Nguyễn Vương (later Emperor Gia Long) built the Bát Quái citadel after retaking Gia Định from Tây Sơn forces - a riverside dock (bến) near the citadel (thành) served soldiers and visitors, and a market that grew up beside it took the name 'Chợ Bến Thành' (Dock-Before-the-Citadel Market). That original market burned down when French and Spanish forces attacked Gia Định in 1859 and was rebuilt nearby; by 1911 the rebuilt structure had become structurally unsound, and French authorities relocated it again to its current site, filling in a swamp called Ao Bồ Rệt.",
+          },
+          { type: "heading", text: "The 1914 Building" },
+          {
+            type: "paragraph",
+            text: "The current building - a large covered hall with a central clocktower entrance that has become the primary visual symbol of Ho Chi Minh City - was built by French contractor Brossard et Maupin from 1912 to 1914, opening with a three-day festival (28-30 March 1914) called 'Tân Vương Hội' that drew over 100,000 visitors. It covers approximately 13,000-13,056 square metres and houses hundreds of stalls selling food, clothing, textiles, souvenirs, and household goods. A 1952 renovation added 12 ceramic relief panels by the Biên Hòa workshop at the four gates, and a major restoration took place in 1985.",
+          },
+          { type: "heading", text: "Market and Landmark" },
+          {
+            type: "paragraph",
+            text: "The market functions simultaneously as a working local market and one of the most visited tourist destinations in southern Vietnam - though many Vietnamese now half-joke that it's 'only for foreigners', since locals tend to shop elsewhere for better prices. Yet almost everyone in Ho Chi Minh City still uses the clocktower as a landmark when giving directions - proof that the market's role as an orientation point has outlasted its role as a place locals actually shop. The surrounding traffic roundabout and the adjacent Ben Thanh metro station (terminus of HCMC's first metro line) have made the market's clocktower the default orientation landmark for central District 1.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ben Thanh Market",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ben Thanh Market is located at the heart of District 1, at the intersection of Lê Lợi, Trần Hưng Đạo, and Lê Lai streets. It is visible from most points in central District 1 and within walking distance of the majority of hotels in the area. The Ben Thanh metro station (Line 1) is immediately adjacent. From Bùi Viện street, the market is a 10-minute walk north.",
+          },
+          { type: "heading", text: "Bus and Ride-Hailing" },
+          {
+            type: "paragraph",
+            text: "By bus, numerous routes (01, 02, 03, 04, 18, 19, 28, 36, 45, 52, 53, 56, 65, 93, 109, 152, and others) serve the area for around 6,000 VND. By motorbike, car, or ride-hailing app (Grab, Gojek, Be), the location is easy to find via GPS, with paid parking available nearby.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ben Thanh Market",
+        blocks: [
+          { type: "heading", text: "Sections and Gates" },
+          {
+            type: "paragraph",
+            text: "The market interior is divided by gate and section: food and produce toward the interior, clothing and textiles around the perimeter, souvenirs and handicrafts concentrated near the main tourist entrances. Each of the four cardinal gates specializes differently - East for cosmetics and sweets, West for shoes and handicrafts, South (the iconic clocktower entrance) for dry goods and textiles, North for flowers and fruit.",
+          },
+          { type: "heading", text: "Food Stalls" },
+          {
+            type: "paragraph",
+            text: "The food section is the most authentic part of the market - fresh produce, dried goods, and a cluster of food stalls serving cooked Vietnamese dishes from multiple regions, including some long-running stalls with 50+ years of history.",
+          },
+          { type: "heading", text: "Souvenirs, Clothing and the Night Market" },
+          {
+            type: "paragraph",
+            text: "The souvenir and clothing sections are heavily oriented toward tourist trade, with English commonly spoken by vendors. The outside perimeter hosts additional stalls and, from around 6 PM, a livelier night market with street food, grilled dishes, seafood, and beer that many visitors prefer to the interior.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ben Thanh Market",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Ben Thanh Market is worth visiting once for orientation and atmosphere even if serious shopping isn't the goal - the building itself, the clocktower, and the energy of a large covered market are interesting independently of whether anything is purchased. For buying souvenirs, the market is convenient but not the best value in the city - the same lacquerware, silk items, and coffee that sell here are available for less at wholesale areas near Bình Tây Market in Chợ Lớn, or from street vendors elsewhere.",
+          },
+          {
+            type: "paragraph",
+            text: "The food stalls inside are consistently good value and represent one of the most straightforward ways to sample a range of Vietnamese regional dishes in one place. Combine with nearby District 1 landmarks - Independence Palace, Notre-Dame Cathedral, the War Remnants Museum, and Nguyễn Huệ walking street are all within easy reach.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
