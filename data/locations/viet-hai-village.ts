@@ -114,7 +114,7 @@ export const vietHaiVillage: Location = {
           },
           {
             type: "paragraph",
-            text: "June for the harvest gold, February-March for the fog. Link to the national park article for the trek details: soloinvietnam.com/locations/cat-ba-national-park.",
+            text: "June for the harvest gold, February-March for the fog. For the trek details, see [Cát Bà National Park](/locations/cat-ba-national-park).",
           },
         ],
       },
