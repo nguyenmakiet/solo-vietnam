@@ -62,7 +62,7 @@ export const nhaPhaPrison: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Di tích Nhà Pha is a French colonial complex built in 1890 in Đông village, An Hải commune, originally comprising an office building, a lighthouse (nhà đèn), and a kitchen. 'Nhà Pha' derives from the French 'phare' ('lighthouse'), reflecting the site's original role as a French lighthouse and administrative compound - not, as sometimes assumed, from 'maison de force'. After the French returned to Lý Sơn in 1951, the complex was also converted into a detention centre, giving the site its later association with imprisonment and resistance history.",
+            text: "Di tích Nhà Pha is a French colonial complex built in 1890 in Đông village, An Hải commune, originally comprising an office building, a lighthouse (nhà đèn), and a kitchen. 'Nhà Pha' derives from the French 'phare' ('lighthouse'), reflecting the site's original role as a French lighthouse and administrative compound - not, as sometimes assumed, from 'maison de force'.",
           },
           { type: "heading", text: "The 1945 Uprising" },
           {
