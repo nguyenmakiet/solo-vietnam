@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taHienStreet: Location = {
   slug: "ta-hien-street",
   name: "Ta Hien Street",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.03468686412898,
@@ -44,14 +44,82 @@ export const taHienStreet: Location = {
     "Hanoi's nightlife here has a relaxed, communal feel rather than a rowdy Western party atmosphere - being courteous and respectful of that vibe goes a long way",
   ],
   content: {
-    intro:
-      "Tạ Hiện street and the surrounding lanes of the Old Quarter's northeastern corner constitute Hanoi's most concentrated nightlife area, built around the Vietnamese institution of bia hơi - fresh-brewed draft beer produced daily in small batches and served at street-side stalls in small glasses at prices that have made the intersection of Tạ Hiện and Lương Ngọc Quyến internationally known as 'Bia Hơi Corner'. The street itself runs about 266 metres, from the Lương Ngọc Quyến-Hàng Bạc junction to the Hàng Ngang-Hàng Đào intersection, lined with dozens of uniform, two-storey French colonial-style buildings. Its history traces an interesting arc: under French colonial rule it was officially named Rue Géraud, though locals actually called it 'Ngõ Quảng Lạc' after the Quảng Lạc theatre nearby, once the most famous in Hanoi - the food stalls, porridge and phở shops, crowded beer stands, and sweet-soup and pastry vendors that packed the lane back then were there to serve theatregoers. In 1945 the street was renamed Tạ Hiện, after Tạ Quang Hiện, a leader of the Cần Vương anti-colonial resistance movement in what was then Thái Bình province (now part of Hưng Yên). The street's character today is a particular urban mixture: Vietnamese locals drinking bia hơi on plastic stools alongside backpackers from guesthouses in the surrounding lanes, street food vendors threading through the crowds, and the narrow Old Quarter streetscape pressing in from both sides. The pedestrianisation of the area on weekend evenings, when motorbikes are excluded from the Old Quarter zone, transforms the street into something closer to a continuous outdoor gathering.",
-    howToGetThere:
-      "Tạ Hiện street is in the northeastern section of Hanoi's Old Quarter, approximately 350 metres north of Hoan Kiem Lake - an easy walk. From the lake, walk north along Đinh Tiên Hoàng and turn right onto Hàng Bạc, then left onto Tạ Hiện. From most Old Quarter hotels, the street is within 5-10 minutes walk. In the evening, the Old Quarter often restricts car access and gets heavily congested, so the most convenient approach is to book a Grab xe ôm (motorbike taxi) to somewhere nearby and walk the last stretch in - it also means you get to enjoy the Old Quarter streetscape on foot rather than sitting in traffic. It is most easily found by navigating to 'Bia Hơi Corner' on any map application.",
-    whatToExpect:
-      "The evening scene on Tạ Hiện unfolds in two distinct phases. From around 7-8 PM, street food stalls open up and the street has a cosier, dinner-focused atmosphere - a good time to eat before the crowds build. After 10 PM, the mood shifts as the street becomes more of a lively music and bar scene, with the pavement filling with plastic stools and low tables at which bia hơi is served by the glass at a pace that encourages lingering. The surrounding bars cater to a more mixed international crowd and serve cocktails and imported beer alongside local options, typically at higher prices than the bia hơi stalls - 1900 Le Théâtre, a renovated colonial-era theatre turned nightclub known for its light shows and DJs, is one of the area's better-known venues and one of the few still open into the early hours. Street musicians and performers - acoustic guitarists, small groups dancing to pop hits, occasional traditional Vietnamese music - often set up along the pavement too, adding to the atmosphere. Street food is available continuously from circulating vendors. The noise level is significant - this is not a quiet evening - and the energy is generally convivial. On weekend evenings the pedestrian zone makes the area easier to navigate and the atmosphere more relaxed.",
-    travelTips:
-      "Tạ Hiện is one of those places where the experience depends heavily on approach - sitting on a plastic stool at a bia hơi stall and ordering by pointing is a genuine encounter with Hanoi street culture, while retreating to an air-conditioned bar on the same street is a more insulated version of the same geography. The bia hơi itself - served at around 3-4% alcohol, extremely fresh, and costing less than a bottle of water in most countries - is worth trying on its own terms regardless of whether the surrounding scene is appealing. The street is at its most interesting in the hour before it gets fully crowded, when the Vietnamese regulars still outnumber the tourists. This suits people who enjoy lively energy, socialising, street food culture, and youth nightlife - it's not the place for anyone hoping for quiet or a slow, restful evening, and there's a genuine sense of centuries of history passing by right alongside the modern, Western-influenced party atmosphere.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ta Hien Street Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tạ Hiện street and the surrounding lanes of the Old Quarter's northeastern corner constitute Hanoi's most concentrated nightlife area, built around the Vietnamese institution of bia hơi - fresh-brewed draft beer produced daily in small batches and served at street-side stalls in small glasses at prices that have made the intersection of Tạ Hiện and Lương Ngọc Quyến internationally known as 'Bia Hơi Corner'. The street itself runs about 266 metres, from the Lương Ngọc Quyến-Hàng Bạc junction to the Hàng Ngang-Hàng Đào intersection, lined with dozens of uniform, two-storey French colonial-style buildings.",
+          },
+          { type: "heading", text: "History and Names" },
+          {
+            type: "paragraph",
+            text: "Its history traces an interesting arc: under French colonial rule it was officially named Rue Géraud, though locals actually called it 'Ngõ Quảng Lạc' after the Quảng Lạc theatre nearby, once the most famous in Hanoi - the food stalls, porridge and phở shops, crowded beer stands, and sweet-soup and pastry vendors that packed the lane back then were there to serve theatregoers. In 1945 the street was renamed Tạ Hiện, after Tạ Quang Hiện, a leader of the Cần Vương anti-colonial resistance movement in what was then Thái Bình province (now part of Hưng Yên).",
+          },
+          { type: "heading", text: "The Street Today" },
+          {
+            type: "paragraph",
+            text: "The street's character today is a particular urban mixture: Vietnamese locals drinking bia hơi on plastic stools alongside backpackers from guesthouses in the surrounding lanes, street food vendors threading through the crowds, and the narrow Old Quarter streetscape pressing in from both sides. The pedestrianisation of the area on weekend evenings, when motorbikes are excluded from the Old Quarter zone, transforms the street into something closer to a continuous outdoor gathering.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ta Hien Street",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tạ Hiện street is in the northeastern section of Hanoi's Old Quarter, approximately 350 metres north of Hoan Kiem Lake - an easy walk. From the lake, walk north along Đinh Tiên Hoàng and turn right onto Hàng Bạc, then left onto Tạ Hiện. From most Old Quarter hotels, the street is within 5-10 minutes walk.",
+          },
+          { type: "heading", text: "Evening Access" },
+          {
+            type: "paragraph",
+            text: "In the evening, the Old Quarter often restricts car access and gets heavily congested, so the most convenient approach is to book a Grab xe ôm (motorbike taxi) to somewhere nearby and walk the last stretch in - it also means you get to enjoy the Old Quarter streetscape on foot rather than sitting in traffic. It is most easily found by navigating to 'Bia Hơi Corner' on any map application.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ta Hien Street",
+        blocks: [
+          { type: "heading", text: "Two Evening Phases" },
+          {
+            type: "paragraph",
+            text: "The evening scene on Tạ Hiện unfolds in two distinct phases. From around 7-8 PM, street food stalls open up and the street has a cosier, dinner-focused atmosphere - a good time to eat before the crowds build. After 10 PM, the mood shifts as the street becomes more of a lively music and bar scene, with the pavement filling with plastic stools and low tables at which bia hơi is served by the glass at a pace that encourages lingering.",
+          },
+          { type: "heading", text: "Bars, Music and Street Food" },
+          {
+            type: "paragraph",
+            text: "The surrounding bars cater to a more mixed international crowd and serve cocktails and imported beer alongside local options, typically at higher prices than the bia hơi stalls - 1900 Le Théâtre, a renovated colonial-era theatre turned nightclub known for its light shows and DJs, is one of the area's better-known venues and one of the few still open into the early hours. Street musicians and performers - acoustic guitarists, small groups dancing to pop hits, occasional traditional Vietnamese music - often set up along the pavement too, adding to the atmosphere. Street food is available continuously from circulating vendors.",
+          },
+          { type: "heading", text: "Noise and the Weekend Pedestrian Zone" },
+          {
+            type: "paragraph",
+            text: "The noise level is significant - this is not a quiet evening - and the energy is generally convivial. On weekend evenings the pedestrian zone makes the area easier to navigate and the atmosphere more relaxed.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ta Hien Street",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tạ Hiện is one of those places where the experience depends heavily on approach - sitting on a plastic stool at a bia hơi stall and ordering by pointing is a genuine encounter with Hanoi street culture, while retreating to an air-conditioned bar on the same street is a more insulated version of the same geography. The bia hơi itself - served at around 3-4% alcohol, extremely fresh, and costing less than a bottle of water in most countries - is worth trying on its own terms regardless of whether the surrounding scene is appealing.",
+          },
+          {
+            type: "paragraph",
+            text: "The street is at its most interesting in the hour before it gets fully crowded, when the Vietnamese regulars still outnumber the tourists. This suits people who enjoy lively energy, socialising, street food culture, and youth nightlife - it's not the place for anyone hoping for quiet or a slow, restful evening, and there's a genuine sense of centuries of history passing by right alongside the modern, Western-influenced party atmosphere.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

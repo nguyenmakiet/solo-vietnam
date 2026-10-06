@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const docLetBeach: Location = {
   slug: "doc-let-beach",
   name: "Dốc Lết Beach",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["khanh-hoa"],
   destination: "nha-trang",
   lat: 12.549197725546506,
@@ -45,14 +45,88 @@ export const docLetBeach: Location = {
     "If kayaking, wear a life jacket at all times, go early morning or after 3 PM when the wind and waves are calmer, ask staff for a quick technique briefing if it's your first time, and don't paddle past the marked safe zone - especially during the windier Oct-Dec period",
   ],
   content: {
-    intro:
-      "Dốc Lết Beach stretches along a protected bay in Ninh Hải ward (formerly Ninh Hải commune), Ninh Hòa, about 49-50km north of Nha Trang, and is consistently rated among the most beautiful beaches in Khánh Hòa province. The name itself has a specific, slightly self-deprecating origin: before the area was developed, visitors had to cross soft, sinking sand dunes to reach the water, effectively dragging or shuffling ('lết') their feet step by step - a sensation distinctive enough that it gave the beach its name, still used today even though the ground underfoot is far easier going now. The bay faces west-northwest, giving it natural protection from the northeast swell that affects Nha Trang's main beach in winter, and the water is calmer and often clearer than the city beach. The sand is fine and white along the beach's roughly 8km length, the water shallow enough that it's often still only chest-deep 100 metres from shore - genuinely reassuring for families with young children or non-swimmers - and the mountain backdrop, the Hòn Hèo Peninsula rising to the south, adds a framing that Nha Trang's urban beach lacks. It's sometimes marketed as the 'Hawaii of Vietnam,' a nickname worth taking with a grain of salt but which gives a rough sense of the appeal. The beach has developed modestly with a resort, some guesthouses, and a strip of seafood restaurants, but remains significantly less commercialised than Nha Trang's main strip, and it's one of the few beaches in the area still quiet enough for overnight beach camping.",
-    howToGetThere:
-      "Dốc Lết Beach is about 50km north of Nha Trang along Highway 1A, then a turn east toward the coast. By motorbike, the journey takes about 1 hour from central Nha Trang. City bus route 3 (Nha Trang - Dốc Lết) also runs this route for a fraction of the cost of a taxi, though it's slower, at roughly 1.5 hours. Grab bikes can reach the beach but return booking is unreliable this far out - renting a motorbike for the day is more practical for most visitors. Day tours from Nha Trang are available but limited; most visitors drive themselves. Travellers coming directly from Hồ Chí Minh City can also take a long-distance bus (operators like Phương Trang, Hà Linh, or Khang Thịnh) to Ninh Hòa bus station, then continue locally to the beach. The road from Highway 1A to the beach passes through salt flats and fishing villages - the approach is scenic and part of the experience.",
-    whatToExpect:
-      "The beach is divided into a main resort section with sunbeds and umbrellas, and more informal sections where local families set up for the day. The water is typically clear and calm - ideal for wading, swimming, and floating - and shallow enough to feel genuinely safe for children, unlike some of the more exposed beaches nearer the city. The beach is wider than Nha Trang's main beach and the sand is finer. Seafood restaurants line the beachfront road serving fresh catch at straightforward prices, and bún cá Ninh Hòa (a local fish noodle soup) is worth seeking out specifically. Beach volleyball and football games organised by locals are common, and dugout canoes can be rented informally for a paddle along the shore. The Hòn Khói salt flats, about 10km north of the beach, are an unusual landscape feature - flat white expanses of evaporating seawater worked by hand - and worth a brief detour on the way in or out. Sandboarding down the beach's remaining dunes is still offered (around 20,000 VND a turn for a foam board), even though the tallest dunes that originally gave the beach its name have been partially flattened for easier access over the years.",
-    travelTips:
-      "Dốc Lết is the beach you go to when Nha Trang's main beach feels too crowded or too urban - it suits families, couples, and anyone who wants a proper beach day without big-city noise, and it's a poor fit for anyone hoping for nightlife or a lively social scene, since the whole point of the place is that there isn't much of either. The 1-hour drive north is a commitment but the beach quality generally justifies it - the water is genuinely calmer and clearer, the sand is finer, and the surrounding landscape (salt flats, fishing villages, the Hòn Hèo Peninsula) is more varied than the city beach offers. The combination of Ba Hồ Waterfall in the morning (jungle, swimming, cool) and Dốc Lết in the afternoon (beach, seafood, sun) is one of the better full-day excursions available from Nha Trang. Weekends and Chinese tour group season bring noticeably more crowding and noise than a weekday visit, so factor that into when you go if a quiet beach is the priority.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Dốc Lết Beach Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dốc Lết Beach stretches along a protected bay in Ninh Hải ward (formerly Ninh Hải commune), Ninh Hòa, about 49-50km north of Nha Trang, and is consistently rated among the most beautiful beaches in Khánh Hòa province.",
+          },
+          { type: "heading", text: "Origin of the Name" },
+          {
+            type: "paragraph",
+            text: "The name itself has a specific, slightly self-deprecating origin: before the area was developed, visitors had to cross soft, sinking sand dunes to reach the water, effectively dragging or shuffling ('lết') their feet step by step - a sensation distinctive enough that it gave the beach its name, still used today even though the ground underfoot is far easier going now.",
+          },
+          { type: "heading", text: "The Bay and the Beach" },
+          {
+            type: "paragraph",
+            text: "The bay faces west-northwest, giving it natural protection from the northeast swell that affects Nha Trang's main beach in winter, and the water is calmer and often clearer than the city beach. The sand is fine and white along the beach's roughly 8km length, the water shallow enough that it's often still only chest-deep 100 metres from shore - genuinely reassuring for families with young children or non-swimmers - and the mountain backdrop, the Hòn Hèo Peninsula rising to the south, adds a framing that Nha Trang's urban beach lacks. It's sometimes marketed as the 'Hawaii of Vietnam,' a nickname worth taking with a grain of salt but which gives a rough sense of the appeal. The beach has developed modestly with a resort, some guesthouses, and a strip of seafood restaurants, but remains significantly less commercialised than Nha Trang's main strip, and it's one of the few beaches in the area still quiet enough for overnight beach camping.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Dốc Lết Beach",
+        blocks: [
+          { type: "heading", text: "From Nha Trang" },
+          {
+            type: "paragraph",
+            text: "Dốc Lết Beach is about 50km north of Nha Trang along Highway 1A, then a turn east toward the coast. By motorbike, the journey takes about 1 hour from central Nha Trang. City bus route 3 (Nha Trang - Dốc Lết) also runs this route for a fraction of the cost of a taxi, though it's slower, at roughly 1.5 hours. Grab bikes can reach the beach but return booking is unreliable this far out - renting a motorbike for the day is more practical for most visitors. Day tours from Nha Trang are available but limited; most visitors drive themselves.",
+          },
+          { type: "heading", text: "From Ho Chi Minh City" },
+          {
+            type: "paragraph",
+            text: "Travellers coming directly from Hồ Chí Minh City can also take a long-distance bus (operators like Phương Trang, Hà Linh, or Khang Thịnh) to Ninh Hòa bus station, then continue locally to the beach.",
+          },
+          { type: "heading", text: "The Approach Road" },
+          {
+            type: "paragraph",
+            text: "The road from Highway 1A to the beach passes through salt flats and fishing villages - the approach is scenic and part of the experience.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Dốc Lết Beach",
+        blocks: [
+          { type: "heading", text: "The Beach and the Water" },
+          {
+            type: "paragraph",
+            text: "The beach is divided into a main resort section with sunbeds and umbrellas, and more informal sections where local families set up for the day. The water is typically clear and calm - ideal for wading, swimming, and floating - and shallow enough to feel genuinely safe for children, unlike some of the more exposed beaches nearer the city. The beach is wider than Nha Trang's main beach and the sand is finer.",
+          },
+          { type: "heading", text: "Food and Activities" },
+          {
+            type: "paragraph",
+            text: "Seafood restaurants line the beachfront road serving fresh catch at straightforward prices, and bún cá Ninh Hòa (a local fish noodle soup) is worth seeking out specifically. Beach volleyball and football games organised by locals are common, and dugout canoes can be rented informally for a paddle along the shore.",
+          },
+          { type: "heading", text: "Hòn Khói Salt Flats and Sandboarding" },
+          {
+            type: "paragraph",
+            text: "The Hòn Khói salt flats, about 10km north of the beach, are an unusual landscape feature - flat white expanses of evaporating seawater worked by hand - and worth a brief detour on the way in or out. Sandboarding down the beach's remaining dunes is still offered (around 20,000 VND a turn for a foam board), even though the tallest dunes that originally gave the beach its name have been partially flattened for easier access over the years.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Dốc Lết Beach",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Dốc Lết is the beach you go to when Nha Trang's main beach feels too crowded or too urban - it suits families, couples, and anyone who wants a proper beach day without big-city noise, and it's a poor fit for anyone hoping for nightlife or a lively social scene, since the whole point of the place is that there isn't much of either. The 1-hour drive north is a commitment but the beach quality generally justifies it - the water is genuinely calmer and clearer, the sand is finer, and the surrounding landscape (salt flats, fishing villages, the Hòn Hèo Peninsula) is more varied than the city beach offers.",
+          },
+          {
+            type: "paragraph",
+            text: "The combination of Ba Hồ Waterfall in the morning (jungle, swimming, cool) and Dốc Lết in the afternoon (beach, seafood, sun) is one of the better full-day excursions available from Nha Trang. Weekends and Chinese tour group season bring noticeably more crowding and noise than a weekday visit, so factor that into when you go if a quiet beach is the priority.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

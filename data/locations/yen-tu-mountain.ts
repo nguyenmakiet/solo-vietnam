@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const yenTuMountain: Location = {
   slug: "yen-tu-mountain",
   name: "Yên Tử Mountain",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 21.131344974258912,
@@ -58,14 +58,104 @@ export const yenTuMountain: Location = {
     "Safety: the final section to Chùa Đồng has no handrails on some rock sections and becomes very slippery in rain. Descend with particular care in wet conditions. During peak season, crowd pushing at the summit creates real safety risks.",
   ],
   content: {
-    intro:
-      "Yên Tử Mountain rises to 1,068 metres in Uông Bí, Quảng Ninh, and holds a position in Vietnamese Buddhism that has no equivalent anywhere else in the country. In 1299, King Trần Nhân Tông - the monarch who had twice led Vietnamese forces to defeat the Mongol invasions - abdicated his throne and climbed Yên Tử to live as a monk, eventually founding the Trúc Lâm school of Zen Buddhism: the only school of Buddhism indigenous to Vietnam, developed on Vietnamese soil by a Vietnamese king. The mountain became the spiritual centre of this tradition, and the pilgrimage route up its forested slopes has been walked continuously for over 700 years. (Though often overlooked: Trần Nhân Tông passed away not at the summit but at the nearby Ngọa Vân hermitage - a detail that surprises even many Vietnamese visitors.) On 12 July 2025, the broader complex of which Yên Tử forms the centrepiece - Yên Tử - Vĩnh Nghiêm - Côn Sơn - Kiếp Bạc - was inscribed as a UNESCO World Cultural Heritage Site, recognising the chain of sites associated with the founding and spread of the Trúc Lâm school. Today, pilgrims pass through more than twenty pagodas, shrines, meditation halls, and ancient forest sites spread across the mountain - an unbroken sequence spanning over seven centuries of devotion. The summit holds Chùa Đồng, the highest pagoda in Vietnam - a bronze structure whose history begins with a consort of the Trịnh lords in the 17th century and whose current form dates to its most recent reconstruction, completed on 30 January 2007.",
-    howToGetThere:
-      "Yên Tử is in Uông Bí, Quảng Ninh. From Hanoi (140km, 3-3.5 hours): follow Highway 5B/CT04 then Highway 10, then approximately 10km of provincial road. By public bus, services from Mỹ Đình, Giáp Bát, or Gia Lâm stations travel toward Uông Bí or Hạ Long - alight at Chùa Trình on Highway 18 and transfer to bus 16 directly to Yên Tử. From Hạ Long (approximately 50km west on Highway 18, about 1 hour). A large car park at the mountain base serves as the starting point. Free electric shuttle buses run from the car park to the trailhead and cable car stations.",
-    whatToExpect:
-      "At the base, after taking the free electric shuttle to the trailhead, the route passes Suối Giải Oan (a stream linked to the legend of court ladies who drowned themselves when they could not prevent the king from becoming a monk) and Chùa Giải Oan. The trail then climbs through Đường Tùng - an ancient avenue of centuries-old pines - past Tháp Tổ (the ancestral tower) to Chùa Hoa Yên, the most important pagoda complex on the mountain, at 535m, where cloud frequently drifts through in the mornings. Continuing upward, the route passes Chùa Một Mái (a pagoda built partly into a cliff face), the natural rock formation of An Kỳ Sinh (shaped like a monk at prayer), and the bronze statue of Trần Nhân Tông at 912m elevation before reaching Chùa Đồng on the summit at 1,068m. The cable car system covers two sections (roughly ga 1→2 and ga 3→4) and skips several pagodas including Chùa Vân Tiêu and Chùa Bảo Sái, which are only accessible on foot. The summit is frequently windy and cloud-covered; the views on a clear day extend across the Quảng Ninh forest and coast. Every stop along the route functions as an active place of worship rather than an archaeological monument - incense burns continuously, monks are present, and pilgrims pray alongside tourists throughout the day.",
-    travelTips:
-      "Yên Tử works best when treated as a pilgrimage rather than a standard hike - the stops at the various pagoda complexes along the route are as meaningful as the summit, and observing the pilgrimage behaviour of Vietnamese devotees adds a cultural dimension that elevates the experience beyond a trek. The recommended approach for most visitors is cable car up and walking down - this saves significant energy for the return, passes the key pagodas, and allows appreciation of the forest without the full physical demand of the ascent. Walking entirely on foot takes 4-6 hours one way, passes everything the cable car misses, and is rewarding for those with the fitness and time for it. The festival season (1st-3rd lunar months) creates an atmosphere unlike anything else in Vietnam's religious calendar, but the cable car queues and summit crowding are genuinely intense - if experiencing the spiritual energy of mass pilgrimage is the goal, this is the time to come; if peaceful reflection is the goal, April-June or October-December are far better.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Yên Tử Mountain Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Yên Tử Mountain rises to 1,068 metres in Uông Bí, Quảng Ninh, and holds a position in Vietnamese Buddhism that has no equivalent anywhere else in the country.",
+          },
+          { type: "heading", text: "Trần Nhân Tông and the Trúc Lâm School" },
+          {
+            type: "paragraph",
+            text: "In 1299, King Trần Nhân Tông - the monarch who had twice led Vietnamese forces to defeat the Mongol invasions - abdicated his throne and climbed Yên Tử to live as a monk, eventually founding the Trúc Lâm school of Zen Buddhism: the only school of Buddhism indigenous to Vietnam, developed on Vietnamese soil by a Vietnamese king. The mountain became the spiritual centre of this tradition, and the pilgrimage route up its forested slopes has been walked continuously for over 700 years. (Though often overlooked: Trần Nhân Tông passed away not at the summit but at the nearby Ngọa Vân hermitage - a detail that surprises even many Vietnamese visitors.)",
+          },
+          { type: "heading", text: "UNESCO Recognition and the Pilgrimage Route" },
+          {
+            type: "paragraph",
+            text: "On 12 July 2025, the broader complex of which Yên Tử forms the centrepiece - Yên Tử - Vĩnh Nghiêm - Côn Sơn - Kiếp Bạc - was inscribed as a UNESCO World Cultural Heritage Site, recognising the chain of sites associated with the founding and spread of the Trúc Lâm school. Today, pilgrims pass through more than twenty pagodas, shrines, meditation halls, and ancient forest sites spread across the mountain - an unbroken sequence spanning over seven centuries of devotion.",
+          },
+          { type: "heading", text: "Chùa Đồng" },
+          {
+            type: "paragraph",
+            text: "The summit holds Chùa Đồng, the highest pagoda in Vietnam - a bronze structure whose history begins with a consort of the Trịnh lords in the 17th century and whose current form dates to its most recent reconstruction, completed on 30 January 2007.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Yên Tử Mountain",
+        blocks: [
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "Yên Tử is in Uông Bí, Quảng Ninh. From Hanoi (140km, 3-3.5 hours): follow Highway 5B/CT04 then Highway 10, then approximately 10km of provincial road. By public bus, services from Mỹ Đình, Giáp Bát, or Gia Lâm stations travel toward Uông Bí or Hạ Long - alight at Chùa Trình on Highway 18 and transfer to bus 16 directly to Yên Tử.",
+          },
+          { type: "heading", text: "From Hạ Long" },
+          {
+            type: "paragraph",
+            text: "From Hạ Long (approximately 50km west on Highway 18, about 1 hour).",
+          },
+          { type: "heading", text: "At the Mountain Base" },
+          {
+            type: "paragraph",
+            text: "A large car park at the mountain base serves as the starting point. Free electric shuttle buses run from the car park to the trailhead and cable car stations.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Yên Tử Mountain",
+        blocks: [
+          { type: "heading", text: "The Lower Route" },
+          {
+            type: "paragraph",
+            text: "At the base, after taking the free electric shuttle to the trailhead, the route passes Suối Giải Oan (a stream linked to the legend of court ladies who drowned themselves when they could not prevent the king from becoming a monk) and Chùa Giải Oan. The trail then climbs through Đường Tùng - an ancient avenue of centuries-old pines - past Tháp Tổ (the ancestral tower) to Chùa Hoa Yên, the most important pagoda complex on the mountain, at 535m, where cloud frequently drifts through in the mornings.",
+          },
+          { type: "heading", text: "Chùa Một Mái and the Upper Route" },
+          {
+            type: "paragraph",
+            text: "Continuing upward, the route passes Chùa Một Mái (a pagoda built partly into a cliff face), the natural rock formation of An Kỳ Sinh (shaped like a monk at prayer), and the bronze statue of Trần Nhân Tông at 912m elevation before reaching Chùa Đồng on the summit at 1,068m.",
+          },
+          { type: "heading", text: "The Cable Car" },
+          {
+            type: "paragraph",
+            text: "The cable car system covers two sections (roughly ga 1→2 and ga 3→4) and skips several pagodas including Chùa Vân Tiêu and Chùa Bảo Sái, which are only accessible on foot.",
+          },
+          { type: "heading", text: "The Summit and Active Worship" },
+          {
+            type: "paragraph",
+            text: "The summit is frequently windy and cloud-covered; the views on a clear day extend across the Quảng Ninh forest and coast. Every stop along the route functions as an active place of worship rather than an archaeological monument - incense burns continuously, monks are present, and pilgrims pray alongside tourists throughout the day.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Yên Tử Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Yên Tử works best when treated as a pilgrimage rather than a standard hike - the stops at the various pagoda complexes along the route are as meaningful as the summit, and observing the pilgrimage behaviour of Vietnamese devotees adds a cultural dimension that elevates the experience beyond a trek.",
+          },
+          { type: "heading", text: "Cable Car or On Foot" },
+          {
+            type: "paragraph",
+            text: "The recommended approach for most visitors is cable car up and walking down - this saves significant energy for the return, passes the key pagodas, and allows appreciation of the forest without the full physical demand of the ascent. Walking entirely on foot takes 4-6 hours one way, passes everything the cable car misses, and is rewarding for those with the fitness and time for it.",
+          },
+          { type: "heading", text: "Festival Season" },
+          {
+            type: "paragraph",
+            text: "The festival season (1st-3rd lunar months) creates an atmosphere unlike anything else in Vietnam's religious calendar, but the cable car queues and summit crowding are genuinely intense - if experiencing the spiritual energy of mass pilgrimage is the goal, this is the time to come; if peaceful reflection is the goal, April-June or October-December are far better.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

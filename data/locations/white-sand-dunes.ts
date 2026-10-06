@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const whiteSandDunes: Location = {
   slug: "white-sand-dunes",
   name: "White Sand Dunes",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
   destination: "phan-thiet",
   lat: 11.07112795980011,
@@ -41,14 +41,87 @@ export const whiteSandDunes: Location = {
     "Wear shoes or sandals you can easily remove - walking barefoot on the dunes is pleasant in the early morning but impossible by mid-morning when the sand heats up",
   ],
   content: {
-    intro:
-      "The White Sand Dunes - Đồi Cát Trắng, more commonly known locally as Bàu Trắng - are located in Hoà Thắng commune, Bắc Bình district, a different and significantly larger dune system from the Red Dunes closer to Mũi Né town (distances cited vary by source: roughly 30-45km from central Mũi Né, or up to 60km from Phan Thiết city, depending on the exact starting point). The name comes from the Central Vietnamese dialect word 'bàu,' meaning a natural freshwater lake that holds water year-round amid sandy terrain, paired with 'trắng' (white) for the surrounding dunes. The dunes stretch across several kilometres of the Bình Thuận coastline, rising to around 40 metres at their highest points, and are flanked by two freshwater lakes - referred to locally as Bàu Trắng and Bàu Sen, though some also call them Bàu Ông and Bàu Bà - that create a landscape combination unique in Vietnam: stark white sand desert beside green freshwater, with the East Sea visible in the distance. The lakes themselves formed first, as a natural low-lying basin collecting rainwater and groundwater over time, before centuries of strong coastal winds built up the surrounding dunes from wind-blown sand. The site is sometimes called the 'Sahara of Vietnam', a description that overstates the scale but captures the genuine disorientation of standing in an expanse of white sand in a tropical country. It's a popular, well-developed tourist site rather than a remote wilderness - expect a ticket booth, vehicle rental touts, and a real flow of visitors, especially around sunrise.",
-    howToGetThere:
-      "The White Sand Dunes are too far from Mũi Né town to reach comfortably by motorbike for most visitors. The standard approach is a jeep tour from Mũi Né, typically departing at 4:00–4:30 AM for sunrise. Jeep tours are usually priced per vehicle rather than per person - a private jeep seating 4-8 people runs roughly 500,000-800,000 VND for around 4 hours, often including the Red Dunes, Fairy Stream, and a fishing village as additional stops - so cost per person drops considerably in a group. If driving from Phan Thiết city centre yourself, the route runs via Highway 1A to Lương Sơn town, then a further stretch to Hoà Thắng commune.",
-    whatToExpect:
-      "The dune area is entered through a gate with a small ticket booth, and a path leads through scrub vegetation to the main dune face. At sunrise, the low-angle light turns the white sand pale gold and casts long shadows across the rippled surface - the photographic conditions are the best of any time of day. You can walk to the main viewpoint and lake in about 10-15 minutes at no extra cost, or pay for an ATV or open-top buggy if you'd rather not walk or want the novelty of the ride - staff at the entrance often actively encourage the paid options, so go in knowing walking is a perfectly viable choice. The dune face has a steep pitch suitable for sand sliding (around 50,000 VND per board), and camel photo sessions (around 100,000 VND) and a lake boat ride (round trip, 20-30 minutes, 2-3 people max, around 300,000 VND) are also on offer. During summer months (roughly April-August, depending on the year), lotus and water lily flowers bloom across parts of Bàu Sen, adding pink and purple tones to the scene. By 7:30–8:00 AM the light has flattened, the sand has begun to heat, and quad bikes and tourist groups have noticeably picked up.",
-    travelTips:
-      "The White Sand Dunes reward early commitment - a 4 AM wake-up is not optional if the sunrise experience is the goal. The distance from Mũi Né town makes it impractical as a spontaneous visit; book a jeep tour the evening before through your accommodation, and clarify upfront whether the price is per person or per vehicle. The dunes are noticeably more dramatic than the Red Dunes in terms of scale and landscape variety - the freshwater lakes add a dimension the Red Dunes don't have. If you only have time for one dune experience in Mũi Né, Bàu Trắng at sunrise is the right choice - just go in with realistic expectations about the on-site vehicle rental scene, which some visitors find pushier and less transparently safety-conscious than they'd like, and take the risk of off-road vehicle rides seriously rather than treating it as a purely fun photo prop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes White Sand Dunes Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The White Sand Dunes - Đồi Cát Trắng, more commonly known locally as Bàu Trắng - are located in Hoà Thắng commune, Bắc Bình district, a different and significantly larger dune system from the Red Dunes closer to Mũi Né town (distances cited vary by source: roughly 30-45km from central Mũi Né, or up to 60km from Phan Thiết city, depending on the exact starting point). The name comes from the Central Vietnamese dialect word 'bàu,' meaning a natural freshwater lake that holds water year-round amid sandy terrain, paired with 'trắng' (white) for the surrounding dunes.",
+          },
+          { type: "heading", text: "Dunes and Lakes" },
+          {
+            type: "paragraph",
+            text: "The dunes stretch across several kilometres of the Bình Thuận coastline, rising to around 40 metres at their highest points, and are flanked by two freshwater lakes - referred to locally as Bàu Trắng and Bàu Sen, though some also call them Bàu Ông and Bàu Bà - that create a landscape combination unique in Vietnam: stark white sand desert beside green freshwater, with the East Sea visible in the distance. The lakes themselves formed first, as a natural low-lying basin collecting rainwater and groundwater over time, before centuries of strong coastal winds built up the surrounding dunes from wind-blown sand.",
+          },
+          { type: "heading", text: "What Kind of Site It Is" },
+          {
+            type: "paragraph",
+            text: "The site is sometimes called the 'Sahara of Vietnam', a description that overstates the scale but captures the genuine disorientation of standing in an expanse of white sand in a tropical country. It's a popular, well-developed tourist site rather than a remote wilderness - expect a ticket booth, vehicle rental touts, and a real flow of visitors, especially around sunrise.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to White Sand Dunes",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The White Sand Dunes are too far from Mũi Né town to reach comfortably by motorbike for most visitors.",
+          },
+          { type: "heading", text: "Jeep Tours" },
+          {
+            type: "paragraph",
+            text: "The standard approach is a jeep tour from Mũi Né, typically departing at 4:00–4:30 AM for sunrise. Jeep tours are usually priced per vehicle rather than per person - a private jeep seating 4-8 people runs roughly 500,000-800,000 VND for around 4 hours, often including the Red Dunes, Fairy Stream, and a fishing village as additional stops - so cost per person drops considerably in a group.",
+          },
+          { type: "heading", text: "Driving Yourself" },
+          {
+            type: "paragraph",
+            text: "If driving from Phan Thiết city centre yourself, the route runs via Highway 1A to Lương Sơn town, then a further stretch to Hoà Thắng commune.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at White Sand Dunes",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The dune area is entered through a gate with a small ticket booth, and a path leads through scrub vegetation to the main dune face. At sunrise, the low-angle light turns the white sand pale gold and casts long shadows across the rippled surface - the photographic conditions are the best of any time of day.",
+          },
+          { type: "heading", text: "Activities" },
+          {
+            type: "paragraph",
+            text: "You can walk to the main viewpoint and lake in about 10-15 minutes at no extra cost, or pay for an ATV or open-top buggy if you'd rather not walk or want the novelty of the ride - staff at the entrance often actively encourage the paid options, so go in knowing walking is a perfectly viable choice. The dune face has a steep pitch suitable for sand sliding (around 50,000 VND per board), and camel photo sessions (around 100,000 VND) and a lake boat ride (round trip, 20-30 minutes, 2-3 people max, around 300,000 VND) are also on offer.",
+          },
+          { type: "heading", text: "Lotus Season and Late Mornings" },
+          {
+            type: "paragraph",
+            text: "During summer months (roughly April-August, depending on the year), lotus and water lily flowers bloom across parts of Bàu Sen, adding pink and purple tones to the scene. By 7:30–8:00 AM the light has flattened, the sand has begun to heat, and quad bikes and tourist groups have noticeably picked up.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for White Sand Dunes",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The White Sand Dunes reward early commitment - a 4 AM wake-up is not optional if the sunrise experience is the goal. The distance from Mũi Né town makes it impractical as a spontaneous visit; book a jeep tour the evening before through your accommodation, and clarify upfront whether the price is per person or per vehicle.",
+          },
+          { type: "heading", text: "White Dunes or Red Dunes" },
+          {
+            type: "paragraph",
+            text: "The dunes are noticeably more dramatic than the Red Dunes in terms of scale and landscape variety - the freshwater lakes add a dimension the Red Dunes don't have. If you only have time for one dune experience in Mũi Né, Bàu Trắng at sunrise is the right choice - just go in with realistic expectations about the on-site vehicle rental scene, which some visitors find pushier and less transparently safety-conscious than they'd like, and take the risk of off-road vehicle rides seriously rather than treating it as a purely fun photo prop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

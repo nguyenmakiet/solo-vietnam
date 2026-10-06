@@ -51,14 +51,84 @@ export const tuDucTomb: Location = {
     "The complex is large - allow enough time, don't rush. Plenty of shade under the pine trees for rest breaks.",
   ],
   content: {
-    intro:
-      "Tự Đức Tomb was built starting in 1864 by Emperor Tự Đức, Vietnam's longest-reigning Nguyễn emperor (1847-1883) - the 4th of 13 in the dynasty - who used the complex as a retreat during his lifetime, spending years here fishing, composing poetry, and hosting scholars, before it became his mausoleum. Construction involved 50,000 soldiers and laborers. The complex was originally named Vạn Niên Cơ, renamed Khiêm Cung during his reign, then Khiêm Lăng after his death in 1883. Nearly 50 structures cover the 12-hectare site in a pine forest valley adjacent to Vọng Cảnh Hill, centred on Lưu Khiêm Lake and the Xung Khiêm Pavilion that juts over the water on a wooden platform. Almost every building name contains the character 'Khiêm' (謙, humility) - reflecting the Confucian values Tự Đức held. Unlike Khải Định Tomb, which impresses with architecture, or Minh Mạng Tomb, which impresses with symmetry, Tự Đức Tomb impresses with atmosphere. Of the 13 Nguyễn emperors, only 7 built tombs, and Tự Đức's is widely regarded as one of the 4 most beautiful in the complex alongside Gia Long, Minh Mạng, and Khải Định - often cited as the most naturally harmonious and poetic of them all. Tự Đức was the most literary of the Nguyễn emperors, writing over 4,000 poems during his reign, and the tomb reflects his temperament: contemplative, romantic, and invested in the pleasures of natural landscape. His reign also coincided with France's consolidation of control over Vietnam, and the treaties he signed remain historically debated.",
-    howToGetThere:
-      "Tự Đức Tomb is about 5km southwest of Huế city center. By motorbike: Nguyễn Phúc Nguyên street → cross Trường Tiền bridge → left onto Đống Đa street → continue ~5km (about 20 minutes). By bicycle: a pleasant, slower riverside route (about 45 minutes). By taxi/xe ôm: 100,000-150,000 VND from the city center. By bus: route 2 runs from the southern bus station to the tomb area - the most budget option. Most visitors combine Tự Đức with Minh Mạng and Khải Định in a single royal tombs circuit by motorbike.",
-    whatToExpect:
-      "The main entrance leads through a courtyard and ceremonial gate to the lake area - Lưu Khiêm Lake with the Xung Khiêm Pavilion immediately establishing the garden character of the complex. A path circles the lake to the worship halls, the stele pavilion (containing the longest royal stele in Vietnam, composed by Tự Đức himself), and the tomb enclosure. The pine trees throughout are old and tall - their shade and the sound of wind through them are part of the experience. The burial mound enclosure sits at the rear, surrounded by a circular wall, containing no certain remains. Note that restoration is ongoing in parts of the complex - including Hòa Khiêm Palace and Minh Khiêm Đường - so some buildings may be closed or have restricted access during your visit (see the FAQ below for the current timeline). Architecture blends traditional Vietnamese elements with subtle French classical influences, making it a popular spot for áo dài photography.",
-    travelTips:
-      "Tự Đức is the most atmospheric of the Huế tombs - the garden setting, the pine forest, and the pavilion over the lake give it a quality of lived-in melancholy that the more formal Minh Mạng and the more dramatic Khải Định don't have. It's the tomb that most rewards sitting down and staying a while rather than moving quickly through. The combination of all three major tombs in a single day is entirely feasible by motorbike and gives the full picture of Nguyễn royal funerary architecture across distinct aesthetic approaches: Khải Định for unique fusion architecture, Tự Đức for nature-harmonized tranquility, Minh Mạng for classic symmetrical 'Huế vibe', and Gia Long (further out) for historical weight and dramatic natural scenery.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tự Đức Tomb Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tự Đức Tomb was built starting in 1864 by Emperor Tự Đức, Vietnam's longest-reigning Nguyễn emperor (1847-1883) - the 4th of 13 in the dynasty - who used the complex as a retreat during his lifetime, spending years here fishing, composing poetry, and hosting scholars, before it became his mausoleum. Construction involved 50,000 soldiers and laborers. The complex was originally named Vạn Niên Cơ, renamed Khiêm Cung during his reign, then Khiêm Lăng after his death in 1883.",
+          },
+          { type: "heading", text: "Layout and the Theme of Humility" },
+          {
+            type: "paragraph",
+            text: "Nearly 50 structures cover the 12-hectare site in a pine forest valley adjacent to Vọng Cảnh Hill, centred on Lưu Khiêm Lake and the Xung Khiêm Pavilion that juts over the water on a wooden platform. Almost every building name contains the character 'Khiêm' (謙, humility) - reflecting the Confucian values Tự Đức held.",
+          },
+          { type: "heading", text: "Among Huế's Royal Tombs" },
+          {
+            type: "paragraph",
+            text: "Unlike Khải Định Tomb, which impresses with architecture, or Minh Mạng Tomb, which impresses with symmetry, Tự Đức Tomb impresses with atmosphere. Of the 13 Nguyễn emperors, only 7 built tombs, and Tự Đức's is widely regarded as one of the 4 most beautiful in the complex alongside Gia Long, Minh Mạng, and Khải Định - often cited as the most naturally harmonious and poetic of them all.",
+          },
+          { type: "heading", text: "The Poet Emperor" },
+          {
+            type: "paragraph",
+            text: "Tự Đức was the most literary of the Nguyễn emperors, writing over 4,000 poems during his reign, and the tomb reflects his temperament: contemplative, romantic, and invested in the pleasures of natural landscape. His reign also coincided with France's consolidation of control over Vietnam, and the treaties he signed remain historically debated.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tự Đức Tomb",
+        blocks: [
+          { type: "heading", text: "By Motorbike or Bicycle" },
+          {
+            type: "paragraph",
+            text: "Tự Đức Tomb is about 5km southwest of Huế city center. By motorbike: Nguyễn Phúc Nguyên street → cross Trường Tiền bridge → left onto Đống Đa street → continue ~5km (about 20 minutes). By bicycle: a pleasant, slower riverside route (about 45 minutes).",
+          },
+          { type: "heading", text: "Taxi, Bus and the Tombs Circuit" },
+          {
+            type: "paragraph",
+            text: "By taxi/xe ôm: 100,000-150,000 VND from the city center. By bus: route 2 runs from the southern bus station to the tomb area - the most budget option. Most visitors combine Tự Đức with Minh Mạng and Khải Định in a single royal tombs circuit by motorbike.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tự Đức Tomb",
+        blocks: [
+          { type: "heading", text: "Lưu Khiêm Lake and the Worship Halls" },
+          {
+            type: "paragraph",
+            text: "The main entrance leads through a courtyard and ceremonial gate to the lake area - Lưu Khiêm Lake with the Xung Khiêm Pavilion immediately establishing the garden character of the complex. A path circles the lake to the worship halls, the stele pavilion (containing the longest royal stele in Vietnam, composed by Tự Đức himself), and the tomb enclosure. The pine trees throughout are old and tall - their shade and the sound of wind through them are part of the experience.",
+          },
+          { type: "heading", text: "The Burial Mound" },
+          {
+            type: "paragraph",
+            text: "The burial mound enclosure sits at the rear, surrounded by a circular wall, containing no certain remains.",
+          },
+          { type: "heading", text: "Restoration and Architecture" },
+          {
+            type: "paragraph",
+            text: "Note that restoration is ongoing in parts of the complex - including Hòa Khiêm Palace and Minh Khiêm Đường - so some buildings may be closed or have restricted access during your visit (see the FAQ below for the current timeline). Architecture blends traditional Vietnamese elements with subtle French classical influences, making it a popular spot for áo dài photography.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tự Đức Tomb",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tự Đức is the most atmospheric of the Huế tombs - the garden setting, the pine forest, and the pavilion over the lake give it a quality of lived-in melancholy that the more formal Minh Mạng and the more dramatic Khải Định don't have. It's the tomb that most rewards sitting down and staying a while rather than moving quickly through. The combination of all three major tombs in a single day is entirely feasible by motorbike and gives the full picture of Nguyễn royal funerary architecture across distinct aesthetic approaches: Khải Định for unique fusion architecture, Tự Đức for nature-harmonized tranquility, Minh Mạng for classic symmetrical 'Huế vibe', and Gia Long (further out) for historical weight and dramatic natural scenery.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
