@@ -2,7 +2,7 @@ import React from "react"
 import Link from "next/link"
 
 // Syntax: see lib/rich-text.ts
-import { INLINE_PATTERN } from "@/lib/rich-text"
+import { INLINE_PATTERN, splitLongParagraph } from "@/lib/rich-text"
 
 function parseInline(text: string, keyPrefix: string): React.ReactNode[] {
   const pattern = new RegExp(INLINE_PATTERN.source, "g")
@@ -51,7 +51,7 @@ export function InlineRichText({ text }: { text: string }) {
 }
 
 export default function RichText({ text }: { text: string }) {
-  const paragraphs = text.split(/\n\n+/)
+  const paragraphs = text.split(/\n\n+/).flatMap((para) => splitLongParagraph(para))
   return (
     <>
       {paragraphs.map((para, i) => (
