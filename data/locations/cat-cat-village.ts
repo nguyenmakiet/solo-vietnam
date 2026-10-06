@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catCatVillage: Location = {
   slug: "cat-cat-village",
   name: "Cat Cat Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.33089349327537,
@@ -47,14 +47,77 @@ export const catCatVillage: Location = {
     "Negotiate hard if taking a motorbike back up - drivers at the entrance often ask 100,000 VND round trip; bargain, use the 10,000 VND electric cart (may require waiting for a full cart), or walk the 15-20 minute uphill return yourself.",
   ],
   content: {
-    intro:
-      "Cat Cat is the closest traditional village to Sa Pa town - 2-4km down a steep valley depending on the route taken, making it the easiest and most visited H'mong settlement in the area. It's a Black H'mong village with genuine roots: 19th-century stilt houses, terraced fields cut into the hillside, hand-loomed indigo textiles, and a waterfall that once powered a small French colonial hydro station, whose ruins remain visible today. The name itself carries a colonial echo - one theory traces it to the French word 'cascade' (waterfall), Vietnamized over time into 'Cát Cát'; another roots it in H'mong language meaning 'below the market'. The honest picture: decades of tourism development have layered significant commercialization onto the original village - photo-op installations, souvenir stalls, costume rental booths, and curated viewpoints exist alongside the H'mong families who still genuinely live and farm here. Visitors expecting an untouched, quiet mountain village may find the reality more developed than anticipated; visitors expecting an accessible, scenic introduction to H'mong culture and terraced-field landscapes will find exactly that.",
-    howToGetThere:
-      "Cat Cat Village is 2-4km from Sa Pa town centre depending on the route, easily reachable on foot downhill (20-30 minutes), by motorbike, or by xe ôm. The entrance is clearly signposted from Sa Pa's main road, with a ticket booth at the top of the village path. Most visitors walk down and either negotiate a motorbike ride back up, take the 10,000 VND electric cart, or walk the uphill return (15-20 minutes for fit walkers). From Hanoi to Sa Pa: bus (5-7 hours, operators include Hà Sơn Hải Vân, Sao Việt, Sao Vàng) or train to Lào Cai then onward transport (7-8 hours total), or self-drive motorbike.",
-    whatToExpect:
-      "The path descends via stone-paved steps through the village past H'mong households, craft stalls, and terraced fields before reaching the valley floor and waterfall (also called Thác Tiên Sa). Large traditional water wheels turn slowly beside the clear stream; a small suspension bridge crosses near the falls. The route is well-maintained and wide enough for the tourist flow but genuinely scenic, framed by terraced fields above and forested slopes below. Local women sell hand-embroidered textiles, hemp cloth bags, and silver jewelry along the path - their sales pitches are gentle rather than aggressive. Traditional 19th-century stilt houses (nhà trình tường) are visible throughout, and craft demonstrations (weaving, dyeing, silver work) happen at stalls along the route. The waterfall itself drops through a gorge and is photogenic, with French colonial hydro station ruins nearby.",
-    travelTips:
-      "Cat Cat is Sa Pa's most accessible village introduction - good for families, first-time visitors, or anyone with limited trekking ability, but go in with realistic expectations about the level of commercialization. It's significantly more developed than Lao Chải or Tả Van deeper in Mường Hoa Valley, though that doesn't make the H'mong presence inauthentic - families here genuinely live and work in the village. If you want deeper cultural immersion with less commercial overlay, use Cat Cat as a half-day warm-up and continue trekking down into Mường Hoa Valley toward Lao Chải and Tả Van. September-November gives the best combination of golden terraced fields and comfortable temperatures; Tết (Lunar New Year) brings traditional festivals, folk games, and H'mong performances that add genuine cultural texture.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cat Cat Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cat Cat is the closest traditional village to Sa Pa town - 2-4km down a steep valley depending on the route taken, making it the easiest and most visited H'mong settlement in the area. It's a Black H'mong village with genuine roots: 19th-century stilt houses, terraced fields cut into the hillside, hand-loomed indigo textiles, and a waterfall that once powered a small French colonial hydro station, whose ruins remain visible today.",
+          },
+          { type: "heading", text: "The Name" },
+          {
+            type: "paragraph",
+            text: "The name itself carries a colonial echo - one theory traces it to the French word 'cascade' (waterfall), Vietnamized over time into 'Cát Cát'; another roots it in H'mong language meaning 'below the market'.",
+          },
+          { type: "heading", text: "Tourism Development" },
+          {
+            type: "paragraph",
+            text: "The honest picture: decades of tourism development have layered significant commercialization onto the original village - photo-op installations, souvenir stalls, costume rental booths, and curated viewpoints exist alongside the H'mong families who still genuinely live and farm here. Visitors expecting an untouched, quiet mountain village may find the reality more developed than anticipated; visitors expecting an accessible, scenic introduction to H'mong culture and terraced-field landscapes will find exactly that.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cat Cat Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cat Cat Village is 2-4km from Sa Pa town centre depending on the route, easily reachable on foot downhill (20-30 minutes), by motorbike, or by xe ôm. The entrance is clearly signposted from Sa Pa's main road, with a ticket booth at the top of the village path. Most visitors walk down and either negotiate a motorbike ride back up, take the 10,000 VND electric cart, or walk the uphill return (15-20 minutes for fit walkers).",
+          },
+          { type: "heading", text: "From Hanoi" },
+          {
+            type: "paragraph",
+            text: "From Hanoi to Sa Pa: bus (5-7 hours, operators include Hà Sơn Hải Vân, Sao Việt, Sao Vàng) or train to Lào Cai then onward transport (7-8 hours total), or self-drive motorbike.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cat Cat Village",
+        blocks: [
+          { type: "heading", text: "The Path Down" },
+          {
+            type: "paragraph",
+            text: "The path descends via stone-paved steps through the village past H'mong households, craft stalls, and terraced fields before reaching the valley floor and waterfall (also called Thác Tiên Sa). Large traditional water wheels turn slowly beside the clear stream; a small suspension bridge crosses near the falls. The route is well-maintained and wide enough for the tourist flow but genuinely scenic, framed by terraced fields above and forested slopes below.",
+          },
+          { type: "heading", text: "Crafts, Stilt Houses and the Waterfall" },
+          {
+            type: "paragraph",
+            text: "Local women sell hand-embroidered textiles, hemp cloth bags, and silver jewelry along the path - their sales pitches are gentle rather than aggressive. Traditional 19th-century stilt houses (nhà trình tường) are visible throughout, and craft demonstrations (weaving, dyeing, silver work) happen at stalls along the route. The waterfall itself drops through a gorge and is photogenic, with French colonial hydro station ruins nearby.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cat Cat Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cat Cat is Sa Pa's most accessible village introduction - good for families, first-time visitors, or anyone with limited trekking ability, but go in with realistic expectations about the level of commercialization. It's significantly more developed than Lao Chải or Tả Van deeper in Mường Hoa Valley, though that doesn't make the H'mong presence inauthentic - families here genuinely live and work in the village. If you want deeper cultural immersion with less commercial overlay, use Cat Cat as a half-day warm-up and continue trekking down into Mường Hoa Valley toward Lao Chải and Tả Van.",
+          },
+          {
+            type: "paragraph",
+            text: "September-November gives the best combination of golden terraced fields and comfortable temperatures; Tết (Lunar New Year) brings traditional festivals, folk games, and H'mong performances that add genuine cultural texture.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

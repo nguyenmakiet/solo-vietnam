@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hangEn: Location = {
   slug: "hang-en",
   name: "Hang En Cave",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-binh"],
   destination: "phong-nha-ke-bang",
   lat: 17.552330941921934,
@@ -46,14 +46,89 @@ export const hangEn: Location = {
     "Group size capped at 16 guests. 3-4 departures per week (daily from mid-December to late January). Book via oxalis.com.vn. Cancellation: full refund if cancelled 7+ days before departure; no refund within 7 days.",
   ],
   content: {
-    intro:
-      "Hang En - 'Swallow Cave' in Vietnamese - is the third largest natural cave in the world and sits 3km from Sơn Đoòng, connected to it by an underground river system. Discovered by British explorer Howard Limbert in 1994, the cave is 1.6km long with three entrances, a ceiling reaching 145 metres at its highest and passages up to 200 metres wide. What makes Hang En the right choice for most travellers is its positioning: challenging enough to feel like a genuine expedition, accessible enough for people with moderate fitness, and priced at a fraction of Sơn Đoòng. The route passes through Bản Đoòng - a remote village of the Bru-Vân Kiều ethnic minority living inside the national park - before the cave mouth opens in the limestone cliff face. Inside, the campsite on the white sandbar is surrounded by the cave walls, the natural swimming pool, and the constant movement of swifts overhead.",
-    howToGetThere:
-      "Hang En is in Tân Trạch commune, Bố Trạch district, about 65km west of Đồng Hới city. All access is through Oxalis Adventure (oxalisadventure.com/tour/hang-en-adventure-cave-camp), which operates from Sơn Trạch village near Phong Nha town. Transport from Phong Nha accommodation is arranged by Oxalis. The trek starts at the national park edge and covers approximately 11km each way, including the steep Dốc Ba Giàng climb and multiple river crossings, with a lunch stop at Bản Đoòng. From Đồng Hới to Phong Nha: 45 minutes by motorbike or taxi. Đồng Hới has domestic flights and a train station.",
-    whatToExpect:
-      "Day 1: trek 11km through jungle canopy, 12+ river crossings, lunch in Bản Đoòng with the Bru-Vân Kiều community, arrival at the cave. The cave mouth alone is 110 metres high. Inside: white sandbar campsite, natural swimming pool (cold, fed from underground), a warmer river stream from outside, and tens of thousands of swifts in the ceiling. Evening: swifts return in columns at dusk. Day 2: morning exploration deeper into the cave including a swim across the underground river to reach sections with the densest formations, then the return 11km trek. Seasonal highlights: Dec-Feb for sunbeams; Jun-Aug for swimming; Mar-May for spring forest and butterflies.",
-    travelTips:
-      "Hang En is the right choice for travellers who want a genuine cave expedition without the extreme cost or preparation of Sơn Đoòng. The tour is all-inclusive - guides, porters (1 guide + 8 porters per group of 10-16), meals, camping equipment, and caving gear. Physical preparation matters more than experience: walk 5km daily for 2 weeks before the trip. The Dốc Ba Giàng climb on day 1 is the hardest section. Book early - groups are small and dates fill. Avoid October and November entirely. Each season offers something different: the sunbeam window (Dec-Mar) for photography, summer (Jun-Aug) for swimming, spring (Mar-May) for the living forest. Winter nights inside the cave are cool - sleeping bags provided. If Sơn Đoòng is too expensive or too far out of reach, two days and one night inside the world's third largest cave is a more than reasonable way to touch something genuinely extraordinary.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Hang En Cave Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hang En - 'Swallow Cave' in Vietnamese - is the third largest natural cave in the world and sits 3km from Sơn Đoòng, connected to it by an underground river system. Discovered by British explorer Howard Limbert in 1994, the cave is 1.6km long with three entrances, a ceiling reaching 145 metres at its highest and passages up to 200 metres wide.",
+          },
+          { type: "heading", text: "Why Choose Hang En" },
+          {
+            type: "paragraph",
+            text: "What makes Hang En the right choice for most travellers is its positioning: challenging enough to feel like a genuine expedition, accessible enough for people with moderate fitness, and priced at a fraction of Sơn Đoòng.",
+          },
+          { type: "heading", text: "Bản Đoòng and the Cave Campsite" },
+          {
+            type: "paragraph",
+            text: "The route passes through Bản Đoòng - a remote village of the Bru-Vân Kiều ethnic minority living inside the national park - before the cave mouth opens in the limestone cliff face. Inside, the campsite on the white sandbar is surrounded by the cave walls, the natural swimming pool, and the constant movement of swifts overhead.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Hang En Cave",
+        blocks: [
+          { type: "heading", text: "Oxalis Adventure Only" },
+          {
+            type: "paragraph",
+            text: "Hang En is in Tân Trạch commune, Bố Trạch district, about 65km west of Đồng Hới city. All access is through Oxalis Adventure (oxalisadventure.com/tour/hang-en-adventure-cave-camp), which operates from Sơn Trạch village near Phong Nha town. Transport from Phong Nha accommodation is arranged by Oxalis. The trek starts at the national park edge and covers approximately 11km each way, including the steep Dốc Ba Giàng climb and multiple river crossings, with a lunch stop at Bản Đoòng.",
+          },
+          { type: "heading", text: "Getting to Phong Nha" },
+          {
+            type: "paragraph",
+            text: "From Đồng Hới to Phong Nha: 45 minutes by motorbike or taxi. Đồng Hới has domestic flights and a train station.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Hang En Cave",
+        blocks: [
+          { type: "heading", text: "Day 1" },
+          {
+            type: "paragraph",
+            text: "Day 1: trek 11km through jungle canopy, 12+ river crossings, lunch in Bản Đoòng with the Bru-Vân Kiều community, arrival at the cave. The cave mouth alone is 110 metres high. Inside: white sandbar campsite, natural swimming pool (cold, fed from underground), a warmer river stream from outside, and tens of thousands of swifts in the ceiling. Evening: swifts return in columns at dusk.",
+          },
+          { type: "heading", text: "Day 2" },
+          {
+            type: "paragraph",
+            text: "Day 2: morning exploration deeper into the cave including a swim across the underground river to reach sections with the densest formations, then the return 11km trek.",
+          },
+          { type: "heading", text: "Seasonal Highlights" },
+          {
+            type: "paragraph",
+            text: "Seasonal highlights: Dec-Feb for sunbeams; Jun-Aug for swimming; Mar-May for spring forest and butterflies.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Hang En Cave",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Hang En is the right choice for travellers who want a genuine cave expedition without the extreme cost or preparation of Sơn Đoòng. The tour is all-inclusive - guides, porters (1 guide + 8 porters per group of 10-16), meals, camping equipment, and caving gear. Physical preparation matters more than experience: walk 5km daily for 2 weeks before the trip.",
+          },
+          { type: "heading", text: "The Hardest Section and Booking" },
+          {
+            type: "paragraph",
+            text: "The Dốc Ba Giàng climb on day 1 is the hardest section. Book early - groups are small and dates fill. Avoid October and November entirely.",
+          },
+          { type: "heading", text: "Seasons and Comfort" },
+          {
+            type: "paragraph",
+            text: "Each season offers something different: the sunbeam window (Dec-Mar) for photography, summer (Jun-Aug) for swimming, spring (Mar-May) for the living forest. Winter nights inside the cave are cool - sleeping bags provided. If Sơn Đoòng is too expensive or too far out of reach, two days and one night inside the world's third largest cave is a more than reasonable way to touch something genuinely extraordinary.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

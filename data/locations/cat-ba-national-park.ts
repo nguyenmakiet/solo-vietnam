@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catBaNationalPark: Location = {
   slug: "cat-ba-national-park",
   name: "Cát Bà National Park",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.793772701115774",
@@ -50,14 +50,90 @@ export const catBaNationalPark: Location = {
     "Combine the park with a Lan Hà Bay kayak tour - jungle in the morning, water in the afternoon makes for the best full day on the island.",
   ],
   content: {
-    intro:
-      "Cát Bà National Park was established in 1986 and covers 17,363 hectares - roughly two-thirds of Cát Bà Island. It protects a rare combination of ecosystems in a single area: tropical limestone forest on the karst peaks, coastal mangrove forests at the shoreline, and inland forest connecting them - a layered habitat that supports over 1,500 animal species and plays a direct role in regulating the local climate between sea, forest, and mountain. The park's most critical conservation responsibility is the golden-headed langur (Trachypithecus poliocephalus), the world's most endangered primate: fewer than 70 individuals remain, all of them exclusively on Cát Bà Island. The island's steep limestone terrain and primary forest have sheltered this population through centuries of pressure, but the numbers remain critically low. Beyond the langur, the park is one of the better places in northern Vietnam to experience real jungle - dense, humid, loud with insects and birds - within an hour of a town with good food and accommodation.",
-    howToGetThere:
-      "The national park entrance is 15km from Cát Bà town - about 25 minutes by motorbike on the main island road. Motorbike rental is available throughout Cát Bà town and is the standard way to get there. The road passes through the park's buffer zone before reaching the main trailhead and entrance area. Guides are available at the entrance and are strongly recommended for the forest trails.",
-    whatToExpect:
-      "Three ecotourism routes cover the park. Route 1 (1.5km, 1.5-2 hours) runs through Kim Giao hardwood forest and the botanical garden to Ngự Lâm peak, then continues to Hang Trung Trang cave 1km down the road - the cave takes about an hour and is included in the full ticket, with stalactites and resident bat colonies. Route 2 (12km, 3-4 hours one way) is the full jungle traverse: the Environment Education Trail via Ao Ếch (Frog Pond) through multiple forest ecosystems to Việt Hải village on the far side of the island - most people arrange a boat back from the village rather than retracing 12km of jungle. Route 3 (2km, starts from Việt Hải village) climbs to Hải Quân peak at 259m, with panoramic views over both Lan Hạ Bay and Ha Long Bay from the top. The Nhà Tiêu Bản specimen house near the main entrance is worth 20-30 minutes before any trail - it documents the island's 1,500+ species and gives context on what you're walking through. April and May the forest trails are alive with butterflies, in numbers that make the walk itself worthwhile regardless of which route you take.",
-    travelTips:
-      "Cát Bà National Park is the main reason to spend more than one night on the island. The beach and Lan Hà Bay can be done in a day; the park needs an early start and a full day if you're doing the Việt Hải trek or the summit. The ecosystem here - the mix of limestone forest, mangrove coast, and island interior - is genuinely unusual, and the golden-headed langur is the rarest animal accessible from any tourist base in Vietnam. For wildlife travellers, that alone justifies the trip.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Cát Bà National Park Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cát Bà National Park was established in 1986 and covers 17,363 hectares - roughly two-thirds of Cát Bà Island. It protects a rare combination of ecosystems in a single area: tropical limestone forest on the karst peaks, coastal mangrove forests at the shoreline, and inland forest connecting them - a layered habitat that supports over 1,500 animal species and plays a direct role in regulating the local climate between sea, forest, and mountain.",
+          },
+          { type: "heading", text: "The Golden-Headed Langur" },
+          {
+            type: "paragraph",
+            text: "The park's most critical conservation responsibility is the golden-headed langur (Trachypithecus poliocephalus), the world's most endangered primate: fewer than 70 individuals remain, all of them exclusively on Cát Bà Island. The island's steep limestone terrain and primary forest have sheltered this population through centuries of pressure, but the numbers remain critically low.",
+          },
+          { type: "heading", text: "Real Forest" },
+          {
+            type: "paragraph",
+            text: "Beyond the langur, the park is one of the better places in northern Vietnam to experience real jungle - dense, humid, loud with insects and birds - within an hour of a town with good food and accommodation.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Cát Bà National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The national park entrance is 15km from Cát Bà town - about 25 minutes by motorbike on the main island road. Motorbike rental is available throughout Cát Bà town and is the standard way to get there.",
+          },
+          {
+            type: "paragraph",
+            text: "The road passes through the park's buffer zone before reaching the main trailhead and entrance area. Guides are available at the entrance and are strongly recommended for the forest trails.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Cát Bà National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Three ecotourism routes cover the park.",
+          },
+          { type: "heading", text: "Route 1" },
+          {
+            type: "paragraph",
+            text: "Route 1 (1.5km, 1.5-2 hours) runs through Kim Giao hardwood forest and the botanical garden to Ngự Lâm peak, then continues to Hang Trung Trang cave 1km down the road - the cave takes about an hour and is included in the full ticket, with stalactites and resident bat colonies.",
+          },
+          { type: "heading", text: "Route 2" },
+          {
+            type: "paragraph",
+            text: "Route 2 (12km, 3-4 hours one way) is the full jungle traverse: the Environment Education Trail via Ao Ếch (Frog Pond) through multiple forest ecosystems to Việt Hải village on the far side of the island - most people arrange a boat back from the village rather than retracing 12km of jungle.",
+          },
+          { type: "heading", text: "Route 3" },
+          {
+            type: "paragraph",
+            text: "Route 3 (2km, starts from Việt Hải village) climbs to Hải Quân peak at 259m, with panoramic views over both Lan Hạ Bay and Ha Long Bay from the top.",
+          },
+          { type: "heading", text: "The Specimen House and Butterflies" },
+          {
+            type: "paragraph",
+            text: "The Nhà Tiêu Bản specimen house near the main entrance is worth 20-30 minutes before any trail - it documents the island's 1,500+ species and gives context on what you're walking through. April and May the forest trails are alive with butterflies, in numbers that make the walk itself worthwhile regardless of which route you take.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Cát Bà National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Cát Bà National Park is the main reason to spend more than one night on the island. The beach and Lan Hà Bay can be done in a day; the park needs an early start and a full day if you're doing the Việt Hải trek or the summit.",
+          },
+          {
+            type: "paragraph",
+            text: "The ecosystem here - the mix of limestone forest, mangrove coast, and island interior - is genuinely unusual, and the golden-headed langur is the rarest animal accessible from any tourist base in Vietnam. For wildlife travellers, that alone justifies the trip.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

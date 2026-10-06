@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taXuaMountain: Location = {
   slug: "ta-xua-mountain",
   name: "Tà Xùa Mountain",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["son-la", "yen-bai"],
   destination: "",
   lat: 21.458552357466253,
@@ -51,14 +51,72 @@ export const taXuaMountain: Location = {
     "Feb to Apr: rhododendron (hoa đỗ quyên) blooms on the upper slopes - one of the best times for colour photography.",
   ],
   content: {
-    intro:
-      "Tà Xùa - officially renamed Phu Sa Phìn in March 2025 - stands at 2,865m on the border of Sơn La and Yên Bái provinces, the 13th highest peak in Vietnam and the final section of the Hoàng Liên Sơn range before it drops toward Lũng Lô Pass. The Bắc Yên route is the classic approach: a 2-day, 23km trek that crosses the legendary dinosaur spine ridge above a rolling sea of clouds, passes the iconic turtle rock outcrop, and climbs through an ancient moss forest where centuries-old trees are completely draped in green. It's one of the most visually varied treks in the Vietnamese northwest - forest, ridge, rock, and cloud in a single route.",
-    howToGetThere:
-      "The trek starts from Bắc Yên district, Sơn La province. From Hanoi, take National Highway 6 toward Hòa Bình then continue to Sơn La - Bắc Yên is a turnoff roughly 280km from Hanoi, around 6-7 hours by motorbike or private car. Buses run from Hanoi's Mỹ Đình station toward Sơn La with stops at Bắc Yên. Most trekkers join an organized tour departing from Hanoi or Bắc Yên town - this is the most practical option as guides, porters, and hut arrangements are handled for you.",
-    whatToExpect:
-      "The standard format is 2 days, 2 nights, ~23km total. Day 1 starts on concrete road before transitioning to earth trail - manageable in dry conditions, extremely muddy and slippery when wet. The trail climbs through forest to Hut 1 (lán 1), then continues to the dinosaur spine: a narrow rocky ridge with sheer drops on both sides and open views over a sea of clouds when conditions cooperate. Past the spine, another kilometre brings you to Hut 2 where most groups overnight. From Hut 2, a further 2.5km of increasingly muddy trail climbs into the moss forest and up to the 2,865m summit. Day 1 covers around 7km with approximately 8 hours of trekking. Day 2 takes a different descent route - you pass the dinosaur spine again and the turtle rock (tảng đá đầu rùa), one of the most photographed features on the mountain, before reaching the trailhead around 3 PM. Day 2 is roughly 6km and 6 hours.",
-    travelTips:
-      "Organized tours from Bắc Yên cost approximately 4,500,000 VND per person for the 2-day package including guide, porter, hut accommodation, and meals. Independent trekking without a guide is not recommended - the trail through the moss forest is easy to lose and the terrain near the dinosaur spine is serious. Pack light: a 5kg backpack is the target. The porter handles camping and food gear; your pack should contain only personal items - warm layers, rain jacket, headlamp, snacks, water, and first aid. Footwear is critical: waterproof hiking boots sized one up from normal to accommodate swelling on long descents. Trekking poles help significantly on the steep, slippery sections, particularly the descent on day 2.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Tà Xùa Mountain Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tà Xùa - officially renamed Phu Sa Phìn in March 2025 - stands at 2,865m on the border of Sơn La and Yên Bái provinces, the 13th highest peak in Vietnam and the final section of the Hoàng Liên Sơn range before it drops toward Lũng Lô Pass. The Bắc Yên route is the classic approach: a 2-day, 23km trek that crosses the legendary dinosaur spine ridge above a rolling sea of clouds, passes the iconic turtle rock outcrop, and climbs through an ancient moss forest where centuries-old trees are completely draped in green. It's one of the most visually varied treks in the Vietnamese northwest - forest, ridge, rock, and cloud in a single route.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Tà Xùa Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The trek starts from Bắc Yên district, Sơn La province. From Hanoi, take National Highway 6 toward Hòa Bình then continue to Sơn La - Bắc Yên is a turnoff roughly 280km from Hanoi, around 6-7 hours by motorbike or private car. Buses run from Hanoi's Mỹ Đình station toward Sơn La with stops at Bắc Yên.",
+          },
+          {
+            type: "paragraph",
+            text: "Most trekkers join an organized tour departing from Hanoi or Bắc Yên town - this is the most practical option as guides, porters, and hut arrangements are handled for you.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Tà Xùa Mountain",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The standard format is 2 days, 2 nights, ~23km total.",
+          },
+          { type: "heading", text: "Day 1" },
+          {
+            type: "paragraph",
+            text: "Day 1 starts on concrete road before transitioning to earth trail - manageable in dry conditions, extremely muddy and slippery when wet. The trail climbs through forest to Hut 1 (lán 1), then continues to the dinosaur spine: a narrow rocky ridge with sheer drops on both sides and open views over a sea of clouds when conditions cooperate. Past the spine, another kilometre brings you to Hut 2 where most groups overnight. From Hut 2, a further 2.5km of increasingly muddy trail climbs into the moss forest and up to the 2,865m summit. Day 1 covers around 7km with approximately 8 hours of trekking.",
+          },
+          { type: "heading", text: "Day 2" },
+          {
+            type: "paragraph",
+            text: "Day 2 takes a different descent route - you pass the dinosaur spine again and the turtle rock (tảng đá đầu rùa), one of the most photographed features on the mountain, before reaching the trailhead around 3 PM. Day 2 is roughly 6km and 6 hours.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Tà Xùa Mountain",
+        blocks: [
+          { type: "heading", text: "Tours and Guides" },
+          {
+            type: "paragraph",
+            text: "Organized tours from Bắc Yên cost approximately 4,500,000 VND per person for the 2-day package including guide, porter, hut accommodation, and meals. Independent trekking without a guide is not recommended - the trail through the moss forest is easy to lose and the terrain near the dinosaur spine is serious.",
+          },
+          { type: "heading", text: "Packing and Footwear" },
+          {
+            type: "paragraph",
+            text: "Pack light: a 5kg backpack is the target. The porter handles camping and food gear; your pack should contain only personal items - warm layers, rain jacket, headlamp, snacks, water, and first aid. Footwear is critical: waterproof hiking boots sized one up from normal to accommodate swelling on long descents. Trekking poles help significantly on the steep, slippery sections, particularly the descent on day 2.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

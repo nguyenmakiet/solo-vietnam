@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const conDaoNationalPark: Location = {
   slug: "con-dao-national-park",
   name: "Con Dao National Park",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["vung-tau"],
   destination: "con-dao",
   lat: 8.700380477433058,
@@ -44,14 +44,93 @@ export const conDaoNationalPark: Location = {
     "From Con Dao airport: 20-25 minutes by motorbike or taxi to the park. From Bến Đầm Port (main ferry terminal): about 20-25 minutes by road.",
   ],
   content: {
-    intro:
-      "Con Dao National Park covers 19,883 hectares across 14 islands of the Con Dao archipelago, 185km from Ho Chi Minh City - roughly 5,883 hectares of terrestrial tropical forest and 14,000 hectares of marine environment, with a 20,500 hectare buffer zone. Established in 1993 and designated a Ramsar Wetland of International Importance in 2013, the park protects three distinct ecosystems: primary tropical forest, coral reef (360+ species, among the most diverse in Vietnam), and seagrass meadows home to dugong - one of the last remaining dugong populations in Vietnam. The terrestrial park is home to 1,077 plant species, 160 animal species, and three endemic species found nowhere else on earth: the Con Dao black squirrel, the Con Dao gecko, and the Con Dao long-tailed macaque. Sea turtle conservation is the park's most significant programme - over 400 green turtles and hawksbill turtles return each year to nest on the beaches of Hòn Bảy Cạnh and Hòn Cau, making Côn Đảo one of the most important turtle nesting sites in Southeast Asia. Unlike many national parks in Vietnam, Con Dao combines rainforest trekking, coral reefs, sea turtle conservation, and rare marine mammals within a single protected area.",
-    howToGetThere:
-      "The national park headquarters is in Côn Đảo town - a short motorbike or taxi ride from most accommodation. Boat trips to outer islands and snorkeling sites depart from the park jetty near headquarters. From Con Dao airport: 20-25 minutes by motorbike or taxi. From Bến Đầm Port (main ferry terminal): about 20-25 minutes by road. The park office arranges guided treks, boat tours, and the sea turtle watching programme - all sea turtle watching must be booked through the park office. Independent access to nesting beaches at night is prohibited. Côn Đảo itself is reached by domestic flight from Ho Chi Minh City (45 minutes).",
-    whatToExpect:
-      "Marine activities: snorkeling and diving around Hòn Tài, Hòn Tre Lớn, and Hòn Cau (360+ coral species, very high fish density). Đầm Tre lagoon kayaking (calm water, mangroves, best accessible water activity). Terrestrial: day trek (~7.5km) through primary rainforest passing the Di Sản Heritage Tree, Hang Đức Mẹ cave shrine, Thác Bãi Bàng waterfall, and Bãi Bàng beach. Đỉnh Thánh Giá summit for panoramic archipelago views. Bãi Ông Đụng (30-minute forest walk to pristine beach). Sea turtle watching (Apr-Oct, nights): ranger-led small groups to nesting beaches on Hòn Bảy Cạnh and Hòn Cau - one of Vietnam's most extraordinary wildlife experiences. Bold long-tailed macaques patrol the trails - keep all belongings secured.",
-    travelTips:
-      "Con Dao National Park is the primary reason nature travellers visit Côn Đảo. The marine environment is consistently rated among the best in Vietnam by divers who have also dived Phú Quốc and Nha Trang - lower visibility than some sites but far higher coral and fish density. The sea turtle programme is the most sought-after experience and books up weeks in advance in peak season (July-August) - contact the park office before arrival, not after. The park works in both dry and rainy season: dry season (Mar-Apr) has the clearest water; rainy season (May-Oct) has the most turtle activity and the most lush forest, with rain rarely disrupting activities significantly.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Con Dao National Park Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Con Dao National Park covers 19,883 hectares across 14 islands of the Con Dao archipelago, 185km from Ho Chi Minh City - roughly 5,883 hectares of terrestrial tropical forest and 14,000 hectares of marine environment, with a 20,500 hectare buffer zone. Established in 1993 and designated a Ramsar Wetland of International Importance in 2013, the park protects three distinct ecosystems: primary tropical forest, coral reef (360+ species, among the most diverse in Vietnam), and seagrass meadows home to dugong - one of the last remaining dugong populations in Vietnam.",
+          },
+          { type: "heading", text: "Biodiversity" },
+          {
+            type: "paragraph",
+            text: "The terrestrial park is home to 1,077 plant species, 160 animal species, and three endemic species found nowhere else on earth: the Con Dao black squirrel, the Con Dao gecko, and the Con Dao long-tailed macaque.",
+          },
+          { type: "heading", text: "Sea Turtle Conservation" },
+          {
+            type: "paragraph",
+            text: "Sea turtle conservation is the park's most significant programme - over 400 green turtles and hawksbill turtles return each year to nest on the beaches of Hòn Bảy Cạnh and Hòn Cau, making Côn Đảo one of the most important turtle nesting sites in Southeast Asia. Unlike many national parks in Vietnam, Con Dao combines rainforest trekking, coral reefs, sea turtle conservation, and rare marine mammals within a single protected area.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Con Dao National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The national park headquarters is in Côn Đảo town - a short motorbike or taxi ride from most accommodation. Boat trips to outer islands and snorkeling sites depart from the park jetty near headquarters.",
+          },
+          { type: "heading", text: "From the Airport and Port" },
+          {
+            type: "paragraph",
+            text: "From Con Dao airport: 20-25 minutes by motorbike or taxi. From Bến Đầm Port (main ferry terminal): about 20-25 minutes by road.",
+          },
+          { type: "heading", text: "Park Programmes and Rules" },
+          {
+            type: "paragraph",
+            text: "The park office arranges guided treks, boat tours, and the sea turtle watching programme - all sea turtle watching must be booked through the park office. Independent access to nesting beaches at night is prohibited. Côn Đảo itself is reached by domestic flight from Ho Chi Minh City (45 minutes).",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Con Dao National Park",
+        blocks: [
+          { type: "heading", text: "Marine Activities" },
+          {
+            type: "paragraph",
+            text: "Marine activities: snorkeling and diving around Hòn Tài, Hòn Tre Lớn, and Hòn Cau (360+ coral species, very high fish density). Đầm Tre lagoon kayaking (calm water, mangroves, best accessible water activity).",
+          },
+          { type: "heading", text: "Trekking" },
+          {
+            type: "paragraph",
+            text: "Terrestrial: day trek (~7.5km) through primary rainforest passing the Di Sản Heritage Tree, Hang Đức Mẹ cave shrine, Thác Bãi Bàng waterfall, and Bãi Bàng beach. Đỉnh Thánh Giá summit for panoramic archipelago views. Bãi Ông Đụng (30-minute forest walk to pristine beach).",
+          },
+          { type: "heading", text: "Sea Turtle Watching" },
+          {
+            type: "paragraph",
+            text: "Sea turtle watching (Apr-Oct, nights): ranger-led small groups to nesting beaches on Hòn Bảy Cạnh and Hòn Cau - one of Vietnam's most extraordinary wildlife experiences.",
+          },
+          { type: "heading", text: "Macaques" },
+          {
+            type: "paragraph",
+            text: "Bold long-tailed macaques patrol the trails - keep all belongings secured.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Con Dao National Park",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Con Dao National Park is the primary reason nature travellers visit Côn Đảo. The marine environment is consistently rated among the best in Vietnam by divers who have also dived Phú Quốc and Nha Trang - lower visibility than some sites but far higher coral and fish density.",
+          },
+          { type: "heading", text: "The Turtle Programme and Seasons" },
+          {
+            type: "paragraph",
+            text: "The sea turtle programme is the most sought-after experience and books up weeks in advance in peak season (July-August) - contact the park office before arrival, not after. The park works in both dry and rainy season: dry season (Mar-Apr) has the clearest water; rainy season (May-Oct) has the most turtle activity and the most lush forest, with rain rarely disrupting activities significantly.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

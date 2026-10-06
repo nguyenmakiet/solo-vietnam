@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const duGiaVillage: Location = {
   slug: "du-gia-village",
   name: "Du Già Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: "22.930340238883847",
@@ -35,14 +35,81 @@ export const duGiaVillage: Location = {
     "Book your homestay before arriving. The village has limited beds and the best places fill up in October peak season.",
   ],
   content: {
-    intro:
-      "Du Già is a commune in Yên Minh district, about 70km southeast of Hà Giang city, home to over 8,000 people from the Tày, H'mông, and Dao ethnic groups. The village sits beside a clear river in a valley surrounded by limestone karst, with rice terraces cut into the slopes at multiple elevations and red silk-cotton trees lining the approach road. It's on the eastern variant of the Ha Giang Loop - less ridden than the main western circuit through Quản Bạ, Đồng Văn, and Mèo Vạc, harder to reach, and arriving near the end of most loop itineraries when riders are tired and scenery-saturated. Those factors combine to make Du Già consistently underrated. The village itself is quiet, working, and genuinely hospitable - the Tày families here grow rice, keep livestock, and have built some of the best homestays on the entire loop without the place turning into a tourist village.",
-    howToGetThere:
-      "Du Già is on the eastern Ha Giang Loop, approximately 70km from Hà Giang city via Bắc Mê district - about 2.5–3 hours by motorbike. The road is more demanding than the western loop: narrower, with steeper sections and rougher surface in places. The eastern loop via Du Già and Yên Minh eventually converges with the main loop at Mèo Vạc. Du Già can be approached from either direction - from Hà Giang city via the eastern route, or from Yên Minh coming off the main loop. The safer and more common itinerary puts Du Già at the end: Hà Giang city → Quản Bạ/Yên Minh → Đồng Văn (night 1) → Mèo Vạc (night 2) → Du Già (night 3) → Hà Giang city. This order means you ride the paved main roads first while getting used to the bike, then tackle the harder Du Già approach roads on day 3 when you have experience. Going to Du Già on day 1 as a first-time rider - before you're familiar with the roads - is genuinely risky on the steep, rough sections of the eastern approach.",
-    whatToExpect:
-      "A small, quiet village of traditional stilt houses spread along a river valley. The surrounding rice terraces are cultivated at multiple elevations - layered green and gold depending on the season. The river running through the valley is clear and rocky. Homestays offer dinner and breakfast of local Tày food - river fish, mountain vegetables, rice - eaten with the family. The trail to Du Già Waterfall (Thác Ba Tiên) begins at the village edge and follows the river upstream through forest. The village has limited phone signal and basic amenities - no air conditioning, minimal wifi. The evening, once day riders have left, is peaceful in a way that's hard to find on the busier sections of the loop.",
-    travelTips:
-      "Du Già works best for travellers who are willing to slow down and let the place reveal itself. It doesn't announce itself with dramatic viewpoints or iconic shots. What it offers is a river valley, rice terraces, friendly Tày families, and genuine quiet - which after two days on the Ha Giang Loop is worth more than another panorama. Riders who rush through miss it entirely. The eastern loop as a whole is the stronger recommendation for anyone doing the loop a second time or wanting to avoid the increasingly busy western circuit.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Du Già Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Du Già is a commune in Yên Minh district, about 70km southeast of Hà Giang city, home to over 8,000 people from the Tày, H'mông, and Dao ethnic groups. The village sits beside a clear river in a valley surrounded by limestone karst, with rice terraces cut into the slopes at multiple elevations and red silk-cotton trees lining the approach road.",
+          },
+          { type: "heading", text: "On the Eastern Loop" },
+          {
+            type: "paragraph",
+            text: "It's on the eastern variant of the Ha Giang Loop - less ridden than the main western circuit through Quản Bạ, Đồng Văn, and Mèo Vạc, harder to reach, and arriving near the end of most loop itineraries when riders are tired and scenery-saturated. Those factors combine to make Du Già consistently underrated.",
+          },
+          { type: "heading", text: "Village Life" },
+          {
+            type: "paragraph",
+            text: "The village itself is quiet, working, and genuinely hospitable - the Tày families here grow rice, keep livestock, and have built some of the best homestays on the entire loop without the place turning into a tourist village.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Du Già Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Du Già is on the eastern Ha Giang Loop, approximately 70km from Hà Giang city via Bắc Mê district - about 2.5–3 hours by motorbike. The road is more demanding than the western loop: narrower, with steeper sections and rougher surface in places. The eastern loop via Du Già and Yên Minh eventually converges with the main loop at Mèo Vạc.",
+          },
+          { type: "heading", text: "Which Direction to Ride" },
+          {
+            type: "paragraph",
+            text: "Du Già can be approached from either direction - from Hà Giang city via the eastern route, or from Yên Minh coming off the main loop. The safer and more common itinerary puts Du Già at the end: Hà Giang city → Quản Bạ/Yên Minh → Đồng Văn (night 1) → Mèo Vạc (night 2) → Du Già (night 3) → Hà Giang city. This order means you ride the paved main roads first while getting used to the bike, then tackle the harder Du Già approach roads on day 3 when you have experience. Going to Du Già on day 1 as a first-time rider - before you're familiar with the roads - is genuinely risky on the steep, rough sections of the eastern approach.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Du Già Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "A small, quiet village of traditional stilt houses spread along a river valley. The surrounding rice terraces are cultivated at multiple elevations - layered green and gold depending on the season. The river running through the valley is clear and rocky.",
+          },
+          { type: "heading", text: "Homestays and the Waterfall" },
+          {
+            type: "paragraph",
+            text: "Homestays offer dinner and breakfast of local Tày food - river fish, mountain vegetables, rice - eaten with the family. The trail to Du Già Waterfall (Thác Ba Tiên) begins at the village edge and follows the river upstream through forest.",
+          },
+          { type: "heading", text: "Amenities and Evenings" },
+          {
+            type: "paragraph",
+            text: "The village has limited phone signal and basic amenities - no air conditioning, minimal wifi. The evening, once day riders have left, is peaceful in a way that's hard to find on the busier sections of the loop.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Du Già Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Du Già works best for travellers who are willing to slow down and let the place reveal itself. It doesn't announce itself with dramatic viewpoints or iconic shots. What it offers is a river valley, rice terraces, friendly Tày families, and genuine quiet - which after two days on the Ha Giang Loop is worth more than another panorama. Riders who rush through miss it entirely.",
+          },
+          {
+            type: "paragraph",
+            text: "The eastern loop as a whole is the stronger recommendation for anyone doing the loop a second time or wanting to avoid the increasingly busy western circuit.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

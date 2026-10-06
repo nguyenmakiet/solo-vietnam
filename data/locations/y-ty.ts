@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const yTy: Location = {
   slug: "y-ty",
   name: "Y Tý",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lao-cai"],
   destination: "",
   lat: 22.657362311112333,
@@ -47,14 +47,83 @@ export const yTy: Location = {
     "The road passes many beautiful waterfalls and streams en route - allow extra time if going by motorbike.",
   ],
   content: {
-    intro:
-      "Y Tý is a highland commune in Bát Xát district, Lào Cai province, sitting at over 2,000 metres on a ridgeline close to China's Yunnan border. It shares 11.94km of frontier with China and is home to four ethnic communities - Hà Nhì, Mông, Dao, and Kinh - across 16 villages, with the Hà Nhì being the dominant culture. Their traditional trình tường earthen houses, weekly markets, and dress are still very much part of daily life here, not a performance for tourism. The landscape is defined by stacked rice terraces, the sea of clouds that pools in the valleys on cool mornings, and the Lảo Thẩn massif rising to 2,860m above. Y Tý remains one of northern Vietnam's last genuine hidden gems - known in Vietnamese travel circles for years but still slow enough, remote enough, and permit-protected enough to feel like a working highland community rather than a tourist destination. Winter temperatures can drop below 0°C and snow occasionally falls, making it one of the few places in Vietnam where snow hunting is a realistic draw.",
-    howToGetThere:
-      "There is no direct bus from Hanoi to Y Tý. The standard route is Hanoi to Lào Cai city by overnight train (8-9 hours) or sleeper bus, then onward by motorbike rental or the Hiệp Linh minibus service (Lào Cai - Y Tý, approximately 120,000 VND, 3 hours). From Sa Pa, Y Tý is about 80km via Bản Xèo and Mường Hum - plan 3-4 hours. The road has been upgraded and is now fully paved; the rough muddy conditions of previous years are largely resolved. Some homestays offer Hanoi-Y Tý transfer packages departing 6 PM and arriving around 2 AM - check availability when booking. Motorbike is the recommended mode - the route passes waterfalls, streams, and mountain scenery that is the journey as much as the destination.",
-    whatToExpect:
-      "Y Tý is slow, quiet, and weather-dependent. The central experience is the sea of clouds that pools in the valleys on cool mornings after rain - on the right day, visible from Ngải Thầu, Công Viên Choảng Thèng, and the surrounding hillsides for hours. In rice season (late July to September), the terraced fields turn gold and the combination of cloud, light, and terraces makes for exceptional photography. Key sites: Thác Rồng for waterfall trekking and SUP; the cardamom forest (rừng thảo quả) for trekking; Ngải Thầu and Công Viên Choảng Thèng for cloud and rice views; Lũng Pô flag tower where the Red River enters Vietnam. The Saturday morning market in Y Tý town is one of the most authentic in the region. Trekking peaks accessible from Y Tý include Lảo Thẩn (2,860m), Ky Quan San, Nhìu Cồ San, and Ngũ Chỉ Sơn. Clear nights offer Milky Way photography conditions.",
-    travelTips:
-      "Y Tý rewards two to three nights - one for acclimatisation and Thác Rồng, one or two for cloud hunting at dawn and trekking. Pack warm layers regardless of season; temperatures drop sharply after sunset at this altitude and in winter can fall below 0°C. The permit requirement for foreigners is enforced - arrange at least 2 days ahead. Y Tý pairs naturally with Lũng Pô (where the Red River crosses from China into Vietnam) and Mường Hum Sunday market for a broader Bát Xát border region trip. Weather is the variable that makes or breaks the visit - flexible dates significantly improve your chances of catching a proper cloud sea.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Y Tý Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Y Tý is a highland commune in Bát Xát district, Lào Cai province, sitting at over 2,000 metres on a ridgeline close to China's Yunnan border. It shares 11.94km of frontier with China and is home to four ethnic communities - Hà Nhì, Mông, Dao, and Kinh - across 16 villages, with the Hà Nhì being the dominant culture. Their traditional trình tường earthen houses, weekly markets, and dress are still very much part of daily life here, not a performance for tourism.",
+          },
+          { type: "heading", text: "Landscape and Climate" },
+          {
+            type: "paragraph",
+            text: "The landscape is defined by stacked rice terraces, the sea of clouds that pools in the valleys on cool mornings, and the Lảo Thẩn massif rising to 2,860m above. Y Tý remains one of northern Vietnam's last genuine hidden gems - known in Vietnamese travel circles for years but still slow enough, remote enough, and permit-protected enough to feel like a working highland community rather than a tourist destination. Winter temperatures can drop below 0°C and snow occasionally falls, making it one of the few places in Vietnam where snow hunting is a realistic draw.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Y Tý",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "There is no direct bus from Hanoi to Y Tý. The standard route is Hanoi to Lào Cai city by overnight train (8-9 hours) or sleeper bus, then onward by motorbike rental or the Hiệp Linh minibus service (Lào Cai - Y Tý, approximately 120,000 VND, 3 hours).",
+          },
+          { type: "heading", text: "From Sa Pa" },
+          {
+            type: "paragraph",
+            text: "From Sa Pa, Y Tý is about 80km via Bản Xèo and Mường Hum - plan 3-4 hours. The road has been upgraded and is now fully paved; the rough muddy conditions of previous years are largely resolved.",
+          },
+          { type: "heading", text: "Transfers and Motorbikes" },
+          {
+            type: "paragraph",
+            text: "Some homestays offer Hanoi-Y Tý transfer packages departing 6 PM and arriving around 2 AM - check availability when booking. Motorbike is the recommended mode - the route passes waterfalls, streams, and mountain scenery that is the journey as much as the destination.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Y Tý",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Y Tý is slow, quiet, and weather-dependent. The central experience is the sea of clouds that pools in the valleys on cool mornings after rain - on the right day, visible from Ngải Thầu, Công Viên Choảng Thèng, and the surrounding hillsides for hours. In rice season (late July to September), the terraced fields turn gold and the combination of cloud, light, and terraces makes for exceptional photography.",
+          },
+          { type: "heading", text: "Key Sites and the Saturday Market" },
+          {
+            type: "paragraph",
+            text: "Key sites: Thác Rồng for waterfall trekking and SUP; the cardamom forest (rừng thảo quả) for trekking; Ngải Thầu and Công Viên Choảng Thèng for cloud and rice views; Lũng Pô flag tower where the Red River enters Vietnam. The Saturday morning market in Y Tý town is one of the most authentic in the region.",
+          },
+          { type: "heading", text: "Trekking Peaks and Night Skies" },
+          {
+            type: "paragraph",
+            text: "Trekking peaks accessible from Y Tý include Lảo Thẩn (2,860m), Ky Quan San, Nhìu Cồ San, and Ngũ Chỉ Sơn. Clear nights offer Milky Way photography conditions.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Y Tý",
+        blocks: [
+          { type: "heading", text: "How Long to Stay and What to Pack" },
+          {
+            type: "paragraph",
+            text: "Y Tý rewards two to three nights - one for acclimatisation and Thác Rồng, one or two for cloud hunting at dawn and trekking. Pack warm layers regardless of season; temperatures drop sharply after sunset at this altitude and in winter can fall below 0°C. The permit requirement for foreigners is enforced - arrange at least 2 days ahead.",
+          },
+          { type: "heading", text: "Nearby Sites and Weather" },
+          {
+            type: "paragraph",
+            text: "Y Tý pairs naturally with Lũng Pô (where the Red River crosses from China into Vietnam) and Mường Hum Sunday market for a broader Bát Xát border region trip. Weather is the variable that makes or breaks the visit - flexible dates significantly improve your chances of catching a proper cloud sea.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

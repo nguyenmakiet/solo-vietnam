@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const k50Waterfall: Location = {
   slug: "k50-waterfall",
   name: "K50 Waterfall",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["gia-lai"],
   destination: "",
   lat: "14.519415223584105",
@@ -44,14 +44,84 @@ export const k50Waterfall: Location = {
     "Start early from the drop-off point - depending on the route and transport arrangement, the trek can range from several kilometres to around 7-8km on foot, so you want daylight left when you arrive.",
   ],
   content: {
-    intro:
-      "K50 Waterfall - also called Thác Hang Én (Swallow Cave Waterfall) - is a 54-metre cascade inside Kon Chu Rang Nature Reserve, sitting on the headwaters of the Kon River right on the Gia Lai–Bình Định provincial border. The name K50 comes from old military map notation: K is short for cao (height), 50 is the elevation marker. The name Hang Én comes from the large cave directly behind the falls where thousands of swallows nest - walk behind the curtain of water and you're standing inside it, looking out at the jungle through the cascade. The waterfall is not easy to reach. Getting here requires permits, a licensed guide, a challenging trek through leech-infested primary forest, and river crossings that can turn serious after rain. Those conditions are also why the forest is intact, the swallows still nest undisturbed, and the whole valley still looks like somewhere King Kong would actually hide.",
-    howToGetThere:
-      "K50 is inside Kon Chu Rang Nature Reserve, K'Bang district, Gia Lai. From Ho Chi Minh City, take an overnight sleeper bus to K'Bang town (~15 hours). From Pleiku, it's about 150km via An Khê and K'Bang, roughly 3 hours. From K'Bang, arrange transport to the Kon Chu Rang ranger station where permits are processed. Routes vary in length and setup - some approach from the top of the falls with a longer motorbike-then-foot leg, others use vehicle transport several kilometres into the reserve followed by a shorter foot trek through forest and past a Bahnar ethnic village. Depending on the route and transport arrangement, the trek can range from several kilometres to around 7-8km on foot. Permits must be arranged in advance - independent entry is not permitted.",
-    whatToExpect:
-      "The trek passes through secondary and primary forest, crossing streams repeatedly and following river gorges. A small Bahnar ethnic village sits about an hour into the 2023 route - wooden houses in a clearing, smoke from cooking fires, entirely inside the forest. The waterfall itself is bigger than most visitors expect: 54 metres dropping into a pool surrounded by ancient trees, with mist rolling outward wide enough to soak you at a distance. Morning light creates a rainbow in the mist at the base - close enough to almost touch. Behind the falls is Hang Én cave, where thousands of swallows nest and return in enormous numbers at dusk. A stream above the falls has cold swimming pools. K40 Waterfall is 1.5km upstream and worth a detour if your route and time allow it. Somewhere in the boulder field at the base of K50 is a large rock that looks exactly like King Kong's head, half-submerged, watching.",
-    travelTips:
-      "K50 is not a convenient waterfall. It doesn't reward visitors who want to arrive, photograph, and leave. The effort required - permits, guides, mud, leeches, river crossings - is also what has kept it what it is. The forest is intact. The swallows still nest undisturbed in the cave. If you cross a flooded river on a motorbike and the engine dies, you will spend the next six hours dragging it out through the jungle in the rain. That has happened. Plan the river crossings carefully, start early, and confirm fees and logistics with the reserve when arranging entry. The dry season (January to June) keeps the rivers lower and the trails more manageable - leeches will still find you regardless.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes K50 Waterfall Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "K50 Waterfall - also called Thác Hang Én (Swallow Cave Waterfall) - is a 54-metre cascade inside Kon Chu Rang Nature Reserve, sitting on the headwaters of the Kon River right on the Gia Lai–Bình Định provincial border.",
+          },
+          { type: "heading", text: "The Names" },
+          {
+            type: "paragraph",
+            text: "The name K50 comes from old military map notation: K is short for cao (height), 50 is the elevation marker. The name Hang Én comes from the large cave directly behind the falls where thousands of swallows nest - walk behind the curtain of water and you're standing inside it, looking out at the jungle through the cascade.",
+          },
+          { type: "heading", text: "A Hard Waterfall to Reach" },
+          {
+            type: "paragraph",
+            text: "The waterfall is not easy to reach. Getting here requires permits, a licensed guide, a challenging trek through leech-infested primary forest, and river crossings that can turn serious after rain. Those conditions are also why the forest is intact, the swallows still nest undisturbed, and the whole valley still looks like somewhere King Kong would actually hide.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to K50 Waterfall",
+        blocks: [
+          { type: "heading", text: "Getting to K'Bang" },
+          {
+            type: "paragraph",
+            text: "K50 is inside Kon Chu Rang Nature Reserve, K'Bang district, Gia Lai. From Ho Chi Minh City, take an overnight sleeper bus to K'Bang town (~15 hours). From Pleiku, it's about 150km via An Khê and K'Bang, roughly 3 hours.",
+          },
+          { type: "heading", text: "Permits and Routes" },
+          {
+            type: "paragraph",
+            text: "From K'Bang, arrange transport to the Kon Chu Rang ranger station where permits are processed. Routes vary in length and setup - some approach from the top of the falls with a longer motorbike-then-foot leg, others use vehicle transport several kilometres into the reserve followed by a shorter foot trek through forest and past a Bahnar ethnic village. Depending on the route and transport arrangement, the trek can range from several kilometres to around 7-8km on foot. Permits must be arranged in advance - independent entry is not permitted.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at K50 Waterfall",
+        blocks: [
+          { type: "heading", text: "The Trek" },
+          {
+            type: "paragraph",
+            text: "The trek passes through secondary and primary forest, crossing streams repeatedly and following river gorges. A small Bahnar ethnic village sits about an hour into the 2023 route - wooden houses in a clearing, smoke from cooking fires, entirely inside the forest.",
+          },
+          { type: "heading", text: "The Falls and Hang Én Cave" },
+          {
+            type: "paragraph",
+            text: "The waterfall itself is bigger than most visitors expect: 54 metres dropping into a pool surrounded by ancient trees, with mist rolling outward wide enough to soak you at a distance. Morning light creates a rainbow in the mist at the base - close enough to almost touch. Behind the falls is Hang Én cave, where thousands of swallows nest and return in enormous numbers at dusk.",
+          },
+          { type: "heading", text: "Upstream Pools and K40" },
+          {
+            type: "paragraph",
+            text: "A stream above the falls has cold swimming pools. K40 Waterfall is 1.5km upstream and worth a detour if your route and time allow it. Somewhere in the boulder field at the base of K50 is a large rock that looks exactly like King Kong's head, half-submerged, watching.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for K50 Waterfall",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "K50 is not a convenient waterfall. It doesn't reward visitors who want to arrive, photograph, and leave. The effort required - permits, guides, mud, leeches, river crossings - is also what has kept it what it is. The forest is intact. The swallows still nest undisturbed in the cave.",
+          },
+          { type: "heading", text: "River Crossings and Season" },
+          {
+            type: "paragraph",
+            text: "If you cross a flooded river on a motorbike and the engine dies, you will spend the next six hours dragging it out through the jungle in the rain. That has happened. Plan the river crossings carefully, start early, and confirm fees and logistics with the reserve when arranging entry. The dry season (January to June) keeps the rivers lower and the trails more manageable - leeches will still find you regardless.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const binhLieuBorderMountains: Location = {
   slug: "binh-lieu-border-mountains",
   name: "Bình Liêu Border Mountains",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ninh"],
   destination: "",
   lat: 21.64893803864023,
@@ -52,14 +52,77 @@ export const binhLieuBorderMountains: Location = {
     "Tourism services in Bình Liêu are still informal and undeveloped - don't expect polished infrastructure. Book accommodation in advance during reed flower season.",
   ],
   content: {
-    intro:
-      "Bình Liêu is a highland border district in the far northeast of Quảng Ninh province, sharing nearly 50km of frontier with China's Guangxi region. Often described as a 'mini Sa Pa', it has a mild year-round climate, diverse terrain, and ethnic minority villages belonging to Dao, Tày, Sán Chỉ, and Hoa communities who have lived along this border for centuries. While most visitors to Quảng Ninh go directly to Hạ Long Bay, Bình Liêu is the province's other face - mountains, terraced fields, border ridges, and a seasonal calendar that gives each visit a different character. It is known in Vietnam primarily for the autumn reed flower season, when the hillsides above the valley floors turn white with flowering grass from late October to mid-November, and for the border ridge trek to Cột Mốc 1305, which crosses a dramatic dinosaur spine ridge with open views into China's Guangxi on clear days.",
-    howToGetThere:
-      "Bình Liêu town is approximately 230km from Hanoi and 120km from Hạ Long city. The main approach is via Tiên Yên district on Route 18C, running northeast through forested mountain terrain. From Hạ Long the drive takes about 2.5 hours by car or motorbike. Bus service runs from Hạ Long and from Móng Cái. The district sits between Móng Cái and Tiên Yên, making it a natural stop on a northeast circuit. To find the Cột Mốc 1305 trailhead, search Google Maps for 'điểm đỗ xe cột mốc 1305' and follow the car road.",
-    whatToExpect:
-      "Bình Liêu town is a small district capital with markets, guesthouses, and local restaurants - the surrounding landscape is the draw. The western border patrol road at 700m elevation passes through mountain passes and pastoral valleys, accessible by motorbike. The Cột Mốc 1305 trek follows the dinosaur spine ridge - a narrow elevated ridgeline with open drops on both sides and 360-degree views of the border landscape. The trek takes 5-6 hours including photography stops; those only interested in ridge photos can turn around after about 2/3 of the route. The four main border markers (1300, 1302, 1305, 1327) mark the actual Vietnam-China frontier - seeing the physical boundary between the two countries from above is a different experience from reading about it. The Dao and Sán Chỉ villages in the surrounding communes are the cultural layer - traditional dress, highland markets, and a way of life shaped by the border geography.",
-    travelTips:
-      "Bình Liêu works best as part of a longer northeast Quảng Ninh circuit (Hạ Long - Tiên Yên - Bình Liêu - Móng Cái or the reverse) rather than a standalone trip from Hanoi. A 2-night stay covers the border ridge trek, the valley landscape, and the Sunday market. Always carry ID or passport - border zone checks happen and you will be asked. Stay on marked trails; the border area has military presence and wandering off-path causes problems. For reed flower season, late October to mid-November is the window - earlier than this and the flowers have not yet opened; later and they begin to drop.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Bình Liêu Border Mountains Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bình Liêu is a highland border district in the far northeast of Quảng Ninh province, sharing nearly 50km of frontier with China's Guangxi region. Often described as a 'mini Sa Pa', it has a mild year-round climate, diverse terrain, and ethnic minority villages belonging to Dao, Tày, Sán Chỉ, and Hoa communities who have lived along this border for centuries. While most visitors to Quảng Ninh go directly to Hạ Long Bay, Bình Liêu is the province's other face - mountains, terraced fields, border ridges, and a seasonal calendar that gives each visit a different character.",
+          },
+          { type: "heading", text: "Reed Flower Season" },
+          {
+            type: "paragraph",
+            text: "It is known in Vietnam primarily for the autumn reed flower season, when the hillsides above the valley floors turn white with flowering grass from late October to mid-November, and for the border ridge trek to Cột Mốc 1305, which crosses a dramatic dinosaur spine ridge with open views into China's Guangxi on clear days.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Bình Liêu Border Mountains",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bình Liêu town is approximately 230km from Hanoi and 120km from Hạ Long city. The main approach is via Tiên Yên district on Route 18C, running northeast through forested mountain terrain. From Hạ Long the drive takes about 2.5 hours by car or motorbike. Bus service runs from Hạ Long and from Móng Cái. The district sits between Móng Cái and Tiên Yên, making it a natural stop on a northeast circuit.",
+          },
+          { type: "heading", text: "Finding the Cột Mốc 1305 Trailhead" },
+          {
+            type: "paragraph",
+            text: "To find the Cột Mốc 1305 trailhead, search Google Maps for 'điểm đỗ xe cột mốc 1305' and follow the car road.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Bình Liêu Border Mountains",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bình Liêu town is a small district capital with markets, guesthouses, and local restaurants - the surrounding landscape is the draw. The western border patrol road at 700m elevation passes through mountain passes and pastoral valleys, accessible by motorbike.",
+          },
+          { type: "heading", text: "The Cột Mốc 1305 Ridge Trek" },
+          {
+            type: "paragraph",
+            text: "The Cột Mốc 1305 trek follows the dinosaur spine ridge - a narrow elevated ridgeline with open drops on both sides and 360-degree views of the border landscape. The trek takes 5-6 hours including photography stops; those only interested in ridge photos can turn around after about 2/3 of the route.",
+          },
+          { type: "heading", text: "Border Markers and Villages" },
+          {
+            type: "paragraph",
+            text: "The four main border markers (1300, 1302, 1305, 1327) mark the actual Vietnam-China frontier - seeing the physical boundary between the two countries from above is a different experience from reading about it. The Dao and Sán Chỉ villages in the surrounding communes are the cultural layer - traditional dress, highland markets, and a way of life shaped by the border geography.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Bình Liêu Border Mountains",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Bình Liêu works best as part of a longer northeast Quảng Ninh circuit (Hạ Long - Tiên Yên - Bình Liêu - Móng Cái or the reverse) rather than a standalone trip from Hanoi. A 2-night stay covers the border ridge trek, the valley landscape, and the Sunday market.",
+          },
+          { type: "heading", text: "Border Rules and Reed Season" },
+          {
+            type: "paragraph",
+            text: "Always carry ID or passport - border zone checks happen and you will be asked. Stay on marked trails; the border area has military presence and wandering off-path causes problems. For reed flower season, late October to mid-November is the window - earlier than this and the flowers have not yet opened; later and they begin to drop.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

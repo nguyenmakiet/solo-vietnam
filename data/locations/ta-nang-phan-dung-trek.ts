@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const taNangPhanDungTrek: Location = {
   slug: "ta-nang-phan-dung-trek",
   name: "Ta Năng - Phan Dũng Trek",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lam-dong", "ninh-thuan", "binh-thuan"],
   destination: "",
   lat: 11.536084933625041,
@@ -48,14 +48,78 @@ export const taNangPhanDungTrek: Location = {
     "Arrange transport pickup at Phan Dũng village before departure - remote exit point, no regular transport.",
   ],
   content: {
-    intro:
-      "Tà Năng - Phan Dũng is consistently ranked the most beautiful multi-day trek in southern Vietnam - a 30-55km route that crosses terrain from the cool Lâm Đồng highland plateau to the warm Bình Thuận coast, passing through three provinces and a tri-province peak at 1,701m. The route was pioneered around 2015 by motorbike adventurers following logging trails through the forest; it has since grown into one of the most established trekking routes in southern Vietnam, with clear trail markers, xe ôm forest motorbike support, porter services, and multiple tour operators running regular departures. The landscape changes dramatically from start to finish: open grassland and pine forest at the highland entry, a transition zone of river valleys and mixed forest in the middle, and warm lowland vegetation at the Phan Dũng exit. In the dry season (Jan-May) the grasslands burn golden-brown; in the rainy season (Jun-Dec) they turn vivid green. Both have their own visual character.",
-    howToGetThere:
-      "The standard approach from Ho Chi Minh City is by overnight sleeper bus (Thành Bưởi, Phương Trang) on QL20, dropped at Ngã Ba Tà Hine junction in Đức Trọng, Lâm Đồng - arriving around 3-4 AM. Trekkers rest at local transit houses or homestays in Tà Hine, have breakfast, then take xe ôm or truck into the Tà Năng forest edge trailhead to depart Saturday morning. Going up to Đà Lạt city first and coming back down to the trailhead is unnecessary - it adds time and goes against the route direction. The exit at Phan Dũng village (Tuy Phong district, Bình Thuận) requires pre-arranged transport to Phan Thiết city - about 2 hours by road. Arrange this before departure. Tour packages from Đà Lạt operators (toongadventure.vn, bitour.vn, itrek.vn, NowTrip) handle logistics including trailhead transfers.",
-    whatToExpect:
-      "The terrain transitions through distinct zones. The initial section from the Tà Năng forest edge is relatively flat with grassland and scrub. The route then enters shaded forest with continuous climbing. Beyond the forest, the landscape opens to wide savannah-like grassland, rolling ridgelines resembling dinosaur spines, and steep inclines - peaks reach 900-1,100m in this section before the tri-province peak at 1,701m. The descent toward Phan Dũng drops to around 500m through lowland forest. River crossings occur throughout - knee to thigh depth in dry season, potentially dangerous in wet season. Nomadic cattle herders maintain temporary camps in the grassland sections. Night camps are in forest or at water sources. The physical demand is significant but manageable for fit trekkers on the well-supported current route.",
-    travelTips:
-      "Tà Năng - Phan Dũng is the benchmark multi-day trek for the southern half of Vietnam. Despite its reputation for difficulty, the current level of trail infrastructure and support services means a person with average fitness and no serious health issues can complete it - especially with a guide and porter. First-timers should book through an established operator. The most important variable is weather: check the forecast before departure, and never push through river crossings in heavy rain. The two seasonal visual experiences (golden grass Jan-Mar, green grass Aug-Oct) are different enough that experienced trekkers sometimes do the route twice. For a longer challenge, the route passes a 3-province boundary marker at 1,701m - one of the more unusual geographical landmarks on any trek in Vietnam.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Ta Năng - Phan Dũng Trek Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tà Năng - Phan Dũng is consistently ranked the most beautiful multi-day trek in southern Vietnam - a 30-55km route that crosses terrain from the cool Lâm Đồng highland plateau to the warm Bình Thuận coast, passing through three provinces and a tri-province peak at 1,701m. The route was pioneered around 2015 by motorbike adventurers following logging trails through the forest; it has since grown into one of the most established trekking routes in southern Vietnam, with clear trail markers, xe ôm forest motorbike support, porter services, and multiple tour operators running regular departures.",
+          },
+          { type: "heading", text: "Landscape and Seasons" },
+          {
+            type: "paragraph",
+            text: "The landscape changes dramatically from start to finish: open grassland and pine forest at the highland entry, a transition zone of river valleys and mixed forest in the middle, and warm lowland vegetation at the Phan Dũng exit. In the dry season (Jan-May) the grasslands burn golden-brown; in the rainy season (Jun-Dec) they turn vivid green. Both have their own visual character.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Ta Năng - Phan Dũng Trek",
+        blocks: [
+          { type: "heading", text: "From Ho Chi Minh City" },
+          {
+            type: "paragraph",
+            text: "The standard approach from Ho Chi Minh City is by overnight sleeper bus (Thành Bưởi, Phương Trang) on QL20, dropped at Ngã Ba Tà Hine junction in Đức Trọng, Lâm Đồng - arriving around 3-4 AM. Trekkers rest at local transit houses or homestays in Tà Hine, have breakfast, then take xe ôm or truck into the Tà Năng forest edge trailhead to depart Saturday morning. Going up to Đà Lạt city first and coming back down to the trailhead is unnecessary - it adds time and goes against the route direction.",
+          },
+          { type: "heading", text: "The Exit at Phan Dũng, and Tour Operators" },
+          {
+            type: "paragraph",
+            text: "The exit at Phan Dũng village (Tuy Phong district, Bình Thuận) requires pre-arranged transport to Phan Thiết city - about 2 hours by road. Arrange this before departure. Tour packages from Đà Lạt operators (toongadventure.vn, bitour.vn, itrek.vn, NowTrip) handle logistics including trailhead transfers.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Ta Năng - Phan Dũng Trek",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The terrain transitions through distinct zones.",
+          },
+          { type: "heading", text: "Terrain Zones" },
+          {
+            type: "paragraph",
+            text: "The initial section from the Tà Năng forest edge is relatively flat with grassland and scrub. The route then enters shaded forest with continuous climbing. Beyond the forest, the landscape opens to wide savannah-like grassland, rolling ridgelines resembling dinosaur spines, and steep inclines - peaks reach 900-1,100m in this section before the tri-province peak at 1,701m. The descent toward Phan Dũng drops to around 500m through lowland forest.",
+          },
+          { type: "heading", text: "River Crossings, Herders and Camps" },
+          {
+            type: "paragraph",
+            text: "River crossings occur throughout - knee to thigh depth in dry season, potentially dangerous in wet season. Nomadic cattle herders maintain temporary camps in the grassland sections. Night camps are in forest or at water sources. The physical demand is significant but manageable for fit trekkers on the well-supported current route.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Ta Năng - Phan Dũng Trek",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Tà Năng - Phan Dũng is the benchmark multi-day trek for the southern half of Vietnam. Despite its reputation for difficulty, the current level of trail infrastructure and support services means a person with average fitness and no serious health issues can complete it - especially with a guide and porter. First-timers should book through an established operator.",
+          },
+          { type: "heading", text: "Weather and Seasons" },
+          {
+            type: "paragraph",
+            text: "The most important variable is weather: check the forecast before departure, and never push through river crossings in heavy rain. The two seasonal visual experiences (golden grass Jan-Mar, green grass Aug-Oct) are different enough that experienced trekkers sometimes do the route twice. For a longer challenge, the route passes a 3-province boundary marker at 1,701m - one of the more unusual geographical landmarks on any trek in Vietnam.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

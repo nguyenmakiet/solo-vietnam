@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const anBinhIsland: Location = {
   slug: "an-binh-island",
   name: "Đảo Bé (An Bình Island)",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["quang-ngai"],
   destination: "ly-son",
   lat: 15.427950714721403,
@@ -59,14 +59,83 @@ export const anBinhIsland: Location = {
     "If you have more time and prefer to slow down, camping overnight on the beach is an option - bring a tent, food, water, and warm clothing, since services are minimal. The island at night, with almost no other visitors around, is a genuinely different experience from the day-trip crowd",
   ],
   content: {
-    intro:
-      "Đảo Bé - officially An Bình Island, also known locally as Cù Lao Bờ Bãi - is the smaller of the two main islands in the Lý Sơn archipelago, sitting about 3 nautical miles northwest of the main island. At under 1 km² (some sources cite 0.69 km²), it's home to around 100 households - roughly 400-500 residents - who make a living from fishing and growing garlic and onions, much like the main island. It has a handful of homestays and a coastline with cleaner coral and clearer water than most spots on the larger island.\n\nThe boat crossing from Lý Sơn's main port takes 10-15 minutes, though reaching Đảo Bé at all requires a two-step journey: the mainland ferry from Sa Kỳ port to Lý Sơn's main island first, then this shorter onward boat. Most visitors come as a half-day or full-day trip from the main island rather than staying overnight, though camping is an option for those wanting a quieter, slower pace. The island is small enough to circle by electric cart or motorbike in about an hour, and the beaches on the southern side - Bãi Sau and Bãi Dừa - are the main draw: white sand, shallow turquoise water, and coral reefs within easy snorkeling distance of the shore. One detail worth knowing before arriving: the island has no underground fresh water source, so residents depend on rainwater and a small treatment plant that only meets a fraction of demand - a real constraint on daily life here that's easy to miss from the beach.",
-    howToGetThere:
-      "Reaching Đảo Bé is a two-leg trip. First, take the mainland ferry from Sa Kỳ port to Lý Sơn's main island - departures typically run around 7:30 AM, 8 AM, and 3 PM, with return sailings around 7 AM, 8 AM, and 1:30 PM (check **[cangsaky.com.vn](https://cangsaky.com.vn/)** for current times). From Lý Sơn's main port in An Vĩnh, high-speed boats to Đảo Bé take around 10-15 minutes, typically running between roughly 7 AM and 11:30 AM out, with returns between 10 AM and 2:30-3 PM - exact times shift seasonally. Tickets can be purchased at the pier - book the morning of or the evening before during peak season. Groups can also charter a private canoe for the day for roughly 2.5-3 million VND. There is no direct connection from the mainland to Đảo Bé - the main island is always the stopover.",
-    whatToExpect:
-      "The island has two main beaches on the southern side - Bãi Sau and Bãi Dừa - where most visitors spend their time. The water is clear and the coral reef accessible directly from the beach - no boat required to snorkel, though a coracle can take you further out for better coral. Beyond swimming and snorkeling, visitors kayak, paddleboard, or ride a thuyền thúng around the coastline. Others walk out across a small paid bridge to a rock outcrop just offshore, photograph the volcanic rock cliffs at Bãi Dừa, wander past mural-painted village walls, and catch sunset at Bãi Ngang. An electric cart or rented motorbike covers the whole island loop in about an hour. Food options are limited to a handful of basic stalls - seafood, grilled dishes, and a local seaweed drink among them - and it's worth ordering ahead in the morning since fresh supplies often arrive only on the midday boat. Homestays exist for those staying overnight, and camping on the beach is a popular option for a slower, quieter visit, though anyone doing this should bring their own tent, food, and water given how limited services are after the day-trip crowd leaves.",
-    travelTips:
-      "Đảo Bé works best as a dedicated half-day (around 6 hours) from the main island rather than a rushed add-on - remember to budget time for the mainland-to-Lý-Sơn ferry leg too if you're coming straight from Quảng Ngãi. If snorkeling is a priority, this is the right choice over Hang Câu - the coral is more intact and the water typically clearer. Budget a full morning or afternoon and take the earliest available boat to maximize time before the midday heat, and rent an electric cart or motorbike at the pier to cover the island efficiently rather than walking the whole loop in the sun. The last afternoon boat back occasionally fills up during weekends and holidays, so avoid leaving ticket purchases until the final departure.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Đảo Bé (An Bình Island) Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đảo Bé - officially An Bình Island, also known locally as Cù Lao Bờ Bãi - is the smaller of the two main islands in the Lý Sơn archipelago, sitting about 3 nautical miles northwest of the main island. At under 1 km² (some sources cite 0.69 km²), it's home to around 100 households - roughly 400-500 residents - who make a living from fishing and growing garlic and onions, much like the main island. It has a handful of homestays and a coastline with cleaner coral and clearer water than most spots on the larger island.",
+          },
+          { type: "heading", text: "Visiting the Island" },
+          {
+            type: "paragraph",
+            text: "The boat crossing from Lý Sơn's main port takes 10-15 minutes, though reaching Đảo Bé at all requires a two-step journey: the mainland ferry from Sa Kỳ port to Lý Sơn's main island first, then this shorter onward boat. Most visitors come as a half-day or full-day trip from the main island rather than staying overnight, though camping is an option for those wanting a quieter, slower pace. The island is small enough to circle by electric cart or motorbike in about an hour, and the beaches on the southern side - Bãi Sau and Bãi Dừa - are the main draw: white sand, shallow turquoise water, and coral reefs within easy snorkeling distance of the shore.",
+          },
+          { type: "heading", text: "No Fresh Groundwater" },
+          {
+            type: "paragraph",
+            text: "One detail worth knowing before arriving: the island has no underground fresh water source, so residents depend on rainwater and a small treatment plant that only meets a fraction of demand - a real constraint on daily life here that's easy to miss from the beach.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Đảo Bé (An Bình Island)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Reaching Đảo Bé is a two-leg trip. First, take the mainland ferry from Sa Kỳ port to Lý Sơn's main island - departures typically run around 7:30 AM, 8 AM, and 3 PM, with return sailings around 7 AM, 8 AM, and 1:30 PM (check **[cangsaky.com.vn](https://cangsaky.com.vn/)** for current times). From Lý Sơn's main port in An Vĩnh, high-speed boats to Đảo Bé take around 10-15 minutes, typically running between roughly 7 AM and 11:30 AM out, with returns between 10 AM and 2:30-3 PM - exact times shift seasonally.",
+          },
+          { type: "heading", text: "Tickets and Charters" },
+          {
+            type: "paragraph",
+            text: "Tickets can be purchased at the pier - book the morning of or the evening before during peak season. Groups can also charter a private canoe for the day for roughly 2.5-3 million VND. There is no direct connection from the mainland to Đảo Bé - the main island is always the stopover.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Đảo Bé (An Bình Island)",
+        blocks: [
+          { type: "heading", text: "Beaches and Snorkeling" },
+          {
+            type: "paragraph",
+            text: "The island has two main beaches on the southern side - Bãi Sau and Bãi Dừa - where most visitors spend their time. The water is clear and the coral reef accessible directly from the beach - no boat required to snorkel, though a coracle can take you further out for better coral.",
+          },
+          { type: "heading", text: "Activities and Getting Around" },
+          {
+            type: "paragraph",
+            text: "Beyond swimming and snorkeling, visitors kayak, paddleboard, or ride a thuyền thúng around the coastline. Others walk out across a small paid bridge to a rock outcrop just offshore, photograph the volcanic rock cliffs at Bãi Dừa, wander past mural-painted village walls, and catch sunset at Bãi Ngang. An electric cart or rented motorbike covers the whole island loop in about an hour.",
+          },
+          { type: "heading", text: "Food and Overnight Stays" },
+          {
+            type: "paragraph",
+            text: "Food options are limited to a handful of basic stalls - seafood, grilled dishes, and a local seaweed drink among them - and it's worth ordering ahead in the morning since fresh supplies often arrive only on the midday boat. Homestays exist for those staying overnight, and camping on the beach is a popular option for a slower, quieter visit, though anyone doing this should bring their own tent, food, and water given how limited services are after the day-trip crowd leaves.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Đảo Bé (An Bình Island)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đảo Bé works best as a dedicated half-day (around 6 hours) from the main island rather than a rushed add-on - remember to budget time for the mainland-to-Lý-Sơn ferry leg too if you're coming straight from Quảng Ngãi. If snorkeling is a priority, this is the right choice over Hang Câu - the coral is more intact and the water typically clearer.",
+          },
+          { type: "heading", text: "Timing the Boats" },
+          {
+            type: "paragraph",
+            text: "Budget a full morning or afternoon and take the earliest available boat to maximize time before the midday heat, and rent an electric cart or motorbike at the pier to cover the island efficiently rather than walking the whole loop in the sun. The last afternoon boat back occasionally fills up during weekends and holidays, so avoid leaving ticket purchases until the final departure.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

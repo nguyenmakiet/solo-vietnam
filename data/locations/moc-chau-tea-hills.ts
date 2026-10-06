@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const mocChauTeaHills: Location = {
   slug: "moc-chau-tea-hills",
   name: "Moc Chau Tea Hills",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["son-la"],
   destination: "",
   lat: 20.815661,
@@ -48,14 +48,75 @@ export const mocChauTeaHills: Location = {
     "Combine with Moc Chau's other landscapes: pine forests, sunflower fields (Nov), mustard flower fields (Jan-Feb) - all within 10-20km.",
   ],
   content: {
-    intro:
-      "The Moc Chau Tea Hills spread across the high plateau of Son La province at around 1,000 metres elevation, about 10km from Moc Chau town centre. The plateau has been a tea-growing region since the French colonial period, when the cool climate and well-drained red basalt soil were identified as suitable for cultivation. Today the plantations are a mix of family-run private plots and cooperative land, with harvested leaves going to processing factories producing green tea for domestic consumption and semi-fermented oolong for export. The visual appeal comes from the trimming practice - bushes kept at waist height and shaped into smooth contoured rows that follow the natural slope of the land, creating a geometric wave pattern that photographs exceptionally well in low morning light. Unlike seasonal flower fields, the tea hills have a long visual cycle and are worth visiting year-round - but the most photogenic windows are March to April for vivid new-growth lime green, and October to November when surrounding plum and ban blossoms add colour contrast.",
-    howToGetThere:
-      "Moc Chau is 200km from Hanoi on Highway 6, approximately 4 hours by bus or 4.5 hours by motorbike. Buses run from My Dinh bus station in Hanoi directly to Moc Chau town. The main tea hill areas are 10km from town centre by motorbike. Renting a motorbike in Moc Chau town (around 150,000 VND/day) is the most practical way to explore the scattered hills across the plateau.",
-    whatToExpect:
-      "The tea hills are a working agricultural landscape, not a curated attraction. Most are privately owned by local families - entering means being a guest in someone's garden. The rows of bushes are interrupted by harvesting paths, small processing sheds, and water tanks. Pickers work early in the morning with wicker baskets, selecting only the top two leaves and a bud. The smell of freshly cut tea leaves in the morning mist - green, slightly astringent, cool - is distinctive and memorable. The best photography positions are elevated points looking down the contoured rows with mist or valley backdrop. Light on the hills changes dramatically between dawn and mid-morning; 6-7 AM is the window.",
-    travelTips:
-      "Moc Chau rewards slow travel more than most highland destinations. The plateau has enough variety - tea hills, pine forests, ethnic minority villages, fruit orchards, flower fields by season - to fill 2-3 days without repeating the same ground. Accommodation ranges from basic guesthouses in town to homestays in Thai and H'mong villages on the plateau edge. The town itself is unremarkable but has good local food, particularly dishes using the plateau's dairy products - Moc Chau is one of the few places in Vietnam with a genuine fresh milk and yoghurt culture, a legacy of the state dairy farm established in the 1970s. For the tea hills specifically: go early, dress in light or bright colours for photos, and treat the plantations with the same respect you'd give a working farm.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Moc Chau Tea Hills Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Moc Chau Tea Hills spread across the high plateau of Son La province at around 1,000 metres elevation, about 10km from Moc Chau town centre.",
+          },
+          { type: "heading", text: "Tea-Growing History" },
+          {
+            type: "paragraph",
+            text: "The plateau has been a tea-growing region since the French colonial period, when the cool climate and well-drained red basalt soil were identified as suitable for cultivation. Today the plantations are a mix of family-run private plots and cooperative land, with harvested leaves going to processing factories producing green tea for domestic consumption and semi-fermented oolong for export.",
+          },
+          { type: "heading", text: "Trimming and Seasons" },
+          {
+            type: "paragraph",
+            text: "The visual appeal comes from the trimming practice - bushes kept at waist height and shaped into smooth contoured rows that follow the natural slope of the land, creating a geometric wave pattern that photographs exceptionally well in low morning light. Unlike seasonal flower fields, the tea hills have a long visual cycle and are worth visiting year-round - but the most photogenic windows are March to April for vivid new-growth lime green, and October to November when surrounding plum and ban blossoms add colour contrast.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Moc Chau Tea Hills",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Moc Chau is 200km from Hanoi on Highway 6, approximately 4 hours by bus or 4.5 hours by motorbike. Buses run from My Dinh bus station in Hanoi directly to Moc Chau town.",
+          },
+          {
+            type: "paragraph",
+            text: "The main tea hill areas are 10km from town centre by motorbike. Renting a motorbike in Moc Chau town (around 150,000 VND/day) is the most practical way to explore the scattered hills across the plateau.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Moc Chau Tea Hills",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The tea hills are a working agricultural landscape, not a curated attraction. Most are privately owned by local families - entering means being a guest in someone's garden. The rows of bushes are interrupted by harvesting paths, small processing sheds, and water tanks.",
+          },
+          { type: "heading", text: "Picking and Photography" },
+          {
+            type: "paragraph",
+            text: "Pickers work early in the morning with wicker baskets, selecting only the top two leaves and a bud. The smell of freshly cut tea leaves in the morning mist - green, slightly astringent, cool - is distinctive and memorable. The best photography positions are elevated points looking down the contoured rows with mist or valley backdrop. Light on the hills changes dramatically between dawn and mid-morning; 6-7 AM is the window.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Moc Chau Tea Hills",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Moc Chau rewards slow travel more than most highland destinations. The plateau has enough variety - tea hills, pine forests, ethnic minority villages, fruit orchards, flower fields by season - to fill 2-3 days without repeating the same ground.",
+          },
+          {
+            type: "paragraph",
+            text: "Accommodation ranges from basic guesthouses in town to homestays in Thai and H'mong villages on the plateau edge. The town itself is unremarkable but has good local food, particularly dishes using the plateau's dairy products - Moc Chau is one of the few places in Vietnam with a genuine fresh milk and yoghurt culture, a legacy of the state dairy farm established in the 1970s. For the tea hills specifically: go early, dress in light or bright colours for photos, and treat the plantations with the same respect you'd give a working farm.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vietHaiVillage: Location = {
   slug: "viet-hai-village",
   name: "Việt Hải Village",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["hai-phong"],
   destination: "cat-ba",
   lat: "20.787857336300597",
@@ -44,14 +44,81 @@ export const vietHaiVillage: Location = {
     "Guided jungle walks to Hang Tiên Đức cave and a previously abandoned village are available - the cave is worth it and lunch is usually included.",
   ],
   content: {
-    intro:
-      "Việt Hải's origin story goes back over a century: fishermen sheltering from a storm stumbled on a freshwater source in the forest and decided to stay. The village that formed has 87 households and about 295 people living on 141 hectares inside Cát Bà National Park - nicknamed 'đảo trong đảo' (island within an island) because it sits completely enclosed by jungle, karst peaks, and bay with no road connecting it to the outside world. The families grow rice on small paddies between the mountain ridges, keep livestock, and fish the bay. In recent years, homestays and day tours have brought a tourism dimension to the village that is now a significant part of the local economy. The combination of sea access through Lan Hà Bay and jungle access through the national park creates an unusual situation where the journey to the village is often as memorable as the village itself.",
-    howToGetThere:
-      "Two routes. By sea: from Bến Bèo pier in Cát Bà town, boat tickets cost 50,000 VND per person for a scheduled departure or 400,000 VND for a 6-person speedboat. Journey time is around 30-45 minutes through Lan Hà Bay. Some luxury cruise itineraries (Heritage Cruises, Serenity Cruises, Paradise Grand) also stop here. July and August often bring rough seas that prevent boat access - use the land route in those months. By land: buy a national park ticket (160,000 VND) at Cát Bà National Park gate, then trek 12km through the jungle to the village (3-4 hours each way). The best option is to combine both: trek in, boat out, or reverse.",
-    whatToExpect:
-      "A small valley village with rice paddies, vegetable plots, fish ponds, and traditional wooden houses surrounded by karst peaks. Water buffalo on the paths, chickens in the yards. The village has a quiet, working-farm character on weekday mornings before day tours arrive. By midday on weekends, it's busy with visitors from Cát Bà. When you arrive by boat, bicycle rental is available right at the Việt Hải pier - the 5km ride from the pier into the village on a concrete path through karst scenery is the classic arrival. Electric carts run the same route if you prefer not to cycle. Tourist facilities in the village include additional bicycle rental, homestays, a fish foot spa, basic restaurants, and guided jungle walks to Hang Tiên Đức cave. The cave walk is the most interesting guided activity - the cave itself is worth seeing and lunch is typically included. The fish spa is popular and genuinely works (small fish, surprisingly ticklish). The snake wine sold at some stalls is diluted past relevance - skip it. After 3 PM, when day tours leave, the village reverts to its natural pace.",
-    travelTips:
-      "Việt Hải works best as an overnight stay or a combined trek-and-boat day rather than a quick stop on a day tour. The journey in is genuinely part of the experience - the 12km jungle trek through the national park is one of the better walks accessible from Cát Bà, and the bay approach by boat gives views of the karst that change the whole perspective of the island. The village itself has been shaped by tourism but the setting hasn't changed: rice fields, limestone walls, no road noise, and the bay visible through the trees. June for the harvest gold, February-March for the fog. Link to the national park article for the trek details: soloinvietnam.com/locations/cat-ba-national-park.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Việt Hải Village Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Việt Hải's origin story goes back over a century: fishermen sheltering from a storm stumbled on a freshwater source in the forest and decided to stay. The village that formed has 87 households and about 295 people living on 141 hectares inside Cát Bà National Park - nicknamed 'đảo trong đảo' (island within an island) because it sits completely enclosed by jungle, karst peaks, and bay with no road connecting it to the outside world. The families grow rice on small paddies between the mountain ridges, keep livestock, and fish the bay.",
+          },
+          { type: "heading", text: "Tourism and Access" },
+          {
+            type: "paragraph",
+            text: "In recent years, homestays and day tours have brought a tourism dimension to the village that is now a significant part of the local economy. The combination of sea access through Lan Hà Bay and jungle access through the national park creates an unusual situation where the journey to the village is often as memorable as the village itself.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Việt Hải Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Two routes.",
+          },
+          { type: "heading", text: "By Sea" },
+          {
+            type: "paragraph",
+            text: "By sea: from Bến Bèo pier in Cát Bà town, boat tickets cost 50,000 VND per person for a scheduled departure or 400,000 VND for a 6-person speedboat. Journey time is around 30-45 minutes through Lan Hà Bay. Some luxury cruise itineraries (Heritage Cruises, Serenity Cruises, Paradise Grand) also stop here. July and August often bring rough seas that prevent boat access - use the land route in those months.",
+          },
+          { type: "heading", text: "By Land" },
+          {
+            type: "paragraph",
+            text: "By land: buy a national park ticket (160,000 VND) at Cát Bà National Park gate, then trek 12km through the jungle to the village (3-4 hours each way). The best option is to combine both: trek in, boat out, or reverse.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Việt Hải Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "A small valley village with rice paddies, vegetable plots, fish ponds, and traditional wooden houses surrounded by karst peaks. Water buffalo on the paths, chickens in the yards. The village has a quiet, working-farm character on weekday mornings before day tours arrive. By midday on weekends, it's busy with visitors from Cát Bà.",
+          },
+          { type: "heading", text: "Getting Around and Activities" },
+          {
+            type: "paragraph",
+            text: "When you arrive by boat, bicycle rental is available right at the Việt Hải pier - the 5km ride from the pier into the village on a concrete path through karst scenery is the classic arrival. Electric carts run the same route if you prefer not to cycle. Tourist facilities in the village include additional bicycle rental, homestays, a fish foot spa, basic restaurants, and guided jungle walks to Hang Tiên Đức cave. The cave walk is the most interesting guided activity - the cave itself is worth seeing and lunch is typically included. The fish spa is popular and genuinely works (small fish, surprisingly ticklish). The snake wine sold at some stalls is diluted past relevance - skip it.",
+          },
+          { type: "heading", text: "After 3 PM" },
+          {
+            type: "paragraph",
+            text: "After 3 PM, when day tours leave, the village reverts to its natural pace.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Việt Hải Village",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Việt Hải works best as an overnight stay or a combined trek-and-boat day rather than a quick stop on a day tour. The journey in is genuinely part of the experience - the 12km jungle trek through the national park is one of the better walks accessible from Cát Bà, and the bay approach by boat gives views of the karst that change the whole perspective of the island. The village itself has been shaped by tourism but the setting hasn't changed: rice fields, limestone walls, no road noise, and the bay visible through the trees.",
+          },
+          {
+            type: "paragraph",
+            text: "June for the harvest gold, February-March for the fog. Link to the national park article for the trek details: soloinvietnam.com/locations/cat-ba-national-park.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

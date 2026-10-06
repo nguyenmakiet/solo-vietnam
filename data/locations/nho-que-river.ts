@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const nhoQueRiver: Location = {
   slug: "nho-que-river",
   name: "Nho Quế River",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.23164528112462,
@@ -45,14 +45,78 @@ export const nhoQueRiver: Location = {
     "Self-paddled kayaks are available at similar prices to the motorised boats if you'd rather explore under your own power, with a rower available for hire if you want one",
   ],
   content: {
-    intro:
-      "The Nho Quế River runs 192km in total (about 46km within Vietnam), originating in China's Nghiễm Sơn mountains and entering Vietnam near Lũng Cú before carving through the limestone walls of the Đồng Văn Karst Plateau in shades of turquoise that seem almost artificially vivid in good light. Its most dramatic stretch is Tu Sản Canyon (Hẻm Tu Sản) - cliff walls rising 700-800m on either side over a length of roughly 1.7km, regarded as the deepest canyon in Southeast Asia - running alongside Mã Pí Lèng Pass. The river itself used to be considerably more dangerous, with fast rapids and small waterfalls; the construction of hydroelectric dams upstream calmed the water considerably, which is largely what made boat and kayak tourism here possible in the first place. From the Mã Pí Lèng viewpoint 1,500m above, the river looks like a thread of blue-green silk. From the water, the canyon walls rise hundreds of metres on both sides and the scale becomes genuinely overwhelming.",
-    howToGetThere:
-      "The river has two main access piers, reached from different directions. Bến Tà Làng: from Đồng Văn, ride about 4km to 'ngã 3 đồi thông' (Pine Hill junction), turn left onto a concrete road toward Tà Làng, then continue until a signposted turn leads down to the pier - a steep, sharply curved descent where cars typically park near 'cầu Tràng Hương' bridge and hire a local driver for the final stretch (around 150,000 VND round trip); walking instead takes about 2km. Bến Xín Cái: continue past Đồng Văn along Mã Pí Lèng toward Mèo Vạc, and near the base of the pass look for a signposted left turn into Xín Cái commune - about 5km further to a drop-off point, then a roughly 2km walk down to where the boats moor. Guesthouses in either Đồng Văn or Mèo Vạc can arrange boat tickets and, in some cases, transport. Most Hà Giang Loop riders cross Mã Pí Lèng and treat the boat tour as a natural stop along the way, whichever pier fits their direction of travel.",
-    whatToExpect:
-      "The boat tour covers a section of the canyon, typically taking 1–1.5 hours return depending on the pier and boat type. The boats are small motorised wooden vessels holding around 4–6 people, and self-paddled boats or kayaks are also available. The canyon narrows dramatically in places, with sheer walls rising on both sides. The water color shifts from pale green in the shallows to a deep jade in the deeper sections. Swallows nest in the cliff walls and the sound of the motor echoes off the limestone. It's one of the most striking boat journeys in Vietnam.",
-    travelTips:
-      "The Nho Quế boat tour is best done after crossing Mã Pí Lèng, whichever direction you're travelling - this gives you both the aerial view from the pass and the ground-level perspective from the water in one day. Decide on your overnight base according to your route and timing rather than a fixed rule: Đồng Văn if you've used Tà Làng pier and are finishing later in the day, or Mèo Vạc if you're continuing on past Xín Cái pier. Either town offers a calmer, more genuine atmosphere than rushing the ride in fading light, which is worth avoiding given the pass's sharp curves and drop-offs.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Nho Quế River Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Nho Quế River runs 192km in total (about 46km within Vietnam), originating in China's Nghiễm Sơn mountains and entering Vietnam near Lũng Cú before carving through the limestone walls of the Đồng Văn Karst Plateau in shades of turquoise that seem almost artificially vivid in good light.",
+          },
+          { type: "heading", text: "Tu Sản Canyon" },
+          {
+            type: "paragraph",
+            text: "Its most dramatic stretch is Tu Sản Canyon (Hẻm Tu Sản) - cliff walls rising 700-800m on either side over a length of roughly 1.7km, regarded as the deepest canyon in Southeast Asia - running alongside Mã Pí Lèng Pass. The river itself used to be considerably more dangerous, with fast rapids and small waterfalls; the construction of hydroelectric dams upstream calmed the water considerably, which is largely what made boat and kayak tourism here possible in the first place. From the Mã Pí Lèng viewpoint 1,500m above, the river looks like a thread of blue-green silk. From the water, the canyon walls rise hundreds of metres on both sides and the scale becomes genuinely overwhelming.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Nho Quế River",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The river has two main access piers, reached from different directions.",
+          },
+          { type: "heading", text: "Bến Tà Làng" },
+          {
+            type: "paragraph",
+            text: "Bến Tà Làng: from Đồng Văn, ride about 4km to 'ngã 3 đồi thông' (Pine Hill junction), turn left onto a concrete road toward Tà Làng, then continue until a signposted turn leads down to the pier - a steep, sharply curved descent where cars typically park near 'cầu Tràng Hương' bridge and hire a local driver for the final stretch (around 150,000 VND round trip); walking instead takes about 2km.",
+          },
+          { type: "heading", text: "Bến Xín Cái" },
+          {
+            type: "paragraph",
+            text: "Bến Xín Cái: continue past Đồng Văn along Mã Pí Lèng toward Mèo Vạc, and near the base of the pass look for a signposted left turn into Xín Cái commune - about 5km further to a drop-off point, then a roughly 2km walk down to where the boats moor.",
+          },
+          { type: "heading", text: "Tickets and Timing" },
+          {
+            type: "paragraph",
+            text: "Guesthouses in either Đồng Văn or Mèo Vạc can arrange boat tickets and, in some cases, transport. Most Hà Giang Loop riders cross Mã Pí Lèng and treat the boat tour as a natural stop along the way, whichever pier fits their direction of travel.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Nho Quế River",
+        blocks: [
+          { type: "heading", text: "The Boat Tour" },
+          {
+            type: "paragraph",
+            text: "The boat tour covers a section of the canyon, typically taking 1–1.5 hours return depending on the pier and boat type. The boats are small motorised wooden vessels holding around 4–6 people, and self-paddled boats or kayaks are also available.",
+          },
+          { type: "heading", text: "Inside the Canyon" },
+          {
+            type: "paragraph",
+            text: "The canyon narrows dramatically in places, with sheer walls rising on both sides. The water color shifts from pale green in the shallows to a deep jade in the deeper sections. Swallows nest in the cliff walls and the sound of the motor echoes off the limestone. It's one of the most striking boat journeys in Vietnam.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Nho Quế River",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Nho Quế boat tour is best done after crossing Mã Pí Lèng, whichever direction you're travelling - this gives you both the aerial view from the pass and the ground-level perspective from the water in one day. Decide on your overnight base according to your route and timing rather than a fixed rule: Đồng Văn if you've used Tà Làng pier and are finishing later in the day, or Mèo Vạc if you're continuing on past Xín Cái pier. Either town offers a calmer, more genuine atmosphere than rushing the ride in fading light, which is worth avoiding given the pass's sharp curves and drop-offs.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

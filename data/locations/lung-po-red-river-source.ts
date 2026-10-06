@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const lungPo: Location = {
   slug: "lung-po-red-river-source",
   name: "Lũng Pô",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["lao-cai"],
   destination: "",
   lat: 22.79305606355363,
@@ -41,14 +41,75 @@ export const lungPo: Location = {
     "Spring (Feb-Mar): plum and pear blossoms along the road, wild peach trees in bloom - the most visually lush season. May-Jun: cool, clear, best summer conditions. Jul-Aug: warmer and more humid. Sep-Nov: quieter, good for sunset from the flagpole and cloud hunting.",
   ],
   content: {
-    intro:
-      "Lũng Pô takes its name from the border stream (suối Lũng Pô) that marks the natural boundary between Vietnam and China at this point - the stream joins the Red River at border marker 92, the exact location where the river first enters Vietnamese territory. The Red River originates in Yunnan province, China, and has already travelled over 500km before reaching this confluence. From here it flows another 556km to the sea at Cửa Ba Lạt, carrying the alluvium that built the Red River Delta and sustaining one of the two great river civilizations of Vietnam - the other being the Mekong. Standing at Lũng Pô is standing at the upstream edge of that entire civilizational story. A 31.43m flagpole was completed in 2017 by the Lào Cai Provincial Youth Union, its height representing Fansipan's elevation in metres, with a 25-square-metre flag symbolising Lào Cai's 25 ethnic groups. At the confluence, the two water bodies are visibly distinct: the clear green Lũng Pô stream and the red-brown current of the Red River arriving from Yunnan.",
-    howToGetThere:
-      "Lũng Pô is approximately 70km from Lào Cai city, following the well-paved road along the Red River through Bát Xát town to A Mú Sung commune - about 2-3 hours by motorbike. The recommended route is via ĐT.156 from Lào Cai city (well-maintained, follows the Red River through scenic gorges). The Y Tý approach has steeper and rougher sections - better for high-clearance vehicles. The road is fully paved and considered easy riding. Most naturally combined with Y Tý in a 2-day Bát Xát district loop from Lào Cai or Sa Pa.",
-    whatToExpect:
-      "The site centres on border marker 92 at the river confluence and the 31.43m flagpole nearby. The two-colour water effect at the confluence - green tributary meeting red river - is the visual highlight and visible clearly on calm days. Climbing the 125 spiral steps inside the flagpole gives a panoramic view of the valley, the river bend, and the mountains on both sides of the Vietnam-China border. The area is quiet and managed by the A Mú Sung Border Guard Post. A memorial to border soldiers who died defending the frontier in 1979 and 1984 is nearby. The visit is primarily photography and reflection - allow 1-2 hours at the site.",
-    travelTips:
-      "Lũng Pô is most meaningful for travellers with some understanding of the Red River's role in Vietnamese history and culture - it carries more weight than a typical border landmark. For Vietnamese visitors it is often described as emotionally significant in the same way Mũi Cà Mau is at the southern tip. Combine with Y Tý (35km) and Choản Thèn for a full Bát Xát itinerary. Best photographs from the flagpole summit. For the March kapok bloom, check road conditions in advance.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Lũng Pô Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lũng Pô takes its name from the border stream (suối Lũng Pô) that marks the natural boundary between Vietnam and China at this point - the stream joins the Red River at border marker 92, the exact location where the river first enters Vietnamese territory.",
+          },
+          { type: "heading", text: "The Red River's Journey" },
+          {
+            type: "paragraph",
+            text: "The Red River originates in Yunnan province, China, and has already travelled over 500km before reaching this confluence. From here it flows another 556km to the sea at Cửa Ba Lạt, carrying the alluvium that built the Red River Delta and sustaining one of the two great river civilizations of Vietnam - the other being the Mekong. Standing at Lũng Pô is standing at the upstream edge of that entire civilizational story.",
+          },
+          { type: "heading", text: "The Flagpole and the Confluence" },
+          {
+            type: "paragraph",
+            text: "A 31.43m flagpole was completed in 2017 by the Lào Cai Provincial Youth Union, its height representing Fansipan's elevation in metres, with a 25-square-metre flag symbolising Lào Cai's 25 ethnic groups. At the confluence, the two water bodies are visibly distinct: the clear green Lũng Pô stream and the red-brown current of the Red River arriving from Yunnan.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Lũng Pô",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lũng Pô is approximately 70km from Lào Cai city, following the well-paved road along the Red River through Bát Xát town to A Mú Sung commune - about 2-3 hours by motorbike. The recommended route is via ĐT.156 from Lào Cai city (well-maintained, follows the Red River through scenic gorges). The Y Tý approach has steeper and rougher sections - better for high-clearance vehicles.",
+          },
+          {
+            type: "paragraph",
+            text: "The road is fully paved and considered easy riding. Most naturally combined with Y Tý in a 2-day Bát Xát district loop from Lào Cai or Sa Pa.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Lũng Pô",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The site centres on border marker 92 at the river confluence and the 31.43m flagpole nearby. The two-colour water effect at the confluence - green tributary meeting red river - is the visual highlight and visible clearly on calm days. Climbing the 125 spiral steps inside the flagpole gives a panoramic view of the valley, the river bend, and the mountains on both sides of the Vietnam-China border.",
+          },
+          { type: "heading", text: "The Border Post and Memorial" },
+          {
+            type: "paragraph",
+            text: "The area is quiet and managed by the A Mú Sung Border Guard Post. A memorial to border soldiers who died defending the frontier in 1979 and 1984 is nearby. The visit is primarily photography and reflection - allow 1-2 hours at the site.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Lũng Pô",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Lũng Pô is most meaningful for travellers with some understanding of the Red River's role in Vietnamese history and culture - it carries more weight than a typical border landmark. For Vietnamese visitors it is often described as emotionally significant in the same way Mũi Cà Mau is at the southern tip.",
+          },
+          {
+            type: "paragraph",
+            text: "Combine with Y Tý (35km) and Choản Thèn for a full Bát Xát itinerary. Best photographs from the flagpole summit. For the March kapok bloom, check road conditions in advance.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

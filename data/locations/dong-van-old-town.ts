@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const dongVanOldTown: Location = {
   slug: "dong-van-old-town",
   name: "Đồng Văn Old Town",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
   destination: "ha-giang-loop",
   lat: 23.274,
@@ -43,14 +43,93 @@ export const dongVanOldTown: Location = {
     "Corn wine (rượu ngô) from the old quarter stalls is the real thing. Stronger than it looks.",
   ],
   content: {
-    intro:
-      "Đồng Văn Old Town sits at 1,600m on the Đồng Văn Karst Plateau, 20km from the Chinese border. The name comes from the Mandarin 'tổng puôn' - meaning field of trade - reflecting its origin as a trading post in the early 20th century where merchants from China, Vietnam, and the local ethnic minority communities met to do business. The historic quarter has about 40 surviving stone houses built in rammed-earth wall construction, with yin-yang tile roofs, wooden doors, and stone-paved courtyards - dark grey, thick-walled, built to handle the plateau's bitter winters. Coffee shops, handicraft stalls, and lantern-lit shopfronts line the alleys. The surrounding landscape of jagged limestone karst makes it one of the most dramatic town settings in Vietnam. On weekends, the old town becomes a gathering point that transcends the usual boundaries of a tourist town - Vietnamese travellers, H'Mông and Lô Lô communities from surrounding villages, and foreign loop riders all converge around the weekly cultural nights, where bonfires and dancing start around 8 PM.",
-    howToGetThere:
-      "Đồng Văn is 150km north of Hà Giang city - about 4.5 to 5 hours by motorbike along the Ha Giang Loop via Quản Bạ, Yên Minh, and Mèo Vạc passes. The road is well-paved but demanding, with steep switchbacks and sheer drops. Buses run from Hà Giang city daily but are slow and infrequent. Most travellers do the loop on a motorbike hired in Hà Giang city (150,000-200,000 VND/day for a semi-auto). Bring enough cash - ATMs in Đồng Văn are unreliable.",
-    whatToExpect:
-      "The old quarter covers a few blocks of stone-paved lanes lined with restored merchant houses, small guesthouses, coffee shops, and local restaurants. Lanterns hang along the alleys at night. The architecture is a genuine mix: H'Mông rammed-earth houses with walls 30-40cm thick (earth, straw, and organic materials) that insulate against the plateau cold, alongside French colonial structures with stone walls, high windows, and iron balconies. The Nhà Gác Đồng Văn (French watchtower/flagpost building) is the most prominent colonial remnant - solid stone, visually distinct from the earth-wall houses around it. The evening food scene centres on the main square - thắng cố, bánh cuốn Đồng Văn, and corn wine from stalls. On Saturday and Sunday evenings from around 8 PM, the night market area hosts the weekly cultural event: bonfires, music, dancing, and a mixing of communities that visitors describe as unexpectedly moving. Weekday mornings are the quietest - the stone alleys before 7 AM feel genuinely old. The Sunday dawn market is the place to see actual trade between Kinh, Tày, Nùng, and Lô Lô communities.",
-    travelTips:
-      "Accommodation ranges from homestays (400,000-1,000,000 VND/room or 100,000-250,000 VND/dorm bed) to guesthouses and hotels. Well-known options include Hagiang Holic, Plum Homestay, Đồng Văn Cliffside House, Đồng Văn H'Mông Homestay, and Khói Home - most are in the town centre or surrounding communes.\n\nĐồng Văn rewards staying 1-2 nights rather than passing through. The old town has two distinct versions depending on when you're there: weekday mornings (quiet, atmospheric, close to the original character of the place) and weekend evenings (lively, social, cross-cultural in a way that's become famous on Vietnamese social media). Neither is more valid than the other - they're genuinely different experiences. From Đồng Văn you can day-trip to Mã Pí Lèng Pass (20km), Lũng Cú Flag Tower (24km), and the Séo Lủng H'Mông village market. The Sunday morning market starts at dawn and winds down by mid-morning.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Đồng Văn Old Town Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đồng Văn Old Town sits at 1,600m on the Đồng Văn Karst Plateau, 20km from the Chinese border. The name comes from the Mandarin 'tổng puôn' - meaning field of trade - reflecting its origin as a trading post in the early 20th century where merchants from China, Vietnam, and the local ethnic minority communities met to do business.",
+          },
+          { type: "heading", text: "Stone Houses and Alleys" },
+          {
+            type: "paragraph",
+            text: "The historic quarter has about 40 surviving stone houses built in rammed-earth wall construction, with yin-yang tile roofs, wooden doors, and stone-paved courtyards - dark grey, thick-walled, built to handle the plateau's bitter winters. Coffee shops, handicraft stalls, and lantern-lit shopfronts line the alleys. The surrounding landscape of jagged limestone karst makes it one of the most dramatic town settings in Vietnam.",
+          },
+          { type: "heading", text: "Weekend Gatherings" },
+          {
+            type: "paragraph",
+            text: "On weekends, the old town becomes a gathering point that transcends the usual boundaries of a tourist town - Vietnamese travellers, H'Mông and Lô Lô communities from surrounding villages, and foreign loop riders all converge around the weekly cultural nights, where bonfires and dancing start around 8 PM.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Đồng Văn Old Town",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Đồng Văn is 150km north of Hà Giang city - about 4.5 to 5 hours by motorbike along the Ha Giang Loop via Quản Bạ, Yên Minh, and Mèo Vạc passes. The road is well-paved but demanding, with steep switchbacks and sheer drops.",
+          },
+          { type: "heading", text: "Buses, Motorbikes and Cash" },
+          {
+            type: "paragraph",
+            text: "Buses run from Hà Giang city daily but are slow and infrequent. Most travellers do the loop on a motorbike hired in Hà Giang city (150,000-200,000 VND/day for a semi-auto). Bring enough cash - ATMs in Đồng Văn are unreliable.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Đồng Văn Old Town",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The old quarter covers a few blocks of stone-paved lanes lined with restored merchant houses, small guesthouses, coffee shops, and local restaurants. Lanterns hang along the alleys at night.",
+          },
+          { type: "heading", text: "Architecture" },
+          {
+            type: "paragraph",
+            text: "The architecture is a genuine mix: H'Mông rammed-earth houses with walls 30-40cm thick (earth, straw, and organic materials) that insulate against the plateau cold, alongside French colonial structures with stone walls, high windows, and iron balconies. The Nhà Gác Đồng Văn (French watchtower/flagpost building) is the most prominent colonial remnant - solid stone, visually distinct from the earth-wall houses around it.",
+          },
+          { type: "heading", text: "Food and the Weekend Night Market" },
+          {
+            type: "paragraph",
+            text: "The evening food scene centres on the main square - thắng cố, bánh cuốn Đồng Văn, and corn wine from stalls. On Saturday and Sunday evenings from around 8 PM, the night market area hosts the weekly cultural event: bonfires, music, dancing, and a mixing of communities that visitors describe as unexpectedly moving.",
+          },
+          { type: "heading", text: "Quiet Mornings and the Sunday Market" },
+          {
+            type: "paragraph",
+            text: "Weekday mornings are the quietest - the stone alleys before 7 AM feel genuinely old. The Sunday dawn market is the place to see actual trade between Kinh, Tày, Nùng, and Lô Lô communities.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Đồng Văn Old Town",
+        blocks: [
+          { type: "heading", text: "Where to Stay" },
+          {
+            type: "paragraph",
+            text: "Accommodation ranges from homestays (400,000-1,000,000 VND/room or 100,000-250,000 VND/dorm bed) to guesthouses and hotels. Well-known options include Hagiang Holic, Plum Homestay, Đồng Văn Cliffside House, Đồng Văn H'Mông Homestay, and Khói Home - most are in the town centre or surrounding communes.",
+          },
+          { type: "heading", text: "How Long and When" },
+          {
+            type: "paragraph",
+            text: "Đồng Văn rewards staying 1-2 nights rather than passing through. The old town has two distinct versions depending on when you're there: weekday mornings (quiet, atmospheric, close to the original character of the place) and weekend evenings (lively, social, cross-cultural in a way that's become famous on Vietnamese social media). Neither is more valid than the other - they're genuinely different experiences.",
+          },
+          { type: "heading", text: "Day Trips and the Sunday Market" },
+          {
+            type: "paragraph",
+            text: "From Đồng Văn you can day-trip to Mã Pí Lèng Pass (20km), Lũng Cú Flag Tower (24km), and the Séo Lủng H'Mông village market. The Sunday morning market starts at dawn and winds down by mid-morning.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [

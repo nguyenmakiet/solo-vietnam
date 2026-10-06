@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const vietnamMuseumOfEthnology: Location = {
   slug: "vietnam-museum-of-ethnology",
   name: "Vietnam Museum of Ethnology",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-06",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: "21.040622256391238",
@@ -49,14 +49,77 @@ export const vietnamMuseumOfEthnology: Location = {
     "The building itself was designed by Hà Đức Lịnh, a Tày ethnic architect - the shape references a Đông Sơn bronze drum. The interior was designed by French architect Véronique Dollfus.",
   ],
   content: {
-    intro:
-      "The Vietnam Museum of Ethnology (Bảo Tàng Dân Tộc Học Việt Nam) in Hanoi's Cầu Giấy district is widely regarded as the best museum in Vietnam. Opened in 1997 and developed in partnership with the Musée de l'Homme in Paris, it documents all 54 officially recognised ethnic groups in Vietnam - from the Kinh majority to the smallest highland minority communities. The building was designed by Tày architect Hà Đức Lịnh in a shape referencing the Đông Sơn bronze drum; the interior layout was handled by French architect Véronique Dollfus. The site covers 4.4 hectares total: three indoor buildings and a 2-hectare outdoor garden with 10 full-scale reconstructed traditional dwellings. There are three main areas worth your time: the main ethnology galleries (bronze drum hall, indoor permanent collection), the outdoor house village, and the water puppet performance on weekend mornings. The Southeast Asia building at the outer edge - covering Korean, global, and other cultures - is loosely connected to the main theme and can be skipped.",
-    howToGetThere:
-      "The museum is in Cầu Giấy district, about 8km west of Hoàn Kiếm Lake. From the Old Quarter, Grab or taxi takes 20-25 minutes depending on traffic. City buses 14, 16, and 45 stop on Nguyễn Văn Huyên street nearby. Cycling from the Old Quarter takes around 35-40 minutes via Đội Cấn and Hoàng Quốc Việt streets.",
-    whatToExpect:
-      "Three main indoor buildings: the permanent ethnology collection covering clothing, tools, musical instruments, ceremonial objects and daily implements across all 54 groups; the bronze drum gallery; and the Southeast Asia building (skippable). The outdoor section has 10 full-scale reconstructed traditional houses - longhouses, stilt houses, communal halls - from groups including the Tày, Việt, Chăm, Ede, Jarai, Bahnar, and Hmong. Several can be entered. The grounds are well-maintained and significantly cooler than the streets outside. One honest note: some individual object labels inside are vague - a knife or drum with no ethnic attribution or context. The broader room narratives are well-written; the item-level labelling is inconsistent. English signage throughout is thorough enough to follow without a guide.",
-    travelTips:
-      "The Museum of Ethnology is one of the most worthwhile half-days in Hanoi and is frequently passed over by visitors who stay around the Old Quarter. The documentation on ethnic minority cultures - particularly the highland groups of the north and central highlands - provides context that makes travel to those regions considerably more meaningful. If the itinerary includes Sa Pa, Hà Giang, or the central highlands, this museum before or after those trips is worth the 8km trip out to Cầu Giấy.",
+    richSections: [
+      {
+        id: "about",
+        label: "About This Place",
+        title: "What Makes Vietnam Museum of Ethnology Special",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Vietnam Museum of Ethnology (Bảo Tàng Dân Tộc Học Việt Nam) in Hanoi's Cầu Giấy district is widely regarded as the best museum in Vietnam. Opened in 1997 and developed in partnership with the Musée de l'Homme in Paris, it documents all 54 officially recognised ethnic groups in Vietnam - from the Kinh majority to the smallest highland minority communities.",
+          },
+          { type: "heading", text: "Architecture and Grounds" },
+          {
+            type: "paragraph",
+            text: "The building was designed by Tày architect Hà Đức Lịnh in a shape referencing the Đông Sơn bronze drum; the interior layout was handled by French architect Véronique Dollfus. The site covers 4.4 hectares total: three indoor buildings and a 2-hectare outdoor garden with 10 full-scale reconstructed traditional dwellings.",
+          },
+          { type: "heading", text: "What to Prioritise" },
+          {
+            type: "paragraph",
+            text: "There are three main areas worth your time: the main ethnology galleries (bronze drum hall, indoor permanent collection), the outdoor house village, and the water puppet performance on weekend mornings. The Southeast Asia building at the outer edge - covering Korean, global, and other cultures - is loosely connected to the main theme and can be skipped.",
+          },
+        ],
+      },
+      {
+        id: "how-to-get-there",
+        label: "How to Get There",
+        title: "How to Get to Vietnam Museum of Ethnology",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The museum is in Cầu Giấy district, about 8km west of Hoàn Kiếm Lake. From the Old Quarter, Grab or taxi takes 20-25 minutes depending on traffic.",
+          },
+          {
+            type: "paragraph",
+            text: "City buses 14, 16, and 45 stop on Nguyễn Văn Huyên street nearby. Cycling from the Old Quarter takes around 35-40 minutes via Đội Cấn and Hoàng Quốc Việt streets.",
+          },
+        ],
+      },
+      {
+        id: "what-to-expect",
+        label: "What to Expect",
+        title: "What to Expect at Vietnam Museum of Ethnology",
+        blocks: [
+          { type: "heading", text: "Indoor Galleries" },
+          {
+            type: "paragraph",
+            text: "Three main indoor buildings: the permanent ethnology collection covering clothing, tools, musical instruments, ceremonial objects and daily implements across all 54 groups; the bronze drum gallery; and the Southeast Asia building (skippable).",
+          },
+          { type: "heading", text: "The Outdoor Houses" },
+          {
+            type: "paragraph",
+            text: "The outdoor section has 10 full-scale reconstructed traditional houses - longhouses, stilt houses, communal halls - from groups including the Tày, Việt, Chăm, Ede, Jarai, Bahnar, and Hmong. Several can be entered. The grounds are well-maintained and significantly cooler than the streets outside.",
+          },
+          { type: "heading", text: "Labels and Signage" },
+          {
+            type: "paragraph",
+            text: "One honest note: some individual object labels inside are vague - a knife or drum with no ethnic attribution or context. The broader room narratives are well-written; the item-level labelling is inconsistent. English signage throughout is thorough enough to follow without a guide.",
+          },
+        ],
+      },
+      {
+        id: "travel-tips",
+        label: "Travel Tips",
+        title: "Travel Tips for Vietnam Museum of Ethnology",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "The Museum of Ethnology is one of the most worthwhile half-days in Hanoi and is frequently passed over by visitors who stay around the Old Quarter. The documentation on ethnic minority cultures - particularly the highland groups of the north and central highlands - provides context that makes travel to those regions considerably more meaningful. If the itinerary includes Sa Pa, Hà Giang, or the central highlands, this museum before or after those trips is worth the 8km trip out to Cầu Giấy.",
+          },
+        ],
+      },
+    ],
   },
   insights: {
     highlights: [
