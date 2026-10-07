@@ -56,4 +56,4 @@ export const thumbnailUrl = (publicId: string) =>
 // negotiate ("Invalid Image Content Type"), so og:image always forces JPEG.
 export const ogImageUrl = (url: string) => url.replace(/\bf_auto\b/, "f_jpg")
 
-export const OG_FALLBACK_IMAGE = ogImageUrl(heroUrl("fallback_picture"))
+export const OG_FALLBACK_IMAGE = ogImageUrl(heroUrl("ha-giang-loop_e8myfw"))
