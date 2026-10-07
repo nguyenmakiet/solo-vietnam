@@ -17,7 +17,6 @@ export const voiPhucTemple: Location = {
     "🐘 Kneeling Elephant Statues",
     "🏛️ Largest of the Four Guardian Temples",
     "folk-religion",
-    "medieval-vietnam",
   ],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Largely weather-independent as most of the experience is within the temple grounds.",

@@ -17,7 +17,6 @@ export const bachMaTemple: Location = {
     "🐎 White Horse Legend",
     "🧭 Guardian of Thăng Long's East",
     "folk-religion",
-    "medieval-vietnam",
   ],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Any time of day or year - it's an indoor site, though hours vary by source (see openingHours)",
