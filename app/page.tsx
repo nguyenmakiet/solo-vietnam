@@ -7,6 +7,7 @@ import { experiences as allExperiences } from "@/data/experiences"
 import { stripLeadingEmoji } from "@/lib/text"
 import { dotClass } from "@/lib/category-dot"
 import { LOCATION_COUNT_LABEL } from "@/lib/site-stats"
+import { buildMapProvinceData } from "@/lib/map-province-data"
 import "./homepage.css"
 
 const META_TITLE = "Solo in Vietnam - Travel Guides for Solo Travelers"
@@ -146,7 +147,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="home-map-canvas">
-              <VietnamMap />
+              <VietnamMap provinceData={buildMapProvinceData()} />
             </div>
           </div>
 
