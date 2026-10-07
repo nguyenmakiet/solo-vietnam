@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 export const metadata: Metadata = {
   title: "Map of Vietnam Locations | Solo in Vietnam",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
     title: "Map of Vietnam Locations | Solo in Vietnam",
     description: "Interactive map of 200+ travel locations across Vietnam. Filter by experience type - trekking, beaches, caves, food, temples, and more.",
     url: "https://www.soloinvietnam.com/map",
-    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
   },
 }
 

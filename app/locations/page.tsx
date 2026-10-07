@@ -1,6 +1,7 @@
 import { Suspense } from "react"
 import { activeLocations } from "@/data/all-locations"
 import LocationsClient from "./LocationsClient"
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 interface Props {
   searchParams: Promise<Record<string, string | string[]>>
@@ -17,7 +18,7 @@ export async function generateMetadata({ searchParams }: Props) {
       openGraph: {
         description: "Browse travel locations in Vietnam with practical tips and insights for solo travelers.",
         url: `https://www.soloinvietnam.com/provinces/${province}`,
-        images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+        images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
       },
       alternates: {
         canonical: `https://www.soloinvietnam.com/provinces/${province}`,
@@ -32,7 +33,7 @@ export async function generateMetadata({ searchParams }: Props) {
     openGraph: {
       description,
       url: "https://www.soloinvietnam.com/locations",
-      images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+      images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
     },
     alternates: {
       canonical: "https://www.soloinvietnam.com/locations",

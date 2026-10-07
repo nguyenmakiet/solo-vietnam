@@ -4,6 +4,7 @@ import Link from "next/link"
 import { regions } from "@/data/regions"
 import { provinces } from "@/data/provinces"
 import { stripLeadingEmoji } from "@/lib/text"
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 export const metadata: Metadata = {
   title: "North Vietnam Travel Guide | Solo in Vietnam",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: "North Vietnam Travel Guide | Solo in Vietnam",
     description: "North Vietnam travel guide - Ha Long Bay, Ha Giang Loop, Sapa, Ninh Binh, and more. Practical tips for solo travelers exploring Vietnam's cultural heartland.",
     url: "https://www.soloinvietnam.com/north-vietnam",
-    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
   },
 }
 
