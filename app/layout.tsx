@@ -5,15 +5,18 @@ import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// `subsets` only controls which files next/font preloads - the vietnamese @font-face
+// rules are still emitted and load on demand via unicode-range. Preloading only latin
+// keeps 3 unused high-priority font files off the homepage's critical path (LCP).
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-sans",
-  subsets: ["latin", "vietnamese"],
+  subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
 const sourceSerif4 = Source_Serif_4({
   variable: "--font-serif",
-  subsets: ["latin", "vietnamese"],
+  subsets: ["latin"],
   weight: ["500", "600"],
   style: ["normal", "italic"],
 });
