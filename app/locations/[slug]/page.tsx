@@ -17,6 +17,7 @@ import { isBestMonthsReleased } from "@/data/best-months-release"
 import { getNearbyLocations } from "@/lib/nearbyLocations"
 import { dotClass } from "@/lib/category-dot"
 import CloudinaryImage from "@/components/CloudinaryImage"
+import { ogImageUrl } from "@/lib/cloudinary"
 
 const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed" | "partially-closed", { label: string }> = {
   "temporarily-closed": { label: "Temporarily Closed." },
@@ -69,7 +70,7 @@ export async function generateMetadata({
       title: `${location.name}, ${area}`,
       description,
       url: `https://www.soloinvietnam.com/locations/${slug}`,
-      images: location.heroImage ? [{ url: location.heroImage, width: 1200, height: 630 }] : [],
+      images: location.heroImage ? [{ url: ogImageUrl(location.heroImage), width: 1200, height: 630 }] : [],
     },
     alternates: {
       canonical: `https://www.soloinvietnam.com/locations/${slug}`,

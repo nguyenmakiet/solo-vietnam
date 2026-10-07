@@ -3,6 +3,7 @@ import Link from "next/link"
 import { experiences, getExperienceBySlug } from "@/data/experiences"
 import "./experiences.css"
 import { activeLocations } from "@/data/all-locations"
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 export const metadata: Metadata = {
   title: "Experiences in Vietnam | Solo in Vietnam",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     title: "Experiences in Vietnam | Solo in Vietnam",
     description: "Browse travel experiences across Vietnam - trekking, beaches, caves, food tours, homestays, boat trips, and more. Find locations by what you want to do.",
     url: "https://www.soloinvietnam.com/experiences",
-    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
   },
 }
 

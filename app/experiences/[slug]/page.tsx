@@ -7,6 +7,7 @@ import { activeLocations } from "@/data/all-locations"
 import "../experiences.css"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 import { stripInlineMarkdown } from "@/lib/rich-text"
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // Thêm vào đầu file, trước component
@@ -39,7 +40,7 @@ export async function generateMetadata({
       title: experience ? `${experience.label} in Vietnam | Solo in Vietnam` : undefined,
       description,
       url: `https://www.soloinvietnam.com/experiences/${slug}`,
-      images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+      images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
     },
     alternates: {
       canonical: `https://www.soloinvietnam.com/experiences/${slug}`,

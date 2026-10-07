@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary";
 
 // `subsets` only controls which files next/font preloads - the vietnamese @font-face
 // rules are still emitted and load on demand via unicode-range. Preloading only latin
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     title: "Solo in Vietnam - Travel Guides for Solo Travelers",
     description: "Practical travel guides for solo travelers in Vietnam. Safety tips, scam alerts, transport guides, and local insights.",
     url: "https://www.soloinvietnam.com",
-    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
   },
 };
 

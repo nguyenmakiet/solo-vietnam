@@ -9,6 +9,7 @@ import { dotClass } from "@/lib/category-dot"
 import { LOCATION_COUNT_LABEL } from "@/lib/site-stats"
 import { buildMapProvinceData } from "@/lib/map-province-data"
 import "./homepage.css"
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 const META_TITLE = "Solo in Vietnam - Travel Guides for Solo Travelers"
 const META_DESCRIPTION = `Practical travel guides for solo travelers in Vietnam - ${LOCATION_COUNT_LABEL} places mapped, with safety tips, scam alerts, transport guides, and local insights.`
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     title: META_TITLE,
     description: META_DESCRIPTION,
     url: "https://www.soloinvietnam.com",
-    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
   },
 }
 

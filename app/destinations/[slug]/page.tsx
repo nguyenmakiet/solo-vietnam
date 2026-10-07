@@ -13,6 +13,7 @@ import { stripLeadingEmoji } from "@/lib/text"
 import { dotClass } from "@/lib/category-dot"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 import { stripInlineMarkdown } from "@/lib/rich-text"
+import { ogImageUrl } from "@/lib/cloudinary"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
@@ -80,7 +81,7 @@ export async function generateMetadata({
       title: `${destination.name}`,
       description,
       url: `https://www.soloinvietnam.com/destinations/${slug}`,
-      images: destination.heroImage ? [{ url: destination.heroImage, width: 1200, height: 630 }] : [],
+      images: destination.heroImage ? [{ url: ogImageUrl(destination.heroImage), width: 1200, height: 630 }] : [],
     },
     alternates: { canonical: `https://www.soloinvietnam.com/destinations/${slug}` },
   }

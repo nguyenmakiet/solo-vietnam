@@ -50,3 +50,10 @@ export const destinationCardUrl = (publicId: string) =>
 
 export const thumbnailUrl = (publicId: string) =>
   cloudinaryUrl(publicId, ImageSize.thumbnail.w, ImageSize.thumbnail.h)
+
+// ─── Open Graph images ───────────────────────────────────────
+// Social scrapers (Facebook, Zalo...) reject the WebP/AVIF that f_auto can
+// negotiate ("Invalid Image Content Type"), so og:image always forces JPEG.
+export const ogImageUrl = (url: string) => url.replace(/\bf_auto\b/, "f_jpg")
+
+export const OG_FALLBACK_IMAGE = ogImageUrl(heroUrl("fallback_picture"))

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./contact.css"
 import ContactForm from "./ContactForm"
+import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 export const metadata: Metadata = {
   title: "Contact | Solo in Vietnam",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Get in touch with Solo in Vietnam - questions, corrections, collaborations, or press inquiries welcome.",
     url: "https://www.soloinvietnam.com/contact",
-    images: [{ url: "https://res.cloudinary.com/dl5kqhspv/image/upload/w_1200,h_630,c_fill,q_auto,f_auto/fallback_picture", width: 1200, height: 630 }],
+    images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
   },
 }
 

@@ -8,6 +8,7 @@ import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import "./province.css"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 import { stripInlineMarkdown } from "@/lib/rich-text"
+import { ogImageUrl } from "@/lib/cloudinary"
 
 const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
 
@@ -42,7 +43,7 @@ export async function generateMetadata({
       title: `${province.name} ${label}`,
       description,
       url: `https://www.soloinvietnam.com/provinces/${slug}`,
-      images: province.heroImage ? [{ url: province.heroImage, width: 1200, height: 630 }] : [],
+      images: province.heroImage ? [{ url: ogImageUrl(province.heroImage), width: 1200, height: 630 }] : [],
     },
     alternates: { canonical: `https://www.soloinvietnam.com/provinces/${slug}` },
   }
