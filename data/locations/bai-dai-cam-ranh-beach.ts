@@ -12,7 +12,7 @@ export const baiDaiCamRanhBeach: Location = {
   address: "Cam Hải Đông, Cam Lâm, Khánh Hòa",
   type: ["beach"],
   categories: ["nature", "coast"],
-  experiences: ["beach", "swimming", "surfing", "photography"],
+  experiences: ["beach", "swimming", "surfing", "food"],
   tags: [
     "🏖️ Long White-Sand Beach",
     "✈️ Between Airport & City",

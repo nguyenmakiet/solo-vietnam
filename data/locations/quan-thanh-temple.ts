@@ -17,7 +17,6 @@ export const quanThanhTemple: Location = {
     "🐢 Bronze Huyền Thiên Trấn Vũ Statue",
     "🧭 Guardian of Thăng Long's North",
     "taoism",
-    "medieval-vietnam",
     "early-modern-vietnam",
   ],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
