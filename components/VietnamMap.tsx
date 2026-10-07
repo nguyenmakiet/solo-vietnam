@@ -3,9 +3,22 @@ import Vietnam from "@svg-maps/vietnam"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { useRef, useState } from "react"
-import { provinces } from "@/data/provinces"
-import { allLocations } from "@/data/all-locations"
 import "./vietnam-map.css"
+
+/**
+ * Per-province summary the map needs for hover counts and the click card.
+ * Built on the server (see buildMapProvinceData) so the full location and
+ * province data never ships in the client bundle.
+ */
+export type MapProvinceData = Record<
+  string,
+  {
+    /** Set when the province has a guide page (data/provinces.ts) */
+    guide?: { region: "north" | "central" | "south"; popupIntro?: string }
+    count: number
+    top: { slug: string; name: string }[]
+  }
+>
 
 const PROVINCE_TO_SLUG: Record<string, string> = {
   // NORTH
@@ -131,7 +144,7 @@ export function VietnamMapLegend({ className = "" }: { className?: string }) {
 
 const CARD_WIDTH = 240
 
-export default function VietnamMap() {
+export default function VietnamMap({ provinceData }: { provinceData: MapProvinceData }) {
   const router = useRouter()
   const wrapRef = useRef<HTMLDivElement>(null)
 
@@ -166,9 +179,7 @@ export default function VietnamMap() {
               onMouseEnter={() => setHoveredId(location.id)}
               onMouseMove={(e) => {
                 const rect = wrapRef.current!.getBoundingClientRect()
-                const count = slug
-                  ? allLocations.filter((l) => l.provinces.includes(slug)).length
-                  : 0
+                const count = slug ? provinceData[slug]?.count ?? 0 : 0
                 setHoverLabel({
                   x: e.clientX - rect.left,
                   y: e.clientY - rect.top,
@@ -212,11 +223,10 @@ export default function VietnamMap() {
 
       {/* Tooltip */}
       {tooltip && (() => {
-        const province = provinces.find((p) => p.slug === tooltip.slug)
+        const summary = tooltip.slug ? provinceData[tooltip.slug] : undefined
+        const province = summary?.guide
         const region: Region = province?.region ?? PROVINCE_REGION[tooltip.name] ?? "unknown"
-        const provinceLocations = tooltip.slug
-          ? allLocations.filter((l) => l.provinces.includes(tooltip.slug!)).slice(0, 4)
-          : []
+        const provinceLocations = summary?.top ?? []
 
         return (
           <div
