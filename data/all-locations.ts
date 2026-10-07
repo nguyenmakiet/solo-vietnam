@@ -79,6 +79,7 @@ import { duGiaVillage } from "@/data/locations/du-gia-village"
 import { duGiaWaterfall } from "@/data/locations/du-gia-waterfall"
 import { ducPagoda } from "@/data/locations/duc-pagoda"
 import { duckStopPhongNha } from "@/data/locations/duck-stop-phong-nha"
+import { duongLongChamTemple } from "@/data/locations/duong-long-cham-temple"
 import { eightLadiesCave } from "@/data/locations/eight-ladies-cave"
 import { elephantMountain } from "@/data/locations/elephant-mountain"
 import { elephantWaterfall } from "@/data/locations/elephant-waterfall"
@@ -344,6 +345,7 @@ export const allLocations: Location[] = [
   duGiaWaterfall,
   ducPagoda,
   duckStopPhongNha,
+  duongLongChamTemple,
   eightLadiesCave,
   elephantMountain,
   elephantWaterfall,
