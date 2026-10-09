@@ -62,17 +62,15 @@ export default function Home() {
           <p className="home-discovery-text">
             From{" "}
             <Link href="/locations?type=forest" className="discovery-link">ancient forests</Link>
-            {" "}where crocodiles still drift beneath the surface,{" "}
+            {" "}where crocodiles still drift,{" "}
             <Link href="/locations?type=beach" className="discovery-link">quiet beaches</Link>
-            {" "}that still feel genuinely wild,{" "}
+            {" "}that still feel wild and{" "}
             <Link href="/locations?experience=homestay" className="discovery-link">mountain villages</Link>
-            {" "}tucked into mist and highland fog,{" "}
-            <Link href="/locations?experience=motorcycling" className="discovery-link">winding roads</Link>
-            {" "}that reward anyone patient enough to follow them,{" "}
+            {" "}tucked into mist, to{" "}
             <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
-            {" "}full of noise and smoke and life, to the{" "}
+            {" "}and the{" "}
             <Link href="/locations?type=citadel&experience=history" className="discovery-link">ruins of dynasties</Link>
-            {" "}that shaped this country for centuries.
+            {" "}that shaped this country.
           </p>
           <p className="home-discovery-closing">
             I didn&apos;t know where to start either. So I started everywhere.

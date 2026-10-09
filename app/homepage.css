@@ -41,8 +41,8 @@
   margin-bottom: 32px;
 }
 .home-hero .home-discovery-text {
-  /* shorter measure = easier reading for the long linked paragraph */
-  max-width: 600px;
+  /* same measure as the original hero description */
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
 }
