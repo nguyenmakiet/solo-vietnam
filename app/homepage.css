@@ -15,13 +15,14 @@
 /* ── HERO (text-led) ── */
 .home-hero {
   background: var(--color-paper);
-  /* bottom = CTA-to-strip gap: 40px on mobile (was 48), 48px from 768px */
-  padding: 64px 24px 40px;
+  /* bottom = CTA-to-strip gap: 56px on mobile, 72px from 768px */
+  padding: 64px 24px 56px;
   text-align: center;
 }
 @media (min-width: 768px) {
   .home-hero {
-    padding-bottom: 48px;
+    padding-top: 80px;
+    padding-bottom: 72px;
   }
 }
 .home-hero-inner {
@@ -37,10 +38,11 @@
   color: var(--color-ink);
   letter-spacing: -1px;
   text-wrap: balance;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 .home-hero .home-discovery-text {
-  max-width: 680px;
+  /* shorter measure = easier reading for the long linked paragraph */
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,17 +99,22 @@
   line-height: 1.85;
   color: var(--color-ink);
   font-weight: 300;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
+/* closing line: a quiet serif-italic pause between the paragraph and the CTA */
 .home-discovery-closing {
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--color-ink-2);
-  margin-bottom: 12px;
+  text-wrap: balance;
+  margin-bottom: 32px;
 }
-/* hero CTA: 12px closing margin + 16px = the original 28px text-to-button gap */
+/* hero CTA: larger than the default .ui-btn so it reads as the primary action */
 .home-hero .ui-btn {
-  margin-top: 16px;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 .discovery-link {
   color: inherit;
