@@ -20,8 +20,10 @@ export const rachVemFishingVillage: Location = {
   openingHours: "Open daily - best visited in the morning",
   mapUrl: "https://www.google.com/maps?q=10.36556980337033,103.93341470835864",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775882742894!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V2OUNKcUFF!2m2!1d10.36678932166756!2d103.9319102607267!3f143.14725444991794!4f5.4122938784090024!5f0.7820865974627469", },
-  heroImage: heroUrl("rach-vem-fishing-village-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("rach-vem-fishing-village-phu-quoc-kien-giang_cqjtvh"),
+  gallery: [
+    "rach-vem-fishing-village-phu-quoc-kien-giang_cqjtvh",
+  ],
   seoDescription:
     "Rạch Vẹm on Phú Quốc's northern coast combines two experiences: a traditional stilt-house fishing village built over the sea, and Starfish Beach (Bãi Sao Biển) where hundreds of large red starfish are visible in shallow clear water. One of the last untouched corners of Phú Quốc - under redevelopment pressure as of 2026.",
   tips: [

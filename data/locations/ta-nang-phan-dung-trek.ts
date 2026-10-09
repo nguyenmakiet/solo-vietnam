@@ -20,7 +20,7 @@ export const taNangPhanDungTrek: Location = {
   openingHours: "Multi-day trek. Standard format: 2 nights 1 day.",
   mapUrl: "https://www.google.com/maps?q=11.536084933625041,108.53666725713427",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775885475962!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDQ4TWJjOFFF!2m2!1d11.50995837698618!2d108.5617215934657!3f194.06276043339966!4f3.6354070454610365!5f0.7820865974627469" },
-  heroImage: heroUrl("ta-nang-phan-dung-trek-hero_placeholder"),
+  heroImage: heroUrl("ta-nang-phan-dung-trek_a58x0e"),
   gallery: [
     "ta-nang-phan-dung-trek-4_hy1iuj",
     "ta-nang-phan-dung-trek-9_tkxhqo",

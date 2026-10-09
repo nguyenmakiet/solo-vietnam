@@ -19,9 +19,12 @@ export const duGiaVillage: Location = {
   entranceFee: "Free",
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.930340238883847,105.22274726498522",
-  streetView: {},
-  heroImage: heroUrl("du-gia-village-hero_placeholder"),
-  gallery: [],
+  streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1791563937218!6m8!1m7!1sCAoSHENJQUJJaEROTWhwcnBmc19KNFU3aTFueHM2aTU.!2m2!1d22.93401531261231!2d105.2019027134551!3f94.40382759987484!4f-0.29326357326219465!5f0.7820865974627469", },
+  heroImage: heroUrl("du-gia-village-ha-giang_emmaxx"),
+  gallery: [
+    "du-gia-village-ha-giang_emmaxx",
+    "du-gia-village-ha-giang-2_qnvddg",
+  ],
   seoDescription:
     "Du Già is a Tày and H'mông village 70km from Hà Giang city on the eastern Ha Giang Loop - quieter and harder to reach than the main loop, with rice terraces, red silk-cotton trees lining the road, and homestays that attract travellers who want the experience over the Instagram shot.",
   tips: [

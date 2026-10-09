@@ -20,8 +20,11 @@ export const honTamIsland: Location = {
   openingHours: "Boats run frequently through the day, roughly every 20-60 minutes from around 8:00 AM to 4:00 PM, with the last return crossing around 4:30-5:00 PM for day visitors - check current times when booking, since the schedule can change and varies by source",
   mapUrl: "https://www.google.com/maps?q=12.177120449066654,109.24323947785186",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775812866507!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREU0Ykh2Snc.!2m2!1d12.17873903730665!2d109.240896009001!3f111.9115017465371!4f-2.941374091088832!5f0.7820865974627469", },
-  heroImage: heroUrl("hon-tam-island-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("hon-tam-nha-trang-khanh-hoa-1_yyig7c"),
+  gallery: [
+    "hon-tam-nha-trang-khanh-hoa_p2m9o8",
+    "hon-tam-nha-trang-khanh-hoa-1_yyig7c",
+  ],
   seoDescription:
     "Hòn Tằm is Nha Trang Bay's most developed private island - a resort island a short speedboat ride offshore with white sand beaches, water sports, and Vietnam's largest island-based hot mineral mud bath complex, though at a real cost in crowding, gated resort access, and inflated food prices.",
   tips: [

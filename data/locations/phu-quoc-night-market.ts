@@ -24,8 +24,11 @@ export const phuQuocNightMarket: Location = {
   openingHours: "Roughly 5:00 PM – 11:00 PM daily, busiest 7-10 PM",
   mapUrl: "https://maps.google.com/?q=10.2158553,103.9602497",
   streetView: {},
-  heroImage: heroUrl("phu-quoc-night-market-placeholder"), // TODO: replace with real photo
-  gallery: [], // TODO: add gallery photos
+  heroImage: heroUrl("phu-quoc-night-market-kien-giang_tyw0lg"), // TODO: replace with real photo
+  gallery: [
+    "phu-quoc-night-market-kien-giang_tyw0lg",
+    "phu-quoc-night-market-kien-giang-2_ivnuec",
+  ], 
   seoDescription:
     "Phú Quốc Night Market (Chợ Đêm Bạch Đằng) in Dương Đông is the island's most well-known evening market, formerly known as Chợ Đêm Dinh Cậu before relocating - grilled seafood, souvenirs, and pearl stalls fill a riverside street, though the footprint has shrunk in 2026 due to ongoing riverside redevelopment.",
   tips: [
