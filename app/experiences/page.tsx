@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { experiences } from "@/data/experiences"
-import { dotClass } from "@/lib/category-dot"
+import ExperienceGrid from "@/components/ExperienceGrid"
 import "@/components/guide-pages.css"
-import { activeLocations } from "@/data/all-locations"
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 export const metadata: Metadata = {
@@ -36,23 +35,7 @@ export default function ExperiencesIndexPage() {
       <main className="gp-container gp-main">
         <section className="gp-section" aria-labelledby="h-types">
           <h2 id="h-types" className="gp-label">{experiences.length} experience types</h2>
-          <ul className="gp-links">
-            {experiences.map((exp) => {
-              const count = activeLocations.filter((l) => l.experiences.includes(exp.value)).length
-              return (
-                <li key={exp.slug}>
-                  <Link href={`/experiences/${exp.slug}`} className="gp-link">
-                    <span className={dotClass(exp.value)} aria-hidden="true" />
-                    <span className="gp-link-text">
-                      <span className="gp-link-name">{exp.label}</span>
-                    </span>
-                    <span className="gp-link-count">{count} {count === 1 ? "place" : "places"}</span>
-                    <span className="gp-link-arrow" aria-hidden="true">→</span>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+          <ExperienceGrid items={experiences} />
         </section>
       </main>
     </div>

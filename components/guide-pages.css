@@ -246,6 +246,58 @@ a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offse
 .gp .gp-link:hover .gp-link-arrow { transform: translateX(2px); }
 .gp .gp-link .ui-dot { width: 8px; height: 8px; }
 
+/* ── EXPERIENCE TILES: line icon on a soft category tint ── */
+.gp .gp-exp--water { --exp-accent: var(--color-dot-water); --exp-ink: #2b5f69; }
+.gp .gp-exp--trek { --exp-accent: var(--color-dot-trek); --exp-ink: #4a6044; }
+.gp .gp-exp--food { --exp-accent: var(--color-dot-food); --exp-ink: #8e4529; }
+.gp .gp-exp--highlight { --exp-accent: var(--color-dot-highlight); --exp-ink: #7a5a1c; }
+.gp .gp-exp--neutral { --exp-accent: var(--color-ink-2); --exp-ink: var(--color-ink); }
+.gp .gp-exp-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.gp .gp-exp-tile {
+  display: flex; align-items: center; gap: 14px;
+  min-height: 76px;
+  padding: 14px 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  color: var(--color-ink);
+  transition: border-color 0.15s;
+}
+.gp .gp-exp-tile:hover { border-color: var(--exp-accent); }
+.gp .gp-exp-tile:focus-visible { outline-offset: 2px; }
+.gp .gp-exp-icon {
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--exp-accent) 14%, var(--color-surface));
+  color: var(--exp-ink);
+}
+.gp .gp-exp-icon svg { width: 26px; height: 26px; transition: transform 0.2s; }
+.gp .gp-exp-tile:hover .gp-exp-icon svg { transform: translateY(-1px) scale(1.06); }
+.gp .gp-exp-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.gp .gp-exp-name {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: 17px; font-weight: 700; line-height: 1.25;
+}
+.gp .gp-exp-tile:hover .gp-exp-name { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.gp .gp-exp-count { font-size: 12.5px; color: var(--color-ink-2); font-variant-numeric: tabular-nums; }
+.gp .gp-exp-arrow { flex-shrink: 0; color: var(--color-teal); font-size: 14px; transition: transform 0.15s; }
+.gp .gp-exp-tile:hover .gp-exp-arrow { transform: translateX(2px); }
+.gp .gp-exp-hero { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+.gp .gp-exp-hero .gp-kicker { margin-bottom: 0; }
+.gp .gp-exp-icon--lg { width: 64px; height: 64px; }
+.gp .gp-exp-icon--lg svg { width: 36px; height: 36px; }
+@media (prefers-reduced-motion: reduce) {
+  .gp .gp-exp-icon svg, .gp .gp-exp-arrow { transition: none; }
+}
+
 /* Region switcher: plain text links, the current one marked */
 .gp .gp-switch { display: flex; flex-wrap: wrap; align-items: center; gap: 0 18px; margin-top: 14px; font-size: 14px; }
 .gp .gp-switch-label {
@@ -282,6 +334,29 @@ a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offse
 }
 .gp .gp-cta-text { margin-top: 6px; font-size: 14px; color: color-mix(in srgb, var(--color-paper) 75%, transparent); }
 .gp .gp-cta .ui-btn:focus-visible { outline-color: var(--color-teal-light); }
+
+/* Phones and tablets: stacked tiles (icon, then label and count), 2 or 3 across */
+@media (max-width: 1023px) {
+  .gp .gp-exp-tile { flex-direction: column; align-items: flex-start; gap: 10px; padding: 14px; }
+  .gp .gp-exp-arrow { display: none; }
+  .gp .gp-exp-name { font-size: 16px; overflow-wrap: anywhere; }
+}
+@media (min-width: 641px) {
+  .gp .gp-exp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+}
+@media (min-width: 1024px) {
+  .gp .gp-exp-grid { gap: 16px; }
+  .gp .gp-exp-tile { min-height: 88px; padding: 18px 20px; gap: 16px; }
+  .gp .gp-exp-icon { width: 52px; height: 52px; }
+  .gp .gp-exp-icon svg { width: 28px; height: 28px; }
+  .gp .gp-exp-name { font-size: 18px; }
+  .gp .gp-exp-icon--lg { width: 76px; height: 76px; }
+  .gp .gp-exp-icon--lg svg { width: 42px; height: 42px; }
+}
+
+@media (min-width: 1180px) {
+  .gp .gp-exp-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
 
 /* Dense variant for long, image-led lists (provinces, food): four across on wide screens */
 @media (min-width: 1180px) {

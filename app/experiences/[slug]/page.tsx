@@ -4,7 +4,9 @@ import { experiences, getExperienceBySlug } from "@/data/experiences"
 import { activeLocations } from "@/data/all-locations"
 import { provinces } from "@/data/provinces"
 import LocationCard from "@/components/LocationCard"
-import { dotClass } from "@/lib/category-dot"
+import ExperienceGrid from "@/components/ExperienceGrid"
+import ExperienceIcon from "@/components/ExperienceIcon"
+import { dotCategory } from "@/lib/category-dot"
 import "@/components/guide-pages.css"
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
@@ -72,9 +74,14 @@ export default async function ExperiencePage({
             <span className="sep" aria-hidden="true">/</span>
             <span className="current" aria-current="page">{experience.label}</span>
           </nav>
-          <p className="gp-kicker">
-            {matchedLocations.length} {matchedLocations.length === 1 ? "place" : "places"}
-          </p>
+          <div className={`gp-exp-hero gp-exp--${dotCategory(experience.value) ?? "neutral"}`}>
+            <span className="gp-exp-icon gp-exp-icon--lg">
+              <ExperienceIcon slug={experience.slug} />
+            </span>
+            <p className="gp-kicker">
+              {matchedLocations.length} {matchedLocations.length === 1 ? "place" : "places"}
+            </p>
+          </div>
           <h1>{experience.label} in Vietnam</h1>
           <p className="gp-tagline">{experience.tagline}</p>
         </div>
@@ -100,23 +107,7 @@ export default async function ExperiencePage({
 
         <section className="gp-section" aria-labelledby="h-others">
           <h2 id="h-others" className="gp-label">Browse other experiences</h2>
-          <ul className="gp-links">
-            {others.map((e) => {
-              const count = activeLocations.filter((l) => l.experiences.includes(e.value)).length
-              return (
-                <li key={e.slug}>
-                  <Link href={`/experiences/${e.slug}`} className="gp-link">
-                    <span className={dotClass(e.value)} aria-hidden="true" />
-                    <span className="gp-link-text">
-                      <span className="gp-link-name">{e.label}</span>
-                    </span>
-                    <span className="gp-link-count">{count} {count === 1 ? "place" : "places"}</span>
-                    <span className="gp-link-arrow" aria-hidden="true">→</span>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+          <ExperienceGrid items={others} />
         </section>
       </main>
     </div>
