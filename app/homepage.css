@@ -105,11 +105,9 @@
   color: var(--color-ink-2);
   margin-bottom: 12px;
 }
-.home-discovery-cta {
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--color-teal);
-  font-weight: 600;
+/* hero CTA: 12px closing margin + 16px = the original 28px text-to-button gap */
+.home-hero .ui-btn {
+  margin-top: 16px;
 }
 .discovery-link {
   color: inherit;

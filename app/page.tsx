@@ -77,9 +77,9 @@ export default function Home() {
           <p className="home-discovery-closing">
             I didn&apos;t know where to start either. So I started everywhere.
           </p>
-          <p className="home-discovery-cta">
-            Let&apos;s figure it out together.
-          </p>
+          <Link href="/locations" className="ui-btn">
+            Explore destinations
+          </Link>
         </div>
       </section>
 
