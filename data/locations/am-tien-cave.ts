@@ -24,8 +24,13 @@ export const amTienCave: Location = {
   openingHours: "7:00 AM - 6:00 PM daily; arrive before 5 PM to have enough time to see everything",
   mapUrl: "https://www.google.com/maps?q=20.283351716721526,105.91444612825703",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775919891167!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzR2OVRsM0FF!2m2!1d20.2816815269168!2d105.9115505134598!3f155.94168654130553!4f-35.89584643338258!5f0.7820865974627469", },
-  heroImage: heroUrl("am-tien-cave-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("am-tien-ninh-binh_bbonkp"),
+  gallery: [
+    "am-tien-ninh-binh_bbonkp",
+    "am-tien-ninh-binh-2_gzqouq",
+    "am-tien-ninh-binh-3_doleeq",
+    "am-tien-ninh-binh-4_f0cser",
+  ],
   seoDescription:
     "Am Tiên Cave - nicknamed 'Tuyệt Tình Cốc' after its wuxia-film-like scenery - is a dragon-mouth-shaped grotto above a jade-green lake in the Hoa Lư valley, reached by around 200-250 stone steps, with a dark history as an execution ground under Đinh Tiên Hoàng and a later connection to Queen Dương Vân Nga's Buddhist retreat.",
   tips: [
