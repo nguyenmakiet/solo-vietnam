@@ -56,46 +56,9 @@ export default function Home() {
       <section className="home-hero">
         <div className="home-hero-inner">
           <h1>
-            Most travelers see Vietnam.<br />
-            <em>A few actually find it.</em>
+            Want to explore Vietnam - but not sure where to start?
           </h1>
 
-          <p className="home-hero-desc">
-            Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won&apos;t find in a guidebook.
-          </p>
-
-          <Link href="/destinations" className="ui-btn">
-            Explore destinations
-          </Link>
-        </div>
-      </section>
-
-      {/* ── PHOTOGRAPHY STRIP ── */}
-      {stripPhotos.length > 0 && (
-        <section className="home-strip" aria-label="Featured destinations in photos">
-          {stripPhotos.map((d, i) => (
-            <Link key={d.slug} href={`/destinations/${d.slug}`} className="home-strip-item">
-              <CloudinaryImage
-                src={d.heroImage!}
-                alt={d.name}
-                fill
-                // All four sit in the first viewport on desktop. On mobile only three show:
-                // the 4th is hidden by CSS, and "0vw" resolves it to the smallest (16px) candidate.
-                sizes={i < 3 ? "(min-width: 768px) 25vw, 34vw" : "(min-width: 768px) 25vw, 0vw"}
-                loading="eager"
-                fetchPriority={i < 3 ? "high" : "auto"}
-              />
-            </Link>
-          ))}
-        </section>
-      )}
-
-      {/* ── DISCOVERY INTRO ── */}
-      <section className="home-discovery-section">
-        <div className="home-discovery-inner">
-          <p className="home-discovery-question">
-            Want to explore Vietnam - but not sure where to start?
-          </p>
           <p className="home-discovery-text">
             From{" "}
             <Link href="/locations?type=forest" className="discovery-link">ancient forests</Link>
@@ -119,6 +82,26 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* ── PHOTOGRAPHY STRIP ── */}
+      {stripPhotos.length > 0 && (
+        <section className="home-strip" aria-label="Featured destinations in photos">
+          {stripPhotos.map((d, i) => (
+            <Link key={d.slug} href={`/destinations/${d.slug}`} className="home-strip-item">
+              <CloudinaryImage
+                src={d.heroImage!}
+                alt={d.name}
+                fill
+                // All four sit in the first viewport on desktop. On mobile only three show:
+                // the 4th is hidden by CSS, and "0vw" resolves it to the smallest (16px) candidate.
+                sizes={i < 3 ? "(min-width: 768px) 25vw, 34vw" : "(min-width: 768px) 25vw, 0vw"}
+                loading="eager"
+                fetchPriority={i < 3 ? "high" : "auto"}
+              />
+            </Link>
+          ))}
+        </section>
+      )}
 
       {/* ── STATS ── */}
       <section className="home-stats-section">
