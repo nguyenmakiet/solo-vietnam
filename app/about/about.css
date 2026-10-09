@@ -106,6 +106,20 @@
 }
 
 
+/* Soft fade from the photo into the paper on its left edge. The one place
+   the page keeps a gradient: it blends the photo, it is not decoration. */
+.about-hero-image-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to left,
+    transparent 40%,
+    var(--color-paper) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
 .about-quote {
   position: relative;
   background: var(--surface-2);

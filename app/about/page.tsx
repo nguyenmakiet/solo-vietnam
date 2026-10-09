@@ -46,6 +46,7 @@ export default function AboutPage() {
               className="object-cover"
               priority
             />
+            <div className="about-hero-image-fade" />
           </div>
         </div>
 
