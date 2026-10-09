@@ -78,7 +78,7 @@ export default function Home() {
             I didn&apos;t know where to start either. So I started everywhere.
           </p>
           <Link href="/locations" className="ui-btn">
-            Explore destinations
+            Let&apos;s figure it out together.
           </Link>
         </div>
       </section>

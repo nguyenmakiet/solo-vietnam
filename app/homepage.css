@@ -128,7 +128,8 @@
 
 /* ── STATS: ink numerals, thin teal rule ── */
 .home-stats-section {
-  padding: 0 24px 64px;
+  /* top = gap below the photo strip (was provided by the removed intro section) */
+  padding: 64px 24px 64px;
 }
 .home-stats {
   max-width: 680px;
