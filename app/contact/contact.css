@@ -1,38 +1,31 @@
 /* ============================================================
-   contact.css — soloinvietnam.com /contact
+   contact.css - soloinvietnam.com /contact
+   Same visual system as the rest of the site: paper, ink type,
+   teal focus and accents, signal submit button, 1px borders,
+   2px radii, no shadows or gradients.
    ============================================================ */
 
 .contact-wrap {
-  --gold: #c8a96e;
-  --gold-light: #e8d5a8;
-  --dark: #1a1209;
-  --text: #2d2110;
-  --text-muted: #7a6a52;
-  --surface: #f5f0e8;
-  --surface-2: #ece5d6;
-  --border: #e2d8c8;
-  --white: #ffffff;
-
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
-  background: var(--surface);
-  color: var(--text);
+  background: var(--color-paper);
+  color: var(--color-ink);
   min-height: 100vh;
 }
 
 .contact-wrap h1,
 .contact-wrap h2 {
   font-family: var(--font-serif), "Source Serif 4", serif;
-  color: var(--dark);
+  color: var(--color-ink);
+  font-weight: 700;
   letter-spacing: -0.5px;
 }
-
 
 /* ============================================================
    HERO / INTRO
    ============================================================ */
 
 .contact-hero {
-  padding: 88px 32px 24px;
+  padding: 56px 32px 24px;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -40,29 +33,26 @@
 .contact-eyebrow {
   display: inline-block;
   font-size: 11px;
-  letter-spacing: 3px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--color-teal);
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .contact-hero h1 {
-  font-size: clamp(36px, 6vw, 52px);
-  font-weight: 900;
-  line-height: 1.1;
+  font-size: clamp(36px, 6vw, 56px);
+  line-height: 1.05;
   margin: 0 0 16px;
 }
 
 .contact-intro {
   font-size: 16px;
   line-height: 1.75;
-  color: var(--text-muted);
-  font-weight: 300;
-  max-width: 560px;
+  color: var(--color-ink-2);
+  max-width: 600px;
   margin: 0;
 }
-
 
 /* ============================================================
    FORM SECTION
@@ -71,16 +61,15 @@
 .contact-section {
   max-width: 720px;
   margin: 0 auto;
-  padding: 32px 32px 96px;
+  padding: 24px 32px 96px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
   padding: 36px;
 }
 
@@ -91,55 +80,66 @@
 }
 
 .contact-field label {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
-  color: var(--dark);
-  letter-spacing: 0.2px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
 }
 
 .contact-field input,
 .contact-field select,
 .contact-field textarea {
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  color: var(--color-ink);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-input);
   padding: 12px 14px;
+  min-height: 46px;
   outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.15s, outline-color 0.15s;
 }
 
 .contact-field input::placeholder,
 .contact-field textarea::placeholder {
-  color: #b0a090;
+  color: color-mix(in srgb, var(--color-ink-2) 70%, var(--color-surface));
 }
 
-.contact-field input:focus,
-.contact-field select:focus,
-.contact-field textarea:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(200, 169, 110, 0.18);
+.contact-field input:hover,
+.contact-field select:hover,
+.contact-field textarea:hover {
+  border-color: var(--color-ink-2);
+}
+
+.contact-field input:focus-visible,
+.contact-field select:focus-visible,
+.contact-field textarea:focus-visible {
+  border-color: var(--color-teal);
+  outline: 2px solid var(--color-teal);
+  outline-offset: 1px;
 }
 
 .contact-field select {
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%237a6a52' stroke-width='1.6'%3E%3Cpath d='M5 8l5 5 5-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%235b676a' stroke-width='1.6'%3E%3Cpath d='M5 8l5 5 5-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
+  background-size: 16px 16px;
   padding-right: 40px;
 }
 
 .contact-field textarea {
   resize: vertical;
-  min-height: 140px;
+  min-height: 160px;
   line-height: 1.6;
 }
 
 /* ── Honeypot (hidden from real visitors) ── */
+
 .contact-honeypot {
   position: absolute;
   width: 1px;
@@ -151,26 +151,33 @@
 
 .contact-error {
   font-size: 14px;
-  color: #a95d42;
+  color: var(--color-signal-text);
   margin: 0;
 }
 
+/* Submit: the site's primary signal button (globals.css .ui-btn) */
 .contact-submit {
   align-self: flex-start;
-  background: var(--gold);
-  color: var(--dark);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  border: none;
-  border-radius: 8px;
-  padding: 14px 28px;
+  background: var(--color-signal);
+  color: var(--color-surface);
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid var(--color-signal);
+  border-radius: var(--radius-button);
+  padding: 12px 24px;
+  min-height: 46px;
   cursor: pointer;
-  transition: background-color 0.2s, opacity 0.2s;
+  transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
 }
 
 .contact-submit:hover:not(:disabled) {
-  background: var(--gold-light);
+  background: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
+  border-color: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
+}
+
+.contact-submit:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
 }
 
 .contact-submit:disabled {
@@ -178,15 +185,13 @@
   cursor: not-allowed;
 }
 
-
 /* ============================================================
    SUCCESS STATE
    ============================================================ */
 
 .contact-success {
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
   padding: 48px 36px;
   text-align: center;
 }
@@ -195,7 +200,7 @@
   width: 40px;
   height: 40px;
   margin: 0 auto 16px;
-  color: var(--gold);
+  color: var(--color-teal);
 }
 
 .contact-success-icon svg {
@@ -204,37 +209,40 @@
 }
 
 .contact-success h2 {
-  font-size: 24px;
+  font-size: 26px;
   margin: 0 0 10px;
 }
 
 .contact-success p {
   font-size: 15px;
   line-height: 1.7;
-  color: var(--text-muted);
-  font-weight: 300;
+  color: var(--color-ink-2);
   max-width: 420px;
   margin: 0 auto 24px;
 }
 
 .contact-success-reset {
   background: none;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  font-size: 13px;
+  border: 1px solid var(--color-teal);
+  color: var(--color-teal);
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  border-radius: 8px;
+  border-radius: var(--radius-button);
   padding: 10px 20px;
+  min-height: 44px;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 .contact-success-reset:hover {
-  background: var(--gold);
-  color: var(--dark);
+  background: var(--color-teal);
+  color: var(--color-surface);
 }
 
+.contact-success-reset:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
 
 /* ============================================================
    MOBILE
@@ -242,11 +250,11 @@
 
 @media (max-width: 640px) {
   .contact-hero {
-    padding: 56px 20px 20px;
+    padding: 36px 16px 16px;
   }
 
   .contact-section {
-    padding: 24px 20px 72px;
+    padding: 16px 16px 72px;
   }
 
   .contact-form {
@@ -255,6 +263,10 @@
   }
 
   .contact-success {
-    padding: 40px 24px;
+    padding: 36px 20px;
+  }
+
+  .contact-submit {
+    align-self: stretch;
   }
 }

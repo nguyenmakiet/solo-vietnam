@@ -1,18 +1,21 @@
 /* ============================================================
-   about.css — soloinvietnam.com /about
+   about.css - soloinvietnam.com /about
+   Personal page, same visual system as the rest of the site:
+   paper, ink type, teal accents, teal-ink closing band with a signal
+   button, 2px radii, no shadows or gradients. The local variables
+   below map onto the site tokens in app/globals.css.
    ============================================================ */
 
 .about-wrap {
-  --gold: #c8a96e;
-  --gold-light: #e8d5a8;
-  --dark: #1a1209;
-  --text: #2d2110;
-  --text-muted: #7a6a52;
-  --surface: #f5f0e8;
-  --surface-2: #ece5d6;
-  --border: #e2d8c8;
-  --white: #ffffff;
-  --news-bad: #a95d42;
+  --accent: var(--color-teal);
+  --dark: var(--color-ink);
+  --text: var(--color-ink);
+  --text-muted: var(--color-ink-2);
+  --surface: var(--color-paper);
+  --surface-2: color-mix(in srgb, var(--color-ink) 4%, var(--color-paper));
+  --border: var(--color-line);
+  --white: var(--color-surface);
+  --news-bad: var(--color-signal-text);
 
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   background: var(--surface);
@@ -26,43 +29,27 @@
   font-family: var(--font-serif), "Source Serif 4", serif;
   color: var(--dark);
   letter-spacing: -0.5px;
+  font-weight: 700;
 }
 
 .about-wrap p {
   font-size: 16px;
   line-height: 1.75;
   color: var(--text);
-  font-weight: 300;
 }
 
 .about-section-eyebrow,
 .about-eyebrow {
   display: inline-block;
   font-size: 11px;
-  letter-spacing: 3px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--accent);
   font-weight: 600;
   margin-bottom: 18px;
 }
 
 
-/* ============================================================
-   PLACEHOLDERS
-   ============================================================ */
-
-.about-placeholder {
-  background: linear-gradient(135deg, #d9d0bf, #c7bda8);
-  color: #5a4e35;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 13px;
-  letter-spacing: 1px;
-  padding: 16px;
-  border-radius: 6px;
-}
 
 
 /* ============================================================
@@ -85,7 +72,7 @@
 
 .about-hero-text h1 {
   font-size: clamp(56px, 9vw, 96px);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
   margin: 0 0 24px;
 }
@@ -94,9 +81,9 @@
   font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: clamp(24px, 3.4vw, 36px);
   line-height: 1.25;
-  color: var(--gold);
+  color: var(--text-muted);
   margin: 0 0 16px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .about-tagline em {
@@ -115,25 +102,14 @@
   aspect-ratio: 4 / 3;
   min-height: 360px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: var(--radius-card);
 }
 
-.about-hero-image-fade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to left,
-    transparent 40%,
-    #f5f0e8 100%
-  );
-  pointer-events: none;
-  z-index: 1;
-}
 
 .about-quote {
   position: relative;
   background: var(--surface-2);
-  border-radius: 8px;
+  border-radius: var(--radius-card);
   padding: 32px 40px 32px 80px;
   max-width: 760px;
 }
@@ -145,7 +121,7 @@
   font-family: var(--font-serif), "Source Serif 4", serif;
   font-size: 72px;
   line-height: 1;
-  color: var(--gold);
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -182,7 +158,7 @@
 .about-section h2,
 .about-section-alt h2 {
   font-size: clamp(28px, 3.6vw, 40px);
-  font-weight: 900;
+  font-weight: 700;
   margin: 0 0 20px;
 }
 
@@ -299,7 +275,7 @@
 }
 
 .about-news-dot--good {
-  background: var(--gold);
+  background: var(--accent);
 }
 
 .about-news-dot--bad {
@@ -321,7 +297,7 @@
 }
 
 .about-news-dot--good::after {
-  color: var(--gold);
+  color: var(--accent);
 }
 
 .about-news-dot--bad::after {
@@ -366,7 +342,7 @@
 }
 
 .about-news-label--good {
-  color: var(--gold);
+  color: var(--accent);
 }
 
 .about-news-label--bad {
@@ -383,8 +359,7 @@
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
   font-size: 17px;
   line-height: 1.7;
-  font-weight: 300;
-
+  
   color: var(--text);
 }
 
@@ -419,7 +394,7 @@
   width: 48px;
   height: 1px;
   margin-top: 24px;
-  background: var(--gold);
+  background: var(--accent);
 }
 
 
@@ -453,7 +428,7 @@
   flex: 0 0 24px;
   width: 24px;
   height: 24px;
-  color: var(--gold);
+  color: var(--accent);
   margin-top: 3px;
 }
 
@@ -465,8 +440,7 @@
 .about-bullets li > span:last-child {
   font-size: 15px;
   line-height: 1.75;
-  font-weight: 300;
-}
+  }
 
 .about-find-image {
   position: relative;
@@ -518,7 +492,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
 }
 
 .about-companions figure {
@@ -545,7 +519,7 @@
   width: 32px;
   height: 32px;
   margin: 0 auto 20px;
-  color: var(--gold);
+  color: var(--accent);
 }
 
 .about-thanks-icon svg {
@@ -569,8 +543,8 @@
    ============================================================ */
 
 .about-cta {
-  background: var(--dark);
-  color: var(--surface);
+  background: var(--color-teal-ink);
+  color: var(--color-paper);
   padding: 72px 32px;
 }
 
@@ -586,49 +560,54 @@
 
 .about-cta-eyebrow {
   font-size: 11px;
-  letter-spacing: 3px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--color-teal-light);
   font-weight: 600;
   margin-bottom: 16px;
 }
 
 .about-cta h2 {
-  color: var(--surface);
+  color: var(--color-paper);
   font-size: clamp(32px, 4vw, 48px);
   margin: 0 0 14px;
 }
 
 .about-cta h2 em {
-  color: var(--gold);
+  color: var(--color-teal-light);
 }
 
-.about-cta p {
-  color: rgba(245, 240, 232, 0.72);
+.about-wrap .about-cta p {
+  color: color-mix(in srgb, var(--color-paper) 75%, transparent);
   margin: 0;
   max-width: 560px;
 }
 
+/* Primary action: the site's signal button (globals.css .ui-btn) */
 .about-cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 24px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  padding: 12px 20px;
+  background: var(--color-signal);
+  border: 1px solid var(--color-signal);
+  border-radius: var(--radius-button);
+  color: var(--color-surface);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.5px;
   white-space: nowrap;
-  transition:
-    background-color 180ms ease,
-    color 180ms ease;
+  transition: background-color 0.15s, border-color 0.15s;
 }
 
 .about-cta-btn:hover {
-  background: var(--gold);
-  color: var(--dark);
+  background: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
+  border-color: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
+}
+
+.about-cta-btn:focus-visible {
+  outline: 2px solid var(--color-teal-light);
+  outline-offset: 2px;
 }
 
 

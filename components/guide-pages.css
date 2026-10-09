@@ -1,0 +1,331 @@
+/* ============================================================
+   guide-pages.css - shared layout for the listing / guide pages:
+   /north|central|south-vietnam, /provinces, /provinces/[slug],
+   /experiences, /experiences/[slug].
+   Same language as the destination and location detail pages:
+   paper header (no overlay), serif display type, uppercase kickers,
+   1px card borders, 2px radius, teal-ink closing band, no shadows or
+   gradients. Every rule is scoped under .gp so class names never
+   collide with other pages after client-side navigation.
+   Accents come from .region-theme-{north|central|south} (globals.css);
+   pages without a region fall back to teal.
+   ============================================================ */
+
+.gp * { box-sizing: border-box; margin: 0; padding: 0; }
+.gp {
+  font-family: var(--font-sans), 'IBM Plex Sans', sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  min-height: 100vh;
+}
+.gp:not([class*="region-theme-"]) {
+  --type-tint: #edf4f4;
+  --type-border: #c9dcdd;
+  --type-accent: var(--color-teal);
+  --type-accent-strong: var(--color-teal);
+}
+.gp .gp-container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+.gp a:focus-visible,
+.gp button:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+/* the unlayered `.gp *` reset would otherwise beat the layered .ui-btn padding */
+.gp .ui-btn { padding: 12px 20px; }
+
+/* ── HEAD ── */
+.gp .gp-head { padding: 16px 0 28px; }
+.gp .gp-breadcrumb {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 4px 8px;
+  margin-bottom: 20px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.gp .gp-breadcrumb a { color: var(--color-ink-2); text-decoration: none; }
+.gp .gp-breadcrumb a:hover { color: var(--color-signal-text); }
+.gp .gp-breadcrumb .sep { color: var(--color-line); }
+.gp .gp-breadcrumb .current { color: var(--type-accent-strong); }
+.gp .gp-kicker {
+  margin-bottom: 10px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+}
+.gp .gp-head h1 {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: clamp(36px, 7vw, 60px); font-weight: 700;
+  line-height: 1.05; letter-spacing: -0.8px;
+  color: var(--color-ink);
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+.gp .gp-head h1 em { font-style: italic; }
+.gp .gp-tagline {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: clamp(19px, 2.6vw, 23px); font-style: italic;
+  line-height: 1.4;
+  color: var(--color-ink-2);
+  max-width: 720px;
+}
+.gp .gp-lead {
+  margin-top: 12px;
+  max-width: 720px;
+  font-size: 16px; line-height: 1.7;
+  color: var(--color-ink-2);
+}
+.gp .gp-tags {
+  margin-top: 14px;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+  line-height: 1.6;
+}
+
+/* Facts under the title: label above value, separated by space */
+.gp .gp-facts {
+  display: flex; flex-wrap: wrap;
+  gap: 16px 40px;
+  margin-top: 24px;
+}
+.gp .gp-fact { min-width: 0; }
+.gp .gp-fact--wide { flex-basis: 100%; }
+.gp .gp-fact dt {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--color-ink-2);
+  margin-bottom: 3px;
+}
+.gp .gp-fact dd { font-size: 15px; line-height: 1.5; color: var(--color-ink); }
+.gp .gp-fact dd.gp-fact-num {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: 26px; font-weight: 700; line-height: 1.1;
+}
+
+/* Hero photo: large and rectangular, no overlay */
+.gp .gp-hero-media {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: clamp(220px, 44vw, 520px);
+  background: var(--type-tint);
+  overflow: hidden;
+}
+.gp .gp-hero-media img { object-fit: cover; }
+
+/* ── SECTIONS ── */
+.gp .gp-main { padding-bottom: 8px; }
+.gp .gp-main:last-child { padding-bottom: 88px; }
+.gp .gp-section { padding-top: 52px; }
+.gp .gp-section:first-child { padding-top: 36px; }
+.gp .gp-label {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px;
+  margin-bottom: 20px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+}
+.gp .gp-count { color: var(--color-ink-2); font-weight: 500; letter-spacing: 0.08em; }
+.gp .gp-section-intro {
+  max-width: 720px;
+  margin: -8px 0 22px;
+  font-size: 15px; line-height: 1.7;
+  color: var(--color-ink-2);
+}
+
+/* Region group heading inside a page (provinces index) */
+.gp section[id] { scroll-margin-top: 80px; }
+.gp .gp-region-intro {
+  max-width: 720px;
+  margin-bottom: 24px;
+  font-size: 15px; line-height: 1.7;
+  color: var(--color-ink-2);
+}
+.gp .gp-region-title {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: clamp(26px, 4vw, 34px); font-weight: 700; line-height: 1.15;
+  color: var(--color-ink);
+  margin-bottom: 8px;
+}
+
+/* ── CARDS (same language as /destinations and destination places) ── */
+.gp .gp-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.gp .gp-card {
+  display: flex; flex-direction: column;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-ink);
+  transition: border-color 0.15s;
+}
+a.gp-card:hover { border-color: var(--color-ink-2); }
+.gp .gp-card--muted { background: transparent; }
+.gp .gp-card-media { position: relative; aspect-ratio: 16 / 9; background: var(--color-paper); overflow: hidden; }
+.gp .gp-card-media img { object-fit: cover; }
+.gp .gp-card-media--food { aspect-ratio: 4 / 3; }
+.gp .gp-card-body { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 12px; flex: 1; }
+.gp .gp-card-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
+.gp .gp-card-kicker {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--color-ink-2);
+}
+.gp .gp-status {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--color-signal-text);
+}
+.gp .gp-status--soft { color: var(--type-accent-strong); }
+.gp .gp-card-name {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: 18px; font-weight: 700; line-height: 1.25;
+  color: var(--color-ink);
+}
+a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.gp .gp-card-sub { font-size: 12px; color: var(--color-ink-2); }
+.gp .gp-card-desc {
+  font-size: 13.5px; line-height: 1.55; color: var(--color-ink-2);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.gp .gp-card-desc--full { display: block; -webkit-line-clamp: none; overflow: visible; }
+.gp .gp-card-tags {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+  line-height: 1.5;
+}
+.gp .gp-card-foot {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+  padding: 10px 16px 12px;
+  border-top: 1px solid var(--color-line);
+  font-size: 12px; line-height: 1.45; color: var(--color-ink-2);
+}
+.gp .gp-card-best { flex: 1; min-width: 0; }
+.gp .gp-card-arrow { flex-shrink: 0; color: var(--color-teal); font-size: 14px; white-space: nowrap; }
+.gp .gp-empty {
+  padding: 32px 20px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  text-align: center;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--color-ink-2);
+}
+
+/* ── LINK LISTS (provinces in a region, experience types) ── */
+.gp .gp-links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px 32px;
+}
+.gp .gp-link {
+  display: flex; align-items: center; gap: 12px;
+  min-height: 56px;
+  padding: 10px 0;
+  text-decoration: none;
+  color: var(--color-ink);
+}
+.gp .gp-link-text { flex: 1; min-width: 0; }
+.gp .gp-link-name { display: block; font-size: 16px; font-weight: 600; line-height: 1.35; }
+.gp .gp-link-sub {
+  display: block; margin-top: 2px;
+  font-size: 12.5px; line-height: 1.45; color: var(--color-ink-2);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.gp .gp-link-count { flex-shrink: 0; font-size: 12.5px; color: var(--color-ink-2); font-variant-numeric: tabular-nums; }
+.gp .gp-link-arrow { flex-shrink: 0; color: var(--color-teal); font-size: 14px; transition: transform 0.15s; }
+.gp .gp-link:hover .gp-link-name { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.gp .gp-link:hover .gp-link-arrow { transform: translateX(2px); }
+.gp .gp-link .ui-dot { width: 8px; height: 8px; }
+
+/* Region switcher: plain text links, the current one marked */
+.gp .gp-switch { display: flex; flex-wrap: wrap; align-items: center; gap: 0 18px; margin-top: 14px; font-size: 14px; }
+.gp .gp-switch-label {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--color-ink-2);
+}
+.gp .gp-switch a {
+  display: inline-flex; align-items: center; min-height: 44px;
+  color: var(--color-teal); font-weight: 600;
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+}
+.gp .gp-switch a:hover { color: var(--color-signal-text); }
+.gp .gp-switch a[aria-current="page"] { color: var(--color-ink); text-decoration: none; }
+
+/* ── CLOSING CTA: teal-ink band into the footer ── */
+.gp .gp-cta {
+  margin-top: 72px;
+  padding: 48px 0;
+  background: var(--color-teal-ink);
+  color: var(--color-paper);
+}
+.gp .gp-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.gp .gp-cta-label {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--color-teal-light);
+  margin-bottom: 6px;
+}
+.gp .gp-cta-title {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: clamp(26px, 4vw, 32px); font-weight: 700; line-height: 1.2;
+  color: var(--color-paper);
+}
+.gp .gp-cta-text { margin-top: 6px; font-size: 14px; color: color-mix(in srgb, var(--color-paper) 75%, transparent); }
+.gp .gp-cta .ui-btn:focus-visible { outline-color: var(--color-teal-light); }
+
+/* Dense variant for long, image-led lists (provinces, food): four across on wide screens */
+@media (min-width: 1180px) {
+  .gp .gp-cards--dense { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .gp .gp-cards--dense .gp-card-name { font-size: 18px; }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .gp .gp-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gp .gp-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .gp .gp-container { padding: 0 16px; }
+  .gp .gp-head { padding: 12px 0 22px; }
+  .gp .gp-breadcrumb { margin-bottom: 14px; }
+  .gp .gp-section { padding-top: 44px; }
+  .gp .gp-cards { grid-template-columns: minmax(0, 1fr); }
+  .gp .gp-links { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .gp .gp-facts { gap: 14px 28px; }
+  .gp .gp-cta { padding: 40px 0; }
+}
+
+/* ── DESKTOP COMPOSITION (>= 1024px): wide container, larger type ── */
+@media (min-width: 1024px) {
+  .gp .gp-container { max-width: 1264px; padding: 0 32px; }
+  .gp .gp-head { padding: 18px 0 40px; }
+  .gp .gp-breadcrumb { margin-bottom: 28px; }
+  .gp .gp-head h1 { font-size: clamp(56px, 4.8vw, 68px); margin-bottom: 14px; }
+  .gp .gp-tagline { font-size: 25px; max-width: 760px; }
+  .gp .gp-lead { font-size: 17px; max-width: 760px; }
+  .gp .gp-tags { margin-top: 18px; font-size: 13px; }
+  .gp .gp-facts { gap: 20px 56px; margin-top: 30px; }
+  .gp .gp-fact dd { font-size: 16px; }
+  .gp .gp-hero-media { width: calc(100% - 64px); height: clamp(400px, 34vw, 500px); }
+  .gp .gp-section { padding-top: 72px; }
+  .gp .gp-section:first-child { padding-top: 48px; }
+  .gp .gp-label { font-size: 12px; margin-bottom: 24px; }
+  .gp .gp-cards { gap: 24px; }
+  .gp .gp-card-body { padding: 16px 18px 14px; }
+  .gp .gp-card-name { font-size: 20px; }
+  .gp .gp-card-desc { font-size: 14px; }
+  .gp .gp-card-foot { padding: 12px 18px 14px; }
+  .gp .gp-links { gap: 4px 48px; }
+  .gp .gp-cta { margin-top: 88px; padding: 64px 0; }
+  .gp .gp-cta-title { font-size: clamp(36px, 3vw, 44px); }
+}
