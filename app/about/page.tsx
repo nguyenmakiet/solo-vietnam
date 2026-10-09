@@ -25,7 +25,7 @@ export default function AboutPage() {
       <section className="about-hero">
         <div className="about-hero-inner">
           <div className="about-hero-text">
-            <div className="about-eyebrow">— About</div>
+            <div className="about-eyebrow">About</div>
             <h1>About</h1>
             <p className="about-tagline">
               <em>
@@ -144,7 +144,7 @@ export default function AboutPage() {
               </div>
               <div className="about-news-body">
                 <p className="about-news-label about-news-label--bad">Bad news.</p>
-                <p className="about-news-text">He&apos;s lived here for more than 30 years —<br />and still wouldn&apos;t dare claim he understands all of Vietnam.</p>
+                <p className="about-news-text">He&apos;s lived here for more than 30 years -<br />and still wouldn&apos;t dare claim he understands all of Vietnam.</p>
               </div>
             </div>
 
@@ -330,7 +330,7 @@ export default function AboutPage() {
       <section className="about-cta">
         <div className="about-cta-inner">
           <div className="about-cta-text">
-            <div className="about-cta-eyebrow">— Let&apos;s keep exploring</div>
+            <div className="about-cta-eyebrow">Let&apos;s keep exploring</div>
             <h2>
               The road&apos;s <em>always</em> calling.
             </h2>

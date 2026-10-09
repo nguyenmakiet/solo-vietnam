@@ -1,24 +1,18 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { experiences, getExperienceBySlug } from "@/data/experiences"
-import { Location } from "@/data/location"
-import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { activeLocations } from "@/data/all-locations"
-import "../experiences.css"
-import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
-import { stripInlineMarkdown } from "@/lib/rich-text"
+import { provinces } from "@/data/provinces"
+import LocationCard from "@/components/LocationCard"
+import ExperienceGrid from "@/components/ExperienceGrid"
+import ExperienceIcon from "@/components/ExperienceIcon"
+import { dotCategory } from "@/lib/category-dot"
+import "@/components/guide-pages.css"
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-// Thêm vào đầu file, trước component
-function getImageSrc(heroImage?: string): string {
-  if (!heroImage || heroImage.includes('placeholder')) return '/images/coming-soon.jpg'
-  return heroImage
-}
-function getTypeLabel(type: Location["type"]): string {
-  const primary = Array.isArray(type) ? type[0] : type
-  return typeDisplayLabel(primary)
-}
+const PROVINCE_NAME = new Map(provinces.map((p) => [p.slug, p.name]))
+const provinceNames = (slugs: string[]) =>
+  slugs.map((s) => PROVINCE_NAME.get(s) ?? s.replace(/-/g, " ")).join(", ")
 
 // ── Metadata ──────────────────────────────────────────────────────────────────
 export async function generateMetadata({
@@ -67,97 +61,55 @@ export default async function ExperiencePage({
     l.experiences.includes(experience.value)
   )
 
+  const others = experiences.filter((e) => e.slug !== experience.slug)
+
   return (
-    <>
-      <div className="exp">
-
-        {/* Breadcrumb */}
-        <nav className="breadcrumb">
-          <Link href="/">Home</Link>
-          <span className="sep">›</span>
-          <Link href="/experiences">Experiences</Link>
-          <span className="sep">›</span>
-          <span className="current">{experience.label}</span>
-        </nav>
-
-        {/* Hero */}
-        <div className="exp-hero" style={{ backgroundColor: experience.heroColor }}>
-          <div className="exp-hero-bg" style={{ backgroundColor: experience.heroColor }} />
-          <div className="exp-hero-overlay" />
-          <div className="exp-hero-content">
-            <span className="exp-hero-icon">{experience.icon}</span>
-            <div className="exp-hero-count">
+    <div className="gp">
+      <header className="gp-head">
+        <div className="gp-container">
+          <nav className="gp-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <Link href="/experiences">Experiences</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <span className="current" aria-current="page">{experience.label}</span>
+          </nav>
+          <div className={`gp-exp-hero gp-exp--${dotCategory(experience.value) ?? "neutral"}`}>
+            <span className="gp-exp-icon gp-exp-icon--lg">
+              <ExperienceIcon slug={experience.slug} />
+            </span>
+            <p className="gp-kicker">
               {matchedLocations.length} {matchedLocations.length === 1 ? "place" : "places"}
-            </div>
-            <h1>{experience.label} in Vietnam</h1>
-            <p className="exp-hero-tagline">{experience.tagline}</p>
+            </p>
           </div>
+          <h1>{experience.label} in Vietnam</h1>
+          <p className="gp-tagline">{experience.tagline}</p>
         </div>
+      </header>
 
-        {/* Locations */}
-        <div className="exp-content">
-          <p className="section-label">
+      <main className="gp-container gp-main">
+        <section className="gp-section" aria-labelledby="h-locations">
+          <h2 id="h-locations" className="gp-label">
             {matchedLocations.length > 0
               ? `${matchedLocations.length} ${matchedLocations.length === 1 ? "location" : "locations"} for ${experience.label.toLowerCase()}`
               : "Locations"}
-          </p>
-
+          </h2>
           {matchedLocations.length > 0 ? (
-            <div className="locations-grid">
+            <div className="gp-cards">
               {matchedLocations.map((loc) => (
-                <Link
-                  key={loc.slug}
-                  href={`/locations/${loc.slug}`}
-                  className="location-card"
-                >
-                  <img
-                    src={getImageSrc(loc.heroImage)}
-                    alt={loc.name}
-                    className="location-card-img"
-                  />
-                  <div className="location-card-body">
-                    <div className="location-card-type">
-                      {getTypeLabel(loc.type)}
-                    </div>
-                    <div className="location-card-name">{loc.name}</div>
-                    <div className="location-card-province">
-                      {loc.provinces.join(", ").replace(/-/g, " ")}
-                    </div>
-                    <div className="location-card-desc">{loc.seoDescription}</div>
-                  </div>
-                  <div className="location-card-footer">
-                    <span>{isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : stripInlineMarkdown(loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "").split("(")[0].trim()}</span>
-                    <span>→</span>
-                  </div>
-                </Link>
+                <LocationCard key={loc.slug} location={loc} sub={provinceNames(loc.provinces)} />
               ))}
             </div>
           ) : (
-              <div className="exp-empty">
-              No locations yet - check back soon
-              </div>
-            )}
+            <div className="gp-empty">No locations yet - check back soon</div>
+          )}
+        </section>
 
-          {/* Browse other experiences */}
-          <p className="section-label" style={{ marginTop: 48 }}>Browse other experiences</p>
-          <div className="exp-index-grid">
-            {experiences
-              .filter((e) => e.slug !== experience.slug)
-              .map((e) => {
-                const count = activeLocations.filter((l) =>
-                  l.experiences.includes(e.value)
-                ).length
-                return (
-                  <Link key={e.slug} href={`/experiences/${e.slug}`} className="exp-index-card">
-                    <span className="exp-index-card-icon">{e.icon}</span>
-                    <span className="exp-index-card-label">{e.label}</span>
-                    <span className="exp-index-card-count">{count} {count === 1 ? "place" : "places"}</span>
-                  </Link>
-                )
-              })}
-          </div>
-        </div>
-      </div>
-    </>
+        <section className="gp-section" aria-labelledby="h-others">
+          <h2 id="h-others" className="gp-label">Browse other experiences</h2>
+          <ExperienceGrid items={others} />
+        </section>
+      </main>
+    </div>
   )
 }

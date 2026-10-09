@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { experiences, getExperienceBySlug } from "@/data/experiences"
-import "./experiences.css"
-import { activeLocations } from "@/data/all-locations"
+import { experiences } from "@/data/experiences"
+import ExperienceGrid from "@/components/ExperienceGrid"
+import "@/components/guide-pages.css"
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 export const metadata: Metadata = {
@@ -19,37 +19,25 @@ export const metadata: Metadata = {
 
 export default function ExperiencesIndexPage() {
   return (
-    <>
-      <div className="exp">
-        <nav className="breadcrumb">
-          <Link href="/">Home</Link>
-          <span className="sep">›</span>
-          <span className="current">Experiences</span>
-        </nav>
-
-        <div className="exp-index-hero">
+    <div className="gp">
+      <header className="gp-head">
+        <div className="gp-container">
+          <nav className="gp-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <span className="current" aria-current="page">Experiences</span>
+          </nav>
           <h1>Experiences in Vietnam</h1>
-          <p>Find exactly what you're looking for - from caving to beach days to overnight homestays</p>
+          <p className="gp-lead">Find exactly what you&apos;re looking for - from caving to beach days to overnight homestays</p>
         </div>
+      </header>
 
-        <div className="exp-content">
-          <p className="section-label">{experiences.length} experience types</p>
-          <div className="exp-index-grid">
-            {experiences.map((exp) => {
-              const count = activeLocations.filter((l) =>
-                l.experiences.includes(exp.value)
-              ).length
-              return (
-                <Link key={exp.slug} href={`/experiences/${exp.slug}`} className="exp-index-card">
-                  <span className="exp-index-card-icon">{exp.icon}</span>
-                  <span className="exp-index-card-label">{exp.label}</span>
-                  <span className="exp-index-card-count">{count} {count === 1 ? "place" : "places"}</span>
-                </Link>
-              )
-            })}
-          </div>
-        </div>
-      </div>
-    </>
+      <main className="gp-container gp-main">
+        <section className="gp-section" aria-labelledby="h-types">
+          <h2 id="h-types" className="gp-label">{experiences.length} experience types</h2>
+          <ExperienceGrid items={experiences} />
+        </section>
+      </main>
+    </div>
   )
 }

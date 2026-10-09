@@ -22,7 +22,7 @@ export default function ContactPage() {
     <main className="contact-wrap">
       <section className="contact-hero">
         <div className="contact-hero-inner">
-          <div className="contact-eyebrow">— Contact</div>
+          <div className="contact-eyebrow">Contact</div>
           <h1>Get in touch</h1>
           <p className="contact-intro">
             Got a question about a place on the site, spotted something out of

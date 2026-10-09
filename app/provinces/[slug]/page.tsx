@@ -2,12 +2,10 @@ import { provinces } from "../../../data/provinces"
 import { activeLocations } from "@/data/all-locations"
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import FallbackImage from "@/components/FallbackImage"
+import CloudinaryImage from "@/components/CloudinaryImage"
+import LocationCard from "@/components/LocationCard"
 import { stripLeadingEmoji } from "@/lib/text"
-import { tagDisplayLabel } from "@/data/taxonomy/tags"
-import "./province.css"
-import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
-import { stripInlineMarkdown } from "@/lib/rich-text"
+import "@/components/guide-pages.css"
 import { ogImageUrl } from "@/lib/cloudinary"
 
 const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
@@ -74,198 +72,123 @@ export default async function ProvincePage({
         : "South Vietnam"
 
   return (
-    <>
-      <div className="pp">
-        <nav className="breadcrumb">
-          <Link href="/">Home</Link>
-          <span className="sep">›</span>
-          <Link href={`/${province.region}-vietnam`}>{regionLabel}</Link>
-          <span className="sep">›</span>
-          <span className="current">{province.name}</span>
-        </nav>
-
-        <header
-          className="hero"
-          style={province.heroImage ? {
-            backgroundImage: `url(${province.heroImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          } : {}}
-        >
-          {province.heroImage && (
-            <div style={{
-              position: "absolute", inset: 0,
-              background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.4) 100%)",
-            }} />
+    <div className={`gp region-theme-${province.region}`}>
+      <header className="gp-head">
+        <div className="gp-container">
+          <nav className="gp-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <Link href={`/${province.region}-vietnam`}>{regionLabel}</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <span className="current" aria-current="page">{province.name}</span>
+          </nav>
+          <p className="gp-kicker">{regionLabel} · {pageLabel}</p>
+          <h1>{province.name} {titleSuffix}</h1>
+          {province.description && <p className="gp-lead">{province.description}</p>}
+          {province.tags && province.tags.length > 0 && (
+            <p className="gp-tags">{province.tags.map(stripLeadingEmoji).join(" · ")}</p>
           )}
-          <div className="hero-inner">
-            <div className="hero-badge">{regionLabel} · {pageLabel}</div>
-            <h1>{province.name} {titleSuffix}</h1>
-            {province.description && (
-              <p className="hero-desc">{province.description}</p>
-            )}
-            {province.tags && province.tags.length > 0 && (
-              <div className="hero-tags">
-                {province.tags.map((tag) => (
-                  <span key={tag} className="hero-tag">{stripLeadingEmoji(tag)}</span>
-                ))}
-              </div>
-            )}
-            <div className="hero-stats">
-              <div className="hero-stat">
-                <span className="val">{provinceLocations.length}</span>
-                <span className="lbl">Locations</span>
-              </div>
-              {province.bestTime && (
-                <div className="hero-stat">
-                  <span className="val" style={{ fontSize: 13 }}>{province.bestTime}</span>
-                  <span className="lbl">Best Time</span>
-                </div>
-              )}
+          <dl className="gp-facts">
+            <div className="gp-fact">
+              <dt>Locations</dt>
+              <dd className="gp-fact-num">{provinceLocations.length}</dd>
             </div>
-          </div>
-        </header>
-
-        <main className="content-wrap">
-
-          {/* Quick facts */}
-          {(province.capital || province.knownFor) && (
-            <section style={{ marginBottom: 40 }}>
-              <div className="quick-facts">
-                {province.capital && (
-                  <div className="fact-chip">
-                    <div>
-                      <div className="fc-label">Capital</div>
-                      <div className="fc-val">{province.capital}</div>
-                    </div>
-                  </div>
-                )}
-                {province.knownFor && (
-                  <div className="fact-chip">
-                    <div>
-                      <div className="fc-label">Known For</div>
-                      <div className="fc-val">{province.knownFor}</div>
-                    </div>
-                  </div>
-                )}
-                {province.bestTime && (
-                  <div className="fact-chip">
-                    <div>
-                      <div className="fc-label">Best Time</div>
-                      <div className="fc-val">{province.bestTime}</div>
-                    </div>
-                  </div>
-                )}
+            {province.capital && (
+              <div className="gp-fact">
+                <dt>Capital</dt>
+                <dd>{province.capital}</dd>
               </div>
-            </section>
+            )}
+            {province.knownFor && (
+              <div className="gp-fact">
+                <dt>Known For</dt>
+                <dd>{province.knownFor}</dd>
+              </div>
+            )}
+            {province.bestTime && (
+              <div className="gp-fact gp-fact--wide">
+                <dt>Best Time</dt>
+                <dd>{province.bestTime}</dd>
+              </div>
+            )}
+          </dl>
+          <nav className="gp-switch" aria-label="Browse by region">
+            <span className="gp-switch-label">Browse by region</span>
+            <Link href="/north-vietnam" aria-current={province.region === "north" ? "page" : undefined}>North</Link>
+            <Link href="/central-vietnam" aria-current={province.region === "central" ? "page" : undefined}>Central</Link>
+            <Link href="/south-vietnam" aria-current={province.region === "south" ? "page" : undefined}>South</Link>
+          </nav>
+        </div>
+      </header>
+
+      {province.heroImage && (
+        <div className="gp-hero-media">
+          <CloudinaryImage
+            src={province.heroImage}
+            alt={province.name}
+            fill
+            sizes="(min-width: 1200px) 1200px, 100vw"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </div>
+      )}
+
+      <main className="gp-container gp-main">
+        {/* Locations */}
+        <section className="gp-section" aria-labelledby="h-locations">
+          <h2 id="h-locations" className="gp-label">
+            Locations in {province.name} <span className="gp-count">· {provinceLocations.length} found</span>
+          </h2>
+          {provinceLocations.length > 0 ? (
+            <div className="gp-cards">
+              {provinceLocations.map((l) => <LocationCard key={l.slug} location={l} />)}
+            </div>
+          ) : (
+            <div className="gp-empty">
+              No locations listed yet for {province.name}.<br />Content coming soon.
+            </div>
           )}
+        </section>
 
-          {/* Region nav */}
-          <div className="region-nav">
-            <div className="rn-label">Browse by region</div>
-            <div className="rn-links">
-              <Link href="/north-vietnam" className={province.region === "north" ? "active" : ""}>North</Link>
-              <Link href="/central-vietnam" className={province.region === "central" ? "active" : ""}>Central</Link>
-              <Link href="/south-vietnam" className={province.region === "south" ? "active" : ""}>South</Link>
-            </div>
-          </div>
-
-          {/* Locations */}
-          <section style={{ marginBottom: 56 }}>
-            <p className="section-label">
-              Locations in {province.name} - {provinceLocations.length} found
-            </p>
-            {provinceLocations.length > 0 ? (
-              <div className="dest-grid">
-                {provinceLocations.map((l) => {
-                  return (
-                    <Link key={l.slug} href={`/locations/${l.slug}`} className="dest-card">
-
-                      <FallbackImage
-                        src={(!l.heroImage || l.heroImage.includes("placeholder")) ? "/images/coming-soon.jpg" : l.heroImage}
-                        alt={l.name}
-                        className="dc-img"
-                      />
-                      <div className="dc-body">
-                        <div className="dc-name">
-                          {l.name}
-                          {l.status === "seasonal" && (
-                            <span className="seasonal-badge">Seasonal</span>
-                          )}
-                          {l.status === "temporarily-closed" && (
-                            <span className="closed-badge">Temporarily Closed</span>
-                          )}
-                          {l.status === "seasonally-closed" && (
-                            <span className="closed-badge">Seasonally Closed</span>
-                          )}
-                          {l.status === "partially-closed" && (
-                            <span className="seasonal-badge">Partially Closed</span>
-                          )}
-                          {l.status === "closed" && (
-                            <span className="closed-badge">Closed</span>
-                          )}
-                        </div>
-                        {l.seoDescription && (
-                          <div className="dc-desc">
-                            {l.seoDescription.slice(0, 80)}{l.seoDescription.length > 80 ? "…" : ""}
-                          </div>
-                        )}
-                        {l.tags && l.tags.length > 0 && (
-                          <div className="dc-tags">
-                            {l.tags.slice(0, 2).map((t) => <span key={t} className="dc-tag">{tagDisplayLabel(t)}</span>)}
-                          </div>
-                        )}
-                        <div className="dc-footer">
-                          <span className="dc-time">{isBestMonthsReleased(l.slug) && l.bestMonths?.length ? formatMonths(l.bestMonths) : stripInlineMarkdown(l.bestSeasonNote ?? l.bestTimeOfDay ?? "").split("(")[0].trim()}</span>
-                          <span className="dc-cta">View →</span>
-                        </div>
-                      </div>
-                    </Link>
-                  )
-                })}
-              </div>
-            ) : (
-              <div className="empty-state">
-                <p>No locations listed yet for {province.name}.<br />Content coming soon.</p>
-              </div>
-            )}
-          </section>
-
-          {/* Local Food */}
-          {province.food && province.food.length > 0 && (
-            <section style={{ marginBottom: 56 }}>
-              <p className="section-label">Local Food You Must Try</p>
-              <div className="food-grid">
-                {province.food.map((f) => (
-                  <div key={f.name} className="food-card">
-                    {f.image ? (
-                      <img
+        {/* Local Food */}
+        {province.food && province.food.length > 0 && (
+          <section className="gp-section" aria-labelledby="h-food">
+            <h2 id="h-food" className="gp-label">Local Food You Must Try</h2>
+            <div className="gp-cards gp-cards--dense">
+              {province.food.map((f) => (
+                <div key={f.name} className="gp-card">
+                  {f.image && (
+                    <div className="gp-card-media gp-card-media--food">
+                      <CloudinaryImage
                         src={f.image}
                         alt={f.name}
-                        style={{ width: "100%", height: 140, objectFit: "cover", borderRadius: 8, marginBottom: 12 }}
+                        fill
+                        sizes="(min-width: 1264px) 384px, (min-width: 900px) 30vw, (min-width: 640px) 50vw, 100vw"
                       />
-                    ) : (
-                      <span className="food-emoji">{f.emoji}</span>
-                    )}
-                    <div className="food-name">{f.name}</div>
-                    <div className="food-desc">{f.description}</div>
+                    </div>
+                  )}
+                  <div className="gp-card-body">
+                    <h3 className="gp-card-name">{f.name}</h3>
+                    <p className="gp-card-desc gp-card-desc--full">{f.description}</p>
                   </div>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* CTA */}
-          <div className="bottom-cta">
-            <div>
-              <div className="cta-label">Explore the region</div>
-              <div className="cta-title">{regionLabel}</div>
+                </div>
+              ))}
             </div>
-            <Link href={`/${province.region}-vietnam`}>View all destinations →</Link>
-          </div>
+          </section>
+        )}
+      </main>
 
-        </main>
-      </div>
-    </>
+      {/* Closing CTA */}
+      <section className="gp-cta" aria-label="Explore the region">
+        <div className="gp-container gp-cta-inner">
+          <div>
+            <p className="gp-cta-label">Explore the region</p>
+            <p className="gp-cta-title">{regionLabel}</p>
+          </div>
+          <Link href={`/${province.region}-vietnam`} className="ui-btn">View all destinations →</Link>
+        </div>
+      </section>
+    </div>
   )
 }
