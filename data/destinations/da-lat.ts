@@ -6,7 +6,7 @@ export const daLat: Destination = {
   name: "Da Lat",
   province: "Lam Dong",
   provinceSlug: "lam-dong",
-  region: "south",
+  region: "central",
 
   description:
     "Da Lat is Vietnam's mountain escape - a former French hill station at 1,500m with cool weather year-round, pine forests, flower farms, waterfalls, and one of the country's most distinctive coffee cultures. It's also the adventure sports capital of the Central Highlands: canyoning, mountain biking, and trekking. The city itself is architecturally eccentric - French villas, Soviet-era buildings, and the Crazy House all in the same street.",
