@@ -56,16 +56,27 @@ export default function Home() {
       <section className="home-hero">
         <div className="home-hero-inner">
           <h1>
-            Most travelers see Vietnam.<br />
-            <em>A few actually find it.</em>
+            Want to explore Vietnam - but not sure where to start?
           </h1>
 
-          <p className="home-hero-desc">
-            Practical guides for solo travelers - scam alerts, real prices, and local knowledge you won&apos;t find in a guidebook.
+          <p className="home-discovery-text">
+            From{" "}
+            <Link href="/locations?type=forest" className="discovery-link">ancient forests</Link>
+            {" "}where crocodiles still drift,{" "}
+            <Link href="/locations?type=beach" className="discovery-link">quiet beaches</Link>
+            {" "}that still feel wild and{" "}
+            <Link href="/locations?experience=homestay" className="discovery-link">mountain villages</Link>
+            {" "}tucked into mist, to{" "}
+            <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
+            {" "}and the{" "}
+            <Link href="/locations?type=citadel&experience=history" className="discovery-link">ruins of dynasties</Link>
+            {" "}that shaped this country.
           </p>
-
-          <Link href="/destinations" className="ui-btn">
-            Explore destinations
+          <p className="home-discovery-closing">
+            I didn&apos;t know where to start either. So I started everywhere.
+          </p>
+          <Link href="/locations" className="ui-btn">
+            Let&apos;s figure it out together.
           </Link>
         </div>
       </section>
@@ -89,36 +100,6 @@ export default function Home() {
           ))}
         </section>
       )}
-
-      {/* ── DISCOVERY INTRO ── */}
-      <section className="home-discovery-section">
-        <div className="home-discovery-inner">
-          <p className="home-discovery-question">
-            Want to explore Vietnam - but not sure where to start?
-          </p>
-          <p className="home-discovery-text">
-            From{" "}
-            <Link href="/locations?type=forest" className="discovery-link">ancient forests</Link>
-            {" "}where crocodiles still drift beneath the surface,{" "}
-            <Link href="/locations?type=beach" className="discovery-link">quiet beaches</Link>
-            {" "}that still feel genuinely wild,{" "}
-            <Link href="/locations?experience=homestay" className="discovery-link">mountain villages</Link>
-            {" "}tucked into mist and highland fog,{" "}
-            <Link href="/locations?experience=motorcycling" className="discovery-link">winding roads</Link>
-            {" "}that reward anyone patient enough to follow them,{" "}
-            <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
-            {" "}full of noise and smoke and life, to the{" "}
-            <Link href="/locations?type=citadel&experience=history" className="discovery-link">ruins of dynasties</Link>
-            {" "}that shaped this country for centuries.
-          </p>
-          <p className="home-discovery-closing">
-            I didn&apos;t know where to start either. So I started everywhere.
-          </p>
-          <p className="home-discovery-cta">
-            Let&apos;s figure it out together.
-          </p>
-        </div>
-      </section>
 
       {/* ── STATS ── */}
       <section className="home-stats-section">

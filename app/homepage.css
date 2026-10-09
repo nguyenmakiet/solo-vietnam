@@ -15,13 +15,14 @@
 /* ── HERO (text-led) ── */
 .home-hero {
   background: var(--color-paper);
-  /* bottom = CTA-to-strip gap: 40px on mobile (was 48), 48px from 768px */
-  padding: 64px 24px 40px;
+  /* bottom = CTA-to-strip gap: 56px on mobile, 72px from 768px */
+  padding: 64px 24px 56px;
   text-align: center;
 }
 @media (min-width: 768px) {
   .home-hero {
-    padding-bottom: 48px;
+    padding-top: 80px;
+    padding-bottom: 72px;
   }
 }
 .home-hero-inner {
@@ -30,24 +31,20 @@
 }
 .home-hero h1 {
   font-family: var(--font-serif), "Source Serif 4", serif;
-  font-size: clamp(40px, 7vw, 72px);
+  /* sized down from 40-72px to fit the longer intro question */
+  font-size: clamp(32px, 5.5vw, 56px);
   font-weight: 900;
-  line-height: 1.05;
+  line-height: 1.1;
   color: var(--color-ink);
-  letter-spacing: -2px;
-  margin-bottom: 16px;
+  letter-spacing: -1px;
+  text-wrap: balance;
+  margin-bottom: 32px;
 }
-.home-hero h1 em {
-  font-style: italic;
-  color: var(--color-teal);
-}
-.home-hero-desc {
-  font-size: 17px;
-  line-height: 1.75;
-  color: var(--color-ink-2);
-  margin: 0 auto 28px;
-  font-weight: 300;
-  max-width: 520px;
+.home-hero .home-discovery-text {
+  /* same measure as the original hero description */
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ── PHOTOGRAPHY STRIP ── */
@@ -97,41 +94,27 @@
 }
 
 /* ── DISCOVERY INTRO ── */
-.home-discovery-section {
-  background: var(--color-paper);
-  padding: 64px 24px;
-}
-.home-discovery-inner {
-  max-width: 680px;
-  margin: 0 auto;
-}
-.home-discovery-question {
-  font-family: var(--font-serif), "Source Serif 4", serif;
-  font-size: clamp(20px, 2.8vw, 26px);
-  font-weight: 700;
-  color: var(--color-ink);
-  letter-spacing: -0.3px;
-  margin-bottom: 24px;
-  line-height: 1.35;
-}
 .home-discovery-text {
   font-size: 17px;
   line-height: 1.85;
   color: var(--color-ink);
   font-weight: 300;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
+/* closing line: a quiet serif-italic pause between the paragraph and the CTA */
 .home-discovery-closing {
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--color-ink-2);
-  margin-bottom: 12px;
+  text-wrap: balance;
+  margin-bottom: 32px;
 }
-.home-discovery-cta {
+/* hero CTA: larger than the default .ui-btn so it reads as the primary action */
+.home-hero .ui-btn {
   font-size: 16px;
-  line-height: 1.7;
-  color: var(--color-teal);
-  font-weight: 600;
+  padding: 16px 32px;
 }
 .discovery-link {
   color: inherit;
@@ -152,7 +135,8 @@
 
 /* ── STATS: ink numerals, thin teal rule ── */
 .home-stats-section {
-  padding: 0 24px 64px;
+  /* top = gap below the photo strip (was provided by the removed intro section) */
+  padding: 64px 24px 64px;
 }
 .home-stats {
   max-width: 680px;
