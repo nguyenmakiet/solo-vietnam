@@ -19,7 +19,7 @@ export const anBangBeach: Location = {
   entranceFee: "Free",
   openingHours: "Beach open 24 hours. Official swimming hours: summer 4:30 AM - 7:00 PM; winter 5:00 AM - 6:00 PM. Swimming outside these hours is not supervised.",
   mapUrl: "https://www.google.com/maps?q=15.888946897083208,108.35416826046463",
-  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776157890124!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzh2c3lMUlE.!2m2!1d15.8894895631765!2d108.3543780266765!3f206.22!4f-2.89!5f0.7820865974627469" },
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1791575327581!6m8!1m7!1sCAoSHENJQUJJaEMzWFcycG5nVzk2OFBLZWI0eU1yWlU.!2m2!1d15.90876110414788!2d108.3497070503243!3f52.99857531589225!4f-45.43467829580287!5f0.7820865974627469" },
   heroImage: heroUrl("an-bang-beach-quang-nam-3_fxcpgu"),
   gallery: [
     "an-bang-beach-quang-nam-5_g1pdjt",
