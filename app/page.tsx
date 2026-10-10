@@ -69,7 +69,7 @@ export default function Home() {
             {" "}tucked into mist, to{" "}
             <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
             {" "}and the{" "}
-            <Link href="/locations?type=citadel&experience=history" className="discovery-link">ruins of dynasties</Link>
+            <Link href="/locations?type=citadel&type=temple&experience=history&category=history&tag=champa-heritage&tag=nguyen-dynasty&tag=medieval-vietnam" className="discovery-link">ruins of dynasties</Link>
             {" "}that shaped this country.
           </p>
           <p className="home-discovery-closing">
