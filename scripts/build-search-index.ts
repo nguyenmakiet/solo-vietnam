@@ -6,6 +6,7 @@
  *
  * Each item has:
  *   type, slug, name, nameAscii, url, description, province, region, tags, heroImage
+ *   (+ keywords for locations: search-only synonyms, see lib/search-keywords.ts)
  *
  * nameAscii strips Vietnamese diacritics so Fuse.js can match
  * "hon son" → "Hòn Sơn", "ha giang" → "Hà Giang", etc.
@@ -21,6 +22,7 @@ import { provinces } from "../data/provinces"
 import { LOCATION_TYPES, isLocationType } from "../data/taxonomy/types"
 import { LOCATION_TAGS, isLocationTag } from "../data/taxonomy/tags"
 import { LOCATION_CATEGORIES, isLocationCategory } from "../data/taxonomy/categories"
+import { locationSearchKeywords } from "../lib/search-keywords"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -35,6 +37,8 @@ type SearchItem = {
   province?: string   // province slug (first province for locations)
   region?: string     // "north" | "central" | "south"
   tags: string[]
+  /** Search-only synonyms derived from registered taxonomy values (locations only) */
+  keywords?: string[]
   heroImage?: string
   category?: string   // blog posts only
 }
@@ -104,6 +108,8 @@ for (const loc of allLocations) {
   const typeTags: string[] = (Array.isArray(loc.type) ? loc.type : [loc.type]).map(typeSearchLabel)
   const locationTags: string[] = (loc.tags ?? []).map(tagSearchLabel)
   const categoryTags: string[] = categorySearchLabels(loc.categories ?? [])
+  const types: string[] = Array.isArray(loc.type) ? loc.type : [loc.type]
+  const keywords = locationSearchKeywords(types, loc.tags ?? [])
 
   items.push({
     type: "location",
@@ -114,6 +120,7 @@ for (const loc of allLocations) {
     description: truncate(loc.seoDescription),
     province: loc.provinces?.[0],
     tags: [...new Set([...typeTags, ...locationTags, ...categoryTags])],
+    ...(keywords.length > 0 ? { keywords } : {}),
     heroImage: loc.heroImage ?? undefined,
   })
 }
