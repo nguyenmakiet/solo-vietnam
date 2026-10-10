@@ -2,13 +2,13 @@
 
 import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
-import { Location, LocationType } from "@/data/location"
-import { tagDisplayLabel } from "@/data/taxonomy/tags"
+import type { LocationType } from "@/data/location"
+import { LOCATION_TAGS, isLocationTag, type LocationTagGroup } from "@/data/taxonomy/tags"
 import { LOCATION_TYPES, isLocationType, typeDisplayLabel } from "@/data/taxonomy/types"
 import { LOCATION_EXPERIENCES, experienceDisplayLabel, isLocationExperience } from "@/data/taxonomy/experiences"
 import { LOCATION_CATEGORIES, isLocationCategory } from "@/data/taxonomy/categories"
-import { releasedBestMonths } from "@/data/best-months-release"
 import { dotClass } from "@/lib/category-dot"
+import { isFilterableTag, type LocationCard } from "./location-card"
 import PhotoPlaceholder from "@/components/PhotoPlaceholder"
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
@@ -69,18 +69,12 @@ const PROVINCE_TO_REGION: Record<string, Region> = {
 
 const PAGE_SIZE = 24
 
-function getTypes(loc: Location): string[] {
-  return Array.isArray(loc.type) ? loc.type : [loc.type]
+function getTypes(loc: LocationCard): string[] {
+  return loc.types
 }
 
-function primaryType(loc: Location): LocationType {
-  return Array.isArray(loc.type) ? loc.type[0] : loc.type
-}
-
-// null = no real photo yet; the card shows PhotoPlaceholder instead of artwork
-function cardImageUrl(heroImage: string | undefined): string | null {
-  if (!heroImage || heroImage.includes("placeholder")) return null
-  return heroImage.replace("w_1200,h_630,c_fill", "w_600,h_400,c_fill")
+function primaryType(loc: LocationCard): LocationType {
+  return loc.types[0]
 }
 
 // Card photo; falls back to the placeholder if the photo fails to load.
@@ -139,6 +133,19 @@ function isFilterableCategory(value: string): boolean {
   )
 }
 
+const TAG_GROUPS: { group: LocationTagGroup; label: string }[] = [
+  { group: "historical-period", label: "Historical period" },
+  { group: "topic", label: "Topic" },
+  { group: "religion", label: "Religion" },
+  { group: "ethnic-culture", label: "Ethnic culture" },
+  { group: "cultural-influence", label: "Cultural influence" },
+  { group: "architectural-influence", label: "Architecture" },
+]
+
+function tagLabel(tag: string): string {
+  return isLocationTag(tag) ? LOCATION_TAGS[tag].label : tag
+}
+
 // Backward compatibility for old `?type=` URLs whose broad type has moved to a
 // category. Applied only when the type is no longer a filterable type, so it is
 // inert while the type is still canonical. Other stale types stay ignored.
@@ -159,11 +166,7 @@ function resolveLegacyTypes(types: string[]): { types: string[]; categories: str
   return { types: kept, categories }
 }
 
-function truncate(str: string, max: number): string {
-  return str.length > max ? str.slice(0, max - 1) + "…" : str
-}
-
-function getLocationRegion(loc: Location): Region | null {
+function getLocationRegion(loc: LocationCard): Region | null {
   for (const p of loc.provinces) {
     const r = PROVINCE_TO_REGION[p]
     if (r) return r
@@ -191,6 +194,7 @@ function parseUrlState() {
     types: p.getAll("type"),
     experiences: p.getAll("experience"),
     categories: p.getAll("category"),
+    tags: p.getAll("tag"),
     province: p.get("province") ?? "",
     months: p.getAll("month").map((m) => parseInt(m, 10)).filter(Boolean),
     page: Math.max(1, parseInt(p.get("page") ?? "1", 10)),
@@ -202,6 +206,7 @@ function buildSearch(
   types: string[],
   experiences: string[],
   categories: string[],
+  tags: string[],
   province: string,
   months: number[],
   page: number
@@ -211,6 +216,7 @@ function buildSearch(
   types.forEach((t) => p.append("type", t))
   experiences.forEach((e) => p.append("experience", e))
   categories.forEach((c) => p.append("category", c))
+  tags.forEach((t) => p.append("tag", t))
   if (province) p.set("province", province)
   months.forEach((m) => p.append("month", String(m)))
   if (page > 1) p.set("page", String(page))
@@ -259,7 +265,7 @@ const ROW_LABEL = "w-[76px] md:w-[88px] shrink-0 text-[11px] font-semibold track
 // ─── Component ────────────────────────────────────────────────────────────────
 
 interface Props {
-  locations: Location[]
+  locations: LocationCard[]
   initialProvince?: string
 }
 
@@ -268,6 +274,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedExperiences, setSelectedExperiences] = useState<string[]>([])
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
+  const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [province, setProvince] = useState(initialProvince ?? "")
   const [selectedMonths, setSelectedMonths] = useState<number[]>([])
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
@@ -283,6 +290,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     if (legacy.types.length) setSelectedTypes(legacy.types)
     if (init.experiences.length) setSelectedExperiences(init.experiences)
     if (categories.length) setSelectedCategories(categories)
+    if (init.tags.length) setSelectedTags(init.tags)
     if (init.province) setProvince(init.province)
     if (init.months.length) setSelectedMonths(init.months)
     if (init.page > 1) setVisibleCount(init.page * PAGE_SIZE)
@@ -292,12 +300,14 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const [typeOpen, setTypeOpen] = useState(false)
   const [expOpen, setExpOpen] = useState(false)
   const [catOpen, setCatOpen] = useState(false)
+  const [tagOpen, setTagOpen] = useState(false)
   const [provOpen, setProvOpen] = useState(false)
   const [provSearch, setProvSearch] = useState("")
 
   const typeRef = useRef<HTMLDivElement>(null)
   const expRef = useRef<HTMLDivElement>(null)
   const catRef = useRef<HTMLDivElement>(null)
+  const tagRef = useRef<HTMLDivElement>(null)
   const provRef = useRef<HTMLDivElement>(null)
   const provInputRef = useRef<HTMLInputElement>(null)
 
@@ -315,8 +325,22 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
 
   const allCategories = useMemo(() => {
     const set = new Set<string>()
-    locations.forEach((l) => (l.categories ?? []).forEach((c) => set.add(c)))
+    locations.forEach((l) => l.categories.forEach((c) => set.add(c)))
     return Array.from(set).filter(isFilterableCategory).sort()
+  }, [locations])
+
+  // Tag options grouped as in the registry, with how many locations carry each
+  const tagGroups = useMemo(() => {
+    const counts = new Map<string, number>()
+    locations.forEach((l) => l.tags.forEach((t) => counts.set(t, (counts.get(t) ?? 0) + 1)))
+    const present = Array.from(counts.keys()).filter(isFilterableTag)
+    return TAG_GROUPS.map(({ group, label }) => ({
+      label,
+      tags: present
+        .filter((t) => isLocationTag(t) && LOCATION_TAGS[t].group === group)
+        .sort((a, b) => tagLabel(a).localeCompare(tagLabel(b)))
+        .map((t) => ({ tag: t, count: counts.get(t) ?? 0 })),
+    })).filter((g) => g.tags.length > 0)
   }, [locations])
 
   const allProvinces = useMemo(() => {
@@ -335,7 +359,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     const counts: Record<number, number> = {}
     for (let m = 1; m <= 12; m++) counts[m] = 0
     locations.forEach((loc) => {
-      releasedBestMonths(loc).forEach((m) => { counts[m] = (counts[m] ?? 0) + 1 })
+      loc.months.forEach((m) => { counts[m] = (counts[m] ?? 0) + 1 })
     })
     return counts
   }, [locations])
@@ -345,6 +369,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const activeTypes = useMemo(() => selectedTypes.filter(isFilterableType), [selectedTypes])
   const activeExperiences = useMemo(() => selectedExperiences.filter(isFilterableExperience), [selectedExperiences])
   const activeCategories = useMemo(() => selectedCategories.filter(isFilterableCategory), [selectedCategories])
+  const activeTags = useMemo(() => selectedTags.filter(isFilterableTag), [selectedTags])
 
   const filtered = useMemo(() => {
     return locations.filter((loc) => {
@@ -358,26 +383,29 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
         if (!activeExperiences.some((e) => loc.experiences.includes(e))) return false
       }
       if (activeCategories.length > 0) {
-        if (!activeCategories.some((c) => ((loc.categories ?? []) as readonly string[]).includes(c))) return false
+        if (!activeCategories.some((c) => loc.categories.includes(c))) return false
+      }
+      if (activeTags.length > 0) {
+        if (!activeTags.some((t) => loc.tags.includes(t))) return false
       }
       if (province) {
         if (!loc.provinces.includes(province)) return false
       }
       if (selectedMonths.length > 0) {
-        if (!selectedMonths.some((m) => releasedBestMonths(loc).includes(m))) return false
+        if (!selectedMonths.some((m) => loc.months.includes(m))) return false
       }
       return true
     })
-  }, [locations, region, activeTypes, activeExperiences, activeCategories, province, selectedMonths])
+  }, [locations, region, activeTypes, activeExperiences, activeCategories, activeTags, province, selectedMonths])
 
   const visible = filtered.slice(0, visibleCount)
   const hasMore = visibleCount < filtered.length
   const currentPage = Math.ceil(visibleCount / PAGE_SIZE)
 
   useEffect(() => {
-    const search = buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, province, selectedMonths, 1)
+    const search = buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, 1)
     history.replaceState(null, "", `/locations${search}`)
-  }, [region, selectedTypes, selectedExperiences, selectedCategories, province, selectedMonths])
+  }, [region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths])
 
   useEffect(() => {
     const href = province
@@ -397,6 +425,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
       if (typeRef.current && !typeRef.current.contains(e.target as Node)) setTypeOpen(false)
       if (expRef.current && !expRef.current.contains(e.target as Node)) setExpOpen(false)
       if (catRef.current && !catRef.current.contains(e.target as Node)) setCatOpen(false)
+      if (tagRef.current && !tagRef.current.contains(e.target as Node)) setTagOpen(false)
       if (provRef.current && !provRef.current.contains(e.target as Node)) {
         setProvOpen(false)
         setProvSearch("")
@@ -430,6 +459,11 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     setVisibleCount(PAGE_SIZE)
   }
 
+  function toggleTag(t: string) {
+    setSelectedTags((prev) => prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t])
+    setVisibleCount(PAGE_SIZE)
+  }
+
   // Shortcut with several categories: select them all, or clear them all when
   // every one is already selected.
   function toggleCategorySet(set: string[]) {
@@ -456,6 +490,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     setSelectedTypes([])
     setSelectedExperiences([])
     setSelectedCategories([])
+    setSelectedTags([])
     setProvince("")
     setSelectedMonths([])
     setVisibleCount(PAGE_SIZE)
@@ -464,10 +499,10 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   function loadMore() {
     const nextPage = currentPage + 1
     setVisibleCount(nextPage * PAGE_SIZE)
-    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, province, selectedMonths, nextPage)}`)
+    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, nextPage)}`)
   }
 
-  const hasActiveFilters = region !== null || activeTypes.length > 0 || activeExperiences.length > 0 || activeCategories.length > 0 || province !== "" || selectedMonths.length > 0
+  const hasActiveFilters = region !== null || activeTypes.length > 0 || activeExperiences.length > 0 || activeCategories.length > 0 || activeTags.length > 0 || province !== "" || selectedMonths.length > 0
 
   return (
     <main className="min-h-screen bg-paper text-ink">
@@ -578,7 +613,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             <div ref={typeRef} className="relative">
               <button
                 aria-expanded={typeOpen}
-                onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setCatOpen(false); setProvOpen(false) }}
+                onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setCatOpen(false); setTagOpen(false); setProvOpen(false) }}
                 className={triggerClass(activeTypes.length > 0)}
               >
                 Type{activeTypes.length > 0 ? ` · ${activeTypes.length}` : ""}
@@ -600,7 +635,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             <div ref={expRef} className="relative">
               <button
                 aria-expanded={expOpen}
-                onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setCatOpen(false); setProvOpen(false) }}
+                onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setCatOpen(false); setTagOpen(false); setProvOpen(false) }}
                 className={triggerClass(activeExperiences.length > 0)}
               >
                 Experience{activeExperiences.length > 0 ? ` · ${activeExperiences.length}` : ""}
@@ -622,7 +657,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             <div ref={catRef} className="relative">
               <button
                 aria-expanded={catOpen}
-                onClick={() => { setCatOpen(!catOpen); setTypeOpen(false); setExpOpen(false); setProvOpen(false) }}
+                onClick={() => { setCatOpen(!catOpen); setTypeOpen(false); setExpOpen(false); setTagOpen(false); setProvOpen(false) }}
                 className={triggerClass(activeCategories.length > 0)}
               >
                 Category{activeCategories.length > 0 ? ` · ${activeCategories.length}` : ""}
@@ -640,11 +675,43 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               )}
             </div>
 
+            {/* Heritage (registered tags: period, faith, people, influence) */}
+            {tagGroups.length > 0 && (
+              <div ref={tagRef} className="relative">
+                <button
+                  aria-expanded={tagOpen}
+                  onClick={() => { setTagOpen(!tagOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false); setProvOpen(false) }}
+                  className={triggerClass(activeTags.length > 0)}
+                >
+                  Heritage{activeTags.length > 0 ? ` · ${activeTags.length}` : ""}
+                  <IconChevron open={tagOpen} />
+                </button>
+                {tagOpen && (
+                  <div className={`${PANEL} min-w-[240px] max-h-80`}>
+                    {tagGroups.map((g) => (
+                      <div key={g.label} role="group" aria-label={g.label}>
+                        <p className="px-3.5 pt-2 pb-1 text-[10px] font-semibold tracking-[0.12em] uppercase text-ink-2 select-none">
+                          {g.label}
+                        </p>
+                        {g.tags.map(({ tag, count }) => (
+                          <label key={tag} className={OPTION}>
+                            <input type="checkbox" checked={selectedTags.includes(tag)} onChange={() => toggleTag(tag)} className="accent-teal w-3.5 h-3.5" />
+                            <span className="flex-1">{tagLabel(tag)}</span>
+                            <span className="text-xs text-ink-2">{count}</span>
+                          </label>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* Province — search-style */}
             <div ref={provRef} className="relative">
               <button
                 aria-expanded={provOpen}
-                onClick={() => { setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false) }}
+                onClick={() => { setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false); setTagOpen(false) }}
                 className={triggerClass(province !== "")}
               >
                 {province ? formatSlug(province) : "Province"}
@@ -734,7 +801,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                 >
                   {/* Image: edge to edge, no radius */}
                   <div className="relative aspect-[4/3] overflow-hidden bg-paper">
-                    <CardImage src={cardImageUrl(loc.heroImage)} alt={loc.name} />
+                    <CardImage src={loc.image} alt={loc.name} />
                   </div>
 
                   {/* Body */}
@@ -755,7 +822,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                       </p>
                     )}
                     <p className="text-xs text-ink-2 leading-relaxed line-clamp-2">
-                      {loc.tags?.[0] ? tagDisplayLabel(loc.tags[0]) : truncate(loc.seoDescription, 70)}
+                      {loc.subtitle}
                     </p>
                   </div>
                 </Link>
