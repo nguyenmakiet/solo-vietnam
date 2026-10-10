@@ -13,7 +13,7 @@ export const imperialCity: Location = {
   type: ["citadel"],
   categories: ["history", "architecture", "culture"],
   experiences: ["history", "culture", "photography", "walking-tour"],
-  tags: ["🏯 UNESCO Heritage", "nguyen-dynasty", "🏛️ Imperial Architecture"],
+  tags: ["🏯 UNESCO Heritage", "🏛️ Imperial Architecture", "nguyen-dynasty"],
   bestMonths: [1, 2, 3, 4, 5, 6],
   bestSeasonNote: "Jan - Apr (spring, cool and dry - ideal). Apr - Jun for Huế Festival. Avoid Oct - Nov (peak flood season).",
   timeNeeded: {

@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef, useCallback } from "react"
 import { useRouter } from "next/navigation"
-import Fuse from "fuse.js"
+import Fuse, { type FuseResult } from "fuse.js"
+import { searchTokens } from "@/lib/search-keywords"
 import "./search-modal.css"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -17,6 +18,7 @@ type SearchItem = {
   province?: string
   region?: string
   tags: string[]
+  keywords?: string[]
   heroImage?: string
   category?: string
 }
@@ -27,6 +29,8 @@ type Props = {
 }
 
 // ─── Config ───────────────────────────────────────────────────────────────────
+
+const RESULT_LIMIT = 10
 
 const TYPE_CONFIG: Record<string, { label: string; cls: string; fallback: string }> = {
   location:    { label: "Location",    cls: "sm-badge--location",    fallback: "🏞️" },
@@ -75,6 +79,45 @@ function highlightName(
   return parts
 }
 
+/**
+ * Whole-query match first (unchanged behaviour for names like "Ha Giang").
+ * If that leaves room, add items that match EVERY meaningful word of the query
+ * (stopwords dropped, plurals singularised), so theme queries such as
+ * "ruin of dynasties" or "cham towers" still find their locations.
+ */
+function runSearch(fuse: Fuse<SearchItem>, query: string): FuseResult<SearchItem>[] {
+  const keyOf = (r: FuseResult<SearchItem>) => `${r.item.type}-${r.item.slug}`
+  const phraseHits = fuse.search(query, { limit: RESULT_LIMIT })
+  if (phraseHits.length >= RESULT_LIMIT) return phraseHits
+
+  const tokens = searchTokens(query)
+  if (tokens.length === 0 || (tokens.length === 1 && tokens[0] === query.trim().toLowerCase())) return phraseHits
+
+  // AND across tokens: keep items found by every token; rank by summed score.
+  let combined: Map<string, { hit: FuseResult<SearchItem>; score: number }> | null = null
+  for (const token of tokens) {
+    const tokenHits = new Map(fuse.search(token).map((r) => [keyOf(r), r]))
+    const next = new Map<string, { hit: FuseResult<SearchItem>; score: number }>()
+    if (combined === null) {
+      tokenHits.forEach((r, k) => next.set(k, { hit: r, score: r.score ?? 0 }))
+    } else {
+      combined.forEach((v, k) => {
+        const r = tokenHits.get(k)
+        if (r) next.set(k, { hit: v.hit, score: v.score + (r.score ?? 0) })
+      })
+    }
+    combined = next
+  }
+
+  const seen = new Set(phraseHits.map(keyOf))
+  const tokenHits = [...(combined ?? new Map()).values()]
+    .filter((v) => !seen.has(keyOf(v.hit)))
+    .sort((a, b) => a.score - b.score)
+    .map((v) => v.hit)
+
+  return [...phraseHits, ...tokenHits].slice(0, RESULT_LIMIT)
+}
+
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export default function SearchModal({ open, onClose }: Props) {
@@ -98,7 +141,7 @@ export default function SearchModal({ open, onClose }: Props) {
       .then((data: SearchItem[]) => {
         setFuse(
           new Fuse(data, {
-            keys: ["name", "nameAscii", "description", "tags"],
+            keys: ["name", "nameAscii", "description", "tags", "keywords"],
             threshold: 0.3,
             ignoreLocation: true,
             includeMatches: true,
@@ -133,7 +176,7 @@ export default function SearchModal({ open, onClose }: Props) {
       return
     }
 
-    const rawHits = fuse.search(query, { limit: 8 })
+    const rawHits = runSearch(fuse, query)
     const hits = rawHits.map((r) => r.item)
     const newMatchMap = new Map(
       rawHits.map((r) => [
