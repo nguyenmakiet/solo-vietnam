@@ -13,7 +13,7 @@ export const phuQuoc: Destination = {
 
   tagline: "Vietnam's island paradise - before it gets too developed",
 
-  heroImage: heroUrl("phu-quoc_w1h8jq"),
+  heroImage: heroUrl("khem-beach-phu-quoc_zvi3hk"),
 
   tags: ["beach", "island", "food", "nature"],
 
