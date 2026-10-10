@@ -15,7 +15,7 @@ export const hospitalCave: Location = {
   experiences: ["history"],
   status: "temporarily-closed",
   statusNote: "As of 2026, both entrances to Hospital Cave are gated and closed to the public, and the interior is no longer accessible for visits.",
-  tags: ["🏥 Wartime Underground Hospital", "vietnam-war", "🪨 Limestone Cave"],
+  tags: ["🏥 Wartime Underground Hospital", "🪨 Limestone Cave", "vietnam-war"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round (exterior only, 10-15 minutes)",
   timeNeeded: {
