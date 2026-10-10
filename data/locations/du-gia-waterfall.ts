@@ -20,8 +20,9 @@ export const duGiaWaterfall: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=22.92605491197045,105.1988164932612",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775796907667!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ01zSnFOY3c.!2m2!1d22.92540742711635!2d105.197746291903!3f190.82097550166682!4f-2.3425163707687915!5f0.7820865974627469", },
-  heroImage: heroUrl("ha-giang-du-gia-waterfall_b9l5rz"),
+  heroImage: heroUrl("du-gia-waterfall-ha-giang-2_eg9z8s"),
   gallery: [
+    "du-gia-waterfall-ha-giang-2_eg9z8s",
     "ha-giang-du-gia-waterfall_b9l5rz",
     "ha-giang-du-gia-waterfall-2_d1jssu"
   ],

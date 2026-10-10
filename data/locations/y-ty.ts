@@ -20,10 +20,11 @@ export const yTy: Location = {
   openingHours: "Open; overnight permit required for foreigners. Saturday morning market - arrive early, disperses by noon.",
   mapUrl: "https://www.google.com/maps?q=22.657362311112333,103.61233893234572",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775895238146!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRwTmVDaXdF!2m2!1d22.68231203332968!2d103.5908563055872!3f258.82449862005603!4f-2.9793114514354926!5f0.7820865974627469" },
-  heroImage: heroUrl("y-ty-lao-cai-2_sanikk"),
+  heroImage: heroUrl("y-ty-village-lao-cai_tisj6v"),
   gallery: [
+    "y-ty-village-lao-cai_tisj6v",
     "y-ty-lao-cai_jsgesc",
-    "y-ty-lao-cai-2_sanikk",
+    "y-ty-village-lao-cai-2_vlz5gm",
   ],
   seoDescription:
     "Y Tý is a remote Hà Nhì highland commune at 2,000m in Bát Xát district, Lào Cai - one of northern Vietnam's last genuine hidden gems. Famous for sea-of-clouds photography, golden rice terraces, Thác Rồng waterfall, and trekking to peaks like Lảo Thẩn (2,860m), Ky Quan San, and Nhìu Cồ San.",

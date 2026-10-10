@@ -24,8 +24,10 @@ export const tiTopIsland: Location = {
   openingHours: "Ha Long Bay Route 2 sightseeing hours are typically 6:30 AM-6:30 PM; actual time at Ti Top depends on your cruise itinerary and operating conditions",
   mapUrl: "https://www.google.com/maps?q=20.85912770557982,107.08129113548287",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775889205422!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1QtLUROcmdF!2m2!1d20.85786593775521!2d107.0809216448357!3f4.27079449322294!4f-13.171432863232567!5f0.7820865974627469", },
-  heroImage: heroUrl("ti-top-island-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ti-top-island-ha-long-quang-ninh_hmhotz"),
+  gallery: [
+    "ti-top-island-ha-long-quang-ninh_hmhotz",
+  ],
   seoDescription:
     "Ti Top Island - named after Soviet cosmonaut Gherman Titov, who visited with President Hồ Chí Minh in 1962 - is Ha Long Bay's most iconic stop: a crescent-shaped white sand beach for swimming and a roughly 400-450-step summit climb rewarded with a 360° panorama of the bay.",
   tips: [

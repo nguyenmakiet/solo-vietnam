@@ -20,8 +20,9 @@ export const khemBeach: Location = {
   openingHours: "Open 24/7 - best visited early morning for sunrise and before crowds arrive",
   mapUrl: "https://maps.google.com/?q=10.0289,104.0439",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775823366532!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3U1T3VPZ3dF!2m2!1d10.03470318369725!2d104.0320096828678!3f201.38546082165098!4f-82.74351820072054!5f0.7820865974627469", },
-  heroImage: heroUrl("khem-beach2_sbrhql"),
+  heroImage: heroUrl("khem-beach-phu-quoc_zvi3hk"),
   gallery: [
+    "khem-beach-phu-quoc_zvi3hk",
     "khem-beach2_sbrhql",
     "khem-beach_l6quut",
   ],

@@ -21,8 +21,10 @@ export const hamNinhFishingVillage: Location = {
   openingHours: "Open 24/7 - best visited 5–9 AM for morning catch and breakfast",
   mapUrl: "https://maps.google.com/?q=10.1792,104.0700",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775804063774!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRqZlRwMUFF!2m2!1d10.18304055851125!2d104.0499126072916!3f80.45560573208829!4f7.231187851613882!5f0.4000000000000002", },
-  heroImage: heroUrl("ham-ninh-placeholder"),
-  gallery: [],
+  heroImage: heroUrl("ham-ninh-fishing-village-phu-quoc-kien-giang_j33hxq"),
+  gallery: [
+    "ham-ninh-fishing-village-phu-quoc-kien-giang_j33hxq",
+  ],
   seoDescription:
     "Hàm Ninh Fishing Village on Phú Quốc's east coast is the island's oldest surviving fishing community - wooden stilt houses over the water, fresh crab and oysters straight off the morning boats, and a world away from the resort side of the island.",
   tips: [

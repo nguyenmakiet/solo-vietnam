@@ -20,8 +20,12 @@ export const cuaDaiBeach: Location = {
   openingHours: "Open 24/7",
   mapUrl: "https://www.google.com/maps?q=15.902162713109306,108.35901183162761",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775752536506!6m8!1m7!1sCAoSHENJQUJJaENyWTBMM3d4bzUzTWk1SHd4WGNubDE.!2m2!1d15.909042250503!2d108.3499926839937!3f133.33955816249562!4f-20.613504036721096!5f0.7820865974627469",},
-  heroImage: heroUrl("cua-dai-beach-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cua-dai-beach-hoi-an-quang-nam-3_l9y5sp"),
+  gallery: [
+    "cua-dai-beach-hoi-an-quang-nam-3_l9y5sp",
+    "cua-dai-beach-hoi-an-quang-nam_r285cn",
+    "cua-dai-beach-hoi-an-quang-nam-2_dhcrkw",
+  ],
   seoDescription:
     "Cửa Đại Beach is the closest beach to Hội An Ancient Town - 4km east on a flat cycling road, with views of the Cham Islands on the horizon, though the beach itself has been narrowed by years of erosion and is currently the site of a major, actively under-construction land reclamation project expected to finish in 2026.",
   tips: [
