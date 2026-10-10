@@ -16,8 +16,8 @@ export const anHaiCommunalHouse: Location = {
   tags: [
     "🏛️ Historic Communal House",
     "⚓ Hải Đội Hoàng Sa Memorial",
-    "east-sea-sovereignty",
     "🎎 Traditional Village Culture",
+    "east-sea-sovereignty",
   ],
   bestMonths: [12, 1, 2, 3, 4, 5, 6],
   bestSeasonNote: "Dec - Jun (calmer seas make the ferry crossing to Lý Sơn more reliable; rough weather from around Jul-Nov can delay or cancel sailings); the Khao Lề Thế Lính Hoàng Sa ceremony here is held annually around the 15th day of the 3rd lunar month, in the same general window as An Vĩnh's version of the same ceremony",

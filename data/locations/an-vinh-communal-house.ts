@@ -16,8 +16,8 @@ export const anVinhCommunalHouse: Location = {
   tags: [
     "🏛️ Oldest Village on Lý Sơn",
     "⚓ Hải Đội Hoàng Sa Memorial",
-    "east-sea-sovereignty",
     "🎎 Traditional Village Culture",
+    "east-sea-sovereignty",
   ],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestSeasonNote: "Year-round; the Khao Lề Thế Lính Hoàng Sa ceremony is held annually on the 15th-16th day of the 3rd lunar month, commonly falling in April",
