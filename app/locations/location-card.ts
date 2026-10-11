@@ -16,6 +16,7 @@ export type LocationCard = {
   experiences: string[]
   tags: string[]          // registered, filterable tags only (no legacy labels)
   provinces: string[]
+  region: "north" | "central" | "south" | null  // from data/provinces.ts (first province with a region)
   months: number[]        // released bestMonths (empty if not released)
   image: string | null    // 600x400 card crop; null = no photo yet
   subtitle: string        // tags[0] display label, else short seoDescription

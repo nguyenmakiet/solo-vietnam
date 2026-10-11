@@ -1,5 +1,6 @@
 import { LOCATION_TYPE_THEME, type LocationTheme, type LocationType } from "./taxonomy/types"
 import type { LocationCategory } from "./taxonomy/categories"
+import type { Coordinate } from "../lib/coordinates"
 
 // Taxonomy vocabularies (values + metadata) live in data/taxonomy/.
 // Re-exported here so existing imports keep working unchanged.
@@ -43,8 +44,8 @@ export type Location = {
   updatedAt?: string // ISO date "YYYY-MM-DD" - update whenever content in this file changes
   provinces: string[]
   destination?: string
-  lat: number | string
-  lng: number | string
+  lat: Coordinate // decimal degrees; "" only for an unconfirmed value flagged `// TODO: verify`
+  lng: Coordinate
   address: string
   // Taxonomy fields - vocabularies and semantics in data/taxonomy/.
   // experiences/tags stay string[] during the transition (legacy values allowed).
@@ -67,7 +68,7 @@ export type Location = {
   // Left out when the content gives no reliable duration - see reports/time-needed-migration.md
   timeNeeded?: { minMinutes: number; maxMinutes: number }
   mapUrl: string
-  streetView?: { lat?: number | string; lng?: number | string; embedUrl?: string }
+  streetView?: { lat?: Coordinate; lng?: Coordinate; embedUrl?: string }
   heroImage?: string
   gallery: string[]
   tips: RichTextString[]

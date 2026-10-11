@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { toCoordinate } from "@/lib/coordinates"
 import { notFound } from "next/navigation"
 import { destinations, deriveFromLocations, EXPERIENCE_GROUP_CONFIG } from "@/data/destinations/index"
 import { Location } from "@/data/location"
@@ -130,8 +131,8 @@ export default async function DestinationPage({
     )
     allLocations.forEach((loc) => {
       if (!stopSlugs.has(loc.slug)) return
-      const lat = typeof loc.lat === "string" ? parseFloat(loc.lat) : loc.lat
-      const lng = typeof loc.lng === "string" ? parseFloat(loc.lng) : loc.lng
+      const lat = toCoordinate(loc.lat)
+      const lng = toCoordinate(loc.lng)
       if (!isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) {
         stopDataMap[loc.slug] = { name: loc.name, lat, lng, status: loc.status }
       }

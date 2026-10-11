@@ -104,7 +104,7 @@ export const catBa: Destination = {
             "hospital-cave",
             "trung-trang-cave",
             "cat-ba-national-park",
-            "radio-tower",
+            "radio-tower-cat-ba",
           ],
           notes: "Morning: Trung Trang Cave and summit trek (120,000 VND ticket). Hospital Cave is free - do it on the way. Afternoon: Radio Tower for panoramic views over Lan Ha Bay - one of the best viewpoints on the island. Ferry back to Hai Phong or Ha Long City.",
         },

@@ -5,6 +5,7 @@ import { isFilterableTag, type LocationCard } from "./location-card"
 import type { Location } from "@/data/location"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { releasedBestMonths } from "@/data/best-months-release"
+import { provinces } from "@/data/provinces"
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 function truncate(str: string, max: number): string {
@@ -17,6 +18,9 @@ function cardImageUrl(heroImage: string | undefined): string | null {
   return heroImage.replace("w_1200,h_630,c_fill", "w_600,h_400,c_fill")
 }
 
+// Region comes from data/provinces.ts - the single source for province -> region
+const PROVINCE_REGION = new Map(provinces.map((p) => [p.slug, p.region]))
+
 function toLocationCard(loc: Location): LocationCard {
   return {
     slug: loc.slug,
@@ -26,6 +30,7 @@ function toLocationCard(loc: Location): LocationCard {
     experiences: [...loc.experiences],
     tags: loc.tags.filter(isFilterableTag),
     provinces: [...loc.provinces],
+    region: loc.provinces.map((p) => PROVINCE_REGION.get(p)).find((r) => r !== undefined) ?? null,
     months: releasedBestMonths(loc),
     image: cardImageUrl(loc.heroImage),
     subtitle: loc.tags[0] ? tagDisplayLabel(loc.tags[0]) : truncate(loc.seoDescription, 70),

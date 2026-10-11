@@ -1,25 +1,17 @@
 import { allLocations } from "@/data/all-locations"
-
-function toDecimal(val: number | string): number {
-  if (typeof val === "number") return val
-  const match = val.match(/(\d+)°(\d+)'([\d.]+)"([NSEW])/)
-  if (!match) return parseFloat(val)
-  const [, d, m, s, dir] = match
-  const decimal = Number(d) + Number(m) / 60 + Number(s) / 3600
-  return dir === "S" || dir === "W" ? -decimal : decimal
-}
+import { toCoordinate } from "@/lib/coordinates"
 
 function haversineKm(
   lat1: number | string, lng1: number | string,
   lat2: number | string, lng2: number | string
 ): number {
   const R = 6371
-  const dLat = ((toDecimal(lat2) - toDecimal(lat1)) * Math.PI) / 180
-  const dLng = ((toDecimal(lng2) - toDecimal(lng1)) * Math.PI) / 180
+  const dLat = ((toCoordinate(lat2) - toCoordinate(lat1)) * Math.PI) / 180
+  const dLng = ((toCoordinate(lng2) - toCoordinate(lng1)) * Math.PI) / 180
   const a =
     Math.sin(dLat / 2) ** 2 +
-    Math.cos((toDecimal(lat1) * Math.PI) / 180) *
-    Math.cos((toDecimal(lat2) * Math.PI) / 180) *
+    Math.cos((toCoordinate(lat1) * Math.PI) / 180) *
+    Math.cos((toCoordinate(lat2) * Math.PI) / 180) *
     Math.sin(dLng / 2) ** 2
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
@@ -56,15 +48,15 @@ export function getNearbyLocations(currentSlug: string, limit = 6): NearbyLocati
   const current = allLocations.find((l) => l.slug === currentSlug)
   if (!current) return []
 
-  const currentLat = toDecimal(current.lat)
-  const currentLng = toDecimal(current.lng)
+  const currentLat = toCoordinate(current.lat)
+  const currentLng = toCoordinate(current.lng)
   if (isNaN(currentLat) || isNaN(currentLng)) return []
 
   return allLocations
     .filter((l) => {
       if (l.slug === currentSlug) return false
-      const lat = toDecimal(l.lat)
-      const lng = toDecimal(l.lng)
+      const lat = toCoordinate(l.lat)
+      const lng = toCoordinate(l.lng)
       return !isNaN(lat) && !isNaN(lng)
     })
     .map((l) => {

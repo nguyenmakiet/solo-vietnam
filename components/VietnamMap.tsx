@@ -91,26 +91,6 @@ const PROVINCE_TO_SLUG: Record<string, string> = {
   "Ca Mau": "ca-mau",
 }
 
-const PROVINCE_REGION: Record<string, "north" | "central" | "south"> = {
-  "Ha Giang": "north", "Cao Bang": "north", "Lao Cai": "north", "Bac Kan": "north",
-  "Lang Son": "north", "Tuyen Quang": "north", "Thai Nguyen": "north", "Quang Ninh": "north",
-  "Phu Tho": "north", "Vinh Phuc": "north", "Bac Giang": "north", "Bac Ninh": "north",
-  "Ha Noi": "north", "Hai Duong": "north", "Hung Yen": "north", "Hai Phong": "north",
-  "Thai Binh": "north", "Ha Nam": "north", "Nam Dinh": "north", "Ninh Binh": "north",
-  "Hoa Binh": "north", "Son La": "north", "Dien Bien": "north", "Lai Chau": "north", "Yen Bai": "north",
-  "Thanh Hoa": "central", "Nghe An": "central", "Ha Tinh": "central", "Quang Binh": "central",
-  "Quang Tri": "central", "Thua Thien-Hue": "central", "Da Nang": "central",
-  "Quang Nam": "central", "Quang Ngai": "central", "Binh Dinh": "central",
-  "Phu Yen": "central", "Khanh Hoa": "central", "Kon Tum": "central", "Gia Lai": "central",
-  "Dak Lak": "central", "Dak Nong": "central", "Lam Dong": "central",
-  "Ninh Thuan": "central", "Binh Thuan": "central",
-  "Binh Phuoc": "south", "Tay Ninh": "south", "Binh Duong": "south", "Dong Nai": "south",
-  "Ba Ria–Vung Tau": "south", "Ho Chi Minh": "south", "Long An": "south",
-  "Tien Giang": "south", "Ben Tre": "south", "Dong Thap": "south", "Vinh Long": "south",
-  "An Giang": "south", "Tra Vinh": "south", "Hau Giang": "south", "Kien Giang": "south",
-  "Can Tho": "south", "Soc Trang": "south", "Bac Lieu": "south", "Ca Mau": "south",
-}
-
 type Region = "north" | "central" | "south" | "unknown"
 
 const REGION_CLASS: Record<Region, string> = {
@@ -169,7 +149,7 @@ export default function VietnamMap({ provinceData }: { provinceData: MapProvince
       <svg viewBox={Vietnam.viewBox} className="vn-map-svg" role="img" aria-label="Map of Vietnam by province">
         {Vietnam.locations.map((location: { id: string; name: string; path: string }) => {
           const slug = PROVINCE_TO_SLUG[location.name]
-          const region: Region = PROVINCE_REGION[location.name] || "unknown"
+          const region: Region = (slug && provinceData[slug]?.guide?.region) || "unknown"
 
           return (
             <path
@@ -225,7 +205,7 @@ export default function VietnamMap({ provinceData }: { provinceData: MapProvince
       {tooltip && (() => {
         const summary = tooltip.slug ? provinceData[tooltip.slug] : undefined
         const province = summary?.guide
-        const region: Region = province?.region ?? PROVINCE_REGION[tooltip.name] ?? "unknown"
+        const region: Region = province?.region ?? "unknown"
         const provinceLocations = summary?.top ?? []
 
         return (

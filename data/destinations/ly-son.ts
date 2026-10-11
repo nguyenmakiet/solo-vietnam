@@ -39,7 +39,7 @@ export const lySon: Destination = {
           title: "To Vo Gate + Thoai Loi Mountain + garlic fields + An Bang beach",
           stops: [
             "to-vo-gate",
-            "thoai-loi-mountain",
+            "thoi-loi-mountain",
             "ly-son-garlic-fields",
             "hang-pagoda",
           ],

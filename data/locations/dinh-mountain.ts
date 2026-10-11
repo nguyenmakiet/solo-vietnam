@@ -5,7 +5,7 @@ export const dinhMountain: Location = {
   slug: "dinh-mountain",
   name: "Núi Dinh (Dinh Mountain)",
   updatedAt: "2026-10-06",
-  provinces: ["ba-ria-vung-tau"],
+  provinces: ["vung-tau"],
   destination: "",
   lat: 10.537592530622792,
   lng: 107.12929659066629,

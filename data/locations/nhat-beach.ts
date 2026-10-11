@@ -5,7 +5,7 @@ export const nhatBeach: Location = {
   slug: "bai-nhat",
   name: "Bãi Nhát",
   updatedAt: "2026-10-06",
-  provinces: ["ba-ria-vung-tau"],
+  provinces: ["vung-tau"],
   destination: "con-dao",
   lat: 8.644189602871363,
   lng: 106.6014777488132,
