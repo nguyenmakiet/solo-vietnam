@@ -95,6 +95,23 @@ body {
     color: var(--color-teal-light);
   }
 
+  /* Quiet inline link for editorial prose (hero text): teal, inherits
+     weight, no underline at rest; thin teal-light underline on hover.
+     teal on paper 5.6:1, on surface 6.2:1, vs ink body text 2.6:1. The
+     underline sits at rest as transparent so its colour can fade in. */
+  .ui-link-quiet {
+    color: var(--color-teal);
+    font-weight: inherit;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    transition: text-decoration-color 0.15s;
+  }
+  .ui-link-quiet:hover {
+    text-decoration-color: var(--color-teal-light);
+  }
+
   /* Primary button: signal fill, white text (4.96:1) */
   .ui-btn {
     display: inline-flex;
@@ -119,6 +136,7 @@ body {
   }
 
   .ui-link:focus-visible,
+  .ui-link-quiet:focus-visible,
   .ui-btn:focus-visible {
     outline: 2px solid var(--color-teal);
     outline-offset: 2px;

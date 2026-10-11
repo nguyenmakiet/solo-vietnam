@@ -61,15 +61,15 @@ export default function Home() {
 
           <p className="home-discovery-text">
             From{" "}
-            <Link href="/locations?type=forest" className="discovery-link">ancient forests</Link>
+            <Link href="/locations?type=forest" className="ui-link-quiet">ancient forests</Link>
             {" "}where crocodiles still drift,{" "}
-            <Link href="/locations?type=beach" className="discovery-link">quiet beaches</Link>
+            <Link href="/locations?type=beach" className="ui-link-quiet">quiet beaches</Link>
             {" "}that still feel wild and{" "}
-            <Link href="/locations?experience=homestay" className="discovery-link">mountain villages</Link>
+            <Link href="/locations?experience=homestay" className="ui-link-quiet">mountain villages</Link>
             {" "}tucked into mist, to{" "}
-            <Link href="/locations?experience=nightlife" className="discovery-link">chaotic city streets</Link>
+            <Link href="/locations?experience=nightlife" className="ui-link-quiet">chaotic city streets</Link>
             {" "}and the{" "}
-            <Link href="/locations?type=citadel&type=temple&experience=history&category=history&tag=champa-heritage&tag=nguyen-dynasty&tag=medieval-vietnam" className="discovery-link">ruins of dynasties</Link>
+            <Link href="/locations?type=citadel&type=temple&experience=history&category=history&tag=champa-heritage&tag=nguyen-dynasty&tag=medieval-vietnam" className="ui-link-quiet">ruins of dynasties</Link>
             {" "}that shaped this country.
           </p>
           <p className="home-discovery-closing">

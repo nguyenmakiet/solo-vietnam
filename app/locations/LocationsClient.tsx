@@ -23,18 +23,6 @@ const REGIONS: { value: Region; label: string }[] = [
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
-// A shortcut selects one type, one experience, or a set of categories.
-const SHORTCUTS: { label: string; type?: string; exp?: string; categories?: string[] }[] = [
-  { label: "Beaches",     type: "beach" },
-  { label: "Islands",     type: "island" },
-  { label: "Mountains",   type: "mountain" },
-  { label: "Caves",       type: "cave" },
-  { label: "Waterfalls",  type: "waterfall" },
-  { label: "Trekking",    exp: "trekking" },
-  { label: "Cultural",    categories: ["culture", "religion"] },
-  { label: "Photography", exp: "photography" },
-]
-
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 const PAGE_SIZE = 24
@@ -205,26 +193,29 @@ function IconChevron({ open }: { open: boolean }) {
 const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
 const SERIF = { fontFamily: "var(--font-serif), 'Source Serif 4', serif" }
 
-// Segmented group: one 1px frame with hairline dividers, not a row of boxed chips
-const SEGMENTED = "inline-flex shrink-0 border border-line rounded-button bg-surface divide-x divide-line overflow-hidden"
+// Chip row: free-standing pills with a small gap - no frame, no dividers
+const CHIP_ROW = "flex shrink-0 gap-1"
 
-// Segment inside a group; selected = teal-ink fill. Inset focus ring so the
-// group's overflow (and the scrolling month row) never clips it.
+// Pill inside a chip row; selected = teal-ink fill. Inset focus ring so the
+// scrolling month row never clips it.
 function segmentClass(active: boolean) {
-  return `px-2.5 md:px-3 py-1.5 text-[13px] font-medium whitespace-nowrap transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
-    active ? "bg-teal-ink text-paper" : "text-ink hover:bg-paper"
+  return `px-3 py-1.5 rounded-full text-[13px] font-medium whitespace-nowrap transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
+    active ? "bg-teal-ink text-paper" : "text-ink hover:bg-line/50"
   }`
 }
 
-// Dropdown trigger: quiet framed select (stays a real control for usability),
+// Dropdown trigger: borderless text + chevron (stays a real control),
 // teal when it has selections
 function triggerClass(hasSelection: boolean) {
-  return `flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 rounded-button border text-[13px] font-medium whitespace-nowrap transition-colors ${FOCUS} ${
-    hasSelection ? "border-teal text-teal bg-surface" : "border-line text-ink hover:border-ink-2"
+  return `flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[13px] font-medium whitespace-nowrap transition-colors ${FOCUS} ${
+    hasSelection ? "bg-teal/10 text-teal" : "text-ink hover:bg-line/50"
   }`
 }
 
-const PANEL = "absolute top-full left-0 mt-1 bg-surface border border-line rounded-card z-30 max-h-64 overflow-y-auto py-1.5"
+// Dropdown panel. Side and max height come from panelFit (set when a trigger
+// opens) so the panel stays on screen and only scrolls when it must.
+const PANEL_BASE = "absolute top-full mt-1 bg-surface border border-line rounded-card z-30 max-w-[calc(100vw-3rem)]"
+const PANEL = `${PANEL_BASE} overflow-y-auto py-1.5`
 const OPTION = "flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-paper cursor-pointer text-sm text-ink"
 const ROW_LABEL = "w-[76px] md:w-[88px] shrink-0 text-[11px] font-semibold tracking-[0.12em] uppercase text-ink-2 select-none"
 
@@ -243,6 +234,9 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [province, setProvince] = useState(initialProvince ?? "")
   const [selectedMonths, setSelectedMonths] = useState<number[]>([])
+  // Open dropdown: anchor to the trigger's right edge when it sits in the right
+  // half of the screen, and grow down to the bottom of the viewport.
+  const [panelFit, setPanelFit] = useState({ right: false, maxH: 400 })
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
 
   // Sync from URL after mount
@@ -405,6 +399,14 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     if (provOpen) provInputRef.current?.focus()
   }, [provOpen])
 
+  function fitPanel(trigger: HTMLElement) {
+    const r = trigger.getBoundingClientRect()
+    setPanelFit({
+      right: r.left + r.width / 2 > window.innerWidth / 2,
+      maxH: Math.max(240, window.innerHeight - r.bottom - 16),
+    })
+  }
+
   function toggleRegion(r: Region) {
     setRegion((prev) => (prev === r ? null : r))
     setVisibleCount(PAGE_SIZE)
@@ -427,15 +429,6 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
 
   function toggleTag(t: string) {
     setSelectedTags((prev) => prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t])
-    setVisibleCount(PAGE_SIZE)
-  }
-
-  // Shortcut with several categories: select them all, or clear them all when
-  // every one is already selected.
-  function toggleCategorySet(set: string[]) {
-    setSelectedCategories((prev) =>
-      set.every((c) => prev.includes(c)) ? prev.filter((x) => !set.includes(x)) : [...new Set([...prev, ...set])]
-    )
     setVisibleCount(PAGE_SIZE)
   }
 
@@ -491,41 +484,6 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           <p className="text-[15px] md:text-base text-ink-2 max-w-2xl leading-relaxed">
             {locations.length}+ places across Vietnam - beaches, mountains, caves, temples, waterfalls and hidden gems worth going solo.
           </p>
-
-          {/* ── Experience shortcuts: text links between thin rules ── */}
-          {/* One row: scrolls sideways on narrow screens (like the month row) so dividers never start a wrapped line */}
-          <div className="mt-4 pt-3 border-t border-line flex items-center overflow-x-auto scrollbar-none">
-            <span className="shrink-0 text-[11px] font-semibold tracking-[0.12em] uppercase text-ink-2 mr-3 select-none">
-              Explore by
-            </span>
-            {SHORTCUTS.map((s, i) => {
-              const active = s.type
-                ? selectedTypes.includes(s.type)
-                : s.exp
-                  ? selectedExperiences.includes(s.exp)
-                  : s.categories
-                    ? s.categories.every((c) => selectedCategories.includes(c))
-                    : false
-              return (
-                <button
-                  key={s.label}
-                  aria-pressed={active}
-                  onClick={() => {
-                    if (s.type) toggleType(s.type)
-                    else if (s.exp) toggleExperience(s.exp)
-                    else if (s.categories) toggleCategorySet(s.categories)
-                  }}
-                  className={`shrink-0 whitespace-nowrap text-sm leading-none px-2.5 py-1 transition-colors ${i > 0 ? "border-l border-line" : ""} focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
-                    active
-                      ? "text-teal font-semibold underline underline-offset-4 decoration-1"
-                      : "text-ink hover:text-teal"
-                  }`}
-                >
-                  {s.label}
-                </button>
-              )
-            })}
-          </div>
         </div>
       </section>
 
@@ -537,7 +495,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           {/* Row 1 — Region */}
           <div className="flex items-center pt-2.5 pb-1.5">
             <span className={ROW_LABEL}>Region</span>
-            <div className={SEGMENTED} role="group" aria-label="Region">
+            <div className={CHIP_ROW} role="group" aria-label="Region">
               {REGIONS.map((r) => (
                 <button
                   key={r.value}
@@ -554,7 +512,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           {/* Row 2 — Best time (scrolls horizontally on narrow screens) */}
           <div className="flex items-center py-1.5 overflow-x-auto scrollbar-none">
             <span className={ROW_LABEL}>Best time</span>
-            <div className={SEGMENTED} role="group" aria-label="Best time to visit">
+            <div className={CHIP_ROW} role="group" aria-label="Best time to visit">
               {MONTHS.map((label, i) => {
                 const m = i + 1
                 const active = selectedMonths.includes(m)
@@ -573,20 +531,21 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           </div>
 
           {/* Row 3 — Dropdowns + result count */}
-          <div className="flex items-center gap-1.5 pt-2 pb-2.5 flex-wrap border-t border-line mt-1">
+          {/* -ml-3 lines the trigger text up with the row labels above */}
+          <div className="flex items-center gap-1 pt-1.5 pb-2.5 -ml-3 flex-wrap">
 
             {/* Type */}
             <div ref={typeRef} className="relative">
               <button
                 aria-expanded={typeOpen}
-                onClick={() => { setTypeOpen(!typeOpen); setExpOpen(false); setCatOpen(false); setTagOpen(false); setProvOpen(false) }}
+                onClick={(e) => { fitPanel(e.currentTarget); setTypeOpen(!typeOpen); setExpOpen(false); setCatOpen(false); setTagOpen(false); setProvOpen(false) }}
                 className={triggerClass(activeTypes.length > 0)}
               >
                 Type{activeTypes.length > 0 ? ` · ${activeTypes.length}` : ""}
                 <IconChevron open={typeOpen} />
               </button>
               {typeOpen && (
-                <div className={`${PANEL} min-w-[190px]`}>
+                <div className={`${PANEL} min-w-[190px] ${panelFit.right ? "right-0" : "left-0"}`} style={{ maxHeight: panelFit.maxH }}>
                   {allTypes.map((t) => (
                     <label key={t} className={OPTION}>
                       <input type="checkbox" checked={selectedTypes.includes(t)} onChange={() => toggleType(t)} className="accent-teal w-3.5 h-3.5" />
@@ -601,14 +560,14 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             <div ref={expRef} className="relative">
               <button
                 aria-expanded={expOpen}
-                onClick={() => { setExpOpen(!expOpen); setTypeOpen(false); setCatOpen(false); setTagOpen(false); setProvOpen(false) }}
+                onClick={(e) => { fitPanel(e.currentTarget); setExpOpen(!expOpen); setTypeOpen(false); setCatOpen(false); setTagOpen(false); setProvOpen(false) }}
                 className={triggerClass(activeExperiences.length > 0)}
               >
                 Experience{activeExperiences.length > 0 ? ` · ${activeExperiences.length}` : ""}
                 <IconChevron open={expOpen} />
               </button>
               {expOpen && (
-                <div className={`${PANEL} min-w-[210px]`}>
+                <div className={`${PANEL} min-w-[210px] ${panelFit.right ? "right-0" : "left-0"}`} style={{ maxHeight: panelFit.maxH }}>
                   {allExperiences.map((e) => (
                     <label key={e} className={OPTION}>
                       <input type="checkbox" checked={selectedExperiences.includes(e)} onChange={() => toggleExperience(e)} className="accent-teal w-3.5 h-3.5" />
@@ -623,14 +582,14 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             <div ref={catRef} className="relative">
               <button
                 aria-expanded={catOpen}
-                onClick={() => { setCatOpen(!catOpen); setTypeOpen(false); setExpOpen(false); setTagOpen(false); setProvOpen(false) }}
+                onClick={(e) => { fitPanel(e.currentTarget); setCatOpen(!catOpen); setTypeOpen(false); setExpOpen(false); setTagOpen(false); setProvOpen(false) }}
                 className={triggerClass(activeCategories.length > 0)}
               >
                 Category{activeCategories.length > 0 ? ` · ${activeCategories.length}` : ""}
                 <IconChevron open={catOpen} />
               </button>
               {catOpen && (
-                <div className={`${PANEL} min-w-[190px]`}>
+                <div className={`${PANEL} min-w-[190px] ${panelFit.right ? "right-0" : "left-0"}`} style={{ maxHeight: panelFit.maxH }}>
                   {allCategories.map((c) => (
                     <label key={c} className={OPTION}>
                       <input type="checkbox" checked={selectedCategories.includes(c)} onChange={() => toggleCategory(c)} className="accent-teal w-3.5 h-3.5" />
@@ -646,14 +605,14 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               <div ref={tagRef} className="relative">
                 <button
                   aria-expanded={tagOpen}
-                  onClick={() => { setTagOpen(!tagOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false); setProvOpen(false) }}
+                  onClick={(e) => { fitPanel(e.currentTarget); setTagOpen(!tagOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false); setProvOpen(false) }}
                   className={triggerClass(activeTags.length > 0)}
                 >
                   Heritage{activeTags.length > 0 ? ` · ${activeTags.length}` : ""}
                   <IconChevron open={tagOpen} />
                 </button>
                 {tagOpen && (
-                  <div className={`${PANEL} min-w-[240px] max-h-80`}>
+                  <div className={`${PANEL} min-w-[240px] ${panelFit.right ? "right-0" : "left-0"}`} style={{ maxHeight: panelFit.maxH }}>
                     {tagGroups.map((g) => (
                       <div key={g.label} role="group" aria-label={g.label}>
                         <p className="px-3.5 pt-2 pb-1 text-[10px] font-semibold tracking-[0.12em] uppercase text-ink-2 select-none">
@@ -677,14 +636,14 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             <div ref={provRef} className="relative">
               <button
                 aria-expanded={provOpen}
-                onClick={() => { setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false); setTagOpen(false) }}
+                onClick={(e) => { fitPanel(e.currentTarget); setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false); setTagOpen(false) }}
                 className={triggerClass(province !== "")}
               >
                 {province ? formatSlug(province) : "Province"}
                 <IconChevron open={provOpen} />
               </button>
               {provOpen && (
-                <div className="absolute top-full left-0 mt-1 bg-surface border border-line rounded-card z-30 w-56">
+                <div className={`${PANEL_BASE} w-56 ${panelFit.right ? "right-0" : "left-0"}`}>
                   <div className="p-2 border-b border-line">
                     <input
                       ref={provInputRef}
@@ -696,7 +655,8 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
                       className="w-full px-2.5 py-1.5 text-sm text-ink placeholder:text-ink-2 bg-surface border border-line rounded-input outline-none focus:border-teal"
                     />
                   </div>
-                  <div className="max-h-52 overflow-y-auto py-1">
+                  {/* 57px = search box row above */}
+                  <div className="overflow-y-auto py-1" style={{ maxHeight: panelFit.maxH - 57 }}>
                     <button
                       onClick={() => selectProvince("")}
                       className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-paper ${!province ? "font-semibold text-teal" : "text-ink"}`}

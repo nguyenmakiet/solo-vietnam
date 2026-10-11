@@ -116,22 +116,6 @@
   font-size: 16px;
   padding: 16px 32px;
 }
-.discovery-link {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--color-teal);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-  transition: color 0.15s;
-}
-.discovery-link:hover {
-  color: var(--color-signal-text);
-  text-decoration-color: currentColor;
-}
-.discovery-link:focus-visible {
-  outline: 2px solid var(--color-teal);
-  outline-offset: 2px;
-}
 
 /* ── STATS: ink numerals, thin teal rule ── */
 .home-stats-section {
