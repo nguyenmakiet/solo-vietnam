@@ -23,18 +23,6 @@ const REGIONS: { value: Region; label: string }[] = [
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
-// A shortcut selects one type, one experience, or a set of categories.
-const SHORTCUTS: { label: string; type?: string; exp?: string; categories?: string[] }[] = [
-  { label: "Beaches",     type: "beach" },
-  { label: "Islands",     type: "island" },
-  { label: "Mountains",   type: "mountain" },
-  { label: "Caves",       type: "cave" },
-  { label: "Waterfalls",  type: "waterfall" },
-  { label: "Trekking",    exp: "trekking" },
-  { label: "Cultural",    categories: ["culture", "religion"] },
-  { label: "Photography", exp: "photography" },
-]
-
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 const PAGE_SIZE = 24
@@ -205,22 +193,22 @@ function IconChevron({ open }: { open: boolean }) {
 const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
 const SERIF = { fontFamily: "var(--font-serif), 'Source Serif 4', serif" }
 
-// Segmented group: one 1px frame with hairline dividers, not a row of boxed chips
-const SEGMENTED = "inline-flex shrink-0 border border-line rounded-button bg-surface divide-x divide-line overflow-hidden"
+// Chip row: free-standing pills with a small gap - no frame, no dividers
+const CHIP_ROW = "flex shrink-0 gap-1"
 
-// Segment inside a group; selected = teal-ink fill. Inset focus ring so the
-// group's overflow (and the scrolling month row) never clips it.
+// Pill inside a chip row; selected = teal-ink fill. Inset focus ring so the
+// scrolling month row never clips it.
 function segmentClass(active: boolean) {
-  return `px-2.5 md:px-3 py-1.5 text-[13px] font-medium whitespace-nowrap transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
-    active ? "bg-teal-ink text-paper" : "text-ink hover:bg-paper"
+  return `px-3 py-1.5 rounded-full text-[13px] font-medium whitespace-nowrap transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
+    active ? "bg-teal-ink text-paper" : "text-ink hover:bg-line/50"
   }`
 }
 
-// Dropdown trigger: quiet framed select (stays a real control for usability),
+// Dropdown trigger: borderless text + chevron (stays a real control),
 // teal when it has selections
 function triggerClass(hasSelection: boolean) {
-  return `flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 rounded-button border text-[13px] font-medium whitespace-nowrap transition-colors ${FOCUS} ${
-    hasSelection ? "border-teal text-teal bg-surface" : "border-line text-ink hover:border-ink-2"
+  return `flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[13px] font-medium whitespace-nowrap transition-colors ${FOCUS} ${
+    hasSelection ? "bg-teal/10 text-teal" : "text-ink hover:bg-line/50"
   }`
 }
 
@@ -430,15 +418,6 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
     setVisibleCount(PAGE_SIZE)
   }
 
-  // Shortcut with several categories: select them all, or clear them all when
-  // every one is already selected.
-  function toggleCategorySet(set: string[]) {
-    setSelectedCategories((prev) =>
-      set.every((c) => prev.includes(c)) ? prev.filter((x) => !set.includes(x)) : [...new Set([...prev, ...set])]
-    )
-    setVisibleCount(PAGE_SIZE)
-  }
-
   function selectProvince(p: string) {
     setProvince(p)
     setProvOpen(false)
@@ -491,41 +470,6 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           <p className="text-[15px] md:text-base text-ink-2 max-w-2xl leading-relaxed">
             {locations.length}+ places across Vietnam - beaches, mountains, caves, temples, waterfalls and hidden gems worth going solo.
           </p>
-
-          {/* ── Experience shortcuts: text links between thin rules ── */}
-          {/* One row: scrolls sideways on narrow screens (like the month row) so dividers never start a wrapped line */}
-          <div className="mt-4 pt-3 border-t border-line flex items-center overflow-x-auto scrollbar-none">
-            <span className="shrink-0 text-[11px] font-semibold tracking-[0.12em] uppercase text-ink-2 mr-3 select-none">
-              Explore by
-            </span>
-            {SHORTCUTS.map((s, i) => {
-              const active = s.type
-                ? selectedTypes.includes(s.type)
-                : s.exp
-                  ? selectedExperiences.includes(s.exp)
-                  : s.categories
-                    ? s.categories.every((c) => selectedCategories.includes(c))
-                    : false
-              return (
-                <button
-                  key={s.label}
-                  aria-pressed={active}
-                  onClick={() => {
-                    if (s.type) toggleType(s.type)
-                    else if (s.exp) toggleExperience(s.exp)
-                    else if (s.categories) toggleCategorySet(s.categories)
-                  }}
-                  className={`shrink-0 whitespace-nowrap text-sm leading-none px-2.5 py-1 transition-colors ${i > 0 ? "border-l border-line" : ""} focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
-                    active
-                      ? "text-teal font-semibold underline underline-offset-4 decoration-1"
-                      : "text-ink hover:text-teal"
-                  }`}
-                >
-                  {s.label}
-                </button>
-              )
-            })}
-          </div>
         </div>
       </section>
 
@@ -537,7 +481,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           {/* Row 1 — Region */}
           <div className="flex items-center pt-2.5 pb-1.5">
             <span className={ROW_LABEL}>Region</span>
-            <div className={SEGMENTED} role="group" aria-label="Region">
+            <div className={CHIP_ROW} role="group" aria-label="Region">
               {REGIONS.map((r) => (
                 <button
                   key={r.value}
@@ -554,7 +498,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           {/* Row 2 — Best time (scrolls horizontally on narrow screens) */}
           <div className="flex items-center py-1.5 overflow-x-auto scrollbar-none">
             <span className={ROW_LABEL}>Best time</span>
-            <div className={SEGMENTED} role="group" aria-label="Best time to visit">
+            <div className={CHIP_ROW} role="group" aria-label="Best time to visit">
               {MONTHS.map((label, i) => {
                 const m = i + 1
                 const active = selectedMonths.includes(m)
@@ -573,7 +517,8 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
           </div>
 
           {/* Row 3 — Dropdowns + result count */}
-          <div className="flex items-center gap-1.5 pt-2 pb-2.5 flex-wrap border-t border-line mt-1">
+          {/* -ml-3 lines the trigger text up with the row labels above */}
+          <div className="flex items-center gap-1 pt-1.5 pb-2.5 -ml-3 flex-wrap">
 
             {/* Type */}
             <div ref={typeRef} className="relative">
