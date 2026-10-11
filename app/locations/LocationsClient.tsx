@@ -35,36 +35,6 @@ const SHORTCUTS: { label: string; type?: string; exp?: string; categories?: stri
   { label: "Photography", exp: "photography" },
 ]
 
-const PROVINCE_TO_REGION: Record<string, Region> = {
-  // North
-  "ha-noi": "north", "hai-phong": "north", "quang-ninh": "north",
-  "bac-ninh": "north", "bac-giang": "north", "bac-kan": "north",
-  "cao-bang": "north", "dien-bien": "north", "ha-giang": "north",
-  "hai-duong": "north", "hung-yen": "north", "hoa-binh": "north",
-  "lai-chau": "north", "lang-son": "north", "lao-cai": "north",
-  "nam-dinh": "north", "ninh-binh": "north", "phu-tho": "north",
-  "son-la": "north", "thai-binh": "north", "thai-nguyen": "north",
-  "tuyen-quang": "north", "vinh-phuc": "north", "yen-bai": "north",
-  "ha-nam": "north",
-  // Central (North Central coast, South Central coast, Central Highlands)
-  "thanh-hoa": "central", "nghe-an": "central", "ha-tinh": "central",
-  "quang-binh": "central", "quang-tri": "central", "thua-thien-hue": "central", "hue": "central",
-  "da-nang": "central", "quang-nam": "central", "quang-ngai": "central",
-  "binh-dinh": "central", "phu-yen": "central", "khanh-hoa": "central",
-  "ninh-thuan": "central", "binh-thuan": "central",
-  "kon-tum": "central", "gia-lai": "central",
-  "dak-lak": "central", "dak-nong": "central", "lam-dong": "central",
-  // South (Southeast + Mekong Delta)
-  "ho-chi-minh-city": "south", "ba-ria-vung-tau": "south", "vung-tau": "south",
-  "binh-duong": "south", "binh-phuoc": "south", "dong-nai": "south",
-  "tay-ninh": "south",
-  "long-an": "south", "an-giang": "south", "bac-lieu": "south",
-  "ben-tre": "south", "ca-mau": "south", "can-tho": "south",
-  "dong-thap": "south", "hau-giang": "south", "kien-giang": "south",
-  "tien-giang": "south", "tra-vinh": "south", "soc-trang": "south",
-  "vinh-long": "south",
-}
-
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 const PAGE_SIZE = 24
@@ -167,11 +137,7 @@ function resolveLegacyTypes(types: string[]): { types: string[]; categories: str
 }
 
 function getLocationRegion(loc: LocationCard): Region | null {
-  for (const p of loc.provinces) {
-    const r = PROVINCE_TO_REGION[p]
-    if (r) return r
-  }
-  return null
+  return loc.region
 }
 
 // Old `?region=` values from before the 3-region split.

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { toCoordinate } from "@/lib/coordinates"
 import { notFound } from "next/navigation"
 import { locationTheme } from "@/data/location"
 import { allLocations } from "@/data/all-locations"
@@ -27,15 +28,6 @@ const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed"
 }
 
 const MONTH_NAMES = Array.from({ length: 12 }, (_, i) => new Date(2000, i).toLocaleString("en", { month: "short" }))
-
-function toDecimal(val: number | string): number {
-  if (typeof val === "number") return val
-  const match = val.match(/(\d+)°(\d+)'([\d.]+)"([NSEW])/)
-  if (!match) return parseFloat(val)
-  const [, d, m, s, dir] = match
-  const decimal = Number(d) + Number(m) / 60 + Number(s) / 3600
-  return dir === "S" || dir === "W" ? -decimal : decimal
-}
 
 export async function generateStaticParams() {
   return allLocations.map((l) => ({ slug: l.slug }))
@@ -247,7 +239,7 @@ export default async function LocationPage({
           {/* Map */}
           <div className="map-wrap">
             <iframe
-              src={`https://maps.google.com/maps?q=${toDecimal(location.lat)},${toDecimal(location.lng)}&z=15&output=embed`}
+              src={`https://maps.google.com/maps?q=${toCoordinate(location.lat)},${toCoordinate(location.lng)}&z=15&output=embed`}
               title={`Map of ${location.name}`}
               allowFullScreen
               loading="lazy"
@@ -255,8 +247,8 @@ export default async function LocationPage({
             <div className="map-caption">
               <span>Google Maps</span>
               <GetDirectionsButton
-                lat={toDecimal(location.lat)}
-                lng={toDecimal(location.lng)}
+                lat={toCoordinate(location.lat)}
+                lng={toCoordinate(location.lng)}
                 label={location.name}
               />
             </div>
@@ -288,7 +280,7 @@ export default async function LocationPage({
               streetViewUrl={location.streetView
                 ? (location.streetView.embedUrl
                     ?? (location.streetView.lat && location.streetView.lng
-                        ? `https://www.google.com/maps?q=&layer=c&cbll=${toDecimal(location.streetView.lat)},${toDecimal(location.streetView.lng)}&output=embed`
+                        ? `https://www.google.com/maps?q=&layer=c&cbll=${toCoordinate(location.streetView.lat)},${toCoordinate(location.streetView.lng)}&output=embed`
                         : undefined))
                 : undefined}
             />

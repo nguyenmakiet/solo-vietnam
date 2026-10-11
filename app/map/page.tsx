@@ -1,11 +1,10 @@
 import { activeLocations } from "@/data/all-locations"
 import type { Location } from "@/data/location"
+import { toCoordinate } from "@/lib/coordinates"
 import MapClient, { type MapLocation } from "./MapClient"
 
 function getLatLng(loc: Location): [number, number] {
-  const la = typeof loc.lat === "string" ? parseFloat(loc.lat) : loc.lat
-  const ln = typeof loc.lng === "string" ? parseFloat(loc.lng) : loc.lng
-  return [la, ln]
+  return [toCoordinate(loc.lat), toCoordinate(loc.lng)]
 }
 
 function getProvinceLabel(loc: Location) {
