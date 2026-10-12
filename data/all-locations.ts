@@ -50,6 +50,7 @@ import { catCatVillage } from "@/data/locations/cat-cat-village"
 import { catCoBeach } from "@/data/locations/cat-co-beach"
 import { catTienNationalPark } from "@/data/locations/cat-tien-national-park"
 import { chuaChanMountain } from "@/data/locations/chua-chan-mountain"
+import { chungNhiaVuMountain } from "@/data/locations/chung-nhia-vu-mountain"
 import { coThachBeach } from "@/data/locations/co-thach-beach"
 import { coToIsland } from "@/data/locations/co-to-island"
 import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
@@ -130,6 +131,7 @@ import { k50Waterfall } from "@/data/locations/k50-waterfall"
 import { keGaLighthouse } from "@/data/locations/ke-ga-lighthouse"
 import { keoPagoda } from "@/data/locations/keo-pagoda"
 import { khaiDinhTomb } from "@/data/locations/khai-dinh-tomb"
+import { khangSuVanMountain } from "@/data/locations/khang-su-van-mountain"
 import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { khauPhaPass } from "@/data/locations/khau-pha-pass"
 import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
@@ -140,6 +142,7 @@ import { kimLienTemple } from "@/data/locations/kim-lien-temple"
 import { km0HaGiang } from "@/data/locations/km0-ha-giang"
 import { konTumWoodenChurch } from "@/data/locations/kon-tum-wooden-church"
 import { kyCoBeach } from "@/data/locations/ky-co-beach"
+import { kyQuanSanMountain } from "@/data/locations/ky-quan-san-mountain"
 import { laNgauStream } from "@/data/locations/la-ngau-stream"
 import { laVangSanctuary } from "@/data/locations/la-vang-sanctuary"
 import { lanHaBay } from "@/data/locations/lan-ha-bay"
@@ -171,11 +174,13 @@ import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { mySonSanctuary } from "@/data/locations/my-son-sanctuary"
 import { namDuIslands } from "@/data/locations/nam-du-islands"
+import { nguChiSonMountain } from "@/data/locations/ngu-chi-son-mountain"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
 import { ngocSonTemple } from "@/data/locations/ngoc-son-temple"
 import { nhaPhaPrison } from "@/data/locations/nha-pha-prison"
 import { nhanTower } from "@/data/locations/nhan-tower"
 import { nhatBeach } from "@/data/locations/nhat-beach"
+import { nhiuCoSanMountain } from "@/data/locations/nhiu-co-san-mountain"
 import { nhoQueRiver } from "@/data/locations/nho-que-river"
 import { notreDameCathedralSaigon } from "@/data/locations/notre-dame-cathedral-saigon"
 import { onePillarPagoda } from "@/data/locations/one-pillar-pagoda"
@@ -197,8 +202,11 @@ import { phuocTinhFishingVillage } from "@/data/locations/phuoc-tinh-fishing-vil
 import { phuQuocNightMarket } from "@/data/locations/phu-quoc-night-market"
 import { phuQuyIsland } from "@/data/locations/phu-quy-island"
 import { plateRockReef } from "@/data/locations/plate-rock-reef"
+import { poMaLungMountain } from "@/data/locations/po-ma-lung-mountain"
 import { poNagarChamTowers } from "@/data/locations/po-nagar-cham-towers"
 import { pongourWaterfall } from "@/data/locations/pongour-waterfall"
+import { puSiLungMountain } from "@/data/locations/pu-si-lung-mountain"
+import { puTaLengMountain } from "@/data/locations/pu-ta-leng-mountain"
 import { quanBaHeavenGate } from "@/data/locations/quan-ba-heaven-gate"
 import { quanBaTwinMountains } from "@/data/locations/quan-ba-twin-mountains"
 import { quanThanhTemple } from "@/data/locations/quan-thanh-temple"
@@ -216,8 +224,10 @@ import { sShapeRiceTerraces } from "@/data/locations/s-shape-rice-terraces"
 import { sungSotCave } from "@/data/locations/sung-sot-cave"
 import { sunworldBeachCatBa } from "@/data/locations/sunworld-beach-cat-ba"
 import { tacSayChurch } from "@/data/locations/tac-say-church"
+import { taChiNhuMountain } from "@/data/locations/ta-chi-nhu-mountain"
 import { taDungLake } from "@/data/locations/ta-dung-lake"
 import { taHienStreet } from "@/data/locations/ta-hien-street"
+import { taLienSonMountain } from "@/data/locations/ta-lien-son-mountain"
 import { taNangPhanDungTrek } from "@/data/locations/ta-nang-phan-dung-trek"
 import { taPaFields } from "@/data/locations/ta-pa-fields"
 import { taPaTemple } from "@/data/locations/ta-pa-temple"
@@ -316,6 +326,7 @@ export const allLocations: Location[] = [
   catCoBeach,
   catTienNationalPark,
   chuaChanMountain,
+  chungNhiaVuMountain,
   coThachBeach,
   coToIsland,
   conDaoNationalPark,
@@ -396,6 +407,7 @@ export const allLocations: Location[] = [
   keGaLighthouse,
   keoPagoda,
   khaiDinhTomb,
+  khangSuVanMountain,
   khauCocChaPass,
   khauPhaPass,
   kheVanWaterfall,
@@ -406,6 +418,7 @@ export const allLocations: Location[] = [
   km0HaGiang,
   konTumWoodenChurch,
   kyCoBeach,
+  kyQuanSanMountain,
   laNgauStream,
   laVangSanctuary,
   lanHaBay,
@@ -438,10 +451,12 @@ export const allLocations: Location[] = [
   mySonSanctuary,
   namDuIslands,
   ngocSonTemple,
+  nguChiSonMountain,
   nguomNgaoCave,
   nhaPhaPrison,
   nhanTower,
   nhatBeach,
+  nhiuCoSanMountain,
   nhoQueRiver,
   notreDameCathedralSaigon,
   onePillarPagoda,
@@ -463,8 +478,11 @@ export const allLocations: Location[] = [
   phuQuocNightMarket,
   phuQuyIsland,
   plateRockReef,
+  poMaLungMountain,
   poNagarChamTowers,
   pongourWaterfall,
+  puSiLungMountain,
+  puTaLengMountain,
   quanBaHeavenGate,
   quanBaTwinMountains,
   quanThanhTemple,
@@ -482,8 +500,10 @@ export const allLocations: Location[] = [
   sungSotCave,
   sunworldBeachCatBa,
   tacSayChurch,
+  taChiNhuMountain,
   taDungLake,
   taHienStreet,
+  taLienSonMountain,
   taNangPhanDungTrek,
   taPaFields,
   taPaTemple,

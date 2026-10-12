@@ -29,6 +29,7 @@ export const fansipan: Location = {
     "fansipan4_bgtdiz",
     "fansipan2_hck8x7",
     "fansipan5_sgsij0",
+    "fansipan-lai-chau_yksrys",
   ],
   seoDescription:
     "Fansipan - the Roof of Indochina at 3,143m - is Vietnam's highest peak. Two ways to the summit: cable car (15 min, world's longest 3-rope gondola at 6,292m) or 2-3 day trek through ancient cloud forest. Buy tickets on Klook to skip the queue.",

@@ -26,6 +26,7 @@ export const km0HaGiang: Location = {
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1779291075689!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2NndWJ3UkE.!2m2!1d22.82743791941624!2d104.9842550440673!3f241.29319880877728!4f2.502988808907972!5f0.7820865974627469", },
   heroImage: heroUrl("km0-ha-giang_xyn4lx"),
   gallery: [
+    "km0-ha-giang_bojo6b",
     "km0-ha-giang_xyn4lx",
     "km0-ha-giang-2_l29gxs",
     "km0-ha-giang-4_sckrkw",

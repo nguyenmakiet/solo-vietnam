@@ -29,6 +29,7 @@ export const nhoQueRiver: Location = {
     "nho-que-river-ha-giang_iiehla",
     "nho-que2_licobx",
     "nho-que-river-ha-giang-2_ke4t6n",
+    "nho-que-river-ha-giang_jog1st"
   ],
   seoDescription:
     "Nho Quế River - a ribbon of impossible turquoise threading through Tu Sản Canyon, one of the deepest and most dramatic gorges in Southeast Asia - seen from above at Mã Pí Lèng Pass and explored by boat from one of two piers near Đồng Văn and Mèo Vạc.",

@@ -19,9 +19,14 @@ export const pongourWaterfall: Location = {
   entranceFee: "40,000 VND/adult. Electric cart from ticket area to waterfall: 15,000 VND/person (optional - walking takes about 20 minutes).",
   openingHours: "7:00 AM - 5:30 PM daily.",
   mapUrl: "https://www.google.com/maps?q=11.658000,108.248000",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("pongour-waterfall-da-lat_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1791771284470!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3UwbzN0Z2dF!2m2!1d11.68731561655128!2d108.2650866611886!3f19.597023041777828!4f-48.88031479936842!5f0.7820865974627469" },
+  heroImage: heroUrl("pongour-waterfall-da-lat_v6aa5p"),
+  gallery: [
+    "pongour-waterfall-da-lat_v6aa5p",
+    "pongour-waterfall-da-lat2_pd51rl",
+    "pongour-waterfall-da-lat3_m2cqwq",
+    "pongour-waterfall-da-lat4_cswx11",
+  ],
   seoDescription:
     "Pongour Waterfall is one of the largest waterfalls in Vietnam's Central Highlands - a 40-metre, 100-metre-wide cascade falling through seven natural basalt tiers, dubbed 'Nam Thiên Đệ Nhất Thác' (Greatest Waterfall Under the Southern Sky) by Emperor Bảo Đại. Located 50km south of Đà Lạt.",
   tips: [
