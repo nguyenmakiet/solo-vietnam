@@ -225,6 +225,15 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  /* fades in over the paper background once loaded (see PopupImage) */
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+.map-popup-thumb-img.is-loaded {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-popup-thumb-img { transition: none; }
 }
 
 .map-popup-body {

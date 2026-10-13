@@ -328,6 +328,8 @@ export default function SearchModal({ open, onClose }: Props) {
                           src={thumb}
                           alt=""
                           loading="lazy"
+                          // Hidden until loaded: a missing photo never shows the browser's broken-image icon
+                          onLoad={(e) => e.currentTarget.classList.add("is-loaded")}
                           onError={() => setBrokenThumbs((prev) => new Set(prev).add(key))}
                         />
                       ) : null}

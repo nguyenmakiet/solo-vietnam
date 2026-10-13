@@ -196,6 +196,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0; /* shown on load (see SearchModal): empty paper tile until then */
+}
+
+.sm-thumb img.is-loaded {
+  opacity: 1;
 }
 
 /* ── Result text ───────────────────────────────────────────── */
