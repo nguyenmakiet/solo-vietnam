@@ -14,14 +14,11 @@ import { stripLeadingEmoji } from "@/lib/text"
 import { dotClass } from "@/lib/category-dot"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 import { stripInlineMarkdown } from "@/lib/rich-text"
-import { ogImageUrl } from "@/lib/cloudinary"
+import { ogImageUrl, realPhoto } from "@/lib/cloudinary"
+import HeroMedia from "@/components/HeroMedia"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
-function realImage(heroImage?: string): string | null {
-  if (!heroImage || heroImage.includes("placeholder")) return null
-  return heroImage
-}
 
 function primaryType(type: Location["type"]) {
   return Array.isArray(type) ? type[0] : type
@@ -82,7 +79,7 @@ export async function generateMetadata({
       title: `${destination.name}`,
       description,
       url: `https://www.soloinvietnam.com/destinations/${slug}`,
-      images: destination.heroImage ? [{ url: ogImageUrl(destination.heroImage), width: 1200, height: 630 }] : [],
+      images: realPhoto(destination.heroImage) ? [{ url: ogImageUrl(destination.heroImage!), width: 1200, height: 630 }] : [],
     },
     alternates: { canonical: `https://www.soloinvietnam.com/destinations/${slug}` },
   }
@@ -146,7 +143,7 @@ export default async function DestinationPage({
       ? "Central Vietnam"
       : "South Vietnam"
 
-  const heroImage = realImage(destination.heroImage)
+  const heroImage = realPhoto(destination.heroImage)
 
   return (
     <div className={`dp region-theme-${destination.region}`}>
@@ -196,16 +193,7 @@ export default async function DestinationPage({
       </header>
 
       {heroImage && (
-        <div className="dd-hero-media">
-          <CloudinaryImage
-            src={heroImage}
-            alt={destination.name}
-            fill
-            sizes="(min-width: 1200px) 1200px, 100vw"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </div>
+        <HeroMedia src={heroImage} alt={destination.name} className="dd-hero-media" />
       )}
 
       <main className="dd-container dd-main">
@@ -292,7 +280,7 @@ export default async function DestinationPage({
           {destinationLocations.length > 0 ? (
             <div className="dd-places">
               {destinationLocations.map((loc) => {
-                const img = realImage(loc.heroImage)
+                const img = realPhoto(loc.heroImage)
                 const type = primaryType(loc.type)
                 const best = isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : stripInlineMarkdown(loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "")
                 return (

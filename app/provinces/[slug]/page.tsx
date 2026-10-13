@@ -6,7 +6,8 @@ import CloudinaryImage from "@/components/CloudinaryImage"
 import LocationCard from "@/components/LocationCard"
 import { stripLeadingEmoji } from "@/lib/text"
 import "@/components/guide-pages.css"
-import { ogImageUrl } from "@/lib/cloudinary"
+import { ogImageUrl, realPhoto } from "@/lib/cloudinary"
+import HeroMedia from "@/components/HeroMedia"
 
 const MUNICIPAL_CITIES = ["ha-noi", "ho-chi-minh-city", "da-nang", "hai-phong", "can-tho"]
 
@@ -41,7 +42,7 @@ export async function generateMetadata({
       title: `${province.name} ${label}`,
       description,
       url: `https://www.soloinvietnam.com/provinces/${slug}`,
-      images: province.heroImage ? [{ url: ogImageUrl(province.heroImage), width: 1200, height: 630 }] : [],
+      images: realPhoto(province.heroImage) ? [{ url: ogImageUrl(province.heroImage!), width: 1200, height: 630 }] : [],
     },
     alternates: { canonical: `https://www.soloinvietnam.com/provinces/${slug}` },
   }
@@ -121,17 +122,8 @@ export default async function ProvincePage({
         </div>
       </header>
 
-      {province.heroImage && (
-        <div className="gp-hero-media">
-          <CloudinaryImage
-            src={province.heroImage}
-            alt={province.name}
-            fill
-            sizes="(min-width: 1200px) 1200px, 100vw"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </div>
+      {realPhoto(province.heroImage) && (
+        <HeroMedia src={province.heroImage!} alt={province.name} className="gp-hero-media" />
       )}
 
       <main className="gp-container gp-main">

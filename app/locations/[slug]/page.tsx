@@ -17,8 +17,8 @@ import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { isBestMonthsReleased } from "@/data/best-months-release"
 import { getNearbyLocations } from "@/lib/nearbyLocations"
 import { dotClass } from "@/lib/category-dot"
-import CloudinaryImage from "@/components/CloudinaryImage"
-import { ogImageUrl } from "@/lib/cloudinary"
+import HeroMedia from "@/components/HeroMedia"
+import { ogImageUrl, realPhoto } from "@/lib/cloudinary"
 
 const STATUS_ALERT: Record<"temporarily-closed" | "closed" | "seasonally-closed" | "partially-closed", { label: string }> = {
   "temporarily-closed": { label: "Temporarily Closed." },
@@ -62,7 +62,7 @@ export async function generateMetadata({
       title: `${location.name}, ${area}`,
       description,
       url: `https://www.soloinvietnam.com/locations/${slug}`,
-      images: location.heroImage ? [{ url: ogImageUrl(location.heroImage), width: 1200, height: 630 }] : [],
+      images: realPhoto(location.heroImage) ? [{ url: ogImageUrl(location.heroImage!), width: 1200, height: 630 }] : [],
     },
     alternates: {
       canonical: `https://www.soloinvietnam.com/locations/${slug}`,
@@ -164,17 +164,8 @@ export default async function LocationPage({
       )}
 
       {/* Hero photo */}
-      {location.heroImage && (
-        <div className="lp-hero-media">
-          <CloudinaryImage
-            src={location.heroImage}
-            alt={location.name}
-            fill
-            sizes="(min-width: 1200px) 1200px, 100vw"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </div>
+      {realPhoto(location.heroImage) && (
+        <HeroMedia src={location.heroImage!} alt={location.name} className="lp-hero-media" />
       )}
 
       {/* Section navigation + content: the sticky bar's scope ends with the content,
