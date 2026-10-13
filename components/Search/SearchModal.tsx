@@ -33,11 +33,11 @@ type Props = {
 
 const RESULT_LIMIT = 10
 
-const TYPE_CONFIG: Record<string, { label: string; cls: string; fallback: string }> = {
-  location:    { label: "Location",    cls: "sm-badge--location",    fallback: "🏞️" },
-  destination: { label: "Destination", cls: "sm-badge--destination", fallback: "🗺️" },
-  province:    { label: "Province",    cls: "sm-badge--province",    fallback: "📍" },
-  blog:        { label: "Blog",        cls: "sm-badge--blog",        fallback: "✍️" },
+const TYPE_CONFIG: Record<string, { label: string; cls: string }> = {
+  location:    { label: "Location",    cls: "sm-badge--location" },
+  destination: { label: "Destination", cls: "sm-badge--destination" },
+  province:    { label: "Province",    cls: "sm-badge--province" },
+  blog:        { label: "Blog",        cls: "sm-badge--blog" },
 }
 
 // ─── Utils ────────────────────────────────────────────────────────────────────
@@ -330,9 +330,7 @@ export default function SearchModal({ open, onClose }: Props) {
                           loading="lazy"
                           onError={() => setBrokenThumbs((prev) => new Set(prev).add(key))}
                         />
-                      ) : (
-                        <span className="sm-thumb-fallback">{cfg.fallback}</span>
-                      )}
+                      ) : null}
                     </div>
 
                     {/* Name + meta */}

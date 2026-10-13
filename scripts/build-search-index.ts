@@ -18,6 +18,7 @@ import matter from "gray-matter"
 
 import { allLocations } from "../data/all-locations"
 import { destinations } from "../data/destinations/index"
+import { realPhoto } from "../lib/cloudinary"
 import { provinces } from "../data/provinces"
 import { LOCATION_TYPES, isLocationType } from "../data/taxonomy/types"
 import { LOCATION_TAGS, isLocationTag } from "../data/taxonomy/tags"
@@ -121,7 +122,7 @@ for (const loc of allLocations) {
     province: loc.provinces?.[0],
     tags: [...new Set([...typeTags, ...locationTags, ...categoryTags])],
     ...(keywords.length > 0 ? { keywords } : {}),
-    heroImage: loc.heroImage ?? undefined,
+    heroImage: realPhoto(loc.heroImage) ?? undefined,
   })
 }
 
@@ -137,7 +138,7 @@ for (const dest of destinations) {
     province: dest.provinceSlug,
     region: dest.region,
     tags: dest.tags ?? [],
-    heroImage: dest.heroImage ?? undefined,
+    heroImage: realPhoto(dest.heroImage) ?? undefined,
   })
 }
 
@@ -152,7 +153,7 @@ for (const prov of provinces) {
     description: truncate(prov.description),
     region: prov.region,
     tags: prov.tags ?? [],
-    heroImage: prov.heroImage ?? undefined,
+    heroImage: realPhoto(prov.heroImage) ?? undefined,
   })
 }
 
