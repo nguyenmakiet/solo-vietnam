@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState, useCallback } from "react"
+import { useEffect, useMemo, useRef, useState, useCallback } from "react"
 import Link from "next/link"
 import { experiences } from "@/data/experiences"
 import { typeDisplayLabel } from "@/data/taxonomy/types"
@@ -28,32 +28,86 @@ function getLatLng(loc: MapLocation): [number, number] {
   return [loc.lat, loc.lng]
 }
 
+// Warms the browser cache for a popup photo, so a marker's image is usually
+// loaded by the time it is clicked (hover on desktop, pointerdown on touch)
+const preloaded = new Set<string>()
+function preloadImage(src: string | null) {
+  if (!src || preloaded.has(src)) return
+  preloaded.add(src)
+  const img = new Image()
+  img.decoding = "async"
+  img.src = src
+}
+
 function PopupImage({ src, alt }: { src: string | null; alt: string }) {
   const [failed, setFailed] = useState(false)
+  const [loaded, setLoaded] = useState(false)
   if (!src || failed) return <PhotoPlaceholder />
-  return <img src={src} alt={alt} className="map-popup-thumb-img" onError={() => setFailed(true)} />
+  // Fades in over the paper-toned thumb background instead of popping in
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={600}
+      height={400}
+      decoding="async"
+      fetchPriority="high"
+      className={`map-popup-thumb-img${loaded ? " is-loaded" : ""}`}
+      onLoad={() => setLoaded(true)}
+      onError={() => setFailed(true)}
+    />
+  )
 }
 
 // Markers: teal dot; the selected one is a larger signal dot with an ink ring,
-// so selection reads by size and outline as well as colour (styles in map.css)
-const markerIcon = (L: typeof import("leaflet"), selected = false) =>
+// so selection reads by size and outline as well as colour (styles in map.css).
+// data-slug lets one delegated listener find the location (image preload)
+const markerIcon = (L: typeof import("leaflet"), slug: string, selected = false) =>
   L.divIcon({
     className: "",
-    html: `<span class="map-marker${selected ? " map-marker--selected" : ""}"></span>`,
+    html: `<span class="map-marker${selected ? " map-marker--selected" : ""}" data-slug="${slug}"></span>`,
     iconSize: selected ? [22, 22] : [14, 14],
     iconAnchor: selected ? [11, 11] : [7, 7],
   })
 
+type MarkerEntry = {
+  marker: import("leaflet").Marker
+  loc: MapLocation
+  clickHandler: (e: import("leaflet").LeafletMouseEvent) => void
+  visible: boolean
+}
+
+// Shows or hides one marker for the current filter. Hidden markers are
+// transparent, unclickable and out of the tab order
+function setMarkerVisible(entry: MarkerEntry, visible: boolean) {
+  const { marker, clickHandler } = entry
+  marker.setOpacity(visible ? 1 : 0)
+  marker.off("click")
+  if (visible) marker.on("click", clickHandler)
+  const el = marker.getElement()
+  if (el) {
+    el.style.pointerEvents = visible ? "auto" : "none"
+    el.tabIndex = visible ? 0 : -1
+  }
+}
+
 export default function MapClient({ locations: locationsWithCoords }: { locations: MapLocation[] }) {
-  const expCounts = experiences.reduce((acc, exp) => {
+  const expCounts = useMemo(() => experiences.reduce((acc, exp) => {
     acc[exp.value] = locationsWithCoords.filter(l => l.experiences.includes(exp.value)).length
     return acc
-  }, {} as Record<string, number>)
+  }, {} as Record<string, number>), [locationsWithCoords])
+
+  const locBySlug = useMemo(
+    () => new Map(locationsWithCoords.map(l => [l.slug, l])),
+    [locationsWithCoords],
+  )
 
   const mapRef = useRef<any>(null)
   const mapContainerRef = useRef<HTMLDivElement>(null)
   const markersLayerRef = useRef<any>(null)
-  const allMarkersRef = useRef<Map<string, any>>(new Map())
+  const allMarkersRef = useRef<Map<string, MarkerEntry>>(new Map())
+  // Slug whose marker currently shows the selected icon
+  const selectedMarkerRef = useRef<string | null>(null)
   const LRef = useRef<any>(null)
   const [activeExp, setActiveExp] = useState<string | null>(null)
   const [hoveredExp, setHoveredExp] = useState<string | null>(null)
@@ -131,11 +185,12 @@ export default function MapClient({ locations: locationsWithCoords }: { location
     const L = LRef.current
     markersLayerRef.current.clearLayers()
     allMarkersRef.current.clear()
+    selectedMarkerRef.current = null
 
     locationsWithCoords.forEach((loc) => {
       const [lat, lng] = getLatLng(loc)
 
-      const icon = markerIcon(L)
+      const icon = markerIcon(L, loc.slug)
 
       const clickHandler = (e: any) => {
         e.originalEvent.stopPropagation()
@@ -155,47 +210,66 @@ export default function MapClient({ locations: locationsWithCoords }: { location
         })
 
       markersLayerRef.current.addLayer(marker)
-      allMarkersRef.current.set(loc.slug, { marker, loc, clickHandler })
+      allMarkersRef.current.set(loc.slug, { marker, loc, clickHandler, visible: true })
     })
   }, [mapReady, locationsWithCoords])
 
-  // Update marker visuals + enable/disable click based on filter
+  // Filter: show/hide markers. Only touches markers whose visibility changes,
+  // and never rebuilds icons (setIcon recreates the marker's DOM element)
+  useEffect(() => {
+    if (!mapReady) return
+    const effectiveExp = hoveredExp ?? activeExp
+
+    allMarkersRef.current.forEach((entry) => {
+      const visible = effectiveExp ? entry.loc.experiences.includes(effectiveExp) : true
+      if (visible === entry.visible) return
+      entry.visible = visible
+      setMarkerVisible(entry, visible)
+    })
+  }, [mapReady, activeExp, hoveredExp])
+
+  // Selection: swap the icon on the previously selected and the newly selected
+  // marker only, so a click costs the same with 50 or 500 markers
   useEffect(() => {
     if (!mapReady || !LRef.current) return
     const L = LRef.current
-    const effectiveExp = hoveredExp ?? activeExp
+    const nextSlug = selectedLoc?.slug ?? null
+    const prevSlug = selectedMarkerRef.current
+    if (prevSlug === nextSlug) return
 
-    allMarkersRef.current.forEach(({ marker, loc, clickHandler }) => {
-      const isSelected = selectedLoc?.slug === loc.slug
-      const matchesFilter = effectiveExp
-        ? loc.experiences.includes(effectiveExp)
-        : true
+    const setSelected = (slug: string | null, selected: boolean) => {
+      const entry = slug ? allMarkersRef.current.get(slug) : undefined
+      if (!entry) return
+      entry.marker.setIcon(markerIcon(L, entry.loc.slug, selected))
+      entry.marker.setZIndexOffset(selected ? 1000 : 0)
+      // setIcon builds a fresh element: re-apply the filter state to it
+      setMarkerVisible(entry, entry.visible)
+    }
 
-      if (effectiveExp && !matchesFilter) {
-        // Hide and disable click
-        marker.setOpacity(0)
-        marker.off("click")
-        // Make marker element non-interactive via DOM
-        const el = marker.getElement()
-        if (el) {
-          el.style.pointerEvents = "none"
-          el.tabIndex = -1 // hidden markers leave the tab order
-        }
-      } else {
-        // Show and enable click
-        marker.setOpacity(1)
-        marker.off("click")
-        marker.on("click", clickHandler)
-        marker.setIcon(markerIcon(L, isSelected))
-        const el = marker.getElement()
-        if (el) {
-          el.style.pointerEvents = "auto"
-          el.tabIndex = 0
-        }
-        marker.setZIndexOffset(isSelected ? 1000 : 0)
-      }
-    })
-  }, [mapReady, activeExp, hoveredExp, selectedLoc])
+    setSelected(prevSlug, false)
+    setSelected(nextSlug, true)
+    selectedMarkerRef.current = nextSlug
+  }, [mapReady, selectedLoc])
+
+  // Preload a marker's popup photo before it is clicked: hover on desktop,
+  // pointerdown on touch (fires before click). One delegated listener for all markers
+  useEffect(() => {
+    const container = mapContainerRef.current
+    if (!mapReady || !container) return
+    const handler = (e: Event) => {
+      const icon = (e.target as Element | null)?.closest?.(".leaflet-marker-icon")
+      const slug = icon?.querySelector<HTMLElement>("[data-slug]")?.dataset.slug
+      if (slug) preloadImage(locBySlug.get(slug)?.image ?? null)
+    }
+    container.addEventListener("pointerover", handler)
+    container.addEventListener("pointerdown", handler)
+    container.addEventListener("focusin", handler) // keyboard: Tab onto a marker
+    return () => {
+      container.removeEventListener("pointerover", handler)
+      container.removeEventListener("pointerdown", handler)
+      container.removeEventListener("focusin", handler)
+    }
+  }, [mapReady, locBySlug])
 
   // Select one experience (null = all locations) and zoom to its markers
   const selectExp = useCallback((expValue: string | null) => {
@@ -294,9 +368,7 @@ export default function MapClient({ locations: locationsWithCoords }: { location
   }, [mapReady])
 
   const effectiveExp = hoveredExp ?? activeExp
-  const filteredCount = effectiveExp
-    ? locationsWithCoords.filter(l => l.experiences.includes(effectiveExp)).length
-    : locationsWithCoords.length
+  const filteredCount = effectiveExp ? expCounts[effectiveExp] ?? 0 : locationsWithCoords.length
 
   const activeLabel = effectiveExp ? experiences.find(e => e.value === effectiveExp)?.label : null
   const selectedLabel = activeExp ? experiences.find(e => e.value === activeExp)?.label : null

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { preconnect } from "react-dom"
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
 export const metadata: Metadata = {
@@ -14,5 +15,7 @@ export const metadata: Metadata = {
 }
 
 export default function MapLayout({ children }: { children: React.ReactNode }) {
+  // Popup photos come from Cloudinary: open the connection before the first marker click
+  preconnect("https://res.cloudinary.com")
   return children
 }
