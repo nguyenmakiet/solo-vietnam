@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import Fuse, { type FuseResult } from "fuse.js"
 import { searchTokens } from "@/lib/search-keywords"
+import { realPhoto } from "@/lib/cloudinary"
 import "./search-modal.css"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -32,11 +33,11 @@ type Props = {
 
 const RESULT_LIMIT = 10
 
-const TYPE_CONFIG: Record<string, { label: string; cls: string; fallback: string }> = {
-  location:    { label: "Location",    cls: "sm-badge--location",    fallback: "🏞️" },
-  destination: { label: "Destination", cls: "sm-badge--destination", fallback: "🗺️" },
-  province:    { label: "Province",    cls: "sm-badge--province",    fallback: "📍" },
-  blog:        { label: "Blog",        cls: "sm-badge--blog",        fallback: "✍️" },
+const TYPE_CONFIG: Record<string, { label: string; cls: string }> = {
+  location:    { label: "Location",    cls: "sm-badge--location" },
+  destination: { label: "Destination", cls: "sm-badge--destination" },
+  province:    { label: "Province",    cls: "sm-badge--province" },
+  blog:        { label: "Blog",        cls: "sm-badge--blog" },
 }
 
 // ─── Utils ────────────────────────────────────────────────────────────────────
@@ -45,8 +46,8 @@ const TYPE_CONFIG: Record<string, { label: string; cls: string; fallback: string
  * Rewrite any Cloudinary URL to a small 96×96 thumbnail.
  */
 function toThumb(url: string | undefined): string | undefined {
-  if (!url) return undefined
-  return url.replace(
+  if (!realPhoto(url)) return undefined
+  return url!.replace(
     /\/image\/upload\/[^/]+\//,
     "/image/upload/w_96,h_96,c_fill,q_auto,f_auto/"
   )
@@ -130,6 +131,7 @@ export default function SearchModal({ open, onClose }: Props) {
   const [activeIdx, setActiveIdx] = useState(0)
   const [fuse, setFuse] = useState<Fuse<SearchItem> | null>(null)
   const [loading, setLoading] = useState(false)
+  const [brokenThumbs, setBrokenThumbs] = useState<Set<string>>(new Set())
   const [matchMap, setMatchMap] = useState<Map<string, readonly [number, number][]>>(new Map())
 
   // ── Load index lazily on first open ───────────────────────────────────────
@@ -321,21 +323,14 @@ export default function SearchModal({ open, onClose }: Props) {
                   >
                     {/* Thumbnail */}
                     <div className="sm-thumb">
-                      {thumb ? (
+                      {thumb && !brokenThumbs.has(key) ? (
                         <img
                           src={thumb}
                           alt=""
                           loading="lazy"
-                          onError={(e) => {
-                            const img = e.target as HTMLImageElement
-                            if (!img.src.includes("coming-soon.jpg")) {
-                              img.src = "/images/coming-soon.jpg"
-                            }
-                          }}
+                          onError={() => setBrokenThumbs((prev) => new Set(prev).add(key))}
                         />
-                      ) : (
-                        <span className="sm-thumb-fallback">{cfg.fallback}</span>
-                      )}
+                      ) : null}
                     </div>
 
                     {/* Name + meta */}

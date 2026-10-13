@@ -2,7 +2,8 @@
 // next/image for Cloudinary delivery URLs. The loader asks Cloudinary for the
 // exact width next/image needs (srcset), so images are resized at the CDN
 // instead of going through the Next.js image optimizer twice.
-import Image, { type ImageLoaderProps, type ImageProps } from "next/image"
+import Image, { type ImageLoaderProps } from "next/image"
+import type { ComponentProps } from "react"
 
 const UPLOAD = "/image/upload/"
 
@@ -16,7 +17,7 @@ function cloudinaryLoader({ src, width, quality }: ImageLoaderProps) {
   return `${head}w_${width},c_limit,q_${quality ?? "auto"},f_auto/${rest.join("/")}`
 }
 
-export default function CloudinaryImage(props: Omit<ImageProps, "loader">) {
+export default function CloudinaryImage(props: Omit<ComponentProps<typeof Image>, "loader">) {
   // eslint-disable-next-line jsx-a11y/alt-text -- alt is required by ImageProps and passed through
   return <Image loader={cloudinaryLoader} {...props} />
 }

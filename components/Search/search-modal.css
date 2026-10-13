@@ -198,11 +198,6 @@
   object-fit: cover;
 }
 
-.sm-thumb-fallback {
-  font-size: 20px;
-  line-height: 1;
-}
-
 /* ── Result text ───────────────────────────────────────────── */
 .sm-result-text {
   flex: 1;

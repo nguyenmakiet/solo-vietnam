@@ -57,3 +57,11 @@ export const thumbnailUrl = (publicId: string) =>
 export const ogImageUrl = (url: string) => url.replace(/\bf_auto\b/, "f_jpg")
 
 export const OG_FALLBACK_IMAGE = ogImageUrl(heroUrl("ha-giang-loop_e8myfw"))
+
+// ─── Real photo check ────────────────────────────────────────
+// Unconfirmed publicIds are named "...placeholder" (see CLAUDE.md) and do not
+// exist on Cloudinary. null = no real photo yet; callers hide the image slot.
+export function realPhoto(url?: string): string | null {
+  if (!url || url.includes("placeholder")) return null
+  return url
+}
