@@ -376,6 +376,74 @@ export default async function DestinationPage({
           </section>
         )}
 
+        {/* Day trips (side trips without a destination of their own) */}
+        {destination.dayTrips?.map((trip, t) => (
+          <section key={trip.title} className="dp-section dd-daytrip" aria-labelledby={`h-daytrip-${t}`}>
+            <h2 id={`h-daytrip-${t}`} className="section-label">{trip.title}</h2>
+            <p className="dd-daytrip-summary">{trip.summary}</p>
+
+            {trip.gettingThere && trip.gettingThere.length > 0 && (
+              <>
+                <h3 className="dd-daytrip-h3">Getting there</h3>
+                <div className="dd-rows dd-routes">
+                  {trip.gettingThere.map((opt, i) => (
+                    <div key={i} className="dd-route">
+                      <div className="dd-route-top">
+                        <div>
+                          <span className="dd-route-from">From {opt.from}</span>
+                          <span className="dd-route-vehicle">{opt.vehicle}</span>
+                        </div>
+                        <div className="dd-route-right">
+                          <span className="dd-route-duration">{opt.duration}</span>
+                          <span className="dd-route-cost">{opt.cost}</span>
+                        </div>
+                      </div>
+                      {opt.notes && <p className="dd-route-notes">{opt.notes}</p>}
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {trip.plan && (
+              <>
+                <h3 className="dd-daytrip-h3">The day</h3>
+                {trip.plan.stops.length > 0 && (
+                  <p className="dd-stops">
+                    {trip.plan.stops.map((stop, i) => (
+                      <span key={stop}>
+                        {i > 0 && <span className="dd-stop-sep" aria-hidden="true">·</span>}
+                        {locationNameMap[stop] ? (
+                          <Link href={`/locations/${stop}`}>{locationNameMap[stop]}</Link>
+                        ) : (
+                          formatSlug(stop)
+                        )}
+                      </span>
+                    ))}
+                  </p>
+                )}
+                {trip.plan.notes && <p className="dd-day-notes">{trip.plan.notes}</p>}
+              </>
+            )}
+
+            {trip.cost && (
+              <>
+                <h3 className="dd-daytrip-h3">Tickets</h3>
+                <p className="dd-day-notes">{trip.cost}</p>
+              </>
+            )}
+
+            {trip.tips && trip.tips.length > 0 && (
+              <>
+                <h3 className="dd-daytrip-h3">Tips</h3>
+                <ul className="dd-daytrip-tips">
+                  {trip.tips.map((tip) => <li key={tip}>{tip}</li>)}
+                </ul>
+              </>
+            )}
+          </section>
+        ))}
+
         {/* Getting There */}
         {destination.gettingThere && destination.gettingThere.length > 0 && (
           <section className="dp-section" aria-labelledby="h-getting">

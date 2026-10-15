@@ -62,10 +62,15 @@ const DOT_SIZE = 12
 // (Its full count circle, 24px, costs about two names at the default zoom)
 const TIER1_ZONE = DOT_SIZE
 const LABEL_GAP = 4
-// Side labels: distance from the point to the label edge, and the anchor dot
-// marking the point (keep in sync with .map-dest.is-right / .is-left in map.css)
-const LABEL_OFFSET = 10
+// Leader-line labels: distances (px) from the point to the label's near edge,
+// tried nearest first, in 8 directions (east first: the sea and the Gulf are
+// mostly empty). The point gets an anchor dot (keep in sync with
+// .map-dest.is-offset in map.css)
+const LEADER_DISTANCES = [10, 24, 40]
+const LEADER_DIRECTIONS: [number, number][] = [[1, 0], [-1, 0], [0, -1], [0, 1], [1, -1], [1, 1], [-1, -1], [-1, 1]]
 const ANCHOR_SIZE = 10
+// Tier-1 points closer than this share one label ("Da Nang 7 · Hoi An 7")
+const GROUP_DISTANCE = 12
 
 const REGION_ORDER: MapDestination["region"][] = ["north", "central", "south"]
 const REGION_LABEL: Record<MapDestination["region"], string> = { north: "North", central: "Central", south: "South" }
@@ -131,7 +136,7 @@ const markerIcon = (L: typeof import("leaflet"), slug: string, selected = false)
 const bubbleIcon = (L: typeof import("leaflet"), d: MapDestination) =>
   L.divIcon({
     className: "map-dest-icon",
-    html: `<span class="map-dest is-compact"><span class="map-dest-name">${escapeHtml(d.name)}</span><span class="map-dest-count">${d.count}</span></span>`,
+    html: `<span class="map-dest is-compact" data-dest="${d.slug}"><span class="map-dest-name">${escapeHtml(d.name)}</span><span class="map-dest-count">${d.count}</span></span>`,
     iconSize: [0, 0],
     iconAnchor: [0, 0],
   })
@@ -353,19 +358,58 @@ export default function MapClient({
       .map(b => ({ b, el: b.marker.getElement()?.firstElementChild as HTMLElement | null | undefined }))
       .filter((e): e is { b: BubbleEntry; el: HTMLElement } => !!e.el)
 
-    // Measure every full label in one layout pass
-    entries.forEach(({ el }) => { el.className = "map-dest is-full is-center" })
+    const points = entries.map(({ b }) => map.latLngToContainerPoint([b.d.lat, b.d.lng]))
+
+    // Tier-1 points within GROUP_DISTANCE of a higher-ranked tier-1 point (Da
+    // Nang and Hoi An at the country view) share that point's label: "Da Nang 7 ·
+    // Hoi An 7". Used only when the combined label can be placed
+    const members = new Map<number, number[]>() // leader index -> member indexes
+    const memberOf = new Set<number>()
+    entries.forEach(({ b }, i) => {
+      if (b.d.priority !== 1 || memberOf.has(i)) return
+      entries.forEach(({ b: o }, j) => {
+        if (j <= i || o.d.priority !== 1 || memberOf.has(j)) return
+        if (Math.hypot(points[j].x - points[i].x, points[j].y - points[i].y) <= GROUP_DISTANCE) {
+          members.set(i, [...(members.get(i) ?? []), j])
+          memberOf.add(j)
+        }
+      })
+    })
+    const singleHtml = (d: MapDestination) =>
+      `<span class="map-dest-name">${escapeHtml(d.name)}</span><span class="map-dest-count">${d.count}</span>`
+    const groupHtml = (ds: MapDestination[]) => ds
+      .map(d => `<span class="map-dest-name">${escapeHtml(d.name)}</span><span class="map-dest-count">${d.count}</span>`)
+      .join(`<span class="map-dest-join" aria-hidden="true">·</span>`)
+
+    // Measure every full label (and each combined label) in one layout pass each
+    entries.forEach(({ b, el }) => {
+      el.className = "map-dest is-full is-center"
+      el.innerHTML = singleHtml(b.d)
+      el.style.removeProperty("--cx")
+      el.style.removeProperty("--cy")
+      el.style.removeProperty("--len")
+      el.style.removeProperty("--ang")
+      const icon = b.marker.getElement()
+      if (icon) icon.tabIndex = 0
+    })
     const sizes = entries.map(({ el }) => [el.offsetWidth, el.offsetHeight] as const)
+    const groupSizes = new Map<number, readonly [number, number]>()
+    members.forEach((ms, i) => {
+      const el = entries[i].el
+      el.className = "map-dest is-full is-center is-group"
+      el.innerHTML = groupHtml([entries[i].b.d, ...ms.map(j => entries[j].b.d)])
+      groupSizes.set(i, [el.offsetWidth, el.offsetHeight])
+      el.className = "map-dest is-full is-center"
+      el.innerHTML = singleHtml(entries[i].b.d)
+    })
 
     type Box = { x1: number; y1: number; x2: number; y2: number }
-    const placed: Box[] = []
     // Box of a w x h bubble whose centre is (dx, dy) from the point (plus the gap)
-    const boxAt = (x: number, y: number, w: number, h: number, dx = 0, dy = 0): Box => ({
-      x1: x + dx - w / 2 - LABEL_GAP, y1: y + dy - h / 2 - LABEL_GAP,
-      x2: x + dx + w / 2 + LABEL_GAP, y2: y + dy + h / 2 + LABEL_GAP,
+    const boxAt = (x: number, y: number, w: number, h: number, dx = 0, dy = 0, gap = LABEL_GAP): Box => ({
+      x1: x + dx - w / 2 - gap, y1: y + dy - h / 2 - gap,
+      x2: x + dx + w / 2 + gap, y2: y + dy + h / 2 + gap,
     })
     const overlaps = (a: Box, b: Box) => a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1
-    const hits = (a: Box) => placed.some(b => overlaps(a, b))
     // Names must stay inside the map and clear of the zoom buttons (a point near
     // the edge falls back to its count circle until panned into view)
     const size = map.getSize()
@@ -375,53 +419,135 @@ export default function MapClient({
       !(zoomCtl && a.x1 < zoomCtl.right - container.left && a.x2 > zoomCtl.left - container.left &&
         a.y1 < zoomCtl.bottom - container.top && a.y2 > zoomCtl.top - container.top)
 
-    const points = entries.map(({ b }) => map.latLngToContainerPoint([b.d.lat, b.d.lng]))
-    // Every tier-1 point keeps the room for its own dot: no label or count circle
-    // may reach into another tier-1 point's zone, so a tier-1 destination is
-    // never hidden under one and always gets at least a dot. Only tier 2/3
-    // points (and orphan dots) can end up under a label
-    const tier1Zones = entries.map(({ b }, j) =>
-      b.d.priority === 1 ? boxAt(points[j].x, points[j].y, TIER1_ZONE, TIER1_ZONE) : null)
-    const intoTier1Zone = (box: Box, i: number) => tier1Zones.some((z, j) => z !== null && j !== i && overlaps(box, z))
+    // Every tier-1 point keeps the room for its own dot: no label, leader line or
+    // count circle may reach into another tier-1 point's zone, so a tier-1
+    // destination is never hidden under one and always gets at least a dot. Only
+    // tier 2/3 points (and orphan dots) can end up under a label. A point in
+    // `reserve` keeps room for a full count circle instead (see the passes below)
+    const zonesFor = (reserve: Set<number>) => entries.map(({ b }, j) => {
+      if (b.d.priority !== 1) return null
+      const zone = reserve.has(j) ? COMPACT_SIZE : TIER1_ZONE
+      return boxAt(points[j].x, points[j].y, zone, zone)
+    })
+
+    // Label placements around point p for a w x h label: centred on it, or with
+    // its near edge LEADER_DISTANCES px away in one of 8 directions, joined to the
+    // point by a leader line and an anchor dot. Geometry = everything the label
+    // occupies (label, anchor dot, line), for collisions and for later labels
+    type Placement = { cx: number; cy: number; dist: number; label: Box; geometry: Box[]; len: number; ang: number }
+    const placementsAround = (p: { x: number; y: number }, w: number, h: number): Placement[] => {
+      const out: Placement[] = [{ cx: 0, cy: 0, dist: 0, label: boxAt(p.x, p.y, w, h), geometry: [boxAt(p.x, p.y, w, h)], len: 0, ang: 0 }]
+      for (const dist of LEADER_DISTANCES) {
+        for (const [ux, uy] of LEADER_DIRECTIONS) {
+          const k = ux !== 0 && uy !== 0 ? Math.SQRT1_2 : 1
+          const cx = ux * (w / 2 + dist * k)
+          const cy = uy * (h / 2 + dist * k)
+          const label = boxAt(p.x, p.y, w, h, cx, cy)
+          // The line runs from the point to where it meets the label's edge
+          const full = Math.hypot(cx, cy)
+          const inside = Math.min(cx ? (w / 2) / Math.abs(cx) : Infinity, cy ? (h / 2) / Math.abs(cy) : Infinity)
+          const len = full * (1 - inside)
+          const ang = Math.atan2(cy, cx)
+          const geometry = [label, boxAt(p.x, p.y, ANCHOR_SIZE, ANCHOR_SIZE)]
+          for (let t = ANCHOR_SIZE / 2 + 2; t < len; t += 4) {
+            geometry.push(boxAt(p.x + Math.cos(ang) * t, p.y + Math.sin(ang) * t, 2, 2, 0, 0, 1))
+          }
+          out.push({ cx, cy, dist, label, geometry, len, ang })
+        }
+      }
+      return out
+    }
+
+    type Result = { state: "full" | "compact" | "dot"; chosen: Placement | null; group: number[] }
+    // One greedy pass in rank order; no DOM writes, so it can be re-run
+    const plan = (reserve: Set<number>) => {
+      const placed: Box[] = []
+      const hits = (a: Box) => placed.some(b => overlaps(a, b))
+      const tier1Zones = zonesFor(reserve)
+      const intoTier1Zone = (box: Box, skip: Set<number>) =>
+        tier1Zones.some((z, j) => z !== null && !skip.has(j) && overlaps(box, z))
+      const results: Result[] = entries.map(() => ({ state: "dot", chosen: null, group: [] }))
+      const absorbed = new Set<number>()
+      entries.forEach(({ b }, i) => {
+        if (absorbed.has(i)) return
+        const p = points[i]
+        // Score: each other point the label covers costs as much as 25px of leader
+        // line, so a name moves away only when it has to; the lowest score wins
+        const covered = (box: Box, skip: Set<number>) => points.filter((q, j) => !skip.has(j) &&
+          q.x > box.x1 + LABEL_GAP && q.x < box.x2 - LABEL_GAP && q.y > box.y1 + LABEL_GAP && q.y < box.y2 - LABEL_GAP).length
+        const bestPlacement = (w: number, h: number, skip: Set<number>) => placementsAround(p, w, h)
+          .filter(c => labelFits(c.label) && c.geometry.every(g => !hits(g) && !intoTier1Zone(g, skip)))
+          .map(c => ({ c, score: covered(c.label, skip) * 25 + c.dist }))
+          .reduce<{ c: Placement; score: number } | null>((best, x) => (!best || x.score < best.score ? x : best), null)?.c ?? null
+
+        let chosen: Placement | null = null
+        let group: number[] = []
+        if (zoom >= LABEL_MIN_ZOOM[b.d.priority]) {
+          const ms = members.get(i) ?? []
+          if (ms.length > 0) {
+            const [gw, gh] = groupSizes.get(i)!
+            chosen = bestPlacement(gw, gh, new Set([i, ...ms]))
+            if (chosen) group = ms
+          }
+          if (!chosen) chosen = bestPlacement(sizes[i][0], sizes[i][1], new Set([i]))
+        }
+        if (chosen) {
+          placed.push(...chosen.geometry)
+          group.forEach(j => absorbed.add(j))
+          results[i] = { state: "full", chosen, group }
+          return
+        }
+        // A count circle may not cover another tier-1 point either
+        const compact = boxAt(p.x, p.y, COMPACT_SIZE, COMPACT_SIZE)
+        if (!hits(compact) && !intoTier1Zone(compact, new Set([i]))) {
+          placed.push(compact)
+          results[i] = { state: "compact", chosen: null, group: [] }
+        }
+      })
+      return { results, absorbed }
+    }
+
+    // A tier-1 point squeezed down to a dot only because labels took the room
+    // around it (its circle would not cover another tier-1 point) gets that room
+    // reserved, and the layout runs again - at most 3 extra passes
+    const reserve = new Set<number>()
+    const plainZones = zonesFor(reserve)
+    let layout = plan(reserve)
+    for (let pass = 0; pass < 3; pass++) {
+      const starved = entries.map((_, i) => i).filter((i) => {
+        if (entries[i].b.d.priority !== 1 || reserve.has(i) || layout.absorbed.has(i)) return false
+        if (layout.results[i].state !== "dot") return false
+        const circle = boxAt(points[i].x, points[i].y, COMPACT_SIZE, COMPACT_SIZE)
+        return !plainZones.some((z, j) => z !== null && j !== i && overlaps(circle, z))
+      })
+      if (starved.length === 0) break
+      starved.forEach(i => reserve.add(i))
+      layout = plan(reserve)
+    }
+    const { results, absorbed } = layout
 
     entries.forEach(({ b, el }, i) => {
-      const p = points[i]
-      const [w, h] = sizes[i]
-      // An offset label sits LABEL_OFFSET from its point; its box runs from the
-      // far side of the anchor dot to the label's outer edge
-      const sideW = ANCHOR_SIZE / 2 + LABEL_OFFSET + w
-      const sideDx = sideW / 2 - ANCHOR_SIZE / 2
-      const vertH = ANCHOR_SIZE / 2 + LABEL_OFFSET + h
-      const vertDy = vertH / 2 - ANCHOR_SIZE / 2
-      const candidates: { cls: string; box: Box }[] = []
-      const fullCandidates: { cls: string; box: Box }[] = []
-      if (zoom >= LABEL_MIN_ZOOM[b.d.priority]) {
-        fullCandidates.push(
-          { cls: "is-full is-center", box: boxAt(p.x, p.y, w, h) },
-          { cls: "is-full is-right", box: boxAt(p.x, p.y, sideW, h, sideDx) },
-          { cls: "is-full is-left", box: boxAt(p.x, p.y, sideW, h, -sideDx) },
-          { cls: "is-full is-above", box: boxAt(p.x, p.y, w, vertH, 0, -vertDy) },
-          { cls: "is-full is-below", box: boxAt(p.x, p.y, w, vertH, 0, vertDy) },
-        )
+      if (absorbed.has(i)) {
+        // Named in its leader's combined label: own mark hidden, listed in its tooltip
+        el.className = "map-dest is-dot is-tucked"
+        b.marker.setZIndexOffset(0)
+        const icon = b.marker.getElement()
+        if (icon) icon.tabIndex = -1
+        return
       }
-      // Of the label placements that fit, take the one covering the fewest other
-      // destination points (first in order on a tie), so a name sits on open map
-      // rather than on its neighbours
-      const covered = (box: Box) => points.filter((q, j) => j !== i &&
-        q.x > box.x1 + LABEL_GAP && q.x < box.x2 - LABEL_GAP && q.y > box.y1 + LABEL_GAP && q.y < box.y2 - LABEL_GAP).length
-      const bestFull = fullCandidates
-        .filter(c => !hits(c.box) && labelFits(c.box) && !intoTier1Zone(c.box, i))
-        .map(c => ({ c, n: covered(c.box) }))
-        .reduce<{ c: { cls: string; box: Box }; n: number } | null>((best, x) => (!best || x.n < best.n ? x : best), null)
-      if (bestFull) candidates.push(bestFull.c)
-      // A count circle may not cover another tier-1 point either
-      const compact = boxAt(p.x, p.y, COMPACT_SIZE, COMPACT_SIZE)
-      if (!intoTier1Zone(compact, i)) candidates.push({ cls: "is-compact", box: compact })
-      const fit = candidates.find(c => !hits(c.box))
-      if (fit) placed.push(fit.box)
-      const cls = fit?.cls ?? "is-dot"
-      el.className = `map-dest ${cls}`
-      const state = cls.split(" ")[0].slice(3)
+      const { state, chosen, group } = results[i]
+      if (chosen) {
+        el.className = `map-dest is-full ${chosen.dist === 0 ? "is-center" : "is-offset"}${group.length ? " is-group" : ""}`
+        if (group.length) el.innerHTML = groupHtml([b.d, ...group.map(j => entries[j].b.d)])
+        if (chosen.dist > 0) {
+          el.style.setProperty("--cx", `${chosen.cx}px`)
+          el.style.setProperty("--cy", `${chosen.cy}px`)
+          el.style.setProperty("--len", `${chosen.len}px`)
+          el.style.setProperty("--ang", `${chosen.ang}rad`)
+        }
+      } else {
+        el.className = `map-dest is-${state}`
+      }
       // Count circles and dots stack above labels so they are never hidden (their
       // padding yields to the mark or label under the finger - see activateBubble()),
       // then by rank, so where two 32px tap areas overlap the higher-ranked
@@ -437,6 +563,10 @@ export default function MapClient({
       .filter(({ el }) => el.classList.contains("is-full"))
       .map(({ b, el }) => ({ d: b.d, r: el.getBoundingClientRect() }))
     const tucked = new Map<string, MapDestination[]>()
+    members.forEach((ms, i) => {
+      const named = ms.filter(j => absorbed.has(j)).map(j => entries[j].b.d)
+      if (named.length) tucked.set(entries[i].b.d.slug, named)
+    })
     entries.forEach(({ b, el }, i) => {
       if (el.classList.contains("is-full") || b.d.priority === 1) return
       const x = container.left + points[i].x

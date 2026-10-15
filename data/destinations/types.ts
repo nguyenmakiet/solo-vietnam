@@ -61,6 +61,18 @@ export type Itinerary = {
   days: ItineraryDay[]
 }
 
+// ─── Day Trip ────────────────────────────────────────────────
+// A side trip from this destination that has no destination of its own
+// (e.g. Ba Na Hills from Da Nang). Rendered as its own section
+export type DayTrip = {
+  title: string                 // section heading: "Day trip: Ba Na Hills"
+  summary: string
+  gettingThere?: TransportOption[]
+  plan?: { stops: string[]; notes?: string } // location slugs in visiting order
+  cost?: string
+  tips?: string[]
+}
+
 // ─── Cost ────────────────────────────────────────────────────
 export type CostRange = {
   budget: string      // "400.000–700.000 VND/ngày"
@@ -152,6 +164,7 @@ export type Destination = {
   transport?: string
   nearbyDestinations?: string[]
   faqs?: FaqItem[]
+  dayTrips?: DayTrip[]
 
   coordinates?: {
     lat: number

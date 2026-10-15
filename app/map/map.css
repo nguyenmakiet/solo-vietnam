@@ -185,54 +185,43 @@
   height: 26px;
   padding: 0 10px;
 }
-/* Label next to its point (no room centred on it): 10px from the point, which an
-   anchor dot marks (LABEL_OFFSET / ANCHOR_SIZE in MapClient) */
-.map-dest.is-right {
-  transform: translate(10px, -50%);
+/* Label away from its point (no room centred on it): its centre sits (--cx, --cy)
+   from the point, joined to it by a leader line (--len long, at --ang) and an
+   anchor dot on the point (LEADER_* / ANCHOR_SIZE in MapClient). Both are drawn
+   from the label's centre: 50% of the padding box is the centre of the label */
+.map-dest.is-offset {
+  transform: translate(calc(-50% + var(--cx)), calc(-50% + var(--cy)));
 }
-.map-dest.is-left {
-  transform: translate(calc(-100% - 10px), -50%);
-}
-.map-dest.is-above {
-  transform: translate(-50%, calc(-100% - 10px));
-}
-.map-dest.is-below {
-  transform: translate(-50%, 10px);
-}
-.map-dest.is-right::after,
-.map-dest.is-left::after,
-.map-dest.is-above::after,
-.map-dest.is-below::after {
+.map-dest.is-offset::before {
   content: "";
   position: absolute;
-  top: 50%;
+  left: calc(50% - var(--cx));
+  top: calc(50% - var(--cy));
+  width: var(--len);
+  height: 1.5px;
+  margin-top: -0.75px;
+  background: var(--color-teal-ink);
+  transform-origin: 0 50%;
+  transform: rotate(var(--ang));
+}
+.map-dest.is-offset::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - var(--cx) - 5px);
+  top: calc(50% - var(--cy) - 5px);
   width: 10px;
   height: 10px;
-  margin-top: -5px;
   box-sizing: border-box;
   border-radius: 50%;
   background: var(--color-teal-ink);
   border: 2px solid var(--color-paper);
 }
-/* Dot centre on the point: 10px outside the 2px border, minus half the dot */
-.map-dest.is-right::after {
-  left: -17px;
+/* Combined label for tier-1 points on (almost) the same spot: "Da Nang 7 · Hoi An 7" */
+.map-dest.is-full.is-group .map-dest-count::before {
+  content: none;
 }
-.map-dest.is-left::after {
-  right: -17px;
-}
-.map-dest.is-above::after,
-.map-dest.is-below::after {
-  top: auto;
-  left: 50%;
-  margin-top: 0;
-  margin-left: -5px;
-}
-.map-dest.is-above::after {
-  bottom: -17px;
-}
-.map-dest.is-below::after {
-  top: -17px;
+.map-dest-join {
+  color: var(--color-teal-light);
 }
 .map-dest-count {
   font-variant-numeric: tabular-nums;
