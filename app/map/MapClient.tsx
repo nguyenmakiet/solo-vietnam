@@ -311,20 +311,6 @@ export default function MapClient({
       L.control.zoom({ position: "topright" }).addTo(map)
       L.control.attribution({ position: "bottomright", prefix: "© Esri, HERE, Garmin · OSM" }).addTo(map)
 
-      // The basemap tile provider bakes in its own (pre-2025-merger) province boundary
-      // lines, which we can't edit since they're pixels. Overlay the current 34-province
-      // boundaries on top instead - see public/data/README.md for the data source.
-      fetch("/data/vn-provinces-2025.geojson")
-        .then((res) => res.json())
-        .then((geojson) => {
-          if (!mapRef.current) return
-          L.geoJSON(geojson, {
-            style: { weight: 1, fill: false, className: "map-province-boundary" }, // colour in map.css
-            interactive: false,
-          }).addTo(map)
-        })
-        .catch(() => {}) // decorative overlay - fine to silently skip if it fails to load
-
       // Added to the map by the mode effect
       pinsLayerRef.current = L.layerGroup()
       destLayerRef.current = L.layerGroup()
@@ -816,6 +802,38 @@ export default function MapClient({
     map.on("move zoom", update)
     return () => { map.off("move zoom", update) }
   }, [mapReady, peekDest])
+
+  // The basemap tile provider bakes in its own (pre-2025-merger) province boundary
+  // lines, which we can't edit since they're pixels. Overlay the current 34-province
+  // boundaries on top instead - see public/data/README.md for the data source.
+  // Decorative, so it loads after the markers and bubbles are on the map (this
+  // effect runs after the marker and mode effects) once the browser is idle: the
+  // outlines may appear slightly after the markers. setTimeout where there is no
+  // requestIdleCallback (Safari)
+  useEffect(() => {
+    const map = mapRef.current
+    const L = LRef.current
+    if (!mapReady || !map || !L) return
+    let cancelled = false
+    const load = () => {
+      fetch("/data/vn-provinces-2025.geojson")
+        .then((res) => res.json())
+        .then((geojson) => {
+          if (cancelled || !mapRef.current) return
+          L.geoJSON(geojson, {
+            style: { weight: 1, fill: false, className: "map-province-boundary" }, // colour in map.css
+            interactive: false,
+          }).addTo(map)
+        })
+        .catch(() => {}) // decorative overlay - fine to silently skip if it fails to load
+    }
+    if (typeof window.requestIdleCallback === "function") {
+      const handle = window.requestIdleCallback(load, { timeout: 2000 })
+      return () => { cancelled = true; window.cancelIdleCallback(handle) }
+    }
+    const handle = window.setTimeout(load, 300)
+    return () => { cancelled = true; window.clearTimeout(handle) }
+  }, [mapReady])
 
   // Filter: show/hide markers. Only touches markers whose visibility changes,
   // and never rebuilds icons (setIcon recreates the marker's DOM element)
