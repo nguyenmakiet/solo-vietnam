@@ -59,6 +59,7 @@ const mapDestinations: MapDestination[] = destinations.flatMap((d) => {
     lat: d.coordinates.lat,
     lng: d.coordinates.lng,
     priority: d.mapPriority ?? 2,
+    rank: d.mapRank ?? null,
     zoom: d.mapZoom ?? 12,
     count: children.length,
     bounds: [[Math.min(...lats), Math.min(...lngs)], [Math.max(...lats), Math.max(...lngs)]],

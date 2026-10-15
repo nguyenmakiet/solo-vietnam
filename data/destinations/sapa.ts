@@ -161,5 +161,6 @@ export const sapa: Destination = {
     lng: 103.8438,
   },
   mapPriority: 1,
+  mapRank: 6,
   mapZoom: 13,
 }

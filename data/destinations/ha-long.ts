@@ -127,5 +127,6 @@ export const haLong: Destination = {
     lng: 107.08,
   },
   mapPriority: 1,
+  mapRank: 7,
   mapZoom: 12,
 }

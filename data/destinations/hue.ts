@@ -133,5 +133,6 @@ export const hue: Destination = {
     lng: 107.5909,
   },
   mapPriority: 1,
+  mapRank: 9,
   mapZoom: 13,
 }

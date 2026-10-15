@@ -164,6 +164,7 @@ export const haGiangLoop: Destination = {
     lng: 105.05,
   },
   mapPriority: 1,
+  mapRank: 8,
   mapZoom: 11,
 
   // ─── FAQ ─────────────────────────────────────────────────

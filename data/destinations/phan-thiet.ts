@@ -122,5 +122,6 @@ export const phanThiet: Destination = {
     lng: 108.2833,
   },
   mapPriority: 1,
+  mapRank: 4,
   mapZoom: 13,
 }

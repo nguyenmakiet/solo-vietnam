@@ -145,5 +145,6 @@ export const daNang: Destination = {
     lng: 108.2022,
   },
   mapPriority: 1,
+  mapRank: 1,
   mapZoom: 13,
 }

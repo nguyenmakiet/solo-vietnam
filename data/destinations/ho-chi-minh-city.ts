@@ -139,5 +139,6 @@ export const hoChiMinhCity: Destination = {
     lng: 106.7,
   },
   mapPriority: 1,
+  mapRank: 12,
   mapZoom: 13,
 }

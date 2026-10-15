@@ -162,6 +162,9 @@ export type Destination = {
   // Label tier on /map: 1 = name shown at the default (whole-country) zoom,
   // 2 and 3 = name shown only once zoomed in (count-only bubble before that)
   mapPriority?: 1 | 2 | 3
+  // Label rank on /map within tier 1 (1 = placed first, wins label collisions).
+  // Destinations without one rank after all ranked ones, by tier then location count
+  mapRank?: number
   // Max zoom when /map flies to this destination's locations
   mapZoom?: number
 

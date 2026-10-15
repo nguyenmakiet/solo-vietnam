@@ -181,5 +181,6 @@ export const hoiAn: Destination = {
     lng: 108.338,
   },
   mapPriority: 1,
+  mapRank: 2,
   mapZoom: 13,
 }
