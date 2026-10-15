@@ -126,4 +126,6 @@ export const mekongDelta: Destination = {
     lat: 10.0452,
     lng: 105.7469,
   },
+  mapPriority: 2,
+  mapZoom: 9,
 }

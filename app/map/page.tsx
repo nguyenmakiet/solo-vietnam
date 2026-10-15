@@ -1,7 +1,8 @@
 import { activeLocations } from "@/data/all-locations"
+import { destinations } from "@/data/destinations"
 import type { Location } from "@/data/location"
 import { toCoordinate } from "@/lib/coordinates"
-import MapClient, { type MapLocation } from "./MapClient"
+import MapClient, { type MapDestination, type MapLocation } from "./MapClient"
 
 function getLatLng(loc: Location): [number, number] {
   return [toCoordinate(loc.lat), toCoordinate(loc.lng)]
@@ -21,6 +22,13 @@ function popupImageUrl(heroImage: string | undefined): string | null {
   return heroImage.replace("w_1200,h_630,c_fill", "w_600,h_400,c_fill")
 }
 
+// Child locations far from the rest of their destination (Phu Quy is 87 km off
+// Phan Thiet, Tra Su 96 km from Can Tho): left out of the fly-to bounds so the
+// tap lands on the main cluster. They still count and still show as pins.
+const FLY_BOUNDS_OUTLIERS = new Set(["phu-quy-island", "tra-su-cajuput-forest"])
+
+const destinationSlugs = new Set(destinations.map(d => d.slug))
+
 // Built on the server so the client bundle only gets the fields the map renders
 const mapLocations: MapLocation[] = activeLocations.flatMap((loc) => {
   const [lat, lng] = getLatLng(loc)
@@ -34,9 +42,30 @@ const mapLocations: MapLocation[] = activeLocations.flatMap((loc) => {
     type: primaryType(loc),
     province: getProvinceLabel(loc),
     image: popupImageUrl(loc.heroImage),
+    destination: loc.destination && destinationSlugs.has(loc.destination) ? loc.destination : null,
+  }]
+})
+
+const mapDestinations: MapDestination[] = destinations.flatMap((d) => {
+  const children = mapLocations.filter(l => l.destination === d.slug)
+  if (!d.coordinates || children.length === 0) return []
+  const boundsLocs = children.filter(l => !FLY_BOUNDS_OUTLIERS.has(l.slug))
+  const lats = boundsLocs.map(l => l.lat)
+  const lngs = boundsLocs.map(l => l.lng)
+  return [{
+    slug: d.slug,
+    name: d.name,
+    region: d.region,
+    lat: d.coordinates.lat,
+    lng: d.coordinates.lng,
+    priority: d.mapPriority ?? 2,
+    rank: d.mapRank ?? null,
+    zoom: d.mapZoom ?? 12,
+    count: children.length,
+    bounds: [[Math.min(...lats), Math.min(...lngs)], [Math.max(...lats), Math.max(...lngs)]],
   }]
 })
 
 export default function MapPage() {
-  return <MapClient locations={mapLocations} />
+  return <MapClient locations={mapLocations} destinations={mapDestinations} />
 }

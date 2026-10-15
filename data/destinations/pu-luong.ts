@@ -111,9 +111,11 @@ export const puLuong: Destination = {
   nearbyDestinations: ["ninh-binh", "ha-noi"],
 
   coordinates: {
-    lat: 20.42,
-    lng: 105.07,
+    lat: 20.46,
+    lng: 105.18,
   },
+  mapPriority: 2,
+  mapZoom: 11,
 // ─── FAQ ─────────────────────────────────────────────────
   faqs: [
     {

@@ -124,4 +124,7 @@ export const phuQuoc: Destination = {
     lat: 10.2899,
     lng: 103.984,
   },
+  mapPriority: 1,
+  mapRank: 5,
+  mapZoom: 12,
 }

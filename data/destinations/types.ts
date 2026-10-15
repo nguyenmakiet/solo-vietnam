@@ -61,6 +61,18 @@ export type Itinerary = {
   days: ItineraryDay[]
 }
 
+// ─── Day Trip ────────────────────────────────────────────────
+// A side trip from this destination that has no destination of its own
+// (e.g. Ba Na Hills from Da Nang). Rendered as its own section
+export type DayTrip = {
+  title: string                 // section heading: "Day trip: Ba Na Hills"
+  summary: string
+  gettingThere?: TransportOption[]
+  plan?: { stops: string[]; notes?: string } // location slugs in visiting order
+  cost?: string
+  tips?: string[]
+}
+
 // ─── Cost ────────────────────────────────────────────────────
 export type CostRange = {
   budget: string      // "400.000–700.000 VND/ngày"
@@ -152,11 +164,22 @@ export type Destination = {
   transport?: string
   nearbyDestinations?: string[]
   faqs?: FaqItem[]
+  dayTrips?: DayTrip[]
 
   coordinates?: {
     lat: number
     lng: number
   }
+
+  // ── /map destination layer ───────────────────────────────
+  // Label tier on /map: 1 = name shown at the default (whole-country) zoom,
+  // 2 and 3 = name shown only once zoomed in (count-only bubble before that)
+  mapPriority?: 1 | 2 | 3
+  // Label rank on /map within tier 1 (1 = placed first, wins label collisions).
+  // Destinations without one rank after all ranked ones, by tier then location count
+  mapRank?: number
+  // Max zoom when /map flies to this destination's locations
+  mapZoom?: number
 
   // ── Fallback fields ──────────────────────────────────────
   // Dùng tạm khi location data chưa đủ để derive

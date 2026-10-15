@@ -125,6 +125,41 @@ export const daNang: Destination = {
     },
   ],
 
+  dayTrips: [
+    {
+      title: "Day trip: Ba Na Hills",
+      summary:
+        "Ba Na Hills is a mountain resort at 1,487m, about 25km west of Da Nang centre - a former French colonial hill station reinvented as a large theme park complex. It is home to the Golden Bridge, held up by two giant stone hands, and to a cable car that set a world record when it was built. Touristy and expensive, but spectacular on a clear day. Plan a full day.",
+      gettingThere: [
+        {
+          from: "Da Nang",
+          vehicle: "taxi",
+          duration: "45 minutes",
+          cost: "250,000–350,000 VND one way",
+          notes: "No public bus. Take Grab or a private taxi - most hotels can also arrange a shuttle transfer.",
+        },
+        {
+          from: "Hoi An",
+          vehicle: "taxi",
+          duration: "1.5 hours",
+          cost: "400,000–600,000 VND one way",
+          notes: "Many tour operators run combined Ba Na Hills + Hoi An day trips.",
+        },
+      ],
+      plan: {
+        stops: ["ba-na-cable-car", "golden-bridge", "french-village-ba-na"],
+        notes: "Ride the 5.8km cable car up, see the Golden Bridge first before the queues form, then walk through the French Village at around 1,400m. Fantasy Park, an indoor amusement park, suits families. The complex is enormous - allow the whole day.",
+      },
+      cost: "All-inclusive ticket ~1,500,000 VND per person, covering the cable car, Golden Bridge, Fantasy Park and most attractions.",
+      tips: [
+        "Arrive at the 8am opening: fewer crowds and clearer weather than in the afternoon.",
+        "Go in the morning - clouds often roll in by 2pm. From March to August the summit tends to be sunny while Da Nang below is sometimes overcast.",
+        "Buy tickets online to skip the queues and get a small discount.",
+        "Food inside the complex is overpriced - eat before or after.",
+      ],
+    },
+  ],
+
   cost: {
     budget: "400,000–700,000 VND/day",
     midRange: "700,000–1,500,000 VND/day",
@@ -138,10 +173,13 @@ export const daNang: Destination = {
 
   transport: "Grab or motorbike rental. Airport is only 3km from the city centre.",
 
-  nearbyDestinations: ["hoi-an", "hue", "ba-na-hills", "phong-nha-ke-bang"],
+  nearbyDestinations: ["hoi-an", "hue", "phong-nha-ke-bang"],
 
   coordinates: {
     lat: 16.0544,
     lng: 108.2022,
   },
+  mapPriority: 1,
+  mapRank: 1,
+  mapZoom: 13,
 }

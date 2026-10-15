@@ -127,4 +127,7 @@ export const nhaTrang: Destination = {
     lat: 12.2388,
     lng: 109.1967,
   },
+  mapPriority: 1,
+  mapRank: 3,
+  mapZoom: 13,
 }

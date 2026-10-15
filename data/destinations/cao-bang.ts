@@ -113,6 +113,8 @@ export const caoBang: Destination = {
     lat: 22.6657,
     lng: 106.2522,
   },
+  mapPriority: 2,
+  mapZoom: 11,
   // ─── FAQ ─────────────────────────────────────────────────
 
 }

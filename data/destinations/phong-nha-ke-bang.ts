@@ -126,4 +126,6 @@ export const phongNhaKeBang: Destination = {
     lat: 17.5553,
     lng: 106.2833,
   },
+  mapPriority: 2,
+  mapZoom: 12,
 }

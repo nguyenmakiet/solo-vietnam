@@ -146,4 +146,6 @@ export const ninhBinh: Destination = {
     lat: 20.2549,
     lng: 105.9747,
   },
+  mapPriority: 2,
+  mapZoom: 12,
 }

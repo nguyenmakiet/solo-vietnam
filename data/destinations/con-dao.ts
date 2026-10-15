@@ -123,4 +123,6 @@ export const conDao: Destination = {
     lat: 8.6843,
     lng: 106.6061,
   },
+  mapPriority: 2,
+  mapZoom: 12,
 }

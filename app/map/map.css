@@ -152,6 +152,291 @@
   border-radius: 50%;
 }
 
+/* ── DESTINATION BUBBLES (Destinations mode) ──
+   Dark teal fill + cream ring and text: reads as a region label, not a place
+   pin (pins are small mid-teal dots). layoutBubbles() in MapClient sets one of
+   is-full ("Name · 14"), is-compact (count circle) or is-dot. The Leaflet icon
+   is 0x0 at the point; the bubble is centred on it. */
+.map-dest-icon {
+  overflow: visible;
+}
+.map-dest {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  background: var(--color-teal-ink);
+  color: var(--color-paper);
+  border: 2px solid var(--color-paper);
+  border-radius: 999px;
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+.map-dest.is-full {
+  height: 26px;
+  padding: 0 10px;
+}
+/* Label away from its point (no room centred on it): its centre sits (--cx, --cy)
+   from the point, joined to it by a leader line (--len long, at --ang) and an
+   anchor dot on the point (LEADER_* / ANCHOR_SIZE in MapClient). Both are drawn
+   from the label's centre: 50% of the padding box is the centre of the label */
+.map-dest.is-offset {
+  transform: translate(calc(-50% + var(--cx)), calc(-50% + var(--cy)));
+}
+.map-dest.is-offset::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - var(--cx));
+  top: calc(50% - var(--cy));
+  width: var(--len);
+  height: 1.5px;
+  margin-top: -0.75px;
+  background: var(--color-teal-ink);
+  transform-origin: 0 50%;
+  transform: rotate(var(--ang));
+}
+.map-dest.is-offset::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - var(--cx) - 5px);
+  top: calc(50% - var(--cy) - 5px);
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: var(--color-teal-ink);
+  border: 2px solid var(--color-paper);
+}
+/* Combined label for tier-1 points on (almost) the same spot: "Da Nang 7 · Hoi An 7" */
+.map-dest.is-full.is-group .map-dest-count::before {
+  content: none;
+}
+.map-dest-join {
+  color: var(--color-teal-light);
+}
+.map-dest-count {
+  font-variant-numeric: tabular-nums;
+}
+.map-dest.is-full .map-dest-count {
+  color: var(--color-teal-light);
+}
+.map-dest.is-full .map-dest-count::before {
+  content: "·";
+  margin-right: 6px;
+}
+.map-dest.is-compact {
+  width: 24px;
+  height: 24px;
+  font-size: 11px;
+}
+.map-dest.is-dot {
+  width: 12px;
+  height: 12px;
+}
+/* Count circles and dots: invisible 32px tap area around the visible mark
+   (yields to the mark or label under the finger - activateBubble() in MapClient) */
+.map-dest.is-compact::before,
+.map-dest.is-dot::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+  border-radius: 50%;
+}
+/* Point inside a label at this zoom: hidden under it, listed in its tooltip */
+.map-dest.is-tucked {
+  visibility: hidden;
+  pointer-events: none;
+}
+.map-dest.is-compact .map-dest-name,
+.map-dest.is-dot .map-dest-name,
+.map-dest.is-dot .map-dest-count {
+  display: none;
+}
+.leaflet-marker-icon:hover .map-dest {
+  background: color-mix(in srgb, var(--color-teal-ink) 80%, var(--color-teal));
+}
+.map-container .map-dest-icon:focus-visible {
+  outline: none;
+}
+.map-container .map-dest-icon:focus-visible .map-dest {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 2px;
+}
+
+/* Locations outside every destination: small muted dot (Destinations mode) */
+.map-orphan {
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 6px;
+  border-radius: 50%;
+  background: var(--color-ink-2);
+  opacity: 0.55;
+}
+.leaflet-marker-icon:hover .map-orphan {
+  opacity: 0.9;
+}
+.map-orphan--selected {
+  background: var(--color-signal);
+  opacity: 1;
+  outline: 2px solid var(--color-surface);
+}
+
+/* Name tooltip for a count circle or dot: above the point, arrow-free card */
+.map-dest-tip {
+  position: absolute;
+  z-index: 1000;
+  transform: translate(-50%, calc(-100% - 18px));
+  min-width: 150px;
+  max-width: 240px;
+  padding: 10px 40px 10px 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  color: var(--color-ink);
+}
+/* Label with destinations tucked under it: one row each */
+.map-dest-tip-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.map-dest-tip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+}
+.map-dest-tip-row + .map-dest-tip-row {
+  border-top: 1px solid var(--color-line);
+}
+.map-dest-tip-row .map-dest-tip-name,
+.map-dest-tip-row .map-dest-tip-count {
+  display: block;
+}
+.map-dest-tip-row .map-dest-tip-name {
+  font-size: 15px;
+}
+.map-dest-tip-row .map-dest-tip-count {
+  margin: 1px 0 0;
+}
+.map-dest-tip-row .map-dest-tip-go {
+  flex-shrink: 0;
+}
+.map-dest-tip.is-list {
+  width: 240px;
+}
+.map-dest-tip.is-below {
+  transform: translate(-50%, 18px);
+}
+.map-dest-tip-name {
+  font-family: var(--font-serif), "Source Serif 4", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.map-dest-tip-count {
+  margin: 2px 0 8px;
+  font-size: 12px;
+  color: var(--color-ink-2);
+}
+.map-dest-tip-go {
+  min-height: 32px;
+  padding: 0 10px;
+  background: var(--color-teal-ink);
+  color: var(--color-paper);
+  border: none;
+  border-radius: var(--radius-button);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.map-dest-tip-go:hover {
+  background: color-mix(in srgb, var(--color-teal-ink) 80%, var(--color-teal));
+}
+.map-dest-tip-close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  color: var(--color-ink);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.map-dest-tip-go:focus-visible,
+.map-dest-tip-close:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+/* "View {destination} page" after a bubble tap; top left (zoom control is top right) */
+.map-dest-link {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  display: flex;
+  align-items: stretch;
+  max-width: calc(100% - 24px - 46px);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-button);
+}
+.map-dest-link-a {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 0 10px;
+  min-height: 36px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.map-dest-link-a:hover {
+  color: var(--color-signal-text);
+}
+.map-dest-link-close {
+  flex-shrink: 0;
+  width: 36px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--color-line);
+  color: var(--color-ink);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.map-dest-link-a:focus-visible,
+.map-dest-link-close:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
+}
+
 /* ── LEAFLET CONTROLS ── */
 .map-container .leaflet-bar {
   border: 1px solid var(--color-line);
@@ -320,6 +605,72 @@
   padding: 16px 20px 12px;
   border-bottom: 1px solid var(--color-line);
   flex-shrink: 0;
+}
+.map-sidebar-header .map-mode {
+  display: flex;
+  margin-bottom: 14px;
+}
+.map-sidebar-header .map-mode-btn {
+  flex: 1;
+}
+
+/* Region heading in the destination list */
+.map-sidebar-group {
+  padding: 12px 20px 6px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
+}
+/* Same mark as the map bubble */
+.map-sidebar-dest-mark {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--color-teal-ink);
+  box-shadow: 0 0 0 1px var(--color-teal-ink);
+  border: 2px solid var(--color-paper);
+  box-sizing: border-box;
+}
+
+/* ── MODE TOGGLE: Destinations | All places (sidebar on desktop, filter bar on mobile) ── */
+.map-mode {
+  display: inline-flex;
+  flex-shrink: 0;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-button);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+.map-mode-btn {
+  height: 38px;
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  color: var(--color-ink-2);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.map-mode-btn + .map-mode-btn {
+  border-left: 1px solid var(--color-line);
+}
+.map-mode-btn[aria-pressed="true"] {
+  background: var(--color-teal-ink);
+  color: var(--color-paper);
+}
+.map-mode-btn:not([aria-pressed="true"]):hover {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.map-mode-btn:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
 }
 
 .map-sidebar-eyebrow {
@@ -554,9 +905,20 @@
   /* One compact control: [Filter · All locations 249 ▾] or [● Beaches · 45][×] */
   .map-filterbar {
     display: flex;
+    align-items: center;
+    gap: 8px;
     flex-shrink: 0;
     padding: 0 16px 8px;
     border-bottom: 1px solid var(--color-line);
+  }
+  /* Filter button + clear: takes the rest of the row, label truncates first */
+  .map-filter-group {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+  }
+  .map-filter-group .map-filter-btn {
+    flex: 0 1 auto;
   }
   .map-filter-btn {
     display: inline-flex;
@@ -657,6 +1019,15 @@
     height: 40px;
     top: 4px;
     right: 4px;
+  }
+}
+
+/* Narrow phones: the mode toggle shares the row, so the filter button drops
+   "All locations" (inactive) or the count (active) to keep the label readable */
+@media (max-width: 420px) {
+  .map-filter-btn:not(.is-active) .map-filter-btn-label,
+  .map-filter-btn.is-active .map-filter-btn-count {
+    display: none;
   }
 }
 
