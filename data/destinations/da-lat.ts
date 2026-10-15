@@ -129,4 +129,6 @@ export const daLat: Destination = {
     lat: 11.9404,
     lng: 108.4583,
   },
+  mapPriority: 1,
+  mapZoom: 13,
 }

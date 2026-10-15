@@ -160,4 +160,6 @@ export const sapa: Destination = {
     lat: 22.3364,
     lng: 103.8438,
   },
+  mapPriority: 1,
+  mapZoom: 13,
 }

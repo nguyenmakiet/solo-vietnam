@@ -200,4 +200,6 @@ export const haNoi: Destination = {
     lat: 21.0285,
     lng: 105.8542,
   },
+  mapPriority: 1,
+  mapZoom: 13,
 }

@@ -123,7 +123,9 @@ export const haLong: Destination = {
   nearbyDestinations: ["cat-ba", "ha-noi", "ninh-binh"],
 
   coordinates: {
-    lat: 20.9101,
-    lng: 107.1839,
+    lat: 20.95,
+    lng: 107.08,
   },
+  mapPriority: 1,
+  mapZoom: 12,
 }

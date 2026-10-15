@@ -74,6 +74,8 @@ export const baNaHills: Destination = {
     lat: 15.9973,
     lng: 107.9889,
   },
+  mapPriority: 3,
+  mapZoom: 13,
   // ─── FAQ ─────────────────────────────────────────────────
 
 }

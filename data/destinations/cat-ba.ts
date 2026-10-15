@@ -131,6 +131,8 @@ export const catBa: Destination = {
     lat: 20.7271,
     lng: 107.0469,
   },
+  mapPriority: 2,
+  mapZoom: 12,
   // ─── FAQ ─────────────────────────────────────────────────
   faqs: [
     {

@@ -158,6 +158,13 @@ export type Destination = {
     lng: number
   }
 
+  // ── /map destination layer ───────────────────────────────
+  // Label tier on /map: 1 = name shown at the default (whole-country) zoom,
+  // 2 and 3 = name shown only once zoomed in (count-only bubble before that)
+  mapPriority?: 1 | 2 | 3
+  // Max zoom when /map flies to this destination's locations
+  mapZoom?: number
+
   // ── Fallback fields ──────────────────────────────────────
   // Dùng tạm khi location data chưa đủ để derive
   // Tự động bị bỏ qua khi deriveFromLocations() trả về data

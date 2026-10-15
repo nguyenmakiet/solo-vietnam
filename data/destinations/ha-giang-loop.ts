@@ -163,6 +163,8 @@ export const haGiangLoop: Destination = {
     lat: 23.1167,
     lng: 105.05,
   },
+  mapPriority: 1,
+  mapZoom: 11,
 
   // ─── FAQ ─────────────────────────────────────────────────
   faqs: [

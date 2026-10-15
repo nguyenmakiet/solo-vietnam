@@ -135,7 +135,9 @@ export const hoChiMinhCity: Destination = {
   nearbyDestinations: ["mekong-delta", "con-dao", "phu-quoc", "da-lat"],
 
   coordinates: {
-    lat: 10.8231,
-    lng: 106.6297,
+    lat: 10.776,
+    lng: 106.7,
   },
+  mapPriority: 1,
+  mapZoom: 13,
 }

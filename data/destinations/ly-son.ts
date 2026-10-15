@@ -111,4 +111,6 @@ export const lySon: Destination = {
     lat: 15.3794,
     lng: 109.0959,
   },
+  mapPriority: 2,
+  mapZoom: 12,
 }
