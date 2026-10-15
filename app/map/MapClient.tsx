@@ -227,6 +227,11 @@ export default function MapClient({
   peekDestRef.current = peekDest
   // Label slug -> destinations tucked under that label (set by layoutBubbles)
   const tuckedRef = useRef<Map<string, MapDestination[]>>(new Map())
+  // layoutBubbles caches: label sizes by destination slug (or "a+b" for a
+  // combined label), and the last written layout (to skip identical writes)
+  const labelSizeRef = useRef<Map<string, readonly [number, number]>>(new Map())
+  const layoutSignatureRef = useRef<string | null>(null)
+  const layoutViewRef = useRef<string | null>(null)
   // Tooltip anchor in map-container pixels, kept in step with pan and zoom
   const [peekPos, setPeekPos] = useState<{ x: number; y: number; below: boolean } | null>(null)
   // URL params are read after hydration (the page stays static); until then the
@@ -350,10 +355,17 @@ export default function MapClient({
   // other tier-1 point's circle zone and, of those that fit, covers the fewest
   // other points; then count-only; then a small dot. A dot never blocks others.
   // Runs on zoom, resize and the end of a pan (edges).
-  const layoutBubbles = useCallback(() => {
+  const layoutBubbles = useCallback((ev?: { type?: string }) => {
     const map = mapRef.current
     if (!map || modeRef.current !== "destinations") return
     const zoom = map.getZoom()
+    // The moveend that follows a zoomend (and repeated resizes) sees the exact
+    // same view as the last layout: nothing can have changed
+    const center = map.getCenter()
+    const mapSize = map.getSize()
+    const viewKey = `${zoom}|${center.lat}|${center.lng}|${mapSize.x}x${mapSize.y}`
+    if (ev && viewKey === layoutViewRef.current) return
+    layoutViewRef.current = viewKey
     const entries = bubblesRef.current
       .map(b => ({ b, el: b.marker.getElement()?.firstElementChild as HTMLElement | null | undefined }))
       .filter((e): e is { b: BubbleEntry; el: HTMLElement } => !!e.el)
@@ -381,27 +393,28 @@ export default function MapClient({
       .map(d => `<span class="map-dest-name">${escapeHtml(d.name)}</span><span class="map-dest-count">${d.count}</span>`)
       .join(`<span class="map-dest-join" aria-hidden="true">·</span>`)
 
-    // Measure every full label (and each combined label) in one layout pass each
-    entries.forEach(({ b, el }) => {
-      el.className = "map-dest is-full is-center"
-      el.innerHTML = singleHtml(b.d)
-      el.style.removeProperty("--cx")
-      el.style.removeProperty("--cy")
-      el.style.removeProperty("--len")
-      el.style.removeProperty("--ang")
-      const icon = b.marker.getElement()
-      if (icon) icon.tabIndex = 0
-    })
-    const sizes = entries.map(({ el }) => [el.offsetWidth, el.offsetHeight] as const)
+    // Label sizes are cached per destination and per combined label: the text never
+    // changes, so the DOM is measured (one forced reflow per batch) only the first
+    // time, not on every zoom and pan. The cache is cleared when web fonts load
+    const sizeCache = labelSizeRef.current
+    const groupKey = (i: number) => [i, ...(members.get(i) ?? [])].map(j => entries[j].b.d.slug).join("+")
+    // Set when this call wrote to the bubbles (measuring), so the result is written back
+    let domDirty = false
+    const measureBatch = (jobs: { key: string; el: HTMLElement; cls: string; html: string }[]) => {
+      if (jobs.length === 0) return
+      jobs.forEach(({ el, cls, html }) => { el.className = cls; el.innerHTML = html })
+      jobs.forEach(({ key, el }) => sizeCache.set(key, [el.offsetWidth, el.offsetHeight]))
+      domDirty = true
+    }
+    measureBatch(entries.filter(({ b }) => !sizeCache.has(b.d.slug))
+      .map(({ b, el }) => ({ key: b.d.slug, el, cls: "map-dest is-full is-center", html: singleHtml(b.d) })))
+    measureBatch([...members.keys()].filter(i => !sizeCache.has(groupKey(i))).map(i => ({
+      key: groupKey(i), el: entries[i].el, cls: "map-dest is-full is-center is-group",
+      html: groupHtml([entries[i].b.d, ...members.get(i)!.map(j => entries[j].b.d)]),
+    })))
+    const sizes = entries.map(({ b }) => sizeCache.get(b.d.slug)!)
     const groupSizes = new Map<number, readonly [number, number]>()
-    members.forEach((ms, i) => {
-      const el = entries[i].el
-      el.className = "map-dest is-full is-center is-group"
-      el.innerHTML = groupHtml([entries[i].b.d, ...ms.map(j => entries[j].b.d)])
-      groupSizes.set(i, [el.offsetWidth, el.offsetHeight])
-      el.className = "map-dest is-full is-center"
-      el.innerHTML = singleHtml(entries[i].b.d)
-    })
+    members.forEach((_, i) => groupSizes.set(i, sizeCache.get(groupKey(i))!))
 
     type Box = { x1: number; y1: number; x2: number; y2: number }
     // Box of a w x h bubble whose centre is (dx, dy) from the point (plus the gap)
@@ -435,8 +448,9 @@ export default function MapClient({
     // point by a leader line and an anchor dot. Geometry = everything the label
     // occupies (label, anchor dot, line), for collisions and for later labels
     type Placement = { cx: number; cy: number; dist: number; label: Box; geometry: Box[]; len: number; ang: number }
-    const placementsAround = (p: { x: number; y: number }, w: number, h: number): Placement[] => {
-      const out: Placement[] = [{ cx: 0, cy: 0, dist: 0, label: boxAt(p.x, p.y, w, h), geometry: [boxAt(p.x, p.y, w, h)], len: 0, ang: 0 }]
+    // A generator: candidates are built only as far as the search needs them
+    const placementsAround = function* (p: { x: number; y: number }, w: number, h: number): Generator<Placement> {
+      yield { cx: 0, cy: 0, dist: 0, label: boxAt(p.x, p.y, w, h), geometry: [boxAt(p.x, p.y, w, h)], len: 0, ang: 0 }
       for (const dist of LEADER_DISTANCES) {
         for (const [ux, uy] of LEADER_DIRECTIONS) {
           const k = ux !== 0 && uy !== 0 ? Math.SQRT1_2 : 1
@@ -452,10 +466,9 @@ export default function MapClient({
           for (let t = ANCHOR_SIZE / 2 + 2; t < len; t += 4) {
             geometry.push(boxAt(p.x + Math.cos(ang) * t, p.y + Math.sin(ang) * t, 2, 2, 0, 0, 1))
           }
-          out.push({ cx, cy, dist, label, geometry, len, ang })
+          yield { cx, cy, dist, label, geometry, len, ang }
         }
       }
-      return out
     }
 
     type Result = { state: "full" | "compact" | "dot"; chosen: Placement | null; group: number[] }
@@ -475,10 +488,19 @@ export default function MapClient({
         // line, so a name moves away only when it has to; the lowest score wins
         const covered = (box: Box, skip: Set<number>) => points.filter((q, j) => !skip.has(j) &&
           q.x > box.x1 + LABEL_GAP && q.x < box.x2 - LABEL_GAP && q.y > box.y1 + LABEL_GAP && q.y < box.y2 - LABEL_GAP).length
-        const bestPlacement = (w: number, h: number, skip: Set<number>) => placementsAround(p, w, h)
-          .filter(c => labelFits(c.label) && c.geometry.every(g => !hits(g) && !intoTier1Zone(g, skip)))
-          .map(c => ({ c, score: covered(c.label, skip) * 25 + c.dist }))
-          .reduce<{ c: Placement; score: number } | null>((best, x) => (!best || x.score < best.score ? x : best), null)?.c ?? null
+        // Candidates come nearest first and a score is never below the distance,
+        // so the search stops once the distance alone can't beat the best score
+        const bestPlacement = (w: number, h: number, skip: Set<number>) => {
+          let best: Placement | null = null
+          let bestScore = Infinity
+          for (const c of placementsAround(p, w, h)) {
+            if (c.dist >= bestScore) break
+            if (!labelFits(c.label) || !c.geometry.every(g => !hits(g) && !intoTier1Zone(g, skip))) continue
+            const score = covered(c.label, skip) * 25 + c.dist
+            if (score < bestScore) { best = c; bestScore = score }
+          }
+          return best
+        }
 
         let chosen: Placement | null = null
         let group: number[] = []
@@ -526,72 +548,94 @@ export default function MapClient({
     }
     const { results, absorbed } = layout
 
-    entries.forEach(({ b, el }, i) => {
-      if (absorbed.has(i)) {
-        // Named in its leader's combined label: own mark hidden, listed in its tooltip
-        el.className = "map-dest is-dot is-tucked"
-        b.marker.setZIndexOffset(0)
-        const icon = b.marker.getElement()
-        if (icon) icon.tabIndex = -1
-        return
-      }
-      const { state, chosen, group } = results[i]
-      if (chosen) {
-        el.className = `map-dest is-full ${chosen.dist === 0 ? "is-center" : "is-offset"}${group.length ? " is-group" : ""}`
-        if (group.length) el.innerHTML = groupHtml([b.d, ...group.map(j => entries[j].b.d)])
-        if (chosen.dist > 0) {
-          el.style.setProperty("--cx", `${chosen.cx}px`)
-          el.style.setProperty("--cy", `${chosen.cy}px`)
-          el.style.setProperty("--len", `${chosen.len}px`)
-          el.style.setProperty("--ang", `${chosen.ang}rad`)
-        }
-      } else {
-        el.className = `map-dest is-${state}`
-      }
-      // Count circles and dots stack above labels so they are never hidden (their
-      // padding yields to the mark or label under the finger - see activateBubble()),
-      // then by rank, so where two 32px tap areas overlap the higher-ranked
-      // destination wins. Leaflet adds the marker's pixel y to this offset, hence
-      // the large steps
-      b.marker.setZIndexOffset((state === "full" ? 0 : 1_000_000) + (entries.length - i) * 10_000)
+    // Final state of every bubble, computed without reading the DOM: label rects
+    // and mark sizes come from the plan, in map-container pixels
+    const labelRects = entries.map((_, i) => {
+      const c = results[i].chosen
+      if (!c) return null
+      const [w, h] = results[i].group.length ? groupSizes.get(i)! : sizes[i]
+      const x = points[i].x + c.cx, y = points[i].y + c.cy
+      return { d: entries[i].b.d, x1: x - w / 2, y1: y - h / 2, x2: x + w / 2, y2: y + h / 2 }
     })
-
-    // A tier 2/3 count circle or dot whose point still falls inside a label (the
-    // cluster is too tight at this zoom) is tucked under that label instead of
-    // covering its text: hidden, and listed in the label's tooltip (see activateBubble())
-    const labels = entries
-      .filter(({ el }) => el.classList.contains("is-full"))
-      .map(({ b, el }) => ({ d: b.d, r: el.getBoundingClientRect() }))
     const tucked = new Map<string, MapDestination[]>()
     members.forEach((ms, i) => {
       const named = ms.filter(j => absorbed.has(j)).map(j => entries[j].b.d)
       if (named.length) tucked.set(entries[i].b.d.slug, named)
     })
-    entries.forEach(({ b, el }, i) => {
-      if (el.classList.contains("is-full") || b.d.priority === 1) return
-      const x = container.left + points[i].x
-      const y = container.top + points[i].y
-      const host = labels.find(({ r }) => x > r.left && x < r.right && y > r.top && y < r.bottom)
-      el.classList.toggle("is-tucked", !!host)
-      const icon = b.marker.getElement()
-      if (icon) icon.tabIndex = host ? -1 : 0
+    // A tier 2/3 count circle or dot whose point still falls inside a label (the
+    // cluster is too tight at this zoom) is tucked under that label instead of
+    // covering its text: hidden, and listed in the label's tooltip (see activateBubble())
+    const tuckedUnder = entries.map(({ b }, i) => {
+      if (results[i].chosen || absorbed.has(i) || b.d.priority === 1) return false
+      const { x, y } = points[i]
+      const host = labelRects.find(r => r !== null && x > r.x1 && x < r.x2 && y > r.y1 && y < r.y2)
       if (host) tucked.set(host.d.slug, [...(tucked.get(host.d.slug) ?? []), b.d])
+      return !!host
     })
     // Two marks almost on the same spot (Da Nang and Hoi An are ~5px apart at
     // the country view): the lower-ranked one stays visible where it shows, and
     // is also listed in the tooltip of the higher-ranked mark covering it
-    const marks = entries
-      .map(({ b, el }, i) => ({ d: b.d, el, i }))
-      .filter(({ el }) => !el.classList.contains("is-full") && !el.classList.contains("is-tucked"))
-    marks.forEach(({ d, i }, k) => {
-      const x = container.left + points[i].x
-      const y = container.top + points[i].y
-      // Covered = its centre within the host mark's radius plus 3px
-      const host = marks.slice(0, k).find(({ el }) => {
-        const r = el.getBoundingClientRect()
-        return Math.hypot(x - (r.left + r.width / 2), y - (r.top + r.height / 2)) < r.width / 2 + 3
+    // (covered = its centre within the host mark's radius plus 3px)
+    const marks = entries.map((_, i) => i)
+      .filter(i => !results[i].chosen && !absorbed.has(i) && !tuckedUnder[i])
+    marks.forEach((i, k) => {
+      const host = marks.slice(0, k).find(j => {
+        const size = results[j].state === "compact" ? COMPACT_SIZE : DOT_SIZE
+        return Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y) < size / 2 + 3
       })
-      if (host) tucked.set(host.d.slug, [...(tucked.get(host.d.slug) ?? []), d])
+      if (host !== undefined) {
+        const hd = entries[host].b.d
+        tucked.set(hd.slug, [...(tucked.get(hd.slug) ?? []), entries[i].b.d])
+      }
+    })
+    tuckedRef.current = tucked
+
+    // Same result as the last write (a pan that moves no label, or the moveend
+    // that follows a zoomend): nothing to write. Labels sit relative to their
+    // marker, so an unchanged state stays correct after the map moves
+    const states = entries.map(({ b }, i) => {
+      if (absorbed.has(i)) return { cls: "map-dest is-dot is-tucked", html: null as string | null, vars: null as Placement | null, z: 0, tab: -1 }
+      const { state, chosen, group } = results[i]
+      // Count circles and dots stack above labels so they are never hidden (their
+      // padding yields to the mark or label under the finger - see activateBubble()),
+      // then by rank, so where two 32px tap areas overlap the higher-ranked
+      // destination wins. Leaflet adds the marker's pixel y to this offset, hence
+      // the large steps
+      const z = (state === "full" ? 0 : 1_000_000) + (entries.length - i) * 10_000
+      if (chosen) {
+        return {
+          cls: `map-dest is-full ${chosen.dist === 0 ? "is-center" : "is-offset"}${group.length ? " is-group" : ""}`,
+          html: group.length ? groupHtml([b.d, ...group.map(j => entries[j].b.d)]) : singleHtml(b.d),
+          vars: chosen.dist > 0 ? chosen : null, z, tab: 0,
+        }
+      }
+      const cls = `map-dest is-${state}${tuckedUnder[i] ? " is-tucked" : ""}`
+      return { cls, html: singleHtml(b.d), vars: null, z, tab: tuckedUnder[i] ? -1 : 0 }
+    })
+    const signature = JSON.stringify(states.map(st => [st.cls, st.html, st.vars && [st.vars.cx, st.vars.cy], st.z, st.tab]))
+    // Direct calls (mode switch, new markers) always write: Leaflet rebuilds the
+    // bubble elements when their layer is added back
+    if (ev && !domDirty && signature === layoutSignatureRef.current) return
+    layoutSignatureRef.current = signature
+
+    entries.forEach(({ b, el }, i) => {
+      const st = states[i]
+      el.className = st.cls
+      if (st.html !== null && el.innerHTML !== st.html) el.innerHTML = st.html
+      if (st.vars) {
+        el.style.setProperty("--cx", `${st.vars.cx}px`)
+        el.style.setProperty("--cy", `${st.vars.cy}px`)
+        el.style.setProperty("--len", `${st.vars.len}px`)
+        el.style.setProperty("--ang", `${st.vars.ang}rad`)
+      } else {
+        el.style.removeProperty("--cx")
+        el.style.removeProperty("--cy")
+        el.style.removeProperty("--len")
+        el.style.removeProperty("--ang")
+      }
+      b.marker.setZIndexOffset(st.z)
+      const icon = b.marker.getElement()
+      if (icon) icon.tabIndex = st.tab
     })
     tuckedRef.current = tucked
   }, [])
@@ -741,7 +785,17 @@ export default function MapClient({
     const map = mapRef.current
     if (!mapReady || !map) return
     map.on("zoomend moveend resize", layoutBubbles)
-    return () => { map.off("zoomend moveend resize", layoutBubbles) }
+    // Label sizes were measured with whatever font was ready; measure again once
+    // the web fonts have loaded
+    let live = true
+    const onFonts = () => { if (!live) return; labelSizeRef.current.clear(); layoutBubbles() }
+    if (document.fonts && document.fonts.status !== "loaded") document.fonts.ready.then(onFonts)
+    document.fonts?.addEventListener("loadingdone", onFonts)
+    return () => {
+      live = false
+      map.off("zoomend moveend resize", layoutBubbles)
+      document.fonts?.removeEventListener("loadingdone", onFonts)
+    }
   }, [mapReady, layoutBubbles])
 
   // Destination tooltip follows its point while the map pans or zooms
