@@ -174,7 +174,7 @@ export const hoiAn: Destination = {
 
   transport: "Bicycle rental is the best way around - flat terrain, short distances, most guesthouses provide free bikes. Walking works fine in the Old Town.",
 
-  nearbyDestinations: ["da-nang", "hue", "ba-na-hills"],
+  nearbyDestinations: ["da-nang", "hue"],
 
   coordinates: {
     lat: 15.8801,

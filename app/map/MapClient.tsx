@@ -57,6 +57,10 @@ const VIETNAM_BOUNDS: [[number, number], [number, number]] = [[8.5, 102.2], [23.
 const LABEL_MIN_ZOOM: Record<MapDestination["priority"], number> = { 1: 0, 2: 7, 3: 9 }
 // Bubble sizes (px) for the collision check; full labels are measured
 const COMPACT_SIZE = 24
+const DOT_SIZE = 12
+// Room each tier-1 point keeps free of other labels and count circles: its dot.
+// (Its full count circle, 24px, costs about two names at the default zoom)
+const TIER1_ZONE = DOT_SIZE
 const LABEL_GAP = 4
 // Side labels: distance from the point to the label edge, and the anchor dot
 // marking the point (keep in sync with .map-dest.is-right / .is-left in map.css)
@@ -337,9 +341,10 @@ export default function MapClient({
   // tier and location count). Each takes the first placement that fits without touching an
   // already placed bubble: full label centred on its point, then next to it (right,
   // left, above, below - the sea and the Gulf are mostly empty), if its
-  // tier allows a name at this zoom, it stays inside the map and, of those that
-  // fit, covers the fewest other points; then count-only; then a small dot. A dot
-  // never blocks others. Runs on zoom, resize and the end of a pan (edges).
+  // tier allows a name at this zoom, it stays inside the map, stays clear of every
+  // other tier-1 point's circle zone and, of those that fit, covers the fewest
+  // other points; then count-only; then a small dot. A dot never blocks others.
+  // Runs on zoom, resize and the end of a pan (edges).
   const layoutBubbles = useCallback(() => {
     const map = mapRef.current
     if (!map || modeRef.current !== "destinations") return
@@ -359,7 +364,8 @@ export default function MapClient({
       x1: x + dx - w / 2 - LABEL_GAP, y1: y + dy - h / 2 - LABEL_GAP,
       x2: x + dx + w / 2 + LABEL_GAP, y2: y + dy + h / 2 + LABEL_GAP,
     })
-    const hits = (a: Box) => placed.some(b => a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1)
+    const overlaps = (a: Box, b: Box) => a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1
+    const hits = (a: Box) => placed.some(b => overlaps(a, b))
     // Names must stay inside the map and clear of the zoom buttons (a point near
     // the edge falls back to its count circle until panned into view)
     const size = map.getSize()
@@ -370,6 +376,13 @@ export default function MapClient({
         a.y1 < zoomCtl.bottom - container.top && a.y2 > zoomCtl.top - container.top)
 
     const points = entries.map(({ b }) => map.latLngToContainerPoint([b.d.lat, b.d.lng]))
+    // Every tier-1 point keeps the room for its own dot: no label or count circle
+    // may reach into another tier-1 point's zone, so a tier-1 destination is
+    // never hidden under one and always gets at least a dot. Only tier 2/3
+    // points (and orphan dots) can end up under a label
+    const tier1Zones = entries.map(({ b }, j) =>
+      b.d.priority === 1 ? boxAt(points[j].x, points[j].y, TIER1_ZONE, TIER1_ZONE) : null)
+    const intoTier1Zone = (box: Box, i: number) => tier1Zones.some((z, j) => z !== null && j !== i && overlaps(box, z))
 
     entries.forEach(({ b, el }, i) => {
       const p = points[i]
@@ -397,33 +410,35 @@ export default function MapClient({
       const covered = (box: Box) => points.filter((q, j) => j !== i &&
         q.x > box.x1 + LABEL_GAP && q.x < box.x2 - LABEL_GAP && q.y > box.y1 + LABEL_GAP && q.y < box.y2 - LABEL_GAP).length
       const bestFull = fullCandidates
-        .filter(c => !hits(c.box) && labelFits(c.box))
+        .filter(c => !hits(c.box) && labelFits(c.box) && !intoTier1Zone(c.box, i))
         .map(c => ({ c, n: covered(c.box) }))
         .reduce<{ c: { cls: string; box: Box }; n: number } | null>((best, x) => (!best || x.n < best.n ? x : best), null)
       if (bestFull) candidates.push(bestFull.c)
-      candidates.push({ cls: "is-compact", box: boxAt(p.x, p.y, COMPACT_SIZE, COMPACT_SIZE) })
+      // A count circle may not cover another tier-1 point either
+      const compact = boxAt(p.x, p.y, COMPACT_SIZE, COMPACT_SIZE)
+      if (!intoTier1Zone(compact, i)) candidates.push({ cls: "is-compact", box: compact })
       const fit = candidates.find(c => !hits(c.box))
       if (fit) placed.push(fit.box)
       const cls = fit?.cls ?? "is-dot"
       el.className = `map-dest ${cls}`
       const state = cls.split(" ")[0].slice(3)
       // Count circles and dots stack above labels so they are never hidden (their
-      // padding yields to a label underneath - see activate() in the marker effect),
+      // padding yields to the mark or label under the finger - see activateBubble()),
       // then by rank, so where two 32px tap areas overlap the higher-ranked
       // destination wins. Leaflet adds the marker's pixel y to this offset, hence
       // the large steps
       b.marker.setZIndexOffset((state === "full" ? 0 : 1_000_000) + (entries.length - i) * 10_000)
     })
 
-    // A count circle or dot whose point still falls inside a label (the cluster
-    // is too tight at this zoom) is tucked under that label instead of covering
-    // its text: hidden, and listed in the label's tooltip (see activate())
+    // A tier 2/3 count circle or dot whose point still falls inside a label (the
+    // cluster is too tight at this zoom) is tucked under that label instead of
+    // covering its text: hidden, and listed in the label's tooltip (see activateBubble())
     const labels = entries
       .filter(({ el }) => el.classList.contains("is-full"))
       .map(({ b, el }) => ({ d: b.d, r: el.getBoundingClientRect() }))
     const tucked = new Map<string, MapDestination[]>()
     entries.forEach(({ b, el }, i) => {
-      if (el.classList.contains("is-full")) return
+      if (el.classList.contains("is-full") || b.d.priority === 1) return
       const x = container.left + points[i].x
       const y = container.top + points[i].y
       const host = labels.find(({ r }) => x > r.left && x < r.right && y > r.top && y < r.bottom)
@@ -431,6 +446,22 @@ export default function MapClient({
       const icon = b.marker.getElement()
       if (icon) icon.tabIndex = host ? -1 : 0
       if (host) tucked.set(host.d.slug, [...(tucked.get(host.d.slug) ?? []), b.d])
+    })
+    // Two marks almost on the same spot (Da Nang and Hoi An are ~5px apart at
+    // the country view): the lower-ranked one stays visible where it shows, and
+    // is also listed in the tooltip of the higher-ranked mark covering it
+    const marks = entries
+      .map(({ b, el }, i) => ({ d: b.d, el, i }))
+      .filter(({ el }) => !el.classList.contains("is-full") && !el.classList.contains("is-tucked"))
+    marks.forEach(({ d, i }, k) => {
+      const x = container.left + points[i].x
+      const y = container.top + points[i].y
+      // Covered = its centre within the host mark's radius plus 3px
+      const host = marks.slice(0, k).find(({ el }) => {
+        const r = el.getBoundingClientRect()
+        return Math.hypot(x - (r.left + r.width / 2), y - (r.top + r.height / 2)) < r.width / 2 + 3
+      })
+      if (host) tucked.set(host.d.slug, [...(tucked.get(host.d.slug) ?? []), d])
     })
     tuckedRef.current = tucked
   }, [])
@@ -509,61 +540,57 @@ export default function MapClient({
     // the bigger destination
     const ranked = [...destinations].sort((a, b) =>
       (a.rank ?? Infinity) - (b.rank ?? Infinity) || a.priority - b.priority || b.count - a.count)
-    ranked.forEach((d) => {
-      // A labelled bubble flies straight away; a count circle or dot (it lost the
-      // label collision) first shows its name in a tooltip, and a second tap flies.
-      // pt = tap position (absent for keyboard)
-      const activate = (pt?: { x: number; y: number }) => {
-        const el = marker.getElement()?.firstElementChild
-        if (!el) return
-        const again = peekDestRef.current?.anchor.slug === d.slug
-        if (el.classList.contains("is-full")) {
-          const tucked = tuckedRef.current.get(d.slug)
-          if (!tucked?.length || again) openDestination(d)
-          else setPeekDest({ anchor: d, items: [d, ...tucked] })
-          return
-        }
-        // Only the visible mark belongs to this bubble: a tap in its invisible
-        // 32px padding that lands on a label underneath opens that label
-        if (pt) {
-          const r = el.getBoundingClientRect()
-          const dist = Math.hypot(pt.x - (r.left + r.width / 2), pt.y - (r.top + r.height / 2))
-          if (dist > r.width / 2 + 2) {
-            const label = bubblesRef.current.find((o) => {
-              const lr = o.marker.getElement()?.firstElementChild
-              if (!lr?.classList.contains("is-full")) return false
-              const box = lr.getBoundingClientRect()
-              return pt.x >= box.left && pt.x <= box.right && pt.y >= box.top && pt.y <= box.bottom
-            })
-            if (label) {
-              // Same as tapping the label itself
-              const tucked = tuckedRef.current.get(label.d.slug)
-              if (!tucked?.length || peekDestRef.current?.anchor.slug === label.d.slug) openDestination(label.d)
-              else setPeekDest({ anchor: label.d, items: [label.d, ...tucked] })
-              return
-            }
+    // Tap or Enter on a bubble. A label flies straight away, unless points are
+    // listed under it (tooltip first); a count circle or dot first shows its
+    // tooltip. A second tap on the same bubble flies. pt = tap position (absent
+    // for keyboard)
+    const activateBubble = (entry: BubbleEntry, pt?: { x: number; y: number }) => {
+      const { d } = entry
+      const el = entry.marker.getElement()?.firstElementChild
+      if (!el) return
+      // Only a bubble's visible mark is its own: a tap in a count circle's or
+      // dot's invisible 32px padding goes to the mark or label under the finger
+      // (marks are drawn above labels, so they come first; then by rank)
+      if (pt && !el.classList.contains("is-full")) {
+        const r = el.getBoundingClientRect()
+        if (Math.hypot(pt.x - (r.left + r.width / 2), pt.y - (r.top + r.height / 2)) > r.width / 2 + 2) {
+          const under = (o: BubbleEntry) => {
+            const e = o.marker.getElement()?.firstElementChild
+            if (!e || e.classList.contains("is-tucked")) return null
+            const box = e.getBoundingClientRect()
+            return pt.x >= box.left && pt.x <= box.right && pt.y >= box.top && pt.y <= box.bottom ? e : null
           }
+          const others = bubblesRef.current.filter(o => o !== entry)
+          const target = others.find(o => under(o) && !under(o)?.classList.contains("is-full")) ?? others.find(o => under(o))
+          if (target) { activateBubble(target); return }
         }
-        if (again) openDestination(d)
-        else setPeekDest({ anchor: d, items: [d] })
       }
+      const items = [d, ...(tuckedRef.current.get(d.slug) ?? [])]
+      const again = peekDestRef.current?.anchor.slug === d.slug
+      if (again || (el.classList.contains("is-full") && items.length === 1)) openDestination(d)
+      else setPeekDest({ anchor: d, items })
+    }
+
+    ranked.forEach((d) => {
       const marker = L.marker([d.lat, d.lng], {
         icon: bubbleIcon(L, d),
         title: `${d.name}: ${d.count} ${d.count === 1 ? "location" : "locations"}`,
       })
+      const entry: BubbleEntry = { marker, d }
+      marker
         .on("click", (e: import("leaflet").LeafletMouseEvent) => {
           e.originalEvent.stopPropagation()
-          activate({ x: e.originalEvent.clientX, y: e.originalEvent.clientY })
+          activateBubble(entry, { x: e.originalEvent.clientX, y: e.originalEvent.clientY })
         })
         .on("keypress", (e: import("leaflet").LeafletKeyboardEvent) => {
           const key = e.originalEvent.key
           if (key === "Enter" || key === " ") {
             e.originalEvent.preventDefault()
-            activate()
+            activateBubble(entry)
           }
         })
       destLayer.addLayer(marker)
-      bubblesRef.current.push({ marker, d })
+      bubblesRef.current.push(entry)
     })
 
     layoutBubbles()

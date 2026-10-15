@@ -6,7 +6,7 @@ export const goldenBridge: Location = {
   name: "Golden Bridge",
   updatedAt: "2026-10-06",
   provinces: ["da-nang"],
-  destination: "ba-na-hills",
+  destination: "da-nang",
   lat: 15.994957886478177,
   lng: 107.996595959818,
   address: "Bà Nà Hills, Hoà Ninh, Hoà Vang, Đà Nẵng",

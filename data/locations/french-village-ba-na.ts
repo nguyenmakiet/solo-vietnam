@@ -6,7 +6,7 @@ export const frenchVillageBaNa: Location = {
   name: "French Village",
   updatedAt: "2026-10-06",
   provinces: ["da-nang"],
-  destination: "ba-na-hills",
+  destination: "da-nang",
   lat: 15.997655145396397,
   lng: 107.98932655723252,
   address: "Bà Nà Hills, Hoà Ninh, Hoà Vang, Đà Nẵng",

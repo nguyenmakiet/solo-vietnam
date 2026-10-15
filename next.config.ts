@@ -34,6 +34,12 @@ destination: "/destinations/ho-chi-minh-city",
 permanent: true,
 },
 {
+// Ba Na Hills merged into Da Nang (its locations moved there)
+source: "/destinations/ba-na-hills",
+destination: "/destinations/da-nang",
+permanent: true,
+},
+{
 source: "/destinations/thai-nguyen",
 destination: "/provinces/thai-nguyen",
 permanent: true,

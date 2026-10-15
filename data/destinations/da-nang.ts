@@ -138,7 +138,7 @@ export const daNang: Destination = {
 
   transport: "Grab or motorbike rental. Airport is only 3km from the city centre.",
 
-  nearbyDestinations: ["hoi-an", "hue", "ba-na-hills", "phong-nha-ke-bang"],
+  nearbyDestinations: ["hoi-an", "hue", "phong-nha-ke-bang"],
 
   coordinates: {
     lat: 16.0544,

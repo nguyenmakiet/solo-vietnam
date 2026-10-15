@@ -9,7 +9,6 @@ import {
   WhatToDo,
 } from "./types"
 
-import { baNaHills } from "./ba-na-hills"
 import { caoBang } from "./cao-bang"
 import { catBa } from "./cat-ba"
 import { conDao } from "./con-dao"
@@ -35,7 +34,6 @@ export type { Destination, DerivedDestinationData, Region }
 export { EXPERIENCE_GROUP_CONFIG }
 
 export const destinations: Destination[] = [
-  baNaHills,
   caoBang,
   catBa,
   conDao,

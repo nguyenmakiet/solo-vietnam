@@ -254,7 +254,7 @@
   height: 12px;
 }
 /* Count circles and dots: invisible 32px tap area around the visible mark
-   (yields to a label underneath - activate() in MapClient) */
+   (yields to the mark or label under the finger - activateBubble() in MapClient) */
 .map-dest.is-compact::before,
 .map-dest.is-dot::before {
   content: "";
