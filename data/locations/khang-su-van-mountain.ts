@@ -9,7 +9,7 @@ export const khangSuVanMountain: Location = {
   destination: "",
   lat: 22.752944,
   lng: 103.439898,
-  address: "Sì Lở Lầu, Lai Châu (formerly Pa Vây Sử commune, Phong Thổ district)",
+  address: "Sì Lở Lầu, Lai Châu (formerly Pa Vây Sử commune, Phong Thổ district, Lai Châu)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography"],

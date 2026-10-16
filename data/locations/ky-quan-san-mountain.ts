@@ -9,7 +9,7 @@ export const kyQuanSanMountain: Location = {
   destination: "",
   lat: 22.506922,
   lng: 103.587378,
-  address: "Dền Sáng, Lào Cai (formerly Sàng Ma Sáo commune, Bát Xát district) / Sin Suối Hồ, Lai Châu",
+  address: "Dền Sáng, Lào Cai / Sin Suối Hồ, Lai Châu (formerly Sàng Ma Sáo commune, Bát Xát district, Lào Cai / Sin Suối Hồ commune, Phong Thổ district, Lai Châu)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography"],

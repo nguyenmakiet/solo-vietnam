@@ -9,7 +9,7 @@ export const nguChiSonMountain: Location = {
   destination: "",
   lat: 22.409208,
   lng: 103.74172,
-  address: "Ngũ Chỉ Sơn, Lào Cai (formerly Tả Giàng Phình, Sa Pa) / Bình Lư, Lai Châu (formerly Sơn Bình, Tam Đường)",
+  address: "Ngũ Chỉ Sơn, Lào Cai / Bình Lư, Lai Châu (formerly Tả Giàng Phình, Sa Pa, Lào Cai / Sơn Bình commune, Tam Đường district, Lai Châu)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography"],

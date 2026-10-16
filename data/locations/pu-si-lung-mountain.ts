@@ -9,7 +9,7 @@ export const puSiLungMountain: Location = {
   destination: "",
   lat: 22.625884,
   lng: 102.787515,
-  address: "Bum Nưa, Lai Châu (formerly Pa Vệ Sử commune, Mường Tè district)",
+  address: "Bum Nưa, Lai Châu (formerly Pa Vệ Sử commune, Mường Tè district, Lai Châu)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping"],

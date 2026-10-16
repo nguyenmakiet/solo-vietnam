@@ -9,7 +9,7 @@ export const nhiuCoSanMountain: Location = {
   destination: "",
   lat: 22.584233,
   lng: 103.583676,
-  address: "Nhìu Cồ San village, Dền Sáng, Lào Cai (Bát Xát area)",
+  address: "Nhìu Cồ San village, Dền Sáng, Lào Cai (formerly Bát Xát district, Lào Cai)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography"],

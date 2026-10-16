@@ -9,7 +9,7 @@ export const puTaLengMountain: Location = {
   destination: "",
   lat: 22.422453,
   lng: 103.603583,
-  address: "Tả Lèng, Lai Châu (formerly Tả Lèng, Hồ Thầu and Giang Ma communes, Tam Đường district)",
+  address: "Tả Lèng, Lai Châu (formerly Tả Lèng, Hồ Thầu and Giang Ma communes, Tam Đường district, Lai Châu)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography"],

@@ -9,7 +9,7 @@ export const chungNhiaVuMountain: Location = {
   destination: "",
   lat: 22.6131,
   lng: 103.503783,
-  address: "Sin Suối Hồ, Lai Châu (formerly Nậm Xe commune, Phong Thổ district)",
+  address: "Sin Suối Hồ, Lai Châu (formerly Nậm Xe commune, Phong Thổ district, Lai Châu)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping"],

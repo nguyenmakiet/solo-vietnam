@@ -9,7 +9,7 @@ export const poMaLungMountain: Location = {
   destination: "",
   lat: 22.613173,
   lng: 103.50261,
-  address: "Nà Đoong village, Khổng Lào, Lai Châu (formerly Bản Lang commune, Phong Thổ district)",
+  address: "Nà Đoong village, Khổng Lào, Lai Châu (formerly Bản Lang commune, Phong Thổ district, Lai Châu)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping"],
