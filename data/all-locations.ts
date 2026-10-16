@@ -57,9 +57,13 @@ import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
 import { cuChiTunnels } from "@/data/locations/cu-chi-tunnels"
+import { cuLaoCham } from "@/data/locations/cu-lao-cham"
 import { cuMiBeach } from "@/data/locations/cu-mi-beach"
 import { cuaDaiBeach } from "@/data/locations/cua-dai-beach"
+import { cuaLoBeach } from "@/data/locations/cua-lo-beach"
 import { cuaTuStream } from "@/data/locations/cua-tu-stream"
+import { cuaTungBeach } from "@/data/locations/cua-tung-beach"
+import { cuaVietBeach } from "@/data/locations/cua-viet-beach"
 import { daPloaStream } from "@/data/locations/da-ploa-stream"
 import { dalatRailwayStation } from "@/data/locations/dalat-railway-station"
 import { damTrauBeach } from "@/data/locations/dam-trau-beach"
@@ -74,6 +78,7 @@ import { donVillage } from "@/data/locations/don-village"
 import { dongVanMarket } from "@/data/locations/dong-van-market"
 import { dongVanOldTown } from "@/data/locations/dong-van-old-town"
 import { doQuyenWaterfall } from "@/data/locations/do-quyen-waterfall"
+import { doSonBeach } from "@/data/locations/do-son-beach"
 import { dragonBridge } from "@/data/locations/dragon-bridge"
 import { drayNurDraySapWaterfalls } from "@/data/locations/dray-nur-dray-sap-waterfalls"
 import { duGiaVillage } from "@/data/locations/du-gia-village"
@@ -89,6 +94,8 @@ import { fansipan } from "@/data/locations/fansipan"
 import { frenchVillageBaNa } from "@/data/locations/french-village-ba-na"
 import { giengTienPeak } from "@/data/locations/gieng-tien-peak"
 import { goldenBridge } from "@/data/locations/golden-bridge"
+import { nhaTrangBeach } from "@/data/locations/nha-trang-beach"
+import { nhatLeBeach } from "@/data/locations/nhat-le-beach"
 import { pirateIslands } from "@/data/locations/pirate-islands"
 import { haGiangCity } from "@/data/locations/ha-giang-city"
 import { haLongBay } from "@/data/locations/ha-long-bay"
@@ -204,6 +211,7 @@ import { phuQuyIsland } from "@/data/locations/phu-quy-island"
 import { plateRockReef } from "@/data/locations/plate-rock-reef"
 import { poMaLungMountain } from "@/data/locations/po-ma-lung-mountain"
 import { poNagarChamTowers } from "@/data/locations/po-nagar-cham-towers"
+import { poSahInuChamTowers } from "@/data/locations/po-sah-inu-cham-towers"
 import { pongourWaterfall } from "@/data/locations/pongour-waterfall"
 import { puSiLungMountain } from "@/data/locations/pu-si-lung-mountain"
 import { puTaLengMountain } from "@/data/locations/pu-ta-leng-mountain"
@@ -216,6 +224,7 @@ import { radioTowerCatBa } from "@/data/locations/radio-tower-cat-ba"
 import { redSandDunes } from "@/data/locations/red-sand-dunes"
 import { saigonCentralPostOffice } from "@/data/locations/saigon-central-post-office"
 import { saViCape } from "@/data/locations/sa-vi-cape"
+import { samSonBeach } from "@/data/locations/sam-son-beach"
 import { saoBeach } from "@/data/locations/sao-beach"
 import { sixSensesBeach } from "@/data/locations/six-senses-beach"
 import { sonDoongCave } from "@/data/locations/son-doong-cave"
@@ -237,6 +246,7 @@ import { tayPhuongPagoda } from "@/data/locations/tay-phuong-pagoda"
 import { templeOfLiterature } from "@/data/locations/temple-of-literature"
 import { tamCoc } from "@/data/locations/tam-coc"
 import { thamMaPass } from "@/data/locations/tham-ma-pass"
+import { thienCamBeach } from "@/data/locations/thien-cam-beach"
 import { thuongPhuocBorderGate } from "@/data/locations/thuong-phuoc-border-gate"
 import { thangHenLake } from "@/data/locations/thang-hen-lake"
 import { thienCungCave } from "@/data/locations/thien-cung-cave"
@@ -333,9 +343,13 @@ export const allLocations: Location[] = [
   conDaoPrison,
   crazyHouse,
   cuChiTunnels,
+  cuLaoCham,
   cuMiBeach,
   cuaDaiBeach,
+  cuaLoBeach,
   cuaTuStream,
+  cuaTungBeach,
+  cuaVietBeach,
   daPloaStream,
   dalatRailwayStation,
   damTrauBeach,
@@ -350,6 +364,7 @@ export const allLocations: Location[] = [
   dongVanMarket,
   dongVanOldTown,
   doQuyenWaterfall,
+  doSonBeach,
   dragonBridge,
   drayNurDraySapWaterfalls,
   duGiaVillage,
@@ -454,8 +469,10 @@ export const allLocations: Location[] = [
   nguChiSonMountain,
   nguomNgaoCave,
   nhaPhaPrison,
+  nhaTrangBeach,
   nhanTower,
   nhatBeach,
+  nhatLeBeach,
   nhiuCoSanMountain,
   nhoQueRiver,
   notreDameCathedralSaigon,
@@ -480,6 +497,7 @@ export const allLocations: Location[] = [
   plateRockReef,
   poMaLungMountain,
   poNagarChamTowers,
+  poSahInuChamTowers,
   pongourWaterfall,
   puSiLungMountain,
   puTaLengMountain,
@@ -492,6 +510,7 @@ export const allLocations: Location[] = [
   redSandDunes,
   saigonCentralPostOffice,
   saViCape,
+  samSonBeach,
   saoBeach,
   sixSensesBeach,
   sonDoongCave,
@@ -516,6 +535,7 @@ export const allLocations: Location[] = [
   thuongPhuocBorderGate,
   thangHenLake,
   thienCungCave,
+  thienCamBeach,
   thienMuPagoda,
   thoiLoiMountain,
   thungKhePass,
