@@ -28,7 +28,7 @@ export const cuaLoBeach: Location = {
   entranceFee: "Free beach access. Outdoor freshwater showers and foot washing cost about 10,000 VND; parking is available along the beachfront. Water sports, island trips and night squid fishing are paid separately - check prices locally and agree on them before you go.",
   openingHours: "Open 24 hours. Lifeguards are on duty at the main bathing areas during the day.",
   mapUrl: "https://www.google.com/maps?q=18.806562,105.725486",
-  streetView: { embedUrl: "" },
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792136184854!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHUycjNVVmc.!2m2!1d18.80328746364279!2d105.7279739087375!3f85.85424857897573!4f-43.79976945137432!5f0.7820865974627469" },
   heroImage: heroUrl("cua-lo-beach-hero_placeholder"),
   gallery: [],
   seoDescription:
