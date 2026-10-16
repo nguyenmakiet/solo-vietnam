@@ -9,7 +9,7 @@ export const taChiNhuMountain: Location = {
   destination: "",
   lat: 21.571062,
   lng: 104.306332,
-  address: "Hạnh Phúc, Lào Cai (formerly Xà Hồ commune, Trạm Tấu district, Yên Bái) / Ngọc Chiến, Sơn La",
+  address: "Hạnh Phúc, Lào Cai / Ngọc Chiến, Sơn La (formerly Xà Hồ commune, Trạm Tấu district, Yên Bái / Ngọc Chiến commune, Mường La district, Sơn La)",
   type: ["mountain"],
   categories: ["nature"],
   experiences: ["trekking", "camping", "photography"],
