@@ -1,9 +1,9 @@
 import { Location } from "@/data/location"
 import { heroUrl } from "@/lib/cloudinary"
 
-export const cuLaoCham: Location = {
-  slug: "cu-lao-cham",
-  name: "Cu Lao Cham (Cham Islands)",
+export const chamIsland: Location = {
+  slug: "cham-island",
+  name: "Cham Island",
   updatedAt: "2026-10-16",
   provinces: ["quang-nam"],
   destination: "hoi-an",
@@ -29,7 +29,7 @@ export const cuLaoCham: Location = {
   openingHours: "Boats run only in suitable weather, mostly Mar - Sep. Canoes usually leave Cửa Đại around 8:00-9:00 AM, and the last boat back is usually around 3:30 PM - check times when you buy your ticket.",
   mapUrl: "https://www.google.com/maps?q=15.958462,108.506038",
   streetView: { embedUrl: "" },
-  heroImage: heroUrl("cu-lao-cham-hero_placeholder"),
+  heroImage: heroUrl("cham-island-hero_placeholder"),
   gallery: [],
   seoDescription:
     "Cù Lao Chàm is a cluster of eight islands about 18 km off Cửa Đại beach near Hội An, a UNESCO World Biosphere Reserve with more than 950 marine species, white-sand beaches, coral reefs, a plastic-bag ban and a quiet fishing village, reached by a 15-20 minute canoe ride.",

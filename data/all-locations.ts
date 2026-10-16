@@ -49,6 +49,7 @@ import { catBaTown } from "@/data/locations/cat-ba-town"
 import { catCatVillage } from "@/data/locations/cat-cat-village"
 import { catCoBeach } from "@/data/locations/cat-co-beach"
 import { catTienNationalPark } from "@/data/locations/cat-tien-national-park"
+import { chamIsland } from "@/data/locations/cham-island"
 import { chuaChanMountain } from "@/data/locations/chua-chan-mountain"
 import { chungNhiaVuMountain } from "@/data/locations/chung-nhia-vu-mountain"
 import { coThachBeach } from "@/data/locations/co-thach-beach"
@@ -57,7 +58,6 @@ import { conDaoNationalPark } from "@/data/locations/con-dao-national-park"
 import { conDaoPrison } from "@/data/locations/con-dao-prison"
 import { crazyHouse } from "@/data/locations/crazy-house"
 import { cuChiTunnels } from "@/data/locations/cu-chi-tunnels"
-import { cuLaoCham } from "@/data/locations/cu-lao-cham"
 import { cuMiBeach } from "@/data/locations/cu-mi-beach"
 import { cuaDaiBeach } from "@/data/locations/cua-dai-beach"
 import { cuaLoBeach } from "@/data/locations/cua-lo-beach"
@@ -335,6 +335,7 @@ export const allLocations: Location[] = [
   catCatVillage,
   catCoBeach,
   catTienNationalPark,
+  chamIsland,
   chuaChanMountain,
   chungNhiaVuMountain,
   coThachBeach,
@@ -343,7 +344,6 @@ export const allLocations: Location[] = [
   conDaoPrison,
   crazyHouse,
   cuChiTunnels,
-  cuLaoCham,
   cuMiBeach,
   cuaDaiBeach,
   cuaLoBeach,
