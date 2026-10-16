@@ -271,6 +271,18 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "to-vo-gate",
     "truong-son-national-cemetery",
   ],
+  "batch-7": [
+    "cham-island",
+    "cua-lo-beach",
+    "cua-tung-beach",
+    "cua-viet-beach",
+    "do-son-beach",
+    "nha-trang-beach",
+    "nhat-le-beach",
+    "po-sah-inu-cham-towers",
+    "sam-son-beach",
+    "thien-cam-beach",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -317,6 +329,12 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "long-son-pagoda": "Year-round: owner decision, the note only repeated the strip",
   "vietnam-military-history-museum": "Year-round: owner decision, the note only repeated the strip",
   "war-remnants-museum": "Year-round: owner decision, the note only repeated the strip",
+  // batch-7: the flagged months are described only as avoid / unsafe / too cool
+  "cham-island": "Sep is a 'transition month with occasional big waves'; Oct-Feb storms, most boats stop",
+  "cua-lo-beach": "Sep-Nov storm season, 'not safe for sea activities' - quieter but dangerous, excluded",
+  "do-son-beach": "Sep kept for the buffalo fighting festival; Oct-Apr 'isn't suitable for swimming'",
+  "nha-trang-beach": "Oct-Dec rainy season with big waves; 'any time of year' refers to rip currents, not a year-round season",
+  "thien-cam-beach": "Sep-Mar is quiet but 'too cold for swimming'",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
