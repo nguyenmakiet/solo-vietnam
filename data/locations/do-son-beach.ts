@@ -29,9 +29,11 @@ export const doSonBeach: Location = {
   entranceFee: "Most of Đồ Sơn's beaches are free. Some attractions charge entry, typically 20,000-50,000 VND per person - for example Bảo Đại's villa and the Đồi Rồng resort area. Some beachside cafés add a chair fee on top of drinks without saying so up front - ask before you sit down.",
   openingHours: "Open 24 hours. Swim only in designated areas and follow lifeguard notices.",
   mapUrl: "https://www.google.com/maps?q=20.68721,106.795379",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("do-son-beach-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792132170769!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDR2b1NraGdF!2m2!1d20.68882803821371!2d106.7956516792786!3f20.08108772523084!4f-15.015188217011271!5f0.7820865974627469" },
+  heroImage: heroUrl("do-son-beach-hai-phong_obdwub"),
+  gallery: [
+    "do-son-beach-hai-phong_obdwub",
+  ],
   seoDescription:
     "Đồ Sơn, about 20 km from central Hải Phòng and 120 km from Hanoi, was northern Vietnam's go-to beach in the 1980s and 90s - today a nostalgic, low-key seaside town with brown, silty water, French-era villas, the new Đồi Rồng artificial beach and the Đồ Sơn buffalo fighting festival.",
   tips: [

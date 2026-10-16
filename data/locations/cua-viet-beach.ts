@@ -28,9 +28,13 @@ export const cuaVietBeach: Location = {
   entranceFee: "Free. Seafood, boat trips to Cồn Cỏ island and motorbike taxis at the port are paid separately - agree prices first.",
   openingHours: "Open 24 hours. Lifeguards are on duty at the main bathing area.",
   mapUrl: "https://www.google.com/maps?q=16.913493,107.186678",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("cua-viet-beach-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792126988822!6m8!1m7!1sCAoSHENJQUJJaERwcGxlTm13NlAxMTBEX3pVeG90NVU.!2m2!1d16.9130057864554!2d107.1888911881071!3f280.5604837352501!4f-16.38790737352251!5f0.7820865974627469" },
+  heroImage: heroUrl("cua-viet-beach-quang-tri-2_gvj95l"),
+  gallery: [
+    "cua-viet-beach-quang-tri_psjqnf",
+    "cua-viet-beach-quang-tri-2_gvj95l",
+    "cua-viet-beach-quang-tri-_q6pihb",
+  ],
   seoDescription:
     "Cửa Việt is a quiet, uncrowded beach about 15 km east of Đông Hà in Quảng Trị - long, flat white sand and clear water, beach-seine fishing with locals at dawn, squid noodles on the sand, and an easy stop on a Quảng Trị history trip.",
   tips: [

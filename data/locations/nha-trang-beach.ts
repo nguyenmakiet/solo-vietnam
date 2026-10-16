@@ -28,9 +28,16 @@ export const nhaTrangBeach: Location = {
   entranceFee: "Free along the whole beach. You only pay for services such as sun loungers, umbrellas, freshwater showers and water sports. Ask the lounger price before you sit down - some charge per session, others per day, and holiday prices can be double.",
   openingHours: "Open 24 hours. Lifeguards from the Nha Trang Bay Management Board are on duty during the day only; there is no lifeguard cover at night.",
   mapUrl: "https://www.google.com/maps?q=12.226465,109.202143",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("nha-trang-beach-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792134211529!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3U2dlBQX0FF!2m2!1d12.23951533290733!2d109.1988601652116!3f359.156422669244!4f-31.630227607232207!5f0.7820865974627469" },
+  heroImage: heroUrl("nha-trang-beach-tran-phu-khanh-hoa_wolwhr"),
+  gallery: [
+    "nha-trang-beach-tran-phu-khanh-hoa_wolwhr",
+    "nha-trang-beach-tran-phu-khanh-hoa-4_rqjm1t",
+    "nha-trang-beach-tran-phu-khanh-hoa-3_kx02cp",
+    "nha-trang-beach-tran-phu-khanh-hoa-5_itnzdi",
+    "nha-trang-beach-tran-phu-khanh-hoa-6_s9xyf7",
+    "nha-tràng_x9cnbm",
+  ],
   seoDescription:
     "Trần Phú Beach is Nha Trang's 6-7 km city-centre beach, a few minutes' walk from most hotels - golden fine sand, a flat, gently sloping seabed and sunrise swims with locals, but busy, with rip currents that lifeguards deal with every peak season.",
   tips: [

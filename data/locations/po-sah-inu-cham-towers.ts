@@ -30,9 +30,14 @@ export const poSahInuChamTowers: Location = {
   entranceFee: "15,000 VND per person, paid at the gate. Cham costume rental for photos is extra.",
   openingHours: "7:00 AM - 5:00 PM daily",
   mapUrl: "https://www.google.com/maps?q=10.935967,108.146048",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("po-sah-inu-cham-towers-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792135171945!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQy1wX1R2UVE.!2m2!1d10.93603476865587!2d108.146091059581!3f353.7744028372693!4f-17.83302808350031!5f1.1489104523038176" },
+  heroImage: heroUrl("po-sah-inu-cham-towers_qmcrqz"),
+  gallery: [
+    "po-sah-inu-cham-towers_qmcrqz",
+    "po-sah-inu-cham-towers-2_ypzuxc",
+    "po-sah-inu-cham-towers-3_k9xaef",
+    "po-sah-inu-cham-towers-4_kncjtq",
+  ],
   seoDescription:
     "Po Sah Inư is a group of Cham brick towers on Bà Nài hill near Phan Thiết, built around the late 8th to early 9th century to worship Shiva - among the oldest Champa monuments in the region, still used by the Cham for the Katê festival, with views over Phan Thiết and Mũi Né.",
   tips: [

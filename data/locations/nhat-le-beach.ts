@@ -28,9 +28,13 @@ export const nhatLeBeach: Location = {
   entranceFee: "Free beach access. Water sports, canoe rides and night squid fishing are paid separately - rent a life jacket before any water activity and check prices locally.",
   openingHours: "Open 24 hours. Swim only in designated, safe areas and follow the beach management's instructions.",
   mapUrl: "https://www.google.com/maps?q=17.49083,106.628035",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("nhat-le-beach-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792133522698!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ1UtTmpSTFE.!2m2!1d17.48613165533764!2d106.6288986132693!3f12.680656834966506!4f-19.92413398698737!5f0.7820865974627469" },
+  heroImage: heroUrl("nhat-le-beach-quang-binh-2_r9lqzd"),
+  gallery: [
+    "nhat-le-beach-quang-binh-2_r9lqzd",
+    "nhat-le-beach-quang-binh_uhnp83",
+    "nhat-le-beach-quang-binh-3_atygix",
+  ],
   seoDescription:
     "Nhật Lệ is Đồng Hới's city beach, just 1-2 km from the centre at the mouth of the Nhật Lệ River - fine white sand, shallow water and mostly gentle waves, good for families, with sunrise, seafood stalls and night squid fishing.",
   tips: [

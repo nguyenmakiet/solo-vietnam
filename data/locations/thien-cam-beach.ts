@@ -28,7 +28,7 @@ export const thienCamBeach: Location = {
   entranceFee: "Free beach access. Freshwater showers at nearby homes cost about 10,000 VND (2026), often including shampoo and shower gel. Water sports and squid-fishing trips are paid separately - check prices locally.",
   openingHours: "Open 24 hours. Official swimming hours (2026): 5:00-8:30 AM and 3:00-7:00 PM. Outside these hours, don't go in the water.",
   mapUrl: "https://www.google.com/maps?q=18.274774,106.102336",
-  streetView: { embedUrl: "" },
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792130541994!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHUyc0dDTkE.!2m2!1d18.27643389815982!2d106.0993881070588!3f90.76855024946163!4f-27.38199641399637!5f0.7820865974627469" },
   heroImage: heroUrl("thien-cam-beach-hero_placeholder"),
   gallery: [],
   seoDescription:

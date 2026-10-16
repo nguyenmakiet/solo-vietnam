@@ -28,9 +28,13 @@ export const chamIsland: Location = {
   entranceFee: "The public canoe ticket from Cửa Đại is about 350,000 VND per adult (2026), which includes the canoe fare (260,000 VND), the sightseeing fee (70,000 VND) and the environment and security fee (20,000 VND). Children under 12 months travel free; children from 1 to under 8 pay 50% of the adult price. Snorkelling, diving, boat trips and other activities are paid separately.",
   openingHours: "Boats run only in suitable weather, mostly Mar - Sep. Canoes usually leave Cửa Đại around 8:00-9:00 AM, and the last boat back is usually around 3:30 PM - check times when you buy your ticket.",
   mapUrl: "https://www.google.com/maps?q=15.958462,108.506038",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("cham-island-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792135501669!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRG0yNGFWTnc.!2m2!1d15.94140852883532!2d108.498844911314!3f162.4109709054327!4f3.048472792882791!5f0.7820865974627469" },
+  heroImage: heroUrl("cham-island_iiwiph"),
+  gallery: [
+    "cham-island_iiwiph",
+    "cham-island-2_qpq5ds",
+    "cham-island-3_gtf8ee",
+  ],
   seoDescription:
     "Cù Lao Chàm is a cluster of eight islands about 18 km off Cửa Đại beach near Hội An, a UNESCO World Biosphere Reserve with more than 950 marine species, white-sand beaches, coral reefs, a plastic-bag ban and a quiet fishing village, reached by a 15-20 minute canoe ride.",
   tips: [

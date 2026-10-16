@@ -28,9 +28,13 @@ export const samSonBeach: Location = {
   entranceFee: "Free beach access. Parking, deckchairs, showers and food are paid separately - check prices before you use them.",
   openingHours: "Open 24 hours. Swimming is permitted only during lifeguard hours - not at midday and not after 5 PM.",
   mapUrl: "https://www.google.com/maps?q=19.7431,105.906307",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("sam-son-beach-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792132939561!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHV2S21LMndF!2m2!1d19.76300237045439!2d105.9197310747623!3f273.4222355047673!4f-22.054339251354364!5f0.7820865974627469" },
+  heroImage: heroUrl("sam-son-beach-thanh-hoa-3_w8rg3z"),
+  gallery: [
+    "sam-son-beach-thanh-hoa-3_w8rg3z",
+    "sam-son-beach-thanh-hoa-2_qwmmid",
+    "sam-son-beach-thanh-hoa_v0droy",
+  ],
   seoDescription:
     "Sầm Sơn is Thanh Hóa's most famous beach and one of the busiest in northern Vietnam - a 9 km crescent of flat, fine sand about 180 km from Hanoi, with four bathing zones, strong waves, lifeguards, seafood and lively summer crowds.",
   tips: [

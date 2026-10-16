@@ -28,9 +28,17 @@ export const cuaTungBeach: Location = {
   entranceFee: "Free. Chairs, freshwater showers, parking and seafood are paid separately - ask prices before you use them, and carry cash.",
   openingHours: "Open 24 hours.",
   mapUrl: "https://www.google.com/maps?q=17.022827,107.110479",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("cua-tung-beach-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792130275033!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRF96UHUzQVE.!2m2!1d17.02282729439026!2d107.1104295277134!3f69.72448804340986!4f-29.7598100498143!5f0.7820865974627469" },
+  heroImage: heroUrl("cua-tung-beach-quang-tri-8_vxg65i"),
+  gallery: [
+    "cua-tung-beach-quang-tri_n94dxb",
+    "cua-tung-beach-quang-tri-2_coomhg",
+    "cua-tung-beach-quang-tri-3_xsrybp",
+    "cua-tung-beach-quang-tri-5_dledhb",
+    "cua-tung-beach-quang-tri-6_wxhgdf",
+    "cua-tung-beach-quang-tri-7_axdlzw",
+    "cua-tung-beach-quang-tri-8_vxg65i",
+  ],
   seoDescription:
     "Cửa Tùng is a quiet, local beach in Quảng Trị where the Bến Hải River meets the sea - once called the 'Queen of Beaches' in the French era, with red basalt headlands, calm water sheltered by Mũi Si and Mũi Lay, and sunrise fishing boats, close to Vịnh Mốc tunnels and Hiền Lương bridge.",
   tips: [
