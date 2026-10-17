@@ -118,19 +118,21 @@ export default function Home() {
       <section className="home-map-section">
         <div className="home-map-inner">
           <div className="home-map-card">
+            {/* Order: heading, subline, map, then the actions (desktop: map on the right) */}
             <div className="home-map-summary">
               <h2>Explore Vietnam on the Map</h2>
               <p>Discover {LOCATION_COUNT_LABEL} places across the country</p>
-              <p className="home-map-hint">Tap a destination to open its guide</p>
+            </div>
+            <div className="home-map-canvas">
+              <HomeDestinationMap />
+            </div>
+            <div className="home-map-actions">
               <Link href="/map" className="ui-btn home-map-open">
                 Open interactive map →
               </Link>
               <Link href="/provinces" className="ui-link home-map-browse">
                 Browse all provinces →
               </Link>
-            </div>
-            <div className="home-map-canvas">
-              <HomeDestinationMap />
             </div>
           </div>
         </div>
