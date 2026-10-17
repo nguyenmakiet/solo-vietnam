@@ -85,16 +85,127 @@ export function createBaseMap(
   return map
 }
 
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
+
 // Markers: teal dot; the selected one is a larger signal dot with an ink ring,
 // so selection reads by size and outline as well as colour (styles in map-shared.css).
+// With `photo`, a round photo pin instead (see updatePinLooks), with the name
+// in a label that shows on hover, focus or selection.
 // data-slug lets one delegated listener find the location (image preload)
-export const markerIcon = (L: typeof import("leaflet"), slug: string, selected = false) =>
-  L.divIcon({
+export const markerIcon = (
+  L: typeof import("leaflet"),
+  slug: string,
+  selected = false,
+  photo?: { src: string; name: string },
+) => {
+  if (photo) {
+    const size = selected ? 56 : 44
+    return L.divIcon({
+      className: "",
+      // alt="": the marker's title already names the location
+      html: `<span class="map-marker map-marker--photo${selected ? " map-marker--selected" : ""}" data-slug="${slug}">` +
+        `<img class="map-marker-img" src="${escapeHtml(photo.src)}" alt="" loading="lazy" decoding="async">` +
+        `<span class="map-marker-name">${escapeHtml(photo.name)}</span></span>`,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    })
+  }
+  return L.divIcon({
     className: "",
     html: `<span class="map-marker${selected ? " map-marker--selected" : ""}" data-slug="${slug}"></span>`,
     iconSize: selected ? [22, 22] : [14, 14],
     iconAnchor: selected ? [11, 11] : [7, 7],
   })
+}
+
+// ─── Photo pins ───────────────────────────────────────────────────────────────
+// When only a handful of pins are in view, each one shows a small round photo
+// of the location instead of a dot. The count of visible pins inside the
+// viewport decides, not the zoom: a filter down to 9 caves shows photos even at
+// the country view. Hysteresis keeps the look from flickering while panning
+// across the threshold.
+export const PHOTO_PINS_ON = 15
+export const PHOTO_PINS_OFF = 18
+// Pins this far outside the viewport (fraction of its size) also get photos,
+// so a short pan does not show dots first; pins further out stay dots and
+// never load their thumbnail
+const PHOTO_PINS_PAD = 0.2
+
+export type MarkerLook = "dot" | "photo"
+
+/** The per-marker state updatePinLooks() and pinIcon() work from */
+export type PinEntry = {
+  marker: import("leaflet").Marker
+  loc: { slug: string; name: string; lat: number; lng: number; thumb: string | null }
+  /** Shown by the current filter (hidden markers stay dots) */
+  visible: boolean
+  look: MarkerLook
+  selected: boolean
+}
+
+/** Icon for a pin's current look and selection */
+export function pinIcon(L: typeof import("leaflet"), entry: PinEntry) {
+  const photo = entry.look === "photo" && entry.loc.thumb ? { src: entry.loc.thumb, name: entry.loc.name } : undefined
+  return markerIcon(L, entry.loc.slug, entry.selected, photo)
+}
+
+/** Photo-pin state of one map: hysteresis flag and thumbnails that failed to load */
+export type PinLookState = { photoMode: boolean; broken: Set<string> }
+
+export const createPinLookState = (): PinLookState => ({ photoMode: false, broken: new Set() })
+
+/**
+ * Switches pins between dot and photo for the current view. Only markers whose
+ * look changes get a new icon (setIcon rebuilds the element: onIconChange lets
+ * the caller re-apply its own state to it). `active` false = the pins are not
+ * on the map (another layer is shown): everything goes back to dots.
+ */
+export function updatePinLooks<E extends PinEntry>(
+  L: typeof import("leaflet"),
+  map: import("leaflet").Map,
+  entries: Iterable<E>,
+  state: PinLookState,
+  active: boolean,
+  onIconChange?: (entry: E) => void,
+) {
+  const list = [...entries]
+  const view = map.getBounds()
+  const inView = active ? list.filter((e) => e.visible && view.contains([e.loc.lat, e.loc.lng])).length : Infinity
+  state.photoMode = state.photoMode ? inView <= PHOTO_PINS_OFF : inView <= PHOTO_PINS_ON
+  const near = view.pad(PHOTO_PINS_PAD)
+  list.forEach((e) => {
+    const look: MarkerLook = state.photoMode && e.visible && e.loc.thumb && !state.broken.has(e.loc.slug) &&
+      near.contains([e.loc.lat, e.loc.lng]) ? "photo" : "dot"
+    if (look === e.look) return
+    e.look = look
+    e.marker.setIcon(pinIcon(L, e))
+    onIconChange?.(e)
+  })
+}
+
+/**
+ * A photo pin whose thumbnail fails to load falls back to a dot: one delegated
+ * listener (error does not bubble, so capture phase) for every marker.
+ */
+export function usePinImageFallback(
+  containerRef: React.RefObject<HTMLElement | null>,
+  enabled: boolean,
+  onBroken: (slug: string) => void,
+) {
+  useEffect(() => {
+    const container = containerRef.current
+    if (!enabled || !container) return
+    const handler = (e: Event) => {
+      const img = e.target as Element | null
+      if (!img?.classList?.contains("map-marker-img")) return
+      const slug = img.closest<HTMLElement>("[data-slug]")?.dataset.slug
+      if (slug) onBroken(slug)
+    }
+    container.addEventListener("error", handler, true)
+    return () => container.removeEventListener("error", handler, true)
+  }, [containerRef, enabled, onBroken])
+}
 
 // Warms the browser cache for a popup photo, so a marker's image is usually
 // loaded by the time it is clicked (hover on desktop, pointerdown on touch)

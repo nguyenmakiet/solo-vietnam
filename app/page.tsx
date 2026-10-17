@@ -1,13 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import VietnamMap, { VietnamMapLegend } from "@/components/VietnamMap"
+import HomeDestinationMap from "@/components/HomeDestinationMap"
 import CloudinaryImage from "@/components/CloudinaryImage"
 import { destinations } from "@/data/destinations/index"
 import { experiences as allExperiences } from "@/data/experiences"
 import { stripLeadingEmoji } from "@/lib/text"
 import { dotClass } from "@/lib/category-dot"
 import { LOCATION_COUNT_LABEL } from "@/lib/site-stats"
-import { buildMapProvinceData } from "@/lib/map-province-data"
 import "./homepage.css"
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
 
@@ -119,27 +118,23 @@ export default function Home() {
       <section className="home-map-section">
         <div className="home-map-inner">
           <div className="home-map-card">
+            {/* Order: heading, subline, map, then the actions (desktop: map on the right) */}
             <div className="home-map-summary">
               <h2>Explore Vietnam on the Map</h2>
               <p>Discover {LOCATION_COUNT_LABEL} places across the country</p>
-              <VietnamMapLegend className="home-map-legend" />
-              <p className="home-map-hint">Click a province to explore destinations</p>
+            </div>
+            <div className="home-map-canvas">
+              <HomeDestinationMap />
+            </div>
+            <div className="home-map-actions">
+              <Link href="/map" className="ui-btn home-map-open">
+                Open interactive map →
+              </Link>
               <Link href="/provinces" className="ui-link home-map-browse">
                 Browse all provinces →
               </Link>
             </div>
-            <div className="home-map-canvas">
-              <VietnamMap provinceData={buildMapProvinceData()} />
-            </div>
           </div>
-
-          <Link href="/map" className="home-map-cta-banner">
-            <div>
-              <div className="home-map-cta-title">Explore {LOCATION_COUNT_LABEL} locations across Vietnam</div>
-              <div className="home-map-cta-sub">Filter by beaches, trekking, caves, food & more</div>
-            </div>
-            <span className="ui-btn home-map-cta-btn">Open map →</span>
-          </Link>
         </div>
       </section>
 

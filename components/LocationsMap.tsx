@@ -5,9 +5,13 @@ import {
   VIETNAM_BOUNDS,
   LocationPopupCard,
   createBaseMap,
+  createPinLookState,
   loadLeaflet,
-  markerIcon,
+  pinIcon,
+  updatePinLooks,
   useMarkerImagePreload,
+  usePinImageFallback,
+  type PinEntry,
   type PopupLocation,
 } from "@/components/map-shared"
 
@@ -17,7 +21,7 @@ import {
 // once the map view is opened. Base map, pins and the selected card are shared
 // with /map (components/map-shared.tsx).
 
-export type LocationsMapPin = PopupLocation & { lat: number; lng: number }
+export type LocationsMapPin = PopupLocation & { lat: number; lng: number; thumb: string | null }
 
 // Bounds fit around the pins: padding (px) and the closest zoom it may reach,
 // so two pins in one town do not zoom in to street level
@@ -26,7 +30,8 @@ const FIT_MAX_ZOOM = 11
 // A single pin is centred at this zoom instead
 const SINGLE_PIN_ZOOM = 11
 
-type MarkerEntry = { marker: import("leaflet").Marker; loc: LocationsMapPin }
+// Filtered-out pins are removed, not hidden: every entry is visible
+type MarkerEntry = PinEntry & { loc: LocationsMapPin }
 
 export default function LocationsMap({
   locations,
@@ -43,6 +48,7 @@ export default function LocationsMap({
   const markersRef = useRef<Map<string, MarkerEntry>>(new Map())
   // Slug whose marker currently shows the selected icon
   const selectedMarkerRef = useRef<string | null>(null)
+  const pinLookRef = useRef(createPinLookState())
   const [mapReady, setMapReady] = useState(false)
   const [selectedLoc, setSelectedLoc] = useState<LocationsMapPin | null>(null)
 
@@ -62,6 +68,8 @@ export default function LocationsMap({
       // TODO: clustering - unfiltered, pins overlap in dense areas (Hanoi, Hoi An)
       pinsLayerRef.current = L.layerGroup().addTo(map)
       map.on("click", () => setSelectedLoc(null))
+      // Dots or photos for the pins now in view
+      map.on("moveend zoomend resize", () => updatePinLooks(L, map, markersRef.current.values(), pinLookRef.current, true))
       mapRef.current = map
       setMapReady(true)
     }
@@ -98,7 +106,8 @@ export default function LocationsMap({
 
     locations.forEach((loc) => {
       if (markers.has(loc.slug)) return
-      const marker = L.marker([loc.lat, loc.lng], { icon: markerIcon(L, loc.slug), title: loc.name })
+      const entry: MarkerEntry = { marker: null!, loc, visible: true, look: "dot", selected: false }
+      const marker = L.marker([loc.lat, loc.lng], { icon: pinIcon(L, entry), title: loc.name })
         .on("click", (e: import("leaflet").LeafletMouseEvent) => {
           e.originalEvent.stopPropagation()
           setSelectedLoc(loc)
@@ -112,9 +121,14 @@ export default function LocationsMap({
             setSelectedLoc(loc)
           }
         })
+      entry.marker = marker
       layer.addLayer(marker)
-      markers.set(loc.slug, { marker, loc })
+      markers.set(loc.slug, entry)
     })
+    // The fit below (a new pin set) runs moveend too; this covers a set change
+    // that keeps the same view
+    const map = mapRef.current
+    if (map) updatePinLooks(L, map, markers.values(), pinLookRef.current, true)
   }, [mapReady, locations, locBySlug])
 
   // The selected location was filtered out: close its card
@@ -146,7 +160,9 @@ export default function LocationsMap({
     const setSelected = (slug: string | null, selected: boolean) => {
       const entry = slug ? markersRef.current.get(slug) : undefined
       if (!entry) return
-      entry.marker.setIcon(markerIcon(L, entry.loc.slug, selected))
+      // Selected variant of whichever look (dot or photo) the pin has now
+      entry.selected = selected
+      entry.marker.setIcon(pinIcon(L, entry))
       entry.marker.setZIndexOffset(selected ? 1000 : 0)
     }
     setSelected(prevSlug, false)
@@ -176,6 +192,15 @@ export default function LocationsMap({
 
   const imageFor = useCallback((slug: string) => locBySlug.get(slug)?.image ?? null, [locBySlug])
   useMarkerImagePreload(containerRef, mapReady, imageFor)
+
+  // A thumbnail that fails to load: that pin goes back to a dot for good
+  const onThumbBroken = useCallback((slug: string) => {
+    const L = LRef.current
+    const map = mapRef.current
+    pinLookRef.current.broken.add(slug)
+    if (L && map) updatePinLooks(L, map, markersRef.current.values(), pinLookRef.current, true)
+  }, [])
+  usePinImageFallback(containerRef, mapReady, onThumbBroken)
 
   return (
     // isolate: Leaflet panes and controls (z-index 400-1000) stay below the

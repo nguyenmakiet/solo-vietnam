@@ -5,7 +5,7 @@ import "./vietnam-war-three-places-map.css"
 
 /*
   Editorial map for the blog post "The Vietnam War Through Three Places".
-  Reuses the same @svg-maps/vietnam boundaries as components/VietnamMap.tsx
+  Draws its own provinces from @svg-maps/vietnam
   (province ids: "hanoi", "quangtri", "hcm"). Not a military map - the route
   is a narrative line, not a travel or troop route.
 */

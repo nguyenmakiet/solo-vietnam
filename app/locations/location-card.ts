@@ -19,6 +19,7 @@ export type LocationCard = {
   region: "north" | "central" | "south" | null  // from data/provinces.ts (first province with a region)
   months: number[]        // released bestMonths (empty if not released)
   image: string | null    // 600x400 card crop; null = no photo yet
+  thumb: string | null    // 96x96 map photo-pin crop; null = no photo yet (pin stays a dot)
   lat: number             // NaN when unconfirmed; the map view skips NaN / 0
   lng: number
   subtitle: string        // tags[0] display label, else short seoDescription

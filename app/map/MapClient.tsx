@@ -8,9 +8,14 @@ import {
   VIETNAM_BOUNDS,
   LocationPopupCard,
   createBaseMap,
+  createPinLookState,
   loadLeaflet,
   markerIcon,
+  pinIcon,
+  updatePinLooks,
   useMarkerImagePreload,
+  usePinImageFallback,
+  type PinEntry,
 } from "@/components/map-shared"
 import "./map.css"
 
@@ -28,6 +33,8 @@ export type MapLocation = {
   province: string
   /** Popup photo URL, or null when the location has no photo yet */
   image: string | null
+  /** Photo-pin thumbnail URL, or null: the pin stays a dot */
+  thumb: string | null
   /** Destination slug, or null for locations outside every destination */
   destination: string | null
 }
@@ -117,11 +124,9 @@ type BubbleEntry = {
   d: MapDestination
 }
 
-type MarkerEntry = {
-  marker: import("leaflet").Marker
+type MarkerEntry = PinEntry & {
   loc: MapLocation
   clickHandler: (e: import("leaflet").LeafletMouseEvent) => void
-  visible: boolean
 }
 
 // Shows or hides one marker for the current filter. Hidden markers are
@@ -175,8 +180,25 @@ export default function MapClient({
   const [mode, setMode] = useState<MapMode>("destinations")
   const modeRef = useRef<MapMode>(mode)
   modeRef.current = mode
+  const pinLookRef = useRef(createPinLookState())
+  // Sidebar hover preview (kept in step with hoveredExp below)
+  const hoveredExpRef = useRef<string | null>(null)
+
+  // Dots or photo pins for the current view (see updatePinLooks). The pins are
+  // on the map in All places mode only; in Destinations mode they stay dots.
+  // Skipped during a sidebar hover preview: hovering must not switch looks or
+  // load thumbnails. The filter effect refreshes again once the hover ends
+  const refreshPinLooks = useCallback(() => {
+    const L = LRef.current
+    const map = mapRef.current
+    if (!L || !map || hoveredExpRef.current) return
+    updatePinLooks(L, map, allMarkersRef.current.values(), pinLookRef.current, modeRef.current === "all",
+      // setIcon builds a fresh element: re-apply the filter state to it
+      (entry) => setMarkerVisible(entry, entry.visible))
+  }, [])
   const [activeExp, setActiveExp] = useState<string | null>(null)
   const [hoveredExp, setHoveredExp] = useState<string | null>(null)
+  hoveredExpRef.current = hoveredExp
   const [selectedLoc, setSelectedLoc] = useState<MapLocation | null>(null)
   // Destination just opened from its bubble: shows the "View {name} page" link
   const [openedDest, setOpenedDest] = useState<MapDestination | null>(null)
@@ -619,7 +641,7 @@ export default function MapClient({
           }
         })
 
-      const entry: MarkerEntry = { marker, loc, clickHandler, visible: true }
+      const entry: MarkerEntry = { marker, loc, clickHandler, visible: true, look: "dot", selected: false }
       // The pin layer leaves and rejoins the map on mode changes; Leaflet rebuilds
       // the element then, so re-apply the filter state to it
       marker.on("add", () => setMarkerVisible(entry, entry.visible))
@@ -696,7 +718,8 @@ export default function MapClient({
     })
 
     layoutBubbles()
-  }, [mapReady, locationsWithCoords, destinations, openDestination, layoutBubbles])
+    refreshPinLooks()
+  }, [mapReady, locationsWithCoords, destinations, openDestination, layoutBubbles, refreshPinLooks])
 
   // Mode: swap the layer groups (markers are never rebuilt)
   useEffect(() => {
@@ -707,7 +730,8 @@ export default function MapClient({
     if (map.hasLayer(hide)) map.removeLayer(hide)
     if (!map.hasLayer(show)) map.addLayer(show)
     layoutBubbles()
-  }, [mapReady, mode, layoutBubbles])
+    refreshPinLooks()
+  }, [mapReady, mode, layoutBubbles, refreshPinLooks])
 
   useEffect(() => {
     const map = mapRef.current
@@ -725,6 +749,13 @@ export default function MapClient({
       document.fonts?.removeEventListener("loadingdone", onFonts)
     }
   }, [mapReady, layoutBubbles])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!mapReady || !map) return
+    map.on("zoomend moveend resize", refreshPinLooks)
+    return () => { map.off("zoomend moveend resize", refreshPinLooks) }
+  }, [mapReady, refreshPinLooks])
 
   // Destination tooltip follows its point while the map pans or zooms
   useEffect(() => {
@@ -757,7 +788,9 @@ export default function MapClient({
       entry.visible = visible
       setMarkerVisible(entry, visible)
     })
-  }, [mapReady, activeExp, hoveredExp])
+    // Fewer (or more) pins in view: dots or photos
+    refreshPinLooks()
+  }, [mapReady, activeExp, hoveredExp, refreshPinLooks])
 
   // Selection: swap the icon on the previously selected and the newly selected
   // marker only, so a click costs the same with 50 or 500 markers
@@ -775,7 +808,9 @@ export default function MapClient({
         ?.classList.toggle("map-orphan--selected", selected)
       const entry = allMarkersRef.current.get(slug)
       if (!entry) return
-      entry.marker.setIcon(markerIcon(L, entry.loc.slug, selected))
+      // Selected variant of whichever look (dot or photo) the pin has now
+      entry.selected = selected
+      entry.marker.setIcon(pinIcon(L, entry))
       entry.marker.setZIndexOffset(selected ? 1000 : 0)
       // setIcon builds a fresh element: re-apply the filter state to it
       setMarkerVisible(entry, entry.visible)
@@ -789,6 +824,13 @@ export default function MapClient({
   // Preload a marker's popup photo before it is clicked (hover / pointerdown)
   const imageFor = useCallback((slug: string) => locBySlug.get(slug)?.image ?? null, [locBySlug])
   useMarkerImagePreload(mapContainerRef, mapReady, imageFor)
+
+  // A thumbnail that fails to load: that pin goes back to a dot for good
+  const onThumbBroken = useCallback((slug: string) => {
+    pinLookRef.current.broken.add(slug)
+    refreshPinLooks()
+  }, [refreshPinLooks])
+  usePinImageFallback(mapContainerRef, mapReady, onThumbBroken)
 
   // Select one experience (null = all locations) and zoom to its markers
   const selectExp = useCallback((expValue: string | null) => {

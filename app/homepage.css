@@ -205,81 +205,167 @@
   color: var(--color-ink-2);
   margin: 0;
 }
-.home-map-legend {
-  margin: 20px 0 0;
+.home-map-actions {
+  padding: 16px 12px 8px;
 }
-.home-map-hint {
-  font-size: 13px;
-  color: var(--color-ink-2);
-  margin: 20px 0 0;
-}
-.home-map-browse {
-  display: inline-block;
+/* Primary action of the card: the interactive map */
+.home-map-open {
+  display: inline-flex;
   font-size: 14px;
-  margin-top: 12px;
+}
+/* Secondary: a quiet text link under the button */
+.home-map-browse {
+  display: table;
+  font-size: 14px;
+  margin-top: 14px;
 }
 
 @media (min-width: 900px) {
   .home-map-section {
     padding: 0 32px 80px;
   }
+  /* Text and actions on the left, the map on the right */
   .home-map-card {
     display: grid;
-    grid-template-columns: minmax(240px, 1fr) 2fr;
-    gap: 32px;
-    align-items: start;
+    grid-template-columns: minmax(240px, 1fr) minmax(0, 460px);
+    grid-template-areas:
+      "summary map"
+      "actions map";
+    grid-template-rows: auto 1fr;
+    column-gap: 48px;
+    justify-content: space-between;
     padding: 40px;
   }
   .home-map-summary {
+    grid-area: summary;
     padding: 8px 0 0;
-    position: sticky;
-    top: 100px;
   }
-  .home-map-legend {
-    flex-direction: column;
-    margin-top: 28px;
+  .home-map-canvas {
+    grid-area: map;
+  }
+  .home-map-actions {
+    grid-area: actions;
+    padding: 24px 0 0;
   }
 }
 
-/* ── OPEN MAP PROMO (teal-ink card, not a page band) ── */
-.home-map-cta-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  background: var(--color-teal-ink);
-  color: var(--color-paper);
+/* ── DESTINATION MAP (components/HomeDestinationMap.tsx) ──
+   One inline SVG in design units (1 unit ~ 1px on a 360px phone): outline,
+   leaders, pills, count circles and dots scale together. Look = /map's
+   Destinations view (app/map/map.css .map-dest): dark teal pills and circles,
+   paper ring and text. Capped at 460px so pill text stays under ~16px. */
+.home-dmap {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid var(--color-line);
   border-radius: var(--radius-card);
-  padding: 20px 24px;
-  margin-top: 12px;
-  text-decoration: none;
+  background: var(--color-surface); /* the sea */
+  font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
 }
-.home-map-cta-banner:focus-visible {
-  outline: 2px solid var(--color-teal);
-  outline-offset: 2px;
+/* Neighbours (China and Hainan, Laos, Cambodia, Thailand, Myanmar): one
+   treatment for all - no fill, a thin faint outline */
+.home-dmap-neighbours {
+  fill: none;
+  stroke: var(--color-line);
+  stroke-width: 0.6;
+  stroke-linejoin: round;
 }
-.home-map-cta-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--color-paper);
-  margin-bottom: 2px;
+.home-dmap-land,
+.home-dmap-islands {
+  fill: var(--color-line);
 }
-.home-map-cta-sub {
-  font-size: 13px;
-  color: color-mix(in srgb, var(--color-paper) 75%, var(--color-teal-ink));
+/* Specks (Hoang Sa, Truong Sa): a stroke keeps them visible */
+.home-dmap-islands {
+  stroke: var(--color-line);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }
-.home-map-cta-btn {
-  flex-shrink: 0;
-  font-size: 14px;
+/* Hoang Sa / Truong Sa in their insets: mainland fill, a thicker stroke so
+   each island reads on a 360px phone */
+.home-dmap-archipelago {
+  fill: var(--color-line);
+  stroke: var(--color-line);
+  stroke-width: 3.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }
-.home-map-cta-banner:hover .home-map-cta-btn {
-  background: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
+.home-dmap-inset {
+  fill: var(--color-surface);
+  stroke: var(--color-line);
+  stroke-width: 0.8;
 }
-@media (max-width: 560px) {
-  .home-map-cta-banner {
-    flex-direction: column;
-    align-items: stretch;
-  }
+.home-dmap-place {
+  fill: var(--color-ink-2);
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
+}
+.home-dmap-leader {
+  stroke: var(--color-teal-ink);
+  stroke-width: 1.5;
+}
+/* Anchor dot on an offset pill's point (/map's .is-offset::after) */
+.home-dmap-anchor {
+  fill: var(--color-teal-ink);
+  stroke: var(--color-paper);
+  stroke-width: 2;
+}
+.home-dmap-pill {
+  fill: var(--color-teal-ink);
+  stroke: var(--color-paper);
+  stroke-width: 2;
+}
+.home-dmap-name,
+.home-dmap-count,
+.home-dmap-sep {
+  font-size: 12px;
+  font-weight: 600;
+  dominant-baseline: central;
+}
+.home-dmap-name {
+  fill: var(--color-paper);
+}
+.home-dmap-count,
+.home-dmap-sep {
+  fill: var(--color-teal-light);
+  font-variant-numeric: tabular-nums;
+}
+/* Count circle (/map's .is-compact) and dot (.is-dot) */
+.home-dmap-circle,
+.home-dmap-dot {
+  fill: var(--color-teal-ink);
+  stroke: var(--color-paper);
+  stroke-width: 2;
+}
+.home-dmap-circle-count {
+  fill: var(--color-paper);
+  font-size: 11px;
+  font-weight: 600;
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-variant-numeric: tabular-nums;
+}
+/* Invisible tap area: 32 units tall pills, 32 across circles and dots */
+.home-dmap-hit {
+  fill: transparent;
+}
+.home-dmap-link:hover .home-dmap-name {
+  text-decoration: underline;
+}
+.home-dmap-link:hover .home-dmap-circle,
+.home-dmap-link:hover .home-dmap-dot {
+  fill: color-mix(in srgb, var(--color-teal-ink) 80%, var(--color-teal));
+}
+.home-dmap-link:focus {
+  outline: none;
+}
+.home-dmap-link:focus-visible .home-dmap-hit {
+  stroke: var(--color-teal);
+  stroke-width: 2;
 }
 
 /* ── SECTION COMMON ── */

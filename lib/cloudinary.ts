@@ -51,6 +51,15 @@ export const destinationCardUrl = (publicId: string) =>
 export const thumbnailUrl = (publicId: string) =>
   cloudinaryUrl(publicId, ImageSize.thumbnail.w, ImageSize.thumbnail.h)
 
+// Round map-pin photo (components/map-shared.tsx): 96px square crop of a hero
+// image (2x the 44px pin), gravity auto so the subject stays in the circle.
+// null = no real photo yet; the pin stays a dot
+export function mapThumbUrl(heroImage: string | undefined): string | null {
+  // Not a standard hero URL: no thumb rather than a 1200px image in a 44px pin
+  if (!heroImage || heroImage.includes("placeholder") || !heroImage.includes("w_1200,h_630,c_fill")) return null
+  return heroImage.replace("w_1200,h_630,c_fill", "w_96,h_96,c_fill,g_auto")
+}
+
 // ─── Open Graph images ───────────────────────────────────────
 // Social scrapers (Facebook, Zalo...) reject the WebP/AVIF that f_auto can
 // negotiate ("Invalid Image Content Type"), so og:image always forces JPEG.
