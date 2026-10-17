@@ -181,19 +181,24 @@ export default function MapClient({
   const modeRef = useRef<MapMode>(mode)
   modeRef.current = mode
   const pinLookRef = useRef(createPinLookState())
+  // Sidebar hover preview (kept in step with hoveredExp below)
+  const hoveredExpRef = useRef<string | null>(null)
 
   // Dots or photo pins for the current view (see updatePinLooks). The pins are
-  // on the map in All places mode only; in Destinations mode they stay dots
+  // on the map in All places mode only; in Destinations mode they stay dots.
+  // Skipped during a sidebar hover preview: hovering must not switch looks or
+  // load thumbnails. The filter effect refreshes again once the hover ends
   const refreshPinLooks = useCallback(() => {
     const L = LRef.current
     const map = mapRef.current
-    if (!L || !map) return
+    if (!L || !map || hoveredExpRef.current) return
     updatePinLooks(L, map, allMarkersRef.current.values(), pinLookRef.current, modeRef.current === "all",
       // setIcon builds a fresh element: re-apply the filter state to it
       (entry) => setMarkerVisible(entry, entry.visible))
   }, [])
   const [activeExp, setActiveExp] = useState<string | null>(null)
   const [hoveredExp, setHoveredExp] = useState<string | null>(null)
+  hoveredExpRef.current = hoveredExp
   const [selectedLoc, setSelectedLoc] = useState<MapLocation | null>(null)
   // Destination just opened from its bubble: shows the "View {name} page" link
   const [openedDest, setOpenedDest] = useState<MapDestination | null>(null)

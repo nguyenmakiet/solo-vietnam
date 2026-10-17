@@ -60,7 +60,8 @@
 }
 
 /* ── PHOTO PINS: few pins in view (updatePinLooks in map-shared.tsx) ──
-   44px round photo with a white ring; selected = 56px with the selected dot's
+   44px round photo with a white ring and a faint ink hairline (no shadows,
+   like the rest of the map); selected = 56px with the selected dot's
    signal + ink rings. The name label shows on hover, focus and selection only:
    permanent labels under every photo would collide. */
 .map-marker--photo {
@@ -69,7 +70,7 @@
   height: 44px;
   background: var(--color-paper);
   border: 2px solid var(--color-surface);
-  box-shadow: 0 1px 4px color-mix(in srgb, var(--color-ink) 35%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--color-ink) 20%, transparent);
   animation: map-pin-in 0.18s ease-out;
 }
 .leaflet-marker-icon:hover .map-marker--photo {
