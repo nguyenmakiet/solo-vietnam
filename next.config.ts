@@ -34,6 +34,12 @@ destination: "/destinations/ho-chi-minh-city",
 permanent: true,
 },
 {
+// Renamed: Ha Giang is the place, the loop is the ride through it
+source: "/destinations/ha-giang-loop",
+destination: "/destinations/ha-giang",
+permanent: true,
+},
+{
 // Ba Na Hills merged into Da Nang (its locations moved there)
 source: "/destinations/ba-na-hills",
 destination: "/destinations/da-nang",

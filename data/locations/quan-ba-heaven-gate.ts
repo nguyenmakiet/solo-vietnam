@@ -6,7 +6,7 @@ export const quanBaHeavenGate: Location = {
   name: "Quản Bạ Heaven Gate",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.04948889805356,
   lng: 104.99321363748844,
   address: "Quyết Tiến, Quản Bạ, Hà Giang",

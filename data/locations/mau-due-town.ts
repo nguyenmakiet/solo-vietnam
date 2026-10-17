@@ -6,7 +6,7 @@ export const mauDueTown: Location = {
   updatedAt: "2026-08-24",
   status: "unverified",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.06538511545305,
   lng: 105.24124425751896,
   address: "Mau Due, Yen Minh District, Ha Giang Province",

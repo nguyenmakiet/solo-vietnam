@@ -73,10 +73,10 @@ export async function generateMetadata({
   const description = `${destination.name} travel guide - ${destination.tagline}. Best things to do, itineraries, and practical tips for solo travelers in Vietnam.`
 
   return {
-    title: `${destination.name} Travel Guide | Solo in Vietnam`,
+    title: `${destination.seoTitle ?? `${destination.name} Travel Guide`} | Solo in Vietnam`,
     description,
     openGraph: {
-      title: `${destination.name}`,
+      title: destination.seoTitle ?? destination.name,
       description,
       url: `https://www.soloinvietnam.com/destinations/${slug}`,
       images: realPhoto(destination.heroImage) ? [{ url: ogImageUrl(destination.heroImage!), width: 1200, height: 630 }] : [],
@@ -121,7 +121,7 @@ export default async function DestinationPage({
 
   // Build stop data map for itinerary map
   const stopDataMap: Record<string, { name: string; lat: number; lng: number; status?: string }> = {}
-  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang-loop"])
+  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang"])
   if (MAP_DESTINATIONS.has(destination.slug) && destination.itineraries) {
     const stopSlugs = new Set(
       destination.itineraries.flatMap((itin) => itin.days.flatMap((day) => day.stops))

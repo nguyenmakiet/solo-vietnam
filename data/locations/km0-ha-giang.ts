@@ -6,7 +6,7 @@ export const km0HaGiang: Location = {
   name: "Km 0 Milestone - Hà Giang",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 22.827448496788932,
   lng: 104.98418992590295,
   address: "Đường Nguyễn Trãi, Phường Minh Khai, Thành phố Hà Giang",

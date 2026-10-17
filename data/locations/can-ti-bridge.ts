@@ -6,7 +6,7 @@ export const canTiBridge: Location = {
   updatedAt: "2026-08-24",
   status: "unverified",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.0789366,
   lng: 105.0259277,
   address: "Can Ti Bridge, Meo Vac District, Ha Giang Province",

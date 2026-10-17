@@ -6,7 +6,7 @@ export const lungCuFlagTower: Location = {
   name: "Lũng Cú Flag Tower",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.363427116840306,
   lng: 105.31633882452529,
   address: "Lũng Cú, Đồng Văn, Hà Giang",

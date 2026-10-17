@@ -1,9 +1,11 @@
 import { Destination, FaqItem } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
 
-export const haGiangLoop: Destination = {
-  slug: "ha-giang-loop",
-  name: "Ha Giang Loop",
+export const haGiang: Destination = {
+  slug: "ha-giang",
+  name: "Ha Giang",
+  // "Ha Giang Loop" is what travelers search for: kept in the page title
+  seoTitle: "Ha Giang Loop & Ha Giang Travel Guide",
   province: "Ha Giang",
   provinceSlug: "ha-giang",
   region: "north",

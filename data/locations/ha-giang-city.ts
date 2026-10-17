@@ -6,7 +6,7 @@ export const haGiangCity: Location = {
   updatedAt: "2026-08-24",
   status: "unverified",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 22.8233,
   lng: 104.9836,
   address: "Ha Giang City, Ha Giang Province",

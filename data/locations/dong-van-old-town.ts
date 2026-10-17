@@ -6,7 +6,7 @@ export const dongVanOldTown: Location = {
   name: "Đồng Văn Old Town",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.274,
   lng: 105.362,
   address: "Phố Cổ Đồng Văn, Đồng Văn, Hà Giang",

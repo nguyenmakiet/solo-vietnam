@@ -6,7 +6,7 @@ export const duGiaVillage: Location = {
   name: "Du Già Village",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 22.930340238883847,
   lng: 105.22274726498522,
   address: "Du Già, Yên Minh, Hà Giang",

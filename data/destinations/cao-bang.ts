@@ -107,7 +107,7 @@ export const caoBang: Destination = {
 
   transport: "Motorbike essential - attractions are far from the city and public transport is very limited. Renting in Cao Bang city is easy.",
 
-  nearbyDestinations: ["ha-giang-loop", "ha-noi"],
+  nearbyDestinations: ["ha-giang", "ha-noi"],
 
   coordinates: {
     lat: 22.6657,

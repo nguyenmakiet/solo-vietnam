@@ -6,7 +6,7 @@ export const duGiaWaterfall: Location = {
   name: "Du Già Waterfall",
   updatedAt: "2026-10-04",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 22.92605491197045,
   lng: 105.1988164932612,
   address: "Du Già, Yên Minh, Hà Giang",

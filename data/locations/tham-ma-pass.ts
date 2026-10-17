@@ -6,7 +6,7 @@ export const thamMaPass: Location = {
   name: "Thẩm Mã Pass",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.170578279202783,
   lng: 105.19445930795216,
   address: "Thẩm Mã, Đồng Văn, Hà Giang",

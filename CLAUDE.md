@@ -226,7 +226,7 @@ Each destination lives in its own file:
 data/destinations/
   types.ts          ← Destination type + helper types (do not modify lightly)
   index.ts          ← Re-exports all destinations + deriveFromLocations()
-  ha-giang-loop.ts
+  ha-giang.ts
   sapa.ts
   cat-ba.ts
   ...

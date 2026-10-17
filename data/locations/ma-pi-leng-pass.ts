@@ -6,7 +6,7 @@ export const maPiLengPass: Location = {
   name: "Mã Pí Lèng Pass",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.24315558513546,
   lng: 105.39773522066236,
   address: "Mã Pí Lèng, Mèo Vạc, Hà Giang",
