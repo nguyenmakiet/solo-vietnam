@@ -11,9 +11,9 @@ export const haGiang: Destination = {
   region: "north",
 
   description:
-    "The Ha Giang Loop is Vietnam's most dramatic motorbike route - a 350km circuit through the Dong Van Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'Mong villages, buckwheat fields, and the deepest river gorge in Southeast Asia. The town of Ha Giang is the starting point; the loop runs clockwise through Quan Ba, Yen Minh, Dong Van, and Meo Vac before returning via the eastern route through Du Gia. Do it by motorbike - that's the point.",
+    "The Ha Giang Loop is a scenic motorbike route in Vietnam's far north - a 350km circuit through the Dong Van Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'Mong villages, buckwheat fields, and the deepest river gorge in Southeast Asia. The town of Ha Giang is the starting point; the loop runs clockwise through Quan Ba, Yen Minh, Dong Van, and Meo Vac before returning via the eastern route through Du Gia. Do it by motorbike - that's the point.",
 
-  tagline: "Vietnam's most epic road - 350km of karst, passes, and minority villages",
+  tagline: "A 350km mountain loop through karst, passes, and minority villages",
 
   heroImage: heroUrl("ha-giang-loop_e8myfw"),
 
@@ -68,7 +68,7 @@ export const haGiang: Destination = {
             "ma-pi-leng-pass",
             "nho-que-river",
           ],
-          notes: "The best day of the loop. Lung Cu Flag Tower at Vietnam's northernmost point - China visible across the valley. Ma Pi Leng Pass is one of the most dramatic roads in Southeast Asia - 20km of switchbacks above the Nho Que River canyon. Optional boat trip on the Nho Que from Meo Vac (~150,000 VND/person). Ma Pi Leng Skywalk at sunset.",
+          notes: "The best day of the loop. Lung Cu Flag Tower at Vietnam's northernmost point - China visible across the valley. Ma Pi Leng Pass is a spectacular stretch of road - 20km of switchbacks above the Nho Que River canyon. Optional boat trip on the Nho Que from Meo Vac (~150,000 VND/person). Ma Pi Leng Skywalk at sunset.",
         },
         {
           day: 3,
@@ -114,7 +114,7 @@ export const haGiang: Destination = {
             "lo-lo-chai-village",
             "dong-van-old-town",
           ],
-          notes: "Tham Ma Pass before the plateau opens up. Hmong King Palace (Vuong Family Mansion) at Sa Phin - the most elaborate H'Mong building in Vietnam. Lung Cu Flag Tower at Vietnam's northernmost point. Lo Lo Chai village below the tower - the Lo Lo minority culture is found almost nowhere else. Dong Van Old Quarter for dinner and the night market.",
+          notes: "Tham Ma Pass before the plateau opens up. Hmong King Palace (Vuong Family Mansion) at Sa Phin - an ornate H'Mong mansion. Lung Cu Flag Tower at Vietnam's northernmost point. Lo Lo Chai village below the tower - the Lo Lo minority culture is found almost nowhere else. Dong Van Old Quarter for dinner and the night market.",
         },
         {
           day: 3,
@@ -137,7 +137,7 @@ export const haGiang: Destination = {
             "du-gia-waterfall",
             "ha-giang-city",
           ],
-          notes: "Early start. QL34 return route along the Gam River. Du Gia is the most beautiful village on the eastern loop - Tay settlement in a river valley. Du Gia Waterfall for a swim. Back in Ha Giang by late afternoon.",
+          notes: "Early start. QL34 return route along the Gam River. Du Gia is a peaceful village on the eastern loop - Tay settlement in a river valley. Du Gia Waterfall for a swim. Back in Ha Giang by late afternoon.",
         },
       ],
     },
