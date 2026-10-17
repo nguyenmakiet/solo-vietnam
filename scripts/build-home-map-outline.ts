@@ -57,7 +57,7 @@ const srcToLngLat = ([x, y]: Pt): Pt => {
 const FRAME_WIDTH = 360
 const LNG_WEST = 101.9
 const LNG_EAST = 113.2
-const LAT_NORTH = 23.55
+const LAT_NORTH = 23.67 // leaves 6 units above the Ha Giang pill
 const LAT_SOUTH = 8.2
 const UNITS_PER_DEGREE = FRAME_WIDTH / (LNG_EAST - LNG_WEST)
 const UNITS_PER_MERCATOR = (UNITS_PER_DEGREE * 180) / Math.PI

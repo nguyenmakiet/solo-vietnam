@@ -51,7 +51,7 @@ export default function HomeDestinationMap() {
       {insets.map(({ name, box, path }) => (
         <g key={name}>
           <rect className="home-dmap-inset" {...box} />
-          <path className="home-dmap-islands" d={path} />
+          <path className="home-dmap-archipelago" d={path} />
           <text className="home-dmap-place" x={box.x} y={box.y - 4}>{name}</text>
         </g>
       ))}

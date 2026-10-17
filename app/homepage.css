@@ -266,8 +266,10 @@
   background: var(--color-surface); /* the sea */
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
 }
+/* Neighbours (China and Hainan, Laos, Cambodia, Thailand, Myanmar): one
+   treatment for all - no fill, a thin faint outline */
 .home-dmap-neighbours {
-  fill: var(--color-paper);
+  fill: none;
   stroke: var(--color-line);
   stroke-width: 0.6;
   stroke-linejoin: round;
@@ -280,6 +282,15 @@
 .home-dmap-islands {
   stroke: var(--color-line);
   stroke-width: 2.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+/* Hoang Sa / Truong Sa in their insets: mainland fill, a thicker stroke so
+   each island reads on a 360px phone */
+.home-dmap-archipelago {
+  fill: var(--color-line);
+  stroke: var(--color-line);
+  stroke-width: 3.4;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
