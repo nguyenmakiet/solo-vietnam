@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import type { LocationType } from "@/data/location"
 import { LOCATION_TAGS, isLocationTag, type LocationTagGroup } from "@/data/taxonomy/tags"
 import { LOCATION_TYPES, isLocationType, typeDisplayLabel } from "@/data/taxonomy/types"
@@ -10,6 +11,13 @@ import { LOCATION_CATEGORIES, isLocationCategory } from "@/data/taxonomy/categor
 import { dotClass } from "@/lib/category-dot"
 import { isFilterableTag, type LocationCard } from "./location-card"
 import PhotoPlaceholder from "@/components/PhotoPlaceholder"
+import type { LocationsMapPin } from "@/components/LocationsMap"
+
+// Leaflet is client-only and heavy: loaded only once the map view is opened
+const LocationsMap = dynamic(() => import("@/components/LocationsMap"), {
+  ssr: false,
+  loading: () => <div className="h-[70dvh] min-h-[360px] md:h-[calc(100dvh-220px)] md:min-h-[520px] border border-line rounded-card bg-paper" />,
+})
 
 // ─── Region types & mapping ───────────────────────────────────────────────────
 
@@ -26,6 +34,9 @@ const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 const PAGE_SIZE = 24
+
+// List (card grid) or map; ?view=map, no param = list
+type View = "list" | "map"
 
 function getTypes(loc: LocationCard): string[] {
   return loc.types
@@ -151,7 +162,8 @@ function parseUrlState() {
     tags: p.getAll("tag"),
     province: p.get("province") ?? "",
     months: p.getAll("month").map((m) => parseInt(m, 10)).filter(Boolean),
-    page: Math.max(1, parseInt(p.get("page") ?? "1", 10)),
+    page: Math.max(1, parseInt(p.get("page") ?? "1", 10) || 1),
+    view: (p.get("view") === "map" ? "map" : "list") as View,
   }
 }
 
@@ -163,7 +175,8 @@ function buildSearch(
   tags: string[],
   province: string,
   months: number[],
-  page: number
+  page: number,
+  view: View
 ): string {
   const p = new URLSearchParams()
   if (region) p.set("region", region)
@@ -173,7 +186,9 @@ function buildSearch(
   tags.forEach((t) => p.append("tag", t))
   if (province) p.set("province", province)
   months.forEach((m) => p.append("month", String(m)))
-  if (page > 1) p.set("page", String(page))
+  // The map shows every match: pages only exist in the list
+  if (view === "map") p.set("view", "map")
+  else if (page > 1) p.set("page", String(page))
   const s = p.toString()
   return s ? `?${s}` : ""
 }
@@ -184,6 +199,22 @@ function IconChevron({ open }: { open: boolean }) {
   return (
     <svg className={`w-3 h-3 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  )
+}
+
+function IconList() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  )
+}
+
+function IconMap() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14" />
     </svg>
   )
 }
@@ -238,23 +269,30 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   // half of the screen, and grow down to the bottom of the viewport.
   const [panelFit, setPanelFit] = useState({ right: false, maxH: 400 })
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
+  const [view, setView] = useState<View>("list")
 
-  // Sync from URL after mount
+  // Sync from URL after mount, and again on Back / Forward: the view switch and
+  // "Load more" push history entries, so every entry is re-read in full
   useEffect(() => {
-    const init = parseUrlState()
-    if (!init) return
-    if (init.region) setRegion(init.region)
-    // Old broad-type URLs (?type=nature) become the category they moved to.
-    const legacy = resolveLegacyTypes(init.types)
-    const categories = [...new Set([...init.categories, ...legacy.categories])]
-    if (legacy.types.length) setSelectedTypes(legacy.types)
-    if (init.experiences.length) setSelectedExperiences(init.experiences)
-    if (categories.length) setSelectedCategories(categories)
-    if (init.tags.length) setSelectedTags(init.tags)
-    if (init.province) setProvince(init.province)
-    if (init.months.length) setSelectedMonths(init.months)
-    if (init.page > 1) setVisibleCount(init.page * PAGE_SIZE)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    function applyUrlState() {
+      const init = parseUrlState()
+      if (!init) return
+      setRegion(init.region)
+      // Old broad-type URLs (?type=nature) become the category they moved to.
+      const legacy = resolveLegacyTypes(init.types)
+      const categories = [...new Set([...init.categories, ...legacy.categories])]
+      setSelectedTypes(legacy.types)
+      setSelectedExperiences(init.experiences)
+      setSelectedCategories(categories)
+      setSelectedTags(init.tags)
+      setProvince(init.province)
+      setSelectedMonths(init.months)
+      setVisibleCount(init.page * PAGE_SIZE)
+      setView(init.view)
+    }
+    applyUrlState()
+    window.addEventListener("popstate", applyUrlState)
+    return () => window.removeEventListener("popstate", applyUrlState)
   }, [])
 
   const [typeOpen, setTypeOpen] = useState(false)
@@ -362,10 +400,30 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   const hasMore = visibleCount < filtered.length
   const currentPage = Math.ceil(visibleCount / PAGE_SIZE)
 
+  // Pins for the map view: every match (not just the loaded page) that has
+  // confirmed coordinates. Locations without them stay in the list only
+  const mapPins = useMemo<LocationsMapPin[]>(() => {
+    if (view !== "map") return []
+    return filtered.flatMap((loc) => {
+      if (!Number.isFinite(loc.lat) || !Number.isFinite(loc.lng) || loc.lat === 0 || loc.lng === 0) return []
+      return [{
+        slug: loc.slug,
+        name: loc.name,
+        lat: loc.lat,
+        lng: loc.lng,
+        type: primaryType(loc),
+        province: loc.provinces[0] ? formatSlug(loc.provinces[0]) : "",
+        image: loc.image,
+      }]
+    })
+  }, [filtered, view])
+
+  // Filter changes reset visibleCount, so currentPage is 1 then; after Back to a
+  // "Load more" entry it keeps that entry's page
   useEffect(() => {
-    const search = buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, 1)
-    history.replaceState(null, "", `/locations${search}`)
-  }, [region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths])
+    const url = `/locations${buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, currentPage, view)}`
+    if (url !== window.location.pathname + window.location.search) history.replaceState(null, "", url)
+  }, [region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, currentPage, view])
 
   useEffect(() => {
     const href = province
@@ -458,7 +516,14 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
   function loadMore() {
     const nextPage = currentPage + 1
     setVisibleCount(nextPage * PAGE_SIZE)
-    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, nextPage)}`)
+    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, nextPage, view)}`)
+  }
+
+  // A new history entry, so Back returns to the previous view with the same filters
+  function switchView(next: View) {
+    if (next === view) return
+    setView(next)
+    history.pushState(null, "", `/locations${buildSearch(region, selectedTypes, selectedExperiences, selectedCategories, selectedTags, province, selectedMonths, currentPage, next)}`)
   }
 
   const hasActiveFilters = region !== null || activeTypes.length > 0 || activeExperiences.length > 0 || activeCategories.length > 0 || activeTags.length > 0 || province !== "" || selectedMonths.length > 0
@@ -488,8 +553,9 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
       </section>
 
       {/* ── Filter bar ── */}
-      {/* Sticks below the site navbar: 60px + 1px border (components/header.css) */}
-      <div className="sticky top-[61px] z-20 bg-paper border-y border-line">
+      {/* Sticks below the site navbar: 60px + 1px border (components/header.css).
+          Map view on phones: not sticky - the bar would cover half the map */}
+      <div className={`${view === "map" ? "md:sticky md:top-[61px]" : "sticky top-[61px]"} z-20 bg-paper border-y border-line`}>
         <div className="max-w-6xl mx-auto px-6">
 
           {/* Row 1 — Region */}
@@ -687,21 +753,38 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               </button>
             )}
 
-            {/* Result count — quiet, pushed right */}
-            <p className="ml-auto text-xs text-ink-2" aria-live="polite">
-              Showing <span className="text-ink font-medium">{visible.length}</span> of{" "}
-              <span className="text-ink font-medium">{filtered.length}</span> locations
-            </p>
           </div>
 
         </div>
       </div>
 
       {/* ── Content ── */}
-      <div className="max-w-6xl mx-auto px-6 pt-6 pb-16 md:pt-8">
+      <div className="max-w-6xl mx-auto px-6 pt-4 pb-16 md:pt-5">
+
+        {/* Results bar: count + List | Map toggle. Kept out of the filter bar
+            (already full on phones) and right above what it switches */}
+        <div className="flex items-center justify-between gap-3 mb-4 md:mb-5">
+          <p className="text-[13px] text-ink-2" aria-live="polite">
+            Showing <span className="text-ink font-medium">{view === "map" ? mapPins.length : visible.length}</span> of{" "}
+            <span className="text-ink font-medium">{filtered.length}</span> locations
+          </p>
+          <div className="flex shrink-0 gap-0.5 p-0.5 border border-line rounded-full bg-surface" role="group" aria-label="View">
+            <button aria-pressed={view === "list"} onClick={() => switchView("list")} className={`flex items-center gap-1.5 ${segmentClass(view === "list")}`}>
+              <IconList />
+              List
+            </button>
+            <button aria-pressed={view === "map"} onClick={() => switchView("map")} className={`flex items-center gap-1.5 ${segmentClass(view === "map")}`}>
+              <IconMap />
+              Map
+            </button>
+          </div>
+        </div>
+
+        {/* Map: every match, not just the loaded page; has its own empty state */}
+        {view === "map" && <LocationsMap locations={mapPins} onClearFilters={clearFilters} />}
 
         {/* No results */}
-        {filtered.length === 0 && (
+        {view === "list" && filtered.length === 0 && (
           <div className="text-center py-24">
             <p className="text-xl font-semibold text-ink mb-2" style={SERIF}>No locations found</p>
             <p className="text-ink-2 text-sm mb-6">Try adjusting your filters to see more results.</p>
@@ -715,7 +798,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
         )}
 
         {/* Grid */}
-        {filtered.length > 0 && (
+        {view === "list" && filtered.length > 0 && (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
             {visible.map((loc) => {
               const type = primaryType(loc)
@@ -758,7 +841,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
         )}
 
         {/* Load more — teal outline: a catalogue control, not a promo CTA */}
-        {hasMore && (
+        {view === "list" && hasMore && (
           <div className="mt-10 flex justify-center">
             <button
               onClick={loadMore}

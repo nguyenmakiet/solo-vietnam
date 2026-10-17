@@ -194,7 +194,7 @@ export const haNoi: Destination = {
 
   transport: "Walk in the Old Quarter. Grab for longer distances. Avoid motorbike rental unless experienced - traffic is intense.",
 
-  nearbyDestinations: ["ha-long", "ninh-binh", "sapa", "ha-giang-loop", "cao-bang"],
+  nearbyDestinations: ["ha-long", "ninh-binh", "sapa", "ha-giang", "cao-bang"],
 
   coordinates: {
     lat: 21.0285,

@@ -154,7 +154,7 @@ export const sapa: Destination = {
   transport: "Walking for town and nearby villages. Motorbike rental for passes and further destinations. Grab taxis available but slow in the mountains.",
 
   // ─── Nearby ──────────────────────────────────────────────
-  nearbyDestinations: ["ha-giang-loop", "ha-noi"],
+  nearbyDestinations: ["ha-giang", "ha-noi"],
 
   coordinates: {
     lat: 22.3364,

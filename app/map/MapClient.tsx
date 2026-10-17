@@ -3,9 +3,15 @@
 import { useEffect, useMemo, useRef, useState, useCallback } from "react"
 import Link from "next/link"
 import { experiences } from "@/data/experiences"
-import { typeDisplayLabel } from "@/data/taxonomy/types"
 import { dotClass } from "@/lib/category-dot"
-import PhotoPlaceholder from "@/components/PhotoPlaceholder"
+import {
+  VIETNAM_BOUNDS,
+  LocationPopupCard,
+  createBaseMap,
+  loadLeaflet,
+  markerIcon,
+  useMarkerImagePreload,
+} from "@/components/map-shared"
 import "./map.css"
 
 /**
@@ -48,9 +54,6 @@ export type MapDestination = {
 
 type MapMode = "destinations" | "all"
 
-// Whole country, Ha Giang to Con Dao / Phu Quoc: the default and reset view
-const VIETNAM_BOUNDS: [[number, number], [number, number]] = [[8.5, 102.2], [23.4, 109.5]]
-
 // Lowest zoom at which a bubble of each tier may show its name. Below it the
 // bubble is count-only. Names can still drop to count-only (or a dot) when they
 // would overlap a higher-ranked bubble - see layoutBubbles()
@@ -87,48 +90,6 @@ function resolveExp(param: string | null): string | null {
 function getLatLng(loc: MapLocation): [number, number] {
   return [loc.lat, loc.lng]
 }
-
-// Warms the browser cache for a popup photo, so a marker's image is usually
-// loaded by the time it is clicked (hover on desktop, pointerdown on touch)
-const preloaded = new Set<string>()
-function preloadImage(src: string | null) {
-  if (!src || preloaded.has(src)) return
-  preloaded.add(src)
-  const img = new Image()
-  img.decoding = "async"
-  img.src = src
-}
-
-function PopupImage({ src, alt }: { src: string | null; alt: string }) {
-  const [failed, setFailed] = useState(false)
-  const [loaded, setLoaded] = useState(false)
-  if (!src || failed) return <PhotoPlaceholder />
-  // Fades in over the paper-toned thumb background instead of popping in
-  return (
-    <img
-      src={src}
-      alt={alt}
-      width={600}
-      height={400}
-      decoding="async"
-      fetchPriority="high"
-      className={`map-popup-thumb-img${loaded ? " is-loaded" : ""}`}
-      onLoad={() => setLoaded(true)}
-      onError={() => setFailed(true)}
-    />
-  )
-}
-
-// Markers: teal dot; the selected one is a larger signal dot with an ink ring,
-// so selection reads by size and outline as well as colour (styles in map.css).
-// data-slug lets one delegated listener find the location (image preload)
-const markerIcon = (L: typeof import("leaflet"), slug: string, selected = false) =>
-  L.divIcon({
-    className: "",
-    html: `<span class="map-marker${selected ? " map-marker--selected" : ""}" data-slug="${slug}"></span>`,
-    iconSize: selected ? [22, 22] : [14, 14],
-    iconAnchor: selected ? [11, 11] : [7, 7],
-  })
 
 // Destination bubble: dark teal pill "Name · 14"; layoutBubbles() switches it
 // between is-full, is-compact (count only) and is-dot without rebuilding the icon.
@@ -275,55 +236,22 @@ export default function MapClient({
     if (mapRef.current) return
 
     const initMap = async () => {
-      const L = (await import("leaflet")).default
-      // @ts-ignore
-      await import("leaflet/dist/leaflet.css")
+      const L = await loadLeaflet()
       if (!mapContainerRef.current) return
       if ((mapContainerRef.current as any)._leaflet_id) return
 
       LRef.current = L
 
-      const map = L.map(mapContainerRef.current, {
-        zoomControl: false,
-        attributionControl: false,
-        // Half steps let the whole-country view fill a phone screen
-        zoomSnap: 0.5,
-      })
       const exp = initialExpRef.current
       const expLocs = exp ? locationsWithCoords.filter(l => l.experiences.includes(exp)) : []
-      if (expLocs.length > 0) {
-        map.fitBounds(L.latLngBounds(expLocs.map(l => getLatLng(l))), { padding: [60, 60], maxZoom: 10 })
-      } else {
-        map.fitBounds(VIETNAM_BOUNDS, { padding: [12, 12] })
-      }
-
-      // CARTO's free anonymous basemap tiles (basemaps.cartocdn.com) now require a paid
-      // API key and return a watermarked "API KEY REQUIRED" tile without one. Esri's
-      // World Light Gray Base is a free, no-key, no-signup raster basemap with a similar
-      // minimal look, so it's used here instead. See app/map/page.tsx git history / README
-      // if CARTO access is restored and this should be reverted.
-      L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
-        maxZoom: 18,
-        maxNativeZoom: 16,
-      }).addTo(map)
-
-      // Top right, so the selected-location card at the bottom never covers it
-      L.control.zoom({ position: "topright" }).addTo(map)
-      L.control.attribution({ position: "bottomright", prefix: "© Esri, HERE, Garmin · OSM" }).addTo(map)
-
-      // The basemap tile provider bakes in its own (pre-2025-merger) province boundary
-      // lines, which we can't edit since they're pixels. Overlay the current 34-province
-      // boundaries on top instead - see public/data/README.md for the data source.
-      fetch("/data/vn-provinces-2025.geojson")
-        .then((res) => res.json())
-        .then((geojson) => {
-          if (!mapRef.current) return
-          L.geoJSON(geojson, {
-            style: { weight: 1, fill: false, className: "map-province-boundary" }, // colour in map.css
-            interactive: false,
-          }).addTo(map)
-        })
-        .catch(() => {}) // decorative overlay - fine to silently skip if it fails to load
+      const map = createBaseMap(
+        L,
+        mapContainerRef.current,
+        expLocs.length > 0
+          ? { bounds: L.latLngBounds(expLocs.map(l => getLatLng(l))), padding: [60, 60], maxZoom: 10 }
+          : { bounds: VIETNAM_BOUNDS, padding: [12, 12] },
+        () => !!mapRef.current,
+      )
 
       // Added to the map by the mode effect
       pinsLayerRef.current = L.layerGroup()
@@ -858,25 +786,9 @@ export default function MapClient({
     selectedMarkerRef.current = nextSlug
   }, [mapReady, selectedLoc])
 
-  // Preload a marker's popup photo before it is clicked: hover on desktop,
-  // pointerdown on touch (fires before click). One delegated listener for all markers
-  useEffect(() => {
-    const container = mapContainerRef.current
-    if (!mapReady || !container) return
-    const handler = (e: Event) => {
-      const icon = (e.target as Element | null)?.closest?.(".leaflet-marker-icon")
-      const slug = icon?.querySelector<HTMLElement>("[data-slug]")?.dataset.slug
-      if (slug) preloadImage(locBySlug.get(slug)?.image ?? null)
-    }
-    container.addEventListener("pointerover", handler)
-    container.addEventListener("pointerdown", handler)
-    container.addEventListener("focusin", handler) // keyboard: Tab onto a marker
-    return () => {
-      container.removeEventListener("pointerover", handler)
-      container.removeEventListener("pointerdown", handler)
-      container.removeEventListener("focusin", handler)
-    }
-  }, [mapReady, locBySlug])
+  // Preload a marker's popup photo before it is clicked (hover / pointerdown)
+  const imageFor = useCallback((slug: string) => locBySlug.get(slug)?.image ?? null, [locBySlug])
+  useMarkerImagePreload(mapContainerRef, mapReady, imageFor)
 
   // Select one experience (null = all locations) and zoom to its markers
   const selectExp = useCallback((expValue: string | null) => {
@@ -962,23 +874,6 @@ export default function MapClient({
     { value: null as string | null, label: "All locations" },
     ...experiences.filter(e => (expCounts[e.value] ?? 0) > 0).map(e => ({ value: e.value as string | null, label: e.label })),
   ]
-
-  // ── Selected card: swipe down to dismiss (touch only; close button stays) ──
-  const swipeStart = useRef<number | null>(null)
-  const popupRef = useRef<HTMLDivElement>(null)
-  const onPopupTouchStart = (e: React.TouchEvent) => { swipeStart.current = e.touches[0].clientY }
-  const onPopupTouchMove = (e: React.TouchEvent) => {
-    if (swipeStart.current === null || !popupRef.current) return
-    const dy = Math.max(0, e.touches[0].clientY - swipeStart.current)
-    popupRef.current.style.transform = `translateY(${dy}px)`
-  }
-  const onPopupTouchEnd = (e: React.TouchEvent) => {
-    if (swipeStart.current === null || !popupRef.current) return
-    const dy = e.changedTouches[0].clientY - swipeStart.current
-    swipeStart.current = null
-    popupRef.current.style.transform = ""
-    if (dy > 60) setSelectedLoc(null)
-  }
 
   // Close popup and destination tooltip on map click
   useEffect(() => {
@@ -1157,36 +1052,7 @@ export default function MapClient({
 
           {/* Selected location */}
           {selectedLoc && (
-            <div
-              ref={popupRef}
-              className="map-popup"
-              onClick={(e) => e.stopPropagation()}
-              onTouchStart={onPopupTouchStart}
-              onTouchMove={onPopupTouchMove}
-              onTouchEnd={onPopupTouchEnd}
-            >
-              <Link href={`/locations/${selectedLoc.slug}`} className="map-popup-card-link">
-                <div className="map-popup-thumb">
-                  <PopupImage key={selectedLoc.slug} src={selectedLoc.image} alt={selectedLoc.name} />
-                </div>
-                <div className="map-popup-body">
-                  <span className="ui-dot-label map-popup-type">
-                    <span className={dotClass(selectedLoc.type)} aria-hidden="true" />
-                    {typeDisplayLabel(selectedLoc.type)}
-                  </span>
-                  <div className="map-popup-name">{selectedLoc.name}</div>
-                  <div className="map-popup-province">{selectedLoc.province}</div>
-                  <span className="map-popup-link">View location →</span>
-                </div>
-              </Link>
-              <button
-                className="map-popup-close"
-                aria-label="Close location card"
-                onClick={(e) => { e.stopPropagation(); setSelectedLoc(null) }}
-              >
-                ×
-              </button>
-            </div>
+            <LocationPopupCard loc={selectedLoc} onClose={() => setSelectedLoc(null)} />
           )}
         </div>
 

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 // Featured destinations - hardcoded order
 const FEATURED_SLUGS = [
-  "ha-giang-loop",
+  "ha-giang",
   "ninh-binh",
   "ha-long",
   "hoi-an",

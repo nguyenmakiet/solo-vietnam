@@ -6,7 +6,7 @@ export const meoVacTown: Location = {
   updatedAt: "2026-08-24",
   status: "unverified",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.164112943294743,
   lng: 105.41033648192551,
   address: "Meo Vac Town, Ha Giang Province",

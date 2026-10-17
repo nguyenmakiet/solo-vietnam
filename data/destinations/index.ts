@@ -14,7 +14,7 @@ import { catBa } from "./cat-ba"
 import { conDao } from "./con-dao"
 import { daNang } from "./da-nang"
 import { daLat } from "./da-lat"
-import { haGiangLoop } from "./ha-giang-loop"
+import { haGiang } from "./ha-giang"
 import { haLong } from "./ha-long"
 import { haNoi } from "./ha-noi"
 import { hoChiMinhCity } from "./ho-chi-minh-city"
@@ -39,7 +39,7 @@ export const destinations: Destination[] = [
   conDao,
   daNang,
   daLat,
-  haGiangLoop,
+  haGiang,
   haLong,
   haNoi,
   hoChiMinhCity,

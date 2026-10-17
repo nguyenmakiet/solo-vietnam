@@ -6,7 +6,7 @@ export const yenMinhPineForest: Location = {
   name: "Yên Minh Pine Forest",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.16731453372523,
   lng: 105.05474637426761,
   address: "Na Khê - Lao Và Chải - Bạch Đích, Yên Minh, Hà Giang",

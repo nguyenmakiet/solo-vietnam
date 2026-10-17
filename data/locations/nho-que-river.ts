@@ -6,7 +6,7 @@ export const nhoQueRiver: Location = {
   name: "Nho Quế River",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.23164528112462,
   lng: 105.42652150718125,
   address: "Nho Quế River, Mèo Vạc, Hà Giang",

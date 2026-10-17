@@ -6,7 +6,7 @@ export const yenMinhTown: Location = {
   updatedAt: "2026-08-24",
   status: "unverified",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.1167,
   lng: 105.1500,
   address: "Yen Minh Town, Ha Giang Province",

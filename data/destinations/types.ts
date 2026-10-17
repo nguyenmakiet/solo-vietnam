@@ -145,6 +145,10 @@ export type Destination = {
   provinceSlug: string
   region: Region
 
+  // <title> without the site suffix; default "{name} Travel Guide". For a
+  // search term that differs from the place name (Ha Giang -> Ha Giang Loop)
+  seoTitle?: string
+
   // Hero content
   description: string
   tagline?: string

@@ -32,7 +32,7 @@ export type RegionDestination = {
       destinations: [
         { slug: "ha-long",       name: "Ha Long Bay",        province: "Quang Ninh", tagline: "2,000 limestone islands rising from emerald water - one of the world's great seascapes", tags: ["nature", "island"] },
         { slug: "sapa",          name: "Sapa",               province: "Lao Cai",    tagline: "Highland town surrounded by rice terraces and H'Mong villages in the clouds",             tags: ["nature", "culture"] },
-        { slug: "ha-giang-loop", name: "Ha Giang Loop",      province: "Ha Giang",   tagline: "Vietnam's most dramatic motorbike route through karst mountains and ethnic villages",       tags: ["nature", "adventure"] },
+        { slug: "ha-giang",      name: "Ha Giang",           province: "Ha Giang",   tagline: "A scenic motorbike loop through karst mountains and ethnic villages",                        tags: ["nature", "adventure"] },
         { slug: "ninh-binh",     name: "Ninh Binh",          province: "Ninh Binh",  tagline: "Trang An's river caves and the ancient capital of Hoa Lu - Halong Bay on land",           tags: ["nature", "history"] },
         { slug: "ban-gioc",      name: "Ban Gioc Waterfall", province: "Cao Bang",   tagline: "Vietnam's most spectacular waterfall thundering on the China border",                      tags: ["nature"] },
         { slug: "mu-cang-chai",  name: "Mu Cang Chai",       province: "Yen Bai",    tagline: "The most beautiful rice terraces in Vietnam - golden in September, green in June",         tags: ["nature", "culture"] },

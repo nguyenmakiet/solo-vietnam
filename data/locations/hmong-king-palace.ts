@@ -6,7 +6,7 @@ export const hmongKingPalace: Location = {
   name: "Hmong King Palace",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.25632622972936,
   lng: 105.2621945561199,
   address: "Sà Phìn, Đồng Văn, Hà Giang, Vietnam",

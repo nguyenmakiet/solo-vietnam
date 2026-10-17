@@ -6,7 +6,7 @@ export const quanBaTwinMountains: Location = {
   name: "Quản Bạ Twin Mountains",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination: "ha-giang-loop",
+  destination: "ha-giang",
   lat: 23.06521535060752,
   lng: 105.00120271105881,
   address: "Nà Khoang, Tam Sơn, Quản Bạ, Hà Giang",
