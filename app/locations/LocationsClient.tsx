@@ -255,9 +255,11 @@ const ROW_LABEL = "w-[76px] md:w-[88px] shrink-0 text-[11px] font-semibold track
 interface Props {
   locations: LocationCard[]
   initialProvince?: string
+  /** Site-wide "280+" claim (lib/site-stats.ts), passed in so the client never imports the location data */
+  countLabel: string
 }
 
-export default function LocationsClient({ locations, initialProvince }: Props) {
+export default function LocationsClient({ locations, initialProvince, countLabel }: Props) {
   const [region, setRegion] = useState<Region | null>(null)
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedExperiences, setSelectedExperiences] = useState<string[]>([])
@@ -548,7 +550,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
             Locations in Vietnam
           </h1>
           <p className="text-[15px] md:text-base text-ink-2 max-w-2xl leading-relaxed">
-            {locations.length}+ places across Vietnam - beaches, mountains, caves, temples, waterfalls and hidden gems worth going solo.
+            {countLabel} places across Vietnam - beaches, mountains, caves, temples, waterfalls and hidden gems worth going solo.
           </p>
         </div>
       </section>

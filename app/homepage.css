@@ -205,18 +205,30 @@
   color: var(--color-ink-2);
   margin: 0;
 }
-.home-map-legend {
-  margin: 20px 0 0;
-}
 .home-map-hint {
   font-size: 13px;
   color: var(--color-ink-2);
   margin: 20px 0 0;
 }
-.home-map-browse {
-  display: inline-block;
+/* Primary action of the card: the interactive map */
+.home-map-open {
+  display: inline-flex;
+  margin-top: 16px;
   font-size: 14px;
-  margin-top: 12px;
+}
+/* Secondary: a quiet text link under the button */
+.home-map-browse {
+  display: table;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+/* Phones: the map uses the card's side padding too (every px counts for the
+   pills); the text above keeps its inset */
+@media (max-width: 899px) {
+  .home-map-canvas {
+    margin: 0 -8px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -235,50 +247,133 @@
     position: sticky;
     top: 100px;
   }
-  .home-map-legend {
-    flex-direction: column;
-    margin-top: 28px;
-  }
 }
 
-/* ── OPEN MAP PROMO (teal-ink card, not a page band) ── */
-.home-map-cta-banner {
-  display: flex;
+/* ── DESTINATION MAP (components/HomeDestinationMap.tsx) ──
+   Static outline + one pill per destination, positioned in % so the whole
+   picture scales together; only the pills keep a fixed px size. Pill look =
+   /map's destination bubbles (app/map/map.css .map-dest.is-full): dark teal
+   fill, paper ring and text, "Name · count". The canvas is capped at 520px so
+   the layout is nearly the same on every screen (labels are tuned in
+   lib/home-map.ts for 343-520px). */
+.home-dmap {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  aspect-ratio: 812 / 873; /* the outline's viewBox */
+  container: home-dmap / inline-size;
+}
+.home-dmap-outline,
+.home-dmap-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-dmap-outline {
+  display: block;
+}
+.home-dmap-lines line {
+  stroke: var(--color-teal-ink);
+  stroke-width: 1.5px;
+  vector-effect: non-scaling-stroke;
+}
+/* Anchor dot on the destination (same as /map's .is-offset::after) */
+.home-dmap-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: var(--color-teal-ink);
+  border: 2px solid var(--color-paper);
+}
+.home-dmap-pills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.home-dmap-pill {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  white-space: nowrap;
   background: var(--color-teal-ink);
   color: var(--color-paper);
-  border-radius: var(--radius-card);
-  padding: 20px 24px;
-  margin-top: 12px;
+  border: 2px solid var(--color-paper);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+.home-dmap-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.home-dmap-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
   text-decoration: none;
 }
-.home-map-cta-banner:focus-visible {
+/* 32px tall tap target around the 26px pill */
+.home-dmap-link::before {
+  content: "";
+  position: absolute;
+  inset: -10px -6px;
+}
+.home-dmap-link:hover .home-dmap-name {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.home-dmap-link:focus-visible {
+  outline: none;
+}
+.home-dmap-link:focus-visible::before {
   outline: 2px solid var(--color-teal);
-  outline-offset: 2px;
+  outline-offset: 0;
+  border-radius: 999px;
 }
-.home-map-cta-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--color-paper);
-  margin-bottom: 2px;
+.home-dmap-join,
+.home-dmap-count {
+  color: var(--color-teal-light);
+  font-variant-numeric: tabular-nums;
 }
-.home-map-cta-sub {
-  font-size: 13px;
-  color: color-mix(in srgb, var(--color-paper) 75%, var(--color-teal-ink));
+.home-dmap-count.is-single::before {
+  content: "·";
+  margin-right: 6px;
 }
-.home-map-cta-btn {
-  flex-shrink: 0;
-  font-size: 14px;
+/* Narrow canvas (phones): slightly smaller text so 18 pills fit beside the
+   coast; still a 26px pill with a 32px tap target */
+@container home-dmap (max-width: 419px) {
+  .home-dmap-pill {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+  .home-dmap-pill,
+  .home-dmap-item,
+  .home-dmap-link {
+    gap: 4px;
+  }
+  .home-dmap-count.is-single::before {
+    margin-right: 4px;
+  }
 }
-.home-map-cta-banner:hover .home-map-cta-btn {
-  background: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink));
-}
-@media (max-width: 560px) {
-  .home-map-cta-banner {
-    flex-direction: column;
-    align-items: stretch;
+/* 360px phones (~334px canvas): one step smaller again */
+@container home-dmap (max-width: 345px) {
+  .home-dmap-pill {
+    padding: 0 7px;
+    font-size: 10.5px;
   }
 }
 

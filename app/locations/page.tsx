@@ -7,6 +7,7 @@ import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { releasedBestMonths } from "@/data/best-months-release"
 import { provinces } from "@/data/provinces"
 import { OG_FALLBACK_IMAGE, mapThumbUrl } from "@/lib/cloudinary"
+import { LOCATION_COUNT_LABEL } from "@/lib/site-stats"
 import { toCoordinate } from "@/lib/coordinates"
 
 function truncate(str: string, max: number): string {
@@ -88,7 +89,7 @@ export default async function LocationsPage({ searchParams }: Props) {
 
   return (
     <Suspense>
-      <LocationsClient locations={locationCards} initialProvince={initialProvince} />
+      <LocationsClient locations={locationCards} initialProvince={initialProvince} countLabel={LOCATION_COUNT_LABEL} />
     </Suspense>
   )
 }
