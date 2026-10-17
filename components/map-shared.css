@@ -59,6 +59,76 @@
   border-radius: 50%;
 }
 
+/* ── PHOTO PINS: few pins in view (updatePinLooks in map-shared.tsx) ──
+   44px round photo with a white ring; selected = 56px with the selected dot's
+   signal + ink rings. The name label shows on hover, focus and selection only:
+   permanent labels under every photo would collide. */
+.map-marker--photo {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: var(--color-paper);
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 1px 4px color-mix(in srgb, var(--color-ink) 35%, transparent);
+  animation: map-pin-in 0.18s ease-out;
+}
+.leaflet-marker-icon:hover .map-marker--photo {
+  transform: none; /* the label would scale too */
+}
+.map-marker--photo.map-marker--selected {
+  width: 56px;
+  height: 56px;
+  background: var(--color-paper);
+  border: 3px solid var(--color-signal);
+  outline: 2px solid var(--color-ink);
+}
+.map-marker-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.map-marker-name {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 180px;
+  padding: 2px 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-button);
+  color: var(--color-ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  pointer-events: none;
+}
+.map-marker--selected .map-marker-name,
+.leaflet-marker-icon:focus-visible .map-marker-name {
+  display: block;
+}
+/* Hover label on devices with a real pointer only: a tap selects instead */
+@media (hover: hover) {
+  .leaflet-marker-icon:hover .map-marker-name {
+    display: block;
+  }
+}
+@keyframes map-pin-in {
+  from { transform: scale(0.6); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-marker { transition: none; }
+  .leaflet-marker-icon:hover .map-marker { transform: none; }
+  .map-marker--photo { animation: none; }
+}
+
 /* ── LEAFLET CONTROLS ── */
 .map-container .leaflet-bar {
   border: 1px solid var(--color-line);

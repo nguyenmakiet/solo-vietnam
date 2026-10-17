@@ -6,7 +6,7 @@ import type { Location } from "@/data/location"
 import { tagDisplayLabel } from "@/data/taxonomy/tags"
 import { releasedBestMonths } from "@/data/best-months-release"
 import { provinces } from "@/data/provinces"
-import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary"
+import { OG_FALLBACK_IMAGE, mapThumbUrl } from "@/lib/cloudinary"
 import { toCoordinate } from "@/lib/coordinates"
 
 function truncate(str: string, max: number): string {
@@ -34,6 +34,7 @@ function toLocationCard(loc: Location): LocationCard {
     region: loc.provinces.map((p) => PROVINCE_REGION.get(p)).find((r) => r !== undefined) ?? null,
     months: releasedBestMonths(loc),
     image: cardImageUrl(loc.heroImage),
+    thumb: mapThumbUrl(loc.heroImage),
     lat: toCoordinate(loc.lat),
     lng: toCoordinate(loc.lng),
     subtitle: loc.tags[0] ? tagDisplayLabel(loc.tags[0]) : truncate(loc.seoDescription, 70),

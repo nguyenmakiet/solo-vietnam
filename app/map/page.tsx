@@ -2,6 +2,7 @@ import { activeLocations } from "@/data/all-locations"
 import { destinations } from "@/data/destinations"
 import type { Location } from "@/data/location"
 import { toCoordinate } from "@/lib/coordinates"
+import { mapThumbUrl } from "@/lib/cloudinary"
 import MapClient, { type MapDestination, type MapLocation } from "./MapClient"
 
 function getLatLng(loc: Location): [number, number] {
@@ -42,6 +43,7 @@ const mapLocations: MapLocation[] = activeLocations.flatMap((loc) => {
     type: primaryType(loc),
     province: getProvinceLabel(loc),
     image: popupImageUrl(loc.heroImage),
+    thumb: mapThumbUrl(loc.heroImage),
     destination: loc.destination && destinationSlugs.has(loc.destination) ? loc.destination : null,
   }]
 })

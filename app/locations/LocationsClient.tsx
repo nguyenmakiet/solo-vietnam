@@ -414,6 +414,7 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
         type: primaryType(loc),
         province: loc.provinces[0] ? formatSlug(loc.provinces[0]) : "",
         image: loc.image,
+        thumb: loc.thumb,
       }]
     })
   }, [filtered, view])
