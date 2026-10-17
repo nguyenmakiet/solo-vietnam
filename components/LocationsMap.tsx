@@ -154,13 +154,33 @@ export default function LocationsMap({
     selectedMarkerRef.current = nextSlug
   }, [mapReady, selectedLoc])
 
+  // The card sits over the top of the map: if it covers the selected pin, pan
+  // the map just enough to show the pin below it
+  const wrapRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const map = mapRef.current
+    if (!mapReady || !map || !selectedLoc) return
+    const frame = requestAnimationFrame(() => {
+      const card = wrapRef.current?.querySelector(".map-popup")?.getBoundingClientRect()
+      const box = map.getContainer().getBoundingClientRect()
+      if (!card) return
+      const pt = map.latLngToContainerPoint([selectedLoc.lat, selectedLoc.lng])
+      const x = pt.x + box.left
+      const y = pt.y + box.top
+      const margin = 24
+      if (x < card.left - margin || x > card.right + margin || y > card.bottom + margin) return
+      map.panBy([0, y - (card.bottom + margin)])
+    })
+    return () => cancelAnimationFrame(frame)
+  }, [mapReady, selectedLoc])
+
   const imageFor = useCallback((slug: string) => locBySlug.get(slug)?.image ?? null, [locBySlug])
   useMarkerImagePreload(containerRef, mapReady, imageFor)
 
   return (
     // isolate: Leaflet panes and controls (z-index 400-1000) stay below the
     // sticky filter bar's dropdowns and the site header's mobile menu
-    <div className="relative isolate z-0 h-[70dvh] min-h-[360px] md:h-[calc(100dvh-220px)] md:min-h-[520px] border border-line rounded-card overflow-hidden bg-paper">
+    <div ref={wrapRef} className="relative isolate z-0 h-[70dvh] min-h-[360px] md:h-[calc(100dvh-220px)] md:min-h-[520px] border border-line rounded-card overflow-hidden bg-paper">
       <div ref={containerRef} className="map-container" />
 
       {mapReady && locations.length === 0 && (
@@ -180,7 +200,8 @@ export default function LocationsMap({
         </div>
       )}
 
-      {selectedLoc && <LocationPopupCard loc={selectedLoc} onClose={() => setSelectedLoc(null)} />}
+      {/* Top of the map: on first view the map's bottom edge is below the fold */}
+      {selectedLoc && <LocationPopupCard loc={selectedLoc} onClose={() => setSelectedLoc(null)} placement="top" />}
     </div>
   )
 }

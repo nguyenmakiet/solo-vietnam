@@ -109,6 +109,12 @@
   overflow: hidden;
 }
 
+/* /locations map view: top left, so it is on screen when the map's bottom is not */
+.map-popup--top {
+  top: 20px;
+  bottom: auto;
+}
+
 .map-popup-card-link {
   display: block;
   text-decoration: none;
@@ -223,6 +229,11 @@
     max-width: 420px;
     margin: 0 auto;
     touch-action: pan-x; /* vertical swipe dismisses the card */
+  }
+  /* Full width: may cover the zoom buttons while open (pinch zoom still works) */
+  .map-popup--top {
+    top: 12px;
+    bottom: auto;
   }
   .map-popup-card-link {
     display: flex;

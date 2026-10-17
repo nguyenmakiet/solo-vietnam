@@ -159,20 +159,32 @@ export function PopupImage({ src, alt }: { src: string | null; alt: string }) {
 /**
  * Selected-location card, placed over the map (bottom left on desktop, a
  * compact strip along the bottom on phones). Swipe down dismisses it on touch;
- * the close button stays.
+ * the close button stays. placement="top": pinned to the top of the map
+ * instead (swipe up dismisses), for a map whose bottom edge can sit below
+ * the fold - the /locations map view.
  */
-export function LocationPopupCard({ loc, onClose }: { loc: PopupLocation; onClose: () => void }) {
+export function LocationPopupCard({
+  loc,
+  onClose,
+  placement = "bottom",
+}: {
+  loc: PopupLocation
+  onClose: () => void
+  placement?: "bottom" | "top"
+}) {
+  // Swipe toward the map edge the card sits on: down at the bottom, up at the top
+  const dir = placement === "top" ? -1 : 1
   const swipeStart = useRef<number | null>(null)
   const popupRef = useRef<HTMLDivElement>(null)
   const onTouchStart = (e: React.TouchEvent) => { swipeStart.current = e.touches[0].clientY }
   const onTouchMove = (e: React.TouchEvent) => {
     if (swipeStart.current === null || !popupRef.current) return
-    const dy = Math.max(0, e.touches[0].clientY - swipeStart.current)
+    const dy = dir * Math.max(0, dir * (e.touches[0].clientY - swipeStart.current))
     popupRef.current.style.transform = `translateY(${dy}px)`
   }
   const onTouchEnd = (e: React.TouchEvent) => {
     if (swipeStart.current === null || !popupRef.current) return
-    const dy = e.changedTouches[0].clientY - swipeStart.current
+    const dy = dir * (e.changedTouches[0].clientY - swipeStart.current)
     swipeStart.current = null
     popupRef.current.style.transform = ""
     if (dy > 60) onClose()
@@ -181,7 +193,7 @@ export function LocationPopupCard({ loc, onClose }: { loc: PopupLocation; onClos
   return (
     <div
       ref={popupRef}
-      className="map-popup"
+      className={`map-popup${placement === "top" ? " map-popup--top" : ""}`}
       onClick={(e) => e.stopPropagation()}
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}

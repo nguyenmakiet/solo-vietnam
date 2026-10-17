@@ -203,6 +203,22 @@ function IconChevron({ open }: { open: boolean }) {
   )
 }
 
+function IconList() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  )
+}
+
+function IconMap() {
+  return (
+    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14" />
+    </svg>
+  )
+}
+
 // ─── Styles (design tokens from app/globals.css) ─────────────────────────────
 
 const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
@@ -737,28 +753,32 @@ export default function LocationsClient({ locations, initialProvince }: Props) {
               </button>
             )}
 
-            {/* Result count + List | Map toggle — quiet, pushed right */}
-            <div className="ml-auto flex items-center gap-3 pl-3">
-              <p className="text-xs text-ink-2" aria-live="polite">
-                Showing <span className="text-ink font-medium">{view === "map" ? mapPins.length : visible.length}</span> of{" "}
-                <span className="text-ink font-medium">{filtered.length}</span> locations
-              </p>
-              <div className={CHIP_ROW} role="group" aria-label="View">
-                <button aria-pressed={view === "list"} onClick={() => switchView("list")} className={segmentClass(view === "list")}>
-                  List
-                </button>
-                <button aria-pressed={view === "map"} onClick={() => switchView("map")} className={segmentClass(view === "map")}>
-                  Map
-                </button>
-              </div>
-            </div>
           </div>
 
         </div>
       </div>
 
       {/* ── Content ── */}
-      <div className="max-w-6xl mx-auto px-6 pt-6 pb-16 md:pt-8">
+      <div className="max-w-6xl mx-auto px-6 pt-4 pb-16 md:pt-5">
+
+        {/* Results bar: count + List | Map toggle. Kept out of the filter bar
+            (already full on phones) and right above what it switches */}
+        <div className="flex items-center justify-between gap-3 mb-4 md:mb-5">
+          <p className="text-[13px] text-ink-2" aria-live="polite">
+            Showing <span className="text-ink font-medium">{view === "map" ? mapPins.length : visible.length}</span> of{" "}
+            <span className="text-ink font-medium">{filtered.length}</span> locations
+          </p>
+          <div className="flex shrink-0 gap-0.5 p-0.5 border border-line rounded-full bg-surface" role="group" aria-label="View">
+            <button aria-pressed={view === "list"} onClick={() => switchView("list")} className={`flex items-center gap-1.5 ${segmentClass(view === "list")}`}>
+              <IconList />
+              List
+            </button>
+            <button aria-pressed={view === "map"} onClick={() => switchView("map")} className={`flex items-center gap-1.5 ${segmentClass(view === "map")}`}>
+              <IconMap />
+              Map
+            </button>
+          </div>
+        </div>
 
         {/* Map: every match, not just the loaded page; has its own empty state */}
         {view === "map" && <LocationsMap locations={mapPins} onClearFilters={clearFilters} />}
