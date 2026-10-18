@@ -13,6 +13,11 @@ as: "*.js",
 },
 
 images: {
+// Fewer srcset widths = fewer Cloudinary transformation variants per image.
+// Drops 750, 1080, 2048 and 3840 from the defaults; nothing asks for more than 1920.
+// imageSizes stays at the default (32-384) so the homepage strip's "0vw" trick
+// still resolves to the smallest candidate.
+deviceSizes: [640, 828, 1200, 1920],
 remotePatterns: [
 {
 protocol: "https",
