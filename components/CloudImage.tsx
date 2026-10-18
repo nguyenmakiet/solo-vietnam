@@ -19,7 +19,9 @@ export default function CloudImage({ publicId, alt, caption }: CloudImageProps) 
   if (/placeholder$/.test(publicId) || failed) return null
 
   const thumbUrl = `https://res.cloudinary.com/dl5kqhspv/image/upload/w_900,q_auto,f_auto/${publicId}`
-  const fullUrl  = `https://res.cloudinary.com/dl5kqhspv/image/upload/q_auto,f_auto/${publicId}`
+  // Lightbox: capped at 1600px wide (c_limit never upscales a smaller original)
+  // instead of delivering the full-resolution upload
+  const fullUrl  = `https://res.cloudinary.com/dl5kqhspv/image/upload/w_1600,c_limit,q_auto,f_auto/${publicId}`
 
   return (
     <>
