@@ -284,7 +284,13 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "thien-cam-beach",
   ],
   "batch-8": [
+    "chen-kieu-pagoda",
     "hang-de-cho-waterfall",
+    "khleang-pagoda",
+    "lung-khuy-cave",
+    "nam-kang-ho-tao-mountain",
+    "som-rong-pagoda",
+    "xiem-can-pagoda",
   ],
 }
 
@@ -338,6 +344,10 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "do-son-beach": "Sep kept for the buffalo fighting festival; Oct-Apr 'isn't suitable for swimming'",
   "nha-trang-beach": "Oct-Dec rainy season with big waves; 'any time of year' refers to rip currents, not a year-round season",
   "thien-cam-beach": "Sep-Mar is quiet but 'too cold for swimming'",
+  // batch-8
+  "nam-kang-ho-tao-mountain": "'Any time of year' refers to rainy or icy days to avoid; May-Sep rain and Nov-Jan frost are dangerous, excluded",
+  "som-rong-pagoda": "May-Sep rainy season is only 'less comfortable' with little shelter",
+  "xiem-can-pagoda": "Sep/Oct only dates Pchum Ben ('quieter and more solemn'), not a recommended visit window",
   // batch-8
   "hang-de-cho-waterfall": "The explicit window is 'Jul - early Nov'; Jun appears only as peak water when rain makes the dirt road almost impassable, so it stays excluded",
 }
