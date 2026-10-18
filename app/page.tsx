@@ -91,7 +91,7 @@ export default function Home() {
                 alt={d.name}
                 fill
                 // All four sit in the first viewport on desktop. On mobile only three show:
-                // the 4th is hidden by CSS, and "0vw" resolves it to the smallest (16px) candidate.
+                // the 4th is hidden by CSS, and "0vw" resolves it to the smallest (32px) candidate.
                 sizes={i < 3 ? "(min-width: 768px) 25vw, 34vw" : "(min-width: 768px) 25vw, 0vw"}
                 loading="eager"
                 fetchPriority={i < 3 ? "high" : "auto"}

@@ -208,7 +208,7 @@ export function usePinImageFallback(
 }
 
 // Warms the browser cache for a popup photo, so a marker's image is usually
-// loaded by the time it is clicked (hover on desktop, pointerdown on touch)
+// loaded by the time it is clicked (pointerdown fires before click)
 const preloaded = new Set<string>()
 export function preloadImage(src: string | null) {
   if (!src || preloaded.has(src)) return
@@ -219,9 +219,11 @@ export function preloadImage(src: string | null) {
 }
 
 /**
- * Preloads a marker's popup photo before it is clicked: hover on desktop,
- * pointerdown on touch (fires before click). One delegated listener for all
- * markers in the container; markers carry their slug in data-slug.
+ * Preloads a marker's popup photo before it is clicked: pointerdown (mouse and
+ * touch, fires before click) or keyboard focus. Not on hover - sweeping the
+ * cursor across the map fetched a photo for every marker it passed. One
+ * delegated listener for all markers in the container; markers carry their
+ * slug in data-slug.
  */
 export function useMarkerImagePreload(
   containerRef: React.RefObject<HTMLElement | null>,
@@ -236,11 +238,9 @@ export function useMarkerImagePreload(
       const slug = icon?.querySelector<HTMLElement>("[data-slug]")?.dataset.slug
       if (slug) preloadImage(imageFor(slug))
     }
-    container.addEventListener("pointerover", handler)
     container.addEventListener("pointerdown", handler)
     container.addEventListener("focusin", handler) // keyboard: Tab onto a marker
     return () => {
-      container.removeEventListener("pointerover", handler)
       container.removeEventListener("pointerdown", handler)
       container.removeEventListener("focusin", handler)
     }
