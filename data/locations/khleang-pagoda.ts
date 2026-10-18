@@ -31,9 +31,12 @@ export const khleangPagoda: Location = {
   entranceFee: "Free. A small donation is appreciated and goes towards upkeep.",
   openingHours: "The grounds are generally open during daylight hours. Access to the main hall depends on ceremonies and the monks - if it's closed, ask politely.",
   mapUrl: "https://www.google.com/maps?q=9.610098,105.976742",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("khleang-pagoda-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792340062056!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHE3ZG50T3c.!2m2!1d9.610154727083465!2d105.9768800160945!3f19.787348267692078!4f7.077939434283294!5f0.7820865974627469" },
+  heroImage: heroUrl("khleng-pagoda-soc-trang_quxbem"),
+  gallery: [
+    "khleng-pagoda-soc-trang_quxbem",
+    "khleng-pagoda-soc-trang-2_ochsld",
+  ],
   seoDescription:
     "Kh'leang Pagoda in central Sóc Trăng is said to be the oldest Khmer pagoda in the province, founded around 1533 - a national architectural and artistic relic with an early 20th-century main hall, a 6.8 m Buddha cast in 1916, old Khmer scriptures, bronze Buddhas and tall sugar palms.",
   tips: [

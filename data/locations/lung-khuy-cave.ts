@@ -28,9 +28,15 @@ export const lungKhuyCave: Location = {
   entranceFee: "30,000 VND per person. Some 2024 listings give 50,000 VND for adults and 20,000 VND for children, so check at the ticket office. A local motorbike ride up the hill from the village costs about 40,000 VND per person.",
   openingHours: "Open daily. Visit in daylight - the walk up and down has no lighting.",
   mapUrl: "https://www.google.com/maps?q=23.078693,105.019882",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("lung-khuy-cave-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792338915937!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFp5S0R3dFFF!2m2!1d23.07861518570073!2d105.0200054228783!3f233.62939889557484!4f2.5079094994296867!5f0.7820865974627469" },
+  heroImage: heroUrl("lung-khuy-cave-ha-giang-3_vg4djy"),
+  gallery: [
+    "lung-khuy-cave-ha-giang-1_sck046",
+    "lung-khuy-cave-ha-giang-2_olvfqr",
+    "lung-khuy-cave-ha-giang-3_vg4djy",
+    "lung-khuy-cave-ha-giang-4_rsbfyp",
+    "lung-khuy-cave-ha-giang-5_mppajv",
+  ],
   seoDescription:
     "Lùng Khúy Cave in Quản Bạ is often called the most beautiful cave on the Đồng Văn Karst Plateau - a 1.2 km uphill walk from a Hmông village leads to a huge, cool chamber of stalactites and stalagmites with a boardwalk loop, a quiet, uncrowded stop on the Hà Giang Loop.",
   tips: [

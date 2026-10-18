@@ -31,9 +31,11 @@ export const xiemCanPagoda: Location = {
   entranceFee: "Free. Donations are welcome.",
   openingHours: "Daytime visits, usually until about 6:00 PM; open later during festivals.",
   mapUrl: "https://www.google.com/maps?q=9.253657,105.797978",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("xiem-can-pagoda-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792340444986!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFqZFhIUnc.!2m2!1d9.253729425614075!2d105.7981745114814!3f259.1135386968563!4f20.926666901262067!5f0.7820865974627469" },
+  heroImage: heroUrl("xiem-can-pagoda_zksi3s"),
+  gallery: [
+    "xiem-can-pagoda_zksi3s",
+  ],
   seoDescription:
     "Xiêm Cán is a Khmer Theravada pagoda about 12 km from Bạc Liêu, founded in 1887 - golden, many-tiered roofs rising above the rice fields, a 36.3 m main hall said to be the tallest of any Khmer pagoda in the south, wall-to-ceiling murals of the Buddha's life and 115 statues.",
   tips: [

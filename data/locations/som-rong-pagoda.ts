@@ -31,9 +31,12 @@ export const somRongPagoda: Location = {
   entranceFee: "Free. Optional services cost extra: renting a Khmer costume for photos costs from about 100,000 VND for children to 300,000-500,000 VND for adults (2026), with make-up and photographer packages on top. Motorbike parking outside the gate costs about 10,000 VND.",
   openingHours: "6:00 AM - 6:00 PM daily.",
   mapUrl: "https://www.google.com/maps?q=9.623633,105.981092",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("som-rong-pagoda-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792339684205!6m8!1m7!1sCAoSHENJQUJJaEJ0MGpEcWQ1OEdCcE1BWHl0VkxSZWI.!2m2!1d9.623578295584506!2d105.9808384311109!3f329.22582660483994!4f-30.13276809742399!5f0.7820865974627469" },
+  heroImage: heroUrl("som-rong-pagoda-soc-trang_seiku2"),
+  gallery: [
+    "som-rong-pagoda-soc-trang_seiku2",
+    "som-rong-pagoda-soc-trang-2_erw4fl",
+  ],
   seoDescription:
     "Som Rong is a Khmer Theravada pagoda founded in 1785 in central Sóc Trăng, home to a 63 m white reclining Buddha on a 28 m platform, recognised as the largest in Vietnam - colourful Khmer architecture, a 25 m stupa and a glowing sunset view, free to visit.",
   tips: [
