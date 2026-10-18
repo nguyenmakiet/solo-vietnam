@@ -50,6 +50,7 @@ import { catCatVillage } from "@/data/locations/cat-cat-village"
 import { catCoBeach } from "@/data/locations/cat-co-beach"
 import { catTienNationalPark } from "@/data/locations/cat-tien-national-park"
 import { chamIsland } from "@/data/locations/cham-island"
+import { chenKieuPagoda } from "@/data/locations/chen-kieu-pagoda"
 import { chuaChanMountain } from "@/data/locations/chua-chan-mountain"
 import { chungNhiaVuMountain } from "@/data/locations/chung-nhia-vu-mountain"
 import { coThachBeach } from "@/data/locations/co-thach-beach"
@@ -144,6 +145,7 @@ import { khauCocChaPass } from "@/data/locations/khau-coc-cha-pass"
 import { khauPhaPass } from "@/data/locations/khau-pha-pass"
 import { kheVanWaterfall } from "@/data/locations/khe-van-waterfall"
 import { khemBeach } from "@/data/locations/khem-beach"
+import { khleangPagoda } from "@/data/locations/khleang-pagoda"
 import { khoMuongCave } from "@/data/locations/kho-muong-cave"
 import { khoMuongVillage } from "@/data/locations/kho-muong-village"
 import { kimLienTemple } from "@/data/locations/kim-lien-temple"
@@ -160,6 +162,7 @@ import { loLoChaiVillage } from "@/data/locations/lo-lo-chai-village"
 import { longBienBridge } from "@/data/locations/long-bien-bridge"
 import { longSonPagoda } from "@/data/locations/long-son-pagoda"
 import { lungCuFlagTower } from "@/data/locations/lung-cu-flag-tower"
+import { lungKhuyCave } from "@/data/locations/lung-khuy-cave"
 import { lungPo } from "@/data/locations/lung-po-red-river-source"
 import { lySonGarlicFields } from "@/data/locations/ly-son-garlic-fields"
 import { macDynastyCitadel } from "@/data/locations/mac-dynasty-citadel"
@@ -182,6 +185,7 @@ import { muongHoaValley } from "@/data/locations/muong-hoa-valley"
 import { myKheBeach } from "@/data/locations/my-khe-beach"
 import { mySonSanctuary } from "@/data/locations/my-son-sanctuary"
 import { namDuIslands } from "@/data/locations/nam-du-islands"
+import { namKangHoTaoMountain } from "@/data/locations/nam-kang-ho-tao-mountain"
 import { nguChiSonMountain } from "@/data/locations/ngu-chi-son-mountain"
 import { nguomNgaoCave } from "@/data/locations/nguom-ngao-cave"
 import { ngocSonTemple } from "@/data/locations/ngoc-son-temple"
@@ -228,6 +232,7 @@ import { saViCape } from "@/data/locations/sa-vi-cape"
 import { samSonBeach } from "@/data/locations/sam-son-beach"
 import { saoBeach } from "@/data/locations/sao-beach"
 import { sixSensesBeach } from "@/data/locations/six-senses-beach"
+import { somRongPagoda } from "@/data/locations/som-rong-pagoda"
 import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
 import { sShapeRiceTerraces } from "@/data/locations/s-shape-rice-terraces"
@@ -279,6 +284,7 @@ import { warRemnantsMuseum } from "@/data/locations/war-remnants-museum"
 import { westLake } from "@/data/locations/west-lake"
 import { whiteSandDunes } from "@/data/locations/white-sand-dunes"
 import { worldCoffeeMuseum } from "@/data/locations/world-coffee-museum"
+import { xiemCanPagoda } from "@/data/locations/xiem-can-pagoda"
 import { yTy } from "@/data/locations/y-ty"
 import { yavlyWaterfall } from "@/data/locations/yavly-waterfall"
 import { yenMinhPineForest } from "@/data/locations/yen-minh-pine-forest"
@@ -337,6 +343,7 @@ export const allLocations: Location[] = [
   catCoBeach,
   catTienNationalPark,
   chamIsland,
+  chenKieuPagoda,
   chuaChanMountain,
   chungNhiaVuMountain,
   coThachBeach,
@@ -429,6 +436,7 @@ export const allLocations: Location[] = [
   khauPhaPass,
   kheVanWaterfall,
   khemBeach,
+  khleangPagoda,
   khoMuongCave,
   khoMuongVillage,
   kimLienTemple,
@@ -445,6 +453,7 @@ export const allLocations: Location[] = [
   longBienBridge,
   longSonPagoda,
   lungCuFlagTower,
+  lungKhuyCave,
   lungPo,
   lySonGarlicFields,
   macDynastyCitadel,
@@ -467,6 +476,7 @@ export const allLocations: Location[] = [
   myKheBeach,
   mySonSanctuary,
   namDuIslands,
+  namKangHoTaoMountain,
   ngocSonTemple,
   nguChiSonMountain,
   nguomNgaoCave,
@@ -515,6 +525,7 @@ export const allLocations: Location[] = [
   samSonBeach,
   saoBeach,
   sixSensesBeach,
+  somRongPagoda,
   sonDoongCave,
   sonTraPeninsula,
   sShapeRiceTerraces,
@@ -566,6 +577,7 @@ export const allLocations: Location[] = [
   westLake,
   whiteSandDunes,
   worldCoffeeMuseum,
+  xiemCanPagoda,
   yTy,
   yavlyWaterfall,
   yenMinhPineForest,
