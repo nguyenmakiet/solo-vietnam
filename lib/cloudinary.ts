@@ -51,13 +51,20 @@ export const destinationCardUrl = (publicId: string) =>
 export const thumbnailUrl = (publicId: string) =>
   cloudinaryUrl(publicId, ImageSize.thumbnail.w, ImageSize.thumbnail.h)
 
-// Round map-pin photo (components/map-shared.tsx): 96px square crop of a hero
-// image (2x the 44px pin), gravity auto so the subject stays in the circle.
-// null = no real photo yet; the pin stays a dot
-export function mapThumbUrl(heroImage: string | undefined): string | null {
-  // Not a standard hero URL: no thumb rather than a 1200px image in a 44px pin
-  if (!heroImage || heroImage.includes("placeholder") || !heroImage.includes("w_1200,h_630,c_fill")) return null
-  return heroImage.replace("w_1200,h_630,c_fill", "w_96,h_96,c_fill,g_auto")
+// 96px square thumbnail, shared by the round map pins (components/map-shared.tsx,
+// 2x the 44px pin) and the search results (components/Search/SearchModal.tsx),
+// so both ask Cloudinary for the same variant of an image. Gravity auto keeps
+// the subject in the crop. Any existing transformation segment is replaced.
+// null = no real photo yet (the pin stays a dot, search shows an empty thumb)
+const THUMB_96 = "w_96,h_96,c_fill,g_auto,q_auto,f_auto"
+const UPLOAD = "/image/upload/"
+export function thumb96Url(url: string | undefined): string | null {
+  const photo = realPhoto(url)
+  const i = photo?.startsWith("https://res.cloudinary.com/") ? photo.indexOf(UPLOAD) : -1
+  if (!photo || i === -1) return null
+  const rest = photo.slice(i + UPLOAD.length).split("/")
+  if (rest.length > 1 && /^[a-z]{1,3}_[^/]*$/.test(rest[0])) rest.shift()
+  return `${photo.slice(0, i + UPLOAD.length)}${THUMB_96}/${rest.join("/")}`
 }
 
 // ─── Open Graph images ───────────────────────────────────────

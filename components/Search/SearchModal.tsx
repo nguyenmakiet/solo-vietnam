@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import Fuse, { type FuseResult } from "fuse.js"
 import { searchTokens } from "@/lib/search-keywords"
-import { realPhoto } from "@/lib/cloudinary"
+import { thumb96Url } from "@/lib/cloudinary"
 import "./search-modal.css"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -41,17 +41,6 @@ const TYPE_CONFIG: Record<string, { label: string; cls: string }> = {
 }
 
 // ─── Utils ────────────────────────────────────────────────────────────────────
-
-/**
- * Rewrite any Cloudinary URL to a small 96×96 thumbnail.
- */
-function toThumb(url: string | undefined): string | undefined {
-  if (!realPhoto(url)) return undefined
-  return url!.replace(
-    /\/image\/upload\/[^/]+\//,
-    "/image/upload/w_96,h_96,c_fill,q_auto,f_auto/"
-  )
-}
 
 /**
  * Highlight matched character ranges in a string.
@@ -305,7 +294,7 @@ export default function SearchModal({ open, onClose }: Props) {
             >
               {results.map((item, i) => {
                 const cfg = TYPE_CONFIG[item.type] ?? TYPE_CONFIG.location
-                const thumb = toThumb(item.heroImage)
+                const thumb = thumb96Url(item.heroImage)
                 const meta = item.province
                   ? item.province.replace(/-/g, " ")
                   : item.region ?? ""
