@@ -821,7 +821,7 @@ export default function MapClient({
     selectedMarkerRef.current = nextSlug
   }, [mapReady, selectedLoc])
 
-  // Preload a marker's popup photo before it is clicked (hover / pointerdown)
+  // Preload a marker's popup photo before it is clicked (pointerdown / focus)
   const imageFor = useCallback((slug: string) => locBySlug.get(slug)?.image ?? null, [locBySlug])
   useMarkerImagePreload(mapContainerRef, mapReady, imageFor)
 
