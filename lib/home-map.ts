@@ -180,3 +180,27 @@ export function buildHomeMap(): (HomeMapPill | HomeMapMark)[] {
   const y = (item: HomeMapPill | HomeMapMark) => (item.kind === "pill" ? item.places[0].y : item.place.y)
   return items.sort((a, b) => y(a) - y(b))
 }
+
+// ─── Desktop list ─────────────────────────────────────────────────────────────
+// The same destinations as a list beside the map, grouped and ordered like
+// /map's desktop panel: North, Central, South, north to south within each
+const REGIONS = [
+  { region: "north", label: "North" },
+  { region: "central", label: "Central" },
+  { region: "south", label: "South" },
+] as const
+
+export type HomeMapListGroup = { label: string; items: { slug: string; name: string; count: number }[] }
+
+export function buildHomeMapList(): HomeMapListGroup[] {
+  return REGIONS.map(({ region, label }) => ({
+    label,
+    items: mapDestinations
+      .filter((d) => d.region === region)
+      .sort((a, b) => b.lat - a.lat)
+      .map((d) => ({ slug: d.slug, name: d.name, count: d.count })),
+  })).filter((g) => g.items.length > 0)
+}
+
+/** Every destination slug on the map (for the linked-highlight rules) */
+export const homeMapSlugs = () => mapDestinations.map((d) => d.slug)

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import HomeDestinationMap from "@/components/HomeDestinationMap"
+import { HomeMapLinkedStyles, HomeMapList } from "@/components/HomeMapList"
 import CloudinaryImage from "@/components/CloudinaryImage"
 import { destinations } from "@/data/destinations/index"
 import { experiences as allExperiences } from "@/data/experiences"
@@ -118,11 +119,14 @@ export default function Home() {
       <section className="home-map-section">
         <div className="home-map-inner">
           <div className="home-map-card">
-            {/* Order: heading, subline, map, then the actions (desktop: map on the right) */}
+            {/* Order: heading, subline, (desktop: destination list), map, actions.
+                Desktop: text, list and actions on the left, the map on the right */}
+            <HomeMapLinkedStyles />
             <div className="home-map-summary">
               <h2>Explore Vietnam on the Map</h2>
               <p>Discover {LOCATION_COUNT_LABEL} places across the country</p>
             </div>
+            <HomeMapList />
             <div className="home-map-canvas">
               <HomeDestinationMap />
             </div>

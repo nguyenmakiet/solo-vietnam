@@ -76,12 +76,16 @@ export default function HomeDestinationMap() {
                 // Each name of a shared pill is its own link: split the tap area at the "·"
                 const start = i === 0 ? 0 : (piece.joinX ?? 0) + 2
                 const end = i === pieces.length - 1 ? item.width : (pieces[i + 1].joinX ?? item.width) + 2
+                // Linked highlight (desktop list): only this name's part of the pill
+                const hlStart = i === 0 ? 0 : (piece.joinX ?? 0) + 6
+                const hlEnd = i === pieces.length - 1 ? item.width : (pieces[i + 1].joinX ?? item.width) - 2
                 return (
                   <g key={piece.place.slug}>
                     {piece.joinX !== null && <text className="home-dmap-sep" x={piece.joinX} y={PILL_HEIGHT / 2}>·</text>}
                     {/* No prefetch: 20 links would prefetch 20 guides as the map scrolls in */}
-                    <Link href={`/destinations/${piece.place.slug}`} prefetch={false} className="home-dmap-link" aria-label={label(piece.place)}>
+                    <Link href={`/destinations/${piece.place.slug}`} prefetch={false} className="home-dmap-link" data-dest={piece.place.slug} aria-label={label(piece.place)}>
                       <rect className="home-dmap-hit" x={start} y={(PILL_HEIGHT - HIT) / 2} width={end - start} height={HIT} rx={HIT / 2} />
+                      <rect className="home-dmap-hl" x={hlStart} y={0} width={hlEnd - hlStart} height={PILL_HEIGHT} rx={PILL_HEIGHT / 2} />
                       <text className="home-dmap-name" x={piece.nameX} y={PILL_HEIGHT / 2}>{piece.place.name}</text>
                       {piece.sepX !== null && <text className="home-dmap-sep" x={piece.sepX} y={PILL_HEIGHT / 2}>·</text>}
                       <text className="home-dmap-count" x={piece.countX} y={PILL_HEIGHT / 2}>{piece.place.count}</text>
@@ -94,7 +98,7 @@ export default function HomeDestinationMap() {
         }
         const { place } = item
         return (
-          <Link key={place.slug} href={`/destinations/${place.slug}`} prefetch={false} className="home-dmap-link" aria-label={label(place)}>
+          <Link key={place.slug} href={`/destinations/${place.slug}`} prefetch={false} className="home-dmap-link" data-dest={place.slug} aria-label={label(place)}>
             <circle className="home-dmap-hit" cx={place.x} cy={place.y} r={HIT / 2} />
             {item.kind === "count" ? (
               <>

@@ -208,6 +208,10 @@
 .home-map-actions {
   padding: 16px 12px 8px;
 }
+/* Destination list beside the map: desktop only (on phones the map is the list) */
+.home-map-list {
+  display: none;
+}
 /* Primary action of the card: the interactive map */
 .home-map-open {
   display: inline-flex;
@@ -224,14 +228,16 @@
   .home-map-section {
     padding: 0 32px 80px;
   }
-  /* Text and actions on the left, the map on the right */
+  /* Left: text, destination list, actions; right: the map. The list row
+     stretches so the actions end level with the map's bottom edge */
   .home-map-card {
     display: grid;
-    grid-template-columns: minmax(240px, 1fr) minmax(0, 460px);
+    grid-template-columns: minmax(300px, 1fr) minmax(0, 460px);
     grid-template-areas:
       "summary map"
+      "list map"
       "actions map";
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     column-gap: 48px;
     justify-content: space-between;
     padding: 40px;
@@ -243,9 +249,78 @@
   .home-map-canvas {
     grid-area: map;
   }
+  /* Button and link side by side: the list keeps the height */
   .home-map-actions {
     grid-area: actions;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 24px;
     padding: 24px 0 0;
+  }
+  .home-map-browse {
+    margin-top: 0;
+  }
+  /* Region groups spread over the free height; two columns of rows each,
+     filled top to bottom (north to south) */
+  .home-map-list {
+    grid-area: list;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 24px;
+  }
+  .home-map-region-label {
+    margin: 0 0 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--color-line);
+  }
+  /* Columns as wide as their longest name ("Phong Nha – Ke Bang · 9" never wraps) */
+  .home-map-region ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(var(--rows), auto);
+    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+    column-gap: 20px;
+  }
+  .home-map-row {
+    display: flex;
+    gap: 6px;
+    padding: 5px 8px;
+    margin: 0 -8px;
+    border-radius: var(--radius-button);
+    font-size: 14px;
+    line-height: 1.35;
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .home-map-row-count {
+    color: var(--color-ink-2);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .home-map-row:focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: -2px;
+  }
+}
+/* Narrow desktop: less padding and gap so the map stays tall enough for the
+   whole list beside it, and slightly tighter rows */
+@media (min-width: 900px) and (max-width: 1099px) {
+  .home-map-card {
+    padding: 32px;
+    column-gap: 32px;
+  }
+  .home-map-row {
+    padding-block: 3px;
+  }
+  .home-map-list {
+    gap: 8px;
+    padding-top: 16px;
   }
 }
 
@@ -348,6 +423,15 @@
   text-anchor: middle;
   dominant-baseline: central;
   font-variant-numeric: tabular-nums;
+}
+/* Linked highlight from the desktop list (rules in components/HomeMapList.tsx):
+   the hovered name's part of a pill turns signal with an ink ring, like the
+   selected marker on /map */
+.home-dmap-hl {
+  visibility: hidden;
+  fill: var(--color-signal);
+  stroke: var(--color-ink);
+  stroke-width: 2;
 }
 /* Invisible tap area: 32 units tall pills, 32 across circles and dots */
 .home-dmap-hit {
