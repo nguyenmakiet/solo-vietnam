@@ -102,6 +102,7 @@ import { haLongBay } from "@/data/locations/ha-long-bay"
 import { hamNinhFishingVillage } from "@/data/locations/ham-ninh-fishing-village"
 import { hamTienBeach } from "@/data/locations/ham-tien-beach"
 import { hangCauCliffs } from "@/data/locations/hang-cau-cliffs"
+import { hangDeChoWaterfall } from "@/data/locations/hang-de-cho-waterfall"
 import { hangEn } from "@/data/locations/hang-en"
 import { hangMua } from "@/data/locations/hang-mua"
 import { hangPagoda } from "@/data/locations/hang-pagoda"
@@ -386,6 +387,7 @@ export const allLocations: Location[] = [
   hamNinhFishingVillage,
   hamTienBeach,
   hangCauCliffs,
+  hangDeChoWaterfall,
   hangEn,
   hangMua,
   hangPagoda,

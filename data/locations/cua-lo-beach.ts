@@ -29,8 +29,11 @@ export const cuaLoBeach: Location = {
   openingHours: "Open 24 hours. Lifeguards are on duty at the main bathing areas during the day.",
   mapUrl: "https://www.google.com/maps?q=18.806562,105.725486",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792136184854!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHUycjNVVmc.!2m2!1d18.80328746364279!2d105.7279739087375!3f85.85424857897573!4f-43.79976945137432!5f0.7820865974627469" },
-  heroImage: heroUrl("cua-lo-beach-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("cua-lo-beach_e3vhye"),
+  gallery: [
+    "cua-lo-beach_e3vhye",
+    "cua-lo-beach-2_nq58im",
+  ],
   seoDescription:
     "Cửa Lò is one of the best-known beaches in north-central Vietnam, about 18 km from Vinh in Nghệ An - a 12 km stretch of gently sloping sand with mostly calm waves, pink sunrises, fresh seafood, island trips and night squid fishing.",
   tips: [

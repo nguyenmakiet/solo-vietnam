@@ -283,6 +283,9 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "sam-son-beach",
     "thien-cam-beach",
   ],
+  "batch-8": [
+    "hang-de-cho-waterfall",
+  ],
 }
 
 // Released slugs the regex audit cannot classify as SAFE, with the reviewed reason.
@@ -335,6 +338,8 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   "do-son-beach": "Sep kept for the buffalo fighting festival; Oct-Apr 'isn't suitable for swimming'",
   "nha-trang-beach": "Oct-Dec rainy season with big waves; 'any time of year' refers to rip currents, not a year-round season",
   "thien-cam-beach": "Sep-Mar is quiet but 'too cold for swimming'",
+  // batch-8
+  "hang-de-cho-waterfall": "The explicit window is 'Jul - early Nov'; Jun appears only as peak water when rain makes the dirt road almost impassable, so it stays excluded",
 }
 
 const released = new Set(Object.values(BEST_MONTHS_RELEASES).flat())
