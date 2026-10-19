@@ -217,6 +217,7 @@ The taxonomy is frozen - see `data/taxonomy/AUDIT.md` ("Frozen contract") for th
 - `whatToDo` and `highlights` are **never hardcoded** in destination files
 - They are **derived at runtime** via `deriveFromLocations()` in `data/destinations/index.ts`
 - `bestMonths` is the exception: it is **editorial and required** on every destination (month strip on the destination page), not derived from locations. Keep it consistent with `bestTimeSummary`; `npm run audit:best-time` fails when it is missing, empty, outside 1-12 or has duplicates
+- `npm run audit:best-time` also fails on a `gallery` item with a missing or empty `alt`, a `gallery` `locationSlug` that does not exist, and an `updatedAt` that is not a valid `YYYY-MM-DD` date
 - Destination files only hardcode editorial content that cannot be derived
 
 ### File structure
@@ -247,6 +248,8 @@ Do **not** use the old single-file `data/destinations.ts`. It has been replaced.
 | `bestTimeSummary` | Hardcode | Short string for card/hero display |
 | `bestMonths` | Hardcode (required) | Editorial month strip, `number[]` 1-12 ascending |
 | `travelStyle[]` | Hardcode | Classification tags |
+| `gallery?` | Hardcode (optional) | `{ publicId, alt, caption?, locationSlug? }[]`. Editorial gallery, not rendered yet. Planned fallback: hero images of up to 8 locations in the destination, reusing existing image sizes (no new Cloudinary transformations). `alt` is required and non-empty; `locationSlug` must be an existing location |
+| `updatedAt?` | Hardcode (optional) | `"YYYY-MM-DD"`, date of the last content review |
 | `whatToDo` | **Derived** | group(location.experiences[]) via EXPERIENCE_GROUP_CONFIG |
 | `highlights` | **Derived** | top location.insights.highlights[] as Highlight[] |
 | `whatToDoFallback` | Fallback only | Used when derived result is empty |

@@ -381,14 +381,8 @@
 }
 .dp .dd-plan dd { font-size: 16px; line-height: 1.7; color: var(--color-ink); max-width: 680px; }
 
-/* Climate chart under Plan Your Trip */
-.dp .dd-climate { margin: 28px 0 0; }
-.dp .dd-climate-title {
-  margin-bottom: 12px;
-  font-size: 11px; font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--type-accent-strong);
-}
+/* Climate chart, right above the best months */
+.dp .dd-climate figure { margin: 0; }
 .dp .dd-climate-note { margin-top: 12px; max-width: 720px; font-size: 12.5px; line-height: 1.6; color: var(--color-ink-2); }
 .dp .dd-climate-note p + p { margin-top: 4px; }
 
@@ -528,6 +522,10 @@
   .dp .dd-main > * { grid-column: 1 / -1; }
   .dp .dd-main > .dd-intro { grid-column: 1; grid-row: 1; margin-top: 56px; max-width: 760px; }
   .dp .dd-main > .dd-months { grid-column: 2; grid-row: 1; padding-top: 56px; }
+  /* With climate data: chart above the months in the right column, intro beside both */
+  .dp .dd-main > .dd-climate { grid-column: 2; grid-row: 1; padding-top: 56px; }
+  .dp .dd-main > .dd-climate + .dd-months { grid-row: 2; padding-top: 40px; }
+  .dp .dd-main:has(> .dd-climate) > .dd-intro { grid-row: 1 / span 2; }
   .dp .dd-intro { padding-left: 24px; }
   .dp .dd-intro p { font-size: 22px; line-height: 1.65; }
   .dp .dd-months .month-strip { grid-template-columns: repeat(6, 1fr); }
