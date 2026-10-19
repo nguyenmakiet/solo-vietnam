@@ -6,7 +6,7 @@ export const batPagodaSocTrang: Location = {
   name: "Bat Pagoda",
   updatedAt: "2026-10-06",
   provinces: ["soc-trang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 9.579054592787864,
   lng: 105.97228381142124,
   address: "Mã Tộc, Châu Thành, Sóc Trăng",

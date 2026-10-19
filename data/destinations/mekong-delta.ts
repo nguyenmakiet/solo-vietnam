@@ -68,7 +68,6 @@ export const mekongDelta: Destination = {
           title: "Cai Rang floating market at dawn + canal villages",
           stops: [
             "cai-rang-floating-market",
-            "bay-mau-coconut-forest",
           ],
           notes: "5am boat departure to Cai Rang - the market is at its most active 5-8am before tour boats arrive. Wholesale boats trading fruit directly boat-to-boat. Return for breakfast. Afternoon: canal village tour through smaller waterways.",
         },

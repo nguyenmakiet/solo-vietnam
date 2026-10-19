@@ -6,7 +6,7 @@ export const khleangPagoda: Location = {
   name: "Kh'leang Pagoda",
   updatedAt: "2026-10-18",
   provinces: ["soc-trang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 9.610098,
   lng: 105.976742,
   address: "Tôn Đức Thắng street, Sóc Trăng ward, Cần Thơ (formerly Ward 6, Sóc Trăng city, Sóc Trăng)",

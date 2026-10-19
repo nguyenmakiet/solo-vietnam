@@ -6,7 +6,7 @@ export const muiCaMauNationalPark: Location = {
   name: "Mũi Cà Mau National Park",
   updatedAt: "2026-10-06",
   provinces: ["ca-mau"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 8.605533331954971,
   lng: 104.71909855448533,
   address: "Đất Mũi, Ngọc Hiển, Cà Mau",

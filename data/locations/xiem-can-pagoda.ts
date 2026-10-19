@@ -6,7 +6,7 @@ export const xiemCanPagoda: Location = {
   name: "Xiem Can Pagoda",
   updatedAt: "2026-10-18",
   provinces: ["bac-lieu"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 9.253657,
   lng: 105.797978,
   address: "Biển Đông B hamlet, Hiệp Thành ward, Cà Mau (formerly Vĩnh Trạch Đông commune, Bạc Liêu city, Bạc Liêu)",

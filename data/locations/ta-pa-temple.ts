@@ -6,7 +6,7 @@ export const taPaTemple: Location = {
   name: "Ta Pa Temple",
   updatedAt: "2026-10-06",
   provinces: ["an-giang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 10.4152711092553,
   lng: 104.99329389037788,
   address: "Núi Tô, Tri Tôn, An Giang",
