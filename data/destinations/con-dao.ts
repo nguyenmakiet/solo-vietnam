@@ -112,6 +112,7 @@ export const conDao: Destination = {
   },
 
   bestTimeSummary: "Mar–Sep dry season, calm seas, good diving visibility. May–Oct sea turtle nesting. Avoid Oct–Feb when seas can be rough.",
+  bestMonths: [3, 4, 5, 6, 7, 8, 9],
 
   recommendedStay: "3–5 days",
 

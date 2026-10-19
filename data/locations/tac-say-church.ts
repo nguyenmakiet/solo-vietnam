@@ -6,7 +6,7 @@ export const tacSayChurch: Location = {
   name: "Father Diep Shrine",
   updatedAt: "2026-10-06",
   provinces: ["bac-lieu"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 9.221890887161383,
   lng: 105.39755916214018,
   address: "Tắc Sậy, Phong Thạnh Tây, Giá Rai, Bạc Liêu",

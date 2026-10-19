@@ -6,7 +6,7 @@ export const taPaFields: Location = {
   name: "Ta Pa Fields",
   updatedAt: "2026-10-06",
   provinces: ["an-giang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 10.402127666662789,
   lng: 104.99288003222382,
   address: "Núi Tô, Tri Tôn, An Giang",

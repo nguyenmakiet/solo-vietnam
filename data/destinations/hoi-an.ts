@@ -169,6 +169,7 @@ export const hoiAn: Destination = {
   },
 
   bestTimeSummary: "Feb–Aug dry season is best. Full moon lantern festival monthly. Avoid Oct–Nov - Hoi An floods badly, sometimes for days.",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2–4 days",
 

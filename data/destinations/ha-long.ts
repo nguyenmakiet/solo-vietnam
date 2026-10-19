@@ -114,6 +114,7 @@ export const haLong: Destination = {
 
   // ─── Practical ───────────────────────────────────────────
   bestTimeSummary: "Oct–Apr clear skies and calm seas. Mar–May and Sep–Nov ideal. Jun–Aug hot with storms possible - cruises may be delayed.",
+  bestMonths: [3, 4, 5, 9, 10, 11],
 
   recommendedStay: "1–2 nights on a cruise",
 

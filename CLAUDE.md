@@ -138,7 +138,7 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 
 ### `bestMonths` semantic
 
-`bestMonths: number[]` is user-facing (month strip on location pages) and feeds the `/locations` filter and destination derivation. It lists **every month the location is reasonably worth considering for a visit** - not only the peak, driest or safest season.
+`bestMonths: number[]` is user-facing (month strip on location pages) and feeds the `/locations` filter. It lists **every month the location is reasonably worth considering for a visit** - not only the peak, driest or safest season.
 
 - **Include** secondary seasons that offer a different valid experience (e.g. greener scenery, festivals, harvest), even with caveats such as heat, crowds, light rain or cold. Explain the trade-off in the season text.
 - **Exclude** months the content explicitly or materially recommends avoiding.
@@ -146,7 +146,7 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 - A month mentioned in passing is not a recommendation: conditionals ("if visiting in summer...") and facility statements ("open year-round", "air-conditioned year-round") do not add months.
 - Never guess months. If the content does not support them, flag `// TODO: verify`.
 - Locations with a non-active `status` (`closed`, `unverified`, `temporarily-closed`, `seasonally-closed`) do not get the Best Months strip; `npm run audit:best-time -- --released` rejects them in `data/best-months-release.ts`. `partially-closed` (open, but some areas closed or restricted - e.g. restoration) counts as active: it keeps the strip, stays in listings and only adds a status notice (`statusNote`) on the page.
-- Month filters and month aggregates (`/locations` filter, destination best months) read `releasedBestMonths()`, so only released locations count.
+- The `/locations` month filter reads `releasedBestMonths()`, so only released locations count. Destination best months are editorial (see Destinations Architecture) and do not read location months.
 - Check consistency with `npm run audit:best-time` (report: `reports/best-time-audit.md`). The audit reads `bestSeasonNote` and `bestTimeOfDay` as primary evidence, and the seasonal insight, seasonal FAQ answers and tips as secondary evidence. Add an entry to `BEST_MONTHS_AUDIT_OVERRIDES` only when the months are right but the audit cannot read the evidence (for example an owner decision from an outside source); `--released` lists overrides that have become stale.
 - **Links in location content**: inline markdown (`**bold**`, `[label](/locations/slug)` internal, `[label](https://...)` external) is allowed only in fields typed `RichTextString` in `data/location.ts` (content fields, rich paragraph/bullets/table/callout blocks, `tips`, `visitorTips`, FAQ answers, `openingHours`, `entranceFee`, `bestSeasonNote`, `bestTimeOfDay`). Internal links use root-relative paths (`/locations/...`, `/destinations/...`, `/provinces/...`, `/blog/...`, `/experiences/...`) and must point to an existing slug. `npm run audit:links` checks both and runs as part of `npm run build`
 - **Content structure / headings**: the page outline is `h1` location name > `h2` section title > `h3` `heading` blocks in `richSections`. Prefer `richSections` (see `ba-den-mountain`) with keyword-bearing `heading` blocks for new or reworked content. In legacy string fields, break paragraphs with a blank line (`\n\n`) every 3-4 sentences; paragraphs over ~90 words are auto-split at sentence boundaries on display (`splitLongParagraph` in `lib/rich-text.ts`) only as a safety net
@@ -214,8 +214,9 @@ The taxonomy is frozen - see `data/taxonomy/AUDIT.md` ("Frozen contract") for th
 **Destination = editorial layer + aggregation layer from locations.**
 **Location files are the source of truth. Destination files are the editorial layer.**
 
-- `bestMonths`, `whatToDo`, and `highlights` are **never hardcoded** in destination files
+- `whatToDo` and `highlights` are **never hardcoded** in destination files
 - They are **derived at runtime** via `deriveFromLocations()` in `data/destinations/index.ts`
+- `bestMonths` is the exception: it is **editorial and required** on every destination (month strip on the destination page), not derived from locations. Keep it consistent with `bestTimeSummary`; `npm run audit:best-time` fails when it is missing, empty, outside 1-12 or has duplicates
 - Destination files only hardcode editorial content that cannot be derived
 
 ### File structure
@@ -244,11 +245,10 @@ Do **not** use the old single-file `data/destinations.ts`. It has been replaced.
 | `itineraries: Itinerary[]` | Hardcode | Editorial — human-ordered stops |
 | `cost: CostRange` | Hardcode | budget / midRange / comfortable |
 | `bestTimeSummary` | Hardcode | Short string for card/hero display |
+| `bestMonths` | Hardcode (required) | Editorial month strip, `number[]` 1-12 ascending |
 | `travelStyle[]` | Hardcode | Classification tags |
-| `bestMonths` | **Derived** | frequency(location.bestMonths[]) >= 30% of released locations |
 | `whatToDo` | **Derived** | group(location.experiences[]) via EXPERIENCE_GROUP_CONFIG |
 | `highlights` | **Derived** | top location.insights.highlights[] as Highlight[] |
-| `bestMonthsFallback` | Fallback only | Used when derived result is empty |
 | `whatToDoFallback` | Fallback only | Used when derived result is empty |
 | `highlightsFallback` | Fallback only | Used when derived result is empty |
 
@@ -258,7 +258,6 @@ Do **not** use the old single-file `data/destinations.ts`. It has been replaced.
 deriveFromLocations(destinationSlug, allLocations): DerivedDestinationData
 ```
 
-- **bestMonths**: months appearing in >= 30% of matching locations whose `bestMonths` is released (`data/best-months-release.ts`), sorted ascending; unreleased and non-active locations count neither way
 - **whatToDo**: experiences grouped via `EXPERIENCE_GROUP_CONFIG`, sorted by `order`
 - **highlights**: `{ locationSlug, text }[]` from `location.insights.highlights[]`, max 10, deduplicated
 - **locationCount**: count of matching locations
@@ -266,10 +265,6 @@ deriveFromLocations(destinationSlug, allLocations): DerivedDestinationData
 ### Fallback logic (in UI component, not in deriveFromLocations)
 
 ```ts
-const bestMonths = derived.bestMonths.length > 0
-  ? derived.bestMonths
-  : destination.bestMonthsFallback ?? []
-
 const whatToDo = Object.keys(derived.whatToDo).length > 0
   ? derived.whatToDo
   : destination.whatToDoFallback ?? {}

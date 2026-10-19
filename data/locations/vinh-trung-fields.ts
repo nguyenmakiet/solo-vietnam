@@ -6,7 +6,7 @@ export const vinhTrungFields: Location = {
   name: "Vĩnh Trung Fields",
   updatedAt: "2026-10-06",
   provinces: ["an-giang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 10.557096724995187,
   lng: 105.02055578113539,
   address: "Vĩnh Trung, Tịnh Biên, An Giang",

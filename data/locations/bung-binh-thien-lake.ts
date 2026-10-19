@@ -6,7 +6,7 @@ export const bungBinhThienLake: Location = {
   name: "Búng Bình Thiên Lake",
   updatedAt: "2026-10-06",
   provinces: ["an-giang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 10.919979584967262,
   lng: 105.07286304988797,
   address: "Khánh Bình, An Phú, An Giang",

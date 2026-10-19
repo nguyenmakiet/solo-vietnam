@@ -153,6 +153,7 @@ export const haGiang: Destination = {
 
   // ─── Practical ───────────────────────────────────────────
   bestTimeSummary: "Sep–Nov: golden rice terraces + buckwheat flowers in Oct–Nov. Mar–Apr: white mustard flowers, clear skies. Avoid Jun–Aug: heavy rain, landslide risk.",
+  bestMonths: [3, 4, 9, 10, 11],
 
   recommendedStay: "3–5 days for the full loop",
 

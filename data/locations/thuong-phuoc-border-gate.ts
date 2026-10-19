@@ -6,7 +6,7 @@ export const thuongPhuocBorderGate: Location = {
   name: "Thường Phước Border Gate",
   updatedAt: "2026-10-06",
   provinces: ["dong-thap"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 10.910484255076085,
   lng: 105.19761803298447,
   address: "Thường Phước 1, Hồng Ngự, Đồng Tháp",

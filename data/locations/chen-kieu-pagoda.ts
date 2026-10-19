@@ -6,7 +6,7 @@ export const chenKieuPagoda: Location = {
   name: "Chen Kieu Pagoda (Sa Lon Pagoda)",
   updatedAt: "2026-10-18",
   provinces: ["soc-trang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 9.538047,
   lng: 105.920258,
   address: "Mỹ Xuyên ward, Cần Thơ (formerly Đại Tâm commune, Mỹ Xuyên district, Sóc Trăng)",

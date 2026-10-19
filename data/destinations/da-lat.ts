@@ -118,6 +118,7 @@ export const daLat: Destination = {
   },
 
   bestTimeSummary: "Dec–Mar cool and dry, ideal. Can visit year-round - even rainy season (May–Oct) has cool weather and fewer crowds.",
+  bestMonths: [1, 2, 3, 12],
 
   recommendedStay: "2–3 days",
 

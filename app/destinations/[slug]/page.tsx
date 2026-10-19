@@ -103,9 +103,7 @@ export default async function DestinationPage({
 
   const derived = deriveFromLocations(destination.slug, allLocations)
 
-  const bestMonths = derived.bestMonths.length > 0
-    ? derived.bestMonths
-    : destination.bestMonthsFallback ?? []
+  const bestMonths = destination.bestMonths
 
   const whatToDo = Object.keys(derived.whatToDo).length > 0
     ? derived.whatToDo
@@ -339,7 +337,7 @@ export default async function DestinationPage({
             <h2 id="h-itins" className="section-label">Suggested Itineraries</h2>
             <div className="dd-itins">
               {destination.itineraries.map((itin) => (
-                <article key={itin.duration} className="dd-itin">
+                <article key={`${itin.duration}-${itin.label}`} className="dd-itin">
                   <div className="dd-itin-head">
                     <span className="dd-itin-duration">{itin.duration}</span>
                     <h3>{itin.label}</h3>

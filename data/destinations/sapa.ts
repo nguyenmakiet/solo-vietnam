@@ -148,6 +148,7 @@ export const sapa: Destination = {
 
   // ─── Practical ───────────────────────────────────────────
   bestTimeSummary: "Sep–Nov golden rice terraces, clear skies. Mar–May green rice, mild weather. Avoid Jun–Aug heavy rain and landslides. Dec–Feb cold and foggy but uncrowded.",
+  bestMonths: [3, 4, 5, 9, 10, 11],
 
   recommendedStay: "2–4 days",
 

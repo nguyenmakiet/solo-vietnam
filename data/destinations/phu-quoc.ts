@@ -113,6 +113,7 @@ export const phuQuoc: Destination = {
   },
 
   bestTimeSummary: "Nov–Apr dry season, calm seas. May–Oct southwest monsoon - rough seas, some beaches unsafe for swimming.",
+  bestMonths: [1, 2, 3, 4, 11, 12],
 
   recommendedStay: "2–4 days",
 

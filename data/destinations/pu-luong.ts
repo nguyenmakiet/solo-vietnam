@@ -103,6 +103,7 @@ export const puLuong: Destination = {
   },
 
   bestTimeSummary: "Late May–early Jun (green rice) and late Sep–early Oct (golden harvest) for the terraces. Dec–Feb mornings cold but clear and uncrowded.",
+  bestMonths: [5, 6, 9, 10],
 
   recommendedStay: "2–3 days",
 

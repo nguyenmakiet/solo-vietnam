@@ -6,7 +6,7 @@ export const loLoChaiVillage: Location = {
   name: "Lô Lô Chải Village",
   updatedAt: "2026-10-06",
   provinces: ["ha-giang"],
-  destination:"ha-giang",
+  destination: "ha-giang",
   lat: 23.36452656422781,
   lng: 105.31069880257382,
   address: "Lô Lô Chải, Lũng Cú, Đồng Văn, Hà Giang",

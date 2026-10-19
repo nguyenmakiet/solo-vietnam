@@ -6,7 +6,7 @@ export const somRongPagoda: Location = {
   name: "Som Rong Pagoda",
   updatedAt: "2026-10-18",
   provinces: ["soc-trang"],
-  destination: "",
+  destination: "mekong-delta",
   lat: 9.623633,
   lng: 105.981092,
   address: "367 Tôn Đức Thắng street, Sóc Trăng ward, Cần Thơ (formerly Ward 5, Sóc Trăng city, Sóc Trăng)",

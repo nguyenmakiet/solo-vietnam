@@ -120,6 +120,7 @@ export const catBa: Destination = {
   },
 
   bestTimeSummary: "Apr–Jun and Sep–Nov dry season, calm seas, best kayaking visibility. Avoid Jul–Aug peak domestic season - crowded and more expensive.",
+  bestMonths: [4, 5, 6, 9, 10, 11],
 
   recommendedStay: "2–3 days",
 

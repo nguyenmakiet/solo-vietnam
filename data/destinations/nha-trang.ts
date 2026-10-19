@@ -115,7 +115,8 @@ export const nhaTrang: Destination = {
     notes: "Island hopping tour: 200,000–500,000 VND. Diving: 1,200,000–2,000,000 VND for 2 dives. Snorkeling tour: 300,000–500,000 VND.",
   },
 
-  bestTimeSummary: "Jan–Sep best for beach and diving. Oct–Dec northeast monsoon brings rough seas and heavy rain.",
+  bestTimeSummary: "Jan–Aug dry and sunny, best for beach and diving. Sep–Dec northeast monsoon brings rough seas and heavy rain, worst in Oct–Nov.",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2–3 days",
 
