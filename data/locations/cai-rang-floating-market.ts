@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const caiRangFloatingMarket: Location = {
   slug: "cai-rang-floating-market",
   name: "Cái Răng Floating Market",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-10-19",
   provinces: ["can-tho"],
   destination: "mekong-delta",
   lat: 10.005150042253042,
@@ -15,7 +15,7 @@ export const caiRangFloatingMarket: Location = {
   experiences: ["boat-tour", "food", "markets", "culture"],
   tags: ["🛶 Floating Market", "🌅 Dawn Market", "🍜 Local Food"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  bestSeasonNote: "Year-round (market operates daily regardless of season). May - Aug (dry season, stable water levels, peak tropical fruit season) is the most comfortable. Avoid 1st-2nd day of Tết and Tết Đoan Ngọ (5th day of 5th lunar month) when market closes or winds down significantly.",
+  bestSeasonNote: "Year-round (market operates daily regardless of season). Nov - Apr dry season is the most comfortable: clear mornings, calm river, easy boat trips. May - Aug is rainy season (May - Oct) but showers mostly fall in the afternoon, so the dawn market is rarely affected, and it is peak tropical fruit season. Avoid 1st-2nd day of Tết and Tết Đoan Ngọ (5th day of 5th lunar month) when market closes or winds down significantly.",
   bestTimeOfDay: "Market most active 5:30-8:00 AM.",
   timeNeeded: {
     minMinutes: 180,
@@ -141,7 +141,7 @@ export const caiRangFloatingMarket: Location = {
       difficulty: "Easy boat trip - no walking required. Motion sickness risk: small boats are rocked significantly by waves from larger passing vessels. Take medication beforehand if prone to seasickness.",
       safety: "Book directly at Ninh Kiều Pier ticket counter rather than from touts near the pier entrance. Cash only on the river. Keep bags and valuables secured on the boat.",
       accessibility: "Shared boats 50,000-100,000 VND/person; private boats 400,000-600,000+ VND. No entrance fee. Cash is strongly preferred. Card payments are generally unavailable on the river.",
-      seasonal: "Market operates daily year-round. Closes or significantly reduces on Tết days 1-2 and Tết Đoan Ngọ. May-Aug dry season is the most comfortable and fruit-abundant period.",
+      seasonal: "Market operates daily year-round. Closes or significantly reduces on Tết days 1-2 and Tết Đoan Ngọ. Nov-Apr dry season is the most comfortable; May-Aug is rainy but showers usually come in the afternoon, after the market winds down, and fruit is at its most abundant.",
     },
     visitorTips: [
       "Depart Ninh Kiều Pier by 4:45-5:00 AM - peak trading is 5:45-7:30 AM, largely over by 9:00 AM",

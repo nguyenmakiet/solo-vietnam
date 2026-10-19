@@ -113,7 +113,7 @@ export const mekongDelta: Destination = {
     notes: "One of the most affordable regions in Vietnam. Boat tours: 100,000–300,000 VND. Homestay with meals: 200,000–400,000 VND/night.",
   },
 
-  bestTimeSummary: "Nov–Apr dry season, floating markets most active. Sep–Oct flood season in the upper delta - Tra Su is at its best but some roads flood.",
+  bestTimeSummary: "Nov–Apr dry season is the safest window for floating markets, Khmer temples and Ca Mau - and covers the Ok Om Bok (mid-Nov) and Chol Chnam Thmay (mid-Apr) festivals. Sep–Nov is flood season in An Giang and Dong Thap: Tra Su is at its best (peak in October), but some rural roads flood. May–Aug is hot with afternoon showers, though fruit season peaks.",
   bestMonths: [1, 2, 3, 4, 11, 12],
 
   recommendedStay: "1–3 days",

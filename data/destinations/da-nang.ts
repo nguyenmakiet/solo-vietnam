@@ -167,7 +167,7 @@ export const daNang: Destination = {
     notes: "Ba Na Hills ticket (~1,500,000 VND) not included. Seafood restaurants can push costs up quickly.",
   },
 
-  bestTimeSummary: "March–May and September–October are best. Avoid October–November - Da Nang gets the heaviest rainfall in Central Vietnam.",
+  bestTimeSummary: "Feb–Aug dry season. Mar–May is the sweet spot - sunny and warm before the Jun–Aug heat (35°C+). Avoid Oct–Nov: heaviest rain in Central Vietnam and typhoon risk.",
   bestMonths: [3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2–3 days (or use as a base for the entire central region)",

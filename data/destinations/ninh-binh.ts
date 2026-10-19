@@ -133,7 +133,7 @@ export const ninhBinh: Destination = {
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Sep–Nov golden rice season, clear skies. Apr–Jun also good. Avoid Jul–Aug heavy rain. Tết and major holidays make Bai Dinh extremely crowded.",
+  bestTimeSummary: "Late May–early Jun: golden rice in Tam Coc. Sep–Nov: second harvest, clear skies. Apr also good. Avoid Jul–Aug heavy rain and heat. Tết and major holidays make Bai Dinh extremely crowded.",
   bestMonths: [4, 5, 6, 9, 10, 11],
 
   recommendedStay: "2–3 days",
