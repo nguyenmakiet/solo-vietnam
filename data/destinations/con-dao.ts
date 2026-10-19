@@ -111,7 +111,7 @@ export const conDao: Destination = {
     notes: "More expensive than other Vietnamese islands due to remote location. Diving: 1,500,000–2,500,000 VND for 2 dives. Motorbike rental: 150,000–200,000 VND/day. Very limited budget accommodation.",
   },
 
-  bestTimeSummary: "Mar–Sep dry season, calm seas, good diving visibility. May–Oct sea turtle nesting. Avoid Oct–Feb when seas can be rough.",
+  bestTimeSummary: "Mar–Sep is the season to go: calm seas, good diving and boat trips. Mar–Apr is the driest. May–Sep is technically rainy season, but rain usually comes as short afternoon or evening showers of under an hour, with sunny mornings - and it's sea turtle nesting season. Oct–Feb the northeast monsoon makes Con Son Bay rough, though the west and southwest coasts stay calmer.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
 
   recommendedStay: "3–5 days",

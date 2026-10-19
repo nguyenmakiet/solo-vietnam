@@ -120,8 +120,8 @@ export const hue: Destination = {
     notes: "Combo ticket (Imperial City + 3 tombs): 530,000 VND. Cash only at all ticket booths.",
   },
 
-  bestTimeSummary: "Jan–Apr and Sep are best. Avoid Oct–Nov - Hue gets the heaviest rainfall of any city in Vietnam.",
-  bestMonths: [1, 2, 3, 4, 9],
+  bestTimeSummary: "Feb–May is the best window: mostly dry, warm and clear. Jun–Aug is hot but still fairly dry. Dec–Jan is cool and drizzly. Avoid Sep–Nov: Hue gets some of the heaviest rain in Vietnam, and Oct–Nov regularly floods.",
+  bestMonths: [2, 3, 4, 5],
 
   recommendedStay: "2–3 days",
 
