@@ -24,8 +24,10 @@ export const nguomNgaoCave: Location = {
   openingHours: "7:30 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=22.845576774719714,106.70639496631787",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831688135!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzRwX0d6Smc.!2m2!1d22.84543126091632!2d106.7060626709624!3f238.3604917573734!4f11.313244104106744!5f0.7820865974627469", },
-  heroImage: heroUrl("nguom-ngao-cave-hero_placeholder"),
-  gallery: [],
+  heroImage: heroUrl("nguom-ngao-cave-cao-bang_ti69na"),
+  gallery: [
+    "nguom-ngao-cave-cao-bang_ti69na",
+  ],
   seoDescription:
     "Nguom Ngao Cave - 'Tiger Cave' in the Tày language - is one of northern Vietnam's finest cave experiences: a system with three entrances, surveyed at over 2km and explorable in full along a roughly 3.3km guided route, with dense stalactite and stalagmite formations and near-total silence, just 3km from Bản Giốc Waterfall.",
   tips: [
