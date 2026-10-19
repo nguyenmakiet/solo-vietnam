@@ -5,6 +5,8 @@
  * Also checks every destination's editorial `bestMonths` (present, 1-12,
  * no duplicates) and exits 1 when one fails, and warns (never fails) when a
  * destination best month is among its 3 wettest months in data/climate.json.
+ * Destination `gallery` (non-empty alt, existing locationSlug) and
+ * `updatedAt` (valid YYYY-MM-DD date) also fail the destination check.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -359,6 +361,14 @@ for (const d of destinations) {
   if (!Array.isArray(months) || months.length === 0) { fail("bestMonths is missing or empty"); continue }
   if (months.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) fail("bestMonths has a value outside 1-12")
   if (new Set(months).size !== months.length) fail("bestMonths has duplicates")
+  d.gallery?.forEach((img, i) => {
+    if (!img.alt?.trim()) fail(`gallery[${i}] (${img.publicId}) has no alt text`)
+    if (img.locationSlug && !allLocations.some((l) => l.slug === img.locationSlug)) fail(`gallery[${i}] locationSlug "${img.locationSlug}" does not exist`)
+  })
+  if (d.updatedAt !== undefined) {
+    const date = /^\d{4}-\d{2}-\d{2}$/.test(d.updatedAt) ? new Date(`${d.updatedAt}T00:00:00Z`) : null
+    if (!date || Number.isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== d.updatedAt) fail(`updatedAt "${d.updatedAt}" is not a valid YYYY-MM-DD date`)
+  }
 }
 if (destinationFailures.length) {
   console.log(`\nDESTINATION CHECK FAILED (${destinationFailures.length}):\n  ${destinationFailures.join("\n  ")}`)

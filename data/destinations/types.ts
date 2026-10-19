@@ -188,6 +188,18 @@ export type Destination = {
   // Max zoom when /map flies to this destination's locations
   mapZoom?: number
 
+  // Editorial gallery. Not rendered yet. Planned fallback: hero images of up to
+  // 8 locations in this destination, reusing existing image sizes to avoid new
+  // Cloudinary transformations. Checked by `npm run audit:best-time`
+  gallery?: {
+    publicId: string
+    alt: string
+    caption?: string
+    locationSlug?: string
+  }[]
+  // Date of the last content review, "YYYY-MM-DD". Checked by `npm run audit:best-time`
+  updatedAt?: string
+
   // ── Fallback fields ──────────────────────────────────────
   // Dùng tạm khi location data chưa đủ để derive
   // Tự động bị bỏ qua khi deriveFromLocations() trả về data
