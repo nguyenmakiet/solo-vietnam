@@ -3,7 +3,8 @@
  *
  * Reads `bestSeasonNote` and `bestTimeOfDay`. Never writes to data files.
  * Also checks every destination's editorial `bestMonths` (present, 1-12,
- * no duplicates) and exits 1 when one fails.
+ * no duplicates) and exits 1 when one fails, and warns (never fails) when a
+ * destination best month is among its 3 wettest months in data/climate.json.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -46,6 +47,7 @@ import { dirname } from "path"
 import { allLocations } from "../data/all-locations"
 import { BEST_MONTHS_RELEASES, BEST_MONTHS_AUDIT_OVERRIDES } from "../data/best-months-release"
 import { destinations } from "../data/destinations/index"
+import { getDestinationClimate, wettestMonths } from "../data/climate"
 
 const MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 // Capitalised only, so the verb "may" and "march" never count as months
@@ -364,6 +366,24 @@ if (destinationFailures.length) {
 } else {
   console.log(`\nDestination check passed: ${destinations.length} destinations.`)
 }
+
+// Climate warning (never fails): a destination best month that is one of the
+// three wettest months in its NASA POWER climate data (data/climate.json)
+const climateWarnings: string[] = []
+let withClimate = 0
+for (const d of destinations) {
+  const c = getDestinationClimate(d.slug)
+  if (!c) continue
+  withClimate++
+  const wettest = wettestMonths(c)
+  for (const m of d.bestMonths.filter((m) => wettest.includes(m)).sort((a, b) => a - b)) {
+    const rank = wettest.indexOf(m) + 1
+    climateWarnings.push(`${d.slug}: ${MONTH_NAMES[m - 1]} is in bestMonths but is wettest month #${rank} (${c.months[m - 1].rainfallMm} mm, ${c.months[m - 1].rainyDays} rainy days)`)
+  }
+}
+if (!withClimate) console.log("\nClimate check skipped: no destination climate data (run npm run fetch:climate).")
+else if (climateWarnings.length) console.log(`\nCLIMATE WARNINGS (${climateWarnings.length}, not a failure):\n  ${climateWarnings.join("\n  ")}`)
+else console.log(`\nClimate check passed: ${withClimate} destinations, no best month among the 3 wettest.`)
 
 // Release gate: every slug in data/best-months-release.ts must be public,
 // active (not closed / unverified / temporarily- or seasonally-closed), have a valid bestMonths and be SAFE (or carry a reviewed override)

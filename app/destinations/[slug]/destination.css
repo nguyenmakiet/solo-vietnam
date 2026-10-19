@@ -381,6 +381,17 @@
 }
 .dp .dd-plan dd { font-size: 16px; line-height: 1.7; color: var(--color-ink); max-width: 680px; }
 
+/* Climate chart under Plan Your Trip */
+.dp .dd-climate { margin: 28px 0 0; }
+.dp .dd-climate-title {
+  margin-bottom: 12px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+}
+.dp .dd-climate-note { margin-top: 12px; max-width: 720px; font-size: 12.5px; line-height: 1.6; color: var(--color-ink-2); }
+.dp .dd-climate-note p + p { margin-top: 4px; }
+
 /* More in this province: ruled rows */
 .dp .dd-related { list-style: none; display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; border-top: 1px solid var(--color-ink); }
 .dp .dd-related a {
