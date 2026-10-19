@@ -16,6 +16,8 @@ import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
 import { stripInlineMarkdown } from "@/lib/rich-text"
 import { ogImageUrl, realPhoto } from "@/lib/cloudinary"
 import HeroMedia from "@/components/HeroMedia"
+import ClimateChart from "@/components/ClimateChart"
+import { getDestinationClimate } from "@/data/climate"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
@@ -104,6 +106,7 @@ export default async function DestinationPage({
   const derived = deriveFromLocations(destination.slug, allLocations)
 
   const bestMonths = destination.bestMonths
+  const climate = getDestinationClimate(destination.slug)
 
   const whatToDo = Object.keys(derived.whatToDo).length > 0
     ? derived.whatToDo
@@ -467,23 +470,35 @@ export default async function DestinationPage({
         )}
 
         {/* Plan Your Trip (Budget per Day intentionally not shown) */}
-        {(destination.bestTimeSummary || destination.recommendedStay) && (
+        {(destination.bestTimeSummary || destination.recommendedStay || climate) && (
           <section className="dp-section" aria-labelledby="h-plan">
             <h2 id="h-plan" className="section-label">Plan Your Trip</h2>
-            <dl className="dd-rows dd-plans">
-              {destination.bestTimeSummary && (
-                <div className="dd-plan">
-                  <dt>Best Time to Visit</dt>
-                  <dd>{destination.bestTimeSummary}</dd>
-                </div>
-              )}
-              {destination.recommendedStay && (
-                <div className="dd-plan">
-                  <dt>Recommended Stay</dt>
-                  <dd>{destination.recommendedStay}</dd>
-                </div>
-              )}
-            </dl>
+            {(destination.bestTimeSummary || destination.recommendedStay) && (
+              <dl className="dd-rows dd-plans">
+                {destination.bestTimeSummary && (
+                  <div className="dd-plan">
+                    <dt>Best Time to Visit</dt>
+                    <dd>{destination.bestTimeSummary}</dd>
+                  </div>
+                )}
+                {destination.recommendedStay && (
+                  <div className="dd-plan">
+                    <dt>Recommended Stay</dt>
+                    <dd>{destination.recommendedStay}</dd>
+                  </div>
+                )}
+              </dl>
+            )}
+            {climate && (
+              <figure className="dd-climate" aria-labelledby="h-climate">
+                <h3 id="h-climate" className="dd-climate-title">Climate</h3>
+                <ClimateChart months={climate.months} bestMonths={bestMonths} name={destination.name} />
+                <figcaption className="dd-climate-note">
+                  {climate.proxyNote && <p>{climate.proxyNote}</p>}
+                  <p>Long-term station averages from the Vietnam Institute for Building Science and Technology. Rainy days as reported by the station.</p>
+                </figcaption>
+              </figure>
+            )}
           </section>
         )}
 
