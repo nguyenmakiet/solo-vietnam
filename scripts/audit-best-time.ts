@@ -368,7 +368,7 @@ if (destinationFailures.length) {
 }
 
 // Climate warning (never fails): a destination best month that is one of the
-// three wettest months in its NASA POWER climate data (data/climate.json)
+// three wettest months in its IBST station climate data (data/climate.json)
 const climateWarnings: string[] = []
 let withClimate = 0
 for (const d of destinations) {
@@ -381,7 +381,7 @@ for (const d of destinations) {
     climateWarnings.push(`${d.slug}: ${MONTH_NAMES[m - 1]} is in bestMonths but is wettest month #${rank} (${c.months[m - 1].rainfallMm} mm, ${c.months[m - 1].rainyDays} rainy days)`)
   }
 }
-if (!withClimate) console.log("\nClimate check skipped: no destination climate data (run npm run fetch:climate).")
+if (!withClimate) console.log("\nClimate check skipped: no destination climate data in data/climate.json.")
 else if (climateWarnings.length) console.log(`\nCLIMATE WARNINGS (${climateWarnings.length}, not a failure):\n  ${climateWarnings.join("\n  ")}`)
 else console.log(`\nClimate check passed: ${withClimate} destinations, no best month among the 3 wettest.`)
 

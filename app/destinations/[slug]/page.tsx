@@ -17,7 +17,7 @@ import { stripInlineMarkdown } from "@/lib/rich-text"
 import { ogImageUrl, realPhoto } from "@/lib/cloudinary"
 import HeroMedia from "@/components/HeroMedia"
 import ClimateChart from "@/components/ClimateChart"
-import { climateMeta, getDestinationClimate } from "@/data/climate"
+import { getDestinationClimate } from "@/data/climate"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
@@ -489,16 +489,13 @@ export default async function DestinationPage({
                 )}
               </dl>
             )}
-            {climate && climateMeta && (
+            {climate && (
               <figure className="dd-climate" aria-labelledby="h-climate">
                 <h3 id="h-climate" className="dd-climate-title">Climate</h3>
                 <ClimateChart months={climate.months} bestMonths={bestMonths} name={destination.name} />
                 <figcaption className="dd-climate-note">
-                  <p>Approximate 10-year averages ({climateMeta.years}) from modelled NASA POWER data; mountain and island conditions may differ.</p>
-                  <p>
-                    These data were obtained from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA Earth
-                    Science/Applied Science Program (POWER API {climateMeta.dataVersion}), accessed {climateMeta.accessedAt}.
-                  </p>
+                  {climate.proxyNote && <p>{climate.proxyNote}</p>}
+                  <p>Long-term station averages from the Vietnam Institute for Building Science and Technology. Rainy days as reported by the station.</p>
                 </figcaption>
               </figure>
             )}

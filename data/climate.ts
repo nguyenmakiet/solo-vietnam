@@ -1,32 +1,32 @@
-// Monthly climate normals per destination, from NASA POWER.
-// data/climate.json is generated offline by `npm run fetch:climate`;
-// never edit it by hand.
+// Monthly climate normals per destination: long-term IBST station averages
+// (Vietnam Institute for Building Science and Technology). data/climate.json
+// is curated by hand from the station tables; there is no fetch script.
 import raw from "./climate.json"
 
 export type ClimateMonth = {
   month: number // 1-12
-  avgTempC: number // mean daily 2 m air temperature, 1 decimal
-  rainfallMm: number // mean monthly total, rounded
-  rainyDays: number // mean days with >= 1 mm, 1 decimal
+  avgTempC: number // mean temperature
+  rainfallMm: number // mean monthly total
+  rainyDays: number // mean rainy days, threshold as reported by the station
 }
 
 export type ClimateDestination = {
-  lat: number
-  lng: number
-  gridCell: string // "lat,lng" of the MERRA-2 cell centre
+  station: string
+  // Set when the station is not at the destination itself (nearby city,
+  // valley below a plateau...); shown under the chart
+  proxyNote: string | null
+  sourceUrl: string
   months: ClimateMonth[] // 12 entries, Jan-Dec
 }
 
 export type ClimateMeta = {
   source: string
-  dataVersion: string
   accessedAt: string // YYYY-MM-DD
-  years: string
-  gridNote: string
+  note: string
 }
 
 export type ClimateData = {
-  meta: ClimateMeta | null // null until the fetch script has run
+  meta: ClimateMeta
   destinations: Record<string, ClimateDestination>
 }
 
@@ -36,7 +36,7 @@ export const climateMeta = climate.meta
 
 export function getDestinationClimate(slug: string): ClimateDestination | undefined {
   const c = climate.destinations[slug]
-  return climate.meta && c?.months.length === 12 ? c : undefined
+  return c?.months.length === 12 ? c : undefined
 }
 
 // Months (1-12) of the three highest mean rainfall totals

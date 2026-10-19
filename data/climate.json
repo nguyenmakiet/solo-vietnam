@@ -1,4 +1,1589 @@
 {
-  "meta": null,
-  "destinations": {}
+  "meta": {
+    "source": "Vietnam Institute for Building Science and Technology (IBST) station climate normals, as tabulated on English Wikipedia",
+    "accessedAt": "2026-10-19",
+    "note": "Long-term station averages; the source does not state the averaging period or the rainy-day threshold."
+  },
+  "destinations": {
+    "ha-noi": {
+      "station": "Hanoi (downtown)",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hanoi",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 16.6,
+          "rainfallMm": 22,
+          "rainyDays": 9.5
+        },
+        {
+          "month": 2,
+          "avgTempC": 17.7,
+          "rainfallMm": 25,
+          "rainyDays": 11.4
+        },
+        {
+          "month": 3,
+          "avgTempC": 20.3,
+          "rainfallMm": 47,
+          "rainyDays": 15.9
+        },
+        {
+          "month": 4,
+          "avgTempC": 24.2,
+          "rainfallMm": 92,
+          "rainyDays": 13.7
+        },
+        {
+          "month": 5,
+          "avgTempC": 27.6,
+          "rainfallMm": 185,
+          "rainyDays": 14.6
+        },
+        {
+          "month": 6,
+          "avgTempC": 29.3,
+          "rainfallMm": 253,
+          "rainyDays": 14.8
+        },
+        {
+          "month": 7,
+          "avgTempC": 29.4,
+          "rainfallMm": 280,
+          "rainyDays": 16.6
+        },
+        {
+          "month": 8,
+          "avgTempC": 28.7,
+          "rainfallMm": 309,
+          "rainyDays": 16.5
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.7,
+          "rainfallMm": 228,
+          "rainyDays": 13.2
+        },
+        {
+          "month": 10,
+          "avgTempC": 25.3,
+          "rainfallMm": 141,
+          "rainyDays": 9.7
+        },
+        {
+          "month": 11,
+          "avgTempC": 21.9,
+          "rainfallMm": 67,
+          "rainyDays": 6.8
+        },
+        {
+          "month": 12,
+          "avgTempC": 18.3,
+          "rainfallMm": 20,
+          "rainyDays": 5.2
+        }
+      ]
+    },
+    "ha-giang": {
+      "station": "Ha Giang",
+      "proxyNote": "Ha Giang city station (low valley). The Dong Van plateau on the loop is much colder, especially Dec-Feb.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/H%C3%A0_Giang",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 15.6,
+          "rainfallMm": 40,
+          "rainyDays": 11.4
+        },
+        {
+          "month": 2,
+          "avgTempC": 17.2,
+          "rainfallMm": 39,
+          "rainyDays": 10.4
+        },
+        {
+          "month": 3,
+          "avgTempC": 20.4,
+          "rainfallMm": 65,
+          "rainyDays": 12.0
+        },
+        {
+          "month": 4,
+          "avgTempC": 24.1,
+          "rainfallMm": 106,
+          "rainyDays": 14.8
+        },
+        {
+          "month": 5,
+          "avgTempC": 26.7,
+          "rainfallMm": 295,
+          "rainyDays": 17.9
+        },
+        {
+          "month": 6,
+          "avgTempC": 27.7,
+          "rainfallMm": 430,
+          "rainyDays": 20.8
+        },
+        {
+          "month": 7,
+          "avgTempC": 27.8,
+          "rainfallMm": 545,
+          "rainyDays": 24.1
+        },
+        {
+          "month": 8,
+          "avgTempC": 27.6,
+          "rainfallMm": 415,
+          "rainyDays": 21.5
+        },
+        {
+          "month": 9,
+          "avgTempC": 26.5,
+          "rainfallMm": 241,
+          "rainyDays": 15.6
+        },
+        {
+          "month": 10,
+          "avgTempC": 23.9,
+          "rainfallMm": 154,
+          "rainyDays": 13.5
+        },
+        {
+          "month": 11,
+          "avgTempC": 20.3,
+          "rainfallMm": 84,
+          "rainyDays": 10.1
+        },
+        {
+          "month": 12,
+          "avgTempC": 16.9,
+          "rainfallMm": 42,
+          "rainyDays": 8.3
+        }
+      ]
+    },
+    "cao-bang": {
+      "station": "Cao Bang",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cao_B%E1%BA%B1ng_(city)",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 13.8,
+          "rainfallMm": 29,
+          "rainyDays": 8.5
+        },
+        {
+          "month": 2,
+          "avgTempC": 15.5,
+          "rainfallMm": 25,
+          "rainyDays": 8.5
+        },
+        {
+          "month": 3,
+          "avgTempC": 18.9,
+          "rainfallMm": 48,
+          "rainyDays": 9.8
+        },
+        {
+          "month": 4,
+          "avgTempC": 23.1,
+          "rainfallMm": 84,
+          "rainyDays": 11.3
+        },
+        {
+          "month": 5,
+          "avgTempC": 25.9,
+          "rainfallMm": 195,
+          "rainyDays": 14.8
+        },
+        {
+          "month": 6,
+          "avgTempC": 27.2,
+          "rainfallMm": 247,
+          "rainyDays": 17.0
+        },
+        {
+          "month": 7,
+          "avgTempC": 27.2,
+          "rainfallMm": 258,
+          "rainyDays": 18.3
+        },
+        {
+          "month": 8,
+          "avgTempC": 26.8,
+          "rainfallMm": 257,
+          "rainyDays": 18.0
+        },
+        {
+          "month": 9,
+          "avgTempC": 25.5,
+          "rainfallMm": 138,
+          "rainyDays": 12.2
+        },
+        {
+          "month": 10,
+          "avgTempC": 22.7,
+          "rainfallMm": 76,
+          "rainyDays": 9.4
+        },
+        {
+          "month": 11,
+          "avgTempC": 18.7,
+          "rainfallMm": 45,
+          "rainyDays": 7.3
+        },
+        {
+          "month": 12,
+          "avgTempC": 15.1,
+          "rainfallMm": 25,
+          "rainyDays": 6.3
+        }
+      ]
+    },
+    "sapa": {
+      "station": "Sa Pa",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sa_Pa",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 8.6,
+          "rainfallMm": 70,
+          "rainyDays": 16.3
+        },
+        {
+          "month": 2,
+          "avgTempC": 10.4,
+          "rainfallMm": 74,
+          "rainyDays": 16.3
+        },
+        {
+          "month": 3,
+          "avgTempC": 13.9,
+          "rainfallMm": 104,
+          "rainyDays": 15.7
+        },
+        {
+          "month": 4,
+          "avgTempC": 17.1,
+          "rainfallMm": 213,
+          "rainyDays": 17.9
+        },
+        {
+          "month": 5,
+          "avgTempC": 18.9,
+          "rainfallMm": 341,
+          "rainyDays": 22.2
+        },
+        {
+          "month": 6,
+          "avgTempC": 19.8,
+          "rainfallMm": 381,
+          "rainyDays": 24.4
+        },
+        {
+          "month": 7,
+          "avgTempC": 19.8,
+          "rainfallMm": 461,
+          "rainyDays": 25.6
+        },
+        {
+          "month": 8,
+          "avgTempC": 19.5,
+          "rainfallMm": 452,
+          "rainyDays": 23.4
+        },
+        {
+          "month": 9,
+          "avgTempC": 18.2,
+          "rainfallMm": 303,
+          "rainyDays": 19.8
+        },
+        {
+          "month": 10,
+          "avgTempC": 15.7,
+          "rainfallMm": 201,
+          "rainyDays": 18.6
+        },
+        {
+          "month": 11,
+          "avgTempC": 12.5,
+          "rainfallMm": 106,
+          "rainyDays": 13.8
+        },
+        {
+          "month": 12,
+          "avgTempC": 9.4,
+          "rainfallMm": 66,
+          "rainyDays": 13.5
+        }
+      ]
+    },
+    "ha-long": {
+      "station": "Bai Chay (Ha Long)",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_(city)",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 16.2,
+          "rainfallMm": 28,
+          "rainyDays": 7.6
+        },
+        {
+          "month": 2,
+          "avgTempC": 17.0,
+          "rainfallMm": 24,
+          "rainyDays": 10.4
+        },
+        {
+          "month": 3,
+          "avgTempC": 19.5,
+          "rainfallMm": 43,
+          "rainyDays": 14.3
+        },
+        {
+          "month": 4,
+          "avgTempC": 23.4,
+          "rainfallMm": 86,
+          "rainyDays": 11.4
+        },
+        {
+          "month": 5,
+          "avgTempC": 26.9,
+          "rainfallMm": 183,
+          "rainyDays": 12.0
+        },
+        {
+          "month": 6,
+          "avgTempC": 28.4,
+          "rainfallMm": 297,
+          "rainyDays": 15.5
+        },
+        {
+          "month": 7,
+          "avgTempC": 28.6,
+          "rainfallMm": 364,
+          "rainyDays": 16.5
+        },
+        {
+          "month": 8,
+          "avgTempC": 27.9,
+          "rainfallMm": 430,
+          "rainyDays": 18.7
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.1,
+          "rainfallMm": 276,
+          "rainyDays": 14.1
+        },
+        {
+          "month": 10,
+          "avgTempC": 25.0,
+          "rainfallMm": 143,
+          "rainyDays": 9.2
+        },
+        {
+          "month": 11,
+          "avgTempC": 21.5,
+          "rainfallMm": 39,
+          "rainyDays": 5.8
+        },
+        {
+          "month": 12,
+          "avgTempC": 17.9,
+          "rainfallMm": 18,
+          "rainyDays": 5.2
+        }
+      ]
+    },
+    "cat-ba": {
+      "station": "Bai Chay (Ha Long)",
+      "proxyNote": "No station on Cat Ba in the source; nearest comparable station is Bai Chay across Ha Long Bay.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/H%E1%BA%A1_Long_(city)",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 16.2,
+          "rainfallMm": 28,
+          "rainyDays": 7.6
+        },
+        {
+          "month": 2,
+          "avgTempC": 17.0,
+          "rainfallMm": 24,
+          "rainyDays": 10.4
+        },
+        {
+          "month": 3,
+          "avgTempC": 19.5,
+          "rainfallMm": 43,
+          "rainyDays": 14.3
+        },
+        {
+          "month": 4,
+          "avgTempC": 23.4,
+          "rainfallMm": 86,
+          "rainyDays": 11.4
+        },
+        {
+          "month": 5,
+          "avgTempC": 26.9,
+          "rainfallMm": 183,
+          "rainyDays": 12.0
+        },
+        {
+          "month": 6,
+          "avgTempC": 28.4,
+          "rainfallMm": 297,
+          "rainyDays": 15.5
+        },
+        {
+          "month": 7,
+          "avgTempC": 28.6,
+          "rainfallMm": 364,
+          "rainyDays": 16.5
+        },
+        {
+          "month": 8,
+          "avgTempC": 27.9,
+          "rainfallMm": 430,
+          "rainyDays": 18.7
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.1,
+          "rainfallMm": 276,
+          "rainyDays": 14.1
+        },
+        {
+          "month": 10,
+          "avgTempC": 25.0,
+          "rainfallMm": 143,
+          "rainyDays": 9.2
+        },
+        {
+          "month": 11,
+          "avgTempC": 21.5,
+          "rainfallMm": 39,
+          "rainyDays": 5.8
+        },
+        {
+          "month": 12,
+          "avgTempC": 17.9,
+          "rainfallMm": 18,
+          "rainyDays": 5.2
+        }
+      ]
+    },
+    "ninh-binh": {
+      "station": "Hoa Lu (Ninh Binh)",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ninh_Binh_District",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 16.6,
+          "rainfallMm": 28,
+          "rainyDays": 9.0
+        },
+        {
+          "month": 2,
+          "avgTempC": 17.5,
+          "rainfallMm": 26,
+          "rainyDays": 12.8
+        },
+        {
+          "month": 3,
+          "avgTempC": 19.9,
+          "rainfallMm": 46,
+          "rainyDays": 16.4
+        },
+        {
+          "month": 4,
+          "avgTempC": 23.7,
+          "rainfallMm": 74,
+          "rainyDays": 12.4
+        },
+        {
+          "month": 5,
+          "avgTempC": 27.3,
+          "rainfallMm": 169,
+          "rainyDays": 12.6
+        },
+        {
+          "month": 6,
+          "avgTempC": 29.0,
+          "rainfallMm": 210,
+          "rainyDays": 13.3
+        },
+        {
+          "month": 7,
+          "avgTempC": 29.2,
+          "rainfallMm": 236,
+          "rainyDays": 13.6
+        },
+        {
+          "month": 8,
+          "avgTempC": 28.5,
+          "rainfallMm": 315,
+          "rainyDays": 16.1
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.3,
+          "rainfallMm": 362,
+          "rainyDays": 14.9
+        },
+        {
+          "month": 10,
+          "avgTempC": 25.0,
+          "rainfallMm": 219,
+          "rainyDays": 11.9
+        },
+        {
+          "month": 11,
+          "avgTempC": 21.8,
+          "rainfallMm": 67,
+          "rainyDays": 7.8
+        },
+        {
+          "month": 12,
+          "avgTempC": 18.3,
+          "rainfallMm": 29,
+          "rainyDays": 6.3
+        }
+      ]
+    },
+    "pu-luong": {
+      "station": "Hoi Xuan (Quan Hoa)",
+      "proxyNote": "Hoi Xuan is in the valley next to Pu Luong; hill villages are a few degrees cooler.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quan_H%C3%B3a_district",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 17.0,
+          "rainfallMm": 17,
+          "rainyDays": 7.7
+        },
+        {
+          "month": 2,
+          "avgTempC": 18.5,
+          "rainfallMm": 16,
+          "rainyDays": 8.9
+        },
+        {
+          "month": 3,
+          "avgTempC": 21.1,
+          "rainfallMm": 36,
+          "rainyDays": 11.5
+        },
+        {
+          "month": 4,
+          "avgTempC": 24.7,
+          "rainfallMm": 92,
+          "rainyDays": 14.2
+        },
+        {
+          "month": 5,
+          "avgTempC": 27.0,
+          "rainfallMm": 220,
+          "rainyDays": 17.6
+        },
+        {
+          "month": 6,
+          "avgTempC": 27.8,
+          "rainfallMm": 254,
+          "rainyDays": 18.6
+        },
+        {
+          "month": 7,
+          "avgTempC": 27.7,
+          "rainfallMm": 326,
+          "rainyDays": 19.4
+        },
+        {
+          "month": 8,
+          "avgTempC": 27.2,
+          "rainfallMm": 333,
+          "rainyDays": 19.2
+        },
+        {
+          "month": 9,
+          "avgTempC": 26.2,
+          "rainfallMm": 274,
+          "rainyDays": 15.4
+        },
+        {
+          "month": 10,
+          "avgTempC": 23.9,
+          "rainfallMm": 154,
+          "rainyDays": 11.4
+        },
+        {
+          "month": 11,
+          "avgTempC": 20.8,
+          "rainfallMm": 46,
+          "rainyDays": 7.5
+        },
+        {
+          "month": 12,
+          "avgTempC": 17.8,
+          "rainfallMm": 16,
+          "rainyDays": 5.4
+        }
+      ]
+    },
+    "phong-nha-ke-bang": {
+      "station": "Dong Hoi",
+      "proxyNote": "Nearest station is Dong Hoi on the coast, about 40km from Phong Nha.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C4%90%E1%BB%93ng_H%E1%BB%9Bi_(city)",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 18.8,
+          "rainfallMm": 59,
+          "rainyDays": 11.8
+        },
+        {
+          "month": 2,
+          "avgTempC": 19.5,
+          "rainfallMm": 40,
+          "rainyDays": 11.2
+        },
+        {
+          "month": 3,
+          "avgTempC": 21.7,
+          "rainfallMm": 43,
+          "rainyDays": 11.3
+        },
+        {
+          "month": 4,
+          "avgTempC": 24.9,
+          "rainfallMm": 61,
+          "rainyDays": 9.2
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.1,
+          "rainfallMm": 116,
+          "rainyDays": 10.1
+        },
+        {
+          "month": 6,
+          "avgTempC": 29.8,
+          "rainfallMm": 79,
+          "rainyDays": 7.3
+        },
+        {
+          "month": 7,
+          "avgTempC": 29.8,
+          "rainfallMm": 76,
+          "rainyDays": 7.2
+        },
+        {
+          "month": 8,
+          "avgTempC": 29.0,
+          "rainfallMm": 166,
+          "rainyDays": 11.0
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.1,
+          "rainfallMm": 472,
+          "rainyDays": 15.8
+        },
+        {
+          "month": 10,
+          "avgTempC": 25.1,
+          "rainfallMm": 649,
+          "rainyDays": 19.3
+        },
+        {
+          "month": 11,
+          "avgTempC": 22.6,
+          "rainfallMm": 319,
+          "rainyDays": 17.4
+        },
+        {
+          "month": 12,
+          "avgTempC": 19.8,
+          "rainfallMm": 125,
+          "rainyDays": 14.2
+        }
+      ]
+    },
+    "hue": {
+      "station": "Hue",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hu%E1%BA%BF",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 19.9,
+          "rainfallMm": 129,
+          "rainyDays": 15.5
+        },
+        {
+          "month": 2,
+          "avgTempC": 20.8,
+          "rainfallMm": 63,
+          "rainyDays": 11.6
+        },
+        {
+          "month": 3,
+          "avgTempC": 23.1,
+          "rainfallMm": 51,
+          "rainyDays": 10.2
+        },
+        {
+          "month": 4,
+          "avgTempC": 26.1,
+          "rainfallMm": 59,
+          "rainyDays": 9.2
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.2,
+          "rainfallMm": 111,
+          "rainyDays": 11.7
+        },
+        {
+          "month": 6,
+          "avgTempC": 29.3,
+          "rainfallMm": 103,
+          "rainyDays": 9.3
+        },
+        {
+          "month": 7,
+          "avgTempC": 29.2,
+          "rainfallMm": 95,
+          "rainyDays": 8.5
+        },
+        {
+          "month": 8,
+          "avgTempC": 28.8,
+          "rainfallMm": 139,
+          "rainyDays": 10.7
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.1,
+          "rainfallMm": 411,
+          "rainyDays": 16.3
+        },
+        {
+          "month": 10,
+          "avgTempC": 25.3,
+          "rainfallMm": 773,
+          "rainyDays": 20.8
+        },
+        {
+          "month": 11,
+          "avgTempC": 23.2,
+          "rainfallMm": 642,
+          "rainyDays": 20.9
+        },
+        {
+          "month": 12,
+          "avgTempC": 20.7,
+          "rainfallMm": 350,
+          "rainyDays": 20.2
+        }
+      ]
+    },
+    "da-nang": {
+      "station": "Da Nang",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Da_Nang",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 21.5,
+          "rainfallMm": 82,
+          "rainyDays": 12.0
+        },
+        {
+          "month": 2,
+          "avgTempC": 22.4,
+          "rainfallMm": 24,
+          "rainyDays": 5.6
+        },
+        {
+          "month": 3,
+          "avgTempC": 24.2,
+          "rainfallMm": 25,
+          "rainyDays": 4.8
+        },
+        {
+          "month": 4,
+          "avgTempC": 26.5,
+          "rainfallMm": 35,
+          "rainyDays": 5.4
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.4,
+          "rainfallMm": 81,
+          "rainyDays": 9.2
+        },
+        {
+          "month": 6,
+          "avgTempC": 29.4,
+          "rainfallMm": 83,
+          "rainyDays": 8.1
+        },
+        {
+          "month": 7,
+          "avgTempC": 29.3,
+          "rainfallMm": 92,
+          "rainyDays": 9.4
+        },
+        {
+          "month": 8,
+          "avgTempC": 29.0,
+          "rainfallMm": 141,
+          "rainyDays": 11.6
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.6,
+          "rainfallMm": 351,
+          "rainyDays": 14.6
+        },
+        {
+          "month": 10,
+          "avgTempC": 26.0,
+          "rainfallMm": 628,
+          "rainyDays": 20.0
+        },
+        {
+          "month": 11,
+          "avgTempC": 24.4,
+          "rainfallMm": 448,
+          "rainyDays": 20.3
+        },
+        {
+          "month": 12,
+          "avgTempC": 22.2,
+          "rainfallMm": 218,
+          "rainyDays": 18.7
+        }
+      ]
+    },
+    "hoi-an": {
+      "station": "Da Nang",
+      "proxyNote": "Uses Da Nang station, about 25km away.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Da_Nang",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 21.5,
+          "rainfallMm": 82,
+          "rainyDays": 12.0
+        },
+        {
+          "month": 2,
+          "avgTempC": 22.4,
+          "rainfallMm": 24,
+          "rainyDays": 5.6
+        },
+        {
+          "month": 3,
+          "avgTempC": 24.2,
+          "rainfallMm": 25,
+          "rainyDays": 4.8
+        },
+        {
+          "month": 4,
+          "avgTempC": 26.5,
+          "rainfallMm": 35,
+          "rainyDays": 5.4
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.4,
+          "rainfallMm": 81,
+          "rainyDays": 9.2
+        },
+        {
+          "month": 6,
+          "avgTempC": 29.4,
+          "rainfallMm": 83,
+          "rainyDays": 8.1
+        },
+        {
+          "month": 7,
+          "avgTempC": 29.3,
+          "rainfallMm": 92,
+          "rainyDays": 9.4
+        },
+        {
+          "month": 8,
+          "avgTempC": 29.0,
+          "rainfallMm": 141,
+          "rainyDays": 11.6
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.6,
+          "rainfallMm": 351,
+          "rainyDays": 14.6
+        },
+        {
+          "month": 10,
+          "avgTempC": 26.0,
+          "rainfallMm": 628,
+          "rainyDays": 20.0
+        },
+        {
+          "month": 11,
+          "avgTempC": 24.4,
+          "rainfallMm": 448,
+          "rainyDays": 20.3
+        },
+        {
+          "month": 12,
+          "avgTempC": 22.2,
+          "rainfallMm": 218,
+          "rainyDays": 18.7
+        }
+      ]
+    },
+    "ly-son": {
+      "station": "Ly Son",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/L%C3%BD_S%C6%A1n",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 23.1,
+          "rainfallMm": 124,
+          "rainyDays": 14.4
+        },
+        {
+          "month": 2,
+          "avgTempC": 23.4,
+          "rainfallMm": 54,
+          "rainyDays": 8.5
+        },
+        {
+          "month": 3,
+          "avgTempC": 24.3,
+          "rainfallMm": 89,
+          "rainyDays": 7.1
+        },
+        {
+          "month": 4,
+          "avgTempC": 26.3,
+          "rainfallMm": 62,
+          "rainyDays": 4.8
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.3,
+          "rainfallMm": 114,
+          "rainyDays": 6.4
+        },
+        {
+          "month": 6,
+          "avgTempC": 29.5,
+          "rainfallMm": 56,
+          "rainyDays": 4.4
+        },
+        {
+          "month": 7,
+          "avgTempC": 29.5,
+          "rainfallMm": 52,
+          "rainyDays": 5.3
+        },
+        {
+          "month": 8,
+          "avgTempC": 29.5,
+          "rainfallMm": 125,
+          "rainyDays": 8.2
+        },
+        {
+          "month": 9,
+          "avgTempC": 28.4,
+          "rainfallMm": 412,
+          "rainyDays": 14.8
+        },
+        {
+          "month": 10,
+          "avgTempC": 27.1,
+          "rainfallMm": 513,
+          "rainyDays": 19.6
+        },
+        {
+          "month": 11,
+          "avgTempC": 25.9,
+          "rainfallMm": 430,
+          "rainyDays": 19.7
+        },
+        {
+          "month": 12,
+          "avgTempC": 24.0,
+          "rainfallMm": 262,
+          "rainyDays": 19.4
+        }
+      ]
+    },
+    "nha-trang": {
+      "station": "Nha Trang",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nha_Trang",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 24.0,
+          "rainfallMm": 43,
+          "rainyDays": 8.6
+        },
+        {
+          "month": 2,
+          "avgTempC": 24.6,
+          "rainfallMm": 16,
+          "rainyDays": 4.3
+        },
+        {
+          "month": 3,
+          "avgTempC": 25.8,
+          "rainfallMm": 30,
+          "rainyDays": 4.1
+        },
+        {
+          "month": 4,
+          "avgTempC": 27.4,
+          "rainfallMm": 42,
+          "rainyDays": 5.0
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.6,
+          "rainfallMm": 52,
+          "rainyDays": 9.2
+        },
+        {
+          "month": 6,
+          "avgTempC": 28.8,
+          "rainfallMm": 50,
+          "rainyDays": 8.3
+        },
+        {
+          "month": 7,
+          "avgTempC": 28.5,
+          "rainfallMm": 42,
+          "rainyDays": 8.4
+        },
+        {
+          "month": 8,
+          "avgTempC": 28.5,
+          "rainfallMm": 82,
+          "rainyDays": 9.8
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.8,
+          "rainfallMm": 166,
+          "rainyDays": 14.4
+        },
+        {
+          "month": 10,
+          "avgTempC": 26.7,
+          "rainfallMm": 312,
+          "rainyDays": 17.6
+        },
+        {
+          "month": 11,
+          "avgTempC": 25.8,
+          "rainfallMm": 382,
+          "rainyDays": 18.0
+        },
+        {
+          "month": 12,
+          "avgTempC": 24.7,
+          "rainfallMm": 191,
+          "rainyDays": 14.4
+        }
+      ]
+    },
+    "da-lat": {
+      "station": "Da Lat",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Da_Lat",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 15.9,
+          "rainfallMm": 9,
+          "rainyDays": 2.2
+        },
+        {
+          "month": 2,
+          "avgTempC": 16.9,
+          "rainfallMm": 20,
+          "rainyDays": 2.5
+        },
+        {
+          "month": 3,
+          "avgTempC": 18.1,
+          "rainfallMm": 64,
+          "rainyDays": 5.8
+        },
+        {
+          "month": 4,
+          "avgTempC": 19.0,
+          "rainfallMm": 170,
+          "rainyDays": 12.8
+        },
+        {
+          "month": 5,
+          "avgTempC": 19.5,
+          "rainfallMm": 212,
+          "rainyDays": 20.5
+        },
+        {
+          "month": 6,
+          "avgTempC": 19.2,
+          "rainfallMm": 204,
+          "rainyDays": 21.2
+        },
+        {
+          "month": 7,
+          "avgTempC": 18.8,
+          "rainfallMm": 233,
+          "rainyDays": 23.8
+        },
+        {
+          "month": 8,
+          "avgTempC": 18.6,
+          "rainfallMm": 238,
+          "rainyDays": 23.1
+        },
+        {
+          "month": 9,
+          "avgTempC": 18.5,
+          "rainfallMm": 283,
+          "rainyDays": 24.0
+        },
+        {
+          "month": 10,
+          "avgTempC": 18.2,
+          "rainfallMm": 245,
+          "rainyDays": 20.0
+        },
+        {
+          "month": 11,
+          "avgTempC": 17.5,
+          "rainfallMm": 94,
+          "rainyDays": 11.5
+        },
+        {
+          "month": 12,
+          "avgTempC": 16.4,
+          "rainfallMm": 36,
+          "rainyDays": 5.9
+        }
+      ]
+    },
+    "phan-thiet": {
+      "station": "Phan Thiet",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Phan_Thi%E1%BA%BFt_(city)",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 25.0,
+          "rainfallMm": 4,
+          "rainyDays": 0.8
+        },
+        {
+          "month": 2,
+          "avgTempC": 25.5,
+          "rainfallMm": 0,
+          "rainyDays": 0.4
+        },
+        {
+          "month": 3,
+          "avgTempC": 26.7,
+          "rainfallMm": 5,
+          "rainyDays": 0.8
+        },
+        {
+          "month": 4,
+          "avgTempC": 28.2,
+          "rainfallMm": 30,
+          "rainyDays": 3.3
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.6,
+          "rainfallMm": 144,
+          "rainyDays": 13.2
+        },
+        {
+          "month": 6,
+          "avgTempC": 27.8,
+          "rainfallMm": 143,
+          "rainyDays": 15.6
+        },
+        {
+          "month": 7,
+          "avgTempC": 27.2,
+          "rainfallMm": 172,
+          "rainyDays": 17.6
+        },
+        {
+          "month": 8,
+          "avgTempC": 27.1,
+          "rainfallMm": 166,
+          "rainyDays": 18.6
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.1,
+          "rainfallMm": 187,
+          "rainyDays": 17.3
+        },
+        {
+          "month": 10,
+          "avgTempC": 27.1,
+          "rainfallMm": 159,
+          "rainyDays": 13.8
+        },
+        {
+          "month": 11,
+          "avgTempC": 26.7,
+          "rainfallMm": 55,
+          "rainyDays": 6.5
+        },
+        {
+          "month": 12,
+          "avgTempC": 25.7,
+          "rainfallMm": 21,
+          "rainyDays": 3.1
+        }
+      ]
+    },
+    "con-dao": {
+      "station": "Con Dao",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/C%C3%B4n_%C4%90%E1%BA%A3o",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 25.3,
+          "rainfallMm": 12,
+          "rainyDays": 2.2
+        },
+        {
+          "month": 2,
+          "avgTempC": 25.7,
+          "rainfallMm": 13,
+          "rainyDays": 0.7
+        },
+        {
+          "month": 3,
+          "avgTempC": 26.8,
+          "rainfallMm": 11,
+          "rainyDays": 1.7
+        },
+        {
+          "month": 4,
+          "avgTempC": 28.1,
+          "rainfallMm": 39,
+          "rainyDays": 4.8
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.4,
+          "rainfallMm": 210,
+          "rainyDays": 14.9
+        },
+        {
+          "month": 6,
+          "avgTempC": 28.0,
+          "rainfallMm": 289,
+          "rainyDays": 18.6
+        },
+        {
+          "month": 7,
+          "avgTempC": 27.8,
+          "rainfallMm": 297,
+          "rainyDays": 18.8
+        },
+        {
+          "month": 8,
+          "avgTempC": 27.7,
+          "rainfallMm": 298,
+          "rainyDays": 19.6
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.4,
+          "rainfallMm": 316,
+          "rainyDays": 19.7
+        },
+        {
+          "month": 10,
+          "avgTempC": 27.1,
+          "rainfallMm": 351,
+          "rainyDays": 19.6
+        },
+        {
+          "month": 11,
+          "avgTempC": 26.9,
+          "rainfallMm": 175,
+          "rainyDays": 12.3
+        },
+        {
+          "month": 12,
+          "avgTempC": 26.0,
+          "rainfallMm": 53,
+          "rainyDays": 5.5
+        }
+      ]
+    },
+    "phu-quoc": {
+      "station": "Phu Quoc",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ph%C3%BA_Qu%E1%BB%91c",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 25.9,
+          "rainfallMm": 28,
+          "rainyDays": 4.6
+        },
+        {
+          "month": 2,
+          "avgTempC": 26.6,
+          "rainfallMm": 27,
+          "rainyDays": 3.7
+        },
+        {
+          "month": 3,
+          "avgTempC": 27.8,
+          "rainfallMm": 61,
+          "rainyDays": 6.6
+        },
+        {
+          "month": 4,
+          "avgTempC": 28.5,
+          "rainfallMm": 148,
+          "rainyDays": 11.7
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.6,
+          "rainfallMm": 281,
+          "rainyDays": 19.0
+        },
+        {
+          "month": 6,
+          "avgTempC": 28.0,
+          "rainfallMm": 382,
+          "rainyDays": 21.0
+        },
+        {
+          "month": 7,
+          "avgTempC": 27.6,
+          "rainfallMm": 419,
+          "rainyDays": 22.5
+        },
+        {
+          "month": 8,
+          "avgTempC": 27.5,
+          "rainfallMm": 486,
+          "rainyDays": 23.6
+        },
+        {
+          "month": 9,
+          "avgTempC": 27.2,
+          "rainfallMm": 474,
+          "rainyDays": 22.8
+        },
+        {
+          "month": 10,
+          "avgTempC": 26.8,
+          "rainfallMm": 354,
+          "rainyDays": 21.5
+        },
+        {
+          "month": 11,
+          "avgTempC": 26.9,
+          "rainfallMm": 164,
+          "rainyDays": 13.8
+        },
+        {
+          "month": 12,
+          "avgTempC": 26.3,
+          "rainfallMm": 59,
+          "rainyDays": 6.2
+        }
+      ]
+    },
+    "mekong-delta": {
+      "station": "Can Tho",
+      "proxyNote": "Can Tho station, representative of the central delta.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 25.4,
+          "rainfallMm": 10,
+          "rainyDays": 2.0
+        },
+        {
+          "month": 2,
+          "avgTempC": 26.1,
+          "rainfallMm": 4,
+          "rainyDays": 0.8
+        },
+        {
+          "month": 3,
+          "avgTempC": 27.3,
+          "rainfallMm": 15,
+          "rainyDays": 1.8
+        },
+        {
+          "month": 4,
+          "avgTempC": 28.5,
+          "rainfallMm": 42,
+          "rainyDays": 5.6
+        },
+        {
+          "month": 5,
+          "avgTempC": 28.0,
+          "rainfallMm": 223,
+          "rainyDays": 16.4
+        },
+        {
+          "month": 6,
+          "avgTempC": 27.3,
+          "rainfallMm": 310,
+          "rainyDays": 19.9
+        },
+        {
+          "month": 7,
+          "avgTempC": 26.9,
+          "rainfallMm": 336,
+          "rainyDays": 21.5
+        },
+        {
+          "month": 8,
+          "avgTempC": 26.8,
+          "rainfallMm": 338,
+          "rainyDays": 21.6
+        },
+        {
+          "month": 9,
+          "avgTempC": 26.8,
+          "rainfallMm": 451,
+          "rainyDays": 22.1
+        },
+        {
+          "month": 10,
+          "avgTempC": 26.9,
+          "rainfallMm": 301,
+          "rainyDays": 21.8
+        },
+        {
+          "month": 11,
+          "avgTempC": 26.9,
+          "rainfallMm": 137,
+          "rainyDays": 13.6
+        },
+        {
+          "month": 12,
+          "avgTempC": 25.7,
+          "rainfallMm": 42,
+          "rainyDays": 6.5
+        }
+      ]
+    },
+    "ho-chi-minh-city": {
+      "station": "Tan Son Nhat (HCMC)",
+      "proxyNote": null,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City",
+      "months": [
+        {
+          "month": 1,
+          "avgTempC": 27.3,
+          "rainfallMm": 12,
+          "rainyDays": 2.0
+        },
+        {
+          "month": 2,
+          "avgTempC": 27.5,
+          "rainfallMm": 8,
+          "rainyDays": 1.0
+        },
+        {
+          "month": 3,
+          "avgTempC": 28.1,
+          "rainfallMm": 18,
+          "rainyDays": 1.0
+        },
+        {
+          "month": 4,
+          "avgTempC": 29.3,
+          "rainfallMm": 57,
+          "rainyDays": 4.0
+        },
+        {
+          "month": 5,
+          "avgTempC": 29.5,
+          "rainfallMm": 202,
+          "rainyDays": 13.0
+        },
+        {
+          "month": 6,
+          "avgTempC": 28.8,
+          "rainfallMm": 224,
+          "rainyDays": 16.0
+        },
+        {
+          "month": 7,
+          "avgTempC": 28.4,
+          "rainfallMm": 231,
+          "rainyDays": 19.0
+        },
+        {
+          "month": 8,
+          "avgTempC": 28.3,
+          "rainfallMm": 219,
+          "rainyDays": 17.0
+        },
+        {
+          "month": 9,
+          "avgTempC": 28.1,
+          "rainfallMm": 490,
+          "rainyDays": 18.0
+        },
+        {
+          "month": 10,
+          "avgTempC": 28.0,
+          "rainfallMm": 340,
+          "rainyDays": 16.0
+        },
+        {
+          "month": 11,
+          "avgTempC": 28.0,
+          "rainfallMm": 128,
+          "rainyDays": 9.0
+        },
+        {
+          "month": 12,
+          "avgTempC": 27.3,
+          "rainfallMm": 41,
+          "rainyDays": 5.0
+        }
+      ]
+    }
+  }
 }

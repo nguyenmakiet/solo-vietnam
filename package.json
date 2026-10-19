@@ -12,8 +12,7 @@
     "audit:taxonomy": "tsx scripts/audit-taxonomy.ts",
     "audit:best-time": "tsx scripts/audit-best-time.ts",
     "audit:time-needed": "tsx scripts/audit-time-needed.ts",
-    "audit:links": "tsx scripts/audit-links.ts",
-    "fetch:climate": "tsx scripts/fetch-climate.ts"
+    "audit:links": "tsx scripts/audit-links.ts"
   },
   "dependencies": {
     "@svg-maps/vietnam": "^2.0.0",
