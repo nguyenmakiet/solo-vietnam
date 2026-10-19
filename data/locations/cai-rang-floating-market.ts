@@ -133,7 +133,7 @@ export const caiRangFloatingMarket: Location = {
       "National intangible cultural heritage since 2016; Rough Guides listed among the world's 10 most impressive markets",
       "The cây bẹo system: each boat displays its goods on a tall bamboo pole - a silent trading language developed for open-water commerce",
       "Largest remaining wholesale floating market in the Mekong Delta - most of the original 15+ markets have disappeared",
-      "May-Aug: peak tropical fruit season alongside stable river conditions - the most visually abundant time to visit",
+      "May-Aug: peak tropical fruit season - boats piled high with durian, mangosteen and rambutan, the most colorful time at the market",
       "Annual Floating Market Festival in early July: performances, traditional stalls, and photography exhibitions",
     ],
     thingsToKnow: {
