@@ -168,6 +168,7 @@ export const daNang: Destination = {
   },
 
   bestTimeSummary: "March–May and September–October are best. Avoid October–November - Da Nang gets the heaviest rainfall in Central Vietnam.",
+  bestMonths: [3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2–3 days (or use as a base for the entire central region)",
 

@@ -102,6 +102,7 @@ export const caoBang: Destination = {
   },
 
   bestTimeSummary: "Sep–Nov golden rice season, best waterfall flow after rainy season, clear skies. Mar–May also good. Avoid Jun–Aug heavy rain.",
+  bestMonths: [3, 4, 5, 9, 10, 11],
 
   recommendedStay: "2–4 days",
 

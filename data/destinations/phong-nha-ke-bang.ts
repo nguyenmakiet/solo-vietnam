@@ -115,6 +115,7 @@ export const phongNhaKeBang: Destination = {
   },
 
   bestTimeSummary: "Feb–Aug dry season - caves open and accessible. Sep–Nov: floods can close caves and some trails. Avoid heavy rain season.",
+  bestMonths: [2, 3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2–4 days",
 

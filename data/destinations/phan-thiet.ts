@@ -110,6 +110,7 @@ export const phanThiet: Destination = {
   },
 
   bestTimeSummary: "Nov–Apr dry season with strong winds - ideal for kite surfing. May–Oct southwest monsoon brings rain and rough seas.",
+  bestMonths: [1, 2, 3, 4, 11, 12],
 
   recommendedStay: "2–3 days",
 

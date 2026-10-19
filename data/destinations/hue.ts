@@ -121,6 +121,7 @@ export const hue: Destination = {
   },
 
   bestTimeSummary: "Jan–Apr and Sep are best. Avoid Oct–Nov - Hue gets the heaviest rainfall of any city in Vietnam.",
+  bestMonths: [1, 2, 3, 4, 9],
 
   recommendedStay: "2–3 days",
 

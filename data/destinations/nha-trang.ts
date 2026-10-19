@@ -116,6 +116,7 @@ export const nhaTrang: Destination = {
   },
 
   bestTimeSummary: "Jan–Sep best for beach and diving. Oct–Dec northeast monsoon brings rough seas and heavy rain.",
+  bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2–3 days",
 

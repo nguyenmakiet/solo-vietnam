@@ -189,6 +189,7 @@ export const haNoi: Destination = {
   },
 
   bestTimeSummary: "Oct–Apr cooler and drier. Sep–Nov ideal. Avoid Jan–Feb (cold, drizzly). Jun–Aug hot and humid.",
+  bestMonths: [3, 4, 9, 10, 11, 12],
 
   recommendedStay: "2–4 days",
 

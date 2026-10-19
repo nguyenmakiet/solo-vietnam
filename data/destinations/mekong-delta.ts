@@ -114,6 +114,7 @@ export const mekongDelta: Destination = {
   },
 
   bestTimeSummary: "Nov–Apr dry season, floating markets most active. Sep–Oct flood season in the upper delta - Tra Su is at its best but some roads flood.",
+  bestMonths: [1, 2, 3, 4, 11, 12],
 
   recommendedStay: "1–3 days",
 

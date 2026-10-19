@@ -10,10 +10,10 @@
 //
 // ✅ Hardcode trong destination file:
 //    - gettingThere, itineraries, cost, travelStyle, bestTimeSummary
+//    - bestMonths (editorial, bắt buộc - month strip trên destination page)
 //    - fallback fields (dùng tạm khi location data chưa đủ)
 //
 // ❌ KHÔNG hardcode (derive runtime qua deriveFromLocations()):
-//    - bestMonths  → frequency(location.bestMonths[]) >= 30% of released locations (data/best-months-release.ts)
 //    - whatToDo    → group(location.experiences[]) → UI categories
 //    - highlights  → top location.insights.highlights[] với slug + text
 //
@@ -164,6 +164,9 @@ export type Destination = {
   itineraries?: Itinerary[]
   cost?: CostRange
   bestTimeSummary?: string  // string ngắn cho card/hero
+  // Editorial month strip (1-12, ascending). Not derived from locations;
+  // keep it consistent with bestTimeSummary. Checked by `npm run audit:best-time`
+  bestMonths: number[]
   recommendedStay?: string
   transport?: string
   nearbyDestinations?: string[]
@@ -189,7 +192,6 @@ export type Destination = {
   // Dùng tạm khi location data chưa đủ để derive
   // Tự động bị bỏ qua khi deriveFromLocations() trả về data
   // TODO: xóa dần khi locations đã fill đầy đủ
-  bestMonthsFallback?: number[]
   whatToDoFallback?: WhatToDo
   highlightsFallback?: Highlight[]
 }
@@ -197,10 +199,6 @@ export type Destination = {
 // ─── Derived Result Type ─────────────────────────────────────
 // Output của deriveFromLocations() — consumed bởi UI component
 export type DerivedDestinationData = {
-  // Months xuất hiện trong >= 30% locations thuộc destination
-  // Dùng frequency thay vì union để tránh noisy data
-  bestMonths: number[]
-
   // Grouped theo EXPERIENCE_GROUP_CONFIG, sorted by order
   whatToDo: WhatToDo
 

@@ -2,6 +2,8 @@
  * Read-only consistency audit: season / time-of-day text vs `bestMonths`.
  *
  * Reads `bestSeasonNote` and `bestTimeOfDay`. Never writes to data files.
+ * Also checks every destination's editorial `bestMonths` (present, 1-12,
+ * no duplicates) and exits 1 when one fails.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -43,6 +45,7 @@ import { writeFileSync, mkdirSync } from "fs"
 import { dirname } from "path"
 import { allLocations } from "../data/all-locations"
 import { BEST_MONTHS_RELEASES, BEST_MONTHS_AUDIT_OVERRIDES } from "../data/best-months-release"
+import { destinations } from "../data/destinations/index"
 
 const MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 // Capitalised only, so the verb "may" and "march" never count as months
@@ -343,6 +346,23 @@ if (mdIndex !== -1) {
   mkdirSync(dirname(out), { recursive: true })
   writeFileSync(out, lines.join("\n"))
   console.log(`Markdown report written to ${out}`)
+}
+
+// Destination gate: destination bestMonths is editorial (not derived from
+// locations), so it is checked here on every run
+const destinationFailures: string[] = []
+for (const d of destinations) {
+  const months = (d as { bestMonths?: number[] }).bestMonths
+  const fail = (msg: string) => destinationFailures.push(`${d.slug}: ${msg}`)
+  if (!Array.isArray(months) || months.length === 0) { fail("bestMonths is missing or empty"); continue }
+  if (months.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) fail("bestMonths has a value outside 1-12")
+  if (new Set(months).size !== months.length) fail("bestMonths has duplicates")
+}
+if (destinationFailures.length) {
+  console.log(`\nDESTINATION CHECK FAILED (${destinationFailures.length}):\n  ${destinationFailures.join("\n  ")}`)
+  process.exitCode = 1
+} else {
+  console.log(`\nDestination check passed: ${destinations.length} destinations.`)
 }
 
 // Release gate: every slug in data/best-months-release.ts must be public,

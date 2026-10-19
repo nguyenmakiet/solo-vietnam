@@ -103,9 +103,7 @@ export default async function DestinationPage({
 
   const derived = deriveFromLocations(destination.slug, allLocations)
 
-  const bestMonths = derived.bestMonths.length > 0
-    ? derived.bestMonths
-    : destination.bestMonthsFallback ?? []
+  const bestMonths = destination.bestMonths
 
   const whatToDo = Object.keys(derived.whatToDo).length > 0
     ? derived.whatToDo

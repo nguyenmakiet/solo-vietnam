@@ -1,5 +1,4 @@
 import { Location } from "@/data/location"
-import { releasedBestMonths } from "@/data/best-months-release"
 import {
   Destination,
   DerivedDestinationData,
@@ -74,23 +73,6 @@ export function deriveFromLocations(
 ): DerivedDestinationData {
   const locations = allLocations.filter((l) => l.destination === destinationSlug)
 
-  // ── bestMonths ──────────────────────────────────────────────────────────────
-  // Count how many released locations include each month, then keep months
-  // present in >= 30% of them. Locations whose bestMonths is not released
-  // (see data/best-months-release.ts) count neither way.
-  const monthLocations = locations.filter((l) => releasedBestMonths(l).length > 0)
-  const monthCount: Record<number, number> = {}
-  for (const loc of monthLocations) {
-    for (const month of releasedBestMonths(loc)) {
-      monthCount[month] = (monthCount[month] ?? 0) + 1
-    }
-  }
-  const threshold = monthLocations.length * 0.3
-  const bestMonths = Object.entries(monthCount)
-    .filter(([, count]) => count >= threshold)
-    .map(([month]) => Number(month))
-    .sort((a, b) => a - b)
-
   // ── whatToDo ────────────────────────────────────────────────────────────────
   // Map location experiences to their group in EXPERIENCE_GROUP_CONFIG, dedupe
   // within each group, then sort groups by config order.
@@ -137,7 +119,6 @@ export function deriveFromLocations(
   }
 
   return {
-    bestMonths,
     whatToDo,
     highlights,
     locationCount: locations.length,

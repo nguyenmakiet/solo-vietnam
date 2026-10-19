@@ -100,6 +100,7 @@ export const lySon: Destination = {
   },
 
   bestTimeSummary: "Mar–Aug calm seas and clear water. Mar–Apr garlic harvest season - most photogenic. Avoid Sep–Jan when storms frequently cancel ferries for days.",
+  bestMonths: [3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2–3 days",
 

@@ -127,6 +127,7 @@ export const hoChiMinhCity: Destination = {
   },
 
   bestTimeSummary: "Dec–Apr dry season, cooler and drier. May–Nov rainy season - heavy afternoon showers but city stays lively year-round.",
+  bestMonths: [1, 2, 3, 4, 12],
 
   recommendedStay: "2–4 days",
 

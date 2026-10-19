@@ -134,6 +134,7 @@ export const ninhBinh: Destination = {
 
   // ─── Practical ───────────────────────────────────────────
   bestTimeSummary: "Sep–Nov golden rice season, clear skies. Apr–Jun also good. Avoid Jul–Aug heavy rain. Tết and major holidays make Bai Dinh extremely crowded.",
+  bestMonths: [4, 5, 6, 9, 10, 11],
 
   recommendedStay: "2–3 days",
 
