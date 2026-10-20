@@ -6,7 +6,7 @@ export const hamTienBeach: Location = {
   name: "Hàm Tiến Beach",
   updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
-  destination: "phan-thiet",
+  destination: "mui-ne",
   lat: 10.940316,
   lng: 108.193239,
   address: "Hàm Tiến, Phan Thiết, Bình Thuận",

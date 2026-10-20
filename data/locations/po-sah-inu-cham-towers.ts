@@ -6,7 +6,7 @@ export const poSahInuChamTowers: Location = {
   name: "Po Sah Inu Cham Towers",
   updatedAt: "2026-10-15",
   provinces: ["binh-thuan"],
-  destination: "phan-thiet",
+  destination: "mui-ne",
   lat: 10.935967,
   lng: 108.146048,
   address: "Bà Nài hill, Phú Thủy ward, Lâm Đồng (formerly Phú Hài ward, Phan Thiết city, Bình Thuận)",

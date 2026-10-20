@@ -1,9 +1,9 @@
 import { Destination, FaqItem } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
 
-export const phanThiet: Destination = {
-  slug: "phan-thiet",
-  name: "Phan Thiet",
+export const muiNe: Destination = {
+  slug: "mui-ne",
+  name: "Mui Ne",
   updatedAt: "2026-10-20",
   province: "Binh Thuan",
   provinceSlug: "binh-thuan",

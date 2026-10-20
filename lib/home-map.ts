@@ -79,7 +79,7 @@ export const HOME_MAP_LAYOUT: Record<string, { pill?: { dx: number; dy: number }
   "da-nang": { pill: { dx: -82.1, dy: 20.1 } },
   "nha-trang": { pill: { dx: 65.6, dy: 0 } },
   "da-lat": { pill: { dx: 0, dy: -53 } },
-  "phan-thiet": { pill: { dx: 63.5, dy: 0 } },
+  "mui-ne": { pill: { dx: 63.5, dy: 0 } },
   "ho-chi-minh-city": { pill: { dx: -43, dy: -23 } },
   "phu-quoc": { pill: { dx: -4, dy: 23 } },
   "cao-bang": { mark: "dot" },

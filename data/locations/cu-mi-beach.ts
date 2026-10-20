@@ -6,7 +6,7 @@ export const cuMiBeach: Location = {
   name: "Cù Mi Beach",
   updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
-  destination: "phan-thiet",
+  destination: "mui-ne",
   lat: 10.596704182171713,
   lng: 107.62900799661435,
   address: "Tân Thắng, Hàm Tân, Bình Thuận",

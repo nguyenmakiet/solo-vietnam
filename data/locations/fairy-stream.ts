@@ -6,7 +6,7 @@ export const fairyStream: Location = {
   name: "Fairy Stream",
   updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
-  destination: "phan-thiet",
+  destination: "mui-ne",
   lat: 10.955760120620356,
   lng: 108.25941870282894,
   address: "Suối Tiên, Mũi Né, Phan Thiết, Bình Thuận",

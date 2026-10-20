@@ -6,7 +6,7 @@ export const muiTroFishingVillage: Location = {
   name: "Mũi Trọ Fishing Village",
   updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
-  destination: "phan-thiet",
+  destination: "mui-ne",
   lat: 11.191860491067558,
   lng: 108.72934429502345,
   address: "Near Cô Thạch, Tuy Phong, Bình Thuận",
