@@ -61,11 +61,8 @@ export const hoiAn: Destination = {
           stops: [
             "hoi-an-ancient-town",
             "japanese-bridge",
-            "tan-ky-old-house",
-            "fujian-assembly-hall",
-            "night-market",
           ],
-          notes: "Arrive early morning - the Old Town at 7am is a completely different place from midday. Book a tailor on day 1 if you want anything made - needs 24–48 hours minimum. Buy the Old Town ticket (120,000 VND, covers 5 heritage sites). Evening: lanterns along the river.",
+          notes: "Arrive early morning - the Old Town at 7am is a completely different place from midday. Book a tailor on day 1 if you want anything made - needs 24–48 hours minimum. Buy the Old Town ticket (120,000 VND, covers 5 heritage sites). Evening: lanterns along the river. Also: Tan Ky Old House, Fujian Assembly Hall, night market.",
         },
         {
           day: 2,
@@ -89,11 +86,8 @@ export const hoiAn: Destination = {
           stops: [
             "hoi-an-ancient-town",
             "japanese-bridge",
-            "tan-ky-old-house",
-            "fujian-assembly-hall",
-            "central-market",
           ],
-          notes: "Dawn start. Book tailor immediately. Old Town ticket covers 5 sites. Evening: full moon lantern festival if timing works (14th lunar calendar each month).",
+          notes: "Dawn start. Book tailor immediately. Old Town ticket covers 5 sites. Evening: full moon lantern festival if timing works (14th lunar calendar each month). Also: Tan Ky Old House, Fujian Assembly Hall, Central Market.",
         },
         {
           day: 2,
@@ -125,10 +119,8 @@ export const hoiAn: Destination = {
           stops: [
             "hoi-an-ancient-town",
             "japanese-bridge",
-            "tan-ky-old-house",
-            "fujian-assembly-hall",
           ],
-          notes: "Arrive, drop bags, book tailor immediately. Dawn walk is unmissable.",
+          notes: "Arrive, drop bags, book tailor immediately. Dawn walk is unmissable. Also: Tan Ky Old House, Fujian Assembly Hall.",
         },
         {
           day: 2,
@@ -153,7 +145,6 @@ export const hoiAn: Destination = {
           title: "Cooking class + slow Old Town farewell",
           stops: [
             "hoi-an-ancient-town",
-            "central-market",
           ],
           notes: "Morning cooking class (most include Central Market visit). Final walk through the Old Town. Lunch before departure.",
         },

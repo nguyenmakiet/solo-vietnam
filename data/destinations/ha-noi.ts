@@ -173,7 +173,6 @@ export const haNoi: Destination = {
             "west-lake",
             "tran-quoc-pagoda",
             "hanoi-train-street",
-            "dong-xuan-market",
           ],
           notes: "Slow morning at West Lake. Train Street. Dong Xuan Market before departure.",
         },

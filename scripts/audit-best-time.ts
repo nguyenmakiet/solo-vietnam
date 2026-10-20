@@ -6,7 +6,9 @@
  * no duplicates) and exits 1 when one fails, and warns (never fails) when a
  * destination best month is among its 3 wettest months in data/climate.json.
  * Destination `gallery` (non-empty alt, existing locationSlug) and
- * `updatedAt` (valid YYYY-MM-DD date) also fail the destination check.
+ * `updatedAt` (valid YYYY-MM-DD date) also fail the destination check, and so
+ * do itinerary / day-trip stops that are not location slugs and
+ * `nearbyDestinations` entries that are not destination slugs.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -355,9 +357,21 @@ if (mdIndex !== -1) {
 // Destination gate: destination bestMonths is editorial (not derived from
 // locations), so it is checked here on every run
 const destinationFailures: string[] = []
+const locationSlugs = new Set(allLocations.map((l) => l.slug))
+const destinationSlugs = new Set(destinations.map((d) => d.slug))
 for (const d of destinations) {
   const months = (d as { bestMonths?: number[] }).bestMonths
   const fail = (msg: string) => destinationFailures.push(`${d.slug}: ${msg}`)
+  // Itinerary and day-trip stops must be existing locations
+  d.itineraries?.forEach((itin) => itin.days.forEach((day) => day.stops.forEach((stop) => {
+    if (!locationSlugs.has(stop)) fail(`itinerary ${itin.duration} day ${day.day} stop "${stop}" is not a location`)
+  })))
+  d.dayTrips?.forEach((trip) => trip.plan?.stops.forEach((stop) => {
+    if (!locationSlugs.has(stop)) fail(`dayTrip "${trip.title}" stop "${stop}" is not a location`)
+  }))
+  d.nearbyDestinations?.forEach((slug) => {
+    if (!destinationSlugs.has(slug)) fail(`nearbyDestinations "${slug}" is not a destination`)
+  })
   if (!Array.isArray(months) || months.length === 0) { fail("bestMonths is missing or empty"); continue }
   if (months.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) fail("bestMonths has a value outside 1-12")
   if (new Set(months).size !== months.length) fail("bestMonths has duplicates")
