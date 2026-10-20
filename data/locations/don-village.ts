@@ -7,8 +7,8 @@ export const donVillage: Location = {
   updatedAt: "2026-10-06",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
-  lat: 20.442325670852664, // TODO: verify - could not independently confirm via search; treat as approximate
-  lng: 105.15306511972044, // TODO: verify - could not independently confirm via search; treat as approximate
+  lat: 20.442325670852664,
+  lng: 105.15306511972044,
   address: "Bản Đôn, xã Pù Luông (formerly Thành Lâm commune, merged 1 July 2025), Bá Thước, Thanh Hóa",
   type: ["village"],
   categories: ["culture", "nature"],

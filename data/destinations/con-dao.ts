@@ -23,9 +23,9 @@ export const conDao: Destination = {
     {
       from: "Ho Chi Minh City",
       vehicle: "fly",
-      duration: "45 minutes",
+      duration: "45-60 minutes",
       cost: "from 800,000 VND",
-      notes: "Vietnam Airlines flies daily from Tan Son Nhat (about 1 hour) - the fastest option.",
+      notes: "Vietnam Airlines flies daily from Tan Son Nhat (under an hour) - the fastest option.",
     },
     {
       from: "Can Tho",

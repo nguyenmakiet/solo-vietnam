@@ -74,7 +74,7 @@ export const phanThiet: Destination = {
       days: [
         {
           day: 1,
-          title: "Arrival + Red Sand Dunes + Mui Ne fishing village",
+          title: "Arrival + Red Sand Dunes sunset",
           stops: [
             "red-sand-dunes",
           ],

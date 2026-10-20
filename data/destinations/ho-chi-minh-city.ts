@@ -74,10 +74,10 @@ export const hoChiMinhCity: Destination = {
         },
         {
           day: 2,
-          title: "Cu Chi Tunnels day trip + Jade Emperor Pagoda",
+          title: "Jade Emperor Pagoda + Cu Chi Tunnels",
           stops: [
-            "cu-chi-tunnels",
             "jade-emperor-pagoda",
+            "cu-chi-tunnels",
           ],
           notes: "Jade Emperor Pagoda at 7am opening, the most atmospheric temple in central HCMC and quiet before tour groups arrive. Then an afternoon Cu Chi Tunnels tour - about 70km northwest, half day, 250,000-350,000 VND (check current tour prices).",
         },
