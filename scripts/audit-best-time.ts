@@ -13,7 +13,9 @@
  * Optional `avoidMonths` must be 1-12, without duplicates, disjoint from
  * `bestMonths` and explained by `avoidSummary`; months that `bestTimeSummary`
  * tells you to avoid must not be best months (and must be in `avoidMonths`
- * when it is set).
+ * when it is set). `emergencyContacts` fail on an unknown type, a phone with
+ * characters other than digits, spaces, * and +, a non-https sourceUrl or an
+ * invalid verifiedAt, and warn (never fail) when verifiedAt is over 365 days old.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -362,6 +364,12 @@ if (mdIndex !== -1) {
 // Destination gate: destination bestMonths is editorial (not derived from
 // locations), so it is checked here on every run
 const destinationFailures: string[] = []
+const emergencyWarnings: string[] = []
+const EMERGENCY_TYPES = new Set(["tourist-hotline", "scam-report", "medical", "police", "other"])
+const isValidDate = (s: string) => {
+  const date = /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(`${s}T00:00:00Z`) : null
+  return !!date && !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === s
+}
 const locationSlugs = new Set(allLocations.map((l) => l.slug))
 const destinationSlugs = new Set(destinations.map((d) => d.slug))
 for (const d of destinations) {
@@ -421,6 +429,19 @@ for (const d of destinations) {
     const notInAvoid = avoid ? avoidClauseMonths.filter((m) => !avoid.includes(m)) : []
     if (notInAvoid.length) fail(`bestTimeSummary says to avoid ${fmt(notInAvoid)}, which is not in avoidMonths`)
   }
+  // Emergency contacts (dashes are covered by findDashes above)
+  d.emergencyContacts?.forEach((c, i) => {
+    const label = `emergencyContacts[${i}] (${c.name})`
+    if (!EMERGENCY_TYPES.has(c.type)) fail(`${label} has unknown type "${c.type}"`)
+    for (const phone of [c.phone, ...(c.altPhones ?? [])]) {
+      if (!/^[0-9 *+]+$/.test(phone)) fail(`${label} phone "${phone}" may only contain digits, spaces, * and +`)
+    }
+    if (!/^https:\/\//.test(c.sourceUrl)) fail(`${label} sourceUrl is not https`)
+    if (!isValidDate(c.verifiedAt)) fail(`${label} verifiedAt "${c.verifiedAt}" is not a valid YYYY-MM-DD date`)
+    else if ((Date.now() - new Date(`${c.verifiedAt}T00:00:00Z`).getTime()) / 86_400_000 > 365) {
+      emergencyWarnings.push(`${d.slug}: ${c.name} last verified ${c.verifiedAt}, re-check`)
+    }
+  })
 }
 if (destinationFailures.length) {
   console.log(`\nDESTINATION CHECK FAILED (${destinationFailures.length}):\n  ${destinationFailures.join("\n  ")}`)
@@ -443,6 +464,7 @@ for (const d of destinations) {
     climateWarnings.push(`${d.slug}: ${MONTH_NAMES[m - 1]} is in bestMonths but is wettest month #${rank} (${c.months[m - 1].rainfallMm} mm, ${c.months[m - 1].rainyDays} rainy days)`)
   }
 }
+if (emergencyWarnings.length) console.log(`\nEMERGENCY CONTACT WARNINGS (${emergencyWarnings.length}, not a failure):\n  ${emergencyWarnings.join("\n  ")}`)
 if (!withClimate) console.log("\nClimate check skipped: no destination climate data in data/climate.json.")
 else if (climateWarnings.length) console.log(`\nCLIMATE WARNINGS (${climateWarnings.length}, not a failure):\n  ${climateWarnings.join("\n  ")}`)
 else console.log(`\nClimate check passed: ${withClimate} destinations, no best month among the 3 wettest.`)

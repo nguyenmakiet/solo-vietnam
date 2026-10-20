@@ -1,0 +1,46 @@
+/* Emergency & help (destination page). Same tokens and ruled-row pattern as
+   Getting There. Mobile first: national numbers in a 2x2 grid, 4 across from 640px */
+.dp .ec-national { border-top: 1px solid var(--color-ink); padding-top: 14px; }
+.dp .ec-national-list {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;
+}
+.dp .ec-national-list li {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-line); border-radius: var(--radius-card);
+  background: var(--color-surface);
+}
+.dp .ec-national-num {
+  font-size: 22px; font-weight: 700; line-height: 1.2;
+  color: var(--color-signal-text); text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+.dp .ec-national-num:hover { text-decoration: underline; text-underline-offset: 3px; }
+.dp .ec-national-label { font-size: 13px; color: var(--color-ink-2); }
+.dp .ec-national-note { margin-top: 10px; max-width: 720px; font-size: 13px; line-height: 1.6; color: var(--color-ink-2); }
+.dp .ec-national-note a, .dp .ec-source a { color: var(--color-ink-2); text-underline-offset: 2px; }
+
+.dp .ec-group { margin-top: 28px; }
+.dp .ec-group-label {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-ink);
+}
+.dp .ec-list { list-style: none; margin: 0; padding: 0; }
+.dp .ec-contact { padding: 14px 0; border-bottom: 1px solid var(--color-line); }
+.dp .ec-name {
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: 18px; font-weight: 700; color: var(--color-ink);
+}
+.dp .ec-phones { margin-top: 4px; font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.dp .ec-phones a { color: var(--color-ink); text-underline-offset: 3px; }
+.dp .ec-sep { margin: 0 8px; color: var(--color-ink-2); font-weight: 400; }
+.dp .ec-meta { margin-top: 4px; font-size: 14px; color: var(--color-ink-2); }
+.dp .ec-notes { margin-top: 8px; max-width: 720px; font-size: 15px; line-height: 1.65; color: var(--color-ink-2); }
+.dp .ec-source { margin-top: 6px; font-size: 12px; }
+
+@media (min-width: 640px) {
+  .dp .ec-national-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
