@@ -124,7 +124,7 @@ export default async function DestinationPage({
 
   // Build stop data map for itinerary map
   const stopDataMap: Record<string, { name: string; lat: number; lng: number; status?: string }> = {}
-  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang"])
+  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang", "phu-quoc", "mekong-delta", "mui-ne"])
   if (MAP_DESTINATIONS.has(destination.slug) && destination.itineraries) {
     const stopSlugs = new Set(
       destination.itineraries.flatMap((itin) => itin.days.flatMap((day) => day.stops))

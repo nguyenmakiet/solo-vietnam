@@ -257,7 +257,7 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
         <div className="itin-map-tabs">
           {itineraries.map((itin, idx) => (
             <button
-              key={itin.duration}
+              key={`${itin.duration}-${itin.label}`}
               className={`itin-map-tab${activeItinIdx === idx ? " active" : ""}`}
               onClick={() => setActiveItinIdx(idx)}
             >
