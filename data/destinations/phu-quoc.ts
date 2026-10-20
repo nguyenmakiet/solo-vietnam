@@ -132,7 +132,7 @@ export const phuQuoc: Destination = {
     notes: "Island hopping tour: 300,000-500,000 VND. Motorbike rental: 100,000-150,000 VND/day. Seafood at Night Market: 100,000-300,000 VND/meal.",
   },
 
-  bestTimeSummary: "Nov-Apr dry season is the main window: calm seas on the west coast (Long Beach, Duong Dong) and the best time for island tours and snorkelling. May-Oct the southwest monsoon makes the west coast rough and murky, but the east and south beaches (Bai Sao, Bai Khem) stay calm and clear, with far fewer crowds.",
+  bestTimeSummary: "Nov-Apr dry season is the main window: calm seas on the west coast (Long Beach, Duong Dong) and the best time for island tours and snorkelling. May-Oct the southwest monsoon makes the west coast rough and murky, but the east and south beaches (Bai Sao, Bai Khem) stay calm and clear, with far fewer crowds. The rainy season has its upsides: streams like Suoi Tranh and Suoi Da Ban only run properly after the rains start, prices drop Jun-Sep, and tram mushrooms, a local specialty, appear for a few weeks early in the rainy season. Early Apr and late Oct are good shoulder weeks; book ahead for Christmas and New Year.",
   bestMonths: [1, 2, 3, 4, 11, 12],
 
   recommendedStay: "2-4 days",

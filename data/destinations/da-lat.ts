@@ -122,7 +122,7 @@ export const daLat: Destination = {
 
   transport: "Motorbike rental is the best way around - roads are good and traffic is manageable. Walking works well in the city centre.",
 
-  nearbyDestinations: ["nha-trang", "phan-thiet", "ho-chi-minh-city"],
+  nearbyDestinations: ["nha-trang", "mui-ne", "ho-chi-minh-city"],
 
   coordinates: {
     lat: 11.9404,

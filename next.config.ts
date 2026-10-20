@@ -51,6 +51,12 @@ destination: "/destinations/da-nang",
 permanent: true,
 },
 {
+// Renamed: the destination is the Mui Ne beach strip, Phan Thiet is the city next to it
+source: "/destinations/phan-thiet",
+destination: "/destinations/mui-ne",
+permanent: true,
+},
+{
 source: "/destinations/thai-nguyen",
 destination: "/provinces/thai-nguyen",
 permanent: true,

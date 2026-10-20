@@ -18,6 +18,7 @@ import { ogImageUrl, realPhoto } from "@/lib/cloudinary"
 import HeroMedia from "@/components/HeroMedia"
 import ClimateChart from "@/components/ClimateChart"
 import { getDestinationClimate } from "@/data/climate"
+import EmergencyContacts from "@/components/EmergencyContacts"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
@@ -504,6 +505,9 @@ export default async function DestinationPage({
             </div>
           </section>
         )}
+
+        {/* Emergency & help: national numbers always, then this destination's contacts */}
+        <EmergencyContacts contacts={destination.emergencyContacts} />
 
         {/* Plan Your Trip (Budget per Day intentionally not shown) */}
         {((destination.bestTimeSummary && !climate) || destination.recommendedStay) && (

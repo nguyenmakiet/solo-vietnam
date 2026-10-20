@@ -6,7 +6,7 @@ export const whiteSandDunes: Location = {
   name: "White Sand Dunes",
   updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
-  destination: "phan-thiet",
+  destination: "mui-ne",
   lat: 11.07112795980011,
   lng: 108.42656899745431,
   address: "Bàu Trắng, Hoà Thắng, Bắc Bình, Bình Thuận",

@@ -122,7 +122,7 @@ export const nhaTrang: Destination = {
 
   transport: "Grab or motorbike for getting around. Boat for islands - join a tour or hire a private boat.",
 
-  nearbyDestinations: ["da-lat", "phan-thiet", "hoi-an"],
+  nearbyDestinations: ["da-lat", "mui-ne", "hoi-an"],
 
   coordinates: {
     lat: 12.2388,

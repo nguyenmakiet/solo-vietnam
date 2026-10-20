@@ -21,9 +21,9 @@ import { hoiAn } from "./hoi-an"
 import { hue } from "./hue"
 import { lySon } from "./ly-son"
 import { mekongDelta } from "./mekong-delta"
+import { muiNe } from "./mui-ne"
 import { nhaTrang } from "./nha-trang"
 import { ninhBinh } from "./ninh-binh"
-import { phanThiet } from "./phan-thiet"
 import { phongNhaKeBang } from "./phong-nha-ke-bang"
 import { phuQuoc } from "./phu-quoc"
 import { puLuong } from "./pu-luong"
@@ -46,9 +46,9 @@ export const destinations: Destination[] = [
   hue,
   lySon,
   mekongDelta,
+  muiNe,
   nhaTrang,
   ninhBinh,
-  phanThiet,
   phongNhaKeBang,
   phuQuoc,
   puLuong,

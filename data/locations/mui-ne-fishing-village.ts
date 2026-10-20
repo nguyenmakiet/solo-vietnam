@@ -6,7 +6,7 @@ export const muiNeFishingVillage: Location = {
   name: "Mũi Né Fishing Village",
   updatedAt: "2026-10-06",
   provinces: ["binh-thuan"],
-  destination: "phan-thiet",
+  destination: "mui-ne",
   lat: 10.94117833027457,
   lng: 108.2795665776806,
   address: "Mũi Né, Phan Thiết, Bình Thuận",

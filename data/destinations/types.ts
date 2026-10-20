@@ -73,6 +73,24 @@ export type DayTrip = {
   tips?: string[]
 }
 
+// ─── Emergency contacts ──────────────────────────────────────
+// Destination-specific help numbers, shown under "Emergency & help" below the
+// national 112-115 row (data/emergency.ts). Checked by `npm run audit:best-time`
+export type EmergencyContactType = "tourist-hotline" | "scam-report" | "medical" | "police" | "other"
+
+export interface EmergencyContact {
+  type: EmergencyContactType
+  name: string
+  phone: string
+  altPhones?: string[]
+  hours?: string
+  languages?: string[]
+  address?: string
+  notes?: string
+  sourceUrl: string
+  verifiedAt: string        // YYYY-MM-DD, date the number was last confirmed
+}
+
 // ─── Cost ────────────────────────────────────────────────────
 export type CostRange = {
   budget: string      // "400.000–700.000 VND/ngày"
@@ -177,6 +195,7 @@ export type Destination = {
   nearbyDestinations?: string[]
   faqs?: FaqItem[]
   dayTrips?: DayTrip[]
+  emergencyContacts?: EmergencyContact[]
 
   coordinates?: {
     lat: number
