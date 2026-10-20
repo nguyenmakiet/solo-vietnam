@@ -33,7 +33,7 @@ export default function BlogToc({ items }: Props) {
 const scrollTo = (id: string) => {
     const el = document.getElementById(id)
     if (el) {
-      const offset = 61 // adjust this to match your header height
+      const offset = 80 // site navbar (61px) + breathing room
       const top = el.getBoundingClientRect().top + window.scrollY - offset
       window.scrollTo({ top, behavior: "smooth" })
     }
