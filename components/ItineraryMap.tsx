@@ -20,7 +20,6 @@ interface ItineraryMapProps {
 // Literal values because they are written into SVG/HTML strings where CSS variables do not resolve.
 const DAY_COLORS = ["#2b6a6f", "#c4452a", "#6f8060", "#736b86", "#1b2427"]
 const OSRM_TIMEOUT_MS = 5000
-const WAYPOINT_COLOR = "#8a9295"
 
 type MapPoint =
   | { kind: "stop"; slug: string; stop: StopData }
@@ -52,14 +51,6 @@ function pinSvg(num: number, color: string): string {
     <circle cx="14" cy="14" r="9" fill="rgba(255,255,255,0.95)"/>
     <text x="14" y="18.5" text-anchor="middle" font-size="10" font-weight="700"
       font-family="-apple-system,sans-serif" fill="${color}">${num}</text>
-  </svg>`
-}
-
-function waypointSvg(): string {
-  return `<svg width="18" height="24" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 0C6.268 0 0 6.268 0 14c0 10.5 14 22 14 22S28 24.5 28 14C28 6.268 21.732 0 14 0z"
-      fill="${WAYPOINT_COLOR}" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
-    <circle cx="14" cy="14" r="6" fill="rgba(255,255,255,0.95)"/>
   </svg>`
 }
 
@@ -164,26 +155,25 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
     itin.days.forEach((day, dayIdx) => {
       const color = DAY_COLORS[(day.day - 1) % DAY_COLORS.length]
       const dayPoints: [number, number][] = []
-      let stopNum = 0
 
-      dayMapPoints(day, stopDataMap).forEach((mapPoint) => {
+      dayMapPoints(day, stopDataMap).forEach((mapPoint, i) => {
         if (mapPoint.kind === "waypoint") {
-          // Map-only waypoint: small grey pin, name only, no page to link to
+          // Map-only waypoint: same numbered pin as a stop, but no page to link to
           const point: [number, number] = [mapPoint.lat, mapPoint.lng]
           dayPoints.push(point)
           allPoints.push(point)
           const icon = L.divIcon({
             className: "",
-            html: waypointSvg(),
-            iconSize: [18, 24],
-            iconAnchor: [9, 24],
-            popupAnchor: [0, -26],
+            html: pinSvg(i + 1, color),
+            iconSize: [28, 36],
+            iconAnchor: [14, 36],
+            popupAnchor: [0, -38],
           })
           const marker = L.marker(point, { icon, title: mapPoint.name })
             .bindPopup(
-              `<div style="font-family:-apple-system,sans-serif;padding:2px">
+              `<div style="font-family:-apple-system,sans-serif;min-width:140px;padding:2px">
                 <div style="font-size:13px;font-weight:700;color:#1b2427;margin-bottom:3px">${escapeHtml(mapPoint.name)}</div>
-                <div style="font-size:11px;color:#5b676a">Day ${day.day}</div>
+                <div style="font-size:11px;color:#5b676a">Day ${day.day} · Stop ${i + 1}</div>
               </div>`,
               { maxWidth: 220 }
             )
@@ -193,7 +183,6 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
         }
 
         const { slug, stop } = mapPoint
-        const i = stopNum++
         const point: [number, number] = [stop.lat, stop.lng]
         dayPoints.push(point)
         allPoints.push(point)
