@@ -16,6 +16,10 @@
  * when it is set). `emergencyContacts` fail on an unknown type, a phone with
  * characters other than digits, spaces, * and +, a non-https sourceUrl or an
  * invalid verifiedAt, and warn (never fail) when verifiedAt is over 365 days old.
+ * Itinerary day `mapPoints` fail on a slug that is not a location, a waypoint
+ * with an empty name or lat outside 8-24 / lng outside 102-110, and
+ * `mapRouting` fails unless "road" or "straight"; a day stop missing from that
+ * day's mapPoints warns (never fails), since the route map would drop it.
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -365,6 +369,7 @@ if (mdIndex !== -1) {
 // locations), so it is checked here on every run
 const destinationFailures: string[] = []
 const emergencyWarnings: string[] = []
+const mapPointWarnings: string[] = []
 const EMERGENCY_TYPES = new Set(["tourist-hotline", "scam-report", "medical", "police", "other"])
 const isValidDate = (s: string) => {
   const date = /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(`${s}T00:00:00Z`) : null
@@ -379,6 +384,26 @@ for (const d of destinations) {
   d.itineraries?.forEach((itin) => itin.days.forEach((day) => day.stops.forEach((stop) => {
     if (!locationSlugs.has(stop)) fail(`itinerary ${itin.duration} day ${day.day} stop "${stop}" is not a location`)
   })))
+  // Map-only points: slugs must be locations, waypoints must sit in Vietnam
+  d.itineraries?.forEach((itin) => itin.days.forEach((day) => {
+    const where = `itinerary ${itin.duration} day ${day.day}`
+    if (day.mapRouting !== undefined && day.mapRouting !== "road" && day.mapRouting !== "straight") {
+      fail(`${where} mapRouting "${day.mapRouting}" is not "road" or "straight"`)
+    }
+    if (!day.mapPoints) return
+    day.mapPoints.forEach((point, i) => {
+      if (typeof point === "string") {
+        if (!locationSlugs.has(point)) fail(`${where} mapPoints "${point}" is not a location`)
+        return
+      }
+      if (!point.name?.trim()) fail(`${where} mapPoints[${i}] has an empty name`)
+      if (!(point.lat >= 8 && point.lat <= 24)) fail(`${where} mapPoints "${point.name}" lat ${point.lat} is outside 8-24`)
+      if (!(point.lng >= 102 && point.lng <= 110)) fail(`${where} mapPoints "${point.name}" lng ${point.lng} is outside 102-110`)
+    })
+    day.stops.filter((stop) => !day.mapPoints!.includes(stop)).forEach((stop) => {
+      mapPointWarnings.push(`${d.slug}: ${where} stop "${stop}" is not in mapPoints, the route map drops it`)
+    })
+  }))
   d.dayTrips?.forEach((trip) => trip.plan?.stops.forEach((stop) => {
     if (!locationSlugs.has(stop)) fail(`dayTrip "${trip.title}" stop "${stop}" is not a location`)
   }))
@@ -464,6 +489,7 @@ for (const d of destinations) {
     climateWarnings.push(`${d.slug}: ${MONTH_NAMES[m - 1]} is in bestMonths but is wettest month #${rank} (${c.months[m - 1].rainfallMm} mm, ${c.months[m - 1].rainyDays} rainy days)`)
   }
 }
+if (mapPointWarnings.length) console.log(`\nMAP POINT WARNINGS (${mapPointWarnings.length}, not a failure):\n  ${mapPointWarnings.join("\n  ")}`)
 if (emergencyWarnings.length) console.log(`\nEMERGENCY CONTACT WARNINGS (${emergencyWarnings.length}, not a failure):\n  ${emergencyWarnings.join("\n  ")}`)
 if (!withClimate) console.log("\nClimate check skipped: no destination climate data in data/climate.json.")
 else if (climateWarnings.length) console.log(`\nCLIMATE WARNINGS (${climateWarnings.length}, not a failure):\n  ${climateWarnings.join("\n  ")}`)

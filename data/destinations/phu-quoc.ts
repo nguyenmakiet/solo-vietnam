@@ -1,5 +1,15 @@
-import { Destination } from "./types"
+import { Destination, MapWaypoint } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
+
+// Map-only waypoints for itinerary mapPoints (places without a location page)
+const WP = {
+  duongDong: { name: "Duong Dong", lat: 10.2228623, lng: 103.9629416 },
+  dinhCau: { name: "Dinh Cau rock", lat: 10.2172066, lng: 103.956442 },
+  longBeach: { name: "Long Beach (Bai Truong)", lat: 10.181442, lng: 103.967024 },
+  sunsetTown: { name: "Sunset Town", lat: 10.0269031, lng: 104.0079166 },
+  anThoiPort: { name: "An Thoi port", lat: 10.0151107, lng: 104.0146223 },
+  anThoiIslands: { name: "An Thoi islands (Hon Thom)", lat: 9.9553047, lng: 104.0169526 },
+} satisfies Record<string, MapWaypoint>
 
 export const phuQuoc: Destination = {
   slug: "phu-quoc",
@@ -60,12 +70,14 @@ export const phuQuoc: Destination = {
           title: "South: Ho Quoc Pagoda, Khem and Sao beaches",
           stops: ["ho-quoc-pagoda", "khem-beach", "sao-beach", "phu-quoc-night-market"],
           notes: "Duong Dong to Bai Sao is about 26km, 40min-1h by motorbike, with Ho Quoc Pagoda on the way - go early before the heat. Khem and Sao are a few minutes apart and both free to access. Back to Duong Dong for the night market.",
+          mapPoints: [WP.duongDong, "ho-quoc-pagoda", "khem-beach", "sao-beach", "phu-quoc-night-market"],
         },
         {
           day: 2,
           title: "East and north: Ham Ninh and Rach Vem starfish beach",
           stops: ["ham-ninh-fishing-village", "rach-vem-fishing-village"],
           notes: "Morning at Ham Ninh for the pier and fresh crab. Ham Ninh to Rach Vem is about 31km, 40min-1h. Rach Vem back to Duong Dong is about 20km, 30min.",
+          mapPoints: ["ham-ninh-fishing-village", "rach-vem-fishing-village", WP.duongDong],
         },
       ],
     },
@@ -78,18 +90,21 @@ export const phuQuoc: Destination = {
           title: "Duong Dong: sunset and night market",
           stops: ["phu-quoc-night-market"],
           notes: "Settle in around Duong Dong or Long Beach. Sunset at Dinh Cau rock, then dinner at the night market.",
+          mapPoints: [WP.longBeach, WP.duongDong, WP.dinhCau, "phu-quoc-night-market"],
         },
         {
           day: 2,
           title: "South: beaches, Hon Thom cable car, Sunset Town",
           stops: ["ho-quoc-pagoda", "khem-beach", "sao-beach", "hon-thom-cable-car"],
           notes: "Ho Quoc Pagoda first thing, then Khem and Sao beaches and lunch at Sao. The cable car runs in the afternoon from 13:30 and starts at Sunset Town, so stay on for sunset there. Duong Dong to Bai Sao is about 26km, 40min-1h.",
+          mapPoints: [WP.duongDong, "ho-quoc-pagoda", "khem-beach", "sao-beach", "hon-thom-cable-car", WP.sunsetTown],
         },
         {
           day: 3,
           title: "East and north: Ham Ninh and Rach Vem",
           stops: ["ham-ninh-fishing-village", "rach-vem-fishing-village"],
           notes: "Ham Ninh in the morning, then Ham Ninh to Rach Vem is about 31km, 40min-1h. Rach Vem back to Duong Dong is about 20km, 30min.",
+          mapPoints: ["ham-ninh-fishing-village", "rach-vem-fishing-village", WP.duongDong],
         },
       ],
     },
@@ -102,12 +117,14 @@ export const phuQuoc: Destination = {
           title: "Duong Dong: sunset and night market",
           stops: ["phu-quoc-night-market"],
           notes: "Settle in around Duong Dong or Long Beach. Sunset at Dinh Cau rock, then dinner at the night market.",
+          mapPoints: [WP.longBeach, WP.duongDong, WP.dinhCau, "phu-quoc-night-market"],
         },
         {
           day: 2,
           title: "South: beaches, Hon Thom cable car, Sunset Town",
           stops: ["ho-quoc-pagoda", "khem-beach", "sao-beach", "hon-thom-cable-car"],
           notes: "Ho Quoc Pagoda first thing, then Khem and Sao beaches and lunch at Sao. The cable car runs in the afternoon from 13:30 and starts at Sunset Town, so stay on for sunset there.",
+          mapPoints: ["ho-quoc-pagoda", "khem-beach", "sao-beach", "hon-thom-cable-car", WP.sunsetTown],
         },
         {
           day: 3,
@@ -120,6 +137,8 @@ export const phuQuoc: Destination = {
           title: "Boat trip around the An Thoi islands",
           stops: [],
           notes: "Worth it if you have the time: a boat tour from An Thoi to the small southern islands for snorkelling. Prefer theme parks? Swap this day for Vinpearl Safari and VinWonders in the north, and book Safari a day ahead.",
+          mapPoints: [WP.anThoiPort, WP.anThoiIslands],
+          mapRouting: "straight",
         },
       ],
     },
