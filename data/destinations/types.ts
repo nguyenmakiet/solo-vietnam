@@ -167,6 +167,11 @@ export type Destination = {
   // Editorial month strip (1-12, ascending). Not derived from locations;
   // keep it consistent with bestTimeSummary. Checked by `npm run audit:best-time`
   bestMonths: number[]
+  // Editorial months to avoid (1-12, ascending), marked on the climate chart.
+  // Must not overlap bestMonths; avoidSummary (why) is required with it.
+  // Checked by `npm run audit:best-time`
+  avoidMonths?: number[]
+  avoidSummary?: string
   recommendedStay?: string
   transport?: string
   nearbyDestinations?: string[]

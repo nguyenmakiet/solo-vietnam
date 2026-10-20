@@ -106,6 +106,7 @@ export default async function DestinationPage({
   const derived = deriveFromLocations(destination.slug, allLocations)
 
   const bestMonths = destination.bestMonths
+  const avoidMonths = destination.avoidMonths ?? []
   const climate = getDestinationClimate(destination.slug)
 
   const whatToDo = Object.keys(derived.whatToDo).length > 0
@@ -209,10 +210,26 @@ export default async function DestinationPage({
           <section className="dp-section dd-climate" aria-labelledby="h-climate">
             <h2 id="h-climate" className="section-label">Climate</h2>
             <figure>
-              <ClimateChart months={climate.months} bestMonths={bestMonths} name={destination.name} />
+              <ClimateChart months={climate.months} bestMonths={bestMonths} avoidMonths={avoidMonths} name={destination.name} />
+              {(destination.bestTimeSummary || (avoidMonths.length > 0 && destination.avoidSummary)) && (
+                <dl className="dd-climate-blocks">
+                  {destination.bestTimeSummary && (
+                    <div className="dd-climate-block">
+                      <dt>Best time</dt>
+                      <dd>{destination.bestTimeSummary}</dd>
+                    </div>
+                  )}
+                  {avoidMonths.length > 0 && destination.avoidSummary && (
+                    <div className="dd-climate-block dd-climate-block--avoid">
+                      <dt>Avoid</dt>
+                      <dd>{destination.avoidSummary}</dd>
+                    </div>
+                  )}
+                </dl>
+              )}
               <figcaption className="dd-climate-note">
-                {climate.proxyNote && <p>{climate.proxyNote}</p>}
-                <p>Long-term station averages from the Vietnam Institute for Building Science and Technology. Rainy days as reported by the station.</p>
+                Data: long-term station averages from the Vietnam Institute for Building Science and Technology (IBST). Rainy days as reported by the station.
+                {climate.proxyNote && ` Station: ${climate.proxyNote}`}
               </figcaption>
             </figure>
           </section>
@@ -284,6 +301,57 @@ export default async function DestinationPage({
           </section>
         )}
 
+        {/* Itinerary Map */}
+        {MAP_DESTINATIONS.has(destination.slug) && destination.itineraries && destination.itineraries.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-route">
+            <h2 id="h-route" className="section-label">Route Map</h2>
+            <ItineraryMapLoader itineraries={destination.itineraries} stopDataMap={stopDataMap} />
+          </section>
+        )}
+
+        {/* Itineraries */}
+        {destination.itineraries && destination.itineraries.length > 0 && (
+          <section className="dp-section" aria-labelledby="h-itins">
+            <h2 id="h-itins" className="section-label">Suggested Itineraries</h2>
+            <div className="dd-itins">
+              {destination.itineraries.map((itin) => (
+                <article key={`${itin.duration}-${itin.label}`} className="dd-itin">
+                  <div className="dd-itin-head">
+                    <span className="dd-itin-duration">{itin.duration}</span>
+                    <h3>{itin.label}</h3>
+                  </div>
+                  <div>
+                    {itin.days.map((day) => (
+                      <div key={day.day} className="dd-day">
+                        <div className="dd-day-head">
+                          <span className="dd-day-num">Day {day.day}</span>
+                          <span className="dd-day-title">{day.title}</span>
+                          {day.distance && <span className="dd-day-distance">{day.distance}</span>}
+                        </div>
+                        {day.stops.length > 0 && (
+                          <p className="dd-stops">
+                            {day.stops.map((stop, i) => (
+                              <span key={stop}>
+                                {i > 0 && <span className="dd-stop-sep" aria-hidden="true">·</span>}
+                                {locationNameMap[stop] ? (
+                                  <Link href={`/locations/${stop}`}>{locationNameMap[stop]}</Link>
+                                ) : (
+                                  formatSlug(stop)
+                                )}
+                              </span>
+                            ))}
+                          </p>
+                        )}
+                        {day.notes && <p className="dd-day-notes">{day.notes}</p>}
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Places to Visit */}
         <section className="dp-section" aria-labelledby="h-places">
           <h2 id="h-places" className="section-label">
@@ -339,57 +407,6 @@ export default async function DestinationPage({
             <div className="dd-empty">Location guides coming soon</div>
           )}
         </section>
-
-        {/* Itinerary Map */}
-        {MAP_DESTINATIONS.has(destination.slug) && destination.itineraries && destination.itineraries.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-route">
-            <h2 id="h-route" className="section-label">Route Map</h2>
-            <ItineraryMapLoader itineraries={destination.itineraries} stopDataMap={stopDataMap} />
-          </section>
-        )}
-
-        {/* Itineraries */}
-        {destination.itineraries && destination.itineraries.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-itins">
-            <h2 id="h-itins" className="section-label">Suggested Itineraries</h2>
-            <div className="dd-itins">
-              {destination.itineraries.map((itin) => (
-                <article key={`${itin.duration}-${itin.label}`} className="dd-itin">
-                  <div className="dd-itin-head">
-                    <span className="dd-itin-duration">{itin.duration}</span>
-                    <h3>{itin.label}</h3>
-                  </div>
-                  <div>
-                    {itin.days.map((day) => (
-                      <div key={day.day} className="dd-day">
-                        <div className="dd-day-head">
-                          <span className="dd-day-num">Day {day.day}</span>
-                          <span className="dd-day-title">{day.title}</span>
-                          {day.distance && <span className="dd-day-distance">{day.distance}</span>}
-                        </div>
-                        {day.stops.length > 0 && (
-                          <p className="dd-stops">
-                            {day.stops.map((stop, i) => (
-                              <span key={stop}>
-                                {i > 0 && <span className="dd-stop-sep" aria-hidden="true">·</span>}
-                                {locationNameMap[stop] ? (
-                                  <Link href={`/locations/${stop}`}>{locationNameMap[stop]}</Link>
-                                ) : (
-                                  formatSlug(stop)
-                                )}
-                              </span>
-                            ))}
-                          </p>
-                        )}
-                        {day.notes && <p className="dd-day-notes">{day.notes}</p>}
-                      </div>
-                    ))}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-        )}
 
         {/* Day trips (side trips without a destination of their own) */}
         {destination.dayTrips?.map((trip, t) => (
@@ -484,11 +501,11 @@ export default async function DestinationPage({
         )}
 
         {/* Plan Your Trip (Budget per Day intentionally not shown) */}
-        {(destination.bestTimeSummary || destination.recommendedStay) && (
+        {((destination.bestTimeSummary && !climate) || destination.recommendedStay) && (
           <section className="dp-section" aria-labelledby="h-plan">
             <h2 id="h-plan" className="section-label">Plan Your Trip</h2>
             <dl className="dd-rows dd-plans">
-              {destination.bestTimeSummary && (
+              {destination.bestTimeSummary && !climate && (
                 <div className="dd-plan">
                   <dt>Best Time to Visit</dt>
                   <dd>{destination.bestTimeSummary}</dd>

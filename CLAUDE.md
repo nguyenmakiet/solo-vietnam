@@ -217,6 +217,7 @@ The taxonomy is frozen - see `data/taxonomy/AUDIT.md` ("Frozen contract") for th
 - `whatToDo` and `highlights` are **never hardcoded** in destination files
 - They are **derived at runtime** via `deriveFromLocations()` in `data/destinations/index.ts`
 - `bestMonths` is the exception: it is **editorial and required** on every destination (month strip on the destination page), not derived from locations. Keep it consistent with `bestTimeSummary`; `npm run audit:best-time` fails when it is missing, empty, outside 1-12 or has duplicates
+- `avoidMonths` / `avoidSummary` are optional and editorial. `npm run audit:best-time` fails when `avoidMonths` is outside 1-12, has duplicates or overlaps `bestMonths`, when one of the pair is set without the other, and when `bestTimeSummary` tells you to avoid a month that is in `bestMonths` (or, with `avoidMonths` set, a month that is not in `avoidMonths`)
 - `npm run audit:best-time` also fails on a `gallery` item with a missing or empty `alt`, a `gallery` `locationSlug` that does not exist, and an `updatedAt` that is not a valid `YYYY-MM-DD` date
 - Destination files only hardcode editorial content that cannot be derived
 
@@ -247,6 +248,8 @@ Do **not** use the old single-file `data/destinations.ts`. It has been replaced.
 | `cost: CostRange` | Hardcode | budget / midRange / comfortable |
 | `bestTimeSummary` | Hardcode | Short string for card/hero display |
 | `bestMonths` | Hardcode (required) | Editorial month strip, `number[]` 1-12 ascending |
+| `avoidMonths?` | Hardcode (optional) | Editorial months to avoid, `number[]` 1-12 ascending, marked on the climate chart. Must not overlap `bestMonths`; requires `avoidSummary` |
+| `avoidSummary?` | Hardcode (optional) | Why to avoid `avoidMonths`, shown as the "Avoid" block under the climate chart (`bestTimeSummary` is the "Best time" block) |
 | `travelStyle[]` | Hardcode | Classification tags |
 | `gallery?` | Hardcode (optional) | `{ publicId, alt, caption?, locationSlug? }[]`. Editorial gallery, not rendered yet. Planned fallback: hero images of up to 8 locations in the destination, reusing existing image sizes (no new Cloudinary transformations). `alt` is required and non-empty; `locationSlug` must be an existing location |
 | `updatedAt?` | Hardcode (optional) | `"YYYY-MM-DD"`, date of the last content review |

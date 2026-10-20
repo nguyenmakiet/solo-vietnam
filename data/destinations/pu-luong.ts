@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const puLuong: Destination = {
   slug: "pu-luong",
   name: "Pu Luong",
+  updatedAt: "2026-10-20",
   province: "Thanh Hoa",
   provinceSlug: "thanh-hoa",
   region: "north",
@@ -102,8 +103,10 @@ export const puLuong: Destination = {
     notes: "Homestay with meals typically included: 300,000-500,000 VND/night. Local guide: 200,000-300,000 VND/day. Bicycle rental: 50,000-100,000 VND/day.",
   },
 
-  bestTimeSummary: "Late May-early Jun (green rice) and late Sep-early Oct (golden harvest) for the terraces. Dec-Feb mornings cold but clear and uncrowded.",
+  bestTimeSummary: "The best months here are about the rice terraces rather than the weather. May-Jun: the terraces turn green after transplanting. Sep-Oct: the rice ripens and turns golden. Both windows still get afternoon rain, so trails and roads can be slippery. Jan-Feb is cold and often foggy, and the fields are bare.",
   bestMonths: [5, 6, 9, 10],
+  avoidMonths: [7, 8],
+  avoidSummary: "Jul-Aug is the wettest part of the year, with over 300mm of rain a month in the station data, and storms are more likely. Landslides can close mountain roads and trails turn muddy.",
 
   recommendedStay: "2-3 days",
 

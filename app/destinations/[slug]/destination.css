@@ -383,8 +383,17 @@
 
 /* Climate chart, right above the best months */
 .dp .dd-climate figure { margin: 0; }
+.dp .dd-climate-blocks { margin: 16px 0 0; max-width: 720px; border-top: 1px solid var(--color-line); }
+.dp .dd-climate-block { padding: 12px 0; border-bottom: 1px solid var(--color-line); }
+.dp .dd-climate-block dt {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+  margin-bottom: 4px;
+}
+.dp .dd-climate-block--avoid dt { color: var(--color-signal-text); }
+.dp .dd-climate-block dd { margin: 0; font-size: 15px; line-height: 1.65; color: var(--color-ink); }
 .dp .dd-climate-note { margin-top: 12px; max-width: 720px; font-size: 12.5px; line-height: 1.6; color: var(--color-ink-2); }
-.dp .dd-climate-note p + p { margin-top: 4px; }
 
 /* More in this province: ruled rows */
 .dp .dd-related { list-style: none; display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; border-top: 1px solid var(--color-ink); }

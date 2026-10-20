@@ -10,6 +10,10 @@
  * do itinerary / day-trip stops that are not location slugs and
  * `nearbyDestinations` entries that are not destination slugs, and any
  * destination string that contains an en dash (–) or em dash (—).
+ * Optional `avoidMonths` must be 1-12, without duplicates, disjoint from
+ * `bestMonths` and explained by `avoidSummary`; months that `bestTimeSummary`
+ * tells you to avoid must not be best months (and must be in `avoidMonths`
+ * when it is set).
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -394,6 +398,28 @@ for (const d of destinations) {
   if (d.updatedAt !== undefined) {
     const date = /^\d{4}-\d{2}-\d{2}$/.test(d.updatedAt) ? new Date(`${d.updatedAt}T00:00:00Z`) : null
     if (!date || Number.isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== d.updatedAt) fail(`updatedAt "${d.updatedAt}" is not a valid YYYY-MM-DD date`)
+  }
+  // avoidMonths: editorial, 1-12, no duplicates, disjoint from bestMonths, explained by avoidSummary
+  const avoid = d.avoidMonths
+  if (avoid !== undefined) {
+    if (avoid.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) fail("avoidMonths has a value outside 1-12")
+    if (new Set(avoid).size !== avoid.length) fail("avoidMonths has duplicates")
+    const overlap = avoid.filter((m) => months.includes(m))
+    if (overlap.length) fail(`avoidMonths overlaps bestMonths: ${fmt(overlap)}`)
+    if (!d.avoidSummary?.trim()) fail("avoidMonths is set but avoidSummary is missing or empty")
+  } else if (d.avoidSummary !== undefined) fail("avoidSummary is set but avoidMonths is missing")
+  // bestTimeSummary vs months: a month the summary tells you to avoid must not
+  // be a best month, and (when avoidMonths is set) must be one of avoidMonths
+  if (d.bestTimeSummary) {
+    const avoidClauseMonths = [...new Set(
+      d.bestTimeSummary.replace(NEUTRAL_RE, "").split(CLAUSE_SPLIT)
+        .filter((clause) => /\bavoid/i.test(clause))
+        .flatMap((clause) => extractRanges(clause).flatMap((r) => r.months)),
+    )].sort((a, b) => a - b)
+    const inBest = avoidClauseMonths.filter((m) => months.includes(m))
+    if (inBest.length) fail(`bestTimeSummary says to avoid ${fmt(inBest)}, which is in bestMonths`)
+    const notInAvoid = avoid ? avoidClauseMonths.filter((m) => !avoid.includes(m)) : []
+    if (notInAvoid.length) fail(`bestTimeSummary says to avoid ${fmt(notInAvoid)}, which is not in avoidMonths`)
   }
 }
 if (destinationFailures.length) {
