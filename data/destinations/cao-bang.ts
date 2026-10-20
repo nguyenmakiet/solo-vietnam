@@ -9,7 +9,7 @@ export const caoBang: Destination = {
   region: "north",
 
   description:
-    "Cao Bang is Vietnam's most remote northern province - dramatic limestone karst, dense jungle, and deep river valleys on the Chinese border. Ban Gioc Waterfall is one of the largest in Asia and still relatively off the beaten path for foreign travelers. The province also carries deep revolutionary history: Pac Bo Cave is where Ho Chi Minh returned to Vietnam in 1941 after 30 years abroad. Combine with Ha Giang Loop for the definitive northern Vietnam circuit.",
+    "Cao Bang is one of Vietnam's most remote northern provinces - dramatic limestone karst, dense jungle, and deep river valleys on the Chinese border. Ban Gioc Waterfall is one of the largest in Asia and still relatively off the beaten path for foreign travelers. The province also carries deep revolutionary history: Pac Bo Cave is where Ho Chi Minh returned to Vietnam in 1941 after 30 years abroad. Combine with Ha Giang Loop for the definitive northern Vietnam circuit.",
 
   tagline: "Vietnam's wild north - waterfalls, caves, and revolutionary history",
 
@@ -25,7 +25,7 @@ export const caoBang: Destination = {
       vehicle: "bus",
       duration: "6-7 hours",
       cost: "200,000-300,000 VND",
-      notes: "Limousine vans more comfortable than regular buses. Most attractions are 90-120km from Cao Bang city - motorbike essential.",
+      notes: "Limousine vans more comfortable than regular buses. Ban Gioc is about 90km from Cao Bang city and Pac Bo about 50km - motorbike essential.",
     },
     {
       from: "Ha Giang",
@@ -48,7 +48,7 @@ export const caoBang: Destination = {
             "ban-gioc-waterfall",
             "nguom-ngao-cave",
           ],
-          notes: "Ban Gioc is 90km from Cao Bang city - go at sunrise (5:30am in summer) before the tour groups arrive. The falls straddle the Vietnam-China border, and the mist in the morning light is extraordinary. Nguom Ngao Cave is 3km away - 3km of stalactites and stalagmites, one of the longest cave systems in Vietnam.",
+          notes: "Ban Gioc is 90km from Cao Bang city - be there when it opens at 7am, before the tour groups arrive. The falls straddle the Vietnam-China border, and the mist in the morning light is extraordinary. Nguom Ngao Cave is 3km away - about 3km of passages full of stalactites and stalagmites.",
         },
         {
           day: 2,
@@ -80,7 +80,7 @@ export const caoBang: Destination = {
             "ban-gioc-waterfall",
             "nguom-ngao-cave",
           ],
-          notes: "Full day at Ban Gioc. Stay overnight near the falls for sunrise the next morning.",
+          notes: "Full day at Ban Gioc. Stay overnight near the falls if you want to be there at opening (7am) without the long drive.",
         },
         {
           day: 3,
@@ -98,7 +98,7 @@ export const caoBang: Destination = {
     budget: "250,000-500,000 VND/day",
     midRange: "500,000-900,000 VND/day",
     comfortable: "900,000+ VND/day",
-    notes: "Ban Gioc boat to the falls: 70,000 VND. Nguom Ngao Cave: 40,000 VND. Pac Bo: 30,000 VND. One of the cheapest destinations in Vietnam.",
+    notes: "Ban Gioc entry 45,000 VND, bamboo raft to the falls around 150,000 VND. Nguom Ngao Cave: 45,000 VND (full guided route around 195,000 VND). Pac Bo: 25,000 VND. One of the cheapest destinations in Vietnam.",
   },
 
   bestTimeSummary: "Sep-Nov golden rice season, best waterfall flow after rainy season, clear skies. Mar-May also good. Avoid Jun-Aug heavy rain.",

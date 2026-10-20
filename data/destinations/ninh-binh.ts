@@ -58,7 +58,7 @@ export const ninhBinh: Destination = {
             "hang-mua",
             "hoa-lu-ancient-capital",
           ],
-          notes: "Start with Trang An boat tour (2.5-3 hours, 250,000 VND, choose Route 3 for the best caves). Lunch near the pier. Climb Hang Mua for panoramic views - 500 steps, worth every one. Quick stop at Hoa Lu ancient capital temples before heading back. Tight but doable.",
+          notes: "Start with Trang An boat tour (2.5-3 hours, 300,000 VND, choose Route 3 for the best caves). Lunch near the pier. Climb Hang Mua for panoramic views - 500 steps, worth every one. Quick stop at Hoa Lu ancient capital temples before heading back. Tight but doable.",
         },
       ],
     },
@@ -78,13 +78,13 @@ export const ninhBinh: Destination = {
         },
         {
           day: 2,
-          title: "Hoa Lu + Tam Coc + Van Long",
+          title: "Van Long + Hoa Lu + Tam Coc",
           stops: [
+            "van-long-nature-reserve",
             "hoa-lu-ancient-capital",
             "tam-coc",
-            "van-long-nature-reserve",
           ],
-          notes: "Morning at Hoa Lu ancient capital temples (10th century, Vietnam's first). Tam Coc boat tour is shorter (2 hrs) and cheaper than Trang An - rowers use their feet. Van Long is the quietest boat tour in the area - almost no other tourists, best for wildlife spotting.",
+          notes: "Van Long early morning - the quietest boat trip in the area, best for wildlife spotting. Then Hoa Lu, Vietnam's capital in the 10th century. Afternoon: Tam Coc boat tour - shorter (about 2 hrs) and cheaper than Trang An, and the rowers use their feet.",
         },
       ],
     },
@@ -118,7 +118,7 @@ export const ninhBinh: Destination = {
             "van-long-nature-reserve",
             "bai-dinh-pagoda",
           ],
-          notes: "Van Long early morning - quietest and most wildlife-rich boat experience in the area. Bai Dinh Pagoda is Vietnam's largest - massive scale, worth a visit even if not religious. Depart afternoon.",
+          notes: "Van Long early morning - quietest and most wildlife-rich boat experience in the area. Bai Dinh is one of Vietnam's largest pagoda complexes - massive scale, worth a visit even if not religious. Depart afternoon.",
         },
       ],
     },
@@ -129,7 +129,7 @@ export const ninhBinh: Destination = {
     budget: "250,000-500,000 VND/day",
     midRange: "500,000-1,000,000 VND/day",
     comfortable: "1,000,000+ VND/day",
-    notes: "Trang An boat: 250,000 VND/person. Hang Mua: 100,000 VND. Tam Coc boat: 200,000 VND/boat. One of the cheapest destinations in Vietnam.",
+    notes: "Trang An boat: 300,000 VND/person (from Jan 2026). Hang Mua: 150,000 VND. Tam Coc: 120,000 VND/person plus 150,000 VND per boat (up to 4 people). One of the cheapest destinations in Vietnam.",
   },
 
   // ─── Practical ───────────────────────────────────────────
