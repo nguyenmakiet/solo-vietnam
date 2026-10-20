@@ -71,7 +71,7 @@ export const hue: Destination = {
             "khai-dinh-tomb",
             "tu-duc-tomb",
           ],
-          notes: "Pick 2 tombs maximum - tomb fatigue is real. Khai Dinh is most dramatic (East-West fusion). Tu Duc is most poetic - lakes, pavilions, pine trees. Minh Mang is grandest if you want a third.",
+          notes: "Pick 2 tombs maximum - tomb fatigue is real. Khai Dinh is most dramatic (East-West fusion). Tu Duc is most poetic - lakes, pavilions, pine trees. Minh Mang is grandest if you want a third. Parts of Tu Duc are under restoration.",
         },
       ],
     },

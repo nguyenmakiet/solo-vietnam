@@ -9,7 +9,7 @@ export const nhaTrang: Destination = {
   region: "central",
 
   description:
-    "Nha Trang is Vietnam's most famous beach city - a 6km arc of white sand backed by a busy coastal boulevard, with some of the clearest water and best diving on the Vietnamese coast. It's also the most developed and party-oriented beach destination in the country. The islands offshore are the real draw: Hon Mun has the best coral reefs, and the surrounding archipelago makes for good snorkeling and island-hopping.",
+    "Nha Trang is Vietnam's most famous beach city - a 6km arc of white sand backed by a busy coastal boulevard, with some of the clearest water and best diving on the Vietnamese coast. It's also the most developed and party-oriented beach destination in the country. The islands offshore are the real draw: Hon Mun has some of the best coral reefs, and the surrounding archipelago makes for good snorkeling and island-hopping.",
 
   tagline: "Sun, seafood, and island hopping on Vietnam's riviera",
 
@@ -37,7 +37,7 @@ export const nhaTrang: Destination = {
     {
       from: "Da Nang",
       vehicle: "train",
-      duration: "5–6 hours",
+      duration: "9-10 hours",
       cost: "from 200,000 VND",
     },
     {
@@ -61,7 +61,7 @@ export const nhaTrang: Destination = {
             "po-nagar-cham-towers",
             "long-son-pagoda",
           ],
-          notes: "Morning swim on Nha Trang Beach. Po Nagar towers are the best-preserved Cham ruins on the south coast - 10th century, still used for worship. Long Son Pagoda for the giant white Buddha and city views.",
+          notes: "Morning swim on Nha Trang Beach. Po Nagar is one of the best-preserved Cham temple complexes on the coast - built between the 7th and 12th centuries and still used for worship. Long Son Pagoda for the giant white Buddha and city views.",
         },
         {
           day: 2,
@@ -85,20 +85,20 @@ export const nhaTrang: Destination = {
             "po-nagar-cham-towers",
             "long-son-pagoda",
           ],
-          notes: "Arrive, settle in. Afternoon cultural sites. Evening: Bui Vien-style beach bar scene if that's your thing, or quieter seafood restaurants on the north end of the beach.",
+          notes: "Arrive, settle in. Afternoon cultural sites. Evening: the beach bar scene if that's your thing, or quieter seafood restaurants on the north end of the beach.",
         },
         {
           day: 2,
-          title: "Diving or snorkeling - Hon Mun + Hon Yen",
+          title: "Diving or snorkeling - Hon Mun + Hon Tam",
           stops: [
             "hon-mun-island",
-            "hon-yen-island",
+            "hon-tam-island",
           ],
-          notes: "Full day on the water. Hon Mun Marine Protected Area for diving - best coral in the region. Hon Yen (Swallow Island) for swimming and lunch. Book with a reputable dive operator if diving.",
+          notes: "Full day on the water. Hon Mun Marine Protected Area for diving - some of the best coral in the region. Hon Tam for swimming and lunch. Book with a reputable dive operator if diving.",
         },
         {
           day: 3,
-          title: "Monkey Island + Ba Ho Waterfall",
+          title: "Ba Ho Waterfall",
           stops: [
             "ba-ho-waterfall",
           ],
