@@ -26,14 +26,14 @@ export const haGiang: Destination = {
     {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "6–7 hours",
-      cost: "200,000–350,000 VND",
+      duration: "6-7 hours",
+      cost: "200,000-350,000 VND",
       notes: "Daily buses and limousine vans from My Dinh bus station to Ha Giang city. Limousine vans are more comfortable for the same price. Most drop off in the city centre near the motorbike rental shops.",
     },
     {
       from: "Hanoi",
       vehicle: "motorbike",
-      duration: "8–10 hours",
+      duration: "8-10 hours",
       cost: "Petrol only",
       notes: "Experienced riders only. 300km via QL2. Good option if you want to ride your own bike the entire way.",
     },
@@ -145,17 +145,17 @@ export const haGiang: Destination = {
 
   // ─── Cost ────────────────────────────────────────────────
   cost: {
-    budget: "400,000–700,000 VND/day",
-    midRange: "700,000–1,200,000 VND/day",
-    comfortable: "1,200,000–2,500,000 VND/day",
+    budget: "400,000-700,000 VND/day",
+    midRange: "700,000-1,200,000 VND/day",
+    comfortable: "1,200,000-2,500,000 VND/day",
     notes: "Budget: self-ride rental bike + homestay + local food. Mid-range: Easy Rider (local driver takes you on their bike). Comfortable: Jeep tour with accommodation included. Border area permit required for all foreign visitors: ~250,000 VND.",
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Sep–Nov: golden rice terraces + buckwheat flowers in Oct–Nov. Mar–Apr: white mustard flowers, clear skies. Avoid Jun–Aug: heavy rain, landslide risk.",
+  bestTimeSummary: "Sep-Nov: golden rice terraces + buckwheat flowers in Oct-Nov. Mar-Apr: white mustard flowers, clear skies. Avoid Jun-Aug: heavy rain, landslide risk.",
   bestMonths: [3, 4, 9, 10, 11],
 
-  recommendedStay: "3–5 days for the full loop",
+  recommendedStay: "3-5 days for the full loop",
 
   transport: "Motorbike - the loop IS the destination. Semi-automatic recommended for beginners. Easy Rider (local driver) or Jeep tour if you don't have a valid IDP.",
 

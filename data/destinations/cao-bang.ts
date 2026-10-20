@@ -23,14 +23,14 @@ export const caoBang: Destination = {
     {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "6–7 hours",
-      cost: "200,000–300,000 VND",
-      notes: "Limousine vans more comfortable than regular buses. Most attractions are 90–120km from Cao Bang city - motorbike essential.",
+      duration: "6-7 hours",
+      cost: "200,000-300,000 VND",
+      notes: "Limousine vans more comfortable than regular buses. Most attractions are 90-120km from Cao Bang city - motorbike essential.",
     },
     {
       from: "Ha Giang",
       vehicle: "motorbike",
-      duration: "5–6 hours",
+      duration: "5-6 hours",
       cost: "Petrol only",
       notes: "Classic circuit: Ha Giang Loop → Cao Bang → back to Hanoi. Spectacular mountain road connecting the two provinces.",
     },
@@ -95,16 +95,16 @@ export const caoBang: Destination = {
   ],
 
   cost: {
-    budget: "250,000–500,000 VND/day",
-    midRange: "500,000–900,000 VND/day",
+    budget: "250,000-500,000 VND/day",
+    midRange: "500,000-900,000 VND/day",
     comfortable: "900,000+ VND/day",
     notes: "Ban Gioc boat to the falls: 70,000 VND. Nguom Ngao Cave: 40,000 VND. Pac Bo: 30,000 VND. One of the cheapest destinations in Vietnam.",
   },
 
-  bestTimeSummary: "Sep–Nov golden rice season, best waterfall flow after rainy season, clear skies. Mar–May also good. Avoid Jun–Aug heavy rain.",
+  bestTimeSummary: "Sep-Nov golden rice season, best waterfall flow after rainy season, clear skies. Mar-May also good. Avoid Jun-Aug heavy rain.",
   bestMonths: [3, 4, 5, 9, 10, 11],
 
-  recommendedStay: "2–4 days",
+  recommendedStay: "2-4 days",
 
   transport: "Motorbike essential - attractions are far from the city and public transport is very limited. Renting in Cao Bang city is easy.",
 

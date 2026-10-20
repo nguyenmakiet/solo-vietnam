@@ -25,7 +25,7 @@ export const haLong: Destination = {
       from: "Hanoi",
       vehicle: "bus",
       duration: "3.5 hours",
-      cost: "200,000–350,000 VND",
+      cost: "200,000-350,000 VND",
       notes: "Most cruises include transfers from Hanoi Old Quarter hotels. If booking independently, buses run from My Dinh and Gia Lam stations to Ha Long City.",
     },
   ],
@@ -106,17 +106,17 @@ export const haLong: Destination = {
 
   // ─── Cost ────────────────────────────────────────────────
   cost: {
-    budget: "1,500,000–2,500,000 VND/night",
-    midRange: "2,500,000–5,000,000 VND/night",
+    budget: "1,500,000-2,500,000 VND/night",
+    midRange: "2,500,000-5,000,000 VND/night",
     comfortable: "5,000,000+ VND/night",
     notes: "All-inclusive (meals, activities, transfers from Hanoi). Budget cruises exist but quality varies wildly - mid-range is the sweet spot. Lan Ha Bay and Bai Tu Long Bay routes cost slightly more but are worth it.",
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Oct–Apr clear skies and calm seas. Mar–May and Sep–Nov ideal. Jun–Aug hot with storms possible - cruises may be delayed.",
+  bestTimeSummary: "Oct-Apr clear skies and calm seas. Mar-May and Sep-Nov ideal. Jun-Aug hot with storms possible - cruises may be delayed.",
   bestMonths: [3, 4, 5, 9, 10, 11],
 
-  recommendedStay: "1–2 nights on a cruise",
+  recommendedStay: "1-2 nights on a cruise",
 
   transport: "Cruise boat only. Transfer from Hanoi usually included.",
 

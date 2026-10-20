@@ -24,14 +24,14 @@ export const sapa: Destination = {
     {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "5–6 hours",
-      cost: "150,000–250,000 VND",
+      duration: "5-6 hours",
+      cost: "150,000-250,000 VND",
       notes: "Limousine vans run direct from Hanoi Old Quarter and My Dinh to Sapa town. More comfortable than the train for most travelers.",
     },
     {
       from: "Hanoi",
       vehicle: "train",
-      duration: "8–9 hours to Lao Cai + 1 hour transfer",
+      duration: "8-9 hours to Lao Cai + 1 hour transfer",
       cost: "from 200,000 VND",
       notes: "Overnight train to Lao Cai station, then 1-hour bus or taxi up to Sapa. Scenic but slower. Book lower berth for a more stable ride.",
     },
@@ -60,7 +60,7 @@ export const sapa: Destination = {
             "muong-hoa-valley",
             "ta-van-village",
           ],
-          notes: "The best trek from Sapa - 10km through rice terraces along Muong Hoa stream to Lao Chai (Black H'Mong) and Ta Van (Giay) villages. Hire a local guide (100,000–150,000 VND) - they know the trail and the villages. Depart by 7am before the heat.",
+          notes: "The best trek from Sapa - 10km through rice terraces along Muong Hoa stream to Lao Chai (Black H'Mong) and Ta Van (Giay) villages. Hire a local guide (100,000-150,000 VND) - they know the trail and the villages. Depart by 7am before the heat.",
         },
       ],
     },
@@ -83,7 +83,7 @@ export const sapa: Destination = {
             "muong-hoa-valley",
             "ta-van-village",
           ],
-          notes: "Full day guided trek through Muong Hoa Valley to Lao Chai and Ta Van. 10–14km depending on route. Lunch in a village. Option to stay overnight in Ta Van homestay instead of returning to Sapa.",
+          notes: "Full day guided trek through Muong Hoa Valley to Lao Chai and Ta Van. 10-14km depending on route. Lunch in a village. Option to stay overnight in Ta Van homestay instead of returning to Sapa.",
         },
         {
           day: 3,
@@ -138,17 +138,17 @@ export const sapa: Destination = {
 
   // ─── Cost ────────────────────────────────────────────────
   cost: {
-    budget: "300,000–600,000 VND/day",
-    midRange: "600,000–1,200,000 VND/day",
+    budget: "300,000-600,000 VND/day",
+    midRange: "600,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
-    notes: "Fansipan cable car ~750,000 VND. Local guide ~150,000–200,000 VND/day. Village homestay with meals ~200,000–400,000 VND/night. Cat Cat Village entry 150,000 VND.",
+    notes: "Fansipan cable car ~750,000 VND. Local guide ~150,000-200,000 VND/day. Village homestay with meals ~200,000-400,000 VND/night. Cat Cat Village entry 150,000 VND.",
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Sep–Nov golden rice terraces, clear skies. Mar–May green rice, mild weather. Avoid Jun–Aug heavy rain and landslides. Dec–Feb cold and foggy but uncrowded.",
+  bestTimeSummary: "Sep-Nov golden rice terraces, clear skies. Mar-May green rice, mild weather. Avoid Jun-Aug heavy rain and landslides. Dec-Feb cold and foggy but uncrowded.",
   bestMonths: [3, 4, 5, 9, 10, 11],
 
-  recommendedStay: "2–4 days",
+  recommendedStay: "2-4 days",
 
   transport: "Walking for town and nearby villages. Motorbike rental for passes and further destinations. Grab taxis available but slow in the mountains.",
 

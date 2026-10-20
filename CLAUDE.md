@@ -123,7 +123,7 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 
 ## Content Rules
 
-- Always use hyphen (`-`) not em dash (`—`)
+- Always use hyphen (`-`) not en dash (`–`) or em dash (`—`). In destination files (`data/destinations/*.ts`) this is enforced: `npm run audit:best-time` fails on any destination string containing `–` or `—` and prints the slug and field
 - Tone: informative, neutral, data-driven for location pages
 - Blog MDX components: `<CloudImage publicId="">`, `<Warning>`, `<Tip>`, `<ScamCard>`
 - Blog frontmatter: `title`, `description`, `date`, `author`, `tags`, `category`, `location`, `difficulty`, `duration`, `heroImage`

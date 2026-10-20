@@ -30,7 +30,7 @@ export const daNang: Destination = {
     {
       from: "Hanoi",
       vehicle: "train",
-      duration: "14–16 hours",
+      duration: "14-16 hours",
       cost: "from 300,000 VND",
       notes: "Overnight sleeper. Da Nang station is central.",
     },
@@ -44,7 +44,7 @@ export const daNang: Destination = {
     {
       from: "Ho Chi Minh City",
       vehicle: "train",
-      duration: "16–18 hours",
+      duration: "16-18 hours",
       cost: "from 350,000 VND",
       notes: "Overnight sleeper. Book a berth for comfort.",
     },
@@ -52,14 +52,14 @@ export const daNang: Destination = {
       from: "Hue",
       vehicle: "bus",
       duration: "3 hours",
-      cost: "80,000–120,000 VND",
+      cost: "80,000-120,000 VND",
       notes: "Goes through Hai Van Pass on local buses - scenic but slower. The tunnel is faster but you miss the views.",
     },
     {
       from: "Hoi An",
       vehicle: "bus",
       duration: "45 minutes",
-      cost: "30,000–50,000 VND",
+      cost: "30,000-50,000 VND",
       notes: "Bus No.1 runs frequently. Grab also works well.",
     },
   ],
@@ -131,14 +131,14 @@ export const daNang: Destination = {
           from: "Da Nang",
           vehicle: "taxi",
           duration: "45 minutes",
-          cost: "250,000–350,000 VND one way",
+          cost: "250,000-350,000 VND one way",
           notes: "No public bus. Take Grab or a private taxi - most hotels can also arrange a shuttle transfer.",
         },
         {
           from: "Hoi An",
           vehicle: "taxi",
           duration: "1.5 hours",
-          cost: "400,000–600,000 VND one way",
+          cost: "400,000-600,000 VND one way",
           notes: "Many tour operators run combined Ba Na Hills + Hoi An day trips.",
         },
       ],
@@ -157,16 +157,16 @@ export const daNang: Destination = {
   ],
 
   cost: {
-    budget: "400,000–700,000 VND/day",
-    midRange: "700,000–1,500,000 VND/day",
+    budget: "400,000-700,000 VND/day",
+    midRange: "700,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
     notes: "Ba Na Hills ticket (~1,500,000 VND) not included. Seafood restaurants can push costs up quickly.",
   },
 
-  bestTimeSummary: "Feb–Aug dry season. Mar–May is the sweet spot - sunny and warm before the Jun–Aug heat (35°C+). Avoid Oct–Nov: heaviest rain in Central Vietnam and typhoon risk.",
+  bestTimeSummary: "Feb-Aug dry season. Mar-May is the sweet spot - sunny and warm before the Jun-Aug heat (35°C+). Avoid Oct-Nov: heaviest rain in Central Vietnam and typhoon risk.",
   bestMonths: [3, 4, 5, 6, 7, 8],
 
-  recommendedStay: "2–3 days (or use as a base for the entire central region)",
+  recommendedStay: "2-3 days (or use as a base for the entire central region)",
 
   transport: "Grab or motorbike rental. Airport is only 3km from the city centre.",
 

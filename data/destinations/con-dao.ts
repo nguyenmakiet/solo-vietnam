@@ -64,7 +64,7 @@ export const conDao: Destination = {
           stops: [
             "con-dao-national-park",
           ],
-          notes: "May–Oct: sea turtles nest on Dam Trau Beach - park rangers run night tours (book through Con Dao National Park office). Outside this season: explore more of the island by motorbike. Airport transfers by taxi.",
+          notes: "May-Oct: sea turtles nest on Dam Trau Beach - park rangers run night tours (book through Con Dao National Park office). Outside this season: explore more of the island by motorbike. Airport transfers by taxi.",
         },
       ],
     },
@@ -105,16 +105,16 @@ export const conDao: Destination = {
   ],
 
   cost: {
-    budget: "800,000–1,500,000 VND/day",
-    midRange: "1,500,000–3,000,000 VND/day",
+    budget: "800,000-1,500,000 VND/day",
+    midRange: "1,500,000-3,000,000 VND/day",
     comfortable: "3,000,000+ VND/day",
-    notes: "More expensive than other Vietnamese islands due to remote location. Diving: 1,500,000–2,500,000 VND for 2 dives. Motorbike rental: 150,000–200,000 VND/day. Very limited budget accommodation.",
+    notes: "More expensive than other Vietnamese islands due to remote location. Diving: 1,500,000-2,500,000 VND for 2 dives. Motorbike rental: 150,000-200,000 VND/day. Very limited budget accommodation.",
   },
 
-  bestTimeSummary: "Mar–Sep is the season to go: calm seas, good diving and boat trips. Mar–Apr is the driest. May–Sep is technically rainy season, but rain usually comes as short afternoon or evening showers of under an hour, with sunny mornings - and it's sea turtle nesting season. Oct–Feb the northeast monsoon makes Con Son Bay rough, though the west and southwest coasts stay calmer.",
+  bestTimeSummary: "Mar-Sep is the season to go: calm seas, good diving and boat trips. Mar-Apr is the driest. May-Sep is technically rainy season, but rain usually comes as short afternoon or evening showers of under an hour, with sunny mornings - and it's sea turtle nesting season. Oct-Feb the northeast monsoon makes Con Son Bay rough, though the west and southwest coasts stay calmer.",
   bestMonths: [3, 4, 5, 6, 7, 8, 9],
 
-  recommendedStay: "3–5 days",
+  recommendedStay: "3-5 days",
 
   transport: "Motorbike rental essential - the island is 15km long. Taxis available but expensive. Some beaches require short hikes to reach.",
 

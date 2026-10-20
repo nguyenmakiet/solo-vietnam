@@ -23,8 +23,8 @@ export const daLat: Destination = {
     {
       from: "Ho Chi Minh City",
       vehicle: "bus",
-      duration: "6–7 hours",
-      cost: "150,000–250,000 VND",
+      duration: "6-7 hours",
+      cost: "150,000-250,000 VND",
       notes: "Overnight sleeper buses run direct. Day buses also available from Mien Dong bus station.",
     },
     {
@@ -38,14 +38,14 @@ export const daLat: Destination = {
       from: "Nha Trang",
       vehicle: "bus",
       duration: "4 hours",
-      cost: "100,000–150,000 VND",
+      cost: "100,000-150,000 VND",
       notes: "Scenic mountain road - great if combining the two destinations.",
     },
     {
       from: "Mui Ne",
       vehicle: "bus",
-      duration: "4–5 hours",
-      cost: "100,000–150,000 VND",
+      duration: "4-5 hours",
+      cost: "100,000-150,000 VND",
     },
   ],
 
@@ -111,16 +111,16 @@ export const daLat: Destination = {
   ],
 
   cost: {
-    budget: "300,000–600,000 VND/day",
-    midRange: "600,000–1,200,000 VND/day",
+    budget: "300,000-600,000 VND/day",
+    midRange: "600,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
-    notes: "Motorbike rental: 100,000–150,000 VND/day. Langbiang entry: 50,000 VND. Canyoning tours: 500,000–800,000 VND. Specialty coffee: 30,000–80,000 VND per cup.",
+    notes: "Motorbike rental: 100,000-150,000 VND/day. Langbiang entry: 50,000 VND. Canyoning tours: 500,000-800,000 VND. Specialty coffee: 30,000-80,000 VND per cup.",
   },
 
-  bestTimeSummary: "Dec–Mar cool and dry, ideal. Can visit year-round - even rainy season (May–Oct) has cool weather and fewer crowds.",
+  bestTimeSummary: "Dec-Mar cool and dry, ideal. Can visit year-round - even rainy season (May-Oct) has cool weather and fewer crowds.",
   bestMonths: [1, 2, 3, 12],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Motorbike rental is the best way around - roads are good and traffic is manageable. Walking works well in the city centre.",
 

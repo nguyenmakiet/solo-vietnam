@@ -23,8 +23,8 @@ export const catBa: Destination = {
     {
       from: "Hai Phong",
       vehicle: "ferry",
-      duration: "45 min–1.5 hours",
-      cost: "80,000–200,000 VND",
+      duration: "45 min-1.5 hours",
+      cost: "80,000-200,000 VND",
       notes: "Fast ferry or slow ferry from Hai Phong port. Hai Phong is 1.5 hours from Hanoi by bus.",
     },
     {
@@ -38,14 +38,14 @@ export const catBa: Destination = {
       from: "Ha Long City",
       vehicle: "ferry",
       duration: "45 minutes",
-      cost: "150,000–200,000 VND",
+      cost: "150,000-200,000 VND",
       notes: "Speedboat from Tuan Chau pier. Good option if combining with Ha Long Bay cruise.",
     },
     {
       from: "Hanoi",
       vehicle: "bus",
       duration: "4.5 hours total",
-      cost: "200,000–350,000 VND",
+      cost: "200,000-350,000 VND",
       notes: "Combined bus + ferry ticket available from Hanoi. Most direct option for travelers coming straight from Hanoi.",
     },
   ],
@@ -72,7 +72,7 @@ export const catBa: Destination = {
             "trung-trang-cave",
             "cat-ba-national-park",
           ],
-          notes: "Hospital Cave first (free) - the Viet Cong's wartime underground hospital, genuinely fascinating. Then buy the 120,000 VND ticket for Trung Trang Cave and the national park summit trek (Ngu Lam Peak). Optional: continue the full 12km jungle trek through to Viet Hai Village (160,000 VND, ~5–6 hours one way) - only if you have the energy and an early start. Arrange a boat back from Viet Hai rather than trekking back.",
+          notes: "Hospital Cave first (free) - the Viet Cong's wartime underground hospital, genuinely fascinating. Then buy the 120,000 VND ticket for Trung Trang Cave and the national park summit trek (Ngu Lam Peak). Optional: continue the full 12km jungle trek through to Viet Hai Village (160,000 VND, ~5-6 hours one way) - only if you have the energy and an early start. Arrange a boat back from Viet Hai rather than trekking back.",
         },
       ],
     },
@@ -113,16 +113,16 @@ export const catBa: Destination = {
   ],
 
   cost: {
-    budget: "400,000–700,000 VND/day",
-    midRange: "700,000–1,500,000 VND/day",
+    budget: "400,000-700,000 VND/day",
+    midRange: "700,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
-    notes: "Lan Ha Bay kayak tour: 300,000–500,000 VND. National park + Trung Trang Cave combo ticket: 120,000 VND. Full jungle trek to Viet Hai: 160,000 VND. Hospital Cave: free. Bioluminescence night tour: ~$28 USD.",
+    notes: "Lan Ha Bay kayak tour: 300,000-500,000 VND. National park + Trung Trang Cave combo ticket: 120,000 VND. Full jungle trek to Viet Hai: 160,000 VND. Hospital Cave: free. Bioluminescence night tour: ~$28 USD.",
   },
 
-  bestTimeSummary: "Apr–Jun and Sep–Nov dry season, calm seas, best kayaking visibility. Avoid Jul–Aug peak domestic season - crowded and more expensive.",
+  bestTimeSummary: "Apr-Jun and Sep-Nov dry season, calm seas, best kayaking visibility. Avoid Jul-Aug peak domestic season - crowded and more expensive.",
   bestMonths: [4, 5, 6, 9, 10, 11],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Motorbike or bicycle rental on the island. Kayak for Lan Ha Bay. Walking works for Cat Ba town.",
 
