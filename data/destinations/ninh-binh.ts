@@ -32,7 +32,7 @@ export const ninhBinh: Destination = {
       from: "Hanoi",
       vehicle: "bus",
       duration: "2 hours",
-      cost: "80,000–120,000 VND",
+      cost: "80,000-120,000 VND",
       notes: "From Giap Bat bus station. Limousine vans also available, more comfortable.",
     },
     {
@@ -58,7 +58,7 @@ export const ninhBinh: Destination = {
             "hang-mua",
             "hoa-lu-ancient-capital",
           ],
-          notes: "Start with Trang An boat tour (2.5–3 hours, 250,000 VND, choose Route 3 for the best caves). Lunch near the pier. Climb Hang Mua for panoramic views - 500 steps, worth every one. Quick stop at Hoa Lu ancient capital temples before heading back. Tight but doable.",
+          notes: "Start with Trang An boat tour (2.5-3 hours, 250,000 VND, choose Route 3 for the best caves). Lunch near the pier. Climb Hang Mua for panoramic views - 500 steps, worth every one. Quick stop at Hoa Lu ancient capital temples before heading back. Tight but doable.",
         },
       ],
     },
@@ -126,17 +126,17 @@ export const ninhBinh: Destination = {
 
   // ─── Cost ────────────────────────────────────────────────
   cost: {
-    budget: "250,000–500,000 VND/day",
-    midRange: "500,000–1,000,000 VND/day",
+    budget: "250,000-500,000 VND/day",
+    midRange: "500,000-1,000,000 VND/day",
     comfortable: "1,000,000+ VND/day",
     notes: "Trang An boat: 250,000 VND/person. Hang Mua: 100,000 VND. Tam Coc boat: 200,000 VND/boat. One of the cheapest destinations in Vietnam.",
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Late May–early Jun: golden rice in Tam Coc. Oct–Nov: the rains ease off, skies clear and it's mild - the most comfortable time for boats and cycling. Apr also good. Avoid Jul–Sep: the wettest months, with September the peak. Tết and major holidays make Bai Dinh extremely crowded.",
+  bestTimeSummary: "Late May-early Jun: golden rice in Tam Coc. Oct-Nov: the rains ease off, skies clear and it's mild - the most comfortable time for boats and cycling. Apr also good. Avoid Jul-Sep: the wettest months, with September the peak. Tết and major holidays make Bai Dinh extremely crowded.",
   bestMonths: [4, 5, 6, 10, 11],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Bicycle or motorbike rental from guesthouse - essential for getting between sites. Flat terrain makes cycling very easy. Grab works in town but slow to arrive in Tam Coc/Trang An area.",
 

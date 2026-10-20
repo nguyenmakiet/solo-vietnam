@@ -38,14 +38,14 @@ export const phuQuoc: Destination = {
       from: "Rach Gia",
       vehicle: "ferry",
       duration: "2.5 hours",
-      cost: "200,000–250,000 VND",
+      cost: "200,000-250,000 VND",
       notes: "Superdong or Phu Quoc Express ferry. Slower but scenic. Good if you want to avoid flying.",
     },
     {
       from: "Ha Tien",
       vehicle: "ferry",
       duration: "1-1.5 hours",
-      cost: "150,000–200,000 VND",
+      cost: "150,000-200,000 VND",
       notes: "Closest mainland port. Good option if coming overland from Cambodia.",
     },
   ],
@@ -126,16 +126,16 @@ export const phuQuoc: Destination = {
   ],
 
   cost: {
-    budget: "400,000–800,000 VND/day",
-    midRange: "800,000–2,000,000 VND/day",
+    budget: "400,000-800,000 VND/day",
+    midRange: "800,000-2,000,000 VND/day",
     comfortable: "2,000,000+ VND/day",
-    notes: "Island hopping tour: 300,000–500,000 VND. Motorbike rental: 100,000–150,000 VND/day. Seafood at Night Market: 100,000–300,000 VND/meal.",
+    notes: "Island hopping tour: 300,000-500,000 VND. Motorbike rental: 100,000-150,000 VND/day. Seafood at Night Market: 100,000-300,000 VND/meal.",
   },
 
-  bestTimeSummary: "Nov–Apr dry season is the main window: calm seas on the west coast (Long Beach, Duong Dong) and the best time for island tours and snorkelling. May–Oct the southwest monsoon makes the west coast rough and murky, but the east and south beaches (Bai Sao, Bai Khem) stay calm and clear, with far fewer crowds.",
+  bestTimeSummary: "Nov-Apr dry season is the main window: calm seas on the west coast (Long Beach, Duong Dong) and the best time for island tours and snorkelling. May-Oct the southwest monsoon makes the west coast rough and murky, but the east and south beaches (Bai Sao, Bai Khem) stay calm and clear, with far fewer crowds.",
   bestMonths: [1, 2, 3, 4, 11, 12],
 
-  recommendedStay: "2–4 days",
+  recommendedStay: "2-4 days",
 
   transport: "Motorbike rental essential for getting around the island. Grab available but limited outside main town. Bicycle for short distances near Long Beach.",
 

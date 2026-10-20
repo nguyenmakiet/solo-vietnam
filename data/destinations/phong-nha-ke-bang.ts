@@ -3,7 +3,7 @@ import { heroUrl } from "@/lib/cloudinary"
 
 export const phongNhaKeBang: Destination = {
   slug: "phong-nha-ke-bang",
-  name: "Phong Nha – Ke Bang",
+  name: "Phong Nha - Ke Bang",
   province: "Quang Binh",
   provinceSlug: "quang-binh",
   region: "central",
@@ -25,13 +25,13 @@ export const phongNhaKeBang: Destination = {
       vehicle: "train",
       duration: "3 hours",
       cost: "from 100,000 VND",
-      notes: "To Dong Hoi station (50km south of Son Trach). Taxi or bus from Dong Hoi to Son Trach: 150,000–200,000 VND.",
+      notes: "To Dong Hoi station (50km south of Son Trach). Taxi or bus from Dong Hoi to Son Trach: 150,000-200,000 VND.",
     },
     {
       from: "Hue",
       vehicle: "bus",
       duration: "3.5 hours",
-      cost: "100,000–150,000 VND",
+      cost: "100,000-150,000 VND",
       notes: "Direct buses to Dong Hoi. Some run direct to Son Trach.",
     },
     {
@@ -45,7 +45,7 @@ export const phongNhaKeBang: Destination = {
       from: "Da Nang",
       vehicle: "bus",
       duration: "4 hours",
-      cost: "150,000–200,000 VND",
+      cost: "150,000-200,000 VND",
     },
   ],
 
@@ -101,23 +101,23 @@ export const phongNhaKeBang: Destination = {
           stops: [
             "hang-en",
           ],
-          notes: "Hang En is the world's third largest cave - requires a 2-day overnight trek (book weeks in advance, 4,500,000–6,000,000 VND). Or: rent a motorbike and explore the Ho Chi Minh Road through the jungle. Duck Stop hostel arranges excellent local tours.",
+          notes: "Hang En is the world's third largest cave - requires a 2-day overnight trek (book weeks in advance, 4,500,000-6,000,000 VND). Or: rent a motorbike and explore the Ho Chi Minh Road through the jungle. Duck Stop hostel arranges excellent local tours.",
         },
       ],
     },
   ],
 
   cost: {
-    budget: "400,000–700,000 VND/day",
-    midRange: "700,000–1,500,000 VND/day",
+    budget: "400,000-700,000 VND/day",
+    midRange: "700,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
-    notes: "Phong Nha Cave: 150,000 VND. Paradise Cave: 250,000 VND. Dark Cave: 450,000 VND. Son Doong Cave: ~70,000,000 VND per person (book 1 year ahead). Hang En overnight: 4,500,000–6,000,000 VND.",
+    notes: "Phong Nha Cave: 150,000 VND. Paradise Cave: 250,000 VND. Dark Cave: 450,000 VND. Son Doong Cave: ~70,000,000 VND per person (book 1 year ahead). Hang En overnight: 4,500,000-6,000,000 VND.",
   },
 
-  bestTimeSummary: "Feb–Aug dry season - caves open and accessible. Sep–Nov: floods can close caves and some trails. Avoid heavy rain season.",
+  bestTimeSummary: "Feb-Aug dry season - caves open and accessible. Sep-Nov: floods can close caves and some trails. Avoid heavy rain season.",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
 
-  recommendedStay: "2–4 days",
+  recommendedStay: "2-4 days",
 
   transport: "Motorbike or bicycle from Son Trach village. Most cave tour operators include transport. Dark Cave and Paradise Cave require separate tickets and transport.",
 

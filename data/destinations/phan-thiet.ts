@@ -23,8 +23,8 @@ export const phanThiet: Destination = {
     {
       from: "Ho Chi Minh City",
       vehicle: "bus",
-      duration: "4–5 hours",
-      cost: "150,000–200,000 VND",
+      duration: "4-5 hours",
+      cost: "150,000-200,000 VND",
       notes: "From Mien Dong bus station. Drop-off in Mui Ne or Phan Thiet town. Many direct sleeper buses run overnight.",
     },
     {
@@ -37,8 +37,8 @@ export const phanThiet: Destination = {
     {
       from: "Da Lat",
       vehicle: "bus",
-      duration: "4–5 hours",
-      cost: "100,000–150,000 VND",
+      duration: "4-5 hours",
+      cost: "100,000-150,000 VND",
       notes: "Popular combo route - Da Lat highlands to coast.",
     },
   ],
@@ -103,16 +103,16 @@ export const phanThiet: Destination = {
   ],
 
   cost: {
-    budget: "350,000–600,000 VND/day",
-    midRange: "600,000–1,200,000 VND/day",
+    budget: "350,000-600,000 VND/day",
+    midRange: "600,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
-    notes: "Motorbike rental: 100,000–150,000 VND/day. Kite surfing lesson: 1,200,000–2,000,000 VND. White Sand Dune jeep: 150,000–300,000 VND return.",
+    notes: "Motorbike rental: 100,000-150,000 VND/day. Kite surfing lesson: 1,200,000-2,000,000 VND. White Sand Dune jeep: 150,000-300,000 VND return.",
   },
 
-  bestTimeSummary: "Nov–Apr dry season with strong winds - ideal for kite surfing. May–Oct southwest monsoon brings rain and rough seas.",
+  bestTimeSummary: "Nov-Apr dry season with strong winds - ideal for kite surfing. May-Oct southwest monsoon brings rain and rough seas.",
   bestMonths: [1, 2, 3, 4, 11, 12],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Motorbike rental essential - the resort strip is 15km long. Grab available but limited. Jeep tours to White Sand Dunes are popular.",
 

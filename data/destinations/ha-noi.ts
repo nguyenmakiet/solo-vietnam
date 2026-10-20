@@ -25,7 +25,7 @@ export const haNoi: Destination = {
       vehicle: "fly",
       duration: "2 hours",
       cost: "from 800,000 VND",
-      notes: "Fly into Noi Bai Airport. Express bus 86 to city centre 45 min (45,000 VND). Taxi ~250,000–350,000 VND.",
+      notes: "Fly into Noi Bai Airport. Express bus 86 to city centre 45 min (45,000 VND). Taxi ~250,000-350,000 VND.",
     },
     {
       from: "Da Nang",
@@ -36,29 +36,29 @@ export const haNoi: Destination = {
     {
       from: "Da Nang",
       vehicle: "train",
-      duration: "14–16 hours",
+      duration: "14-16 hours",
       cost: "from 300,000 VND",
       notes: "Overnight sleeper - book a berth. Arrives Hanoi morning.",
     },
     {
       from: "Hue",
       vehicle: "train",
-      duration: "13–14 hours",
+      duration: "13-14 hours",
       cost: "from 250,000 VND",
       notes: "Overnight sleeper.",
     },
     {
       from: "Sapa",
       vehicle: "bus",
-      duration: "5–6 hours",
-      cost: "150,000–250,000 VND",
+      duration: "5-6 hours",
+      cost: "150,000-250,000 VND",
       notes: "Limousine vans run direct from Sapa town. Most drop off in the Old Quarter.",
     },
     {
       from: "Ha Giang",
       vehicle: "bus",
-      duration: "6–7 hours",
-      cost: "200,000–350,000 VND",
+      duration: "6-7 hours",
+      cost: "200,000-350,000 VND",
       notes: "Daily buses and limousine vans to My Dinh bus station.",
     },
   ],
@@ -181,16 +181,16 @@ export const haNoi: Destination = {
   ],
 
   cost: {
-    budget: "300,000–600,000 VND/day",
-    midRange: "600,000–1,500,000 VND/day",
+    budget: "300,000-600,000 VND/day",
+    midRange: "600,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
-    notes: "Street food meals from 30,000–80,000 VND. Ha Long Bay cruise adds 1,500,000–5,000,000 VND if included.",
+    notes: "Street food meals from 30,000-80,000 VND. Ha Long Bay cruise adds 1,500,000-5,000,000 VND if included.",
   },
 
-  bestTimeSummary: "Oct–Apr cooler and drier. Sep–Nov ideal. Avoid Jan–Feb (cold, drizzly). Jun–Aug hot and humid.",
+  bestTimeSummary: "Oct-Apr cooler and drier. Sep-Nov ideal. Avoid Jan-Feb (cold, drizzly). Jun-Aug hot and humid.",
   bestMonths: [3, 4, 9, 10, 11, 12],
 
-  recommendedStay: "2–4 days",
+  recommendedStay: "2-4 days",
 
   transport: "Walk in the Old Quarter. Grab for longer distances. Avoid motorbike rental unless experienced - traffic is intense.",
 
