@@ -25,7 +25,7 @@ export const lySon: Destination = {
       vehicle: "ferry",
       duration: "30 minutes",
       cost: "80,000-150,000 VND",
-      notes: "High-speed ferry from Sa Ky port (30km from Quang Ngai centre). Boats run from ~7am. Buy tickets at the port - no advance booking needed except peak season (Apr-Aug). Quang Ngai is accessible by train or bus from Da Nang (3 hours) or Quy Nhon (2 hours).",
+      notes: "High-speed ferry from Sa Ky port (about 20km from Quang Ngai centre). Boats run from ~7am. Buy tickets at the port - no advance booking needed except peak season (Apr-Aug). Quang Ngai is accessible by train or bus from Da Nang (3 hours) or Quy Nhon (2 hours).",
     },
   ],
 
@@ -36,23 +36,22 @@ export const lySon: Destination = {
       days: [
         {
           day: 1,
-          title: "To Vo Gate + Thoai Loi Mountain + garlic fields + An Bang beach",
+          title: "To Vo Gate + Thoi Loi Mountain + garlic fields + Hang Pagoda",
           stops: [
             "to-vo-gate",
             "thoi-loi-mountain",
             "ly-son-garlic-fields",
             "hang-pagoda",
           ],
-          notes: "Rent a motorbike from the port (150,000 VND/day) - the whole island loop is under 20km. To Vo Gate is the most dramatic volcanic sea arch in central Vietnam. Garlic fields in the morning when farmers are working. Hang Pagoda at low tide when the sea cave entrance fully opens.",
+          notes: "Rent a motorbike from the port (150,000 VND/day) - the whole island loop is under 20km. To Vo Gate is one of the most striking volcanic sea arches in central Vietnam. Garlic fields in the morning when farmers are working. Hang Pagoda at low tide when the sea cave entrance fully opens.",
         },
         {
           day: 2,
-          title: "Gieng Tien Peak + An Binh Island snorkeling",
+          title: "An Binh Island snorkeling",
           stops: [
-            "gieng-tien-peak",
             "an-binh-island",
           ],
-          notes: "Gieng Tien Peak (crater rim) for panoramic island views - 30 minute climb. An Binh Island (Dao Be / Little Island) by boat for the best snorkeling in the area - coral coverage among the best in central Vietnam. Book boat from the main harbour.",
+          notes: "An Binh Island (Dao Be / Little Island) by boat for some of the best snorkeling in the area - around 170,000 VND return (2026), book at the main harbour. Gieng Tien Peak is currently closed.",
         },
       ],
     },
@@ -80,13 +79,13 @@ export const lySon: Destination = {
         },
         {
           day: 3,
-          title: "Gieng Tien + Hoang Sa Museum + final beach",
+          title: "Thoi Loi Mountain + Hoang Sa history + final beach",
           stops: [
-            "gieng-tien-peak",
+            "thoi-loi-mountain",
             "an-vinh-communal-house",
             "an-hai-communal-house",
           ],
-          notes: "Morning crater climb. Hoang Sa naval history museum (inside An Vinh Communal House area) - fascinating and rarely visited by foreign travelers. Afternoon beach before the return ferry.",
+          notes: "Morning climb up Thoi Loi, the island's highest crater (Gieng Tien Peak is currently closed). Hoang Sa naval history museum near An Vinh Communal House - fascinating and rarely visited by foreign travelers. Afternoon beach before the return ferry.",
         },
       ],
     },
@@ -96,10 +95,10 @@ export const lySon: Destination = {
     budget: "400,000-700,000 VND/day",
     midRange: "700,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
-    notes: "Ferry: 150,000 VND return. Motorbike: 150,000 VND/day. Boat to An Binh Island: 100,000-200,000 VND return. Toi Ly Son (purple garlic) is sold everywhere and makes an excellent souvenir.",
+    notes: "Ferry: around 80,000-150,000 VND each way - check current fares at Sa Ky port. Motorbike: 150,000 VND/day. Boat to An Binh Island: around 170,000 VND return (2026). Toi Ly Son (purple garlic) is sold everywhere and makes an excellent souvenir.",
   },
 
-  bestTimeSummary: "Mar-Aug calm seas and clear water. Mar-Apr garlic harvest season - most photogenic. Avoid Sep-Jan when storms frequently cancel ferries for days.",
+  bestTimeSummary: "Mar-Aug calm seas and clear water. Garlic is harvested around Feb-Mar, when the fields are at their busiest. Avoid Sep-Jan when storms frequently cancel ferries for days.",
   bestMonths: [3, 4, 5, 6, 7, 8],
 
   recommendedStay: "2-3 days",

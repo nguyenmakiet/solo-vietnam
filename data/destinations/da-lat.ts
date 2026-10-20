@@ -9,7 +9,7 @@ export const daLat: Destination = {
   region: "central",
 
   description:
-    "Da Lat is Vietnam's mountain escape - a former French hill station at 1,500m with cool weather year-round, pine forests, flower farms, waterfalls, and one of the country's most distinctive coffee cultures. It's also the adventure sports capital of the Central Highlands: canyoning, mountain biking, and trekking. The city itself is architecturally eccentric - French villas, Soviet-era buildings, and the Crazy House all in the same street.",
+    "Da Lat is Vietnam's mountain escape - a former French hill station at 1,500m with cool weather year-round, pine forests, flower farms, waterfalls, and one of the country's most distinctive coffee cultures. It's also the adventure sports capital of the Central Highlands: canyoning, mountain biking, and trekking. The city itself is architecturally eccentric - French villas, 1960s modernist buildings, and the Crazy House all in the same street.",
 
   tagline: "Vietnam's little mountain escape",
 
@@ -59,19 +59,17 @@ export const daLat: Destination = {
           title: "Crazy House + Xuan Huong Lake + coffee tour",
           stops: [
             "crazy-house",
-            "tuyen-lam-lake",
           ],
-          notes: "Crazy House is genuinely unlike anything else in Vietnam - worth the 60,000 VND entry. Xuan Huong Lake for the evening stroll. Da Lat has some of the best specialty coffee in Vietnam - dedicate time to the cafe scene.",
+          notes: "Crazy House is genuinely unlike anything else in Vietnam - worth the 80,000 VND entry. Xuan Huong Lake for the evening stroll. Da Lat has some of the best specialty coffee in Vietnam - dedicate time to the cafe scene.",
         },
         {
           day: 2,
-          title: "Langbiang Mountain + waterfalls",
+          title: "Langbiang Mountain + Datanla Waterfall",
           stops: [
             "langbiang-mountain",
             "datanla-waterfall",
-            "elephant-waterfall",
           ],
-          notes: "Langbiang sunrise is spectacular if you're willing to be there at 5am. Elephant Waterfall is the most dramatic in the area. Datanla has a canyoning option for the adventurous.",
+          notes: "Langbiang at sunrise is spectacular if you're there when the gate opens (5:30am). Datanla, just south of town, has a canyoning option and an alpine coaster. Elephant Waterfall is currently closed to visitors.",
         },
       ],
     },
@@ -86,7 +84,7 @@ export const daLat: Destination = {
             "crazy-house",
             "dalat-railway-station",
           ],
-          notes: "Arrive, explore on foot. Da Lat Railway Station is the most charming in Vietnam - still runs tourist trains to Trai Mat village. Afternoon: wander the flower markets and French Quarter.",
+          notes: "Arrive, explore on foot. Da Lat Railway Station is one of the most charming in Vietnam - still runs tourist trains to Trai Mat village. Afternoon: wander the flower markets and French Quarter.",
         },
         {
           day: 2,
@@ -101,10 +99,10 @@ export const daLat: Destination = {
           day: 3,
           title: "Waterfalls + coffee farms",
           stops: [
-            "elephant-waterfall",
             "datanla-waterfall",
+            "pongour-waterfall",
           ],
-          notes: "Elephant Waterfall is 25km from the city - combine with a visit to a local coffee or tea farm. Da Lat produces some of Vietnam's best arabica. Canyoning at Datanla if you want the adrenaline.",
+          notes: "Datanla in the morning, then south to Pongour, one of the region's largest waterfalls, about 45km from the city. Combine with a local coffee or tea farm - Da Lat produces some of Vietnam's best arabica. Elephant Waterfall is currently closed.",
         },
       ],
     },

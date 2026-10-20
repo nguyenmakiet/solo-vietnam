@@ -25,7 +25,7 @@ export const daNang: Destination = {
       vehicle: "fly",
       duration: "1 hr 15 min",
       cost: "from 600,000 VND",
-      notes: "Multiple daily flights on Vietnam Airlines, VietJet, and Bamboo. Da Nang airport is 3km from the city centre - taxi around 80,000 VND.",
+      notes: "Multiple daily flights on Vietnam Airlines and Vietjet. Da Nang airport is 3km from the city centre - taxi around 80,000 VND.",
     },
     {
       from: "Hanoi",
@@ -39,7 +39,7 @@ export const daNang: Destination = {
       vehicle: "fly",
       duration: "1 hr 15 min",
       cost: "from 600,000 VND",
-      notes: "Multiple daily flights on Vietnam Airlines, VietJet, and Bamboo.",
+      notes: "Multiple daily flights on Vietnam Airlines and Vietjet.",
     },
     {
       from: "Ho Chi Minh City",
@@ -53,14 +53,14 @@ export const daNang: Destination = {
       vehicle: "bus",
       duration: "3 hours",
       cost: "80,000-120,000 VND",
-      notes: "Goes through Hai Van Pass on local buses - scenic but slower. The tunnel is faster but you miss the views.",
+      notes: "Most buses take the Hai Van Tunnel. To see the Hai Van Pass itself, go by motorbike or hired car.",
     },
     {
       from: "Hoi An",
       vehicle: "bus",
       duration: "45 minutes",
       cost: "30,000-50,000 VND",
-      notes: "Bus No.1 runs frequently. Grab also works well.",
+      notes: "Bus No.2 (which replaced the old No.1 in 2024) runs every 15-30 min, about 31,000-40,000 VND with luggage - it does not stop at the airport or train station. Grab also works well.",
     },
   ],
 
@@ -85,7 +85,7 @@ export const daNang: Destination = {
           stops: [
             "marble-mountains",
           ],
-          notes: "Morning at the Marble Mountains - go early before tour groups arrive. Afternoon at the Museum of Cham Sculpture - largest collection of Cham artifacts in the world. Evening seafood on the beach.",
+          notes: "Morning at the Marble Mountains - go early before tour groups arrive. Afternoon at the Museum of Cham Sculpture - one of the largest collections of Cham sculpture in the world. Evening seafood on the beach.",
         },
       ],
     },
@@ -146,9 +146,9 @@ export const daNang: Destination = {
         stops: ["ba-na-cable-car", "golden-bridge", "french-village-ba-na"],
         notes: "Ride the 5.8km cable car up, see the Golden Bridge first before the queues form, then walk through the French Village at around 1,400m. Fantasy Park, an indoor amusement park, suits families. The complex is enormous - allow the whole day.",
       },
-      cost: "All-inclusive ticket ~1,500,000 VND per person, covering the cable car, Golden Bridge, Fantasy Park and most attractions.",
+      cost: "Ticket around 950,000-1,000,000 VND per adult (2026), covering the cable car, Golden Bridge, Fantasy Park and most attractions.",
       tips: [
-        "Arrive at the 8am opening: fewer crowds and clearer weather than in the afternoon.",
+        "Arrive for the first cable car at 7:30am: fewer crowds and clearer weather than in the afternoon.",
         "Go in the morning - clouds often roll in by 2pm. From March to August the summit tends to be sunny while Da Nang below is sometimes overcast.",
         "Buy tickets online to skip the queues and get a small discount.",
         "Food inside the complex is overpriced - eat before or after.",
@@ -160,7 +160,7 @@ export const daNang: Destination = {
     budget: "400,000-700,000 VND/day",
     midRange: "700,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
-    notes: "Ba Na Hills ticket (~1,500,000 VND) not included. Seafood restaurants can push costs up quickly.",
+    notes: "Ba Na Hills ticket (around 950,000-1,000,000 VND) not included. Seafood restaurants can push costs up quickly.",
   },
 
   bestTimeSummary: "Feb-Aug dry season. Mar-May is the sweet spot - sunny and warm before the Jun-Aug heat (35°C+). Avoid Oct-Nov: heaviest rain in Central Vietnam and typhoon risk.",

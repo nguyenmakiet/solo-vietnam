@@ -25,7 +25,7 @@ export const hoiAn: Destination = {
       vehicle: "bus",
       duration: "45 minutes",
       cost: "30,000-50,000 VND",
-      notes: "Bus No.1 runs frequently. Grab is ~150,000-200,000 VND and more convenient with luggage.",
+      notes: "Bus No.2 (which replaced the old No.1 in 2024) runs every 15-30 min from Hoi An bus station, about 31,000-40,000 VND with luggage. Grab is more convenient with luggage.",
     },
     {
       from: "Ho Chi Minh City",
@@ -138,7 +138,7 @@ export const hoiAn: Destination = {
           stops: [
             "my-son-sanctuary",
           ],
-          notes: "Sunrise tour to beat the heat and crowds. Back by noon. Afternoon: tailor pickup, final shopping.",
+          notes: "Go at opening (6am) to beat the heat and crowds. Back by noon. Afternoon: tailor pickup, final shopping.",
         },
         {
           day: 4,
