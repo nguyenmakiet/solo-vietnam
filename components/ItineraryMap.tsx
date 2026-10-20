@@ -331,7 +331,7 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
           ))}
           <div className="itin-map-legend-note">
             {Object.values(stopDataMap).length > 0
-              ? `${activeItin.days.flatMap((d) => dayMapPoints(d, stopDataMap)).filter((p) => p.kind === "stop").length} stops mapped`
+              ? `${activeItin.days.flatMap((d) => dayMapPoints(d, stopDataMap)).length} stops mapped`
               : "No coordinates available"}
           </div>
         </div>
