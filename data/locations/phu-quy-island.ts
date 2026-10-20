@@ -6,7 +6,7 @@ export const phuQuyIsland: Location = {
   name: "Phú Quý Island",
   updatedAt: "2026-10-04",
   provinces: ["binh-thuan"],
-  destination: "mui-ne",
+  destination: "",
   lat: 10.50468862452949,
   lng: 108.95176333752987,
   address: "Huyện Phú Quý, Bình Thuận",
