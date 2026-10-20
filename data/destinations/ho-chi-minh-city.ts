@@ -74,12 +74,12 @@ export const hoChiMinhCity: Destination = {
         },
         {
           day: 2,
-          title: "Cu Chi Tunnels day trip + Jade Emperor Pagoda",
+          title: "Jade Emperor Pagoda + Cu Chi Tunnels",
           stops: [
-            "cu-chi-tunnels",
             "jade-emperor-pagoda",
+            "cu-chi-tunnels",
           ],
-          notes: "Cu Chi Tunnels are 70km northwest - half day tour (250,000-350,000 VND). Jade Emperor Pagoda is the most atmospheric temple in HCMC - best visited early morning before tour groups.",
+          notes: "Jade Emperor Pagoda at 7am opening, the most atmospheric temple in central HCMC and quiet before tour groups arrive. Then an afternoon Cu Chi Tunnels tour - about 70km northwest, half day, 250,000-350,000 VND (check current tour prices).",
         },
       ],
     },
@@ -105,7 +105,7 @@ export const hoChiMinhCity: Destination = {
             "cu-chi-tunnels",
             "ben-thanh-market",
           ],
-          notes: "Morning Cu Chi Tunnels tour. Afternoon: Ben Thanh Market (touristy but worth seeing). Binh Tay Market in Cholon (District 5) is the real deal - wholesale market, mostly locals. Best Vietnamese food in HCMC is in Cholon.",
+          notes: "Morning Cu Chi Tunnels tour. Afternoon: Ben Thanh Market (touristy but worth seeing). Binh Tay Market in Cholon (District 5) is the real deal - wholesale market, mostly locals. Cholon is also one of the city's best areas for Chinese-Vietnamese food.",
         },
         {
           day: 3,
@@ -113,7 +113,7 @@ export const hoChiMinhCity: Destination = {
           stops: [
             "jade-emperor-pagoda",
           ],
-          notes: "Jade Emperor Pagoda early morning. Day trip to Mekong Delta (My Tho or Can Tho) if time allows - 2 hours each way by bus. Or: slow morning at a cafe, explore District 3's colonial streets before departing.",
+          notes: "Jade Emperor Pagoda when it opens at 7am, before tour groups. Optional day trip to My Tho in the Mekong Delta - about 2 hours each way by bus or tour van. Or: slow morning at a cafe and District 3's colonial streets before departing.",
         },
       ],
     },

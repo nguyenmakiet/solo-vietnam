@@ -9,7 +9,7 @@ export const conDao: Destination = {
   region: "south",
 
   description:
-    "Con Dao is Vietnam's most extraordinary island - a former French colonial penal colony with a dark and layered history, now one of Southeast Asia's most pristine marine environments. Near-empty beaches, world-class diving and snorkeling, sea turtle nesting sites, and one of the best-preserved national parks in the country. It's more expensive to reach and stay than other Vietnamese islands, which is exactly why it has stayed this way.",
+    "Con Dao is one of Vietnam's most remarkable islands - a former French colonial penal colony with a dark and layered history, now home to some of the best-protected marine environments in Vietnam. Near-empty beaches, world-class diving and snorkeling, sea turtle nesting sites, and one of the best-preserved national parks in the country. It's more expensive to reach and stay than other Vietnamese islands, which is exactly why it has stayed this way.",
 
   tagline: "Vietnam's most haunting - and most beautiful - island",
 
@@ -23,9 +23,9 @@ export const conDao: Destination = {
     {
       from: "Ho Chi Minh City",
       vehicle: "fly",
-      duration: "45 minutes",
+      duration: "45-60 minutes",
       cost: "from 800,000 VND",
-      notes: "Vietnam Airlines and Bamboo Airways fly daily from Tan Son Nhat. No ferry from the mainland - flying is the only practical option.",
+      notes: "Vietnam Airlines flies daily from Tan Son Nhat (under an hour) - the fastest option.",
     },
     {
       from: "Can Tho",
@@ -33,6 +33,13 @@ export const conDao: Destination = {
       duration: "45 minutes",
       cost: "from 700,000 VND",
       notes: "Seasonal flights available.",
+    },
+    {
+      from: "Vung Tau / Tran De / HCMC",
+      vehicle: "ferry",
+      duration: "3-5 hours",
+      cost: "check current fares",
+      notes: "High-speed ferries run from Vung Tau, Tran De (Soc Trang) and Hiep Phuoc port in HCMC; schedules change by season and sailings are often cancelled in rough weather - check before booking and keep a flexible day.",
     },
   ],
 
@@ -56,7 +63,7 @@ export const conDao: Destination = {
           stops: [
             "con-dao-national-park",
           ],
-          notes: "Morning: diving or snorkeling - Con Dao has some of the best coral reefs in Vietnam, with manta rays, hawksbill turtles, and healthy fish populations. Afternoon: trek into the national park. Dam Trau Beach on the north of the island is a contender for most beautiful beach in Vietnam.",
+          notes: "Morning: diving or snorkeling - Con Dao has some of the best coral reefs in Vietnam, with hawksbill turtles, occasional rays, and healthy fish populations. Afternoon: trek into the national park. Dam Trau Beach in the north of the island is often called one of the most beautiful beaches in Vietnam.",
         },
         {
           day: 3,
@@ -64,7 +71,7 @@ export const conDao: Destination = {
           stops: [
             "con-dao-national-park",
           ],
-          notes: "May-Oct: sea turtles nest on Dam Trau Beach - park rangers run night tours (book through Con Dao National Park office). Outside this season: explore more of the island by motorbike. Airport transfers by taxi.",
+          notes: "May-Oct: sea turtles nest on Bay Canh island - Con Dao National Park runs overnight turtle-watching tours with a stay at the ranger station (book in advance through the park office; limited places). Outside this season: explore more of the island by motorbike. Airport transfers by taxi.",
         },
       ],
     },
@@ -90,9 +97,11 @@ export const conDao: Destination = {
         },
         {
           day: 3,
-          title: "Dam Trau Beach + lighthouse + northern islands",
-          stops: [],
-          notes: "Motorbike to Dam Trau Beach - best on the island. Ba Ria lighthouse for views. Small boat to nearby islands if arranged with a local operator.",
+          title: "Dam Trau Beach + Bay Canh island",
+          stops: [
+            "dam-trau-beach",
+          ],
+          notes: "Motorbike to Dam Trau Beach, the island's best beach. Boat trip to Bay Canh island for the French-era lighthouse, built in the 1880s, and its views - arrange through the national park or a local operator.",
         },
         {
           day: 4,

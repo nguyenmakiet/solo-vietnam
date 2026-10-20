@@ -7,8 +7,8 @@ export const khoMuongVillage: Location = {
   updatedAt: "2026-10-06",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
-  lat: 20.44871826696882, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
-  lng: 105.15321491096157, // TODO: verify - could not independently confirm exact GPS via search; treat as approximate
+  lat: 20.44871826696882,
+  lng: 105.15321491096157,
   address: "Thành Sơn, Bá Thước, Thanh Hóa",
   type: ["village"],
   categories: ["hidden-gem", "culture", "nature"],
