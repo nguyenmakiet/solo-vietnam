@@ -74,18 +74,16 @@ export const daNang: Destination = {
           title: "Beach + Son Tra Peninsula + Dragon Bridge",
           stops: [
             "my-khe-beach",
-            "linh-ung-pagoda",
             "son-tra-peninsula",
             "dragon-bridge",
           ],
-          notes: "Swim at My Khe before 7am with locals. Afternoon ride around Son Tra Peninsula. Dragon Bridge fire show Fri/Sat/Sun at 9pm - don't stand under the mouth.",
+          notes: "Swim at My Khe before 7am with locals. Afternoon ride around Son Tra Peninsula. Dragon Bridge fire show Fri/Sat/Sun at 9pm - don't stand under the mouth. Also: Linh Ung Pagoda.",
         },
         {
           day: 2,
           title: "Marble Mountains + Cham Museum",
           stops: [
             "marble-mountains",
-            "cham-museum",
           ],
           notes: "Morning at the Marble Mountains - go early before tour groups arrive. Afternoon at the Museum of Cham Sculpture - largest collection of Cham artifacts in the world. Evening seafood on the beach.",
         },
@@ -100,17 +98,15 @@ export const daNang: Destination = {
           title: "Beach + Son Tra Peninsula",
           stops: [
             "my-khe-beach",
-            "linh-ung-pagoda",
             "son-tra-peninsula",
           ],
-          notes: "Early morning swim. Afternoon motorbike loop around Son Tra - quiet roads, great views, chance to spot red-shanked douc langurs.",
+          notes: "Early morning swim. Afternoon motorbike loop around Son Tra - quiet roads, great views, chance to spot red-shanked douc langurs. Also: Linh Ung Pagoda.",
         },
         {
           day: 2,
           title: "Marble Mountains + Cham Museum + Dragon Bridge",
           stops: [
             "marble-mountains",
-            "cham-museum",
             "dragon-bridge",
           ],
           notes: "Morning at the mountains. Afternoon at the museum. Evening fire show.",

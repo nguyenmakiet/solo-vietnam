@@ -120,9 +120,7 @@ export const sapa: Destination = {
         {
           day: 3,
           title: "Ta Phin Village + Red Dao village",
-          stops: [
-            "ta-phin-village",
-          ],
+          stops: [],
           notes: "Morning: explore Ta Van at dawn before day-trippers arrive. Return to Sapa by midday. Afternoon: Ta Phin village (Red Dao community, famous for herbal baths). Different minority culture from H'Mong - worth the contrast.",
         },
         {

@@ -61,7 +61,6 @@ export const hue: Destination = {
           stops: [
             "imperial-city-hue",
             "thien-mu-pagoda",
-            "perfume-river",
           ],
           notes: "Start early at the Imperial City - allow 2-3 hours minimum. Buy the combo ticket (cash only). Afternoon: motorbike or dragon boat along the Perfume River to Thien Mu Pagoda. Evening: bun bo Hue, then walk the riverside.",
         },
@@ -86,7 +85,6 @@ export const hue: Destination = {
           stops: [
             "imperial-city-hue",
             "thien-mu-pagoda",
-            "dong-ba-market",
           ],
           notes: "Full day at the citadel. Buy combo ticket on arrival - cash only. Evening: eat around Dong Ba Market - banh khoai, bun bo Hue, com hen.",
         },
