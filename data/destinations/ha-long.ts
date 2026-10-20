@@ -24,8 +24,8 @@ export const haLong: Destination = {
     {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "3.5 hours",
-      cost: "200,000-350,000 VND",
+      duration: "2.5-3.5 hours",
+      cost: "250,000-450,000 VND",
       notes: "Most cruises include transfers from Hanoi Old Quarter hotels. If booking independently, buses run from My Dinh and Gia Lam stations to Ha Long City.",
     },
   ],
@@ -44,7 +44,7 @@ export const haLong: Destination = {
             "sung-sot-cave",
             "ti-top-island",
           ],
-          notes: "Depart Hanoi ~7:30am, on the water by noon. Sung Sot (Surprise Cave) is the largest and most impressive cave in the bay. Ti Top Island for swimming and panoramic views. Back in Hanoi by 8pm. Tight but doable - only worth it if you can't do overnight.",
+          notes: "Depart Hanoi ~7:30am, on the water by noon. Sung Sot (Surprise Cave) is one of the largest and most impressive caves in the bay. Ti Top Island for swimming and panoramic views. Back in Hanoi by 8pm. Tight but doable - only worth it if you can't do overnight.",
         },
       ],
     },
@@ -65,11 +65,8 @@ export const haLong: Destination = {
         {
           day: 2,
           title: "Sunrise + kayaking + Bai Tu Long or Lan Ha extension",
-          stops: [
-            "bai-tu-long-bay",
-            "lan-ha-bay",
-          ],
-          notes: "Dawn on deck for sunrise over the karsts. Morning kayak or swimming before heading back. Disembark ~noon, back in Hanoi by 5pm.",
+          stops: [],
+          notes: "Dawn on deck for sunrise over the karsts. Morning kayak or swim before heading back - depending on your cruise route this will be in Bai Tu Long Bay or Lan Ha Bay, not both. Disembark around noon, back in Hanoi by late afternoon.",
         },
       ],
     },
@@ -113,8 +110,8 @@ export const haLong: Destination = {
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Oct-Apr clear skies and calm seas. Mar-May and Sep-Nov ideal. Jun-Aug hot with storms possible - cruises may be delayed.",
-  bestMonths: [3, 4, 5, 9, 10, 11],
+  bestTimeSummary: "Oct-Dec and Apr-May are the best: mostly dry, calmer seas and comfortable temperatures. Jan-Mar is cool with frequent fog and drizzle that can hide the karsts. Jun-Sep is hot and wet, and typhoons (mostly Jul-Sep) can cancel cruises at short notice.",
+  bestMonths: [4, 5, 10, 11, 12],
 
   recommendedStay: "1-2 nights on a cruise",
 

@@ -44,7 +44,7 @@ export const catBa: Destination = {
     {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "4.5 hours total",
+      duration: "4-4.5 hours total",
       cost: "200,000-350,000 VND",
       notes: "Combined bus + ferry ticket available from Hanoi. Most direct option for travelers coming straight from Hanoi.",
     },
@@ -62,7 +62,7 @@ export const catBa: Destination = {
             "lan-ha-bay",
             "cat-co-beach",
           ],
-          notes: "Morning: join a kayak tour of Lan Ha Bay - dramatically fewer boats than Ha Long, better for swimming and exploration. Afternoon: Cat Co 1 or Cat Co 3 beaches for swimming. Evening: seafood in Cat Ba town. Optional: bioluminescence night kayak tour (~$28 USD) - a guide leads you through the bay in darkness to see plankton glow in the water. Book in advance, runs most nights. Only worthwhile if you're not exhausted from the day.",
+          notes: "Morning: join a kayak tour of Lan Ha Bay - dramatically fewer boats than Ha Long, better for swimming and exploration. Afternoon: Cat Co 1 or Cat Co 3 beaches for swimming. Evening: seafood in Cat Ba town. Optional: bioluminescence night kayak tour (around 400,000-700,000 VND) - a guide leads you through the bay in darkness to see plankton glow in the water. Book in advance, runs most nights. Only worthwhile if you're not exhausted from the day.",
         },
         {
           day: 2,
@@ -72,7 +72,7 @@ export const catBa: Destination = {
             "trung-trang-cave",
             "cat-ba-national-park",
           ],
-          notes: "Hospital Cave first (free) - the Viet Cong's wartime underground hospital, genuinely fascinating. Then buy the 120,000 VND ticket for Trung Trang Cave and the national park summit trek (Ngu Lam Peak). Optional: continue the full 12km jungle trek through to Viet Hai Village (160,000 VND, ~5-6 hours one way) - only if you have the energy and an early start. Arrange a boat back from Viet Hai rather than trekking back.",
+          notes: "Hospital Cave first - a secret hospital built inside the rock in the 1960s. It is currently closed, so you can only see the outside; check locally before going. Then buy the 120,000 VND ticket for Trung Trang Cave and the national park summit trek (Ngu Lam Peak). Optional: continue the full 12km jungle trek through to Viet Hai Village (160,000 VND, ~5-6 hours one way) - only if you have the energy and an early start. Arrange a boat back from Viet Hai rather than trekking back.",
         },
       ],
     },
@@ -86,7 +86,7 @@ export const catBa: Destination = {
           stops: [
             "cat-co-beach",
           ],
-          notes: "Arrive, drop bags, swim at Cat Co beach. Cat Ba town for evening seafood and cold bia hoi. Optional: bioluminescence night kayak tour (~$28 USD) - book on arrival if interested, runs most nights. A relaxed first day is the right context for this.",
+          notes: "Arrive, drop bags, swim at Cat Co beach. Cat Ba town for evening seafood and cold bia hoi. Optional: bioluminescence night kayak tour (around 400,000-700,000 VND) - book on arrival if interested, runs most nights. A relaxed first day is the right context for this.",
         },
         {
           day: 2,
@@ -95,7 +95,7 @@ export const catBa: Destination = {
             "lan-ha-bay",
             "viet-hai-village",
           ],
-          notes: "Full day kayak through Lan Ha Bay. Viet Hai is an isolated fishing village accessible only by kayak through a sea cave or jungle cycling trail - one of the most memorable experiences in northern Vietnam. Rest well tonight - tomorrow is active.",
+          notes: "Full day kayak through Lan Ha Bay. Viet Hai is an isolated village inside the national park, reached by boat from Ben Beo pier and then a short ride or walk, or by a long jungle trek - one of the most memorable experiences in northern Vietnam. Rest well tonight - tomorrow is active.",
         },
         {
           day: 3,
@@ -106,7 +106,7 @@ export const catBa: Destination = {
             "cat-ba-national-park",
             "radio-tower-cat-ba",
           ],
-          notes: "Morning: Trung Trang Cave and summit trek (120,000 VND ticket). Hospital Cave is free - do it on the way. Afternoon: Radio Tower for panoramic views over Lan Ha Bay - one of the best viewpoints on the island. Ferry back to Hai Phong or Ha Long City.",
+          notes: "Morning: Trung Trang Cave and summit trek (120,000 VND ticket). Hospital Cave is on the way (currently closed - exterior only). Afternoon: Radio Tower for panoramic views over Lan Ha Bay - one of the best viewpoints on the island. Ferry back to Hai Phong or Ha Long City.",
         },
       ],
     },
@@ -116,11 +116,11 @@ export const catBa: Destination = {
     budget: "400,000-700,000 VND/day",
     midRange: "700,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
-    notes: "Lan Ha Bay kayak tour: 300,000-500,000 VND. National park + Trung Trang Cave combo ticket: 120,000 VND. Full jungle trek to Viet Hai: 160,000 VND. Hospital Cave: free. Bioluminescence night tour: ~$28 USD.",
+    notes: "Lan Ha Bay kayak tour: 300,000-500,000 VND. National park + Trung Trang Cave combo ticket: 120,000 VND. Full jungle trek to Viet Hai: 160,000 VND. Hospital Cave: free. Bioluminescence night tour: around 400,000-700,000 VND.",
   },
 
-  bestTimeSummary: "Apr-Jun and Sep-Nov dry season, calm seas, best kayaking visibility. Avoid Jul-Aug peak domestic season - crowded and more expensive.",
-  bestMonths: [4, 5, 6, 9, 10, 11],
+  bestTimeSummary: "Apr-Jun and Oct-Nov are the best windows: warm, calm enough for kayaking, and outside the Jul-Aug domestic rush. June is already rainy but it is beach season. Jul-Sep is the wettest stretch and typhoons can cancel boat trips at short notice. Dec-Mar is cool and often foggy - quiet, but not swimming weather.",
+  bestMonths: [4, 5, 6, 10, 11],
 
   recommendedStay: "2-3 days",
 
@@ -142,7 +142,7 @@ export const catBa: Destination = {
     },
     {
       question: "How do I get to Cát Bà from Hanoi?",
-      answer: "The most common route is by bus-ferry combo from Hanoi - journey time is approximately 3.5-4 hours total. Buses depart from Hanoi's My Dinh or Gia Lam station, connecting to a ferry at Got pier (Hai Phong) or Dinh Vu, arriving at Cat Ba town. Several operators sell door-to-door tickets for around 150,000-250,000 VND. Alternatively, travel via Hai Phong city and take a local ferry - slower but cheaper. From Halong Bay cruise terminals, speedboat transfers to Cat Ba are also available.",
+      answer: "The most common route is by bus-ferry combo from Hanoi - journey time is approximately 4-4.5 hours total. Buses depart from Hanoi's My Dinh or Gia Lam station, connecting to a ferry at Got pier (Hai Phong) or Dinh Vu, arriving at Cat Ba town. Several operators sell door-to-door tickets for around 200,000-350,000 VND. Alternatively, travel via Hai Phong city and take a local ferry - slower but cheaper. From Halong Bay cruise terminals, speedboat transfers to Cat Ba are also available.",
     },
     {
       question: "How many days do you need on Cát Bà Island?",
@@ -150,7 +150,7 @@ export const catBa: Destination = {
     },
     {
       question: "What is the best time to visit Cát Bà?",
-      answer: "March-May and September-November are the best windows - warm temperatures, lower humidity, and calmer seas for boat tours and kayaking. May-August is peak season with the warmest water but also the most tourists and occasional tropical storms. December-February is cooler and quieter - boat tours still run but rougher seas can occasionally cause cancellations. Avoid visiting during major Vietnamese holidays (Tet, April 30 - May 1) when the island gets extremely crowded.",
+      answer: "April-June and October-November are the best windows - warm temperatures, lower humidity, and calmer seas for boat tours and kayaking. May-August is peak season with the warmest water but also the most tourists and occasional tropical storms. December-February is cooler and quieter - boat tours still run but rougher seas can occasionally cause cancellations. Avoid visiting during major Vietnamese holidays (Tet, April 30 - May 1) when the island gets extremely crowded.",
     },
     {
       question: "What is the difference between Lan Hạ Bay and Hạ Long Bay?",
@@ -158,7 +158,7 @@ export const catBa: Destination = {
     },
     {
       question: "How much does a trip to Cát Bà cost?",
-      answer: "Budget travelers can manage 2 days / 1 night for around $30-50 USD. This covers a basic guesthouse (150,000-300,000 VND/night), simple meals (50,000-100,000 VND/meal), and a day boat tour of Lan Ha Bay (150,000-300,000 VND/person on a group tour). Mid-range travelers opting for better accommodation and a private or small-group kayaking tour should budget $80-150 USD for the same duration. Bioluminescence kayaking tours typically cost 400,000-600,000 VND per person and run in the evening separately from daytime bay tours.",
+      answer: "Budget travelers can manage 2 days / 1 night for around $30-50 USD. This covers a basic guesthouse (150,000-300,000 VND/night), simple meals (50,000-100,000 VND/meal), and a day boat tour of Lan Ha Bay (150,000-300,000 VND/person on a group tour). Mid-range travelers opting for better accommodation and a private or small-group kayaking tour should budget $80-150 USD for the same duration. Bioluminescence kayaking tours typically cost 400,000-700,000 VND per person and run in the evening separately from daytime bay tours.",
     },
     {
       question: "Is Cát Bà safe for solo travelers?",

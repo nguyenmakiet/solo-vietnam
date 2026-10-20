@@ -11,7 +11,7 @@ export const haGiang: Destination = {
   region: "north",
 
   description:
-    "The Ha Giang Loop is a scenic motorbike route in Vietnam's far north - a 350km circuit through the Dong Van Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'Mong villages, buckwheat fields, and the deepest river gorge in Southeast Asia. The town of Ha Giang is the starting point; the loop runs clockwise through Quan Ba, Yen Minh, Dong Van, and Meo Vac before returning via the eastern route through Du Gia. Do it by motorbike - that's the point.",
+    "The Ha Giang Loop is a scenic motorbike route in Vietnam's far north - a 350km circuit through the Dong Van Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'Mong villages, buckwheat fields, and one of the deepest river gorges in Southeast Asia. The town of Ha Giang is the starting point; the loop runs clockwise through Quan Ba, Yen Minh, Dong Van, and Meo Vac before returning south through Du Gia. Do it by motorbike - that's the point.",
 
   tagline: "A 350km mountain loop through karst, passes, and minority villages",
 
@@ -81,7 +81,7 @@ export const haGiang: Destination = {
             "du-gia-waterfall",
             "ha-giang-city",
           ],
-          notes: "Return route along QL34 following the Gam River - less dramatic than the outward route but still beautiful. Du Gia village for lunch. Du Gia Waterfall for a swim if weather allows. Back in Ha Giang by evening.",
+          notes: "Return route south through Mau Due and Du Gia - less dramatic than the outward route but still beautiful. Du Gia village for lunch. Du Gia Waterfall for a swim if weather allows. Back in Ha Giang by evening.",
         },
       ],
     },
@@ -137,7 +137,7 @@ export const haGiang: Destination = {
             "du-gia-waterfall",
             "ha-giang-city",
           ],
-          notes: "Early start. QL34 return route along the Gam River. Du Gia is a peaceful village on the eastern loop - Tay settlement in a river valley. Du Gia Waterfall for a swim. Back in Ha Giang by late afternoon.",
+          notes: "Early start on the return route through Mau Due. Du Gia is a peaceful village on the eastern loop - Tay settlement in a river valley. Du Gia Waterfall for a swim. Back in Ha Giang by late afternoon.",
         },
       ],
     },
@@ -148,12 +148,12 @@ export const haGiang: Destination = {
     budget: "400,000-700,000 VND/day",
     midRange: "700,000-1,200,000 VND/day",
     comfortable: "1,200,000-2,500,000 VND/day",
-    notes: "Budget: self-ride rental bike + homestay + local food. Mid-range: Easy Rider (local driver takes you on their bike). Comfortable: Jeep tour with accommodation included. Border area permit required for all foreign visitors: ~250,000 VND.",
+    notes: "Budget: self-ride rental bike + homestay + local food. Mid-range: Easy Rider (local driver takes you on their bike). Comfortable: Jeep tour with accommodation included. Border area permit required for all foreign visitors: around 200,000-250,000 VND.",
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Sep-Nov: golden rice terraces + buckwheat flowers in Oct-Nov. Mar-Apr: white mustard flowers, clear skies. Avoid Jun-Aug: heavy rain, landslide risk.",
-  bestMonths: [3, 4, 9, 10, 11],
+  bestTimeSummary: "Sep-Nov: golden rice terraces and buckwheat flowers in Oct-Nov. Jan-Feb: yellow mustard and peach blossom season - cold on the plateau, and nights can drop close to freezing. Mar-Apr: mild weather, clear skies. Avoid Jun-Aug: heavy rain, landslide risk.",
+  bestMonths: [1, 2, 3, 4, 9, 10, 11],
 
   recommendedStay: "3-5 days for the full loop",
 
@@ -178,7 +178,7 @@ export const haGiang: Destination = {
     },
     {
       question: "How do I get to Ha Giang from Hanoi?",
-      answer: "The most common option is a sleeper bus from Hanoi's My Dinh bus station - journey time is approximately 5-6 hours, with tickets around 200,000-250,000 VND. Several operators run daily departures, arriving in Ha Giang City in the morning ready to start the loop. Book in advance during peak season (October-November). Driving by motorbike from Hanoi is possible but adds 320km before the loop even begins - only worth considering if you're on a longer northern Vietnam trip.",
+      answer: "The most common option is a sleeper bus from Hanoi's My Dinh bus station - journey time is approximately 6-7 hours, with tickets around 200,000-350,000 VND. Several operators run daily departures, arriving in Ha Giang City in the morning ready to start the loop. Book in advance during peak season (October-November). Driving by motorbike from Hanoi is possible but adds 320km before the loop even begins - only worth considering if you're on a longer northern Vietnam trip.",
     },
     {
       question: "How many days do you need for the Ha Giang Loop?",
@@ -186,7 +186,7 @@ export const haGiang: Destination = {
     },
     {
       question: "What is the best time to visit Ha Giang?",
-      answer: "October-November is peak season when buckwheat flowers (tam giac mach) bloom across the Dong Van Karst Plateau - deep pink fields against limestone mountains. January-February brings yellow rapeseed flowers with fewer crowds. March-May offers good weather and manageable visitor numbers. Rainy season runs June-September. Roads are harder but landscapes are dramatically green with far fewer tourists.",
+      answer: "October-November is peak season when buckwheat flowers (tam giac mach) bloom across the Dong Van Karst Plateau - deep pink fields against limestone mountains. January-February brings yellow rapeseed flowers with fewer crowds. March-May offers good weather and manageable visitor numbers. Rainy season runs roughly May-September, heaviest in Jun-Aug. Roads are harder but landscapes are dramatically green with far fewer tourists.",
     },
     {
       question: "How much does the Ha Giang Loop cost?",

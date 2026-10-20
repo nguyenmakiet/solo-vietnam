@@ -24,8 +24,8 @@ export const puLuong: Destination = {
       from: "Hanoi",
       vehicle: "bus",
       duration: "4-5 hours",
-      cost: "150,000-250,000 VND",
-      notes: "Bus from My Dinh station to Pho Doan market town (the access hub). From Pho Doan, homestays arrange the final 5-15km transfer to individual villages by xe om or 4WD.",
+      cost: "150,000-350,000 VND",
+      notes: "Local buses from My Dinh run to Pho Doan market town (the access hub), and homestays arrange the final 5-15km by xe om or 4WD. Direct limousine buses to the villages cost more, around 320,000-350,000 VND.",
     },
     {
       from: "Hanoi",
@@ -52,12 +52,12 @@ export const puLuong: Destination = {
         },
         {
           day: 2,
-          title: "Hieu Waterfall + Hieu Village + cycling back",
+          title: "Hieu Waterfall + Hieu Village",
           stops: [
             "hieu-waterfall",
             "hieu-village",
           ],
-          notes: "Trek or cycle from Don to Hieu (8km through terraces). Hieu Waterfall has tiered pools for swimming. Return by bicycle along the valley road - flat, easy, spectacular.",
+          notes: "Don to Hieu is about 20km by road - around 1h by motorbike, longer once you stop for photos, because the scenery along the way is the point. Expect steep climbs at both the Don and Hieu ends. Hieu Waterfall has tiered pools for swimming.",
         },
       ],
     },
@@ -76,20 +76,20 @@ export const puLuong: Destination = {
         },
         {
           day: 2,
-          title: "Don → Hieu → Kho Muong trek",
+          title: "Don → Hieu: waterfall and village",
           stops: [
             "hieu-waterfall",
             "hieu-village",
-            "kho-muong-village",
-            "kho-muong-cave",
           ],
-          notes: "Full day guided trek: Don → Hieu (8km) → Kho Muong (5km further). Kho Muong is the most remote valley in the reserve - barely any tourists. Kho Muong Cave needs a village guide. Stay overnight in Kho Muong homestay.",
+          notes: "Don to Hieu is about 20km by road, around 1h by motorbike plus photo stops, with steep climbs at both ends. Swim in the tiered pools at Hieu Waterfall and walk the village. Back to Don for the night.",
         },
         {
           day: 3,
-          title: "Return journey + cycling",
-          stops: [],
-          notes: "Return to Pho Doan by motorbike or cycle part of the valley road. Bus back to Hanoi.",
+          title: "Kho Muong village + return",
+          stops: [
+            "kho-muong-village",
+          ],
+          notes: "Morning walk to Kho Muong village near Don - quiet and rarely visited. Kho Muong Cave is currently closed. Then back to Pho Doan for the bus to Hanoi.",
         },
       ],
     },

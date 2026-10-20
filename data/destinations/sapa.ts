@@ -9,7 +9,7 @@ export const sapa: Destination = {
   region: "north",
 
   description:
-    "Sapa is Vietnam's trekking capital - a former French hill station at 1,600m surrounded by the most dramatic rice terraces in Southeast Asia, H'Mong and Red Dao minority villages, and Fansipan, Indochina's highest peak. The town itself has become heavily commercialised, but the valleys below are still worth every step. Trek with a local guide, stay in a village homestay, and go early before the day-trip crowds arrive.",
+    "Sapa is Vietnam's trekking capital - a former French hill station at 1,600m surrounded by some of the most dramatic rice terraces in Southeast Asia, H'Mong and Red Dao minority villages, and Fansipan, Indochina's highest peak. The town itself has become heavily commercialised, but the valleys below are still worth every step. Trek with a local guide, stay in a village homestay, and go early before the day-trip crowds arrive.",
 
   tagline: "Misty mountains and rice terraces that go on forever",
 
@@ -45,13 +45,12 @@ export const sapa: Destination = {
       days: [
         {
           day: 1,
-          title: "Cat Cat Village + Fansipan cable car",
+          title: "Fansipan cable car + Cat Cat Village",
           stops: [
-            "cat-cat-village",
             "fansipan",
-            "muong-hoa-valley",
+            "cat-cat-village",
           ],
-          notes: "Cat Cat Village is the closest and easiest - 45 min walk from town (150,000 VND entry). Touristy but still worth it. Afternoon: Fansipan cable car (book in advance, ~750,000 VND). Views depend entirely on weather - clear days are rare, go early.",
+          notes: "Morning: Fansipan cable car (around 800,000 VND weekdays, 850,000 VND Saturdays - book ahead). Views depend entirely on the weather and clear days are rare, so go early. Afternoon: Cat Cat Village, a 45 min walk downhill from town (150,000 VND entry) - touristy but still worth it.",
         },
         {
           day: 2,
@@ -60,7 +59,7 @@ export const sapa: Destination = {
             "muong-hoa-valley",
             "ta-van-village",
           ],
-          notes: "The best trek from Sapa - 10km through rice terraces along Muong Hoa stream to Lao Chai (Black H'Mong) and Ta Van (Giay) villages. Hire a local guide (100,000-150,000 VND) - they know the trail and the villages. Depart by 7am before the heat.",
+          notes: "The best trek from Sapa - 10km through rice terraces along Muong Hoa stream to Lao Chai (Black H'Mong) and Ta Van (Giay) villages. Hire a local guide (around 150,000-200,000 VND/day) - they know the trail and the villages. Depart by 7am before the heat.",
         },
       ],
     },
@@ -92,7 +91,7 @@ export const sapa: Destination = {
             "fansipan",
             "o-quy-ho-pass",
           ],
-          notes: "Morning: Fansipan cable car (book the night before). O Quy Ho Pass (Heaven's Gate) is Vietnam's highest mountain pass at 2,090m - 30 min by motorbike from Sapa, best at sunrise or sunset. Depart afternoon back to Hanoi.",
+          notes: "Morning: Fansipan cable car (book the night before). O Quy Ho Pass (Heaven's Gate) is one of Vietnam's highest mountain passes, at around 2,000m - 30 min by motorbike from Sapa, best at sunrise or sunset. Depart afternoon back to Hanoi.",
         },
       ],
     },
@@ -130,7 +129,7 @@ export const sapa: Destination = {
             "fansipan",
             "o-quy-ho-pass",
           ],
-          notes: "Early Fansipan cable car. O Quy Ho Pass on the way back to Hanoi if doing the bus route.",
+          notes: "Early Fansipan cable car. O Quy Ho Pass is about 30 min west of town - fit it in before heading back to Hanoi, which is the opposite direction.",
         },
       ],
     },
@@ -141,11 +140,11 @@ export const sapa: Destination = {
     budget: "300,000-600,000 VND/day",
     midRange: "600,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
-    notes: "Fansipan cable car ~750,000 VND. Local guide ~150,000-200,000 VND/day. Village homestay with meals ~200,000-400,000 VND/night. Cat Cat Village entry 150,000 VND.",
+    notes: "Fansipan cable car around 800,000-850,000 VND. Local guide ~150,000-200,000 VND/day. Village homestay with meals ~200,000-400,000 VND/night. Cat Cat Village entry 150,000 VND.",
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Sep-Nov golden rice terraces, clear skies. Mar-May green rice, mild weather. Avoid Jun-Aug heavy rain and landslides. Dec-Feb cold and foggy but uncrowded.",
+  bestTimeSummary: "Sep is golden rice season and Sep-Nov brings the clearest skies. Late May-early Jun is water-pouring season, when flooded terraces mirror the sky - wet, but popular with photographers. Mar-Apr is mild, with the terraces still bare. Avoid Jul-Aug: heaviest rain and landslide risk. Dec-Feb is cold and foggy but uncrowded.",
   bestMonths: [3, 4, 5, 9, 10, 11],
 
   recommendedStay: "2-4 days",
