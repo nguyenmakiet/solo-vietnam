@@ -9,7 +9,7 @@ export const phanThiet: Destination = {
   region: "south",
 
   description:
-    "Phan Thiet and Mui Ne are Vietnam's wind capital - 20km of coastline with the strongest and most consistent winds in the country, making it the kite-surfing and windsurfing destination of Southeast Asia. Beyond the sports, there are red and white sand dunes for sunrise rides, the Fairy Stream walk through pink canyons, and fresh seafood from fishing villages that have been casting nets here for generations.",
+    "Phan Thiet and Mui Ne are Vietnam's wind capital - 20km of coastline with some of the most consistent winds in the country, making it one of Southeast Asia's best-known kite-surfing and windsurfing spots. Beyond the sports, there are red and white sand dunes for sunrise rides, the Fairy Stream walk through pink canyons, and fresh seafood from fishing villages that have been casting nets here for generations.",
 
   tagline: "Red dunes, white dunes, and the wind that never stops",
 
@@ -30,9 +30,9 @@ export const phanThiet: Destination = {
     {
       from: "Ho Chi Minh City",
       vehicle: "train",
-      duration: "3.5 hours",
+      duration: "3.5-4.5 hours",
       cost: "from 100,000 VND",
-      notes: "To Muong Man station, 20km from Mui Ne. Taxi from station ~150,000 VND.",
+      notes: "Direct SPT train to Phan Thiet station (about 4 hours, 20-25km from Mui Ne, taxi 150,000-250,000 VND) - not daily in low season. Otherwise trains stop at Binh Thuan (Muong Man) station, 35-40km from Mui Ne, taxi 300,000-450,000 VND.",
     },
     {
       from: "Da Lat",
@@ -55,7 +55,7 @@ export const phanThiet: Destination = {
             "red-sand-dunes",
             "mui-ne-fishing-village",
           ],
-          notes: "Red Sand Dunes are 5 minutes from the main strip - best at sunrise or sunset when the light is golden. Mui Ne fishing village early morning when boats return with the catch. Fresh seafood along the beach road for dinner.",
+          notes: "Red Sand Dunes are 5 minutes from the main strip - best at sunrise or sunset when the light is golden. Mui Ne fishing village - boats come in early morning, so it's busiest before 8am; in the evening you can still walk the harbour. Fresh seafood along the beach road for dinner.",
         },
         {
           day: 2,
@@ -64,7 +64,7 @@ export const phanThiet: Destination = {
             "white-sand-dunes",
             "fairy-stream",
           ],
-          notes: "White Sand Dunes are 50km north - hire a motorbike and go at 5am for sunrise. Spectacular. Fairy Stream (Suoi Tien) back in Mui Ne - wade through shallow pink-orange canyon, barefoot, 30 minutes each way.",
+          notes: "White Sand Dunes are about 25-30km northeast of Mui Ne - sunrise jeep tours pick up around 4-4:30am, or ride a motorbike yourself. Fairy Stream (Suoi Tien) back in Mui Ne - wade barefoot through a shallow pink-orange canyon, about 30 minutes each way.",
         },
       ],
     },
@@ -77,26 +77,26 @@ export const phanThiet: Destination = {
           title: "Arrival + Red Sand Dunes + Mui Ne fishing village",
           stops: [
             "red-sand-dunes",
-            "mui-ne-fishing-village",
           ],
-          notes: "Arrive, check in. Sunset at Red Dunes. Evening seafood.",
+          notes: "Arrive, check in. Sunset at the Red Sand Dunes. Evening seafood on the beach road.",
         },
         {
           day: 2,
-          title: "Kite surfing lesson + Fairy Stream",
+          title: "White Sand Dunes sunrise + fishing village + Fairy Stream",
           stops: [
+            "white-sand-dunes",
+            "mui-ne-fishing-village",
             "fairy-stream",
           ],
-          notes: "Phan Thiet is the best place in Vietnam to learn kite surfing - consistent wind, flat water, multiple schools. Half day lesson ~1,500,000 VND. Fairy Stream in the afternoon.",
+          notes: "Sunrise jeep tour to the White Sand Dunes (25-30km northeast, pickup around 4-4:30am). Stop at Mui Ne fishing village on the way back while boats are still coming in. Fairy Stream in the late afternoon when it's cooler.",
         },
         {
           day: 3,
-          title: "White Sand Dunes sunrise + Ke Ga Lighthouse",
+          title: "Kite surfing lesson or Ke Ga Lighthouse",
           stops: [
-            "white-sand-dunes",
             "ke-ga-lighthouse",
           ],
-          notes: "White Dunes at sunrise. Ke Ga Lighthouse on a small offshore island (30km south of Mui Ne) - built by the French in 1899, still operational, beautiful coastal scenery.",
+          notes: "Phan Thiet is one of the most popular places in Vietnam to learn kite surfing - consistent wind Nov-Apr and several schools. Half day lesson around 1,500,000 VND (check locally). Or head south to Ke Ga Lighthouse, about 30km south of Phan Thiet city (45-50km from Mui Ne), on a small islet just offshore - built by the French in 1899 and still operational.",
         },
       ],
     },
