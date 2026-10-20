@@ -32,10 +32,12 @@ function tempScale(temps: number[]) {
 type Props = {
   months: ClimateMonth[]
   bestMonths: number[]
+  // Editorial months to avoid: marked on the month axis, never on the bars
+  avoidMonths?: number[]
   name: string
 }
 
-export default function ClimateChart({ months, bestMonths, name }: Props) {
+export default function ClimateChart({ months, bestMonths, avoidMonths = [], name }: Props) {
   const [active, setActive] = useState<number | null>(null)
   const [W, setW] = useState(DEFAULT_W)
   const plotRef = useRef<HTMLDivElement>(null)
@@ -83,6 +85,10 @@ export default function ClimateChart({ months, bestMonths, name }: Props) {
         <li><span className="cc-swatch cc-swatch-best" />Rainfall, best months (mm)</li>
         <li><span className="cc-swatch cc-swatch-other" />Rainfall, other months (mm)</li>
         <li><span className="cc-swatch cc-swatch-line" />Avg temperature (°C)</li>
+        {avoidMonths.length > 0 && (
+          // Same mark as the month axis: the month letter, underlined
+          <li><span className="cc-swatch-avoid">{MONTHS[avoidMonths[0] - 1][0]}</span>Months to avoid</li>
+        )}
       </ul>
 
       <div className="cc-plot" ref={plotRef} onPointerLeave={(e) => e.pointerType === "mouse" && setActive(null)}>
@@ -119,10 +125,22 @@ export default function ClimateChart({ months, bestMonths, name }: Props) {
           ))}
 
           {months.map((m, i) => (
-            <text key={m.month} className={`cc-month${bestMonths.includes(m.month) ? " is-best" : ""}`} x={x(i)} y={H - 8} textAnchor="middle">
+            <text
+              key={m.month}
+              className={`cc-month${bestMonths.includes(m.month) ? " is-best" : ""}${avoidMonths.includes(m.month) ? " is-avoid" : ""}`}
+              x={x(i)}
+              y={H - 8}
+              textAnchor="middle"
+            >
               {colW < 34 ? MONTHS[i][0] : MONTHS[i]}
             </text>
           ))}
+          {/* Avoid months: a short rule under the month label */}
+          {months.map((m, i) =>
+            avoidMonths.includes(m.month) ? (
+              <line key={m.month} className="cc-avoid-mark" x1={x(i) - 6} x2={x(i) + 6} y1={H - 2} y2={H - 2} />
+            ) : null,
+          )}
 
           {/* Hit targets: the full column, larger than the marks */}
           {months.map((m, i) => (
@@ -134,7 +152,7 @@ export default function ClimateChart({ months, bestMonths, name }: Props) {
               width={colW}
               height={PLOT_H + PAD.bottom}
               tabIndex={0}
-              aria-label={`${MONTHS_LONG[i]}: ${m.avgTempC.toFixed(1)}°C, ${m.rainfallMm} mm rain, ${m.rainyDays.toFixed(1)} rainy days`}
+              aria-label={`${MONTHS_LONG[i]}: ${m.avgTempC.toFixed(1)}°C, ${m.rainfallMm} mm rain, ${m.rainyDays.toFixed(1)} rainy days${bestMonths.includes(m.month) ? ", best month" : ""}${avoidMonths.includes(m.month) ? ", month to avoid" : ""}`}
               onPointerEnter={() => setActive(i)}
               onClick={() => setActive(i)}
               onFocus={() => setActive(i)}
@@ -148,6 +166,7 @@ export default function ClimateChart({ months, bestMonths, name }: Props) {
             <p className="cc-tip-title">
               {MONTHS_LONG[active]}
               {bestMonths.includes(current.month) && <span className="cc-tip-best">Best month</span>}
+              {avoidMonths.includes(current.month) && <span className="cc-tip-avoid">Avoid</span>}
             </p>
             <dl>
               <div><dt>Avg temp</dt><dd>{current.avgTempC.toFixed(1)}°C</dd></div>

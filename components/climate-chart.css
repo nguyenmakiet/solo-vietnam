@@ -13,6 +13,13 @@
 .cc-swatch-best { background: var(--type-accent, var(--color-teal)); }
 .cc-swatch-other { background: var(--type-border, var(--color-teal-light)); }
 .cc-swatch-line { height: 2px; width: 16px; border-radius: 1px; background: var(--color-signal); }
+/* Avoid months: text-weight signal colour on the month axis only, so it never
+   reads as a bar or as the temperature line */
+.cc-swatch-avoid {
+  display: inline-block; min-width: 12px; text-align: center;
+  font-size: 11px; line-height: 1.2; color: var(--color-signal-text);
+  border-bottom: 2px solid var(--color-signal-text);
+}
 
 .cc-plot { position: relative; }
 .cc-plot svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: manipulation; }
@@ -22,6 +29,8 @@
 .cc-tick, .cc-unit, .cc-month { font-size: 12px; fill: var(--color-ink-2); font-variant-numeric: tabular-nums; }
 .cc-unit { font-weight: 600; }
 .cc-month.is-best { fill: var(--type-accent-strong, var(--color-ink)); font-weight: 700; }
+.cc-month.is-avoid { fill: var(--color-signal-text); }
+.cc-avoid-mark { stroke: var(--color-signal-text); stroke-width: 2; stroke-linecap: round; }
 
 .cc-bar { fill: var(--type-border, var(--color-teal-light)); transition: fill 0.15s; }
 .cc-bar.is-best { fill: var(--type-accent, var(--color-teal)); }
@@ -49,6 +58,10 @@
 .cc-tip-best {
   font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--type-accent-strong, var(--color-teal));
+}
+.cc-tip-avoid {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--color-signal-text);
 }
 .cc-tip dl { margin: 0; }
 .cc-tip dl > div { display: flex; justify-content: space-between; gap: 12px; line-height: 1.6; }
