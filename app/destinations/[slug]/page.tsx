@@ -205,28 +205,12 @@ export default async function DestinationPage({
           <p>{destination.description}</p>
         </div>
 
-        {/* Climate: station averages, right above the best months */}
+        {/* Climate: station averages, right above the best months; source line as small print */}
         {climate && (
           <section className="dp-section dd-climate" aria-labelledby="h-climate">
             <h2 id="h-climate" className="section-label">Climate</h2>
             <figure>
               <ClimateChart months={climate.months} bestMonths={bestMonths} avoidMonths={avoidMonths} name={destination.name} />
-              {(destination.bestTimeSummary || (avoidMonths.length > 0 && destination.avoidSummary)) && (
-                <dl className="dd-climate-blocks">
-                  {destination.bestTimeSummary && (
-                    <div className="dd-climate-block">
-                      <dt>Best time</dt>
-                      <dd>{destination.bestTimeSummary}</dd>
-                    </div>
-                  )}
-                  {avoidMonths.length > 0 && destination.avoidSummary && (
-                    <div className="dd-climate-block dd-climate-block--avoid">
-                      <dt>Avoid</dt>
-                      <dd>{destination.avoidSummary}</dd>
-                    </div>
-                  )}
-                </dl>
-              )}
               <figcaption className="dd-climate-note">
                 Data: long-term station averages from the Vietnam Institute for Building Science and Technology (IBST). Rainy days as reported by the station.
                 {climate.proxyNote && ` Station: ${climate.proxyNote}`}
@@ -242,14 +226,35 @@ export default async function DestinationPage({
             <div
               className="month-strip"
               role="img"
-              aria-label={`Best months to visit: ${bestMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}`}
+              aria-label={`Best months to visit: ${bestMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}${avoidMonths.length > 0 ? `. Months to avoid: ${avoidMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}` : ""}`}
             >
               {MONTH_NAMES.map((name, i) => (
-                <span key={name} className={`month-cell${bestMonths.includes(i + 1) ? " active" : ""}`} aria-hidden="true">
+                <span
+                  key={name}
+                  className={`month-cell${bestMonths.includes(i + 1) ? " active" : ""}${avoidMonths.includes(i + 1) ? " avoid" : ""}`}
+                  aria-hidden="true"
+                >
                   {name}
                 </span>
               ))}
             </div>
+            {/* Best time (with the chart only, otherwise it stays in Plan Your Trip) and Avoid */}
+            {((destination.bestTimeSummary && climate) || (avoidMonths.length > 0 && destination.avoidSummary)) && (
+              <dl className="dd-months-blocks">
+                {destination.bestTimeSummary && climate && (
+                  <div className="dd-months-block">
+                    <dt>Best time</dt>
+                    <dd>{destination.bestTimeSummary}</dd>
+                  </div>
+                )}
+                {avoidMonths.length > 0 && destination.avoidSummary && (
+                  <div className="dd-months-block dd-months-block--avoid">
+                    <dt>Avoid</dt>
+                    <dd>{destination.avoidSummary}</dd>
+                  </div>
+                )}
+              </dl>
+            )}
           </section>
         )}
 
