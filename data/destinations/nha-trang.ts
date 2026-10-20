@@ -30,7 +30,7 @@ export const nhaTrang: Destination = {
     {
       from: "Ho Chi Minh City",
       vehicle: "train",
-      duration: "7–8 hours",
+      duration: "7-8 hours",
       cost: "from 200,000 VND",
       notes: "Overnight sleeper train - scenic coastal route.",
     },
@@ -44,7 +44,7 @@ export const nhaTrang: Destination = {
       from: "Da Lat",
       vehicle: "bus",
       duration: "4 hours",
-      cost: "100,000–150,000 VND",
+      cost: "100,000-150,000 VND",
       notes: "Scenic mountain descent - combine the two destinations easily.",
     },
   ],
@@ -109,16 +109,16 @@ export const nhaTrang: Destination = {
   ],
 
   cost: {
-    budget: "400,000–700,000 VND/day",
-    midRange: "700,000–1,500,000 VND/day",
+    budget: "400,000-700,000 VND/day",
+    midRange: "700,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
-    notes: "Island hopping tour: 200,000–500,000 VND. Diving: 1,200,000–2,000,000 VND for 2 dives. Snorkeling tour: 300,000–500,000 VND.",
+    notes: "Island hopping tour: 200,000-500,000 VND. Diving: 1,200,000-2,000,000 VND for 2 dives. Snorkeling tour: 300,000-500,000 VND.",
   },
 
-  bestTimeSummary: "Jan–Aug dry and sunny, best for beach and diving. Sep–Dec northeast monsoon brings rough seas and heavy rain, worst in Oct–Nov.",
+  bestTimeSummary: "Jan-Aug dry and sunny, best for beach and diving. Sep-Dec northeast monsoon brings rough seas and heavy rain, worst in Oct-Nov.",
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Grab or motorbike for getting around. Boat for islands - join a tour or hire a private boat.",
 

@@ -23,9 +23,9 @@ export const puLuong: Destination = {
     {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "4–5 hours",
-      cost: "150,000–250,000 VND",
-      notes: "Bus from My Dinh station to Pho Doan market town (the access hub). From Pho Doan, homestays arrange the final 5–15km transfer to individual villages by xe om or 4WD.",
+      duration: "4-5 hours",
+      cost: "150,000-250,000 VND",
+      notes: "Bus from My Dinh station to Pho Doan market town (the access hub). From Pho Doan, homestays arrange the final 5-15km transfer to individual villages by xe om or 4WD.",
     },
     {
       from: "Hanoi",
@@ -96,16 +96,16 @@ export const puLuong: Destination = {
   ],
 
   cost: {
-    budget: "400,000–700,000 VND/day",
-    midRange: "700,000–1,200,000 VND/day",
+    budget: "400,000-700,000 VND/day",
+    midRange: "700,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
-    notes: "Homestay with meals typically included: 300,000–500,000 VND/night. Local guide: 200,000–300,000 VND/day. Bicycle rental: 50,000–100,000 VND/day.",
+    notes: "Homestay with meals typically included: 300,000-500,000 VND/night. Local guide: 200,000-300,000 VND/day. Bicycle rental: 50,000-100,000 VND/day.",
   },
 
-  bestTimeSummary: "Late May–early Jun (green rice) and late Sep–early Oct (golden harvest) for the terraces. Dec–Feb mornings cold but clear and uncrowded.",
+  bestTimeSummary: "Late May-early Jun (green rice) and late Sep-early Oct (golden harvest) for the terraces. Dec-Feb mornings cold but clear and uncrowded.",
   bestMonths: [5, 6, 9, 10],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Walking and cycling between villages. Xe om for longer transfers. Motorbike rental possible but not essential if staying in one village.",
 

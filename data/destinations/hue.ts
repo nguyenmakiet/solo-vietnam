@@ -30,14 +30,14 @@ export const hue: Destination = {
     {
       from: "Hoi An",
       vehicle: "bus",
-      duration: "3–3.5 hours",
-      cost: "100,000–150,000 VND",
+      duration: "3-3.5 hours",
+      cost: "100,000-150,000 VND",
       notes: "Direct buses daily. If northbound, consider the Hai Van Pass route by motorbike or hired car.",
     },
     {
       from: "Hanoi",
       vehicle: "train",
-      duration: "13–14 hours",
+      duration: "13-14 hours",
       cost: "from 250,000 VND",
       notes: "Overnight sleeper - book a berth well in advance.",
     },
@@ -112,16 +112,16 @@ export const hue: Destination = {
   ],
 
   cost: {
-    budget: "300,000–600,000 VND/day",
-    midRange: "600,000–1,200,000 VND/day",
+    budget: "300,000-600,000 VND/day",
+    midRange: "600,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
     notes: "Combo ticket (Imperial City + 3 tombs): 530,000 VND. Cash only at all ticket booths.",
   },
 
-  bestTimeSummary: "Feb–May is the best window: mostly dry, warm and clear. Jun–Aug is hot but still fairly dry. Dec–Jan is cool and drizzly. Avoid Sep–Nov: Hue gets some of the heaviest rain in Vietnam, and Oct–Nov regularly floods.",
+  bestTimeSummary: "Feb-May is the best window: mostly dry, warm and clear. Jun-Aug is hot but still fairly dry. Dec-Jan is cool and drizzly. Avoid Sep-Nov: Hue gets some of the heaviest rain in Vietnam, and Oct-Nov regularly floods.",
   bestMonths: [2, 3, 4, 5],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Motorbike or bicycle for tombs and pagodas - they are spread out and not walkable. Dragon boat on the Perfume River is worth doing once. Walking works for the citadel area.",
 

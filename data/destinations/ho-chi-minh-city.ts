@@ -25,7 +25,7 @@ export const hoChiMinhCity: Destination = {
       vehicle: "fly",
       duration: "2 hours",
       cost: "from 800,000 VND",
-      notes: "Fly into Tan Son Nhat Airport. Grab to city centre: 100,000–150,000 VND depending on district.",
+      notes: "Fly into Tan Son Nhat Airport. Grab to city centre: 100,000-150,000 VND depending on district.",
     },
     {
       from: "Da Nang",
@@ -36,8 +36,8 @@ export const hoChiMinhCity: Destination = {
     {
       from: "Da Lat",
       vehicle: "bus",
-      duration: "6–7 hours",
-      cost: "150,000–250,000 VND",
+      duration: "6-7 hours",
+      cost: "150,000-250,000 VND",
       notes: "Overnight buses available. Day buses also run.",
     },
     {
@@ -50,7 +50,7 @@ export const hoChiMinhCity: Destination = {
       from: "Can Tho",
       vehicle: "bus",
       duration: "3.5 hours",
-      cost: "100,000–150,000 VND",
+      cost: "100,000-150,000 VND",
       notes: "From Mien Tay bus station. Good gateway to/from Mekong Delta.",
     },
   ],
@@ -79,7 +79,7 @@ export const hoChiMinhCity: Destination = {
             "cu-chi-tunnels",
             "jade-emperor-pagoda",
           ],
-          notes: "Cu Chi Tunnels are 70km northwest - half day tour (250,000–350,000 VND). Jade Emperor Pagoda is the most atmospheric temple in HCMC - best visited early morning before tour groups.",
+          notes: "Cu Chi Tunnels are 70km northwest - half day tour (250,000-350,000 VND). Jade Emperor Pagoda is the most atmospheric temple in HCMC - best visited early morning before tour groups.",
         },
       ],
     },
@@ -120,16 +120,16 @@ export const hoChiMinhCity: Destination = {
   ],
 
   cost: {
-    budget: "400,000–800,000 VND/day",
-    midRange: "800,000–1,800,000 VND/day",
+    budget: "400,000-800,000 VND/day",
+    midRange: "800,000-1,800,000 VND/day",
     comfortable: "1,800,000+ VND/day",
-    notes: "War Remnants Museum: 40,000 VND. Cu Chi Tunnels tour: 250,000–400,000 VND. Street food meals from 30,000–80,000 VND. Grab essential - traffic makes walking long distances impractical.",
+    notes: "War Remnants Museum: 40,000 VND. Cu Chi Tunnels tour: 250,000-400,000 VND. Street food meals from 30,000-80,000 VND. Grab essential - traffic makes walking long distances impractical.",
   },
 
-  bestTimeSummary: "Dec–Apr dry season, cooler and drier. May–Nov rainy season - heavy afternoon showers but city stays lively year-round.",
+  bestTimeSummary: "Dec-Apr dry season, cooler and drier. May-Nov rainy season - heavy afternoon showers but city stays lively year-round.",
   bestMonths: [1, 2, 3, 4, 12],
 
-  recommendedStay: "2–4 days",
+  recommendedStay: "2-4 days",
 
   transport: "Grab is essential - traffic is heavy and distances between districts are large. Walking works well in Districts 1 and 3. Avoid taxis flagged on the street.",
 

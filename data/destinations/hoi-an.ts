@@ -24,7 +24,7 @@ export const hoiAn: Destination = {
       from: "Da Nang",
       vehicle: "bus",
       duration: "45 minutes",
-      cost: "30,000–50,000 VND",
+      cost: "30,000-50,000 VND",
       notes: "Bus No.2 (which replaced the old No.1 in 2024) runs every 15-30 min from Hoi An bus station, about 31,000-40,000 VND with luggage. Grab is more convenient with luggage.",
     },
     {
@@ -44,8 +44,8 @@ export const hoiAn: Destination = {
     {
       from: "Hue",
       vehicle: "bus",
-      duration: "3–3.5 hours",
-      cost: "100,000–150,000 VND",
+      duration: "3-3.5 hours",
+      cost: "100,000-150,000 VND",
       notes: "Direct buses daily. If heading south, consider the Hai Van Pass route by motorbike - one of Vietnam's best coastal rides.",
     },
   ],
@@ -62,7 +62,7 @@ export const hoiAn: Destination = {
             "hoi-an-ancient-town",
             "japanese-bridge",
           ],
-          notes: "Arrive early morning - the Old Town at 7am is a completely different place from midday. Book a tailor on day 1 if you want anything made - needs 24–48 hours minimum. Buy the Old Town ticket (120,000 VND, covers 5 heritage sites). Evening: lanterns along the river. Also: Tan Ky Old House, Fujian Assembly Hall, night market.",
+          notes: "Arrive early morning - the Old Town at 7am is a completely different place from midday. Book a tailor on day 1 if you want anything made - needs 24-48 hours minimum. Buy the Old Town ticket (120,000 VND, covers 5 heritage sites). Evening: lanterns along the river. Also: Tan Ky Old House, Fujian Assembly Hall, night market.",
         },
         {
           day: 2,
@@ -153,16 +153,16 @@ export const hoiAn: Destination = {
   ],
 
   cost: {
-    budget: "400,000–800,000 VND/day",
-    midRange: "800,000–1,500,000 VND/day",
+    budget: "400,000-800,000 VND/day",
+    midRange: "800,000-1,500,000 VND/day",
     comfortable: "1,500,000+ VND/day",
-    notes: "Old Town entry ticket 120,000 VND (5 sites). Tailor-made clothes 300,000–2,000,000+ VND. Cooking class 300,000–600,000 VND.",
+    notes: "Old Town entry ticket 120,000 VND (5 sites). Tailor-made clothes 300,000-2,000,000+ VND. Cooking class 300,000-600,000 VND.",
   },
 
-  bestTimeSummary: "Feb–Aug dry season is best. Full moon lantern festival monthly. Avoid Oct–Nov - Hoi An floods badly, sometimes for days.",
+  bestTimeSummary: "Feb-Aug dry season is best. Full moon lantern festival monthly. Avoid Oct-Nov - Hoi An floods badly, sometimes for days.",
   bestMonths: [2, 3, 4, 5, 6, 7, 8],
 
-  recommendedStay: "2–4 days",
+  recommendedStay: "2-4 days",
 
   transport: "Bicycle rental is the best way around - flat terrain, short distances, most guesthouses provide free bikes. Walking works fine in the Old Town.",
 

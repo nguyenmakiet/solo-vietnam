@@ -8,7 +8,8 @@
  * Destination `gallery` (non-empty alt, existing locationSlug) and
  * `updatedAt` (valid YYYY-MM-DD date) also fail the destination check, and so
  * do itinerary / day-trip stops that are not location slugs and
- * `nearbyDestinations` entries that are not destination slugs.
+ * `nearbyDestinations` entries that are not destination slugs, and any
+ * destination string that contains an en dash (–) or em dash (—).
  *
  * Semantic being audited (owner decision):
  *   bestMonths = every month the location is worth visiting / suitable to
@@ -372,6 +373,17 @@ for (const d of destinations) {
   d.nearbyDestinations?.forEach((slug) => {
     if (!destinationSlugs.has(slug)) fail(`nearbyDestinations "${slug}" is not a destination`)
   })
+  // Content rule: hyphen (-) only, never en dash (–) or em dash (—)
+  const findDashes = (value: unknown, path: string): void => {
+    if (typeof value === "string") {
+      if (/[–—]/.test(value)) fail(`${path} contains an en/em dash`)
+    } else if (Array.isArray(value)) {
+      value.forEach((v, i) => findDashes(v, `${path}[${i}]`))
+    } else if (value && typeof value === "object") {
+      for (const [k, v] of Object.entries(value)) findDashes(v, path ? `${path}.${k}` : k)
+    }
+  }
+  findDashes(d, "")
   if (!Array.isArray(months) || months.length === 0) { fail("bestMonths is missing or empty"); continue }
   if (months.some((m) => !Number.isInteger(m) || m < 1 || m > 12)) fail("bestMonths has a value outside 1-12")
   if (new Set(months).size !== months.length) fail("bestMonths has duplicates")

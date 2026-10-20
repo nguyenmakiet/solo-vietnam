@@ -24,8 +24,8 @@ export const lySon: Destination = {
       from: "Quang Ngai",
       vehicle: "ferry",
       duration: "30 minutes",
-      cost: "80,000–150,000 VND",
-      notes: "High-speed ferry from Sa Ky port (about 20km from Quang Ngai centre). Boats run from ~7am. Buy tickets at the port - no advance booking needed except peak season (Apr–Aug). Quang Ngai is accessible by train or bus from Da Nang (3 hours) or Quy Nhon (2 hours).",
+      cost: "80,000-150,000 VND",
+      notes: "High-speed ferry from Sa Ky port (about 20km from Quang Ngai centre). Boats run from ~7am. Buy tickets at the port - no advance booking needed except peak season (Apr-Aug). Quang Ngai is accessible by train or bus from Da Nang (3 hours) or Quy Nhon (2 hours).",
     },
   ],
 
@@ -92,8 +92,8 @@ export const lySon: Destination = {
   ],
 
   cost: {
-    budget: "400,000–700,000 VND/day",
-    midRange: "700,000–1,200,000 VND/day",
+    budget: "400,000-700,000 VND/day",
+    midRange: "700,000-1,200,000 VND/day",
     comfortable: "1,200,000+ VND/day",
     notes: "Ferry: around 80,000-150,000 VND each way - check current fares at Sa Ky port. Motorbike: 150,000 VND/day. Boat to An Binh Island: around 170,000 VND return (2026). Toi Ly Son (purple garlic) is sold everywhere and makes an excellent souvenir.",
   },
@@ -101,7 +101,7 @@ export const lySon: Destination = {
   bestTimeSummary: "Mar-Aug calm seas and clear water. Garlic is harvested around Feb-Mar, when the fields are at their busiest. Avoid Sep-Jan when storms frequently cancel ferries for days.",
   bestMonths: [3, 4, 5, 6, 7, 8],
 
-  recommendedStay: "2–3 days",
+  recommendedStay: "2-3 days",
 
   transport: "Motorbike rental on the island (only practical option). Boat for An Binh Island. Walking for the craters and pagoda.",
 
