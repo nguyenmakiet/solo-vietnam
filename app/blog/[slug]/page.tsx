@@ -7,6 +7,7 @@ import { getPostBySlug, extractToc, getAllPosts } from "@/lib/blog"
 import { heroUrl, ogImageUrl } from "@/lib/cloudinary"
 import BlogToc from "./BlogToc"
 import CloudImage from "@/components/CloudImage"
+import CloudinaryImage from "@/components/CloudinaryImage"
 import CloudVideo from "@/components/CloudVideo"
 import VietnamWarThreePlacesMap from "@/components/VietnamWarThreePlacesMap"
 import "../blog.css"
@@ -19,7 +20,15 @@ const CATEGORY_LABELS: Record<string, string> = {
   food: "Food",
   accommodation: "Accommodation",
   general: "General",
+  adventure: "Adventure",
+  insights: "Insights",
+  "history-culture": "History & Culture",
+  "travel-planning": "Travel Planning",
+  "travel-tips": "Travel Tips",
 }
+// Any category without a label above: "some-category" -> "Some Category"
+const categoryLabel = (cat: string) =>
+  CATEGORY_LABELS[cat] ?? cat.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
 const slugify = (text: string) =>
   text
     .toLowerCase()
@@ -30,11 +39,17 @@ const slugify = (text: string) =>
 const components = {
   // Warning box: <Warning>text</Warning>
   Warning: ({ children }: { children: React.ReactNode }) => (
-    <div className="mdx-warning">{children}</div>
+    <aside className="mdx-warning">
+      <p className="mdx-callout-label">Warning</p>
+      {children}
+    </aside>
   ),
   // Tip box: <Tip>text</Tip>
   Tip: ({ children }: { children: React.ReactNode }) => (
-    <div className="mdx-tip">{children}</div>
+    <aside className="mdx-tip">
+      <p className="mdx-callout-label">Tip</p>
+      {children}
+    </aside>
   ),
   // Scam card: <ScamCard title="..." risk="high|medium|low">text</ScamCard>
   ScamCard: ({ title, risk = "medium", children }: { title: string; risk?: string; children: React.ReactNode }) => (
@@ -52,6 +67,11 @@ const components = {
   CloudVideo,
   // Editorial map: <VietnamWarThreePlacesMap />
   VietnamWarThreePlacesMap,
+  // The page title is the only h1: a "# heading" inside a post renders as a section h2
+  h1: ({ children }: { children: React.ReactNode }) => {
+    const text = typeof children === "string" ? children : ""
+    return <h2 id={slugify(text)}>{children}</h2>
+  },
   h2: ({ children }: { children: React.ReactNode }) => {
     const text = typeof children === "string" ? children : ""
     const id = slugify(text)
@@ -62,6 +82,9 @@ const components = {
     const id = slugify(text)
     return <h3 id={id}>{children}</h3>
   },
+  table: ({ children }: { children: React.ReactNode }) => (
+    <div className="bp-table-wrap"><table>{children}</table></div>
+  ),
   a: ({ href, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
       {children}
@@ -129,93 +152,92 @@ export default async function BlogDetailPage({
 
   const toc = extractToc(post.content)
 
+  const catLabel = categoryLabel(post.category)
+
   return (
-    <div className="blog-detail">
-
-      {/* Breadcrumb */}
-      <nav className="breadcrumb blog-breadcrumb">
-        <Link href="/">Home</Link>
-        <span className="sep">›</span>
-        <Link href="/blog">Blog</Link>
-        <span className="sep">›</span>
-        <Link href={`/blog?category=${post.category}`}>
-          {CATEGORY_LABELS[post.category] ?? post.category}
-        </Link>
-        <span className="sep">›</span>
-        <span className="current">{post.title}</span>
-      </nav>
-
-      {/* Hero */}
-      <header
-        className="blog-hero"
-        style={post.heroImage ? {
-          backgroundImage: `url(https://res.cloudinary.com/dl5kqhspv/image/upload/w_1600,h_600,c_fill,q_auto,f_auto/${post.heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        } : {}}
-      >
-        {post.heroImage && (
-          <div className="blog-hero-overlay" />
-        )}
-        <div className="blog-hero-inner">
-          <div className="blog-hero-badge">
-            {CATEGORY_LABELS[post.category] ?? post.category}
-          </div>
-          <h1>{post.title}</h1>
-          <p className="blog-hero-desc">{post.description}</p>
-          <div className="blog-hero-meta">
+    <div className="bp">
+      <header className="bp-head">
+        <div className="bp-container">
+          <nav className="bp-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <Link href="/blog">Blog</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <Link href={`/blog?category=${post.category}`}>{catLabel}</Link>
+          </nav>
+          <p className="bp-kicker">{catLabel}</p>
+          <h1 className="bp-title">{post.title}</h1>
+          {post.description && <p className="bp-lead">{post.description}</p>}
+          <p className="bp-meta">
             <span>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
-            <span>·</span>
+            <span aria-hidden="true">·</span>
             <span>{post.readingTime}</span>
-            <span>·</span>
-            <span>{post.author}</span>
-          </div>
+            {post.author && (
+              <>
+                <span aria-hidden="true">·</span>
+                <span>{post.author}</span>
+              </>
+            )}
+          </p>
         </div>
       </header>
 
-      {/* Content + Sidebar */}
-      <div className="blog-layout">
+      {post.heroImage && (
+        <div className="bp-hero-media">
+          <CloudinaryImage
+            src={`https://res.cloudinary.com/dl5kqhspv/image/upload/${post.heroImage}`}
+            alt={post.title}
+            fill
+            sizes="(min-width: 1200px) 1200px, 100vw"
+            priority
+          />
+        </div>
+      )}
 
-        {/* Main Content */}
-        <article className="blog-content">
+      <div className="bp-container bp-layout">
+        <article className="bp-prose">
+          {/* Contents for phones and tablets; desktop has the sidebar */}
+          {toc.length > 0 && (
+            <details className="bp-toc-inline">
+              <summary>Contents</summary>
+              <BlogToc items={toc} />
+            </details>
+          )}
           <MDXRemote
-          source={post.content}
-          components={components}
-          options={{
-            mdxOptions: {
-              remarkPlugins: [remarkGfm],
-            }
-          }}
-        />
+            source={post.content}
+            components={components}
+            options={{
+              mdxOptions: {
+                remarkPlugins: [remarkGfm],
+              },
+            }}
+          />
         </article>
 
-        {/* Sidebar */}
-        <aside className="blog-sidebar">
-
-          {/* Table of Contents */}
+        <aside className="bp-sidebar" aria-label="Article navigation">
           {toc.length > 0 && (
-            <div className="sidebar-card toc-card">
-              <div className="sidebar-card-label">Table of Contents</div>
+            <div className="bp-side-block">
+              <p className="bp-side-label">Contents</p>
               <BlogToc items={toc} />
             </div>
           )}
-
-          {/* Related Posts placeholder */}
-          <div className="sidebar-card">
-            <div className="sidebar-card-label">Also Read</div>
-            <div className="sidebar-related">
-              <Link href="/blog?category=safety" className="sidebar-related-link">
-                Safety Tips for Solo Travelers
-              </Link>
-              <Link href="/blog?category=transport" className="sidebar-related-link">
-                Getting Around Vietnam
-              </Link>
-            </div>
+          <div className="bp-side-block">
+            <p className="bp-side-label">Also Read</p>
+            <Link href="/blog?category=safety" className="bp-side-link">Safety Tips for Solo Travelers</Link>
+            <Link href="/blog?category=transport" className="bp-side-link">Getting Around Vietnam</Link>
           </div>
-
         </aside>
       </div>
 
+      <section className="bp-cta" aria-label="More from the blog">
+        <div className="bp-container bp-cta-inner">
+          <div>
+            <p className="bp-cta-label">Keep reading</p>
+            <p className="bp-cta-title">The Solo Vietnam Blog</p>
+          </div>
+          <Link href="/blog" className="ui-btn">All posts →</Link>
+        </div>
+      </section>
     </div>
   )
 }
