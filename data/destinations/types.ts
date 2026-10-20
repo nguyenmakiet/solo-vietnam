@@ -53,7 +53,16 @@ export type ItineraryDay = {
   distance?: string // "~100km"
   stops: string[]   // location slugs theo thứ tự
   notes?: string
+  // Map only: points in travel order, used instead of stops on the route map.
+  // A string is a location slug (numbered pin + link), an object a waypoint
+  // with no page (grey pin). stops keeps its role as the page links.
+  // Checked by `npm run audit:best-time`
+  mapPoints?: (string | MapWaypoint)[]
+  // "straight" skips road routing and draws a dashed straight line (boat days)
+  mapRouting?: "road" | "straight"  // default "road"
 }
+
+export type MapWaypoint = { name: string; lat: number; lng: number }
 
 export type Itinerary = {
   duration: string  // "3N2Đ" | "4N3Đ"

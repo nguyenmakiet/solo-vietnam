@@ -1,5 +1,14 @@
-import { Destination, FaqItem } from "./types"
+import { Destination, FaqItem, MapWaypoint } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
+
+// Map-only waypoints for itinerary mapPoints (places without a location page)
+const WP = {
+  ongDia: { name: "Ong Dia rocks", lat: 10.936709, lng: 108.184215 },
+  honRom: { name: "Hon Rom", lat: 10.954022, lng: 108.334922 },
+  windFarm: { name: "Mui Ne wind farm", lat: 10.980865, lng: 108.300133 },
+  phanThiet: { name: "Phan Thiet", lat: 10.9297024, lng: 108.1001314 },
+  phanThietMkt: { name: "Phan Thiet market", lat: 10.925821, lng: 108.09651 },
+} satisfies Record<string, MapWaypoint>
 
 export const muiNe: Destination = {
   slug: "mui-ne",
@@ -72,18 +81,21 @@ export const muiNe: Destination = {
           title: "Arrival + Fairy Stream + Red Sand Dunes sunset",
           stops: ["fairy-stream", "red-sand-dunes"],
           notes: "Arrive and check in. Fairy Stream in the late afternoon when it's cooler, then sunset at the Red Sand Dunes, about 10 minutes away by motorbike. If you'd rather sit by the sea, the Ong Dia rocks in Ham Tien are another good sunset spot. Evening seafood on the beach road.",
+          mapPoints: ["fairy-stream", "red-sand-dunes", WP.ongDia],
         },
         {
           day: 2,
           title: "Jeep tour to the White Sand Dunes + slow afternoon + Hon Rom",
           stops: ["white-sand-dunes", "mui-ne-fishing-village"],
           notes: "Sunrise jeep tour, about 4:30-8:30am: White Sand Dunes, Mui Ne fishing village, the coast road and the windmill fields, usually with Red Sand Dunes and Fairy Stream included. A whole jeep is around 600,000 VND for up to 6 people - easy to share with others from your hostel. Afternoon free: nap, pool, or a kite lesson - the wind is strongest Nov-Mar. Evening: ride out to Hon Rom at the far end of the strip for quieter beaches and cheap grilled seafood.",
+          mapPoints: ["white-sand-dunes", WP.windFarm, "mui-ne-fishing-village", WP.honRom],
         },
         {
           day: 3,
           title: "Po Sah Inu + Phan Thiet food + optional Ke Ga",
           stops: ["po-sah-inu-cham-towers", "ke-ga-lighthouse"],
           notes: "Ride toward Phan Thiet. Po Sah Inu Cham Towers sit on Ba Nai hill, about 7km before the city centre (7am-5pm). Then eat in Phan Thiet: herring rice-paper rolls (cha cuon ca trich), raw mackerel salad (goi ca mai) and soft rice-paper rolls (banh trang cuon) around the market. With time to spare, continue to Ke Ga, about 30km south of Phan Thiet city (45-50km from Mui Ne, about 1h15-1h30 by motorbike) - the French lighthouse, built in 1899, stands on a small islet just offshore; check locally for boats and whether the tower is open to climb. Buses back to HCMC leave from Phan Thiet.",
+          mapPoints: ["po-sah-inu-cham-towers", WP.phanThietMkt, "ke-ga-lighthouse", WP.phanThiet],
         },
       ],
     },

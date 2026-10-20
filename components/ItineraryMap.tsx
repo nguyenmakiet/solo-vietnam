@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import type { Itinerary } from "@/data/destinations/types"
+import type * as Leaflet from "leaflet"
+import type { Itinerary, ItineraryDay } from "@/data/destinations/types"
 
 interface StopData {
   name: string
@@ -19,6 +20,30 @@ interface ItineraryMapProps {
 // Literal values because they are written into SVG/HTML strings where CSS variables do not resolve.
 const DAY_COLORS = ["#2b6a6f", "#c4452a", "#6f8060", "#736b86", "#1b2427"]
 const OSRM_TIMEOUT_MS = 5000
+const WAYPOINT_COLOR = "#8a9295"
+
+type MapPoint =
+  | { kind: "stop"; slug: string; stop: StopData }
+  | { kind: "waypoint"; name: string; lat: number; lng: number }
+
+// The day's points in map order: mapPoints when set, otherwise stops.
+// Slugs without coordinates are skipped
+function dayMapPoints(day: ItineraryDay, stopDataMap: Record<string, StopData>): MapPoint[] {
+  const points: MapPoint[] = []
+  for (const point of day.mapPoints ?? day.stops) {
+    if (typeof point === "string") {
+      const stop = stopDataMap[point]
+      if (stop) points.push({ kind: "stop", slug: point, stop })
+    } else {
+      points.push({ kind: "waypoint", ...point })
+    }
+  }
+  return points
+}
+
+function escapeHtml(text: string): string {
+  return text.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
+}
 
 function pinSvg(num: number, color: string): string {
   return `<svg width="28" height="36" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg">
@@ -30,13 +55,21 @@ function pinSvg(num: number, color: string): string {
   </svg>`
 }
 
+function waypointSvg(): string {
+  return `<svg width="18" height="24" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 0C6.268 0 0 6.268 0 14c0 10.5 14 22 14 22S28 24.5 28 14C28 6.268 21.732 0 14 0z"
+      fill="${WAYPOINT_COLOR}" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
+    <circle cx="14" cy="14" r="6" fill="rgba(255,255,255,0.95)"/>
+  </svg>`
+}
+
 export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapDivRef = useRef<HTMLDivElement>(null)
-  const mapRef = useRef<any>(null)
-  const LRef = useRef<any>(null)
-  const layersRef = useRef<any[]>([])
-  const routePlaceholdersRef = useRef<Map<number, any>>(new Map())
+  const mapRef = useRef<Leaflet.Map | null>(null)
+  const LRef = useRef<typeof Leaflet | null>(null)
+  const layersRef = useRef<Leaflet.Layer[]>([])
+  const routePlaceholdersRef = useRef<Map<number, Leaflet.Polyline>>(new Map())
   const fetchGenRef = useRef(0)
   const [activeItinIdx, setActiveItinIdx] = useState(0)
   const [mapReady, setMapReady] = useState(false)
@@ -62,9 +95,9 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
   async function initMap() {
     if (mapRef.current || !mapDivRef.current) return
     const L = (await import("leaflet")).default
-    // @ts-ignore
+    // @ts-expect-error - CSS side-effect import has no type declarations
     await import("leaflet/dist/leaflet.css")
-    if ((mapDivRef.current as any)._leaflet_id) return
+    if ((mapDivRef.current as HTMLDivElement & { _leaflet_id?: number })._leaflet_id) return
 
     LRef.current = L
 
@@ -131,11 +164,36 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
     itin.days.forEach((day, dayIdx) => {
       const color = DAY_COLORS[(day.day - 1) % DAY_COLORS.length]
       const dayPoints: [number, number][] = []
+      let stopNum = 0
 
-      day.stops.forEach((slug, i) => {
-        const stop = stopDataMap[slug]
-        if (!stop) return
+      dayMapPoints(day, stopDataMap).forEach((mapPoint) => {
+        if (mapPoint.kind === "waypoint") {
+          // Map-only waypoint: small grey pin, name only, no page to link to
+          const point: [number, number] = [mapPoint.lat, mapPoint.lng]
+          dayPoints.push(point)
+          allPoints.push(point)
+          const icon = L.divIcon({
+            className: "",
+            html: waypointSvg(),
+            iconSize: [18, 24],
+            iconAnchor: [9, 24],
+            popupAnchor: [0, -26],
+          })
+          const marker = L.marker(point, { icon, title: mapPoint.name })
+            .bindPopup(
+              `<div style="font-family:-apple-system,sans-serif;padding:2px">
+                <div style="font-size:13px;font-weight:700;color:#1b2427;margin-bottom:3px">${escapeHtml(mapPoint.name)}</div>
+                <div style="font-size:11px;color:#5b676a">Day ${day.day}</div>
+              </div>`,
+              { maxWidth: 220 }
+            )
+          marker.addTo(map)
+          layersRef.current.push(marker)
+          return
+        }
 
+        const { slug, stop } = mapPoint
+        const i = stopNum++
         const point: [number, number] = [stop.lat, stop.lng]
         dayPoints.push(point)
         allPoints.push(point)
@@ -167,7 +225,8 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
         layersRef.current.push(marker)
       })
 
-      // Draw straight dashed placeholder — will be replaced by OSRM route if fetch succeeds
+      // Draw straight dashed placeholder — will be replaced by OSRM route if fetch succeeds,
+      // unless the day is routed "straight" (boat days)
       if (dayPoints.length >= 2) {
         const placeholder = L.polyline(dayPoints, {
           color,
@@ -177,7 +236,7 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
         }).addTo(map)
         layersRef.current.push(placeholder)
         routePlaceholdersRef.current.set(dayIdx, placeholder)
-        dayMeta.push({ dayIdx, points: dayPoints, color })
+        if (day.mapRouting !== "straight") dayMeta.push({ dayIdx, points: dayPoints, color })
       }
     })
 
@@ -236,13 +295,14 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
 
   // Cleanup on unmount
   useEffect(() => {
+    const routePlaceholders = routePlaceholdersRef.current
     return () => {
       if (mapRef.current) {
         mapRef.current.remove()
         mapRef.current = null
         LRef.current = null
         layersRef.current = []
-        routePlaceholdersRef.current.clear()
+        routePlaceholders.clear()
       }
     }
   }, [])
@@ -282,7 +342,7 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
           ))}
           <div className="itin-map-legend-note">
             {Object.values(stopDataMap).length > 0
-              ? `${activeItin.days.flatMap(d => d.stops).filter(s => stopDataMap[s]).length} stops mapped`
+              ? `${activeItin.days.flatMap((d) => dayMapPoints(d, stopDataMap)).filter((p) => p.kind === "stop").length} stops mapped`
               : "No coordinates available"}
           </div>
         </div>
