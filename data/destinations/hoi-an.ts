@@ -4,14 +4,15 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoiAn: Destination = {
   slug: "hoi-an",
   name: "Hoi An",
+  updatedAt: "2026-10-21",
   province: "Quang Nam",
   provinceSlug: "quang-nam",
   region: "central",
 
   description:
-    "Hoi An is Vietnam's best-preserved ancient trading port - a UNESCO World Heritage town of yellow walls, wooden merchant houses, silk lanterns, and the Thu Bon River. Go early morning before the tour groups arrive, eat your way through the local market, get something made at a tailor, and cycle out to the rice fields or beach when the Old Town gets too crowded. It rewards slow travel more than any other city in Vietnam.",
+    "Hoi An is one of Vietnam's best-preserved old trading ports - a UNESCO World Heritage town of yellow walls, wooden merchant houses, silk lanterns and the Thu Bon River, about 45 minutes from Da Nang. Walk the Old Town at 6-7am before the tour groups, take a lantern boat at sunset, and cycle out to the herb gardens, coconut forest and beach when the centre gets crowded. One night covers the highlights; two or three let you slow down, which is when Hoi An is at its best.",
 
-  tagline: "Lanterns, tailor shops, and the best Cao Lau in the world",
+  tagline: "Lanterns, tailors and cao lau you can only eat here",
 
   heroImage: heroUrl("hoi-an_qxhyjl"),
 
@@ -23,30 +24,30 @@ export const hoiAn: Destination = {
     {
       from: "Da Nang",
       vehicle: "bus",
-      duration: "45 minutes",
-      cost: "30,000-50,000 VND",
-      notes: "Bus No.2 (which replaced the old No.1 in 2024) runs every 15-30 min from Hoi An bus station, about 31,000-40,000 VND with luggage. Grab is more convenient with luggage.",
+      duration: "about 1 hour",
+      cost: "20,000-40,000 VND",
+      notes: "Public buses run from Da Nang central bus station to Hoi An bus station, roughly 5:30am-5:30pm, every 20-30 minutes; route numbers have changed since the 2025 merger, so check the current one locally. A Grab car takes 45-50 minutes and costs about 300,000-450,000 VND; Grab bike is cheaper.",
     },
     {
       from: "Ho Chi Minh City",
       vehicle: "fly",
-      duration: "1 hour 15 min",
-      cost: "from 600,000 VND",
-      notes: "Fly into Da Nang, then 45 min to Hoi An by bus or taxi.",
+      duration: "about 1h20",
+      cost: "400,000-1,600,000 VND one way",
+      notes: "Fly into Da Nang, then about 45-50 minutes to Hoi An by car.",
     },
     {
       from: "Hanoi",
       vehicle: "fly",
-      duration: "1 hour 15 min",
-      cost: "from 600,000 VND",
-      notes: "Fly into Da Nang, then 45 min to Hoi An.",
+      duration: "about 1h20",
+      cost: "400,000-1,600,000 VND one way",
+      notes: "Fly into Da Nang, then about 45-50 minutes to Hoi An by car.",
     },
     {
       from: "Hue",
       vehicle: "bus",
-      duration: "3-3.5 hours",
-      cost: "100,000-150,000 VND",
-      notes: "Direct buses daily. If heading south, consider the Hai Van Pass route by motorbike - one of Vietnam's best coastal rides.",
+      duration: "3-4 hours",
+      cost: "check locally",
+      notes: "Direct buses and limousine vans daily. Riding south by motorbike over the Hai Van Pass is one of Vietnam's best-known coastal rides.",
     },
   ],
 
