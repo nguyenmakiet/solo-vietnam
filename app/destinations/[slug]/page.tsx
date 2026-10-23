@@ -20,6 +20,7 @@ import ClimateChart from "@/components/ClimateChart"
 import { getDestinationClimate } from "@/data/climate"
 import EmergencyContacts from "@/components/EmergencyContacts"
 import GettingAround from "@/components/GettingAround"
+import DestinationSection from "@/components/DestinationSection"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
@@ -417,8 +418,7 @@ export default async function DestinationPage({
 
         {/* Day trips (side trips without a destination of their own) */}
         {destination.dayTrips?.map((trip, t) => (
-          <section key={trip.title} className="dp-section dd-daytrip" aria-labelledby={`h-daytrip-${t}`}>
-            <h2 id={`h-daytrip-${t}`} className="section-label">{trip.title}</h2>
+          <DestinationSection key={trip.title} id={`h-daytrip-${t}`} title={trip.title} layout="split" className="dd-daytrip">
             <p className="dd-daytrip-summary">{trip.summary}</p>
 
             {trip.gettingThere && trip.gettingThere.length > 0 && (
@@ -480,13 +480,12 @@ export default async function DestinationPage({
                 </ul>
               </>
             )}
-          </section>
+          </DestinationSection>
         ))}
 
         {/* Getting There */}
         {destination.gettingThere && destination.gettingThere.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-getting">
-            <h2 id="h-getting" className="section-label">Getting There</h2>
+          <DestinationSection id="h-getting" title="Getting There" layout="split">
             <div className="dd-rows dd-routes">
               {destination.gettingThere.map((opt, i) => (
                 <div key={i} className="dd-route">
@@ -504,7 +503,7 @@ export default async function DestinationPage({
                 </div>
               ))}
             </div>
-          </section>
+          </DestinationSection>
         )}
 
         {/* Getting around: rental vehicles and shops */}
