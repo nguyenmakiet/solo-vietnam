@@ -621,7 +621,8 @@
 /* ── SECTION LAYOUTS (components/DestinationSection.tsx) ──
    Below 1024px the wrappers are plain blocks, so sections look exactly as
    before. From 1024px: split = title rail | 720px content column;
-   grid = 2 or 3 equal columns under the title; full = the container width. */
+   grid = 2 or 3 equal columns under the title; pair = wide | narrow column
+   (3fr | 2fr) under the title; full = the container width. */
 @media (min-width: 1024px) {
   .dp .ds--split {
     display: grid;
@@ -635,9 +636,19 @@
 
   .dp .ds--grid > .ds-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; }
   .dp .ds--grid.ds--cols-3 > .ds-body { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  /* pair: wide + narrow column, each as tall as its own content; a single
+     child (e.g. no climate data) takes the full width */
+  .dp .ds--pair > .ds-body {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    column-gap: 64px;
+    align-items: start;
+  }
+  .dp .ds--pair > .ds-body:has(> :only-child) { grid-template-columns: minmax(0, 1fr); }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .dp .ds--split { grid-template-columns: 240px minmax(0, 1fr); column-gap: 48px; }
+  .dp .ds--pair > .ds-body { column-gap: 48px; }
 }
 
 /* Narrow desktop: give the intro more of the row */

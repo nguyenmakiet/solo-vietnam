@@ -4,10 +4,12 @@
 //   grid  - title, then 2 or 3 equal columns (short, uniform lists)
 //   split - title on a rail (300px, 240px below 1280px) beside a 720px
 //           content column (long or practical content)
+//   pair  - title, then a wide and a narrow column (about 60/40) that each
+//           keep their own height; one child takes the full width
 // Below 1024px every pattern is a single column, the same as before.
 // Styles: .ds* in app/destinations/[slug]/destination.css (scoped under .dp).
 
-type Layout = "full" | "grid" | "split"
+type Layout = "full" | "grid" | "split" | "pair"
 
 type Props = {
   /** id of the section heading; the section is aria-labelledby it */
