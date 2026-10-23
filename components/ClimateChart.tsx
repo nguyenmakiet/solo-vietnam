@@ -177,22 +177,27 @@ export default function ClimateChart({ months, bestMonths, avoidMonths = [], nam
         )}
       </div>
 
-      <table className="cc-sr-only">
-        <caption>Monthly climate averages for {name}</caption>
-        <thead>
-          <tr><th scope="col">Month</th><th scope="col">Avg temp (°C)</th><th scope="col">Rainfall (mm)</th><th scope="col">Rainy days (≥1 mm)</th></tr>
-        </thead>
-        <tbody>
-          {months.map((m, i) => (
-            <tr key={m.month}>
-              <th scope="row">{MONTHS_LONG[i]}</th>
-              <td>{m.avgTempC.toFixed(1)}</td>
-              <td>{m.rainfallMm}</td>
-              <td>{m.rainyDays.toFixed(1)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      {/* Visually hidden data table for screen readers. The class sits on a wrapper
+          because width/overflow do not constrain a <table> box, which would
+          otherwise widen the page on mobile */}
+      <div className="cc-sr-only">
+        <table>
+          <caption>Monthly climate averages for {name}</caption>
+          <thead>
+            <tr><th scope="col">Month</th><th scope="col">Avg temp (°C)</th><th scope="col">Rainfall (mm)</th><th scope="col">Rainy days (≥1 mm)</th></tr>
+          </thead>
+          <tbody>
+            {months.map((m, i) => (
+              <tr key={m.month}>
+                <th scope="row">{MONTHS_LONG[i]}</th>
+                <td>{m.avgTempC.toFixed(1)}</td>
+                <td>{m.rainfallMm}</td>
+                <td>{m.rainyDays.toFixed(1)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
