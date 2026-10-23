@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react"
+import { InlineRichText } from "@/app/locations/[slug]/RichText"
+import { stripInlineMarkdown } from "@/lib/rich-text"
 
 export interface FaqItem {
   question: string
@@ -31,7 +33,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
       "name": question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": answer,
+        "text": stripInlineMarkdown(answer),
       },
     })),
   }
@@ -72,7 +74,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
                 </button>
                 {isOpen && (
                   <div className="faq-answer">
-                    <p>{faq.answer}</p>
+                    <p><InlineRichText text={faq.answer} /></p>
                   </div>
                 )}
               </div>

@@ -1,0 +1,31 @@
+/* Getting around (destination page). Same tokens and ruled-row pattern as
+   Getting There and Emergency & help. Mobile first */
+.dp .ga-list { border-top: 1px solid var(--color-ink); }
+.dp .ga-option { padding: 16px 0; border-bottom: 1px solid var(--color-line); }
+.dp .ga-vehicle {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+}
+.dp .ga-price {
+  margin-top: 4px;
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: 19px; font-weight: 700; line-height: 1.35; color: var(--color-ink);
+}
+.dp .ga-notes { margin-top: 8px; max-width: 720px; font-size: 15px; line-height: 1.7; color: var(--color-ink-2); }
+
+.dp .ga-shops { list-style: none; margin: 12px 0 0; padding: 0; max-width: 720px; }
+.dp .ga-shop { padding: 10px 0; border-top: 1px solid var(--color-line); }
+.dp .ga-shop-name { font-size: 15px; font-weight: 700; color: var(--color-ink); }
+.dp .ga-shop-name a { color: var(--color-ink); text-underline-offset: 3px; }
+.dp .ga-shop-meta { margin-top: 2px; font-size: 14px; color: var(--color-ink-2); }
+.dp .ga-shop-meta a { color: var(--color-ink); font-weight: 600; font-variant-numeric: tabular-nums; text-underline-offset: 3px; white-space: nowrap; }
+.dp .ga-sep { margin: 0 8px; }
+.dp .ga-shop-notes { margin-top: 4px; font-size: 14px; line-height: 1.6; color: var(--color-ink-2); }
+
+.dp .ga-disclaimer { margin-top: 10px; font-size: 13px; color: var(--color-ink-2); }
+.dp .ga-checked { margin-top: 4px; font-size: 12px; color: var(--color-ink-2); }
+
+@media (min-width: 640px) {
+  .dp .ga-price { font-size: 21px; }
+}

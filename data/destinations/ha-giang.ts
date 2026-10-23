@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const haGiang: Destination = {
   slug: "ha-giang",
   name: "Ha Giang",
+  updatedAt: "2026-10-23",
   // "Ha Giang Loop" is what travelers search for: kept in the page title
   seoTitle: "Ha Giang Loop & Ha Giang Travel Guide",
   province: "Ha Giang",
@@ -11,9 +12,9 @@ export const haGiang: Destination = {
   region: "north",
 
   description:
-    "The Ha Giang Loop is a scenic motorbike route in Vietnam's far north - a 350km circuit through the Dong Van Karst Plateau UNESCO Global Geopark, past sheer limestone passes, H'Mong villages, buckwheat fields, and one of the deepest river gorges in Southeast Asia. The town of Ha Giang is the starting point; the loop runs clockwise through Quan Ba, Yen Minh, Dong Van, and Meo Vac before returning south through Du Gia. Do it by motorbike - that's the point.",
+    "The Ha Giang Loop is a motorbike route of about 350km through Vietnam's far north and the Dong Van Karst Plateau UNESCO Global Geopark - limestone passes, H'Mong and Lo Lo villages, buckwheat fields in autumn, and the Nho Que River canyon below Ma Pi Leng Pass, one of the deepest gorges in Southeast Asia. Ha Giang city is the starting point; the loop runs through Quan Ba, Yen Minh, Dong Van and Meo Vac, then back via Mau Due and Du Gia. Ride it yourself if you're confident on mountain roads, or sit behind a local Easy Rider - either way, go slow: this isn't a place to rush between photo stops.",
 
-  tagline: "A 350km mountain loop through karst, passes, and minority villages",
+  tagline: "A 350km mountain loop through karst, passes and minority villages",
 
   heroImage: heroUrl("ha-giang-loop_e8myfw"),
 
@@ -28,14 +29,14 @@ export const haGiang: Destination = {
       vehicle: "bus",
       duration: "6-7 hours",
       cost: "200,000-350,000 VND",
-      notes: "Daily buses and limousine vans from My Dinh bus station to Ha Giang city. Limousine vans are more comfortable for the same price. Most drop off in the city centre near the motorbike rental shops.",
+      notes: "Sleeper buses and limousine vans leave almost hourly from My Dinh, Luong Yen, Yen Nghia and Gia Lam bus stations. Overnight buses arrive early in the morning, ready to pick up a bike and start the loop. Most drop off near the rental shops in Ha Giang city.",
     },
     {
       from: "Hanoi",
       vehicle: "motorbike",
       duration: "8-10 hours",
       cost: "Petrol only",
-      notes: "Experienced riders only. 300km via QL2. Good option if you want to ride your own bike the entire way.",
+      notes: "Experienced riders only - about 300km before the loop even starts. Some rental shops let you drop the bike back in Hanoi for a fee instead.",
     },
   ],
 
@@ -47,41 +48,24 @@ export const haGiang: Destination = {
       days: [
         {
           day: 1,
-          title: "Ha Giang → Quan Ba Heaven Gate → Yen Minh → Dong Van",
-          distance: "~145km",
-          stops: [
-            "ha-giang-city",
-            "quan-ba-heaven-gate",
-            "quan-ba-twin-mountains",
-            "yen-minh-pine-forest",
-            "dong-van-old-town",
-          ],
-          notes: "Leave before 7am. First stop is Quan Ba Heaven Gate at 1,500m - the valley and Twin Mountains below are the first real taste of Ha Giang scenery. Lunch in Yen Minh. Arrive Dong Van for sunset and evening in the old quarter.",
+          title: "Ha Giang → Quan Ba → Yen Minh → Lung Cu (night in Lo Lo Chai)",
+          distance: "~160km",
+          stops: ["ha-giang-city", "quan-ba-heaven-gate", "quan-ba-twin-mountains", "yen-minh-pine-forest", "tham-ma-pass", "hmong-king-palace", "lung-cu-flag-tower", "lo-lo-chai-village"],
+          notes: "The longest day - leave by 7am and keep stops short. Quan Ba Heaven Gate and the Twin Mountains first, lunch in Yen Minh, then Tham Ma Pass and the Hmong King Palace (7:30am-5pm, 20,000-25,000 VND). Reach Lung Cu Flag Tower (8am-5pm, 25,000 VND) before it closes and sleep in Lo Lo Chai, the farthest point of the loop - try a night in a traditional rammed-earth Lo Lo house. Don't ride the passes after about 7pm.",
         },
         {
           day: 2,
-          title: "Dong Van → Lung Cu → Ma Pi Leng Pass → Meo Vac",
-          distance: "~80km",
-          stops: [
-            "lung-cu-flag-tower",
-            "lo-lo-chai-village",
-            "ma-pi-leng-pass",
-            "nho-que-river",
-          ],
-          notes: "The best day of the loop. Lung Cu Flag Tower at Vietnam's northernmost point - China visible across the valley. Ma Pi Leng Pass is a spectacular stretch of road - 20km of switchbacks above the Nho Que River canyon. Optional boat trip on the Nho Que from Meo Vac (~150,000 VND/person). Ma Pi Leng Skywalk at sunset.",
+          title: "Lo Lo Chai → Dong Van → Ma Pi Leng Pass → Nho Que River → Meo Vac",
+          distance: "~60km",
+          stops: ["dong-van-old-town", "ma-pi-leng-pass", "nho-que-river"],
+          notes: "The best day of the loop. Dong Van Old Town in the morning - if it's Sunday, the market is busiest 7-10am. Then Ma Pi Leng Pass at your own pace, stopping at every viewpoint. For the Nho Que boat, don't search \"Nho Que River\" on Google Maps (it sends you toward Cao Bang) - search \"Tu San\" and follow the main road, not forest tracks. The boat is about 150,000 VND per person including the shuttle down to the pier (2026); aim to be there by 4pm. Night in Meo Vac.",
         },
         {
           day: 3,
-          title: "Meo Vac → Du Gia → Ha Giang",
+          title: "Meo Vac → Mau Due → Du Gia → Ha Giang",
           distance: "~150km",
-          stops: [
-            "meo-vac-town",
-            "mau-due-town",
-            "du-gia-village",
-            "du-gia-waterfall",
-            "ha-giang-city",
-          ],
-          notes: "Return route south through Mau Due and Du Gia - less dramatic than the outward route but still beautiful. Du Gia village for lunch. Du Gia Waterfall for a swim if weather allows. Back in Ha Giang by evening.",
+          stops: ["meo-vac-town", "mau-due-town", "du-gia-village", "du-gia-waterfall", "ha-giang-city"],
+          notes: "Early start - the Meo Vac to Mau Due stretch has a lot of potholes. Lunch in Du Gia, a quiet Tay village in a river valley, and a swim at Du Gia Waterfall if the weather allows. Back in Ha Giang by late afternoon for the night bus to Hanoi.",
         },
       ],
     },
@@ -93,51 +77,29 @@ export const haGiang: Destination = {
           day: 1,
           title: "Ha Giang → Quan Ba → Yen Minh",
           distance: "~100km",
-          stops: [
-            "ha-giang-city",
-            "quan-ba-heaven-gate",
-            "quan-ba-twin-mountains",
-            "yen-minh-pine-forest",
-            "yen-minh-town",
-          ],
-          notes: "Relaxed first day. Quan Ba Heaven Gate for the first jaw-dropping view. Yen Minh Pine Forest - an unexpected stretch of highland pine that changes the atmosphere completely. Optional: Lung Khuy Cave near Yen Minh.",
+          stops: ["ha-giang-city", "quan-ba-heaven-gate", "quan-ba-twin-mountains", "lung-khuy-cave", "yen-minh-pine-forest", "yen-minh-town"],
+          notes: "Relaxed first day to get used to the bike. Quan Ba Heaven Gate for the first big view over the Twin Mountains, then Lung Khuy Cave just beyond them (30,000-50,000 VND, about 1-2 hours with the walk up - go in daylight). Afternoon through the Yen Minh Pine Forest, a stretch of highland pine that changes the whole atmosphere. Night in Yen Minh.",
         },
         {
           day: 2,
-          title: "Yen Minh → Lung Cu → Dong Van",
+          title: "Yen Minh → Tham Ma → Hmong King Palace → Lung Cu (night in Lo Lo Chai)",
           distance: "~80km",
-          stops: [
-            "yen-minh-town",
-            "tham-ma-pass",
-            "hmong-king-palace",
-            "lung-cu-flag-tower",
-            "lo-lo-chai-village",
-            "dong-van-old-town",
-          ],
-          notes: "Tham Ma Pass before the plateau opens up. Hmong King Palace (Vuong Family Mansion) at Sa Phin - an ornate H'Mong mansion. Lung Cu Flag Tower at Vietnam's northernmost point. Lo Lo Chai village below the tower - the Lo Lo minority culture is found almost nowhere else. Dong Van Old Quarter for dinner and the night market.",
+          stops: ["yen-minh-town", "tham-ma-pass", "hmong-king-palace", "lung-cu-flag-tower", "lo-lo-chai-village"],
+          notes: "Tham Ma Pass as the plateau opens up - some children here push flowers and hair braiding for money (see FAQ). Hmong King Palace (Vuong Family Mansion) at Sa Phin, then Lung Cu Flag Tower near Vietnam's northernmost point. Sleep in Lo Lo Chai below the tower, ideally in a rammed-earth Lo Lo house - the Lo Lo culture is found in very few places.",
         },
         {
           day: 3,
-          title: "Dong Van → Ma Pi Leng Pass → Meo Vac",
-          distance: "~45km",
-          stops: [
-            "ma-pi-leng-pass",
-            "nho-que-river",
-          ],
-          notes: "Shortest day in distance, longest in impact. Ma Pi Leng Pass at its own pace - stop at every viewpoint. Optional Nho Que river boat trip from Meo Vac. Happiness Road Museum in Meo Vac. Ma Pi Leng Skywalk at sunset - walk or ride the narrow path to the viewpoint above the canyon.",
+          title: "Lo Lo Chai → Dong Van → Ma Pi Leng Pass → Meo Vac",
+          distance: "~60km",
+          stops: ["dong-van-old-town", "ma-pi-leng-pass", "nho-que-river"],
+          notes: "Short in distance, biggest in impact. Morning in Dong Van Old Town (Sunday market 7-10am). Ma Pi Leng Pass slowly, with every viewpoint. Nho Que boat from the Tu San pier - search \"Tu San\" on Google Maps, not \"Nho Que River\" - about 150,000 VND per person including the shuttle (2026). Night in Meo Vac; off the passes before dark.",
         },
         {
           day: 4,
-          title: "Meo Vac → Du Gia → Ha Giang",
+          title: "Meo Vac → Mau Due → Du Gia → Ha Giang",
           distance: "~150km",
-          stops: [
-            "meo-vac-town",
-            "mau-due-town",
-            "du-gia-village",
-            "du-gia-waterfall",
-            "ha-giang-city",
-          ],
-          notes: "Early start on the return route through Mau Due. Du Gia is a peaceful village on the eastern loop - Tay settlement in a river valley. Du Gia Waterfall for a swim. Back in Ha Giang by late afternoon.",
+          stops: ["meo-vac-town", "mau-due-town", "du-gia-village", "du-gia-waterfall", "ha-giang-city"],
+          notes: "Early start - potholes between Meo Vac and Mau Due. Lunch in Du Gia and a swim at the waterfall if it's warm. Back in Ha Giang by late afternoon.",
         },
       ],
     },
@@ -148,16 +110,39 @@ export const haGiang: Destination = {
     budget: "400,000-700,000 VND/day",
     midRange: "700,000-1,200,000 VND/day",
     comfortable: "1,200,000-2,500,000 VND/day",
-    notes: "Budget: self-ride rental bike + homestay + local food. Mid-range: Easy Rider (local driver takes you on their bike). Comfortable: Jeep tour with accommodation included. Border area permit required for all foreign visitors: around 200,000-250,000 VND.",
+    notes: "Budget: self-ride rental bike + homestay + local food. Mid-range: Easy Rider (a local driver takes you on their bike, about 500,000-800,000 VND/day extra). Comfortable: car or jeep tour with accommodation included. Entry fees are small: Lung Cu Flag Tower 25,000 VND, Hmong King Palace 20,000-25,000 VND, Lung Khuy Cave 30,000-50,000 VND; the Nho Que boat is about 150,000 VND. Homestay beds from about 100,000 VND, private rooms 200,000-400,000 VND. Foreign visitors also need the border-area permit, about 10 USD. Bring cash: ATMs are scarce after Ha Giang city.",
   },
 
   // ─── Practical ───────────────────────────────────────────
-  bestTimeSummary: "Sep-Nov: golden rice terraces and buckwheat flowers in Oct-Nov. Jan-Feb: yellow mustard and peach blossom season - cold on the plateau, and nights can drop close to freezing. Mar-Apr: mild weather, clear skies. Avoid Jun-Aug: heavy rain, landslide risk.",
+  bestTimeSummary: "Oct-Nov is peak season: buckwheat flowers on the plateau and dry, clear days - book ahead. Sep has golden rice terraces around Hoang Su Phi and Quan Ba. Jan-Feb brings yellow mustard and peach and plum blossom with fewer crowds, but the plateau is cold, often foggy and can drop near freezing. Mar-Apr is mild and clear. Jun-Aug is the wettest period, with landslides and slippery roads; May is when the terraced fields fill with water.",
   bestMonths: [1, 2, 3, 4, 9, 10, 11],
 
-  recommendedStay: "3-5 days for the full loop",
+  recommendedStay: "3-5 days for the full loop (4 is ideal)",
 
-  transport: "Motorbike - the loop IS the destination. Semi-automatic recommended for beginners. Easy Rider (local driver) or Jeep tour if you don't have a valid IDP.",
+  transport: "By motorbike - the loop is the destination. A semi-automatic (Honda Wave/Blade, Yamaha Sirius) is the usual loop bike; avoid small scooters like the Vision with a passenger, they struggle on the climbs. Choose a well-maintained bike over the cheapest one and check brakes, tyres and lights before you leave. If you're not confident on mountain passes or don't have a valid licence, go with an Easy Rider or by car. Don't ride the passes after about 7pm, and don't trust Google Maps blindly on back roads - ask your homestay.",
+
+  rentals: [
+    {
+      vehicle: "motorbike",
+      priceRange: "150,000-250,000 VND/day (semi-automatic); 380,000-650,000 VND/day (manual clutch, e.g. Honda XR150)",
+      notes: "Most shops include a helmet and raincoat, and ask for a passport rather than a cash deposit. Foreign riders need a valid licence (see FAQ). Some shops let you drop the bike in Dong Van, Meo Vac or even Hanoi for a fee.",
+      shops: [
+        { name: "Loopmoto", address: "286 Tran Phu or 52 Nguyen Du, Ha Giang city", phone: "0334 279 999", url: "https://loopmoto.vn", notes: "Semi-automatic and XR150; newer bikes." },
+        { name: "MOTOGO", area: "Cau Me, near the bus station", phone: "0338 023 344", url: "https://motogo.vn", notes: "One-way drop-off in Dong Van or Meo Vac (300,000-350,000 VND) or Hanoi/Ninh Binh (400,000-500,000 VND)." },
+        { name: "QT Motorbikes and Tours", area: "Lam Dong, Phuong Thien - about 1km from the bus station", phone: "0975 278 711", url: "https://www.facebook.com/share/1DRjvDyExk/", notes: "Also rents the Honda Air Blade automatic and the XR150." },
+        { name: "Phuot House Motorbikes & Tours", address: "01 Nguyen Trai, Ha Giang city", phone: "0944 686 366", url: "https://www.roadkingshagiang.com/", notes: "Helmet, raincoat, luggage straps and 1 litre of petrol included. Self-drive tours check your riding on day 1." },
+        { name: "Hong Hao", address: "10 Pham Hong Thai, Ha Giang city", phone: "0353 982 928", url: "https://www.facebook.com/share/1F1r5ED9gy/" },
+        { name: "Giang Son", area: "Km 3 Cau Me, about 400m from the bus station", phone: "0941 719 955", url: "https://www.facebook.com/share/16Jyg47BwoN/" },
+      ],
+      verifiedAt: "2026-09-08",
+    },
+    {
+      vehicle: "scooter",
+      priceRange: "about 200,000 VND/day",
+      notes: "An automatic like the Honda Air Blade 125 is fine for one rider; with a passenger, take a semi-automatic or manual instead.",
+      verifiedAt: "2026-09-08",
+    },
+  ],
 
   // ─── Nearby ──────────────────────────────────────────────
   nearbyDestinations: ["cao-bang", "sapa"],
@@ -174,43 +159,51 @@ export const haGiang: Destination = {
   faqs: [
     {
       question: "Do I need a special permit for the Ha Giang Loop?",
-      answer: "Yes - and it's easier to get than you'd think. The loop passes through border districts that legally require a foreign visitor permit (\"Giay phep vao khu vuc bien gioi\"). Enforcement is random, but skipping it isn't worth the risk: police checkpoints can turn you around mid-route, and some guesthouses won't check you in without one. Get it through your hotel in Ha Giang City the day before you ride - costs around 200,000-250,000 VND and takes 20 minutes.",
+      answer: "Yes. Foreign visitors need a border-area permit for the districts along the loop - about 10 USD. Police checkpoints can turn you back or fine you without it, and homestays also register your stay with the local police. If you book a tour or an Easy Rider, they usually arrange it. Travelling independently, get it yourself at the [Immigration Office in Ha Giang city, 415 Tran Phu](https://maps.app.goo.gl/gmKdMonnkZE9LxpC8) (ward Ha Giang 2) the day before you ride - bring your passport.",
     },
     {
       question: "How do I get to Ha Giang from Hanoi?",
-      answer: "The most common option is a sleeper bus from Hanoi's My Dinh bus station - journey time is approximately 6-7 hours, with tickets around 200,000-350,000 VND. Several operators run daily departures, arriving in Ha Giang City in the morning ready to start the loop. Book in advance during peak season (October-November). Driving by motorbike from Hanoi is possible but adds 320km before the loop even begins - only worth considering if you're on a longer northern Vietnam trip.",
+      answer: "By sleeper bus or limousine van from My Dinh, Luong Yen, Yen Nghia or Gia Lam bus stations - about 6-7 hours and 200,000-350,000 VND. Night buses arrive early in the morning, so you can pick up a bike and start riding the same day. Book ahead in Oct-Nov.",
     },
     {
       question: "How many days do you need for the Ha Giang Loop?",
-      answer: "Most travelers do the loop in 4 days / 3 nights, which gives enough time to ride comfortably without rushing through the highlights. If you want flexibility to explore side roads or rest on tough days, 5 days / 4 nights is the better option. Doing it in 2 nights is possible but not recommended - long daily distances on mountain roads means fatigue sets in fast, and that's when accidents happen.",
+      answer: "4 days and 3 nights is the sweet spot. 3 days works but the first day is long (about 160km on mountain roads). Don't cram in too many stops - the passes are slower and the distances longer than they look on a map, and tired riders are when accidents happen. A popular plan: first night in Lo Lo Chai, the farthest point, second in Dong Van or Meo Vac.",
     },
     {
       question: "What is the best time to visit Ha Giang?",
-      answer: "October-November is peak season when buckwheat flowers (tam giac mach) bloom across the Dong Van Karst Plateau - deep pink fields against limestone mountains. January-February brings yellow rapeseed flowers with fewer crowds. March-May offers good weather and manageable visitor numbers. Rainy season runs roughly May-September, heaviest in Jun-Aug. Roads are harder but landscapes are dramatically green with far fewer tourists.",
+      answer: "Oct-Nov for buckwheat flowers and clear weather (busiest). Jan-Feb for mustard flowers and blossom with fewer people, but it's cold and foggy on the plateau. Mar-Apr is mild and clear. Jun-Aug is the wettest, with landslide risk.",
     },
     {
       question: "How much does the Ha Giang Loop cost?",
-      answer: "Budget travelers can complete 4 days for around $50-80 USD, excluding transport from Hanoi. This covers motorbike rental (150,000-250,000 VND/day), basic homestay accommodation (100,000-200,000 VND/night), simple meals, and fuel. Hiring an Easy Rider guide adds 500,000-800,000 VND per day but includes navigation, local knowledge, and safety support - worth considering for solo travelers or those new to mountain riding.",
+      answer: "Self-riding, budget around 400,000-700,000 VND a day: bike rental 150,000-250,000 VND, homestay from about 100,000 VND, simple meals, fuel and small entry fees. An Easy Rider adds about 500,000-800,000 VND a day. Carry cash - ATMs are rare once you leave Ha Giang city.",
     },
     {
       question: "Is the Ha Giang Loop safe?",
-      answer: "The loop is completed safely by thousands of riders every year, but it demands respect. Roads are narrow, steep, and unguarded in places - conditions change quickly in rain or fog. The primary risks are riding-related: inexperience, poor bike condition, and bad weather judgment rather than personal security. Honest self-assessment of your riding ability before deciding to self-ride is the single most important safety decision you'll make.",
+      answer: "Thousands ride it every year, but it demands respect. Roads are narrow, steep and unguarded in places, and conditions change fast in rain or fog. Don't ride the passes after dark (roughly 7pm), check your bike before each day, and ask locals about road conditions rather than trusting Google Maps on back roads. The main risks are riding-related, not personal safety.",
     },
     {
       question: "Should I self-ride or hire an Easy Rider?",
-      answer: "Self-riding gives full freedom and costs less, but requires solid manual motorbike experience. Ha Giang is not the place to learn - steep passes, loose gravel, and blind corners demand confidence on a manual gearbox. Hiring an Easy Rider costs more but provides local knowledge, navigation, and emergency support. A popular middle option: self-ride with a guide leading on a separate bike, giving independence with a safety net.",
+      answer: "Self-riding is cheaper and freer, but only if you're confident on a semi-automatic or manual bike on steep, gravelly mountain roads - Ha Giang is not the place to learn. An Easy Rider costs more but gives you a local driver, navigation and help if something goes wrong. If neither feels right, a car or jeep tour still covers the main viewpoints.",
     },
     {
       question: "Do I need an International Driving Permit (IDP)?",
-      answer: "Yes - but the type matters. Vietnam only recognizes IDPs issued under the 1968 Vienna Convention, combined with your original home country license. Ha Giang has strict checkpoint enforcement. US, Australian, and Canadian travelers: your country issues IDPs under the 1949 Geneva Convention, which is not valid in Vietnam. Police will treat it as no license at all. Check whether your country has signed the 1968 convention before assuming your IDP works - and get the right one before leaving home, as it cannot be obtained in Vietnam.",
+      answer: "Yes, and the type matters. Vietnam recognises IDPs issued under the 1968 Vienna Convention that include the motorcycle category, carried with your home licence - and the two must match. IDPs issued under the 1949 Geneva Convention only (for example from the US, Canada or Australia) are not valid here, and police will treat you as unlicensed - which also usually voids your travel insurance after an accident. You can't get an IDP once you're in Vietnam.",
     },
     {
-      question: "Can you do the Ha Giang Loop during rainy season?",
-      answer: "Yes, but with adjusted expectations. Rainy season (roughly May-September) brings daily afternoon showers, slippery roads, reduced visibility, and occasional landslides blocking routes. The upside: dramatically green landscapes, full waterfalls, and far fewer tourists. If riding during rainy season, start each day early to beat afternoon rain, carry a quality rain poncho, and build flexibility into your schedule for weather delays.",
+      question: "What should I know about the children at Tham Ma Pass?",
+      answer: "Most children in Ha Giang are friendly, but at Tham Ma Pass some push flower baskets into your hands or start braiding your hair and then ask for money. If you don't want a photo with flowers, don't take them. If you want a braid, say clearly that only one or two children should do it and agree the price first - 20,000-30,000 VND is fair, no more than 50,000. Giving sweets instead of money is better for the kids.",
+    },
+    {
+      question: "How do I find the Nho Que River boat?",
+      answer: "Don't search \"Nho Que River\" on Google Maps - it can send you toward Cao Bang. Search \"Tu San\" instead, choose the car route and stay on the main road rather than forest tracks. Boats run roughly 7am-6:30pm and cost about 150,000 VND per person including the shuttle down to the pier (2026). Arrive by 4pm so you can ride back over Ma Pi Leng in daylight.",
+    },
+    {
+      question: "Can you do the Ha Giang Loop in the rainy season?",
+      answer: "Yes, with flexible plans. Jun-Aug brings frequent afternoon rain, slippery roads, low visibility and occasional landslides. Start early, carry a good poncho and keep a spare day. The upside is green landscapes, full waterfalls and few tourists.",
     },
     {
       question: "Do I need to book accommodation in advance?",
-      answer: "During peak flower seasons (October-November and January-February), book at least 3-5 days ahead - especially in Dong Van and Meo Vac where options are limited. Popular homestays fill weeks in advance during buckwheat season. Off-peak, walk-in is generally fine on weekdays. Easy Rider guides should be booked in advance year-round as quality guides fill their calendars quickly.",
+      answer: "In Oct-Nov and around Tet, book Dong Van, Meo Vac and Lo Lo Chai a few days ahead - options are limited. Choose somewhere clean, warm and close to your route rather than picking from photos alone; you'll only sleep there, but good rest matters for the next day's ride. Off-season, walking in is usually fine.",
     },
   ] satisfies FaqItem[],
 }
