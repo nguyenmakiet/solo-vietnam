@@ -208,64 +208,66 @@ export default async function DestinationPage({
           <p>{destination.description}</p>
         </div>
 
-        {/* Climate: station averages, right above the best months; source line as small print */}
-        {climate && (
-          <section className="dp-section dd-climate" aria-labelledby="h-climate">
-            <h2 id="h-climate" className="section-label">Climate</h2>
-            <figure>
-              <ClimateChart months={climate.months} bestMonths={bestMonths} avoidMonths={avoidMonths} name={destination.name} />
-              <figcaption className="dd-climate-note">
-                Data: long-term station averages from the Vietnam Institute for Building Science and Technology (IBST). Rainy days as reported by the station.
-                {climate.proxyNote && ` Station: ${climate.proxyNote}`}
-              </figcaption>
-            </figure>
-          </section>
-        )}
-
-        {/* Best Months */}
-        {bestMonths.length > 0 && (
-          <section className="dp-section dd-months" aria-labelledby="h-months">
-            <h2 id="h-months" className="section-label">Best Months to Visit</h2>
-            <div
-              className="month-strip"
-              role="img"
-              aria-label={`Best months to visit: ${bestMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}${avoidMonths.length > 0 ? `. Months to avoid: ${avoidMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}` : ""}`}
-            >
-              {MONTH_NAMES.map((name, i) => (
-                <span
-                  key={name}
-                  className={`month-cell${bestMonths.includes(i + 1) ? " active" : ""}${avoidMonths.includes(i + 1) ? " avoid" : ""}`}
-                  aria-hidden="true"
-                >
-                  {name}
-                </span>
-              ))}
-            </div>
-            {/* Best time (with the chart only, otherwise it stays in Plan Your Trip) and Avoid */}
-            {((destination.bestTimeSummary && climate) || (avoidMonths.length > 0 && destination.avoidSummary)) && (
-              <dl className="dd-months-blocks">
-                {destination.bestTimeSummary && climate && (
-                  <div className="dd-months-block">
-                    <dt>Best time</dt>
-                    <dd>{destination.bestTimeSummary}</dd>
-                  </div>
-                )}
-                {avoidMonths.length > 0 && destination.avoidSummary && (
-                  <div className="dd-months-block dd-months-block--avoid">
-                    <dt>Avoid</dt>
-                    <dd>{destination.avoidSummary}</dd>
-                  </div>
-                )}
-              </dl>
+        {/* When to go: climate chart (with its source line) beside the best months,
+            best time and avoid notes. Below 1024px the columns stack in that order */}
+        {(climate || bestMonths.length > 0) && (
+          <DestinationSection id="h-when" title="When to go" layout="pair" className="dd-when">
+            {climate && (
+              <div className="dd-when-chart dd-climate">
+                <h3 id="h-climate" className="dd-when-label">Climate</h3>
+                <figure>
+                  <ClimateChart months={climate.months} bestMonths={bestMonths} avoidMonths={avoidMonths} name={destination.name} />
+                  <figcaption className="dd-climate-note">
+                    Data: long-term station averages from the Vietnam Institute for Building Science and Technology (IBST). Rainy days as reported by the station.
+                    {climate.proxyNote && ` Station: ${climate.proxyNote}`}
+                  </figcaption>
+                </figure>
+              </div>
             )}
-          </section>
+
+            {bestMonths.length > 0 && (
+              <div className="dd-when-months dd-months">
+                <h3 id="h-months" className="dd-when-label">Best Months to Visit</h3>
+                <div
+                  className="month-strip"
+                  role="img"
+                  aria-label={`Best months to visit: ${bestMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}${avoidMonths.length > 0 ? `. Months to avoid: ${avoidMonths.slice().sort((a, b) => a - b).map((m) => MONTH_NAMES[m - 1]).join(", ")}` : ""}`}
+                >
+                  {MONTH_NAMES.map((name, i) => (
+                    <span
+                      key={name}
+                      className={`month-cell${bestMonths.includes(i + 1) ? " active" : ""}${avoidMonths.includes(i + 1) ? " avoid" : ""}`}
+                      aria-hidden="true"
+                    >
+                      {name}
+                    </span>
+                  ))}
+                </div>
+                {/* Best time and Avoid notes under the strip */}
+                {(destination.bestTimeSummary || (avoidMonths.length > 0 && destination.avoidSummary)) && (
+                  <dl className="dd-months-blocks">
+                    {destination.bestTimeSummary && (
+                      <div className="dd-months-block">
+                        <dt>Best time</dt>
+                        <dd>{destination.bestTimeSummary}</dd>
+                      </div>
+                    )}
+                    {avoidMonths.length > 0 && destination.avoidSummary && (
+                      <div className="dd-months-block dd-months-block--avoid">
+                        <dt>Avoid</dt>
+                        <dd>{destination.avoidSummary}</dd>
+                      </div>
+                    )}
+                  </dl>
+                )}
+              </div>
+            )}
+          </DestinationSection>
         )}
 
         {/* Highlights */}
         {highlights.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-highlights">
-            <h2 id="h-highlights" className="section-label">Highlights</h2>
-            <ol className="dd-highlights">
+          <DestinationSection id="h-highlights" title="Highlights" layout="grid" cols={2} bodyAs="ol" bodyClassName="dd-highlights">
               {highlights.map((h, i) => {
                 const [lead, rest] = splitLead(h.text)
                 return (
@@ -283,15 +285,12 @@ export default async function DestinationPage({
                   </li>
                 )
               })}
-            </ol>
-          </section>
+          </DestinationSection>
         )}
 
         {/* What To Do */}
         {Object.keys(whatToDo).length > 0 && (
-          <section className="dp-section" aria-labelledby="h-whatdo">
-            <h2 id="h-whatdo" className="section-label">What To Do</h2>
-            <div className="dd-whatdo">
+          <DestinationSection id="h-whatdo" title="What To Do" layout="grid" cols="auto" bodyClassName="dd-whatdo">
               {Object.entries(whatToDo).map(([group, experiences]) => (
                 <div key={group} className="dd-whatdo-group">
                   <h3>{EXPERIENCE_GROUP_CONFIG[group]?.label ?? group}</h3>
@@ -305,23 +304,19 @@ export default async function DestinationPage({
                   </ul>
                 </div>
               ))}
-            </div>
-          </section>
+          </DestinationSection>
         )}
 
         {/* Itinerary Map */}
         {MAP_DESTINATIONS.has(destination.slug) && destination.itineraries && destination.itineraries.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-route">
-            <h2 id="h-route" className="section-label">Route Map</h2>
+          <DestinationSection id="h-route" title="Route Map" layout="full">
             <ItineraryMapLoader itineraries={destination.itineraries} stopDataMap={stopDataMap} />
-          </section>
+          </DestinationSection>
         )}
 
         {/* Itineraries */}
         {destination.itineraries && destination.itineraries.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-itins">
-            <h2 id="h-itins" className="section-label">Suggested Itineraries</h2>
-            <div className="dd-itins">
+          <DestinationSection id="h-itins" title="Suggested Itineraries" layout="full" bodyClassName="dd-itins">
               {destination.itineraries.map((itin) => (
                 <article key={`${itin.duration}-${itin.label}`} className="dd-itin">
                   <div className="dd-itin-head">
@@ -356,21 +351,24 @@ export default async function DestinationPage({
                   </div>
                 </article>
               ))}
-            </div>
-          </section>
+          </DestinationSection>
         )}
 
         {/* Places to Visit */}
-        <section className="dp-section" aria-labelledby="h-places">
-          <h2 id="h-places" className="section-label">
+        <DestinationSection
+          id="h-places"
+          title={
             <span>
               Places to Visit
               {destinationLocations.length > 0 && <span className="dd-count"> · {destinationLocations.length} spots</span>}
             </span>
-          </h2>
+          }
+          layout={destinationLocations.length > 0 ? "grid" : "full"}
+          cols={3}
+          bodyClassName={destinationLocations.length > 0 ? "dd-places" : undefined}
+        >
           {destinationLocations.length > 0 ? (
-            <div className="dd-places">
-              {destinationLocations.map((loc) => {
+              destinationLocations.map((loc) => {
                 const img = realPhoto(loc.heroImage)
                 const type = primaryType(loc.type)
                 const best = isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : stripInlineMarkdown(loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "")
@@ -409,12 +407,11 @@ export default async function DestinationPage({
                     </div>
                   </Link>
                 )
-              })}
-            </div>
+              })
           ) : (
             <div className="dd-empty">Location guides coming soon</div>
           )}
-        </section>
+        </DestinationSection>
 
         {/* Day trips (side trips without a destination of their own) */}
         {destination.dayTrips?.map((trip, t) => (
@@ -511,27 +508,6 @@ export default async function DestinationPage({
 
         {/* Emergency & help: national numbers always, then this destination's contacts */}
         <EmergencyContacts contacts={destination.emergencyContacts} />
-
-        {/* Plan Your Trip (Budget per Day intentionally not shown) */}
-        {((destination.bestTimeSummary && !climate) || destination.recommendedStay) && (
-          <section className="dp-section" aria-labelledby="h-plan">
-            <h2 id="h-plan" className="section-label">Plan Your Trip</h2>
-            <dl className="dd-rows dd-plans">
-              {destination.bestTimeSummary && !climate && (
-                <div className="dd-plan">
-                  <dt>Best Time to Visit</dt>
-                  <dd>{destination.bestTimeSummary}</dd>
-                </div>
-              )}
-              {destination.recommendedStay && (
-                <div className="dd-plan">
-                  <dt>Recommended Stay</dt>
-                  <dd>{destination.recommendedStay}</dd>
-                </div>
-              )}
-            </dl>
-          </section>
-        )}
 
         {/* Related destinations */}
         {related.length > 0 && (
