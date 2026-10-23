@@ -1,4 +1,5 @@
 import type { RentalOption, RentalVehicle } from "@/data/destinations/types"
+import DestinationSection from "@/components/DestinationSection"
 import "./getting-around.css"
 
 const VEHICLE_LABELS: Record<RentalVehicle, string> = {
@@ -21,8 +22,7 @@ function checkedLabel(date: string) {
 
 export default function GettingAround({ rentals }: { rentals: RentalOption[] }) {
   return (
-    <section className="dp-section ga" aria-labelledby="h-getting-around">
-      <h2 id="h-getting-around" className="section-label">Getting around</h2>
+    <DestinationSection id="h-getting-around" title="Getting around" layout="split" className="ga">
       <div className="ga-list">
         {rentals.map((r) => (
           <div key={r.vehicle} className="ga-option">
@@ -59,6 +59,6 @@ export default function GettingAround({ rentals }: { rentals: RentalOption[] }) 
           </div>
         ))}
       </div>
-    </section>
+    </DestinationSection>
   )
 }
