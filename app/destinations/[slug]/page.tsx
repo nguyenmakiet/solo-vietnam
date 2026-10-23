@@ -267,9 +267,7 @@ export default async function DestinationPage({
 
         {/* Highlights */}
         {highlights.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-highlights">
-            <h2 id="h-highlights" className="section-label">Highlights</h2>
-            <ol className="dd-highlights">
+          <DestinationSection id="h-highlights" title="Highlights" layout="grid" cols={2} bodyAs="ol" bodyClassName="dd-highlights">
               {highlights.map((h, i) => {
                 const [lead, rest] = splitLead(h.text)
                 return (
@@ -287,15 +285,12 @@ export default async function DestinationPage({
                   </li>
                 )
               })}
-            </ol>
-          </section>
+          </DestinationSection>
         )}
 
         {/* What To Do */}
         {Object.keys(whatToDo).length > 0 && (
-          <section className="dp-section" aria-labelledby="h-whatdo">
-            <h2 id="h-whatdo" className="section-label">What To Do</h2>
-            <div className="dd-whatdo">
+          <DestinationSection id="h-whatdo" title="What To Do" layout="grid" cols="auto" bodyClassName="dd-whatdo">
               {Object.entries(whatToDo).map(([group, experiences]) => (
                 <div key={group} className="dd-whatdo-group">
                   <h3>{EXPERIENCE_GROUP_CONFIG[group]?.label ?? group}</h3>
@@ -309,23 +304,19 @@ export default async function DestinationPage({
                   </ul>
                 </div>
               ))}
-            </div>
-          </section>
+          </DestinationSection>
         )}
 
         {/* Itinerary Map */}
         {MAP_DESTINATIONS.has(destination.slug) && destination.itineraries && destination.itineraries.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-route">
-            <h2 id="h-route" className="section-label">Route Map</h2>
+          <DestinationSection id="h-route" title="Route Map" layout="full">
             <ItineraryMapLoader itineraries={destination.itineraries} stopDataMap={stopDataMap} />
-          </section>
+          </DestinationSection>
         )}
 
         {/* Itineraries */}
         {destination.itineraries && destination.itineraries.length > 0 && (
-          <section className="dp-section" aria-labelledby="h-itins">
-            <h2 id="h-itins" className="section-label">Suggested Itineraries</h2>
-            <div className="dd-itins">
+          <DestinationSection id="h-itins" title="Suggested Itineraries" layout="full" bodyClassName="dd-itins">
               {destination.itineraries.map((itin) => (
                 <article key={`${itin.duration}-${itin.label}`} className="dd-itin">
                   <div className="dd-itin-head">
@@ -360,21 +351,24 @@ export default async function DestinationPage({
                   </div>
                 </article>
               ))}
-            </div>
-          </section>
+          </DestinationSection>
         )}
 
         {/* Places to Visit */}
-        <section className="dp-section" aria-labelledby="h-places">
-          <h2 id="h-places" className="section-label">
+        <DestinationSection
+          id="h-places"
+          title={
             <span>
               Places to Visit
               {destinationLocations.length > 0 && <span className="dd-count"> · {destinationLocations.length} spots</span>}
             </span>
-          </h2>
+          }
+          layout={destinationLocations.length > 0 ? "grid" : "full"}
+          cols={3}
+          bodyClassName={destinationLocations.length > 0 ? "dd-places" : undefined}
+        >
           {destinationLocations.length > 0 ? (
-            <div className="dd-places">
-              {destinationLocations.map((loc) => {
+              destinationLocations.map((loc) => {
                 const img = realPhoto(loc.heroImage)
                 const type = primaryType(loc.type)
                 const best = isBestMonthsReleased(loc.slug) && loc.bestMonths?.length ? formatMonths(loc.bestMonths) : stripInlineMarkdown(loc.bestSeasonNote ?? loc.bestTimeOfDay ?? "")
@@ -413,12 +407,11 @@ export default async function DestinationPage({
                     </div>
                   </Link>
                 )
-              })}
-            </div>
+              })
           ) : (
             <div className="dd-empty">Location guides coming soon</div>
           )}
-        </section>
+        </DestinationSection>
 
         {/* Day trips (side trips without a destination of their own) */}
         {destination.dayTrips?.map((trip, t) => (
