@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baNaCableCar: Location = {
   slug: "ba-na-cable-car",
   name: "Bà Nà Hills & Cable Car",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-10-23",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: 16.025928263564783,
@@ -21,7 +21,7 @@ export const baNaCableCar: Location = {
     minMinutes: 630,
     maxMinutes: 630,
   },
-  entranceFee: "~900,000 VND adults / ~750,000 VND children. Buy on Klook for a discount and to skip the ticket queue.",
+  entranceFee: "About 950,000 VND adults, 750,000 VND children (2026), including the cable car and most attractions. Buy online a day or two ahead to skip the ticket queue.",
   openingHours: "First cable car: 7:30 AM. Most stations close at 6:00 PM - after 6 PM frequency can reduce to roughly hourly departures. Last return: 9:00 PM (night route).",
   mapUrl: "https://www.google.com/maps?q=16.025928263564783,108.03455022954422",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776184637241!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2N6dkQ1aWdF!2m2!1d16.02407602757561!2d108.0301559779758!3f134.71277594137905!4f14.565616660237012!5f0.7820865974627469", },
