@@ -243,10 +243,10 @@ export default async function DestinationPage({
                     </span>
                   ))}
                 </div>
-                {/* Best time (with the chart only, otherwise it stays in Plan Your Trip) and Avoid */}
-                {((destination.bestTimeSummary && climate) || (avoidMonths.length > 0 && destination.avoidSummary)) && (
+                {/* Best time and Avoid notes under the strip */}
+                {(destination.bestTimeSummary || (avoidMonths.length > 0 && destination.avoidSummary)) && (
                   <dl className="dd-months-blocks">
-                    {destination.bestTimeSummary && climate && (
+                    {destination.bestTimeSummary && (
                       <div className="dd-months-block">
                         <dt>Best time</dt>
                         <dd>{destination.bestTimeSummary}</dd>
@@ -515,27 +515,6 @@ export default async function DestinationPage({
 
         {/* Emergency & help: national numbers always, then this destination's contacts */}
         <EmergencyContacts contacts={destination.emergencyContacts} />
-
-        {/* Plan Your Trip (Budget per Day intentionally not shown) */}
-        {((destination.bestTimeSummary && !climate) || destination.recommendedStay) && (
-          <section className="dp-section" aria-labelledby="h-plan">
-            <h2 id="h-plan" className="section-label">Plan Your Trip</h2>
-            <dl className="dd-rows dd-plans">
-              {destination.bestTimeSummary && !climate && (
-                <div className="dd-plan">
-                  <dt>Best Time to Visit</dt>
-                  <dd>{destination.bestTimeSummary}</dd>
-                </div>
-              )}
-              {destination.recommendedStay && (
-                <div className="dd-plan">
-                  <dt>Recommended Stay</dt>
-                  <dd>{destination.recommendedStay}</dd>
-                </div>
-              )}
-            </dl>
-          </section>
-        )}
 
         {/* Related destinations */}
         {related.length > 0 && (
