@@ -96,7 +96,7 @@ export interface EmergencyContact {
   languages?: string[]
   address?: string
   notes?: string
-  sourceUrl: string
+  sourceUrl?: string       // editor reference only, not rendered
   verifiedAt: string        // YYYY-MM-DD, date the number was last confirmed
 }
 

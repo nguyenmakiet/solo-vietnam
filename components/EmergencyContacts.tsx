@@ -1,5 +1,5 @@
 import type { EmergencyContact, EmergencyContactType } from "@/data/destinations/types"
-import { NATIONAL_EMERGENCY, NATIONAL_EMERGENCY_SOURCE } from "@/data/emergency"
+import { NATIONAL_EMERGENCY } from "@/data/emergency"
 import "./emergency-contacts.css"
 
 const GROUPS: { type: EmergencyContactType; label: string }[] = [
@@ -36,8 +36,7 @@ export default function EmergencyContacts({ contacts = [] }: { contacts?: Emerge
           ))}
         </ul>
         <p className="ec-national-note">
-          Free from any phone. {NATIONAL_EMERGENCY[0].notes}.{" "}
-          <a href={NATIONAL_EMERGENCY_SOURCE} target="_blank" rel="noopener noreferrer">Source</a>
+          Free from any phone. {NATIONAL_EMERGENCY[0].notes}.
         </p>
       </div>
 
@@ -69,9 +68,7 @@ export default function EmergencyContacts({ contacts = [] }: { contacts?: Emerge
                   )}
                   {c.address && <p className="ec-meta">{c.address}</p>}
                   {c.notes && <p className="ec-notes">{c.notes}</p>}
-                  <p className="ec-source">
-                    <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer">Source, checked {checkedLabel(c.verifiedAt)}</a>
-                  </p>
+                  <p className="ec-checked">Checked {checkedLabel(c.verifiedAt)}</p>
                 </li>
               ))}
             </ul>

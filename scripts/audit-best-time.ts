@@ -14,8 +14,9 @@
  * `bestMonths` and explained by `avoidSummary`; months that `bestTimeSummary`
  * tells you to avoid must not be best months (and must be in `avoidMonths`
  * when it is set). `emergencyContacts` fail on an unknown type, a phone with
- * characters other than digits, spaces, * and +, a non-https sourceUrl or an
- * invalid verifiedAt, and warn (never fail) when verifiedAt is over 365 days old.
+ * characters other than digits, spaces, * and + or an invalid verifiedAt,
+ * and warn (never fail) when verifiedAt is over 365 days old. sourceUrl is
+ * optional and not checked.
  * Itinerary day `mapPoints` fail on a slug that is not a location, a waypoint
  * with an empty name or lat outside 8-24 / lng outside 102-110, and
  * `mapRouting` fails unless "road" or "straight"; a day stop missing from that
@@ -461,7 +462,6 @@ for (const d of destinations) {
     for (const phone of [c.phone, ...(c.altPhones ?? [])]) {
       if (!/^[0-9 *+]+$/.test(phone)) fail(`${label} phone "${phone}" may only contain digits, spaces, * and +`)
     }
-    if (!/^https:\/\//.test(c.sourceUrl)) fail(`${label} sourceUrl is not https`)
     if (!isValidDate(c.verifiedAt)) fail(`${label} verifiedAt "${c.verifiedAt}" is not a valid YYYY-MM-DD date`)
     else if ((Date.now() - new Date(`${c.verifiedAt}T00:00:00Z`).getTime()) / 86_400_000 > 365) {
       emergencyWarnings.push(`${d.slug}: ${c.name} last verified ${c.verifiedAt}, re-check`)
