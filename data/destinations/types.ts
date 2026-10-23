@@ -100,6 +100,28 @@ export interface EmergencyContact {
   verifiedAt: string        // YYYY-MM-DD, date the number was last confirmed
 }
 
+// ─── Rentals ─────────────────────────────────────────────────
+// Vehicles to rent at the destination, shown under "Getting around" after
+// Getting There. Checked by `npm run audit:best-time`
+export type RentalVehicle = "motorbike" | "scooter" | "bicycle" | "car"
+
+export interface RentalShop {
+  name: string
+  area?: string
+  address?: string
+  phone?: string
+  url?: string
+  notes?: string
+}
+
+export interface RentalOption {
+  vehicle: RentalVehicle
+  priceRange: string
+  notes?: string
+  shops?: RentalShop[]
+  verifiedAt: string        // YYYY-MM-DD
+}
+
 // ─── Cost ────────────────────────────────────────────────────
 export type CostRange = {
   budget: string      // "400.000–700.000 VND/ngày"
@@ -205,6 +227,7 @@ export type Destination = {
   faqs?: FaqItem[]
   dayTrips?: DayTrip[]
   emergencyContacts?: EmergencyContact[]
+  rentals?: RentalOption[]
 
   coordinates?: {
     lat: number

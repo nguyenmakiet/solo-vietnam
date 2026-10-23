@@ -19,6 +19,7 @@ import HeroMedia from "@/components/HeroMedia"
 import ClimateChart from "@/components/ClimateChart"
 import { getDestinationClimate } from "@/data/climate"
 import EmergencyContacts from "@/components/EmergencyContacts"
+import GettingAround from "@/components/GettingAround"
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 // null = no real photo yet (rendered as PhotoPlaceholder)
@@ -505,6 +506,9 @@ export default async function DestinationPage({
             </div>
           </section>
         )}
+
+        {/* Getting around: rental vehicles and shops */}
+        {destination.rentals && destination.rentals.length > 0 && <GettingAround rentals={destination.rentals} />}
 
         {/* Emergency & help: national numbers always, then this destination's contacts */}
         <EmergencyContacts contacts={destination.emergencyContacts} />

@@ -16,7 +16,10 @@
  * when it is set). `emergencyContacts` fail on an unknown type, a phone with
  * characters other than digits, spaces, * and + or an invalid verifiedAt,
  * and warn (never fail) when verifiedAt is over 365 days old. sourceUrl is
- * optional and not checked.
+ * optional and not checked. `rentals` fail on an unknown vehicle, an empty
+ * priceRange, an invalid verifiedAt, a shop without a name, a shop url that is
+ * not http(s) or a shop phone with other characters, and warn (never fail)
+ * when verifiedAt is over 365 days old.
  * Itinerary day `mapPoints` fail on a slug that is not a location, a waypoint
  * with an empty name or lat outside 8-24 / lng outside 102-110, and
  * `mapRouting` fails unless "road" or "straight"; a day stop missing from that
@@ -372,6 +375,8 @@ const destinationFailures: string[] = []
 const emergencyWarnings: string[] = []
 const mapPointWarnings: string[] = []
 const EMERGENCY_TYPES = new Set(["tourist-hotline", "scam-report", "medical", "police", "other"])
+const rentalWarnings: string[] = []
+const RENTAL_VEHICLES = new Set(["motorbike", "scooter", "bicycle", "car"])
 const isValidDate = (s: string) => {
   const date = /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(`${s}T00:00:00Z`) : null
   return !!date && !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === s
@@ -467,6 +472,22 @@ for (const d of destinations) {
       emergencyWarnings.push(`${d.slug}: ${c.name} last verified ${c.verifiedAt}, re-check`)
     }
   })
+  // Rentals (dashes are covered by findDashes above)
+  d.rentals?.forEach((r, i) => {
+    const label = `rentals[${i}] (${r.vehicle})`
+    if (!RENTAL_VEHICLES.has(r.vehicle)) fail(`${label} has unknown vehicle "${r.vehicle}"`)
+    if (!r.priceRange?.trim()) fail(`${label} priceRange is empty`)
+    if (!isValidDate(r.verifiedAt)) fail(`${label} verifiedAt "${r.verifiedAt}" is not a valid YYYY-MM-DD date`)
+    else if ((Date.now() - new Date(`${r.verifiedAt}T00:00:00Z`).getTime()) / 86_400_000 > 365) {
+      rentalWarnings.push(`${d.slug}: ${label} last verified ${r.verifiedAt}, re-check`)
+    }
+    r.shops?.forEach((shop, j) => {
+      const shopLabel = `${label} shops[${j}]${shop.name ? ` (${shop.name})` : ""}`
+      if (!shop.name?.trim()) fail(`${shopLabel} has no name`)
+      if (shop.url !== undefined && !/^https?:\/\//.test(shop.url)) fail(`${shopLabel} url "${shop.url}" is not http(s)`)
+      if (shop.phone !== undefined && !/^[0-9 *+]+$/.test(shop.phone)) fail(`${shopLabel} phone "${shop.phone}" may only contain digits, spaces, * and +`)
+    })
+  })
 }
 if (destinationFailures.length) {
   console.log(`\nDESTINATION CHECK FAILED (${destinationFailures.length}):\n  ${destinationFailures.join("\n  ")}`)
@@ -490,6 +511,7 @@ for (const d of destinations) {
   }
 }
 if (mapPointWarnings.length) console.log(`\nMAP POINT WARNINGS (${mapPointWarnings.length}, not a failure):\n  ${mapPointWarnings.join("\n  ")}`)
+if (rentalWarnings.length) console.log(`\nRENTAL WARNINGS (${rentalWarnings.length}, not a failure):\n  ${rentalWarnings.join("\n  ")}`)
 if (emergencyWarnings.length) console.log(`\nEMERGENCY CONTACT WARNINGS (${emergencyWarnings.length}, not a failure):\n  ${emergencyWarnings.join("\n  ")}`)
 if (!withClimate) console.log("\nClimate check skipped: no destination climate data in data/climate.json.")
 else if (climateWarnings.length) console.log(`\nCLIMATE WARNINGS (${climateWarnings.length}, not a failure):\n  ${climateWarnings.join("\n  ")}`)
