@@ -432,7 +432,7 @@
 .dp .faq-item.open .faq-question { color: var(--type-accent-strong); }
 .dp .faq-question:focus-visible { outline-offset: -2px; }
 .dp .faq-chevron { flex-shrink: 0; width: 20px; height: 20px; color: var(--type-accent-strong); }
-.dp .faq-answer { padding: 0 0 16px; max-width: 720px; }
+.dp .faq-answer { padding: 0 0 16px; }
 .dp .faq-answer p { font-size: 15px; line-height: 1.75; color: var(--color-ink-2); }
 
 /* ── CLOSING CTA: teal-ink band into the footer ── */
@@ -611,7 +611,7 @@
   /* More in this province */
   .dp .dd-related { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-  /* FAQ: comfortable rows, answers in a reading column */
+  /* FAQ: rows in the split content column (DestinationSection), chevron beside the question */
   .dp .faq-question { font-size: 16.5px; }
   .dp .faq-answer p { font-size: 16px; }
 

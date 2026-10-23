@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { InlineRichText } from "@/app/locations/[slug]/RichText"
 import { stripInlineMarkdown } from "@/lib/rich-text"
+import DestinationSection from "@/components/DestinationSection"
 
 export interface FaqItem {
   question: string
@@ -45,8 +46,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="dp-section">
-        <h2 className="section-label">{title}</h2>
+      <DestinationSection id="h-faq" title={title} layout="split">
         <div className="faq-list">
           {faqs.map((faq, idx) => {
             const isOpen = openSet.has(idx)
@@ -81,7 +81,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
             )
           })}
         </div>
-      </section>
+      </DestinationSection>
     </>
   )
 }
