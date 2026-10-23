@@ -1,5 +1,6 @@
 import type { EmergencyContact, EmergencyContactType } from "@/data/destinations/types"
 import { NATIONAL_EMERGENCY } from "@/data/emergency"
+import DestinationSection from "@/components/DestinationSection"
 import "./emergency-contacts.css"
 
 const GROUPS: { type: EmergencyContactType; label: string }[] = [
@@ -23,8 +24,7 @@ function checkedLabel(date: string) {
 
 export default function EmergencyContacts({ contacts = [] }: { contacts?: EmergencyContact[] }) {
   return (
-    <section className="dp-section ec" aria-labelledby="h-emergency">
-      <h2 id="h-emergency" className="section-label">Emergency &amp; help</h2>
+    <DestinationSection id="h-emergency" title={<>Emergency &amp; help</>} layout="split" className="ec">
 
       <div className="ec-national">
         <ul className="ec-national-list">
@@ -75,6 +75,6 @@ export default function EmergencyContacts({ contacts = [] }: { contacts?: Emerge
           </div>
         )
       })}
-    </section>
+    </DestinationSection>
   )
 }

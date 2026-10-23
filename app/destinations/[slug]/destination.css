@@ -360,7 +360,7 @@
 .dp .dd-day-notes { font-size: 15px; line-height: 1.7; color: var(--color-ink); max-width: 720px; }
 
 /* Day trip (e.g. Ba Na Hills from Da Nang): summary, then small h3 blocks */
-.dp .dd-daytrip-summary { font-size: 16px; line-height: 1.7; color: var(--color-ink); max-width: 720px; }
+.dp .dd-daytrip-summary { font-size: 16px; line-height: 1.7; color: var(--color-ink); }
 .dp .dd-daytrip-h3 {
   margin: 26px 0 6px;
   font-family: var(--font-serif), "Source Serif 4", serif;
@@ -368,7 +368,7 @@
   font-weight: 700;
   color: var(--color-ink);
 }
-.dp .dd-daytrip-tips { margin: 0; padding-left: 20px; max-width: 720px; list-style: disc; }
+.dp .dd-daytrip-tips { margin: 0; padding-left: 20px; list-style: disc; }
 .dp .dd-daytrip-tips li { font-size: 15px; line-height: 1.7; color: var(--color-ink); margin-bottom: 4px; }
 
 /* Getting there + Plan your trip: ruled information rows */
@@ -388,7 +388,7 @@
 .dp .dd-route-right { text-align: right; }
 .dp .dd-route-duration { display: block; font-size: 15px; font-weight: 600; color: var(--color-ink); }
 .dp .dd-route-cost { display: block; font-size: 13px; color: var(--color-ink-2); }
-.dp .dd-route-notes { margin-top: 10px; max-width: 720px; font-size: 15px; line-height: 1.7; color: var(--color-ink-2); }
+.dp .dd-route-notes { margin-top: 10px; font-size: 15px; line-height: 1.7; color: var(--color-ink-2); }
 
 .dp .dd-plan { display: grid; grid-template-columns: 200px 1fr; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid var(--color-line); }
 .dp .dd-plan dt {
@@ -432,7 +432,7 @@
 .dp .faq-item.open .faq-question { color: var(--type-accent-strong); }
 .dp .faq-question:focus-visible { outline-offset: -2px; }
 .dp .faq-chevron { flex-shrink: 0; width: 20px; height: 20px; color: var(--type-accent-strong); }
-.dp .faq-answer { padding: 0 0 16px; max-width: 720px; }
+.dp .faq-answer { padding: 0 0 16px; }
 .dp .faq-answer p { font-size: 15px; line-height: 1.75; color: var(--color-ink-2); }
 
 /* ── CLOSING CTA: teal-ink band into the footer ── */
@@ -595,9 +595,8 @@
   .dp .dd-stops { font-size: 15px; }
   .dp .dd-day-notes { font-size: 16px; }
 
-  /* Getting there: routes side by side */
-  .dp .dd-routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
-  .dp .dd-routes:has(> :only-child) { grid-template-columns: minmax(0, 1fr); max-width: 880px; }
+  /* Getting there (and day-trip routes): one route per row in the split
+     content column (DestinationSection), so 1 route and 6 routes read the same */
   .dp .dd-route { padding: 20px 0; }
   .dp .dd-route-from { font-size: 21px; }
   .dp .dd-route-notes { font-size: 15.5px; }
@@ -611,7 +610,7 @@
   /* More in this province */
   .dp .dd-related { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-  /* FAQ: comfortable rows, answers in a reading column */
+  /* FAQ: rows in the split content column (DestinationSection), chevron beside the question */
   .dp .faq-question { font-size: 16.5px; }
   .dp .faq-answer p { font-size: 16px; }
 
@@ -619,6 +618,28 @@
   .dp .dd-cta { margin-top: 88px; padding: 64px 0; }
   .dp .dd-cta-title { font-size: clamp(36px, 3vw, 44px); }
 }
+/* ── SECTION LAYOUTS (components/DestinationSection.tsx) ──
+   Below 1024px the wrappers are plain blocks, so sections look exactly as
+   before. From 1024px: split = title rail | 720px content column;
+   grid = 2 or 3 equal columns under the title; full = the container width. */
+@media (min-width: 1024px) {
+  .dp .ds--split {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 720px);
+    column-gap: 64px;
+    align-items: start;
+  }
+  .dp .ds--split > .ds-rail { min-width: 0; }
+  .dp .ds--split > .ds-body { min-width: 0; }
+  .dp .ds--sticky > .ds-rail { position: sticky; top: 85px; }
+
+  .dp .ds--grid > .ds-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; }
+  .dp .ds--grid.ds--cols-3 > .ds-body { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .dp .ds--split { grid-template-columns: 240px minmax(0, 1fr); column-gap: 48px; }
+}
+
 /* Narrow desktop: give the intro more of the row */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .dp .dd-head-inner { grid-template-columns: minmax(0, 1fr) 300px; column-gap: 48px; }

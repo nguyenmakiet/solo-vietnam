@@ -18,7 +18,7 @@
 }
 .dp .ec-national-num:hover { text-decoration: underline; text-underline-offset: 3px; }
 .dp .ec-national-label { font-size: 13px; color: var(--color-ink-2); }
-.dp .ec-national-note { margin-top: 10px; max-width: 720px; font-size: 13px; line-height: 1.6; color: var(--color-ink-2); }
+.dp .ec-national-note { margin-top: 10px; font-size: 13px; line-height: 1.6; color: var(--color-ink-2); }
 
 .dp .ec-group { margin-top: 28px; }
 .dp .ec-group-label {
@@ -37,9 +37,14 @@
 .dp .ec-phones a { color: var(--color-ink); text-underline-offset: 3px; }
 .dp .ec-sep { margin: 0 8px; color: var(--color-ink-2); font-weight: 400; }
 .dp .ec-meta { margin-top: 4px; font-size: 14px; color: var(--color-ink-2); }
-.dp .ec-notes { margin-top: 8px; max-width: 720px; font-size: 15px; line-height: 1.65; color: var(--color-ink-2); }
+.dp .ec-notes { margin-top: 8px; font-size: 15px; line-height: 1.65; color: var(--color-ink-2); }
 .dp .ec-checked { margin-top: 6px; font-size: 12px; color: var(--color-ink-2); }
 
 @media (min-width: 640px) {
   .dp .ec-national-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+/* Desktop: the section is a split (components/DestinationSection.tsx); in the
+   720px content column, groups with two or more contacts list them two per row */
+@media (min-width: 1024px) {
+  .dp .ec-list:has(> :nth-child(2)) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
 }
