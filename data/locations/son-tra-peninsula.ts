@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sonTraPeninsula: Location = {
   slug: "son-tra-peninsula",
   name: "Sơn Trà Peninsula",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-10-23",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: 16.122257078414076,
@@ -21,7 +21,7 @@ export const sonTraPeninsula: Location = {
     maxMinutes: 480,
   },
   entranceFee: "Free",
-  openingHours: "Open daily. Best 5:30-9:00 AM for wildlife. Avoid after dark - forest roads are dangerous at night.",
+  openingHours: "Forest roads: 7:30 AM - 6:30 PM (Mar-Sep), 7:30 AM - 5:30 PM (Oct-Feb). The coast road and Linh Ung Pagoda are open longer. Closed during storms and heavy-rain warnings; some routes don't allow automatic scooters.",
   mapUrl: "https://www.google.com/maps?q=16.122257078414076,108.27692670069526",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775884649416!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRGtfTml3amdF!2m2!1d16.11998621388252!2d108.2759459200039!3f170.89627864340687!4f-0.8387997478284603!5f0.7820865974627469" },
   heroImage: heroUrl("son-tra-peninsula-da-nang-4_wfanx0"),
@@ -34,13 +34,13 @@ export const sonTraPeninsula: Location = {
   seoDescription:
     "Sơn Trà Peninsula is Đà Nẵng's wild backyard - a 4,439-hectare nature reserve rising directly from the sea, home to one of Vietnam's last populations of the endangered red-shanked douc langur. Known for scenic mountain roads, quiet northern beaches, and Linh Ứng Pagoda with its 67m Lady Buddha.",
   tips: [
-    "Arrive before 6:00 AM for the best chance of seeing red-shanked douc langurs - they're most active at dawn before day-trippers arrive. Pull over anywhere along the forest road and scan the canopy.",
+    "Be at the forest road right after the gates open at 7:30 AM for the best chance of seeing red-shanked douc langurs - they're most active early in the day before day-trippers arrive. Pull over anywhere along the forest road and scan the canopy.",
     "Vehicle rules matter: automatic scooters (xe tay ga) are banned on the upper mountain roads leading to Đỉnh Bàn Cờ. They're fine for the lower areas - Linh Ứng Pagoda, Bãi Bắc beach, Ghềnh Bàng. For the summit and upper forest roads, you need a manual motorbike (xe số) or car. Check your rental before heading up.",
     "The road to the summit is 10km of steep, narrow switchbacks - ride slowly, check your brakes before leaving, keep fuel topped up (few stations on the peninsula), and don't switch off the engine going downhill.",
     "Macaques (and sometimes doucs) sit on the road - go slowly and don't feed them. Macaques will grab food and can bite; keep snacks in sealed bags.",
     "Never use drones, loud calls, or flash photography near douc langurs. Stress from repeated disturbance can alter their feeding and resting behaviour - the population's long-term survival depends on minimising human impact.",
     "The peninsula has several distinct stops worth planning around: Linh Ứng Pagoda (Lady Buddha, lower area), Bãi Bắc and Bãi Nam (quiet northern beaches), Trạm Radar 29 (former US radar station from the 1960s, known as 'Eye of Indochina'), Hải Đăng Tiên Sa (Sơn Trà Lighthouse, one of Vietnam's 8 oldest, built by the French and operational since 1902), and Đỉnh Bàn Cờ (summit viewpoint at 696m). Note: Trạm Radar 29 is an active military zone managed by the Vietnamese Air Defence Force - visitors can view it from the road but internal access and photography of the installation are strictly prohibited.",
-    "Half-day minimum, full day ideal. A good half-day: leave at 5:30 AM for wildlife on the forest road, continue to the summit viewpoint, swim at Bãi Bắc, finish at Linh Ứng Pagoda.",
+    "Half-day minimum, full day ideal. A good half-day: reach the forest road when the gates open at 7:30 AM for wildlife, continue to the summit viewpoint, swim at Bãi Bắc, finish at Linh Ứng Pagoda.",
     "The legend of Đỉnh Bàn Cờ (Chess Peak): two immortals were said to play chess on this summit. In a fit of anger after losing, one stamped the stone so hard he left a footprint - the mark is called Đá Tiên (Fairy Stone) - then flew back to heaven. The stone chess board and chess pieces remain on the peak today.",
     "Sơn Trà has significant historical weight: on 1 September 1858, French and Spanish forces fired the first shots of their invasion of Vietnam from Đà Nẵng Bay, landing at the foot of the peninsula. It marks the start of almost a century of French colonial rule.",
     "Dress modestly at Linh Ứng Pagoda (covered shoulders and legs). For hiking or forest walking, long sleeves help with insects and sun.",
@@ -99,7 +99,7 @@ export const sonTraPeninsula: Location = {
           { type: "heading", text: "Jungle and Douc Langurs" },
           {
             type: "paragraph",
-            text: "The mid-slopes are dense primary jungle - the best douc langur habitat. Pull over anywhere along the forest road at dawn and scan the canopy; sightings are most likely in the trees directly above the road in the early morning quiet.",
+            text: "The mid-slopes are dense primary jungle - the best douc langur habitat. Pull over anywhere along the forest road right after the gates open and scan the canopy; sightings are most likely in the trees directly above the road in the early morning quiet.",
           },
           { type: "heading", text: "The Summit and Exploring" },
           {
@@ -115,7 +115,7 @@ export const sonTraPeninsula: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Sơn Trà is consistently underestimated by visitors who focus on the beach and the bridges. A half-day loop - leaving at 5:30 AM for wildlife, stopping at the summit viewpoint, swimming at Bãi Bắc, finishing at Linh Ứng Pagoda - is one of the best half-days available in any Vietnamese city. It is one of the few places in Southeast Asia where you can leave a modern city after sunrise and be watching endangered primates less than thirty minutes later. Few places in Vietnam also combine colonial history, Cold War relics, Buddhist pilgrimage sites, and endangered wildlife within such a compact area.",
+            text: "Sơn Trà is consistently underestimated by visitors who focus on the beach and the bridges. A half-day loop - reaching the forest road when the gates open at 7:30 AM for wildlife, stopping at the summit viewpoint, swimming at Bãi Bắc, finishing at Linh Ứng Pagoda - is one of the best half-days available in any Vietnamese city. It is one of the few places in Southeast Asia where you can leave a modern city after sunrise and be watching endangered primates less than thirty minutes later. Few places in Vietnam also combine colonial history, Cold War relics, Buddhist pilgrimage sites, and endangered wildlife within such a compact area.",
           },
           { type: "heading", text: "Langurs, Time and Safety" },
           {
@@ -128,7 +128,7 @@ export const sonTraPeninsula: Location = {
   },
   insights: {
     highlights: [
-      "One of the world's largest remaining populations of the red-shanked douc langur - often described as the most beautiful primate on Earth - viewable from the forest road at dawn",
+      "One of the world's largest remaining populations of the red-shanked douc langur - often described as the most beautiful primate on Earth - viewable from the forest road early in the day",
       "Historical layering: 1858 French invasion landing site, 1960s US radar station, French-era lighthouse all on the same peninsula",
       "Linh Ứng Pagoda: 67-metre Lady Buddha - Vietnam's largest, visible across Đà Nẵng Bay",
       "Summit viewpoint (696m): panoramic views over Đà Nẵng city, bay, Marble Mountains, and the Hải Vân Pass coastline",
@@ -143,7 +143,7 @@ export const sonTraPeninsula: Location = {
     },
     visitorTips: [
       "Use a manual motorbike (xe số), not an automatic scooter - the upper road is steep and automatic scooters are banned",
-      "Arrive before 6 AM and scan the canopy on the forest road for douc langurs",
+      "Be at the forest road when the gates open (7:30 AM) and scan the canopy for douc langurs",
       "Half-day minimum: forest → summit → Bãi Bắc → Linh Ứng Pagoda",
       "Don't feed macaques - they bite and will snatch food",
       "Check weather before heading up: fog and rain make the summit road dangerous",
@@ -155,11 +155,11 @@ export const sonTraPeninsula: Location = {
       },
       {
         question: "What are the chances of seeing douc langurs on Sơn Trà?",
-        answer: "Reasonably good if you go early and know where to look. The red-shanked douc langur population on Sơn Trà is estimated at around 1,300 individuals - one of the largest remaining wild populations anywhere. They're most active in the forest canopy in the early morning (before 8 AM) before heat and noise drive them deeper into the jungle. Slow down and scan the treetops along the mid-slope forest road, especially in quiet stretches away from construction or traffic noise. There's no guarantee, but early morning visits in the dry season give a genuine chance.",
+        answer: "Reasonably good if you go early and know where to look. The red-shanked douc langur population on Sơn Trà is estimated at around 1,300 individuals - one of the largest remaining wild populations anywhere. They're most active in the forest canopy early in the day - best right after the forest-road gates open at 7:30 AM - before heat and noise drive them deeper into the jungle. Slow down and scan the treetops along the mid-slope forest road, especially in quiet stretches away from construction or traffic noise. There's no guarantee, but early morning visits in the dry season give a genuine chance.",
       },
       {
         question: "How long does it take to explore Sơn Trà Peninsula?",
-        answer: "Half a day minimum; a full day is better. A tight half-day (5:30 AM to noon): wildlife on the forest road at dawn, summit viewpoint, swim at Bãi Bắc, finish at Linh Ứng Pagoda. A full day allows a slower pace, time at multiple beaches, and a proper look at the historical sites (Radar 29, the lighthouse). The peninsula is only 10-15km from the city centre so it's easy to combine with an afternoon in Đà Nẵng.",
+        answer: "Half a day minimum; a full day is better. A tight half-day (7:30 AM to noon): wildlife on the forest road right after the gates open, summit viewpoint, swim at Bãi Bắc, finish at Linh Ứng Pagoda. A full day allows a slower pace, time at multiple beaches, and a proper look at the historical sites (Radar 29, the lighthouse). The peninsula is only 10-15km from the city centre so it's easy to combine with an afternoon in Đà Nẵng.",
       },
       {
         question: "Is Sơn Trà Peninsula safe to visit?",

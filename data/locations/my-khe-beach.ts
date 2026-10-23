@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const myKheBeach: Location = {
   slug: "my-khe-beach",
   name: "Mỹ Khê Beach",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-10-23",
   provinces: ["da-nang"],
   destination: "da-nang",
   lat: 16.056869445948998,
@@ -18,7 +18,7 @@ export const myKheBeach: Location = {
   bestSeasonNote: "Apr - Sep (dry season, calmest water); Jun - Jul is the busiest peak, partly driven by the Đà Nẵng International Fireworks Festival. Avoid swimming roughly Oct - Feb, when the northeast monsoon brings rain, bigger waves, and more unpredictable conditions",
   bestTimeOfDay: "The two best windows for swimming are 5:00-9:00 AM (quiet, calm water, fishing boats returning, best light) and 15:00-18:00 PM (livelier, most services open, sunset from around 17:00) - many locals specifically avoid the water in the harsh midday sun.",
   entranceFee: "Free",
-  openingHours: "Open 24/7; lifeguards generally patrol the main swimming zones from around 6 AM to 6 PM in peak season",
+  openingHours: "Open 24/7. Lifeguards on duty 4:30 AM - 7:00 PM (15 Mar - 30 Sep) and 5:00 AM - 6:30 PM (1 Oct - 14 Mar); swim only inside the buoys or red-and-yellow flags.",
   mapUrl: "https://www.google.com/maps?q=16.056869445948998,108.24813952737027",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831138486!6m8!1m7!1sCAoSHENJQUJJaENzR3h1UmROQ2lDd3pRTXBISkVaQzA.!2m2!1d16.06617329164233!2d108.2497981810549!3f346.93574064018156!4f-17.832242318034545!5f0.7820865974627469", },
   heroImage: heroUrl("my-khe-beach-da-nang_wqeiwz"),
@@ -130,7 +130,7 @@ export const myKheBeach: Location = {
     thingsToKnow: {
       crowds: "Morning is peaceful and quiet; becomes crowded with vendors by evening. Swimming areas can feel crowded during peak season due to lifeguard-supervised zoning.",
       difficulty: null,
-      safety: "Strong undertow and currents can affect parts of the beach, especially in rougher months - lifeguards restrict swimming to designated, flagged zones, and there's a staffed rescue presence during patrol hours.",
+      safety: "Strong undertow and currents can affect parts of the beach, especially in rougher months - lifeguards restrict swimming to designated, flagged zones, and there's a staffed rescue presence during patrol hours. Sep-Dec is the risky season: waves build and rip currents form along the beach, with Oct-Nov usually the worst weeks and frequent red flags. Beach rescue: 0236 2218 878.",
       accessibility: "Free beach access. Beach chairs available for rent (around 40,000 VND). Public toilets, changing rooms, and foot washers available. Flat boardwalk good for walking.",
       seasonal: "Apr-Sep is the more reliable swimming season with calmer water; Oct-Feb brings the northeast monsoon, with bigger waves, rain, and conditions that can change quickly - not the best window for swimming even though it's a good one for surfing.",
     },

@@ -175,11 +175,23 @@ export const hoiAn: Destination = {
 
   emergencyContacts: [
     {
+      type: "medical",
+      name: "Saigon Hoi An General Hospital",
+      phone: "0235 3921 656",
+      altPhones: ["1900 8686 30"],
+      hours: "24/7 emergency",
+      languages: ["English", "Vietnamese"],
+      address: "6 Phan Dinh Phung, Hoi An",
+      notes: "1900 numbers are paid calls.",
+      sourceUrl: "https://hcmc.vietnam.embassy.gov.au/files/hchi/list_of_hospitals_jul_2026.pdf",
+      verifiedAt: "2026-07-01",
+    },
+    {
       type: "tourist-hotline",
       name: "Da Nang tourist support hotline (covers Hoi An)",
       phone: "*8899",
-      hours: "check locally",
-      notes: "Shortcode - may need a Vietnamese SIM. Posted on tourist information boards in Hoi An, My Son, Bay Mau and An Bang since the Quang Nam - Da Nang merger.",
+      hours: "24/7",
+      notes: "Shortcode - needs a Vietnamese SIM. Posted on tourist information boards in Hoi An, My Son, Bay Mau and An Bang since the Quang Nam - Da Nang merger.",
       sourceUrl: "https://baovanhoa.vn/du-lich/da-nang-nang-cao-chat-luong-ho-tro-du-khach-theo-huong-an-toan-than-thien-thong-minh-191295.html",
       verifiedAt: "2025-12-24",
     },
