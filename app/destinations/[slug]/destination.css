@@ -619,6 +619,28 @@
   .dp .dd-cta { margin-top: 88px; padding: 64px 0; }
   .dp .dd-cta-title { font-size: clamp(36px, 3vw, 44px); }
 }
+/* ── SECTION LAYOUTS (components/DestinationSection.tsx) ──
+   Below 1024px the wrappers are plain blocks, so sections look exactly as
+   before. From 1024px: split = title rail | 720px content column;
+   grid = 2 or 3 equal columns under the title; full = the container width. */
+@media (min-width: 1024px) {
+  .dp .ds--split {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 720px);
+    column-gap: 64px;
+    align-items: start;
+  }
+  .dp .ds--split > .ds-rail { min-width: 0; }
+  .dp .ds--split > .ds-body { min-width: 0; }
+  .dp .ds--sticky > .ds-rail { position: sticky; top: 85px; }
+
+  .dp .ds--grid > .ds-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; }
+  .dp .ds--grid.ds--cols-3 > .ds-body { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .dp .ds--split { grid-template-columns: 240px minmax(0, 1fr); column-gap: 48px; }
+}
+
 /* Narrow desktop: give the intro more of the row */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .dp .dd-head-inner { grid-template-columns: minmax(0, 1fr) 300px; column-gap: 48px; }
