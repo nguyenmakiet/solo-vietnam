@@ -284,6 +284,8 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "thien-cam-beach",
   ],
   "batch-8": [
+    "bai-truong-beach",
+    "bao-dai-waterfall",
     "chen-kieu-pagoda",
     "hang-de-cho-waterfall",
     "khleang-pagoda",
