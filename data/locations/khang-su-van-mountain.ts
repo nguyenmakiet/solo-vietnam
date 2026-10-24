@@ -57,7 +57,7 @@ export const khangSuVanMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Khang Su Van - also known as Phàn Liên San or U Thái San - rises to about 3,012 m on the natural border between Vietnam and China in Lai Châu province. It is usually listed fifth among Vietnam's highest peaks, after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain) and [Ky Quan San](/locations/ky-quan-san-mountain). Locals regard it as a natural wall protecting Vietnam's northern frontier.",
+            text: "Khang Su Van - also known as Phàn Liên San or U Thái San - rises to about 3,012 m on the natural border between Vietnam and China in Lai Châu province. It is usually listed fifth among [Vietnam's highest peaks](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain) and [Ky Quan San](/locations/ky-quan-san-mountain). Locals regard it as a natural wall protecting Vietnam's northern frontier.",
           },
           {
             type: "paragraph",

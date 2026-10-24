@@ -57,7 +57,7 @@ export const kyQuanSanMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Ky Quan San rises to about 3,046 m in the Hoàng Liên Sơn range and forms the natural border between Lào Cai and Lai Châu provinces. It is usually listed as Vietnam's fourth-highest peak, after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain) and [Pu Ta Leng](/locations/pu-ta-leng-mountain), and it is one of the most famous cloud-hunting spots in northern Vietnam, wrapped in cloud for much of the year.",
+            text: "Ky Quan San rises to about 3,046 m in the Hoàng Liên Sơn range and forms the natural border between Lào Cai and Lai Châu provinces. It is usually listed as [Vietnam's fourth-highest peak](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain) and [Pu Ta Leng](/locations/pu-ta-leng-mountain), and it is one of the most famous cloud-hunting spots in northern Vietnam, wrapped in cloud for much of the year.",
           },
           {
             type: "paragraph",

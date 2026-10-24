@@ -60,7 +60,7 @@ export const taChiNhuMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Ta Chi Nhu rises to about 2,979 m in the Hoàng Liên Sơn range, on the border between the former Yên Bái province (now part of Lào Cai) and Sơn La. It is usually listed seventh among Vietnam's highest peaks, after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain) and [Ta Lien Son](/locations/ta-lien-son-mountain).",
+            text: "Ta Chi Nhu rises to about 2,979 m in the Hoàng Liên Sơn range, on the border between the former Yên Bái province (now part of Lào Cai) and Sơn La. It is usually listed seventh among [Vietnam's highest peaks](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain) and [Ta Lien Son](/locations/ta-lien-son-mountain).",
           },
           {
             type: "paragraph",

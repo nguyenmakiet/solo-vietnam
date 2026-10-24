@@ -57,7 +57,7 @@ export const nhiuCoSanMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Nhiu Co San rises to about 2,965 m in the Hoàng Liên Sơn range, in the Bát Xát area of Lào Cai. It is usually listed ninth among Vietnam's highest peaks, after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain), [Ta Lien Son](/locations/ta-lien-son-mountain), [Ta Chi Nhu](/locations/ta-chi-nhu-mountain) and [Po Ma Lung](/locations/po-ma-lung-mountain).",
+            text: "Nhiu Co San rises to about 2,965 m in the Hoàng Liên Sơn range, in the Bát Xát area of Lào Cai. It is usually listed ninth among [Vietnam's highest peaks](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain), [Ta Lien Son](/locations/ta-lien-son-mountain), [Ta Chi Nhu](/locations/ta-chi-nhu-mountain) and [Po Ma Lung](/locations/po-ma-lung-mountain).",
           },
           {
             type: "paragraph",

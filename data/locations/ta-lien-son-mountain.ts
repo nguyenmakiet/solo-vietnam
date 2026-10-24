@@ -56,7 +56,7 @@ export const taLienSonMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Ta Lien Son - also known as Cổ Trâu mountain - rises to about 2,996 m on the southwestern side of the Hoàng Liên Sơn range, in Tả Lèng commune on the Lai Châu side of the Lào Cai-Lai Châu boundary. It is usually listed sixth among Vietnam's highest peaks, after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain) and [Khang Su Van](/locations/khang-su-van-mountain), and it draws younger trekkers with its steep slopes and sharp summit.",
+            text: "Ta Lien Son - also known as Cổ Trâu mountain - rises to about 2,996 m on the southwestern side of the Hoàng Liên Sơn range, in Tả Lèng commune on the Lai Châu side of the Lào Cai-Lai Châu boundary. It is usually listed sixth among [Vietnam's highest peaks](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain) and [Khang Su Van](/locations/khang-su-van-mountain), and it draws younger trekkers with its steep slopes and sharp summit.",
           },
           {
             type: "paragraph",

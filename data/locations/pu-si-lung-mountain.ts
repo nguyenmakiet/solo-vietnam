@@ -57,7 +57,7 @@ export const puSiLungMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Pu Si Lung is one of the highest mountains in Vietnam, rising to roughly 3,076 m (some sources give 3,083 m) on the border with China in the far northwest of Lai Châu province. Most current lists rank it the country's second-highest peak, after [Fansipan](/locations/fansipan), though some older sources rank it third behind [Pu Ta Leng](/locations/pu-ta-leng-mountain). Often called the \"roof of the Vietnam-China border\", it is also widely regarded as one of the toughest trekking routes in Vietnam.",
+            text: "Pu Si Lung is one of the highest mountains in Vietnam, rising to roughly 3,076 m (some sources give 3,083 m) on the border with China in the far northwest of Lai Châu province. Most current lists rank it the country's [second-highest peak](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan), though some older sources rank it third behind [Pu Ta Leng](/locations/pu-ta-leng-mountain). Often called the \"roof of the Vietnam-China border\", it is also widely regarded as one of the toughest trekking routes in Vietnam.",
           },
           {
             type: "paragraph",

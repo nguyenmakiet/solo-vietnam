@@ -56,7 +56,7 @@ export const fansipan: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "At 3,143 metres, Fansipan is the highest point in Vietnam and Indochina, rising from the Hoàng Liên Sơn range inside Hoàng Liên National Park, 9km southwest of Sapa. It is the highest peak across the entire Indochinese Peninsula - Vietnam, Laos, and Cambodia - which is why it carries the title 'Roof of Indochina'.",
+            text: "At 3,143 metres, Fansipan is [the highest point in Vietnam](/blog/vietnam-10-highest-mountains) and Indochina, rising from the Hoàng Liên Sơn range inside Hoàng Liên National Park, 9km southwest of Sapa. It is the highest peak across the entire Indochinese Peninsula - Vietnam, Laos, and Cambodia - which is why it carries the title 'Roof of Indochina'.",
           },
           { type: "heading", text: "Origin of the Name" },
           {

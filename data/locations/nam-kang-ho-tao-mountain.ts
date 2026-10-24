@@ -55,7 +55,7 @@ export const namKangHoTaoMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Nam Kang Ho Tao (also written Nam Kang Hô Tao) rises to 2,881 m in Hoàng Liên National Park, on the border between Lai Châu and Lào Cai. It is usually listed among Vietnam's 15 highest peaks - around 14th - but it's famous for difficulty rather than height. Trekkers began exploring it around 2017, and it quickly gained a reputation as one of the hardest climbs in the Northwest, often ranked tougher than [Pu Si Lung](/locations/pu-si-lung-mountain) and [Pu Ta Leng](/locations/pu-ta-leng-mountain). On the Lào Cai side, the peak sits in subzone 303A on Hoàng Tha Thầu mountain, in Tả Trung Hồ hamlet of Bản Hồ commune.",
+            text: "Nam Kang Ho Tao (also written Nam Kang Hô Tao) rises to 2,881 m in Hoàng Liên National Park, on the border between Lai Châu and Lào Cai. It is usually listed among [Vietnam's 15 highest peaks](/blog/vietnam-10-highest-mountains) - around 14th - but it's famous for difficulty rather than height. Trekkers began exploring it around 2017, and it quickly gained a reputation as one of the hardest climbs in the Northwest, often ranked tougher than [Pu Si Lung](/locations/pu-si-lung-mountain) and [Pu Ta Leng](/locations/pu-ta-leng-mountain). On the Lào Cai side, the peak sits in subzone 303A on Hoàng Tha Thầu mountain, in Tả Trung Hồ hamlet of Bản Hồ commune.",
           },
           {
             type: "paragraph",
