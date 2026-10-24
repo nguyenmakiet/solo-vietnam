@@ -24,8 +24,9 @@ export const paSyWaterfall: Location = {
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=14.59512835252321,108.25679237041005",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775832954200!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHlnNmlHelFF!2m2!1d14.59510150259714!2d108.2567019742836!3f12.79420576998577!4f4.785945864267774!5f0.7820865974627469", },
-  heroImage: heroUrl("pa-sy-waterfall-mang-den-kontum_p1pqgo"),
+  heroImage: heroUrl("pasy-waterfall-kontum_nmu8kj"),
   gallery: [
+    "pa-sy-waterfall-mang-den-kontum_p1pqgo",
     "pa-sy-waterfall-mang-den-kontum-2_yvpb9u",
     "pa-sy-waterfall-mang-den-kontum-3_knegqv",
     "pa-sy-waterfall-mang-den-kontum-4_hpqodd",

@@ -28,9 +28,17 @@ export const baoDaiWaterfall: Location = {
   entranceFee: "Free. The former tourist site is abandoned and no tickets are sold. A local family near the gate has looked after motorbikes for about 10,000 VND and sold drinks, but don't count on any services.",
   openingHours: "No fixed hours. The gate is often closed: motorbikes can usually get in, while cars park outside or call the number on the sign at the gate to have it opened. Visit in daylight only.",
   mapUrl: "https://www.google.com/maps?q=11.606102,108.350351",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("bao-dai-waterfall-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792831310564!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ213WlRQOEFF!2m2!1d11.60639166218172!2d108.3504316821435!3f4.455132015724473!4f-24.669861443570227!5f0.7820865974627469" },
+  heroImage: heroUrl("bao-dai-waterfall-lam-dong_vfptrq"),
+  gallery: [
+    "bao-dai-waterfall-lam-dong-2_wlmdru",
+    "bao-dai-waterfall_soj5i9",
+    "bao-dai-waterfall-lam-dong_dnqxx2",
+    "bao-dai-waterfall-lam-dong-8_zr8bxl",
+    "bao-dai-waterfall-lam-dong-7_g5jngk",
+    "bao-dai-waterfall-lam-dong-6_kq6jvh",
+    "bao-dai-waterfall-lam-dong-5_kzgadp",
+  ],
   seoDescription:
     "Bảo Đại Waterfall (Jraiblian) in Tà Hine, Lâm Đồng, drops about 70 m in three streams through thick forest - an abandoned former tourist site, free to visit and almost always empty, a long ride from Đà Lạt with slippery paths and no services.",
   tips: [

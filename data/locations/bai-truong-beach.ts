@@ -28,9 +28,19 @@ export const baiTruongBeach: Location = {
   entranceFee: "Free public beach. Sunbeds, umbrellas, water sports, massages, food and drinks are paid separately; many beach bars let you use a sunbed if you order a drink. Parking is free at some access points.",
   openingHours: "Open 24 hours.",
   mapUrl: "https://www.google.com/maps?q=10.152127,103.973292",
-  streetView: { embedUrl: "" },
-  heroImage: heroUrl("bai-truong-beach-hero_placeholder"),
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792831053776!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ21qZk9lOUFF!2m2!1d10.15173717480021!2d103.9730482646671!3f358.9690397264258!4f-12.215212369007062!5f0.7820865974627469" },
+  heroImage: heroUrl("long-beach-phu-quoc-kien-giang-2_mk9p6f"),
+  gallery: [
+    "long-beach-phu-quoc-kien-giang-10_ddydz6",
+    "long-beach-phu-quoc-kien-giang-11_ydrcgj",
+    "long-beach-phu-quoc-kien-giang-5_pv1hfn",
+    "long-beach-phu-quoc-kien-giang-7_zkb6yq",
+    "long-beach-phu-quoc-kien-giang-6_lv1loi",
+    "long-beach-phu-quoc-kien-giang-9_l0bolj",
+    "long-beach-phu-quoc-kien-giang-4_yublok",
+    "long-beach-phu-quoc-kien-giang-8_arsdul",
+    "long-beach-phu-quoc-kien-giang-3_ypufeh",
+  ],
   seoDescription:
     "Bãi Trường (Long Beach) is a roughly 20 km stretch of sand on Phú Quốc's west coast, from Dương Đông down towards An Thới - known for some of the island's best sunsets, beach bars and fire shows, with conditions that vary a lot by section.",
   tips: [
