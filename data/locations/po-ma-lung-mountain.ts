@@ -54,7 +54,7 @@ export const poMaLungMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Po Ma Lung rises to about 2,967 m on the Vietnam-China border, above Nà Đoong village in what is now Khổng Lào commune (formerly Bản Lang commune, Phong Thổ district), Lai Châu. It is usually listed eighth among Vietnam's highest peaks, after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain), [Ta Lien Son](/locations/ta-lien-son-mountain) and [Ta Chi Nhu](/locations/ta-chi-nhu-mountain). The trailhead is about 40-45 km from Lai Châu city.",
+            text: "Po Ma Lung rises to about 2,967 m on the Vietnam-China border, above Nà Đoong village in what is now Khổng Lào commune (formerly Bản Lang commune, Phong Thổ district), Lai Châu. It is usually listed eighth among [Vietnam's highest peaks](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain), [Ta Lien Son](/locations/ta-lien-son-mountain) and [Ta Chi Nhu](/locations/ta-chi-nhu-mountain). The trailhead is about 40-45 km from Lai Châu city.",
           },
           {
             type: "paragraph",

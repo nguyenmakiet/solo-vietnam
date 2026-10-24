@@ -56,7 +56,7 @@ export const puTaLengMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Pu Ta Leng (often written Putaleng) rises to about 3,049 m in the Hoàng Liên Sơn range, roughly 20 km northeast of Lai Châu city and bordering the Sa Pa area of Lào Cai. Most current lists rank it Vietnam's third-highest peak, after [Fansipan](/locations/fansipan) and [Pu Si Lung](/locations/pu-si-lung-mountain), though some older sources give a higher figure (around 3,096 m) and place it second. Where Fansipan has a cable car and crowds, Pu Ta Leng still feels wild, with trails that see far fewer footprints.",
+            text: "Pu Ta Leng (often written Putaleng) rises to about 3,049 m in the Hoàng Liên Sơn range, roughly 20 km northeast of Lai Châu city and bordering the Sa Pa area of Lào Cai. Most current lists rank it [Vietnam's third-highest peak](/blog/vietnam-10-highest-mountains), after [Fansipan](/locations/fansipan) and [Pu Si Lung](/locations/pu-si-lung-mountain), though some older sources give a higher figure (around 3,096 m) and place it second. Where Fansipan has a cable car and crowds, Pu Ta Leng still feels wild, with trails that see far fewer footprints.",
           },
           {
             type: "paragraph",

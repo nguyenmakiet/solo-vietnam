@@ -53,7 +53,7 @@ export const chungNhiaVuMountain: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Chung Nhía Vũ stands at about 2,918 m on the Vietnam-China border in Lai Châu, in what is now Sin Suối Hồ commune (formerly Nậm Xe commune, Phong Thổ district). It is usually listed tenth among Vietnam's highest known peaks, rounding out a list that includes [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain), [Ta Lien Son](/locations/ta-lien-son-mountain), [Ta Chi Nhu](/locations/ta-chi-nhu-mountain), [Po Ma Lung](/locations/po-ma-lung-mountain) and [Nhiu Co San](/locations/nhiu-co-san-mountain). The mountain forms part of the natural border, near boundary markers 83, 84 and 85.",
+            text: "Chung Nhía Vũ stands at about 2,918 m on the Vietnam-China border in Lai Châu, in what is now Sin Suối Hồ commune (formerly Nậm Xe commune, Phong Thổ district). It is usually listed tenth among [Vietnam's highest known peaks](/blog/vietnam-10-highest-mountains), rounding out a list that includes [Fansipan](/locations/fansipan), [Pu Si Lung](/locations/pu-si-lung-mountain), [Pu Ta Leng](/locations/pu-ta-leng-mountain), [Ky Quan San](/locations/ky-quan-san-mountain), [Khang Su Van](/locations/khang-su-van-mountain), [Ta Lien Son](/locations/ta-lien-son-mountain), [Ta Chi Nhu](/locations/ta-chi-nhu-mountain), [Po Ma Lung](/locations/po-ma-lung-mountain) and [Nhiu Co San](/locations/nhiu-co-san-mountain). The mountain forms part of the natural border, near boundary markers 83, 84 and 85.",
           },
           {
             type: "paragraph",
