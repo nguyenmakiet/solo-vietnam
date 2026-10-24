@@ -329,6 +329,36 @@
 .bp .bp-prose td:first-child { font-weight: 500; min-width: 160px; }
 .bp .bp-prose td:nth-child(2) { white-space: nowrap; color: var(--color-signal-text); font-weight: 600; }
 .bp .bp-prose .no-highlight td:nth-child(2) { color: inherit; font-weight: inherit; white-space: normal; }
+/* Peaks comparison (vietnam-10-highest-mountains): 10 columns, wider than the
+   article, so it scrolls sideways inside .bp-table-wrap with # and Peak pinned
+   on the left. Overrides the contacts-table first/second column look. */
+.bp .bp-prose .peaks-table::before {
+  content: "Scroll sideways to see every column →";
+  display: block; margin-bottom: -16px;
+  font-size: 12px; color: var(--color-ink-2);
+}
+.bp .bp-prose .peaks-table table { min-width: 1180px; font-size: 13.5px; }
+.bp .bp-prose .peaks-table th,
+.bp .bp-prose .peaks-table td { padding: 9px 10px; }
+.bp .bp-prose .peaks-table th:first-child,
+.bp .bp-prose .peaks-table td:first-child {
+  width: 40px; min-width: 40px; max-width: 40px;
+  text-align: center; font-weight: 600;
+}
+.bp .bp-prose .peaks-table td:nth-child(2) { white-space: normal; color: inherit; font-weight: 600; min-width: 140px; }
+.bp .bp-prose .peaks-table th:nth-child(-n+2),
+.bp .bp-prose .peaks-table td:nth-child(-n+2) { position: sticky; left: 0; z-index: 1; }
+.bp .bp-prose .peaks-table th:nth-child(2),
+.bp .bp-prose .peaks-table td:nth-child(2) { left: 40px; box-shadow: inset -1px 0 0 var(--color-line); }
+.bp .bp-prose .peaks-table td:nth-child(-n+2) { background: var(--color-surface); }
+.bp .bp-prose .peaks-table td:nth-child(3) { white-space: nowrap; }
+.bp .bp-prose .peaks-table td:nth-child(4) { min-width: 120px; }
+.bp .bp-prose .peaks-table td:nth-child(5) { min-width: 130px; }
+.bp .bp-prose .peaks-table td:nth-child(6) { min-width: 110px; }
+.bp .bp-prose .peaks-table td:nth-child(7),
+.bp .bp-prose .peaks-table td:nth-child(8) { min-width: 140px; }
+.bp .bp-prose .peaks-table td:nth-child(9) { min-width: 80px; }
+.bp .bp-prose .peaks-table td:nth-child(10) { min-width: 200px; }
 /* Provinces-merged table (vietnam-34-provinces-explained): soft column tints */
 .bp .bp-prose .provinces-merge-table td:nth-child(1) { background: #f2f1ec; white-space: normal; }
 .bp .bp-prose .provinces-merge-table td:nth-child(2) { background: #eff3eb; color: var(--color-ink); font-weight: 500; white-space: normal; }

@@ -1,3 +1,4 @@
+import { preconnect } from "react-dom"
 import type { Location } from "@/data/location"
 import { fansipan } from "@/data/locations/fansipan"
 import { puSiLungMountain } from "@/data/locations/pu-si-lung-mountain"
@@ -21,9 +22,16 @@ const LOCATIONS: Location[] = [
   taLienSonMountain, taChiNhuMountain, poMaLungMountain, nhiuCoSanMountain, chungNhiaVuMountain,
 ]
 
+// Card photo: the same 600x400 crop as the /map card; null = no photo yet
+const popupImageUrl = (heroImage: string | undefined) =>
+  !heroImage || heroImage.includes("placeholder") ? null : heroImage.replace("w_1200,h_630,c_fill", "w_600,h_400,c_fill")
+
 const provinceLabel = (slug: string) => slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
 
 export default function HighestPeaksMap() {
+  // Basemap tiles and card photos: open both connections before the map needs them
+  preconnect("https://server.arcgisonline.com")
+  preconnect("https://res.cloudinary.com")
   const bySlug = new Map(LOCATIONS.map((l) => [l.slug, l]))
   const points: NumberedPoint[] = VIETNAM_HIGHEST_PEAKS.flatMap((peak) => {
     const loc = bySlug.get(peak.slug)
@@ -34,6 +42,7 @@ export default function HighestPeaksMap() {
       name: loc.name,
       detail: `${peak.elevation.toLocaleString("en-US")} m`,
       province: loc.provinces.map(provinceLabel).join(" / "),
+      image: popupImageUrl(loc.heroImage),
       lat: loc.lat,
       lng: loc.lng,
       offset: peak.markerOffset,
@@ -43,6 +52,7 @@ export default function HighestPeaksMap() {
     <NumberedPointsMap
       points={points}
       focus={PEAK_CLUSTER_RANKS}
+      defaultView="all"
       label="Map of Vietnam's 10 highest peaks"
       allLabel="Show all 10 peaks"
       focusLabel="Zoom to the Sa Pa cluster"

@@ -2,14 +2,14 @@
 
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
-import { createBaseMap, loadLeaflet } from "@/components/map-shared"
+import { PopupImage, createBaseMap, loadLeaflet, preloadImage } from "@/components/map-shared"
 import "./numbered-points-map.css"
 
 // ─── Numbered points map for blog posts ──────────────────────────────────────
 // Same base map as /map (createBaseMap in map-shared.tsx), with numbered round
-// markers and a small card for the tapped point. Leaflet loads once the map
-// scrolls near the viewport; until then a fixed-height placeholder holds the
-// space. On touch screens the map starts locked so a swipe scrolls the page:
+// markers and a small card for the tapped point. The Leaflet code downloads
+// as soon as the browser is idle, and the map is created once it scrolls near
+// the viewport; until then a fixed-height placeholder holds the space. On touch screens the map starts locked so a swipe scrolls the page:
 // a tap on the map unlocks pan and pinch zoom, "Done" locks it again.
 
 export type NumberedPoint = {
@@ -21,15 +21,21 @@ export type NumberedPoint = {
   /** Second line of the card, e.g. "3,143 m" */
   detail?: string
   province: string
+  /** Card photo URL, or null when the location has no photo yet */
+  image?: string | null
   lat: number
   lng: number
   /** Display-only marker nudge in screen pixels [x, y], to separate near-identical points */
   offset?: [number, number]
 }
 
-// [x, y]: y clears the button row at the top
-const FIT_PADDING: [number, number] = [30, 56]
-const FIT_MAX_ZOOM = 12
+// The top padding clears the button row; the rest stays tight so the whole
+// set can open one zoom step closer
+const FIT_OPTIONS = {
+  paddingTopLeft: [20, 56] as [number, number],
+  paddingBottomRight: [20, 20] as [number, number],
+  maxZoom: 12,
+}
 const MARKER_SIZE = 28
 const MARKER_SIZE_SELECTED = 34
 
@@ -48,6 +54,7 @@ const markerIcon = (L: typeof import("leaflet"), p: NumberedPoint, selected: boo
 export default function NumberedPointsMap({
   points,
   focus,
+  defaultView = "focus",
   label,
   allLabel = "Show all",
   focusLabel = "Zoom in",
@@ -55,6 +62,8 @@ export default function NumberedPointsMap({
   points: NumberedPoint[]
   /** Numbers of the points the default view fits; all points when omitted */
   focus?: number[]
+  /** View the map opens on: the focus points, or all points with a button to zoom to the focus */
+  defaultView?: "all" | "focus"
   /** Accessible name of the map */
   label: string
   allLabel?: string
@@ -71,7 +80,7 @@ export default function NumberedPointsMap({
   // Touch screen: the map starts locked and gets a "Done" button once unlocked
   const [touch, setTouch] = useState(false)
   const lockedRef = useRef(false)
-  const [showingAll, setShowingAll] = useState(!focus)
+  const [showingAll, setShowingAll] = useState(!focus || defaultView === "all")
 
   const focusPoints = focus ? points.filter((p) => focus.includes(p.n)) : points
   const boundsOf = (list: NumberedPoint[]) => list.map((p) => [p.lat, p.lng] as [number, number])
@@ -102,9 +111,11 @@ export default function NumberedPointsMap({
       LRef.current = L
       const map = createBaseMap(
         L, container,
-        { bounds: L.latLngBounds(boundsOf(focusPoints)), padding: FIT_PADDING, maxZoom: FIT_MAX_ZOOM },
+        { bounds: L.latLngBounds(boundsOf(showingAll ? points : focusPoints)), padding: [0, 0] },
         () => alive,
       )
+      // createBaseMap pads evenly: refit with room for the buttons at the top only
+      map.fitBounds(L.latLngBounds(boundsOf(showingAll ? points : focusPoints)), FIT_OPTIONS)
       // The wheel never zooms an embedded map: it scrolls the post
       map.scrollWheelZoom.disable()
       map.on("click", () => {
@@ -119,11 +130,14 @@ export default function NumberedPointsMap({
       }
       setMapReady(true)
     }
+    // Warm the Leaflet download while the reader is still above the map
+    const idle = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 1))
+    idle(() => { loadLeaflet() })
     const observer = new IntersectionObserver((entries) => {
       if (!entries[0].isIntersecting) return
       observer.disconnect()
       init()
-    }, { rootMargin: "200px" })
+    }, { rootMargin: "800px" })
     observer.observe(wrap)
     const markers = markersRef.current
     return () => {
@@ -154,6 +168,8 @@ export default function NumberedPointsMap({
           e.originalEvent.stopPropagation()
           setSelected(p)
         })
+        // Photo starts downloading before the click lands
+        .on("mousedown touchstart", () => preloadImage(p.image ?? null))
         .on("keypress", (e: import("leaflet").LeafletKeyboardEvent) => {
           const key = e.originalEvent.key
           if (key === "Enter" || key === " ") {
@@ -196,9 +212,7 @@ export default function NumberedPointsMap({
     const L = LRef.current
     if (!map || !L) return
     const next = !showingAll
-    map.flyToBounds(L.latLngBounds(boundsOf(next ? points : focusPoints)), {
-      padding: FIT_PADDING, maxZoom: FIT_MAX_ZOOM, duration: 0.6,
-    })
+    map.flyToBounds(L.latLngBounds(boundsOf(next ? points : focusPoints)), { ...FIT_OPTIONS, duration: 0.6 })
     setShowingAll(next)
   }
 
@@ -223,6 +237,11 @@ export default function NumberedPointsMap({
         {selected && (
           <div className="map-popup npm-popup" onClick={(e) => e.stopPropagation()}>
             <Link href={`/locations/${selected.slug}`} className="map-popup-card-link">
+              {selected.image && (
+                <div className="map-popup-thumb">
+                  <PopupImage key={selected.slug} src={selected.image} alt={selected.name} />
+                </div>
+              )}
               <div className="map-popup-body">
                 <span className="npm-popup-num">No. {selected.n}</span>
                 <div className="map-popup-name">{selected.name}</div>

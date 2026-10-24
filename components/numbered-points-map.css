@@ -12,11 +12,14 @@
 /* Fixed height before and after Leaflet loads: no layout shift */
 .npm-stage {
   position: relative;
-  height: 520px;
+  height: 560px;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-card);
   overflow: hidden;
   background: var(--color-paper);
+  /* Own stacking context: Leaflet's panes (z-index 400+) and controls (1000)
+     stay inside the map instead of rising above the sticky site header (100) */
+  isolation: isolate;
 }
 .npm-skeleton {
   position: absolute;
