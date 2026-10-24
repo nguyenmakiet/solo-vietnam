@@ -10,6 +10,7 @@ import CloudImage from "@/components/CloudImage"
 import CloudinaryImage from "@/components/CloudinaryImage"
 import CloudVideo from "@/components/CloudVideo"
 import VietnamWarThreePlacesMap from "@/components/VietnamWarThreePlacesMap"
+import HighestPeaksMap from "@/components/HighestPeaksMap"
 import "../blog.css"
 import remarkGfm from "remark-gfm"
 
@@ -67,6 +68,8 @@ const components = {
   CloudVideo,
   // Editorial map: <VietnamWarThreePlacesMap />
   VietnamWarThreePlacesMap,
+  // Leaflet map of the 10 highest peaks: <HighestPeaksMap />
+  HighestPeaksMap,
   // The page title is the only h1: a "# heading" inside a post renders as a section h2
   h1: ({ children }: { children: React.ReactNode }) => {
     const text = typeof children === "string" ? children : ""
