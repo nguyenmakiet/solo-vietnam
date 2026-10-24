@@ -3,6 +3,8 @@
 import { useState, useEffect, useCallback, useRef } from "react"
 
 const CDN = "https://res.cloudinary.com/dl5kqhspv/image/upload"
+// photos shown in the grid; the last one carries the "+N photos" overlay
+const VISIBLE = 3
 
 interface GalleryLightboxProps {
   publicIds: string[]
@@ -62,28 +64,33 @@ export default function GalleryLightbox({ publicIds, locationName, streetViewUrl
   return (
     <>
       <div className="gallery-grid">
-        {publicIds.map((publicId, i) => (
-          <button
-            key={publicId}
-            type="button"
-            className={`gallery-tile${i === 0 ? " gallery-tile--lead" : ""}`}
-            aria-label={`Open photo ${i + 1} of ${publicIds.length}`}
-            onClick={(e) => open(e, () => setActiveIndex(i))}
-          >
-            <img
-              // lead photo spans two columns, so it gets a larger source
-              src={`${CDN}/${i === 0 ? "w_1000,h_750" : "w_600,h_450"},c_fill,q_auto,f_auto/${publicId}`}
-              alt={`${locationName} ${i + 1}`}
-              className="gallery-img"
-              loading="lazy"
-              decoding="async"
-            />
-          </button>
-        ))}
+        {/* Only the first three photos are rendered; the rest load in the lightbox */}
+        {publicIds.slice(0, VISIBLE).map((publicId, i) => {
+          const more = i === VISIBLE - 1 ? publicIds.length - VISIBLE : 0
+          return (
+            <button
+              key={publicId}
+              type="button"
+              className={`gallery-tile${i === 0 ? " gallery-tile--lead" : ""}`}
+              aria-label={more > 0 ? `Show all ${publicIds.length} photos` : `Open photo ${i + 1} of ${publicIds.length}`}
+              onClick={(e) => open(e, () => setActiveIndex(i))}
+            >
+              <img
+                // lead photo spans two columns, so it gets a larger source
+                src={`${CDN}/${i === 0 ? "w_1000,h_750" : "w_600,h_450"},c_fill,q_auto,f_auto/${publicId}`}
+                alt={`${locationName} ${i + 1}`}
+                className="gallery-img"
+                loading="lazy"
+                decoding="async"
+              />
+              {more > 0 && <span className="gallery-more" aria-hidden="true">+{more} photos</span>}
+            </button>
+          )
+        })}
         {streetViewUrl && (
           <button
             type="button"
-            className="gallery-tile"
+            className="gallery-tile gallery-tile--streetview"
             aria-label={`Open Street View of ${locationName}`}
             onClick={(e) => open(e, () => setStreetViewOpen(true))}
           >
