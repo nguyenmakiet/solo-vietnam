@@ -25,11 +25,12 @@ export const VIETNAM_HIGHEST_PEAKS: RankedPeak[] = [
   { rank: 5, slug: "khang-su-van-mountain", elevation: 3012 },
   { rank: 6, slug: "ta-lien-son-mountain", elevation: 2996 },
   { rank: 7, slug: "ta-chi-nhu-mountain", elevation: 2979 },
-  // Po Ma Lung and Chung Nhia Vu are ~120 m apart in their location files:
-  // the two numbers sit side by side, touching at the summits
-  { rank: 8, slug: "po-ma-lung-mountain", elevation: 2967, markerOffset: [-14, 0] },
+  // Po Ma Lung and Chung Nhia Vu are ~2.4 km apart (Chung Nhia Vu to the
+  // south-east): at the default zoom their numbers would overlap, so each is
+  // nudged a few pixels away from the other
+  { rank: 8, slug: "po-ma-lung-mountain", elevation: 2967, markerOffset: [-8, -6] },
   { rank: 9, slug: "nhiu-co-san-mountain", elevation: 2965 },
-  { rank: 10, slug: "chung-nhia-vu-mountain", elevation: 2918, markerOffset: [14, 0] },
+  { rank: 10, slug: "chung-nhia-vu-mountain", elevation: 2918, markerOffset: [8, 6] },
 ]
 
 /** Ranks shown in the default view: the Hoang Lien Son cluster around Sa Pa */
