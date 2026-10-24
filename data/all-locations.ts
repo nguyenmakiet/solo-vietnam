@@ -21,8 +21,10 @@ import { backBeachVungTau } from "@/data/locations/back-beach-vung-tau"
 import { baiDaiCamRanhBeach } from "@/data/locations/bai-dai-cam-ranh-beach"
 import { baiDinhPagoda } from "@/data/locations/bai-dinh-pagoda"
 import { baiMonBeach } from "@/data/locations/bai-mon-beach"
+import { baiTruongBeach } from "@/data/locations/bai-truong-beach"
 import { baiTuLongBay } from "@/data/locations/bai-tu-long-bay"
 import { banGiocWaterfall } from "@/data/locations/ban-gioc-waterfall"
+import { baoDaiWaterfall } from "@/data/locations/bao-dai-waterfall"
 import { batPagodaSocTrang } from "@/data/locations/bat-pagoda-soc-trang"
 import { bauSau } from "@/data/locations/bau-sau"
 import { bayMauCoconutForest } from "@/data/locations/bay-mau-coconut-forest"
@@ -314,8 +316,10 @@ export const allLocations: Location[] = [
   baiDaiCamRanhBeach,
   baiDinhPagoda,
   baiMonBeach,
+  baiTruongBeach,
   baiTuLongBay,
   banGiocWaterfall,
+  baoDaiWaterfall,
   batPagodaSocTrang,
   bauSau,
   bayMauCoconutForest,
