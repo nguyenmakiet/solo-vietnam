@@ -11,6 +11,7 @@ import CloudinaryImage from "@/components/CloudinaryImage"
 import CloudVideo from "@/components/CloudVideo"
 import VietnamWarThreePlacesMap from "@/components/VietnamWarThreePlacesMap"
 import HighestPeaksMap from "@/components/HighestPeaksMap"
+import FaqAccordion, { type FaqItem } from "@/components/FaqAccordion"
 import "../blog.css"
 import remarkGfm from "remark-gfm"
 
@@ -70,6 +71,8 @@ const components = {
   VietnamWarThreePlacesMap,
   // Leaflet map of the 10 highest peaks: <HighestPeaksMap />
   HighestPeaksMap,
+  // FAQ with FAQPage JSON-LD: <FaqAccordion faqs={[{ question: "...", answer: "..." }]} />
+  FaqAccordion: (props: { faqs: FaqItem[]; title?: string }) => <FaqAccordion {...props} variant="blog" />,
   // The page title is the only h1: a "# heading" inside a post renders as a section h2
   h1: ({ children }: { children: React.ReactNode }) => {
     const text = typeof children === "string" ? children : ""
@@ -218,6 +221,10 @@ export default async function BlogDetailPage({
             source={post.content}
             components={components}
             options={{
+              // Posts are written in-house: allow JS expressions in props so an
+              // MDX component can take structured data (FaqAccordion faqs={[...]}).
+              // blockDangerousJS (default on) still rejects eval, Function, process...
+              blockJS: false,
               mdxOptions: {
                 remarkPlugins: [remarkGfm],
               },

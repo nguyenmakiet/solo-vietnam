@@ -14,3 +14,9 @@ export function stripLeadingEmoji(text: string): string {
   // used in compound emoji (e.g. flags, family emoji).
   return text.replace(/^[\p{Extended_Pictographic}\u{FE0F}\u{200D}\s]+/u, "")
 }
+
+/**
+ * id of the FAQ heading in a blog post (FaqAccordion variant="blog"). The
+ * post's contents list (extractToc in lib/blog.ts) links to it.
+ */
+export const BLOG_FAQ_HEADING_ID = "frequently-asked-questions"

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { InlineRichText } from "@/app/locations/[slug]/RichText"
 import { stripInlineMarkdown } from "@/lib/rich-text"
+import { BLOG_FAQ_HEADING_ID } from "@/lib/text"
 import DestinationSection from "@/components/DestinationSection"
 
 export interface FaqItem {
@@ -13,9 +14,15 @@ export interface FaqItem {
 interface FaqAccordionProps {
   faqs: FaqItem[]
   title?: string
+  /**
+   * "destination" (default): split section of a destination page.
+   * "blog": a plain h2 and the list, inside the blog article column
+   * (styles: .bp-faq in app/blog/blog.css).
+   */
+  variant?: "destination" | "blog"
 }
 
-export default function FaqAccordion({ faqs, title = "Frequently Asked Questions" }: FaqAccordionProps) {
+export default function FaqAccordion({ faqs, title = "Frequently Asked Questions", variant = "destination" }: FaqAccordionProps) {
   const [openSet, setOpenSet] = useState<Set<number>>(new Set([0]))
 
   const toggle = (idx: number) => {
@@ -39,6 +46,43 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
     })),
   }
 
+  const list = (
+    <div className="faq-list">
+      {faqs.map((faq, idx) => {
+        const isOpen = openSet.has(idx)
+        return (
+          <div key={idx} className={`faq-item${isOpen ? " open" : ""}`}>
+            <button
+              className="faq-question"
+              onClick={() => toggle(idx)}
+              aria-expanded={isOpen}
+            >
+              <span>{faq.question}</span>
+              <svg
+                className={`faq-chevron w-5 h-5 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            {isOpen && (
+              <div className="faq-answer">
+                <p><InlineRichText text={faq.answer} /></p>
+              </div>
+            )}
+          </div>
+        )
+      })}
+    </div>
+  )
+
   return (
     <>
       <script
@@ -46,42 +90,17 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <DestinationSection id="h-faq" title={title} layout="split">
-        <div className="faq-list">
-          {faqs.map((faq, idx) => {
-            const isOpen = openSet.has(idx)
-            return (
-              <div key={idx} className={`faq-item${isOpen ? " open" : ""}`}>
-                <button
-                  className="faq-question"
-                  onClick={() => toggle(idx)}
-                  aria-expanded={isOpen}
-                >
-                  <span>{faq.question}</span>
-                  <svg
-                    className={`faq-chevron w-5 h-5 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-                {isOpen && (
-                  <div className="faq-answer">
-                    <p><InlineRichText text={faq.answer} /></p>
-                  </div>
-                )}
-              </div>
-            )
-          })}
-        </div>
-      </DestinationSection>
+      {variant === "blog" ? (
+        // The post's contents list links to this id (extractToc in lib/blog.ts)
+        <section className="bp-faq" aria-labelledby={BLOG_FAQ_HEADING_ID}>
+          <h2 id={BLOG_FAQ_HEADING_ID}>{title}</h2>
+          {list}
+        </section>
+      ) : (
+        <DestinationSection id="h-faq" title={title} layout="split">
+          {list}
+        </DestinationSection>
+      )}
     </>
   )
 }
