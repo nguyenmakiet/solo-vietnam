@@ -13,6 +13,8 @@ export interface BlogPost {
   category: string
   tags: string[]
   heroImage?: string
+  /** Cloudinary publicId for the social share image; heroImage when omitted */
+  ogImage?: string
   author?: string
   readingTime: string
   content: string
@@ -41,6 +43,7 @@ export function getAllPosts(): BlogPostMeta[] {
         category: data.category ?? "general",
         tags: data.tags ?? [],
         heroImage: data.heroImage ?? null,
+        ogImage: data.ogImage ?? undefined,
         author: data.author ?? "Solo Vietnam",
         readingTime: stats.text,
       }
@@ -64,6 +67,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     category: data.category ?? "general",
     tags: data.tags ?? [],
     heroImage: data.heroImage ?? null,
+    ogImage: data.ogImage ?? undefined,
     author: data.author ?? "Solo Vietnam",
     readingTime: stats.text,
     content,

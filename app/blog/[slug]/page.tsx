@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { getPostBySlug, extractToc, getAllPosts } from "@/lib/blog"
-import { heroUrl, ogImageUrl } from "@/lib/cloudinary"
+import { heroUrl, ogImageUrl, ogPaddedUrl } from "@/lib/cloudinary"
 import BlogToc from "./BlogToc"
 import CloudImage from "@/components/CloudImage"
 import CloudinaryImage from "@/components/CloudinaryImage"
@@ -127,6 +127,11 @@ export async function generateMetadata({
 
   description = description || "Travel insights and practical tips for solo travelers in Vietnam."
 
+  // Share image: ogImage (whole picture, padded) when set, else the hero photo
+  const shareImage = post.ogImage
+    ? ogPaddedUrl(post.ogImage)
+    : post.heroImage ? ogImageUrl(heroUrl(post.heroImage)) : null
+
   return {
     title: post.title,
     description,
@@ -134,8 +139,11 @@ export async function generateMetadata({
       title: post.title,
       description,
       url: `https://www.soloinvietnam.com/blog/${slug}`,
-      images: post.heroImage ? [{ url: ogImageUrl(heroUrl(post.heroImage)), width: 1200, height: 630 }] : [],
+      images: shareImage ? [{ url: shareImage, width: 1200, height: 630 }] : [],
     },
+    ...(shareImage && {
+      twitter: { card: "summary_large_image", title: post.title, description, images: [shareImage] },
+    }),
     alternates: { canonical: `https://www.soloinvietnam.com/blog/${slug}` },
   }
 }
