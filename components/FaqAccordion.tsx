@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { InlineRichText } from "@/app/locations/[slug]/RichText"
 import { stripInlineMarkdown } from "@/lib/rich-text"
+import { BLOG_FAQ_HEADING_ID } from "@/lib/text"
 import DestinationSection from "@/components/DestinationSection"
 
 export interface FaqItem {
@@ -90,9 +91,9 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
       />
 
       {variant === "blog" ? (
-        // id matches the blog's heading slugs (page.tsx), so a TOC entry can link to it
-        <section className="bp-faq" aria-labelledby="frequently-asked-questions">
-          <h2 id="frequently-asked-questions">{title}</h2>
+        // The post's contents list links to this id (extractToc in lib/blog.ts)
+        <section className="bp-faq" aria-labelledby={BLOG_FAQ_HEADING_ID}>
+          <h2 id={BLOG_FAQ_HEADING_ID}>{title}</h2>
           {list}
         </section>
       ) : (

@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import readingTime from "reading-time"
+import { BLOG_FAQ_HEADING_ID } from "@/lib/text"
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog")
 
@@ -86,12 +87,22 @@ export interface TocItem {
   level: number
 }
 
+// A <FaqAccordion> renders its own h2 (default title "Frequently Asked
+// Questions"), so it gets a contents entry in place, like a ## heading
+const FAQ_DEFAULT_TITLE = "Frequently Asked Questions"
+
 export function extractToc(content: string): TocItem[] {
-  const headingRegex = /^(#{1,3})\s+(.+)$/gm
+  const headingRegex = /^(?:(#{1,3})\s+(.+)|<FaqAccordion\b)/gm
   const items: TocItem[] = []
   let match
 
   while ((match = headingRegex.exec(content)) !== null) {
+    if (!match[1]) {
+      const tag = content.slice(match.index, content.indexOf("/>", match.index))
+      const title = tag.match(/\btitle="([^"]+)"/)?.[1] ?? FAQ_DEFAULT_TITLE
+      items.push({ id: BLOG_FAQ_HEADING_ID, text: title, level: 2 })
+      continue
+    }
     const level = match[1].length
     const text = match[2].replace(/[*_`]/g, "").trim()
     const id = text
