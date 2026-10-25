@@ -72,6 +72,11 @@ export function thumb96Url(url: string | undefined): string | null {
 // negotiate ("Invalid Image Content Type"), so og:image always forces JPEG.
 export const ogImageUrl = (url: string) => url.replace(/\bf_auto\b/, "f_jpg")
 
+// Share image that keeps the whole picture (e.g. an infographic): padded to
+// 1200x630 on an auto-picked background colour instead of cropped
+export const ogPaddedUrl = (publicId: string) =>
+  `${BASE_URL}/w_1200,h_630,c_pad,b_auto,q_auto,f_jpg/${publicId}`
+
 export const OG_FALLBACK_IMAGE = ogImageUrl(heroUrl("ha-giang-loop_e8myfw"))
 
 // ─── Real photo check ────────────────────────────────────────
