@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const muongHoaValley: Location = {
   slug: "muong-hoa-valley",
   name: "Muong Hoa Valley",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-10-26",
   provinces: ["lao-cai"],
   destination: "sapa",
   lat: 22.3143616370346,
@@ -20,7 +20,7 @@ export const muongHoaValley: Location = {
     minMinutes: 120,
     maxMinutes: 2880,
   },
-  entranceFee: "150,000 VND adults / 100,000 VND children 6-12 / Free under 6",
+  entranceFee: "About 75,000 VND per adult for the Lao Chai - Ta Van trekking ticket (children less, under 1.2m free), paid at the checkpoint on the road into the valley.",
   openingHours: "Open daily. Best light: 6:30 - 7:30 AM (fog lifting off terraces).",
   mapUrl: "https://maps.google.com/?q=22.3100,103.8650",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775831016752!6m8!1m7!1sCAoSHENJQUJJaEF2anNzbkRMNEpBZWM0N2RLX1dpOVI.!2m2!1d22.31418298028479!2d103.8765109026104!3f43.84096266743374!4f-19.4168091389012!5f0.7820865974627469" },
