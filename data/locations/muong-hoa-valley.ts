@@ -42,7 +42,7 @@ export const muongHoaValley: Location = {
     "Early morning fog lifting off the terraces is the signature Sa Pa shot - be in position by 6:30-7:30 AM.",
     "Overnight in Tả Van or Lao Chải homestay to experience the valley before day visitors arrive. Waking up on a homestay balcony with the terraces below is one of the most memorable scenes in northern Vietnam.",
     "Getting there from Sa Pa town (8-10km): motorbike rental 100,000-150,000 VND/day, xe ôm ~12,000 VND/km, or trek down on foot (1.5-2 hours to Lao Chải). Mountain train (tàu hỏa leo núi Mường Hoa): 6 minutes, 180,000 VND return, good for aerial overview.",
-    "Ticket checkpoint before the valley villages: 150,000 VND adults, 100,000 VND children 6-12, free under 6.",
+    "Ticket checkpoint before the valley villages: about 75,000 VND per adult for the Lao Chai - Ta Van ticket.",
     "Café Sailing Sa Pa is a popular stop with valley views - good for sunrise or sunset watching.",
     "Dress modestly and ask permission before photographing villagers. Respect local customs in the ethnic minority villages.",
     "Good trekking shoes are essential - terrain is muddy and slippery in wet season, uneven throughout.",
@@ -142,7 +142,7 @@ export const muongHoaValley: Location = {
       crowds: "Peak season late Aug-Sep brings significant crowds, especially weekends. Tả Van and Lao Chải are quieter than the trailheads. Overnight stays give access to the valley before day visitors arrive.",
       difficulty: "Moderate - relatively flat valley floor, some climbing between villages. Slippery and muddy in wet season (Jun-Jul especially). Good trekking shoes essential.",
       safety: "Trails have no signs in places - a local guide is helpful for first-timers. Wet season trails are genuinely slippery. Ask permission before photographing villagers.",
-      accessibility: "Ticket checkpoint: 150,000 VND adults, 100,000 VND children 6-12, free under 6. Motorbike, xe ôm, or mountain train from Sa Pa. Not suitable for wheelchairs or strollers.",
+      accessibility: "Ticket checkpoint: about 75,000 VND per adult for the Lao Chai - Ta Van ticket. Motorbike, xe ôm, or mountain train from Sa Pa. Not suitable for wheelchairs or strollers.",
       seasonal: "Late Aug-mid Sep: golden harvest - peak season, most photogenic, book early. Mar-May: flooded terraces, mirror reflections. Jun-Jul: heavy rain, muddy trails - avoid. Dec-Feb: winter mist, possible frost/snow.",
     },
     visitorTips: [
