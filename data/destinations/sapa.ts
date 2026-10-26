@@ -72,7 +72,7 @@ export const sapa: Destination = {
           day: 2,
           title: "Muong Hoa Valley trek + Ta Van homestay",
           stops: ["muong-hoa-valley", "ta-van-village"],
-          notes: "Guided trek through the Muong Hoa Valley to Lao Chai and Ta Van, 10-14km depending on the route, with lunch in a village. A common way to do it: take a one-way taxi down to Y Linh Ho, walk through the terraces to Lao Chai and Ta Van, and get a car back up from Ta Van in the late afternoon. Sleep in a Ta Van homestay instead of going back to town - family dinner, rice wine and a quiet valley once the day-trippers leave.",
+          notes: "Guided trek through the Muong Hoa Valley to Lao Chai and Ta Van, 10-14km depending on the route, with lunch in a village. A common way to do it: take a one-way taxi down to Y Linh Ho, walk through the terraces to Lao Chai and Ta Van, where you stay the night. Sleep in a Ta Van homestay instead of going back to town - family dinner, rice wine and a quiet valley once the day-trippers leave.",
         },
         {
           day: 3,
@@ -96,7 +96,7 @@ export const sapa: Destination = {
           day: 2,
           title: "Muong Hoa Valley trek + Ta Van homestay",
           stops: ["muong-hoa-valley", "ta-van-village"],
-          notes: "Full-day guided trek and a night in a Ta Van homestay. A common way to do it: take a one-way taxi down to Y Linh Ho, walk through the terraces to Lao Chai and Ta Van, and get a car back up from Ta Van in the late afternoon. Family dinner, rice wine, and often no phone signal.",
+          notes: "Full-day guided trek and a night in a Ta Van homestay. A common way to do it: take a one-way taxi down to Y Linh Ho, walk through the terraces to Lao Chai and Ta Van, where you stay the night. Family dinner, rice wine, and often no phone signal.",
         },
         {
           day: 3,
