@@ -27,7 +27,7 @@ export const sapa: Destination = {
       vehicle: "bus",
       duration: "5.5-7 hours",
       cost: "270,000-450,000 VND",
-      notes: "Limousine vans (about 5.5-6 hours, 320,000-450,000 VND) usually pick up from Old Quarter hotels or offices; sleeper buses (6-7 hours, 270,000-370,000 VND) leave from My Dinh or Nuoc Ngam bus stations. Most drop off at Sapa bus station on Dien Bien Phu, about 800m from the church square - confirm pickup and drop-off when booking.",
+      notes: "Limousine vans (about 5.5-6 hours, 320,000-450,000 VND) usually pick up from Old Quarter hotels or offices; sleeper buses (6-7 hours, 270,000-370,000 VND) leave from My Dinh or Nuoc Ngam bus stations. Most drop off at Sapa bus station on Dien Bien Phu, about 800m from the church square - confirm pickup and drop-off when booking. Double sleeper cabins (for 2) cost about 650,000-800,000 VND per cabin one way with operators such as Sao Viet, Inter Bus Lines, Futa Ha Son and Sapa Explore.",
     },
     {
       from: "Hanoi",
@@ -134,13 +134,14 @@ export const sapa: Destination = {
     {
       vehicle: "motorbike",
       priceRange: "80,000-120,000 VND/day (semi-automatic, e.g. Honda Wave); 200,000-600,000 VND/day (manual clutch, e.g. Winner, XR150, CB300R)",
-      notes: "A rental \"day\" in Sapa usually runs 5:30am-9pm, not 24 hours - agree overnight or multi-day terms first. Most shops ask for a passport (or a 1-2 million VND cash deposit) and include helmets and raincoats; some charge about 150,000 VND/day extra for long trips to Y Ty, Bat Xat or Ha Giang. Semi-automatic or manual bikes handle the steep roads better than automatic scooters. Foreign riders need a valid licence - an IDP under the 1968 convention with the motorcycle category, plus your home licence.",
+      notes: "A rental \"day\" in Sapa usually runs 5:30am-9pm, not 24 hours - agree overnight or multi-day terms first. Most shops ask for a passport (or a 1-2 million VND cash deposit) and include helmets and raincoats; some charge about 150,000 VND/day extra for long trips to Y Ty, Bat Xat or Ha Giang. Semi-automatic or manual bikes handle the steep roads better than automatic scooters. Foreign riders need a valid licence - an IDP under the 1968 convention with the motorcycle category, plus your home licence. Check the bike's bodywork before you ride off and take a video, so you aren't charged for old scratches.",
       shops: [
         { name: "Tien VIP", address: "04 and 28 Muong Hoa, Sapa", phone: "0969 999 583", url: "https://www.facebook.com/share/1E6KDgrQgH/", notes: "Wave 100,000, Air Blade/Vision 120,000-150,000, PG1 200,000 VND/day. Free delivery in town; helmet and raincoat included." },
         { name: "Hoc Ly", address: "08 Hoang Lien (behind Sun Plaza) or 22 Thanh Cong (near the bus station)", phone: "0915 190 874", notes: "Semi-automatic and scooters; delivers to hotels." },
         { name: "Nguyen Cuong", address: "634 Dien Bien Phu, Sapa", phone: "0973 161 969", notes: "Widest range, from Wave to Winner, XR150 and CB300R. Free delivery within 3km; half-day rentals; 2 helmets and 2 raincoats per bike." },
         { name: "Mr Chinh", area: "Fansipan street, near the Stone Church", phone: "0988 628 515", notes: "Semi-automatic, scooters and manual bikes; free delivery around the Stone Church and Love Market." },
         { name: "Mr Co", address: "19 Dong Loi, Sapa", phone: "0986 073 559", notes: "Flexible delivery; no extra fee if returned the same day." },
+        { name: "Nga Canh", phone: "0855 314 888" },
       ],
       verifiedAt: "2026-09-25",
     },
