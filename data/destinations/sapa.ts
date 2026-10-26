@@ -54,7 +54,7 @@ export const sapa: Destination = {
           day: 2,
           title: "Muong Hoa Valley trek - Lao Chai + Ta Van",
           stops: ["muong-hoa-valley", "ta-van-village"],
-          notes: "The classic Sapa trek: about 10-12km downhill through the terraces of the Muong Hoa Valley to Lao Chai (Black H'Mong) and Ta Van (Giay). Start by 8am, go with a local guide, and pay the Lao Chai - Ta Van ticket at the checkpoint. A car or motorbike taxi brings you back up to Sapa for the afternoon bus to Hanoi.",
+          notes: "The classic Sapa trek: about 10-12km downhill through the terraces of the Muong Hoa Valley to Lao Chai (Black H'Mong) and Ta Van (Giay). A common way to do it: take a one-way taxi down to Y Linh Ho, walk through the terraces to Lao Chai and Ta Van, and get a car back up from Ta Van in the late afternoon. Start by 8am, go with a local guide, and pay the Lao Chai - Ta Van ticket at the checkpoint. A car or motorbike taxi brings you back up to Sapa for the afternoon bus to Hanoi.",
         },
       ],
     },
@@ -72,7 +72,7 @@ export const sapa: Destination = {
           day: 2,
           title: "Muong Hoa Valley trek + Ta Van homestay",
           stops: ["muong-hoa-valley", "ta-van-village"],
-          notes: "Guided trek through the Muong Hoa Valley to Lao Chai and Ta Van, 10-14km depending on the route, with lunch in a village. Sleep in a Ta Van homestay instead of going back to town - family dinner, rice wine and a quiet valley once the day-trippers leave.",
+          notes: "Guided trek through the Muong Hoa Valley to Lao Chai and Ta Van, 10-14km depending on the route, with lunch in a village. A common way to do it: take a one-way taxi down to Y Linh Ho, walk through the terraces to Lao Chai and Ta Van, and get a car back up from Ta Van in the late afternoon. Sleep in a Ta Van homestay instead of going back to town - family dinner, rice wine and a quiet valley once the day-trippers leave.",
         },
         {
           day: 3,
@@ -96,7 +96,7 @@ export const sapa: Destination = {
           day: 2,
           title: "Muong Hoa Valley trek + Ta Van homestay",
           stops: ["muong-hoa-valley", "ta-van-village"],
-          notes: "Full-day guided trek and a night in a Ta Van homestay. Family dinner, rice wine, and often no phone signal.",
+          notes: "Full-day guided trek and a night in a Ta Van homestay. A common way to do it: take a one-way taxi down to Y Linh Ho, walk through the terraces to Lao Chai and Ta Van, and get a car back up from Ta Van in the late afternoon. Family dinner, rice wine, and often no phone signal.",
         },
         {
           day: 3,
@@ -166,6 +166,10 @@ export const sapa: Destination = {
       answer: "2 days covers Cat Cat, a Muong Hoa Valley trek and Fansipan if the weather allows. 3 days lets you sleep in a village homestay, which is the best part of Sapa. With 4 days, add Ta Phin and the O Quy Ho Pass.",
     },
     {
+      question: "How do I plan my days without zig-zagging?",
+      answer: "Group the sights by direction. Southeast: Y Linh Ho, Lao Chai and Ta Van along the Muong Hoa Valley - one trek, one-way transport. Centre: the Stone Church, Sun Plaza, the Fansipan train and cable car, then Cat Cat, about 2km below town. Northwest along Route 4D: Silver Waterfall, Love Waterfall and the O Quy Ho Pass in one half-day trip - book a car for the whole loop rather than separate rides. Northeast: Ta Phin, in the opposite direction from everything else, so fit it in on your first morning or last afternoon.",
+    },
+    {
       question: "Do I need a guide to trek in Sapa?",
       answer: "Not legally for the main Muong Hoa Valley trail to Lao Chai and Ta Van, but a local guide makes it much better - they know the paths between the terraces, the villages and the families. Many guides are H'Mong women from the villages, often booked through homestays. For Fansipan on foot and longer routes in the national park, go with a licensed guide.",
     },
@@ -188,6 +192,17 @@ export const sapa: Destination = {
     {
       question: "Does it snow in Sapa?",
       answer: "Occasionally. Cold snaps between December and February can bring frost or a light snowfall, mostly on Fansipan and the high passes. Pack warm layers if you travel in winter.",
+    },
+  ],
+
+  emergencyContacts: [
+    {
+      type: "police",
+      name: "Sa Pa police",
+      phone: "0214 3871 226",
+      address: "2 Le Quy Don, Sa Pa",
+      languages: ["Vietnamese"],
+      verifiedAt: "2026-10-26",
     },
   ],
 
