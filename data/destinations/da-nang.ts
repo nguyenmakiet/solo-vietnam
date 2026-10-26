@@ -26,7 +26,7 @@ export const daNang: Destination = {
       vehicle: "fly",
       duration: "about 1h20",
       cost: "600,000-2,000,000 VND one way",
-      notes: "Many daily flights. Da Nang airport is about 3km from the centre - 10-15 minutes and roughly 50,000-100,000 VND by Grab.",
+      notes: "Many daily flights. Da Nang airport is about 3km from the centre - 10-15 minutes and about 70,000-150,000 VND by Grab car.",
     },
     {
       from: "Hanoi",
