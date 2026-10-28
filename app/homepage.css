@@ -338,32 +338,39 @@
   box-sizing: border-box;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-card);
-  background: var(--color-surface); /* the sea */
+  background: var(--color-map-ocean); /* the sea */
   font-family: var(--font-sans), "IBM Plex Sans", sans-serif;
 }
 /* Neighbours (China and Hainan, Laos, Cambodia, Thailand, Myanmar): one
-   treatment for all - no fill, a thin faint outline */
-.home-dmap-neighbours {
+   treatment for all - muted sand fill, a thin faint outline */
+.home-dmap-neighbours-bleed {
   fill: none;
+  stroke: var(--color-map-neighbour);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+}
+.home-dmap-neighbours {
+  fill: var(--color-map-neighbour);
   stroke: var(--color-line);
   stroke-width: 0.6;
   stroke-linejoin: round;
 }
-/* Vietnam by region: pastel fill, a thin border one shade darker; hover
+/* Vietnam by region: pastel fill, a thin border one shade darker (one step
+   darker than /map's, to hold its edge against the ocean); hover
    (on the land itself, not on a pill) one step darker. Tokens: globals.css */
 .home-dmap-region--north {
   --region-fill: var(--color-map-north-fill);
-  --region-line: var(--color-map-north-line);
+  --region-line: color-mix(in srgb, var(--color-map-north-line) 60%, var(--color-map-north));
   --region-hover: var(--color-map-north-hover);
 }
 .home-dmap-region--central {
   --region-fill: var(--color-map-central-fill);
-  --region-line: var(--color-map-central-line);
+  --region-line: color-mix(in srgb, var(--color-map-central-line) 60%, var(--color-map-central));
   --region-hover: var(--color-map-central-hover);
 }
 .home-dmap-region--south {
   --region-fill: var(--color-map-south-fill);
-  --region-line: var(--color-map-south-line);
+  --region-line: color-mix(in srgb, var(--color-map-south-line) 60%, var(--color-map-south));
   --region-hover: var(--color-map-south-hover);
 }
 .home-dmap-land,
@@ -393,7 +400,7 @@
   stroke-linecap: round;
 }
 .home-dmap-inset {
-  fill: var(--color-surface);
+  fill: var(--color-map-ocean);
   stroke: var(--color-line);
   stroke-width: 0.8;
 }

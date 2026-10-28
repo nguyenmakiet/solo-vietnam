@@ -48,6 +48,10 @@
   --color-map-north-hover: color-mix(in srgb, var(--color-map-north-fill) 80%, var(--color-map-north));
   --color-map-central-hover: color-mix(in srgb, var(--color-map-central-fill) 80%, var(--color-map-central));
   --color-map-south-hover: color-mix(in srgb, var(--color-map-south-fill) 80%, var(--color-map-south));
+  /* Homepage map context: sea and neighbouring countries, quieter than the
+     region fills so Vietnam stays the focus */
+  --color-map-ocean: #e3eef5;
+  --color-map-neighbour: #e9e1d3;
 
   /* Semantic category dots */
   --color-dot-water: #3f7f8c;

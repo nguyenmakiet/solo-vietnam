@@ -48,7 +48,14 @@ export default function HomeDestinationMap() {
       role="group"
       aria-label="Map of Vietnam - destination guides"
     >
-      <path className="home-dmap-neighbours" d={NEIGHBOURS_PATH} />
+      {/* Neighbours twice: a wide stroke in their fill colour first, closing the
+          hairline gaps where their (Natural Earth) border and Vietnam's (GSO)
+          border differ, then fill and outline */}
+      <defs>
+        <path id="home-dmap-neighbours" d={NEIGHBOURS_PATH} />
+      </defs>
+      <use href="#home-dmap-neighbours" className="home-dmap-neighbours-bleed" />
+      <use href="#home-dmap-neighbours" className="home-dmap-neighbours" />
       {regions.map(([region, { land, islands }]) => (
         <g key={region} className={`home-dmap-region home-dmap-region--${region}`}>
           <path className="home-dmap-land" d={land} />
