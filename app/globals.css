@@ -37,6 +37,17 @@
   --color-map-north: #8c9886;
   --color-map-central: #7fa3a0;
   --color-map-south: #cbb27a;
+  /* Map region fills (pastel), their borders (one shade darker) and hover
+     (one step darker), mixed toward the region colours above */
+  --color-map-north-fill: #cfe0c3;
+  --color-map-central-fill: #bfe0dc;
+  --color-map-south-fill: #f0ddb0;
+  --color-map-north-line: color-mix(in srgb, var(--color-map-north-fill) 65%, var(--color-map-north));
+  --color-map-central-line: color-mix(in srgb, var(--color-map-central-fill) 65%, var(--color-map-central));
+  --color-map-south-line: color-mix(in srgb, var(--color-map-south-fill) 65%, var(--color-map-south));
+  --color-map-north-hover: color-mix(in srgb, var(--color-map-north-fill) 80%, var(--color-map-north));
+  --color-map-central-hover: color-mix(in srgb, var(--color-map-central-fill) 80%, var(--color-map-central));
+  --color-map-south-hover: color-mix(in srgb, var(--color-map-south-fill) 80%, var(--color-map-south));
 
   /* Semantic category dots */
   --color-dot-water: #3f7f8c;

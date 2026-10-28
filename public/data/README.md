@@ -20,3 +20,15 @@ lines.
 - **To regenerate** (e.g. if the upstream repo publishes an updated map): re-run
   the fetch + merge + simplify steps above against the current upstream file list,
   then replace this file.
+
+## vn-regions-2025.geojson
+
+North / Central / South fill layer on `/map` (`createBaseMap(..., { regions: true })`
+in `components/map-shared.tsx`). Generated - do not edit by hand.
+
+- **Source:** `vn-provinces-2025.geojson` above. Each province takes its region
+  from `data/provinces.ts` (every 2025 province is named after one of the
+  pre-merger provinces it absorbed), then the provinces are dissolved by region
+  and lightly simplified (mapshaper, Visvalingam weighted, 60 m interval).
+- **To regenerate:** `npm run build:home-map-outline` (also rebuilds
+  `lib/home-map-geometry.ts`, the homepage map).

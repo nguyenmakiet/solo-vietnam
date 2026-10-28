@@ -349,24 +349,47 @@
   stroke-width: 0.6;
   stroke-linejoin: round;
 }
-.home-dmap-land,
-.home-dmap-islands {
-  fill: var(--color-line);
+/* Vietnam by region: pastel fill, a thin border one shade darker; hover
+   (on the land itself, not on a pill) one step darker. Tokens: globals.css */
+.home-dmap-region--north {
+  --region-fill: var(--color-map-north-fill);
+  --region-line: var(--color-map-north-line);
+  --region-hover: var(--color-map-north-hover);
 }
-/* Specks (Hoang Sa, Truong Sa): a stroke keeps them visible */
-.home-dmap-islands {
-  stroke: var(--color-line);
-  stroke-width: 2.4;
+.home-dmap-region--central {
+  --region-fill: var(--color-map-central-fill);
+  --region-line: var(--color-map-central-line);
+  --region-hover: var(--color-map-central-hover);
+}
+.home-dmap-region--south {
+  --region-fill: var(--color-map-south-fill);
+  --region-line: var(--color-map-south-line);
+  --region-hover: var(--color-map-south-hover);
+}
+.home-dmap-land,
+.home-dmap-islands,
+.home-dmap-archipelago {
+  fill: var(--region-fill);
+  stroke: var(--region-line);
   stroke-linejoin: round;
+  transition: fill 0.15s;
+}
+.home-dmap-land {
+  stroke-width: 0.6;
+}
+.home-dmap-region:hover .home-dmap-land,
+.home-dmap-region:hover .home-dmap-islands {
+  fill: var(--region-hover);
+}
+/* Specks: a stroke keeps them visible */
+.home-dmap-islands {
+  stroke-width: 1.6;
   stroke-linecap: round;
 }
-/* Hoang Sa / Truong Sa in their insets: mainland fill, a thicker stroke so
-   each island reads on a 360px phone */
+/* Hoang Sa / Truong Sa in their insets: a thicker stroke so each island
+   reads on a 360px phone */
 .home-dmap-archipelago {
-  fill: var(--color-line);
-  stroke: var(--color-line);
-  stroke-width: 3.4;
-  stroke-linejoin: round;
+  stroke-width: 2.6;
   stroke-linecap: round;
 }
 .home-dmap-inset {
