@@ -186,7 +186,19 @@ export const haNoi: Destination = {
     },
     {
       question: "Can I still visit Train Street?",
-      answer: "Only if the area is open when you go. Authorities have repeatedly closed the cafes along the tracks for safety, and access changes. If it's open, stay well back when a train passes and follow the cafe owners' instructions; if it's closed, don't try to get in.",
+      answer: "Yes - the cafes along the tracks were operating as of October 2026, but access has changed before, so check when you go. Stay well back when a train passes and follow the cafe owners' instructions; if the area is closed off, don't try to get in.",
+    },
+    {
+      question: "Where can I see a water puppet show?",
+      answer: "At the Thang Long Water Puppet Theatre by Hoan Kiem Lake. Shows run Monday to Saturday at 1:45pm, 3pm, 4:10pm, 5:20pm, 6:30pm, 8pm and 9:15pm, with an extra 9:30am show on Sundays. Tickets cost 135,000 VND - buy a few hours ahead in peak season.",
+    },
+    {
+      question: "Can I visit Ha Long Bay as a day trip from Hanoi?",
+      answer: "Yes - plenty of tours do it in a day. But if you have the time and budget and want to slow down, an overnight cruise on the bay is the better experience. See the Ha Long Bay page for details.",
+    },
+    {
+      question: "What food should I try in Hanoi?",
+      answer: "Pho, bun cha (around 45,000 VND), bun thang (30,000-50,000 VND), cold snail noodles - bun oc (30,000-40,000 VND), bun dau mam tom, banh cuon, egg coffee (from about 25,000 VND) and Trang Tien ice cream (8,000-20,000 VND). See the full list in [local foods you must try](/provinces/ha-noi#h-food).",
     },
     {
       question: "How do I avoid being overcharged in Hanoi?",
