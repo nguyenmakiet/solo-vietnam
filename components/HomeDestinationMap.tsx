@@ -3,10 +3,10 @@ import {
   HOANG_SA_INSET,
   HOANG_SA_PATH,
   NEIGHBOURS_PATH,
+  REGION_PATHS,
   TRUONG_SA_INSET,
   TRUONG_SA_PATH,
-  VIETNAM_ISLANDS_PATH,
-  VIETNAM_PATH,
+  type MapRegion,
 } from "@/lib/home-map-geometry"
 import {
   COMPACT_RADIUS,
@@ -33,6 +33,9 @@ const insets = [
   { name: "Truong Sa", box: TRUONG_SA_INSET, path: TRUONG_SA_PATH },
 ]
 
+// North to south; each region is filled in its own colour
+const regions = Object.entries(REGION_PATHS) as [MapRegion, { land: string; islands: string }][]
+
 const label = (p: HomeMapPlace) => `${p.name} - ${p.count} ${p.count === 1 ? "place" : "places"}`
 // Tap targets: pills 32 tall (26 + 3 each side), circles and dots 32 across
 const HIT = 32
@@ -45,13 +48,25 @@ export default function HomeDestinationMap() {
       role="group"
       aria-label="Map of Vietnam - destination guides"
     >
-      <path className="home-dmap-neighbours" d={NEIGHBOURS_PATH} />
-      <path className="home-dmap-land" d={VIETNAM_PATH} />
-      <path className="home-dmap-islands" d={VIETNAM_ISLANDS_PATH} />
+      {/* Neighbours twice: a wide stroke in their fill colour first, closing the
+          hairline gaps where their (Natural Earth) border and Vietnam's (GSO)
+          border differ, then fill and outline */}
+      <defs>
+        <path id="home-dmap-neighbours" d={NEIGHBOURS_PATH} />
+      </defs>
+      <use href="#home-dmap-neighbours" className="home-dmap-neighbours-bleed" />
+      <use href="#home-dmap-neighbours" className="home-dmap-neighbours" />
+      {regions.map(([region, { land, islands }]) => (
+        <g key={region} className={`home-dmap-region home-dmap-region--${region}`}>
+          <path className="home-dmap-land" d={land} />
+          <path className="home-dmap-islands" d={islands} />
+        </g>
+      ))}
       {insets.map(({ name, box, path }) => (
         <g key={name}>
           <rect className="home-dmap-inset" {...box} />
-          <path className="home-dmap-archipelago" d={path} />
+          {/* Both archipelagos are part of Central Vietnam */}
+          <path className="home-dmap-archipelago home-dmap-region--central" d={path} />
           <text className="home-dmap-place" x={box.x} y={box.y - 4}>{name}</text>
         </g>
       ))}

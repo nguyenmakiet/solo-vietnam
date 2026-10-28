@@ -38,13 +38,16 @@ export async function loadLeaflet(): Promise<typeof import("leaflet")> {
 /**
  * Creates the base map: initial view, basemap tiles, zoom + attribution
  * controls and the 2025 province boundary overlay. `isAlive` is checked before
- * the (async) overlay is added, so an unmounted map is left alone.
+ * the (async) overlay is added, so an unmounted map is left alone. With
+ * `regions`, Vietnam is also filled by region (North / Central / South) under
+ * the province lines.
  */
 export function createBaseMap(
   L: typeof import("leaflet"),
   container: HTMLElement,
   view: { bounds: import("leaflet").LatLngBoundsExpression; padding: [number, number]; maxZoom?: number },
   isAlive: () => boolean,
+  { regions = false }: { regions?: boolean } = {},
 ): import("leaflet").Map {
   const map = L.map(container, {
     zoomControl: false,
@@ -71,16 +74,28 @@ export function createBaseMap(
   // The basemap tile provider bakes in its own (pre-2025-merger) province boundary
   // lines, which we can't edit since they're pixels. Overlay the current 34-province
   // boundaries on top instead - see public/data/README.md for the data source.
-  fetch("/data/vn-provinces-2025.geojson")
-    .then((res) => res.json())
-    .then((geojson) => {
+  // Region fills: public/data/vn-regions-2025.geojson, generated from the same
+  // province file by scripts/build-home-map-outline.ts, so the fills meet the
+  // province lines. Interactive only for the hover tint (map-shared.css):
+  // clicks still bubble to the map
+  const load = (url: string) => fetch(url).then((res) => res.json())
+  Promise.all([
+    regions ? load("/data/vn-regions-2025.geojson") : null,
+    load("/data/vn-provinces-2025.geojson"),
+  ])
+    .then(([regionGeojson, provinceGeojson]) => {
       if (!isAlive()) return
-      L.geoJSON(geojson, {
+      if (regionGeojson) {
+        L.geoJSON(regionGeojson, {
+          style: (f) => ({ weight: 1, fillOpacity: 1, className: `map-region map-region--${f?.properties.region}` }), // colours in map-shared.css
+        }).addTo(map)
+      }
+      L.geoJSON(provinceGeojson, {
         style: { weight: 1, fill: false, className: "map-province-boundary" }, // colour in map-shared.css
         interactive: false,
       }).addTo(map)
     })
-    .catch(() => {}) // decorative overlay - fine to silently skip if it fails to load
+    .catch(() => {}) // decorative overlays - fine to silently skip if they fail to load
 
   return map
 }

@@ -32,6 +32,37 @@
   stroke-width: 0.8;
 }
 
+/* Region fills (/map): pastel fill, border one shade darker, hover one step
+   darker. Tokens: globals.css. Leaflet's inline fill/stroke attributes lose
+   to these CSS properties */
+.map-container .map-region--north {
+  --region-fill: var(--color-map-north-fill);
+  --region-line: var(--color-map-north-line);
+  --region-hover: var(--color-map-north-hover);
+}
+.map-container .map-region--central {
+  --region-fill: var(--color-map-central-fill);
+  --region-line: var(--color-map-central-line);
+  --region-hover: var(--color-map-central-hover);
+}
+.map-container .map-region--south {
+  --region-fill: var(--color-map-south-fill);
+  --region-line: var(--color-map-south-line);
+  --region-hover: var(--color-map-south-hover);
+}
+.map-container .map-region {
+  fill: var(--region-fill);
+  stroke: var(--region-line);
+  stroke-width: 1;
+  stroke-linejoin: round;
+  /* Interactive for the hover tint only: keep the map's drag cursor */
+  cursor: inherit;
+  transition: fill 0.15s;
+}
+.map-container .map-region:hover {
+  fill: var(--region-hover);
+}
+
 /* ── MARKERS: teal dot; selected = larger signal dot with an ink ring ── */
 .map-marker {
   display: block;

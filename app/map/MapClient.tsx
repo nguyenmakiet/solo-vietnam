@@ -273,6 +273,7 @@ export default function MapClient({
           ? { bounds: L.latLngBounds(expLocs.map(l => getLatLng(l))), padding: [60, 60], maxZoom: 10 }
           : { bounds: VIETNAM_BOUNDS, padding: [12, 12] },
         () => !!mapRef.current,
+        { regions: true },
       )
 
       // Added to the map by the mode effect

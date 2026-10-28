@@ -1,59 +1,58 @@
 /**
  * scripts/build-home-map-outline.ts
  *
- * Generates lib/home-map-geometry.ts: the frame, projection and path data of
- * the homepage destination map (components/HomeDestinationMap.tsx). Run via:
+ * Generates the region geometry of the Vietnam maps. Run via:
  *   npm run build:home-map-outline
  *
- * - Vietnam: the 65 province paths of @svg-maps/vietnam, flattened to
- *   polygons, merged into one shape (internal boundaries dropped) and
- *   simplified with mapshaper.
- * - Hoang Sa and Truong Sa lie far out at sea (the source also draws Hoang Sa
- *   ~1 degree east of its real place): each is drawn in an inset box - Hoang
- *   Sa at the right edge level with its real latitude, Truong Sa in the empty
- *   south-east corner - instead of widening the frame.
- * - Neighbours (Laos, Cambodia, Thailand, China incl. Hainan): faint context
- *   from world-atlas (Natural Earth 50m), clipped to the frame. China is
- *   clipped north of 17.9N so no other claim is drawn over Hoang Sa.
+ * Outputs (both committed; rerun only to change the frame, the look or the
+ * simplification):
+ * - lib/home-map-geometry.ts: frame, projection and path data of the homepage
+ *   destination map (components/HomeDestinationMap.tsx).
+ * - public/data/vn-regions-2025.geojson: the North / Central / South fill
+ *   layer of the Leaflet maps (components/map-shared.tsx).
  *
- * Everything is projected (Mercator) into one design frame, 360 units wide:
- * 1 unit ~ 1px on a 360px phone. The output is committed; rerun only to change
- * the frame, the look or the simplification.
+ * - Vietnam: public/data/vn-provinces-2025.geojson (34 post-2025 provinces,
+ *   one consistent source, so neighbouring provinces share their borders
+ *   exactly). Each province gets its region from data/provinces.ts (the
+ *   pre-merger provinces it absorbed are all in one region), then the
+ *   provinces are dissolved into three regions. One topology for all three:
+ *   region borders and the coastline are simplified once, so the regions
+ *   never gap or overlap.
+ * - Hoang Sa and Truong Sa lie far out at sea: each is drawn in an inset box
+ *   - Hoang Sa at the right edge level with its real latitude, Truong Sa in the
+ *   empty south-east corner - instead of widening the frame.
+ * - Neighbours (Laos, Cambodia, Thailand, Myanmar, China incl. Hainan): faint
+ *   context from world-atlas (Natural Earth 10m), clipped to the frame. China
+ *   is clipped north of 17.9N so no other claim is drawn over Hoang Sa.
+ *
+ * Everything on the homepage map is projected (Mercator) into one design
+ * frame, 360 units wide: 1 unit ~ 1px on a 360px phone.
  */
 
 import fs from "fs"
 import path from "path"
-import VietnamMod from "@svg-maps/vietnam"
+import { provinces } from "../data/provinces"
 // No type declarations for mapshaper; only applyCommands is used
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const mapshaper = require("mapshaper") as {
   applyCommands: (cmd: string, input: Record<string, unknown>) => Promise<Record<string, string>>
 }
-// Read as text: mapshaper modifies an input object in place, so every call
-// gets a fresh copy
-const countries50m = fs.readFileSync(require.resolve("world-atlas/countries-50m.json"), "utf8")
 
 type Pt = [number, number]
-const Vietnam = (VietnamMod as unknown as { default?: typeof VietnamMod }).default ?? VietnamMod
-const { locations } = Vietnam as { locations: { id: string; path: string }[] }
+type Region = "north" | "central" | "south"
+const REGIONS: Region[] = ["north", "central", "south"]
 
-// ─── Source projection ────────────────────────────────────────────────────────
-// @svg-maps/vietnam is a Mercator map in its own 812 x 873 space. Fitted on
-// Vietnam's extreme points (Lung Cu, A Pa Chai, Mui Doi, Ca Mau cape), checked
-// on Phu Quoc: residuals <= 2 units
-const SRC_X_PER_DEGREE = 51.893
-const SRC_X_OFFSET = -5299.63
-const SRC_Y_PER_MERCATOR = 2961.443
-const SRC_Y_OFFSET = 1244.19
-const mercator = (lat: number) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360))
-const srcToLngLat = ([x, y]: Pt): Pt => {
-  const m = (SRC_Y_OFFSET - y) / SRC_Y_PER_MERCATOR
-  return [(x - SRC_X_OFFSET) / SRC_X_PER_DEGREE, ((2 * Math.atan(Math.exp(m)) - Math.PI / 2) * 180) / Math.PI]
-}
+const SOURCE = path.join(process.cwd(), "public/data/vn-provinces-2025.geojson")
+const OUT = path.join(process.cwd(), "lib/home-map-geometry.ts")
+const OUT_GEOJSON = path.join(process.cwd(), "public/data/vn-regions-2025.geojson")
+// Read as text: mapshaper modifies an input object in place, so every call
+// gets a fresh copy
+const countries10m = fs.readFileSync(require.resolve("world-atlas/countries-10m.json"), "utf8")
 
 // ─── Design frame ─────────────────────────────────────────────────────────────
 // West edge just past A Pa Chai, east edge just past Hoang Sa; top above Lung
-// Cu, bottom below Con Dao / Ca Mau. Vietnam fills the height
+// Cu, bottom below Con Dao / Ca Mau. Vietnam fills the height. The markers
+// (lib/home-map.ts) are projected with the same constants
 const FRAME_WIDTH = 360
 const LNG_WEST = 101.9
 const LNG_EAST = 113.2
@@ -61,9 +60,14 @@ const LAT_NORTH = 23.67 // leaves 6 units above the Ha Giang pill
 const LAT_SOUTH = 8.2
 const UNITS_PER_DEGREE = FRAME_WIDTH / (LNG_EAST - LNG_WEST)
 const UNITS_PER_MERCATOR = (UNITS_PER_DEGREE * 180) / Math.PI
+const mercator = (lat: number) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360))
 const FRAME_HEIGHT = Math.round((mercator(LAT_NORTH) - mercator(LAT_SOUTH)) * UNITS_PER_MERCATOR)
 const project = ([lng, lat]: Pt): Pt => [(lng - LNG_WEST) * UNITS_PER_DEGREE, (mercator(LAT_NORTH) - mercator(lat)) * UNITS_PER_MERCATOR]
 
+// Archipelagos: every ring east of this longitude (Bach Long Vi, Con Dao and
+// Ly Son are all well west of it)
+const ARCHIPELAGO_LNG = 110.5
+const HOANG_SA_MIN_LAT = 14
 // Archipelago insets, at a share of the frame scale
 const TRUONG_SA_SCALE = 0.32 // bottom-right corner
 const HOANG_SA_SCALE = 0.8 // right edge, centred on its real latitude
@@ -71,65 +75,39 @@ const HOANG_SA_LAT = 16.4
 const INSET_MARGIN = 6
 const INSET_PAD = 5
 
-// Rings smaller than this (square source units) are specks: they skip the
-// simplification and are drawn with a stroke as well, so they stay visible
-const ISLAND_AREA = 40
-const SIMPLIFY = "14%"
-const OUT = path.join(process.cwd(), "lib/home-map-geometry.ts")
+// Simplification by distance, not by share of points: Visvalingam (weighted)
+// with a minimum interval in metres. 1 frame unit ~ 3.5 km, so 600 m keeps
+// detail down to ~0.2 units - smooth at 2x/3x screens, still compact
+const SIMPLIFY_HOME = "interval=600"
+// The Leaflet layer is seen zoomed in: only a light pass on the source
+const SIMPLIFY_LEAFLET = "interval=60"
+// Neighbours are faint context: coarser
+const SIMPLIFY_NEIGHBOURS = "interval=3000"
+// Rings smaller than this (square frame units) are specks: drawn with a
+// stroke as well, so they stay visible
+const ISLAND_AREA = 1.5
 
-/** SVG path data (M/m, L/l, C/c, Z/z) -> rings; curves are flattened */
-function pathToRings(d: string): Pt[][] {
-  const tokens = d.match(/[a-zA-Z]|-?(?:\d+\.?\d*|\.\d+)(?:e-?\d+)?/g) ?? []
-  const rings: Pt[][] = []
-  let ring: Pt[] = []
-  let cmd = ""
-  let cur: Pt = [0, 0]
-  let start: Pt = [0, 0]
-  let i = 0
-  const num = () => Number(tokens[i++])
-  const close = () => { if (ring.length > 2) rings.push(ring); ring = [] }
-  while (i < tokens.length) {
-    if (/^[a-zA-Z]$/.test(tokens[i])) cmd = tokens[i++]
-    const rel = cmd === cmd.toLowerCase()
-    const at = (x: number, y: number): Pt => (rel ? [cur[0] + x, cur[1] + y] : [x, y])
-    switch (cmd.toLowerCase()) {
-      case "m": {
-        close()
-        cur = at(num(), num())
-        start = cur
-        ring.push(cur)
-        // Further pairs after a moveto are linetos
-        cmd = rel ? "l" : "L"
-        break
-      }
-      case "l":
-        cur = at(num(), num())
-        ring.push(cur)
-        break
-      case "c": {
-        const p1 = at(num(), num()), p2 = at(num(), num()), p3 = at(num(), num())
-        const p0 = cur
-        for (const t of [0.25, 0.5, 0.75, 1]) {
-          const u = 1 - t
-          ring.push([
-            u * u * u * p0[0] + 3 * u * u * t * p1[0] + 3 * u * t * t * p2[0] + t * t * t * p3[0],
-            u * u * u * p0[1] + 3 * u * u * t * p1[1] + 3 * u * t * t * p2[1] + t * t * t * p3[1],
-          ])
-        }
-        cur = p3
-        break
-      }
-      case "z":
-        cur = start
-        close()
-        break
-      default:
-        throw new Error(`Unsupported path command "${cmd}"`)
-    }
-  }
-  close()
-  return rings
+// ─── Province -> region ───────────────────────────────────────────────────────
+// Each 2025 province is named after one of the pre-merger provinces it
+// absorbed; that province's region (data/provinces.ts) is the region of the
+// whole merged unit. Aliases: source names that differ from the slug
+const NAME_TO_SLUG: Record<string, string> = {
+  Hanoi: "ha-noi",
+  Haiphong: "hai-phong",
+  "Ho Chi Minh": "ho-chi-minh-city",
 }
+const slugify = (name: string) => name.toLowerCase().replace(/\s+/g, "-")
+const regionBySlug = new Map(provinces.map((p) => [p.slug, p.region]))
+
+type Geometry = { type: string; coordinates: unknown } | null
+type Feature = { type: "Feature"; properties: Record<string, unknown>; geometry: Geometry }
+type Geo = { features?: Feature[]; geometries?: Geometry[] }
+
+const polygonsOf = (g: Geometry): Pt[][][] =>
+  !g ? [] : g.type === "MultiPolygon" ? (g.coordinates as Pt[][][]) : g.type === "Polygon" ? [g.coordinates as Pt[][]] : []
+/** Polygon / MultiPolygon features (or a GeometryCollection) -> their rings */
+const geoRings = (geo: Geo): Pt[][] =>
+  (geo.features ? geo.features.map((f) => f.geometry) : geo.geometries ?? []).flatMap((g) => polygonsOf(g).flat())
 
 const area = (r: Pt[]) =>
   Math.abs(r.reduce((a, p, i) => { const q = r[(i + 1) % r.length]; return a + p[0] * q[1] - q[0] * p[1] }, 0)) / 2
@@ -147,10 +125,12 @@ function thinRing(r: Pt[]): Pt[] {
 function toPath(rings: Pt[][]): string {
   return rings
     .map((ring) => {
-      const start: Pt = [Math.round(ring[0][0] * 10) / 10, Math.round(ring[0][1] * 10) / 10]
+      // GeoJSON rings repeat the first point at the end; "z" closes the path
+      const pts = ring.length > 1 && ring[0][0] === ring[ring.length - 1][0] && ring[0][1] === ring[ring.length - 1][1] ? ring.slice(0, -1) : ring
+      const start: Pt = [Math.round(pts[0][0] * 10) / 10, Math.round(pts[0][1] * 10) / 10]
       let prev = start
       const steps: string[] = []
-      for (const p of ring.slice(1)) {
+      for (const p of pts.slice(1)) {
         const dx = Math.round((p[0] - prev[0]) * 10) / 10
         const dy = Math.round((p[1] - prev[1]) * 10) / 10
         if (dx === 0 && dy === 0) continue
@@ -165,50 +145,59 @@ function toPath(rings: Pt[][]): string {
     .join("")
 }
 
-type Geometry = { type: string; coordinates: unknown } | null
-type Geo = { features?: { geometry: Geometry }[]; geometries?: Geometry[] }
-/** Polygon / MultiPolygon features (or a GeometryCollection) -> their rings */
-function geoRings(geo: Geo): Pt[][] {
-  const geometries = geo.features ? geo.features.map((f) => f.geometry) : geo.geometries ?? []
-  return geometries.flatMap((g) => {
-    if (!g) return []
-    const polys = g.type === "MultiPolygon" ? (g.coordinates as Pt[][][]) : g.type === "Polygon" ? [g.coordinates as Pt[][]] : []
-    return polys.flat()
-  })
-}
-
 async function main() {
-  // ── Vietnam ──
-  const byId = locations.map((loc) => ({ id: loc.id, rings: pathToRings(loc.path) }))
-  const truongSa = byId.filter((l) => l.id === "truongsa").flatMap((l) => l.rings)
-  const hoangSa = byId.filter((l) => l.id === "hoangsa").flatMap((l) => l.rings)
-  const rest = byId.filter((l) => l.id !== "truongsa" && l.id !== "hoangsa").flatMap((l) => l.rings)
-  // Specks do not survive mapshaper's simplify even with keep-shapes: they
-  // skip it and are only thinned
-  const specks = rest.filter((r) => area(r) < ISLAND_AREA).map(thinRing)
-  const big = rest.filter((r) => area(r) >= ISLAND_AREA)
-  const vnInput = {
-    type: "FeatureCollection",
-    features: big.map((r) => ({
-      type: "Feature",
-      properties: {},
-      geometry: { type: "Polygon", coordinates: [[...r, r[0]].map(srcToLngLat)] },
-    })),
+  // ── Vietnam: provinces tagged with their region, archipelagos split off ──
+  const source = JSON.parse(fs.readFileSync(SOURCE, "utf8")) as { features: Feature[] }
+  const hoangSa: Pt[][] = []
+  const truongSa: Pt[][] = []
+  const tagged = source.features.map((f) => {
+    const name = String(f.properties.nameEn)
+    const region = regionBySlug.get(NAME_TO_SLUG[name] ?? slugify(name))
+    if (!region) throw new Error(`No region for province "${name}": add it to NAME_TO_SLUG`)
+    return { region, polys: polygonsOf(f.geometry) }
+  })
+  const feature = (region: Region, polys: Pt[][][]): Feature =>
+    ({ type: "Feature", properties: { region }, geometry: { type: "MultiPolygon", coordinates: polys } })
+  // The Leaflet maps show the archipelagos in place; the homepage map draws
+  // them in insets
+  const everything = tagged.map(({ region, polys }) => feature(region, polys))
+  const mainland = tagged.map(({ region, polys }) => feature(region, polys.filter((poly) => {
+    const outer = poly[0]
+    const lng = outer.reduce((s, p) => s + p[0], 0) / outer.length
+    if (lng < ARCHIPELAGO_LNG) return true
+    const lat = outer.reduce((s, p) => s + p[1], 0) / outer.length
+    ;(lat > HOANG_SA_MIN_LAT ? hoangSa : truongSa).push(outer)
+    return false
+  })))
+  // dissolve: one shape per region, internal province borders dropped;
+  // keep-shapes: islands (Phu Quoc, Cat Ba, Con Dao...) are not simplified away
+  const dissolve = async (features: Feature[], simplify: string) => JSON.parse((await mapshaper.applyCommands(
+    `-i vn.json -dissolve region -simplify ${simplify} weighted keep-shapes -o out.json format=geojson precision=0.0001`,
+    { "vn.json": { type: "FeatureCollection", features: JSON.parse(JSON.stringify(features)) } },
+  ))["out.json"]) as { features: Feature[] }
+
+  // ── Leaflet layer (lng/lat) ──
+  const leaflet = await dissolve(everything, SIMPLIFY_LEAFLET)
+  for (const r of REGIONS) {
+    if (!leaflet.features.some((f) => f.properties.region === r)) throw new Error(`Region "${r}" missing`)
   }
-  // snap: neighbouring provinces' shared borders do not line up exactly;
-  // dissolve: one shape, no internal boundaries; keep-shapes: larger islands
-  // (Phu Quoc, Cat Ba, Con Dao...) are not simplified away
-  const vnOut = await mapshaper.applyCommands(
-    `-i vn.json snap -dissolve -simplify ${SIMPLIFY} weighted keep-shapes -o out.json precision=0.0001`,
-    { "vn.json": vnInput },
-  )
-  const land = geoRings(JSON.parse(vnOut["out.json"])).map((r) => r.map(project))
-  const islands = specks.map((r) => r.map((p) => project(srcToLngLat(p))))
+  const geojson = JSON.stringify({ type: "FeatureCollection", features: leaflet.features.map((f) => ({ type: "Feature", properties: { region: f.properties.region }, geometry: f.geometry })) })
+  fs.writeFileSync(OUT_GEOJSON, geojson + "\n")
+
+  // ── Homepage map (frame units) ──
+  const home = await dissolve(mainland, SIMPLIFY_HOME)
+  const regionPaths = Object.fromEntries(REGIONS.map((r) => {
+    const polys = home.features.filter((f) => f.properties.region === r).flatMap((f) => polygonsOf(f.geometry)).map((poly) => poly.map((ring) => ring.map(project)))
+    // Holes (lakes) stay in the land path, or are dropped when too small to see
+    const land = polys.flatMap(([outer, ...holes]) => area(outer) >= ISLAND_AREA ? [outer, ...holes.filter((h) => area(h) >= ISLAND_AREA)] : [])
+    const islands = polys.filter(([outer]) => area(outer) < ISLAND_AREA).map(([outer]) => thinRing(outer))
+    return [r, { land: toPath(land), islands: toPath(islands) }]
+  })) as Record<Region, { land: string; islands: string }>
 
   // ── Archipelago insets ──
-  /** Rings (source units) -> inset box + rings at `scale`, placed by `place(w, h)` */
+  /** Rings (lng/lat) -> inset box + rings at `scale`, placed by `place(w, h)` */
   const inset = (src: Pt[][], scale: number, place: (w: number, h: number) => Pt) => {
-    const ll = src.map(thinRing).map((r) => r.map(srcToLngLat))
+    const ll = src.map(thinRing)
     const all = ll.flat()
     const minLng = Math.min(...all.map((p) => p[0]))
     const maxLng = Math.max(...all.map((p) => p[0]))
@@ -245,13 +234,14 @@ async function main() {
         // Repair first: China's polygon does not survive -clip otherwise.
         // Simplify after -clean, which would drop the simplification
         "-clean",
-        "-simplify 20% keep-shapes",
+        `-simplify ${SIMPLIFY_NEIGHBOURS} weighted keep-shapes`,
         `-clip bbox=${LNG_WEST - 1},${south},${LNG_EAST + 1},${LAT_NORTH + 1}`,
         "-o out.json format=geojson precision=0.0001",
       ].join(" "),
-      { "world.json": countries50m },
+      { "world.json": countries10m },
     )
-    neighbourRings.push(...geoRings(JSON.parse(out["out.json"])).map((r) => r.map(project)))
+    // Islets of the neighbours add nothing to faint context
+    neighbourRings.push(...geoRings(JSON.parse(out["out.json"])).map((r) => r.map(project)).filter((r) => area(r) >= ISLAND_AREA * 4))
   }
 
   const r1 = (n: number) => Math.round(n * 10) / 10
@@ -270,23 +260,29 @@ export const LNG_WEST = ${LNG_WEST}
 export const LAT_NORTH = ${LAT_NORTH}
 export const UNITS_PER_DEGREE = ${UNITS_PER_DEGREE}
 
-/** Vietnam: mainland and larger islands, one shape */
-export const VIETNAM_PATH = "${toPath(land)}"
+export type MapRegion = "north" | "central" | "south"
 
-/** Small islands: drawn with a stroke so they stay visible */
-export const VIETNAM_ISLANDS_PATH = "${toPath(islands)}"
+/**
+ * Vietnam by region (provinces: data/provinces.ts). land: mainland and larger
+ * islands, one shape per region; islands: small islands, drawn with a stroke
+ * so they stay visible
+ */
+export const REGION_PATHS: Record<MapRegion, { land: string; islands: string }> = {
+${REGIONS.map((r) => `  ${r}: {\n    land: "${regionPaths[r].land}",\n    islands: "${regionPaths[r].islands}",\n  },`).join("\n")}
+}
 
-/** Hoang Sa and Truong Sa, each drawn in an inset box (own scale) */
+/** Hoang Sa and Truong Sa (Central), each drawn in an inset box (own scale) */
 export const HOANG_SA_INSET = ${box(hoangSaInset.box)}
 export const HOANG_SA_PATH = "${toPath(hoangSaInset.rings)}"
 export const TRUONG_SA_INSET = ${box(truongSaInset.box)}
 export const TRUONG_SA_PATH = "${toPath(truongSaInset.rings)}"
 
-/** Laos, Cambodia, Thailand, south China: faint context (Natural Earth 50m) */
+/** Laos, Cambodia, Thailand, south China: faint context (Natural Earth 10m) */
 export const NEIGHBOURS_PATH = "${toPath(neighbourRings)}"
 `
   fs.writeFileSync(OUT, ts)
-  console.log(`Wrote ${path.relative(process.cwd(), OUT)}: ${(ts.length / 1024).toFixed(1)} KB, frame ${FRAME_WIDTH} x ${FRAME_HEIGHT}, ${land.length} land rings, ${islands.length} islands, ${hoangSaInset.rings.length} Hoang Sa + ${truongSaInset.rings.length} Truong Sa rings, ${neighbourRings.length} neighbour rings`)
+  console.log(`Wrote ${path.relative(process.cwd(), OUT)}: ${(ts.length / 1024).toFixed(1)} KB, frame ${FRAME_WIDTH} x ${FRAME_HEIGHT}, ${hoangSaInset.rings.length} Hoang Sa + ${truongSaInset.rings.length} Truong Sa rings, ${neighbourRings.length} neighbour rings`)
+  console.log(`Wrote ${path.relative(process.cwd(), OUT_GEOJSON)}: ${(geojson.length / 1024).toFixed(1)} KB`)
 }
 
 main().catch((err) => {
