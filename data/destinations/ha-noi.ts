@@ -72,7 +72,7 @@ export const haNoi: Destination = {
           day: 2,
           title: "Ho Chi Minh Complex + Temple of Literature + Imperial Citadel",
           stops: ["ho-chi-minh-mausoleum-complex", "one-pillar-pagoda", "temple-of-literature", "imperial-citadel-of-thang-long"],
-          notes: "Mausoleum first: open Tue, Wed, Thu, Sat and Sun mornings only (Apr-Oct 7:30-10:30am, to 11am at weekends; Nov-Mar 8-11am, to 11:30am at weekends), closed Mon and Fri, and closed every autumn for maintenance (2026: 5 Sep - 3 Nov). Dress modestly, stay quiet, and don't take photos where it's not allowed. If you're up early, the flag-raising ceremony in front of the mausoleum is at dawn - about 6:30am in winter. Then One Pillar Pagoda next door, the Temple of Literature (Tue-Sun 8am-5pm, closed Mon; 70,000 VND) and the Imperial Citadel of Thang Long (8am-5pm, 100,000 VND).",
+          notes: "Mausoleum first: open Tue, Wed, Thu, Sat and Sun mornings only (Apr-Oct 7:30-10:30am, to 11am at weekends; Nov-Mar 8-11am, to 11:30am at weekends), closed Mon and Fri, and closed every autumn for maintenance (2026: 4 Sep - 2 Nov). Dress modestly, stay quiet, and don't take photos where it's not allowed. If you're up early, the flag-raising ceremony in front of the mausoleum is at dawn - about 6:30am in winter. Then One Pillar Pagoda next door, the Temple of Literature (Tue-Sun 8am-5pm, closed Mon; 70,000 VND) and the Imperial Citadel of Thang Long (8am-5pm, 100,000 VND).",
         },
       ],
     },
@@ -90,7 +90,7 @@ export const haNoi: Destination = {
           day: 2,
           title: "Ho Chi Minh Complex + Temple of Literature + Hoa Lo Prison",
           stops: ["ho-chi-minh-mausoleum-complex", "one-pillar-pagoda", "temple-of-literature", "hoa-lo-prison"],
-          notes: "Start early at the mausoleum (Tue, Wed, Thu, Sat, Sun mornings; closed Mon, Fri and for autumn maintenance - 2026: 5 Sep - 3 Nov). One Pillar Pagoda next door, then the Temple of Literature (70,000 VND). Lunch: bun cha. Hoa Lo Prison in the afternoon (last entry 4:30pm).",
+          notes: "Start early at the mausoleum (Tue, Wed, Thu, Sat, Sun mornings; closed Mon, Fri and for autumn maintenance - 2026: 4 Sep - 2 Nov). One Pillar Pagoda next door, then the Temple of Literature (70,000 VND). Lunch: bun cha. Hoa Lo Prison in the afternoon (last entry 4:30pm).",
         },
         {
           day: 3,
@@ -114,7 +114,7 @@ export const haNoi: Destination = {
           day: 2,
           title: "Ho Chi Minh Complex + Temple of Literature + Hoa Lo Prison",
           stops: ["ho-chi-minh-mausoleum-complex", "one-pillar-pagoda", "temple-of-literature", "hoa-lo-prison"],
-          notes: "Full history day, starting early at the mausoleum (closed Mon, Fri and for autumn maintenance - 2026: 5 Sep - 3 Nov).",
+          notes: "Full history day, starting early at the mausoleum (closed Mon, Fri and for autumn maintenance - 2026: 4 Sep - 2 Nov).",
         },
         {
           day: 3,
@@ -174,7 +174,7 @@ export const haNoi: Destination = {
     },
     {
       question: "When can I visit Ho Chi Minh's Mausoleum?",
-      answer: "Tuesday, Wednesday, Thursday, Saturday and Sunday mornings only: Apr-Oct 7:30-10:30am (to 11am at weekends and holidays), Nov-Mar 8-11am (to 11:30am). It's closed on Mondays and Fridays, and every autumn for maintenance - in 2026 from 5 September to 3 November. Entry is free. Dress modestly, stay quiet in the queue and inside, and don't take photos in restricted areas.",
+      answer: "Tuesday, Wednesday, Thursday, Saturday and Sunday mornings only: Apr-Oct 7:30-10:30am (to 11am at weekends and holidays), Nov-Mar 8-11am (to 11:30am). It's closed on Mondays and Fridays, and every autumn for maintenance - in 2026 from 4 September to 2 November, reopening 3 November. Entry is free. Dress modestly, stay quiet in the queue and inside, and don't take photos in restricted areas.",
     },
     {
       question: "How do I get from Noi Bai Airport to the city?",

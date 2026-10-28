@@ -23,7 +23,7 @@ export const hoChiMinhMausoleumComplex: Location = {
     maxMinutes: 180,
   },
   entranceFee: "Free for the mausoleum itself, for both Vietnamese citizens and foreign visitors. The Ho Chi Minh Museum and the stilt house area have separate entrance fees for foreign visitors; check the current rates at each site.",
-  openingHours: "Open Tue, Wed, Thu, Sat, Sun (closed Mon and Fri for routine maintenance, except on major holidays, when it opens regardless of weekday). Hours are seasonal: April 1 - October 31, Tue-Thu 7:30-10:30 AM and Sat-Sun/holidays 7:30-11:00 AM; November 1 - March 31, Tue-Thu 8:00-11:00 AM and Sat-Sun/holidays 8:00-11:30 AM. The mausoleum also closes every year for maintenance, usually from early September to early November (2026: 5 September - 3 November) - check current dates before visiting.",
+  openingHours: "Open Tue, Wed, Thu, Sat, Sun (closed Mon and Fri for routine maintenance, except on major holidays, when it opens regardless of weekday). Hours are seasonal: April 1 - October 31, Tue-Thu 7:30-10:30 AM and Sat-Sun/holidays 7:30-11:00 AM; November 1 - March 31, Tue-Thu 8:00-11:00 AM and Sat-Sun/holidays 8:00-11:30 AM. The mausoleum also closes every year for maintenance, usually from early September to early November (2026: 4 September - 2 November, reopening 3 November) - check current dates before visiting.",
   mapUrl: "https://www.google.com/maps?q=21.036779537375388,105.83472510393055",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776181903331!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRscDNMOVFF!2m2!1d21.03666878313551!2d105.8350983218787!3f262.5881498555228!4f9.004452945037116!5f0.7820865974627469", },
   heroImage: heroUrl("ho-chi-minh-mausoleum-ha-noi_zrpob2"),
