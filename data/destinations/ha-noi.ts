@@ -174,7 +174,7 @@ export const haNoi: Destination = {
     },
     {
       question: "When can I visit Ho Chi Minh's Mausoleum?",
-      answer: "Tuesday, Wednesday, Thursday, Saturday and Sunday mornings only: Apr-Oct 7:30-10:30am (to 11am at weekends and holidays), Nov-Mar 8-11am (to 11:30am). It's closed on Mondays and Fridays, and every autumn for maintenance - in 2026 from 4 September to 2 November, reopening 3 November. Entry is free. Dress modestly, stay quiet in the queue and inside, and don't take photos in restricted areas.",
+      answer: "Tuesday, Wednesday, Thursday, Saturday and Sunday mornings only: Apr-Oct 7:30-10:30am (to 11am at weekends and holidays), Nov-Mar 8-11am (to 11:30am). It's closed on Mondays and Fridays, and every autumn for maintenance - in 2026 from 4 September to 2 November. Entry is free. Dress modestly, stay quiet in the queue and inside, and don't take photos in restricted areas.",
     },
     {
       question: "How do I get from Noi Bai Airport to the city?",
