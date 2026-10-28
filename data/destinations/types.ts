@@ -125,8 +125,8 @@ export interface RentalOption {
 // ─── Cost ────────────────────────────────────────────────────
 export type CostRange = {
   budget: string      // "400.000–700.000 VND/ngày"
-  midRange: string    // "700.000–1.200.000 VND/ngày"
-  comfortable: string // "1.200.000+ VND/ngày"
+  midRange?: string   // "700.000-1.200.000 VND/ngày"; optional when there is no current source
+  comfortable?: string // "1.200.000+ VND/ngày"
   notes?: string
 }
 

@@ -117,6 +117,8 @@
 .gp .gp-main { padding-bottom: 8px; }
 .gp .gp-main:last-child { padding-bottom: 88px; }
 .gp .gp-section { padding-top: 52px; }
+/* Anchor jumps (e.g. #h-food) clear the 60px sticky header */
+.gp [id] { scroll-margin-top: 72px; }
 .gp .gp-section:first-child { padding-top: 36px; }
 .gp .gp-label {
   display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px;
