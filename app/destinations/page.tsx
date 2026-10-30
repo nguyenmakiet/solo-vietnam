@@ -28,6 +28,8 @@ const REGION_LABELS: Record<string, string> = {
 
 const SERIF = { fontFamily: "var(--font-serif), 'Source Serif 4', serif" }
 const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+// Card photo: slight zoom on hover / keyboard focus of the card link
+const ZOOM = "transition-transform duration-[250ms] group-hover:scale-[1.03] group-focus-visible:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
 
 export default function DestinationsPage() {
   const grouped = destinations.reduce<Record<string, typeof destinations>>(
@@ -108,43 +110,46 @@ export default function DestinationsPage() {
               </div>
 
               {/* Cards grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9">
                 {dests.map((dest, i) => {
                   const tags = (dest.tags ?? []).slice(0, 3).map(stripLeadingEmoji)
                   return (
                     <Link
                       key={dest.slug}
                       href={`/destinations/${dest.slug}`}
-                      className={`group flex flex-col bg-surface border border-line rounded-card overflow-hidden hover:border-ink-2 transition-colors ${FOCUS}`}
+                      className={`group flex flex-col ${FOCUS}`}
                     >
-                      {/* Image: rectangular, edge to edge */}
-                      <div className="relative aspect-[16/9] overflow-hidden bg-paper">
+                      {/* Image: small radius, zooms slightly on hover / keyboard focus */}
+                      <div className="relative aspect-[16/9] overflow-hidden isolate rounded-thumb bg-line">
                         {dest.heroImage ? (
                           <CloudinaryImage
                             src={dest.heroImage}
                             alt={dest.name}
                             fill
                             sizes="(min-width: 1024px) 330px, (min-width: 640px) 50vw, 100vw"
-                            className="object-cover"
+                            className={`object-cover ${ZOOM}`}
                             loading={region === firstRegion && i < 3 ? "eager" : "lazy"}
                           />
                         ) : (
                           <PhotoPlaceholder />
                         )}
-                        {/* Province label */}
-                        <span className="absolute top-3 left-3 text-[10px] font-semibold uppercase tracking-[0.12em] bg-ink/75 text-paper px-2 py-1 rounded-card">
-                          {dest.province}
-                        </span>
                       </div>
 
                       {/* Content */}
-                      <div className="flex flex-col flex-1 p-4 md:p-5">
+                      <div className="flex flex-col flex-1 pt-3.5">
                         <h3
                           className="text-xl font-bold leading-snug text-ink mb-1.5 group-hover:underline underline-offset-2 decoration-1"
                           style={SERIF}
                         >
                           {dest.name}
                         </h3>
+
+                        {/* Province: same small uppercase line as the /locations cards */}
+                        {dest.province && (
+                          <p className="text-[10px] text-ink-2 font-medium mb-1.5 uppercase tracking-[0.08em]">
+                            {dest.province}
+                          </p>
+                        )}
 
                         {dest.tagline && (
                           <p className="text-sm text-ink-2 mb-3 leading-relaxed line-clamp-3">
@@ -154,20 +159,10 @@ export default function DestinationsPage() {
 
                         {/* Tags: quiet inline labels, not pills */}
                         {tags.length > 0 && (
-                          <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-ink-2 mb-4">
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-ink-2">
                             {tags.join(" · ")}
                           </p>
                         )}
-
-                        {/* Meta row */}
-                        <div className="mt-auto flex items-start justify-between gap-4 pt-3 border-t border-line">
-                          <span className="flex-1 min-w-0 text-xs leading-snug text-ink-2">
-                            {dest.recommendedStay}
-                          </span>
-                          <span className="shrink-0 whitespace-nowrap text-[13px] font-semibold text-teal underline underline-offset-[3px] decoration-1 group-hover:text-signal-text">
-                            Guide →
-                          </span>
-                        </div>
                       </div>
                     </Link>
                   )

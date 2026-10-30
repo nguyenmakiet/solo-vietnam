@@ -193,10 +193,6 @@ export default function Home() {
                       {d.description.slice(0, 80)}{d.description.length > 80 ? "…" : ""}
                     </div>
                   )}
-                  <div className="home-dest-card-footer">
-                    <span className="home-dest-card-province">{d.province}</span>
-                    <span className="home-dest-card-cta">Explore →</span>
-                  </div>
                 </div>
               </Link>
             ))}

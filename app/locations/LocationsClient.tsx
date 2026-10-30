@@ -42,6 +42,9 @@ function primaryType(loc: LocationCard): LocationType {
 // Card photo; falls back to the placeholder if the photo fails to load.
 // An image can fail before hydration (onError is then never called), so the
 // mount effect also checks for an already-broken image.
+// Photo zooms slightly on hover / keyboard focus of the card link (group)
+const ZOOM = "transition-transform duration-[250ms] group-hover:scale-[1.03] group-focus-visible:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
+
 function CardImage({ src, alt }: { src: string | null; alt: string }) {
   const [failed, setFailed] = useState(false)
   const imgRef = useRef<HTMLImageElement>(null)
@@ -56,7 +59,7 @@ function CardImage({ src, alt }: { src: string | null; alt: string }) {
       ref={imgRef}
       src={src}
       alt={alt}
-      className="w-full h-full object-cover"
+      className={`w-full h-full object-cover ${ZOOM}`}
       loading="lazy"
       onError={() => setFailed(true)}
     />
@@ -648,22 +651,22 @@ export default function LocationsClient({ locations, initialProvince, countLabel
 
         {/* Grid */}
         {view === "list" && filtered.length > 0 && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-7 md:gap-x-6 md:gap-y-10">
             {visible.map((loc) => {
               const type = primaryType(loc)
               return (
                 <Link
                   key={loc.slug}
                   href={`/locations/${loc.slug}`}
-                  className={`group flex flex-col bg-surface border border-line rounded-card overflow-hidden hover:border-ink-2 transition-colors ${FOCUS}`}
+                  className={`group flex flex-col ${FOCUS}`}
                 >
-                  {/* Image: edge to edge, no radius */}
-                  <div className="relative aspect-[4/3] overflow-hidden bg-paper">
+                  {/* Image: small radius; text sits on the page below it */}
+                  <div className="relative aspect-[4/3] overflow-hidden isolate rounded-thumb bg-line">
                     <CardImage src={loc.image} alt={loc.name} />
                   </div>
 
                   {/* Body */}
-                  <div className="p-3 md:p-4">
+                  <div className="pt-2.5 md:pt-3">
                     <span className="ui-dot-label mb-1.5">
                       <span className={dotClass(type)} aria-hidden="true" />
                       {typeDisplayLabel(type)}

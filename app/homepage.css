@@ -551,7 +551,7 @@
 .home-dest-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 36px 24px;
 }
 @media (max-width: 900px) {
   .home-dest-grid {
@@ -564,32 +564,42 @@
   }
 }
 
+/* Borderless editorial card: text on the page, rounded photo that zooms
+   slightly on hover / keyboard focus. No shadows. */
 .home-dest-card {
   display: block;
-  background: var(--color-surface);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-card);
-  overflow: hidden;
   text-decoration: none;
-  transition: border-color 0.15s;
-}
-.home-dest-card:hover {
-  border-color: var(--color-ink-2);
 }
 .home-dest-card:focus-visible {
   outline: 2px solid var(--color-teal);
-  outline-offset: 2px;
+  outline-offset: 4px;
 }
 .home-dest-card-img {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
   background: var(--color-line);
+  border-radius: var(--radius-thumb);
   overflow: hidden;
+  isolation: isolate;
 }
 .home-dest-card-img img {
   object-fit: cover;
-  border-radius: var(--radius-image);
+  transition: transform 250ms ease;
+}
+.home-dest-card:hover .home-dest-card-img img,
+.home-dest-card:focus-visible .home-dest-card-img img {
+  transform: scale(1.03);
+}
+.home-dest-card:hover .home-dest-card-name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-dest-card-img img { transition: none; }
+  .home-dest-card:hover .home-dest-card-img img,
+  .home-dest-card:focus-visible .home-dest-card-img img { transform: none; }
 }
 /* Single-column mobile: 16/9 is 10% shorter than 16/10, a gentle crop */
 @media (max-width: 560px) {
@@ -598,7 +608,7 @@
   }
 }
 .home-dest-card-body {
-  padding: 16px 20px 18px;
+  padding: 14px 0 0;
 }
 .home-dest-card-tags {
   display: flex;
@@ -617,28 +627,6 @@
   font-size: 14px;
   color: var(--color-ink-2);
   line-height: 1.6;
-  margin-bottom: 16px;
-}
-.home-dest-card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 12px;
-  border-top: 1px solid var(--color-line);
-}
-.home-dest-card-province {
-  font-size: 12px;
-  color: var(--color-ink-2);
-}
-.home-dest-card-cta {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--color-teal);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.home-dest-card:hover .home-dest-card-cta {
-  color: var(--color-signal-text);
 }
 
 /* ── BROWSE BY VIBE: editorial list with category dots ── */
