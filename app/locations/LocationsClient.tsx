@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import dynamic from "next/dynamic"
 import type { LocationType } from "@/data/location"
@@ -11,6 +11,11 @@ import { LOCATION_CATEGORIES, isLocationCategory } from "@/data/taxonomy/categor
 import { dotClass } from "@/lib/category-dot"
 import { isFilterableTag, type LocationCard } from "./location-card"
 import PhotoPlaceholder from "@/components/PhotoPlaceholder"
+import {
+  FOCUS, OPTION, PANEL, IconChevron, MonthFilterRow, ProvinceFilter, RegionFilterRow, segmentClass,
+  fitPanel as computePanelFit, formatSlug, matchesBaseFilters, parseMonths, parseRegion, triggerClass,
+  type PanelFit, type Region,
+} from "@/components/LocationFilters"
 import type { LocationsMapPin } from "@/components/LocationsMap"
 
 // Leaflet is client-only and heavy: loaded only once the map view is opened
@@ -18,18 +23,6 @@ const LocationsMap = dynamic(() => import("@/components/LocationsMap"), {
   ssr: false,
   loading: () => <div className="h-[70dvh] min-h-[360px] md:h-[calc(100dvh-220px)] md:min-h-[520px] border border-line rounded-card bg-paper" />,
 })
-
-// ─── Region types & mapping ───────────────────────────────────────────────────
-
-type Region = "north" | "central" | "south"
-
-const REGIONS: { value: Region; label: string }[] = [
-  { value: "north",   label: "North" },
-  { value: "central", label: "Central" },
-  { value: "south",   label: "South" },
-]
-
-const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -68,10 +61,6 @@ function CardImage({ src, alt }: { src: string | null; alt: string }) {
       onError={() => setFailed(true)}
     />
   )
-}
-
-function formatSlug(slug: string): string {
-  return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
 }
 
 // A type/experience is offered and applied as a filter only when the frozen
@@ -135,22 +124,6 @@ function resolveLegacyTypes(types: string[]): { types: string[]; categories: str
   return { types: kept, categories }
 }
 
-function getLocationRegion(loc: LocationCard): Region | null {
-  return loc.region
-}
-
-// Old `?region=` values from before the 3-region split.
-const LEGACY_REGION_ALIASES: Record<string, Region> = {
-  mekong: "south",
-  highlands: "central",
-}
-
-function parseRegion(value: string | null): Region | null {
-  if (!value) return null
-  if (REGIONS.some((r) => r.value === value)) return value as Region
-  return LEGACY_REGION_ALIASES[value] ?? null
-}
-
 function parseUrlState() {
   if (typeof window === "undefined") return null
   const p = new URLSearchParams(window.location.search)
@@ -161,7 +134,7 @@ function parseUrlState() {
     categories: p.getAll("category"),
     tags: p.getAll("tag"),
     province: p.get("province") ?? "",
-    months: p.getAll("month").map((m) => parseInt(m, 10)).filter(Boolean),
+    months: parseMonths(p.getAll("month")),
     page: Math.max(1, parseInt(p.get("page") ?? "1", 10) || 1),
     view: (p.get("view") === "map" ? "map" : "list") as View,
   }
@@ -195,14 +168,6 @@ function buildSearch(
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 
-function IconChevron({ open }: { open: boolean }) {
-  return (
-    <svg className={`w-3 h-3 shrink-0 transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-    </svg>
-  )
-}
-
 function IconList() {
   return (
     <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -219,36 +184,9 @@ function IconMap() {
   )
 }
 
-// ─── Styles (design tokens from app/globals.css) ─────────────────────────────
+// ─── Styles (shared filter styles: components/LocationFilters.tsx) ───────────
 
-const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
 const SERIF = { fontFamily: "var(--font-serif), 'Source Serif 4', serif" }
-
-// Chip row: free-standing pills with a small gap - no frame, no dividers
-const CHIP_ROW = "flex shrink-0 gap-1"
-
-// Pill inside a chip row; selected = teal-ink fill. Inset focus ring so the
-// scrolling month row never clips it.
-function segmentClass(active: boolean) {
-  return `px-3 py-1.5 rounded-full text-[13px] font-medium whitespace-nowrap transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-teal ${
-    active ? "bg-teal-ink text-paper" : "text-ink hover:bg-line/50"
-  }`
-}
-
-// Dropdown trigger: borderless text + chevron (stays a real control),
-// teal when it has selections
-function triggerClass(hasSelection: boolean) {
-  return `flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[13px] font-medium whitespace-nowrap transition-colors ${FOCUS} ${
-    hasSelection ? "bg-teal/10 text-teal" : "text-ink hover:bg-line/50"
-  }`
-}
-
-// Dropdown panel. Side and max height come from panelFit (set when a trigger
-// opens) so the panel stays on screen and only scrolls when it must.
-const PANEL_BASE = "absolute top-full mt-1 bg-surface border border-line rounded-card z-30 max-w-[calc(100vw-3rem)]"
-const PANEL = `${PANEL_BASE} overflow-y-auto py-1.5`
-const OPTION = "flex items-center gap-2.5 px-3.5 py-1.5 hover:bg-paper cursor-pointer text-sm text-ink"
-const ROW_LABEL = "w-[76px] md:w-[88px] shrink-0 text-[11px] font-semibold tracking-[0.12em] uppercase text-ink-2 select-none"
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -269,7 +207,7 @@ export default function LocationsClient({ locations, initialProvince, countLabel
   const [selectedMonths, setSelectedMonths] = useState<number[]>([])
   // Open dropdown: anchor to the trigger's right edge when it sits in the right
   // half of the screen, and grow down to the bottom of the viewport.
-  const [panelFit, setPanelFit] = useState({ right: false, maxH: 400 })
+  const [panelFit, setPanelFit] = useState<PanelFit>({ right: false, maxH: 400 })
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const [view, setView] = useState<View>("list")
 
@@ -302,14 +240,11 @@ export default function LocationsClient({ locations, initialProvince, countLabel
   const [catOpen, setCatOpen] = useState(false)
   const [tagOpen, setTagOpen] = useState(false)
   const [provOpen, setProvOpen] = useState(false)
-  const [provSearch, setProvSearch] = useState("")
 
   const typeRef = useRef<HTMLDivElement>(null)
   const expRef = useRef<HTMLDivElement>(null)
   const catRef = useRef<HTMLDivElement>(null)
   const tagRef = useRef<HTMLDivElement>(null)
-  const provRef = useRef<HTMLDivElement>(null)
-  const provInputRef = useRef<HTMLInputElement>(null)
 
   const allTypes = useMemo(() => {
     const set = new Set<string>()
@@ -349,11 +284,6 @@ export default function LocationsClient({ locations, initialProvince, countLabel
     return Array.from(set).sort()
   }, [locations])
 
-  const filteredProvinces = useMemo(
-    () => allProvinces.filter((p) => formatSlug(p).toLowerCase().includes(provSearch.toLowerCase())),
-    [allProvinces, provSearch]
-  )
-
   // Count per month (for unfiltered base, so badges always show totals)
   const monthCounts = useMemo(() => {
     const counts: Record<number, number> = {}
@@ -373,9 +303,7 @@ export default function LocationsClient({ locations, initialProvince, countLabel
 
   const filtered = useMemo(() => {
     return locations.filter((loc) => {
-      if (region !== null) {
-        if (getLocationRegion(loc) !== region) return false
-      }
+      if (!matchesBaseFilters(loc, { region, province, months: selectedMonths })) return false
       if (activeTypes.length > 0) {
         if (!activeTypes.some((t) => getTypes(loc).includes(t))) return false
       }
@@ -387,12 +315,6 @@ export default function LocationsClient({ locations, initialProvince, countLabel
       }
       if (activeTags.length > 0) {
         if (!activeTags.some((t) => loc.tags.includes(t))) return false
-      }
-      if (province) {
-        if (!loc.provinces.includes(province)) return false
-      }
-      if (selectedMonths.length > 0) {
-        if (!selectedMonths.some((m) => loc.months.includes(m))) return false
       }
       return true
     })
@@ -447,26 +369,20 @@ export default function LocationsClient({ locations, initialProvince, countLabel
       if (expRef.current && !expRef.current.contains(e.target as Node)) setExpOpen(false)
       if (catRef.current && !catRef.current.contains(e.target as Node)) setCatOpen(false)
       if (tagRef.current && !tagRef.current.contains(e.target as Node)) setTagOpen(false)
-      if (provRef.current && !provRef.current.contains(e.target as Node)) {
-        setProvOpen(false)
-        setProvSearch("")
-      }
     }
     document.addEventListener("mousedown", handler)
     return () => document.removeEventListener("mousedown", handler)
   }, [])
 
-  useEffect(() => {
-    if (provOpen) provInputRef.current?.focus()
-  }, [provOpen])
-
   function fitPanel(trigger: HTMLElement) {
-    const r = trigger.getBoundingClientRect()
-    setPanelFit({
-      right: r.left + r.width / 2 > window.innerWidth / 2,
-      maxH: Math.max(240, window.innerHeight - r.bottom - 16),
-    })
+    setPanelFit(computePanelFit(trigger))
   }
+
+  // Opening the province dropdown closes the others, as their triggers do
+  const onProvOpenChange = useCallback((open: boolean) => {
+    setProvOpen(open)
+    if (open) { setTypeOpen(false); setExpOpen(false); setCatOpen(false); setTagOpen(false) }
+  }, [])
 
   function toggleRegion(r: Region) {
     setRegion((prev) => (prev === r ? null : r))
@@ -495,8 +411,6 @@ export default function LocationsClient({ locations, initialProvince, countLabel
 
   function selectProvince(p: string) {
     setProvince(p)
-    setProvOpen(false)
-    setProvSearch("")
     setVisibleCount(PAGE_SIZE)
   }
 
@@ -562,42 +476,10 @@ export default function LocationsClient({ locations, initialProvince, countLabel
         <div className="max-w-6xl mx-auto px-6">
 
           {/* Row 1 — Region */}
-          <div className="flex items-center pt-2.5 pb-1.5">
-            <span className={ROW_LABEL}>Region</span>
-            <div className={CHIP_ROW} role="group" aria-label="Region">
-              {REGIONS.map((r) => (
-                <button
-                  key={r.value}
-                  aria-pressed={region === r.value}
-                  onClick={() => toggleRegion(r.value)}
-                  className={segmentClass(region === r.value)}
-                >
-                  {r.label}
-                </button>
-              ))}
-            </div>
-          </div>
+          <RegionFilterRow value={region} onToggle={toggleRegion} />
 
           {/* Row 2 — Best time (scrolls horizontally on narrow screens) */}
-          <div className="flex items-center py-1.5 overflow-x-auto scrollbar-none">
-            <span className={ROW_LABEL}>Best time</span>
-            <div className={CHIP_ROW} role="group" aria-label="Best time to visit">
-              {MONTHS.map((label, i) => {
-                const m = i + 1
-                const active = selectedMonths.includes(m)
-                return (
-                  <button
-                    key={m}
-                    aria-pressed={active}
-                    onClick={() => toggleMonth(m)}
-                    className={segmentClass(active)}
-                  >
-                    {label}
-                  </button>
-                )
-              })}
-            </div>
-          </div>
+          <MonthFilterRow value={selectedMonths} onToggle={toggleMonth} />
 
           {/* Row 3 — Dropdowns + result count */}
           {/* -ml-3 lines the trigger text up with the row labels above */}
@@ -702,49 +584,13 @@ export default function LocationsClient({ locations, initialProvince, countLabel
             )}
 
             {/* Province — search-style */}
-            <div ref={provRef} className="relative">
-              <button
-                aria-expanded={provOpen}
-                onClick={(e) => { fitPanel(e.currentTarget); setProvOpen(!provOpen); setTypeOpen(false); setExpOpen(false); setCatOpen(false); setTagOpen(false) }}
-                className={triggerClass(province !== "")}
-              >
-                {province ? formatSlug(province) : "Province"}
-                <IconChevron open={provOpen} />
-              </button>
-              {provOpen && (
-                <div className={`${PANEL_BASE} w-56 ${panelFit.right ? "right-0" : "left-0"}`}>
-                  <div className="p-2 border-b border-line">
-                    <input
-                      ref={provInputRef}
-                      type="text"
-                      value={provSearch}
-                      onChange={(e) => setProvSearch(e.target.value)}
-                      placeholder="Search province…"
-                      aria-label="Search province"
-                      className="w-full px-2.5 py-1.5 text-sm text-ink placeholder:text-ink-2 bg-surface border border-line rounded-input outline-none focus:border-teal"
-                    />
-                  </div>
-                  {/* 57px = search box row above */}
-                  <div className="overflow-y-auto py-1" style={{ maxHeight: panelFit.maxH - 57 }}>
-                    <button
-                      onClick={() => selectProvince("")}
-                      className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-paper ${!province ? "font-semibold text-teal" : "text-ink"}`}
-                    >
-                      All provinces
-                    </button>
-                    {filteredProvinces.map((p) => (
-                      <button
-                        key={p}
-                        onClick={() => selectProvince(p)}
-                        className={`w-full text-left px-3.5 py-1.5 text-sm hover:bg-paper ${province === p ? "font-semibold text-teal" : "text-ink"}`}
-                      >
-                        {formatSlug(p)}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+            <ProvinceFilter
+              provinces={allProvinces}
+              value={province}
+              onChange={selectProvince}
+              open={provOpen}
+              onOpenChange={onProvOpenChange}
+            />
 
             {/* Clear */}
             {hasActiveFilters && (

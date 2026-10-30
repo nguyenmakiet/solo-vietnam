@@ -77,6 +77,7 @@ export async function generateMetadata({ searchParams }: Props) {
       url: "https://www.soloinvietnam.com/locations",
       images: [{ url: OG_FALLBACK_IMAGE, width: 1200, height: 630 }],
     },
+    twitter: { card: "summary_large_image", images: [OG_FALLBACK_IMAGE] },
     alternates: {
       canonical: "https://www.soloinvietnam.com/locations",
     },

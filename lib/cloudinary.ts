@@ -77,7 +77,10 @@ export const ogImageUrl = (url: string) => url.replace(/\bf_auto\b/, "f_jpg")
 export const ogPaddedUrl = (publicId: string) =>
   `${BASE_URL}/w_1200,h_630,c_pad,b_auto,q_auto,f_jpg/${publicId}`
 
-export const OG_FALLBACK_IMAGE = ogImageUrl(heroUrl("ha-giang-loop_e8myfw"))
+// Site-wide default share image for pages without their own: a neutral text
+// card rendered by Next.js (app/og-default.png/route.tsx), not a destination
+// photo - it used to be the Ha Giang Loop hero, so every such page shared as Ha Giang
+export const OG_FALLBACK_IMAGE = "https://www.soloinvietnam.com/og-default.png"
 
 // ─── Real photo check ────────────────────────────────────────
 // Unconfirmed publicIds are named "...placeholder" (see CLAUDE.md) and do not

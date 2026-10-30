@@ -315,6 +315,95 @@ a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offse
 .gp .gp-switch a:hover { color: var(--color-signal-text); }
 .gp .gp-switch a[aria-current="page"] { color: var(--color-ink); text-decoration: none; }
 
+/* ── EXPERIENCE PAGES: filter bar, region groups, best-time table ── */
+/* The filter bar reuses the /locations Tailwind controls
+   (components/LocationFilters.tsx). The unlayered `.gp *` reset above would
+   strip their utility padding and margins, so hand those back to the layers. */
+.gp .gp-filters,
+.gp .gp-filters * { margin: revert-layer; padding: revert-layer; }
+.gp .gp-filters {
+  position: sticky; top: 61px; /* below the 60px + 1px site navbar (header.css) */
+  z-index: 20;
+  margin: 0 0 8px;
+  background: var(--color-paper);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+.gp .gp-filter-clear {
+  margin-top: 8px;
+  background: none; border: 0; cursor: pointer;
+  font: inherit; color: var(--color-teal);
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.gp .gp-region { padding-top: 40px; }
+.gp .gp-region-count { color: var(--color-ink-2); font-weight: 500; font-size: 0.7em; }
+.gp .gp-region-links {
+  margin-bottom: 8px;
+  font-size: 14px; line-height: 1.7;
+  color: var(--color-ink-2);
+}
+.gp .gp-region-links a {
+  color: var(--color-teal); font-weight: 600;
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+}
+.gp .gp-region-links a:hover { color: var(--color-signal-text); }
+.gp .gp-group { padding-top: 24px; }
+.gp .gp-group-title {
+  display: flex; align-items: baseline; gap: 8px;
+  margin-bottom: 14px;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--type-accent-strong);
+}
+.gp .gp-sr {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
+/* relative: keeps the absolutely positioned .gp-sr cells inside the scroller */
+.gp .gp-season-scroll { position: relative; overflow-x: auto; margin-bottom: 16px; }
+.gp .gp-season {
+  width: 100%; min-width: 640px;
+  border-collapse: collapse;
+  font-size: 13px; font-variant-numeric: tabular-nums;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+}
+.gp .gp-season th,
+.gp .gp-season td { border: 1px solid var(--color-line); padding: 8px 4px; text-align: center; }
+.gp .gp-season thead th {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--color-ink-2);
+}
+.gp .gp-season tbody th {
+  text-align: left; padding: 8px 12px; width: 200px;
+  font-weight: 600; color: var(--color-ink);
+}
+.gp .gp-season tbody th a { color: var(--color-ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.gp .gp-season tbody th a:hover { color: var(--color-signal-text); }
+.gp .gp-season-sub { display: block; margin-top: 2px; font-size: 11.5px; font-weight: 400; color: var(--color-ink-2); }
+/* Count cells: tint grows with the share of the region's places (--f, 0-1) */
+.gp .gp-season td {
+  color: var(--color-ink);
+  background: color-mix(in srgb, var(--type-accent) calc(var(--f, 0) * 42%), var(--color-surface));
+}
+.gp .gp-season--locations td { background: var(--color-surface); }
+.gp .gp-season--locations td.is-on { background: color-mix(in srgb, var(--type-accent) 38%, var(--color-surface)); }
+.gp .gp-season-split { margin-top: 28px; }
+.gp .gp-season-title {
+  margin-bottom: 14px;
+  font-family: var(--font-serif), 'Source Serif 4', serif;
+  font-size: 20px; font-weight: 700; line-height: 1.3;
+}
+.gp .gp-season-title a { color: var(--color-ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.gp .gp-season-detail { margin-top: 10px; }
+.gp .gp-season-detail summary {
+  display: flex; align-items: center; min-height: 44px;
+  cursor: pointer;
+  font-size: 14px; font-weight: 600; color: var(--color-teal);
+}
+.gp .gp-season-detail[open] summary { margin-bottom: 8px; }
+
 /* ── CLOSING CTA: teal-ink band into the footer ── */
 .gp .gp-cta {
   margin-top: 72px;
