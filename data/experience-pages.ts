@@ -38,35 +38,35 @@ export type ExperiencePageConfig = {
   ogLocationSlug?: string
 }
 
-const list = (items: string[]) =>
-  items.length <= 1 ? items.join("") : `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`
-
 export const EXPERIENCE_PAGES: Partial<Record<ExperienceSlug, ExperiencePageConfig>> = {
   beaches: {
     metaTitle: "Beaches in Vietnam by Region and Season | Solo in Vietnam",
     metaDescription: (s) =>
-      `${s.total} beaches, islands and coastal spots in Vietnam for solo travelers, grouped by North, Central and South, with best months per region and honest notes on where seasons split.`,
+      `${s.total} beaches, islands and coastal spots in Vietnam for solo travelers, grouped by North, Central and South, with the months each place is marked as best to visit.`,
     typeGroups: [
       { key: "beaches", label: "Beaches", types: ["beach"] },
       { key: "islands-bays", label: "Islands & bays", types: ["island", "bay"] },
       { key: "other-coastal", label: "Other coastal" },
     ],
-    // TODO: Nguyen to rewrite in his own voice. Draft built only from the
-    // location data: every number and month below is computed, nothing else
-    // is claimed. Keep it to facts the location files support.
-    intro: (s) => {
-      const peaks = [
-        s.peakByRegion.north && `in the North for ${s.peakByRegion.north}`,
-        s.peakByRegion.central && `on the Central coast for ${s.peakByRegion.central}`,
-        s.peakByRegion.south && `in the South for ${s.peakByRegion.south}`,
-      ].filter((p): p is string => Boolean(p))
-      return [
-        `This page lists ${s.total} places in Vietnam where the beach is part of the visit: ${s.byGroup.beaches ?? 0} beaches, ${s.byGroup["islands-bays"] ?? 0} islands and bays, and ${s.byGroup["other-coastal"] ?? 0} other coastal spots such as cable cars, a lighthouse, fishing villages and rock formations. They are spread over ${s.provinceCount} provinces: ${s.byRegion.north} in the North, ${s.byRegion.central} on the Central coast and ${s.byRegion.south} in the South.`,
-        peaks.length > 0
-          ? `The coasts do not share one season. Going by the best months on each location page, most places are marked ${list(peaks)}.${s.splitDestinations.length > 0 ? ` In ${list(s.splitDestinations)}, the places listed share no best month, so the table below shows them one by one.` : ""}`
-          : "",
-        "Use the filters to narrow the list by region, month or province, or open the same places on the map. Each card links to a location page with the details.",
-      ].filter(Boolean)
-    },
+    // intro: not set, so the page shows only the tagline. Nguyen writes the
+    // intro himself; the draft below (built only from computed stats) is kept
+    // as a reference and is never rendered. To use an intro, add `intro` here.
+    // const list = (items: string[]) =>
+    //   items.length <= 1 ? items.join("") : `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`
+    //
+    // intro: (s) => {
+    //   const peaks = [
+    //     s.peakByRegion.north && `in the North for ${s.peakByRegion.north}`,
+    //     s.peakByRegion.central && `on the Central coast for ${s.peakByRegion.central}`,
+    //     s.peakByRegion.south && `in the South for ${s.peakByRegion.south}`,
+    //   ].filter((p): p is string => Boolean(p))
+    //   return [
+    //     `This page lists ${s.total} places in Vietnam where the beach is part of the visit: ${s.byGroup.beaches ?? 0} beaches, ${s.byGroup["islands-bays"] ?? 0} islands and bays, and ${s.byGroup["other-coastal"] ?? 0} other coastal spots such as cable cars, a lighthouse, fishing villages and rock formations. They are spread over ${s.provinceCount} provinces: ${s.byRegion.north} in the North, ${s.byRegion.central} on the Central coast and ${s.byRegion.south} in the South.`,
+    //     peaks.length > 0
+    //       ? `The coasts do not share one season. Going by the best months on each location page, most places are marked ${list(peaks)}.${s.splitDestinations.length > 0 ? ` In ${list(s.splitDestinations)}, the places listed share no best month, so the table below shows them one by one.` : ""}`
+    //       : "",
+    //     "Use the filters to narrow the list by region, month or province, or open the same places on the map. Each card links to a location page with the details.",
+    //   ].filter(Boolean)
+    // },
   },
 }

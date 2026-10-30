@@ -8,7 +8,7 @@ import { provinces } from "@/data/provinces"
 import { destinations } from "@/data/destinations"
 import { releasedBestMonths, formatMonths } from "@/data/best-months-release"
 import { EXPERIENCE_PAGES, type ExperienceStats, type ExperienceTypeGroup } from "@/data/experience-pages"
-import { OG_FALLBACK_IMAGE, ogImageUrl, realPhoto } from "@/lib/cloudinary"
+import { OG_LAST_RESORT_IMAGE, ogImageUrl, realPhoto } from "@/lib/cloudinary"
 
 export type Region = "north" | "central" | "south"
 
@@ -206,7 +206,7 @@ export function buildExperiencePage(experience: Experience): ExperiencePage {
     title: config.metaTitle ?? `${experience.label} in Vietnam | Solo in Vietnam`,
     description: config.metaDescription?.(stats) ?? genericDescription(stats),
     intro: config.intro?.(stats) ?? [],
-    ogImage: ogLocation ? ogImageUrl(ogLocation.heroImage!) : OG_FALLBACK_IMAGE,
+    ogImage: ogLocation ? ogImageUrl(ogLocation.heroImage!) : OG_LAST_RESORT_IMAGE,
     ogLocation,
     locations,
     regions,

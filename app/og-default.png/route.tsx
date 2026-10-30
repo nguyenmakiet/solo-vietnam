@@ -1,7 +1,7 @@
-// Neutral site-wide share image (OG_FALLBACK_IMAGE in lib/cloudinary.ts):
-// text on the site's paper and teal-ink colours, no destination photo, so a
-// page without its own image no longer shares as one place. Rendered once at
-// build time by Next.js (no Cloudinary upload or transformation).
+// Last-resort share image (OG_LAST_RESORT_IMAGE in lib/cloudinary.ts) for a
+// page with no image of its own at all: text on the site's paper and
+// teal-ink colours. Pages with a site-level image keep OG_FALLBACK_IMAGE.
+// Rendered once at build time by Next.js (no Cloudinary upload or transformation).
 import { ImageResponse } from "next/og"
 
 export const dynamic = "force-static"

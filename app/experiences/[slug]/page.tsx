@@ -140,7 +140,7 @@ export default async function ExperiencePage({
           </div>
           <h1>{experience.label} in Vietnam</h1>
           <p className="gp-tagline">{experience.tagline}</p>
-          {/* Intro: draft from data/experience-pages.ts - TODO there for Nguyen's rewrite */}
+          {/* Intro: `intro` in data/experience-pages.ts; none set = tagline only */}
           {page.intro.map((p, i) => (
             <p key={i} className="gp-lead">{p}</p>
           ))}
