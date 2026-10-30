@@ -69,4 +69,18 @@ export const EXPERIENCE_PAGES: Partial<Record<ExperienceSlug, ExperiencePageConf
     //   ].filter(Boolean)
     // },
   },
+  snorkeling: { ogLocationSlug: "nam-du-islands" },
+  trekking: { ogLocationSlug: "ta-xua-mountain" },
+  camping: { ogLocationSlug: "bui-hui-grassland" },
+  caving: { ogLocationSlug: "son-doong-cave" },
+  kayaking: { ogLocationSlug: "lan-ha-bay" },
+  "boat-tours": { ogLocationSlug: "trang-an" },
+  food: { ogLocationSlug: "hanoi-old-quarter" },
+  cycling: { ogLocationSlug: "tam-coc" },
+  nightlife: { ogLocationSlug: "bui-vien-street" },
+  culture: { ogLocationSlug: "hoi-an-ancient-town" },
+  homestays: { ogLocationSlug: "ta-van-village" },
+  wildlife: { ogLocationSlug: "cat-tien-national-park" },
+  motorcycling: { ogLocationSlug: "ma-pi-leng-pass" },
+  "cable-cars": { ogLocationSlug: "ba-na-cable-car" },
 }
