@@ -66,6 +66,9 @@
   --radius-button: 2px;
   --radius-input: 2px;
   --radius-image: 0px;
+  /* Card photos (borderless editorial cards): the one rounded corner on cards.
+     Utility: rounded-thumb */
+  --radius-thumb: 4px;
 }
 
 @media (prefers-color-scheme: dark) {

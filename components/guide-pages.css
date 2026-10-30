@@ -151,27 +151,32 @@
 }
 
 /* ── CARDS (same language as /destinations and destination places) ── */
+/* Borderless editorial cards: no frame or fill, text sits on the page;
+   only the photo has a (small) radius. Hover / keyboard focus zooms the
+   photo slightly inside its clipped frame. No shadows. */
 .gp .gp-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 32px 22px;
 }
 .gp .gp-card {
   display: flex; flex-direction: column;
-  background: var(--color-surface);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-card);
-  overflow: hidden;
   text-decoration: none;
   color: var(--color-ink);
-  transition: border-color 0.15s;
 }
-a.gp-card:hover { border-color: var(--color-ink-2); }
-.gp .gp-card--muted { background: transparent; }
-.gp .gp-card-media { position: relative; aspect-ratio: 16 / 9; background: var(--color-paper); overflow: hidden; }
-.gp .gp-card-media img { object-fit: cover; }
+.gp .gp-card-media {
+  position: relative; aspect-ratio: 16 / 9;
+  background: var(--color-line);
+  border-radius: var(--radius-thumb);
+  overflow: hidden;
+  isolation: isolate; /* keeps the zoomed photo clipped to the radius */
+}
+.gp .gp-card-media img { object-fit: cover; transition: transform 250ms ease; }
+a.gp-card:hover .gp-card-media img,
+a.gp-card:focus-visible .gp-card-media img { transform: scale(1.03); }
 .gp .gp-card-media--food { aspect-ratio: 4 / 3; }
-.gp .gp-card-body { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 12px; flex: 1; }
+.gp .gp-card-body { display: flex; flex-direction: column; gap: 6px; padding: 12px 0 0; flex: 1; }
+.gp .gp-card-body:first-child { padding-top: 0; }
 .gp .gp-card-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
 .gp .gp-card-kicker {
   font-size: 11px; font-weight: 600;
@@ -204,8 +209,7 @@ a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offse
 }
 .gp .gp-card-foot {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
-  padding: 10px 16px 12px;
-  border-top: 1px solid var(--color-line);
+  padding: 8px 0 0;
   font-size: 12px; line-height: 1.45; color: var(--color-ink-2);
 }
 .gp .gp-card-best { flex: 1; min-width: 0; }
@@ -298,6 +302,8 @@ a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offse
 .gp .gp-exp-icon--lg svg { width: 36px; height: 36px; }
 @media (prefers-reduced-motion: reduce) {
   .gp .gp-exp-icon svg, .gp .gp-exp-arrow { transition: none; }
+  .gp .gp-card-media img { transition: none; }
+  a.gp-card:hover .gp-card-media img, a.gp-card:focus-visible .gp-card-media img { transform: none; }
 }
 
 /* Region switcher: plain text links, the current one marked */
@@ -451,7 +457,7 @@ a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offse
 
 /* Dense variant for long, image-led lists (provinces, food): four across on wide screens */
 @media (min-width: 1180px) {
-  .gp .gp-cards--dense { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .gp .gp-cards--dense { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 24px; }
   .gp .gp-cards--dense .gp-card-name { font-size: 18px; }
 }
 
@@ -486,11 +492,11 @@ a.gp-card:hover .gp-card-name { text-decoration: underline; text-underline-offse
   .gp .gp-section { padding-top: 72px; }
   .gp .gp-section:first-child { padding-top: 48px; }
   .gp .gp-label { font-size: 12px; margin-bottom: 24px; }
-  .gp .gp-cards { gap: 24px; }
-  .gp .gp-card-body { padding: 16px 18px 14px; }
+  .gp .gp-cards { gap: 40px 28px; }
+  .gp .gp-card-body { padding: 14px 0 0; }
   .gp .gp-card-name { font-size: 20px; }
   .gp .gp-card-desc { font-size: 14px; }
-  .gp .gp-card-foot { padding: 12px 18px 14px; }
+  .gp .gp-card-foot { padding: 10px 0 0; }
   .gp .gp-links { gap: 4px 48px; }
   .gp .gp-cta { margin-top: 88px; padding: 64px 0; }
   .gp .gp-cta-title { font-size: clamp(36px, 3vw, 44px); }

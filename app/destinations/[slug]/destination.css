@@ -218,20 +218,29 @@
 
 /* Places to visit: cards in the /destinations language
    (columns: DestinationSection grid, cols={3}) */
+/* Borderless editorial cards (same as .gp-card): rounded photo that zooms
+   slightly on hover / keyboard focus, text on the page. No shadows. */
 .dp .dd-place {
   display: flex; flex-direction: column;
-  background: var(--color-surface);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-card);
-  overflow: hidden;
   text-decoration: none;
   color: var(--color-ink);
-  transition: border-color 0.15s;
 }
-.dp .dd-place:hover { border-color: var(--color-ink-2); }
-.dp .dd-place-media { position: relative; aspect-ratio: 16 / 9; background: var(--color-paper); overflow: hidden; }
-.dp .dd-place-media img { object-fit: cover; }
-.dp .dd-place-body { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 12px; flex: 1; }
+.dp .dd-place-media {
+  position: relative; aspect-ratio: 16 / 9;
+  background: var(--color-line);
+  border-radius: var(--radius-thumb);
+  overflow: hidden;
+  isolation: isolate;
+}
+.dp .dd-place-media img { object-fit: cover; transition: transform 250ms ease; }
+.dp .dd-place:hover .dd-place-media img,
+.dp .dd-place:focus-visible .dd-place-media img { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) {
+  .dp .dd-place-media img { transition: none; }
+  .dp .dd-place:hover .dd-place-media img,
+  .dp .dd-place:focus-visible .dd-place-media img { transform: none; }
+}
+.dp .dd-place-body { display: flex; flex-direction: column; gap: 6px; padding: 12px 0 0; flex: 1; }
 .dp .dd-place-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
 .dp .dd-status {
   font-size: 11px; font-weight: 600;
@@ -251,8 +260,7 @@
 }
 .dp .dd-place-foot {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
-  padding: 10px 16px 12px;
-  border-top: 1px solid var(--color-line);
+  padding: 8px 0 0;
   font-size: 12px; line-height: 1.45; color: var(--color-ink-2);
 }
 .dp .dd-place-best { flex: 1; min-width: 0; }
@@ -537,10 +545,10 @@
   .dp .dd-chip { font-size: 14px; padding: 6px 12px; }
 
   /* Places to visit: wider cards */
-  .dp .dd-place-body { padding: 16px 18px 14px; }
+  .dp .dd-place-body { padding: 14px 0 0; }
   .dp .dd-place-name { font-size: 20px; }
   .dp .dd-place-desc { font-size: 14px; }
-  .dp .dd-place-foot { padding: 12px 18px 14px; }
+  .dp .dd-place-foot { padding: 10px 0 0; }
 
   /* Route map */
   .dp .itin-map { height: 520px; }
@@ -593,6 +601,8 @@
    columns; pair = wide | narrow column (3fr | 2fr) under the title;
    full = the container width. */
 .dp .ds--cols-3 > .ds-body { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+/* Borderless place cards: more air between them instead of frames */
+.dp .ds--cols-3 > .ds-body.dd-places { gap: 32px 22px; }
 .dp .ds--cols-auto > .ds-body { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px 32px; }
 @media (max-width: 900px) {
   .dp .ds--cols-3 > .ds-body { grid-template-columns: repeat(2, 1fr); }
