@@ -23,7 +23,16 @@ function realImage(heroImage?: string): string | null {
   return heroImage
 }
 
-export default function LocationCard({ location, sub }: { location: Location; sub?: string }) {
+// headingAs: h4 when the cards sit under an h3 group heading (experience pages)
+export default function LocationCard({
+  location,
+  sub,
+  headingAs: Heading = "h3",
+}: {
+  location: Location
+  sub?: string
+  headingAs?: "h3" | "h4"
+}) {
   const img = realImage(location.heroImage)
   const type = Array.isArray(location.type) ? location.type[0] : location.type
   const status = location.status ? STATUS_LABEL[location.status] : undefined
@@ -53,7 +62,7 @@ export default function LocationCard({ location, sub }: { location: Location; su
           </span>
           {status && <span className={`gp-status${status.soft ? " gp-status--soft" : ""}`}>{status.text}</span>}
         </div>
-        <h3 className="gp-card-name">{location.name}</h3>
+        <Heading className="gp-card-name">{location.name}</Heading>
         {sub && <p className="gp-card-sub">{sub}</p>}
         {location.seoDescription && <p className="gp-card-desc">{location.seoDescription}</p>}
       </div>

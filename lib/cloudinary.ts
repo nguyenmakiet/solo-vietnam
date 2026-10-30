@@ -79,6 +79,11 @@ export const ogPaddedUrl = (publicId: string) =>
 
 export const OG_FALLBACK_IMAGE = ogImageUrl(heroUrl("ha-giang-loop_e8myfw"))
 
+// Last resort for a page that has no image of its own at all (e.g. an
+// experience page whose locations have no photo yet): a neutral text card
+// rendered by Next.js (app/og-default.png/route.tsx), no Cloudinary involved
+export const OG_LAST_RESORT_IMAGE = "https://www.soloinvietnam.com/og-default.png"
+
 // ─── Real photo check ────────────────────────────────────────
 // Unconfirmed publicIds are named "...placeholder" (see CLAUDE.md) and do not
 // exist on Cloudinary. null = no real photo yet; callers hide the image slot.
