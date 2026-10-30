@@ -102,7 +102,6 @@ export default function ProvincesPage() {
                     </div>
                     <div className="gp-card-foot">
                       <span className="gp-card-best">{p.bestTime}</span>
-                      <span className="gp-card-arrow" aria-hidden="true">Explore →</span>
                     </div>
                   </Link>
                 ))}

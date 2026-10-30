@@ -78,10 +78,6 @@ export default function RegionGuide({ region: key }: { region: RegionKey }) {
               return hasGuide ? (
                 <Link key={dest.slug} href={`/destinations/${dest.slug}`} className="gp-card">
                   {body}
-                  <div className="gp-card-foot">
-                    <span className="gp-card-best">Explore guide</span>
-                    <span className="gp-card-arrow" aria-hidden="true">→</span>
-                  </div>
                 </Link>
               ) : (
                 <div key={dest.slug} className="gp-card gp-card--muted">{body}</div>

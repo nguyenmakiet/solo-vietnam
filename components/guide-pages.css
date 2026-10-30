@@ -177,6 +177,9 @@ a.gp-card:focus-visible .gp-card-media img { transform: scale(1.03); }
 .gp .gp-card-media--food { aspect-ratio: 4 / 3; }
 .gp .gp-card-body { display: flex; flex-direction: column; gap: 6px; padding: 12px 0 0; flex: 1; }
 .gp .gp-card-body:first-child { padding-top: 0; }
+/* Cards without a photo (region-page destinations, a food card without an
+   image) would read as floating text: a thin rule marks where each starts */
+.gp .gp-card:not(:has(.gp-card-media)) { border-top: 1px solid var(--color-line); padding-top: 14px; }
 .gp .gp-card-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
 .gp .gp-card-kicker {
   font-size: 11px; font-weight: 600;

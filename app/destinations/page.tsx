@@ -133,10 +133,6 @@ export default function DestinationsPage() {
                         ) : (
                           <PhotoPlaceholder />
                         )}
-                        {/* Province label */}
-                        <span className="absolute top-3 left-3 text-[10px] font-semibold uppercase tracking-[0.12em] bg-ink/75 text-paper px-2 py-1 rounded-card">
-                          {dest.province}
-                        </span>
                       </div>
 
                       {/* Content */}
@@ -147,6 +143,13 @@ export default function DestinationsPage() {
                         >
                           {dest.name}
                         </h3>
+
+                        {/* Province: same small uppercase line as the /locations cards */}
+                        {dest.province && (
+                          <p className="text-[10px] text-ink-2 font-medium mb-1.5 uppercase tracking-[0.08em]">
+                            {dest.province}
+                          </p>
+                        )}
 
                         {dest.tagline && (
                           <p className="text-sm text-ink-2 mb-3 leading-relaxed line-clamp-3">
