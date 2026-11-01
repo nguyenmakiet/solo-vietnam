@@ -32,7 +32,7 @@ export const chenKieuPagoda: Location = {
   openingHours: "Generally open daily, including weekends and holidays - sources give 5:00 AM to 7:00 PM or 6:00 AM to 6:00 PM. Arrive before 5:00 PM to have time for the grounds and the main hall.",
   mapUrl: "https://www.google.com/maps?q=9.538047,105.920258",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792339499360!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2hsYkhxOEFF!2m2!1d9.537748113168163!2d105.9199361445559!3f3.6011911524378113!4f13.544695791528767!5f0.7820865974627469" },
-  heroImage: heroUrl("chen-kieu-pagoda_dmmfqg"),
+  heroImage: heroUrl("PXL_20261031_034541350_kvxnlq"),
   gallery: [
     "chen-kieu-pagoda_dmmfqg",
   ],

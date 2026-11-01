@@ -25,7 +25,7 @@ export const batPagodaSocTrang: Location = {
   openingHours: "Open daily",
   mapUrl: "https://www.google.com/maps?q=9.600000,105.966700",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775399277986!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRD4x4jNqcqdF!2m2!1d9.578628777989744!2d105.9723857353618!3f273.4675906803711!4f14.517770734930565!5f0.7820865974627469" },
-  heroImage: heroUrl("bat-pagoda-soc-trang-3_mbrgyn"),
+  heroImage: heroUrl("PXL_20261031_025559927.MP_d2sde5"),
   gallery: [
     "bat-pagoda-soc-trang-2_kmbgtc",
     "bat-pagoda-soc-trang_u1hqah",
