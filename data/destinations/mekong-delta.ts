@@ -188,6 +188,36 @@ export const mekongDelta: Destination = {
         },
       ],
     },
+    {
+      duration: "3D2N",
+      label: "Khmer Mekong, then the ferry to Con Dao",
+      days: [
+        {
+          day: 1,
+          title: "HCMC to Tra Vinh, Ba Om Lake",
+          stops: ["ba-om-lake"],
+          notes: "HCMC to Tra Vinh is about 3.5h by motorbike (allow 3-4h). Late afternoon at Ba Om, the square Khmer lake ringed by old trees. In mid-November it hosts the Ok Om Bok lantern festival.",
+          mapPoints: [WP.traVinh, "ba-om-lake"],
+        },
+        {
+          day: 2,
+          title: "Soc Trang Khmer pagodas",
+          stops: ["khleang-pagoda", "som-rong-pagoda", "bat-pagoda-soc-trang", "chen-kieu-pagoda"],
+          notes: "Tra Vinh to Soc Trang is about 2h (allow 1.5-2.5h). Kh'leang and Som Rong are both in town, Bat Pagoda and Chen Kieu a short ride out. A full temple day - dress modestly and go early to beat the heat. Sleep in Soc Trang. With an extra day you can add Bac Lieu, about 1h30 further by motorbike, but you'll ride back the same way to reach the port.",
+          mapPoints: [WP.traVinh, "khleang-pagoda", "som-rong-pagoda", "bat-pagoda-soc-trang", "chen-kieu-pagoda", WP.socTrang],
+        },
+        {
+          day: 3,
+          title: "Soc Trang -> Tran De port -> ferry to Con Dao",
+          stops: [],
+          mapPoints: [
+            WP.socTrang,
+            { name: "Tran De port", lat: 9.535638, lng: 106.196956 },
+          ],
+          notes: "Tran De port is about 30km from Soc Trang city, 45min-1h by motorbike; Superdong also runs a shuttle from its Soc Trang office around 6-6:30am (about 60,000 VND). Ferries to Ben Dam port on Con Dao take about 2-2.5 hours and usually leave in the early morning, but times shift with the tide - check and book on the operators' sites (online.superdong.com.vn, online.phuquocexpress.com). Superdong sails year-round and is the only one that takes motorbikes; Con Dao Express is bigger and smoother but pauses in rough months. Ben Dam is over 10km from Con Son town, so arrange transport ahead. This trip is one-way: continue with the Con Dao page, then fly back to Ho Chi Minh City. Best in Mar-Apr, when the Mekong is dry and the sea is calming down; Nov-Jan sailings are often cancelled, so keep a spare day.",
+        },
+      ],
+    },
   ],
 
   cost: {
