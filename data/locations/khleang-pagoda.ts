@@ -34,8 +34,15 @@ export const khleangPagoda: Location = {
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792340062056!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHE3ZG50T3c.!2m2!1d9.610154727083465!2d105.9768800160945!3f19.787348267692078!4f7.077939434283294!5f0.7820865974627469" },
   heroImage: heroUrl("khleang-pagoda-soc-trang-hero2_x5xofb"),
   gallery: [
-    "khleang-pagoda-soc-trang-hero2_x5xofb",
+    "khleang-pagoda-soc-trang-2_e3q1zc",
     "khleang-pagoda-soc-trang_pggn8h",
+    "khleang-pagoda-soc-trang-3_ces4vk",
+    "khleang-pagoda-soc-trang-1_yp3fbx",
+    "khleang-pagoda-soc-trang-2_jrxtyu",
+    "khleang-pagoda-soc-trang-5_pex80b",
+    "khleang-pagoda-soc-trang-1_mgbkzp",
+    "khleang-pagoda-soc-trang-6_ydljti",
+    "khleang-pagoda-soc-trang-7_c88b8v",
   ],
   seoDescription:
     "Kh'leang Pagoda in central Sóc Trăng is said to be the oldest Khmer pagoda in the province, founded around 1533 - a national architectural and artistic relic with an early 20th-century main hall, a 6.8 m Buddha cast in 1916, old Khmer scriptures, bronze Buddhas and tall sugar palms.",

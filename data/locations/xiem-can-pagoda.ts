@@ -34,7 +34,15 @@ export const xiemCanPagoda: Location = {
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792340444986!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHFqZFhIUnc.!2m2!1d9.253729425614075!2d105.7981745114814!3f259.1135386968563!4f20.926666901262067!5f0.7820865974627469" },
   heroImage: heroUrl("xiem-can-pagoda-bac-lieu-1_he8qfn"),
   gallery: [
+    "xiem-can-pagoda-soc-trang-5_cyuuqx",
+    "xiem-can-pagoda-soc-trang-6_jl5q57",
+    "xiem-can-pagoda-bac-lieu-hero1_kvmfnb",
+    "xiem-can-pagoda-2_c5fydb",
+    "xiem-can-pagoda_ycbx8g",
+    "xiem-can-pagoda-soc-trang-4_luygm7",
     "xiem-can-pagoda-bac-lieu-hero1_qya4mm",
+    "xiem-can-pagoda-bac-lieu-2_dmaa7k",
+    "xiem-can-pagoda-bac-lieu-4_ix8wcj",
   ],
   seoDescription:
     "Xiêm Cán is a Khmer Theravada pagoda about 12 km from Bạc Liêu, founded in 1887 - golden, many-tiered roofs rising above the rice fields, a 36.3 m main hall said to be the tallest of any Khmer pagoda in the south, wall-to-ceiling murals of the Buddha's life and 115 statues.",

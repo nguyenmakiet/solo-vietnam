@@ -34,7 +34,15 @@ export const chenKieuPagoda: Location = {
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792339499360!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2hsYkhxOEFF!2m2!1d9.537748113168163!2d105.9199361445559!3f3.6011911524378113!4f13.544695791528767!5f0.7820865974627469" },
   heroImage: heroUrl("chen-kieu-pagoda_uhdx8q"),
   gallery: [
-    "chen-kieu-pagoda_uhdx8q",
+    "sa-lon-pagoda-soc-trang-3_jafxtk",
+    "chen-kieu-pagoda-5_nnrdfp",
+    "sa-lon-pagoda-soc-trang-5_gx3tkr",
+    "chen-kieu-pagoda-7_ohpxhq",
+    "chen-kieu-pagoda-6_hpkfge",
+    "chen-kieu-pagoda-4_naqawl",
+    "chen-kieu-pagoda-8_qxystl",
+    "chen-kieu-pagoda-2_py9adx",
+    "sa-lon-pagoda-soc-trang-4_gkmt10"
   ],
   seoDescription:
     "Chen Kieu Pagoda (Wat Sro Loun, or Sà Lôn) is a Khmer Theravada pagoda on National Highway 1A, about 12 km from Sóc Trăng city, famous for walls, columns and stupas covered in mosaics of donated bowls and plates, with relics linked to the Bạc Liêu Playboy.",

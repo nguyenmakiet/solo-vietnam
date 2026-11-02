@@ -32,10 +32,17 @@ export const somRongPagoda: Location = {
   openingHours: "6:00 AM - 6:00 PM daily.",
   mapUrl: "https://www.google.com/maps?q=9.623633,105.981092",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1792339684205!6m8!1m7!1sCAoSHENJQUJJaEJ0MGpEcWQ1OEdCcE1BWHl0VkxSZWI.!2m2!1d9.623578295584506!2d105.9808384311109!3f329.22582660483994!4f-30.13276809742399!5f0.7820865974627469" },
-  heroImage: heroUrl("som-rong-pagoda-soc-trang_seiku2"),
+  heroImage: heroUrl("som-rong-pagoda-soc-tran3_xexwqm"),
   gallery: [
+    "som-rong-pagoda-soc-tran3_xexwqm",
+    "som-rong-pagoda-soc-trang-6_pyxcrb",
+    "som-rong-pagoda-soc-trang-2_tposhd",
+    "som-rong-pagoda-soc-trang-5_mbz5fn",
     "som-rong-pagoda-soc-trang_seiku2",
     "som-rong-pagoda-soc-trang-2_erw4fl",
+    "som-rong-pagoda-soc-trang-7_egk5bw",
+    "som-rong-pagoda-soc-trang-4_omohpy",
+
   ],
   seoDescription:
     "Som Rong is a Khmer Theravada pagoda founded in 1785 in central Sóc Trăng, home to a 63 m white reclining Buddha on a 28 m platform, recognised as the largest in Vietnam - colourful Khmer architecture, a 25 m stupa and a glowing sunset view, free to visit.",
