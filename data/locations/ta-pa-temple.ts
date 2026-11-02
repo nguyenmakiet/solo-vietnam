@@ -13,7 +13,7 @@ export const taPaTemple: Location = {
   type: ["pagoda"],
   categories: ["religion", "architecture"],
   experiences: ["history", "photography", "religious-site-visit"],
-  tags: ["🛕 Khmer Temple", "🏔️ 'Floating' Pillar Architecture", "🌃 Night Views", "khmer-culture", "buddhism"],
+  tags: ["🛕 Khmer Temple", "🏔️ 'Floating' Pillar Architecture", "🌃 Night Views", "khmer-culture", "buddhism", "khmer-architecture"],
   bestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   bestTimeOfDay: "Roughly 6-9 AM or 4-6 PM for soft light and the best photos - avoid midday, when the sun is harsh",
   timeNeeded: {

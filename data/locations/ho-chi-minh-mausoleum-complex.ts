@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoChiMinhMausoleumComplex: Location = {
   slug: "ho-chi-minh-mausoleum-complex",
   name: "Ho Chi Minh Mausoleum Complex",
-  updatedAt: "2026-10-28",
+  updatedAt: "2026-11-03",
   provinces: ["ha-noi"],
   destination: "ha-noi",
   lat: 21.036779537375388,
@@ -13,17 +13,15 @@ export const hoChiMinhMausoleumComplex: Location = {
   type: ["tomb", "historic-site"],
   categories: ["history"],
   experiences: ["history", "museum-visit"],
-  status: "seasonally-closed",
-  statusNote: "The mausoleum itself closes annually for maintenance - for 2026, this closure runs from September 4 through November 2, with the mausoleum reopening on November 3. The surrounding complex (Presidential Palace grounds, stilt house, museum) may have separate hours during this period; confirm current status before planning a visit, since exact closure dates are announced each year and can shift.",
   tags: ["🏛️ National Mausoleum", "🇻🇳 Uncle Ho", "⚓ Ba Dinh Square", "🌿 Presidential Stilt House"],
   bestMonths: [11, 12, 1, 2, 3, 4],
-  bestTimeOfDay: "Arrive by 7:30 AM (summer) or 8:00 AM (winter) when the mausoleum opens - queues build quickly, especially on weekends and Vietnamese holidays",
+  bestTimeOfDay: "Arrive by 8:00 AM (winter schedule) or 7:30 AM (summer schedule) when the mausoleum opens - queues build quickly, especially on weekends and Vietnamese holidays. Open Tuesday-Thursday and Saturday-Sunday; closed Monday and Friday, except on major holidays",
   timeNeeded: {
     minMinutes: 120,
     maxMinutes: 180,
   },
   entranceFee: "Free for the mausoleum itself, for both Vietnamese citizens and foreign visitors. The Ho Chi Minh Museum and the stilt house area have separate entrance fees for foreign visitors; check the current rates at each site.",
-  openingHours: "Open Tue, Wed, Thu, Sat, Sun (closed Mon and Fri for routine maintenance, except on major holidays, when it opens regardless of weekday). Hours are seasonal: April 1 - October 31, Tue-Thu 7:30-10:30 AM and Sat-Sun/holidays 7:30-11:00 AM; November 1 - March 31, Tue-Thu 8:00-11:00 AM and Sat-Sun/holidays 8:00-11:30 AM. The mausoleum also closes every year for maintenance, usually from early September to early November (2026: 4 September - 2 November) - check current dates before visiting.",
+  openingHours: "Hours are seasonal. November 1 - March 31: Tuesday, Wednesday and Thursday 8:00-11:00 AM; Saturday, Sunday and holidays 8:00-11:30 AM. April 1 - October 31: Tuesday, Wednesday and Thursday 7:30-10:30 AM; Saturday, Sunday and holidays 7:30-11:00 AM. Closed Monday and Friday, except on major holidays, when the mausoleum opens regardless of weekday. The mausoleum also closes for several weeks each year for maintenance - check the schedule before visiting.",
   mapUrl: "https://www.google.com/maps?q=21.036779537375388,105.83472510393055",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776181903331!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRscDNMOVFF!2m2!1d21.03666878313551!2d105.8350983218787!3f262.5881498555228!4f9.004452945037116!5f0.7820865974627469", },
   heroImage: heroUrl("ho-chi-minh-mausoleum-ha-noi_zrpob2"),
@@ -38,8 +36,7 @@ export const hoChiMinhMausoleumComplex: Location = {
   seoDescription:
     "The Ho Chi Minh Mausoleum Complex in Hanoi's Ba Dinh Square contains the preserved body of Vietnam's founding leader, alongside his former residence, presidential palace, and museum - the most significant political pilgrimage site in Vietnam. Note that the mausoleum closes annually for several weeks of maintenance, typically in autumn.",
   tips: [
-    "Check the current maintenance closure dates before planning your trip - the mausoleum closes annually for roughly 1-2 months (in 2026, this runs September 4 - November 2, reopening November 3), separate from its regular Monday/Friday weekly closures",
-    "Opening hours shift with the season: roughly 7:30-10:30 AM (weekdays) or 7:30-11:00 AM (weekends/holidays) from April to October, and about 30 minutes later each way (8:00-11:00 AM weekdays, 8:00-11:30 AM weekends/holidays) from November to March",
+    "Opening hours shift with the season: 8:00-11:00 AM (Tuesday-Thursday) and 8:00-11:30 AM (Saturday, Sunday and holidays) from November to March, and 30 minutes earlier each way (7:30-10:30 AM Tuesday-Thursday, 7:30-11:00 AM Saturday, Sunday and holidays) from April to October. Closed Monday and Friday, except on major holidays",
     "Strict dress code enforced: no shorts, short skirts, sleeveless tops, see-through clothing, or low necklines; no photography inside the viewing hall",
     "Children under 3 years old aren't permitted inside the mausoleum, even accompanied by family",
     "If wearing a hat or cap, remove it before entering and hold it in your right hand with the lining facing outward - staff will guide you on this and other etiquette on the spot",
@@ -149,8 +146,7 @@ export const hoChiMinhMausoleumComplex: Location = {
       "Don't skip the stilt house and gardens after the mausoleum queue - many visitors rush through and miss the most personal part of the complex",
     ],
     faq: [
-      { question: "Is the mausoleum currently open?", answer: "The mausoleum closes annually for a maintenance period of roughly 1-2 months, usually in autumn - in 2026, this runs from September 4 to November 2, with the mausoleum reopening on November 3. Outside of this window, it's open Tuesday, Wednesday, Thursday, Saturday, and Sunday mornings, closed Monday and Friday (except on major national holidays). Confirm current status before visiting." },
-      { question: "What are the opening hours?", answer: "Hours are seasonal. From April to October: Tuesday-Thursday 7:30-10:30 AM, Saturday-Sunday and holidays 7:30-11:00 AM. From November to March: Tuesday-Thursday 8:00-11:00 AM, Saturday-Sunday and holidays 8:00-11:30 AM." },
+      { question: "What are the opening hours?", answer: "Hours are seasonal. From November to March: Tuesday-Thursday 8:00-11:00 AM, Saturday-Sunday and holidays 8:00-11:30 AM. From April to October: Tuesday-Thursday 7:30-10:30 AM, Saturday-Sunday and holidays 7:30-11:00 AM. The mausoleum is closed on Monday and Friday, except on major holidays, when it opens regardless of weekday." },
       { question: "Is there an entrance fee?", answer: "The mausoleum itself is free for everyone, Vietnamese and foreign visitors alike. The Ho Chi Minh Museum and the stilt house area have separate fees for foreign visitors; check the current rates at each site." },
       { question: "What's the dress code and etiquette?", answer: "Modest, conservative clothing is required - no shorts, short skirts, sleeveless tops, see-through clothing, or low necklines. Hats must be removed and held in your right hand, lining facing out. Photography isn't allowed inside the viewing chamber, and visitors are expected to remain silent and orderly throughout." },
     ],
