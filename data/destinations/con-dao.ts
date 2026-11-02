@@ -35,11 +35,18 @@ export const conDao: Destination = {
       notes: "Seasonal flights available.",
     },
     {
-      from: "Vung Tau / Tran De / HCMC",
+      from: "Vung Tau / HCMC",
       vehicle: "ferry",
       duration: "3-5 hours",
       cost: "check current fares",
-      notes: "High-speed ferries run from Vung Tau, Tran De (Soc Trang) and Hiep Phuoc port in HCMC; schedules change by season and sailings are often cancelled in rough weather - check before booking and keep a flexible day.",
+      notes: "High-speed ferries run from Vung Tau and Hiep Phuoc port in HCMC; schedules change by season and sailings are often cancelled in rough weather - check before booking and keep a flexible day.",
+    },
+    {
+      from: "Soc Trang (Tran De port)",
+      vehicle: "ferry",
+      duration: "about 2-2.5 hours",
+      cost: "about 310,000-390,000 VND (Superdong); 390,000-650,000 VND (Con Dao Express)",
+      notes: "At least one sailing a day, usually early morning; times shift with the tide, so check and book on the operators' sites (online.superdong.com.vn, online.phuquocexpress.com) and bring your passport. Superdong runs year-round and carries motorbikes (book the bike in person); Con Dao Express often pauses in the rough months. Calmest Apr-Sep; Nov-Jan sees the most cancellations. Tran De is about 30km (45min-1h) from Soc Trang city, with a Superdong shuttle from Soc Trang around 6-6:30am. Arrival is at Ben Dam port, over 10km from Con Son town. A good way to finish a Mekong Delta trip - see the Mekong Delta page.",
     },
   ],
 
