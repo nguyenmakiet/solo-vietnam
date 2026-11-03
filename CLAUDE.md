@@ -154,6 +154,10 @@ This rule controls **slug**, **filename**, **`name` field**, and **`export const
 - AI insights generated via Outscraper pipeline: max 30 reviews/location, min 30 words/review, prioritizing 3-4 star ratings
 - **Anti-hallucination rule**: if data is uncertain, leave field empty or flag with `// TODO: verify` - never fabricate
 
+### Owner-supplied files and content
+
+When the owner supplies a file or content (a location draft, a field value, wording), keep every field exactly as given. Never delete, rename, reorder or rewrite a field or value, and never "fix" one silently, even when it looks wrong or causes a display bug. Report the problem instead: name the field, say why, propose the change, and wait for the owner's approval before touching it. Fill only what the owner explicitly asks for (e.g. a `// TODO` the owner asked you to resolve). If the problem is in the code (e.g. how a component handles an empty value), propose a code fix rather than changing the owner's data.
+
 ### When generating new location `.ts` files
 
 - Output valid TypeScript matching the `Location` type at `data/location.ts`
