@@ -24,9 +24,9 @@ export const taPaTemple: Location = {
   openingHours: "6:00 AM - 10:00 PM (best visited outside worship/ceremony hours for a quieter experience)",
   mapUrl: "https://www.google.com/maps?q=10.4152711092553,104.99329389037788",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775886065692!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHhzZEtSSHc.!2m2!1d10.41524820356829!2d104.9933575621541!3f84.34065951339173!4f18.259046254103737!5f0.7820865974627469", },
-  heroImage: heroUrl("ta-pa-temple-an-giang-6_ltq6p3"),
+  heroImage: heroUrl("ta-pa-pagoda-an-giang_qba0my"),
   gallery: [
-    "ta-pa-temple-an-giang-2_tzdej6",
+    "ta-pa-pagoda-an-giang_qba0my",
     "ta-pa-temple-an-giang-8_ogdnza",
     "ta-pa-temple-an-giang-6_ltq6p3",
     "ta-pa-temple-an-giang-5_r8uydf",
