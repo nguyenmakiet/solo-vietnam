@@ -31,8 +31,19 @@ export const slengChasPagoda: Location = {
   entranceFee: "Free, with free parking for motorbikes and cars. Khmer costume rental is paid separately at shops opposite the gate.",
   openingHours: "5:00 AM - 8:00 PM daily. Be respectful during ceremonies.",
   mapUrl: "https://www.google.com/maps?q=9.746637,106.281671",
-  heroImage: heroUrl("sleng-chas-pagoda-hero_placeholder"), // TODO: upload and replace
-  gallery: [],
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1793723386079!6m8!1m7!1sObYrSRuy77xZuUTE2Dauow!2m2!1d9.745996025683755!2d106.2819928024971!3f326.0489700721742!4f9.13087908398964!5f0.7820865974627469" },
+  heroImage: heroUrl("sleng-chas-pagoda-tra-vinh_ixmrvk"), 
+  gallery: [
+    "sleng-chas-pagoda-tra-vinh_ixmrvk",
+    "sleng-chas-pagoda-tra-vinh-2_y9gbsg",
+    "sleng-chas-pagoda-tra-vinh-3_ekbcxk",
+    "sleng-chas-pagoda-tra-vinh-4_ngsazr",
+    "sleng-chas-pagoda-tra-vinh-5_udj8xw",
+    "sleng-chas-pagoda-tra-vinh-6_a2urwp",
+    "sleng-chas-pagoda-tra-vinh-7_ugqifp ",
+    "sleng-chas-pagoda-tra-vinh-8_ydbagp",
+    "sleng-chas-pagoda-tra-vinh-9_ds7fhr",
+  ],
   seoDescription:
     "Sleng Chas (Old Sa Leng) is a Khmer Theravada pagoda in Trà Cú, Trà Vinh, said to be over 400 years old and recently restored in a striking silver-grey palette - turtle-shaped from above, ringed by white elephant fountains and finely carved Khmer details, free to visit.",
   tips: [

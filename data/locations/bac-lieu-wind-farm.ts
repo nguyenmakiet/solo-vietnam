@@ -28,8 +28,19 @@ export const bacLieuWindFarm: Location = {
   entranceFee: "30,000 VND per person (2026). Archery and paint-gun games inside cost extra.",
   openingHours: "6:00 AM - 6:00 PM daily.",
   mapUrl: "https://www.google.com/maps?q=9.234852,105.804809",
-  heroImage: heroUrl("bac-lieu-wind-farm-hero_placeholder"), // TODO: upload and replace
-  gallery: [],
+  heroImage: heroUrl("bac-lieu-wind-farm_xupsrq"), 
+  streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1793722969489!6m8!1m7!1sCAoSHENJQUJJaEE4Sy1SR2pzYk9yNE9BV2F6VGNxQXU.!2m2!1d9.230491126110303!2d105.8037362650577!3f103.71302385616373!4f1.0797430093640799!5f0.7820865974627469" },
+  gallery: [
+    "bac-lieu-wind-farm_xupsrq",
+    "bac-lieu-wind-farm-2_qljuwa",
+    "bac-lieu-wind-farm-3_sxtx9g",
+    "bac-lieu-wind-farm-4_bdq6bp",
+    "bac-lieu-wind-farm-5_ckdqzf",
+    "bac-lieu-wind-farm-6_pqa49n",
+    "bac-lieu-wind-farm-7_pugwdo",
+    "bac-lieu-wind-farm-8_icsc6k",
+    "bac-lieu-wind-farm-9_ciim9w",
+  ],
   seoDescription:
     "Bạc Liêu Wind Farm, about 20 km from central Bạc Liêu, lines the coast with rows of giant white turbines standing in the sea, linked by long concrete walkways - a striking photo spot best visited at sunrise or sunset, for 30,000 VND.",
   tips: [

@@ -24,9 +24,9 @@ export const taPaFields: Location = {
   openingHours: "Open all day",
   mapUrl: "https://www.google.com/maps?q=10.402127666662789,104.99288003222382",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775885773397!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0VoLWZMeUFF!2m2!1d10.41337888779259!2d104.9878023296395!3f140.4034961978534!4f6.860359086514578!5f0.7820865974627469", },
-  heroImage: heroUrl("ta-pa-pagoda-an-giang_qba0my"),
+  heroImage: heroUrl("ta-pa-field-an-giang-3_ibkstg"),
   gallery: [
-    "ta-pa-pagoda-an-giang_qba0my",
+    "ta-pa-field-an-giang-3_ibkstg",
     "ta-pa-field-an-giang-5_jhbwrn",
     "ta-pa-field-an-giang-3_ibkstg",
     "ta-pa-field-an-giang-2_ne3wa1",
