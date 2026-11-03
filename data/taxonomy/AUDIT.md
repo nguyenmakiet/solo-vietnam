@@ -81,6 +81,15 @@ prohibited or hypothetical activities, or transport-only mentions.
 
 `hiking` and `trekking` stay siblings: a location may have both when it offers both.
 
+### Type scope (owner-approved)
+
+Prefer widening an existing type over adding a new one that only one or two Locations would use. A new type needs an owner
+decision (rule 5) and should have a realistic set of Locations behind it.
+
+| Type | Scope |
+|------|-------|
+| `building` | Built structure whose architecture or engineering is the draw itself: buildings, modern landmarks and engineering works such as wind farms or dams. Not for bridges (`bridge`), railway stations (`station`), markers (`monument`) or heritage types (`palace`, `prison`, `lighthouse`...). Widened by owner decision instead of adding a `wind-farm` type (bac-lieu-wind-farm) |
+
 ### Tag definitions (owner-approved, Tags Phase 1)
 
 Full semantics and boundaries for every registered tag: [TAGS-DEFINITIONS.md](./TAGS-DEFINITIONS.md).

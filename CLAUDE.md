@@ -176,6 +176,7 @@ The four taxonomy fields are a **frozen data contract** (Phase 2 freeze). Every 
 **Common mismatches to avoid:**
 - `"nature"` is a category (the broad type is deprecated), NOT an experience - do not put it in `type` or `experiences`
 - `"viewpoint"` does not exist in any registry - for a scenic lookout use the landform type (`mountain`, `pass`, `cape`, `rock-formation`, `valley`...) plus `categories: ["nature"]`. Never use the deprecated broad types (`nature`, `landmark`...) for it
+- Modern built structures whose construction is the draw (wind farms, dams, landmark buildings) use `building` - do not add a new type for them. The owner prefers widening an existing type over adding types that only one or two locations would use
 - `"photo-spot"` does not exist - use `categories: ["iconic"]` or `["must-see"]` for photogenic locations
 - `hiking` and `trekking` are separate sibling concepts - a location may have both. `hiking` = day hike / trail walk; `trekking` = demanding multi-hour or multi-day trek. Stairs, a climb to a viewpoint, or walking around a site is never `trekking`, and a staircase-heavy climb is not `hiking` either, however demanding
 - `walking-tour` only when walking is the primary way to explore a substantial area or route (old quarters, streets, villages, pedestrian areas, heritage routes, large heritage complexes) - not merely because visitors can walk around a single attraction

@@ -137,7 +137,14 @@ export const LOCATION_TYPES = {
     description: "Only when the location is the park itself, not a site inside it",
   },
   bridge: { label: "Bridge", group: "urban", status: "canonical", theme: "amber" },
-  building: { label: "Building", group: "urban", status: "canonical", theme: "purple" },
+  building: {
+    label: "Building",
+    group: "urban",
+    status: "canonical",
+    theme: "purple",
+    description:
+      "Built structure whose architecture or engineering is the draw itself: buildings, modern landmarks and engineering works such as wind farms or dams. Not for bridges, stations, towers that are markers (monument) or heritage types",
+  },
   village: { label: "Village", group: "settlement", status: "canonical", theme: "purple" },
   fortress: { label: "Fortress", group: "heritage", status: "canonical", theme: "amber" },
   prison: { label: "Prison", group: "heritage", status: "canonical", theme: "purple" },
