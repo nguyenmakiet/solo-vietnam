@@ -284,6 +284,7 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "thien-cam-beach",
   ],
   "batch-8": [
+    "bac-lieu-wind-farm",
     "bai-truong-beach",
     "bao-dai-waterfall",
     "chen-kieu-pagoda",
@@ -291,6 +292,7 @@ export const BEST_MONTHS_RELEASES: Record<string, string[]> = {
     "khleang-pagoda",
     "lung-khuy-cave",
     "nam-kang-ho-tao-mountain",
+    "sleng-chas-pagoda",
     "som-rong-pagoda",
     "xiem-can-pagoda",
   ],
@@ -349,6 +351,7 @@ export const BEST_MONTHS_AUDIT_OVERRIDES: Record<string, string> = {
   // batch-8
   "nam-kang-ho-tao-mountain": "'Any time of year' refers to rainy or icy days to avoid; May-Sep rain and Nov-Jan frost are dangerous, excluded",
   "som-rong-pagoda": "May-Sep rainy season is only 'less comfortable' with little shelter",
+  "bac-lieu-wind-farm": "May-Oct is described as the rainy season with bad weather and strong gusts ('less pleasant'), not a recommended visit window",
   "xiem-can-pagoda": "Sep/Oct only dates Pchum Ben ('quieter and more solemn'), not a recommended visit window",
   // batch-8
   "hang-de-cho-waterfall": "The explicit window is 'Jul - early Nov'; Jun appears only as peak water when rain makes the dirt road almost impassable, so it stays excluded",

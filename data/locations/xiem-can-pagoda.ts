@@ -57,7 +57,7 @@ export const xiemCanPagoda: Location = {
     "You can drive or ride straight into the grounds",
     "Signs are limited and the access road can be rough in places - check your map before you set off",
     "Look for the male and female sugar palm (thốt nốt) trees near the main hall",
-    "Combine it with the Bạc Liêu wind farm nearby - the road to the wind farm passes right by the pagoda",
+    "Combine it with the [Bạc Liêu wind farm](/locations/bac-lieu-wind-farm) nearby - the road to the wind farm passes right by the pagoda",
   ],
   content: {
     richSections: [
@@ -91,7 +91,7 @@ export const xiemCanPagoda: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Xiêm Cán is in Biển Đông B hamlet, about 12 km from the centre of the former Bạc Liêu city and a little over 200 km from Ho Chi Minh City. It lies on the road to the Bạc Liêu wind farm, so it's easy to combine the two. Opinions on the road differ: some find it easy, others describe the last stretch of about 10 km as rough and tiring, and signposting is limited - follow your map. You can drive or ride straight into the pagoda grounds.",
+            text: "Xiêm Cán is in Biển Đông B hamlet, about 12 km from the centre of the former Bạc Liêu city and a little over 200 km from Ho Chi Minh City. It lies on the road to the [Bạc Liêu wind farm](/locations/bac-lieu-wind-farm), so it's easy to combine the two. Opinions on the road differ: some find it easy, others describe the last stretch of about 10 km as rough and tiring, and signposting is limited - follow your map. You can drive or ride straight into the pagoda grounds.",
           },
         ],
       },
