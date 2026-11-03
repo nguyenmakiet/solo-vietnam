@@ -5,6 +5,7 @@ import { useState, useEffect, useCallback, useRef } from "react"
 const CDN = "https://res.cloudinary.com/dl5kqhspv/image/upload"
 // photos shown in the grid; the last one carries the "+N photos" overlay
 const VISIBLE = 3
+const lightboxSrc = (publicId: string) => `${CDN}/w_1600,q_auto,f_auto/${publicId}`
 
 interface GalleryLightboxProps {
   publicIds: string[]
@@ -36,6 +37,16 @@ export default function GalleryLightbox({ publicIds, locationName, streetViewUrl
   const next = useCallback(() => {
     setActiveIndex((i) => (i !== null ? (i + 1) % publicIds.length : null))
   }, [publicIds.length])
+
+  // preload the neighbouring photos (same URL as the lightbox <img>) so prev/next swaps instantly
+  useEffect(() => {
+    if (activeIndex === null || publicIds.length < 2) return
+    const n = publicIds.length
+    for (const i of [(activeIndex + 1) % n, (activeIndex - 1 + n) % n]) {
+      const img = new Image()
+      img.src = lightboxSrc(publicIds[i])
+    }
+  }, [activeIndex, publicIds])
 
   useEffect(() => {
     if (activeIndex === null) return
@@ -123,7 +134,7 @@ export default function GalleryLightbox({ publicIds, locationName, streetViewUrl
           )}
 
           <img
-            src={`${CDN}/w_1600,q_auto,f_auto/${publicIds[activeIndex]}`}
+            src={lightboxSrc(publicIds[activeIndex])}
             alt={`${locationName} ${activeIndex + 1}`}
             className="lightbox-img"
             onClick={(e) => e.stopPropagation()}
