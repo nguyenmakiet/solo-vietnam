@@ -15,6 +15,7 @@ import { baHoWaterfall } from "@/data/locations/ba-ho-waterfall"
 import { baHonDamIslands } from "@/data/locations/ba-hon-dam-islands"
 import { baNaCableCar } from "@/data/locations/ba-na-cable-car"
 import { baOmLake } from "@/data/locations/ba-om-lake"
+import { bacLieuWindFarm } from "@/data/locations/bac-lieu-wind-farm"
 import { bacSonValley } from "@/data/locations/bac-son-valley"
 import { bachMaTemple } from "@/data/locations/bach-ma-temple"
 import { backBeachVungTau } from "@/data/locations/back-beach-vung-tau"
@@ -234,6 +235,7 @@ import { saViCape } from "@/data/locations/sa-vi-cape"
 import { samSonBeach } from "@/data/locations/sam-son-beach"
 import { saoBeach } from "@/data/locations/sao-beach"
 import { sixSensesBeach } from "@/data/locations/six-senses-beach"
+import { slengChasPagoda } from "@/data/locations/sleng-chas-pagoda"
 import { somRongPagoda } from "@/data/locations/som-rong-pagoda"
 import { sonDoongCave } from "@/data/locations/son-doong-cave"
 import { sonTraPeninsula } from "@/data/locations/son-tra-peninsula"
@@ -310,6 +312,7 @@ export const allLocations: Location[] = [
   baHonDamIslands,
   baNaCableCar,
   baOmLake,
+  bacLieuWindFarm,
   bacSonValley,
   bachMaTemple,
   backBeachVungTau,
@@ -529,6 +532,7 @@ export const allLocations: Location[] = [
   samSonBeach,
   saoBeach,
   sixSensesBeach,
+  slengChasPagoda,
   somRongPagoda,
   sonDoongCave,
   sonTraPeninsula,
