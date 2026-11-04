@@ -157,7 +157,7 @@ export const hue: Destination = {
         { name: "Dong Xanh Motorbikes", area: "Hue (also Da Nang and Hoi An)", address: "201 Tran Phu, Phuoc Vinh", phone: "0787 528 677", url: "https://dongxanhmotorbikes.com/?lang=en", notes: "WhatsApp and Zalo. Semi-automatic from 4 USD/day, scooters 6-10 USD/day. One-way drop-off in Da Nang or Hoi An costs 20 USD extra; luggage transfer free." },
         { name: "Hue Scooter Rental (Hidden Land Bikes)", address: "11 Ly Thuong Kiet, Phu Nhuan", url: "https://huescooterrental.com", notes: "Offices in Da Nang, Hoi An and Hue. One-way Da Nang - Hue rentals from about 400,000 VND." },
         { name: "Hue Motorbike Rental", phone: "0386 090 469", url: "https://huemotorbikerental.com/", notes: "Semi-automatic 100,000, scooters 130,000 VND/day; delivery to Hue station and Phu Bai Airport." },
-        { name: "Kevin Motorbike", address: "38 Kiet 42 Nguyen Cong Tru, Phu Hoi", url: "https://kenvinmotorbike.com/", notes: "Leave your ID; drop-off at another location is possible for a delivery fee." },
+        { name: "Kevin Motorbike", address: "38 Kiet 42 Nguyen Cong Tru, Phu Hoi", url: "https://www.facebook.com/share/19zmSEfPZN/", notes: "Leave your ID; drop-off at another location is possible for a delivery fee." },
       ],
       verifiedAt: "2026-11-04",
     },
