@@ -79,7 +79,7 @@ export const hue: Destination = {
           day: 2,
           title: "Royal tombs: Tu Duc, Thuy Xuan incense village, Minh Mang, Khai Dinh",
           stops: ["tu-duc-tomb", "minh-mang-tomb", "khai-dinh-tomb"],
-          notes: "Be at Tu Duc Tomb at 7am, when it's cool and quiet (150,000 VND, open until 5:30pm). Parts of the complex, including Hoa Khiem Palace and Minh Khiem Duong, are closed or restricted for restoration. Stop at Thuy Xuan incense village nearby, then Minh Mang Tomb (150,000 VND, 7:30am-5:30pm). Save Khai Dinh Tomb for after 3:30pm when the sun softens (150,000 VND). The 4-site combo covers the Imperial City and all three tombs for 530,000 VND - see the FAQ. Don't try more than this in one day; the tombs are spread out, so rent a motorbike or hire a car.",
+          notes: "Be at Tu Duc Tomb at 7am, when it's cool and quiet (150,000 VND, open until 5:30pm). Stop at Thuy Xuan incense village nearby, then Minh Mang Tomb (150,000 VND, 7:30am-5:30pm). Save Khai Dinh Tomb for after 3:30pm when the sun softens (150,000 VND). The 4-site combo covers the Imperial City and all three tombs for 530,000 VND - see the FAQ. Don't try more than this in one day; the tombs are spread out, so rent a motorbike or hire a car.",
         },
       ],
     },
@@ -91,7 +91,7 @@ export const hue: Destination = {
           day: 1,
           title: "Royal tombs: Tu Duc, Thuy Xuan incense village, Minh Mang, Khai Dinh",
           stops: ["tu-duc-tomb", "minh-mang-tomb", "khai-dinh-tomb"],
-          notes: "Be at Tu Duc Tomb at 7am, when it's cool and quiet (150,000 VND, open until 5:30pm). Parts of the complex, including Hoa Khiem Palace and Minh Khiem Duong, are closed or restricted for restoration. Stop at Thuy Xuan incense village nearby, then Minh Mang Tomb (150,000 VND, 7:30am-5:30pm). Save Khai Dinh Tomb for after 3:30pm when the sun softens (150,000 VND). The 4-site combo covers the Imperial City and all three tombs for 530,000 VND - see the FAQ. Don't try more than this in one day; the tombs are spread out, so rent a motorbike or hire a car.",
+          notes: "Be at Tu Duc Tomb at 7am, when it's cool and quiet (150,000 VND, open until 5:30pm). Stop at Thuy Xuan incense village nearby, then Minh Mang Tomb (150,000 VND, 7:30am-5:30pm). Save Khai Dinh Tomb for after 3:30pm when the sun softens (150,000 VND). The 4-site combo covers the Imperial City and all three tombs for 530,000 VND - see the FAQ. Don't try more than this in one day; the tombs are spread out, so rent a motorbike or hire a car.",
         },
         {
           day: 2,
@@ -116,7 +116,7 @@ export const hue: Destination = {
           day: 1,
           title: "Royal tombs: Tu Duc, Thuy Xuan incense village, Minh Mang, Khai Dinh",
           stops: ["tu-duc-tomb", "minh-mang-tomb", "khai-dinh-tomb"],
-          notes: "Be at Tu Duc Tomb at 7am, when it's cool and quiet (150,000 VND, open until 5:30pm). Parts of the complex, including Hoa Khiem Palace and Minh Khiem Duong, are closed or restricted for restoration. Stop at Thuy Xuan incense village nearby, then Minh Mang Tomb (150,000 VND, 7:30am-5:30pm). Save Khai Dinh Tomb for after 3:30pm when the sun softens (150,000 VND). The 4-site combo covers the Imperial City and all three tombs for 530,000 VND - see the FAQ. Don't try more than this in one day; the tombs are spread out, so rent a motorbike or hire a car.",
+          notes: "Be at Tu Duc Tomb at 7am, when it's cool and quiet (150,000 VND, open until 5:30pm). Stop at Thuy Xuan incense village nearby, then Minh Mang Tomb (150,000 VND, 7:30am-5:30pm). Save Khai Dinh Tomb for after 3:30pm when the sun softens (150,000 VND). The 4-site combo covers the Imperial City and all three tombs for 530,000 VND - see the FAQ. Don't try more than this in one day; the tombs are spread out, so rent a motorbike or hire a car.",
         },
         {
           day: 2,
