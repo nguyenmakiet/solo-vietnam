@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const sungSotCave: Location = {
   slug: "sung-sot-cave",
   name: "Sung Sot Cave",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.8442292975383,
@@ -20,7 +20,7 @@ export const sungSotCave: Location = {
     minMinutes: 45,
     maxMinutes: 60,
   },
-  entranceFee: "250,000 VND (1m-1.4m: 195,000 VND; under 1m: free); boat tour not included. Route 2 day cruise ticket: ~290,000 VND bay entrance + ~200,000 VND boat.",
+  entranceFee: "Visited on Ha Long Bay Route 2 (5-6 hours, with Ti Top Island and Luon Cave): about 510,000 VND per person in total - 250,000 VND bay sightseeing fee, 60,000 VND port ticket and about 200,000 VND for a shared boat. Children under 7 or under 1.2m free; ages 7-15 get 20% off.",
   openingHours: "7:30 AM - 4:30 PM. Accessible by boat/cruise only - no independent access.",
   mapUrl: "https://maps.google.com/?q=20.8810,107.1140",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775884925418!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDB2X2lSMGdF!2m2!1d20.84398871403326!2d107.0914762637285!3f111.9154849064907!4f6.519375620023027!5f0.7820865974627469" },

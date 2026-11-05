@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const thienCungCave: Location = {
   slug: "thien-cung-cave",
   name: "Thien Cung Cave",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.912819278073986,
@@ -20,7 +20,7 @@ export const thienCungCave: Location = {
     minMinutes: 25,
     maxMinutes: 35,
   },
-  entranceFee: "Around 250,000 VND per person for the combined bay ticket covering both Đầu Gỗ and Thiên Cung caves, plus a separate boat/tender fare. Usually included in cruise packages - independent visitors buy the bay sightseeing ticket at the port.",
+  entranceFee: "Visited on Ha Long Bay Route 1 (3-4 hours, with Dau Go Cave): about 460,000 VND per person in total - 250,000 VND bay sightseeing fee, 60,000 VND port ticket and about 150,000 VND for a shared boat. Children under 7 or under 1.2m free; ages 7-15 get 20% off.",
   openingHours: "Daytime bay sightseeing routes run roughly 6:30 AM–6:30 PM; actual cave access depends on your sightseeing boat schedule",
   mapUrl: "https://maps.google.com/?q=20.912819278073986,107.01721792446725",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1778331403581!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2tnTXpoTEE.!2m2!1d20.9128214381707!2d107.0171978585632!3f324.7060963691976!4f15.22623249905719!5f0.7820865974627469", },

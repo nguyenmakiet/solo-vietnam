@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tiTopIsland: Location = {
   slug: "ti-top-island",
   name: "Ti Top Island",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.85912770557982,
@@ -20,7 +20,7 @@ export const tiTopIsland: Location = {
     minMinutes: 45,
     maxMinutes: 90,
   },
-  entranceFee: "Ti Top is included in the Ha Long Bay Route 2 sightseeing ticket, which costs 250,000 VND/person/visit. This is a route-wide sightseeing fee rather than a separate Ti Top entrance fee. Check the current port and ticketing charges when booking, as total costs may vary by departure point and ticket arrangement.",
+  entranceFee: "Visited on Ha Long Bay Route 2 (5-6 hours, with Sung Sot Cave and Luon Cave): about 510,000 VND per person in total - 250,000 VND bay sightseeing fee, 60,000 VND port ticket and about 200,000 VND for a shared boat. No separate Ti Top entrance fee. Children under 7 or under 1.2m free; ages 7-15 get 20% off.",
   openingHours: "Ha Long Bay Route 2 sightseeing hours are typically 6:30 AM-6:30 PM; actual time at Ti Top depends on your cruise itinerary and operating conditions",
   mapUrl: "https://www.google.com/maps?q=20.85912770557982,107.08129113548287",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775889205422!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1QtLUROcmdF!2m2!1d20.85786593775521!2d107.0809216448357!3f4.27079449322294!4f-13.171432863232567!5f0.7820865974627469", },
