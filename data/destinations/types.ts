@@ -41,8 +41,8 @@ export type TravelStyle =
 export type TransportOption = {
   from: string      // "Hà Nội" | "HCM" | "Đà Nẵng" | "Hải Phòng"...
   vehicle: string   // "bus" | "train" | "fly" | "ferry" | "motorbike"
-  duration: string  // "6–7 tiếng"
-  cost: string      // "200.000–350.000 VND"
+  duration?: string // "6-7 tiếng"; optional, the card skips it when missing
+  cost?: string     // "200.000-350.000 VND"; optional, the card skips it when missing
   notes?: string
 }
 

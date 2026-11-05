@@ -126,7 +126,7 @@ export default async function DestinationPage({
 
   // Build stop data map for itinerary map
   const stopDataMap: Record<string, { name: string; lat: number; lng: number; status?: string }> = {}
-  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang", "phu-quoc", "mekong-delta", "mui-ne", "hoi-an", "da-nang", "sapa", "ha-noi", "ho-chi-minh-city", "ninh-binh", "hue"])
+  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang", "phu-quoc", "mekong-delta", "mui-ne", "hoi-an", "da-nang", "sapa", "ha-noi", "ho-chi-minh-city", "ninh-binh", "hue", "ha-long"])
   if (MAP_DESTINATIONS.has(destination.slug) && destination.itineraries) {
     const stopSlugs = new Set(
       destination.itineraries.flatMap((itin) => itin.days.flatMap((day) => day.stops))
@@ -429,10 +429,12 @@ export default async function DestinationPage({
                           <span className="dd-route-from">From {opt.from}</span>
                           <span className="dd-route-vehicle">{opt.vehicle}</span>
                         </div>
-                        <div className="dd-route-right">
-                          <span className="dd-route-duration">{opt.duration}</span>
-                          <span className="dd-route-cost">{opt.cost}</span>
-                        </div>
+                        {(opt.duration || opt.cost) && (
+                          <div className="dd-route-right">
+                            {opt.duration && <span className="dd-route-duration">{opt.duration}</span>}
+                            {opt.cost && <span className="dd-route-cost">{opt.cost}</span>}
+                          </div>
+                        )}
                       </div>
                       {opt.notes && <p className="dd-route-notes">{opt.notes}</p>}
                     </div>
@@ -491,10 +493,12 @@ export default async function DestinationPage({
                       <span className="dd-route-from">{opt.from}</span>
                       <span className="dd-route-vehicle">{opt.vehicle}</span>
                     </div>
-                    <div className="dd-route-right">
-                      <span className="dd-route-duration">{opt.duration}</span>
-                      <span className="dd-route-cost">{opt.cost}</span>
-                    </div>
+                    {(opt.duration || opt.cost) && (
+                      <div className="dd-route-right">
+                        {opt.duration && <span className="dd-route-duration">{opt.duration}</span>}
+                        {opt.cost && <span className="dd-route-cost">{opt.cost}</span>}
+                      </div>
+                    )}
                   </div>
                   {opt.notes && <p className="dd-route-notes">{opt.notes}</p>}
                 </div>

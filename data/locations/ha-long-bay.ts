@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const haLongBay: Location = {
   slug: "ha-long-bay",
   name: "Ha Long Bay",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-11-06",
   provinces: ["quang-ninh"],
   destination: "ha-long",
   lat: 20.922560502308073,
@@ -20,7 +20,7 @@ export const haLongBay: Location = {
     minMinutes: 180,
     maxMinutes: 2880,
   },
-  entranceFee: "Bay entry ticket: 310,000 VND/person (adults). Free for children under 1.2m. Ticket is separate from and in addition to cruise/boat costs.",
+  entranceFee: "Bay sightseeing fee 250,000 VND plus port passenger ticket 60,000 VND per person (310,000 VND), plus the boat: about 150,000 VND (Route 1) or 200,000 VND (Route 2) on a shared boat. Route 1 totals about 460,000 VND, Route 2 about 510,000 VND. Children under 7 or under 1.2m free; ages 7-15 get 20% off. Kayaking at Luon Cave (Route 2): 80,000 VND. Lunch not included.",
   openingHours: "Year-round. Traditional wooden boats depart 8:00-8:30 AM. Cruise ships depart 9:00-9:30 AM, return ~5:00 PM.",
   mapUrl: "https://maps.google.com/?q=20.9101,107.1839",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775803720179!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDQ3S3E0UEE.!2m2!1d20.82210328316939!2d107.1779499556187!3f55.46569093879162!4f7.256726516048985!5f0.7820865974627469", },
@@ -75,7 +75,7 @@ export const haLongBay: Location = {
     faq: [
       {
         question: "What is the difference between Route 1 and Route 2?",
-        answer: "Route 1 (3-4 hours, ~600,000-900,000 VND total): scenic sightseeing on shared boats, covers Hang Đầu Gỗ, Động Thiên Cung, and karst formations. Relaxed and budget-friendly. Route 2 (5-7 hours, from ~700,000-1,000,000+ VND total): the most complete experience, includes Titop Island, Hang Sửng Sốt, kayaking at Hang Luồn, and Hòn Đầu Người. Both prices include the 310,000 VND bay entry ticket.",
+        answer: "Route 1 (3-4 hours, about 460,000 VND total): scenic sightseeing on shared boats, covers Hang Đầu Gỗ, Động Thiên Cung, and karst formations. Relaxed and budget-friendly. Route 2 (5-7 hours, about 510,000 VND total): the most complete experience, includes Titop Island, Hang Sửng Sốt, kayaking at Hang Luồn, and Hòn Đầu Người. Both totals are per person: the 250,000 VND bay sightseeing fee, the 60,000 VND port ticket and a shared boat.",
       },
       {
         question: "Day trip or overnight cruise?",
