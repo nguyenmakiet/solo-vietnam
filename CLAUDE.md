@@ -314,6 +314,12 @@ Values must be **canonical** experiences (`data/taxonomy/experiences.ts`) - prop
 1. Add import to `data/all-locations.ts` (alphabetical)
 2. Add to the `allLocations` array (alphabetical)
 3. Set `destination` field on the location to the correct destination slug — this is how `deriveFromLocations()` finds it
+4. Check the matching destination file (`data/destinations/[destination].ts`) for every mention of the new location - itinerary day titles, `stops`, `notes`, `mapPoints`, `dayTrips`, description, FAQ, tips - and link it wherever it appears only as text or as a map waypoint. Destination text fields are plain text (markdown links render as raw text there), so a link means the location slug:
+   - Itinerary days: add the slug to that day's `stops` in visiting order (the stop list is what links to the location page)
+   - Route map: if the day has `mapPoints`, replace the matching `MapWaypoint` object (grey pin, no page) with the slug (numbered pin + link) at the same position, and drop the waypoint from the file's waypoint constant when nothing else uses it. If the day has no `mapPoints`, the map follows `stops`
+   - `dayTrips[].plan.stops`: same as itinerary `stops`
+   - Keep the destination's wording unchanged; only add slugs. Report what was linked, and anything that mentions the location but has no slug field to link (e.g. a description sentence), so the owner can decide
+   - Run `npm run audit:best-time` (it checks `mapPoints`) and `npm run audit:links`
 
 ---
 
