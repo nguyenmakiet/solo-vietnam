@@ -13,7 +13,7 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder"
 import { stripLeadingEmoji } from "@/lib/text"
 import { dotClass } from "@/lib/category-dot"
 import { formatMonths, isBestMonthsReleased } from "@/data/best-months-release"
-import { stripInlineMarkdown } from "@/lib/rich-text"
+import { splitMonthLines, stripInlineMarkdown } from "@/lib/rich-text"
 import { ogImageUrl, realPhoto } from "@/lib/cloudinary"
 import HeroMedia from "@/components/HeroMedia"
 import ClimateChart from "@/components/ClimateChart"
@@ -36,6 +36,23 @@ const MONTH_NAMES = Array.from({ length: 12 }, (_, i) => new Date(2000, i).toLoc
 function splitLead(text: string): [string, string] {
   const m = text.match(/^([^\n]{3,90}?(?::| -))(\s[\s\S]*)$/)
   return m ? [m[1], m[2]] : ["", text]
+}
+
+// "Best time" / "Avoid" text: one line per month-led sentence, month part in bold.
+// Falls back to the plain text when no sentence starts with a month
+function MonthLines({ text }: { text: string }) {
+  const lines = splitMonthLines(text)
+  if (!lines.some((l) => l.lead)) return <>{text}</>
+  return (
+    <ul className="dd-month-lines">
+      {lines.map((l, i) => (
+        <li key={i}>
+          {l.lead && <strong>{l.lead}</strong>}
+          {l.text}
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 function formatSlug(slug: string): string {
@@ -255,13 +272,13 @@ export default async function DestinationPage({
                     {destination.bestTimeSummary && (
                       <div className="dd-months-block">
                         <dt>Best time</dt>
-                        <dd>{destination.bestTimeSummary}</dd>
+                        <dd><MonthLines text={destination.bestTimeSummary} /></dd>
                       </div>
                     )}
                     {avoidMonths.length > 0 && destination.avoidSummary && (
                       <div className="dd-months-block dd-months-block--avoid">
                         <dt>Avoid</dt>
-                        <dd>{destination.avoidSummary}</dd>
+                        <dd><MonthLines text={destination.avoidSummary} /></dd>
                       </div>
                     )}
                   </dl>
