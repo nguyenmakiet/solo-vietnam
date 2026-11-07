@@ -181,7 +181,7 @@ export const ninhBinh: Destination = {
   faqs: [
     {
       question: "How many days do I need in Ninh Binh?",
-      answer: "A day trip from Hanoi covers Trang An and Hang Mua. Two days covers the main sights; three suits you if you like cycling and a slower pace. Coming from Ho Chi Minh City, you fly to Hanoi first, so 4 days with 3 nights gives you room for the transfers.",
+      answer: "Spend at least 2 days and 1 night. A day trip from Hanoi is possible, but you'll be rushing from sight to sight; with a night there you have time to see the main places and still rest. Three days suits you if you like cycling and a slower pace. Coming from Ho Chi Minh City, you fly to Hanoi first, so 4 days with 3 nights gives you room for the transfers.",
     },
     {
       question: "Trang An or Tam Coc - which boat trip should I choose?",
