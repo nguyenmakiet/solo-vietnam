@@ -42,27 +42,27 @@ export function splitSentences(text: string): string[] {
 export type MonthLine = { lead: string | null; text: string }
 
 // A month (Jan..Dec), a range (Sep-Oct) or a combo (Mar-Apr and Sep-Nov) at the
-// very start of a sentence; not followed by more letters ("March", "Mayor")
-const MONTH = "(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(?![a-z])"
+// very start of a sentence; not followed by more letters ("March", "Mayor").
+// Each month may carry an "Early " / "Late " / "Mid " prefix ("Late May-early
+// Jun"); the prefix needs a space, so "Midday" is not one. Case-insensitive
+const MONTH = "(?:(?:early|late|mid) )?(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)(?![a-z])"
 const MONTH_RANGE = `${MONTH}(?:-${MONTH})?`
-const MONTH_LEAD = new RegExp(`^${MONTH_RANGE}(?:(?:,| and| or)\\s+${MONTH_RANGE})*`)
+const MONTH_LEAD = new RegExp(`^${MONTH_RANGE}(?:(?:,| and| or)\\s+${MONTH_RANGE})*`, "i")
 
 /**
  * Display-only: splits a "best time" style summary into one line per
  * month-led sentence. The leading month part becomes `lead`, the rest of the
- * sentence `text`. A sentence that doesn't start with a month is appended to
- * the previous line (or becomes a first line with lead = null), so no wording
- * is dropped or reordered. Returns no line with a lead when no sentence starts
- * with a month - callers then render the original text.
+ * sentence `text`. A sentence that doesn't start with a month is its own line
+ * with lead = null, so no wording is dropped or reordered. Returns no line with
+ * a lead when no sentence starts with a month - callers then render the
+ * original text.
  */
 export function splitMonthLines(text: string): MonthLine[] {
   const lines: MonthLine[] = []
   for (const sentence of splitSentences(text)) {
     const s = sentence.trim()
     const m = MONTH_LEAD.exec(s)
-    if (m) lines.push({ lead: m[0], text: s.slice(m[0].length) })
-    else if (lines.length > 0) lines[lines.length - 1].text += ` ${s}`
-    else lines.push({ lead: null, text: s })
+    lines.push(m ? { lead: m[0], text: s.slice(m[0].length) } : { lead: null, text: s })
   }
   return lines
 }
