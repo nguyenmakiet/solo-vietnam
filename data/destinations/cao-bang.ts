@@ -76,7 +76,7 @@ export const caoBang: Destination = {
           title: "Ma Phuc Pass, craft villages, Ban Gioc Waterfall, Nguom Ngao Cave",
           stops: ["ban-gioc-waterfall", "nguom-ngao-cave"],
           mapPoints: [WP.cbCity, WP.maPhuc, WP.phjaThap, WP.diaTren, "ban-gioc-waterfall", WP.trucLam, "nguom-ngao-cave", WP.khuoiKy],
-          notes: "Climb Ma Phuc Pass out of the city, then stop at Phja Thap (incense) and Dia Tren (bark paper), two Nung craft villages. Ban Gioc Waterfall: 40,000 VND adults, raft to the falls 50,000 VND; water flow peaks around 10:30am-1pm, while before 10am is best for photos. Truc Lam Pagoda is on the hill by the falls. Nguom Ngao Cave nearby (45,000 VND). Sleep in a stone stilt house in Khuoi Ky village - you can rent Tay costume for photos (about 100,000 VND).",
+          notes: "Climb Ma Phuc Pass out of the city, then stop at Phja Thap (incense) and Dia Tren (bark paper), two Nung craft villages. Ban Gioc Waterfall: 40,000 VND adults, raft to the falls 50,000 VND; water flow peaks roughly 10:30-14:00, while before 10am is best for photos. Truc Lam Pagoda is on the hill by the falls. Nguom Ngao Cave nearby (45,000 VND). Sleep in a stone stilt house in Khuoi Ky village - you can rent Tay costume for photos (about 100,000 VND).",
         },
         {
           day: 2,
@@ -103,7 +103,7 @@ export const caoBang: Destination = {
           title: "Ban Gioc Waterfall, Nguom Ngao Cave, Khuoi Ky, Phong Nam Valley",
           stops: ["ban-gioc-waterfall", "nguom-ngao-cave", "phong-nam-valley"],
           mapPoints: [WP.vinhQuy, "ban-gioc-waterfall", WP.trucLam, "nguom-ngao-cave", WP.khuoiKy, WP.ngocCon, "phong-nam-valley"],
-          notes: "Ban Gioc Waterfall in the morning (7am-5:30pm; 40,000 VND adults, raft 50,000 VND) - before 10am for photos, 10:30am-1pm for the strongest flow. Truc Lam Pagoda on the hill by the falls. Nguom Ngao Cave (45,000 VND self-guided; the full 3.3km guided route is about 195,000 VND). Khuoi Ky stone village (Tay costume rental about 100,000 VND). Ngoc Con viewpoint if you're fit and it's clear, then ride into Phong Nam Valley and stay at a homestay in the valley or near Angel Eye Mountain.",
+          notes: "Ban Gioc Waterfall in the morning (7am-5:30pm; 40,000 VND adults, raft 50,000 VND) - before 10am for photos, roughly 10:30-14:00 for the strongest flow. Truc Lam Pagoda on the hill by the falls. Nguom Ngao Cave (45,000 VND self-guided; the full 3.3km guided route is about 195,000 VND). Khuoi Ky stone village (Tay costume rental about 100,000 VND). Ngoc Con viewpoint if you're fit and it's clear, then ride into Phong Nam Valley and stay at a homestay in the valley or near Angel Eye Mountain.",
         },
         {
           day: 3,
@@ -130,7 +130,7 @@ export const caoBang: Destination = {
           title: "Ban Gioc Waterfall, Nguom Ngao Cave, Khuoi Ky, Phong Nam Valley",
           stops: ["ban-gioc-waterfall", "nguom-ngao-cave", "phong-nam-valley"],
           mapPoints: [WP.vinhQuy, "ban-gioc-waterfall", WP.trucLam, "nguom-ngao-cave", WP.khuoiKy, WP.ngocCon, "phong-nam-valley"],
-          notes: "Ban Gioc Waterfall in the morning (7am-5:30pm; 40,000 VND adults, raft 50,000 VND) - before 10am for photos, 10:30am-1pm for the strongest flow. Truc Lam Pagoda on the hill by the falls. Nguom Ngao Cave (45,000 VND self-guided; the full 3.3km guided route is about 195,000 VND). Khuoi Ky stone village (Tay costume rental about 100,000 VND). Ngoc Con viewpoint if you're fit and it's clear, then ride into Phong Nam Valley and stay at a homestay in the valley or near Angel Eye Mountain.",
+          notes: "Ban Gioc Waterfall in the morning (7am-5:30pm; 40,000 VND adults, raft 50,000 VND) - before 10am for photos, roughly 10:30-14:00 for the strongest flow. Truc Lam Pagoda on the hill by the falls. Nguom Ngao Cave (45,000 VND self-guided; the full 3.3km guided route is about 195,000 VND). Khuoi Ky stone village (Tay costume rental about 100,000 VND). Ngoc Con viewpoint if you're fit and it's clear, then ride into Phong Nam Valley and stay at a homestay in the valley or near Angel Eye Mountain.",
         },
         {
           day: 3,
@@ -315,7 +315,7 @@ export const caoBang: Destination = {
     },
     {
       question: "How much is Ban Gioc Waterfall?",
-      answer: "From 4 July 2026: 40,000 VND for adults and 20,000 VND for children 6-15. A bamboo raft out to the falls is 50,000 VND per person. Open 7am-5:30pm; come before 10am for photos or around 10:30am-1pm for the strongest flow.",
+      answer: "From 4 July 2026: 40,000 VND for adults and 20,000 VND for children 6-15. A bamboo raft out to the falls is 50,000 VND per person. Open 7am-5:30pm; come before 10am for photos or roughly 10:30-14:00 for the strongest flow.",
     },
     {
       question: "How do I get to Cao Bang from Hanoi?",
