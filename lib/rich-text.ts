@@ -56,7 +56,8 @@ const MONTH_LEAD = new RegExp(`^(?:avoid )?${MONTH_LEAD_BODY}`, "i")
  * Display-only: splits a "best time" style summary into one line per
  * month-led sentence. The leading month part becomes `lead`, the rest of the
  * sentence `text`. Inside a sentence, "; " directly followed by a month lead
- * also starts a new line (the previous line keeps its ";"). A sentence that
+ * also starts a new line, and the ";" ending the previous line is shown as
+ * "." (the only punctuation change; source text is untouched). A sentence that
  * doesn't start with a month is its own line with lead = null, so no wording
  * or punctuation is dropped or reordered. Returns no line with a lead when no
  * sentence starts with a month - callers then render the original text.
@@ -72,7 +73,7 @@ export function splitMonthLines(text: string): MonthLine[] {
   return lines
 }
 
-/** Splits after each "; " that is directly followed by a month lead; the ";" stays with the first part. */
+/** Splits at each "; " that is directly followed by a month lead; the first part ends with "." instead of ";". */
 function splitAtMonthSemicolons(sentence: string): string[] {
   const parts: string[] = []
   let start = 0
@@ -81,7 +82,7 @@ function splitAtMonthSemicolons(sentence: string): string[] {
   while ((m = semicolon.exec(sentence)) !== null) {
     const next = m.index + 2
     if (MONTH_LEAD.test(sentence.slice(next))) {
-      parts.push(sentence.slice(start, m.index + 1))
+      parts.push(`${sentence.slice(start, m.index)}.`)
       start = next
     }
   }
