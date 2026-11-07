@@ -31,7 +31,7 @@ export const thangHenLake: Location = {
     "Rent a SUP board on the lake - paddling on the flat turquoise water with limestone mountains reflected on all sides is the best way to experience the place.",
     "The name Thang Hen is Tày for 'bee's tail' - from above, the shape of the lake resembles the tail of a bee. Unlike every other lake in the area which turns brown after rain, Thang Hen stays turquoise year-round because fresh water from an upstream cave constantly flows in and filters the lake.",
     "The lake has two tidal cycles per day - water level rises and falls twice in 24 hours. In September and October it can drain almost completely within a few hours, then refill.",
-    "The 60,000 VND per-motorbike entrance fee covers the lake and the small caves nearby - worth combining both in the same visit.",
+    "The entrance fee is 60,000 VND per motorbike.",
     "30km from Cao Bằng city center - about 45 minutes by motorbike. Easy half-day trip from the city.",
     "No facilities at the lake beyond basic vendors. Bring water and snacks from Cao Bằng or Trà Lĩnh town.",
     "Go early morning (about 6:00-7:30 AM) for mist in the karst valleys, or 4:30-5:30 PM for the best light on the water. Midday is flat and harsh.",
@@ -91,7 +91,7 @@ export const thangHenLake: Location = {
           { type: "heading", text: "SUP, Tickets and Caves" },
           {
             type: "paragraph",
-            text: "SUP boards are available for rent from local vendors - paddling on the calm surface with mountains reflected around you is genuinely memorable. The 60,000 VND per-motorbike entrance ticket also covers the small caves accessible from the plateau road nearby.",
+            text: "SUP boards are available for rent from local vendors - paddling on the calm surface with mountains reflected around you is genuinely memorable. The entrance ticket is 60,000 VND per motorbike.",
           },
           { type: "heading", text: "Atmosphere" },
           {
@@ -136,15 +136,15 @@ export const thangHenLake: Location = {
       "Visit June to September only - dry season is a disappointment",
       "4:30-5:30 PM for the best light on the water",
       "Rent a SUP board - the lake experience from the water is better than from the shore",
-      "Combine with nearby caves included in the 60,000 VND per-motorbike entrance fee",
+      "Entrance fee: 60,000 VND per motorbike",
     ],
     faq: [
       { question: "When is the best time to visit Thang Hen?", answer: "June to September - the rainy season when the lake is at full depth, the water is most intensely turquoise, and the surrounding grasslands are green. Outside this window, particularly November to May, the water level drops dramatically and the site is unimpressive. Do not visit in the dry season expecting the photos you've seen online." },
       { question: "What does Thang Hen mean?", answer: "Thang Hen is Tày for 'bee's tail'. From above, the shape of the main lake resembles the tail of a bee. The name also connects to a local legend: the 36 lakes were said to be formed from the 36 mountain valleys a young scholar crossed in darkness to return to the royal court, collapsing and dying on the final stretch - the place where he fell became Thang Hen." },
-      { question: "What activities are available at Thang Hen?", answer: "Walking around the lake shore, SUP board rental on the water, and exploring the small caves covered by the 60,000 VND per-motorbike entrance ticket. Swimming is not common. The main experience is simply being at the lake - the calm, the colour, and the karst landscape." },
+      { question: "What activities are available at Thang Hen?", answer: "Walking around the lake shore, SUP board rental on the water, and exploring the small caves nearby. The entrance ticket is 60,000 VND per motorbike. Swimming is not common. The main experience is simply being at the lake - the calm, the colour, and the karst landscape." },
       { question: "Is Thang Hen worth visiting?", answer: "Depends on what you're looking for. If you want quiet, gentle beauty - turquoise water, green hills, clean air, and almost no other tourists - it delivers. If you need a dramatic landscape or a packed itinerary of things to do, it will feel empty and underwhelming. It's a place that rewards people who can sit with stillness. Come in the rainy season, arrive in the afternoon, and keep expectations honest." },
       { question: "How far is Thang Hen from Cao Bằng city?", answer: "About 30km northeast of Cao Bằng city center - roughly 45 minutes by motorbike. There is no public transport; motorbike is the only practical way to get there." },
-      { question: "Is the 60,000 VND entrance fee worth it?", answer: "Yes - it covers both the lake and the nearby caves. At 60,000 VND per motorbike it's one of the cheaper paid attractions in the region." },
+      { question: "Is the 60,000 VND entrance fee worth it?", answer: "Yes - at 60,000 VND per motorbike it's one of the cheaper paid attractions in the region." },
     ],
     sentiment: {
       positive: "Visitors who come in the right season describe it as quietly beautiful - turquoise water, clean air, peaceful grasslands, nothing overwhelming but everything just right. The absence of crowds is consistently mentioned as a positive. For travelers who value stillness over spectacle, it lands well.",
