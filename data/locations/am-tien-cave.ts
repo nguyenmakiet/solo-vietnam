@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const amTienCave: Location = {
   slug: "am-tien-cave",
   name: "Am Tiên Cave",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-07",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.283351716721526,
@@ -20,7 +20,7 @@ export const amTienCave: Location = {
     minMinutes: 120,
     maxMinutes: 180,
   },
-  entranceFee: "50,000 VND/adult (includes the cave and Am Tiên pagoda); children's pricing varies by source - roughly free under 1m, discounted 1-1.3m. Parking: 10,000 VND motorbike, 30,000-50,000 VND car. Bike rental available on-site for the lake loop.",
+  entranceFee: "100,000 VND/adult (includes the cave and Am Tiên pagoda); children's pricing varies by source - roughly free under 1m, discounted 1-1.3m. Parking: 10,000 VND motorbike, 30,000-50,000 VND car. Bike rental available on-site for the lake loop.",
   openingHours: "7:00 AM - 6:00 PM daily; arrive before 5 PM to have enough time to see everything",
   mapUrl: "https://www.google.com/maps?q=20.283351716721526,105.91444612825703",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775919891167!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzR2OVRsM0FF!2m2!1d20.2816815269168!2d105.9115505134598!3f155.94168654130553!4f-35.89584643338258!5f0.7820865974627469", },
@@ -132,7 +132,7 @@ export const amTienCave: Location = {
     faq: [
       { question: "Can I bring my own bike inside to ride around the lake?", answer: "Generally no - personal bikes aren't permitted for the lake loop. Rental bikes are available on-site instead, alongside kayak and inflatable boat rental for time on the water." },
       { question: "How long does it take to visit?", answer: "The lake walk alone takes about 15-20 minutes. With cycling, boating, and the climb to the cave and pagoda, allow 2-3 hours total. The 200-250 step climb itself adds roughly 30-45 minutes if you attempt it." },
-      { question: "What is the entrance fee and what does it include?", answer: "Entry is 50,000 VND per adult, covering both the cave and Am Tiên pagoda. Children's pricing varies by source - generally free under about 1m tall, discounted between 1-1.3m. Parking is separate: around 10,000 VND for a motorbike, 30,000-50,000 VND for a car." },
+      { question: "What is the entrance fee and what does it include?", answer: "Entry is 100,000 VND per adult, covering both the cave and Am Tiên pagoda. Children's pricing varies by source - generally free under about 1m tall, discounted between 1-1.3m. Parking is separate: around 10,000 VND for a motorbike, 30,000-50,000 VND for a car." },
       { question: "Why is Am Tiên Cave called 'Tuyệt Tình Cốc'?", answer: "The nickname borrows the name of a lake from Chinese wuxia fiction, reflecting how much the jade-green lake and surrounding cliffs resemble a scene from a martial-arts film. It's become the more popular name among younger visitors and on social media, even though Am Tiên Cave is the site's proper historical name." },
     ],
     sentiment: {

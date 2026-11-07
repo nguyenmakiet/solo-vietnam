@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const tamCoc: Location = {
   slug: "tam-coc",
   name: "Tam Cốc",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-11-07",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.217617371413187,
@@ -20,7 +20,7 @@ export const tamCoc: Location = {
     minMinutes: 90,
     maxMinutes: 120,
   },
-  entranceFee: "120,000 VND/person (over 1.2m), free under 1.2m. Boat: 150,000 VND/boat (max 4 people). Combo with temples + electric buggy: 350,000 VND.",
+  entranceFee: "Standard ticket (entrance and boat, no electric buggy): 250,000 VND adults (1.3m and over), 120,000 VND children 1-1.3m and seniors, free under 1m. Full package (adds the electric buggy between sites): 350,000 VND adults, 190,000 VND children and seniors. The separate 150,000 VND boat ticket is no longer sold. Same prices for Vietnamese and foreign visitors.",
   openingHours: "6:00 AM - 5:00 PM. Best light: before 8:00 AM or after 4:00 PM.",
   mapUrl: "https://maps.google.com/?q=20.2253,105.9550",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775888074548!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3VoTjZ2SGc.!2m2!1d20.21805370130474!2d105.9161806600398!3f256.9778666684793!4f-26.862696455827802!5f0.7820865974627469" },
@@ -33,7 +33,7 @@ export const tamCoc: Location = {
   seoDescription:
     "Tam Cốc - three river caves carved through limestone karst in Ninh Bình, rowed by local women through flooded rice paddies that turn gold in harvest season. Part of the Tràng An UNESCO dual heritage site. Best mid-May to mid-June for golden rice.",
   tips: [
-    "Two ticket options at the dock: 120,000 VND entrance + 150,000 VND/boat (scenery only, 4 people max) OR 350,000 VND combo including temples and electric buggy. If you only want the boat through the rice fields, buy separately - don't let them push the combo.",
+    "Two ticket options at the dock: the standard ticket (250,000 VND per adult, entrance and boat included) OR the 350,000 VND full package, which adds the electric buggy between sites. The separate boat ticket is no longer sold.",
     "Buy tickets online in advance to skip the queue - can be busy at the counter.",
     "Boats depart when full (4 people). Solo travelers or pairs may wait or pay for empty seats.",
     "Tip your rower at the start of the trip rather than the end - it sets a warmer tone for the whole journey. Not mandatory but appreciated.",
@@ -68,7 +68,7 @@ export const tamCoc: Location = {
       crowds: "Weekday mornings are manageable. Weekends and public holidays bring tour buses and long queues. Mid-May to mid-June (golden rice) is peak season - most photogenic but most crowded.",
       difficulty: "Easy - seated boat tour, 1.5-2 hours on the water. Duck inside cave passages. Cycling around the area is flat.",
       safety: "No shade on the water - sun is intense. Bring hat, umbrella, sunscreen. Rowers may stop to sell drinks and souvenirs mid-river - you're not obligated to buy.",
-      accessibility: "Boats depart when full (4 people) - solo travelers may wait or pay for empty seats. Ticket options: scenery only (120k entrance + 150k/boat) or combo with temples and electric buggy (350k). Buy tickets online to skip queues.",
+      accessibility: "Boats depart when full (4 people) - solo travelers may wait or pay for empty seats. Ticket options: standard (250k per adult, boat included) or full package with the electric buggy (350k). Buy tickets online to skip queues.",
       seasonal: "Mid-May to mid-June: golden rice harvest - peak scenery, most crowded. Jun-Jul: lotus season. Mar-Apr: green rice, pleasant weather. Nov-Jan: quiet, cool. Jul-Sep: water rises, lush but can be rainy.",
     },
     visitorTips: [
@@ -89,7 +89,7 @@ export const tamCoc: Location = {
       },
       {
         question: "What ticket should I buy?",
-        answer: "Two options: (1) 120,000 VND entrance + 150,000 VND per boat (max 4 people) - for the boat ride through the rice fields only. (2) 350,000 VND combo - adds temple visits and electric buggy. If you only want the boat and scenery, buy separately - the combo is only worth it if you specifically want to visit the temples. Buy online in advance to avoid queuing.",
+        answer: "Two options: (1) Standard ticket - 250,000 VND per adult (120,000 VND for children 1-1.3m and seniors, free under 1m), entrance and boat included. (2) Full package - 350,000 VND per adult (190,000 VND for children and seniors), which adds the electric buggy between sites. The separate boat ticket is no longer sold. Buy online in advance to avoid queuing.",
       },
       {
         question: "How do I get the best photos at Tam Cốc?",

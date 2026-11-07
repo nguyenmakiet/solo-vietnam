@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const ninhBinh: Destination = {
   slug: "ninh-binh",
   name: "Ninh Binh",
-  updatedAt: "2026-11-03",
+  updatedAt: "2026-11-07",
   province: "Ninh Binh",
   provinceSlug: "ninh-binh",
   region: "north",
@@ -74,13 +74,13 @@ export const ninhBinh: Destination = {
           day: 1,
           title: "Trang An, Hoa Lu, Am Tien Cave, Hang Mua sunset",
           stops: ["trang-an", "hoa-lu-ancient-capital", "am-tien-cave", "hang-mua"],
-          notes: "Be at Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Hoa Lu Ancient Capital (20,000 VND) and Am Tien Cave (50,000 VND, includes the pagoda; bikes on site for the lake loop) are nearby. Finish at Hang Mua (150,000 VND): about 500 steps, best from 4:30pm for sunset. There's a lotus pond at the foot, in bloom around May-Jun.",
+          notes: "Be at Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Hoa Lu Ancient Capital (20,000 VND) and Am Tien Cave (100,000 VND, includes the pagoda; bikes on site for the lake loop) are nearby. Finish at Hang Mua (150,000 VND): about 500 steps, best from 4:30pm for sunset. There's a lotus pond at the foot, in bloom around May-Jun.",
         },
         {
           day: 2,
           title: "Tam Coc by boat, Bich Dong Pagoda, Thung Nham",
           stops: ["tam-coc", "bich-dong-pagoda", "thung-nham-bird-park"],
-          notes: "Tam Coc opens at 6am and the light is best before 8am: 120,000 VND entry plus 150,000 VND per boat (up to 4 people). The boat passes three caves. Bich Dong Pagoda is a short ride away (free, 7:30am-4:30pm). Thung Nham bird park (100,000 VND, 7am-5pm) is about 5km from Tam Coc; the birds fly back in the late afternoon. Limousine back to Hanoi in the evening.",
+          notes: "Tam Coc opens at 6am and the light is best before 8am: 250,000 VND per adult, boat included. The boat passes three caves. Bich Dong Pagoda is a short ride away (free, 7:30am-4:30pm). Thung Nham bird park (150,000 VND, 7am-5pm) is about 5km from Tam Coc; the birds fly back in the late afternoon. Limousine back to Hanoi in the evening.",
         },
       ],
     },
@@ -92,7 +92,7 @@ export const ninhBinh: Destination = {
           day: 1,
           title: "Am Tien Cave, Hoa Lu, Hang Mua",
           stops: ["am-tien-cave", "hoa-lu-ancient-capital", "hang-mua"],
-          notes: "Arrive from Hanoi in the morning. Am Tien Cave (50,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, about 500 steps, best from 4:30pm).",
+          notes: "Arrive from Hanoi in the morning. Am Tien Cave (100,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, about 500 steps, best from 4:30pm).",
         },
         {
           day: 2,
@@ -104,7 +104,7 @@ export const ninhBinh: Destination = {
           day: 3,
           title: "Tam Coc by boat, Bich Dong Pagoda, Thung Nham",
           stops: ["tam-coc", "bich-dong-pagoda", "thung-nham-bird-park"],
-          notes: "Tam Coc opens at 6am and the light is best before 8am: 120,000 VND entry plus 150,000 VND per boat (up to 4 people), past three caves. Bich Dong Pagoda is a short ride away (free, 7:30am-4:30pm). Thung Nham bird park (100,000 VND, 7am-5pm) is about 5km from Tam Coc. Head back to Hanoi in the afternoon.",
+          notes: "Tam Coc opens at 6am and the light is best before 8am: 250,000 VND per adult, boat included, past three caves. Bich Dong Pagoda is a short ride away (free, 7:30am-4:30pm). Thung Nham bird park (150,000 VND, 7am-5pm) is about 5km from Tam Coc. Head back to Hanoi in the afternoon.",
         },
       ],
     },
@@ -116,7 +116,7 @@ export const ninhBinh: Destination = {
           day: 1,
           title: "Am Tien Cave, Hoa Lu, Hang Mua",
           stops: ["am-tien-cave", "hoa-lu-ancient-capital", "hang-mua"],
-          notes: "Arrive from Hanoi in the morning. Am Tien Cave (50,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, about 500 steps, best from 4:30pm).",
+          notes: "Arrive from Hanoi in the morning. Am Tien Cave (100,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, about 500 steps, best from 4:30pm).",
         },
         {
           day: 2,
@@ -128,7 +128,7 @@ export const ninhBinh: Destination = {
           day: 3,
           title: "Tam Coc by boat, Bich Dong Pagoda, Thung Nham",
           stops: ["tam-coc", "bich-dong-pagoda", "thung-nham-bird-park"],
-          notes: "Tam Coc opens at 6am and the light is best before 8am: 120,000 VND entry plus 150,000 VND per boat (up to 4 people), past three caves. Bich Dong Pagoda is a short ride away (free, 7:30am-4:30pm). Thung Nham bird park (100,000 VND, 7am-5pm) is about 5km from Tam Coc. Stay for the late afternoon, when the birds fly back.",
+          notes: "Tam Coc opens at 6am and the light is best before 8am: 250,000 VND per adult, boat included, past three caves. Bich Dong Pagoda is a short ride away (free, 7:30am-4:30pm). Thung Nham bird park (150,000 VND, 7am-5pm) is about 5km from Tam Coc. Stay for the late afternoon, when the birds fly back.",
         },
         {
           day: 4,
@@ -185,7 +185,7 @@ export const ninhBinh: Destination = {
     },
     {
       question: "Trang An or Tam Coc - which boat trip should I choose?",
-      answer: "If you only do one, choose Trang An: the route is longer, with more caves, temples along the way, short walking paths, toilets and snack stops, for 300,000 VND per adult. Tam Coc is shorter, with three caves, and close to Hang Mua: 120,000 VND entry plus 150,000 VND per boat for up to 4 people. Both are best early in the morning.",
+      answer: "If you only do one, choose Trang An: the route is longer, with more caves, temples along the way, short walking paths, toilets and snack stops, for 300,000 VND per adult. Tam Coc is shorter, with three caves, and close to Hang Mua: 250,000 VND per adult, boat included. Both are best early in the morning.",
     },
     {
       question: "How do Trang An tickets work?",
