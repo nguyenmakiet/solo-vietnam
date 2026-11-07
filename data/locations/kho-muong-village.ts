@@ -4,11 +4,11 @@ import { heroUrl } from "@/lib/cloudinary"
 export const khoMuongVillage: Location = {
   slug: "kho-muong-village",
   name: "Kho Muong Village",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-07",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
-  lat: 20.44871826696882,
-  lng: 105.15321491096157,
+  lat: 20.4817,
+  lng: 105.131464,
   address: "Thành Sơn, Bá Thước, Thanh Hóa",
   type: ["village"],
   categories: ["hidden-gem", "culture", "nature"],
@@ -22,7 +22,7 @@ export const khoMuongVillage: Location = {
   },
   entranceFee: "Free",
   openingHours: "Open 24/7",
-  mapUrl: "https://maps.google.com/?q=20.44871826696882,105.15321491096157", // TODO: verify with exact coords
+  mapUrl: "https://maps.google.com/?q=20.4817,105.131464",
   streetView: {},
   heroImage: heroUrl("kho-muong-village_kgv6ld"),
   gallery: [

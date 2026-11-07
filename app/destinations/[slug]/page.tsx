@@ -126,7 +126,7 @@ export default async function DestinationPage({
 
   // Build stop data map for itinerary map
   const stopDataMap: Record<string, { name: string; lat: number; lng: number; status?: string }> = {}
-  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang", "phu-quoc", "mekong-delta", "mui-ne", "hoi-an", "da-nang", "sapa", "ha-noi", "ho-chi-minh-city", "ninh-binh", "hue", "ha-long", "cao-bang"])
+  const MAP_DESTINATIONS = new Set(["cat-ba", "ha-giang", "phu-quoc", "mekong-delta", "mui-ne", "hoi-an", "da-nang", "sapa", "ha-noi", "ho-chi-minh-city", "ninh-binh", "hue", "ha-long", "cao-bang", "pu-luong"])
   if (MAP_DESTINATIONS.has(destination.slug) && destination.itineraries) {
     // Slugs the map can pin: day stops plus location slugs that appear only in mapPoints
     const stopSlugs = new Set(

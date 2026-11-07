@@ -62,7 +62,7 @@ export const ninhBinh: Destination = {
           day: 1,
           title: "Trang An boat, Hoa Lu Ancient Capital, Hang Mua",
           stops: ["trang-an", "hoa-lu-ancient-capital", "hang-mua"],
-          notes: "Take the 6:00am train (arrives 8:13am) or an early limousine. Start with the Trang An boat trip: 300,000 VND for adults, about 2.5-3 hours; book online to skip the ticket queue. Hoa Lu Ancient Capital is close by (20,000 VND, 7am-5pm). Late afternoon, climb the roughly 500 steps of Hang Mua (150,000 VND, open until 6pm), then take a limousine back to Hanoi - the last afternoon train leaves at 4:55pm.",
+          notes: "Take the 6:00am train (arrives 8:13am) or an early limousine. Start with the Trang An boat trip: 300,000 VND for adults, about 2.5-3 hours; book online to skip the ticket queue. Hoa Lu Ancient Capital is close by (20,000 VND, 7am-5pm). Late afternoon, climb the 486 steps of Hang Mua (150,000 VND, open until 6pm), then take a limousine back to Hanoi - the last afternoon train leaves at 4:55pm.",
         },
       ],
     },
@@ -74,7 +74,7 @@ export const ninhBinh: Destination = {
           day: 1,
           title: "Trang An, Hoa Lu, Am Tien Cave, Hang Mua sunset",
           stops: ["trang-an", "hoa-lu-ancient-capital", "am-tien-cave", "hang-mua"],
-          notes: "Be at Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Hoa Lu Ancient Capital (20,000 VND) and Am Tien Cave (100,000 VND, includes the pagoda; bikes on site for the lake loop) are nearby. Finish at Hang Mua (150,000 VND): about 500 steps, best from 4:30pm for sunset. There's a lotus pond at the foot, in bloom around May-Jun.",
+          notes: "Be at Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Hoa Lu Ancient Capital (20,000 VND) and Am Tien Cave (100,000 VND, includes the pagoda; bikes on site for the lake loop) are nearby. Finish at Hang Mua (150,000 VND): 486 steps, best from 4:30pm for sunset. There's a lotus pond at the foot, in bloom around May-Jun.",
         },
         {
           day: 2,
@@ -92,7 +92,7 @@ export const ninhBinh: Destination = {
           day: 1,
           title: "Am Tien Cave, Hoa Lu, Hang Mua",
           stops: ["am-tien-cave", "hoa-lu-ancient-capital", "hang-mua"],
-          notes: "Arrive from Hanoi in the morning. Am Tien Cave (100,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, about 500 steps, best from 4:30pm).",
+          notes: "Arrive from Hanoi in the morning. Am Tien Cave (100,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, 486 steps, best from 4:30pm).",
         },
         {
           day: 2,
@@ -116,7 +116,7 @@ export const ninhBinh: Destination = {
           day: 1,
           title: "Am Tien Cave, Hoa Lu, Hang Mua",
           stops: ["am-tien-cave", "hoa-lu-ancient-capital", "hang-mua"],
-          notes: "Arrive from Hanoi in the morning. Am Tien Cave (100,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, about 500 steps, best from 4:30pm).",
+          notes: "Arrive from Hanoi in the morning. Am Tien Cave (100,000 VND, 7am-6pm) has a jade lake ringed by cliffs - rent a bike on site and ride the lake loop. Hoa Lu Ancient Capital is next door (20,000 VND, 7am-5pm). Climb Hang Mua for sunset (150,000 VND, 486 steps, best from 4:30pm).",
         },
         {
           day: 2,
