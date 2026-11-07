@@ -21,7 +21,7 @@ export const vanLongNatureReserve: Location = {
     minMinutes: 60,
     maxMinutes: 120,
   },
-  entranceFee: "80,000 VND/person in total, sold as two separate tickets: 20,000 VND entrance (covers the nature reserve) + 60,000 VND/person for the boat, one full trip on the lagoon - notably cheaper than Tam Cốc's 250,000 VND. Boats typically pair 2 people together. Children under 1.2m are free. Tipping the rower (commonly around 50,000 VND if you're happy with the trip) is customary, though it should remain voluntary even if a rower hints for more",
+  entranceFee: "100,000 VND per adult, 50,000 VND per child - notably cheaper than Tam Cốc's 250,000 VND. Boats typically pair 2 people together. Tipping the rower (commonly around 50,000 VND if you're happy with the trip) is customary, though it should remain voluntary even if a rower hints for more",
   openingHours: "Roughly 6:00 AM – 5:30/6:00 PM, with slightly shorter winter hours in some years - check current times locally",
   mapUrl: "https://www.google.com/maps?q=20.37269717802166,105.88325487973674",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1775893429039!6m8!1m7!1sCAoSHENJQUJJaENOX2ZVcHRvRzNWNjh2UFZ6T1JHdEs.!2m2!1d20.37250611157695!2d105.8827398872157!3f332.24453393032456!4f12.453235180544795!5f0.7820865974627469", },
@@ -146,7 +146,7 @@ export const vanLongNatureReserve: Location = {
       "Bring binoculars for better wildlife viewing; tipping the boatman is customary and appreciated",
     ],
     faq: [
-      { question: "How much does a boat tour cost?", answer: "80,000 VND per person: 20,000 VND entrance plus 60,000 VND for the boat, one full trip on the lagoon. The two tickets are sold separately. Tipping the rower on top of this is customary." },
+      { question: "How much does a boat tour cost?", answer: "100,000 VND per adult and 50,000 VND per child. Tipping the rower on top of this is customary." },
       { question: "How long is the boat ride, and does it go through caves?", answer: "The standard boat tour lasts about 1-2 hours. Vân Long has two main routes - one includes a cave section, the other stays entirely on open water and is generally considered better for spotting langurs. Ask your rower about combining both if you want the full experience." },
       { question: "Will I see monkeys and other wildlife?", answer: "Sightings are not guaranteed. Delacour's langurs and various bird species are present, but visibility depends on season, weather, and luck - some visitors report something closer to a 50/50 success rate even with good timing. Early morning in mild dry-season weather gives the best odds." },
     ],
