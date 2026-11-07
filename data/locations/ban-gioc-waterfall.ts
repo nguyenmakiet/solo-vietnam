@@ -13,11 +13,11 @@ export const banGiocWaterfall: Location = {
   type: ["waterfall"],
   categories: ["nature"],
   experiences: ["boat-tour"],
-  tags: ["💧 Largest Waterfall on a National Border", "🛶 Bamboo Raft", "🌿 Nature"],
-  bestMonths: [9, 10],
-  bestSeasonNote: "Sep - Oct (golden rice terraces, peak water flow after rainy season)",
+  tags: ["🛶 Bamboo Raft", "🌿 Nature"],
+  bestMonths: [6, 7, 8, 9, 10],
+  bestSeasonNote: "Jun - Aug (highest water, but heavy rain). Sep - Oct (strong water plus golden rice terraces)",
   entranceFee: "40,000 VND adults, 20,000 VND children 6-15 (from 4 July 2026, Ban Gioc Tourist Area notice 138/TB-BQLKDLTBG). Bamboo raft to the falls: 50,000 VND per person.",
-  openingHours: "7:00 AM – 5:30 PM",
+  openingHours: "7:00 AM - 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=22.854409352361497,106.72438321761962",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776187096566!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHl3dE8tSGc.!2m2!1d22.85531941963025!2d106.7225924573171!3f356.95648085912995!4f-65.0427945105836!5f0.7820865974627469", },
   heroImage: heroUrl("ban-gioc-waterfall-cao-bang_jq8ls6"),
@@ -27,18 +27,15 @@ export const banGiocWaterfall: Location = {
     "ban-gioc-waterfall-cao-bang2_yqufyz",
   ],
   seoDescription:
-    "Bản Giốc is the largest waterfall on any national border in Southeast Asia - a 300-metre-wide curtain of water crashing across three tiers on the Vietnam-China border in Cao Bằng, surrounded by karst mountains and emerald pools.",
+    "Bản Giốc is a 300-metre-wide curtain of water crashing across three tiers on the Vietnam-China border in Cao Bằng, surrounded by karst mountains and emerald pools.",
   tips: [
-    "Your phone may automatically switch to China Standard Time (UTC+8) when you're near the border - that's 1 hour ahead of Vietnam time. Double-check your clock and any alarms before you go to sleep or plan transport, or you'll throw off your whole itinerary.",
-    "June to October gives the most water - the falls are at full volume after the rainy season. September and October are the best combination: high water and golden rice terraces on the Vietnamese bank make for strong photos.",
-    "From November to May the water drops significantly. If you're visiting in dry season, aim to arrive between 11 AM and 2 PM - the Vietnamese dam upstream releases water during those hours and the falls pick up noticeably.",
+    "⚠️ Your phone may automatically switch to China Standard Time (UTC+8) when you're near the border - that's 1 hour ahead of Vietnam time. Double-check your clock and any alarms before you go to sleep or plan transport, or you'll throw off your whole itinerary.",
+    "From November to May the water drops significantly. If you're visiting in dry season, aim to arrive roughly 10:30-14:00 (varies by day) - the Vietnamese dam upstream releases water during those hours and the falls pick up noticeably.",
     "If you take the bamboo raft during a water release period, expect to get wet - the spray is heavier when the flow is high. Bring a dry bag for your phone and camera.",
     "Arrive before 8 AM to have the falls mostly to yourself - Chinese tour groups arrive from mid-morning onward in large numbers.",
-    "September and October also give you the golden rice terraces on the Vietnamese bank - the colour contrast against the white water is worth timing your trip for.",
     "Take the bamboo raft to the base of the falls - the scale and mist from water level is completely different from the shore viewpoint. The raft also takes you close to the border midpoint.",
     "The falls straddle the Vietnam-China border - the left section belongs to China and is visible from the Vietnamese side. On busy days you'll see Chinese tourists on platforms on the opposite bank.",
-    "Combine with Nguồm Ngao Cave (3km away), Chùa Trúc Lâm Phật Tích, and Làng Đá Cổ Khuổi Ky - all are within easy reach. A motorbike covers all of them comfortably in a day; bus gets you to the falls but not the other sites.",
-    "Bus number 3 from Cao Bằng city goes directly to the waterfall if you only want to see Bản Giốc. But if you're planning to visit the surrounding sites, rent a motorbike instead - it's the only practical way to move between them.",
+    "Combine with Nguồm Ngao Cave (3km away), Chùa Trúc Lâm Phật Tích, and Làng Đá Cổ Khuổi Ky - all are within easy reach. A motorbike covers all of them comfortably in a day.",
   ],
   content: {
     richSections: [
@@ -49,12 +46,12 @@ export const banGiocWaterfall: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Bản Giốc sits on the Quây Sơn River at the Vietnam-China border, 90km north of Cao Bằng city, and is the largest waterfall on any national border in Southeast Asia. The falls spread across 300 metres in three distinct tiers, dropping 30 metres into a wide turquoise pool before the river continues south into Vietnam. The border runs down the middle of the water - the right section belongs to Vietnam, the left to China - which means you can watch the falls and see another country at the same time.",
+            text: "Bản Giốc sits on the Quây Sơn River at the Vietnam-China border, 90km north of Cao Bằng city, and is one of the largest waterfalls along a national border in the region. The falls spread across 300 metres in three distinct tiers, dropping 30 metres into a wide turquoise pool before the river continues south into Vietnam. The border runs down the middle of the water - the right section belongs to Vietnam, the left to China - which means you can watch the falls and see another country at the same time.",
           },
           { type: "heading", text: "The Falls Through the Seasons" },
           {
             type: "paragraph",
-            text: "In September and October, after the monsoon, the Quây Sơn swells and the tiers merge into a single roaring wall of white water. The surrounding rice terraces turn gold at the same time, which is why those two months are consistently the best for the full picture. In dry season, the individual cascades separate and the volume drops - though the dam upstream releases water around midday and the falls temporarily recover.",
+            text: "From June to October the Quây Sơn swells and the tiers merge into a single roaring wall of white water. In dry season, the individual cascades separate and the volume drops.",
           },
           { type: "heading", text: "Setting" },
           {
@@ -70,7 +67,7 @@ export const banGiocWaterfall: Location = {
         blocks: [
           {
             type: "paragraph",
-            text: "Bản Giốc is 90km north of Cao Bằng city, around 2.5–3 hours by motorbike on winding mountain roads. Bus number 3 from Cao Bằng city runs directly to the falls - a practical option if Bản Giốc is your only stop.",
+            text: "Bản Giốc is 90km north of Cao Bằng city, around 2.5-3 hours by motorbike on winding mountain roads. Bus number 3 from Cao Bằng city runs directly to the falls - a practical option if Bản Giốc is your only stop.",
           },
           { type: "heading", text: "Nearby Sites and Getting Around" },
           {
@@ -99,11 +96,6 @@ export const banGiocWaterfall: Location = {
             type: "paragraph",
             text: "On the Vietnamese bank, rice terraces rise behind the viewing area and karst peaks frame both sides. On busy days, Chinese visitors are visible on viewing platforms directly across the border.",
           },
-          { type: "heading", text: "Phone Time Zone Warning" },
-          {
-            type: "paragraph",
-            text: "One thing to know before you arrive: your phone may switch automatically to China Standard Time when you get near the border - that's one hour ahead of Vietnam. Check your clock when you get there and fix it before it causes problems with transport or alarms.",
-          },
         ],
       },
       {
@@ -114,11 +106,6 @@ export const banGiocWaterfall: Location = {
           {
             type: "paragraph",
             text: "Bản Giốc is the centrepiece of Cao Bằng and worth the journey from Hanoi on its own. The standard approach pairs it with Nguồm Ngao Cave and Phong Nam Valley in a one or two-day loop from Cao Bằng city. Staying overnight in Đàm Thủy village gets you to the falls at sunrise, before tour groups arrive - early morning mist over the pool and no one else on the bank is the best version of this place.",
-          },
-          { type: "heading", text: "Water Volume by Season" },
-          {
-            type: "paragraph",
-            text: "Water volume is the main variable: June to October is high season for the falls. November to May is dry season - the falls lose volume but midday releases from the upstream dam partially compensate, so aim for 11 AM to 2 PM if you're visiting in those months.",
           },
         ],
       },
@@ -135,20 +122,18 @@ export const banGiocWaterfall: Location = {
       difficulty: "Mountain roads from Cao Bằng are winding and narrow in sections - some rough patches after rain. Road experience on motorbike recommended; guided tours available for less confident riders",
       safety: "Swimming is not permitted. Drones are prohibited due to the border location. Road conditions require care, especially after rain",
       accessibility: "Walkways and viewing areas on the Vietnamese bank are well-maintained. You can approach close to the falls on foot without taking the raft. Bamboo raft is optional but gives a different perspective",
-      seasonal: "June–October: high water volume, lush surroundings, golden terraces in Sep–Oct. November–May: lower flow; visit between 11 AM–2 PM when the upstream dam releases water. Phone timezone switch near the border is a real practical issue - check your clock on arrival",
+      seasonal: "June-August brings the highest water but heavy rain; September-October combines strong water with golden rice terraces on the Vietnamese bank; from November to May the flow drops noticeably",
     },
     visitorTips: [
       "Entrance fee is 40,000 VND for adults. Bamboo raft is 50,000 VND per person and optional - you can walk close to the falls without it",
-      "Check your phone's time when you arrive - it may auto-switch to China Standard Time (1 hour ahead), which will throw off alarms and transport schedules",
-      "Bus 3 from Cao Bằng city reaches the falls directly, but a motorbike is essential if you want to visit the surrounding sites in the same day",
     ],
     faq: [
-      { question: "When is the best time to visit?", answer: "September and October give the highest water volume and golden rice terraces simultaneously - the strongest combination for photos and atmosphere. June to October is reliably high water. November to May is dry season; if visiting then, aim for 11 AM–2 PM when the upstream dam releases water and flow temporarily increases" },
-      { question: "Is the bamboo raft worth it?", answer: "Yes, for most visitors. The raft gets you to the base of the falls where the scale and spray are completely different from the shore viewpoint. During high water releases the spray is heavy, so keep electronics protected. Cost is 50,000 VND per person" },
+      { question: "When is the best time to visit?", answer: "June to October. June to August has the highest water but heavy rain; September and October combine strong water with golden rice terraces - the strongest combination for photos and atmosphere. November to May is dry season, with lower flow" },
+      { question: "Is the bamboo raft worth it?", answer: "Yes, for most visitors. The raft gets you to the base of the falls where the scale and spray are completely different from the shore viewpoint. During high water releases the spray is heavy, so keep electronics protected" },
       { question: "Can I get here by bus?", answer: "Yes - Bus 3 from Cao Bằng city runs directly to the falls. But if you want to visit Nguồm Ngao Cave, Chùa Trúc Lâm Phật Tích, or Làng Đá Cổ Khuổi Ky on the same trip, you'll need a motorbike. Most travellers who are combining sites rent one in Cao Bằng city" },
     ],
     sentiment: {
-      positive: "Consistently praised for the sheer scale of the falls, the border setting, and the surrounding karst landscape. September–October visitors rate it highly for the rice terrace colours. Affordable entry compared to similar natural attractions",
+      positive: "Consistently praised for the sheer scale of the falls, the border setting, and the surrounding karst landscape. September-October visitors rate it highly for the rice terrace colours. Affordable entry compared to similar natural attractions",
       negative: "Vendor pressure at the entrance. Infrastructure noticeably more developed on the Chinese side. Road conditions to the falls can be rough after rain. Water volume in dry season disappoints visitors who don't know about the midday release schedule",
     },
   },
