@@ -98,7 +98,7 @@ export const ninhBinh: Destination = {
           day: 2,
           title: "Trang An boat, Bai Dinh Pagoda",
           stops: ["trang-an", "bai-dinh-pagoda"],
-          notes: "Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Rest through midday, then Bai Dinh Pagoda after 3pm when it's cooler and quieter: entry is free, the electric cart from the gate is 60,000 VND return, and it's open until 9pm.",
+          notes: "Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Rest through midday, then Bai Dinh Pagoda after 3pm when it's cooler and quieter: entry is free, the electric cart from the gate is 150,000 VND return, and it's open until 9pm.",
         },
         {
           day: 3,
@@ -122,7 +122,7 @@ export const ninhBinh: Destination = {
           day: 2,
           title: "Trang An boat, Bai Dinh Pagoda",
           stops: ["trang-an", "bai-dinh-pagoda"],
-          notes: "Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Rest through midday, then Bai Dinh Pagoda after 3pm when it's cooler and quieter: entry is free, the electric cart from the gate is 60,000 VND return, and it's open until 9pm.",
+          notes: "Trang An when ticket sales open at 7am (300,000 VND, about 2.5-3 hours by boat). Rest through midday, then Bai Dinh Pagoda after 3pm when it's cooler and quieter: entry is free, the electric cart from the gate is 150,000 VND return, and it's open until 9pm.",
         },
         {
           day: 3,

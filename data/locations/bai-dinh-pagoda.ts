@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baiDinhPagoda: Location = {
   slug: "bai-dinh-pagoda",
   name: "Bái Đính Pagoda",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-07",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.268192723940388,
@@ -20,7 +20,7 @@ export const baiDinhPagoda: Location = {
     minMinutes: 180,
     maxMinutes: 240,
   },
-  entranceFee: "Free entry. Electric cart: 60,000 VND/person round-trip (gate to main complex, ~3.5km), or combo tickets 150,000 VND (cart + bảo tháp access) / 300,000 VND (cart + transfers between zones + bảo tháp) / 390,000 VND (adds Tràng An boat tour). Bảo tháp (tower) alone: 50,000 VND. Guide: 300,000 VND/tour.",
+  entranceFee: "Free entry. Electric cart: 150,000 VND/person round-trip (gate to main complex, ~3.5km; this basic package also covers bảo tháp access), or combo tickets 300,000 VND (cart + transfers between zones + bảo tháp) / 390,000 VND (adds Tràng An boat tour). Bảo tháp (tower) alone: 50,000 VND. Guide: 300,000 VND/tour.",
   openingHours: "6:00 AM - 9:00 PM daily. Best before 11 AM or after 3 PM to avoid both crowds and midday heat.",
   mapUrl: "https://www.google.com/maps?q=20.268192723940388,105.85603779913747",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776186320868!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDRfOWFlUFE.!2m2!1d20.27587173905758!2d105.8658599580001!3f197.29644126131836!4f-17.71766487554831!5f0.7820865974627469" },
