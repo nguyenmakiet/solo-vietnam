@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hoaLuAncientCapital: Location = {
   slug: "hoa-lu-ancient-capital",
   name: "Hoa Lư Ancient Capital",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-07",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.286875757053178,
@@ -20,7 +20,7 @@ export const hoaLuAncientCapital: Location = {
     minMinutes: 90,
     maxMinutes: 120,
   },
-  entranceFee: "20,000 VND/person (over 1.2m), free for children under 1.2m",
+  entranceFee: "20,000 VND/adult; 10,000 VND for children aged 6-15, seniors (60 and over) and visitors with disabilities",
   openingHours: "7:00 AM - 5:00 PM",
   mapUrl: "https://www.google.com/maps?q=20.286875757053178,105.91801053940709",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1775811634193!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2gxb0dCendF!2m2!1d20.28528002431484!2d105.9066716894091!3f243.18445160539622!4f-9.657546797316996!5f0.7820865974627469" },
@@ -150,7 +150,7 @@ export const hoaLuAncientCapital: Location = {
       crowds: "Generally peaceful, busier during Tết and the Trường Yên Festival (3rd lunar month) and in the evenings when locals visit. Brief ticket queues (around 5 minutes) possible at peak times.",
       difficulty: "Easy, spacious walking grounds. An optional short climb (50+ steps) near Đền Đinh gives valley views but isn't mandatory.",
       safety: "Dress modestly - a spiritual and historical site. Don't litter or disturb the peace. Bicycle/motorbike rental scams reported near the entrance - negotiate price upfront or bring your own bike.",
-      accessibility: "20,000 VND entrance, free under 1.2m. Motorcycle parking ~10,000 VND. Site is spread out - bicycle or motorbike recommended over walking the whole area.",
+      accessibility: "20,000 VND entrance (10,000 VND for children 6-15 and seniors). Motorcycle parking ~10,000 VND. Site is spread out - bicycle or motorbike recommended over walking the whole area.",
       seasonal: "Mar-May: festival season, golden rice fields nearby, mild weather - best overall. Oct-Apr: dry season, comfortable temperatures. Rainy days still offer atmospheric scenery.",
     },
     visitorTips: [

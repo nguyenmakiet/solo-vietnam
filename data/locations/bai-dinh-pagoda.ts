@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const baiDinhPagoda: Location = {
   slug: "bai-dinh-pagoda",
   name: "Bái Đính Pagoda",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-07",
   provinces: ["ninh-binh"],
   destination: "ninh-binh",
   lat: 20.268192723940388,
@@ -20,7 +20,7 @@ export const baiDinhPagoda: Location = {
     minMinutes: 180,
     maxMinutes: 240,
   },
-  entranceFee: "Free entry. Electric cart: 60,000 VND/person round-trip (gate to main complex, ~3.5km), or combo tickets 150,000 VND (cart + bảo tháp access) / 300,000 VND (cart + transfers between zones + bảo tháp) / 390,000 VND (adds Tràng An boat tour). Bảo tháp (tower) alone: 50,000 VND. Guide: 300,000 VND/tour.",
+  entranceFee: "Free entry. Electric cart: 150,000 VND adult / 100,000 VND child (1-1.3m) round-trip (gate to main complex, ~3.5km), or the transfer package 300,000 VND adult / 210,000 VND child (cart between points + bảo tháp ticket + foot soak) / 390,000 VND (adds Tràng An boat tour). VIP cart with guide: 4,000,000 VND. Bảo tháp (tower) alone: 50,000 VND. Guide: 500,000 VND/tour.",
   openingHours: "6:00 AM - 9:00 PM daily. Best before 11 AM or after 3 PM to avoid both crowds and midday heat.",
   mapUrl: "https://www.google.com/maps?q=20.268192723940388,105.85603779913747",
   streetView: { embedUrl: "https://www.google.com/maps/embed?pb=!4v1776186320868!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDRfOWFlUFE.!2m2!1d20.27587173905758!2d105.8658599580001!3f197.29644126131836!4f-17.71766487554831!5f0.7820865974627469" },
@@ -39,7 +39,7 @@ export const baiDinhPagoda: Location = {
     "Bái Đính Cổ (ancient pagoda) is about 800m south of the new complex - founded by Lý Quốc Sư Nguyễn Minh Không, an 11th-century monk who became royal physician to Emperor Lý Thần Tông. Legend holds he discovered the mountain's caves while searching for medicinal herbs, and built the original temple here.",
     "At the ancient pagoda: climb 300 stone steps through a Tam Quan gate partway up the mountain to reach Hang Sáng (Bright Cave, 25m long, 15m wide, ~2m high, housing Buddha and deity worship) and Động Tối (Dark Cave, 7 interconnected chambers housing Mother Goddess and fairy worship, with stalactites that produce musical tones when struck, plus 'Ao Tiên' - a small natural spring pool that never runs dry).",
     "Giếng Ngọc (Jade Well) near the ancient pagoda's base: 30m diameter, 6m water depth, never runs dry - officially recognised as Vietnam's largest pagoda well (certified 12 December 2007). Legend says Nguyễn Minh Không drew water here to prepare medicine for the emperor and local people.",
-    "Common mistake #1: choosing the wrong electric cart package. The 150,000 VND option is enough for basic needs (cart + tower access). The 300,000 VND option adds transfers between zones. Many visitors over-buy out of reluctance to walk - but walking between the main halls is actually part of the intended pilgrimage experience, not just a logistics problem to solve.",
+    "Common mistake #1: choosing the wrong electric cart package. The 150,000 VND round-trip cart is enough for basic needs. The 300,000 VND option adds transfers between points, the bảo tháp ticket and a foot soak. Many visitors over-buy out of reluctance to walk - but walking between the main halls is actually part of the intended pilgrimage experience, not just a logistics problem to solve.",
     "Common mistake #2: skipping the ancient pagoda entirely. Most visitors miss it simply because it's outside the new complex grounds and easy to overlook, or assume there's nothing special there. In reality, it's the most spiritually significant and atmospheric part of the entire site - quiet, ancient, completely different in character from the modern complex.",
     "Common mistake #3: visiting at midday. This is Southeast Asia's largest pagoda complex, with significant walking distances in full sun. Visit before 11 AM or after 3 PM.",
     "Common mistake #4: wrong footwear. You'll walk several kilometres across the grounds - comfortable, broken-in shoes matter more here than almost anywhere else in Ninh Bình.",
@@ -143,7 +143,7 @@ export const baiDinhPagoda: Location = {
       crowds: "Very crowded during Tết and the Jan-Mar lunar festival season, especially weekends and the 6th day of the 1st lunar month (Bái Đính Festival). Weekdays significantly quieter. Visit before 11 AM or after 3 PM year-round.",
       difficulty: "Complex spans hundreds of hectares with substantial walking distances even with the electric cart. The ancient pagoda requires climbing 300 stone steps. Comfortable, broken-in shoes matter significantly here.",
       safety: "Some surfaces slippery when wet. Watch personal belongings closely during festival season crowds. Dress modestly; avoid excessive incense burning; use donation boxes rather than placing money on statues.",
-      accessibility: "Free entry. Electric cart packages: 150,000 VND (basic) / 300,000 VND (adds inter-zone transfers) / 390,000 VND (adds Tràng An). Elevator available inside the main tower. Guide service: 300,000 VND/tour.",
+      accessibility: "Free entry. Electric cart packages: 150,000 VND (round-trip) / 300,000 VND (adds transfers between points, bảo tháp and a foot soak) / 390,000 VND (adds Tràng An). Elevator available inside the main tower. Guide service: 500,000 VND/tour.",
       seasonal: "Oct-Apr: dry season, cool, best for walking. Jan-Mar (lunar calendar): festival season, warm, atmospheric but very crowded. Bái Đính Festival: 6th day of 1st lunar month.",
     },
     visitorTips: [
@@ -172,7 +172,7 @@ export const baiDinhPagoda: Location = {
       },
       {
         question: "Which electric cart ticket should I buy?",
-        answer: "Three tiers: 150,000 VND covers cart transport from the ticket area to the main gate plus tower access - sufficient for most visitors. 300,000 VND adds transfers between the complex's different zones. 390,000 VND bundles in a Tràng An boat tour as well. Many visitors default to the pricier options simply to avoid walking, but walking between the main halls is arguably part of the intended pilgrimage experience - choose based on your fitness, time, and whether you're combining with Tràng An, not just to minimise walking.",
+        answer: "Three tiers: 150,000 VND covers the round-trip cart from the ticket area to the main gate - sufficient for most visitors. 300,000 VND adds transfers between the complex's different points, the bảo tháp ticket and a foot soak. 390,000 VND bundles in a Tràng An boat tour as well. Many visitors default to the pricier options simply to avoid walking, but walking between the main halls is arguably part of the intended pilgrimage experience - choose based on your fitness, time, and whether you're combining with Tràng An, not just to minimise walking.",
       },
       {
         question: "What is Giếng Ngọc (Jade Well)?",
