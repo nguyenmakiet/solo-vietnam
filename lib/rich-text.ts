@@ -39,6 +39,57 @@ export function splitSentences(text: string): string[] {
   return sentences.filter((s) => s.trim().length > 0)
 }
 
+export type MonthLine = { lead: string | null; text: string }
+
+// A month (Jan..Dec), a range (Sep-Oct) or a combo (Mar-Apr and Sep-Nov) at the
+// very start of a sentence; not followed by more letters ("March", "Mayor").
+// Each month may carry an "Early " / "Late " / "Mid " prefix ("Late May-early
+// Jun"); the prefix needs a space, so "Midday" is not one. Case-insensitive
+const MONTH = "(?:(?:early|late|mid) )?(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)(?![a-z])"
+const MONTH_RANGE = `${MONTH}(?:-${MONTH})?`
+const MONTH_LEAD_BODY = `${MONTH_RANGE}(?:(?:,| and| or)\\s+${MONTH_RANGE})*`
+// The lead may start with "Avoid " when a month lead follows it ("Avoid Sep-Jan");
+// "Avoid" before anything else ("Avoid heavy rain season") is not a lead
+const MONTH_LEAD = new RegExp(`^(?:avoid )?${MONTH_LEAD_BODY}`, "i")
+
+/**
+ * Display-only: splits a "best time" style summary into one line per
+ * month-led sentence. The leading month part becomes `lead`, the rest of the
+ * sentence `text`. Inside a sentence, "; " directly followed by a month lead
+ * also starts a new line, and the ";" ending the previous line is shown as
+ * "." (the only punctuation change; source text is untouched). A sentence that
+ * doesn't start with a month is its own line with lead = null, so no wording
+ * or punctuation is dropped or reordered. Returns no line with a lead when no
+ * sentence starts with a month - callers then render the original text.
+ */
+export function splitMonthLines(text: string): MonthLine[] {
+  const lines: MonthLine[] = []
+  for (const sentence of splitSentences(text)) {
+    for (const part of splitAtMonthSemicolons(sentence.trim())) {
+      const m = MONTH_LEAD.exec(part)
+      lines.push(m ? { lead: m[0], text: part.slice(m[0].length) } : { lead: null, text: part })
+    }
+  }
+  return lines
+}
+
+/** Splits at each "; " that is directly followed by a month lead; the first part ends with "." instead of ";". */
+function splitAtMonthSemicolons(sentence: string): string[] {
+  const parts: string[] = []
+  let start = 0
+  const semicolon = /; /g
+  let m: RegExpExecArray | null
+  while ((m = semicolon.exec(sentence)) !== null) {
+    const next = m.index + 2
+    if (MONTH_LEAD.test(sentence.slice(next))) {
+      parts.push(`${sentence.slice(start, m.index)}.`)
+      start = next
+    }
+  }
+  parts.push(sentence.slice(start))
+  return parts
+}
+
 const countWords = (s: string) => s.trim().split(/\s+/).length
 // A chunk must not end inside **bold** or a [label](url) link.
 const isBalanced = (s: string) =>
