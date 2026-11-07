@@ -4,6 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const catBa: Destination = {
   slug: "cat-ba",
   name: "Cat Ba",
+  updatedAt: "2026-11-07",
   province: "Hai Phong",
   provinceSlug: "hai-phong",
   region: "north",
@@ -21,32 +22,46 @@ export const catBa: Destination = {
 
   gettingThere: [
     {
-      from: "Hai Phong",
-      vehicle: "ferry",
-      duration: "45 min-1.5 hours",
-      cost: "80,000-200,000 VND",
-      notes: "Fast ferry or slow ferry from Hai Phong port. Hai Phong is 1.5 hours from Hanoi by bus.",
-    },
-    {
-      from: "Cat Bi Airport (Hai Phong)",
-      vehicle: "cable car",
-      duration: "30 min transfer + 15 min cable car",
-      cost: "110,000 VND combo ticket",
-      notes: "Take a taxi/Grab to the Sunworld cable car terminal. One-way cable car ticket: 70,000 VND. Recommended: buy the combo (one-way cable car + shuttle bus to Cat Ba town centre) for 110,000 VND.",
-    },
-    {
-      from: "Ha Long City",
-      vehicle: "ferry",
-      duration: "45 minutes",
-      cost: "150,000-200,000 VND",
-      notes: "Speedboat from Tuan Chau pier. Good option if combining with Ha Long Bay cruise.",
-    },
-    {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "4-4.5 hours total",
+      duration: "a little over 3 hours",
+      cost: "280,000 VND one way",
+      notes: "Cat Ba Express runs bus plus crossing to Cat Ba town. From Hanoi: 6am, 7:45am, 10:45am, 2pm. From Cat Ba town: 9:30am, 12:30pm, 3:30pm, 5pm. Booking: 0848 244 999.",
+    },
+    {
+      from: "Cat Hai (Hai Phong) - cable car",
+      vehicle: "cable car",
+      duration: "about 10 minutes",
+      cost: "70,000 VND one way; 110,000 VND with the bus to Cat Ba town",
+      notes: "Sun World cable car from Cat Hai to Phu Long. Closed on Tuesdays; 3 morning and 3 afternoon departures, the last around 3:45pm. From Phu Long it's about 22km to Cat Ba town, so the 110,000 VND ticket with the shuttle bus is the easy option. Buy at the station or online at booking.sunworld.vn. You can't take a motorbike - leave it at the car park near the station.",
+    },
+    {
+      from: "Cat Hai (Hai Phong) - Dong Bai ferry",
+      vehicle: "ferry",
+      duration: "about 25-40 minutes, plus waiting",
+      cost: "about 10,000-12,000 VND per person; 45,000 VND with a motorbike",
+      notes: "Car and motorbike ferry from Dong Bai to Cai Vieng. Cheap, but on weekends and holidays the wait can be 1-4 hours. Cai Vieng is about 20km from Cat Ba town.",
+    },
+    {
+      from: "Got pier (Hai Phong) - speedboat",
+      vehicle: "boat",
+      duration: "about 10 minutes",
+      cost: "about 110,000 VND",
+      notes: "Fast boats from Got pier to Phu Long, then a bus or ride into town.",
+    },
+    {
+      from: "Hai Phong city (Binh pier)",
+      vehicle: "boat",
+      duration: "45 minutes - 1 hour",
       cost: "200,000-350,000 VND",
-      notes: "Combined bus + ferry ticket available from Hanoi. Most direct option for travelers coming straight from Hanoi.",
+      notes: "Speedboat from Binh pier straight to Cat Ba, no bus transfer needed.",
+    },
+    {
+      from: "Ha Long (Tuan Chau)",
+      vehicle: "ferry",
+      duration: "about 50 minutes",
+      cost: "75,000 VND per person; 100,000 VND with a motorbike",
+      notes: "Ferries from Tuan Chau to Gia Luan on Cat Ba. Tuan Chau to Gia Luan: 7:30am, 9am, 11:30am, 1:30pm, 3pm. Gia Luan to Tuan Chau: 9am, 11:30am, 1pm, 3pm, 4pm. Extra boats in peak season (25 Apr - 5 Sep) when busy. Sailings need good weather and at least 30 passengers; be at the pier 15 minutes early. See the Ha Long page.",
     },
   ],
 
@@ -112,19 +127,25 @@ export const catBa: Destination = {
     },
   ],
 
-  cost: {
-    budget: "400,000-700,000 VND/day",
-    midRange: "700,000-1,500,000 VND/day",
-    comfortable: "1,500,000+ VND/day",
-    notes: "Lan Ha Bay kayak tour: 300,000-500,000 VND. National park + Trung Trang Cave combo ticket: 120,000 VND. Full jungle trek to Viet Hai: 160,000 VND. Hospital Cave: free. Bioluminescence night tour: around 400,000-700,000 VND.",
-  },
-
   bestTimeSummary: "Apr-Jun and Oct-Nov are the best windows: warm, calm enough for kayaking, and outside the Jul-Aug domestic rush. June is already rainy but it is beach season. Jul-Sep is the wettest stretch and typhoons can cancel boat trips at short notice. Dec-Mar is cool and often foggy - quiet, but not swimming weather.",
   bestMonths: [4, 5, 6, 10, 11],
 
   recommendedStay: "2-3 days",
 
-  transport: "Motorbike or bicycle rental on the island. Kayak for Lan Ha Bay. Walking works for Cat Ba town.",
+  transport: "Rent a motorbike - about 150,000 VND/day, easiest through your guesthouse or hotel - or an electric motorbike. Walking works in Cat Ba town and to the Cat Co beaches. Kayak or boat for Lan Ha Bay. The cable car station and ferry piers are about 20-22km from town, so take the shuttle bus or arrange a ride.",
+
+  rentals: [
+    {
+      vehicle: "motorbike",
+      priceRange: "about 150,000 VND/day",
+      notes: "Most guesthouses and hotels rent bikes - just ask the owner. You need an International Driving Permit (1968 convention) with the motorcycle category plus your home licence. Check the brakes, lights and tyres and take photos before you ride off. Roads in the national park area are steep and winding.",
+      shops: [
+        { name: "Cat Ba electric motorbike rental", area: "Cat Ba town", address: "56 Nui Ngoc", phone: "0384 787 675", notes: "New electric motorbikes; delivery around the town centre." },
+        { name: "Dung Yen Motorbike", area: "Cat Ba town", url: "https://www.facebook.com/share/1FKfGarWPw/" },
+      ],
+      verifiedAt: "2026-11-07",
+    },
+  ],
 
   nearbyDestinations: ["ha-long", "ha-noi"],
 
@@ -142,7 +163,15 @@ export const catBa: Destination = {
     },
     {
       question: "How do I get to Cát Bà from Hanoi?",
-      answer: "The most common route is by bus-ferry combo from Hanoi - journey time is approximately 4-4.5 hours total. Buses depart from Hanoi's My Dinh or Gia Lam station, connecting to a ferry at Got pier (Hai Phong) or Dinh Vu, arriving at Cat Ba town. Several operators sell door-to-door tickets for around 200,000-350,000 VND. Alternatively, travel via Hai Phong city and take a local ferry - slower but cheaper. From Halong Bay cruise terminals, speedboat transfers to Cat Ba are also available.",
+      answer: "The simplest is the Cat Ba Express bus: 280,000 VND one way, a little over 3 hours to Cat Ba town, leaving Hanoi at 6am, 7:45am, 10:45am and 2pm (booking 0848 244 999). By your own transport, drive to Cat Hai and cross by cable car, ferry or speedboat - see the next question.",
+    },
+    {
+      question: "Cable car, ferry or speedboat - how do I cross to the island?",
+      answer: "From Cat Hai, the Sun World cable car to Phu Long takes about 10 minutes: 70,000 VND one way, or 110,000 VND including the bus into Cat Ba town (about 22km). It's closed on Tuesdays and the last car leaves around 3:45pm; buy at the station or [online](https://booking.sunworld.vn/en). The Dong Bai ferry is cheapest (about 10,000-12,000 VND, 45,000 VND with a motorbike) but on weekends and holidays the wait can be 1-4 hours. Speedboats run from Got pier to Phu Long (about 110,000 VND, 10 minutes) and from Binh pier in Hai Phong city direct to Cat Ba (200,000-350,000 VND, 45 minutes - 1 hour).",
+    },
+    {
+      question: "How do I get from Ha Long to Cát Bà?",
+      answer: "Take the ferry from Tuan Chau to Gia Luan, about 50 minutes: 75,000 VND per person, 100,000 VND with a motorbike. Departures from Tuan Chau: 7:30am, 9am, 11:30am, 1:30pm, 3pm; back from Gia Luan: 9am, 11:30am, 1pm, 3pm, 4pm. Ferries need good weather and at least 30 passengers. See the [Ha Long page](/destinations/ha-long).",
     },
     {
       question: "How many days do you need on Cát Bà Island?",
@@ -154,11 +183,11 @@ export const catBa: Destination = {
     },
     {
       question: "What is the difference between Lan Hạ Bay and Hạ Long Bay?",
-      answer: "Both bays share the same dramatic karst limestone scenery - thousands of islands rising from emerald green water. The key difference is crowds and administration. Ha Long Bay falls under Quang Ninh province and is one of Vietnam's most visited destinations, with heavy cruise traffic. Lan Ha Bay is administered by Hai Phong province, sits immediately south of Ha Long, and receives significantly fewer visitors. For most independent travelers, Lan Ha Bay offers a comparable - and arguably better - experience with less congestion, lower prices, and more flexibility to explore by kayak. That said, combined tours covering both bays in one trip are widely available from Cat Ba - a practical option if you want to see the full picture without doubling up on logistics.",
+      answer: "Both have the same limestone karst scenery. Ha Long is the famous one, easier to reach from Hanoi, with more upscale cruises and hotels, and very busy in May-Aug. Lan Ha Bay, reached from Cat Ba, has fewer boats, and Cat Ba adds trekking, cycling and beaches - usually for less money. You can do both by taking the Tuan Chau - Gia Luan ferry. See the [Ha Long page](/destinations/ha-long).",
     },
     {
       question: "How much does a trip to Cát Bà cost?",
-      answer: "Budget travelers can manage 2 days / 1 night for around $30-50 USD. This covers a basic guesthouse (150,000-300,000 VND/night), simple meals (50,000-100,000 VND/meal), and a day boat tour of Lan Ha Bay (150,000-300,000 VND/person on a group tour). Mid-range travelers opting for better accommodation and a private or small-group kayaking tour should budget $80-150 USD for the same duration. Bioluminescence kayaking tours typically cost 400,000-700,000 VND per person and run in the evening separately from daytime bay tours.",
+      answer: "Main costs: the Lan Ha Bay sightseeing fee is 120,000 VND (children 60,000 VND); a shared afternoon bay tour costs about 380,000 VND on a 3-star boat or 500,000 VND on a 5-star boat; the plankton (bioluminescence) tour about 28 USD. National park tickets are 120,000 VND for the Ngu Lam peak - Trung Trang Cave route or 160,000 VND for the whole park. A motorbike is about 150,000 VND/day. Prices change with boat class and season.",
     },
     {
       question: "Is Cát Bà safe for solo travelers?",
@@ -166,15 +195,15 @@ export const catBa: Destination = {
     },
     {
       question: "Should I rent a motorbike on Cát Bà?",
-      answer: "Yes - renting a motorbike is the best way to explore beyond Cat Ba town. The island's interior roads are narrow and scenic, and several viewpoints, beaches, and national park trailheads are not accessible by foot from town. Daily rental rates run around 100,000-150,000 VND for a basic automatic scooter. Roads are paved but can be steep and winding in the national park area. An automatic scooter is sufficient - no need for a manual motorbike unlike mountain routes elsewhere in Vietnam.",
+      answer: "Yes - it's the easiest way to reach the national park, viewpoints and beaches outside town. Expect about 150,000 VND/day; most guesthouses and hotels rent bikes, and electric motorbikes are available too. Roads in the national park area are steep and winding, so ride carefully.",
     },
     {
       question: "What can I do on Lan Hạ Bay?",
-      answer: "Lan Ha Bay is best experienced by boat - day tours from Cat Ba town run regularly and typically include kayaking through limestone caves and lagoons, swimming stops, and visits to floating fishing villages. Beyond standard day tours, Lan Ha Bay is one of the few places in northern Vietnam where bioluminescence kayaking is reliably reported - paddle after dark and the water glows blue-green around your kayak, caused by bioluminescent plankton (the same phenomenon local tour operators market as \"plankton kayaking\" or \"plankton tour\"). Rock climbing on the karst formations is also popular - several operators in Cat Ba town offer guided half-day and full-day climbing sessions.",
+      answer: "Bay tours from Cat Ba take in kayaking, swimming and floating fishing villages; afternoon tours usually run from about 2:30pm and finish around 4-6pm with sunset. The Lan Ha sightseeing fee is 120,000 VND; shared tours cost about 380,000-500,000 VND depending on the boat. At night you can join a plankton tour (about 28 USD): pickup at your hotel around 7pm and boats leave Ben Beo around 7:30pm to paddle among glowing bioluminescent plankton. Rock climbing on the karsts is also offered by operators in Cat Ba town.",
     },
     {
       question: "Should I do an overnight cruise on Lan Hạ Bay?",
-      answer: "An overnight cruise is worth considering if you have the budget and want a more immersive experience on the water. Sleeping on the bay means you catch sunrise over the karst islands before day-trippers arrive - the early morning light and quieter atmosphere are noticeably different from a standard day tour. Most overnight cruises from Cat Ba cover Lan Ha Bay and range from budget wooden boats (~$50-80 USD/person) to mid-range vessels with en-suite cabins (~$120-200 USD/person). Itineraries typically include kayaking, cave visits, swimming, and all meals on board. If budget is a constraint, a day tour plus a plankton kayaking tour in the evening (bioluminescence kayaking) covers most of the highlights at a fraction of the cost.",
+      answer: "If budget allows, a night on the water means sunrise over the karsts before day boats arrive. Overnight Lan Ha cruises cost about 3,000,000-6,000,000 VND per person per night, usually with kayaking, cave visits, swimming and meals included. If not, a day tour plus the evening plankton tour covers most of the highlights for much less.",
     },
     {
       question: "Do I need to book boat tours in advance?",
