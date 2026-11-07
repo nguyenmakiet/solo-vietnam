@@ -30,7 +30,7 @@ export const banGiocWaterfall: Location = {
     "Bản Giốc is a 300-metre-wide curtain of water crashing across three tiers on the Vietnam-China border in Cao Bằng, surrounded by karst mountains and emerald pools.",
   tips: [
     "⚠️ Your phone may automatically switch to China Standard Time (UTC+8) when you're near the border - that's 1 hour ahead of Vietnam time. Check your clock when you arrive, and double-check any alarms before you go to sleep or plan transport, or you'll throw off your whole itinerary.",
-    "⚠️ Aim to arrive roughly 10:30-14:00 (varies by day) - the Vietnamese dam upstream releases water during those hours and the falls pick up noticeably. From November to May the water drops significantly, and the release only partially compensates.",
+    "⚠️ From November to May the water drops significantly. If you're visiting in dry season, aim to arrive roughly 10:30-14:00 (varies by day) - the Vietnamese dam upstream releases water during those hours and the falls pick up noticeably, though the release only partially compensates for the lower flow.",
     "If you take the bamboo raft during a water release period, expect to get wet - the spray is heavier when the flow is high. Bring a dry bag for your phone and camera.",
     "Arrive before 8 AM to have the falls mostly to yourself - Chinese tour groups arrive from mid-morning onward in large numbers.",
     "The colour contrast of the rice terraces on the Vietnamese bank against the white water is worth timing your trip for.",
