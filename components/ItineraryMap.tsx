@@ -151,6 +151,9 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
     const allPoints: [number, number][] = []
     // Collect per-day points + color for async routing step
     const dayMeta: Array<{ dayIdx: number; points: [number, number][]; color: string }> = []
+    // Where the previous mapped day ended: each day's line starts there, so the
+    // route is continuous across overnight stops (no extra pin is drawn for it)
+    let prevEnd: [number, number] | null = null
 
     itin.days.forEach((day, dayIdx) => {
       const color = DAY_COLORS[(day.day - 1) % DAY_COLORS.length]
@@ -216,8 +219,14 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
 
       // Draw straight dashed placeholder — will be replaced by OSRM route if fetch succeeds,
       // unless the day is routed "straight" (boat days)
-      if (dayPoints.length >= 2) {
-        const placeholder = L.polyline(dayPoints, {
+      const linePoints: [number, number][] =
+        prevEnd && dayPoints.length > 0 && (prevEnd[0] !== dayPoints[0][0] || prevEnd[1] !== dayPoints[0][1])
+          ? [prevEnd, ...dayPoints]
+          : dayPoints
+      if (dayPoints.length > 0) prevEnd = dayPoints[dayPoints.length - 1]
+
+      if (linePoints.length >= 2) {
+        const placeholder = L.polyline(linePoints, {
           color,
           weight: 2.5,
           opacity: 0.5,
@@ -225,7 +234,7 @@ export default function ItineraryMap({ itineraries, stopDataMap }: ItineraryMapP
         }).addTo(map)
         layersRef.current.push(placeholder)
         routePlaceholdersRef.current.set(dayIdx, placeholder)
-        if (day.mapRouting !== "straight") dayMeta.push({ dayIdx, points: dayPoints, color })
+        if (day.mapRouting !== "straight") dayMeta.push({ dayIdx, points: linePoints, color })
       }
     })
 
