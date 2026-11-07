@@ -1,25 +1,36 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { OG_FALLBACK_IMAGE } from "@/lib/cloudinary";
 
-// `subsets` only controls which files next/font preloads - the vietnamese @font-face
-// rules are still emitted and load on demand via unicode-range. Preloading only latin
-// keeps 3 unused high-priority font files off the homepage's critical path (LCP).
-const ibmPlexSans = IBM_Plex_Sans({
+// Self-hosted fonts (app/fonts, SIL OFL - licences alongside). next/font/google broke
+// Vercel builds intermittently: Turbopack could not resolve Google's
+// fonts.gstatic.com/l/font?kit=... URLs ("next/font/google queries have exactly one entry").
+// Each file is subset to the Latin, Latin Extended and Vietnamese ranges Google served.
+const ibmPlexSans = localFont({
   variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  src: [
+    { path: "./fonts/ibm-plex-sans-300.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/ibm-plex-sans-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/ibm-plex-sans-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/ibm-plex-sans-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/ibm-plex-sans-700.woff2", weight: "700", style: "normal" },
+  ],
 });
 
-const sourceSerif4 = Source_Serif_4({
+const sourceSerif4 = localFont({
   variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["500", "600"],
-  style: ["normal", "italic"],
+  display: "swap",
+  src: [
+    { path: "./fonts/source-serif-4-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/source-serif-4-500-italic.woff2", weight: "500", style: "italic" },
+    { path: "./fonts/source-serif-4-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/source-serif-4-600-italic.woff2", weight: "600", style: "italic" },
+  ],
 });
 
 export const metadata: Metadata = {
