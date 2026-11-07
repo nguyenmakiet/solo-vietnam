@@ -1,5 +1,14 @@
-import { Destination, FaqItem } from "./types"
+import { Destination, FaqItem, MapWaypoint } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
+
+// Map-only waypoints for itinerary mapPoints (places without a location page)
+const WP = {
+  cbCity: { name: "Cao Bang city", lat: 22.6657, lng: 106.2522 },
+  trucLam: { name: "Truc Lam Ban Gioc Pagoda", lat: 22.85097, lng: 106.723256 },
+  khuoiKy: { name: "Khuoi Ky stone village", lat: 22.85447, lng: 106.70125 },
+  ngocCon: { name: "Ngoc Con (Phi Pha) viewpoint", lat: 22.924106, lng: 106.538292 },
+  baoLac: { name: "Bao Lac town", lat: 22.947017, lng: 105.680119 },
+} satisfies Record<string, MapWaypoint>
 
 export const haGiang: Destination = {
   slug: "ha-giang",
@@ -100,6 +109,113 @@ export const haGiang: Destination = {
           distance: "~150km",
           stops: ["meo-vac-town", "mau-due-town", "du-gia-village", "du-gia-waterfall", "ha-giang-city"],
           notes: "Early start - potholes between Meo Vac and Mau Due. Lunch in Du Gia and a swim at the waterfall if it's warm. Back in Ha Giang by late afternoon.",
+        },
+      ],
+    },
+    {
+      duration: "6D5N",
+      label: "Ha Giang Loop + Cao Bang (one way)",
+      days: [
+        {
+          day: 1,
+          title: "Ha Giang → Quan Ba → Yen Minh → Lung Cu (night in Lo Lo Chai)",
+          distance: "~160km",
+          stops: ["ha-giang-city", "quan-ba-heaven-gate", "quan-ba-twin-mountains", "yen-minh-pine-forest", "tham-ma-pass", "hmong-king-palace", "lung-cu-flag-tower", "lo-lo-chai-village"],
+          notes: "The longest day - leave by 7am and keep stops short. Quan Ba Heaven Gate and the Twin Mountains first, lunch in Yen Minh, then Tham Ma Pass and the Hmong King Palace (7:30am-5pm, 20,000-25,000 VND). Reach Lung Cu Flag Tower (8am-5pm, 25,000 VND) before it closes and sleep in Lo Lo Chai, the farthest point of the loop - try a night in a traditional rammed-earth Lo Lo house. Don't ride the passes after about 7pm.",
+        },
+        {
+          day: 2,
+          title: "Lo Lo Chai → Dong Van → Ma Pi Leng Pass → Nho Que River → Meo Vac",
+          distance: "~60km",
+          stops: ["dong-van-old-town", "ma-pi-leng-pass", "nho-que-river"],
+          notes: "The best day of the loop. Dong Van Old Town in the morning - if it's Sunday, the market is busiest 7-10am. Then Ma Pi Leng Pass at your own pace, stopping at every viewpoint. For the Nho Que boat, don't search \"Nho Que River\" on Google Maps (it sends you toward Cao Bang) - search \"Tu San\" and follow the main road, not forest tracks. The boat is about 150,000 VND per person including the shuttle down to the pier (2026); aim to be there by 4pm. Night in Meo Vac.",
+        },
+        {
+          day: 3,
+          title: "Meo Vac to Khau Coc Cha (Me Pia) Pass and Bao Lac",
+          stops: ["khau-coc-cha-pass"],
+          mapPoints: ["meo-vac-town", "khau-coc-cha-pass", WP.baoLac],
+          notes: "Leave the Ha Giang Loop at Meo Vac and head east into Cao Bang province. Khau Coc Cha, also called Me Pia Pass, stacks about 2.5km of road in 15 switchback levels; the best view is a short hike from a small shop where you park (about 10,000 VND). Stay in Bao Lac. Ride in daylight only - after dark the roads are unlit and fog rolls in.",
+        },
+        {
+          day: 4,
+          title: "Bao Lac to Pac Bo and Ban Gioc",
+          distance: "~139km",
+          stops: ["pac-bo-historic-site"],
+          mapPoints: [WP.baoLac, "pac-bo-historic-site", WP.khuoiKy],
+          notes: "A long riding day of about 139km. Pac Bo (8am-5pm; 25,000 VND, electric car about 20,000 VND) and the Lenin Stream around midday, then on to the Ban Gioc area. Sleep in a stone stilt house in Khuoi Ky village near the falls. Carry snacks and water - there's little on the road after Trung Khanh.",
+        },
+        {
+          day: 5,
+          title: "Ban Gioc Waterfall, Nguom Ngao Cave, Phong Nam Valley",
+          stops: ["ban-gioc-waterfall", "nguom-ngao-cave", "phong-nam-valley"],
+          mapPoints: [WP.khuoiKy, "ban-gioc-waterfall", WP.trucLam, "nguom-ngao-cave", WP.ngocCon, "phong-nam-valley"],
+          notes: "Ban Gioc Waterfall early (7am-5:30pm; 40,000 VND adults, raft 50,000 VND), Truc Lam Pagoda on the hill by the falls, then Nguom Ngao Cave (45,000 VND). Ngoc Con viewpoint if you're fit and it's clear, then Phong Nam Valley. Stay in the valley or near Angel Eye Mountain.",
+        },
+        {
+          day: 6,
+          title: "Angel Eye Mountain, Thang Hen Lake, Cao Bang city",
+          distance: "~92km",
+          stops: ["angel-eye-mountain", "thang-hen-lake"],
+          mapPoints: ["angel-eye-mountain", "thang-hen-lake", WP.cbCity],
+          notes: "Angel Eye Mountain (free) and Thang Hen Lake (60,000 VND per motorbike) in the morning, then into Cao Bang city. Return the bike if your shop allows a one-way drop-off (arrange it before you start), and take the night bus to Hanoi.",
+        },
+      ],
+    },
+    {
+      duration: "7D6N",
+      label: "Ha Giang Loop + Cao Bang, slower (one way)",
+      days: [
+        {
+          day: 1,
+          title: "Ha Giang → Quan Ba → Yen Minh",
+          distance: "~100km",
+          stops: ["ha-giang-city", "quan-ba-heaven-gate", "quan-ba-twin-mountains", "lung-khuy-cave", "yen-minh-pine-forest", "yen-minh-town"],
+          notes: "Relaxed first day to get used to the bike. Quan Ba Heaven Gate for the first big view over the Twin Mountains, then Lung Khuy Cave just beyond them (30,000-50,000 VND, about 1-2 hours with the walk up - go in daylight). Afternoon through the Yen Minh Pine Forest, a stretch of highland pine that changes the whole atmosphere. Night in Yen Minh.",
+        },
+        {
+          day: 2,
+          title: "Yen Minh → Tham Ma → Hmong King Palace → Lung Cu (night in Lo Lo Chai)",
+          distance: "~80km",
+          stops: ["yen-minh-town", "tham-ma-pass", "hmong-king-palace", "lung-cu-flag-tower", "lo-lo-chai-village"],
+          notes: "Tham Ma Pass as the plateau opens up - some children here push flowers and hair braiding for money (see FAQ). Hmong King Palace (Vuong Family Mansion) at Sa Phin, then Lung Cu Flag Tower near Vietnam's northernmost point. Sleep in Lo Lo Chai below the tower, ideally in a rammed-earth Lo Lo house - the Lo Lo culture is found in very few places.",
+        },
+        {
+          day: 3,
+          title: "Lo Lo Chai → Dong Van → Ma Pi Leng Pass → Meo Vac",
+          distance: "~60km",
+          stops: ["dong-van-old-town", "ma-pi-leng-pass", "nho-que-river"],
+          notes: "Short in distance, biggest in impact. Morning in Dong Van Old Town (Sunday market 7-10am). Ma Pi Leng Pass slowly, with every viewpoint. Nho Que boat from the Tu San pier - search \"Tu San\" on Google Maps, not \"Nho Que River\" - about 150,000 VND per person including the shuttle (2026). Night in Meo Vac; off the passes before dark.",
+        },
+        {
+          day: 4,
+          title: "Meo Vac to Khau Coc Cha (Me Pia) Pass and Bao Lac",
+          stops: ["khau-coc-cha-pass"],
+          mapPoints: ["meo-vac-town", "khau-coc-cha-pass", WP.baoLac],
+          notes: "Leave the Ha Giang Loop at Meo Vac and head east into Cao Bang province. Khau Coc Cha, also called Me Pia Pass, stacks about 2.5km of road in 15 switchback levels; the best view is a short hike from a small shop where you park (about 10,000 VND). Stay in Bao Lac. Ride in daylight only - after dark the roads are unlit and fog rolls in.",
+        },
+        {
+          day: 5,
+          title: "Bao Lac to Pac Bo and Ban Gioc",
+          distance: "~139km",
+          stops: ["pac-bo-historic-site"],
+          mapPoints: [WP.baoLac, "pac-bo-historic-site", WP.khuoiKy],
+          notes: "A long riding day of about 139km. Pac Bo (8am-5pm; 25,000 VND, electric car about 20,000 VND) and the Lenin Stream around midday, then on to the Ban Gioc area. Sleep in a stone stilt house in Khuoi Ky village near the falls. Carry snacks and water - there's little on the road after Trung Khanh.",
+        },
+        {
+          day: 6,
+          title: "Ban Gioc Waterfall, Nguom Ngao Cave, Phong Nam Valley",
+          stops: ["ban-gioc-waterfall", "nguom-ngao-cave", "phong-nam-valley"],
+          mapPoints: [WP.khuoiKy, "ban-gioc-waterfall", WP.trucLam, "nguom-ngao-cave", WP.ngocCon, "phong-nam-valley"],
+          notes: "Ban Gioc Waterfall early (7am-5:30pm; 40,000 VND adults, raft 50,000 VND), Truc Lam Pagoda on the hill by the falls, then Nguom Ngao Cave (45,000 VND). Ngoc Con viewpoint if you're fit and it's clear, then Phong Nam Valley. Stay in the valley or near Angel Eye Mountain.",
+        },
+        {
+          day: 7,
+          title: "Angel Eye Mountain, Thang Hen Lake, Cao Bang city",
+          distance: "~92km",
+          stops: ["angel-eye-mountain", "thang-hen-lake"],
+          mapPoints: ["angel-eye-mountain", "thang-hen-lake", WP.cbCity],
+          notes: "Angel Eye Mountain (free) and Thang Hen Lake (60,000 VND per motorbike) in the morning, then into Cao Bang city. Return the bike if your shop allows a one-way drop-off (arrange it before you start), and take the night bus to Hanoi.",
         },
       ],
     },
@@ -205,5 +321,9 @@ export const haGiang: Destination = {
       question: "Do I need to book accommodation in advance?",
       answer: "In Oct-Nov and around Tet, book Dong Van, Meo Vac and Lo Lo Chai a few days ahead - options are limited. Choose somewhere clean, warm and close to your route rather than picking from photos alone; you'll only sleep there, but good rest matters for the next day's ride. Off-season, walking in is usually fine.",
     },
+  {
+    question: "Can I continue from the Ha Giang Loop to Cao Bang?",
+    answer: "Yes - leave the loop at Meo Vac and ride over Khau Coc Cha Pass to Bao Lac, Pac Bo and Ban Gioc Waterfall, finishing in Cao Bang city. See the 6- and 7-day itineraries and the [Cao Bang page](/destinations/cao-bang). Ask your rental shop before you book whether you can drop the bike in Cao Bang and what it costs. Buses between Ha Giang and Cao Bang take about 6-7 hours (100,000-150,000 VND)."
+  },
   ] satisfies FaqItem[],
 }

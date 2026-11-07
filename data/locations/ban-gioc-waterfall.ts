@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const banGiocWaterfall: Location = {
   slug: "ban-gioc-waterfall",
   name: "Ban Gioc Waterfall",
-  updatedAt: "2026-10-06",
+  updatedAt: "2026-11-07",
   provinces: ["cao-bang"],
   destination: "cao-bang",
   lat: 22.854409352361497,
@@ -16,7 +16,7 @@ export const banGiocWaterfall: Location = {
   tags: ["💧 Largest Waterfall on a National Border", "🛶 Bamboo Raft", "🌿 Nature"],
   bestMonths: [9, 10],
   bestSeasonNote: "Sep - Oct (golden rice terraces, peak water flow after rainy season)",
-  entranceFee: "45,000 VND (bamboo raft to base: ~150,000 VND)",
+  entranceFee: "40,000 VND adults, 20,000 VND children 6-15 (from 4 July 2026, Ban Gioc Tourist Area notice 138/TB-BQLKDLTBG). Bamboo raft to the falls: 50,000 VND per person.",
   openingHours: "7:00 AM – 5:30 PM",
   mapUrl: "https://www.google.com/maps?q=22.854409352361497,106.72438321761962",
   streetView: {embedUrl: "https://www.google.com/maps/embed?pb=!4v1776187096566!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHl3dE8tSGc.!2m2!1d22.85531941963025!2d106.7225924573171!3f356.95648085912995!4f-65.0427945105836!5f0.7820865974627469", },
@@ -138,13 +138,13 @@ export const banGiocWaterfall: Location = {
       seasonal: "June–October: high water volume, lush surroundings, golden terraces in Sep–Oct. November–May: lower flow; visit between 11 AM–2 PM when the upstream dam releases water. Phone timezone switch near the border is a real practical issue - check your clock on arrival",
     },
     visitorTips: [
-      "Entrance fee is 45,000 VND. Bamboo raft is ~150,000 VND and optional - you can walk close to the falls without it",
+      "Entrance fee is 40,000 VND for adults. Bamboo raft is 50,000 VND per person and optional - you can walk close to the falls without it",
       "Check your phone's time when you arrive - it may auto-switch to China Standard Time (1 hour ahead), which will throw off alarms and transport schedules",
       "Bus 3 from Cao Bằng city reaches the falls directly, but a motorbike is essential if you want to visit the surrounding sites in the same day",
     ],
     faq: [
       { question: "When is the best time to visit?", answer: "September and October give the highest water volume and golden rice terraces simultaneously - the strongest combination for photos and atmosphere. June to October is reliably high water. November to May is dry season; if visiting then, aim for 11 AM–2 PM when the upstream dam releases water and flow temporarily increases" },
-      { question: "Is the bamboo raft worth it?", answer: "Yes, for most visitors. The raft gets you to the base of the falls where the scale and spray are completely different from the shore viewpoint. During high water releases the spray is heavy, so keep electronics protected. Cost is around 150,000 VND" },
+      { question: "Is the bamboo raft worth it?", answer: "Yes, for most visitors. The raft gets you to the base of the falls where the scale and spray are completely different from the shore viewpoint. During high water releases the spray is heavy, so keep electronics protected. Cost is 50,000 VND per person" },
       { question: "Can I get here by bus?", answer: "Yes - Bus 3 from Cao Bằng city runs directly to the falls. But if you want to visit Nguồm Ngao Cave, Chùa Trúc Lâm Phật Tích, or Làng Đá Cổ Khuổi Ky on the same trip, you'll need a motorbike. Most travellers who are combining sites rent one in Cao Bằng city" },
     ],
     sentiment: {
