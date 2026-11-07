@@ -1,18 +1,25 @@
-import { Destination, FaqItem} from "./types"
+import { Destination, FaqItem, MapWaypoint } from "./types"
 import { heroUrl } from "@/lib/cloudinary"
+
+// Map-only waypoints for itinerary mapPoints (places without a location page)
+const WP = {
+  peak: { name: "Pu Luong summit", lat: 20.47801, lng: 105.089032 },
+  phoDoan: { name: "Pho Doan market", lat: 20.44719, lng: 105.182737 },
+  suoiCham: { name: "Cham Stream (bamboo rafts, water wheels)", lat: 20.386718, lng: 105.20843 },
+} satisfies Record<string, MapWaypoint>
 
 export const puLuong: Destination = {
   slug: "pu-luong",
   name: "Pu Luong",
-  updatedAt: "2026-10-20",
+  updatedAt: "2026-11-07",
   province: "Thanh Hoa",
   provinceSlug: "thanh-hoa",
   region: "north",
 
   description:
-    "Pu Luong is the answer to the question: what does Sa Pa look like without the development? A 17,000-hectare nature reserve of Thai stilt-house villages, stepped rice terraces, and karst peaks in Thanh Hoa province, four hours from Hanoi. The homestay culture is genuine, the crowds are manageable even in peak season, and the cycling and trekking between Don, Hieu, and Kho Muong villages is some of the best in northern Vietnam.",
+    "Pu Luong is a nature reserve in the hills of Thanh Hoa province, about 4 hours from Hanoi: Thai stilt-house villages, rice terraces that turn gold in Sep-Oct, waterfalls and forest climbing to a 1,700m summit. One day on a motorbike covers the main sights - Ban Don and the S-curve road, Kho Muong and its Bat Cave, Hieu Waterfall - and the rest of the trip is for slowing down on a homestay balcony. Many people call it a little Bali, and it's easy to pair with Ninh Binh.",
 
-  tagline: "Sa Pa scenery, four hours from Hanoi, with a fraction of the crowds",
+  tagline: "Rice terraces, stilt houses and slow days in the hills",
 
   heroImage: heroUrl("pu-luong_apr7bu"),
 
@@ -24,93 +31,160 @@ export const puLuong: Destination = {
     {
       from: "Hanoi",
       vehicle: "bus",
-      duration: "4-5 hours",
-      cost: "150,000-350,000 VND",
-      notes: "Local buses from My Dinh run to Pho Doan market town (the access hub), and homestays arrange the final 5-15km by xe om or 4WD. Direct limousine buses to the villages cost more, around 320,000-350,000 VND.",
+      duration: "about 4-5 hours",
+      cost: "300,000-350,000 VND",
+      notes: "29-seat buses (not sleepers) leave around 7am and 2pm; the morning bus picks up in the Old Quarter (for example outside St Joseph's Cathedral at 6:30am) and reaches most homestays around 11:40am. Your Hanoi hostel or your Pu Luong homestay can book it. Limousine vans cost about 300,000-350,000 VND.",
     },
     {
       from: "Hanoi",
       vehicle: "motorbike",
-      duration: "5 hours",
+      duration: "about 5 hours",
       cost: "Petrol only",
-      notes: "Via QL6 through Hoa Binh and Mai Chau. Scenic and rewarding if you have the experience.",
+      notes: "About 170-190km. Via Hoa Binh and Mai Chau is longer but easier; the road over Son - Ba - Muoi is shortest but has many steep passes.",
+    },
+    {
+      from: "Thanh Hoa city / Tho Xuan Airport",
+      vehicle: "taxi",
+      duration: "about 2 hours",
+      notes: "Thanh Hoa city is about 90-100km away and Tho Xuan Airport about 100km. Agree the drop-off point and price in writing before you get in - see the FAQ on transfers.",
+    },
+    {
+      from: "Ninh Binh",
+      vehicle: "taxi",
+      notes: "About 130km - Pu Luong pairs well with a few days in Ninh Binh. See the Ninh Binh page.",
     },
   ],
 
   itineraries: [
     {
       duration: "2D1N",
-      label: "Village and terraces",
+      label: "Quick escape",
       days: [
         {
           day: 1,
-          title: "Don Village + S-Shape Rice Terraces viewpoint",
-          stops: [
-            "don-village",
-            "s-shape-rice-terraces",
-          ],
-          notes: "Arrive Don Village by midday. S-Shape Rice Terraces viewpoint is 3km from Don - the most photographed spot in Pu Luong, and deservedly so. Evening: family dinner at the homestay, rice wine by the fire.",
+          title: "Arrive, the S-curve road and Ban Don",
+          stops: ["s-shape-rice-terraces", "don-village"],
+          notes: "The 7am bus from Hanoi reaches most homestays around 11:40am. Eat at your accommodation - options near the main road are limited (homestay dishes are about 70,000-80,000 VND). Skip the terraces at midday: there's no shade. Ride out in the late afternoon to the S-curve road, lined with flags, and Ban Don, which has some of the best terrace views in the reserve.",
         },
         {
           day: 2,
-          title: "Hieu Waterfall + Hieu Village",
-          stops: [
-            "hieu-waterfall",
-            "hieu-village",
-          ],
-          notes: "Don to Hieu is about 20km by road - around 1h by motorbike, longer once you stop for photos, because the scenery along the way is the point. Expect steep climbs at both the Don and Hieu ends. Hieu Waterfall has tiered pools for swimming.",
+          title: "Motorbike loop: Kho Muong, Bat Cave, Hieu Waterfall",
+          distance: "~50km",
+          stops: ["kho-muong-village", "kho-muong-cave", "hieu-waterfall", "hieu-village"],
+          notes: "One day of riding covers the main sights. Kho Muong is a stilt-house village by a stream, reached along a cliff-side road. Kho Muong Bat Cave (10,000 VND including parking): stone steps go about a third of the way in, then it's bare, slippery rock and nearly dark - bring a proper torch and wear shoes, not sandals. Hieu Waterfall (free; parking 5,000 VND): near the end, take the lower path on Google Maps rather than the steep one signed to the hill. The tiered falls run for about 300m; come before or after the lunch-hour crowd. Afternoon bus back to Hanoi - book it through your homestay.",
         },
       ],
     },
     {
       duration: "3D2N",
-      label: "Full reserve experience",
+      label: "Pu Luong at an easy pace - recommended",
       days: [
         {
           day: 1,
-          title: "Don Village + terraces",
-          stops: [
-            "don-village",
-            "s-shape-rice-terraces",
-          ],
-          notes: "Arrive, settle in Thai stilt house. Afternoon walk through the rice fields.",
+          title: "Arrive, the S-curve road and Ban Don",
+          stops: ["s-shape-rice-terraces", "don-village"],
+          notes: "The 7am bus from Hanoi reaches most homestays around 11:40am. Eat at your accommodation - options near the main road are limited (homestay dishes are about 70,000-80,000 VND). Skip the terraces at midday: there's no shade. Ride out in the late afternoon to the S-curve road, lined with flags, and Ban Don, which has some of the best terrace views in the reserve.",
         },
         {
           day: 2,
-          title: "Don → Hieu: waterfall and village",
-          stops: [
-            "hieu-waterfall",
-            "hieu-village",
-          ],
-          notes: "Don to Hieu is about 20km by road, around 1h by motorbike plus photo stops, with steep climbs at both ends. Swim in the tiered pools at Hieu Waterfall and walk the village. Back to Don for the night.",
+          title: "Motorbike loop: Kho Muong, Bat Cave, Hieu Waterfall",
+          distance: "~50km",
+          stops: ["kho-muong-village", "kho-muong-cave", "hieu-waterfall", "hieu-village"],
+          notes: "One day of riding covers the main sights. Kho Muong is a stilt-house village by a stream, reached along a cliff-side road. Kho Muong Bat Cave (10,000 VND including parking): stone steps go about a third of the way in, then it's bare, slippery rock and nearly dark - bring a proper torch and wear shoes, not sandals. Hieu Waterfall (free; parking 5,000 VND): near the end, take the lower path on Google Maps rather than the steep one signed to the hill. The tiered falls run for about 300m; come before or after the lunch-hour crowd.",
         },
         {
           day: 3,
-          title: "Kho Muong village + return",
-          stops: [
-            "kho-muong-village",
-          ],
-          notes: "Morning walk to Kho Muong village near Don - quiet and rarely visited. Kho Muong Cave is currently closed. Then back to Pho Doan for the bus to Hanoi.",
+          title: "Pho Doan market, Cham Stream bamboo raft, water wheels",
+          stops: [],
+          mapPoints: [WP.phoDoan, WP.suoiCham],
+          notes: "Pho Doan market is held only on Thursday and Sunday mornings - go early for local specialities. Then head south to the Cham Stream area via Chieng Lau village: the giant bamboo water wheels (about 10km from Ban Don; they turn mainly in the rainy season, entry about 25,000 VND), a bamboo raft or kayak on the stream (about 50,000-70,000 VND per person - prices change, so ask at the pier), and Chay Cave, about a 700m walk, with wild stalactites. You can swim in the stream on the way back. Afternoon bus back to Hanoi - book it through your homestay.",
+        },
+      ],
+    },
+    {
+      duration: "3D2N",
+      label: "Pu Luong, then on to Ninh Binh (one way)",
+      days: [
+        {
+          day: 1,
+          title: "Arrive, Ban Don, the S-curve road and Hieu Waterfall",
+          stops: ["s-shape-rice-terraces", "don-village", "hieu-waterfall"],
+          notes: "The 7am bus from Hanoi arrives before noon. After lunch, explore Ban Don and the S-curve road, then Hieu Waterfall (free; parking 5,000 VND) - take the lower path near the end. Back to your homestay by late afternoon.",
+        },
+        {
+          day: 2,
+          title: "Pho Doan market, Cham Stream, then to Ninh Binh",
+          stops: [],
+          mapPoints: [WP.phoDoan, WP.suoiCham],
+          notes: "Pho Doan market is held only on Thursday and Sunday mornings - go early for local specialities. Then head south to the Cham Stream area via Chieng Lau village: the giant bamboo water wheels (about 10km from Ban Don; they turn mainly in the rainy season, entry about 25,000 VND), a bamboo raft or kayak on the stream (about 50,000-70,000 VND per person - prices change, so ask at the pier), and Chay Cave, about a 700m walk, with wild stalactites. You can swim in the stream on the way back. After lunch, take a car to Tam Coc in Ninh Binh (about 130km; tours leave around 3pm and arrive around 5:30-6pm). Night in Tam Coc.",
+        },
+        {
+          day: 3,
+          title: "Ninh Binh: Hang Mua, Bich Dong Pagoda, Tam Coc",
+          stops: ["hang-mua", "bich-dong-pagoda", "tam-coc"],
+          notes: "Climb Hang Mua in the cool morning (486 steps, 150,000 VND, from 7am). Ride on to Bich Dong Pagoda (free, 7:30am-4:30pm), then the Tam Coc boat past its three caves (250,000 VND per adult, entry and boat included). Bus back to Hanoi in the late afternoon. See the Ninh Binh page for more.",
+        },
+      ],
+    },
+    {
+      duration: "5D4N",
+      label: "With the Pu Luong summit trek",
+      days: [
+        {
+          day: 1,
+          title: "Arrive, the S-curve road and Ban Don",
+          stops: ["s-shape-rice-terraces", "don-village"],
+          notes: "The 7am bus from Hanoi reaches most homestays around 11:40am. Eat at your accommodation - options near the main road are limited (homestay dishes are about 70,000-80,000 VND). Skip the terraces at midday: there's no shade. Ride out in the late afternoon to the S-curve road, lined with flags, and Ban Don, which has some of the best terrace views in the reserve.",
+        },
+        {
+          day: 2,
+          title: "Motorbike loop: Kho Muong, Bat Cave, Hieu Waterfall",
+          distance: "~50km",
+          stops: ["kho-muong-village", "kho-muong-cave", "hieu-waterfall", "hieu-village"],
+          notes: "One day of riding covers the main sights. Kho Muong is a stilt-house village by a stream, reached along a cliff-side road. Kho Muong Bat Cave (10,000 VND including parking): stone steps go about a third of the way in, then it's bare, slippery rock and nearly dark - bring a proper torch and wear shoes, not sandals. Hieu Waterfall (free; parking 5,000 VND): near the end, take the lower path on Google Maps rather than the steep one signed to the hill. The tiered falls run for about 300m; come before or after the lunch-hour crowd.",
+        },
+        {
+          day: 3,
+          title: "Pu Luong summit trek - up, and a night on the peak",
+          stops: [],
+          mapPoints: [WP.peak],
+          notes: "The summit is about 1,700m, and the trail is steep, winding and rough in places. You must register and go with a local guide - book through your homestay or a local operator. The 2-day trek with a night camping on top is the comfortable option (for example Expats' Way, about 115 USD per person including camping, porter and meals). If you're fit, you can do it as a day trek instead - about 6-7 hours up and down - and drop the second trek day. Wear long sleeves and trousers, a hat and hiking shoes, and bring insect and leech repellent, water and snacks.",
+        },
+        {
+          day: 4,
+          title: "Down from the summit to Ban Don",
+          stops: ["don-village"],
+          mapPoints: [WP.peak, "don-village"],
+          notes: "Views over the forest, fields and valleys from the top in the morning, then down to Ban Don by mid-afternoon to rest.",
+        },
+        {
+          day: 5,
+          title: "Pho Doan market, Cham Stream bamboo raft, water wheels",
+          stops: [],
+          mapPoints: [WP.phoDoan, WP.suoiCham],
+          notes: "Pho Doan market is held only on Thursday and Sunday mornings - go early for local specialities. Then head south to the Cham Stream area via Chieng Lau village: the giant bamboo water wheels (about 10km from Ban Don; they turn mainly in the rainy season, entry about 25,000 VND), a bamboo raft or kayak on the stream (about 50,000-70,000 VND per person - prices change, so ask at the pier), and Chay Cave, about a 700m walk, with wild stalactites. You can swim in the stream on the way back. Afternoon bus back to Hanoi - book it through your homestay.",
         },
       ],
     },
   ],
 
-  cost: {
-    budget: "400,000-700,000 VND/day",
-    midRange: "700,000-1,200,000 VND/day",
-    comfortable: "1,200,000+ VND/day",
-    notes: "Homestay with meals typically included: 300,000-500,000 VND/night. Local guide: 200,000-300,000 VND/day. Bicycle rental: 50,000-100,000 VND/day.",
-  },
-
-  bestTimeSummary: "The best months here are about the rice terraces rather than the weather. May-Jun: the terraces turn green after transplanting. Sep-Oct: the rice ripens and turns golden. Both windows still get afternoon rain, so trails and roads can be slippery. Jan-Feb is cold and often foggy, and the fields are bare.",
+  bestTimeSummary: "Sep-Oct is the most popular time, when the rice terraces ripen to gold. May-Jun is green, with fast streams and full waterfalls. Feb-Mar brings white ban flowers to the hillsides. Jul-Sep is the rainiest stretch, with muddy trails and leeches in the forest. Avoid Vietnamese public holidays, when the valley gets crowded.",
   bestMonths: [5, 6, 9, 10],
   avoidMonths: [7, 8],
   avoidSummary: "Jul-Aug is the wettest part of the year, with over 300mm of rain a month in the station data, and storms are more likely. Landslides can close mountain roads and trails turn muddy.",
 
-  recommendedStay: "2-3 days",
+  recommendedStay: "2-3 days, plus 2 for the summit trek",
 
-  transport: "Walking and cycling between villages. Xe om for longer transfers. Motorbike rental possible but not essential if staying in one village.",
+  transport: "Rent a motorbike from your homestay - ask the owner directly (about 250,000 VND/day, petrol not included). Choose a manual or semi-automatic: automatic scooters can overheat their brakes on the long steep descents. If you don't ride, a xe om driver for the day costs about 400,000 VND. Some roads are narrow and cars can't get far into the villages.",
+
+  rentals: [
+    {
+      vehicle: "motorbike",
+      priceRange: "about 250,000 VND/day",
+      notes: "Ask your homestay or guesthouse directly - most rent bikes or can find one. Petrol isn't included, so check the tank when you pick it up. A manual or semi-automatic is safer than an automatic on the steep downhills. You need an International Driving Permit (1968 convention) with the motorcycle category plus your home licence. A xe om driver for the day costs about 400,000 VND.",
+      verifiedAt: "2026-11-07",
+    },
+  ],
 
   nearbyDestinations: ["ninh-binh", "ha-noi"],
 
@@ -123,48 +197,44 @@ export const puLuong: Destination = {
 // ─── FAQ ─────────────────────────────────────────────────
   faqs: [
     {
-      question: "How do I get to Pù Luông from Hanoi?",
-      answer: "Several bus operators run direct routes to Pu Luong - the easiest way to book is through your accommodation, which can arrange tickets on your behalf. Departures typically run twice daily at 7:00 AM and 2:00 PM, with journey time around 4 hours. Tickets cost approximately 320,000-350,000 VND per person. Buses are standard 29-seat coaches with fixed seats - not sleeper buses. Renting a motorbike in Hanoi and riding directly is also popular - the route through Mai Chau is scenic and manageable for experienced riders.",
+      question: "How do I get to Pu Luong from Hanoi?",
+      answer: "By bus: 29-seat buses (not sleepers) leave around 7am and 2pm, take about 4-5 hours and cost 300,000-350,000 VND. The morning bus picks up in the Old Quarter and reaches most homestays before noon; your hostel or homestay can book it. By motorbike it's about 170-190km and 5 hours, via Mai Chau (easier) or over Son - Ba - Muoi (shorter, steeper).",
     },
     {
-      question: "How many days do you need in Pù Luông?",
-      answer: "Two nights / three days is the sweet spot for most travelers - enough time for a full valley trek, a visit to a local market, and at least one sunrise over the rice terraces without feeling rushed. One night is possible but leaves little room to slow down, which defeats the purpose of coming here. Three nights suits travelers who want to explore deeper into the nature reserve, visit more remote villages, or simply do nothing but sit on a balcony and watch the valley fill with morning mist.",
+      question: "How many days do I need in Pu Luong?",
+      answer: "The sights are 10-20km apart and one day on a motorbike covers the main ones, so 2 days is enough for a quick visit. 3 days and 2 nights lets you add Pho Doan market and the Cham Stream raft without rushing. Add 2 days if you want to trek to the summit.",
     },
     {
-      question: "What is the best time to visit Pù Luông?",
-      answer: "September-October is peak season when the rice terraces turn golden before harvest - the most photographed period and the main draw for most visitors. May-June offers bright green terraces just after planting, with fewer crowds than autumn. November-April is cooler and drier, with clear skies good for trekking. December-February can get cold at night - temperatures occasionally drop below 10°C. Avoid the summer rainy season (July-August) when trails get muddy and leeches are common on forest paths.",
+      question: "How do I get around Pu Luong?",
+      answer: "Rent a motorbike from your homestay - just ask the owner (about 250,000 VND/day, petrol extra). Choose a manual or semi-automatic for the steep descents. If you don't ride, hire a xe om driver for about 400,000 VND/day.",
     },
     {
-      question: "How much does a trip to Pù Luông cost?",
-      answer: "Pu Luong is one of the more affordable destinations in northern Vietnam. Budget travelers staying at a basic homestay can manage 2 nights for around $30-50 USD including accommodation and meals. Mid-range eco-lodge and retreat stays run 700,000-2,000,000 VND per night with meals often included. Guided trekking tours from Hanoi typically cost $80-150 USD for a 2-day / 1-night package covering transport, accommodation, meals, and guide fees.",
+      question: "Can I climb Pu Luong peak?",
+      answer: "Yes, with registration and a local guide. The summit is about 1,700m on a steep, rough trail. The 2-day trek with a night camping on top is the easier way to do it; fit hikers can go up and down in one day, about 6-7 hours. Book through your homestay or a local operator, and bring hiking shoes, long clothes, insect and leech repellent, water and snacks.",
     },
     {
-      question: "What is there to do in Pù Luông?",
-      answer: "Pu Luong rewards slow travel more than activity-chasing. The core experience is trekking through rice terraces between Thai and Muong minority villages - paths connect settlements that see few visitors outside of guided tours. Sunrise viewpoints above the valley floor are the highlight for most travelers. Beyond trekking, the Ban Hieu waterfall and natural swimming pools are popular stops. Cycling between villages on flat valley roads is a relaxed way to explore without a guide. Evenings at a homestay - sharing a meal with a local family, sometimes with rice wine - are often what travelers remember most.",
+      question: "What should I know about Kho Muong Bat Cave?",
+      answer: "It's 10,000 VND including parking. The steps only go about a third of the way in; beyond that it's dark, bare rock and slippery, so bring a real torch and wear proper shoes. Check its page for the current access situation before you go.",
     },
     {
-      question: "Do I need a guide in Pù Luông?",
-      answer: "Not strictly required, but recommended for first-time visitors. The trail network between villages is not always clearly marked, and having a local guide opens access to homestays, introductions to village life, and routes that don't appear on any map. If you're an experienced trekker comfortable with navigation and have offline maps downloaded, the main valley paths between Ban Hieu, Ban Son, and Pu Luong village are manageable independently. For anything deeper into the nature reserve, a guide adds significant value.",
+      question: "When is Pho Doan market?",
+      answer: "Thursday and Sunday mornings only. Plan your last day around it if you want to see it.",
     },
     {
-      question: "How do I get around Pù Luông?",
-      answer: "Attractions in Pu Luong are spread out across the valley - distances between villages and viewpoints are too far to walk comfortably if you want to cover multiple spots in a day. The most flexible option is renting a motorbike for around 200,000-250,000 VND/day. However, roads here are narrow and steep in sections - if you're not confident riding on hilly terrain, this is not the place to learn. The easier alternative is hiring a xe om (motorbike taxi) for around 400,000 VND/day. Your driver knows the roads, handles the hills, and can wait while you explore each stop - well worth it for travelers who prefer not to ride themselves.",
+      question: "How do I avoid transfer scams in Pu Luong?",
+      answer: "Transfers to Thanh Hoa city or Tho Xuan Airport (about 100km, 2 hours) are where travellers get caught out: drivers change the route, hand you to another car or drop you short and ask for more money. Agree the drop-off point and the full price in writing before you get in, pay upfront if you can, or book a taxi directly. Also ask prices before ordering food - meals in the reserve cost more than in town.",
     },
     {
-      question: "Where should I stay in Pù Luông?",
-      answer: "Accommodation in Pu Luong splits into two distinct categories depending on your budget and preferred experience. Budget homestays along Provincial Road CT02 and surrounding villages sit 2-5km from the main village centers - simple rooms, basic facilities, and a more local atmosphere for around 200,000 VND/night. At the other end, eco-lodges and retreat-style properties - both in the central valley and deeper inside the villages - offer proper beds, hot showers, and often stunning terrace views. Prices range from 700,000 VND to 2,000,000 VND per night.",
+      question: "Where should I stay in Pu Luong?",
+      answer: "Stilt-house homestays on the main road are cheapest and easy to reach by bus; lodges up among the rice fields are quieter, with better views, but a short ride from the road. Some include a simple breakfast. Book ahead for Sep-Oct and public holidays.",
     },
     {
-      question: "Is Pù Luông suitable for all fitness levels?",
-      answer: "Most of the walking in Pu Luong involves gentle valley paths and moderate hillside climbs between villages - accessible for travelers with average fitness. The terrain is not technical, and most guided treks are designed to be completed without prior hiking experience. The more challenging option is trekking up into the nature reserve's forested ridges - steeper, longer, and better suited to travelers who are comfortable with 4-6 hour walking days on uneven ground.",
+      question: "When is the best time to visit Pu Luong?",
+      answer: "Sep-Oct for golden rice terraces, May-Jun for green fields and full waterfalls, Feb-Mar for ban flowers. Jul-Sep is the rainiest, with muddy trails and leeches.",
     },
     {
-      question: "Is Pù Luông safe?",
-      answer: "Pu Luong is one of the safer destinations in Vietnam for independent and solo travelers. Crime is minimal, locals are accustomed to foreign visitors, and the area sees a steady stream of tourists without the scams or hustle found in more commercial destinations. The main safety considerations are practical - leech season during wet months, slippery paths after rain, and limited medical facilities in the area. Carry a basic first aid kit and know that the nearest hospital is in Ngoc Lac or Thanh Hoa city.",
-    },
-    {
-      question: "What should I know about the local culture in Pù Luông?",
-      answer: "Pu Luong is home primarily to Thai and Muong ethnic minority communities whose way of life remains closely tied to the agricultural calendar. Visitors are generally welcomed warmly, but a few considerations make a meaningful difference. Ask before photographing people, especially inside homes or during daily activities. Dress modestly when visiting villages - shoulders and knees covered is appropriate. If invited into a home for rice wine, accepting graciously is part of the hospitality culture, though declining politely is also understood. Buying directly from village producers - woven textiles, local honey, homemade rice wine - is a more meaningful way to support the community than purchasing the same items in Hanoi souvenir shops.",
+      question: "Can I combine Pu Luong with Ninh Binh?",
+      answer: "Yes - they're about 130km apart, so a few days in each works well. See the [Ninh Binh page](/destinations/ninh-binh).",
     },
   ] satisfies FaqItem[],
 }

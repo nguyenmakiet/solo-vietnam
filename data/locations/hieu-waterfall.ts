@@ -4,7 +4,7 @@ import { heroUrl } from "@/lib/cloudinary"
 export const hieuWaterfall: Location = {
   slug: "hieu-waterfall",
   name: "Hieu Waterfall",
-  updatedAt: "2026-10-04",
+  updatedAt: "2026-11-07",
   provinces: ["thanh-hoa"],
   destination: "pu-luong",
   lat: 20.46548088770793,
@@ -20,7 +20,7 @@ export const hieuWaterfall: Location = {
     minMinutes: 60,
     maxMinutes: 120,
   },
-  entranceFee: "~10,000 - 20,000 VND (collected by village) + 5,000 VND motorbike parking",
+  entranceFee: "Free entry; motorbike parking 5,000 VND.",
   openingHours: "Open 24/7 (best in daylight)",
   mapUrl: "https://www.google.com/maps?q=20.46548088770793,105.2224454532903",
   streetView: {},
